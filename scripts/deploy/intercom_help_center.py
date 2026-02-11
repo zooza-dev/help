@@ -164,10 +164,58 @@ def ensure_collection(client: IntercomClient, name: str, mapping: dict, dry_run:
     logger.info("Created collection '%s' -> %s", name, cid)
     return cid
 
+def iter_all_pages(client: IntercomClient, path: str) -> list[dict]:
+    """Iterate Intercom cursor-paginated endpoints and return a flat list of items."""
+    items: list[dict] = []
+    next_path = path
 
-def ensure_section(client: IntercomClient, name: str, collection_id: str | None,
-                   mapping: dict, dry_run: bool) -> str | None:
+    while next_path:
+        data = client.get(next_path)
+        items.extend(data.get("data", []))
+
+        # Intercom cursor pagination typically returns: {"pages": {"next": {"starting_after": "...", "url": "..."}}}
+        pages = data.get("pages") or {}
+        next_obj = pages.get("next") or {}
+        next_url = next_obj.get("url")
+
+        if not next_url:
+            break
+
+        # Convert absolute next URL to path relative to base_url
+        if next_url.startswith(client.base_url):
+            next_path = next_url[len(client.base_url):]
+        else:
+            # Sometimes Intercom returns full URL with api host; safest is to keep only the path+query
+            # e.g. https://api.intercom.io/help_center/sections?starting_after=...
+            try:
+                from urllib.parse import urlparse
+                parsed = urlparse(next_url)
+                next_path = parsed.path + (f"?{parsed.query}" if parsed.query else "")
+            except Exception:
+                break
+
+    return items
+
+
+def find_section_id(client: IntercomClient, collection_id: str, section_name: str) -> str | None:
+    """Find a section by name under a specific collection (parent_id)."""
+    sections = iter_all_pages(client, "/help_center/sections")
+    for sec in sections:
+        if sec.get("name") == section_name and str(sec.get("parent_id")) == str(collection_id):
+            return sec.get("id")
+    return None
+
+def ensure_section(
+    client: IntercomClient,
+    name: str,
+    collection_id: str | None,
+    mapping: dict,
+    dry_run: bool,
+) -> str | None:
     """Ensure a section exists within a collection. Returns section ID."""
+    if not collection_id:
+        return None
+
     key = f"{collection_id}:{name}"
     if key in mapping["sections"]:
         return mapping["sections"][key]
@@ -176,21 +224,17 @@ def ensure_section(client: IntercomClient, name: str, collection_id: str | None,
         logger.info("[DRY-RUN] Would create section '%s' in collection %s", name, collection_id)
         return None
 
-    if not collection_id:
-        return None
+    # ✅ Correct Intercom approach: list sections via /help_center/sections and filter by parent_id
+    existing_id = find_section_id(client, collection_id, name)
+    if existing_id:
+        mapping["sections"][key] = existing_id
+        logger.info("Found existing section '%s' -> %s", name, existing_id)
+        return existing_id
 
-    # List sections in collection
-    data = client.get(f"/help_center/collections/{collection_id}/sections")
-    for sec in data.get("data", []):
-        if sec.get("name") == name:
-            sid = sec["id"]
-            mapping["sections"][key] = sid
-            logger.info("Found existing section '%s' -> %s", name, sid)
-            return sid
-
+    # Create section under collection using parent_id
     resp = client.post("/help_center/sections", json={
         "name": name,
-        "parent_id": collection_id,
+        "parent_id": str(collection_id),
     })
     sid = resp["id"]
     mapping["sections"][key] = sid
