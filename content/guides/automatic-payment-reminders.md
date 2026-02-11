@@ -15,7 +15,7 @@ last_converted: "2026-02-11"
 
 # Automatic reminders for payment schedule
 
-If the client has selected payment with a payment template in the registration or you have set it up manually, they will always be informed of this obligation in time -- automatically by the application. Reminders are sent as email notifications. Learn how to set up payment templates in the [payment templates manual](https://support.zooza.online/portal/en/kb/articles/payment-templates-creation).
+If the client has selected payment with a payment template in the registration or you have set it up manually, they will always be informed of this obligation in time -- automatically by the application. Reminders are sent as email notifications. Learn how to set up payment templates in the [payment templates manual](payment-templates-creation.md).
 
 ## Reminder 1: Upcoming payment notification
 

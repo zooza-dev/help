@@ -37,3 +37,299 @@ redirects:
   - from: "/portal/en/kb/articles/sending-email-sms-to-clients"
     to: "/help/communication/sending-email-sms"
     status: 301
+
+  - from: "/portal/en/kb/articles/faq-common-booking-scenarios"
+    to: "/help/bookings/common-booking-scenarios"
+    status: 301
+
+  - from: "/portal/en/kb/articles/allowing-multiple-registration-for-a-course"
+    to: "/help/bookings/allowing-multiple-registration"
+    status: 301
+
+  - from: "/portal/en/kb/articles/automatic-payment-reminders"
+    to: "/help/payments/automatic-payment-reminders-detailed"
+    status: 301
+
+  - from: "/portal/en/kb/articles/blocks-creation"
+    to: "/help/classes/blocks-creation"
+    status: 301
+
+  - from: "/portal/en/kb/articles/business-regist"
+    to: "/help/bookings/business-registration"
+    status: 301
+
+  - from: "/portal/en/kb/articles/how-to-change-an-instructor-in-a-class-or-session"
+    to: "/help/settings/change-instructor"
+    status: 301
+
+  - from: "/portal/en/kb/articles/client-import"
+    to: "/help/clients/client-import"
+    status: 301
+
+  - from: "/portal/en/kb/articles/course-group-lesson"
+    to: "/help/programmes/course-group-lesson-definition"
+    status: 301
+
+  - from: "/portal/en/kb/articles/course-settings-tile"
+    to: "/help/programmes/course-settings-tile"
+    status: 301
+
+  - from: "/portal/en/kb/articles/course-settings"
+    to: "/help/programmes/course-settings"
+    status: 301
+
+  - from: "/portal/en/kb/articles/customize-widgets"
+    to: "/help/widgets/customizing-widgets"
+    status: 301
+
+  - from: "/portal/en/kb/articles/data-correction-change-client"
+    to: "/help/clients/data-correction-change-client"
+    status: 301
+
+  - from: "/portal/en/kb/articles/discount-code"
+    to: "/help/payments/discount-code"
+    status: 301
+
+  - from: "/portal/en/kb/articles/discount-types"
+    to: "/help/payments/discount-types"
+    status: 301
+
+  - from: "/portal/en/kb/articles/documents"
+    to: "/help/settings/documents"
+    status: 301
+
+  - from: "/portal/en/kb/articles/edit-events-in-courses"
+    to: "/help/classes/edit-events-in-courses"
+    status: 301
+
+  - from: "/portal/en/kb/articles/edit-payments-on-registration"
+    to: "/help/payments/edit-payment-on-registration"
+    status: 301
+
+  - from: "/portal/en/kb/articles/how-to-assign-direct-debit-mandates-to-registrations-gocardless"
+    to: "/help/payments/gocardless-direct-debit-mandates"
+    status: 301
+
+  - from: "/portal/en/kb/articles/group-connection"
+    to: "/help/programmes/group-connection"
+    status: 301
+
+  - from: "/portal/en/kb/articles/group-interested"
+    to: "/help/programmes/group-interested"
+    status: 301
+
+  - from: "/portal/en/kb/articles/how-to-create-paid-events"
+    to: "/help/classes/how-to-create-paid-events"
+    status: 301
+
+  - from: "/portal/en/kb/articles/individual-lessons-for-clients-on-the-climbing-wall"
+    to: "/help/programmes/individual-lessons-climbing-wall"
+    status: 301
+
+  - from: "/portal/en/kb/articles/set-up-i"
+    to: "/help/programmes/individual-lessons-group-interested"
+    status: 301
+
+  - from: "/portal/en/kb/articles/individual-lessons-with-free-lesson"
+    to: "/help/programmes/individual-lessons-with-free-lesson"
+    status: 301
+
+  - from: "/portal/en/kb/articles/individual-sessions-how-to-sell-plan-and-manage-1-1-lessons-in-zooza"
+    to: "/help/programmes/individual-sessions"
+    status: 301
+
+  - from: "/portal/en/kb/articles/late-registrations"
+    to: "/help/bookings/late-registrations"
+    status: 301
+
+  - from: "/portal/en/kb/articles/lecturer-substitution"
+    to: "/help/settings/lecturer-substitution"
+    status: 301
+
+  - from: "/portal/en/kb/articles/linked-registrations"
+    to: "/help/bookings/linked-registrations"
+    status: 301
+
+  - from: "/portal/en/kb/articles/multi-day-event-with-product-offer"
+    to: "/help/programmes/multi-day-event-with-product-offer"
+    status: 301
+
+  - from: "/portal/en/kb/articles/network-application"
+    to: "/help/settings/network-application"
+    status: 301
+
+  - from: "/portal/en/kb/articles/new-course-existing-clients"
+    to: "/help/programmes/new-course-existing-clients"
+    status: 301
+
+  - from: "/portal/en/kb/articles/notifications"
+    to: "/help/settings/notifications-center"
+    status: 301
+
+  - from: "/portal/en/kb/articles/open-course-cr"
+    to: "/help/programmes/open-course-creation"
+    status: 301
+
+  - from: "/portal/en/kb/articles/outstanding-amount"
+    to: "/help/payments/outstanding-amount"
+    status: 301
+
+  - from: "/portal/en/kb/articles/parent-portal-101"
+    to: "/help/clients/parent-portal-101"
+    status: 301
+
+  - from: "/portal/en/kb/articles/advanced-dashboard-in-the-parent-profile-parent-portal"
+    to: "/help/clients/parent-profile-dashboard"
+    status: 301
+
+  - from: "/portal/en/kb/articles/labels-drawers-for-selected-payments"
+    to: "/help/payments/payment-labels-drawers"
+    status: 301
+
+  - from: "/portal/en/kb/articles/payment-options"
+    to: "/help/payments/payment-options"
+    status: 301
+
+  - from: "/portal/en/kb/articles/payments-pairing"
+    to: "/help/payments/payment-pairing"
+    status: 301
+
+  - from: "/portal/en/kb/articles/payment-templates-creation"
+    to: "/help/payments/payment-templates-creation"
+    status: 301
+
+  - from: "/portal/en/kb/articles/payment-tile-on-registration"
+    to: "/help/payments/payment-tile-on-registration"
+    status: 301
+
+  - from: "/portal/en/kb/articles/personas"
+    to: "/help/clients/personas"
+    status: 301
+
+  - from: "/portal/en/kb/articles/power-bi-data-description"
+    to: "/help/settings/power-bi-data-description"
+    status: 301
+
+  - from: "/portal/en/kb/articles/how-to-sell-products-during-registration-booking-t-shirt-example"
+    to: "/help/orders/selling-products-during-registration"
+    status: 301
+
+  - from: "/portal/en/kb/articles/sending-requests"
+    to: "/help/settings/sending-requests"
+    status: 301
+
+  - from: "/portal/en/kb/articles/create-summer-camps"
+    to: "/help/programmes/summer-camps-creation"
+    status: 301
+
+  - from: "/portal/en/kb/articles/trials-daily-business"
+    to: "/help/programmes/trials-daily-business"
+    status: 301
+
+  - from: "/portal/en/kb/articles/2-lecturers-per-group"
+    to: "/help/programmes/two-lecturers-per-group"
+    status: 301
+
+  - from: "/portal/en/kb/articles/types-of-registrations"
+    to: "/help/bookings/types-of-registrations"
+    status: 301
+
+  - from: "/portal/en/kb/articles/user-roles"
+    to: "/help/settings/user-roles"
+    status: 301
+
+  - from: "/portal/en/kb/articles/vat-management"
+    to: "/help/payments/vat-management"
+    status: 301
+
+  - from: "/portal/en/kb/articles/viewing-billable-events"
+    to: "/help/classes/viewing-billable-events"
+    status: 301
+
+  - from: "/portal/en/kb/articles/zooza-101-for-instructors"
+    to: "/help/settings/zooza-101-instructors"
+    status: 301
+
+  - from: "/portal/en/kb/articles/buyloop-en"
+    to: "/help/payments/zooza-billing-payments"
+    status: 301
+
+  - from: "/portal/en/kb/articles/abra-flexi-invoice-management-system"
+    to: "/help/payments/abra-flexi-invoices"
+    status: 301
+
+  - from: "/portal/en/kb/articles/add-the-zooza-app-to-your-phone-s-desktop"
+    to: "/help/settings/add-zooza-app-to-phone"
+    status: 301
+
+  - from: "/portal/en/kb/articles/auto-enrollment"
+    to: "/help/programmes/auto-enrollment"
+    status: 301
+
+  - from: "/portal/en/kb/articles/setting-up-billing-periods"
+    to: "/help/payments/billing-periods"
+    status: 301
+
+  - from: "/portal/en/kb/articles/collecting-the-reason-for-cancelling"
+    to: "/help/classes/collecting-reason-for-cancelling"
+    status: 301
+
+  - from: "/portal/en/kb/articles/deploying-zooza-app-on-your-website"
+    to: "/help/widgets/deploying-zooza-on-website"
+    status: 301
+
+  - from: "/portal/en/kb/articles/getting-started-with-zooza"
+    to: "/help/programmes/getting-started-with-zooza"
+    status: 301
+
+  - from: "/portal/en/kb/articles/holiday-settings"
+    to: "/help/calendar/holiday-settings"
+    status: 301
+
+  - from: "/portal/en/kb/articles/setting-the-rate-reward-for-lecturer"
+    to: "/help/settings/instructor-rate-reward"
+    status: 301
+
+  - from: "/portal/en/kb/articles/lecturers-working-hours"
+    to: "/help/settings/lecturers-working-hours"
+    status: 301
+
+  - from: "/portal/en/kb/articles/online-registration"
+    to: "/help/programmes/online-registration"
+    status: 301
+
+  - from: "/portal/en/kb/articles/power-bi-integration"
+    to: "/help/settings/power-bi-integration"
+    status: 301
+
+  - from: "/portal/en/kb/articles/setting-gtc-gdpr-and-other-consents"
+    to: "/help/settings/setting-gtc-gdpr-consents"
+    status: 301
+
+  - from: "/portal/en/kb/articles/smartbill-invoice-management"
+    to: "/help/payments/smartbill-invoices"
+    status: 301
+
+  - from: "/portal/en/kb/articles/szamlazz-invoice-management"
+    to: "/help/payments/szamlazz-invoices"
+    status: 301
+
+  - from: "/portal/en/kb/articles/trial"
+    to: "/help/programmes/trial-lessons"
+    status: 301
+
+  - from: "/portal/en/kb/articles/xero-integration-in-zooza-setup-invoice-management"
+    to: "/help/payments/xero-integration"
+    status: 301
+
+  - from: "/portal/en/kb/articles/zooza-sites-en"
+    to: "/help/widgets/zooza-sites"
+    status: 301
+
+  - from: "/portal/en/kb/articles/emails-in-primary-inbox"
+    to: "/help/settings/emails-in-primary-inbox"
+    status: 301
+
+  - from: "/portal/en/kb/articles/how-to-clear-your-cache"
+    to: "/help/settings/how-to-clear-your-cache"
+    status: 301

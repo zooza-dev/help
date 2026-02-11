@@ -3,26 +3,29 @@
     "id": "0001",
     "legacy_path": "legacy/0001_Welcome to Zooza.html",
     "source_url": "https://support.zooza.online/portal/en/kb/articles/whatsapp-integration-usage-beta",
-    "title": "WhatsApp Integration & Usage (Beta)",
+    "title": "WhatsApp Integration &amp; Usage (Beta)",
     "language": "en",
     "internal_links": [
-      "/portal/en/kb/articles/automatic-reminders-payment-schedule",
       "/portal/en/kb/articles/automatic-communication-to-clients-message-templates",
       "/portal/en/kb/articles/sending-email-sms-to-clients",
-      "/portal/en/kb/articles/company-logo-in-email-communication",
       "/portal/en/kb/articles/dynamic-tags",
       "/portal/en/kb/articles/edit-automatic-notification-upcoming-event",
+      "/portal/en/kb/articles/whatsapp-integration-usage-beta",
+      "/portal/en/kb/articles/automatic-reminders-payment-schedule",
+      "/portal/en/kb/articles/company-logo-in-email-communication",
       "/portal/en/kb/articles/automatic-notification-of-an-upcoming-event"
     ],
     "asset_refs": [
-      "https://support.zooza.online/galleryDocuments/edbsnd06d7a4dab8ad39bceb7ee34942d29e603af5cded9dbb6e67f73f221e8e06709b13afacbf0126792eec192d751278ac8?inline=true",
       "https://support.zooza.online/galleryDocuments/edbsndd62b7d329984c8e8ad20e70dd0e94bb58e730084109f55fe4f3c36c4e0f79516c0b9d9b2950b24658ca7d86042b348c?inline=true",
-      "https://support.zooza.online/galleryDocuments/edbsn790a81b404cc639fa3bfdfbb68114c1d061a0e244a221d1b995ec78169c17c3afd7c4363ab7b508214527b85dcd1380d?inline=true"
+      "https://support.zooza.online/galleryDocuments/edbsn790a81b404cc639fa3bfdfbb68114c1d061a0e244a221d1b995ec78169c17c3afd7c4363ab7b508214527b85dcd1380d?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/lights.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/file.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/info.png"
     ],
     "section": "Automatic notifications",
-    "h2_count": 11,
-    "has_faq": true,
-    "estimated_words": 1500
+    "h2_count": 16,
+    "has_faq": false,
+    "estimated_words": 45
   },
   {
     "id": "0003",
@@ -31,16 +34,22 @@
     "title": "Automatic reminders for payment schedule",
     "language": "en",
     "internal_links": [
-      "https://support.zooza.online/portal/en/kb/articles/payment-templates-creation"
+      "/portal/en/kb/articles/automatic-communication-to-clients-message-templates",
+      "/portal/en/kb/articles/sending-email-sms-to-clients",
+      "/portal/en/kb/articles/dynamic-tags",
+      "/portal/en/kb/articles/edit-automatic-notification-upcoming-event",
+      "/portal/en/kb/articles/whatsapp-integration-usage-beta",
+      "/portal/en/kb/articles/automatic-reminders-payment-schedule",
+      "/portal/en/kb/articles/automatic-notification-of-an-upcoming-event"
     ],
     "asset_refs": [
-      "https://support.zooza.online/galleryDocuments/edbsnad77d761714a1cea8fd74ed42d37c8b426f873d258a7345890d09a930a0ad837cba0e31679595e8d7db5bf8a86612e84?inline=true",
-      "https://support.zooza.online/galleryDocuments/edbsn1b68ccc9ab66481caa977c98e36e7a46f098bd0d21d14ba7c3de9d941c27956bfad1f286404468a1aa1d0d282460c811?inline=true"
+      "https://support.zooza.online/galleryDocuments/edbsn1b68ccc9ab66481caa977c98e36e7a46f098bd0d21d14ba7c3de9d941c27956bfad1f286404468a1aa1d0d282460c811?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnad77d761714a1cea8fd74ed42d37c8b426f873d258a7345890d09a930a0ad837cba0e31679595e8d7db5bf8a86612e84?inline=true"
     ],
     "section": "Automatic notifications",
-    "h2_count": 0,
+    "h2_count": 3,
     "has_faq": false,
-    "estimated_words": 350
+    "estimated_words": 407
   },
   {
     "id": "0004",
@@ -49,19 +58,25 @@
     "title": "Edit automatic notifications of an upcoming event",
     "language": "en",
     "internal_links": [
-      "/portal/en/kb/articles/automatic-notification-of-an-upcoming-event",
-      "/portal/en/kb/articles/automatic-communication-to-clients-message-templates"
+      "/portal/en/kb/articles/automatic-communication-to-clients-message-templates",
+      "/portal/en/kb/articles/sending-email-sms-to-clients",
+      "/portal/en/kb/articles/dynamic-tags",
+      "/portal/en/kb/articles/edit-automatic-notification-upcoming-event",
+      "/portal/en/kb/articles/whatsapp-integration-usage-beta",
+      "/portal/en/kb/articles/automatic-reminders-payment-schedule",
+      "/portal/en/kb/articles/automatic-notification-of-an-upcoming-event"
     ],
     "asset_refs": [
       "https://support.zooza.online/galleryDocuments/edbsndad679b8934701feef8dcedc788cfb9004463713442955af2b810bf152db0a62c7b92db506426e941ab0277fd9aa3938?inline=true",
-      "https://support.zooza.online/galleryDocuments/edbsn068db66d7853ad66fb683929810b3dd5430aae9c8d5f82bc9ae7f2183b9cf242621fc6f87f8504906f8ffbe077b4e479?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsne67208a4a71fcf1f8d74264e6968c9d105e6bb3cb517e94772e2a22a65718e2ceb8829e19e09c8df6433cfde15d257b9?inline=true",
       "https://support.zooza.online/galleryDocuments/edbsnce09283dacd58f40f1ed5fdb9355c7576bcd9dadbf4dda647668adf40a6d19cb243250e4b6d12b5987b38859504d01cf?inline=true",
-      "https://support.zooza.online/galleryDocuments/edbsne67208a4a71fcf1f8d74264e6968c9d105e6bb3cb517e94772e2a22a65718e2ceb8829e19e09c8df6433cfde15d257b9?inline=true"
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/lights.png",
+      "https://support.zooza.online/galleryDocuments/edbsn068db66d7853ad66fb683929810b3dd5430aae9c8d5f82bc9ae7f2183b9cf242621fc6f87f8504906f8ffbe077b4e479?inline=true"
     ],
     "section": "Automatic notifications",
-    "h2_count": 0,
+    "h2_count": 2,
     "has_faq": false,
-    "estimated_words": 350
+    "estimated_words": 96
   },
   {
     "id": "0005",
@@ -69,14 +84,23 @@
     "source_url": "https://support.zooza.online/portal/en/kb/articles/dynamic-tags",
     "title": "Dynamic tags",
     "language": "en",
-    "internal_links": [],
+    "internal_links": [
+      "/portal/en/kb/articles/automatic-communication-to-clients-message-templates",
+      "/portal/en/kb/articles/sending-email-sms-to-clients",
+      "/portal/en/kb/articles/dynamic-tags",
+      "/portal/en/kb/articles/edit-automatic-notification-upcoming-event",
+      "/portal/en/kb/articles/whatsapp-integration-usage-beta",
+      "/portal/en/kb/articles/automatic-reminders-payment-schedule",
+      "/portal/en/kb/articles/automatic-notification-of-an-upcoming-event"
+    ],
     "asset_refs": [
-      "https://support.zooza.online/galleryDocuments/edbsnfb87a1ec0319cf8947e1277fdd3e2edccf148156477096cf1ccd43565654e7de6b012e90c411075f30f74fedd083ccea?inline=true"
+      "https://support.zooza.online/galleryDocuments/edbsnfb87a1ec0319cf8947e1277fdd3e2edccf148156477096cf1ccd43565654e7de6b012e90c411075f30f74fedd083ccea?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/caution.png"
     ],
     "section": "Automatic notifications",
     "h2_count": 2,
     "has_faq": false,
-    "estimated_words": 1100
+    "estimated_words": 1025
   },
   {
     "id": "0006",
@@ -85,18 +109,24 @@
     "title": "Automatic notification of an upcoming event",
     "language": "en",
     "internal_links": [
-      "/portal/en/kb/articles/edit-automatic-notification-upcoming-event"
+      "/portal/en/kb/articles/automatic-communication-to-clients-message-templates",
+      "/portal/en/kb/articles/dynamic-tags",
+      "/portal/en/kb/articles/send-email-after-lesson-event",
+      "/portal/en/kb/articles/edit-automatic-notification-upcoming-event",
+      "/portal/en/kb/articles/whatsapp-integration-usage-beta",
+      "/portal/en/kb/articles/automatic-reminders-payment-schedule",
+      "/portal/en/kb/articles/automatic-notification-of-an-upcoming-event"
     ],
     "asset_refs": [
-      "https://support.zooza.online/galleryDocuments/edbsnffe1de7983d424863a0f044cad8c025ba95eb9f1b61b618bb1c8835ef772c2578378f90d4ef9dedd76a5dd0f9b848c7d?inline=true",
-      "https://support.zooza.online/galleryDocuments/edbsna61ba0bdd783c64917159037e21136c565d97e4bd7ecdff5513859ed1eb3d7b84236b0325192e9b0c94b474df55b18a2?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnf6e434c6c7531f7249d6209aac986e7df05000ac529ead23baceb5a336bec892853e462a25ebed70dd86356d6e261bdd?inline=true",
       "https://support.zooza.online/galleryDocuments/edbsn0843921d2874729ee1ad188619ed92439ea68c4a0c73c6376351f4449b054299249c77c0cd29685862516e3b87a3db0c?inline=true",
-      "https://support.zooza.online/galleryDocuments/edbsnf6e434c6c7531f7249d6209aac986e7df05000ac529ead23baceb5a336bec892853e462a25ebed70dd86356d6e261bdd?inline=true"
+      "https://support.zooza.online/galleryDocuments/edbsnffe1de7983d424863a0f044cad8c025ba95eb9f1b61b618bb1c8835ef772c2578378f90d4ef9dedd76a5dd0f9b848c7d?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsna61ba0bdd783c64917159037e21136c565d97e4bd7ecdff5513859ed1eb3d7b84236b0325192e9b0c94b474df55b18a2?inline=true"
     ],
     "section": "Automatic notifications",
     "h2_count": 3,
     "has_faq": false,
-    "estimated_words": 600
+    "estimated_words": 659
   },
   {
     "id": "0007",
@@ -105,22 +135,24 @@
     "title": "Automatic communication to clients / Message templates",
     "language": "en",
     "internal_links": [
+      "/portal/en/kb/articles/automatic-communication-to-clients-message-templates",
+      "/portal/en/kb/articles/sending-email-sms-to-clients",
+      "/portal/en/kb/articles/send-email-after-lesson-event",
       "/portal/en/kb/articles/dynamic-tags",
-      "/portal/en/kb/articles/automatic-notification-of-an-upcoming-event",
       "/portal/en/kb/articles/edit-automatic-notification-upcoming-event",
-      "https://support.zooza.online/portal/en/kb/articles/automatic-payment-reminders"
+      "/portal/en/kb/articles/automatic-notification-of-an-upcoming-event"
     ],
     "asset_refs": [
-      "https://support.zooza.online/galleryDocuments/edbsn004f77757d806722c7acaaf518e02b484eee2df36c3b5562195731ce76f79cac1f2f0b0dfb74468e3d30ec451625280f?inline=true",
-      "https://support.zooza.online/galleryDocuments/edbsn3378c406ae454023e0dea38ab5aeb07b33758c93d9fbb2320428a05892b3e0cc2e4d2dd45380fac577e46d9460a1fdc6?inline=true",
       "https://support.zooza.online/galleryDocuments/edbsna61ba0bdd783c64917159037e21136c5455bac310a7b18bfea767bc12671dabf907918ad42daae50909558dc63789aa4?inline=true",
       "https://www.zooza.online/wp-content/uploads/2023/06/vzor-1-1024x823.png",
-      "https://support.zooza.online/galleryDocuments/edbsn4e39ad0439fae888d312f24eb132b1d783473c4acf504bbb164b36fc5aff79e72aaca8120dd797c0054a80f7b2a0cc38?inline=true"
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/lights.png",
+      "https://support.zooza.online/galleryDocuments/edbsn4e39ad0439fae888d312f24eb132b1d783473c4acf504bbb164b36fc5aff79e72aaca8120dd797c0054a80f7b2a0cc38?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/file.png"
     ],
     "section": "Automatic communication",
-    "h2_count": 2,
+    "h2_count": 4,
     "has_faq": false,
-    "estimated_words": 550
+    "estimated_words": 16
   },
   {
     "id": "0009",
@@ -128,16 +160,25 @@
     "source_url": "https://support.zooza.online/portal/en/kb/articles/send-email-after-lesson-event",
     "title": "Send an e-mail after lesson/event",
     "language": "en",
-    "internal_links": [],
+    "internal_links": [
+      "/portal/en/kb/articles/automatic-communication-to-clients-message-templates",
+      "/portal/en/kb/articles/sending-email-sms-to-clients",
+      "/portal/en/kb/articles/send-email-after-lesson-event",
+      "/portal/en/kb/articles/dynamic-tags",
+      "/portal/en/kb/articles/edit-automatic-notification-upcoming-event",
+      "/portal/en/kb/articles/company-logo-in-email-communication",
+      "/portal/en/kb/articles/automatic-notification-of-an-upcoming-event"
+    ],
     "asset_refs": [
       "https://support.zooza.online/galleryDocuments/edbsnd444df1e834be96be4097158c342be37bba52e02bcaeefd382ea75b3765821fe63941fd3fee7b2f80ae09a0fc293c419?inline=true",
       "https://support.zooza.online/galleryDocuments/edbsn9f748ce00e2043b100cea5d15c7642270a7a028d6dd7819dd2af77dd53de945b30c44736843104752e08fbdf1abc0790?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/info.png",
       "https://support.zooza.online/galleryDocuments/edbsn5eb64338d07cd9deb58aa8584570f53aca752a8e5f36874c45c88262352ec89cbe4e8c76cc464e13910f5e4c44ba45ab?inline=true"
     ],
     "section": "Other settings",
     "h2_count": 0,
     "has_faq": false,
-    "estimated_words": 150
+    "estimated_words": 123
   },
   {
     "id": "0011",
@@ -145,45 +186,1982 @@
     "source_url": "https://support.zooza.online/portal/en/kb/articles/company-logo-in-email-communication",
     "title": "Company logo in email communication",
     "language": "en",
-    "internal_links": [],
+    "internal_links": [
+      "/portal/en/kb/articles/automatic-communication-to-clients-message-templates",
+      "/portal/en/kb/articles/sending-email-sms-to-clients",
+      "/portal/en/kb/articles/send-email-after-lesson-event",
+      "/portal/en/kb/articles/dynamic-tags",
+      "/portal/en/kb/articles/whatsapp-integration-usage-beta",
+      "/portal/en/kb/articles/company-logo-in-email-communication",
+      "/portal/en/kb/articles/automatic-notification-of-an-upcoming-event"
+    ],
     "asset_refs": [
       "https://www.zooza.online/wp-content/uploads/2023/08/T6gGtP22sI-1024x576.png",
-      "https://www.zooza.online/wp-content/uploads/2023/08/ytHmELl898.png",
-      "https://www.zooza.online/wp-content/uploads/2023/08/PktMlyengS-1024x431.png"
+      "https://www.zooza.online/wp-content/uploads/2023/08/PktMlyengS-1024x431.png",
+      "https://www.zooza.online/wp-content/uploads/2023/08/ytHmELl898.png"
     ],
     "section": "Other settings",
     "h2_count": 0,
     "has_faq": false,
-    "estimated_words": 120
+    "estimated_words": 103
   },
   {
     "id": "0012",
     "legacy_path": "legacy/0012_Welcome to Zooza.html",
     "source_url": "https://support.zooza.online/portal/en/kb/articles/sending-email-sms-to-clients",
     "title": "Sending email/SMS to clients",
-    "language": "mixed",
+    "language": "en",
     "internal_links": [
-      "/portal/en/kb/articles/dynamic-tags"
+      "/portal/en/kb/articles/automatic-communication-to-clients-message-templates",
+      "/portal/en/kb/articles/sending-email-sms-to-clients",
+      "/portal/en/kb/articles/send-email-after-lesson-event",
+      "/portal/en/kb/articles/edit-automatic-notification-upcoming-event",
+      "/portal/en/kb/articles/company-logo-in-email-communication",
+      "/portal/en/kb/articles/automatic-notification-of-an-upcoming-event"
     ],
     "asset_refs": [
-      "https://support.zooza.online/galleryDocuments/edbsnf6e434c6c7531f7249d6209aac986e7d0a67b3a6de56ba346e3926e0f8bfb8ce1b35d7eafba65017ca2aa7bfbda95770?inline=true",
-      "https://support.zooza.online/galleryDocuments/edbsn1bcbb43d86a55f1c83e9d43ae2e436a903baa2f004717e50fad52d5b92e0b8cdcd63484e8aba6ef8d62a1307555ded08?inline=true",
-      "https://support.zooza.online/galleryDocuments/edbsn8113b055df559ac091532d04fe4e4d77dd4ac98188fdb523736d5b400f1c3d2576b9a36e21cecb2a4cfc995763d4ffab?inline=true",
-      "https://support.zooza.online/galleryDocuments/edbsn0843921d2874729ee1ad188619ed92437f9e4dc56a8f4679f27250238efe475242742294e63538885148826e387ad88c?inline=true",
-      "https://support.zooza.online/galleryDocuments/edbsn8113b055df559ac091532d04fe4e4d77ec63fcc87adfc3af23f6cfc85bf9ea854fd3b4d87f56575c52ae06d03730b995?inline=true",
-      "https://support.zooza.online/galleryDocuments/edbsnffe1de7983d424863a0f044cad8c025b9f67ca11e90f427a4cd261f0bac6c825027846a30800b46cb5415c39b4e51146?inline=true",
-      "https://support.zooza.online/galleryDocuments/edbsnffe1de7983d424863a0f044cad8c025bdf2c829de0a4128931570815807e090cb3e94737cf31a12cb547097ff797e296?inline=true",
-      "https://support.zooza.online/galleryDocuments/edbsn3378c406ae454023e0dea38ab5aeb07b3851ffb2f2da28e9eec4b728930d95ab1c305a8cd6572dcc4bad05b23a1bf8ab?inline=true",
-      "https://support.zooza.online/galleryDocuments/edbsn004f77757d806722c7acaaf518e02b487e4feb5c1c28469dcbfe1601e6bb38ca98bc5463a9a40fab5befa4ec183cd5bc?inline=true",
-      "https://support.zooza.online/galleryDocuments/edbsn9f7367135158450fdd5f607b89174edf060a484ec5bce983cc7aa35aaa8bd19f13fa9f1175a793b99b1d14256185e3a9?inline=true",
-      "https://support.zooza.online/galleryDocuments/edbsn1bcbb43d86a55f1c83e9d43ae2e436a9d095c20de5b0dab1cced594ae0adc28541e555d6c690f47ce5f17b2751544621?inline=true",
       "https://support.zooza.online/galleryDocuments/edbsn4e39ad0439fae888d312f24eb132b1d7518ee7c2456bd22a19668722beed5ba214c3c27a9863c7ac96e6667db4cdea49?inline=true",
-      "https://support.zooza.online/galleryDocuments/edbsncbae441985eacd5876ff6635df86f7d1dcc8f57514d0b863f5460e3eaf5e512d7283d54e20787e606c56fd9ae32bd3af?inline=true",
-      "https://support.zooza.online/galleryDocuments/edbsn9f7367135158450fdd5f607b89174edf52aeeb2b7d7bdfbc879ca15f333a3dc6380b9ba51dba7563dde453a2a91811d8?inline=true"
+      "https://support.zooza.online/galleryDocuments/edbsn9f7367135158450fdd5f607b89174edf52aeeb2b7d7bdfbc879ca15f333a3dc6380b9ba51dba7563dde453a2a91811d8?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn1bcbb43d86a55f1c83e9d43ae2e436a903baa2f004717e50fad52d5b92e0b8cdcd63484e8aba6ef8d62a1307555ded08?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnf6e434c6c7531f7249d6209aac986e7d0a67b3a6de56ba346e3926e0f8bfb8ce1b35d7eafba65017ca2aa7bfbda95770?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn004f77757d806722c7acaaf518e02b487e4feb5c1c28469dcbfe1601e6bb38ca98bc5463a9a40fab5befa4ec183cd5bc?inline=true"
     ],
     "section": "Other settings",
+    "h2_count": 4,
+    "has_faq": false,
+    "estimated_words": 899
+  },
+  {
+    "id": "0013",
+    "legacy_path": "legacy/0013_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/how-to-clear-your-cache",
+    "title": "How to Clear Your Cache",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/late-registrations",
+      "/portal/en/kb/articles/individual-lessons-for-clients-on-the-climbing-wall",
+      "/portal/en/kb/articles/multi-day-event-with-product-offer",
+      "/portal/en/kb/articles/individual-lessons-with-free-lesson",
+      "/portal/en/kb/articles/sending-requests",
+      "/portal/en/kb/articles/how-to-clear-your-cache",
+      "/portal/en/kb/articles/getting-started-with-zooza"
+    ],
+    "asset_refs": [],
+    "section": "General",
+    "h2_count": 3,
+    "has_faq": false,
+    "estimated_words": 204
+  },
+  {
+    "id": "0014",
+    "legacy_path": "legacy/0014_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/sending-requests",
+    "title": "Sending requests",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/late-registrations",
+      "/portal/en/kb/articles/multi-day-event-with-product-offer",
+      "/portal/en/kb/articles/individual-lessons-for-clients-on-the-climbing-wall",
+      "/portal/en/kb/articles/sending-requests",
+      "/portal/en/kb/articles/how-to-clear-your-cache",
+      "/portal/en/kb/articles/getting-started-with-zooza"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsne2c8ead4752131ae7627f81b71654599d8eb32db38cdfacbaca7a1d1e9f95310f824415d51cf332b602a6eb7187aba6a?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsna61ba0bdd783c64917159037e21136c5497ac93ab7b7ca3ec779349f787d791e0f6bf5e2667d194c3fd17eaf2216e118?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn9f7367135158450fdd5f607b89174edfbf23aba07d0dae010d97cb0a1378634cb39a6f3297a358bccec4fd2f530c4d3d?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/info.png",
+      "https://support.zooza.online/galleryDocuments/edbsn1bcbb43d86a55f1c83e9d43ae2e436a944d9ef7ae3f4f4af95c9a8111a380e122c61e80533e3f0b285aad074365f450a?inline=true"
+    ],
+    "section": "General",
+    "h2_count": 8,
+    "has_faq": false,
+    "estimated_words": 960
+  },
+  {
+    "id": "0015",
+    "legacy_path": "legacy/0015_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/getting-started-with-zooza",
+    "title": "Getting Started with Zooza",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/late-registrations",
+      "/portal/en/kb/articles/multi-day-event-with-product-offer",
+      "/portal/en/kb/articles/individual-lessons-for-clients-on-the-climbing-wall",
+      "/portal/en/kb/articles/allowing-multiple-registration-for-a-course",
+      "/portal/en/kb/articles/individual-lessons-with-free-lesson",
+      "/portal/en/kb/articles/how-to-clear-your-cache",
+      "/portal/en/kb/articles/getting-started-with-zooza"
+    ],
+    "asset_refs": [
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/lights.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/quote.png"
+    ],
+    "section": "101",
+    "h2_count": 44,
+    "has_faq": false,
+    "estimated_words": 170
+  },
+  {
+    "id": "0016",
+    "legacy_path": "legacy/0016_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/late-registrations",
+    "title": "Late registrations",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/late-registrations",
+      "/portal/en/kb/articles/multi-day-event-with-product-offer",
+      "/portal/en/kb/articles/individual-lessons-for-clients-on-the-climbing-wall",
+      "/portal/en/kb/articles/allowing-multiple-registration-for-a-course",
+      "/portal/en/kb/articles/individual-lessons-with-free-lesson",
+      "/portal/en/kb/articles/getting-started-with-zooza"
+    ],
+    "asset_refs": [],
+    "section": "101",
+    "h2_count": 3,
+    "has_faq": false,
+    "estimated_words": 12
+  },
+  {
+    "id": "0017",
+    "legacy_path": "legacy/0017_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/individual-lessons-with-free-lesson",
+    "title": "Individual lessons with 1st free lesson",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/late-registrations",
+      "/portal/en/kb/articles/multi-day-event-with-product-offer",
+      "/portal/en/kb/articles/individual-lessons-for-clients-on-the-climbing-wall",
+      "/portal/en/kb/articles/individual-lessons-with-free-lesson",
+      "/portal/en/kb/articles/how-to-clear-your-cache",
+      "/portal/en/kb/articles/getting-started-with-zooza"
+    ],
+    "asset_refs": [
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/quote.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/info.png"
+    ],
+    "section": "101",
+    "h2_count": 0,
+    "has_faq": false,
+    "estimated_words": 28
+  },
+  {
+    "id": "0018",
+    "legacy_path": "legacy/0018_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/individual-lessons-for-clients-on-the-climbing-wall",
+    "title": "Individual lessons for clients on the climbing wall with choice of instructor",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/late-registrations",
+      "/portal/en/kb/articles/multi-day-event-with-product-offer",
+      "/portal/en/kb/articles/individual-lessons-for-clients-on-the-climbing-wall",
+      "/portal/en/kb/articles/allowing-multiple-registration-for-a-course",
+      "/portal/en/kb/articles/individual-lessons-with-free-lesson",
+      "/portal/en/kb/articles/how-to-clear-your-cache",
+      "/portal/en/kb/articles/getting-started-with-zooza"
+    ],
+    "asset_refs": [
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/quote.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/info.png"
+    ],
+    "section": "101",
+    "h2_count": 0,
+    "has_faq": false,
+    "estimated_words": 11
+  },
+  {
+    "id": "0019",
+    "legacy_path": "legacy/0019_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/multi-day-event-with-product-offer",
+    "title": "Multi-day event with product offer",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/late-registrations",
+      "/portal/en/kb/articles/multi-day-event-with-product-offer",
+      "/portal/en/kb/articles/individual-lessons-for-clients-on-the-climbing-wall",
+      "/portal/en/kb/articles/allowing-multiple-registration-for-a-course",
+      "/portal/en/kb/articles/individual-lessons-with-free-lesson",
+      "/portal/en/kb/articles/how-to-clear-your-cache",
+      "/portal/en/kb/articles/getting-started-with-zooza"
+    ],
+    "asset_refs": [
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/quote.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/info.png"
+    ],
+    "section": "101",
+    "h2_count": 0,
+    "has_faq": false,
+    "estimated_words": 17
+  },
+  {
+    "id": "0020",
+    "legacy_path": "legacy/0020_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/holiday-settings",
+    "title": "Holiday settings",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/holiday-settings"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsnffe1de7983d424863a0f044cad8c025ba6453b8c3700f44ff64d42411297172f784a792e784ccba1630b53b459166e34?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsna61ba0bdd783c64917159037e21136c5c7f8072f99e717edec74abab1df9fa6cb7bca51bb0b54766f26ba66dc30415bb?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsna6b6be7721fed868193f76da47c61d361e9c48e6c262bff4a5c6f6fe49f4cd9779fdff344bf27725595fa1a2c95d8d0e?inline=true"
+    ],
+    "section": "Calendar",
+    "h2_count": 2,
+    "has_faq": false,
+    "estimated_words": 236
+  },
+  {
+    "id": "0021",
+    "legacy_path": "legacy/0021_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/advanced-dashboard-in-the-parent-profile-parent-portal",
+    "title": "Dashboard 2.0 in the Parent Profile (Parent Portal)",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/advanced-dashboard-in-the-parent-profile-parent-portal",
+      "/portal/en/kb/articles/active-inactive-client",
+      "/portal/en/kb/articles/parent-portal-101",
+      "/portal/en/kb/articles/king-of-a-group",
+      "/portal/en/kb/articles/client-import",
+      "/portal/en/kb/articles/personas",
+      "/portal/en/kb/articles/faq-common-booking-scenarios",
+      "/portal/en/kb/articles/data-correction-change-client",
+      "/portal/en/kb/articles/manage-client-attendance-in-their-profile"
+    ],
+    "asset_refs": [
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png",
+      "https://support.zooza.online/galleryDocuments/edbsn85fa72aa8e7b5b427abc1991ed7faee0c57ba878192b7f6591a4efd78cb3c1b3f85eaf25a9fcfecaf47edf7c8a29c068?inline=true"
+    ],
+    "section": "Clients",
+    "h2_count": 18,
+    "has_faq": false,
+    "estimated_words": 797
+  },
+  {
+    "id": "0023",
+    "legacy_path": "legacy/0023_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/parent-portal-101",
+    "title": "Parent Portal 101",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/advanced-dashboard-in-the-parent-profile-parent-portal",
+      "/portal/en/kb/articles/active-inactive-client",
+      "/portal/en/kb/articles/parent-portal-101",
+      "/portal/en/kb/articles/king-of-a-group",
+      "/portal/en/kb/articles/client-import",
+      "/portal/en/kb/articles/personas",
+      "/portal/en/kb/articles/faq-common-booking-scenarios",
+      "/portal/en/kb/articles/data-correction-change-client",
+      "/portal/en/kb/articles/manage-client-attendance-in-their-profile"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn3efdf66b3ef370c917e475ea0ac706691015f52c0ec81b70d24d8ffc750169bee1567f2195513a81bd474614f4c1ad67?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnae59cb07254d5c0f78b394effdcba15c9a66d9c14475d616189a08036adcfacd38105eff7dcf3abf3695bd9300776e97?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn82103156d91f0e265d7beb39808ac13e83ac13d21e92862a44c55ec4d30fefba5963f12c37fd4ae58265326c3cd061fa?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsna2b739e76b218f00ee4fa95eed921c16c265803df4972bf2f7d96fb30a064126485af343fcb74d6e4dab71142583c1bd?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn1461bbd3d6c44a59e8c25efc18e8a210de922a89e7a0933c67dd5835014b35a7854b28fb9d4c713428b0970b4229f378?inline=true"
+    ],
+    "section": "Clients",
+    "h2_count": 10,
+    "has_faq": false,
+    "estimated_words": 46
+  },
+  {
+    "id": "0024",
+    "legacy_path": "legacy/0024_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/personas",
+    "title": "Personas",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/advanced-dashboard-in-the-parent-profile-parent-portal",
+      "/portal/en/kb/articles/active-inactive-client",
+      "/portal/en/kb/articles/parent-portal-101",
+      "/portal/en/kb/articles/king-of-a-group",
+      "/portal/en/kb/articles/client-import",
+      "/portal/en/kb/articles/personas",
+      "/portal/en/kb/articles/faq-common-booking-scenarios",
+      "/portal/en/kb/articles/data-correction-change-client",
+      "/portal/en/kb/articles/manage-client-attendance-in-their-profile"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn9d40532a77072a8b45a5e4556a60ab0cff49d41719fc1c06efd22d5afff632511eae93ba4bd3d6f799b330ce7cadc379?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png",
+      "https://support.zooza.online/galleryDocuments/edbsn88c426c664985ac3919e1a749c457c08cc4b494f585c3108228e5218ac8528978f92fccd8657bd205664020461dcc67a?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn0f3ccb80db42a7b040475d57b24e1831ecc455c2e97f0c7d78607fc1edbc5e6358f401bd896fc650ccd96e2ab49ed9a6?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnd5afefd2efdd71564ad148f36e1d636fb36fad6ae50c70f745f424ce89129b54347cb5500a7c47eead94febeb9e0e304?inline=true"
+    ],
+    "section": "Clients",
+    "h2_count": 11,
+    "has_faq": false,
+    "estimated_words": 131
+  },
+  {
+    "id": "0025",
+    "legacy_path": "legacy/0025_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/client-import",
+    "title": "Client import",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/advanced-dashboard-in-the-parent-profile-parent-portal",
+      "/portal/en/kb/articles/active-inactive-client",
+      "/portal/en/kb/articles/parent-portal-101",
+      "/portal/en/kb/articles/king-of-a-group",
+      "/portal/en/kb/articles/client-import",
+      "/portal/en/kb/articles/personas",
+      "/portal/en/kb/articles/faq-common-booking-scenarios",
+      "/portal/en/kb/articles/data-correction-change-client",
+      "/portal/en/kb/articles/manage-client-attendance-in-their-profile"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn197297b5d0db7195742d2f505f7b45af1041574deb5fe74a74763260113418230c8ec491d97c302a0897ecc737a6ad2d?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnb1398ab0b49edddd7e74a9d4712f645a7b44a6cfd2b2f8ac7e3f663e99395c597cae92b64fb351413a355e5e6d82b48f?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn5c3ef4731d8020f967fe0b38b35c0cec48d277b4c0bdd14dcd7ce886982a84934fc282309322a21b2c4d9cd02485d89a?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/caution.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png"
+    ],
+    "section": "Clients",
+    "h2_count": 2,
+    "has_faq": false,
+    "estimated_words": 53
+  },
+  {
+    "id": "0026",
+    "legacy_path": "legacy/0026_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/data-correction-change-client",
+    "title": "Data correction or change client's data",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/types-of-registrations",
+      "/portal/en/kb/articles/advanced-dashboard-in-the-parent-profile-parent-portal",
+      "/portal/en/kb/articles/active-inactive-client",
+      "/portal/en/kb/articles/parent-portal-101",
+      "/portal/en/kb/articles/king-of-a-group",
+      "/portal/en/kb/articles/client-import",
+      "/portal/en/kb/articles/personas",
+      "/portal/en/kb/articles/faq-common-booking-scenarios",
+      "/portal/en/kb/articles/data-correction-change-client",
+      "/portal/en/kb/articles/manage-client-attendance-in-their-profile"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsncc1e5d8eac4b6164902b5015446b4847b189d9e8646185d066bcc3e784f7ea44aa5d745e25f6904f0aa494b33b2654a2?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnab6db5f7c289bd344a5124cb00dbd09fb5eb392a2d0d95e2e2554158220d709de3e7c751007021efcbf8832b4f075906?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn3b21acd9b737f4d17f8d7e183695356b8e738dacf9ac5ab5a463accd51111ecb2ccd78a9026e6d63641b5968e6862ab5?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png",
+      "https://support.zooza.online/galleryDocuments/edbsncc1e5d8eac4b6164902b5015446b4847fdf311eff67ce351007d5f2a2f7319c870e323e654516a7bef8fc03f8c128186?inline=true"
+    ],
+    "section": "Clients",
+    "h2_count": 4,
+    "has_faq": false,
+    "estimated_words": 362
+  },
+  {
+    "id": "0028",
+    "legacy_path": "legacy/0028_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/faq-common-booking-scenarios",
+    "title": "Common Booking Scenarios",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/types-of-registrations",
+      "/portal/en/kb/articles/advanced-dashboard-in-the-parent-profile-parent-portal",
+      "/portal/en/kb/articles/active-inactive-client",
+      "/portal/en/kb/articles/business-regist",
+      "/portal/en/kb/articles/parent-portal-101",
+      "/portal/en/kb/articles/allowing-multiple-registration-for-a-course",
+      "/portal/en/kb/articles/client-import",
+      "/portal/en/kb/articles/personas",
+      "/portal/en/kb/articles/faq-common-booking-scenarios",
+      "/portal/en/kb/articles/linked-registrations"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsne0c8b175b1ec6d9b80ccbe5ad0fa4f820f3c64e2d6619d2f6600bd05dff0213e0ee1ad05cb047e43f13dfd44d8dfac1d?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn6519b30cf9ba0c6fc6773dc210b6008edb1d646124821071cd37883b251c078244713bef845a0886a6912add016687f5?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn88af7403885f57e620bd6b3d9e15a7889dca35698580333763d9d2c5c05e7f3cac503e2952aed7bd92e52244dba98d36?inline=true"
+    ],
+    "section": "Registrations",
+    "h2_count": 6,
+    "has_faq": true,
+    "estimated_words": 1312
+  },
+  {
+    "id": "0030",
+    "legacy_path": "legacy/0030_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/linked-registrations",
+    "title": "Linked registrations",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/types-of-registrations",
+      "/portal/en/kb/articles/advanced-dashboard-in-the-parent-profile-parent-portal",
+      "/portal/en/kb/articles/active-inactive-client",
+      "/portal/en/kb/articles/business-regist",
+      "/portal/en/kb/articles/parent-portal-101",
+      "/portal/en/kb/articles/allowing-multiple-registration-for-a-course",
+      "/portal/en/kb/articles/personas",
+      "/portal/en/kb/articles/faq-common-booking-scenarios",
+      "/portal/en/kb/articles/linked-registrations"
+    ],
+    "asset_refs": [
+      "https://www.zooza.online/wp-content/uploads/2023/09/CleanShot-2023-09-21-at-19.54.08@2x-1024x465.png",
+      "https://www.zooza.online/wp-content/uploads/2023/09/CleanShot-2023-09-21-at-19.55.55@2x-1024x326.png",
+      "https://www.zooza.online/wp-content/uploads/2023/09/CleanShot-2023-09-21-at-19.51.33@2x-1024x768.png",
+      "https://www.zooza.online/wp-content/uploads/2023/09/CleanShot-2023-09-21-at-19.55.14@2x-1024x863.png",
+      "https://www.zooza.online/wp-content/uploads/2023/09/VFXHivPkES-1024x775.png"
+    ],
+    "section": "Registrations",
+    "h2_count": 2,
+    "has_faq": false,
+    "estimated_words": 108
+  },
+  {
+    "id": "0031",
+    "legacy_path": "legacy/0031_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/business-regist",
+    "title": "Business registration",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/types-of-registrations",
+      "/portal/en/kb/articles/advanced-dashboard-in-the-parent-profile-parent-portal",
+      "/portal/en/kb/articles/active-inactive-client",
+      "/portal/en/kb/articles/business-regist",
+      "/portal/en/kb/articles/allowing-multiple-registration-for-a-course",
+      "/portal/en/kb/articles/client-import",
+      "/portal/en/kb/articles/personas",
+      "/portal/en/kb/articles/faq-common-booking-scenarios",
+      "/portal/en/kb/articles/linked-registrations"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn7e8048f7b119c7993b0211983a90391738edb90ea2700663c50c6a38e26d1c1fb977a2d5eae66e9964a2c68f244c4afe?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn2b10a57b0d0274978569ada7052a91666c2802e4bfc034928bf04f67371e71ec782cc38a93a80b9ede86d4247c14fdcb?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/info.png",
+      "https://support.zooza.online/galleryDocuments/edbsn2c80a54254ae7365b51477752468a639f74693184fa7afd0056e3beb8ee7f02ce99109b4d5344f314906a72e7944e7aa?inline=true"
+    ],
+    "section": "Registrations",
+    "h2_count": 0,
+    "has_faq": false,
+    "estimated_words": 171
+  },
+  {
+    "id": "0032",
+    "legacy_path": "legacy/0032_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/allowing-multiple-registration-for-a-course",
+    "title": "Allowing multiple registration for a course",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/types-of-registrations",
+      "/portal/en/kb/articles/advanced-dashboard-in-the-parent-profile-parent-portal",
+      "/portal/en/kb/articles/active-inactive-client",
+      "/portal/en/kb/articles/business-regist",
+      "/portal/en/kb/articles/allowing-multiple-registration-for-a-course",
+      "/portal/en/kb/articles/client-import",
+      "/portal/en/kb/articles/personas",
+      "/portal/en/kb/articles/faq-common-booking-scenarios",
+      "/portal/en/kb/articles/linked-registrations"
+    ],
+    "asset_refs": [
+      "https://www.zooza.online/wp-content/uploads/2023/09/image.png",
+      "https://www.zooza.online/wp-content/uploads/2023/09/CleanShot-2023-09-21-at-20.01.06@2x-1024x838.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/lights.png",
+      "https://www.zooza.online/wp-content/uploads/2023/09/CleanShot-2023-09-21-at-20.00.12@2x-1024x345.jpg",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/info.png"
+    ],
+    "section": "Registrations",
     "h2_count": 1,
     "has_faq": false,
-    "estimated_words": 900
+    "estimated_words": 102
+  },
+  {
+    "id": "0033",
+    "legacy_path": "legacy/0033_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/types-of-registrations",
+    "title": "Types of registrations",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/types-of-registrations",
+      "/portal/en/kb/articles/advanced-dashboard-in-the-parent-profile-parent-portal",
+      "/portal/en/kb/articles/active-inactive-client",
+      "/portal/en/kb/articles/business-regist",
+      "/portal/en/kb/articles/allowing-multiple-registration-for-a-course",
+      "/portal/en/kb/articles/personas",
+      "/portal/en/kb/articles/faq-common-booking-scenarios",
+      "/portal/en/kb/articles/linked-registrations"
+    ],
+    "asset_refs": [
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png",
+      "https://support.zooza.online/galleryDocuments/edbsne49e7355e243462de9215b671ec7d60d339fa11ed554ffac26e3adec038c4f0dc544ccd10e8eeb0509ae635ea8bbeba4?inline=true"
+    ],
+    "section": "Registrations",
+    "h2_count": 15,
+    "has_faq": false,
+    "estimated_words": 192
+  },
+  {
+    "id": "0034",
+    "legacy_path": "legacy/0034_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/trials-daily-business",
+    "title": "Daily Business with Trials: Setup, Transfers, and Adjustments",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/individual-sessions-how-to-sell-plan-and-manage-1-1-lessons-in-zooza",
+      "/portal/en/kb/articles/group-connection",
+      "/portal/en/kb/articles/group-creation",
+      "/portal/en/kb/articles/setting-the-price-on-a-course",
+      "/portal/en/kb/articles/trial",
+      "/portal/en/kb/articles/online-registration",
+      "/portal/en/kb/articles/course-settings",
+      "/portal/en/kb/articles/set-up-i",
+      "/portal/en/kb/articles/group-interested",
+      "/portal/en/kb/articles/2-lecturers-per-group"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsnc4d9154070047fe6edd08ee77b68fbb58fb4b858134a5c8d4be696d54ce5a02cb9f288c37bf27e8ab4425c4e813f4dd8?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn32d8becfb75a3d58094f6ac0e5d0495b76aca2e9c439a97f51d22aefdc6f2f3cf8c30fba0339ec7f161b12fb44c163ef?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsne9f2e1832bbf7409e52b986d0a1bb8add37329b60373b433de83dbb9565aafb0f115294f6a0285271003925af53a3210?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png",
+      "https://support.zooza.online/galleryDocuments/edbsn1c8ad915a00303ae84017a6f2adddcd7200e1ca6f15f4eb5958f73b9afc19e9526c42fc169e408de0d0cab52ce84dd35?inline=true"
+    ],
+    "section": "Trial",
+    "h2_count": 13,
+    "has_faq": false,
+    "estimated_words": 62
+  },
+  {
+    "id": "0035",
+    "legacy_path": "legacy/0035_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/set-up-i",
+    "title": "Individual lessons via group Interested",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/individual-sessions-how-to-sell-plan-and-manage-1-1-lessons-in-zooza",
+      "/portal/en/kb/articles/group-connection",
+      "/portal/en/kb/articles/group-creation",
+      "/portal/en/kb/articles/how-to-create-paid-events",
+      "/portal/en/kb/articles/trial",
+      "/portal/en/kb/articles/set-up-i",
+      "/portal/en/kb/articles/group-interested",
+      "/portal/en/kb/articles/2-lecturers-per-group",
+      "/portal/en/kb/articles/trials-daily-business"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsnfaca109f23ac81c5e2f723bd361e02a049606017a63b5e0e2d2dd75699e83eec8b3992efbac6beaeabcfb53b8a20bd3d?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnffe1de7983d424863a0f044cad8c025b21179e8a38f67262be21261c46e9699f2d29ceef33da48fc28db68dd41350eb4?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png",
+      "https://support.zooza.online/galleryDocuments/edbsn0843921d2874729ee1ad188619ed924347bca6606fbccfa9cb1f48e01b645b4d119455e17d39139716c5cee2d9f3b27d?inline=true"
+    ],
+    "section": "Trial",
+    "h2_count": 0,
+    "has_faq": false,
+    "estimated_words": 449
+  },
+  {
+    "id": "0036",
+    "legacy_path": "legacy/0036_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/group-interested",
+    "title": "Group Interested",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/group-connection",
+      "/portal/en/kb/articles/group-creation",
+      "/portal/en/kb/articles/open-course-cr",
+      "/portal/en/kb/articles/set-up-i",
+      "/portal/en/kb/articles/group-interested",
+      "/portal/en/kb/articles/2-lecturers-per-group",
+      "/portal/en/kb/articles/trials-daily-business",
+      "/portal/en/kb/articles/course-group-lesson"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsnae39f8af25218a36e6bf5c8785785d60d53bfa40d84c28d2aa3fe5ac7e0572d1213d1d51c3c94b819d1198ed0071fffe?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn599db141bad069ba142361581f003087677d54696e431dbf4a9110c48a739a31802978f58bd792a77be2573fa6f1f5bd?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnea965d2c94b31273b7f9b2efd7f1383f8e4eadcfc56320cbd79a2570aa56907c0008193c636f380d56e09cecc6c9fea5?inline=true"
+    ],
+    "section": "Trial",
+    "h2_count": 0,
+    "has_faq": false,
+    "estimated_words": 195
+  },
+  {
+    "id": "0037",
+    "legacy_path": "legacy/0037_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/group-connection",
+    "title": "Group connection",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/group-connection",
+      "/portal/en/kb/articles/group-creation",
+      "/portal/en/kb/articles/how-to-create-paid-events",
+      "/portal/en/kb/articles/set-up-i",
+      "/portal/en/kb/articles/new-course-existing-clients",
+      "/portal/en/kb/articles/group-interested",
+      "/portal/en/kb/articles/2-lecturers-per-group",
+      "/portal/en/kb/articles/trials-daily-business",
+      "/portal/en/kb/articles/course-group-lesson"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn058cada4d9bf58744013ef3d37fa3c298e4076d8f809a3962d911b49e6d32893939c7c2b399fe2dd6e7fa0262d5eb40d?inline=true",
+      "https://www.zooza.online/wp-content/uploads/2023/07/qI3e1k4URv-1024x408.png",
+      "https://www.zooza.online/wp-content/uploads/2023/07/FlVt0ecbC3-1024x551.png",
+      "https://www.zooza.online/wp-content/uploads/2023/07/tHnocEkHjB-1024x373.png",
+      "https://www.zooza.online/wp-content/uploads/2023/07/DPq0xEn9w1-1024x427.png"
+    ],
+    "section": "Trial",
+    "h2_count": 1,
+    "has_faq": false,
+    "estimated_words": 135
+  },
+  {
+    "id": "0038",
+    "legacy_path": "legacy/0038_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/2-lecturers-per-group",
+    "title": "2 lecturers per group",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/edit-events-in-courses",
+      "/portal/en/kb/articles/group-connection",
+      "/portal/en/kb/articles/group-creation",
+      "/portal/en/kb/articles/set-up-i",
+      "/portal/en/kb/articles/group-interested",
+      "/portal/en/kb/articles/2-lecturers-per-group",
+      "/portal/en/kb/articles/trials-daily-business",
+      "/portal/en/kb/articles/course-group-lesson"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsnb80b29e14cbbba84dc545fd36d6b8b109344c86400aacaa324f30535da8d388afdd81280d7f1298678bb3c4897dac7b6?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn74984abfe607f636d1ab40438b65ee40b4b9d9fffa036ed2355550029bdf58cd7de12ff6191690856fa6fa9a3411a021?inline=true",
+      "https://www.zooza.online/wp-content/uploads/2023/08/5pCfM2opEx.png",
+      "https://www.zooza.online/wp-content/uploads/2023/08/XgqNIxfb36-1024x345.png"
+    ],
+    "section": "Trial",
+    "h2_count": 0,
+    "has_faq": false,
+    "estimated_words": 294
+  },
+  {
+    "id": "0039",
+    "legacy_path": "legacy/0039_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/blocks-creation",
+    "title": "Blocks creation",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/edit-events-in-courses",
+      "/portal/en/kb/articles/group-creation",
+      "/portal/en/kb/articles/open-course-cr",
+      "/portal/en/kb/articles/how-to-create-paid-events",
+      "/portal/en/kb/articles/course-settings-tile",
+      "/portal/en/kb/articles/collecting-the-reason-for-cancelling",
+      "/portal/en/kb/articles/viewing-billable-events",
+      "/portal/en/kb/articles/blocks-creation",
+      "/portal/en/kb/articles/course-creation",
+      "/portal/en/kb/articles/course-group-lesson"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsnac4de412f5aa1c258fcdd08456a6b2bddc6d0917bfe70f465008ccd034cfda9bc7322c62536afe99484f6c1beca17307?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn5502e3e80a127ca5b298322353f8881126e512fffd7d21e73b0abc15bc8a1bd0aff59d755298f9bdcf6467567a76f119?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnfc3a12eb1186bfbc5738c606f97d8511fe4a2a8458f8d4253e79eef5281a27797aa57d78f75eed619214fb86bc167c2f?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn34bdc334bf2367a59efbded5420512dc773154e0a44e2be69ccbb82a20f0d5f501264a6e0c315070bfefc112976d0cf3?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsndd1f9a35fb84e6ca18a06f9792a9a5bca0f4e7354ed7297a944e3b888ff6a1354968c704c64db3a6b2f261e9a3c47cb5?inline=true"
+    ],
+    "section": "Lessons/Events",
+    "h2_count": 11,
+    "has_faq": false,
+    "estimated_words": 665
+  },
+  {
+    "id": "0041",
+    "legacy_path": "legacy/0041_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/collecting-the-reason-for-cancelling",
+    "title": "Collecting the reason for cancelling the lesson",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/edit-events-in-courses",
+      "/portal/en/kb/articles/individual-sessions-how-to-sell-plan-and-manage-1-1-lessons-in-zooza",
+      "/portal/en/kb/articles/how-to-create-paid-events",
+      "/portal/en/kb/articles/replacement-lessons",
+      "/portal/en/kb/articles/trial",
+      "/portal/en/kb/articles/set-up-i",
+      "/portal/en/kb/articles/collecting-the-reason-for-cancelling",
+      "/portal/en/kb/articles/viewing-billable-events",
+      "/portal/en/kb/articles/blocks-creation",
+      "/portal/en/kb/articles/creating-events-in-groups"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn18a3cdba24c542ca14c493ceadc44592a7ae9c8cbea1bfde3b0d438d977908acf612ea4ffb89a1873ca5062f5c715844?inline=true",
+      "https://www.zooza.online/wp-content/uploads/2023/09/Ajc12oogWM-1024x595.png",
+      "https://www.zooza.online/wp-content/uploads/2023/09/lbr11GIVo6.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/info.png"
+    ],
+    "section": "Lessons/Events",
+    "h2_count": 4,
+    "has_faq": false,
+    "estimated_words": 290
+  },
+  {
+    "id": "0042",
+    "legacy_path": "legacy/0042_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/edit-events-in-courses",
+    "title": "Edit lessons/events in courses",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/edit-events-in-courses",
+      "/portal/en/kb/articles/group-creation",
+      "/portal/en/kb/articles/how-to-create-paid-events",
+      "/portal/en/kb/articles/replacement-lessons",
+      "/portal/en/kb/articles/trial",
+      "/portal/en/kb/articles/collecting-the-reason-for-cancelling",
+      "/portal/en/kb/articles/viewing-billable-events",
+      "/portal/en/kb/articles/blocks-creation",
+      "/portal/en/kb/articles/creating-events-in-groups"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn3378c406ae454023e0dea38ab5aeb07b9d0f1a4b460b336ff3a4e5383e6470c6450dd3bc56dc15f88ee6c5d4656355ed?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn4e39ad0439fae888d312f24eb132b1d7e01d8bbf7f4139b34e77ef498f395a3c1a41ba1d7f5a9a6d72be5b2190a44cc4?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn9f7367135158450fdd5f607b89174edf7af08df2d45ff99bec80bb387d04c9d8a70dc80139c4162ed3b0c3c6a16d6566?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnfaca109f23ac81c5e2f723bd361e02a01d5da80df2d12d8f53eb5e78462a9a7d5f5f7cd8730724954d925aa20fdd16c8?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/caution.png"
+    ],
+    "section": "Lessons/Events",
+    "h2_count": 2,
+    "has_faq": false,
+    "estimated_words": 108
+  },
+  {
+    "id": "0043",
+    "legacy_path": "legacy/0043_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/viewing-billable-events",
+    "title": "Viewing/tracking billable events",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/edit-events-in-courses",
+      "/portal/en/kb/articles/group-creation",
+      "/portal/en/kb/articles/how-to-create-paid-events",
+      "/portal/en/kb/articles/setting-the-price-on-a-course",
+      "/portal/en/kb/articles/collecting-the-reason-for-cancelling",
+      "/portal/en/kb/articles/viewing-billable-events",
+      "/portal/en/kb/articles/blocks-creation",
+      "/portal/en/kb/articles/creating-events-in-groups"
+    ],
+    "asset_refs": [
+      "https://www.zooza.online/wp-content/uploads/2024/03/911.png",
+      "https://www.zooza.online/wp-content/uploads/2024/03/912.png",
+      "https://www.zooza.online/wp-content/uploads/2024/03/8.png",
+      "https://www.zooza.online/wp-content/uploads/2024/03/914.png",
+      "https://www.zooza.online/wp-content/uploads/2024/03/7.png"
+    ],
+    "section": "Lessons/Events",
+    "h2_count": 5,
+    "has_faq": false,
+    "estimated_words": 611
+  },
+  {
+    "id": "0044",
+    "legacy_path": "legacy/0044_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/how-to-create-paid-events",
+    "title": "How to create paid events?",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/edit-events-in-courses",
+      "/portal/en/kb/articles/group-creation",
+      "/portal/en/kb/articles/how-to-create-paid-events",
+      "/portal/en/kb/articles/trial",
+      "/portal/en/kb/articles/set-up-i",
+      "/portal/en/kb/articles/collecting-the-reason-for-cancelling",
+      "/portal/en/kb/articles/viewing-billable-events",
+      "/portal/en/kb/articles/blocks-creation",
+      "/portal/en/kb/articles/creating-events-in-groups"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn8e15140ba84f35e6caf1b2b9769149c7c489bc03a98822faddc3b29145833c7a532e162c3caf4fa231418d389aa25f16?inline=true",
+      "https://www.zooza.online/wp-content/uploads/2024/03/3.png",
+      "https://www.zooza.online/wp-content/uploads/2024/03/5.png",
+      "https://www.zooza.online/wp-content/uploads/2024/03/6.png",
+      "https://www.zooza.online/wp-content/uploads/2024/03/1-1.png"
+    ],
+    "section": "Lessons/Events",
+    "h2_count": 3,
+    "has_faq": false,
+    "estimated_words": 318
+  },
+  {
+    "id": "0046",
+    "legacy_path": "legacy/0046_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/course-settings",
+    "title": "Course settings",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/group-creation",
+      "/portal/en/kb/articles/create-summer-camps",
+      "/portal/en/kb/articles/open-course-cr",
+      "/portal/en/kb/articles/course-settings",
+      "/portal/en/kb/articles/course-settings-tile",
+      "/portal/en/kb/articles/new-course-existing-clients",
+      "/portal/en/kb/articles/course-creation",
+      "/portal/en/kb/articles/course-group-lesson"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsnd5afefd2efdd71564ad148f36e1d636fe629666c53af775dddd758afe7b69dc6e62345f3384749826db9ab93578f6e26?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn41bf36679a297b5a04a8457f0347295e74bc2fe1671b293d889f665d47d93616565c2eeb816fd30be8b86e48f5e8b52e?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn0f3ccb80db42a7b040475d57b24e183164f484e9636a3e53eb0b811bdf5699c72ae10c8c54bd4e4ada4b46dbb16c58cd?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn46e0b0e907d0e525406860522972ee3bc5259102db112c1a34d9081bb72d06ae977f2caf3228d6d6876a7720c463bfed?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn9a649cdbd4a14e2dbdd37ac7512c0f9ecf741e5946188fcbc3d85c3bea16001b5fb1c4fa942520fad9aedb5090d0f8a1?inline=true"
+    ],
+    "section": "Courses",
+    "h2_count": 14,
+    "has_faq": false,
+    "estimated_words": 265
+  },
+  {
+    "id": "0048",
+    "legacy_path": "legacy/0048_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/course-group-lesson",
+    "title": "Course, group, lesson definition",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/group-creation",
+      "/portal/en/kb/articles/create-summer-camps",
+      "/portal/en/kb/articles/open-course-cr",
+      "/portal/en/kb/articles/course-settings",
+      "/portal/en/kb/articles/course-settings-tile",
+      "/portal/en/kb/articles/new-course-existing-clients",
+      "/portal/en/kb/articles/course-creation",
+      "/portal/en/kb/articles/course-group-lesson"
+    ],
+    "asset_refs": [],
+    "section": "Courses",
+    "h2_count": 8,
+    "has_faq": false,
+    "estimated_words": 516
+  },
+  {
+    "id": "0049",
+    "legacy_path": "legacy/0049_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/new-course-existing-clients",
+    "title": "New course with existing clients",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/edit-events-in-courses",
+      "/portal/en/kb/articles/individual-sessions-how-to-sell-plan-and-manage-1-1-lessons-in-zooza",
+      "/portal/en/kb/articles/create-summer-camps",
+      "/portal/en/kb/articles/open-course-cr",
+      "/portal/en/kb/articles/setting-the-price-on-a-course",
+      "/portal/en/kb/articles/course-settings",
+      "/portal/en/kb/articles/new-course-existing-clients",
+      "/portal/en/kb/articles/course-creation",
+      "/portal/en/kb/articles/trials-daily-business",
+      "/portal/en/kb/articles/course-group-lesson"
+    ],
+    "asset_refs": [],
+    "section": "Courses",
+    "h2_count": 3,
+    "has_faq": false,
+    "estimated_words": 639
+  },
+  {
+    "id": "0050",
+    "legacy_path": "legacy/0050_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/create-summer-camps",
+    "title": "Summer camps creation",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/group-creation",
+      "/portal/en/kb/articles/create-summer-camps",
+      "/portal/en/kb/articles/open-course-cr",
+      "/portal/en/kb/articles/setting-the-price-on-a-course",
+      "/portal/en/kb/articles/course-settings",
+      "/portal/en/kb/articles/new-course-existing-clients",
+      "/portal/en/kb/articles/course-creation",
+      "/portal/en/kb/articles/course-group-lesson",
+      "/portal/en/kb/articles/creating-events-in-groups"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsnfaca109f23ac81c5e2f723bd361e02a0b441dc54243f5927f82d93c166c7306486c0ccf140f5e4cd6266f46d400b4f9d?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn4efa57446e4304ec386b981d363b9acd7d3d8ef8e49af2c2c293307073d48970e5259fbb745773297f5b5f4abb1df6ab?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/lights.png",
+      "https://zooza.sk/wp-content/uploads/2023/05/Tabory8.png",
+      "https://support.zooza.online/galleryDocuments/edbsna6b6be7721fed868193f76da47c61d36ec49703ee37da3068bbea22d1a2bc800104baf3c9823b102e64d432b6d7baec0?inline=true"
+    ],
+    "section": "Courses",
+    "h2_count": 6,
+    "has_faq": false,
+    "estimated_words": 228
+  },
+  {
+    "id": "0051",
+    "legacy_path": "legacy/0051_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/open-course-cr",
+    "title": "Open course creation",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/group-creation",
+      "/portal/en/kb/articles/create-summer-camps",
+      "/portal/en/kb/articles/open-course-cr",
+      "/portal/en/kb/articles/setting-the-price-on-a-course",
+      "/portal/en/kb/articles/online-registration",
+      "/portal/en/kb/articles/course-settings",
+      "/portal/en/kb/articles/course-settings-tile",
+      "/portal/en/kb/articles/new-course-existing-clients",
+      "/portal/en/kb/articles/course-creation",
+      "/portal/en/kb/articles/course-group-lesson"
+    ],
+    "asset_refs": [
+      "https://zooza.sk/wp-content/uploads/2022/09/or04.png",
+      "https://support.zooza.online/galleryDocuments/edbsna6b6be7721fed868193f76da47c61d367ad4f387910d08cf0e7471ef4dccbf2da94739d642dd95510253d93fd0da4746?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn3378c406ae454023e0dea38ab5aeb07b6ac625e911b15c4c865246a36b267d15344294a51c774b4a0fccc72c3b5d9f2f?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsna6b6be7721fed868193f76da47c61d363d943401c10e14a2c1b6b3e77571d34b413fe173e2637d106efded4a1076ab84?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn9f7367135158450fdd5f607b89174edf02330faf5d6a13e3fbbde9e8bfcea577152c3b6e6fb6f5d05fb370de29e9735f?inline=true"
+    ],
+    "section": "Courses",
+    "h2_count": 3,
+    "has_faq": false,
+    "estimated_words": 392
+  },
+  {
+    "id": "0053",
+    "legacy_path": "legacy/0053_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/individual-sessions-how-to-sell-plan-and-manage-1-1-lessons-in-zooza",
+    "title": "Individual Sessions: How to Sell, Plan, and Manage 1:1 Lessons in Zooza",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/individual-sessions-how-to-sell-plan-and-manage-1-1-lessons-in-zooza",
+      "/portal/en/kb/articles/replacement-lessons-between-branches-organisations",
+      "/portal/en/kb/articles/custom-replacement-lessons",
+      "/portal/en/kb/articles/replacement-lessons",
+      "/portal/en/kb/articles/setting-the-price-on-a-course",
+      "/portal/en/kb/articles/trial",
+      "/portal/en/kb/articles/online-registration",
+      "/portal/en/kb/articles/course-settings-tile",
+      "/portal/en/kb/articles/set-up-i",
+      "/portal/en/kb/articles/attendance-setup"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn44f40fad0fa0c2cf16b00581663e97aabf7bab21359145820636a50fcb0ec5e09e7f8a9fa033690ef8b8e0357ad5e49b?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn8e209ee0cc8363c30c93f4c995647925449003ce766a912adf5075acd9058251b5db94a83b8388b3d3b1948f0d55f24b?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn8e209ee0cc8363c30c93f4c9956479250afce8070c17e9479188654aca60b85d5f8b075f825cdb9c5598c7ebea803e95?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn19a6215407b458bfddac441aff7f92dc7dddcb4daacd2f102b66c7cb705d05575b2c785f5b26ac0843afe2c318e0ac87?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/lights.png"
+    ],
+    "section": "Other settings",
+    "h2_count": 3,
+    "has_faq": false,
+    "estimated_words": 594
+  },
+  {
+    "id": "0055",
+    "legacy_path": "legacy/0055_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/course-settings-tile",
+    "title": "Course settings tile",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/individual-sessions-how-to-sell-plan-and-manage-1-1-lessons-in-zooza",
+      "/portal/en/kb/articles/replacement-lessons-between-branches-organisations",
+      "/portal/en/kb/articles/group-creation",
+      "/portal/en/kb/articles/custom-replacement-lessons",
+      "/portal/en/kb/articles/replacement-lessons",
+      "/portal/en/kb/articles/trial",
+      "/portal/en/kb/articles/online-registration",
+      "/portal/en/kb/articles/course-settings",
+      "/portal/en/kb/articles/course-settings-tile",
+      "/portal/en/kb/articles/course-group-lesson"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsnd5afefd2efdd71564ad148f36e1d636f86aa9ae75a28093887fadaa68bebe9f93c1ee5721295cfbd9bb928e6d8bb465d?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn88c426c664985ac3919e1a749c457c082e736f499474727743eeff617a1dd86bb91e0f68cd706cc259dad8a22a1433df?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn09294c3874282d7fa1597cec1fa92569000ba5b696a374b0ca434d9fb437d9a5d376c93c255f6316b3dec4eacbd176c4?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn9a649cdbd4a14e2dbdd37ac7512c0f9eb04993b5c78932fd00fa925b24dd6838fcfc8439b88df05411482c8a06023392?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn0f3ccb80db42a7b040475d57b24e18311f8764a4baec0f2d1b3556cdf54d83425c4a5596d9c062b9da670aa69fae338d?inline=true"
+    ],
+    "section": "Other settings",
+    "h2_count": 4,
+    "has_faq": false,
+    "estimated_words": 424
+  },
+  {
+    "id": "0056",
+    "legacy_path": "legacy/0056_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/online-registration",
+    "title": "Online registration",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/individual-sessions-how-to-sell-plan-and-manage-1-1-lessons-in-zooza",
+      "/portal/en/kb/articles/replacement-lessons-between-branches-organisations",
+      "/portal/en/kb/articles/group-creation",
+      "/portal/en/kb/articles/custom-replacement-lessons",
+      "/portal/en/kb/articles/replacement-lessons",
+      "/portal/en/kb/articles/trial",
+      "/portal/en/kb/articles/online-registration",
+      "/portal/en/kb/articles/course-settings",
+      "/portal/en/kb/articles/course-settings-tile",
+      "/portal/en/kb/articles/attendance-setup"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn0f3ccb80db42a7b040475d57b24e1831d7c7abfbeebad9c1e0b7fd75ee834a05f4b9ebba08e8e1ca8b4bfd24a5130511?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsna8f6fc76eebd0089a6e752994c68dcb6675d8705b1aeac33765723a1611a50d23710cbce33bccb4e13b64e344856a6f1?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnbcf9f5cb771ac6a3af4f35c23a803aa326ea85f63e4721c5f2756f4aa0f17df2b1502b52c038b432a7e0b311662720ee?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn98db83f8ea864b24a1a10d5ade2907f9a1d910c6e3a39020b108556365f98aa766daa555c574adefa19c8824350218c6?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn9d40532a77072a8b45a5e4556a60ab0c17182f1270decce68bc00c5a7de8d53167ab1b09c0096bc5f57d869ebd321061?inline=true"
+    ],
+    "section": "Other settings",
+    "h2_count": 11,
+    "has_faq": false,
+    "estimated_words": 180
+  },
+  {
+    "id": "0057",
+    "legacy_path": "legacy/0057_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/auto-enrollment",
+    "title": "Auto-enrollment",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/individual-sessions-how-to-sell-plan-and-manage-1-1-lessons-in-zooza",
+      "/portal/en/kb/articles/replacement-lessons-between-branches-organisations",
+      "/portal/en/kb/articles/group-creation",
+      "/portal/en/kb/articles/custom-replacement-lessons",
+      "/portal/en/kb/articles/replacement-lessons",
+      "/portal/en/kb/articles/trial",
+      "/portal/en/kb/articles/online-registration",
+      "/portal/en/kb/articles/course-settings",
+      "/portal/en/kb/articles/course-settings-tile",
+      "/portal/en/kb/articles/course-creation"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn0b3ac09400a619992ed6ff9703b41d3a77f222f4a96019d8e6bc9c9efa765f149d654dcb1946f6e7c3b2e2e9c4ba3f6a?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn07cf7febcf163d1e15a4adaa726e0c5c024eae55398e20f773199eefa5d597cce50c48b7b216231a4029489837cc74af?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn0b3ac09400a619992ed6ff9703b41d3a13159112273b022898884abd5edb7c4b76907bc361fd432a5f4d93df2c4c53da?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn24798e635f183f3fa91e7f200618ac30b29b582e19305cf2bbf70465a7e2c0a449e1bbe75f399c5ef5fa4c20c345f2a3?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnec00e89a0c9e701f5a0c04116b2e8adbcaeaae2c7a7edab8c34235ee40b47c3c8de8dd346594c27b1b59ae88f271821b?inline=true"
+    ],
+    "section": "Other settings",
+    "h2_count": 4,
+    "has_faq": false,
+    "estimated_words": 379
+  },
+  {
+    "id": "0058",
+    "legacy_path": "legacy/0058_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/trial",
+    "title": "Trial lessons",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/individual-sessions-how-to-sell-plan-and-manage-1-1-lessons-in-zooza",
+      "/portal/en/kb/articles/replacement-lessons-between-branches-organisations",
+      "/portal/en/kb/articles/edit-events-in-courses",
+      "/portal/en/kb/articles/custom-replacement-lessons",
+      "/portal/en/kb/articles/replacement-lessons",
+      "/portal/en/kb/articles/trial",
+      "/portal/en/kb/articles/online-registration",
+      "/portal/en/kb/articles/course-settings",
+      "/portal/en/kb/articles/course-settings-tile",
+      "/portal/en/kb/articles/attendance-setup"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn8e8322b65fc76a19022605580e13685af615b63ccc95b1a8f53a674d32db02a40f938d0d9350a5eda5bb3f592bc73336?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn484f7bcf356ee3f5d8fef3a2518e3a905f14d92a2d2be94e857c7f46f3a8fbbb8f10bd9a3f1648f82361109f41372f98?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnfe797ba10fda14d093f26f10b4c646fef5186231c73cf1dcbf0ad28fc8ed33b7c7fc63c0c3584b18b0fed2258add58cd?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnfdd2a51897336631af657a6431c1fe681b2ae8e7ac37c14e03b2a9c779982bdba2cec7e28e7f551d6e5341ca20b1cc7a?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn8e8322b65fc76a19022605580e13685a7c0ce575565d0f9b82ea65b10396e13e267f99f6c4db27588008f2ef2fa10f5b?inline=true"
+    ],
+    "section": "Other settings",
+    "h2_count": 21,
+    "has_faq": false,
+    "estimated_words": 628
+  },
+  {
+    "id": "0060",
+    "legacy_path": "legacy/0060_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/setting-the-rate-reward-for-lecturer",
+    "title": "Setting the rate/reward for instuctors",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/lecturers-working-hours",
+      "/portal/en/kb/articles/setting-the-rate-reward-for-lecturer",
+      "/portal/en/kb/articles/how-to-change-an-instructor-in-a-class-or-session",
+      "/portal/en/kb/articles/zooza-101-for-instructors",
+      "/portal/en/kb/articles/user-roles",
+      "/portal/en/kb/articles/lecturer-substitution"
+    ],
+    "asset_refs": [
+      "https://www.zooza.online/wp-content/uploads/2023/08/wnmrjFNol7-1024x406.png",
+      "https://www.zooza.online/wp-content/uploads/2023/08/0sHgAm1L4U-1024x348.png",
+      "https://www.zooza.online/wp-content/uploads/2023/08/5TOoRPDufA.png",
+      "https://www.zooza.online/wp-content/uploads/2023/08/KMONpgyURM-1024x555.png",
+      "https://www.zooza.online/wp-content/uploads/2023/08/MxbUF5hntt-1024x247.png"
+    ],
+    "section": "Lecturers rates",
+    "h2_count": 6,
+    "has_faq": false,
+    "estimated_words": 401
+  },
+  {
+    "id": "0062",
+    "legacy_path": "legacy/0062_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/how-to-change-an-instructor-in-a-class-or-session",
+    "title": "How to change an instructor in a class or session",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/lecturers-working-hours",
+      "/portal/en/kb/articles/setting-the-rate-reward-for-lecturer",
+      "/portal/en/kb/articles/how-to-change-an-instructor-in-a-class-or-session",
+      "/portal/en/kb/articles/zooza-101-for-instructors",
+      "/portal/en/kb/articles/user-roles",
+      "/portal/en/kb/articles/lecturer-substitution"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn4aa43c34298728713df72554e251115621bd38d584ccbe748c9d01796a0cac1f3914f622535513a168aa38bbcc2ea817?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn9258e936568641bb4e79669fdd854b38c6e3230e2264bfd97d90d2ce5cf95b1e0d78fbaba956838d527ce07dc72cb984?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn46dfdb420d7f183ad2fe726af52589f034d4503e024071c65da52c71e3b6fbd95b5746a6f6ecc8bb23995bab471c5215?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsna0b6d08a0acf5e0f08abbfdabb443e742ec61c29f12a9e0db56f8675e2bce3228f7a485557ace1a0b5a5d5b6a64daa5b?inline=true"
+    ],
+    "section": "Lecturers settings",
+    "h2_count": 3,
+    "has_faq": false,
+    "estimated_words": 23
+  },
+  {
+    "id": "0064",
+    "legacy_path": "legacy/0064_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/zooza-101-for-instructors",
+    "title": "Zooza 101 for Instructors",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/lecturers-working-hours",
+      "/portal/en/kb/articles/setting-the-rate-reward-for-lecturer",
+      "/portal/en/kb/articles/how-to-change-an-instructor-in-a-class-or-session",
+      "/portal/en/kb/articles/zooza-101-for-instructors",
+      "/portal/en/kb/articles/user-roles",
+      "/portal/en/kb/articles/lecturer-substitution"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn372a499b89618cfb06cd79ed179d11bce65e0781f21730c4b8514f478ac17db78b4078c6aa96fce8e59c0cc85e64d855?inline=true"
+    ],
+    "section": "Lecturers settings",
+    "h2_count": 0,
+    "has_faq": false,
+    "estimated_words": 626
+  },
+  {
+    "id": "0065",
+    "legacy_path": "legacy/0065_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/lecturer-substitution",
+    "title": "Lecturer substitution",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/lecturers-working-hours",
+      "/portal/en/kb/articles/setting-the-rate-reward-for-lecturer",
+      "/portal/en/kb/articles/how-to-change-an-instructor-in-a-class-or-session",
+      "/portal/en/kb/articles/zooza-101-for-instructors",
+      "/portal/en/kb/articles/user-roles",
+      "/portal/en/kb/articles/lecturer-substitution"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn58b3f2157240c3e576a8a270cb6d93ebbded1bd9d931a0be6bd4bbaa50499c41f29b291d68e95a5661b349e119b49c89?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn58b3f2157240c3e576a8a270cb6d93ebd0f5bf100860a075c8686a469bf74f7f95b3a60aa0599c4755f7a2c14ebbd62f?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnf0f61457961751a0ed9f634239089cc03f9a71bec42d9e488c03a069d468df92c258a347fc09127136ad136e39e4fc4c?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/caution.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png"
+    ],
+    "section": "Lecturers settings",
+    "h2_count": 1,
+    "has_faq": false,
+    "estimated_words": 303
+  },
+  {
+    "id": "0066",
+    "legacy_path": "legacy/0066_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/lecturers-working-hours",
+    "title": "Lecturers working hours",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/lecturers-working-hours",
+      "/portal/en/kb/articles/setting-the-rate-reward-for-lecturer",
+      "/portal/en/kb/articles/how-to-change-an-instructor-in-a-class-or-session",
+      "/portal/en/kb/articles/zooza-101-for-instructors",
+      "/portal/en/kb/articles/user-roles",
+      "/portal/en/kb/articles/lecturer-substitution"
+    ],
+    "asset_refs": [
+      "https://www.zooza.online/wp-content/uploads/2023/08/CleanShot-2023-08-28-at-21.12.13@2x-1024x482.png",
+      "https://www.zooza.online/wp-content/uploads/2023/08/CleanShot-2023-08-28-at-21.07.39@2x-493x1024.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png",
+      "https://www.zooza.online/wp-content/uploads/2023/08/CleanShot-2023-08-28-at-21.11.42@2x-1024x571.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/info.png"
+    ],
+    "section": "Lecturers settings",
+    "h2_count": 4,
+    "has_faq": false,
+    "estimated_words": 412
+  },
+  {
+    "id": "0067",
+    "legacy_path": "legacy/0067_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/user-roles",
+    "title": "User roles",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/lecturers-working-hours",
+      "/portal/en/kb/articles/setting-the-rate-reward-for-lecturer",
+      "/portal/en/kb/articles/how-to-change-an-instructor-in-a-class-or-session",
+      "/portal/en/kb/articles/zooza-101-for-instructors",
+      "/portal/en/kb/articles/user-roles",
+      "/portal/en/kb/articles/lecturer-substitution"
+    ],
+    "asset_refs": [
+      "https://www.zooza.online/wp-content/uploads/2023/06/Screenshot-2024-07-15-at-11-46-27-Zooza-.png",
+      "https://www.zooza.online/wp-content/uploads/2023/10/A1Jz2b5SCN-1024x511.png",
+      "https://www.zooza.online/wp-content/uploads/2023/10/KOYXRN6xKx-1024x463.png",
+      "https://www.zooza.online/wp-content/uploads/2023/10/ZoSNZIQJWs-1024x512.png",
+      "https://www.zooza.online/wp-content/uploads/2023/10/fBk5VflK0k-1024x946.png"
+    ],
+    "section": "Add lecturer",
+    "h2_count": 9,
+    "has_faq": false,
+    "estimated_words": 1715
+  },
+  {
+    "id": "0069",
+    "legacy_path": "legacy/0069_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/setting-gtc-gdpr-and-other-consents",
+    "title": "Setting GTC, GDPR and other consents",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/customize-widgets",
+      "/portal/en/kb/articles/buyloop-en",
+      "/portal/en/kb/articles/setting-gtc-gdpr-and-other-consents",
+      "/portal/en/kb/articles/setting-up-billing-periods",
+      "/portal/en/kb/articles/zooza-sites-en",
+      "/portal/en/kb/articles/notifications"
+    ],
+    "asset_refs": [
+      "https://www.zooza.online/wp-content/uploads/2023/08/gpvhiGRY7m.png",
+      "https://support.zooza.online/galleryDocuments/edbsne6540ccb2c36e72a999a836137b54defcadf9866b7d641e7d05bbd7c2aaee7fb116c9a84d14643c604d890eed75f4564?inline=true",
+      "https://www.zooza.online/wp-content/uploads/2023/08/JXhQRIRWVg-1.png",
+      "https://support.zooza.online/galleryDocuments/edbsnd8458b4d7a37913de5504065c75aab858d9bc77e9149b0cc6f0e92527580c27c3d6bd1b341fe11dc315bc2e9d7e70f76?inline=true",
+      "https://www.zooza.online/wp-content/uploads/2023/08/JsshKRy1q6.png"
+    ],
+    "section": "GDPR",
+    "h2_count": 0,
+    "has_faq": false,
+    "estimated_words": 74
+  },
+  {
+    "id": "0071",
+    "legacy_path": "legacy/0071_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/add-the-zooza-app-to-your-phone-s-desktop",
+    "title": "Add the Zooza app to your phone’s desktop",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/customize-widgets",
+      "/portal/en/kb/articles/buyloop-en",
+      "/portal/en/kb/articles/add-the-zooza-app-to-your-phone-s-desktop",
+      "/portal/en/kb/articles/setting-gtc-gdpr-and-other-consents",
+      "/portal/en/kb/articles/deploying-zooza-app-on-your-website",
+      "/portal/en/kb/articles/zooza-sites-en",
+      "/portal/en/kb/articles/notifications"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsnba78ca3ac94bcdaaa20fcd5c5da7df43b38b1cc07583d6b773fa120aed2862ed869a427be8cb05ade54306dc95c53be2?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/lights.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/info.png",
+      "https://support.zooza.online/galleryDocuments/edbsnc2bb0da2a59b1c830fd59b0c63c76d4e83ef8004f98def4afee9d9df6e60d8e5ef97b0844da869a5fabf0330e0d2fc2a?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn9979ae2c2db56d85d218336c4b7c5b66ae9dc3922b1e7d8defbe0a1b4141ae57743f63271ee336ec6ba00767aca3c563?inline=true"
+    ],
+    "section": "Application",
+    "h2_count": 0,
+    "has_faq": false,
+    "estimated_words": 27
+  },
+  {
+    "id": "0073",
+    "legacy_path": "legacy/0073_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/notifications",
+    "title": "Notifications Center",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/buyloop-en",
+      "/portal/en/kb/articles/add-the-zooza-app-to-your-phone-s-desktop",
+      "/portal/en/kb/articles/setting-gtc-gdpr-and-other-consents",
+      "/portal/en/kb/articles/setting-up-billing-periods",
+      "/portal/en/kb/articles/deploying-zooza-app-on-your-website",
+      "/portal/en/kb/articles/zooza-sites-en",
+      "/portal/en/kb/articles/notifications"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsne2c8ead4752131ae7627f81b716545990a6b22a69da67d99b6e8ec37553c3e815b2fcb2216b5008fe7fe1a26ed80f787?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn9f7367135158450fdd5f607b89174edfa26c2ee8addd3e78c2018e7e065e3a9bacab31d022d274c8c23e5be415d09e9b?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png",
+      "https://support.zooza.online/galleryDocuments/edbsne2c8ead4752131ae7627f81b716545998eb8bbe4f200f878c4ab51e998e469c04dae6fb24a15201e0e98f3afaec552b3?inline=true"
+    ],
+    "section": "Application",
+    "h2_count": 1,
+    "has_faq": false,
+    "estimated_words": 88
+  },
+  {
+    "id": "0074",
+    "legacy_path": "legacy/0074_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/zooza-sites-en",
+    "title": "Zooza Sites",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/customize-widgets",
+      "/portal/en/kb/articles/buyloop-en",
+      "/portal/en/kb/articles/add-the-zooza-app-to-your-phone-s-desktop",
+      "/portal/en/kb/articles/deploying-zooza-app-on-your-website",
+      "/portal/en/kb/articles/zooza-sites-en",
+      "/portal/en/kb/articles/notifications"
+    ],
+    "asset_refs": [
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/file.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/info.png",
+      "https://support.zooza.online/galleryDocuments/edbsn95f505d515c6f34faa92f8756d9e05283f19e69a555a4878a3263a2fd2c28ce66d15a543a4399550e0a34b0dacbb71f5?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnfa8ecbdf6742ec5e930e264e1edd659b43655e5e0acd6940b0c9dfb51537f20b6723cc32ed022989147b56f74fe3a088?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn0e74e08c3c450383651584bdf608de43fe7d9ddd5e9e9526052fc0e29872f51291767b5ba041a4968cda1f890001c221?inline=true"
+    ],
+    "section": "Application",
+    "h2_count": 10,
+    "has_faq": false,
+    "estimated_words": 341
+  },
+  {
+    "id": "0075",
+    "legacy_path": "legacy/0075_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/buyloop-en",
+    "title": "Billing and Payments for Zooza",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/buyloop-en",
+      "/portal/en/kb/articles/add-the-zooza-app-to-your-phone-s-desktop",
+      "/portal/en/kb/articles/setting-up-billing-periods",
+      "/portal/en/kb/articles/deploying-zooza-app-on-your-website",
+      "/portal/en/kb/articles/zooza-sites-en",
+      "/portal/en/kb/articles/notifications"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsnf7768d9fe745bfaa1ba758b174aab19d724a84d7b36cbafe4c7798004d51734584c1ca161689fa03438a05b6dafbb595?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn5d7826509038bd2cda430e679c2ddb4c0912b9b53eac7a781f2ed9beaadbad47755f0a8d1a8449f5390ee97bae4b2957?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn6245ac43cee9bd7c27d5fb40d8915aa2647ec2ef61388af1125709f41558d5020b25a897a67d908f5f835e19edb73de4?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/file.png",
+      "https://support.zooza.online/galleryDocuments/edbsn38e1eb3246bda9247350354b498d94d46a9a696251e6f3796f388249f3e6764bd7692b0c9ba9d387b3c0ba84bede3b21?inline=true"
+    ],
+    "section": "Application",
+    "h2_count": 2,
+    "has_faq": false,
+    "estimated_words": 344
+  },
+  {
+    "id": "0076",
+    "legacy_path": "legacy/0076_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/setting-up-billing-periods",
+    "title": "Setting up billing periods",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/customize-widgets",
+      "/portal/en/kb/articles/buyloop-en",
+      "/portal/en/kb/articles/setting-gtc-gdpr-and-other-consents",
+      "/portal/en/kb/articles/setting-up-billing-periods",
+      "/portal/en/kb/articles/zooza-sites-en",
+      "/portal/en/kb/articles/notifications"
+    ],
+    "asset_refs": [
+      "https://www.zooza.online/wp-content/uploads/2023/08/K0H306tEkg.png",
+      "https://www.zooza.online/wp-content/uploads/2023/08/ziQoLykdHL-1024x617.png",
+      "https://www.zooza.online/wp-content/uploads/2023/08/kVq5Lwx5sc-1024x366.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png",
+      "https://www.zooza.online/wp-content/uploads/2023/08/hO9EfWbpqj-1024x118.png"
+    ],
+    "section": "Billing period",
+    "h2_count": 4,
+    "has_faq": false,
+    "estimated_words": 438
+  },
+  {
+    "id": "0078",
+    "legacy_path": "legacy/0078_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/customize-widgets",
+    "title": "Customizing widgets",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/customize-widgets",
+      "/portal/en/kb/articles/add-the-zooza-app-to-your-phone-s-desktop",
+      "/portal/en/kb/articles/setting-gtc-gdpr-and-other-consents",
+      "/portal/en/kb/articles/deploying-zooza-app-on-your-website",
+      "/portal/en/kb/articles/zooza-sites-en",
+      "/portal/en/kb/articles/notifications"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn812803706c63158c6a534179e73414128e667f6ccc4ca91950de3cb878cdb5ae99442f9a8d218d4802a44570ce377564?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnf612f4b359cbd916d8694a3374477c24fe0e17107ba8574f9c5bc195f80e917cedfddea5a0fa0f2a1e4ef3e941f9a328?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn70b4d6d6bfcb005727c5a5d02edb7c1b2510c838830148db7286aa73d1a1f63b9956b275e63fe28b836e617c221232cf?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png",
+      "https://support.zooza.online/galleryDocuments/edbsn620b68f54cb49a95f8e58fc2807225280b99f9b35b81b502d6271806bb7326a272824f121dc850bcc47d0058cd2a0ad8?inline=true"
+    ],
+    "section": "Widgets",
+    "h2_count": 15,
+    "has_faq": false,
+    "estimated_words": 228
+  },
+  {
+    "id": "0080",
+    "legacy_path": "legacy/0080_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/deploying-zooza-app-on-your-website",
+    "title": "Deploying Zooza app on your website",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/customize-widgets",
+      "/portal/en/kb/articles/buyloop-en",
+      "/portal/en/kb/articles/add-the-zooza-app-to-your-phone-s-desktop",
+      "/portal/en/kb/articles/deploying-zooza-app-on-your-website",
+      "/portal/en/kb/articles/zooza-sites-en",
+      "/portal/en/kb/articles/notifications"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsna63549fcce0318ada4b2f9239753d0a904487c06db1b322e5ea3b6bddec83345e263e57a0f5f4343bf3c47cb20afb83f?inline=true",
+      "https://zooza.online/wp-content/uploads/2023/03/CleanShot-2023-03-05-at-14.38.41.png",
+      "https://support.zooza.online/galleryDocuments/edbsn201e418e9840672920a6ce5e9c9f63179465ded0241e00bb9e9b0cc7cc0d9da170528fb22d201d9f8fbc868199374ccd?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn3441cd79eb36bcbf8bfffe4fe080891ec1a5220bc211bc5c4b9a5d2f223853d3ef337d4eee10552314f90d8d41e81771?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn94b717dd2c041eee15674659667745c82afc30ede7fd66ebcf29021c502f9b6f920ad5b2f775515fd747d556c24b66e5?inline=true"
+    ],
+    "section": "Widgets",
+    "h2_count": 3,
+    "has_faq": false,
+    "estimated_words": 335
+  },
+  {
+    "id": "0081",
+    "legacy_path": "legacy/0081_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/emails-in-primary-inbox",
+    "title": "Receiving e-mails from Zooza in Primary Inbox",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/emails-in-primary-inbox"
+    ],
+    "asset_refs": [
+      "https://zooza.online/wp-content/uploads/2023/01/OldfashionedSaltyEasternnewt-max-1mb.gif"
+    ],
+    "section": "Miscellaneous",
+    "h2_count": 0,
+    "has_faq": false,
+    "estimated_words": 78
+  },
+  {
+    "id": "0082",
+    "legacy_path": "legacy/0082_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/how-to-assign-direct-debit-mandates-to-registrations-gocardless",
+    "title": "How to assign Direct Debit mandates to registrations (GoCardless)",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/payments-pairing",
+      "/portal/en/kb/articles/how-to-assign-direct-debit-mandates-to-registrations-gocardless",
+      "/portal/en/kb/articles/payment-templates-creation",
+      "/portal/en/kb/articles/billing-settings",
+      "/portal/en/kb/articles/szamlazz-invoice-management",
+      "/portal/en/kb/articles/xero-integration-in-zooza-setup-invoice-management",
+      "/portal/en/kb/articles/payment-tile-on-registration"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsnd803edc510f1ad53ade6abfd993d8eb2f4ed17e092c03a87ded6f884e1e65512aed578c730a76125afd2e6470a1bf7d8?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn6408a72e901ac6614ab6aaed63a7ba8eb9258fac902e882422d6afe769cf5286985b0d4fc940e29537df32a3210188c1?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnaedc3c8d99e5ec0e44b8ba293c24c9873b4931adc66c9dcfc7f1c39eb23b57c86e19aeea6578d0d0441d68b0f1679eaf?inline=true"
+    ],
+    "section": "Payment pairing",
+    "h2_count": 0,
+    "has_faq": false,
+    "estimated_words": 1743
+  },
+  {
+    "id": "0084",
+    "legacy_path": "legacy/0084_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/payments-pairing",
+    "title": "Payment Pairing for Bank Transfers &amp; Direct Debit",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/payments-pairing",
+      "/portal/en/kb/articles/how-to-assign-direct-debit-mandates-to-registrations-gocardless",
+      "/portal/en/kb/articles/billing-settings",
+      "/portal/en/kb/articles/payment-templates-creation",
+      "/portal/en/kb/articles/payment-options",
+      "/portal/en/kb/articles/xero-integration-in-zooza-setup-invoice-management",
+      "/portal/en/kb/articles/payment-tile-on-registration"
+    ],
+    "asset_refs": [
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/info.png",
+      "https://support.zooza.online/galleryDocuments/edbsn3803a2fd5101b6cdd279b6eb25200a736ca3fb899c2671392d6528d401ecc1bafe72616e08e7d9da34654972274f8649?inline=true"
+    ],
+    "section": "Payment pairing",
+    "h2_count": 12,
+    "has_faq": false,
+    "estimated_words": 295
+  },
+  {
+    "id": "0085",
+    "legacy_path": "legacy/0085_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/payment-tile-on-registration",
+    "title": "Payment tile on registration",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/payments-pairing",
+      "/portal/en/kb/articles/how-to-assign-direct-debit-mandates-to-registrations-gocardless",
+      "/portal/en/kb/articles/payment-templates-creation",
+      "/portal/en/kb/articles/automatic-payment-reminders",
+      "/portal/en/kb/articles/payment-tile-on-registration",
+      "/portal/en/kb/articles/edit-payments-on-registration"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn18b872885a5875124bc0d6904787a4b6aae4f0fbba1884f00403532ac7fec84c970955bdb1dea11209aad1c0d7b9feab?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnb6d53a9c86932cb3b14f8846d3873fe13a144efa3f2f134084f03f17425e120b63c6f62ed31a9c5ca94956d1f0ada13f?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn8b3fa7c37ecc9a9b5d9fff6715df971469542d7b47971449a9e49090e3ac6bf4d5b745e57a64b33fff4e73969619c0bc?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn81959dd16c1ee87b3c4f345aa33cc1098454f9d863a1d7221f47c667b05634e6218687821826a2861cb45dafdbec11ec?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnee1e7924df5f51194060c1ed26404f8b12a5172367891740c0114d93b7f4532b8244db09b0f6f20a6025f34a62891222?inline=true"
+    ],
+    "section": "Payment pairing",
+    "h2_count": 2,
+    "has_faq": false,
+    "estimated_words": 599
+  },
+  {
+    "id": "0086",
+    "legacy_path": "legacy/0086_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/payment-templates-creation",
+    "title": "Payment templates creation",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/payments-pairing",
+      "/portal/en/kb/articles/payment-templates-creation",
+      "/portal/en/kb/articles/discount-types",
+      "/portal/en/kb/articles/payment-options",
+      "/portal/en/kb/articles/payment-tile-on-registration",
+      "/portal/en/kb/articles/edit-payments-on-registration"
+    ],
+    "asset_refs": [
+      "https://www.zooza.online/wp-content/uploads/2023/09/CleanShot-2023-09-21-at-21.18.18@2x-1024x412.png",
+      "https://www.zooza.online/wp-content/uploads/2023/09/CleanShot-2023-09-21-at-21.15.41@2x-1024x217.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png",
+      "https://support.zooza.online/galleryDocuments/edbsn180feaabb43bf58b189c8568c5b6fb4ed30346748ec6eb3a0b6e426b13220e8c825f978f006e2007c8d9d7f2ea5080ca?inline=true",
+      "https://www.zooza.online/wp-content/uploads/2023/09/CleanShot-2023-09-21-at-21.18.48@2x-1024x361.jpg"
+    ],
+    "section": "Payment templates",
+    "h2_count": 12,
+    "has_faq": false,
+    "estimated_words": 558
+  },
+  {
+    "id": "0088",
+    "legacy_path": "legacy/0088_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/discount-types",
+    "title": "Discount types",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/payments-pairing",
+      "/portal/en/kb/articles/payment-templates-creation",
+      "/portal/en/kb/articles/billing-settings",
+      "/portal/en/kb/articles/discount-types",
+      "/portal/en/kb/articles/edit-payments-on-registration",
+      "/portal/en/kb/articles/discount-code"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsnadcec62d064b417289da6014edf2fc17a7a40b2596c3d69b203642bd6173db3c881a9c780b23e4616c225cc263454368?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn03e864aa03151a9391fb12c5fd499a5f5d5456b4455df247cbc60a94ead5ea66fae5711adbbec7614e0a6415ccaf058c?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/lights.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png",
+      "https://support.zooza.online/galleryDocuments/edbsn86fcf5a797d1f9e3ce5723d27095013bd15f6ba8cb25fd3e93f4706ad9d8c89d527a40cdad9387815584c84f4ffb7593?inline=true"
+    ],
+    "section": "Discounts",
+    "h2_count": 9,
+    "has_faq": false,
+    "estimated_words": 194
+  },
+  {
+    "id": "0090",
+    "legacy_path": "legacy/0090_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/discount-code",
+    "title": "Discount code",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/billing-settings",
+      "/portal/en/kb/articles/payment-templates-creation",
+      "/portal/en/kb/articles/discount-types",
+      "/portal/en/kb/articles/xero-integration-in-zooza-setup-invoice-management",
+      "/portal/en/kb/articles/invoicing",
+      "/portal/en/kb/articles/discount-code"
+    ],
+    "asset_refs": [
+      "https://www.zooza.online/wp-content/uploads/2024/03/911-2.png",
+      "https://www.zooza.online/wp-content/uploads/2024/03/6-1.png",
+      "https://www.zooza.online/wp-content/uploads/2024/03/7-1.png",
+      "https://www.zooza.online/wp-content/uploads/2024/03/2-1.png",
+      "https://www.zooza.online/wp-content/uploads/2024/03/8-1.png"
+    ],
+    "section": "Discounts",
+    "h2_count": 3,
+    "has_faq": false,
+    "estimated_words": 93
+  },
+  {
+    "id": "0091",
+    "legacy_path": "legacy/0091_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/edit-payments-on-registration",
+    "title": "Edit payment on registration",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/payments-pairing",
+      "/portal/en/kb/articles/outstanding-amount",
+      "/portal/en/kb/articles/how-to-assign-direct-debit-mandates-to-registrations-gocardless",
+      "/portal/en/kb/articles/payment-templates-creation",
+      "/portal/en/kb/articles/labels-drawers-for-selected-payments",
+      "/portal/en/kb/articles/automatic-payment-reminders",
+      "/portal/en/kb/articles/payment-options",
+      "/portal/en/kb/articles/payment-tile-on-registration",
+      "/portal/en/kb/articles/edit-payments-on-registration"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn5c3b40a08afbd40983a4a58bbbf1a9bed710590f159d106b194a7f9e1753877b0f0a2766e0898ccb44ca1d2a716a4186?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnfbd600c1976ec5626d938b4fd06c14936600381a08a6713c6e8a525d6ab0930d262a0f41663484dd928c5b7b101b45ec?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn74cd5725b6b0d7ea0b40168e89c67e6dd88d7194d1982d960be7955052176ec100e033093aa518f138cfa13baf8158c2?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png",
+      "https://support.zooza.online/galleryDocuments/edbsnc4c23ec15ed5595c948267b836355ce646a62c1cdfc25f5185e7c31ef103278e416ebce9fc64816ae49bed796938cb44?inline=true"
+    ],
+    "section": "Payment types",
+    "h2_count": 6,
+    "has_faq": false,
+    "estimated_words": 67
+  },
+  {
+    "id": "0093",
+    "legacy_path": "legacy/0093_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/automatic-payment-reminders",
+    "title": "Automatic payment reminders",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/payments-pairing",
+      "/portal/en/kb/articles/outstanding-amount",
+      "/portal/en/kb/articles/payment-templates-creation",
+      "/portal/en/kb/articles/labels-drawers-for-selected-payments",
+      "/portal/en/kb/articles/automatic-payment-reminders",
+      "/portal/en/kb/articles/payment-options",
+      "/portal/en/kb/articles/payment-tile-on-registration",
+      "/portal/en/kb/articles/edit-payments-on-registration"
+    ],
+    "asset_refs": [
+      "https://www.zooza.online/wp-content/uploads/2023/08/4BqNtSZll5-1024x526.png",
+      "https://www.zooza.online/wp-content/uploads/2023/08/PnlYTcFKEV.png",
+      "https://www.zooza.online/wp-content/uploads/2023/07/UDeLApkKef-1024x419.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/lights.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/info.png"
+    ],
+    "section": "Payment types",
+    "h2_count": 7,
+    "has_faq": false,
+    "estimated_words": 452
+  },
+  {
+    "id": "0094",
+    "legacy_path": "legacy/0094_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/payment-options",
+    "title": "Payment options",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/payments-pairing",
+      "/portal/en/kb/articles/outstanding-amount",
+      "/portal/en/kb/articles/payment-templates-creation",
+      "/portal/en/kb/articles/labels-drawers-for-selected-payments",
+      "/portal/en/kb/articles/automatic-payment-reminders",
+      "/portal/en/kb/articles/payment-options",
+      "/portal/en/kb/articles/payment-tile-on-registration",
+      "/portal/en/kb/articles/edit-payments-on-registration"
+    ],
+    "asset_refs": [
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png"
+    ],
+    "section": "Payment types",
+    "h2_count": 4,
+    "has_faq": false,
+    "estimated_words": 383
+  },
+  {
+    "id": "0095",
+    "legacy_path": "legacy/0095_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/outstanding-amount",
+    "title": "Outstanding amount",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/outstanding-amount",
+      "/portal/en/kb/articles/how-to-assign-direct-debit-mandates-to-registrations-gocardless",
+      "/portal/en/kb/articles/payment-templates-creation",
+      "/portal/en/kb/articles/billing-settings",
+      "/portal/en/kb/articles/labels-drawers-for-selected-payments",
+      "/portal/en/kb/articles/automatic-payment-reminders",
+      "/portal/en/kb/articles/payment-options",
+      "/portal/en/kb/articles/payment-tile-on-registration",
+      "/portal/en/kb/articles/edit-payments-on-registration"
+    ],
+    "asset_refs": [],
+    "section": "Payment types",
+    "h2_count": 1,
+    "has_faq": false,
+    "estimated_words": 186
+  },
+  {
+    "id": "0096",
+    "legacy_path": "legacy/0096_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/labels-drawers-for-selected-payments",
+    "title": "Labels/drawers for selected payments",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/payments-pairing",
+      "/portal/en/kb/articles/outstanding-amount",
+      "/portal/en/kb/articles/how-to-assign-direct-debit-mandates-to-registrations-gocardless",
+      "/portal/en/kb/articles/payment-templates-creation",
+      "/portal/en/kb/articles/labels-drawers-for-selected-payments",
+      "/portal/en/kb/articles/automatic-payment-reminders",
+      "/portal/en/kb/articles/payment-options",
+      "/portal/en/kb/articles/xero-integration-in-zooza-setup-invoice-management",
+      "/portal/en/kb/articles/edit-payments-on-registration",
+      "/portal/en/kb/articles/discount-code"
+    ],
+    "asset_refs": [
+      "https://www.zooza.online/wp-content/uploads/2023/08/pfQKXWYGeZ-1024x815.png",
+      "https://www.zooza.online/wp-content/uploads/2023/08/vG7mlPcMI2-1024x476.png"
+    ],
+    "section": "Payment types",
+    "h2_count": 0,
+    "has_faq": false,
+    "estimated_words": 60
+  },
+  {
+    "id": "0097",
+    "legacy_path": "legacy/0097_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/xero-integration-in-zooza-setup-invoice-management",
+    "title": "Xero Integration in Zooza: Setup &amp; Invoice Management",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/billing-settings",
+      "/portal/en/kb/articles/vat-management",
+      "/portal/en/kb/articles/abra-flexi-invoice-management-system",
+      "/portal/en/kb/articles/szamlazz-invoice-management",
+      "/portal/en/kb/articles/smartbill-invoice-management",
+      "/portal/en/kb/articles/xero-integration-in-zooza-setup-invoice-management",
+      "/portal/en/kb/articles/invoicing"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn238350050dad4257cbef40e44592d1a62008ebb2ff6618f6d5b868a54a13b63ce30d9f68d15367dbbef49e70e628c23f?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn566f2c67f6ac5021b32bb958cf00501096f415f979ec4969a4e9c2f8347d6d85d4ca8e3d0de9ada049eeedca37960d74?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn5e6ef4db14e869969f59dbea4f3495e79cd1d0c06ea402562aa2834175d4b4d054d8de5bfc4ccbdb08051765a75334ab?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn238350050dad4257cbef40e44592d1a6a148090b49f6840f7c00d20730667530f71cbabeff6454c31b5066d8855d20a8?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/caution.png"
+    ],
+    "section": "Invoices",
+    "h2_count": 14,
+    "has_faq": false,
+    "estimated_words": 490
+  },
+  {
+    "id": "0099",
+    "legacy_path": "legacy/0099_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/abra-flexi-invoice-management-system",
+    "title": "Abra Flexi Invoice Management System",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/billing-settings",
+      "/portal/en/kb/articles/payment-templates-creation",
+      "/portal/en/kb/articles/vat-management",
+      "/portal/en/kb/articles/abra-flexi-invoice-management-system",
+      "/portal/en/kb/articles/szamlazz-invoice-management",
+      "/portal/en/kb/articles/smartbill-invoice-management",
+      "/portal/en/kb/articles/xero-integration-in-zooza-setup-invoice-management",
+      "/portal/en/kb/articles/invoicing"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn6a1629a70b2006dcbe4a9582b2911492c3e9a89060b2da912d55455e81d6c2377f48708a86178b06f5b0441b70061556?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsna44acb463c2c44383e11d205e2df483a39c61140f1649322ec2c5b700732e3dde82d38921ef2406184d373a62bac340e?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/file.png",
+      "https://support.zooza.online/galleryDocuments/edbsnc53ad120f48740d711b1cd58836dfeb91115365ef4f0349c43caf506c6f108465b0c80f4748ff44be19d68094836415b?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnadc916e39cd3194fa2c95d0018fc70133e3094ac82e4bd8c6181655494159949e9a401d69b24173631230d47d4782d83?inline=true"
+    ],
+    "section": "Invoices",
+    "h2_count": 1,
+    "has_faq": false,
+    "estimated_words": 380
+  },
+  {
+    "id": "0100",
+    "legacy_path": "legacy/0100_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/szamlazz-invoice-management",
+    "title": "Szamlazz Invoice Management",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/billing-settings",
+      "/portal/en/kb/articles/vat-management",
+      "/portal/en/kb/articles/abra-flexi-invoice-management-system",
+      "/portal/en/kb/articles/szamlazz-invoice-management",
+      "/portal/en/kb/articles/smartbill-invoice-management",
+      "/portal/en/kb/articles/xero-integration-in-zooza-setup-invoice-management",
+      "/portal/en/kb/articles/invoicing"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn940b67e67be7093b4f3f39e1040a07f843d555a3a5c51179df6611f613f106e7fbfeab57281ba8636f440ac7e8cf97ca?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn602065329c78ba9d832b7d2a8d01076508ea6584a72fe30ef63031f99d5bff263e3bb0149144436b25aaffcefdc9cfff?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn4683bf7f534b5bb42fde888113b265aa7befe73b9a94306d1fc3fb836ea5e09d1629f25a4d6605e082e3b38bfd985af3?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/lights.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/file.png"
+    ],
+    "section": "Invoices",
+    "h2_count": 2,
+    "has_faq": false,
+    "estimated_words": 277
+  },
+  {
+    "id": "0101",
+    "legacy_path": "legacy/0101_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/smartbill-invoice-management",
+    "title": "Smartbill - invoice management",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/billing-settings",
+      "/portal/en/kb/articles/payment-templates-creation",
+      "/portal/en/kb/articles/vat-management",
+      "/portal/en/kb/articles/abra-flexi-invoice-management-system",
+      "/portal/en/kb/articles/szamlazz-invoice-management",
+      "/portal/en/kb/articles/smartbill-invoice-management",
+      "/portal/en/kb/articles/xero-integration-in-zooza-setup-invoice-management",
+      "/portal/en/kb/articles/invoicing"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn68e82299afab82ef697f0fea656ed057c75e44425b64ac1067e9eb209f2ad473086acf387de37ae7a57788e026ae4325?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn1bcbb43d86a55f1c83e9d43ae2e436a918b72b0eb081cf10d189cf2a14e341fc2949308448935336eb0949e46b65631a?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn004f77757d806722c7acaaf518e02b48e74add82e771723f816dd65ccd890e0f2dea5c155568cf8b46bbc8f8f9c9aa2e?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn4e39ad0439fae888d312f24eb132b1d7d7be615a2a49e3073dd7f7e44c3c27cce2c5c7a896c5d2035b710ec37a0c12ed?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/info.png"
+    ],
+    "section": "Invoices",
+    "h2_count": 2,
+    "has_faq": false,
+    "estimated_words": 34
+  },
+  {
+    "id": "0102",
+    "legacy_path": "legacy/0102_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/vat-management",
+    "title": "VAT management",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/billing-settings",
+      "/portal/en/kb/articles/vat-management",
+      "/portal/en/kb/articles/abra-flexi-invoice-management-system",
+      "/portal/en/kb/articles/szamlazz-invoice-management",
+      "/portal/en/kb/articles/smartbill-invoice-management",
+      "/portal/en/kb/articles/xero-integration-in-zooza-setup-invoice-management",
+      "/portal/en/kb/articles/invoicing"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn015f23e24d89ea4e7fe55031f9d158215d10139a8d7046d3e3cda5674a944019be4ce3d9dd5b1324d6fb896e6441b942?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnb591592e247f6aedd1f8dd18182198effdfb9ec28cb2574617350b0cfe9f411fd7ce0c181d8316b4c57e89b624d4b137?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/quote.png",
+      "https://support.zooza.online/galleryDocuments/edbsn6ffa0103e169ba57bf4452c761aa78fd8a8c3eab136c6dc4ac5d7ceb4103afef2902b85652ba366210cb2ba9480e5f8c?inline=true"
+    ],
+    "section": "Invoices",
+    "h2_count": 3,
+    "has_faq": false,
+    "estimated_words": 430
+  },
+  {
+    "id": "0104",
+    "legacy_path": "legacy/0104_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/how-to-sell-products-during-registration-booking-t-shirt-example",
+    "title": "How to sell products during registration / booking (T-shirt example)",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/how-to-sell-products-during-registration-booking-t-shirt-example"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn463e2fc18381e8492bf7de08614e669053faf3c52817a60a7fef627a73e384776ed8a49ed58ca79a6b0610a46bc2d99f?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn7e610186838d855ed1b6581240754ee45970d1e2f8dbdbf3d7e844b98690e96fc96b5dd04789f7dc790f65ed7d710971?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn50b36175b6c5a08e3a217c4374e9ef02de48dd0f0bcd02f041eba736149981e3e41b31577d68a9a7a5d55118eb74533d?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnadb48404d76ad7df77e9013b5d98e12931d857314ba426ac4386dab12a0361e9f7f44f56a527ed0a6b4af38e0ad27c2e?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png"
+    ],
+    "section": "Products &amp; Services",
+    "h2_count": 11,
+    "has_faq": false,
+    "estimated_words": 71
+  },
+  {
+    "id": "0106",
+    "legacy_path": "legacy/0106_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/power-bi-data-description",
+    "title": "Power BI Data description",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/power-bi-integration",
+      "/portal/en/kb/articles/power-bi-data-description",
+      "/portal/en/kb/articles/network-application"
+    ],
+    "asset_refs": [
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/lights.png"
+    ],
+    "section": "Reports",
+    "h2_count": 10,
+    "has_faq": false,
+    "estimated_words": 523
+  },
+  {
+    "id": "0107",
+    "legacy_path": "legacy/0107_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/network-application",
+    "title": "Network Application",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/power-bi-integration",
+      "/portal/en/kb/articles/power-bi-data-description",
+      "/portal/en/kb/articles/network-application"
+    ],
+    "asset_refs": [
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/lights.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/info.png"
+    ],
+    "section": "Reports",
+    "h2_count": 20,
+    "has_faq": false,
+    "estimated_words": 110
+  },
+  {
+    "id": "0109",
+    "legacy_path": "legacy/0109_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/power-bi-integration",
+    "title": "Power BI integration",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/power-bi-integration",
+      "/portal/en/kb/articles/power-bi-data-description",
+      "/portal/en/kb/articles/network-application"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn52d68d658d0cc1c53a02711e4b6b22f5ac008939cd19bbe7e88220af115912d602470c88ee9d1c6acd6889ae4d90a09e?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn52d68d658d0cc1c53a02711e4b6b22f54f3465e8ce3febc2ed2d2b8f289f8dde02d545cd7ff9e34d4cfc270cec3cec16?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn399701e5a23812e3aeb5b7da366f6b89643960b1f71f3f2aeb5b53bb55301a9cfdc408a3f47c1ebd6ea52874ac291f39?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn23419ede6e2f47361e11b17984ade1f32cca00a7c45d9841d9a7494b687f60afbabf27e539d16ffb0dc9da58b7c74720?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn2548e15099bbf8a3653313d95ffda80b24a034c3d5a5dd15897f0f41e9bb5c97ed197c37a91f56a4f38d7e86dc5f462d?inline=true"
+    ],
+    "section": "Reports",
+    "h2_count": 7,
+    "has_faq": false,
+    "estimated_words": 329
+  },
+  {
+    "id": "0114",
+    "legacy_path": "legacy/0114_Welcome to Zooza.html",
+    "source_url": "https://support.zooza.online/portal/en/kb/articles/documents",
+    "title": "Documents",
+    "language": "en",
+    "internal_links": [
+      "/portal/en/kb/articles/documents"
+    ],
+    "asset_refs": [
+      "https://support.zooza.online/galleryDocuments/edbsn03669b9d7abc5de00de2c2a9c3fef5563f8debfd14fd982fb6785dd15a773b637025e918bba7049cc89a591e09fce7c3?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsn93238453bd5ef062b3a2a90ba0c4e4641db45b775f42e1308bcdd14ea556150515342331f05f134e914f63dcba053bda?inline=true",
+      "https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png",
+      "https://support.zooza.online/galleryDocuments/edbsn5779218a2e85413b266bf0178bf8cf5092aaa22ec3d1760cf3b4c13d602a54cf37960b42bd7ec899866180cea5e46e69?inline=true",
+      "https://support.zooza.online/galleryDocuments/edbsnbaea794ef7531694e8e7521949b50bcff6118d280594dcc2a3f3173f3651d9884b5d1acabc7284c8a54f29f8284a7dc0?inline=true"
+    ],
+    "section": "Documents",
+    "h2_count": 10,
+    "has_faq": false,
+    "estimated_words": 256
   }
 ]

@@ -6,75 +6,80 @@
 
 | Metric | Count |
 |---|---|
-| Legacy HTML files processed | 9 |
-| Markdown pages created | 11 |
-| Pages translated (sk/mixed -> en) | 1 |
-| Pages split | 1 (WhatsApp -> setup + troubleshooting) |
-| FAQ pages extracted | 1 |
-| Redirects generated | 9 |
+| Legacy HTML files processed | 83 |
+| Markdown pages created | 85 (83 + 1 split + 1 FAQ) |
+| Pages translated (sk/mixed → en) | 1 |
+| Pages split | 1 (WhatsApp → setup + troubleshooting) |
+| FAQ pages extracted | 2 (whatsapp-faq, common-booking-scenarios) |
+| Redirects generated | 83 |
+| Images downloaded | 530 |
 
-## Output files
+## Content by Product Area
 
-### content/setup/
-- `whatsapp-integration.md` - WhatsApp Integration & Usage (Beta)
-- `company-logo-email.md` - Company logo in email communication
-
-### content/guides/
-- `automatic-payment-reminders.md` - Automatic reminders for payment schedule
-- `edit-event-notification-template.md` - Edit automatic notifications of an upcoming event
-- `dynamic-tags.md` - Dynamic tags
-- `automatic-event-notification.md` - Automatic notification of an upcoming event
-- `message-templates.md` - Automatic communication to clients / Message templates
-- `send-email-after-event.md` - Send an email after lesson/event
-- `sending-email-sms.md` - Sending email/SMS to clients
-
-### content/troubleshooting/
-- `whatsapp-troubleshooting.md` - WhatsApp troubleshooting (split from WhatsApp setup)
-
-### content/faq/
-- `whatsapp-faq.md` - WhatsApp FAQ (extracted from WhatsApp setup)
-
-## Broken links
-
-| Source page | Broken link target | Notes |
-|---|---|---|
-| automatic-payment-reminders.md | `payment-templates-creation` | External link to legacy article not in this batch |
-| message-templates.md | `automatic-payment-reminders` (legacy URL) | Link points to legacy URL for payment reminder settings article not in this batch |
-
-## Missing assets
-
-No local assets exist. All images are hosted remotely on:
-- `support.zooza.online/galleryDocuments/...` (Zoho Desk CDN)
-- `www.zooza.online/wp-content/uploads/...` (WordPress)
-
-Images are referenced via remote URLs. No files were copied to `assets/images/` because no local copies exist in `legacy/assets/`.
-
-## Pages flagged `needs_screenshot_replacement: true`
-
-| Page | Reason |
+| Product Area | Docs |
 |---|---|
-| `automatic-payment-reminders.md` | Screenshots show Zooza UI (may be Slovak) |
-| `edit-event-notification-template.md` | Screenshots show Zooza UI (may be Slovak) |
-| `dynamic-tags.md` | Screenshot shows Zooza UI (may be Slovak) |
-| `automatic-event-notification.md` | Screenshots show Zooza UI (may be Slovak) |
-| `message-templates.md` | Screenshots show Zooza UI (may be Slovak) |
-| `send-email-after-event.md` | Screenshots show Zooza UI (may be Slovak) |
-| `sending-email-sms.md` | Screenshots show Zooza UI (may be Slovak) |
+| Communication | 11 |
+| Programmes | 18 |
+| Classes | 5 |
+| Calendar | 1 |
+| Bookings | 6 |
+| Clients | 5 |
+| Payments | 16 |
+| Settings | 16 |
+| Widgets | 3 |
+| Orders | 1 |
 
-Pages **not** flagged (English UI or no UI screenshots):
-- `whatsapp-integration.md`
-- `company-logo-email.md`
-- `whatsapp-troubleshooting.md`
-- `whatsapp-faq.md`
+## Content by Type
 
-## Translation notes
+| Type | Count |
+|---|---|
+| guides | 56 |
+| setup | 23 |
+| troubleshooting | 3 |
+| faq | 2 |
 
-| Page | Original language | Notes |
+## Batch 1 — Communication (completed previously)
+
+Files: 0001, 0003, 0004, 0005, 0006, 0007, 0009, 0011, 0012
+- 9 HTML → 11 Markdown (1 split, 1 FAQ extracted)
+- 1 mixed-language file translated (0012)
+- 38 images downloaded
+- Manual conversion with quality review
+
+## Batch 2 — All Other Areas (current run)
+
+Files: 74 HTML files (0013–0114)
+- 74 HTML → 74 Markdown
+- All English source; no translation needed
+- 492 images downloaded
+- Automated conversion via `build/convert_html.py`
+
+## Screenshot Flags
+
+7 batch 1 files flagged `needs_screenshot_replacement: true` (Slovak UI):
+- automatic-payment-reminders, edit-event-notification-template, dynamic-tags,
+  automatic-event-notification, message-templates, send-email-after-event, sending-email-sms
+
+All batch 2 files set to `needs_screenshot_replacement: false` (English UI).
+
+## Known Issues
+
+### Internal links to legacy URLs
+Many articles contain internal links pointing to `/portal/en/kb/articles/...` (legacy URLs).
+A future pass should rewrite these to local `.md` references using the content map.
+
+### Conversion quality (batch 2)
+Batch 2 used automated HTML→Markdown conversion. Complex HTML structures (nested lists,
+callout boxes with icons, embedded videos) may need manual review.
+
+## Translation Notes
+
+| Page | Original Language | Notes |
 |---|---|---|
-| `sending-email-sms.md` | mixed | One Slovak callout ("Pozor!") translated to English ("Attention!") |
+| sending-email-sms.md | mixed | Slovak "Pozor!" translated to "Attention!" |
 
 All other pages were already in English.
 
-## Content map
+## Content Map
 
-Stable slugs and paths are recorded in `legacy/content-map.yml`.
+Stable slugs and paths recorded in `legacy/content-map.yml`.
