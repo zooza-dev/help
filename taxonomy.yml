@@ -1,0 +1,73 @@
+# Taxonomy for Zooza help content
+# Keep labels aligned with the Zooza UI and customer vocabulary.
+
+doc_types:
+  - id: guides
+    label: Guides
+    description: End-to-end “how to do X” instructions.
+  - id: setup
+    label: Setup
+    description: First-time configuration, prerequisites, integrations.
+  - id: payments
+    label: Payments
+    description: Money-related workflows (bank transfer, direct debit, reconciliation).
+  - id: troubleshooting
+    label: Troubleshooting
+    description: Symptoms → causes → resolution steps.
+  - id: faq
+    label: FAQ
+    description: Short Q/A entries grouped by topic.
+
+product_areas:
+  - id: programmes
+    label: Programmes
+  - id: classes
+    label: Classes
+  - id: calendar
+    label: Calendar
+  - id: bookings
+    label: Bookings
+  - id: orders
+    label: Orders
+  - id: clients
+    label: Clients
+  - id: payments
+    label: Payments
+  - id: settings
+    label: Settings
+  - id: widgets
+    label: Widgets
+  - id: communication
+    label: Communication
+    sub_areas:
+      - id: email
+        label: Email
+      - id: whatsapp
+        label: WhatsApp
+
+audiences:
+  - id: admin
+    label: Admin
+  - id: staff
+    label: Staff
+  - id: parent
+    label: Parent/Client
+
+status_values:
+  - draft
+  - published
+  - archived
+
+# Seed tags; you can expand over time.
+tags:
+  - payments
+  - bank-transfer
+  - direct-debit
+  - gocardless
+  - reconciliation
+  - refunds
+  - invoices
+  - registrations
+  - widgets
+  - email
+  - whatsapp

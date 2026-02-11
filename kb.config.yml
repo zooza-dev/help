@@ -1,0 +1,85 @@
+# Zooza KB configuration (source-of-truth: content/)
+project:
+  name: Zooza Knowledge Base
+  locale: en
+  url_base: /help
+
+routing:
+  # Recommended pattern: /help/<product-area>/<slug>
+  url_pattern: "/help/{product_area_slug}/{slug}"
+
+content:
+  source_dir: content
+  assets_dir: assets
+  images_dir: assets/images
+  attachments_dir: assets/attachments
+
+taxonomy:
+  taxonomy_file: taxonomy.yml
+  allowed_doc_types: [guides, setup, payments, troubleshooting, faq]
+  required_frontmatter:
+    - title
+    - slug
+    - type
+    - product_area
+    - audience
+    - tags
+    - status
+
+conversion:
+  input_html_dir: legacy/html
+  input_assets_dir: legacy/assets
+  manifest_path: legacy/manifest.json
+  content_map_path: legacy/content-map.yml
+  redirects_path: content/_redirects.yml
+
+  # English-only output. Legacy may contain Slovak or mixed-language content.
+  target_language: en
+  translate_from_languages: [sk]
+  screenshot_policy:
+    # You plan to redo screenshots, so do not block conversion due to Slovak UI.
+    allow_non_english_screenshots: true
+    flag_non_english_screenshots: true
+
+  splitting:
+    max_words: 1200
+    max_h2: 8
+    # If multiple major workflows appear, split by workflow headings.
+    split_on_workflow_keywords:
+      - overview
+      - setup
+      - configuration
+      - bank transfer
+      - direct debit
+      - gocardless
+      - reconciliation
+      - refunds
+
+  faq_extraction:
+    enabled: true
+    # Detect both English and Slovak FAQ headers.
+    headings:
+      - "FAQ"
+      - "Frequently asked questions"
+      - "Common questions"
+      - "Časté otázky"
+      - "Najčastejšie otázky"
+    output_dir: content/faq
+    replace_with_see_also: true
+
+export:
+  agent:
+    enabled: true
+    output_dir: build/exports/agent
+    canonical_jsonl: canonical.jsonl
+    faq_jsonl: faq.jsonl
+    chunking:
+      # Chunk at H2/H3 boundaries and cap size for retrieval.
+      max_chars: 1600
+      overlap_chars: 150
+      include_heading_path: true
+
+targets:
+  # Optional generated adapters (keep empty until you implement a target exporter)
+  enabled: false
+  output_dir: build/exports/targets
