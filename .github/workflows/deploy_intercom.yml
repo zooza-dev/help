@@ -26,6 +26,7 @@ jobs:
     env:
       INTERCOM_ACCESS_TOKEN: ${{ secrets.INTERCOM_ACCESS_TOKEN }}
       INTERCOM_API_BASE_URL: ${{ secrets.INTERCOM_API_BASE_URL || 'https://api.intercom.io' }}
+      INTERCOM_API_VERSION: "2.9"
       INTERCOM_HELP_CENTER_ID: ${{ secrets.INTERCOM_HELP_CENTER_ID }}
       INTERCOM_FIN_CONTENT_IMPORT_SOURCE_ID: ${{ secrets.INTERCOM_FIN_CONTENT_IMPORT_SOURCE_ID }}
       INTERCOM_FIN_DEFAULT_AUDIENCE: ${{ secrets.INTERCOM_FIN_DEFAULT_AUDIENCE || 'all' }}
@@ -59,10 +60,17 @@ jobs:
           if [ "${{ inputs.limit }}" != "0" ]; then FLAGS="$FLAGS --limit ${{ inputs.limit }}"; fi
           python scripts/deploy/intercom_fin_content.py $FLAGS
 
-      - name: Upload mapping files
-        if: ${{ inputs.dry_run == false }}
+      # Upload everything useful from the run, even for dry-run debugging.
+      - name: Upload exports
         uses: actions/upload-artifact@v4
         with:
-          name: intercom-mappings
+          name: intercom-exports
+          path: build/exports/
+          retention-days: 30
+
+      - name: Upload intercom target outputs (mappings etc.)
+        uses: actions/upload-artifact@v4
+        with:
+          name: intercom-targets
           path: build/exports/targets/intercom/
           retention-days: 90

@@ -7,7 +7,8 @@ Uses stable external IDs (slug) so reruns are idempotent (update, not duplicate)
 Env vars:
   INTERCOM_ACCESS_TOKEN       — required
   INTERCOM_API_BASE_URL       — default https://api.intercom.io
-  INTERCOM_HELP_CENTER_ID     — optional (for multi-center workspaces)
+  INTERCOM_HELP_CENTER_ID     — optional (for multi-center workspaces) [not used here]
+  INTERCOM_API_VERSION        — optional (default: 2.9)
 
 Usage:
   python scripts/deploy/intercom_help_center.py [--dry-run] [--limit N]
@@ -36,7 +37,9 @@ ROOT_DIR = Path(__file__).resolve().parent.parent.parent
 CONTENT_DIR = ROOT_DIR / "content"
 MAP_FILE = ROOT_DIR / "build" / "exports" / "targets" / "intercom" / "intercom-map.json"
 
-API_VERSION = "2.11"
+# Help Center endpoints accept Intercom-Version values like 2.9 / Unstable.
+API_VERSION = os.environ.get("INTERCOM_API_VERSION", "2.9")
+
 MAX_RETRIES = 3
 RETRY_BACKOFF = 2  # seconds, doubled each retry
 
@@ -57,23 +60,39 @@ class IntercomClient:
     def _request(self, method: str, path: str, **kwargs) -> dict:
         url = f"{self.base_url}{path}"
         backoff = RETRY_BACKOFF
+        last_resp = None
+
         for attempt in range(MAX_RETRIES + 1):
             resp = self.session.request(method, url, **kwargs)
+            last_resp = resp
+
             if resp.status_code == 429:
                 wait = backoff * (2 ** attempt)
                 logger.warning("Rate limited, waiting %ds (attempt %d)", wait, attempt + 1)
                 time.sleep(wait)
                 continue
+
             if resp.status_code >= 500:
                 wait = backoff * (2 ** attempt)
                 logger.warning("Server error %d, retrying in %ds", resp.status_code, wait)
                 time.sleep(wait)
                 continue
+
+            if resp.status_code >= 400:
+                # Helpful debug (Intercom usually returns JSON error bodies)
+                body = resp.text.strip()
+                logger.error("Intercom API error %s %s -> %d: %s", method, path, resp.status_code, body[:2000])
+
             resp.raise_for_status()
             if resp.status_code == 204:
                 return {}
             return resp.json()
-        resp.raise_for_status()
+
+        # Should not usually reach here, but keep a useful error if we do.
+        if last_resp is not None:
+            body = last_resp.text.strip()
+            logger.error("Intercom API final failure %s %s -> %d: %s", method, path, last_resp.status_code, body[:2000])
+            last_resp.raise_for_status()
         return {}
 
     def get(self, path, **kwargs):
@@ -139,6 +158,33 @@ def collect_docs() -> list[dict]:
     return docs
 
 
+def iter_all_pages(client: IntercomClient, path: str, per_page: int = 50, params: dict | None = None):
+    """Cursor pagination for Intercom list endpoints.
+
+    Uses pages.next.starting_after from the response.
+    """
+    starting_after = None
+    params = dict(params or {})
+
+    while True:
+        req_params = dict(params)
+        req_params["per_page"] = per_page
+        if starting_after:
+            req_params["starting_after"] = starting_after
+
+        data = client.get(path, params=req_params)
+        for item in data.get("data", []):
+            yield item
+
+        pages = data.get("pages") or {}
+        nxt = pages.get("next") or {}
+        next_cursor = nxt.get("starting_after")
+        if not next_cursor:
+            break
+        starting_after = next_cursor
+        per_page = int(nxt.get("per_page", per_page))
+
+
 def ensure_collection(client: IntercomClient, name: str, mapping: dict, dry_run: bool) -> str | None:
     """Ensure a Help Center collection exists. Returns collection ID."""
     if name in mapping["collections"]:
@@ -148,7 +194,6 @@ def ensure_collection(client: IntercomClient, name: str, mapping: dict, dry_run:
         logger.info("[DRY-RUN] Would create collection: %s", name)
         return None
 
-    # List existing collections
     data = client.get("/help_center/collections")
     for col in data.get("data", []):
         if col.get("name") == name:
@@ -157,61 +202,23 @@ def ensure_collection(client: IntercomClient, name: str, mapping: dict, dry_run:
             logger.info("Found existing collection '%s' -> %s", name, cid)
             return cid
 
-    # Create
     resp = client.post("/help_center/collections", json={"name": name})
     cid = resp["id"]
     mapping["collections"][name] = cid
     logger.info("Created collection '%s' -> %s", name, cid)
     return cid
 
-def iter_all_pages(client: IntercomClient, path: str) -> list[dict]:
-    """Iterate Intercom cursor-paginated endpoints and return a flat list of items."""
-    items: list[dict] = []
-    next_path = path
 
-    while next_path:
-        data = client.get(next_path)
-        items.extend(data.get("data", []))
-
-        # Intercom cursor pagination typically returns: {"pages": {"next": {"starting_after": "...", "url": "..."}}}
-        pages = data.get("pages") or {}
-        next_obj = pages.get("next") or {}
-        next_url = next_obj.get("url")
-
-        if not next_url:
-            break
-
-        # Convert absolute next URL to path relative to base_url
-        if next_url.startswith(client.base_url):
-            next_path = next_url[len(client.base_url):]
-        else:
-            # Sometimes Intercom returns full URL with api host; safest is to keep only the path+query
-            # e.g. https://api.intercom.io/help_center/sections?starting_after=...
-            try:
-                from urllib.parse import urlparse
-                parsed = urlparse(next_url)
-                next_path = parsed.path + (f"?{parsed.query}" if parsed.query else "")
-            except Exception:
-                break
-
-    return items
-
-
-def find_section_id(client: IntercomClient, collection_id: str, section_name: str) -> str | None:
-    """Find a section by name under a specific collection (parent_id)."""
-    sections = iter_all_pages(client, "/help_center/sections")
-    for sec in sections:
-        if sec.get("name") == section_name and str(sec.get("parent_id")) == str(collection_id):
+def find_section_id(client: IntercomClient, collection_id: str, name: str) -> str | None:
+    """Find a section by name under a given collection."""
+    for sec in iter_all_pages(client, "/help_center/sections", per_page=50):
+        if str(sec.get("parent_id")) == str(collection_id) and sec.get("name") == name:
             return sec.get("id")
     return None
 
-def ensure_section(
-    client: IntercomClient,
-    name: str,
-    collection_id: str | None,
-    mapping: dict,
-    dry_run: bool,
-) -> str | None:
+
+def ensure_section(client: IntercomClient, name: str, collection_id: str | None,
+                   mapping: dict, dry_run: bool) -> str | None:
     """Ensure a section exists within a collection. Returns section ID."""
     if not collection_id:
         return None
@@ -224,17 +231,15 @@ def ensure_section(
         logger.info("[DRY-RUN] Would create section '%s' in collection %s", name, collection_id)
         return None
 
-    # ✅ Correct Intercom approach: list sections via /help_center/sections and filter by parent_id
     existing_id = find_section_id(client, collection_id, name)
     if existing_id:
         mapping["sections"][key] = existing_id
         logger.info("Found existing section '%s' -> %s", name, existing_id)
         return existing_id
 
-    # Create section under collection using parent_id
     resp = client.post("/help_center/sections", json={
         "name": name,
-        "parent_id": str(collection_id),
+        "parent_id": collection_id,
     })
     sid = resp["id"]
     mapping["sections"][key] = sid
@@ -268,7 +273,6 @@ def sync_article(client: IntercomClient, doc: dict, section_id: str | None,
         if dry_run:
             logger.info("[DRY-RUN] Would create article '%s'", doc["title"])
             return
-        payload["author_id"] = None  # Intercom uses the token's admin
         resp = client.post("/articles", json=payload)
         mapping["articles"][slug] = resp["id"]
         logger.info("Created article '%s' -> %s", doc["title"], resp["id"])
@@ -295,7 +299,7 @@ def main():
     if args.limit:
         docs = docs[:args.limit]
 
-    logger.info("Processing %d docs (dry_run=%s)", len(docs), args.dry_run)
+    logger.info("Processing %d docs (dry_run=%s, Intercom-Version=%s)", len(docs), args.dry_run, API_VERSION)
 
     for doc in docs:
         area = doc["product_area"] or "General"
