@@ -36,6 +36,13 @@ conversion:
   # English-only output. Legacy may contain Slovak or mixed-language content.
   target_language: en
   translate_from_languages: [sk]
+  asset_download:
+    # Always download remote/external images to assets/images/ during conversion.
+    # Never leave remote URLs in final Markdown output.
+    download_remote_images: true
+    target_dir: assets/images
+    naming: kebab-case          # descriptive kebab-case filenames
+
   screenshot_policy:
     # You plan to redo screenshots, so do not block conversion due to Slovak UI.
     allow_non_english_screenshots: true

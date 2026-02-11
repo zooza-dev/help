@@ -1,0 +1,39 @@
+# Redirects: legacy URLs -> new /help/ URLs
+# Generated: 2026-02-11
+
+redirects:
+  - from: "/portal/en/kb/articles/whatsapp-integration-usage-beta"
+    to: "/help/communication/whatsapp-integration"
+    status: 301
+
+  - from: "/portal/en/kb/articles/automatic-reminders-payment-schedule"
+    to: "/help/communication/automatic-payment-reminders"
+    status: 301
+
+  - from: "/portal/en/kb/articles/edit-automatic-notification-upcoming-event"
+    to: "/help/communication/edit-event-notification-template"
+    status: 301
+
+  - from: "/portal/en/kb/articles/dynamic-tags"
+    to: "/help/communication/dynamic-tags"
+    status: 301
+
+  - from: "/portal/en/kb/articles/automatic-notification-of-an-upcoming-event"
+    to: "/help/communication/automatic-event-notification"
+    status: 301
+
+  - from: "/portal/en/kb/articles/automatic-communication-to-clients-message-templates"
+    to: "/help/communication/message-templates"
+    status: 301
+
+  - from: "/portal/en/kb/articles/send-email-after-lesson-event"
+    to: "/help/communication/send-email-after-event"
+    status: 301
+
+  - from: "/portal/en/kb/articles/company-logo-in-email-communication"
+    to: "/help/communication/company-logo-email"
+    status: 301
+
+  - from: "/portal/en/kb/articles/sending-email-sms-to-clients"
+    to: "/help/communication/sending-email-sms"
+    status: 301

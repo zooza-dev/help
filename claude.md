@@ -103,8 +103,9 @@ Markdown rules:
 - Rewrite legacy internal links to new repo-relative `.md` links using `legacy/content-map.yml`.
 
 ### Step F — Normalize assets
+- **Always download remote images**: If HTML sources reference remote/external image URLs (e.g., CDN-hosted screenshots), download them to `assets/images/` with descriptive kebab-case filenames. Never leave remote URLs in the final Markdown.
 - Copy/rename images into `assets/images/` (kebab-case).
-- Update Markdown image paths to point to normalized assets.
+- Update Markdown image paths to point to normalized local assets (e.g., `../../assets/images/filename.png`).
 - Add **English alt text** for all images.
 - If a screenshot is Slovak UI, set `needs_screenshot_replacement: true` but keep it.
 
