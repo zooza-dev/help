@@ -325,13 +325,18 @@ def main():
 
     logger.info("Processing %d docs (dry_run=%s, Intercom-Version=%s)", len(docs), args.dry_run, API_VERSION)
 
+    author_id = None
+    if not args.dry_run:
+        author_id = client.get_default_author_id()
+        logger.info("Using author_id=%s", author_id)
+
     for doc in docs:
         area = doc["product_area"] or "General"
         collection_id = ensure_collection(client, area, mapping, args.dry_run)
         section_id = None
         if doc["type"]:
             section_id = ensure_section(client, doc["type"].capitalize(), collection_id, mapping, args.dry_run)
-        sync_article(client, doc, section_id, mapping, args.dry_run)
+        sync_article(client, doc, section_id, mapping, args.dry_run, author_id)
 
     if not args.dry_run:
         save_map(mapping)
