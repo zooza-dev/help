@@ -1,0 +1,68 @@
+name: Deploy to Intercom
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy_help_center:
+        description: "Deploy to Help Center"
+        type: boolean
+        default: true
+      deploy_fin:
+        description: "Deploy to Fin Content Library"
+        type: boolean
+        default: true
+      dry_run:
+        description: "Dry run (no API writes)"
+        type: boolean
+        default: true
+      limit:
+        description: "Max items to process (0 = all)"
+        type: number
+        default: 50
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      INTERCOM_ACCESS_TOKEN: ${{ secrets.INTERCOM_ACCESS_TOKEN }}
+      INTERCOM_API_BASE_URL: ${{ secrets.INTERCOM_API_BASE_URL || 'https://api.intercom.io' }}
+      INTERCOM_HELP_CENTER_ID: ${{ secrets.INTERCOM_HELP_CENTER_ID }}
+      INTERCOM_FIN_CONTENT_IMPORT_SOURCE_ID: ${{ secrets.INTERCOM_FIN_CONTENT_IMPORT_SOURCE_ID }}
+      INTERCOM_FIN_DEFAULT_AUDIENCE: ${{ secrets.INTERCOM_FIN_DEFAULT_AUDIENCE || 'all' }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pyyaml markdown jinja2 requests
+
+      - name: Run export pipeline
+        run: python scripts/export/export_all.py
+
+      - name: Deploy to Help Center
+        if: ${{ inputs.deploy_help_center }}
+        run: |
+          FLAGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then FLAGS="$FLAGS --dry-run"; fi
+          if [ "${{ inputs.limit }}" != "0" ]; then FLAGS="$FLAGS --limit ${{ inputs.limit }}"; fi
+          python scripts/deploy/intercom_help_center.py $FLAGS
+
+      - name: Deploy to Fin Content Library
+        if: ${{ inputs.deploy_fin }}
+        run: |
+          FLAGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then FLAGS="$FLAGS --dry-run"; fi
+          if [ "${{ inputs.limit }}" != "0" ]; then FLAGS="$FLAGS --limit ${{ inputs.limit }}"; fi
+          python scripts/deploy/intercom_fin_content.py $FLAGS
+
+      - name: Upload mapping files
+        if: ${{ inputs.dry_run == false }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: intercom-mappings
+          path: build/exports/targets/intercom/
+          retention-days: 90

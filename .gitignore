@@ -1,1 +1,6 @@
 .obsidian/
+build/exports/web/
+build/exports/targets/
+__pycache__/
+*.pyc
+.venv/
