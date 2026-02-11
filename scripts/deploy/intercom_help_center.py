@@ -4,11 +4,16 @@
 Syncs content/ articles into Intercom Help Center collections/sections/articles.
 Uses stable external IDs (slug) so reruns are idempotent (update, not duplicate).
 
+Adds CDN asset rewriting:
+- Upload assets separately (your GH Action FTP step)
+- Rewrite <img src="..."> and <a href="..."> pointing at local assets to absolute CDN URLs
+
 Env vars:
   INTERCOM_ACCESS_TOKEN       — required
   INTERCOM_API_BASE_URL       — default https://api.intercom.io
   INTERCOM_HELP_CENTER_ID     — optional (for multi-center workspaces) [not used here]
   INTERCOM_API_VERSION        — optional (default: 2.9)
+  KB_CDN_BASE_URL             — optional (default: https://cdn.zooza.sk/assets/kb)
 
 Usage:
   python scripts/deploy/intercom_help_center.py [--dry-run] [--limit N]
@@ -22,6 +27,7 @@ import re
 import sys
 import time
 from pathlib import Path
+from urllib.parse import urlparse
 
 import yaml
 
@@ -38,7 +44,11 @@ CONTENT_DIR = ROOT_DIR / "content"
 MAP_FILE = ROOT_DIR / "build" / "exports" / "targets" / "intercom" / "intercom-map.json"
 
 # Help Center endpoints accept Intercom-Version values like 2.9 / Unstable.
-API_VERSION = os.environ.get("INTERCOM_API_VERSION", "2.9")  # was "2.11"
+API_VERSION = os.environ.get("INTERCOM_API_VERSION", "2.9")
+
+# Your CDN base (must NOT end with slash). Example:
+#   https://cdn.zooza.sk/assets/kb
+KB_CDN_BASE_URL = os.environ.get("KB_CDN_BASE_URL", "https://cdn.zooza.sk/assets/kb").rstrip("/")
 
 MAX_RETRIES = 3
 RETRY_BACKOFF = 2  # seconds, doubled each retry
@@ -50,44 +60,58 @@ class IntercomClient:
     def __init__(self, token: str, base_url: str = "https://api.intercom.io"):
         self.base_url = base_url.rstrip("/")
         self.session = requests.Session()
-        self.session.headers.update({
-            "Authorization": f"Bearer {token}",
-            "Content-Type": "application/json",
-            "Accept": "application/json",
-            "Intercom-Version": API_VERSION,
-        })
-
+        self.session.headers.update(
+            {
+                "Authorization": f"Bearer {token}",
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+                "Intercom-Version": API_VERSION,
+            }
+        )
         self._cached_author_id: int | None = None
 
     def _request(self, method: str, path: str, **kwargs) -> dict:
         url = f"{self.base_url}{path}"
         backoff = RETRY_BACKOFF
+        last_resp = None
+
         for attempt in range(MAX_RETRIES + 1):
             resp = self.session.request(method, url, **kwargs)
+            last_resp = resp
+
             if resp.status_code == 429:
-                wait = backoff * (2 ** attempt)
+                wait = backoff * (2**attempt)
                 logger.warning("Rate limited, waiting %ds (attempt %d)", wait, attempt + 1)
                 time.sleep(wait)
                 continue
+
             if resp.status_code >= 500:
-                wait = backoff * (2 ** attempt)
+                wait = backoff * (2**attempt)
                 logger.warning("Server error %d, retrying in %ds", resp.status_code, wait)
                 time.sleep(wait)
                 continue
 
-            # Helpful error logging before raising
             if resp.status_code >= 400:
+                # Helpful error logging before raising
                 try:
-                    logger.error("Intercom API error %s %s -> %s: %s",
-                                 method, path, resp.status_code, resp.text)
+                    logger.error(
+                        "Intercom API error %s %s -> %s: %s",
+                        method,
+                        path,
+                        resp.status_code,
+                        resp.text,
+                    )
                 except Exception:
                     pass
 
             resp.raise_for_status()
+
             if resp.status_code == 204:
                 return {}
             return resp.json()
-        resp.raise_for_status()
+
+        if last_resp is not None:
+            last_resp.raise_for_status()
         return {}
 
     def get(self, path, **kwargs):
@@ -107,18 +131,18 @@ class IntercomClient:
         if self._cached_author_id is not None:
             return self._cached_author_id
 
-        # 1) Try /me
         me = self.get("/me")
         me_id = me.get("id")
         if me_id is not None:
             self._cached_author_id = int(me_id)
             return self._cached_author_id
 
-        # 2) Fallback: list admins and take the first one
         admins = self.get("/admins")
         data = admins.get("data") or []
         if not data:
-            raise RuntimeError("Could not determine author_id: /me had no id and /admins returned no admins.")
+            raise RuntimeError(
+                "Could not determine author_id: /me had no id and /admins returned no admins."
+            )
 
         self._cached_author_id = int(data[0]["id"])
         return self._cached_author_id
@@ -128,13 +152,14 @@ def parse_frontmatter(text: str) -> tuple[dict, str]:
     m = re.match(r"^---\n(.*?)\n---\n", text, re.DOTALL)
     if not m:
         return {}, text
-    return yaml.safe_load(m.group(1)) or {}, text[m.end():]
+    return yaml.safe_load(m.group(1)) or {}, text[m.end() :]
 
 
 def md_to_html_simple(body: str) -> str:
     """Convert Markdown to HTML for Intercom articles."""
     try:
         import markdown as md_lib
+
         converter = md_lib.Markdown(extensions=["tables", "fenced_code"])
         return converter.convert(body)
     except ImportError:
@@ -164,16 +189,19 @@ def collect_docs() -> list[dict]:
         slug = fm.get("slug")
         if not slug:
             continue
-        docs.append({
-            "slug": slug,
-            "title": fm.get("title", slug),
-            "type": fm.get("type", "guides"),
-            "product_area": fm.get("product_area", ""),
-            "sub_area": fm.get("sub_area", ""),
-            "status": fm.get("status", "published"),
-            "tags": fm.get("tags", []),
-            "html_body": md_to_html_simple(body),
-        })
+        docs.append(
+            {
+                "slug": slug,
+                "title": fm.get("title", slug),
+                "type": fm.get("type", "guides"),
+                "product_area": fm.get("product_area", ""),
+                "sub_area": fm.get("sub_area", ""),
+                "status": fm.get("status", "published"),
+                "tags": fm.get("tags", []),
+                "html_body": md_to_html_simple(body),
+                "source_path": str(md_path),
+            }
+        )
     return docs
 
 
@@ -236,8 +264,13 @@ def find_section_id(client: IntercomClient, collection_id: str, name: str) -> st
     return None
 
 
-def ensure_section(client: IntercomClient, name: str, collection_id: str | None,
-                   mapping: dict, dry_run: bool) -> str | None:
+def ensure_section(
+    client: IntercomClient,
+    name: str,
+    collection_id: str | None,
+    mapping: dict,
+    dry_run: bool,
+) -> str | None:
     """Ensure a section exists within a collection. Returns section ID."""
     if not collection_id:
         return None
@@ -256,25 +289,139 @@ def ensure_section(client: IntercomClient, name: str, collection_id: str | None,
         logger.info("Found existing section '%s' -> %s", name, existing_id)
         return existing_id
 
-    resp = client.post("/help_center/sections", json={
-        "name": name,
-        "parent_id": collection_id,
-    })
+    resp = client.post(
+        "/help_center/sections",
+        json={
+            "name": name,
+            "parent_id": collection_id,
+        },
+    )
     sid = resp["id"]
     mapping["sections"][key] = sid
     logger.info("Created section '%s' -> %s", name, sid)
     return sid
 
 
-def sync_article(client: IntercomClient, doc: dict, section_id: str | None,
-                 mapping: dict, dry_run: bool, author_id: int | None):
+# ---------- CDN rewrite helpers ----------
+
+def _is_absolute_url(u: str) -> bool:
+    try:
+        p = urlparse(u)
+        return p.scheme in ("http", "https") and bool(p.netloc)
+    except Exception:
+        return False
+
+
+def _strip_known_prefixes(u: str) -> str:
+    """Normalize a local asset URL to a relative path under assets/.
+
+    Inputs we see in practice:
+      ../../assets/images/x.png
+      ../assets/images/x.png
+      /assets/images/x.png
+      assets/images/x.png
+      ./assets/images/x.png
+    Output:
+      images/x.png
+    """
+    u = u.strip()
+
+    # drop query/hash (we generally don't need them for cdn objects; keep if you want)
+    base, _, frag = u.partition("#")
+    base, _, query = base.partition("?")
+    u = base
+
+    u = u.replace("\\", "/")
+
+    # remove leading ./ or ../ segments
+    u = re.sub(r"^(\./)+", "", u)
+    u = re.sub(r"^(\.\./)+", "", u)
+
+    # remove leading slash
+    u = u.lstrip("/")
+
+    # if it contains assets/ somewhere, keep from there
+    m = re.search(r"(?:^|/)(assets/)(.*)$", u)
+    if m:
+        rest = m.group(2)  # path inside assets/
+        return rest.lstrip("/")
+
+    # if it doesn't mention assets/ but is still relative, leave as-is
+    return u.lstrip("/")
+
+
+def rewrite_assets_to_cdn(html: str, cdn_base_url: str) -> tuple[str, list[str]]:
+    """Rewrite local asset references in HTML to absolute CDN URLs.
+
+    Rewrites:
+      <img src="...">  -> cdn_base_url/<relative_under_assets>
+      <a href="...">   -> same (for links to images/pdf/etc)
+
+    Returns (rewritten_html, warnings)
+    """
+    warnings: list[str] = []
+
+    # src/href attributes, double or single quotes
+    attr_re = re.compile(r"""(?P<attr>\b(?:src|href)\s*=\s*)(?P<q>['"])(?P<val>[^'"]+)(?P=q)""", re.IGNORECASE)
+
+    def repl(m: re.Match) -> str:
+        attr = m.group("attr")
+        q = m.group("q")
+        val = m.group("val").strip()
+
+        # Leave absolute URLs, mailto, tel, anchors, data URIs
+        low = val.lower()
+        if (
+            _is_absolute_url(val)
+            or low.startswith("mailto:")
+            or low.startswith("tel:")
+            or low.startswith("data:")
+            or low.startswith("#")
+        ):
+            return f"{attr}{q}{val}{q}"
+
+        # Only rewrite things that look like they are assets references
+        # (assets/... or contains /assets/ or relative with ../assets)
+        if "assets/" not in val.replace("\\", "/"):
+            return f"{attr}{q}{val}{q}"
+
+        rel = _strip_known_prefixes(val)
+        new_url = f"{cdn_base_url}/{rel}"
+
+        return f"{attr}{q}{new_url}{q}"
+
+    rewritten = attr_re.sub(repl, html)
+
+    # warn if any remaining <img src> is not absolute (common Intercom rejection)
+    img_src_re = re.compile(r"""<img\b[^>]*\bsrc\s*=\s*['"]([^'"]+)['"]""", re.IGNORECASE)
+    for src in img_src_re.findall(rewritten):
+        if not (_is_absolute_url(src) or src.lower().startswith("data:")):
+            warnings.append(f"Non-absolute <img src> remains: {src}")
+
+    return rewritten, warnings
+
+
+def sync_article(
+    client: IntercomClient,
+    doc: dict,
+    section_id: str | None,
+    mapping: dict,
+    dry_run: bool,
+    author_id: int | None,
+):
     """Create or update a Help Center article."""
     slug = doc["slug"]
     state = "published" if doc["status"] == "published" else "draft"
 
+    # Rewrite assets in HTML body to CDN URLs
+    body_html = doc["html_body"]
+    body_html, warnings = rewrite_assets_to_cdn(body_html, KB_CDN_BASE_URL)
+    for w in warnings:
+        logger.warning("Doc %s (%s): %s", slug, doc.get("source_path", "?"), w)
+
     payload = {
         "title": doc["title"],
-        "body": doc["html_body"],
+        "body": body_html,
         "state": state,
     }
 
@@ -301,7 +448,6 @@ def sync_article(client: IntercomClient, doc: dict, section_id: str | None,
         logger.info("Created article '%s' -> %s", doc["title"], resp["id"])
 
 
-
 def main():
     parser = argparse.ArgumentParser(description="Deploy to Intercom Help Center")
     parser.add_argument("--dry-run", action="store_true", help="Log actions without making API calls")
@@ -321,9 +467,15 @@ def main():
 
     docs = collect_docs()
     if args.limit:
-        docs = docs[:args.limit]
+        docs = docs[: args.limit]
 
-    logger.info("Processing %d docs (dry_run=%s, Intercom-Version=%s)", len(docs), args.dry_run, API_VERSION)
+    logger.info(
+        "Processing %d docs (dry_run=%s, Intercom-Version=%s, KB_CDN_BASE_URL=%s)",
+        len(docs),
+        args.dry_run,
+        API_VERSION,
+        KB_CDN_BASE_URL,
+    )
 
     author_id = None
     if not args.dry_run:
@@ -333,9 +485,11 @@ def main():
     for doc in docs:
         area = doc["product_area"] or "General"
         collection_id = ensure_collection(client, area, mapping, args.dry_run)
+
         section_id = None
         if doc["type"]:
             section_id = ensure_section(client, doc["type"].capitalize(), collection_id, mapping, args.dry_run)
+
         sync_article(client, doc, section_id, mapping, args.dry_run, author_id)
 
     if not args.dry_run:
