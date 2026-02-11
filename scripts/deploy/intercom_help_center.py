@@ -38,7 +38,7 @@ CONTENT_DIR = ROOT_DIR / "content"
 MAP_FILE = ROOT_DIR / "build" / "exports" / "targets" / "intercom" / "intercom-map.json"
 
 # Help Center endpoints accept Intercom-Version values like 2.9 / Unstable.
-API_VERSION = os.environ.get("INTERCOM_API_VERSION", "2.9")
+API_VERSION = os.environ.get("INTERCOM_API_VERSION", "2.9")  # was "2.11"
 
 MAX_RETRIES = 3
 RETRY_BACKOFF = 2  # seconds, doubled each retry
@@ -57,42 +57,37 @@ class IntercomClient:
             "Intercom-Version": API_VERSION,
         })
 
+        self._cached_author_id: int | None = None
+
     def _request(self, method: str, path: str, **kwargs) -> dict:
         url = f"{self.base_url}{path}"
         backoff = RETRY_BACKOFF
-        last_resp = None
-
         for attempt in range(MAX_RETRIES + 1):
             resp = self.session.request(method, url, **kwargs)
-            last_resp = resp
-
             if resp.status_code == 429:
                 wait = backoff * (2 ** attempt)
                 logger.warning("Rate limited, waiting %ds (attempt %d)", wait, attempt + 1)
                 time.sleep(wait)
                 continue
-
             if resp.status_code >= 500:
                 wait = backoff * (2 ** attempt)
                 logger.warning("Server error %d, retrying in %ds", resp.status_code, wait)
                 time.sleep(wait)
                 continue
 
+            # Helpful error logging before raising
             if resp.status_code >= 400:
-                # Helpful debug (Intercom usually returns JSON error bodies)
-                body = resp.text.strip()
-                logger.error("Intercom API error %s %s -> %d: %s", method, path, resp.status_code, body[:2000])
+                try:
+                    logger.error("Intercom API error %s %s -> %s: %s",
+                                 method, path, resp.status_code, resp.text)
+                except Exception:
+                    pass
 
             resp.raise_for_status()
             if resp.status_code == 204:
                 return {}
             return resp.json()
-
-        # Should not usually reach here, but keep a useful error if we do.
-        if last_resp is not None:
-            body = last_resp.text.strip()
-            logger.error("Intercom API final failure %s %s -> %d: %s", method, path, last_resp.status_code, body[:2000])
-            last_resp.raise_for_status()
+        resp.raise_for_status()
         return {}
 
     def get(self, path, **kwargs):
@@ -103,6 +98,30 @@ class IntercomClient:
 
     def put(self, path, **kwargs):
         return self._request("PUT", path, **kwargs)
+
+    def get_default_author_id(self) -> int:
+        """
+        Articles require author_id (must be a teammate/admin in the workspace).
+        Prefer /me, fallback to /admins.
+        """
+        if self._cached_author_id is not None:
+            return self._cached_author_id
+
+        # 1) Try /me
+        me = self.get("/me")
+        me_id = me.get("id")
+        if me_id is not None:
+            self._cached_author_id = int(me_id)
+            return self._cached_author_id
+
+        # 2) Fallback: list admins and take the first one
+        admins = self.get("/admins")
+        data = admins.get("data") or []
+        if not data:
+            raise RuntimeError("Could not determine author_id: /me had no id and /admins returned no admins.")
+
+        self._cached_author_id = int(data[0]["id"])
+        return self._cached_author_id
 
 
 def parse_frontmatter(text: str) -> tuple[dict, str]:
@@ -248,7 +267,7 @@ def ensure_section(client: IntercomClient, name: str, collection_id: str | None,
 
 
 def sync_article(client: IntercomClient, doc: dict, section_id: str | None,
-                 mapping: dict, dry_run: bool):
+                 mapping: dict, dry_run: bool, author_id: int | None):
     """Create or update a Help Center article."""
     slug = doc["slug"]
     state = "published" if doc["status"] == "published" else "draft"
@@ -258,6 +277,10 @@ def sync_article(client: IntercomClient, doc: dict, section_id: str | None,
         "body": doc["html_body"],
         "state": state,
     }
+
+    if author_id is not None:
+        payload["author_id"] = int(author_id)
+
     if section_id:
         payload["parent_id"] = section_id
         payload["parent_type"] = "section"
@@ -276,6 +299,7 @@ def sync_article(client: IntercomClient, doc: dict, section_id: str | None,
         resp = client.post("/articles", json=payload)
         mapping["articles"][slug] = resp["id"]
         logger.info("Created article '%s' -> %s", doc["title"], resp["id"])
+
 
 
 def main():
