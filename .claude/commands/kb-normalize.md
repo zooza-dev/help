@@ -128,9 +128,13 @@ Some replacements are risky. Instead of auto-replacing, add a comment in `normal
 - **Create a git-friendly diff** — make minimal changes, don't rewrite entire files
 - **Dry-run first**: Before writing changes, print summary and ask for confirmation unless user passed `--apply` or explicitly asked to apply
 
+## Intercom sync flag
+After modifying a content file, set `intercom_sync: true` in its frontmatter so the next deploy will update the Intercom article. If `intercom_sync` is not present in the frontmatter, add it.
+
 ## Done definition
 Complete when:
 - All safe replacements applied to content files
+- `intercom_sync: true` set on all modified files
 - `normalize-log.md` written with full changelog
 - `dictionary.json` updated with `last_normalized`
 - Review items clearly flagged

@@ -5,6 +5,7 @@ Validate the knowledge base in `content/` and write a report.
 ## What to check
 - required frontmatter present for every doc
 - unique `slug`
+- unique `intercom_id` (no two docs may share the same Intercom article ID)
 - exactly one H1 per doc
 - no skipped heading levels
 - no broken internal links

@@ -200,6 +200,8 @@ def collect_docs() -> list[dict]:
                 "tags": fm.get("tags", []),
                 "html_body": md_to_html_simple(body),
                 "source_path": str(md_path),
+                "intercom_id": fm.get("intercom_id"),
+                "intercom_sync": fm.get("intercom_sync", True),
             }
         )
     return docs
@@ -432,12 +434,14 @@ def sync_article(
         payload["parent_id"] = section_id
         payload["parent_type"] = "section"
 
-    if slug in mapping["articles"]:
-        article_id = mapping["articles"][slug]
+    article_id = doc.get("intercom_id") or mapping["articles"].get(slug)
+
+    if article_id:
         if dry_run:
             logger.info("[DRY-RUN] Would update article '%s' (id=%s)", doc["title"], article_id)
             return
         client.put(f"/articles/{article_id}", json=payload)
+        mapping["articles"][slug] = article_id
         logger.info("Updated article '%s' (id=%s)", doc["title"], article_id)
     else:
         if dry_run:
@@ -482,7 +486,15 @@ def main():
         author_id = client.get_default_author_id()
         logger.info("Using author_id=%s", author_id)
 
+    skipped = 0
+    synced = 0
     for doc in docs:
+        # Skip articles that have an Intercom ID and are not flagged for sync
+        if doc.get("intercom_id") and not doc.get("intercom_sync", True):
+            logger.info("Skipping '%s' (id=%s, intercom_sync=false)", doc["title"], doc["intercom_id"])
+            skipped += 1
+            continue
+
         area = doc["product_area"] or "General"
         collection_id = ensure_collection(client, area, mapping, args.dry_run)
 
@@ -491,12 +503,13 @@ def main():
             section_id = ensure_section(client, doc["type"].capitalize(), collection_id, mapping, args.dry_run)
 
         sync_article(client, doc, section_id, mapping, args.dry_run, author_id)
+        synced += 1
 
     if not args.dry_run:
         save_map(mapping)
         logger.info("Mapping saved to %s", MAP_FILE)
 
-    logger.info("Done. Processed %d articles.", len(docs))
+    logger.info("Done. Synced %d articles, skipped %d (intercom_sync=false).", synced, skipped)
 
 
 if __name__ == "__main__":

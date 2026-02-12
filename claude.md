@@ -52,6 +52,8 @@ source_legacy_path: "legacy/html/..."
 source_language: "en|sk|mixed"
 needs_screenshot_replacement: true|false
 last_converted: "2026-02-11"
+intercom_id: 12345678        # optional — Intercom article ID (set by kb:sync-ids)
+intercom_sync: true           # optional — true=needs deploy, false=skip (set by kb:sync-ids)
 ---
 ```
 
@@ -147,6 +149,7 @@ Write `build/reports/conversion-report.md` containing:
 Validation must fail if:
 - any doc in `content/` is missing required frontmatter
 - duplicate slugs exist
+- duplicate `intercom_id` values exist (each ID must be unique across all docs)
 - internal Markdown links are broken
 - referenced assets are missing
 - a doc has multiple H1 or skipped heading levels

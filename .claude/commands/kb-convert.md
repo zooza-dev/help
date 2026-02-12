@@ -21,3 +21,4 @@ Follow the full conversion contract in `claude.md` exactly (Steps A–J).
 ## Notes
 - Do not block conversion due to Slovak screenshots; set `needs_screenshot_replacement: true` instead.
 - Keep slugs stable; only change slugs if strictly necessary (collision).
+- New/converted files must have `intercom_sync: true` and no `intercom_id` in frontmatter (they are new articles that need to be deployed).
