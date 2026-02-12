@@ -5,6 +5,14 @@ Date baseline: 2026-02-11
 This repository converts a legacy HTML knowledge base into a clean, English-only Markdown knowledge base,
 then generates model-agnostic agent exports.
 
+## Ingest folder
+When the user says **"ingest"**, look up `../help_ingest/` (sibling directory to this repo) for reference material.
+This folder contains raw inputs (e.g. chat exports, support tickets, feature notes) that should be
+compared against or merged into the knowledge base in `content/`.
+- If the user says "ingest chats" → look for chat-related files/folders in `../help_ingest/`.
+- If the user says "ingest X" → look for files/folders matching X in `../help_ingest/`.
+- Always compare ingest material against existing `content/` to identify gaps, outdated info, or new topics.
+
 ## Non-negotiables
 1. **Source of truth is `content/`** (English-only).
 2. **Do not edit files under `legacy/`** except generating `manifest.json` and `content-map.yml`.

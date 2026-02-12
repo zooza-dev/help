@@ -1,0 +1,690 @@
+{
+  "gaps": [
+    {
+      "topic": "Attendance tracking",
+      "product_area": "Programmes",
+      "ticket_count": 35,
+      "sample_subjects": [
+        "how to add a student to a different course for a replacement lesson",
+        "nahradne hodiny",
+        "Kalendar",
+        "ráno prihlásenie na náhradu",
+        "Chybné hlásenie o dátume v notifikácii"
+      ],
+      "matching_articles": []
+    },
+    {
+      "topic": "Calendar (general)",
+      "product_area": "Calendar",
+      "ticket_count": 9,
+      "sample_subjects": [
+        "Nezobrazuji se mi lekce v kalendari a nechodi lektorce pozadavek o dochazku",
+        "Prosím o opravení chyby v zobrazování Denního přehledu",
+        "Otvorene kurzy",
+        "Online vyuka",
+        "Prosba"
+      ],
+      "matching_articles": []
+    }
+  ],
+  "partial": [
+    {
+      "topic": "Dynamic tags in messages",
+      "product_area": "Communication",
+      "ticket_count": 21,
+      "sample_subjects": [
+        "KURZ - ENGLISH COURSE - KIDS- IND. - Barmoš Mateo EN 23",
+        "do sablony spav sa nenatahuje dynamicka znacka",
+        "Odhlásenie z hodiny prebehlo úspešne",
+        "Zobrazenie názvu kurzu v poradovníku na náhradné hodiny a v dochádzke",
+        "Formát ceny kurzu"
+      ],
+      "matching_articles": [
+        {
+          "title": "Dynamic tags",
+          "slug": "dynamic-tags",
+          "score": 4
+        }
+      ]
+    }
+  ],
+  "covered": [
+    {
+      "topic": "Payment issues",
+      "ticket_count": 167,
+      "top_match": "zooza-billing-payments"
+    },
+    {
+      "topic": "Registration / booking flow",
+      "ticket_count": 151,
+      "top_match": "online-registration"
+    },
+    {
+      "topic": "Make-up lessons / replacements",
+      "ticket_count": 104,
+      "top_match": "common-booking-scenarios"
+    },
+    {
+      "topic": "Communication & notifications",
+      "ticket_count": 96,
+      "top_match": "sending-email-sms"
+    },
+    {
+      "topic": "Widget setup & customization",
+      "ticket_count": 94,
+      "top_match": "customizing-widgets"
+    },
+    {
+      "topic": "Payment schedules & plans",
+      "ticket_count": 71,
+      "top_match": "billing-periods"
+    },
+    {
+      "topic": "Billing periods / terms",
+      "ticket_count": 59,
+      "top_match": "billing-periods"
+    },
+    {
+      "topic": "Parent portal & profiles",
+      "ticket_count": 58,
+      "top_match": "parent-profile-dashboard"
+    },
+    {
+      "topic": "Registration form configuration",
+      "ticket_count": 54,
+      "top_match": "online-registration"
+    },
+    {
+      "topic": "Groups / classes",
+      "ticket_count": 53,
+      "top_match": "blocks-creation"
+    },
+    {
+      "topic": "Course / programme setup",
+      "ticket_count": 49,
+      "top_match": "open-course-creation"
+    },
+    {
+      "topic": "Courses (general)",
+      "ticket_count": 48,
+      "top_match": "edit-events-in-courses"
+    },
+    {
+      "topic": "Notifications",
+      "ticket_count": 48,
+      "top_match": "automatic-event-notification"
+    },
+    {
+      "topic": "Calendar management",
+      "ticket_count": 47,
+      "top_match": "holiday-settings"
+    },
+    {
+      "topic": "General settings",
+      "ticket_count": 43,
+      "top_match": "holiday-settings"
+    },
+    {
+      "topic": "Invoicing integrations",
+      "ticket_count": 42,
+      "top_match": "smartbill-invoices"
+    },
+    {
+      "topic": "Email sending",
+      "ticket_count": 41,
+      "top_match": "sending-email-sms"
+    },
+    {
+      "topic": "Settings (general)",
+      "ticket_count": 38,
+      "top_match": "holiday-settings"
+    },
+    {
+      "topic": "Instructor management",
+      "ticket_count": 38,
+      "top_match": "lecturer-substitution"
+    },
+    {
+      "topic": "Payments (general)",
+      "ticket_count": 33,
+      "top_match": "zooza-billing-payments"
+    },
+    {
+      "topic": "Client management",
+      "ticket_count": 33,
+      "top_match": "client-import"
+    },
+    {
+      "topic": "Login & access",
+      "ticket_count": 30,
+      "top_match": "how-to-clear-your-cache"
+    },
+    {
+      "topic": "GTC / GDPR consents",
+      "ticket_count": 26,
+      "top_match": "setting-gtc-gdpr-consents"
+    },
+    {
+      "topic": "Parent portal",
+      "ticket_count": 26,
+      "top_match": "parent-portal-101"
+    },
+    {
+      "topic": "GoCardless direct debit",
+      "ticket_count": 22,
+      "top_match": "gocardless-direct-debit-mandates"
+    },
+    {
+      "topic": "Transfer between courses",
+      "ticket_count": 21,
+      "top_match": "common-booking-scenarios"
+    },
+    {
+      "topic": "Reports & analytics",
+      "ticket_count": 21,
+      "top_match": "power-bi-integration"
+    },
+    {
+      "topic": "Clients (general)",
+      "ticket_count": 18,
+      "top_match": "new-course-existing-clients"
+    },
+    {
+      "topic": "Trial lessons",
+      "ticket_count": 15,
+      "top_match": "trial-lessons"
+    },
+    {
+      "topic": "Waiting list",
+      "ticket_count": 14,
+      "top_match": "group-interested"
+    },
+    {
+      "topic": "Products / merchandise",
+      "ticket_count": 10,
+      "top_match": "selling-products-during-registration"
+    },
+    {
+      "topic": "Data export",
+      "ticket_count": 9,
+      "top_match": "power-bi-integration"
+    },
+    {
+      "topic": "SMS messaging",
+      "ticket_count": 8,
+      "top_match": "sending-email-sms"
+    },
+    {
+      "topic": "Lecturers (general)",
+      "ticket_count": 8,
+      "top_match": "lecturers-working-hours"
+    },
+    {
+      "topic": "Documents management",
+      "ticket_count": 8,
+      "top_match": "documents"
+    },
+    {
+      "topic": "Communication (general)",
+      "ticket_count": 8,
+      "top_match": "message-templates"
+    },
+    {
+      "topic": "Discounts & promo codes",
+      "ticket_count": 5,
+      "top_match": "discount-code"
+    },
+    {
+      "topic": "Data import",
+      "ticket_count": 4,
+      "top_match": "client-import"
+    },
+    {
+      "topic": "Documents (general)",
+      "ticket_count": 3,
+      "top_match": "documents"
+    },
+    {
+      "topic": "Products (general)",
+      "ticket_count": 2,
+      "top_match": "selling-products-during-registration"
+    },
+    {
+      "topic": "WhatsApp integration",
+      "ticket_count": 2,
+      "top_match": "whatsapp-faq"
+    }
+  ],
+  "kb_articles": [
+    {
+      "title": "Common Booking Scenarios",
+      "slug": "common-booking-scenarios",
+      "product_area": "Bookings"
+    },
+    {
+      "title": "WhatsApp FAQ",
+      "slug": "whatsapp-faq",
+      "product_area": "Communication"
+    },
+    {
+      "title": "Getting Started with Zooza",
+      "slug": "getting-started-with-zooza",
+      "product_area": "Programmes"
+    },
+    {
+      "title": "Deploying Zooza app on your website",
+      "slug": "deploying-zooza-on-website",
+      "product_area": "Widgets"
+    },
+    {
+      "title": "Collecting the reason for cancelling the lesson",
+      "slug": "collecting-reason-for-cancelling",
+      "product_area": "Classes"
+    },
+    {
+      "title": "Power BI integration",
+      "slug": "power-bi-integration",
+      "product_area": "Settings"
+    },
+    {
+      "title": "Auto-enrollment",
+      "slug": "auto-enrollment",
+      "product_area": "Programmes"
+    },
+    {
+      "title": "Online registration",
+      "slug": "online-registration",
+      "product_area": "Programmes"
+    },
+    {
+      "title": "Zooza Sites",
+      "slug": "zooza-sites",
+      "product_area": "Widgets"
+    },
+    {
+      "title": "Company logo in email communication",
+      "slug": "company-logo-email",
+      "product_area": "Communication"
+    },
+    {
+      "title": "Holiday settings",
+      "slug": "holiday-settings",
+      "product_area": "Calendar"
+    },
+    {
+      "title": "Setting the rate/reward for instuctors",
+      "slug": "instructor-rate-reward",
+      "product_area": "Settings"
+    },
+    {
+      "title": "Xero Integration in Zooza: Setup & Invoice Management",
+      "slug": "xero-integration",
+      "product_area": "Payments"
+    },
+    {
+      "title": "Setting up billing periods",
+      "slug": "billing-periods",
+      "product_area": "Payments"
+    },
+    {
+      "title": "Smartbill - invoice management",
+      "slug": "smartbill-invoices",
+      "product_area": "Payments"
+    },
+    {
+      "title": "Trial lessons",
+      "slug": "trial-lessons",
+      "product_area": "Programmes"
+    },
+    {
+      "title": "Add the Zooza app to your phone’s desktop",
+      "slug": "add-zooza-app-to-phone",
+      "product_area": "Settings"
+    },
+    {
+      "title": "WhatsApp Integration & Usage (Beta)",
+      "slug": "whatsapp-integration",
+      "product_area": "Communication"
+    },
+    {
+      "title": "Setting GTC, GDPR and other consents",
+      "slug": "setting-gtc-gdpr-consents",
+      "product_area": "Settings"
+    },
+    {
+      "title": "Lecturers working hours",
+      "slug": "lecturers-working-hours",
+      "product_area": "Settings"
+    },
+    {
+      "title": "Szamlazz Invoice Management",
+      "slug": "szamlazz-invoices",
+      "product_area": "Payments"
+    },
+    {
+      "title": "Abra Flexi Invoice Management System",
+      "slug": "abra-flexi-invoices",
+      "product_area": "Payments"
+    },
+    {
+      "title": "WhatsApp troubleshooting",
+      "slug": "whatsapp-troubleshooting",
+      "product_area": "Communication"
+    },
+    {
+      "title": "How to Clear Your Cache",
+      "slug": "how-to-clear-your-cache",
+      "product_area": "Settings"
+    },
+    {
+      "title": "Receiving e-mails from Zooza in Primary Inbox",
+      "slug": "emails-in-primary-inbox",
+      "product_area": "Settings"
+    },
+    {
+      "title": "Viewing/tracking billable events",
+      "slug": "viewing-billable-events",
+      "product_area": "Classes"
+    },
+    {
+      "title": "Payment tile on registration",
+      "slug": "payment-tile-on-registration",
+      "product_area": "Payments"
+    },
+    {
+      "title": "Discount code",
+      "slug": "discount-code",
+      "product_area": "Payments"
+    },
+    {
+      "title": "Automatic payment reminders",
+      "slug": "automatic-payment-reminders-detailed",
+      "product_area": "Payments"
+    },
+    {
+      "title": "Client import",
+      "slug": "client-import",
+      "product_area": "Clients"
+    },
+    {
+      "title": "How to assign Direct Debit mandates to registrations (GoCardless)",
+      "slug": "gocardless-direct-debit-mandates",
+      "product_area": "Payments"
+    },
+    {
+      "title": "Group Interested",
+      "slug": "group-interested",
+      "product_area": "Programmes"
+    },
+    {
+      "title": "Sending email/SMS to clients",
+      "slug": "sending-email-sms",
+      "product_area": "Communication"
+    },
+    {
+      "title": "Payment Pairing for Bank Transfers & Direct Debit",
+      "slug": "payment-pairing",
+      "product_area": "Payments"
+    },
+    {
+      "title": "Types of registrations",
+      "slug": "types-of-registrations",
+      "product_area": "Bookings"
+    },
+    {
+      "title": "Group connection",
+      "slug": "group-connection",
+      "product_area": "Programmes"
+    },
+    {
+      "title": "Automatic communication to clients / Message templates",
+      "slug": "message-templates",
+      "product_area": "Communication"
+    },
+    {
+      "title": "Billing and Payments for Zooza",
+      "slug": "zooza-billing-payments",
+      "product_area": "Payments"
+    },
+    {
+      "title": "Dynamic tags",
+      "slug": "dynamic-tags",
+      "product_area": "Communication"
+    },
+    {
+      "title": "Outstanding amount",
+      "slug": "outstanding-amount",
+      "product_area": "Payments"
+    },
+    {
+      "title": "Blocks creation",
+      "slug": "blocks-creation",
+      "product_area": "Classes"
+    },
+    {
+      "title": "Automatic reminders for payment schedule",
+      "slug": "automatic-payment-reminders",
+      "product_area": "Communication"
+    },
+    {
+      "title": "Zooza 101 for Instructors",
+      "slug": "zooza-101-instructors",
+      "product_area": "Settings"
+    },
+    {
+      "title": "Course, group, lesson definition",
+      "slug": "course-group-lesson-definition",
+      "product_area": "Programmes"
+    },
+    {
+      "title": "2 lecturers per group",
+      "slug": "two-lecturers-per-group",
+      "product_area": "Programmes"
+    },
+    {
+      "title": "Network Application",
+      "slug": "network-application",
+      "product_area": "Settings"
+    },
+    {
+      "title": "Business registration",
+      "slug": "business-registration",
+      "product_area": "Bookings"
+    },
+    {
+      "title": "Course settings tile",
+      "slug": "course-settings-tile",
+      "product_area": "Programmes"
+    },
+    {
+      "title": "Edit lessons/events in courses",
+      "slug": "edit-events-in-courses",
+      "product_area": "Classes"
+    },
+    {
+      "title": "Linked registrations",
+      "slug": "linked-registrations",
+      "product_area": "Bookings"
+    },
+    {
+      "title": "Edit payment on registration",
+      "slug": "edit-payment-on-registration",
+      "product_area": "Payments"
+    },
+    {
+      "title": "Power BI Data description",
+      "slug": "power-bi-data-description",
+      "product_area": "Settings"
+    },
+    {
+      "title": "New course with existing clients",
+      "slug": "new-course-existing-clients",
+      "product_area": "Programmes"
+    },
+    {
+      "title": "Individual lessons with 1st free lesson",
+      "slug": "individual-lessons-with-free-lesson",
+      "product_area": "Programmes"
+    },
+    {
+      "title": "Multi-day event with product offer",
+      "slug": "multi-day-event-with-product-offer",
+      "product_area": "Programmes"
+    },
+    {
+      "title": "Send an email after lesson/event",
+      "slug": "send-email-after-event",
+      "product_area": "Communication"
+    },
+    {
+      "title": "Sending requests",
+      "slug": "sending-requests",
+      "product_area": "Settings"
+    },
+    {
+      "title": "Data correction or change client's data",
+      "slug": "data-correction-change-client",
+      "product_area": "Clients"
+    },
+    {
+      "title": "Individual Sessions: How to Sell, Plan, and Manage 1:1 Lessons in Zooza",
+      "slug": "individual-sessions",
+      "product_area": "Programmes"
+    },
+    {
+      "title": "How to create paid events?",
+      "slug": "how-to-create-paid-events",
+      "product_area": "Classes"
+    },
+    {
+      "title": "Lecturer substitution",
+      "slug": "lecturer-substitution",
+      "product_area": "Settings"
+    },
+    {
+      "title": "Discount types",
+      "slug": "discount-types",
+      "product_area": "Payments"
+    },
+    {
+      "title": "Labels/drawers for selected payments",
+      "slug": "payment-labels-drawers",
+      "product_area": "Payments"
+    },
+    {
+      "title": "Daily Business with Trials: Setup, Transfers, and Adjustments",
+      "slug": "trials-daily-business",
+      "product_area": "Programmes"
+    },
+    {
+      "title": "VAT management",
+      "slug": "vat-management",
+      "product_area": "Payments"
+    },
+    {
+      "title": "How to change an instructor in a class or session",
+      "slug": "change-instructor",
+      "product_area": "Settings"
+    },
+    {
+      "title": "How to sell products during registration / booking (T-shirt example)",
+      "slug": "selling-products-during-registration",
+      "product_area": "Orders"
+    },
+    {
+      "title": "Dashboard 2.0 in the Parent Profile (Parent Portal)",
+      "slug": "parent-profile-dashboard",
+      "product_area": "Clients"
+    },
+    {
+      "title": "User roles",
+      "slug": "user-roles",
+      "product_area": "Settings"
+    },
+    {
+      "title": "Late registrations",
+      "slug": "late-registrations",
+      "product_area": "Bookings"
+    },
+    {
+      "title": "Allowing multiple registration for a course",
+      "slug": "allowing-multiple-registration",
+      "product_area": "Bookings"
+    },
+    {
+      "title": "Personas",
+      "slug": "personas",
+      "product_area": "Clients"
+    },
+    {
+      "title": "Parent Portal 101",
+      "slug": "parent-portal-101",
+      "product_area": "Clients"
+    },
+    {
+      "title": "Open course creation",
+      "slug": "open-course-creation",
+      "product_area": "Programmes"
+    },
+    {
+      "title": "Customizing widgets",
+      "slug": "customizing-widgets",
+      "product_area": "Widgets"
+    },
+    {
+      "title": "Payment templates creation",
+      "slug": "payment-templates-creation",
+      "product_area": "Payments"
+    },
+    {
+      "title": "Edit automatic notifications of an upcoming event",
+      "slug": "edit-event-notification-template",
+      "product_area": "Communication"
+    },
+    {
+      "title": "Payment options",
+      "slug": "payment-options",
+      "product_area": "Payments"
+    },
+    {
+      "title": "Individual lessons via group Interested",
+      "slug": "individual-lessons-group-interested",
+      "product_area": "Programmes"
+    },
+    {
+      "title": "Summer camps creation",
+      "slug": "summer-camps-creation",
+      "product_area": "Programmes"
+    },
+    {
+      "title": "Course settings",
+      "slug": "course-settings",
+      "product_area": "Programmes"
+    },
+    {
+      "title": "Automatic notification of an upcoming event",
+      "slug": "automatic-event-notification",
+      "product_area": "Communication"
+    },
+    {
+      "title": "Notifications Center",
+      "slug": "notifications-center",
+      "product_area": "Settings"
+    },
+    {
+      "title": "Individual lessons for clients on the climbing wall with choice of instructor",
+      "slug": "individual-lessons-climbing-wall",
+      "product_area": "Programmes"
+    },
+    {
+      "title": "Documents",
+      "slug": "documents",
+      "product_area": "Settings"
+    },
+    {
+      "title": "Template Title",
+      "slug": "template-title",
+      "product_area": "Settings"
+    }
+  ]
+}
