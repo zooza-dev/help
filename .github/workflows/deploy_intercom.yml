@@ -1,0 +1,112 @@
+name: Deploy to Intercom
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy_help_center:
+        description: "Deploy to Help Center"
+        type: boolean
+        default: true
+      deploy_fin:
+        description: "Deploy to Fin Content Library"
+        type: boolean
+        default: true
+      dry_run:
+        description: "Dry run (no API writes)"
+        type: boolean
+        default: true
+      limit:
+        description: "Max items to process (0 = all)"
+        type: number
+        default: 50
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      INTERCOM_ACCESS_TOKEN: ${{ secrets.INTERCOM_ACCESS_TOKEN }}
+      INTERCOM_API_BASE_URL: ${{ secrets.INTERCOM_API_BASE_URL || 'https://api.intercom.io' }}
+      INTERCOM_API_VERSION: "2.9"
+      INTERCOM_HELP_CENTER_ID: ${{ secrets.INTERCOM_HELP_CENTER_ID }}
+      INTERCOM_FIN_CONTENT_IMPORT_SOURCE_ID: ${{ secrets.INTERCOM_FIN_CONTENT_IMPORT_SOURCE_ID }}
+      INTERCOM_FIN_DEFAULT_AUDIENCE: ${{ secrets.INTERCOM_FIN_DEFAULT_AUDIENCE || 'all' }}
+
+      # 👇 used by python rewrite (add this to your script as discussed)
+      KB_CDN_BASE_URL: ${{ vars.KB_CDN_BASE_URL || 'https://cdn.zooza.sk/assets/kb' }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pyyaml markdown jinja2 requests
+
+      - name: Run export pipeline
+        run: python scripts/export/export_all.py
+
+      # Optional but handy for troubleshooting paths
+      - name: Debug exported assets
+        run: |
+          echo "Listing assets:"
+          find build/exports/web/help/assets -maxdepth 4 -type f | head -n 50
+
+      - name: Upload KB assets to CDN (FTP)
+        # 👇 don't upload on dry-run (remove this if you DO want uploads during dry-run)
+        if: ${{ inputs.dry_run == false }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lftp
+
+          ASSETS_DIR="build/exports/web/help/assets"
+          if [ ! -d "$ASSETS_DIR" ]; then
+            echo "Assets dir not found: $ASSETS_DIR"
+            exit 1
+          fi
+
+          lftp -u "${FTP_USER}","${FTP_PASSWORD}" "${FTP_HOST}" <<EOF
+          set ftp:ssl-allow no
+          set net:max-retries 2
+          set net:timeout 20
+          set cmd:fail-exit yes
+          mkdir -p ${FTP_DIR}
+          mirror -R --only-newer --parallel=4 --verbose ${ASSETS_DIR} ${FTP_DIR}
+          bye
+          EOF
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_DIR: ${{ secrets.FTP_DIR }}
+
+      - name: Deploy to Help Center
+        if: ${{ inputs.deploy_help_center }}
+        run: |
+          FLAGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then FLAGS="$FLAGS --dry-run"; fi
+          if [ "${{ inputs.limit }}" != "0" ]; then FLAGS="$FLAGS --limit ${{ inputs.limit }}"; fi
+          python scripts/deploy/intercom_help_center.py $FLAGS
+
+      - name: Deploy to Fin Content Library
+        if: ${{ inputs.deploy_fin }}
+        run: |
+          FLAGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then FLAGS="$FLAGS --dry-run"; fi
+          if [ "${{ inputs.limit }}" != "0" ]; then FLAGS="$FLAGS --limit ${{ inputs.limit }}"; fi
+          python scripts/deploy/intercom_fin_content.py $FLAGS
+
+      - name: Upload exports
+        uses: actions/upload-artifact@v4
+        with:
+          name: intercom-exports
+          path: build/exports/
+          retention-days: 30
+
+      - name: Upload intercom target outputs (mappings etc.)
+        uses: actions/upload-artifact@v4
+        with:
+          name: intercom-targets
+          path: build/exports/targets/intercom/
+          retention-days: 90
