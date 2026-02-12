@@ -1,28 +1,33 @@
 {
   "generated": "2026-02-11",
   "source": "Cases__1 7.csv",
+  "method": "full-text feature extraction from Subject + Description (SK/CZ/EN patterns)",
+  "filter": "setup/usage questions only (Request, How to set up, Requirement to test)",
   "total_tickets": 3276,
-  "questions_requests": 2347,
-  "bugs_outages": 929,
+  "setup_questions": 1705,
+  "excluded": 1571,
+  "tickets_with_feature_match": 1519,
+  "tickets_without_match": 186,
   "language_distribution": {
-    "Slovak": 1744,
-    "Czech": 277,
-    "unknown": 181,
-    "English": 139,
-    "Croatian": 4,
+    "Slovak": 1298,
+    "Czech": 204,
+    "unknown": 103,
+    "English": 96,
+    "Croatian": 2,
     "Swahili": 1,
     "Slovenian": 1
   },
   "channel_distribution": {
-    "Web": 1493,
-    "Email": 616,
-    "Chat": 156,
-    "Phone": 82
+    "Web": 1328,
+    "Email": 280,
+    "Phone": 68,
+    "Chat": 29
   },
   "category_counts": {
-    "Courses": 150,
-    "Payments": 149,
-    "Settings": 120,
+    "uncategorized": 1049,
+    "Payments": 147,
+    "Courses": 147,
+    "Settings": 119,
     "Clients": 114,
     "Communication": 55,
     "Calendar": 33,
@@ -30,524 +35,560 @@
     "Products": 9,
     "Documents": 8
   },
-  "topics": [
+  "features": [
     {
-      "topic": "Payment issues",
+      "feature_id": "registrations",
+      "topic": "Registration & booking flow",
+      "product_area": "Bookings",
+      "ticket_count": 586,
+      "sample_subjects": [
+        "Dobrý den, mám teď konkrétní případ, kdy mi nejdou propojit registrace, aby se mi odečetla platba. Paní Blanka Kapsia, r",
+        "Ako nastaviť registračný poplatok pri kurze",
+        "Náhradky",
+        "čeština a změna slov v šabloně",
+        "Statistika"
+      ]
+    },
+    {
+      "feature_id": "clients",
+      "topic": "Client management (general)",
+      "product_area": "Clients",
+      "ticket_count": 514,
+      "sample_subjects": [
+        "Import klientů",
+        "Dochadzka - viditelnost udajov",
+        "statistika omluvených a náhradních hodin",
+        "PODNET dochadzka",
+        "Ahoj, keď sa klient odhlasuje z náhradnej hodiny dostane túto hlášku aj keď máme povolené, aby sa z náhradnej hodiny odh"
+      ]
+    },
+    {
+      "feature_id": "courses",
+      "topic": "Course / programme setup",
+      "product_area": "Programmes",
+      "ticket_count": 448,
+      "sample_subjects": [
+        "Dobrý den, mám teď konkrétní případ, kdy mi nejdou propojit registrace, aby se mi odečetla platba. Paní Blanka Kapsia, r",
+        "Ako nastaviť registračný poplatok pri kurze",
+        "test Prosim neviem nastavit nahradne hodiny na kurze",
+        "čeština a změna slov v šabloně",
+        "Permanentky - připisování a odečítání částek manuálně?"
+      ]
+    },
+    {
+      "feature_id": "email-messages",
+      "topic": "Email & messaging",
+      "product_area": "Communication",
+      "ticket_count": 426,
+      "sample_subjects": [
+        "Dochadzka - viditelnost udajov",
+        "Prepínanie údajov na zakaznika",
+        "Ticket Modal",
+        "Logo not displaying correctly",
+        "neuhradené registrácie DO"
+      ]
+    },
+    {
+      "feature_id": "groups-classes",
+      "topic": "Groups & classes setup",
+      "product_area": "Classes",
+      "ticket_count": 310,
+      "sample_subjects": [
+        "Dochadzka - viditelnost udajov",
+        "Sorting the groups after name",
+        "Statistika",
+        "Nejde mi vybrať lektorka na skupinu",
+        "Export registrácií"
+      ]
+    },
+    {
+      "feature_id": "payments-general",
+      "topic": "Payments (general setup & config)",
       "product_area": "Payments",
-      "ticket_count": 167,
+      "ticket_count": 291,
+      "sample_subjects": [
+        "Dobrý den, mám teď konkrétní případ, kdy mi nejdou propojit registrace, aby se mi odečetla platba. Paní Blanka Kapsia, r",
+        "Nastavenie platieb - vypocet alikvotnej ciastky",
+        "FA do učtovnictva",
+        "Nespárování platby",
+        "Ako riesit duplicitne nahranie platby?"
+      ]
+    },
+    {
+      "feature_id": "profiles-accounts",
+      "topic": "Client profiles & accounts",
+      "product_area": "Clients",
+      "ticket_count": 185,
+      "sample_subjects": [
+        "FA do učtovnictva",
+        "Zakaznicka sa nevie dostat do profilu",
+        "Permanentky - připisování a odečítání částek manuálně?",
+        "Nespárování platby",
+        "BO + uprava pristupu pre eva@lezeckecentrum.cz"
+      ]
+    },
+    {
+      "feature_id": "lessons-events",
+      "topic": "Lessons & events management",
+      "product_area": "Calendar",
+      "ticket_count": 182,
+      "sample_subjects": [
+        "Ahoj, keď sa klient odhlasuje z náhradnej hodiny dostane túto hlášku aj keď máme povolené, aby sa z náhradnej hodiny odh",
+        "test Prosim neviem nastavit nahradne hodiny na kurze",
+        "Náhradky",
+        "pocet nahradnych hodin u klientky",
+        "PReco p.Kokoska stale figuruje ako Aktivny klient?"
+      ]
+    },
+    {
+      "feature_id": "replacements-makeups",
+      "topic": "Make-up / replacement lessons",
+      "product_area": "Bookings",
+      "ticket_count": 151,
+      "sample_subjects": [
+        "statistika omluvených a náhradních hodin",
+        "Ahoj, keď sa klient odhlasuje z náhradnej hodiny dostane túto hlášku aj keď máme povolené, aby sa z náhradnej hodiny odh",
+        "test Prosim neviem nastavit nahradne hodiny na kurze",
+        "Náhradky",
+        "pocet nahradnych hodin u klientky"
+      ]
+    },
+    {
+      "feature_id": "calendar",
+      "topic": "Calendar views & management",
+      "product_area": "Calendar",
+      "ticket_count": 134,
+      "sample_subjects": [
+        "BB lektor/kalendar vyvoj",
+        "Kalendar",
+        "Kopírovanie skupiniek",
+        "pridat klienta do terminu skupiny",
+        "NEW - notifikacia o nezapisani dochadzky"
+      ]
+    },
+    {
+      "feature_id": "parent-portal",
+      "topic": "Parent portal & self-service",
+      "product_area": "Clients",
+      "ticket_count": 123,
       "sample_subjects": [
         "Ako nastaviť registračný poplatok pri kurze",
-        "La Portella",
-        "neuhradené registrácie DO",
-        "Prosim overit, ci platba bola uhradena 2x",
+        "nastavenie sumy v registracnom formulari pre webinar",
+        "Kopírovanie skupiniek",
+        "Logo v maili",
         "parovanie registracii / kovacova 220311"
       ]
     },
     {
-      "topic": "Registration / booking flow",
-      "product_area": "Bookings",
-      "ticket_count": 151,
+      "feature_id": "instructors",
+      "topic": "Instructor / lecturer management",
+      "product_area": "Settings",
+      "ticket_count": 120,
       "sample_subjects": [
-        "Informácie o lezeckých výletoch ŠK MEDVEDiCA",
-        "Přihlášení jednoho dítěte na akci 2x",
-        "Export registrácií",
-        "Zrušená regisrácia",
-        "Dobrý deň."
+        "Import klientů",
+        "BB lektor/kalendar vyvoj",
+        "Nejde mi vybrať lektorka na skupinu",
+        "pridat klienta do terminu skupiny",
+        "NEW - notifikacia o nezapisani dochadzky"
       ]
     },
     {
-      "topic": "Make-up lessons / replacements",
-      "product_area": "Bookings",
-      "ticket_count": 104,
+      "feature_id": "attendance",
+      "topic": "Attendance tracking",
+      "product_area": "Programmes",
+      "ticket_count": 115,
       "sample_subjects": [
-        "nepovolenie nahradnych hodin v letnom kurz",
-        "uz dlhodobo velmi zly customer servis",
+        "Dochadzka - viditelnost udajov",
+        "PODNET dochadzka",
+        "Statistika",
+        "Nefungujuca Dochadzke u klientky",
+        "NEW - notifikacia o nezapisani dochadzky"
+      ]
+    },
+    {
+      "feature_id": "consents-gdpr",
+      "topic": "GTC / GDPR consents",
+      "product_area": "Settings",
+      "ticket_count": 110,
+      "sample_subjects": [
+        "Prepínanie údajov na zakaznika",
+        "čeština a změna slov v šabloně",
+        "Kopírovanie skupiniek",
+        "Nefungujuca Dochadzke u klientky",
+        "Logo v maili"
+      ]
+    },
+    {
+      "feature_id": "capacity",
+      "topic": "Capacity & participant limits",
+      "product_area": "Programmes",
+      "ticket_count": 101,
+      "sample_subjects": [
+        "Ako odtranim - skryjem otáznik zo zoozy",
+        "Kopirovanie klienta uz do realizovanej hodiny",
+        "Registracia z webu jazykovky a login do Zooza support webu",
+        "dashboard klienta - zobraziť náhrady",
+        "Filtrovanie podľa lokalít"
+      ]
+    },
+    {
+      "feature_id": "invoices",
+      "topic": "Invoicing & invoice integrations",
+      "product_area": "Payments",
+      "ticket_count": 80,
+      "sample_subjects": [
+        "FA do učtovnictva",
         "Predlzenie platbosti prenesenych nahradnych hodin",
-        "Dotaz",
-        "Dobrý deň, mám otázku ohľadom zadávania nových kurzov a prenesených hodinách. Povedzme, že minulý turnus som mala kurz pre 3.-6.ročník. Tento turnus chcem zmeniť kurz na 4.-6.ročník. Takže zadám nový kurz a starý zarchivujem.  Teraz ale mám otázk..."
+        "Dofakturácia služieb SMS",
+        "Presun registracie do ineho kurzu",
+        "Registracia z webu jazykovky a login do Zooza support webu"
       ]
     },
     {
-      "topic": "Communication & notifications",
+      "feature_id": "message-templates",
+      "topic": "Message templates",
       "product_area": "Communication",
-      "ticket_count": 96,
+      "ticket_count": 78,
       "sample_subjects": [
-        "platba ku kurzu nieje",
-        "Client receives lesson notifications for 1 child but not the other",
-        "mail notifikácie / súhlasy",
-        "Neodoslany mail",
-        "Zmena e-mailovej adresy"
-      ]
-    },
-    {
-      "topic": "Widget setup & customization",
-      "product_area": "Widgets",
-      "ticket_count": 94,
-      "sample_subjects": [
-        "nastavenie sumy v registracnom formulari pre webinar",
-        "nahradna hodina",
-        "Otázka na alikvotnu cast pri dohlasovaní",
-        "Zooza - poziadavky po stretnuti",
-        "Dobrý deň, prosím Vás mám problém s tým, že pri vytvorených kurzoch pri prihlasovaní mi u dvoch kurzov nezobrazuje pre zákazníka sumu aj keď ja ju u seba v zooze vidím ako nastavenú, jedná sa o kurz Kosatky a Mini zubrienky 1, vie te mi poradiť. ..."
-      ]
-    },
-    {
-      "topic": "Payment schedules & plans",
-      "product_area": "Payments",
-      "ticket_count": 71,
-      "sample_subjects": [
+        "Pripomienky platieb na tabory",
+        "Pripomienkove emaily",
         "platobne sablony / zimne sustredenia",
-        "Nahadzovanie novych kurzov - check 1",
-        "Dobrý den, píšem za centrum Helen Doron Ivanka, potrebujem urgentne pomôcť, nastavujeme po jednom platobné šablony klientom, polročnú šablonu vypočítava na 3 splátky, nie na 2. Nastavenia by mali byť nastavené správne. Prosíme o pomoc, dakujem.",
-        "Prosba o pridanie platobnej šabloný",
-        "Šablóny"
+        "Vytvorenie simple site pre MOBIK",
+        "členské - nezrovnalost?"
       ]
     },
     {
-      "topic": "Billing periods / terms",
-      "product_area": "Payments",
-      "ticket_count": 59,
-      "sample_subjects": [
-        "Nefunkčnosť prihlásiť sa na termín",
-        "neviem zmenit casy terminov",
-        "Dobrý den, špatně se mi zobrazují v rezervačním systému časy skupin. V zadání skupiny mám čas dobrý, například od 8:00 do 14:00 ale na stránkách v rezervačním systému se mi zobrazuje od 8:00 do 9:00. Stejně tak i u dalších skupin časy nesedí. Kde...",
-        "How can I change the day for a course in Zooza?",
-        "changed group to 45 minutes, but lecturer rate did not change - can't enter description ????"
-      ]
-    },
-    {
-      "topic": "Parent portal & profiles",
-      "product_area": "Clients",
-      "ticket_count": 58,
-      "sample_subjects": [
-        "registracia a pripisovanie volnych terminov",
-        "nefunkčná registrácia",
-        "suhlasy",
-        "Nefunkcne prihlasenie",
-        "Klientke sa neda prihlasit do profilu"
-      ]
-    },
-    {
-      "topic": "Registration form configuration",
-      "product_area": "Bookings",
-      "ticket_count": 54,
-      "sample_subjects": [
-        "dobry den",
-        "Dobrý den, špatně se mi zobrazují v rezervačním systému časy skupin. V zadání skupiny mám čas dobrý, například od 8:00 do 14:00 ale na stránkách v rezervačním systému se mi zobrazuje od 8:00 do 9:00. Stejně tak i u dalších skupin časy nesedí. Kde...",
-        "parovanie registracii / kovacova 220311",
-        "Otázka na alikvotnu cast pri dohlasovaní",
-        "Navrh na vylepsenie"
-      ]
-    },
-    {
-      "topic": "Groups / classes",
-      "product_area": "Classes",
-      "ticket_count": 53,
+      "feature_id": "schedule",
+      "topic": "Schedule / timetable",
+      "product_area": "Calendar",
+      "ticket_count": 77,
       "sample_subjects": [
         "Sorting the groups after name",
-        "Dobrý den, potřebovali bychom nastavit možnost filtorvání skupin dle dní, lektory, aj. Po včerejším meetu jsem si myslela, že to dokážeme nastavit, avšak já tuto stránku v mém nastavení nemám. Můžete mi poradit, kde nastavit filtrování skupin v k...",
-        "vyhľadávanie",
-        "How can I change the day for a course in Zooza?",
-        "Odlišné skupiny v jednom kurzu"
+        "Kalendar",
+        "Nezobrazuje klientke registracny formular na webe",
+        "členské - nezrovnalost?",
+        "Filtrovanie podľa lokalít"
       ]
     },
     {
-      "topic": "Course / programme setup",
-      "product_area": "Programmes",
-      "ticket_count": 49,
+      "feature_id": "pricing",
+      "topic": "Pricing & fee setup",
+      "product_area": "Payments",
+      "ticket_count": 77,
       "sample_subjects": [
-        "LETO 2024",
-        "Nahadzovanie novych kurzov - check 1",
-        "parovanie registracii / kovacova 220311",
-        "Dobrý deň,  nejde mi nastaviť jednorázová platba na kurz Didi the Dragon Green, Utorok 9:30. Neviem čo som tam nastavila zle. Môžte sa mi na to prosím pozrieť?",
+        "nastavenie sumy v registracnom formulari pre webinar",
+        "Zooza Asistentka",
+        "Pripomienkove emaily",
+        "217925 / oprava ceny",
+        "Rozšírená verzia cenníka Zooza pre vás"
+      ]
+    },
+    {
+      "feature_id": "payment-schedules",
+      "topic": "Payment schedules & instalment plans",
+      "product_area": "Payments",
+      "ticket_count": 64,
+      "sample_subjects": [
+        "Dobrý den, píšem za centrum Helen Doron Ivanka, potrebujem urgentne pomôcť, nastavujeme po jednom platobné šablony klien",
+        "Dobrý deň Včera som vytváral splátkové kalendáre u niektorých klientov - u ďalších mi to opať neide - a u tých čo som vy",
+        "splatkovy kalendar nema splatky",
+        "priradena neuhradena splatka",
+        "splatkovy kalendar na skupiny"
+      ]
+    },
+    {
+      "feature_id": "transfers",
+      "topic": "Transfers between courses",
+      "product_area": "Bookings",
+      "ticket_count": 59,
+      "sample_subjects": [
+        "pridat klienta do terminu skupiny",
+        "pripomienky na presunutý termín nechodia",
+        "Presunuty klient na dochadzke oboch terminov skupiny",
+        "Presun registracie do ineho kurzu",
+        "komunikácia s klientami"
+      ]
+    },
+    {
+      "feature_id": "reports-analytics",
+      "topic": "Reports & analytics",
+      "product_area": "Settings",
+      "ticket_count": 57,
+      "sample_subjects": [
+        "statistika omluvených a náhradních hodin",
+        "Statistika",
+        "Aktivni a Neaktivni klienti - report a nastavenie",
+        "Doplnenie do reportov (export excel)",
+        "DOLEZITE / PLATBY / prehlad"
+      ]
+    },
+    {
+      "feature_id": "notifications",
+      "topic": "Notifications & alerts",
+      "product_area": "Communication",
+      "ticket_count": 55,
+      "sample_subjects": [
+        "platobne sablony / zimne sustredenia",
+        "Prosim overit, ci platba bola uhradena 2x",
+        "Nespravna Notifikacia",
+        "NEW - notifikacia o nezapisani dochadzky",
         "e-mail notification for new registrations"
       ]
     },
     {
-      "topic": "Courses (general)",
-      "product_area": "Programmes",
-      "ticket_count": 48,
+      "feature_id": "outstanding-payments",
+      "topic": "Outstanding amounts / debt",
+      "product_area": "Payments",
+      "ticket_count": 51,
       "sample_subjects": [
-        "Ahoj, keď sa klient odhlasuje z náhradnej hodiny dostane túto hlášku aj keď máme povolené, aby sa z náhradnej hodiny odhlásil. Prosím o zrušenie - zbytočne je to matuce, ďakujem",
-        "Zooza Asistentka",
-        "Extra polia - firma v ang.jazyku",
-        "Presun registracie do ineho kurzu",
-        "Mila Evka, potrebovala by som poradit, Mam na webe v ponuke 3 lokality, Komarno, Dunajsku Stredu a Samorin. V Samorine mam 2 prevadzky, napr kurzy Mini 3 sa realizuju aj v jednej aj v druhej prevadzke.      Ako to vyriesit aby sa klientom zobrazo..."
+        "Ako nastaviť registračný poplatok pri kurze",
+        "nedoplatok na registracii",
+        "Nevyplnena dochadzka",
+        "Žiadosť o cenu integrácie Zoozy na  nový web",
+        "Odhlasovanie z otvorených hodín"
       ]
     },
     {
-      "topic": "Notifications",
-      "product_area": "Communication",
-      "ticket_count": 48,
+      "feature_id": "registration-form",
+      "topic": "Registration form config",
+      "product_area": "Widgets",
+      "ticket_count": 50,
       "sample_subjects": [
-        "Chodia notifikacne emaily aj pred nahradnou hodinou?",
-        "Prepínanie údajov na zakaznika",
-        "Notifikace při odhlášení klienta z akce",
-        "pripomienkove eaily",
-        "Josef Janda - klientka Tereza Kopecká registrace 235369"
+        "nastavenie sumy v registracnom formulari pre webinar",
+        "Nezobrazuje klientke registracny formular na webe",
+        "Platenie našich klientov",
+        "členské - nezrovnalost?",
+        "Filtrovanie podľa lokalít"
       ]
     },
     {
-      "topic": "Calendar management",
-      "product_area": "Calendar",
-      "ticket_count": 47,
-      "sample_subjects": [
-        "Kalendár",
-        "Filter v kalendari",
-        "Kalendar",
-        "Aktualizácia CRM: Nové zaujímavé funkcie v Zooza!",
-        "Žiadosť o úpravu zobrazenia kalendára v sekcii lektori"
-      ]
-    },
-    {
-      "topic": "General settings",
-      "product_area": "Settings",
+      "feature_id": "payment-pairing",
+      "topic": "Payment pairing / matching",
+      "product_area": "Payments",
       "ticket_count": 43,
       "sample_subjects": [
-        "Odlišné skupiny v jednom kurzu",
-        "Ospravedlnenie 22.1.2025 - 16,25hod.",
-        "registracny formular nezohladnuje extra polia",
-        "Nahradne hodiny",
-        "Dynamic Document"
+        "parovanie registracii / kovacova 220311",
+        "duplicitne sparovanie 1 platby z banky - chyba na strane ZOOZY",
+        "parovanie - otazka",
+        "Marine Swim Academy - párovanie platieb",
+        "automaticke parovanie platieb"
       ]
     },
     {
-      "topic": "Invoicing integrations",
-      "product_area": "Payments",
-      "ticket_count": 42,
-      "sample_subjects": [
-        "DPH 10% + 20% na 1 faktúre?",
-        "Zmena aktuálneho balika",
-        "FW: Enjoy Language - Nová faktura za: Angličtina pro děti pokročilí - úterý - KITTY CATS - školní děti mírně pokročilí",
-        "vystavené FA",
-        "upravenie faktúr"
-      ]
-    },
-    {
-      "topic": "Email sending",
-      "product_area": "Communication",
+      "feature_id": "login-access",
+      "topic": "Login & account access",
+      "product_area": "Settings",
       "ticket_count": 41,
       "sample_subjects": [
-        "Chcem len preverit, ci klient dostal plny email",
-        "Josef Janda - klientka Tereza Kopecká registrace 235369",
-        "how to add a student to a different course for a replacement lesson",
-        "Neodosiela email HTML",
-        "Nechodia upozornenia pred hodinou"
-      ]
-    },
-    {
-      "topic": "Settings (general)",
-      "product_area": "Settings",
-      "ticket_count": 38,
-      "sample_subjects": [
-        "fakturacne obdobie",
-        "Zmena udajov klienta",
-        "Dobrý deň. Máte návod na inštalovanie merania poslaných formulárov pomocou Google Tag Managera priamo v Zooza? Ako ho možno integrovať? Ďakujem.",
-        "neviem sa dostať do https://support.zooza.online/",
-        "? ️ Novinky v Zooza 3.1: Vylepšenia, ktoré vám zjednodušia život! ⚠️"
-      ]
-    },
-    {
-      "topic": "Instructor management",
-      "product_area": "Settings",
-      "ticket_count": 38,
-      "sample_subjects": [
-        "changed group to 45 minutes, but lecturer rate did not change - can't enter description ????",
-        "Google Meet tento týden?",
-        "dochadzka",
-        "dochádzka lektora",
-        "Výpočet mzdy"
-      ]
-    },
-    {
-      "topic": "Attendance tracking",
-      "product_area": "Programmes",
-      "ticket_count": 35,
-      "sample_subjects": [
-        "how to add a student to a different course for a replacement lesson",
-        "nahradne hodiny",
-        "Kalendar",
-        "ráno prihlásenie na náhradu",
-        "Chybné hlásenie o dátume v notifikácii"
-      ]
-    },
-    {
-      "topic": "Payments (general)",
-      "product_area": "Payments",
-      "ticket_count": 33,
-      "sample_subjects": [
-        "Nastavenie platieb - vypocet alikvotnej ciastky",
-        "Dofakturácia služieb SMS",
-        "dobry den, uz je mozne v zooze parovat ucet cez gocardless?",
-        "Dobrý deň Včera som vytváral splátkové kalendáre u niektorých klientov - u ďalších mi to opať neide - a u tých čo som vytvoril ani nezobrazuje splátkový kalendár....napr. registracia 217248 Renáta Štofková. Vite sa na to pozrieť. Dakujem",
-        "Dobrý deň , prosím Vás , účtovníčka  začala používať digitálnu kanceláriu kde jej nahrávame všetky faktúry manuálne ale dajú sa aj automatizovať. Je možné z vašej strany nastavit , že po vytvorení faktúry a odoslaní ju klientovi sa to pošle zárov..."
-      ]
-    },
-    {
-      "topic": "Client management",
-      "product_area": "Clients",
-      "ticket_count": 33,
-      "sample_subjects": [
-        "Prehladne a rychlo sa dostat k zbernym kosom",
-        "cannot log in, not working for me",
-        "Zdravím Prečo pri odhlásení klient vidí takýto email a nezobrazi mu jeho kurz? Ahoj Jana,\npráve ste sa úspešne odhlásili z 1 lekcie kurzu *|COURSE_NAME|* v termíne 11. 11. 2024 o 15:30 v priestoroch FRIMart studio, Budovateľská 34, Prešov.\n\nĎakuj...",
-        "Nová odpoveď: Re: Termín -",
-        "Pernamentka a platba hodin"
-      ]
-    },
-    {
-      "topic": "Login & access",
-      "product_area": "Settings",
-      "ticket_count": 30,
-      "sample_subjects": [
-        "Zooza App",
-        "Náhradky",
         "Zakaznicka sa nevie dostat do profilu",
-        "Registrácia 202344",
-        "Aktualizácia CRM: Nové zaujímavé funkcie v Zooza!"
+        "pripomienky na presunutý termín nechodia",
+        "Dobry den, klient Anton Duran sa nevie prihlasit, stale mu vyhadzuje, ze prihlasenie sa nepodarilo.",
+        "Registracia z webu jazykovky a login do Zooza support webu",
+        "Nainštalovanie skriptov na web -https://www.kidsacademy.sk/kontakt/"
       ]
     },
     {
-      "topic": "GTC / GDPR consents",
-      "product_area": "Settings",
-      "ticket_count": 26,
-      "sample_subjects": [
-        "Nové VOP",
-        "suhlasy",
-        "oprava nastavenia suhlasov",
-        "súhlasy a dohody",
-        "Súhlasy - neukazuje ako by malo"
-      ]
-    },
-    {
-      "topic": "Parent portal",
-      "product_area": "Clients",
-      "ticket_count": 26,
-      "sample_subjects": [
-        "Dobrý deň, prosím Vás mám problém s tým, že pri vytvorených kurzoch pri prihlasovaní mi u dvoch kurzov nezobrazuje pre zákazníka sumu aj keď ja ju u seba v zooze vidím ako nastavenú, jedná sa o kurz Kosatky a Mini zubrienky 1, vie te mi poradiť. ...",
-        "Dopyt - nastavenie platby kartou / platobnej brány",
-        "upravenie faktúr",
-        "Neotvárajú sa registračné formuláre",
-        "Zooza - poziadavky po stretnuti"
-      ]
-    },
-    {
-      "topic": "GoCardless direct debit",
-      "product_area": "Payments",
-      "ticket_count": 22,
-      "sample_subjects": [
-        "Marine Swim Academy - párovanie platieb",
-        "Duplicitné spárovanie platby",
-        "Notifikácie VUB - párovanie platieb",
-        "párovanie platieb neprebieha",
-        "Nesparovane platby"
-      ]
-    },
-    {
-      "topic": "Transfer between courses",
-      "product_area": "Bookings",
-      "ticket_count": 21,
-      "sample_subjects": [
-        "Adding bank",
-        "registracia a pripisovanie volnych terminov",
-        "presuvanie klienta - nevidim skupinu ktora v rozvrhu je aj cez stranku sa da do nej registrovat",
-        "problém - presunuté registrácie, notifikácia o náhradnom termíne",
-        "Nezobrazovanie registračného poplatku po prehodení z poradovníka"
-      ]
-    },
-    {
+      "feature_id": "dynamic-tags",
       "topic": "Dynamic tags in messages",
       "product_area": "Communication",
-      "ticket_count": 21,
+      "ticket_count": 30,
       "sample_subjects": [
-        "KURZ - ENGLISH COURSE - KIDS- IND. - Barmoš Mateo EN 23",
-        "do sablony spav sa nenatahuje dynamicka znacka",
-        "Odhlásenie z hodiny prebehlo úspešne",
-        "Zobrazenie názvu kurzu v poradovníku na náhradné hodiny a v dochádzke",
-        "Formát ceny kurzu"
+        "Chcem len preverit, ci klient dostal plny email",
+        "Filtrovanie podľa lokalít",
+        "splatkovy kalendar nema splatky",
+        "zle vyplnene znacky pri zmene v termine",
+        "nove pole skupiny a dynamicka znacka"
       ]
     },
     {
-      "topic": "Reports & analytics",
+      "feature_id": "data-export",
+      "topic": "Data export & reports",
       "product_area": "Settings",
-      "ticket_count": 21,
+      "ticket_count": 29,
       "sample_subjects": [
-        "V přehledu plateb nelze zrušit naplánovanou platbu",
-        "Kde si viem stiahnut report klientov, ktori maju aktualne nevycerpane nahradne hodiny",
-        "Zooza platby",
-        "nesrovnalost v uhrazených částkách ve výpisu plateb",
-        "Reporty"
+        "Export registrácií",
+        "Doplnenie do reportov (export excel)",
+        "Report s verejnou poznámkou",
+        "Export clients",
+        "Platby - nespárování a další postřehy, otázky"
       ]
     },
     {
-      "topic": "Clients (general)",
-      "product_area": "Clients",
-      "ticket_count": 18,
+      "feature_id": "blocks-terms",
+      "topic": "Blocks & terms / semesters",
+      "product_area": "Classes",
+      "ticket_count": 29,
       "sample_subjects": [
-        "Dobry den, klient Anton Duran sa nevie prihlasit, stale mu vyhadzuje, ze prihlasenie sa nepodarilo.",
-        "217925 / oprava ceny",
-        "Nevyplnena dochadzka",
-        "registracia klienta",
-        "Vymazanie mailu."
+        "Prosba o pridanie platobnej šabloný",
+        "Hodnotenie kurzov",
+        "Vytvorenie termínu - BLOK",
+        "Rozdiely v registračnom formulári",
+        "Upomienky"
       ]
     },
     {
+      "feature_id": "user-roles",
+      "topic": "User roles & permissions",
+      "product_area": "Settings",
+      "ticket_count": 28,
+      "sample_subjects": [
+        "duplicitne sparovanie 1 platby z banky - chyba na strane ZOOZY",
+        "Doplnenie do reportov (export excel)",
+        "prodejní formulář",
+        "Informácia klienta o zmene termínu - šablóna",
+        "Kopirovanie klientov - kopirovanie skupin - URGENT, dakujem za rychlu reakciu"
+      ]
+    },
+    {
+      "feature_id": "documents",
+      "topic": "Documents & attachments",
+      "product_area": "Settings",
+      "ticket_count": 24,
+      "sample_subjects": [
+        "Manual - dokumenty",
+        "Nespravna Notifikacia",
+        "sumy sadzby lektorov",
+        "Doplnenie do reportov (export excel)",
+        "Vin Gym"
+      ]
+    },
+    {
+      "feature_id": "widgets",
+      "topic": "Widgets & website embedding",
+      "product_area": "Widgets",
+      "ticket_count": 19,
+      "sample_subjects": [
+        "Website display",
+        "Dobrý deň neukazuje mi na webstránke v časti Kalendár nedeľné kurzy ostatné dni ano ale nedľu nevidim. Viete sa na to po",
+        "Užívateľský profil - zobrazovanie profilu",
+        "Presunutie registrácie",
+        "Widety"
+      ]
+    },
+    {
+      "feature_id": "trial-lessons",
       "topic": "Trial lessons",
       "product_area": "Programmes",
-      "ticket_count": 15,
+      "ticket_count": 19,
       "sample_subjects": [
+        "Vyberanie volnej nahradnej hodiny klientom",
         "skúšobné reg -nejde vyhladať v klientoch podla mailu",
-        "splátkový kalendář se zkušební hodinou zdarma",
-        "Zkušební hodina",
-        "Všetko dokopy ????",
-        "dvě místa i když mám zadané jen jedno"
+        "Registrácia nechodia notifikácie",
+        "neustala potreba potvrdit suhlas a nemoznost registrovat sa na kurz",
+        "BBBA -pripomienka po absolvovani skusobnej hodiny - kde zmenit text"
       ]
     },
     {
-      "topic": "Waiting list",
-      "product_area": "Bookings",
-      "ticket_count": 14,
-      "sample_subjects": [
-        "Příkaz na druhé pololetí",
-        "Nitra deti v poradovníku",
-        "Zmenené nastavenia vo všetkých účtoch",
-        "Komunikačné šablóny",
-        "Obmedzenie skupiny"
-      ]
-    },
-    {
-      "topic": "Products / merchandise",
-      "product_area": "Orders",
-      "ticket_count": 10,
-      "sample_subjects": [
-        "Zooza",
-        "nastavenie permanentky",
-        "Platba za Nožičkové video prebehla úspešne",
-        "Pernamentka a platba hodin",
-        "Nespárovaná objednávka k registraci a neupravená cena, neodešel email o příchozí platbě"
-      ]
-    },
-    {
-      "topic": "Calendar (general)",
+      "feature_id": "holidays",
+      "topic": "Holidays & days off",
       "product_area": "Calendar",
-      "ticket_count": 9,
+      "ticket_count": 18,
       "sample_subjects": [
-        "Nezobrazuji se mi lekce v kalendari a nechodi lektorce pozadavek o dochazku",
-        "Prosím o opravení chyby v zobrazování Denního přehledu",
-        "Otvorene kurzy",
-        "Online vyuka",
-        "Prosba"
+        "Zooza - otazky",
+        "Zmena dňa termínu kvôli sviatku - ako to spravne nastaviť?",
+        "dochadzka",
+        "jarné prázdniny",
+        "otazka"
       ]
     },
     {
-      "topic": "Data export",
-      "product_area": "Settings",
-      "ticket_count": 9,
-      "sample_subjects": [
-        "stiahnutie FA do účtovníctva",
-        "export dat",
-        "Otázka na tabuľku z databázy",
-        "Registracia",
-        "Export - nové FA"
-      ]
-    },
-    {
+      "feature_id": "sms",
       "topic": "SMS messaging",
       "product_area": "Communication",
-      "ticket_count": 8,
+      "ticket_count": 17,
       "sample_subjects": [
-        "posielanie sms skupine z kalendára",
-        "Neskorá registrácia - platba - dochádzka",
-        "Zle zobrazovanie mena odosielatela pri sms",
+        "Dofakturácia služieb SMS",
+        "Chyba systemu",
+        "navrh na upravu komunikacie",
         "Odoslane SMS neboli dorucene",
-        "Nechce odoslať sms"
+        "Notifikácie VUB - párovanie platieb"
       ]
     },
     {
-      "topic": "Lecturers (general)",
+      "feature_id": "branding",
+      "topic": "Branding & visual customization",
       "product_area": "Settings",
-      "ticket_count": 8,
+      "ticket_count": 15,
       "sample_subjects": [
-        "Inactivate lecturer",
-        "report lektorov ukazuje nulu",
-        "Rola recepcnej",
-        "Skuska",
-        "zasah do platieb"
+        "Logo not displaying correctly",
+        "Logo v maili",
+        "Doplnenie do reportov (export excel)",
+        "Ako funguje stranka, kde mam vidiet svoje tiskety? Po nalogovani tam ziadne nevidim",
+        "Prehľadný rozpis zaplatených a nezaplatených splátok"
       ]
     },
     {
-      "topic": "Documents management",
-      "product_area": "Settings",
-      "ticket_count": 8,
-      "sample_subjects": [
-        "Platba za Nožičkové video prebehla úspešne",
-        "Nefungujúce dokumenty v profile klienta",
-        "Prepisanie nahraneho dokumentu",
-        "ako zmeniť názov videa",
-        "Kopirovanie skupin aj s dokumentami - prosba o zjednodusenie do buducna"
-      ]
-    },
-    {
-      "topic": "Communication (general)",
-      "product_area": "Communication",
-      "ticket_count": 8,
-      "sample_subjects": [
-        "příloha k email?",
-        "Oprava názvu",
-        "Zooza- kopírovanie klientov do nových kurzov",
-        "Zmluva",
-        "ZOOZA - dotaz"
-      ]
-    },
-    {
-      "topic": "Discounts & promo codes",
-      "product_area": "Payments",
-      "ticket_count": 5,
-      "sample_subjects": [
-        "Slevový kód",
-        "zlava na tabor",
-        "zlava na tabor",
-        "proč nefunguje sleva v šabloně?",
-        "Issue concerning discount"
-      ]
-    },
-    {
+      "feature_id": "data-import",
       "topic": "Data import",
       "product_area": "Clients",
-      "ticket_count": 4,
+      "ticket_count": 14,
       "sample_subjects": [
         "Import klientů",
-        "Migrácia zo všetkých účtov do účtu online",
-        "Offline do Online",
-        "Online"
+        "Import platieb",
+        "Platby - nespárování a další postřehy, otázky",
+        "Dvojnasobne sparovana platba",
+        "import"
       ]
     },
     {
-      "topic": "Documents (general)",
-      "product_area": "Settings",
-      "ticket_count": 3,
+      "feature_id": "refunds",
+      "topic": "Refunds & credit notes",
+      "product_area": "Payments",
+      "ticket_count": 13,
       "sample_subjects": [
-        "BB SVK - klientka nema videov profile",
-        "BB BA - pridavanie videa na skupinu -otazky",
-        "Dynamické dokumenty"
+        "Permanentky - připisování a odečítání částek manuálně?",
+        "Platby - nespárování a další postřehy, otázky",
+        "Storno podmienky zmena vety",
+        "Refundácia",
+        "Dvojitá platba"
       ]
     },
     {
-      "topic": "Products (general)",
-      "product_area": "Orders",
-      "ticket_count": 2,
+      "feature_id": "gocardless",
+      "topic": "GoCardless / direct debit",
+      "product_area": "Payments",
+      "ticket_count": 9,
       "sample_subjects": [
-        "Ako zistim, alebo kde jasne vidim kolko vstup z perpanentky klient iz minul a kedy presne?",
-        "Dotaz na PRO"
+        "dobry den, uz je mozne v zooze parovat ucet cez gocardless?",
+        "párovanie platieb",
+        "Problem s neprijatymi platbami – GoCardless",
+        "Platby neprechádzajú do všetkých účtov MBA",
+        "odparovanie CSOB notifikacii"
       ]
     },
     {
+      "feature_id": "discounts",
+      "topic": "Discounts & promo codes",
+      "product_area": "Payments",
+      "ticket_count": 9,
+      "sample_subjects": [
+        "Vieme nastavit zlavu odstupnovanu podla hodin?",
+        "Nastavenie cien",
+        "zlava sa nezobrazuje v registracnom formulari",
+        "Reporty",
+        "zlava na tabor"
+      ]
+    },
+    {
+      "feature_id": "waiting-list",
+      "topic": "Waiting list & interested",
+      "product_area": "Bookings",
+      "ticket_count": 4,
+      "sample_subjects": [
+        "Subject: Inquiry About Automatic Bank Pairing Opti",
+        "otazka ohaldom registracii",
+        "pridanie šablón do kurzu",
+        "Partnership"
+      ]
+    },
+    {
+      "feature_id": "whatsapp",
       "topic": "WhatsApp integration",
       "product_area": "Communication",
       "ticket_count": 2,
       "sample_subjects": [
-        "Whatsapp",
-        "What s up for Bussiness"
+        "rôzne",
+        "Whatsapp"
       ]
     }
   ]

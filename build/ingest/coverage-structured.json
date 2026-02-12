@@ -1,258 +1,581 @@
 {
   "gaps": [
     {
+      "feature_id": "attendance",
       "topic": "Attendance tracking",
       "product_area": "Programmes",
-      "ticket_count": 35,
+      "ticket_count": 115,
       "sample_subjects": [
-        "how to add a student to a different course for a replacement lesson",
-        "nahradne hodiny",
-        "Kalendar",
-        "ráno prihlásenie na náhradu",
-        "Chybné hlásenie o dátume v notifikácii"
+        "Dochadzka - viditelnost udajov",
+        "PODNET dochadzka",
+        "Statistika",
+        "Nefungujuca Dochadzke u klientky",
+        "NEW - notifikacia o nezapisani dochadzky"
       ],
-      "matching_articles": []
+      "coverage": "gap",
+      "kb_articles": [],
+      "note": "115 tickets. Zero KB articles. Major gap."
     },
     {
-      "topic": "Calendar (general)",
+      "feature_id": "schedule",
+      "topic": "Schedule / timetable",
       "product_area": "Calendar",
-      "ticket_count": 9,
+      "ticket_count": 77,
       "sample_subjects": [
-        "Nezobrazuji se mi lekce v kalendari a nechodi lektorce pozadavek o dochazku",
-        "Prosím o opravení chyby v zobrazování Denního přehledu",
-        "Otvorene kurzy",
-        "Online vyuka",
-        "Prosba"
+        "Sorting the groups after name",
+        "Kalendar",
+        "Nezobrazuje klientke registracny formular na webe",
+        "členské - nezrovnalost?",
+        "Filtrovanie podľa lokalít"
       ],
-      "matching_articles": []
+      "coverage": "gap",
+      "kb_articles": [],
+      "note": "No schedule/timetable management article."
+    },
+    {
+      "feature_id": "login-access",
+      "topic": "Login & account access",
+      "product_area": "Settings",
+      "ticket_count": 41,
+      "sample_subjects": [
+        "Zakaznicka sa nevie dostat do profilu",
+        "pripomienky na presunutý termín nechodia",
+        "Dobry den, klient Anton Duran sa nevie prihlasit, stale mu vyhadzuje, ze prihlasenie sa nepodarilo.",
+        "Registracia z webu jazykovky a login do Zooza support webu",
+        "Nainštalovanie skriptov na web -https://www.kidsacademy.sk/kontakt/"
+      ],
+      "coverage": "gap",
+      "kb_articles": [],
+      "note": "Closest is how-to-clear-your-cache which is not login help. Need: password reset, account access, inviting users."
+    },
+    {
+      "feature_id": "refunds",
+      "topic": "Refunds & credit notes",
+      "product_area": "Payments",
+      "ticket_count": 13,
+      "sample_subjects": [
+        "Permanentky - připisování a odečítání částek manuálně?",
+        "Platby - nespárování a další postřehy, otázky",
+        "Storno podmienky zmena vety",
+        "Refundácia",
+        "Dvojitá platba"
+      ],
+      "coverage": "gap",
+      "kb_articles": [],
+      "note": "No refund/credit note workflow article. Only passing mentions."
+    }
+  ],
+  "depth_gaps": [
+    {
+      "feature_id": "replacements-makeups",
+      "topic": "Make-up / replacement lessons",
+      "product_area": "Bookings",
+      "ticket_count": 151,
+      "sample_subjects": [
+        "statistika omluvených a náhradních hodin",
+        "Ahoj, keď sa klient odhlasuje z náhradnej hodiny dostane túto hlášku aj keď máme povolené, aby sa z náhradnej hodiny odh",
+        "test Prosim neviem nastavit nahradne hodiny na kurze",
+        "Náhradky",
+        "pocet nahradnych hodin u klientky"
+      ],
+      "coverage": "depth-gap",
+      "kb_articles": [
+        "common-booking-scenarios"
+      ],
+      "note": "144+ tickets. Only Q7 in FAQ mentions make-ups (one paragraph). Needs dedicated guide."
+    },
+    {
+      "feature_id": "calendar",
+      "topic": "Calendar views & management",
+      "product_area": "Calendar",
+      "ticket_count": 134,
+      "sample_subjects": [
+        "BB lektor/kalendar vyvoj",
+        "Kalendar",
+        "Kopírovanie skupiniek",
+        "pridat klienta do terminu skupiny",
+        "NEW - notifikacia o nezapisani dochadzky"
+      ],
+      "coverage": "depth-gap",
+      "kb_articles": [
+        "holiday-settings"
+      ],
+      "note": "134 tickets vs 1 article that only covers holidays. No calendar views, scheduling, rescheduling guide."
     }
   ],
   "partial": [
     {
-      "topic": "Dynamic tags in messages",
-      "product_area": "Communication",
-      "ticket_count": 21,
+      "feature_id": "groups-classes",
+      "topic": "Groups & classes setup",
+      "product_area": "Classes",
+      "ticket_count": 310,
       "sample_subjects": [
-        "KURZ - ENGLISH COURSE - KIDS- IND. - Barmoš Mateo EN 23",
-        "do sablony spav sa nenatahuje dynamicka znacka",
-        "Odhlásenie z hodiny prebehlo úspešne",
-        "Zobrazenie názvu kurzu v poradovníku na náhradné hodiny a v dochádzke",
-        "Formát ceny kurzu"
+        "Dochadzka - viditelnost udajov",
+        "Sorting the groups after name",
+        "Statistika",
+        "Nejde mi vybrať lektorka na skupinu",
+        "Export registrácií"
       ],
-      "matching_articles": [
-        {
-          "title": "Dynamic tags",
-          "slug": "dynamic-tags",
-          "score": 4
-        }
-      ]
+      "coverage": "partial",
+      "kb_articles": [
+        "blocks-creation",
+        "edit-events-in-courses",
+        "two-lecturers-per-group"
+      ],
+      "note": "blocks-creation covers blocks only. No general 'create a group/class' guide."
+    },
+    {
+      "feature_id": "payments-general",
+      "topic": "Payments (general setup & config)",
+      "product_area": "Payments",
+      "ticket_count": 291,
+      "sample_subjects": [
+        "Dobrý den, mám teď konkrétní případ, kdy mi nejdou propojit registrace, aby se mi odečetla platba. Paní Blanka Kapsia, r",
+        "Nastavenie platieb - vypocet alikvotnej ciastky",
+        "FA do učtovnictva",
+        "Nespárování platby",
+        "Ako riesit duplicitne nahranie platby?"
+      ],
+      "coverage": "partial",
+      "kb_articles": [
+        "payment-options",
+        "payment-tile-on-registration",
+        "edit-payment-on-registration",
+        "payment-labels-drawers",
+        "zooza-billing-payments"
+      ],
+      "note": "Setup covered well, but no troubleshooting (failed payments, recovery, declined cards)."
+    },
+    {
+      "feature_id": "lessons-events",
+      "topic": "Lessons & events management",
+      "product_area": "Calendar",
+      "ticket_count": 182,
+      "sample_subjects": [
+        "Ahoj, keď sa klient odhlasuje z náhradnej hodiny dostane túto hlášku aj keď máme povolené, aby sa z náhradnej hodiny odh",
+        "test Prosim neviem nastavit nahradne hodiny na kurze",
+        "Náhradky",
+        "pocet nahradnych hodin u klientky",
+        "PReco p.Kokoska stale figuruje ako Aktivny klient?"
+      ],
+      "coverage": "partial",
+      "kb_articles": [
+        "edit-events-in-courses",
+        "how-to-create-paid-events",
+        "viewing-billable-events"
+      ],
+      "note": "Event editing covered. No general 'managing lessons' overview."
+    },
+    {
+      "feature_id": "capacity",
+      "topic": "Capacity & participant limits",
+      "product_area": "Programmes",
+      "ticket_count": 101,
+      "sample_subjects": [
+        "Ako odtranim - skryjem otáznik zo zoozy",
+        "Kopirovanie klienta uz do realizovanej hodiny",
+        "Registracia z webu jazykovky a login do Zooza support webu",
+        "dashboard klienta - zobraziť náhrady",
+        "Filtrovanie podľa lokalít"
+      ],
+      "coverage": "partial",
+      "kb_articles": [
+        "course-settings",
+        "allowing-multiple-registration"
+      ],
+      "note": "Capacity is a setting inside course config, not its own article. Common question deserves explicit section."
+    },
+    {
+      "feature_id": "pricing",
+      "topic": "Pricing & fee setup",
+      "product_area": "Payments",
+      "ticket_count": 77,
+      "sample_subjects": [
+        "nastavenie sumy v registracnom formulari pre webinar",
+        "Zooza Asistentka",
+        "Pripomienkove emaily",
+        "217925 / oprava ceny",
+        "Rozšírená verzia cenníka Zooza pre vás"
+      ],
+      "coverage": "partial",
+      "kb_articles": [
+        "payment-options",
+        "payment-templates-creation"
+      ],
+      "note": "Price config is spread across multiple articles. No single 'how to set pricing' guide."
+    },
+    {
+      "feature_id": "transfers",
+      "topic": "Transfers between courses",
+      "product_area": "Bookings",
+      "ticket_count": 59,
+      "sample_subjects": [
+        "pridat klienta do terminu skupiny",
+        "pripomienky na presunutý termín nechodia",
+        "Presunuty klient na dochadzke oboch terminov skupiny",
+        "Presun registracie do ineho kurzu",
+        "komunikácia s klientami"
+      ],
+      "coverage": "partial",
+      "kb_articles": [
+        "common-booking-scenarios"
+      ],
+      "note": "Transfers mentioned briefly in booking scenarios. No step-by-step guide."
+    },
+    {
+      "feature_id": "registration-form",
+      "topic": "Registration form config",
+      "product_area": "Widgets",
+      "ticket_count": 50,
+      "sample_subjects": [
+        "nastavenie sumy v registracnom formulari pre webinar",
+        "Nezobrazuje klientke registracny formular na webe",
+        "Platenie našich klientov",
+        "členské - nezrovnalost?",
+        "Filtrovanie podľa lokalít"
+      ],
+      "coverage": "partial",
+      "kb_articles": [
+        "online-registration",
+        "customizing-widgets"
+      ],
+      "note": "Setup covered. No troubleshooting (form not showing, validation errors)."
+    },
+    {
+      "feature_id": "data-export",
+      "topic": "Data export & reports",
+      "product_area": "Settings",
+      "ticket_count": 29,
+      "sample_subjects": [
+        "Export registrácií",
+        "Doplnenie do reportov (export excel)",
+        "Report s verejnou poznámkou",
+        "Export clients",
+        "Platby - nespárování a další postřehy, otázky"
+      ],
+      "coverage": "partial",
+      "kb_articles": [
+        "power-bi-integration",
+        "power-bi-data-description"
+      ],
+      "note": "Power BI covered. No guide for simple CSV/Excel export."
+    },
+    {
+      "feature_id": "blocks-terms",
+      "topic": "Blocks & terms / semesters",
+      "product_area": "Classes",
+      "ticket_count": 29,
+      "sample_subjects": [
+        "Prosba o pridanie platobnej šabloný",
+        "Hodnotenie kurzov",
+        "Vytvorenie termínu - BLOK",
+        "Rozdiely v registračnom formulári",
+        "Upomienky"
+      ],
+      "coverage": "partial",
+      "kb_articles": [
+        "blocks-creation",
+        "billing-periods"
+      ],
+      "note": "Blocks covered. Term/semester lifecycle not clearly documented."
+    },
+    {
+      "feature_id": "widgets",
+      "topic": "Widgets & website embedding",
+      "product_area": "Widgets",
+      "ticket_count": 19,
+      "sample_subjects": [
+        "Website display",
+        "Dobrý deň neukazuje mi na webstránke v časti Kalendár nedeľné kurzy ostatné dni ano ale nedľu nevidim. Viete sa na to po",
+        "Užívateľský profil - zobrazovanie profilu",
+        "Presunutie registrácie",
+        "Widety"
+      ],
+      "coverage": "partial",
+      "kb_articles": [
+        "customizing-widgets",
+        "deploying-zooza-on-website",
+        "zooza-sites"
+      ],
+      "note": "Setup/deployment covered. No troubleshooting (widget not showing, mobile issues)."
+    },
+    {
+      "feature_id": "sms",
+      "topic": "SMS messaging",
+      "product_area": "Communication",
+      "ticket_count": 17,
+      "sample_subjects": [
+        "Dofakturácia služieb SMS",
+        "Chyba systemu",
+        "navrh na upravu komunikacie",
+        "Odoslane SMS neboli dorucene",
+        "Notifikácie VUB - párovanie platieb"
+      ],
+      "coverage": "partial",
+      "kb_articles": [
+        "sending-email-sms"
+      ],
+      "note": "SMS mentioned alongside email. No dedicated SMS setup/troubleshooting."
+    },
+    {
+      "feature_id": "branding",
+      "topic": "Branding & visual customization",
+      "product_area": "Settings",
+      "ticket_count": 15,
+      "sample_subjects": [
+        "Logo not displaying correctly",
+        "Logo v maili",
+        "Doplnenie do reportov (export excel)",
+        "Ako funguje stranka, kde mam vidiet svoje tiskety? Po nalogovani tam ziadne nevidim",
+        "Prehľadný rozpis zaplatených a nezaplatených splátok"
+      ],
+      "coverage": "partial",
+      "kb_articles": [
+        "company-logo-email",
+        "customizing-widgets"
+      ],
+      "note": "Logo in email covered. No general branding/theme guide."
     }
   ],
   "covered": [
     {
-      "topic": "Payment issues",
-      "ticket_count": 167,
-      "top_match": "zooza-billing-payments"
+      "feature_id": "registrations",
+      "topic": "Registration & booking flow",
+      "ticket_count": 586,
+      "kb_articles": [
+        "online-registration",
+        "types-of-registrations",
+        "linked-registrations",
+        "late-registrations",
+        "business-registration",
+        "allowing-multiple-registration"
+      ]
     },
     {
-      "topic": "Registration / booking flow",
-      "ticket_count": 151,
-      "top_match": "online-registration"
+      "feature_id": "clients",
+      "topic": "Client management (general)",
+      "ticket_count": 514,
+      "kb_articles": [
+        "data-correction-change-client",
+        "personas",
+        "client-import"
+      ]
     },
     {
-      "topic": "Make-up lessons / replacements",
-      "ticket_count": 104,
-      "top_match": "common-booking-scenarios"
-    },
-    {
-      "topic": "Communication & notifications",
-      "ticket_count": 96,
-      "top_match": "sending-email-sms"
-    },
-    {
-      "topic": "Widget setup & customization",
-      "ticket_count": 94,
-      "top_match": "customizing-widgets"
-    },
-    {
-      "topic": "Payment schedules & plans",
-      "ticket_count": 71,
-      "top_match": "billing-periods"
-    },
-    {
-      "topic": "Billing periods / terms",
-      "ticket_count": 59,
-      "top_match": "billing-periods"
-    },
-    {
-      "topic": "Parent portal & profiles",
-      "ticket_count": 58,
-      "top_match": "parent-profile-dashboard"
-    },
-    {
-      "topic": "Registration form configuration",
-      "ticket_count": 54,
-      "top_match": "online-registration"
-    },
-    {
-      "topic": "Groups / classes",
-      "ticket_count": 53,
-      "top_match": "blocks-creation"
-    },
-    {
+      "feature_id": "courses",
       "topic": "Course / programme setup",
-      "ticket_count": 49,
-      "top_match": "open-course-creation"
+      "ticket_count": 448,
+      "kb_articles": [
+        "course-settings",
+        "course-settings-tile",
+        "course-group-lesson-definition",
+        "open-course-creation",
+        "summer-camps-creation",
+        "getting-started-with-zooza",
+        "new-course-existing-clients"
+      ]
     },
     {
-      "topic": "Courses (general)",
-      "ticket_count": 48,
-      "top_match": "edit-events-in-courses"
+      "feature_id": "email-messages",
+      "topic": "Email & messaging",
+      "ticket_count": 426,
+      "kb_articles": [
+        "sending-email-sms",
+        "send-email-after-event",
+        "message-templates",
+        "company-logo-email",
+        "emails-in-primary-inbox"
+      ]
     },
     {
-      "topic": "Notifications",
-      "ticket_count": 48,
-      "top_match": "automatic-event-notification"
+      "feature_id": "profiles-accounts",
+      "topic": "Client profiles & accounts",
+      "ticket_count": 185,
+      "kb_articles": [
+        "parent-profile-dashboard",
+        "parent-portal-101"
+      ]
     },
     {
-      "topic": "Calendar management",
-      "ticket_count": 47,
-      "top_match": "holiday-settings"
+      "feature_id": "parent-portal",
+      "topic": "Parent portal & self-service",
+      "ticket_count": 123,
+      "kb_articles": [
+        "parent-portal-101",
+        "parent-profile-dashboard"
+      ]
     },
     {
-      "topic": "General settings",
-      "ticket_count": 43,
-      "top_match": "holiday-settings"
+      "feature_id": "instructors",
+      "topic": "Instructor / lecturer management",
+      "ticket_count": 120,
+      "kb_articles": [
+        "zooza-101-instructors",
+        "change-instructor",
+        "lecturer-substitution",
+        "lecturers-working-hours",
+        "instructor-rate-reward"
+      ]
     },
     {
-      "topic": "Invoicing integrations",
-      "ticket_count": 42,
-      "top_match": "smartbill-invoices"
-    },
-    {
-      "topic": "Email sending",
-      "ticket_count": 41,
-      "top_match": "sending-email-sms"
-    },
-    {
-      "topic": "Settings (general)",
-      "ticket_count": 38,
-      "top_match": "holiday-settings"
-    },
-    {
-      "topic": "Instructor management",
-      "ticket_count": 38,
-      "top_match": "lecturer-substitution"
-    },
-    {
-      "topic": "Payments (general)",
-      "ticket_count": 33,
-      "top_match": "zooza-billing-payments"
-    },
-    {
-      "topic": "Client management",
-      "ticket_count": 33,
-      "top_match": "client-import"
-    },
-    {
-      "topic": "Login & access",
-      "ticket_count": 30,
-      "top_match": "how-to-clear-your-cache"
-    },
-    {
+      "feature_id": "consents-gdpr",
       "topic": "GTC / GDPR consents",
-      "ticket_count": 26,
-      "top_match": "setting-gtc-gdpr-consents"
+      "ticket_count": 110,
+      "kb_articles": [
+        "setting-gtc-gdpr-consents"
+      ]
     },
     {
-      "topic": "Parent portal",
-      "ticket_count": 26,
-      "top_match": "parent-portal-101"
+      "feature_id": "invoices",
+      "topic": "Invoicing & invoice integrations",
+      "ticket_count": 80,
+      "kb_articles": [
+        "xero-integration",
+        "abra-flexi-invoices",
+        "szamlazz-invoices",
+        "smartbill-invoices"
+      ]
     },
     {
-      "topic": "GoCardless direct debit",
-      "ticket_count": 22,
-      "top_match": "gocardless-direct-debit-mandates"
+      "feature_id": "message-templates",
+      "topic": "Message templates",
+      "ticket_count": 78,
+      "kb_articles": [
+        "message-templates",
+        "edit-event-notification-template",
+        "template-title"
+      ]
     },
     {
-      "topic": "Transfer between courses",
-      "ticket_count": 21,
-      "top_match": "common-booking-scenarios"
+      "feature_id": "payment-schedules",
+      "topic": "Payment schedules & instalment plans",
+      "ticket_count": 64,
+      "kb_articles": [
+        "payment-templates-creation",
+        "billing-periods"
+      ]
     },
     {
+      "feature_id": "reports-analytics",
       "topic": "Reports & analytics",
-      "ticket_count": 21,
-      "top_match": "power-bi-integration"
+      "ticket_count": 57,
+      "kb_articles": [
+        "power-bi-integration",
+        "power-bi-data-description"
+      ]
     },
     {
-      "topic": "Clients (general)",
-      "ticket_count": 18,
-      "top_match": "new-course-existing-clients"
+      "feature_id": "notifications",
+      "topic": "Notifications & alerts",
+      "ticket_count": 55,
+      "kb_articles": [
+        "notifications-center",
+        "automatic-event-notification",
+        "edit-event-notification-template",
+        "automatic-payment-reminders"
+      ]
     },
     {
+      "feature_id": "outstanding-payments",
+      "topic": "Outstanding amounts / debt",
+      "ticket_count": 51,
+      "kb_articles": [
+        "outstanding-amount"
+      ]
+    },
+    {
+      "feature_id": "payment-pairing",
+      "topic": "Payment pairing / matching",
+      "ticket_count": 43,
+      "kb_articles": [
+        "payment-pairing"
+      ]
+    },
+    {
+      "feature_id": "dynamic-tags",
+      "topic": "Dynamic tags in messages",
+      "ticket_count": 30,
+      "kb_articles": [
+        "dynamic-tags"
+      ]
+    },
+    {
+      "feature_id": "user-roles",
+      "topic": "User roles & permissions",
+      "ticket_count": 28,
+      "kb_articles": [
+        "user-roles"
+      ]
+    },
+    {
+      "feature_id": "documents",
+      "topic": "Documents & attachments",
+      "ticket_count": 24,
+      "kb_articles": [
+        "documents"
+      ]
+    },
+    {
+      "feature_id": "trial-lessons",
       "topic": "Trial lessons",
-      "ticket_count": 15,
-      "top_match": "trial-lessons"
+      "ticket_count": 19,
+      "kb_articles": [
+        "trial-lessons",
+        "trials-daily-business",
+        "individual-lessons-with-free-lesson"
+      ]
     },
     {
-      "topic": "Waiting list",
-      "ticket_count": 14,
-      "top_match": "group-interested"
+      "feature_id": "holidays",
+      "topic": "Holidays & days off",
+      "ticket_count": 18,
+      "kb_articles": [
+        "holiday-settings"
+      ]
     },
     {
-      "topic": "Products / merchandise",
-      "ticket_count": 10,
-      "top_match": "selling-products-during-registration"
-    },
-    {
-      "topic": "Data export",
-      "ticket_count": 9,
-      "top_match": "power-bi-integration"
-    },
-    {
-      "topic": "SMS messaging",
-      "ticket_count": 8,
-      "top_match": "sending-email-sms"
-    },
-    {
-      "topic": "Lecturers (general)",
-      "ticket_count": 8,
-      "top_match": "lecturers-working-hours"
-    },
-    {
-      "topic": "Documents management",
-      "ticket_count": 8,
-      "top_match": "documents"
-    },
-    {
-      "topic": "Communication (general)",
-      "ticket_count": 8,
-      "top_match": "message-templates"
-    },
-    {
-      "topic": "Discounts & promo codes",
-      "ticket_count": 5,
-      "top_match": "discount-code"
-    },
-    {
+      "feature_id": "data-import",
       "topic": "Data import",
+      "ticket_count": 14,
+      "kb_articles": [
+        "client-import"
+      ]
+    },
+    {
+      "feature_id": "gocardless",
+      "topic": "GoCardless / direct debit",
+      "ticket_count": 9,
+      "kb_articles": [
+        "gocardless-direct-debit-mandates"
+      ]
+    },
+    {
+      "feature_id": "discounts",
+      "topic": "Discounts & promo codes",
+      "ticket_count": 9,
+      "kb_articles": [
+        "discount-code",
+        "discount-types"
+      ]
+    },
+    {
+      "feature_id": "waiting-list",
+      "topic": "Waiting list & interested",
       "ticket_count": 4,
-      "top_match": "client-import"
+      "kb_articles": [
+        "group-interested",
+        "individual-lessons-group-interested"
+      ]
     },
     {
-      "topic": "Documents (general)",
-      "ticket_count": 3,
-      "top_match": "documents"
-    },
-    {
-      "topic": "Products (general)",
-      "ticket_count": 2,
-      "top_match": "selling-products-during-registration"
-    },
-    {
+      "feature_id": "whatsapp",
       "topic": "WhatsApp integration",
       "ticket_count": 2,
-      "top_match": "whatsapp-faq"
+      "kb_articles": [
+        "whatsapp-integration",
+        "whatsapp-faq",
+        "whatsapp-troubleshooting"
+      ]
     }
   ],
   "kb_articles": [
