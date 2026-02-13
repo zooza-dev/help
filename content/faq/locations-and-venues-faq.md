@@ -11,6 +11,8 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-12"
+intercom_id: 13725607
+intercom_sync: false
 ---
 
 # Locations and Venues FAQ

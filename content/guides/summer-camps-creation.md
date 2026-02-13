@@ -9,7 +9,7 @@ tags: []
 status: "published"
 source_legacy_path: "legacy/0050_Welcome to Zooza.html"
 source_language: "en"
-needs_screenshot_replacement: false
+needs_screenshot_replacement: true
 last_converted: "2026-02-11"
 ---
 
@@ -93,7 +93,7 @@ course, and start creating a specific group of children who will attend a
  specific week,
 
 
-![Screenshot](../../assets/images/summer-camps-creation-07.png)
+<!-- TODO: missing screenshot summer-camps-creation-07.png -->
 
 1. Fill in the name of the group – if the topics change from one tour
 to another. For example, one week will be a camp focused on the theme of *Space* so name the specific group/tour. If you have all the
@@ -143,7 +143,7 @@ stay in the camp. For example 480 minutes if it is 8 hours. The end time
 5. Choose a repetition count of 5 if you are creating weekly rounds for days Monday through Friday
 6. The terms will be automatically displayed and when you are satisfied with them, click on “OK” and then on “Create terms”
 
-![Screenshot](../../assets/images/summer-camps-creation-09.png)
+<!-- TODO: missing screenshot summer-camps-creation-09.png -->
 
 ## Other course settings
 

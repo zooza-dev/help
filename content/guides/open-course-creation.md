@@ -9,7 +9,7 @@ tags: []
 status: "published"
 source_legacy_path: "legacy/0051_Welcome to Zooza.html"
 source_language: "en"
-needs_screenshot_replacement: false
+needs_screenshot_replacement: true
 last_converted: "2026-02-11"
 ---
 
@@ -96,7 +96,7 @@ signing in via your website. He will then be shown a list of the courses
 attended or unregistered (if he/she has not attended or has not
 registered for any terms, this list will be displayed as empty).
 
-![Screenshot](../../assets/images/open-course-creation-10.png)
+<!-- TODO: missing screenshot open-course-creation-10.png -->
 
 ![Screenshot](../../assets/images/open-course-creation-11.png)
 
@@ -113,7 +113,7 @@ automatically generated. The client can find the payment details and its
  status in the *Payments *tab within their profile.
  ![Screenshot](../../assets/images/open-course-creation-14.png)
 
-![Screenshot](../../assets/images/open-course-creation-15.png)
+<!-- TODO: missing screenshot open-course-creation-15.png -->
 
 ![Screenshot](../../assets/images/discount-code-01.png)
 
