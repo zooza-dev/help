@@ -11,6 +11,8 @@ source_legacy_path: "legacy/0007_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-02-11"
+intercom_id: 13725834
+intercom_sync: false
 ---
 
 # Automatic communication to clients / Message templates

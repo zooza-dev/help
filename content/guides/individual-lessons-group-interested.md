@@ -11,6 +11,8 @@ source_legacy_path: "legacy/0035_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
+intercom_id: 13725822
+intercom_sync: false
 ---
 
 # Individual lessons via group Interested

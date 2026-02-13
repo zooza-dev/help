@@ -11,6 +11,8 @@ source_legacy_path: "legacy/0084_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
+intercom_id: 13725846
+intercom_sync: false
 ---
 
 # Payment Pairing for Bank Transfers & Direct Debit

@@ -10,7 +10,8 @@
       "Bash(find:*)",
       "Bash(sips:*)",
       "Bash(ls:*)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(cat:*)"
     ]
   }
 }

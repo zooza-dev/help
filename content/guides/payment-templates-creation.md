@@ -94,7 +94,7 @@ A When using a frequency based on a number of attended sessions:
 
 Save the template by clicking the *Save button.*
 
-![Screenshot](../../assets/images/allowing-multiple-registration-03.png/)
+![Screenshot](../../assets/images/allowing-multiple-registration-03.png)
 
 Note: If you use discounted payment templates, you can find a clear list of them in the Payments - Discounts section.
 
@@ -256,7 +256,7 @@ The payment schedule entered in this way will be automatically reflected in the 
 
 If you have multiple registrations with active payment templates, use the *Payments - Installments Overview* section for a better overview of the next installments issued.
 
-![Screenshot](../../assets/images/allowing-multiple-registration-03.png/)
+![Screenshot](../../assets/images/allowing-multiple-registration-03.png)
 
 This way you can quickly and easily track all active payments from the date you have selected.
 
