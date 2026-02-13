@@ -17,14 +17,14 @@ Analysis of 5 months of support conversations reveals **12 major topic gaps** an
 
 ### Priority 1 — High Volume, No FAQ
 
-| # | Proposed FAQ | Tickets | Product Area | Rationale |
-|---|---|---|---|---|
-| 1 | **Replacement Hours FAQ** | 32+ | Calendar | Top non-payment pain point. No FAQ exists. Covers: eligibility rules, cross-company replacements, capacity, credit expiry, "sign back up" button. |
-| 2 | **GoCardless FAQ** | 9 | Payments | 90-day connection expiry, bank-specific issues (SLSP, Tatra), renewal process, email-pairing alternative. Existing guide covers setup only, not lifecycle. |
-| 3 | **Roles and Permissions FAQ** | 10 | Settings | Which role for which use case, hiding pay rates, menu visibility by role. Existing FAQ covers instructor login only, not role selection. |
-| 4 | **Blocks (Term Segments) FAQ** | 9 | Programmes | Capacity per block, interaction with trials, dynamic tags, attendance visibility after block change. Completely undocumented. |
-| 5 | **Orders and Products FAQ** | 8 | Orders | Unpaid order tracking, QR codes on product emails, voucher/pass management, dynamic tags not working in orders. Zero FAQ coverage for Orders product area. |
-| 6 | **Client Management FAQ** | 14 | Clients | Manual client creation, changing client on registration, merging duplicates, email changes. Zero FAQ coverage for Clients product area. |
+| #   | Proposed FAQ                   | Tickets | Product Area | Rationale                                                                                                                                                  |
+| --- | ------------------------------ | ------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | **Replacement Hours FAQ**      | 32+     | Calendar     | Top non-payment pain point. No FAQ exists. Covers: eligibility rules, cross-company replacements, capacity, credit expiry, "sign back up" button.          |
+| 2   | **GoCardless FAQ**             | 9       | Payments     | 90-day connection expiry, bank-specific issues (SLSP, Tatra), renewal process, email-pairing alternative. Existing guide covers setup only, not lifecycle. |
+| 3   | **Roles and Permissions FAQ**  | 10      | Settings     | Which role for which use case, hiding pay rates, menu visibility by role. Existing FAQ covers instructor login only, not role selection.                   |
+| 4   | **Blocks (Term Segments) FAQ** | 9       | Programmes   | Capacity per block, interaction with trials, dynamic tags, attendance visibility after block change. Completely undocumented.                              |
+| 5   | **Orders and Products FAQ**    | 8       | Orders       | Unpaid order tracking, QR codes on product emails, voucher/pass management, dynamic tags not working in orders. Zero FAQ coverage for Orders product area. |
+| 6   | **Client Management FAQ**      | 14      | Clients      | Manual client creation, changing client on registration, merging duplicates, email changes. Zero FAQ coverage for Clients product area.                    |
 
 ### Priority 2 — Medium Volume, No FAQ
 
