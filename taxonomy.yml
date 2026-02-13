@@ -17,8 +17,13 @@ doc_types:
   - id: faq
     label: FAQ
     description: Short Q/A entries grouped by topic.
+  - id: reference
+    label: Reference
+    description: Screen-by-screen app reference — UI elements, fields, actions.
 
 product_areas:
+  - id: dashboard
+    label: Dashboard
   - id: programmes
     label: Programmes
   - id: classes
@@ -71,3 +76,5 @@ tags:
   - widgets
   - email
   - whatsapp
+  - reference
+  - ui-reference

@@ -6,7 +6,10 @@
       "Bash(python3 -m venv:*)",
       "Bash(source:*)",
       "Bash(python scripts/export/export_all.py:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(find:*)",
+      "Bash(sips:*)",
+      "Bash(ls:*)"
     ]
   }
 }
