@@ -1,900 +1,153 @@
-# Knowledge Base Validation Report
+# Validation Report
 
-Content directory: /Users/michaldodok/help/content
+**Generated:** 2026-02-13
+**Scope:** All `.md` files in `content/` (excluding `_shared/` and `_`-prefixed files)
+**Total files validated:** 126
 
 ## Summary
 
-- Total markdown files found: 85
-- Files processed: 85
-- Frontmatter missing: 0
-- Missing required fields: 0
-- Duplicate slugs: 0
-- Multiple/no H1: 0
-- Skipped heading levels: 3
-- Broken internal links: 0
-- Missing assets: 686
-- Invalid doc types: 0
-- Invalid product areas: 85
-- Invalid status values: 0
-- Invalid audiences: 0
+| Check                          | Status | Issues |
+|-------------------------------|--------|--------|
+| Required frontmatter fields   | PASS   | 0      |
+| Unique slugs                  | PASS   | 0      |
+| Unique intercom_id values     | PASS   | 0      |
+| Exactly one H1 per doc        | PASS   | 0      |
+| No skipped heading levels     | FAIL   | 1 file (2 occurrences) |
+| No broken internal links      | PASS   | 0      |
+| All referenced assets exist   | FAIL   | 38 missing assets across 9 files |
 
-## Validation Result: FAILED
+**Overall: FAIL** (2 check categories have issues)
 
-Total issues found: 774
+---
 
-## Skipped Heading Levels
+## 1. Required Frontmatter Fields
 
-- guides/change-instructor.md:
-  - Skipped from H1 to H3
-- guides/gocardless-direct-debit-mandates.md:
-  - Skipped from H1 to H3
-- troubleshooting/how-to-clear-your-cache.md:
-  - Skipped from H1 to H3
+**Status: PASS**
 
-## Missing Assets
+All 126 files contain the required frontmatter fields: `title`, `slug`, `type`, `product_area`, `audience`, `tags`, `status`, `source_legacy_path`, `source_language`, `needs_screenshot_replacement`, `last_converted`.
 
-- faq/common-booking-scenarios.md: missing asset '../../assets/images/common-booking-scenarios-01.png'
-- faq/common-booking-scenarios.md: missing asset '../../assets/images/common-booking-scenarios-02.png'
-- faq/common-booking-scenarios.md: missing asset '../../assets/images/common-booking-scenarios-03.png'
-- guides/allowing-multiple-registration.md: missing asset '../../assets/images/allowing-multiple-registration-01.png'
-- guides/allowing-multiple-registration.md: missing asset '../../assets/images/allowing-multiple-registration-02.jpg'
-- guides/allowing-multiple-registration.md: missing asset '../../assets/images/allowing-multiple-registration-03.png'
-- guides/allowing-multiple-registration.md: missing asset '../../assets/images/allowing-multiple-registration-04.png'
-- guides/allowing-multiple-registration.md: missing asset '../../assets/images/allowing-multiple-registration-05.png'
-- guides/automatic-event-notification.md: missing asset '../../assets/images/add-new-template-button.png "Add new template button in notifications section"'
-- guides/automatic-event-notification.md: missing asset '../../assets/images/assigning-custom-template-course.png "Selecting a custom notification template for a course"'
-- guides/automatic-event-notification.md: missing asset '../../assets/images/sample-event-reminder-email.png "Sample event reminder email"'
-- guides/automatic-event-notification.md: missing asset '../../assets/images/turning-off-event-notifications.png "Turning off event notifications in course settings"'
-- guides/automatic-payment-reminders-detailed.md: missing asset '../../assets/images/allowing-multiple-registration-03.png'
-- guides/automatic-payment-reminders-detailed.md: missing asset '../../assets/images/allowing-multiple-registration-04.png'
-- guides/automatic-payment-reminders-detailed.md: missing asset '../../assets/images/automatic-payment-reminders-detailed-02.png'
-- guides/automatic-payment-reminders-detailed.md: missing asset '../../assets/images/automatic-payment-reminders-detailed-03.png'
-- guides/automatic-payment-reminders-detailed.md: missing asset '../../assets/images/automatic-payment-reminders-detailed-04.png'
-- guides/automatic-payment-reminders-detailed.md: missing asset '../../assets/images/automatic-payment-reminders-detailed-06.png'
-- guides/automatic-payment-reminders.md: missing asset '../../assets/images/payment-due-date-settings.png "Payment due date settings"'
-- guides/automatic-payment-reminders.md: missing asset '../../assets/images/payment-reminder-settings.png "Payment reminder settings"'
-- guides/blocks-creation.md: missing asset '../../assets/images/blocks-creation-01.png'
-- guides/blocks-creation.md: missing asset '../../assets/images/blocks-creation-02.png'
-- guides/blocks-creation.md: missing asset '../../assets/images/blocks-creation-03.png'
-- guides/blocks-creation.md: missing asset '../../assets/images/blocks-creation-04.png'
-- guides/blocks-creation.md: missing asset '../../assets/images/blocks-creation-05.png'
-- guides/blocks-creation.md: missing asset '../../assets/images/blocks-creation-06.png'
-- guides/blocks-creation.md: missing asset '../../assets/images/blocks-creation-07.png'
-- guides/blocks-creation.md: missing asset '../../assets/images/blocks-creation-08.png'
-- guides/blocks-creation.md: missing asset '../../assets/images/blocks-creation-09.png'
-- guides/blocks-creation.md: missing asset '../../assets/images/blocks-creation-10.png'
-- guides/blocks-creation.md: missing asset '../../assets/images/blocks-creation-11.png'
-- guides/blocks-creation.md: missing asset '../../assets/images/blocks-creation-12.png'
-- guides/blocks-creation.md: missing asset '../../assets/images/blocks-creation-13.png'
-- guides/blocks-creation.md: missing asset '../../assets/images/blocks-creation-14.png'
-- guides/blocks-creation.md: missing asset '../../assets/images/blocks-creation-15.png'
-- guides/business-registration.md: missing asset '../../assets/images/allowing-multiple-registration-03.png'
-- guides/business-registration.md: missing asset '../../assets/images/business-registration-01.png'
-- guides/business-registration.md: missing asset '../../assets/images/business-registration-02.png'
-- guides/business-registration.md: missing asset '../../assets/images/business-registration-03.png'
-- guides/change-instructor.md: missing asset '../../assets/images/change-instructor-01.png'
-- guides/change-instructor.md: missing asset '../../assets/images/change-instructor-02.png'
-- guides/change-instructor.md: missing asset '../../assets/images/change-instructor-03.png'
-- guides/change-instructor.md: missing asset '../../assets/images/change-instructor-04.png'
-- guides/client-import.md: missing asset '../../assets/images/blocks-creation-14.png'
-- guides/client-import.md: missing asset '../../assets/images/client-import-01.png'
-- guides/client-import.md: missing asset '../../assets/images/client-import-02.png'
-- guides/client-import.md: missing asset '../../assets/images/client-import-03.png'
-- guides/client-import.md: missing asset '../../assets/images/client-import-04.png'
-- guides/client-import.md: missing asset '../../assets/images/client-import-05.png'
-- guides/client-import.md: missing asset '../../assets/images/client-import-06.png'
-- guides/client-import.md: missing asset '../../assets/images/client-import-07.png'
-- guides/client-import.md: missing asset '../../assets/images/client-import-08.png'
-- guides/client-import.md: missing asset '../../assets/images/client-import-10.png'
-- guides/course-settings-tile.md: missing asset '../../assets/images/course-settings-tile-01.png'
-- guides/course-settings-tile.md: missing asset '../../assets/images/course-settings-tile-02.png'
-- guides/course-settings-tile.md: missing asset '../../assets/images/course-settings-tile-03.png'
-- guides/course-settings-tile.md: missing asset '../../assets/images/course-settings-tile-04.png'
-- guides/course-settings-tile.md: missing asset '../../assets/images/course-settings-tile-05.png'
-- guides/course-settings.md: missing asset '../../assets/images/client-import-01.png'
-- guides/course-settings.md: missing asset '../../assets/images/client-import-01.png'
-- guides/course-settings.md: missing asset '../../assets/images/client-import-01.png'
-- guides/course-settings.md: missing asset '../../assets/images/client-import-01.png'
-- guides/course-settings.md: missing asset '../../assets/images/course-settings-01.png'
-- guides/course-settings.md: missing asset '../../assets/images/course-settings-02.png'
-- guides/course-settings.md: missing asset '../../assets/images/course-settings-03.png'
-- guides/course-settings.md: missing asset '../../assets/images/course-settings-04.png'
-- guides/course-settings.md: missing asset '../../assets/images/course-settings-05.png'
-- guides/course-settings.md: missing asset '../../assets/images/course-settings-06.png'
-- guides/course-settings.md: missing asset '../../assets/images/course-settings-08.png'
-- guides/course-settings.md: missing asset '../../assets/images/course-settings-09.png'
-- guides/course-settings.md: missing asset '../../assets/images/course-settings-10.png'
-- guides/course-settings.md: missing asset '../../assets/images/course-settings-11.png'
-- guides/course-settings.md: missing asset '../../assets/images/course-settings-13.png'
-- guides/course-settings.md: missing asset '../../assets/images/course-settings-14.png'
-- guides/course-settings.md: missing asset '../../assets/images/course-settings-16.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/blocks-creation-07.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/blocks-creation-07.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/blocks-creation-14.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/client-import-01.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-02.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-04.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-05.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-06.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-07.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-08.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-09.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-10.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-11.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-13.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-14.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-15.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-16.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-19.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-20.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-21.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-22.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-23.png'
-- guides/customizing-widgets.md: missing asset '../../assets/images/customizing-widgets-25.png'
-- guides/data-correction-change-client.md: missing asset '../../assets/images/client-import-01.png'
-- guides/data-correction-change-client.md: missing asset '../../assets/images/data-correction-change-client-01.png'
-- guides/data-correction-change-client.md: missing asset '../../assets/images/data-correction-change-client-02.png'
-- guides/data-correction-change-client.md: missing asset '../../assets/images/data-correction-change-client-03.png'
-- guides/data-correction-change-client.md: missing asset '../../assets/images/data-correction-change-client-05.png'
-- guides/data-correction-change-client.md: missing asset '../../assets/images/data-correction-change-client-06.png'
-- guides/discount-code.md: missing asset '../../assets/images/discount-code-01.png'
-- guides/discount-code.md: missing asset '../../assets/images/discount-code-01.png'
-- guides/discount-code.md: missing asset '../../assets/images/discount-code-02.png'
-- guides/discount-code.md: missing asset '../../assets/images/discount-code-03.png'
-- guides/discount-code.md: missing asset '../../assets/images/discount-code-04.png'
-- guides/discount-code.md: missing asset '../../assets/images/discount-code-05.png'
-- guides/discount-code.md: missing asset '../../assets/images/discount-code-06.png'
-- guides/discount-code.md: missing asset '../../assets/images/discount-code-07.png'
-- guides/discount-code.md: missing asset '../../assets/images/discount-code-08.png'
-- guides/discount-code.md: missing asset '../../assets/images/discount-code-09.png'
-- guides/discount-code.md: missing asset '../../assets/images/discount-code-11.png'
-- guides/discount-code.md: missing asset '../../assets/images/discount-code-12.png'
-- guides/discount-code.md: missing asset '../../assets/images/discount-code-13.png'
-- guides/discount-code.md: missing asset '../../assets/images/discount-code-14.png'
-- guides/discount-code.md: missing asset '../../assets/images/discount-code-15.png'
-- guides/discount-code.md: missing asset '../../assets/images/discount-code-16.png'
-- guides/discount-types.md: missing asset '../../assets/images/allowing-multiple-registration-04.png'
-- guides/discount-types.md: missing asset '../../assets/images/allowing-multiple-registration-04.png'
-- guides/discount-types.md: missing asset '../../assets/images/allowing-multiple-registration-04.png'
-- guides/discount-types.md: missing asset '../../assets/images/allowing-multiple-registration-04.png'
-- guides/discount-types.md: missing asset '../../assets/images/allowing-multiple-registration-04.png'
-- guides/discount-types.md: missing asset '../../assets/images/discount-code-01.png'
-- guides/discount-types.md: missing asset '../../assets/images/discount-types-07.png'
-- guides/discount-types.md: missing asset '../../assets/images/discount-types-08.png'
-- guides/discount-types.md: missing asset '../../assets/images/discount-types-09.png'
-- guides/documents.md: missing asset '../../assets/images/client-import-01.png'
-- guides/documents.md: missing asset '../../assets/images/client-import-03.png'
-- guides/documents.md: missing asset '../../assets/images/client-import-03.png'
-- guides/documents.md: missing asset '../../assets/images/documents-01.png'
-- guides/documents.md: missing asset '../../assets/images/documents-02.png'
-- guides/documents.md: missing asset '../../assets/images/documents-03.png'
-- guides/documents.md: missing asset '../../assets/images/documents-04.png'
-- guides/documents.md: missing asset '../../assets/images/documents-05.png'
-- guides/documents.md: missing asset '../../assets/images/documents-06.png'
-- guides/documents.md: missing asset '../../assets/images/documents-07.png'
-- guides/documents.md: missing asset '../../assets/images/documents-08.png'
-- guides/documents.md: missing asset '../../assets/images/documents-09.png'
-- guides/documents.md: missing asset '../../assets/images/documents-10.png'
-- guides/documents.md: missing asset '../../assets/images/documents-11.png'
-- guides/documents.md: missing asset '../../assets/images/documents-12.png'
-- guides/documents.md: missing asset '../../assets/images/documents-13.png'
-- guides/documents.md: missing asset '../../assets/images/documents-15.png'
-- guides/documents.md: missing asset '../../assets/images/documents-16.png'
-- guides/documents.md: missing asset '../../assets/images/documents-17.png'
-- guides/documents.md: missing asset '../../assets/images/documents-19.png'
-- guides/documents.md: missing asset '../../assets/images/documents-20.png'
-- guides/documents.md: missing asset '../../assets/images/documents-21.png'
-- guides/documents.md: missing asset '../../assets/images/documents-23.png'
-- guides/documents.md: missing asset '../../assets/images/documents-24.png'
-- guides/documents.md: missing asset '../../assets/images/documents-25.png'
-- guides/documents.md: missing asset '../../assets/images/documents-26.png'
-- guides/dynamic-tags.md: missing asset '../../assets/images/dynamic-tags-panel.png "Dynamic tags panel in template editor"'
-- guides/edit-event-notification-template.md: missing asset '../../assets/images/communication-menu-message-templates.png "Communication menu - message templates"'
-- guides/edit-event-notification-template.md: missing asset '../../assets/images/general-settings-signout-rules.png "General settings - sign-out rules"'
-- guides/edit-event-notification-template.md: missing asset '../../assets/images/notifications-section-templates.png "Notifications section in templates"'
-- guides/edit-event-notification-template.md: missing asset '../../assets/images/reminder-send-time-setting.png "Reminder send-time setting"'
-- guides/edit-events-in-courses.md: missing asset '../../assets/images/client-import-03.png'
-- guides/edit-events-in-courses.md: missing asset '../../assets/images/discount-code-01.png'
-- guides/edit-events-in-courses.md: missing asset '../../assets/images/discount-code-01.png'
-- guides/edit-events-in-courses.md: missing asset '../../assets/images/edit-events-in-courses-01.png'
-- guides/edit-events-in-courses.md: missing asset '../../assets/images/edit-events-in-courses-02.png'
-- guides/edit-events-in-courses.md: missing asset '../../assets/images/edit-events-in-courses-03.png'
-- guides/edit-events-in-courses.md: missing asset '../../assets/images/edit-events-in-courses-04.png'
-- guides/edit-events-in-courses.md: missing asset '../../assets/images/edit-events-in-courses-05.png'
-- guides/edit-events-in-courses.md: missing asset '../../assets/images/edit-events-in-courses-08.png'
-- guides/edit-events-in-courses.md: missing asset '../../assets/images/edit-events-in-courses-09.png'
-- guides/edit-events-in-courses.md: missing asset '../../assets/images/edit-events-in-courses-10.png'
-- guides/edit-events-in-courses.md: missing asset '../../assets/images/edit-events-in-courses-12.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/blocks-creation-07.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/blocks-creation-07.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/blocks-creation-14.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/client-import-01.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/client-import-03.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/edit-payment-on-registration-02.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/edit-payment-on-registration-03.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/edit-payment-on-registration-04.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/edit-payment-on-registration-05.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/edit-payment-on-registration-06.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/edit-payment-on-registration-08.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/edit-payment-on-registration-09.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/edit-payment-on-registration-10.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/edit-payment-on-registration-11.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/edit-payment-on-registration-12.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/edit-payment-on-registration-13.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/edit-payment-on-registration-14.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/edit-payment-on-registration-17.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/edit-payment-on-registration-18.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/edit-payment-on-registration-19.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/edit-payment-on-registration-20.png'
-- guides/edit-payment-on-registration.md: missing asset '../../assets/images/edit-payment-on-registration-22.png'
-- guides/gocardless-direct-debit-mandates.md: missing asset '../../assets/images/gocardless-direct-debit-mandates-01.png'
-- guides/gocardless-direct-debit-mandates.md: missing asset '../../assets/images/gocardless-direct-debit-mandates-02.png'
-- guides/gocardless-direct-debit-mandates.md: missing asset '../../assets/images/gocardless-direct-debit-mandates-03.png'
-- guides/group-connection.md: missing asset '../../assets/images/allowing-multiple-registration-03.png'
-- guides/group-connection.md: missing asset '../../assets/images/allowing-multiple-registration-04.png'
-- guides/group-connection.md: missing asset '../../assets/images/group-connection-02.png'
-- guides/group-connection.md: missing asset '../../assets/images/group-connection-04.png'
-- guides/group-connection.md: missing asset '../../assets/images/group-connection-05.png'
-- guides/group-connection.md: missing asset '../../assets/images/group-connection-06.png'
-- guides/group-connection.md: missing asset '../../assets/images/group-connection-07.png'
-- guides/group-connection.md: missing asset '../../assets/images/group-connection-08.png'
-- guides/group-connection.md: missing asset '../../assets/images/group-connection-09.png'
-- guides/group-interested.md: missing asset '../../assets/images/group-interested-01.png'
-- guides/group-interested.md: missing asset '../../assets/images/group-interested-02.png'
-- guides/group-interested.md: missing asset '../../assets/images/group-interested-03.png'
-- guides/how-to-create-paid-events.md: missing asset '../../assets/images/allowing-multiple-registration-04.png'
-- guides/how-to-create-paid-events.md: missing asset '../../assets/images/allowing-multiple-registration-04.png'
-- guides/how-to-create-paid-events.md: missing asset '../../assets/images/discount-code-01.png'
-- guides/how-to-create-paid-events.md: missing asset '../../assets/images/how-to-create-paid-events-01.png'
-- guides/how-to-create-paid-events.md: missing asset '../../assets/images/how-to-create-paid-events-03.png'
-- guides/how-to-create-paid-events.md: missing asset '../../assets/images/how-to-create-paid-events-04.png'
-- guides/how-to-create-paid-events.md: missing asset '../../assets/images/how-to-create-paid-events-05.png'
-- guides/how-to-create-paid-events.md: missing asset '../../assets/images/how-to-create-paid-events-06.png'
-- guides/how-to-create-paid-events.md: missing asset '../../assets/images/how-to-create-paid-events-08.png'
-- guides/how-to-create-paid-events.md: missing asset '../../assets/images/how-to-create-paid-events-10.png'
-- guides/individual-lessons-climbing-wall.md: missing asset '../../assets/images/blocks-creation-07.png'
-- guides/individual-lessons-climbing-wall.md: missing asset '../../assets/images/individual-lessons-climbing-wall-02.png'
-- guides/individual-lessons-group-interested.md: missing asset '../../assets/images/discount-code-01.png'
-- guides/individual-lessons-group-interested.md: missing asset '../../assets/images/individual-lessons-group-interested-01.png'
-- guides/individual-lessons-group-interested.md: missing asset '../../assets/images/individual-lessons-group-interested-02.png'
-- guides/individual-lessons-group-interested.md: missing asset '../../assets/images/individual-lessons-group-interested-03.png'
-- guides/individual-lessons-with-free-lesson.md: missing asset '../../assets/images/blocks-creation-07.png'
-- guides/individual-lessons-with-free-lesson.md: missing asset '../../assets/images/individual-lessons-climbing-wall-02.png'
-- guides/individual-sessions.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- guides/individual-sessions.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- guides/individual-sessions.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- guides/individual-sessions.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- guides/individual-sessions.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- guides/individual-sessions.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- guides/individual-sessions.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- guides/individual-sessions.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- guides/individual-sessions.md: missing asset '../../assets/images/individual-sessions-02.png'
-- guides/individual-sessions.md: missing asset '../../assets/images/individual-sessions-03.png'
-- guides/individual-sessions.md: missing asset '../../assets/images/individual-sessions-04.png'
-- guides/individual-sessions.md: missing asset '../../assets/images/individual-sessions-05.png'
-- guides/individual-sessions.md: missing asset '../../assets/images/individual-sessions-07.png'
-- guides/individual-sessions.md: missing asset '../../assets/images/individual-sessions-08.png'
-- guides/individual-sessions.md: missing asset '../../assets/images/individual-sessions-09.png'
-- guides/individual-sessions.md: missing asset '../../assets/images/individual-sessions-10.png'
-- guides/lecturer-substitution.md: missing asset '../../assets/images/blocks-creation-07.png'
-- guides/lecturer-substitution.md: missing asset '../../assets/images/client-import-01.png'
-- guides/lecturer-substitution.md: missing asset '../../assets/images/client-import-03.png'
-- guides/lecturer-substitution.md: missing asset '../../assets/images/lecturer-substitution-01.png'
-- guides/lecturer-substitution.md: missing asset '../../assets/images/lecturer-substitution-02.png'
-- guides/lecturer-substitution.md: missing asset '../../assets/images/lecturer-substitution-03.png'
-- guides/lecturer-substitution.md: missing asset '../../assets/images/lecturer-substitution-04.png'
-- guides/lecturer-substitution.md: missing asset '../../assets/images/lecturer-substitution-06.png'
-- guides/lecturer-substitution.md: missing asset '../../assets/images/lecturer-substitution-07.png'
-- guides/lecturer-substitution.md: missing asset '../../assets/images/lecturer-substitution-08.png'
-- guides/linked-registrations.md: missing asset '../../assets/images/linked-registrations-01.png'
-- guides/linked-registrations.md: missing asset '../../assets/images/linked-registrations-02.png'
-- guides/linked-registrations.md: missing asset '../../assets/images/linked-registrations-03.png'
-- guides/linked-registrations.md: missing asset '../../assets/images/linked-registrations-04.png'
-- guides/linked-registrations.md: missing asset '../../assets/images/linked-registrations-05.png'
-- guides/linked-registrations.md: missing asset '../../assets/images/linked-registrations-06.png'
-- guides/linked-registrations.md: missing asset '../../assets/images/linked-registrations-07.png'
-- guides/linked-registrations.md: missing asset '../../assets/images/linked-registrations-08.png'
-- guides/message-templates.md: missing asset '../../assets/images/communication-menu-templates.png "Communication menu - message templates"'
-- guides/message-templates.md: missing asset '../../assets/images/message-template-editor.png "Message template editor"'
-- guides/message-templates.md: missing asset '../../assets/images/payment-reminder-example.png "Payment reminder example email"'
-- guides/message-templates.md: missing asset '../../assets/images/template-list-orange-labels.png "Template list with clickable orange labels"'
-- guides/multi-day-event-with-product-offer.md: missing asset '../../assets/images/blocks-creation-07.png'
-- guides/multi-day-event-with-product-offer.md: missing asset '../../assets/images/individual-lessons-climbing-wall-02.png'
-- guides/network-application.md: missing asset '../../assets/images/blocks-creation-07.png'
-- guides/network-application.md: missing asset '../../assets/images/client-import-01.png'
-- guides/network-application.md: missing asset '../../assets/images/client-import-01.png'
-- guides/network-application.md: missing asset '../../assets/images/client-import-01.png'
-- guides/network-application.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- guides/notifications-center.md: missing asset '../../assets/images/client-import-01.png'
-- guides/notifications-center.md: missing asset '../../assets/images/notifications-center-01.png'
-- guides/notifications-center.md: missing asset '../../assets/images/notifications-center-02.png'
-- guides/notifications-center.md: missing asset '../../assets/images/notifications-center-03.png'
-- guides/open-course-creation.md: missing asset '../../assets/images/allowing-multiple-registration-03.png'
-- guides/open-course-creation.md: missing asset '../../assets/images/allowing-multiple-registration-03.png'
-- guides/open-course-creation.md: missing asset '../../assets/images/allowing-multiple-registration-04.png'
-- guides/open-course-creation.md: missing asset '../../assets/images/discount-code-01.png'
-- guides/open-course-creation.md: missing asset '../../assets/images/discount-code-01.png'
-- guides/open-course-creation.md: missing asset '../../assets/images/group-connection-02.png'
-- guides/open-course-creation.md: missing asset '../../assets/images/open-course-creation-03.png'
-- guides/open-course-creation.md: missing asset '../../assets/images/open-course-creation-04.png'
-- guides/open-course-creation.md: missing asset '../../assets/images/open-course-creation-05.png'
-- guides/open-course-creation.md: missing asset '../../assets/images/open-course-creation-06.png'
-- guides/open-course-creation.md: missing asset '../../assets/images/open-course-creation-09.png'
-- guides/open-course-creation.md: missing asset '../../assets/images/open-course-creation-10.png'
-- guides/open-course-creation.md: missing asset '../../assets/images/open-course-creation-11.png'
-- guides/open-course-creation.md: missing asset '../../assets/images/open-course-creation-12.png'
-- guides/open-course-creation.md: missing asset '../../assets/images/open-course-creation-13.png'
-- guides/open-course-creation.md: missing asset '../../assets/images/open-course-creation-14.png'
-- guides/open-course-creation.md: missing asset '../../assets/images/open-course-creation-15.png'
-- guides/parent-profile-dashboard.md: missing asset '../../assets/images/client-import-01.png'
-- guides/payment-labels-drawers.md: missing asset '../../assets/images/payment-labels-drawers-01.png'
-- guides/payment-labels-drawers.md: missing asset '../../assets/images/payment-labels-drawers-02.png'
-- guides/payment-options.md: missing asset '../../assets/images/discount-code-01.png'
-- guides/payment-pairing.md: missing asset '../../assets/images/blocks-creation-07.png'
-- guides/payment-pairing.md: missing asset '../../assets/images/payment-pairing-02.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/allowing-multiple-registration-03.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/allowing-multiple-registration-03.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/allowing-multiple-registration-03.png/'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/allowing-multiple-registration-03.png/'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/discount-code-01.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/discount-code-01.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-02.jpg'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-03.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-04.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-05.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-06.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-08.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-09.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-10.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-11.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-13.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-14.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-15.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-16.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-17.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-18.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-19.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-20.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-22.jpg'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-23.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-24.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-25.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-26.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-27.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-29.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-30.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-32.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-33.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-34.png'
-- guides/payment-templates-creation.md: missing asset '../../assets/images/payment-templates-creation-35.png'
-- guides/payment-tile-on-registration.md: missing asset '../../assets/images/blocks-creation-14.png'
-- guides/payment-tile-on-registration.md: missing asset '../../assets/images/payment-tile-on-registration-01.png'
-- guides/payment-tile-on-registration.md: missing asset '../../assets/images/payment-tile-on-registration-02.png'
-- guides/payment-tile-on-registration.md: missing asset '../../assets/images/payment-tile-on-registration-03.png'
-- guides/payment-tile-on-registration.md: missing asset '../../assets/images/payment-tile-on-registration-04.png'
-- guides/payment-tile-on-registration.md: missing asset '../../assets/images/payment-tile-on-registration-05.png'
-- guides/payment-tile-on-registration.md: missing asset '../../assets/images/payment-tile-on-registration-06.png'
-- guides/payment-tile-on-registration.md: missing asset '../../assets/images/payment-tile-on-registration-07.png'
-- guides/personas.md: missing asset '../../assets/images/client-import-01.png'
-- guides/personas.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- guides/personas.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- guides/personas.md: missing asset '../../assets/images/individual-lessons-climbing-wall-02.png'
-- guides/personas.md: missing asset '../../assets/images/personas-02.png'
-- guides/personas.md: missing asset '../../assets/images/personas-03.png'
-- guides/personas.md: missing asset '../../assets/images/personas-04.png'
-- guides/personas.md: missing asset '../../assets/images/personas-05.png'
-- guides/personas.md: missing asset '../../assets/images/personas-06.png'
-- guides/personas.md: missing asset '../../assets/images/personas-07.png'
-- guides/personas.md: missing asset '../../assets/images/personas-08.png'
-- guides/personas.md: missing asset '../../assets/images/personas-09.png'
-- guides/personas.md: missing asset '../../assets/images/personas-10.png'
-- guides/personas.md: missing asset '../../assets/images/personas-11.png'
-- guides/personas.md: missing asset '../../assets/images/personas-13.png'
-- guides/personas.md: missing asset '../../assets/images/personas-14.png'
-- guides/personas.md: missing asset '../../assets/images/personas-15.png'
-- guides/personas.md: missing asset '../../assets/images/personas-16.png'
-- guides/personas.md: missing asset '../../assets/images/personas-17.png'
-- guides/personas.md: missing asset '../../assets/images/personas-19.png'
-- guides/personas.md: missing asset '../../assets/images/personas-20.png'
-- guides/personas.md: missing asset '../../assets/images/personas-21.png'
-- guides/personas.md: missing asset '../../assets/images/personas-22.png'
-- guides/personas.md: missing asset '../../assets/images/personas-23.png'
-- guides/personas.md: missing asset '../../assets/images/personas-25.png'
-- guides/power-bi-data-description.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- guides/power-bi-data-description.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- guides/power-bi-data-description.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- guides/power-bi-data-description.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- guides/selling-products-during-registration.md: missing asset '../../assets/images/client-import-01.png'
-- guides/selling-products-during-registration.md: missing asset '../../assets/images/selling-products-during-registration-01.png'
-- guides/selling-products-during-registration.md: missing asset '../../assets/images/selling-products-during-registration-02.png'
-- guides/selling-products-during-registration.md: missing asset '../../assets/images/selling-products-during-registration-03.png'
-- guides/selling-products-during-registration.md: missing asset '../../assets/images/selling-products-during-registration-04.png'
-- guides/selling-products-during-registration.md: missing asset '../../assets/images/selling-products-during-registration-05.png'
-- guides/selling-products-during-registration.md: missing asset '../../assets/images/selling-products-during-registration-06.png'
-- guides/send-email-after-event.md: missing asset '../../assets/images/automation-tile-event-detail.png "Automation tile in event detail"'
-- guides/send-email-after-event.md: missing asset '../../assets/images/email-options-automation-tile.png "Email options in automation tile"'
-- guides/send-email-after-event.md: missing asset '../../assets/images/selecting-event-date.png "Selecting an event date"'
-- guides/sending-email-sms.md: missing asset '../../assets/images/clients-registrations-selection.png "Clients vs registrations selection"'
-- guides/sending-email-sms.md: missing asset '../../assets/images/group-selection-dropdown.png "Group selection dropdown"'
-- guides/sending-email-sms.md: missing asset '../../assets/images/message-editor-dynamic-tags.png "Message editor with dynamic tags"'
-- guides/sending-email-sms.md: missing asset '../../assets/images/messages-overview-filters.png "Messages overview with filters"'
-- guides/sending-email-sms.md: missing asset '../../assets/images/new-message-indicator.png "New message indicator in the menu"'
-- guides/sending-email-sms.md: missing asset '../../assets/images/no-communication-warning.png "No communication warning in registration detail"'
-- guides/sending-email-sms.md: missing asset '../../assets/images/notes-preferences-promotional.png "Notes and preferences section"'
-- guides/sending-email-sms.md: missing asset '../../assets/images/promotional-message-settings.png "Promotional message settings"'
-- guides/sending-email-sms.md: missing asset '../../assets/images/send-promotional-emails-checkbox.png "Send promotional emails checkbox"'
-- guides/sending-email-sms.md: missing asset '../../assets/images/sms-sender-name-setting.png "SMS sender name setting in general settings"'
-- guides/sending-email-sms.md: missing asset '../../assets/images/summary-screen-before-sending.png "Summary screen before sending"'
-- guides/sending-email-sms.md: missing asset '../../assets/images/target-group-selection.png "Target group selection"'
-- guides/sending-email-sms.md: missing asset '../../assets/images/template-custom-message-selection.png "Template or custom message selection"'
-- guides/sending-email-sms.md: missing asset '../../assets/images/unread-messages-list.png "Unread messages list"'
-- guides/sending-requests.md: missing asset '../../assets/images/allowing-multiple-registration-03.png'
-- guides/sending-requests.md: missing asset '../../assets/images/sending-requests-01.png'
-- guides/sending-requests.md: missing asset '../../assets/images/sending-requests-02.png'
-- guides/sending-requests.md: missing asset '../../assets/images/sending-requests-03.png'
-- guides/sending-requests.md: missing asset '../../assets/images/sending-requests-04.png'
-- guides/sending-requests.md: missing asset '../../assets/images/sending-requests-05.png'
-- guides/sending-requests.md: missing asset '../../assets/images/sending-requests-06.png'
-- guides/summer-camps-creation.md: missing asset '../../assets/images/allowing-multiple-registration-04.png'
-- guides/summer-camps-creation.md: missing asset '../../assets/images/allowing-multiple-registration-04.png'
-- guides/summer-camps-creation.md: missing asset '../../assets/images/allowing-multiple-registration-04.png'
-- guides/summer-camps-creation.md: missing asset '../../assets/images/allowing-multiple-registration-04.png'
-- guides/summer-camps-creation.md: missing asset '../../assets/images/summer-camps-creation-01.png'
-- guides/summer-camps-creation.md: missing asset '../../assets/images/summer-camps-creation-02.png'
-- guides/summer-camps-creation.md: missing asset '../../assets/images/summer-camps-creation-03.png'
-- guides/summer-camps-creation.md: missing asset '../../assets/images/summer-camps-creation-04.png'
-- guides/summer-camps-creation.md: missing asset '../../assets/images/summer-camps-creation-07.png'
-- guides/summer-camps-creation.md: missing asset '../../assets/images/summer-camps-creation-09.png'
-- guides/trials-daily-business.md: missing asset '../../assets/images/blocks-creation-07.png'
-- guides/trials-daily-business.md: missing asset '../../assets/images/blocks-creation-07.png'
-- guides/trials-daily-business.md: missing asset '../../assets/images/client-import-01.png'
-- guides/trials-daily-business.md: missing asset '../../assets/images/trials-daily-business-02.png'
-- guides/trials-daily-business.md: missing asset '../../assets/images/trials-daily-business-03.png'
-- guides/trials-daily-business.md: missing asset '../../assets/images/trials-daily-business-04.png'
-- guides/trials-daily-business.md: missing asset '../../assets/images/trials-daily-business-05.png'
-- guides/trials-daily-business.md: missing asset '../../assets/images/trials-daily-business-06.png'
-- guides/trials-daily-business.md: missing asset '../../assets/images/trials-daily-business-07.png'
-- guides/trials-daily-business.md: missing asset '../../assets/images/trials-daily-business-08.png'
-- guides/trials-daily-business.md: missing asset '../../assets/images/trials-daily-business-11.png'
-- guides/two-lecturers-per-group.md: missing asset '../../assets/images/two-lecturers-per-group-01.png'
-- guides/two-lecturers-per-group.md: missing asset '../../assets/images/two-lecturers-per-group-02.png'
-- guides/two-lecturers-per-group.md: missing asset '../../assets/images/two-lecturers-per-group-03.png'
-- guides/two-lecturers-per-group.md: missing asset '../../assets/images/two-lecturers-per-group-04.png'
-- guides/types-of-registrations.md: missing asset '../../assets/images/discount-code-01.png'
-- guides/types-of-registrations.md: missing asset '../../assets/images/types-of-registrations-02.png'
-- guides/user-roles.md: missing asset '../../assets/images/allowing-multiple-registration-03.png'
-- guides/user-roles.md: missing asset '../../assets/images/blocks-creation-14.png'
-- guides/user-roles.md: missing asset '../../assets/images/discount-code-07.png'
-- guides/user-roles.md: missing asset '../../assets/images/user-roles-02.png'
-- guides/user-roles.md: missing asset '../../assets/images/user-roles-03.png'
-- guides/user-roles.md: missing asset '../../assets/images/user-roles-05.png'
-- guides/user-roles.md: missing asset '../../assets/images/user-roles-06.png'
-- guides/user-roles.md: missing asset '../../assets/images/user-roles-07.gif'
-- guides/user-roles.md: missing asset '../../assets/images/user-roles-08.gif'
-- guides/user-roles.md: missing asset '../../assets/images/user-roles-09.gif'
-- guides/user-roles.md: missing asset '../../assets/images/user-roles-10.png'
-- guides/user-roles.md: missing asset '../../assets/images/user-roles-11.png'
-- guides/user-roles.md: missing asset '../../assets/images/user-roles-12.png'
-- guides/user-roles.md: missing asset '../../assets/images/user-roles-13.png'
-- guides/user-roles.md: missing asset '../../assets/images/user-roles-14.png'
-- guides/user-roles.md: missing asset '../../assets/images/user-roles-15.png'
-- guides/user-roles.md: missing asset '../../assets/images/user-roles-16.png'
-- guides/user-roles.md: missing asset '../../assets/images/user-roles-17.png'
-- guides/user-roles.md: missing asset '../../assets/images/user-roles-18.png'
-- guides/user-roles.md: missing asset '../../assets/images/user-roles-20.png'
-- guides/vat-management.md: missing asset '../../assets/images/individual-lessons-climbing-wall-02.png'
-- guides/vat-management.md: missing asset '../../assets/images/vat-management-01.png'
-- guides/vat-management.md: missing asset '../../assets/images/vat-management-03.png'
-- guides/vat-management.md: missing asset '../../assets/images/vat-management-04.png'
-- guides/viewing-billable-events.md: missing asset '../../assets/images/allowing-multiple-registration-03.png'
-- guides/viewing-billable-events.md: missing asset '../../assets/images/discount-code-01.png'
-- guides/viewing-billable-events.md: missing asset '../../assets/images/viewing-billable-events-01.png'
-- guides/viewing-billable-events.md: missing asset '../../assets/images/viewing-billable-events-02.png'
-- guides/viewing-billable-events.md: missing asset '../../assets/images/viewing-billable-events-03.png'
-- guides/viewing-billable-events.md: missing asset '../../assets/images/viewing-billable-events-05.png'
-- guides/viewing-billable-events.md: missing asset '../../assets/images/viewing-billable-events-07.png'
-- guides/viewing-billable-events.md: missing asset '../../assets/images/viewing-billable-events-08.png'
-- guides/viewing-billable-events.md: missing asset '../../assets/images/viewing-billable-events-09.png'
-- guides/viewing-billable-events.md: missing asset '../../assets/images/viewing-billable-events-10.png'
-- guides/viewing-billable-events.md: missing asset '../../assets/images/viewing-billable-events-11.png'
-- guides/zooza-101-instructors.md: missing asset '../../assets/images/zooza-101-instructors-01.png'
-- guides/zooza-billing-payments.md: missing asset '../../assets/images/blocks-creation-14.png'
-- guides/zooza-billing-payments.md: missing asset '../../assets/images/zooza-billing-payments-01.png'
-- guides/zooza-billing-payments.md: missing asset '../../assets/images/zooza-billing-payments-02.png'
-- guides/zooza-billing-payments.md: missing asset '../../assets/images/zooza-billing-payments-03.png'
-- guides/zooza-billing-payments.md: missing asset '../../assets/images/zooza-billing-payments-04.png'
-- guides/zooza-billing-payments.md: missing asset '../../assets/images/zooza-billing-payments-05.png'
-- guides/zooza-billing-payments.md: missing asset '../../assets/images/zooza-billing-payments-06.png'
-- guides/zooza-billing-payments.md: missing asset '../../assets/images/zooza-billing-payments-07.png'
-- setup/abra-flexi-invoices.md: missing asset '../../assets/images/abra-flexi-invoices-02.png'
-- setup/abra-flexi-invoices.md: missing asset '../../assets/images/abra-flexi-invoices-03.png'
-- setup/abra-flexi-invoices.md: missing asset '../../assets/images/abra-flexi-invoices-04.png'
-- setup/abra-flexi-invoices.md: missing asset '../../assets/images/abra-flexi-invoices-05.png'
-- setup/abra-flexi-invoices.md: missing asset '../../assets/images/abra-flexi-invoices-06.png'
-- setup/abra-flexi-invoices.md: missing asset '../../assets/images/abra-flexi-invoices-07.png'
-- setup/abra-flexi-invoices.md: missing asset '../../assets/images/abra-flexi-invoices-08.png'
-- setup/abra-flexi-invoices.md: missing asset '../../assets/images/blocks-creation-14.png'
-- setup/add-zooza-app-to-phone.md: missing asset '../../assets/images/add-zooza-app-to-phone-02.png'
-- setup/add-zooza-app-to-phone.md: missing asset '../../assets/images/add-zooza-app-to-phone-03.png'
-- setup/add-zooza-app-to-phone.md: missing asset '../../assets/images/add-zooza-app-to-phone-04.png'
-- setup/add-zooza-app-to-phone.md: missing asset '../../assets/images/blocks-creation-07.png'
-- setup/add-zooza-app-to-phone.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- setup/auto-enrollment.md: missing asset '../../assets/images/auto-enrollment-01.png'
-- setup/auto-enrollment.md: missing asset '../../assets/images/auto-enrollment-02.png'
-- setup/auto-enrollment.md: missing asset '../../assets/images/auto-enrollment-03.png'
-- setup/auto-enrollment.md: missing asset '../../assets/images/auto-enrollment-04.png'
-- setup/auto-enrollment.md: missing asset '../../assets/images/auto-enrollment-05.png'
-- setup/auto-enrollment.md: missing asset '../../assets/images/auto-enrollment-06.png'
-- setup/auto-enrollment.md: missing asset '../../assets/images/auto-enrollment-09.png'
-- setup/auto-enrollment.md: missing asset '../../assets/images/auto-enrollment-10.png'
-- setup/auto-enrollment.md: missing asset '../../assets/images/auto-enrollment-11.png'
-- setup/auto-enrollment.md: missing asset '../../assets/images/auto-enrollment-12.png'
-- setup/auto-enrollment.md: missing asset '../../assets/images/client-import-01.png'
-- setup/auto-enrollment.md: missing asset '../../assets/images/client-import-01.png'
-- setup/auto-enrollment.md: missing asset '../../assets/images/client-import-03.png'
-- setup/billing-periods.md: missing asset '../../assets/images/billing-periods-01.png'
-- setup/billing-periods.md: missing asset '../../assets/images/billing-periods-02.png'
-- setup/billing-periods.md: missing asset '../../assets/images/billing-periods-03.png'
-- setup/billing-periods.md: missing asset '../../assets/images/billing-periods-04.png'
-- setup/billing-periods.md: missing asset '../../assets/images/billing-periods-06.png'
-- setup/billing-periods.md: missing asset '../../assets/images/billing-periods-07.png'
-- setup/billing-periods.md: missing asset '../../assets/images/discount-code-01.png'
-- setup/billing-periods.md: missing asset '../../assets/images/discount-code-01.png'
-- setup/collecting-reason-for-cancelling.md: missing asset '../../assets/images/allowing-multiple-registration-03.png'
-- setup/collecting-reason-for-cancelling.md: missing asset '../../assets/images/collecting-reason-for-cancelling-02.png'
-- setup/collecting-reason-for-cancelling.md: missing asset '../../assets/images/collecting-reason-for-cancelling-03.png'
-- setup/collecting-reason-for-cancelling.md: missing asset '../../assets/images/collecting-reason-for-cancelling-04.png'
-- setup/company-logo-email.md: missing asset '../../assets/images/account-info-logo-url.png "Account Information - logo URL field"'
-- setup/company-logo-email.md: missing asset '../../assets/images/email-with-company-logo.png "Email with company logo in header"'
-- setup/company-logo-email.md: missing asset '../../assets/images/settings-general-menu.png "Settings - General menu"'
-- setup/deploying-zooza-on-website.md: missing asset '../../assets/images/blocks-creation-07.png'
-- setup/deploying-zooza-on-website.md: missing asset '../../assets/images/blocks-creation-14.png'
-- setup/deploying-zooza-on-website.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- setup/deploying-zooza-on-website.md: missing asset '../../assets/images/deploying-zooza-on-website-01.png'
-- setup/deploying-zooza-on-website.md: missing asset '../../assets/images/deploying-zooza-on-website-02.png'
-- setup/deploying-zooza-on-website.md: missing asset '../../assets/images/deploying-zooza-on-website-03.png'
-- setup/deploying-zooza-on-website.md: missing asset '../../assets/images/deploying-zooza-on-website-04.png'
-- setup/deploying-zooza-on-website.md: missing asset '../../assets/images/deploying-zooza-on-website-06.png'
-- setup/deploying-zooza-on-website.md: missing asset '../../assets/images/deploying-zooza-on-website-07.png'
-- setup/deploying-zooza-on-website.md: missing asset '../../assets/images/deploying-zooza-on-website-10.png'
-- setup/deploying-zooza-on-website.md: missing asset '../../assets/images/deploying-zooza-on-website-12.png'
-- setup/deploying-zooza-on-website.md: missing asset '../../assets/images/discount-code-07.png'
-- setup/getting-started-with-zooza.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- setup/getting-started-with-zooza.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- setup/getting-started-with-zooza.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- setup/getting-started-with-zooza.md: missing asset '../../assets/images/individual-lessons-climbing-wall-02.png'
-- setup/holiday-settings.md: missing asset '../../assets/images/holiday-settings-01.png'
-- setup/holiday-settings.md: missing asset '../../assets/images/holiday-settings-02.png'
-- setup/holiday-settings.md: missing asset '../../assets/images/holiday-settings-03.png'
-- setup/instructor-rate-reward.md: missing asset '../../assets/images/allowing-multiple-registration-03.png'
-- setup/instructor-rate-reward.md: missing asset '../../assets/images/allowing-multiple-registration-03.png'
-- setup/instructor-rate-reward.md: missing asset '../../assets/images/group-connection-02.png'
-- setup/instructor-rate-reward.md: missing asset '../../assets/images/instructor-rate-reward-02.png'
-- setup/instructor-rate-reward.md: missing asset '../../assets/images/instructor-rate-reward-03.png'
-- setup/instructor-rate-reward.md: missing asset '../../assets/images/instructor-rate-reward-04.png'
-- setup/instructor-rate-reward.md: missing asset '../../assets/images/instructor-rate-reward-05.png'
-- setup/instructor-rate-reward.md: missing asset '../../assets/images/instructor-rate-reward-06.png'
-- setup/instructor-rate-reward.md: missing asset '../../assets/images/instructor-rate-reward-07.png'
-- setup/instructor-rate-reward.md: missing asset '../../assets/images/instructor-rate-reward-08.png'
-- setup/instructor-rate-reward.md: missing asset '../../assets/images/instructor-rate-reward-09.png'
-- setup/instructor-rate-reward.md: missing asset '../../assets/images/instructor-rate-reward-10.png'
-- setup/instructor-rate-reward.md: missing asset '../../assets/images/instructor-rate-reward-11.png'
-- setup/instructor-rate-reward.md: missing asset '../../assets/images/instructor-rate-reward-12.png'
-- setup/instructor-rate-reward.md: missing asset '../../assets/images/instructor-rate-reward-13.png'
-- setup/instructor-rate-reward.md: missing asset '../../assets/images/instructor-rate-reward-15.png'
-- setup/instructor-rate-reward.md: missing asset '../../assets/images/instructor-rate-reward-16.png'
-- setup/instructor-rate-reward.md: missing asset '../../assets/images/instructor-rate-reward-18.png'
-- setup/lecturers-working-hours.md: missing asset '../../assets/images/allowing-multiple-registration-03.png'
-- setup/lecturers-working-hours.md: missing asset '../../assets/images/discount-code-01.png'
-- setup/lecturers-working-hours.md: missing asset '../../assets/images/lecturers-working-hours-02.png'
-- setup/lecturers-working-hours.md: missing asset '../../assets/images/lecturers-working-hours-03.png'
-- setup/lecturers-working-hours.md: missing asset '../../assets/images/lecturers-working-hours-04.png'
-- setup/lecturers-working-hours.md: missing asset '../../assets/images/lecturers-working-hours-05.png'
-- setup/lecturers-working-hours.md: missing asset '../../assets/images/lecturers-working-hours-06.png'
-- setup/lecturers-working-hours.md: missing asset '../../assets/images/lecturers-working-hours-07.png'
-- setup/online-registration.md: missing asset '../../assets/images/blocks-creation-07.png'
-- setup/online-registration.md: missing asset '../../assets/images/blocks-creation-07.png'
-- setup/online-registration.md: missing asset '../../assets/images/blocks-creation-07.png'
-- setup/online-registration.md: missing asset '../../assets/images/client-import-03.png'
-- setup/online-registration.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- setup/online-registration.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- setup/online-registration.md: missing asset '../../assets/images/individual-lessons-climbing-wall-02.png'
-- setup/online-registration.md: missing asset '../../assets/images/online-registration-02.png'
-- setup/online-registration.md: missing asset '../../assets/images/online-registration-04.png'
-- setup/online-registration.md: missing asset '../../assets/images/online-registration-06.png'
-- setup/online-registration.md: missing asset '../../assets/images/online-registration-07.png'
-- setup/online-registration.md: missing asset '../../assets/images/online-registration-08.png'
-- setup/online-registration.md: missing asset '../../assets/images/online-registration-09.png'
-- setup/online-registration.md: missing asset '../../assets/images/online-registration-11.png'
-- setup/online-registration.md: missing asset '../../assets/images/online-registration-13.png'
-- setup/online-registration.md: missing asset '../../assets/images/online-registration-14.png'
-- setup/online-registration.md: missing asset '../../assets/images/online-registration-16.png'
-- setup/online-registration.md: missing asset '../../assets/images/online-registration-17.png'
-- setup/online-registration.md: missing asset '../../assets/images/online-registration-19.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/blocks-creation-07.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/power-bi-integration-01.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/power-bi-integration-02.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/power-bi-integration-03.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/power-bi-integration-04.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/power-bi-integration-05.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/power-bi-integration-06.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/power-bi-integration-07.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/power-bi-integration-09.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/power-bi-integration-10.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/power-bi-integration-11.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/power-bi-integration-12.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/power-bi-integration-13.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/power-bi-integration-14.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/power-bi-integration-15.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/power-bi-integration-16.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/power-bi-integration-17.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/power-bi-integration-18.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/power-bi-integration-19.png'
-- setup/power-bi-integration.md: missing asset '../../assets/images/power-bi-integration-20.png'
-- setup/setting-gtc-gdpr-consents.md: missing asset '../../assets/images/discount-code-01.png'
-- setup/setting-gtc-gdpr-consents.md: missing asset '../../assets/images/discount-code-01.png'
-- setup/setting-gtc-gdpr-consents.md: missing asset '../../assets/images/discount-code-07.png'
-- setup/setting-gtc-gdpr-consents.md: missing asset '../../assets/images/setting-gtc-gdpr-consents-01.png'
-- setup/setting-gtc-gdpr-consents.md: missing asset '../../assets/images/setting-gtc-gdpr-consents-02.png'
-- setup/setting-gtc-gdpr-consents.md: missing asset '../../assets/images/setting-gtc-gdpr-consents-03.png'
-- setup/setting-gtc-gdpr-consents.md: missing asset '../../assets/images/setting-gtc-gdpr-consents-04.png'
-- setup/setting-gtc-gdpr-consents.md: missing asset '../../assets/images/setting-gtc-gdpr-consents-05.png'
-- setup/setting-gtc-gdpr-consents.md: missing asset '../../assets/images/setting-gtc-gdpr-consents-07.png'
-- setup/smartbill-invoices.md: missing asset '../../assets/images/blocks-creation-07.png'
-- setup/smartbill-invoices.md: missing asset '../../assets/images/smartbill-invoices-02.png'
-- setup/smartbill-invoices.md: missing asset '../../assets/images/smartbill-invoices-03.png'
-- setup/smartbill-invoices.md: missing asset '../../assets/images/smartbill-invoices-04.png'
-- setup/smartbill-invoices.md: missing asset '../../assets/images/smartbill-invoices-05.png'
-- setup/smartbill-invoices.md: missing asset '../../assets/images/smartbill-invoices-06.png'
-- setup/szamlazz-invoices.md: missing asset '../../assets/images/blocks-creation-07.png'
-- setup/szamlazz-invoices.md: missing asset '../../assets/images/blocks-creation-07.png'
-- setup/szamlazz-invoices.md: missing asset '../../assets/images/blocks-creation-14.png'
-- setup/szamlazz-invoices.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- setup/szamlazz-invoices.md: missing asset '../../assets/images/szamlazz-invoices-03.png'
-- setup/szamlazz-invoices.md: missing asset '../../assets/images/szamlazz-invoices-04.png'
-- setup/szamlazz-invoices.md: missing asset '../../assets/images/szamlazz-invoices-05.png'
-- setup/szamlazz-invoices.md: missing asset '../../assets/images/szamlazz-invoices-06.png'
-- setup/szamlazz-invoices.md: missing asset '../../assets/images/szamlazz-invoices-09.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/client-import-01.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/client-import-01.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/client-import-03.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/client-import-03.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/customizing-widgets-01.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/individual-lessons-climbing-wall-02.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/individual-lessons-climbing-wall-02.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/individual-lessons-climbing-wall-02.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-02.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-03.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-04.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-05.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-06.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-07.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-08.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-10.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-11.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-15.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-17.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-18.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-21.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-22.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-23.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-24.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-25.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-26.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-27.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-28.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-29.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-30.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-31.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-32.png'
-- setup/trial-lessons.md: missing asset '../../assets/images/trial-lessons-34.png'
-- setup/whatsapp-integration.md: missing asset '../../assets/images/meta-connection-flow.png "Meta connection flow"'
-- setup/whatsapp-integration.md: missing asset '../../assets/images/whatsapp-connect-button.png "Zooza WhatsApp connect button"'
-- setup/whatsapp-integration.md: missing asset '../../assets/images/whatsapp-pin-setup.png "Zooza WhatsApp PIN setup"'
-- setup/xero-integration.md: missing asset '../../assets/images/blocks-creation-07.png'
-- setup/xero-integration.md: missing asset '../../assets/images/blocks-creation-14.png'
-- setup/xero-integration.md: missing asset '../../assets/images/client-import-01.png'
-- setup/xero-integration.md: missing asset '../../assets/images/client-import-01.png'
-- setup/xero-integration.md: missing asset '../../assets/images/client-import-03.png'
-- setup/xero-integration.md: missing asset '../../assets/images/client-import-03.png'
-- setup/xero-integration.md: missing asset '../../assets/images/xero-integration-02.png'
-- setup/xero-integration.md: missing asset '../../assets/images/xero-integration-03.png'
-- setup/xero-integration.md: missing asset '../../assets/images/xero-integration-04.png'
-- setup/xero-integration.md: missing asset '../../assets/images/xero-integration-07.png'
-- setup/xero-integration.md: missing asset '../../assets/images/xero-integration-08.png'
-- setup/xero-integration.md: missing asset '../../assets/images/xero-integration-09.png'
-- setup/xero-integration.md: missing asset '../../assets/images/xero-integration-10.png'
-- setup/xero-integration.md: missing asset '../../assets/images/xero-integration-14.png'
-- setup/xero-integration.md: missing asset '../../assets/images/xero-integration-15.png'
-- setup/xero-integration.md: missing asset '../../assets/images/xero-integration-16.png'
-- setup/xero-integration.md: missing asset '../../assets/images/xero-integration-17.png'
-- setup/xero-integration.md: missing asset '../../assets/images/xero-integration-18.png'
-- setup/zooza-sites.md: missing asset '../../assets/images/blocks-creation-07.png'
-- setup/zooza-sites.md: missing asset '../../assets/images/blocks-creation-14.png'
-- setup/zooza-sites.md: missing asset '../../assets/images/zooza-sites-02.png'
-- setup/zooza-sites.md: missing asset '../../assets/images/zooza-sites-03.png'
-- setup/zooza-sites.md: missing asset '../../assets/images/zooza-sites-05.png'
-- setup/zooza-sites.md: missing asset '../../assets/images/zooza-sites-06.png'
-- troubleshooting/emails-in-primary-inbox.md: missing asset '../../assets/images/emails-in-primary-inbox-01.gif'
+No issues found.
 
-## Invalid Product Areas
+---
 
-- faq/common-booking-scenarios.md: invalid area 'Bookings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- faq/whatsapp-faq.md: invalid area 'Communication' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/allowing-multiple-registration.md: invalid area 'Bookings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/automatic-event-notification.md: invalid area 'Communication' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/automatic-payment-reminders-detailed.md: invalid area 'Payments' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/automatic-payment-reminders.md: invalid area 'Communication' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/blocks-creation.md: invalid area 'Classes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/business-registration.md: invalid area 'Bookings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/change-instructor.md: invalid area 'Settings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/client-import.md: invalid area 'Clients' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/course-group-lesson-definition.md: invalid area 'Programmes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/course-settings-tile.md: invalid area 'Programmes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/course-settings.md: invalid area 'Programmes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/customizing-widgets.md: invalid area 'Widgets' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/data-correction-change-client.md: invalid area 'Clients' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/discount-code.md: invalid area 'Payments' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/discount-types.md: invalid area 'Payments' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/documents.md: invalid area 'Settings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/dynamic-tags.md: invalid area 'Communication' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/edit-event-notification-template.md: invalid area 'Communication' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/edit-events-in-courses.md: invalid area 'Classes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/edit-payment-on-registration.md: invalid area 'Payments' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/gocardless-direct-debit-mandates.md: invalid area 'Payments' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/group-connection.md: invalid area 'Programmes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/group-interested.md: invalid area 'Programmes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/how-to-create-paid-events.md: invalid area 'Classes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/individual-lessons-climbing-wall.md: invalid area 'Programmes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/individual-lessons-group-interested.md: invalid area 'Programmes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/individual-lessons-with-free-lesson.md: invalid area 'Programmes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/individual-sessions.md: invalid area 'Programmes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/late-registrations.md: invalid area 'Bookings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/lecturer-substitution.md: invalid area 'Settings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/linked-registrations.md: invalid area 'Bookings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/message-templates.md: invalid area 'Communication' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/multi-day-event-with-product-offer.md: invalid area 'Programmes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/network-application.md: invalid area 'Settings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/new-course-existing-clients.md: invalid area 'Programmes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/notifications-center.md: invalid area 'Settings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/open-course-creation.md: invalid area 'Programmes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/outstanding-amount.md: invalid area 'Payments' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/parent-portal-101.md: invalid area 'Clients' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/parent-profile-dashboard.md: invalid area 'Clients' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/payment-labels-drawers.md: invalid area 'Payments' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/payment-options.md: invalid area 'Payments' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/payment-pairing.md: invalid area 'Payments' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/payment-templates-creation.md: invalid area 'Payments' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/payment-tile-on-registration.md: invalid area 'Payments' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/personas.md: invalid area 'Clients' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/power-bi-data-description.md: invalid area 'Settings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/selling-products-during-registration.md: invalid area 'Orders' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/send-email-after-event.md: invalid area 'Communication' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/sending-email-sms.md: invalid area 'Communication' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/sending-requests.md: invalid area 'Settings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/summer-camps-creation.md: invalid area 'Programmes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/trials-daily-business.md: invalid area 'Programmes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/two-lecturers-per-group.md: invalid area 'Programmes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/types-of-registrations.md: invalid area 'Bookings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/user-roles.md: invalid area 'Settings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/vat-management.md: invalid area 'Payments' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/viewing-billable-events.md: invalid area 'Classes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/zooza-101-instructors.md: invalid area 'Settings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- guides/zooza-billing-payments.md: invalid area 'Payments' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/abra-flexi-invoices.md: invalid area 'Payments' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/add-zooza-app-to-phone.md: invalid area 'Settings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/auto-enrollment.md: invalid area 'Programmes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/billing-periods.md: invalid area 'Payments' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/collecting-reason-for-cancelling.md: invalid area 'Classes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/company-logo-email.md: invalid area 'Communication' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/deploying-zooza-on-website.md: invalid area 'Widgets' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/getting-started-with-zooza.md: invalid area 'Programmes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/holiday-settings.md: invalid area 'Calendar' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/instructor-rate-reward.md: invalid area 'Settings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/lecturers-working-hours.md: invalid area 'Settings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/online-registration.md: invalid area 'Programmes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/power-bi-integration.md: invalid area 'Settings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/setting-gtc-gdpr-consents.md: invalid area 'Settings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/smartbill-invoices.md: invalid area 'Payments' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/szamlazz-invoices.md: invalid area 'Payments' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/trial-lessons.md: invalid area 'Programmes' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/whatsapp-integration.md: invalid area 'Communication' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/xero-integration.md: invalid area 'Payments' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- setup/zooza-sites.md: invalid area 'Widgets' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- troubleshooting/emails-in-primary-inbox.md: invalid area 'Settings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- troubleshooting/how-to-clear-your-cache.md: invalid area 'Settings' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
-- troubleshooting/whatsapp-troubleshooting.md: invalid area 'Communication' (valid: bookings, calendar, classes, clients, communication, orders, payments, programmes, settings, widgets)
+## 2. Unique Slugs
 
+**Status: PASS**
 
-## Files Validated Successfully
+All slugs are unique across the knowledge base.
 
-Total: 85
+No issues found.
 
-- faq/common-booking-scenarios.md
-- faq/whatsapp-faq.md
-- guides/allowing-multiple-registration.md
-- guides/automatic-event-notification.md
-- guides/automatic-payment-reminders-detailed.md
-- guides/automatic-payment-reminders.md
-- guides/blocks-creation.md
-- guides/business-registration.md
-- guides/change-instructor.md
-- guides/client-import.md
-- guides/course-group-lesson-definition.md
-- guides/course-settings-tile.md
-- guides/course-settings.md
-- guides/customizing-widgets.md
-- guides/data-correction-change-client.md
-- guides/discount-code.md
-- guides/discount-types.md
-- guides/documents.md
-- guides/dynamic-tags.md
-- guides/edit-event-notification-template.md
-- guides/edit-events-in-courses.md
-- guides/edit-payment-on-registration.md
-- guides/gocardless-direct-debit-mandates.md
-- guides/group-connection.md
-- guides/group-interested.md
-- guides/how-to-create-paid-events.md
-- guides/individual-lessons-climbing-wall.md
-- guides/individual-lessons-group-interested.md
-- guides/individual-lessons-with-free-lesson.md
-- guides/individual-sessions.md
-- guides/late-registrations.md
-- guides/lecturer-substitution.md
-- guides/linked-registrations.md
-- guides/message-templates.md
-- guides/multi-day-event-with-product-offer.md
-- guides/network-application.md
-- guides/new-course-existing-clients.md
-- guides/notifications-center.md
-- guides/open-course-creation.md
-- guides/outstanding-amount.md
-- guides/parent-portal-101.md
-- guides/parent-profile-dashboard.md
-- guides/payment-labels-drawers.md
-- guides/payment-options.md
-- guides/payment-pairing.md
-- guides/payment-templates-creation.md
-- guides/payment-tile-on-registration.md
-- guides/personas.md
-- guides/power-bi-data-description.md
-- guides/selling-products-during-registration.md
-- guides/send-email-after-event.md
-- guides/sending-email-sms.md
-- guides/sending-requests.md
-- guides/summer-camps-creation.md
-- guides/trials-daily-business.md
-- guides/two-lecturers-per-group.md
-- guides/types-of-registrations.md
-- guides/user-roles.md
-- guides/vat-management.md
-- guides/viewing-billable-events.md
-- guides/zooza-101-instructors.md
-- guides/zooza-billing-payments.md
-- setup/abra-flexi-invoices.md
-- setup/add-zooza-app-to-phone.md
-- setup/auto-enrollment.md
-- setup/billing-periods.md
-- setup/collecting-reason-for-cancelling.md
-- setup/company-logo-email.md
-- setup/deploying-zooza-on-website.md
-- setup/getting-started-with-zooza.md
-- setup/holiday-settings.md
-- setup/instructor-rate-reward.md
-- setup/lecturers-working-hours.md
-- setup/online-registration.md
-- setup/power-bi-integration.md
-- setup/setting-gtc-gdpr-consents.md
-- setup/smartbill-invoices.md
-- setup/szamlazz-invoices.md
-- setup/trial-lessons.md
-- setup/whatsapp-integration.md
-- setup/xero-integration.md
-- setup/zooza-sites.md
-- troubleshooting/emails-in-primary-inbox.md
-- troubleshooting/how-to-clear-your-cache.md
-- troubleshooting/whatsapp-troubleshooting.md
+---
+
+## 3. Unique intercom_id Values
+
+**Status: PASS**
+
+No duplicate `intercom_id` values found.
+
+No issues found.
+
+---
+
+## 4. Exactly One H1 Per Doc
+
+**Status: PASS**
+
+All 126 files contain exactly one H1 heading in the body.
+
+No issues found.
+
+---
+
+## 5. No Skipped Heading Levels
+
+**Status: FAIL -- 1 file, 2 occurrences**
+
+| File | Issue |
+|------|-------|
+| `content/guides/gocardless-direct-debit-mandates.md` | H2 -> H4 (line 24: `#### Quick step-by-step`) |
+| `content/guides/gocardless-direct-debit-mandates.md` | H2 -> H4 (line 60: `#### Option A: ...`, line 72: `#### Option B: ...`) |
+
+The file jumps from `##` (H2) directly to `####` (H4), skipping H3.
+
+---
+
+## 6. No Broken Internal Links
+
+**Status: PASS**
+
+All relative `.md` links resolve to existing files.
+
+No issues found.
+
+---
+
+## 7. All Referenced Assets Exist
+
+**Status: FAIL -- 38 missing assets across 9 files**
+
+### `content/guides/automatic-event-notification.md` (4 missing)
+
+- `../../assets/images/sample-event-reminder-email.png`
+- `../../assets/images/turning-off-event-notifications.png`
+- `../../assets/images/add-new-template-button.png`
+- `../../assets/images/assigning-custom-template-course.png`
+
+### `content/guides/automatic-payment-reminders.md` (2 missing)
+
+- `../../assets/images/payment-reminder-settings.png`
+- `../../assets/images/payment-due-date-settings.png`
+
+### `content/guides/dynamic-tags.md` (1 missing)
+
+- `../../assets/images/dynamic-tags-panel.png`
+
+### `content/guides/edit-event-notification-template.md` (4 missing)
+
+- `../../assets/images/communication-menu-message-templates.png`
+- `../../assets/images/notifications-section-templates.png`
+- `../../assets/images/general-settings-signout-rules.png`
+- `../../assets/images/reminder-send-time-setting.png`
+
+### `content/guides/message-templates.md` (4 missing)
+
+- `../../assets/images/message-template-editor.png`
+- `../../assets/images/communication-menu-templates.png`
+- `../../assets/images/template-list-orange-labels.png`
+- `../../assets/images/payment-reminder-example.png`
+
+### `content/guides/send-email-after-event.md` (3 missing)
+
+- `../../assets/images/selecting-event-date.png`
+- `../../assets/images/automation-tile-event-detail.png`
+- `../../assets/images/email-options-automation-tile.png`
+
+### `content/guides/sending-email-sms.md` (14 missing)
+
+- `../../assets/images/messages-overview-filters.png`
+- `../../assets/images/new-message-indicator.png`
+- `../../assets/images/unread-messages-list.png`
+- `../../assets/images/target-group-selection.png`
+- `../../assets/images/promotional-message-settings.png`
+- `../../assets/images/clients-registrations-selection.png`
+- `../../assets/images/group-selection-dropdown.png`
+- `../../assets/images/template-custom-message-selection.png`
+- `../../assets/images/message-editor-dynamic-tags.png`
+- `../../assets/images/summary-screen-before-sending.png`
+- `../../assets/images/notes-preferences-promotional.png`
+- `../../assets/images/send-promotional-emails-checkbox.png`
+- `../../assets/images/no-communication-warning.png`
+- `../../assets/images/sms-sender-name-setting.png`
+
+### `content/setup/company-logo-email.md` (3 missing)
+
+- `../../assets/images/settings-general-menu.png`
+- `../../assets/images/account-info-logo-url.png`
+- `../../assets/images/email-with-company-logo.png`
+
+### `content/setup/whatsapp-integration.md` (3 missing)
+
+- `../../assets/images/whatsapp-connect-button.png`
+- `../../assets/images/meta-connection-flow.png`
+- `../../assets/images/whatsapp-pin-setup.png`
