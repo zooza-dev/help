@@ -70,27 +70,25 @@ class IntercomClient:
 
 
 def list_all_articles(client: IntercomClient) -> list[dict]:
-    """Fetch all articles using cursor pagination."""
+    """Fetch all articles using page-based pagination."""
     articles = []
-    starting_after = None
+    page = 1
 
     while True:
-        params = {"per_page": 50}
-        if starting_after:
-            params["starting_after"] = starting_after
-
-        data = client.get("/articles", params=params)
+        data = client.get("/articles", params={"per_page": 50, "page": page})
         if not data:
             break
 
         batch = data.get("data", [])
+        if not batch:
+            break
         articles.extend(batch)
 
         pages = data.get("pages") or {}
-        nxt = pages.get("next") or {}
-        starting_after = nxt.get("starting_after")
-        if not starting_after:
+        total_pages = pages.get("total_pages", 1)
+        if page >= total_pages:
             break
+        page += 1
 
     return articles
 
