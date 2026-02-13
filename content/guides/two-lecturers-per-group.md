@@ -12,6 +12,8 @@ source_legacy_path: legacy/0038_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: false
 last_converted: 2026-02-11
+intercom_id: 13728627
+intercom_sync: false
 ---
 
 # 2 instructors per class

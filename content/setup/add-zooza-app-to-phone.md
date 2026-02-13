@@ -11,6 +11,8 @@ source_legacy_path: "legacy/0071_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
+intercom_id: 13728760
+intercom_sync: false
 ---
 
 # Add the Zooza app to your phone’s desktop

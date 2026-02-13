@@ -11,6 +11,8 @@ source_legacy_path: "legacy/0009_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-02-11"
+intercom_id: 13728617
+intercom_sync: false
 ---
 
 # Send an email after session/session

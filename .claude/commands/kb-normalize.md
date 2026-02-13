@@ -28,8 +28,15 @@ kb:normalize     →  applies fixes to content/*.md
 ### What to replace
 Only replace terms that belong to a **synonym cluster** (have `variants_found` with more than one entry). Replace non-canonical variants with the canonical term.
 
+### Frontmatter updates
+When a canonical term replacement affects a document's identity:
+- Update `title:` in frontmatter to use the canonical term
+- Update `slug:` in frontmatter to match (kebab-case)
+- Rename the `.md` file to match the new slug
+- Add an entry in `content/_redirects.yml` mapping the old slug/path to the new one
+- Update any internal links in other content files that pointed to the old filename
+
 ### What NOT to replace
-- Text inside YAML frontmatter (between `---` fences)
 - Text inside code blocks (``` fences) or inline `code`
 - Image alt text and image paths
 - URL paths and link URLs
@@ -46,18 +53,22 @@ Only replace terms that belong to a **synonym cluster** (have `variants_found` w
 
 2. **class ← group/timetable**: Replace EXCEPT:
    - "group" in "group connection" (Zooza feature name — check if this is a real feature)
-   - "group" in "Group Interested" (Zooza feature name)
 
-3. **session ← event/lesson**: Replace EXCEPT:
+3. **lead collection ← group interested, group – interested, class interested, class – interested**: Replace everywhere.
+   - This is a class type for gathering interest before dates are set — a collection point for leads/prospects
+   - Update titles, slugs, filenames, and redirects for affected docs
+   - Also replace standalone "Interested" when it refers to this class type (not the adjective)
+
+4. **session ← event/lesson**: Replace EXCEPT:
    - In file slugs, headings, or feature names that use "event" or "lesson" as the established Zooza UI term
    - "lesson" in "make-up lesson" (keep as-is, it's the canonical form)
    - Check: if the Zooza admin UI actually says "Event" or "Lesson" in menus, keep those references intact and flag for human review
 
-4. **booking ← registration**: Replace EXCEPT:
+5. **booking ← registration**: Replace EXCEPT:
    - In admin-context docs where "registration" is a distinct Zooza concept (status, workflow)
    - Flag these for human review rather than auto-replacing
 
-5. **instructor ← lecturer/tutor/trainer/teacher**: Safe to replace everywhere.
+6. **instructor ← lecturer/tutor/trainer/teacher**: Safe to replace everywhere.
 
 6. **client ← customer**: Safe to replace everywhere.
 
@@ -123,8 +134,8 @@ Some replacements are risky. Instead of auto-replacing, add a comment in `normal
 ```
 
 ## Safety
-- **Never modify frontmatter** (title, slug, tags, etc.)
-- **Never modify file names or slugs** — only prose content
+- **Update frontmatter title/slug when a term rename affects the document's identity** (e.g. "Group Interested" → "Lead Collection")
+- **Rename files to match new slugs** and add redirects for old paths
 - **Create a git-friendly diff** — make minimal changes, don't rewrite entire files
 - **Dry-run first**: Before writing changes, print summary and ask for confirmation unless user passed `--apply` or explicitly asked to apply
 

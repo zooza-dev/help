@@ -13,6 +13,8 @@ source_language: en
 needs_screenshot_replacement: false
 last_converted: 2026-02-11
 cssclasses:
+intercom_id: 13728625
+intercom_sync: false
 ---
 
 # Daily Business with Trials: Setup, Transfers, and Adjustments

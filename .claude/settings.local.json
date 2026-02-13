@@ -21,7 +21,9 @@
       "Bash(git -C /Users/michaldodok/help push)",
       "Bash(git push:*)",
       "Bash(git -C /Users/michaldodok/help status)",
-      "Bash(git -C /Users/michaldodok/help restore:*)"
+      "Bash(git -C /Users/michaldodok/help restore:*)",
+      "Bash(/Users/michaldodok/help/scripts/update_intercom_ids.py:*)",
+      "Bash(xargs:*)"
     ]
   }
 }

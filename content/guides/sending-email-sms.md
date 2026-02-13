@@ -13,6 +13,8 @@ source_legacy_path: legacy/0012_Welcome to Zooza.html
 source_language: mixed
 needs_screenshot_replacement: true
 last_converted: 2026-02-11
+intercom_id: 13728619
+intercom_sync: false
 ---
 
 # Sending email/SMS to clients
