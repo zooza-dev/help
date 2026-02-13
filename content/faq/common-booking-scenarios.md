@@ -11,8 +11,6 @@ source_legacy_path: "legacy/0028_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
-intercom_id: 13727556
-intercom_sync: false
 ---
 
 # Common Booking Scenarios
