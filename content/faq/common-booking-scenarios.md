@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13713655
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Common Booking Scenarios
@@ -25,7 +25,7 @@ Steps: Bookings → Detail → Change status to Deleted.
 
 ![Screenshot](../../assets/images/common-booking-scenarios-01.png)
 
-## 2. How do I pause a registration?
+## 2. How do I pause a booking?
 
 
 Use this when a client takes a break for a defined period.
@@ -46,7 +46,7 @@ When a class is full, new clients go to Waitlist automatically.
 When a place opens, they receive a notification to confirm.
 Steps: Bookings → Detail → Status = Waitlist.
 
-## 5. What is a trial registration?
+## 5. What is a trial booking?
 
 Clients attending their first class will have a status Trial.
 Steps: Bookings → Check that status = Trial.
@@ -64,7 +64,7 @@ Steps: Booking → Detail → Payments → Select transaction → Process refund
 
 ## 7. How do I handle missed classes?
 
-Go to Registration → Payments → Payment plan → Adjust the next payment.
+Go to Booking → Payments → Payment plan → Adjust the next payment.
 Automation options (on request):
 
 - Offer [make-up classes](https://support.zooza.online/portal/en/kb/articles/replacement-lessons).

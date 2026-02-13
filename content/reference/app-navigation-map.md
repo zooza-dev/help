@@ -1,16 +1,21 @@
 ---
-title: "Zooza App Navigation Map"
-slug: "app-navigation-map"
-type: "reference"
-product_area: "Settings"
+title: Zooza App Navigation Map
+slug: app-navigation-map
+type: reference
+product_area: Settings
 sub_area: ""
-audience: ["admin"]
-tags: ["reference", "ui-reference"]
-status: "published"
+audience:
+  - admin
+tags:
+  - reference
+  - ui-reference
+status: published
 source_legacy_path: ""
-source_language: "en"
+source_language: en
 needs_screenshot_replacement: false
-last_converted: "2026-02-12"
+last_converted: 2026-02-12
+intercom_id: 13725974
+intercom_sync: false
 ---
 
 # Zooza App Navigation Map
@@ -21,11 +26,11 @@ This page maps every section of the Zooza admin application to its reference doc
 
 | Menu item | Reference doc | Related guides | Status |
 |---|---|---|---|
-| **Programmes** | [Programmes List](programmes-list.md) | [Course Settings](../guides/course-settings.md), [Open Course Creation](../guides/open-course-creation.md) | Done |
-| Programmes → Settings | [Programme Settings](programme-settings.md) | [Payment Options](../guides/payment-options.md), [Trial Lessons](../setup/trial-lessons.md), [Online Registration](../setup/online-registration.md) | Done |
+| **Programmes** | [Programmes List](programmes-list.md) | [Programme Settings](../guides/course-settings.md), [Open Programme Creation](../guides/open-course-creation.md) | Done |
+| Programmes → Settings | [Programme Settings](programme-settings.md) | [Payment Options](../guides/payment-options.md), [Trial Sessions](../setup/trial-lessons.md), [Online Registration](../setup/online-registration.md) | Done |
 | Programmes → Automations | [Programme Automations](programme-automations.md) | [Auto-Enrolment](../setup/auto-enrollment.md), [Payment Reminders](../guides/automatic-payment-reminders.md) | Done |
-| **Classes** | [Classes List](classes-list.md), [Class Detail](class-detail.md) | [Course Group Lesson Definition](../guides/course-group-lesson-definition.md), [Change Instructor](../guides/change-instructor.md) | Done |
-| **Sessions** | [Sessions List](sessions-list.md) | [Edit Events in Courses](../guides/edit-events-in-courses.md) | Done |
+| **Classes** | [Classes List](classes-list.md), [Class Detail](class-detail.md) | [Programme Class Session Definition](../guides/course-group-lesson-definition.md), [Change Instructor](../guides/change-instructor.md) | Done |
+| **Sessions** | [Sessions List](sessions-list.md) | [Edit Sessions in Programmes](../guides/edit-events-in-courses.md) | Done |
 | **Calendar** | [Calendar](calendar.md) | [Attendance and Catch-ups FAQ](../faq/attendance-and-catchups-faq.md) | Done |
 | **Feedback** | [Calendar](calendar.md#feedback-questions) | — | Done |
 
@@ -42,7 +47,7 @@ This page maps every section of the Zooza admin application to its reference doc
 | Menu item | Reference doc | Related guides | Status |
 |---|---|---|---|
 | **Clients** | [Clients](clients-list.md) | [Data Correction](../guides/data-correction-change-client.md), [Client Import](../guides/client-import.md) | Done |
-| **Bookings** | [Bookings](bookings-list.md) | [Common Booking Scenarios](../faq/common-booking-scenarios.md), [Registration FAQ](../faq/registration-and-booking-faq.md) | Done |
+| **Bookings** | [Bookings](bookings-list.md) | [Common Booking Scenarios](../faq/common-booking-scenarios.md), [Booking FAQ](../faq/registration-and-booking-faq.md) | Done |
 | **Orders** | [Orders](orders-list.md) | [Selling Products](../guides/selling-products-during-registration.md) | Done |
 
 ## Sales & Payments

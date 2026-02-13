@@ -119,7 +119,7 @@ Pagination shows total records count.
 
 | Field | Description |
 |---|---|
-| `Name` | Internal name for the discount (not visible to customers). Required. |
+| `Name` | Internal name for the discount (not visible to clients). Required. |
 | `Code` | The code clients enter in the booking form. Required. |
 | `Amount of use` | Maximum number of times the code can be used. +/− controls. Required. |
 | `Absolute discount` | Fixed amount deducted from the total price. +/− controls. |

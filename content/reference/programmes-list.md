@@ -28,7 +28,7 @@ Each programme card shows:
 | Field | Description |
 |---|---|
 | `Name` | Programme name with optional emoji icon and label badges. |
-| `Programme type` | Booking model — e.g., "Booking for the full programme duration" or "One-off event". |
+| `Programme type` | Booking model — e.g., "Booking for the full programme duration" or "One-off session". |
 | `Programme type` (detail) | Internal structure — e.g., "Programme (instructors, sessions)". |
 | `Online booking` | Green dot = enabled, red dot = disabled. |
 | `Make-up sessions` | Green dot = enabled, red dot = disabled. |
@@ -39,7 +39,7 @@ Use the filter bar at the top to narrow the list:
 
 - **Name** — free-text search.
 - **Programme type** — filter by booking model (full duration, one-off, pay-as-you-go).
-- **Programme type** — filter by structure (group, 1-to-1).
+- **Programme type** — filter by structure (class, 1-to-1).
 - **Status** — default is "Not Archived". Change to see archived programmes.
 - **Labels** — filter by custom tags.
 
@@ -110,8 +110,8 @@ Click **New programme** on the Programmes list to create a programme from scratc
 | Field | Description |
 |---|---|
 | `Programme name` | The public name clients see on the booking form. |
-| `Programme type` | **One-off event** — single occurrence. **Booking for the full programme duration** — clients are enrolled for all sessions. **Pay-as-you-go** — clients enrol but sign up for individual sessions. |
-| `Target audience / Timetable type` | **Group Timetables** or **1-To-1 classes**. |
+| `Programme type` | **One-off session** — single occurrence. **Booking for the full programme duration** — clients are enrolled for all sessions. **Pay-as-you-go** — clients enrol but sign up for individual sessions. |
+| `Target audience / Timetable type` | **Class Timetables** or **1-To-1 classes**. |
 | `For children` | Check **Yes** to use child-oriented wording on forms (e.g., "Parent's name" instead of "Name"). |
 | `How do you want to collect payments?` | **One off payment** — single charge. **In scheduled payments** — recurring billing (subscriptions, term payments). |
 | `Booking fee` | One-time fee charged at booking time (added to the first payment). |
@@ -126,7 +126,7 @@ From a programme detail, click **New class** to open the timetable creation form
 
 ### Timetable Type
 
-- **Fixed period timetable** — defined start and end dates. Sessions can be adjusted but the group has a clear time frame.
+- **Fixed period timetable** — defined start and end dates. Sessions can be adjusted but the class has a clear time frame.
 - **Lead collection** — used to gather interest before dates are set. Ideal for testing demand.
 
 ### Sessions (Simple mode)
@@ -173,5 +173,5 @@ Click **Create** to generate the class with all sessions, or **Cancel** to disca
 
 - [Programme Settings](programme-settings.md) — all settings tiles for a programme.
 - [Programme Automations](programme-automations.md) — booking, payment, trial, and enrolment automations.
-- [Course Settings Guide](../guides/course-settings.md) — step-by-step guide to configuring programmes.
+- [Programme Settings Guide](../guides/course-settings.md) — step-by-step guide to configuring programmes.
 - [Programmes, Timetables, and Sessions FAQ](../faq/programmes-timetables-sessions-faq.md) — common questions about the hierarchy.

@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-12"
 intercom_id: 13726009
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Sessions List
@@ -57,5 +57,5 @@ The total number of sessions found is shown at the top (e.g., "Found 846 session
 - [Classes List](classes-list.md) — the cross-programme classes view.
 - [Class Detail](class-detail.md) — managing a single class with its sessions.
 - [Calendar](calendar.md) — visual calendar view of sessions.
-- [Edit Events in Courses Guide](../guides/edit-events-in-courses.md) — modifying session dates and times.
+- [Edit Sessions in Programmes Guide](../guides/edit-events-in-courses.md) — modifying session dates and times.
 - [Attendance and Catch-ups FAQ](../faq/attendance-and-catchups-faq.md) — marking attendance.

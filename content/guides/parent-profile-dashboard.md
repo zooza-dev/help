@@ -12,12 +12,12 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13725842
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Dashboard 2.0 in the Parent Profile (Parent Portal)
 
-For parents: This is your family dashboard. It helps you manage registrations, sessions, make-ups, passes, credits, discounts, and payments in one place. For providers (admins): This dashboard reduces support requests and makes the parent journey clearer, especially around payments and “special cases”.
+For parents: This is your family dashboard. It helps you manage bookings, sessions, make-ups, passes, credits, discounts, and payments in one place. For providers (admins): This dashboard reduces support requests and makes the parent journey clearer, especially around payments and “special cases”.
 
 ## What is Dashboard 2.0?
 
@@ -71,7 +71,7 @@ In Upcoming sessions, you can quickly see what is next.
 
 Tip: If you cannot attend, check the cancellation or make-up rules in your provider’s policy (each provider is different).
 
-### 4) Bookings (your active and open registrations)
+### 4) Bookings (your active and open bookings)
 
 In Bookings, you can see:
 
@@ -86,7 +86,7 @@ You can use this section to understand:
 
 ### 5) Benefits (your extras, with history)
 
-The dashboard groups “benefits” in one place, typically:
+The dashboard classes “benefits” in one place, typically:
 
 - Make-ups
 - Discounts
@@ -143,7 +143,7 @@ You may see:
 
 ### Credits (including usage details)
 
-Credits are usually shown in groups to make them easier to understand:
+Credits are usually shown in classes to make them easier to understand:
 
 - Recently used credits
 - Other credits

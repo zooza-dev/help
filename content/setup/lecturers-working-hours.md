@@ -12,12 +12,12 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13726032
-intercom_sync: false
+intercom_sync: true
 ---
 
-# Lecturers working hours
+# Instructors working hours
 
-In the *Lecturers *section, lecturers can manage their working time. If they define their working hours and possible absences, this data will then be taken into account by the system when scheduling terms.
+In the *Instructors *section, instructors can manage their working time. If they define their working hours and possible absences, this data will then be taken into account by the system when scheduling terms.
 
 ![Screenshot](../../assets/images/allowing-multiple-registration-03.png)
 
@@ -55,9 +55,9 @@ From now on, when scheduling terms, the app will inform the admin that Alice is 
 
 ## Mass deleting of availability/absences
 
-Since the availability of tutors can change frequently in the application, you have the option of mass deletion. This allows you to edit faster.
+Since the availability of instructors can change frequently in the application, you have the option of mass deletion. This allows you to edit faster.
 
-1. In the lecturer's details under *Working hours*, click *Activate*.
+1. In the instructor's details under *Working hours*, click *Activate*.
  ![Screenshot](../../assets/images/lecturers-working-hours-06.png)
 2. Select the availability/absences you want to delete by clicking on them and click on the *Delete selected availability* button.
 

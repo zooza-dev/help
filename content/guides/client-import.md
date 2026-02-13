@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13713666
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Client import
@@ -21,7 +21,7 @@ When you are a new client, or if you need to move existing clients from one Zooz
 
 ![Screenshot](../../assets/images/client-import-01.png)
 
-Important: Before starting the import, make sure the required courses and classes are already created in Zooza. Clients can only be imported into existing classes.
+Important: Before starting the import, make sure the required programmes and classes are already created in Zooza. Clients can only be imported into existing classes.
 
 ## Data preparation
 
@@ -30,11 +30,11 @@ Important: Before starting the import, make sure the required courses and classe
 
 | Column name | Value | Note | Required |
 |---|---|---|---|
-| Full name | James Smith | For courses where the attendee is different from the client (e.g., a child), enter the attendee’s name here. | Y |
-| First name | John | First name of customer | Y |
-| Last name | Smith | Last name of customer | Y |
+| Full name | James Smith | For programmes where the attendee is different from the client (e.g., a child), enter the attendee’s name here. | Y |
+| First name | John | First name of client | Y |
+| Last name | Smith | Last name of client | Y |
 | Phone | 00421377 | Use the format starting with 00 instead of + (e.g., 00421...). | Y |
-| Email | john.smith@email.com |  | Y |
+| Email | jane.doe@example.com |  | Y |
 | Date of Birth | YYYY-MM-DD | Use this date format exactly. | N |
 | Class | name of required class | Must match the class name exactly as it appears in Zooza. | N |
 
@@ -67,7 +67,7 @@ re-import the file.
 
 Notes:
 
-1. If you do not assign a class, the client will be created in Zooza but no registration will be created.
+1. If you do not assign a class, the client will be created in Zooza but no booking will be created.
 2. You can perform a partial import from your spreadsheet to verify that you are importing the correct clients into the right classes.
 3. The import process may take some time, depending on the number of rows in your spreadsheet. You can track the progress and status of the import in the List of Imports.
  ![Screenshot](../../assets/images/client-import-10.png)

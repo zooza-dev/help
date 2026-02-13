@@ -12,12 +12,12 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-13"
 intercom_id: 13726007
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Reports
 
-The Reports screen provides an overview of your business metrics, payment status, booking occupancy, customer statistics, trial conversion, and session notifications. It includes a personalizable dashboard with goal tracking powered by Nick's Dashboard (PRO).
+The Reports screen provides an overview of your business metrics, payment status, booking occupancy, client statistics, trial conversion, and session notifications. It includes a personalizable dashboard with goal tracking powered by Nick's Dashboard (PRO).
 
 > **Navigation:** Go to **Reports & Insights** → **Reports**.
 
@@ -29,8 +29,8 @@ A personalizable dashboard with four key business metrics tracked over the past 
 
 | Metric | Description |
 |---|---|
-| **New enrolments** | Number of genuinely new and first-time paying customers who booked onto your programme, not including returning customers or children who came for a free trial. |
-| **Churn** | Percentage of customers who did not re-enrol. |
+| **New enrolments** | Number of genuinely new and first-time paying clients who booked onto your programme, not including returning clients or children who came for a free trial. |
+| **Churn** | Percentage of clients who did not re-enrol. |
 | **Break even** | Progress toward your break-even point (e.g. "7/31"). |
 | **Received payments** | Total payments received in the period. |
 
@@ -114,9 +114,9 @@ Button: **View** — opens detailed booking report.
 
 ## Statistics
 
-Customer and communication statistics with three tabs:
+Client and communication statistics with three tabs:
 
-### Customers
+### Clients
 
 | Metric | Description |
 |---|---|

@@ -12,15 +12,15 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13725820
-intercom_sync: false
+intercom_sync: true
 ---
 
-# Individual lessons for clients on the climbing wall with choice of instructor
+# Individual sessions for clients on the climbing wall with choice of instructor
 
 ![Screenshot](../../assets/images/blocks-creation-07.png)
 
 
-Course - individual, which will only be available for 1 lesson.
+Programme - individual, which will only be available for 1 session.
 
 ![Screenshot](../../assets/images/individual-lessons-climbing-wall-02.png)
 
@@ -31,61 +31,61 @@ Client
 
 Admin
 
-Lecturer
+Instructor
 
 Client
 
-| Before registration |
+| Before booking |
 |---|
 | |
-| During registration |
-| Client selects a course/group from the menu, fills in the details and submits the form |
-| After registration creation |
-| Receives a notification that the registration has been completed and a request to confirm the registration (from the system's side, this is a confirmation of entering the correct email address) |
-| After registration confirmation |
-| Notification is automatically sent with all course information with the option to log in to the profile - email template: Registration confirmation |
-| Lesson/Event selection |
-| Client logs into his/her profile and finds and logs in specific lesson/event
+| During booking |
+| Client selects a programme/class from the menu, fills in the details and submits the form |
+| After booking creation |
+| Receives a notification that the booking has been completed and a request to confirm the booking (from the system's side, this is a confirmation of entering the correct email address) |
+| After booking confirmation |
+| Notification is automatically sent with all programme information with the option to log in to the profile - email template: Booking confirmation |
+| Session/Session selection |
+| Client logs into his/her profile and finds and logs in specific session/session
 
-After signing up for a lesson, a debt is created for the client to pay in cash on the spot |
-| On the lesson/event |
-| Comes to the lesson and pays for it |
+After signing up for a session, a debt is created for the client to pay in cash on the spot |
+| On the session/session |
+| Comes to the session and pays for it |
 
 Admin
 
-| Before registration |
+| Before booking |
 |---|
-| Creates a course of type Open - [MANUAL](open-course-creation.md)Creates a group with events, where an event is one lessonSets up a tutor for a group or individual lessonsSets the capacity of the group - this will then be equal to the capacity of the event (i.e. the registration form will allow unlimited registrations for the group, with the possibility that when registering for a specific event, it will guard this and not allow more than the specified number)In the Price and Payment section admin sets the price per event and the payment option CashCreates a template for the confirmation email - Registration Confirmation - [MANUAL](message-templates.md)Adds a communication template at the course level |
-| During registration |
+| Creates a programme of type Open - [MANUAL](open-course-creation.md)Creates a class with sessions, where an session is one lessonSets up a instructor for a class or individual lessonsSets the capacity of the class - this will then be equal to the capacity of the session (i.e. the registration form will allow unlimited bookings for the class, with the possibility that when registering for a specific session, it will guard this and not allow more than the specified number)In the Price and Payment section admin sets the price per session and the payment option CashCreates a template for the confirmation email - Booking Confirmation - [MANUAL](message-templates.md)Adds a communication template at the programme level |
+| During booking |
 | |
-| After registration creation |
+| After booking creation |
 | |
-| After registration confirmation |
-| Registration is automatically flagged with the status - Valid course registrationDebt on registration is 0 as the client will pay per event |
+| After booking confirmation |
+| Booking is automatically flagged with the status - Valid programme registrationDebt on booking is 0 as the client will pay per session |
 | |
-| Lesson/Event selection |
-| Selects the event in the calendarclicks on the Book lessons/event button and searches for a client from the listAfter signing up for the lesson, the client creates a debt on the registration, which can be settled immediately with a transactional payment |
+| Session/Session selection |
+| Selects the session in the calendarclicks on the Book sessions/session button and searches for a client from the listAfter signing up for the session, the client creates a debt on the booking, which can be settled immediately with a transactional payment |
 | |
-| On the lesson/event |
+| On the session/session |
 | |
 
-Lecturer
+Instructor
 
-| Before registration |
+| Before booking |
 |---|
 | |
-| During registration |
+| During booking |
 | |
-| After registration creation |
+| After booking creation |
 | |
-| After registration confirmation |
-| |
-| |
-| Lesson/Event selection |
+| After booking confirmation |
 | |
 | |
-| On the lesson/event |
-| Takes attendance on the event
+| Session/Session selection |
+| |
+| |
+| On the session/session |
+| Takes attendance on the session
 
 
-Records payments at registrations |
+Records payments at bookings |

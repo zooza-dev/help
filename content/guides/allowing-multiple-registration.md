@@ -12,18 +12,18 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13713658
-intercom_sync: false
+intercom_sync: true
 ---
 
-# Allowing multiple registration for a course
+# Allowing multiple booking for a programme
 
-You can expand the registration form not only with extra fields but also with the possibility to add another person. Thanks to this button, your client can quickly create a registration for both children at the same time in the case of children’s courses, or a registration for themselves and their partner in the case of dance courses.
+You can expand the registration form not only with extra fields but also with the possibility to add another person. Thanks to this button, your client can quickly create a booking for both children at the same time in the case of children’s programmes, or a booking for themselves and their partner in the case of dance programmes.
 
-The price per course is automatically converted to the price for two or more registrations.
+The price per programme is automatically converted to the price for two or more bookings.
 
 ![Screenshot](../../assets/images/allowing-multiple-registration-01.png)
 
-The button will be added automatically as soon as you enable multiple course registrations. You can enable multiple course registrations at the *Course *level, in the *Online Registration *section.
+The button will be added automatically as soon as you enable multiple programme bookings. You can enable multiple programme bookings at the *Programme *level, in the *Online Registration *section.
 
 ## How to set it up
 
@@ -32,8 +32,8 @@ In the *Online Registration *section, click *Edit.*
 
 ![Screenshot](../../assets/images/allowing-multiple-registration-02.jpg)
 
-1. Click on the *Allow multiple course registrations* checkbox.
-2. Choose the minimum and maximum number of registrations.
+1. Click on the *Allow multiple programme bookings* checkbox.
+2. Choose the minimum and maximum number of bookings.
 
 ![Screenshot](../../assets/images/allowing-multiple-registration-03.png)
 
@@ -43,10 +43,10 @@ Example: if it is a ballroom dance where you want to allow clients to come witho
 
 ![Screenshot](../../assets/images/allowing-multiple-registration-04.png)
 
-TIP: If you are unsure of your choices – look at the registration form for the course on your website and make sure everything is as you need it to be.
+TIP: If you are unsure of your choices – look at the registration form for the programme on your website and make sure everything is as you need it to be.
 
 
- 4. If you want related registrations to combine payments for one registration and allow the main registration to pay for both (all) related registrations at the same time and with one variable symbol – enable the option – *Payments *are managed by the registrant. More on related registrations here.
+ 4. If you want related bookings to combine payments for one booking and allow the main booking to pay for both (all) related bookings at the same time and with one variable symbol – enable the option – *Payments *are managed by the registrant. More on related bookings here.
 
 
  5. Don’t forget to *Save *settings

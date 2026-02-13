@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13726012
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Abra Flexi Invoice Management System
@@ -39,7 +39,7 @@ Important notes for the invoicing process and billing profiles
 2. Under *Invoicing System*, change the system from Default to Abra Flexi.
  ![Screenshot](../../assets/images/abra-flexi-invoices-03.png)
 
-3. Choose whether you want automatic generation of invoices or you will manually generate invoices per registration and click *Save.
+3. Choose whether you want automatic generation of invoices or you will manually generate invoices per booking and click *Save.
  ![Screenshot](../../assets/images/abra-flexi-invoices-04.png)
  *
 4. After saving, a section with Abra login information will appear in Zooza under* Abra Flexi Settings.

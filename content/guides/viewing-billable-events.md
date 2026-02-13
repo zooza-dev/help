@@ -1,21 +1,25 @@
 ---
-title: "Viewing/tracking billable events"
-slug: "viewing-billable-events"
-type: "guides"
-product_area: "Classes"
+title: Viewing/tracking billable events
+slug: viewing-billable-events
+type: guides
+product_area: Classes
 sub_area: ""
-audience: ["admin"]
+audience:
+  - admin
 tags: []
-status: "published"
-source_legacy_path: "legacy/0043_Welcome to Zooza.html"
-source_language: "en"
+status: published
+source_legacy_path: legacy/0043_Welcome to Zooza.html
+source_language: en
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: 2026-02-11
+cssclasses:
+intercom_id: 13725971
+intercom_sync: false
 ---
 
-# Viewing/tracking billable events
+# Viewing/tracking billable sessions
 
-If you already have set up billable events, the application will start calculating the progression of the group differently: You can switch between the types of statistics in the group list. Next to the *Sort* drop-down menu there is a filter button to set the View Settings. You can switch between viewing the *schedule registrations* or the *schedule progress*.
+If you already have set up billable sessions, the application will start calculating the progression of the class differently: You can switch between the types of statistics in the class list. Next to the *Sort* drop-down menu there is a filter button to set the View Settings. You can switch between viewing the *schedule bookings* or the *schedule progress*.
 
 ![Screenshot](../../assets/images/viewing-billable-events-01.png)
 
@@ -23,50 +27,50 @@ This selection is then saved and retained in all user sessions.
 
 ## View schedule progress
 
-If the group does not have set billable events, then the view of
-schedule progress for groups shows the total number of available dates
-(scheduled, unscheduled) compared to the number of events that have
+If the class does not have set billable sessions, then the view of
+schedule progress for classes shows the total number of available dates
+(scheduled, unscheduled) compared to the number of sessions that have
 already happened.
 
 ![Screenshot](../../assets/images/viewing-billable-events-02.png)
 
-If the group already has billable events set, the view shows the
-total number of billable events available compared to the number of
-billable events that have already happened. Next to the coin pile icon
-there is number in brackets indicating the number of billable events
-subject to payment that are set on the group or on the course.
+If the class already has billable sessions set, the view shows the
+total number of billable sessions available compared to the number of
+billable sessions that have already happened. Next to the coin pile icon
+there is number in brackets indicating the number of billable sessions
+subject to payment that are set on the class or on the programme.
 
 ![Screenshot](../../assets/images/viewing-billable-events-03.png)
 
 ![Screenshot](../../assets/images/discount-code-01.png)
 
-Attention! The setting on the group/course specifies how many billable events the
-group SHOULD HAVE. When viewing with billable events, we are looking at
-ACTUAL STATUS of events that are marked as paid. The number in
-parentheses serves as confirmation that the group does not actually
-contain MORE or LESS billable events than it should.
+Attention! The setting on the class/programme specifies how many billable sessions the
+class SHOULD HAVE. When viewing with billable sessions, we are looking at
+ACTUAL STATUS of sessions that are marked as paid. The number in
+parentheses serves as confirmation that the class does not actually
+contain MORE or LESS billable sessions than it should.
 
-## Viewing over/under drawn billable events
+## Viewing over/under drawn billable sessions
 
-As mentioned earlier, the number of events actually paid may differ
-from the settings in the group/course. Zooza will notify you of this
+As mentioned earlier, the number of sessions actually paid may differ
+from the settings in the class/programme. Zooza will notify you of this
 status as follows:
 
-- In group list when the group overrun is displayed: 2/4 (10)
+- In class list when the class overrun is displayed: 2/4 (10)
 - This
-means that the group has already set 2 billable events out of 4, but the
- total should be set to 10 events.
+means that the class has already set 2 billable sessions out of 4, but the
+ total should be set to 10 sessions.
 
-In group detail
+In class detail
 
-- under billable events setting, a warning will
-appear to remind you that you have more or less billable events than you
+- under billable sessions setting, a warning will
+appear to remind you that you have more or less billable sessions than you
  should have
 
-In event detail
+In session detail
 
-- under billable events setting, a warning will
-appear to remind you that you have more or less billable events than you
+- under billable sessions setting, a warning will
+appear to remind you that you have more or less billable sessions than you
  should have.
 
 ![Screenshot](../../assets/images/viewing-billable-events-05.png)
@@ -74,11 +78,11 @@ appear to remind you that you have more or less billable events than you
 ![Screenshot](../../assets/images/allowing-multiple-registration-03.png)
 
 
-You can view the overdrawn/under drawn billable events using the filter at the group level.
+You can view the overdrawn/under drawn billable sessions using the filter at the class level.
 
 ![Screenshot](../../assets/images/viewing-billable-events-07.png)
 
-## View billable events in calendar
+## View billable sessions in calendar
 
 1. On the calendar tile there is a “EURO coins” icon, which indicates whether the date is paid or not.
 
@@ -88,17 +92,17 @@ You can view the overdrawn/under drawn billable events using the filter at the g
 
 ![Screenshot](../../assets/images/viewing-billable-events-09.png)
 
-## View in the Lecturer report
+## View in the Instructor report
 
-In order to view a billable event in the lecturer report, see the *Paid* column, which indicates that the term is paid.
+In order to view a billable session in the instructor report, see the *Paid* column, which indicates that the term is paid.
 
 ![Screenshot](../../assets/images/viewing-billable-events-10.png)
 
 ## View in the Client profile
 
-In the client profile on the course report, the field: Total Events
-is displayed, which shows either the total number of billable events set
- for this group, or the total number of events in the group (if no
-billable events are set).
+In the client profile on the programme report, the field: Total Sessions
+is displayed, which shows either the total number of billable sessions set
+ for this class, or the total number of sessions in the class (if no
+billable sessions are set).
 
 ![Screenshot](../../assets/images/viewing-billable-events-11.png)

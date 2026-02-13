@@ -12,17 +12,17 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-12"
 intercom_id: 13725604
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Email and Communication FAQ
 
-## What is the difference between "Trial Registration Completed" and "Confirmation of Registration" emails?
+## What is the difference between "Trial Booking Completed" and "Confirmation of Booking" emails?
 
-- **Trial Registration Completed** — sent immediately after a parent books a trial class. It confirms the trial booking.
-- **Confirmation of Registration** — sent after a parent completes a full course enrolment (not a trial).
+- **Trial Booking Completed** — sent immediately after a parent books a trial class. It confirms the trial booking.
+- **Confirmation of Booking** — sent after a parent completes a full programme enrolment (not a trial).
 
-These are separate templates that serve different stages of the customer journey.
+These are separate templates that serve different stages of the client journey.
 
 ## What dynamic tags can I use in emails?
 
@@ -33,11 +33,11 @@ Common dynamic tags:
 - `*|BOOKING_URL|*` — pre-filled booking form link.
 - `*|WIDGET_PROFILE_URL|*` — secure direct-login link to the parent's profile.
 
-The full tag list is available via the **Tags** button in the email editor. Some tags only work in specific template types (e.g., event tags only in event notifications).
+The full tag list is available via the **Tags** button in the email editor. Some tags only work in specific template types (e.g., session tags only in session notifications).
 
 ## Do dynamic tags work in email subject lines?
 
-Yes, but with limitations. Some tags may not populate in certain template types. Test your email before sending to a large group.
+Yes, but with limitations. Some tags may not populate in certain template types. Test your email before sending to a large class.
 
 ## Why does my email lose formatting when sent?
 
@@ -51,7 +51,7 @@ Replies go directly into the Zooza application. The reply-to address is system-m
 
 Custom sending domains are available for specific plans. Contact your Zooza account manager to discuss options.
 
-## How do I send an email to all customers at a specific location?
+## How do I send an email to all clients at a specific location?
 
 Go to **Bookings**, filter by the relevant class or location, and use the bulk communication option. You can also go to **Communication** for broader email sends, though the filtering options differ from the bookings view.
 
@@ -61,4 +61,4 @@ Class reminders are part of the automated email flow. They are configured per pr
 
 ## Can I get an email notification when a new booking or trial comes in?
 
-Yes. Admin notifications are configured in the system settings. You receive an email whenever a new registration (including trials) is created.
+Yes. Admin notifications are configured in the system settings. You receive an email whenever a new booking (including trials) is created.

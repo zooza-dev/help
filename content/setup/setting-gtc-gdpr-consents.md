@@ -12,18 +12,18 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13726037
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Setting GTC, GDPR and other consents
 
-When registering clients for a course, it is necessary for clients to
+When registering clients for a programme, it is necessary for clients to
  agree to various consents, such as terms of business or consent to the
 processing of personal data. All important and legally necessary matters
  that you simply must have settled and signed with your clients.
 
 
-You can insert approvals for each course separately and even tell what and how to display where.
+You can insert approvals for each programme separately and even tell what and how to display where.
 
 
 1. To set it up, go to *Settings – General Settings*.
@@ -69,8 +69,8 @@ Obligation to consent:
 
 Requiring from – who you are asking for approval from:
 
-1. from all registered – consent will always be displayed regardless of the course
-2. only for selected courses – consent will only be displayed for courses you select from the list
+1. from all registered – consent will always be displayed regardless of the programme
+2. only for selected programmes – consent will only be displayed for programmes you select from the list
 
 ![Screenshot](../../assets/images/setting-gtc-gdpr-consents-07.png)
 
@@ -78,7 +78,7 @@ If you want to add more agreements click on the *Add* button and repeat the proc
 
 ![Screenshot](../../assets/images/discount-code-01.png)
 
-Note: If you want the same consent to appear on the registration and product forms, you need to create two identical entries.
+Note: If you want the same consent to appear on the booking and product forms, you need to create two identical entries.
 
 ![Screenshot](../../assets/images/discount-code-07.png)
 

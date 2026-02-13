@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13726045
-intercom_sync: false
+intercom_sync: true
 ---
 
 # WhatsApp Integration & Usage (Beta)
@@ -81,7 +81,7 @@ To send outbound system messages (templates) from Zooza, Meta requires a valid p
 - **Outbound system messages**: billed by Meta based on conversation type and region.
 - Full pricing overview: `https://business.whatsapp.com/products/platform-pricing`
 
-Once your card is added and Meta billing is active, Zooza can automatically send templates for login, confirmations, reminders, schedule changes, and other system events.
+Once your card is added and Meta billing is active, Zooza can automatically send templates for login, confirmations, reminders, schedule changes, and other system sessions.
 
 ## How WhatsApp works in Zooza
 
@@ -94,7 +94,7 @@ Once your card is added and Meta billing is active, Zooza can automatically send
 ### Templates
 
 - After business verification, Zooza submits a set of **official WhatsApp templates** (e.g., login, confirmations, reminders, changes, payments) for **Meta approval**.
-- Once approved, Zooza **automatically** uses them for system events.
+- Once approved, Zooza **automatically** uses them for system sessions.
 - You can edit wording and languages; newly edited templates must be **re-approved**.
 - Manage in **Zooza App --> Messages --> WhatsApp --> Templates**.
 

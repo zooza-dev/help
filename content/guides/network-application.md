@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13725836
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Network Application
@@ -26,8 +26,8 @@ These metrics can be analyzed across various dimensions—by franchise company, 
 A key strength of the application is its customizability. The franchisor has full control to:
 
 1. Define and manage the list of companies included in the network
-2. Standardize and assign product codes that unify course tracking across the network
-3. Monitor the progress and performance of courses and offerings throughout all franchise branches
+2. Standardize and assign product codes that unify programme tracking across the network
+3. Monitor the progress and performance of programmes and offerings throughout all franchise branches
 
 This application is designed to support strategic decision-making, operational oversight, and consistency across the franchise network through accurate, real-time reporting and flexible configuration.
 
@@ -48,7 +48,7 @@ All charts and metrics dynamically adjust based on the selected mode, allowing u
 ## Metrics Overview
 
 
-Metrics are divided into 3 main groups:
+Metrics are divided into 3 main classes:
 
 1. Enrollments
 2. Payments
@@ -79,19 +79,19 @@ Defined as classes of the following types:
 ### New Enrollments
 
 
-The number of registrations created within the selected period, aggregated across all dimensions (e.g. product, company, place).
+The number of bookings created within the selected period, aggregated across all dimensions (e.g. product, company, place).
 
 ### Enrollments
 
- The number of active clients with registration status "Registered" as of the current run date (T-1). For broader date ranges, this is shown as an average across the selected periods.
+ The number of active clients with booking status "Registered" as of the current run date (T-1). For broader date ranges, this is shown as an average across the selected periods.
 
 ![Screenshot](../../assets/images/client-import-01.png)
 
-Note: Early in a new period, you may see only a few New Enrollments, but the total Enrollments remains high due to ongoing registrations from earlier periods.
+Note: Early in a new period, you may see only a few New Enrollments, but the total Enrollments remains high due to ongoing bookings from earlier periods.
 
 ### Unpaid Enrollments
 
-Counts the number of enrollments with unpaid debt, whether for a currently running class or one that hasn’t started yet. Includes registrations still within their payment due window.
+Counts the number of enrollments with unpaid debt, whether for a currently running class or one that hasn’t started yet. Includes bookings still within their payment due window.
 
 
 ### Cancellations

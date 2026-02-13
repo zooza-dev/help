@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-12"
 intercom_id: 13725613
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Stripe Integration FAQ
@@ -29,13 +29,13 @@ If you need the full Stripe dashboard, try navigating directly to `dashboard.str
 
 ## Is Apple Pay / Google Pay supported?
 
-Yes. Apple Pay and Google Pay are supported through Stripe. You need to enable them in your Stripe payment method settings. Once enabled, customers will see these options on mobile devices during checkout.
+Yes. Apple Pay and Google Pay are supported through Stripe. You need to enable them in your Stripe payment method settings. Once enabled, clients will see these options on mobile devices during checkout.
 
 ## How do I test payments before going live?
 
-You can test the full payment flow by creating a booking yourself as a customer. Use the public booking link, complete the registration, and make a test payment. Remember to:
+You can test the full payment flow by creating a booking yourself as a client. Use the public booking link, complete the booking, and make a test payment. Remember to:
 
-1. Delete the test registrations afterwards.
+1. Delete the test bookings afterwards.
 2. Restore any prices you changed during testing.
 3. Verify that all classes have the correct payment methods enabled.
 

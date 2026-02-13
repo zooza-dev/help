@@ -12,37 +12,37 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-12"
 intercom_id: 13725608
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Onboarding and Launch FAQ
 
-## What should I check before sending booking links to customers?
+## What should I check before sending booking links to clients?
 
 Before going live, verify that:
 
 1. **All classes** have the correct payment methods enabled (card, Apple Pay, etc.).
 2. **Pricing** is set correctly on every class (especially after testing — prices may have been changed during test payments).
-3. **Registration forms** are consistent across all classes (same buttons, same fields, same customer journey).
+3. **Booking forms** are consistent across all classes (same buttons, same fields, same client journey).
 4. **Extra fields** (e.g., medical conditions, gender) are configured the same way across programmes, unless intentionally different.
-5. **Test registrations** are deleted so they don't skew your data.
-6. **Booking links** are tested end-to-end — complete a test registration yourself to see what customers will experience.
+5. **Test bookings** are deleted so they don't skew your data.
+6. **Booking links** are tested end-to-end — complete a test booking yourself to see what clients will experience.
 
-## How do I migrate existing customers from another system to Zooza?
+## How do I migrate existing clients from another system to Zooza?
 
-For customers already in your old system:
+For clients already in your old system:
 
 1. Send them a Zooza booking link to re-register.
 2. If they should not pay the registration fee again, create a discount code for the fee amount (e.g., code "MEMBER" for the full registration fee).
 3. Once registered, they are set up with recurring payments in Zooza.
 
-This is a one-time transition process. After the migration, all new customers follow the standard Zooza flow.
+This is a one-time transition process. After the migration, all new clients follow the standard Zooza flow.
 
 ## Can I launch bookings before my invoicing is fully set up?
 
 Yes. You can disable automatic invoice generation, start accepting bookings and payments, and generate invoices retroactively once your accounting settings are finalized.
 
-## What should I do if customers report inconsistent experiences?
+## What should I do if clients report inconsistent experiences?
 
 Check that all classes within each programme have the same settings:
 
@@ -66,7 +66,7 @@ The first billing cycle often needs special attention:
 Products are managed under **Products / Services**. You can:
 
 - Add items with descriptions, prices, and variants (e.g., sizes).
-- Offer products during registration as add-ons.
-- Create separate one-off bookings for events like birthday parties — set up a new course/class for the event and share the booking link with the customer.
+- Offer products during booking as add-ons.
+- Create separate one-off bookings for sessions like birthday parties — set up a new programme/class for the session and share the booking link with the client.
 
-For birthday parties or one-off events, create a new course (e.g., "Events / Specials"), add one class with the event date, and share the generated booking link.
+For birthday parties or one-off sessions, create a new programme (e.g., "Sessions / Specials"), add one class with the session date, and share the generated booking link.

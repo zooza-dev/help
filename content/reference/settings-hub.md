@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-13"
 intercom_id: 13726010
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Settings
@@ -71,7 +71,7 @@ Button: **Create new billing period**.
 | `Sender's name in the SMS message` | Name shown when sending SMS. Restriction: 10 characters only. |
 | `Email address` | Main contact email for you and your clients. |
 | `URL on the invoice` | Website URL displayed on invoices. |
-| `Application Communication Language` | Language for widgets and email communication to customers. If customized templates don't match this language, customers still receive the customized versions. |
+| `Application Communication Language` | Language for widgets and email communication to clients. If customized templates don't match this language, clients still receive the customized versions. |
 | `Company logo` | Upload logo in GIF, JPG, or PNG format. |
 
 ### Settings for Programmes
@@ -86,7 +86,7 @@ General settings for all programmes:
 | `Number of days` | Days before the session when client may cancel. 0 = on the day of the session. |
 | `The time prior to which you allow clients to cancel` | Exact time on the cancellation day. After this time, the user is informed they missed the limit. |
 | `Block cancellations on weekends and holidays` | If enabled, the cancellation limit for Monday sessions will be Friday at midnight. |
-| `Time limit in hours for creating a tailored make-up session` | Earliest time (hours before the regular session) when customers can create make-up sessions. If zero, default of 24 hours is used. |
+| `Time limit in hours for creating a tailored make-up session` | Earliest time (hours before the regular session) when clients can create make-up sessions. If zero, default of 24 hours is used. |
 | `Time restriction in hours for offering a regular make-up session` | Time limit in hours before a session starts, after which it won't be offered as a make-up option. |
 
 ### Sessions
@@ -95,10 +95,10 @@ General settings for all programmes:
 |---|---|
 | `Require instructors to complete summaries of sessions for their clients` | When enabled, if the instructor does not complete the summary, a reminder is sent the next day. |
 | `Automatically cancel a session if it is empty` | When the last client cancels, the session is automatically changed to "Cancelled" status. |
-| `Automatically close attendance` | Number of days after which attendance is automatically closed for all participants in "Will be present" status. Set to 0 to disable. For one-off events, attendance is closed only for logged-in participants at closing time. |
-| `Custom Customer ID` | Format template for customer IDs. Allowed values: Unique ID (U), sequence number (1–10 minimum length). Each symbol needs curly braces. |
+| `Automatically close attendance` | Number of days after which attendance is automatically closed for all participants in "Will be present" status. Set to 0 to disable. For one-off sessions, attendance is closed only for logged-in participants at closing time. |
+| `Custom Customer ID` | Format template for client IDs. Allowed values: Unique ID (U), sequence number (1–10 minimum length). Each symbol needs curly braces. |
 | `Regenerate all customer IDs` | Regenerate all IDs based on the current format. |
-| `Online meeting instructions` | Rich text editor for instructions shown in customers' profiles for online sessions. |
+| `Online meeting instructions` | Rich text editor for instructions shown in clients' profiles for online sessions. |
 
 ### Calendar
 

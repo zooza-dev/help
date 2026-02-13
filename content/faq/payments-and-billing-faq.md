@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-12"
 intercom_id: 13725610
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Payments and Billing FAQ
@@ -26,11 +26,11 @@ The balance shows the difference between what the client should pay and what the
 
 A negative balance does not necessarily mean "overpaid" — it means there is an outstanding amount.
 
-## What happens when a customer registers but does not pay?
+## What happens when a client registers but does not pay?
 
-The registration is created even if the payment fails or is skipped. This ensures you still capture the lead. The parent can complete the payment later via their Parent Portal.
+The booking is created even if the payment fails or is skipped. This ensures you still capture the lead. The parent can complete the payment later via their Parent Portal.
 
-You can configure **payment reminders** per programme to automatically follow up with unpaid customers. After a set number of reminders, the system can auto-remove the registration.
+You can configure **payment reminders** per programme to automatically follow up with unpaid clients. After a set number of reminders, the system can auto-remove the booking.
 
 ## How do payment reminders work?
 
@@ -38,7 +38,7 @@ Payment reminders are configured per programme under the payment settings. You s
 
 - How many reminders to send.
 - The interval between reminders.
-- Whether the system should automatically cancel the registration after all reminders expire.
+- Whether the system should automatically cancel the booking after all reminders expire.
 
 Go to **Programme → Settings → Price** to configure this.
 
@@ -65,10 +65,10 @@ Choose the option that fits your business model. Most clients prefer aliquot OFF
 
 Yes. You can disable automatic invoice generation during launch, accept bookings and payments, and then generate invoices later once your accounting settings (e.g., VAT rates in Xero) are fully configured.
 
-## How do I handle a customer who forgot to use a discount code?
+## How do I handle a client who forgot to use a discount code?
 
-Instead of refunding, the easiest approach is to reduce the next instalment by the discount amount and send the customer a quick note explaining the adjustment. This is simpler than editing past payments.
+Instead of refunding, the easiest approach is to reduce the next instalment by the discount amount and send the client a quick note explaining the adjustment. This is simpler than editing past payments.
 
 ## How do I mark a booking as paid when payment was received outside the system?
 
-If a customer paid by direct bank transfer or you credited them manually, you can adjust the payment status in their booking detail. Go to **Bookings → Detail → Payments** and record the manual payment to clear the outstanding balance.
+If a client paid by direct bank transfer or you credited them manually, you can adjust the payment status in their booking detail. Go to **Bookings → Detail → Payments** and record the manual payment to clear the outstanding balance.

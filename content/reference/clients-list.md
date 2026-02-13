@@ -257,8 +257,8 @@ Click **Import** to start a new import, or click a row to view details.
 
 After mapping fields, assign imported clients to timetables:
 
-1. The system groups clients by their `Class` value from the CSV.
-2. For each group, a list of matching timetables is shown with filters for `Name`, `Billing period`, `Programme`, `Location`, `Instructor`, and `Day`.
+1. The system classes clients by their `Class` value from the CSV.
+2. For each class, a list of matching timetables is shown with filters for `Name`, `Billing period`, `Programme`, `Location`, `Instructor`, and `Day`.
 3. Click **Choose** next to the target timetable to assign clients.
 4. Selected clients appear in a highlighted table. Use checkboxes to select/deselect individual rows.
 5. Use **Transfer** to move selected clients, or **Delete** to remove them.

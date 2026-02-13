@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13726040
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Szamlazz Invoice Management
@@ -36,7 +36,7 @@ Notes:
 2. VAT configurations are pulled from Zooza into Számlázz.
 3. Once an invoice has been created, it cannot be modified.
 4. When linking Zooza and Számlázz, we recommend to use a Számlázz test environment. After confirming that everything works as expected, switch to your live Számlázz account.
-5. For business registrations, Számlázz will automatically forward each generated invoice to Hungary’s NAV system.
+5. For business bookings, Számlázz will automatically forward each generated invoice to Hungary’s NAV system.
 
 ## Connection in Zooza:
 
@@ -45,7 +45,7 @@ Notes:
 2. Token can be found on the main page at the bottom under invoice list and the block of users. Detailed information can be found in this [link](https://tudastar.szamlazz.hu/gyik/kulcs).
  ![Screenshot](../../assets/images/szamlazz-invoices-04.png)
  Resource: [https://tudastar.szamlazz.hu/gyik/kulcs](https://tudastar.szamlazz.hu/gyik/kulcs)
-3. Choose whether you want automatic generation of invoices or you will manually generate invoices per registration.
+3. Choose whether you want automatic generation of invoices or you will manually generate invoices per booking.
  ![Screenshot](../../assets/images/szamlazz-invoices-05.png)
 4. Set up Billing profile/s for communication from Zooza.
 5. Set up VAT

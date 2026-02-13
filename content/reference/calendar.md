@@ -71,7 +71,7 @@ Each question row shows:
 Zooza provides a set of pre-configured feedback questions:
 
 1. **NPS — company**: "How likely are you to recommend *|COMPANY_NAME|* to your friends?"
-2. **NPS — course**: "How likely are you to recommend *|COURSE_NAME|* to your friends?"
+2. **NPS — programme**: "How likely are you to recommend *|COURSE_NAME|* to your friends?"
 3. **Location**: "Would you recommend the programme based on its location?"
 4. **Instructor**: "Would you recommend the programme based on the instructor?"
 5. **Tools**: "Would you recommend the programme based on the tools you have used?"

@@ -49,7 +49,7 @@ Controls how much clients pay and how payments are collected.
 |---|---|
 | `How do you want to collect payments?` | **One off payment** — single charge. **In scheduled payments** — recurring (term, membership, subscription). |
 | `Price type for programme` | **Term payment** — total price split into instalments by frequency. **Membership** — recurring charge at a fixed interval. |
-| `Booking fee` | One-time fee charged at registration. |
+| `Booking fee` | One-time fee charged at booking. |
 | `Advanced settings` | Expandable section with: Down payment, Late bookings policy, Aliquot price calculation, Billable sessions, Payment managed by registrant. |
 | `Down payment` | None, Fixed amount, or Percentage of total price. |
 
@@ -68,7 +68,7 @@ Controls how the programme appears on your public booking forms.
 | `Allow online booking` | Master toggle — shows/hides the programme on your website. |
 | `Priority` | Display order (0–1000). Higher priority = higher in the list. Default: 0. |
 | `Display in catalogue` | Show classes in the website menu. |
-| `Booking Options Shown on Website` | **Default** — customer chooses. **Full programme only**, **Trials only**, **Blocks only**, **Trials or blocks**. |
+| `Booking Options Shown on Website` | **Default** — client chooses. **Full programme only**, **Trials only**, **Blocks only**, **Trials or blocks**. |
 | `Allow multiple bookings for the programme` | Enables parents to enrol multiple children at once (e.g., twins). |
 | `Minimum / Maximum number of bookings` | Min and max children per form submission. |
 | `Collect basic data from` | **All** enrolled or **Only the registrant**. |
@@ -161,7 +161,7 @@ Core programme identity and type.
 | Field | Description |
 |---|---|
 | `Programme type` | Programme (instructors, sessions) or other types. |
-| `Target audience` | **Group Timetables** or **1-To-1 classes**. |
+| `Target audience` | **Class Timetables** or **1-To-1 classes**. |
 | `For children` | Uses child-oriented wording on booking forms. |
 
 ### Labels and Colour
@@ -181,7 +181,7 @@ Configures extra data fields on the booking form.
 | `Date of birth` | Show on form, custom label, mandatory flag. Optionally restrict booking by age (min/max, by date of birth or by age). |
 | `Child's full name` | Show on form, custom label, mandatory flag. |
 | `Address` | Simple (single field) or Structured (street, city, zip code). |
-| `Number of occupied slots` | Relevant for events (e.g., birthday parties). |
+| `Number of occupied slots` | Relevant for sessions (e.g., birthday parties). |
 | `Business name` / `Business address` / `Business ID` / `Tax ID` / `VAT` | Business/invoice fields. |
 | `Identification (birth) number` | National ID field. |
 | `Additional field 1–5` | Custom fields with Text or Choice type. Choice fields use key/value pairs for export. |
@@ -283,5 +283,5 @@ Controls attendance tracking and session rescheduling.
 - [Programmes List](programmes-list.md) — the main programmes view.
 - [Programme Automations](programme-automations.md) — booking, payment, and enrolment automations.
 - [Payment Options Guide](../guides/payment-options.md) — how to configure payment methods.
-- [Trial Lessons Setup](../setup/trial-lessons.md) — step-by-step trial configuration.
+- [Trial Sessions Setup](../setup/trial-lessons.md) — step-by-step trial configuration.
 - [Online Registration Setup](../setup/online-registration.md) — publishing your booking forms.

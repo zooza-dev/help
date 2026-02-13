@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13725797
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Discount code
@@ -24,7 +24,7 @@ who know it can use it.
 
 ![Screenshot](../../assets/images/discount-code-01.png)
 
-Note: The discount can only be applied to courses by
+Note: The discount can only be applied to programmes by
 entering the code in the registration form. In order for clients to be
 able to enter the code, you must enable the *Discount* field in the main settings under *Registration Forms – Registration Form*.
 
@@ -61,7 +61,7 @@ Set the conditions where the code can be applied by clicking the *Change* button
 You can apply the code in:
 
 
-- Courses
+- Programmes
 - Billing periods
 - Locations
 - Products
@@ -87,23 +87,23 @@ usage or number of uses.
 ## Client use of discount code
 
 The discount code can only be applied through the registration form located on your website.
- The customer simply applies the code at registration by entering it and
+ The client simply applies the code at booking by entering it and
 can immediately check the amount of the discount you have given them.
 
 ![Screenshot](../../assets/images/discount-code-01.png)
 
 Note: The discount code cannot be used in the product
-form, the discount is only valid for course registration, it does not
+form, the discount is only valid for programme booking, it does not
 affect products.
 
 ![Screenshot](../../assets/images/discount-code-11.png)
 
 ## Where can I see the discount code in Zooza?
 
-1. Registration level
-2. In a specific client registration in *Payments* section
+1. Booking level
+2. In a specific client booking in *Payments* section
  ![Screenshot](../../assets/images/discount-code-12.png)
-3. In *Credits and replacement lessons* section – when you click on the *More *button, you will see the name of the code applied at registration.
+3. In *Credits and replacement sessions* section – when you click on the *More *button, you will see the name of the code applied at booking.
  ![Screenshot](../../assets/images/discount-code-13.png)
 
 Client level
@@ -111,7 +111,7 @@ Client level
 
 1. At the bottom of the client overview, you have the option to see all the
  credits associated with the client. One of the entries is also a
-discount code that will appear after a client registered for a course.
+discount code that will appear after a client registered for a programme.
  ![Screenshot](../../assets/images/discount-code-14.png)
 
 Discount level

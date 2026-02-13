@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-13"
 intercom_id: 13726005
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Publish (Widgets)
@@ -101,7 +101,7 @@ Available widget types:
 | **Booking form** | Used to enrol clients to your programmes. |
 | **Calendar / Schedule** | Shows all programmes/classes in a coherent calendar view. |
 | **Profile** | Used for clients to review and manage their programmes, sessions, and products. |
-| **View videos** | Displays videos attached in programmes for enrolled customers. |
+| **View videos** | Displays videos attached in programmes for enrolled clients. |
 | **Sales form** | Used to sell products and services (t-shirts, videos, e-books, accommodation, insurance) to clients. Can be linked to the booking form and client profile. |
 | **Map** | Displays all locations on a map and offers available timetables for online booking. |
 

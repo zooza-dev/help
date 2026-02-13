@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13725802
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Documents
@@ -22,9 +22,9 @@ Zooza offers the ability to insert and manage different types of documents. This
 
 Documents are set up on these in the Documents section and can be used at the following levels:
 
-1. Group level
-2. Event level
-3. Registration level
+1. Class level
+2. Session level
+3. Booking level
 
 ## 1. Document management
 
@@ -52,7 +52,7 @@ The document can be in all formats, including formats for images.
 ## Video
 
 
-The app allows you to embed videos in all available formats, which you can use to inform participants about course content, important instructions, or to share recordings of lessons for further training or refresher sessions. This functionality provides a flexible way to better communicate and share content with clients.
+The app allows you to embed videos in all available formats, which you can use to inform participants about programme content, important instructions, or to share recordings of sessions for further training or refresher sessions. This functionality provides a flexible way to better communicate and share content with clients.
 
 1. As with uploading documents, upload a video by clicking Browse and then Upload.
  ![Screenshot](../../assets/images/documents-04.png)
@@ -64,27 +64,27 @@ The app allows you to embed videos in all available formats, which you can use t
 ## URL
 
 
-URL links are most commonly used to share online courses, articles or videos. You can also embed links using dynamic tags that allow you to customize the URL for specific communications, such as online meetings via Google Meet. In this case, the dynamic tag identifies a unique part of the URL for the correct meetup. For more information on exactly how to work with this functionality, see *Using a link with a dynamic tag *in this manual section below. If you don't want to use dynamic tags, simply enter the desired URL in the *New URL Link* field, which you then share with clients, and click *Next*.
+URL links are most commonly used to share online programmes, articles or videos. You can also embed links using dynamic tags that allow you to customize the URL for specific communications, such as online meetings via Google Meet. In this case, the dynamic tag identifies a unique part of the URL for the correct meetup. For more information on exactly how to work with this functionality, see *Using a link with a dynamic tag *in this manual section below. If you don't want to use dynamic tags, simply enter the desired URL in the *New URL Link* field, which you then share with clients, and click *Next*.
 
 ![Screenshot](../../assets/images/documents-07.png)
 
 ### Using a link with a dynamic tag
 
 
-The dynamic tag link insertion functionality allows you to create personalized links for different groups or individual registrations. This option is ideal when you need to share a unique link to a meeting, save folder, or any other digital content. The dynamic tag in the link automatically customizes to each registration or group, ensuring that everyone gets a unique and relevant link without the need for manual editing. This is handy when organizing various online events such as Zoom meetings or when sharing private documents. You can find the full list of dynamic tags [here](dynamic-tags.md).
+The dynamic tag link insertion functionality allows you to create personalized links for different classes or individual bookings. This option is ideal when you need to share a unique link to a meeting, save folder, or any other digital content. The dynamic tag in the link automatically customizes to each booking or class, ensuring that everyone gets a unique and relevant link without the need for manual editing. This is handy when organizing various online sessions such as Zoom meetings or when sharing private documents. You can find the full list of dynamic tags [here](dynamic-tags.md).
 To use a dynamic tag, follow these steps:
 
 1. In the *New URL link* field, enter a URL with a dynamic tag.
  ![Screenshot](../../assets/images/documents-08.png)
-2. At the group level insert, enter the URL.
+2. At the class level insert, enter the URL.
  ![Screenshot](../../assets/images/documents-09.png)
-3. In the *additional field *in the registration form, fill in the dynamic tag part at the registration level.
+3. In the *additional field *in the registration form, fill in the dynamic tag part at the booking level.
  ![Screenshot](../../assets/images/documents-10.png)
 
 ## Dynamic document
 
 
-We recommend using this functionality to generate documents such as payment receipts or receipts for the needs of the end client's insurance company or employer.Therefore, dynamic documents can only be generated at the registration level. In this section you only create a template for the document. Its final form is generated only at registration (see Inserting a document at registration level).
+We recommend using this functionality to generate documents such as payment receipts or receipts for the needs of the end client's insurance company or employer.Therefore, dynamic documents can only be generated at the booking level. In this section you only create a template for the document. Its final form is generated only at booking (see Inserting a document at booking level).
 
 The function is used to generate PDF documents that can contain:
 
@@ -113,49 +113,49 @@ The function is used to generate PDF documents that can contain:
 
 Note: The company logo and name is automatically generated in the header without manually adding it to the template. It needs to be inserted in the *General Settings* of the application to be filled in the document.
 
- b. *The document name *is the field that will be displayed to the client in the profile and in the application. This name can be different than the dynamic document name that was set when the document was created. You can use dynamic tags with course/group name and others in this field.
+ b. *The document name *is the field that will be displayed to the client in the profile and in the application. This name can be different than the dynamic document name that was set when the document was created. You can use dynamic tags with programme/class name and others in this field.
 
 ![Screenshot](../../assets/images/documents-15.png)
 
- c. In the *Text *section, you enter all the information you need to pass on to the client. Since these documents are for client use only, we recommend using dynamic tags to automatically retrieve information about the client themselves and their registration. The full list of tags can be found [here](dynamic-tags.md).
+ c. In the *Text *section, you enter all the information you need to pass on to the client. Since these documents are for client use only, we recommend using dynamic tags to automatically retrieve information about the client themselves and their booking. The full list of tags can be found [here](dynamic-tags.md).
 
 
 ![Screenshot](../../assets/images/documents-16.png)
 
-## 2. Adding documents at group level
+## 2. Adding documents at class level
 
 
-You can assign documents that you have already created at the group level. You can do this in the details of the selected group in the *Documents *tile.
+You can assign documents that you have already created at the class level. You can do this in the details of the selected class in the *Documents *tile.
 
 ![Screenshot](../../assets/images/documents-17.png)
 
 ![Screenshot](../../assets/images/client-import-03.png)
 
-Warning! You cannot assign dynamic documents at the group level. This feature is only available at the registration level.
+Warning! You cannot assign dynamic documents at the class level. This feature is only available at the booking level.
 
 
 1. In the tile, select what exactly you need to select - Documents, Videos, URLs. In case of documents and URLs you can only assign digital content from the library, in case of videos you can also upload new content directly at this level.
  ![Screenshot](../../assets/images/documents-19.png)
-2. For selected documents, you can set when they are shown to registrations.
+2. For selected documents, you can set when they are shown to bookings.
  ![Screenshot](../../assets/images/documents-20.png)
 
-## 3. Adding documents at lesson/event level
+## 3. Adding documents at session/session level
 
 
-The last option where you can assign digital content is at the event level. This works in the same way as assigning to a group or registration. In the *Documents *tile, add the ones you want to offer to clients directly on the term.
+The last option where you can assign digital content is at the session level. This works in the same way as assigning to a class or booking. In the *Documents *tile, add the ones you want to offer to clients directly on the term.
 
 ![Screenshot](../../assets/images/documents-21.png)
 
 ![Screenshot](../../assets/images/client-import-03.png)
 
-Warning. Clients only see these documents in their profile after the event has taken place.
+Warning. Clients only see these documents in their profile after the session has taken place.
 
 ![Screenshot](../../assets/images/documents-23.png)
 
-## 4. Adding documents at registration level
+## 4. Adding documents at booking level
 
 
-If you only want to provide digital content to a single registration, you can achieve this in the registration details in the Documents tile. You can also assign dynamic documents at the registration level.
+If you only want to provide digital content to a single booking, you can achieve this in the booking details in the Documents tile. You can also assign dynamic documents at the booking level.
 
 ![Screenshot](../../assets/images/documents-24.png)
 

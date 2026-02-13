@@ -12,14 +12,14 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-12"
 intercom_id: 13725616
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Xero Integration FAQ
 
 ## Can I disable automatic invoice generation temporarily?
 
-Yes. You can switch off automatic invoice generation so invoices are not sent to customers until your Xero settings (e.g., VAT rates) are fully configured. Customers will still receive payment confirmations.
+Yes. You can switch off automatic invoice generation so invoices are not sent to clients until your Xero settings (e.g., VAT rates) are fully configured. Clients will still receive payment confirmations.
 
 ## Can I generate invoices retroactively?
 

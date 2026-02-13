@@ -12,66 +12,66 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13725837
-intercom_sync: false
+intercom_sync: true
 ---
 
-# New course with existing clients
+# New programme with existing clients
 
-When you finish old courses/groups, you have many clients who want to
+When you finish old programmes/classes, you have many clients who want to
  continue with you. That’s why you start thinking about how to create
-new courses and how to transfer your client database.
+new programmes and how to transfer your client database.
 
 The app allows multiple ways you can do this for them or with minimal help from them.
 
-## Create a new group
+## Create a new class
 
-It is not always necessary to create new courses. This procedure
-counts on the fact that the course with its setting remains and you just
- want to create a new group of people for a new duration of the course.
+It is not always necessary to create new programmes. This procedure
+counts on the fact that the programme with its setting remains and you just
+ want to create a new class of people for a new duration of the programme.
 
-You can create a new group within the course and give it new properties or copy an existing group.
-Advantages of copying the group:
+You can create a new class within the programme and give it new properties or copy an existing class.
+Advantages of copying the class:
 
-- copy all group settings
+- copy all class settings
 - possibility of copying terms
-- possibility of copying registrations
+- possibility of copying bookings
 
-You can find the procedure how to copy groups, terms and registrations [HERE](https://support.zooza.online/portal/en/kb/articles/copy-courses-groups).
+You can find the procedure how to copy classes, terms and bookings [HERE](https://support.zooza.online/portal/en/kb/articles/copy-courses-groups).
 
-## Copying all group settings
+## Copying all class settings
 
-When copying data, you always have the option of editing it. Whether it’s settings, terms or registrations.
+When copying data, you always have the option of editing it. Whether it’s settings, terms or bookings.
 If
- you will be copying registrations along with the group, be aware that
+ you will be copying bookings along with the class, be aware that
 this is a copy not a transfer. This means that no credits, replacement
-lessons or payments will be transferred to registrations. Registrations
-will have a new registration number (variable symbol) created with
+sessions or payments will be transferred to bookings. Bookings
+will have a new booking number (variable symbol) created with
 completely clean credit and payment details.
 
 But at the same time, you don’t have to worry that the data will be lost or that the client will no longer have access to it.
 The
- client can access the replacement lessons as well as the payment data
+ client can access the replacement sessions as well as the payment data
 via his/her profile, where he/she can see all the data from the original
- registrations and can subsequently work with them further (e.g. replace
- lessons).
+ bookings and can subsequently work with them further (e.g. replace
+ sessions).
 
-When copying registrations, it is important to remember that you are
-not copying the client, but only the client’s registration with the
+When copying bookings, it is important to remember that you are
+not copying the client, but only the client’s booking with the
 client’s basic data. The system looks at clients through their
-registrations. This means that one client can have several registrations
- for different courses. Therefore, a new registration number is created
+bookings. This means that one client can have several bookings
+ for different programmes. Therefore, a new booking number is created
 for the client.
 
-This copying procedure allows you and your clients to have order in your payments, terms and replacement lessons.
+This copying procedure allows you and your clients to have order in your payments, terms and replacement sessions.
 
-If you need to move a client to a group and want to keep the payment or credit details, you need to use the *Move Client*
- functionality, which can be found in the registration details. However,
- this transfer can only be done individually after registrations, not in
+If you need to move a client to a class and want to keep the payment or credit details, you need to use the *Move Client*
+ functionality, which can be found in the booking details. However,
+ this transfer can only be done individually after bookings, not in
  bulk.
 
-Of course, you always have the option of leaving the registration up
+Of course, you always have the option of leaving the booking up
 to your clients, who will be notified that you have launched a new
-course and can register for it through your site.
+programme and can register for it through your site.
 
 ## Creating new terms
 
@@ -79,8 +79,8 @@ If you choose this approach, you will have less work to do in the administration
 
 Pros:
 
-- you don’t need to create a new group
-- no need to copy/move registrations
+- you don’t need to create a new class
+- no need to copy/move bookings
 
 Cons:
 
@@ -88,17 +88,17 @@ Cons:
 - less visibility in payments of both you and the client – debts from the previous period are also displayed
 
 In this procedure, you only create new terms within the original
-group. This will ensure that the original registrations are still valid
-and will just have new dates added to the course list. The terms of
-payment as well as the replacement lessons remain as they were before.
+class. This will ensure that the original bookings are still valid
+and will just have new dates added to the programme list. The terms of
+payment as well as the replacement sessions remain as they were before.
 
 But what you and your clients may be missing is clarity in terms or
 payments. Clients as well as you will have a long list of appointments
 and a poorer track record of payments that will be cumulative within a
-single registration.
+single booking.
 
 Also, don’t forget that if you have clients who will not continue the
- course for the term you need to manually discard their registrations by
- changing their registration status. This will ensure that the system
+ programme for the term you need to manually discard their bookings by
+ changing their booking status. This will ensure that the system
 does not send them notification emails and that space is freed up for
 other applicants.

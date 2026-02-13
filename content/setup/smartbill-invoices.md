@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13726039
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Smartbill - invoice management
@@ -42,7 +42,7 @@ Connection to the service allows you to create invoices in the direction of Zooz
  ![Screenshot](../../assets/images/smartbill-invoices-02.png)
 
 
-Choose whether you want automatic generation of invoices or you will manually generate invoices per registration
+Choose whether you want automatic generation of invoices or you will manually generate invoices per booking
 
 ![Screenshot](../../assets/images/smartbill-invoices-03.png)
 

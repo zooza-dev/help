@@ -23,37 +23,37 @@ Personas is a feature that distinguishes between attendees and clients, giving e
 
 Person can be created in 2 ways:
 
-1. Automatically during registration
+1. Automatically during booking
 2. Manually within the application
 
 
 There are 2 types of persons you can work with:
 
-1. Client – the email address used to create the registration
-2. Attendee – the person who actually attends the course
+1. Client – the email address used to create the booking
+2. Attendee – the person who actually attends the programme
 
 ![Screenshot](../../assets/images/individual-lessons-climbing-wall-02.png)
 
-Example: In children’s courses, the client is typically the parent, while the attendee is the child.
+Example: In children’s programmes, the client is typically the parent, while the attendee is the child.
 
 ## Automatic creation
 
 
-When a person is created automatically during registration, the system follows these rules:
+When a person is created automatically during booking, the system follows these rules:
 
 1. The person who enters the email and basic details is always the Client.
-2. The Client is also an Attendee unless the course requires the Full Name and/or Date of Birth fields.
+2. The Client is also an Attendee unless the programme requires the Full Name and/or Date of Birth fields.
 3. If the Client is not attending (e.g., a parent registering a child), they must fill in the additional fields including Full Name and/or Date of Birth for each Attendee.
 
-## Manual registration
+## Manual booking
 
 
-Sometimes an administrator may need to manually register a client for a course. To do this, follow these steps:
+Sometimes an administrator may need to manually register a client for a programme. To do this, follow these steps:
 
 1. Select the class you want to register the client for.
 2. Choose the client type:
 3. Existing client - search for the client in the search box and click on their name
-4. New client - enter their email address and click *Continue *to create a new registration
+4. New client - enter their email address and click *Continue *to create a new booking
  ![Screenshot](../../assets/images/personas-02.png)
 
 If registering an existing client:
@@ -79,10 +79,10 @@ If registering a new client:
 ## Change of attendee
 
 
-If a registration has the wrong attendee, you can update it in the *Registration Detail *view.
+If a booking has the wrong attendee, you can update it in the *Booking Detail *view.
 
 
-1. In the *Attendee *tile, click *Change *to select a different attendee for the registration.
+1. In the *Attendee *tile, click *Change *to select a different attendee for the booking.
  ![Screenshot](../../assets/images/personas-07.png)
 2. If the correct attendee already exists in Zooza, select them from the list.
 3. If the attendee does not yet exist in Zooza under this email, click *Create*, fill in the required fields for the new attendee, and then click *OK*.
@@ -92,14 +92,14 @@ If a registration has the wrong attendee, you can update it in the *Registration
 ## Client Card
 
 
-To view a client (whether the registrant or attendee) in full detail, Zooza provides a *Client Card*. This feature lets you see the client’s complete history — including registrations, orders, credits, and notes written by instructors during attendance. You can also edit the client’s information or merge duplicate client cards if necessary.
+To view a client (whether the registrant or attendee) in full detail, Zooza provides a *Client Card*. This feature lets you see the client’s complete history — including bookings, orders, credits, and notes written by instructors during attendance. You can also edit the client’s information or merge duplicate client cards if necessary.
 
 
 ## Access a Client Card
 
 1. Go to the *Clients *tab and search for the client by name, email, or other details.
  ![Screenshot](../../assets/images/personas-10.png)
-2. From a registration detail page, click the* Go to Attendee* button.
+2. From a booking detail page, click the* Go to Attendee* button.
  ![Screenshot](../../assets/images/personas-11.png)
 
 ## Client Card detail
@@ -118,7 +118,7 @@ Note: This action can only be performed if the Client is not the same as the Att
 
 ![Screenshot](../../assets/images/personas-13.png)
 
- 3. View History, which includes all internal notes, a list of registrations, orders, and a credit overview.
+ 3. View History, which includes all internal notes, a list of bookings, orders, and a credit overview.
 
 ![Screenshot](../../assets/images/personas-14.png)
 
@@ -163,11 +163,11 @@ If a relationship was created incorrectly, you can update it.
 ### Client records
 
 
-*Attendance *page includes a feature button for all attendees where it is possible to write a internal note about that event - e.g. progress on the session, homework, etc. addressing only the one particular attendee.
+*Attendance *page includes a feature button for all attendees where it is possible to write a internal note about that session - e.g. progress on the session, homework, etc. addressing only the one particular attendee.
 
 ![Screenshot](../../assets/images/personas-21.png)
 
-By clicking on the *Client Card* button you will see the full overview of customer records created by instructors for a better understanding.
+By clicking on the *Client Card* button you will see the full overview of client records created by instructors for a better understanding.
 
 ![Screenshot](../../assets/images/personas-22.png)
 

@@ -15,7 +15,7 @@ last_converted: "2026-02-13"
 
 # Products
 
-The Products screen manages all sellable products offered to clients during registration or separately. Use it to create products, configure pricing, attach digital items, and manage payment options. Requires PRO plan.
+The Products screen manages all sellable products offered to clients during booking or separately. Use it to create products, configure pricing, attach digital items, and manage payment options. Requires PRO plan.
 
 > **Navigation:** Go to **Products & Services** → **Products**.
 
@@ -66,7 +66,7 @@ Pagination shows total pages and results count.
 | **Open** / **Copy** | Top action buttons — open the product page or copy the product. |
 | `Product name` | Display name of the product. Required. |
 | `Item is available in the online checkout form` | Check **Yes** to allow clients to purchase via the online checkout form on your website. If unchecked, the product is still available from the client profile if attached to a class. |
-| `Priority` | Display order for customers. Products are sorted alphabetically by default; higher priority (0–1000) moves the product higher. Default is 0. |
+| `Priority` | Display order for clients. Products are sorted alphabetically by default; higher priority (0–1000) moves the product higher. Default is 0. |
 
 Buttons: **Save** and **Delete product**.
 
@@ -154,7 +154,7 @@ Configuration fields vary by item type:
 | Field | Description |
 |---|---|
 | `This service is mandatory` | When checked, the client must choose at least one option. |
-| `Redeem entry pass if order is unpaid` | If you don't sell this item using online payments, you may want to redeem this voucher even if the order is not paid. Lets customers start using it immediately and pay later. |
+| `Redeem entry pass if order is unpaid` | If you don't sell this item using online payments, you may want to redeem this voucher even if the order is not paid. Lets clients start using it immediately and pay later. |
 | `Number of visits` | Number of session entries the pass grants. +/− controls. Required. |
 | `Credit expiration in months` | Expiration period. +/− controls. Required. |
 | `Price` | Item price. +/− controls. Required. |
@@ -178,5 +178,5 @@ Review and confirm the product item addition.
 
 - [Services Reference](services-list.md) — manage service add-ons.
 - [Documents Reference](documents-list.md) — manage documents and videos.
-- [Selling Products During Registration](../guides/selling-products-during-registration.md) — how to offer products at booking time.
+- [Selling Products During Booking](../guides/selling-products-during-registration.md) — how to offer products at booking time.
 - [Orders Reference](orders-list.md) — track product orders.

@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-12"
 intercom_id: 13725607
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Locations and Venues FAQ
@@ -36,7 +36,7 @@ If you delete a venue while classes are still linked to it, those classes may sh
 
 ## Can I create a location without a physical address?
 
-Yes. For events like birthday parties at a client's home, you can create a location with a descriptive name (e.g., "Party at client's home") without a specific address. The map will not be shown to customers if no address is set.
+Yes. For sessions like birthday parties at a client's home, you can create a location with a descriptive name (e.g., "Party at client's home") without a specific address. The map will not be shown to clients if no address is set.
 
 ## Each location has an internal ID — where can I find it?
 

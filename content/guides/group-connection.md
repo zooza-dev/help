@@ -12,30 +12,30 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13725815
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Group connection
 
-Group connection is a functionality that is used to merge groups within a course that you want to work together in certain ways. This linking allows multiple groups to continue to function as one at several levels.
+Group connection is a functionality that is used to merge classes within a programme that you want to work together in certain ways. This linking allows multiple classes to continue to function as one at several levels.
 
 ![Screenshot](../../assets/images/allowing-multiple-registration-03.png)
 
 
-Currently this functionality is only available for open courses. This is because, for now, the links only serve to make terms in multiple groups available in a single offering.
+Currently this functionality is only available for open programmes. This is because, for now, the links only serve to make terms in multiple classes available in a single offering.
 
 ![Screenshot](../../assets/images/group-connection-02.png)
 
-Example: if a client is enrolled in a Yoga course, but you have an offer split into multiple groups: Mondays at 9:00am and Wednesdays at 6:00pm, then linking will allow them to select dates from both the Monday and Wednesday groups.
+Example: if a client is enrolled in a Yoga programme, but you have an offer split into multiple classes: Mondays at 9:00am and Wednesdays at 6:00pm, then linking will allow them to select dates from both the Monday and Wednesday classes.
 
 ![Screenshot](../../assets/images/allowing-multiple-registration-04.png)
 
 
-You will definitely benefit from groups connection even if you use a season pass product. Clients with linked groups can pay for dates from one season ticket.
+You will definitely benefit from classes connection even if you use a season pass product. Clients with linked classes can pay for dates from one season ticket.
 
 ## Group connection - procedure
 
-- In the left menu, click on the* Courses* category and select the course within which you want to create a link.
+- In the left menu, click on the* Programmes* category and select the programme within which you want to create a link.
 - Then click the *Edit* button in the* Group connection* section.
 
 ![Screenshot](../../assets/images/group-connection-04.png)
@@ -45,7 +45,7 @@ You will definitely benefit from groups connection even if you use a season pass
 
 
 - Write the link name
-- Click on the *Select Groups to connect* button and select the groups from the course that you want to connect together
+- Click on the *Select Classes to connect* button and select the classes from the programme that you want to connect together
 
 ![Screenshot](../../assets/images/group-connection-06.png)
 - Click on *Choose
@@ -61,7 +61,7 @@ You can then *Add* another connection, *Edit* or *Delete* existing connections i
 
 ![Screenshot](../../assets/images/group-connection-09.png)
 
-This way you can create multiple connections within a single course.
-This allows you to be more variable in your course offerings and the
+This way you can create multiple connections within a single programme.
+This allows you to be more variable in your programme offerings and the
 application of products within them. It also allows you to make new
-connections of new groups in new billing period.
+connections of new classes in new billing period.

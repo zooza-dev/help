@@ -12,20 +12,20 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13726041
-intercom_sync: false
+intercom_sync: true
 ---
 
-# Trial lessons
+# Trial sessions
 
-Trial sessions are a great way to show what your courses have to offer. You will allow clients to get a better understanding of the content and teaching style without having to commit right away. You are helping them let go of concerns about whether a course is right for them or their child. Trial sessions are available only for course type Registration for full duration. Trial is set in the course settings in the Trial tile. Get started by clicking *Edit.*
+Trial sessions are a great way to show what your programmes have to offer. You will allow clients to get a better understanding of the content and teaching style without having to commit right away. You are helping them let go of concerns about whether a programme is right for them or their child. Trial sessions are available only for programme type Booking for full duration. Trial is set in the programme settings in the Trial tile. Get started by clicking *Edit.*
 
 ![Screenshot](../../assets/images/customizing-widgets-01.png)
 
-This approach is ideal not only for attracting new clients, but also for launching new locations or introducing new types of courses. Trial lessons are the first step to building trust and success.
+This approach is ideal not only for attracting new clients, but also for launching new locations or introducing new types of programmes. Trial sessions are the first step to building trust and success.
 
 ![Screenshot](../../assets/images/trial-lessons-02.png)
 
-## Step-by-step trial lesson settings
+## Step-by-step trial session settings
 
 ## Trial type
 
@@ -40,22 +40,22 @@ The first step is to choose the trial type. The following options are available:
 ### Free Trial
 
 
-Select Free Trial if you want to let clients attend sessions without any payment obligation. No debt is created for these registrations.
+Select Free Trial if you want to let clients attend sessions without any payment obligation. No debt is created for these bookings.
 
 ![Screenshot](../../assets/images/trial-lessons-03.png)
 
 ### Paid Trial
 
 
-A Paid Trial allows you to charge clients a smaller, introductory fee for attending one or more sessions before they commit to the full course. This is useful when you want to increase commitment compared to a free trial, while still lowering the entry barrier.
+A Paid Trial allows you to charge clients a smaller, introductory fee for attending one or more sessions before they commit to the full programme. This is useful when you want to increase commitment compared to a free trial, while still lowering the entry barrier.
 
 
 ![Screenshot](../../assets/images/trial-lessons-04.png)
 
 You can set a special unit price specifically for the trial.
 
-1. If you leave the trial price at 0, Zooza will automatically apply the default unit price from the course or class.
-2. If you enter a value greater than 0, this will be the price clients pay per trial session instead of the regular course price.
+1. If you leave the trial price at 0, Zooza will automatically apply the default unit price from the programme or class.
+2. If you enter a value greater than 0, this will be the price clients pay per trial session instead of the regular programme price.
 
 ![Screenshot](../../assets/images/trial-lessons-05.png)
 
@@ -127,7 +127,7 @@ If you select Current Available Capacity, clients can only register for a trial 
 
 ![Screenshot](../../assets/images/individual-lessons-climbing-wall-02.png)
 
-Example: Group capacity is 10. Global extra capacity of 1 and group extra capacity of 1 are added to this, giving a total capacity of 12. If 2 clients sign out of the group capacity, there will be 4 vacancies for trial classes - 2 from the extra capacity and 2 released from the group capacity.
+Example: Class capacity is 10. Global extra capacity of 1 and class extra capacity of 1 are added to this, giving a total capacity of 12. If 2 clients sign out of the class capacity, there will be 4 vacancies for trial classes - 2 from the extra capacity and 2 released from the class capacity.
 
 
 ### Extra capacity
@@ -137,11 +137,11 @@ If you select Extra Capacity, trial participants can only be booked into the ext
 
 ![Screenshot](../../assets/images/individual-lessons-climbing-wall-02.png)
 
-Example: Group capacity is 10. To this is added a global extra capacity of 1 and a group extra capacity of 1, making a total of 2 extra capacity. Only these 2 places are available for trial lessons, and the group capacity remains intact even if someone cancels out of the lesson.
+Example: Class capacity is 10. To this is added a global extra capacity of 1 and a class extra capacity of 1, making a total of 2 extra capacity. Only these 2 places are available for trial sessions, and the class capacity remains intact even if someone cancels out of the session.
 
 ![Screenshot](../../assets/images/customizing-widgets-01.png)
 
-Tip: The use of additional capacity for trial lessons helps to maintain the capacity reserved for properly enrolled participants. The extra capacity reserved for trial lessons allows for a clear separation of places, making it easier to manage and organise lessons.
+Tip: The use of additional capacity for trial sessions helps to maintain the capacity reserved for properly enrolled participants. The extra capacity reserved for trial sessions allows for a clear separation of places, making it easier to manage and organise sessions.
 
 ## Classes included in trial
 
@@ -153,45 +153,45 @@ If you want newly created classes to be automatically included in your trial, se
 ![Screenshot](../../assets/images/client-import-01.png)
 
 Note:
- If you selected Interest groups in the previous step when selecting the Trial Type, you need to have previously created groups of the Interest type for which you want to activate the Trial Lesson feature.
+ If you selected Interest classes in the previous step when selecting the Trial Type, you need to have previously created classes of the Interest type for which you want to activate the Trial Session feature.
 
-Tip! You can enable trial lessons at the group level in the *Settings *tile under *Group Properties *by selecting the check box. However, if the trial lessons feature is not enabled for the course, this setting will be ignored and a message will be displayed.
+Tip! You can enable trial sessions at the class level in the *Settings *tile under *Class Properties *by selecting the check box. However, if the trial sessions feature is not enabled for the programme, this setting will be ignored and a message will be displayed.
 
 ![Screenshot](../../assets/images/trial-lessons-17.png)
 
-## What a trial lesson in Zooza looks like
+## What a trial session in Zooza looks like
 
-## In the registration detail
+## In the booking detail
 
 
-The moment a client signs up for a trial lesson via the registration form, the registration detail will show the status Trial started. Below it, a list of the steps that will follow is displayed:
+The moment a client signs up for a trial session via the registration form, the booking detail will show the status Trial started. Below it, a list of the steps that will follow is displayed:
 
-1. The date the trial registration was created
-2. The date on which the trial lesson will take place
-3. Dates related to sending notifications to register for the course
+1. The date the trial booking was created
+2. The date on which the trial session will take place
+3. Dates related to sending notifications to register for the programme
 
 ![Screenshot](../../assets/images/trial-lessons-18.png)
 
 ![Screenshot](../../assets/images/client-import-01.png)
 
-Alert! If you do not have notification automation enabled, information about when notifications are sent will not be displayed. You will only see the actions resulting from the current trial lessons settings on the course.
+Alert! If you do not have notification automation enabled, information about when notifications are sent will not be displayed. You will only see the actions resulting from the current trial sessions settings on the programme.
 
 ![Screenshot](../../assets/images/client-import-03.png)
 
-Warning! Trial lessons have different statuses than standard course registrations:
+Warning! Trial sessions have different statuses than standard programme bookings:
 
 
-1. *Trial started *- Valid from the date of registration to the time of the actual lesson.
-2. *Trial ended* - If automatic notifications are set up, a notification with a URL to the pre-populated course registration form will automatically be sent to the client when the lesson is completed.
-3. *Trial won* - Occurs after the client has successfully registered for the course.
+1. *Trial started *- Valid from the date of booking to the time of the actual session.
+2. *Trial ended* - If automatic notifications are set up, a notification with a URL to the pre-populated programme registration form will automatically be sent to the client when the session is completed.
+3. *Trial won* - Occurs after the client has successfully registered for the programme.
 4. *Trial lost *- Occurs in following cases:
-5. Attendance form for the term is not filled out and the event has already occurred.
-6. The client does not respond to automatic notifications about the opportunity to enroll in the course after completing the trial lesson.
+5. Attendance form for the term is not filled out and the session has already occurred.
+6. The client does not respond to automatic notifications about the opportunity to enroll in the programme after completing the trial session.
 
-## On the lesson/event
+## On the session/session
 
 
-The information about who is coming for the trial lesson will be displayed directly on the attendance details of the lesson.
+The information about who is coming for the trial session will be displayed directly on the attendance details of the session.
 
 ![Screenshot](../../assets/images/trial-lessons-21.png)
 
@@ -200,34 +200,34 @@ The information about who is coming for the trial lesson will be displayed direc
 ## In the client´s profile
 
 
-When a client signs up for a trial lesson, they can view it in their profile under Course Interest, where they will find all the relevant details, just like a regular course sign-up. If the date does not suit him, he has the option to cancel within the limit set for the replacement lessons. If the course allows for replacement lessons, the client will be entitled to use them according to the rules set for the course.
+When a client signs up for a trial session, they can view it in their profile under Programme Interest, where they will find all the relevant details, just like a regular programme sign-up. If the date does not suit him, he has the option to cancel within the limit set for the replacement sessions. If the programme allows for replacement sessions, the client will be entitled to use them according to the rules set for the programme.
 
 ![Screenshot](../../assets/images/trial-lessons-23.png)
 
 ## Automation settings
 
 
-For the Trial Lesson registration type, email notifications are prepared to prompt the client after completing the trial lesson if he/she wants to enroll in the full course. You can set what will be sent to the client and when after the trial lesson. The following notifications are available:
+For the Trial Session booking type, email notifications are prepared to prompt the client after completing the trial session if he/she wants to enroll in the full programme. You can set what will be sent to the client and when after the trial session. The following notifications are available:
 
-1. Information about the possibility to register for the full course with a link to the pre-populated registration form.
+1. Information about the possibility to register for the full programme with a link to the pre-populated registration form.
 2. 2 reminders after the number of days you set, if the client has not yet registered.
 3. Change of status to Trial lost if the client does not respond to the sent link, with an option to inform them of this change.
 4. You can review and edit all notifications in the Communication section under Message Templates. You can read instructions on how to do this [here](../guides/message-templates.md).
 
 ![Screenshot](../../assets/images/trial-lessons-24.png)
 
-## Registering for the course after completing the trial lesson
+## Registering for the programme after completing the trial session
 
 
-After completing the trial lesson and deciding to continue with the course, the client has two options:
+After completing the trial session and deciding to continue with the programme, the client has two options:
 
 1. client can register himself after receiving an automatic notification
 2. or you can help them to register directly through the system
 
-## Client registration
+## Client booking
 
 
-Immediately after completing the lesson (if attendance is recorded), the client will receive a notification informing them of the opportunity to enroll in the course. Clicking on the attached link will open a pre-populated registration form, in which the client can conveniently register.
+Immediately after completing the session (if attendance is recorded), the client will receive a notification informing them of the opportunity to enroll in the programme. Clicking on the attached link will open a pre-populated registration form, in which the client can conveniently register.
 
 ![Screenshot](../../assets/images/trial-lessons-25.png)
 
@@ -236,23 +236,23 @@ Immediately after completing the lesson (if attendance is recorded), the client 
 
 If you and your client have agreed that you will register them, you can easily do this through the application.
 
-1. In the trial registration details, click on *Enroll.
+1. In the trial booking details, click on *Enroll.
  ![Screenshot](../../assets/images/trial-lessons-26.png)
  *
-2. A window will appear with information about the group you can register the client to.
+2. A window will appear with information about the class you can register the client to.
  ![Screenshot](../../assets/images/trial-lessons-27.png)
-3. After selecting the group, set the amount you expect to pay for registration and click Continue. If you have payment templates set up on the group, the application will automatically offer them to you and take you to the payment plan settings.
+3. After selecting the class, set the amount you expect to pay for booking and click Continue. If you have payment templates set up on the class, the application will automatically offer them to you and take you to the payment plan settings.
  ![Screenshot](../../assets/images/trial-lessons-28.png)
  ![Screenshot](../../assets/images/trial-lessons-29.png)
-4. Check the details you have entered and confirm your registration by clicking Continue.*
+4. Check the details you have entered and confirm your booking by clicking Continue.*
  ![Screenshot](../../assets/images/trial-lessons-30.png)
  ![Screenshot](../../assets/images/trial-lessons-31.png)
  *
-5. Once you have successfully registered for the course, the status of the trial will change to Trial won.
+5. Once you have successfully registered for the programme, the status of the trial will change to Trial won.
  ![Screenshot](../../assets/images/trial-lessons-32.png)
 
 ![Screenshot](../../assets/images/client-import-03.png)
 
-Warning! After enrolling in the course, the client will receive a new variable symbol. However, for better clarity, the trial and regular registration remain linked, allowing you to easily check them.
+Warning! After enrolling in the programme, the client will receive a new variable symbol. However, for better clarity, the trial and regular booking remain linked, allowing you to easily check them.
 
 ![Screenshot](../../assets/images/trial-lessons-34.png)

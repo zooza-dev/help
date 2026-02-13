@@ -12,15 +12,15 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13725825
-intercom_sync: false
+intercom_sync: true
 ---
 
-# Individual Sessions: How to Sell, Plan, and Manage 1:1 Lessons in Zooza
+# Individual Sessions: How to Sell, Plan, and Manage 1:1 Sessions in Zooza
 
 This guide explains a practical workflow for individual (1:1) sessions in Zooza:
 
 
-1. Collect interest / registrations for 1:1 sessions (even without fixed dates)
+1. Collect interest / bookings for 1:1 sessions (even without fixed dates)
 2. Create a private individual plan for each client (with sessions and payments)
 
 ## Option A: Collect interest first (recommended)
@@ -28,8 +28,8 @@ This guide explains a practical workflow for individual (1:1) sessions in Zooza:
 ### Why this approach works
 
 - You can advertise “Individual sessions” without publishing a real schedule.
-- You still get registrations inside Zooza (client record + booking context).
-- Later, you convert each registration into a personal 1:1 plan (a private class/group with sessions).
+- You still get bookings inside Zooza (client record + booking context).
+- Later, you convert each booking into a personal 1:1 plan (a private class/class with sessions).
 
 ## Step 1: Create a programme for “Individual sessions”
 
@@ -44,39 +44,39 @@ Tip: Keep the programme simple. The goal is to have a “container” to collect
 
 ![Screenshot](../../assets/images/individual-sessions-02.png)
 
-## Step 2: Create a group/class without dates (for interest collection)
+## Step 2: Create a class/class without dates (for interest collection)
 
 1. Open the programme Individual Sessions
-2. Create a new Group/Class
+2. Create a new Class/Class
 3. Do not add any sessions/timetable dates yet
 4. Ensure it is visible for online registration only if you want to collect sign-ups publicly
 
-Result: you can collect sign-ups even though there are no sessions yet.You now have registrations in Zooza, ready to be assigned to an individual plan.
+Result: you can collect sign-ups even though there are no sessions yet.You now have bookings in Zooza, ready to be assigned to an individual plan.
 
 ![Screenshot](../../assets/images/individual-sessions-03.png)
 
 ##
 
-## Step 3: Collect registrations (interest)
+## Step 3: Collect bookings (interest)
 
 Clients can register via your online booking flow (or you can add them [manually](personas.md)).
-Once submitted, you will see these registrations in Zooza.
+Once submitted, you will see these bookings in Zooza.
 
 ### What happens next?
 
-- You now have a registration record linked to:the client
+- You now have a booking record linked to:the client
 - the programme (“Individual Sessions”)
-- the initial group/class (interest placeholder)
+- the initial class/class (interest placeholder)
 
 From here, you can create the real 1:1 plan.
 
-## Step 4: Create a registration manually (optional)
+## Step 4: Create a booking manually (optional)
 
-You can also create registrations manually in Zooza, for example when:
+You can also create bookings manually in Zooza, for example when:
 
 - a client calls / messages you directly
 - you want to register them without using the website
-- you want to copy an existing registration and tweak it
+- you want to copy an existing booking and tweak it
 
 ### Where to do it (typical places)
 
@@ -89,11 +89,11 @@ A) From the Client profile
 
 ![Screenshot](../../assets/images/individual-sessions-04.png)
 
-B) Copy an existing registration
+B) Copy an existing booking
 
-- Open an existing registration
+- Open an existing booking
 - Use Copy booking
-- Adjust programme/group/payment plan
+- Adjust programme/class/payment plan
 
 ![Screenshot](../../assets/images/individual-sessions-05.png)
 
@@ -101,21 +101,21 @@ B) Copy an existing registration
 
 ![Screenshot](../../assets/images/customizing-widgets-01.png)
 
-## Optional: Share a private registration link for a specific individual class
+## Optional: Share a private booking link for a specific individual class
 
-Sometimes you want the class to stay non-public, but still allow the parent to register online (instead of you creating the registration manually).
+Sometimes you want the class to stay non-public, but still allow the parent to register online (instead of you creating the booking manually).
 
-You can do this by sharing a private registration link to that specific class/group.
+You can do this by sharing a private booking link to that specific class/class.
 
 ### How it works
 
-- The class/group is not publicly listed on your website/widget.
-- Only people with the direct link can open the registration page and submit the registration.
+- The class/class is not publicly listed on your website/widget.
+- Only people with the direct link can open the booking page and submit the booking.
 
 ### Steps
 
-1. Open the individual class/group (e.g. “1:1 – John Smith”)
-2. Find the option to copy the registration URL:Copy URL
+1. Open the individual class/class (e.g. “1:1 – John Smith”)
+2. Find the option to copy the booking URL:Copy URL
  ![Screenshot](../../assets/images/individual-sessions-07.png)
 
 3. or Customized link
@@ -129,9 +129,9 @@ Result: the parent can register the child into that specific individual plan via
 Option B: Build the individual plan (private class per client)
 
 
-This is the core model: one client = one private plan (one private class/group, sessions, and payment plan).
+This is the core model: one client = one private plan (one private class/class, sessions, and payment plan).
 
-## Step 5: Create a private 1:1 class/group for the client
+## Step 5: Create a private 1:1 class/class for the client
 
 1. In the programme Individual Sessions, create a new Class
 2. Name it something like:“1:1 – John Smith”
@@ -195,18 +195,18 @@ This is especially useful if:
 
 [![Screenshot](../../assets/images/customizing-widgets-01.png)
 
-Guide: Payment templates on registration](https://support.zooza.online/portal/en/kb/articles/payment-templates-creation)
+Guide: Payment templates on booking](https://support.zooza.online/portal/en/kb/articles/payment-templates-creation)
 
-Best practice: Keep a few reusable payment templates (e.g. “Monthly 1:1”, “10-pack”, “Pay-as-you-go”), and assign the right one per registration.
+Best practice: Keep a few reusable payment templates (e.g. “Monthly 1:1”, “10-pack”, “Pay-as-you-go”), and assign the right one per booking.
 
 Recommended workflow summary
 
-1) Create programme “Individual Sessions” (Ongoing)2) Create interest group (no sessions)3) Collect registrations (online or manual)4) For each client:
+1) Create programme “Individual Sessions” (Ongoing)2) Create interest class (no sessions)3) Collect bookings (online or manual)4) For each client:
 
-- Create a private 1:1 class/group named after the client
+- Create a private 1:1 class/class named after the client
 - Add sessions (weekly or ad-hoc)
 - Enable replacement logic if needed
-- Assign the payment template for that registration
+- Assign the payment template for that booking
 
 Notes & common pitfalls
 

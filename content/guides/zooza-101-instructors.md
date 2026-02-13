@@ -1,16 +1,19 @@
 ---
-title: "Zooza 101 for Instructors"
-slug: "zooza-101-instructors"
-type: "guides"
-product_area: "Settings"
+title: Zooza 101 for Instructors
+slug: zooza-101-instructors
+type: guides
+product_area: Settings
 sub_area: ""
-audience: ["admin"]
+audience:
+  - admin
 tags: []
-status: "published"
-source_legacy_path: "legacy/0064_Welcome to Zooza.html"
-source_language: "en"
+status: published
+source_legacy_path: legacy/0064_Welcome to Zooza.html
+source_language: en
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: 2026-02-11
+intercom_id: 13725972
+intercom_sync: false
 ---
 
 # Zooza 101 for Instructors

@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13726025
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Holiday settings
@@ -37,14 +37,14 @@ to contact us via chat on this page or by email at [support@zooza.online](mailto
 
 Holidays are different for each state, city and region. That’s why we
  went to a detailed solution where you can set a region for each
-location you run your courses in.
+location you run your programmes in.
 
 Based on this setting, the holidays of the specific region will be
 automatically added to your app. You will see the specific dates of the
-holidays at the level of inserting events into the group, where you will
+holidays at the level of inserting sessions into the class, where you will
 be reminded that the dates are during the holidays. You can choose to:
 
-- keep these terms, if you are running your courses also during the holidays
+- keep these terms, if you are running your programmes also during the holidays
 - delete these terms manually by clicking on the *Bin icon*
 - skip these terms automatically by clicking on the *Skip Holidays* and *Skip School breaks* checkboxes
 

@@ -12,12 +12,12 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13726035
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Online registration
 
-To control how the course is displayed on your website and how communication with clients is managed, use this setting. It includes three parts:
+To control how the programme is displayed on your website and how communication with clients is managed, use this setting. It includes three parts:
 
 
 1. Online registration
@@ -26,24 +26,24 @@ To control how the course is displayed on your website and how communication wit
 
 ## Online registration
 
-## Registration options
+## Booking options
 
-In the* Registration options* section you set the visibility on your website and in the registration form.you can control what is visible on your website and in the registration form. If your course includes a *Trial *or *Blocks*, you can decide exactly what you want clients to see.
+In the* Booking options* section you set the visibility on your website and in the registration form.you can control what is visible on your website and in the registration form. If your programme includes a *Trial *or *Blocks*, you can decide exactly what you want clients to see.
 
 ![Screenshot](../../assets/images/individual-lessons-climbing-wall-02.png)
 
-Example: If you don’t want clients to choose between blocks and the full course, select the *Blocks only* option.
+Example: If you don’t want clients to choose between blocks and the full programme, select the *Blocks only* option.
 
 ![Screenshot](../../assets/images/online-registration-02.png)
 
-## Multiple registrations for the course
+## Multiple bookings for the programme
 
 
-When you enable multiple registrations for a course, you can choose whose information you need to collect — only from the main registrant or from every participant.
+When you enable multiple bookings for a programme, you can choose whose information you need to collect — only from the main registrant or from every participant.
 
 ![Screenshot](../../assets/images/customizing-widgets-01.png)
 
-We also recommend selecting the *Payments are managed by registrant *option in the *Price and Payment *tile. This ensures that all payments for the registrations are grouped under the main registration, using a single variable symbol, and allows clients to pay everything in one transaction.
+We also recommend selecting the *Payments are managed by registrant *option in the *Price and Payment *tile. This ensures that all payments for the bookings are grouped under the main booking, using a single variable symbol, and allows clients to pay everything in one transaction.
 
 ![Screenshot](../../assets/images/online-registration-04.png)
 
@@ -54,11 +54,11 @@ These settings let you control how long classes remain visible in your registrat
 
 
 1. When a class reaches capacity – choose whether it should still appear or be hidden.
-2. Before the course starts – set the number of hours in advance when the course should be hidden from your website’s course catalogue.
+2. Before the programme starts – set the number of hours in advance when the programme should be hidden from your website’s programme catalogue.
 
 ![Screenshot](../../assets/images/client-import-03.png)
 
-Alert: Hiding the course before it starts will disable the option to allow late registration in the Price and Payment tile.
+Alert: Hiding the programme before it starts will disable the option to allow late booking in the Price and Payment tile.
 
 ![Screenshot](../../assets/images/online-registration-06.png)
 
@@ -71,14 +71,14 @@ Here, you can choose which classes from your list should appear in the menu on y
 ## Customizing registration form
 
 
-If you need different field names for this course’s registration form, you can set them in the *Customizing the Registration Form *section. This is useful when certain courses require specific field labels that differ from your standard registration form.
+If you need different field names for this programme’s registration form, you can set them in the *Customizing the Registration Form *section. This is useful when certain programmes require specific field labels that differ from your standard registration form.
 
 ![Screenshot](../../assets/images/online-registration-08.png)
 
 ## Communication
 
 
-Communication plays an important role throughout the course. Each registration type has its own specific communication settings, in addition to a standard set of email templates you can use.
+Communication plays an important role throughout the programme. Each booking type has its own specific communication settings, in addition to a standard set of email templates you can use.
 
 ## Email templates and signature
 
@@ -111,7 +111,7 @@ Note: The exact time the reminder email is sent can be configured in the message
 
 ## Notification about upcoming sessions
 
-For* open courses* only Zooza provides an additional email notification for upcoming sessions with available slots possible for booking.
+For* open programmes* only Zooza provides an additional email notification for upcoming sessions with available slots possible for booking.
 
 ![Screenshot](../../assets/images/online-registration-14.png)
 
@@ -124,7 +124,7 @@ Note: This template is to be found in Message templates as* Upcoming Session Not
 ## Notification to waiting lists about available slot
 
 
-If your *one-session course *is full and you allow clients to join a waiting list, you can set up an automatic notification to inform them when a spot becomes available due to a cancellation.
+If your *one-session programme *is full and you allow clients to join a waiting list, you can set up an automatic notification to inform them when a spot becomes available due to a cancellation.
 
 ![Screenshot](../../assets/images/online-registration-17.png)
 

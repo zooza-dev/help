@@ -12,12 +12,12 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13725846
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Payment Pairing for Bank Transfers & Direct Debit
 
-Every booking in Zooza automatically creates an expected amount to pay based on your course or group settings. Payments can then be paired with that booking in one of four ways:
+Every booking in Zooza automatically creates an expected amount to pay based on your programme or class settings. Payments can then be paired with that booking in one of four ways:
 
 
 - Manually (cash or bank transfer)
@@ -47,7 +47,7 @@ Important: Automatic pairing depends on how your bank provides transaction data.
 
 1. Bank account identification (IBAN)
  Zooza identifies which account received the payment using the IBAN.
- The IBAN must be set either in General Settings or directly on the course.
+ The IBAN must be set either in General Settings or directly on the programme.
 2. Booking identification (Payment Reference)
  Zooza matches the payment to a booking using the payment reference.
  In some countries this is called a *Variable Symbol*; internationally, it is simply the *Payment Reference* sent with the bank transfer.
@@ -102,7 +102,7 @@ GoCardless is the recommended way to automate payment pairing internationally.
 - Supported banks depend on your country
 - No CSV files or email parsing required
 
-Zooza syncs payments from GoCardless automatically twice per day. This means there may be a short delay between the customer paying and the booking being marked as Paid.
+Zooza syncs payments from GoCardless automatically twice per day. This means there may be a short delay between the client paying and the booking being marked as Paid.
 
 This method is ideal for franchises and international businesses using Direct Debit as their primary payment method.
 
@@ -115,7 +115,7 @@ See setup instructions in the [documentation](https://support.zooza.online/porta
 
 A payment reference is the text or number sent with a bank transfer to identify what the payment is for. In some countries this is called a variable symbol.
 
-### What happens if a customer forgets the payment reference?
+### What happens if a client forgets the payment reference?
 
 
 The payment will not be paired automatically. You can manually assign it from *Payments – Received payments*.
@@ -144,8 +144,8 @@ In this mode, Zooza pairs payments only if a booking already has an outstanding 
 Typical scenarios include:
 
 
-- Early payment: The customer pays *before* any amount is due (for example, after receiving a notification about an upcoming instalment). The payment is imported into Zooza, but it is not paired because no debt existed at that time.
-- Overpayment: The customer pays a higher amount than the current outstanding balance. In this case, the payment is also not paired automatically.
+- Early payment: The client pays *before* any amount is due (for example, after receiving a notification about an upcoming instalment). The payment is imported into Zooza, but it is not paired because no debt existed at that time.
+- Overpayment: The client pays a higher amount than the current outstanding balance. In this case, the payment is also not paired automatically.
 
 In these situations, Zooza does not attempt to re-pair the payment automatically later — even if a debt is created afterwards or the amount due changes.
 

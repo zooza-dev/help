@@ -12,12 +12,12 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-13"
 intercom_id: 13726008
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Services
 
-The Services screen manages service add-ons that can be attached to products or offered during registration. Services represent additional options such as insurance, parking, meal plans, or extras — typically for camps and events.
+The Services screen manages service add-ons that can be attached to products or offered during booking. Services represent additional options such as insurance, parking, meal plans, or extras — typically for camps and sessions.
 
 > **Navigation:** Go to **Products & Services** → **Services**.
 
@@ -97,4 +97,4 @@ The **Add** button at the bottom creates a new service item variant.
 
 - [Products Reference](products-list.md) — manage sellable products.
 - [Documents Reference](documents-list.md) — manage documents and videos.
-- [Selling Products During Registration](../guides/selling-products-during-registration.md) — how to offer products and services at booking time.
+- [Selling Products During Booking](../guides/selling-products-during-registration.md) — how to offer products and services at booking time.

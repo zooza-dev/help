@@ -12,14 +12,14 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-12"
 intercom_id: 13725615
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Waiting List FAQ
 
 ## How does the waiting list work?
 
-When a class is full, parents can still submit a booking. Their registration is placed on a waiting list. You receive a notification, and you can manually approve the booking if a space becomes available. The system does not auto-enrol from the waiting list.
+When a class is full, parents can still submit a booking. Their booking is placed on a waiting list. You receive a notification, and you can manually approve the booking if a space becomes available. The system does not auto-enrol from the waiting list.
 
 ## Will parents see that a class is full before they start registering?
 

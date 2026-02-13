@@ -12,17 +12,17 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13726049
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Zooza Sites
 
-If you don’t have your own website and would like to make it as easy as possible to implement your courses that you manage in Zooza, we offer you Zooza Sites service, i.e. your own website under our roof.
+If you don’t have your own website and would like to make it as easy as possible to implement your programmes that you manage in Zooza, we offer you Zooza Sites service, i.e. your own website under our roof.
 
 ## What Zooza sites offers
 
 
-In addition to having all the settings for either the courses or the site in one place, you also have access to other features of the site like:
+In addition to having all the settings for either the programmes or the site in one place, you also have access to other features of the site like:
 
 1. 4 templates with predefined page structure, each template has multiple color schemes
 2. Your own domain – mycompany.com, or on zooza.site domain – mycompany.zooza.site
@@ -104,4 +104,4 @@ You manage all the pages you create in Zooza. Whether you want to set what logo 
 1. Homepage
 2. About us
 3. Gallery
-4. Courses – contains only basic information regarding the page name or a short description. You can make other settings about individual courses in the course details, in the *Course Settings* tile.
+4. Programmes – contains only basic information regarding the page name or a short description. You can make other settings about individual programmes in the programme details, in the *Programme Settings* tile.

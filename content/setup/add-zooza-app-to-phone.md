@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13726014
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Add the Zooza app to your phone’s desktop
@@ -37,5 +37,5 @@ Proceed as follows:
 ![Screenshot](../../assets/images/customizing-widgets-01.png)
 
 
-TIP: if you use Zooza as a lecturer / most often for taking attendance / do this by clicking on the calendar section in the app and then adding it to your phone’s desktop. When you click on such an icon on your phone’s desktop, the calendar will be displayed directly and you can fill in your attendance more quickly.
+TIP: if you use Zooza as a instructor / most often for taking attendance / do this by clicking on the calendar section in the app and then adding it to your phone’s desktop. When you click on such an icon on your phone’s desktop, the calendar will be displayed directly and you can fill in your attendance more quickly.
 Every click counts 🙂

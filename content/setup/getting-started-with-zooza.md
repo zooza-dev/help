@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13726023
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Getting Started with Zooza
@@ -41,8 +41,8 @@ You don’t need to be “techy”. If you follow this guide, in about 30-60 min
 
 ### Core structure
 
-- Programme (Course / Product)What you sell.Example: “WeeOnes – 15 months to 2 years”
-- Timetable (Class / Group)A specific instance of the programme –place, teacher(s), and capacity.Example: “City Pool, Laura – max 10 children”
+- Programme (Programme / Product)What you sell.Example: “WeeOnes – 15 months to 2 years”
+- Timetable (Class / Class)A specific instance of the programme –place, instructor(s), and capacity.Example: “City Pool, Laura – max 10 children”
 - SessionA single date in a timetable.Example: “Monday 10:00 on 10 March, 17 March, 24 March…”
 
 ### People & bookings
@@ -96,9 +96,9 @@ In your Live account:
 5. Set your price:choose One-off, Term Fee, Membership, or Per session,
 6. define the main price (you can adjust or add discounts later).
 
-### 3.2 Add a Timetable (Class / Group)
+### 3.2 Add a Timetable (Class / Class)
 
-1. Inside the programme, go to Timetables / Groups.
+1. Inside the programme, go to Timetables / Classes.
 2. Click Add Timetable.
 3. Set:Location / venue
 4. Instructor
@@ -184,7 +184,7 @@ Zooza comes with default payment templates (monthly, per term, per session), so 
 As the parent, you should receive:
 
 - Booking confirmation email (and PIN code if used),
-- Access to the Parent Zone / Parent Portal – with:upcoming sessions,
+- Access to the Parent Portal / Parent Portal – with:upcoming sessions,
 - payment overview,
 - invoices (after payment).
 
@@ -225,7 +225,7 @@ If you want help to brand your templates, contact our support.
 
 For each programme or timetable, you can:
 
-- copy a direct booking link and share it:in WhatsApp groups,
+- copy a direct booking link and share it:in WhatsApp classes,
 - by email,
 - on social media,
 - on posters / QR codes.
@@ -271,7 +271,7 @@ After payment:
 - an invoice is generated automatically via:your connected invoicing software (e.g. Xero), or
 - Zooza Invoicer.
 
-All billing events sync with reports and client cards.
+All billing sessions sync with reports and client cards.
 
 ### 8.2 Booking & communication automation
 
@@ -286,13 +286,13 @@ For each programme, you can have:
 
 All templates can be customised per programme.
 
-### 8.3 Late registration & pro-rata management
+### 8.3 Late booking & pro-rata management
 
 Purpose: Handle new clients who join mid-term or mid-billing cycle fairly.
 
 You can define:
 
-- how late registrations are approved:auto-approve,
+- how late bookings are approved:auto-approve,
 - hide full classes,
 - manual approval (pending until admin confirms).
 
@@ -306,7 +306,7 @@ how pro-rata is calculated:
 You can also:
 
 - add the next billing cycle to the partial payment (optional),
-- notify admins about each late registration,
+- notify admins about each late booking,
 - customise confirmation messages for late sign-ups.
 
 ### Learn more
@@ -383,7 +383,7 @@ Each message template and delay can be configured per programme.
 
 Here are the main ones and what to do in Zooza.
 
-All actions start from Bookings → Detail of a specific registration.
+All actions start from Bookings → Detail of a specific booking.
 
 ### 7.1 How do I delete a booking?
 
@@ -398,7 +398,7 @@ What happens:
 - The spot is freed.
 - You still keep the data in CRM (you can filter by “Deleted bookings”).
 
-### 7.2 How do I pause a registration?
+### 7.2 How do I pause a booking?
 
 Use when: A client takes a break for a defined period (holiday, illness, etc.).
 
@@ -433,7 +433,7 @@ Use when: A timetable is full, but new parents are still interested.
 How it works:
 
 - When a class reaches capacity, Zooza shows “Class full – Join Waitlist”.
-- New registrations go into Waitlist status.
+- New bookings go into Waitlist status.
 - When a place opens:you can invite from the waitlist manually, or
 - enable automatic invites (in settings).
 
@@ -445,7 +445,7 @@ What happens:
 
 - No leads are lost; you retain interest even when full.
 
-### 7.5 What is a trial registration?
+### 7.5 What is a trial booking?
 
 Use when: You allow parents to attend a trial before committing.
 
@@ -479,10 +479,10 @@ Use when: Child misses one or more sessions and you want to adjust payments or o
 
 Options:
 
-1. Adjust future paymentsGo to Registration → Payments → Installment details.
+1. Adjust future paymentsGo to Booking → Payments → Installment details.
 2. Adjust the next payment amount manually.
 3. Offer make-up sessionsEnable Make-Up Sessions rules at programme level.
-4. Parents can book replacement sessions via Parent Zone (if allowed by capacity and rules).
+4. Parents can book replacement sessions via Parent Portal (if allowed by capacity and rules).
 
 8. What Zooza does on autopilot
 
@@ -510,7 +510,7 @@ After payment:
 your connected invoicing software (e.g. Xero), or
 - Zooza Invoicer.
 
-All billing events sync with reports and client cards.
+All billing sessions sync with reports and client cards.
 
 [Learn More](https://support.zooza.online/portal/en/kb/articles/billing-settings)
 
@@ -527,13 +527,13 @@ For each programme, you can have:
 
 All templates can be customised per programme.
 
-### 8.3 Late registration & pro-rata management
+### 8.3 Late booking & pro-rata management
 
 Purpose: Handle new clients who join mid-term or mid-billing cycle fairly.
 
 You can define:
 
-- how late registrations are approved:
+- how late bookings are approved:
 auto-approve,
 - hide full classes,
 - manual approval (pending until admin confirms).
@@ -548,7 +548,7 @@ how pro-rata is calculated:
 You can also:
 
 - add the next billing cycle to the partial payment (optional),
-- notify admins about each late registration,
+- notify admins about each late booking,
 - customise confirmation messages for late sign-ups.
 
 [Learn More](../guides/late-registrations.md)
@@ -646,17 +646,17 @@ If you get stuck at any point:
 
 10. Glossary of Key Terms
 
-## Programme (Course / Product)
+## Programme (Programme / Product)
 
 A product created once, e.g. “WeeOnes – 15 months to 2 years”.
 
-Timetable (Class / Group) A specific instance of a programme, e.g. “Monday 10:00” group with set capacity.
+Timetable (Class / Class) A specific instance of a programme, e.g. “Monday 10:00” class with set capacity.
 
 Session A single occurrence or date within a timetable.
 
-Client (Parent) A unique email address representing a parent who can manage multiple children’s registrations.
+Client (Parent) A unique email address representing a parent who can manage multiple children’s bookings.
 
-Booking / Registration The process of enrolling in a programme; connected to a specific client and timetable.
+Booking / Booking The process of enrolling in a programme; connected to a specific client and timetable.
 
 Term Fee Total amount a client commits to pay for a programme over a term or school year.
 
@@ -664,7 +664,7 @@ Debt The amount owed by the client, automatically generated based on your paymen
 
 Payment Requests Requests created by Zooza for upcoming payments (card, direct debit, or bank transfer).
 
-Client Profile / Parent Zone / Parent Portal The parent’s space with live updates about classes, payments, and attendance.
+Client Profile / Parent Portal / Parent Portal The parent’s space with live updates about classes, payments, and attendance.
 
 Make-Up Session
  A replacement session parents can book themselves under your rules.

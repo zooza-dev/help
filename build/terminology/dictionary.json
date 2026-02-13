@@ -4,1194 +4,541 @@
       "canonical": "programme",
       "variants_found": [
         "course",
-        "programme"
+        "courses",
+        "programme",
+        "programmes"
       ],
-      "occurrences": 574,
-      "files": [
-        "allowing-multiple-registration",
-        "auto-enrollment",
-        "automatic-event-notification",
-        "automatic-payment-reminders",
-        "automatic-payment-reminders-detailed",
-        "billing-periods",
-        "blocks-creation",
-        "business-registration",
-        "client-import",
-        "course-group-lesson-definition",
-        "course-settings",
-        "course-settings-tile",
-        "customizing-widgets",
-        "deploying-zooza-on-website",
-        "discount-code",
-        "discount-types",
-        "documents",
-        "dynamic-tags",
-        "edit-events-in-courses",
-        "getting-started-with-zooza"
+      "replace_rules": [
+        {
+          "from": "\\bcourse\\b",
+          "to": "programme",
+          "mode": "all"
+        },
+        {
+          "from": "\\bcourses\\b",
+          "to": "programmes",
+          "mode": "all"
+        },
+        {
+          "from": "\\bCourse\\b",
+          "to": "Programme",
+          "mode": "all"
+        },
+        {
+          "from": "\\bCourses\\b",
+          "to": "Programmes",
+          "mode": "all"
+        },
+        {
+          "from": "\\bCOURSE\\b",
+          "to": "PROGRAMME",
+          "mode": "all"
+        },
+        {
+          "from": "\\bCOURSES\\b",
+          "to": "PROGRAMMES",
+          "mode": "all"
+        }
       ],
-      "file_count": 59,
+      "occurrences_canonical": 303,
+      "occurrences_noncanonical": 474,
+      "files_affected": 66,
       "category": "core_concept",
       "context": "both",
-      "notes": ""
+      "notes": "All course→programme. Slugs and filenames stay stable."
     },
     "class": {
       "canonical": "class",
       "variants_found": [
-        "class",
         "group",
+        "groups",
+        "class",
+        "classes",
         "timetable"
       ],
-      "occurrences": 547,
-      "files": [
-        "auto-enrollment",
-        "automatic-event-notification",
-        "automatic-payment-reminders-detailed",
-        "billing-periods",
-        "blocks-creation",
-        "change-instructor",
-        "client-import",
-        "collecting-reason-for-cancelling",
-        "common-booking-scenarios",
-        "course-group-lesson-definition",
-        "course-settings",
-        "course-settings-tile",
-        "customizing-widgets",
-        "documents",
-        "dynamic-tags",
-        "edit-events-in-courses",
-        "getting-started-with-zooza",
-        "gocardless-direct-debit-mandates",
-        "group-connection",
-        "group-interested"
+      "replace_rules": [
+        {
+          "from": "\\bgroup\\b",
+          "to": "class",
+          "mode": "smart",
+          "preserve": [
+            "target group",
+            "Target group",
+            "age group",
+            "Age group",
+            "group connection",
+            "group interested",
+            "group – interested",
+            "group – Interested",
+            "classic group"
+          ]
+        },
+        {
+          "from": "\\bgroups\\b",
+          "to": "classes",
+          "mode": "smart",
+          "preserve": [
+            "target groups",
+            "age groups"
+          ]
+        },
+        {
+          "from": "\\bGroup\\b",
+          "to": "Class",
+          "mode": "smart",
+          "preserve": [
+            "Target Group",
+            "Age Group",
+            "Group connection",
+            "Group Connection",
+            "Group Interested",
+            "Group interested",
+            "Group – Interested",
+            "Group – interested"
+          ]
+        },
+        {
+          "from": "\\bGroups\\b",
+          "to": "Classes",
+          "mode": "smart",
+          "preserve": [
+            "Target Groups",
+            "Age Groups"
+          ]
+        },
+        {
+          "from": "\\bGROUP\\b",
+          "to": "CLASS",
+          "mode": "all"
+        },
+        {
+          "from": "\\bGROUPS\\b",
+          "to": "CLASSES",
+          "mode": "all"
+        }
       ],
-      "file_count": 53,
+      "occurrences_canonical": 134,
+      "occurrences_noncanonical": 295,
+      "files_affected": 53,
       "category": "core_concept",
       "context": "both",
-      "notes": ""
+      "notes": "group→class. Preserve 'target group' (email targeting) and 'age group'."
     },
     "session": {
       "canonical": "session",
       "variants_found": [
         "event",
+        "events",
         "lesson",
-        "session"
+        "lessons",
+        "session",
+        "sessions"
       ],
-      "occurrences": 564,
-      "files": [
-        "auto-enrollment",
-        "automatic-event-notification",
-        "automatic-payment-reminders-detailed",
-        "billing-periods",
-        "blocks-creation",
-        "change-instructor",
-        "collecting-reason-for-cancelling",
-        "common-booking-scenarios",
-        "course-group-lesson-definition",
-        "course-settings",
-        "course-settings-tile",
-        "customizing-widgets",
-        "discount-code",
-        "discount-types",
-        "documents",
-        "dynamic-tags",
-        "edit-event-notification-template",
-        "edit-events-in-courses",
-        "getting-started-with-zooza",
-        "holiday-settings"
+      "replace_rules": [
+        {
+          "from": "\\blesson\\b",
+          "to": "session",
+          "mode": "all"
+        },
+        {
+          "from": "\\blessons\\b",
+          "to": "sessions",
+          "mode": "all"
+        },
+        {
+          "from": "\\bLesson\\b",
+          "to": "Session",
+          "mode": "all"
+        },
+        {
+          "from": "\\bLessons\\b",
+          "to": "Sessions",
+          "mode": "all"
+        },
+        {
+          "from": "\\bevent\\b",
+          "to": "session",
+          "mode": "smart",
+          "preserve": [
+            "paid event",
+            "multi-day event",
+            "Paid event",
+            "Multi-day event"
+          ]
+        },
+        {
+          "from": "\\bevents\\b",
+          "to": "sessions",
+          "mode": "smart",
+          "preserve": [
+            "paid events",
+            "multi-day events",
+            "Paid events",
+            "Multi-day events"
+          ]
+        },
+        {
+          "from": "\\bEvent\\b",
+          "to": "Session",
+          "mode": "smart",
+          "preserve": [
+            "Paid Event",
+            "Multi-day Event"
+          ]
+        },
+        {
+          "from": "\\bEvents\\b",
+          "to": "Sessions",
+          "mode": "smart",
+          "preserve": [
+            "Paid Events",
+            "Multi-day Events"
+          ]
+        }
       ],
-      "file_count": 49,
+      "occurrences_canonical": 466,
+      "occurrences_noncanonical": 394,
+      "files_affected": 56,
       "category": "core_concept",
       "context": "both",
-      "notes": ""
+      "notes": "lesson→session always. event→session except 'paid event' and 'multi-day event'."
     },
     "booking": {
       "canonical": "booking",
       "variants_found": [
+        "registration",
+        "registrations",
         "booking",
-        "registration"
+        "bookings"
       ],
-      "occurrences": 846,
-      "files": [
-        "abra-flexi-invoices",
-        "allowing-multiple-registration",
-        "auto-enrollment",
-        "automatic-event-notification",
-        "automatic-payment-reminders",
-        "automatic-payment-reminders-detailed",
-        "billing-periods",
-        "blocks-creation",
-        "business-registration",
-        "client-import",
-        "collecting-reason-for-cancelling",
-        "common-booking-scenarios",
-        "course-settings",
-        "course-settings-tile",
-        "customizing-widgets",
-        "data-correction-change-client",
-        "deploying-zooza-on-website",
-        "discount-code",
-        "discount-types",
-        "documents"
+      "replace_rules": [
+        {
+          "from": "\\bregistration\\b",
+          "to": "booking",
+          "mode": "smart",
+          "preserve": [
+            "online registration",
+            "Online registration",
+            "Online Registration",
+            "registration form",
+            "Registration form",
+            "Registration Form",
+            "registration fee",
+            "Registration fee"
+          ]
+        },
+        {
+          "from": "\\bregistrations\\b",
+          "to": "bookings",
+          "mode": "smart",
+          "preserve": [
+            "online registrations",
+            "Online registrations"
+          ]
+        },
+        {
+          "from": "\\bRegistration\\b",
+          "to": "Booking",
+          "mode": "smart",
+          "preserve": [
+            "Online Registration",
+            "Registration Form",
+            "Registration Fee",
+            "Registration fee"
+          ]
+        },
+        {
+          "from": "\\bRegistrations\\b",
+          "to": "Bookings",
+          "mode": "smart",
+          "preserve": [
+            "Online Registrations"
+          ]
+        },
+        {
+          "from": "\\bREGISTRATION\\b",
+          "to": "BOOKING",
+          "mode": "all"
+        },
+        {
+          "from": "\\bREGISTRATIONS\\b",
+          "to": "BOOKINGS",
+          "mode": "all"
+        }
       ],
-      "file_count": 61,
+      "occurrences_canonical": 472,
+      "occurrences_noncanonical": 726,
+      "files_affected": 80,
       "category": "core_concept",
       "context": "both",
-      "notes": ""
+      "notes": "registration→booking. Keep 'online registration' and 'registration form'."
     },
     "client": {
       "canonical": "client",
       "variants_found": [
+        "customer",
+        "customers",
         "client",
-        "customer"
+        "clients"
       ],
-      "occurrences": 586,
-      "files": [
-        "allowing-multiple-registration",
-        "auto-enrollment",
-        "automatic-event-notification",
-        "automatic-payment-reminders",
-        "automatic-payment-reminders-detailed",
-        "billing-periods",
-        "blocks-creation",
-        "business-registration",
-        "client-import",
-        "collecting-reason-for-cancelling",
-        "common-booking-scenarios",
-        "company-logo-email",
-        "course-group-lesson-definition",
-        "course-settings",
-        "course-settings-tile",
-        "customizing-widgets",
-        "data-correction-change-client",
-        "deploying-zooza-on-website",
-        "discount-code",
-        "discount-types"
+      "replace_rules": [
+        {
+          "from": "\\bcustomer\\b",
+          "to": "client",
+          "mode": "all"
+        },
+        {
+          "from": "\\bcustomers\\b",
+          "to": "clients",
+          "mode": "all"
+        },
+        {
+          "from": "\\bCustomer\\b",
+          "to": "Client",
+          "mode": "all"
+        },
+        {
+          "from": "\\bCustomers\\b",
+          "to": "Clients",
+          "mode": "all"
+        },
+        {
+          "from": "\\bCUSTOMER\\b",
+          "to": "CLIENT",
+          "mode": "all"
+        },
+        {
+          "from": "\\bCUSTOMERS\\b",
+          "to": "CLIENTS",
+          "mode": "all"
+        }
       ],
-      "file_count": 67,
+      "occurrences_canonical": 742,
+      "occurrences_noncanonical": 113,
+      "files_affected": 42,
       "category": "core_concept",
       "context": "both",
-      "notes": ""
+      "notes": "All customer→client."
     },
     "instructor": {
       "canonical": "instructor",
       "variants_found": [
-        "instructor",
         "lecturer",
+        "lecturers",
         "teacher",
+        "teachers",
         "trainer",
-        "tutor"
+        "trainers",
+        "tutor",
+        "tutors"
       ],
-      "occurrences": 189,
-      "files": [
-        "add-zooza-app-to-phone",
-        "change-instructor",
-        "customizing-widgets",
-        "dynamic-tags",
-        "edit-events-in-courses",
-        "getting-started-with-zooza",
-        "individual-lessons-climbing-wall",
-        "individual-lessons-with-free-lesson",
-        "individual-sessions",
-        "instructor-rate-reward",
-        "lecturer-substitution",
-        "lecturers-working-hours",
-        "multi-day-event-with-product-offer",
-        "network-application",
-        "payment-templates-creation",
-        "personas",
-        "power-bi-data-description",
-        "summer-camps-creation",
-        "trials-daily-business",
-        "two-lecturers-per-group"
+      "replace_rules": [
+        {
+          "from": "\\blecturer\\b",
+          "to": "instructor",
+          "mode": "all"
+        },
+        {
+          "from": "\\blecturers\\b",
+          "to": "instructors",
+          "mode": "all"
+        },
+        {
+          "from": "\\bLecturer\\b",
+          "to": "Instructor",
+          "mode": "all"
+        },
+        {
+          "from": "\\bLecturers\\b",
+          "to": "Instructors",
+          "mode": "all"
+        },
+        {
+          "from": "\\bteacher\\b",
+          "to": "instructor",
+          "mode": "all"
+        },
+        {
+          "from": "\\bteachers\\b",
+          "to": "instructors",
+          "mode": "all"
+        },
+        {
+          "from": "\\bTeacher\\b",
+          "to": "Instructor",
+          "mode": "all"
+        },
+        {
+          "from": "\\bTeachers\\b",
+          "to": "Instructors",
+          "mode": "all"
+        },
+        {
+          "from": "\\btrainer\\b",
+          "to": "instructor",
+          "mode": "all"
+        },
+        {
+          "from": "\\btrainers\\b",
+          "to": "instructors",
+          "mode": "all"
+        },
+        {
+          "from": "\\bTrainer\\b",
+          "to": "Instructor",
+          "mode": "all"
+        },
+        {
+          "from": "\\bTrainers\\b",
+          "to": "Instructors",
+          "mode": "all"
+        },
+        {
+          "from": "\\btutor\\b",
+          "to": "instructor",
+          "mode": "all"
+        },
+        {
+          "from": "\\btutors\\b",
+          "to": "instructors",
+          "mode": "all"
+        },
+        {
+          "from": "\\bTutor\\b",
+          "to": "Instructor",
+          "mode": "all"
+        },
+        {
+          "from": "\\bTutors\\b",
+          "to": "Instructors",
+          "mode": "all"
+        }
       ],
-      "file_count": 23,
+      "occurrences_canonical": 175,
+      "occurrences_noncanonical": 116,
+      "files_affected": 18,
       "category": "role",
-      "context": "both",
-      "notes": ""
+      "context": "admin",
+      "notes": "All lecturer/teacher/trainer/tutor→instructor."
     },
-    "make-up lesson": {
-      "canonical": "make-up lesson",
+    "Parent Portal": {
+      "canonical": "Parent Portal",
       "variants_found": [
-        "replacement lesson"
+        "Parent Zone",
+        "Parent Portal"
       ],
-      "occurrences": 15,
-      "files": [
-        "automatic-event-notification",
-        "billing-periods",
-        "course-group-lesson-definition",
-        "discount-code",
-        "discount-types",
-        "how-to-create-paid-events",
-        "new-course-existing-clients",
-        "summer-camps-creation",
-        "trial-lessons"
+      "replace_rules": [
+        {
+          "from": "Parent Zone",
+          "to": "Parent Portal",
+          "mode": "all"
+        },
+        {
+          "from": "parent zone",
+          "to": "Parent Portal",
+          "mode": "all"
+        }
       ],
-      "file_count": 9,
-      "category": "action",
-      "context": "both",
-      "notes": ""
-    },
-    "Parent Zone": {
-      "canonical": "Parent Zone",
-      "variants_found": [
-        "parent portal",
-        "parent zone"
-      ],
-      "occurrences": 14,
-      "files": [
-        "getting-started-with-zooza",
-        "parent-portal-101",
-        "parent-profile-dashboard",
-        "whatsapp-faq",
-        "whatsapp-integration"
-      ],
-      "file_count": 5,
+      "occurrences_canonical": 22,
+      "occurrences_noncanonical": 3,
+      "files_affected": 1,
       "category": "ui_element",
       "context": "both",
-      "notes": ""
+      "notes": "Parent Portal is the official product name."
     },
-    "payment plan": {
-      "canonical": "payment plan",
+    "make-up session": {
+      "canonical": "make-up session",
       "variants_found": [
-        "payment plan",
-        "payment template"
+        "replacement lesson",
+        "catch-up lesson",
+        "make-up lesson"
       ],
-      "occurrences": 74,
-      "files": [
-        "automatic-payment-reminders",
-        "blocks-creation",
-        "common-booking-scenarios",
-        "discount-types",
-        "edit-payment-on-registration",
-        "getting-started-with-zooza",
-        "gocardless-direct-debit-mandates",
-        "individual-lessons-group-interested",
-        "individual-sessions",
-        "open-course-creation",
-        "payment-pairing",
-        "payment-templates-creation",
-        "payment-tile-on-registration",
-        "summer-camps-creation",
-        "trial-lessons",
-        "user-roles"
+      "replace_rules": [
+        {
+          "from": "replacement lesson",
+          "to": "make-up session",
+          "mode": "all"
+        },
+        {
+          "from": "replacement lessons",
+          "to": "make-up sessions",
+          "mode": "all"
+        },
+        {
+          "from": "Replacement lesson",
+          "to": "Make-up session",
+          "mode": "all"
+        },
+        {
+          "from": "Replacement lessons",
+          "to": "Make-up sessions",
+          "mode": "all"
+        },
+        {
+          "from": "catch-up lesson",
+          "to": "make-up session",
+          "mode": "all"
+        },
+        {
+          "from": "catch-up lessons",
+          "to": "make-up sessions",
+          "mode": "all"
+        },
+        {
+          "from": "Catch-up lesson",
+          "to": "Make-up session",
+          "mode": "all"
+        },
+        {
+          "from": "make-up lesson",
+          "to": "make-up session",
+          "mode": "all"
+        },
+        {
+          "from": "make-up lessons",
+          "to": "make-up sessions",
+          "mode": "all"
+        },
+        {
+          "from": "Make-up lesson",
+          "to": "Make-up session",
+          "mode": "all"
+        },
+        {
+          "from": "Make-up lessons",
+          "to": "Make-up sessions",
+          "mode": "all"
+        }
       ],
-      "file_count": 16,
+      "occurrences_noncanonical": 46,
+      "files_affected": 22,
+      "category": "core_concept",
+      "context": "both",
+      "notes": "Since lesson→session globally, make-up lesson should become make-up session."
+    },
+    "payment template": {
+      "canonical": "payment template",
+      "variants_found": [
+        "payment template",
+        "payment plan"
+      ],
+      "replace_rules": [],
+      "occurrences_canonical": 58,
+      "occurrences_noncanonical": 0,
+      "files_affected": 0,
       "category": "payment",
-      "context": "both",
-      "notes": ""
-    },
-    "billing period": {
-      "canonical": "billing period",
-      "variants_found": [
-        "billing period"
-      ],
-      "occurrences": 32,
-      "files": [
-        "auto-enrollment",
-        "billing-periods",
-        "course-group-lesson-definition",
-        "discount-code",
-        "group-connection",
-        "summer-camps-creation",
-        "trial-lessons",
-        "user-roles"
-      ],
-      "file_count": 8,
-      "category": "payment",
-      "context": "both",
-      "notes": ""
-    },
-    "trial": {
-      "canonical": "trial",
-      "variants_found": [
-        "trial"
-      ],
-      "occurrences": 182,
-      "files": [
-        "common-booking-scenarios",
-        "course-settings",
-        "getting-started-with-zooza",
-        "individual-lessons-with-free-lesson",
-        "online-registration",
-        "power-bi-data-description",
-        "trial-lessons",
-        "trials-daily-business",
-        "types-of-registrations"
-      ],
-      "file_count": 9,
-      "category": "status",
-      "context": "both",
-      "notes": ""
-    },
-    "abra flexi": {
-      "canonical": "abra flexi",
-      "variants_found": [
-        "abra flexi"
-      ],
-      "occurrences": 11,
-      "files": [
-        "abra-flexi-invoices"
-      ],
-      "file_count": 1,
-      "category": "integration",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 1
-    },
-    "admin": {
-      "canonical": "admin",
-      "variants_found": [
-        "admin"
-      ],
-      "occurrences": 38,
-      "files": [
-        "getting-started-with-zooza",
-        "how-to-create-paid-events",
-        "individual-lessons-climbing-wall",
-        "individual-lessons-with-free-lesson",
-        "late-registrations",
-        "lecturers-working-hours",
-        "multi-day-event-with-product-offer",
-        "parent-profile-dashboard",
-        "personas",
-        "selling-products-during-registration",
-        "trials-daily-business",
-        "whatsapp-integration",
-        "whatsapp-troubleshooting",
-        "zooza-101-instructors",
-        "zooza-sites"
-      ],
-      "file_count": 15,
-      "category": "role",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 2,
-      "found_in_code": 0,
-      "found_in_headings": 3
-    },
-    "attendance": {
-      "canonical": "attendance",
-      "variants_found": [
-        "attendance"
-      ],
-      "occurrences": 86,
-      "files": [
-        "add-zooza-app-to-phone",
-        "blocks-creation",
-        "collecting-reason-for-cancelling",
-        "course-group-lesson-definition",
-        "course-settings",
-        "customizing-widgets",
-        "getting-started-with-zooza",
-        "individual-lessons-climbing-wall",
-        "individual-lessons-group-interested",
-        "individual-lessons-with-free-lesson",
-        "lecturer-substitution",
-        "multi-day-event-with-product-offer",
-        "network-application",
-        "open-course-creation",
-        "payment-templates-creation",
-        "personas",
-        "power-bi-data-description",
-        "trial-lessons",
-        "trials-daily-business",
-        "user-roles"
-      ],
-      "file_count": 21,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 6
-    },
-    "bank transfer": {
-      "canonical": "bank transfer",
-      "variants_found": [
-        "bank transfer"
-      ],
-      "occurrences": 19,
-      "files": [
-        "getting-started-with-zooza",
-        "payment-options",
-        "payment-pairing",
-        "xero-integration"
-      ],
-      "file_count": 4,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 4
-    },
-    "block": {
-      "canonical": "block",
-      "variants_found": [
-        "block"
-      ],
-      "occurrences": 66,
-      "files": [
-        "blocks-creation",
-        "dynamic-tags",
-        "getting-started-with-zooza",
-        "individual-sessions",
-        "online-registration",
-        "szamlazz-invoices",
-        "trials-daily-business"
-      ],
-      "file_count": 7,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 6
-    },
-    "calendar": {
-      "canonical": "calendar",
-      "variants_found": [
-        "calendar"
-      ],
-      "occurrences": 35,
-      "files": [
-        "add-zooza-app-to-phone",
-        "billing-periods",
-        "change-instructor",
-        "course-settings-tile",
-        "customizing-widgets",
-        "getting-started-with-zooza",
-        "individual-lessons-group-interested",
-        "lecturers-working-hours",
-        "payment-templates-creation",
-        "user-roles",
-        "viewing-billable-events",
-        "zooza-101-instructors"
-      ],
-      "file_count": 12,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 4
-    },
-    "cancel": {
-      "canonical": "cancel",
-      "variants_found": [
-        "cancel"
-      ],
-      "occurrences": 16,
-      "files": [
-        "collecting-reason-for-cancelling",
-        "common-booking-scenarios",
-        "customizing-widgets",
-        "edit-event-notification-template",
-        "edit-events-in-courses",
-        "getting-started-with-zooza",
-        "individual-sessions",
-        "lecturer-substitution",
-        "parent-portal-101",
-        "trial-lessons",
-        "user-roles"
-      ],
-      "file_count": 11,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 1,
-      "found_in_headings": 5
-    },
-    "capacity": {
-      "canonical": "capacity",
-      "variants_found": [
-        "capacity"
-      ],
-      "occurrences": 56,
-      "files": [
-        "getting-started-with-zooza",
-        "individual-lessons-climbing-wall",
-        "individual-lessons-group-interested",
-        "individual-lessons-with-free-lesson",
-        "individual-sessions",
-        "multi-day-event-with-product-offer",
-        "online-registration",
-        "power-bi-data-description",
-        "summer-camps-creation",
-        "trial-lessons",
-        "trials-daily-business",
-        "types-of-registrations"
-      ],
-      "file_count": 12,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 5
-    },
-    "custom field": {
-      "canonical": "custom field",
-      "variants_found": [
-        "custom field"
-      ],
-      "occurrences": 1,
-      "files": [
-        "power-bi-data-description"
-      ],
-      "file_count": 1,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 0
-    },
-    "dashboard": {
-      "canonical": "dashboard",
-      "variants_found": [
-        "dashboard"
-      ],
-      "occurrences": 20,
-      "files": [
-        "network-application",
-        "parent-portal-101",
-        "parent-profile-dashboard",
-        "user-roles",
-        "zooza-101-instructors"
-      ],
-      "file_count": 5,
-      "category": "ui_element",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 4
-    },
-    "direct debit": {
-      "canonical": "direct debit",
-      "variants_found": [
-        "direct debit"
-      ],
-      "occurrences": 14,
-      "files": [
-        "getting-started-with-zooza",
-        "gocardless-direct-debit-mandates",
-        "payment-pairing"
-      ],
-      "file_count": 3,
-      "category": "payment",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 3
-    },
-    "discount": {
-      "canonical": "discount",
-      "variants_found": [
-        "discount"
-      ],
-      "occurrences": 108,
-      "files": [
-        "blocks-creation",
-        "discount-code",
-        "discount-types",
-        "edit-payment-on-registration",
-        "getting-started-with-zooza",
-        "network-application",
-        "parent-profile-dashboard",
-        "payment-pairing",
-        "payment-templates-creation",
-        "payment-tile-on-registration",
-        "summer-camps-creation",
-        "user-roles"
-      ],
-      "file_count": 12,
-      "category": "payment",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 12
-    },
-    "discount code": {
-      "canonical": "discount code",
-      "variants_found": [
-        "discount code"
-      ],
-      "occurrences": 15,
-      "files": [
-        "discount-code",
-        "discount-types"
-      ],
-      "file_count": 2,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 5
-    },
-    "enrol": {
-      "canonical": "enrol",
-      "variants_found": [
-        "enrol"
-      ],
-      "occurrences": 1,
-      "files": [
-        "trials-daily-business"
-      ],
-      "file_count": 1,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 8
-    },
-    "enroll": {
-      "canonical": "enroll",
-      "variants_found": [
-        "enroll"
-      ],
-      "occurrences": 8,
-      "files": [
-        "auto-enrollment",
-        "course-settings",
-        "discount-types",
-        "trial-lessons"
-      ],
-      "file_count": 4,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 6
-    },
-    "extra field": {
-      "canonical": "extra field",
-      "variants_found": [
-        "extra field"
-      ],
-      "occurrences": 30,
-      "files": [
-        "allowing-multiple-registration",
-        "auto-enrollment",
-        "business-registration",
-        "course-settings",
-        "customizing-widgets",
-        "dynamic-tags",
-        "multi-day-event-with-product-offer",
-        "personas",
-        "summer-camps-creation",
-        "user-roles"
-      ],
-      "file_count": 10,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 1
-    },
-    "gocardless": {
-      "canonical": "gocardless",
-      "variants_found": [
-        "gocardless"
-      ],
-      "occurrences": 17,
-      "files": [
-        "common-booking-scenarios",
-        "edit-payment-on-registration",
-        "getting-started-with-zooza",
-        "gocardless-direct-debit-mandates",
-        "payment-pairing",
-        "smartbill-invoices",
-        "szamlazz-invoices"
-      ],
-      "file_count": 7,
-      "category": "integration",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 3
-    },
-    "invoice": {
-      "canonical": "invoice",
-      "variants_found": [
-        "invoice"
-      ],
-      "occurrences": 107,
-      "files": [
-        "abra-flexi-invoices",
-        "billing-periods",
-        "business-registration",
-        "dynamic-tags",
-        "getting-started-with-zooza",
-        "individual-sessions",
-        "parent-portal-101",
-        "parent-profile-dashboard",
-        "payment-templates-creation",
-        "smartbill-invoices",
-        "szamlazz-invoices",
-        "user-roles",
-        "vat-management",
-        "xero-integration",
-        "zooza-billing-payments",
-        "zooza-sites"
-      ],
-      "file_count": 16,
-      "category": "payment",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 15
-    },
-    "make-up class": {
-      "canonical": "make-up class",
-      "variants_found": [
-        "make-up class"
-      ],
-      "occurrences": 1,
-      "files": [
-        "common-booking-scenarios"
-      ],
-      "file_count": 1,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 0
-    },
-    "notification": {
-      "canonical": "notification",
-      "variants_found": [
-        "notification"
-      ],
-      "occurrences": 98,
-      "files": [
-        "automatic-event-notification",
-        "automatic-payment-reminders",
-        "change-instructor",
-        "common-booking-scenarios",
-        "data-correction-change-client",
-        "dynamic-tags",
-        "edit-event-notification-template",
-        "edit-payment-on-registration",
-        "emails-in-primary-inbox",
-        "individual-lessons-climbing-wall",
-        "individual-lessons-with-free-lesson",
-        "late-registrations",
-        "lecturer-substitution",
-        "message-templates",
-        "multi-day-event-with-product-offer",
-        "new-course-existing-clients",
-        "notifications-center",
-        "online-registration",
-        "open-course-creation",
-        "parent-portal-101"
-      ],
-      "file_count": 29,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 4,
-      "found_in_code": 1,
-      "found_in_headings": 12
-    },
-    "outstanding amount": {
-      "canonical": "outstanding amount",
-      "variants_found": [
-        "outstanding amount"
-      ],
-      "occurrences": 4,
-      "files": [
-        "edit-payment-on-registration",
-        "outstanding-amount"
-      ],
-      "file_count": 2,
-      "category": "payment",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 2
-    },
-    "payment schedule": {
-      "canonical": "payment schedule",
-      "variants_found": [
-        "payment schedule"
-      ],
-      "occurrences": 4,
-      "files": [
-        "automatic-payment-reminders",
-        "edit-payment-on-registration",
-        "payment-templates-creation",
-        "payment-tile-on-registration"
-      ],
-      "file_count": 4,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 1
-    },
-    "persona": {
-      "canonical": "persona",
-      "variants_found": [
-        "persona"
-      ],
-      "occurrences": 4,
-      "files": [
-        "individual-sessions",
-        "personas"
-      ],
-      "file_count": 2,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 1
-    },
-    "power bi": {
-      "canonical": "power bi",
-      "variants_found": [
-        "power bi"
-      ],
-      "occurrences": 11,
-      "files": [
-        "power-bi-data-description",
-        "power-bi-integration"
-      ],
-      "file_count": 2,
-      "category": "integration",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 4
-    },
-    "refund": {
-      "canonical": "refund",
-      "variants_found": [
-        "refund"
-      ],
-      "occurrences": 30,
-      "files": [
-        "common-booking-scenarios",
-        "edit-payment-on-registration",
-        "getting-started-with-zooza",
-        "network-application",
-        "payment-pairing",
-        "payment-tile-on-registration",
-        "user-roles"
-      ],
-      "file_count": 7,
-      "category": "payment",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 3
-    },
-    "register": {
-      "canonical": "register",
-      "variants_found": [
-        "register"
-      ],
-      "occurrences": 44,
-      "files": [
-        "blocks-creation",
-        "business-registration",
-        "course-group-lesson-definition",
-        "customizing-widgets",
-        "discount-code",
-        "getting-started-with-zooza",
-        "group-interested",
-        "individual-lessons-group-interested",
-        "individual-sessions",
-        "linked-registrations",
-        "new-course-existing-clients",
-        "open-course-creation",
-        "payment-templates-creation",
-        "personas",
-        "trial-lessons",
-        "user-roles",
-        "zooza-billing-payments"
-      ],
-      "file_count": 17,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 1,
-      "found_in_headings": 2
-    },
-    "reminder": {
-      "canonical": "reminder",
-      "variants_found": [
-        "reminder"
-      ],
-      "occurrences": 91,
-      "files": [
-        "automatic-event-notification",
-        "automatic-payment-reminders",
-        "automatic-payment-reminders-detailed",
-        "change-instructor",
-        "course-settings",
-        "dynamic-tags",
-        "edit-event-notification-template",
-        "getting-started-with-zooza",
-        "message-templates",
-        "online-registration",
-        "outstanding-amount",
-        "parent-portal-101",
-        "trial-lessons",
-        "whatsapp-integration"
-      ],
-      "file_count": 14,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 3,
-      "found_in_code": 0,
-      "found_in_headings": 13
-    },
-    "semester": {
-      "canonical": "semester",
-      "variants_found": [
-        "semester"
-      ],
-      "occurrences": 7,
-      "files": [
-        "blocks-creation",
-        "course-group-lesson-definition",
-        "payment-templates-creation"
-      ],
-      "file_count": 3,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 0
-    },
-    "smartbill": {
-      "canonical": "smartbill",
-      "variants_found": [
-        "smartbill"
-      ],
-      "occurrences": 16,
-      "files": [
-        "smartbill-invoices"
-      ],
-      "file_count": 1,
-      "category": "integration",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 2
-    },
-    "stripe": {
-      "canonical": "stripe",
-      "variants_found": [
-        "stripe"
-      ],
-      "occurrences": 9,
-      "files": [
-        "common-booking-scenarios",
-        "getting-started-with-zooza",
-        "payment-options"
-      ],
-      "file_count": 3,
-      "category": "integration",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 1
-    },
-    "szamlazz": {
-      "canonical": "szamlazz",
-      "variants_found": [
-        "szamlazz"
-      ],
-      "occurrences": 6,
-      "files": [
-        "szamlazz-invoices"
-      ],
-      "file_count": 1,
-      "category": "integration",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 1
-    },
-    "template": {
-      "canonical": "template",
-      "variants_found": [
-        "template"
-      ],
-      "occurrences": 221,
-      "files": [
-        "automatic-event-notification",
-        "automatic-payment-reminders",
-        "blocks-creation",
-        "discount-types",
-        "documents",
-        "dynamic-tags",
-        "edit-event-notification-template",
-        "getting-started-with-zooza",
-        "gocardless-direct-debit-mandates",
-        "individual-lessons-climbing-wall",
-        "individual-lessons-group-interested",
-        "individual-lessons-with-free-lesson",
-        "individual-sessions",
-        "late-registrations",
-        "message-templates",
-        "multi-day-event-with-product-offer",
-        "online-registration",
-        "open-course-creation",
-        "payment-pairing",
-        "payment-templates-creation"
-      ],
-      "file_count": 28,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 13,
-      "found_in_code": 0,
-      "found_in_headings": 20
-    },
-    "term fee": {
-      "canonical": "term fee",
-      "variants_found": [
-        "term fee"
-      ],
-      "occurrences": 7,
-      "files": [
-        "getting-started-with-zooza"
-      ],
-      "file_count": 1,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 0
-    },
-    "vat": {
-      "canonical": "vat",
-      "variants_found": [
-        "vat"
-      ],
-      "occurrences": 49,
-      "files": [
-        "abra-flexi-invoices",
-        "business-registration",
-        "dynamic-tags",
-        "smartbill-invoices",
-        "szamlazz-invoices",
-        "vat-management",
-        "xero-integration"
-      ],
-      "file_count": 7,
-      "category": "payment",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 1,
-      "found_in_headings": 9
-    },
-    "waiting list": {
-      "canonical": "waiting list",
-      "variants_found": [
-        "waiting list"
-      ],
-      "occurrences": 7,
-      "files": [
-        "message-templates",
-        "multi-day-event-with-product-offer",
-        "online-registration",
-        "types-of-registrations"
-      ],
-      "file_count": 4,
-      "category": "unknown",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 2
-    },
-    "waitlist": {
-      "canonical": "waitlist",
-      "variants_found": [
-        "waitlist"
-      ],
-      "occurrences": 18,
-      "files": [
-        "common-booking-scenarios",
-        "getting-started-with-zooza",
-        "power-bi-data-description"
-      ],
-      "file_count": 3,
-      "category": "status",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 4
-    },
-    "widget": {
-      "canonical": "widget",
-      "variants_found": [
-        "widget"
-      ],
-      "occurrences": 30,
-      "files": [
-        "customizing-widgets",
-        "deploying-zooza-on-website",
-        "individual-sessions"
-      ],
-      "file_count": 3,
-      "category": "ui_element",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 2,
-      "found_in_headings": 5
-    },
-    "xero": {
-      "canonical": "xero",
-      "variants_found": [
-        "xero"
-      ],
-      "occurrences": 32,
-      "files": [
-        "getting-started-with-zooza",
-        "xero-integration"
-      ],
-      "file_count": 2,
-      "category": "integration",
-      "context": "both",
-      "notes": "",
-      "found_in_bold": 0,
-      "found_in_code": 0,
-      "found_in_headings": 3
+      "context": "admin",
+      "notes": "DISTINCT CONCEPTS — do not merge. Template=config, plan=applied instance."
     }
   },
-  "extracted_at": "2026-02-11",
-  "source_file_count": 85
+  "skip_in_frontmatter": [
+    "slug",
+    "source_legacy_path"
+  ],
+  "skip_patterns": [
+    "```[\\s\\S]*?```"
+  ],
+  "extracted_at": "2026-02-13",
+  "source_file_count": 126,
+  "last_normalized": "2026-02-13"
 }

@@ -70,7 +70,7 @@ A summary of your latest booking activity with four tabs:
 
 | Tab | Description |
 |---|---|
-| **Latest Bookings** | Most recent registrations across all programmes. |
+| **Latest Bookings** | Most recent bookings across all programmes. |
 | **Waiting List (n)** | Bookings where the class was full — awaiting your approval. |
 | **Late Bookings (n)** | Bookings submitted after the programme/billing period started. |
 | **Auto-Enrolment (n)** | Bookings created automatically by an automation rule. |

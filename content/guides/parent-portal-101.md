@@ -12,14 +12,14 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13725841
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Parent Portal 101
 
 ## A simple guide to get you started
 
-The Parent Portal helps you manage your child’s registrations, sessions, and payments in one place.
+The Parent Portal helps you manage your child’s bookings, sessions, and payments in one place.
 
  It works on both mobile phones and computers and does not require remembering any passwords.
 
@@ -29,7 +29,7 @@ The Parent Portal helps you manage your child’s registrations, sessions, and p
 
 ## 1. Logging in
 
-If you are not logged in yet, open the Parent Portal and enter the email address you used during registration.
+If you are not logged in yet, open the Parent Portal and enter the email address you used during booking.
 
 This is the same email you use to receive booking and payment information.
 
@@ -55,10 +55,10 @@ Once logged in, you will see your Parent Profile.
 Here you can find:
 
 - all your children
-- all active and past registrations
+- all active and past bookings
 - your booking history
 
-Everything related to your registrations is available in one place and can be used fully on mobile.
+Everything related to your bookings is available in one place and can be used fully on mobile.
 
 ##
 

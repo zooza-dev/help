@@ -64,4 +64,4 @@ The total number of records is shown above the table. Results can be sorted by v
 
 - [Class Detail](class-detail.md) — the detail view for a single class.
 - [Programmes List](programmes-list.md) — managing programmes and their classes.
-- [Course Group Lesson Definition Guide](../guides/course-group-lesson-definition.md) — how to set up class structures.
+- [Programme Class Session Definition Guide](../guides/course-group-lesson-definition.md) — how to set up class structures.

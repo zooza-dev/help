@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-12"
 intercom_id: 13725602
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Attendance and Catch-up Classes FAQ
@@ -23,7 +23,7 @@ Instructors log in to Zooza (via `zooza.app`), open their **Calendar**, and sele
 
 Tip: Instructors should add Zooza to their phone's home screen so it works like a native app.
 
-## Can an admin mark attendance on behalf of a teacher?
+## Can an admin mark attendance on behalf of a instructor?
 
 Yes. As an admin, go to **Calendar**, select the session, and mark attendance for any class — including past sessions. Admins can see all classes, while instructors only see their own.
 
@@ -59,4 +59,4 @@ Hover over the numbers for a detailed breakdown.
 
 ## Is attendance tracking important for automations?
 
-Yes. Marking attendance triggers automations — especially for trials. When a teacher marks a trial attendee as "attended", the system automatically sends the enrolment offer to the parent.
+Yes. Marking attendance triggers automations — especially for trials. When a instructor marks a trial attendee as "attended", the system automatically sends the enrolment offer to the parent.

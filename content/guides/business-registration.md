@@ -12,15 +12,15 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13713664
-intercom_sync: false
+intercom_sync: true
 ---
 
-# Business registration
+# Business booking
 
-If your clients are not individuals, but companies, you can also allow them to create company registrations. But this option needs to be enabled first.
+If your clients are not individuals, but companies, you can also allow them to create company bookings. But this option needs to be enabled first.
 
 
-It is turned on or off at the course level, more precisely in the* Extra Fields* section.
+It is turned on or off at the programme level, more precisely in the* Extra Fields* section.
 
 For corporate orders, you must enable at least one of the following fields:
 
@@ -31,13 +31,13 @@ For corporate orders, you must enable at least one of the following fields:
 5. VAT
 
 
-If one or more fields are active, the registration form will add the option to register per company. Once clicked, the selected extra fields are displayed in a registration form and the customer can fill them in. Only the* Company *and *Business ID *number fields are required.
+If one or more fields are active, the registration form will add the option to register per company. Once clicked, the selected extra fields are displayed in a registration form and the client can fill them in. Only the* Company *and *Business ID *number fields are required.
 
 As with the other extra fields, you must enter a custom name.
 
 ![Screenshot](../../assets/images/business-registration-01.png)
 
-Any registration that contains at least one of these fields filled in is flagged in the system as "Business Registration".
+Any booking that contains at least one of these fields filled in is flagged in the system as "Business Booking".
 
 ![Screenshot](../../assets/images/business-registration-02.png)
 
@@ -45,4 +45,4 @@ Any registration that contains at least one of these fields filled in is flagged
 
 ![Screenshot](../../assets/images/allowing-multiple-registration-03.png)
 
-If you have invoice generation enabled, the resulting invoice will have the company details as the billing details and not the customer details.
+If you have invoice generation enabled, the resulting invoice will have the company details as the billing details and not the client details.

@@ -173,7 +173,7 @@ Automated workflow for trial sessions — from booking through attendance to enr
 ### Programme Enrolment
 
 1. **Booking link sent** — unique enrolment link sent right after the last trial session is marked attended.
-2. **Customer signs up** — submitting the pre-filled form changes status to "Trial Won" and creates a full enrolment.
+2. **Client signs up** — submitting the pre-filled form changes status to "Trial Won" and creates a full enrolment.
 3. **No reaction — first follow-up** — reminder sent after a configurable number of days (e.g., 2 days).
 4. **No reaction — second follow-up** — second reminder after additional days.
 5. **Trial marked as lost** — booking transitions to "Trial Lost" status. Optional notification sent.
@@ -196,7 +196,7 @@ Same as standard trial: reminder before session, attendance, instructor marks at
 
 ### Programme Enrolment
 
-Same follow-up flow: booking link sent, customer signs up, follow-ups, trial lost.
+Same follow-up flow: booking link sent, client signs up, follow-ups, trial lost.
 
 ## Auto-Enrolment Automations
 

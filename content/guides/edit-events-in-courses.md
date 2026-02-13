@@ -12,19 +12,19 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13725808
-intercom_sync: false
+intercom_sync: true
 ---
 
-# Edit lessons/events in courses
+# Edit sessions/sessions in programmes
 
-Each created date can be changed additionally - change the lecturer or time. Each term can be cancelled or deleted.To change a term you have several options on how to proceed:
+Each created date can be changed additionally - change the instructor or time. Each term can be cancelled or deleted.To change a term you have several options on how to proceed:
 
-Bulk edit of events
+Bulk edit of sessions
 
 
-The quickest way to edit events is directly in the Lessons/Events section. You can make bulk edits as soon as you filter the dates you want to edit.
+The quickest way to edit sessions is directly in the Sessions/Sessions section. You can make bulk edits as soon as you filter the dates you want to edit.
 
-1. Use the filter bar at the top of the page to filter by group/lecturer/location. Note: After applying the filter, you have the option to make bulk edits to your selected events by checking the Select All box or selecting only those that require editing.
+1. Use the filter bar at the top of the page to filter by class/instructor/location. Note: After applying the filter, you have the option to make bulk edits to your selected sessions by checking the Select All box or selecting only those that require editing.
  ![Screenshot](../../assets/images/edit-events-in-courses-01.png)
 
 1. Click on *Bulk Edit* to open a menu for editing the appointments:
@@ -34,11 +34,11 @@ The quickest way to edit events is directly in the Lessons/Events section. You c
 ![Screenshot](../../assets/images/edit-events-in-courses-03.png)
 
 1. *Delete*Clicking the Delete button will completely delete the term. We recommend using delete term if you made a mistake and such term should never have existed.
-2. *Change status*Clicking Cancel will change the status of the term to Cancelled. We recommend using cancel if the term was supposed to take place, was scheduled, but was cancelled due to, for example, a lecturer's illness. This way you will have a better overview of how many appointments were originally scheduled.
+2. *Change status*Clicking Cancel will change the status of the term to Cancelled. We recommend using cancel if the term was supposed to take place, was scheduled, but was cancelled due to, for example, a instructor's illness. This way you will have a better overview of how many appointments were originally scheduled.
  ![Screenshot](../../assets/images/edit-events-in-courses-04.png)
 3. *Adjust time*When adjusting the time, you can choose from three options for adjusting the date:
 4. *Keep as is – *if you want to move the date
-5. *Set new time for all selected lessons/events – *enter the new valid time
+5. *Set new time for all selected sessions/sessions – *enter the new valid time
 6. *Move the time by interval – *you can add or subtract from the original time, for example 1 hour)
  ![Screenshot](../../assets/images/edit-events-in-courses-05.png)
 
@@ -57,24 +57,24 @@ Attention! Do not forget to set whether you want to notify clients about the cha
 
 1. Confirm the changes to the selected dates by clicking Start and press Continue again to complete the bulk edit.
 
-## Edit a single event
+## Edit a single session
 
-If you only have 1 term that you need to edit, you can do this by following the same steps as in the chapter above or directly in the event details. For more information about working with appointments, see the manual about [Creating events/lessons](https://support.zooza.online/portal/en/kb/articles/creating-events-in-groups).
+If you only have 1 term that you need to edit, you can do this by following the same steps as in the chapter above or directly in the session details. For more information about working with appointments, see the manual about [Creating sessions/sessions](https://support.zooza.online/portal/en/kb/articles/creating-events-in-groups).
 
 ![Screenshot](../../assets/images/edit-events-in-courses-09.png)
 
-## At group level
+## At class level
 
-1. Select the course and group in which you want to change the event and open the event overview at the bottom of the group in the Events/Lessons tab*
+1. Select the programme and class in which you want to change the session and open the session overview at the bottom of the class in the Sessions/Sessions tab*
  ![Screenshot](../../assets/images/edit-events-in-courses-10.png)
  *
-2. This will open a list of all the upcoming events you have created in the group.
-3. If you only want to edit 1 event, open that event and make the edits as in the Edit a single event section of this manual.
-4. If you want to make a bulk edit of lessons, click the Overview button and you will be taken to the Events/Lessons section with the filter already active. Next, proceed as in the Bulk Edit Events section of this manual.
+2. This will open a list of all the upcoming sessions you have created in the class.
+3. If you only want to edit 1 session, open that session and make the edits as in the Edit a single session section of this manual.
+4. If you want to make a bulk edit of sessions, click the Overview button and you will be taken to the Sessions/Sessions section with the filter already active. Next, proceed as in the Bulk Edit Sessions section of this manual.
 
 ![Screenshot](../../assets/images/discount-code-01.png)
 
-Attention! At the group level you will be shown ONLY the upcoming dates, if you are interested in viewing all dates (previous and upcoming) and then editing those, you need to change the sort order to something other than Upcoming Lessons.
+Attention! At the class level you will be shown ONLY the upcoming dates, if you are interested in viewing all dates (previous and upcoming) and then editing those, you need to change the sort order to something other than Upcoming Sessions.
 
 
 ![Screenshot](../../assets/images/edit-events-in-courses-12.png)

@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13713656
-intercom_sync: false
+intercom_sync: true
 ---
 
 # WhatsApp FAQ
@@ -21,7 +21,7 @@ intercom_sync: false
 
 No. They receive WhatsApp messages and follow links to your **website/Parent Portal**.
 
-## Can we choose which events send on WhatsApp?
+## Can we choose which sessions send on WhatsApp?
 
 Core touchpoints are **pre-wired** and also send email. You can edit template **content/language**; triggers are fixed for consistency.
 

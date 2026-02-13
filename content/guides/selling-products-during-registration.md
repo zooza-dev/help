@@ -13,14 +13,14 @@ needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 ---
 
-# How to sell products during registration / booking (T-shirt example)
+# How to sell products during booking / booking (T-shirt example)
 
 ## Overview
 
-In Zooza, selling a physical product during the registration (booking) flow is a two-step setup:
+In Zooza, selling a physical product during the booking (booking) flow is a two-step setup:
 
 1. Create Services (items / variants) – e.g., T-shirt sizes (S, M, L) with price and stock
-2. Create a Product – group those services into one product called “T-shirt” and decide if it’s optional/mandatory Then you attach the product to a class / timetable, so it appears during booking and/or in the client profile.
+2. Create a Product – class those services into one product called “T-shirt” and decide if it’s optional/mandatory Then you attach the product to a class / timetable, so it appears during booking and/or in the client profile.
 
 <br>
 
@@ -86,11 +86,11 @@ Save the product.
 
 ## Step 5: Test the booking flow
 
-1. Open the booking / registration page as a client
+1. Open the booking / booking page as a client
 2. Select a child (or a participant)
 3. You will see the product (e.g., “T-shirt”) in the booking flow
-4. When a size is selected, the total price increases accordinglyExample: Registration = £100
-5. Registration + T-shirt = £100 + T-shirt price
+4. When a size is selected, the total price increases accordinglyExample: Booking = £100
+5. Booking + T-shirt = £100 + T-shirt price
 
 ![Screenshot](../../assets/images/selling-products-during-registration-06.png)
 
@@ -109,7 +109,7 @@ Save the product.
 
 Zooza supports the operational layer of selling products around your bookings. It helps you:
 
-- show products during registration / booking (or in the client profile as an upsell)
+- show products during booking / booking (or in the client profile as an upsell)
 - record what was purchased (product + variant like size)
 - track stock (if you use stock numbers)
 - include the product in the booking price and record payment-related information

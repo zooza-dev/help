@@ -12,15 +12,15 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-12"
 intercom_id: 13725611
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Programmes, Timetables and Sessions FAQ
 
 ## What is the difference between programmes, timetables, and sessions?
 
-- **Programme (Course)** — the top-level entity (e.g., "Beginners Swimming"). It holds pricing, settings, and automation rules.
-- **Timetable (Class/Group)** — a specific scheduled class within a programme (e.g., "Monday 9:00 AM at Main Hall"). It defines the recurring pattern, location, and instructor.
+- **Programme (Programme)** — the top-level entity (e.g., "Beginners Swimming"). It holds pricing, settings, and automation rules.
+- **Timetable (Class/Class)** — a specific scheduled class within a programme (e.g., "Monday 9:00 AM at Main Hall"). It defines the recurring pattern, location, and instructor.
 - **Sessions** — individual occurrences of a class (e.g., "Monday 6 January 9:00 AM"). Sessions are generated from the timetable and can be edited individually.
 
 Changes made at the **timetable** level (e.g., assigning an instructor) do not always cascade to existing individual sessions. You may need to update sessions separately using bulk edit.

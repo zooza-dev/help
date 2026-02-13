@@ -12,23 +12,23 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13713663
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Blocks creation
 
-The blocks feature allows you to divide the terms within a group into smaller logical units - subgroups that you can use for different purposes depending on the needs of your organization or the type of course.
+The blocks feature allows you to divide the terms within a class into smaller logical units - subgroups that you can use for different purposes depending on the needs of your organization or the type of course.
 
 For example, blocks can be used for:
 
 
-1. Registration according to interest - the customer chooses a specific block that suits him best when registering (e.g. only a certain month or dates on selected days).
-2. Time period division – if the group lasts longer (e.g. a whole school year), blocks allow you to divide it into smaller units (e.g. semesters, quarters, camps), and you can issue payments separately for each period according to these blocks.
+1. Booking according to interest - the client chooses a specific block that suits him best when registering (e.g. only a certain month or dates on selected days).
+2. Time period division – if the class lasts longer (e.g. a whole school year), blocks allow you to divide it into smaller units (e.g. semesters, quarters, camps), and you can issue payments separately for each period according to these blocks.
 
 ## Creating blocks
 
 
-Blocks are created when creating dates in a group, where you decide whether to create a new block or insert the dates into an existing block... This flexibility allows you to manage courses efficiently and at the same time offer your clients better orientation and choice. For detailed instructions on creating appointments, please refer to the separate [manual](https://support.zooza.online/portal/en/kb/articles/creating-events-in-groups).
+Blocks are created when creating dates in a class, where you decide whether to create a new block or insert the dates into an existing block... This flexibility allows you to manage programmes efficiently and at the same time offer your clients better orientation and choice. For detailed instructions on creating appointments, please refer to the separate [manual](https://support.zooza.online/portal/en/kb/articles/creating-events-in-groups).
 
 ![Screenshot](../../assets/images/blocks-creation-01.png)
 
@@ -37,10 +37,10 @@ Blocks are created when creating dates in a group, where you decide whether to c
 ## Change blocks on existing terms
 
 
-If you need to make a change to a block - for example, to change the name or move sessions from one block to another - you can use the bulk session editing feature directly at the group level. Follow these steps:
+If you need to make a change to a block - for example, to change the name or move sessions from one block to another - you can use the bulk session editing feature directly at the class level. Follow these steps:
 
 
-1. In the term group overview, select the sessions you want to edit.
+1. In the term class overview, select the sessions you want to edit.
 2. Click Bulk Edit.
 3. Select the Change Block option and select the specific edit you want to make on the marked sessions.
 
@@ -52,7 +52,7 @@ This way, you can easily reallocate or modify blocks without having to modify ea
 ## Price and payment
 
 
-Each block you create can have its own price that you expect from clients. You can choose to have the price calculated from the unit price based on the number of dates in the block, or you can enter a fixed amount for the entire block. You also have the option to set a discount - either as a fixed amount (absolute) or as a percentage of the price (relative). The discount is set at the level of the specific block in the group - so it applies only to the block on which you set it. It does not apply to the group as a whole. You adjust all these settings within the group, in the *Price and Payment* tile.
+Each block you create can have its own price that you expect from clients. You can choose to have the price calculated from the unit price based on the number of dates in the block, or you can enter a fixed amount for the entire block. You also have the option to set a discount - either as a fixed amount (absolute) or as a percentage of the price (relative). The discount is set at the level of the specific block in the class - so it applies only to the block on which you set it. It does not apply to the class as a whole. You adjust all these settings within the class, in the *Price and Payment* tile.
 
 ![Screenshot](../../assets/images/blocks-creation-03.png)
 
@@ -73,22 +73,22 @@ If you want to give the client the option to register only for a specific block 
 For blocks created on terms, there is a type of payment template called *Periodic Prepayment with a frequency of payment By Block* that is designed just for this purpose. This template will ensure that a payment is always created for the client before the start of the relevant block.
 
 
-Detailed instructions on how to create payment templates and how to apply them to courses can be found in this [manual](payment-templates-creation.md).
+Detailed instructions on how to create payment templates and how to apply them to programmes can be found in this [manual](payment-templates-creation.md).
 
 ![Screenshot](../../assets/images/blocks-creation-06.png)
 
 ![Screenshot](../../assets/images/blocks-creation-07.png)
 
 
-Tip: We recommend using the Periodic Prepayment template with a block-by-block payment frequency when you plan to divide a group into logical units by which you will expect clients to pay - for example, quarters, semesters, and so on.
+Tip: We recommend using the Periodic Prepayment template with a block-by-block payment frequency when you plan to divide a class into logical units by which you will expect clients to pay - for example, quarters, semesters, and so on.
 
-However, if you offer courses where the blocks are just an organizational division of dates that run at the same time (e.g., parallel running groups), it is sufficient for you to use a common payment frequency such as monthly, quarterly, or one-time.
+However, if you offer programmes where the blocks are just an organizational division of dates that run at the same time (e.g., parallel running classes), it is sufficient for you to use a common payment frequency such as monthly, quarterly, or one-time.
 
 
 ## Products
 
 
-Occasionally, there will be a situation where you need to divide the products in the registration form according to what part of the course you are in. You can solve this by using blocks and adding products to each block separately, where you set exactly in which block you will offer which product (book, service,...).
+Occasionally, there will be a situation where you need to divide the products in the registration form according to what part of the programme you are in. You can solve this by using blocks and adding products to each block separately, where you set exactly in which block you will offer which product (book, service,...).
 
 
 1. At the class level, click *Change* in the *Products *tile to add the desired products to the class.
@@ -109,27 +109,27 @@ Repeat this process for any products you want to display in the registration for
 ## In the list of Sessions
 
 
-In the session list, you see these blocks next to the course information:
+In the session list, you see these blocks next to the programme information:
 
 ![Screenshot](../../assets/images/blocks-creation-11.png)
 
 ## In registration form
 
 
-If you have courses divided into blocks and also enabled online registration, the client chooses which blocks he wants to subscribe to when registering. This option will be displayed to him when he clicks on the* Customize Menu *button. If the client selects the *For the entire course period *option, the system will automatically register the client for all available blocks within the group and full payment for the entire course is expected at the same time.
+If you have programmes divided into blocks and also enabled online registration, the client chooses which blocks he wants to subscribe to when registering. This option will be displayed to him when he clicks on the* Customize Menu *button. If the client selects the *For the entire programme period *option, the system will automatically register the client for all available blocks within the class and full payment for the entire programme is expected at the same time.
 
 ![Screenshot](../../assets/images/blocks-creation-12.png)
 
-## In registration detail
+## In booking detail
 
 
-If the client only registers for the selected blocks via the registration form, you will only see sessions that are part of the selected blocks in the *Attendance *tile in their registration details. Other appointments that the client is not registered for will be marked as *Hidden *in the system and will not be displayed to the client.
+If the client only registers for the selected blocks via the registration form, you will only see sessions that are part of the selected blocks in the *Attendance *tile in their booking details. Other appointments that the client is not registered for will be marked as *Hidden *in the system and will not be displayed to the client.
 
 ![Screenshot](../../assets/images/blocks-creation-13.png)
 
 ![Screenshot](../../assets/images/blocks-creation-14.png)
 
-Note: To verify which blocks a client has registered for, go to the Class tile in the* Registration Details* to see a complete overview of which course, group, and specific blocks the client belongs to. This overview allows you to quickly and easily see the scope of the client's registration.
+Note: To verify which blocks a client has registered for, go to the Class tile in the* Booking Details* to see a complete overview of which programme, class, and specific blocks the client belongs to. This overview allows you to quickly and easily see the scope of the client's booking.
 
 
 ![Screenshot](../../assets/images/blocks-creation-15.png)

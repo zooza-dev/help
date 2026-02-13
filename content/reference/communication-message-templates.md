@@ -32,7 +32,7 @@ Custom templates created by your team.
 
 ## Booking
 
-Templates triggered by booking-related events:
+Templates triggered by booking-related sessions:
 
 | Template | When it is sent |
 |---|---|
@@ -40,20 +40,20 @@ Templates triggered by booking-related events:
 | **Confirmation of booking (Session programme)** | Sent automatically after clicking the confirmation link from the email invitation. |
 | **Trial timetable bookings completed** | Sent to the client when they enrol for the trial timetable. |
 | **Trial ended** | Sent automatically if the trial automation in programme settings is set up. The goal is to send the booking link to the client. |
-| **Trial ended follow-up** | Sent automatically up to two times if trial automation is enabled. Includes follow-up to remind the customer to enrol via the provided booking link. |
-| **Trial lost** | Sent automatically if trial automation is enabled in programme settings. Informs the customer that they have decided not to enrol. |
+| **Trial ended follow-up** | Sent automatically up to two times if trial automation is enabled. Includes follow-up to remind the client to enrol via the provided booking link. |
+| **Trial lost** | Sent automatically if trial automation is enabled in programme settings. Informs the client that they have decided not to enrol. |
 | **Booking confirmation – Lead collection** | Sent automatically after clicking the link from the email invitation to confirm booking. |
 | **Waiting list (Continuous programme)** | Sent after enrolling for a class that is full. |
 | **Late booking** | Sent to clients in session programmes who have enrolled for a class that has already started. |
 | **Booking confirmation – Open sessions** | Sent automatically after clicking the link from the email invitation to confirm booking. |
-| **Booking confirmation – One-off event** | Sent automatically after clicking the link from the email invitation to confirm booking. |
-| **Waiting list (One-off event)** | Sent after joining a class that is full. |
+| **Booking confirmation – One-off session** | Sent automatically after clicking the link from the email invitation to confirm booking. |
+| **Waiting list (One-off session)** | Sent after joining a class that is full. |
 
 Each template shows a **Template** link and optionally **Custom templates** with an **Add new template** button.
 
 ## Order
 
-Templates triggered by order events:
+Templates triggered by order sessions:
 
 | Template | When it is sent |
 |---|---|
@@ -66,14 +66,14 @@ Templates for automated notifications:
 | Template | When it is sent |
 |---|---|
 | **Upcoming session notification** | Sent every day at three o'clock and contains a list of the following day's sessions for which the client is not excused. |
-| **Automatic session reminder** | Sent the day before the session to all customers who are enrolled for the session. |
+| **Automatic session reminder** | Sent the day before the session to all clients who are enrolled for the session. |
 | **Cancellation confirmation** | Sent following a cancellation by either the client or the instructor. |
 | **Automatic waiting list notification** | Sent to people on the waiting list for a one-session programme. |
-| **Next programme offer** | Sent when the customer is included in the next programme invitation. |
+| **Next programme offer** | Sent when the client is included in the next programme invitation. |
 
 ## Other
 
-Templates for miscellaneous system events:
+Templates for miscellaneous system sessions:
 
 | Template | When it is sent |
 |---|---|

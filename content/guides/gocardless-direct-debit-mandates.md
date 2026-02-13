@@ -12,10 +12,10 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13725811
-intercom_sync: false
+intercom_sync: true
 ---
 
-# How to assign Direct Debit mandates to registrations (GoCardless)
+# How to assign Direct Debit mandates to bookings (GoCardless)
 
 After the import, you can assign existing Direct Debit mandates to the imported bookings.
 
@@ -59,18 +59,18 @@ Doing this early allows us later to simply apply payment plans to bookings, with
 
 ## Create payment plans
 
-#### Option A: Apply a payment template to the whole group (recommended)
+#### Option A: Apply a payment template to the whole class (recommended)
 
-For each group:
+For each class:
 
-1. Open the group
+1. Open the class
 2. Go to Price & Payments
 3. Click “Apply payment template”
-4. Set the amount (based on the group)
+4. Set the amount (based on the class)
 5. Select start date: e.g. 1 January 2026
 6. Choose which bookings it applies to (usually all)
 7. Confirm and continue
 
-#### Option B: Create payment plans manually per registration (Guide)
+#### Option B: Create payment plans manually per booking (Guide)
 
 The logic is the same, just done individually.

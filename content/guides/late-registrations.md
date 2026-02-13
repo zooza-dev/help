@@ -12,12 +12,12 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13725827
-intercom_sync: false
+intercom_sync: true
 ---
 
-# Late registrations
+# Late bookings
 
-## Late registration: automatic approval, full price for the whole course
+## Late booking: automatic approval, full price for the whole programme
 
 Klient
 
@@ -26,35 +26,35 @@ Admin
 
 Klient
 
-| Before registration |
+| Before booking |
 |---|
 | |
-| During registration |
-| Selects a course/group from the menu and fills in the details |
-| After registration creation |
+| During booking |
+| Selects a programme/class from the menu and fills in the details |
+| After booking creation |
 | Receives a notification that the
-registration has been completed and a request to confirm the
-registration (from the system's side, this is a confirmation of entering
+booking has been completed and a request to confirm the
+booking (from the system's side, this is a confirmation of entering
  the correct email address) |
-| After registration confirmation |
+| After booking confirmation |
 | Notification is automatically sent
-with all course information with the option to log in to the profile -
-email template: Registration confirmation |
+with all programme information with the option to log in to the profile -
+email template: Booking confirmation |
 
 Admin
 
-| Before registration |
+| Before booking |
 |---|
-| Allow late registrationsSelect a courseClick on *Online registration*In the *Late registrations* section select *Automatically confirmed*Price calculation - Full course price |
+| Allow late registrationsSelect a courseClick on *Online registration*In the *Late bookings* section select *Automatically confirmed*Price calculation - Full programme price |
 | |
-| During registration |
+| During booking |
 | |
-| After registration creation |
+| After booking creation |
 | |
-| After registration confirmation |
-| The registration is automatically flagged with the status - Late registration (snail icon)Price is set in full amount = price per course/group or full installment amount |
+| After booking confirmation |
+| The booking is automatically flagged with the status - Late booking (snail icon)Price is set in full amount = price per programme/class or full installment amount |
 
-## Late registration: manual approval, price aliquot
+## Late booking: manual approval, price aliquot
 
 Klient
 
@@ -63,53 +63,53 @@ Admin
 
 Klient
 
-| Before registration |
+| Before booking |
 |---|
 | |
-| During registration |
-| Selects a course/group from the menu and fills in the detailsAt the end of the form, the client
-is notified by a message that he/she is registering for a group that has
- already started and that he/she will be informed of the group
+| During booking |
+| Selects a programme/class from the menu and fills in the detailsAt the end of the form, the client
+is notified by a message that he/she is registering for a class that has
+ already started and that he/she will be informed of the class
 assignment |
-| After registration creation |
+| After booking creation |
 | Receives a notification that the
-registration has been completed and a request to confirm the
-registration (from the system's side, this is a confirmation of entering
+booking has been completed and a request to confirm the
+booking (from the system's side, this is a confirmation of entering
  the correct email address) |
-| After registration confirmation |
+| After booking confirmation |
 | A notification will be sent
-notifying the client that the registration has been completed and that
+notifying the client that the booking has been completed and that
 the client will be contacted with more information once he/she has been
-placed in a group |
-| Manual registration approval |
+placed in a class |
+| Manual booking approval |
 | When the confirmation email is sent,
- a notification will arrive with all the course information with the
+ a notification will arrive with all the programme information with the
 option to log in to the profile and payment instructions - email
-template: registration confirmationBoth status and payment details will be displayed in the client's profile |
-| Manual disapproval/cancellation of registration |
+template: booking confirmationBoth status and payment details will be displayed in the client's profile |
+| Manual disapproval/cancellation of booking |
 | Information will only arrive in case
  of individual communication from the admin - application does not
 automatically send anything |
 
 Admin
 
-| Before registration |
+| Before booking |
 |---|
-| Allow late registrationsSelect a courseClick on *Online registration*In the *Late registrations* section select *Automatically confirmed*Price calculation - Automatically calculated |
+| Allow late registrationsSelect a courseClick on *Online registration*In the *Late bookings* section select *Automatically confirmed*Price calculation - Automatically calculated |
 | |
-| During registration |
+| During booking |
 | |
-| After registration creation |
+| After booking creation |
 | |
-| After registration confirmation |
-| The registration is automatically flagged with the status - Late registration (snail icon) |
-| Manual registration approval |
-| View registrations in the group Select or search for Late registrations using the filterAfter clicking on registration, check the automatically calculated debt on the registration - overwrite in the details if necessaryPrice is calculated as an aliquot = For Course Fees, the price per course/group times the number of remaining eventsFor Membership, the price of the first installment is calculated by the number of days remaining in the current period plus one full future periodAfter clicking on registration, change the status to Registered - valid registration for the courseIf you would like to send a confirmation notification check the box Send confirmation email |
+| After booking confirmation |
+| The booking is automatically flagged with the status - Late booking (snail icon) |
+| Manual booking approval |
+| View bookings in the class Select or search for Late bookings using the filterAfter clicking on booking, check the automatically calculated debt on the booking - overwrite in the details if necessaryPrice is calculated as an aliquot = For Programme Fees, the price per programme/class times the number of remaining eventsFor Membership, the price of the first installment is calculated by the number of days remaining in the current period plus one full future periodAfter clicking on booking, change the status to Registered - valid booking for the courseIf you would like to send a confirmation notification check the box Send confirmation email |
 | |
-| Manual disapproval/cancellation of registration |
-| View registrations in the groupSelect or search for Late registrations using the filterOnce you click on a registration, change the status to Cancelled Registration (during the course) You send cancellation information individually via send email/SMS to registration |
+| Manual disapproval/cancellation of booking |
+| View bookings in the groupSelect or search for Late bookings using the filterOnce you click on a booking, change the status to Cancelled Booking (during the programme) You send cancellation information individually via send email/SMS to booking |
 
-## Late registration: manual approval, full price for the whole course
+## Late booking: manual approval, full price for the whole programme
 
 Klient
 
@@ -118,70 +118,70 @@ Admin
 
 Klient
 
-| Before registration |
+| Before booking |
 |---|
 | |
-| During registration |
-| Selects a course/group from the menu to fill in the detailsAt the end of the form, the client is notified by a message that he/she is registering for a group that has already started and that he/she will be informed of the group assignment |
-| After registration creation |
+| During booking |
+| Selects a programme/class from the menu to fill in the detailsAt the end of the form, the client is notified by a message that he/she is registering for a class that has already started and that he/she will be informed of the class assignment |
+| After booking creation |
 | Receives a notification that the
-registration has been completed and a request to confirm the
-registration (from the system's side, this is a confirmation of entering
+booking has been completed and a request to confirm the
+booking (from the system's side, this is a confirmation of entering
  the correct email address) |
-| After registration confirmation |
-| A notification will be sent notifying the client that the registration has been completed and that the client will be contacted with more information once he/she has been placed in a group |
-| Manual registration approval |
-| When the confirmation email is sent, a notification will arrive with all the course information with the option to log in to the profile and payment instructions - email template: registration confirmationBoth status and payment details will be displayed in the client's profile |
-| Manual disapproval/cancellation of registration |
+| After booking confirmation |
+| A notification will be sent notifying the client that the booking has been completed and that the client will be contacted with more information once he/she has been placed in a class |
+| Manual booking approval |
+| When the confirmation email is sent, a notification will arrive with all the programme information with the option to log in to the profile and payment instructions - email template: booking confirmationBoth status and payment details will be displayed in the client's profile |
+| Manual disapproval/cancellation of booking |
 | Information will only arrive in case of individual communication from the admin - application does not automatically send anything |
 
 Admin
 
-| Before registration |
+| Before booking |
 |---|
-| Allow late registrations
+| Allow late bookings
 
 
-Select a course
+Select a programme
 
 
 Click on *Online registration*
 
 
-In the *Late registrations* section select *Automatically confirmed*
+In the *Late bookings* section select *Automatically confirmed*
 
 
-Price calculation - Full course price |
+Price calculation - Full programme price |
 | |
-| During registration |
+| During booking |
 | |
-| After registration creation |
+| After booking creation |
 | |
-| After registration confirmation |
-| The registration is automatically flagged with the status - Late registration (snail icon) |
-| Manual registration approval |
-| View registrations in the group
+| After booking confirmation |
+| The booking is automatically flagged with the status - Late booking (snail icon) |
+| Manual booking approval |
+| View bookings in the class
 
 
- Select or search for Late registrations using the filter
+ Select or search for Late bookings using the filter
 
 
-After clicking on the registration, change the status to Registered - valid registration for the course
+After clicking on the booking, change the status to Registered - valid booking for the programme
 
 
 If you would like to send a confirmation notification check the box *Send confirmation email*
 
 
- Price is set at the full amount - Amount = price per course/group or full payment |
+ Price is set at the full amount - Amount = price per programme/class or full payment |
 | |
-| Manual disapproval/cancellation of registration |
-| View registrations in the group
+| Manual disapproval/cancellation of booking |
+| View bookings in the class
 
 
-Select or search for Late registrations using the filter
+Select or search for Late bookings using the filter
 
 
-Once you click on a registration, change the status to Cancelled Registration (during the course)
+Once you click on a booking, change the status to Cancelled Booking (during the programme)
 
 
- You send cancellation information individually via send email/SMS to registration |
+ You send cancellation information individually via send email/SMS to booking |

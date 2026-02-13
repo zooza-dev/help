@@ -1,16 +1,19 @@
 ---
-title: "Billing and Payments for Zooza"
-slug: "zooza-billing-payments"
-type: "guides"
-product_area: "Payments"
+title: Billing and Payments for Zooza
+slug: zooza-billing-payments
+type: guides
+product_area: Payments
 sub_area: ""
-audience: ["admin"]
+audience:
+  - admin
 tags: []
-status: "published"
-source_legacy_path: "legacy/0075_Welcome to Zooza.html"
-source_language: "en"
+status: published
+source_legacy_path: legacy/0075_Welcome to Zooza.html
+source_language: en
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: 2026-02-11
+intercom_id: 13725973
+intercom_sync: false
 ---
 
 # Billing and Payments for Zooza

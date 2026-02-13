@@ -12,12 +12,12 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13726022
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Deploying Zooza app on your website
 
-Integration into your website is simple. As soon as a new account is created in Zooza, there is nothing to prevent the individual forms from being deployed to your website. What's great about Zooza's forms is that your customer will never leave your site. Zooza will become part of yours and will look like it was created for your website.
+Integration into your website is simple. As soon as a new account is created in Zooza, there is nothing to prevent the individual forms from being deployed to your website. What's great about Zooza's forms is that your client will never leave your site. Zooza will become part of yours and will look like it was created for your website.
 
 At the same time, know that you can also edit each form graphically through what are called CSS styles (your programmer will know), so you'll be able to further customize the forms to your graphical liking. To deploy the forms on your site you need to have the Zooza plugin downloaded.
 There are 3 ways to deploy widgets on your page:
@@ -62,12 +62,12 @@ If your site is not built on the WordPress platform or you need to place widgets
 
 ![Screenshot](../../assets/images/customizing-widgets-01.png)
 
-If you have a page built around a specific course offering, Zooza allows you to integrate widgets based on exactly what courses you want to display on each page. Simply click *Edit Embed Code* below the code itself to open a menu with a selection of courses and sites.
+If you have a page built around a specific programme offering, Zooza allows you to integrate widgets based on exactly what programmes you want to display on each page. Simply click *Edit Embed Code* below the code itself to open a menu with a selection of programmes and sites.
 
 ![Screenshot](../../assets/images/blocks-creation-07.png)
 
 
-If you collect a lot of additional data in the registration form or use products, you can enable the Multi-Step Registration option. This feature breaks the registration process into multiple steps, improving clarity and user experience.
+If you collect a lot of additional data in the registration form or use products, you can enable the Multi-Step Booking option. This feature breaks the booking process into multiple steps, improving clarity and user experience.
 
 
 ![Screenshot](../../assets/images/deploying-zooza-on-website-10.png)
@@ -80,6 +80,6 @@ Once you have Zooza successfully integrated on your site, you can customize the 
 ## Integrating widgets on multiple websites through one Zooza account
 
 
-It may happen that you have courses split across multiple pages, either due to location or course type,... In this case, Zooza offers you the possibility to have one account for course administration, but multiple integrations to all websites. Just create a new widget in the Publish section by clicking *Add*.
+It may happen that you have programmes split across multiple pages, either due to location or programme type,... In this case, Zooza offers you the possibility to have one account for programme administration, but multiple integrations to all websites. Just create a new widget in the Publish section by clicking *Add*.
 
 ![Screenshot](../../assets/images/deploying-zooza-on-website-12.png)

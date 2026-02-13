@@ -93,7 +93,7 @@ The booking detail is a dense page with multiple sections. Quick links at the to
 
 Expandable section with additional settings:
 
-- **Change widget** — change the registration widget used.
+- **Change widget** — change the booking widget used.
 - **Send reminders of the upcoming sessions** — toggle automatic session reminders.
 - **Occupied slots** — set the number of spaces reserved by this booking in a session (default: 1).
 - **Extra make-up sessions** — add extra make-up session slots beyond the programme default.
@@ -273,12 +273,12 @@ Click **Change status** to apply.
 
 ![Cancel booking](../../assets/images/reference/bookings-cancel.png)
 
-Cancellation notice: "By cancelling the booking, the customer will stop receiving notifications and all future payments will be cancelled. The booking data will still appear in reports, such as the lecturer's report."
+Cancellation notice: "By cancelling the booking, the client will stop receiving notifications and all future payments will be cancelled. The booking data will still appear in reports, such as the instructor's report."
 
 | Field | Description |
 |---|---|
 | `Cancellation type` | **Cancel immediately** or **Schedule cancellation for a later date**. |
-| `Cancellation date` | Date picker (shown when scheduling). The booking will be cancelled on this date; until then, the customer stays enrolled. |
+| `Cancellation date` | Date picker (shown when scheduling). The booking will be cancelled on this date; until then, the client stays enrolled. |
 | `Send confirmation email` | Checkbox — notify the client. |
 
 Click **Proceed** to confirm.
@@ -668,6 +668,6 @@ Click **Send** to send the message.
 ## Related
 
 - [Common Booking Scenarios](../faq/common-booking-scenarios.md) — FAQ for booking-related tasks.
-- [Registration and Booking FAQ](../faq/registration-and-booking-faq.md) — common registration questions.
+- [Booking and Booking FAQ](../faq/registration-and-booking-faq.md) — common booking questions.
 - [Payment Pairing Guide](../guides/payment-pairing.md) — how to match payments to bookings.
 - [Attendance and Catch-ups FAQ](../faq/attendance-and-catchups-faq.md) — make-up session questions.

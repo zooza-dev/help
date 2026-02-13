@@ -1,16 +1,20 @@
 ---
-title: "Sending email/SMS to clients"
-slug: "sending-email-sms"
-type: "guides"
-product_area: "Communication"
-sub_area: "Email"
-audience: ["admin"]
-tags: ["email"]
-status: "published"
-source_legacy_path: "legacy/0012_Welcome to Zooza.html"
-source_language: "mixed"
+title: Sending email/SMS to clients
+slug: sending-email-sms
+type: guides
+product_area: Communication
+sub_area: Email
+audience:
+  - admin
+tags:
+  - email
+status: published
+source_legacy_path: legacy/0012_Welcome to Zooza.html
+source_language: mixed
 needs_screenshot_replacement: true
-last_converted: "2026-02-11"
+last_converted: 2026-02-11
+intercom_id: 13725956
+intercom_sync: false
 ---
 
 # Sending email/SMS to clients
@@ -38,7 +42,7 @@ You can also sort them from newest or oldest.
 
 Clicking on the client's email takes you to the communication detail for the selected client.
 
-You can also access the communication detail by searching for a specific registration and clicking the **Communication** button. In this section you can:
+You can also access the communication detail by searching for a specific booking and clicking the **Communication** button. In this section you can:
 
 - Send a new message
 - View the history of sent emails/SMS
@@ -63,17 +67,17 @@ The procedure for sending emails and SMS is the same:
 
 ![Target group selection](../../assets/images/target-group-selection.png "Target group selection")
 
-3. Check the **Promotional message** box if your message is promotional. This setting means that if any client has unsubscribed from receiving advertising messages, they will not receive them. If you want to send a message to all clients including those who have additional access to registrations, click the checkbox **Send email also to users with additional access to registration**.
+3. Check the **Promotional message** box if your message is promotional. This setting means that if any client has unsubscribed from receiving advertising messages, they will not receive them. If you want to send a message to all clients including those who have additional access to bookings, click the checkbox **Send email also to users with additional access to booking**.
 
 ![Promotional message settings](../../assets/images/promotional-message-settings.png "Promotional message settings")
 
 4. Choose who you want to send the message to:
-   - **Clients** -- if a client has multiple registrations, they receive the email only once.
-   - **Registrations** -- if you need to include specific information about each registration; a client with multiple registrations receives more emails.
+   - **Clients** -- if a client has multiple bookings, they receive the email only once.
+   - **Bookings** -- if you need to include specific information about each booking; a client with multiple bookings receives more emails.
 
 ![Clients vs registrations selection](../../assets/images/clients-registrations-selection.png "Clients vs registrations selection")
 
-5. If you selected a specific group as your target, select the group.
+5. If you selected a specific class as your target, select the class.
 
 ![Group selection](../../assets/images/group-selection-dropdown.png "Group selection dropdown")
 
@@ -91,7 +95,7 @@ The procedure for sending emails and SMS is the same:
 
 > **Note:** To check each sent email, we recommend that you include your own email address.
 
-> **Attention!** Zooza does not function as a marketing communications system that allows clients to opt out of receiving marketing/promotional messages. It is also not used to obtain information about how many clients opened the promotional email or responded to links. The **Promotional Email / Promotional SMS** function is for customer information only. If a client wants to unsubscribe from promotional emails, you can do it based on their request:
+> **Attention!** Zooza does not function as a marketing communications system that allows clients to opt out of receiving marketing/promotional messages. It is also not used to obtain information about how many clients opened the promotional email or responded to links. The **Promotional Email / Promotional SMS** function is for client information only. If a client wants to unsubscribe from promotional emails, you can do it based on their request:
 >
 > 1. In the **Clients** section, open the client account and click on **Notes and preferences**.
 > 2. Untick the **Send promotional emails** box.
@@ -104,12 +108,12 @@ The procedure for sending emails and SMS is the same:
 
 You can also use the procedure above, but it assumes you know the recipient email. When communicating with a specific client:
 
-1. In the **Registrations** tab, click on the name of the client you want to contact.
-2. In the client registration details, click the **Email** or **SMS** button in the **Communication** section.
+1. In the **Bookings** tab, click on the name of the client you want to contact.
+2. In the client booking details, click the **Email** or **SMS** button in the **Communication** section.
 
 The recipient's details will automatically fill in. The rest of the process is the same as described above.
 
-> **Attention!** If no communication has been sent to the client, a notification about this fact will be displayed in the overview of sent messages for the given registration.
+> **Attention!** If no communication has been sent to the client, a notification about this fact will be displayed in the overview of sent messages for the given booking.
 
 ![No communication warning](../../assets/images/no-communication-warning.png "No communication warning in registration detail")
 
