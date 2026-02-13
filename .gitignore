@@ -2,7 +2,9 @@
 .obsidian/
 .claude/settings.local.json
 build/exports/web/
-build/exports/targets/
+build/exports/targets/*
+!build/exports/targets/intercom/
+build/exports/targets/intercom/*
 !build/exports/targets/intercom/intercom-map.json
 __pycache__/
 *.pyc
