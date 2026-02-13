@@ -11,8 +11,6 @@ source_legacy_path: "legacy/0023_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
-intercom_id: 13725841
-intercom_sync: true
 ---
 
 # Parent Portal 101

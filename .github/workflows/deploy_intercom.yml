@@ -110,3 +110,21 @@ jobs:
           name: intercom-targets
           path: build/exports/targets/intercom/
           retention-days: 90
+
+      - name: Commit intercom-map.json back to repo
+        if: ${{ inputs.dry_run == false }}
+        run: |
+          MAP_FILE="build/exports/targets/intercom/intercom-map.json"
+          if [ ! -f "$MAP_FILE" ]; then
+            echo "No map file to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "$MAP_FILE"
+          if git diff --cached --quiet; then
+            echo "intercom-map.json unchanged, nothing to commit"
+          else
+            git commit -m "chore: update intercom-map.json after deploy"
+            git push
+          fi

@@ -1,0 +1,44 @@
+name: Purge Intercom Articles
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (list articles without deleting)"
+        type: boolean
+        default: true
+      confirm:
+        description: "Type DELETE to confirm (ignored in dry-run)"
+        type: string
+        default: ""
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    env:
+      INTERCOM_ACCESS_TOKEN: ${{ secrets.INTERCOM_ACCESS_TOKEN }}
+      INTERCOM_API_BASE_URL: ${{ secrets.INTERCOM_API_BASE_URL || 'https://api.intercom.io' }}
+      INTERCOM_API_VERSION: "2.9"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Purge all articles
+        run: |
+          FLAGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            FLAGS="--dry-run"
+          elif [ "${{ inputs.confirm }}" != "DELETE" ]; then
+            echo "ERROR: You must type DELETE in the confirm field to proceed."
+            exit 1
+          else
+            FLAGS="--yes"
+          fi
+          python scripts/deploy/intercom_delete_all.py $FLAGS

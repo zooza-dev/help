@@ -11,8 +11,6 @@ source_legacy_path: "legacy/0005_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-02-11"
-intercom_id: 13725803
-intercom_sync: true
 ---
 
 # Dynamic tags

@@ -11,8 +11,6 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-13"
-intercom_id: 13726007
-intercom_sync: true
 ---
 
 # Reports

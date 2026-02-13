@@ -11,8 +11,6 @@ source_legacy_path: "legacy/0013_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
-intercom_id: 13726051
-intercom_sync: false
 ---
 
 # How to Clear Your Cache

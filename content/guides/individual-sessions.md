@@ -11,8 +11,6 @@ source_legacy_path: "legacy/0053_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
-intercom_id: 13725825
-intercom_sync: true
 ---
 
 # Individual Sessions: How to Sell, Plan, and Manage 1:1 Sessions in Zooza

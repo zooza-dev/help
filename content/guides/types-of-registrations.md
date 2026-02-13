@@ -12,8 +12,6 @@ source_legacy_path: legacy/0033_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: false
 last_converted: 2026-02-11
-intercom_id: 13725964
-intercom_sync: false
 ---
 
 # Types of bookings

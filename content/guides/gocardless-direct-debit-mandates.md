@@ -11,8 +11,6 @@ source_legacy_path: "legacy/0082_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
-intercom_id: 13725811
-intercom_sync: true
 ---
 
 # How to assign Direct Debit mandates to bookings (GoCardless)
