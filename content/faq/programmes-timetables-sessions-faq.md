@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-12"
+last_converted: "2026-02-15"
 intercom_id: 13728496
 intercom_sync: true
 ---
@@ -62,3 +62,45 @@ In the class settings, you can toggle visibility for the online booking form. Th
 ## Why do changes I make not appear immediately?
 
 Zooza uses browser caching to speed up page loading. When you create or edit something (like a location or class), the change may take a moment to appear. A quick browser refresh (Cmd+R on Mac, Ctrl+R on Windows) usually resolves this.
+
+## How do I bulk-delete courses that have no bookings or classes?
+
+Admins cannot bulk-delete courses directly from the application interface. To delete courses that have no registrations or classes (groups), you must send a list of course IDs to Zooza support, who will remove them from the database on your behalf.
+
+Before requesting deletion:
+
+1. Verify that each course has **no active registrations** and **no groups** attached.
+2. If a course still contains groups with historical registrations you want to preserve, move those groups to an archive course first (via group settings — change the programme).
+3. Compile the course IDs (visible in the URL when viewing a course, e.g., `#courses/6455`) and send them to support.
+
+Courses that still contain registrations or groups cannot be deleted — they must be archived instead. <!-- REVIEW: confirm whether self-service course deletion is planned -->
+
+## After rescheduling sessions, holiday-skip rules no longer apply — why?
+
+When you create a class, Zooza generates sessions that respect your holiday and public-holiday skip settings. However, if you later **bulk-reschedule** those sessions to a different weekday or time, the system treats this as a manual override and **does not re-apply** the holiday-skip rules to the new dates.
+
+This means sessions may land on public holidays or school vacation days after rescheduling.
+
+**What to do after rescheduling:**
+
+1. Open the class detail and review all rescheduled sessions.
+2. Manually cancel or remove any sessions that fall on holidays or vacation days.
+3. Add replacement sessions on valid dates if needed to maintain the correct total count.
+
+The system displays a warning when you perform a bulk reschedule, reminding you to check the resulting dates. The admin who performs the change is responsible for verifying that the new session dates are correct.
+
+<!-- REVIEW: Zooza support has acknowledged this as a known limitation and is evaluating whether holiday rules can be re-applied automatically after rescheduling. -->
+
+## How do I change the price for new bookings without affecting existing ones?
+
+Price changes on a programme or class apply **only to new registrations**. Existing registrations keep the price that was set at the time the client registered.
+
+To update the price for future bookings:
+
+1. Go to the programme or class settings.
+2. Change the price to the new amount.
+3. Save.
+
+All new registrations (including clients who convert from a trial) will use the updated price. Clients who registered before the change retain their original price — their payment schedule is not recalculated.
+
+If you need to adjust the price for an existing registration, you must edit the payment on that registration manually. See [Edit payment on booking](../guides/edit-payment-on-booking.md) for details.

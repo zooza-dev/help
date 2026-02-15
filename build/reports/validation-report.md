@@ -4,8 +4,8 @@
 
 ## Summary
 
-- **Total docs checked:** 141
-- **Total issues found:** 42
+- **Total docs checked:** 145
+- **Total issues found:** 56
 - **Overall status:** FAIL
 
 ## 1. Required Frontmatter
@@ -14,11 +14,7 @@ All docs have complete required frontmatter.
 
 ## 2. Unique Slugs
 
-**1 duplicate slug(s) found:**
-
-- Slug `programme-settings` used by:
-  - `content/guides/programme-settings.md`
-  - `content/reference/programme-settings.md`
+All slugs are unique.
 
 ## 3. Unique Intercom IDs
 
@@ -30,20 +26,15 @@ All docs have exactly one H1.
 
 ## 5. No Skipped Heading Levels
 
-**1 doc(s) with heading level skips:**
-
-- `content/guides/gocardless-direct-debit-mandates.md` — Jump from H2 to H4
+No heading level skips found.
 
 ## 6. Broken Internal Links
 
-**2 broken internal link(s) found:**
-
-- `content/guides/payment-correction-vs-refund.md` — link to `edit-payment-on-registration.md`
-- `content/guides/replacement-hours-complete.md` — link to `../faq/replacement-hours-faq.md`
+No broken internal links found.
 
 ## 7. Missing Referenced Assets
 
-**38 missing asset(s) found:**
+**56 missing asset(s) found:**
 
 - `content/guides/automatic-payment-reminders.md` — references `../../assets/images/payment-reminder-settings.png "Payment reminder settings"`
 - `content/guides/automatic-payment-reminders.md` — references `../../assets/images/payment-due-date-settings.png "Payment due date settings"`
@@ -51,6 +42,17 @@ All docs have exactly one H1.
 - `content/guides/automatic-session-notification.md` — references `../../assets/images/turning-off-event-notifications.png "Turning off event notifications in course settings"`
 - `content/guides/automatic-session-notification.md` — references `../../assets/images/add-new-template-button.png "Add new template button in notifications section"`
 - `content/guides/automatic-session-notification.md` — references `../../assets/images/assigning-custom-template-course.png "Selecting a custom notification template for a course"`
+- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-create-product.png "Products — Create new product form"`
+- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-credit-value-config.png "Product credit value and payment method settings"`
+- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-items-for-sale.png "Items for sale section"`
+- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-add-item.png "Add new item dialog"`
+- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-discount-pricing.png "Entry pass with discounted price"`
+- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-description-template.png "Product description and notification template settings"`
+- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-assign-to-class.png "Class settings — Select Product"`
+- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-select-product.png "Product selection dialog"`
+- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-profile-availability.png "Entry pass available in client profile"`
+- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-booking-form-availability.png "Entry pass available in booking form"`
+- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-dual-product-setup.png "Two products — mandatory for profile and optional for booking form"`
 - `content/guides/dynamic-tags.md` — references `../../assets/images/dynamic-tags-panel.png "Dynamic tags panel in template editor"`
 - `content/guides/edit-session-notification-template.md` — references `../../assets/images/communication-menu-message-templates.png "Communication menu - message templates"`
 - `content/guides/edit-session-notification-template.md` — references `../../assets/images/notifications-section-templates.png "Notifications section in templates"`
@@ -60,6 +62,13 @@ All docs have exactly one H1.
 - `content/guides/message-templates.md` — references `../../assets/images/communication-menu-templates.png "Communication menu - message templates"`
 - `content/guides/message-templates.md` — references `../../assets/images/template-list-orange-labels.png "Template list with clickable orange labels"`
 - `content/guides/message-templates.md` — references `../../assets/images/payment-reminder-example.png "Payment reminder example email"`
+- `content/guides/pay-as-you-go-programme.md` — references `../../assets/images/pay-as-you-go-create-programme.png "New programme form with Pay-as-you-go type selected"`
+- `content/guides/pay-as-you-go-programme.md` — references `../../assets/images/pay-as-you-go-create-class.png "Class creation form"`
+- `content/guides/pay-as-you-go-programme.md` — references `../../assets/images/pay-as-you-go-add-sessions.png "Add sessions form"`
+- `content/guides/pay-as-you-go-programme.md` — references `../../assets/images/pay-as-you-go-client-book-session.png "Client profile showing Book Session and Go To Calendar buttons"`
+- `content/guides/pay-as-you-go-programme.md` — references `../../assets/images/pay-as-you-go-client-select-session.png "Session selection in client profile"`
+- `content/guides/pay-as-you-go-programme.md` — references `../../assets/images/pay-as-you-go-client-session-booked.png "Booked session in client attendance"`
+- `content/guides/pay-as-you-go-programme.md` — references `../../assets/images/pay-as-you-go-calendar-widget.png "Calendar widget on website showing available sessions"`
 - `content/guides/send-email-after-session.md` — references `../../assets/images/selecting-event-date.png "Selecting an event date"`
 - `content/guides/send-email-after-session.md` — references `../../assets/images/automation-tile-event-detail.png "Automation tile in event detail"`
 - `content/guides/send-email-after-session.md` — references `../../assets/images/email-options-automation-tile.png "Email options in automation tile"`

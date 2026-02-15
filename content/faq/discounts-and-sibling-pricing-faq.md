@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-12"
+last_converted: "2026-02-15"
 intercom_id: 13728489
 intercom_sync: true
 ---
@@ -47,3 +47,31 @@ For monthly memberships (recurring payments), percentage discounts do not work b
 ## How can I waive a registration fee for existing members?
 
 Create a one-time discount code equal to the registration fee amount (e.g., code "MEMBER" for 100 AED off). Share it with existing clients when they re-register. They enter it during checkout, and the registration fee is deducted from their first payment.
+
+## How do I set a fixed price that ignores pro-rata for late joiners?
+
+By default, the system calculates a pro-rata (proportional) price for late registrations based on the number of remaining sessions or days. To override this and charge the full course price regardless of when the client joins:
+
+1. Open the course and go to **Settings → Price and payment**.
+2. Locate the **Late registrations** section.
+3. Change the pro-rata calculation setting to disable automatic price reduction for latecomers. <!-- REVIEW — confirm exact toggle label in current UI -->
+4. Save the settings.
+
+Once disabled, every new registration pays the full course price even if they join after the course has started. You can also adjust the calculated amount manually on each registration before confirming it, if you need a case-by-case override instead of a blanket rule.
+
+Note: The system does not support date-based automatic switching (e.g., full price for the first two weeks, then pro-rata after that). If you need that behaviour, manually toggle the setting at the appropriate time.
+
+## The payment template rounds my custom price down — how do I avoid this?
+
+Rounding is a setting on the **payment template** itself. It applies only when the template formula calculates the instalment amount (i.e., course price divided by number of instalments). The sequence is:
+
+1. The system takes the course/class price.
+2. It splits the amount according to the template rules (e.g., monthly instalments).
+3. The resulting value is rounded according to the template's rounding setting (e.g., round down to the nearest whole number).
+
+If you enter a **custom fixed amount** directly on a registration's payment schedule, that amount still passes through the template's rounding rule. To avoid unwanted rounding:
+
+- **Option A:** Create a separate payment template with rounding set to **none** and use it whenever you need to assign a custom exact amount.
+- **Option B:** Adjust the rounding setting on your existing template to a precision that suits your needs (e.g., round to two decimal places instead of whole numbers). <!-- REVIEW — confirm available rounding precision options in current UI -->
+
+Go to **Settings → Payment settings** and open the relevant payment template to review or change its rounding configuration.

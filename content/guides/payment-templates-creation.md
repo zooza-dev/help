@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0086_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: false
-last_converted: 2026-02-11
+last_converted: 2026-02-15
 intercom_id: 13728602
 intercom_sync: true
 ---
@@ -291,3 +291,42 @@ For each class/class, you can apply the payment template in one go:
 6. Select which bookings/bookings it applies to (usually All)
  ![Screenshot](../../assets/images/payment-templates-creation-35.png)
 7. Confirm and continue
+
+## Payment templates and registration copy
+
+When you copy a registration from one class to another (e.g., moving clients to a new semester), the payment template from the original registration does **not** carry over. The new registration receives the default payment template configured on the target class.
+
+This means you must re-apply payment templates after copying registrations. You can do this either:
+
+1. One by one — open each copied registration and assign the payment template manually (see [Payment templates on booking](#payment-templates-on-booking) above).
+2. In bulk — use the **Apply payment template** action on the target class (see [Apply a payment template to the whole class](#apply-a-payment-template-to-the-whole-class) above).
+
+<!-- REVIEW: Confirm whether "no template carries over" applies equally to both the Copy and Transfer registration workflows, or only to Copy. -->
+
+## Visible to clients flag
+
+Each payment template has a **Visible to clients** toggle in its settings. This controls two things:
+
+1. **Registration form** — when enabled, the template appears as a selectable payment option during online registration. When disabled, only admins and instructors (if instructor visibility is also enabled) can assign the template.
+2. **Client Profile** — when enabled, the payment plan details (installment amounts, due dates, remaining balance) are visible to the client in their Client Profile under the Payments section.
+
+If clients report they cannot see payment options during registration, check that the relevant templates have the **Visible to clients** toggle turned on. Go to **Settings** > **Payments**, click the pen icon next to the template, and verify the visibility setting.
+
+<!-- REVIEW: Confirm whether "Visible to clients" also controls visibility in the Parent Portal payment tab, or only in the registration widget and profile widget. -->
+
+## Anniversary date on payment templates
+
+For periodic (recurring) payment templates, the `anniversary date` determines the day of the month when installments are generated and sent to clients.
+
+- If you set the anniversary date to the **1st**, installments are created on the 1st of each billing period.
+- If you set it to the **15th**, installments are created on the 15th, and so on.
+
+The anniversary date affects the entire installment schedule. For example, if a monthly template has an anniversary date of the 10th:
+
+1. The first installment is scheduled for the 10th of the current (or next) month.
+2. Each subsequent installment falls on the 10th of the following months.
+3. The period covered by each installment runs from one anniversary date to the next (e.g., 10 January to 9 February).
+
+If you accidentally set the wrong anniversary date (e.g., 10th instead of 1st), you need to update the template and then use **Sync Settings** to propagate the change to all programmes and classes where the template is active. Existing registrations that already have an installment plan may need to have their plan deleted and re-created to reflect the corrected date.
+
+<!-- REVIEW: Confirm whether changing the anniversary date and syncing automatically updates existing installment plans, or whether each registration's plan must be manually re-created. -->

@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0067_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: false
-last_converted: 2026-02-11
+last_converted: 2026-02-15
 intercom_id: 13728632
 intercom_sync: false
 ---
@@ -231,3 +231,87 @@ client does not manage to book himself in the profile, he just arrives,
 the receptionist can also add him to the term
 
 ![Screenshot](../../assets/images/user-roles-20.png)
+
+## Menu visibility by role
+
+Each role sees a different set of items in the left-hand navigation menu. The table below shows which main menu sections are visible for each role.
+
+| Menu item | Owner | Assistant | Main instructor | Instructor | External instructor | Receptionist |
+|---|---|---|---|---|---|---|
+| **Dashboard** | Yes | Yes | Yes | Yes | Yes | Yes |
+| **Calendar** | Yes | Yes | Yes | Yes (own sessions) | Yes (own sessions) | No (daily view on Dashboard only) |
+| **Programmes** | Yes | Yes | No | No | No | No |
+| **Classes** | Yes | Yes | Yes | Yes (own only) | No | No |
+| **Sessions** | Yes | Yes | Yes | Yes (own only) | Yes (own only) | No |
+| **Bookings** | Yes | Yes | Yes (own clients) | Yes (own clients) | No | Yes |
+| **Clients** | Yes | Yes | Yes (own clients) | Yes (own clients) | No | No |
+| **Orders** | Yes | Yes | No | No | No | No |
+| **Payments** | Yes | Yes (limited) | Configurable | No | No | No |
+| **Communication** | Yes | Yes | Yes (own clients) | Yes (own clients) | Configurable | No |
+| **Documents** | Yes | Yes | Yes | No | No | No |
+| **Products** | Yes | Yes | No | No | No | No |
+| **Instructors** | Yes | Yes | No | Own profile only | No | No |
+| **Reports** | Yes | No | No | No | No | No |
+| **Settings** | Yes | Yes (limited) | No | No | No | No |
+
+<!-- REVIEW: Verify exact menu items for Main instructor and External instructor against the current app UI. The Main instructor lost access to Programmes after an architecture change, which caused confusion in support tickets. -->
+
+Key points:
+
+- The **Receptionist** does not see the Calendar page. They see only the current day's sessions on the Dashboard.
+- The **External instructor** accesses sessions through the Calendar and Dashboard only. They do not see separate Bookings, Clients, or Classes menu items.
+- The **Main instructor** does not see the Programmes menu. This is by design. If a team member needs to manage programmes, assign the **Assistant** role instead.
+- The **Payments** menu for the Main instructor role can be shown or hidden via **Settings --> Team --> Settings**.
+
+## Controlling pay rate visibility
+
+Pay rates and payout reports are visible only to the **Owner** and **Assistant** roles. Other roles cannot see colleague pay rates in the Instructors section or in reports.
+
+### Which roles can see pay rates?
+
+| Role | Can see pay rates | Can see payout reports |
+|---|---|---|
+| **Owner** | Yes | Yes |
+| **Assistant** | Yes (can also edit rates) | Yes |
+| **Main instructor** | No | No |
+| **Instructor** | No | No |
+| **External instructor** | No | No |
+| **Receptionist** | No | No |
+
+### Workaround: instructor who must not see pay rates
+
+If you need a team member who teaches classes but must not see pay rates, use the **External instructor** role. This is useful for freelance or contract instructors.
+
+The **Main instructor** role has broader access than the regular **Instructor** role (editing all sessions, uploading documents, viewing all classes). However, neither the Main instructor nor the regular Instructor can see pay rates.
+
+<!-- REVIEW: Support conversations mention that some admins expected Main instructor to have more payment visibility. Confirm that Main instructor truly cannot see pay rate amounts in any view (e.g., session detail, instructor profile). -->
+
+If you need someone who can both manage sessions across instructors and see pay rates, the only option is the **Assistant** role. There is no way to grant pay rate visibility to instructor-level roles.
+
+## Quick-reference: role capabilities comparison
+
+The table below provides a side-by-side summary of key permissions across all roles.
+
+| Capability | Owner | Assistant | Main instructor | Instructor | External instructor | Receptionist |
+|---|---|---|---|---|---|---|
+| See full dashboard statistics | Yes | No | No | No | No | No |
+| See today's sessions on Dashboard | Yes | Yes | Yes | Yes | Yes | Yes |
+| Full calendar (all instructors) | Yes | Yes | Yes | Own only | Own only | Daily only |
+| Create / edit programmes | Yes | Yes | No | No | No | No |
+| Create / edit classes | Yes | Yes | Edit all | Own only | No | No |
+| Edit sessions (time, instructor, cancel) | Yes | Yes | All sessions | Own only | No | No |
+| View bookings | Yes | Yes | Own clients | Own clients | Limited | No move/copy |
+| View client contact details | Yes | Yes | Own clients | Own clients | No | No |
+| Mark attendance | Yes | Yes | Full report | Configurable | Record only | Arrived / absent |
+| Select alternate session for client | Yes | Yes | Yes | Configurable | No | No |
+| Add payment | Yes | Yes | Yes | Yes | No | Cash only |
+| Adjust price / grant discount / refund | Yes | No | No | Yes | No | No |
+| Send email / SMS | Yes | All clients | Own clients | Own clients | Configurable | No |
+| Create / edit email templates | Yes | No | No | No | No | No |
+| Upload documents and videos | Yes | Yes | Yes | No | No | No |
+| See instructor pay rates | Yes | Yes | No | No | No | No |
+| Access Settings | Yes | Limited | No | No | No | No |
+| Access Reports | Yes | No | No | No | No | No |
+| Register walk-in client (pay-as-you-go) | Yes | Yes | Yes | Yes | No | Yes |
+
+For help choosing the right role, see the [Role Selection Guide](role-selection-guide.md). For common questions, see the [Roles and Permissions FAQ](../faq/roles-and-permissions-faq.md).

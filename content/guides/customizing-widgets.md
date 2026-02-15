@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: "legacy/0078_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-02-15"
 intercom_id: 13728533
 intercom_sync: true
 ---
@@ -235,3 +235,81 @@ Clicking on a specific location takes the user directly to the booking form of t
 ## Viewing the map widget
 
 ![Screenshot](../../assets/images/customizing-widgets-25.png)
+
+## Filtering widgets with URL parameters
+
+You can filter which programmes, classes, or locations appear in a widget by adding parameters to the widget URL. This is useful when you have a dedicated page for a specific programme or venue.
+
+### Available filter parameters
+
+| Parameter | Purpose | Example |
+|---|---|---|
+| `course_id` | Show only a specific programme | `?course_id=4941` |
+| `schedule_id` | Show only a specific class (group) | `?schedule_id=72709` |
+| `place_id` | Show only a specific location | `?place_id=369_0` |
+
+You can combine parameters using `&`:
+
+```
+https://yoursite.com/register/?course_id=4941&place_id=369_0&schedule_id=72709
+```
+
+### Separator syntax for multiple values
+
+When filtering for multiple programmes or locations, the separator character matters:
+
+- Use **semicolons** (`;`) to separate multiple IDs within a single parameter when generating embed code via the Zooza configurator.
+- Do **not** use commas as separators. Using the wrong delimiter causes the filter to be ignored, and the widget displays all programmes instead of the filtered subset.
+
+<!-- REVIEW: Confirm whether the correct multi-value separator is always semicolon, or whether it differs per parameter (e.g. course_id vs place_id). Support tickets consistently mention comma-vs-semicolon confusion as the root cause. -->
+
+### Recommended workflow
+
+1. Go to **Publish** > **Embed code** in Zooza.
+2. Click **Customize embed code**.
+3. Select the programmes and locations you want to display.
+4. Click **Copy** and paste the generated code onto your page.
+5. Do not manually edit filter parameters in the embed code. Always regenerate the code from the Zooza configurator to avoid syntax errors.
+
+If the widget still displays all programmes after pasting filtered code, see [Widget Embedding Troubleshooting](../troubleshooting/widget-embedding.md) for debugging steps.
+
+## Cookie consent and widget loading
+
+Zooza widgets rely on JavaScript that loads from Zooza servers. If your website uses a cookie consent tool (such as CookieBot, OneTrust, or a CMS cookie plugin), that tool may block Zooza scripts before the visitor accepts cookies. When blocked, the widget area appears blank or the client profile login fails.
+
+### Whitelisting Zooza in your consent tool
+
+1. Open your cookie consent tool configuration.
+2. Locate the script categorization or whitelist section.
+3. Add Zooza script domains (e.g. `api.zooza.app` and associated JS resources) to the **Essential** or **Functional** category.
+4. Save the configuration and test in an incognito browser window.
+
+<!-- REVIEW: Confirm the exact list of Zooza script domains that need whitelisting. Support responses mention "api.zooza.app" and "Zooza JS resources" but a complete list should come from the dev team. -->
+
+If your website embeds the widget inside an `<iframe>`, the consent tool on the parent page may additionally block third-party cookies required by the iframe. In this case, ensure the consent tool allows cookies from the Zooza domain.
+
+Alternatively, if cookie management causes persistent issues during testing, you can temporarily disable the consent tool to confirm Zooza is loading correctly, then re-enable it with the correct whitelist settings.
+
+> **Tip:** If you are unsure how to update your cookie consent settings, contact your web developer or the consent tool vendor and ask them to classify Zooza scripts as essential (technical) cookies.
+
+## Capacity display in widgets
+
+The calendar and booking form widgets can show how many spots are available. Zooza offers two ways to calculate this number: **group capacity** and **session capacity**. Understanding the difference helps avoid confusion for both admins and clients.
+
+### Group capacity vs session capacity
+
+- **Group capacity** shows how many open registration slots remain in the entire class. If a group has a capacity of 12 and 10 clients are registered, it displays `2 spots available`. This number does not change when a client cancels a single session.
+- **Session capacity** shows how many people are attending a specific session. When a client cancels one session (e.g. for a make-up lesson), that session displays a free spot. This free spot is intended for replacement (make-up) lessons, not new registrations.
+
+### Which setting to use
+
+- If you do **not** use blocks, Zooza displays group capacity by default. This is the recommended setting for most programmes, because it prevents clients from mistakenly thinking a full group has open spots after a single-session cancellation.
+- If you **do** use blocks, the widget displays per-session capacity by design. Block-based courses manage capacity at the session level, so the per-session count is the accurate number.
+
+To verify or change the capacity display:
+
+1. Go to **Publish** > select your widget > **Calendar** settings.
+2. Check the occupancy display option.
+3. Save changes and refresh the page on your website.
+
+<!-- REVIEW: The group-vs-session capacity default was changed around Jan 2026. Confirm the exact setting name and location in the Publish > Calendar section. -->
