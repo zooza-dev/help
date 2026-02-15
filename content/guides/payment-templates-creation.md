@@ -13,7 +13,7 @@ source_language: en
 needs_screenshot_replacement: false
 last_converted: 2026-02-11
 intercom_id: 13728602
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Payment templates creation
@@ -187,10 +187,10 @@ Then save your selection by clicking *Create*.
 1. To delete a template from the class, click on the trash icon.
 
 1. You can use the arrow keys to change the order of the templates and
-set them as you want them to appear in the registration form.
+set them as you want them to appear in the booking form.
  ![Screenshot](../../assets/images/payment-templates-creation-19.png)
 
-1. This selection of payment options will then be displayed in the registration form on your website as follows:
+1. This selection of payment options will then be displayed in the booking form on your website as follows:
  ![Screenshot](../../assets/images/payment-templates-creation-20.png)
 
 The client has to choose one of the offered options and the final price

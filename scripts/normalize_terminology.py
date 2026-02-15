@@ -17,6 +17,12 @@ GLOBAL_PRESERVE = [
     r"of course",
     r"Of course",
     r"of Course",  # just in case
+    r"sign up",
+    r"Sign up",
+    r"Sign Up",
+    r"signs up",
+    r"signing up",
+    r"signed up",
 ]
 
 
@@ -55,6 +61,9 @@ def protect_zones(body):
         zones.append((m.start(), m.end()))
     # Image references ![...](...)
     for m in re.finditer(r"!\[[^\]]*\]\([^)]*\)", body):
+        zones.append((m.start(), m.end()))
+    # Obsidian-style image references ![[...]]
+    for m in re.finditer(r"!\[\[[^\]]*\]\]", body):
         zones.append((m.start(), m.end()))
     # Link URLs [text](URL) - protect just the URL part
     for m in re.finditer(r"\]\([^)]*\)", body):

@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728871
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Setting GTC, GDPR and other consents
@@ -32,13 +32,13 @@ You can insert approvals for each programme separately and even tell what and ho
  ![Screenshot](../../assets/images/setting-gtc-gdpr-consents-02.png)
 3. Click on the *Add *button and proceed as follows:
 
-1. Agreement name in the registration form – how to
-display the agreement under the registration form. Type your sentence
+1. Agreement name in the booking form – how to
+display the agreement under the booking form. Type your sentence
 before the tag More
 2. Leave this code in the field as it causes a separate page with the consent text to appear when your client clicks the *More* button.
  ![Screenshot](../../assets/images/setting-gtc-gdpr-consents-03.png)
 
-Your sentence and the option to click on* More* button will appear in the registration form on your web page like this
+Your sentence and the option to click on* More* button will appear in the booking form on your web page like this
 
 ![Screenshot](../../assets/images/setting-gtc-gdpr-consents-04.png)
 
@@ -57,7 +57,7 @@ consent instead of the dynamic *|AGREEMENT_URL|* tag.
  4. At the same time, select its display settings:
 
 1. Where you want to display the consent:
-2. registration form
+2. booking form
 3. order form
 4. inactive - will not be displayed
 

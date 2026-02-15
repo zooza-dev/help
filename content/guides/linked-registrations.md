@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728575
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Linked bookings
@@ -27,12 +27,12 @@ With linked bookings, you allow the client to make only one linked payment to on
 ## How does it work?
 
 
-If the parent fills in the registration form fields for both children at the same time, i.e. uses the *Add person* option when filling in the registration form, the two bookings will automatically be linked and related.
+If the parent fills in the booking form fields for both children at the same time, i.e. uses the *Add person* option when filling in the booking form, the two bookings will automatically be linked and related.
 How to set up the Add Person option and where to set it to link payments automatically can be found in this [manual](allowing-multiple-registration.md).
 
 ![Screenshot](../../assets/images/linked-registrations-01.png)
 
-However, if you register your children or yourself in two different classes/programmes and therefore fill in two registration forms, the system will not combine such bookings. However, you can pair them manually and they will continue to function as related.
+However, if you register your children or yourself in two different classes/programmes and therefore fill in two booking forms, the system will not combine such bookings. However, you can pair them manually and they will continue to function as related.
 
 ## Link related bookings
 

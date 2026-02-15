@@ -36,23 +36,23 @@ If the QR code tag appears as plain text in the sent email instead of rendering,
 
 <!-- REVIEW: QR codes in order emails were initially limited to Slovakia. This was fixed — confirm the fix is still live and applies to all regions. -->
 
-## How do I track whether a purchased voucher or pass has been used?
+## How do I track whether a purchased entry pass has been used?
 
-Vouchers and passes are tracked through the orders list and the client record.
+Entry passes are tracked through the orders list and the client record. For details on creating and configuring entry passes, see [Creating entry passes](../guides/creating-entry-passes.md).
 
 1. Go to **Clients** and search for the client by email.
 2. Open their profile and look at their orders.
-3. Each voucher order shows a code, the number of remaining entries (if it is an entry-based pass), and the expiration date.
+3. Each entry pass order shows a code, the number of remaining entries (if it is a visits-based pass), and the expiration date.
 
-A voucher code can only be used once. When all entries are consumed or the code expires, it cannot be reused. The expiration period is set on the product configuration (e.g., 12 months from purchase).
+An entry pass code can only be used once. When all entries are consumed or the pass expires, it cannot be reused. The expiration period is set on the product configuration (e.g., 12 months from purchase).
 
-If a client purchased the voucher from a different email address than the one on file, search by the purchasing email to locate the order.
+If a client purchased the entry pass from a different email address than the one on file, search by the purchasing email to locate the order.
 
 ## Why don't dynamic tags work in order confirmation emails?
 
 Dynamic tags (such as `{client_name}` or `{QR_CODE}`) are not fully supported in order-related email templates. This is a known limitation. When the system does not recognise a tag or has no value for it in the order context, the tag either remains as plain text or is silently removed.
 
-If you need to personalise order emails, keep the template text generic and avoid registration-specific tags. Registration-related tags (e.g., group name, session time) do not apply to standalone product orders.
+If you need to personalise order emails, keep the template text generic and avoid booking-specific tags. Booking-related tags (e.g., class name, session time) do not apply to standalone product orders.
 
 ## How do I restore a deleted order?
 

@@ -111,11 +111,11 @@ redirects:
     status: 301
 
   - from: "/portal/en/kb/articles/group-connection"
-    to: "/help/programmes/group-connection"
+    to: "/help/programmes/linked-classes"
     status: 301
 
   - from: "/portal/en/kb/articles/group-interested"
-    to: "/help/programmes/group-interested"
+    to: "/help/programmes/lead-collection"
     status: 301
 
   - from: "/portal/en/kb/articles/how-to-create-paid-events"
@@ -167,7 +167,7 @@ redirects:
     status: 301
 
   - from: "/portal/en/kb/articles/open-course-cr"
-    to: "/help/programmes/open-course-creation"
+    to: "/help/programmes/pay-as-you-go-programme"
     status: 301
 
   - from: "/portal/en/kb/articles/outstanding-amount"
@@ -175,11 +175,11 @@ redirects:
     status: 301
 
   - from: "/portal/en/kb/articles/parent-portal-101"
-    to: "/help/clients/parent-portal-101"
+    to: "/help/clients/client-profile-101"
     status: 301
 
   - from: "/portal/en/kb/articles/advanced-dashboard-in-the-parent-profile-parent-portal"
-    to: "/help/clients/parent-profile-dashboard"
+    to: "/help/clients/client-profile-dashboard"
     status: 301
 
   - from: "/portal/en/kb/articles/labels-drawers-for-selected-payments"
@@ -332,4 +332,33 @@ redirects:
 
   - from: "/portal/en/kb/articles/how-to-clear-your-cache"
     to: "/help/settings/how-to-clear-your-cache"
+    status: 301
+
+  # Slug redirects from renamed files (2026-02-15 terminology update)
+  - from: "/help/programmes/open-course-creation"
+    to: "/help/programmes/pay-as-you-go-programme"
+    status: 301
+
+  - from: "/help/programmes/group-connection"
+    to: "/help/programmes/linked-classes"
+    status: 301
+
+  - from: "/help/programmes/group-interested"
+    to: "/help/programmes/lead-collection"
+    status: 301
+
+  - from: "/help/clients/parent-portal-101"
+    to: "/help/clients/client-profile-101"
+    status: 301
+
+  - from: "/help/clients/parent-profile-dashboard"
+    to: "/help/clients/client-profile-dashboard"
+    status: 301
+
+  - from: "/help/widgets/parent-portal-faq"
+    to: "/help/widgets/client-profile-faq"
+    status: 301
+
+  - from: "/help/calendar/replacement-hours-faq"
+    to: "/help/calendar/make-up-sessions-faq"
     status: 301

@@ -12,12 +12,12 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728505
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Allowing multiple booking for a programme
 
-You can expand the registration form not only with extra fields but also with the possibility to add another person. Thanks to this button, your client can quickly create a booking for both children at the same time in the case of children’s programmes, or a booking for themselves and their partner in the case of dance programmes.
+You can expand the booking form not only with extra fields but also with the possibility to add another person. Thanks to this button, your client can quickly create a booking for both children at the same time in the case of children’s programmes, or a booking for themselves and their partner in the case of dance programmes.
 
 The price per programme is automatically converted to the price for two or more bookings.
 
@@ -39,11 +39,11 @@ In the *Online Registration *section, click *Edit.*
 
 Example: if it is a ballroom dance where you want to allow clients to come without a partner and with a partner, choose option 1 minimum and 2 maximum.
 
- 3. Determine from whom the basic fields of the registration form will be collected (first name, last name, email, phone number) and from whom the extra fields will be collected (child’s name, age, address… ).
+ 3. Determine from whom the basic fields of the booking form will be collected (first name, last name, email, phone number) and from whom the extra fields will be collected (child’s name, age, address… ).
 
 ![Screenshot](../../assets/images/allowing-multiple-registration-04.png)
 
-TIP: If you are unsure of your choices – look at the registration form for the programme on your website and make sure everything is as you need it to be.
+TIP: If you are unsure of your choices – look at the booking form for the programme on your website and make sure everything is as you need it to be.
 
 
  4. If you want related bookings to combine payments for one booking and allow the main booking to pay for both (all) related bookings at the same time and with one variable symbol – enable the option – *Payments *are managed by the registrant. More on related bookings here.

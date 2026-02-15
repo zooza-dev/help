@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728789
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Deploying Zooza app on your website
@@ -41,7 +41,7 @@ If you have a website built on the WordPress platform, you can take advantage of
 - API and Secret Key can be found in the *Publish *section
 
 ![Screenshot](../../assets/images/deploying-zooza-on-website-03.png)
-- In the registration forms, select the subpages you have created for this purpose. You will then need to enter these URLs into Zooza for each widget in order for them to work properly.
+- In the booking forms, select the subpages you have created for this purpose. You will then need to enter these URLs into Zooza for each widget in order for them to work properly.
 
 ![Screenshot](../../assets/images/deploying-zooza-on-website-04.png)
 
@@ -67,7 +67,7 @@ If you have a page built around a specific programme offering, Zooza allows you 
 ![Screenshot](../../assets/images/blocks-creation-07.png)
 
 
-If you collect a lot of additional data in the registration form or use products, you can enable the Multi-Step Booking option. This feature breaks the booking process into multiple steps, improving clarity and user experience.
+If you collect a lot of additional data in the booking form or use products, you can enable the Multi-Step Booking option. This feature breaks the booking process into multiple steps, improving clarity and user experience.
 
 
 ![Screenshot](../../assets/images/deploying-zooza-on-website-10.png)

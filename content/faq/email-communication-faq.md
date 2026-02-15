@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-13"
 intercom_id: 13728490
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Email and Communication FAQ
@@ -63,15 +63,15 @@ Class reminders are part of the automated email flow. They are configured per pr
 
 Yes. Admin notifications are configured in the system settings. You receive an email whenever a new booking (including trials) is created.
 
-## Why do dynamic tags show wrong data for replacement or block-based lessons?
+## Why do dynamic tags show wrong data for make-up or block-based sessions?
 
-Tags like `COURSE_TIME` and `COURSE_DATE_DAY` pull their values from the primary group's first session, not from the replacement session or the specific block the client registered for. This is a known limitation. For block-based courses, use the `ORDER_SUMMARY` tag instead, which includes the correct session details for the client's specific block.
+Tags like `COURSE_TIME` and `COURSE_DATE_DAY` pull their values from the primary class's first session, not from the make-up session or the specific block the client registered for. This is a known limitation. For block-based programmes, use the `ORDER_SUMMARY` tag instead, which includes the correct session details for the client's specific block.
 
 <!-- REVIEW: A dedicated dynamic tag for block-specific dates has been requested but is not yet available. Monitor for product updates. -->
 
-## Why did my client not receive the confirmation email for a manual or copied registration?
+## Why did my client not receive the confirmation email for a manual or copied booking?
 
-Copied and manually created registrations do **not** trigger automatic confirmation emails. This is by design. To send a confirmation, go to the registration's **Communication** tab and send the confirmation email manually.
+Copied and manually created bookings do **not** trigger automatic confirmation emails. This is by design. To send a confirmation, go to the booking's **Communication** tab and send the confirmation email manually.
 
 ## What is the difference between system templates and user templates?
 
@@ -82,7 +82,7 @@ These are listed in separate dropdown sections. If you cannot find your custom t
 
 ## How do I troubleshoot emails not arriving for a specific client?
 
-1. Go to the registration's **Communication** tab and check the sent email logs to confirm whether the email was sent by Zooza.
+1. Go to the booking's **Communication** tab and check the sent email logs to confirm whether the email was sent by Zooza.
 2. Common causes for non-delivery:
    - The client's mailbox is full (e.g., "inbox out of storage space" bounce).
    - The client's email provider is filtering Zooza emails as spam.

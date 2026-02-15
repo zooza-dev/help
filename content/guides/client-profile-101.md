@@ -1,6 +1,6 @@
 ---
-title: "Parent Portal 101"
-slug: "parent-portal-101"
+title: "Client Profile 101"
+slug: "client-profile-101"
 type: "guides"
 product_area: "Clients"
 sub_area: ""
@@ -10,26 +10,22 @@ status: "published"
 source_legacy_path: "legacy/0023_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-02-15"
 intercom_id: 13728588
-intercom_sync: false
+intercom_sync: true
 ---
 
-# Parent Portal 101
+# Client Profile 101
 
 ## A simple guide to get you started
 
-The Parent Portal helps you manage your child’s bookings, sessions, and payments in one place.
+The Client Profile helps you manage your bookings, sessions, and payments in one place.
 
  It works on both mobile phones and computers and does not require remembering any passwords.
 
-▶️ Parent Portal 101 - Quick Video Guide
-
-<br>
-
 ## 1. Logging in
 
-If you are not logged in yet, open the Parent Portal and enter the email address you used during booking.
+If you are not logged in yet, open the Client Profile and enter the email address you used during booking.
 
 This is the same email you use to receive booking and payment information.
 
@@ -42,15 +38,15 @@ After entering your email address, you will receive either:
 - a one-time login code, or
 - a secure login link
 
-This will automatically sign you in to your Parent Profile.
+This will automatically log you in to your Client Profile.
 
  There is no password to remember.
 
 ##
 
-## 3. Your Parent Profile
+## 3. Your Client Profile
 
-Once logged in, you will see your Parent Profile.
+Once logged in, you will see your Client Profile.
 
 Here you can find:
 
@@ -110,20 +106,20 @@ Everything related to payments is available anytime.
 
 ##
 
-## 8. Missed sessions and replacements
+## 8. Missed sessions and make-up sessions
 
 If you cancel a session, you may have the option to:
 
-- choose a replacement session from available options
-- confirm it directly in the portal
+- choose a make-up session from available options
+- confirm it directly in your profile
 
 You will receive email or WhatsApp reminders, and your session list will automatically update.
 
 ##
 
-## That’s it
+## That's it
 
-The Parent Portal is designed to be simple and easy to use.
+The Client Profile is designed to be simple and easy to use.
 
  You can access it anytime — on your phone or on your computer.
 

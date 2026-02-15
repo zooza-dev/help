@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728546
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Documents
@@ -78,7 +78,7 @@ To use a dynamic tag, follow these steps:
  ![Screenshot](../../assets/images/documents-08.png)
 2. At the class level insert, enter the URL.
  ![Screenshot](../../assets/images/documents-09.png)
-3. In the *additional field *in the registration form, fill in the dynamic tag part at the booking level.
+3. In the *additional field *in the booking form, fill in the dynamic tag part at the booking level.
  ![Screenshot](../../assets/images/documents-10.png)
 
 ## Dynamic document

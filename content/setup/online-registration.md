@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728839
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Online registration
@@ -21,14 +21,14 @@ To control how the programme is displayed on your website and how communication 
 
 
 1. Online registration
-2. Customizing the registration form
+2. Customizing the booking form
 3. Communication
 
 ## Online registration
 
 ## Booking options
 
-In the* Booking options* section you set the visibility on your website and in the registration form.you can control what is visible on your website and in the registration form. If your programme includes a *Trial *or *Blocks*, you can decide exactly what you want clients to see.
+In the* Booking options* section you set the visibility on your website and in the booking form.you can control what is visible on your website and in the booking form. If your programme includes a *Trial *or *Blocks*, you can decide exactly what you want clients to see.
 
 ![Screenshot](../../assets/images/individual-lessons-climbing-wall-02.png)
 
@@ -50,7 +50,7 @@ We also recommend selecting the *Payments are managed by registrant *option in t
 ## Other
 
 
-These settings let you control how long classes remain visible in your registration form in the following situations:
+These settings let you control how long classes remain visible in your booking form in the following situations:
 
 
 1. When a class reaches capacity – choose whether it should still appear or be hidden.
@@ -68,10 +68,10 @@ Here, you can choose which classes from your list should appear in the menu on y
 
 ![Screenshot](../../assets/images/online-registration-07.png)
 
-## Customizing registration form
+## Customizing booking form
 
 
-If you need different field names for this programme’s registration form, you can set them in the *Customizing the Registration Form *section. This is useful when certain programmes require specific field labels that differ from your standard registration form.
+If you need different field names for this programme’s booking form, you can set them in the *Customizing the Booking Form *section. This is useful when certain programmes require specific field labels that differ from your standard booking form.
 
 ![Screenshot](../../assets/images/online-registration-08.png)
 
@@ -111,7 +111,7 @@ Note: The exact time the reminder email is sent can be configured in the message
 
 ## Notification about upcoming sessions
 
-For* open programmes* only Zooza provides an additional email notification for upcoming sessions with available slots possible for booking.
+For *Pay-as-you-go programmes* only, Zooza provides an additional email notification for upcoming sessions with available slots possible for booking.
 
 ![Screenshot](../../assets/images/online-registration-14.png)
 

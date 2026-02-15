@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728514
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Blocks creation
@@ -63,7 +63,7 @@ Then it is important to set when the discount on the blocks should be active. Yo
 ## Online registration
 
 The blocks you create are not automatically activated for online registration. This is because the blocks may also be for your internal use only - for example, if you have sessions scheduled for the whole school year but want to split them into sessions, expecting clients to register for the whole session at once. In this case, the blocks are only used to administratively break down the terms for you, without affecting how clients register.
-If you want to give the client the option to register only for a specific block and thus make the block publicly visible in the registration form, enable it in the* Price and Payment *tile - after opening the selected block, check the *Enable online registration *option.
+If you want to give the client the option to register only for a specific block and thus make the block publicly visible in the booking form, enable it in the* Price and Payment *tile - after opening the selected block, check the *Enable online registration *option.
 
 ![Screenshot](../../assets/images/blocks-creation-05.png)
 
@@ -88,20 +88,20 @@ However, if you offer programmes where the blocks are just an organizational div
 ## Products
 
 
-Occasionally, there will be a situation where you need to divide the products in the registration form according to what part of the programme you are in. You can solve this by using blocks and adding products to each block separately, where you set exactly in which block you will offer which product (book, service,...).
+Occasionally, there will be a situation where you need to divide the products in the booking form according to what part of the programme you are in. You can solve this by using blocks and adding products to each block separately, where you set exactly in which block you will offer which product (book, service,...).
 
 
 1. At the class level, click *Change* in the *Products *tile to add the desired products to the class.
 2. Once you have added the products, you will be presented with the option to edit them - click on *Setup*.*
  ![Screenshot](../../assets/images/blocks-creation-08.png)
  *
-3. Make the product available for purchase in the registration form
+3. Make the product available for purchase in the booking form
  ![Screenshot](../../assets/images/blocks-creation-09.png)
 4. Select the blocks in which you want to offer the product and click *Save.*
  ![Screenshot](../../assets/images/blocks-creation-10.png)
 
 
-Repeat this process for any products you want to display in the registration form for only the selected blocks. With this setup, you have full control over what you offer to clients and when.
+Repeat this process for any products you want to display in the booking form for only the selected blocks. With this setup, you have full control over what you offer to clients and when.
 
 
 ## What the blocks look like in Zooza
@@ -113,7 +113,7 @@ In the session list, you see these blocks next to the programme information:
 
 ![Screenshot](../../assets/images/blocks-creation-11.png)
 
-## In registration form
+## In booking form
 
 
 If you have programmes divided into blocks and also enabled online registration, the client chooses which blocks he wants to subscribe to when registering. This option will be displayed to him when he clicks on the* Customize Menu *button. If the client selects the *For the entire programme period *option, the system will automatically register the client for all available blocks within the class and full payment for the entire programme is expected at the same time.
@@ -123,7 +123,7 @@ If you have programmes divided into blocks and also enabled online registration,
 ## In booking detail
 
 
-If the client only registers for the selected blocks via the registration form, you will only see sessions that are part of the selected blocks in the *Attendance *tile in their booking details. Other appointments that the client is not registered for will be marked as *Hidden *in the system and will not be displayed to the client.
+If the client only registers for the selected blocks via the booking form, you will only see sessions that are part of the selected blocks in the *Attendance *tile in their booking details. Other appointments that the client is not registered for will be marked as *Hidden *in the system and will not be displayed to the client.
 
 ![Screenshot](../../assets/images/blocks-creation-13.png)
 

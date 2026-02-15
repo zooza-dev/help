@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728533
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Customizing widgets
@@ -46,7 +46,7 @@ TIP: Think about the navigation on your site, it's best to place some of the sub
 ![Screenshot](../../assets/images/blocks-creation-07.png)
 
 
-In its basic form, the registration form is displayed on a page listing all the programmes you have created and offered for online registration. The form contains basic fields to fill out and a preset display of information about each programme. If you wish to customize your programme selection, we recommend using the Embed version (HTML code). You can create your own specific settings in Zooza and use them to generate HTML code to embed on your page.
+In its basic form, the booking form is displayed on a page listing all the programmes you have created and offered for online registration. The form contains basic fields to fill out and a preset display of information about each programme. If you wish to customize your programme selection, we recommend using the Embed version (HTML code). You can create your own specific settings in Zooza and use them to generate HTML code to embed on your page.
 
 ## Basic form fields
 
@@ -58,10 +58,10 @@ In the form you will see the basic fields that your client must fill in when reg
 3. E-mail
 4. PhoneNote
 
-1. You can modify their display in the registration form by overwriting the text. At the programme level, click *Online Registration – Edit.
+1. You can modify their display in the booking form by overwriting the text. At the programme level, click *Online Registration – Edit.
  ![Screenshot](../../assets/images/customizing-widgets-04.png)
  *
-2. Scroll down to the *Customize Registration Form* section and enter new text in the field to change its display in the registration form. *Save *the change.
+2. Scroll down to the *Customize Booking Form* section and enter new text in the field to change its display in the booking form. *Save *the change.
  ![Screenshot](../../assets/images/customizing-widgets-05.png)
 
 ## Booking form settings for the children’s programme
@@ -71,7 +71,7 @@ In the form you will see the basic fields that your client must fill in when reg
 
 1. Under *Additional settings*, tick the For children checkbox and Save the setting
  ![Screenshot](../../assets/images/customizing-widgets-07.png)
-2. The registration form fields on your web page will automatically change from Name to Parent’s Name after this setting
+2. The booking form fields on your web page will automatically change from Name to Parent’s Name after this setting
  ![Screenshot](../../assets/images/customizing-widgets-08.png)
 
 ## Extra fields in the form for more information collection
@@ -87,7 +87,7 @@ After selecting a specific programme, click the *Edit *button in the *Extra Fiel
 
 ![Screenshot](../../assets/images/customizing-widgets-09.png)
 
-Click on *Extend registration form with extra fields*.
+Click on *Extend booking form with extra fields*.
  After selecting a specific extra field you need to fill in its name,
 only after this setting the field will be displayed in the booking
 form. The field name is mandatory. Don’t forget to save your changes at
@@ -105,12 +105,12 @@ Note:
 need to set the extra fields on all programmes separately. Or create one
 programme with all necessary settings and then Copy the programme.
 
-## Modification of the published registration form
+## Modification of the published booking form
 
 ### Customize the code to insert
 
 
-If you have a variety of course offerings - for example, camps, children's programmes, or one-off sessions - you can easily customize the HTML code of your registration form to suit your needs.
+If you have a variety of course offerings - for example, camps, children's programmes, or one-off sessions - you can easily customize the HTML code of your booking form to suit your needs.
 
 
 1. In Zooza, go to the Publish section.
@@ -119,15 +119,15 @@ If you have a variety of course offerings - for example, camps, children's progr
 4. Below the code, click *Customize embed code
  ![Screenshot](../../assets/images/customizing-widgets-13.png)
  *
-5. Select which programmes and which locations to display on the page in the registration form
+5. Select which programmes and which locations to display on the page in the booking form
  ![Screenshot](../../assets/images/customizing-widgets-14.png)
 6. If you are collecting a larger amount of data or offering products for sale when you register, we recommend enabling the Multi-stage booking option. This feature breaks up the form into multiple clear steps, improving the user experience.
 7. Copy the code by clicking Copy and place it on your page.
 
-## Customizing the registration form
+## Customizing the booking form
 
 
-In the Publish section, you will also find additional options to customize the look and functionality of the registration form to suit your needs.
+In the Publish section, you will also find additional options to customize the look and functionality of the booking form to suit your needs.
 
 
 1. In the Publish section, click Set up in the widgets menu under Customize.
@@ -149,7 +149,7 @@ Zooza allows you to create a client profile on your website, to which the client
 1. List of ordered products and services
 2. Payment status - he can see if he has anything outstanding and can make a payment directly
 3. Within the programmes he can:
-4. Cancel from a session
+4. Cancel a session
 5. Use make-up sessions
 
 Access purchased videos or other digital content in secure mode
@@ -186,7 +186,7 @@ The best way to customize your calendar is to try out the different settings - y
 ## Editing a published calendar
 
 
-As with the registration form, you have the option to display only some programmes in one calendar - by customizing the HTML code of the calendar.
+As with the booking form, you have the option to display only some programmes in one calendar - by customizing the HTML code of the calendar.
 
 
 1. In Zooza, go to the Publish section.
@@ -194,7 +194,7 @@ As with the registration form, you have the option to display only some programm
 3. This will open a window with the HTML code itself.
 4. Below the code, click Customize embed code
  ![Screenshot](../../assets/images/customizing-widgets-21.png)
-5. Select which programmes and which locations to display on the page in the registration form
+5. Select which programmes and which locations to display on the page in the booking form
  ![Screenshot](../../assets/images/customizing-widgets-22.png)
 6. Copy the code by clicking Copy and place it on your page.
  ![Screenshot](../../assets/images/customizing-widgets-23.png)
@@ -230,7 +230,7 @@ How it works:
 5. on a map - visually distributed by location
 6. in the list below the map - for quick overview and easy selection
 
-Clicking on a specific location takes the user directly to the registration form of that location.
+Clicking on a specific location takes the user directly to the booking form of that location.
 
 ## Viewing the map widget
 

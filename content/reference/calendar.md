@@ -93,7 +93,7 @@ The make-up sessions management view shows all pending and completed make-up ses
 
 ![Make-up Sessions list](../../assets/images/reference/cls-calendar-make-up-sessions.png)
 
-This view provides a centralized list of make-up sessions across all programmes and classes, allowing admins to track, approve, and manage replacement sessions.
+This view provides a centralized list of make-up sessions across all programmes and classes, allowing admins to track, approve, and manage make-up sessions.
 
 ## Related
 

@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728795
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Getting Started with Zooza
@@ -184,7 +184,7 @@ Zooza comes with default payment templates (monthly, per term, per session), so 
 As the parent, you should receive:
 
 - Booking confirmation email (and PIN code if used),
-- Access to the Parent Portal / Parent Portal – with:upcoming sessions,
+- Access to the Client Profile / Client Profile – with:upcoming sessions,
 - payment overview,
 - invoices (after payment).
 
@@ -475,14 +475,14 @@ What happens:
 
 ### 7.7 How do I handle missed classes?
 
-Use when: Child misses one or more sessions and you want to adjust payments or offer replacement.
+Use when: Child misses one or more sessions and you want to adjust payments or offer a make-up session.
 
 Options:
 
 1. Adjust future paymentsGo to Booking → Payments → Installment details.
 2. Adjust the next payment amount manually.
 3. Offer make-up sessionsEnable Make-Up Sessions rules at programme level.
-4. Parents can book replacement sessions via Parent Portal (if allowed by capacity and rules).
+4. Parents can book make-up sessions via Client Profile (if allowed by capacity and rules).
 
 8. What Zooza does on autopilot
 
@@ -664,7 +664,7 @@ Debt The amount owed by the client, automatically generated based on your paymen
 
 Payment Requests Requests created by Zooza for upcoming payments (card, direct debit, or bank transfer).
 
-Client Profile / Parent Portal / Parent Portal The parent’s space with live updates about classes, payments, and attendance.
+Client Profile / Client Profile / Client Profile The parent’s space with live updates about classes, payments, and attendance.
 
 Make-Up Session
- A replacement session parents can book themselves under your rules.
+ A make-up session parents can book themselves under your rules.

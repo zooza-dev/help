@@ -56,7 +56,7 @@ The **Main instructor** role can be configured this way. By default, Main instru
 
 Note: even with the Payments section hidden, Main instructors can still see payment logs on individual bookings. The setting hides the dedicated Payments dashboard, received-payments view, and financial graphs.
 
-The **Receptionist** role also hides financial data, but it only provides a daily calendar view (not the full weekly/monthly calendar) and has very limited functionality overall. <!-- REVIEW: Confirm whether receptionist daily view has been updated to show group names, as referenced in support conversation about calendar improvements. -->
+The **Receptionist** role also hides financial data, but it only provides a daily calendar view (not the full weekly/monthly calendar) and has very limited functionality overall. <!-- REVIEW: Confirm whether receptionist daily view has been updated to show class names, as referenced in support conversation about calendar improvements. -->
 
 ## How do I change permissions for an existing role?
 

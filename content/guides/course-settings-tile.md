@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728523
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Programme settings tile
@@ -41,7 +41,7 @@ In this section, you can define the core details of your programme:
 
 1. In the *Programme Type* section, you can adjust the format of the programme — for example, changing it to an online session, a photography programme, or a standard programme with scheduled sessions.
 2. You can also update the *Target audience* if the programme changes from class classes to individual sessions, or vice versa.
-3. Selecting the *For children* checkbox changes the wording in certain parts of the application. For example, in the registration form, “Name” will become “Parent’s Name.”
+3. Selecting the *For children* checkbox changes the wording in certain parts of the application. For example, in the booking form, “Name” will become “Parent’s Name.”
  ![Screenshot](../../assets/images/course-settings-tile-02.png)
 4. If you check the *Archive *box and save the settings, the programme will be removed from your active programme list and placed in the archive. A full explanation of this feature is available [HERE](https://support.zooza.online/portal/en/kb/articles/delete-archive-courses).
  ![Screenshot](../../assets/images/course-settings-tile-03.png)

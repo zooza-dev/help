@@ -17,7 +17,7 @@ intercom_sync: false
 
 # Setting up billing periods
 
-Billing periods are used for better orientation and overview in which period the programmes were held and therefore invoiced to the client. From an accounting point of view, this may be a fundamental setting. As you will be able to record individual invoices according to this classification. This billing record is mainly for your better categorization of classes over time, but it also allows substitutions within programmes and carryover of replacement sessions between periods. This setting will make it clearer and easier for you to work with the application.
+Billing periods are used for better orientation and overview in which period the programmes were held and therefore invoiced to the client. From an accounting point of view, this may be a fundamental setting. As you will be able to record individual invoices according to this classification. This billing record is mainly for your better categorization of classes over time, but it also allows substitutions within programmes and carryover of make-up sessions between periods. This setting will make it clearer and easier for you to work with the application.
 
 ## How and when to use billing periods?
 

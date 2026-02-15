@@ -15,7 +15,7 @@ last_converted: "2026-02-13"
 
 # Client Management FAQ
 
-## How do I create a new client manually (not through registration)?
+## How do I create a new client manually (not through booking)?
 
 Zooza does not have a standalone "Add client" button. A client record is created automatically when a booking is made. To create a client manually:
 
@@ -64,11 +64,11 @@ The Zooza team reviews and processes the request, usually within 2 business days
 
 A request may be rejected if the new email already belongs to a different client in the system, or if the details do not match the existing record. If you need to assign a booking to a completely different person (not just fix a typo), use **Change Client** on the booking instead.
 
-## How does Customer ID work across franchise accounts?
+## How does Client ID work across franchise accounts?
 
 Each client profile can have a `Custom customer ID` field, which you set manually in the client detail. This is a free-text identifier you define for your own tracking purposes (e.g. an internal reference number).
 
-When a child transfers between franchise accounts (separate Zooza companies), the child may exist as a different client record in each account. The Customer ID does not sync automatically across franchise accounts. Each franchise manages its own client database independently.
+When a child transfers between franchise accounts (separate Zooza companies), the child may exist as a different client record in each account. The Client ID does not sync automatically across franchise accounts. Each franchise manages its own client database independently.
 
 <!-- REVIEW: Confirm whether cross-franchise child transfers create a linked record or a fully independent duplicate. -->
 
@@ -80,7 +80,7 @@ Yes. You can add an additional email address that receives session reminders for
 2. In the booking settings, find **Additional email for reminders before sessions**.
 3. Enter the second email address.
 
-This additional email receives session reminder notifications only. It does not receive payment reminders or other booking-level communications. The second email can also be added by the client themselves through their Parent Portal profile.
+This additional email receives session reminder notifications only. It does not receive payment reminders or other booking-level communications. The second email can also be added by the client themselves through their Client Profile.
 
 ## How do I give a divorced parent separate access to the same child?
 

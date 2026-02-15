@@ -24,7 +24,7 @@ session/session” to the schedule as a credit for “cancelled” sessions. Thi
 increases the number of sessions within the class and when Zooza
 calculates the unit price, it uses all these sessions and has no way of
 knowing that a particular session is free/unpaid.
-- In language school – custom replacement sessions also create more sessions in the class than originally set by the admin.
+- In language school – custom make-up sessions also create more sessions in the class than originally set by the admin.
 
 In other words, paid events are a contract between company and
 client, where you agree that the client will pay for e.g. 12 sessions.

@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-12"
 intercom_id: 13728496
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Programmes, Timetables and Sessions FAQ
@@ -57,7 +57,7 @@ Go to the programme, click on the timetable section, and create a new timetable 
 
 ## How do I hide a class from online registration?
 
-In the class settings, you can toggle visibility for the online registration form. This keeps the class in the system for internal management but hides it from the public booking page.
+In the class settings, you can toggle visibility for the online booking form. This keeps the class in the system for internal management but hides it from the public booking page.
 
 ## Why do changes I make not appear immediately?
 

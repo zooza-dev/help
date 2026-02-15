@@ -13,6 +13,14 @@ compared against or merged into the knowledge base in `content/`.
 - If the user says "ingest X" → look for files/folders matching X in `../help_ingest/`.
 - Always compare ingest material against existing `content/` to identify gaps, outdated info, or new topics.
 
+## Sibling repos (specs)
+When the user asks for **"API spec"**, **"App spec"**, or **"Widget spec"**, look in these sibling directories:
+- **API spec** → `../api-v1/docs/`
+- **App spec** → `../app/docs/`
+- **Widget spec** → `../widgets-v1/docs/`
+
+Do not search for these paths — they are fixed. Use them directly.
+
 ## Non-negotiables
 1. **Source of truth is `content/`** (English-only).
 2. **Do not edit files under `legacy/`** except generating `manifest.json` and `content-map.yml`.

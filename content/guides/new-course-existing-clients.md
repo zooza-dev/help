@@ -43,14 +43,14 @@ You can find the procedure how to copy classes, terms and bookings [HERE](https:
 When copying data, you always have the option of editing it. Whether it’s settings, terms or bookings.
 If
  you will be copying bookings along with the class, be aware that
-this is a copy not a transfer. This means that no credits, replacement
+this is a copy not a transfer. This means that no credits, make-up
 sessions or payments will be transferred to bookings. Bookings
 will have a new booking number (variable symbol) created with
 completely clean credit and payment details.
 
 But at the same time, you don’t have to worry that the data will be lost or that the client will no longer have access to it.
 The
- client can access the replacement sessions as well as the payment data
+ client can access the make-up sessions as well as the payment data
 via his/her profile, where he/she can see all the data from the original
  bookings and can subsequently work with them further (e.g. replace
  sessions).
@@ -62,7 +62,7 @@ bookings. This means that one client can have several bookings
  for different programmes. Therefore, a new booking number is created
 for the client.
 
-This copying procedure allows you and your clients to have order in your payments, terms and replacement sessions.
+This copying procedure allows you and your clients to have order in your payments, terms and make-up sessions.
 
 If you need to move a client to a class and want to keep the payment or credit details, you need to use the *Move Client*
  functionality, which can be found in the booking details. However,
@@ -90,7 +90,7 @@ Cons:
 In this procedure, you only create new terms within the original
 class. This will ensure that the original bookings are still valid
 and will just have new dates added to the programme list. The terms of
-payment as well as the replacement sessions remain as they were before.
+payment as well as the make-up sessions remain as they were before.
 
 But what you and your clients may be missing is clarity in terms or
 payments. Clients as well as you will have a long list of appointments

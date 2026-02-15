@@ -109,7 +109,7 @@ Select which classes (timetables) are available for online booking. Toggle indiv
 
 ## Make-up Sessions
 
-Controls whether clients can book replacement sessions for missed classes.
+Controls whether clients can book make-up sessions for missed classes.
 
 ![Make-up Sessions settings](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-make-up-sessions.png)
 

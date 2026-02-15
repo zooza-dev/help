@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-12"
 intercom_id: 13728489
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Discounts and Sibling Pricing FAQ
@@ -26,7 +26,7 @@ Go to **Payments → Discounts** and create a new code. You can configure:
 - **Usage limits** — single-use or unlimited.
 - **Programme/location restrictions** — limit to specific programmes or locations.
 
-Enable the discount code field on your registration form so clients can enter it during checkout.
+Enable the discount code field on your booking form so clients can enter it during checkout.
 
 ## How do sibling discounts work?
 

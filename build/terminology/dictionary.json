@@ -65,12 +65,7 @@
             "target group",
             "Target group",
             "age group",
-            "Age group",
-            "group connection",
-            "group interested",
-            "group – interested",
-            "group – Interested",
-            "classic group"
+            "Age group"
           ]
         },
         {
@@ -88,13 +83,7 @@
           "mode": "smart",
           "preserve": [
             "Target Group",
-            "Age Group",
-            "Group connection",
-            "Group Connection",
-            "Group Interested",
-            "Group interested",
-            "Group – Interested",
-            "Group – interested"
+            "Age Group"
           ]
         },
         {
@@ -122,7 +111,7 @@
       "files_affected": 53,
       "category": "core_concept",
       "context": "both",
-      "notes": "group→class. Preserve 'target group' (email targeting) and 'age group'."
+      "notes": "group→class. Preserve 'target group' (email targeting) and 'age group'. Old 'group interested'/'group connection' preserves removed — those terms are now replaced by 'lead collection' and 'linked classes'."
     },
     "session": {
       "canonical": "session",
@@ -220,9 +209,6 @@
             "online registration",
             "Online registration",
             "Online Registration",
-            "registration form",
-            "Registration form",
-            "Registration Form",
             "registration fee",
             "Registration fee"
           ]
@@ -242,7 +228,6 @@
           "mode": "smart",
           "preserve": [
             "Online Registration",
-            "Registration Form",
             "Registration Fee",
             "Registration fee"
           ]
@@ -271,7 +256,7 @@
       "files_affected": 80,
       "category": "core_concept",
       "context": "both",
-      "notes": "registration→booking. Keep 'online registration' and 'registration form'."
+      "notes": "registration→booking. Keep 'online registration'. 'registration form' preserve REMOVED — now handled by 'booking form' cluster."
     },
     "client": {
       "canonical": "client",
@@ -421,37 +406,63 @@
       "context": "admin",
       "notes": "All lecturer/teacher/trainer/tutor→instructor."
     },
-    "Parent Portal": {
-      "canonical": "Parent Portal",
+    "Client Profile": {
+      "canonical": "Client Profile",
       "variants_found": [
+        "Parent Portal",
         "Parent Zone",
-        "Parent Portal"
+        "Parent Profile",
+        "parent portal",
+        "client profile"
       ],
       "replace_rules": [
         {
+          "from": "Parent Portal",
+          "to": "Client Profile",
+          "mode": "all"
+        },
+        {
+          "from": "parent portal",
+          "to": "Client Profile",
+          "mode": "all"
+        },
+        {
           "from": "Parent Zone",
-          "to": "Parent Portal",
+          "to": "Client Profile",
           "mode": "all"
         },
         {
           "from": "parent zone",
-          "to": "Parent Portal",
+          "to": "Client Profile",
+          "mode": "all"
+        },
+        {
+          "from": "Parent Profile",
+          "to": "Client Profile",
+          "mode": "all"
+        },
+        {
+          "from": "parent profile",
+          "to": "Client Profile",
           "mode": "all"
         }
       ],
-      "occurrences_canonical": 22,
-      "occurrences_noncanonical": 3,
-      "files_affected": 1,
+      "occurrences_noncanonical": 30,
+      "files_affected": 15,
       "category": "ui_element",
       "context": "both",
-      "notes": "Parent Portal is the official product name."
+      "notes": "Unified to 'Client Profile'. Works for parents and non-parent clients alike. Replaces 'Parent Portal'/'Parent Zone'/'Parent Profile'."
     },
     "make-up session": {
       "canonical": "make-up session",
       "variants_found": [
         "replacement lesson",
+        "replacement hour",
+        "replacement hours",
         "catch-up lesson",
-        "make-up lesson"
+        "catch-up session",
+        "make-up lesson",
+        "make-up class"
       ],
       "replace_rules": [
         {
@@ -475,6 +486,46 @@
           "mode": "all"
         },
         {
+          "from": "replacement hour",
+          "to": "make-up session",
+          "mode": "all"
+        },
+        {
+          "from": "replacement hours",
+          "to": "make-up sessions",
+          "mode": "all"
+        },
+        {
+          "from": "Replacement hour",
+          "to": "Make-up session",
+          "mode": "all"
+        },
+        {
+          "from": "Replacement hours",
+          "to": "Make-up sessions",
+          "mode": "all"
+        },
+        {
+          "from": "Replacement Hours",
+          "to": "Make-up Sessions",
+          "mode": "all"
+        },
+        {
+          "from": "replacement credit",
+          "to": "make-up credit",
+          "mode": "all"
+        },
+        {
+          "from": "replacement credits",
+          "to": "make-up credits",
+          "mode": "all"
+        },
+        {
+          "from": "Replacement credit",
+          "to": "Make-up credit",
+          "mode": "all"
+        },
+        {
           "from": "catch-up lesson",
           "to": "make-up session",
           "mode": "all"
@@ -486,6 +537,21 @@
         },
         {
           "from": "Catch-up lesson",
+          "to": "Make-up session",
+          "mode": "all"
+        },
+        {
+          "from": "catch-up session",
+          "to": "make-up session",
+          "mode": "all"
+        },
+        {
+          "from": "catch-up sessions",
+          "to": "make-up sessions",
+          "mode": "all"
+        },
+        {
+          "from": "Catch-up session",
           "to": "Make-up session",
           "mode": "all"
         },
@@ -508,13 +574,33 @@
           "from": "Make-up lessons",
           "to": "Make-up sessions",
           "mode": "all"
+        },
+        {
+          "from": "make-up class",
+          "to": "make-up session",
+          "mode": "all"
+        },
+        {
+          "from": "make-up classes",
+          "to": "make-up sessions",
+          "mode": "all"
+        },
+        {
+          "from": "Make-up class",
+          "to": "Make-up session",
+          "mode": "all"
+        },
+        {
+          "from": "Make-up classes",
+          "to": "Make-up sessions",
+          "mode": "all"
         }
       ],
-      "occurrences_noncanonical": 46,
-      "files_affected": 22,
+      "occurrences_noncanonical": 71,
+      "files_affected": 26,
       "category": "core_concept",
       "context": "both",
-      "notes": "Since lesson→session globally, make-up lesson should become make-up session."
+      "notes": "All replacement/catch-up variants→make-up session. 'replacement hour'→'make-up session', 'replacement credit'→'make-up credit', 'catch-up session'→'make-up session', 'make-up class'→'make-up session'."
     },
     "payment template": {
       "canonical": "payment template",
@@ -529,6 +615,503 @@
       "category": "payment",
       "context": "admin",
       "notes": "DISTINCT CONCEPTS — do not merge. Template=config, plan=applied instance."
+    },
+    "log in": {
+      "canonical": "log in",
+      "variants_found": [
+        "sign in",
+        "signs in",
+        "signing in",
+        "signed in"
+      ],
+      "replace_rules": [
+        {
+          "from": "\\bsign in\\b",
+          "to": "log in",
+          "mode": "smart",
+          "preserve": [
+            "sign in button",
+            "Sign in button"
+          ]
+        },
+        {
+          "from": "\\bsigns in\\b",
+          "to": "logs in",
+          "mode": "all"
+        },
+        {
+          "from": "\\bsigning in\\b",
+          "to": "logging in",
+          "mode": "all"
+        },
+        {
+          "from": "\\bsigned in\\b",
+          "to": "logged in",
+          "mode": "all"
+        },
+        {
+          "from": "\\bSign in\\b",
+          "to": "Log in",
+          "mode": "smart",
+          "preserve": [
+            "Sign in button"
+          ]
+        },
+        {
+          "from": "\\bSigns in\\b",
+          "to": "Logs in",
+          "mode": "all"
+        },
+        {
+          "from": "\\bSigning in\\b",
+          "to": "Logging in",
+          "mode": "all"
+        },
+        {
+          "from": "\\bSigned in\\b",
+          "to": "Logged in",
+          "mode": "all"
+        }
+      ],
+      "occurrences_noncanonical": 29,
+      "files_affected": 17,
+      "category": "action",
+      "context": "both",
+      "notes": "All 'sign in' → 'log in'. 'Sign up' stays (means register/book). Preserve UI button labels if quoted."
+    },
+    "cancel session": {
+      "canonical": "cancel session",
+      "variants_found": [
+        "sign out",
+        "Sign Out",
+        "unregister",
+        "unsubscribe"
+      ],
+      "replace_rules": [
+        {
+          "from": "\\bSign Out\\b",
+          "to": "Cancel session",
+          "mode": "smart",
+          "preserve": [
+            "Sign Out button"
+          ]
+        },
+        {
+          "from": "\\bsign out\\b",
+          "to": "cancel session",
+          "mode": "all"
+        },
+        {
+          "from": "\\bunregister(s|ing|ed)?\\b",
+          "to": "cancel",
+          "mode": "smart",
+          "preserve": [
+            "unregister from a session"
+          ]
+        },
+        {
+          "from": "\\bUnregister(s|ing|ed)?\\b",
+          "to": "Cancel",
+          "mode": "all"
+        },
+        {
+          "from": "\\bunsubscribe(s|d)?\\b",
+          "to": "cancel",
+          "mode": "smart",
+          "preserve": [
+            "unsubscribe from email",
+            "unsubscribe from notifications"
+          ]
+        }
+      ],
+      "occurrences_noncanonical": 10,
+      "files_affected": 9,
+      "category": "action",
+      "context": "both",
+      "notes": "Session cancellation verbs unified to 'cancel session' / 'cancel'. 'Sign Out' → 'Cancel session'. 'unregister/unsubscribe' → 'cancel' (in session context). Preserve email unsubscribe context."
+    },
+    "booking form": {
+      "canonical": "booking form",
+      "variants_found": [
+        "registration form",
+        "Registration Form",
+        "Registration form"
+      ],
+      "replace_rules": [
+        {
+          "from": "registration form",
+          "to": "booking form",
+          "mode": "all"
+        },
+        {
+          "from": "Registration form",
+          "to": "Booking form",
+          "mode": "all"
+        },
+        {
+          "from": "Registration Form",
+          "to": "Booking Form",
+          "mode": "all"
+        },
+        {
+          "from": "REGISTRATION FORM",
+          "to": "BOOKING FORM",
+          "mode": "all"
+        }
+      ],
+      "occurrences_noncanonical": 60,
+      "files_affected": 42,
+      "category": "ui_element",
+      "context": "both",
+      "notes": "All 'registration form' → 'booking form'. 'online registration' is KEPT as a feature name (not a form)."
+    },
+    "lead collection": {
+      "canonical": "lead collection",
+      "variants_found": [
+        "group interested",
+        "Group Interested",
+        "group – interested",
+        "Group – Interested",
+        "class – Interested",
+        "class Interested",
+        "interest group",
+        "collecting basket"
+      ],
+      "replace_rules": [
+        {
+          "from": "group – Interested",
+          "to": "lead collection class",
+          "mode": "all"
+        },
+        {
+          "from": "Group – Interested",
+          "to": "Lead collection class",
+          "mode": "all"
+        },
+        {
+          "from": "group – interested",
+          "to": "lead collection class",
+          "mode": "all"
+        },
+        {
+          "from": "Group – interested",
+          "to": "Lead collection class",
+          "mode": "all"
+        },
+        {
+          "from": "group interested",
+          "to": "lead collection class",
+          "mode": "all"
+        },
+        {
+          "from": "Group Interested",
+          "to": "Lead collection class",
+          "mode": "all"
+        },
+        {
+          "from": "Group interested",
+          "to": "Lead collection class",
+          "mode": "all"
+        },
+        {
+          "from": "class – Interested",
+          "to": "lead collection class",
+          "mode": "all"
+        },
+        {
+          "from": "class Interested",
+          "to": "lead collection class",
+          "mode": "all"
+        },
+        {
+          "from": "Class – Interested",
+          "to": "Lead collection class",
+          "mode": "all"
+        },
+        {
+          "from": "Class Interested",
+          "to": "Lead collection class",
+          "mode": "all"
+        },
+        {
+          "from": "collecting basket",
+          "to": "lead collection class",
+          "mode": "all"
+        },
+        {
+          "from": "Collecting basket",
+          "to": "Lead collection class",
+          "mode": "all"
+        },
+        {
+          "from": "interest group",
+          "to": "lead collection class",
+          "mode": "all"
+        },
+        {
+          "from": "Interest group",
+          "to": "Lead collection class",
+          "mode": "all"
+        }
+      ],
+      "occurrences_noncanonical": 31,
+      "files_affected": 9,
+      "category": "core_concept",
+      "context": "both",
+      "notes": "All 'group Interested' / 'collecting basket' / 'interest group' → 'lead collection class'. The *Interested* UI option in the app refers to this feature."
+    },
+    "Pay-as-you-go": {
+      "canonical": "Pay-as-you-go",
+      "variants_found": [
+        "open course",
+        "open programme",
+        "Open programme",
+        "open booking",
+        "Open booking",
+        "season pass",
+        "season ticket"
+      ],
+      "replace_rules": [
+        {
+          "from": "open programme",
+          "to": "Pay-as-you-go programme",
+          "mode": "all"
+        },
+        {
+          "from": "Open programme",
+          "to": "Pay-as-you-go programme",
+          "mode": "all"
+        },
+        {
+          "from": "open programmes",
+          "to": "Pay-as-you-go programmes",
+          "mode": "all"
+        },
+        {
+          "from": "Open programmes",
+          "to": "Pay-as-you-go programmes",
+          "mode": "all"
+        },
+        {
+          "from": "open course",
+          "to": "Pay-as-you-go programme",
+          "mode": "all"
+        },
+        {
+          "from": "Open course",
+          "to": "Pay-as-you-go programme",
+          "mode": "all"
+        },
+        {
+          "from": "open booking",
+          "to": "Pay-as-you-go",
+          "mode": "smart",
+          "preserve": [
+            "open bookings"
+          ]
+        },
+        {
+          "from": "Open booking",
+          "to": "Pay-as-you-go",
+          "mode": "smart",
+          "preserve": [
+            "Open bookings"
+          ]
+        },
+        {
+          "from": "\\bseason pass\\b",
+          "to": "entry pass",
+          "mode": "all"
+        },
+        {
+          "from": "\\bSeason pass\\b",
+          "to": "Entry pass",
+          "mode": "all"
+        },
+        {
+          "from": "\\bseason ticket\\b",
+          "to": "entry pass",
+          "mode": "all"
+        },
+        {
+          "from": "\\bSeason ticket\\b",
+          "to": "Entry pass",
+          "mode": "all"
+        },
+        {
+          "from": "\\bseason passes\\b",
+          "to": "entry passes",
+          "mode": "all"
+        },
+        {
+          "from": "\\bseason tickets\\b",
+          "to": "entry passes",
+          "mode": "all"
+        }
+      ],
+      "occurrences_noncanonical": 15,
+      "files_affected": 10,
+      "category": "core_concept",
+      "context": "both",
+      "notes": "Programme type name unified to 'Pay-as-you-go'. 'open bookings' (booking status, not type) is preserved. 'season pass/ticket' → 'entry pass'."
+    },
+    "linked classes": {
+      "canonical": "linked classes",
+      "variants_found": [
+        "group connection",
+        "Group connection",
+        "Group Connection",
+        "class connection"
+      ],
+      "replace_rules": [
+        {
+          "from": "group connection",
+          "to": "linked classes",
+          "mode": "all"
+        },
+        {
+          "from": "Group connection",
+          "to": "Linked classes",
+          "mode": "all"
+        },
+        {
+          "from": "Group Connection",
+          "to": "Linked Classes",
+          "mode": "all"
+        },
+        {
+          "from": "class connection",
+          "to": "linked classes",
+          "mode": "all"
+        },
+        {
+          "from": "classes connection",
+          "to": "linked classes",
+          "mode": "all"
+        }
+      ],
+      "occurrences_noncanonical": 5,
+      "files_affected": 3,
+      "category": "core_concept",
+      "context": "admin",
+      "notes": "Feature name unified to 'linked classes'. Verb form: 'link classes'. Informal: 'class pool'."
+    },
+    "attendance states": {
+      "canonical": "Will attend / Attended / Cancelled / Did not attend",
+      "variants_found": [
+        "Unsubscribed",
+        "unsubscribed",
+        "Absent",
+        "absent"
+      ],
+      "replace_rules": [
+        {
+          "from": "\\bUnsubscribed\\b",
+          "to": "Cancelled",
+          "mode": "smart",
+          "preserve": [
+            "unsubscribe from email",
+            "unsubscribe from notifications"
+          ]
+        },
+        {
+          "from": "\\bunsubscribed\\b",
+          "to": "cancelled",
+          "mode": "smart",
+          "preserve": [
+            "unsubscribe from email",
+            "unsubscribe from notifications"
+          ]
+        }
+      ],
+      "occurrences_noncanonical": 12,
+      "files_affected": 2,
+      "category": "ui_element",
+      "context": "both",
+      "notes": "The 4 canonical attendance states in the UI are: Will attend, Attended, Cancelled, Did not attend. 'Unsubscribed' was an old internal label for 'Cancelled'. 'Absent' is not a real UI state — use 'Did not attend' or 'Cancelled' depending on context."
+    },
+    "entry pass": {
+      "canonical": "entry pass",
+      "variants_found": [
+        "voucher",
+        "season pass",
+        "season ticket",
+        "permanent pass",
+        "punch card"
+      ],
+      "replace_rules": [
+        {
+          "from": "\\bvoucher\\b",
+          "to": "entry pass",
+          "mode": "smart",
+          "preserve": [
+            "discount voucher",
+            "gift voucher"
+          ]
+        },
+        {
+          "from": "\\bvouchers\\b",
+          "to": "entry passes",
+          "mode": "smart",
+          "preserve": [
+            "discount vouchers",
+            "gift vouchers"
+          ]
+        },
+        {
+          "from": "\\bVoucher\\b",
+          "to": "Entry pass",
+          "mode": "smart",
+          "preserve": [
+            "Discount voucher",
+            "Gift voucher"
+          ]
+        },
+        {
+          "from": "\\bVouchers\\b",
+          "to": "Entry passes",
+          "mode": "smart",
+          "preserve": [
+            "Discount vouchers",
+            "Gift vouchers"
+          ]
+        },
+        {
+          "from": "\\bpermanent pass\\b",
+          "to": "entry pass",
+          "mode": "all"
+        },
+        {
+          "from": "\\bpermanent passes\\b",
+          "to": "entry passes",
+          "mode": "all"
+        },
+        {
+          "from": "\\bPermanent pass\\b",
+          "to": "Entry pass",
+          "mode": "all"
+        },
+        {
+          "from": "\\bpunch card\\b",
+          "to": "entry pass",
+          "mode": "all"
+        },
+        {
+          "from": "\\bpunch cards\\b",
+          "to": "entry passes",
+          "mode": "all"
+        },
+        {
+          "from": "\\bPunch card\\b",
+          "to": "Entry pass",
+          "mode": "all"
+        }
+      ],
+      "occurrences_noncanonical": 15,
+      "files_affected": 8,
+      "category": "core_concept",
+      "context": "both",
+      "notes": "Unified to 'entry pass'. 'voucher' replaced except discount/gift vouchers. 'season pass/ticket' handled in Pay-as-you-go cluster."
     }
   },
   "skip_in_frontmatter": [
@@ -538,7 +1121,7 @@
   "skip_patterns": [
     "```[\\s\\S]*?```"
   ],
-  "extracted_at": "2026-02-13",
-  "source_file_count": 126,
-  "last_normalized": "2026-02-13"
+  "extracted_at": "2026-02-15",
+  "source_file_count": 130,
+  "last_normalized": "2026-02-15"
 }

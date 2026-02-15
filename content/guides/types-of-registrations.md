@@ -13,7 +13,7 @@ source_language: en
 needs_screenshot_replacement: false
 last_converted: 2026-02-11
 intercom_id: 13728628
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Types of bookings
@@ -64,7 +64,7 @@ The booking was created manually by the administrator directly in the applicatio
 ## By Client
 
 
-The booking was created by the client himself via the registration form on the organizer's website.
+The booking was created by the client himself via the booking form on the organizer's website.
 
 ## Copied
 

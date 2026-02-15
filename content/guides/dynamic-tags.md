@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-02-11"
 intercom_id: 13728547
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Dynamic tags
@@ -71,7 +71,7 @@ Each email sent for a specific booking allows you to dynamically fill in client 
 | `*\|IS_BUSINESS_ORDER\|*` | Whether a booking is on a company or not | 1 |
 | `*\|TURN_OFF_EVENT_NOTIFICATIONS_URL\|*` | URL to turn off morning notifications. Works only in the Morning Reminders template. | |
 | `*\|CANCELED_CONFIRMATION_URL\|*` | URL for opting out from the term. Works only in the Morning Reminders template. | |
-| `*\|ALLOW_REPLACEMENTS\|*` | Whether replacement hours are available for the booking | 1 |
+| `*\|ALLOW_REPLACEMENTS\|*` | Whether make-up sessions are available for the booking | 1 |
 | `*\|FULL_NAME\|*` | Client's full name | Raymond Robbins |
 | `*\|EVENT_NAME\|*` | Name of the term (not the programme or class). Available for term reminder only. | Individual session, Cambridge |
 | `*\|EVENT_DATE\|*` | Date of the term. Available for term reminder only. | 14. 5. 2021 |

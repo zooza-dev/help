@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728516
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Business booking
@@ -31,7 +31,7 @@ For corporate orders, you must enable at least one of the following fields:
 5. VAT
 
 
-If one or more fields are active, the registration form will add the option to register per company. Once clicked, the selected extra fields are displayed in a registration form and the client can fill them in. Only the* Company *and *Business ID *number fields are required.
+If one or more fields are active, the booking form will add the option to register per company. Once clicked, the selected extra fields are displayed in a booking form and the client can fill them in. Only the* Company *and *Business ID *number fields are required.
 
 As with the other extra fields, you must enter a custom name.
 

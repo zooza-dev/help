@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-13"
 intercom_id: 13728652
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Send Email
@@ -48,7 +48,7 @@ Choose who receives the email:
 
 | Field | Description |
 |---|---|
-| `Promotional message` | Check **Yes** if you do not want to send this message to clients who have unsubscribed from promotional messages. |
+| `Promotional message` | Check **Yes** if you do not want to send this message to clients who have cancel from promotional messages. |
 | `Send email also to users with additional access to booking` | Check **Yes** to also send to users with shared access to the booking. |
 | `Billing period` | Dropdown to select the billing period (e.g. "Ongoing Classes"). |
 

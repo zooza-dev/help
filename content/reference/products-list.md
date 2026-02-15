@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-13"
 intercom_id: 13728668
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Products
@@ -156,7 +156,7 @@ Configuration fields vary by item type:
 | Field | Description |
 |---|---|
 | `This service is mandatory` | When checked, the client must choose at least one option. |
-| `Redeem entry pass if order is unpaid` | If you don't sell this item using online payments, you may want to redeem this voucher even if the order is not paid. Lets clients start using it immediately and pay later. |
+| `Redeem entry pass if order is unpaid` | If you don't sell this item using online payments, you may want to redeem this entry pass even if the order is not paid. Lets clients start using it immediately and pay later. |
 | `Number of visits` | Number of session entries the pass grants. +/− controls. Required. |
 | `Credit expiration in months` | Expiration period. +/− controls. Required. |
 | `Price` | Item price. +/− controls. Required. |

@@ -43,7 +43,7 @@ sign up for a full week
 
 - Fill the class with dates according to your wishes, if you can determine
  them right away. Classes need to be filled with terms individually. If
-you don’t want to create dates, the class will be created as the [group – Interested](group-interested.md) and you can add dates afterwards.
+you don’t want to create dates, the class will be created as the [lead collection class](lead-collection.md) and you can add dates afterwards.
 
 ![Screenshot](../../assets/images/summer-camps-creation-04.png)
 
@@ -65,7 +65,7 @@ at the bottom, under “payment templates” and activate it for the programme.
 3. Set the display in the online registration on your site. Decide how
 late bookings will be approved – manually or automatically with an
 aligned price
-4. Manage your replacement sessions settings, although chances are you don’t want to have replacement sessions enabled for day camp.
+4. Manage your make-up sessions settings, although chances are you don't want to have make-up sessions enabled for day camp.
 5. Programme Settings – describe the camp, or insert a URL link to click
 through to your page where there is more information about the specific
 camp

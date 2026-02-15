@@ -1,6 +1,6 @@
 ---
-title: "Dashboard 2.0 in the Parent Profile (Parent Portal)"
-slug: "parent-profile-dashboard"
+title: "Dashboard 2.0 in the Client Profile"
+slug: "client-profile-dashboard"
 type: "guides"
 product_area: "Clients"
 sub_area: ""
@@ -12,16 +12,16 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728589
-intercom_sync: false
+intercom_sync: true
 ---
 
-# Dashboard 2.0 in the Parent Profile (Parent Portal)
+# Dashboard 2.0 in the Client Profile
 
 For parents: This is your family dashboard. It helps you manage bookings, sessions, make-ups, passes, credits, discounts, and payments in one place. For providers (admins): This dashboard reduces support requests and makes the parent journey clearer, especially around payments and “special cases”.
 
 ## What is Dashboard 2.0?
 
-Dashboard 2.0 is the latest version of the Parent Profile (Parent Portal). It is embedded on your provider’s website and usually matches the provider’s branding (colors and style).
+Dashboard 2.0 is the latest version of the Client Profile. It is embedded on your provider's website and usually matches the provider’s branding (colors and style).
 
 It is designed to answer the most common parent questions:
 
@@ -90,7 +90,7 @@ The dashboard classes “benefits” in one place, typically:
 
 - Make-ups
 - Discounts
-- Vouchers / passes
+- Entry passes / passes
 - Credits
 
 A key part is history:
@@ -116,7 +116,7 @@ Typical parent actions:
 
 - Check if you have a make-up available
 - See where it was used in the past
-- Choose a replacement session (depending on provider setup)
+- Choose a make-up session (depending on provider setup)
 
 ### Discounts (including history)
 
@@ -127,17 +127,17 @@ If your provider uses discounts, you may see:
 
 Tip: Discounts can be family-level (not always tied to one child).
 
-### Vouchers / passes (entry passes)
+### Entry passes
 
 This is typically used for:
 
-- Entry passes
+- Entry passes (prepaid visit passes)
+- Prepaid credit
 - Punch cards
-- Permanent passes
 
 You may see:
 
-- Available vouchers/passes
+- Available entry passes
 - Unavailable/expired ones
 - History (if enabled)
 
@@ -195,7 +195,7 @@ Dashboard 2.0 is available as a Beta for some providers. Most standard parent jo
 
 Where do I pay an unpaid item? Go to Payments, open the unpaid item, and continue to payment gateway (if enabled).
 
-Where do I find make-ups or replacement sessions? Check the Make-ups section under Benefits.
+Where do I find make-up sessions? Check the Make-ups section under Benefits.
 
 Why do I not see something for one child only? Some items are shared across the family (parent-level), so they cannot be filtered per child.
 

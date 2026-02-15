@@ -170,7 +170,7 @@ Tip: You can create sessions as:
 
 ## Step 7: Make-up sessions (optional)
 
-If you want to allow a client to cancel and pick another available time, enable custom replacements.
+If you want to allow a client to cancel and pick another available time, enable custom make-up sessions.
 
 [![Screenshot](../../assets/images/customizing-widgets-01.png)
 
@@ -205,7 +205,7 @@ Recommended workflow summary
 
 - Create a private 1:1 class/class named after the client
 - Add sessions (weekly or ad-hoc)
-- Enable replacement logic if needed
+- Enable make-up session logic if needed
 - Assign the payment template for that booking
 
 Notes & common pitfalls
@@ -213,4 +213,4 @@ Notes & common pitfalls
 
 - Don’t publish the real 1:1 class online (unless you intentionally sell bookable slots).
 - Use a separate private class per client if you want clean reporting, payments, and scheduling.
-- If you want to offer “pick a time from available slots”, build availability via the replacement approach rather than publishing a fixed timetable.
+- If you want to offer “pick a time from available slots”, build availability via the make-up session approach rather than publishing a fixed timetable.

@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-12"
 intercom_id: 13728498
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Booking and Booking FAQ
@@ -61,8 +61,8 @@ Open the booking detail, and in the settings you can change the assigned class. 
 There are several approaches:
 
 - **Option A (recommended):** The parent registers normally. You provide a discount code reflecting the reduced price, then manually hide the sessions they won't attend in their attendance record.
-- **Option B:** The parent registers but does not pay. You adjust the amount due manually and ask them to complete payment via their Parent Portal.
-- **Option C:** You create the booking manually, adjust sessions and amount, then send the parent to their Parent Portal to pay.
+- **Option B:** The parent registers but does not pay. You adjust the amount due manually and ask them to complete payment via their Client Profile.
+- **Option C:** You create the booking manually, adjust sessions and amount, then send the parent to their Client Profile to pay.
 
 ## Can I manually create a booking on behalf of a client?
 

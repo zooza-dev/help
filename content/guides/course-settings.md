@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728528
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Programme settings
@@ -57,7 +57,7 @@ Each booking type has a different bundle of settings divided into tiles that can
 7. Auto-Enrollment (*full duration programmes* only)
 8. Feedback
 9. Attendance
-10. Class linking (*open programmes* only)
+10. Class linking (*Pay-as-you-go programmes* only)
 
 
 You can edit each section by clicking its *Edit *button.
@@ -104,7 +104,7 @@ This setting is set when creating the programme, but you can change it anytime a
 ## Additional fields
 
 
-At the programme level, you can add *Additional Fields* to the registration form to collect additional information from participants, such as age, allergies, or skill level. For detailed instructions on creating and managing extra fields, see the [Additional Fields manual](https://support.zooza.online/portal/en/kb/articles/labels-and-extra-fields).
+At the programme level, you can add *Additional Fields* to the booking form to collect additional information from participants, such as age, allergies, or skill level. For detailed instructions on creating and managing extra fields, see the [Additional Fields manual](https://support.zooza.online/portal/en/kb/articles/labels-and-extra-fields).
 
 ![Screenshot](../../assets/images/course-settings-09.png)
 
@@ -153,10 +153,10 @@ Note that when attendance tracking is turned off, make-up sessions cannot be off
 ## Class linking
 
 
-Zooza offers a possibility to link multiple classes together which will enable clients to enroll to one class (e.g. based on age restriction, level,...) and then enroll to sessions from other classes. Detailed definition of this functionality can be found[here.](group-connection.md)
+Zooza offers a possibility to link multiple classes together which will enable clients to enroll to one class (e.g. based on age restriction, level,...) and then enroll to sessions from other classes. Detailed definition of this functionality can be found [here.](linked-classes.md)
 
 ![Screenshot](../../assets/images/course-settings-16.png)
 
 ![Screenshot](../../assets/images/client-import-01.png)
 
-Note: This function is available for* open programmes* only.
+Note: This function is available for *Pay-as-you-go programmes* only.

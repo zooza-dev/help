@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728540
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Discount code
@@ -25,8 +25,8 @@ who know it can use it.
 ![Screenshot](../../assets/images/discount-code-01.png)
 
 Note: The discount can only be applied to programmes by
-entering the code in the registration form. In order for clients to be
-able to enter the code, you must enable the *Discount* field in the main settings under *Registration Forms – Registration Form*.
+entering the code in the booking form. In order for clients to be
+able to enter the code, you must enable the *Discount* field in the main settings under *Booking Forms – Booking Form*.
 
 ![Screenshot](../../assets/images/discount-code-02.png)
 
@@ -40,7 +40,7 @@ able to enter the code, you must enable the *Discount* field in the main setting
 ![Screenshot](../../assets/images/discount-code-03.png)
 - Enter:
 - name under which you will register it in the application
-- code that you will provide to your clients, which they will enter into the registration form
+- code that you will provide to your clients, which they will enter into the booking form
 - the number of uses of the code if you want to limit the
  number of uses. In case you do not want to limit the code to the number
  of uses, leave the setting to 0.
@@ -86,7 +86,7 @@ usage or number of uses.
 
 ## Client use of discount code
 
-The discount code can only be applied through the registration form located on your website.
+The discount code can only be applied through the booking form located on your website.
  The client simply applies the code at booking by entering it and
 can immediately check the amount of the discount you have given them.
 
@@ -103,7 +103,7 @@ affect products.
 1. Booking level
 2. In a specific client booking in *Payments* section
  ![Screenshot](../../assets/images/discount-code-12.png)
-3. In *Credits and replacement sessions* section – when you click on the *More *button, you will see the name of the code applied at booking.
+3. In *Credits and make-up sessions* section – when you click on the *More *button, you will see the name of the code applied at booking.
  ![Screenshot](../../assets/images/discount-code-13.png)
 
 Client level

@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728913
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Trial sessions
@@ -102,14 +102,14 @@ This setting is available when you enable a free or paid trial. It determines ho
 
 You can limit the sessions in three ways:
 
-1. None - If no limit is set, clients will see* all upcoming sessions with available capacity *in the registration form and can select any available date for their trial.
+1. None - If no limit is set, clients will see* all upcoming sessions with available capacity *in the booking form and can select any available date for their trial.
 2. By number of days - Trial sessions are limited by a time window. Clients will only see sessions that fall within the number of days you specify.
-3. By number of sessions - If you want to restrict the number of sessions shown, regardless of date, set a session limit. The registration form will then display only the specified number of upcoming sessions.
+3. By number of sessions - If you want to restrict the number of sessions shown, regardless of date, set a session limit. The booking form will then display only the specified number of upcoming sessions.
  ![Screenshot](../../assets/images/trial-lessons-08.png)
 
 ![Screenshot](../../assets/images/individual-lessons-climbing-wall-02.png)
 
-Example: A class runs from January 6 to March 30 with sessions every Monday and Wednesday. If the limit is set to 10 days and a client registers on January 12, the registration form will display trial sessions between January 13 and January 22 (inclusive).
+Example: A class runs from January 6 to March 30 with sessions every Monday and Wednesday. If the limit is set to 10 days and a client registers on January 12, the booking form will display trial sessions between January 13 and January 22 (inclusive).
 
 ![Screenshot](../../assets/images/trial-lessons-10.png)
 
@@ -127,7 +127,7 @@ If you select Current Available Capacity, clients can only register for a trial 
 
 ![Screenshot](../../assets/images/individual-lessons-climbing-wall-02.png)
 
-Example: Class capacity is 10. Global extra capacity of 1 and class extra capacity of 1 are added to this, giving a total capacity of 12. If 2 clients sign out of the class capacity, there will be 4 vacancies for trial classes - 2 from the extra capacity and 2 released from the class capacity.
+Example: Class capacity is 10. Global extra capacity of 1 and class extra capacity of 1 are added to this, giving a total capacity of 12. If 2 clients cancel session of the class capacity, there will be 4 vacancies for trial classes - 2 from the extra capacity and 2 released from the class capacity.
 
 
 ### Extra capacity
@@ -164,7 +164,7 @@ Tip! You can enable trial sessions at the class level in the *Settings *tile und
 ## In the booking detail
 
 
-The moment a client signs up for a trial session via the registration form, the booking detail will show the status Trial started. Below it, a list of the steps that will follow is displayed:
+The moment a client signs up for a trial session via the booking form, the booking detail will show the status Trial started. Below it, a list of the steps that will follow is displayed:
 
 1. The date the trial booking was created
 2. The date on which the trial session will take place
@@ -182,7 +182,7 @@ Warning! Trial sessions have different statuses than standard programme bookings
 
 
 1. *Trial started *- Valid from the date of booking to the time of the actual session.
-2. *Trial ended* - If automatic notifications are set up, a notification with a URL to the pre-populated programme registration form will automatically be sent to the client when the session is completed.
+2. *Trial ended* - If automatic notifications are set up, a notification with a URL to the pre-populated programme booking form will automatically be sent to the client when the session is completed.
 3. *Trial won* - Occurs after the client has successfully registered for the programme.
 4. *Trial lost *- Occurs in following cases:
 5. Attendance form for the term is not filled out and the session has already occurred.
@@ -200,7 +200,7 @@ The information about who is coming for the trial session will be displayed dire
 ## In the client´s profile
 
 
-When a client signs up for a trial session, they can view it in their profile under Programme Interest, where they will find all the relevant details, just like a regular programme sign-up. If the date does not suit him, he has the option to cancel within the limit set for the replacement sessions. If the programme allows for replacement sessions, the client will be entitled to use them according to the rules set for the programme.
+When a client signs up for a trial session, they can view it in their profile under Programme Interest, where they will find all the relevant details, just like a regular programme sign-up. If the date does not suit him, he has the option to cancel within the limit set for make-up sessions. If the programme allows make-up sessions, the client will be entitled to use them according to the rules set for the programme.
 
 ![Screenshot](../../assets/images/trial-lessons-23.png)
 
@@ -209,7 +209,7 @@ When a client signs up for a trial session, they can view it in their profile un
 
 For the Trial Session booking type, email notifications are prepared to prompt the client after completing the trial session if he/she wants to enroll in the full programme. You can set what will be sent to the client and when after the trial session. The following notifications are available:
 
-1. Information about the possibility to register for the full programme with a link to the pre-populated registration form.
+1. Information about the possibility to register for the full programme with a link to the pre-populated booking form.
 2. 2 reminders after the number of days you set, if the client has not yet registered.
 3. Change of status to Trial lost if the client does not respond to the sent link, with an option to inform them of this change.
 4. You can review and edit all notifications in the Communication section under Message Templates. You can read instructions on how to do this [here](../guides/message-templates.md).
@@ -227,7 +227,7 @@ After completing the trial session and deciding to continue with the programme, 
 ## Client booking
 
 
-Immediately after completing the session (if attendance is recorded), the client will receive a notification informing them of the opportunity to enroll in the programme. Clicking on the attached link will open a pre-populated registration form, in which the client can conveniently register.
+Immediately after completing the session (if attendance is recorded), the client will receive a notification informing them of the opportunity to enroll in the programme. Clicking on the attached link will open a pre-populated booking form, in which the client can conveniently register.
 
 ![Screenshot](../../assets/images/trial-lessons-25.png)
 

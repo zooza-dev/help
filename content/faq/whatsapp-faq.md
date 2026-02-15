@@ -12,14 +12,14 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728502
-intercom_sync: false
+intercom_sync: true
 ---
 
 # WhatsApp FAQ
 
 ## Do parents need to install an app?
 
-No. They receive WhatsApp messages and follow links to your **website/Parent Portal**.
+No. They receive WhatsApp messages and follow links to your **website/Client Profile**.
 
 ## Can we choose which sessions send on WhatsApp?
 

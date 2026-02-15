@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-13"
 intercom_id: 13728639
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Bookings
@@ -572,7 +572,7 @@ Button: **Create credit for booking**.
 
 - **Transferred make-up sessions** — credits transferred from other bookings.
 - **Discounts** — discount credits applied.
-- **Create a free session or discount voucher for booking** — manually created vouchers.
+- **Create a free session or discount voucher for booking** — manually created entry passes.
 - **Purchased gift vouchers redeemed for this booking** — gift vouchers used.
 - **Entry pass** — entry pass credits.
 
@@ -584,7 +584,7 @@ Button: **Create credit for booking**.
 
 | Field | Description |
 |---|---|
-| `Credit type` | **Available session date** — a make-up session slot. **Discount voucher** — a monetary discount. |
+| `Credit type` | **Available session date** — a make-up session slot. **Discount entry pass** — a monetary discount. |
 
 Click **Create** to add the credit, or **Cancel** to discard.
 
@@ -621,7 +621,7 @@ Shows the parameters that govern where and when the credit can be used. Button: 
 
 #### Delete Credit
 
-Button: **Delete unused voucher** — removes an unused credit.
+Button: **Delete unused entry pass** — removes an unused credit.
 
 ## Communication Tab
 

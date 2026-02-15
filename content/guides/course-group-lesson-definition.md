@@ -35,15 +35,15 @@ An ongoing programme is one that has more than one session and clients sign up (
 
 These are typically lectures, sessions, consultations or other meetings that have one specific date.
 
-## Open
+## Pay-as-you-go
 
 
-These are sessions where the client have an option to choose just one, more or all of the sessions according to their time and will. Consequently, he/she only pays for the sessions he/she attends. You can attach a possibility to buy a season ticket for this type of course The process for creating Open Programmes can be found in the [manual](open-course-creation.md).
+These are flexible programmes where clients register once and then choose which sessions to attend. They only pay for the sessions they book. You can optionally offer [entry passes](creating-entry-passes.md) for prepaid session bundles. The full guide for creating Pay-as-you-go programmes can be found in the [manual](pay-as-you-go-programme.md).
 
 ## Classes
 
-Depending on the type of course, the creation of classes differs in only one detail: for ongoing and open programmes, it is possible to enter multiple dates, while for one-off programmes, it is possible to enter only one date.
-There is no limit to the number of dates in the ongoing and open programmes. So you can make two, but you can also make two hundred. How to create a class can be found in this [manual.](https://support.zooza.online/portal/en/kb/articles/group-creation)
+Depending on the type of course, the creation of classes differs in only one detail: for ongoing and Pay-as-you-go programmes, it is possible to enter multiple dates, while for one-off programmes, it is possible to enter only one date.
+There is no limit to the number of dates in the ongoing and Pay-as-you-go programmes. So you can make two, but you can also make two hundred. How to create a class can be found in this [manual.](https://support.zooza.online/portal/en/kb/articles/group-creation)
 
 ## Schedules and sessions/sessions
 
@@ -53,7 +53,7 @@ Each class contains at least one term. If there are more terms, we can also call
 ## Billing periods
 
 
-This is a very practical tool for companies that organise their programmes in semesters. For example, if you have five classes in the winter semester and seven in the spring semester, you can distinguish them from each other thanks to the billing periods. For example, in case you would like to offer to carry over replacement sessions between semesters.
+This is a very practical tool for companies that organise their programmes in semesters. For example, if you have five classes in the winter semester and seven in the spring semester, you can distinguish them from each other thanks to the billing periods. For example, in case you would like to offer to carry over make-up sessions between semesters.
 
 
 You can use the billing periods at your discretion. Whether for the individual periods in which you create programmes. or for the whole school year. It is not necessary to use them, but it is a great tool.

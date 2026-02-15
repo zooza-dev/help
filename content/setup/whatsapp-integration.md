@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728920
-intercom_sync: false
+intercom_sync: true
 ---
 
 # WhatsApp Integration & Usage (Beta)
@@ -111,7 +111,7 @@ Once your card is added and Meta billing is active, Zooza can automatically send
 - **Choose your number strategy.**
   - API number (Zooza) = automation, logging, permissions, audit trail.
   - Optional second number = ad-hoc mobile chats (if your ops require it).
-- **Brand & privacy.** Messages link back to your **website/Parent Portal**. Zooza keeps a log for auditing and GDPR purposes.
+- **Brand & privacy.** Messages link back to your **website/Client Profile**. Zooza keeps a log for auditing and GDPR purposes.
 - **Pricing & limits.** Zooza charges for the **integration feature**, not per message. Meta grants **free volumes** up to certain tiers; higher tiers follow Meta policy.
 
 ## Summary

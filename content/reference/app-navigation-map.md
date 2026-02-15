@@ -26,7 +26,7 @@ This page maps every section of the Zooza admin application to its reference doc
 
 | Menu item | Reference doc | Related guides | Status |
 |---|---|---|---|
-| **Programmes** | [Programmes List](programmes-list.md) | [Programme Settings](../guides/course-settings.md), [Open Programme Creation](../guides/open-course-creation.md) | Done |
+| **Programmes** | [Programmes List](programmes-list.md) | [Programme Settings](../guides/course-settings.md), [Pay-as-you-go Programme](../guides/pay-as-you-go-programme.md) | Done |
 | Programmes → Settings | [Programme Settings](programme-settings.md) | [Payment Options](../guides/payment-options.md), [Trial Sessions](../setup/trial-lessons.md), [Online Registration](../setup/online-registration.md) | Done |
 | Programmes → Automations | [Programme Automations](programme-automations.md) | [Auto-Enrolment](../setup/auto-enrollment.md), [Payment Reminders](../guides/automatic-payment-reminders.md) | Done |
 | **Classes** | [Classes List](classes-list.md), [Class Detail](class-detail.md) | [Programme Class Session Definition](../guides/course-group-lesson-definition.md), [Change Instructor](../guides/change-instructor.md) | Done |

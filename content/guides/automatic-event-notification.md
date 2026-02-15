@@ -22,10 +22,10 @@ This is the email that always arrives to the client the day before a session or 
 The reminder is helpful for several reasons:
 
 - Clients may forget what day it is in the rush of daily responsibilities.
-- It informs them of the time and place -- especially useful for replacement sessions that take place at a different time or location.
+- It informs them of the time and place -- especially useful for make-up sessions that take place at a different time or location.
 - Reminders can go to an additional email, for example to remind the other parent about the child's session. This helps when parents have alternating care. The additional email can be added by the client in their profile, or you can do it at the booking level.
 - Most importantly -- **a reminder allows the client to log out of the session with one click**. If they are home sick, it is very easy to forget to log out via their profile.
-- An automatic reminder with an opt-out option ensures clients do not forget to opt out, creating a spot in the class for someone who wants to use a replacement session.
+- An automatic reminder with an opt-out option ensures clients do not forget to opt out, creating a spot in the class for someone who wants to use a make-up session.
 
 A sample reminder email:
 

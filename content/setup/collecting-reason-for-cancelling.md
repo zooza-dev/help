@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728777
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Collecting the reason for cancelling the session
@@ -47,7 +47,7 @@ Note: Clients do not see the actual reason for opting out under any circumstance
 ## On the booking details
 
 
-In the *Settings *tab, click *Registration Forms, *under *Profile*.
+In the *Settings *tab, click *Booking Forms, *under *Profile*.
 
 ![Screenshot](../../assets/images/collecting-reason-for-cancelling-02.png)
 

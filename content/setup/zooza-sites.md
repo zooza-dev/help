@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728943
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Zooza Sites
@@ -35,7 +35,7 @@ For more information about Zooza Sites click on this link: [https://www.zooza.on
 
 ## Benefits
 
-1. All the basic tools are ready and integrated into your website. You don’t have to worry about uploading scripts for registration forms or client profiles.
+1. All the basic tools are ready and integrated into your website. You don’t have to worry about uploading scripts for booking forms or client profiles.
 2. Simple and consistent page layout – custom header/footer that is available on all pages equally.
 3. Every change is automatically applied to the page, you don’t have to worry about technical details.
 4. Possibility to create your own photo gallery.

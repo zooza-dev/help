@@ -220,13 +220,13 @@ back to the home page by clicking on the Zooza logo in the top left
 
 ![Screenshot](../../assets/images/user-roles-18.png)
 
-- For the programme type – Open programme, the receptionist can register the client for the date.
+- For the programme type – Pay-as-you-go programme, the receptionist can register the client for the date.
 - It does not have access to other parts of the administration. It does not have the right of communication to clients.
 
 ![Screenshot](../../assets/images/allowing-multiple-registration-03.png)
 
-Example: i offer Pilates as an open programme –
-clients sign up for individual classes at their own discretion. If the
+Example: I offer Pilates as a Pay-as-you-go programme –
+clients sign up for individual sessions at their own discretion. If the
 client does not manage to book himself in the profile, he just arrives,
 the receptionist can also add him to the term
 

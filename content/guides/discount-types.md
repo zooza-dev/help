@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728543
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Discount types
@@ -28,7 +28,7 @@ Discount coupon works as a gift card that clients can use for their loved ones o
 ## Free of charge session/session
 
 
-Free of charge session/session works as replacement session for the client for your services. For instructions follow How to work with credits?
+Free of charge session/session works as a make-up session for the client for your services. For instructions follow How to work with credits?
 
 ![Screenshot](../../assets/images/allowing-multiple-registration-04.png)
 
@@ -58,7 +58,7 @@ Application: In case you have a client, you want to give a discount to, you give
 ## Payment template discount
 
 
-Another way to redeem the discount is through payment types. Thus, by creating a new payment type, such as one-time or monthly discount, and then setting it up at booking or entering it in the registration form.
+Another way to redeem the discount is through payment types. Thus, by creating a new payment type, such as one-time or monthly discount, and then setting it up at booking or entering it in the booking form.
 
 ![Screenshot](../../assets/images/discount-code-01.png)
 
@@ -70,14 +70,14 @@ Note: This type can be applied ONLY for programmes that have a booking type of C
 
 Application: You want to provide different options for clients to pay for your programmes – one-off, quarterly and annual. In order to motivate clients to pay the entire programme upfront and therefore choose the annual payment, discount it.
 
-## Gift voucher
+## Gift entry pass
 
 
-This type of product is created as a product and can therefore be sold via the product form or via the client profile. It serves as a voucher that clients can use for their loved one. To enter the voucher, follow the instructions in How to work with credits?
+This type of product is created as a product and can therefore be sold via the product form or via the client profile. It serves as a entry pass that clients can use for their loved one. To enter the entry pass, follow the instructions in How to work with credits?
 
 ![Screenshot](../../assets/images/allowing-multiple-registration-04.png)
 
-Application: During Christmas time, create a voucher with different discount amounts and offer it to clients for sale in the product form or within their profile. Clients will then be able to purchase the voucher and gift the code from it to their loved ones to enroll them in your programmes.
+Application: During Christmas time, create a entry pass with different discount amounts and offer it to clients for sale in the product form or within their profile. Clients will then be able to purchase the entry pass and gift the code from it to their loved ones to enroll them in your programmes.
 
 
 ## Where can I find discounts?
@@ -88,7 +88,7 @@ You can set up discounts in two places within the app. However, there is a diffe
 ## Client booking
 
 
-At the booking level, you can manage and view client discounts/credits in Credits and replacement sessions. This view is very individual and you can only see specific discount and credits that a given client has used. We recommend working with discounts/credits at this level when you want to address a specific client and their individual needs on a programme.
+At the booking level, you can manage and view client discounts/credits in Credits and make-up sessions. This view is very individual and you can only see specific discount and credits that a given client has used. We recommend working with discounts/credits at this level when you want to address a specific client and their individual needs on a programme.
 
 ![Screenshot](../../assets/images/discount-types-07.png)
 

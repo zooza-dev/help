@@ -13,7 +13,7 @@ source_language: en
 needs_screenshot_replacement: false
 last_converted: 2026-02-11
 intercom_id: 13728621
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Sending requests
@@ -44,7 +44,7 @@ In Zooza, you were used to an envelope where you filled in your name, email and 
 Ticket, or request form, is an enhanced feature of the original envelope that changes to a more detailed description so that we can better understand and properly prioritize how important your request is.
 
 1. We have added a *Classification *field to the new form, which is a mandatory field based on the severity of the issue, as follows:
-2. Next, you will find the *Subject *field, where you can briefly write what your request is about (e.g. Setting up replacement hours,...). This field is mandatory, it works like the subject of a message in classic email communication.
+2. Next, you will find the *Subject *field, where you can briefly write what your request is about (e.g. Setting up make-up sessions,...). This field is mandatory, it works like the subject of a message in classic email communication.
 3. In the *Description *field you have the opportunity to describe in detail what is bothering you and we also recommend that you write how you proceeded or tried to proceed so that we can replicate your process and come to a solution as soon as possible. This applies to programmes, classes or even appointments or clients. To help us navigate as easily as possible, it will help to send us the booking/programme/class number, which can be found in the URL.E.g.: zooza.app/#bookings/196736 The booking number you are looking for is 196736.
 4. Furthermore, on the bottom left there is an option to attach files where you can attach photos for graphical representation and better orientation.
  ![Screenshot](../../assets/images/sending-requests-01.png)

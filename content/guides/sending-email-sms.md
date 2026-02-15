@@ -14,7 +14,7 @@ source_language: mixed
 needs_screenshot_replacement: true
 last_converted: 2026-02-11
 intercom_id: 13728619
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Sending email/SMS to clients
@@ -67,7 +67,7 @@ The procedure for sending emails and SMS is the same:
 
 ![Target group selection](../../assets/images/target-group-selection.png "Target group selection")
 
-3. Check the **Promotional message** box if your message is promotional. This setting means that if any client has unsubscribed from receiving advertising messages, they will not receive them. If you want to send a message to all clients including those who have additional access to bookings, click the checkbox **Send email also to users with additional access to booking**.
+3. Check the **Promotional message** box if your message is promotional. This setting means that if any client has cancel from receiving advertising messages, they will not receive them. If you want to send a message to all clients including those who have additional access to bookings, click the checkbox **Send email also to users with additional access to booking**.
 
 ![Promotional message settings](../../assets/images/promotional-message-settings.png "Promotional message settings")
 
@@ -95,7 +95,7 @@ The procedure for sending emails and SMS is the same:
 
 > **Note:** To check each sent email, we recommend that you include your own email address.
 
-> **Attention!** Zooza does not function as a marketing communications system that allows clients to opt out of receiving marketing/promotional messages. It is also not used to obtain information about how many clients opened the promotional email or responded to links. The **Promotional Email / Promotional SMS** function is for client information only. If a client wants to unsubscribe from promotional emails, you can do it based on their request:
+> **Attention!** Zooza does not function as a marketing communications system that allows clients to opt out of receiving marketing/promotional messages. It is also not used to obtain information about how many clients opened the promotional email or responded to links. The **Promotional Email / Promotional SMS** function is for client information only. If a client wants to cancel from promotional emails, you can do it based on their request:
 >
 > 1. In the **Clients** section, open the client account and click on **Notes and preferences**.
 > 2. Untick the **Send promotional emails** box.

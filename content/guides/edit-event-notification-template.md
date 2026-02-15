@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-02-11"
 intercom_id: 13728550
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Edit automatic notifications of an upcoming session
@@ -20,7 +20,7 @@ intercom_sync: false
 The [automatic notification](automatic-event-notification.md) is one of the messages that you can customise in the message templates. You can adjust the message text to suit your organisation's needs:
 
 1. Change the way of reaching out
-2. Change the terminology (sign out for the session/exercise/session)
+2. Change the terminology (cancel session for the session/exercise/session)
 3. Add written information on the latest time to cancel the session
 
 ## Setting up the template

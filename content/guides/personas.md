@@ -12,12 +12,12 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728611
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Personas
 
-Personas is a feature that distinguishes between attendees and clients, giving each their own dedicated profile. Instead of treating a child (or other attendee) as just an extra field on a registration form, Personas creates a full record for them — complete with progress notes, order history, and family relationships. This provides a clearer, more detailed overview of each person’s engagement, helping you track their journey and interactions over time.
+Personas is a feature that distinguishes between attendees and clients, giving each their own dedicated profile. Instead of treating a child (or other attendee) as just an extra field on a booking form, Personas creates a full record for them — complete with progress notes, order history, and family relationships. This provides a clearer, more detailed overview of each person’s engagement, helping you track their journey and interactions over time.
 
 
 ## Person creation

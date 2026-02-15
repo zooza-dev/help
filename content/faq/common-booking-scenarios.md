@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728488
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Common Booking Scenarios
@@ -67,4 +67,4 @@ Steps: Booking → Detail → Payments → Select transaction → Process refund
 Go to Booking → Payments → Payment plan → Adjust the next payment.
 Automation options (on request):
 
-- Offer [make-up classes](https://support.zooza.online/portal/en/kb/articles/replacement-lessons).
+- Offer [make-up sessions](https://support.zooza.online/portal/en/kb/articles/replacement-lessons).

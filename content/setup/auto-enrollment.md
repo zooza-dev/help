@@ -12,12 +12,12 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728767
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Auto-enrollment
 
-Auto-enrollment is used for efficient programme enrollment for existing clients with a pre-filled registration form. This allows the client to receive priority enrollment in a new period (for class programmes) or to select a new date for individual sessions, so that you can arrange further continuation via Zooza.
+Auto-enrollment is used for efficient programme enrollment for existing clients with a pre-filled booking form. This allows the client to receive priority enrollment in a new period (for class programmes) or to select a new date for individual sessions, so that you can arrange further continuation via Zooza.
 
 
 1. Priority enrollment for existing clients, whom you want to offer programmes before displaying them on your website. 
