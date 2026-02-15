@@ -1,6 +1,6 @@
 ---
 title: "Programme Settings"
-slug: "programme-settings"
+slug: "programme-settings-reference"
 type: "reference"
 product_area: "Programmes"
 sub_area: ""

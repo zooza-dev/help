@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: "legacy/0082_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-02-13"
 intercom_id: 13728559
 intercom_sync: true
 ---
@@ -23,7 +23,7 @@ After the import, you can assign existing Direct Debit mandates to the imported 
 
 Linking mandates is safe — no money will be collected until a payment plan is created later.
 
-#### Quick step-by-step
+### Quick step-by-step
 
 1. Go to Payments
 2. Click Direct Debit (top menu)
@@ -59,7 +59,7 @@ Doing this early allows us later to simply apply payment plans to bookings, with
 
 ## Create payment plans
 
-#### Option A: Apply a payment template to the whole class (recommended)
+### Option A: Apply a payment template to the whole class (recommended)
 
 For each class:
 
@@ -71,6 +71,16 @@ For each class:
 6. Choose which bookings it applies to (usually all)
 7. Confirm and continue
 
-#### Option B: Create payment plans manually per booking (Guide)
+### Option B: Create payment plans manually per booking (Guide)
 
 The logic is the same, just done individually.
+
+## Connection maintenance
+
+After initial setup, your GoCardless bank connection requires periodic renewal.
+
+**Important:** Most bank connections expire every **90 days** due to bank security policies (PSD2 regulation). When the connection expires, Zooza stops receiving transaction data until you re-authorize.
+
+For full details on managing connection expiry, renewal, and troubleshooting bank-specific issues, see the [GoCardless Connection Lifecycle guide](gocardless-connection-lifecycle.md).
+
+For quick answers about GoCardless, see the [GoCardless FAQ](../faq/gocardless-faq.md).

@@ -28,14 +28,28 @@ Both types work the same way in the booking flow. Choose based on whether you wa
 
 ## Step-by-step: Create an entry pass product
 
-1. Go to **Products** → **Create New Product** → Create.![[Pasted image 20260215171140.png]]
-2. Enter the **credit value**, configure **payment methods** (online payment, bank transfer, cash, etc.) and save. ![[Pasted image 20260215171825.png]]
-3. Go to **Items for sale** → click **Add**. ![[Pasted image 20260215171914.png]] ![[Pasted image 20260215171927.png]]
+1. Go to **Products** → **Create New Product** → Create.
+
+   ![Create new product](../../assets/images/entry-pass-create-product.png "Products — Create new product form")
+
+2. Enter the **credit value**, configure **payment methods** (online payment, bank transfer, cash, etc.) and save.
+
+   ![Credit value and payment config](../../assets/images/entry-pass-credit-value-config.png "Product credit value and payment method settings")
+
+3. Go to **Items for sale** → click **Add**.
+
+   ![Items for sale](../../assets/images/entry-pass-items-for-sale.png "Items for sale section")
+
+   ![Add item](../../assets/images/entry-pass-add-item.png "Add new item dialog")
 4. Select **Entry Pass** as the item type.
 5. Set the **value** (number of entries or credit amount), **validity period**, **price**, and whether the item is **mandatory**.
-6. To offer a discount, set the price lower than the value (e.g. 10 entries for 80 EUR instead of 100 EUR).![[Pasted image 20260215172133.png]]
+6. To offer a discount, set the price lower than the value (e.g. 10 entries for 80 EUR instead of 100 EUR).
+
+   ![Discount pricing](../../assets/images/entry-pass-discount-pricing.png "Entry pass with discounted price")
 7. Click **Continue** → **Start and Continue**.
-8. Add a **description** and **notification template** if needed. ![[Pasted image 20260215172156.png]]
+8. Add a **description** and **notification template** if needed.
+
+   ![Description and template](../../assets/images/entry-pass-description-template.png "Product description and notification template settings")
 
 
 
@@ -44,8 +58,13 @@ Both types work the same way in the booking flow. Choose based on whether you wa
 
 After creating the entry pass product, assign it to the relevant programme or class.
 
-1. Go to the **Programme** → **Class** → **Select Product**.![[Pasted image 20260215174403.png]]
-2. Choose the entry pass product you created.![[Pasted image 20260215174429.png]]
+1. Go to the **Programme** → **Class** → **Select Product**.
+
+   ![Assign product to class](../../assets/images/entry-pass-assign-to-class.png "Class settings — Select Product")
+
+2. Choose the entry pass product you created.
+
+   ![Select entry pass product](../../assets/images/entry-pass-select-product.png "Product selection dialog")
 3. Click **Save**.
 
 You can assign multiple pass types to the same class. For example, you might offer both a 5-session pass and a 10-session pass.
@@ -54,8 +73,13 @@ You can assign multiple pass types to the same class. For example, you might off
 
 For each assigned product, you can configure where it appears:
 
-- **Profile availability** — The pass is available for purchase in the client's profile after booking.![[Pasted image 20260215173842.png]]
-- **Booking form availability** — The pass is available during the booking/booking process.![[Pasted image 20260215174014.png]]
+- **Profile availability** — The pass is available for purchase in the client's profile after booking.
+
+  ![Profile availability setting](../../assets/images/entry-pass-profile-availability.png "Entry pass available in client profile")
+
+- **Booking form availability** — The pass is available during the booking/booking process.
+
+  ![Booking form availability setting](../../assets/images/entry-pass-booking-form-availability.png "Entry pass available in booking form")
 
 ## Two-product setup for dual availability
 
@@ -67,7 +91,7 @@ To offer the same entry pass in both locations, create two separate products:
 2. **Optional product** — Set as optional. This makes it available in the booking form during booking.
 
 Both products should have the same value and price. The only difference is the mandatory/optional setting.
-![[Pasted image 20260215174056.png]]
+![Dual product setup example](../../assets/images/entry-pass-dual-product-setup.png "Two products — mandatory for profile and optional for booking form")
 
 ### Example: 5 EUR and 10 EUR passes
 

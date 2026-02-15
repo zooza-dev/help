@@ -30,6 +30,20 @@ Do not search for these paths — they are fixed. Use them directly.
    - Use mapping files (`legacy/content-map.yml`) to keep paths and slugs stable.
 5. **Do not block on screenshots** being Slovak; flag instead.
 
+## Obsidian image handling
+When the user pastes images via Obsidian, they land in the repo root as `Pasted image *.png`
+and are referenced with `![[Pasted image ...]]` syntax. This must be fixed before commit:
+
+1. Run `python3 scripts/fix_obsidian_images.py` (or `--dry-run` to preview).
+2. The script automatically:
+   - Finds all `![[...]]` references in `content/`
+   - Copies images to `assets/images/` with descriptive kebab-case names
+   - Replaces Obsidian syntax with standard Markdown `![alt](../../assets/images/name.png)`
+   - Deletes the originals from repo root
+3. After running, verify with `grep -r '!\[\[' content/` — should return nothing.
+
+**Rule:** Never commit `![[...]]` syntax or `Pasted image *.png` files in repo root.
+
 ## Repo layout
 - `legacy/html/` — input HTML
 - `legacy/assets/` — input images/screenshots/attachments

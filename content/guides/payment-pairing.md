@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: "legacy/0084_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-02-13"
 intercom_id: 13728594
 intercom_sync: false
 ---
@@ -152,3 +152,36 @@ In these situations, Zooza does not attempt to re-pair the payment automatically
 You can always check the exact reason why a payment was not paired directly in the payment detail, in the field “Pairing process summary”.
 
 Solution: Such payments can be safely paired manually to the correct booking, typically using the *payment reference*.
+
+## Troubleshooting payment pairing failures
+
+### Payments from Revolut or foreign banks
+
+Some banks (notably Revolut) place the variable symbol in the "Reference" or "Note" field rather than the standard variable symbol field. Zooza's pairing algorithm checks the note/reference field as a fallback, but matching may fail if the format is unexpected.
+
+**Solution:** If Revolut payments are not auto-matching, check the payment detail in **Payments → Received payments**. Look at the "Pairing process summary" field to see why pairing failed. You can always pair manually using the booking number.
+
+### Payment arrives before debt is created
+
+When a client pays in advance (e.g., semi-annual payment before the next instalment is posted), auto-pairing may fail because no matching debt exists at the time the payment is received. Zooza does **not** retry pairing later when the debt is created.
+
+**Solution:** Pair the payment manually from **Payments → Received payments**. Match it using the payment reference / variable symbol.
+
+### Bank notification service outages
+
+If your bank's notification service (email or GoCardless) has an outage, payments made during that period will not appear in Zooza until the service resumes. GoCardless syncs once daily, so a brief outage may delay pairing by 24-48 hours.
+
+**Solution:** After the outage resolves, check **Payments → Received payments** for any unmatched transactions. You can also use the CSV bulk upload as a fallback during extended outages.
+
+### Email-notification pairing as an alternative to GoCardless
+
+If GoCardless connections are unreliable for your bank, consider switching to email-notification-based pairing. In this method, your bank sends transaction notifications to a special Zooza email address, and Zooza processes them in near real-time.
+
+**Advantages over GoCardless:**
+- Near real-time processing (vs. once daily with GoCardless)
+- No 90-day connection renewal required
+- Works with any bank that supports email transaction alerts
+
+**Setup:** Go to **Settings → Payments → Billing profiles** and configure the notification email address. See the [GoCardless lifecycle guide](gocardless-connection-lifecycle.md) for details on switching.
+
+<!-- REVIEW: Confirm the exact setup steps for email-notification pairing — the legacy documentation link points to a Slovak-only page. -->

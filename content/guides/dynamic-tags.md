@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: "legacy/0005_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-02-11"
+last_converted: "2026-02-13"
 intercom_id: 13728547
 intercom_sync: true
 ---
@@ -105,3 +105,37 @@ You can use conditional tags in templates. For example, if you accept business o
 | `<` | Less than |
 | `>=` | Greater than or equal |
 | `<=` | Less than or equal |
+
+## Known limitations and troubleshooting
+
+### Tags in replacement (make-up) sessions
+
+When a client books a replacement session, tags like `COURSE_TIME`, `COURSE_DATE_DAY`, and `COURSE_PLACE` pull data from the **primary group's first session**, not the replacement session. This means the email may show incorrect time, day, or location for the replacement.
+
+**Workaround:** Use `ORDER_SUMMARY` instead — it includes the correct session details for the specific booking context.
+
+### Tags in block-based courses
+
+For courses using blocks (term segments), `COURSE_DATE_DAY` and `COURSE_TIME` pull from the first session in the group, which may not match the client's enrolled block.
+
+**Workaround:** Use `ORDER_SUMMARY` to display the correct block-specific information. A dedicated block-specific date tag is not yet available.
+
+<!-- REVIEW: Monitor for a dedicated block-specific dynamic tag — it has been requested by multiple customers. -->
+
+### Tags in order confirmation emails
+
+Dynamic tags are **not fully supported** in order (product purchase) confirmation emails. Tags like `COURSE_NAME`, `COURSE_TIME`, etc. will not populate because orders are not linked to a specific class or session.
+
+Only basic client tags (`FIRST_NAME`, `FULL_NAME`, etc.) work in order emails.
+
+### Tags in subject lines
+
+Most dynamic tags work in email subject lines, but some may not populate in certain template types. Always test your email before sending to a large group.
+
+### Tag rendering outages
+
+In rare cases, the dynamic tag rendering service may experience temporary outages, causing tags to appear as blank in sent emails. If you notice blank tags in recently sent emails:
+
+1. Check **Communication → Sent emails** to verify which emails were affected.
+2. Contact support to confirm whether a service issue occurred.
+3. Resend affected emails after the issue is resolved.

@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: "legacy/0007_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-02-11"
+last_converted: "2026-02-13"
 intercom_id: 13728576
 intercom_sync: false
 ---
@@ -62,3 +62,41 @@ These reminders may or may not be sent to clients automatically. You can set the
 You can set whether and when to send them, as well as whether to automatically delete outstanding bookings.
 
 ![Payment reminder example](../../assets/images/payment-reminder-example.png "Payment reminder example email")
+
+## System templates vs. user templates
+
+Zooza has two types of templates, and finding the right one can be confusing:
+
+### System templates
+
+- Pre-built templates provided by Zooza (e.g., payment confirmation, booking confirmation).
+- Found under **Communication → Message templates** with the orange **Template** label.
+- Some system templates **cannot be edited** (e.g., payment confirmations, login codes).
+- For editable system templates, we recommend copying the original before making changes.
+
+### User templates
+
+- Custom templates you create for your specific communication needs.
+- Found under a separate **User templates** section in the template selector when sending emails.
+- You can assign user templates to specific courses or programmes.
+
+### Where to find each type when sending an email
+
+When composing an email from a booking or class, the template dropdown shows two separate sections:
+
+1. **Saved communication templates** — system templates
+2. **User templates** — your custom templates
+
+If you cannot find your custom template, check that you are looking in the **User templates** section, not the system templates section.
+
+<!-- REVIEW: Confirm the exact dropdown section names in the current UI — they may have been renamed. -->
+
+## When automatic emails are NOT sent
+
+Zooza sends automatic confirmation emails for online registrations. However, automatic emails are **not sent** in these cases:
+
+- **Copied registrations** — when you copy a registration from one term to another.
+- **Manually created registrations** — when you create a registration on behalf of a client.
+- **Transferred registrations** — when you transfer a registration between classes.
+
+In all these cases, you must send the confirmation email manually from the registration's **Communication** tab.

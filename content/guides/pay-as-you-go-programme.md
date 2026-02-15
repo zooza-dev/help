@@ -49,7 +49,7 @@ Use a Pay-as-you-go programme when:
 6. Set the **Unit price** (standard price per session).
 7. Click **Create**.
 
-![[Pasted image 20260215165730.png]]
+![Creating a Pay-as-you-go programme](../../assets/images/pay-as-you-go-create-programme.png "New programme form with Pay-as-you-go type selected")
 
 The unit price is the amount charged each time a client books a session. For example, if you set a unit price of 20 EUR, each session the client attends costs 20 EUR.
 
@@ -72,7 +72,7 @@ If you want clients to pick sessions across multiple classes, use [linked classe
 4. Click **Continue**.
 
 
-![[Pasted image 20260215165923.png]]
+![Creating a class in Pay-as-you-go programme](../../assets/images/pay-as-you-go-create-class.png "Class creation form")
 ### Add sessions
 
 Create as many sessions ahead as possible so clients have a full schedule to choose from.
@@ -81,7 +81,7 @@ Create as many sessions ahead as possible so clients have a full schedule to cho
 2. Fill in the dates, times, and any session-specific details.
 3. Click **Save**.
 
-![[Pasted image 20260215165910.png]]
+![Adding sessions to a class](../../assets/images/pay-as-you-go-add-sessions.png "Add sessions form")
 
 
 
@@ -99,18 +99,18 @@ Once a client registers for a Pay-as-you-go programme, they manage their attenda
 4. They select the sessions they want to attend.
 5. A payment obligation is created automatically for each booked session.
 
-![[Pasted image 20260215170502.png]]
+![Client view — Book session button](../../assets/images/pay-as-you-go-client-book-session.png "Client profile showing Book Session and Go To Calendar buttons")
 
 
-![[Pasted image 20260215170651.png]]
+![Client view — selecting available sessions](../../assets/images/pay-as-you-go-client-select-session.png "Session selection in client profile")
 
 
-![[Pasted image 20260215170543.png]]
+![Client view — session booked confirmation](../../assets/images/pay-as-you-go-client-session-booked.png "Booked session in client attendance")
 
 
 Clients can also book sessions through the calendar widget on your website.
 
-![[Pasted image 20260215170432.png]]
+![Calendar widget — booking sessions](../../assets/images/pay-as-you-go-calendar-widget.png "Calendar widget on website showing available sessions")
 
 ### Cancelling a session
 
