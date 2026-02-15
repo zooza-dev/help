@@ -52,7 +52,7 @@ Controls how much clients pay and how payments are collected.
 | `How do you want to collect payments?` | **One off payment** — single charge. **In scheduled payments** — recurring (term, membership, subscription). |
 | `Price type for programme` | **Term payment** — total price split into instalments by frequency. **Membership** — recurring charge at a fixed interval. |
 | `Booking fee` | One-time fee charged at booking. |
-| `Advanced settings` | Expandable section with: Down payment, Late bookings policy, Aliquot price calculation, Billable sessions, Payment managed by registrant. |
+| `Advanced settings` | Expandable section with: Down payment, Late bookings policy, Aliquot price calculation, Include Initial Full Scheduled Payment, Billable sessions, Payment managed by registrant. |
 | `Down payment` | None, Fixed amount, or Percentage of total price. |
 
 When changing the price type, a confirmation dialog warns that incompatible payment plans will be deleted from the programme and all timetables.

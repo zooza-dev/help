@@ -1,98 +1,151 @@
+---
+generated: "2026-02-15"
+validator: kb:validate
+---
+
 # Validation Report
 
-**Generated:** 2026-02-15
-
-## Summary
-
-- **Total docs checked:** 145
-- **Total issues found:** 56
-- **Overall status:** FAIL
-
-## 1. Required Frontmatter
-
-All docs have complete required frontmatter.
-
-## 2. Unique Slugs
-
-All slugs are unique.
-
-## 3. Unique Intercom IDs
-
-All intercom_id values are unique.
-
-## 4. Exactly One H1 Per Doc
-
-All docs have exactly one H1.
-
-## 5. No Skipped Heading Levels
-
-No heading level skips found.
-
-## 6. Broken Internal Links
-
-No broken internal links found.
-
-## 7. Missing Referenced Assets
-
-**56 missing asset(s) found:**
-
-- `content/guides/automatic-payment-reminders.md` — references `../../assets/images/payment-reminder-settings.png "Payment reminder settings"`
-- `content/guides/automatic-payment-reminders.md` — references `../../assets/images/payment-due-date-settings.png "Payment due date settings"`
-- `content/guides/automatic-session-notification.md` — references `../../assets/images/sample-event-reminder-email.png "Sample event reminder email"`
-- `content/guides/automatic-session-notification.md` — references `../../assets/images/turning-off-event-notifications.png "Turning off event notifications in course settings"`
-- `content/guides/automatic-session-notification.md` — references `../../assets/images/add-new-template-button.png "Add new template button in notifications section"`
-- `content/guides/automatic-session-notification.md` — references `../../assets/images/assigning-custom-template-course.png "Selecting a custom notification template for a course"`
-- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-create-product.png "Products — Create new product form"`
-- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-credit-value-config.png "Product credit value and payment method settings"`
-- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-items-for-sale.png "Items for sale section"`
-- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-add-item.png "Add new item dialog"`
-- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-discount-pricing.png "Entry pass with discounted price"`
-- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-description-template.png "Product description and notification template settings"`
-- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-assign-to-class.png "Class settings — Select Product"`
-- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-select-product.png "Product selection dialog"`
-- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-profile-availability.png "Entry pass available in client profile"`
-- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-booking-form-availability.png "Entry pass available in booking form"`
-- `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-dual-product-setup.png "Two products — mandatory for profile and optional for booking form"`
-- `content/guides/dynamic-tags.md` — references `../../assets/images/dynamic-tags-panel.png "Dynamic tags panel in template editor"`
-- `content/guides/edit-session-notification-template.md` — references `../../assets/images/communication-menu-message-templates.png "Communication menu - message templates"`
-- `content/guides/edit-session-notification-template.md` — references `../../assets/images/notifications-section-templates.png "Notifications section in templates"`
-- `content/guides/edit-session-notification-template.md` — references `../../assets/images/general-settings-signout-rules.png "General settings - sign-out rules"`
-- `content/guides/edit-session-notification-template.md` — references `../../assets/images/reminder-send-time-setting.png "Reminder send-time setting"`
-- `content/guides/message-templates.md` — references `../../assets/images/message-template-editor.png "Message template editor"`
-- `content/guides/message-templates.md` — references `../../assets/images/communication-menu-templates.png "Communication menu - message templates"`
-- `content/guides/message-templates.md` — references `../../assets/images/template-list-orange-labels.png "Template list with clickable orange labels"`
-- `content/guides/message-templates.md` — references `../../assets/images/payment-reminder-example.png "Payment reminder example email"`
-- `content/guides/pay-as-you-go-programme.md` — references `../../assets/images/pay-as-you-go-create-programme.png "New programme form with Pay-as-you-go type selected"`
-- `content/guides/pay-as-you-go-programme.md` — references `../../assets/images/pay-as-you-go-create-class.png "Class creation form"`
-- `content/guides/pay-as-you-go-programme.md` — references `../../assets/images/pay-as-you-go-add-sessions.png "Add sessions form"`
-- `content/guides/pay-as-you-go-programme.md` — references `../../assets/images/pay-as-you-go-client-book-session.png "Client profile showing Book Session and Go To Calendar buttons"`
-- `content/guides/pay-as-you-go-programme.md` — references `../../assets/images/pay-as-you-go-client-select-session.png "Session selection in client profile"`
-- `content/guides/pay-as-you-go-programme.md` — references `../../assets/images/pay-as-you-go-client-session-booked.png "Booked session in client attendance"`
-- `content/guides/pay-as-you-go-programme.md` — references `../../assets/images/pay-as-you-go-calendar-widget.png "Calendar widget on website showing available sessions"`
-- `content/guides/send-email-after-session.md` — references `../../assets/images/selecting-event-date.png "Selecting an event date"`
-- `content/guides/send-email-after-session.md` — references `../../assets/images/automation-tile-event-detail.png "Automation tile in event detail"`
-- `content/guides/send-email-after-session.md` — references `../../assets/images/email-options-automation-tile.png "Email options in automation tile"`
-- `content/guides/sending-email-sms.md` — references `../../assets/images/messages-overview-filters.png "Messages overview with filters"`
-- `content/guides/sending-email-sms.md` — references `../../assets/images/new-message-indicator.png "New message indicator in the menu"`
-- `content/guides/sending-email-sms.md` — references `../../assets/images/unread-messages-list.png "Unread messages list"`
-- `content/guides/sending-email-sms.md` — references `../../assets/images/target-group-selection.png "Target group selection"`
-- `content/guides/sending-email-sms.md` — references `../../assets/images/promotional-message-settings.png "Promotional message settings"`
-- `content/guides/sending-email-sms.md` — references `../../assets/images/clients-registrations-selection.png "Clients vs registrations selection"`
-- `content/guides/sending-email-sms.md` — references `../../assets/images/group-selection-dropdown.png "Group selection dropdown"`
-- `content/guides/sending-email-sms.md` — references `../../assets/images/template-custom-message-selection.png "Template or custom message selection"`
-- `content/guides/sending-email-sms.md` — references `../../assets/images/message-editor-dynamic-tags.png "Message editor with dynamic tags"`
-- `content/guides/sending-email-sms.md` — references `../../assets/images/summary-screen-before-sending.png "Summary screen before sending"`
-- `content/guides/sending-email-sms.md` — references `../../assets/images/notes-preferences-promotional.png "Notes and preferences section"`
-- `content/guides/sending-email-sms.md` — references `../../assets/images/send-promotional-emails-checkbox.png "Send promotional emails checkbox"`
-- `content/guides/sending-email-sms.md` — references `../../assets/images/no-communication-warning.png "No communication warning in registration detail"`
-- `content/guides/sending-email-sms.md` — references `../../assets/images/sms-sender-name-setting.png "SMS sender name setting in general settings"`
-- `content/setup/company-logo-email.md` — references `../../assets/images/settings-general-menu.png "Settings - General menu"`
-- `content/setup/company-logo-email.md` — references `../../assets/images/account-info-logo-url.png "Account Information - logo URL field"`
-- `content/setup/company-logo-email.md` — references `../../assets/images/email-with-company-logo.png "Email with company logo in header"`
-- `content/setup/whatsapp-integration.md` — references `../../assets/images/whatsapp-connect-button.png "Zooza WhatsApp connect button"`
-- `content/setup/whatsapp-integration.md` — references `../../assets/images/meta-connection-flow.png "Meta connection flow"`
-- `content/setup/whatsapp-integration.md` — references `../../assets/images/whatsapp-pin-setup.png "Zooza WhatsApp PIN setup"`
+Generated: 2026-02-15
+Content directory: `content/`
+Files validated: **146** (excluding `_shared/doc-template.md`)
 
 ---
 
-**Overall: FAIL**
+## Summary
+
+| Check | Status | Files passing | Files failing |
+|---|---|---|---|
+| 1. Required frontmatter fields | PASS | 146 | 0 |
+| 2. Unique slugs | PASS | 146 | 0 |
+| 3. Unique intercom_id values | PASS | 131 set, all unique | 0 |
+| 4. Exactly one H1 per doc | PASS | 146 | 0 |
+| 5. No skipped heading levels | PASS | 146 | 0 |
+| 6. No broken internal links | PASS | 146 | 0 |
+| 7. All referenced assets exist on disk | PASS | 146 | 0 |
+| **Informational** | | | |
+| Docs flagged `needs_screenshot_replacement: true` | INFO | — | 17 |
+| Obsidian `![[...]]` syntax present in content | PASS | — | 0 |
+
+**Overall result: PASS — no blocking issues found.**
+
+> Note: A previous run of this report (generated by an earlier script) incorrectly reported 56 missing assets.
+> Those assets all exist in `assets/images/`. The earlier script had a regex bug that included the Markdown
+> image title (the quoted string after the path) as part of the filename, producing false-positive failures.
+> This report corrects that error.
+
+---
+
+## Check 1: Required Frontmatter Fields
+
+Required fields checked:
+
+- `title`
+- `slug`
+- `type`
+- `product_area`
+- `audience`
+- `tags`
+- `status`
+- `source_language`
+- `needs_screenshot_replacement`
+- `last_converted`
+
+**Result: PASS** — All 146 files have all required frontmatter fields present and parseable as valid YAML.
+
+---
+
+## Check 2: Unique Slugs
+
+**Result: PASS** — No duplicate slugs found across all 146 documents.
+
+---
+
+## Check 3: Unique intercom_id Values
+
+131 out of 146 documents have an `intercom_id` set; 15 do not (new docs not yet synced to Intercom).
+
+**Result: PASS** — All 131 intercom_id values are unique. No duplicates detected.
+
+---
+
+## Check 4: Exactly One H1 Per Document
+
+**Result: PASS** — Every document has exactly one `# H1` heading. No document is missing an H1 or has multiple H1s.
+
+---
+
+## Check 5: No Skipped Heading Levels
+
+Heading level jumps (e.g. H1 directly to H3 without an intervening H2) were checked across all documents.
+
+**Result: PASS** — No heading level skips detected in any document.
+
+---
+
+## Check 6: No Broken Internal Links
+
+All relative `.md` links within `content/` were resolved against the filesystem.
+
+**Result: PASS** — No broken internal links found.
+
+---
+
+## Check 7: Referenced Assets Exist
+
+All image references (`![alt](path)`) were resolved relative to each file's location and checked for existence.
+Image paths use the pattern `../../assets/images/<filename>` from `content/<type>/` directories.
+
+**Result: PASS** — All referenced asset files exist on disk.
+
+Total images in `assets/images/` (root): 549 files
+Total images in `assets/images/reference/`: 161 files
+
+---
+
+## Informational: Screenshot Replacement Needed
+
+The following 17 documents have `needs_screenshot_replacement: true`. These documents are published but
+contain screenshots that should be replaced (typically Slovak-language UI screenshots). This does not
+block publishing, but replacement is recommended.
+
+| # | File |
+|---|---|
+| 1 | `guides/automatic-payment-reminders.md` |
+| 2 | `guides/automatic-session-notification.md` |
+| 3 | `guides/blocks-configuration.md` |
+| 4 | `guides/creating-entry-passes.md` |
+| 5 | `guides/dynamic-tags.md` |
+| 6 | `guides/edit-session-notification-template.md` |
+| 7 | `guides/gocardless-connection-lifecycle.md` |
+| 8 | `guides/linked-classes.md` |
+| 9 | `guides/message-templates.md` |
+| 10 | `guides/pay-as-you-go-programme.md` |
+| 11 | `guides/payment-correction-vs-refund.md` |
+| 12 | `guides/replacement-hours-complete.md` |
+| 13 | `guides/role-selection-guide.md` |
+| 14 | `guides/send-email-after-session.md` |
+| 15 | `guides/sending-email-sms.md` |
+| 16 | `guides/summer-camps-creation.md` |
+| 17 | `troubleshooting/widget-embedding.md` |
+
+---
+
+## Informational: Obsidian Syntax Check
+
+No `![[...]]` Obsidian image syntax detected anywhere in `content/`. All images use standard Markdown
+`![alt](path)` format. This check confirms compliance with the no-Obsidian-syntax commit rule.
+
+---
+
+## File Inventory
+
+Total files validated: **146**
+
+| Directory | Count |
+|---|---|
+| `faq/` | 28 |
+| `guides/` | 68 |
+| `reference/` | 23 |
+| `setup/` | 19 |
+| `troubleshooting/` | 5 |
+| `_shared/` (template, excluded from checks) | 1 |

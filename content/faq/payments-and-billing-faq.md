@@ -99,6 +99,28 @@ This adjusted price is then split according to the active payment template (e.g.
 
 <!-- REVIEW: Confirm whether the pro-rata price is shown on the booking form or only after booking is completed. -->
 
+## Why does the payments dashboard only show 10 unpaid bookings?
+
+The **Unpaid Bookings** widget on the Payments dashboard displays only the first 10 unpaid bookings as a quick overview. It is not intended to show every outstanding balance.
+
+To see the full list of unpaid bookings:
+
+1. Go to **Bookings**.
+2. Use the status or payment filter to show only unpaid or partially paid bookings.
+3. The filtered list shows all matching bookings with full pagination.
+
+## How do I set up a Netflix-style recurring membership?
+
+For ongoing memberships where clients pay monthly and stay enrolled indefinitely (e.g., football club, dance studio, gym), use the **Membership** price type with automatic late booking approval.
+
+1. Set the programme price type to **Membership**.
+2. Under **Late bookings**, select **Automatically confirmed**.
+3. Set `Aliquot price calculation` to **Full programme price**.
+4. Uncheck `Include Initial Full Scheduled Payment` so new joiners are not charged a full instalment immediately on top of their first scheduled payment.
+5. Create a monthly payment template with `Day of the month when the payment is due` set to **0** (charges on the same day each month that the client joined).
+
+For the full step-by-step guide, see [Membership Subscription Setup](../guides/membership-subscription-setup.md).
+
 ## Why does the QR code in my payment email not work?
 
 The QR code in payment emails pulls recipient details from your **billing profile**. If the profile name does not match the bank account holder name, some banking apps will reject or fail to process the QR code when scanned.

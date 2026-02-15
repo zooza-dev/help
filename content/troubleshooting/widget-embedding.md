@@ -77,6 +77,22 @@ For initial setup instructions, see [Deploying Zooza on your website](../setup/d
 4. Click **Copy** and replace the old code on your website with the newly generated code.
 5. Do not manually edit filter parameters in the embed code. Always regenerate the code using the Zooza configurator to avoid syntax errors.
 
+### Programme not appearing due to booking/catalogue settings
+
+**Problem:** A programme does not appear on the booking page or in the widget, even though it has active classes with available capacity.
+
+**Cause:** The programme has either `Allow online booking` or `Display in catalogue` disabled (or both). Both settings must be enabled for the programme to appear on your public booking page and widgets.
+
+**Solution:**
+
+1. Go to **Programmes** → select the programme → **Edit Settings**.
+2. Open the **Online Booking** tile.
+3. Verify that `Allow online booking` is toggled **on**.
+4. Verify that `Display in catalogue` is checked.
+5. Save and refresh your website.
+
+> **Tip:** `Allow online booking` controls whether the programme accepts online registrations. `Display in catalogue` controls whether it appears in the booking form list and website menu. Both must be on.
+
 ### Embed code parameter errors
 
 **Problem:** Manually edited embed code does not filter correctly, or the widget shows unexpected results.

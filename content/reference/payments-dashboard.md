@@ -73,6 +73,8 @@ Lists all bookings with outstanding balances, showing:
 
 Filter buttons: **Unpaid** and **Partially paid**.
 
+> **Note:** The dashboard displays only the first 10 unpaid bookings. To see the complete list of all unpaid bookings, go to **Bookings** and filter by payment status.
+
 ### Unpaired Payments
 
 Shows payment pairing statistics:

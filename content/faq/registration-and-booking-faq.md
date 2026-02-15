@@ -108,3 +108,17 @@ Yes. You can add an additional email address on any booking so that a second per
 4. Enter the second email address in the appropriate field and save.
 
 This is useful when divorced or separated parents both need visibility into the child's schedule, or when a different family member handles day-to-day logistics.
+
+> **Warning:** If you collect a secondary email address via an **extra field** on the booking form (e.g., Additional field 1), that value is **not** automatically transferred to the system's secondary email field. Extra fields are text-only data collection and are not linked to system notification fields. You must manually copy the email from the extra field into the booking's **Additional settings** → secondary email field for the second parent to actually receive notifications.
+
+## Why is my programme not showing on the booking page?
+
+Both `Allow online booking` and `Display in catalogue` must be enabled for a programme to appear on your public booking page.
+
+1. Go to **Programmes** → select the programme → **Edit Settings**.
+2. Open the **Online Booking** tile.
+3. Verify that `Allow online booking` is toggled **on**.
+4. Verify that `Display in catalogue` is checked.
+5. Save the settings.
+
+If only one of these is enabled, the programme will not be visible to clients. `Allow online booking` controls whether the programme accepts registrations, while `Display in catalogue` controls whether it appears in the website menu and booking form list.

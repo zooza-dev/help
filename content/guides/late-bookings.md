@@ -241,6 +241,21 @@ If you want all clients to pay the same amount regardless of when they join, use
 
 With this setting, every late booking is charged the full programme or class price. No automatic reduction is applied.
 
+### Include Initial Full Scheduled Payment
+
+When using **Membership** pricing with scheduled payments, the `Include Initial Full Scheduled Payment` checkbox controls whether the system generates an immediate full instalment at the time of booking, in addition to the regular payment schedule.
+
+- **Checked (default):** The client is charged a full scheduled payment immediately upon booking, plus their regular recurring payments going forward. Use this when you want to collect the first period upfront.
+- **Unchecked:** The client's first payment follows the normal payment template schedule. No additional upfront charge is generated. Use this for Netflix-style memberships where clients simply start paying on the next billing cycle.
+
+To configure:
+
+1. Go to **Programmes** → select the programme → **Edit Settings**.
+2. Open the **Price and Payment** tile.
+3. Expand **Advanced settings**.
+4. Check or uncheck `Include Initial Full Scheduled Payment`.
+5. Save the settings.
+
 ### When to use fixed price vs. pro-rata
 
 | Scenario | Recommended setting |

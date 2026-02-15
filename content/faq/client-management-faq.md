@@ -84,6 +84,8 @@ Yes. You can add an additional email address that receives session reminders for
 
 This additional email receives session reminder notifications only. It does not receive payment reminders or other booking-level communications. The second email can also be added by the client themselves through their Client Profile.
 
+> **Warning:** If you collect a secondary email address via an **extra field** on the booking form (e.g., Additional field 1), that value is **not** automatically transferred to the system's secondary email field. Extra fields are text-only data collection and are not linked to system notification fields. You must manually copy the email from the extra field into the booking's **Additional settings** → secondary email field for the second parent to actually receive notifications.
+
 ## How do I give a divorced parent separate access to the same child?
 
 Zooza supports this through a combination of guest access and additional notification emails:
