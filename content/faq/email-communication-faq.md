@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-12"
+last_converted: "2026-02-13"
 intercom_id: 13728490
 intercom_sync: false
 ---
@@ -62,3 +62,31 @@ Class reminders are part of the automated email flow. They are configured per pr
 ## Can I get an email notification when a new booking or trial comes in?
 
 Yes. Admin notifications are configured in the system settings. You receive an email whenever a new booking (including trials) is created.
+
+## Why do dynamic tags show wrong data for replacement or block-based lessons?
+
+Tags like `COURSE_TIME` and `COURSE_DATE_DAY` pull their values from the primary group's first session, not from the replacement session or the specific block the client registered for. This is a known limitation. For block-based courses, use the `ORDER_SUMMARY` tag instead, which includes the correct session details for the client's specific block.
+
+<!-- REVIEW: A dedicated dynamic tag for block-specific dates has been requested but is not yet available. Monitor for product updates. -->
+
+## Why did my client not receive the confirmation email for a manual or copied registration?
+
+Copied and manually created registrations do **not** trigger automatic confirmation emails. This is by design. To send a confirmation, go to the registration's **Communication** tab and send the confirmation email manually.
+
+## What is the difference between system templates and user templates?
+
+- **System templates** (e.g., payment confirmation, login code) are built into Zooza and cannot be edited. They appear under the "System communications" section in the template selector.
+- **User templates** are custom templates you create. They appear under the "User templates" section in the template selector.
+
+These are listed in separate dropdown sections. If you cannot find your custom template, make sure you are looking under **User templates**, not under system or saved communication templates.
+
+## How do I troubleshoot emails not arriving for a specific client?
+
+1. Go to the registration's **Communication** tab and check the sent email logs to confirm whether the email was sent by Zooza.
+2. Common causes for non-delivery:
+   - The client's mailbox is full (e.g., "inbox out of storage space" bounce).
+   - The client's email provider is filtering Zooza emails as spam.
+   - The client previously marked a Zooza email as unwanted.
+3. Ask the client to whitelist your sending address and check their spam/junk folder.
+
+Zooza cannot override recipient-side filtering. If the logs confirm the email was sent, the issue is on the recipient's side.

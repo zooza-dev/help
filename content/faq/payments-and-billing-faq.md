@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-12"
+last_converted: "2026-02-13"
 intercom_id: 13728495
 intercom_sync: false
 ---
@@ -72,3 +72,40 @@ Instead of refunding, the easiest approach is to reduce the next instalment by t
 ## How do I mark a booking as paid when payment was received outside the system?
 
 If a client paid by direct bank transfer or you credited them manually, you can adjust the payment status in their booking detail. Go to **Bookings → Detail → Payments** and record the manual payment to clear the outstanding balance.
+
+## When should I use "Edit payment" vs "Refund"?
+
+Use **Edit payment** for corrections — for example, when the amount is wrong or a payment was assigned to the wrong registration. Use **Refund** only when you are actually returning money to the client.
+
+Using **Refund** incorrectly (e.g., to zero out a manual entry) creates phantom transactions that appear in your financial reports and distort totals. If you need to correct or move a payment between registrations, a debt correction is the preferred approach.
+
+<!-- REVIEW: Support tickets confirm "Edit payment" is accessed via the transaction list → More → Edit payment. Verify current UI label matches. -->
+
+## What happens to payment schedules when I copy registrations to a new term?
+
+Payment schedules are **not** automatically carried over when you copy registrations to a new term. Because the client did not go through the registration form and select a payment template, the system does not assign one.
+
+After copying registrations, you must manually apply the correct payment template to each registration. Without this step, the system calculates the price as the base rate multiplied by the number of sessions, which may differ from the expected instalment amount.
+
+<!-- REVIEW: Bulk activation of payment templates after copy is requested frequently — check if a bulk-apply feature has been added. -->
+
+## How does pro-rata (aliquot) pricing work for late registrations?
+
+When a client registers after the term has started and aliquot pricing is enabled, the system calculates the price as:
+
+**remaining sessions ÷ total sessions × full price**
+
+This adjusted price is then split according to the active payment template (e.g., monthly instalments). The calculated pro-rata price may not always be visible to the client during registration, depending on your programme settings.
+
+<!-- REVIEW: Confirm whether the pro-rata price is shown on the registration form or only after registration is completed. -->
+
+## Why does the QR code in my payment email not work?
+
+The QR code in payment emails pulls recipient details from your **billing profile**. If the profile name does not match the bank account holder name, some banking apps will reject or fail to process the QR code when scanned.
+
+To fix this:
+
+1. Go to **Settings → Billing Profiles**.
+2. Open the relevant billing profile.
+3. Verify that the **account holder name** and **IBAN** match your actual bank account details exactly.
+4. Save and resend the payment notification to the client.
