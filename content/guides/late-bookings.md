@@ -186,6 +186,18 @@ Once you click on a booking, change the status to Cancelled Booking (during the 
 
  You send cancellation information individually via send email/SMS to booking |
 
+## Payment schedule for late registrations
+
+When a client registers after the programme has started and manual approval is enabled, the payment schedule (instalment plan) is **not** applied automatically — even if the client selected one during registration.
+
+To apply a payment schedule to a late registration:
+
+1. Open the booking detail and go to the **Payments** section.
+2. In the **Instalment Plan** area (top-right), click **Create** and follow the wizard to select a payment template.
+3. Change the booking status to **Registered** on the same day.
+
+> **Important:** At midnight, the system runs an automatic validation of payment schedules. Only schedules linked to bookings with **Registered** status are confirmed. If the booking remains in **Late registration** status, any manually applied payment schedule is automatically removed. Always approve the booking and change its status to **Registered** before the end of the day.
+
 ## Understanding pro-rata (aliquot) pricing
 
 When a client registers after a programme has already started, Zooza can automatically calculate a reduced price based on how many sessions remain. This is called **aliquot** (pro-rata) pricing.

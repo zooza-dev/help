@@ -69,3 +69,11 @@ No. Each team member should have their own account with an individual email addr
 3. Assign the appropriate role (owner, admin, instructor, etc.).
 
 Each team member then logs in with their own email using the same passwordless login link process.
+
+## How do I change the app language for admins or instructors?
+
+On the Zooza app dashboard, click the **Zooza logo** (top-left). At the bottom of the menu, a language switcher is displayed. Click the language you want to use.
+
+Available languages: Slovensky, English, Česky, Deutsch, Romanian.
+
+The language change takes effect immediately and applies to the current user's session. Each admin or instructor can set their own preferred language independently.

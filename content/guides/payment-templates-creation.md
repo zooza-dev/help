@@ -201,10 +201,12 @@ is affected by this choice (if a discount has been set in the template).
 
 Note: If a client registers for a programme that has already started and you have set up manual approval for late bookings in the programme settings, the payment type will not appear on their
 booking. Such bookings are marked as late by the application
-and require manual editing. 
+and require manual editing.
 
-1. Adjust the amount owed as needed or add a compliant payment template to your booking
-2. Manually change the booking status to Registered
+1. Adjust the amount owed as needed or add a compliant payment template to your booking.
+2. Manually change the booking status to **Registered** on the same day.
+
+> **Important:** At midnight, the system runs an automatic check on payment schedules. Only payment schedules linked to bookings with **Registered** status are confirmed. If the booking remains in **Late registration** status, any manually applied payment schedule is automatically removed. Always change the status to **Registered** before the end of the day.
 
 ## Payment templates on booking
 
