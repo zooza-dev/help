@@ -24,7 +24,10 @@
       "Bash(git -C /Users/michaldodok/help restore:*)",
       "Bash(/Users/michaldodok/help/scripts/update_intercom_ids.py:*)",
       "Bash(xargs:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(git checkout:*)",
+      "Bash(git merge:*)",
+      "Bash(git stash:*)"
     ]
   }
 }
