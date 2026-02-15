@@ -1,6 +1,6 @@
 ---
-title: 2 lecturers per group
-slug: two-lecturers-per-group
+title: 2 instructors per class
+slug: two-instructors-per-class
 type: guides
 product_area: Programmes
 sub_area: ""
@@ -13,7 +13,7 @@ source_language: en
 needs_screenshot_replacement: false
 last_converted: 2026-02-11
 intercom_id: 13728627
-intercom_sync: false
+intercom_sync: true
 ---
 
 # 2 instructors per class

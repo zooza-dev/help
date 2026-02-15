@@ -1,6 +1,6 @@
 ---
-title: "Payment tile on registration"
-slug: "payment-tile-on-registration"
+title: "Payment tile on booking"
+slug: "payment-tile-on-booking"
 type: "guides"
 product_area: "Payments"
 sub_area: ""
@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728604
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Payment tile on booking

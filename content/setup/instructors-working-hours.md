@@ -1,6 +1,6 @@
 ---
-title: "Lecturers working hours"
-slug: "lecturers-working-hours"
+title: "Instructors working hours"
+slug: "instructors-working-hours"
 type: "setup"
 product_area: "Settings"
 sub_area: ""
@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728824
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Instructors working hours

@@ -1,5 +1,5 @@
 ---
-title: "Individual Sessions: How to Sell, Plan, and Manage 1:1 Lessons in Zooza"
+title: "Individual Sessions: How to Sell, Plan, and Manage 1:1 Sessions in Zooza"
 slug: "individual-sessions"
 type: "guides"
 product_area: "Programmes"
@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728571
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Individual Sessions: How to Sell, Plan, and Manage 1:1 Sessions in Zooza

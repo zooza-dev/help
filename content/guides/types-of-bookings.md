@@ -1,6 +1,6 @@
 ---
-title: Types of registrations
-slug: types-of-registrations
+title: Types of bookings
+slug: types-of-bookings
 type: guides
 product_area: Bookings
 sub_area: ""
@@ -45,7 +45,7 @@ or other suitable solution.
 
 ## Trial
 
-The Trial Session status is visible on the booking only during the period when the client is logged in for a trial session. Detailed information on setting up trial sessions at the programme level can be found [here](../setup/trial-lessons.md).
+The Trial Session status is visible on the booking only during the period when the client is logged in for a trial session. Detailed information on setting up trial sessions at the programme level can be found [here](../setup/trial-sessions.md).
 
 ## Booking status
 

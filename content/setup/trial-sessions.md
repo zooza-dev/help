@@ -1,6 +1,6 @@
 ---
-title: "Trial lessons"
-slug: "trial-lessons"
+title: "Trial sessions"
+slug: "trial-sessions"
 type: "setup"
 product_area: "Programmes"
 sub_area: ""

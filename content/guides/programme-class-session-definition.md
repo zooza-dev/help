@@ -1,6 +1,6 @@
 ---
-title: "Course, group, lesson definition"
-slug: "course-group-lesson-definition"
+title: "Programme, class, session definition"
+slug: "programme-class-session-definition"
 type: "guides"
 product_area: "Programmes"
 sub_area: ""
@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728521
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Programme, class, session definition

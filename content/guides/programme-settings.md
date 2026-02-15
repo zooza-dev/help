@@ -1,6 +1,6 @@
 ---
-title: "Course settings"
-slug: "course-settings"
+title: "Programme settings"
+slug: "programme-settings"
 type: "guides"
 product_area: "Programmes"
 sub_area: ""
@@ -97,7 +97,7 @@ Note: This function is available for* full duration programmes* only.
 ## Programme settings
 
 
-This setting is set when creating the programme, but you can change it anytime and add more information about the programme. All information is available [here](course-settings-tile.md).
+This setting is set when creating the programme, but you can change it anytime and add more information about the programme. All information is available [here](programme-settings-tile.md).
 
 ![Screenshot](../../assets/images/course-settings-08.png)
 
@@ -113,7 +113,7 @@ At the programme level, you can add *Additional Fields* to the booking form to c
 
 In the *Trial *tile,
  you can set up a menu of trial sessions that clients without a long-term
- commitment can sign up for. You can read how to set up trial sessions [here](../setup/trial-lessons.md).
+ commitment can sign up for. You can read how to set up trial sessions [here](../setup/trial-sessions.md).
 
 ![Screenshot](../../assets/images/course-settings-10.png)
 

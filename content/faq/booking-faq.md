@@ -1,6 +1,6 @@
 ---
-title: "Registration and Booking FAQ"
-slug: "registration-and-booking-faq"
+title: "Booking FAQ"
+slug: "booking-faq"
 type: "faq"
 product_area: "Bookings"
 sub_area: ""

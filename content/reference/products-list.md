@@ -180,5 +180,5 @@ Review and confirm the product item addition.
 
 - [Services Reference](services-list.md) — manage service add-ons.
 - [Documents Reference](documents-list.md) — manage documents and videos.
-- [Selling Products During Booking](../guides/selling-products-during-registration.md) — how to offer products at booking time.
+- [Selling Products During Booking](../guides/selling-products-during-booking.md) — how to offer products at booking time.
 - [Orders Reference](orders-list.md) — track product orders.

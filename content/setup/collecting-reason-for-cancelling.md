@@ -1,5 +1,5 @@
 ---
-title: "Collecting the reason for cancelling the lesson"
+title: "Collecting the reason for cancelling the session"
 slug: "collecting-reason-for-cancelling"
 type: "setup"
 product_area: "Classes"

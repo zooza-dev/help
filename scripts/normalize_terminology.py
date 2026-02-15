@@ -50,6 +50,34 @@ def split_document(text):
     return "", text
 
 
+def normalize_frontmatter_title(frontmatter, terms):
+    """Apply terminology rules to the title field in frontmatter."""
+    m = re.search(r'^(title:\s*["\']?)(.+?)(["\']?\s*)$', frontmatter, re.MULTILINE)
+    if not m:
+        return frontmatter, 0
+    original_title = m.group(2)
+    title = original_title
+    count = 0
+    for term_key, term_data in terms.items():
+        for rule in term_data.get("replace_rules", []):
+            pattern = rule["from"]
+            replacement = rule["to"]
+            new_title, n = re.subn(pattern, replacement, title)
+            if n > 0:
+                # Check global preserves
+                skip = False
+                for gp in GLOBAL_PRESERVE:
+                    if gp in title:
+                        skip = True
+                        break
+                if not skip:
+                    title = new_title
+                    count += n
+    if title != original_title:
+        frontmatter = frontmatter[:m.start(2)] + title + frontmatter[m.end(2):]
+    return frontmatter, count
+
+
 def protect_zones(body):
     """Find code blocks and inline code, return list of (start, end) ranges to skip."""
     zones = []
@@ -198,6 +226,12 @@ def main():
 
         file_replacements = []
         file_total = 0
+
+        # Normalize title in frontmatter
+        frontmatter, title_count = normalize_frontmatter_title(frontmatter, terms)
+        if title_count > 0:
+            file_total += title_count
+            file_replacements.append(("title (frontmatter)", "normalized", title_count))
 
         for term_key, term_data in terms.items():
             rules = term_data.get("replace_rules", [])

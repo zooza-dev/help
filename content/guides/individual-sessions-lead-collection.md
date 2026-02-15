@@ -1,6 +1,6 @@
 ---
-title: "Individual lessons via group Interested"
-slug: "individual-lessons-group-interested"
+title: "Individual sessions via lead collection class"
+slug: "individual-sessions-lead-collection"
 type: "guides"
 product_area: "Programmes"
 sub_area: ""

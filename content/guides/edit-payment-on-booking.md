@@ -1,6 +1,6 @@
 ---
-title: "Edit payment on registration"
-slug: "edit-payment-on-registration"
+title: "Edit payment on booking"
+slug: "edit-payment-on-booking"
 type: "guides"
 product_area: "Payments"
 sub_area: ""
@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728557
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Edit payment on booking

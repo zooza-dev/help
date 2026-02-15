@@ -670,6 +670,6 @@ Click **Send** to send the message.
 ## Related
 
 - [Common Booking Scenarios](../faq/common-booking-scenarios.md) — FAQ for booking-related tasks.
-- [Booking and Booking FAQ](../faq/registration-and-booking-faq.md) — common booking questions.
+- [Booking and Booking FAQ](../faq/booking-faq.md) — common booking questions.
 - [Payment Pairing Guide](../guides/payment-pairing.md) — how to match payments to bookings.
 - [Attendance and Catch-ups FAQ](../faq/attendance-and-catchups-faq.md) — make-up session questions.

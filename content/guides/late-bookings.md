@@ -1,6 +1,6 @@
 ---
-title: "Late registrations"
-slug: "late-registrations"
+title: "Late bookings"
+slug: "late-bookings"
 type: "guides"
 product_area: "Bookings"
 sub_area: ""
@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728572
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Late bookings

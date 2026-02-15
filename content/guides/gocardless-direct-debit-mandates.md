@@ -1,5 +1,5 @@
 ---
-title: "How to assign Direct Debit mandates to registrations (GoCardless)"
+title: "How to assign Direct Debit mandates to bookings (GoCardless)"
 slug: "gocardless-direct-debit-mandates"
 type: "guides"
 product_area: "Payments"
@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728559
-intercom_sync: false
+intercom_sync: true
 ---
 
 # How to assign Direct Debit mandates to bookings (GoCardless)

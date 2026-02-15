@@ -1,5 +1,5 @@
 ---
-title: "Online registration"
+title: "Online booking"
 slug: "online-registration"
 type: "setup"
 product_area: "Programmes"

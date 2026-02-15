@@ -1,6 +1,6 @@
 ---
-title: "New course with existing clients"
-slug: "new-course-existing-clients"
+title: "New programme with existing clients"
+slug: "new-programme-existing-clients"
 type: "guides"
 product_area: "Programmes"
 sub_area: ""
@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728579
-intercom_sync: false
+intercom_sync: true
 ---
 
 # New programme with existing clients

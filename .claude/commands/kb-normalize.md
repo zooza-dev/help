@@ -28,13 +28,20 @@ kb:normalize     →  applies fixes to content/*.md
 ### What to replace
 Only replace terms that belong to a **synonym cluster** (have `variants_found` with more than one entry). Replace non-canonical variants with the canonical term.
 
-### Frontmatter updates
-When a canonical term replacement affects a document's identity:
-- Update `title:` in frontmatter to use the canonical term
-- Update `slug:` in frontmatter to match (kebab-case)
-- Rename the `.md` file to match the new slug
-- Add an entry in `content/_redirects.yml` mapping the old slug/path to the new one
-- Update any internal links in other content files that pointed to the old filename
+### Frontmatter title updates
+- **Always** normalize the `title:` field in frontmatter using the same replacement rules as the body text.
+- The `normalize_frontmatter_title()` function in `scripts/normalize_terminology.py` handles this automatically.
+- Do **NOT** change `source_legacy_path:` or other path-related frontmatter fields.
+
+### Slug and filename renames
+After body+title normalization, run `scripts/rename_slugs.py` to:
+- Apply terminology rules to `slug:` in frontmatter
+- Rename `.md` files to match the new slug
+- Update all internal Markdown links across `content/`
+- Append 301 redirects to `content/_redirects.yml` (old slug → new slug)
+- Supports `--dry-run` flag to preview changes
+- Preserves compound slugs like `online-registration`, `paid-events`, `multi-day-event` per dictionary preserve rules
+- Has a `SLUG_OVERRIDES` dict for special cases (e.g. `registration-and-booking-faq` → `booking-faq`)
 
 ### What NOT to replace
 - Text inside code blocks (``` fences) or inline `code`
@@ -134,8 +141,7 @@ Some replacements are risky. Instead of auto-replacing, add a comment in `normal
 ```
 
 ## Safety
-- **Update frontmatter title/slug when a term rename affects the document's identity** (e.g. "Group Interested" → "Lead Collection")
-- **Rename files to match new slugs** and add redirects for old paths
+- **Normalize titles, slugs, and filenames** — rename files via `scripts/rename_slugs.py` and add redirects
 - **Create a git-friendly diff** — make minimal changes, don't rewrite entire files
 - **Dry-run first**: Before writing changes, print summary and ask for confirmation unless user passed `--apply` or explicitly asked to apply
 

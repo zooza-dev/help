@@ -53,7 +53,7 @@ There is also automatic communication with default text that cannot be edited. F
 
 ### Reminder about an upcoming appointment
 
-If you want clients to receive an automatic message about an upcoming session, you can set this up in **Programmes --> Online Registration**. See the [automatic session notification manual](automatic-event-notification.md) for how this works, and the [editing manual](edit-event-notification-template.md) for how to customise the template.
+If you want clients to receive an automatic message about an upcoming session, you can set this up in **Programmes --> Online Registration**. See the [automatic session notification manual](automatic-session-notification.md) for how this works, and the [editing manual](edit-session-notification-template.md) for how to customise the template.
 
 ### Reminders for outstanding payments
 

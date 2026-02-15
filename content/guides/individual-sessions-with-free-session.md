@@ -1,6 +1,6 @@
 ---
-title: "Individual lessons with 1st free lesson"
-slug: "individual-lessons-with-free-lesson"
+title: "Individual sessions with 1st free session"
+slug: "individual-sessions-with-free-session"
 type: "guides"
 product_area: "Programmes"
 sub_area: ""
@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728570
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Individual sessions with 1st free session

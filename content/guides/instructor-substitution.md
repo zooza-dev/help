@@ -1,6 +1,6 @@
 ---
-title: "Lecturer substitution"
-slug: "lecturer-substitution"
+title: "Instructor substitution"
+slug: "instructor-substitution"
 type: "guides"
 product_area: "Settings"
 sub_area: ""
@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728574
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Instructor substitution

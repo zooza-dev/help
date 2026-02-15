@@ -1,5 +1,5 @@
 ---
-title: "How to create paid events?"
+title: "How to create paid sessions?"
 slug: "how-to-create-paid-events"
 type: "guides"
 product_area: "Classes"
@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728565
-intercom_sync: false
+intercom_sync: true
 ---
 
 # How to create paid events?
@@ -100,4 +100,4 @@ When a class has set up billable sessions, the unit price for the class
 in the class. This only applies to continuous programmes. One-off and Open
 programmes are already predefined by the unit price.
 
-How to view and work with billable sessions read manual called [Viewing/Tracking billable sessions](viewing-billable-events.md)
+How to view and work with billable sessions read manual called [Viewing/Tracking billable sessions](viewing-billable-sessions.md)

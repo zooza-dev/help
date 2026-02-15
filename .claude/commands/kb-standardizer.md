@@ -50,11 +50,12 @@ Scan all Markdown files in `content/` and extract a canonical dictionary of Zooz
 
 ### Step 1 — Scan content
 For each `.md` file in `content/`:
-1. Strip frontmatter and image references.
-2. Extract all **bold** terms (likely UI labels / buttons).
-3. Extract all `code` terms (likely field names / settings).
-4. Extract nouns and noun phrases that appear 3+ times across the corpus.
-5. Extract terms from H1/H2/H3 headings.
+1. Parse frontmatter — extract `title:` value as a scannable field (it may contain non-canonical terms).
+2. Strip image references from body.
+3. Extract all **bold** terms (likely UI labels / buttons).
+4. Extract all `code` terms (likely field names / settings).
+5. Extract nouns and noun phrases that appear 3+ times across the corpus.
+6. Extract terms from the `title:` frontmatter field and H1/H2/H3 headings.
 
 ### Step 2 — Cluster synonyms
 Group terms that refer to the same concept. Known synonym clusters to seed:

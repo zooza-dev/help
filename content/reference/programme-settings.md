@@ -285,5 +285,5 @@ Controls attendance tracking and session rescheduling.
 - [Programmes List](programmes-list.md) — the main programmes view.
 - [Programme Automations](programme-automations.md) — booking, payment, and enrolment automations.
 - [Payment Options Guide](../guides/payment-options.md) — how to configure payment methods.
-- [Trial Sessions Setup](../setup/trial-lessons.md) — step-by-step trial configuration.
+- [Trial Sessions Setup](../setup/trial-sessions.md) — step-by-step trial configuration.
 - [Online Registration Setup](../setup/online-registration.md) — publishing your booking forms.

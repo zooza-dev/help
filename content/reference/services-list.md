@@ -97,4 +97,4 @@ The **Add** button at the bottom creates a new service item variant.
 
 - [Products Reference](products-list.md) — manage sellable products.
 - [Documents Reference](documents-list.md) — manage documents and videos.
-- [Selling Products During Booking](../guides/selling-products-during-registration.md) — how to offer products and services at booking time.
+- [Selling Products During Booking](../guides/selling-products-during-booking.md) — how to offer products and services at booking time.

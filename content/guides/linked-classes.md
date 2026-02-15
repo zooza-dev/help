@@ -76,5 +76,5 @@ For details on creating entry passes, see [Creating entry passes](creating-entry
 
 - [Pay-as-you-go programme](pay-as-you-go-programme.md) — The programme type that supports linked classes.
 - [Creating entry passes](creating-entry-passes.md) — Set up passes that work across linked classes.
-- [Programme settings](course-settings.md) — The Class linking tile in programme settings.
+- [Programme settings](programme-settings.md) — The Class linking tile in programme settings.
 - [Pay-as-you-go FAQ](../faq/pay-as-you-go-faq.md) — Common questions about linked classes.

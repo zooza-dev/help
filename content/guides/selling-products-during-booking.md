@@ -1,6 +1,6 @@
 ---
-title: "How to sell products during registration / booking (T-shirt example)"
-slug: "selling-products-during-registration"
+title: "How to sell products during booking (T-shirt example)"
+slug: "selling-products-during-booking"
 type: "guides"
 product_area: "Orders"
 sub_area: ""
@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728616
-intercom_sync: false
+intercom_sync: true
 ---
 
 # How to sell products during booking / booking (T-shirt example)

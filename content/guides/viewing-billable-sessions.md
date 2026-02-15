@@ -1,6 +1,6 @@
 ---
-title: Viewing/tracking billable events
-slug: viewing-billable-events
+title: Viewing/tracking billable sessions
+slug: viewing-billable-sessions
 type: guides
 product_area: Classes
 sub_area: ""
@@ -14,7 +14,7 @@ needs_screenshot_replacement: false
 last_converted: 2026-02-11
 cssclasses:
 intercom_id: 13728635
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Viewing/tracking billable sessions

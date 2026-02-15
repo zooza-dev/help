@@ -94,5 +94,5 @@ Clients can view their pass status, remaining balance, and usage history in thei
 
 - [Pay-as-you-go programme](pay-as-you-go-programme.md) — How to set up the programme type that uses entry passes.
 - [Linked classes](linked-classes.md) — Use one entry pass across multiple linked classes.
-- [Selling products during booking](selling-products-during-registration.md) — How to offer products in the booking flow.
+- [Selling products during booking](selling-products-during-booking.md) — How to offer products in the booking flow.
 - [Pay-as-you-go FAQ](../faq/pay-as-you-go-faq.md) — Common questions about entry passes and Pay-as-you-go.

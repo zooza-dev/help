@@ -1,6 +1,6 @@
 ---
-title: "Business registration"
-slug: "business-registration"
+title: "Business booking"
+slug: "business-booking"
 type: "guides"
 product_area: "Bookings"
 sub_area: ""

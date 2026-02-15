@@ -1,6 +1,6 @@
 ---
-title: "Course settings tile"
-slug: "course-settings-tile"
+title: "Programme settings tile"
+slug: "programme-settings-tile"
 type: "guides"
 product_area: "Programmes"
 sub_area: ""

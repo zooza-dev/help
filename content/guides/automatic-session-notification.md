@@ -1,6 +1,6 @@
 ---
-title: "Automatic notification of an upcoming event"
-slug: "automatic-event-notification"
+title: "Automatic notification of an upcoming session"
+slug: "automatic-session-notification"
 type: "guides"
 product_area: "Communication"
 sub_area: "Email"
@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-02-11"
 intercom_id: 13728507
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Automatic notification of an upcoming session
@@ -31,7 +31,7 @@ A sample reminder email:
 
 ![Sample event reminder email](../../assets/images/sample-event-reminder-email.png "Sample event reminder email")
 
-You can easily edit the text in the administration. [How to do it](edit-event-notification-template.md).
+You can easily edit the text in the administration. [How to do it](edit-session-notification-template.md).
 
 ## Turning off email notifications about an upcoming session
 

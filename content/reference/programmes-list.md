@@ -175,5 +175,5 @@ Click **Create** to generate the class with all sessions, or **Cancel** to disca
 
 - [Programme Settings](programme-settings.md) — all settings tiles for a programme.
 - [Programme Automations](programme-automations.md) — booking, payment, trial, and enrolment automations.
-- [Programme Settings Guide](../guides/course-settings.md) — step-by-step guide to configuring programmes.
+- [Programme Settings Guide](../guides/programme-settings.md) — step-by-step guide to configuring programmes.
 - [Programmes, Timetables, and Sessions FAQ](../faq/programmes-timetables-sessions-faq.md) — common questions about the hierarchy.

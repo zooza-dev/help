@@ -134,5 +134,5 @@ These settings are optional. Without entry passes, clients simply pay per sessio
 
 - [Creating entry passes](creating-entry-passes.md) — Set up prepaid visit passes or credit for sessions.
 - [Linked classes](linked-classes.md) — Let clients pick sessions across multiple classes.
-- [Programme settings](course-settings.md) — Configure all programme-level settings.
+- [Programme settings](programme-settings.md) — Configure all programme-level settings.
 - [Pay-as-you-go FAQ](../faq/pay-as-you-go-faq.md) — Common questions about this programme type.

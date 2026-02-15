@@ -1,6 +1,6 @@
 ---
-title: "Send an email after lesson/event"
-slug: "send-email-after-event"
+title: "Send an email after session"
+slug: "send-email-after-session"
 type: "guides"
 product_area: "Communication"
 sub_area: "Email"
@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-02-11"
 intercom_id: 13728617
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Send an email after session/session

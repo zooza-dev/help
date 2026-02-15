@@ -199,5 +199,5 @@ Sessions can be sorted by date (ascending/descending).
 - [Classes List](classes-list.md) — the cross-programme classes view.
 - [Sessions List](sessions-list.md) — global sessions view.
 - [Change Instructor Guide](../guides/change-instructor.md) — how to reassign instructors.
-- [Edit Sessions in Programmes Guide](../guides/edit-events-in-courses.md) — modifying sessions.
+- [Edit Sessions in Programmes Guide](../guides/edit-sessions-in-programmes.md) — modifying sessions.
 - [Attendance and Catch-ups FAQ](../faq/attendance-and-catchups-faq.md) — marking attendance, catch-up flow.

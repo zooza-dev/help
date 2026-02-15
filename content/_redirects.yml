@@ -11,7 +11,7 @@ redirects:
     status: 301
 
   - from: "/portal/en/kb/articles/edit-automatic-notification-upcoming-event"
-    to: "/help/communication/edit-event-notification-template"
+    to: "/help/communication/edit-session-notification-template"
     status: 301
 
   - from: "/portal/en/kb/articles/dynamic-tags"
@@ -19,7 +19,7 @@ redirects:
     status: 301
 
   - from: "/portal/en/kb/articles/automatic-notification-of-an-upcoming-event"
-    to: "/help/communication/automatic-event-notification"
+    to: "/help/communication/automatic-session-notification"
     status: 301
 
   - from: "/portal/en/kb/articles/automatic-communication-to-clients-message-templates"
@@ -27,7 +27,7 @@ redirects:
     status: 301
 
   - from: "/portal/en/kb/articles/send-email-after-lesson-event"
-    to: "/help/communication/send-email-after-event"
+    to: "/help/communication/send-email-after-session"
     status: 301
 
   - from: "/portal/en/kb/articles/company-logo-in-email-communication"
@@ -42,8 +42,8 @@ redirects:
     to: "/help/bookings/common-booking-scenarios"
     status: 301
 
-  - from: "/portal/en/kb/articles/allowing-multiple-registration-for-a-course"
-    to: "/help/bookings/allowing-multiple-registration"
+  - from: "/portal/en/kb/articles/allowing-multiple-booking-for-a-course"
+    to: "/help/bookings/allowing-multiple-booking"
     status: 301
 
   - from: "/portal/en/kb/articles/automatic-payment-reminders"
@@ -55,7 +55,7 @@ redirects:
     status: 301
 
   - from: "/portal/en/kb/articles/business-regist"
-    to: "/help/bookings/business-registration"
+    to: "/help/bookings/business-booking"
     status: 301
 
   - from: "/portal/en/kb/articles/how-to-change-an-instructor-in-a-class-or-session"
@@ -67,15 +67,15 @@ redirects:
     status: 301
 
   - from: "/portal/en/kb/articles/course-group-lesson"
-    to: "/help/programmes/course-group-lesson-definition"
+    to: "/help/programmes/programme-class-session-definition"
     status: 301
 
-  - from: "/portal/en/kb/articles/course-settings-tile"
-    to: "/help/programmes/course-settings-tile"
+  - from: "/portal/en/kb/articles/programme-settings-tile"
+    to: "/help/programmes/programme-settings-tile"
     status: 301
 
-  - from: "/portal/en/kb/articles/course-settings"
-    to: "/help/programmes/course-settings"
+  - from: "/portal/en/kb/articles/programme-settings"
+    to: "/help/programmes/programme-settings"
     status: 301
 
   - from: "/portal/en/kb/articles/customize-widgets"
@@ -98,12 +98,12 @@ redirects:
     to: "/help/settings/documents"
     status: 301
 
-  - from: "/portal/en/kb/articles/edit-events-in-courses"
-    to: "/help/classes/edit-events-in-courses"
+  - from: "/portal/en/kb/articles/edit-sessions-in-programmes"
+    to: "/help/classes/edit-sessions-in-programmes"
     status: 301
 
   - from: "/portal/en/kb/articles/edit-payments-on-registration"
-    to: "/help/payments/edit-payment-on-registration"
+    to: "/help/payments/edit-payment-on-booking"
     status: 301
 
   - from: "/portal/en/kb/articles/how-to-assign-direct-debit-mandates-to-registrations-gocardless"
@@ -123,31 +123,31 @@ redirects:
     status: 301
 
   - from: "/portal/en/kb/articles/individual-lessons-for-clients-on-the-climbing-wall"
-    to: "/help/programmes/individual-lessons-climbing-wall"
+    to: "/help/programmes/individual-sessions-climbing-wall"
     status: 301
 
   - from: "/portal/en/kb/articles/set-up-i"
-    to: "/help/programmes/individual-lessons-group-interested"
+    to: "/help/programmes/individual-sessions-lead-collection"
     status: 301
 
-  - from: "/portal/en/kb/articles/individual-lessons-with-free-lesson"
-    to: "/help/programmes/individual-lessons-with-free-lesson"
+  - from: "/portal/en/kb/articles/individual-sessions-with-free-session"
+    to: "/help/programmes/individual-sessions-with-free-session"
     status: 301
 
   - from: "/portal/en/kb/articles/individual-sessions-how-to-sell-plan-and-manage-1-1-lessons-in-zooza"
     to: "/help/programmes/individual-sessions"
     status: 301
 
-  - from: "/portal/en/kb/articles/late-registrations"
-    to: "/help/bookings/late-registrations"
+  - from: "/portal/en/kb/articles/late-bookings"
+    to: "/help/bookings/late-bookings"
     status: 301
 
-  - from: "/portal/en/kb/articles/lecturer-substitution"
-    to: "/help/settings/lecturer-substitution"
+  - from: "/portal/en/kb/articles/instructor-substitution"
+    to: "/help/settings/instructor-substitution"
     status: 301
 
-  - from: "/portal/en/kb/articles/linked-registrations"
-    to: "/help/bookings/linked-registrations"
+  - from: "/portal/en/kb/articles/linked-bookings"
+    to: "/help/bookings/linked-bookings"
     status: 301
 
   - from: "/portal/en/kb/articles/multi-day-event-with-product-offer"
@@ -158,8 +158,8 @@ redirects:
     to: "/help/settings/network-application"
     status: 301
 
-  - from: "/portal/en/kb/articles/new-course-existing-clients"
-    to: "/help/programmes/new-course-existing-clients"
+  - from: "/portal/en/kb/articles/new-programme-existing-clients"
+    to: "/help/programmes/new-programme-existing-clients"
     status: 301
 
   - from: "/portal/en/kb/articles/notifications"
@@ -198,8 +198,8 @@ redirects:
     to: "/help/payments/payment-templates-creation"
     status: 301
 
-  - from: "/portal/en/kb/articles/payment-tile-on-registration"
-    to: "/help/payments/payment-tile-on-registration"
+  - from: "/portal/en/kb/articles/payment-tile-on-booking"
+    to: "/help/payments/payment-tile-on-booking"
     status: 301
 
   - from: "/portal/en/kb/articles/personas"
@@ -211,7 +211,7 @@ redirects:
     status: 301
 
   - from: "/portal/en/kb/articles/how-to-sell-products-during-registration-booking-t-shirt-example"
-    to: "/help/orders/selling-products-during-registration"
+    to: "/help/orders/selling-products-during-booking"
     status: 301
 
   - from: "/portal/en/kb/articles/sending-requests"
@@ -227,11 +227,11 @@ redirects:
     status: 301
 
   - from: "/portal/en/kb/articles/2-lecturers-per-group"
-    to: "/help/programmes/two-lecturers-per-group"
+    to: "/help/programmes/two-instructors-per-class"
     status: 301
 
-  - from: "/portal/en/kb/articles/types-of-registrations"
-    to: "/help/bookings/types-of-registrations"
+  - from: "/portal/en/kb/articles/types-of-bookings"
+    to: "/help/bookings/types-of-bookings"
     status: 301
 
   - from: "/portal/en/kb/articles/user-roles"
@@ -242,8 +242,8 @@ redirects:
     to: "/help/payments/vat-management"
     status: 301
 
-  - from: "/portal/en/kb/articles/viewing-billable-events"
-    to: "/help/classes/viewing-billable-events"
+  - from: "/portal/en/kb/articles/viewing-billable-sessions"
+    to: "/help/classes/viewing-billable-sessions"
     status: 301
 
   - from: "/portal/en/kb/articles/zooza-101-for-instructors"
@@ -290,8 +290,8 @@ redirects:
     to: "/help/settings/instructor-rate-reward"
     status: 301
 
-  - from: "/portal/en/kb/articles/lecturers-working-hours"
-    to: "/help/settings/lecturers-working-hours"
+  - from: "/portal/en/kb/articles/instructors-working-hours"
+    to: "/help/settings/instructors-working-hours"
     status: 301
 
   - from: "/portal/en/kb/articles/online-registration"
@@ -315,7 +315,7 @@ redirects:
     status: 301
 
   - from: "/portal/en/kb/articles/trial"
-    to: "/help/programmes/trial-lessons"
+    to: "/help/programmes/trial-sessions"
     status: 301
 
   - from: "/portal/en/kb/articles/xero-integration-in-zooza-setup-invoice-management"
@@ -361,4 +361,106 @@ redirects:
 
   - from: "/help/calendar/replacement-hours-faq"
     to: "/help/calendar/make-up-sessions-faq"
+    status: 301
+
+# Slug renames (2026-02-15)
+
+  - from: "/help/bookings/registration-and-booking-faq"
+    to: "/help/bookings/booking-faq"
+    status: 301
+
+  - from: "/help/bookings/allowing-multiple-registration"
+    to: "/help/bookings/allowing-multiple-booking"
+    status: 301
+
+  - from: "/help/communication/automatic-event-notification"
+    to: "/help/communication/automatic-session-notification"
+    status: 301
+
+  - from: "/help/bookings/business-registration"
+    to: "/help/bookings/business-booking"
+    status: 301
+
+  - from: "/help/programmes/course-group-lesson-definition"
+    to: "/help/programmes/programme-class-session-definition"
+    status: 301
+
+  - from: "/help/programmes/course-settings-tile"
+    to: "/help/programmes/programme-settings-tile"
+    status: 301
+
+  - from: "/help/programmes/course-settings"
+    to: "/help/programmes/programme-settings"
+    status: 301
+
+  - from: "/help/communication/edit-event-notification-template"
+    to: "/help/communication/edit-session-notification-template"
+    status: 301
+
+  - from: "/help/classes/edit-events-in-courses"
+    to: "/help/classes/edit-sessions-in-programmes"
+    status: 301
+
+  - from: "/help/payments/edit-payment-on-registration"
+    to: "/help/payments/edit-payment-on-booking"
+    status: 301
+
+  - from: "/help/programmes/individual-lessons-climbing-wall"
+    to: "/help/programmes/individual-sessions-climbing-wall"
+    status: 301
+
+  - from: "/help/programmes/individual-lessons-group-interested"
+    to: "/help/programmes/individual-sessions-lead-collection"
+    status: 301
+
+  - from: "/help/programmes/individual-lessons-with-free-lesson"
+    to: "/help/programmes/individual-sessions-with-free-session"
+    status: 301
+
+  - from: "/help/bookings/late-registrations"
+    to: "/help/bookings/late-bookings"
+    status: 301
+
+  - from: "/help/settings/lecturer-substitution"
+    to: "/help/settings/instructor-substitution"
+    status: 301
+
+  - from: "/help/bookings/linked-registrations"
+    to: "/help/bookings/linked-bookings"
+    status: 301
+
+  - from: "/help/programmes/new-course-existing-clients"
+    to: "/help/programmes/new-programme-existing-clients"
+    status: 301
+
+  - from: "/help/payments/payment-tile-on-registration"
+    to: "/help/payments/payment-tile-on-booking"
+    status: 301
+
+  - from: "/help/orders/selling-products-during-registration"
+    to: "/help/orders/selling-products-during-booking"
+    status: 301
+
+  - from: "/help/communication/send-email-after-event"
+    to: "/help/communication/send-email-after-session"
+    status: 301
+
+  - from: "/help/programmes/two-lecturers-per-group"
+    to: "/help/programmes/two-instructors-per-class"
+    status: 301
+
+  - from: "/help/bookings/types-of-registrations"
+    to: "/help/bookings/types-of-bookings"
+    status: 301
+
+  - from: "/help/classes/viewing-billable-events"
+    to: "/help/classes/viewing-billable-sessions"
+    status: 301
+
+  - from: "/help/settings/lecturers-working-hours"
+    to: "/help/settings/instructors-working-hours"
+    status: 301
+
+  - from: "/help/programmes/trial-lessons"
+    to: "/help/programmes/trial-sessions"
     status: 301

@@ -1,6 +1,6 @@
 ---
-title: "Edit lessons/events in courses"
-slug: "edit-events-in-courses"
+title: "Edit sessions in programmes"
+slug: "edit-sessions-in-programmes"
 type: "guides"
 product_area: "Classes"
 sub_area: ""
@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728555
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Edit sessions/sessions in programmes

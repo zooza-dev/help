@@ -375,7 +375,7 @@ If there is no reaction:
 Each message template and delay can be configured per programme.
 
 
-[Learn more](trial-lessons.md)
+[Learn more](trial-sessions.md)
 
 7. Everyday life: common booking scenarios
 
@@ -551,7 +551,7 @@ You can also:
 - notify admins about each late booking,
 - customise confirmation messages for late sign-ups.
 
-[Learn More](../guides/late-registrations.md)
+[Learn More](../guides/late-bookings.md)
 
 ### 8.4 Waitlist automation
 
@@ -621,7 +621,7 @@ first follow-up email,
 
 Each message template and delay can be configured per programme.
 
-[Learn More](trial-lessons.md)
+[Learn More](trial-sessions.md)
 
 9. Next steps & where to get help
 

@@ -53,7 +53,7 @@ Click the *Add New User* button to save your settings.
 ## Team members
 
 
-Setting the basic view for individual team members will make it easier for you to specify some of the features available for instructor roles according to your needs. You decide how a instructor should see the attendance report, how they can manage their own availability, whether instructors can see client details or send messages to clients in term details. Last but not least, you have the option to allow instructors to create substitutions on appointments for easier administration. You can find out all the information on how to set up the substitution and how it works in this [manual.](lecturer-substitution.md)
+Setting the basic view for individual team members will make it easier for you to specify some of the features available for instructor roles according to your needs. You decide how a instructor should see the attendance report, how they can manage their own availability, whether instructors can see client details or send messages to clients in term details. Last but not least, you have the option to allow instructors to create substitutions on appointments for easier administration. You can find out all the information on how to set up the substitution and how it works in this [manual.](instructor-substitution.md)
 
 ![Screenshot](../../assets/images/user-roles-06.png)
 

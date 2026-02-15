@@ -1,6 +1,6 @@
 ---
-title: "Linked registrations"
-slug: "linked-registrations"
+title: "Linked bookings"
+slug: "linked-bookings"
 type: "guides"
 product_area: "Bookings"
 sub_area: ""
@@ -28,7 +28,7 @@ With linked bookings, you allow the client to make only one linked payment to on
 
 
 If the parent fills in the booking form fields for both children at the same time, i.e. uses the *Add person* option when filling in the booking form, the two bookings will automatically be linked and related.
-How to set up the Add Person option and where to set it to link payments automatically can be found in this [manual](allowing-multiple-registration.md).
+How to set up the Add Person option and where to set it to link payments automatically can be found in this [manual](allowing-multiple-booking.md).
 
 ![Screenshot](../../assets/images/linked-registrations-01.png)
 

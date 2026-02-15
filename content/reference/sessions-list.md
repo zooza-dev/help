@@ -57,5 +57,5 @@ The total number of sessions found is shown at the top (e.g., "Found 846 session
 - [Classes List](classes-list.md) — the cross-programme classes view.
 - [Class Detail](class-detail.md) — managing a single class with its sessions.
 - [Calendar](calendar.md) — visual calendar view of sessions.
-- [Edit Sessions in Programmes Guide](../guides/edit-events-in-courses.md) — modifying session dates and times.
+- [Edit Sessions in Programmes Guide](../guides/edit-sessions-in-programmes.md) — modifying session dates and times.
 - [Attendance and Catch-ups FAQ](../faq/attendance-and-catchups-faq.md) — marking attendance.

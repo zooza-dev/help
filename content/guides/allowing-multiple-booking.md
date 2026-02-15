@@ -1,6 +1,6 @@
 ---
-title: "Allowing multiple registration for a course"
-slug: "allowing-multiple-registration"
+title: "Allowing multiple booking for a programme"
+slug: "allowing-multiple-booking"
 type: "guides"
 product_area: "Bookings"
 sub_area: ""

@@ -1,6 +1,6 @@
 ---
-title: "Individual lessons for clients on the climbing wall with choice of instructor"
-slug: "individual-lessons-climbing-wall"
+title: "Individual sessions for clients on the climbing wall with choice of instructor"
+slug: "individual-sessions-climbing-wall"
 type: "guides"
 product_area: "Programmes"
 sub_area: ""

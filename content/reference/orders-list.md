@@ -140,4 +140,4 @@ A final **Confirmation** step completes the process.
 
 ## Related
 
-- [Selling Products During Booking](../guides/selling-products-during-registration.md) — how to offer products at booking time.
+- [Selling Products During Booking](../guides/selling-products-during-booking.md) — how to offer products at booking time.

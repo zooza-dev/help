@@ -1,6 +1,6 @@
 ---
-title: "Edit automatic notifications of an upcoming event"
-slug: "edit-event-notification-template"
+title: "Edit automatic notifications of an upcoming session"
+slug: "edit-session-notification-template"
 type: "guides"
 product_area: "Communication"
 sub_area: "Email"
@@ -17,7 +17,7 @@ intercom_sync: true
 
 # Edit automatic notifications of an upcoming session
 
-The [automatic notification](automatic-event-notification.md) is one of the messages that you can customise in the message templates. You can adjust the message text to suit your organisation's needs:
+The [automatic notification](automatic-session-notification.md) is one of the messages that you can customise in the message templates. You can adjust the message text to suit your organisation's needs:
 
 1. Change the way of reaching out
 2. Change the terminology (cancel session for the session/exercise/session)
