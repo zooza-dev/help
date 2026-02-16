@@ -11,6 +11,8 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-02-13"
+intercom_id: 13738704
+intercom_sync: false
 ---
 
 # Payment Correction vs Refund Guide
