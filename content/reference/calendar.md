@@ -21,6 +21,7 @@ The Calendar provides a visual, location-based view of all sessions scheduled fo
 
 > **Navigation:** Go to **Activities** → **Calendar**.
 
+![Screenshot — calendar](../../assets/images/calendar-01.png)
 ## Daily Overview
 
 The main calendar view shows a daily timeline grouped by location.
@@ -49,6 +50,18 @@ Each session block shows:
 | Attendee list | Names of enrolled clients with attendance icons. |
 | Attendance icons | Colour-coded checkmarks: green = attended, orange = pending, question mark = unknown. |
 | **Go to the session** | Link to the full session detail page. |
+
+### Session detail — attendance views
+
+When you open a session from the calendar, the attendance panel offers two views (toggle in the top right):
+
+| View | What it shows |
+|---|---|
+| **Quick view** | Simplified list with attendance buttons (Will attend, Attended, Cancelled, Did not attend), **Mark all as attended** button, and attended count (e.g. "Attended 3/5"). |
+| **Full view** | Everything from Quick view plus make-up session selection, cancellation reasons, attendance notes, and replacement credit management. |
+
+Use **Quick view** for fast daily attendance. Switch to **Full view** when you need to manage make-up sessions or record details.
+![Screenshot — calendar](../../assets/images/calendar-02.png)
 
 ## Feedback Questions
 

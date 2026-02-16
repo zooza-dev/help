@@ -5,27 +5,49 @@ type: "faq"
 product_area: "Calendar"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["attendance", "quick-view"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-02-16"
 intercom_id: 13728486
 intercom_sync: true
 ---
 
 # Attendance and Catch-up Classes FAQ
 
+## What are Quick view and Full view for attendance?
+
+When you open a session from the **Calendar**, the attendance panel has two views you can switch between using the toggle in the top right:
+
+- **Quick view** — a simplified attendance list. Shows each client with four status buttons: **Will attend**, **Attended**, **Cancelled**, **Did not attend**. Includes a **Mark all as attended** button to set all clients to "Attended" in one click. Displays an attended count (e.g. "Attended 3/5") so you can see progress at a glance.
+- **Full view** — the detailed attendance panel. Shows everything from Quick view plus: make-up session selection, cancellation reasons, attendance notes, replacement credits, and waiting list management.
+![Screenshot — attendance and catchups faq](../../assets/images/attendance-and-catchups-faq-01.png)
+
+Both views are available to admins and instructors alike. Quick view is not a "limited" mode — it is fully functional. It simply hides the details you don't need when all you want is to quickly mark who showed up. You can switch between views at any time without losing data.
+
+**When to use Quick view:** Daily attendance marking when you just need to check off who came. Ideal for instructors marking attendance on their phone before or after a session.
+
+**When to use Full view:** When you need to handle cancellations with make-up credits, add attendance notes, manage replacement sessions, or review detailed attendance history.
+
+## How does "Mark all as attended" work?
+
+In **Quick view**, click the **Mark all as attended** button at the top of the attendance list. This sets all enrolled clients to "Attended" in one action. The attended count next to the button updates to show the result (e.g. "Attended 5/5").
+
+You can still change individual statuses after using this button — for example, switching one client to "Did not attend" or "Cancelled" if they didn't show up.
+
+Make-up session clients are listed separately below the enrolled group and are not affected by the bulk action.
+
 ## How do instructors mark attendance?
 
-Instructors log in to Zooza (via `zooza.app`), open their **Calendar**, and select the current session. They see a list of registered children and mark each as "Attended", "Cancelled", or "Did not attend". Attendance can be marked from both mobile and desktop.
+Instructors log in to Zooza (via `zooza.app`), open their **Calendar**, and select the current session. They see the attendance panel with the list of enrolled clients and can switch between **Quick view** and **Full view** just like admins. They mark each client as **Attended**, **Cancelled**, or **Did not attend**. Attendance can be marked from both mobile and desktop.
 
-Tip: Instructors should add Zooza to their phone's home screen so it works like a native app.
+Tip: Instructors should add Zooza to their phone's home screen so it works like a native app. Quick view with **Mark all as attended** is especially useful for fast attendance on mobile.
 
 ## Can an admin mark attendance on behalf of a instructor?
 
-Yes. As an admin, go to **Calendar**, select the session, and mark attendance for any class — including past sessions. Admins can see all classes, while instructors only see their own.
+Yes. As an admin, go to **Calendar**, select the session, and mark attendance for any class — including past sessions. Admins can see all classes, while instructors only see their own. Both Quick view and Full view are available to admins.
 
 ## How do catch-up / make-up sessions work?
 

@@ -1,6 +1,6 @@
 ---
-title: Viewing/tracking billable sessions
-slug: viewing-billable-sessions
+title: Tracking billable sessions
+slug: tracking-billable-sessions
 type: guides
 product_area: Classes
 sub_area: ""
@@ -17,7 +17,7 @@ intercom_id: 13728635
 intercom_sync: true
 ---
 
-# Viewing/tracking billable sessions
+# Tracking billable sessions
 
 If you already have set up billable sessions, the application will start calculating the progression of the class differently: You can switch between the types of statistics in the class list. Next to the *Sort* drop-down menu there is a filter button to set the View Settings. You can switch between viewing the *schedule bookings* or the *schedule progress*.
 

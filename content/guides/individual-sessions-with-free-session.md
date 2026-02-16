@@ -58,7 +58,7 @@ Admin
 
 | Before booking |
 |---|
-| Creates a programme of type Ongoing - [MANUAL](https://support.zooza.online/portal/en/kb/articles/course-creation), where the number of billable sessions will be set to 10 and the unit price per session will be setCreates a class with 11 sessions, where 10 sessions (except the 1st) will be marked as billable- [MANUAL](how-to-create-paid-events.md)Sets the instructor for the groupSets the class capacity to 1Creates a template for the confirmation email - Booking Confirmation - [MANUAL](message-templates.md)Adds communication template at programme level |
+| Creates a programme of type Ongoing - [MANUAL](https://support.zooza.online/portal/en/kb/articles/course-creation), where the number of billable sessions will be set to 10 and the unit price per session will be setCreates a class with 11 sessions, where 10 sessions (except the 1st) will be marked as billable- [MANUAL](billable-sessions.md)Sets the instructor for the groupSets the class capacity to 1Creates a template for the confirmation email - Booking Confirmation - [MANUAL](message-templates.md)Adds communication template at programme level |
 | During booking |
 | |
 | After booking creation |

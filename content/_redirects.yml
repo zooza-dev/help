@@ -119,7 +119,11 @@ redirects:
     status: 301
 
   - from: "/portal/en/kb/articles/how-to-create-paid-events"
-    to: "/help/classes/how-to-create-paid-events"
+    to: "/help/classes/billable-sessions"
+    status: 301
+
+  - from: "/help/classes/how-to-create-paid-events"
+    to: "/help/classes/billable-sessions"
     status: 301
 
   - from: "/portal/en/kb/articles/individual-lessons-for-clients-on-the-climbing-wall"
