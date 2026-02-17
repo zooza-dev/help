@@ -14,7 +14,7 @@ source_language: mixed
 needs_screenshot_replacement: true
 last_converted: 2026-02-11
 intercom_id: 13728619
-intercom_sync: true
+intercom_sync: false
 ---
 
 # Sending email/SMS to clients

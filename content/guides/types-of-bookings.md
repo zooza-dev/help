@@ -13,7 +13,7 @@ source_language: en
 needs_screenshot_replacement: false
 last_converted: 2026-02-11
 intercom_id: 13728628
-intercom_sync: true
+intercom_sync: false
 ---
 
 # Types of bookings

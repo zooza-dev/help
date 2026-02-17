@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-02-11"
 intercom_id: 13728550
-intercom_sync: true
+intercom_sync: false
 ---
 
 # Edit automatic notifications of an upcoming session

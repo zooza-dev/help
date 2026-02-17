@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-17"
 intercom_id: 13738683
-intercom_sync: true
+intercom_sync: false
 ---
 
 <!-- Synonyms: move booking, move client, relocate booking, presunúť klienta, kopírovať registráciu, presun registrácie -->

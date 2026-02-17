@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-15"
 intercom_id: 13728496
-intercom_sync: true
+intercom_sync: false
 ---
 
 # Programmes, Timetables and Sessions FAQ

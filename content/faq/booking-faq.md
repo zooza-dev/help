@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-17"
 intercom_id: 13728498
-intercom_sync: true
+intercom_sync: false
 ---
 
 # Booking FAQ

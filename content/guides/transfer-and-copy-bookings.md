@@ -11,8 +11,8 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-17"
-intercom_id:
-intercom_sync: true
+intercom_id: 13750406
+intercom_sync: false
 ---
 
 # Transfer and copy bookings
