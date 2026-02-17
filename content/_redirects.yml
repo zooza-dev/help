@@ -2,6 +2,10 @@
 # Generated: 2026-02-11
 
 redirects:
+  - from: "/portal/en/kb/articles/setting-the-price-on-a-course"
+    to: "/help/payments/price-and-payment-setup"
+    status: 301
+
   - from: "/portal/en/kb/articles/whatsapp-integration-usage-beta"
     to: "/help/communication/whatsapp-integration"
     status: 301

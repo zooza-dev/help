@@ -71,8 +71,8 @@ This setting is set when creating the programme, but you can update the *unit pr
 
 ![Screenshot](../../assets/images/course-settings-04.png)
 
-1. For guidance on correctly setting prices*, *refer to the [Pricing Setup manual.](https://support.zooza.online/portal/en/kb/articles/setting-the-price-on-a-course)
-2. For help configuring payment reminders, see the [Payment Reminders Guide.](automatic-payment-reminders-detailed.md)
+1. For guidance on correctly setting prices, refer to the [Price and payment setup](price-and-payment-setup.md) guide.
+2. For help configuring payment reminders, see the [Payment Reminders Guide](automatic-payment-reminders-detailed.md).
 
 ## Online registration
 

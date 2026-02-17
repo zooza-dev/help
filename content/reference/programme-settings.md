@@ -43,7 +43,7 @@ Top-right buttons: **New class**, **Copy programme**.
 
 ## Price and Payment
 
-Controls how much clients pay and how payments are collected.
+Controls how much clients pay and how payments are collected. For a full explanation of each pricing model, see [Price and payment setup](../guides/price-and-payment-setup.md).
 
 ![Price and Payment settings](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-price.png)
 
