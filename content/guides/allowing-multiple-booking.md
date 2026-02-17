@@ -21,6 +21,8 @@ You can expand the booking form not only with extra fields but also with the pos
 
 The price per programme is automatically converted to the price for two or more bookings.
 
+
+
 ![Screenshot](../../assets/images/allowing-multiple-registration-01.png)
 
 The button will be added automatically as soon as you enable multiple programme bookings. You can enable multiple programme bookings at the *Programme *level, in the *Online Registration *section.

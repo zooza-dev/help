@@ -54,7 +54,11 @@ Yes. During booking, there is an **Add another child** button. When a parent add
 
 ## How do I move a client from one class to another?
 
-Open the booking detail, and in the settings you can change the assigned class. It's a few clicks — select the new class from the dropdown and save.
+Open the booking detail and click **Transfer** (in the Class card). The wizard lets you select the target class, configure payments, and submit. The booking moves to the new class with the remaining sessions.
+
+Tip: tick **Do not change payments** to keep the original payment schedule intact.
+
+For a full step-by-step walkthrough, see [Transfer and copy bookings](../guides/transfer-and-copy-bookings.md).
 
 ## How do I handle pro-rata bookings for partial terms?
 

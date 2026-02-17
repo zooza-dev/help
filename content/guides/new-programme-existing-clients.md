@@ -36,7 +36,7 @@ Advantages of copying the class:
 - possibility of copying terms
 - possibility of copying bookings
 
-You can find the procedure how to copy classes, terms and bookings [HERE](https://support.zooza.online/portal/en/kb/articles/copy-courses-groups).
+For a step-by-step guide on transferring and copying individual bookings, see [Transfer and copy bookings](transfer-and-copy-bookings.md).
 
 ## Copying all class settings
 
@@ -64,10 +64,7 @@ for the client.
 
 This copying procedure allows you and your clients to have order in your payments, terms and make-up sessions.
 
-If you need to move a client to a class and want to keep the payment or credit details, you need to use the *Move Client*
- functionality, which can be found in the booking details. However,
- this transfer can only be done individually after bookings, not in
- bulk.
+If you need to move a client to a class and want to keep the payment or credit details, use the **Transfer** function on the booking detail. Transfers are done individually per booking, not in bulk. See [Transfer and copy bookings](transfer-and-copy-bookings.md) for the full workflow.
 
 Of course, you always have the option of leaving the booking up
 to your clients, who will be notified that you have launched a new
