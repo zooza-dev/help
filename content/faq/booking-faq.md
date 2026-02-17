@@ -10,12 +10,12 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-12"
+last_converted: "2026-02-17"
 intercom_id: 13728498
 intercom_sync: true
 ---
 
-# Booking and Booking FAQ
+# Booking FAQ
 
 ## How do I generate a booking link to send to my clients?
 
@@ -58,11 +58,9 @@ Open the booking detail, and in the settings you can change the assigned class. 
 
 ## How do I handle pro-rata bookings for partial terms?
 
-There are several approaches:
+Zooza calculates pro-rata prices automatically when a client joins a class that has already started. Go to **Programmes** → **Settings** → **Price and Payment** → **Advanced settings** and configure the **Late bookings** mode and **Aliquot price calculation** method. The system can calculate the reduced price based on remaining sessions or remaining days in the billing period.
 
-- **Option A (recommended):** The parent registers normally. You provide a discount code reflecting the reduced price, then manually hide the sessions they won't attend in their attendance record.
-- **Option B:** The parent registers but does not pay. You adjust the amount due manually and ask them to complete payment via their Client Profile.
-- **Option C:** You create the booking manually, adjust sessions and amount, then send the parent to their Client Profile to pay.
+For a full walkthrough of all options, see [Late bookings (pro-rata management)](../guides/late-bookings.md).
 
 ## Can I manually create a booking on behalf of a client?
 

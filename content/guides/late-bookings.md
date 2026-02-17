@@ -1,305 +1,206 @@
 ---
-title: "Late bookings"
+title: "Late bookings (pro-rata management)"
 slug: "late-bookings"
 type: "guides"
 product_area: "Bookings"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["late-booking", "pro-rata", "aliquot", "pricing"]
 status: "published"
 source_legacy_path: "legacy/0016_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-15"
+last_converted: "2026-02-17"
 intercom_id: 13728572
 intercom_sync: true
 ---
 
-# Late bookings
+# Late bookings (pro-rata management)
 
-## Late booking: automatic approval, full price for the whole programme
+A **late booking** occurs when a client registers for a class that has already started. Zooza marks these bookings with a snail icon and a "Late booking" status so you can easily identify them.
 
-Klient
+Zooza gives you full control over what happens when someone joins late: whether the booking is accepted automatically or requires your approval, and how the price is calculated — from a fully automatic pro-rata reduction to a fixed full price.
 
+> **Navigation:** Go to **Programmes** → select the programme → **Settings** → **Price and Payment** → **Advanced settings**.
 
-Admin
+## Late booking modes
 
-Klient
+The **Late bookings** setting controls whether clients can register after the class has started, and what happens when they do.
 
-| Before booking |
-|---|
-| |
-| During booking |
-| Selects a programme/class from the menu and fills in the details |
-| After booking creation |
-| Receives a notification that the
-booking has been completed and a request to confirm the
-booking (from the system's side, this is a confirmation of entering
- the correct email address) |
-| After booking confirmation |
-| Notification is automatically sent
-with all programme information with the option to log in to the profile -
-email template: Booking confirmation |
-
-Admin
-
-| Before booking |
-|---|
-| Allow late registrationsSelect a courseClick on *Online registration*In the *Late bookings* section select *Automatically confirmed*Price calculation - Full programme price |
-| |
-| During booking |
-| |
-| After booking creation |
-| |
-| After booking confirmation |
-| The booking is automatically flagged with the status - Late booking (snail icon)Price is set in full amount = price per programme/class or full installment amount |
-
-## Late booking: manual approval, price aliquot
-
-Klient
+![Screenshot — late bookings](../../assets/images/late-bookings-01.png)
 
 
-Admin
+| Mode | What happens |
+|---|---|
+| **Disabled** | Clients cannot book after the class has started. The class does not appear in the registration form once it has begun. |
+| **Manual confirmation required** | The client can register, but the booking goes to a waiting state. The admin receives a notification, reviews the booking, and manually approves or declines it. |
+| **Automatically confirmed** | The booking is approved instantly. The price is calculated according to the aliquot settings below. The client receives a confirmation email as with any regular booking. |
 
-Klient
+**Disabled** is useful when you do not want latecomers at all — for example, progressive programmes where missing the first sessions makes the rest difficult to follow.
 
-| Before booking |
-|---|
-| |
-| During booking |
-| Selects a programme/class from the menu and fills in the detailsAt the end of the form, the client
-is notified by a message that he/she is registering for a class that has
- already started and that he/she will be informed of the class
-assignment |
-| After booking creation |
-| Receives a notification that the
-booking has been completed and a request to confirm the
-booking (from the system's side, this is a confirmation of entering
- the correct email address) |
-| After booking confirmation |
-| A notification will be sent
-notifying the client that the booking has been completed and that
-the client will be contacted with more information once he/she has been
-placed in a class |
-| Manual booking approval |
-| When the confirmation email is sent,
- a notification will arrive with all the programme information with the
-option to log in to the profile and payment instructions - email
-template: booking confirmationBoth status and payment details will be displayed in the client's profile |
-| Manual disapproval/cancellation of booking |
-| Information will only arrive in case
- of individual communication from the admin - application does not
-automatically send anything |
+**Manual confirmation required** gives you full control. You see every late booking before it is confirmed, and you can adjust the price, change the class, or decline the booking. This is the most common choice for programmes with instalment-based pricing.
 
-Admin
+**Automatically confirmed** is ideal for memberships, drop-in classes, or any programme where joining late is normal and the price calculation is straightforward.
 
-| Before booking |
-|---|
-| Allow late registrationsSelect a courseClick on *Online registration*In the *Late bookings* section select *Automatically confirmed*Price calculation - Automatically calculated |
-| |
-| During booking |
-| |
-| After booking creation |
-| |
-| After booking confirmation |
-| The booking is automatically flagged with the status - Late booking (snail icon) |
-| Manual booking approval |
-| View bookings in the class Select or search for Late bookings using the filterAfter clicking on booking, check the automatically calculated debt on the booking - overwrite in the details if necessaryPrice is calculated as an aliquot = For Programme Fees, the price per programme/class times the number of remaining eventsFor Membership, the price of the first installment is calculated by the number of days remaining in the current period plus one full future periodAfter clicking on booking, change the status to Registered - valid booking for the courseIf you would like to send a confirmation notification check the box Send confirmation email |
-| |
-| Manual disapproval/cancellation of booking |
-| View bookings in the groupSelect or search for Late bookings using the filterOnce you click on a booking, change the status to Cancelled Booking (during the programme) You send cancellation information individually via send email/SMS to booking |
+## Pro-rata (aliquot) price calculation
 
-## Late booking: manual approval, full price for the whole programme
+The **Aliquot price calculation settings** control how the price is calculated for late bookings. This is the core of pro-rata management in Zooza.
 
-Klient
+| Option | How it works |
+|---|---|
+| **Automatically calculated** | Price = remaining sessions / total sessions x full price. Best for term-based programmes with a fixed number of sessions. |
+| **Calculated automatically by the number of days** | Price is based on the number of remaining days in the current billing period plus one full upcoming period. Best for memberships and recurring billing. |
+| **No value** | For one-off payments: zero debt is calculated. For scheduled payments: no debt is generated until the start of the next billing period. Useful for free trial periods or when you want to manually set the price. |
+| **Full programme price** | The full price is always charged, regardless of when the client joins. No automatic reduction. |
+![Screenshot — late bookings](../../assets/images/late-bookings-02.png)
+### How the session-based calculation works
 
-
-Admin
-
-Klient
-
-| Before booking |
-|---|
-| |
-| During booking |
-| Selects a programme/class from the menu to fill in the detailsAt the end of the form, the client is notified by a message that he/she is registering for a class that has already started and that he/she will be informed of the class assignment |
-| After booking creation |
-| Receives a notification that the
-booking has been completed and a request to confirm the
-booking (from the system's side, this is a confirmation of entering
- the correct email address) |
-| After booking confirmation |
-| A notification will be sent notifying the client that the booking has been completed and that the client will be contacted with more information once he/she has been placed in a class |
-| Manual booking approval |
-| When the confirmation email is sent, a notification will arrive with all the programme information with the option to log in to the profile and payment instructions - email template: booking confirmationBoth status and payment details will be displayed in the client's profile |
-| Manual disapproval/cancellation of booking |
-| Information will only arrive in case of individual communication from the admin - application does not automatically send anything |
-
-Admin
-
-| Before booking |
-|---|
-| Allow late bookings
-
-
-Select a programme
-
-
-Click on *Online registration*
-
-
-In the *Late bookings* section select *Automatically confirmed*
-
-
-Price calculation - Full programme price |
-| |
-| During booking |
-| |
-| After booking creation |
-| |
-| After booking confirmation |
-| The booking is automatically flagged with the status - Late booking (snail icon) |
-| Manual booking approval |
-| View bookings in the class
-
-
- Select or search for Late bookings using the filter
-
-
-After clicking on the booking, change the status to Registered - valid booking for the programme
-
-
-If you would like to send a confirmation notification check the box *Send confirmation email*
-
-
- Price is set at the full amount - Amount = price per programme/class or full payment |
-| |
-| Manual disapproval/cancellation of booking |
-| View bookings in the class
-
-
-Select or search for Late bookings using the filter
-
-
-Once you click on a booking, change the status to Cancelled Booking (during the programme)
-
-
- You send cancellation information individually via send email/SMS to booking |
-
-## Payment schedule for late registrations
-
-When a client registers after the programme has started and manual approval is enabled, the payment schedule (instalment plan) is **not** applied automatically — even if the client selected one during registration.
-
-To apply a payment schedule to a late registration:
-
-1. Open the booking detail and go to the **Payments** section.
-2. In the **Instalment Plan** area (top-right), click **Create** and follow the wizard to select a payment template.
-3. Change the booking status to **Registered** on the same day.
-
-> **Important:** At midnight, the system runs an automatic validation of payment schedules. Only schedules linked to bookings with **Registered** status are confirmed. If the booking remains in **Late registration** status, any manually applied payment schedule is automatically removed. Always approve the booking and change its status to **Registered** before the end of the day.
-
-## Understanding pro-rata (aliquot) pricing
-
-When a client registers after a programme has already started, Zooza can automatically calculate a reduced price based on how many sessions remain. This is called **aliquot** (pro-rata) pricing.
-
-### How the calculation works
-
-The system uses a simple formula:
+The formula is straightforward:
 
 **Remaining sessions / Total sessions x Full price = Pro-rata price**
 
-For example, if a programme has 20 sessions at a full price of 200 EUR and a client joins when 12 sessions remain, the calculated price is:
+**Example:** A programme has 30 sessions at 300 EUR. A client joins when 18 sessions remain:
 
-12 / 20 x 200 = **120 EUR**
+18 / 30 x 300 = **180 EUR**
 
-The calculation method depends on the payment type:
+If the programme uses a payment template (e.g., 3 monthly instalments), the 180 EUR is split across the remaining instalments.
 
-- **Programme fee (term payment):** The price is calculated as the full programme price multiplied by the ratio of remaining sessions to total sessions.
-- **Membership (recurring payments):** The first instalment is calculated based on the number of days remaining in the current billing period. Subsequent instalments are charged at the full amount.
+### How the day-based calculation works
 
-<!-- REVIEW: Confirm whether the pro-rata price is displayed to the client on the booking form or only calculated after the booking is completed. Support conversations suggest it may only be visible to admins. -->
+The system counts the remaining days in the current billing period and calculates a proportional price for that period. The next full period is charged at the standard rate.
 
-### Configuring aliquot pricing on a programme
+**Example:** Monthly billing at 50 EUR/month. The billing period starts on the 1st. A client joins on the 16th (15 days remaining out of 30):
 
-1. Go to **Programmes** and select the programme.
-2. Click **Edit Settings**.
-3. Open the **Price and Payment** tile.
-4. Expand **Advanced settings**.
-5. In the `Aliquot price calculation` field, select **Automatically calculated**.
-6. Save the settings.
+15 / 30 x 50 = **25 EUR** for the first month, then **50 EUR** per month going forward.
 
-When set to **Automatically calculated**, the system computes the pro-rata price for every late booking. The admin can still overwrite the calculated amount on individual bookings before approving them.
+### Which option to choose
 
-### Checking and overwriting the calculated price
-
-1. Open the class and filter bookings by **Late booking** status.
-2. Click on the booking.
-3. Review the automatically calculated debt amount shown on the booking detail.
-4. If the amount needs adjustment, edit the debt value directly in the booking detail.
-5. Change the booking status to **Registered** to confirm.
-
-## Fixed-price override (no pro-rata)
-
-If you want all clients to pay the same amount regardless of when they join, use the **full programme price** option instead of aliquot pricing.
-
-### Switching to fixed price
-
-1. Go to **Programmes** and select the programme.
-2. Click **Edit Settings**.
-3. Open the **Price and Payment** tile.
-4. Expand **Advanced settings**.
-5. In the `Aliquot price calculation` field, select **Full programme price**.
-6. Save the settings.
-
-With this setting, every late booking is charged the full programme or class price. No automatic reduction is applied.
-
-### Include Initial Full Scheduled Payment
-
-When using **Membership** pricing with scheduled payments, the `Include Initial Full Scheduled Payment` checkbox controls whether the system generates an immediate full instalment at the time of booking, in addition to the regular payment schedule.
-
-- **Checked (default):** The client is charged a full scheduled payment immediately upon booking, plus their regular recurring payments going forward. Use this when you want to collect the first period upfront.
-- **Unchecked:** The client's first payment follows the normal payment template schedule. No additional upfront charge is generated. Use this for Netflix-style memberships where clients simply start paying on the next billing cycle.
-
-To configure:
-
-1. Go to **Programmes** → select the programme → **Edit Settings**.
-2. Open the **Price and Payment** tile.
-3. Expand **Advanced settings**.
-4. Check or uncheck `Include Initial Full Scheduled Payment`.
-5. Save the settings.
-
-### When to use fixed price vs. pro-rata
-
-| Scenario | Recommended setting |
+| Business scenario | Recommended setting |
 |---|---|
-| Clients join a few sessions late and expect a reduced fee | Automatically calculated (pro-rata) |
-| Programme content is the same regardless of join date (e.g., membership, drop-in) | Full programme price |
-| You want to manually set each late joiner's price | Automatically calculated, then overwrite per booking |
+| Term-based programme, clients join a few sessions late | **Automatically calculated** |
+| Monthly membership, clients join mid-month | **Calculated automatically by the number of days** |
+| You want to manually set each late joiner's price | **No value** (set debt manually on each booking) |
+| Drop-in or membership where everyone pays the same | **Full programme price** |
+| Free trial period — charge nothing until next period | **No value** |
 
-<!-- REVIEW: The system does not support automatic date-based switching between full price and pro-rata (e.g., "charge full price for the first 2 sessions, then switch to pro-rata"). Admins must change the setting manually when needed. Confirm this is still the case. -->
+## Include Initial Full Scheduled Payment
 
-## FAQ: Common questions about late booking pricing
+When using scheduled payments (monthly, termly, or other recurring billing), the **Include Initial Full Scheduled Payment** setting controls whether the first payment includes an extra full instalment on top of the pro-rata amount.
 
-**Q: What does "aliquot" mean?**
-A: Aliquot is a proportional calculation. In Zooza, it means the system divides the full price by the total number of sessions, then multiplies by the remaining sessions. The result is a fair, pro-rated price for clients who join after the programme starts.
+![Screenshot — late bookings](../../assets/images/late-bookings-03.png)
 
-**Q: Where do I configure aliquot pricing?**
-A: Go to **Programmes** → select the programme → **Edit Settings** → **Price and Payment** → **Advanced settings** → `Aliquot price calculation`.
+- **Checked:** The client pays the pro-rata amount **plus** one full instalment immediately. This ensures the client always pays for at least two billing periods upfront. Common for term-based programmes where you want a meaningful first payment.
+- **Unchecked:** The client pays only the pro-rata amount initially. The next full instalment follows the regular payment schedule. Better for Netflix-style memberships where clients simply start paying on the next billing cycle.
 
-**Q: Can the system automatically switch from full price to pro-rata after a certain date?**
-A: No. The system applies whichever setting is currently active. To switch, you must manually change the `Aliquot price calculation` setting on the programme at the time you want the change to take effect.
+**Example:** Monthly billing at 60 EUR. Client joins mid-month, pro-rata is 30 EUR.
 
-**Q: Is the pro-rata price visible to clients during booking?**
-A: The calculated price may not always be shown on the booking form. Clients typically see the price after the booking is completed or when payment instructions are sent. Check your programme's late booking flow (automatic vs. manual approval) to understand when the price is communicated.
+- **Checked:** First payment = 30 EUR (pro-rata) + 60 EUR (full month) = **90 EUR**
+- **Unchecked:** First payment = **30 EUR**, then 60 EUR next month
 
-<!-- REVIEW: Verify whether the pro-rata price is displayed during the booking form step for automatically approved late bookings. -->
+This setting is especially useful for programmes with longer billing periods (termly, yearly). If you bill yearly in 2 instalments at 300 EUR each and a student joins mid-year, the system calculates a pro-rata first instalment and bundles it with one full instalment — so the client pays a fair amount on day one.
 
-**Q: What happens if I change the aliquot setting mid-term?**
-A: The change applies only to new late bookings created after the setting is changed. Existing bookings keep their original calculated price.
+## How to configure late bookings
+
+1. Go to **Programmes** and select the programme.
+2. Click **Settings**.
+3. Open the **Price and Payment** tile.
+4. Expand **Advanced settings**.
+5. Set the **Late bookings** mode (Disabled / Manual confirmation required / Automatically confirmed).
+6. Set the **Aliquot price calculation** method.
+7. Optionally check **Include Initial Full Scheduled Payment**.
+8. Save the settings.
+
+These settings apply to all classes within the programme. You do not need to configure each class separately.
+![Screenshot — late bookings](../../assets/images/late-bookings-04.png)
+## Manual approval workflow
+
+When **Manual confirmation required** is selected, every late booking requires admin action before the client is enrolled.
+
+### What the client sees
+
+1. The client selects a class that has already started.
+2. At the end of the booking form, a message informs them that the class has already started and they will be contacted once they are placed in a class.
+3. After submitting, the client receives an email confirming that the booking was received and is pending review.
+
+### What the admin does
+
+1. The admin receives a notification in the **notification centre** about the new late booking.
+2. Open the booking — review the automatically calculated debt amount.
+3. If the amount needs adjustment, edit the debt value directly on the booking detail.
+4. Click **Change status** and select **Enrolled – Valid programme booking**.
+5. Optionally check **Send confirmation email** to notify the client.
+6. Click **Change status** to confirm.
+
+![Screenshot — late bookings](../../assets/images/late-bookings-05.png)
+
+> **Important:** Change the booking status to **Enrolled** on the same day. At midnight, the system validates payment schedules — any schedule linked to a booking that is still in "Late booking" status is automatically removed. Always approve the booking before the end of the day.
+
+### Declining a late booking
+
+If you do not want to accept a late booking:
+
+1. Open the booking.
+2. Click **Change status** and select **Cancelled booking (during the programme)**.
+3. Send a cancellation message individually via **Send email/SMS** on the booking.
+
+The system does not automatically notify the client when a late booking is declined — you must communicate this yourself.
+
+## Payment schedules for late bookings
+
+When a client registers late with **manual approval** enabled, the payment schedule (instalment plan) is **not** applied automatically — even if the client selected one during registration.
+
+To apply a payment schedule:
+
+1. Open the booking detail and go to the **Payments** section.
+2. In the **Instalment Plan** area, click **Create** and follow the wizard to select a payment template.
+3. Change the booking status to **Enrolled** on the same day.
+
+For **automatically confirmed** late bookings, the payment schedule is applied automatically based on the programme's payment template settings.
+
+## Common scenarios
+
+### "Our courses are yearly prices paid in two instalments. Students often join mid-year."
+
+Set up:
+
+1. **Late bookings:** Manual confirmation required (so you can review each case).
+2. **Aliquot price calculation:** Automatically calculated.
+3. **Include Initial Full Scheduled Payment:** Checked (so the student pays a pro-rata amount plus one full instalment upfront).
+
+The system calculates the remaining price automatically. You review each booking, adjust if needed, and approve. No need to manually change prices weekly — Zooza recalculates based on how many sessions remain at the time of booking.
+
+### "We run monthly memberships. Clients join any time."
+
+Set up:
+
+1. **Late bookings:** Automatically confirmed.
+2. **Aliquot price calculation:** Calculated automatically by the number of days.
+3. **Include Initial Full Scheduled Payment:** Unchecked.
+
+Clients who join mid-month pay a proportional first month. From the next month, they pay the full amount. No admin action needed.
+
+### "We want everyone to pay the same price regardless of when they join."
+
+Set up:
+
+1. **Late bookings:** Automatically confirmed.
+2. **Aliquot price calculation:** Full programme price.
+
+Every late booking is charged the full price. Simple.
+
+### "We want to offer a free trial period — no charge until the next billing cycle."
+
+Set up:
+
+1. **Late bookings:** Automatically confirmed (or manual if you want to review).
+2. **Aliquot price calculation:** No value.
+
+The client is enrolled with zero debt for the current period. Billing starts on the next scheduled payment date.
 
 ## Related
 
-- [Programme Settings Reference](../reference/programme-settings.md) -- Price and Payment tile, Advanced settings.
-- [Programme Automations](../reference/programme-automations.md) -- Late Booking Automations flow.
-- [Payment Options](payment-options.md) -- configuring payment methods and templates.
-- [Payments and Billing FAQ](../faq/payments-and-billing-faq.md) -- common payment questions including pro-rata pricing.
+- [Programme Settings Reference](../reference/programme-settings.md) — Price and Payment tile, Advanced settings.
+- [Programme Automations](../reference/programme-automations.md) — Late Booking Automations flow.
+- [Payment Templates](payment-templates-creation.md) — configuring payment methods and templates.
+- [Membership Subscription Setup](membership-subscription-setup.md) — Netflix-style recurring billing configuration.
+- [Payments and Billing FAQ](../faq/payments-and-billing-faq.md) — common payment questions including pro-rata pricing.

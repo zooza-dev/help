@@ -95,9 +95,9 @@ When a client registers after the term has started and aliquot pricing is enable
 
 **remaining sessions ÷ total sessions × full price**
 
-This adjusted price is then split according to the active payment template (e.g., monthly instalments). The calculated pro-rata price may not always be visible to the client during booking, depending on your programme settings.
+This adjusted price is then split according to the active payment template (e.g., monthly instalments). Zooza supports four calculation methods — session-based, day-based, no value, and full price — each suited to different business models.
 
-<!-- REVIEW: Confirm whether the pro-rata price is shown on the booking form or only after booking is completed. -->
+For full configuration details and common scenarios, see [Late bookings (pro-rata management)](../guides/late-bookings.md).
 
 ## Why does the payments dashboard only show 10 unpaid bookings?
 
