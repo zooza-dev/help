@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-13"
 intercom_id: 13738260
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Make-up Sessions FAQ
@@ -49,15 +49,17 @@ If you create a one-off class specifically for make-up sessions, set the class s
 
 ## How do cross-company (franchise) make-up bookings work?
 
-Franchise networks can allow make-up bookings across branches operated by different legal entities. When enabled, a parent sees available sessions from other branches in the same franchise in their make-up options.
+Franchise networks can allow make-up bookings across branches operated by different legal entities. When enabled, a parent sees available sessions from all linked branches in their make-up options.
 
-Cross-company make-up bookings follow the same rules as regular make-up bookings (capacity, 4-day rule, programme match). If make-up bookings between branches stop working, check that:
+Setting up cross-company replacements has three steps:
 
-- The franchise linking is still active between the companies.
-- The rules (such as the 4-day rule) are applied consistently across branches.
-- The target classes have available capacity.
+1. **Link the companies** — go to **Settings** → **Replacement lessons** → **Cooperate with a company**, enter the other branch's email, and send an invitation. The other branch must approve.
+2. **Enable on the programme** — open the programme → **Replacement lessons** → **Edit** → check **Allow replacement lessons from other companies**.
+3. **Configure restrictions** — set the conditions under which clients from other branches can book at your sessions.
 
-Contact Zooza support if cross-company make-up bookings were previously working but have stopped — the configuration may need to be re-verified.
+Cross-company make-up bookings follow the same rules as regular make-up bookings (capacity, 4-day rule, programme match). The restriction settings control **incoming** replacements — they define when clients from another branch can use sessions at your company.
+
+For the full setup walkthrough, admin views, and reporting, see the [Cross-company replacements](../guides/replacement-hours-complete.md#cross-company--franchise-replacements) section in the Replacement Hours guide.
 
 ## Can make-up credits carry over to the next billing period?
 

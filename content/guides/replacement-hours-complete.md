@@ -12,12 +12,12 @@ source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-02-13"
 intercom_id: 13738709
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Replacement Hours — Complete Guide
 
-Replacement hours (also called make-up sessions) allow children who miss a class to attend a different session as a substitute. This guide covers the full replacement workflow: enabling replacements, how credits are earned, how parents book them, capacity rules, cross-company replacements, and troubleshooting.
+Replacement hours (also called make-up or catch-up sessions) allow children who miss a class to attend a different session as a substitute. This guide covers the full replacement workflow: enabling replacements, how credits are earned, how parents book them, capacity rules, cross-company replacements, and troubleshooting.
 
 For quick answers, see [Replacement Hours FAQ](../faq/make-up-sessions-faq.md).
 
@@ -187,28 +187,103 @@ When a client cancels (unsubscribes) from a session, they may later want to retu
 
 In franchise networks where multiple branches operate as separate legal entities (separate Zooza accounts), replacement hours can be shared across companies. This allows a child registered at one branch to book a make-up session at a different branch.
 
-### Setup requirements
+The setup has three steps:
 
-Cross-company replacements require configuration by Zooza support. The setup involves:
+1. Linking the companies.
+2. Enabling cross-company replacements on the programme.
+3. Configuring restrictions for incoming replacement clients.
 
-1. Linking the franchise accounts so they recognize each other's registrations.
-2. Ensuring the replacement rules (such as the 4-day rule) are applied consistently across all linked companies.
-3. Matching programme/age-group compatibility between branches.
+### Step 1 — Linking companies
 
-<!-- REVIEW: Confirm the exact admin steps required to enable cross-company replacements — is this purely a backend/support setup, or can admins configure it themselves? -->
+Before clients can use replacements across branches, you must link the branches in Zooza.
 
-### How it works for parents
+1. Go to **Settings** → **Replacement lessons**.
 
-When cross-company replacements are enabled, the parent's profile shows available sessions from **all linked branches**, not just their home branch. The parent selects a session at any branch, and the system handles the booking.
+![Settings — Replacement lessons tile](../../assets/images/replacement-hours-cross-01.png)
 
-### Display priority
+2. Click **Cooperate with a company**.
 
-The system prioritizes showing sessions at the client's home branch. If the home branch has sufficient availability, sessions from other branches may not appear prominently (or at all) due to the display limit of approximately 200 options.
+![Cooperate with a company button](../../assets/images/replacement-hours-cross-02.png)
+
+3. Enter the email address of the branch you want to link. This must be the same email the branch used to register their Zooza account.
+4. Click **Send an invitation**. The other branch receives a notification requesting the link.
+5. Once the other branch approves, the companies are linked.
+
+You can see all sent requests and their status in the **Replacement lessons** tab. If a request is approved, you can click **Cancel request** to unlink the companies.
+
+![Overview of sent cooperation requests and their status](../../assets/images/replacement-hours-cross-03.png)
+
+### Step 2 — Enabling replacements from other companies on a programme
+
+Once the branches are linked, you can allow cross-company replacements at the programme level.
+
+1. Open the programme and go to the **Replacement lessons** section.
+2. Click **Edit**.
+
+![Programme replacement lessons section with Edit button](../../assets/images/replacement-hours-cross-04.png)
+
+3. Under **Replacement lessons**, check **Allow replacement lessons from other companies**.
+4. Click **Save**.
+
+![Allow replacement lessons from other companies checkbox](../../assets/images/replacement-hours-cross-05.png)
+
+### Step 3 — Configuring restrictions
+
+In the **Restrictions** section, configure the conditions under which clients from other branches can book replacement sessions in your programmes.
+
+> **Important:** These restriction settings control incoming replacements — they define under what conditions clients from another branch can take a replacement session at **your** company. They do not affect your own clients booking replacements elsewhere.
+
+![Replacement lessons restriction settings](../../assets/images/replacement-hours-cross-06.png)
+
+### Client perspective
+
+In the Client Profile, the client sees a combined view of all available replacement sessions regardless of which branch offers them. The client can see their replacement entitlements in the **Unexpired replacement lessons** tab.
+
+![Client profile — unexpired replacement lessons](../../assets/images/replacement-hours-cross-07.png)
+
+To select a replacement session, the client clicks on the programme and then clicks **Choose Replacement Lesson** for the cancelled session.
+
+![Choose Replacement Lesson button on cancelled session](../../assets/images/replacement-hours-cross-08.png)
+
+The available sessions are displayed based on the programme settings at each branch, including sessions from other linked branches.
+
+![Available replacement sessions from multiple branches](../../assets/images/replacement-hours-cross-09.png)
+
+After selecting a replacement, the client sees the booked session with a note indicating that the session is operated by another branch.
+
+![Replacement session from another branch shown in client profile](../../assets/images/replacement-hours-cross-10.png)
+
+The client receives standard notification emails about the upcoming session, including the correct location and details from the branch where the replacement was booked.
+
+### Admin view — home branch
+
+When a client books a replacement at a different branch, the home branch admin can see **where** the client selected the replacement, but cannot see the location, time, or other details from the other branch. The admin can cancel the replacement and book a new one at their own branch.
+
+![Home branch admin view — replacement at another branch](../../assets/images/replacement-hours-cross-11.png)
+
+This restriction protects client personal data — the system prevents data from being shared with a third party without the client's consent.
+
+### Admin view — host branch
+
+When a replacement client from another branch books a session at your branch, the client's details appear in the attendance register for that session. As the host admin, you can:
+
+1. Mark attendance — arrived or not arrived.
+2. Cancel the replacement — this removes the client's data from the attendance record.
+
+![Host branch admin view — replacement client in attendance](../../assets/images/replacement-hours-cross-12.png)
+
+### Replacement report
+
+In the **Calendar** tab, a report shows how many replacement sessions your clients used at your own branch versus other branches. The report includes the price for each replacement, which serves as a basis for financial arrangements between branches. Click the **Replacement lessons** button to view this report.
+
+![Replacement lessons report in Calendar](../../assets/images/replacement-hours-cross-13.png)
+
+> **Note:** Financial settlements between branches happen outside Zooza, based on your mutual agreement. Zooza provides the data but does not process inter-branch payments.
 
 ### Common issues
 
-- **Replacements between branches stopped working** — Check that the inter-company rules are still correctly configured. This typically requires Zooza support to verify.
-- **Sessions from another branch are available too early** — The 4-day rule must be applied consistently across companies. If one company's classes have an earlier start date, their sessions may appear before expected. Contact support to align the rule settings.
+- **Replacements between branches stopped working** — Verify that the cooperation link is still active in **Settings** → **Replacement lessons**. If the other branch cancelled the request, you need to re-link.
+- **Sessions from another branch are available too early** — The 4-day rule applies across companies. If one company's classes have an earlier start date, their sessions may appear before expected.
 - **Attendance marking for cross-company replacements** — There have been reported issues where a parent could not mark attendance for a cross-company replacement in the calendar. If this occurs, contact support with the specific registration and session details.
 
 ---

@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-13"
 intercom_id: 13738258
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Client Management FAQ
@@ -106,3 +106,15 @@ Whether additional fields like phone number or email are shown depends on the ro
 Go to **Settings** > **Team** to review which roles have access to client contact information.
 
 <!-- REVIEW: Confirm exact settings path for controlling which client fields are visible on the instructor attendance view. This may require a role with elevated permissions rather than a per-field toggle. -->
+
+## What does "active client" mean in Zooza?
+
+A client is active if they have at least one booking in **Enrolled**, **Trial not started**, **Trial started**, or **Trial finished** status in a class that has not ended yet. A client is also active if they have a scheduled make-up session or unused credit. Active status is determined automatically — you cannot set it manually. For the full technical definition, see [Active and inactive clients](../guides/active-inactive-clients.md).
+
+## Why is a client still showing as active after I cancelled their booking?
+
+Client deactivation runs once a day at **midnight**. If you cancel or delete a booking during the day, the client remains active until the next midnight run. Also check that the client does not have other active bookings, unused credits, or scheduled make-up sessions — any of these keeps the client active.
+
+## How does the active client count affect my Zooza subscription?
+
+Your Zooza service package is based on the **peak number of active clients** within the month — not the count at month-end. If you exceed your current package limit at any point during the month, you are automatically upgraded. To downgrade, you must request it in writing by the end of the month. For details, see [Active and inactive clients](../guides/active-inactive-clients.md).

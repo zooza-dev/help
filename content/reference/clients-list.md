@@ -286,6 +286,7 @@ The import detail shows:
 
 ## Related
 
+- [Active and inactive clients](../guides/active-inactive-clients.md) — what active/inactive status means and how it affects your service package.
 - [Data Correction Guide](../guides/data-correction-change-client.md) — step-by-step guide to correcting client data.
 - [Client Import Guide](../guides/client-import.md) — how to import clients from a CSV file.
 - [Common Booking Scenarios](../faq/common-booking-scenarios.md) — FAQ for booking-related tasks.
