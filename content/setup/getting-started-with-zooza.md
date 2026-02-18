@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728795
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Getting Started with Zooza
@@ -70,7 +70,7 @@ If you need more detail, see: Glossary of Key Terms (at the end of this article)
 6. [Guide: Roles & Permissions](../guides/user-roles.md)
 7. Set up your billing profile (Zooza > Settings > Billing)Add your company name, address, company ID, IBAN and other details.
 8. If you use Billing software (e.g. Xero), you can keep billing details in your billing software and connect it to Zooza.
-9. [Guide: How Invoicing Works](https://support.zooza.online/portal/en/kb/articles/billing-settings)
+9. [Guide: Billing and invoicing](billing-and-invoicing.md)
 10. Decide your main payment modelDo you think mostly in:Terms (Autumn / Spring / block of weeks), or
 11. Term Fee (paid monthly, one-off, quarterly, after/before N sessions...)
 12. Ongoing membership (rolling weekly classes), or
@@ -512,7 +512,7 @@ your connected invoicing software (e.g. Xero), or
 
 All billing sessions sync with reports and client cards.
 
-[Learn More](https://support.zooza.online/portal/en/kb/articles/billing-settings)
+[Learn More](billing-and-invoicing.md)
 
 ### 8.2 Booking & communication automation
 

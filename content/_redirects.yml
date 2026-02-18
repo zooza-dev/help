@@ -6,6 +6,14 @@ redirects:
     to: "/help/payments/price-and-payment-setup"
     status: 301
 
+  - from: "/portal/en/kb/articles/billing-settings"
+    to: "/help/payments/billing-and-invoicing"
+    status: 301
+
+  - from: "/portal/en/kb/articles/invoicing"
+    to: "/help/payments/billing-and-invoicing"
+    status: 301
+
   - from: "/portal/en/kb/articles/group-creation"
     to: "/help/classes/creating-a-class"
     status: 301

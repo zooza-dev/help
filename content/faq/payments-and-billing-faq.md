@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-13"
 intercom_id: 13728495
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Payments and Billing FAQ
@@ -131,3 +131,21 @@ To fix this:
 2. Open the relevant billing profile.
 3. Verify that the **account holder name** and **IBAN** match your actual bank account details exactly.
 4. Save and resend the payment notification to the client.
+
+For full details on billing profiles, see [Billing and invoicing](../setup/billing-and-invoicing.md).
+
+## How do I set up billing profiles and invoicing?
+
+Go to **Settings** → **Billing**. There you can enable automatic invoice generation, set up your default billing profile (company name, IBAN, address), and create additional profiles for multi-entity businesses. Each programme can be assigned a specific billing profile. For the full setup guide, see [Billing and invoicing](../setup/billing-and-invoicing.md).
+
+## Can I generate an invoice manually for a single booking?
+
+Yes. Open the booking detail, click **Show payments**, and in the **Invoices** section click **Generate invoice**. Select the billing profile to use and confirm. The invoice is generated immediately and emailed to the client. This works regardless of whether automatic invoice generation is enabled.
+
+## What is the difference between automatic and manual invoice generation?
+
+**Automatic** — Zooza generates an invoice every time a payment status changes to "paid" on a booking. A single booking can produce multiple invoices if the client pays in instalments. **Manual** — you generate invoices one at a time from the booking detail. You can use both: leave automatic generation off during setup, and generate invoices manually or enable it later.
+
+## Can I use multiple billing profiles for different programmes?
+
+Yes. Go to **Settings** → **Billing** → **Other billing profiles** and click **Add**. Each profile has its own company details, IBAN, and invoice numbering. Assign a profile to a programme in **Programme** → **Settings** → **Price and Payment** → **Invoicing**. If no profile is assigned, the default billing profile is used.

@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728879
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Smartbill - invoice management
@@ -47,7 +47,7 @@ Choose whether you want automatic generation of invoices or you will manually ge
 ![Screenshot](../../assets/images/smartbill-invoices-03.png)
 
 Set up Billing profile/s for communication from Zooza
-Link your billing profile to the GoCardless app for automatic payment pairing - [Invoicing](https://support.zooza.online/portal/en/kb/articles/invoicing)
+Link your billing profile to the GoCardless app for automatic payment pairing - [Billing and invoicing](billing-and-invoicing.md)
 Set the number series for invoices in Smartbill
 
 
