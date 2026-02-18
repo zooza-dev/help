@@ -109,16 +109,17 @@ You can also create a third product as a booking form bundle** that combines mul
 
 After registering for a Pay-as-you-go programme, clients can:
 
-1. Purchase an entry pass from their profile (under ****Orders** and in the detail of a Booking).
-2. See their credit balance or remaining entries.
+1. Purchase an entry pass from their profile (under **Orders** and in the detail of a booking).
+2. See their credit balance or remaining entries on their profile home page.
 3. Book sessions — the pass is automatically redeemed when they book.
 4. If they unregister from a session, the entry or credit is returned.
 
-Clients can view their pass status, remaining balance, and usage history in their profile dashboard.
+For a detailed walkthrough of how clients see and use entry passes, see [Entry pass — client view](entry-pass-client-view.md).
 
 ## Related guides
 
 - [Pay-as-you-go programme](pay-as-you-go-programme.md) — How to set up the programme type that uses entry passes.
 - [Linked classes](linked-classes.md) — Use one entry pass across multiple linked classes.
 - [Selling products during booking](selling-products-during-booking.md) — How to offer products in the booking flow.
+- [Entry pass — client view](entry-pass-client-view.md) — How clients see and use entry passes in their profile.
 - [Pay-as-you-go FAQ](../faq/pay-as-you-go-faq.md) — Common questions about entry passes and Pay-as-you-go.

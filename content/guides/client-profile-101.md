@@ -4,123 +4,137 @@ slug: "client-profile-101"
 type: "guides"
 product_area: "Clients"
 sub_area: ""
-audience: ["admin"]
-tags: []
+audience: ["admin", "client"]
+tags: ["client-profile", "parent-portal", "login", "payments", "make-up", "benefits", "entry-pass", "credits", "discounts"]
 status: "published"
 source_legacy_path: "legacy/0023_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-15"
+last_converted: "2026-02-18"
 intercom_id: 13728588
-intercom_sync: false
+intercom_sync: true
 ---
+
+<!-- Synonyms: client profile, parent portal, client portal, customer portal, profil klienta, rodičovský portál, klientský profil -->
 
 # Client Profile 101
 
-## A simple guide to get you started
+The Client Profile is a self-service dashboard where clients manage their bookings, sessions, payments, benefits, and orders in one place. It works on both mobile phones and computers and does not require remembering any password.
 
-The Client Profile helps you manage your bookings, sessions, and payments in one place.
+> **For admins:** The Client Profile reduces support requests — clients can check payment status, find invoices, book make-up sessions, and view their benefits without contacting you.
 
- It works on both mobile phones and computers and does not require remembering any passwords.
+## Logging in
 
-## 1. Logging in
+1. The client opens the Client Profile URL (embedded on your website or sent via email).
+2. They enter the email address used during booking.
+3. They receive a **one-time login code** or a **secure login link** by email.
+4. Clicking the link or entering the code logs them in automatically.
 
-If you are not logged in yet, open the Client Profile and enter the email address you used during booking.
+There is no password to create or remember. Each login sends a fresh email.
 
-This is the same email you use to receive booking and payment information.
+![Screenshot — client profile 101](../../assets/images/client-profile-101-01.png)
 
-##
+![Screenshot — client profile 101](../../assets/images/client-profile-101-02.png)
 
-## 2. No passwords needed
+> **Tip for admins:** Use the `WIDGET_PROFILE_URL` dynamic tag in your email templates to automatically insert the correct Client Profile URL for each client.
 
-After entering your email address, you will receive either:
+## Home page overview
 
-- a one-time login code, or
-- a secure login link
+Once logged in, the client sees their home page with:
 
-This will automatically log you in to your Client Profile.
+- **Family members** — switch between children (or attendees) at the top.
+- **Active and past bookings** — all bookings in one place.
+- **Quick actions** — pay, book make-ups, view sessions.
 
- There is no password to remember.
+![Screenshot — client profile 101](../../assets/images/client-profile-101-03.png)
 
-##
+### Switching between family members
 
-## 3. Your Client Profile
+If a client has multiple children enrolled, they can switch between them by clicking a name or avatar at the top. Some sections (like orders or family-level discounts) are shared and do not change when switching.
 
-Once logged in, you will see your Client Profile.
+## Bookings and programme overview
 
-Here you can find:
+Opening a booking shows the programme dashboard:
 
-- all your children
-- all active and past bookings
-- your booking history
+- **Upcoming sessions** — what is next.
+- **Programme details** — key information about the programme.
+- **Quick actions** — access to sessions, payments, and benefits.
 
-Everything related to your bookings is available in one place and can be used fully on mobile.
+![Screenshot — client profile 101](../../assets/images/client-profile-101-04.png)
 
-##
+## Sessions
 
-## 4. Programme overview
+In the sessions tab, clients can view:
 
-Open any programme to see its dashboard.
+- All scheduled sessions.
+- Attended sessions.
+- Cancelled or missed sessions.
 
-The dashboard shows:
+The list stays up to date automatically. If the provider uses online sessions, a livestream link may appear here.
 
-- upcoming sessions
-- important programme details
-- quick access to key actions
+![Screenshot — client profile 101](../../assets/images/client-profile-101-05.png)
 
-##
+## Payments and invoices
 
-## 5. All sessions
+In the payments section, clients can:
 
-In the sessions tab, you can view:
+- See which payments are **unpaid** and which are **paid**.
+- **Pay online** — open the unpaid item and continue to the payment gateway (if online payment is enabled) or view payment instructions (for bank transfer).
+- **Download invoices or receipts** (if the provider enables invoicing).
 
-- all scheduled sessions
-- attended sessions
-- cancelled or missed sessions
+The payment status updates automatically after payment.
 
-The list is always kept up to date.
+![Screenshot — client profile 101](../../assets/images/client-profile-101-06.png)
 
-##
+## Make-up sessions
 
-## 6. Sharing a booking
+If a client cancels a session or misses it, and the provider allows make-ups, the client can:
 
-In the booking details, you can share access with another person, for example:
+1. See available make-up sessions in their profile.
+2. Select a make-up session from the available options.
+3. Confirm the make-up directly.
 
-- another parent
-- a grandparent
-- an older child
+Make-up availability depends on real capacity — if no suitable session with space is available, the option does not appear. Clients receive email or WhatsApp reminders about available make-ups.
 
-This allows them to receive notifications and updates related to the booking.
+![Screenshot — client profile 101](../../assets/images/client-profile-101-07.png)
 
-##
+## Benefits
 
-## 7. Payments and invoices
+The Benefits section groups all "extras" in one place:
 
-In the payments section, you can:
+| Benefit type | What the client sees |
+|---|---|
+| **Make-ups** | Available and used make-up sessions (with history). |
+| **Discounts** | Available and expired discounts. Some discounts are family-level. |
+| **Entry passes** | Prepaid visit passes — remaining entries, expiration date, status. See [Entry pass — client view](entry-pass-client-view.md). |
+| **Credits** | Prepaid credit balance, where and when credits were used. |
 
-- see the payment status
-- pay online if needed
-- download invoices or receipts
+This helps clients answer their own questions: "Do I still have a make-up?", "How many entries are left on my pass?", "Where did my credit go?"
 
-Everything related to payments is available anytime.
+## Orders
 
-##
+The orders section shows:
 
-## 8. Missed sessions and make-up sessions
+- **Unpaid orders** — number and details.
+- **Paid orders** — history of completed orders.
 
-If you cancel a session, you may have the option to:
+Clients can open an order to see its details, including items purchased, payment status, and entry pass entries.
 
-- choose a make-up session from available options
-- confirm it directly in your profile
+## Sharing a booking
 
-You will receive email or WhatsApp reminders, and your session list will automatically update.
+In the booking details, clients can share access with another person — for example, another parent, a grandparent, or an older child. The shared person receives notifications and updates related to the booking.
 
-##
+![Screenshot — client profile 101](../../assets/images/client-profile-101-08.png)
 
-## That's it
+> **For admins:** You can also set up shared access from the admin side. See [Client Management FAQ](../faq/client-management-faq.md) for details on giving a second parent access.
 
-The Client Profile is designed to be simple and easy to use.
+## Bottom navigation menu
 
- You can access it anytime — on your phone or on your computer.
+On mobile, a quick navigation menu at the bottom lets clients jump directly to a section (Bookings, Benefits, Orders) without scrolling.
 
-Enjoy
+## Related
+
+- [Client Profile FAQ](../faq/client-profile-faq.md) — common questions about the Client Profile.
+- [Client Management FAQ](../faq/client-management-faq.md) — admin-side client management.
+- [Entry pass — client view](entry-pass-client-view.md) — how clients see and use entry passes.
+- [Customizing widgets](customizing-widgets.md) — embedding the Client Profile on your website.

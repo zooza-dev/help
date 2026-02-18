@@ -157,7 +157,7 @@ Example: every Tuesday at 10:00.
 
 [![Screenshot](../../assets/images/customizing-widgets-01.png)
 
-Guide: Creating Sessions in a Class](https://support.zooza.online/portal/en/kb/articles/creating-events-in-groups)
+Guide: Creating a class](creating-a-class.md)
 
 ![Screenshot](../../assets/images/customizing-widgets-01.png)
 

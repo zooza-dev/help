@@ -21,7 +21,7 @@ If, as a language school or a project offering individual sessions, you are firs
 
 The first question to ask yourself is how well you can tell when and how many dates you are offering a client. Individual sessions can be created with a schedule:
 
-1. Full – you know exactly when the dates will take place and how much you want to be paid for them. In this case, use progress programmes with payment in advance or according to your own payment template. See [instructions](https://support.zooza.online/portal/en/kb/articles/course-creation). 
+1. Full – you know exactly when the dates will take place and how much you want to be paid for them. In this case, use progress programmes with payment in advance or according to your own payment template. See [Creating a class](creating-a-class.md). 
 2. Gradual - you don't know exactly when the dates will take place and the client pays by the number of hours. In this case, use Pay-as-you-go programmes and create hours on a rolling basis with ongoing payments. If the client has prepaid credit, you can record it on the booking.
 3. How to create a [Pay-as-you-go programme](pay-as-you-go-programme.md)
 4. Instructions on how to edit payments on booking.
@@ -30,7 +30,7 @@ The first question to ask yourself is how well you can tell when and how many da
 Based on the above, start making an offer as follows:
 
 1. Create classes as Interested in a given courseInterested parties will gradually register in the class and wait for instructions. Don’t forget to edit the email template that will come as a confirmation of inclusion in the class – *Interested*.[Instructions](lead-collection.md)
-2. Create an individual groupThen create sessions for individual bookings by creating a class of one capacity. [Instructions](https://support.zooza.online/portal/en/kb/articles/creating-events-in-groups)
+2. Create an individual groupThen create sessions for individual bookings by creating a class of one capacity. [Instructions](creating-a-class.md)
 3. Move the client from the lead collection class to an individual groupCreate session/session dates and move the given booking to this class from the class – *Interested*. In the booking details, click on the *Class *tab and then on the *Move *option where you select where.
  ![Screenshot](../../assets/images/individual-lessons-group-interested-01.png)
  ![Screenshot](../../assets/images/individual-lessons-group-interested-02.png)

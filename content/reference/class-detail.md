@@ -196,6 +196,7 @@ Sessions can be sorted by date (ascending/descending).
 
 ## Related
 
+- [Creating a class](../guides/creating-a-class.md) — step-by-step guide to creating a new class.
 - [Classes List](classes-list.md) — the cross-programme classes view.
 - [Sessions List](sessions-list.md) — global sessions view.
 - [Change Instructor Guide](../guides/change-instructor.md) — how to reassign instructors.

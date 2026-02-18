@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-15"
 intercom_id: 13728496
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Programmes, Timetables and Sessions FAQ
@@ -53,7 +53,23 @@ You can duplicate a class to create a similar one at a different time or locatio
 
 ## How do I add a new class to an existing programme?
 
-Go to the programme, click on the timetable section, and create a new timetable entry. You will need to set the schedule, location, and price. The price does not automatically copy from other classes in the same programme — it must be set explicitly.
+Go to the programme overview and click **New Class**. Fill in the class name, billing period, location, instructor, capacity, and session schedule. If the class should have a different price than the programme, enter it in the price step — otherwise the programme price applies automatically. For a full walkthrough, see [Creating a class](../guides/creating-a-class.md).
+
+## What is the difference between a Fixed Period class and a Lead Collection class?
+
+A **Fixed Period** class has scheduled sessions with specific dates and times — this is the standard class type for courses, terms, and camps. A **Lead Collection** class has no sessions initially — it is used to collect interest from potential clients before you finalise the schedule. Once you add sessions to a lead collection class, it becomes a regular fixed period class. See [Lead collection](../guides/lead-collection.md) for details.
+
+## Can I set a different price for each class in the same programme?
+
+Yes. When creating or editing a class, you can enter a class-level price that overrides the programme price. This is useful when different levels, locations, or time slots have different pricing. If you leave the class price empty, the programme price applies. See [Creating a class](../guides/creating-a-class.md).
+
+## What do the financial numbers on the class tile mean?
+
+Each class tile shows three financial figures (recalculated every 30 minutes):
+
+- **Paid debt** — total amount already paid across all bookings.
+- **Issued debt** — total debt created from all booking types (including late bookings and waiting list).
+- **Balance** — current account status (difference between issued and paid).
 
 ## How do I hide a class from online registration?
 

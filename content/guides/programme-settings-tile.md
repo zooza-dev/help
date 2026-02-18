@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728523
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Programme settings tile
@@ -43,14 +43,14 @@ In this section, you can define the core details of your programme:
 2. You can also update the *Target audience* if the programme changes from class classes to individual sessions, or vice versa.
 3. Selecting the *For children* checkbox changes the wording in certain parts of the application. For example, in the booking form, “Name” will become “Parent’s Name.”
  ![Screenshot](../../assets/images/course-settings-tile-02.png)
-4. If you check the *Archive *box and save the settings, the programme will be removed from your active programme list and placed in the archive. A full explanation of this feature is available [HERE](https://support.zooza.online/portal/en/kb/articles/delete-archive-courses).
+4. If you check the *Archive *box and save the settings, the programme will be removed from your active programme list and placed in the archive. Archived programmes can be found by selecting the **Archived** filter in the Programmes list.
  ![Screenshot](../../assets/images/course-settings-tile-03.png)
 
 ## Labels and colours
 
 ![Screenshot](../../assets/images/course-settings-tile-04.png)
 
-1. In the *Tag *field, you can optionally enter a category name for the programme. Tags are for your internal use only and help you organise and filter your programmes more easily. To save the tag, click OK next to the field. For more details on using tags, see the [Tags manual.](https://support.zooza.online/portal/en/kb/articles/labels-and-extra-fields)
+1. In the *Tag *field, you can optionally enter a category name for the programme. Tags are for your internal use only and help you organise and filter your programmes more easily. To save the tag, click OK next to the field. For more details on using tags, see the [Labels](labels.md) guide.
 2. You can also assign a programme colour (if it wasn’t set during the programme creation wizard) to help clients easily identify your programmes. For example, a programme for 3–4-year-olds could be set to “Zooza Orange,” making it instantly recognisable on the calendar, such as on Tuesdays and Thursdays.
 
 ## Gallery

@@ -59,7 +59,7 @@ Attention! Do not forget to set whether you want to notify clients about the cha
 
 ## Edit a single session
 
-If you only have 1 term that you need to edit, you can do this by following the same steps as in the chapter above or directly in the session details. For more information about working with appointments, see the manual about [Creating sessions/sessions](https://support.zooza.online/portal/en/kb/articles/creating-events-in-groups).
+If you only have 1 term that you need to edit, you can do this by following the same steps as in the chapter above or directly in the session details. For more information about creating classes, see [Creating a class](creating-a-class.md).
 
 ![Screenshot](../../assets/images/edit-events-in-courses-09.png)
 

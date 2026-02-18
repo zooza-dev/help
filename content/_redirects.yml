@@ -6,6 +6,26 @@ redirects:
     to: "/help/payments/price-and-payment-setup"
     status: 301
 
+  - from: "/portal/en/kb/articles/group-creation"
+    to: "/help/classes/creating-a-class"
+    status: 301
+
+  - from: "/portal/en/kb/articles/creating-events-in-groups"
+    to: "/help/classes/creating-a-class"
+    status: 301
+
+  - from: "/portal/en/kb/articles/course-creation"
+    to: "/help/classes/creating-a-class"
+    status: 301
+
+  - from: "/portal/en/kb/articles/entry-pass-client-profile"
+    to: "/help/orders/entry-pass-client-view"
+    status: 301
+
+  - from: "/portal/en/kb/articles/labels-and-extra-fields"
+    to: "/help/programmes/additional-fields"
+    status: 301
+
   - from: "/portal/en/kb/articles/whatsapp-integration-usage-beta"
     to: "/help/communication/whatsapp-integration"
     status: 301
@@ -187,7 +207,7 @@ redirects:
     status: 301
 
   - from: "/portal/en/kb/articles/advanced-dashboard-in-the-parent-profile-parent-portal"
-    to: "/help/clients/client-profile-dashboard"
+    to: "/help/clients/client-profile-101"
     status: 301
 
   - from: "/portal/en/kb/articles/labels-drawers-for-selected-payments"
@@ -360,7 +380,7 @@ redirects:
     status: 301
 
   - from: "/help/clients/parent-profile-dashboard"
-    to: "/help/clients/client-profile-dashboard"
+    to: "/help/clients/client-profile-101"
     status: 301
 
   - from: "/help/widgets/parent-portal-faq"

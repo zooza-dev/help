@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
 intercom_id: 13728528
-intercom_sync: false
+intercom_sync: true
 ---
 
 # Programme settings
@@ -104,7 +104,7 @@ This setting is set when creating the programme, but you can change it anytime a
 ## Additional fields
 
 
-At the programme level, you can add *Additional Fields* to the booking form to collect additional information from participants, such as age, allergies, or skill level. For detailed instructions on creating and managing extra fields, see the [Additional Fields manual](https://support.zooza.online/portal/en/kb/articles/labels-and-extra-fields).
+At the programme level, you can add *Additional Fields* to the booking form to collect additional information from participants, such as age, allergies, or skill level. For detailed instructions on creating and managing extra fields, see the [Additional fields on the booking form](additional-fields.md) guide.
 
 ![Screenshot](../../assets/images/course-settings-09.png)
 

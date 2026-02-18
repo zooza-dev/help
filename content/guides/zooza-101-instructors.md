@@ -57,9 +57,11 @@ Log in to the Zooza application using your instructor account.
 
 Step 2 – Use the dashboard
 On the dashboard, you’ll see a list of your upcoming classes.
+![Screenshot — zooza 101 instructors](../../assets/images/zooza-101-instructors-01.png)
 
 Step 3 – Open the class
 Click on the class or session you are about to run.
+![Screenshot — zooza 101 instructors](../../assets/images/zooza-101-instructors-02.png)
 
 Step 4 – Mark attendance
 Mark each child as present or absent.
@@ -71,10 +73,13 @@ If needed, you can add a note:
 - for the whole class
 
 These notes can be shared with parents, depending on the organisation’s settings.
+![Screenshot — zooza 101 instructors](../../assets/images/zooza-101-instructors-03.png)
+![Screenshot — zooza 101 instructors](../../assets/images/zooza-101-instructors-04.png)
 
 Step 6 – Use the calendar (alternative view)
 You can also open your calendar from the menu.
 This shows all your classes for the selected week.
+![Screenshot — zooza 101 instructors](../../assets/images/zooza-101-instructors-05.png)
 
 Step 7 – That’s it
 Attendance is saved directly in the class view.
