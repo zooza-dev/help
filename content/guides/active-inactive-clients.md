@@ -11,8 +11,8 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-02-18"
-intercom_id:
-intercom_sync: true
+intercom_id: 13762569
+intercom_sync: false
 ---
 
 <!-- Synonyms: active client, inactive client, client status, client capacity, aktívny klient, neaktívny klient, kapacita klientov, servisný balík, počet klientov -->

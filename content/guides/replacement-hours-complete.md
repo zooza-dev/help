@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-02-13"
 intercom_id: 13738709
-intercom_sync: true
+intercom_sync: false
 ---
 
 # Replacement Hours — Complete Guide

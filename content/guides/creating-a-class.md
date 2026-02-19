@@ -11,8 +11,8 @@ source_legacy_path: "legacy/html/group-creation.html"
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-18"
-intercom_id:
-intercom_sync: true
+intercom_id: 13762573
+intercom_sync: false
 ---
 
 <!-- Synonyms: create class, new class, add class, create timetable, new timetable, group creation, vytvorenie triedy, nová trieda, pridanie triedy, vytvorenie rozvrhu -->

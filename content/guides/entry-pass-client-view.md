@@ -11,8 +11,8 @@ source_legacy_path: "legacy/html/entry-pass-client-profile.html"
 source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-02-18"
-intercom_id:
-intercom_sync: true
+intercom_id: 13762581
+intercom_sync: false
 ---
 
 <!-- Synonyms: entry pass client profile, pass status, remaining entries, how client uses pass, permanentka klient, stav permanentky, zostávajúce vstupy, kreditná permanentka -->

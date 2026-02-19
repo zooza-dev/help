@@ -12,7 +12,7 @@ source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-13"
 intercom_id: 13738258
-intercom_sync: true
+intercom_sync: false
 ---
 
 # Client Management FAQ
