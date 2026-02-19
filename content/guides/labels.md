@@ -11,8 +11,8 @@ source_legacy_path: "legacy/html/labels-and-extra-fields.html"
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-17"
-intercom_id:
-intercom_sync: true
+intercom_id: 13762583
+intercom_sync: false
 ---
 
 <!-- Synonyms: tags, categories, tagging, filtering, programme labels, class labels, booking labels, štítky, kategórie -->
