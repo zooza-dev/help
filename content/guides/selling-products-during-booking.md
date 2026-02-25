@@ -23,7 +23,6 @@ In Zooza, selling a physical product during the booking (booking) flow is a two-
 
 1. Create Services (items / variants) – e.g., T-shirt sizes (S, M, L) with price and stock
 2. Create a Product – class those services into one product called “T-shirt” and decide if it’s optional/mandatory Then you attach the product to a class / timetable, so it appears during booking and/or in the client profile.
-
 <br>
 
 ![Screenshot](../../assets/images/selling-products-during-registration-01.png)
@@ -48,9 +47,9 @@ Why this step exists: Services work as the “items” (variants) inside a produ
 
 1. Go to Products
 2. Click Create product
-3. Fill in:Name (example: “T-shirt”)
+3. Fill in: Name (example: “T-shirt”)
 4. Enable Available for online checkout (important if you sell online as a stand alone ITEM - not only during booking proces)
-5. Decide what the product is used for:You can sell physical products (T-shirts, materials)
+5. Decide what the product is used for: You can sell physical products (T-shirts, materials)
 6. Or digital products (videos, ebooks, bundles) the same way (product + items)
 7. or combination
 
@@ -68,7 +67,6 @@ Why this step exists: Services work as the “items” (variants) inside a produ
 - This forces the client to choose a size during booking (so the product shows correctly on the website and can’t be “half-selected”)
 
 Optional product:
-
 - If you do not make it mandatory, clients can skip buying the product during booking
 
 Save the product.
@@ -79,12 +77,11 @@ Save the product.
 2. Open the class settings and find Product settings
  ![Screenshot](../../assets/images/selling-products-during-registration-04.png)
 
-3. Select which products you want to sell during bookingChoose “T-shirt”
+3. Select which products you want to sell during booking - Choose “T-shirt”
 4. Optional (recommended):Enable Available in client profile
 5. This allows the product to be visible and purchasable from the parent / student profile after booking
  ![Screenshot](../../assets/images/selling-products-during-registration-05.png)
 6. Save
-
 
 ## Step 5: Test the booking flow
 
@@ -103,14 +100,12 @@ Save the product.
 - Using services always use stock number
 - You can sell videos/ebooks/bundles the same way—create product and attach to booking. (Delivery is handled by your digital delivery process outside this specific setup.)
 
-##
 
 ![Screenshot](../../assets/images/client-import-01.png)
 
 ## What Zooza does (and what it doesn’t)
 
 Zooza supports the operational layer of selling products around your bookings. It helps you:
-
 - show products during booking / booking (or in the client profile as an upsell)
 - record what was purchased (product + variant like size)
 - track stock (if you use stock numbers)
@@ -120,7 +115,6 @@ Zooza supports the operational layer of selling products around your bookings. I
 ### Important: Zooza is not full e-commerce fulfillment
 
 Zooza does not handle the full e-commerce chain such as:
-
 - shipping / delivery logistics
 - packing / fulfillment workflows
 - courier integrations

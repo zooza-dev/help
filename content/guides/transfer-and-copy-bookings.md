@@ -36,7 +36,7 @@ Both features are available to admins and instructors.
 | Client or instructor requests a class change (skill level, interest, age group) | **Transfer** |
 | Client wants to continue in the next term and asks you to handle it             | **Copy**     |
 | Client wants to attend an additional class alongside the current one            | **Copy**     |
-| You need to move a client to a holding/collection class temporarily             | **Transfer** |
+| You need to move a client to a lead collection class temporarily                | **Transfer** |
 | You are setting up a new term and carrying forward existing bookings            | **Copy**     |
 
 A transfer can be done at any time — before the programme starts, during, or after it ends.

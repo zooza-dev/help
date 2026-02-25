@@ -19,65 +19,39 @@ intercom_sync: false
 
 # Tracking billable sessions
 
-If you already have set up billable sessions, the application will start calculating the progression of the class differently: You can switch between the types of statistics in the class list. Next to the *Sort* drop-down menu there is a filter button to set the View Settings. You can switch between viewing the *schedule bookings* or the *schedule progress*.
+If you already have set up billable sessions, the application will start calculating the progression of the class differently: You can switch between the types of statistics in the class list. Next to the *Sort* drop-down menu there is a filter button to set the View Settings. You can switch between viewing the *class bookings* or the *class progress*.
 
 ![Screenshot](../../assets/images/viewing-billable-events-01.png)
 
 This selection is then saved and retained in all user sessions.
 
-## View schedule progress
+## View class progress
 
-If the class does not have set billable sessions, then the view of
-schedule progress for classes shows the total number of available dates
-(scheduled, unscheduled) compared to the number of sessions that have
-already happened.
+If the class does not have set billable sessions, then the view of schedule progress for classes shows the total number of available dates (scheduled, unscheduled) compared to the number of sessions that have already happened.
 
 ![Screenshot](../../assets/images/viewing-billable-events-02.png)
 
-If the class already has billable sessions set, the view shows the
-total number of billable sessions available compared to the number of
-billable sessions that have already happened. Next to the coin pile icon
-there is number in brackets indicating the number of billable sessions
-subject to payment that are set on the class or on the programme.
+If the class already has billable sessions set, the view shows the total number of billable sessions available compared to the number of billable sessions that have already happened. Next to the coin pile icon there is number in brackets indicating the number of billable sessions subject to payment that are set on the class or on the programme.
 
 ![Screenshot](../../assets/images/viewing-billable-events-03.png)
 
 ![Screenshot](../../assets/images/discount-code-01.png)
 
-Attention! The setting on the class/programme specifies how many billable sessions the
-class SHOULD HAVE. When viewing with billable sessions, we are looking at
-ACTUAL STATUS of sessions that are marked as paid. The number in
-parentheses serves as confirmation that the class does not actually
-contain MORE or LESS billable sessions than it should.
+Attention! The setting on the class/programme specifies how many billable sessions the class SHOULD HAVE. When viewing with billable sessions, we are looking at ACTUAL STATUS of sessions that are marked as paid. The number in parentheses serves as confirmation that the class does not actually contain MORE or LESS billable sessions than it should.
 
 ## Viewing over/under drawn billable sessions
 
-As mentioned earlier, the number of sessions actually paid may differ
-from the settings in the class/programme. Zooza will notify you of this
-status as follows:
-
+As mentioned earlier, the number of sessions actually paid may differ from the settings in the class/programme. Zooza will notify you of this status as follows:
 - In class list when the class overrun is displayed: 2/4 (10)
-- This
-means that the class has already set 2 billable sessions out of 4, but the
- total should be set to 10 sessions.
+	- This means that the class has already set 2 billable sessions out of 4, but the total should be set to 10 sessions.
 
-In class detail
+- In class detail under billable sessions setting, a warning will appear to remind you that you have more or less billable sessions than you should have
 
-- under billable sessions setting, a warning will
-appear to remind you that you have more or less billable sessions than you
- should have
-
-In session detail
-
-- under billable sessions setting, a warning will
-appear to remind you that you have more or less billable sessions than you
- should have.
+- In session detail under billable sessions setting, a warning will appear to remind you that you have more or less billable sessions than you should have.
 
 ![Screenshot](../../assets/images/viewing-billable-events-05.png)
 
 ![Screenshot](../../assets/images/allowing-multiple-registration-03.png)
-
-
 You can view the overdrawn/under drawn billable sessions using the filter at the class level.
 
 ![Screenshot](../../assets/images/viewing-billable-events-07.png)
@@ -94,15 +68,12 @@ You can view the overdrawn/under drawn billable sessions using the filter at the
 
 ## View in the Instructor report
 
-In order to view a billable session in the instructor report, see the *Paid* column, which indicates that the term is paid.
+In order to view a billable session in the instructor report, see the *Paid* column, which indicates that the session is paid.
 
 ![Screenshot](../../assets/images/viewing-billable-events-10.png)
 
 ## View in the Client profile
 
-In the client profile on the programme report, the field: Total Sessions
-is displayed, which shows either the total number of billable sessions set
- for this class, or the total number of sessions in the class (if no
-billable sessions are set).
+In the client profile on the programme report, the field: Total Sessions is displayed, which shows either the total number of billable sessions set for this class, or the total number of sessions in the class (if no billable sessions are set).
 
 ![Screenshot](../../assets/images/viewing-billable-events-11.png)

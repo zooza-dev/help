@@ -15,11 +15,11 @@ intercom_id: 13738709
 intercom_sync: false
 ---
 
-# Replacement Hours — Complete Guide
+# Make - up sessions — Complete Guide
 
-Replacement hours (also called make-up sessions) allow children who miss a class to attend a different session as a substitute. This guide covers the full replacement workflow: enabling replacements, how credits are earned, how parents book them, capacity rules, cross-company replacements, and troubleshooting.
+Replacement hours (also called make-up sessions) allow children who miss a class to attend a different session as a substitute. This guide covers the full make-up session workflow: enabling make-up sessions, how credits are earned, how parents book them, capacity rules, cross-company make-up sessions, and troubleshooting.
 
-For quick answers, see [Replacement Hours FAQ](../faq/make-up-sessions-faq.md).
+For quick answers, see [Make-up sessions FAQ](../faq/make-up-sessions-faq.md).
 
 ---
 

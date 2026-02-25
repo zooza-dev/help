@@ -23,7 +23,7 @@ A Pay-as-you-go programme is a membership-style programme where clients register
 
 Unlike ongoing programmes (where clients commit to all sessions upfront), a Pay-as-you-go programme works like a flexible membership:
 
-1. The client registers for the programme once.
+1. The client enrols for the programme once.
 2. From their profile, they choose which sessions to attend.
 3. A payment obligation is created for each session they book.
 4. If the client cancels a session, the debt is reset to zero.
@@ -83,18 +83,16 @@ Create as many sessions ahead as possible so clients have a full schedule to cho
 
 ![Adding sessions to a class](../../assets/images/pay-as-you-go-add-sessions.png "Add sessions form")
 
-
-
-If you do not add sessions right away, the class is created as a [lead collection class](lead-collection.md) (class without dates). You can add sessions later.
+If you do not add sessions right away, the class is created as a [lead collection class](lead-collection.md) (class without sessions). You can add sessions later.
 
 ## How clients use it
 
-Once a client registers for a Pay-as-you-go programme, they manage their attendance from their profile.
+Once a client enrols for a Pay-as-you-go programme, they manage their attendance from their profile.
 
 ### Booking sessions
 
 1. The client logs in to their profile on your website.
-2. They see the programme they are registered for.
+2. They see the programme they are enroled for.
 3. They click **Book date** to see available sessions.
 4. They select the sessions they want to attend.
 5. A payment obligation is created automatically for each booked session.
@@ -106,7 +104,6 @@ Once a client registers for a Pay-as-you-go programme, they manage their attenda
 
 
 ![Client view — session booked confirmation](../../assets/images/pay-as-you-go-client-session-booked.png "Booked session in client attendance")
-
 
 Clients can also book sessions through the calendar widget on your website.
 
@@ -125,7 +122,7 @@ The client receives a notification email for each session they book or unbook.
 
 Pay-as-you-go programmes have two additional attendance settings:
 
-- **Require a valid entry pass** — When enabled, clients must have a valid [entry pass](creating-entry-passes.md) to book a session. Without a valid pass, they cannot register for sessions.
+- **Require a valid entry pass** — When enabled, clients must have a valid [entry pass](creating-entry-passes.md) to book a session. Without a valid pass, they cannot enrol for sessions.
 - **Redeem if unpaid** — When enabled, entry passes can be used even if the pass order has not been paid yet.
 
 These settings are optional. Without entry passes, clients simply pay per session at the unit price.

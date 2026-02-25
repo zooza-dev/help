@@ -23,11 +23,11 @@ Zooza does most of the work for you by sending information to the client automat
 > - Invitation to confirm booking
 > - Confirmation of booking (for programme, one-off, open, lecture, and separate templates for late booking, waiting list booking, class -- Interested)
 > - Order confirmation (product purchase)
-> - Automatic term reminder
-> - Confirmation of opting out from the term
+> - Automatic session reminder
+> - Confirmation of cancelling a session
 > - Confirmation of payment
 
-This automated communication works through templates designed to serve your needs. We do not recommend changing templates as they are based on mass communication standards. If you need to modify a template, we recommend copying the original and editing the copy, or creating a completely new one. This gives you the opportunity to customise the way you address clients, rewrite the text to describe what you do (e.g., letting clients know you look forward to seeing them *at practice*, or *in class*, or in a *session*), and add or remove information.
+This automated communication works through templates designed to serve your needs. We do not recommend changing templates as they are based on mass communication standards. If you need to modify a template, we recommend copying the original and editing the copy, or creating a completely new one. This gives you the opportunity to customize the way you address clients, rewrite the text to describe what you do (e.g., letting clients know you look forward to seeing them *at practice*, or *in class*, or in a *session*), and add or remove information.
 
 ![Message template editor](../../assets/images/message-template-editor.png "Message template editor")
 
@@ -93,10 +93,10 @@ If you cannot find your custom template, check that you are looking in the **Use
 
 ## When automatic emails are NOT sent
 
-Zooza sends automatic confirmation emails for online registrations. However, automatic emails are **not sent** in these cases:
+Zooza sends automatic confirmation emails for online bookings. However, automatic emails are **not sent** in these cases:
 
-- **Copied registrations** — when you copy a registration from one term to another.
-- **Manually created registrations** — when you create a registration on behalf of a client.
-- **Transferred registrations** — when you transfer a registration between classes.
+- **Copied bookings — when you copy a booking from one term to another.
+- **Manually created bookings** — when you create a booking on behalf of a client.
+- **Transferred bookings** — when you transfer a booking between classes.
 
-In all these cases, you must send the confirmation email manually from the registration's **Communication** tab.
+In all these cases, you must send the confirmation email manually from the booking's **Communication** tab.

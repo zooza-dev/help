@@ -29,14 +29,14 @@ You can add dynamic tags via the **Tags** icon in the text formatting panel. Cli
 
 Each email sent for a specific booking allows you to dynamically fill in client data. At the time the email is sent, Zooza replaces these tags with specific values.
 
-| Dynamic tag                                                 | Definition                                                                                 | Example                                               |
-| ----------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ----------------------------------------------------- |
+| Dynamic tag                                                         | Definition                                                                                 | Example                                               |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ----------------------------------------------------- |
 | <code>&#42;&#124;COURSE_PRICE&#124;&#42;</code>                     | Current programme price. If the class has its own price, the class price is used.          | 20.00 EUR                                             |
 | <code>&#42;&#124;REGISTRATION_VALUE&#124;&#42;</code>               | Value of the booking at the time of creation. Shows the original full amount.              | 20.00 EUR                                             |
 | <code>&#42;&#124;AFFILIATE_ID&#124;&#42;</code>                     | ID of the partner who facilitated the booking                                              | 12345                                                 |
 | <code>&#42;&#124;REGISTRATION_ID&#124;&#42;</code>                  | Booking number                                                                             | 12345                                                 |
 | <code>&#42;&#124;REGISTRATION_STATUS&#124;&#42;</code>              | Booking status                                                                             | registered                                            |
-| <code>&#42;&#124;REGISTRATION_FEE&#124;&#42;</code>                 | Registration fee. If not listed on the booking, it is taken from the programme.            | 30 EUR                                                |
+| <code>&#42;&#124;REGISTRATION_FEE&#124;&#42;</code>                 | Booking fee. If not listed on the booking, it is taken from the programme.                 | 30 EUR                                                |
 | <code>&#42;&#124;VARIABLE_SYMBOL&#124;&#42;</code>                  | Variable symbol used for payment. Typically the booking number.                            | 12345                                                 |
 | <code>&#42;&#124;COMPANY&#124;&#42;</code>                          | Your company name                                                                          | My company Ltd.                                       |
 | <code>&#42;&#124;COURSE_PLACE&#124;&#42;</code>                     | Programme location. Composed of room and location data.                                    | Big hall, Free time center, 323 Green Lane, Edinburgh |
@@ -51,7 +51,7 @@ Each email sent for a specific booking allows you to dynamically fill in client 
 | <code>&#42;&#124;CURRENT_BALANCE&#124;&#42;</code>                  | Current balance on the client's booking. Can be positive or negative.                      | -30 EUR                                               |
 | <code>&#42;&#124;SCHEDULE_DURATION&#124;&#42;</code>                | Programme duration in hours                                                                | 15:00                                                 |
 | <code>&#42;&#124;SCHEDULE_NAME&#124;&#42;</code>                    | Class name (without programme name)                                                        | Butterflies, tuesdays at 17:00                        |
-| <code>&#42;&#124;SCHEDULED_AT_DATE&#124;&#42;</code>                | Date when the instalment (debt) is due on the booking                                      | 10                                                    |
+| <code>&#42;&#124;SCHEDULED_AT_DATE&#124;&#42;</code>                | Date when the scheduled payment (debt) is due on the booking                               | 10                                                    |
 | <code>&#42;&#124;FIRST_NAME&#124;&#42;</code>                       | Client name                                                                                | John                                                  |
 | <code>&#42;&#124;QR_CODE&#124;&#42;</code>                          | QR code for payment. Requires: amount due on booking, IBAN and SWIFT on programme/company. | Picture with QR code                                  |
 | <code>&#42;&#124;IBAN&#124;&#42;</code>                             | Bank account for payment. If specified at the programme level, that value is used.         | GB54BARC20039545449825                                |
@@ -70,21 +70,21 @@ Each email sent for a specific booking allows you to dynamically fill in client 
 | <code>&#42;&#124;EF_VAT&#124;&#42;</code>                           | Extra field -- VAT ID number                                                               | 123456                                                |
 | <code>&#42;&#124;IS_BUSINESS_ORDER&#124;&#42;</code>                | Whether a booking is on a company or not                                                   | 1                                                     |
 | <code>&#42;&#124;TURN_OFF_EVENT_NOTIFICATIONS_URL&#124;&#42;</code> | URL to turn off morning notifications. Works only in the Morning Reminders template.       |                                                       |
-| <code>&#42;&#124;CANCELED_CONFIRMATION_URL&#124;&#42;</code>        | URL for opting out from the term. Works only in the Morning Reminders template.            |                                                       |
+| <code>&#42;&#124;CANCELED_CONFIRMATION_URL&#124;&#42;</code>        | URL for canceling from the session. Works only in the Morning Reminders template.          |                                                       |
 | <code>&#42;&#124;ALLOW_REPLACEMENTS&#124;&#42;</code>               | Whether make-up sessions are available for the booking                                     | 1                                                     |
 | <code>&#42;&#124;FULL_NAME&#124;&#42;</code>                        | Client's full name                                                                         | Raymond Robbins                                       |
-| <code>&#42;&#124;EVENT_NAME&#124;&#42;</code>                       | Name of the term (not the programme or class). Available for term reminder only.           | Individual session, Cambridge                         |
-| <code>&#42;&#124;EVENT_DATE&#124;&#42;</code>                       | Date of the term. Available for term reminder only.                                        | 14. 5. 2021                                           |
-| <code>&#42;&#124;EVENT_PLACE&#124;&#42;</code>                      | Venue of the term. Works only in the Morning Reminders template.                           | Big hall, Free time center, 323 Green Lane, Edinburgh |
-| <code>&#42;&#124;EVENT_DATE_DAY&#124;&#42;</code>                   | Day of the term. Available for term reminder only.                                         | Monday                                                |
-| <code>&#42;&#124;EVENT_TIME&#124;&#42;</code>                       | Term time. Available for term reminder only.                                               | 14:30                                                 |
-| <code>&#42;&#124;EVENT_COURSE&#124;&#42;</code>                     | Programme name for the term. Available for term reminder only.                             | Summer camp 07/2023                                   |
+| <code>&#42;&#124;EVENT_NAME&#124;&#42;</code>                       | Name of the session (not the programme or class). Available for session reminder only.     | Individual session, Cambridge                         |
+| <code>&#42;&#124;EVENT_DATE&#124;&#42;</code>                       | Date of the session. Available for session reminder only.                                  | 14. 5. 2021                                           |
+| <code>&#42;&#124;EVENT_PLACE&#124;&#42;</code>                      | Venue of the session. Works only in the Morning Reminders template.                        | Big hall, Free time center, 323 Green Lane, Edinburgh |
+| <code>&#42;&#124;EVENT_DATE_DAY&#124;&#42;</code>                   | Day of the session. Available for session reminder only.                                   | Monday                                                |
+| <code>&#42;&#124;EVENT_TIME&#124;&#42;</code>                       | Session time. Available for session reminder only.                                         | 14:30                                                 |
+| <code>&#42;&#124;EVENT_COURSE&#124;&#42;</code>                     | Programme name for the session. Available for session reminder only.                       | Summer camp 07/2023                                   |
 | <code>&#42;&#124;EVENT_TRAINER&#124;&#42;</code>                    | Main instructor name at the session level. Available for upcoming session notification.    | Suzan Winslow                                         |
 | <code>&#42;&#124;DEFAULT_COURSE_PRICE&#124;&#42;</code>             | Programme price if class price is 0; otherwise the class price.                            | 34.43 EUR                                             |
 | <code>&#42;&#124;DEBT&#124;&#42;</code>                             | Debt value on booking. If no debt, displays the same as `DEFAULT_COURSE_PRICE`.            | 100 EUR                                               |
 | <code>&#42;&#124;DUE_DATE&#124;&#42;</code>                         | Due date for payment                                                                       | 33 EUR                                                |
 
-## Conditioning tags
+## Conditional tags
 
 You can use conditional tags in templates. For example, if you accept business orders, you can add a conditional block to confirm to the client that you are recording their booking as a business and will send them an invoice shortly.
 

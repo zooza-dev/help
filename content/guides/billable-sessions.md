@@ -1,23 +1,26 @@
 ---
-title: "Billable sessions"
-slug: "billable-sessions"
-type: "guides"
-product_area: "Classes"
+title: Billable sessions
+slug: billable-sessions
+type: guides
+product_area: Classes
 sub_area: ""
-audience: ["admin"]
-tags: ["billing", "payments"]
-status: "published"
-source_legacy_path: "legacy/0044_Welcome to Zooza.html"
-source_language: "en"
-needs_screenshot_replacement: false
-last_converted: "2026-02-16"
+audience:
+  - admin
+tags:
+  - billing
+  - payments
+status: published
+source_legacy_path: legacy/0044_Welcome to Zooza.html
+source_language: en
+needs_screenshot_replacement: true
+last_converted: 2026-02-16
 intercom_id: 13728565
 intercom_sync: false
 ---
 
 # Billable sessions
 
-In programmes using the **Booking for the full programme duration** type, a client pays for all sessions in the class when they book. However, the actual number of sessions in a class may not always match the number the client should pay for. The **billable sessions** feature lets you separate paid sessions from unpaid ones within a single booking.
+In programmes using the **Booking for the full programme duration** type, a client pays for all sessions in the class when they enrol. However, the actual number of sessions in a class may not always match the number the client should pay for. The **billable sessions** feature lets you separate paid sessions from unpaid ones within a single booking.
 
 This is purely a billing feature — it has nothing to do with attendance. It controls how the booking price is calculated.
 
@@ -39,7 +42,7 @@ Billable sessions are configured at three levels: programme, class, and session.
 3. Set the **Billable sessions** field to the number of sessions that should be paid for.
 
 This value becomes the default for all classes within the programme.
-
+<!-- screenshot outdated -->
 ![Billable sessions setting on programme](../../assets/images/how-to-create-paid-events-01.png "Billable sessions field in Programme Price and Payment settings")
 
 ### 2. Class level (override per class)
@@ -52,7 +55,7 @@ If a class has its own value, it overrides the programme-level setting. This all
 ![Billable sessions setting on class](../../assets/images/discount-code-01.png "Billable sessions field in Class Price and Payment settings")
 
 > **Important:** If the programme has billable sessions set (e.g. 12) and the class value is 0, the programme value is used. You cannot set a class to 0 billable sessions when the programme has a non-zero value.
-
+<!-- screenshot outdated -->
 ![Billable sessions override example](../../assets/images/how-to-create-paid-events-03.png "Class-level override of billable sessions")
 
 ### 3. Session level (mark individual sessions)
@@ -64,7 +67,7 @@ Each session must also be marked as billable or not billable:
    ![Billable checkbox when creating sessions](../../assets/images/how-to-create-paid-events-04.png "Billable checkbox on session creation")
 
 2. **On an existing session** — open the session detail → **Session settings** → toggle the **Billable session** field.
-
+	<!-- screenshot outdated -->
    ![Billable session toggle in session detail](../../assets/images/how-to-create-paid-events-05.png "Billable session field in session settings")
    ![Billable session detail](../../assets/images/how-to-create-paid-events-06.png "Session detail showing billable status")
 

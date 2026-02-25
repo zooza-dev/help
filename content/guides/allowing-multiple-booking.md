@@ -9,7 +9,7 @@ tags: []
 status: "published"
 source_legacy_path: "legacy/0032_Welcome to Zooza.html"
 source_language: "en"
-needs_screenshot_replacement: false
+needs_screenshot_replacement: true
 last_converted: "2026-02-11"
 intercom_id: 13728505
 intercom_sync: false
@@ -22,24 +22,23 @@ You can expand the booking form not only with extra fields but also with the pos
 The price per programme is automatically converted to the price for two or more bookings.
 
 
-
 ![Screenshot](../../assets/images/allowing-multiple-registration-01.png)
 
 The button will be added automatically as soon as you enable multiple programme bookings. You can enable multiple programme bookings at the *Programme *level, in the *Online Registration *section.
 
 ## How to set it up
 
-
-In the *Online Registration *section, click *Edit.*
-
+In the *Online Booking *section, click *Edit.*
+<!-- screenshot outdated-->
 ![Screenshot](../../assets/images/allowing-multiple-registration-02.jpg)
 
 1. Click on the *Allow multiple programme bookings* checkbox.
 2. Choose the minimum and maximum number of bookings.
 
 ![Screenshot](../../assets/images/allowing-multiple-registration-03.png)
+Example:
+If it is a ballroom dance where you want to allow clients to come without a partner and with a partner, choose option 1 minimum and 2 maximum.
 
-Example: if it is a ballroom dance where you want to allow clients to come without a partner and with a partner, choose option 1 minimum and 2 maximum.
 
  3. Determine from whom the basic fields of the booking form will be collected (first name, last name, email, phone number) and from whom the extra fields will be collected (child’s name, age, address… ).
 
@@ -52,5 +51,7 @@ TIP: If you are unsure of your choices – look at the booking form for the prog
 
 
  5. Don’t forget to *Save *settings
+ 
+ <!--screenshot outdated -->
 
 ![Screenshot](../../assets/images/allowing-multiple-registration-05.png)

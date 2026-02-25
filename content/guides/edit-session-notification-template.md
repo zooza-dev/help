@@ -14,13 +14,13 @@ last_converted: "2026-02-11"
 intercom_id: 13728550
 intercom_sync: false
 ---
-
+<!-- TIME for sending upcoming sessions reminders is gone, when is it sent? -->
 # Edit automatic notifications of an upcoming session
 
 The [automatic notification](automatic-session-notification.md) is one of the messages that you can customise in the message templates. You can adjust the message text to suit your organisation's needs:
 
 1. Change the way of reaching out
-2. Change the terminology (cancel session for the session/exercise/session)
+2. Change the terminology (cancel session for the session/exercise)
 3. Add written information on the latest time to cancel the session
 
 ## Setting up the template

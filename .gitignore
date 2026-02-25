@@ -9,3 +9,4 @@ build/exports/targets/intercom/*
 __pycache__/
 *.pyc
 .venv/
+help/

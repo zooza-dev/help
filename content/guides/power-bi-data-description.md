@@ -34,7 +34,6 @@ At the moment Zooza provides all kinds of static data about programmes, bookings
 
 ## Attendance
 
-
 The attendance table records a detailed history of each participant’s attendance for a session. Each row represents a single attendance instance linked to a specific booking. Key information captured in this table includes session type (standard, make-up session), attendance status, records whether the upcoming session notification email was sent to this attendance record.
 
 ![Screenshot](../../assets/images/customizing-widgets-01.png)
@@ -42,8 +41,7 @@ The attendance table records a detailed history of each participant’s attendan
 Tip: To assemble a complete view of each participant’s journey, join Attendance with table Bookings, Schedules, Programmes or Sessions.
 
 
-## Programmes
-
+## Courses
 
 The Programmes table serves as the central repository for all programme configurations and options. Each record represents a distinct programme and is identified by a unique id, which can be used to link to related tables (e.g., Schedules, Bookings, Sessions, Attendance). Key columns include information from tiles in the application:
 
@@ -56,8 +54,7 @@ The Programmes table serves as the central repository for all programme configur
 7. Trial
 8. Boolean flag 0/1 whether the programme uses additional fields
 
-## Sessions
-
+## Events
 
 The Sessions table stores every session instance - both scheduled and deleted - along with its core details and calculated participation metrics. Each row represents one session occurrence and is keyed by id. Key columns include :
 
@@ -70,7 +67,6 @@ The Sessions table stores every session instance - both scheduled and deleted - 
 
 ## Labels
 
-
 Labels applied to highlight programmes, classes, or bookings appear in this table and it contains all information just like in Zooza’s Labels section.
 
 ![Screenshot](../../assets/images/customizing-widgets-01.png)
@@ -80,21 +76,17 @@ Tip: We recommend joining it with a schedules table with __calc__public__labels.
 
 ## Orders
 
-
 This table lists every order (purchased product) processed in Zooza- complete with payment details and user information—and, when an order is placed during programme booking, its corresponding booking id appears in the payments_managed_by column, so you will want to join it with the Bookings table.
 
 ## Places
 
-
 This table provides all active and inactive Zooza locations with their static details and is ideal for regional overviews when joined with the Schedules and Sessions tables.
 
-## Bookings
-
+## Registrations
 
 This table captures every aspect of a booking—payment details and schedules, client and programme information, trial workflows, business order indicators, and any custom fields—and includes calculated metrics such as payment status, attendance and cancellation counts, unused make-up sessions, and other key summary values.
 
 ## Schedules
-
 
 The Schedules table stores every detail visible in the class detail view, including:
 

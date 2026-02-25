@@ -78,7 +78,6 @@ Defined as classes of the following types:
 
 ### New Enrollments
 
-
 The number of bookings created within the selected period, aggregated across all dimensions (e.g. product, company, place).
 
 ### Enrollments
@@ -96,18 +95,15 @@ Counts the number of enrollments with unpaid debt, whether for a currently runni
 
 ### Cancellations
 
-
 Total number of enrollments marked as "Cancelled" as of the latest available data (T-1). For broader date ranges, this is shown as an average across the selected periods.
 
 ### Ended
-
 
 Number of enrollments that have completed all sessions and ended successfully within the selected period.
 
 ## Payments
 
 ### Received Payments
-
 
 The total value of credit-based payments received during the selected period. Over larger date ranges (e.g. quarters), the value is cumulative.
 
@@ -125,11 +121,9 @@ Net Revenue = Received payments - Debt - Discounts - Refunds.
 
 ### Unpaid Debt
 
-
 Outstanding financial obligations tied to enrollments — either for classes already in progress or yet to start.
 
 ### Royalties
-
 
 A network-specific fee calculated according to the franchisor’s defined rules. Each network may use a different formula or basis for royalty calculation.
 
@@ -137,11 +131,9 @@ A network-specific fee calculated according to the franchisor’s defined rules.
 
 ### Sessions
 
-
 Cumulative number of sessions scheduled during the selected period.
 
 ### Sessions with attendance
-
 
 Total sessions that have recorded either attendance or public session note.
 
@@ -150,5 +142,4 @@ Total sessions that have recorded either attendance or public session note.
 The number of unique instructors assigned to sessions within the selected period.
 
 ![Screenshot](../../assets/images/client-import-01.png)
-
 Note: This metric excludes sessions where the instructor is yet to be decided.

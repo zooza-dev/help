@@ -15,7 +15,7 @@ intercom_id: 13738257
 intercom_sync: false
 ---
 
-# Blocks (Term Segments) FAQ
+# Blocks (Sessions Segments) FAQ
 
 ## What are blocks and when should I use them?
 
@@ -34,7 +34,7 @@ Block capacity inherits from the class capacity. If your class capacity is 12, e
 - 11 clients register for the entire programme and 1 client registers for Block 1 only.
 - A 12th client registers for the entire programme -- Block 1 now has 13 occupied spots.
 
-Full-programme bookings take priority. To avoid this, disable the "register for the entire programme" option in your programme's online registration settings so clients can only register for individual blocks.
+Full-programme bookings take priority. To avoid this, disable the "enrol for the entire class period" option in your programme's online registration settings so clients can only register for individual blocks.
 
 ## What happens to attendance records when I change a student's block?
 
@@ -48,7 +48,7 @@ This makes it difficult to verify how many sessions a student attended before th
 
 Dynamic tags such as `COURSE_DATE_DAY` and `COURSE_TIME` pull their values from the first session in the class as a whole, not from the client's specific block. If a client is enrolled in a later block (e.g. starting in April instead of January), the confirmation email may display the wrong date or time.
 
-**Workaround:** Replace `COURSE_DATE_DAY` and `COURSE_TIME` with the `ORDER_SUMMARY` tag in your email templates. `ORDER_SUMMARY` includes the correct block-specific details for each booking. You can edit the booking confirmation template at **Communication -> Templates -> Booking done**.
+**Workaround:** Replace `COURSE_DATE_DAY` and `COURSE_TIME` with the `ORDER_SUMMARY` tag in your email templates. `ORDER_SUMMARY` includes the correct block-specific details for each booking. You can edit the booking confirmation template at **Communication -> Templates -> Confirmation of booking**.
 
 ## How do trials interact with blocks?
 

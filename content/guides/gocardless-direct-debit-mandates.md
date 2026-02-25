@@ -41,11 +41,11 @@ You will see this option only if:
 
 ![Screenshot](../../assets/images/gocardless-direct-debit-mandates-02.png)
 
-1. Choose the correct booking for that mandate
+3. Choose the correct booking for that mandate
 
 ![Screenshot](../../assets/images/gocardless-direct-debit-mandates-03.png)
 
-1. Confirm OK
+4. Confirm OK
 
 Once linked:
 

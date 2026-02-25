@@ -23,7 +23,7 @@ In Zooza, you can change an instructor either at the class level or directly on 
 
 ## Changing an instructor at the class level
 
-1. Open the Class (Timetable) you want to update.
+1. Open the Class you want to update.
 2. Find the Instructor setting.
  ![Screenshot](../../assets/images/change-instructor-01.png)
 3. Select a different instructor.

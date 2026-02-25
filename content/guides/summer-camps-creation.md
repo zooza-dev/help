@@ -20,18 +20,16 @@ intercom_sync: false
 
 ## Creating summer camps
 
-
 If you are creating an offer for summer camps for week-long camps, you will create the offer as follows:
 
 - Create a new programme, in the *Programmes* section click on the *New Programme* button and select *Meetings*
 - Select the booking type – booking for the entire duration
 of the programme, as in this case you wish to create a camp where clients
 sign up for a full week
-- Click *Continue
+- Click *Continue*
 
 ![Screenshot](../../assets/images/summer-camps-creation-01.png)
 
-*
 
 - Then fill in all required fields and click *Continue.* Choose a name such as *Summer Camp, Summer Dance Camp, Day Summer Camp*, or whatever suits you. This name is visible to your clients.
 
@@ -41,26 +39,20 @@ sign up for a full week
 
 ![Screenshot](../../assets/images/summer-camps-creation-03.png)
 
-- Fill the class with dates according to your wishes, if you can determine
- them right away. Classes need to be filled with terms individually. If
-you don’t want to create dates, the class will be created as the [lead collection class](lead-collection.md) and you can add dates afterwards.
+- Fill the class with dates according to your wishes, if you can determine them right away. Classes need to be filled with terms individually. If you don’t want to create dates, the class will be created as the [lead collection class](lead-collection.md) and you can add dates afterwards.
 
 ![Screenshot](../../assets/images/summer-camps-creation-04.png)
 
-- Detailed instructions on how to create terms can be found in this [manual](https://support.zooza.online/portal/en/kb/articles/creating-events-in-groups).
+- Detailed instructions on how to create sessions can be found in this [manual](https://support.zooza.online/portal/en/kb/articles/creating-events-in-groups).
 
 ![Screenshot](../../assets/images/allowing-multiple-registration-04.png)
-
 
 Next, fill in all the important fields in the programme settings. You can open each subpage by clicking on “edit” in that subpage.
 
 ## Edit summer camp settings
 
 1. Fill in the price and payment method.
-2. If you offer clients the option to pay in installments or offer a
-discount in the case of siblings, activate payment templates in the
-“price and payments” section. If you do not have the necessary payment
-template created, create one in the “settings” section in the left menu
+2. If you offer clients the option to pay in installments or offer a discount in the case of siblings, activate payment templates in the “price and payments” section. If you do not have the necessary payment template created, create one in the “settings” section in the left menu
 at the bottom, under “payment templates” and activate it for the programme.
 3. Set the display in the online registration on your site. Decide how
 late bookings will be approved – manually or automatically with an

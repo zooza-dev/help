@@ -36,7 +36,6 @@ Key characteristics:
 For security reasons, banks limit GoCardless connections to approximately **90 days**. This is a requirement imposed by the bank, not by Zooza or GoCardless.
 
 The lifecycle follows this pattern:
-
 1. You authorize GoCardless in your internet banking.
 2. Transactions flow automatically for up to 90 days.
 3. The connection expires. Transaction data stops flowing.
@@ -51,9 +50,9 @@ After each renewal, the 90-day countdown resets.
 When the 90-day window closes:
 
 - GoCardless stops receiving transaction data from your bank.
-- Zooza stops receiving new payments for automatic matching.
+- Zooza stops receiving new payments for automatic pairing.
 - Payments still arrive in your bank account normally -- they just are not forwarded to Zooza.
-- Any unmatched payments remain unmatched until you either renew the connection or pair them manually.
+- Any unmatched payments remain unpaired until you either renew the connection or pair them manually.
 
 Zooza sends an email notification before your connection expires. If you miss this notification, you may not realize the connection has lapsed until you notice unmatched payments.
 

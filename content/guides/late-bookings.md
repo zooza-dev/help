@@ -17,7 +17,7 @@ intercom_sync: false
 
 # Late bookings (pro-rata management)
 
-A **late booking** occurs when a client registers for a class that has already started. Zooza marks these bookings with a snail icon and a "Late booking" status so you can easily identify them.
+A **late booking** occurs when a client enrols for a class that has already started. Zooza marks these bookings with a snail icon and a "Late booking" status so you can easily identify them.
 
 Zooza gives you full control over what happens when someone joins late: whether the booking is accepted automatically or requires your approval, and how the price is calculated — from a fully automatic pro-rata reduction to a fixed full price.
 
@@ -152,14 +152,14 @@ When a client registers late with **manual approval** enabled, the payment sched
 To apply a payment schedule:
 
 1. Open the booking detail and go to the **Payments** section.
-2. In the **Instalment Plan** area, click **Create** and follow the wizard to select a payment template.
+2. In the **Payment Plan** area, click **Create** and follow the wizard to select a payment template.
 3. Change the booking status to **Enrolled** on the same day.
 
 For **automatically confirmed** late bookings, the payment schedule is applied automatically based on the programme's payment template settings.
 
 ## Common scenarios
 
-### "Our courses are yearly prices paid in two instalments. Students often join mid-year."
+### "Our courses are yearly prices paid in two scheduled payments. Students often join mid-year."
 
 Set up:
 

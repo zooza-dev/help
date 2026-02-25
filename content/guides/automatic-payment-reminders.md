@@ -17,32 +17,32 @@ intercom_sync: false
 
 # Automatic reminders for payment schedule
 
-If the client has selected payment with a payment template in the booking or you have set it up manually, they will always be informed of this obligation in time -- automatically by the application. Reminders are sent as email notifications. Learn how to set up payment templates in the [payment templates manual](payment-templates-creation.md).
+If the client has selected payment with a payment schedule in the booking or you have set it up manually, they will always be informed of this obligation in time -- automatically by the application. Reminders are sent as email notifications. Learn how to set up payment templates in the [payment templates manual](payment-templates-creation.md).
 
 ## Reminder 1: Upcoming payment notification
 
-Informs the client that an instalment payment will be due on their programme booking in a few days (depending on the setup).
+Informs the client that a scheduled payment will be due on their programme booking in a few days (depending on the setup).
 
 1. The reminder must be enabled in **Settings --> Payments**, where you can specify the number of days before the payment is created when the notification should be sent.
-
+<!-- screenshot outdated -->
 ![Payment reminder settings](../../assets/images/payment-reminder-settings.png "Payment reminder settings")
 
 2. The notification before the payment is created is sent according to the formula:
    **Due date - Number of days due - Number of days before payment creation**
 
-3. You can edit the text in **Communication --> Message Templates**, under the template titled: **Upcoming Payment Notification**.
+3. You can edit the text in **Communication --> Message Templates**, under the template titled: **Upcoming Payment**.
 
 4. To communicate the date when the payment will be created, use the dynamic tag: `SCHEDULED_AT_DATE`
 
 ## Reminder 2: Payment created notification
 
-Informs the client that a new instalment debt has been created on their booking. The date when the payment is posted and the notification sent follows the formula: **Due Date - Number of days due**.
+Informs the client that a new scheduled payment has been created on their booking. The date when the payment is posted and the notification sent follows the formula: **Due Date - Number of days due**.
 
 1. Set the payment due date in **Settings --> Payments**, where you can specify the number of days.
-
+<!-- screenshot outdated -->
 ![Payment due date settings](../../assets/images/payment-due-date-settings.png "Payment due date settings")
 
-2. Customize the text in **Communication --> Message Templates**, under the template named: **Call for payment**.
+2. Customize the text in **Communication --> Message Templates**, under the template named: **New payment**.
 
 3. To communicate the due date, use the dynamic tag: `DUE_DATE`
 
@@ -51,18 +51,18 @@ Informs the client that a new instalment debt has been created on their booking.
 Informs the client that the booking has not been paid by the due date.
 
 1. It is sent on the due date if the booking is in an unpaid/partially paid status.
-2. Edit the text in **Communication --> Message Templates**, under the template titled: **Notification of outstanding payment**.
+2. Edit the text in **Communication --> Message Templates**, under the template titled: **Missed payment**.
 3. To communicate the due date, use the dynamic tag: `DUE_DATE`
 
 ## Understanding the three notification types
 
 Clients often confuse these three notifications. Here is a clear distinction:
 
-| Notification | When it is sent | Purpose | Template name |
-|---|---|---|---|
-| **Upcoming payment** | Before the debt is created (configurable days) | Informational — tells the client a payment will be due soon | Upcoming Payment Notification |
-| **Payment created** | When the instalment debt is posted | Action required — tells the client to pay | Call for payment |
-| **Overdue payment** | On or after the due date, if unpaid | Urgent — the payment is past due | Notification of outstanding payment |
+| Notification         | When it is sent                                | Purpose                                                     | Template name    |
+| -------------------- | ---------------------------------------------- | ----------------------------------------------------------- | ---------------- |
+| **Upcoming payment** | Before the debt is created (configurable days) | Informational — tells the client a payment will be due soon | Upcoming Payment |
+| **Payment created**  | When the instalment debt is posted             | Action required — tells the client to pay                   | New Payment      |
+| **Overdue payment**  | On or after the due date, if unpaid            | Urgent — the payment is past due                            | Missed Payment   |
 
 ### Common confusion: "I already paid but got a reminder"
 
@@ -72,7 +72,7 @@ This happens when:
 2. The payment was received by the bank but **auto-pairing has not yet processed** it (GoCardless syncs once daily; email-notification pairing is near real-time).
 3. The system sent the next scheduled notification before the payment was matched.
 
-The client sees what looks like an overdue notice, but it was actually the "upcoming" or "payment created" notification for a future instalment. The wording of these notifications should clearly distinguish them.
+The client sees what looks like an overdue notice, but it was actually the "upcoming" or "payment created" notification for a future scheduled payment. The wording of these notifications should clearly distinguish them.
 
 ### Notification timing
 

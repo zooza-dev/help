@@ -19,11 +19,9 @@ intercom_sync: false
 
 ![Screenshot](../../assets/images/blocks-creation-07.png)
 
-
 Programmes - individual sessions for one client, in which it is possible to sign up for the 1st session for free and then continue with the whole programme.
 
 ![Screenshot](../../assets/images/individual-lessons-climbing-wall-02.png)
-
 Example: One-to-one English language programmes with a free trial session. Then the client prepays for a package of 10 sessions with the option to retake.
 
 Client

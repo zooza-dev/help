@@ -10,7 +10,7 @@ tags: []
 status: published
 source_legacy_path: legacy/0086_Welcome to Zooza.html
 source_language: en
-needs_screenshot_replacement: false
+needs_screenshot_replacement: true
 last_converted: 2026-02-15
 intercom_id: 13728602
 intercom_sync: false
@@ -24,27 +24,24 @@ Within the payment templates, you have several options on how to use them for yo
 
 ## Usage
 
-
 For a practical application of the different payment types, here are some examples.
 
 ## Language programmes
 
-
 I am an organizer of language programmes that last the whole school year, i.e. from September to June of the following year. I want to allow clients to pay for the programme monthly, semi-annually, or in one lump sum for the entire year, as it suits them according to their means. I want to provide an incentive discount for paying in advance for the entire programme. For such a programme I will set up the following templates:
 
 1. Periodic payment in advance with no discount – monthly. It will be used for regular monthly payments for the programme, which will go out to the client on the day of the month that you can choose.
-2. Periodic payment in advance with a smaller discount – semi-annually. It will be used to pay for the programme in two installments. If the client chooses this payment, he will have a discount of, for example, 5% on the programme, which will be automatically calculated from the price of the programme.
-3. One-time payment in advance with a larger discount. It will be used to pay for the programme for its entire duration, i.e. the whole year. If the client chooses this payment, he will have a discount of, for example, 10% on the programme, which will be automatically calculated from the price of the programme.
+2. Periodic payment in advance with a smaller discount – semi-annually. It will be used to pay for the programme in two scheduled payments. If the client chooses this payment, he will have a discount of, for example, 5% on the programme, which will be automatically calculated from the price of the programme.
+3. One-off payment in advance with a larger discount. It will be used to pay for the programme for its entire duration, i.e. the whole year. If the client chooses this payment, he will have a discount of, for example, 10% on the programme, which will be automatically calculated from the price of the programme.
 
 ## Children programmes
 
+I am an organizer of exercises for children, which have a duration of one semester. I want to allow parents to pay for the programme in 3 scheduled payments or in one lump sum for the whole duration of the programme, as it suits whom. I want to provide an incentive discount for paying in advance for the entire programme. I also want them to have the option of a discount if they have and enrol more children. For such a programme I will set up the following templates:
 
-I am an organizer of exercises for children, which have a duration of one semester. I want to allow parents to pay for the programme in 3 instalments or in one lump sum for the whole duration of the programme, as it suits whom. I want to provide an incentive discount for paying in advance for the entire programme. I also want them to have the option of a discount if they have and register more children. For such a programme I will set up the following templates:
-
-1. One-time payment with discount. It will be used to pay for the entire duration of the programme if the parent registers only one child. I will set a smaller incentive discount, for example 3%.
-2. One-time payment Siblings with a discount of, for example, 20%. It will be used to pay for the entire duration of the programme, in case a parent registers more than one child. The discount is automatically calculated from the price for 2x programme price You need to set up the option to add a person at the programme level – online registration.
-3. Periodic payment for a fixed number of installments without discount. It will be used for payment divided into 3 equal parts, in case the parent registers only one child. Here I have no reason to give a discount.
-4. Periodic payment for a fixed number of installments, Siblings with a discount of, for example, 10%. It will be used for payment divided into 3 equal parts, in case a parent registers more than one of his/her children. The discount is automatically calculated from the price for 2x programme price and divided into 3 parts. You need to set up the option to add a person at the programme level – online registration.
+1. One-off payment with discount. It will be used to pay for the entire duration of the programme if the parent registers only one child. I will set a smaller incentive discount, for example 3%.
+2. One-off payment Siblings with a discount of, for example, 20%. It will be used to pay for the entire duration of the programme, in case a parent registers more than one child. The discount is automatically calculated from the price for 2x programme price You need to set up the option to add a person at the programme level – online booking.
+3. Periodic payment for a fixed number of scheduled payments without discount. It will be used for payment divided into 3 equal parts, in case the parent enrols only one child. Here I have no reason to give a discount.
+4. Periodic payment for a fixed number of scheduled payments, Siblings with a discount of, for example, 10%. It will be used for payment divided into 3 equal parts, in case a parent enrols more than one of his/her children. The discount is automatically calculated from the price for 2x programme price and divided into 3 parts. You need to set up the option to add a person at the programme level – online booking.
 
 ## Set up payment templates
 
@@ -57,43 +54,39 @@ In order to set up payments on a programme, you need to create payment templates
 
 ![Screenshot](../../assets/images/payment-templates-creation-03.png)
 - Select one of the options as required:
-- One-time payment – you have the option to set up a one-time payment for the programme.For example, if a client chooses a programme that lasts half a year, but
+- One-off payment – you have the option to set up a one-off payment for the programme. For example, if a client chooses a programme that lasts half a year, but
 does not want to pay monthly, they choose to pay for the entire programme
-at once.For such a payment you can give a discount either none, in EUR or as a percentage.
+at once. For such a payment you can give a discount either none, in EUR or as a percentage.
 
 ![Screenshot](../../assets/images/payment-templates-creation-04.png)
-- Periodic pre-paid payment – you have the option to set whether the programme can be paid gradually, i.e. in frequency.Here you select from the options – Monthly, Quarterly, Semi-annually,
-Annually, After N terms (the number of terms after which the next
-installment for the programme will be issued), Fixed number of installments
- (the number of installments into which the price for the programme will be
- divided).The programme provider has the option to grant a discount for this type of payment either none, in EUR or as a percentage.
+- Periodic pre-paid payment – you have the option to set whether the programme can be paid gradually, i.e. in frequency. Here you select from the options – Monthly, Quarterly, Semi-annually, Annually, After N terms (the number of terms after which the next scheduled payment for the programme will be issued), Fixed number of scheduled payments (the number of scheduled payment into which the price for the programme will be divided).The programme provider has the option to grant a discount for this type of payment either none, in EUR or as a percentage.
 
 ![Screenshot](../../assets/images/payment-templates-creation-05.png)
 
 - Periodic payment paid in arrears according to attendance
-- This option allows you to charge clients based on their actual attendance. The system creates and sends instalments only after the client has attended the required number of sessions, depending on the frequency you set.There are two possible modes:
+	- This option allows you to charge clients based on their actual attendance. The system creates and sends instalments only after the client has attended the required number of sessions, depending on the frequency you set.There are two possible modes:
 
-1) Periodic frequency (e.g., monthly)
+	1) Periodic frequency (e.g., monthly)
 
-When using a time-based frequency:
+		When using a time-based frequency:
+	
+		- When attendance is recorded, the system creates an instalment scheduled for the next anniversary date of the frequency (e.g., next month).
+		- Each time attendance is marked as *“attended”*, the amount on that instalment increases.
+		- When the instalment’s scheduled date arrives, it is processed during the nightly job and the client receives the payment request. At this moment, the booking receives the corresponding outstanding balance.
+		- If the client does not attend any session within the chosen frequency period (e.g., no attendance in a whole month), no instalment is generated.
 
-1. When attendance is recorded, the system creates an instalment scheduled for the next anniversary date of the frequency (e.g., next month).
-2. Each time attendance is marked as *“attended”*, the amount on that instalment increases.
-3. When the instalment’s scheduled date arrives, it is processed during the nightly job and the client receives the payment request. At this moment, the booking receives the corresponding outstanding balance.
-4. If the client does not attend any session within the chosen frequency period (e.g., no attendance in a whole month), no instalment is generated.
+	2) After N sessions (e.g., payment after every 2 sessions)
+		When using a frequency based on a number of attended sessions:
 
-2) After N sessions (e.g., payment after every 2 sessions)
-A When using a frequency based on a number of attended sessions:
+		- When attendance is recorded, the system creates an instalment scheduled one year ahead.*(This is only a placeholder date — it will be adjusted once the required number of attendances is reached.)*
 
-1. When attendance is recorded, the system creates an instalment scheduled one year ahead.*(This is only a placeholder date — it will be adjusted once the required number of attendances is reached.)*
+		- Each time an attendance is marked as *“attended”*, the amount on that instalment increases.
 
-1. Each time an attendance is marked as *“attended”*, the amount on that instalment increases.
+		- When the required number of attended sessions (N) is reached, the instalment is rescheduled to “today” and will be processed during the nightly job. At this moment, the booking receives the outstanding balance.
 
-1. When the required number of attended sessions (N) is reached, the instalment is rescheduled to “today” and will be processed during the nightly job. At this moment, the booking receives the outstanding balance.
+		- If the required number of attendances is reached multiple times on the same day(example: frequency = every 2 sessions, and 4 sessions are recorded in one day),then multiple instalments will be created on that same day.
 
-1. If the required number of attendances is reached multiple times on the same day(example: frequency = every 2 sessions, and 4 sessions are recorded in one day),then multiple instalments will be created on that same day.
-
-![Screenshot](../../assets/images/payment-templates-creation-06.png)
+		![Screenshot](../../assets/images/payment-templates-creation-06.png)
 
 Save the template by clicking the *Save button.*
 
@@ -105,14 +98,9 @@ Note: If you use discounted payment templates, you can find a clear list of them
 
 ## Other template settings, template activation in programmes
 
+In the payment settings, you can edit individual templates, set their visibility to clients/instructors or delete a template. You can also quickly and easily activate the template on the programmes of your choice. To change and modify the template or activate it on the programme, please follow these steps:
 
-In the payment settings, you can edit individual templates, set their
-visibility to clients/instructors or delete a template. You can also
-quickly and easily activate the template on the programmes of your choice.
-To change and modify the template or activate it on the programme, please follow these steps:
-
-
-- V zozname platobných šablón kliknite na ikonu pera vedľa šablóny, ktorú chcete upravovať
+- In the list of payment templates, click the pen icon next to the template you want to edit.
 
 ![Screenshot](../../assets/images/payment-templates-creation-09.png)
 
@@ -124,16 +112,11 @@ To change and modify the template or activate it on the programme, please follow
 
 ![Screenshot](../../assets/images/payment-templates-creation-11.png)
 
-- When you make changes to the template, we recommend that you *Sync Settings.* This will ensure that any changes made to the template will also be
-reflected in programmes and classes where it has already been activated.
+- When you make changes to the template, we recommend that you *Sync Settings.* This will ensure that any changes made to the template will also be reflected in programmes and classes where it has already been activated.
 
 ![Screenshot](../../assets/images/discount-code-01.png)
 
-Note: If you have changed template settings, these
-will not automatically be transferred to the programmes where the template
-is applied. If you want all programmes to have their installment calendars
-set according to this version of the template, synchronize their
-settings. The system also keeps alerting you
+Note: If you have changed template settings, these will not automatically be transferred to the programmes where the template is applied. If you want all programmes to have their installment calendars set according to this version of the template, synchronize their settings. The system also keeps alerting you.
 
 ![Screenshot](../../assets/images/payment-templates-creation-13.png)
 
@@ -143,19 +126,13 @@ These payment templates created can then be used and inserted into your new or e
 
 ## Insert payment templates into a programme/class
 
-The created payment templates need to be inserted into newly created or
-already existing programmes. The templates created in this way can be
-combined in the programmes according to your wishes and needs. This means
-that you can use multiple payment templates for one programme.
+The created payment templates need to be inserted into newly created or already existing programmes. The templates created in this way can be combined in the programmes according to your wishes and needs. This means that you can use multiple payment templates for one programme.
 
 ## Insert templates into programmes
 
-
 To insert templates into programmes, do the following:
-
-
 - In the list of programmes, click on the name of the programme in which you want to add a template or check the activation of the selected templates
-- In the *Price *and *Payment *section, click the *Edit *button
+- In the *Price and Payment* section, click the *Edit* button
 
 ![Screenshot](../../assets/images/payment-templates-creation-14.png)
 - Below in the *Payment Frequency* section you can see which payment templates you have *Active* and which *Inactive*. *Active* payment templates are the ones highlighted in colour (yellow background under the text, blue knob)
@@ -167,10 +144,7 @@ To insert templates into programmes, do the following:
 
 ## Within creating a new class
 
-This selection of templates will appear in the menu when you create a
- class for the programme, where you again have the option to decide whether
- or not to enable this payment option. To activate the template on the
-class, click on the white *Active* button.
+This selection of templates will appear in the menu when you create a class for the programme, where you again have the option to decide whether or not to enable this payment option. To activate the template on the class, click on the white *Active* button.
 
 ![Screenshot](../../assets/images/payment-templates-creation-16.png)
 
@@ -181,27 +155,23 @@ Then save your selection by clicking *Create*.
 1. Select a class. In the *Payment Frequency* section, click the *Add Template* button. You will only see the ones that are activated on the programme.
  ![Screenshot](../../assets/images/payment-templates-creation-17.png)
 
-1. When you click on the *pen icon*, you will be presented with the option to activate/deactivate the template. Then click on the pipe icon and the *Save *button at the end of the screen to confirm the changes you have made.
+2. When you click on the *pen icon*, you will be presented with the option to activate/deactivate the template. Then click on the pipe icon and the *Save* button at the end of the screen to confirm the changes you have made.
  ![Screenshot](../../assets/images/payment-templates-creation-18.png)
 
-1. To delete a template from the class, click on the trash icon.
+3. To delete a template from the class, click on the trash icon.
 
-1. You can use the arrow keys to change the order of the templates and
-set them as you want them to appear in the booking form.
+4. You can use the arrow keys to change the order of the templates and set them as you want them to appear in the booking form.
  ![Screenshot](../../assets/images/payment-templates-creation-19.png)
 
-1. This selection of payment options will then be displayed in the booking form on your website as follows:
+5. This selection of payment templates will then be displayed in the booking form on your website as follows:
  ![Screenshot](../../assets/images/payment-templates-creation-20.png)
 
-The client has to choose one of the offered options and the final price
-for the programme is recalculated according to the client’s choice, if it
-is affected by this choice (if a discount has been set in the template).
+The client has to choose one of the offered options and the final price for the programme is recalculated according to the client’s choice, if it is affected by this choice (if a discount has been set in the template).
 
 ![Screenshot](../../assets/images/discount-code-01.png)
 
 Note: If a client registers for a programme that has already started and you have set up manual approval for late bookings in the programme settings, the payment type will not appear on their
-booking. Such bookings are marked as late by the application
-and require manual editing.
+booking. Such bookings are marked as late by the application and require manual editing.
 
 1. Adjust the amount owed as needed or add a compliant payment template to your booking.
 2. Manually change the booking status to **Registered** on the same day.
@@ -215,23 +185,15 @@ and require manual editing.
 
 ![Screenshot](../../assets/images/payment-templates-creation-22.jpg)
 
-- In the *Installment Plan *section, click *Create *(if no installment plan has been set up on the booking) or *Change *(if an installment plan has already been set up on the booking).
+- In the *Payment Plan* section, click *Create* (if no scheduled payment plan has been set up on the booking) or *Change* (if a payment schedule has already been set up on the booking).
 
 ![Screenshot](../../assets/images/payment-templates-creation-23.png)
 
-- This will open the settings for creating a payment plan. Select the
-options that suit you and click continue. If you enter a value in the
-Registration Fee field, it will be applied as part of the first
-instalment – so the first instalment will be increased by the value of
-the registration fee.
+- This will open the settings for creating a payment plan. Select the options that suit you and click continue. If you enter a value in the **Booking Fee** field, it will be applied as part of the first scheduled payment – so the first scheduled payment will be increased by the value of the booking fee.
 
 ![Screenshot](../../assets/images/payment-templates-creation-24.png)
 
-- Click the *Select* button next to the template you want to
-apply. Zooza will show you what the repayment amount is, how many
-repayments will be incurred, what the discount is and what the final
-amount paid by the client is after all repayments have been made. Then
- click *Continue*
+- Click the *Select* button next to the template you want to apply. Zooza will show you what the repayment amount is, how many repayments will be incurred, what the discount is and what the final amount paid by the client is after all repayments have been made. Then click *Continue*
 
 ![Screenshot](../../assets/images/payment-templates-creation-25.png)
 
@@ -249,17 +211,17 @@ The payment schedule entered in this way will be automatically reflected in the 
 
 ### How to delete payment template on booking?
 
-1. You can delete the set instalment plan on the regisdtration by clicking on the *Partial payments overview* button.
+1. You can delete the set payment plan on the booking by clicking on the *Scheduled payments overview* button.
+   <!-- screenshot outdated -->
  ![Screenshot](../../assets/images/payment-templates-creation-29.png)
 
-1. Then click the *Delete* button. The booking reverts to a no-payment status.
+2. Then click the *Delete* button. The booking reverts to a no-payment status.
 
 ![Screenshot](../../assets/images/payment-templates-creation-30.png)
 
 ## Payment Plan Preview
 
-
-If you have multiple bookings with active payment templates, use the *Payments - Installments Overview* section for a better overview of the next installments issued.
+If you have multiple bookings with active payment templates, use the *Payments - Scheduled payments Overview* section for a better overview of the next scheduled payments issued.
 
 ![Screenshot](../../assets/images/allowing-multiple-registration-03.png)
 
@@ -268,10 +230,9 @@ This way you can quickly and easily track all active payments from the date you 
 
 For a quick search, you can use the filter that allows you to enter:
 
-
 1. Client - to search for a specific client,
-2. Status - you select whether the installments are scheduled or processed,
-3. Scheduled Date - search for installments by date.
+2. Status - you select whether the scheduled payments are scheduled or processed,
+3. Scheduled Date - search for scheduled payments by date.
 
 
 This way you can quickly and easily keep track of all active payments.
@@ -280,7 +241,7 @@ This way you can quickly and easily keep track of all active payments.
 
 ## Apply a payment template to the whole class
 
-For each class/class, you can apply the payment template in one go:
+For each class, you can apply the payment template in one go:
 
 1. Open the Class
  ![Screenshot](../../assets/images/payment-templates-creation-33.png)
@@ -294,13 +255,13 @@ For each class/class, you can apply the payment template in one go:
  ![Screenshot](../../assets/images/payment-templates-creation-35.png)
 7. Confirm and continue
 
-## Payment templates and registration copy
+## Payment templates and booking copy
 
-When you copy a registration from one class to another (e.g., moving clients to a new semester), the payment template from the original registration does **not** carry over. The new registration receives the default payment template configured on the target class.
+When you copy a booking from one class to another (e.g., moving clients to a new semester), the payment template from the original booking does **not** carry over. The new booking receives the default payment template configured on the target class.
 
-This means you must re-apply payment templates after copying registrations. You can do this either:
+This means you must re-apply payment templates after copying bookings. You can do this either:
 
-1. One by one — open each copied registration and assign the payment template manually (see [Payment templates on booking](#payment-templates-on-booking) above).
+1. One by one — open each copied booking and assign the payment template manually (see [Payment templates on booking](#payment-templates-on-booking) above).
 2. In bulk — use the **Apply payment template** action on the target class (see [Apply a payment template to the whole class](#apply-a-payment-template-to-the-whole-class) above).
 
 <!-- REVIEW: Confirm whether "no template carries over" applies equally to both the Copy and Transfer registration workflows, or only to Copy. -->
@@ -309,26 +270,26 @@ This means you must re-apply payment templates after copying registrations. You 
 
 Each payment template has a **Visible to clients** toggle in its settings. This controls two things:
 
-1. **Registration form** — when enabled, the template appears as a selectable payment option during online registration. When disabled, only admins and instructors (if instructor visibility is also enabled) can assign the template.
-2. **Client Profile** — when enabled, the payment plan details (installment amounts, due dates, remaining balance) are visible to the client in their Client Profile under the Payments section.
+1. **Booking form** — when enabled, the template appears as a selectable payment option during online booking. When disabled, only admins and instructors (if instructor visibility is also enabled) can assign the template.
+2. **Client Profile** — when enabled, the payment plan details (scheduled payments amounts, due dates, remaining balance) are visible to the client in their Client Profile under the Payments section.
 
-If clients report they cannot see payment options during registration, check that the relevant templates have the **Visible to clients** toggle turned on. Go to **Settings** > **Payments**, click the pen icon next to the template, and verify the visibility setting.
+If clients report they cannot see payment options during booking, check that the relevant templates have the **Visible to clients** toggle turned on. Go to **Settings** > **Payments**, click the pen icon next to the template, and verify the visibility setting.
 
 <!-- REVIEW: Confirm whether "Visible to clients" also controls visibility in the Parent Portal payment tab, or only in the registration widget and profile widget. -->
 
 ## Anniversary date on payment templates
 
-For periodic (recurring) payment templates, the `anniversary date` determines the day of the month when installments are generated and sent to clients.
+For periodic (recurring) payment templates, the `anniversary date` determines the day of the month when scheduled payments are generated and sent to clients.
 
-- If you set the anniversary date to the **1st**, installments are created on the 1st of each billing period.
-- If you set it to the **15th**, installments are created on the 15th, and so on.
+- If you set the anniversary date to the **1st**, scheduled payments are created on the 1st of each billing period.
+- If you set it to the **15th**, scheduled payments are created on the 15th, and so on.
 
-The anniversary date affects the entire installment schedule. For example, if a monthly template has an anniversary date of the 10th:
+The anniversary date affects the entire payment schedule. For example, if a monthly template has an anniversary date of the 10th:
 
-1. The first installment is scheduled for the 10th of the current (or next) month.
-2. Each subsequent installment falls on the 10th of the following months.
-3. The period covered by each installment runs from one anniversary date to the next (e.g., 10 January to 9 February).
+1. The first scheduled payment is scheduled for the 10th of the current (or next) month.
+2. Each subsequent scheduled payment falls on the 10th of the following months.
+3. The period covered by each scheduled payment runs from one anniversary date to the next (e.g., 10 January to 9 February).
 
-If you accidentally set the wrong anniversary date (e.g., 10th instead of 1st), you need to update the template and then use **Sync Settings** to propagate the change to all programmes and classes where the template is active. Existing registrations that already have an installment plan may need to have their plan deleted and re-created to reflect the corrected date.
+If you accidentally set the wrong anniversary date (e.g., 10th instead of 1st), you need to update the template and then use **Sync Settings** to propagate the change to all programmes and classes where the template is active. Existing bookings that already have an payment plan may need to have their plan deleted and re-created to reflect the corrected date.
 
 <!-- REVIEW: Confirm whether changing the anniversary date and syncing automatically updates existing installment plans, or whether each registration's plan must be manually re-created. -->

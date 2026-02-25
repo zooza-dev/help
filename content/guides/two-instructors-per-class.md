@@ -33,18 +33,13 @@ Do you have 2 instructors in one class, or a main instructor and his assistant?
 ![Screenshot](../../assets/images/two-lecturers-per-group-03.png)
 
 1. Select the following:
-2. *Instructor*
-3. *Instructor Role* - select whichever role is appropriate for your programme and type of instructor collaboration. The choice of role has no influence on the administration. This role is also displayed in the class details for the client.
+	1. *Instructor*
+	2. *Instructor Role* - select whichever role is appropriate for your programme and type of instructor collaboration. The choice of role has no influence on the administration. This role is also displayed in the class details for the client.
 
-Term Settings:
-
-
-1. Change on class only - this setting will not change on terms
-2. Change on all dates
-3. Change on upcoming dates only - if you are adding a second instructor during the programme, we recommend selecting this option for proper setup and calculation of rates.
+Sessions Settings:
+1. Change on class only - this setting will not change on sessions
+2. Change on all sessions
+3. Change on upcoming sessions only - if you are adding a second instructor during the programme, we recommend selecting this option for proper setup and calculation of rates.
  ![Screenshot](../../assets/images/two-lecturers-per-group-04.png)
 
-For instructors, you can also use rate functionality. Thus, you can
-calculate rewards for instructors within the app. You will especially
-appreciate this setting if you have multiple instructors working at
-different intensities. Please refer to [the instructions for](https://www.zooza.online/support/setting-the-rate-reward-for-lecturer/) more information.
+For instructors, you can also use rate functionality. Thus, you can calculate rewards for instructors within the app. You will especially appreciate this setting if you have multiple instructors working at different intensities. Please refer to [the instructions for](https://www.zooza.online/support/setting-the-rate-reward-for-lecturer/) more information.

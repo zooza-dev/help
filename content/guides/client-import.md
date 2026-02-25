@@ -49,9 +49,9 @@ Important! To successfully import your data, save the spreadsheet in .csv format
 
 ## Import to Zooza
 
-1. In Zooza, go to the *Clients *tab in the menu and click *Import*.
+1. In Zooza, go to the *Clients* tab in the menu and click *Import*.
  ![Screenshot](../../assets/images/client-import-04.png)
-2. Create a new import by clicking the *Import *button.
+2. Create a new import by clicking the *Import* button.
  ![Screenshot](../../assets/images/client-import-05.png)
 3. Upload the .csv file you prepared.
  ![Screenshot](../../assets/images/client-import-06.png)
@@ -59,9 +59,7 @@ Important! To successfully import your data, save the spreadsheet in .csv format
  ![Screenshot](../../assets/images/client-import-07.png)
 5. If the classes already exist in Zooza, assign clients to the appropriate classes and click *Continue*.
  ![Screenshot](../../assets/images/client-import-08.png)
-6. Zooza will validate each row of your spreadsheet and notify you if any
-data is incorrectly formatted. You can then adjust your spreadsheet and
-re-import the file.
+6. Zooza will validate each row of your spreadsheet and notify you if any data is incorrectly formatted. You can then adjust your spreadsheet and re-import the file.
 
 ![Screenshot](../../assets/images/blocks-creation-14.png)
 

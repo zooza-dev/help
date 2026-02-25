@@ -19,11 +19,9 @@ intercom_sync: false
 
 ![Screenshot](../../assets/images/blocks-creation-07.png)
 
-
 Programme - individual, which will only be available for 1 session.
 
 ![Screenshot](../../assets/images/individual-lessons-climbing-wall-02.png)
-
 Example: The instructor is available at the climbing wall on Saturdays from 10am-4pm and can take new clients every 60 minutes. What is the procedure for creating such an offer? Is it possible to set up cash/card payment on the spot?
 
 Client

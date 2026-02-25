@@ -19,15 +19,13 @@ intercom_sync: false
 
 ![Screenshot](../../assets/images/blocks-creation-14.png)
 
-
 You can correct, edit or move each payment. Adjustments can be made individually at the level of bookings, in which case it is a change to the outstanding amount. What constitutes an outstanding amount is explained in detail [HERE](outstanding-amount.md).The amount owed on the booking itself can be modified in the form of discounts, adding a new payment, refunding a payment or entering a payment plan.
 
 ## Entering a payment
 
-
 Manual editing of a payment, i.e. you manually enter the amount and the way in which the payment was made to you.
 
-1. In the *Bookings *tab, find the booking on which you want to edit the payment.
+1. In the *Bookings* tab, find the booking on which you want to edit the payment.
 2. In the booking details, click on the *Add Payment* button.
  ![Screenshot](../../assets/images/edit-payment-on-registration-02.png)
 3. Fill in the required fields and click OK
@@ -35,24 +33,20 @@ Manual editing of a payment, i.e. you manually enter the amount and the way in w
 
 ## Editing a payment
 
-
 You can edit payments in several ways. Therefore, it is up to you which option you choose.
 
-
-1. In the *Bookings *tab, search for the booking on which you want to edit the payment.
-2. In the *Payments *section, click the *Show Payments* button. This field will already appear in the list of found bookings for faster editing.
+1. In the *Bookings* tab, search for the booking on which you want to edit the payment.
+2. In the *Payments* section, click the *Show Payments* button. This field will already appear in the list of found bookings for faster editing.
  ![Screenshot](../../assets/images/edit-payment-on-registration-04.png)
  ![Screenshot](../../assets/images/edit-payment-on-registration-05.png)
 3. Select your desired option
 4. Amount owed – modify the amount the client has to pay you
-5. Registration fee – modify the registration fee
+5. Booking fee – modify the booking fee
 6. Discount - modify the amount owed by granting a discount
-7. Payment schedule – modify the payment of the amount owed via installments.
+7. Payment schedule – modify the payment of the amount owed via scheduled payments.
  ![Screenshot](../../assets/images/edit-payment-on-registration-06.png)
 
 ![Screenshot](../../assets/images/blocks-creation-07.png)
-
-
 After each adjustment of the amount due, the balance of payments will also be recalculated. Thus, it may happen that a booking goes from ‘*paid*’ to *'unpaid*' or vice versa ‘*overpaid*’.
 
 For a detailed breakdown of both payments and adjustments, please refer to the *List of Payments* section.
@@ -69,38 +63,32 @@ It happens that the payment was incorrectly paid by the client or, on the contra
 
 ## Refund of transaction
 
-
 In case of an incorrect payment, we recommend using a refund for clients.
 
-
-1. In the *Bookings *tab, locate the booking on which you want to edit the transaction. In the *List of Payments* section, click the *More *button next to the payment you wish to refund.
+1. In the *Bookings* tab, locate the booking on which you want to edit the transaction. In the *List of Payments* section, click the *More* button next to the payment you wish to refund.
  ![Screenshot](../../assets/images/edit-payment-on-registration-09.png)
-2. Click *Refund payment
+2. Click *Refund payment*
  ![Screenshot](../../assets/images/edit-payment-on-registration-10.png)
- *
+ 
 3. Enter the amount to be refunded and then click OK
  ![Screenshot](../../assets/images/edit-payment-on-registration-11.png)
 
 ## Correct payment
 
-
 If you happen to have entered a payment incorrectly, you have the option to opt for a correction instead of a refund. This works in the same way as refunding a transaction in its details on all offline payments.
 
-1. In the *Bookings *tab, locate the booking on which you want to edit the transaction. In the *List of Payments *section, click the *More *button next to the payment you wish to refund.
+1. In the *Bookings* tab, locate the booking on which you want to edit the transaction. In the *List of Payments* section, click the *More* button next to the payment you wish to refund.
  ![Screenshot](../../assets/images/edit-payment-on-registration-12.png)
-2. Click Correct payment*
+2. Click *Correct payment*
  ![Screenshot](../../assets/images/edit-payment-on-registration-13.png)
- *
+ 
 3. Enter the amount and then click OK
  ![Screenshot](../../assets/images/edit-payment-on-registration-14.png)
 
 ![Screenshot](../../assets/images/client-import-01.png)
-
-Note: In the case of a correction, this is not a refund of the payment back to the client's account. It is just a system change. Also, you don't have to worry about the client seeing these changes in their account. The client only sees the resulting amounts in their profile - the amount to be paid, the amount of the registration fee, the amount of the discount and, in the case of a payment plan, a breakdown of future payments.
-
+Note: In the case of a correction, this is not a refund of the payment back to the client's account. It is just a system change. Also, you don't have to worry about the client seeing these changes in their account. The client only sees the resulting amounts in their profile - the amount to be paid, the amount of the registration fee, the amount of the discount and, in the case of a payment schedule, a breakdown of future scheduled payments.
 
 ## Move payment
-
 
 It occasionally happens that a client makes a payment to a variable symbol that belongs to another booking. Zooza therefore allows you to transfer the payment, regardless of whether it has been paired manually, via email notification or via GoCardless, which will make it easier for you to manage payments on bookings.
 
@@ -111,27 +99,22 @@ Warning! You can only move a payment if there has been no refund or correction o
 To move a payment:
 
 
-1. In the *Bookings *tab, locate the booking on which you want to edit the transaction. In the *List of Payments *section, click the *More *button next to the payment you wish to refund.
+1. In the *Bookings* tab, locate the booking on which you want to edit the transaction. In the *List of Payments* section, click the *More* button next to the payment you wish to refund.
  ![Screenshot](../../assets/images/edit-payment-on-registration-17.png)
-2. Click *Move payment
+2. Click *Move payment*
  ![Screenshot](../../assets/images/edit-payment-on-registration-18.png)
- *
+ 
 3. Locate the client by name, email address, or booking number and click *Choose*.
  ![Screenshot](../../assets/images/edit-payment-on-registration-19.png)
 
 4. A screen opens with the name of the booking you want to move the transaction to. If the information is correct, click *Move Payment.*
-5. On this booking, you will see a note that the payment has been fully refunded with an option to move to the booking on which the payment is registered.*
+5. On this booking, you will see a note that the payment has been fully refunded with an option to move to the booking on which the payment is registered.
  ![Screenshot](../../assets/images/edit-payment-on-registration-20.png)
- *
+ 
 
 ![Screenshot](../../assets/images/blocks-creation-07.png)
 
-
 Once moved, you will see a note on the original booking that the payment has been moved, with an option to go to the booking where the payment is recorded. In the details of the new booking, the transaction statement displays information about the original booking from which the payment was moved.
 
-*
 
 ![Screenshot](../../assets/images/edit-payment-on-registration-22.png)
-
-
-*

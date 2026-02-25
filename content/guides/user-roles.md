@@ -20,7 +20,6 @@ intercom_sync: false
 
 ![Screenshot](../../assets/images/blocks-creation-14.png)
 
-
 For adding additional Zooza users, you have a choice of different roles that are set according to how much data about your clients they can see and edit.
 
 ## Add instructor
@@ -36,7 +35,6 @@ The process of adding a instructor is very simple. Under Settings, open the Acce
 Warning! When filling in the Email field, enter ONLY functional email addresses. If you fill in an address such as [demo@example.com](mailto:demo@example.com), it may happen that such an account is actually active and in use and this user will be able to get into your Zooz account, thus compromising data security. If you want to test a role/feature, we recommend using an email address that you have not yet registered with Zooza to ensure your security.
 
  The last field to select is the user role, you can choose from the following:
-
 - Owner
 - Assistant
 - Main instructor
@@ -51,7 +49,6 @@ For all the differences between these roles, please refer to the table below the
 Click the *Add New User* button to save your settings.
 
 ## Team members
-
 
 Setting the basic view for individual team members will make it easier for you to specify some of the features available for instructor roles according to your needs. You decide how a instructor should see the attendance report, how they can manage their own availability, whether instructors can see client details or send messages to clients in term details. Last but not least, you have the option to allow instructors to create substitutions on appointments for easier administration. You can find out all the information on how to set up the substitution and how it works in this [manual.](instructor-substitution.md)
 

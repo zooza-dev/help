@@ -27,9 +27,7 @@ Every booking in Zooza automatically creates an expected amount to pay based on 
 
 ## Manual payment pairing
 
-
 Manual pairing is useful if you accept cash, occasional bank transfers, or need to correct a payment.
-
 
 1. The amount due is created automatically when the booking is created.
 2. If you receive a payment (cash or bank transfer), open the booking and click Add payment.
@@ -38,23 +36,18 @@ Manual pairing is useful if you accept cash, occasional bank transfers, or need 
 
 ## Automatic payment pairing (bank transfers)
 
-
 Zooza can automatically match incoming bank transfers to bookings, so you do not need to pair them manually.
 
 Important: Automatic pairing depends on how your bank provides transaction data. The exact method may vary by country.
 
 ## How automatic pairing works
 
-1. Bank account identification (IBAN)
- Zooza identifies which account received the payment using the IBAN.
- The IBAN must be set either in General Settings or directly on the programme.
-2. Booking identification (Payment Reference)
- Zooza matches the payment to a booking using the payment reference.
- In some countries this is called a *Variable Symbol*; internationally, it is simply the *Payment Reference* sent with the bank transfer.
-3. Amount and status check
+1. **Bank account identification (IBAN)** - Zooza identifies which account received the payment using the IBAN. The IBAN must be set either in General Settings or directly on the programme.
+2. **Booking identification (Payment Reference)** - Zooza matches the payment to a booking using the payment reference. In some countries this is called a *Variable Symbol*; internationally, it is simply the *Payment Reference* sent with the bank transfer.
+3. **Amount and status check**
  Payments are automatically applied only if:
- The booking is in Unpaid status
-4. The payment amount matches the expected amount due
+ - The booking is in Unpaid status
+ - The payment amount matches the expected amount due
 
 ![Screenshot](../../assets/images/blocks-creation-07.png)
 
@@ -65,23 +58,18 @@ If all conditions are met, the payment is automatically paired with the booking.
 
 If your bank does not support live integrations, you can import payments in bulk.
 
-
 - Export a transaction list from your online banking
 - Upload the CSV file into Zooza
 - Transactions are matched using the payment reference / booking number
 
 
 If a payment is not matched due to an incorrect or missing reference, you can reassign it manually.
-
 See the detailed step-by-step guide in the [documentation](https://support.zooza.online/portal/sk/kb/articles/parovanie-platieb-cez-csv-subor).
 
 ### Automatic pairing via bank email notifications
 
-
 Some banks can send transaction notifications by email.
-
 In this setup, your bank emails Zooza about account movements, and Zooza processes those emails automatically.
-
 
 - The notification must contain the correct bank account (IBAN)
 - The payment reference must match a booking
@@ -94,7 +82,6 @@ Note: Not all banks support reliable email notifications. Please check with your
 Setup instructions are available in the [documentation](https://support.zooza.online/portal/sk/kb/articles/parovanie-platieb-cez-emailovu-notifikaciu).
 
 ### Automatic pairing via GoCardless (recommended)
-
 
 GoCardless is the recommended way to automate payment pairing internationally.
 
@@ -112,28 +99,23 @@ See setup instructions in the [documentation](https://support.zooza.online/porta
 
 ### What is a payment reference?
 
-
 A payment reference is the text or number sent with a bank transfer to identify what the payment is for. In some countries this is called a variable symbol.
 
 ### What happens if a client forgets the payment reference?
-
 
 The payment will not be paired automatically. You can manually assign it from *Payments – Received payments*.
 
 ### Do I need GoCardless if I already use bank transfers?
 
-
 No, but GoCardless provides the most reliable and low-maintenance automation, especially for international and multi-account setups.
 
 ### Can I use multiple bank accounts?
-
 
 Yes. This is fully supported when using GoCardless.
 
 ### Why was a payment not paired even though automatic pairing is enabled?
 
-
-This situation usually occurs when you have enabled the setting “Automatically pair payments only for unpaid bookings”.
+This situation usually occurs when you have enabled the setting *Automatically pair payments only for unpaid bookings*.
 
 Zooza > Settings > Payments
 
@@ -142,7 +124,6 @@ Zooza > Settings > Payments
 In this mode, Zooza pairs payments only if a booking already has an outstanding balance at the moment the payment is received.
 
 Typical scenarios include:
-
 
 - Early payment: The client pays *before* any amount is due (for example, after receiving a notification about an upcoming instalment). The payment is imported into Zooza, but it is not paired because no debt existed at that time.
 - Overpayment: The client pays a higher amount than the current outstanding balance. In this case, the payment is also not paired automatically.

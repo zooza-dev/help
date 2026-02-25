@@ -107,12 +107,12 @@ You can also create a third product as a booking form bundle** that combines mul
 
 ## Client perspective
 
-After registering for a Pay-as-you-go programme, clients can:
+After enroling for a Pay-as-you-go programme, clients can:
 
 1. Purchase an entry pass from their profile (under ****Orders** and in the detail of a Booking).
 2. See their credit balance or remaining entries.
 3. Book sessions — the pass is automatically redeemed when they book.
-4. If they unregister from a session, the entry or credit is returned.
+4. If they cancel the session, the entry or credit is returned.
 
 Clients can view their pass status, remaining balance, and usage history in their profile dashboard.
 

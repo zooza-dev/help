@@ -106,15 +106,9 @@ Under Booking Options Shown on Website, select: Trials only (or any other option
 ![Screenshot](../../assets/images/trials-daily-business-08.png)
 
 ![Screenshot](../../assets/images/blocks-creation-07.png)
-
-### Tip
-
-Most trial settings are controlled at the programme level — so each programme can have its own unique setup, payment type, and visibility rules.
-
-###
+Tip: Most trial settings are controlled at the programme level — so each programme can have its own unique setup, payment type, and visibility rules.
 
 ![Screenshot](../../assets/images/client-import-01.png)
-
 ### Trial Sessions and Class Overcapacity (Important Note)
 
 In Zooza, class overcapacity can occur when Trial Sessions are used together with [Blocks](blocks-creation.md) within the same Class.

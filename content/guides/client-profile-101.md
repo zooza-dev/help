@@ -29,8 +29,6 @@ If you are not logged in yet, open the Client Profile and enter the email addres
 
 This is the same email you use to receive booking and payment information.
 
-##
-
 ## 2. No passwords needed
 
 After entering your email address, you will receive either:
@@ -42,7 +40,6 @@ This will automatically log you in to your Client Profile.
 
  There is no password to remember.
 
-##
 
 ## 3. Your Client Profile
 
@@ -56,7 +53,6 @@ Here you can find:
 
 Everything related to your bookings is available in one place and can be used fully on mobile.
 
-##
 
 ## 4. Programme overview
 
@@ -68,11 +64,10 @@ The dashboard shows:
 - important programme details
 - quick access to key actions
 
-##
 
 ## 5. All sessions
 
-In the sessions tab, you can view:
+In the Attendance tab, you can view:
 
 - all scheduled sessions
 - attended sessions
@@ -80,7 +75,6 @@ In the sessions tab, you can view:
 
 The list is always kept up to date.
 
-##
 
 ## 6. Sharing a booking
 
@@ -92,7 +86,7 @@ In the booking details, you can share access with another person, for example:
 
 This allows them to receive notifications and updates related to the booking.
 
-##
+
 
 ## 7. Payments and invoices
 
@@ -104,7 +98,7 @@ In the payments section, you can:
 
 Everything related to payments is available anytime.
 
-##
+
 
 ## 8. Missed sessions and make-up sessions
 
@@ -115,7 +109,7 @@ If you cancel a session, you may have the option to:
 
 You will receive email or WhatsApp reminders, and your session list will automatically update.
 
-##
+
 
 ## That's it
 

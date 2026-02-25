@@ -25,11 +25,11 @@ List of notifications you can have sent to you:
 
 ## Set up notifications
 
-1. In the *Settings *category, click *Notifications *and click on *Add new notification
+1. In the *Settings* category, click *Notifications* and click on *Add new notification
  ![Screenshot](../../assets/images/notifications-center-02.png)
- *
+ 
 2. Select the type of notification from the list and type the email you want it to be sent to
-3. Confirm your choice by clicking the* Create Notification* button
+3. Confirm your choice by clicking the  *Create Notification* button
  ![Screenshot](../../assets/images/notifications-center-03.png)
 
 ![Screenshot](../../assets/images/client-import-01.png)

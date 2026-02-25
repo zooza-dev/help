@@ -22,7 +22,7 @@ This guide explains how to set up an ongoing, never-ending membership programme 
 ## Prerequisites
 
 - A programme already created in Zooza.
-- At least one class (timetable) assigned to the programme.
+- At least one class assigned to the programme.
 - A payment method configured (e.g., Stripe, bank transfer).
 
 ## Step 1: Set the price type to Membership
@@ -33,11 +33,11 @@ This guide explains how to set up an ongoing, never-ending membership programme 
 4. Enter the monthly membership price in the `Unit price` field.
 5. Save.
 
-Membership pricing charges a fixed amount at a recurring interval, rather than dividing a total term price into instalments.
+Membership pricing charges a fixed amount at a recurring interval, rather than dividing a total term price into scheduled payments.
 
 ## Step 2: Configure late bookings as automatically confirmed
 
-Since this is an ongoing programme with no fixed start date, every new registration is technically a "late booking." You want these to be approved instantly without admin intervention.
+Since this is an ongoing programme with no fixed start date, every new booking is technically a "late booking." You want these to be approved instantly without admin intervention.
 
 1. In the same **Price and Payment** tile, expand **Advanced settings**.
 2. In the `Late bookings` section, select **Automatically confirmed**.
@@ -73,7 +73,7 @@ The payment template controls when and how often clients are billed.
 4. Set `Day of the month when the payment is due` to **0**.
 5. Save.
 
-Setting the day to **0** means the payment is due on the same calendar day each month that the client originally enrolled. For example, if a client registers on the 15th, their payments are due on the 15th of every subsequent month.
+Setting the day to **0** means the payment is due on the same calendar day each month that the client originally enrolled. For example, if a client enrolls on the 15th, their payments are due on the 15th of every subsequent month.
 
 <!-- TODO: Add screenshot of payment template settings (assets/images/membership-payment-template-settings.png) -->
 

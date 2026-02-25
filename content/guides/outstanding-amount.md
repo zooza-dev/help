@@ -25,5 +25,4 @@ It follows that the amount owed does not always have to match the price of the p
 
 ## What is not outstanding amount?
 
-
 The amount owed has nothing to do with reimbursements. It is not an arrearage, nor is it a "debt" in the form of a reminder, interest on arrears and so on. This is the amount you expect the client to pay you for the booking.

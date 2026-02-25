@@ -29,11 +29,11 @@ This guide explains every section of the Price and Payment tile: pricing models,
 
 When you create a programme, you choose a programme type. Each type has a different pricing model:
 
-| Programme type | How pricing works |
-|---|---|
+| Programme type                        | How pricing works                                                                                                            |
+| ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | **Pay-as-you-go (Open registration)** | Clients pay per session. You set a **unit price** (price per session) and an optional **booking fee**. No payment schedules. |
-| **Registration for one session** | Clients pay a fixed **total price** for a single event (e.g., a camp, workshop, or tour). Optional booking fee. |
-| **Registration for full duration** | Clients enrol for the entire programme. You choose between a one-off payment or scheduled payments (instalments). |
+| **Registration for one session**      | Clients pay a fixed **total price** for a single event (e.g., a camp, workshop, or tour). Optional booking fee.              |
+| **Registration for full duration**    | Clients enrol for the entire programme. You choose between a one-off payment or scheduled payments.                          |
 
 ## Pay-as-you-go pricing
 
@@ -59,26 +59,26 @@ You can also configure a **down payment** if you want clients to pay a deposit u
 
 For full-duration programmes, you first choose how to collect payments:
 
-| Option | Description |
-|---|---|
-| **One off payment** | A single payment for the entire programme. No payment schedules are offered to the client. |
-| **In scheduled payments** | Recurring payments based on a payment template. Clients pay in instalments (monthly, termly, etc.). |
+| Option                    | Description                                                                                                |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| **One off payment**       | A single payment for the entire programme. No payment schedules are offered to the client.                 |
+| **In scheduled payments** | Recurring payments based on a payment template. Clients pay in scheduled payments (monthly, termly, etc.). |
 
 If you choose **scheduled payments**, you must also select the **price type**:
 ![Screenshot — price and payment setup](../../assets/images/price-and-payment-setup-03.png)
 
 ### Course fee vs Membership
 
-| Price type | How it works | Best for |
-|---|---|---|
-| **Course fee** | A fixed total price split into instalments by the payment template. The client knows the full price upfront. Price = unit price x number of sessions. | Term-based programmes with a fixed start and end date (language courses, swimming terms, dance terms). |
-| **Membership** | A fixed recurring amount charged at a regular interval (e.g., monthly), regardless of how many sessions the client attends. No total price is calculated. | Ongoing programmes with no fixed end date (football clubs, gyms, martial arts, "Netflix-style" subscriptions). |
+| Price type     | How it works                                                                                                                                                 | Best for                                                                                                       |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| **Course fee** | A fixed total price split into scheduled payments by the payment template. The client knows the full price upfront. Price = unit price x number of sessions. | Term-based programmes with a fixed start and end date (language courses, swimming terms, dance terms).         |
+| **Membership** | A fixed recurring amount charged at a regular interval (e.g., monthly), regardless of how many sessions the client attends. No total price is calculated.    | Ongoing programmes with no fixed end date (football clubs, gyms, martial arts, "Netflix-style" subscriptions). |
 
 **Key differences:**
 
-- **Course fee** calculates the total from the unit price and session count. The payment template splits this total into instalments.
+- **Term payment** calculates the total from the unit price and session count. The payment template splits this total into scheduled payments.
 - **Membership** charges the unit price directly as the recurring fee. The total depends on how long the client stays enrolled.
-- **Memberships cannot use billable sessions.** If you need to exclude specific sessions from pricing, use Course fee instead.
+- **Memberships cannot use billable sessions.** If you need to exclude specific sessions from pricing, use Term payment instead.
 ![Screenshot — price and payment setup](../../assets/images/price-and-payment-setup-04.png)
 
 ## Unit price
@@ -153,7 +153,7 @@ You can reorder templates using the arrows. The first active template is the def
 
 Payment templates are created under **Settings** → **Payments**. For details on creating and configuring templates, see [Payment templates creation](payment-templates-creation.md).
 
-> **Note:** If a payment template includes a discount, the discount is distributed evenly across all scheduled payments for Course fee programmes. For Membership programmes, the entire discount is applied to the first scheduled payment.
+> **Note:** If a payment template includes a discount, the discount is distributed evenly across all scheduled payments for Term payment programmes. For Membership programmes, the entire discount is applied to the first scheduled payment.
 
 ## Payment methods
 

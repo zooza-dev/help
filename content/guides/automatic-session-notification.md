@@ -17,7 +17,7 @@ intercom_sync: false
 
 # Automatic notification of an upcoming session
 
-This is the email that always arrives to the client the day before a session or session. If a client is enrolled in a class that has sessions every Tuesday, they will receive a reminder on Monday that there is a session/session tomorrow.
+This is the email that always arrives to the client the day before a session. If a client is enrolled in a class that has sessions every Tuesday, they will receive a reminder on Monday that there is a session tomorrow.
 
 The reminder is helpful for several reasons:
 
@@ -25,10 +25,10 @@ The reminder is helpful for several reasons:
 - It informs them of the time and place -- especially useful for make-up sessions that take place at a different time or location.
 - Reminders can go to an additional email, for example to remind the other parent about the child's session. This helps when parents have alternating care. The additional email can be added by the client in their profile, or you can do it at the booking level.
 - Most importantly -- **a reminder allows the client to log out of the session with one click**. If they are home sick, it is very easy to forget to log out via their profile.
-- An automatic reminder with an opt-out option ensures clients do not forget to opt out, creating a spot in the class for someone who wants to use a make-up session.
+- An automatic reminder with an cancel option ensures clients do not forget to cancel from the session, creating a spot in the class for someone who wants to use a make-up session.
 
 A sample reminder email:
-
+<!-- wrong screenshot - this is for open programmes, not ongoing-->
 ![Sample event reminder email](../../assets/images/sample-event-reminder-email.png "Sample event reminder email")
 
 You can easily edit the text in the administration. [How to do it](edit-session-notification-template.md).
@@ -38,10 +38,10 @@ You can easily edit the text in the administration. [How to do it](edit-session-
 If you wish to disable sending these notifications for some programmes, this can be done at the programme level:
 
 1. Find the programme for which you want to turn off notifications and open it.
-2. In the **Online Registration** section, click **Change**.
+2. In the **Online Booking** section, click **Change**.
 3. Scroll down and click on the blue toggle at the bottom right of the **Communication** section so that it disappears. Each programme is pre-configured so that automatic notifications are sent.
 4. Confirm the settings by clicking **Save**.
-
+<!-- screenshot outdated -->
 ![Turning off event notifications](../../assets/images/turning-off-event-notifications.png "Turning off event notifications in course settings")
 
 ## Setting up different notification emails for different programmes

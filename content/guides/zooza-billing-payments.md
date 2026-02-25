@@ -30,13 +30,10 @@ As of June 2025, all billing and payment management for Zooza services is handle
 4. Enter your billing info and payment information
 5. To pay online, the client must register a payment card under *Payment Methods.
  ![Screenshot](../../assets/images/zooza-billing-payments-03.png)
- *
-
+ 
 ## Client Access to invoices and subscription
 
-
 View issued invoices and manage your subscription.
-
 
 Client logs into their Zooza account in Buyloop:
 
@@ -48,7 +45,6 @@ Client logs into their Zooza account in Buyloop:
 3. To pay online, the client must register a payment card under* Payment Methods.
  ![Screenshot](../../assets/images/zooza-billing-payments-07.png)
 
-*
 
 ![Screenshot](../../assets/images/blocks-creation-14.png)
 
