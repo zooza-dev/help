@@ -54,7 +54,7 @@ Notes:
 
 ![Screenshot](../../assets/images/customizing-widgets-01.png)
 
-Tip: For automatic invoice generation link your billing profile to the GoCardless app for automatic payment pairing - [Invoicing.](https://support.zooza.online/portal/en/kb/articles/invoicing)
+Tip: For automatic invoice generation link your billing profile to the GoCardless app for automatic payment pairing - [Billing and invoicing](billing-and-invoicing.md).
 
 ![Screenshot](../../assets/images/blocks-creation-07.png)
 

@@ -133,6 +133,7 @@ Markdown rules:
   - Keep as Markdown tables if small and readable.
   - Convert to definition-style bullets if large/complex.
 - Rewrite legacy internal links to new repo-relative `.md` links using `legacy/content-map.yml`.
+- **Dynamic tags in tables:** Zooza dynamic tags contain `*` and `|` characters (e.g., `*|FIRST_NAME|*`) which break Markdown tables. Always write them using HTML entities inside `<code>` tags: `<code>&#42;&#124;FIRST_NAME&#124;&#42;</code>`. Never use backtick escaping or backslashes for dynamic tags in table cells.
 
 ### Step F — Normalize assets
 - **Always download remote images**: If HTML sources reference remote/external image URLs (e.g., CDN-hosted screenshots), download them to `assets/images/` with descriptive kebab-case filenames. Never leave remote URLs in the final Markdown.

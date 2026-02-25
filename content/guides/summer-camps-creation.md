@@ -43,7 +43,7 @@ sign up for a full week
 
 ![Screenshot](../../assets/images/summer-camps-creation-04.png)
 
-- Detailed instructions on how to create sessions can be found in this [manual](https://support.zooza.online/portal/en/kb/articles/creating-events-in-groups).
+- Detailed instructions on how to create sessions can be found in [Edit sessions in programmes](edit-sessions-in-programmes.md).
 
 ![Screenshot](../../assets/images/allowing-multiple-registration-04.png)
 

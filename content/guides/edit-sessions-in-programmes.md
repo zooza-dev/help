@@ -56,7 +56,7 @@ Confirm the changes to the selected dates by clicking Start and press Continue a
 
 ## Edit a single session
 
-If you only have 1 session that you need to edit, you can do this by following the same steps as in the chapter above or directly in the session details. For more information about working with sessions, see the manual about [Creating sessions/sessions](https://support.zooza.online/portal/en/kb/articles/creating-events-in-groups).
+If you only have 1 session that you need to edit, you can do this by following the same steps as in the chapter above or directly in the session details. For more information about creating classes, see [Creating a class](creating-a-class.md).
 
 ![Screenshot](../../assets/images/edit-events-in-courses-09.png)
 

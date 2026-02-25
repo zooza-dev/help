@@ -29,7 +29,7 @@ For example, blocks can be used for:
 ## Creating blocks
 
 
-Blocks are created when creating sessions in a class, where you decide whether to create a new block or insert the sessions into an existing block... This flexibility allows you to manage programmes efficiently and at the same time offer your clients better orientation and choice. For detailed instructions on creating sessions, please refer to the separate [manual](https://support.zooza.online/portal/en/kb/articles/creating-events-in-groups).
+Blocks are created when creating sessions in a class, where you decide whether to create a new block or insert  sessions into an existing block... This flexibility allows you to manage programmes efficiently and at the same time offer your clients better orientation and choice. For detailed instructions on creating sessions, see [Edit sessions in programmes](edit-sessions-in-programmes.md).
 
 ![Screenshot](../../assets/images/blocks-creation-01.png)
 

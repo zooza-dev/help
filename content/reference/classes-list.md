@@ -64,6 +64,7 @@ The total number of records is shown above the table. Results can be sorted by v
 
 ## Related
 
+- [Creating a class](../guides/creating-a-class.md) — step-by-step guide to creating a new class.
 - [Class Detail](class-detail.md) — the detail view for a single class.
 - [Programmes List](programmes-list.md) — managing programmes and their classes.
 - [Programme Class Session Definition Guide](../guides/programme-class-session-definition.md) — how to set up class structures.

@@ -77,7 +77,7 @@ In the form you will see the basic fields that your client must fill in when boo
 
 You can enrich the form with so-called Extra fields. The setting is done at
  the programme level. If you want detailed information about the use and
-purpose of extra fields, click [here](https://support.zooza.online/portal/en/kb/articles/labels-and-extra-fields)to read the manual.
+purpose of extra fields, see the [Additional fields on the booking form](additional-fields.md) guide.
 
 
 After selecting a specific programme, click the *Edit *button in the *Extra Fields* tile.

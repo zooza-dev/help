@@ -173,7 +173,7 @@ Core programme identity and type.
 
 ## Additional Fields
 
-Configures extra data fields on the booking form.
+Configures extra data fields on the booking form. For a step-by-step guide, see [Additional fields on the booking form](../guides/additional-fields.md).
 
 ![Additional Fields settings](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-additional-fields.png)
 

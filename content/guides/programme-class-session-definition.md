@@ -20,7 +20,7 @@ intercom_sync: false
 In real life, your clients sign up for a programme and then, when it starts, attend the programme within the agreed schedule. The moment you have more clients in one programme than you can handle, you naturally start to divide them into classes.
 In the app, it works very similarly. First you need to create a programme. You will then add classes to the programme that your clients can join. When you create classes, you also create sessions – a timetable, in which you will then record attendance.
 
-For the whole process of creating a menu, there is a system available in the application that will help you step by step with the individual settings. More information can be found in the [documentation](https://support.zooza.online/portal/en/kb/articles/course-creation).
+For the whole process of creating a menu, there is a system available in the application that will help you step by step with the individual settings. More information can be found in the [Creating a class](creating-a-class.md) guide.
 
 ## Programme types
 
@@ -34,16 +34,17 @@ These are typically lectures, sessions, consultations or other meetings that hav
 
 ## Pay-as-you-go
 
-These are flexible programmes where clients register once and then choose which sessions to attend. They only pay for the sessions they book. You can optionally offer [entry passes](creating-entry-passes.md) for prepaid session bundles. The full guide for creating Pay-as-you-go programmes can be found in the [manual](pay-as-you-go-programme.md).
+These are flexible programmes where clients enrol once and then choose which sessions to attend. They only pay for the sessions they book. You can optionally offer [entry passes](creating-entry-passes.md) for prepaid session bundles. The full guide for creating Pay-as-you-go programmes can be found in the [manual](pay-as-you-go-programme.md).
 
 ## Classes
 
 Depending on the type of course, the creation of classes differs in only one detail: for ongoing and Pay-as-you-go programmes, it is possible to enter multiple dates, while for one-off programmes, it is possible to enter only one date.
-There is no limit to the number of dates in the ongoing and Pay-as-you-go programmes. So you can make two, but you can also make two hundred. How to create a class can be found in this [manual.](https://support.zooza.online/portal/en/kb/articles/group-creation)
+There is no limit to the number of dates in the ongoing and Pay-as-you-go programmes. So you can make two, but you can also make two hundred. How to create a class can be found in the [Creating a class](creating-a-class.md) guide.
 
 ## Classes and sessions
 
-Each class contains at least one session. If there are more terms, we can also call them schedules. The dates automatically determine the time range of the programme, when it starts and when it ends. All the steps for creating sessions/sessions into classes can be seen in this [link](https://support.zooza.online/portal/en/kb/articles/creating-events-in-groups).
+
+Each class contains at least one session. If there are more sessions, we can also call them schedules. The sessions automatically determine the time range of the programme, when it starts and when it ends. For a step-by-step walkthrough, see [Creating a class](creating-a-class.md) and [Edit sessions in programmes](edit-sessions-in-programmes.md).
 
 ## Billing periods
 

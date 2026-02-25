@@ -52,7 +52,7 @@ The client receives a notification email confirming the cancellation.
 
 An entry pass is a prepaid product that gives clients a set number of visits. Each time they book a session, one entry is deducted. Entry passes are created as products and assigned to programmes or classes.
 
-See the full guide: [Creating entry passes](../guides/creating-entry-passes.md).
+See the full guide: [Creating entry passes](../guides/creating-entry-passes.md). For how clients see and use passes in their profile, see [Entry pass — client view](../guides/entry-pass-client-view.md).
 
 ## What is the difference between an entry pass and prepaid credit?
 

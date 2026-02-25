@@ -59,5 +59,6 @@ Pagination shows total pages and results count.
 
 ## Related
 
+- [Billing and invoicing](../setup/billing-and-invoicing.md) — setting up billing profiles and invoice generation.
 - [Xero Integration Guide](../setup/xero-integration.md) — how to connect Zooza with Xero for invoicing.
 - [Xero Invoicing FAQ](../faq/xero-invoicing-faq.md) — common questions about Xero integration.
