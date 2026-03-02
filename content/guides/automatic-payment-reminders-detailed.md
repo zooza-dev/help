@@ -20,17 +20,15 @@ intercom_sync: false
 
 Automated client communications include automatic payment reminders that are sent to outstanding bookings and can help you improve your clients’ payment discipline. Automatic reminders are only sent if you set them to be sent.
 
-![Screenshot](../../assets/images/allowing-multiple-registration-03.png)
 If you set them to be sent, you can set when the first reminder is sent and when the second reminder is sent. Of course, reminders are only sent if the client still hasn't made the payment in the meantime. This is an advanced setting within the application. We recommend turning it on only based on poor payment discipline of clients.
 
 ## Setting automatic reminders
-
 
 Payment reminders are set at the programme level. So you can choose which programmes, sessions, workshops or lectures you need them for and set different rules for each programme.
 
 1. At the level of the selected programme, click *Edit* in the *Price and Payment* tile.
  ![Screenshot](../../assets/images/automatic-payment-reminders-detailed-02.png)
-2. Scroll down the screen to *Payment Reminder Settings *and click *Change.*
+2. Scroll down the screen to *Payment Reminder Settings* and click *Change.*
  ![Screenshot](../../assets/images/automatic-payment-reminders-detailed-03.png)
 3. This will open a number of settings from which you can choose according to your requirements. The setup is done in several steps:
 	1. Start sending reminders
@@ -38,8 +36,8 @@ Payment reminders are set at the programme level. So you can choose which progra
 	3. Setting up dates, when reminders will be sent
 	4. Automatic deletion of bookings
 	5. Saving
-<!-- screenshot outdated -->
-![Screenshot](../../assets/images/automatic-payment-reminders-detailed-04.png)
+
+![[Pasted image 20260302130502.png]]
 
 ### 1. Start sending reminders
 
@@ -57,8 +55,7 @@ With this option, you send reminders for bookings before the programme starts - 
 
 With this option, you send reminders for bookings as they occur - after the booking has occurred, regardless of the progress of the programme. A reminder will be sent to all valid bookings that do not have a recorded payment. The sending of the 1st and 2nd reminders will occur at an interval set by you, which you specify by the number of days. The number of days for reminders is counted as the number of days after the booking has been cancelled.
 
-![Screenshot](../../assets/images/allowing-multiple-registration-04.png)
-TIP: If you also provide the option for clients to sign up for ongoing classes after the programme has started, you can change the reminder setting from before the programme starts to after booking has started after the first reminder period.
+**TIP**: If you also provide the option for clients to sign up for ongoing classes after the programme has started, you can change the reminder setting from before the programme starts to after booking has started after the first reminder period.
 
 ### 4. Automatic deletion of bookings
 

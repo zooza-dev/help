@@ -20,7 +20,6 @@ intercom_sync: false
 In Zooza, you can change an instructor either at the class level or directly on sessions, depending on what you need.
 
 <br>
-
 ## Changing an instructor at the class level
 
 1. Open the Class you want to update.

@@ -22,12 +22,10 @@ The blocks feature allows you to divide the terms within a class into smaller lo
 
 For example, blocks can be used for:
 
-
-1. Booking according to interest - the client chooses a specific block that suits him best when registering (e.g. only a certain month or dates on selected days).
+1. Booking according to interest - the client chooses a specific block that suits him best when enroling (e.g. only a certain month or dates on selected days).
 2. Time period division – if the class lasts longer (e.g. a whole school year), blocks allow you to divide it into smaller units (e.g. semesters, quarters, camps), and you can issue payments separately for each period according to these blocks.
 
 ## Creating blocks
-
 
 Blocks are created when creating sessions in a class, where you decide whether to create a new block or insert  sessions into an existing block... This flexibility allows you to manage programmes efficiently and at the same time offer your clients better orientation and choice. For detailed instructions on creating sessions, see [Edit sessions in programmes](edit-sessions-in-programmes.md).
 
@@ -37,18 +35,15 @@ Blocks are created when creating sessions in a class, where you decide whether t
 
 ## Change blocks on existing terms
 
-
 If you need to make a change to a block - for example, to change the name or move sessions from one block to another - you can use the bulk session editing feature directly at the class level. Follow these steps:
 
 
 1. In the tile sessions overview in the class detail, select the sessions you want to edit.
 2. Click Bulk Edit.
 3. Select the Change Block option and select the specific edit you want to make on the marked sessions.
-
-![Screenshot](../../assets/images/blocks-creation-02.png)
+![[Pasted image 20260302140116.png]]
 
 This way, you can easily reallocate or modify blocks without having to modify each session individually.
-
 
 ## Price and payment
 
@@ -63,7 +58,7 @@ Then it is important to set when the discount on the blocks should be active. Yo
 ## Online booking
 
 The blocks you create are not automatically activated for online booking. This is because the blocks may also be for your internal use only - for example, if you have sessions scheduled for the whole school year but want to split them into sessions, expecting clients to enrol for the whole class period at once. In this case, the blocks are only used to administratively break down the terms for you, without affecting how clients enrol.
-If you want to give the client the option to enrol only for a specific block and thus make the block publicly visible in the booking form, enable it in the* Price and Payment *tile - after opening the selected block, check the *Enable online booking *option.
+If you want to give the client the option to enrol only for a specific block and thus make the block publicly visible in the booking form, enable it in the* Price and Payment *tile - after opening the selected block, check the *Enable online booking* option.
 
 ![Screenshot](../../assets/images/blocks-creation-05.png)
 
@@ -76,13 +71,9 @@ Detailed instructions on how to create payment templates and how to apply them t
 
 ![Screenshot](../../assets/images/blocks-creation-06.png)
 
-![Screenshot](../../assets/images/blocks-creation-07.png)
-
-
-Tip: We recommend using the Periodic Prepayment template with a block-by-block payment frequency when you plan to divide a class into logical units by which you will expect clients to pay - for example, quarters, semesters, and so on.
+>**Tip:** We recommend using the Periodic Prepayment template with a block-by-block payment frequency when you plan to divide a class into logical units by which you will expect clients to pay - for example, quarters, semesters, and so on.
 
 However, if you offer programmes where the blocks are just an organizational division of dates that run at the same time (e.g., parallel running classes), it is sufficient for you to use a common payment frequency such as monthly, quarterly, or one-time.
-
 
 ## Products
 
@@ -112,9 +103,8 @@ In the session list, you see these blocks next to the programme information:
 
 ## In booking form
 
+If you have programmes divided into blocks and also enabled online booking, the client chooses which blocks he wants to subscribe to when enroling. This option will be displayed to him when he clicks on the *Customize Menu* button. If the client selects the *For the entire class period* option, the system will automatically enrol the client for all available blocks within the class and full payment for the entire programme is expected at the same time.
 
-If you have programmes divided into blocks and also enabled online booking, the client chooses which blocks he wants to subscribe to when enroling. This option will be displayed to him when he clicks on the* Customize Menu *button. If the client selects the *For the entire class period *option, the system will automatically register the client for all available blocks within the class and full payment for the entire programme is expected at the same time.
-<!-- screenshot outdated -->
 ![Screenshot](../../assets/images/blocks-creation-12.png)
 
 ## In booking detail
@@ -123,9 +113,7 @@ If the client only enrols for the selected blocks via the booking form, you will
 
 ![Screenshot](../../assets/images/blocks-creation-13.png)
 
-![Screenshot](../../assets/images/blocks-creation-14.png)
-
-Note: To verify which blocks a client has registered for, go to the Class tile in the *Booking Details* to see a complete overview of which programme, class, and specific blocks the client belongs to. This overview allows you to quickly and easily see the scope of the client's booking.
+>**Note:** To verify which blocks a client has enroled for, go to the Class tile in the *Booking Details* to see a complete overview of which programme, class, and specific blocks the client belongs to. This overview allows you to quickly and easily see the scope of the client's booking.
 
 
 ![Screenshot](../../assets/images/blocks-creation-15.png)

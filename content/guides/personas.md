@@ -31,9 +31,7 @@ There are 2 types of persons you can work with:
 1. Client – the email address used to create the booking
 2. Attendee – the person who actually attends the programme
 
-![Screenshot](../../assets/images/individual-lessons-climbing-wall-02.png)
-
-Example: In children’s programmes, the client is typically the parent, while the attendee is the child.
+>**Example:** In children’s programmes, the client is typically the parent, while the attendee is the child.
 
 ## Automatic creation
 
@@ -99,9 +97,7 @@ To view a client (whether the registrant or attendee) in full detail, Zooza prov
 Once in the Client Card, you can:
 1. Edit client information by clicking *Edit* in the tiles containing basic details.
 
-![Screenshot](../../assets/images/client-import-01.png)
-
-Note: This action can only be performed if the Client is not the same as the Attendee. If they are the same person, you must submit a new request, which will need to be approved by Zooza.
+>**Note:** This action can only be performed if the Client is not the same as the Attendee. If they are the same person, you must submit a new request, which will need to be approved by Zooza.
 
  2. Manage family & connections by creating or editing relationships between clients.
 
@@ -130,8 +126,7 @@ If you find duplicate records for the same person, you can merge them into a sin
  ![Screenshot](../../assets/images/personas-17.png)
 3. Click *Save* to complete the merge.
 
-![Screenshot](../../assets/images/customizing-widgets-01.png)
-Tip: Before saving, review names, contact details, and other fields so the main profile reflects the correct information.
+>**Tip:** Before saving, review names, contact details, and other fields so the main profile reflects the correct information.
 
 ### Edit relationship
 
@@ -157,8 +152,6 @@ You can search in the notes or create a new one by clicking the *New Message* bu
 
 ![Screenshot](../../assets/images/personas-23.png)
 
-![Screenshot](../../assets/images/customizing-widgets-01.png)
-
-Info: All messages created during attendance are visible in the client card in client's detail.
+>**Info:** All messages created during attendance are visible in the client card in client's detail.
 
 ![Screenshot](../../assets/images/personas-25.png)

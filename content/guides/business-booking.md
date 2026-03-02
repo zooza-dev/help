@@ -31,7 +31,7 @@ For corporate orders, you must enable at least one of the following fields:
 5. VAT
 
 
-If one or more fields are active, the booking form will add the option to enrol per company. Once clicked, the selected extra fields are displayed in a booking form and the client can fill them in. Only the *Company* and *Business ID* number fields are required.
+If one or more fields are active, the booking form will add the option to enrol per company. Once clicked, the selected extra fields are displayed in a booking form and the client can fill them in. Only the *Business name* and *Business ID*  fields are required.
 
 As with the other extra fields, you must enter a custom name.
 
@@ -42,7 +42,5 @@ Any booking that contains at least one of these fields filled in is flagged in t
 ![Screenshot](../../assets/images/business-registration-02.png)
 
 ![Screenshot](../../assets/images/business-registration-03.png)
-
-![Screenshot](../../assets/images/allowing-multiple-registration-03.png)
 
 If you have invoice generation enabled, the resulting invoice will have the company details as the billing details and not the client details.

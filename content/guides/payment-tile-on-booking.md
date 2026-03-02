@@ -14,7 +14,6 @@ last_converted: "2026-02-11"
 intercom_id: 13728604
 intercom_sync: false
 ---
-
 # Payment tile on booking
 
 You can correct or modify each payment. Modifications can be made to bookings separately. In this case, you are adjusting the amount owed. What is the amount due can be found in more detail [HERE](outstanding-amount.md).
@@ -70,6 +69,4 @@ Reimbursement may come from several sources:
 - Enter the amount to be refunded/adjusted and then click OK
  ![Screenshot](../../assets/images/payment-tile-on-registration-07.png)
 
-![Screenshot](../../assets/images/blocks-creation-14.png)
-
-Note: In this case of a payment correction, it is not a refund of the payment back to the client’s account. Just a systemic change. You also don’t have to worry about the client seeing these changes in their account. The client only sees the resulting amounts in his/her profile – the amount to be paid, the amount of the registration fee, the amount of the discount and, in the case of a payment plan, a breakdown of future payments.
+>**Note:** In this case of a payment correction, it is not a refund of the payment back to the client’s account. Just a systemic change. You also don’t have to worry about the client seeing these changes in their account. The client only sees the resulting amounts in his/her profile – the amount to be paid, the amount of the registration fee, the amount of the discount and, in the case of a payment plan, a breakdown of future payments.

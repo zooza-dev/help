@@ -31,24 +31,22 @@ The quickest way to edit sessions is directly in the Sessions section. You can m
 2. Click on *Bulk Edit* to open a menu for editing the sessions:
  ![Screenshot](../../assets/images/edit-events-in-courses-02.png)
 3. Follow the instructions for each of the actions. More than 1 change can be made.
-![Screenshot](../../assets/images/edit-events-in-courses-03.png)
+![[Pasted image 20260302141455.png]]
 
 - *Delete* - Clicking the Delete button will completely delete the term. We recommend using delete term if you made a mistake and such term should never have existed.
 - *Change status* - Cancel will change the status of the session to Cancelled. We recommend using cancel if the session was supposed to take place, was scheduled, but was cancelled due to, for example, a instructor's illness. This way you will have a better overview of how many sessions were originally scheduled.
 	 ![Screenshot](../../assets/images/edit-events-in-courses-04.png)
-6. *Adjust time* - When adjusting the time, you can choose from three options for adjusting the date:
-7. *Keep as is* – if you want to move the date
-8. *Set new time for all selected sessions* – enter the new valid time
-9. *Move the time by interval* – you can add or subtract from the original time, for example 1 hour)
- ![Screenshot](../../assets/images/edit-events-in-courses-05.png)
+- *Edit date and time* - When adjusting the date and time, you can choose from three options for adjusting the date:
+	1. *Keep as is* – if you want to move the date
+	2. *Set new time for all selected sessions* – enter the new valid time
+	3. *Move the time by interval* – you can add or subtract from the original time, for example 1 hour)
+ ![[Pasted image 20260302141602.png]]
 
-![Screenshot](../../assets/images/client-import-03.png)
-Alert! When creating sessions, you can choose whether the system should skip public holidays and school breaks. This setting only applies during the initial creation of sessions. After sessions are created, you work with specific dates. If you later make a bulk change (for example, moving sessions from Monday to Thursday), the system no longer checks whether the new date falls on a holiday or not.
+>**Alert!** When creating sessions, you can choose whether the system should skip public holidays and school breaks. This setting only applies during the initial creation of sessions. After sessions are created, you work with specific dates. If you later make a bulk change (for example, moving sessions from Monday to Thursday), the system no longer checks whether the new date falls on a holiday or not.
 Additionally, the system does not automatically add new sessions if some dates were originally skipped due to holidays — for example, if Monday was a holiday and you move sessions to Thursday, which is not a holiday, the Thursday session will not be added automatically.
 If you want holidays and breaks to be considered again after such a change, you need to delete the existing sessions and create them again with the desired setting.
 
-![Screenshot](../../assets/images/discount-code-01.png)
-Attention! Do not forget to set whether you want to notify clients about the changes you are making and press *Continue*.
+>**Attention!** Do not forget to set whether you want to notify clients about the changes you are making and press *Continue*.
 
 ![Screenshot](../../assets/images/edit-events-in-courses-08.png)
 
@@ -69,7 +67,6 @@ If you only have 1 session that you need to edit, you can do this by following t
 3. If you only want to edit 1 session, open that session and make the edits as in the Edit a single session section of this manual.
 4. If you want to make a bulk edit of sessions, click the Overview button and you will be taken to the Sessions section with the filter already active. Next, proceed as in the *Bulk Edit Sessions* section of this manual.
 
-![Screenshot](../../assets/images/discount-code-01.png)
-Attention! At the class level you will be shown ONLY the upcoming sessions, if you are interested in viewing all sessions (previous and upcoming) and then editing those, you need to change the sort order to something other than Upcoming Sessions.
+>**Attention!** At the class level you will be shown ONLY the upcoming sessions, if you are interested in viewing all sessions (previous and upcoming) and then editing those, you need to change the sort order to something other than Upcoming Sessions.
 
 ![Screenshot](../../assets/images/edit-events-in-courses-12.png)

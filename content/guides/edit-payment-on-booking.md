@@ -17,8 +17,6 @@ intercom_sync: false
 
 # Edit payment on booking
 
-![Screenshot](../../assets/images/blocks-creation-14.png)
-
 You can correct, edit or move each payment. Adjustments can be made individually at the level of bookings, in which case it is a change to the outstanding amount. What constitutes an outstanding amount is explained in detail [HERE](outstanding-amount.md).The amount owed on the booking itself can be modified in the form of discounts, adding a new payment, refunding a payment or entering a payment plan.
 
 ## Entering a payment
@@ -44,9 +42,8 @@ You can edit payments in several ways. Therefore, it is up to you which option y
 5. Booking fee – modify the booking fee
 6. Discount - modify the amount owed by granting a discount
 7. Payment schedule – modify the payment of the amount owed via scheduled payments.
- ![Screenshot](../../assets/images/edit-payment-on-registration-06.png)
+ ![[Pasted image 20260302141046.png]]
 
-![Screenshot](../../assets/images/blocks-creation-07.png)
 After each adjustment of the amount due, the balance of payments will also be recalculated. Thus, it may happen that a booking goes from ‘*paid*’ to *'unpaid*' or vice versa ‘*overpaid*’.
 
 For a detailed breakdown of both payments and adjustments, please refer to the *List of Payments* section.
@@ -85,19 +82,16 @@ If you happen to have entered a payment incorrectly, you have the option to opt 
 3. Enter the amount and then click OK
  ![Screenshot](../../assets/images/edit-payment-on-registration-14.png)
 
-![Screenshot](../../assets/images/client-import-01.png)
-Note: In the case of a correction, this is not a refund of the payment back to the client's account. It is just a system change. Also, you don't have to worry about the client seeing these changes in their account. The client only sees the resulting amounts in their profile - the amount to be paid, the amount of the registration fee, the amount of the discount and, in the case of a payment schedule, a breakdown of future scheduled payments.
+
+>Note: In the case of a correction, this is not a refund of the payment back to the client's account. It is just a system change. Also, you don't have to worry about the client seeing these changes in their account. The client only sees the resulting amounts in their profile - the amount to be paid, the amount of the registration fee, the amount of the discount and, in the case of a payment schedule, a breakdown of future scheduled payments.
 
 ## Move payment
 
 It occasionally happens that a client makes a payment to a variable symbol that belongs to another booking. Zooza therefore allows you to transfer the payment, regardless of whether it has been paired manually, via email notification or via GoCardless, which will make it easier for you to manage payments on bookings.
 
 
-![Screenshot](../../assets/images/client-import-03.png)
-
-Warning! You can only move a payment if there has been no refund or correction on that transaction, and only to a booking that manages its payments. If another booking manages payments on the target booking, move the payment directly to that booking.
+>**Warning!** You can only move a payment if there has been no refund or correction on that transaction, and only to a booking that manages its payments. If another booking manages payments on the target booking, move the payment directly to that booking.
 To move a payment:
-
 
 1. In the *Bookings* tab, locate the booking on which you want to edit the transaction. In the *List of Payments* section, click the *More* button next to the payment you wish to refund.
  ![Screenshot](../../assets/images/edit-payment-on-registration-17.png)
@@ -111,10 +105,6 @@ To move a payment:
 5. On this booking, you will see a note that the payment has been fully refunded with an option to move to the booking on which the payment is registered.
  ![Screenshot](../../assets/images/edit-payment-on-registration-20.png)
  
-
-![Screenshot](../../assets/images/blocks-creation-07.png)
-
 Once moved, you will see a note on the original booking that the payment has been moved, with an option to go to the booking where the payment is recorded. In the details of the new booking, the transaction statement displays information about the original booking from which the payment was moved.
-
 
 ![Screenshot](../../assets/images/edit-payment-on-registration-22.png)

@@ -20,10 +20,9 @@ intercom_sync: false
 A lead collection class is a class without sessions. Use it to collect interest from clients before you have a schedule ready. For example, you want to launch a new programme but only if enough people are interested.
 
 You set up lead collection at the class level by selecting the **Lead collection** option.
+![[Pasted image 20260302141744.png]]
 
-![Screenshot](../../assets/images/group-interested-01.png)
-
-The class will also appear in the booking form with the option to register. Once you have enough applicants, define the sessions and the lead collection class automatically becomes a regular class. Your clients will see all the information in their profiles.
+The class will also appear in the booking form with the option to enrol. Once you have enough applicants, define the sessions and the lead collection class automatically becomes a regular class. Your clients will see all the information in their profiles.
 
 This change also works retroactively — if you delete all sessions from a class, it automatically changes back to a lead collection class.
 
