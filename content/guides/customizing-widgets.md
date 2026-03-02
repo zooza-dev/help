@@ -15,7 +15,6 @@ last_converted: 2026-02-15
 intercom_id: 13728533
 intercom_sync: false
 ---
-<!-- REVIEW: add WIX -->
 # Customizing widgets
 
 Zooza offers an easy way to customize the widgets you have deployed on your website. You can customize each widget to suit your needs - you can filter the programme offerings, set specific parameters or change the look and feel according to your site design.Widget integration and configuration options:
@@ -33,16 +32,13 @@ Types of widgets available:
 5. Product/Order form
 6. Map widget
 
-![Screenshot](../../assets/images/customizing-widgets-01.png)
 
-TIP: Think about the navigation on your site, it's best to place some of the subpages you create directly in the menu so that visitors can navigate as quickly as possible. We also recommend having your profile highlighted in the menu and it can be called anything you like - attendance, my profile, client profile.. for example like this:
-
+>**TIP:** Think about the navigation on your site, it's best to place some of the subpages you create directly in the menu so that visitors can navigate as quickly as possible. We also recommend having your profile highlighted in the menu and it can be called anything you like - attendance, my profile, client profile.. for example like this:
 
 ![Screenshot](../../assets/images/customizing-widgets-02.png)
 
 ## Booking form
 
-![Screenshot](../../assets/images/blocks-creation-07.png)
 In its basic form, the booking form is displayed on a page listing all the programmes you have created and offered for online booking. The form contains basic fields to fill out and a preset display of information about each programme. If you wish to customize your programme selection, we recommend using the Embed version (HTML code). You can create your own specific settings in Zooza and use them to generate HTML code to embed on your page.
 
 ## Basic form fields
@@ -56,7 +52,6 @@ In the form you will see the basic fields that your client must fill in when boo
 5. Note
 
 6. You can modify their display in the booking form by overwriting the text. At the programme level, click *Online Booking – Edit*.
- <!-- screenshot outdated -->
  ![Screenshot](../../assets/images/customizing-widgets-04.png)
  
 7. Scroll down to the *Customize Booking Form* section and enter new text in the field to change its display in the booking form. *Save *the change.
@@ -74,27 +69,22 @@ In the form you will see the basic fields that your client must fill in when boo
 
 ## Extra fields in the form for more information collection
 
-
 You can enrich the form with so-called Extra fields. The setting is done at
  the programme level. If you want detailed information about the use and
 purpose of extra fields, see the [Additional fields on the booking form](additional-fields.md) guide.
 
-
-After selecting a specific programme, click the *Edit *button in the *Extra Fields* tile.
-
+After selecting a specific programme, click the *Edit* button in the *Additional Fields* tile.
+ 
 ![Screenshot](../../assets/images/customizing-widgets-09.png)
 
-Click on *Extend booking form with extra fields*.
+Click on *Extend booking form with additional fields*.
  After selecting a specific extra field you need to fill in its name, only after this setting the field will be displayed in the booking form. The field name is mandatory. Don’t forget to save your changes at the bottom of the page.
 
 ![Screenshot](../../assets/images/customizing-widgets-10.png)
 
 ![Screenshot](../../assets/images/customizing-widgets-11.png)
 
-![Screenshot](../../assets/images/blocks-creation-14.png)
-Note: Since the setting of the extra fields is done at the programme level, you
-need to set the extra fields on all programmes separately. Or create one
-programme with all necessary settings and then Copy the programme.
+>**Note:** Since the setting of the extra fields is done at the programme level, you need to set the extra fields on all programmes separately. Or create one programme with all necessary settings and then Copy the programme.
 
 ## Modification of the published booking form
 
@@ -108,8 +98,8 @@ If you have a variety of course offerings - for example, camps, children's progr
 4. Below the code, click *Customize embed code*
  ![Screenshot](../../assets/images/customizing-widgets-13.png)
  
-5. Select which programmes and which locations to display on the page in the booking form
- ![Screenshot](../../assets/images/customizing-widgets-14.png)
+5. Select which programmes and which locations to display on the page in the booking form![[Pasted image 20260302140643.png]]
+ 
 6. If you are collecting a larger amount of data or offering products for sale when you register, we recommend enabling the Multi-stage booking option. This feature breaks up the form into multiple clear steps, improving the user experience.
 7. Copy the code by clicking Copy and place it on your page.
 
@@ -122,10 +112,7 @@ In the Publish section, you will also find additional options to customize the l
 2. This will open a configuration window where you can set the display of different parts of the form - from the fields to be displayed to the way the programme is presented to the visitor.
  ![Screenshot](../../assets/images/customizing-widgets-16.png)
 
-![Screenshot](../../assets/images/customizing-widgets-01.png)
-
-Note: In order to see what display works best for you, we recommend that you try displaying them on the page and decide based on that.
-
+>**Note:** In order to see what display works best for you, we recommend that you try displaying them on the page and decide based on that.
 
 ## Client Profile
 
@@ -138,9 +125,6 @@ Zooza allows you to create a client profile on your website, to which the client
 5. Use make-up sessions
 
 Access purchased videos or other digital content in secure mode
-
-![Screenshot](../../assets/images/blocks-creation-07.png)
-
 
 This form also offers various settings that you can customize to suit your needs. For example, you can turn on collecting reasons for cancelling from a programme - see the separate [manual](../setup/collecting-reason-for-cancelling.md) for details on this functionality.
 
@@ -182,13 +166,11 @@ As with the booking form, you have the option to display only some programmes in
 
 Zooza is also unique in that it can mediate the video in security mode so that no one can access the video except by making it available to bookings (either by attribution or by sale). In order to play the video, you need to create a subpage where the videos will be displayed.
 
-![Screenshot](../../assets/images/client-import-01.png)
-Note: Deploying a widget to display videos also needs to be done if you put the video in a class/term to display in the client profile.
+>**Note:** Deploying a widget to display videos also needs to be done if you put the video in a class/term to display in the client profile.
 
 ## Order form
 
 Allows you to collect orders for your digital products or other products. In the case of digital products, they will be directly accessible in the client profile after payment.
-
 
 ## Map widget
 
@@ -207,7 +189,7 @@ Clicking on a specific location takes the user directly to the booking form of t
 
 ### Viewing the map widget
 
-![Screenshot](../../assets/images/customizing-widgets-25.png)
+![[Pasted image 20260302140737.png]]
 
 ## Filtering widgets with URL parameters
 

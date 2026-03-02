@@ -28,8 +28,7 @@ The reminder is helpful for several reasons:
 - An automatic reminder with an cancel option ensures clients do not forget to cancel from the session, creating a spot in the class for someone who wants to use a make-up session.
 
 A sample reminder email:
-<!-- wrong screenshot - this is for open programmes, not ongoing-->
-![Sample event reminder email](../../assets/images/sample-event-reminder-email.png "Sample event reminder email")
+![[Pasted image 20260302130613.png]]
 
 You can easily edit the text in the administration. [How to do it](edit-session-notification-template.md).
 
@@ -41,8 +40,7 @@ If you wish to disable sending these notifications for some programmes, this can
 2. In the **Online Booking** section, click **Change**.
 3. Scroll down and click on the blue toggle at the bottom right of the **Communication** section so that it disappears. Each programme is pre-configured so that automatic notifications are sent.
 4. Confirm the settings by clicking **Save**.
-<!-- screenshot outdated -->
-![Turning off event notifications](../../assets/images/turning-off-event-notifications.png "Turning off event notifications in course settings")
+![[Pasted image 20260302130722.png]]
 
 ## Setting up different notification emails for different programmes
 
@@ -70,4 +68,4 @@ Now that you have a new custom template, you can assign it to a specific program
 3. Scroll down and select your desired template at the bottom right of the **Communication** section.
 4. Click **Save**.
 
-![Assigning a custom template to a course](../../assets/images/assigning-custom-template-course.png "Selecting a custom notification template for a course")
+![[Pasted image 20260302130756.png]]

@@ -53,9 +53,6 @@ Both types work the same way in the booking flow. Choose based on whether you wa
 
    ![Description and template](../../assets/images/entry-pass-description-template.png "Product description and notification template settings")
 
-
-
-
 ## Assign pass to a class
 
 After creating the entry pass product, assign it to the relevant programme or class.

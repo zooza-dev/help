@@ -50,13 +50,10 @@ You can also access the communication detail by searching for a specific booking
 - View the content of sent and received messages
 - See whether messages have been read or handled
 
-A red ball with a number in the menu indicates whether you have received a new message from a client.
-<!--screenshot outdated -->
-![New message indicator](../../assets/images/new-message-indicator.png "New message indicator in the menu")
+The list of all unread messages can be found on the main dashboard under the list of bookings, where you can click on the email and Zooza will redirect you to the booking communication.
+![[Pasted image 20260302142831.png]]
 
-When you click on the indicator, you will see a list of unread messages. Click on the client's email to view a specific message.
-
-![Unread messages list](../../assets/images/unread-messages-list.png "Unread messages list")
+![[Pasted image 20260302142855.png]]
 
 ## Sending messages
 

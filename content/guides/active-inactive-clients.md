@@ -14,7 +14,6 @@ last_converted: "2026-02-18"
 intercom_id: 13762569
 intercom_sync: false
 ---
-
 <!-- Synonyms: active client, inactive client, client status, client capacity, aktívny klient, neaktívny klient, kapacita klientov, servisný balík, počet klientov -->
 
 # Active and inactive clients

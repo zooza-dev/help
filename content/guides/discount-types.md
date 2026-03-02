@@ -27,14 +27,11 @@ Discount coupon works as a gift card that clients can use for their loved ones o
 
 Free of charge session/session works as a make-up session for the client for your services. For instructions follow How to work with credits?
 
-![Screenshot](../../assets/images/allowing-multiple-registration-04.png)
 Application: In case you have a client you want to give a discount to, you give them an appointment/session on an already created booking.
 
 ## Discount code
 
 Discount code is a code containing information such as discount and a form of discount (absolute value/relative value) chosen by you. It can be reused by all users (clients) who know the code. For instructions on how to enter a new discount code, follow instructions.
-
-![Screenshot](../../assets/images/allowing-multiple-registration-04.png)
 
 Application: You want to run a campaign and use influencer networks to do it. You generate a discount code of your choice and come up with an easy-to-remember code that you publish via influencer.
 
@@ -43,27 +40,22 @@ Application: You want to run a campaign and use influencer networks to do it. Yo
 This type of a discount is useful, when used on an existing booking of a client.
 For more information read the manual HERE.
 
-![Screenshot](../../assets/images/allowing-multiple-registration-04.png)
-
 Application: In case you have a client, you want to give a discount to, you give them individual discount on an already created booking
 
 ## Payment template discount
 
 Another way to redeem the discount is through payment types. Thus, by creating a new payment type, such as one-time or monthly discount, and then setting it up at booking or entering it in the booking form.
 
-![Screenshot](../../assets/images/discount-code-01.png)
 Note: This type can be applied ONLY for programmes that have a booking type of Booking for the full programme duration. How to create payment templates can be found in HERE
 
-![Screenshot](../../assets/images/allowing-multiple-registration-04.png)
+
 Application: You want to provide different options for clients to pay for your programmes – one-off, quarterly and annual. In order to motivate clients to pay the entire programme upfront and therefore choose the annual payment, discount it.
 
 ## Gift entry pass
 
 This type of product is created as a product and can therefore be sold via the product form or via the client profile. It serves as a entry pass that clients can use for their loved one. To enter the entry pass, follow the instructions in How to work with credits?
 
-![Screenshot](../../assets/images/allowing-multiple-registration-04.png)
 Application: During Christmas time, create a entry pass with different discount amounts and offer it to clients for sale in the product form or within their profile. Clients will then be able to purchase the entry pass and gift the code from it to their loved ones to enroll them in your programmes.
-
 
 ## Where can I find discounts?
 

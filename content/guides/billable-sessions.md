@@ -42,8 +42,7 @@ Billable sessions are configured at three levels: programme, class, and session.
 3. Set the **Billable sessions** field to the number of sessions that should be paid for.
 
 This value becomes the default for all classes within the programme.
-<!-- screenshot outdated -->
-![Billable sessions setting on programme](../../assets/images/how-to-create-paid-events-01.png "Billable sessions field in Programme Price and Payment settings")
+![[Pasted image 20260302133541.png]]
 
 ### 2. Class level (override per class)
 
@@ -52,23 +51,20 @@ This value becomes the default for all classes within the programme.
 
 If a class has its own value, it overrides the programme-level setting. This allows individual classes to have a different number of billable sessions.
 
-![Billable sessions setting on class](../../assets/images/discount-code-01.png "Billable sessions field in Class Price and Payment settings")
 
 > **Important:** If the programme has billable sessions set (e.g. 12) and the class value is 0, the programme value is used. You cannot set a class to 0 billable sessions when the programme has a non-zero value.
-<!-- screenshot outdated -->
-![Billable sessions override example](../../assets/images/how-to-create-paid-events-03.png "Class-level override of billable sessions")
+
+![[Pasted image 20260302133637.png]]
 
 ### 3. Session level (mark individual sessions)
 
 Each session must also be marked as billable or not billable:
-
 1. **When creating sessions** — check the **Billable** checkbox.
-
-   ![Billable checkbox when creating sessions](../../assets/images/how-to-create-paid-events-04.png "Billable checkbox on session creation")
+	![Billable checkbox when creating sessions](../../assets/images/how-to-create-paid-events-04.png "Billable checkbox on session creation")
 
 2. **On an existing session** — open the session detail → **Session settings** → toggle the **Billable session** field.
-	<!-- screenshot outdated -->
-   ![Billable session toggle in session detail](../../assets/images/how-to-create-paid-events-05.png "Billable session field in session settings")
+	
+   ![[Pasted image 20260302133722.png]]
    ![Billable session detail](../../assets/images/how-to-create-paid-events-06.png "Session detail showing billable status")
 
 ## How it works

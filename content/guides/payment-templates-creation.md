@@ -15,10 +15,8 @@ last_converted: 2026-02-15
 intercom_id: 13728602
 intercom_sync: false
 ---
-
+<!-- REVIEW: add all types of prepaid payment frequencies -->
 # Payment templates creation
-
-![Screenshot](../../assets/images/allowing-multiple-registration-03.png)
 
 Within the payment templates, you have several options on how to use them for your programmes and clients. Please refer to [the instructions for](http://zooza.online/sk/support/druhy-platieb-za-kurz/) more information.
 
@@ -59,38 +57,35 @@ does not want to pay monthly, they choose to pay for the entire programme
 at once. For such a payment you can give a discount either none, in EUR or as a percentage.
 
 ![Screenshot](../../assets/images/payment-templates-creation-04.png)
-- Periodic pre-paid payment – you have the option to set whether the programme can be paid gradually, i.e. in frequency. Here you select from the options – Monthly, Quarterly, Semi-annually, Annually, After N terms (the number of terms after which the next scheduled payment for the programme will be issued), Fixed number of scheduled payments (the number of scheduled payment into which the price for the programme will be divided).The programme provider has the option to grant a discount for this type of payment either none, in EUR or as a percentage.
-
-![Screenshot](../../assets/images/payment-templates-creation-05.png)
+- Periodic pre-paid payment – you have the option to set whether the programme can be paid gradually, i.e. in frequency. Here you select from the options – Monthly, Quarterly, Semi-annually, Annually, After N sessions (the number of sessions after which the next scheduled payment for the programme will be issued), Fixed number of scheduled payments (the number of scheduled payment into which the price for the programme will be divided).The programme provider has the option to grant a discount for this type of payment either none, in EUR or as a percentage.
+![[Pasted image 20260302141927.png]]
+![[Pasted image 20260302141954.png]]
 
 - Periodic payment paid in arrears according to attendance
-	- This option allows you to charge clients based on their actual attendance. The system creates and sends instalments only after the client has attended the required number of sessions, depending on the frequency you set.There are two possible modes:
+	- This option allows you to charge clients based on their actual attendance. The system creates and sends scheduled payments only after the client has attended the required number of sessions, depending on the frequency you set. There are two possible modes:
 
 	1) Periodic frequency (e.g., monthly)
-
 		When using a time-based frequency:
-	
-		- When attendance is recorded, the system creates an instalment scheduled for the next anniversary date of the frequency (e.g., next month).
-		- Each time attendance is marked as *“attended”*, the amount on that instalment increases.
-		- When the instalment’s scheduled date arrives, it is processed during the nightly job and the client receives the payment request. At this moment, the booking receives the corresponding outstanding balance.
-		- If the client does not attend any session within the chosen frequency period (e.g., no attendance in a whole month), no instalment is generated.
+			- When attendance is recorded, the system creates a scheduled payment for the next anniversary date of the frequency (e.g., next month).
+			- Each time attendance is marked as *“attended”*, the amount on that scheduled payment increases.
+			- When the scheduled payment's date arrives, it is processed during the nightly job and the client receives the payment request. At this moment, the booking receives the corresponding outstanding balance.
+			- If the client does not attend any session within the chosen frequency period (e.g., no attendance in a whole month), no scheduled payment is generated.
 
 	2) After N sessions (e.g., payment after every 2 sessions)
 		When using a frequency based on a number of attended sessions:
 
-		- When attendance is recorded, the system creates an instalment scheduled one year ahead.*(This is only a placeholder date — it will be adjusted once the required number of attendances is reached.)*
+		- When attendance is recorded, the system creates an scheduled payment one year ahead.*(This is only a placeholder date — it will be adjusted once the required number of attendances is reached.)*
 
-		- Each time an attendance is marked as *“attended”*, the amount on that instalment increases.
+		- Each time an attendance is marked as *“attended”*, the amount on that scheduled payment increases.
 
-		- When the required number of attended sessions (N) is reached, the instalment is rescheduled to “today” and will be processed during the nightly job. At this moment, the booking receives the outstanding balance.
+		- When the required number of attended sessions (N) is reached, the scheduled payment is rescheduled to “today” and will be processed during the nightly job. At this moment, the booking receives the outstanding balance.
 
-		- If the required number of attendances is reached multiple times on the same day(example: frequency = every 2 sessions, and 4 sessions are recorded in one day),then multiple instalments will be created on that same day.
+		- If the required number of attendances is reached multiple times on the same day(example: frequency = every 2 sessions, and 4 sessions are recorded in one day),then multiple scheduled payment will be created on that same day.
 
 		![Screenshot](../../assets/images/payment-templates-creation-06.png)
 
 Save the template by clicking the *Save button.*
 
-![Screenshot](../../assets/images/allowing-multiple-registration-03.png)
 
 Note: If you use discounted payment templates, you can find a clear list of them in the Payments - Discounts section.
 
@@ -116,7 +111,7 @@ In the payment settings, you can edit individual templates, set their visibility
 
 ![Screenshot](../../assets/images/discount-code-01.png)
 
-Note: If you have changed template settings, these will not automatically be transferred to the programmes where the template is applied. If you want all programmes to have their installment calendars set according to this version of the template, synchronize their settings. The system also keeps alerting you.
+Note: If you have changed template settings, these will not automatically be transferred to the programmes where the template is applied. If you want all programmes to have their scheduled payment calendars set according to this version of the template, synchronize their settings. The system also keeps alerting you.
 
 ![Screenshot](../../assets/images/payment-templates-creation-13.png)
 
