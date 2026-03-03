@@ -41,9 +41,48 @@ Make-up session clients are listed separately below the enrolled group and are n
 
 ## How do instructors mark attendance?
 
-Instructors log in to Zooza (via `zooza.app`), open their **Calendar**, and select the current session. They see the attendance panel with the list of enrolled clients and can switch between **Quick view** and **Full view** just like admins. They mark each client as **Attended**, **Cancelled**, or **Did not attend**. Attendance can be marked from both mobile and desktop.
+Instructors log in to Zooza, open their **Calendar**, and select the current session. They see the attendance panel and can switch between **Quick view** and **Full view**. They mark each client as **Attended**, **Cancelled**, or **Did not attend**. Attendance can be marked from both mobile and desktop.
 
 Tip: Instructors should add Zooza to their phone's home screen so it works like a native app. Quick view with **Mark all as attended** is especially useful for fast attendance on mobile.
+
+For a full walkthrough, see the [Attendance management for instructors](../guides/instructor-attendance-management.md) guide.
+
+## Where do instructors see their upcoming sessions?
+
+On the **Welcome** dashboard, the **My Next Sessions** section lists all upcoming sessions assigned to that instructor, sorted by date. Each row has a **Detail** button that opens the session directly — no need to navigate through the calendar.
+
+At the bottom of the section, **Dates with incomplete attendance record** shows past sessions where attendance hasn't been recorded yet.
+
+## Can an instructor see and manage make-up session clients in the session?
+
+Yes, in **Full view**. make-up session clients appear in a separate **make-up session** section below the enrolled list. For each make-up client, the instructor can:
+
+- Mark their attendance (same buttons as enrolled clients).
+- Click **Change make-up session** to move them to a different session.
+- Click **Cancel make-up session** to remove the make-up booking.
+- Navigate to the original session they missed via **Go to Make-up Session Original Session**.
+
+## Can an instructor add notes to a session?
+
+Yes. At the bottom of the session detail, in the **Notes** section, there are two fields:
+
+- **Session summary (visible to the client)** — shared with parents after the session. Use it for what was covered, homework, or announcements.
+- **Session note (Internal)** — visible to admins and instructors only.
+
+Availability may depend on the organisation's settings.
+
+## Can instructors see client consents in the session view?
+
+Yes. The **Consents** section at the bottom of the session detail shows the consents each enrolled client has given. This is useful for activities where consent matters — for example, checking who has given photo permission before taking pictures during a session.
+
+## Can instructors send messages to all clients in a session?
+
+Yes, from **Full view**. At the bottom of the session, two buttons appear:
+
+- **Send email to N recipients** — sends an email to all enrolled clients in that session.
+- **Send text message to N recipients** — sends an SMS to the same group.
+
+This is useful for last-minute changes like a venue update or session reminder. Communication permissions depend on the instructor's role — if the buttons are not visible, the admin needs to adjust the role settings.
 
 ## Can an admin mark attendance on behalf of a instructor?
 
