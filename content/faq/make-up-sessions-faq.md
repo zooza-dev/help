@@ -138,6 +138,28 @@ The most likely reason is the **time restriction for offering a regular make-up 
 
 Check the value in **Settings** → **Programmes** → **Time restriction in hours for offering a regular make-up session**.
 
+## What is the difference between a standard make-up session and a custom replacement lesson?
+
+A **standard make-up session** works by filling a vacant spot in another scheduled class. The client picks from sessions that already exist and have available capacity.
+
+A **custom replacement lesson** lets the client propose a specific date and time to their instructor. The instructor checks their availability and approves or declines the request. If approved, a new session is created automatically.
+
+Custom replacement lessons are designed for individual or specialist sessions (piano lessons, personal training, counselling) where signing into someone else's class is not practical.
+
+See [Custom replacement lessons](../guides/custom-replacement-lessons.md) for setup and workflow.
+
+## Can I use custom replacement lessons for group classes?
+
+Yes, but it is unusual. Custom replacement lessons are primarily designed for 1-to-1 or individual sessions where the replacement needs to happen with a specific instructor at a specific time. For group classes, standard make-up sessions (based on vacant spots) are usually more practical.
+
+## Can a client cancel a custom replacement request after submitting it?
+
+Yes. The client can cancel their request at any point before the instructor has confirmed it. Once the instructor approves, the session is created and the client is enrolled — at that point, the normal cancellation rules apply.
+
+## What happens if the instructor declines a custom replacement request?
+
+The instructor must provide a reason for the decline. The client receives an email notification with the reason. The client can then submit a new request with a different date or time.
+
 ## Why was a make-up credit not generated after a missed session?
 
 The most common reason is that the child's attendance was set to **"Did not attend"** (no-show) instead of **"Cancelled"**. Only the "Cancelled" state creates a make-up credit.
