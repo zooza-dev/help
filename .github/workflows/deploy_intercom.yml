@@ -44,6 +44,10 @@ jobs:
       - name: Install dependencies
         run: pip install pyyaml markdown jinja2 requests
 
+      - name: Validate knowledge base
+        continue-on-error: true  # warn only — remove this line once all placeholder screenshots are filled in
+        run: python scripts/validate_kb.py
+
       - name: Run export pipeline
         run: python scripts/export/export_all.py
 

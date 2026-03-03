@@ -3,6 +3,7 @@
 
 import os
 import re
+import sys
 import yaml
 from collections import defaultdict
 from pathlib import Path
@@ -264,6 +265,8 @@ def main():
     report_path.write_text(report, encoding="utf-8")
     print(report)
     print("\n\n--- REPORT WRITTEN ---")
+    if fail_count > 0:
+        sys.exit(1)
 
 
 if __name__ == "__main__":
