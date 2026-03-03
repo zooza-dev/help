@@ -1,72 +1,102 @@
 ---
-title: Edit sessions in programmes
-slug: edit-sessions-in-programmes
-type: guides
-product_area: Classes
+title: "Managing sessions in a class"
+slug: "edit-sessions-in-programmes"
+type: "guides"
+product_area: "Classes"
 sub_area: ""
-audience:
-  - admin
-tags: []
-status: published
-source_legacy_path: legacy/0042_Welcome to Zooza.html
-source_language: en
-needs_screenshot_replacement: true
-last_converted: 2026-02-11
+audience: ["admin", "staff"]
+tags: ["session", "lesson", "date", "bulk edit", "cancel", "delete", "reschedule", "add sessions"]
+status: "published"
+source_legacy_path: "legacy/0042_Welcome to Zooza.html"
+source_language: "en"
+needs_screenshot_replacement: false
+last_converted: "2026-03-03"
 intercom_id: 13728555
 intercom_sync: false
 ---
-<!-- REVIEW : add bulk edit options - block,...-->
-# Edit sessions in programmes
 
-Each created session can be changed additionally - change the instructor or time. Each session can be cancelled or deleted. To change a session you have several options on how to proceed:
+# Managing sessions in a class
 
-## Bulk edit of sessions
+Sessions are the individual dates within a class. You can add new sessions at any time, edit or reschedule existing ones in bulk, cancel sessions that did not take place, or delete sessions added by mistake.
 
-The quickest way to edit sessions is directly in the Sessions section. You can make bulk edits as soon as you filter the dates you want to edit.
+## Adding sessions to an existing class
 
-1. Use the filter bar at the top of the page to filter by class/instructor/location. 
-   Note: After applying the filter, you have the option to make bulk edits to your selected sessions by checking the Select All box or selecting only those that require editing.
- ![Screenshot](../../assets/images/edit-events-in-courses-01.png)
+If you skipped session creation when setting up the class, or need to add more dates later:
 
-2. Click on *Bulk Edit* to open a menu for editing the sessions:
- ![Screenshot](../../assets/images/edit-events-in-courses-02.png)
-3. Follow the instructions for each of the actions. More than 1 change can be made.
-![Screenshot — edit sessions in programmes](../../assets/images/edit-sessions-in-programmes-01.png)
+1. Go to **Classes** and open the class.
+2. In the **Sessions** tab, click **Add sessions**.
+3. Choose a setup mode:
 
-- *Delete* - Clicking the Delete button will completely delete the term. We recommend using delete term if you made a mistake and such term should never have existed.
-- *Change status* - Cancel will change the status of the session to Cancelled. We recommend using cancel if the session was supposed to take place, was scheduled, but was cancelled due to, for example, a instructor's illness. This way you will have a better overview of how many sessions were originally scheduled.
-	 ![Screenshot](../../assets/images/edit-events-in-courses-04.png)
-- *Edit date and time* - When adjusting the date and time, you can choose from three options for adjusting the date:
-	1. *Keep as is* – if you want to move the date
-	2. *Set new time for all selected sessions* – enter the new valid time
-	3. *Move the time by interval* – you can add or subtract from the original time, for example 1 hour)
- ![Screenshot — edit sessions in programmes](../../assets/images/edit-sessions-in-programmes-02.png)
+| Mode | When to use |
+|---|---|
+| **Simple setup** | Start date, end date, and repetition (e.g. every Monday). Zooza calculates the session count automatically. |
+| **Advanced setup** | Full wizard — specific dates, times, holidays to skip, billable sessions, and blocks. |
 
->**Alert!** When creating sessions, you can choose whether the system should skip public holidays and school breaks. This setting only applies during the initial creation of sessions. After sessions are created, you work with specific dates. If you later make a bulk change (for example, moving sessions from Monday to Thursday), the system no longer checks whether the new date falls on a holiday or not.
-Additionally, the system does not automatically add new sessions if some dates were originally skipped due to holidays — for example, if Monday was a holiday and you move sessions to Thursday, which is not a holiday, the Thursday session will not be added automatically.
-If you want holidays and breaks to be considered again after such a change, you need to delete the existing sessions and create them again with the desired setting.
+![Screenshot — managing sessions](../../assets/images/edit-sessions-in-programmes-03.png)
 
->**Attention!** Do not forget to set whether you want to notify clients about the changes you are making and press *Continue*.
+![Screenshot — managing sessions](../../assets/images/edit-sessions-in-programmes-04.png)
 
-![Screenshot](../../assets/images/edit-events-in-courses-08.png)
+## Bulk editing sessions
 
-Confirm the changes to the selected dates by clicking Start and press Continue again to complete the bulk edit.
+The fastest way to edit multiple sessions is from the **Sessions** section.
 
-## Edit a single session
+1. Go to **Sessions** and use the filter bar to narrow down by class, instructor, or location.
 
-If you only have 1 session that you need to edit, you can do this by following the same steps as in the chapter above or directly in the session details. For more information about creating classes, see [Creating a class](creating-a-class.md).
+![Screenshot — managing sessions](../../assets/images/edit-sessions-in-programmes-05.png)
 
-![Screenshot](../../assets/images/edit-events-in-courses-09.png)
+2. Check **Select All** or select individual sessions, then click **Bulk Edit**.
 
-## At class level
+![Screenshot — managing sessions](../../assets/images/edit-sessions-in-programmes-06.png)
 
-1. Select the programme and class in which you want to change the session and open the session overview at the bottom of the class in the Sessions tab
- ![Screenshot](../../assets/images/edit-events-in-courses-10.png)
- 
-2. This will open a list of all the upcoming sessions you have created in the class.
-3. If you only want to edit 1 session, open that session and make the edits as in the Edit a single session section of this manual.
-4. If you want to make a bulk edit of sessions, click the Overview button and you will be taken to the Sessions section with the filter already active. Next, proceed as in the *Bulk Edit Sessions* section of this manual.
+3. Choose one or more actions (described below) and set whether to notify clients.
+4. Click **Continue**, then **Start** to confirm.
 
->**Attention!** At the class level you will be shown ONLY the upcoming sessions, if you are interested in viewing all sessions (previous and upcoming) and then editing those, you need to change the sort order to something other than Upcoming Sessions.
+![Screenshot — managing sessions](../../assets/images/edit-sessions-in-programmes-07.png)
 
-![Screenshot](../../assets/images/edit-events-in-courses-12.png)
+> **Note:** Do not forget to set whether you want to notify clients about the changes before clicking **Continue**.
+
+### Delete
+
+Permanently removes the session. Use this only if the session was created by mistake and should never have existed.
+
+### Cancel
+
+Changes the session status to **Cancelled**. Use this when a session was planned but did not take place (e.g. instructor illness). The session stays in the record so you have an accurate count of originally scheduled sessions.
+
+### Edit date and time
+
+Three options are available:
+
+| Option | Effect |
+|---|---|
+| **Keep date, change time** | Moves the session to a different time on the same day. |
+| **Set new date and time** | Replaces the date and time with a specific value for all selected sessions. |
+| **Move by interval** | Shifts the date or time by a set amount (e.g. +1 hour, +7 days). |
+
+![Screenshot — managing sessions](../../assets/images/edit-sessions-in-programmes-08.png)
+
+> **Important:** Holiday and school-break skip rules apply only during the initial session creation. If you later bulk-reschedule sessions to a different day, the system does not re-check whether the new date falls on a holiday. If you need holidays respected again, delete the affected sessions and recreate them with the correct settings.
+
+## Editing a single session
+
+Open the session directly from the calendar or from the Sessions tab in the class. Edit the date, time, instructor, or location, and save.
+
+![Screenshot — managing sessions](../../assets/images/edit-sessions-in-programmes-09.png)
+
+## Working from the class detail
+
+You can also manage sessions without leaving the class:
+
+1. Open the class and go to the **Sessions** tab.
+2. To edit one session, click it and make changes inline.
+3. To bulk-edit, click **Overview** — this takes you to the Sessions section with the class filter already applied.
+
+![Screenshot — managing sessions](../../assets/images/edit-sessions-in-programmes-10.png)
+
+> **Note:** The Sessions tab in the class detail shows only **upcoming** sessions by default. To see past sessions as well, change the sort order from **Upcoming sessions** to another option.
+
+## Related
+
+- [Creating a class](creating-a-class.md) — defining sessions during class setup.
+- [Billable sessions](billable-sessions.md)
+- [Automatic session notification](automatic-session-notification.md)
