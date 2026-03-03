@@ -42,7 +42,7 @@ You can edit payments in several ways. Therefore, it is up to you which option y
 5. Booking fee – modify the booking fee
 6. Discount - modify the amount owed by granting a discount
 7. Payment schedule – modify the payment of the amount owed via scheduled payments.
- ![[Pasted image 20260302141046.png]]
+ ![Screenshot — edit payment on booking](../../assets/images/edit-payment-on-booking-01.png)
 
 After each adjustment of the amount due, the balance of payments will also be recalculated. Thus, it may happen that a booking goes from ‘*paid*’ to *'unpaid*' or vice versa ‘*overpaid*’.
 

@@ -98,7 +98,7 @@ If you have a variety of course offerings - for example, camps, children's progr
 4. Below the code, click *Customize embed code*
  ![Screenshot](../../assets/images/customizing-widgets-13.png)
  
-5. Select which programmes and which locations to display on the page in the booking form![[Pasted image 20260302140643.png]]
+5. Select which programmes and which locations to display on the page in the booking form![Screenshot — customizing widgets](../../assets/images/customizing-widgets-01.png)
  
 6. If you are collecting a larger amount of data or offering products for sale when you register, we recommend enabling the Multi-stage booking option. This feature breaks up the form into multiple clear steps, improving the user experience.
 7. Copy the code by clicking Copy and place it on your page.
@@ -189,7 +189,7 @@ Clicking on a specific location takes the user directly to the booking form of t
 
 ### Viewing the map widget
 
-![[Pasted image 20260302140737.png]]
+![Screenshot — customizing widgets](../../assets/images/customizing-widgets-02.png)
 
 ## Filtering widgets with URL parameters
 

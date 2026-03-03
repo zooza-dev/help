@@ -41,7 +41,7 @@ If you need to make a change to a block - for example, to change the name or mov
 1. In the tile sessions overview in the class detail, select the sessions you want to edit.
 2. Click Bulk Edit.
 3. Select the Change Block option and select the specific edit you want to make on the marked sessions.
-![[Pasted image 20260302140116.png]]
+![Screenshot — blocks creation](../../assets/images/blocks-creation-01.png)
 
 This way, you can easily reallocate or modify blocks without having to modify each session individually.
 

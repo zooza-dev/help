@@ -109,6 +109,35 @@ The waiting list is fully automated. You can enable or disable it per programme.
 
 <!-- REVIEW: Confirm the exact setting name and location — referenced as being in programme make-up session settings. -->
 
+## How do I set a cancellation deadline for sessions?
+
+Go to **Settings** → **Programmes** and enable **Set a limit for cancelling a scheduled session**. You can choose between two limit types:
+
+- **Fixed time** — cut-off is a specific hour on the day before the session.
+- **Relative time** — cut-off is a number of hours before the session starts (e.g. 12 hours).
+
+This is a global setting — it applies to all programmes in your account.
+
+## Can clients still cancel after the cancellation deadline?
+
+Yes, if you enable **Allow cancellations after the limit** in **Settings** → **Programmes**. When a client cancels after the deadline:
+
+- The session slot is freed up for others.
+- No make-up credit is generated.
+- The attendance record shows **Did not attend**.
+
+If this option is disabled, clients cannot cancel at all after the deadline and will see the instructions text you configured.
+
+## What happens with the cancellation limit over weekends?
+
+If you enable **Block cancellations on weekends and holidays**, the cancellation deadline for Monday sessions shifts to **Friday at midnight**. This prevents clients from using the weekend to cancel sessions that would otherwise require a working-day notice.
+
+## Why does a session not appear as a make-up option even though it has capacity?
+
+The most likely reason is the **time restriction for offering a regular make-up session** setting. For example, if this is set to 1 hour, a session starting at 3:00 PM disappears from make-up options after 2:00 PM — even if it still has free spots.
+
+Check the value in **Settings** → **Programmes** → **Time restriction in hours for offering a regular make-up session**.
+
 ## Why was a make-up credit not generated after a missed session?
 
 The most common reason is that the child's attendance was set to **"Did not attend"** (no-show) instead of **"Cancelled"**. Only the "Cancelled" state creates a make-up credit.

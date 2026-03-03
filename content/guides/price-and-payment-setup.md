@@ -138,11 +138,11 @@ This setting is useful when one registrant (e.g., a parent) books multiple child
 - The registrant receives one payment reference and one confirmation email instead of separate ones per child.
 
 This simplifies the payment process for families with multiple children in the same programme.
-
+![Screenshot — price and payment setup](../../assets/images/price-and-payment-setup-06.png)
 ## Payment frequency
 
 The **Payment Frequency** section lets you select which payment templates are available to clients during booking. This section is only visible when using **scheduled payments** (not for one-off payments).
-![Screenshot — price and payment setup](../../assets/images/price-and-payment-setup-06.png)
+
 
 Each payment template in the list can be set to **Active** or **Inactive**:
 

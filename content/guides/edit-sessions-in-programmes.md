@@ -31,7 +31,7 @@ The quickest way to edit sessions is directly in the Sessions section. You can m
 2. Click on *Bulk Edit* to open a menu for editing the sessions:
  ![Screenshot](../../assets/images/edit-events-in-courses-02.png)
 3. Follow the instructions for each of the actions. More than 1 change can be made.
-![[Pasted image 20260302141455.png]]
+![Screenshot — edit sessions in programmes](../../assets/images/edit-sessions-in-programmes-01.png)
 
 - *Delete* - Clicking the Delete button will completely delete the term. We recommend using delete term if you made a mistake and such term should never have existed.
 - *Change status* - Cancel will change the status of the session to Cancelled. We recommend using cancel if the session was supposed to take place, was scheduled, but was cancelled due to, for example, a instructor's illness. This way you will have a better overview of how many sessions were originally scheduled.
@@ -40,7 +40,7 @@ The quickest way to edit sessions is directly in the Sessions section. You can m
 	1. *Keep as is* – if you want to move the date
 	2. *Set new time for all selected sessions* – enter the new valid time
 	3. *Move the time by interval* – you can add or subtract from the original time, for example 1 hour)
- ![[Pasted image 20260302141602.png]]
+ ![Screenshot — edit sessions in programmes](../../assets/images/edit-sessions-in-programmes-02.png)
 
 >**Alert!** When creating sessions, you can choose whether the system should skip public holidays and school breaks. This setting only applies during the initial creation of sessions. After sessions are created, you work with specific dates. If you later make a bulk change (for example, moving sessions from Monday to Thursday), the system no longer checks whether the new date falls on a holiday or not.
 Additionally, the system does not automatically add new sessions if some dates were originally skipped due to holidays — for example, if Monday was a holiday and you move sessions to Thursday, which is not a holiday, the Thursday session will not be added automatically.

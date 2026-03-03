@@ -25,7 +25,7 @@ Informs the client that a scheduled payment will be due on their programme booki
 
 1. The reminder must be enabled in **Settings --> Payments**, where you can specify the number of days before the payment is created when the notification should be sent.
 
-![[Pasted image 20260302130310.png]]
+![Screenshot — automatic payment reminders](../../assets/images/automatic-payment-reminders-01.png)
 
 2. The notification before the payment is created is sent according to the formula:
    **Due date - Number of days due - Number of days before payment creation**
@@ -39,7 +39,7 @@ Informs the client that a scheduled payment will be due on their programme booki
 Informs the client that a new scheduled payment has been created on their booking. The date when the payment is posted and the notification sent follows the formula: **Due Date - Number of days due**.
 
 1. Set the payment due date in **Settings --> Payments**, where you can specify the number of days.
-![[Pasted image 20260302130341.png]]
+![Screenshot — automatic payment reminders](../../assets/images/automatic-payment-reminders-02.png)
 
 2. Customize the text in **Communication --> Message Templates**, under the template named: **New payment**.
 

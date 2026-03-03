@@ -51,9 +51,9 @@ You can also access the communication detail by searching for a specific booking
 - See whether messages have been read or handled
 
 The list of all unread messages can be found on the main dashboard under the list of bookings, where you can click on the email and Zooza will redirect you to the booking communication.
-![[Pasted image 20260302142831.png]]
+![Screenshot — sending email sms](../../assets/images/sending-email-sms-01.png)
 
-![[Pasted image 20260302142855.png]]
+![Screenshot — sending email sms](../../assets/images/sending-email-sms-02.png)
 
 ## Sending messages
 

@@ -37,7 +37,7 @@ Payment reminders are set at the programme level. So you can choose which progra
 	4. Automatic deletion of bookings
 	5. Saving
 
-![[Pasted image 20260302130502.png]]
+![Screenshot — automatic payment reminders detailed](../../assets/images/automatic-payment-reminders-detailed-01.png)
 
 ### 1. Start sending reminders
 

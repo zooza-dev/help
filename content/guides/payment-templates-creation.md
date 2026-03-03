@@ -58,8 +58,8 @@ at once. For such a payment you can give a discount either none, in EUR or as a 
 
 ![Screenshot](../../assets/images/payment-templates-creation-04.png)
 - Periodic pre-paid payment – you have the option to set whether the programme can be paid gradually, i.e. in frequency. Here you select from the options – Monthly, Quarterly, Semi-annually, Annually, After N sessions (the number of sessions after which the next scheduled payment for the programme will be issued), Fixed number of scheduled payments (the number of scheduled payment into which the price for the programme will be divided).The programme provider has the option to grant a discount for this type of payment either none, in EUR or as a percentage.
-![[Pasted image 20260302141927.png]]
-![[Pasted image 20260302141954.png]]
+![Screenshot — payment templates creation](../../assets/images/payment-templates-creation-01.png)
+![Screenshot — payment templates creation](../../assets/images/payment-templates-creation-02.png)
 
 - Periodic payment paid in arrears according to attendance
 	- This option allows you to charge clients based on their actual attendance. The system creates and sends scheduled payments only after the client has attended the required number of sessions, depending on the frequency you set. There are two possible modes:

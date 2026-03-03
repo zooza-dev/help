@@ -40,6 +40,6 @@ In the *Online Registration *section, click *Edit.*
 **TIP:** If you are unsure of your choices – look at the booking form for the programme on your website and make sure everything is as you need it to be.
 
  4. Don’t forget to *Save* settings
-![[Pasted image 20260302130212.png]]
+![Screenshot — allowing multiple booking](../../assets/images/allowing-multiple-booking-01.png)
 
 **NOTE:** If you want related bookings to combine payments for one booking and allow the main booking to pay for both (all) related bookings at the same time and with one variable symbol – go to *Price and Payments* tile and enable the checkbox *Payments are managed by registrant*
