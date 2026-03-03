@@ -6,7 +6,7 @@ product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
 tags: []
-status: "published"
+status: "archived"
 source_legacy_path: "legacy/0096_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false

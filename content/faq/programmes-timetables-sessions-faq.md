@@ -107,6 +107,42 @@ The system displays a warning when you perform a bulk reschedule, reminding you 
 
 <!-- REVIEW: Zooza support has acknowledged this as a known limitation and is evaluating whether holiday rules can be re-applied automatically after rescheduling. -->
 
+## What is the colour used for on a programme?
+
+The colour you assign to a programme appears in two places:
+
+- In the **admin app** — on the programme tile and in the calendar view.
+- In the **online booking widget and web calendar** — clients see the colour to visually distinguish between different programmes.
+
+Each colour in the picker has a label and a short description. The label is also displayed next to the programme name in the web calendar. You can change the colour at any time in the programme settings without affecting bookings or classes.
+
+## What programme type should I choose?
+
+| Type | Use when |
+|---|---|
+| **One-off event** | The programme consists of a single session on a specific date (workshop, lecture, open day). |
+| **Booking for full programme duration** | Clients sign up for a set of sessions and attend the full term or course. |
+| **Pay-as-you-go** | Clients enrol once and then choose which individual sessions to attend, paying per session. |
+
+If you are unsure, most ongoing group programmes (weekly classes, term courses) use **Booking for full programme duration**.
+
+## Can I change the programme type after creating it?
+
+Yes. Go to the programme settings and change the type. Be aware that changing the type may affect how existing classes and bookings behave — for example, switching to pay-as-you-go on a programme with existing full-duration bookings is not recommended. If in doubt, create a new programme with the correct type and migrate clients manually.
+
+## What is the difference between Group classes and 1-to-1?
+
+- **Group classes** — multiple clients attend the same session together. Capacity applies per session.
+- **1-to-1** — each session is with one client only (private lessons, personal training, individual consultations). Capacity is automatically set to 1 per session.
+
+## What does the "For children" toggle do?
+
+When enabled, the booking form includes a **child profile** section where the parent fills in the child's name, date of birth, and notes. Attendance management and reporting also use child-relevant labels. Leave the toggle off for adult programmes where the participant and the paying client are the same person.
+
+## What is the booking fee?
+
+The booking fee is an optional one-time charge collected at the moment of registration, separate from the programme price. For example, you might charge a 5 EUR registration fee on top of the term price. Leave it at 0 if you do not charge a separate booking fee.
+
 ## How do I change the price for new bookings without affecting existing ones?
 
 Price changes on a programme or class apply **only to new registrations**. Existing registrations keep the price that was set at the time the client registered.
