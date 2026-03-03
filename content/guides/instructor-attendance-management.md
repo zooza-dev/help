@@ -33,7 +33,9 @@ Go to **Calendar** in the left menu to see your sessions in a weekly grid.
 
 ![Screenshot — instructor attendance management](../../assets/images/instructor-attendance-management-02.png)
 
-Each session tile shows the class name, instructor, location, and a count of enrolled and attending clients. Use the **Previous week** and **Next week** buttons to navigate, or switch to **Daily Overview** for a single-day layout.
+Each session tile shows the class name, instructor, location, and a count of enrolled and attending clients.
+
+![Screenshot — instructor attendance management](../../assets/images/instructor-attendance-management-07.png) Use the **Previous week** and **Next week** buttons to navigate, or switch to **Daily Overview** for a single-day layout.
 
 You can filter sessions by **Name**, **Location**, or **Programme** using the filter bar at the top.
 

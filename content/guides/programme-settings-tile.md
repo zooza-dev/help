@@ -63,7 +63,9 @@ In the Programmes list, use the filter and select **Archived**. Archived program
 
 **To restore a programme:**
 
-Open the archived programme, go to **Settings** → **Edit**, uncheck the **Archive** box, and click **Save**. The programme returns to the active list.
+Open the archived programme — it displays an **"This programme is archived"** banner at the top. Go to **Settings** → **Edit**, uncheck the **Archive** box, and click **Save**. The programme returns to the active list.
+
+![Screenshot — programme settings tile](../../assets/images/programme-settings-tile-03.png)
 
 ## Labels and colours
 

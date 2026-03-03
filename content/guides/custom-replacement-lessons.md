@@ -47,6 +47,8 @@ The client fills in:
 - **Day** — minimum 3 days from today.
 - **Time** — indicative or exact time.
 
+![Screenshot — custom replacement lessons](../../assets/images/custom-replacement-lessons-04.png)
+
 After entering the preferred time, the client clicks to check the instructor's availability. The system evaluates whether the instructor is free at that time based on their calendar.
 
 - If the instructor is **available** — the client can submit the request.

@@ -59,6 +59,8 @@ Setting a session to **Cancelled** unlocks additional options:
 
 ![Screenshot — admin attendance management](../../assets/images/admin-attendance-management-03.png)
 
+![Screenshot — admin attendance management](../../assets/images/admin-attendance-management-07.png)
+
 ## Choosing a make-up session
 
 After clicking **Choose make-up session**, a list of upcoming sessions appears — filtered to sessions with available capacity from the same programme (or linked programmes, if cross-company make-ups are configured).
