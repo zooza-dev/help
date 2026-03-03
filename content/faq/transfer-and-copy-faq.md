@@ -15,11 +15,44 @@ intercom_id: 13738683
 intercom_sync: false
 ---
 
-<!-- Synonyms: move booking, move client, relocate booking, presunúť klienta, kopírovať registráciu, presun registrácie -->
+<!-- Synonyms: move booking, move client, relocate booking, presunúť klienta, kopírovať registráciu, presun registrácie, kopírovať kurz, kopírovať skupinu, copy course, copy group -->
 
 # Transfer and Copy FAQ
 
 For a step-by-step walkthrough with screenshots, see [Transfer and copy bookings](../guides/transfer-and-copy-bookings.md).
+
+## What is the difference between copying a booking, copying a class, and copying a programme?
+
+- **Copy booking** — duplicates a single client's booking from one class to another. Used to continue one client in a new term or add them to an additional class.
+- **Copy class** — creates a new class within a programme, optionally copying its sessions and all bookings in bulk. Used when setting up a new season for an entire group.
+- **Copy programme** — creates a new programme with the same settings. Used when starting a new period with a fresh programme structure.
+
+## How do I copy an entire class to a new season?
+
+1. Open the programme and find the class you want to copy.
+2. Click **Copy** on the class.
+3. Edit the name, location, instructor, and capacity as needed.
+4. Choose how to handle sessions — move to a new start date, apply a time shift, or keep the same dates.
+5. Preview the new sessions and confirm.
+6. Optionally tick **Copy bookings** to carry over all current registrations.
+
+See the full guide: [Copy a programme or class](../guides/copy-programme-and-class.md).
+
+## If I copy a class with bookings, do payments and credits carry over?
+
+No. Copied bookings start completely clean — new booking number, zero payment balance, no make-up credits. The original booking remains untouched and the client can still access it in their profile.
+
+If you need to move a client and keep their payment history, use **Transfer** on the individual booking instead.
+
+## Can I copy just the class settings without the bookings?
+
+Yes. When copying a class, simply leave the **Copy bookings** option unchecked. The new class will have the same settings and sessions, but no registrations — clients can then enrol themselves through the widget, or you can add them manually.
+
+## Can I copy a programme?
+
+Yes. Go to **Programmes**, find the programme, and click **Copy** (or open the programme and click **Copy programme**). You can copy extra field settings and payment template settings along with it.
+
+Payment templates are only available to copy if the original is a full-duration programme with templates already configured.
 
 ## How do I transfer (move) a booking to another class?
 
