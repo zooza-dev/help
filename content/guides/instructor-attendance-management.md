@@ -9,7 +9,7 @@ tags: ["attendance", "instructor", "calendar", "quick-view", "full-view"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
-needs_screenshot_replacement: false
+needs_screenshot_replacement: true
 last_converted: "2026-03-03"
 ---
 
@@ -106,8 +106,6 @@ Notes are optional and availability may depend on your organisation's settings.
 ## Consents
 
 The **Consents** section in the session detail shows the consents each client has given. This is useful before activities where consent matters — for example, to check who has given permission for photos to be taken during the session.
-
-![Consents section](../../assets/images/instructor-consents-01.png)
 
 Consents are set by parents when registering and cannot be changed from the session view.
 
