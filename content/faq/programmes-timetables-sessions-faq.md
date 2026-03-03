@@ -79,6 +79,16 @@ In the class settings, you can toggle visibility for the online booking form. Th
 
 Zooza uses browser caching to speed up page loading. When you create or edit something (like a location or class), the change may take a moment to appear. A quick browser refresh (Cmd+R on Mac, Ctrl+R on Windows) usually resolves this.
 
+## Can I delete a programme?
+
+Programmes cannot be deleted through the application. Instead, use **archiving** — it hides the programme from the active list without removing any data, bookings, or history.
+
+To archive a programme, go to the programme → **Settings** tile → **Edit** → check **Archive** → **Save**. To view or restore archived programmes, use the **Archived** filter in the Programmes list.
+
+See [Programme settings tile — Archiving a programme](../guides/programme-settings-tile.md#archiving-a-programme) for the full how-to.
+
+If you need to permanently remove a programme that has **no bookings and no classes**, contact Zooza support with the programme ID (visible in the URL, e.g. `#courses/6455`).
+
 ## How do I bulk-delete courses that have no bookings or classes?
 
 Admins cannot bulk-delete courses directly from the application interface. To delete courses that have no registrations or classes (groups), you must send a list of course IDs to Zooza support, who will remove them from the database on your behalf.
