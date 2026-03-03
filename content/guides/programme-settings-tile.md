@@ -40,8 +40,30 @@ In this section, you can define the core details of your programme:
 2. You can also update the *Target audience* if the programme changes from class classes to individual sessions, or vice versa.
 3. Selecting the *For children* checkbox changes the wording in certain parts of the application. For example, in the booking form, “Name” will become “Parent’s Name.”
  ![Screenshot](../../assets/images/course-settings-tile-02.png)
-4. If you check the *Archive* box and save the settings, the programme will be removed from your active programme list and placed in the archive. Archived programmes can be found by selecting the **Archived** filter in the Programmes list.
+4. Check the *Archive* box and click **Save** to archive the programme (see below).
  ![Screenshot](../../assets/images/course-settings-tile-03.png)
+
+## Archiving a programme
+
+Archiving hides a programme from the active list without deleting any data. Use it for older programmes you no longer offer but want to keep for records.
+
+**To archive a programme:**
+
+1. Go to **Programmes** and click the programme name.
+2. Open the **Settings** tile and click **Edit**.
+3. Check the **Archive** box and click **Save**.
+
+The programme disappears from the default list immediately.
+![Screenshot — programme settings tile](../../assets/images/programme-settings-tile-01.png)
+
+**To view archived programmes:**
+
+In the Programmes list, use the filter and select **Archived**. Archived programmes only appear when this filter is active.
+![Screenshot — programme settings tile](../../assets/images/programme-settings-tile-02.png)
+
+**To restore a programme:**
+
+Open the archived programme, go to **Settings** → **Edit**, uncheck the **Archive** box, and click **Save**. The programme returns to the active list.
 
 ## Labels and colours
 
