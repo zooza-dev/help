@@ -15,7 +15,7 @@ intercom_id: 13762570
 intercom_sync: false
 ---
 
-<!-- Synonyms: extra fields, custom fields, booking form fields, date of birth, age restriction, child's name, address field, business fields, ďalšie polia, extra polia, dátum narodenia, vekové obmedzenie -->
+<!-- Synonyms: extra fields, custom fields, booking form fields, date of birth, age restriction, child's name, address field, business fields, remove field from registration, hide field booking form, edit registration field, what are additional fields, kolonka registrace, upravit kolonku, zrušit pole registrace, skrýt pole, přidat pole registrace, co jsou additional fields, ďalšie polia, extra polia, dátum narodenia, vekové obmedzenie, skryť pole registrácia, upraviť pole, odstrániť pole z registrácie, čo sú additional fields, egyéni mezők, regisztrációs mezők, mező eltávolítása, mező elrejtése regisztrációból -->
 
 # Additional fields on the booking form
 
@@ -84,6 +84,32 @@ To configure a choice field:
 4. Repeat for all options.
 5. Save.
 
+## Hiding or disabling a field
+
+To remove a field from the booking form without deleting it permanently:
+
+1. Go to **Programmes** → select the programme → **Edit Settings** → **Additional Fields**.
+2. Uncheck the field you no longer want to display.
+3. Save.
+
+The field disappears from the booking form immediately. Existing bookings that already have data in that field keep their values — the data is not deleted, just hidden from new registrations.
+
+To hide a **custom field** (Additional field 1–5), simply clear the field's **Name** — a custom field with no name is not shown on the booking form.
+
+> **Note:** Fields are configured per programme. If you want to hide a field for one programme but keep it for another, change the setting on that specific programme only.
+
+## Editing field values on existing bookings
+
+After a client registers, you (as admin) can edit the values they entered in the additional fields:
+
+1. Open the booking detail.
+2. Find the **Additional Fields** section.
+3. Click the edit icon next to the field you want to change.
+4. Update the value and save.
+
+Clients cannot edit these fields themselves after submitting — only admins can change the values.
+
+![Screenshot — additional fields](../../assets/images/additional-fields-01.png)
 ## Age restriction
 
 The date of birth field can be used to restrict bookings by age. When enabled, clients whose child does not meet the age criteria cannot complete the booking.

@@ -1,86 +1,134 @@
 ---
-title: "Setting GTC, GDPR and other consents"
+title: "Consents and agreements (GTC, GDPR)"
 slug: "setting-gtc-gdpr-consents"
 type: "setup"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["gdpr", "consents", "agreements", "gtc", "terms", "booking-form"]
 status: "published"
 source_legacy_path: "legacy/0069_Welcome to Zooza.html"
 source_language: "en"
-needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+needs_screenshot_replacement: true
+last_converted: "2026-03-04"
 intercom_id: 13728871
 intercom_sync: false
 ---
 
-# Setting GTC, GDPR and other consents
+<!-- Synonyms: terms and conditions, GTC, GDPR consent, consent booking form, agreement registration, add consent, terms of service, marketing consent, data processing consent, szerződési feltételek, GDPR beleegyezés, regisztrációs feltételek, hozzájárulás, adatkezelési beleegyezés, podmienky zmluvy, GDPR súhlas, súhlas pri registrácii, obchodné podmienky, súhlas na spracovanie osobných údajov -->
 
-When registering clients for a programme, it is necessary for clients to
- agree to various consents, such as terms of business or consent to the
-processing of personal data. All important and legally necessary matters
- that you simply must have settled and signed with your clients.
+# Consents and agreements (GTC, GDPR)
 
+Zooza lets you add consent checkboxes or agreements to your booking and order forms — for example, terms and conditions, GDPR data processing consent, or marketing opt-in. You can configure each consent separately, choose how it is displayed, and limit it to specific programmes.
 
-You can insert approvals for each programme separately and even tell what and how to display where.
+Consents given by clients are stored on their profile with a timestamp and version number.
 
+## Where to find consent settings
 
-1. To set it up, go to *Settings – General Settings*.
- ![Screenshot](../../assets/images/setting-gtc-gdpr-consents-01.png)
-2. Scroll down to *Agreement name in detail*, click *Add* to add a new one. Otherwise, just edit the already created one.
- ![Screenshot](../../assets/images/setting-gtc-gdpr-consents-02.png)
-3. Click on the *Add *button and proceed as follows:
+Go to **Settings → Consents & Agreements**.
 
-1. Agreement name in the booking form – how to
-display the agreement under the booking form. Type your sentence
-before the tag More
-2. Leave this code in the field as it causes a separate page with the consent text to appear when your client clicks the *More* button.
- ![Screenshot](../../assets/images/setting-gtc-gdpr-consents-03.png)
+![Screenshot — Consents & Agreements list](../../assets/images/setting-gtc-gdpr-consents-01.png)
 
-Your sentence and the option to click on* More* button will appear in the booking form on your web page like this
+The list shows all configured consents. Each card displays:
 
-![Screenshot](../../assets/images/setting-gtc-gdpr-consents-04.png)
+- The consent name
+- Where it appears (**Booking form** or **Order form**)
+- The consent type (Check box, Yes or No, or automatic)
+- Filter buttons to browse bookings by consent status
 
-1. Write your *Agreement name in detail* – what consent name should be displayed when the client opens the detail view after clicking on the link
-2. Write your Agreements description – the full text of the consent, which is only displayed when you click the *More button*
- ![Screenshot](../../assets/images/setting-gtc-gdpr-consents-05.png)
-3. When the client clicks on the More button a new page with Name and Description will be open
+Click **Add** to create a new consent, or **Edit** on an existing card to modify it.
 
-![Screenshot](../../assets/images/discount-code-01.png)
+## Creating or editing a consent
 
+![Screenshot — consent edit form](../../assets/images/setting-gtc-gdpr-consents-02.png)
 
-Note: If the consent text does not fit in the *Agreement description *field,
- you can insert a link to the page, where you have published the full
-consent instead of the dynamic *|AGREEMENT_URL|* tag.
+### Consent name in detail
 
- 4. At the same time, select its display settings:
+The internal name displayed when the client opens the consent detail page (after clicking the link in the booking form). This is not visible on the form itself.
 
-1. Where you want to display the consent:
-2. booking form
-3. order form
-4. inactive - will not be displayed
+### Name of the consent in the booking form
 
-Obligation to consent:
+The text displayed directly in the booking form. This is what clients see when registering.
 
-1. without the need for a separate confirmation – means that by registering you also agree to the terms and conditions
-2. check box, which must be ticked by the client
-3. choice of yes or no – the client chooses the answer whether he agrees or not
+If you want clients to be able to read the full consent text before agreeing, include the dynamic tag `*|AGREEMENT_URL|*` in this field as a link:
 
-Requiring from – who you are asking for approval from:
+```
+<a href="*|AGREEMENT_URL|*">More</a>
+```
 
-1. from all registered – consent will always be displayed regardless of the programme
-2. only for selected programmes – consent will only be displayed for programmes you select from the list
+Zooza replaces `*|AGREEMENT_URL|*` with a link to the consent detail page. Clients click **More** to read the full text before confirming.
 
-![Screenshot](../../assets/images/setting-gtc-gdpr-consents-07.png)
+**Alternative — link to your own website:**
+If your T&C are already published on your website, replace the tag with your URL directly:
 
-If you want to add more agreements click on the *Add* button and repeat the process.
+```
+<a href="https://yourwebsite.com/terms">Terms and Conditions</a>
+```
 
-![Screenshot](../../assets/images/discount-code-01.png)
+In this case, the **Consent text** field below is not used.
 
-Note: If you want the same consent to appear on the booking and product forms, you need to create two identical entries.
+### Consent text
 
-![Screenshot](../../assets/images/discount-code-07.png)
+The full text of the consent, shown on a separate page when the client clicks the link. Supports rich text (bold, lists, links). Leave this empty if you link to an external page instead.
 
+### Consent type
 
-Do not forget to save your settings at the bottom of the page as well.
+![Screenshot — consent type dropdown](../../assets/images/setting-gtc-gdpr-consents-03.png)
+
+| Type | How it works |
+|---|---|
+| **No separate confirmation needed** | Consent is implicit — by clicking the registration or order button, the client automatically agrees. No checkbox is shown. |
+| **Check box** | A checkbox appears in the form. The client must tick it to proceed. |
+| **Choose Yes or No** | The client explicitly selects Yes or No. You can filter bookings by which answer they chose. |
+
+### Require from
+
+Controls which bookings the consent applies to:
+
+- **All bookings** — the consent appears on every booking form regardless of programme.
+- **For select programmes** — the consent only appears for the programmes you choose from the list.
+
+![Screenshot — programme selector](../../assets/images/setting-gtc-gdpr-consents-04.png)
+
+This is useful when some consents are only relevant for specific programmes — for example, a photo consent for in-person classes but not for webinars, or special T&C for summer camps.
+
+## Filtering bookings by consent status
+
+Each consent in the list has **Filter bookings** buttons. Click one to jump to the bookings list filtered by that consent status:
+
+- **Has consent / No consent** — for checkbox-type consents
+- **Accepted / Declined / No consent** — for Yes/No-type consents
+
+This makes it easy to follow up with clients who have not yet given consent.
+
+## Viewing consents on a client profile
+
+All consents a client has given are recorded in the client detail under **Consents given by client**.
+
+![Screenshot — client consents detail](../../assets/images/setting-gtc-gdpr-consents-05.png)
+
+The table shows:
+
+| Column | Description |
+|---|---|
+| **Consent** | The consent name (links to the full text) |
+| **Consent version** | Version number (increments when you update the consent text) |
+| **Consent version valid from** | When this version of the consent took effect |
+| **Mandatory** | Whether consent was required |
+| **Agreed** | Whether the client agreed (Yes/No) |
+| **Type** | How consent was collected (Booking button, Checkbox, Yes/No) |
+| **Date consent given** | Timestamp of when the client gave consent |
+| **Revoke date** | If consent was revoked, when |
+
+> **Note:** The consent record shows "These consents apply to all client bookings." — a consent given during any booking applies across the client's profile, not just that one booking.
+
+## Consent versioning
+
+Each time you make a significant change to the consent text, Zooza creates a new version. The version number and effective date are stored with each client's consent record. This provides an audit trail for GDPR compliance.
+
+If you update the consent text and need clients to re-accept it, you will need to contact them separately — Zooza does not automatically prompt existing clients to re-consent when a new version is published.
+
+## Related
+
+- [Consents and Agreements FAQ](../faq/consents-and-agreements-faq.md)
+- [Online registration](../setup/online-registration.md) — configuring the booking form.

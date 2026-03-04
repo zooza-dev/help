@@ -117,4 +117,4 @@ Each widget type has a **Configure** button to open its settings.
 ## Related
 
 - [Deploying Zooza on Website](../setup/deploying-zooza-on-website.md) — step-by-step embedding guide.
-- [[Customizing-widgets]]- step- by-step customizing HTML and view settings.
+- [Customizing widgets](../guides/customizing-widgets.md) — step-by-step customizing HTML and view settings.

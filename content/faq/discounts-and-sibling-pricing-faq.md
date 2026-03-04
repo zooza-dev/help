@@ -15,11 +15,24 @@ intercom_id: 13728489
 intercom_sync: false
 ---
 
+<!-- Synonyms: discount code, discount settings, create discount, sibling discount, where are discount codes, discount code not working, slevový kód, kde nastavit slevu, nastavení slevových kódů, čerpání slevových kódů, kde jsou slevové kódy, sourozenci sleva, zľavový kód, kde nastaviť zľavu, nastavenie zľavových kódov, kde sú zľavové kódy, súrodenecká zľava, kedvezménykód, hol a kedvezménykód, kedvezmény beállítása, testvér kedvezmény, hol találom a kedvezménykódokat -->
+
 # Discounts and Sibling Pricing FAQ
+
+## Where do I find discount codes and discounts?
+
+Go to **Sales & Payments → Discounts** in the left navigation menu.
+
+The Discounts page has four sections:
+
+- **Discount codes** — create and manage codes that clients enter during checkout.
+- **Discounts** — a list of all discounts that have been used, with client names and amounts.
+- **Free sessions** — credits for free sessions granted to specific clients.
+- **Payment templates with discount** — payment templates that include a built-in percentage discount.
 
 ## How do I set up a discount code?
 
-Go to **Payments → Discounts** and create a new code. You can configure:
+Go to **Sales & Payments → Discounts → Discount codes** and click **Create**. You can configure: You can configure:
 
 - **Code name** — what the client enters (e.g., "SIBLING15").
 - **Discount type** — percentage or absolute amount.
