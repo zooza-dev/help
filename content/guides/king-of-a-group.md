@@ -11,6 +11,8 @@ source_legacy_path: "https://support.zooza.online/portal/en/kb/articles/king-of-
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-03-03"
+intercom_id: 13925145
+intercom_sync: false
 ---
 
 # King of a group

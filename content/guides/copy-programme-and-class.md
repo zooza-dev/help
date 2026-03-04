@@ -11,6 +11,8 @@ source_legacy_path: "https://support.zooza.online/portal/en/kb/articles/copy-cou
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-03-03"
+intercom_id: 13925137
+intercom_sync: false
 ---
 
 # Copy a programme or class
