@@ -146,6 +146,38 @@ Yes. Open the booking detail, click **Show payments**, and in the **Invoices** s
 
 **Automatic** — Zooza generates an invoice every time a payment status changes to "paid" on a booking. A single booking can produce multiple invoices if the client pays in instalments. **Manual** — you generate invoices one at a time from the booking detail. You can use both: leave automatic generation off during setup, and generate invoices manually or enable it later.
 
+## Does Zooza support credit notes or debit notes?
+
+- **Credit note** (reduces the original invoice — e.g. correcting an overcharge, issuing a partial refund on an invoice)
+- **Debit note** (increases the original invoice — e.g. charging an additional amount not included originally)
+
+Zooza does not have a dedicated **credit note** or **debit note** button. What is available depends entirely on which invoicing system you use:
+
+| Invoicing system | Fix a wrong invoice | Credit note | Debit note |
+|---|---|---|---|
+| **Zooza built-in** | Edit the invoice (date, period, description only) — does not change the payment | Not supported | Not supported — increase the debt on the booking instead |
+| **Xero** | Edit or void in Xero directly; create a credit note in Xero | Supported in Xero | Supported in Xero |
+| **Abra Flexi** | Edit or delete in Abra Flexi | Supported in Abra Flexi | Supported in Abra Flexi |
+| **Smartbill** | Edit or delete in Smartbill | Supported in Smartbill | Supported in Smartbill |
+| **Számlázz** | Cannot modify — issue a cancellation (storno) invoice and reissue a new one | Storno invoice in Számlázz | Not applicable — issue a new invoice |
+
+> **Important:** Changes made to invoices in external systems (Xero, Abra Flexi, Smartbill, Számlázz) are **not synchronised back to Zooza**. Zooza always keeps the original invoice reference it generated.
+
+### To fix a wrong invoice — general process
+
+1. Identify which invoicing system you use (**Settings → Billing → Invoice Settings**).
+2. If using **Zooza built-in**: click the pencil icon next to the invoice on the booking detail. You can correct the period, date, payment method, and description. This does not change the payment amount.
+3. If using an **external system**: open the invoice in that system and apply the correction there (edit, void, credit note, or storno — depending on the system). The corrected version will not appear in Zooza.
+4. If the payment amount itself needs to change, adjust the debt on the booking in Zooza separately — see [Edit payment on booking](../guides/edit-payment-on-booking.md).
+
+### To increase the amount owed (debit note equivalent)
+
+Zooza does not issue debit notes. To charge a client an additional amount:
+
+1. Open the booking detail.
+2. Adjust the outstanding debt manually — see [Edit payment on booking](../guides/edit-payment-on-booking.md).
+3. If an invoice is required for the additional amount, generate a new invoice for that booking once the additional payment is recorded.
+
 ## Can I use multiple billing profiles for different programmes?
 
 Yes. Go to **Settings** → **Billing** → **Other billing profiles** and click **Add**. Each profile has its own company details, IBAN, and invoice numbering. Assign a profile to a programme in **Programme** → **Settings** → **Price and Payment** → **Invoicing**. If no profile is assigned, the default billing profile is used.

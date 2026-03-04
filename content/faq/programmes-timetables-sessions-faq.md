@@ -15,6 +15,8 @@ intercom_id: 13728496
 intercom_sync: false
 ---
 
+<!-- Synonyms: delete course, delete programme, remove course, archive course, create session every week, schedule sessions automatically, recurring sessions, merge classes, merge groups, combine classes, combine groups, join two classes, hogyan tudom törölni a kurzusokat, kurzus törlése, program törlése, törölni kurzus, hogy tudom a kurzusokat archiválni, kurzus archiválása, program archiválása, archiválni kurzus, minden héten létre kell hoznom egy órát, órákat ütemezni, automatikus órarend, csoportok összevonása, két csoportot összevonni, csoportokat egyesíteni, vymazať kurz, zmazať program, odstrániť kurz, archivovať kurz, archivovať program, vytvárať hodiny každý týždeň, automatické generovanie hodín, zlúčiť skupiny, spojiť skupiny, zlúčiť triedy, prepojiť skupiny -->
+
 # Programmes, Timetables and Sessions FAQ
 
 ## What is the difference between programmes, timetables, and sessions?
@@ -51,9 +53,41 @@ Open the class detail, go to **Settings / Edit → Other settings**, and change 
 
 You can duplicate a class to create a similar one at a different time or location. When copying, double-check that all settings (price, payment methods, extra fields) have carried over correctly — some settings may need to be re-applied.
 
+## Can I merge two classes into one?
+
+No. Zooza does not have a merge function. Sessions cannot be shared between classes, and there is no built-in way to combine two classes into a single entity.
+
+**Workaround — reschedule sessions to the same time:**
+
+If you want clients from both classes to attend together (e.g., two small groups you want to run at the same time), reschedule the sessions of one class to match the time of the other:
+
+1. Open the class you want to align.
+2. Select all sessions.
+3. Use **bulk edit** to change the time to match the other class.
+
+Both classes now appear at the same time in the calendar and the admin app. Each class still has its own bookings, attendance, and payments — the system keeps them fully separate. Clients, reports, and invoices are unaffected.
+
+> **Note:** This does not actually merge the classes — it only makes them overlap in time. If you later need to split them again, simply reschedule sessions back to a different time.
+
+If one class has no bookings (e.g., it was set up to advertise a future slot), you can keep it in the system for future use without rescheduling — just archive it or leave it visible on the booking form as a separate option.
+
 ## How do I add a new class to an existing programme?
 
 Go to the programme overview and click **New Class**. Fill in the class name, billing period, location, instructor, capacity, and session schedule. If the class should have a different price than the programme, enter it in the price step — otherwise the programme price applies automatically. For a full walkthrough, see [Creating a class](../guides/creating-a-class.md).
+
+## Do I need to create a session manually every week?
+
+No. When you create a class, you define the recurring schedule (day of week, time, start date, end date) and Zooza automatically generates all sessions for the entire period at once.
+
+For example: if your class runs every Monday from 1 September to 30 June, Zooza creates all Monday sessions in one step — you do not touch them again unless something changes (holiday, substitute, etc.).
+
+To set up the schedule when creating a class:
+
+1. Go to **Programmes** → open the programme → **New Class**.
+2. In the session schedule step, set the **day**, **time**, **start date**, and **end date**.
+3. Zooza generates all sessions automatically. Review the list and confirm.
+
+If you need to adjust individual sessions later (e.g. cancel one, change a time), you can edit them one by one or use bulk edit. See [Creating a class](../guides/creating-a-class.md) for the full walkthrough.
 
 ## What is the difference between a Fixed Period class and a Lead Collection class?
 
@@ -79,11 +113,28 @@ In the class settings, you can toggle visibility for the online booking form. Th
 
 Zooza uses browser caching to speed up page loading. When you create or edit something (like a location or class), the change may take a moment to appear. A quick browser refresh (Cmd+R on Mac, Ctrl+R on Windows) usually resolves this.
 
+## Where can I find an archived class (group)?
+
+Go to **Activities** → **Classes** and set the **Status** filter to **Archived**. This shows all classes that have been archived, across all programmes.
+
+Archived classes are hidden from the active list but not deleted — all their sessions, bookings, and payment history remain intact.
+
+## I accidentally deleted a class — can I recover it?
+
+It depends on what happened:
+
+- **If the class was archived** → it can be found and is fully recoverable. Go to **Activities** → **Classes** → set **Status** = **Archived**. Open the class and change its status back to active.
+- **If the class was deleted** → it cannot be recovered. Deleted classes are permanently removed. Contact Zooza support if you believe there has been a data error.
+
+To avoid accidental loss, prefer **archiving** over deleting when you want to keep history or plan to reuse the class.
+
 ## Can I delete a programme?
 
 Programmes cannot be deleted through the application. Instead, use **archiving** — it hides the programme from the active list without removing any data, bookings, or history.
 
 To archive a programme, go to the programme → **Settings** tile → **Edit** → check **Archive** → **Save**. To view or restore archived programmes, use the **Archived** filter in the Programmes list.
+
+![Screenshot — programmes timetables sessions faq](../../assets/images/programmes-timetables-sessions-faq-01.png)
 
 See [Programme settings tile — Archiving a programme](../guides/programme-settings-tile.md#archiving-a-programme) for the full how-to.
 

@@ -17,6 +17,52 @@ intercom_sync: false
 
 # Onboarding and Launch FAQ
 
+## I have interested clients — how do I get them registered in Zooza?
+
+There are three ways to bring clients into Zooza. The right one depends on your situation:
+
+### 1. Share a booking link (recommended)
+
+Every class in Zooza has a public booking link. Clients click the link, fill in their details, and pay online — no admin involvement needed.
+
+To get the link:
+1. Go to **Programmes** → open the programme → open the class.
+2. Copy the **booking link** from the class detail (look for the share/copy icon).
+
+You can also share your main booking page (`yourbrand.zooza.online/booking/`) where clients choose from all available classes.
+
+Send the link via email, WhatsApp, Instagram, or any channel you use.
+
+### 2. Embed the booking form on your website
+
+If you have a website, you can embed the Zooza booking form so clients register without leaving your page. See [Deploying Zooza on a website](../setup/deploying-zooza-on-website.md) and [Customising widgets](../guides/customizing-widgets.md).
+
+### 3. Add clients manually (admin creates the booking)
+
+If a client cannot or will not book online, you can create the booking for them:
+
+1. Go to **Bookings** → **New booking** (or use the booking form on their behalf).
+2. Fill in the client's name, email, and the class they are joining.
+3. Set up payment manually after the booking is created.
+
+See [Creating a booking](../guides/creating-a-booking.md) for step-by-step instructions.
+
+> **Note:** Trial bookings cannot be created manually by an admin. Only standard enrolments and manual registrations.
+
+## How do I create a demo or test group?
+
+A demo group is useful when you want to test the full booking flow before going live, or show a potential client or team member how Zooza works without affecting real data.
+
+1. Go to **Programmes** → create a new programme (e.g., name it "Demo" or "Test").
+2. Add a class with a session or two.
+3. Set the price to 0 or use a test payment method so no real charges occur.
+4. Use the booking link to go through the registration yourself, or add a test booking manually.
+5. When done, delete the test bookings: open each booking → set status to **Deleted**.
+
+You can keep the demo programme for internal use or archive it when you no longer need it.
+
+> **Tip:** If you only need to test the booking form experience (what the client sees), you can also use the [Widget preview](../guides/customizing-widgets.md) without creating an actual booking.
+
 ## What should I check before sending booking links to clients?
 
 Before going live, verify that:

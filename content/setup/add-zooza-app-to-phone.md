@@ -15,6 +15,8 @@ intercom_id: 13728760
 intercom_sync: false
 ---
 
+<!-- Synonyms: download Zooza app, install Zooza app, Zooza mobile app, add to home screen, Zooza on phone, stiahnuť aplikáciu, nainštalovať aplikáciu, zooza aplikácia, pridať na plochu, Zooza na mobile, letölteni a Zooza alkalmazást, Zooza app letöltése, Zooza alkalmazás telepítése, telepíteni a Zooza-t, how to get Zooza app, where is the Zooza app -->
+
 # Add the Zooza app to your phone’s desktop
 
 If you use the Zooza app most often from your phone, you can simplify access by adding it as a shortcut to your home screen.

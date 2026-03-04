@@ -9,11 +9,13 @@ tags: ["clients", "data-correction", "merge", "email"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
-needs_screenshot_replacement: false
+needs_screenshot_replacement: true
 last_converted: "2026-02-13"
 intercom_id: 13738258
 intercom_sync: false
 ---
+
+<!-- Synonyms: move client, delete client, remove client, cancel client, move child to group, move child to another class, change group, presunúť klienta, zmazať klienta, odstrániť klienta, presunúť dieťa, dieťa do inej skupiny, zmeniť skupinu, zrušiť klienta, klient iná skupina -->
 
 # Client Management FAQ
 
@@ -106,6 +108,65 @@ Whether additional fields like phone number or email are shown depends on the ro
 Go to **Settings** > **Team** to review which roles have access to client contact information.
 
 <!-- REVIEW: Confirm exact settings path for controlling which client fields are visible on the instructor attendance view. This may require a role with elevated permissions rather than a per-field toggle. -->
+
+## Where do I set or change a child's date of birth on a booking?
+
+The date of birth is stored on the **attendee** (child) entity, not on the booking itself. You can edit it directly from the booking detail.
+![Screenshot — client management faq](../../assets/images/client-management-faq-01.png)
+
+1. Open the booking detail.
+2. In the **Attendee** card, click the child's name or the edit icon.
+3. Update the **Date of birth** field and save.
+
+![Screenshot — client management faq](../../assets/images/client-management-faq-02.png)
+
+> **Note:** This changes the child's date of birth across all their bookings — the attendee record is shared, not per-booking.
+
+## Can I change the date of birth of the registering person (parent/buyer)?
+
+No. Zooza does not store or display the date of birth of the registering person (parent/buyer) as an editable profile field. Date of birth can only be set and edited for the **attendee** (typically the child).
+
+If you need to collect the parent's date of birth, add a custom extra field to the booking form — but this is stored as free text only, not as a system field.
+
+## How do I move a child (or client) to a different group or class?
+
+In Zooza, clients and their children are linked to **bookings**, not to classes directly. To move a child to a different group, you transfer the booking — not the client record.
+
+> **Important:** You cannot move a client or child from the Clients page. The action is performed on the booking itself, found under **Clients → Bookings**.
+
+1. Go to **Clients** → **Bookings** and open the booking you want to move.
+2. Click **Transfer** (in the Class card).
+3. Select the target class and confirm.
+
+The child (attendee) and their booking move to the new class. Their client profile stays the same.
+
+See [Transfer and copy bookings](../guides/transfer-and-copy-bookings.md) for a step-by-step walkthrough.
+
+## How do I delete or remove a client?
+
+Zooza does not have a standalone "Delete client" button on the Clients page. What most users mean when they want to "delete a client" is one of these booking-level actions:
+
+| What you want to do | Action on the booking |
+|---|---|
+| Client registered by mistake or was a test entry | Set booking status to **Deleted** |
+| Client is leaving or cancelling their enrolment | Set booking status to **Cancelled** |
+| Client is taking a temporary break | Pause the payment plan (do not delete) |
+
+> **Navigation:** Go to **Clients** → **Bookings** → open the booking → change the status in the booking detail.
+
+Setting a booking to **Deleted** is typically used in the early phase (test registrations, duplicates, or bookings created by mistake). The client record itself remains in the system — it is not removed.
+
+If you need to delete a client record entirely, contact Zooza support.
+
+See [Common booking scenarios](common-booking-scenarios.md) for details on each status.
+
+## Why can't I find "move" or "delete" actions on the Clients page?
+
+The **Clients** page (and the individual client profile) shows contact and personal information only. It does not contain actions for moving, cancelling, or deleting enrolments.
+
+All enrolment-level actions — transferring to another class, cancelling, deleting, pausing — are performed on the **booking**, not on the client record.
+
+To manage enrolments, go to **Clients → Bookings** (the Bookings list), find the booking, and open it. All available actions appear there.
 
 ## What does "active client" mean in Zooza?
 

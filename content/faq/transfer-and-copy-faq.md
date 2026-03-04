@@ -15,7 +15,7 @@ intercom_id: 13738683
 intercom_sync: false
 ---
 
-<!-- Synonyms: move booking, move client, relocate booking, presunúť klienta, kopírovať registráciu, presun registrácie, kopírovať kurz, kopírovať skupinu, copy course, copy group -->
+<!-- Synonyms: move booking, move client, relocate booking, presunúť klienta, kopírovať registráciu, presun registrácie, kopírovať kurz, kopírovať skupinu, copy course, copy group, move child, move child to another group, move child to different class, change group, presunúť dieťa, zmeniť skupinu, dieťa do inej skupiny, dieťa do inej kategórie, presunúť do inej skupiny -->
 
 # Transfer and Copy FAQ
 

@@ -50,18 +50,29 @@ Alternatively, you can initiate the reconnection from Zooza:
 
 After renewal, the 90-day countdown restarts.
 
+## What are the options for automatic payment matching?
+
+Zooza supports three methods for matching bank payments to bookings:
+
+| Feature | GoCardless | Email notification | CSV import |
+|---|---|---|---|
+| **How it works** | Reads transactions from your bank via API | Bank emails Zooza for each incoming payment | You upload a bank statement export manually |
+| **Sync speed** | Once per day | Near real-time (minutes) | Manual — whenever you run the import |
+| **Renewal required** | Yes, every 90 days | No | No |
+| **Bank compatibility** | Depends on GoCardless support | Any bank with email notifications | Any bank that exports CSV statements |
+| **Best for** | Ongoing automation | Ongoing automation (faster) | Catching up after outages, or banks with no live integration |
+
+For most users, **email-notification pairing** is the best combination of speed and low maintenance. **CSV import** is useful as a fallback when automatic methods are unavailable or when you need to import payments from a specific past period.
+
 ## What is the difference between GoCardless pairing and email-notification pairing?
 
-Zooza supports two methods for automatic payment matching:
+See the comparison table in the question above. In summary:
 
-| Feature | GoCardless | Email notification |
-|---|---|---|
-| **How it works** | GoCardless reads transactions directly from your bank via API | Your bank sends a notification email for each incoming payment to a special Zooza email address |
-| **Sync speed** | Typically once per day | Near real-time (within minutes) |
-| **Renewal required** | Yes, every 90 days | No, works indefinitely once configured |
-| **Bank compatibility** | Depends on GoCardless bank support | Works with any bank that supports email notifications for incoming payments |
+- GoCardless syncs once per day and requires re-authorization every 90 days.
+- Email-notification pairing is near real-time and works indefinitely without renewal.
+- Both are fully automatic once configured.
 
-Email-notification pairing is generally faster and does not require periodic renewal. However, when using email notifications, your bank will no longer send payment notification emails to your personal email address -- they go exclusively to the Zooza-generated address.
+When using email notifications, your bank sends payment emails to the Zooza-generated address instead of your personal inbox.
 
 ## Which banks have known issues with GoCardless?
 
@@ -73,14 +84,30 @@ If you use SLSP and experience pairing issues, try the email-notification method
 
 Other banks generally work well with GoCardless. If you notice payments are not arriving in Zooza, first check your GoCardless connection status in your internet banking before contacting support.
 
+## How do I set up email-notification payment matching?
+
+For the full step-by-step setup, see [Email-notification payment matching](../setup/email-payment-notifications.md).
+
+In summary:
+
+1. Go to **Settings → Billing** → open the billing profile → **Edit**.
+2. Fill in your **IBAN** and select your bank from the dropdown.
+3. Zooza generates a unique notification email address for your profile.
+4. In your internet banking, set the email for incoming payment notifications to the Zooza-generated address.
+
+If your bank is not in the dropdown, see [My bank is not in the list](../setup/email-payment-notifications.md#my-bank-is-not-in-the-list).
+
 ## How do I switch from GoCardless to email-notification pairing?
 
 1. **Remove the GoCardless connection** in your internet banking to prevent duplicate transactions once both methods are active.
-2. **Find your Zooza notification email address.** It is constructed from your IBAN. For example, if your IBAN is `SK1234567890123456`, the notification email will be in the format shown in your billing profile settings.
-3. **Set up email notifications** in your internet banking. Configure your bank to send incoming payment notifications to the Zooza-generated email address.
-4. **Monitor the first payment** to confirm transactions are arriving in Zooza correctly.
+2. Go to **Settings → Billing** → open your billing profile → **Edit** → select your bank and save.
+3. **Copy the Zooza-generated notification email address** shown in the billing profile settings.
+4. **Set up email notifications** in your internet banking — configure your bank to send incoming payment notifications to the Zooza-generated address.
+5. **Monitor the first payment** to confirm transactions are arriving in Zooza correctly.
 
-After switching, you no longer need to renew any connection every 90 days. Note that payment notification emails from your bank will no longer arrive in your personal inbox -- they are routed directly to Zooza instead.
+After switching, you no longer need to renew any connection every 90 days. Payment notification emails from your bank will no longer arrive in your personal inbox — they are routed directly to Zooza instead.
+
+For full setup details, see [Email-notification payment matching](../setup/email-payment-notifications.md).
 
 ## Why are payments not auto-matching even though GoCardless is connected?
 

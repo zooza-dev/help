@@ -179,6 +179,7 @@ For the invoice item description, you can use dynamic tags to automatically inse
 - [Payments and Billing FAQ](../faq/payments-and-billing-faq.md) — common payment and billing questions.
 - [Edit payment on booking](../guides/edit-payment-on-booking.md) — how to adjust payments on bookings.
 - [Payment options](../guides/payment-options.md) — configuring payment methods and templates.
-- [GoCardless Integration FAQ](../faq/gocardless-integration-faq.md) — setting up GoCardless direct debit.
+- [GoCardless Integration FAQ](../faq/gocardless-faq.md) — setting up GoCardless and email-notification payment matching.
+- [Email-notification payment matching](../setup/email-payment-notifications.md) — faster alternative to GoCardless, no 90-day renewal.
 - [Xero Integration](../setup/xero-integration.md) — connecting Zooza with Xero for invoicing.
 - [VAT management](../setup/vat-management.md) — configuring VAT rates and rules.

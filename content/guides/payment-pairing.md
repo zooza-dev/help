@@ -55,16 +55,17 @@ If all conditions are met, the payment is automatically paired with the booking.
 
 ### Bulk upload via CSV file
 
+If your bank does not support live integrations, or you need to catch up after an outage, you can import payments in bulk from a bank statement export.
 
-If your bank does not support live integrations, you can import payments in bulk.
+- Export a transaction list from your online banking as a **CSV file** (not PDF, not Excel).
+- Go to **Payments → Import**, select your bank, and upload the file.
+- Zooza matches transactions to bookings using the payment reference number.
+- Unmatched transactions can be paired manually or ignored.
+- After review, confirm the import — you can generate invoices for all payments in the same step.
 
-- Export a transaction list from your online banking
-- Upload the CSV file into Zooza
-- Transactions are matched using the payment reference / booking number
+> **Important:** Never import the same file twice. Duplicate imports record payments twice and cannot be automatically reversed.
 
-
-If a payment is not matched due to an incorrect or missing reference, you can reassign it manually.
-See the detailed step-by-step guide in the [documentation](https://support.zooza.online/portal/sk/kb/articles/parovanie-platieb-cez-csv-subor).
+For the full step-by-step process, see [Importing bank payments via CSV](csv-payment-import.md).
 
 ### Automatic pairing via bank email notifications
 

@@ -17,6 +17,14 @@ intercom_sync: false
 
 # Email and Communication FAQ
 
+## Do SMS messages require a country code in the phone number?
+
+No. You do not need to enter the country code when saving a client's phone number. Zooza automatically applies the country code based on the country configured for your Zooza account.
+
+Enter the local phone number format (e.g. `0912 345 678`). Zooza will format it correctly when sending SMS notifications.
+
+If a client has a foreign number from a different country, enter it with the full international format including the `+` prefix (e.g. `+420 777 123 456`).
+
 ## What is the difference between "Trial Booking Completed" and "Confirmation of Booking" emails?
 
 - **Trial Booking Completed** — sent immediately after a parent books a trial class. It confirms the trial booking.

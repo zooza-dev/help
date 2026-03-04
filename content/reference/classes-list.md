@@ -37,7 +37,7 @@ The table supports two export options at the top: **Export** (standard) and **Fi
 | `Programme` | Filter by specific programme. |
 | `Location` | Filter by venue. |
 | `Instructor` | Filter by assigned instructor. |
-| `Status` | Filter by class status (in progress, scheduled, ended). |
+| `Status` | Filter by class status: in progress, scheduled, ended, or **Archived**. Use Archived to find classes that have been hidden from the active list. |
 | `Day` | Filter by day of week. |
 | `Beginning date` / `Ending date` | Filter by date range. |
 | `Labels` | Filter by programme labels. |

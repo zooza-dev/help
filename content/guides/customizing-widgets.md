@@ -15,6 +15,8 @@ last_converted: 2026-02-15
 intercom_id: 13728533
 intercom_sync: false
 ---
+<!-- Synonyms: widget fonts, form fonts, change font on booking form, customize form appearance, CSS widget, widget styling, form design, widget colors, font setup, nastaviť písmo formuláru, písmo na formulári, vzhľad formulára, betűtípus beállítása, form betűtípus, hogyan állítsam be a betűtípust -->
+
 # Customizing widgets
 
 Zooza offers an easy way to customize the widgets you have deployed on your website. You can customize each widget to suit your needs - you can filter the programme offerings, set specific parameters or change the look and feel according to your site design.Widget integration and configuration options:
@@ -268,3 +270,13 @@ To verify or change the capacity display:
 3. Save changes and refresh the page on your website.
 
 <!-- REVIEW: The group-vs-session capacity default was changed around Jan 2026. Confirm the exact setting name and location in the Publish > Calendar section. -->
+
+## Custom fonts and CSS styling
+
+Font, colour, and CSS customisation of Zooza widgets (booking form, calendar, client profile) goes beyond the options available in the Zooza admin interface. These are **implementation-level changes** handled by your web developer.
+
+Full documentation for CSS overrides, font setup, and advanced widget configuration is available in the **Zooza developer documentation**:
+
+**[docs.zooza.online](https://docs.zooza.online)**
+
+> If a client asks "how do I set up fonts on my form?" — direct them to their web developer and to the developer docs at docs.zooza.online. This cannot be configured from within the Zooza admin panel.

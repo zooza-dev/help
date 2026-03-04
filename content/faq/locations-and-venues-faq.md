@@ -15,7 +15,23 @@ intercom_id: 13728492
 intercom_sync: false
 ---
 
+<!-- Synonyms: remove location from course, remove location from class, remove location from group, change location on class, unset location, no location, location not set, lokalita kurzu, zmeniť lokalitu, odstrániť lokalitu zo skupiny -->
+
 # Locations and Venues FAQ
+
+## Can I remove a location from a class (course/group)?
+
+Location is a required field on a class — you cannot leave it blank. You can only **replace** it with a different location.
+
+If you want to remove or unset the location (e.g. the venue is not confirmed yet, or classes moved online), create a placeholder location and assign it:
+
+1. Go to **Settings → Locations** and create a new location with a placeholder name, for example:
+   - `TBD` / `To be announced`
+   - `Online`
+   - `Various venues`
+2. Go to the class, open its settings, and change the location to the placeholder.
+
+> **Note:** When someone asks how to "remove a location from a course", they typically mean a class or group (not a programme). Location is set on the **class**, not on the programme. Go to the class settings to change it.
 
 ## How do I add a new location?
 
