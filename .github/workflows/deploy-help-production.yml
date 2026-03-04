@@ -1,0 +1,62 @@
+name: Deploy Help to Production
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Merge test into main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git merge origin/test
+          git push origin main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: pip install pyyaml
+
+      - name: Generate Docusaurus export
+        run: python scripts/export/build_docusaurus.py --clean
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: build/exports/docusaurus/package.json
+
+      - name: Install Node dependencies
+        working-directory: build/exports/docusaurus
+        run: npm ci
+
+      - name: Build site
+        working-directory: build/exports/docusaurus
+        run: npm run build
+
+      - name: Install lftp
+        run: sudo apt-get install -y lftp
+
+      - name: Deploy via SFTP
+        timeout-minutes: 10
+        working-directory: build/exports/docusaurus
+        env:
+          SFTP_USER: ${{ secrets.SFTP_USER }}
+          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+        run: |
+          lftp -u "$SFTP_USER,$SFTP_PASSWORD" \
+            -e "set ssl:verify-certificate no; set net:timeout 30; set net:max-retries 2; mirror --reverse --delete --verbose ./dist/ /zooza.online/sub/help/; quit" \
+            ftp://$SFTP_HOST

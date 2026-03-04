@@ -2,6 +2,7 @@
 .obsidian/
 .claude/settings.local.json
 build/exports/web/
+build/exports/docusaurus/
 build/exports/targets/*
 !build/exports/targets/intercom/
 build/exports/targets/intercom/*
