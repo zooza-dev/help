@@ -39,6 +39,7 @@ The Settings screen is the central configuration hub for your Zooza account. It 
 | **Instructors rates** | Manage instructor pay rates. |
 | **Labels** | Create and manage labels for organizing programmes, classes, and clients. |
 | **Zooza Sitesx** | Manage Zooza Sites (micro-sites). |
+| **Custom Holidays** | Create and manage company-specific holiday periods used for session scheduling and cancellation rules. See [Custom holidays](../guides/custom-holidays.md). |
 
 ## Billing Periods
 
@@ -121,3 +122,4 @@ Calendar time slot display options (each can be toggled Yes/No):
 
 - [Locations and Venues FAQ](../faq/locations-and-venues-faq.md) — common questions about locations.
 - [Holiday Settings Guide](../setup/holiday-settings.md) — how to configure holidays.
+- [Custom Holidays](../guides/custom-holidays.md) — create company-specific holiday periods.

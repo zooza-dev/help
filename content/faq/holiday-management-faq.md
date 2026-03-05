@@ -76,6 +76,49 @@ This means that if you reschedule sessions and the new dates happen to fall on a
 2. Manually delete or cancel any sessions that now fall on holidays.
 3. If you need to regenerate sessions from scratch (with holiday skipping re-applied), delete the affected sessions and create new ones using the session creation screen with the **Skip Holidays** / **Skip School Breaks** checkboxes enabled.
 
+## What are custom holidays and how are they different from public holidays?
+
+Public and school holidays are synced automatically from national calendars based on your location's region. You cannot edit or delete them.
+
+Custom holidays are holidays you create yourself — for example, a company retreat, a local event, or an unplanned closure. They belong to your Zooza account and are never shared with other accounts. They can be created, edited, and deleted at any time by an admin with the `manage_places` role.
+
+Both types work the same way for scheduling: sessions created within a holiday period are skipped automatically.
+
+See [Custom holidays](../guides/custom-holidays.md) for step-by-step instructions.
+
+## Can I create a holiday that applies only to some of my locations, not all?
+
+Yes. When creating a custom holiday, set the scope to **Region-specific** and select the regions where the holiday applies. Only sessions at locations assigned to those regions will be skipped.
+
+For a closure that affects all your locations, set the scope to **Company-wide**.
+
+## I created a custom holiday but my existing sessions still appear on those dates. Why?
+
+Custom holidays (like all holiday settings) only affect session creation going forward. Sessions that were already generated before the holiday was created are not automatically removed.
+
+To fix this:
+
+1. Go to the class detail and review the session list for dates that fall within the holiday period.
+2. Delete or cancel the individual sessions manually using the bin icon.
+
+## Do custom holidays affect cancellation deadlines?
+
+Yes. Custom holidays count as holidays for the **Block cancellations on weekends and holidays** setting. If a cancellation deadline would fall on a custom holiday, it is moved to the previous working day — the same way it works for public holidays.
+
+## Can I edit or delete a custom holiday after it has been saved?
+
+Yes. Go to **Settings** > **Custom Holidays**, find the holiday, and use the edit (pencil) or delete (bin) icon.
+
+Keep in mind:
+- Editing dates or scope does not automatically add or remove sessions that have already been created.
+- Deleting a custom holiday does not restore any sessions that were skipped because of it.
+
+## The national calendar has incorrect holiday dates. Can I work around this with a custom holiday?
+
+Partially. You can create a custom holiday to block out dates that are missing from the national calendar (for example, a local closure not covered by the external data source). However, custom holidays add to the existing data — they do not override or remove incorrect entries from the national calendar.
+
+For incorrect national holiday data, contact Zooza support at [support@zooza.online](mailto:support@zooza.online) so the underlying data can be corrected.
+
 ## How do I cancel a single session and notify only the affected clients?
 
 1. Open the class detail and find the session you want to cancel.

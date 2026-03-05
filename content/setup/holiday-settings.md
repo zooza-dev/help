@@ -81,6 +81,22 @@ This means sessions may land on public holidays or school breaks after reschedul
 
 <!-- REVIEW: Verify the exact wording of the in-app warning shown during bulk rescheduling. Support mentioned "danu hlasku sme dali aj do systemu" (we added a message to the system). -->
 
+## Custom holidays
+
+In addition to public and school holidays synced from the national calendar, you can create your own **custom holidays** — closures specific to your Zooza account that the system treats the same way as official holidays.
+
+Common uses:
+
+- Company retreat or team event
+- Unexpected closure (e.g. venue unavailable)
+- Local event not covered by the national calendar
+
+Custom holidays can be **company-wide** (skip sessions across all locations) or **region-specific** (skip only sessions at locations in the selected regions).
+
+See [Custom holidays](../guides/custom-holidays.md) for the full setup guide.
+
+![Custom Holidays settings screen](../../assets/images/holiday-settings-custom-01.png)
+
 ## External holiday data and accuracy
 
 Zooza uses an external service to provide public holiday and school break data for each region. This data can sometimes be outdated or incorrect. Known issues include:

@@ -57,6 +57,8 @@ Use this to explain your cancellation policy or provide contact details for manu
 
 Enable **Block cancellations on weekends and holidays** to prevent clients from cancelling on weekends and public holidays. When enabled, the cancellation deadline for Monday sessions moves to **Friday at midnight** — giving clients a full working week to cancel without a weekend loophole.
 
+This applies to all holiday types: public holidays, school holidays, and [custom holidays](custom-holidays.md) your company has created. If a cancellation deadline falls on any of these, it moves to the preceding business day.
+
 ## Make-up session time restrictions
 
 Two additional settings control when make-up options are available to clients:
