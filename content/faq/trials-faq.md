@@ -143,3 +143,17 @@ After enrolment (whether self-registered or admin-enrolled), the client receives
 For bank transfer, they use the payment details (variable symbol and account number) shown in their profile. The payment is then matched automatically or manually by the admin.
 
 If the client does not receive the confirmation email or cannot find payment instructions, you can resend the notification from the booking detail.
+
+## Can I resend a follow-up trial email using an edited template?
+
+Yes. You can manually send a follow-up email to trial clients at any time, and choose which template to use — including a template you recently edited.
+
+1. Go to **Communication** and select the target group of clients (e.g. clients with a trial in a specific programme).
+2. Click **Send message**.
+3. Click **Change email template** to select a different template.
+4. Pick your edited template from the list, or make further edits before sending.
+5. Send.
+
+The email goes out using the wording from the template you selected, not the default automation template.
+
+You can manage all templates — including editing and saving custom versions — under **Communication → Templates**.
