@@ -149,9 +149,11 @@ If the client does not receive the confirmation email or cannot find payment ins
 Yes. You can manually send a follow-up email to trial clients at any time, and choose which template to use — including a template you recently edited.
 
 1. Go to **Communication** and select the target group of clients (e.g. clients with a trial in a specific programme).
-2. Click **Send message**.
+2. Click **Send message**. 
 3. Click **Change email template** to select a different template.
+   ![Change email template button in Communication](../../assets/images/trials-faq-01.png)
 4. Pick your edited template from the list, or make further edits before sending.
+   ![Template selection dropdown](../../assets/images/trials-faq-02.png)
 5. Send.
 
 The email goes out using the wording from the template you selected, not the default automation template.
