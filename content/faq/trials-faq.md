@@ -144,6 +144,36 @@ For bank transfer, they use the payment details (variable symbol and account num
 
 If the client does not receive the confirmation email or cannot find payment instructions, you can resend the notification from the booking detail.
 
+## Should I send trial clients the booking page link or the parent portal link?
+
+Send them the **booking page link** — not the parent portal.
+
+The parent portal is designed for existing registered clients to manage their bookings, attendance, and payments. New parents still need to go through the booking process first. Once they have a confirmed booking, the portal becomes their place to manage everything.
+
+For trial attendees you want to convert to full enrolments, the best options are:
+
+- **Direct group link** — send the link to the specific class they attended. This is the most guided path and avoids them landing in the wrong group.
+- **General booking page** — share your main booking URL. They select the correct class themselves and complete registration from there.
+
+After a trial session, the system can also automatically send an **invitation link directly to the group they attended**. This link can be triggered from the attendance screen by selecting which group the follow-up notification should go to. This is the cleanest flow for converting a trial into a full booking.
+
+## A trial client created a duplicate account — why does this happen and how do I fix it?
+
+The most common cause is the parent using a **different email address** for the trial than the one they use when completing the full booking (e.g. a work email for the trial, personal email for the booking form, or vice versa).
+
+**Prevention:** Use the invitation link sent after the trial session. This link is pre-connected to the parent's trial record and guides them into the correct group, reducing the chance of a new unlinked account being created.
+
+**What it might look like:** Sometimes what appears to be a duplicate is not actually a separate account — it can be a second booking or an incomplete registration. Always check the booking history on both records before merging.
+
+**To merge genuine duplicates:**
+
+1. Go to **Clients** and open one of the duplicate profiles.
+2. Navigate to **Family & Connections** → **Manage**.
+3. Select the duplicate profiles to merge.
+4. Click **Merge profiles**.
+
+Merging combines booking history and family connections from both profiles. This cannot be undone — verify the records carefully first. See [Duplicate client accounts](../faq/client-management-faq.md#a-client-has-duplicate-accounts----how-do-i-merge-them) for full details.
+
 ## Can I resend a follow-up trial email using an edited template?
 
 Yes. You can manually send a follow-up email to trial clients at any time, and choose which template to use — including a template you recently edited.
