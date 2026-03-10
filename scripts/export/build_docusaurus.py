@@ -619,18 +619,116 @@ def _write_sidebars(out: Path) -> None:
     (out / "sidebars.js").write_text(_SIDEBARS_JS, encoding="utf-8")
 
 
+_HOMEPAGE_JS = """\
+import React from 'react';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
+import styles from './index.module.css';
+
+const CATEGORIES = [
+  { label: 'Programmes',    to: '/category/programmes',   description: 'Create and manage your programmes, pricing, and settings.' },
+  { label: 'Classes',       to: '/category/classes',      description: 'Set up class schedules, sessions, and instructor assignments.' },
+  { label: 'Bookings',      to: '/category/bookings',     description: 'Create and manage client bookings and registrations.' },
+  { label: 'Calendar',      to: '/category/calendar',     description: 'Track sessions, attendance, and instructor schedules.' },
+  { label: 'Clients',       to: '/category/clients',      description: 'Manage client profiles, attendance, and communication.' },
+  { label: 'Payments',      to: '/category/payments',     description: 'Set up payment templates, track invoices, and manage debt.' },
+  { label: 'Settings',      to: '/category/settings',     description: 'Configure holidays, billing periods, roles, and integrations.' },
+  { label: 'Widgets',       to: '/category/widgets',      description: 'Embed booking forms and calendars on your website.' },
+  { label: 'Communication', to: '/category/communication',description: 'Set up email and WhatsApp templates and automated messages.' },
+];
+
+export default function Home() {
+  const { siteConfig } = useDocusaurusContext();
+  return (
+    <Layout title="Help" description={siteConfig.tagline}>
+      <main className={styles.main}>
+        <div className={styles.hero}>
+          <h1>How can we help you?</h1>
+          <p>Browse guides, setup instructions, and FAQs for Zooza.</p>
+        </div>
+        <div className={styles.grid}>
+          {CATEGORIES.map((cat) => (
+            <Link key={cat.to} to={cat.to} className={styles.card}>
+              <h2>{cat.label}</h2>
+              <p>{cat.description}</p>
+            </Link>
+          ))}
+        </div>
+      </main>
+    </Layout>
+  );
+}
+"""
+
+_HOMEPAGE_CSS = """\
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.card {
+  display: block;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-card-border-radius);
+  padding: 1.5rem;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 2px 12px rgba(250, 105, 0, 0.12);
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+  color: var(--ifm-color-primary);
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+  margin: 0;
+  line-height: 1.5;
+}
+"""
+
+
 def _write_custom_css(out: Path) -> None:
     (out / "src" / "css").mkdir(parents=True, exist_ok=True)
     (out / "src" / "css" / "custom.css").write_text(_CUSTOM_CSS, encoding="utf-8")
-    # Homepage redirect — works in both dev and production (unlike plugin-client-redirects)
     (out / "src" / "pages").mkdir(parents=True, exist_ok=True)
-    (out / "src" / "pages" / "index.js").write_text(
-        "import { Redirect } from '@docusaurus/router';\n"
-        "export default function Home() {\n"
-        "  return <Redirect to='/category/programmes' />;\n"
-        "}\n",
-        encoding="utf-8",
-    )
+    (out / "src" / "pages" / "index.js").write_text(_HOMEPAGE_JS, encoding="utf-8")
+    (out / "src" / "pages" / "index.module.css").write_text(_HOMEPAGE_CSS, encoding="utf-8")
 
 
 def _write_gitignore(out: Path) -> None:
