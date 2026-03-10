@@ -236,7 +236,7 @@ const { themes: prismThemes } = require('prism-react-renderer');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Zooza Help',
-  tagline: 'Help and guides for Zooza studio management software',
+  tagline: 'Help centre for Zooza — the go-to platform for children\'s activity businesses.',
   favicon: 'img/favicon.ico',
   url: 'https://help.zooza.online',
   baseUrl: '/',
@@ -297,7 +297,7 @@ const config = {
       image: 'img/social-card.png',
 
       metadata: [
-        { name: 'description', content: 'Help and guides for Zooza studio management software — programmes, bookings, payments, attendance, and more.' },
+        { name: 'description', content: 'Official help centre for Zooza — the go-to platform for children\'s activity businesses. Guides for programmes, bookings, payments, attendance, and more.' },
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'Zooza Help' },
         { name: 'twitter:card', content: 'summary_large_image' },
@@ -658,7 +658,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.hero}>
           <h1>How can we help you?</h1>
-          <p>Browse guides, setup instructions, and FAQs for Zooza.</p>
+          <p>Guides, setup instructions, and FAQs for Zooza — the go-to platform for children's activity businesses.</p>
         </div>
         <div className={styles.grid}>
           {CATEGORIES.map((cat) => (
@@ -787,9 +787,9 @@ def _write_static_files(out: Path) -> None:
     (static / "llms.txt").write_text(
         "# Zooza Help\n"
         "\n"
-        "> Help and guides for Zooza studio management software\n"
+        "> Official help centre for Zooza — the go-to platform for children's activity businesses.\n"
         "\n"
-        "Zooza Help provides documentation for Zooza — a class and programme management platform for sports, fitness, dance, and activity studios. It covers setup, daily operations, payments, communication, and website widgets.\n"
+        "Zooza Help provides documentation for Zooza — an all-in-one platform built for children's activity businesses (dance, sports, arts, language schools, and more). It covers programmes, bookings, payments, attendance, communication, and website widgets.\n"
         "\n"
         "## Topics\n"
         "\n"
