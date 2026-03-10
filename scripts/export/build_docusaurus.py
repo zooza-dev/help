@@ -306,7 +306,7 @@ const config = {
           { to: '/category/payments', label: 'Payments', position: 'left' },
           { to: '/category/settings', label: 'Settings', position: 'left' },
           {
-            href: 'https://zooza.app',
+            href: 'https://www.zooza.online/access/',
             label: 'Go to app',
             position: 'right',
           },
@@ -330,7 +330,7 @@ const config = {
           {
             title: 'More',
             items: [
-              { label: 'Zooza App', href: 'https://zooza.app' },
+              { label: 'Zooza App', href: 'https://www.zooza.online/access/' },
               { label: 'Zooza Website', href: 'https://zooza.online' },
               { label: 'Support', href: 'mailto:support@zooza.online' },
             ],
@@ -686,9 +686,21 @@ _HOMEPAGE_CSS = """\
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card {
