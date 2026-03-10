@@ -207,6 +207,7 @@ _PACKAGE_JSON = {
         "@docusaurus/core": "^3.6.0",
         "@docusaurus/preset-classic": "^3.6.0",
         "@docusaurus/plugin-client-redirects": "^3.6.0",
+        "@docusaurus/plugin-google-gtag": "^3.6.0",
         "clsx": "^2.0.0",
         "prism-react-renderer": "^2.3.0",
         "react": "^18.0.0",
@@ -237,7 +238,7 @@ const config = {
   title: 'Zooza Help',
   tagline: 'Help and guides for Zooza studio management software',
   favicon: 'img/favicon.ico',
-  url: 'https://help.zooza.app',
+  url: 'https://help.zooza.online',
   baseUrl: '/',
 
   organizationName: 'zooza',
@@ -284,12 +285,24 @@ const config = {
     // plugin-client-redirects is available for future use (production-only).
     // Root redirect is handled by src/pages/index.js (works in dev + prod).
     // ['@docusaurus/plugin-client-redirects', { redirects: [] }],
+    ['@docusaurus/plugin-google-gtag', {
+      trackingID: 'G-YBV84Z62T5',
+      anonymizeIP: false,
+    }],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/social-card.png',
+
+      metadata: [
+        { name: 'description', content: 'Help and guides for Zooza studio management software — programmes, bookings, payments, attendance, and more.' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:site_name', content: 'Zooza Help' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'robots', content: 'index, follow' },
+      ],
 
       navbar: {
         title: 'Zooza Help',
@@ -743,6 +756,60 @@ def _write_custom_css(out: Path) -> None:
     (out / "src" / "pages" / "index.module.css").write_text(_HOMEPAGE_CSS, encoding="utf-8")
 
 
+def _write_static_files(out: Path) -> None:
+    static = out / "static"
+    static.mkdir(exist_ok=True)
+
+    (static / "robots.txt").write_text(
+        "User-agent: *\n"
+        "Allow: /\n"
+        "\n"
+        "# AI crawlers — explicitly allowed\n"
+        "User-agent: GPTBot\n"
+        "Allow: /\n"
+        "\n"
+        "User-agent: ChatGPT-User\n"
+        "Allow: /\n"
+        "\n"
+        "User-agent: ClaudeBot\n"
+        "Allow: /\n"
+        "\n"
+        "User-agent: PerplexityBot\n"
+        "Allow: /\n"
+        "\n"
+        "User-agent: Googlebot\n"
+        "Allow: /\n"
+        "\n"
+        "Sitemap: https://help.zooza.online/sitemap.xml\n",
+        encoding="utf-8",
+    )
+
+    (static / "llms.txt").write_text(
+        "# Zooza Help\n"
+        "\n"
+        "> Help and guides for Zooza studio management software\n"
+        "\n"
+        "Zooza Help provides documentation for Zooza — a class and programme management platform for sports, fitness, dance, and activity studios. It covers setup, daily operations, payments, communication, and website widgets.\n"
+        "\n"
+        "## Topics\n"
+        "\n"
+        "- [Programmes](https://help.zooza.online/category/programmes): Create and manage programmes, pricing, payment templates, and automation.\n"
+        "- [Classes](https://help.zooza.online/category/classes): Set up class schedules, sessions, capacity, and instructor assignments.\n"
+        "- [Bookings](https://help.zooza.online/category/bookings): Create and manage client bookings and registrations.\n"
+        "- [Calendar](https://help.zooza.online/category/calendar): Track sessions, mark attendance, and manage instructor schedules.\n"
+        "- [Clients](https://help.zooza.online/category/clients): Manage client profiles, attendance history, and communication preferences.\n"
+        "- [Payments](https://help.zooza.online/category/payments): Payment templates, invoices, debt management, and payment integrations.\n"
+        "- [Settings](https://help.zooza.online/category/settings): Holidays, billing periods, user roles, and third-party integrations.\n"
+        "- [Widgets](https://help.zooza.online/category/widgets): Embed booking forms and calendars on your website.\n"
+        "- [Communication](https://help.zooza.online/category/communication): Email and WhatsApp message templates and automated notifications.\n"
+        "\n"
+        "## Sitemap\n"
+        "\n"
+        "https://help.zooza.online/sitemap.xml\n",
+        encoding="utf-8",
+    )
+
+
 def _write_gitignore(out: Path) -> None:
     (out / ".gitignore").write_text(
         "node_modules/\n.docusaurus/\nbuild/\ndist/\n", encoding="utf-8"
@@ -895,6 +962,7 @@ def build_docusaurus(dry_run: bool = False, clean: bool = False) -> dict:
     _write_docusaurus_config(OUTPUT_DIR)
     _write_sidebars(OUTPUT_DIR)
     _write_custom_css(OUTPUT_DIR)
+    _write_static_files(OUTPUT_DIR)
     _write_gitignore(OUTPUT_DIR)
     _write_readme(OUTPUT_DIR)
 
