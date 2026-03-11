@@ -1,5 +1,8 @@
 # Claude Code instructions — Zooza KB conversion
 
+spec_prefix: HLP
+project_type: static-knowledge-base
+
 Date baseline: 2026-02-11
 
 This repository converts a legacy HTML knowledge base into a clean, English-only Markdown knowledge base,
