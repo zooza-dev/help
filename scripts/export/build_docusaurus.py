@@ -362,9 +362,9 @@ const config = {
       },
 
       algolia: {
-        appId: 'G4L1X5YJDL',
-        apiKey: '664f30b167ab43a3fe92115ab39c90b6',
-        indexName: 'zooza_help',
+        appId: 'ANY9EAZRWT',
+        apiKey: 'd710a6679587ad2816454d8c9d611bd6',
+        indexName: 'Zooza Help',
         contextualSearch: true,
         searchPagePath: 'search',
       },
