@@ -11,8 +11,6 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-16"
-intercom_id: 13728486
-intercom_sync: false
 ---
 
 # Attendance and Catch-up Classes FAQ

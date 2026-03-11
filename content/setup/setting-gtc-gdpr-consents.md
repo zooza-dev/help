@@ -11,8 +11,6 @@ source_legacy_path: "legacy/0069_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-03-04"
-intercom_id: 13728871
-intercom_sync: false
 ---
 
 <!-- Synonyms: terms and conditions, GTC, GDPR consent, consent booking form, agreement registration, add consent, terms of service, marketing consent, data processing consent, szerződési feltételek, GDPR beleegyezés, regisztrációs feltételek, hozzájárulás, adatkezelési beleegyezés, podmienky zmluvy, GDPR súhlas, súhlas pri registrácii, obchodné podmienky, súhlas na spracovanie osobných údajov -->

@@ -11,8 +11,6 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-17"
-intercom_id: 13728489
-intercom_sync: false
 ---
 
 <!-- Synonyms: discount code, discount settings, create discount, sibling discount, where are discount codes, discount code not working, slevový kód, kde nastavit slevu, nastavení slevových kódů, čerpání slevových kódů, kde jsou slevové kódy, sourozenci sleva, zľavový kód, kde nastaviť zľavu, nastavenie zľavových kódov, kde sú zľavové kódy, súrodenecká zľava, kedvezménykód, hol a kedvezménykód, kedvezmény beállítása, testvér kedvezmény, hol találom a kedvezménykódokat -->

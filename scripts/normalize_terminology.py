@@ -187,19 +187,6 @@ def apply_rule(body, rule, zones):
     return body, count
 
 
-def update_intercom_sync(frontmatter):
-    """Set intercom_sync: true in frontmatter."""
-    if "intercom_sync:" in frontmatter:
-        return re.sub(r"intercom_sync:\s*(true|false)", "intercom_sync: true", frontmatter)
-    elif "intercom_id:" in frontmatter:
-        # Add intercom_sync after intercom_id
-        return re.sub(
-            r"(intercom_id:\s*\d+)",
-            r"\1\nintercom_sync: true",
-            frontmatter,
-        )
-    return frontmatter
-
 
 def main():
     dry_run = "--dry-run" in sys.argv
@@ -258,9 +245,8 @@ def main():
             total_replacements += file_total
 
             if not dry_run:
-                new_frontmatter = update_intercom_sync(frontmatter)
                 with open(filepath, "w") as f:
-                    f.write(new_frontmatter + body)
+                    f.write(frontmatter + body)
 
             print(f"  {'WOULD MODIFY' if dry_run else 'MODIFIED'}: {relpath} ({file_total} replacements)")
         else:

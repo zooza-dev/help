@@ -11,8 +11,6 @@ source_legacy_path: "legacy/0023_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-18"
-intercom_id: 13728588
-intercom_sync: false
 ---
 
 <!-- Synonyms: client profile, parent portal, client portal, customer portal, profil klienta, rodičovský portál, klientský profil -->

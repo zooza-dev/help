@@ -11,8 +11,6 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-03-03"
-intercom_id: 13925139
-intercom_sync: false
 ---
 
 # Creating a booking manually

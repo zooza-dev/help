@@ -11,8 +11,6 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-03-03"
-intercom_id: 13925142
-intercom_sync: false
 ---
 
 # Custom replacement lessons

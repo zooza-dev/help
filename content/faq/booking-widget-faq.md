@@ -11,8 +11,6 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-03-04"
-intercom_id:
-intercom_sync: false
 ---
 
 <!-- Synonyms: booking widget, registration form, booking form display, hide field booking form, widget customization, widget appearance, instructor not shown, instructor hidden, hide row widget, where are booking form settings, how to configure registration form, nastavení registračního formuláře, kde najdu formuláře, registrační formulář nastavení, kde nastavit registrační formulář, hogy tudom ezt a sort eltűntetni a regisztrációnál, oktató elrejtése regisztrációnál, oktató nem megadva regisztrációs form, registrációs urlap beállítás hol, registračný formulár zobrazenie, skryť pole registračný formulár, skryť inštruktora widget, ako vyzerá booking formulár pre klienta, kde sa nastavuje registračný formulár -->

@@ -11,8 +11,6 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-15"
-intercom_id: 13728491
-intercom_sync: false
 ---
 
 # Instructor Access and Roles FAQ

@@ -12,8 +12,6 @@ source_legacy_path: legacy/0078_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
 last_converted: 2026-02-15
-intercom_id: 13728533
-intercom_sync: false
 ---
 <!-- Synonyms: widget fonts, form fonts, change font on booking form, customize form appearance, CSS widget, widget styling, form design, widget colors, font setup, nastaviť písmo formuláru, písmo na formulári, vzhľad formulára, betűtípus beállítása, form betűtípus, hogyan állítsam be a betűtípust -->
 

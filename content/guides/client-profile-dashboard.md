@@ -11,8 +11,6 @@ source_legacy_path: "legacy/0021_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-18"
-intercom_id: 13728589
-intercom_sync: false
 ---
 
 # Dashboard 2.0 in the Client Profile

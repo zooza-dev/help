@@ -12,8 +12,6 @@ source_legacy_path: legacy/0086_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
 last_converted: 2026-02-15
-intercom_id: 13728602
-intercom_sync: false
 ---
 <!-- REVIEW: add all types of prepaid payment frequencies -->
 # Payment templates creation

@@ -11,8 +11,6 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-15"
-intercom_id: 13728496
-intercom_sync: false
 ---
 
 <!-- Synonyms: delete course, delete programme, remove course, archive course, create session every week, schedule sessions automatically, recurring sessions, merge classes, merge groups, combine classes, combine groups, join two classes, hogyan tudom törölni a kurzusokat, kurzus törlése, program törlése, törölni kurzus, hogy tudom a kurzusokat archiválni, kurzus archiválása, program archiválása, archiválni kurzus, minden héten létre kell hoznom egy órát, órákat ütemezni, automatikus órarend, csoportok összevonása, két csoportot összevonni, csoportokat egyesíteni, vymazať kurz, zmazať program, odstrániť kurz, archivovať kurz, archivovať program, vytvárať hodiny každý týždeň, automatické generovanie hodín, zlúčiť skupiny, spojiť skupiny, zlúčiť triedy, prepojiť skupiny -->

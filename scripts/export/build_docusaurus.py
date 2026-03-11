@@ -64,8 +64,6 @@ INTERNAL_FIELDS = {
     "source_language",
     "needs_screenshot_replacement",
     "last_converted",
-    "intercom_id",
-    "intercom_sync",
     "type",
     "product_area",
     "sub_area",
@@ -236,7 +234,7 @@ const { themes: prismThemes } = require('prism-react-renderer');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Zooza Help',
-  tagline: 'Help centre for Zooza — the go-to platform for children\'s activity businesses.',
+  tagline: 'Help centre for Zooza — the go-to platform for children\\'s activity businesses.',
   favicon: 'img/favicon.ico',
   url: 'https://help.zooza.online',
   baseUrl: '/',
@@ -297,7 +295,7 @@ const config = {
       image: 'img/social-card.png',
 
       metadata: [
-        { name: 'description', content: 'Official help centre for Zooza — the go-to platform for children\'s activity businesses. Guides for programmes, bookings, payments, attendance, and more.' },
+        { name: 'description', content: 'Official help centre for Zooza — the go-to platform for children\\'s activity businesses. Guides for programmes, bookings, payments, attendance, and more.' },
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'Zooza Help' },
         { name: 'twitter:card', content: 'summary_large_image' },
@@ -363,13 +361,13 @@ const config = {
         respectPrefersColorScheme: true,
       },
 
-      // Algolia search — configure after deploying.
-      // algolia: {
-      //   appId: 'YOUR_APP_ID',
-      //   apiKey: 'YOUR_SEARCH_API_KEY',
-      //   indexName: 'zooza_help',
-      //   contextualSearch: true,
-      // },
+      algolia: {
+        appId: 'G4L1X5YJDL',
+        apiKey: '664f30b167ab43a3fe92115ab39c90b6',
+        indexName: 'zooza_help',
+        contextualSearch: true,
+        searchPagePath: 'search',
+      },
     }),
 };
 

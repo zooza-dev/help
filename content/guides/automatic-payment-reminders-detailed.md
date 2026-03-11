@@ -12,8 +12,6 @@ source_legacy_path: legacy/0093_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
 last_converted: 2026-02-11
-intercom_id: 13728510
-intercom_sync: false
 ---
 
 # Automatic payment reminders

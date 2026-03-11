@@ -11,8 +11,6 @@ source_legacy_path: "legacy/0042_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-03-03"
-intercom_id: 13728555
-intercom_sync: false
 ---
 
 # Managing sessions in a class

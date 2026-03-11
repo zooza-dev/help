@@ -11,8 +11,6 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-03-04"
-intercom_id:
-intercom_sync: false
 ---
 
 <!-- Synonyms: where is booking form settings, how to configure registration form, where to find form settings, registration form setup, booking form customization, nastavení registračního formuláře, kde najdu formuláře, registrační formulář nastavení, kde nastavit registrační formulář, nastavenia registračného formulára, kde nastavím formulár, registrácia nastavenia formulár, registrációs form beállítások, hol találom az urlap beállításokat, regisztrációs urlap testreszabása, formulár nastavenie kde, kde sa nastavuje registračný formulár -->

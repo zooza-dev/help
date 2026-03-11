@@ -11,8 +11,6 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-03-04"
-intercom_id:
-intercom_sync: false
 ---
 
 <!-- Synonyms: terms and conditions registration, GDPR consent booking, add terms to booking form, consent checkbox, accept terms, marketing consent, data processing consent, terms not showing, consent not required, photo consent, video consent, check who gave consent, verify parent consent, szerződési feltételek regisztrációkor, GDPR hozzájárulás, feltételek elfogadása, beleegyezés regisztrációnál, fénykép hozzájárulás, videó hozzájárulás, hozzájárulás ellenőrzése, súhlas pri registrácii, podmienky registrácia, GDPR súhlas zákazník, obchodné podmienky registračný formulár, foto súhlas, video súhlas, overiť súhlas rodičov, acord fotografii, acord video, verificare acord parinti, acord privind imaginea copiilor, cum verific acordul pentru poze -->

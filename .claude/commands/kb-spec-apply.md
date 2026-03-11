@@ -66,9 +66,8 @@ Run all new/updated content through the canonical terminology rules:
 - Replace non-canonical terms from the spec (course→programme, group→class, etc.)
 - Check against `build/terminology/dictionary.json`
 
-### Step 5 — Set sync flags
+### Step 5 — Update metadata
 For every file created or modified:
-- Set `intercom_sync: true` in frontmatter
 - Update `last_converted` to today's date
 
 ### Step 6 — Generate apply log
@@ -139,6 +138,5 @@ Complete when:
 - New articles created with proper frontmatter and content
 - Existing articles updated with new sections/questions
 - All content uses canonical terminology
-- `intercom_sync: true` set on all modified files
 - Apply log written
 - No fabricated content — only spec-sourced information

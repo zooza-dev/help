@@ -39,7 +39,6 @@ def main():
         "no_frontmatter": [],
         "missing_fm": [],
         "duplicate_slugs": [],
-        "duplicate_intercom": [],
         "h1_issues": [],
         "heading_skips": [],
         "broken_links": [],
@@ -47,7 +46,6 @@ def main():
     }
 
     slug_map = defaultdict(list)
-    intercom_map = defaultdict(list)
 
     for fpath in md_files:
         rel = str(fpath.relative_to(REPO_ROOT))
@@ -64,8 +62,6 @@ def main():
 
             if "slug" in fm:
                 slug_map[fm["slug"]].append(rel)
-            if "intercom_id" in fm and fm["intercom_id"] is not None:
-                intercom_map[fm["intercom_id"]].append(rel)
 
         # 4. H1 count
         h1_lines = [l for l in body.split("\n") if re.match(r'^# [^#]', l)]
@@ -108,11 +104,6 @@ def main():
         if len(files) > 1:
             results["duplicate_slugs"].append((slug, files))
 
-    # 3. Duplicate intercom_ids
-    for iid, files in intercom_map.items():
-        if len(files) > 1:
-            results["duplicate_intercom"].append((iid, files))
-
     # Build report
     lines = []
     lines.append("# Validation Report")
@@ -124,7 +115,6 @@ def main():
         len(results["no_frontmatter"])
         + len(results["missing_fm"])
         + len(results["duplicate_slugs"])
-        + len(results["duplicate_intercom"])
         + len(results["h1_issues"])
         + len(results["heading_skips"])
         + len(results["broken_links"])
@@ -179,25 +169,8 @@ def main():
         lines.append("All slugs are unique.")
         lines.append("")
 
-    # Section 3: Unique intercom_id
-    lines.append("## 3. Unique Intercom IDs")
-    lines.append("")
-    if results["duplicate_intercom"]:
-        lines.append(
-            f"**{len(results['duplicate_intercom'])} duplicate intercom_id(s) found:**"
-        )
-        lines.append("")
-        for iid, files in results["duplicate_intercom"]:
-            lines.append(f"- intercom_id `{iid}` used by:")
-            for f in files:
-                lines.append(f"  - `{f}`")
-        lines.append("")
-    else:
-        lines.append("All intercom_id values are unique.")
-        lines.append("")
-
-    # Section 4: H1 count
-    lines.append("## 4. Exactly One H1 Per Doc")
+    # Section 3: H1 count
+    lines.append("## 3. Exactly One H1 Per Doc")
     lines.append("")
     if results["h1_issues"]:
         lines.append(
@@ -211,8 +184,8 @@ def main():
         lines.append("All docs have exactly one H1.")
         lines.append("")
 
-    # Section 5: Heading skips
-    lines.append("## 5. No Skipped Heading Levels")
+    # Section 4: Heading skips
+    lines.append("## 4. No Skipped Heading Levels")
     lines.append("")
     if results["heading_skips"]:
         lines.append(
@@ -226,8 +199,8 @@ def main():
         lines.append("No heading level skips found.")
         lines.append("")
 
-    # Section 6: Broken internal links
-    lines.append("## 6. Broken Internal Links")
+    # Section 5: Broken internal links
+    lines.append("## 5. Broken Internal Links")
     lines.append("")
     if results["broken_links"]:
         lines.append(
@@ -241,8 +214,8 @@ def main():
         lines.append("No broken internal links found.")
         lines.append("")
 
-    # Section 7: Missing assets
-    lines.append("## 7. Missing Referenced Assets")
+    # Section 6: Missing assets
+    lines.append("## 6. Missing Referenced Assets")
     lines.append("")
     if results["missing_assets"]:
         lines.append(f"**{len(results['missing_assets'])} missing asset(s) found:**")

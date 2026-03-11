@@ -11,8 +11,6 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-17"
-intercom_id: 13738681
-intercom_sync: false
 ---
 
 # Registration and Booking FAQ

@@ -3,10 +3,7 @@
 .claude/settings.local.json
 build/exports/web/
 build/exports/docusaurus/
-build/exports/targets/*
-!build/exports/targets/intercom/
-build/exports/targets/intercom/*
-!build/exports/targets/intercom/intercom-map.json
+build/exports/targets/
 __pycache__/
 *.pyc
 .venv/

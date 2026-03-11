@@ -11,8 +11,6 @@ source_legacy_path: "legacy/0071_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-03-03"
-intercom_id: 13728760
-intercom_sync: false
 ---
 
 <!-- Synonyms: download Zooza app, install Zooza app, Zooza mobile app, add to home screen, Zooza on phone, stiahnuť aplikáciu, nainštalovať aplikáciu, zooza aplikácia, pridať na plochu, Zooza na mobile, letölteni a Zooza alkalmazást, Zooza app letöltése, Zooza alkalmazás telepítése, telepíteni a Zooza-t, how to get Zooza app, where is the Zooza app -->

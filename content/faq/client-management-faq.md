@@ -11,8 +11,6 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-02-13"
-intercom_id: 13738258
-intercom_sync: false
 ---
 
 <!-- Synonyms: move client, delete client, remove client, cancel client, move child to group, move child to another class, change group, presunúť klienta, zmazať klienta, odstrániť klienta, presunúť dieťa, dieťa do inej skupiny, zmeniť skupinu, zrušiť klienta, klient iná skupina -->

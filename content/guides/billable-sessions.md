@@ -14,8 +14,6 @@ source_legacy_path: legacy/0044_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
 last_converted: 2026-02-16
-intercom_id: 13728565
-intercom_sync: false
 ---
 
 # Billable sessions
