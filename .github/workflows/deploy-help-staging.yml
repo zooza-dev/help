@@ -37,7 +37,7 @@ jobs:
 
       - name: Install Node dependencies
         working-directory: build/exports/docusaurus
-        run: npm ci
+        run: npm install --legacy-peer-deps
 
       - name: Build site
         working-directory: build/exports/docusaurus
