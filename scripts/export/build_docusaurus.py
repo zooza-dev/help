@@ -754,12 +754,69 @@ _HOMEPAGE_CSS = """\
 """
 
 
+_404_JS = """\
+import React from 'react';
+import Link from '@docusaurus/Link';
+import Layout from '@theme/Layout';
+
+const QUICK_LINKS = [
+  { label: 'Programmes', to: '/category/programmes' },
+  { label: 'Bookings',   to: '/category/bookings' },
+  { label: 'Payments',   to: '/category/payments' },
+  { label: 'Settings',   to: '/category/settings' },
+];
+
+export default function NotFound() {
+  return (
+    <Layout title="404 — Page not found">
+      <main style={{ maxWidth: 680, margin: '0 auto', padding: '5rem 1.5rem', textAlign: 'center' }}>
+        <div style={{ fontSize: '5rem', lineHeight: 1, marginBottom: '1rem' }}>🏃</div>
+        <h1 style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '0.5rem' }}>404</h1>
+        <h2 style={{ fontWeight: 600, marginBottom: '1rem', color: 'var(--ifm-color-primary)' }}>
+          This class has been cancelled.
+        </h2>
+        <p style={{ fontSize: '1.1rem', color: 'var(--ifm-color-emphasis-700)', marginBottom: '0.5rem' }}>
+          The page you're looking for ran out the door before the warm-up was over.
+        </p>
+        <p style={{ fontSize: '0.95rem', color: 'var(--ifm-color-emphasis-600)', marginBottom: '2.5rem' }}>
+          It happens — kids escape, links break. Let's get you back on track.
+        </p>
+        <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
+          {QUICK_LINKS.map((l) => (
+            <Link
+              key={l.to}
+              to={l.to}
+              style={{
+                padding: '0.5rem 1.25rem',
+                border: '1px solid var(--ifm-color-emphasis-300)',
+                borderRadius: '2rem',
+                textDecoration: 'none',
+                fontSize: '0.9rem',
+                color: 'inherit',
+                transition: 'border-color 0.15s',
+              }}
+            >
+              {l.label}
+            </Link>
+          ))}
+        </div>
+        <Link to="/" style={{ fontWeight: 600, color: 'var(--ifm-color-primary)' }}>
+          ← Back to Help home
+        </Link>
+      </main>
+    </Layout>
+  );
+}
+"""
+
+
 def _write_custom_css(out: Path) -> None:
     (out / "src" / "css").mkdir(parents=True, exist_ok=True)
     (out / "src" / "css" / "custom.css").write_text(_CUSTOM_CSS, encoding="utf-8")
     (out / "src" / "pages").mkdir(parents=True, exist_ok=True)
     (out / "src" / "pages" / "index.js").write_text(_HOMEPAGE_JS, encoding="utf-8")
     (out / "src" / "pages" / "index.module.css").write_text(_HOMEPAGE_CSS, encoding="utf-8")
+    (out / "src" / "pages" / "404.js").write_text(_404_JS, encoding="utf-8")
 
 
 def _write_static_files(out: Path, staging: bool = False) -> None:
