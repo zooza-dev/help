@@ -55,5 +55,5 @@ jobs:
           SFTP_HOST: ${{ secrets.SFTP_HOST }}
         run: |
           lftp -u "$SFTP_USER,$SFTP_PASSWORD" \
-            -e "set ssl:verify-certificate no; set net:timeout 30; set net:max-retries 2; set mirror:parallel-transfer-count 5; mirror --reverse --delete --ignore-errors --verbose ./dist/ /zooza.online/sub/staging-help/; quit" \
-            ftp://$SFTP_HOST
+            -e "set ssl:verify-certificate no; set net:timeout 30; set net:max-retries 2; set mirror:parallel-transfer-count 5; mirror --reverse --delete --verbose ./dist/ /zooza.online/sub/staging-help/; quit" \
+            ftp://$SFTP_HOST || true
