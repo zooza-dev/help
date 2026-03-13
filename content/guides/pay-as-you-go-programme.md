@@ -116,6 +116,8 @@ The client can unregister from a session by clicking **Cancel session** in their
 
 The client receives a notification email for each session they book or unbook.
 
+If you cancel a session as an admin from the Calendar, all clients who were marked as attending receive a credit automatically — no manual action needed. See [Session payment adjustments](session-payment-adjustments.md).
+
 ## Attendance settings
 
 Pay-as-you-go programmes have two additional attendance settings:

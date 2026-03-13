@@ -584,6 +584,21 @@ body {
   --ifm-alert-background-color: rgba(250, 105, 0, 0.12);
 }
 
+/* ── Screenshots / article images ── */
+.markdown img {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+  display: block;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+[data-theme='dark'] .markdown img {
+  border-color: var(--ifm-color-emphasis-300);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.28);
+}
+
 /* ── Footer ── */
 .footer__link-item {
   font-size: 0.875rem;
