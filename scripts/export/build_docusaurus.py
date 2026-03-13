@@ -870,6 +870,11 @@ def _write_static_files(out: Path, staging: bool = False) -> None:
         )
     (static / "robots.txt").write_text(robots_content, encoding="utf-8")
 
+    (static / ".htaccess").write_text(
+        "ErrorDocument 404 /404.html\n",
+        encoding="utf-8",
+    )
+
     (static / "llms.txt").write_text(
         "# Zooza Help\n"
         "\n"
