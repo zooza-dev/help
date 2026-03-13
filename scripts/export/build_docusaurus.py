@@ -54,6 +54,7 @@ TYPE_ORDER = [
     ("payments", "Payments", 4),
     ("troubleshooting", "Troubleshooting", 5),
     ("faq", "FAQ", 6),
+    ("glossary", "Glossary", 7),
 ]
 TYPE_POSITION = {t[0]: t[2] for t in TYPE_ORDER}
 TYPE_LABELS = {t[0]: t[1] for t in TYPE_ORDER}

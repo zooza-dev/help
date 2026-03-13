@@ -1,7 +1,7 @@
 ---
 title: "Zooza Glossary"
 slug: "glossary"
-type: "reference"
+type: "glossary"
 product_area: "Settings"
 audience: ["admin", "client"]
 tags: ["glossary", "terminology", "definitions"]
