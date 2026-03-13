@@ -833,6 +833,9 @@ def _write_custom_css(out: Path) -> None:
     (out / "src" / "pages" / "index.js").write_text(_HOMEPAGE_JS, encoding="utf-8")
     (out / "src" / "pages" / "index.module.css").write_text(_HOMEPAGE_CSS, encoding="utf-8")
     (out / "src" / "pages" / "404.js").write_text(_404_JS, encoding="utf-8")
+    # Swizzle @theme/NotFound so client-side routing also uses our custom 404
+    (out / "src" / "theme").mkdir(parents=True, exist_ok=True)
+    (out / "src" / "theme" / "NotFound.js").write_text(_404_JS, encoding="utf-8")
 
 
 def _write_static_files(out: Path, staging: bool = False) -> None:
