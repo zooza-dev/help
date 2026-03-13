@@ -1,0 +1,862 @@
+# Zooza Terminology Dictionary
+# Generated: 2026-03-13
+# Source of truth for public glossary and AI disambiguation
+#
+# Fields per term:
+#   id               - machine-readable slug (unique)
+#   canonical_en     - the single correct English term
+#   category         - grouping for the public glossary
+#   definition       - plain-English definition (public)
+#   context          - term variants by user role/domain
+#   deprecated       - old/wrong terms to avoid
+#   synonyms         - acceptable variants (do not use in new content, but understood)
+#   translations     - partial; expand as needed
+#   intent_keywords  - per-language list of what customers actually type/say (AI use)
+#   do_not_confuse_with - disambiguation pairs with reason (AI use)
+#   ai_notes         - additional AI-specific guidance
+#   public           - true = include in public glossary page
+
+terms:
+
+  # ──────────────────────────────────────────────
+  # PRODUCT HIERARCHY
+  # ──────────────────────────────────────────────
+
+  - id: programme
+    canonical_en: "Programme"
+    category: "product-hierarchy"
+    definition: >
+      The top-level container that defines an activity type. Holds pricing,
+      payment settings, booking form configuration, and scheduling rules.
+      One Programme can contain multiple Classes.
+    context:
+      admin: "Programme"
+      client: "Class"
+      widget: "Class"
+    deprecated:
+      - "Course"
+      - "course"
+      - "Open course"      # was used for pay-as-you-go type
+      - "One-time course"  # was used for one-off event type
+    synonyms:
+      - "program"          # American spelling, acceptable
+    translations:
+      sk: "Program"
+      de: "Programm / Kurs"
+    intent_keywords:
+      en: ["programme", "program", "course", "activity", "class programme"]
+      sk: ["program", "kurz", "aktivita", "hodiny"]
+      de: ["Programm", "Kurs", "Aktivität"]
+    notes: >
+      When domain = widget (client-facing), displayed as 'Class'.
+      Admin always uses 'Programme'. Do not use 'Course' in new content.
+    public: true
+
+  - id: class
+    canonical_en: "Class"
+    category: "product-hierarchy"
+    definition: >
+      A scheduled group within a Programme, typically differentiated by
+      day/time, level, or location. Inherits all Programme settings automatically.
+      One Class contains multiple Sessions.
+    context:
+      admin: "Class"
+      client: "Class"
+      widget: "Class"
+    deprecated:
+      - "Group"
+      - "group"
+      - "Timetable"   # old navigation label
+      - "batch"
+      - "track"
+    synonyms:
+      - "group"        # legacy; still understood
+    translations:
+      sk: "Skupina / Lekcia"
+      de: "Gruppe / Kurs"
+    intent_keywords:
+      en: ["class", "group", "timetable", "schedule", "my class", "which group"]
+      sk: ["skupina", "trieda", "hodina", "rozvrh", "hodiny"]
+      de: ["Klasse", "Gruppe", "Kurs", "Stundenplan"]
+    notes: >
+      'Class' is used at two levels: (1) the subdivision within a Programme (admin view),
+      and (2) the top-level name for a Programme in the client/widget view.
+      Context resolves the ambiguity. In admin, the hierarchy is Programme → Class → Session.
+    public: true
+
+  - id: session
+    canonical_en: "Session"
+    category: "product-hierarchy"
+    definition: >
+      A single scheduled meeting within a Class, with a specific date and time.
+      Attendance is recorded at session level.
+    context:
+      admin: "Session"
+      client: "Session"
+      widget: "Session"
+    deprecated:
+      - "slot"
+      - "appointment"
+      - "date"
+      - "time slot"
+    synonyms:
+      - "lesson"        # common in education context
+      - "class session" # acceptable disambiguator
+    translations:
+      sk: "Termín / Hodina"
+      de: "Termin / Stunde / Einheit"
+    intent_keywords:
+      en: ["session", "lesson", "slot", "time", "date", "class date", "next session"]
+      sk: ["termín", "hodina", "lekcia", "dátum", "čas"]
+      de: ["Termin", "Stunde", "Einheit", "Datum"]
+    public: true
+
+  # ──────────────────────────────────────────────
+  # PROGRAMME TYPES
+  # ──────────────────────────────────────────────
+
+  - id: pay-as-you-go
+    canonical_en: "Pay-as-you-go"
+    category: "programme-types"
+    definition: >
+      A flexible programme type where clients book and pay for individual sessions
+      rather than committing to a full term. Often used for drop-in classes.
+    context:
+      admin: "Pay-as-you-go"
+      client: "Pay-as-you-go"
+      widget: "Pay-as-you-go"
+    deprecated:
+      - "Open course"
+      - "Open registration"
+      - "drop-in"
+      - "flexible"
+    synonyms:
+      - "PAYG"
+      - "per-session"
+      - "drop-in"
+    translations:
+      sk: "Platba za termín / Otvorený kurz"
+      de: "Pay-as-you-go / Einzelbuchung"
+    intent_keywords:
+      en: ["pay as you go", "drop in", "single session", "flexible", "per session", "no commitment"]
+      sk: ["platba za termín", "jednotlivé termíny", "bez záväzkov", "drop-in"]
+      de: ["einzeln", "flexibel", "ohne Bindung", "einzelne Stunde"]
+    public: true
+
+  - id: one-off-event
+    canonical_en: "One-off Event"
+    category: "programme-types"
+    definition: >
+      A single session on a specific date. No repeating schedule. Used for
+      workshops, lectures, consultations, or special events.
+    context:
+      admin: "One-off Event"
+      client: "One-off Event"
+      widget: "One-off Event"
+    deprecated:
+      - "One-time course"
+      - "Registration for one session"
+      - "single session event"
+      - "workshop course"
+    synonyms:
+      - "workshop"
+      - "event"
+      - "one-time event"
+    translations:
+      sk: "Jednorazová udalosť / Jednorazový kurz"
+      de: "Einzelveranstaltung / Einmaliger Kurs"
+    intent_keywords:
+      en: ["one off", "one-off", "single event", "workshop", "one time", "one session"]
+      sk: ["jednorazovo", "jednorazový", "workshop", "prednáška", "konzultácia"]
+      de: ["einmalig", "Workshop", "Einzeltermin", "Veranstaltung"]
+    public: true
+
+  - id: membership
+    canonical_en: "Membership"
+    category: "programme-types"
+    definition: >
+      An ongoing programme with a recurring fixed charge and no fixed end date.
+      Clients are billed on a regular cycle (monthly, quarterly, etc.).
+    context:
+      admin: "Membership"
+      client: "Membership"
+      widget: "Membership"
+    synonyms:
+      - "subscription"
+      - "recurring membership"
+    translations:
+      sk: "Členstvo / Predplatné"
+      de: "Mitgliedschaft / Abo"
+    intent_keywords:
+      en: ["membership", "subscription", "monthly fee", "recurring", "ongoing"]
+      sk: ["členstvo", "predplatné", "mesačný poplatok", "opakujúca sa platba"]
+      de: ["Mitgliedschaft", "Abo", "monatlich", "Dauerauftrag"]
+    public: true
+
+  # ──────────────────────────────────────────────
+  # BOOKINGS & ENROLMENT
+  # ──────────────────────────────────────────────
+
+  - id: booking
+    canonical_en: "Booking"
+    category: "bookings"
+    definition: >
+      A client's formal commitment to attend a Class. Creates a payment obligation
+      tied to one specific Class. Managed by admins.
+    context:
+      admin: "Booking"
+      client: "Enrolment"
+      widget: "Enrolment"
+    deprecated:
+      - "Registration"  # use Booking (admin) or Enrolment (client)
+      - "sign-up"
+      - "sign up"
+      - "enrollment"    # American spelling; use Enrolment
+    synonyms:
+      - "enrolment"     # client-facing variant
+      - "registration"  # legacy; still understood
+    translations:
+      sk: "Prihlásenie / Zápis"
+      de: "Buchung / Anmeldung"
+    intent_keywords:
+      en: ["booking", "enrolment", "enrollment", "registration", "sign up", "sign me up", "book a spot"]
+      sk: ["prihlásenie", "prihláška", "zápis", "registrácia", "prihlásiť"]
+      de: ["Buchung", "Anmeldung", "einschreiben", "buchen", "anmelden"]
+    do_not_confuse_with:
+      - term: "Transfer"
+        reason: "Transfer moves a booking to another class; Booking is the enrolment record itself"
+      - term: "Copy"
+        reason: "Copy duplicates a booking; the booking is the record being duplicated"
+    ai_notes: >
+      Transfer and Copy both apply to the Booking/Registration entity — not to the Client.
+      If customer says 'move my child', clarify: 'Do you want to move the registration to another class?'
+    public: true
+
+  - id: enrolment
+    canonical_en: "Enrolment"
+    category: "bookings"
+    definition: >
+      The client-facing term for a Booking. Refers to the same record as Booking
+      but used in the client portal and widget context.
+    context:
+      admin: "Booking"
+      client: "Enrolment"
+      widget: "Enrolment"
+    deprecated:
+      - "Registration"
+      - "enrollment"  # American spelling
+    synonyms:
+      - "booking"     # admin-side equivalent
+    translations:
+      sk: "Zápis / Prihlásenie"
+      de: "Anmeldung / Einschreibung"
+    intent_keywords:
+      en: ["enrolment", "enrollment", "my registration", "my booking"]
+      sk: ["zápis", "prihlásenie"]
+      de: ["Anmeldung", "Einschreibung"]
+    notes: >
+      Same underlying record as Booking. Use 'Enrolment' in client-facing content
+      and widget documentation. Use 'Booking' in admin/operations documentation.
+    public: true
+
+  - id: transfer
+    canonical_en: "Transfer"
+    category: "bookings"
+    definition: >
+      Move a booking/registration from one Class, Group, or Programme to another.
+      The original booking ends and a new booking is created in the target Class.
+    context:
+      admin: "Transfer"
+      client: "Transfer"
+      widget: null
+    deprecated:
+      - "move booking"
+      - "switch group"
+      - "change class"
+      - "relocate"
+    synonyms:
+      - "move"
+      - "switch"
+    translations:
+      sk: "Presunúť / Prehodiť"
+      de: "Verschieben / Wechseln"
+    intent_keywords:
+      en: ["transfer", "move", "switch", "change group", "change class", "move to another", "switch class"]
+      sk: ["presunúť", "prehodiť", "zmeniť skupinu", "presun", "premiestiť", "iná skupina"]
+      de: ["verschieben", "wechseln", "umbuchen", "in andere Gruppe", "Gruppenänderung"]
+      pl: ["przenieść", "zmienić grupę", "przeniesienie"]
+      ro: ["mută", "schimbă grupa", "transfer"]
+      hu: ["áthelyezni", "csoport csere"]
+      it: ["spostare", "trasferire"]
+      fr: ["déplacer", "transférer", "changer de groupe"]
+    do_not_confuse_with:
+      - term: "Copy"
+        reason: "Transfer moves the booking (original ends); Copy duplicates it (original stays)"
+    ai_notes: >
+      If customer says: 'move', 'presunúť', 'prehodiť', 'zmeniť skupinu', 'verschieben', 'wechseln',
+      'przenieść', 'mută', 'áthelyezni', 'spostare', 'déplacer' → treat as Transfer intent.
+      Transfer applies to the Booking, not to the Client entity.
+    public: true
+
+  - id: copy
+    canonical_en: "Copy"
+    category: "bookings"
+    definition: >
+      Duplicate a booking/registration to another Class, Group, or Programme.
+      The original booking remains unchanged. A new booking is created.
+      Payment schedules do not carry over to the copy.
+    context:
+      admin: "Copy"
+      client: null
+      widget: null
+    deprecated:
+      - "duplicate booking"
+      - "clone"
+    synonyms:
+      - "duplicate"
+      - "clone"
+    translations:
+      sk: "Kopírovať / Zduplikovať"
+      de: "Kopieren / Duplizieren"
+    intent_keywords:
+      en: ["copy", "duplicate", "clone", "also enrol in", "add to another class", "copy booking"]
+      sk: ["kopírovať", "duplikovať", "zduplikovať", "skopírovať", "zaradiť aj do"]
+      de: ["kopieren", "duplizieren", "auch einschreiben", "in weitere Gruppe"]
+      pl: ["skopiować", "zduplikować"]
+      ro: ["duplică", "copie", "copiere"]
+      hu: ["másolni", "duplikálni"]
+      it: ["duplicare", "copiare"]
+      fr: ["copier", "dupliquer"]
+    do_not_confuse_with:
+      - term: "Transfer"
+        reason: "Copy leaves the original booking in place; Transfer removes it"
+    ai_notes: >
+      If customer says: 'copy', 'kopírovať', 'duplikovať', 'zduplikovať', 'kopieren',
+      'duplizieren', 'skopiować', 'duplică', 'másolni', 'duplicare', 'copier' → treat as Copy intent.
+      Copy applies to the Booking, not to the Client entity.
+      Note: payment schedules and make-up credits do NOT carry over to the copied booking.
+    public: true
+
+  # ──────────────────────────────────────────────
+  # CLIENTS & ATTENDEES
+  # ──────────────────────────────────────────────
+
+  - id: client
+    canonical_en: "Client"
+    category: "clients"
+    definition: >
+      The person who holds the account, pays, and manages bookings. Identified
+      uniquely by email address. May book on behalf of family members (attendees).
+    context:
+      admin: "Client"
+      client: "Client"
+      widget: "Client"
+    deprecated:
+      - "parent"    # contextual only; use 'client' as the canonical term
+      - "customer"
+      - "account holder"
+    synonyms:
+      - "parent"         # acceptable when context is clearly family/children
+      - "account holder"
+    translations:
+      sk: "Klient / Zákazník"
+      de: "Kunde / Klient"
+    intent_keywords:
+      en: ["client", "customer", "parent", "account", "my account"]
+      sk: ["klient", "zákazník", "rodič", "účet"]
+      de: ["Kunde", "Klient", "Elternteil", "Konto"]
+    do_not_confuse_with:
+      - term: "Attendee"
+        reason: "Client is the payer/account holder; Attendee is the person who attends sessions (may be a child)"
+    public: true
+
+  - id: attendee
+    canonical_en: "Attendee"
+    category: "clients"
+    definition: >
+      The person who physically attends Sessions. May differ from the Client
+      (e.g., a parent books for their child). For adult learners, Client and
+      Attendee are the same person.
+    context:
+      admin: "Attendee"
+      client: "Attendee"
+      widget: "Attendee"
+    deprecated:
+      - "child"      # contextual only
+      - "pupil"
+      - "student"
+      - "participant"
+    synonyms:
+      - "child"        # acceptable in family/youth programme context
+      - "participant"
+      - "student"
+    translations:
+      sk: "Účastník / Dieťa"
+      de: "Teilnehmer / Kind"
+    intent_keywords:
+      en: ["attendee", "participant", "child", "my child", "student", "pupil"]
+      sk: ["účastník", "dieťa", "žiak", "študent"]
+      de: ["Teilnehmer", "Kind", "Schüler"]
+    public: true
+
+  # ──────────────────────────────────────────────
+  # ATTENDANCE
+  # ──────────────────────────────────────────────
+
+  - id: make-up-session
+    canonical_en: "Make-up session"
+    category: "attendance"
+    definition: >
+      A replacement session a client can attend after cancelling a scheduled
+      session in advance (before the cancellation deadline). The make-up credit
+      is generated automatically on cancellation.
+    context:
+      admin: "Make-up session"
+      client: "Make-up session"
+      widget: "Make-up session"
+    deprecated:
+      - "Replacement session"
+      - "replacement lessons"
+      - "catch-up session"
+      - "substitute session"
+      - "náhradná hodina"   # keep as SK reference only
+    synonyms:
+      - "replacement session"   # acceptable variant
+      - "catch-up"
+    translations:
+      sk: "Náhradná hodina"
+      de: "Ersatzstunde / Ersatztermin / Nachholtermin"
+    intent_keywords:
+      en: ["make-up", "makeup", "replacement", "catch up", "missed session", "attend another", "reschedule"]
+      sk: ["náhradná hodina", "náhrada", "zmeškané", "náhradný termín", "preložiť hodinu"]
+      de: ["Ersatzstunde", "Ersatztermin", "Nachholtermin", "verpasste Stunde", "Nachholen"]
+    do_not_confuse_with:
+      - term: "Free credits"
+        reason: >
+          Make-up sessions arise from cancellations (attendance logic).
+          Free credits are an allowance granted on a booking (pricing/access logic).
+          Some users incorrectly call make-ups 'free sessions' — clarify if needed.
+      - term: "Billable session"
+        reason: >
+          Billable sessions are a pricing calculation setting.
+          Make-up sessions are an attendance management feature.
+          Do not mix these when answering attendance questions.
+    ai_notes: >
+      If customer asks about: missed sessions, cancellations, replacement lessons, making up
+      a class, attending instead on another day → treat as make-up session / attendance topic.
+      Only discuss Billable sessions if customer explicitly asks about pricing calculation settings.
+    public: true
+
+  - id: free-credits
+    canonical_en: "Free credits"
+    category: "attendance"
+    definition: >
+      An allowance granted to a specific booking that lets the client attend
+      extra sessions without paying. Managed as credits on the booking record.
+      Different from make-up credits generated by cancellations.
+    context:
+      admin: "Free credits"
+      client: "Free credits"
+      widget: null
+    deprecated:
+      - "free sessions"
+      - "voľné termíny"   # SK colloquial
+      - "complimentary sessions"
+    synonyms:
+      - "free session allowance"
+      - "complimentary credits"
+    translations:
+      sk: "Voľné termíny / Kredity zadarmo"
+      de: "Freistunden / Gratisguthaben"
+    intent_keywords:
+      en: ["free sessions", "free credits", "complimentary", "extra sessions", "sessions included"]
+      sk: ["voľné termíny", "zadarmo", "zadarmo termíny", "kredity zadarmo"]
+      de: ["Freistunden", "gratis", "kostenlose Stunden", "Gutschrift"]
+    do_not_confuse_with:
+      - term: "Make-up session"
+        reason: >
+          Free credits = granted allowance on a booking (pricing/access).
+          Make-up sessions = earned by cancelling before deadline (attendance).
+          Users often confuse the two.
+      - term: "Billable session"
+        reason: "Billable sessions are a pricing setting, not an attendance benefit."
+    public: true
+
+  - id: billable-session
+    canonical_en: "Billable session"
+    category: "attendance"
+    definition: >
+      A session that counts towards the total used for price calculation in
+      Programme/Class settings. Marking a session as non-billable (e.g. public
+      holidays) excludes it from the price formula. This is a pricing tool only.
+    context:
+      admin: "Billable session"
+      client: null
+      widget: null
+    synonyms:
+      - "billable date"
+      - "chargeable session"
+    translations:
+      sk: "Spoplatnený termín"
+      de: "Abrechenbare Stunde"
+    do_not_confuse_with:
+      - term: "Make-up session"
+        reason: "Billable sessions affect pricing only. Make-up sessions are attendance management."
+      - term: "Free credits"
+        reason: "Billable sessions are a price calculation tool. Free credits are an attendance benefit."
+    ai_notes: >
+      Only discuss billable sessions when a customer explicitly asks about the billable session
+      feature or pricing calculation. Never mention billable sessions in response to attendance,
+      cancellation, or make-up questions.
+    public: true
+
+  # ──────────────────────────────────────────────
+  # PAYMENTS
+  # ──────────────────────────────────────────────
+
+  - id: payment-plan
+    canonical_en: "Payment Plan"
+    category: "payments"
+    definition: >
+      The configuration that defines when and how often a client is billed for
+      a booking. Can be one-time, monthly, quarterly, by-block, etc.
+    context:
+      admin: "Payment Plan"
+      client: "Payment Plan"
+      widget: "Payment Plan"
+    deprecated:
+      - "Payment schedule"     # old term; now replaced by Payment Plan
+      - "Scheduled payments"   # descriptive variant; avoid as a proper noun
+      - "invoice profile"      # old internal term
+      - "payment template"     # internal/legacy term
+      - "billing frequency"
+    synonyms:
+      - "payment schedule"     # still understood
+    translations:
+      sk: "Platobný plán / Platobný rozvrh"
+      de: "Zahlungsplan / Zahlungsrhythmus"
+    intent_keywords:
+      en: ["payment plan", "payment schedule", "how to pay", "billing", "instalments", "when billed"]
+      sk: ["platobný plán", "spôsob platby", "platba", "fakturácia", "splátky"]
+      de: ["Zahlungsplan", "Zahlungsrhythmus", "Ratenzahlung", "wann zahlen"]
+    public: true
+
+  - id: reference-number
+    canonical_en: "Reference number"
+    category: "payments"
+    definition: >
+      A unique identifier included with bank transfer payments to allow automatic
+      matching of incoming payments to the correct client booking.
+    context:
+      admin: "Reference number"
+      client: "Reference number"
+      widget: "Reference number"
+    deprecated:
+      - "Variable symbol"    # Slovak banking term; replaced by Reference number
+      - "variabilný symbol"
+      - "VS"
+    synonyms:
+      - "variable symbol"    # still understood in SK context
+      - "payment reference"
+    translations:
+      sk: "Variabilný symbol / Referenčné číslo"
+      de: "Verwendungszweck / Referenznummer"
+    intent_keywords:
+      en: ["reference number", "payment reference", "bank transfer reference"]
+      sk: ["variabilný symbol", "referenčné číslo", "VS", "prevod"]
+      de: ["Verwendungszweck", "Referenznummer", "Überweisung"]
+    public: true
+
+  - id: entry-pass
+    canonical_en: "Entry pass"
+    category: "payments"
+    definition: >
+      A prepaid bundle that grants access to a set number of sessions (visits-based)
+      or a credit amount (money-based). Used primarily with Pay-as-you-go programmes.
+    context:
+      admin: "Entry pass"
+      client: "Entry pass"
+      widget: "Entry pass"
+    deprecated:
+      - "credit pass"
+      - "visit pass"
+      - "prepaid sessions"
+      - "pass"
+    synonyms:
+      - "credit pass"    # acceptable variant
+      - "visit pass"     # acceptable variant
+    translations:
+      sk: "Vstupový pass / Kredit"
+      de: "Eintrittskarte / Guthaben / Pass"
+    intent_keywords:
+      en: ["entry pass", "pass", "credit", "prepaid", "bundle", "10 sessions", "top up"]
+      sk: ["pass", "kredit", "predplatené hodiny", "vstupová karta", "nabiť kredit"]
+      de: ["Eintrittskarte", "Guthaben", "Prepaid", "Paket", "aufladen"]
+    public: true
+
+  - id: term-payment
+    canonical_en: "Term Payment"
+    category: "payments"
+    definition: >
+      A payment covering a specific term or billing period, as opposed to a
+      single session or full-programme upfront payment.
+    context:
+      admin: "Term Payment"
+      client: "Term Payment"
+      widget: "Term Payment"
+    deprecated:
+      - "Course fee"    # old term; replaced by Term Payment
+    translations:
+      sk: "Platba za semester / Termínová platba"
+      de: "Kursbeitrag / Semesterbeitrag"
+    public: true
+
+  # ──────────────────────────────────────────────
+  # VENUES & LOCATIONS
+  # ──────────────────────────────────────────────
+
+  - id: venue
+    canonical_en: "Venue"
+    category: "settings"
+    definition: >
+      A physical location where Sessions take place. Assigned at Class level.
+    context:
+      admin: "Venue"
+      client: "Venue"
+      widget: "Venue"
+    deprecated:
+      - "Place"
+      - "Location"   # replaced by Venue for the physical address entity
+      - "place"
+      - "location"
+    synonyms:
+      - "location"   # still widely understood
+    translations:
+      sk: "Miesto / Sála / Prevádzka"
+      de: "Standort / Ort / Halle"
+    intent_keywords:
+      en: ["venue", "location", "place", "address", "where", "room", "hall"]
+      sk: ["miesto", "adresa", "kde", "sála", "miestnosť"]
+      de: ["Standort", "Ort", "Adresse", "Halle", "wo"]
+    public: true
+
+  # ──────────────────────────────────────────────
+  # TRIAL SESSIONS
+  # ──────────────────────────────────────────────
+
+  - id: trial
+    canonical_en: "Trial"
+    category: "bookings"
+    definition: >
+      A first free or discounted session offered to a prospective client before
+      committing to a full enrolment. Trial status progresses from Trial Started
+      to Trial Won (converted) or Trial Lost.
+    context:
+      admin: "Trial"
+      client: "Trial session"
+      widget: "Trial session"
+    deprecated:
+      - "free trial session"
+      - "taster session"
+      - "introductory class"
+    synonyms:
+      - "trial session"
+      - "taster"
+    translations:
+      sk: "Skúšobná hodina / Trial"
+      de: "Probestunde / Schnupperstunde"
+    intent_keywords:
+      en: ["trial", "trial session", "free session", "taster", "try out", "introductory"]
+      sk: ["skúšobná hodina", "trial", "prvá hodina zadarmo", "vyskúšať"]
+      de: ["Probestunde", "Schnupperstunde", "kostenlose Stunde", "ausprobieren"]
+    public: true
+
+  # ──────────────────────────────────────────────
+  # BOOKING MODIFICATIONS
+  # ──────────────────────────────────────────────
+
+  - id: 1-to-1-class
+    canonical_en: "1-to-1 class"
+    category: "programme-types"
+    definition: >
+      A class with a single attendee (individual/private lesson). Admin term
+      for what clients call a Private class.
+    context:
+      admin: "1-to-1 class"
+      client: "Private class"
+      widget: "Private class"
+    deprecated:
+      - "Individual class"
+      - "individual session"
+      - "private lesson"
+    synonyms:
+      - "private class"
+      - "individual lesson"
+    translations:
+      sk: "Individuálna hodina / Súkromná hodina"
+      de: "Einzelstunde / Privatstunde"
+    intent_keywords:
+      en: ["1 to 1", "one to one", "private", "individual", "private class", "private lesson"]
+      sk: ["individuálna hodina", "súkromná hodina", "individuálna lekcia", "privát"]
+      de: ["Einzelstunde", "Privatstunde", "Einzelunterricht"]
+    public: true
+
+  # ──────────────────────────────────────────────
+  # FEEDBACK
+  # ──────────────────────────────────────────────
+
+  - id: feedback
+    canonical_en: "Feedback"
+    category: "communication"
+    definition: >
+      Structured feedback collected from clients after sessions or at the end
+      of a programme. Accessible in reports.
+    context:
+      admin: "Feedback"
+      client: "Feedback"
+      widget: "Feedback"
+    deprecated:
+      - "Course feedback"    # old term; replaced by Feedback
+      - "review"
+      - "survey"
+    synonyms:
+      - "review"
+      - "rating"
+    translations:
+      sk: "Spätná väzba / Hodnotenie"
+      de: "Feedback / Bewertung"
+    intent_keywords:
+      en: ["feedback", "review", "rating", "survey", "client feedback"]
+      sk: ["spätná väzba", "hodnotenie", "recenzia"]
+      de: ["Feedback", "Bewertung", "Rückmeldung"]
+    public: true
+
+  # ──────────────────────────────────────────────
+  # PLATFORM & WIDGETS
+  # ──────────────────────────────────────────────
+
+  - id: widget
+    canonical_en: "Widget"
+    category: "platform"
+    definition: >
+      An embeddable booking interface placed on the activity provider's website.
+      Widgets are the client-facing domain. Everything displayed in a widget uses
+      client-facing terminology.
+    context:
+      admin: "Widget"
+      client: "Widget"
+      widget: "Widget"
+    synonyms:
+      - "booking widget"
+      - "booking form"
+      - "calendar widget"
+      - "client portal widget"
+    translations:
+      sk: "Widget / Rezervačný formulár"
+      de: "Widget / Buchungsformular"
+    intent_keywords:
+      en: ["widget", "booking form", "website form", "embed", "booking button"]
+      sk: ["widget", "rezervačný formulár", "na webe", "formulár"]
+      de: ["Widget", "Buchungsformular", "einbetten", "Webseite"]
+    notes: >
+      When domain = widget, all terminology flips to client-facing variants:
+      Programme → Class, Booking → Enrolment, etc.
+    public: true
+
+  - id: client-profile
+    canonical_en: "Client Profile"
+    category: "platform"
+    definition: >
+      The self-service dashboard where clients manage their bookings, payments,
+      and family members. Accessed via email link (no password required).
+    context:
+      admin: "Client Profile"
+      client: "My Profile / Profile"
+      widget: "Profile"
+    deprecated:
+      - "parent portal"
+      - "customer portal"
+      - "client portal"
+    synonyms:
+      - "client portal"
+      - "parent portal"  # acceptable in family context
+    translations:
+      sk: "Profil klienta / Klientske konto"
+      de: "Kundenprofil / Kundenbereich"
+    intent_keywords:
+      en: ["client profile", "my profile", "portal", "my account", "login", "access my account"]
+      sk: ["profil", "môj profil", "klientske konto", "prihlásenie", "prístup"]
+      de: ["Profil", "mein Profil", "Kundenbereich", "mein Konto", "Anmeldung"]
+    public: true
+
+# ──────────────────────────────────────────────
+# ENTITY MISATTRIBUTION PATTERNS (AI use only)
+# ──────────────────────────────────────────────
+# People often name the wrong entity. These patterns map natural language
+# to the correct technical entity and action.
+
+entity_misattribution:
+
+  - pattern: "copy a client / kopírovať klienta"
+    actual_entity: "Booking"
+    actual_action: "Copy"
+    clarification: "Do you want to copy the booking/registration to another class?"
+    intent_keywords:
+      en: ["copy client", "copy a client", "copy the client"]
+      sk: ["kopírovať klienta", "skopírovať klienta"]
+
+  - pattern: "move a child / presunúť dieťa / move a client"
+    actual_entity: "Booking"
+    actual_action: "Transfer"
+    clarification: "Do you want to move the registration to another class?"
+    intent_keywords:
+      en: ["move child", "move my child", "move client", "move a client"]
+      sk: ["presunúť dieťa", "prehodiť dieťa", "presunúť klienta", "prehodiť klienta"]
+      de: ["Kind verschieben", "Kunde verschieben", "umbuchen"]
+
+  - pattern: "add client to another group / pridať klienta do inej skupiny"
+    actual_entity: "Booking"
+    actual_action: "Copy"
+    clarification: "Do you want to copy the booking so the client is enrolled in both classes?"
+    intent_keywords:
+      en: ["add to another group", "add client to another class", "enrol in two groups"]
+      sk: ["pridať do inej skupiny", "zaradiť do ďalšej skupiny", "prihlásiť aj do inej skupiny"]
+
+  - pattern: "cancel a client / zrušiť klienta"
+    actual_entity: "Booking"
+    actual_action: "Cancel booking"
+    clarification: "Do you want to cancel the client's booking/registration?"
+    intent_keywords:
+      en: ["cancel client", "cancel the client", "remove client from class"]
+      sk: ["zrušiť klienta", "odstrániť klienta zo skupiny", "odhlásiť klienta"]
+
+  - pattern: "delete a client / vymazať klienta"
+    actual_entity: "Booking or Client"
+    actual_action: "Clarify"
+    clarification: >
+      Ask: 'Do you want to cancel the booking (remove from class) or permanently
+      delete the client record?' These are different actions.
+    intent_keywords:
+      en: ["delete client", "remove client", "delete the client"]
+      sk: ["vymazať klienta", "zmazať klienta", "odstrániť klienta"]
+
+  - pattern: "give a client a free session / dať klientovi termín zadarmo"
+    actual_entity: "Booking"
+    actual_action: "Free credits or Make-up session — clarify"
+    clarification: >
+      Ask: 'Is this a replacement for a missed session (make-up) or an extra
+      session as a gift/allowance (free credits)?' These are managed differently.
+    intent_keywords:
+      en: ["free session", "free lesson", "give free class", "complimentary session"]
+      sk: ["dať termín zadarmo", "bezplatný termín", "hodina zadarmo", "voľný termín"]
+
+  - pattern: "ai_rule"
+    actual_entity: "N/A"
+    actual_action: "N/A"
+    clarification: >
+      When a customer refers to 'client', 'child', 'attendee', or 'parent' in the
+      context of moving, copying, cancelling, or adding — the action almost always
+      applies to the Booking, not the Client entity.
+      Always confirm the intent before acting: restate the action using correct
+      entity terminology (booking/registration, not client/child).
+    intent_keywords: []
