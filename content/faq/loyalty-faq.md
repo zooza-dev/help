@@ -1,0 +1,168 @@
+---
+title: "Loyalty Program FAQ"
+slug: "loyalty-faq"
+type: "faq"
+product_area: "Payments"
+sub_area: ""
+audience: ["admin"]
+tags: ["loyalty", "sibling", "returning client", "referral", "discount", "faq"]
+status: "published"
+source_legacy_path: ""
+source_language: "en"
+needs_screenshot_replacement: false
+last_converted: "2026-03-14"
+---
+
+# Loyalty Program FAQ
+
+---
+
+## General
+
+**Is the loyalty program available to all Zooza companies?**
+Yes. The loyalty program is currently in beta and available to all companies. Some features are still being developed.
+
+**Do I need to enable all three loyalty models?**
+No. You can enable any combination — one, two, or all three. Each model is configured and activated independently.
+
+**Can I run the loyalty program alongside discount codes?**
+Yes. Loyalty discounts and manual discount codes are separate systems and can both be active at the same time. They do not interact — a client can use a discount code and also qualify for a loyalty discount.
+
+**When is the loyalty discount applied — before or after a discount code?**
+Loyalty discounts are applied first (before any discount codes or schedule discounts). The final price for the client reflects all applicable reductions.
+
+**Can I see all applied loyalty discounts in one place?**
+Yes. Go to **Sales & Payments → Loyalty Program → Activity**. See [Loyalty Activity Log](../guides/loyalty-activity-log.md).
+
+---
+
+## Identity and eligibility
+
+**How does Zooza identify a returning client or a family?**
+All loyalty models use the **parent's email address** as the identifier. The email is normalised (lowercased, trimmed) before matching. `Jana@example.com` and `jana@example.com` are treated as the same account.
+
+**What if a parent uses two different email addresses?**
+They are treated as two different people. Each email has its own booking history, so registrations under the second email do not count toward the first email's loyalty history.
+
+**Do trial and waitlist bookings count toward loyalty eligibility?**
+No. Only bookings with **Registered** status count. Trial, waitlist, and cancelled bookings are excluded from all loyalty calculations.
+
+**Is eligibility rechecked after the booking is made?**
+No. Eligibility is evaluated once at booking time and is not changed retroactively. If you update your rules later, existing bookings are unaffected.
+
+---
+
+## Sibling Discount
+
+**Does the first child ever receive a sibling discount?**
+No. The sibling discount starts from the second child. The first child always pays full price.
+
+**What counts as a "sibling"?**
+Any booking made under the same parent email address. The children do not need to share a name — the system identifies family members by the parent who booked them.
+
+**Does the loyalty discount apply when I create a registration manually in the admin panel?**
+No. Loyalty discounts are applied automatically only when a client books through the booking widget. For manually created registrations, use a payment plan with a built-in discount or a discount code as an alternative. See [Sibling Discount — applying discounts to manual registrations](../guides/loyalty-sibling-discount.md#applying-discounts-to-manual-registrations).
+
+**What if I only set a rule for the 2nd child — does it apply to the 3rd child too?**
+Yes. The highest applicable rule applies. If you have a 2nd-child rule (10%) and no 3rd-child rule, the 3rd child also receives 10% — the 2nd-child rule is the highest rule that applies to a 3rd child.
+
+**Can I limit the sibling discount to specific programmes?**
+Yes. Set the counting scope to **Per course** and select the programmes you want to include in the course picker.
+
+**What happens when I cancel a booking that was part of a sibling family group?**
+The discount record is retained on the booking after cancellation. No automatic discount adjustment or recalculation is made on related bookings — any manual follow-up is the admin's responsibility.
+
+**Can I have a discount for the 2nd child only, with nothing for 3rd or higher?**
+You can only define one discount value per child number threshold. If you want the 3rd-child and beyond to get the same discount as the 2nd child, create a single 2nd-child rule. If you want 3rd-child and beyond to get no discount, you would need to leave higher tiers unconfigured — but the 2nd-child rule will still apply to all subsequent children. There is currently no way to cap the sibling discount at a specific child number.
+
+---
+
+## Returning Client Discount
+
+**Does the client's current booking count as a "previous" booking?**
+No. Only bookings made before the current one are counted. The client needs at least one prior completed booking to qualify for the lowest tier.
+
+**Do previous bookings from a different programme count?**
+Yes. The eligibility check counts all previous bookings regardless of programme. The rule's programme list only determines whether the discount applies to the *current* booking.
+
+**I set a time gap of 90 days. My client booked last term (4 months ago). Do they qualify?**
+Yes. Their most recent qualifying booking is approximately 120 days ago, which is more than 90 days — they qualify.
+
+**Can I reward clients who have been with me for many years more than recent returnees?**
+Yes. Add multiple tiers within a rule (e.g., 1+ previous: 5%, 5+ previous: 10%, 10+ previous: 15%). Long-term clients will automatically move into higher tiers as their booking history grows.
+
+**Does a client who is currently registered (active this term) also qualify as a returning client?**
+By default, yes — any prior registered booking counts, including current active bookings. If you want to target only clients who have been away, enable the time gap setting and set an appropriate number of days.
+
+---
+
+## Referral Program
+
+**Where does a client find their referral link?**
+In the booking widget — specifically in the profile section of the widget on your website. The client sees their personal referral link with a copy button, plus a summary of their referrals so far.
+
+**Does the referral link work for any programme?**
+The link is tracked regardless of which programme the new client books. Whether a discount is applied depends on whether a matching referral rule exists for that programme.
+
+**What makes someone a "new client" for referral purposes?**
+A new client is someone with no previous bookings under the same email address. If a client has booked before (even if they cancelled), they do not qualify as a new referred client.
+
+**Can a client refer themselves with a different email address?**
+Self-referral using the same email is blocked. Using a completely different email is technically possible but not detectable by the system.
+
+**What happens if the referrer has reached the maximum reward limit?**
+They stop receiving new coupons, but the new client's discount still applies. The limit only affects the referrer's reward.
+
+**How does the referrer receive their coupon?**
+A coupon is generated automatically. Depending on your notification settings, the referrer may receive it by email.
+
+**If I change "who receives the discount" after rules exist, do I need to update the rules?**
+No. The recipient setting is the authoritative source. At evaluation time, the system uses the current recipient setting to decide which discount fields to apply. Existing rules are not retroactively updated but their unused fields are simply ignored.
+
+**Is the referral discount stackable with other loyalty discounts?**
+Yes, if you set the combination mode to **Allow discounts to stack** on the loyalty program overview page.
+
+---
+
+## Combination mode
+
+**What is the default combination mode?**
+**Apply only the highest-value discount**. When a client qualifies for multiple loyalty discounts, only the one worth the most money is applied.
+
+**When does the combination mode card appear?**
+The card appears automatically on the loyalty overview page when two or more models are enabled.
+
+**How is "highest value" calculated when combining discounts?**
+Each eligible discount is converted to a monetary amount based on the booking price. The one producing the largest deduction wins. If two discounts produce the exact same amount, the sibling discount takes priority over returning client, which takes priority over referral.
+
+**If I choose "Allow discounts to stack", are discounts calculated on top of each other (compounding)?**
+No. Each discount is calculated from the **original price**, not the already-reduced price. The individual discounts are then summed. For example: original price €200, sibling 10% (€20) + returning 15% (€30) = €50 total deduction, so the client pays €150.
+
+**Can the stacked total exceed the booking price?**
+No. The total deduction is capped at the booking price. The client pays at minimum €0.
+
+---
+
+## Payment plans and discounts
+
+**Does the loyalty discount apply to every payment in an instalment plan?**
+The discount is distributed proportionally across all scheduled payments. Each payment is reduced by its share of the total discount.
+
+**Does a membership client get the discount every month?**
+Yes. The discount is stored at the subscription level and applied to every billing cycle renewal for as long as the membership is active and the loyalty model is enabled.
+
+**What if I disable the loyalty model while a client is on an active membership with a discount?**
+Contact support if you need guidance on this edge case. The expected behaviour for mid-cycle changes is being documented.
+
+---
+
+## Future roadmap
+
+The loyalty program is actively being developed. Planned additions include:
+
+- **Loyalty badges** — visual indicators next to client names showing loyalty status (returning, loyal, family, referrer).
+- **Reporting and analytics** — summary dashboards showing the total value of discounts applied per model and over time.
+- **Discount milestones** — trigger a discount when a child finishes a programme level or achieves a milestone.
+- **Referral analytics** — detailed statistics on referral link usage and conversion.
+
+If you have feature requests or feedback, use the feedback option in the Zooza admin panel.

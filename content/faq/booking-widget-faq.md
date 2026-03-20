@@ -13,7 +13,7 @@ needs_screenshot_replacement: false
 last_converted: "2026-03-04"
 ---
 
-<!-- Synonyms: booking widget, registration form, booking form display, hide field booking form, widget customization, widget appearance, instructor not shown, instructor hidden, hide row widget, where are booking form settings, how to configure registration form, nastavení registračního formuláře, kde najdu formuláře, registrační formulář nastavení, kde nastavit registrační formulář, hogy tudom ezt a sort eltűntetni a regisztrációnál, oktató elrejtése regisztrációnál, oktató nem megadva regisztrációs form, registrációs urlap beállítás hol, registračný formulár zobrazenie, skryť pole registračný formulár, skryť inštruktora widget, ako vyzerá booking formulár pre klienta, kde sa nastavuje registračný formulár -->
+<!-- Synonyms: booking widget, registration form, booking form display, hide field booking form, widget customization, widget appearance, instructor not shown, instructor hidden, hide row widget, where are booking form settings, how to configure registration form, returning client booking form, person selection, select child booking form, pre-filled booking form, logged in booking, existing child booking, nastavení registračního formuláře, kde najdu formuláře, registrační formulář nastavení, kde nastavit registrační formulář, hogy tudom ezt a sort eltűntetni a regisztrációnál, oktató elrejtése regisztrációnál, oktató nem megadva regisztrációs form, registrációs urlap beállítás hol, registračný formulár zobrazenie, skryť pole registračný formulár, skryť inštruktora widget, ako vyzerá booking formulár pre klienta, kde sa nastavuje registračný formulár -->
 
 # Booking Widget FAQ
 
@@ -134,6 +134,30 @@ There are two separate currency concepts in Zooza:
 **Multi-currency display** — a separate per-programme feature that lets the booking form display prices in multiple currencies simultaneously (e.g. EUR, GBP, USD). Clients see all configured currencies and can choose their preferred one. This is configured in **Programmes → programme → Settings → Price and Payment → Additional currencies**.
 
 If you are asking about changing your primary account currency, that requires a support request. If you want to offer multiple currencies on the form alongside your primary one, use the Additional currencies setting.
+
+## Returning clients and person selection
+
+### My client says the booking form looks different now — why?
+
+Logged-in returning clients see an updated booking experience. When they open the form, a **person selection step** now appears before the main form. They can select a child or attendee from their previous bookings, or add a new person.
+
+Once a person is selected, the form pre-fills the attendee's details automatically. The buyer's (account holder's) email is pre-filled and locked — it cannot be changed while logged in.
+
+See [Booking widget experience for returning clients](../guides/returning-client-booking-widget.md) for a full explanation.
+
+### Can returning clients use the booking form without logging in?
+
+Yes. If a client does not log in, they see the standard form and fill in all details manually. The person selection step only appears for logged-in clients who have a booking history.
+
+### Why can't a logged-in client change their email on the form?
+
+The email is the key identifier used for invoicing, loyalty discounts, and booking history. Allowing it to change mid-booking would break the connection between the account and the booking record. If a client needs to book under a different email, they should log out and complete the booking as a new visitor.
+
+### Will the loyalty discount change when a logged-in client selects a different child?
+
+Yes. When the client selects a different person from the person selection list, the price is recalculated to reflect the correct loyalty discount tier for that child. For example, selecting a third child (rather than a second) may trigger a higher sibling discount tier automatically.
+
+---
 
 ## Can I translate or customise the text labels on the booking widget?
 
