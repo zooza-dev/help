@@ -71,7 +71,7 @@ For a full walkthrough of all pro-rata options, see [Late bookings (pro-rata man
 
 ## The payment template rounds my custom price down — how do I avoid this?
 
-Rounding is a setting on the **payment template** itself. It applies only when the template formula calculates the instalment amount (i.e., course price divided by number of instalments). The sequence is:
+Rounding is a setting on the **payment template** itself. It applies only when the template formula calculates the instalment amount (i.e., programme price divided by number of instalments). The sequence is:
 
 1. The system takes the programme/class price.
 2. It splits the amount according to the template rules (e.g., monthly instalments).

@@ -5,6 +5,7 @@ status: "draft"
 type: "reference"
 product_area: "Settings"
 audience: ["admin"]
+tags: []
 last_converted: "2026-03-13"
 ---
 
@@ -21,7 +22,7 @@ last_converted: "2026-03-13"
 - **Canonical** = the one correct term to use in all new content
 - **Admin / Client / Widget** = what each audience sees
 - **Deprecated** = old terms to replace when found in content
-- **AI keywords** = what customers actually type (for AI disambiguation)
+- **AI keywords** = what clients actually type (for AI disambiguation)
 
 ---
 
@@ -29,26 +30,26 @@ last_converted: "2026-03-13"
 
 People often name the wrong entity when describing an action. The AI must identify the **intended action** and **correct entity** from natural language.
 
-| What the customer says | What they actually mean | Correct entity | Action |
+| What the client says | What they actually mean | Correct entity | Action |
 |---|---|---|---|
 | "copy a client" | copy the client's booking to another class | Booking | Copy |
 | "kopírovať klienta" | kopírovať prihlásenie do inej skupiny | Booking | Copy |
 | "move a child / move my child" | move the registration to another class | Booking | Transfer |
 | "presunúť dieťa" | presunúť prihlásenie do inej skupiny | Booking | Transfer |
-| "move a client to another group" | transfer the booking | Booking | Transfer |
+| "move a client to another class" | transfer the booking | Booking | Transfer |
 | "prehodiť klienta do inej skupiny" | presunúť prihlásenie | Booking | Transfer |
 | "cancel a client" | cancel or end the client's booking | Booking | Cancel booking |
 | "zrušiť klienta" | zrušiť prihlásenie | Booking | Cancel booking |
 | "delete a client" | usually means end/cancel the booking, rarely actual client deletion | Booking (usually) | Clarify — ask if they mean cancel the booking or remove the client record |
-| "add a client to another group" | copy the booking to another class | Booking | Copy |
+| "add a client to another class" | copy the booking to another class | Booking | Copy |
 | "pridať klienta do inej skupiny" | kopírovať prihlásenie | Booking | Copy |
-| "enrol the child in two groups" | create two bookings (or copy one) | Booking | Copy / new Booking |
+| "enrol the child in two classes" | create two bookings (or copy one) | Booking | Copy / new Booking |
 | "move a session" | reschedule a session date | Session | Reschedule session |
 | "free session for a client" | grant free credits on a booking OR make-up session — clarify | Booking | Free credits or Make-up |
-| "give the client a free lesson" | grant free credits on booking | Booking | Free credits |
+| "give the client a free session" | grant free credits on booking | Booking | Free credits |
 
 ### AI rule
-> When a customer says "client", "child", "attendee", or "parent" in the context of
+> When a client says "client", "child", "attendee", or "parent" in the context of
 > moving, copying, cancelling, or adding — the action almost always applies to the
 > **Booking**, not the Client entity itself.
 > Always confirm: *"Do you want to [action] the registration/booking to [target]?"*
@@ -60,10 +61,10 @@ People often name the wrong entity when describing an action. The AI must identi
 ### Programme
 - **Canonical:** Programme
 - **Admin:** Programme | **Client/Widget:** Class
-- **Deprecated:** Course, Open course, One-time course
+- **Deprecated:** Programme, Open programme, One-time programme
 - **Definition:** Top-level container. Holds pricing, payment settings, booking form, and scheduling rules. One Programme contains multiple Classes.
 - **SK:** Program | **DE:** Programm / Kurs
-- **AI keywords (EN):** programme, program, course, activity
+- **AI keywords (EN):** programme, program, programme, activity
 - **AI keywords (SK):** program, kurz, aktivita, hodiny
 - **AI keywords (DE):** Programm, Kurs, Aktivität
 - **Note:** When domain = widget → displayed as "Class". Admin always uses "Programme".
@@ -73,10 +74,10 @@ People often name the wrong entity when describing an action. The AI must identi
 ### Class
 - **Canonical:** Class
 - **Admin:** Class | **Client/Widget:** Class
-- **Deprecated:** Group, Timetable, batch, track
-- **Definition:** Scheduled group within a Programme. Differentiated by day/time, level, or location. Inherits all Programme settings.
+- **Deprecated:** Class, Timetable, batch, track
+- **Definition:** Scheduled class within a Programme. Differentiated by day/time, level, or location. Inherits all Programme settings.
 - **SK:** Skupina / Lekcia | **DE:** Gruppe / Kurs
-- **AI keywords (EN):** class, group, timetable, schedule, my class, which group
+- **AI keywords (EN):** class, class, timetable, schedule, my class, which class
 - **AI keywords (SK):** skupina, trieda, hodina, rozvrh
 - **AI keywords (DE):** Klasse, Gruppe, Kurs, Stundenplan
 - **Note:** Used at two levels — (1) subdivision within a Programme (admin), and (2) top-level name for Programme in client/widget view.
@@ -87,10 +88,10 @@ People often name the wrong entity when describing an action. The AI must identi
 - **Canonical:** Session
 - **Admin/Client/Widget:** Session
 - **Deprecated:** slot, appointment, date, time slot
-- **Synonyms:** lesson, class session
+- **Synonyms:** session, class session
 - **Definition:** Single scheduled meeting within a Class, with specific date and time. Attendance recorded at session level.
 - **SK:** Termín / Hodina | **DE:** Termin / Stunde / Einheit
-- **AI keywords (EN):** session, lesson, slot, time, date, class date, next session
+- **AI keywords (EN):** session, session, slot, time, date, class date, next session
 - **AI keywords (SK):** termín, hodina, lekcia, dátum, čas
 - **AI keywords (DE):** Termin, Stunde, Einheit, Datum
 
@@ -100,7 +101,7 @@ People often name the wrong entity when describing an action. The AI must identi
 
 ### Pay-as-you-go
 - **Canonical:** Pay-as-you-go
-- **Deprecated:** Open course, Open registration, drop-in, flexible
+- **Deprecated:** Open programme, Open registration, drop-in, flexible
 - **Synonyms:** PAYG, per-session, drop-in
 - **Definition:** Flexible programme. Clients book and pay for individual sessions. No full-term commitment.
 - **SK:** Platba za termín / Otvorený kurz | **DE:** Pay-as-you-go / Einzelbuchung
@@ -112,7 +113,7 @@ People often name the wrong entity when describing an action. The AI must identi
 
 ### One-off Event
 - **Canonical:** One-off Event
-- **Deprecated:** One-time course, Registration for one session, single session event
+- **Deprecated:** One-time programme, Registration for one session, single session event
 - **Synonyms:** workshop, event, one-time event
 - **Definition:** Single session on a specific date. No repeating schedule. For workshops, lectures, consultations.
 - **SK:** Jednorazová udalosť | **DE:** Einzelveranstaltung / Einmaliger Kurs
@@ -136,11 +137,11 @@ People often name the wrong entity when describing an action. The AI must identi
 ### 1-to-1 class
 - **Canonical:** 1-to-1 class
 - **Admin:** 1-to-1 class | **Client/Widget:** Private class
-- **Deprecated:** Individual class, individual session, private lesson
-- **Synonyms:** private class, individual lesson
+- **Deprecated:** Individual class, individual session, private session
+- **Synonyms:** private class, individual session
 - **Definition:** Class with a single attendee. Admin sees "1-to-1 class"; clients see "Private class".
 - **SK:** Individuálna hodina / Súkromná hodina | **DE:** Einzelstunde / Privatstunde
-- **AI keywords (EN):** 1 to 1, one to one, private, individual, private class, private lesson
+- **AI keywords (EN):** 1 to 1, one to one, private, individual, private class, private session
 - **AI keywords (SK):** individuálna hodina, súkromná hodina, privát
 - **AI keywords (DE):** Einzelstunde, Privatstunde, Einzelunterricht
 
@@ -158,18 +159,18 @@ People often name the wrong entity when describing an action. The AI must identi
 - **AI keywords (SK):** prihlásenie, prihláška, zápis, registrácia, prihlásiť
 - **AI keywords (DE):** Buchung, Anmeldung, einschreiben, buchen, anmelden
 - **Do not confuse with:** Transfer (moves a booking), Copy (duplicates a booking)
-- **AI note:** Transfer and Copy apply to the Booking entity — not to the Client. If customer says "move my child" → clarify: "Do you want to move the registration to another class?"
+- **AI note:** Transfer and Copy apply to the Booking entity — not to the Client. If client says "move my child" → clarify: "Do you want to move the registration to another class?"
 
 ---
 
 ### Transfer
 - **Canonical:** Transfer
-- **Deprecated:** move booking, switch group, change class, relocate
+- **Deprecated:** move booking, switch class, change class, relocate
 - **Synonyms:** move, switch
-- **Definition:** Move a booking from one Class/Group/Programme to another. Original booking ends; new booking created in target Class.
+- **Definition:** Move a booking from one Class/Class/Programme to another. Original booking ends; new booking created in target Class.
 - **SK:** Presunúť / Prehodiť | **DE:** Verschieben / Wechseln
 - **AI intent keywords:**
-  - EN: transfer, move, switch, change group, change class, move to another, switch class
+  - EN: transfer, move, switch, change class, change class, move to another, switch class
   - SK: presunúť, prehodiť, zmeniť skupinu, presun, premiestiť, iná skupina
   - DE: verschieben, wechseln, umbuchen, in andere Gruppe, Gruppenänderung
   - PL: przenieść, zmienić grupę, przeniesienie
@@ -185,7 +186,7 @@ People often name the wrong entity when describing an action. The AI must identi
 - **Canonical:** Copy
 - **Deprecated:** duplicate booking, clone
 - **Synonyms:** duplicate, clone
-- **Definition:** Duplicate a booking to another Class/Group/Programme. Original booking remains unchanged. Payment schedules do NOT carry over.
+- **Definition:** Duplicate a booking to another Class/Class/Programme. Original booking remains unchanged. Payment schedules do NOT carry over.
 - **SK:** Kopírovať / Zduplikovať | **DE:** Kopieren / Duplizieren
 - **AI intent keywords:**
   - EN: copy, duplicate, clone, also enrol in, add to another class, copy booking
@@ -217,7 +218,7 @@ People often name the wrong entity when describing an action. The AI must identi
 
 ### Client
 - **Canonical:** Client
-- **Deprecated (as generic replacements):** parent, customer, account holder
+- **Deprecated (as generic replacements):** parent, client, account holder
 - **Synonyms:** parent (acceptable in family context)
 - **Definition:** Person who holds the account, pays, and manages bookings. Unique identifier = email address.
 - **SK:** Klient / Zákazník | **DE:** Kunde / Klient
@@ -238,9 +239,9 @@ People often name the wrong entity when describing an action. The AI must identi
 
 ### Make-up session
 - **Canonical:** Make-up session
-- **Deprecated:** Replacement session, replacement lessons, catch-up session, substitute session
-- **Synonyms:** replacement session, catch-up
-- **Definition:** Replacement session earned by cancelling a scheduled session in advance (before deadline). Make-up credit generated automatically.
+- **Deprecated:** Make-up session, make-up session, make-up sessions, substitute session
+- **Synonyms:** make-up session, catch-up
+- **Definition:** Make-up session earned by cancelling a scheduled session in advance (before deadline). Make-up credit generated automatically.
 - **SK:** Náhradná hodina | **DE:** Ersatzstunde / Ersatztermin / Nachholtermin
 - **AI keywords (EN):** make-up, makeup, replacement, catch up, missed session, attend another, reschedule
 - **AI keywords (SK):** náhradná hodina, náhrada, zmeškané, náhradný termín, preložiť hodinu
@@ -268,7 +269,7 @@ People often name the wrong entity when describing an action. The AI must identi
 - **Definition:** Session that counts toward total used for price calculation in Programme/Class settings. This is a **pricing tool only** — not an attendance feature.
 - **SK:** Spoplatnený termín | **DE:** Abrechenbare Stunde
 - **Do not confuse with:** Make-up session, Free credits
-- **AI note:** Only discuss billable sessions when customer explicitly asks about pricing calculation settings. Never mention in response to attendance or make-up questions.
+- **AI note:** Only discuss billable sessions when client explicitly asks about pricing calculation settings. Never mention in response to attendance or make-up questions.
 
 ---
 
@@ -287,7 +288,7 @@ People often name the wrong entity when describing an action. The AI must identi
 
 ### Term Payment
 - **Canonical:** Term Payment
-- **Deprecated:** Course fee
+- **Deprecated:** Programme fee
 - **Definition:** Payment covering a specific term or billing period.
 - **SK:** Platba za semester | **DE:** Kursbeitrag / Semesterbeitrag
 
@@ -342,8 +343,8 @@ People often name the wrong entity when describing an action. The AI must identi
 
 ### Client Profile
 - **Canonical:** Client Profile
-- **Deprecated:** parent portal, customer portal, client portal
-- **Synonyms:** client portal, parent portal (family context)
+- **Deprecated:** Client Profile, client portal, client portal
+- **Synonyms:** client portal, Client Profile (family context)
 - **Definition:** Self-service dashboard for clients. Manage bookings, payments, family members. Email-link access (no password).
 - **SK:** Profil klienta | **DE:** Kundenprofil / Kundenbereich
 
@@ -351,7 +352,7 @@ People often name the wrong entity when describing an action. The AI must identi
 
 ### Feedback
 - **Canonical:** Feedback
-- **Deprecated:** Course feedback
+- **Deprecated:** Programme feedback
 - **Synonyms:** review, rating
 - **Definition:** Structured feedback collected from clients after sessions or end of programme.
 - **SK:** Spätná väzba / Hodnotenie | **DE:** Feedback / Bewertung
@@ -362,11 +363,11 @@ People often name the wrong entity when describing an action. The AI must identi
 
 | Old term | Use instead |
 |---|---|
-| Course | Programme (admin) / Class (client) |
-| Course fee | Term Payment |
-| Course feedback | Feedback |
-| Open course | Pay-as-you-go |
-| One-time course | One-off Event |
+| Programme | Programme (admin) / Class (client) |
+| Programme fee | Term Payment |
+| Programme feedback | Feedback |
+| Open programme | Pay-as-you-go |
+| One-time programme | One-off Event |
 | Registration for one session | One-off Event |
 | Open registration | Pay-as-you-go |
 | Registration | Booking (admin) / Enrolment (client) |
@@ -378,9 +379,9 @@ People often name the wrong entity when describing an action. The AI must identi
 | Location | Venue |
 | Variable symbol | Reference number |
 | Individual Class | 1-to-1 class (admin) / Private class (client) |
-| Group | Class |
+| Class | Class |
 | Timetable | Class |
-| Replacement session | Make-up session |
+| Make-up session | Make-up session |
 | Free sessions | Make-up session OR Free credits (clarify context) |
 | Parent portal | Client Profile |
-| Customer portal | Client Profile |
+| Client portal | Client Profile |

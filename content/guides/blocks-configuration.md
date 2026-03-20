@@ -103,7 +103,7 @@ Disable the "enrol for the entire class period" option in your programme's onlin
 
 ### Capacity display in the booking form
 
-The registration form may display capacity based on the class as a whole rather than per block. This can confuse clients -- for example, showing "3/12" when those 3 clients are spread across different blocks. A technical update was deployed in early 2026 so that when blocks are configured, the booking form and calendar tile display per-block capacity instead of group-wide capacity.
+The booking form may display capacity based on the class as a whole rather than per block. This can confuse clients -- for example, showing "3/12" when those 3 clients are spread across different blocks. A technical update was deployed in early 2026 so that when blocks are configured, the booking form and calendar tile display per-block capacity instead of class-wide capacity.
 
 <!-- REVIEW: Confirm that the per-block capacity display fix (deployed ~Feb 2026) is stable and applies to all widget types (calendar, schedule, registration form). -->
 
@@ -116,7 +116,7 @@ When trial sessions and blocks are used on the same class, a capacity conflict c
 In practice this means:
 
 1. Trial bookings may temporarily fill session capacity.
-2. A paying client can still enrol for the full course or a specific block.
+2. A paying client can still enrol for the full programme or a specific block.
 3. The system prioritises the paying client, even if this causes temporary over-capacity.
 
 **Workaround:** Configure trial bookings to use **extra capacity** only (in the programme's trial session settings at **Programme -> Settings -> Trial**). This ensures trials do not consume spots reserved for paying clients.
@@ -187,7 +187,7 @@ The booking form may show overall class capacity (e.g. "8/12") rather than per-b
 
 5. **Check block occupancy in the class detail** before and after peak registration periods. Block-level statistics were added in early 2026.
 
-6. **Avoid combining trials with blocks on the same class** unless you configure trials to use extra capacity. The capacity conflict between group-wide trial reservations and per-block limits is the most common source of over-capacity issues.
+6. **Avoid combining trials with blocks on the same class** unless you configure trials to use extra capacity. The capacity conflict between class-wide trial reservations and per-block limits is the most common source of over-capacity issues.
 
 7. **Export attendance before changing a client's block** if you need to preserve the attendance history for reporting or verification.
 

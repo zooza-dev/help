@@ -39,7 +39,7 @@ The attendance table records a detailed history of each participant’s attendan
 Tip: To assemble a complete view of each participant’s journey, join Attendance with table Bookings, Schedules, Programmes or Sessions.
 
 
-## Courses
+## Programmes
 
 The Programmes table serves as the central repository for all programme configurations and options. Each record represents a distinct programme and is identified by a unique id, which can be used to link to related tables (e.g., Schedules, Bookings, Sessions, Attendance). Key columns include information from tiles in the application:
 

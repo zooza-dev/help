@@ -47,9 +47,9 @@ See [Creating a booking](../guides/creating-a-booking.md) for step-by-step instr
 
 > **Note:** Trial bookings cannot be created manually by an admin. Only standard enrolments and manual registrations.
 
-## How do I create a demo or test group?
+## How do I create a demo or test class?
 
-A demo group is useful when you want to test the full booking flow before going live, or show a potential client or team member how Zooza works without affecting real data.
+A demo class is useful when you want to test the full booking flow before going live, or show a potential client or team member how Zooza works without affecting real data.
 
 1. Go to **Programmes** → create a new programme (e.g., name it "Demo" or "Test").
 2. Add a class with a session or two.

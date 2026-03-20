@@ -128,7 +128,7 @@ Clients who are on the waiting list or registered in other sessions of the same 
 
 <!-- REVIEW: Confirm the exact UI flow for cancelling a single session and the notification prompt options. The steps above are based on standard session management patterns described in support conversations. -->
 
-## Sessions disappeared from my course. What happened?
+## Sessions disappeared from my programme. What happened?
 
 If sessions vanished unexpectedly, the most common cause is **holiday auto-skip**. When sessions were initially created with the **Skip Holidays** or **Skip School Breaks** option enabled, any dates that fall within the configured holiday or break window are excluded automatically.
 

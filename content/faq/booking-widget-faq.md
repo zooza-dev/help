@@ -74,6 +74,22 @@ For a full overview of each level, see [Booking form settings overview](../guide
 
 Yes, at the programme level. Go to **Programmes** → open the programme → **Online Booking → Edit** → scroll to **Customizing Booking Form**. You can enter a custom label for each standard field (Note, Name, Surname, Email address, Phone). You can also show or hide individual fields using the eye icon next to each one.
 
+## Can I hide the instructor/provider row on the booking form?
+
+No. There is no setting to hide the instructor (provider) row from the booking form. It is always shown as part of the session details.
+
+If you do not want a specific instructor name to appear, the only option is to leave the instructor field blank on the class or session. In that case, the form will show "No instructor assigned" (or equivalent) instead of a name, but the row itself cannot be removed entirely.
+
+If this is important for your setup, submit a feature request to the Zooza team.
+
+## Can I hide the booking fee (registration fee) row on the booking form?
+
+The booking fee row only appears if a booking fee is set on the programme. If you do not want it to appear:
+
+- Go to **Programmes** → open the programme → **Settings → Price and Payment** and clear the booking fee or set it to 0. The row will no longer appear on the form.
+
+If you need to keep the booking fee active but still hide the row from the visible form, this is not configurable in the app. It can be hidden via custom CSS or a script on your website — see [Customizing widgets](../guides/customizing-widgets.md).
+
 ## Can I hide the discount code field from the booking form?
 
 Yes. Go to **Team & Settings → Publish** → click your widget → **Configure** next to Booking form → check **Hide field for discount codes**. This removes the discount code input for all programmes in that widget.
@@ -108,3 +124,26 @@ The three options are:
 
 This setting applies to all programmes shown in that widget.
 ![Screenshot — booking widget faq](../../assets/images/booking-widget-faq-02.png)
+
+## Can I change the currency on the booking form?
+
+There are two separate currency concepts in Zooza:
+
+**Account currency** — set at the account level based on your country. If your currency is not available (e.g. ZAR — South African Rand), contact the Zooza team at support@zooza.online and request it be added. Zooza supports any country and currency, but not all may be pre-configured.
+
+**Multi-currency display** — a separate per-programme feature that lets the booking form display prices in multiple currencies simultaneously (e.g. EUR, GBP, USD). Clients see all configured currencies and can choose their preferred one. This is configured in **Programmes → programme → Settings → Price and Payment → Additional currencies**.
+
+If you are asking about changing your primary account currency, that requires a support request. If you want to offer multiple currencies on the form alongside your primary one, use the Additional currencies setting.
+
+## Can I translate or customise the text labels on the booking widget?
+
+Some fields can be relabelled directly in the programme settings — go to **Programmes → programme → Online Booking → Edit → Customizing Booking Form**.
+
+For more advanced customisation (translations, styling, CSS, JavaScript options), refer to the [Zooza developer documentation at docs.zooza.online](https://docs.zooza.online). The docs cover:
+
+- Custom translations via `window.ZOOZA = { translations: { 'key': 'value' } }`
+- How to find translation keys using `print_debug: true` mode
+- CSS and styling options for the embedded and WordPress plugin versions
+- Filtering programmes and other embed parameters
+
+Widget styling is handled on your website side (by your webmaster or developer) — it is not configurable from within the Zooza application itself.

@@ -37,7 +37,7 @@ Yes. When a class reaches full capacity, the waiting list option is automaticall
 
 ## Is there a waiting list for replacement (make-up) sessions?
 
-Yes, but it is a separate system from the booking waiting list. Replacement sessions have their own queue. When all available replacement slots for a session are full, clients can join the queue for one or more sessions. When a spot opens up, the client receives a notification with a confirmation link. Only after the client clicks the link is the replacement booking confirmed.
+Yes, but it is a separate system from the booking waiting list. Make-up session have their own queue. When all available replacement slots for a session are full, clients can join the queue for one or more sessions. When a spot opens up, the client receives a notification with a confirmation link. Only after the client clicks the link is the replacement booking confirmed.
 
 This is a fully automated process. To enable or disable the replacement waiting list, go to the programme settings and open the replacement (make-up) session settings. For example: **Programmes** → select a programme → **Settings** → **Make-up sessions** → **Make-up sessions waitlist**. <!-- REVIEW: verify exact setting label in current UI -->
 

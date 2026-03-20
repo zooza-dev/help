@@ -76,7 +76,7 @@ Zooza has two types of templates, and finding the right one can be confusing:
 
 - Custom templates you create for your specific communication needs.
 - Found under a separate **User templates** section in the template selector when sending emails.
-- You can assign user templates to specific courses or programmes.
+- You can assign user templates to specific programmes or programmes.
 
 ### Where to find each type when sending an email
 

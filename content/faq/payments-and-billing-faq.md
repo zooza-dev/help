@@ -15,6 +15,33 @@ last_converted: "2026-02-13"
 
 # Payments and Billing FAQ
 
+## Where do I find invoices?
+
+There are two different types of invoices in the Zooza context:
+
+**Client invoices** — invoices generated for your clients (for their bookings):
+Go to **Sales & Payments** → **Invoices**. You can filter by date, search by client, and download individual invoices or the full batch as a ZIP.
+
+**Zooza subscription invoices** — invoices for your own Zooza subscription (what you pay Zooza):
+Go to **Settings** → **Subscription** → **Manage subscription** → **Details** → **Invoices**. This opens the billing portal where past invoices can be downloaded.
+
+## How do I resend an invoice to a client?
+
+When you generate an invoice, it is automatically emailed to the client. If you need to resend it (for example, after making a correction):
+
+1. Open the booking.
+2. Click the pencil icon next to the invoice.
+3. Check **Send invoice to client via email**.
+4. Save.
+
+The updated invoice is sent to the client's email address on record.
+
+## How do I download all invoices at once?
+
+Go to **Sales & Payments** → **Invoices**. Apply any filters you need (date range, etc.), then click **Download all**. This downloads all filtered invoices as a single ZIP file.
+
+For bulk XML export or API-based access, use the Zooza API (`GET /v1/customer_invoices` and `GET /v1/customer_invoices/download`). Contact support or see the developer documentation for details.
+
 ## What does a negative balance mean on a booking?
 
 The balance shows the difference between what the client should pay and what they actually paid.

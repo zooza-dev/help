@@ -33,6 +33,18 @@ Assigning an instructor at the timetable level applies to future sessions. For e
 2. Select the sessions you want to change.
 3. Use bulk edit to assign the instructor.
 
+## I changed the venue (or instructor) on a class but it still shows the old value on sessions — why?
+
+When you save a change to a class setting (venue, instructor, etc.), Zooza asks how to apply the change:
+
+- **Change for a class only (sessions will not change)** — the class record updates, but existing sessions are not affected.
+- **Change for all sessions** — applies the update to every session in the class.
+- **Change only for upcoming sessions** — applies the update to sessions that have not yet taken place.
+
+If you chose **Change for a class only**, your sessions keep the old value. This is the most common reason a setting appears unchanged on individual sessions.
+
+**To fix it:** Go back to the class settings, make the change again, and this time select **Change for all sessions** or **Change only for upcoming sessions**.
+
 ## How do I change the time of a class?
 
 You cannot change the time directly in the timetable settings for existing sessions. Instead:
@@ -57,7 +69,7 @@ No. Zooza does not have a merge function. Sessions cannot be shared between clas
 
 **Workaround — reschedule sessions to the same time:**
 
-If you want clients from both classes to attend together (e.g., two small groups you want to run at the same time), reschedule the sessions of one class to match the time of the other:
+If you want clients from both classes to attend together (e.g., two small classes you want to run at the same time), reschedule the sessions of one class to match the time of the other:
 
 1. Open the class you want to align.
 2. Select all sessions.
@@ -89,7 +101,7 @@ If you need to adjust individual sessions later (e.g. cancel one, change a time)
 
 ## What is the difference between a Fixed Period class and a Lead Collection class?
 
-A **Fixed Period** class has scheduled sessions with specific dates and times — this is the standard class type for courses, terms, and camps. A **Lead Collection** class has no sessions initially — it is used to collect interest from potential clients before you finalise the schedule. Once you add sessions to a lead collection class, it becomes a regular fixed period class. See [Lead collection](../guides/lead-collection.md) for details.
+A **Fixed Period** class has scheduled sessions with specific dates and times — this is the standard class type for programmes, terms, and camps. A **Lead Collection** class has no sessions initially — it is used to collect interest from potential clients before you finalise the schedule. Once you add sessions to a lead collection class, it becomes a regular fixed period class. See [Lead collection](../guides/lead-collection.md) for details.
 
 ## Can I set a different price for each class in the same programme?
 
@@ -111,7 +123,7 @@ In the class settings, you can toggle visibility for the online booking form. Th
 
 Zooza uses browser caching to speed up page loading. When you create or edit something (like a location or class), the change may take a moment to appear. A quick browser refresh (Cmd+R on Mac, Ctrl+R on Windows) usually resolves this.
 
-## Where can I find an archived class (group)?
+## Where can I find an archived class (class)?
 
 Go to **Activities** → **Classes** and set the **Status** filter to **Archived**. This shows all classes that have been archived, across all programmes.
 
@@ -138,17 +150,51 @@ See [Programme settings tile — Archiving a programme](../guides/programme-sett
 
 If you need to permanently remove a programme that has **no bookings and no classes**, contact Zooza support with the programme ID (visible in the URL, e.g. `#courses/6455`).
 
-## How do I bulk-delete courses that have no bookings or classes?
+## Is there an undo button in Zooza?
 
-Admins cannot bulk-delete courses directly from the application interface. To delete courses that have no registrations or classes (groups), you must send a list of course IDs to Zooza support, who will remove them from the database on your behalf.
+No. Zooza does not have a general undo or revision history feature. Changes take effect immediately and cannot be automatically reversed.
+
+To fix a mistake, you need to manually redo the correct action (e.g., bulk edit sessions back to the correct time, restore an archived item, re-enter a payment adjustment).
+
+## I changed the time on one session but it changed on many (or all) sessions — how do I fix it?
+
+This happens when the edit was applied using **Bulk Edit** — which updates all selected sessions at once — rather than editing a single session inline.
+
+There is no undo button in Zooza. To fix it:
+
+1. Go to **Activities → Sessions** and use the filters (Programme, Day, from/to date) to find the affected sessions.
+2. Check **Choose all** or select individual sessions, then click **Bulk edit**.
+3. Tick **Edit date and time**.
+4. Under **Time adjusting options**, choose **Set new time for all selected sessions** and enter the correct time.
+5. Optionally tick **Notify clients about changes** to send them a session-change email.
+6. Click **Continue**, then confirm.
+
+Clients will only be notified if you tick the notification checkbox in step 5.
+
+For full bulk edit instructions, see [Editing sessions in a class](../guides/edit-sessions-in-programmes.md).
+
+## How do I bulk-delete programmes that have no bookings or classes?
+
+Admins cannot bulk-delete programmes directly from the application interface. To delete programmes that have no registrations or classes (classes), you must send a list of programme IDs to Zooza support, who will remove them from the database on your behalf.
 
 Before requesting deletion:
 
-1. Verify that each course has **no active registrations** and **no groups** attached.
-2. If a course still contains groups with historical registrations you want to preserve, move those groups to an archive course first (via group settings — change the programme).
-3. Compile the course IDs (visible in the URL when viewing a course, e.g., `#courses/6455`) and send them to support.
+1. Verify that each programme has **no active registrations** and **no classes** attached.
+2. If a programme still contains classes with historical registrations you want to preserve, move those classes to an archive programme first (via class settings — change the programme).
+3. Compile the programme IDs (visible in the URL when viewing a programme, e.g., `#courses/6455`) and send them to support.
 
-Courses that still contain registrations or groups cannot be deleted — they must be archived instead. <!-- REVIEW: confirm whether self-service course deletion is planned -->
+Programmes that still contain registrations or classes cannot be deleted — they must be archived instead. <!-- REVIEW: confirm whether self-service course deletion is planned -->
+
+## The calendar is not showing all my classes — why?
+
+This is almost always a browser caching issue, not a data problem. No classes have been lost.
+
+Do a hard browser refresh to force the page to reload with current data:
+
+- **Mac:** Cmd+R or Cmd+Shift+R
+- **Windows/Linux:** Ctrl+R, Ctrl+F5, or F5
+
+If the calendar still shows incorrect data after a hard refresh, contact support.
 
 ## After rescheduling sessions, holiday-skip rules no longer apply — why?
 
@@ -160,7 +206,7 @@ This means sessions may land on public holidays or school vacation days after re
 
 1. Open the class detail and review all rescheduled sessions.
 2. Manually cancel or remove any sessions that fall on holidays or vacation days.
-3. Add replacement sessions on valid dates if needed to maintain the correct total count.
+3. Add make-up session on valid dates if needed to maintain the correct total count.
 
 The system displays a warning when you perform a bulk reschedule, reminding you to check the resulting dates. The admin who performs the change is responsible for verifying that the new session dates are correct.
 
@@ -180,10 +226,10 @@ Each colour in the picker has a label and a short description. The label is also
 | Type | Use when |
 |---|---|
 | **One-off event** | The programme consists of a single session on a specific date (workshop, lecture, open day). |
-| **Booking for full programme duration** | Clients sign up for a set of sessions and attend the full term or course. |
+| **Booking for full programme duration** | Clients sign up for a set of sessions and attend the full term or programme. |
 | **Pay-as-you-go** | Clients enrol once and then choose which individual sessions to attend, paying per session. |
 
-If you are unsure, most ongoing group programmes (weekly classes, term courses) use **Booking for full programme duration**.
+If you are unsure, most ongoing class programmes (weekly classes, term programmes) use **Booking for full programme duration**.
 
 ## Can I change the programme type after creating it?
 
@@ -192,7 +238,7 @@ Yes. Go to the programme settings and change the type. Be aware that changing th
 ## What is the difference between Group classes and 1-to-1?
 
 - **Group classes** — multiple clients attend the same session together. Capacity applies per session.
-- **1-to-1** — each session is with one client only (private lessons, personal training, individual consultations). Capacity is automatically set to 1 per session.
+- **1-to-1** — each session is with one client only (private sessions, personal training, individual consultations). Capacity is automatically set to 1 per session.
 
 ## What does the "For children" toggle do?
 

@@ -99,3 +99,9 @@ Zooza creates a new consent version. The updated text applies to new bookings fr
 ## Can I add multiple consents?
 
 Yes. Click **Add** in **Settings → Consents & Agreements** to add as many consents as needed. Each one is configured and displayed independently. If you need the same consent to appear on both the booking form and the order form, create two separate entries — one for each form type.
+
+## Can I change the "I agree / I don't agree" label text on consent choices?
+
+Not through the Zooza admin app. The button/radio label text is rendered by the booking widget and is not configurable via the Settings UI.
+
+It can be overridden via a custom JavaScript translation script on your website — this is the same mechanism used to customise any other widget text. See the widget translations reference at docs.zooza.online for the available translation keys.

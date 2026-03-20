@@ -57,7 +57,7 @@ After saving, you can **Add** another link, **Edit**, or **Delete** existing lin
 
 ## Multiple links within one programme
 
-You can create multiple separate links within the same programme. This lets you class classes in different combinations. For example:
+You can create multiple separate links within the same programme. This lets you link classes in different combinations. For example:
 
 - Link A: Kickbox Monday + Kickbox Wednesday (same discipline, different days)
 - Link B: All classes (full studio access)

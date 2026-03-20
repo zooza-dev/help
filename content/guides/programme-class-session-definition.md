@@ -36,7 +36,7 @@ These are flexible programmes where clients enrol once and then choose which ses
 
 ## Classes
 
-Depending on the type of course, the creation of classes differs in only one detail: for ongoing and Pay-as-you-go programmes, it is possible to enter multiple dates, while for one-off programmes, it is possible to enter only one date.
+Depending on the type of programme, the creation of classes differs in only one detail: for ongoing and Pay-as-you-go programmes, it is possible to enter multiple dates, while for one-off programmes, it is possible to enter only one date.
 There is no limit to the number of dates in the ongoing and Pay-as-you-go programmes. So you can make two, but you can also make two hundred. How to create a class can be found in the [Creating a class](creating-a-class.md) guide.
 
 ## Classes and sessions

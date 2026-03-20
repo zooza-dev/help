@@ -44,7 +44,7 @@ A client is considered **active** if any of the following conditions is true:
 
 - They have at least one **scheduled make-up session**.
 
-- They have **unused credit** (remaining prepaid entries or lessons that have not been used yet).
+- They have **unused credit** (remaining prepaid entries or sessions that have not been used yet).
 
 > **Important:** A client becomes active as soon as any of these conditions is met. Active status does not depend on the programme or timetable being active. If you create a programme for January and a client registers in December, that client counts as active from December — before the programme starts.
 

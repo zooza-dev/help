@@ -65,11 +65,11 @@ For full-duration programmes, you first choose how to collect payments:
 If you choose **scheduled payments**, you must also select the **price type**:
 ![Screenshot — price and payment setup](../../assets/images/price-and-payment-setup-03.png)
 
-### Course fee vs Membership
+### Programme fee vs Membership
 
 | Price type     | How it works                                                                                                                                                 | Best for                                                                                                       |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
-| **Course fee** | A fixed total price split into scheduled payments by the payment template. The client knows the full price upfront. Price = unit price x number of sessions. | Term-based programmes with a fixed start and end date (language courses, swimming terms, dance terms).         |
+| **Programme fee** | A fixed total price split into scheduled payments by the payment template. The client knows the full price upfront. Price = unit price x number of sessions. | Term-based programmes with a fixed start and end date (language programmes, swimming terms, dance terms).         |
 | **Membership** | A fixed recurring amount charged at a regular interval (e.g., monthly), regardless of how many sessions the client attends. No total price is calculated.    | Ongoing programmes with no fixed end date (football clubs, gyms, martial arts, "Netflix-style" subscriptions). |
 
 **Key differences:**
@@ -199,7 +199,7 @@ Click **Change** to open the reminders configuration. For detailed setup instruc
 | Booking fee | Yes | Yes | Yes | Yes |
 | Down payment | — | Yes | Yes | Yes |
 | Payment frequency | — | — | — | Yes |
-| Billable sessions | — | — | — | Course fee only |
+| Billable sessions | — | — | — | Programme fee only |
 | Late bookings | — | — | Yes | Yes |
 | Payments managed by registrant | — | Yes | Yes | Yes |
 

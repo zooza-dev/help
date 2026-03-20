@@ -30,7 +30,7 @@ The **Late bookings** setting controls whether clients can register after the cl
 
 | Mode | What happens |
 |---|---|
-| **Disabled** | Clients cannot book after the class has started. The class does not appear in the registration form once it has begun. |
+| **Disabled** | Clients cannot book after the class has started. The class does not appear in the booking form once it has begun. |
 | **Manual confirmation required** | The client can register, but the booking goes to a waiting state. The admin receives a notification, reviews the booking, and manually approves or declines it. |
 | **Automatically confirmed** | The booking is approved instantly. The price is calculated according to the aliquot settings below. The client receives a confirmation email as with any regular booking. |
 
@@ -157,7 +157,7 @@ For **automatically confirmed** late bookings, the payment schedule is applied a
 
 ## Common scenarios
 
-### "Our courses are yearly prices paid in two scheduled payments. Students often join mid-year."
+### "Our programmes are yearly prices paid in two scheduled payments. Students often join mid-year."
 
 Set up:
 

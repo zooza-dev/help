@@ -96,7 +96,7 @@ If the bank account is not paired, you will see a notice:
 
 > "The bank account on this profile is not paired via GoCardless, which means that unless you use another type of matching, Zooza will not be able to automatically match payments made by your clients' bank transfers."
 
-For GoCardless setup details, see [GoCardless Integration FAQ](../faq/gocardless-integration-faq.md).
+For GoCardless setup details, see [GoCardless Integration FAQ](../faq/gocardless-faq.md).
 
 ## Additional billing profiles
 
@@ -160,7 +160,7 @@ After an invoice is generated, you can edit it by clicking the pencil icon next 
 - **Invoice date** — the date printed on the invoice.
 - **Payment method** — how the client paid (e.g., Transfer payment, Cash, Card).
 - **Use default item description** — uncheck to write a custom description.
-- **Send invoice to customer via email** — check to re-send the updated invoice.
+- **Send invoice to client via email** — check to re-send the updated invoice.
 - **Item description** — custom text for the invoice line item (e.g., the programme name or a custom note).
 
 > **Note:** Editing an invoice does not change the underlying payment. It only changes what appears on the invoice document.
@@ -180,4 +180,4 @@ For the invoice item description, you can use dynamic tags to automatically inse
 - [GoCardless Integration FAQ](../faq/gocardless-faq.md) — setting up GoCardless and email-notification payment matching.
 - [Email-notification payment matching](../setup/email-payment-notifications.md) — faster alternative to GoCardless, no 90-day renewal.
 - [Xero Integration](../setup/xero-integration.md) — connecting Zooza with Xero for invoicing.
-- [VAT management](../setup/vat-management.md) — configuring VAT rates and rules.
+- [VAT management](../guides/vat-management.md) — configuring VAT rates and rules.

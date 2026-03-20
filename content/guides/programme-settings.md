@@ -48,7 +48,7 @@ Each booking type has a different bundle of settings divided into tiles that can
 4. Programme Settings
 5. Additional Fields
 6. Trial (*full duration programmes* only)
-7. Auto-Enrollment (*full duration programmes* only)
+7. Auto-Enrolment (*full duration programmes* only)
 8. Feedback
 9. Attendance
 10. Class linking (*Pay-as-you-go programmes* only)
@@ -104,9 +104,9 @@ In the *Trial* tile, you can set up a menu of trial sessions that clients withou
 
 ![Screenshot](../../assets/images/course-settings-10.png)
 
-## Auto-enrollment
+## Auto-enrolment
 
-*Auto-enrollment* is a pro feature designed to make re-enrollment easier and more efficient for your existing clients. It allows you to offer them a new programme before their current one ends, giving them priority access and a streamlined sign-up process. Detailed instructions on setting up and using auto-enrollment can be found in the [Auto-enrollment manual.](../setup/auto-enrollment.md)
+*Auto-enrolment* is a pro feature designed to make re-enrolment easier and more efficient for your existing clients. It allows you to offer them a new programme before their current one ends, giving them priority access and a streamlined sign-up process. Detailed instructions on setting up and using auto-enrolment can be found in the [Auto-enrolment manual.](../setup/auto-enrollment.md)
 
 ![Screenshot](../../assets/images/course-settings-11.png)
 
@@ -122,7 +122,7 @@ In the *Programme Feedback* section, you can choose if and when the system shoul
 
 ## Attendance
 
-In some programmes — including one-session sessions such as camps or tours — it may not be necessary to record attendance, since you expect participants to attend for the entire scheduled time. In these cases, you can disable attendance tracking in the *Attendance* tile. By default, this function is enabled by the system.
+In some programmes — including single-session programmes such as camps or tours — it may not be necessary to record attendance, since you expect participants to attend for the entire scheduled time. In these cases, you can disable attendance tracking in the *Attendance* tile. By default, this function is enabled by the system.
 
 ![Screenshot](../../assets/images/course-settings-14.png)
 

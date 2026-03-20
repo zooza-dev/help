@@ -25,7 +25,7 @@ Go to **Calendar** and click on a session tile. Switch to **Full view** (top rig
 
 ![Screenshot — admin attendance management](../../assets/images/admin-attendance-management-01.png)
 
-This is the fastest way to mark attendance for an entire group at once.
+This is the fastest way to mark attendance for an entire class at once.
 
 ### Via Booking
 
@@ -52,7 +52,7 @@ Click any button to set or change the state. The change takes effect immediately
 
 Setting a session to **Cancelled** unlocks additional options:
 
-- **Choose make-up session** — opens a list of upcoming sessions the client can be signed in to as a make-up.
+- **Choose make-up session** — opens a list of upcoming sessions the client can be logged in to as a make-up.
 - **Go to Make-up Session** — jumps directly to the make-up session already selected (if one was chosen).
 - **Reason for cancelling** — select from available reasons (or leave as "Not specified"). This is for internal tracking.
 - **Personal feedback (visible to parent)** — leave a note that the client can see in their profile.
@@ -67,9 +67,9 @@ After clicking **Choose make-up session**, a list of upcoming sessions appears �
 
 ![Screenshot — admin attendance management](../../assets/images/admin-attendance-management-04.png)
 
-You can filter by **Date**, **Programme**, or **Instructor**. Each row shows the date, time, class, location, instructor, and number of free slots. Click **Sign in** to assign the make-up.
+You can filter by **Date**, **Programme**, or **Instructor**. Each row shows the date, time, class, location, instructor, and number of free slots. Click **Log in** to assign the make-up.
 
-Once confirmed, the original session shows the cancelled status with a link to the make-up, and the make-up session shows the client as signed in.
+Once confirmed, the original session shows the cancelled status with a link to the make-up, and the make-up session shows the client as logged in.
 
 ## Book a session (from the Attendance tab)
 
@@ -79,6 +79,6 @@ In the booking's **Attendance** tab, the **Book a session** button at the top le
 ## Related
 
 - [Attendance management for instructors](instructor-attendance-management.md) — instructor-specific dashboard and calendar views.
-- [Replacement hours — complete guide](replacement-hours-complete.md) — how make-up credits are earned and configured.
-- [King of a group](king-of-a-group.md) — delegating attendance management to one client.
+- [Make-up session — complete guide](replacement-hours-complete.md) — how make-up credits are earned and configured.
+- [King of a class](king-of-a-group.md) — delegating attendance management to one client.
 - [Make-up sessions FAQ](../faq/make-up-sessions-faq.md)

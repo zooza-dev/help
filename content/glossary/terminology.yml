@@ -34,22 +34,30 @@ terms:
       client: "Class"
       widget: "Class"
     deprecated:
-      - "Course"
-      - "course"
+      - "Course"           # EN only — do not use in English content
       - "Open course"      # was used for pay-as-you-go type
       - "One-time course"  # was used for one-off event type
     synonyms:
       - "program"          # American spelling, acceptable
     translations:
-      sk: "Program"
+      sk: "Program"        # correct SK market term — not deprecated
+      cz: "Kurz"           # correct CZ market term — not deprecated
+      ro: "Curs"           # correct RO market term — not deprecated
+      hu: "Kurzus"         # correct HU market term — not deprecated
       de: "Programm / Kurs"
     intent_keywords:
       en: ["programme", "program", "course", "activity", "class programme"]
       sk: ["program", "kurz", "aktivita", "hodiny"]
+      cz: ["kurz", "program", "aktivita"]
+      ro: ["curs", "program", "activitate"]
+      hu: ["kurzus", "program", "tanfolyam"]
       de: ["Programm", "Kurs", "Aktivität"]
     notes: >
       When domain = widget (client-facing), displayed as 'Class'.
-      Admin always uses 'Programme'. Do not use 'Course' in new content.
+      Admin always uses 'Programme'. Do not use 'Course' in new English content.
+      'Kurz' (CZ), 'kurz' (SK), 'curs' (RO), 'kurzus' (HU) are the correct
+      market-language equivalents — they are NOT deprecated in those languages.
+      When a CZ/SK/RO/HU customer says 'kurz/curs/kurzus', they always mean Programme.
     public: true
 
   - id: class
@@ -89,7 +97,8 @@ terms:
     category: "product-hierarchy"
     definition: >
       A single scheduled meeting within a Class, with a specific date and time.
-      Attendance is recorded at session level.
+      Attendance is recorded at session level. In Zooza, the correct term is always
+      'Session' — not 'lesson', 'date', 'lekcia', 'lekce', or 'hodina'.
     context:
       admin: "Session"
       client: "Session"
@@ -103,12 +112,20 @@ terms:
       - "lesson"        # common in education context
       - "class session" # acceptable disambiguator
     translations:
-      sk: "Termín / Hodina"
+      sk: "Termín / Hodina / Lekcia"
+      cz: "Termín / Hodina / Lekce"
+      hu: "Óra / Foglalkozás"
       de: "Termin / Stunde / Einheit"
     intent_keywords:
-      en: ["session", "lesson", "slot", "time", "date", "class date", "next session"]
-      sk: ["termín", "hodina", "lekcia", "dátum", "čas"]
+      en: ["session", "lesson", "slot", "time", "date", "class date", "next session", "class time"]
+      sk: ["termín", "hodina", "lekcia", "dátum", "čas", "hodiny", "vyučovanie"]
+      cz: ["termín", "hodina", "lekce", "datum", "čas", "výuka", "hodiny"]
+      hu: ["óra", "foglalkozás", "időpont", "tanóra"]
       de: ["Termin", "Stunde", "Einheit", "Datum"]
+    ai_notes: >
+      Customers across all markets use 'hodina' (SK/CZ), 'lekcia' (SK), 'lekce' (CZ),
+      'óra' (HU), 'lesson' (EN) to mean a single scheduled occurrence = Session in Zooza.
+      Always translate these terms to 'Session' when answering or searching KB.
     public: true
 
   # ──────────────────────────────────────────────
@@ -409,7 +426,8 @@ terms:
     definition: >
       A replacement session a client can attend after cancelling a scheduled
       session in advance (before the cancellation deadline). The make-up credit
-      is generated automatically on cancellation.
+      is generated automatically on cancellation. The client selects from
+      available slots in any compatible class that has capacity.
     context:
       admin: "Make-up session"
       client: "Make-up session"
@@ -424,13 +442,25 @@ terms:
       - "replacement session"   # acceptable variant
       - "catch-up"
     translations:
-      sk: "Náhradná hodina"
+      sk: "Náhradná hodina / Náhrada"
+      cz: "Náhradní hodina / Náhrada"
       de: "Ersatzstunde / Ersatztermin / Nachholtermin"
     intent_keywords:
       en: ["make-up", "makeup", "replacement", "catch up", "missed session", "attend another", "reschedule"]
       sk: ["náhradná hodina", "náhrada", "zmeškané", "náhradný termín", "preložiť hodinu"]
+      cz: ["náhradní hodina", "náhrada", "zmeškané", "náhradní lekce", "přeložit hodinu"]
       de: ["Ersatzstunde", "Ersatztermin", "Nachholtermin", "verpasste Stunde", "Nachholen"]
     do_not_confuse_with:
+      - term: "Transferred make-up session"
+        reason: >
+          Standard make-up session = client picks from available slots within the current class period.
+          Transferred make-up session = unused make-up credits carried over to the next class/period
+          when the current class ends. Configured in Settings → Make-up sessions.
+          In SK/CZ: 'náhrada' = standard make-up; 'prenos náhrady' = transferred make-up (inter-period).
+      - term: "Custom replacement lesson"
+        reason: >
+          Custom replacement lesson = client proposes a specific date/time; instructor approves.
+          This is a separate feature from both standard make-up and transferred make-up sessions.
       - term: "Free credits"
         reason: >
           Make-up sessions arise from cancellations (attendance logic).
@@ -446,6 +476,87 @@ terms:
       a class, attending instead on another day → treat as make-up session / attendance topic.
       Only discuss Billable sessions if customer explicitly asks about pricing calculation settings.
     public: true
+
+  - id: transferred-make-up-session
+    canonical_en: "Transferred make-up session"
+    category: "attendance"
+    definition: >
+      Unused make-up credits that are carried over to the next class or billing period
+      when the current class ends. Configured in Settings → Make-up sessions (General
+      Settings). Three modes: transfer up to a set number, expire all at class end, or
+      expire after a fixed number of days. The transferred credits get a new expiration
+      date and can be used in the next period/programme.
+    context:
+      admin: "Transferred make-up session"
+      client: null
+      widget: null
+    synonyms:
+      - "make-up carry-over"
+      - "rollover make-up"
+    translations:
+      sk: "Prenos náhrady / Prenos náhradiek do ďalšieho obdobia"
+      cz: "Přenos náhrady / Přenos náhradních hodin do dalšího období"
+      de: "Übertragene Ersatzstunden / Ersatzstunden-Übertrag"
+    intent_keywords:
+      en: ["transferred make-up", "carry over make-up", "make-up next period", "make-up rollover", "unused make-ups"]
+      sk: ["prenos náhrady", "prenos náhradiek", "náhrady do ďalšieho obdobia", "nevyužité náhrady"]
+      cz: ["přenos náhrady", "přenos náhradních hodin", "náhrady do dalšího období", "nevyužité náhrady"]
+    do_not_confuse_with:
+      - term: "Make-up session"
+        reason: >
+          Standard make-up session = client picks a slot within the current class period.
+          Transferred make-up session = unused credits carried into the NEXT period/class after the current class ends.
+          Both are configured in Settings → Make-up sessions.
+      - term: "Custom replacement lesson"
+        reason: >
+          Custom replacement = client proposes a specific date/time, instructor approves.
+          Transferred make-up = automatic carry-over of unused credits between billing periods.
+    ai_notes: >
+      When a SK/CZ customer says 'prenos náhrady', they almost certainly mean the
+      inter-period credit carry-over feature (transferred make-up sessions), NOT a
+      custom replacement lesson proposal. Check Settings → Make-up sessions → General Settings.
+      Key settings: 'Maximum number of transferred make-up sessions between billing periods'
+      (0 = disabled), 'Number of days to use transferred make-up sessions'.
+    public: false
+
+  - id: custom-replacement-lesson
+    canonical_en: "Custom replacement lesson"
+    category: "attendance"
+    definition: >
+      A feature that lets a client propose a specific date and time for a replacement
+      session to their instructor. The instructor checks availability and approves or
+      declines. If approved, the replacement session is created automatically.
+      Designed for individual/specialist sessions (piano, personal training, counselling)
+      where booking into another group is not practical.
+    context:
+      admin: "Custom replacement lesson"
+      client: "Custom replacement / Propose a time"
+      widget: null
+    synonyms:
+      - "custom replacement"
+      - "proposed replacement"
+    translations:
+      sk: "Vlastná náhradná hodina / Náhrada na vlastný termín"
+      cz: "Vlastní náhradní hodina / Náhrada na vlastní termín"
+      de: "Individuelle Ersatzstunde / Eigener Ersatztermin"
+    intent_keywords:
+      en: ["custom replacement", "propose replacement", "request replacement time", "individual replacement", "own date replacement"]
+      sk: ["vlastná náhrada", "navrhnúť termín náhrady", "dohodnutý termín", "náhrada na vlastný termín"]
+      cz: ["vlastní náhrada", "navrhnout termín náhrady", "dohodnutý termín", "náhrada na vlastní termín"]
+      de: ["individuelle Ersatzstunde", "eigener Ersatztermin", "Termin vorschlagen"]
+    do_not_confuse_with:
+      - term: "Transferred make-up session"
+        reason: >
+          Custom replacement = client proposes new date/time, instructor approves.
+          Transferred make-up = automatic carry-over of unused credits between billing periods.
+      - term: "Make-up session"
+        reason: >
+          Standard make-up = client picks from existing available slots in compatible classes.
+          Custom replacement = client proposes a new date/time for instructor approval.
+    ai_notes: >
+      Custom replacement lessons require the instructor-approval workflow.
+      See: content/guides/custom-replacement-lessons.md
+    public: false
 
   - id: free-credits
     canonical_en: "Free credits"
@@ -648,9 +759,12 @@ terms:
     canonical_en: "Trial"
     category: "bookings"
     definition: >
-      A first free or discounted session offered to a prospective client before
-      committing to a full enrolment. Trial status progresses from Trial Started
-      to Trial Won (converted) or Trial Lost.
+      A Zooza feature (not just a session type) that makes specific Classes
+      available for prospective clients to try before committing to full enrolment.
+      Trial automates the journey: trial booking → attendance → automated follow-up
+      → enrolment. Status progresses: Trial Started → Trial Won (converted) or
+      Trial Lost. Each Trial has its own price (can be 0), its own registration
+      form, and is published separately via the widget.
     context:
       admin: "Trial"
       client: "Trial session"
@@ -663,13 +777,77 @@ terms:
       - "trial session"
       - "taster"
     translations:
-      sk: "Skúšobná hodina / Trial"
+      sk: "Skúšobná hodina (Zooza Trial)"
+      cz: "Ukázková hodina / Zkušební hodina"
+      hu: "Próbaóra"
       de: "Probestunde / Schnupperstunde"
     intent_keywords:
       en: ["trial", "trial session", "free session", "taster", "try out", "introductory"]
       sk: ["skúšobná hodina", "trial", "prvá hodina zadarmo", "vyskúšať"]
+      cz: ["ukázková hodina", "zkušební hodina", "trial", "zdarma hodina"]
+      hu: ["próbaóra", "ingyenes óra", "próba"]
       de: ["Probestunde", "Schnupperstunde", "kostenlose Stunde", "ausprobieren"]
+    do_not_confuse_with:
+      - term: "Manually created trial session"
+        reason: >
+          Some admins create a regular Session and name it 'skúšobná hodina' /
+          'zkušební hodina' without using the Zooza Trial feature at all.
+          These manual sessions have no Trial status tracking, no automated
+          follow-up, and no Trial funnel. When a customer mentions 'skúšobná
+          hodina', always clarify: is it set up as a Zooza Trial, or is it
+          a manually created session with that name?
+    ai_notes: >
+      CRITICAL DISAMBIGUATION: When customer says 'skúšobná hodina', 'zkušební hodina',
+      'ukázková hodina', 'próbaóra', 'trial', ask:
+      'Is this set up as a Zooza Trial (with its own registration form and automated
+      follow-up), or did you create a regular session and name it that?'
+      The answer determines entirely different instructions.
+      Zooza Trial = has Trial funnel, own price, own form, automated enrollment flow.
+      Manual session = regular Session with a custom name, no automation.
     public: true
+
+  # ──────────────────────────────────────────────
+  # AUTO-CONTINUATION
+  # ──────────────────────────────────────────────
+
+  - id: auto-continuation
+    canonical_en: "Auto-continuation"
+    category: "bookings"
+    definition: >
+      A Zooza feature that automatically contacts clients before their current
+      Class ends and invites them to re-enrol for the next period. The client
+      receives a personalised link, goes into their Client Profile, and selects
+      which Class they want to continue into. The admin configures how many days
+      before the Class ends the notification is triggered. The client must actively
+      confirm and choose their next Class — no automatic booking is created without
+      client action.
+    context:
+      admin: "Auto-continuation"
+      client: "Continue / Re-enrol"
+      widget: null
+    synonyms:
+      - "auto-enrolment"
+      - "automatic re-enrolment"
+      - "automatic continuation"
+    translations:
+      sk: "Automatické pokračovanie"
+      cz: "Automatické pokračování"
+      hu: "Automatikus folytatás"
+      de: "Automatische Verlängerung / Automatische Fortsetzung"
+    intent_keywords:
+      en: ["auto continuation", "automatic continuation", "re-enrol", "auto enrolment", "renew", "next term"]
+      sk: ["automatické pokračovanie", "pokračovanie", "obnova", "ďalší semester"]
+      cz: ["automatické pokračování", "pokračování kurzu", "obnovení"]
+      hu: ["automatikus folytatás", "megújítás", "következő időszak"]
+      de: ["automatische Verlängerung", "Verlängerung", "nächste Saison", "Fortsetzung"]
+    ai_notes: >
+      Auto-continuation is triggered before the Class ends (number of days is
+      configurable). The client receives a personalised link to their Client Profile.
+      From there they choose which Class to continue into.
+      Important: the client MUST actively select a Class — no booking is created
+      automatically. If the customer asks 'does the client get automatically moved?'
+      → answer: No, they get a personalised link and must confirm their choice.
+    public: false
 
   # ──────────────────────────────────────────────
   # BOOKING MODIFICATIONS
@@ -797,6 +975,28 @@ terms:
 
 entity_misattribution:
 
+  - pattern: "add a new client / pridať klienta / adăuga un client / ügyfél hozzáadása"
+    actual_entity: "Booking (creates Client automatically)"
+    actual_action: "Create booking → New client step"
+    clarification: >
+      There is no standalone 'Add client' button in Zooza.
+      Client records are created automatically when a booking is made.
+      To add a new client manually:
+      1. Go to Bookings → Create booking.
+      2. At the 'Choose the client' step, select 'New client'.
+      3. Enter name, surname, email (required), and phone.
+      4. Complete the booking.
+      If only the client profile is needed (no active booking), create the booking
+      for any class and delete the booking afterwards — the client profile remains.
+      Note: the booking form has multiple steps (Choose class → Choose the client →
+      details). 'New client' appears at the 'Choose the client' step, not the first step.
+    intent_keywords:
+      en: ["add client", "add new client", "create client", "no add client button", "how to add a client"]
+      sk: ["pridať klienta", "vytvoriť klienta", "ako pridať klienta", "nový klient"]
+      cz: ["přidat klienta", "vytvořit klienta", "jak přidat klienta", "nový klient"]
+      ro: ["adaug un client", "adăuga un client", "cum adaug client", "client nou"]
+      hu: ["ügyfél hozzáadása", "új ügyfél", "hogyan adjak hozzá ügyfelet"]
+
   - pattern: "copy a client / kopírovať klienta"
     actual_entity: "Booking"
     actual_action: "Copy"
@@ -849,6 +1049,188 @@ entity_misattribution:
     intent_keywords:
       en: ["free session", "free lesson", "give free class", "complimentary session"]
       sk: ["dať termín zadarmo", "bezplatný termín", "hodina zadarmo", "voľný termín"]
+
+  - pattern: "delete/remove/zmazať/vymazať programme/kurz/program/curs/kurzus"
+    actual_entity: "Programme"
+    actual_action: "Archive (or request deletion from support)"
+    clarification: >
+      Programmes cannot be deleted directly in the app.
+      Archive hides the programme from the active list but keeps all data.
+      Permanent deletion is only possible for programmes with no bookings and no
+      classes, and must be requested from the support team with the programme ID.
+      Ask: 'Do you want to archive it (hide from active list) or permanently
+      remove it (requires no bookings, contact support)?'
+    intent_keywords:
+      en: ["delete programme", "remove programme", "delete course", "remove course"]
+      sk: ["zmazať program", "vymazať program", "zmazať kurz", "odstrániť kurz"]
+      cz: ["smazat kurz", "odstranit kurz", "vymazat kurz"]
+      ro: ["șterge curs", "elimina curs"]
+      hu: ["törölni kurzus", "törölni program", "kurzust törölni"]
+
+  - pattern: "delete/remove a group / törölni group / zmazať skupinu"
+    actual_entity: "Class"
+    actual_action: "Archive Class (or delete if no bookings)"
+    clarification: >
+      'Group' is a deprecated term for Class. When a customer says 'delete a group',
+      they mean delete/archive a Class. A Class cannot be deleted if it has active
+      bookings — it must be archived first or bookings reassigned.
+    intent_keywords:
+      en: ["delete group", "remove group"]
+      sk: ["zmazať skupinu", "vymazať skupinu"]
+      hu: ["törölni csoport", "csoportot törölni", "group törölni"]
+
+  - pattern: "remove location from course/class / odstrániť lokáciu z kurzu"
+    actual_entity: "Class (Venue assignment)"
+    actual_action: "Assign a placeholder Venue — Venue cannot be left blank"
+    clarification: >
+      A Class always requires a Venue — it cannot be left empty.
+      The correct solution is to create a placeholder/phantom Venue in
+      Settings → Locations (e.g. 'Online', 'TBD', or leave the name neutral)
+      and assign it to the Class. Whatever name is set there will be displayed.
+      You cannot 'remove' a venue; you replace it with a neutral placeholder.
+      Never suggest deleting the Venue from Settings if it is used elsewhere.
+    intent_keywords:
+      en: ["remove location", "delete location from course", "remove venue", "no location", "clear location"]
+      sk: ["odstrániť lokáciu", "zmazať miesto", "bez lokácie", "odstrániť miesto z kurzu"]
+      cz: ["odebrat lokaci", "smazat místo", "bez místa", "odstranit lokaci z kurzu"]
+      hu: ["helyszín eltávolítása", "helyszín törlése", "hely törlése kurzusból"]
+
+  - pattern: "change trial/ukázková hodina price to 0 / zmeniť cenu skúšobnej hodiny na 0"
+    actual_entity: "Class price vs. Programme price"
+    actual_action: "Clarify — setting 0 at Class level is treated as 'not set', falls back to Programme price"
+    clarification: >
+      Pricing hierarchy:
+      - If price is set at Class level (any non-zero value) → Class price OVERRIDES Programme price.
+      - If price is NOT set at Programme → Class price is used.
+      - EDGE CASE: Setting price to 0 at Class level is treated as 'not set' (empty),
+        so the system falls back to the Programme price. You cannot make a class free
+        by setting 0 at Class level if the Programme has a price.
+      Three solutions to get price 0 on a specific class:
+      1. Set price to 0 at Programme level — then manage all pricing differences at Class level.
+      2. Move the Class into a separate Programme that has no price set, and set 0 at Class level.
+      3. Use the Zooza Trial feature — Trials have their own independent price (can be 0),
+         fully separate from Programme pricing.
+      Ask: 'Is this class meant to be a Zooza Trial, or a regular class you want free?'
+    intent_keywords:
+      en: ["trial price", "change price to 0", "free trial", "set price zero", "trial session price"]
+      sk: ["cena skúšobnej hodiny", "zmeniť cenu na 0", "zadarmo skúšobná", "nulová cena"]
+      cz: ["cena ukázkové hodiny", "změnit cenu na 0", "zkušební hodina zadarmo", "nulová cena"]
+
+  - pattern: "skúšobná hodina / zkušební hodina / ukázková hodina — ambiguous"
+    actual_entity: "Trial (feature) OR manually created Session"
+    actual_action: "Clarify before answering"
+    clarification: >
+      Ask: 'Is this set up as a Zooza Trial (with its own registration form and
+      automated follow-up to enrolment), or did you create a regular session and
+      name it skúšobná/zkušební hodina?'
+      These are entirely different: Zooza Trial has automation; manual session does not.
+    intent_keywords:
+      sk: ["skúšobná hodina", "skušobna hodina"]
+      cz: ["zkušební hodina", "ukázková hodina", "zkusebn"]
+      hu: ["próbaóra", "bemutató óra"]
+
+  - pattern: "náhrada vs prenos náhrady — SK/CZ ambiguity"
+    actual_entity: "Make-up session OR Transferred make-up session"
+    actual_action: "Clarify: within current period or carry-over to next period?"
+    clarification: >
+      'Náhrada' (SK/CZ) = standard make-up session: the client picks an available slot
+      within the current class period from classes that have spare capacity.
+      'Prenos náhrady' (SK/CZ) = transferred make-up session: unused make-up credits
+      are carried over to the NEXT class or billing period when the current class ends.
+      This is configured in Settings → Make-up sessions → General Settings:
+      - 'Maximum number of transferred make-up sessions between billing periods' (0 = disabled)
+      - 'Number of days to use transferred make-up sessions'
+      If the customer asks about 'prenos náhrady', they are almost certainly asking about
+      the inter-period carry-over feature, NOT about custom replacement lesson proposals.
+    intent_keywords:
+      sk: ["prenos náhrady", "náhrada", "náhradná hodina", "náhrady do ďalšieho obdobia", "preniesť náhrady"]
+      cz: ["přenos náhrady", "náhrada", "náhradní hodina", "náhrady do dalšího období", "přenést náhrady"]
+
+  - pattern: "groups disappeared from calendar / skupiny zmizli z kalendára"
+    actual_entity: "Browser cache"
+    actual_action: "Hard browser refresh"
+    clarification: >
+      This is a browser caching issue, not a data or filter problem. No classes have been lost.
+      Instruct the admin to do a hard browser refresh:
+      Mac: Cmd+R or Cmd+Shift+R. Windows/Linux: Ctrl+R, Ctrl+F5, or F5.
+      Data is intact — the page just needs to reload to show current state.
+    intent_keywords:
+      en: ["groups disappeared", "classes missing from calendar", "calendar not showing", "calendar shows wrong data"]
+      sk: ["skupiny zmizli z kalendára", "nevidím všetky skupiny", "kalendár sa nezobrazuje správne"]
+      cz: ["skupiny zmizely z kalendáře", "nevidím všechny skupiny", "kalendář se nezobrazuje správně"]
+
+  - pattern: "discount code / slevový kód / zľavový kód — location"
+    actual_entity: "Discount code"
+    actual_action: "Go to Sales & Payments → Discounts"
+    clarification: >
+      Discount codes in Zooza are found under: Sales & Payments → Discounts → Discount Codes.
+      Do NOT redirect to Product Builder, programme settings, or payment templates.
+      Do NOT describe 'automatic discounts', sibling discounts, or early-bird settings
+      unless the customer specifically asks for those — discount codes are a separate feature.
+      Discount codes are entered by clients during checkout on the booking form.
+      To create: Sales & Payments → Discounts → Discount Codes → Create.
+      To track usage: same section shows usage count and redemption history.
+    intent_keywords:
+      en: ["discount code", "promo code", "coupon", "where are discount codes", "set up discount code"]
+      sk: ["zľavový kód", "kde nastaviť zľavu", "nastavenie zľavových kódov", "kde sú zľavové kódy"]
+      cz: ["slevový kód", "kde nastavit slevu", "nastavení slevových kódů", "čerpání slevových kódů", "kde jsou slevové kódy"]
+      hu: ["kedvezménykód", "hol a kedvezménykód", "kedvezmény beállítása", "hol találom a kedvezménykódokat"]
+
+  - pattern: "faktúra / faktura / invoice — ambiguity"
+    actual_entity: "Client invoices (default) OR Zooza subscription invoices"
+    actual_action: "Default to client invoices; only clarify if subscription signals are present"
+    clarification: >
+      DEFAULT: 'faktúra', 'faktura', 'invoice' almost always = client invoices
+      (invoices the admin generates for their own clients/bookings).
+      → Go to: Sales & Payments → Invoices.
+      EXCEPTION: only if customer uses specific phrases like 'odberateľská faktúra' (SK),
+      'odběratelská faktura' (CZ), 'platba za Zoozu', 'faktúra od Zoozy', or asks about
+      their own Zooza subscription cost → these mean Zooza's own billing.
+      → Go to: Settings → Subscription → Manage subscription → Details → Invoices.
+      Do NOT ask for clarification on generic 'faktúra' queries — default to client invoices.
+    intent_keywords:
+      en: ["where are invoices", "find invoices", "my invoices", "download invoice", "invoice for Zooza", "subscription invoice"]
+      sk: ["kde sú faktúry", "kde najdem faktúry", "odberateľská faktúra", "faktúra za Zoozu", "faktúra od Zoozy", "platba za Zoozu"]
+      cz: ["kde jsou faktury", "kde najdu faktury", "odběratelská faktura", "faktura za Zoozu", "faktura od Zoozy"]
+
+  - pattern: "Settings → Registration Forms / Beállítások → Regisztrációs űrlapok — path does not exist"
+    actual_entity: "Booking form settings (split across multiple locations)"
+    actual_action: "Route to correct location based on what they want to change"
+    clarification: >
+      There is NO 'Settings → Registration Forms' menu in Zooza. FIN must not direct users there.
+      Booking form configuration is split:
+      - Global appearance (button text, availability, CSS, discount code field):
+        Team & Settings → Publish → click widget → Configure next to Booking form.
+      - What extra data is collected (date of birth, address, custom questions):
+        Programmes → programme → Additional Fields → Edit.
+      - Standard field labels (Name, Surname, Email, Phone, Note), class visibility,
+        multiple children per form, confirmation email:
+        Programmes → programme → Online Booking → Edit → Customize Booking Form.
+      - Price, booking fee, payment method:
+        Programmes → programme → Settings → Price and Payment.
+      Ask: 'What specifically do you want to change on the form?' then route accordingly.
+      See also: booking-form-settings guide at /help/widgets/booking-form-settings.
+    intent_keywords:
+      en: ["where is registration form settings", "booking form settings", "registration form configuration", "where to configure booking form"]
+      sk: ["kde nastaviť registračný formulár", "nastavenia registračného formulára", "kde je registračný formulár", "formulár kde nastavím"]
+      cz: ["kde nastavit registrační formulář", "nastavení registračního formuláře", "kde je registrační formulář"]
+      hu: ["regisztrációs form beállítás hol", "hol találom a form beállításokat", "regisztrációs urlap beállítás", "hol tudom megváltoztatni a regisztrációs form-ot"]
+
+  - pattern: "add field to registration form / pridať pole / add new field"
+    actual_entity: "Additional Fields (per programme)"
+    actual_action: "Go to Programmes → programme → Additional Fields → Edit"
+    clarification: >
+      To add custom fields to the booking form, go to:
+      Programmes → open the programme → Additional Fields → Edit.
+      You can add up to 5 custom fields. These are per-programme — to use the same
+      fields across multiple programmes, set up one programme then use Copy Programme.
+      Do NOT direct users to Settings → Publish for adding fields — that section
+      controls global widget appearance only (button text, availability display, CSS).
+    intent_keywords:
+      en: ["add field to form", "add new field", "extra field booking form", "custom field registration"]
+      sk: ["pridať pole do formulára", "nové pole do registrácie", "extra pole registračný formulár"]
+      cz: ["přidat pole do formuláře", "nové pole registrační formulář", "extra pole formulář"]
+      hu: ["új mező regisztrációhoz", "mező hozzáadása", "extra mező regisztrációs form"]
 
   - pattern: "ai_rule"
     actual_entity: "N/A"

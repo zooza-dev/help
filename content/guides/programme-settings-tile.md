@@ -35,7 +35,7 @@ In this section, you can define the core details of your programme:
 ## Additional settings
 
 1. In the *Programme Type* section, you can adjust the format of the programme — for example, changing it to an online session, a photography programme, or a standard programme with scheduled sessions.
-2. You can also update the *Target audience* if the programme changes from class classes to individual sessions, or vice versa.
+2. You can also update the *Target audience* if the programme changes from group classes to individual sessions, or vice versa.
 3. Selecting the *For children* checkbox changes the wording in certain parts of the application. For example, in the booking form, “Name” will become “Parent’s Name.”
  ![Screenshot](../../assets/images/course-settings-tile-02.png)
 4. Check the *Archive* box and click **Save** to archive the programme (see below).

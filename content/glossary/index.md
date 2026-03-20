@@ -38,9 +38,9 @@ A session that counts towards the total used for price calculation in Programme 
 ## C
 
 ### Class
-A scheduled group within a Programme, typically differentiated by day/time, level, or location. One Class contains multiple Sessions.
+A scheduled class within a Programme, typically differentiated by day/time, level, or location. One Class contains multiple Sessions.
 
-> Formerly called: *Group*, *Timetable*
+> Formerly called: *Class*, *Timetable*
 
 ### Client
 The person who holds the account, pays, and manages bookings. Identified by email address. A Client may book on behalf of family members (Attendees).
@@ -49,7 +49,7 @@ The person who holds the account, pays, and manages bookings. Identified by emai
 The self-service dashboard where clients manage their bookings, payments, and family members. Accessed via email link — no password required.
 
 ### Copy
-Duplicate a booking to a different Class, Group, or Programme. The original booking remains unchanged. A new booking is created in the target Class.
+Duplicate a booking to a different Class, Class, or Programme. The original booking remains unchanged. A new booking is created in the target Class.
 
 **Copy vs Transfer:** Copy keeps the original booking; [Transfer](#transfer) removes it.
 
@@ -80,7 +80,7 @@ A prepaid bundle granting access to a set number of sessions (visits-based) or a
 ### Feedback
 Structured feedback collected from clients after sessions or at the end of a programme.
 
-> Formerly called: *Course feedback*
+> Formerly called: *Programme feedback*
 
 ### Free credits
 An allowance granted to a specific booking that lets the client attend extra sessions without paying.
@@ -92,9 +92,9 @@ An allowance granted to a specific booking that lets the client attend extra ses
 ## M
 
 ### Make-up session
-A replacement session a client can attend after cancelling a scheduled session in advance (before the cancellation deadline). The make-up credit is generated automatically on cancellation.
+A make-up session a client can attend after cancelling a scheduled session in advance (before the cancellation deadline). The make-up credit is generated automatically on cancellation.
 
-> Also known as: *Replacement session*
+> Also known as: *Make-up session*
 
 ### Membership
 An ongoing programme type with a recurring fixed charge and no fixed end date (monthly, quarterly, etc.).
@@ -108,7 +108,7 @@ An ongoing programme type with a recurring fixed charge and no fixed end date (m
 ### One-off Event
 A single session on a specific date with no repeating schedule. Used for workshops, lectures, consultations, or special events.
 
-> Formerly called: *One-time course*, *Registration for one session*
+> Formerly called: *One-time programme*, *Registration for one session*
 
 ---
 
@@ -117,7 +117,7 @@ A single session on a specific date with no repeating schedule. Used for worksho
 ### Pay-as-you-go
 A flexible programme type where clients book and pay for individual sessions rather than committing to a full term.
 
-> Formerly called: *Open course*, *Open registration*
+> Formerly called: *Open programme*, *Open registration*
 
 ### Payment Plan
 The configuration that defines when and how often a client is billed for a booking — one-time, monthly, quarterly, by-block, and so on.
@@ -125,7 +125,7 @@ The configuration that defines when and how often a client is billed for a booki
 > Formerly called: *Payment schedule*, *Scheduled payments*, *Invoice profile*
 
 ### Private class
-**Client view:** A class with a single attendee (individual/private lesson).
+**Client view:** A class with a single attendee (individual/private session).
 **Admin view:** See [1-to-1 class](#1-to-1-class).
 
 ### Programme
@@ -134,7 +134,7 @@ The top-level container for an activity type. Holds pricing, payment settings, b
 **Admin view:** Programme
 **Client view:** Class
 
-> Formerly called: *Course*
+> Formerly called: *Programme*
 
 ---
 
@@ -159,15 +159,24 @@ A single scheduled meeting within a Class, with a specific date and time. Attend
 ### Term Payment
 A payment covering a specific term or billing period.
 
-> Formerly called: *Course fee*
+> Formerly called: *Programme fee*
 
 ### Transfer
-Move a booking from one Class, Group, or Programme to another. The original booking ends and a new booking is created in the target Class.
+Move a booking from one Class, Class, or Programme to another. The original booking ends and a new booking is created in the target Class.
 
 **Transfer vs Copy:** Transfer moves the booking (original ends); [Copy](#copy) duplicates it (original stays).
 
 ### Trial
-A first free or discounted session offered to a prospective client before committing to a full enrolment.
+A Zooza feature that makes specific Classes available for prospective clients to try before committing to full enrolment. Trial automates the journey from the first session through to enrolment. Each Trial has its own price (can be free), its own booking form, and is published separately via the widget. Status is tracked: Trial Started → Trial Won or Trial Lost.
+
+> Not to be confused with a regular Session that has been manually named "trial session" — those have no automation.
+
+---
+
+## A (features)
+
+### Auto-enrolment
+A feature that contacts clients before their current Class ends and invites them to re-enrol for the next period. The client receives a personalised link, opens their Client Profile, and selects which Class to continue into. No booking is created automatically — the client must actively confirm.
 
 ---
 
@@ -190,7 +199,7 @@ The embeddable booking interface placed on your website. Widgets use client-faci
 ## 1
 
 ### 1-to-1 class
-A class with a single attendee (individual or private lesson).
+A class with a single attendee (individual or private session).
 
 **Admin view:** 1-to-1 class
 **Client view:** Private class

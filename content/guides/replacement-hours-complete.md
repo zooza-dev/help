@@ -1,5 +1,5 @@
 ---
-title: "Replacement Hours — Complete Guide"
+title: "Make-up Sessions — Complete Guide"
 slug: "replacement-hours-complete"
 type: "guides"
 product_area: "Calendar"
@@ -15,7 +15,7 @@ last_converted: "2026-02-13"
 
 # Make - up sessions — Complete Guide
 
-Replacement hours (also called make-up or catch-up sessions) allow children who miss a class to attend a different session as a substitute. This guide covers the full replacement workflow: enabling replacements, how credits are earned, how parents book them, capacity rules, cross-company replacements, and troubleshooting.
+Make-up session (also called make-up or make-up sessions) allow children who miss a class to attend a different session as a substitute. This guide covers the full replacement workflow: enabling replacements, how credits are earned, how parents book them, capacity rules, cross-company replacements, and troubleshooting.
 
 For quick answers, see [Make-up sessions FAQ](../faq/make-up-sessions-faq.md).
 
@@ -25,32 +25,32 @@ For quick answers, see [Make-up sessions FAQ](../faq/make-up-sessions-faq.md).
 
 The replacement flow follows these steps:
 
-1. A child is registered in a class with replacement hours enabled.
+1. A child is registered in a class with make-up session enabled.
 2. The child misses a session and is marked as **Cancelled** (excused) in attendance.
 3. The system generates a **replacement credit** on the registration.
-4. The parent opens their **Client Profile** and sees available replacement sessions.
+4. The parent opens their **Client Profile** and sees available make-up session.
 5. The parent selects a session with available capacity and confirms the replacement.
-6. The child attends the replacement session.
+6. The child attends the make-up session.
 
 Key points:
 
 - Replacement credits are tied to the **registration**, not to the child globally.
-- Available replacement sessions are calculated dynamically based on capacity, programme match, and timing rules.
+- Available make-up session are calculated dynamically based on capacity, programme match, and timing rules.
 - The system limits the replacement offer to a maximum of approximately 200 options to keep the profile loading time reasonable. If the programme has a very large number of sessions, each parent may see a slightly different subset of available slots.
 
 ---
 
 ## Enabling replacements on a programme
 
-Replacement hours are configured at the **programme level** and can be fine-tuned per class.
+Make-up session are configured at the **programme level** and can be fine-tuned per class.
 
 1. Go to the programme and open **Settings**.
-2. Find the **Replacement hours** (make-up sessions) section.
-3. Enable replacement hours for the programme.
+2. Find the **Make-up session** (make-up sessions) section.
+3. Enable make-up session for the programme.
 4. Configure the replacement settings:
    - **Credit expiration policy** — choose one of three options:
      - Credits carry over to the next billing period (trimester/semester).
-     - Credits expire at the end of the current class (group).
+     - Credits expire at the end of the current class (class).
      - Credits expire after a set number of days.
    - **Replacement waiting list** — enable or disable the waiting-list/queue feature.
    - **Cancellation deadline** — set how far in advance a client must cancel to earn a replacement credit (e.g., 1 hour before the session).
@@ -97,8 +97,8 @@ Replacement bookings respect class capacity. You can configure extra capacity sp
 
 ### Global extra capacity (programme level)
 
-1. Go to **Settings > Replacement hours** (`zooza.app/#settings/replacements`).
-2. Set the **Extra capacity for replacement hours** value (e.g., `1`).
+1. Go to **Settings > Make-up session** (`zooza.app/#settings/replacements`).
+2. Set the **Extra capacity for make-up session** value (e.g., `1`).
 3. This means every class in every programme gets one additional slot beyond its normal capacity, reserved for replacement students.
 
 For example, if a class has a capacity of 10 and the extra capacity is set to +1, up to 11 students can attend that session: 10 regular plus 1 replacement.
@@ -118,17 +118,17 @@ If you do not set any per-class override, the global value applies.
 
 ## The 4-day rule (replacement availability timing)
 
-The system does **not** allow replacement bookings into classes that have not yet started. Specifically, replacement sessions in a class become available only **4 days before the class start date**.
+The system does **not** allow replacement bookings into classes that have not yet started. Specifically, make-up session in a class become available only **4 days before the class start date**.
 
 This rule exists to protect capacity for regular paying clients. Without it, replacement students could fill up a new class before it officially begins, leaving no room for full-term registrations.
 
 ### Example
 
-A new class is scheduled to start on January 15. Replacement sessions in that class will not appear in parent profiles until January 11 (4 days before the start).
+A new class is scheduled to start on January 15. Make-up session in that class will not appear in parent profiles until January 11 (4 days before the start).
 
 ### Workaround for single-session classes
 
-If you create one-off classes (single-session groups) for replacement purposes, the 4-day rule still applies. To make the replacement session available sooner, change the **class start date** in the class settings to an earlier date (at least 4 days before the session).
+If you create one-off classes (single-session classes) for replacement purposes, the 4-day rule still applies. To make the make-up session available sooner, change the **class start date** in the class settings to an earlier date (at least 4 days before the session).
 
 <!-- REVIEW: Confirm whether the 4-day rule is a fixed system constant or configurable per account. Support tickets suggest it is currently fixed but could become configurable. -->
 
@@ -136,18 +136,18 @@ If you create one-off classes (single-session groups) for replacement purposes, 
 
 ## How parents book replacements in the Client Profile
 
-Once a replacement credit exists on a registration, the parent can book a replacement session through their **Client Profile** (the parent portal):
+Once a replacement credit exists on a registration, the parent can book a make-up session through their **Client Profile** (the Client Profile):
 
 1. The parent logs in to the profile widget on your website (or via `zooza.app`).
 2. They navigate to their child's registration or attendance view.
 3. Sessions where the child was cancelled show a replacement option.
-4. The parent sees a list of available replacement sessions filtered by:
+4. The parent sees a list of available make-up session filtered by:
    - Programme compatibility (matching age group / programme type).
    - Available capacity (including extra replacement capacity).
    - The 4-day rule (only classes that have started or start within 4 days).
    - The cancellation deadline (sessions that have not yet passed the cutoff time).
 5. The parent selects a session and confirms.
-6. The system books the child into the replacement session and deducts the credit.
+6. The system books the child into the make-up session and deducts the credit.
 
 ### Filtering and display limits
 
@@ -166,7 +166,7 @@ When a client cancels (unsubscribes) from a session, they may later want to retu
 ### How it works
 
 1. The client cancels from a session (earns a replacement credit).
-2. Optionally, the client books a replacement session elsewhere.
+2. Optionally, the client books a make-up session elsewhere.
 3. If the client changes their mind, they can click **"Sign back up for this session"** on the original session they cancelled from.
 4. If capacity is available on the original session, the system:
    - Re-enrolls the client on the original session.
@@ -175,7 +175,7 @@ When a client cancels (unsubscribes) from a session, they may later want to retu
 
 ### Important notes
 
-- This button is available automatically when replacement hours are enabled. You do not need to enable it separately.
+- This button is available automatically when make-up session are enabled. You do not need to enable it separately.
 - Capacity is checked at the moment the client clicks the button. Even if the calendar shows a free spot when you (the admin) look at it, the spot may have been taken at the exact moment the client tried.
 - The button is intended to handle accidental cancellations or clients who change their mind.
 
@@ -183,7 +183,7 @@ When a client cancels (unsubscribes) from a session, they may later want to retu
 
 ## Cross-company / franchise replacements
 
-In franchise networks where multiple branches operate as separate legal entities (separate Zooza accounts), replacement hours can be shared across companies. This allows a child registered at one branch to book a make-up session at a different branch.
+In franchise networks where multiple branches operate as separate legal entities (separate Zooza accounts), make-up session can be shared across companies. This allows a child registered at one branch to book a make-up session at a different branch.
 
 The setup has three steps:
 
@@ -195,7 +195,7 @@ The setup has three steps:
 
 Before clients can use replacements across branches, you must link the branches in Zooza.
 
-1. Go to **Settings** → **Replacement lessons**.
+1. Go to **Settings** → **Make-up session**.
 
 ![Settings — Replacement lessons tile](../../assets/images/replacement-hours-cross-01.png)
 
@@ -207,7 +207,7 @@ Before clients can use replacements across branches, you must link the branches 
 4. Click **Send an invitation**. The other branch receives a notification requesting the link.
 5. Once the other branch approves, the companies are linked.
 
-You can see all sent requests and their status in the **Replacement lessons** tab. If a request is approved, you can click **Cancel request** to unlink the companies.
+You can see all sent requests and their status in the **Make-up session** tab. If a request is approved, you can click **Cancel request** to unlink the companies.
 
 ![Overview of sent cooperation requests and their status](../../assets/images/replacement-hours-cross-03.png)
 
@@ -215,31 +215,31 @@ You can see all sent requests and their status in the **Replacement lessons** ta
 
 Once the branches are linked, you can allow cross-company replacements at the programme level.
 
-1. Open the programme and go to the **Replacement lessons** section.
+1. Open the programme and go to the **Make-up session** section.
 2. Click **Edit**.
 
 ![Programme replacement lessons section with Edit button](../../assets/images/replacement-hours-cross-04.png)
 
-3. Under **Replacement lessons**, check **Allow replacement lessons from other companies**.
+3. Under **Make-up session**, check **Allow make-up session from other companies**.
 4. Click **Save**.
 
 ![Allow replacement lessons from other companies checkbox](../../assets/images/replacement-hours-cross-05.png)
 
 ### Step 3 — Configuring restrictions
 
-In the **Restrictions** section, configure the conditions under which clients from other branches can book replacement sessions in your programmes.
+In the **Restrictions** section, configure the conditions under which clients from other branches can book make-up session in your programmes.
 
-> **Important:** These restriction settings control incoming replacements — they define under what conditions clients from another branch can take a replacement session at **your** company. They do not affect your own clients booking replacements elsewhere.
+> **Important:** These restriction settings control incoming replacements — they define under what conditions clients from another branch can take a make-up session at **your** company. They do not affect your own clients booking replacements elsewhere.
 
 ![Replacement lessons restriction settings](../../assets/images/replacement-hours-cross-06.png)
 
 ### Client perspective
 
-In the Client Profile, the client sees a combined view of all available replacement sessions regardless of which branch offers them. The client can see their replacement entitlements in the **Unexpired replacement lessons** tab.
+In the Client Profile, the client sees a combined view of all available make-up session regardless of which branch offers them. The client can see their replacement entitlements in the **Unexpired make-up session** tab.
 
 ![Client profile — unexpired replacement lessons](../../assets/images/replacement-hours-cross-07.png)
 
-To select a replacement session, the client clicks on the programme and then clicks **Choose Replacement Lesson** for the cancelled session.
+To select a make-up session, the client clicks on the programme and then clicks **Choose Replacement Session** for the cancelled session.
 
 ![Choose Replacement Lesson button on cancelled session](../../assets/images/replacement-hours-cross-08.png)
 
@@ -272,7 +272,7 @@ When a replacement client from another branch books a session at your branch, th
 
 ### Replacement report
 
-In the **Calendar** tab, a report shows how many replacement sessions your clients used at your own branch versus other branches. The report includes the price for each replacement, which serves as a basis for financial arrangements between branches. Click the **Replacement lessons** button to view this report.
+In the **Calendar** tab, a report shows how many make-up session your clients used at your own branch versus other branches. The report includes the price for each replacement, which serves as a basis for financial arrangements between branches. Click the **Make-up session** button to view this report.
 
 ![Replacement lessons report in Calendar](../../assets/images/replacement-hours-cross-13.png)
 
@@ -280,7 +280,7 @@ In the **Calendar** tab, a report shows how many replacement sessions your clien
 
 ### Common issues
 
-- **Replacements between branches stopped working** — Verify that the cooperation link is still active in **Settings** → **Replacement lessons**. If the other branch cancelled the request, you need to re-link.
+- **Replacements between branches stopped working** — Verify that the cooperation link is still active in **Settings** → **Make-up session**. If the other branch cancelled the request, you need to re-link.
 - **Sessions from another branch are available too early** — The 4-day rule applies across companies. If one company's classes have an earlier start date, their sessions may appear before expected.
 - **Attendance marking for cross-company replacements** — There have been reported issues where a parent could not mark attendance for a cross-company replacement in the calendar. If this occurs, contact support with the specific registration and session details.
 
@@ -309,15 +309,15 @@ If a replacement credit was created by mistake, or you need to remove it for any
 
 ### Credit carry-over between billing periods
 
-By default, replacement credits may expire at the end of the current class (group). You can change this behavior in the global replacement settings:
+By default, replacement credits may expire at the end of the current class (class). You can change this behavior in the global replacement settings:
 
-1. Go to **Settings > Replacement hours** (`zooza.app/#settings/replacements`).
+1. Go to **Settings > Make-up session** (`zooza.app/#settings/replacements`).
 2. Choose one of three expiration policies:
    - **Carry over** — credits transfer to the next billing period (trimester/semester). Use this if you want clients to retain unused credits across terms.
    - **Expire at end of class** — credits are valid only within the current class duration. This is the default.
    - **Expire after X days** — credits expire a set number of days after they are created, regardless of billing period boundaries.
 
-The per-programme settings can override the global setting. Check the programme's **Settings > Replacement hours** section to confirm which policy applies.
+The per-programme settings can override the global setting. Check the programme's **Settings > Make-up session** section to confirm which policy applies.
 
 ---
 
@@ -327,7 +327,7 @@ When all available sessions are full, clients can join a **replacement waiting l
 
 ### How the waiting list works
 
-1. The parent opens their profile and sees that all replacement sessions are full.
+1. The parent opens their profile and sees that all make-up session are full.
 2. Instead of a booking button, they see an option to **join the waiting list** for one or more sessions.
 3. When a spot opens up (e.g., another client cancels), the system notifies the first person in the queue.
 4. The notification contains a link. The client must **click the link** to confirm they want the spot.
@@ -353,7 +353,7 @@ The waiting-list entries are visible in the attendance/session view. The process
 
 ## Troubleshooting
 
-### Client cannot see replacement sessions in their profile
+### Client cannot see make-up session in their profile
 
 Check the following:
 
@@ -387,7 +387,7 @@ This is a rare issue. If a client reports that they confirmed a replacement but 
 
 ### Credits not carrying over to the next billing period
 
-1. Check the global setting at **Settings > Replacement hours**. If the policy is set to "expire at end of class," credits will not carry over.
+1. Check the global setting at **Settings > Make-up session**. If the policy is set to "expire at end of class," credits will not carry over.
 2. Check the per-programme setting, which may override the global policy.
 3. Change the policy to "carry over" if you want credits to persist across billing periods.
 

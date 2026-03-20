@@ -166,7 +166,7 @@ If you want to allow a client to cancel and pick another available time, enable 
 
 [![Screenshot](../../assets/images/customizing-widgets-01.png)
 
-Guide: Custom make-up sessions](https://support.zooza.online/portal/en/kb/articles/replacement-lessons)
+Guide: Custom make-up sessions](https://support.zooza.online/portal/en/kb/articles/replacement-sessions)
 
 ![Screenshot](../../assets/images/customizing-widgets-01.png)
 

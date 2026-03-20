@@ -39,7 +39,7 @@ You can choose to copy:
 
 ## Copy a class
 
-Use this when you want to create a new class (group) within a programme — for example, a continuation class for the next billing period.
+Use this when you want to create a new class (class) within a programme — for example, a continuation class for the next billing period.
 
 1. Open the programme and go to the class you want to copy.
 2. Click **Copy** on the class.
@@ -84,7 +84,7 @@ You can optionally copy the existing bookings (registrations) along with the cla
 
 | Goal | Use |
 |------|-----|
-| New season for the same group of clients | **Copy class** with bookings |
+| New season for the same class of clients | **Copy class** with bookings |
 | One client switching to a different class | **Transfer booking** |
 | Creating a second parallel class with same settings | **Copy class** without bookings |
 | Repeating a programme in a new period | **Copy programme** |

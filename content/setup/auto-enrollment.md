@@ -27,7 +27,7 @@ In the case of individual programmes, this feature lets you arrange the start of
 ![Screenshot](../../assets/images/auto-enrollment-02.png)
 
 
-To successfully use auto-enrollment, you need to have created an offer of programmes and classes before activating the settings.
+To successfully use auto-enrolment, you need to have created an offer of programmes and classes before activating the settings.
 
 Auto-enrollment is configured in 2 places:
 
@@ -46,7 +46,7 @@ First, you need to set which programmes and classes you want to offer clients fo
 2. In *Auto-enrollment* tile click on *Edit*
  ![Screenshot](../../assets/images/auto-enrollment-04.png)
 3. Select the type of offer:
-4. *Suggest classes *- for class classes and follow-up programmes
+4. *Suggest classes *- for group classes and follow-up programmes
 5. *Duplicate current class* - ideal for individual clients.
  ![Screenshot](../../assets/images/auto-enrollment-05.png)
 
@@ -79,7 +79,7 @@ Attention! Only programmes with an age restriction filled in under *Extra Fields
  ![Screenshot](../../assets/images/auto-enrollment-09.png)
 
 
- 2. Finally, select classes you want to include in the auto-enrollment.
+ 2. Finally, select classes you want to include in the auto-enrolment.
 
 
 ![Screenshot](../../assets/images/auto-enrollment-10.png)
@@ -100,10 +100,10 @@ This option allows the client to choose when they want to start the next class â
 ## At the class level
 
 
-If the auto-enrollment functionality is active and you need to add another class to the programme (or simply want to expand the list of classes for auto-enrollment), open the *Settings *tile. There you will find a checkbox to add the selected class to the auto-enrollment offer.
+If the auto-enrolment functionality is active and you need to add another class to the programme (or simply want to expand the list of classes for auto-enrolment), open the *Settings *tile. There you will find a checkbox to add the selected class to the auto-enrolment offer.
 
 ![Screenshot](../../assets/images/auto-enrollment-12.png)
 
 ![Screenshot](../../assets/images/client-import-01.png)
 
-Note: If the programme does not have auto-enrollment enabled, the application will notify you and even if the checkbox is selected, this setting will be ignored.
+Note: If the programme does not have auto-enrolment enabled, the application will notify you and even if the checkbox is selected, this setting will be ignored.

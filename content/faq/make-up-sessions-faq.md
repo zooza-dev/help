@@ -51,23 +51,30 @@ Franchise networks can allow make-up bookings across branches operated by differ
 
 Setting up cross-company replacements has three steps:
 
-1. **Link the companies** — go to **Settings** → **Replacement lessons** → **Cooperate with a company**, enter the other branch's email, and send an invitation. The other branch must approve.
-2. **Enable on the programme** — open the programme → **Replacement lessons** → **Edit** → check **Allow replacement lessons from other companies**.
+1. **Link the companies** — go to **Settings** → **Make-up session** → **Cooperate with a company**, enter the other branch's email, and send an invitation. The other branch must approve.
+2. **Enable on the programme** — open the programme → **Make-up session** → **Edit** → check **Allow make-up session from other companies**.
 3. **Configure restrictions** — set the conditions under which clients from other branches can book at your sessions.
 
 Cross-company make-up bookings follow the same rules as regular make-up bookings (capacity, 4-day rule, programme match). The restriction settings control **incoming** replacements — they define when clients from another branch can use sessions at your company.
 
-For the full setup walkthrough, admin views, and reporting, see the [Cross-company replacements](../guides/replacement-hours-complete.md#cross-company--franchise-replacements) section in the Replacement Hours guide.
+For the full setup walkthrough, admin views, and reporting, see the [Cross-company replacements](../guides/replacement-hours-complete.md#cross-company--franchise-replacements) section in the Make-up Sessions guide.
 
 ## Can make-up credits carry over to the next billing period?
 
-Yes, depending on your settings. Go to **Settings** → **Make-up sessions** to choose one of three expiration modes:
+Yes. Go to **Settings** → **Make-up sessions** → **General Settings** and choose one of three expiration modes under **Make-up sessions behavior**:
 
-1. **Credits expire at the end of the class** — credits are valid only within the current class/term.
-2. **Credits carry over** — credits transfer to the next billing period automatically.
-3. **Credits expire after a set number of days** — you define how many days a credit remains valid.
+| Mode | Behavior |
+|---|---|
+| **Set transferred make-up sessions** | When the class ends, unused credits up to your set limit are carried over to the next period with a new expiration date. Credits beyond the limit are voided. |
+| **All make-up sessions expire at the end of the class** | All unused credits are voided when the class ends. |
+| **All make-up sessions expire after the preset number of days** | The class end date has no effect — credits expire based only on the number of days set. |
 
-Options 2 and 3 allow credits to be used across billing periods. This setting can also be overridden per programme.
+**Additional settings (when using transferred make-up sessions):**
+
+- **Maximum number of transferred make-up sessions between billing periods** — how many credits can be carried into the next period. Set to `0` to disable the carry-over entirely.
+- **Number of days to use transferred make-up sessions** — how long after the class ends the transferred credits remain usable.
+- **Default expiration of credits (in days)** — applies to all make-up credits from the date the credit is created (default: 90 days).
+- **Additional slots in classes** — extra capacity in sessions reserved specifically for make-up bookings (global setting; can be overridden per class).
 
 ## How do I delete or expire a make-up credit?
 
@@ -178,19 +185,19 @@ The most likely reason is the **time restriction for offering a regular make-up 
 
 Check the value in **Settings** → **Programmes** → **Time restriction in hours for offering a regular make-up session**.
 
-## What is the difference between a standard make-up session and a custom replacement lesson?
+## What is the difference between a standard make-up session and a custom make-up session?
 
 A **standard make-up session** works by filling a vacant spot in another scheduled class. The client picks from sessions that already exist and have available capacity.
 
-A **custom replacement lesson** lets the client propose a specific date and time to their instructor. The instructor checks their availability and approves or declines the request. If approved, a new session is created automatically.
+A **custom make-up session** lets the client propose a specific date and time to their instructor. The instructor checks their availability and approves or declines the request. If approved, a new session is created automatically.
 
-Custom replacement lessons are designed for individual or specialist sessions (piano lessons, personal training, counselling) where signing into someone else's class is not practical.
+Custom make-up session are designed for individual or specialist sessions (piano sessions, personal training, counselling) where signing into someone else's class is not practical.
 
-See [Custom replacement lessons](../guides/custom-replacement-lessons.md) for setup and workflow.
+See [Custom make-up session](../guides/custom-replacement-lessons.md) for setup and workflow.
 
-## Can I use custom replacement lessons for group classes?
+## Can I use custom make-up session for group classes?
 
-Yes, but it is unusual. Custom replacement lessons are primarily designed for 1-to-1 or individual sessions where the replacement needs to happen with a specific instructor at a specific time. For group classes, standard make-up sessions (based on vacant spots) are usually more practical.
+Yes, but it is unusual. Custom make-up session are primarily designed for 1-to-1 or individual sessions where the replacement needs to happen with a specific instructor at a specific time. For group classes, standard make-up sessions (based on vacant spots) are usually more practical.
 
 ## Can a client cancel a custom replacement request after submitting it?
 

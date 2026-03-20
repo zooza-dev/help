@@ -101,7 +101,7 @@ Make-up availability depends on real capacity — if no suitable session with sp
 
 ## Benefits
 
-The Benefits section groups all "extras" in one place:
+The Benefits section classes all "extras" in one place:
 
 | Benefit type | What the client sees |
 |---|---|

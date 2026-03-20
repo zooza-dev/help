@@ -37,7 +37,7 @@ For initial setup instructions, see [Deploying Zooza on your website](../setup/d
 
 ### WordPress plugin duplicate rendering
 
-**Problem:** The registration form, calendar, or another widget appears two or three times on the same page.
+**Problem:** The booking form, calendar, or another widget appears two or three times on the same page.
 
 **Cause:** The Zooza WordPress plugin automatically injects the widget at the bottom of the page you configure in its settings. If you also manually paste embed code (HTML snippet or shortcode) onto the same page, the widget renders multiple times.
 
@@ -61,7 +61,7 @@ For initial setup instructions, see [Deploying Zooza on your website](../setup/d
 3. Verify that the URL field uses `https://`.
 4. If the URL already shows `https://` but links still use `http://`, edit the URL field (add a character, save, then revert and save again) to force a database update.
 
-## Widget shows wrong courses or all courses
+## Widget shows wrong programmes or all programmes
 
 ### Filter syntax issues (comma vs semicolon delimiters)
 
@@ -109,23 +109,23 @@ For initial setup instructions, see [Deploying Zooza on your website](../setup/d
 
 ### Session vs group capacity confusion
 
-**Problem:** The calendar widget shows free spots on a session even though the group is full. New clients attempt to register for spots that are only temporarily available due to cancellations.
+**Problem:** The calendar widget shows free spots on a session even though the class is full. New clients attempt to register for spots that are only temporarily available due to cancellations.
 
-**Cause:** By default, the calendar widget displays per-session capacity (how many people are attending that specific session). When a client cancels a single session, that session shows a free spot even if the group itself has no open registrations. This capacity is intended for make-up (replacement) lessons, not new sign-ups.
+**Cause:** By default, the calendar widget displays per-session capacity (how many people are attending that specific session). When a client cancels a single session, that session shows a free spot even if the class itself has no open registrations. This capacity is intended for make-up (replacement) sessions, not new sign-ups.
 
 **Solution:**
 
 1. If you do not use blocks, Zooza now displays group capacity instead of session capacity by default. Verify your widget is using the latest behaviour.
 2. To control the capacity display, go to **Publish** > select your widget > **Calendar** settings and check the occupancy display option.
-3. If you use blocks, the calendar shows per-session capacity by design, because block-based courses manage capacity at the session level.
+3. If you use blocks, the calendar shows per-session capacity by design, because block-based programmes manage capacity at the session level.
 
 <!-- REVIEW: Group vs session capacity display toggle was deployed in Jan 2026. Confirm exact setting location and label. -->
 
 ### Archived items appearing in filters
 
-**Problem:** Archived courses or inactive billing periods still appear in the calendar widget filters.
+**Problem:** Archived programmes or inactive billing periods still appear in the calendar widget filters.
 
-**Cause:** Archived courses are hidden from most admin views but may still appear in public widget filter dropdowns if they were not fully removed from the widget configuration.
+**Cause:** Archived programmes are hidden from most admin views but may still appear in public widget filter dropdowns if they were not fully removed from the widget configuration.
 
 **Solution:**
 
@@ -205,18 +205,18 @@ For initial setup instructions, see [Deploying Zooza on your website](../setup/d
 
 ## Calendar widget issues
 
-### Group not appearing in the schedule widget
+### Class not appearing in the schedule widget
 
-**Problem:** A newly created group does not show up in the calendar/schedule widget on your website.
+**Problem:** A newly created class does not show up in the calendar/schedule widget on your website.
 
-**Cause:** There can be a short delay (typically a few minutes) between publishing a group in Zooza and it appearing on the website widget. Browser caching can extend this delay.
+**Cause:** There can be a short delay (typically a few minutes) between publishing a class in Zooza and it appearing on the website widget. Browser caching can extend this delay.
 
 **Solution:**
 
-1. Wait a few minutes after creating or publishing the group.
+1. Wait a few minutes after creating or publishing the class.
 2. Hard-refresh the website page (Ctrl+F5 on Windows, Cmd+Shift+R on Mac).
-3. Verify the group has online registration enabled: go to the group settings and check that online registration is turned on.
-4. If using filtered embed code, verify the new group's programme is included in the filter.
+3. Verify the class has online registration enabled: go to the class settings and check that online registration is turned on.
+4. If using filtered embed code, verify the new class's programme is included in the filter.
 
 ### Schedule widget showing text instead of calendar grid
 
@@ -244,7 +244,7 @@ For initial setup instructions, see [Deploying Zooza on your website](../setup/d
 
 ## Website down -- temporary redirect to Zooza Sites
 
-**Problem:** Your website is temporarily offline and clients cannot access registration forms or their profile.
+**Problem:** Your website is temporarily offline and clients cannot access booking form or their profile.
 
 **Cause:** When your website is down, all widget pages become unreachable. Email links sent to clients also stop working because they point to your website.
 

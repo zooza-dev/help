@@ -70,14 +70,14 @@ If you need more detail, see: Glossary of Key Terms (at the end of this article)
 8. If you use Billing software (e.g. Xero), you can keep billing details in your billing software and connect it to Zooza.
 9. [Guide: Billing and invoicing](billing-and-invoicing.md)
 10. Decide your main payment modelDo you think mostly in:Terms (Autumn / Spring / block of weeks), or
-11. Term Fee (paid monthly, one-off, quarterly, after/before N sessions...)
+11. Term Payment (paid monthly, one-off, quarterly, after/before N sessions...)
 12. Ongoing membership (rolling weekly classes), or
 13. Pay-per-session / drop in?
 14. This will help you pick the right payment template in the next steps.
 
 ![Screenshot](../../assets/images/customizing-widgets-01.png)
 
-TipIf you are unsure, start with Term Fee (price per term, split into instalments).You can refine and add more payment models later.
+TipIf you are unsure, start with Term Payment (price per term, split into instalments).You can refine and add more payment models later.
 
 3. Create your first Programme, Timetable and Sessions
 
@@ -91,7 +91,7 @@ In your Live account:
 2. Click Create Programme.
 3. Fill in:Name (e.g. “Dance for Tots – 2–3 years”)
 4. Description for parents
-5. Set your price:choose One-off, Term Fee, Membership, or Per session,
+5. Set your price:choose One-off, Term Payment, Membership, or Per session,
 6. define the main price (you can adjust or add discounts later).
 
 ### 3.2 Add a Timetable (Class / Class)
@@ -134,7 +134,7 @@ Go to Zooza > Settings > Payments:
 1. Stripe (card payments)Connect your existing Stripe account.
 2. Use Stripe for single payments or instalments by card.
 3. GoCardless (direct debit)Connect your GoCardless account.
-4. Use it for recurring direct debit (great for memberships and monthly term fees).
+4. Use it for recurring direct debit (great for memberships and monthly term payment).
 5. If you prefer bank transfers, you can still: (Zooza > Setting > Billing > Billing Profiles > Pair Bank Account) (For EU&UK banks)
 
 - generate payment requests with bank details / QR codes,
@@ -298,7 +298,7 @@ how pro-rata is calculated:
 
 - based on remaining sessions,
 - based on remaining days,
-- full term fee,
+- full term payment,
 - or no charge.
 
 You can also:
@@ -540,7 +540,7 @@ how pro-rata is calculated:
 
 - based on remaining sessions,
 - based on remaining days,
-- full term fee,
+- full term payment,
 - or no charge.
 
 You can also:
@@ -656,7 +656,7 @@ Client (Parent) A unique email address representing a parent who can manage mult
 
 Booking / Booking The process of enrolling in a programme; connected to a specific client and timetable.
 
-Term Fee Total amount a client commits to pay for a programme over a term or school year.
+Term Payment Total amount a client commits to pay for a programme over a term or school year.
 
 Debt The amount owed by the client, automatically generated based on your payment plan.
 

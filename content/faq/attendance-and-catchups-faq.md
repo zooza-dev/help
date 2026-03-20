@@ -27,7 +27,7 @@ Both views are available to admins and instructors alike. Quick view is not a "l
 
 **When to use Quick view:** Daily attendance marking when you just need to check off who came. Ideal for instructors marking attendance on their phone before or after a session.
 
-**When to use Full view:** When you need to handle cancellations with make-up credits, add attendance notes, manage replacement sessions, or review detailed attendance history.
+**When to use Full view:** When you need to handle cancellations with make-up credits, add attendance notes, manage make-up session, or review detailed attendance history.
 
 ## How does "Mark all as attended" work?
 
@@ -35,7 +35,7 @@ In **Quick view**, click the **Mark all as attended** button at the top of the a
 
 You can still change individual statuses after using this button — for example, switching one client to "Did not attend" or "Cancelled" if they didn't show up.
 
-Make-up session clients are listed separately below the enrolled group and are not affected by the bulk action.
+Make-up session clients are listed separately below the enrolled class and are not affected by the bulk action.
 
 ## How do instructors mark attendance?
 
@@ -78,7 +78,7 @@ Yes. The **Consents** section at the bottom of the session detail shows the cons
 Yes, from **Full view**. At the bottom of the session, two buttons appear:
 
 - **Send email to N recipients** — sends an email to all enrolled clients in that session.
-- **Send text message to N recipients** — sends an SMS to the same group.
+- **Send text message to N recipients** — sends an SMS to the same class.
 
 This is useful for last-minute changes like a venue update or session reminder. Communication permissions depend on the instructor's role — if the buttons are not visible, the admin needs to adjust the role settings.
 

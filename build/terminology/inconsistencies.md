@@ -1,303 +1,293 @@
 # Terminology Inconsistencies
 
-**Extracted:** 2026-02-11
-**Files scanned:** 85
+> Generated: 2026-03-14
+> Scanner: kb:standardizer full rescan
+> Files scanned: 174
+> Source: `content/` (all subdirectories)
+
+---
 
 ## Summary
-- Total terms extracted: 49
-- Synonym clusters: 11
-- Files with mixed terminology: 52
-- New/unknown terms for review: 21
 
-## Variant frequency
+| Metric | Value |
+|---|---|
+| Total source files scanned | 174 |
+| Total canonical clusters tracked | 19 |
+| Clusters with active conflicts | 9 |
+| Clusters fully resolved (0 non-canonical) | 10 |
+| Files with mixed terminology | 28 |
+| Unknown / new terms flagged | 5 |
+| New dictionary entries added this run | 6 |
+
+---
+
+## Resolved clusters (no action needed)
+
+These clusters have zero non-canonical occurrences in the current corpus:
+
+| Canonical | Status |
+|---|---|
+| lead collection | Clean — 48× correctly used across 23 files |
+| Pay-as-you-go | Clean — 99× correctly used across 27 files |
+| linked classes | Clean — no variants found |
+| entry pass | Clean — 123× correctly used across 15 files |
+| trial | Clean — 376× correctly used across 40 files |
+| transfer | Clean — 164× correctly used across 40 files |
+| copy | Clean — 13× correctly used across 6 files |
+| billing period | Clean — 61× correctly used; "term" as generic English is not misuse |
+
+---
+
+## Active conflicts — mixed usage by file
+
+### 1. programme (canonical) vs. course (deprecated)
+
+**Status:** 51 non-canonical occurrences across 18 files. Down from 474 in Feb 2026 scan.
+
+| File | Uses "course" (×) | Notes |
+|---|---|---|
+| `guides/programme-settings.md` | 13 | All in asset image filenames (`course-settings-*.png`) — prose is clean; filename rename not required |
+| `guides/price-and-payment-setup.md` | 6 | Heading "Course fee vs Membership" + table cell "Course fee" — should become "Term payment vs Membership" |
+| `faq/programmes-timetables-sessions-faq.md` | 7 | "bulk-delete courses" procedural section (lines 176–186) — needs full rewrite using "programmes" |
+| `guides/programme-class-session-definition.md` | 1 | "type of course" in body — should be "type of programme" |
+| `guides/blocks-creation.md` | 1 | "type of course" — should be "type of programme" |
+| `guides/automated-notifications.md` | 2 | "During course" / "After course" toggle labels — may be verbatim UI text; verify before replacing |
+| `guides/blocks-configuration.md` | 1 | "full course or a specific block" — replace with "full programme" |
+| `guides/customizing-widgets.md` | 1 | "course offerings" — replace with "programme offerings" |
+| `guides/individual-sessions-lead-collection.md` | 1 | "given course" — replace with "given programme" |
+| `guides/new-programme-existing-clients.md` | 1 | "Of course" (idiomatic expression) — do NOT replace |
+| `guides/user-roles.md` | 2 | "Of course" (×2, idiomatic) — do NOT replace |
+| `guides/automatic-payment-reminders-detailed.md` | 1 | "Of course" (idiomatic) — do NOT replace |
+
+**Action:** Rewrite procedural uses. Skip idiomatic "of course" and image filenames.
+
+---
+
+### 2. class (canonical) vs. group (deprecated)
+
+**Status:** 104 non-canonical occurrences across 32 files. Not all are errors — see protected uses below.
+
+Protected uses (do not replace):
+- "Group classes" — UI label for multi-client class type (contrasts with "1-to-1 class")
+- "group capacity" / "Group capacity" — widget capacity setting name
+- "Group Session" — instructor rate type label
+- Synonym comments in FAQ files
+
+| File | Uses "group" (×) | Notes |
+|---|---|---|
+| `guides/king-of-a-group.md` | 12 | File name and feature title uses legacy "king of a group" — verify current UI term |
+| `faq/trials-faq.md` | 9 | Several prose uses of "group" meaning "class" — replaceable |
+| `troubleshooting/widget-embedding.md` | 9 | "group capacity" (protected UI label) — do not replace |
+| `faq/programmes-timetables-sessions-faq.md` | 3 | "Group classes" (protected), other uses replaceable |
+| `guides/individual-sessions-lead-collection.md` | 5 | "individual group" should be "individual class" |
+| `guides/instructor-attendance-management.md` | 3 | "whole group" should be "whole class" |
+| `faq/locations-and-venues-faq.md` | 3 | Synonym comments only |
+| `guides/two-instructors-per-class.md` | 4 | Mix of protected "Group Session" rate label and replaceable "group" prose |
+
+**Action:** Replace "group" → "class" in prose where it means the scheduling unit. Preserve protected UI labels listed above.
+
+---
+
+### 3. booking (canonical) vs. registration (deprecated)
+
+**Status:** 187 non-canonical occurrences across 52 files. Many protected.
+
+Protected instances: "online registration" (feature name), "registration fee", "registration widget".
+
+| File | Uses "registration" (×) | Priority |
+|---|---|---|
+| `guides/edit-payment-on-booking.md` | 17 | HIGH — all replaceable |
+| `setup/online-registration.md` | 17 | LOW — mostly protected (feature name) |
+| `guides/replacement-hours-complete.md` | 14 | MEDIUM — mix |
+| `guides/blocks-configuration.md` | 10 | HIGH — mostly replaceable |
+| `faq/registration-and-booking-faq.md` | 13 | MEDIUM — FAQ title intentional; body replaceable |
+| `guides/payment-tile-on-booking.md` | 8 | HIGH — replaceable |
+| `guides/selling-products-during-booking.md` | 6 | HIGH — replaceable |
+| `guides/payment-templates-creation.md` | 6 | MEDIUM |
+| `guides/summer-camps-creation.md` | 7 | MEDIUM |
+| `guides/automated-notifications.md` | 3 | MEDIUM |
+
+**Action:** Run normalizer with smart preserves. Prioritise guides/edit-payment-on-booking.md, guides/payment-tile-on-booking.md, and guides/selling-products-during-booking.md.
+
+---
+
+### 4. client (canonical) vs. customer (deprecated)
+
+**Status:** 17 non-canonical occurrences across 11 files. Nearly clean.
+
+| File | Uses "customer" (×) | Notes |
+|---|---|---|
+| `glossary/terminology-review.md` | 6 | Intentional deprecated-term listing — keep |
+| `reference/programme-settings.md` | 2 | Verbatim UI field label "Keep customer in auto-enrollment for N days" — keep until UI updated |
+| `reference/bookings-list.md` | 1 | UI label context |
+| `reference/settings-hub.md` | 1 | May be UI text |
+| Other files | ~7 | Replaceable prose |
+
+**Action:** Replace prose uses. Leave verbatim UI field strings pending UI update confirmation.
+
+---
+
+### 5. make-up session (canonical) vs. replacement variants (deprecated)
+
+**Status:** 22 non-canonical occurrences across 6 files.
+
+| File | Variant | Count | Notes |
+|---|---|---|---|
+| `guides/replacement-hours-complete.md` | replacement hour/hours | 9 | File title uses deprecated term — consider slug rename to `make-up-sessions-complete.md` with redirect |
+| `glossary/terminology-review.md` | replacement session | 4 | Intentional deprecated listing — keep |
+| `glossary/index.md` | replacement session | 2 | Intentional deprecated listing — keep |
+| `guides/custom-replacement-lessons.md` | replacement lesson | 4 | Body replaceable; filename uses deprecated term — this file covers a distinct feature (custom/1-to-1 replacements), so "replacement lesson" may be intentional branding |
+| `guides/automated-notifications.md` | replacement session | 1 | Replaceable |
+| `faq/make-up-sessions-faq.md` | replacement session/lesson | 2 | Replaceable |
+
+**Action:** Replace prose in `replacement-hours-complete.md` and `faq/make-up-sessions-faq.md`. Consider slug rename for `replacement-hours-complete.md`. Glossary entries intentional — keep.
+
+---
+
+### 6. auto-enrolment (canonical) vs. auto-continuation / auto-enrollment
+
+**Status:** Three terms in active use.
+
+| Term | Count | Files | Status |
+|---|---|---|---|
+| auto-enrolment | 20 | 7 | Canonical (British spelling) |
+| auto-enrollment | 29 | 7 | American spelling — slug `setup/auto-enrollment.md` must stay stable |
+| auto-continuation | 10 | 3 | Legacy — replace in prose |
+
+Files with `auto-continuation` requiring action:
+
+| File | Count | Action |
+|---|---|---|
+| `faq/programmes.md` | 7 | Replace "Auto-continuation" with "auto-enrolment" in headings and body |
+| `guides/automated-notifications.md` | 2 | Rename section "Retention (auto-continuation)" → "Auto-enrolment notifications" |
+| `glossary/index.md` | 1 | Rename "### Auto-continuation" heading → "### Auto-enrolment" |
+
+Files mixing American/British spelling:
+
+| File | Notes |
+|---|---|
+| `reference/programme-settings.md` | Mix of both — standardise body prose to British; keep verbatim UI field label if needed |
+| `setup/auto-enrollment.md` | Slug stays; body prose should use "auto-enrolment" |
+
+**Action:** Replace "auto-continuation" in prose. Standardise to British "auto-enrolment" in body text. Slug `auto-enrollment.md` is stable.
+
+---
+
+### 7. instructor (canonical) vs. trainer (deprecated)
+
+**Status:** 3 new occurrences in `guides/custom-holidays.md`.
+
+| File | Variant | Count | Notes |
+|---|---|---|---|
+| `guides/custom-holidays.md` | trainer / Trainer | 3 | Two instances + "Trainer availability" subheading — verify if UI label before replacing |
+| `guides/instructor-substitution.md` | lecturer (image filenames) | 5 | Asset filenames only (`lecturer-substitution-*.png`) — alt text clean; filenames need not be renamed |
+| `guides/two-instructors-per-class.md` | lecturer | 1 | In legacy external URL — do not modify link target |
+
+**Action:** Replace "trainer" → "instructor" in `custom-holidays.md` prose. Flag "Trainer availability" for UI verification.
+
+---
+
+### 8. Client Profile (canonical) vs. parent portal (deprecated)
+
+**Status:** 5 non-canonical occurrences across 4 files.
+
+| File | Variant | Count | Notes |
+|---|---|---|---|
+| `faq/trials-faq.md` | parent portal | 3 | Lines 145, 147, 149 — all replaceable |
+| `guides/replacement-hours-complete.md` | parent portal | 1 | Explanatory parenthetical "(the parent portal)" — can be removed |
+| `guides/client-profile-101.md` | parent portal | 1 | In synonym comment `<!-- Synonyms: ... parent portal ... -->` — intentional |
+
+**Action:** Replace in `faq/trials-faq.md` (3×). Remove parenthetical in `replacement-hours-complete.md`.
+
+---
+
+### 9. term payment (canonical) vs. course fee / term fee (deprecated)
+
+**Status:** NEW cluster. 12 replaceable non-canonical occurrences (25 total minus glossary intentionals).
 
 | Canonical | Variant | Count | Files |
 |---|---|---|---|
-| Parent Zone | parent portal | 11 | 5 files |
-| Parent Zone | parent zone * | 3 | 1 files |
-| billing period | billing period * | 32 | 8 files |
-| booking | registration | 722 | 59 files |
-| booking | booking * | 124 | 13 files |
-| class | group | 340 | 45 files |
-| class | class * | 163 | 24 files |
-| class | timetable | 44 | 5 files |
-| client | client * | 534 | 64 files |
-| client | customer | 52 | 20 files |
-| instructor | lecturer | 122 | 15 files |
-| instructor | instructor * | 42 | 9 files |
-| instructor | tutor | 18 | 7 files |
-| instructor | trainer | 6 | 1 files |
-| instructor | teacher | 1 | 1 files |
-| make-up lesson | replacement lesson | 15 | 9 files |
-| payment plan | payment template | 53 | 13 files |
-| payment plan | payment plan * | 21 | 8 files |
-| programme | course | 526 | 55 files |
-| programme | programme * | 48 | 5 files |
-| session | session * | 225 | 22 files |
-| session | event | 191 | 33 files |
-| session | lesson | 148 | 28 files |
-| trial | trial * | 182 | 9 files |
+| term payment | course fee / Course fee | 6 | `guides/price-and-payment-setup.md` |
+| term payment | term fee / Term Fee | 6 | `setup/getting-started-with-zooza.md` |
 
-## Mixed usage by file
+**Action:** In `guides/price-and-payment-setup.md`, rename section "Course fee vs Membership" → "Term payment vs Membership". Replace "Course fee" with "Term payment". In `setup/getting-started-with-zooza.md`, replace "Term Fee" with "term payment".
 
-### auto-enrollment.md
-- Uses "class" (19x) and "group" (3x) — canonical: **class**
+---
 
-### automatic-event-notification.md
-- Uses "event" (7x) and "lesson" (6x) — canonical: **session**
+## Variant frequency table
 
-### billing-periods.md
-- Uses "class" (1x) and "group" (6x) — canonical: **class**
+| Canonical | Variant | Count | Key Files |
+|---|---|---|---|
+| booking | registration | 187 | edit-payment-on-booking.md, replacement-hours-complete.md, blocks-configuration.md |
+| class | group | 104 | king-of-a-group.md, trials-faq.md, widget-embedding.md |
+| programme | course | 51 | programme-settings.md (filenames only), price-and-payment-setup.md, programmes-timetables-sessions-faq.md |
+| auto-enrolment | auto-enrollment (American) | 29 | auto-enrollment.md (slug stable), programme-settings.md |
+| auto-enrolment | auto-continuation | 10 | programmes.md, automated-notifications.md |
+| make-up session | replacement hour/lesson/session | 22 | replacement-hours-complete.md, custom-replacement-lessons.md |
+| session | lesson | 11 | glossary entries (intentional), make-up-sessions-faq.md |
+| session | event | 24 | mostly legitimate context (local event, custom holiday) |
+| client | customer | 17 | programme-settings.md (UI label), terminology-review.md (intentional) |
+| term payment | course fee | 6 | price-and-payment-setup.md |
+| term payment | term fee | 6 | getting-started-with-zooza.md |
+| instructor | trainer | 3 | custom-holidays.md |
+| Client Profile | parent portal | 5 | trials-faq.md, replacement-hours-complete.md |
 
-### blocks-creation.md
-- Uses "class" (3x) and "group" (13x) — canonical: **class**
-- Uses "client" (17x) and "customer" (1x) — canonical: **client**
-- Uses "session" (11x) and "event" (1x) — canonical: **session**
+---
 
-### business-registration.md
-- Uses "client" (1x) and "customer" (2x) — canonical: **client**
+## Files with mixed terminology — priority list (28 files)
 
-### change-instructor.md
-- Uses "class" (6x) and "timetable" (1x) — canonical: **class**
+| File | Conflicts | Priority |
+|---|---|---|
+| `guides/replacement-hours-complete.md` | registration (14×) + replacement hour (9×) + parent portal (1×) | HIGH |
+| `faq/programmes-timetables-sessions-faq.md` | course (7×) + registration (3×) + group (3×) | HIGH |
+| `guides/price-and-payment-setup.md` | course fee (6×) | HIGH |
+| `guides/edit-payment-on-booking.md` | registration (17×) | HIGH |
+| `setup/getting-started-with-zooza.md` | term fee (6×) | MEDIUM |
+| `guides/automated-notifications.md` | auto-continuation (2×) + registration (3×) | MEDIUM |
+| `faq/programmes.md` | auto-continuation (7×) | MEDIUM |
+| `guides/blocks-configuration.md` | registration (10×) | MEDIUM |
+| `faq/trials-faq.md` | group (9×) + parent portal (3×) | MEDIUM |
+| `guides/payment-tile-on-booking.md` | registration (8×) | MEDIUM |
+| `guides/selling-products-during-booking.md` | registration (6×) | MEDIUM |
+| `guides/custom-holidays.md` | trainer (3×) | LOW |
+| `guides/king-of-a-group.md` | group (12×, structural) | LOW — needs product discussion |
+| `guides/custom-replacement-lessons.md` | replacement lesson (4×) | LOW |
+| `glossary/index.md` | auto-continuation (1×, heading) | LOW |
 
-### client-import.md
-- Uses "client" (10x) and "customer" (2x) — canonical: **client**
+---
 
-### collecting-reason-for-cancelling.md
-- Uses "client" (3x) and "customer" (6x) — canonical: **client**
-- Uses "event" (2x) and "lesson" (2x) — canonical: **session**
+## Unknown terms (need product review)
 
-### common-booking-scenarios.md
-- Uses "booking" (10x) and "registration" (3x) — canonical: **booking**
+### 1. "trainer availability" — `guides/custom-holidays.md`
+**Context:** "Custom holidays automatically appear as conflicts in trainer availability." (2×)
+**Question:** Is "Trainer availability" a named UI section in the app? If yes, preserve verbatim. If not, use "instructor availability."
 
-### course-group-lesson-definition.md
-- Uses "class" (1x) and "group" (13x) and "timetable" (1x) — canonical: **class**
-- Uses "client" (4x) and "customer" (1x) — canonical: **client**
-- Uses "event" (10x) and "lesson" (5x) — canonical: **session**
+### 2. "king of a group" — `guides/king-of-a-group.md`
+**Context:** A feature where one designated booking controls the class schedule. 12× "group" in this file.
+**Question:** Is "king of a group" still the current UI feature name? If renamed, update slug (add redirect).
 
-### course-settings.md
-- Uses "class" (11x) and "group" (1x) — canonical: **class**
-- Uses "session" (9x) and "event" (1x) and "lesson" (2x) — canonical: **session**
+### 3. "retention" — `guides/automated-notifications.md`
+**Context:** Section heading "Retention (auto-continuation)". Not found elsewhere as standalone term.
+**Question:** Is "retention" used in any Zooza UI screen? If not, rename section to "Auto-enrolment notifications".
 
-### course-settings-tile.md
-- Uses "class" (1x) and "group" (1x) — canonical: **class**
+### 4. "Guest" as booking status — `reference/payments-dashboard.md`, `reference/communication-message-templates.md`
+**Context:** Bookings can have "Guest" status (total revenue includes "Enrolled" and "Guest" statuses). Template "Booking as guest done" = enrolling as a guest to a full programme.
+**Note:** This "guest" is distinct from "guest access to a booking" (second parent view-only access) and "guest instructor" (external role). These three uses of "guest" are not synonyms.
+**Recommendation:** Add "Guest (booking status)" as a new dictionary entry. Clarify disambiguation in relevant docs.
 
-### customizing-widgets.md
-- Uses "client" (7x) and "customer" (3x) — canonical: **client**
-- Uses "session" (2x) and "event" (2x) — canonical: **session**
+### 5. "timetable" — scoped ambiguity
+**Context:** Used 61× across 17 files. Deprecated as a synonym for "class" but actively used in Auto-Enrolment UI ("Timetables in Auto-Enrolment" section in `reference/programme-settings.md`).
+**Recommendation:** Add scoped rule — deprecated when meaning a Class entity; preserved when referring to the Auto-Enrolment timetable picker UI component.
 
-### discount-code.md
-- Uses "client" (10x) and "customer" (1x) — canonical: **client**
+---
 
-### discount-types.md
-- Uses "client" (16x) and "customer" (1x) — canonical: **client**
-- Uses "event" (2x) and "lesson" (5x) — canonical: **session**
+## Changelog (since last scan 2026-02-15, 130 files)
 
-### documents.md
-- Uses "session" (1x) and "event" (5x) and "lesson" (2x) — canonical: **session**
-
-### dynamic-tags.md
-- Uses "client" (3x) and "customer" (4x) — canonical: **client**
-- Uses "event" (2x) and "lesson" (3x) — canonical: **session**
-
-### edit-event-notification-template.md
-- Uses "event" (6x) and "lesson" (2x) — canonical: **session**
-
-### edit-events-in-courses.md
-- Uses "session" (8x) and "event" (19x) and "lesson" (8x) — canonical: **session**
-
-### edit-payment-on-registration.md
-- Uses "client" (13x) and "customer" (1x) — canonical: **client**
-
-### getting-started-with-zooza.md
-- Uses "parent zone" (3x) and "parent portal" (2x) — canonical: **Parent Zone**
-- Uses "booking" (46x) and "registration" (14x) — canonical: **booking**
-- Uses "class" (17x) and "group" (6x) and "timetable" (37x) — canonical: **class**
-- Uses "instructor" (4x) and "teacher" (1x) — canonical: **instructor**
-- Uses "payment plan" (2x) and "payment template" (8x) — canonical: **payment plan**
-- Uses "programme" (33x) and "course" (2x) — canonical: **programme**
-- Uses "session" (32x) and "event" (2x) and "lesson" (2x) — canonical: **session**
-
-### gocardless-direct-debit-mandates.md
-- Uses "booking" (5x) and "registration" (2x) — canonical: **booking**
-- Uses "payment plan" (5x) and "payment template" (2x) — canonical: **payment plan**
-
-### how-to-create-paid-events.md
-- Uses "client" (2x) and "customer" (1x) — canonical: **client**
-- Uses "event" (31x) and "lesson" (9x) — canonical: **session**
-
-### individual-lessons-climbing-wall.md
-- Uses "instructor" (2x) and "lecturer" (2x) and "tutor" (1x) — canonical: **instructor**
-- Uses "event" (16x) and "lesson" (13x) — canonical: **session**
-
-### individual-lessons-group-interested.md
-- Uses "event" (4x) and "lesson" (7x) — canonical: **session**
-
-### individual-lessons-with-free-lesson.md
-- Uses "event" (8x) and "lesson" (14x) — canonical: **session**
-
-### individual-sessions.md
-- Uses "booking" (8x) and "registration" (26x) — canonical: **booking**
-- Uses "class" (21x) and "group" (13x) and "timetable" (2x) — canonical: **class**
-- Uses "payment plan" (3x) and "payment template" (3x) — canonical: **payment plan**
-- Uses "session" (24x) and "event" (1x) and "lesson" (2x) — canonical: **session**
-
-### instructor-rate-reward.md
-- Uses "lecturer" (26x) and "tutor" (3x) — canonical: **instructor**
-- Uses "event" (1x) and "lesson" (1x) — canonical: **session**
-
-### lecturer-substitution.md
-- Uses "event" (2x) and "lesson" (3x) — canonical: **session**
-
-### lecturers-working-hours.md
-- Uses "lecturer" (4x) and "tutor" (1x) — canonical: **instructor**
-
-### message-templates.md
-- Uses "class" (1x) and "group" (1x) — canonical: **class**
-- Uses "event" (4x) and "lesson" (2x) — canonical: **session**
-
-### multi-day-event-with-product-offer.md
-- Uses "booking" (1x) and "registration" (32x) — canonical: **booking**
-- Uses "event" (7x) and "lesson" (3x) — canonical: **session**
-
-### network-application.md
-- Uses "class" (5x) and "group" (1x) — canonical: **class**
-
-### online-registration.md
-- Uses "booking" (1x) and "registration" (21x) — canonical: **booking**
-
-### open-course-creation.md
-- Uses "class" (1x) and "group" (8x) — canonical: **class**
-
-### parent-portal-101.md
-- Uses "booking" (5x) and "registration" (4x) — canonical: **booking**
-
-### parent-profile-dashboard.md
-- Uses "booking" (6x) and "registration" (2x) — canonical: **booking**
-
-### payment-options.md
-- Uses "client" (4x) and "customer" (5x) — canonical: **client**
-
-### payment-templates-creation.md
-- Uses "booking" (1x) and "registration" (23x) — canonical: **booking**
-- Uses "class" (4x) and "group" (12x) — canonical: **class**
-- Uses "client" (17x) and "customer" (5x) — canonical: **client**
-- Uses "lecturer" (4x) and "tutor" (1x) — canonical: **instructor**
-- Uses "payment plan" (3x) and "payment template" (20x) — canonical: **payment plan**
-
-### personas.md
-- Uses "client" (39x) and "customer" (1x) — canonical: **client**
-- Uses "session" (1x) and "event" (1x) — canonical: **session**
-
-### power-bi-data-description.md
-- Uses "instructor" (6x) and "trainer" (6x) — canonical: **instructor**
-- Uses "session" (12x) and "event" (8x) — canonical: **session**
-
-### selling-products-during-registration.md
-- Uses "booking" (18x) and "registration" (6x) — canonical: **booking**
-- Uses "class" (4x) and "group" (1x) and "timetable" (3x) — canonical: **class**
-
-### send-email-after-event.md
-- Uses "event" (6x) and "lesson" (3x) — canonical: **session**
-
-### sending-email-sms.md
-- Uses "client" (24x) and "customer" (1x) — canonical: **client**
-
-### sending-requests.md
-- Uses "client" (5x) and "customer" (3x) — canonical: **client**
-
-### summer-camps-creation.md
-- Uses "lecturer" (4x) and "tutor" (3x) — canonical: **instructor**
-- Uses "event" (2x) and "lesson" (2x) — canonical: **session**
-
-### trial-lessons.md
-- Uses "class" (13x) and "group" (14x) — canonical: **class**
-- Uses "payment plan" (1x) and "payment template" (1x) — canonical: **payment plan**
-- Uses "session" (39x) and "event" (2x) and "lesson" (31x) — canonical: **session**
-
-### trials-daily-business.md
-- Uses "booking" (6x) and "registration" (11x) — canonical: **booking**
-- Uses "class" (19x) and "group" (2x) — canonical: **class**
-
-### two-lecturers-per-group.md
-- Uses "lecturer" (18x) and "tutor" (1x) — canonical: **instructor**
-
-### types-of-registrations.md
-- Uses "client" (8x) and "customer" (8x) — canonical: **client**
-
-### user-roles.md
-- Uses "class" (2x) and "group" (9x) — canonical: **class**
-- Uses "lecturer" (26x) and "tutor" (8x) — canonical: **instructor**
-- Uses "event" (2x) and "lesson" (5x) — canonical: **session**
-
-### viewing-billable-events.md
-- Uses "session" (1x) and "event" (28x) — canonical: **session**
-
-## Top terms by frequency
-
-| Term           | Category     | Occurrences | Files |
-| -------------- | ------------ | ----------- | ----- |
-| booking        | core_concept | 846         | 61    |
-| client         | core_concept | 586         | 67    |
-| programme      | core_concept | 574         | 59    |
-| session        | core_concept | 564         | 49    |
-| class          | core_concept | 547         | 53    |
-| template       | unknown      | 221         | 28    |
-| instructor     | role         | 189         | 23    |
-| trial          | status       | 182         | 9     |
-| discount       | payment      | 108         | 12    |
-| invoice        | payment      | 107         | 16    |
-| notification   | unknown      | 98          | 29    |
-| reminder       | unknown      | 91          | 14    |
-| attendance     | unknown      | 86          | 21    |
-| payment plan   | payment      | 74          | 16    |
-| block          | unknown      | 66          | 7     |
-| capacity       | unknown      | 56          | 12    |
-| vat            | payment      | 49          | 7     |
-| register       | unknown      | 44          | 17    |
-| admin          | role         | 38          | 15    |
-| calendar       | unknown      | 35          | 12    |
-| billing period | payment      | 32          | 8     |
-| xero           | integration  | 32          | 2     |
-| extra field    | unknown      | 30          | 10    |
-| refund         | payment      | 30          | 7     |
-| widget         | ui_element   | 30          | 3     |
-| dashboard      | ui_element   | 20          | 5     |
-| bank transfer  | unknown      | 19          | 4     |
-| waitlist       | status       | 18          | 3     |
-| gocardless     | integration  | 17          | 7     |
-| cancel         | unknown      | 16          | 11    |
-| smartbill      | integration  | 16          | 1     |
-| make-up lesson | action       | 15          | 9     |
-| discount code  | unknown      | 15          | 2     |
-| Parent Zone    | ui_element   | 14          | 5     |
-| direct debit   | payment      | 14          | 3     |
-| abra flexi     | integration  | 11          | 1     |
-| power bi       | integration  | 11          | 2     |
-| stripe         | integration  | 9           | 3     |
-| enroll         | unknown      | 8           | 4     |
-| semester       | unknown      | 7           | 3     |
-
-## Unknown terms (need review)
-
-- **attendance** (86x in 21 files) — e.g. add-zooza-app-to-phone, blocks-creation, collecting-reason-for-cancelling
-- **bank transfer** (19x in 4 files) — e.g. getting-started-with-zooza, payment-options, payment-pairing
-- **block** (66x in 7 files) — e.g. blocks-creation, dynamic-tags, getting-started-with-zooza
-- **calendar** (35x in 12 files) — e.g. add-zooza-app-to-phone, billing-periods, change-instructor
-- **cancel** (16x in 11 files) — e.g. collecting-reason-for-cancelling, common-booking-scenarios, customizing-widgets
-- **capacity** (56x in 12 files) — e.g. getting-started-with-zooza, individual-lessons-climbing-wall, individual-lessons-group-interested
-- **custom field** (1x in 1 files) — e.g. power-bi-data-description
-- **discount code** (15x in 2 files) — e.g. discount-code, discount-types
-- **enrol** (1x in 1 files) — e.g. trials-daily-business
-- **enroll** (8x in 4 files) — e.g. auto-enrollment, course-settings, discount-types
-- **extra field** (30x in 10 files) — e.g. allowing-multiple-registration, auto-enrollment, business-registration
-- **make-up class** (1x in 1 files) — e.g. common-booking-scenarios
-- **notification** (98x in 29 files) — e.g. automatic-event-notification, automatic-payment-reminders, change-instructor
-- **payment schedule** (4x in 4 files) — e.g. automatic-payment-reminders, edit-payment-on-registration, payment-templates-creation
-- **persona** (4x in 2 files) — e.g. individual-sessions, personas
-- **register** (44x in 17 files) — e.g. blocks-creation, business-registration, course-group-lesson-definition
-- **reminder** (91x in 14 files) — e.g. automatic-event-notification, automatic-payment-reminders, automatic-payment-reminders-detailed
-- **semester** (7x in 3 files) — e.g. blocks-creation, course-group-lesson-definition, payment-templates-creation
-- **template** (221x in 28 files) — e.g. automatic-event-notification, automatic-payment-reminders, blocks-creation
-- **term fee** (7x in 1 files) — e.g. getting-started-with-zooza
-- **waiting list** (7x in 4 files) — e.g. message-templates, multi-day-event-with-product-offer, online-registration
+| Change | Detail |
+|---|---|
+| Files scanned | 130 → 174 (+44 new files) |
+| New dictionary entries added | venue, term payment, trial, transfer, copy, billing period |
+| Updated entries | instructor (trainer variant + preserve rules), auto-enrolment (split from auto-continuation, American spelling), make-up session (replacement session variant), class (Group classes + group capacity preserves), session (One-off Event preserve) |
+| All counts refreshed | Occurrence counts updated to 174-file corpus state |
+| Resolved clusters confirmed clean | lead collection, Pay-as-you-go, linked classes, entry pass, trial, transfer, copy |
+| payment template conflict noted | terminology-review.md lists "payment template" as deprecated → "Payment Plan", but both are active distinct concepts. Flagged for product decision before normalizer runs. |

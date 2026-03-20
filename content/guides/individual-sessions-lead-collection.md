@@ -27,9 +27,9 @@ The first question to ask yourself is how well you can tell when and how many se
 
 Based on the above, start making an offer as follows:
 
-1. Create classes as Lead collection in a given course. Interested parties will gradually enrol in the class and wait for instructions. Don’t forget to edit the email template that will come as a confirmation of inclusion in the class – *Lead collection*.[Instructions](lead-collection.md)
-2. Create an individual group. Then create sessions for individual bookings by creating a class of one capacity. [Instructions](creating-a-class.md)
-3. Move the client from the lead collection class to an individual group. Create session dates and move the given booking to this class from the class – *Lead collection*. In the booking details, click on the *Class* tab and then on the *Move* option where you select where.
+1. Create classes as Lead collection in a given programme. Interested parties will gradually enrol in the class and wait for instructions. Don’t forget to edit the email template that will come as a confirmation of inclusion in the class – *Lead collection*.[Instructions](lead-collection.md)
+2. Create an individual class. Then create sessions for individual bookings by creating a class of one capacity. [Instructions](creating-a-class.md)
+3. Move the client from the lead collection class to an individual class. Create session dates and move the given booking to this class from the class – *Lead collection*. In the booking details, click on the *Class* tab and then on the *Move* option where you select where.
  ![Screenshot](../../assets/images/individual-lessons-group-interested-01.png)
  ![Screenshot](../../assets/images/individual-lessons-group-interested-02.png)
 4. Choose the client’s first session or let him choose it himself. In the client’s attendance section, sign the client in for the session or they can do so in their profile.

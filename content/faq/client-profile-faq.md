@@ -86,7 +86,7 @@ The button appears when all of the following conditions are met:
 1. The client previously cancelled the session.
 2. The session has not yet occurred.
 3. There is available capacity in the session.
-4. The re-enrollment window has not expired.
+4. The re-enrolment window has not expired.
 
 If any of these conditions is not met, the button will not appear. Check session capacity and timing if a client reports the button is missing.
 

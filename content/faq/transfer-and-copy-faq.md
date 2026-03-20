@@ -22,7 +22,7 @@ For a step-by-step walkthrough with screenshots, see [Transfer and copy bookings
 ## What is the difference between copying a booking, copying a class, and copying a programme?
 
 - **Copy booking** — duplicates a single client's booking from one class to another. Used to continue one client in a new term or add them to an additional class.
-- **Copy class** — creates a new class within a programme, optionally copying its sessions and all bookings in bulk. Used when setting up a new season for an entire group.
+- **Copy class** — creates a new class within a programme, optionally copying its sessions and all bookings in bulk. Used when setting up a new season for an entire class.
 - **Copy programme** — creates a new programme with the same settings. Used when starting a new period with a fresh programme structure.
 
 ## How do I copy an entire class to a new season?

@@ -59,7 +59,7 @@ If your business operates across multiple districts or regions (for example, a f
 
 Repeat for every location. Sessions generated for classes at each location will respect only the holidays of that location's assigned region.
 
-> **Important:** If a location has no region set, the system cannot determine which holidays apply. This commonly happens with online courses or newly added locations. Always verify that every location -- including online or virtual ones -- has a region assigned.
+> **Important:** If a location has no region set, the system cannot determine which holidays apply. This commonly happens with online programmes or newly added locations. Always verify that every location -- including online or virtual ones -- has a region assigned.
 
 <!-- REVIEW: Confirm whether online/virtual locations inherit the company-level region or default to no region when left blank. Support case suggests they default to no region. -->
 

@@ -16,7 +16,7 @@ last_converted: 2026-02-11
 
 # Blocks creation
 
-The blocks feature allows you to divide the terms within a class into smaller logical units - subgroups that you can use for different purposes depending on the needs of your organization or the type of course.
+The blocks feature allows you to divide the terms within a class into smaller logical units - subgroups that you can use for different purposes depending on the needs of your organization or the type of programme.
 
 For example, blocks can be used for:
 

@@ -62,24 +62,24 @@ Yes. Tracking attendance is important because it triggers the trial-to-enrolment
 
 ## Trials and blocks cause overbooking — what is happening?
 
-This is a known limitation when a class uses both trial lessons and blocks (sub-periods within a group) at the same time.
+This is a known limitation when a class uses both trial sessions and blocks (sub-periods within a class) at the same time.
 
-When a client books a trial, the system can reserve a spot in the **group-wide** capacity. However, block capacity is calculated **per block**. Because the system does not know which specific block the trial client will eventually join, it cannot accurately reserve a per-block seat. In practice this means:
+When a client books a trial, the system can reserve a spot in the **class-wide** capacity. However, block capacity is calculated **per block**. Because the system does not know which specific block the trial client will eventually join, it cannot accurately reserve a per-block seat. In practice this means:
 
-1. A trial booking may fill a session slot at the group level.
-2. A paying client then registers for a specific block in the same group.
+1. A trial booking may fill a session slot at the class level.
+2. A paying client then registers for a specific block in the same class.
 3. The system prioritises the paying client (confirmed revenue) over the trial (non-binding), which can push the session over its per-block capacity.
 
 **Workaround:** Go to **Programme → Settings → Trial** and configure trial bookings to use **extra capacity** only. This ensures that trial reservations never consume spots intended for paying clients. The trial client is added on top of the normal capacity limit instead of inside it.
 
 If you prefer to keep the current setting, you will need to manage overbooking manually — for example, by contacting the trial client and moving them to a different session that still has available spots. <!-- REVIEW: confirm "extra capacity" setting label matches current UI -->
 
-## Can a client who finished a trial register again for a full course in the same class?
+## Can a client who finished a trial register again for a full programme in the same class?
 
-Yes. Once the trial process reaches a final state, the client can register for a full paid course in the same class. The exact flow depends on the trial status:
+Yes. Once the trial process reaches a final state, the client can register for a full paid programme in the same class. The exact flow depends on the trial status:
 
 1. **Trial ended (Trial Won / Trial Lost):** Open the registration detail. You will see a **Start registration** button. Click it to convert the trial into a full paid booking. The client can also do this themselves through the enrolment link sent by the trial automation.
-2. **Trial still in progress:** If the trial registration is still active (for example, in "Trial Started" state), the system will **not** allow a new registration with the same email into the same group. The trial must first reach a final state — either "Trial Won" or "Trial Lost" — before a new registration is possible.
+2. **Trial still in progress:** If the trial registration is still active (for example, in "Trial Started" state), the system will **not** allow a new registration with the same email into the same class. The trial must first reach a final state — either "Trial Won" or "Trial Lost" — before a new registration is possible.
 
 To move a trial to a final state manually, change the registration status to **Trial Lost** (or **Trial Won** if they attended). After that, either use the **Start registration** button on the existing registration or have the client go through the booking form again.
 
@@ -142,24 +142,24 @@ For bank transfer, they use the payment details (variable symbol and account num
 
 If the client does not receive the confirmation email or cannot find payment instructions, you can resend the notification from the booking detail.
 
-## Should I send trial clients the booking page link or the parent portal link?
+## Should I send trial clients the booking page link or the Client Profile link?
 
-Send them the **booking page link** — not the parent portal.
+Send them the **booking page link** — not the Client Profile.
 
-The parent portal is designed for existing registered clients to manage their bookings, attendance, and payments. New parents still need to go through the booking process first. Once they have a confirmed booking, the portal becomes their place to manage everything.
+The Client Profile is designed for existing registered clients to manage their bookings, attendance, and payments. New parents still need to go through the booking process first. Once they have a confirmed booking, the portal becomes their place to manage everything.
 
 For trial attendees you want to convert to full enrolments, the best options are:
 
-- **Direct group link** — send the link to the specific class they attended. This is the most guided path and avoids them landing in the wrong group.
+- **Direct class link** — send the link to the specific class they attended. This is the most guided path and avoids them landing in the wrong class.
 - **General booking page** — share your main booking URL. They select the correct class themselves and complete registration from there.
 
-After a trial session, the system can also automatically send an **invitation link directly to the group they attended**. This link can be triggered from the attendance screen by selecting which group the follow-up notification should go to. This is the cleanest flow for converting a trial into a full booking.
+After a trial session, the system can also automatically send an **invitation link directly to the class they attended**. This link can be triggered from the attendance screen by selecting which class the follow-up notification should go to. This is the cleanest flow for converting a trial into a full booking.
 
 ## A trial client created a duplicate account — why does this happen and how do I fix it?
 
 The most common cause is the parent using a **different email address** for the trial than the one they use when completing the full booking (e.g. a work email for the trial, personal email for the booking form, or vice versa).
 
-**Prevention:** Use the invitation link sent after the trial session. This link is pre-connected to the parent's trial record and guides them into the correct group, reducing the chance of a new unlinked account being created.
+**Prevention:** Use the invitation link sent after the trial session. This link is pre-connected to the parent's trial record and guides them into the correct class, reducing the chance of a new unlinked account being created.
 
 **What it might look like:** Sometimes what appears to be a duplicate is not actually a separate account — it can be a second booking or an incomplete registration. Always check the booking history on both records before merging.
 

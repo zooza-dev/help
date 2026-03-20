@@ -90,7 +90,7 @@ Click on *Extend booking form with additional fields*.
 
 ### Customize the code to insert
 
-If you have a variety of course offerings - for example, camps, children's programmes, or one-off sessions - you can easily customize the HTML code of your booking form to suit your needs.
+If you have a variety of programme offerings - for example, camps, children's programmes, or one-off sessions - you can easily customize the HTML code of your booking form to suit your needs.
 
 1. In Zooza, go to the Publish section.
 2. Choose Embed code.
@@ -200,7 +200,7 @@ You can filter which programmes, classes, or locations appear in a widget by add
 | Parameter | Purpose | Example |
 |---|---|---|
 | `course_id` | Show only a specific programme | `?course_id=4941` |
-| `schedule_id` | Show only a specific class (group) | `?schedule_id=72709` |
+| `schedule_id` | Show only a specific class (class) | `?schedule_id=72709` |
 | `place_id` | Show only a specific location | `?place_id=369_0` |
 
 You can combine parameters using `&`:

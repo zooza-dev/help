@@ -52,7 +52,7 @@ Choose the type that matches how clients will use this programme:
 | Type | Description | Typical use |
 |---|---|---|
 | **One-off event** | A single session on a specific date. Clients enrol and attend once. | Lectures, workshops, open days, consultations |
-| **Booking for full programme duration** | Multiple sessions over a defined period. Clients sign up for all sessions at once. | Term courses, semesters, ongoing classes |
+| **Booking for full programme duration** | Multiple sessions over a defined period. Clients sign up for all sessions at once. | Term programmes, semesters, ongoing classes |
 | **Pay-as-you-go** | Clients enrol once and then choose which individual sessions to attend. They pay only for sessions they book. | Drop-in classes, flexible schedules |
 
 > **Note:** You can offer [entry passes](creating-entry-passes.md) alongside pay-as-you-go programmes to let clients prepay for a bundle of sessions. See the full [Pay-as-you-go guide](pay-as-you-go-programme.md) for details.
@@ -62,7 +62,7 @@ Choose the type that matches how clients will use this programme:
 | Option | Use when |
 |---|---|
 | **Group classes** | Multiple clients attend the same sessions together. |
-| **1-to-1** | Each session is with one client only (private lessons, personal training, individual consultations). |
+| **1-to-1** | Each session is with one client only (private sessions, personal training, individual consultations). |
 
 ### For children
 

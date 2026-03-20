@@ -104,7 +104,7 @@ Common tags available in dynamic documents:
 |---|---|
 | `*\|FIRST_NAME\|*` | Client's first name. |
 | `*\|DUE_DATE\|*` | Payment due date. |
-| `*\|ALLOW_REPLACEMENTS\|*` | Replacement sessions information. |
+| `*\|ALLOW_REPLACEMENTS\|*` | Make-up session information. |
 | `*\|EF_ADDRESS\|*` | Client's address (from extra fields). |
 
 Both the Header and Text fields include a rich text toolbar with: undo/redo, bold, italic, strikethrough, link, image, lists, alignment, horizontal rule, clear formatting, and source code view.

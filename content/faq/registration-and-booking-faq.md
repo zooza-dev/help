@@ -107,6 +107,25 @@ This is useful when divorced or separated parents both need visibility into the 
 
 > **Warning:** If you collect a secondary email address via an **extra field** on the booking form (e.g., Additional field 1), that value is **not** automatically transferred to the system's secondary email field. Extra fields are text-only data collection and are not linked to system notification fields. You must manually copy the email from the extra field into the booking's **Additional settings** → secondary email field for the second parent to actually receive notifications.
 
+## What does the "Date of last registration update" field mean in exports?
+
+The **Date of last registration update** column reflects the timestamp of the most recent change to that registration record — not necessarily any specific event like a cancellation.
+
+It updates whenever **any** field on the registration changes, including:
+
+- payment status changes (paid, partially paid, refunded)
+- cancellation or deletion of the registration
+- restoring a previously cancelled registration
+- changes to notes, assigned class, instructor, or other fields
+
+**Practical implications:**
+
+- If a registration has status `deleted` or `cancelled`, the date shown is **not guaranteed to be the cancellation date** — it is the date of the last change, which may have happened after the cancellation (e.g. a payment adjustment).
+- To find the exact cancellation date for a cancelled registration, use the dedicated **Cancellation date** field in the export if available, rather than relying on the last-update timestamp.
+- If you are filtering exports for cancelled registrations and need accurate timing, cross-reference the registration status column with the cancellation date column rather than the last-update column.
+
+---
+
 ## Why is my programme not showing on the booking page?
 
 Both `Allow online booking` and `Display in catalogue` must be enabled for a programme to appear on your public booking page.

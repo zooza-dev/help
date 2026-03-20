@@ -38,7 +38,7 @@ Select one of the two class types:
 
 | Type | Description |
 |---|---|
-| **Fixed Period** | A class with scheduled sessions (dates and times). Use this for most programmes — courses, terms, camps. |
+| **Fixed Period** | A class with scheduled sessions (dates and times). Use this for most programmes — programmes, terms, camps. |
 | **Lead Collection** | A class without sessions. Use this to collect interest from potential clients before scheduling. When you add sessions later, it becomes a fixed period class. See [Lead collection](lead-collection.md). |
 
 ## Step 2 — Fill in class details

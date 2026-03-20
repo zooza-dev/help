@@ -98,7 +98,7 @@ Holiday-skip rules apply only at the time of initial session creation. If you cr
 
 ### Trainer availability
 
-Custom holidays automatically appear as conflicts in trainer availability. If a trainer is scheduled for a session that falls within a custom holiday, the system flags it.
+Custom holidays automatically appear as conflicts in trainer availability. If an instructor is scheduled for a session that falls within a custom holiday, the system flags it.
 
 ### Cancellation deadlines
 

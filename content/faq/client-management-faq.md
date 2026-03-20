@@ -13,19 +13,25 @@ needs_screenshot_replacement: true
 last_converted: "2026-02-13"
 ---
 
-<!-- Synonyms: move client, delete client, remove client, cancel client, move child to group, move child to another class, change group, presunúť klienta, zmazať klienta, odstrániť klienta, presunúť dieťa, dieťa do inej skupiny, zmeniť skupinu, zrušiť klienta, klient iná skupina -->
+<!-- Synonyms: move client, delete client, remove client, cancel client, move child to group, move child to another class, change group, add client, add new client, create client, no add client button, how to add a client, presunúť klienta, zmazať klienta, odstrániť klienta, presunúť dieťa, dieťa do inej skupiny, zmeniť skupinu, zrušiť klienta, klient iná skupina, pridať klienta, vytvoriť klienta, ako pridať klienta, přidat klienta, vytvořit klienta, cum sa adaug un client, adăuga un client, adaug client, client nou, új ügyfél hozzáadása, ügyfél létrehozása, como añadir cliente -->
 
 # Client Management FAQ
 
 ## How do I create a new client manually (not through booking)?
 
-Zooza does not have a standalone "Add client" button. A client record is created automatically when a booking is made. To create a client manually:
+Zooza does not have a standalone "Add client" button. A client record is created when a booking is made. You have three options:
 
-1. Go to the booking form and create a new booking on behalf of the client (choose any class).
-2. Fill in the client's name and email address during the booking process.
-3. If you only need the client record and not the booking, delete the booking afterwards. The client profile remains in the system.
+**Option 1 — From within a class (class)**
 
-This is the only way to create a client without the parent registering themselves through the online form.
+Open the class, go to the bookings/registrations tab, and use the manual booking option there. This creates both the client record and the booking in one step.
+
+**Option 2 — From the Bookings list**
+
+Go to **Bookings → Create booking**. At the "Choose the client" step, select **New client**, enter name, surname, and email, then complete the booking. If you only need the client profile without an active booking, delete the booking afterwards — the client profile remains in the system.
+
+**Option 3 — Client import**
+
+Use **Clients → Import** to bulk-import client records from a CSV file. This creates client profiles (and optionally bookings) without going through the booking form one by one.
 
 ## How do I change the client (parent) on an existing booking?
 
@@ -109,26 +115,30 @@ Go to **Settings** > **Team** to review which roles have access to client contac
 
 ## Where do I set or change a child's date of birth on a booking?
 
-The date of birth is stored on the **attendee** (child) entity, not on the booking itself. You can edit it directly from the booking detail.
-![Screenshot — client management faq](../../assets/images/client-management-faq-01.png)
+This depends on whether the **attendee** (participant) is a different person from the **buyer** (the person who registered and pays):
 
-1. Open the booking detail.
-2. In the **Attendee** card, click the child's name or the edit icon.
+**Attendee is different from the buyer (e.g. child booked by a parent)**
+
+The attendee's date of birth can be edited directly:
+
+1. Open the booking detail or the attendee's record in the **Clients** list.
+2. In the **Attendee** card, click the name or the edit icon.
 3. Update the **Date of birth** field and save.
 
+![Screenshot — client management faq](../../assets/images/client-management-faq-01.png)
 ![Screenshot — client management faq](../../assets/images/client-management-faq-02.png)
 
-> **Note:** This changes the child's date of birth across all their bookings — the attendee record is shared, not per-booking.
+> **Note:** This changes the date of birth across all bookings for that attendee — the attendee record is shared.
 
-## Can I change the date of birth of the registering person (parent/buyer)?
+**Attendee is the same person as the buyer (adult who registered themselves)**
 
-No. Zooza does not store or display the date of birth of the registering person (parent/buyer) as an editable profile field. Date of birth can only be set and edited for the **attendee** (typically the child).
+If the buyer filled in their own date of birth at booking, that value cannot be edited in the admin app. The client can update it themselves the next time they register, or by contacting Zooza support.
 
-If you need to collect the parent's date of birth, add a custom extra field to the booking form — but this is stored as free text only, not as a system field.
+Changes to the buyer's core data (email, name) go through the formal **Data correction** request flow — see [Data correction or change client data](../guides/data-correction-change-client.md).
 
-## How do I move a child (or client) to a different group or class?
+## How do I move a child (or client) to a different class or class?
 
-In Zooza, clients and their children are linked to **bookings**, not to classes directly. To move a child to a different group, you transfer the booking — not the client record.
+In Zooza, clients and their children are linked to **bookings**, not to classes directly. To move a child to a different class, you transfer the booking — not the client record.
 
 > **Important:** You cannot move a client or child from the Clients page. The action is performed on the booking itself, found under **Clients → Bookings**.
 

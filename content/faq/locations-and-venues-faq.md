@@ -17,7 +17,7 @@ last_converted: "2026-02-12"
 
 # Locations and Venues FAQ
 
-## Can I remove a location from a class (course/group)?
+## Can I remove a location from a class (programme/class)?
 
 Location is a required field on a class — you cannot leave it blank. You can only **replace** it with a different location.
 
@@ -29,7 +29,7 @@ If you want to remove or unset the location (e.g. the venue is not confirmed yet
    - `Various venues`
 2. Go to the class, open its settings, and change the location to the placeholder.
 
-> **Note:** When someone asks how to "remove a location from a course", they typically mean a class or group (not a programme). Location is set on the **class**, not on the programme. Go to the class settings to change it.
+> **Note:** When someone asks how to "remove a location from a programme", they typically mean a class or class (not a programme). Location is set on the **class**, not on the programme. Go to the class settings to change it.
 
 ## How do I add a new location?
 
@@ -51,6 +51,18 @@ If you delete a venue while classes are still linked to it, those classes may sh
 ## Can I create a location without a physical address?
 
 Yes. For sessions like birthday parties at a client's home, you can create a location with a descriptive name (e.g., "Party at client's home") without a specific address. The map will not be shown to clients if no address is set.
+
+## Why does the venue show for some sessions in the calendar but not others?
+
+When you change the venue on a class, Zooza asks how the change should be applied:
+
+- **Change for a class only (sessions will not change)** — the class settings update, but existing sessions keep the old venue.
+- **Change for all sessions** — updates the venue on every session in the class.
+- **Change only for upcoming sessions** — updates sessions that have not yet taken place.
+
+If you chose **Change for a class only**, your sessions retain the old (or no) venue. This is the most common cause of venue showing inconsistently across sessions.
+
+**To fix it:** Go to the class settings, update the venue, and this time choose **Change for all sessions** or **Change only for upcoming sessions**.
 
 ## Each location has an internal ID — where can I find it?
 

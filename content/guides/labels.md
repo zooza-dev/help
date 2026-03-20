@@ -28,7 +28,7 @@ Labels exist at three levels:
 | Level | Where you assign them | What they do |
 |---|---|---|
 | **Programme** | Programme settings → Programme Settings tile → Labels | Categorise programmes (e.g., "Swimming", "Dance", "Ages 3–5"). Appear in the Programmes list filter. |
-| **Class** | Class detail → Labels field | Tag individual classes within a programme (e.g., "Monday group", "Advanced"). Appear in the Classes list filter. |
+| **Class** | Class detail → Labels field | Tag individual classes within a programme (e.g., "Monday class", "Advanced"). Appear in the Classes list filter. |
 | **Booking** | Booking detail → Label field | Tag individual bookings (e.g., "VIP", "Sibling discount applied"). Appear in the Bookings list filter. |
 
 Labels are reusable — once created, they appear in dropdown menus across the application.

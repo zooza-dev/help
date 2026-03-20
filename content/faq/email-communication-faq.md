@@ -53,6 +53,14 @@ When composing emails in Zooza, the editor preserves formatting (paragraphs, bol
 
 Replies go directly into the Zooza application. The reply-to address is system-managed and routes to your Zooza inbox.
 
+## Can I block replies to Zooza emails or set up an autoresponder?
+
+Zooza does not support blocking replies to outgoing emails or sending an autoresponder to incoming replies. Outgoing emails are event-driven (booking confirmation, reminders, etc.) — there is no mechanism to auto-reply to a client who replies to one of those messages.
+
+**Workarounds:**
+- Add a line in your email templates such as "Please do not reply to this email — contact us at youraddress@..." so clients know where to reach you.
+- For a true autoresponder (e.g., out-of-office reply to incoming emails), configure it through your email provider, not through Zooza.
+
 ## Can I use a custom sending domain for emails?
 
 Custom sending domains are available for specific plans. Contact your Zooza account manager to discuss options.
@@ -64,6 +72,20 @@ Go to **Bookings**, filter by the relevant class or location, and use the bulk c
 ## How do I set up class reminder emails for parents?
 
 Class reminders are part of the automated email flow. They are configured per programme under the communication/automation settings. Typically, a reminder is sent the day before the scheduled session.
+
+## A client turned off their session reminders — how do I reactivate them?
+
+Session reminders (and session-change notifications) can be toggled per booking. Both the client — via an unsubscribe link in the reminder email or via the client portal — and the admin can manage this. **Client preference takes precedence**: if the client turns the reminder off, it stays off even if the admin turns it back on.
+
+To reactivate as an admin:
+
+1. Open the client's **booking/registration detail**.
+2. Go to the **Options** tab.
+3. Find the **Reminder** toggle and turn it back on.
+
+> **Scope:** This toggle controls session reminders and session-change notifications only. Payment reminders, booking confirmations, and other transactional notifications are not affected — those cannot be opted out from by the client.
+
+Note: if the client opts out again from the unsubscribe link in a future email, it will be disabled again.
 
 ## Can I get an email notification when a new booking or trial comes in?
 

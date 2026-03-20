@@ -77,3 +77,21 @@ On the Zooza app dashboard, click the **Zooza logo** (top-left). At the bottom o
 Available languages: Slovensky, English, Česky, Deutsch, Romanian.
 
 The language change takes effect immediately and applies to the current user's session. Each admin or instructor can set their own preferred language independently.
+
+## Is there a Zooza mobile app to download?
+
+Zooza is a web application — there is no native app to download from the App Store or Google Play. You access it through a browser at **zooza.app**.
+
+You can add it to your phone's home screen so it behaves like an app:
+
+**iPhone (Safari):**
+1. Open zooza.app in Safari.
+2. Tap the share icon (square with an arrow pointing up).
+3. Tap **Add to Home Screen**.
+
+**Android (Chrome):**
+1. Open zooza.app in Chrome.
+2. Tap the three-dot menu (top right).
+3. Tap **Add to Home screen**.
+
+The icon will appear on your home screen and the app will open in full-screen mode.

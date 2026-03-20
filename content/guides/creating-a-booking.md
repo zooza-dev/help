@@ -84,4 +84,4 @@ From the booking detail you can:
 
 - [Allowing multiple bookings per client](allowing-multiple-booking.md)
 - [Managing client attendance — admin](admin-attendance-management.md)
-- [Replacement hours — complete guide](replacement-hours-complete.md)
+- [Make-up session — complete guide](replacement-hours-complete.md)

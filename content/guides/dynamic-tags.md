@@ -51,7 +51,10 @@ Each email sent for a specific booking allows you to dynamically fill in client 
 | <code>&#42;&#124;SCHEDULE_NAME&#124;&#42;</code>                    | Class name (without programme name)                                                        | Butterflies, tuesdays at 17:00                        |
 | <code>&#42;&#124;SCHEDULED_AT_DATE&#124;&#42;</code>                | Date when the scheduled payment (debt) is due on the booking                               | 10                                                    |
 | <code>&#42;&#124;FIRST_NAME&#124;&#42;</code>                       | Client name                                                                                | John                                                  |
-| <code>&#42;&#124;QR_CODE&#124;&#42;</code>                          | QR code for payment. Requires: amount due on booking, IBAN and SWIFT on programme/company. | Picture with QR code                                  |
+| <code>&#42;&#124;QR_CODE&#124;&#42;</code>                          | QR code for payment based on the current outstanding balance. Requires: amount due on booking, IBAN and SWIFT on programme/company. | Picture with QR code                                  |
+
+<!-- REVIEW: A deposit-specific QR code tag is being added in a 2026-03 product update. Once released, confirm the tag name and add a row here. Current workaround: structure the payment plan so the first outstanding amount equals the deposit — QR_CODE will then reflect that amount. -->
+
 | <code>&#42;&#124;IBAN&#124;&#42;</code>                             | Bank account for payment. If specified at the programme level, that value is used.         | GB54BARC20039545449825                                |
 | <code>&#42;&#124;COURSE_DATE_START_END&#124;&#42;</code>            | Start and end date of the programme                                                        | 14. 5. 2022 -- 14. 8. 2022                            |
 | <code>&#42;&#124;COURSE_TRAINER&#124;&#42;</code>                   | Instructor's name                                                                          | John Winslow                                          |

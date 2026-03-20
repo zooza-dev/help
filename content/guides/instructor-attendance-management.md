@@ -15,7 +15,7 @@ last_converted: "2026-03-03"
 
 # Attendance management for instructors
 
-This guide covers everything an instructor needs to manage attendance in Zooza — from finding your sessions on the dashboard to marking attendance, reading consents, writing notes, and communicating with the group.
+This guide covers everything an instructor needs to manage attendance in Zooza — from finding your sessions on the dashboard to marking attendance, reading consents, writing notes, and communicating with the class.
 
 ## Dashboard — your upcoming sessions
 
@@ -111,14 +111,14 @@ The **Consents** section in the session detail shows the consents each client ha
 
 Consents are set by parents when registering and cannot be changed from the session view.
 
-## Group communication
+## Class communication
 
 At the bottom of the Full view, you will find two buttons:
 
 - **Send email to N recipients** — sends an email to all clients enrolled in this session.
-- **Send text message to N recipients** — sends an SMS to the same group.
+- **Send text message to N recipients** — sends an SMS to the same class.
 
-Use these to communicate with the whole group for that specific session — for example, to announce a change of location or send a reminder.
+Use these to communicate with the whole class for that specific session — for example, to announce a change of location or send a reminder.
 
 > Note: Communication buttons may not appear if your instructor role does not include communication permissions. Contact your admin if you do not see these options.
 
