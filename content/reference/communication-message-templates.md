@@ -105,7 +105,8 @@ Manage email signatures appended to outgoing messages.
 
 > **Navigation:** Message Templates → click any **Template** link.
 
-![Template editor](../../assets/images/reference/communication-template-editor.png)
+![Screenshot — communication message templates](../../assets/images/communication-message-templates-01.png)
+
 
 ### Edit Template
 
@@ -131,18 +132,32 @@ The editor toolbar provides:
 - Clear formatting
 - Source code view (`<>`)
 
-### Dynamic Tags
+### Personalising messages with dynamic tags
 
-Common dynamic tags used in templates:
+Dynamic tags let you automatically insert client-specific information — name, programme, payment amount, booking link — into the email body and subject line.
+
+**Two ways to insert a dynamic tag:**
+
+1. **Type `*` in the editor** — a dropdown appears with all tags available for this template type. Start typing to filter, then click to insert. This is the fastest method.
+2. **Copy from the reference page** — click **Instructions and a complete list of tags** (below the subject/body field) to open the full tag list. Copy any tag and paste it into the template.
+
+Tags follow the format `*|TAG_NAME|*`. They work in both the subject line and the email body.
+
+> **Note:** Not all tags are available in every template. The autocomplete dropdown only shows tags that are valid for the current template type.
+
+Common tags:
 
 | Tag | Description |
 |---|---|
-| `*\|COURSE_NAME\|*` | Programme name. |
+| `*\|FIRST_NAME\|*` | Client's first name. |
+| `*\|COURSE_NAME\|*` | Programme name — class name. |
+| `*\|COURSE_PAYMENT\|*` | Amount the client should pay. |
+| `*\|VARIABLE_SYMBOL\|*` | Payment reference / variable symbol. |
+| `*\|CONFIRMATION_URL\|*` | Link for the client to confirm their enrolment. |
 | `*\|PIN\|*` | One-time login code. |
 | `*\|IF:PIN\|*` … `*\|END:IF\|*` | Conditional block — only shown if a PIN exists. |
-| `*\|CONFIRMATION_URL\|*` | Link for the client to confirm their enrolment. |
 
-For a full list, see the [Dynamic Tags Guide](../guides/dynamic-tags.md).
+For the full list with examples, see the [Dynamic Tags Guide](../guides/dynamic-tags.md).
 
 ### Actions
 

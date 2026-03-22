@@ -17,13 +17,22 @@ last_converted: "2026-02-12"
 
 ## What type of Stripe account does Zooza use?
 
-Zooza connects via Stripe Connect. Depending on the setup, you may have a **Stripe Express** account (managed through Zooza) or a **Standard** account. Express accounts have limited dashboard access but all payment management functions are available within Zooza.
+Zooza connects via **Stripe Connect**. All new connections use a **Stripe Standard** account — you get your own full Stripe account and manage it directly at [dashboard.stripe.com](https://dashboard.stripe.com).
 
-## I can only see a limited Stripe Express dashboard — where are my full reports?
+If you connected Stripe before March 2026, you may have a **Stripe Express** account. Express accounts are fully supported and continue to work without any changes.
 
-The long-term approach is to manage payments directly in Zooza rather than through Stripe's dashboard. All reports, refund options, and payment data are available within the Zooza application.
+## How do I access my Stripe dashboard?
 
-If you need the full Stripe dashboard, try navigating directly to `dashboard.stripe.com` in your browser while logged in — this may show your main Stripe account rather than the Express view.
+**Standard account:** Go to [dashboard.stripe.com](https://dashboard.stripe.com) and log in with your Stripe credentials. You have full access to all Stripe features.
+
+**Express account:** Go to **Settings → Integrations → Stripe Connect** and click **Go to Stripe Dashboard**. This generates a secure one-time login link that opens your Express dashboard directly — no need to log in separately.
+![Screenshot — stripe payments faq](../../assets/images/stripe-payments-faq-01.png)
+
+## Where can I see my Stripe invoices and payout reports?
+
+**Standard account:** Log into [dashboard.stripe.com](https://dashboard.stripe.com) and navigate to your documents section.
+
+**Express account:** Go to **Settings → Integrations → Stripe Connect**. Your Stripe invoices (VAT invoices) and payout reconciliation reports are available directly inside Zooza — no need to open the Stripe dashboard separately.
 
 ## Is Apple Pay / Google Pay supported?
 

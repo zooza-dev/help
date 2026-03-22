@@ -464,12 +464,6 @@ Scheduled (future) payments show an **Edit** link.
 | `Payment date` | Actual payment date. |
 | `IBAN` | Bank account number (if applicable). |
 
-### Move Payment
-
-Transfer a payment to another booking. Requirements: no refund or correction on the payment, and the target booking must manage its own payments.
-
-Button: **Move payment**.
-
 ### Refund
 
 Shows refunded amount. Button: **Refund payment**.
@@ -477,6 +471,18 @@ Shows refunded amount. Button: **Refund payment**.
 ### Correct Payment
 
 Shows payment corrections amount. Button: **Correct payment**.
+
+### Move Payment
+
+Transfer a payment to another booking — for example if a payment was recorded on the wrong booking or a client has paid for a different programme than expected.
+
+**Requirements:**
+- The payment must have no refund or correction applied.
+- The target booking must manage its own payments (not inherited from an order).
+
+Button: **Move payment**. Select the target booking by booking number or client name, then confirm.
+
+![Screenshot — bookings list](../../assets/images/bookings-list-01.png)
 
 ## Attendance Tab
 

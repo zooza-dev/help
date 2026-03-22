@@ -51,6 +51,8 @@ Important: Automatic pairing depends on how your bank provides transaction data.
 
 If all conditions are met, the payment is automatically paired with the booking. If not, the payment remains unassigned and can be paired manually in *Payments – Received payments*.
 
+> **Multi-level pairing:** If a booking is linked to an order (e.g., a product purchase), Zooza follows the full chain — payment references are resolved across both the order and the underlying booking. You do not need to do anything extra; this happens automatically.
+
 ### Bulk upload via CSV file
 
 If your bank does not support live integrations, or you need to catch up after an outage, you can import payments in bulk from a bank statement export.
@@ -67,18 +69,17 @@ For the full step-by-step process, see [Importing bank payments via CSV](csv-pay
 
 ### Automatic pairing via bank email notifications
 
-Some banks can send transaction notifications by email.
-In this setup, your bank emails Zooza about account movements, and Zooza processes those emails automatically.
+Some banks can send transaction notifications by email. In this setup, your bank emails Zooza about account movements, and Zooza processes those emails automatically.
 
 - The notification must contain the correct bank account (IBAN)
 - The payment reference must match a booking
 
-
 Only payments that meet these conditions are stored and processed. All other notifications are ignored.
 
-Note: Not all banks support reliable email notifications. Please check with your bank before using this method.
 
-Setup instructions are available in the [documentation](https://support.zooza.online/portal/sk/kb/articles/parovanie-platieb-cez-emailovu-notifikaciu).
+> Not all banks support reliable email notifications. Contact support to check if your bank is supported.
+
+Setup instructions are available in [Email payment notifications](../setup/email-payment-notifications.md).
 
 ### Automatic pairing via GoCardless (recommended)
 
@@ -92,7 +93,7 @@ Zooza syncs payments from GoCardless automatically twice per day. This means the
 
 This method is ideal for franchises and international businesses using Direct Debit as their primary payment method.
 
-See setup instructions in the [documentation](https://support.zooza.online/portal/sk/kb/articles/fakturacia).
+See [GoCardless Direct Debit](../payments/gocardless-direct-debit-mandates.md) for setup instructions.
 
 ## Frequently Asked Questions
 

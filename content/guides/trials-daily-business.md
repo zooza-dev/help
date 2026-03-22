@@ -121,6 +121,25 @@ At the moment, the only reliable way to prevent overcapacity in Class with Block
 
 If Extra Capacity is not used, Class capacity must be actively monitored, and Trial Sessions should be managed manually.
 
+### How to convert an existing booking to trial status
+
+If a booking was created as a regular registration or a waitlist entry but should have been a trial, an admin can convert it to trial status without starting from scratch.
+
+**Prerequisite:** The programme must have trials enabled (Trial type must not be set to *None*).
+
+1. Open the booking detail.
+2. Click **Change status**. ![Screenshot — trials daily business](../../assets/images/trials-daily-business-01.png)
+3. Select **Convert to trial**. ![Screenshot — trials daily business](../../assets/images/trials-daily-business-02.png)
+4. Choose a class and copy/create new trial booking.
+
+After converting, the booking enters the standard trial flow — the same automation (follow-ups, auto-lost) applies as for any trial. The admin then manually enrolls the client into a specific trial session from the **Attendance** section.
+
+> **Note:** This is a one-way conversion. A trial booking cannot be converted back to a regular registration.
+
+
+
+---
+
 ### What if a trial client doesn’t show up?
 
 If a parent booked a trial but didn’t attend, the outcome depends on your trial settings.

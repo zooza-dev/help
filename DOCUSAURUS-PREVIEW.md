@@ -18,8 +18,7 @@ Cieľ: spustiť si dokumentáciu lokálne v prehliadači, aby si videl, ako bude
    - Napíš `python3 --version` a stlač Enter
    - Ak vidíš číslo verzie (napr. `Python 3.11.x`), máš ho
    - Ak nie, stiahni ho z https://www.python.org/downloads/
-
----
+https://nodejs.org---
 
 ## Krok 1 — Vygeneruj Docusaurus export
 

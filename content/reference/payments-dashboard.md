@@ -87,6 +87,20 @@ If all payments are paired, shows "All your payments are paired."
 
 Button: **Payment overview** — opens detailed payment pairing view.
 
+### Inbound payment status (bank email integrations)
+
+If your account uses automatic bank email pairing, the dashboard also shows the current status of your inbound payment setup:
+
+| Indicator | Meaning |
+|---|---|
+| **Waiting for first payment** | Your bank integration is configured but no payment has been received yet. Check that your bank is forwarding notifications to the correct address. |
+| **Last inbound payment** | How long ago the last bank notification was received. |
+| **Last auto-paired** | How long ago the last payment was automatically matched to a booking. |
+
+If the "last inbound" counter grows unusually large, check whether your bank's email notification service is active.
+
+![Screenshot — payments dashboard](../../assets/images/payments-dashboard-01.png)
+
 ## Payments Received
 
 > **Navigation:** **Sales & Payments** → **Payments received**.
