@@ -115,23 +115,23 @@ You can use conditional tags in templates. For example, if you accept business o
 
 ### Tags in make-up sessions
 
-When a client books a make-up session, tags like `COURSE_TIME`, `COURSE_DATE_DAY`, and `COURSE_PLACE` pull data from the **primary class's first session**, not the make-up session. This means the email may show incorrect time, day, or location for the make-up.
+When a client books a make-up session, tags like `*|COURSE_TIME|*`, `*|COURSE_DATE_DAY|*`, and `*|COURSE_PLACE|*` pull data from the **primary class's first session**, not the make-up session. This means the email may show incorrect time, day, or location for the make-up.
 
-**Workaround:** Use `ORDER_SUMMARY` instead — it includes the correct session details for the specific booking context.
+**Workaround:** Use `*|ORDER_SUMMARY|*` instead — it includes the correct session details for the specific booking context.
 
 ### Tags in block-based programmes
 
-For programmes using blocks (term segments), `COURSE_DATE_DAY` and `COURSE_TIME` pull from the first session in the class, which may not match the client's enrolled block.
+For programmes using blocks (term segments), `*|COURSE_DATE_DAY|*` and `*|COURSE_TIME|*` pull from the first session in the class, which may not match the client's enrolled block.
 
-**Workaround:** Use `ORDER_SUMMARY` to display the correct block-specific information. A dedicated block-specific date tag is not yet available.
+**Workaround:** Use `*|ORDER_SUMMARY|*` to display the correct block-specific information. A dedicated block-specific date tag is not yet available.
 
 <!-- REVIEW: Monitor for a dedicated block-specific dynamic tag — it has been requested by multiple customers. -->
 
 ### Tags in order confirmation emails
 
-Dynamic tags are **not fully supported** in order (product purchase) confirmation emails. Tags like `COURSE_NAME`, `COURSE_TIME`, etc. will not populate because orders are not linked to a specific class or session.
+Dynamic tags are **not fully supported** in order (product purchase) confirmation emails. Tags like `*|COURSE_NAME|*`, `*|COURSE_TIME|*`, etc. will not populate because orders are not linked to a specific class or session.
 
-Only basic client tags (`FIRST_NAME`, `FULL_NAME`, etc.) work in order emails.
+Only basic client tags (`*|FIRST_NAME|*`, `*|FULL_NAME|*`, etc.) work in order emails.
 
 ### Tags in subject lines
 
