@@ -252,7 +252,7 @@ const {{ themes: prismThemes }} = require('prism-react-renderer');
 const config = {{
   title: 'Zooza Help',
   tagline: 'Help centre for Zooza — the go-to platform for children\\'s activity businesses.',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon-help.svg',
   url: 'https://help.zooza.online',
   baseUrl: '/',
 

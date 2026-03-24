@@ -15,11 +15,17 @@ last_converted: "2026-02-13"
 
 # Dynamic tags
 
-When creating templates, Zooza provides dynamic tags to speed up communication with your clients. These tags pull specific information -- such as programme name, time, and location -- into emails automatically, keeping communication relevant without manual effort.
+When creating templates, Zooza provides dynamic tags to speed up communication with your clients. These tags pull specific information — such as programme name, time, and location — into emails automatically, keeping communication relevant without manual effort.
 
-You can add dynamic tags via the **Tags** icon in the text formatting panel. Clicking the icon shows a full list of dynamic tags with explanations.
+## How to insert dynamic tags
 
-> **Attention!** Some dynamic tags can only be applied to certain templates. Take care when selecting the template and the tags.
+**Option 1 — Autocomplete (fastest):** Type `*` anywhere in the email body or subject line. A dropdown appears with all tags available for that template. Start typing to filter the list, then click to insert.
+
+**Option 2 — Tags panel:** Click the **Tags** icon in the text formatting toolbar. A full list of available dynamic tags with explanations opens — click any tag to insert it.
+
+**Option 3 — Copy and paste:** Open **Instructions and a complete list of tags** (link below the subject/body field in the template editor) and copy the tag text directly, for example `*|FIRST_NAME|*`.
+
+> **Note:** Not all tags work in every template. The autocomplete and Tags panel only show tags valid for the current template type. Using a tag in the wrong template will result in a blank value in the sent email.
 
 ![Dynamic tags panel](../../assets/images/dynamic-tags-panel.png "Dynamic tags panel in template editor")
 
@@ -51,10 +57,8 @@ Each email sent for a specific booking allows you to dynamically fill in client 
 | <code>&#42;&#124;SCHEDULE_NAME&#124;&#42;</code>                    | Class name (without programme name)                                                        | Butterflies, tuesdays at 17:00                        |
 | <code>&#42;&#124;SCHEDULED_AT_DATE&#124;&#42;</code>                | Date when the scheduled payment (debt) is due on the booking                               | 10                                                    |
 | <code>&#42;&#124;FIRST_NAME&#124;&#42;</code>                       | Client name                                                                                | John                                                  |
-| <code>&#42;&#124;QR_CODE&#124;&#42;</code>                          | QR code for payment based on the current outstanding balance. Requires: amount due on booking, IBAN and SWIFT on programme/company. | Picture with QR code                                  |
-
-<!-- REVIEW: A deposit-specific QR code tag is being added in a 2026-03 product update. Once released, confirm the tag name and add a row here. Current workaround: structure the payment plan so the first outstanding amount equals the deposit — QR_CODE will then reflect that amount. -->
-
+| <code>&#42;&#124;QR_CODE&#124;&#42;</code>                          | QR code for the full payment amount due on the booking. Requires: IBAN and SWIFT on programme/company. | Picture with QR code                                  |
+| <code>&#42;&#124;QR_CODE_DOWNPAYMENT&#124;&#42;</code>              | QR code for the downpayment amount. Same conditions as QR Code, but generates a code for the downpayment sum instead of the full balance. | Picture with QR code                                  |
 | <code>&#42;&#124;IBAN&#124;&#42;</code>                             | Bank account for payment. If specified at the programme level, that value is used.         | GB54BARC20039545449825                                |
 | <code>&#42;&#124;COURSE_DATE_START_END&#124;&#42;</code>            | Start and end date of the programme                                                        | 14. 5. 2022 -- 14. 8. 2022                            |
 | <code>&#42;&#124;COURSE_TRAINER&#124;&#42;</code>                   | Instructor's name                                                                          | John Winslow                                          |
@@ -63,6 +67,22 @@ Each email sent for a specific booking allows you to dynamically fill in client 
 | <code>&#42;&#124;WIDGET_PROFILE_URL&#124;&#42;</code>               | URL to view profile                                                                        | `https://www.zooza.sk/profil?token=12345`             |
 | <code>&#42;&#124;EF_DOB&#124;&#42;</code>                           | Extra field -- date of birth                                                               | 13. 4. 2000                                           |
 | <code>&#42;&#124;EF_FULL_NAME&#124;&#42;</code>                     | Extra field -- full name                                                                   | John Winslow                                          |
+| <code>&#42;&#124;EF_CITIZENSHIP&#124;&#42;</code>                   | Extra field -- citizenship (ISO 3166-1 alpha-2 country code)                               | SK                                                    |
+| <code>&#42;&#124;EF_EXTRA_FIELD_1&#124;&#42;</code>                 | Custom field 1                                                                             |                                                       |
+| <code>&#42;&#124;EF_EXTRA_FIELD_2&#124;&#42;</code>                 | Custom field 2                                                                             |                                                       |
+| <code>&#42;&#124;EF_EXTRA_FIELD_3&#124;&#42;</code>                 | Custom field 3                                                                             |                                                       |
+| <code>&#42;&#124;EF_EXTRA_FIELD_4&#124;&#42;</code>                 | Custom field 4                                                                             |                                                       |
+| <code>&#42;&#124;EF_EXTRA_FIELD_5&#124;&#42;</code>                 | Custom field 5                                                                             |                                                       |
+| <code>&#42;&#124;EF_EXTRA_FIELD_6&#124;&#42;</code>                 | Custom field 6                                                                             |                                                       |
+| <code>&#42;&#124;EF_EXTRA_FIELD_7&#124;&#42;</code>                 | Custom field 7                                                                             |                                                       |
+| <code>&#42;&#124;EF_EXTRA_FIELD_8&#124;&#42;</code>                 | Custom field 8                                                                             |                                                       |
+| <code>&#42;&#124;EF_EXTRA_FIELD_9&#124;&#42;</code>                 | Custom field 9                                                                             |                                                       |
+| <code>&#42;&#124;EF_EXTRA_FIELD_10&#124;&#42;</code>                | Custom field 10                                                                            |                                                       |
+| <code>&#42;&#124;EF_EXTRA_FIELD_11&#124;&#42;</code>                | Custom field 11                                                                            |                                                       |
+| <code>&#42;&#124;EF_EXTRA_FIELD_12&#124;&#42;</code>                | Custom field 12                                                                            |                                                       |
+| <code>&#42;&#124;EF_EXTRA_FIELD_13&#124;&#42;</code>                | Custom field 13                                                                            |                                                       |
+| <code>&#42;&#124;EF_EXTRA_FIELD_14&#124;&#42;</code>                | Custom field 14                                                                            |                                                       |
+| <code>&#42;&#124;EF_EXTRA_FIELD_15&#124;&#42;</code>                | Custom field 15                                                                            |                                                       |
 | <code>&#42;&#124;EF_ADDRESS&#124;&#42;</code>                       | Extra field -- address                                                                     | 65 Wood Lane, Bristol                                 |
 | <code>&#42;&#124;EF_BUSINESS_NAME&#124;&#42;</code>                 | Extra field -- company name                                                                | Zooza                                                 |
 | <code>&#42;&#124;EF_BUSINESS_ADDRESS&#124;&#42;</code>              | Extra field -- company address                                                             | 65 Wood Lane, Bristol                                 |
@@ -111,23 +131,23 @@ You can use conditional tags in templates. For example, if you accept business o
 
 ### Tags in make-up sessions
 
-When a client books a make-up session, tags like `COURSE_TIME`, `COURSE_DATE_DAY`, and `COURSE_PLACE` pull data from the **primary class's first session**, not the make-up session. This means the email may show incorrect time, day, or location for the make-up.
+When a client books a make-up session, tags like `*|COURSE_TIME|*`, `*|COURSE_DATE_DAY|*`, and `*|COURSE_PLACE|*` pull data from the **primary class's first session**, not the make-up session. This means the email may show incorrect time, day, or location for the make-up.
 
-**Workaround:** Use `ORDER_SUMMARY` instead — it includes the correct session details for the specific booking context.
+**Workaround:** Use `*|ORDER_SUMMARY|*` instead — it includes the correct session details for the specific booking context.
 
 ### Tags in block-based programmes
 
-For programmes using blocks (term segments), `COURSE_DATE_DAY` and `COURSE_TIME` pull from the first session in the class, which may not match the client's enrolled block.
+For programmes using blocks (term segments), `*|COURSE_DATE_DAY|*` and `*|COURSE_TIME|*` pull from the first session in the class, which may not match the client's enrolled block.
 
-**Workaround:** Use `ORDER_SUMMARY` to display the correct block-specific information. A dedicated block-specific date tag is not yet available.
+**Workaround:** Use `*|ORDER_SUMMARY|*` to display the correct block-specific information. A dedicated block-specific date tag is not yet available.
 
 <!-- REVIEW: Monitor for a dedicated block-specific dynamic tag — it has been requested by multiple customers. -->
 
 ### Tags in order confirmation emails
 
-Dynamic tags are **not fully supported** in order (product purchase) confirmation emails. Tags like `COURSE_NAME`, `COURSE_TIME`, etc. will not populate because orders are not linked to a specific class or session.
+Dynamic tags are **not fully supported** in order (product purchase) confirmation emails. Tags like `*|COURSE_NAME|*`, `*|COURSE_TIME|*`, etc. will not populate because orders are not linked to a specific class or session.
 
-Only basic client tags (`FIRST_NAME`, `FULL_NAME`, etc.) work in order emails.
+Only basic client tags (`*|FIRST_NAME|*`, `*|FULL_NAME|*`, etc.) work in order emails.
 
 ### Tags in subject lines
 

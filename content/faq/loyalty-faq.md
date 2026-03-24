@@ -75,6 +75,9 @@ The discount record is retained on the booking after cancellation. No automatic 
 **Can I have a discount for the 2nd child only, with nothing for 3rd or higher?**
 You can only define one discount value per child number threshold. If you want the 3rd-child and beyond to get the same discount as the 2nd child, create a single 2nd-child rule. If you want 3rd-child and beyond to get no discount, you would need to leave higher tiers unconfigured — but the 2nd-child rule will still apply to all subsequent children. There is currently no way to cap the sibling discount at a specific child number.
 
+**Can I use the sibling discount for Pay-as-you-go (pay per session) programmes?**
+We do not currently recommend it. The sibling discount counting logic is designed for subscription, instalment, and one-off payment plans — it may not behave as expected in a Pay-as-you-go setup. If you run Pay-as-you-go programmes and would like to offer a sibling discount, let us know how you'd like to use it via the feedback option in the Zooza admin panel or by contacting support. Your input will help shape how we extend the loyalty program for this use case.
+
 ---
 
 ## Returning Client Discount

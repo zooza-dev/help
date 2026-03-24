@@ -17,6 +17,8 @@ last_converted: "2026-03-14"
 
 > **Beta feature.** Part of the [Loyalty Program](./loyalty-program.md).
 
+> **Pay-as-you-go programmes:** The sibling discount is designed for subscription, instalment, and one-off payment plans. It is **not recommended for Pay-as-you-go (pay per session) programmes** — the discount counting logic may not behave as expected. If you run Pay-as-you-go programmes and want to use a sibling discount, [contact us](mailto:support@zooza.app) and tell us how you'd like it to work.
+
 The sibling discount automatically rewards families who register more than one child. When the same parent registers a second, third, or fourth child, Zooza applies the discount at booking — no manual codes needed.
 
 ---

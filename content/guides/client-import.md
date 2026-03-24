@@ -65,5 +65,17 @@ Notes:
 
 1. If you do not assign a class, the client will be created in Zooza but no booking will be created.
 2. You can perform a partial import from your spreadsheet to verify that you are importing the correct clients into the right classes.
-3. The import process may take some time, depending on the number of rows in your spreadsheet. You can track the progress and status of the import in the List of Imports.
- ![Screenshot](../../assets/images/client-import-10.png)
+3. Processing starts immediately after upload — there is no waiting period. You can track the real-time progress in the **List of Imports**.
+
+![Screenshot](../../assets/images/client-import-10.png)
+
+## Import statuses
+
+| Status | Meaning |
+|---|---|
+| **Processing** | Import is running. A progress bar shows how many rows have been processed. |
+| **Done** | All rows were imported successfully. |
+| **Partial** | Some rows had validation errors and were skipped. Valid rows were imported. Click **Process** to retry the skipped rows after fixing the source data. |
+| **Failed** | The import worker encountered an error. Click **Retry** to re-dispatch the import. |
+
+> If an import is stuck in **Processing** for more than a few minutes, use **Retry** to restart it.

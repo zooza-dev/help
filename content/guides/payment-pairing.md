@@ -51,6 +51,8 @@ Important: Automatic pairing depends on how your bank provides transaction data.
 
 If all conditions are met, the payment is automatically paired with the booking. If not, the payment remains unassigned and can be paired manually in *Payments – Received payments*.
 
+> **Multi-level pairing (linked bookings):** When you use [linked bookings](linked-bookings.md) with the **Manage parent/main booking** option, one registration collects payments on behalf of others. Zooza's automatic pairing follows this chain — a payment matched to any booking in the group is correctly attributed to the managing registration, even across multiple levels (e.g., order → registration A → registration B). The full resolution path is visible in the **Pairing process summary** on the payment detail. You do not need to do anything extra; this happens automatically.
+
 ### Bulk upload via CSV file
 
 If your bank does not support live integrations, or you need to catch up after an outage, you can import payments in bulk from a bank statement export.
@@ -67,18 +69,17 @@ For the full step-by-step process, see [Importing bank payments via CSV](csv-pay
 
 ### Automatic pairing via bank email notifications
 
-Some banks can send transaction notifications by email.
-In this setup, your bank emails Zooza about account movements, and Zooza processes those emails automatically.
+Some banks can send transaction notifications by email. In this setup, your bank emails Zooza about account movements, and Zooza processes those emails automatically.
 
 - The notification must contain the correct bank account (IBAN)
 - The payment reference must match a booking
 
-
 Only payments that meet these conditions are stored and processed. All other notifications are ignored.
 
-Note: Not all banks support reliable email notifications. Please check with your bank before using this method.
 
-Setup instructions are available in the [documentation](https://support.zooza.online/portal/sk/kb/articles/parovanie-platieb-cez-emailovu-notifikaciu).
+> Not all banks support reliable email notifications. Contact support to check if your bank is supported.
+
+Setup instructions are available in [Email payment notifications](../setup/email-payment-notifications.md).
 
 ### Automatic pairing via GoCardless (recommended)
 
@@ -92,7 +93,85 @@ Zooza syncs payments from GoCardless automatically twice per day. This means the
 
 This method is ideal for franchises and international businesses using Direct Debit as their primary payment method.
 
-See setup instructions in the [documentation](https://support.zooza.online/portal/sk/kb/articles/fakturacia).
+See [GoCardless Direct Debit](gocardless-direct-debit-mandates.md) for setup instructions.
+
+## AI evaluation of incoming payments
+
+All automated payments (bank email, GoCardless, CSV import) pass through an AI evaluation step before being committed to a booking. The AI decides whether to:
+
+- **Auto-pair** — high confidence match, paired immediately.
+- **Ignore** — identified as a duplicate of an existing payment.
+- **Flag for manual review** — ambiguous match or low confidence.
+
+![Screenshot — payment pairing](../../assets/images/payment-pairing-01.png)
+
+### Inbound payment statuses
+
+| Status | Meaning | What to do |
+|---|---|---|
+| **Processing** | AI is evaluating the payment. | Wait — resolves automatically within seconds. |
+| **New** | AI flagged for manual review, or AI evaluation failed. | Review and action (see below). |
+| **Paired** | Matched to a booking (by AI or manually). | Nothing needed. |
+| **Ignored** | Dismissed as duplicate or manually ignored. | Nothing needed. |
+| **Error** | AI service unavailable. | Treat as **New** — pair or ignore manually. |
+
+> **Pending review badge:** The payments toolbar shows a count of **New** + **Error** payments so you can see at a glance if there is work to review.
+
+### AI reasoning card
+
+![Screenshot — payment pairing](../../assets/images/payment-pairing-02.png)
+
+When an AI evaluation exists, the payment detail shows an **AI reasoning** card with:
+
+- **Reasoning** — plain-language explanation of the AI's decision, in your company language.
+- **Decision badge** — what the AI decided: **Pair**, **Ignore**, or **Manual review**.
+- **Confidence** — green (≥ 85%), yellow (60–84%), red (< 60%).
+- **Duplicate reference** — if the payment may be a duplicate, a link to the matching existing payment.
+- **Alternative suggestions** — "Did you mean...?" links to other bookings the AI considered.
+
+The reasoning card is visible on all statuses — including already **Paired** and **Ignored** payments — as a full audit trail.
+
+### Reviewing a payment manually
+
+When a payment has status **New**:
+
+1. Open the payment from **Payments → Received payments**.
+2. Read the AI reasoning and check the suggested booking.
+3. Choose an action:
+
+| Action | When to use |
+|---|---|
+| **Approve** | AI's suggested booking is correct — confirm the pairing. |
+| **Reassign** | AI matched the wrong booking — select the correct one. |
+| **Ignore** | Payment is a duplicate or should not be recorded. |
+
+Add an optional **note** when acting. Notes are stored and improve future AI evaluations for the same client.
+
+### Duplicate detection
+
+The AI compares each incoming payment against existing recorded payments, other unmatched inbound payments, and manually entered payments. If a match is found, the reasoning card links directly to the suspected duplicate.
+
+> **Two children, same payer:** When a parent pays for two children using the same payment reference, the AI cannot automatically distinguish the transactions. It flags both for review and suggests the sibling registrations as alternatives — review each payment and assign to the correct booking.
+
+### AI pairing rules
+
+You can configure company-specific rules that influence AI decisions via **Payments → Payments Received → AI Rules & Filters**. Examples: ignore payments from a specific IBAN, prefer a specific programme when the variable symbol is ambiguous, or require manual review above a certain amount. Company rules override system defaults.
+
+### AI Analytics
+
+Go to **Payments → Payments Received → AI Analytics** to see how the AI is performing for your company.
+
+![Screenshot — payment pairing](../../assets/images/payment-pairing-03.png)
+
+| Metric | Description |
+|---|---|
+| **Total evaluated** | Number of payments the AI has processed. |
+| **Decision distribution** | Breakdown of Paired vs Manual review decisions, with average confidence per category. |
+| **Auto-pair success rate** | Percentage of auto-paired payments that completed successfully. |
+| **Admin overrides** | Number of times an admin disagreed with the AI's decision. |
+| **Processing time** | Average time from payment arrival to AI decision. |
+
+Filter by **Last 7 days**, **Last 30 days**, **Last 90 days**, or **All time**.
 
 ## Frequently Asked Questions
 
@@ -118,7 +197,7 @@ This situation usually occurs when you have enabled the setting *Automatically p
 
 Zooza > Settings > Payments
 
-![Screenshot](../../assets/images/payment-pairing-02.png)
+![Screenshot](../../assets/images/payment-pairing-04.png)
 
 In this mode, Zooza pairs payments only if a booking already has an outstanding balance at the moment the payment is received.
 
@@ -134,6 +213,16 @@ You can always check the exact reason why a payment was not paired directly in t
 Solution: Such payments can be safely paired manually to the correct booking, typically using the *payment reference*.
 
 ## Troubleshooting payment pairing failures
+
+### Linked booking payment not paired to the managing registration
+
+If you use linked bookings with **Manage parent/main booking** and an automatic payment was not paired — or was paired to the wrong booking — check the **Pairing process summary** in the payment detail. It shows the full chain resolution path and, if resolution failed, the reason (e.g., a broken link, a misconfigured chain).
+
+Common causes:
+- The linked booking chain was set up incorrectly (the managing registration ID is invalid or belongs to a different company).
+- The chain has more than 10 levels (extremely rare in practice).
+
+**Solution:** Review the linked bookings setup. Go to the booking → open the registration detail → check the **Linked to** field. Repair the link if needed, then pair the payment manually.
 
 ### Payments from Revolut or foreign banks
 
