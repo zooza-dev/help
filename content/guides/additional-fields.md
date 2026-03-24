@@ -5,12 +5,12 @@ type: "guides"
 product_area: "Programmes"
 sub_area: ""
 audience: ["admin"]
-tags: ["additional-fields", "extra-fields", "booking-form", "date-of-birth", "age-restriction", "custom-fields"]
+tags: ["additional-fields", "extra-fields", "booking-form", "date-of-birth", "age-restriction", "custom-fields", "citizenship"]
 status: "published"
 source_legacy_path: "legacy/html/labels-and-extra-fields.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-17"
+last_converted: "2026-03-24"
 ---
 
 <!-- Synonyms: extra fields, custom fields, booking form fields, date of birth, age restriction, child's name, address field, business fields, remove field from registration, hide field booking form, edit registration field, what are additional fields, kolonka registrace, upravit kolonku, zrušit pole registrace, skrýt pole, přidat pole registrace, co jsou additional fields, ďalšie polia, extra polia, dátum narodenia, vekové obmedzenie, skryť pole registrácia, upraviť pole, odstrániť pole z registrácie, čo sú additional fields, egyéni mezők, regisztrációs mezők, mező eltávolítása, mező elrejtése regisztrációból -->
@@ -41,6 +41,7 @@ These fields are ready to use — you just enable them and optionally set a cust
 |---|---|---|
 | **Date of birth** | Client's or child's date of birth. | Can be used for age restriction (see below). |
 | **Child's full name** | Full name of the child (for children's programmes). | Shown when the "For children" setting is active. |
+| **Citizenship** | Country of citizenship, selected from a dropdown. | Stored as an ISO 3166-1 country code. Recommended countries for your region are shown first. Syncs to the client profile — updating it on one registration updates the client record. |
 | **Address** | Client's address. | Choose **Simple** (single text field) or **Structured** (street, city, zip code as separate fields). |
 | **Number of occupied slots** | How many slots the booking occupies. | Useful for events like birthday parties where one booking takes multiple spots. |
 | **Identification (birth) number** | National identification number. | Region-specific field. |
@@ -57,9 +58,9 @@ These fields are used for business invoicing. When one or more business fields a
 | **Tax ID** | Tax identification number. |
 | **VAT** | VAT identification number. |
 
-## Custom fields (Additional field 1–5)
+## Custom fields (Additional field 1–15)
 
-You can add up to 5 custom fields. Each custom field has:
+You can add up to 15 custom fields. Each custom field has:
 
 - **Name** — the label displayed on the booking form (required).
 - **Type** — **Text** (free-text input) or **Choice** (dropdown picker).
@@ -92,7 +93,7 @@ To remove a field from the booking form without deleting it permanently:
 
 The field disappears from the booking form immediately. Existing bookings that already have data in that field keep their values — the data is not deleted, just hidden from new registrations.
 
-To hide a **custom field** (Additional field 1–5), simply clear the field's **Name** — a custom field with no name is not shown on the booking form.
+To hide a **custom field** (Additional field 1–15), simply clear the field's **Name** — a custom field with no name is not shown on the booking form.
 
 > **Note:** Fields are configured per programme. If you want to hide a field for one programme but keep it for another, change the setting on that specific programme only.
 
@@ -136,12 +137,14 @@ Additional field values can be used in email templates via dynamic tags. This le
 |---|---|
 | <code>&#42;&#124;EF_DOB&#124;&#42;</code> | Date of birth |
 | <code>&#42;&#124;EF_FULL_NAME&#124;&#42;</code> | Full name |
+| <code>&#42;&#124;EF_CITIZENSHIP&#124;&#42;</code> | Citizenship (ISO country code, e.g. `SK`) |
 | <code>&#42;&#124;EF_ADDRESS&#124;&#42;</code> | Address |
 | <code>&#42;&#124;EF_BUSINESS_NAME&#124;&#42;</code> | Business name |
 | <code>&#42;&#124;EF_BUSINESS_ADDRESS&#124;&#42;</code> | Business address |
 | <code>&#42;&#124;EF_BUSINESS_ID&#124;&#42;</code> | Business ID |
 | <code>&#42;&#124;EF_TAX_ID&#124;&#42;</code> | Tax ID |
 | <code>&#42;&#124;EF_VAT&#124;&#42;</code> | VAT ID |
+| <code>&#42;&#124;EF_EXTRA_FIELD_1&#124;&#42;</code> – <code>&#42;&#124;EF_EXTRA_FIELD_15&#124;&#42;</code> | Custom fields 1–15 |
 
 For the full list of dynamic tags, see [Dynamic tags](dynamic-tags.md).
 

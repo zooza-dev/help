@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-03-24"
 ---
 
 # Bookings
@@ -51,8 +51,34 @@ The left sidebar provides filters:
 - **Choose programme** — filter by programme.
 - **Venues** — filter by venue/location.
 - **Instructor** — filter by instructor.
-- **Auto-enrolment** — filter by auto-enrolment status (All, Yes, No).
-- **Billing** — filter by billing status.
+- **Auto-enrolment** — filter by auto-enrolment status:
+
+  | Value | Description |
+  |---|---|
+  | All | No filter — shows all bookings. |
+  | Not decided yet | Client has not yet responded to the auto-enrolment offer. |
+  | Auto-enrolment Declined | Client declined to continue for the next period. |
+  | Auto-enrolment Accepted | Client accepted continuation for the next period. |
+
+- **Billing** — filter by billing status. The available statuses depend on whether the booking uses a payment plan with a down payment:
+
+  | Status | Description |
+  |---|---|
+  | No debt | The booking is fully paid — nothing is owed. |
+  | Not paid | Nothing has been paid yet (balance is zero). |
+  | Awaiting payment | A payment has been requested or is scheduled but not yet received. Distinct from **Not paid** — use this to find bookings with an outstanding payment request. |
+  | Partially paid | Some amount has been paid, but the full balance is not yet settled (e.g. instalment plan in progress). |
+  | Paid | The booking is fully paid. |
+  | Overpaid | More has been paid than the amount owed — a credit is on the account. |
+  | Down payment unpaid | The booking has a down payment structure and the down payment has not been paid. |
+  | Down payment partially paid | The down payment has been partially paid. |
+  | Down payment paid | The down payment is fully paid; final payment may still be outstanding. |
+  | Final payment unpaid | The final payment is due and has not been paid. |
+  | Final payment partially paid | The final payment has been partially paid. |
+  | Final payment paid | The final payment is fully settled. |
+  | Final payment overpaid | More than the final payment amount has been paid. |
+
+  > **Tip:** To find all bookings with outstanding balances, filter by **Not paid** + **Partially paid** (and **Awaiting payment** if you want to include pending payment requests).
 - **Payment frequency** — filter by payment frequency type.
 - **Tag** — filter by custom tag. Type a tag and click **OK**.
 - **Booking date from / to** — filter by date range.
