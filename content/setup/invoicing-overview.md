@@ -49,39 +49,12 @@ If you want invoices to appear directly in your accounting or ERP system, go to 
 
 The engines available to you depend on your country and account configuration.
 
-<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin:24px 0">
-
-<a href="./fakturoid-invoices.md" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 16px;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:inherit;gap:10px;min-height:90px">
-<img src="../../assets/images/engine-logo-fakturoid.svg" alt="Fakturoid" style="height:28px;object-fit:contain;max-width:120px">
-<span style="font-size:11px;color:#6b7280">CZ / SK</span>
-</a>
-
-<a href="./abra-flexi-invoices.md" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 16px;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:inherit;gap:10px;min-height:90px">
-<img src="../../assets/images/engine-logo-abra-flexi.svg" alt="ABRA Flexi" style="height:28px;object-fit:contain;max-width:120px">
-<span style="font-size:11px;color:#6b7280">CZ / SK</span>
-</a>
-
-<a href="./xero-integration.md" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 16px;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:inherit;gap:10px;min-height:90px">
-<img src="../../assets/images/engine-logo-xero.svg" alt="Xero" style="height:28px;object-fit:contain;max-width:120px">
-<span style="font-size:11px;color:#6b7280">International</span>
-</a>
-
-<a href="./szamlazz-invoices.md" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 16px;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:inherit;gap:10px;min-height:90px">
-<img src="../../assets/images/engine-logo-szamlazz.png" alt="Számlázz.hu" style="height:28px;object-fit:contain;max-width:120px">
-<span style="font-size:11px;color:#6b7280">Hungary</span>
-</a>
-
-<a href="./smartbill-invoices.md" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 16px;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:inherit;gap:10px;min-height:90px">
-<img src="../../assets/images/engine-logo-smartbill.svg" alt="SmartBill" style="height:28px;object-fit:contain;max-width:120px">
-<span style="font-size:11px;color:#6b7280">Romania</span>
-</a>
-
-<a href="./oblio-invoices.md" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 16px;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:inherit;gap:10px;min-height:90px">
-<img src="../../assets/images/engine-logo-oblio.png" alt="Oblio" style="height:28px;object-fit:contain;max-width:120px">
-<span style="font-size:11px;color:#6b7280">Romania</span>
-</a>
-
-</div>
+- [Fakturoid](./fakturoid-invoices.md) — CZ / SK
+- [ABRA Flexi](./abra-flexi-invoices.md) — CZ / SK
+- [Xero](./xero-integration.md) — International
+- [Számlázz.hu](./szamlazz-invoices.md) — Hungary
+- [SmartBill](./smartbill-invoices.md) — Romania
+- [Oblio](./oblio-invoices.md) — Romania
 
 ### Engine comparison
 
