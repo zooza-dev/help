@@ -89,6 +89,24 @@ An allowance granted to a specific booking that lets the client attend extra ses
 
 ---
 
+## I
+
+### Invoice
+A document issued to a client confirming a payment received for a booking or product purchase. In Zooza, invoices are generated per billing period and sent to the client by email as a PDF. Invoices are created by the connected invoice engine.
+
+### Invoice Engine
+The external invoicing or accounting service that creates the actual invoice document. Zooza collects payment data and sends it to the engine, which assigns an invoice number and generates a PDF. Zooza includes a built-in engine (no setup required); companies can also connect their own accounting system (Xero, Fakturoid, ABRA Flexi, SmartBill, Számlázz.hu, Oblio).
+
+### Invoice Profile
+The "From" section on an invoice — your company name, address, tax IDs (Business ID, Tax ID, VAT number), and bank account (IBAN). A company can have multiple Invoice Profiles, for example for different billing entities. A profile can be assigned to individual courses; otherwise the company default is used.
+
+> Formerly called: *Billing profile*
+
+### Invoice Line Types (multi-line)
+A configuration within an Invoice Profile that splits invoice amounts into separate lines per transaction type (e.g. Course Payment, Registration Fee, Discount). When at least one line type is enabled, multi-line invoicing is active. When no types are configured, a single-line invoice is generated.
+
+---
+
 ## M
 
 ### Make-up session
@@ -151,6 +169,15 @@ A unique identifier included with bank transfer payments, used to automatically 
 
 ### Session
 A single scheduled meeting within a Class, with a specific date and time. Attendance is recorded at session level.
+
+### Stripe Clearing Account
+A bank account in Xero (or another accounting system) used as an intermediary between individual Zooza invoice payments and Stripe bulk payouts. When a client pays via Stripe, the payment is recorded against this clearing account in Xero. When Stripe pays out to your bank, the bulk transfer is matched against the same clearing account. This approach prevents double-counting and allows individual invoice-level tracking alongside bulk bank reconciliation.
+
+### Stripe Express vs Stripe Standard
+Two types of Stripe accounts supported by Zooza. Both process payments identically. Stripe Standard gives the company owner direct access to the full Stripe dashboard, payout reporting, and VAT invoices for Stripe fees. Stripe Express is a simplified account managed via the Stripe Express dashboard with limited access to some reports. Companies needing accountant-level access and VAT fee invoices should use Stripe Standard.
+
+### Payment Sync
+The automatic process by which Zooza sends payment records to the connected invoice engine (e.g. Xero, Fakturoid, Számlázz.hu) after an invoice is created. In Xero, this marks each invoice as paid and records the individual payment as a transaction against the bank account code configured in the Invoice Profile. Not all engines support payment sync — see [Invoicing overview](../setup/invoicing-overview.md) for a comparison.
 
 ---
 

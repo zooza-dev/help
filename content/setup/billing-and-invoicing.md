@@ -171,8 +171,62 @@ Invoice numbers are generated sequentially per billing profile. The format and s
 
 For the invoice item description, you can use dynamic tags to automatically insert programme-specific information (e.g., programme name, billing period). This is useful when generating invoices across many programmes — each invoice will contain the correct programme details without manual editing.
 
+## Multi-line invoices
+
+By default, Zooza generates a **single-line invoice** — one line item with the total amount.
+
+**Multi-line invoices** break the amount into separate lines per transaction type — for example: Course Payment, Registration Fee, Discount. Each line can have its own label and, if you use Xero or ABRA Flexi, its own account code.
+
+### Where to configure
+
+Open an Invoice Profile (`/#settings/invoice_profiles`) and scroll to the **Invoice Line Types** section at the bottom of the profile.
+
+> **Note:** Settings here override the company-wide defaults for this profile only.
+
+![Invoice Line Types section in an Invoice Profile](../../assets/images/billing-and-invoicing-14.png)
+
+### How to activate multi-line
+
+Multi-line activates automatically as soon as at least one transaction type is enabled. There is no separate on/off toggle.
+
+1. Open the Invoice Profile at `/#settings/invoice_profiles`.
+2. Scroll to **Invoice Line Types**.
+3. Select the tab — **Programmes** (course registrations) or **Products** (product orders).
+4. Check the transaction types you want to show as separate lines (e.g. **Course Payment**, **Registration Fee**, **Discount**).
+5. Optionally set a **Custom label** for each line. You can use dynamic tags — for example `*|COURSE_NAME|*` inserts the programme name automatically.
+6. Click **Save**.
+
+The status banner confirms when multi-line is active: _"Multi-line invoicing is active. Each enabled type will appear as a separate line on the invoice."_
+
+To return to single-line, uncheck all transaction types and save.
+
+### Account codes (Xero and ABRA Flexi)
+
+If your Invoice Profile uses Xero or ABRA Flexi, each transaction type also has an account code field:
+
+- **Xero** — `Revenue Account Code` (e.g. `260 - Class Sales`). Use **Sync accounts** to pull the latest accounts from Xero.
+- **ABRA Flexi** — `Středisko` (cost centre) and `Činnost` (activity code).
+
+Account codes are optional. If left empty, the profile-level default account is used.
+
+### Transaction types
+
+| Type | Description |
+|---|---|
+| Course Payment | The main payment amount for a course registration |
+| Registration Fee | One-time fee charged at registration |
+| Discount | Any discount applied to the booking |
+| Credit | Credit applied from a previous overpayment |
+
+Unchecked types are merged into the main line (or into the nearest checked parent if they are a correction type).
+
+### Correction types and merging
+
+Each payment type has a corresponding correction type (e.g. `Course Payment Correction`). If a correction type is **not** in your mapping, its amount is automatically merged into the parent line — the result appears as a single net amount. If you add the correction type to the mapping, it appears as its own negative line.
+
 ## Related
 
+- [Invoicing overview](./invoicing-overview.md) — how invoice engines work, which engine to use.
 - [Invoices](../reference/invoices-list.md) — the invoices list screen reference.
 - [Payments and Billing FAQ](../faq/payments-and-billing-faq.md) — common payment and billing questions.
 - [Edit payment on booking](../guides/edit-payment-on-booking.md) — how to adjust payments on bookings.

@@ -1,62 +1,100 @@
 ---
-title: "Szamlazz Invoice Management"
+title: "Számlázz.hu Integration"
 slug: "szamlazz-invoices"
 type: "setup"
 product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["invoicing", "szamlazz", "invoice-engine", "hungary", "nav"]
 status: "published"
 source_legacy_path: "legacy/0100_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-03-25"
 ---
 
-# Szamlazz Invoice Management
+# Számlázz.hu Integration
 
-Integration to the Számlázz invoice management system used in Hungary.
+Számlázz.hu is a major Hungarian cloud invoicing platform. When connected, Zooza creates legally compliant Hungarian invoices directly in your Számlázz.hu account. For business bookings, invoices are automatically forwarded to Hungary's NAV tax system.
 
-[https://www.szamlazz.hu/szamla/main](https://www.szamlazz.hu/szamla/main)
+**Market:** Hungary
+**Setup effort:** Paste API token
 
-![Screenshot](../../assets/images/blocks-creation-07.png)
+---
 
-Info: Connection to this service allows you to create and maintain invoices in the direction of Zooza - Számlázz.
+## Before you start
 
+You need an active [Számlázz.hu](https://www.szamlazz.hu/) account. Számlázz.hu has a test environment — use it to confirm the integration works before going live.
 
-## Functioning of the invoice management process and billing profiles when connected:
+---
 
-![Screenshot](../../assets/images/blocks-creation-14.png)
+## Setup
 
-Notes:
+1. Go to **Settings → Billing** and open your Invoice Profile.
+2. In the **Invoice Engine** section, select **Számlázz.hu**.
+3. Paste your **API token**:
+   - Find it in Számlázz.hu on the main page, at the bottom — below the invoice list and the users block.
+   - Detailed instructions: [Számlázz.hu API key guide](https://tudastar.szamlazz.hu/gyik/kulcs)
 
-1. The invoice numbering series is defined within Számlázz.
-2. VAT configurations are pulled from Zooza into Számlázz.
-3. Once an invoice has been created, it cannot be modified.
-4. When linking Zooza and Számlázz, we recommend to use a Számlázz test environment. After confirming that everything works as expected, switch to your live Számlázz account.
-5. For business bookings, Számlázz will automatically forward each generated invoice to Hungary’s NAV system.
+   ![API token field in Zooza](../../assets/images/szamlazz-invoices-03.png)
 
-## Connection in Zooza:
+   ![API token location in Számlázz.hu](../../assets/images/szamlazz-invoices-04.png)
 
-1. In Zooza, select Számlázz in the Billing System and paste the token you find in Számlázz
- ![Screenshot](../../assets/images/szamlazz-invoices-03.png)
-2. Token can be found on the main page at the bottom under invoice list and the block of users. Detailed information can be found in this [link](https://tudastar.szamlazz.hu/gyik/kulcs).
- ![Screenshot](../../assets/images/szamlazz-invoices-04.png)
- Resource: [https://tudastar.szamlazz.hu/gyik/kulcs](https://tudastar.szamlazz.hu/gyik/kulcs)
-3. Choose whether you want automatic generation of invoices or you will manually generate invoices per booking.
- ![Screenshot](../../assets/images/szamlazz-invoices-05.png)
-4. Set up Billing profile/s for communication from Zooza.
-5. Set up VAT
- ![Screenshot](../../assets/images/szamlazz-invoices-06.png)
-6. Set the number series for invoicing in Számlázz
+4. Click **Save**.
 
-![Screenshot](../../assets/images/customizing-widgets-01.png)
+> **Tip:** You can connect multiple Számlázz.hu accounts to one Zooza account by adding a different API token to each Invoice Profile. Each profile links to its own Számlázz.hu account.
 
-Tip: For automatic invoice generation link your billing profile to the GoCardless app for automatic payment pairing - [Billing and invoicing](billing-and-invoicing.md).
+![Multiple Számlázz accounts via multiple profiles](../../assets/images/szamlazz-invoices-09.png)
 
-![Screenshot](../../assets/images/blocks-creation-07.png)
+---
 
-Info: If you need to connect multiple Számlázz accounts to a single Zooza account, you can do this by linking each Számlázz account to a separate invoice profile. This way, you can create multiple invoice profiles in Zooza, with each one connected to its own Számlázz account. To set this up, simply add the token in the invoice profile settings, at the bottom of the page.
+## How invoices work
 
+Once connected:
 
-![Screenshot](../../assets/images/szamlazz-invoices-09.png)
+- Every time a payment is recorded in Zooza, an invoice is created in Számlázz.hu.
+- Invoice numbering is managed by Számlázz.hu via the number series configured there.
+- For business bookings (B2B), invoices are automatically forwarded to Hungary's **NAV** tax system — no manual steps required.
+- If a customer has already paid (pre-paid), the payment is automatically recorded on the invoice in Számlázz.hu — the invoice appears as paid immediately.
+- Invoices cannot be modified after creation.
+
+### VAT setup
+
+After connecting, configure VAT in Zooza:
+
+1. Go to **Settings → Billing** → scroll to **VAT levels**.
+2. Select how VAT should be applied and click **Synchronize**.
+
+   ![VAT setup in billing settings](../../assets/images/szamlazz-invoices-05.png)
+
+   ![VAT sync](../../assets/images/szamlazz-invoices-06.png)
+
+---
+
+## What works and what doesn't
+
+| Feature | Status |
+|---|---|
+| Invoice creation | ✓ Automatic |
+| NAV submission (B2B) | ✓ Automatic for business bookings |
+| Pre-paid invoice marking | ✓ Automatic — payment recorded immediately |
+| Multiple Számlázz accounts | ✓ Via separate Invoice Profiles |
+| Payment sync | ✓ Partial — pre-paid invoices only |
+| Credit notes | ✗ Not supported — issue in Számlázz.hu directly |
+| Editing invoices after creation | ✗ Not possible once created |
+
+---
+
+## Known issues
+
+**Invoice cannot be modified** — Once created in Számlázz.hu, invoices cannot be changed. Plan carefully before generating.
+
+**Test first** — Számlázz.hu has a test environment. Use it to verify the integration before switching to your live account.
+
+---
+
+## Related
+
+- [Invoicing overview](./invoicing-overview.md) — how invoice engines work
+- [Billing and invoicing](./billing-and-invoicing.md) — Invoice Profiles, auto/manual generation, multi-line
+- [VAT management](../guides/vat-management.md) — configuring VAT rates

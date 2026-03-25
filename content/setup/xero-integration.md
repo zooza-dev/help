@@ -1,225 +1,187 @@
 ---
-title: "Xero Integration in Zooza: Setup & Invoice Management"
+title: "Xero Integration"
 slug: "xero-integration"
 type: "setup"
 product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["invoicing", "xero", "invoice-engine", "payment-sync", "account-codes", "oauth"]
 status: "published"
 source_legacy_path: "legacy/0097_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-03-25"
 ---
 
-# Xero Integration in Zooza: Setup & Invoice Management
+# Xero Integration
 
-Setup & Invoice Management Guide
+Xero is an international cloud accounting platform. The Zooza–Xero integration is the most feature-rich of all invoice engines: invoices are created automatically in Xero, payments are synced back, and account codes can be mapped per transaction type.
 
-This guide explains how to connect Xero with Zooza, how to configure VAT, accounts, and billing profiles, and how invoices behave in different scenarios (VAT payer / non-VAT payer, manual vs automatic invoices).
+**Market:** International (UK, Australia, New Zealand, and others)
+**Setup effort:** Connect (OAuth) + configure account codes + re-authorize every 60 days
 
-The goal of this integration is simple:
+---
 
-![Screenshot](../../assets/images/blocks-creation-07.png)
+## Before you start
 
-Invoices created in Zooza are automatically created and marked as paid in Xero when a payment is recorded.
+You need an active [Xero](https://www.xero.com/) account with:
+- A **bank account** set up in Xero (required for payment sync)
+- A **revenue account** with a tax rate assigned (required for invoice line items)
 
-## 1. Connecting Xero to Zooza
+> **Important:** Xero requires re-authorization every 60 days. This is a Xero security policy — not a Zooza limitation. Set a reminder so invoices don't start failing.
 
-To connect Xero:
+---
 
+## Setup
 
-1. Go to Zooza → Settings → Billing "Invoice Settings" and choose Xero. → Click Connect Xero
+### Step 1 — Connect Xero
 
+1. Go to **Settings → Billing** and open your Invoice Profile.
+2. In the **Invoice Engine** section, select **Xero**.
+3. Click **Connect Xero** — you are redirected to Xero to log in and authorize Zooza.
 
-![Screenshot](../../assets/images/xero-integration-02.png)
+   ![Select Xero and click Connect](../../assets/images/xero-integration-02.png)
 
+4. Log in to Xero and click **Allow Access**.
 
-2. Log in to your Xero account and Allow Access
+   ![Xero authorization screen](../../assets/images/xero-integration-03.png)
 
-![Screenshot](../../assets/images/xero-integration-03.png)
+   ![Xero allow access confirmation](../../assets/images/xero-integration-04.png)
 
-![Screenshot](../../assets/images/xero-integration-04.png)
+5. You are redirected back to Zooza. The connection is active.
 
-Once connected, you can:
+### Step 2 — Sync VAT (VAT payers only)
 
-- Sync data at any time using Sync
-- Zooza will pull tax rates, bank accounts, and revenue accounts from Xero
+If your company is a VAT payer:
 
-![Screenshot](../../assets/images/blocks-creation-14.png)
+1. Go to **Settings → Billing** → scroll to the bottom.
+2. Click **Sync VAT** — Zooza pulls tax rates from Xero.
 
-✅ No additional setup is required at this stage.
+   ![VAT sync button at the bottom of billing settings](../../assets/images/client-import-01.png)
 
-## 2. VAT Sync (Only if You Are a VAT Payer)
+If you are not a VAT payer, skip this step.
 
-If you are a VAT payer:
+### Step 3 — Configure the Invoice Profile
 
-1. Go to Zooza → Settings → Billing (to bottom of the page)
-2. Click Sync VAT
-3. Zooza will load VAT / tax rates from Xero
+Open your Invoice Profile (`/#settings/invoice_profiles`) and complete the following:
 
-![Screenshot](../../assets/images/client-import-01.png)
+**VAT settings:**
 
-If you are not a VAT payer, you can skip this step entirely.
+![Invoice Profile — VAT payer settings](../../assets/images/xero-integration-08.png)
 
-![Screenshot](../../assets/images/xero-integration-07.png)
+- **VAT payer:** enable and select the tax rate synced from Xero.
+- **Not a VAT payer:** leave the VAT payer checkbox unchecked.
 
-## 3. Tax Setup in Xero (Important)
+![VAT rate selection](../../assets/images/xero-integration-09.png)
 
-In Xero, you must have a tax rate correctly assigned to your revenue accounts.
+**Bank account:**
 
-Best practice:
+Scroll to the bank account section and select the Xero bank account that receives payments.
 
-- Assign the tax rate to a revenue account, e.g. 200 – Sales (or your preferred sales account)
+![Bank account selection](../../assets/images/xero-integration-10.png)
 
-If:
+The bank account must:
+- Exist in Xero as a **Bank Account** (not just an account in the chart of accounts)
+- Have a **code** assigned in Xero
 
-- A new tax rate is created in Xero → Simply return to Zooza and click Sync at the bottom of the Billing page. (Zooza → Settings → Billing (to bottom of the page))
+If the bank account was created later in Xero, refresh Zooza to reload the list.
 
+**Revenue account:**
 
-## 4. Invoice Profile – VAT Settings
+Select the revenue account from Xero. This account:
+- Represents your income (e.g. `200 – Sales`)
+- Must have a tax rate assigned in Xero that matches the tax rate in this Invoice Profile
 
-Go to Zooza → Billing → Invoice Profiles (Click on the Not Set or name of the invoice profile to go to the detail)
+Manage revenue accounts in Xero under **Accounting → Chart of Accounts → All Accounts**.
 
+![Revenue account selection](../../assets/images/xero-integration-14.png)
 
-![Screenshot](../../assets/images/xero-integration-08.png)
+### Step 4 — Save
 
-### If you ARE a VAT payer:
+Click **Save** on the Invoice Profile.
 
-1. Enable Tax payer
-2. Select the tax rate (synced from Xero)
+---
 
-![Screenshot](../../assets/images/xero-integration-09.png)
+## How invoices work
 
-### If you are NOT a VAT payer:
+Once configured:
 
-- Leave Tax payer unchecked
-- No tax rate is required
+- Every time a payment is recorded in Zooza, an invoice is created in Xero.
+- Xero assigns the invoice number.
+- After creation, **payment sync runs automatically** — each payment (credit, bank transfer, direct debit, Stripe, refund) appears as a separate transaction in Xero against the invoice.
+- Discounts, registration fees, and payment schedules appear as invoice line items — they are not synced as payment transactions.
+- The system checks what Xero says is still owed before syncing, to prevent over-payment. Already-synced payments are skipped automatically.
 
-## 5. Bank Account Setup (Very Important)
+> **Note:** Zooza links to the invoice in Xero but does not store a local PDF copy. To download the PDF, open the invoice in Xero.
 
-At the bottom of the Invoice Profile:
+---
 
+## Manual invoice creation
 
-Select a Bank Account (synced from Xero)
+You can generate invoices manually from a booking, regardless of whether automatic generation is enabled:
 
-![Screenshot](../../assets/images/xero-integration-10.png)
+1. Open the booking detail.
+2. Find the **Payments** tile and click **Show payments**.
+3. Select the invoice period and click **Generate invoice**.
 
-### Important rules:
+   ![Manual invoice generation from booking](../../assets/images/xero-integration-15.png)
 
-- The bank account must exist in Xero
-- It must be created as a Bank Account
-- It must have a code (any code is fine)
+   ![Invoice generation dialog](../../assets/images/xero-integration-16.png)
 
-If the bank account:
+You can also generate an invoice when recording a manual payment:
 
-- Is created later in Xero → refresh Zooza
+![Generate invoice from manual payment dialog](../../assets/images/xero-integration-17.png)
 
-![Screenshot](../../assets/images/client-import-03.png)
+---
 
-Invoices cannot be edited in Zooza after creation.Changes made in Xero are not synchronised back to Zooza.Paid invoices in Xero have very limited edit options due to accounting and VAT rules.
+## Automatic invoice generation
 
-![Screenshot](../../assets/images/client-import-01.png)
+To enable automatic invoicing on every payment:
 
-![Screenshot](../../assets/images/client-import-03.png)
+Go to **Settings → Billing** → enable **Automatic invoice generation upon payment**.
 
-If no bank account is selected:
+![Automatic invoice generation toggle](../../assets/images/xero-integration-18.png)
 
+---
 
-- The invoice will be created in Xero
-- But it will NOT be automatically marked as paid in Xero
+## Multi-line invoices and account codes
 
-Next, select a Revenue Account from Xero.
+Xero supports itemised invoice breakdown — each transaction type as a separate line with its own **Revenue Account Code**.
 
-This account:
+Configure this in the **Invoice Line Types** section of the Invoice Profile. Use **Sync accounts** to pull the latest accounts from Xero, then map each transaction type (Course Payment, Registration Fee, Discount, etc.) to the appropriate Xero revenue account.
 
-- Represents the income (e.g. Sales)
-- Has a tax rate assigned in Xero
-- Must match the tax rate selected in the Billing Profile
+See [Billing and invoicing — Multi-line invoices](./billing-and-invoicing.md#multi-line-invoices).
 
-You can view and manage these accounts directly in Xero:
+---
 
+## What works and what doesn't
 
-Xero → Accounting → Chart of Accounts → All Accounts
+| Feature | Status |
+|---|---|
+| Invoice creation | ✓ Automatic |
+| Payment sync | ✓ Full — each payment as a separate Xero transaction |
+| Multi-line invoices + account codes | ✓ Supported |
+| VAT sync from Xero | ✓ Supported |
+| PDF | Viewable in Xero only — no local copy in Zooza |
+| Re-authorization | Required every 60 days (Xero policy) |
+| Editing invoices | Edit in Xero — changes don't sync back to Zooza |
+| Credit notes | ✗ Not supported — issue in Xero directly |
 
-![Screenshot](../../assets/images/xero-integration-14.png)
+---
 
-## 6. Save the Billing Profile
+## Known issues
 
-Once all settings are complete:
+**60-day re-authorization** — Xero forces the connection to expire after 60 days. When this happens, invoice generation fails until you reconnect. Go to the Invoice Profile and click **Connect Xero** again.
 
-- Click Save
+**Payments attach to one invoice only** — When a booking generates multiple invoices (e.g. monthly), all payments for the period are synced to the invoice being processed. If a student pays 3 months upfront, the full payment goes on the first invoice — the other two show as unpaid in Xero. **Workaround:** generate one invoice covering the full paid period instead of monthly invoices.
 
+**Tax rate must match** — The tax rate on the revenue account in Xero must match the tax rate configured in the Zooza Invoice Profile. A mismatch causes invoice creation to fail.
 
-## What This Setup Achieves
+---
 
-With the setup above:
+## Related
 
-- Every invoice created in Zooza based on a payment
-- Is automatically:Created in Xero
-- Marked as Paid  → Paid invoices in Xero have very limited edit options due to accounting and VAT rules.
-- Linked to the correct bank and revenue account
-
-This works for:
-
-- Online payments
-- Manually recorded payments (if invoicing is enabled)
-
-## Manual Invoice Creation (Optional)
-
-You can also create invoices manually.
-
-
-Where:
-
-
-- In the Booking detail
-
-![Screenshot](../../assets/images/xero-integration-15.png)
-
-![Screenshot](../../assets/images/xero-integration-16.png)
-
-- Or when adding a manual payment
-
-![Screenshot](../../assets/images/xero-integration-17.png)
-
-How:
-
-
-1. Select the period the invoice covers
-2. Generate the invoice
-3. Optionally send it to the client
-
-This is useful when:
-
-- Payment was received outside Zooza
-- Cash or bank transfer was used
-
-## Automatic Invoice Creation (Optional)
-
-You can enable Automatic Invoice Creation
-Go to Zooza → Settings → Billing "Automatic invoice generation upon payment"
-
-![Screenshot](../../assets/images/xero-integration-18.png)
-
-When enabled:
-
-- An invoice is created automatically
-- Every time a payment is recorded on a booking
-
-No manual action required.
-
-## Editing Invoices
-
-Important limitation:
-
-- Invoices must be edited in Xero 
-- Changes do NOT sync back to Zooza
-
-Zooza always keeps the original reference.
-
-## Where to See Invoices
-
-- Zooza: → Invoices section (overview & links) Zooza → Sales & Payments → Invoices
-- Xero: → Full accounting records, payments, reports
+- [Invoicing overview](./invoicing-overview.md) — how invoice engines work
+- [Billing and invoicing](./billing-and-invoicing.md) — Invoice Profiles, auto/manual generation, multi-line
+- [Xero invoicing FAQ](../faq/xero-invoicing-faq.md) — common Xero questions
+- [VAT management](../guides/vat-management.md) — configuring VAT rates

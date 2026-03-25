@@ -1,65 +1,107 @@
 ---
-title: "Smartbill - invoice management"
+title: "SmartBill Integration"
 slug: "smartbill-invoices"
 type: "setup"
 product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["invoicing", "smartbill", "invoice-engine", "romania"]
 status: "published"
 source_legacy_path: "legacy/0101_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-03-25"
 ---
 
-# Smartbill - invoice management
+# SmartBill Integration
 
-Integration to the Smartbill billing system used in Romania.
+SmartBill is a Romanian cloud invoicing platform. When connected, Zooza creates invoices directly in your SmartBill account.
 
-[Program Facturare Online | Gestiune si Contabilitate | SmartBill](https://www.smartbill.ro/)
+**Market:** Romania
+**Setup effort:** Email + API token + CIF (Romanian tax ID)
 
-![Screenshot](../../assets/images/blocks-creation-07.png)
+---
 
-Connection to the service allows you to create invoices in the direction of Zooza – Smartbill.
+## Before you start
 
-## Functioning of the invoice management process and billing profiles when connected
+You need an active [SmartBill](https://www.smartbill.ro/) account. The **CIF** (Romanian fiscal identification number) you enter in Zooza must match your SmartBill account exactly.
 
-1. The number of invoices issued depends on the prepaid package in Smartbill
-2. VAT settings are pulled from Smartbill towards Zooza
-3. The number series for invoices is set in Smartbill
-4. Already created invoice can only be changed or deleted in Smartbill, no back-synchronization is possible – after editing an invoice in Smartbill, the current form of the invoice is not pulled into Zooza, Zooza communicates this directly on the invoice by flag/notice
-5. Invoice data displayed in the invoice is set in Smartbill
-6. Invoice data that is sent in communication with the client and in the client profile is set in Zooza
+---
 
-## Smartbill link – step by step
+## Setup
 
-1. In Zooza, select Billing System – Smartbill along with:
-2. Smartbill email address
-3. Token that you find in SmartbillSection My account – Integrations – API
- ![Screenshot](../../assets/images/smartbill-invoices-02.png)
+1. Go to **Settings → Billing** and open your Invoice Profile.
+2. In the **Invoice Engine** section, select **SmartBill**.
+3. Enter your credentials:
 
+   | Field | Where to find it |
+   |---|---|
+   | `Email` | Your SmartBill account email |
+   | `API Token` | SmartBill → My Account → Integrations → API |
+   | `CIF` | Your Romanian tax identification number |
+   | `Invoice Series` | Optional — controls invoice numbering; set in SmartBill |
 
-Choose whether you want automatic generation of invoices or you will manually generate invoices per booking
+   ![SmartBill API token location in SmartBill](../../assets/images/smartbill-invoices-02.png)
 
-![Screenshot](../../assets/images/smartbill-invoices-03.png)
+4. Click **Save**.
 
-Set up Billing profile/s for communication from Zooza
-Link your billing profile to the GoCardless app for automatic payment pairing - [Billing and invoicing](billing-and-invoicing.md)
-Set the number series for invoices in Smartbill
+   ![SmartBill credentials in Zooza settings](../../assets/images/smartbill-invoices-03.png)
 
+---
 
-![Screenshot](../../assets/images/smartbill-invoices-04.png)
+## How invoices work
 
+Once connected:
 
-In the billing profile detail in Zooza, select the number series that will be used for the billing profile
+- Every time a payment is recorded in Zooza, an invoice is created in your SmartBill account.
+- SmartBill assigns the invoice number and controls numbering via the invoice series.
+- PDF is available for download after creation.
+- VAT settings are pulled from SmartBill into Zooza.
+- Changes made in SmartBill are not synced back to Zooza.
 
+### VAT setup
 
-![Screenshot](../../assets/images/smartbill-invoices-05.png)
+After connecting, sync VAT rates from SmartBill:
 
+1. Go to **Settings → Billing** → scroll to **VAT levels**.
+2. Click **Synchronize** to pull VAT rates from SmartBill.
 
-Set VAT levels in Smartbill
-In the VAT levels settings section of Zooza, select from the options how to apply VAT levels and click on the synchronize option so that the levels are properly tightened
+   ![VAT sync in billing settings](../../assets/images/smartbill-invoices-06.png)
 
+### Invoice series
 
-![Screenshot](../../assets/images/smartbill-invoices-06.png)
+Set the invoice number series in SmartBill, then select it in the Invoice Profile in Zooza:
+
+![Invoice series selection in billing profile](../../assets/images/smartbill-invoices-04.png)
+
+![Invoice series detail](../../assets/images/smartbill-invoices-05.png)
+
+---
+
+## What works and what doesn't
+
+| Feature | Status |
+|---|---|
+| Invoice creation | ✓ Automatic |
+| PDF generation | ✓ Available after creation |
+| VAT sync from SmartBill | ✓ Supported |
+| Invoice numbering | ✓ Managed by SmartBill via series |
+| Payment sync | ✗ Not supported — payments tracked in Zooza only |
+| Credit notes | ✗ Not supported — issue in SmartBill directly |
+| Editing invoices after creation | ✗ Edit in SmartBill — changes don't sync back |
+
+---
+
+## Known issues
+
+**CIF mismatch** — The CIF entered in Zooza must match your SmartBill account exactly. A mismatch will cause invoice creation to fail.
+
+**Invoice count limit** — The number of invoices you can issue depends on your SmartBill subscription plan.
+
+---
+
+## Related
+
+- [Invoicing overview](./invoicing-overview.md) — how invoice engines work
+- [Billing and invoicing](./billing-and-invoicing.md) — Invoice Profiles, auto/manual generation, multi-line
+- [VAT management](../guides/vat-management.md) — configuring VAT rates
