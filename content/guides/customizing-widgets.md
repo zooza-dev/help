@@ -39,6 +39,8 @@ Types of widgets available:
 
 ## Booking form
 
+> **Developer docs:** [Registration widget reference](https://docs.zooza.online/widgets/registration-widget)
+
 In its basic form, the booking form is displayed on a page listing all the programmes you have created and offered for online booking. The form contains basic fields to fill out and a preset display of information about each programme. If you wish to customize your programme selection, we recommend using the Embed version (HTML code). You can create your own specific settings in Zooza and use them to generate HTML code to embed on your page.
 
 ## Basic form fields
@@ -116,6 +118,8 @@ In the Publish section, you will also find additional options to customize the l
 
 ## Client Profile
 
+> **Developer docs:** [Profile widget reference](https://docs.zooza.online/widgets/profile-widget)
+
 Zooza allows you to create a client profile on your website, to which the client can easily log in. What the client can see and do in the profile:
 
 1. List of ordered products and services
@@ -131,6 +135,8 @@ This form also offers various settings that you can customize to suit your needs
 ![Screenshot](../../assets/images/customizing-widgets-19.png)
 
 ## Calendar/Schedule
+
+> **Developer docs:** [Calendar widget reference](https://docs.zooza.online/widgets/calendar-widget)
 
 Allows you to display programme and meeting offerings on your site in a clear calendar. The calendar will always be up to date according to the settings in Zooza. Visitors will thus be able to select from the current offer and make a booking for a programme or meeting.
 
@@ -164,15 +170,21 @@ As with the booking form, you have the option to display only some programmes in
 
 ## Videos
 
+> **Developer docs:** [Video widget reference](https://docs.zooza.online/widgets/video-widget)
+
 Zooza is also unique in that it can mediate the video in security mode so that no one can access the video except by making it available to bookings (either by attribution or by sale). In order to play the video, you need to create a subpage where the videos will be displayed.
 
 >**Note:** Deploying a widget to display videos also needs to be done if you put the video in a class/term to display in the client profile.
 
 ## Order form
 
+> **Developer docs:** [Checkout widget reference](https://docs.zooza.online/widgets/checkout-widget)
+
 Allows you to collect orders for your digital products or other products. In the case of digital products, they will be directly accessible in the client profile after payment.
 
 ## Map widget
+
+> **Developer docs:** [Map widget reference](https://docs.zooza.online/widgets/map-widget)
 
 The map widget allows you to display your programmes directly on a map on your website. With this clear view, clients can quickly select a programme by location.
 
@@ -275,6 +287,6 @@ Font, colour, and CSS customisation of Zooza widgets (booking form, calendar, cl
 
 Full documentation for CSS overrides, font setup, and advanced widget configuration is available in the **Zooza developer documentation**:
 
-**[docs.zooza.online](https://docs.zooza.online)**
+**[docs.zooza.online/widgets](https://docs.zooza.online/widgets/)**
 
-> If a client asks "how do I set up fonts on my form?" — direct them to their web developer and to the developer docs at docs.zooza.online. This cannot be configured from within the Zooza admin panel.
+> If a client asks "how do I set up fonts on my form?" — direct them to their web developer and to the developer docs at [docs.zooza.online/widgets](https://docs.zooza.online/widgets/). This cannot be configured from within the Zooza admin panel.

@@ -89,4 +89,14 @@ Go to **Settings → Integrations** to see all available integrations and their 
 
 ---
 
+## REST API & Custom Integrations
+
+| Resource | Description |
+|---|---|
+| **[Quickstart](https://docs.zooza.online/quickstart)** | Embed a widget or make your first REST API call in minutes. |
+| **[API reference](https://docs.zooza.online/api/)** | Full REST API endpoint reference — programmes, registrations, payments, invoices, and more. |
+| **[Widget reference](https://docs.zooza.online/widgets/)** | Embed code, URL parameters, CSS overrides, and widget configuration for developers. |
+
+---
+
 > **Region-restricted integrations** are available only in specific countries. If an integration shows *Not available in your region*, contact support to check eligibility.

@@ -46,7 +46,7 @@ For initial setup instructions, see [Deploying Zooza on your website](../setup/d
 1. Choose one method only: either use the WordPress plugin **or** use embed code, not both on the same page.
 2. If you use the WordPress plugin, do not add any Zooza embed code or shortcode to that page.
 3. If you need advanced filtering (e.g. showing only specific programmes), disable the plugin and use embed code instead. You can generate filtered embed code from **Publish** in Zooza.
-4. For advanced integration and CSS customization, refer to the developer documentation at `https://docs.zooza.online`.
+4. For advanced integration and CSS customization, refer to the [developer documentation](https://docs.zooza.online/widgets/).
 
 ### HTTPS vs HTTP mismatch
 
@@ -259,5 +259,5 @@ For initial setup instructions, see [Deploying Zooza on your website](../setup/d
 - **Always regenerate embed code** from the Zooza configurator rather than manually editing HTML parameters.
 - **Test in incognito mode** to rule out browser cache and cookie issues.
 - **Check publish settings** whenever links in emails or widgets lead to wrong pages. Go to **Settings** > **Publish** and verify every URL.
-- **Widget design customization** is handled via CSS on your website. Refer to `https://docs.zooza.online` for available CSS classes and overrides.
+- **Widget design customization** is handled via CSS on your website. Refer to [docs.zooza.online/widgets](https://docs.zooza.online/widgets/) for available CSS classes and overrides.
 - **One widget per page:** Avoid placing multiple instances of the same widget type on a single page.

@@ -81,3 +81,7 @@ Once you have Zooza successfully integrated on your site, you can customize the 
 It may happen that you have programmes split across multiple pages, either due to location or programme type,... In this case, Zooza offers you the possibility to have one account for programme administration, but multiple integrations to all websites. Just create a new widget in the Publish section by clicking *Add*.
 
 ![Screenshot](../../assets/images/deploying-zooza-on-website-12.png)
+
+---
+
+> **Developer documentation:** For advanced embed options, URL parameters, CSS customization, and the full widget reference, see [docs.zooza.online/widgets](https://docs.zooza.online/widgets/). For embedding via the REST API, see [docs.zooza.online/quickstart](https://docs.zooza.online/quickstart).

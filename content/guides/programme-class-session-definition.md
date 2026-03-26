@@ -44,6 +44,8 @@ There is no limit to the number of dates in the ongoing and Pay-as-you-go progra
 
 Each class contains at least one session. If there are more sessions, we can also call them schedules. The sessions automatically determine the time range of the programme, when it starts and when it ends. For a step-by-step walkthrough, see [Creating a class](creating-a-class.md) and [Edit sessions in programmes](edit-sessions-in-programmes.md).
 
+> **Using the API?** The [Concepts & glossary](https://docs.zooza.online/concepts) in the developer docs maps app terms (Programme, Class, Session) to their API field names (`course`, `schedule`, `event`).
+
 ## Billing periods
 
 This is a very practical tool for companies that organise their programmes in semesters. For example, if you have five classes in the winter semester and seven in the spring semester, you can distinguish them from each other thanks to the billing periods. For example, in case you would like to offer to carry over make-up sessions between semesters.

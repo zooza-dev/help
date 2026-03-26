@@ -30,7 +30,7 @@ Introductory guidance:
 - Adding forms is as simple as embedding a Google Map — copy the script and paste it.
 - Using WordPress? Install the Zooza plugin for easier setup.
 
-Links: **Step-by-step guide** and **Advanced customization for developers**.
+Links: **[Step-by-step guide](../setup/deploying-zooza-on-website.md)** and **[Advanced customization for developers](https://docs.zooza.online/widgets/)**.
 
 ## Widgets
 
