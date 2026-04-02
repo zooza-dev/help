@@ -144,7 +144,6 @@ The attendee's date of birth can be edited directly:
 2. In the **Attendee** card, click the name or the edit icon.
 3. Update the **Date of birth** field and save.
 
-![Screenshot — client management faq](../../assets/images/client-management-faq-01.png)
 ![Screenshot — client management faq](../../assets/images/client-management-faq-02.png)
 
 > **Note:** This changes the date of birth across all bookings for that attendee — the attendee record is shared.

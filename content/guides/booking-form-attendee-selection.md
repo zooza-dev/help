@@ -86,4 +86,4 @@ This distinction matters for:
 
 - [Booking form settings overview](./booking-form-settings.md) — widget-level settings, field visibility
 - [Additional fields on the booking form](./additional-fields.md) — custom fields per programme
-- [Create a programme](./create-programme.md) — For children toggle and programme type
+- [Programme settings](./programme-settings.md) — For children toggle and programme type
