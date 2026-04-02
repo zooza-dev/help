@@ -76,6 +76,14 @@ Yes. Go to **Settings** → **Make-up sessions** → **General Settings** and ch
 - **Default expiration of credits (in days)** — applies to all make-up credits from the date the credit is created (default: 90 days).
 - **Additional slots in classes** — extra capacity in sessions reserved specifically for make-up bookings (global setting; can be overridden per class).
 
+## Does "make-up credit validity" mean the client must attend by that date, or just book by that date?
+
+The validity window is the deadline for **booking** the make-up session — not for attending it.
+
+**Example:** If the class ends on 27 January and you have a 30-day validity period, the client must **book** a make-up session by 27 February. The booked session can be scheduled for a later date (e.g. 30 March) — as long as the booking action itself happens within 30 days of the class ending.
+
+The only other timing rule: make-up sessions only appear as bookable options **4 days before** the target class's start date. So if the client wants to book a session that starts the following month, it will not appear in their list until 4 days before.
+
 ## How do I delete or expire a make-up credit?
 
 Go to the booking detail page. Scroll to the **Credits** section at the bottom. Click **Show all credits** to see every credit on that booking. Find the make-up credit you want to remove, click the **More** button next to it, and either:

@@ -15,6 +15,18 @@ last_converted: "2026-02-13"
 
 # GoCardless Integration FAQ
 
+## How do I check if a client has an active GoCardless mandate?
+
+Open the booking detail and scroll to the **Payments** tile. Click **Show payments** to expand it. In the payment section, look for the **SEPA Direct Debit** tile. It shows:
+
+- **Active** — Yes or No
+- **Mandate ID** — the unique GoCardless mandate reference
+- **Provider** — GoCardless
+
+If the SEPA Direct Debit tile shows **Active: Yes**, the mandate is in place and direct debits will be collected automatically according to the payment schedule.
+
+If the tile is missing or shows **Active: No**, the client has not yet completed the GoCardless authorization flow (or the mandate was cancelled). In that case, the client needs to re-authorize via their Client Profile.
+
 ## How does GoCardless bank connection work with Zooza?
 
 GoCardless is a third-party service that connects your bank account to Zooza. Once connected, GoCardless automatically reads incoming transactions from your bank and sends them to Zooza for payment matching.

@@ -107,3 +107,9 @@ If the auto-enrolment functionality is active and you need to add another class 
 ![Screenshot](../../assets/images/client-import-01.png)
 
 Note: If the programme does not have auto-enrolment enabled, the application will notify you and even if the checkbox is selected, this setting will be ignored.
+
+## Tracking responses
+
+After invitations are sent, monitor who accepted, declined, or has not yet responded in the **Auto-enrolment responses** page or via the Bookings list filter.
+
+See: [Monitoring auto-enrolment responses](../guides/auto-enrolment-responses.md)

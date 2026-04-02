@@ -140,6 +140,7 @@ If your system isn't supported yet, contact us — we can discuss adding an inte
 ## Related
 
 - [Billing and invoicing](./billing-and-invoicing.md) — Invoice Profiles, IBAN, auto/manual generation
+- [Invoice buyer data](../guides/invoice-buyer-data.md) — managing orderer details and regenerating invoices
 - [Invoices list](../reference/invoices-list.md) — browsing and downloading invoices
 - [Multi-line invoices](./billing-and-invoicing.md#multi-line-invoices) — itemised invoice breakdown
 - [Integrations](./integrations-hub.md) — accounting export formats (Pohoda, Omega, SAP)

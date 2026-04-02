@@ -68,9 +68,28 @@ You cannot edit a client's email address directly. Email changes go through a fo
 3. Click **New Request** and fill in the new email address in the `New data entry` field.
 4. Click **Submit**.
 
-The Zooza team reviews and processes the request, usually within 2 business days. You receive a notification email when the request is approved or rejected.
+The Zooza team reviews and processes the request, usually within 1 business days. You receive a notification email when the request is approved or rejected.
 
-A request may be rejected if the new email already belongs to a different client in the system, or if the details do not match the existing record. If you need to assign a booking to a completely different person (not just fix a typo), use **Change Client** on the booking instead.
+**Common rejection reason:** The name embedded in the new email address does not match the parent's name on record. For example, if the client's name is "Jana Nováková" but the requested email contains a different name, the request will be declined. Double-check that the new email belongs to the same person before submitting.
+
+If you need to assign a booking to a completely different person (not just fix a typo), use **Change Client** on the booking instead.
+
+> **Invoice name:** If the client's invoicing name also needs to change (e.g. after a surname change), update it separately in **Settings → Billing** — this is a distinct field from the client's login email.
+
+## How do I add a child or attendee to an existing registration?
+
+If a parent has already registered and wants to add a new child to their account, you can create the child's profile directly from their existing booking:
+
+1. Open the booking detail.
+2. In the **Attendee** section, click **Add new person** (or **Create child**).
+3. Enter the child's name, date of birth, and other required details.
+4. Save.
+
+The new child record is linked to the same parent account. The parent can then use this child profile when making future bookings — they will see all registered children in their Client Profile and can select the correct one during checkout.
+
+> **Note:** Adding a child here creates the attendee profile only. You still need to create a separate booking for the child in whichever class or programme they are joining.
+
+![Add child to existing registration](../../assets/images/client-management-faq-03.png)
 
 ## How does Client ID work across franchise accounts?
 

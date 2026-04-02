@@ -40,6 +40,65 @@ The full automated flow is:
 5. Follow-up messages encourage enrolment.
 6. If the offer is not used, the trial is marked as **Trial Lost**.
 
+## Trial option is not showing on my website — why?
+
+Trial uses the same booking widget as regular enrolment. If the trial option is not visible to clients, check these four things in order:
+
+**1. Trial is not enabled in programme settings**
+Go to **Programme → Settings → Trial → Edit** and make sure trial is turned on and fully configured — type (free/paid), length, session capacity, and which classes are included. If trial is not set up here, it will not appear anywhere regardless of other settings.
+
+**2. Allow online booking is off**
+Go to **Programme → Settings → Online Booking** and make sure **Allow online booking** is set to Yes. If this is off, the programme is hidden entirely.
+
+**3. Booking Options Shown on Website excludes trials**
+On the same screen, find **Booking Options Shown on Website**. If it is set to **Offer full programme booking only**, trials will not appear. Change it to one of:
+- **Default – let customer choose** — shows both full enrolment and trial options
+- **Trials only (if available)** — shows only the trial option
+- **Trials or blocks (if available)** — shows trial and/or blocks
+![Screenshot — trials faq](../../assets/images/trials-faq-01.png)
+
+**4. No available trial dates**
+If all classes are full (no free capacity for trials), there are no dates to display. Check the capacity settings in **Programme → Settings → Trial → Session Capacity** and make sure there is either available class capacity or extra capacity reserved for trials.
+
+---
+
+## Clients are not receiving emails after their trial — why?
+
+The trial follow-up emails (booking link, reminders, Trial Lost notification) are sent by the **Automation Settings** configured inside the trial settings. If nothing is being sent, work through this checklist:
+
+**1. Automation is not set up or not activated**
+Go to **Programme → Settings → Trial → Automation Settings**. Check the **Automation status** — it must be **Set and activated**. If it shows **Not activated**, click **Edit** and switch it on.
+
+![Screenshot — trials faq](../../assets/images/trials-faq-01.png)
+
+**2. Attendance was not recorded**
+The automation triggers only when the trial booking reaches the status **Trial Ended** — which happens when the instructor records attendance on the session. If attendance was not recorded, the automation never fires. Make sure the instructor marks each trial attendee on the session detail.
+
+**3. Automation was set up after the booking was created**
+If **The setting will only be valid for new bookings** is checked in the automation settings, bookings that were created before the automation was configured will not be affected. You need to contact those clients manually.
+
+**What the automation sends (when active):**
+
+| Step | What happens |
+|---|---|
+| Trial Ended | Sends a booking link email so the client can enrol in the full programme |
+| +N days (first follow-up) | Sends a reminder if the client has not enrolled yet |
+| +N days (second follow-up) | Sends a second reminder |
+| +N days after last notification | Changes status to **Trial Lost** (if Automatically transition trial to lost is on) |
+| Trial Lost | Sends a notification to the client (if Send notification after trial lost is on) |
+
+![Screenshot — trials faq](../../assets/images/trials-faq-02.png)
+
+---
+
+## If I manually change a trial status, does the client receive an email?
+
+When you manually change a trial status (e.g. from **Trial ended** to **Trial won** or **Trial lost**), Zooza shows a **"Send confirmation email"** checkbox. You can choose whether to send a one-off email for that status change.
+
+**Important:** Manually changing the status does **not** trigger the automated follow-up sequence. The automation (enrolment link + reminder emails) is only triggered when the instructor records attendance on the trial session. If attendance was not recorded and you changed the status manually, you need to send the enrolment link to the client manually via **Communication → Send Email**.
+
+---
+
 ## Why does it say "class full" when a trial client tries to enrol?
 
 Trial bookings count towards class capacity. When the client finishes their trial and tries to enrol in the same class, the system may show "class full" because their trial seat is still counted. If you see this happening consistently, contact support — it may be a calculation issue that needs a fix on the backend.

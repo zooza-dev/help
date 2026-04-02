@@ -63,11 +63,12 @@ People often name the wrong entity when describing an action. The AI must identi
 - **Admin:** Programme | **Client/Widget:** Class
 - **Deprecated:** Programme, Open programme, One-time programme
 - **Definition:** Top-level container. Holds pricing, payment settings, booking form, and scheduling rules. One Programme contains multiple Classes.
-- **SK:** Program | **DE:** Programm / Kurs
-- **AI keywords (EN):** programme, program, programme, activity
+- **SK:** Program | **DE:** Programm / Kurs | **RO:** Curs (Cursuri)
+- **AI keywords (EN):** programme, program, course, courses, activity
 - **AI keywords (SK):** program, kurz, aktivita, hodiny
 - **AI keywords (DE):** Programm, Kurs, Aktivität
-- **Note:** When domain = widget → displayed as "Class". Admin always uses "Programme".
+- **AI keywords (RO):** curs, cursuri
+- **Note:** When domain = widget → displayed as "Class". Admin always uses "Programme". Romanian app shows "Cursuri" in the menu — if a user says "courses" in an English context, treat as Programme.
 
 ---
 
@@ -76,11 +77,12 @@ People often name the wrong entity when describing an action. The AI must identi
 - **Admin:** Class | **Client/Widget:** Class
 - **Deprecated:** Class, Timetable, batch, track
 - **Definition:** Scheduled class within a Programme. Differentiated by day/time, level, or location. Inherits all Programme settings.
-- **SK:** Skupina / Lekcia | **DE:** Gruppe / Kurs
-- **AI keywords (EN):** class, class, timetable, schedule, my class, which class
+- **SK:** Skupina / Lekcia | **DE:** Gruppe / Kurs | **RO:** Grupă (Grupe)
+- **AI keywords (EN):** class, group, groups, timetable, schedule, my class, which class
 - **AI keywords (SK):** skupina, trieda, hodina, rozvrh
 - **AI keywords (DE):** Klasse, Gruppe, Kurs, Stundenplan
-- **Note:** Used at two levels — (1) subdivision within a Programme (admin), and (2) top-level name for Programme in client/widget view.
+- **AI keywords (RO):** grupă, grupe
+- **Note:** Romanian app shows "Grupe" where UK English shows "Classes". If a user says "groups" in an English context, treat as Class.
 
 ---
 
@@ -90,10 +92,12 @@ People often name the wrong entity when describing an action. The AI must identi
 - **Deprecated:** slot, appointment, date, time slot
 - **Synonyms:** session, class session
 - **Definition:** Single scheduled meeting within a Class, with specific date and time. Attendance recorded at session level.
-- **SK:** Termín / Hodina | **DE:** Termin / Stunde / Einheit
-- **AI keywords (EN):** session, session, slot, time, date, class date, next session
+- **SK:** Termín / Hodina | **DE:** Termin / Stunde / Einheit | **RO:** Lecție (Lecții)
+- **AI keywords (EN):** session, lesson, lessons, slot, time, date, class date, next session
 - **AI keywords (SK):** termín, hodina, lekcia, dátum, čas
 - **AI keywords (DE):** Termin, Stunde, Einheit, Datum
+- **AI keywords (RO):** lecție, lecții
+- **Note:** Romanian app shows "Lecții" where UK English shows "Sessions". If a user says "lessons" in an English context, treat as Session.
 
 ---
 

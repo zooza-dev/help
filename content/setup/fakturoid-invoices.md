@@ -63,7 +63,7 @@ Once connected:
 | Payment sync | ✓ Partial — payments recorded in Fakturoid |
 | Re-authorization | Not needed — connection stays active indefinitely |
 | Credit notes | ✗ Not supported — issue in Fakturoid directly |
-| Editing invoices after creation | ✗ Edit in Fakturoid — changes don't sync back |
+| Editing invoices after creation | Edit in Fakturoid — changes sync back to Zooza only after a manual refresh |
 
 ---
 

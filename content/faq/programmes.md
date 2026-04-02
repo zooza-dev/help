@@ -123,14 +123,48 @@ Clients who have already received the invitation and visited their Client Profil
 
 ---
 
+## Where can I see who accepted, declined, or has not yet responded to an auto-enrolment invitation?
+
+There are two places:
+
+**1. Auto-enrolment responses page** — Go to **Programmes → Auto-enrolment responses** (`/#retention_responses`). This shows every invited client with their response status (Accepted / Declined / Not decided yet), any note they left when declining, and a **Reviewed** tracking flag.
+
+**2. Bookings list** — Go to **Bookings** and use the **Auto-enrolment** filter in the sidebar. Options: All / Auto-enrolment Accepted / Auto-enrolment Declined / Not decided yet.
+
+Use the Bookings list when you need bulk export or bulk email. Use the responses page when you want to work through responses one by one and track what you have already acted on.
+
+See also: [Monitoring auto-enrolment responses](../guides/auto-enrolment-responses.md)
+
+---
+
 ## What does "Mark as reviewed" do on the Auto-enrolment responses screen?
 
-It is an admin bookkeeping flag. Go to **Programme → Auto-enrolment responses** (direct path: `/#retention_responses/`). Each client row shows a **Reviewed** column (Yes / No). Clicking **Mark as reviewed** sets that row to Yes.
+It is an admin bookkeeping flag. Go to **Programmes → Auto-enrolment responses** (`/#retention_responses`). Each client row shows a **Reviewed** column (Yes / No). Clicking **Mark as reviewed** sets that row to Yes.
 
-![Screenshot — programmes](../../assets/images/programmes-01.png)
+It has no effect on the client or their booking. It is purely for your own tracking — so you can work through the list and record which responses you have already acted on, without accidentally processing the same one twice.
 
-It has no effect on the client or their booking. It is purely for your own tracking — so you can work through the list response by response and record which ones you have already acted on, without risking accidentally processing the same response twice.
-![Screenshot — programmes](../../assets/images/programmes-02.png)
+---
+
+## A client accepted auto-enrolment — does a booking get created automatically?
+
+No. Accepting the invitation is the client's signal that they want to continue — it does not create a new booking automatically.
+
+To complete their enrolment, either:
+
+- Let the client complete the booking themselves via their invitation link (they select the class and confirm), or
+- Create the booking for them manually: open their current booking → **Copy booking** → select the new class.
+
+---
+
+## Can I copy only the clients who accepted auto-enrolment into a new class?
+
+Not in one click, but the workflow is straightforward:
+
+1. Go to **Bookings** and filter by **Auto-enrolment: Auto-enrolment Accepted** and the relevant Programme / Class.
+2. Review the list — these are the clients who confirmed they want to continue.
+3. For each client, open their booking and use **Copy booking** to place them into the new class.
+
+Alternatively, if you want to move all accepted clients at once, use **Bookings → Bulk actions** after filtering.
 
 ---
 

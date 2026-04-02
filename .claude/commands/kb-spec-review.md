@@ -5,15 +5,29 @@ Compare business/product specifications from sibling repos against the knowledge
 Identify gaps on both sides and generate a feedback list for the integration/dev team.
 
 ## When to run
-- When a new spec is added to `../api-v1/docs/` or `../app/docs/`
-- When a spec is updated (new version, status change)
+- When new specs appear in `../api-v1/specs/in_progress/` or `../api-v1/specs/implemented/`
+- When a business spec is added to `../api-v1/docs/business-specs/` or `../app/docs/`
+- When a spec is updated (status change from in_progress → implemented)
 - Periodically to catch drift between specs and KB
 - When user says "review spec" or "spec review"
 
 ## Inputs
 
 ### Spec sources (fixed paths, do not search)
-- **API specs** → `../api-v1/docs/` (business specs, API behaviour)
+
+**API implementation specs (primary — check these first):**
+- `../api-v1/specs/in_progress/` — specs being built, may be KB-ready soon
+- `../api-v1/specs/implemented/` — shipped features; KB must be up to date
+
+**Business/product specs:**
+- `../api-v1/docs/business-specs/` — higher-level business specs (BS- prefix)
+- `../app/docs/` — product/UI specs, feature definitions
+
+**Reference docs (not specs but useful context):**
+- `../api-v1/docs/` root-level `.md` files — e.g. `inbound-payments-process.md`
+
+**Priority:** `implemented` specs take priority over `in_progress`. If something is implemented but not in the KB, it's a gap. If it's in_progress, flag it as upcoming.
+
 - **App specs** → `../app/docs/` (product/UI specs, feature definitions)
 
 ### KB source

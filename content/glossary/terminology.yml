@@ -967,6 +967,117 @@ terms:
       de: ["Profil", "mein Profil", "Kundenbereich", "mein Konto", "Anmeldung"]
     public: true
 
+  # ──────────────────────────────────────────────
+  # PAYMENTS — INBOUND & INVOICING
+  # ──────────────────────────────────────────────
+
+  - id: inbound-payment
+    canonical_en: "Inbound payment"
+    category: "payments"
+    definition: >
+      A bank transfer received from a client that the system automatically
+      attempts to match (pair) to the corresponding booking. Inbound payments
+      are detected via GoCardless bank account data, bank email notifications,
+      or CSV import. Once matched, the payment is recorded on the booking.
+    context:
+      admin: "Inbound payment"
+      client: "Bank transfer / Payment"
+    deprecated:
+      - "incoming payment"
+      - "bank transfer matching"
+    synonyms:
+      - "incoming bank transfer"
+      - "paired payment"
+    translations:
+      sk: "Prichádzajúca platba / Platba prevodom"
+      cz: "Příchozí platba"
+    intent_keywords:
+      en: ["inbound payment", "bank transfer", "payment not matched", "payment pairing", "unmatched payment", "manual pairing"]
+      sk: ["prichádzajúca platba", "prevod", "platba nespárovaná", "spárovanie platby", "platba nebola priradená"]
+      cz: ["příchozí platba", "převod", "nespárovaná platba", "párování platby"]
+    do_not_confuse_with:
+      - term: "GoCardless direct debit"
+        reason: >
+          GoCardless serves two separate roles in Zooza. As a direct debit gateway,
+          it collects payments directly from clients' bank accounts (mandate-based).
+          As a bank account data provider (open banking), it reads transactions arriving
+          in the company's own bank account. Inbound payments use the bank data role —
+          the client still pays by normal bank transfer; GoCardless only detects it.
+      - term: "Payment plan / scheduled payment"
+        reason: >
+          A scheduled payment is a debt entry created by Zooza's payment schedule.
+          An inbound payment is the actual money arriving from the bank. They are
+          matched together by the pairing process.
+    ai_notes: >
+      When a user says "payment not paired", "payment stuck", or "payment not showing",
+      they mean an inbound payment that landed in manual review (status: new).
+      Guide them to Sales & Payments → Inbound Payments and pair manually.
+      When they say "payment not arriving", check GoCardless consent expiry first.
+    public: true
+
+  - id: invoice-buyer
+    canonical_en: "Invoice buyer"
+    category: "payments"
+    definition: >
+      The entity (person or company) recorded as the recipient/orderer on an invoice.
+      May differ from the client who registered — for example, a parent registers
+      a child but invoices must be in the parent's company name.
+      Zooza stores invoice buyer profiles per client and reuses them across bookings.
+    context:
+      admin: "Invoice buyer / Buyer"
+    deprecated:
+      - "orderer"
+      - "invoice orderer"
+    synonyms:
+      - "buyer"
+      - "billing contact"
+    intent_keywords:
+      en: ["invoice buyer", "invoice name", "wrong name on invoice", "company on invoice", "change invoice details", "buyer details", "orderer"]
+      sk: ["odberateľ na faktúre", "firma na faktúre", "zmeniť faktúru", "meno na faktúre", "fakturačné údaje"]
+      cz: ["odběratel na faktuře", "firma na faktuře", "změnit fakturu", "fakturační údaje"]
+    do_not_confuse_with:
+      - term: "Invoice profile (billing profile)"
+        reason: >
+          The invoice profile (billing profile) is the supplier side — your company's
+          name, address, and IBAN that appear as the issuer on every invoice.
+          The invoice buyer is the recipient side — the client's billing details.
+    ai_notes: >
+      If a user says "wrong name on invoice" or "need company invoice", they need to
+      edit the invoice buyer profile on the client record and regenerate the invoice.
+      Regeneration is supported for Faktury Online and Xero only. For other engines,
+      the user must correct the invoice manually in their accounting software.
+    public: false
+
+  - id: network-transfer
+    canonical_en: "Network transfer"
+    category: "bookings"
+    definition: >
+      Moving one or more client bookings from one company to another company
+      within the same Zooza franchise network. Used when a client switches branches
+      or when a location is closed and clients are migrated to another branch.
+      Available in bulk (multiple bookings at once) via Bulk action → Network transfer.
+    context:
+      admin: "Network transfer"
+    deprecated:
+      - "franchise transfer"
+    synonyms:
+      - "bulk network transfer"
+    intent_keywords:
+      en: ["network transfer", "transfer to another branch", "move client to another location", "franchise transfer", "bulk transfer"]
+      sk: ["sieťový presun", "presun na inú pobočku", "presun klienta do inej pobočky", "franšíza presun"]
+      cz: ["síťový přesun", "přesun na jinou pobočku"]
+    do_not_confuse_with:
+      - term: "Transfer (booking)"
+        reason: >
+          A standard booking transfer moves a client to a different class or programme
+          within the same company. A network transfer moves bookings to a different
+          company in the franchise network.
+    ai_notes: >
+      Network transfer requires the company to be part of a Zooza franchise network.
+      If the admin cannot see the Network transfer option in Bulk actions, their account
+      is not connected to a network or the feature is not enabled on their plan.
+    public: false
+
 # ──────────────────────────────────────────────
 # ENTITY MISATTRIBUTION PATTERNS (AI use only)
 # ──────────────────────────────────────────────

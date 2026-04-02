@@ -164,7 +164,7 @@ See [Billing and invoicing — Multi-line invoices](./billing-and-invoicing.md#m
 | VAT sync from Xero | ✓ Supported |
 | PDF | Viewable in Xero only — no local copy in Zooza |
 | Re-authorization | Required every 60 days (Xero policy) |
-| Editing invoices | Edit in Xero — changes don't sync back to Zooza |
+| Editing invoices | Edit in Xero — changes sync back to Zooza only after a manual refresh |
 | Credit notes | ✗ Not supported — issue in Xero directly |
 
 ---

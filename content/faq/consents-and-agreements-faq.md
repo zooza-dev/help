@@ -53,6 +53,22 @@ For the full setup, see [Consents and agreements](../setup/setting-gtc-gdpr-cons
 
 Use **Check box** or **No separate confirmation needed** for mandatory consents like T&C or GDPR. Use **Yes or No** for optional consents like marketing opt-in where you need to track both acceptance and refusal.
 
+## How do I add a health declaration or "I confirm my child is healthy" checkbox to the registration form?
+
+Use **Consents & Agreements** — not Additional fields. Additional fields only support text input or dropdown selection. A mandatory checkbox that requires no text response must be set up as a consent.
+
+Steps:
+
+1. Go to **Settings → Consents & Agreements → Add**.
+2. Enter the declaration text in the **Consent text** field (e.g. *"I confirm that my child shows no signs of illness and does not have any infectious disease at the time of enrolment."*).
+3. Set **Consent type** to **Check box** — the client must tick this to proceed.
+4. Set **Require from** to **All bookings** or limit it to the specific programme (e.g. a summer camp).
+5. Save.
+
+The checkbox appears on the registration form above the Register button. Clients cannot complete registration without ticking it.
+
+> **Tip:** You can customise the link label shown to clients. In the **Name of the consent in the booking form** field, you can replace the default "More" link with your own text — for example: `<a href="*|AGREEMENT_URL|*">Health declaration</a>`. This text appears as the clickable link that opens the full consent text.
+
 ## Can I link to my own website for the full T&C text instead of typing it in Zooza?
 
 Yes. In the **Name of the consent in the booking form** field, replace the `*|AGREEMENT_URL|*` tag with a direct link to your page:

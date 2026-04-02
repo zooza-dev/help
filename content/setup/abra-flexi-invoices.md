@@ -83,9 +83,8 @@ Configure transaction type mappings in the **Invoice Line Types** section of the
 | Customer management | ✓ Automatic (create if not found) |
 | PDF generation | ✓ Available after creation |
 | Cost centre / activity mapping | ✓ With multi-line enabled |
-| Payment sync | ✗ Not supported — payments tracked in Zooza only |
 | Credit notes | ✗ Not supported — issue in ABRA Flexi directly |
-| Editing invoices after creation | ✗ Edit in ABRA Flexi — changes don't sync back |
+| Editing invoices after creation | Edit in ABRA Flexi — changes sync back to Zooza only after a manual refresh |
 
 ---
 

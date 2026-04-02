@@ -68,12 +68,16 @@ Group terms that refer to the same concept. Known synonym clusters to seed:
 | booking | registration |
 | client | customer, parent, user (when meaning client) |
 | instructor | lecturer, teacher, tutor, trainer |
-| make-up lesson | replacement lesson |
+| make-up session | replacement lesson, replacement session, make-up lesson |
 | Parent Zone | parent portal |
 | payment plan | payment template |
 | billing period | term (when meaning billing period) |
 | trial | guest (when meaning trial participant) |
 | lead collection | group interested, group – interested, class interested, class – interested, interested (when meaning interest gathering without dates) |
+| invoice buyer | orderer, invoice orderer, buyer (in invoicing context) |
+| inbound payment | incoming payment, bank transfer matching, payment matching |
+| additional fields | extra fields, custom fields (when meaning booking form fields) |
+| ignore filter | payment filter, inbound filter (when meaning inbound payment ignore rules) |
 
 ### Step 3 — Count and locate
 For each term/variant:

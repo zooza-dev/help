@@ -61,6 +61,22 @@ Zooza does not support blocking replies to outgoing emails or sending an autores
 - Add a line in your email templates such as "Please do not reply to this email — contact us at youraddress@..." so clients know where to reach you.
 - For a true autoresponder (e.g., out-of-office reply to incoming emails), configure it through your email provider, not through Zooza.
 
+## How does the Ecomail integration work?
+
+When you connect Zooza to Ecomail, basic client information is automatically synchronised to your Ecomail account. The sync runs every **2 hours**.
+
+Data synced per client:
+- First name
+- Last name
+- Email address
+- Programme (course) name
+
+The sync is one-way — Zooza pushes data to Ecomail; changes in Ecomail are not reflected back in Zooza.
+
+**Limits apply:** Ecomail has its own contact and send limits depending on your plan. If your client count exceeds your Ecomail plan, contacts may not sync completely.
+
+To connect Ecomail or request an extension of synced fields, contact Zooza support.
+
 ## Can I use a custom sending domain for emails?
 
 Custom sending domains are available for specific plans. Contact your Zooza account manager to discuss options.

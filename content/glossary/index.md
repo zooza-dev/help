@@ -40,6 +40,7 @@ A session that counts towards the total used for price calculation in Programme 
 ### Class
 A scheduled class within a Programme, typically differentiated by day/time, level, or location. One Class contains multiple Sessions.
 
+> Also referred to as: *Group*, *Groups* (in localised app versions, e.g. Romanian: *Grupă*)
 > Formerly called: *Class*, *Timetable*
 
 ### Client
@@ -91,11 +92,19 @@ An allowance granted to a specific booking that lets the client attend extra ses
 
 ## I
 
+### Inbound payment
+A bank transfer received from a client that the system automatically attempts to match (pair) to the correct booking. Inbound payments arrive via GoCardless bank account data, bank email notifications, or CSV import. Once matched, the payment is recorded on the booking and the status changes to Paired.
+
+> **GoCardless note:** In the inbound payments context, GoCardless reads transactions from your bank account (open banking). This is separate from GoCardless as a direct debit processor. The client still pays by normal bank transfer — GoCardless only detects it.
+
 ### Invoice
 A document issued to a client confirming a payment received for a booking or product purchase. In Zooza, invoices are generated per billing period and sent to the client by email as a PDF. Invoices are created by the connected invoice engine.
 
 ### Invoice Engine
 The external invoicing or accounting service that creates the actual invoice document. Zooza collects payment data and sends it to the engine, which assigns an invoice number and generates a PDF. Zooza includes a built-in engine (no setup required); companies can also connect their own accounting system (Xero, Fakturoid, ABRA Flexi, SmartBill, Számlázz.hu, Oblio).
+
+### Invoice buyer
+The entity recorded as the recipient (orderer) on an invoice — their name, address, and company/tax details. The invoice buyer may differ from the client who registered. For example, a parent registers a child but needs the invoice in their company name. Zooza stores invoice buyer profiles per client and reuses them across bookings.
 
 ### Invoice Profile
 The "From" section on an invoice — your company name, address, tax IDs (Business ID, Tax ID, VAT number), and bank account (IBAN). A company can have multiple Invoice Profiles, for example for different billing entities. A profile can be assigned to individual courses; otherwise the company default is used.
@@ -118,6 +127,15 @@ A make-up session a client can attend after cancelling a scheduled session in ad
 An ongoing programme type with a recurring fixed charge and no fixed end date (monthly, quarterly, etc.).
 
 > Also known as: *Subscription*
+
+---
+
+## N
+
+### Network transfer
+Moving one or more client bookings from one company to another company within the same Zooza franchise network. Used when a client switches branches or when a location is being closed. Available in bulk via **Bookings → Bulk action → Network transfer**.
+
+> Not to be confused with: [Transfer (booking)](#transfer) — which moves a booking within the same company.
 
 ---
 
@@ -152,6 +170,7 @@ The top-level container for an activity type. Holds pricing, payment settings, b
 **Admin view:** Programme
 **Client view:** Class
 
+> Also referred to as: *Course*, *Courses* (in localised app versions, e.g. Romanian: *Curs*)
 > Formerly called: *Programme*
 
 ---
@@ -169,6 +188,8 @@ A unique identifier included with bank transfer payments, used to automatically 
 
 ### Session
 A single scheduled meeting within a Class, with a specific date and time. Attendance is recorded at session level.
+
+> Also referred to as: *Lesson*, *Lessons* (in localised app versions, e.g. Romanian: *Lecție*)
 
 ### Stripe Clearing Account
 A bank account in Xero (or another accounting system) used as an intermediary between individual Zooza invoice payments and Stripe bulk payouts. When a client pays via Stripe, the payment is recorded against this clearing account in Xero. When Stripe pays out to your bank, the bulk transfer is matched against the same clearing account. This approach prevents double-counting and allows individual invoice-level tracking alongside bulk bank reconciliation.

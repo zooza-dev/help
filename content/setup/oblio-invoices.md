@@ -59,10 +59,9 @@ Once connected:
 | Invoice creation | ✓ Automatic |
 | ANAF submission | ✓ Automatic in production |
 | PDF generation | ✓ Available after creation |
-| Payment sync | ✗ Not supported — payments tracked in Zooza only |
 | Re-authorization | Not needed — connection refreshes automatically |
 | Credit notes | ✗ Not supported — issue in Oblio directly |
-| Editing invoices after creation | ✗ Edit in Oblio — changes don't sync back |
+| Editing invoices after creation | Edit in Oblio — changes sync back to Zooza only after a manual refresh |
 
 ---
 
