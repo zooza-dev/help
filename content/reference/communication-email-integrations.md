@@ -59,4 +59,4 @@ To find your Ecomail API key:
 
 ## Related
 
-- [Communication Dashboard](communication-dashboard.md) — main communication hub.
+- [Communication](communication-dashboard.md) — Communication menu overview.

@@ -190,6 +190,6 @@ Ignore the duplicate. If you have a filter set up for the payer's IBAN, the dupl
 ## Related
 
 - [Inbound payments — technical reference](../reference/inbound-payments-internals.md) — full algorithm details, AI evaluation, delegation chains
-- [Billing and invoicing](./billing-and-invoicing.md) — billing profiles and IBAN setup
-- [GoCardless direct debit](./gocardless.md) — collecting payments from clients (separate from bank account reading)
+- [Billing and invoicing](../setup/billing-and-invoicing.md) — billing profiles and IBAN setup
+- [GoCardless direct debit](./gocardless-direct-debit-mandates.md) — collecting payments from clients (separate from bank account reading)
 - [Payments and Billing FAQ](../faq/payments-and-billing-faq.md)

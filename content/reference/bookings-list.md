@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-24"
+last_converted: "2026-04-06"
 ---
 
 # Bookings
@@ -43,47 +43,54 @@ The header shows total count, e.g. "23 bookings found".
 
 ### Filters
 
-The left sidebar provides filters:
+Filters appear as buttons directly above the bookings list. Click any button to open its filter panel, select a value, and the list updates automatically — no Search button needed.
 
-- **Client** — search by name, email, reference number, or phone.
-- **Billing period** — filter by billing period.
-- **Status** — filter by booking status (Enrolled, Waiting list, Cancelled, etc.).
-- **Choose programme** — filter by programme.
-- **Venues** — filter by venue/location.
-- **Instructor** — filter by instructor.
-- **Auto-enrolment** — filter by auto-enrolment status:
+| Filter | Description |
+|---|---|
+| **Client** | Search by name, email, reference number, or phone. |
+| **Billing period** | Filter by billing period. |
+| **Status** | Filter by booking status (Enrolled, Waiting list, Cancelled, etc.). |
+| **Programme** | Filter by programme. |
+| **Venues** | Filter by venue/location. |
+| **Instructor** | Filter by instructor. |
+| **Auto-enrolment** | Filter by auto-enrolment status — see table below. |
+| **Payment status** | Filter by payment status — see table below. |
+| **Payment plan** | Filter by payment frequency type. |
+| **Labels** | Filter by label. Select one or more labels from the list. |
+| **Created from / Created to** | Filter by booking creation date range. |
 
-  | Value | Description |
-  |---|---|
-  | All | No filter — shows all bookings. |
-  | Not decided yet | Client has not yet responded to the auto-enrolment offer. |
-  | Auto-enrolment Declined | Client declined to continue for the next period. |
-  | Auto-enrolment Accepted | Client accepted continuation for the next period. |
+Click **Reset** to clear all active filters.
 
-- **Billing** — filter by billing status. The available statuses depend on whether the booking uses a payment plan with a down payment:
+#### Auto-enrolment values
 
-  | Status | Description |
-  |---|---|
-  | No debt | The booking is fully paid — nothing is owed. |
-  | Not paid | Nothing has been paid yet (balance is zero). |
-  | Awaiting payment | A payment has been requested or is scheduled but not yet received. Distinct from **Not paid** — use this to find bookings with an outstanding payment request. |
-  | Partially paid | Some amount has been paid, but the full balance is not yet settled (e.g. instalment plan in progress). |
-  | Paid | The booking is fully paid. |
-  | Overpaid | More has been paid than the amount owed — a credit is on the account. |
-  | Down payment unpaid | The booking has a down payment structure and the down payment has not been paid. |
-  | Down payment partially paid | The down payment has been partially paid. |
-  | Down payment paid | The down payment is fully paid; final payment may still be outstanding. |
-  | Final payment unpaid | The final payment is due and has not been paid. |
-  | Final payment partially paid | The final payment has been partially paid. |
-  | Final payment paid | The final payment is fully settled. |
-  | Final payment overpaid | More than the final payment amount has been paid. |
+| Value | Description |
+|---|---|
+| All | No filter — shows all bookings. |
+| Not decided yet | Client has not yet responded to the auto-enrolment offer. |
+| Auto-enrolment Declined | Client declined to continue for the next period. |
+| Auto-enrolment Accepted | Client accepted continuation for the next period. |
 
-  > **Tip:** To find all bookings with outstanding balances, filter by **Not paid** + **Partially paid** (and **Awaiting payment** if you want to include pending payment requests).
-- **Payment frequency** — filter by payment frequency type.
-- **Tag** — filter by custom tag. Type a tag and click **OK**.
-- **Booking date from / to** — filter by date range.
+#### Payment status values
 
-Click **Search** to apply filters.
+Available statuses depend on whether the booking uses a payment plan with a down payment.
+
+| Status | Description |
+|---|---|
+| No debt | The booking is fully paid — nothing is owed. |
+| Not paid | Nothing has been paid yet (balance is zero). |
+| Awaiting payment | A payment has been requested or is scheduled but not yet received. Distinct from **Not paid** — use this to find bookings with an outstanding payment request. |
+| Partially paid | Some amount has been paid, but the full balance is not yet settled (e.g. instalment plan in progress). |
+| Paid | The booking is fully paid. |
+| Overpaid | More has been paid than the amount owed — a credit is on the account. |
+| Down payment unpaid | The booking has a down payment structure and the down payment has not been paid. |
+| Down payment partially paid | The down payment has been partially paid. |
+| Down payment paid | The down payment is fully paid; final payment may still be outstanding. |
+| Final payment unpaid | The final payment is due and has not been paid. |
+| Final payment partially paid | The final payment has been partially paid. |
+| Final payment paid | The final payment is fully settled. |
+| Final payment overpaid | More than the final payment amount has been paid. |
+
+> **Tip:** To find all bookings with outstanding balances, filter by **Not paid** + **Partially paid** (and **Awaiting payment** if you want to include pending payment requests).
 
 ### Top Actions
 
@@ -93,6 +100,7 @@ Click **Search** to apply filters.
 | **Send email** | Send an email to filtered/selected clients. |
 | **Send SMS** | Send an SMS to filtered/selected clients. |
 | **Export** | Export the bookings list. |
+| **Transfer to network** | Bulk-transfer selected bookings to another company in the network. See [Bulk Network Transfer](../guides/bulk-network-transfer.md). |
 
 ## Booking Detail
 

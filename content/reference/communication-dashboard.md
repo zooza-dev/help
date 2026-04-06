@@ -10,78 +10,57 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-04-06"
 ---
 
 # Communication
 
-The Communication screen is the central hub for all messaging features. Use it to send emails, SMS messages, manage templates, view message history, connect email marketing tools, and access WhatsApp messaging.
+The Communication section in the left menu gives direct access to all messaging features — no intermediate hub page. Each item opens its screen directly.
 
-> **Navigation:** Go to **Communication** → **Communication**.
+![Communication — Send message](../../assets/images/reference/communication-send-email.png)
 
-![Communication dashboard](../../assets/images/reference/communication-dashboard.png)
+## Menu Items
 
-## Dashboard Tiles
-
-The dashboard displays six navigation tiles:
-
-| Tile | Description |
+| Menu item | Description |
 |---|---|
-| **Send email** | Opens the [Send Email](communication-send-email.md) wizard to compose and send emails to clients. |
-| **Send SMS** | Opens the SMS sending screen (similar workflow to Send Email). |
-| **Messages overview** | Opens the [Messages Overview](#messages-overview) — a log of all sent and received messages. |
-| **Message template** | Opens [Message Templates](communication-message-templates.md) — manage email and SMS templates for automated and manual messages. |
-| **Email Marketing Connections** | Opens [Email Integrations](communication-email-integrations.md) — connect with Mailchimp or Ecomail. |
-| **WhatsApp (PRO)** | Opens [WhatsApp](communication-whatsapp.md) — manage WhatsApp conversations and templates. Requires PRO plan. |
+| **Send message** | Compose and send an email or SMS to clients. Opens the [Send Message](communication-send-email.md) screen. |
+| **Sent messages** | View the history of all sent and received messages. See [Sent Messages](#sent-messages) below. |
+| **Templates** | Manage email and SMS templates for automated and manual messages. See [Message Templates](communication-message-templates.md). |
 
-## Messages Overview
+WhatsApp (PRO plan) and Email Marketing Connections are accessible from within the Send message screen or via Settings.
 
-> **Navigation:** **Communication** → **Messages overview**.
+## Sent Messages
 
-![Messages overview](../../assets/images/reference/communication-messages-overview.png)
+> **Navigation:** Go to **Communication** → **Sent messages**.
 
 ### Filters
 
-Use the filter bar at the top to narrow the message list:
+| Filter | Description |
+|---|---|
+| **Email or phone** | Search by recipient email or phone number. |
+| **Title of e-mail / SMS** | Search by message subject or title. |
+| **Type** | Filter by message type (e.g. "Sent message"). |
+| **Template** | Filter by template used (multi-select). |
+| **Status** | Filter by delivery status. |
 
-- **Email or phone** — search by recipient email or phone number.
-- **Title of e-mail / SMS m** — search by message subject or title.
-- **Type** — dropdown filter by message type (e.g. "Sent message").
-- **Template** — multi-select dropdown to filter by template used. Options include:
-  - Missed Payment
-  - New automatic payment
-  - New payment
-  - One-session programme – booking done
-  - One-session programme waiting list – done
-  - Open session – booking done
-  - Order confirmation
-  - Payment received
-- **Status** — filter by delivery status.
-
-Active filters show as highlighted chips with an X to remove. Use **Choose all** to select all types, or **Reset** to clear.
-
-### Sort
-
-- **Newest first** (default) — dropdown to change sort order.
+Active filters show as chips with an X to remove. Use **Reset** to clear all.
 
 ### Message List
 
-Each message card shows:
+Each message shows:
 
 | Field | Description |
 |---|---|
-| `Type` | Message type with icon (e.g. "Sent message" with envelope icon). |
-| `Sent/Received` | Timestamp of when the message was sent or received. |
+| `Type` | Message type with icon (e.g. "Sent message"). |
+| `Sent/Received` | Timestamp. |
 | `Status` | Delivery status — "Received", "Sent", "Failed", etc. |
-| `The customer` | Recipient email address (clickable link). |
+| `The customer` | Recipient email address (clickable). |
 | `Title/Message` | Subject line or message preview. |
-
-Pagination shows total pages and results count.
 
 ## Related
 
-- [Send Email Reference](communication-send-email.md) — compose and send emails.
-- [Message Templates Reference](communication-message-templates.md) — manage message templates.
+- [Send Message Reference](communication-send-email.md) — compose and send emails or SMS.
+- [Message Templates Reference](communication-message-templates.md) — manage templates.
 - [Email Integrations Reference](communication-email-integrations.md) — Mailchimp and Ecomail setup.
 - [WhatsApp Reference](communication-whatsapp.md) — WhatsApp conversations and templates.
 - [Message Templates Guide](../guides/message-templates.md) — how to create and use templates.

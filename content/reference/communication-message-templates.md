@@ -168,7 +168,7 @@ For the full list with examples, see the [Dynamic Tags Guide](../guides/dynamic-
 
 ## Related
 
-- [Communication Dashboard](communication-dashboard.md) — main communication hub.
+- [Communication](communication-dashboard.md) — Communication menu overview.
 - [Message Templates Guide](../guides/message-templates.md) — how to create and manage templates.
 - [Dynamic Tags Guide](../guides/dynamic-tags.md) — full list of available merge fields.
 - [Sending Email/SMS Guide](../guides/sending-email-sms.md) — how to send messages.

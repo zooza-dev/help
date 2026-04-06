@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-03"
+last_converted: "2026-04-06"
 ---
 
 # Custom make-up session
@@ -41,18 +41,19 @@ By default, standard make-up sessions (based on vacant seats) remain available a
 
 ## Client view
 
-When a client cancels a session, the standard make-up session list appears (if any sessions have available slots). Below that list, a form for requesting a custom replacement is shown.
+When a client cancels a session, the standard make-up session list appears (if any sessions have available slots). Below that list, the custom replacement request section is shown.
 
-The client fills in:
-- **Day** — minimum 3 days from today.
-- **Time** — indicative or exact time.
+The widget fetches the instructor's available slots for the next 14 days and displays them as a list of dates. Each date shows the number of available times. The client expands a date and picks one of the displayed time slots — for example "09:00 – 10:00".
 
 ![Screenshot — custom replacement lessons](../../assets/images/custom-replacement-lessons-04.png)
 
-After entering the preferred time, the client clicks to check the instructor's availability. The system evaluates whether the instructor is free at that time based on their calendar.
+Once a slot is selected, a note field and a **Submit** button appear. The client can add an optional note to the instructor before sending.
 
-- If the instructor is **available** — the client can submit the request.
-- If the instructor is **not available** — the request cannot be sent.
+There is no manual date/time entry and no separate "check availability" step — only slots that are genuinely free are shown.
+
+### No available slots
+
+If the instructor has no free slots in the next 14 days, the widget shows a message and offers a simplified free-text form. The client can enter a preferred date and note — this creates a standard request that the instructor handles manually.
 
 ![Screenshot — custom replacement lessons](../../assets/images/custom-replacement-lessons-02.png)
 

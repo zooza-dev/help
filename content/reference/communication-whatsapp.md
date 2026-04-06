@@ -102,6 +102,6 @@ A live preview panel on the right shows how the message will appear to the recip
 
 ## Related
 
-- [Communication Dashboard](communication-dashboard.md) — main communication hub.
+- [Communication](communication-dashboard.md) — Communication menu overview.
 - [WhatsApp Integration Guide](../setup/whatsapp-integration.md) — how to set up WhatsApp with Zooza.
 - [WhatsApp FAQ](../faq/whatsapp-faq.md) — common WhatsApp questions.

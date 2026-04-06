@@ -38,7 +38,7 @@ Each client can have one or more buyer profiles. To view and manage them:
 
 1. Open the booking detail page (**Bookings** → select the booking).
 2. Find the **Payment > Invoice** section.
-3. Click **Edit** next to a profile to update it, or click **Add Buyer Infromation** to create a new one.
+3. Click **Edit** next to a profile to update it, or click **Add Buyer Information** to create a new one.
 ![Screenshot — invoice buyer data](../../assets/images/invoice-buyer-data-01.png)
 Each profile can contain:
 
@@ -124,7 +124,7 @@ The client did not fill in business fields during registration but now needs a b
 
 ## Related
 
-- [Billing and invoicing](./billing-and-invoicing.md) — Invoice Profiles, billing settings
+- [Billing and invoicing](../setup/billing-and-invoicing.md) — Invoice Profiles, billing settings
 - [Business booking](./business-booking.md) — registering as a company on the booking form
 - [Payments and Billing FAQ](../faq/payments-and-billing-faq.md) — common questions about invoices
 - [Additional fields on the booking form](./additional-fields.md) — business fields (company name, VAT, etc.)

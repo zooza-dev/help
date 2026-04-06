@@ -17,7 +17,7 @@ last_converted: "2026-02-13"
 
 The Send Email screen lets you compose and send email messages to clients. Use it to send bulk announcements, class-specific messages, or individual emails.
 
-> **Navigation:** Go to **Communication** → **Send email**.
+> **Navigation:** Go to **Communication** → **Send message**.
 
 ![Send email](../../assets/images/reference/communication-send-email.png)
 
@@ -78,7 +78,7 @@ Confirm and send the email. Zooza processes the send and shows a confirmation.
 
 ## Related
 
-- [Communication Dashboard](communication-dashboard.md) — main communication hub.
+- [Communication](communication-dashboard.md) — Communication menu overview.
 - [Message Templates Reference](communication-message-templates.md) — manage reusable templates.
 - [Sending Email/SMS Guide](../guides/sending-email-sms.md) — step-by-step instructions.
 - [Dynamic Tags Guide](../guides/dynamic-tags.md) — available merge fields for templates.

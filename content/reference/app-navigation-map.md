@@ -68,10 +68,10 @@ This page maps every section of the Zooza admin application to its reference doc
 
 | Menu item | Reference doc | Related guides | Status |
 |---|---|---|---|
-| **Communication** | [Communication Dashboard](communication-dashboard.md) | [Sending Email/SMS](../guides/sending-email-sms.md), [Email FAQ](../faq/email-communication-faq.md) | Done |
-| Send email | [Send Email](communication-send-email.md) | [Sending Email/SMS](../guides/sending-email-sms.md), [Dynamic Tags](../guides/dynamic-tags.md) | Done |
-| Messages overview | [Communication Dashboard](communication-dashboard.md#messages-overview) | — | Done |
-| Message template | [Message Templates](communication-message-templates.md) | [Message Templates](../guides/message-templates.md), [Dynamic Tags](../guides/dynamic-tags.md) | Done |
+| **Communication** | [Communication](communication-dashboard.md) | [Sending Email/SMS](../guides/sending-email-sms.md), [Email FAQ](../faq/email-communication-faq.md) | Done |
+| Send message | [Send Email/SMS](communication-send-email.md) | [Sending Email/SMS](../guides/sending-email-sms.md), [Dynamic Tags](../guides/dynamic-tags.md) | Done |
+| Sent messages | [Communication](communication-dashboard.md#sent-messages) | — | Done |
+| Templates | [Message Templates](communication-message-templates.md) | [Message Templates](../guides/message-templates.md), [Dynamic Tags](../guides/dynamic-tags.md) | Done |
 | Email Marketing Connections | [Email Integrations](communication-email-integrations.md) | — | Done |
 | WhatsApp | [WhatsApp](communication-whatsapp.md) | [WhatsApp Integration](../setup/whatsapp-integration.md), [WhatsApp FAQ](../faq/whatsapp-faq.md) | Done |
 

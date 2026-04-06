@@ -5,13 +5,13 @@ type: guides
 product_area: Settings
 sub_area: ""
 audience:
-  - admin
+  - staff
 tags: []
 status: published
 source_legacy_path: legacy/0064_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: false
-last_converted: 2026-02-11
+last_converted: 2026-04-06
 ---
 
 # Zooza 101 for Instructors
@@ -101,13 +101,59 @@ This section is typically used for internal reporting and planning.
 
 ![Screenshot](../../assets/images/zooza-101-instructors-01.png)
 
-## 4. Use Zooza on your mobile phone
+## 4. Using Zooza on your mobile phone
 
-Most instructors use Zooza on their mobile phone.
+Most instructors use Zooza on their mobile phone. The mobile experience is designed around the instructor’s daily workflow — you don’t need to navigate through admin menus to get to what matters.
 
 Zooza works as a web app and can be added to your phone’s home screen so it looks and behaves like a regular app.
 
 👉 [Follow this guide to add Zooza to your home screen](../setup/add-zooza-app-to-phone.md)
+
+### Home screen
+
+When you open Zooza on mobile, the home screen shows:
+
+- **Team Announcements** — any notes posted by your organisation.
+- **My Next Sessions** — your upcoming sessions with date, time, programme name, and a live attendance counter. Tap a session to open it directly and mark attendance.
+
+![Instructor mobile home](../../assets/images/mobile-instructor-home.png)
+
+### Bottom navigation
+
+The bottom bar gives you one-tap access to the four most important areas:
+
+| Tab | What it opens |
+|---|---|
+| **Home** | Your home screen — next sessions and announcements. |
+| **Calendar** | The weekly calendar view with all your classes. |
+| **Instructor** | Your instructor profile, taught hours report, and availability. |
+| **Menu** | Full navigation to all sections of the app. |
+
+> **Note:** The bottom navigation is tailored for instructors. Admins see **Bookings** instead of **Instructor** in the same position.
+
+### Calendar view
+
+Tap **Calendar** to see your weekly schedule. Sessions are shown as tiles with programme name, attendance count, location, and instructor. Use the date arrow to navigate between weeks.
+
+![Instructor mobile calendar](../../assets/images/mobile-calendar.png)
+
+### Instructor tab — your reports
+
+Tap **Instructor** to go directly to your profile and reports. This is where you can:
+
+- View your taught hours for a selected period.
+- Download your instructor report.
+- Manage your working hours and availability.
+
+No digging through menus — one tap from anywhere in the app.
+
+### Full menu
+
+Tap **Menu** to access all sections: Programmes, Classes, Sessions, Clients, Bookings, Payments, and Settings.
+
+![Mobile menu](../../assets/images/mobile-menu.png)
+
+---
 
 ## Final note
 
