@@ -107,9 +107,11 @@ def extract_description(body: str) -> str:
 
 
 def fix_image_paths(body: str) -> str:
-    """Rewrite relative assets/images/ paths to Docusaurus /img/ paths."""
+    """Rewrite relative assets/images/ and assets/videos/ paths to Docusaurus static paths."""
     body = re.sub(r"\.\./\.\./assets/images/", "/img/", body)
     body = re.sub(r"\.\./assets/images/", "/img/", body)
+    body = re.sub(r"\.\./\.\./assets/videos/", "/video/", body)
+    body = re.sub(r"\.\./assets/videos/", "/video/", body)
     return body
 
 
@@ -1040,6 +1042,13 @@ def build_docusaurus(dry_run: bool = False, clean: bool = False, staging: bool =
     else:
         img_out.mkdir(parents=True)
         logger.warning("No assets/images/ directory found; static/img/ will be empty")
+
+    # --- Copy videos ---
+    assets_videos_dir = ROOT_DIR / "assets" / "videos"
+    if assets_videos_dir.exists():
+        video_out = STATIC_DIR / "video"
+        shutil.copytree(assets_videos_dir, video_out)
+        logger.info("Copied videos → static/video/ (%d files)", len(list(video_out.iterdir())))
 
     # --- Copy brand assets (logo, favicon) ---
     if ASSETS_BRAND_DIR.exists():
