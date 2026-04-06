@@ -21,7 +21,7 @@ Each row in the Bookings list is a **booking tile** — a compact card showing t
 
 ## Opening the customize panel
 
-<video src="../../assets/videos/booking-tile-customize.webm" controls style="max-width:100%;border-radius:6px;"></video>
+<video src="../../assets/videos/booking-tile-customize.webm" controls style={{maxWidth: '100%', borderRadius: '6px'}}></video>
 
 1. Go to **Clients** → **Bookings**.
    ![Screenshot — booking tile customization](../../assets/images/booking-tile-customization-01.png)
