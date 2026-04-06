@@ -71,3 +71,27 @@ Yes. You can go through the booking form on behalf of a parent. This is a workar
 ## What does the client list show — why are there more entries than expected?
 
 The **Clients** list shows all entities: both parents and children. So if you have 90 bookings, the client count may appear higher because each parent and each child is listed separately. Use the **Bookings** or **Reports** section for accurate booking counts.
+
+---
+
+## Customize tile
+
+**Can I change what information appears on each booking card in the list?**
+
+Yes. Click **Customize tile** in the top-right corner of the Bookings list. A widget bar appears — drag widgets into the tile preview to add them, or drag them out to remove. Click **Save** when done. See [Customizing the booking tile](../guides/booking-tile-customization.md) for the full widget list.
+
+**Does my tile layout affect other team members?**
+
+No. The layout is saved per user account. Each team member configures their own view independently without affecting anyone else.
+
+**What is the "10 BOOKINGS" badge on a client?**
+
+This badge appears on the **Identity** widget and shows the client's total number of bookings across all programmes. It helps you quickly identify frequent clients without opening their profile.
+
+**I customized my tile but want to go back to the original view. How?**
+
+Click **Customize tile**, then click **Reset to default**. This restores the original Zooza tile layout immediately.
+
+**Can I show the client's extra fields (e.g. address, medical notes) directly in the list?**
+
+Yes. Add the **Extra fields** widget to your tile. It will display any extra fields collected during registration directly on the booking card.

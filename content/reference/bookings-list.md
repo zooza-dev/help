@@ -101,6 +101,15 @@ Available statuses depend on whether the booking uses a payment plan with a down
 | **Send SMS** | Send an SMS to filtered/selected clients. |
 | **Export** | Export the bookings list. |
 | **Transfer to network** | Bulk-transfer selected bookings to another company in the network. See [Bulk Network Transfer](../guides/bulk-network-transfer.md). |
+| **Customize tile** | Opens the tile editor — choose which fields appear on each booking card. See below. |
+
+### Customize Tile
+
+Click **Customize tile** to enter edit mode. A widget bar appears above a live preview of the booking tile. Drag widgets in or out to control what each booking card shows. Click **Save** to apply, **Reset to default** to restore the original layout, or **Cancel** to discard changes.
+
+The layout is saved per user — each team member can configure their own view independently.
+
+See [Customizing the booking tile](../guides/booking-tile-customization.md) for the full widget list and tips.
 
 ## Booking Detail
 
