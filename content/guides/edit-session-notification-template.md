@@ -23,7 +23,7 @@ The [automatic notification](automatic-session-notification.md) is one of the me
 
 ## Setting up the template
 
-Message templates can be found under **Communication --> Message templates**.
+Message templates can be found under **Communication → Templates**.
 
 ![Communication menu - message templates](../../assets/images/communication-menu-message-templates.png "Communication menu - message templates")
 

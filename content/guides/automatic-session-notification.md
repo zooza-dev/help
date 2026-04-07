@@ -48,7 +48,7 @@ In Zooza, you can create multiple templates and associate either a standard noti
 
 To create a new notification template:
 
-1. Go to **Communication --> Message templates**.
+1. Go to **Communication → Templates**.
 2. Scroll down to **Notifications**.
 3. Under **Automatic session reminder**, there is a standard template and the option **Add new template**.
 

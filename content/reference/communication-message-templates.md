@@ -10,161 +10,176 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-04-06"
 ---
 
 # Message Templates
 
-The Message Templates screen manages all email and SMS templates used by Zooza for automated and manual communication. Templates are organized by category: user-created, booking, order, notifications, other, and email signatures.
+The Templates screen lists all email and SMS templates in one filterable table — both your custom templates and the built-in system templates that Zooza uses for automated communication.
 
-> **Navigation:** Go to **Communication** → **Message template**.
+> **Navigation:** Go to **Communication** → **Templates**.
 
 ![Message templates](../../assets/images/reference/communication-message-templates.png)
 
-## User Templates
+---
 
-Custom templates created by your team.
+## Filters
 
-| Field | Description |
+Use the filter bar above the list to narrow down templates:
+
+| Filter | Description |
 |---|---|
-| `User templates` | List of custom templates (clickable link to edit). |
-| **Add new template** | Create a new custom template. |
+| **Type** | Filter by template category (e.g. Booking, Notifications, Order, Other). |
+| **Name** | Search by template name. |
 
-## Booking
+The list updates as you type or select a filter. Click **Reset** to clear all filters.
 
-Templates triggered by booking-related sessions:
+---
+
+## Template list
+
+Each row in the list shows one template:
+
+| Column | Description |
+|---|---|
+| **Name** | Template name — click to open the template editor. |
+| **Type** | Template category (Booking, Order, Notifications, Other, User). |
+| **Custom templates** | Shows how many custom variants exist for this template. |
+| **Created** | Date the template or its custom variant was created. |
+
+---
+
+## System templates vs. custom templates
+
+### System templates
+
+System templates are built into Zooza and are sent automatically for specific events — booking confirmation, payment reminders, cancellations, etc. They **cannot be deleted or renamed**, but you can create a **custom variant** to override the default content.
+
+System templates are shown in the list but their row has no edit button — only an **Add new template** option to create a custom variant.
+
+### Custom (user) templates
+
+Templates you or your team have created — either from scratch or as a custom variant of a system template. These can be freely edited, duplicated, or deleted.
+
+To create a new template from scratch, click **Add new template** at the top of the list.
+
+---
+
+## System template reference
+
+### Booking templates
 
 | Template | When it is sent |
 |---|---|
-| **Request to confirm booking** | After booking — the client must confirm via email. Otherwise, the booking status cannot be changed to "Enrolled". |
-| **Confirmation of booking (Session programme)** | Sent automatically after clicking the confirmation link from the email invitation. |
-| **Trial timetable bookings completed** | Sent to the client when they enrol for the trial timetable. |
-| **Trial ended** | Sent automatically if the trial automation in programme settings is set up. The goal is to send the booking link to the client. |
-| **Trial ended follow-up** | Sent automatically up to two times if trial automation is enabled. Includes follow-up to remind the client to enrol via the provided booking link. |
-| **Trial lost** | Sent automatically if trial automation is enabled in programme settings. Informs the client that they have decided not to enrol. |
-| **Booking confirmation – Lead collection** | Sent automatically after clicking the link from the email invitation to confirm booking. |
-| **Waiting list (Continuous programme)** | Sent after enrolling for a class that is full. |
-| **Late booking** | Sent to clients in session programmes who have enrolled for a class that has already started. |
-| **Booking confirmation – Open sessions** | Sent automatically after clicking the link from the email invitation to confirm booking. |
-| **Booking confirmation – One-off session** | Sent automatically after clicking the link from the email invitation to confirm booking. |
-| **Waiting list (One-off session)** | Sent after joining a class that is full. |
+| **Request to confirm booking** | After booking — the client must confirm via email before the booking status can be set to Enrolled. |
+| **Confirmation of booking (Session programme)** | Sent automatically after the client clicks the confirmation link. |
+| **Trial timetable bookings completed** | Sent when a client enrols for the trial timetable. |
+| **Trial ended** | Sent automatically if trial automation is configured in programme settings. Includes the booking link. |
+| **Trial ended follow-up** | Follow-up sent up to two times if trial automation is enabled. |
+| **Trial lost** | Sent if trial automation is enabled and the client has not enrolled. |
+| **Booking confirmation – Lead collection** | Sent after the client confirms a lead collection booking. |
+| **Waiting list (Continuous programme)** | Sent after enrolling in a full class. |
+| **Late booking** | Sent to clients who enrol in a class that has already started. |
+| **Booking confirmation – Open sessions** | Sent after confirming an open session booking. |
+| **Booking confirmation – One-off session** | Sent after confirming a one-off session booking. |
+| **Waiting list (One-off session)** | Sent after joining the waiting list for a full one-off session. |
 
-Each template shows a **Template** link and optionally **Custom templates** with an **Add new template** button.
-
-## Order
-
-Templates triggered by order sessions:
+### Order templates
 
 | Template | When it is sent |
 |---|---|
-| **Order confirmation** | Sent after the order has been successfully sent. |
+| **Order confirmation** | Sent after an order has been successfully submitted. |
 
-## Notifications
-
-Templates for automated notifications:
+### Notification templates
 
 | Template | When it is sent |
 |---|---|
-| **Upcoming session notification** | Sent every day at three o'clock and contains a list of the following day's sessions for which the client is not excused. |
-| **Automatic session reminder** | Sent the day before the session to all clients who are enrolled for the session. |
-| **Cancellation confirmation** | Sent following a cancellation by either the client or the instructor. |
-| **Automatic waiting list notification** | Sent to people on the waiting list for a one-session programme. |
-| **Next programme offer** | Sent when the client is included in the next programme invitation. |
+| **Upcoming session notification** | Sent daily at 3:00 AM with a list of the next day's sessions for clients who are not excused. |
+| **Automatic session reminder** | Sent the day before a session to all enrolled clients. |
+| **Cancellation confirmation** | Sent after a cancellation by the client or instructor. |
+| **Automatic waiting list notification** | Sent to waiting list clients for a one-session programme. |
+| **Next programme offer** | Sent when a client is included in the next programme invitation. |
 
-## Other
-
-Templates for miscellaneous system sessions:
+### Other templates
 
 | Template | When it is sent |
 |---|---|
-| **System import invitation** | Sent to users upon importing them into Zooza. |
-| **Payment received** | Sent to users when payment has been processed. |
-| **Imported booking confirmation** | Sent to users as a confirmation when they accept an invitation into Zooza. |
-| **Booking imported** | Sent to users as a confirmation on being imported into Zooza. |
-| **Sign up for an open session** | Sent to users when they enrol to a session (Pay-as-you-go). |
-| **New payment** | Sent to users as a payment request when a new instalment is issued. |
-| **Booking as guest done** | Sent to users after they enrol to a full programme as guests. |
-| **Changed session** | Notification for users that lists all changes for a given session. |
-| **Upcoming payment** | Sent to users as a reminder before a scheduled instalment is issued. |
-| **Missed payment** | Sent to users after a scheduled payment is unpaid. |
+| **System import invitation** | Sent to users when they are imported into Zooza. |
+| **Payment received** | Sent when a payment has been processed. |
+| **Imported booking confirmation** | Sent when a client accepts an import invitation. |
+| **Booking imported** | Sent as confirmation when a client is imported. |
+| **Sign up for an open session** | Sent when a client enrols in a Pay-as-you-go session. |
+| **New payment** | Sent as a payment request when a new instalment is issued. |
+| **Booking as guest done** | Sent after a guest enrols in a full programme. |
+| **Changed session** | Notification listing all changes to a session. |
+| **Upcoming payment** | Reminder sent before a scheduled instalment is issued. |
+| **Missed payment** | Sent after a scheduled payment is not paid. |
 | **Scheduled booking cancellation** | Sent when a booking is scheduled for cancellation. |
 | **Scheduled cancellation confirmation** | Sent to confirm a scheduled cancellation. |
 
+---
+
 ## Email Signatures
 
-Manage email signatures appended to outgoing messages.
+Manage email signatures at the bottom of the Templates screen.
 
 | Field | Description |
 |---|---|
-| Signature list | Named signatures (clickable links to edit). |
-| `Preset signature` | Dropdown to select the default signature. |
-| **Save** | Save the selected preset signature. |
-| **Create** | Create a new email signature. |
+| Signature list | Named signatures — click to edit. |
+| `Preset signature` | Select the default signature appended to outgoing emails. |
+| **Save** | Save the selected preset. |
+| **Create** | Create a new signature. |
 
-## Template Editor
+---
 
-> **Navigation:** Message Templates → click any **Template** link.
+## Template editor
+
+> **Navigation:** Templates list → click a template name.
 
 ![Screenshot — communication message templates](../../assets/images/communication-message-templates-01.png)
 
-
-### Edit Template
+### Fields
 
 | Field | Description |
 |---|---|
-| `Add email subject` | Email subject line. Supports dynamic tags (e.g. `*|COURSE_NAME|*`). Required. |
+| `Add email subject` | Email subject line. Supports dynamic tags. Required. |
 | `Prepare email text` | Rich text editor for the email body. Required. |
 
-The hint text below each field reads: "You can also use dynamic tags within the text."
+### Dynamic tags
 
-Click **Instructions and a complete list of tags** to view all available dynamic tags.
+Dynamic tags automatically insert client-specific data — name, programme, payment amount, booking link — into the subject and body.
 
-### Rich Text Toolbar
+**Two ways to insert a tag:**
 
-The editor toolbar provides:
+1. **Type `*` in the editor** — a dropdown appears with tags valid for this template type. Start typing to filter, then click to insert.
+2. **Copy from the reference** — click **Instructions and a complete list of tags** below the editor to open the full tag reference.
 
-- Undo / Redo
-- **Bold**, *Italic*, ~~Strikethrough~~
-- Insert link, Insert image
-- Bulleted list, Numbered list
-- Text alignment (left, center, right, justify)
-- Horizontal rule
-- Clear formatting
-- Source code view (`<>`)
+Tags use the format `*|TAG_NAME|*` and work in both subject and body.
 
-### Personalising messages with dynamic tags
-
-Dynamic tags let you automatically insert client-specific information — name, programme, payment amount, booking link — into the email body and subject line.
-
-**Two ways to insert a dynamic tag:**
-
-1. **Type `*` in the editor** — a dropdown appears with all tags available for this template type. Start typing to filter, then click to insert. This is the fastest method.
-2. **Copy from the reference page** — click **Instructions and a complete list of tags** (below the subject/body field) to open the full tag list. Copy any tag and paste it into the template.
-
-Tags follow the format `*|TAG_NAME|*`. They work in both the subject line and the email body.
-
-> **Note:** Not all tags are available in every template. The autocomplete dropdown only shows tags that are valid for the current template type.
+> **Note:** Not all tags are available in every template. The autocomplete only shows tags valid for the current template type.
 
 Common tags:
 
 | Tag | Description |
 |---|---|
-| `*\|FIRST_NAME\|*` | Client's first name. |
-| `*\|COURSE_NAME\|*` | Programme name — class name. |
-| `*\|COURSE_PAYMENT\|*` | Amount the client should pay. |
-| `*\|VARIABLE_SYMBOL\|*` | Payment reference / variable symbol. |
-| `*\|CONFIRMATION_URL\|*` | Link for the client to confirm their enrolment. |
-| `*\|PIN\|*` | One-time login code. |
-| `*\|IF:PIN\|*` … `*\|END:IF\|*` | Conditional block — only shown if a PIN exists. |
+| <code>&#42;&#124;FIRST_NAME&#124;&#42;</code> | Client's first name. |
+| <code>&#42;&#124;COURSE_NAME&#124;&#42;</code> | Programme name — class name. |
+| <code>&#42;&#124;COURSE_PAYMENT&#124;&#42;</code> | Amount the client should pay. |
+| <code>&#42;&#124;VARIABLE_SYMBOL&#124;&#42;</code> | Payment reference / variable symbol. |
+| <code>&#42;&#124;CONFIRMATION_URL&#124;&#42;</code> | Link for the client to confirm enrolment. |
+| <code>&#42;&#124;PIN&#124;&#42;</code> | One-time login code. |
+| <code>&#42;&#124;IF:PIN&#124;&#42;</code> … <code>&#42;&#124;END:IF&#124;&#42;</code> | Conditional block — only shown if a PIN exists. |
 
-For the full list with examples, see the [Dynamic Tags Guide](../guides/dynamic-tags.md).
+For the full list, see [Dynamic Tags Guide](../guides/dynamic-tags.md).
 
 ### Actions
 
 | Button | Description |
 |---|---|
-| **Save template** | Save changes to the template. |
+| **Save template** | Save changes. |
 | **Back** | Return to the templates list without saving. |
+
+---
 
 ## Related
 

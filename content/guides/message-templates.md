@@ -33,7 +33,7 @@ The message templates use [dynamic tags](dynamic-tags.md), which fill in data fr
 
 ## Message templates
 
-Message templates can be found under **Communication --> Message templates**.
+Message templates can be found under **Communication → Templates**.
 
 ![Communication menu - message templates](../../assets/images/communication-menu-templates.png "Communication menu - message templates")
 
@@ -68,7 +68,7 @@ Zooza has two types of templates, and finding the right one can be confusing:
 ### System templates
 
 - Pre-built templates provided by Zooza (e.g., payment confirmation, booking confirmation).
-- Found under **Communication → Message templates** with the orange **Template** label.
+- Found under **Communication → Templates** with the orange **Template** label.
 - Some system templates **cannot be edited** (e.g., payment confirmations, login codes).
 - For editable system templates, we recommend copying the original before making changes.
 

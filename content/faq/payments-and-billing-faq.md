@@ -263,7 +263,7 @@ The sending time is **not configurable**. You cannot set a specific hour for whe
 
 **What you can do:**
 
-- Add a note to the email template acknowledging it was sent automatically overnight, so clients are not alarmed by the timestamp. Go to **Communication → Message templates**, find the relevant payment notification template, and add a line such as *"This reminder was generated automatically and sent during off-hours. Please do not reply to this email."*
+- Add a note to the email template acknowledging it was sent automatically overnight, so clients are not alarmed by the timestamp. Go to **Communication → Templates**, find the relevant payment notification template, and add a line such as *"This reminder was generated automatically and sent during off-hours. Please do not reply to this email."*
 - If the late-night delivery is causing significant client complaints, consider disabling the reminder type entirely and using a different follow-up workflow.
 
 ## Why is my client receiving a payment reminder before the due date?
