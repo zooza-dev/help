@@ -50,11 +50,12 @@ PRODUCT_AREA_ORDER = [
 TYPE_ORDER = [
     ("setup", "Setup", 1),
     ("guides", "Guides", 2),
-    ("reference", "Reference", 3),
-    ("payments", "Payments", 4),
-    ("troubleshooting", "Troubleshooting", 5),
-    ("faq", "FAQ", 6),
-    ("glossary", "Glossary", 7),
+    ("business-model", "Business Model Guides", 3),
+    ("reference", "Reference", 4),
+    ("payments", "Payments", 5),
+    ("troubleshooting", "Troubleshooting", 6),
+    ("faq", "FAQ", 7),
+    ("glossary", "Glossary", 8),
 ]
 TYPE_POSITION = {t[0]: t[2] for t in TYPE_ORDER}
 TYPE_LABELS = {t[0]: t[1] for t in TYPE_ORDER}
@@ -219,6 +220,9 @@ _PACKAGE_JSON = {
         "@docusaurus/types": "3.9.2",
     },
     "engines": {"node": ">=18.0"},
+    "overrides": {
+        "webpack": "5.98.0",
+    },
     "browserslist": {
         "production": [">0.5%", "not dead", "not op_mini all"],
         "development": [
