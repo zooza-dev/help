@@ -1,5 +1,6 @@
 ---
 title: "Automatic communication to clients / Message templates"
+description: "Zooza does most of the work for you by sending information to the client automatically."
 slug: "message-templates"
 type: "guides"
 product_area: "Communication"

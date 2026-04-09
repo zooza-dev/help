@@ -1,5 +1,6 @@
 ---
 title: "Inbound payments — technical reference"
+description: "Inbound payments ingests bank transfers from three sources (GoCardless, bank email, CSV), parses each into a standardised format, runs a..."
 slug: "inbound-payments-internals"
 type: "reference"
 product_area: "Payments"

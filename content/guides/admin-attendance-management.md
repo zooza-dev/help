@@ -1,5 +1,6 @@
 ---
 title: "Managing client attendance — admin"
+description: "Admins and instructors (with full report permission) can set or change attendance for any client on any session — including sessions in the past."
 slug: "admin-attendance-management"
 type: "guides"
 product_area: "Calendar"

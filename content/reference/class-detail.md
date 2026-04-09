@@ -1,5 +1,6 @@
 ---
 title: "Class Detail"
+description: "The Class Detail page is the central hub for managing a single timetable. It shows settings, instructors, products, pricing, documents, make-up..."
 slug: "class-detail"
 type: "reference"
 product_area: "Classes"

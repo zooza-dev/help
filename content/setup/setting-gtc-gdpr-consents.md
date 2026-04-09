@@ -1,5 +1,6 @@
 ---
 title: "Consents and agreements (GTC, GDPR)"
+description: "Zooza lets you add consent checkboxes or agreements to your booking and order forms — for example, terms and conditions, GDPR data processing..."
 slug: "setting-gtc-gdpr-consents"
 type: "setup"
 product_area: "Settings"

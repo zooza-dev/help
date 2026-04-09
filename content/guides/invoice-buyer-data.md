@@ -1,5 +1,6 @@
 ---
 title: "Invoice buyer data (orderer details)"
+description: "The invoice buyer is the entity that appears as the recipient (orderer) on an invoice — usually the parent registering a child, or a company when a..."
 slug: "invoice-buyer-data"
 type: "guides"
 product_area: "Payments"

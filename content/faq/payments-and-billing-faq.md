@@ -1,5 +1,6 @@
 ---
 title: "Payments and Billing FAQ"
+description: "There are two different types of invoices in the Zooza context:"
 slug: "payments-and-billing-faq"
 type: "faq"
 product_area: "Payments"
@@ -296,6 +297,82 @@ A client can have multiple buyer profiles — useful when the same person regist
 
 For the full workflow, see [Invoice buyer data](../guides/invoice-buyer-data.md).
 
+## The price on the booking page is higher than expected — why?
+
+The most common cause is a misconfigured **sessions per month** setting in the payment plan. Zooza uses the sessions-per-month count to calculate the monthly fee displayed to the parent. If this number is set too high (for example, 15 instead of 4), the displayed price will be a multiple of your intended monthly amount.
+
+**To fix it:**
+
+1. Go to **Settings → Payment Settings** and open the relevant payment plan.
+2. Check the **Sessions per month** (or billing sessions) field.
+3. Correct it to the actual number of sessions per billing period (e.g. 4 for a weekly class).
+4. Save and verify the price on the booking page.
+
+> **Note:** Changing this setting does not affect existing bookings or payment plans already assigned to clients — only new bookings will reflect the corrected price.
+
+## How do I forecast income for the next term?
+
+Use the **Payment Insights → Forecast** view, not the Scheduled Payments report:
+
+- **Scheduled Payments Overview** (`Sales & Payments → Scheduled payments overview`) — shows payments that are already scheduled and their current status (Scheduled / Processed). This is useful for tracking what has been charged, not for projecting future income.
+- **Payment Insights → Forecast** (`Sales & Payments → Payments → Reports → Insights and Trends`) — shows a monthly forecast based on active payment templates. This reflects expected income assuming current bookings and payment plans remain unchanged.
+
+> **Note:** The forecast is based on active payment plans only. Trial bookings, pay-as-you-go sessions without a payment plan, and any bookings with no payment template assigned are excluded. The forecast also doesn't account for future cancellations or new enrolments.
+
 ## Can I use multiple billing profiles for different programmes?
 
 Yes. Go to **Settings** → **Billing** → **Other billing profiles** and click **Add**. Each profile has its own company details, IBAN, and invoice numbering. Assign a profile to a programme in **Programme** → **Settings** → **Price and Payment** → **Invoicing**. If no profile is assigned, the default billing profile is used.
+
+## How do I download a large number of invoices (e.g. for Pohoda)?
+
+For accounting software imports (such as Pohoda), you need invoices as individual files, not a single combined PDF.
+
+**Option 1 — ZIP download from the UI:**
+
+1. Go to **Sales & Payments → Invoices**.
+2. Apply a date filter to limit the batch (e.g. one month at a time).
+3. Click **Download all** — this downloads all filtered invoices as a ZIP archive containing individual PDF files.
+4. Import the PDFs into Pohoda (or your other accounting software) from the ZIP.
+
+> **Tip:** If you have hundreds of invoices, split into monthly batches. Very large single downloads (several hundred invoices at once) can time out in the browser.
+
+**Option 2 — API export:**
+
+If you regularly need bulk exports, use the Zooza API:
+- `GET /v1/customer_invoices` — list invoices with date/status filters
+- `GET /v1/customer_invoices/download` — download invoice files
+
+Contact Zooza support or your account manager to get API credentials and documentation.
+
+> **SK:** Na hromadné stiahnutie faktúr (napr. pre import do Pohody) choďte na **Predaj a platby → Faktúry**, nastavte filter dátumu a kliknite **Stiahnuť všetky**. Stiahne sa ZIP so samostatnými PDF súbormi. Pri veľkom počte odporúčame stiahnuť po mesiacoch — väčšie dávky môžu vypršať.
+
+## Does Zooza support in-person (POS) card payment terminals?
+
+No. Zooza is an online management and payments platform — it does not provide, integrate with, or manage physical card payment terminals (POS devices).
+
+**What Zooza handles:**
+- Online card payments via Stripe (client pays through the booking form or client profile)
+- Bank transfer via QR code or reference number (variabilný symbol)
+- Manual payment recording (cash, bank transfer, etc. — you record it in the booking, Zooza does not process it)
+
+**What Zooza does not handle:**
+- In-person card terminals (mPOS, standard POS)
+- Apple Pay / Google Pay at a physical location
+- Cash register software
+
+**For SK businesses subject to the cashless payment acceptance requirement (zákon o povinnej bezhotovostnej platbe — effective 1.3.2026):**
+
+The obligation to accept cashless payments at a physical location applies to in-person transactions. Zooza's online payment infrastructure (Stripe, bank transfer) fulfils the cashless requirement for **online bookings and transactions**. However, if you accept in-person payments at a venue (e.g. at the door, at the reception), you need a separate POS solution.
+
+Zooza does not provide or recommend a specific POS provider. Contact your bank or a payment provider (e.g. GP Webpay, Tatra banka mPOS, SumUp, iZettle) for in-person card acceptance.
+
+> **SK:** Zooza nespravuje POS terminály. Pre fyzické platby na mieste (zákonná povinnosť od 1.3.2026) je potrebný samostatný POS terminál cez vašu banku alebo platobného poskytovateľa. Zooza pokrýva len online platby (Stripe, bankový prevod, QR kód).
+
+## Related
+
+- [Stripe payments FAQ](stripe-payments-faq.md) — card payment setup, disputes, and Stripe-specific questions
+- [GoCardless FAQ](gocardless-faq.md) — direct debit setup and mandate management
+- [Billing periods](../setup/billing-periods.md) — how billing periods work and how to configure them
+- [Payment labels and drawers](../guides/payment-labels-drawers.md) — organise payments with labels
+- [Payment tile on booking](../guides/payment-tile-on-booking.md) — reading and managing the payment tile
+- [Billing and invoicing setup](../setup/billing-and-invoicing.md) — billing profiles, VAT, invoice settings

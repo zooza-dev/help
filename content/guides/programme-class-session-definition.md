@@ -1,11 +1,12 @@
 ---
 title: "Programme, class, session definition"
+description: "In real life, your clients sign up for a programme and then, when it starts, attend the programme within the agreed schedule."
 slug: "programme-class-session-definition"
 type: "guides"
 product_area: "Programmes"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["attendance", "booking", "class", "client", "make-up", "payment", "programme", "session"]
 status: "published"
 source_legacy_path: "legacy/0048_Welcome to Zooza.html"
 source_language: "en"

@@ -1,5 +1,6 @@
 ---
 title: "Pay-as-you-go FAQ"
+description: "A Pay-as-you-go programme is a flexible membership where clients register once and then pick individual sessions to attend."
 slug: "pay-as-you-go-faq"
 type: "faq"
 product_area: "Programmes"

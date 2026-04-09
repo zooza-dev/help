@@ -1,11 +1,12 @@
 ---
 title: "New programme with existing clients"
+description: "When you finish old programmes/classes, you have many clients who want to continue with you."
 slug: "new-programme-existing-clients"
 type: "guides"
 product_area: "Programmes"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["booking", "class", "client", "communication", "import", "location", "make-up", "onboarding", "payment", "programme", "role", "session", "transfer"]
 status: "published"
 source_legacy_path: "legacy/0049_Welcome to Zooza.html"
 source_language: "en"

@@ -1,11 +1,12 @@
 ---
 title: "Payment tile on booking"
+description: "You can correct or modify each payment. Modifications can be made to bookings separately."
 slug: "payment-tile-on-booking"
 type: "guides"
 product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["billing", "booking", "client", "discount", "payment", "transfer"]
 status: "published"
 source_legacy_path: "legacy/0085_Welcome to Zooza.html"
 source_language: "en"

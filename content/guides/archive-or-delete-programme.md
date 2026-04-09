@@ -1,5 +1,6 @@
 ---
 title: "Archive or delete a Programme"
+description: "You cannot permanently delete a Programme directly in the app. Instead, you archive it — this hides it from your active list while keeping all data,..."
 slug: "archive-or-delete-programme"
 type: "guides"
 product_area: "Programmes"

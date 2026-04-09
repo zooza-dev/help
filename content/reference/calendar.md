@@ -1,5 +1,6 @@
 ---
 title: "Calendar"
+description: "The Calendar provides a visual, location-based view of all sessions scheduled for a given day."
 slug: "calendar"
 type: "reference"
 product_area: "Calendar"

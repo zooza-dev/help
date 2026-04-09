@@ -1,5 +1,6 @@
 ---
 title: "Client Management FAQ"
+description: "Zooza does not have a standalone \"Add client\" button. A client record is created when a booking is made. You have three options:"
 slug: "client-management-faq"
 type: "faq"
 product_area: "Clients"
@@ -205,3 +206,11 @@ Client deactivation runs once a day at **midnight**. If you cancel or delete a b
 ## How does the active client count affect my Zooza subscription?
 
 Your Zooza service package is based on the **peak number of active clients** within the month — not the count at month-end. If you exceed your current package limit at any point during the month, you are automatically upgraded. To downgrade, you must request it in writing by the end of the month. For details, see [Active and inactive clients](../guides/active-inactive-clients.md).
+
+## Related
+
+- [Remove a client or user](../guides/remove-client-or-user.md) — steps to deactivate or delete a client record
+- [Client profile 101](../guides/client-profile-101.md) — reading and using the client profile
+- [Client profile dashboard](../guides/client-profile-dashboard.md) — overview of the client-facing profile
+- [Documents](../guides/documents.md) — attach documents to client records
+- [Subscription FAQ](subscription-faq.md) — how active client counts affect your plan

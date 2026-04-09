@@ -1,5 +1,6 @@
 ---
 title: "Email Integrations"
+description: "The Email Integrations screen connects Zooza with external email marketing platforms."
 slug: "communication-email-integrations"
 type: "reference"
 product_area: "Communication"

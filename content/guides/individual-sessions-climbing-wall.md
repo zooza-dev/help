@@ -1,11 +1,12 @@
 ---
 title: "Individual sessions for clients on the climbing wall with choice of instructor"
+description: "Programme - individual, which will only be available for 1 session."
 slug: "individual-sessions-climbing-wall"
 type: "guides"
 product_area: "Programmes"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["attendance", "booking", "class", "client", "communication", "instructor", "payment", "programme", "role", "session"]
 status: "published"
 source_legacy_path: "legacy/0018_Welcome to Zooza.html"
 source_language: "en"

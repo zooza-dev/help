@@ -1,5 +1,6 @@
 ---
 title: "Xero Integration FAQ"
+description: "Yes. You can switch off automatic invoice generation so invoices are not sent to clients until your Xero settings (e."
 slug: "xero-invoicing-faq"
 type: "faq"
 product_area: "Payments"

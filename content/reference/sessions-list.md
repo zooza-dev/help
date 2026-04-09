@@ -1,5 +1,6 @@
 ---
 title: "Sessions List"
+description: "The Sessions screen shows all individual sessions across all programmes and classes in a single chronological list."
 slug: "sessions-list"
 type: "reference"
 product_area: "Classes"
@@ -31,7 +32,18 @@ The Sessions screen shows all individual sessions across all programmes and clas
 | `Billing period` | Filter by billing period. |
 | `From` / `To` | Date range filter. |
 | `Status` | Filter by session status. |
-| `Type` | Filter by session type. |
+| `Type` | Filter by session type — see values below. |
+
+#### Type filter values
+
+| Value | Description |
+|---|---|
+| **All** | No filter — shows all session types. |
+| **Session over capacity** | Sessions where the number of enrolled clients exceeds the class capacity. Use this to find and resolve over-capacity situations. |
+| **Session under capacity** | Sessions with available slots — useful for spotting classes with low fill rate. |
+| **Custom make-up session** | Sessions created as a custom make-up (requested by a client, approved by instructor). |
+
+> **Tip:** Use **Session over capacity** to quickly identify sessions where attendance exceeds the maximum. This can happen when a client books a make-up slot in a class that is full, and then a regular client subsequently re-registers — the regular client has priority but the make-up booking remains, temporarily creating over-capacity. Review the session detail to decide whether to remove the make-up or increase the class limit.
 
 Results can be sorted by **Upcoming sessions** (default) or other criteria.
 

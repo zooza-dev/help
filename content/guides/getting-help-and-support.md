@@ -1,5 +1,6 @@
 ---
 title: "Getting Help and Support"
+description: "Zooza has a built-in support system that gives you instant answers from an AI assistant and lets you reach the team directly when you need a human touch."
 slug: "getting-help-and-support"
 type: "guides"
 product_area: "Settings"

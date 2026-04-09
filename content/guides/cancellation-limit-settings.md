@@ -1,5 +1,6 @@
 ---
 title: "Cancellation limit settings"
+description: "Zooza lets you define how late a client can cancel a scheduled session. This is a global setting — it applies to all programmes in your account."
 slug: "cancellation-limit-settings"
 type: "guides"
 product_area: "Programmes"

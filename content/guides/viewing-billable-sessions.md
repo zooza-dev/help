@@ -6,7 +6,7 @@ product_area: Classes
 sub_area: ""
 audience:
   - admin
-tags: []
+tags: ["booking", "class", "client", "discount", "instructor", "payment", "programme", "session"]
 status: published
 source_legacy_path: legacy/0043_Welcome to Zooza.html
 source_language: en

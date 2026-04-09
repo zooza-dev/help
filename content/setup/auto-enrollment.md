@@ -1,11 +1,12 @@
 ---
 title: "Auto-enrollment"
+description: "Auto-enrollment is used for efficient programme enrollment for existing clients with a pre-filled booking form."
 slug: "auto-enrollment"
 type: "setup"
 product_area: "Programmes"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["booking", "class", "client", "import", "location", "payment", "programme", "session", "widget"]
 status: "published"
 source_legacy_path: "legacy/0057_Welcome to Zooza.html"
 source_language: "en"

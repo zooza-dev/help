@@ -1,5 +1,6 @@
 ---
 title: "Trial Classes FAQ"
+description: "Trials are configured per programme. Go to Programme → Settings → Trial to enable them, and Programme → Automations → Trials to configure the rules."
 slug: "trials-faq"
 type: "faq"
 product_area: "Bookings"
@@ -246,3 +247,29 @@ Yes. You can manually send a follow-up email to trial clients at any time, and c
 The email goes out using the wording from the template you selected, not the default automation template.
 
 You can manage all templates — including editing and saving custom versions — under **Communication → Templates**.
+
+## What is the Retention feature and how do I use it?
+
+**Retention** is a Zooza feature that gives clients who left (Trial Lost or cancelled booking) a time-limited opportunity to return — without the admin having to follow up manually.
+
+When retention is active for a programme, clients whose trial was lost or booking was cancelled receive a re-engagement link. They can use this link to rejoin within the configured window. The admin can also add a personalised note that appears with the link.
+
+**How to configure:**
+
+1. Go to **Programmes** → open the programme.
+2. Click **Settings** → scroll to the **Retention** section.
+3. Set the number of days the re-engagement link remains active (default: 30 days).
+4. Optionally add a custom note to include with the retention communication.
+5. Save.
+
+**What the client receives:** A re-engagement link that lets them return to the booking flow or enrol directly, depending on your programme setup.
+
+**Retention vs. trial automation:** Trial automation handles the period *during and immediately after* the trial (enrolment link, follow-up, Trial Lost). Retention handles the period *after* Trial Lost or a cancelled booking — it's the last-chance re-engagement step.
+
+> **SK:** Retencia je nastavenie kurzu, ktoré umožňuje oslovovanie klientov, ktorí predtým odišli (Trial Lost alebo zrušená registrácia). Nastaví sa v Programme → Nastavenia → Retencia — zadáte počet dní (predvolene 30) a voliteľnú poznámku. Klient dostane odkaz na opätovné prihlásenie.
+
+## Related
+
+- [Retention](../setup/retention.md) — re-engage clients after Trial Lost or cancellation
+- [Trial sessions setup](../setup/trial-sessions.md) — configure trials per programme
+- [Trials in daily business](../guides/trials-daily-business.md) — day-to-day trial management workflow

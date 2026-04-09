@@ -6,7 +6,7 @@ product_area: Programmes
 sub_area: ""
 audience:
   - admin
-tags: []
+tags: ["class", "client", "instructor", "loyalty", "onboarding", "programme", "role", "session"]
 status: published
 source_legacy_path: legacy/0038_Welcome to Zooza.html
 source_language: en

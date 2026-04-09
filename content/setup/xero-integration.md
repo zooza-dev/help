@@ -1,5 +1,6 @@
 ---
 title: "Xero Integration"
+description: "Xero is an international cloud accounting platform. The Zooza–Xero integration is the most feature-rich of all invoice engines: invoices are created..."
 slug: "xero-integration"
 type: "setup"
 product_area: "Payments"

@@ -1,5 +1,6 @@
 ---
 title: "Daily Business with Trials: Setup, Transfers, and Adjustments"
+description: "Trials are a great way to introduce new clients to your classes — and Zooza gives you full flexibility to manage how they work."
 slug: trials-daily-business
 type: guides
 product_area: Programmes

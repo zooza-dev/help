@@ -1,5 +1,6 @@
 ---
 title: "Custom holidays"
+description: "Custom holidays let you block out specific dates for your Zooza account — such as a team retreat, a local event, or an unexpected closure."
 slug: "custom-holidays"
 type: "guides"
 product_area: "Calendar"

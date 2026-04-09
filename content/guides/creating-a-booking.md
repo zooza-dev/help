@@ -1,5 +1,6 @@
 ---
 title: "Creating a booking manually"
+description: "Admins and staff can create a booking for a client at any time — for a new client or one already in the system."
 slug: "creating-a-booking"
 type: "guides"
 product_area: "Bookings"

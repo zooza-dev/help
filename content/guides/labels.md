@@ -1,5 +1,6 @@
 ---
 title: "Labels"
+description: "Labels are custom tags you can attach to programmes, classes, and bookings. They help you organise your data, filter lists quickly, and — when marked..."
 slug: "labels"
 type: "guides"
 product_area: "Settings"

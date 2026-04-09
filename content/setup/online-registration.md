@@ -1,11 +1,12 @@
 ---
 title: "Online booking"
+description: "To control how the programme is displayed on your website and how communication with clients is managed, use this setting. It includes three parts:"
 slug: "online-registration"
 type: "setup"
 product_area: "Programmes"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["booking", "cancellation", "class", "client", "communication", "import", "onboarding", "payment", "programme", "role", "session", "trial", "waitlist", "widget"]
 status: "published"
 source_legacy_path: "legacy/0056_Welcome to Zooza.html"
 source_language: "en"

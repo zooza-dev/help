@@ -1,5 +1,6 @@
 ---
 title: "Create a programme"
+description: "A programme is the top-level container — it holds your pricing, payment settings, and booking form configuration."
 slug: "creating-a-programme"
 type: "guides"
 product_area: "Programmes"

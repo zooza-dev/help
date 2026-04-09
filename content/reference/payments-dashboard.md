@@ -1,5 +1,6 @@
 ---
 title: "Payments"
+description: "The Payments screen is the central hub for managing all financial transactions. It provides an overview of received payments, outstanding balances,..."
 slug: "payments-dashboard"
 type: "reference"
 product_area: "Payments"

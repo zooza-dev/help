@@ -1,5 +1,6 @@
 ---
 title: "Products"
+description: "The Products screen manages all sellable products offered to clients during booking or separately."
 slug: "products-list"
 type: "reference"
 product_area: "Settings"

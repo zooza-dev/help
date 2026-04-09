@@ -1,5 +1,6 @@
 ---
 title: "Role Selection Guide"
+description: "Zooza uses predefined role packages to control what each team member can see and do."
 slug: "role-selection-guide"
 type: "guides"
 product_area: "Settings"

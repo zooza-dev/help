@@ -1,5 +1,6 @@
 ---
 title: "Invoices"
+description: "The Invoices screen lists all generated invoices across your bookings. Use it to search, filter, download, and export invoices."
 slug: "invoices-list"
 type: "reference"
 product_area: "Payments"

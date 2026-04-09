@@ -1,5 +1,6 @@
 ---
 title: "Price and payment setup"
+description: "The Price and Payment tile on a programme controls how much clients pay and how payments are collected."
 slug: "price-and-payment-setup"
 type: "guides"
 product_area: "Payments"

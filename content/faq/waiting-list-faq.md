@@ -1,5 +1,6 @@
 ---
 title: "Waiting List FAQ"
+description: "When a class is full, parents can still submit a booking. Their booking is placed on a waiting list."
 slug: "waiting-list-faq"
 type: "faq"
 product_area: "Bookings"

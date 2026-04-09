@@ -1,5 +1,6 @@
 ---
 title: "Copy a programme or class"
+description: "Copying is the fastest way to set up a new season or billing period. Instead of creating a programme or class from scratch, you copy an existing one..."
 slug: "copy-programme-and-class"
 type: "guides"
 product_area: "Programmes"
@@ -94,3 +95,6 @@ You can optionally copy the existing bookings (registrations) along with the cla
 - [Transfer and copy bookings](transfer-and-copy-bookings.md) — moving individual client bookings between classes.
 - [New programme with existing clients](new-programme-existing-clients.md) — strategies for term transitions.
 - [Transfer and Copy FAQ](../faq/transfer-and-copy-faq.md)
+
+- [Archive or delete a programme](archive-or-delete-programme.md) — remove programmes you no longer need
+- [Creating a programme](creating-a-programme.md) — build a new programme from scratch

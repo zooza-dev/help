@@ -1,5 +1,6 @@
 ---
 title: "Clients"
+description: "The Clients screen is the central directory for managing all client and family member records."
 slug: "clients-list"
 type: "reference"
 product_area: "Clients"

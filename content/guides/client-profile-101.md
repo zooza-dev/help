@@ -1,5 +1,6 @@
 ---
 title: "Client Profile 101"
+description: "The Client Profile is a self-service dashboard where clients manage their bookings, sessions, payments, benefits, and orders in one place."
 slug: "client-profile-101"
 type: "guides"
 product_area: "Clients"
@@ -137,6 +138,7 @@ On mobile, a quick navigation menu at the bottom lets clients jump directly to a
 ## Related
 
 - [Client Profile FAQ](../faq/client-profile-faq.md) — common questions about the Client Profile.
+- [Client profile dashboard](client-profile-dashboard.md) — overview of the client-facing self-service profile.
 - [Client Management FAQ](../faq/client-management-faq.md) — admin-side client management.
 - [Entry pass — client view](entry-pass-client-view.md) — how clients see and use entry passes.
 - [Customizing widgets](customizing-widgets.md) — embedding the Client Profile on your website.

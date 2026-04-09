@@ -1,5 +1,6 @@
 ---
 title: "Oblio Integration"
+description: "Oblio is a Romanian cloud accounting platform. When connected, Zooza creates invoices directly in your Oblio account, which automatically submits..."
 slug: "oblio-invoices"
 type: "setup"
 product_area: "Payments"

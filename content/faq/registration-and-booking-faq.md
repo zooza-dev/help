@@ -1,5 +1,6 @@
 ---
 title: "Registration and Booking FAQ"
+description: "Every programme in Zooza has a public booking page. Your main booking URL is yourbrand.zooza.online. You can also share direct links to specific classes:"
 slug: "registration-and-booking-faq"
 type: "faq"
 product_area: "Bookings"
@@ -125,6 +126,29 @@ It updates whenever **any** field on the registration changes, including:
 - If you are filtering exports for cancelled registrations and need accurate timing, cross-reference the registration status column with the cancellation date column rather than the last-update column.
 
 ---
+
+## How do I hide a class from the public booking page and share a private link instead?
+
+Use this when you have classes that should not be publicly listed — for example, school partnership sessions, invite-only groups, or franchise-internal classes.
+
+**Step 1 — Disable public visibility for the class:**
+
+1. Go to **Programmes** → open the programme → select the **Class**.
+2. Open **Settings → Online Registration**.
+3. Uncheck `Display in catalogue` (or disable `Allow online booking` to also block booking from direct links).
+4. Save.
+
+The class will no longer appear in your public booking widget or booking page catalogue.
+
+**Step 2 — Share a private direct link:**
+
+1. Go to **Programmes** → open the programme → select the **Class**.
+2. In the class listing, click **Copy link** (or use the **Customize** option to pre-fill specific details).
+3. Share the link directly with the relevant group (e.g. via email or WhatsApp to the school contact).
+
+Parents who receive the direct link can still register — the class is hidden from the public catalogue but bookable via the private URL.
+
+> **Note:** If you want to prevent *any* online booking (not just public listing), disable `Allow online booking` rather than just `Display in catalogue`. Admins can still create bookings manually from the admin panel regardless of this setting.
 
 ## Why is my programme not showing on the booking page?
 

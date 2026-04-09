@@ -1,5 +1,6 @@
 ---
 title: "Message Templates"
+description: "The Templates screen lists all email and SMS templates in one filterable table — both your custom templates and the built-in system templates that..."
 slug: "communication-message-templates"
 type: "reference"
 product_area: "Communication"

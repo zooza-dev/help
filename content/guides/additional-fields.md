@@ -1,5 +1,6 @@
 ---
 title: "Additional fields on the booking form"
+description: "Additional fields let you collect extra information from clients during booking — such as a child's date of birth, address, allergies, or business..."
 slug: "additional-fields"
 type: "guides"
 product_area: "Programmes"

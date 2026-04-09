@@ -1,5 +1,6 @@
 ---
 title: "GoCardless Integration FAQ"
+description: "Open the booking detail and scroll to the Payments tile. Click Show payments to expand it."
 slug: "gocardless-faq"
 type: "faq"
 product_area: "Payments"

@@ -1,5 +1,6 @@
 ---
 title: "Late bookings (pro-rata management)"
+description: "A late booking occurs when a client enrols for a class that has already started. Zooza marks these bookings with a snail icon and a \"Late booking\"..."
 slug: "late-bookings"
 type: "guides"
 product_area: "Bookings"

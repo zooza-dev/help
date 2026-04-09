@@ -1,5 +1,6 @@
 ---
 title: "Instructors"
+description: "The Instructors screen manages your team of instructors and account owners. Use it to add team members, manage profiles, set working hours, and..."
 slug: "instructors-list"
 type: "reference"
 product_area: "Settings"

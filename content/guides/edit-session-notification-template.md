@@ -1,5 +1,6 @@
 ---
 title: "Edit automatic notifications of an upcoming session"
+description: "The automatic notification is one of the messages that you can customise in the message templates."
 slug: "edit-session-notification-template"
 type: "guides"
 product_area: "Communication"

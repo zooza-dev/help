@@ -1,5 +1,6 @@
 ---
 title: "GoCardless Connection Lifecycle"
+description: "GoCardless connects your bank account to Zooza so that incoming payments are automatically forwarded for matching."
 slug: "gocardless-connection-lifecycle"
 type: "guides"
 product_area: "Payments"

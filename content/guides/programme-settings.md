@@ -1,11 +1,12 @@
 ---
 title: "Programme settings"
+description: "After creating your programme, Zooza will automatically take you to the Programme Overview page."
 slug: "programme-settings"
 type: "guides"
 product_area: "Programmes"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["attendance", "booking", "class", "client", "communication", "import", "location", "make-up", "onboarding", "payment", "programme", "role", "session", "transfer", "trial", "widget"]
 status: "published"
 source_legacy_path: "legacy/0046_Welcome to Zooza.html"
 source_language: "en"

@@ -1,5 +1,6 @@
 ---
 title: "Stripe Integration FAQ"
+description: "Zooza connects via Stripe Connect. All new connections use a Stripe Standard account — you get your own full Stripe account and manage it directly at..."
 slug: "stripe-payments-faq"
 type: "faq"
 product_area: "Payments"

@@ -1,5 +1,6 @@
 ---
 title: "Active and inactive clients"
+description: "This guide explains the difference between clients and bookings in Zooza, how the system determines whether a client is active or inactive, and how..."
 slug: "active-inactive-clients"
 type: "guides"
 product_area: "Clients"

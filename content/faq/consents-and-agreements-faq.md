@@ -1,5 +1,6 @@
 ---
 title: "Consents and Agreements FAQ"
+description: "There are three places where you can verify consent status:"
 slug: "consents-and-agreements-faq"
 type: "faq"
 product_area: "Settings"

@@ -1,11 +1,12 @@
 ---
 title: "Payment options"
+description: "The most common and worst option is to pay in cash. Why the worst? You have to work with banknotes and everything has to be done manually."
 slug: "payment-options"
 type: "guides"
 product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["billing", "booking", "client", "communication", "discount", "import", "payment", "programme", "session", "transfer"]
 status: "published"
 source_legacy_path: "legacy/0094_Welcome to Zooza.html"
 source_language: "en"

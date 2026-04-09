@@ -1,11 +1,12 @@
 ---
 title: "Individual sessions with 1st free session"
+description: "Programmes - individual sessions for one client, in which it is possible to sign up for the 1st session for free and then continue with the whole..."
 slug: "individual-sessions-with-free-session"
 type: "guides"
 product_area: "Programmes"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["attendance", "booking", "class", "client", "communication", "instructor", "payment", "programme", "role", "session", "trial"]
 status: "published"
 source_legacy_path: "legacy/0017_Welcome to Zooza.html"
 source_language: "en"

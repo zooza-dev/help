@@ -1,5 +1,6 @@
 ---
 title: "Email Delivery Troubleshooting"
+description: "A client says they did not receive an email from Zooza. This guide walks you through how to verify delivery, identify common causes, and resolve the issue."
 slug: "email-delivery-troubleshooting"
 type: "troubleshooting"
 product_area: "Communication"
@@ -122,3 +123,4 @@ Contact support if:
 - [Email and Communication FAQ](../faq/email-communication-faq.md)
 - [Receiving Emails from Zooza in Primary Inbox](emails-in-primary-inbox.md)
 - [Sending Emails and SMS to Clients](../guides/sending-email-sms.md)
+- [How to clear your cache](how-to-clear-your-cache.md)

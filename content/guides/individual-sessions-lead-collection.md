@@ -1,11 +1,12 @@
 ---
 title: "Individual sessions via lead collection class"
+description: "If, as a language school or a project offering individual sessions, you are first collecting interest and then creating dates and schedules, it is..."
 slug: "individual-sessions-lead-collection"
 type: "guides"
 product_area: "Programmes"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["attendance", "booking", "cancellation", "class", "client", "communication", "discount", "location", "payment", "programme", "session"]
 status: "published"
 source_legacy_path: "legacy/0035_Welcome to Zooza.html"
 source_language: "en"

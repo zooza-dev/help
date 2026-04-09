@@ -1,5 +1,6 @@
 ---
 title: "Booking FAQ"
+description: "Every programme in Zooza has a public booking page. Your main booking URL is yourbrand.zooza.online. You can also share direct links to specific classes:"
 slug: "booking-faq"
 type: "faq"
 product_area: "Bookings"
@@ -95,3 +96,35 @@ Click **Customize tile**, then click **Reset to default**. This restores the ori
 **Can I show the client's extra fields (e.g. address, medical notes) directly in the list?**
 
 Yes. Add the **Extra fields** widget to your tile. It will display any extra fields collected during registration directly on the booking card.
+
+---
+
+## Extra fields
+
+**My export shows a short code in the extra field column instead of the answer label — why?**
+
+Extra fields with a dropdown (choice) type store the option's **key**, not its display label. For example, if your choices are labelled "Facebook", "Google", "Word of mouth" but their keys are `1`, `2`, `3`, the export will show `1`, `2`, or `3` — not the readable label.
+
+To make exports readable, set meaningful keys when configuring the field options. Go to the programme → **Additional fields** → edit the choice field → update each option key (e.g. `facebook`, `google`, `word_of_mouth`). Keys must use only letters, numbers, and underscores — no spaces, dashes, or special characters.
+
+Once updated, new bookings will use the new keys in exports. Existing bookings retain the original key value.
+
+---
+
+## Booking count
+
+**Why does the bookings list show "500+ bookings found" instead of the exact number?**
+
+When the total number of bookings exceeds 500, Zooza displays "500+" instead of calculating the precise count. This is intentional — counting large datasets on every page load would slow down the list for everyone. The "500+" indicator simply means there are more than 500 results matching your current filters.
+
+To get the exact count you have two options:
+
+1. **Scroll to the bottom of the list** and click **recalculate** next to the page count (e.g. "Total pages: 25+ ( recalculate )"). Zooza will then calculate and display the real number of bookings.
+2. **Go to Reports** (**Reports & Insights** → **Reports**) where precise totals are always available regardless of list size.
+
+## Related
+
+- [Registration and booking FAQ](registration-and-booking-faq.md) — parent/client-side booking questions
+- [Creating a booking](../guides/creating-a-booking.md) — admin-side booking creation
+- [Booking form settings](../guides/booking-form-settings.md) — configure the booking form
+- [Booking form attendee selection](../guides/booking-form-attendee-selection.md) — configure who can book

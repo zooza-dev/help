@@ -1,5 +1,6 @@
 ---
 title: "Pay-as-you-go programme"
+description: "A Pay-as-you-go programme is a membership-style programme where clients register once and then pick individual sessions at their own pace."
 slug: "pay-as-you-go-programme"
 type: "guides"
 product_area: "Programmes"

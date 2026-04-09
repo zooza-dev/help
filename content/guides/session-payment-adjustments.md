@@ -1,5 +1,6 @@
 ---
 title: "Session payment adjustments"
+description: "Payment adjustments let you credit or debit a client's scheduled payment — either in bulk across multiple sessions from the Calendar, or individually..."
 slug: "session-payment-adjustments"
 type: "guides"
 product_area: "Payments"

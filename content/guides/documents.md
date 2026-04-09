@@ -1,11 +1,12 @@
 ---
 title: "Documents"
+description: "Zooza offers the ability to insert and manage different types of documents. This functionality allows users to upload documents in formats such as..."
 slug: "documents"
 type: "guides"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["booking", "client", "communication", "import", "location", "payment", "programme", "role", "session", "settings", "widget"]
 status: "published"
 source_legacy_path: "legacy/0114_Welcome to Zooza.html"
 source_language: "en"

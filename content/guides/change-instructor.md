@@ -1,11 +1,12 @@
 ---
 title: "How to change an instructor in a class or session"
+description: "In Zooza, you can change an instructor either at the class level or directly on sessions, depending on what you need."
 slug: "change-instructor"
 type: "guides"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["communication", "import", "instructor", "location", "session", "settings"]
 status: "published"
 source_legacy_path: "legacy/0062_Welcome to Zooza.html"
 source_language: "en"

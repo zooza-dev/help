@@ -1,5 +1,6 @@
 ---
 title: "WhatsApp"
+description: "The WhatsApp screen manages WhatsApp Business messaging within Zooza. Use it to view conversations, reply to clients, and manage WhatsApp message..."
 slug: "communication-whatsapp"
 type: "reference"
 product_area: "Communication"

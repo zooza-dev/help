@@ -1,5 +1,6 @@
 ---
 title: "Understanding the Cancellation Log"
+description: "When a client or admin cancels attendance on a session, Zooza records every decision made during the process — whether the deadline was enforced,..."
 slug: "cancellation-log"
 type: "troubleshooting"
 product_area: "Calendar"

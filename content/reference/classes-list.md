@@ -1,5 +1,6 @@
 ---
 title: "Classes List"
+description: "The Classes screen shows all timetables (classes) across all programmes in a single, filterable table."
 slug: "classes-list"
 type: "reference"
 product_area: "Classes"

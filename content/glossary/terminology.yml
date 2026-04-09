@@ -184,7 +184,10 @@ terms:
       de: "Einzelveranstaltung / Einmaliger Kurs"
     intent_keywords:
       en: ["one off", "one-off", "single event", "workshop", "one time", "one session"]
-      sk: ["jednorazovo", "jednorazový", "workshop", "prednáška", "konzultácia"]
+      sk: ["jednorazovo", "jednorazový", "workshop", "prednáška", "konzultácia",
+           "jednorazový kurz", "jednorazový program", "jednorazová udalosť",
+           "voľné šantenie", "voľna hodina", "open day", "ukážková hodina"]
+      cz: ["jednorázově", "jednorázový", "workshop", "přednáška", "konzultace", "jednorázový kurz"]
       de: ["einmalig", "Workshop", "Einzeltermin", "Veranstaltung"]
     public: true
 
@@ -446,9 +449,9 @@ terms:
       cz: "Náhradní hodina / Náhrada"
       de: "Ersatzstunde / Ersatztermin / Nachholtermin"
     intent_keywords:
-      en: ["make-up", "makeup", "replacement", "catch up", "missed session", "attend another", "reschedule"]
-      sk: ["náhradná hodina", "náhrada", "zmeškané", "náhradný termín", "preložiť hodinu"]
-      cz: ["náhradní hodina", "náhrada", "zmeškané", "náhradní lekce", "přeložit hodinu"]
+      en: ["make-up", "makeup", "replacement", "catch up", "missed session", "attend another", "reschedule", "how many hours before make-up", "time limit make-up", "when can client book make-up"]
+      sk: ["náhradná hodina", "náhrada", "zmeškané", "náhradný termín", "preložiť hodinu", "limit prihlásenia na náhradnú hodinu", "koľko hodín pred termínom", "časové obmedzenie náhrady", "prihlásenie na náhradnú hodinu"]
+      cz: ["náhradní hodina", "náhrada", "zmeškané", "náhradní lekce", "přeložit hodinu", "limit přihlášení na náhradní hodinu", "kolik hodin před termínem", "časové omezení náhrady"]
       de: ["Ersatzstunde", "Ersatztermin", "Nachholtermin", "verpasste Stunde", "Nachholen"]
     do_not_confuse_with:
       - term: "Transferred make-up session"
@@ -498,9 +501,13 @@ terms:
       cz: "Přenos náhrady / Přenos náhradních hodin do dalšího období"
       de: "Übertragene Ersatzstunden / Ersatzstunden-Übertrag"
     intent_keywords:
-      en: ["transferred make-up", "carry over make-up", "make-up next period", "make-up rollover", "unused make-ups"]
-      sk: ["prenos náhrady", "prenos náhradiek", "náhrady do ďalšieho obdobia", "nevyužité náhrady"]
-      cz: ["přenos náhrady", "přenos náhradních hodin", "náhrady do dalšího období", "nevyužité náhrady"]
+      en: ["transferred make-up", "carry over make-up", "make-up next period", "make-up rollover", "unused make-ups",
+           "make-up from another company", "cross-company make-up"]
+      sk: ["prenos náhrady", "prenos náhradiek", "náhrady do ďalšieho obdobia", "nevyužité náhrady",
+           "náhradka z inej spoločnosti", "prenesená náhradka", "náhradka z inej pobočky",
+           "náhrady z inej firmy"]
+      cz: ["přenos náhrady", "přenos náhradních hodin", "náhrady do dalšího období", "nevyužité náhrady",
+           "náhrada z jiné společnosti", "přenesená náhrada"]
     do_not_confuse_with:
       - term: "Make-up session"
         reason: >
@@ -641,13 +648,16 @@ terms:
       - "invoice profile"      # old internal term
       - "payment template"     # internal/legacy term
       - "billing frequency"
+      - "recurring payments"   # customers use this to mean the payment plan; not a Zooza term
     synonyms:
       - "payment schedule"     # still understood
     translations:
       sk: "Platobný plán / Platobný rozvrh"
       de: "Zahlungsplan / Zahlungsrhythmus"
     intent_keywords:
-      en: ["payment plan", "payment schedule", "how to pay", "billing", "instalments", "when billed"]
+      en: ["payment plan", "payment schedule", "how to pay", "billing", "instalments", "when billed",
+           "recurring payments", "pause payments", "unschedule payments", "cancel recurring", "stop payments",
+           "defer payment", "postpone payment"]
       sk: ["platobný plán", "spôsob platby", "platba", "fakturácia", "splátky"]
       de: ["Zahlungsplan", "Zahlungsrhythmus", "Ratenzahlung", "wann zahlen"]
     public: true
@@ -992,9 +1002,13 @@ terms:
       sk: "Prichádzajúca platba / Platba prevodom"
       cz: "Příchozí platba"
     intent_keywords:
-      en: ["inbound payment", "bank transfer", "payment not matched", "payment pairing", "unmatched payment", "manual pairing"]
-      sk: ["prichádzajúca platba", "prevod", "platba nespárovaná", "spárovanie platby", "platba nebola priradená"]
-      cz: ["příchozí platba", "převod", "nespárovaná platba", "párování platby"]
+      en: ["inbound payment", "bank transfer", "payment not matched", "payment pairing", "unmatched payment", "manual pairing",
+           "standing order", "variable symbol", "reference number payment"]
+      sk: ["prichádzajúca platba", "prevod", "platba nespárovaná", "spárovanie platby", "platba nebola priradená",
+           "párovanie platieb", "variabilný symbol", "VS", "trvaly príkaz", "stály príkaz",
+           "platba sa nespárovala", "platba nenašla registráciu"]
+      cz: ["příchozí platba", "převod", "nespárovaná platba", "párování platby",
+           "variabilní symbol", "trvalý příkaz", "platba se nespárovala"]
     do_not_confuse_with:
       - term: "GoCardless direct debit"
         reason: >
@@ -1047,6 +1061,58 @@ terms:
       Regeneration is supported for Faktury Online and Xero only. For other engines,
       the user must correct the invoice manually in their accounting software.
     public: false
+
+  - id: loyalty-program
+    canonical_en: "Loyalty Program"
+    category: "payments"
+    definition: >
+      A suite of three automatic discount/reward mechanisms in Zooza:
+      Sibling Discount (discount for families with 2+ children enrolled),
+      Returning Client Discount (discount for clients who re-enrol),
+      and Referral Program (reward for referring new clients).
+      Configured under Sales & Payments → Loyalty Program. Each of the three
+      parts can be enabled or disabled independently.
+    context:
+      admin: "Loyalty Program"
+      client: "Loyalty benefits"
+      widget: "Loyalty benefits"
+    synonyms:
+      - "loyalty programme"
+      - "loyalty system"
+      - "rewards programme"
+    translations:
+      sk: "Vernostný program"
+      cz: "Věrnostní program"
+      de: "Treueprogramm"
+      hu: "Hűségprogram"
+    intent_keywords:
+      en: ["loyalty program", "loyalty programme", "loyalty system", "referral", "sibling discount", "returning client discount", "rewards", "referral link", "referral program", "recommendation reward"]
+      sk: ["vernostný program", "vernostný systém", "vernostná zľava", "vernostné výhody", "referral", "odporúcanie", "referral link", "zľava za súrodenca", "vrátenie klienta"]
+      cz: ["věrnostní program", "věrnostní systém", "věrnostní sleva", "referral", "doporučení", "referral link", "sourozenecká sleva", "sleva pro vracející se klienty"]
+      de: ["Treueprogramm", "Treuerabatt", "Empfehlungsprogramm", "Referral", "Geschwisterrabatt"]
+      hu: ["hűségprogram", "ajánlói link", "referral", "testvérkedvezmény"]
+    do_not_confuse_with:
+      - term: "Discount codes"
+        reason: >
+          Discount codes are single-use or limited-use promo codes entered manually.
+          Loyalty Program discounts are calculated and applied automatically based on
+          booking history, family connections, or referral activity.
+    ai_notes: >
+      Navigation path: Sales & Payments → Loyalty Program.
+      Three sub-features:
+      1. Sibling Discount — activated when a second+ child is enrolled under the same account.
+      2. Returning Client Discount — activated when a client re-books after a previous booking.
+      3. Referral Program — each client has a unique referral link in their booking widget
+         profile (not in the admin). When a referred client books through the link and
+         completes registration, rewards are issued automatically. The referral link is
+         visible in the booking widget profile section — clients see it whenever they log
+         into the widget on the provider's website. Admins cannot view or copy referral
+         links from the admin panel.
+      IMPORTANT: Referral links are NOT set up manually per client — they exist automatically
+      for every client once the Referral Program is activated.
+      Loyalty discounts from copying registrations (new season) may not apply automatically
+      if the booking history is not inherited by the copy.
+    public: true
 
   - id: network-transfer
     canonical_en: "Network transfer"
@@ -1160,6 +1226,27 @@ entity_misattribution:
     intent_keywords:
       en: ["free session", "free lesson", "give free class", "complimentary session"]
       sk: ["dať termín zadarmo", "bezplatný termín", "hodina zadarmo", "voľný termín"]
+
+  - pattern: "Courses = Programmes / Groups = Classes / Lessons = Sessions (RO + legacy EN navigation labels)"
+    actual_entity: "Programme / Class / Session"
+    actual_action: "Map to canonical hierarchy: Programme → Class → Session"
+    clarification: >
+      In some Zooza market versions and legacy UI states, the navigation labels differ:
+      - Romanian app: Activities menu shows 'Cursuri' (Courses), 'Grupe' (Groups), 'Lecții' (Lessons/Events).
+      - Legacy English: some users see 'Courses', 'Groups', 'Lessons/Events' in the Activities menu
+        instead of 'Programmes', 'Classes', 'Sessions'.
+      When a user says they see "Courses" and not "Programmes", or "Groups" instead of "Classes",
+      they are in the same feature area — just a different UI label.
+      Always respond to the feature they are asking about, using the canonical English terms.
+      If AI guidance uses 'Programmes → New Programme', explain that in their UI this may appear
+      as 'Courses → New Course' (or equivalent). Mapping:
+        Courses / Cursuri     → Programmes
+        Groups / Grupe        → Classes
+        Lessons / Lecții      → Sessions
+        Events / Evenímente   → Sessions (one-off)
+    intent_keywords:
+      en: ["I don't see Programmes", "only see Courses", "no Programmes menu", "see Courses not Programmes", "Courses Groups Lessons", "Activities shows courses groups"]
+      ro: ["cursuri", "grupe", "lecții", "evenimente", "activități"]
 
   - pattern: "delete/remove/zmazať/vymazať programme/kurz/program/curs/kurzus"
     actual_entity: "Programme"
@@ -1342,6 +1429,41 @@ entity_misattribution:
       sk: ["pridať pole do formulára", "nové pole do registrácie", "extra pole registračný formulár"]
       cz: ["přidat pole do formuláře", "nové pole registrační formulář", "extra pole formulář"]
       hu: ["új mező regisztrációhoz", "mező hozzáadása", "extra mező regisztrációs form"]
+
+  - id: retention
+    canonical_en: "Retention"
+    category: "client-management"
+    definition: >
+      A Zooza feature that sends a re-engagement link to clients whose trial was lost
+      or whose booking was cancelled, giving them a time-limited opportunity to return.
+      The admin configures how many days the re-engagement link remains active and can
+      add a personalised note. Configurable per programme under Programme → Settings → Retention.
+    context:
+      admin: "Retention"
+      client: null
+      widget: null
+    deprecated:
+      - "re-engagement"
+    synonyms:
+      - "re-engagement"
+      - "churn prevention"
+      - "win-back"
+    translations:
+      sk: "Retencia"
+      cz: "Retence"
+    intent_keywords:
+      en: ["retention", "re-engagement", "win back client", "bring client back", "trial lost follow-up",
+           "lapsed client", "churn prevention", "re-engage"]
+      sk: ["retencia", "retencia klienta", "vrátiť klienta", "stratený klient", "osloviť stratených",
+           "retencný link", "retenčný odkaz"]
+      cz: ["retence", "retence klienta", "vrátit klienta", "ztracený klient", "retenční odkaz"]
+    ai_notes: >
+      Retention is accessed via Programme → Settings → Retention (not via the Loyalty program).
+      It is distinct from the Loyalty Program (which rewards active clients).
+      Retention targets clients who already left or never converted (Trial Lost / Cancelled).
+      The admin sets the number of days the retention link is accessible and an optional note.
+      This is a configurable-days feature — the default was 30 days, but admins can change it per programme.
+    public: false
 
   - pattern: "ai_rule"
     actual_entity: "N/A"

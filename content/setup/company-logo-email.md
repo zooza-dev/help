@@ -1,5 +1,6 @@
 ---
 title: "Company logo in email communication"
+description: "You can insert your company logo within the application. Once set, it will appear in the header of all email communication with your clients."
 slug: "company-logo-email"
 type: "setup"
 product_area: "Communication"
@@ -9,7 +10,7 @@ tags: ["email"]
 status: "published"
 source_legacy_path: "legacy/0011_Welcome to Zooza.html"
 source_language: "en"
-needs_screenshot_replacement: false
+needs_screenshot_replacement: true
 last_converted: "2026-02-11"
 ---
 

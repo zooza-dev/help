@@ -1,11 +1,12 @@
 ---
 title: "Personas"
+description: "Personas is a feature that distinguishes between attendees and clients, giving each their own dedicated profile."
 slug: "personas"
 type: "guides"
 product_area: "Clients"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["attendance", "booking", "client", "communication", "import", "instructor", "programme", "role", "session"]
 status: "published"
 source_legacy_path: "legacy/0024_Welcome to Zooza.html"
 source_language: "en"

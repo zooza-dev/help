@@ -1,5 +1,6 @@
 ---
 title: "Integrations"
+description: "The Integrations page is a central hub where you can connect Zooza to external services — payment gateways, invoicing systems, accounting exports,..."
 slug: "integrations-hub"
 type: "setup"
 product_area: "Settings"
@@ -68,7 +69,7 @@ Go to **Settings → Integrations** to see all available integrations and their 
 
 | Integration | Description |
 |---|---|
-| **Power BI** | Connect Zooza data to Power BI dashboards. [Set up Power BI →](../../settings/power-bi-integration) |
+| **Power BI** | Connect Zooza data to Power BI dashboards. [Set up Power BI →](power-bi-integration.md) |
 
 ---
 

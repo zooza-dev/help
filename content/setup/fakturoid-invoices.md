@@ -1,5 +1,6 @@
 ---
 title: "Fakturoid Integration"
+description: "Fakturoid is a Czech and Slovak cloud invoicing platform. When connected, Zooza creates invoices directly in your Fakturoid account — no manual..."
 slug: "fakturoid-invoices"
 type: "setup"
 product_area: "Payments"

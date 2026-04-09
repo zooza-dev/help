@@ -1,11 +1,12 @@
 ---
 title: "How to assign Direct Debit mandates to bookings (GoCardless)"
+description: "After the import, you can assign existing Direct Debit mandates to the imported bookings."
 slug: "gocardless-direct-debit-mandates"
 type: "guides"
 product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["billing", "booking", "communication", "import", "onboarding", "payment", "programme", "session"]
 status: "published"
 source_legacy_path: "legacy/0082_Welcome to Zooza.html"
 source_language: "en"

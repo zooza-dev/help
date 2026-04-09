@@ -1,11 +1,12 @@
 ---
 title: "Locations and Venues FAQ"
+description: "Location is a required field on a class — you cannot leave it blank. You can only replace it with a different location."
 slug: "locations-and-venues-faq"
 type: "faq"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["booking", "client", "communication", "location", "onboarding", "programme", "session", "settings"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
@@ -67,3 +68,7 @@ If you chose **Change for a class only**, your sessions retain the old (or no) v
 ## Each location has an internal ID — where can I find it?
 
 Location IDs (Place IDs) are used internally for things like booking links and email templates. They are not prominently displayed in the interface. Contact support if you need to reference a specific Place ID for custom links or templates.
+
+## Related
+
+- [Creating a location](../setup/creating-a-location.md) — step-by-step location setup

@@ -1,5 +1,6 @@
 ---
 title: "Entry pass — client view"
+description: "This guide explains how clients see and use entry passes in their profile. It is intended for admins who want to understand the client experience,..."
 slug: "entry-pass-client-view"
 type: "guides"
 product_area: "Orders"

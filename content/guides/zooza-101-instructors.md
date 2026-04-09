@@ -6,7 +6,7 @@ product_area: Settings
 sub_area: ""
 audience:
   - staff
-tags: []
+tags: ["attendance", "booking", "client", "communication", "import", "instructor", "location", "onboarding", "payment", "programme", "role", "session", "settings"]
 status: published
 source_legacy_path: legacy/0064_Welcome to Zooza.html
 source_language: en

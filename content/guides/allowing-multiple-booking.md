@@ -1,11 +1,12 @@
 ---
 title: "Allowing multiple booking for a programme"
+description: "You can expand the booking form not only with extra fields but also with the possibility to add another person."
 slug: "allowing-multiple-booking"
 type: "guides"
 product_area: "Bookings"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["booking", "client", "communication", "payment", "programme", "widget"]
 status: "published"
 source_legacy_path: "legacy/0032_Welcome to Zooza.html"
 source_language: "en"

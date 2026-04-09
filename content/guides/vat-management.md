@@ -6,7 +6,7 @@ product_area: Payments
 sub_area: ""
 audience:
   - admin
-tags: []
+tags: ["billing", "booking", "client", "import", "invoice", "location", "payment", "programme", "role", "session"]
 status: published
 source_legacy_path: legacy/0102_Welcome to Zooza.html
 source_language: en

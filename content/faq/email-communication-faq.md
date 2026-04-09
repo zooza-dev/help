@@ -1,5 +1,6 @@
 ---
 title: "Email and Communication FAQ"
+description: "No. You do not need to enter the country code when saving a client's phone number."
 slug: "email-communication-faq"
 type: "faq"
 product_area: "Communication"
@@ -85,6 +86,36 @@ Custom sending domains are available for specific plans. Contact your Zooza acco
 
 Go to **Bookings**, filter by the relevant class or location, and use the bulk communication option. You can also go to **Communication** for broader email sends, though the filtering options differ from the bookings view.
 
+## Session reminders didn't arrive — how do I check what happened?
+
+Session reminders (day-before notifications) are processed in a queue. If clients report they didn't receive a reminder, check the notification log before assuming a bug:
+
+1. Go to **Reports → Session Notifications** (or navigate directly to `/#reports/event_notifications`).
+2. The log shows each notification batch: when it was created, how many were processed, how many failed, and the notification type.
+3. Find the relevant date and check the status.
+
+**Common reasons reminders don't arrive:**
+- **Client opted out** — the client (or admin) turned off session reminders on that booking. Check the booking → **Options** tab → Reminder toggle.
+- **Processing delay** — reminders are batched. On busy days processing can take longer than usual. Check the log — if the status is "Processed", the email was sent from Zooza's side.
+- **Session was already cancelled** — cancelled sessions suppress reminders automatically.
+- **Client's email filtered it** — if the log shows "Processed" but the client didn't receive it, check spam/junk. Zooza cannot override recipient-side filtering.
+- **No sessions that day** — verify the session date is correct and the session is not in Draft or Cancelled status.
+
+> **SK:** Ak notifikácie neodišli, skontrolujte log na stránke **Reports → Session Notifications**. Ak je stav "Processed", email bol odoslaný zo strany Zooza — problém je na strane klienta (spam, vypnuté notifikácie).
+
+## I sent an email to "all active clients" — did it reach clients on trial?
+
+No. When you send via **Communication → Compose** and select all active clients (or all clients in a class), the audience includes only clients with an **active enrolment booking**. Clients with a **Trial** booking status are not included in that group.
+
+To reach trial clients, you need to send a separate message:
+
+1. Go to **Communication → Compose**.
+2. Choose the same message type (email or WhatsApp).
+3. In the audience selector, filter by **Trial** status (or select the specific class and filter to trial bookings).
+4. Send the message to that group separately.
+
+This applies to both manual email sends and WhatsApp messages composed via the Communication module. Automated notifications triggered by programme rules (e.g. session reminders, trial confirmation) are sent correctly to trial clients based on their booking type — this limitation only affects manually composed broadcasts.
+
 ## How do I set up class reminder emails for parents?
 
 Class reminders are part of the automated email flow. They are configured per programme under the communication/automation settings. Typically, a reminder is sent the day before the scheduled session.
@@ -113,6 +144,19 @@ Tags like `COURSE_TIME` and `COURSE_DATE_DAY` pull their values from the primary
 
 <!-- REVIEW: A dedicated dynamic tag for block-specific dates has been requested but is not yet available. Monitor for product updates. -->
 
+## Why do payment reminder emails arrive in the middle of the night?
+
+Payment-related automated emails — missed payment notifications, upcoming payment reminders — are processed in a nightly batch job. The exact delivery time depends on server scheduling and typically falls between midnight and 6am.
+
+**This is intentional, not a bug.** Zooza (like other platforms) runs these batch jobs overnight for two reasons:
+
+1. **Server load** — processing reminders for all companies at once would slow down the application during the day when admins and clients are actively using it. Overnight processing keeps the app fast and responsive during business hours.
+2. **Communication timing** — running reminders during the day would overlap with other automated messages (session reminders, booking confirmations, etc.) and potentially flood clients. A dedicated overnight window keeps automated messages predictable.
+
+The overnight timing is not configurable — neither globally nor per programme.
+
+**If clients find late-night emails disruptive**, consider adding a short note to the **Missed payment** or **Upcoming payment** email template — for example: *"This message was generated automatically overnight. If you have questions, contact us during business hours."* See [Message Templates](../reference/communication-message-templates.md) for how to edit templates.
+
 ## Why did my client not receive the confirmation email for a manual or copied booking?
 
 Copied and manually created bookings do **not** trigger automatic confirmation emails. This is by design. To send a confirmation, go to the booking's **Communication** tab and send the confirmation email manually.
@@ -134,3 +178,12 @@ These are listed in separate dropdown sections. If you cannot find your custom t
 3. Ask the client to whitelist your sending address and check their spam/junk folder.
 
 Zooza cannot override recipient-side filtering. If the logs confirm the email was sent, the issue is on the recipient's side.
+
+## Related
+
+- [Email delivery troubleshooting](../troubleshooting/email-delivery.md) — diagnose bounces, spam filtering, and delivery failures
+- [Send email after a session](../guides/send-email-after-session.md) — follow-up workflow for post-session communication
+- [Automated notifications](../guides/automated-notifications.md) — configure session reminders and event-triggered emails
+- [Message templates](../guides/message-templates.md) — create and edit email and SMS templates
+- [WhatsApp FAQ](whatsapp-faq.md) — WhatsApp messaging setup and limits
+- [Notifications center](../guides/notifications-center.md) — view and manage all outgoing notification history

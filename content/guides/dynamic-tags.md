@@ -1,5 +1,6 @@
 ---
 title: "Dynamic tags"
+description: "When creating templates, Zooza provides dynamic tags to speed up communication with your clients."
 slug: "dynamic-tags"
 type: "guides"
 product_area: "Communication"

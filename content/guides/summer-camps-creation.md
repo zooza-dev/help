@@ -6,7 +6,7 @@ product_area: Programmes
 sub_area: ""
 audience:
   - admin
-tags: []
+tags: ["booking", "class", "client", "communication", "discount", "import", "instructor", "location", "make-up", "onboarding", "payment", "programme", "role", "session", "transfer"]
 status: published
 source_legacy_path: legacy/0050_Welcome to Zooza.html
 source_language: en
@@ -158,3 +158,10 @@ another tour of your camp, from scratch. Click the “Copy” button and
 simply copy the class.
 
 Other dates, place or instructor can be adjusted afterwards. The system guides you through the steps before you finish copying.
+
+## Related
+
+- [Business model: Camps](../business-models/camps.md)
+- [Business model: Open classes / drop-in](../business-models/open-classes-drop-in.md)
+- [Individual sessions](individual-sessions.md)
+- [Multi-day event with product offer](multi-day-event-with-product-offer.md)

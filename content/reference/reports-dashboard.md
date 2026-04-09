@@ -1,5 +1,6 @@
 ---
 title: "Reports"
+description: "The Reports screen provides an overview of your business metrics, payment status, booking occupancy, client statistics, trial conversion, and session..."
 slug: "reports-dashboard"
 type: "reference"
 product_area: "Settings"

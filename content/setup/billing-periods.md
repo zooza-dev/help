@@ -1,11 +1,12 @@
 ---
 title: "Setting up billing periods"
+description: "Billing periods are used for better orientation and overview in which period the programmes were held and therefore invoiced to the client."
 slug: "billing-periods"
 type: "setup"
 product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["billing", "booking", "client", "discount", "invoice", "make-up", "payment", "programme", "session", "transfer"]
 status: "published"
 source_legacy_path: "legacy/0076_Welcome to Zooza.html"
 source_language: "en"

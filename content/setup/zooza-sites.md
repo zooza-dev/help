@@ -1,11 +1,12 @@
 ---
 title: "Zooza Sites"
+description: "If you don’t have your own website and would like to make it as easy as possible to implement your programmes that you manage in Zooza, we offer you..."
 slug: "zooza-sites"
 type: "setup"
 product_area: "Widgets"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["booking", "client", "communication", "invoice", "location", "payment", "programme", "role", "widget"]
 status: "published"
 source_legacy_path: "legacy/0074_Welcome to Zooza.html"
 source_language: "en"

@@ -1,5 +1,6 @@
 ---
 title: "Automated notifications overview"
+description: "Zooza sends automated emails to clients based on events — booking created, session approaching, payment due, and so on."
 slug: "automated-notifications"
 type: "guides"
 product_area: "Communication"

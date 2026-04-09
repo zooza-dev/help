@@ -1,11 +1,12 @@
 ---
 title: "Outstanding amount"
+description: "When each booking is created, the amount owed will be created at the same time. This amount is used to track whether the booking is paid or not."
 slug: "outstanding-amount"
 type: "guides"
 product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["billing", "booking", "client", "communication", "import", "payment", "programme", "session"]
 status: "published"
 source_legacy_path: "legacy/0095_Welcome to Zooza.html"
 source_language: "en"

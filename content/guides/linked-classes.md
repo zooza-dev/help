@@ -1,5 +1,6 @@
 ---
 title: "Linked classes"
+description: "Linked classes connect multiple classes within a Pay-as-you-go programme into a pool, so clients can pick sessions from any of the linked classes..."
 slug: "linked-classes"
 type: "guides"
 product_area: "Programmes"

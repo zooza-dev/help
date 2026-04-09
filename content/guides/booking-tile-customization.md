@@ -1,5 +1,6 @@
 ---
 title: "Customizing the booking tile"
+description: "Each row in the Bookings list is a booking tile — a compact card showing the most relevant information about a booking."
 slug: "booking-tile-customization"
 type: "guides"
 product_area: "Bookings"

@@ -1,5 +1,6 @@
 ---
 title: "Creating a class"
+description: "Classes divide a programme into time periods — for example, by term, level, or location."
 slug: "creating-a-class"
 type: "guides"
 product_area: "Classes"

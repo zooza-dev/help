@@ -1,5 +1,6 @@
 ---
 title: "Loyalty Activity Log"
+description: "The activity log is a full history of every loyalty discount applied to a booking in your company."
 slug: "loyalty-activity-log"
 type: "guides"
 product_area: "Payments"

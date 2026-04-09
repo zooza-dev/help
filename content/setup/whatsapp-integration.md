@@ -1,5 +1,6 @@
 ---
 title: "WhatsApp Integration & Usage (Beta)"
+description: "Go to Communication --> WhatsApp."
 slug: "whatsapp-integration"
 type: "setup"
 product_area: "Communication"
@@ -9,7 +10,7 @@ tags: ["whatsapp", "email"]
 status: "published"
 source_legacy_path: "legacy/0001_Welcome to Zooza.html"
 source_language: "en"
-needs_screenshot_replacement: false
+needs_screenshot_replacement: true
 last_converted: "2026-02-11"
 ---
 

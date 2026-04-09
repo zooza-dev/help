@@ -1,5 +1,6 @@
 ---
 title: "Custom replacement sessions"
+description: "Standard make-up sessions work by filling a vacant slot in another class — the client picks from whatever sessions have capacity."
 slug: "custom-replacement-lessons"
 type: "guides"
 product_area: "Calendar"

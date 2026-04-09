@@ -1,5 +1,6 @@
 ---
 title: "Returning Client Discount"
+description: "The returning client discount automatically rewards clients who have booked with you before."
 slug: "loyalty-returning-customer"
 type: "guides"
 product_area: "Payments"

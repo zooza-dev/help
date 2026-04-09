@@ -1,5 +1,6 @@
 ---
 title: "Roles and Permissions FAQ"
+description: "Zooza offers six predefined roles with different levels of access:"
 slug: "roles-and-permissions-faq"
 type: "faq"
 product_area: "Settings"

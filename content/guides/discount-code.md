@@ -1,11 +1,12 @@
 ---
 title: "Discount code"
+description: "A discount code is one of the types of client discounts you will find within the app."
 slug: "discount-code"
 type: "guides"
 product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["billing", "booking", "client", "discount", "location", "make-up", "onboarding", "payment", "programme", "session", "widget"]
 status: "published"
 source_legacy_path: "legacy/0090_Welcome to Zooza.html"
 source_language: "en"

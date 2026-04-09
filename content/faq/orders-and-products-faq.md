@@ -1,5 +1,6 @@
 ---
 title: "Orders and Products FAQ"
+description: "There is no dedicated report for unpaid product orders, but you can filter the orders list directly."
 slug: "orders-and-products-faq"
 type: "faq"
 product_area: "Orders"
@@ -88,3 +89,8 @@ If a payment is already mislinked, you can fix it manually:
 2. Re-link the order to the same booking.
 3. When prompted, choose to have the payment managed by the booking.
 4. Save. The payment should now appear on the booking record.
+
+## Related
+
+- [Selling products during booking](../guides/selling-products-during-booking.md) — add product offers to the booking flow
+- [Multi-day event with product offer](../guides/multi-day-event-with-product-offer.md) — combine events with product sales

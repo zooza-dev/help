@@ -1,5 +1,6 @@
 ---
 title: "Invoicing in Zooza — Overview"
+description: "Zooza tracks payments and can generate invoices for course registrations and product purchases."
 slug: "invoicing-overview"
 type: "setup"
 product_area: "Payments"

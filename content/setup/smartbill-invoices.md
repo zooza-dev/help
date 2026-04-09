@@ -1,5 +1,6 @@
 ---
 title: "SmartBill Integration"
+description: "SmartBill is a Romanian cloud invoicing platform. When connected, Zooza creates invoices directly in your SmartBill account."
 slug: "smartbill-invoices"
 type: "setup"
 product_area: "Payments"

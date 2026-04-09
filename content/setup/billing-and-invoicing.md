@@ -1,5 +1,6 @@
 ---
 title: "Billing and invoicing"
+description: "This guide explains how to set up billing profiles and invoicing in Zooza. Billing profiles store your company details (name, address, IBAN) that..."
 slug: "billing-and-invoicing"
 type: "setup"
 product_area: "Payments"

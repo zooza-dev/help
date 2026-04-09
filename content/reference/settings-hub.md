@@ -1,5 +1,6 @@
 ---
 title: "Settings"
+description: "The Settings screen is the central configuration hub for your Zooza account. It provides access to all system-wide settings organized as navigation tiles."
 slug: "settings-hub"
 type: "reference"
 product_area: "Settings"

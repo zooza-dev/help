@@ -1,5 +1,6 @@
 ---
 title: "Loyalty Program FAQ"
+description: "Is the loyalty program available to all Zooza companies?"
 slug: "loyalty-faq"
 type: "faq"
 product_area: "Payments"
@@ -156,6 +157,18 @@ Yes. The discount is stored at the subscription level and applied to every billi
 
 **What if I disable the loyalty model while a client is on an active membership with a discount?**
 Contact support if you need guidance on this edge case. The expected behaviour for mid-cycle changes is being documented.
+
+---
+
+## Copying registrations
+
+**Why is the loyalty discount not applied when I copy registrations to a new season?**
+
+When you copy registrations to create a new season, the new bookings are created directly by the admin — they do not go through the standard online booking flow. Loyalty discounts (sibling discount, returning client discount, referral) are evaluated automatically only when a client books through the booking widget.
+
+For copied registrations, the discount is not applied automatically. The admin is expected to manage pricing for these bookings manually — for example by applying a payment plan with a built-in discount, or by adjusting the booking fee directly.
+
+This is by design: copying registrations is an admin bulk operation, and automatic loyalty re-evaluation on bulk copies could produce unexpected results (e.g. applying discounts to clients who should no longer qualify).
 
 ---
 

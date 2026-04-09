@@ -1,11 +1,12 @@
 ---
 title: "Multi-day session with product offer"
+description: "Programme - for a period with two classes, where several people can sign up on one form"
 slug: "multi-day-event-with-product-offer"
 type: "guides"
 product_area: "Programmes"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["attendance", "booking", "class", "client", "communication", "instructor", "onboarding", "payment", "programme", "role", "session", "transfer", "waitlist"]
 status: "published"
 source_legacy_path: "legacy/0019_Welcome to Zooza.html"
 source_language: "en"

@@ -1,11 +1,12 @@
 ---
 title: "Notifications Center"
+description: "The Notification Center is used to notify you as an administrator or your colleagues."
 slug: "notifications-center"
 type: "guides"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["client", "communication", "import", "role", "settings"]
 status: "published"
 source_legacy_path: "legacy/0073_Welcome to Zooza.html"
 source_language: "en"

@@ -1,11 +1,12 @@
 ---
 title: "Getting Started with Zooza"
+description: "From First Login to Everyday Use"
 slug: "getting-started-with-zooza"
 type: "setup"
 product_area: "Programmes"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["attendance", "booking", "cancellation", "class", "client", "communication", "discount", "holiday", "instructor", "invoice", "location", "make-up", "onboarding", "payment", "programme", "retention", "role", "session", "subscription", "transfer", "trial", "waitlist", "widget"]
 status: "published"
 source_legacy_path: "legacy/0015_Welcome to Zooza.html"
 source_language: "en"
@@ -666,3 +667,11 @@ Client Profile / Client Profile / Client Profile The parent’s space with live 
 
 Make-Up Session
  A make-up session parents can book themselves under your rules.
+
+## Related
+
+- [Onboarding and launch FAQ](../faq/onboarding-launch-faq.md) — common questions when starting with Zooza
+- [Login and account FAQ](../faq/login-and-account-faq.md) — login, access, and account setup questions
+- [App navigation map](../reference/app-navigation-map.md) — overview of the Zooza interface sections
+- [Getting help and support](../guides/getting-help-and-support.md) — how to reach Zooza support
+- [Business model guides](../business-models/index.md) — find the right setup for your type of business

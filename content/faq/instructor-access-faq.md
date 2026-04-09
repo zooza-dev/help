@@ -1,11 +1,12 @@
 ---
 title: "Instructor Access and Roles FAQ"
+description: "Instructors go to your Zooza app URL (e.g., asia.zooza.app), enter their email address, and receive a secure login link by email."
 slug: "instructor-access-faq"
 type: "faq"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["attendance", "booking", "client", "communication", "import", "instructor", "loyalty", "onboarding", "payment", "role", "session", "settings"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
@@ -61,9 +62,28 @@ If you delete the account, all data linked to that instructor is permanently los
 
 Email and communication access depends on the instructor's role. By default, **external instructors** have very limited permissions — they can mark attendance on sessions they are assigned to (including as a substitute) but cannot send emails or SMS to clients.
 
-If you need a substitute instructor to communicate with students, they must hold at least the **Instructor** role, which grants the right to send emails and SMS to their own clients. Alternatively, the **Main instructor** role provides broader communication access across all clients. <!-- REVIEW: Confirm whether a substitute assigned to a single session inherits client communication rights for that session, or whether role-level permissions always apply. -->
+If you need a substitute instructor to communicate with students, they must hold at least the **Instructor** role, which grants the right to send emails and SMS to their own clients. Alternatively, the **Main instructor** role provides broader communication access across all clients.
 
 You can adjust roles at any time in **Settings → Team**.
+
+## Why can't an instructor send an email from the session or group view?
+
+This is a permissions limitation by role, not a bug.
+
+When an instructor opens a session detail and tries to send a message to attendees, the option is restricted based on their role:
+
+| Role | Can send email/SMS to clients |
+|---|---|
+| **External instructor** | No |
+| **Instructor** | Yes — to clients enrolled in their own classes |
+| **Lead instructor** | Yes — to clients enrolled in classes they can see |
+| **Manager / Owner** | Yes — unrestricted |
+
+If a lektor (instructor) reports they cannot find the email option on a session or group, check their role in **Settings → Team**. The most common fix is upgrading them from **External instructor** to **Instructor**.
+
+**Important:** Role changes apply immediately — the instructor does not need to log out and back in.
+
+> **SK:** Ak lektor hlási, že nemôže odoslať email z termínu alebo skupiny, skontrolujte jeho rolu v **Nastavenia → Tím**. Externý lektor nemá právo posielať správy klientom. Zmeňte rolu na **Lektor** a prístup sa sprístupní okamžite.
 
 ## How do instructor rate types work (per-session, per-student, per-hour)?
 
@@ -76,3 +96,11 @@ Zooza supports flexible rate types for calculating instructor compensation. When
 Each rate is created once and then assigned a monetary value per instructor — so the same rate (e.g., "Group Session") can pay different amounts to different instructors. You assign the rate to a class in the class settings, and it automatically applies to all sessions in that class, including for a second instructor if one is assigned.
 
 To view calculated compensation, go to **Instructors → [select instructor] → Instructor report** and choose a date range.
+
+## Related
+
+- [Two instructors per class](../guides/two-instructors-per-class.md) — assign a main and assistant instructor to a class
+- [User roles](../guides/user-roles.md) — full breakdown of all roles and their permissions
+- [Instructor working hours](../setup/instructors-working-hours.md) — configure availability windows per instructor
+- [Instructor rate and reward](../setup/instructor-rate-reward.md) — set up compensation rates
+- [Instructor substitution](../guides/instructor-substitution.md) — manage cover and substitute instructors

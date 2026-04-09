@@ -1,5 +1,6 @@
 ---
 title: "Bulk Network Transfer"
+description: "Bulk Network Transfer lets you move multiple client registrations from your company to another company in the same Zooza network — in a single action."
 slug: "bulk-network-transfer"
 type: "guides"
 product_area: "Bookings"

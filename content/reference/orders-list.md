@@ -1,5 +1,6 @@
 ---
 title: "Orders"
+description: "The Orders screen lists all product orders placed by clients. Use it to track order status, manage payments, and add items to existing orders."
 slug: "orders-list"
 type: "reference"
 product_area: "Orders"
@@ -139,3 +140,4 @@ A final **Confirmation** step completes the process.
 ## Related
 
 - [Selling Products During Booking](../guides/selling-products-during-booking.md) — how to offer products at booking time.
+- [Orders and Products FAQ](../faq/orders-and-products-faq.md) — common questions about orders and products

@@ -1,5 +1,6 @@
 ---
 title: "Bookings"
+description: "The Bookings screen lists all bookings across your programmes. Use it to search, filter, and manage individual enrolments, payments, attendance, and..."
 slug: "bookings-list"
 type: "reference"
 product_area: "Bookings"

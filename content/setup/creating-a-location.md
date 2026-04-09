@@ -1,5 +1,6 @@
 ---
 title: "Creating and managing locations"
+description: "Locations are the physical venues where your classes take place. Every class requires a location, and the location name appears on your booking forms..."
 slug: "creating-a-location"
 type: "setup"
 product_area: "Settings"

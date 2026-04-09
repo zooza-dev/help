@@ -1,11 +1,12 @@
 ---
 title: "Labels/drawers for selected payments"
+description: "The payment drawers act as a colour-coded marker for individual payments. They are mainly used for the selection and subsequent display of specific..."
 slug: "payment-labels-drawers"
 type: "guides"
 product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["billing", "payment"]
 status: "archived"
 source_legacy_path: "legacy/0096_Welcome to Zooza.html"
 source_language: "en"

@@ -1,11 +1,12 @@
 ---
 title: "Individual Sessions: How to Sell, Plan, and Manage 1:1 Sessions in Zooza"
+description: "This guide explains a practical workflow for individual (1:1) sessions in Zooza:"
 slug: "individual-sessions"
 type: "guides"
 product_area: "Programmes"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["booking", "cancellation", "class", "client", "communication", "instructor", "invoice", "location", "make-up", "onboarding", "payment", "programme", "session", "subscription", "transfer", "widget"]
 status: "published"
 source_legacy_path: "legacy/0053_Welcome to Zooza.html"
 source_language: "en"
@@ -205,3 +206,12 @@ Notes & common pitfalls
 - Don’t publish the real 1:1 class online (unless you intentionally sell bookable slots).
 - Use a separate private class per client if you want clean reporting, payments, and scheduling.
 - If you want to offer “pick a time from available slots”, build availability via the make-up session approach rather than publishing a fixed timetable.
+
+## Related
+
+- [Individual sessions — climbing wall variant](individual-sessions-climbing-wall.md)
+- [Individual sessions — lead collection variant](individual-sessions-lead-collection.md)
+- [Individual sessions — free session variant](individual-sessions-with-free-session.md)
+- [Multi-day event with product offer](multi-day-event-with-product-offer.md)
+- [Summer camps creation](summer-camps-creation.md)
+- [Business model: Individual lessons](../business-models/individual-lessons.md)

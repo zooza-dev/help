@@ -1,5 +1,6 @@
 ---
 title: "Remove a Client or User from Your Account"
+description: "You can remove a person or a user login from your Zooza account. This is a company-scoped action — the person's data is disassociated from your..."
 slug: "remove-client-or-user"
 type: "guides"
 product_area: "Clients"

@@ -1,5 +1,6 @@
 ---
 title: "Booking Widget FAQ"
+description: "When no instructor is assigned to a class, the booking widget displays a system placeholder text (e.g., \"Will be assigned later\"). You have two options:"
 slug: "booking-widget-faq"
 type: "faq"
 product_area: "Widgets"

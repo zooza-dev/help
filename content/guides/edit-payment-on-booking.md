@@ -1,11 +1,12 @@
 ---
 title: "Edit payment on booking"
+description: "You can correct, edit or move each payment. Adjustments can be made individually at the level of bookings, in which case it is a change to the..."
 slug: "edit-payment-on-booking"
 type: "guides"
 product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["billing", "booking", "client", "communication", "discount", "payment", "transfer"]
 status: "published"
 source_legacy_path: "legacy/0091_Welcome to Zooza.html"
 source_language: "en"

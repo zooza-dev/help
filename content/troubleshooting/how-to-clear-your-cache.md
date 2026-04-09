@@ -1,11 +1,12 @@
 ---
 title: "How to Clear Your Cache"
+description: "Sometimes websites (including Zooza 😉) may load slowly or not show recent updates."
 slug: "how-to-clear-your-cache"
 type: "troubleshooting"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["settings", "widget"]
 status: "published"
 source_legacy_path: "legacy/0013_Welcome to Zooza.html"
 source_language: "en"

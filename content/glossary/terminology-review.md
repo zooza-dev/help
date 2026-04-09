@@ -45,8 +45,19 @@ People often name the wrong entity when describing an action. The AI must identi
 | "pridať klienta do inej skupiny" | kopírovať prihlásenie | Booking | Copy |
 | "enrol the child in two classes" | create two bookings (or copy one) | Booking | Copy / new Booking |
 | "move a session" | reschedule a session date | Session | Reschedule session |
+| "I only see Courses/Groups/Lessons in my menu" | RO app or legacy EN UI labels for Programme/Class/Session | Programme / Class / Session | Map: Courses→Programmes, Groups→Classes, Lessons→Sessions |
 | "free session for a client" | grant free credits on a booking OR make-up session — clarify | Booking | Free credits or Make-up |
 | "give the client a free session" | grant free credits on booking | Booking | Free credits |
+| "cancel the recurring payments" | cancel or pause the payment plan on a booking | Payment Plan | Cancel / reschedule scheduled payments |
+| "pause payments" / "unschedule payments" | defer or cancel the upcoming scheduled payment on a booking | Payment Plan | Reschedule or cancel scheduled payment |
+| "give the client a credit" (for missed session) | ambiguous — could mean Free Credits (attendance credit) OR a payment reduction via Session payment adjustment | Free Credits / Session payment adjustment | Clarify: is it an attendance credit (make-up entitlement) or a billing reduction (reduce next charge)? |
+| "scheduled payments" (as a forecast tool) | Scheduled Payments Overview (shows planned charges, not a forecast) | Scheduled Payments Overview | Redirect to Payment Insights → Forecast for income forecasting |
+| "voľné šantenie" (SK) | admin means a one-off free-play event session | One-off Event | Create as a One-off Event programme type |
+| "jednorazový kurz / program" (SK) | single-date programme | One-off Event | Synonym — map to One-off Event |
+| "trvaly príkaz" / "stály príkaz" (SK) | client pays by standing order using variable symbol | Reference Number + Inbound Payment | Redirect to payment-pairing guide — explain VS as the identifier |
+| "variabilný symbol" / "VS" (SK) | reference number used in bank transfer to identify booking | Reference Number | Known Slovak banking term — maps to Reference Number / payment reference |
+| "nedefinované kurzy" (SK) | classes show as "undefined" in calendar — caused by nightly data migration failure | Sessions / Classes display | Fix: refresh the page. Known intermittent issue. |
+| "rozvrh" (SK) | admin means the session schedule / class list, not a separate "schedule" entity | Sessions / Classes | Clarify: in Zooza, the "schedule" is the list of Sessions within a Class |
 
 ### AI rule
 > When a client says "client", "child", "attendee", or "parent" in the context of
@@ -360,6 +371,24 @@ People often name the wrong entity when describing an action. The AI must identi
 - **Synonyms:** review, rating
 - **Definition:** Structured feedback collected from clients after sessions or end of programme.
 - **SK:** Spätná väzba / Hodnotenie | **DE:** Feedback / Bewertung
+
+---
+
+## Loyalty
+
+### Loyalty Program
+- **Canonical:** Loyalty Program
+- **Synonyms:** loyalty programme, loyalty system, rewards programme
+- **Definition:** Three automatic reward mechanisms — Sibling Discount, Returning Client Discount, and Referral Program. Configured under Sales & Payments → Loyalty Program.
+- **SK:** Vernostný program | **CZ:** Věrnostní program | **DE:** Treueprogramm | **HU:** Hűségprogram
+- **AI keywords (EN):** loyalty program, loyalty programme, referral, sibling discount, returning client discount, referral link
+- **AI keywords (SK):** vernostný program, vernostná zľava, referral link, odporúcanie, zľava za súrodenca
+- **AI keywords (CZ):** věrnostní program, věrnostní sleva, referral link, doporučení, sourozenecká sleva
+- **Do not confuse with:** Discount codes — loyalty discounts are automatic (based on booking history/referrals); discount codes are manual promo codes.
+- **AI note:**
+  - Navigation: Sales & Payments → Loyalty Program.
+  - Referral link is automatic per client — visible in the **booking widget profile** (not in admin). Clients see it when logged into the widget on the provider's site. Cannot be manually set.
+  - Loyalty discounts from copied registrations (new season) may not apply automatically — booking history is not inherited by the copy.
 
 ---
 

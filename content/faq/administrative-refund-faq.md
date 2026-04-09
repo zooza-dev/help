@@ -1,5 +1,6 @@
 ---
 title: "Administrative Refund FAQ"
+description: "An administrative refund is a record in Zooza that a payment has been returned to a client, without triggering a real refund through Stripe or any..."
 slug: "administrative-refund-faq"
 type: "faq"
 product_area: "Payments"

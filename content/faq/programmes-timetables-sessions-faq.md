@@ -1,11 +1,12 @@
 ---
 title: "Programmes, Timetables and Sessions FAQ"
+description: "Changes made at the timetable level (e.g., assigning an instructor) do not always cascade to existing individual sessions."
 slug: "programmes-timetables-sessions-faq"
 type: "faq"
 product_area: "Programmes"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["attendance", "booking", "cancellation", "class", "client", "communication", "holiday", "import", "instructor", "invoice", "location", "make-up", "payment", "programme", "role", "session", "subscription", "transfer", "trial", "waitlist", "widget"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
@@ -261,3 +262,13 @@ To update the price for future bookings:
 All new registrations (including clients who convert from a trial) will use the updated price. Clients who registered before the change retain their original price — their payment schedule is not recalculated.
 
 If you need to adjust the price for an existing registration, you must edit the payment on that registration manually. See [Edit payment on booking](../guides/edit-payment-on-booking.md) for details.
+
+## Related
+
+- [Creating a programme](../guides/creating-a-programme.md) — set up a new programme step by step
+- [Archive or delete a programme](../guides/archive-or-delete-programme.md) — end or remove programmes
+- [Summer camps creation](../guides/summer-camps-creation.md) — set up seasonal or multi-day camps
+- [Programmes FAQ (quick reference)](programmes.md)
+- [Individual sessions guide](../guides/individual-sessions.md) — set up 1-to-1 and private session programmes
+- [Business model: Children's group activities — block/term](../business-models/children-group-activities-block.md)
+- [Business model: Children's group activities — subscription](../business-models/children-group-activities-subscription.md)

@@ -1,11 +1,12 @@
 ---
 title: "Receiving e-mails from Zooza in Primary Inbox"
+description: "Many times clients complain that they do not receive notification emails from the system. These emails can end up in spam or advertising."
 slug: "emails-in-primary-inbox"
 type: "troubleshooting"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["client", "communication", "settings"]
 status: "published"
 source_legacy_path: "legacy/0081_Welcome to Zooza.html"
 source_language: "en"

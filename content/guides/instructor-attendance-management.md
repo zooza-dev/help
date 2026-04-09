@@ -1,5 +1,6 @@
 ---
 title: "Attendance management for instructors"
+description: "This guide covers everything an instructor needs to manage attendance in Zooza — from finding your sessions on the dashboard to marking attendance,..."
 slug: "instructor-attendance-management"
 type: "guides"
 product_area: "Calendar"

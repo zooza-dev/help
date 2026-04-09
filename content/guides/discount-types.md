@@ -1,11 +1,12 @@
 ---
 title: "Discount types"
+description: "Within the app, you have the option to work with different types of discounts:"
 slug: "discount-types"
 type: "guides"
 product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["billing", "booking", "client", "communication", "discount", "location", "make-up", "payment", "programme", "session"]
 status: "published"
 source_legacy_path: "legacy/0088_Welcome to Zooza.html"
 source_language: "en"

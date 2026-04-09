@@ -1,5 +1,6 @@
 ---
 title: "Discounts and Sibling Pricing FAQ"
+description: "Go to Sales & Payments → Discounts in the left navigation menu."
 slug: "discounts-and-sibling-pricing-faq"
 type: "faq"
 product_area: "Payments"

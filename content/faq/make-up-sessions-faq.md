@@ -1,11 +1,12 @@
 ---
 title: "Make-up Sessions FAQ"
+description: "When a child misses a session and the absence is properly recorded, the system generates a make-up credit on the booking."
 slug: "make-up-sessions-faq"
 type: "faq"
 product_area: "Calendar"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["attendance", "booking", "calendar", "cancellation", "client", "communication", "holiday", "instructor", "location", "make-up", "onboarding", "payment", "programme", "role", "session", "subscription", "transfer", "waitlist"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
@@ -58,6 +59,21 @@ Setting up cross-company replacements has three steps:
 Cross-company make-up bookings follow the same rules as regular make-up bookings (capacity, 4-day rule, programme match). The restriction settings control **incoming** replacements — they define when clients from another branch can use sessions at your company.
 
 For the full setup walkthrough, admin views, and reporting, see the [Cross-company replacements](../guides/replacement-hours-complete.md#cross-company--franchise-replacements) section in the Make-up Sessions guide.
+
+## Can I mark attendance for a client attending a make-up from another company?
+
+**Limited.** When a client from another company attends a make-up session at your location, the make-up session belongs to their home company's record. This means:
+
+- You **can** see the client in the attendance list for that session.
+- You **cannot** permanently change the attendance status (present/absent) in a way that persists — because the make-up session record is owned by the other company's account.
+- Any attendance you mark may revert or may not appear correctly in your own reporting.
+
+**What to do in practice:**
+- For your own reporting, note the attendance manually (e.g. in a session note or internal comment).
+- The client's home-company admin can see and confirm the attendance from their side.
+- If this is a recurring issue (e.g. franchise network with regular cross-company make-ups), contact Zooza support to discuss whether cross-company attendance reporting can be aligned for your network.
+
+> **SK:** Náhradky klientov z inej spoločnosti patria pod účet tej inej spoločnosti. Nemôžeš ich preto v svojej adminstrácii trvalo označiť — dochádzka zostáva pod pôvodnou firmou. Pre vlastné záznamy si príchod poznač manuálne (poznámka na termíne alebo interný komentár).
 
 ## Can make-up credits carry over to the next billing period?
 
@@ -226,3 +242,10 @@ Other reasons include:
 - The session itself was not properly tracked (e.g. attendance tracking is disabled on the class).
 
 To fix a missing credit, change the attendance state from "Did not attend" to "Cancelled" on the affected session. The system should then generate the make-up credit.
+
+## Related
+
+- [Make-up sessions complete guide](../guides/replacement-hours-complete.md) — full setup and workflow
+- [Custom make-up sessions](../guides/custom-replacement-lessons.md) — instructor-approved custom replacement sessions
+- [Cancellation log](../troubleshooting/cancellation-log.md) — track and audit session cancellations
+- [Cancellation limit settings](../guides/cancellation-limit-settings.md) — configure cut-off windows

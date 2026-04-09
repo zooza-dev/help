@@ -1,11 +1,12 @@
 ---
 title: "Deploying Zooza app on your website"
+description: "Integration into your website is simple. As soon as a new account is created in Zooza, there is nothing to prevent the individual forms from being..."
 slug: "deploying-zooza-on-website"
 type: "setup"
 product_area: "Widgets"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["booking", "client", "discount", "location", "programme", "role", "widget"]
 status: "published"
 source_legacy_path: "legacy/0080_Welcome to Zooza.html"
 source_language: "en"

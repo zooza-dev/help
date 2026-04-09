@@ -1,5 +1,6 @@
 ---
 title: "Subscription and Billing FAQ"
+description: "3. Scroll to the bottom and click Manage subscription."
 slug: "subscription-faq"
 type: "faq"
 product_area: "Settings"

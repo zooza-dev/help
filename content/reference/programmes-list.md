@@ -1,5 +1,6 @@
 ---
 title: "Programmes List"
+description: "The Programmes screen is the main entry point for managing your activity offering."
 slug: "programmes-list"
 type: "reference"
 product_area: "Programmes"

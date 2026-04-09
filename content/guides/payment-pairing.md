@@ -1,11 +1,12 @@
 ---
 title: "Payment Pairing for Bank Transfers & Direct Debit"
+description: "Every booking in Zooza automatically creates an expected amount to pay based on your programme or class settings."
 slug: "payment-pairing"
 type: "guides"
 product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["billing", "booking", "client", "communication", "discount", "import", "invoice", "location", "loyalty", "onboarding", "payment", "programme", "role", "session", "transfer"]
 status: "published"
 source_legacy_path: "legacy/0084_Welcome to Zooza.html"
 source_language: "en"

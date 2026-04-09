@@ -1,11 +1,12 @@
 ---
 title: "Network Application"
+description: "The Network Application is a centralized reporting and management platform designed to help franchisors monitor and oversee their entire franchise network."
 slug: "network-application"
 type: "guides"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["attendance", "booking", "cancellation", "client", "discount", "import", "instructor", "location", "payment", "programme", "session", "settings", "widget"]
 status: "published"
 source_legacy_path: "legacy/0107_Welcome to Zooza.html"
 source_language: "en"

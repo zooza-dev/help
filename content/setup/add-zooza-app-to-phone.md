@@ -1,5 +1,6 @@
 ---
 title: "Add the Zooza app to your phone’s desktop"
+description: "If you use the Zooza app most often from your phone, you can simplify access by adding it as a shortcut to your home screen."
 slug: "add-zooza-app-to-phone"
 type: "setup"
 product_area: "Settings"

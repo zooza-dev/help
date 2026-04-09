@@ -6,7 +6,7 @@ product_area: Bookings
 sub_area: ""
 audience:
   - admin
-tags: []
+tags: ["booking", "client", "communication", "discount", "onboarding", "payment", "programme", "role", "session", "transfer", "trial", "waitlist", "widget"]
 status: published
 source_legacy_path: legacy/0033_Welcome to Zooza.html
 source_language: en

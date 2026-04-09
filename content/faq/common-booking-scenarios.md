@@ -1,11 +1,12 @@
 ---
 title: "Common Booking Scenarios"
+description: "Use this when the client won’t start or it’s a duplicate."
 slug: "common-booking-scenarios"
 type: "faq"
 product_area: "Bookings"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["attendance", "booking", "cancellation", "client", "communication", "import", "location", "make-up", "payment", "session", "trial", "waitlist"]
 status: "published"
 source_legacy_path: "legacy/0028_Welcome to Zooza.html"
 source_language: "en"
@@ -25,11 +26,31 @@ Steps: Bookings → Detail → Change status to Deleted.
 
 ## 2. How do I pause a booking?
 
+Use this when a client takes a break for a defined period and will return — for example, they are away for a few weeks, or the class venue is temporarily unavailable.
 
-Use this when a client takes a break for a defined period.
-Steps:
-Bookings → Detail → Payments → Payment Plan → Update the next scheduled payment date.
-(Billing restarts after the pause.)
+**Step 1 — Stop upcoming reminders by cancelling the sessions they'll miss.**
+
+1. Go to **Calendar** and select the sessions that won't take place for this client's period of absence.
+2. Click **Bulk Edit → Cancel** (or set individual sessions to Cancelled).
+3. Cancelled sessions will not trigger automated reminders.
+
+> If the whole class is pausing (not just one client), cancel the sessions for the whole class. If it's one client only, you can mark their attendance as absent instead — but the reminder will still be sent unless the session itself is cancelled.
+
+**Step 2 — Defer the payment plan so nothing is charged during the break.**
+
+1. Go to **Bookings → Detail → Payments → Payment Plan**.
+2. Click on the next scheduled payment.
+3. Update the **Scheduled for** date to after the client returns.
+4. Save.
+
+Billing will resume from that new date. Any subsequent scheduled payments will shift accordingly if the plan is set to follow-on billing.
+
+**When the client returns:**
+
+- Add back any sessions that were cancelled for their period (if they need to make up missed time), or simply let the next scheduled sessions continue as normal.
+- If sessions were deleted rather than cancelled, recreate them from the class detail.
+
+> **Keeping the booking active vs cancelling it:** A paused booking keeps the client's place in the class and their history intact. Use Pause (defer payment + cancel sessions) when the client *will* return. Use Cancel (status → Cancelled) only when they are leaving permanently.
 
 
 ## 3. How do I cancel a booking?

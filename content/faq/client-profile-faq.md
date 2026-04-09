@@ -1,5 +1,6 @@
 ---
 title: "Client Profile FAQ"
+description: "Clients go to your profile URL (e.g., yourbrand.zooza.online/customer-portal/), enter their email address, and receive a secure login link (token) by..."
 slug: "client-profile-faq"
 type: "faq"
 product_area: "Widgets"

@@ -1,5 +1,6 @@
 ---
 title: "FAQ — Programmes"
+description: "No. Programmes cannot be deleted directly in the app."
 slug: "faq-programmes"
 type: "faq"
 product_area: "Programmes"

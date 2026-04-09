@@ -1,11 +1,12 @@
 ---
 title: "Client import"
+description: "When you are a new client, or if you need to move existing clients from one Zooza account to another, the Client Import feature can save you time."
 slug: "client-import"
 type: "guides"
 product_area: "Clients"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["booking", "client", "communication", "holiday", "import", "programme", "session"]
 status: "published"
 source_legacy_path: "legacy/0025_Welcome to Zooza.html"
 source_language: "en"

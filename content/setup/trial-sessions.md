@@ -1,11 +1,12 @@
 ---
 title: "Trial sessions"
+description: "Trial sessions are a great way to show what your programmes have to offer. You will allow clients to get a better understanding of the content and..."
 slug: "trial-sessions"
 type: "setup"
 product_area: "Programmes"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["attendance", "booking", "cancellation", "class", "client", "communication", "import", "location", "make-up", "onboarding", "payment", "programme", "role", "session", "trial", "widget"]
 status: "published"
 source_legacy_path: "legacy/0058_Welcome to Zooza.html"
 source_language: "en"

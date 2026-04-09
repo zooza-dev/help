@@ -1,5 +1,6 @@
 ---
 title: "Transfer and Copy FAQ"
+description: "For a step-by-step walkthrough with screenshots, see Transfer and copy bookings."
 slug: "transfer-and-copy-faq"
 type: "faq"
 product_area: "Bookings"

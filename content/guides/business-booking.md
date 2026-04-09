@@ -1,11 +1,12 @@
 ---
 title: "Business booking"
+description: "If your clients are not individuals, but companies, you can also allow them to create company bookings. But this option needs to be enabled first."
 slug: "business-booking"
 type: "guides"
 product_area: "Bookings"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["booking", "client", "invoice", "payment", "programme"]
 status: "published"
 source_legacy_path: "legacy/0031_Welcome to Zooza.html"
 source_language: "en"

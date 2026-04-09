@@ -1,5 +1,6 @@
 ---
 title: "King of a class"
+description: "King of a class is a feature that lets one client manage make-up session attendance on behalf of all registrations in a class."
 slug: "king-of-a-group"
 type: "guides"
 product_area: "Bookings"

@@ -1,5 +1,6 @@
 ---
 title: "Attendee selection on the booking form"
+description: "The booking form handles attendee (participant) data differently depending on two factors:"
 slug: "booking-form-attendee-selection"
 type: "guides"
 product_area: "Widgets"

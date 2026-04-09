@@ -1,5 +1,6 @@
 ---
 title: "Monitoring auto-enrolment responses"
+description: "After you send auto-enrolment invitations, clients respond (or don't) from their Client Profile."
 slug: "auto-enrolment-responses"
 type: "guides"
 product_area: "Programmes"

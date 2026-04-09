@@ -1,5 +1,6 @@
 ---
 title: "ABRA Flexi Integration"
+description: "ABRA Flexi (formerly FlexiBee) is a Czech ERP and accounting system. When connected, Zooza creates invoices directly in your ABRA Flexi instance."
 slug: "abra-flexi-invoices"
 type: "setup"
 product_area: "Payments"

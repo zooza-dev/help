@@ -1,5 +1,6 @@
 ---
 title: "Recording an Administrative Refund for an Online Payment"
+description: "An administrative refund lets you record a return of funds in Zooza without triggering a gateway refund through Stripe. Use this when:"
 slug: "recording-an-administrative-refund"
 type: "guides"
 product_area: "Payments"

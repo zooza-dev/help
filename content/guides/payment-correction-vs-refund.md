@@ -1,5 +1,6 @@
 ---
 title: "Payment Correction vs Refund Guide"
+description: "Zooza provides two ways to adjust a payment on a booking: Edit payment (correction) and Refund."
 slug: "payment-correction-vs-refund"
 type: "guides"
 product_area: "Payments"

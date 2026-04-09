@@ -1,5 +1,6 @@
 ---
 title: "Communication"
+description: "The Communication section in the left menu gives direct access to all messaging features — no intermediate hub page. Each item opens its screen directly."
 slug: "communication-dashboard"
 type: "reference"
 product_area: "Communication"

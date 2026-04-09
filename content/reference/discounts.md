@@ -1,5 +1,6 @@
 ---
 title: "Discounts"
+description: "The Discounts screen manages all discount codes, applied discounts, free session credits, and payment template discounts."
 slug: "discounts"
 type: "reference"
 product_area: "Payments"

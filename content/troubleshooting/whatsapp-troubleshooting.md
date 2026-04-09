@@ -1,5 +1,6 @@
 ---
 title: "WhatsApp troubleshooting"
+description: "Common issues when setting up or using WhatsApp integration in Zooza."
 slug: "whatsapp-troubleshooting"
 type: "troubleshooting"
 product_area: "Communication"

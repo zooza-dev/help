@@ -1,5 +1,6 @@
 ---
 title: "Lead collection"
+description: "A lead collection class is a class without sessions. Use it to collect interest from clients before you have a schedule ready."
 slug: "lead-collection"
 type: "guides"
 product_area: "Programmes"

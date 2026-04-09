@@ -1,5 +1,6 @@
 ---
 title: "Programme Settings"
+description: "The Programme Settings page is a dashboard of configuration tiles. Each tile controls a different aspect of the programme."
 slug: "programme-settings-reference"
 type: "reference"
 product_area: "Programmes"

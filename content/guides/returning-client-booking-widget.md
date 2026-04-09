@@ -1,5 +1,6 @@
 ---
 title: "Booking widget experience for returning clients"
+description: "When a client logs in to the booking widget, the form experience changes significantly compared to first-time visitors."
 slug: "returning-client-booking-widget"
 type: "guides"
 product_area: "Widgets"

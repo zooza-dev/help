@@ -1,5 +1,6 @@
 ---
 title: "Booking form settings overview"
+description: "Booking form behaviour is configured at three separate levels in Zooza. When you want to change something about the form, the right place to look..."
 slug: "booking-form-settings"
 type: "guides"
 product_area: "Widgets"

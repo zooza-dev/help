@@ -1,5 +1,6 @@
 ---
 title: "Transfer and copy bookings"
+description: "Zooza lets you transfer or copy a booking from one class to another. Both actions use the same wizard — the only difference is what happens to the..."
 slug: "transfer-and-copy-bookings"
 type: "guides"
 product_area: "Bookings"

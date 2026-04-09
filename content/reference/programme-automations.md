@@ -1,5 +1,6 @@
 ---
 title: "Programme Automations"
+description: "Automations define the workflows that run automatically when clients interact with your programme — booking, paying, joining trials, or getting enrolled."
 slug: "programme-automations"
 type: "reference"
 product_area: "Programmes"

@@ -1,5 +1,6 @@
 ---
 title: "Automatic reminders for payment schedule"
+description: "If the client has selected payment with a payment schedule in the booking or you have set it up manually, they will always be informed of this..."
 slug: "automatic-payment-reminders"
 type: "guides"
 product_area: "Communication"

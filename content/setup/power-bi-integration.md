@@ -1,11 +1,12 @@
 ---
 title: "Power BI integration"
+description: "Zooza offers a professional, self-service reporting solution using PowerBI that lets you generate and customize your own reports, giving you the..."
 slug: "power-bi-integration"
 type: "setup"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["communication", "import", "location", "onboarding", "role", "settings", "transfer"]
 status: "published"
 source_legacy_path: "legacy/0109_Welcome to Zooza.html"
 source_language: "en"
@@ -127,3 +128,8 @@ If no further changes are needed, go to the Reporting tab and click New Report t
 
 
 ![Screenshot](../../assets/images/power-bi-integration-20.png)
+
+## Related
+
+- [Power BI data description](../guides/power-bi-data-description.md) — field definitions and data model reference
+- [Integrations hub](integrations-hub.md) — all available third-party integrations

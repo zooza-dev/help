@@ -20,6 +20,12 @@ doc_types:
   - id: reference
     label: Reference
     description: Screen-by-screen app reference — UI elements, fields, actions.
+  - id: business-model
+    label: Business Model
+    description: End-to-end scenario guides for a specific business type (e.g. franchise, camps, individual lessons).
+  - id: glossary
+    label: Glossary
+    description: Canonical term definitions, synonyms, and entity misattribution reference.
 
 product_areas:
   - id: dashboard

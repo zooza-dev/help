@@ -1,5 +1,6 @@
 ---
 title: "Inbound payments — setup and pairing"
+description: "Inbound payments is the system that watches your bank account for incoming transfers and automatically matches each payment to the correct booking or..."
 slug: "inbound-payments"
 type: "guides"
 product_area: "Payments"

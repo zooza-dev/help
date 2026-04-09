@@ -1,5 +1,6 @@
 ---
 title: "Make-up Sessions — Complete Guide"
+description: "Make-up session (also called make-up or make-up sessions) allow children who miss a class to attend a different session as a substitute."
 slug: "replacement-hours-complete"
 type: "guides"
 product_area: "Calendar"

@@ -1,11 +1,12 @@
 ---
 title: "Blocks (Term Segments) FAQ"
+description: "Blocks let you divide the sessions within a class into smaller logical units. Common use cases:"
 slug: "blocks-faq"
 type: "faq"
 product_area: "Programmes"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["attendance", "block", "booking", "class", "client", "communication", "import", "location", "onboarding", "payment", "programme", "role", "session", "trial"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"

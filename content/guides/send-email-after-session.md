@@ -1,5 +1,6 @@
 ---
 title: "Send an email after session"
+description: "To set up communication, follow these steps:"
 slug: "send-email-after-session"
 type: "guides"
 product_area: "Communication"

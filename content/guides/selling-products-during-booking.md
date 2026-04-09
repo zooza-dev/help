@@ -1,11 +1,12 @@
 ---
 title: "How to sell products during booking (T-shirt example)"
+description: "In Zooza, selling a physical product during the booking (booking) flow is a two-step setup:"
 slug: "selling-products-during-booking"
 type: "guides"
 product_area: "Orders"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["booking", "client", "holiday", "import", "onboarding", "order", "payment", "product", "role", "session", "widget"]
 status: "published"
 source_legacy_path: "legacy/0104_Welcome to Zooza.html"
 source_language: "en"

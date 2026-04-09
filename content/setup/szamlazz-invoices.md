@@ -1,5 +1,6 @@
 ---
 title: "Számlázz.hu Integration"
+description: "Számlázz.hu is a major Hungarian cloud invoicing platform. When connected, Zooza creates legally compliant Hungarian invoices directly in your Számlázz."
 slug: "szamlazz-invoices"
 type: "setup"
 product_area: "Payments"

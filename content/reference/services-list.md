@@ -1,5 +1,6 @@
 ---
 title: "Services"
+description: "The Services screen manages service add-ons that can be attached to products or offered during booking."
 slug: "services-list"
 type: "reference"
 product_area: "Settings"

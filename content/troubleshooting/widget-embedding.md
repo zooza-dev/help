@@ -1,5 +1,6 @@
 ---
 title: "Widget Embedding Troubleshooting"
+description: "This guide covers common problems when embedding Zooza widgets on your website, along with their causes and solutions."
 slug: "widget-embedding-troubleshooting"
 type: "troubleshooting"
 product_area: "Widgets"

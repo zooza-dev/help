@@ -1,5 +1,6 @@
 ---
 title: "Attendance and Catch-up Classes FAQ"
+description: "When you open a session from the Calendar, the attendance panel has two views you can switch between using the toggle in the top right:"
 slug: "attendance-and-catchups-faq"
 type: "faq"
 product_area: "Calendar"

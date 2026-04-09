@@ -1,5 +1,6 @@
 ---
 title: "Automatic notification of an upcoming session"
+description: "This is the email that always arrives to the client the day before a session. If a client is enrolled in a class that has sessions every Tuesday,..."
 slug: "automatic-session-notification"
 type: "guides"
 product_area: "Communication"

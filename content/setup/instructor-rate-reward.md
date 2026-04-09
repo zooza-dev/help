@@ -1,11 +1,12 @@
 ---
 title: "Setting the rate/reward for instuctors"
+description: "Within the application, you can determine the rates for work and then calculate the monthly remuneration for individual instructors."
 slug: "instructor-rate-reward"
 type: "setup"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["booking", "cancellation", "import", "instructor", "invoice", "location", "loyalty", "payment", "programme", "role", "session", "settings"]
 status: "published"
 source_legacy_path: "legacy/0060_Welcome to Zooza.html"
 source_language: "en"

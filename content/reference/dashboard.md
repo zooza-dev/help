@@ -1,5 +1,6 @@
 ---
 title: "Dashboard"
+description: "The Dashboard is the first screen you see after logging in to Zooza. It provides a quick overview of your upcoming sessions, latest bookings, unread..."
 slug: "dashboard-reference"
 type: "reference"
 product_area: "Dashboard"

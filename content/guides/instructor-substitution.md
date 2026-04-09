@@ -1,11 +1,12 @@
 ---
 title: "Instructor substitution"
+description: "Instructor substitution is a functionality in which an unavailable instructor is replaced by another one."
 slug: "instructor-substitution"
 type: "guides"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["attendance", "booking", "cancellation", "client", "communication", "import", "instructor", "location", "programme", "role", "session", "settings"]
 status: "published"
 source_legacy_path: "legacy/0065_Welcome to Zooza.html"
 source_language: "en"

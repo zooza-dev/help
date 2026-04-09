@@ -1,5 +1,6 @@
 ---
 title: "Importing bank payments via CSV"
+description: "CSV import lets you upload a bank statement export directly into Zooza to match payments against bookings in bulk."
 slug: "csv-payment-import"
 type: "guides"
 product_area: "Payments"

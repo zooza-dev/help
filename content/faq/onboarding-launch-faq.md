@@ -1,11 +1,12 @@
 ---
 title: "Onboarding and Launch FAQ"
+description: "There are three ways to bring clients into Zooza. The right one depends on your situation:"
 slug: "onboarding-launch-faq"
 type: "faq"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["booking", "client", "communication", "discount", "invoice", "onboarding", "payment", "programme", "role", "session", "settings", "subscription", "transfer", "trial", "widget"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
@@ -114,3 +115,10 @@ Products are managed under **Products / Services**. You can:
 - Create separate one-off bookings for sessions like birthday parties — set up a new programme/class for the session and share the booking link with the client.
 
 For birthday parties or one-off sessions, create a new programme (e.g., "Sessions / Specials"), add one class with the session date, and share the generated booking link.
+
+## Related
+
+- [Getting started with Zooza](../setup/getting-started-with-zooza.md) — initial platform setup guide
+- [Subscription FAQ](subscription-faq.md) — plans, billing, and account management
+- [Company logo and email](../setup/company-logo-email.md) — branding setup
+- [Business model guides](../business-models/index.md) — scenario guides by business type (camps, subscriptions, individual lessons, franchise)

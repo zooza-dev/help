@@ -1,11 +1,12 @@
 ---
 title: "Instructors working hours"
+description: "In the Instructors section, instructors can manage their working time. If they define their working hours and possible absences, this data will then..."
 slug: "instructors-working-hours"
 type: "setup"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["booking", "cancellation", "discount", "instructor", "role", "settings"]
 status: "published"
 source_legacy_path: "legacy/0066_Welcome to Zooza.html"
 source_language: "en"

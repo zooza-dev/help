@@ -1,5 +1,6 @@
 ---
 title: "Documents"
+description: "The Documents screen manages all digital assets — documents, videos, URLs, and dynamic documents — that can be attached to products, classes, or used..."
 slug: "documents-list"
 type: "reference"
 product_area: "Settings"

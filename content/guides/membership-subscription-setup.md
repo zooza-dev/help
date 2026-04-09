@@ -1,5 +1,6 @@
 ---
 title: "Membership Subscription Setup"
+description: "This guide explains how to set up an ongoing, never-ending membership programme — sometimes called a \"Netflix-style\" subscription."
 slug: "membership-subscription-setup"
 type: "guides"
 product_area: "Programmes"

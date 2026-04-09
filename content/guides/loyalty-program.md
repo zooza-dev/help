@@ -1,5 +1,6 @@
 ---
 title: "Loyalty Program"
+description: "The loyalty program lets you reward clients automatically — no manual discount codes, no spreadsheets."
 slug: "loyalty-program"
 type: "guides"
 product_area: "Payments"

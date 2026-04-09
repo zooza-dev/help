@@ -1,11 +1,12 @@
 ---
 title: "Programme settings tile"
+description: "Programme settings are pre-filled when you create the programme, but you can adjust them at any time. The settings are organised into several sections:"
 slug: "programme-settings-tile"
 type: "guides"
 product_area: "Programmes"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["booking", "class", "client", "onboarding", "programme", "session", "widget"]
 status: "published"
 source_legacy_path: "legacy/0055_Welcome to Zooza.html"
 source_language: "en"

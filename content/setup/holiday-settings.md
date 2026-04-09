@@ -1,11 +1,12 @@
 ---
 title: "Holiday settings"
+description: "You must have the correct region filled in for each location in order for the app to automatically pull in vacations correctly."
 slug: "holiday-settings"
 type: "setup"
 product_area: "Calendar"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["calendar", "communication", "holiday", "import", "location", "onboarding", "programme", "session"]
 status: "published"
 source_legacy_path: "legacy/0020_Welcome to Zooza.html"
 source_language: "en"

@@ -1,5 +1,6 @@
 ---
 title: "Referral Program"
+description: "The referral program gives your existing clients a reason to recommend you. Each client gets a personal referral link they can share."
 slug: "loyalty-referral"
 type: "guides"
 product_area: "Payments"

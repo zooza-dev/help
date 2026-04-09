@@ -1,11 +1,12 @@
 ---
 title: "Linked bookings"
+description: "If you are an organisation that offers a wider range of programmes for children and are used to having siblings enrolled, or your clients are..."
 slug: "linked-bookings"
 type: "guides"
 product_area: "Bookings"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["booking", "client", "discount", "payment", "programme", "session"]
 status: "published"
 source_legacy_path: "legacy/0030_Welcome to Zooza.html"
 source_language: "en"

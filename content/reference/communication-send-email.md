@@ -1,5 +1,6 @@
 ---
 title: "Send Email"
+description: "The Send Email screen lets you compose and send email messages to clients. Use it to send bulk announcements, class-specific messages, or individual..."
 slug: "communication-send-email"
 type: "reference"
 product_area: "Communication"

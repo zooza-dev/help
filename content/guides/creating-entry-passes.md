@@ -1,5 +1,6 @@
 ---
 title: "Creating entry passes"
+description: "Entry passes let clients prepay for a set number of sessions or a credit amount, which is then redeemed each time they book a session in a..."
 slug: "creating-entry-passes"
 type: "guides"
 product_area: "Orders"

@@ -1,5 +1,6 @@
 ---
 title: "Loyalty discounts — what clients and admins see"
+description: "This guide shows how loyalty discounts appear in the booking widget (client side) and in the registration detail (admin side)."
 slug: "loyalty-client-view"
 type: "guides"
 product_area: "Payments"

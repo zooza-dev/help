@@ -1,11 +1,12 @@
 ---
 title: "Collecting the reason for cancelling the session"
+description: "Due to the pandemic situation, we have developed the ability to collect reasons for opting out of classes from clients."
 slug: "collecting-reason-for-cancelling"
 type: "setup"
 product_area: "Classes"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["attendance", "booking", "cancellation", "class", "client", "location", "session"]
 status: "published"
 source_legacy_path: "legacy/0041_Welcome to Zooza.html"
 source_language: "en"

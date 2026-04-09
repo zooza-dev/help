@@ -1,5 +1,6 @@
 ---
 title: "Holiday and Term Management FAQ"
+description: "When creating sessions for a class, Zooza shows you which dates fall on holidays or school breaks based on the region assigned to that location."
 slug: "holiday-management-faq"
 type: "faq"
 product_area: "Programmes"

@@ -6,7 +6,7 @@ product_area: Widgets
 sub_area: ""
 audience:
   - admin
-tags: []
+tags: ["attendance", "block", "booking", "cancellation", "client", "instructor", "location", "make-up", "onboarding", "payment", "programme", "role", "session", "transfer", "widget"]
 status: published
 source_legacy_path: legacy/0078_Welcome to Zooza.html
 source_language: en

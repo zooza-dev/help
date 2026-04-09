@@ -1,5 +1,6 @@
 ---
 title: "Email-notification payment matching"
+description: "Email-notification pairing is a faster, lower-maintenance alternative to GoCardless for automatic payment matching."
 slug: "email-payment-notifications"
 type: "setup"
 product_area: "Payments"

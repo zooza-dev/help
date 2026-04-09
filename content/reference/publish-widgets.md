@@ -1,5 +1,6 @@
 ---
 title: "Publish (Widgets)"
+description: "The Publish screen manages widgets — embeddable components that let you display Zooza booking forms, calendars, profiles, and more on your website."
 slug: "publish-widgets"
 type: "reference"
 product_area: "Widgets"

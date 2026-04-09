@@ -1,5 +1,6 @@
 ---
 title: "Login and Account FAQ"
+description: "Account deletion must be handled by Zooza support. Contact support@zooza.online and request account deletion."
 slug: "login-and-account-faq"
 type: "faq"
 product_area: "Settings"
@@ -95,3 +96,10 @@ You can add it to your phone's home screen so it behaves like an app:
 3. Tap **Add to Home screen**.
 
 The icon will appear on your home screen and the app will open in full-screen mode.
+
+## Related
+
+- [Getting started with Zooza](../setup/getting-started-with-zooza.md) — initial setup and orientation
+- [How to clear your cache](../troubleshooting/how-to-clear-your-cache.md) — fix display issues by clearing browser cache
+- [App navigation map](../reference/app-navigation-map.md) — overview of the Zooza interface
+- [Getting help and support](../guides/getting-help-and-support.md) — how to contact Zooza support

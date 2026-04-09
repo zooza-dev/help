@@ -1,5 +1,6 @@
 ---
 title: "Sibling Discount"
+description: "The sibling discount automatically rewards families who register more than one child."
 slug: "loyalty-sibling-discount"
 type: "guides"
 product_area: "Payments"

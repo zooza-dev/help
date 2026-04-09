@@ -1,11 +1,12 @@
 ---
 title: "Data correction or change client's data"
+description: "There are two ways to change the details of a client or booking."
 slug: "data-correction-change-client"
 type: "guides"
 product_area: "Clients"
 sub_area: ""
 audience: ["admin"]
-tags: []
+tags: ["attendance", "booking", "client", "communication", "import", "role"]
 status: "published"
 source_legacy_path: "legacy/0026_Welcome to Zooza.html"
 source_language: "en"
