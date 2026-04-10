@@ -65,7 +65,18 @@ def process_file(md_path, dry_run=False):
     md_stem = md_path.stem
     rel_assets = os.path.relpath(ASSETS_DIR, md_path.parent)
     changes = []
-    counter = 1
+
+    # Start counter after the highest existing numbered image for this stem
+    import re as _re
+    existing = list(ASSETS_DIR.glob(f"{md_stem}-*.png")) + \
+               list(ASSETS_DIR.glob(f"{md_stem}-*.jpg")) + \
+               list(ASSETS_DIR.glob(f"{md_stem}-*.jpeg"))
+    existing_nums = []
+    for f in existing:
+        m = _re.search(r"-(\d+)\.[^.]+$", f.name)
+        if m:
+            existing_nums.append(int(m.group(1)))
+    counter = (max(existing_nums) + 1) if existing_nums else 1
 
     for match in matches:
         original_name = match.group(1)

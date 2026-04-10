@@ -1,0 +1,64 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Blocks (Term Segments) FAQ",
+  "url": "https://help.zooza.online/programmes/blocks-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are blocks and when should I use them?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Blocks let you divide the sessions within a class into smaller logical units. Common use cases:\n\n- Booking by interest -- the client picks a specific block (e.g. certain dates or a particular month) during booking instead of enrolling for the full programme.\n- Time-period billing -- split a long programme (e.g. a full school year) into semesters, quarters, or camps and issue payments separately per block.\n\nBlocks are created when you add sessions to a class. You choose whether to create a new block or assign sessions to an existing one. For step-by-step setup, see the Blocks creation guide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I set capacity limits per block independently from the class?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Block capacity inherits from the class capacity. If your class capacity is 12, each block can hold up to 12 bookings. However, clients who register for the entire programme occupy a spot in every block. This can lead to a block exceeding its intended capacity. For example:\n\n- A class has capacity 12 and two blocks.\n- 11 clients register for the entire programme and 1 client registers for Block 1 only.\n- A 12th client registers for the entire programme -- Block 1 now has 13 occupied spots.\n\nFull-programme bookings take priority. To avoid this, disable the \"enrol for the entire class period\" option in your programme's online registration settings so clients can only register for individual blocks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to attendance records when I change a student's block?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When you change a student's block assignment, attendance records for the previous block are marked as Hidden in the system. The attendance data is not deleted, but it is no longer visible in the booking detail and shows only the label \"Hidden\" instead of the original status (e.g. \"Attended\").\n\nThis makes it difficult to verify how many sessions a student attended before the change. If you need to preserve this information, export or note the attendance data before changing the block."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do dynamic tags show wrong dates or times for block-based programmes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dynamic tags such as COURSE_DATE_DAY and COURSE_TIME pull their values from the first session in the class as a whole, not from the client's specific block. If a client is enrolled in a later block (e.g. starting in April instead of January), the confirmation email may display the wrong date or time.\n\nWorkaround: Replace COURSE_DATE_DAY and COURSE_TIME with the ORDER_SUMMARY tag in your email templates. ORDER_SUMMARY includes the correct block-specific details for each booking. You can edit the booking confirmation template at Communication -> Templates -> Confirmation of booking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do trials interact with blocks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When trial sessions and blocks are used on the same class, a capacity conflict can occur. A trial booking reserves a spot in the entire class because the system cannot determine which block the trial client will ultimately join. Meanwhile, paying clients can register for specific blocks. The system prioritises paying bookings over trials, which may result in temporary over-capacity on individual sessions.\n\nTo reduce this issue, configure trial bookings to use extra capacity only (in the programme's trial session settings). This ensures trials do not consume spots reserved for paying clients."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I filter bookings by block?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Filtering bookings by block directly in the booking list is not yet fully supported. Block occupancy statistics are available in the class detail view, where you can see how many clients are enrolled in each block."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why did previously created blocks disappear from the admin view after editing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This can happen temporarily after blocks are created or modified, particularly when the application is in the process of updating. The blocks typically reappear after a short time or after a browser refresh. If blocks are still missing after refreshing:\n\n1. Open the class detail and check whether the sessions still have block labels assigned.\n2. If sessions show no block label, use bulk edit on the sessions to reassign them to the correct block.\n\nNote that even when blocks are not visible in the admin view, they may still appear correctly in the public booking form. If the issue persists beyond a few hours, contact support with the class number."
+      }
+    }
+  ]
+}

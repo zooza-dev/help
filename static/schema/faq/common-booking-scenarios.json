@@ -1,0 +1,64 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Common Booking Scenarios",
+  "url": "https://help.zooza.online/bookings/common-booking-scenarios",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "1. How do I delete a booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use this when the client won’t start or it’s a duplicate.\nSteps: Bookings → Detail → Change status to Deleted.\n(You will still have a data in CRM under filstre Deleted bookings)"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2. How do I pause a booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use this when a client takes a break for a defined period and will return — for example, they are away for a few weeks, or the class venue is temporarily unavailable.\n\nStep 1 — Stop upcoming reminders by cancelling the sessions they'll miss.\n\n1. Go to Calendar and select the sessions that won't take place for this client's period of absence.\n2. Click Bulk Edit → Cancel (or set individual sessions to Cancelled).\n3. Cancelled sessions will not trigger automated reminders.\n\nIf the whole class is pausing (not just one client), cancel the sessions for the whole class. If it's one client only, you can mark their attendance as absent instead — but the reminder will still be sent unless the session itself is cancelled.\n\nStep 2 — Defer the payment plan so nothing is charged during the break.\n\n1. Go to Bookings → Detail → Payments → Payment Plan.\n2. Click on the next scheduled payment.\n3. Update the Scheduled for date to after the client returns.\n4. Save.\n\nBilling will resume from that new date. Any subsequent scheduled payments will shift accordingly if the plan is set to follow-on billing.\n\nWhen the client returns:\n\n- Add back any sessions that were cancelled for their period (if they need to make up missed time), or simply let the next scheduled sessions continue as normal.\n- If sessions were deleted rather than cancelled, recreate them from the class detail.\n\nKeeping the booking active vs cancelling it: A paused booking keeps the client's place in the class and their history intact. Use Pause (defer payment + cancel sessions) when the client will return. Use Cancel (status → Cancelled) only when they are leaving permanently."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "3. How do I cancel a booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use this if the client is leaving.\nSteps: Bookings → Detail → Change status to Cancelled.\n(Keeps history, frees the spot, can be reactivated later.)"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "4. How does the waitlist work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When a class is full, new clients go to Waitlist automatically.\nWhen a place opens, they receive a notification to confirm.\nSteps: Bookings → Detail → Status = Waitlist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "5. What is a trial booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Clients attending their first class will have a status Trial.\nSteps: Bookings → Check that status = Trial."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "6. How do refunds work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Refunds (full or partial) can be done directly in Zooza.\nApplies to Stripe, not GoCardless, etc.\nSteps: Booking → Detail → Payments → Select transaction → Process refund.\n(Money is automatically sent to the client. Or note is created and manually process in your payment gateway. )"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "7. How do I handle missed classes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to Booking → Payments → Payment plan → Adjust the next payment.\nAutomation options (on request):\n\n- Offer make-up sessions."
+      }
+    }
+  ]
+}

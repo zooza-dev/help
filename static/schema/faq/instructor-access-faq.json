@@ -1,0 +1,80 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Instructor Access and Roles FAQ",
+  "url": "https://help.zooza.online/settings/instructor-access-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do instructors log in to Zooza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Instructors go to your Zooza app URL (e.g., asia.zooza.app), enter their email address, and receive a secure login link by email. There is no password — they click the link to access the system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "An instructor did not receive the invitation email — what should I do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1. Check that the email address is correct in Settings → Team.\n2. Try sending a new invitation.\n3. Ask the instructor to check their spam/junk folder.\n4. If using a corporate email, there may be delivery delays.\n\nNote: Instructors do not need a formal invitation to log in. If they are listed as an instructor in the system, they can go to the Zooza app URL and request a login link with their email."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can instructors see and do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Instructor access depends on their role:\n\n- Standard instructor — sees only their own classes in the Calendar view. Can mark attendance.\n- Lead instructor — can see other instructors' classes and the wider timetable. Useful for cover planning and coordination.\n\nInstructors do not have access to payment details, reports, or full booking management."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I change instructor permissions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to Settings → Team, select the instructor, and adjust their role. If you want all instructors to see each other's classes (e.g., for a small team that covers for each other), set them as lead instructors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I add Zooza to a phone as an app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza works as a web app. To make it behave like a native app on mobile:\n\n1. Open the Zooza URL in the phone's browser (Safari on iPhone, Chrome on Android).\n2. Tap the share/menu button.\n3. Select Add to Home Screen.\n\nThis creates an app icon that opens Zooza directly without the browser navigation bar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I deactivate an instructor's account without losing data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Do not delete the instructor account. Instead, change their role to Inactive instructor in Settings → Team. This prevents the instructor from logging in but preserves all historical data — their attendance records, session assignments, and instructor reports remain intact.\n\nIf you delete the account, all data linked to that instructor is permanently lost and cannot be recovered. Always switch to the Inactive role first. You can find the role selector on the instructor's profile in Settings → Team."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A substitute instructor cannot send emails to students on the session they cover — is this by design?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Email and communication access depends on the instructor's role. By default, external instructors have very limited permissions — they can mark attendance on sessions they are assigned to (including as a substitute) but cannot send emails or SMS to clients.\n\nIf you need a substitute instructor to communicate with students, they must hold at least the Instructor role, which grants the right to send emails and SMS to their own clients. Alternatively, the Main instructor role provides broader communication access across all clients.\n\nYou can adjust roles at any time in Settings → Team."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can't an instructor send an email from the session or group view?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is a permissions limitation by role, not a bug.\n\nWhen an instructor opens a session detail and tries to send a message to attendees, the option is restricted based on their role:\n\nIf a lektor (instructor) reports they cannot find the email option on a session or group, check their role in Settings → Team. The most common fix is upgrading them from External instructor to Instructor.\n\nImportant: Role changes apply immediately — the instructor does not need to log out and back in.\n\nSK: Ak lektor hlási, že nemôže odoslať email z termínu alebo skupiny, skontrolujte jeho rolu v Nastavenia → Tím. Externý lektor nemá právo posielať správy klientom. Zmeňte rolu na Lektor a prístup sa sprístupní okamžite."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do instructor rate types work (per-session, per-student, per-hour)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza supports flexible rate types for calculating instructor compensation. When creating a rate in Settings → Instructors, you define the rate name and its duration in minutes. The three common configurations are:\n\n- Per-session (one-time) — a flat amount paid for each session the instructor teaches, regardless of duration or number of students.\n- Per-hour — an amount based on the session duration. Set the rate duration to 60 minutes.\n- Per-student — \n\nEach rate is created once and then assigned a monetary value per instructor — so the same rate (e.g., \"Group Session\") can pay different amounts to different instructors. You assign the rate to a class in the class settings, and it automatically applies to all sessions in that class, including for a second instructor if one is assigned.\n\nTo view calculated compensation, go to Instructors → [select instructor] → Instructor report and choose a date range."
+      }
+    }
+  ]
+}

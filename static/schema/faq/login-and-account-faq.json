@@ -1,0 +1,72 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Login and Account FAQ",
+  "url": "https://help.zooza.online/settings/login-and-account-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I delete my Zooza account entirely?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Account deletion must be handled by Zooza support. Contact support@zooza.online and request account deletion. Once processed, all data associated with the account is removed. If you decide to return later, you can create a new account."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "After changing an instructor's email, they cannot log in — what is the process?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When you update an instructor's email address in Settings → Team, the instructor must log in again using the new email:\n\n1. Go to your Zooza app URL (e.g., yourbusiness.zooza.app).\n2. Enter the new email address.\n3. Click the login link that arrives by email.\n\nNo separate invitation is needed. The instructor simply requests a new login link with the corrected email. If the link does not arrive, check that the email address is spelled correctly in Settings → Team and ask the instructor to check their spam folder."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A new account was created but not verified — how does verification work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When a new business account is created in Zooza, it goes through a verification step before it becomes fully active. During verification, the Zooza team reviews the account details and approves it. If your account is stuck in an unverified state, contact support@zooza.online — they can check the status and approve it manually."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A client keeps creating new accounts on zooza.online instead of logging in through our website — what should I do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This happens when a client goes to zooza.online (the main Zooza website) and creates a standalone account instead of using the registration or profile widget embedded on your website.\n\nTo prevent this:\n\n- Direct clients to your website for registration and profile access, not to zooza.online.\n- Embed the Zooza profile widget on your site so clients can log in and manage bookings from there.\n- If a client already created a separate account on zooza.online, contact Zooza support to resolve duplicate accounts.\n\nThere is no way to block clients from visiting zooza.online directly, so clear communication about where to register is important."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do parents log in to their profile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza uses a passwordless, token-based login. Parents do not set or use a password. The process is:\n\n1. The parent opens the profile widget on your website (or goes to your Zooza app URL).\n2. They enter their email address.\n3. Zooza sends a one-time login code to that email.\n4. The parent enters the code to access their profile.\n\nIf a parent reports not receiving the code, ask them to check their spam folder. Login codes are sent almost instantly under normal conditions. There is no password to reset — every login uses a fresh email code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can multiple team members share one login?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Each team member should have their own account with an individual email address. Shared logins create problems with audit trails, permissions, and notifications. To add team members:\n\n1. Go to Settings → Team.\n2. Add each person with their own email address.\n3. Assign the appropriate role (owner, admin, instructor, etc.).\n\nEach team member then logs in with their own email using the same passwordless login link process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I change the app language for admins or instructors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On the Zooza app dashboard, click the Zooza logo (top-left). At the bottom of the menu, a language switcher is displayed. Click the language you want to use.\n\nAvailable languages: Slovensky, English, Česky, Deutsch, Romanian.\n\nThe language change takes effect immediately and applies to the current user's session. Each admin or instructor can set their own preferred language independently."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a Zooza mobile app to download?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza is a web application — there is no native app to download from the App Store or Google Play. You access it through a browser at zooza.app.\n\nYou can add it to your phone's home screen so it behaves like an app:\n\niPhone (Safari):\n1. Open zooza.app in Safari.\n2. Tap the share icon (square with an arrow pointing up).\n3. Tap Add to Home Screen.\n\nAndroid (Chrome):\n1. Open zooza.app in Chrome.\n2. Tap the three-dot menu (top right).\n3. Tap Add to Home screen.\n\nThe icon will appear on your home screen and the app will open in full-screen mode."
+      }
+    }
+  ]
+}

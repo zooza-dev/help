@@ -1,0 +1,128 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Transfer and Copy FAQ",
+  "url": "https://help.zooza.online/bookings/transfer-and-copy-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between copying a booking, copying a class, and copying a programme?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "- Copy booking — duplicates a single client's booking from one class to another. Used to continue one client in a new term or add them to an additional class.\n- Copy class — creates a new class within a programme, optionally copying its sessions and all bookings in bulk. Used when setting up a new season for an entire class.\n- Copy programme — creates a new programme with the same settings. Used when starting a new period with a fresh programme structure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I copy an entire class to a new season?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1. Open the programme and find the class you want to copy.\n2. Click Copy on the class.\n3. Edit the name, location, instructor, and capacity as needed.\n4. Choose how to handle sessions — move to a new start date, apply a time shift, or keep the same dates.\n5. Preview the new sessions and confirm.\n6. Optionally tick Copy bookings to carry over all current registrations.\n\nSee the full guide: Copy a programme or class."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "If I copy a class with bookings, do payments and credits carry over?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Copied bookings start completely clean — new booking number, zero payment balance, no make-up credits. The original booking remains untouched and the client can still access it in their profile.\n\nIf you need to move a client and keep their payment history, use Transfer on the individual booking instead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I copy just the class settings without the bookings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. When copying a class, simply leave the Copy bookings option unchecked. The new class will have the same settings and sessions, but no registrations — clients can then enrol themselves through the widget, or you can add them manually."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I copy a programme?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Go to Programmes, find the programme, and click Copy (or open the programme and click Copy programme). You can copy extra field settings and payment template settings along with it.\n\nPayment templates are only available to copy if the original is a full-duration programme with templates already configured."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I transfer (move) a booking to another class?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open the booking detail and click Transfer (in the Class card). The wizard lets you select the target class using filters (programme, location, instructor, day). Select Transfer to another class, review payments, and submit.\n\nThe original booking moves to the new class. The client gets the remaining sessions in the target class."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between Transfer and Copy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "- Transfer moves the booking — the original booking no longer exists in the old class.\n- Copy creates a new booking in the target class — the original booking stays in the old class unchanged.\n\nUse Transfer when the client is switching classes. Use Copy when the client wants to continue in a new term, or when they want an additional class alongside the current one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to the payment schedule during a transfer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By default, the transfer dialog may apply the payment schedule from the target class. To keep the original payment schedule unchanged, tick Do not change payments before confirming.\n\nIf you forget to tick this option, the system silently replaces the payment schedule with the one configured on the target class. This is the most common mistake during transfers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What settings carry over when copying a booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When you copy a booking, the participant and client information carries over. However, payment schedules do not copy. The new booking receives the payment schedule configured on the target class.\n\nAlways review the payment details on the new booking after copying. If a different price or schedule is needed, adjust it manually."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I copy bookings from one term to the next?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open the booking you want to carry forward and click Copy booking. Select the target class for the new term, review the payment setup, and submit.\n\nCopied bookings do not automatically send a confirmation email to the client. Check Send confirmation email during the process if you want the client to receive payment instructions.\n\nMake-up credits and attendance history stay with the original booking. The copied booking starts clean."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix a wrong payment schedule applied during a transfer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you forgot to tick Do not change payments and the system applied the target class's payment schedule:\n\n1. Open the transferred booking.\n2. Go to the Payments section.\n3. Manually adjust the owed amount to match the correct value.\n4. If a payment template was applied, remove or replace it with the correct one.\n\nCheck the booking logs to verify what happened. If the transfer log shows a debt amount that does not match expectations, the payment schedule was overwritten during the transfer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "The search only shows class names, not programme names. How do I find the right class?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The search field searches by class name, not by programme name. If you type the programme name (e.g. \"Baby 1\"), the search may return no results.\n\nTo find the correct class:\n\n1. Leave the search field empty or type part of the class name (e.g. the day of the week, time, or location).\n2. Use the Programme, Location, or Instructor filter to narrow results.\n3. If unsure of the class name, open the target programme in a separate tab and check the class names listed there."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I transfer a trial booking to a different session?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You do not need a full transfer for this. There are two approaches:\n\n1. If make-up sessions are enabled on the programme — the client can unsubscribe from the trial session in their profile and rebook onto a different available session themselves.\n2. Manual method (admin) — open the trial booking, go to attendance, and use the Add to session button. Select the desired session and enrol the client. This keeps the trial booking in its original class but adds attendance to a session in another class or time.\n\nA full transfer is also possible but usually unnecessary for a single trial session."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I move a client to a \"collection bin\" or holding class?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Create a dedicated class with no sessions or a minimal schedule to serve as a holding area. Then transfer the booking into that class:\n\n1. Open the client's current booking and click Transfer.\n2. Search for and select the holding class.\n3. Tick Do not change payments to avoid applying a payment schedule from the holding class.\n4. Confirm the transfer.\n\nWhen the client is ready to rejoin, transfer them out of the holding class into the appropriate active class."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can external instructors transfer or copy bookings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. External instructors have attendance-only access. Only admins, owners, and standard instructors can transfer or copy bookings."
+      }
+    }
+  ]
+}

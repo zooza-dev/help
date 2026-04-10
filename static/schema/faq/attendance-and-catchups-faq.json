@@ -1,0 +1,144 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Attendance and Catch-up Classes FAQ",
+  "url": "https://help.zooza.online/calendar/attendance-and-catchups-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are Quick view and Full view for attendance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When you open a session from the Calendar, the attendance panel has two views you can switch between using the toggle in the top right:\n\n- Quick view — a simplified attendance list. Shows each client with four status buttons: Will attend, Attended, Cancelled, Did not attend. Includes a Mark all as attended button to set all clients to \"Attended\" in one click. Displays an attended count (e.g. \"Attended 3/5\") so you can see progress at a glance.\n- Full view — the detailed attendance panel. Shows everything from Quick view plus: make-up session selection, cancellation reasons, attendance notes, replacement credits, and waiting list management.\n\nBoth views are available to admins and instructors alike. Quick view is not a \"limited\" mode — it is fully functional. It simply hides the details you don't need when all you want is to quickly mark who showed up. You can switch between views at any time without losing data.\n\nWhen to use Quick view: Daily attendance marking when you just need to check off who came. Ideal for instructors marking attendance on their phone before or after a session.\n\nWhen to use Full view: When you need to handle cancellations with make-up credits, add attendance notes, manage make-up session, or review detailed attendance history."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does \"Mark all as attended\" work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In Quick view, click the Mark all as attended button at the top of the attendance list. This sets all enrolled clients to \"Attended\" in one action. The attended count next to the button updates to show the result (e.g. \"Attended 5/5\").\n\nYou can still change individual statuses after using this button — for example, switching one client to \"Did not attend\" or \"Cancelled\" if they didn't show up.\n\nMake-up session clients are listed separately below the enrolled class and are not affected by the bulk action."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do instructors mark attendance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Instructors log in to Zooza, open their Calendar, and select the current session. They see the attendance panel and can switch between Quick view and Full view. They mark each client as Attended, Cancelled, or Did not attend. Attendance can be marked from both mobile and desktop.\n\nTip: Instructors should add Zooza to their phone's home screen so it works like a native app. Quick view with Mark all as attended is especially useful for fast attendance on mobile.\n\nFor a full walkthrough, see the Attendance management for instructors guide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do instructors see their upcoming sessions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On the Welcome dashboard, the My Next Sessions section lists all upcoming sessions assigned to that instructor, sorted by date. Each row has a Detail button that opens the session directly — no need to navigate through the calendar.\n\nAt the bottom of the section, Dates with incomplete attendance record shows past sessions where attendance hasn't been recorded yet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can an instructor see and manage make-up session clients in the session?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, in Full view. make-up session clients appear in a separate make-up session section below the enrolled list. For each make-up client, the instructor can:\n\n- Mark their attendance (same buttons as enrolled clients).\n- Click Change make-up session to move them to a different session.\n- Click Cancel make-up session to remove the make-up booking.\n- Navigate to the original session they missed via Go to Make-up Session Original Session."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can an instructor add notes to a session?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. At the bottom of the session detail, in the Notes section, there are two fields:\n\n- Session summary (visible to the client) — shared with parents after the session. Use it for what was covered, homework, or announcements.\n- Session note (Internal) — visible to admins and instructors only.\n\nAvailability may depend on the organisation's settings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can instructors see client consents in the session view?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The Consents section at the bottom of the session detail shows the consents each enrolled client has given. This is useful for activities where consent matters — for example, checking who has given photo permission before taking pictures during a session."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can instructors send messages to all clients in a session?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, from Full view. At the bottom of the session, two buttons appear:\n\n- Send email to N recipients — sends an email to all enrolled clients in that session.\n- Send text message to N recipients — sends an SMS to the same class.\n\nThis is useful for last-minute changes like a venue update or session reminder. Communication permissions depend on the instructor's role — if the buttons are not visible, the admin needs to adjust the role settings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can an admin mark attendance on behalf of a instructor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. As an admin, go to Calendar, select the session, and mark attendance for any class — including past sessions. Admins can see all classes, while instructors only see their own. Both Quick view and Full view are available to admins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do catch-up / make-up sessions work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When a child misses a session (marked as absent or session was cancelled), the system can offer a make-up session. The parent selects from available make-up sessions in their Client Profile.\n\nCatch-up availability is based on:\n\n- Real class capacity — there must be space in the alternative session.\n- Programme match — the catch-up must be within a compatible programme/age group.\n\nIf no suitable session is available, the parent will not see a catch-up option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can't a parent see catch-up options?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check these common causes:\n\n1. The absence was not properly recorded — the child's attendance needs to be set to \"Cancelled\" for that session.\n2. There are no sessions with available capacity in a compatible class.\n3. The catch-up window may have expired based on your automation settings.\n\nAs an admin, you can verify and trigger the catch-up option by toggling the attendance status (e.g., \"Will attend\" → \"Cancelled\" again)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do the attendance numbers mean on the calendar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On the calendar view, you may see numbers like \"12/15\" and \"4\":\n\n- 12/15 — the number of enrolled children vs. total class capacity.\n- 4 — how many are actually booked into that specific session (including trials).\n\nHover over the numbers for a detailed breakdown."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is attendance tracking important for automations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Marking attendance triggers automations — especially for trials. When a instructor marks a trial attendee as \"attended\", the system automatically sends the enrolment offer to the parent."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between \"Did not attend\" and \"Cancelled\" for make-up credits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only the Cancelled attendance state generates a make-up credit. The Did not attend (no-show) state does NOT grant a make-up credit. This is by design — clients who simply do not show up without cancelling in advance are not eligible for make-up sessions.\n\nIf a client contacts you saying they did not receive a make-up credit, check the attendance record for that session. If it shows \"Did not attend\" instead of \"Cancelled\", that is why no credit was generated. You can manually change the state to \"Cancelled\" if the absence was legitimately excused."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the \"extra capacity for make-up sessions\" setting do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This setting allows more students into a session than the standard class capacity, specifically for make-up bookings. For example, if a class has a capacity of 10 and the extra capacity is set to +1, up to 11 students can attend that session — 10 regular plus 1 make-up.\n\nYou can configure this setting at two levels:\n\n1. Global (Programme level) — Go to the Programme Settings and set the extra capacity value. This applies to all classes within the programme.\n2. Per class — On the class detail, override the global value. You can choose to replace the global value entirely or add to the class's own capacity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the system automatically set \"Did not attend\" status?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If a client does not cancel before the session and does not check in (i.e., the instructor does not mark them as attended), the system automatically marks them as Did not attend after the session ends. The exact timing depends on the session end time.\n\nThis automatic status does NOT generate a make-up credit. Only the Cancelled state — where the client actively cancels before the session — creates a make-up credit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sessions with no attendance requirement show as \"unclosed attendance\" on the Dashboard — how do I fix this?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This happens when sessions have attendance tracking enabled but nobody has marked attendance for them. The Dashboard flags these as \"unclosed\" because the system expects attendance to be recorded.\n\nTo resolve this, you have two options:\n\n1. Mark attendance for those sessions — open each session from the Calendar and record who attended.\n2. Disable attendance tracking on the class if attendance is not needed for those particular sessions. This prevents the Dashboard from flagging them."
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Stripe Integration FAQ",
+  "url": "https://help.zooza.online/payments/stripe-payments-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What type of Stripe account does Zooza use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza connects via Stripe Connect. All new connections use a Stripe Standard account — you get your own full Stripe account and manage it directly at dashboard.stripe.com.\n\nIf you connected Stripe before March 2026, you may have a Stripe Express account. Express accounts are fully supported and continue to work without any changes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I access my Stripe dashboard?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard account: Go to dashboard.stripe.com and log in with your Stripe credentials. You have full access to all Stripe features.\n\nExpress account: Go to Settings → Integrations → Stripe Connect and click Go to Stripe Dashboard. This generates a secure one-time login link that opens your Express dashboard directly — no need to log in separately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I see my Stripe invoices and payout reports?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard account: Log into dashboard.stripe.com and navigate to your documents section.\n\nExpress account: Go to Settings → Integrations → Stripe Connect. Your Stripe invoices (VAT invoices) and payout reconciliation reports are available directly inside Zooza — no need to open the Stripe dashboard separately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Apple Pay / Google Pay supported?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Apple Pay and Google Pay are supported through Stripe. You need to enable them in your Stripe payment method settings. Once enabled, clients will see these options on mobile devices during checkout."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I test payments before going live?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can test the full payment flow by creating a booking yourself as a client. Use the public booking link, complete the booking, and make a test payment. Remember to:\n\n1. Delete the test bookings afterwards.\n2. Restore any prices you changed during testing.\n3. Verify that all classes have the correct payment methods enabled."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I see payment reports for my accountant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Payment reports are available in Zooza under Reports. For accounting purposes, the recommended approach is to use Zooza's reports and invoicing integration (Xero, etc.) rather than relying on Stripe's dashboard directly."
+      }
+    }
+  ]
+}

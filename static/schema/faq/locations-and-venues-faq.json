@@ -1,0 +1,64 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Locations and Venues FAQ",
+  "url": "https://help.zooza.online/settings/locations-and-venues-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I remove a location from a class (programme/class)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Location is a required field on a class — you cannot leave it blank. You can only replace it with a different location.\n\nIf you want to remove or unset the location (e.g. the venue is not confirmed yet, or classes moved online), create a placeholder location and assign it:\n\n1. Go to Settings → Locations and create a new location with a placeholder name, for example:\n   - TBD / To be announced\n   - Online\n   - Various venues\n2. Go to the class, open its settings, and change the location to the placeholder.\n\nNote: When someone asks how to \"remove a location from a programme\", they typically mean a class or class (not a programme). Location is set on the class, not on the programme. Go to the class settings to change it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I add a new location?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to Settings → Locations and create a new entry. Provide the location name, address, and optionally a map pin. The location will become available when creating or editing classes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I edited a location name but it still shows the old name on the booking form — why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza uses browser caching to speed up page loading. After editing a location, do a hard refresh (Cmd+R on Mac, Ctrl+R on Windows). The update may also take a moment to appear on the public booking form, especially on pages with heavy content."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I delete a location / venue?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Before deleting a location, make sure there are no active classes or sessions assigned to it. The correct process is:\n\n1. Delete or reassign all classes linked to that venue.\n2. Then delete the venue itself.\n\nIf you delete a venue while classes are still linked to it, those classes may show errors or unexpected behaviour."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I create a location without a physical address?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. For sessions like birthday parties at a client's home, you can create a location with a descriptive name (e.g., \"Party at client's home\") without a specific address. The map will not be shown to clients if no address is set."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does the venue show for some sessions in the calendar but not others?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When you change the venue on a class, Zooza asks how the change should be applied:\n\n- Change for a class only (sessions will not change) — the class settings update, but existing sessions keep the old venue.\n- Change for all sessions — updates the venue on every session in the class.\n- Change only for upcoming sessions — updates sessions that have not yet taken place.\n\nIf you chose Change for a class only, your sessions retain the old (or no) venue. This is the most common cause of venue showing inconsistently across sessions.\n\nTo fix it: Go to the class settings, update the venue, and this time choose Change for all sessions or Change only for upcoming sessions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Each location has an internal ID — where can I find it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Location IDs (Place IDs) are used internally for things like booking links and email templates. They are not prominently displayed in the interface. Contact support if you need to reference a specific Place ID for custom links or templates."
+      }
+    }
+  ]
+}

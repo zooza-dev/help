@@ -1,0 +1,128 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Registration and Booking FAQ",
+  "url": "https://help.zooza.online/bookings/registration-and-booking-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I generate a booking link to send to my clients?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every programme in Zooza has a public booking page. Your main booking URL is yourbrand.zooza.online. You can also share direct links to specific classes:\n\n- Full list — yourbrand.zooza.online/booking/ lets clients choose from all available classes.\n- Programme-specific — add ?course_id=X to guide clients to a specific programme.\n- Class-specific — add ?course_id=X&schedule_id=Y&place_id=Z to pre-fill a specific class.\n\nShare these links via email, WhatsApp, or your website."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are clients creating duplicate bookings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This usually happens when a parent starts the booking, doesn't complete payment, and then tries again. Zooza warns them that a booking already exists, but some parents confirm and create a second one.\n\nTo handle duplicates:\n\n1. Go to Bookings and identify the unpaid duplicate.\n2. Delete the unpaid booking (the one without a completed payment).\n3. Always check the child's name and date of birth to confirm it's truly a duplicate.\n\nThe system doesn't block repeat bookings because sometimes a parent legitimately needs to register a second child."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I delete test bookings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to Bookings, find the test booking, open its detail, and change the status to Deleted. This completely removes the booking. The data is still available under the \"Deleted bookings\" filter for reference."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between deleting and cancelling a booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "- Cancellation — used when a booking was active (the child was attending), but the family decides to stop. It ends the booking, frees the spot, but keeps the full history.\n- Deletion — used when you want to completely remove the booking (e.g., test entries, accidental duplicates)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can clients register multiple children at once?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. During booking, there is an Add another child button. When a parent adds a second child, the price doubles accordingly. If clients report seeing unexpected higher prices, they may have accidentally clicked this button — refreshing the page resets it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I move a client from one class to another?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open the booking detail, and in the settings you can change the assigned class. It's a few clicks — select the new class from the dropdown and save."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I handle pro-rata bookings for partial terms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza calculates pro-rata prices automatically when a client joins a class that has already started. Go to Programmes → Settings → Price and Payment → Advanced settings and configure the Late bookings mode and Aliquot price calculation method. The system can calculate the reduced price based on remaining sessions or remaining days in the billing period.\n\nFor a full walkthrough of all options, see Late bookings (pro-rata management)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I manually create a booking on behalf of a client?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can go through the booking form on behalf of a parent. This is a workaround — the recommended flow is for parents to book online themselves. Note that trial bookings cannot be created manually by an admin; only standard enrolments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the client list show — why are there more entries than expected?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Clients list shows all entities: both parents and children. So if you have 90 bookings, the client count may appear higher because each parent and each child is listed separately. Use the Bookings or Reports section for accurate booking counts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I add a participant (child) who is different from the buyer (parent) during manual registration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza distinguishes between the buyer (the person who pays, typically the parent) and the participant (the person who attends, typically the child). When creating a manual registration:\n\n1. Open the booking form and enter the buyer's details (the parent's name, email, and phone number).\n2. In the participant section, select or create the child who will attend. Make sure you do not leave the participant set to the same person as the buyer unless the buyer is also the attendee.\n3. Confirm the booking. The buyer receives payment-related communication, while the participant is linked to the class schedule and attendance.\n\nIf you need to change the participant on an existing registration, open the booking detail and update the participant field. The Bookings list shows labels for both buyer and participant so you can verify the assignment is correct."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I search for and restore deleted bookings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Deleted bookings are not permanently removed from the system. To find them:\n\n1. Go to Bookings.\n2. Open the advanced search filters.\n3. Change the Status filter to Deleted.\n\nThis displays all previously deleted bookings. You can open any deleted booking to review its details. To restore a deleted booking, open its detail and change the status back to the appropriate active status (e.g., Registered)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I add a second email address to a booking for notifications?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can add an additional email address on any booking so that a second person (e.g., the other parent) receives session reminders and notifications.\n\n1. Open the booking detail.\n2. Click Additional settings on the left side panel.\n3. Scroll down to the email fields. There are two separate fields:\n   - One for notifications (session reminders and communication).\n   - One for profile access (allows the second email holder to view the client profile).\n4. Enter the second email address in the appropriate field and save.\n\nThis is useful when divorced or separated parents both need visibility into the child's schedule, or when a different family member handles day-to-day logistics.\n\nWarning: If you collect a secondary email address via an extra field on the booking form (e.g., Additional field 1), that value is not automatically transferred to the system's secondary email field. Extra fields are text-only data collection and are not linked to system notification fields. You must manually copy the email from the extra field into the booking's Additional settings → secondary email field for the second parent to actually receive notifications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the \"Date of last registration update\" field mean in exports?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Date of last registration update column reflects the timestamp of the most recent change to that registration record — not necessarily any specific event like a cancellation.\n\nIt updates whenever any field on the registration changes, including:\n\n- payment status changes (paid, partially paid, refunded)\n- cancellation or deletion of the registration\n- restoring a previously cancelled registration\n- changes to notes, assigned class, instructor, or other fields\n\nPractical implications:\n\n- If a registration has status deleted or cancelled, the date shown is not guaranteed to be the cancellation date — it is the date of the last change, which may have happened after the cancellation (e.g. a payment adjustment).\n- To find the exact cancellation date for a cancelled registration, use the dedicated Cancellation date field in the export if available, rather than relying on the last-update timestamp.\n- If you are filtering exports for cancelled registrations and need accurate timing, cross-reference the registration status column with the cancellation date column rather than the last-update column.\n\n---"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I hide a class from the public booking page and share a private link instead?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use this when you have classes that should not be publicly listed — for example, school partnership sessions, invite-only groups, or franchise-internal classes.\n\nStep 1 — Disable public visibility for the class:\n\n1. Go to Programmes → open the programme → select the Class.\n2. Open Settings → Online Registration.\n3. Uncheck Display in catalogue (or disable Allow online booking to also block booking from direct links).\n4. Save.\n\nThe class will no longer appear in your public booking widget or booking page catalogue.\n\nStep 2 — Share a private direct link:\n\n1. Go to Programmes → open the programme → select the Class.\n2. In the class listing, click Copy link (or use the Customize option to pre-fill specific details).\n3. Share the link directly with the relevant group (e.g. via email or WhatsApp to the school contact).\n\nParents who receive the direct link can still register — the class is hidden from the public catalogue but bookable via the private URL.\n\nNote: If you want to prevent any online booking (not just public listing), disable Allow online booking rather than just Display in catalogue. Admins can still create bookings manually from the admin panel regardless of this setting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my programme not showing on the booking page?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both Allow online booking and Display in catalogue must be enabled for a programme to appear on your public booking page.\n\n1. Go to Programmes → select the programme → Edit Settings.\n2. Open the Online Booking tile.\n3. Verify that Allow online booking is toggled on.\n4. Verify that Display in catalogue is checked.\n5. Save the settings.\n\nIf only one of these is enabled, the programme will not be visible to clients. Allow online booking controls whether the programme accepts registrations, while Display in catalogue controls whether it appears in the website menu and booking form list."
+      }
+    }
+  ]
+}

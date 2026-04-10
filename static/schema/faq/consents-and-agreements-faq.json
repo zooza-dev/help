@@ -1,0 +1,112 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Consents and Agreements FAQ",
+  "url": "https://help.zooza.online/settings/consents-and-agreements-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I check whether all parents have given photo or video consent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There are three places where you can verify consent status:\n\n1. Filter the bookings list by consent (best for checking all at once)\n\nGo to Settings → Consents & Agreements, find your photo/video consent, and click the Has consent or No consent filter button. This opens the bookings list filtered to show only clients who have (or have not) given that consent — with their name, consent type, date given, and revoke date.\n\nThis is the fastest way to get a full list of who has and has not accepted.\n\n2. Session detail (useful during a class)\n\nOpen a session detail. At the bottom of the page, you can see the consent status for each participant attending that session.\n\n3. Individual client detail\n\nOpen the client's detail page (not the booking — the client profile itself) and scroll to the Consents given by client section. This shows the full consent history for that client: which consents they gave, when, and whether any were revoked."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I make clients accept terms and conditions during registration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to Settings → Consents & Agreements and click Add. Fill in the consent name and text, set Consent type to Check box (so clients must tick it) or No separate confirmation needed (so agreeing is implicit in clicking the Register button). Set Require from to All bookings or limit it to specific programmes.\n\nFor the full setup, see Consents and agreements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between the consent types?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use Check box or No separate confirmation needed for mandatory consents like T&C or GDPR. Use Yes or No for optional consents like marketing opt-in where you need to track both acceptance and refusal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I add a health declaration or \"I confirm my child is healthy\" checkbox to the registration form?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use Consents & Agreements — not Additional fields. Additional fields only support text input or dropdown selection. A mandatory checkbox that requires no text response must be set up as a consent.\n\nSteps:\n\n1. Go to Settings → Consents & Agreements → Add.\n2. Enter the declaration text in the Consent text field (e.g. \"I confirm that my child shows no signs of illness and does not have any infectious disease at the time of enrolment.\").\n3. Set Consent type to Check box — the client must tick this to proceed.\n4. Set Require from to All bookings or limit it to the specific programme (e.g. a summer camp).\n5. Save.\n\nThe checkbox appears on the registration form above the Register button. Clients cannot complete registration without ticking it.\n\nTip: You can customise the link label shown to clients. In the Name of the consent in the booking form field, you can replace the default \"More\" link with your own text — for example: <a href=\"\">Health declaration</a>. This text appears as the clickable link that opens the full consent text."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I link to my own website for the full T&C text instead of typing it in Zooza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In the Name of the consent in the booking form field, replace the  tag with a direct link to your page:\n\n``\n<a href=\"https://yourwebsite.com/terms\">Terms and Conditions</a>\n``\n\nIn this case, leave the Consent text field empty. Clients click the link and are taken to your website to read the full text."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I show different consents for different programmes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. When creating or editing a consent, set Require from to For select programmes and pick which programmes it applies to. Consents set to All bookings always appear regardless of programme.\n\nThis is useful for:\n- Photo or video consent — only for in-person classes, not webinars\n- Special T&C for summer camps or one-off events\n- Additional waivers for specific activities"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I see whether a client has accepted a consent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open the client detail and scroll to the Consents given by client section. The table shows each consent, the version the client agreed to, whether it was mandatory, whether they agreed, the date, and whether it was revoked."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I filter bookings by consent status?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In Settings → Consents & Agreements, each consent card has Filter bookings buttons. Click Has consent or No consent (for checkbox types) or Accepted / Declined / No consent (for Yes/No types) to jump directly to a filtered booking list."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A client says they were not asked to accept the consent — why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check the following:\n\n1. Require from setting — if the consent is set to For select programmes, it will not appear for bookings in other programmes.\n2. Consent type — if set to No separate confirmation needed, no checkbox is shown. The consent is still recorded, but the client may not notice it.\n3. When the client registered — if the consent was added after the client registered, it will not appear retroactively on their existing booking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a client revoke consent after registering?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Consent revocation is not currently done through the booking form. If a client requests revocation (e.g., for GDPR purposes), you can record it manually in the client detail. The revoke date is then shown in the consent record. Contact Zooza support if you need guidance on the revocation workflow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when I update the consent text?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza creates a new consent version. The updated text applies to new bookings from that point on. Clients who accepted the previous version retain their old consent record — they are not automatically prompted to re-accept. If re-acceptance is legally required, you must contact clients separately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I add multiple consents?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Click Add in Settings → Consents & Agreements to add as many consents as needed. Each one is configured and displayed independently. If you need the same consent to appear on both the booking form and the order form, create two separate entries — one for each form type."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I change the \"I agree / I don't agree\" label text on consent choices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not through the Zooza admin app. The button/radio label text is rendered by the booking widget and is not configurable via the Settings UI.\n\nIt can be overridden via a custom JavaScript translation script on your website — this is the same mechanism used to customise any other widget text. See the widget translations reference at docs.zooza.online for the available translation keys."
+      }
+    }
+  ]
+}

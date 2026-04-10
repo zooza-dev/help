@@ -1,0 +1,72 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Discounts and Sibling Pricing FAQ",
+  "url": "https://help.zooza.online/payments/discounts-and-sibling-pricing-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where do I find discount codes and discounts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to Sales & Payments → Discounts in the left navigation menu.\n\nThe Discounts page has four sections:\n\n- Discount codes — create and manage codes that clients enter during checkout.\n- Discounts — a list of all discounts that have been used, with client names and amounts.\n- Free sessions — credits for free sessions granted to specific clients.\n- Payment templates with discount — payment templates that include a built-in percentage discount."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I set up a discount code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to Sales & Payments → Discounts → Discount codes and click Create. You can configure: You can configure:\n\n- Code name — what the client enters (e.g., \"SIBLING15\").\n- Discount type — percentage or absolute amount.\n- Usage limits — single-use or unlimited.\n- Programme/location restrictions — limit to specific programmes or locations.\n\nEnable the discount code field on your booking form so clients can enter it during checkout."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do sibling discounts work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no built-in automatic sibling detection yet. Currently, sibling discounts are handled manually using one of these approaches:\n\n- Discount code approach: Create a single-use coupon and share it with parents who have multiple children. The parent applies it to the second child's booking.\n- Percentage split: If the discount should apply to one child out of two registered together, use half the percentage (e.g., 7.5% instead of 15%) since the code applies to the entire order total.\n- Manual adjustment: Register both children, then manually adjust the payment amount on one booking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does a discount code apply per child or per order?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Discount codes apply to the entire order total, not per child. If a parent registers two children in one checkout, the discount is calculated on the combined amount. This means it gets split across both children, which can look different depending on how the booking was done."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use percentage discounts with monthly memberships?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For monthly memberships (recurring payments), percentage discounts do not work because there is no fixed total order value. Use absolute discounts instead (e.g., 50 AED off instead of 10%)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I waive a registration fee for existing members?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Create a one-time discount code equal to the registration fee amount (e.g., code \"MEMBER\" for 100 AED off). Share it with existing clients when they re-register. They enter it during checkout, and the registration fee is deducted from their first payment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I set a fixed price that ignores pro-rata for late joiners?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to Programmes → select the programme → Settings → Price and Payment → Advanced settings. Set the Aliquot price calculation to Full programme price. With this setting, every late booking is charged the full price regardless of when the client joins.\n\nYou can also adjust the calculated amount manually on each booking before confirming it, if you need a case-by-case override instead of a blanket rule.\n\nThe system does not support date-based automatic switching (e.g., full price for the first two weeks, then pro-rata after that). If you need that behaviour, manually toggle the setting at the appropriate time.\n\nFor a full walkthrough of all pro-rata options, see Late bookings (pro-rata management)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "The payment template rounds my custom price down — how do I avoid this?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rounding is a setting on the payment template itself. It applies only when the template formula calculates the instalment amount (i.e., programme price divided by number of instalments). The sequence is:\n\n1. The system takes the programme/class price.\n2. It splits the amount according to the template rules (e.g., monthly instalments).\n3. The resulting value is rounded according to the template's rounding setting (e.g., round down to the nearest whole number).\n\nIf you enter a custom fixed amount directly on a booking's payment schedule, that amount still passes through the template's rounding rule. To avoid unwanted rounding:\n\n- Option A: Create a separate payment template with rounding set to none and use it whenever you need to assign a custom exact amount.\n- Option B: Adjust the rounding setting on your existing template to a precision that suits your needs (e.g., round to two decimal places instead of whole numbers). \n\nGo to Settings → Payment settings and open the relevant payment template to review or change its rounding configuration."
+      }
+    }
+  ]
+}

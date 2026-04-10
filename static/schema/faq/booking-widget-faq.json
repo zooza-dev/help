@@ -1,0 +1,136 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Booking Widget FAQ",
+  "url": "https://help.zooza.online/widgets/booking-widget-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "The booking widget shows \"Instructor to be assigned\" — how do I hide or change this?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When no instructor is assigned to a class, the booking widget displays a system placeholder text (e.g., \"Will be assigned later\"). You have two options:\n\nOption 1 — Create a placeholder instructor (recommended, no coding required)\n\nCreate an instructor profile with a neutral name such as TBD, To be announced, or your organisation's name. Assign this placeholder to the class. The widget will display that name instead of the system default text.\n\nTo create an instructor: go to Settings → Instructors and add a new entry.\n\nOption 2 — Hide the instructor row using CSS\n\nIf you want the instructor row to not appear in the widget at all, you can hide it with custom CSS. Contact Zooza support to get the correct CSS selector for the instructor row, then add a hide rule in your widget's custom CSS settings.\n\nSee Customizing widgets for how to add custom CSS to your booking widget."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I change what information is shown to clients in the booking widget?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The booking widget displays class details (name, dates, instructor, price) pulled directly from the class settings. To change what appears:\n\n- To change a value (e.g., the instructor name, location) — update it in the class settings. The widget reflects these changes automatically.\n- To hide a row entirely — use custom CSS to hide the element. See Customizing widgets.\n- To change colours, fonts, or layout — use custom CSS or the widget branding settings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I embed the booking form directly on my website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The booking widget is a JavaScript snippet you embed on any webpage. Go to Settings → Widgets, copy the embed code, and paste it into your website's HTML.\n\nFor step-by-step instructions, see Deploying Zooza on your website."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can clients register directly from my website without going to zooza.app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The booking widget loads entirely within your website. Clients register without leaving your page or seeing the zooza.app domain. The widget inherits your site's styling and you can customise it further with CSS."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "The widget is showing outdated information — how do I refresh it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The booking widget loads data in real time from Zooza. If a client sees outdated information (e.g., old class times, old instructor name), it is likely a browser caching issue on the client's side.\n\nAsk the client to do a hard refresh (Cmd+R on Mac, Ctrl+R on Windows) or open the page in a private/incognito window.\n\nIf the data is incorrect in Zooza itself, update it in the class or programme settings — changes appear in the widget immediately after saving."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do I find the booking form settings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Booking form configuration is split across several places depending on what you want to change:\n\n- Global appearance (button text, availability display, CSS, discount code field) — Team & Settings → Publish → click your widget → Configure next to Booking form.\n- What data is collected (extra fields like date of birth, address, custom questions) — Programmes → open the programme → Additional Fields.\n- Which classes appear, field labels, multiple children per form, confirmation email — Programmes → open the programme → Online Booking → Edit.\n- Price and payment method — Programmes → open the programme → Settings → Price and Payment.\n\nFor a full overview of each level, see Booking form settings overview."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I rename the fields on the booking form (Name, Email, Phone)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, at the programme level. Go to Programmes → open the programme → Online Booking → Edit → scroll to Customizing Booking Form. You can enter a custom label for each standard field (Note, Name, Surname, Email address, Phone). You can also show or hide individual fields using the eye icon next to each one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I hide the instructor/provider row on the booking form?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. There is no setting to hide the instructor (provider) row from the booking form. It is always shown as part of the session details.\n\nIf you do not want a specific instructor name to appear, the only option is to leave the instructor field blank on the class or session. In that case, the form will show \"No instructor assigned\" (or equivalent) instead of a name, but the row itself cannot be removed entirely.\n\nIf this is important for your setup, submit a feature request to the Zooza team."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I hide the booking fee (registration fee) row on the booking form?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The booking fee row only appears if a booking fee is set on the programme. If you do not want it to appear:\n\n- Go to Programmes → open the programme → Settings → Price and Payment and clear the booking fee or set it to 0. The row will no longer appear on the form.\n\nIf you need to keep the booking fee active but still hide the row from the visible form, this is not configurable in the app. It can be hidden via custom CSS or a script on your website — see Customizing widgets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I hide the discount code field from the booking form?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Go to Team & Settings → Publish → click your widget → Configure next to Booking form → check Hide field for discount codes. This removes the discount code input for all programmes in that widget."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I show only trial sessions (or only blocks) on the booking form?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, per programme. Go to Programmes → open the programme → Online Booking → Edit → find Booking Options Shown on Website and choose one of:\n\n- Default — client can choose between full programme, trial, or block (depending on what is available).\n- Offer full programme booking only — hides trial and block options.\n- Trials only — shows only trial sessions.\n- Blocks only — shows only blocks.\n- Trials or blocks — shows trials and blocks but not full programme booking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I set the display order of programmes on the booking form?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to Programmes → open the programme → Online Booking → Edit → set the Priority value (0–1000). Higher numbers appear first. By default all programmes have priority 0 and are sorted alphabetically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I hide the number of registered clients from the booking form?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to Team & Settings → Publish → click your widget → Configure next to Booking form → find Displaying availability and set it to Do not show.\n\nThe three options are:\n\nThis setting applies to all programmes shown in that widget."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I change the currency on the booking form?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There are two separate currency concepts in Zooza:\n\nAccount currency — set at the account level based on your country. If your currency is not available (e.g. ZAR — South African Rand), contact the Zooza team at support@zooza.online and request it be added. Zooza supports any country and currency, but not all may be pre-configured.\n\nMulti-currency display — a separate per-programme feature that lets the booking form display prices in multiple currencies simultaneously (e.g. EUR, GBP, USD). Clients see all configured currencies and can choose their preferred one. This is configured in Programmes → programme → Settings → Price and Payment → Additional currencies.\n\nIf you are asking about changing your primary account currency, that requires a support request. If you want to offer multiple currencies on the form alongside your primary one, use the Additional currencies setting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Returning clients and person selection",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "### My client says the booking form looks different now — why?\n\nLogged-in returning clients see an updated booking experience. When they open the form, a person selection step now appears before the main form. They can select a child or attendee from their previous bookings, or add a new person.\n\nOnce a person is selected, the form pre-fills the attendee's details automatically. The buyer's (account holder's) email is pre-filled and locked — it cannot be changed while logged in.\n\nSee Booking widget experience for returning clients for a full explanation.\n\n### Can returning clients use the booking form without logging in?\n\nYes. If a client does not log in, they see the standard form and fill in all details manually. The person selection step only appears for logged-in clients who have a booking history.\n\n### Why can't a logged-in client change their email on the form?\n\nThe email is the key identifier used for invoicing, loyalty discounts, and booking history. Allowing it to change mid-booking would break the connection between the account and the booking record. If a client needs to book under a different email, they should log out and complete the booking as a new visitor.\n\n### Will the loyalty discount change when a logged-in client selects a different child?\n\nYes. When the client selects a different person from the person selection list, the price is recalculated to reflect the correct loyalty discount tier for that child. For example, selecting a third child (rather than a second) may trigger a higher sibling discount tier automatically.\n\n---"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I translate or customise the text labels on the booking widget?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some fields can be relabelled directly in the programme settings — go to Programmes → programme → Online Booking → Edit → Customizing Booking Form.\n\nFor more advanced customisation (translations, styling, CSS, JavaScript options), refer to the Zooza developer documentation at docs.zooza.online. The docs cover:\n\n- Custom translations via window.ZOOZA = { translations: { 'key': 'value' } }\n- How to find translation keys using print_debug: true mode\n- CSS and styling options for the embedded and WordPress plugin versions\n- Filtering programmes and other embed parameters\n\nWidget styling is handled on your website side (by your webmaster or developer) — it is not configurable from within the Zooza application itself."
+      }
+    }
+  ]
+}

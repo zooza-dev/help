@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0067_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: false
-last_converted: 2026-02-15
+last_converted: 2026-04-10
 ---
 
 # User roles
@@ -58,50 +58,28 @@ Owner role has a full ownership of the application and can access all functional
 
 ## Assistant
 
-The role of assistant is intended for a person who helps you to organise
- programmes and therefore has broad rights within the application.
+The Assistant role is intended for someone who helps you manage programmes and clients. It has broad access across the application.
 
-- He sees today’s dates on the dashboard and doesn’t see the statistical reports like the owner. If the assistant (role) is also the receptionist (physically) – they can quickly fill in attendance. By clicking on the Detail button next to a given term, it will display all the people registered for that term.
-
-- Assistant has a full report – Arrived / Arrived / Signed Out /
-Didn’t Arrive to fill out the attendance form and has the option for the
- client to select an alternate session.
+- Sees today’s sessions on the dashboard. Does not see owner-level statistical reports.
+- **Full attendance management** — can mark Arrived, Signed Out, Did Not Arrive, and set an alternate session for the client. This applies regardless of the company-wide trainer attendance setting (which affects Instructors only, not Assistants).
 
 ![Screenshot](../../assets/images/user-roles-07.gif)
 
-- It has the right to create programmes, change their settings, create or
- copy classes and add dates. In classes, he can edit settings and modify
-existing dates – change the time, change the instructor or cancel the
-session and inform clients about it at the click of a button – just like
-you do.
+- Can create programmes, change their settings, create or copy classes, and add sessions. In classes, can edit settings and modify existing sessions — change the time, change the instructor, or cancel the session and notify clients.
 
 ![Screenshot](../../assets/images/user-roles-08.gif)
 
-- He has the right to communicate to all clients, via both email and
-SMS. It can send an email, whether to a booking, a class, to all
-clients, and just like you, it can enter its own text or choose from a
-menu of email templates. He cannot create or edit email templates.
-- Of course, the right to manage clients’ attendance and payments is a
- available However, they can only add payment. They do not have the
-right to make other adjustments to the price – granting a discount,
-changing the amount due or refunding the payment.
-
-- They can do all the editing on the booking – change the
-booking status, copy the booking, move the booking, edit
-the child’s name or other information in the extra fields section
+- Can communicate with all clients via email and SMS — to a booking, a class, or all clients. Can use existing email templates but cannot create or edit them.
+- Can add a payment on a booking. Cannot grant discounts, change the amount due, or issue refunds.
+- Can do all booking edits — change booking status, copy, move, edit client name and extra fields.
 
 ![Screenshot](../../assets/images/user-roles-09.gif)
 
-- It has a limited *Payments* section – in which it can’t do
-imports, it can’t see invoices and it can’t issue invoices. It only sees
- a summary of payments, so for example unpaired payments, which he can
-help you pair.
-- Sees the complete *Calendar* with all classes of all instructors
-- It can add both *Documents* and *Products* and assign them to classes.
-- In the *Instructors* section, he can see all team members and
-manage their personal data, enter a price to the rate, enter and edit
-working hours as well as call up a report.
-- It has access to the *Settings* section – it can add a new team member, add a location or a billing period. Cannot edit Payment Templates.
+- Has access to the **Payments** section — can view payment overview and payment details, and can pair unmatched payments. Cannot do imports, cannot see or issue invoices.
+- Sees the full **Calendar** with all instructors’ classes.
+- Can add **Documents** and **Products** and assign them to classes.
+- In the **Instructors** section, can see all team members, manage their personal data, view and edit pay rates, enter working hours, and download trainer reports.
+- Has access to **Settings** — can add team members, locations, and billing periods. Cannot edit Payment Templates.
 
 ## Main instructor
 

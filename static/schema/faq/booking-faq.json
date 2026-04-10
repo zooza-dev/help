@@ -1,0 +1,104 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Booking FAQ",
+  "url": "https://help.zooza.online/bookings/booking-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I generate a booking link to send to my clients?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every programme in Zooza has a public booking page. Your main booking URL is yourbrand.zooza.online. You can also share direct links to specific classes:\n\n- Full list — yourbrand.zooza.online/booking/ lets clients choose from all available classes.\n- Programme-specific — add ?course_id=X to guide clients to a specific programme.\n- Class-specific — add ?course_id=X&schedule_id=Y&place_id=Z to pre-fill a specific class.\n\nShare these links via email, WhatsApp, or your website."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are clients creating duplicate bookings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This usually happens when a parent starts the booking, doesn't complete payment, and then tries again. Zooza warns them that a booking already exists, but some parents confirm and create a second one.\n\nTo handle duplicates:\n\n1. Go to Bookings and identify the unpaid duplicate.\n2. Delete the unpaid booking (the one without a completed payment).\n3. Always check the child's name and date of birth to confirm it's truly a duplicate.\n\nThe system doesn't block repeat bookings because sometimes a parent legitimately needs to register a second child."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I delete test bookings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to Bookings, find the test booking, open its detail, and change the status to Deleted. This completely removes the booking. The data is still available under the \"Deleted bookings\" filter for reference."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between deleting and cancelling a booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "- Cancellation — used when a booking was active (the child was attending), but the family decides to stop. It ends the booking, frees the spot, but keeps the full history.\n- Deletion — used when you want to completely remove the booking (e.g., test entries, accidental duplicates)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can clients register multiple children at once?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. During booking, there is an Add another child button. When a parent adds a second child, the price doubles accordingly. If clients report seeing unexpected higher prices, they may have accidentally clicked this button — refreshing the page resets it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I move a client from one class to another?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open the booking detail and click Transfer (in the Class card). The wizard lets you select the target class, configure payments, and submit. The booking moves to the new class with the remaining sessions.\n\nTip: tick Do not change payments to keep the original payment schedule intact.\n\nFor a full step-by-step walkthrough, see Transfer and copy bookings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I handle pro-rata bookings for partial terms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza calculates pro-rata prices automatically when a client joins a class that has already started. Go to Programmes → Settings → Price and Payment → Advanced settings and configure the Late bookings mode and Aliquot price calculation method. The system can calculate the reduced price based on remaining sessions or remaining days in the billing period.\n\nFor a full walkthrough of all options, see Late bookings (pro-rata management)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I manually create a booking on behalf of a client?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can go through the booking form on behalf of a parent. This is a workaround — the recommended flow is for parents to book online themselves. Note that trial bookings cannot be created manually by an admin; only standard enrolments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the client list show — why are there more entries than expected?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Clients list shows all entities: both parents and children. So if you have 90 bookings, the client count may appear higher because each parent and each child is listed separately. Use the Bookings or Reports section for accurate booking counts.\n\n---"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Customize tile",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Can I change what information appears on each booking card in the list?\n\nYes. Click Customize tile in the top-right corner of the Bookings list. A widget bar appears — drag widgets into the tile preview to add them, or drag them out to remove. Click Save when done. See Customizing the booking tile for the full widget list.\n\nDoes my tile layout affect other team members?\n\nNo. The layout is saved per user account. Each team member configures their own view independently without affecting anyone else.\n\nWhat is the \"10 BOOKINGS\" badge on a client?\n\nThis badge appears on the Identity widget and shows the client's total number of bookings across all programmes. It helps you quickly identify frequent clients without opening their profile.\n\nI customized my tile but want to go back to the original view. How?\n\nClick Customize tile, then click Reset to default. This restores the original Zooza tile layout immediately.\n\nCan I show the client's extra fields (e.g. address, medical notes) directly in the list?\n\nYes. Add the Extra fields widget to your tile. It will display any extra fields collected during registration directly on the booking card.\n\n---"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Extra fields",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "My export shows a short code in the extra field column instead of the answer label — why?\n\nExtra fields with a dropdown (choice) type store the option's key, not its display label. For example, if your choices are labelled \"Facebook\", \"Google\", \"Word of mouth\" but their keys are 1, 2, 3, the export will show 1, 2, or 3 — not the readable label.\n\nTo make exports readable, set meaningful keys when configuring the field options. Go to the programme → Additional fields → edit the choice field → update each option key (e.g. facebook, google, word_of_mouth). Keys must use only letters, numbers, and underscores — no spaces, dashes, or special characters.\n\nOnce updated, new bookings will use the new keys in exports. Existing bookings retain the original key value.\n\n---"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Booking count",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Why does the bookings list show \"500+ bookings found\" instead of the exact number?\n\nWhen the total number of bookings exceeds 500, Zooza displays \"500+\" instead of calculating the precise count. This is intentional — counting large datasets on every page load would slow down the list for everyone. The \"500+\" indicator simply means there are more than 500 results matching your current filters.\n\nTo get the exact count you have two options:\n\n1. Scroll to the bottom of the list and click recalculate next to the page count (e.g. \"Total pages: 25+ ( recalculate )\"). Zooza will then calculate and display the real number of bookings.\n2. Go to Reports (Reports & Insights → Reports) where precise totals are always available regardless of list size."
+      }
+    }
+  ]
+}

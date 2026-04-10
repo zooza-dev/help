@@ -1,0 +1,240 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Programmes, Timetables and Sessions FAQ",
+  "url": "https://help.zooza.online/programmes/programmes-timetables-sessions-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between programmes, timetables, and sessions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "- Programme (Programme) — the top-level entity (e.g., \"Beginners Swimming\"). It holds pricing, settings, and automation rules.\n- Timetable (Class/Class) — a specific scheduled class within a programme (e.g., \"Monday 9:00 AM at Main Hall\"). It defines the recurring pattern, location, and instructor.\n- Sessions — individual occurrences of a class (e.g., \"Monday 6 January 9:00 AM\"). Sessions are generated from the timetable and can be edited individually.\n\nChanges made at the timetable level (e.g., assigning an instructor) do not always cascade to existing individual sessions. You may need to update sessions separately using bulk edit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I assign an instructor to sessions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Assigning an instructor at the timetable level applies to future sessions. For existing sessions, use the bulk edit feature:\n\n1. Go to the class detail.\n2. Select the sessions you want to change.\n3. Use bulk edit to assign the instructor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I changed the venue (or instructor) on a class but it still shows the old value on sessions — why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When you save a change to a class setting (venue, instructor, etc.), Zooza asks how to apply the change:\n\n- Change for a class only (sessions will not change) — the class record updates, but existing sessions are not affected.\n- Change for all sessions — applies the update to every session in the class.\n- Change only for upcoming sessions — applies the update to sessions that have not yet taken place.\n\nIf you chose Change for a class only, your sessions keep the old value. This is the most common reason a setting appears unchanged on individual sessions.\n\nTo fix it: Go back to the class settings, make the change again, and this time select Change for all sessions or Change only for upcoming sessions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I change the time of a class?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You cannot change the time directly in the timetable settings for existing sessions. Instead:\n\n1. Open the class detail.\n2. Select the sessions that need the time change.\n3. Use bulk edit to update the time.\n\nYou can choose whether to send a notification to parents about the change."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I move a class to a different programme?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open the class detail, go to Settings / Edit → Other settings, and change the programme from the dropdown. Save and refresh."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I copy a class?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can duplicate a class to create a similar one at a different time or location. When copying, double-check that all settings (price, payment methods, extra fields) have carried over correctly — some settings may need to be re-applied."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I merge two classes into one?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Zooza does not have a merge function. Sessions cannot be shared between classes, and there is no built-in way to combine two classes into a single entity.\n\nWorkaround — reschedule sessions to the same time:\n\nIf you want clients from both classes to attend together (e.g., two small classes you want to run at the same time), reschedule the sessions of one class to match the time of the other:\n\n1. Open the class you want to align.\n2. Select all sessions.\n3. Use bulk edit to change the time to match the other class.\n\nBoth classes now appear at the same time in the calendar and the admin app. Each class still has its own bookings, attendance, and payments — the system keeps them fully separate. Clients, reports, and invoices are unaffected.\n\nNote: This does not actually merge the classes — it only makes them overlap in time. If you later need to split them again, simply reschedule sessions back to a different time.\n\nIf one class has no bookings (e.g., it was set up to advertise a future slot), you can keep it in the system for future use without rescheduling — just archive it or leave it visible on the booking form as a separate option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I add a new class to an existing programme?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to the programme overview and click New Class. Fill in the class name, billing period, location, instructor, capacity, and session schedule. If the class should have a different price than the programme, enter it in the price step — otherwise the programme price applies automatically. For a full walkthrough, see Creating a class."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to create a session manually every week?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. When you create a class, you define the recurring schedule (day of week, time, start date, end date) and Zooza automatically generates all sessions for the entire period at once.\n\nFor example: if your class runs every Monday from 1 September to 30 June, Zooza creates all Monday sessions in one step — you do not touch them again unless something changes (holiday, substitute, etc.).\n\nTo set up the schedule when creating a class:\n\n1. Go to Programmes → open the programme → New Class.\n2. In the session schedule step, set the day, time, start date, and end date.\n3. Zooza generates all sessions automatically. Review the list and confirm.\n\nIf you need to adjust individual sessions later (e.g. cancel one, change a time), you can edit them one by one or use bulk edit. See Creating a class for the full walkthrough."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a Fixed Period class and a Lead Collection class?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Fixed Period class has scheduled sessions with specific dates and times — this is the standard class type for programmes, terms, and camps. A Lead Collection class has no sessions initially — it is used to collect interest from potential clients before you finalise the schedule. Once you add sessions to a lead collection class, it becomes a regular fixed period class. See Lead collection for details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I set a different price for each class in the same programme?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. When creating or editing a class, you can enter a class-level price that overrides the programme price. This is useful when different levels, locations, or time slots have different pricing. If you leave the class price empty, the programme price applies. See Creating a class."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do the financial numbers on the class tile mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each class tile shows three financial figures (recalculated every 30 minutes):\n\n- Paid debt — total amount already paid across all bookings.\n- Issued debt — total debt created from all booking types (including late bookings and waiting list).\n- Balance — current account status (difference between issued and paid)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I hide a class from online registration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In the class settings, you can toggle visibility for the online booking form. This keeps the class in the system for internal management but hides it from the public booking page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do changes I make not appear immediately?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza uses browser caching to speed up page loading. When you create or edit something (like a location or class), the change may take a moment to appear. A quick browser refresh (Cmd+R on Mac, Ctrl+R on Windows) usually resolves this."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I find an archived class (class)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to Activities → Classes and set the Status filter to Archived. This shows all classes that have been archived, across all programmes.\n\nArchived classes are hidden from the active list but not deleted — all their sessions, bookings, and payment history remain intact."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I accidentally deleted a class — can I recover it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on what happened:\n\n- If the class was archived → it can be found and is fully recoverable. Go to Activities → Classes → set Status = Archived. Open the class and change its status back to active.\n- If the class was deleted → it cannot be recovered. Deleted classes are permanently removed. Contact Zooza support if you believe there has been a data error.\n\nTo avoid accidental loss, prefer archiving over deleting when you want to keep history or plan to reuse the class."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I delete a programme?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Programmes cannot be deleted through the application. Instead, use archiving — it hides the programme from the active list without removing any data, bookings, or history.\n\nTo archive a programme, go to the programme → Settings tile → Edit → check Archive → Save. To view or restore archived programmes, use the Archived filter in the Programmes list.\n\nSee Programme settings tile — Archiving a programme for the full how-to.\n\nIf you need to permanently remove a programme that has no bookings and no classes, contact Zooza support with the programme ID (visible in the URL, e.g. #courses/6455)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there an undo button in Zooza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Zooza does not have a general undo or revision history feature. Changes take effect immediately and cannot be automatically reversed.\n\nTo fix a mistake, you need to manually redo the correct action (e.g., bulk edit sessions back to the correct time, restore an archived item, re-enter a payment adjustment)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I changed the time on one session but it changed on many (or all) sessions — how do I fix it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This happens when the edit was applied using Bulk Edit — which updates all selected sessions at once — rather than editing a single session inline.\n\nThere is no undo button in Zooza. To fix it:\n\n1. Go to Activities → Sessions and use the filters (Programme, Day, from/to date) to find the affected sessions.\n2. Check Choose all or select individual sessions, then click Bulk edit.\n3. Tick Edit date and time.\n4. Under Time adjusting options, choose Set new time for all selected sessions and enter the correct time.\n5. Optionally tick Notify clients about changes to send them a session-change email.\n6. Click Continue, then confirm.\n\nClients will only be notified if you tick the notification checkbox in step 5.\n\nFor full bulk edit instructions, see Editing sessions in a class."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I bulk-delete programmes that have no bookings or classes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Admins cannot bulk-delete programmes directly from the application interface. To delete programmes that have no registrations or classes (classes), you must send a list of programme IDs to Zooza support, who will remove them from the database on your behalf.\n\nBefore requesting deletion:\n\n1. Verify that each programme has no active registrations and no classes attached.\n2. If a programme still contains classes with historical registrations you want to preserve, move those classes to an archive programme first (via class settings — change the programme).\n3. Compile the programme IDs (visible in the URL when viewing a programme, e.g., #courses/6455) and send them to support.\n\nProgrammes that still contain registrations or classes cannot be deleted — they must be archived instead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "The calendar is not showing all my classes — why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is almost always a browser caching issue, not a data problem. No classes have been lost.\n\nDo a hard browser refresh to force the page to reload with current data:\n\n- Mac: Cmd+R or Cmd+Shift+R\n- Windows/Linux: Ctrl+R, Ctrl+F5, or F5\n\nIf the calendar still shows incorrect data after a hard refresh, contact support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "After rescheduling sessions, holiday-skip rules no longer apply — why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When you create a class, Zooza generates sessions that respect your holiday and public-holiday skip settings. However, if you later bulk-reschedule those sessions to a different weekday or time, the system treats this as a manual override and does not re-apply the holiday-skip rules to the new dates.\n\nThis means sessions may land on public holidays or school vacation days after rescheduling.\n\nWhat to do after rescheduling:\n\n1. Open the class detail and review all rescheduled sessions.\n2. Manually cancel or remove any sessions that fall on holidays or vacation days.\n3. Add make-up session on valid dates if needed to maintain the correct total count.\n\nThe system displays a warning when you perform a bulk reschedule, reminding you to check the resulting dates. The admin who performs the change is responsible for verifying that the new session dates are correct."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the colour used for on a programme?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The colour you assign to a programme appears in two places:\n\n- In the admin app — on the programme tile and in the calendar view.\n- In the online booking widget and web calendar — clients see the colour to visually distinguish between different programmes.\n\nEach colour in the picker has a label and a short description. The label is also displayed next to the programme name in the web calendar. You can change the colour at any time in the programme settings without affecting bookings or classes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What programme type should I choose?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you are unsure, most ongoing class programmes (weekly classes, term programmes) use Booking for full programme duration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I change the programme type after creating it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Go to the programme settings and change the type. Be aware that changing the type may affect how existing classes and bookings behave — for example, switching to pay-as-you-go on a programme with existing full-duration bookings is not recommended. If in doubt, create a new programme with the correct type and migrate clients manually."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between Group classes and 1-to-1?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "- Group classes — multiple clients attend the same session together. Capacity applies per session.\n- 1-to-1 — each session is with one client only (private sessions, personal training, individual consultations). Capacity is automatically set to 1 per session."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the \"For children\" toggle do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When enabled, the booking form includes a child profile section where the parent fills in the child's name, date of birth, and notes. Attendance management and reporting also use child-relevant labels. Leave the toggle off for adult programmes where the participant and the paying client are the same person."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the booking fee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The booking fee is an optional one-time charge collected at the moment of registration, separate from the programme price. For example, you might charge a 5 EUR registration fee on top of the term price. Leave it at 0 if you do not charge a separate booking fee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I change the price for new bookings without affecting existing ones?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Price changes on a programme or class apply only to new registrations. Existing registrations keep the price that was set at the time the client registered.\n\nTo update the price for future bookings:\n\n1. Go to the programme or class settings.\n2. Change the price to the new amount.\n3. Save.\n\nAll new registrations (including clients who convert from a trial) will use the updated price. Clients who registered before the change retain their original price — their payment schedule is not recalculated.\n\nIf you need to adjust the price for an existing registration, you must edit the payment on that registration manually. See Edit payment on booking for details."
+      }
+    }
+  ]
+}

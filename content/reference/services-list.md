@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-04-10"
 ---
 
 # Services
@@ -60,7 +60,24 @@ Top-right action: **Copy** — duplicate the service.
 
 ### Service Items
 
-Each service contains one or more variants (items). Each item has:
+Each service contains one or more variants (items). Items are displayed as collapsible panels — click a panel to expand or collapse it.
+
+![Screenshot — services list](../../assets/images/services-list-01.png)
+
+The collapsed view shows the **item name** and **unit price** (e.g. "1.00 / person"). Expand a panel to edit the full item details.
+
+#### Reordering items
+
+Items can be reordered using drag-and-drop. The order you set here is the order clients see when selecting options during registration.
+
+1. Grab the drag handle (≡ icon) on the left of a collapsed item.
+2. Drag it to the desired position and release.
+
+Zooza saves the new order automatically.
+
+New items (not yet saved) appear at the end of the list and cannot be reordered until saved.
+
+#### Item fields
 
 | Field | Description |
 |---|---|

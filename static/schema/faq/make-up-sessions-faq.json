@@ -1,0 +1,192 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Make-up Sessions FAQ",
+  "url": "https://help.zooza.online/calendar/make-up-sessions-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do make-up sessions work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When a child misses a session and the absence is properly recorded, the system generates a make-up credit on the booking. The parent can then use this credit to book a make-up session in another compatible class (same programme, matching age range) through their Client Profile.\n\nMake-up sessions must be enabled per programme. Go to Programmes → select the programme → Settings → Make-up sessions to configure them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What attendance state triggers a make-up credit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only the \"Cancelled\" attendance state generates a make-up credit. If a child is marked as \"Did not attend\" (no-show), no make-up credit is created. This is by design — the system distinguishes between a planned absence (cancel in advance) and an unexcused no-show.\n\nIf a make-up credit was not generated after a missed session, check whether the attendance state is \"Did not attend\" instead of \"Cancelled\". An admin can correct the state in the session's attendance view."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the \"extra capacity for make-up sessions\" setting work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There are two levels for this setting:\n\n1. Global setting — Go to Settings → Make-up sessions. The Extra capacity for replacement hours value (e.g. 1) applies to every class across all programmes. This means each class allows that many additional spots beyond its normal capacity for make-up bookings.\n\n2. Per-class setting — On the class detail page, the make-up sessions tile shows a per-class extra capacity value. You can choose whether this value replaces the global setting or adds to it.\n\nIf the per-class value is 0 and set to \"add to global\", the global setting applies unchanged. To remove extra capacity from a specific class, set the per-class value to 0 and choose \"replace global setting\"."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the 4-day rule for make-up session availability?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Classes that have not yet started do not appear as make-up options. The system only makes a class available for make-up bookings 4 days before the class's start date. This prevents make-up students from occupying capacity that should be reserved for full-paying bookings.\n\nIf you create a one-off class specifically for make-up sessions, set the class start date close to the session date. Otherwise the session will not appear as a make-up option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do cross-company (franchise) make-up bookings work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Franchise networks can allow make-up bookings across branches operated by different legal entities. When enabled, a parent sees available sessions from all linked branches in their make-up options.\n\nSetting up cross-company replacements has three steps:\n\n1. Link the companies — go to Settings → Make-up session → Cooperate with a company, enter the other branch's email, and send an invitation. The other branch must approve.\n2. Enable on the programme — open the programme → Make-up session → Edit → check Allow make-up session from other companies.\n3. Configure restrictions — set the conditions under which clients from other branches can book at your sessions.\n\nCross-company make-up bookings follow the same rules as regular make-up bookings (capacity, 4-day rule, programme match). The restriction settings control incoming replacements — they define when clients from another branch can use sessions at your company.\n\nFor the full setup walkthrough, admin views, and reporting, see the Cross-company replacements section in the Make-up Sessions guide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I mark attendance for a client attending a make-up from another company?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Limited. When a client from another company attends a make-up session at your location, the make-up session belongs to their home company's record. This means:\n\n- You can see the client in the attendance list for that session.\n- You cannot permanently change the attendance status (present/absent) in a way that persists — because the make-up session record is owned by the other company's account.\n- Any attendance you mark may revert or may not appear correctly in your own reporting.\n\nWhat to do in practice:\n- For your own reporting, note the attendance manually (e.g. in a session note or internal comment).\n- The client's home-company admin can see and confirm the attendance from their side.\n- If this is a recurring issue (e.g. franchise network with regular cross-company make-ups), contact Zooza support to discuss whether cross-company attendance reporting can be aligned for your network.\n\nSK: Náhradky klientov z inej spoločnosti patria pod účet tej inej spoločnosti. Nemôžeš ich preto v svojej adminstrácii trvalo označiť — dochádzka zostáva pod pôvodnou firmou. Pre vlastné záznamy si príchod poznač manuálne (poznámka na termíne alebo interný komentár)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can make-up credits carry over to the next billing period?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Go to Settings → Make-up sessions → General Settings and choose one of three expiration modes under Make-up sessions behavior:\n\nAdditional settings (when using transferred make-up sessions):\n\n- Maximum number of transferred make-up sessions between billing periods — how many credits can be carried into the next period. Set to 0 to disable the carry-over entirely.\n- Number of days to use transferred make-up sessions — how long after the class ends the transferred credits remain usable.\n- Default expiration of credits (in days) — applies to all make-up credits from the date the credit is created (default: 90 days).\n- Additional slots in classes — extra capacity in sessions reserved specifically for make-up bookings (global setting; can be overridden per class)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does \"make-up credit validity\" mean the client must attend by that date, or just book by that date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The validity window is the deadline for booking the make-up session — not for attending it.\n\nExample: If the class ends on 27 January and you have a 30-day validity period, the client must book a make-up session by 27 February. The booked session can be scheduled for a later date (e.g. 30 March) — as long as the booking action itself happens within 30 days of the class ending.\n\nThe only other timing rule: make-up sessions only appear as bookable options 4 days before the target class's start date. So if the client wants to book a session that starts the following month, it will not appear in their list until 4 days before."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I delete or expire a make-up credit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to the booking detail page. Scroll to the Credits section at the bottom. Click Show all credits to see every credit on that booking. Find the make-up credit you want to remove, click the More button next to it, and either:\n\n- Change the expiration date to a past date (to let it expire), or\n- Click the Delete button to remove it entirely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A client says make-up sessions are not showing up. Where do I start?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In almost every case this is a settings issue, not a bug. Work through this checklist:\n\n### 1. Check the attendance state\n\nThe absence must be recorded as \"Cancelled\", not \"Did not attend\". Only \"Cancelled\" generates a make-up credit. If the state is wrong, fix it in the session's attendance view and the credit will appear.\n\n### 2. Check that make-up sessions are enabled on the programme\n\nGo to Programmes → select the programme → Settings → Make-up sessions. If this is off, no options appear for any client in that programme.\n\n### 3. Understand the display limit\n\nThe system shows only the first few dozen compatible sessions in the client's make-up list. This is the most common reason a specific session is not visible — it exists and has capacity, but it is not in the displayed set because there are too many options overall.\n\nFix: Reduce the number of sessions offered as make-up options so the right ones appear. You can do this by:\n\n- Narrowing the make-up session offer in programme settings (limit which classes qualify).\n- Setting tighter time restrictions (see setting 5 below).\n- Setting extra capacity to 0 on classes that should not appear as make-up options.\n\n### 4. Check available capacity\n\nEven if extra capacity is set globally, individual classes can override it. Go to the class detail → Make-up sessions tile. Check the per-class extra capacity value and whether it adds to or replaces the global setting.\n\nIf both the class is at its normal capacity limit and the extra capacity is 0, no make-up spots are available and the session will not appear.\n\n### 5. Check the time restriction for regular make-up sessions\n\nGo to Settings → Programmes → Time restriction in hours for offering a regular make-up session. If this is set to e.g. 2 hours, any session starting in less than 2 hours is hidden from the make-up list — even if it has free spots.\n\n### 6. Check the 4-day rule\n\nClasses that have not yet started only appear as make-up options 4 days before the class start date. If a class starts next month, it will not appear in the list today.\n\n### 7. Check the cancellation deadline\n\nIf the client is trying to cancel and book a make-up within the configured cut-off window, the option will not be available.\n\n---"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can't a parent see make-up options in their profile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check these common causes:\n\n1. Attendance state — The absence must be recorded as \"Cancelled\", not \"Did not attend\".\n2. Display limit — The system shows only the first few dozen compatible sessions. If there are many options available, some specific sessions may not appear. Narrow the scope in programme settings or reduce extra capacity on irrelevant classes.\n3. No available capacity — All compatible sessions may be full (including the extra capacity allowance).\n4. Make-up sessions disabled — Verify that make-up sessions are enabled on the programme. Go to Programmes → select the programme → Settings → Make-up sessions.\n5. Class has not started — Make-up options only appear for classes that start within 4 days or have already begun.\n6. Cancellation window — If the parent is looking at a session that starts within the configured cut-off time (e.g. less than 1 hour before the session), the option will no longer be available."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the \"sign back up for this session\" button work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When a parent cancels a session, a \"Sign back up for this session\" button appears in their profile next to that session. This allows them to re-enroll on the original session they cancelled from.\n\nIf the parent had already booked a make-up session, clicking this button cancels the make-up booking and puts the child back on the original session. The button works automatically when make-up sessions are enabled — there is no separate setting to activate it.\n\nThe button only works if there is still available capacity on the original session at the time the parent clicks it. If the session has filled up since they left, the system will inform them that the session is full."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a student re-enroll on the same session they cancelled from?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The parent can use the \"Sign back up for this session\" button in their profile. If a make-up session was already booked, it is automatically cancelled when the parent re-enrolls on the original session."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is the make-up session waiting list?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When all sessions with available capacity are taken, parents can join a waiting list (queue) for specific sessions. When a spot opens up, the system sends a notification to the parent with a link. The parent must click the link to confirm their spot — it is not automatically assigned.\n\nThe waiting list is fully automated. You can enable or disable it per programme. Go to Programmes → select the programme → Settings → Make-up sessions and look for the Make-up sessions waitlist option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I set a cancellation deadline for sessions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to Settings → Programmes and enable Set a limit for cancelling a scheduled session. You can choose between two limit types:\n\n- Fixed time — cut-off is a specific hour on the day before the session.\n- Relative time — cut-off is a number of hours before the session starts (e.g. 12 hours).\n\nThis is a global setting — it applies to all programmes in your account."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can clients still cancel after the cancellation deadline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, if you enable Allow cancellations after the limit in Settings → Programmes. When a client cancels after the deadline:\n\n- The session slot is freed up for others.\n- No make-up credit is generated.\n- The attendance record shows Did not attend.\n\nIf this option is disabled, clients cannot cancel at all after the deadline and will see the instructions text you configured."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens with the cancellation limit over weekends?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you enable Block cancellations on weekends and holidays, the cancellation deadline for Monday sessions shifts to Friday at midnight. This prevents clients from using the weekend to cancel sessions that would otherwise require a working-day notice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does a session not appear as a make-up option even though it has capacity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most likely reason is the time restriction for offering a regular make-up session setting. For example, if this is set to 1 hour, a session starting at 3:00 PM disappears from make-up options after 2:00 PM — even if it still has free spots.\n\nCheck the value in Settings → Programmes → Time restriction in hours for offering a regular make-up session."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a standard make-up session and a custom make-up session?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A standard make-up session works by filling a vacant spot in another scheduled class. The client picks from sessions that already exist and have available capacity.\n\nA custom make-up session lets the client propose a specific date and time to their instructor. The instructor checks their availability and approves or declines the request. If approved, a new session is created automatically.\n\nCustom make-up session are designed for individual or specialist sessions (piano sessions, personal training, counselling) where signing into someone else's class is not practical.\n\nSee Custom make-up session for setup and workflow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use custom make-up session for group classes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but it is unusual. Custom make-up session are primarily designed for 1-to-1 or individual sessions where the replacement needs to happen with a specific instructor at a specific time. For group classes, standard make-up sessions (based on vacant spots) are usually more practical."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a client cancel a custom replacement request after submitting it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The client can cancel their request at any point before the instructor has confirmed it. Once the instructor approves, the session is created and the client is enrolled — at that point, the normal cancellation rules apply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if the instructor declines a custom replacement request?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The instructor must provide a reason for the decline. The client receives an email notification with the reason. The client can then submit a new request with a different date or time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why was a make-up credit not generated after a missed session?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most common reason is that the child's attendance was set to \"Did not attend\" (no-show) instead of \"Cancelled\". Only the \"Cancelled\" state creates a make-up credit.\n\nOther reasons include:\n\n- Make-up sessions are not enabled on the programme.\n- The credit was generated but already expired based on your expiration settings.\n- The session itself was not properly tracked (e.g. attendance tracking is disabled on the class).\n\nTo fix a missing credit, change the attendance state from \"Did not attend\" to \"Cancelled\" on the affected session. The system should then generate the make-up credit."
+      }
+    }
+  ]
+}

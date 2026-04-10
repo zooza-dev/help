@@ -1,0 +1,176 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Trial Classes FAQ",
+  "url": "https://help.zooza.online/bookings/trials-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I set up trial classes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trials are configured per programme. Go to Programme → Settings → Trial to enable them, and Programme → Automations → Trials to configure the rules.\n\nYou can set:\n\n1. Whether the trial is free or paid.\n2. How many trial sessions are offered (usually one).\n3. Whether trial dates are shown on the booking form (and how many days ahead).\n4. Whether trial bookings count towards class capacity.\n5. Whether a trial booking temporarily holds a spot in the class."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the trial-to-enrolment flow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The full automated flow is:\n\n1. Client registers for a trial and receives a confirmation.\n2. Client receives a reminder before the trial session.\n3. The instructor marks attendance after the trial.\n4. The system automatically sends a booking link offering full enrolment.\n5. Follow-up messages encourage enrolment.\n6. If the offer is not used, the trial is marked as Trial Lost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Trial option is not showing on my website — why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trial uses the same booking widget as regular enrolment. If the trial option is not visible to clients, check these four things in order:\n\n1. Trial is not enabled in programme settings\nGo to Programme → Settings → Trial → Edit and make sure trial is turned on and fully configured — type (free/paid), length, session capacity, and which classes are included. If trial is not set up here, it will not appear anywhere regardless of other settings.\n\n2. Allow online booking is off\nGo to Programme → Settings → Online Booking and make sure Allow online booking is set to Yes. If this is off, the programme is hidden entirely.\n\n3. Booking Options Shown on Website excludes trials\nOn the same screen, find Booking Options Shown on Website. If it is set to Offer full programme booking only, trials will not appear. Change it to one of:\n- Default – let customer choose — shows both full enrolment and trial options\n- Trials only (if available) — shows only the trial option\n- Trials or blocks (if available) — shows trial and/or blocks\n\n4. No available trial dates\nIf all classes are full (no free capacity for trials), there are no dates to display. Check the capacity settings in Programme → Settings → Trial → Session Capacity and make sure there is either available class capacity or extra capacity reserved for trials.\n\n---"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Clients are not receiving emails after their trial — why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The trial follow-up emails (booking link, reminders, Trial Lost notification) are sent by the Automation Settings configured inside the trial settings. If nothing is being sent, work through this checklist:\n\n1. Automation is not set up or not activated\nGo to Programme → Settings → Trial → Automation Settings. Check the Automation status — it must be Set and activated. If it shows Not activated, click Edit and switch it on.\n\n2. Attendance was not recorded\nThe automation triggers only when the trial booking reaches the status Trial Ended — which happens when the instructor records attendance on the session. If attendance was not recorded, the automation never fires. Make sure the instructor marks each trial attendee on the session detail.\n\n3. Automation was set up after the booking was created\nIf The setting will only be valid for new bookings is checked in the automation settings, bookings that were created before the automation was configured will not be affected. You need to contact those clients manually.\n\nWhat the automation sends (when active):\n\n---"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "If I manually change a trial status, does the client receive an email?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When you manually change a trial status (e.g. from Trial ended to Trial won or Trial lost), Zooza shows a \"Send confirmation email\" checkbox. You can choose whether to send a one-off email for that status change.\n\nImportant: Manually changing the status does not trigger the automated follow-up sequence. The automation (enrolment link + reminder emails) is only triggered when the instructor records attendance on the trial session. If attendance was not recorded and you changed the status manually, you need to send the enrolment link to the client manually via Communication → Send Email.\n\n---"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does it say \"class full\" when a trial client tries to enrol?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trial bookings count towards class capacity. When the client finishes their trial and tries to enrol in the same class, the system may show \"class full\" because their trial seat is still counted. If you see this happening consistently, contact support — it may be a calculation issue that needs a fix on the backend."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can an admin manually create a trial booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Trial bookings can only be created by parents through the online booking form. As an admin, you can only create standard enrolments. If needed, you can go through the booking form on behalf of a parent as a workaround."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I handle a client who wants to change their trial date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If a parent can't make their booked trial, you can update their attendance in the system — mark the original session as absent and rebook them into a different session. This is managed through the booking detail."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when a client cancels a trial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If a client cancels a trial, the system will follow the configured automation. You can manually change the status to Trial Lost, but this will not trigger automatic follow-up emails unless you explicitly choose to send one at that moment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does instructor attendance tracking affect trials?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Tracking attendance is important because it triggers the trial-to-enrolment automation. When a instructor marks a trial attendee as \"attended\", it triggers the system to send the enrolment offer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Trials and blocks cause overbooking — what is happening?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is a known limitation when a class uses both trial sessions and blocks (sub-periods within a class) at the same time.\n\nWhen a client books a trial, the system can reserve a spot in the class-wide capacity. However, block capacity is calculated per block. Because the system does not know which specific block the trial client will eventually join, it cannot accurately reserve a per-block seat. In practice this means:\n\n1. A trial booking may fill a session slot at the class level.\n2. A paying client then registers for a specific block in the same class.\n3. The system prioritises the paying client (confirmed revenue) over the trial (non-binding), which can push the session over its per-block capacity.\n\nWorkaround: Go to Programme → Settings → Trial and configure trial bookings to use extra capacity only. This ensures that trial reservations never consume spots intended for paying clients. The trial client is added on top of the normal capacity limit instead of inside it.\n\nIf you prefer to keep the current setting, you will need to manage overbooking manually — for example, by contacting the trial client and moving them to a different session that still has available spots."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a client who finished a trial register again for a full programme in the same class?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Once the trial process reaches a final state, the client can register for a full paid programme in the same class. The exact flow depends on the trial status:\n\n1. Trial ended (Trial Won / Trial Lost): Open the registration detail. You will see a Start registration button. Click it to convert the trial into a full paid booking. The client can also do this themselves through the enrolment link sent by the trial automation.\n2. Trial still in progress: If the trial registration is still active (for example, in \"Trial Started\" state), the system will not allow a new registration with the same email into the same class. The trial must first reach a final state — either \"Trial Won\" or \"Trial Lost\" — before a new registration is possible.\n\nTo move a trial to a final state manually, change the registration status to Trial Lost (or Trial Won if they attended). After that, either use the Start registration button on the existing registration or have the client go through the booking form again."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I check whether a client is currently in a trial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open the booking detail for that client. If the booking is a trial, you will see a trial timeline showing the current status and upcoming steps — for example:\n\n- Trial started (booking creation date)\n- Trial session date\n- Booking link sent (date the enrolment offer was sent)\n- First follow-up email sent\n- Second follow-up scheduled\n- Will be marked as Trial Lost (if no action)\n\nThe current step is highlighted so you can see exactly where in the process the client is.\n\nNote: If automation is not active for that programme, you will only see the trial session date and current status — no scheduled notification dates will be shown."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I check whether trial automation is active for a programme?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1. Go to Programmes and open the programme.\n2. Click the Settings tile → Edit → scroll to the Trial section. This shows whether trials are enabled and the trial type.\n3. To see the automation rules, go to the programme's Automations tile → Trials. Here you can see and configure:\n   - Whether an enrolment link is sent automatically after the trial session\n   - The number of days before the first and second follow-up\n   - Whether to automatically change status to Trial Lost after no response\n   - Whether to send a notification when the status changes to Trial Lost\n\nIf the automation is not configured, no emails are sent automatically after the trial session ends."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens after the last trial session?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Attendance must be recorded for the automation to trigger. Once the instructor marks the trial client as attended on the session detail, the system:\n\n1. Sends the client a booking link to register for the full programme (if automation is active).\n2. Sends follow-up emails after the configured number of days if the client has not registered.\n3. Marks the trial as Trial Lost if no registration follows after the configured period.\n\nIf automation is not set up, nothing is sent automatically — you need to enrol the client manually."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I manually enrol a client after their trial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1. Open the trial booking detail.\n2. Click Enrol.\n3. Select the class you want to enrol them in.\n4. Set the payment amount (or select a payment template — the system offers templates configured for the class).\n5. Confirm. The trial status changes to Trial Won and a new standard booking is created.\n\nNote: When you enrol manually, the client receives a confirmation email. They then go to their Client Profile to complete payment — either by card, by setting up a GoCardless mandate, or by following bank transfer instructions. The payment instructions email is only sent if you trigger it manually."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the client complete payment after enrolment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "After enrolment (whether self-registered or admin-enrolled), the client receives a confirmation email. To complete payment, they:\n\n1. Open the link in the confirmation email to access their Client Profile.\n2. Go to the Payments section of their profile.\n3. Choose the payment method: card payment, GoCardless direct debit mandate, or bank transfer.\n\nFor bank transfer, they use the payment details (variable symbol and account number) shown in their profile. The payment is then matched automatically or manually by the admin.\n\nIf the client does not receive the confirmation email or cannot find payment instructions, you can resend the notification from the booking detail."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I send trial clients the booking page link or the Client Profile link?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Send them the booking page link — not the Client Profile.\n\nThe Client Profile is designed for existing registered clients to manage their bookings, attendance, and payments. New parents still need to go through the booking process first. Once they have a confirmed booking, the portal becomes their place to manage everything.\n\nFor trial attendees you want to convert to full enrolments, the best options are:\n\n- Direct class link — send the link to the specific class they attended. This is the most guided path and avoids them landing in the wrong class.\n- General booking page — share your main booking URL. They select the correct class themselves and complete registration from there.\n\nAfter a trial session, the system can also automatically send an invitation link directly to the class they attended. This link can be triggered from the attendance screen by selecting which class the follow-up notification should go to. This is the cleanest flow for converting a trial into a full booking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A trial client created a duplicate account — why does this happen and how do I fix it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most common cause is the parent using a different email address for the trial than the one they use when completing the full booking (e.g. a work email for the trial, personal email for the booking form, or vice versa).\n\nPrevention: Use the invitation link sent after the trial session. This link is pre-connected to the parent's trial record and guides them into the correct class, reducing the chance of a new unlinked account being created.\n\nWhat it might look like: Sometimes what appears to be a duplicate is not actually a separate account — it can be a second booking or an incomplete registration. Always check the booking history on both records before merging.\n\nTo merge genuine duplicates:\n\n1. Go to Clients and open one of the duplicate profiles.\n2. Navigate to Family & Connections → Manage.\n3. Select the duplicate profiles to merge.\n4. Click Merge profiles.\n\nMerging combines booking history and family connections from both profiles. This cannot be undone — verify the records carefully first. See Duplicate client accounts for full details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I resend a follow-up trial email using an edited template?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can manually send a follow-up email to trial clients at any time, and choose which template to use — including a template you recently edited.\n\n1. Go to Communication and select the target group of clients (e.g. clients with a trial in a specific programme).\n2. Click Send message. \n3. Click Change email template to select a different template.\n   \n4. Pick your edited template from the list, or make further edits before sending.\n   \n5. Send.\n\nThe email goes out using the wording from the template you selected, not the default automation template.\n\nYou can manage all templates — including editing and saving custom versions — under Communication → Templates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Retention feature and how do I use it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Retention is a Zooza feature that gives clients who left (Trial Lost or cancelled booking) a time-limited opportunity to return — without the admin having to follow up manually.\n\nWhen retention is active for a programme, clients whose trial was lost or booking was cancelled receive a re-engagement link. They can use this link to rejoin within the configured window. The admin can also add a personalised note that appears with the link.\n\nHow to configure:\n\n1. Go to Programmes → open the programme.\n2. Click Settings → scroll to the Retention section.\n3. Set the number of days the re-engagement link remains active (default: 30 days).\n4. Optionally add a custom note to include with the retention communication.\n5. Save.\n\nWhat the client receives: A re-engagement link that lets them return to the booking flow or enrol directly, depending on your programme setup.\n\nRetention vs. trial automation: Trial automation handles the period during and immediately after the trial (enrolment link, follow-up, Trial Lost). Retention handles the period after Trial Lost or a cancelled booking — it's the last-chance re-engagement step.\n\nSK: Retencia je nastavenie kurzu, ktoré umožňuje oslovovanie klientov, ktorí predtým odišli (Trial Lost alebo zrušená registrácia). Nastaví sa v Programme → Nastavenia → Retencia — zadáte počet dní (predvolene 30) a voliteľnú poznámku. Klient dostane odkaz na opätovné prihlásenie."
+      }
+    }
+  ]
+}

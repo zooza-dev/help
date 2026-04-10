@@ -1,0 +1,72 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Onboarding and Launch FAQ",
+  "url": "https://help.zooza.online/settings/onboarding-launch-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "I have interested clients — how do I get them registered in Zooza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There are three ways to bring clients into Zooza. The right one depends on your situation:\n\n### 1. Share a booking link (recommended)\n\nEvery class in Zooza has a public booking link. Clients click the link, fill in their details, and pay online — no admin involvement needed.\n\nTo get the link:\n1. Go to Programmes → open the programme → open the class.\n2. Copy the booking link from the class detail (look for the share/copy icon).\n\nYou can also share your main booking page (yourbrand.zooza.online/booking/) where clients choose from all available classes.\n\nSend the link via email, WhatsApp, Instagram, or any channel you use.\n\n### 2. Embed the booking form on your website\n\nIf you have a website, you can embed the Zooza booking form so clients register without leaving your page. See Deploying Zooza on a website and Customising widgets.\n\n### 3. Add clients manually (admin creates the booking)\n\nIf a client cannot or will not book online, you can create the booking for them:\n\n1. Go to Bookings → New booking (or use the booking form on their behalf).\n2. Fill in the client's name, email, and the class they are joining.\n3. Set up payment manually after the booking is created.\n\nSee Creating a booking for step-by-step instructions.\n\nNote: Trial bookings cannot be created manually by an admin. Only standard enrolments and manual registrations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I create a demo or test class?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A demo class is useful when you want to test the full booking flow before going live, or show a potential client or team member how Zooza works without affecting real data.\n\n1. Go to Programmes → create a new programme (e.g., name it \"Demo\" or \"Test\").\n2. Add a class with a session or two.\n3. Set the price to 0 or use a test payment method so no real charges occur.\n4. Use the booking link to go through the registration yourself, or add a test booking manually.\n5. When done, delete the test bookings: open each booking → set status to Deleted.\n\nYou can keep the demo programme for internal use or archive it when you no longer need it.\n\nTip: If you only need to test the booking form experience (what the client sees), you can also use the Widget preview without creating an actual booking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I check before sending booking links to clients?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Before going live, verify that:\n\n1. All classes have the correct payment methods enabled (card, Apple Pay, etc.).\n2. Pricing is set correctly on every class (especially after testing — prices may have been changed during test payments).\n3. Booking forms are consistent across all classes (same buttons, same fields, same client journey).\n4. Extra fields (e.g., medical conditions, gender) are configured the same way across programmes, unless intentionally different.\n5. Test bookings are deleted so they don't skew your data.\n6. Booking links are tested end-to-end — complete a test booking yourself to see what clients will experience."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I migrate existing clients from another system to Zooza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For clients already in your old system:\n\n1. Send them a Zooza booking link to re-register.\n2. If they should not pay the registration fee again, create a discount code for the fee amount (e.g., code \"MEMBER\" for the full registration fee).\n3. Once registered, they are set up with recurring payments in Zooza.\n\nThis is a one-time transition process. After the migration, all new clients follow the standard Zooza flow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I launch bookings before my invoicing is fully set up?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can disable automatic invoice generation, start accepting bookings and payments, and generate invoices retroactively once your accounting settings are finalized."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do if clients report inconsistent experiences?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check that all classes within each programme have the same settings:\n\n- Payment methods (card, Apple Pay, etc.)\n- Button labels (Enroll vs. Book)\n- Extra fields and consent options\n- Price and billing configuration\n\nInconsistencies usually happen when settings were adjusted during testing and not fully aligned before launch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I handle the first billing cycle?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The first billing cycle often needs special attention:\n\n- If the first month has fewer sessions than usual, decide whether to use aliquot billing (prorated) or a fixed monthly amount.\n- Most clients prefer to turn aliquot off for the initial launch so every payment is the same amount, then enable it later for mid-term joiners.\n- Double-check the first payment amounts on a few test bookings before going live."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I sell products (merchandise, party packages) through Zooza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Products are managed under Products / Services. You can:\n\n- Add items with descriptions, prices, and variants (e.g., sizes).\n- Offer products during booking as add-ons.\n- Create separate one-off bookings for sessions like birthday parties — set up a new programme/class for the session and share the booking link with the client.\n\nFor birthday parties or one-off sessions, create a new programme (e.g., \"Sessions / Specials\"), add one class with the session date, and share the generated booking link."
+      }
+    }
+  ]
+}

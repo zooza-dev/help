@@ -1,0 +1,88 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Administrative Refund FAQ",
+  "url": "https://help.zooza.online/payments/administrative-refund-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is an administrative refund?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An administrative refund is a record in Zooza that a payment has been returned to a client, without triggering a real refund through Stripe or any other payment gateway. It creates a negative transaction on the booking to reflect that the income has been reduced."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I use an administrative refund instead of a real Stripe refund?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use an administrative refund when:\n\n- You returned the money outside Zooza — for example via bank transfer, cash, or as a credit on another invoice.\n- Stripe is no longer connected to your account and you cannot trigger a gateway refund.\n- You want to record the return now but handle the actual money movement separately.\n\nIf Stripe is connected and you want Zooza to send the money back through Stripe automatically, leave the Administrative refund only checkbox unticked — that triggers a real gateway refund."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the administrative refund actually send money back to the client?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. An administrative refund only creates a record in Zooza. You are responsible for returning the money through whatever channel you agreed with the client (bank transfer, cash, etc.)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will the client be notified about the administrative refund?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No automatic notification is sent for an administrative refund. If you want the client to know, contact them separately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the refund reduce the client's outstanding debt automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The refund reduces recorded income on the booking (it appears as a negative transaction), but it does not automatically change the total charge or outstanding balance. After recording the refund, review the booking and adjust the debt manually if needed:\n\n- If the client now owes less, edit the total charge in Payments → Edit.\n- If no further balance adjustment is needed (e.g. the client simply overpaid), no action is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if Stripe is disconnected?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When the Stripe gateway is not connected to your Zooza account, the refund dialog shows: \"Gateway refund is currently not available. You can record an administrative refund.\" In this case only the administrative record option is available. The refund is still saved immediately in Zooza."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I issue a partial administrative refund?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In the refund dialog, enter any amount up to the original payment amount. Zooza prevents you from refunding more than the original payment (minus any refunds already issued)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I refund the same payment multiple times?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, as long as the total refunded amount does not exceed the original payment amount. Each refund creates a separate negative transaction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find administrative refunds in reports?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Administrative refunds appear in the same payment reports as gateway refunds — as negative transactions reducing total income. If you need to distinguish them (for accounting purposes), contact Zooza support — the underlying data includes a source field that identifies each refund as administrative or gateway."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I undo an administrative refund?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Once recorded, an administrative refund cannot be deleted. If you made an error, contact Zooza support or add a correcting manual payment to offset the negative transaction, and add a note explaining the adjustment."
+      }
+    }
+  ]
+}

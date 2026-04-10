@@ -11,7 +11,7 @@ tags:
 status: published
 source_legacy_path: legacy/0012_Welcome to Zooza.html
 source_language: mixed
-needs_screenshot_replacement: true
+needs_screenshot_replacement: false
 last_converted: 2026-02-11
 ---
 
@@ -86,7 +86,20 @@ The procedure for sending emails and SMS is the same:
 
 ![Summary screen](../../assets/images/summary-screen-before-sending.png "Summary screen before sending")
 
-8. Click **Continue** and then **Send Message** to send your message.
+8. Click **Continue**. Zooza counts the exact recipient list and creates a send job.
+
+   - **Under 100 recipients:** sending starts automatically.
+   - **100 or more recipients:** Zooza shows you the recipient count and waits for your confirmation. Click **Approve** to start sending.
+
+   ![Approval gate — recipient count and Approve button](../../assets/images/sending-approval-gate.png "Approval gate for bulk sends")
+
+9. Sending runs in the background. A progress view shows how many recipients have been processed.
+
+   ![Bulk send progress view](../../assets/images/sending-progress-view.png "Bulk send progress view")
+
+   If another send for your account is already in progress, the new send is placed in the queue and starts automatically when the first one finishes.
+
+10. You can **Cancel** the send at any time from the progress view. Emails already dispatched cannot be recalled.
 
 > **Note:** To check each sent email, we recommend that you include your own email address.
 

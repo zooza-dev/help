@@ -7,15 +7,16 @@ product_area: "Programmes"
 audience: ["admin"]
 tags: ["programme", "archive", "delete", "remove", "class", "hide"]
 status: "published"
+source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-03-14"
+last_converted: "2026-04-10"
 ---
 
 # Archive or delete a Programme
 
 You cannot permanently delete a Programme directly in the app. Instead, you **archive** it — this hides it from your active list while keeping all data, bookings, and history intact.
 
-Permanent deletion is possible in limited cases and requires contacting support.
+If you need to fully remove a Programme, you can delete it from the Programme Settings page.
 
 ---
 
@@ -47,15 +48,25 @@ To hide a single Class (class) within a Programme without archiving the whole Pr
 
 ---
 
-## Permanently delete a Programme
+## Delete a Programme
 
-Permanent deletion is only available if the Programme has **no bookings and no Classes**. It cannot be done from the app — you need to contact support.
+Admins with the **edit_course** permission can permanently delete a Programme directly from Programme Settings. This action cannot be undone — you will lose access to all related Classes, sessions, and bookings.
 
-1. Make sure the Programme has no bookings and no Classes (delete or transfer them first).
-2. Note the Programme ID from the URL (e.g. `#courses/6455`).
-3. Contact support with the Programme ID and request permanent deletion.
+> **Note:** Deletion is a soft delete. The Programme and its data are no longer accessible in the app, but are not erased from the database. There is no restore option from the UI.
 
-> **When to use this:** Programmes created automatically during account setup that you never used, or test Programmes you want fully removed.
+1. Go to **Programmes** and open the Programme you want to delete.
+2. Go to **Programme Settings → Edit**.
+3. Click **Delete programme** (next to the Save button).
+
+   ![Screenshot — archive or delete programme](../../assets/images/archive-or-delete-programme-05.png)
+
+4. Read the warning in the confirmation dialog and click **Delete** to confirm.
+
+   ![Screenshot — archive or delete programme](../../assets/images/archive-or-delete-programme-06.png)
+
+Zooza redirects you to the Programmes list after deletion.
+
+> **When to use this:** Programmes you no longer need and want fully removed from your active view. If the Programme has historical bookings you may want to reference later, consider archiving instead.
 
 ---
 
@@ -65,7 +76,7 @@ Permanent deletion is only available if the Programme has **no bookings and no C
 |------|--------|
 | Hide from active list, keep data | Archive the Programme |
 | Remove one class, keep the Programme | Archive the Class |
-| Fully remove (no bookings) | Request deletion from support |
+| Fully remove the Programme | Delete from Programme Settings |
 | Restore a hidden Programme | Unarchive from Archived filter |
 
 ---

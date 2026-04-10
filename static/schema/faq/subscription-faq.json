@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Subscription and Billing FAQ",
+  "url": "https://help.zooza.online/settings/subscription-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where do I find my Zooza subscription invoice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1. Click your name/profile in the Zooza app — top right on mobile, bottom left on desktop.\n2. Go to Subscription.\n3. Scroll to the bottom and click Manage subscription.\n\nThis opens the external billing portal where you can:\n\n- Download past invoices\n- Update your billing details (company name, address, VAT number)\n- Update your payment method (card)\n- Upgrade or downgrade your plan\n- Cancel your subscription\n\nNote: Subscription management is handled by an external billing service. If you have any issues accessing it, contact Zooza support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do I change my Zooza plan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to your name → Subscription. The page shows all available plans with pricing (billing cycle: monthly or annual). To change your plan, click Manage subscription at the bottom of the page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is Zooza pricing calculated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pricing is based on the number of active clients on your account. The tiers (monthly billing) are:\n\nAll plans include: client & family profiles, consent management, email automation, instructor management, payments & billing, and reporting. Annual billing is available at a discounted rate.\n\nZooza PRO is an optional add-on (available on all plans) that includes WhatsApp integration, Power BI integration, own payment gateway without extra fees, external marketing integrations, custom products, and advanced logs & reports.\n\nNote: Prices are in EUR. Check the Subscription page in your account for current pricing in your currency and up-to-date plan features."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I cancel my Zooza subscription?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to your name → Subscription → Manage subscription and follow the cancellation steps in the billing portal. If you have trouble, contact Zooza support."
+      }
+    }
+  ]
+}

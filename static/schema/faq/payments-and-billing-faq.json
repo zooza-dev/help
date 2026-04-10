@@ -1,0 +1,288 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Payments and Billing FAQ",
+  "url": "https://help.zooza.online/payments/payments-and-billing-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where do I find invoices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There are two different types of invoices in the Zooza context:\n\nClient invoices — invoices generated for your clients (for their bookings):\nGo to Sales & Payments → Invoices. You can filter by date, search by client, and download individual invoices or the full batch as a ZIP.\n\nZooza subscription invoices — invoices for your own Zooza subscription (what you pay Zooza):\nGo to Settings → Subscription → Manage subscription → Details → Invoices. This opens the billing portal where past invoices can be downloaded."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I resend an invoice to a client?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When you generate an invoice, it is automatically emailed to the client. If you need to resend it (for example, after making a correction):\n\n1. Open the booking.\n2. Click the pencil icon next to the invoice.\n3. Check Send invoice to client via email.\n4. Save.\n\nThe updated invoice is sent to the client's email address on record."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I download all invoices at once?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to Sales & Payments → Invoices. Apply any filters you need (date range, etc.), then click Download all. This downloads all filtered invoices as a single ZIP file.\n\nFor bulk XML export or API-based access, use the Zooza API (GET /v1/customer_invoices and GET /v1/customer_invoices/download). Contact support or see the developer documentation for details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a negative balance mean on a booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The balance shows the difference between what the client should pay and what they actually paid.\n\n- 0 = fully paid.\n- Negative amount = payment was not completed or failed. The client needs to finish payment via their Client Profile.\n\nA negative balance does not necessarily mean \"overpaid\" — it means there is an outstanding amount."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when a client registers but does not pay?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The booking is created even if the payment fails or is skipped. This ensures you still capture the lead. The parent can complete the payment later via their Client Profile.\n\nYou can configure payment reminders per programme to automatically follow up with unpaid clients. After a set number of reminders, the system can auto-remove the booking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do payment reminders work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Payment reminders are configured per programme under the payment settings. You set:\n\n- How many reminders to send.\n- The interval between reminders.\n- Whether the system should automatically cancel the booking after all reminders expire.\n\nGo to Programme → Settings → Price to configure this."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I issue a refund?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Refunds are handled directly in Zooza:\n\n1. Go to Bookings → Detail → Payments.\n2. Select the transaction.\n3. Click Refund (full or partial).\n\nThe refund is processed through Stripe automatically. You do not need to log into Stripe separately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does monthly billing (aliquot) work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When a parent joins mid-month, the system can calculate a prorated first payment based on the remaining sessions in that month. This is called aliquot billing.\n\n- Aliquot ON: First payment is adjusted for the number of sessions remaining. Subsequent months are the full fixed amount.\n- Aliquot OFF: Every payment is always the same fixed monthly amount, regardless of when the client joins.\n\nChoose the option that fits your business model. Most clients prefer aliquot OFF for simplicity during launch, and turn it ON later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I retrospectively generate invoices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can disable automatic invoice generation during launch, accept bookings and payments, and then generate invoices later once your accounting settings (e.g., VAT rates in Xero) are fully configured."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I handle a client who forgot to use a discount code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Instead of refunding, the easiest approach is to reduce the next instalment by the discount amount and send the client a quick note explaining the adjustment. This is simpler than editing past payments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I mark a booking as paid when payment was received outside the system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If a client paid by direct bank transfer or you credited them manually, you can adjust the payment status in their booking detail. Go to Bookings → Detail → Payments and record the manual payment to clear the outstanding balance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I use \"Edit payment\" vs \"Refund\"?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use Edit payment for corrections — for example, when the amount is wrong or a payment was assigned to the wrong booking. Use Refund only when you are actually returning money to the client.\n\nUsing Refund incorrectly (e.g., to zero out a manual entry) creates phantom transactions that appear in your financial reports and distort totals. If you need to correct or move a payment between bookings, a debt correction is the preferred approach."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to payment schedules when I copy bookings to a new term?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Payment schedules are not automatically carried over when you copy bookings to a new term. Because the client did not go through the booking form and select a payment template, the system does not assign one.\n\nAfter copying bookings, you must manually apply the correct payment template to each booking. Without this step, the system calculates the price as the base rate multiplied by the number of sessions, which may differ from the expected instalment amount."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does pro-rata (aliquot) pricing work for late bookings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When a client registers after the term has started and aliquot pricing is enabled, the system calculates the price as:\n\nremaining sessions ÷ total sessions × full price\n\nThis adjusted price is then split according to the active payment template (e.g., monthly instalments). Zooza supports four calculation methods — session-based, day-based, no value, and full price — each suited to different business models.\n\nFor full configuration details and common scenarios, see Late bookings (pro-rata management)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does the payments dashboard only show 10 unpaid bookings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Unpaid Bookings widget on the Payments dashboard displays only the first 10 unpaid bookings as a quick overview. It is not intended to show every outstanding balance.\n\nTo see the full list of unpaid bookings:\n\n1. Go to Bookings.\n2. Use the status or payment filter to show only unpaid or partially paid bookings.\n3. The filtered list shows all matching bookings with full pagination."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I set up a Netflix-style recurring membership?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For ongoing memberships where clients pay monthly and stay enrolled indefinitely (e.g., football club, dance studio, gym), use the Membership price type with automatic late booking approval.\n\n1. Set the programme price type to Membership.\n2. Under Late bookings, select Automatically confirmed.\n3. Set Aliquot price calculation to Full programme price.\n4. Uncheck Include Initial Full Scheduled Payment so new joiners are not charged a full instalment immediately on top of their first scheduled payment.\n5. Create a monthly payment template with Day of the month when the payment is due set to 0 (charges on the same day each month that the client joined).\n\nFor the full step-by-step guide, see Membership Subscription Setup."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does the QR code in my payment email not work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The QR code in payment emails pulls recipient details from your billing profile. If the profile name does not match the bank account holder name, some banking apps will reject or fail to process the QR code when scanned.\n\nTo fix this:\n\n1. Go to Settings → Billing Profiles.\n2. Open the relevant billing profile.\n3. Verify that the account holder name and IBAN match your actual bank account details exactly.\n4. Save and resend the payment notification to the client.\n\nFor full details on billing profiles, see Billing and invoicing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I set up billing profiles and invoicing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to Settings → Billing. There you can enable automatic invoice generation, set up your default billing profile (company name, IBAN, address), and create additional profiles for multi-entity businesses. Each programme can be assigned a specific billing profile. For the full setup guide, see Billing and invoicing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I generate an invoice manually for a single booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Open the booking detail, click Show payments, and in the Invoices section click Generate invoice. Select the billing profile to use and confirm. The invoice is generated immediately and emailed to the client. This works regardless of whether automatic invoice generation is enabled.\n\nWarning: Clicking Generate invoice always creates a new invoice. If you need to change the price, discount, or other booking details, use Edit on the booking — do not click Generate invoice again. Clicking it a second time creates a duplicate (including a €0 invoice if the booking has no outstanding balance at that moment)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I accidentally generated a duplicate or €0 invoice — what do I do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This typically happens when Generate invoice is clicked after a price or discount was already adjusted, or clicked more than once.\n\nZooza does not delete invoices or generate credit notes. Handle the correction in your invoicing system:\n\n- Fakturoid / Számlázz — issue a cancellation (storno) invoice against the incorrect one, or delete it if it has not been sent yet.\n- Xero / Abra Flexi / Smartbill — void or delete the incorrect invoice in that system.\n\nCorrecting it in your invoicing system has no effect on the Zooza booking — the payment record and balance stay as-is.\n\nTo avoid duplicates: if you need to change a price or apply a discount after a booking is created, always use Edit on the booking — not Generate invoice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between automatic and manual invoice generation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Automatic — Zooza generates an invoice every time a payment status changes to \"paid\" on a booking. A single booking can produce multiple invoices if the client pays in instalments. Manual — you generate invoices one at a time from the booking detail. You can use both: leave automatic generation off during setup, and generate invoices manually or enable it later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Zooza support credit notes or debit notes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "- Credit note (reduces the original invoice — e.g. correcting an overcharge, issuing a partial refund on an invoice)\n- Debit note (increases the original invoice — e.g. charging an additional amount not included originally)\n\nZooza does not have a dedicated credit note or debit note button. What is available depends entirely on which invoicing system you use:\n\nImportant: Changes made to invoices in external systems (Xero, Abra Flexi, Smartbill, Fakturoid, Oblio) do not sync back to Zooza automatically. Use the manual refresh button on the invoice in Zooza to pull the latest state. Zooza always keeps the original invoice reference it generated.\n\n### To fix a wrong invoice — general process\n\n1. Identify which invoicing system you use (Settings → Billing → Invoice Settings).\n2. If using Zooza built-in: click the pencil icon next to the invoice on the booking detail. You can correct the period, date, payment method, and description. This does not change the payment amount.\n3. If using an external system: open the invoice in that system and apply the correction there (edit, void, credit note, or storno — depending on the system). The corrected version will not appear in Zooza.\n4. If the payment amount itself needs to change, adjust the debt on the booking in Zooza separately — see Edit payment on booking.\n\n### To increase the amount owed (debit note equivalent)\n\nZooza does not issue debit notes. To charge a client an additional amount:\n\n1. Open the booking detail.\n2. Adjust the outstanding debt manually — see Edit payment on booking.\n3. If an invoice is required for the additional amount, generate a new invoice for that booking once the additional payment is recorded."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to a client's scheduled payment when I cancel a session?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the payment type:\n\n- Pay-as-you-go — the system automatically removes the payment obligation for that session. The client's next scheduled payment is reduced by the session unit price. No action is needed from you.\n- Fixed monthly / instalment plan — cancelling a session does not automatically reduce the client's payment. Use Adjust session payments from the Calendar bulk edit to manually credit the affected clients. See Session payment adjustments.\n\nIn both cases, the client is not notified automatically when their payment amount changes due to an adjustment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I manually credit or debit a client's scheduled payment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Open the booking, go to Payment plan, and click on the specific scheduled payment. In the Adjustments section, enter a positive amount (credit — reduces what they owe) or a negative amount (debit — increases what they owe), add a description, and click Save.\n\nFor the full walkthrough, see Session payment adjustments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I credit multiple clients at once after cancelling a session?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, using bulk edit in the Calendar:\n\n1. Go to Calendar and select the cancelled sessions.\n2. Click Bulk edit → check Adjust session payments.\n3. Select Credit sessions, set the amount, and confirm.\n\nZooza applies the credit to the next scheduled payment for each affected client. See Session payment adjustments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if a client has no upcoming scheduled payment when I apply a bulk credit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If a client's payment plan has already ended or all their scheduled payments have been processed, the adjustment cannot be applied and is skipped for that client. You will need to handle any compensation for those clients manually (e.g. by recording a manual payment or issuing a refund)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I reverse a manual payment adjustment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In the Adjustments list on the payment detail, click Reverse next to the adjustment. A new entry with the opposite amount is created. The original adjustment remains visible in the list for the audit trail.\n\nYou can only reverse manual adjustments. Automatic adjustments (generated by session bookings or cancellations in Pay-as-you-go) are managed by the system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are payment reminder emails arriving in the middle of the night?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Payment reminder emails (unpaid debt, upcoming payment, missed payment) are sent as part of a nightly batch process. This means they can arrive at any time between midnight and approximately 6:00 AM — depending on the volume of emails being processed that night.\n\nThe sending time is not configurable. You cannot set a specific hour for when these emails go out.\n\nWhat you can do:\n\n- Add a note to the email template acknowledging it was sent automatically overnight, so clients are not alarmed by the timestamp. Go to Communication → Templates, find the relevant payment notification template, and add a line such as \"This reminder was generated automatically and sent during off-hours. Please do not reply to this email.\"\n- If the late-night delivery is causing significant client complaints, consider disabling the reminder type entirely and using a different follow-up workflow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my client receiving a payment reminder before the due date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza can send an \"upcoming payment\" notification a set number of days before a scheduled payment becomes due. This is separate from the overdue reminder sent after the due date.\n\nIf clients are receiving reminders 1–3 weeks before they need to pay, this is likely the \"upcoming payment\" notification being triggered.\n\nTo turn it off or adjust it:\n\n- Globally: Go to Settings → Payment Settings and disable or adjust Notify before a scheduled payment is issued. Set the number of days to a smaller value, or turn it off entirely.\n- Per programme: Go to Programme → Settings → Price and Payment → Payment Reminders and adjust the reminder schedule for that programme.\n\nNote: This setting controls notification at the programme level. You cannot turn off reminders for a single client — only globally or per programme."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I change the invoice buyer (orderer) on an existing invoice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Zooza stores buyer (orderer) details per client and lets you update them and regenerate invoices without creating duplicates.\n\nTo correct the buyer on an existing invoice:\n\n1. Open the client's profile in Clients and find the Invoice Buyer Data section.\n2. Edit the existing buyer profile or add a new one (e.g. to switch from personal name to company name).\n3. Go to the booking → Invoices, click the edit icon next to the invoice, and select the updated buyer profile.\n4. Click Regenerate invoices to apply the change.\n\nSupported engines: Invoice regeneration is available for Faktury Online and Xero only. For other engines, update the invoice manually in your accounting software.\n\nA client can have multiple buyer profiles — useful when the same person registers on behalf of different companies. Each registration tracks which buyer profile was used.\n\nFor the full workflow, see Invoice buyer data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "The price on the booking page is higher than expected — why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most common cause is a misconfigured sessions per month setting in the payment plan. Zooza uses the sessions-per-month count to calculate the monthly fee displayed to the parent. If this number is set too high (for example, 15 instead of 4), the displayed price will be a multiple of your intended monthly amount.\n\nTo fix it:\n\n1. Go to Settings → Payment Settings and open the relevant payment plan.\n2. Check the Sessions per month (or billing sessions) field.\n3. Correct it to the actual number of sessions per billing period (e.g. 4 for a weekly class).\n4. Save and verify the price on the booking page.\n\nNote: Changing this setting does not affect existing bookings or payment plans already assigned to clients — only new bookings will reflect the corrected price."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I forecast income for the next term?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the Payment Insights → Forecast view, not the Scheduled Payments report:\n\n- Scheduled Payments Overview (Sales & Payments → Scheduled payments overview) — shows payments that are already scheduled and their current status (Scheduled / Processed). This is useful for tracking what has been charged, not for projecting future income.\n- Payment Insights → Forecast (Sales & Payments → Payments → Reports → Insights and Trends) — shows a monthly forecast based on active payment templates. This reflects expected income assuming current bookings and payment plans remain unchanged.\n\nNote: The forecast is based on active payment plans only. Trial bookings, pay-as-you-go sessions without a payment plan, and any bookings with no payment template assigned are excluded. The forecast also doesn't account for future cancellations or new enrolments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use multiple billing profiles for different programmes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Go to Settings → Billing → Other billing profiles and click Add. Each profile has its own company details, IBAN, and invoice numbering. Assign a profile to a programme in Programme → Settings → Price and Payment → Invoicing. If no profile is assigned, the default billing profile is used."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I download a large number of invoices (e.g. for Pohoda)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For accounting software imports (such as Pohoda), you need invoices as individual files, not a single combined PDF.\n\nOption 1 — ZIP download from the UI:\n\n1. Go to Sales & Payments → Invoices.\n2. Apply a date filter to limit the batch (e.g. one month at a time).\n3. Click Download all — this downloads all filtered invoices as a ZIP archive containing individual PDF files.\n4. Import the PDFs into Pohoda (or your other accounting software) from the ZIP.\n\nTip: If you have hundreds of invoices, split into monthly batches. Very large single downloads (several hundred invoices at once) can time out in the browser.\n\nOption 2 — API export:\n\nIf you regularly need bulk exports, use the Zooza API:\n- GET /v1/customer_invoices — list invoices with date/status filters\n- GET /v1/customer_invoices/download — download invoice files\n\nContact Zooza support or your account manager to get API credentials and documentation.\n\nSK: Na hromadné stiahnutie faktúr (napr. pre import do Pohody) choďte na Predaj a platby → Faktúry, nastavte filter dátumu a kliknite Stiahnuť všetky. Stiahne sa ZIP so samostatnými PDF súbormi. Pri veľkom počte odporúčame stiahnuť po mesiacoch — väčšie dávky môžu vypršať."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Zooza support in-person (POS) card payment terminals?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Zooza is an online management and payments platform — it does not provide, integrate with, or manage physical card payment terminals (POS devices).\n\nWhat Zooza handles:\n- Online card payments via Stripe (client pays through the booking form or client profile)\n- Bank transfer via QR code or reference number (variabilný symbol)\n- Manual payment recording (cash, bank transfer, etc. — you record it in the booking, Zooza does not process it)\n\nWhat Zooza does not handle:\n- In-person card terminals (mPOS, standard POS)\n- Apple Pay / Google Pay at a physical location\n- Cash register software\n\nFor SK businesses subject to the cashless payment acceptance requirement (zákon o povinnej bezhotovostnej platbe — effective 1.3.2026):\n\nThe obligation to accept cashless payments at a physical location applies to in-person transactions. Zooza's online payment infrastructure (Stripe, bank transfer) fulfils the cashless requirement for online bookings and transactions. However, if you accept in-person payments at a venue (e.g. at the door, at the reception), you need a separate POS solution.\n\nZooza does not provide or recommend a specific POS provider. Contact your bank or a payment provider (e.g. GP Webpay, Tatra banka mPOS, SumUp, iZettle) for in-person card acceptance.\n\nSK: Zooza nespravuje POS terminály. Pre fyzické platby na mieste (zákonná povinnosť od 1.3.2026) je potrebný samostatný POS terminál cez vašu banku alebo platobného poskytovateľa. Zooza pokrýva len online platby (Stripe, bankový prevod, QR kód)."
+      }
+    }
+  ]
+}
