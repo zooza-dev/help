@@ -65,13 +65,14 @@ All docs should be routable to: `/help/<product-area>/<slug>`
 Add YAML frontmatter:
 ```yaml
 ---
-title: "..."
+title: "..."                  # 10–70 chars — used as page <title> and OG title
+description: "..."            # 50–160 chars — meta description for Google and AI crawlers
 slug: "kebab-case"
 type: "guides|setup|payments|troubleshooting|faq"
 product_area: "Programmes|Classes|Calendar|Bookings|Orders|Clients|Payments|Settings|Widgets|Communication"
 sub_area: ""            # optional (Email|WhatsApp)
 audience: ["admin"]     # one or more from taxonomy.yml
-tags: ["..."]
+tags: ["..."]           # at least one tag required
 status: "published"     # draft|published|archived
 source_legacy_path: "legacy/html/..."
 source_language: "en|sk|mixed"
@@ -79,6 +80,19 @@ needs_screenshot_replacement: true|false
 last_converted: "2026-02-11"
 ---
 ```
+
+### SEO rules for frontmatter
+- **title**: 10–70 chars. Action/benefit-driven, not label-based. E.g. "Add a scheduled payment" not "Scheduled Payments".
+- **description**: Always write explicitly — do not rely on auto-extraction. 50–160 chars. Summarise the outcome, not the title. Include the primary keyword naturally.
+- **tags**: Use existing taxonomy tags. Minimum one. Tags feed into the agent export metadata and Docusaurus tag pages.
+
+### Image alt text rules
+Every image must have descriptive alt text — minimum 10 meaningful characters after stripping "Screenshot — " prefix.
+
+- **Good:** `![Payment plan history showing two previous plans](../../assets/images/payment-plan-history-01.png)`
+- **Bad:** `![Screenshot](...)` or `![](...)` or `![Screenshot — ](...)` (too generic, fails SEO check)
+
+The `fix_obsidian_images.py` script generates generic alt text (`Screenshot — {doc-name}`). **Always replace** the generated alt text with a real description before committing.
 
 ## Conversion pipeline (kb:convert)
 Perform these steps in order.
@@ -178,6 +192,49 @@ Validation must fail if:
 - a doc has multiple H1 or skipped heading levels
 
 Write a summary to `build/reports/validation-report.md`.
+
+## Pre-export pipeline (run before every export and commit)
+
+Always run these steps in order before exporting or committing content changes:
+
+```bash
+# 1. Fix Obsidian images (if any ![[...]] refs remain)
+python3 scripts/fix_obsidian_images.py
+
+# 2. SEO & AI readiness check — must pass before export
+python3 scripts/seo_check.py
+
+# 3. Validate KB structure
+python3 scripts/validate_kb.py
+
+# 4. Run all exports (includes FAQ schema + agent JSONL + web)
+python3 scripts/export/export_all.py
+```
+
+Or in one command (SEO check is step 1 inside export_all.py):
+```bash
+python3 scripts/export/export_all.py
+```
+
+### SEO check (`scripts/seo_check.py`)
+Checks every published doc for:
+- **Title**: 10–70 chars
+- **Description**: 50–160 chars (frontmatter required; auto-extraction is a fallback, not a substitute)
+- **Tags**: at least one
+- **Image alt text**: non-empty, non-generic (≥10 meaningful chars after stripping "Screenshot — ")
+- **Obsidian syntax**: no `![[...]]` remaining
+- **FAQ schema**: every `type: faq` doc must have `static/schema/faq/{slug}.json`
+- **AI files**: `static/llms.txt` and `static/robots.txt` must exist
+
+Report written to `build/reports/seo-report.md`. Errors block export; warnings do not.
+
+### FAQ JSON-LD schema (`scripts/generate_faq_schema.py`)
+Auto-generates `static/schema/faq/{slug}.json` for every published `type: faq` doc.
+- Extracts `## Heading` as Question, following text as Answer
+- Generates `FAQPage` JSON-LD with `mainEntity` array
+- During Docusaurus export, schemas are injected as `<script type="application/ld+json">` into each FAQ page `<head>` — visible to Google and AI crawlers
+
+**Run after any FAQ content change.** The export pipeline runs it automatically.
 
 ## Agent export (kb:export)
 Generate `build/exports/agent/canonical.jsonl`:

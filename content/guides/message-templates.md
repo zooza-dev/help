@@ -10,7 +10,7 @@ tags: ["email"]
 status: "published"
 source_legacy_path: "legacy/0007_Welcome to Zooza.html"
 source_language: "en"
-needs_screenshot_replacement: true
+needs_screenshot_replacement: false
 last_converted: "2026-02-13"
 ---
 

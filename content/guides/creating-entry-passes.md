@@ -10,7 +10,7 @@ tags: ["entry pass", "credit pass", "prepaid credit", "pay-as-you-go"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
-needs_screenshot_replacement: true
+needs_screenshot_replacement: false
 last_converted: "2026-02-15"
 ---
 

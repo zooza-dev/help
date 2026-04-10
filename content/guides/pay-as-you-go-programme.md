@@ -10,7 +10,7 @@ tags: ["pay-as-you-go", "open booking", "session booking"]
 status: "published"
 source_legacy_path: "legacy/0051_Welcome to Zooza.html"
 source_language: "en"
-needs_screenshot_replacement: true
+needs_screenshot_replacement: false
 last_converted: "2026-02-15"
 ---
 
