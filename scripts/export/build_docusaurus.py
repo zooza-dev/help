@@ -1098,6 +1098,23 @@ def build_docusaurus(dry_run: bool = False, clean: bool = False, staging: bool =
                 body_out = fix_mdx_html(body_out)
                 body_out = fix_internal_links(body_out, slug_to_url)
 
+                # Inject FAQ JSON-LD schema into MDX <head> for FAQ-type docs.
+                # Uses MDX <head> element which Docusaurus injects into <head>.
+                # JSON is embedded as a template literal to avoid JSX parsing issues.
+                if type_name == "faq":
+                    slug = fm.get("slug", "")
+                    schema_path = ROOT_DIR / "static" / "schema" / "faq" / f"{slug}.json"
+                    if schema_path.exists():
+                        schema_raw = schema_path.read_text(encoding="utf-8").replace("`", "&#96;")
+                        schema_block = (
+                            "<head>\n"
+                            "  <script type=\"application/ld+json\">\n"
+                            f"    {{`{schema_raw}`}}\n"
+                            "  </script>\n"
+                            "</head>\n\n"
+                        )
+                        body_out = schema_block + body_out
+
                 fm_yaml = yaml.dump(
                     doca_fm,
                     allow_unicode=True,
