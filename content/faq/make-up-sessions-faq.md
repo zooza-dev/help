@@ -109,19 +109,35 @@ Go to the booking detail page. Scroll to the **Credits** section at the bottom. 
 
 ## A client says make-up sessions are not showing up. Where do I start?
 
-In almost every case this is a settings issue, not a bug. Work through this checklist:
+In almost every case this is a settings issue, not a bug. The fastest way to diagnose a specific case is to use **MATKO**, the built-in eligibility diagnostic tool.
 
-### 1. Check the attendance state
+### Use MATKO for a precise diagnosis
+
+**Settings → Tools → MATKO** runs all 19 eligibility checks at once and tells you exactly which condition is failing — attendance state, capacity, timing, programme scope, or display limit. It is the most reliable first step when a specific session is not visible.
+
+You need:
+- The **Credit ID** — found in the client's registration → Credits tab
+- The **Session ID** — found using the session picker on the MATKO page, or in the session URL
+
+See [MATKO — Diagnose why a make-up session is not showing](../troubleshooting/matko-replacement-diagnostic.md) for the full guide.
+
+If you prefer to work through it manually, the checklist below covers all the same conditions.
+
+---
+
+### Manual checklist
+
+#### 1. Check the attendance state
 
 The absence must be recorded as **"Cancelled"**, not **"Did not attend"**. Only "Cancelled" generates a make-up credit. If the state is wrong, fix it in the session's attendance view and the credit will appear.
 
-### 2. Check that make-up sessions are enabled on the programme
+#### 2. Check that make-up sessions are enabled on the programme
 
 Go to **Programmes** → select the programme → **Settings** → **Make-up sessions**. If this is off, no options appear for any client in that programme.
 
-### 3. Understand the display limit
+#### 3. Understand the display limit
 
-The system shows only the **first few dozen compatible sessions** in the client's make-up list. This is the most common reason a specific session is not visible — it exists and has capacity, but it is not in the displayed set because there are too many options overall.
+The system shows only the **first 100 compatible sessions** in the client's make-up list. This is the most common reason a specific session is not visible — it exists and has capacity, but it is not in the displayed set because there are too many options overall.
 
 **Fix:** Reduce the number of sessions offered as make-up options so the right ones appear. You can do this by:
 
@@ -129,21 +145,21 @@ The system shows only the **first few dozen compatible sessions** in the client'
 - Setting tighter time restrictions (see setting 5 below).
 - Setting extra capacity to 0 on classes that should not appear as make-up options.
 
-### 4. Check available capacity
+#### 4. Check available capacity
 
 Even if extra capacity is set globally, individual classes can override it. Go to the class detail → **Make-up sessions** tile. Check the per-class extra capacity value and whether it adds to or replaces the global setting.
 
 If both the class is at its normal capacity limit and the extra capacity is 0, no make-up spots are available and the session will not appear.
 
-### 5. Check the time restriction for regular make-up sessions
+#### 5. Check the time restriction for regular make-up sessions
 
-Go to **Settings** → **Programmes** → **Time restriction in hours for offering a regular make-up session**. If this is set to e.g. 2 hours, any session starting in less than 2 hours is hidden from the make-up list — even if it has free spots.
+Go to **Settings** → **General** → **Time restriction in hours for offering a regular make-up session**. If this is set to e.g. 2 hours, any session starting in less than 2 hours is hidden from the make-up list — even if it has free spots.
 
-### 6. Check the 4-day rule
+#### 6. Check the 4-day rule
 
 Classes that have not yet started only appear as make-up options **4 days before the class start date**. If a class starts next month, it will not appear in the list today.
 
-### 7. Check the cancellation deadline
+#### 7. Check the cancellation deadline
 
 If the client is trying to cancel and book a make-up within the configured cut-off window, the option will not be available.
 
@@ -151,10 +167,12 @@ If the client is trying to cancel and book a make-up within the configured cut-o
 
 ## Why can't a parent see make-up options in their profile?
 
-Check these common causes:
+For a precise answer, use **Settings → Tools → MATKO**. Enter the client's Credit ID and the Session ID — it runs all eligibility checks and tells you exactly which condition is blocking the result. See [MATKO — Diagnose why a make-up session is not showing](../troubleshooting/matko-replacement-diagnostic.md).
+
+Common causes without running MATKO:
 
 1. **Attendance state** — The absence must be recorded as "Cancelled", not "Did not attend".
-2. **Display limit** — The system shows only the first few dozen compatible sessions. If there are many options available, some specific sessions may not appear. Narrow the scope in programme settings or reduce extra capacity on irrelevant classes.
+2. **Display limit** — The system shows only the first 100 compatible sessions. If there are many options available, some specific sessions may not appear. Narrow the scope in programme settings or reduce extra capacity on irrelevant classes.
 3. **No available capacity** — All compatible sessions may be full (including the extra capacity allowance).
 4. **Make-up sessions disabled** — Verify that make-up sessions are enabled on the programme. Go to **Programmes** → select the programme → **Settings** → **Make-up sessions**.
 5. **Class has not started** — Make-up options only appear for classes that start within 4 days or have already begun.
@@ -245,6 +263,7 @@ To fix a missing credit, change the attendance state from "Did not attend" to "C
 
 ## Related
 
+- [MATKO — Diagnose why a make-up session is not showing](../troubleshooting/matko-replacement-diagnostic.md) — run a precise eligibility diagnostic for a specific credit and session
 - [Make-up sessions complete guide](../guides/replacement-hours-complete.md) — full setup and workflow
 - [Custom make-up sessions](../guides/custom-replacement-lessons.md) — instructor-approved custom replacement sessions
 - [Cancellation log](../troubleshooting/cancellation-log.md) — track and audit session cancellations

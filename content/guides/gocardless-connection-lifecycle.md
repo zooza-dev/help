@@ -156,3 +156,8 @@ If you discover that payments have not been matching and suspect your GoCardless
 - **Check the payments dashboard regularly.** If you notice that no new payments have appeared for several days, your connection may have expired.
 - **Consider email-notification pairing.** If renewing every 90 days is inconvenient or if your bank has known GoCardless issues, email-notification pairing eliminates the renewal cycle entirely.
 - **Keep GoCardless and email-notification pairing mutually exclusive.** Do not run both methods on the same bank account at the same time. This causes duplicate transactions in Zooza.
+
+## Related
+
+- [Set up how Zooza collects money from clients](../setup/inbound-payments-setup.md) — configure bank statement reading per billing profile and manage channel defaults
+- [Inbound payments — setup and pairing](../guides/inbound-payments.md) — how automatic payment matching works day to day

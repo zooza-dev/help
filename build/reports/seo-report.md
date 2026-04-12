@@ -1,10 +1,10 @@
 # SEO & AI Readiness Report
 
-**Generated:** 2026-04-10
+**Generated:** 2026-04-12
 
 ## Summary
 
-- **Total docs checked:** 211
+- **Total docs checked:** 214
 - **Docs with errors:** 0
 - **Docs with warnings only:** 85
 - **Total errors:** 0

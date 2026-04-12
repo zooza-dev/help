@@ -78,5 +78,10 @@ Zooza redirects you to the Programmes list after deletion.
 | Remove one class, keep the Programme | Archive the Class |
 | Fully remove the Programme | Delete from Programme Settings |
 | Restore a hidden Programme | Unarchive from Archived filter |
+| Recover an accidentally deleted Programme, Class, or Registration | **Settings → Tools → Trash** (within 30 days) |
 
 ---
+
+## Related
+
+- [Recover deleted sessions, classes, and registrations](../guides/trash-and-restore.md) — restore accidentally deleted items within 30 days

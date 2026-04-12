@@ -90,6 +90,37 @@ If you cannot find your custom template, check that you are looking in the **Use
 
 <!-- REVIEW: Confirm the exact dropdown section names in the current UI — they may have been renamed. -->
 
+## Creating template variants and assigning them to a programme
+
+Zooza lets you create multiple variants of the same template type — for example, separate booking confirmation emails for summer camps, adult classes, or open courses. Each programme can then use a different variant.
+
+### Step 1 — Create a new variant
+
+1. Go to **Communication → Templates**.
+2. Find the template type you want to customise (e.g. **Confirmation of booking**).
+3. Click **Add variant** (or open an existing template and use **Duplicate**).
+4. Name the variant clearly (e.g. "Booking confirmation — Summer camp").
+5. Edit the subject line and body. Use [dynamic tags](dynamic-tags.md) as needed.
+6. Click **Save**.
+
+> **Tip:** If you want to restore a previous version of a template, contact Zooza support — deleted or overwritten templates can sometimes be recovered from history.
+
+### Step 2 — Assign the variant to a programme
+
+1. Go to the **Programme** you want to use this template for.
+2. Open **Settings → Online registration**.
+3. Find the **Confirmation email** (or equivalent) field.
+4. Select your new variant from the dropdown.
+5. Save the programme settings.
+
+From this point on, every booking made for that programme will use your custom variant instead of the default system template.
+
+### Notes
+
+- If no variant is assigned at programme level, Zooza uses the **default system template** for that template type.
+- You can assign different variants to different programmes — useful if you run camps, regular classes, and one-off events with different confirmation styles.
+- Template variants are shared across your account. Any admin can edit them.
+
 ## When automatic emails are NOT sent
 
 Zooza sends automatic confirmation emails for online bookings. However, automatic emails are **not sent** in these cases:

@@ -1,6 +1,6 @@
 ---
 title: "Inbound payments — setup and pairing"
-description: "Inbound payments is the system that watches your bank account for incoming transfers and automatically matches each payment to the correct booking or..."
+description: "Inbound payments watches your bank account and automatically matches incoming transfers to the correct booking. Set up channels and review payments."
 slug: "inbound-payments"
 type: "guides"
 product_area: "Payments"
@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-04-02"
+last_converted: "2026-04-12"
 ---
 
 <!-- Synonyms: bank transfer matching, payment pairing, incoming payments, match payment to booking, payment not paired, platba nespárovaná, príchodzí platba, párovanie platieb, bejövő fizetés párosítás, platba nepřiřazena -->
@@ -19,6 +19,8 @@ last_converted: "2026-04-02"
 # Inbound payments — setup and pairing
 
 Inbound payments is the system that watches your bank account for incoming transfers and automatically matches each payment to the correct booking or order. When a client pays by bank transfer, Zooza picks it up, identifies which registration it belongs to, and records it — without manual entry.
+
+![Screenshot — inbound payments](../../assets/images/inbound-payments-01.png)
 
 ---
 
@@ -34,7 +36,9 @@ Inbound payments is the system that watches your bank account for incoming trans
 
 ## Setting up ingestion
 
-Before Zooza can receive payments, you must connect at least one ingestion channel.
+All payment channel setup is done through the **Setup wizard** at **Payments → Inbound → Setup**. The wizard walks you through each channel — online card, direct debit, and cash / bank transfer — and lets you configure bank statement reading per billing profile.
+
+Before Zooza can receive bank transfers, you must connect at least one ingestion channel.
 
 ### GoCardless (open banking)
 
@@ -44,11 +48,12 @@ GoCardless here acts as a **bank account reader**, not a payment processor. It m
 
 **To connect:**
 
-1. Go to **Settings → Payments → Inbound Payments → Connect bank account**.
-2. Select your bank and authorise GoCardless to read your transaction data (standard open banking consent flow).
-3. Once connected, incoming transactions are detected and processed automatically.
+1. Go to **Payments → Inbound → Setup**.
+2. In the **Current setup** screen, find your billing profile and click **Reconnect (add IBAN)** or configure it from the Cash / bank transfer step of the wizard.
+3. Select your bank and authorise GoCardless to read your transaction data (standard open banking consent flow).
+4. Once connected, incoming transactions are detected and processed automatically.
 
-**Important — consent expiry:** Your open banking consent expires periodically (varies by bank, typically 90 days under PSD2). When it expires, transaction notifications stop. Zooza does not send an alert when the consent expires — you will notice the absence of incoming payments in the dashboard. Reconnect promptly to resume automatic detection.
+**Important — consent expiry:** Your open banking consent expires periodically (varies by bank, typically 90 days under PSD2). When it expires, transaction notifications stop. Zooza does not send an alert when the consent expires — you will notice the absence of incoming payments in the dashboard. Reconnect promptly via **Payments → Inbound → Setup**.
 
 ### Bank email notifications
 
@@ -56,9 +61,10 @@ Most banks can send you an email when a payment arrives. Zooza generates a uniqu
 
 **To find your inbound email address:**
 
-1. Go to **Settings → Billing → [your billing profile] → Inbound Payments**.
-2. Copy the generated email address.
-3. Log in to your online banking and configure payment notifications to be forwarded to that address.
+1. Go to **Payments → Inbound → Setup**.
+2. Open the **Cash / bank transfer** step.
+3. Select your billing profile and choose **Email parser**.
+4. Copy the generated email address and configure your bank to forward payment notifications to it.
 
 **Supported banks:**
 
@@ -73,7 +79,7 @@ Each bank uses a different email format — Zooza has a specific parser for each
 
 For manual or one-off import of bank statement data:
 
-1. Go to **Sales & Payments → Inbound Payments → Import**.
+1. Go to **Payments → Inbound → Import**.
 2. Upload a CSV file with the required columns: `posting_date`, `amount`, `currency` (required), plus optional `payers_iban`, `variable_symbol`, `information_for_beneficiary`.
 3. Each row is processed individually. Duplicates are detected and skipped automatically.
 
@@ -113,7 +119,7 @@ There is no "pending" state visible to admins — a payment is either waiting fo
 
 ## Manual review — what to do
 
-Payments that land in **New** status need your attention. Go to **Sales & Payments → Inbound Payments** and look for payments with status **New**.
+Payments that land in **New** status need your attention. Go to **Payments → Inbound → List** and look for payments with status **New**.
 
 ### Pairing manually
 
@@ -143,7 +149,7 @@ A filter matches when:
 
 Filters have built-in safeguards — a filter cannot be so broad that it starts catching real Zooza payments. If you manually override 3 ignored payments from the same filter (by pairing them instead), the filter is automatically deactivated.
 
-You can manage filters in **Settings → Payments → Inbound Payments → Ignore Filters**.
+You can manage filters in **Payments → Inbound → AI Rules & Filters**.
 
 ---
 
@@ -163,7 +169,7 @@ Business rules are natural language instructions you write to guide how payments
 | **Ignore** | When to ignore a payment regardless of match |
 | **Pairing** | Special logic for matching payments to orders |
 
-To add rules: **Settings → Payments → Inbound Payments → Business Rules**. Maximum 10 active rules per account.
+To add rules: **Payments → Inbound → AI Rules & Filters**. Maximum 10 active rules per account.
 
 ---
 
@@ -180,7 +186,7 @@ Common reasons:
 
 **Payments stopped arriving — GoCardless connection issue?**
 
-Check **Settings → Payments → Inbound Payments → Connected accounts**. If the connection shows as expired, reconnect by going through the GoCardless authorisation flow again.
+Go to **Payments → Inbound → Setup** and check the current setup screen. If a billing profile shows a reconnection warning (yellow or red status), click **Reconnect (add IBAN)** and go through the GoCardless authorisation flow again.
 
 **Duplicate payment appeared — how to handle it?**
 
@@ -190,6 +196,7 @@ Ignore the duplicate. If you have a filter set up for the payer's IBAN, the dupl
 
 ## Related
 
+- [Set up how Zooza collects money from clients](../setup/inbound-payments-setup.md) — step-by-step wizard for configuring channels and bank statement reading
 - [Inbound payments — technical reference](../reference/inbound-payments-internals.md) — full algorithm details, AI evaluation, delegation chains
 - [Billing and invoicing](../setup/billing-and-invoicing.md) — billing profiles and IBAN setup
 - [GoCardless direct debit](./gocardless-direct-debit-mandates.md) — collecting payments from clients (separate from bank account reading)

@@ -95,6 +95,7 @@ If this happens, contact Zooza support immediately — the duplicate payments mu
 
 ## Related
 
+- [Set up how Zooza collects money from clients](../setup/inbound-payments-setup.md) — configure automatic bank statement reading so imports are only needed as a fallback
 - [Payment Pairing for Bank Transfers](../guides/payment-pairing.md) — overview of all pairing methods.
 - [Email-notification payment matching](../setup/email-payment-notifications.md) — faster alternative that doesn't require manual file exports.
 - [GoCardless Integration FAQ](../faq/gocardless-faq.md) — automatic pairing via GoCardless.

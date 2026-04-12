@@ -30,7 +30,7 @@ To create an instructor: go to **Settings → Instructors** and add a new entry.
 
 **Option 2 — Hide the instructor row using CSS**
 
-If you want the instructor row to not appear in the widget at all, you can hide it with custom CSS. Contact Zooza support to get the correct CSS selector for the instructor row, then add a hide rule in your widget's custom CSS settings.
+If you want the instructor row to not appear in the widget at all, you can hide it with [custom CSS](https://docs.zooza.online/widgets/). Contact Zooza support to get the correct CSS selector for the instructor row, then add a hide rule in your widget's custom CSS settings.
 
 See [Customizing widgets](../guides/customizing-widgets.md) for how to add custom CSS to your booking widget.
 

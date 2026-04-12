@@ -235,7 +235,7 @@ For each programme or timetable, you can:
 Zooza > Teams&Settings > Publish
 
 
-Use Zooza’s Immersive Booking Engine™ to:
+Use Zooza’s [Immersive Booking Engine™](https://www.zooza.online/features/immersive-booking-engine/) to:
 
 - embed booking forms directly on your own website,
 - keep parents on your site from first click to payment.
@@ -245,7 +245,7 @@ Common options:
 - WordPress plugin for Zooza, or
 - JavaScript embed using your website builder.
 
-If you need support, send your web developer our integration guides.
+If you need support, send your web developer our [integration guides](https://docs.zooza.online/quickstart).
 
 8. What Zooza does on autopilot
 
@@ -635,7 +635,7 @@ From here, we recommend:
 
 - Reviewing all key message templates and adding your branding.
 - Setting up retention / re-enrolment for your main programmes.
-- Exploring WhatsApp integration if you want to complement email with messaging.
+- Exploring [WhatsApp integration](https://www.zooza.online/features/whatsapp/) if you want to complement email with messaging.
 - Looking at reports to track attendance, payments and class capacity.
 
 If you get stuck at any point:

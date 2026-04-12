@@ -18,7 +18,7 @@ last_converted: "2026-02-13"
 
 This guide covers common problems when embedding Zooza widgets on your website, along with their causes and solutions.
 
-For initial setup instructions, see [Deploying Zooza on your website](../setup/deploying-zooza-on-website.md). For customization options, see [Customizing widgets](../guides/customizing-widgets.md).
+For initial setup instructions, see [Deploying Zooza on your website](../setup/deploying-zooza-on-website.md). For customization options, see [Customizing widgets](../guides/customizing-widgets.md). For developer-level embed reference, see [docs.zooza.online/quickstart](https://docs.zooza.online/quickstart).
 
 ## Widget not loading on website
 

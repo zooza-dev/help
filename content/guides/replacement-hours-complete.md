@@ -402,4 +402,6 @@ This is a rare issue. If a client reports that they confirmed a replacement but 
 
 ## Related guides
 
+- [MATKO — Diagnose why a make-up session is not showing](../troubleshooting/matko-replacement-diagnostic.md) — run a precise diagnostic when a specific session is not visible to a client
+- [Make-up sessions FAQ](../faq/make-up-sessions-faq.md) — common questions including troubleshooting checklist
 - [Attendance and Catch-up Classes FAQ](../faq/attendance-and-catchups-faq.md)

@@ -16,6 +16,8 @@ last_converted: "2026-04-09"
 
 # Franchise and Multi-location Networks
 
+> **Feature overview:** See [Franchise and multi-location features](https://www.zooza.online/features/franchises/) on zooza.online.
+
 ## This guide is for you if
 
 - You operate multiple branches or franchise locations under one brand

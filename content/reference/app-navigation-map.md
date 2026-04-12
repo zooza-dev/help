@@ -53,6 +53,13 @@ This page maps every section of the Zooza admin application to its reference doc
 | Menu item | Reference doc | Related guides | Status |
 |---|---|---|---|
 | Payments | [Payments](payments-dashboard.md) | [Payment Pairing](../guides/payment-pairing.md), [Payments FAQ](../faq/payments-and-billing-faq.md) | Done |
+| Payments → Inbound | — | [Inbound payments — setup and pairing](../guides/inbound-payments.md) | Done |
+| Payments → Inbound → List | — | [Inbound payments — setup and pairing](../guides/inbound-payments.md) | Done |
+| Payments → Inbound → Import | — | [CSV payment import](../guides/csv-payment-import.md) | Done |
+| Payments → Inbound → Direct Debit | — | [GoCardless direct debit mandates](../guides/gocardless-direct-debit-mandates.md) | Done |
+| Payments → Inbound → AI Analytics | — | [Inbound payments — technical reference](../reference/inbound-payments-internals.md) | Done |
+| Payments → Inbound → AI Rules & Filters | — | [Inbound payments — technical reference](../reference/inbound-payments-internals.md) | Done |
+| Payments → Inbound → Setup | — | [Set up how Zooza collects money from clients](../setup/inbound-payments-setup.md) | Done |
 | Discounts | [Discounts](discounts.md) | [Discount Code](../guides/discount-code.md), [Discount Types](../guides/discount-types.md), [Discounts FAQ](../faq/discounts-and-sibling-pricing-faq.md) | Done |
 | Invoices | [Invoices](invoices-list.md) | [Xero Integration](../setup/xero-integration.md), [Xero FAQ](../faq/xero-invoicing-faq.md) | Done |
 
@@ -89,3 +96,5 @@ This page maps every section of the Zooza admin application to its reference doc
 | **Instructors** | [Instructors](instructors-list.md) | [Instructor Access FAQ](../faq/instructor-access-faq.md), [Instructor Rate](../setup/instructor-rate-reward.md) | Done |
 | **Publish** | [Publish (Widgets)](publish-widgets.md) | [Deploying Zooza](../setup/deploying-zooza-on-website.md) | Done |
 | **Settings** | [Settings](settings-hub.md) | [Locations FAQ](../faq/locations-and-venues-faq.md), [Holiday Settings](../setup/holiday-settings.md) | Done |
+| Settings → Tools → MATKO | — | [MATKO — Diagnose why a make-up session is not showing](../troubleshooting/matko-replacement-diagnostic.md) | Done |
+| Settings → Tools → Trash | — | [Recover deleted sessions, classes, and registrations](../guides/trash-and-restore.md) | Done |

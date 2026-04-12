@@ -450,7 +450,7 @@ terms:
       de: "Ersatzstunde / Ersatztermin / Nachholtermin"
     intent_keywords:
       en: ["make-up", "makeup", "replacement", "catch up", "missed session", "attend another", "reschedule", "how many hours before make-up", "time limit make-up", "when can client book make-up"]
-      sk: ["náhradná hodina", "náhrada", "zmeškané", "náhradný termín", "preložiť hodinu", "limit prihlásenia na náhradnú hodinu", "koľko hodín pred termínom", "časové obmedzenie náhrady", "prihlásenie na náhradnú hodinu"]
+      sk: ["náhradná hodina", "náhrada", "náhradky", "náhradka", "zmeškané", "náhradný termín", "preložiť hodinu", "limit prihlásenia na náhradnú hodinu", "koľko hodín pred termínom", "časové obmedzenie náhrady", "prihlásenie na náhradnú hodinu", "ne ukazuje náhradky", "náhradky v blokoch"]
       cz: ["náhradní hodina", "náhrada", "zmeškané", "náhradní lekce", "přeložit hodinu", "limit přihlášení na náhradní hodinu", "kolik hodin před termínem", "časové omezení náhrady"]
       de: ["Ersatzstunde", "Ersatztermin", "Nachholtermin", "verpasste Stunde", "Nachholen"]
     do_not_confuse_with:
@@ -730,6 +730,92 @@ terms:
     translations:
       sk: "Platba za semester / Termínová platba"
       de: "Kursbeitrag / Semesterbeitrag"
+    public: true
+
+  - id: down-payment
+    canonical_en: "Down payment"
+    category: "payments"
+    definition: >
+      An upfront partial payment collected at the time of booking as a commitment
+      fee. The remaining balance is charged later according to the payment plan.
+      Can be a fixed amount or a percentage of the total price. Commonly used for
+      camps, retreats, and multi-day events.
+    context:
+      admin: "Down payment"
+      client: "Down payment"
+      widget: "Down payment"
+    deprecated:
+      - "deposit"   # colloquial; "down payment" is the Zooza UI term
+    synonyms:
+      - "deposit"
+      - "advance payment"
+    translations:
+      sk: "Záloha / Preddavok"
+      cz: "Záloha / Záloha na kurz"
+      de: "Anzahlung / Vorauszahlung"
+    intent_keywords:
+      en: ["down payment", "deposit", "advance payment", "partial payment upfront", "pay deposit",
+           "book with deposit", "commitment fee"]
+      sk: ["záloha", "preddavok", "záloha na kurz", "zložiť zálohu", "platba vopred"]
+      cz: ["záloha", "záloha na kurz", "záloha při přihlášení", "platba předem"]
+      de: ["Anzahlung", "Vorauszahlung", "Reservierungsgebühr"]
+    do_not_confuse_with:
+      - term: "Payment Plan"
+        reason: >
+          Down payment = the initial partial payment at booking time.
+          Payment Plan = the recurring schedule for the remaining balance.
+          They are configured together in Programme → Price & Payment Setup.
+    ai_notes: >
+      When a SK/CZ customer says 'záloha', they always mean the down payment
+      (initial commitment fee), not a subscription or ongoing payment.
+      Down payment is set per Programme; guide admin to Programme → Price & Payment.
+      See: content/guides/price-and-payment-setup.md
+    public: true
+
+  - id: credit-balance
+    canonical_en: "Credit"
+    category: "payments"
+    definition: >
+      A positive balance on a client's booking that arises when they have paid
+      more than the total amount owed (overpayment). The credit is displayed on
+      the booking's payment tile and can be applied to future invoices or refunded.
+      Distinct from Entry pass credits (prepaid session bundles).
+    context:
+      admin: "Credit"
+      client: "Credit"
+      widget: null
+    deprecated:
+      - "preplatok"   # SK colloquial; shown as "Credit" in Zooza UI
+    synonyms:
+      - "overpayment credit"
+      - "payment credit"
+    translations:
+      sk: "Preplatok / Kredit z preplatku"
+      cz: "Přeplatek / Kredit z přeplatku"
+      de: "Guthaben / Überzahlung"
+    intent_keywords:
+      en: ["credit", "overpayment", "paid too much", "credit on account", "apply credit",
+           "negative balance", "client credit", "credit from payment"]
+      sk: ["preplatok", "preplatok na konte", "doplatok", "zaplatil viac", "kredit z preplatku",
+           "záporný zostatok", "klient preplácal"]
+      cz: ["přeplatek", "zaplatil více", "kredit z přeplatku", "záporný zůstatek"]
+      de: ["Guthaben", "Überzahlung", "zu viel bezahlt", "Gutschrift"]
+    do_not_confuse_with:
+      - term: "Entry pass"
+        reason: >
+          Credit (overpayment) = arises automatically when a client pays more than owed.
+          Entry pass credit = a prepaid bundle the client purchases intentionally.
+          Both show as 'credit' in different contexts — clarify which type before advising.
+      - term: "Down payment"
+        reason: >
+          Down payment = money collected upfront as part of an agreed payment plan.
+          Credit = excess money paid beyond what was owed.
+    ai_notes: >
+      When a SK/CZ customer says 'preplatok' or 'zaplatil viac', they mean the
+      client has overpaid and there is a credit sitting on their booking.
+      This credit can be: (a) applied to a future invoice, or (b) refunded manually.
+      Guide admin to: Booking → Payments → Payment tile → Credit.
+      Do NOT confuse with Entry pass credit balance (entirely different feature).
     public: true
 
   # ──────────────────────────────────────────────

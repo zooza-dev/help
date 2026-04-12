@@ -368,6 +368,49 @@ Zooza does not provide or recommend a specific POS provider. Contact your bank o
 
 > **SK:** Zooza nespravuje POS terminály. Pre fyzické platby na mieste (zákonná povinnosť od 1.3.2026) je potrebný samostatný POS terminál cez vašu banku alebo platobného poskytovateľa. Zooza pokrýva len online platby (Stripe, bankový prevod, QR kód).
 
+## How do I set up a down payment (deposit) together with a payment plan?
+
+A down payment (deposit) and a payment plan can be used together. The down payment is collected immediately at booking; the remaining balance is then split according to the payment plan you configure.
+
+**Setup:**
+
+1. Go to **Programme → Settings → Price and Payment**.
+2. Under **Price**, set your total price and select a payment plan (e.g. monthly instalments).
+3. Under **Down payment**, choose **Fixed amount** or **Percentage** and enter the value.
+4. Save.
+
+**How it works:**
+- When the client books, the down payment is charged immediately (or shown as the first debt).
+- The remaining balance is split into instalments according to the payment plan schedule.
+- The total charged = down payment + all instalments. Make sure these add up to the full price.
+
+**Common problem — double charge on the first instalment:**
+
+If the down payment and the first scheduled instalment fall on the same day, the client may appear to owe both at once. To avoid this:
+
+- Set the first instalment start date to a date *after* the down payment is due.
+- Or use a **Fixed amount** down payment equal to the first instalment, and start the payment plan from the second month.
+
+**Common problem — down payment not appearing in email templates:**
+
+Use the `*|DOWNPAYMENT|*` dynamic tag in your booking confirmation template to show the deposit amount. See [Dynamic tags](../guides/dynamic-tags.md).
+
+## A client has a credit on their booking — what does it mean and what should I do?
+
+A **credit** on a booking means the client has paid more than the total amount owed (overpayment). The excess amount is stored as a credit on that booking.
+
+**Where to see it:** Open the booking → **Payments** → the credit is shown on the payment tile.
+
+**What you can do:**
+
+1. **Apply to a future invoice** — if the client has upcoming scheduled payments, the credit is automatically offset against them. No action needed.
+2. **Refund manually** — if there are no future payments, you can refund the excess amount to the client. Go to **Bookings → Payments → Refund** and enter the credit amount. For bank transfer clients, process the transfer in your bank separately and record it in Zooza.
+3. **Keep it on account** — if the client will have future bookings, you can leave the credit and apply it to the next registration manually.
+
+> **Note:** A booking credit (from overpayment) is different from an **Entry pass credit** (prepaid session bundle). Do not confuse the two — they are managed in different places.
+
+> **SK:** Preplatok na registrácii znamená, že klient zaplatil viac, ako mal. Kredit sa zobrazuje na platobnej dlaždici v registrácii. Ak nemá ďalšie plánované platby, vráťte preplatok ručne (bankový prevod) a zaznamenajte ho ako platbu v Zooza.
+
 ## Related
 
 - [Stripe payments FAQ](stripe-payments-faq.md) — card payment setup, disputes, and Stripe-specific questions

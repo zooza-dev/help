@@ -37,8 +37,19 @@ The Settings screen is the central configuration hub for your Zooza account. It 
 | **Make-up sessions** | Configure make-up session rules. |
 | **Instructors rates** | Manage instructor pay rates. |
 | **Labels** | Create and manage labels for organizing programmes, classes, and clients. |
-| **Zooza Sitesx** | Manage Zooza Sites (micro-sites). |
+| **Zooza Sites** | Manage Zooza Sites (micro-sites). |
 | **Custom Holidays** | Create and manage company-specific holiday periods used for session scheduling and cancellation rules. See [Custom holidays](../guides/custom-holidays.md). |
+
+## Tools
+
+> **Navigation:** Settings → **Tools**.
+
+The Tools section contains diagnostic and recovery utilities for owners and assistants. It is not visible to the instructor or receptionist roles.
+
+| Tool | Description |
+|---|---|
+| **MATKO** | Diagnose why a specific session is not visible to a client as a make-up option. Runs 19 eligibility checks and shows exactly which one is failing. See [MATKO — Diagnose why a make-up session is not showing](../troubleshooting/matko-replacement-diagnostic.md). |
+| **Trash** | Recover sessions, classes, and registrations deleted in the last 30 days. After 30 days, items are permanently removed. See [Recover deleted sessions, classes, and registrations](../guides/trash-and-restore.md). |
 
 ## Billing Periods
 

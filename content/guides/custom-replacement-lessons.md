@@ -85,6 +85,7 @@ If declined, the instructor must provide a reason. The reason is sent to the cli
 ## Related
 
 - [Make-up session — complete guide](replacement-hours-complete.md) — standard make-up session setup and workflow.
+- [MATKO — Diagnose why a make-up session is not showing](../troubleshooting/matko-replacement-diagnostic.md) — run a precise diagnostic when a session is not visible
 - [Make-up sessions FAQ](../faq/make-up-sessions-faq.md)
 - [Instructor attendance management](instructor-attendance-management.md)
 - [King of a class](king-of-a-group.md)

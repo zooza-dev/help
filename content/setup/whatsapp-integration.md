@@ -20,6 +20,8 @@ last_converted: "2026-02-11"
 
 > **Availability:** If you do not see **Connect to WhatsApp** in Zooza, either (a) your plan does not include the integration or (b) WhatsApp Business Platform is not enabled for your account. In both cases, **contact us** and we will help.
 
+> **Feature overview:** See [WhatsApp integration in Zooza](https://www.zooza.online/features/whatsapp/) — automated messages, booking confirmations, and session reminders via WhatsApp.
+
 ## What you will need
 
 - A **Facebook (Meta) Business Account** with admin rights.

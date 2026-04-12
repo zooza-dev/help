@@ -4,8 +4,8 @@
 
 ## Summary
 
-- **Total docs checked:** 211
-- **Total issues found:** 61
+- **Total docs checked:** 214
+- **Total issues found:** 58
 - **Overall status:** FAIL
 
 ## 1. Required Frontmatter
@@ -36,16 +36,13 @@ No broken internal links found.
 
 ## 6. Missing Referenced Assets
 
-**57 missing asset(s) found:**
+**54 missing asset(s) found:**
 
 - `content/guides/automatic-session-notification.md` — references `../../assets/images/add-new-template-button.png "Add new template button in notifications section"`
 - `content/guides/billable-sessions.md` — references `../../assets/images/how-to-create-paid-events-04.png "Billable checkbox on session creation"`
 - `content/guides/billable-sessions.md` — references `../../assets/images/how-to-create-paid-events-06.png "Session detail showing billable status"`
 - `content/guides/billable-sessions.md` — references `../../assets/images/how-to-create-paid-events-08.png "Repetition frequency field pre-filled based on billable sessions"`
 - `content/guides/billable-sessions.md` — references `../../assets/images/how-to-create-paid-events-10.png "Billing icon to toggle billable status on sessions"`
-- `content/guides/bulk-email-send-tracking.md` — references `../../assets/images/bulk-email-approval-gate.png`
-- `content/guides/bulk-email-send-tracking.md` — references `../../assets/images/bulk-email-progress-view.png`
-- `content/guides/bulk-email-send-tracking.md` — references `../../assets/images/bulk-email-send-history.png`
 - `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-create-product.png "Products — Create new product form"`
 - `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-credit-value-config.png "Product credit value and payment method settings"`
 - `content/guides/creating-entry-passes.md` — references `../../assets/images/entry-pass-items-for-sale.png "Items for sale section"`
