@@ -59,9 +59,11 @@ To reduce this issue, configure trial bookings to use **extra capacity** only (i
 
 ## Can I filter bookings by block?
 
-Filtering bookings by block directly in the booking list is not yet fully supported. Block occupancy statistics are available in the class detail view, where you can see how many clients are enrolled in each block.
+Filtering bookings by block directly in the booking list is not yet fully supported, and the booking export does not include a block column.
 
-<!-- REVIEW: Block-based filtering and block column in booking exports were requested in Jan 2026. Check whether these have been shipped. -->
+To check which block a specific client is enrolled in, open the booking detail and look at the **Class** tile — it shows the client's current block. This is the most reliable way to verify a single client's block assignment.
+
+For bulk reporting, block occupancy statistics are available in the class detail view, where you can see how many clients are enrolled in each block.
 
 ## Why did previously created blocks disappear from the admin view after editing?
 

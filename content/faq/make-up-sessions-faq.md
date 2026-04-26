@@ -261,6 +261,20 @@ Other reasons include:
 
 To fix a missing credit, change the attendance state from "Did not attend" to "Cancelled" on the affected session. The system should then generate the make-up credit.
 
+## How do group make-up sessions work and why does capacity show as full after cancellations?
+
+A group make-up session is a one-off session you create specifically for clients to attend as a make-up. The most common setup is a new session with a fixed capacity that clients self-register into.
+
+**Why the capacity shows as full even after cancellations:**
+
+The capacity displayed in the booking form reflects the number of clients registered for the whole class — not the number of available spots on that individual session. When a client cancels from one session, they are removed from that session but remain registered in the class. The system still counts them as occupying a spot in the class capacity.
+
+This means that even if several clients cancel from the make-up session, the booking form can still show `10/10` and block new registrations.
+
+**Workaround:**
+
+If spots have freed up but the booking form still shows the session as full, delete the session and recreate it. This resets the displayed capacity to reflect actual availability.
+
 ## Related
 
 - [MATKO — Diagnose why a make-up session is not showing](../troubleshooting/matko-replacement-diagnostic.md) — run a precise eligibility diagnostic for a specific credit and session

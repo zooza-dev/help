@@ -177,12 +177,15 @@ To add rules: **Payments → Inbound → AI Rules & Filters**. Maximum 10 active
 
 **Payment is in manual review (New) — why wasn't it auto-paired?**
 
+To find the exact reason for a specific payment, open the payment in **Payments → Inbound → List** and look for the **Matching Process Summary** section. It shows which step the matching stopped at and why.
+
 Common reasons:
 - The client used a different reference number (not the variable symbol from the invoice).
 - The booking was cancelled or deleted by the time the payment arrived.
 - The payment schedule ended more than 3 months ago.
 - The payment amount is larger than the remaining balance (flagged as suspicious).
 - GoCardless consent has expired — no new transactions are being received.
+- **AI confidence too low** — the match looked probable but not certain enough for automatic pairing. The payment is left for manual review even though the customer and amount appear correct. Open the payment and pair it manually.
 
 **Payments stopped arriving — GoCardless connection issue?**
 

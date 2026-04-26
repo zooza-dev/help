@@ -83,15 +83,13 @@ If you need to change the participant on an existing registration, open the book
 
 ## Can I search for and restore deleted bookings?
 
-Yes. Deleted bookings are not permanently removed from the system. To find them:
+Yes. Deleted bookings are kept in **Trash** for 30 days and can be restored with a single click.
 
-1. Go to **Bookings**.
-2. Open the advanced search filters.
-3. Change the **Status** filter to **Deleted**.
+1. Go to **Settings → Tools → Trash**.
+2. Filter by **Type → Registration** to narrow the list.
+3. Find the booking and click **Restore**.
 
-This displays all previously deleted bookings. You can open any deleted booking to review its details. To restore a deleted booking, open its detail and change the status back to the appropriate active status (e.g., **Registered**).
-
-<!-- REVIEW: confirm whether restore is a direct status change or requires re-creation -->
+See [Recover deleted sessions, classes, and registrations](../guides/trash-and-restore.md) for the full process, including bulk restore.
 
 ## Can I add a second email address to a booking for notifications?
 

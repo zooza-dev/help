@@ -120,6 +120,28 @@ Each class tile shows three financial figures (recalculated every 30 minutes):
 
 In the class settings, you can toggle visibility for the online booking form. This keeps the class in the system for internal management but hides it from the public booking page.
 
+**To hide a single class:**
+
+1. Open the class detail.
+2. Go to **Settings** → **Edit**.
+3. Uncheck **Allow online booking** (or find the online registration toggle).
+4. Save.
+
+**To disable online booking for all classes in a programme at once:**
+
+Go to **Programme → Settings → Online Booking → Edit** and set **Allow online booking** to **No**. This hides the entire programme from the booking widget. Individual classes do not need to be updated separately — the programme-level setting overrides them.
+
+## How do I change the billing period on an existing class?
+
+Billing period is a class-level setting — you can update it at any time:
+
+1. Open the class detail.
+2. Go to **Settings** → **Edit**.
+3. Change the **Billing period** field to the correct period.
+4. Save.
+
+The change takes effect immediately. Existing bookings are not affected — billing period is a reporting and organisational label, not a financial setting. It groups the class in filters, exports, and the make-up session rules. If the billing period you need does not appear in the list, create it first under **Settings → Billing periods**.
+
 ## Why do changes I make not appear immediately?
 
 Zooza uses browser caching to speed up page loading. When you create or edit something (like a location or class), the change may take a moment to appear. A quick browser refresh (Cmd+R on Mac, Ctrl+R on Windows) usually resolves this.
@@ -141,15 +163,13 @@ To avoid accidental loss, prefer **archiving** over deleting when you want to ke
 
 ## Can I delete a programme?
 
-Programmes cannot be deleted through the application. Instead, use **archiving** — it hides the programme from the active list without removing any data, bookings, or history.
+Yes. Admins with the **edit_course** permission can delete a programme directly from **Programme Settings → Edit → Delete programme** (next to the Save button).
 
-To archive a programme, go to the programme → **Settings** tile → **Edit** → check **Archive** → **Save**. To view or restore archived programmes, use the **Archived** filter in the Programmes list.
+Deletion is a **soft delete** — the programme and its data move to **Settings → Tools → Trash** and can be restored within 30 days. After 30 days the data is permanently removed.
 
-![Screenshot — programmes timetables sessions faq](../../assets/images/programmes-timetables-sessions-faq-01.png)
+If you want to hide a programme without removing it, use **Archive** instead — it keeps all data and bookings intact and can be reversed at any time.
 
-See [Programme settings tile — Archiving a programme](../guides/programme-settings-tile.md#archiving-a-programme) for the full how-to.
-
-If you need to permanently remove a programme that has **no bookings and no classes**, contact Zooza support with the programme ID (visible in the URL, e.g. `#courses/6455`).
+See [Archive or delete a programme](../guides/archive-or-delete-programme.md) for the full walkthrough including screenshots.
 
 ## Is there an undo button in Zooza?
 
@@ -188,14 +208,21 @@ Programmes that still contain registrations or classes cannot be deleted — the
 
 ## The calendar is not showing all my classes — why?
 
-This is almost always a browser caching issue, not a data problem. No classes have been lost.
+Check these things in order:
 
-Do a hard browser refresh to force the page to reload with current data:
+**1. Are you viewing the right date range?**
+The calendar shows sessions for the currently selected date. If you created sessions for a future period (e.g., summer or next term), navigate the calendar to that date range first — sessions will not appear until you scroll or jump to the correct period.
+
+**2. Is it a browser caching issue?**
+If the date is correct but sessions are still missing, this is almost always a temporary caching problem, not lost data. Do a hard browser refresh:
 
 - **Mac:** Cmd+R or Cmd+Shift+R
 - **Windows/Linux:** Ctrl+R, Ctrl+F5, or F5
 
-If the calendar still shows incorrect data after a hard refresh, contact support.
+**3. Does your role have calendar access?**
+If you only see a Calendar link in the menu (no Classes list), you are in an instructor role with limited navigation. You can only see sessions assigned to you in the calendar. Contact an admin to check whether you are assigned to the relevant sessions.
+
+If the calendar still shows incorrect data after a hard refresh and you have confirmed the correct date, contact support.
 
 ## After rescheduling sessions, holiday-skip rules no longer apply — why?
 

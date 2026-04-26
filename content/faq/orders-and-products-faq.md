@@ -49,6 +49,14 @@ An entry pass code can only be used once. When all entries are consumed or the p
 
 If a client purchased the entry pass from a different email address than the one on file, search by the purchasing email to locate the order.
 
+## Can I extend the expiry date on a purchased entry pass or gift voucher?
+
+No. The expiry date on a purchased entry pass or gift voucher **cannot be changed by an admin** from the Orders screen. The expiration field is read-only — it displays the date but does not allow editing.
+
+If a client needs their expiry extended, contact Zooza support with the order number. Support can adjust the expiry date on the backend.
+
+To avoid this situation in the future, set a longer expiry period on the product configuration before clients purchase it. The expiry period is defined on the product itself (e.g., 12 months from purchase) and applies to all future purchases — it cannot be changed retroactively in bulk.
+
 ## Why don't dynamic tags work in order confirmation emails?
 
 Dynamic tags (such as `{client_name}` or `{QR_CODE}`) are not fully supported in order-related email templates. This is a known limitation. When the system does not recognise a tag or has no value for it in the order context, the tag either remains as plain text or is silently removed.
@@ -64,7 +72,7 @@ Deleting an order also releases the product stock/capacity tied to it. If you ne
 
 Once restored, verify that the product quantities and payment status are correct. To avoid accidental deletions, remove individual line items from an order instead of deleting the entire order.
 
-<!-- REVIEW: There is no self-service restore for deleted orders as of Feb 2026. Confirm whether a UI-level restore has been added. -->
+> **Note:** The self-service **Trash** screen (Settings → Tools → Trash) covers registrations, sessions, and classes — but not orders. Deleted orders require support to restore.
 
 ## What does the "reset sales" button on services do?
 

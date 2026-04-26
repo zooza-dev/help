@@ -257,6 +257,8 @@ For initial setup instructions, see [Deploying Zooza on your website](../setup/d
 
 ## General troubleshooting tips
 
+- **Testing the client profile in the same browser as your admin session:** If you need to verify how the client profile looks, use an incognito/private window or a different browser. Opening the client widget in the same browser session as your admin login can occasionally display cached session data from a different context.
+
 - **Always regenerate embed code** from the Zooza configurator rather than manually editing HTML parameters.
 - **Test in incognito mode** to rule out browser cache and cookie issues.
 - **Check publish settings** whenever links in emails or widgets lead to wrong pages. Go to **Settings** > **Publish** and verify every URL.

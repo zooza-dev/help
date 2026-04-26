@@ -38,6 +38,14 @@ Instructor access depends on their role:
 
 Instructors do not have access to payment details, reports, or full booking management.
 
+## An instructor says they can't find "Activities → Classes" — only "Calendar" is visible
+
+This is expected. Instructors with limited roles (Standard instructor, External instructor, Receptionist) only see **Activities → Calendar** in the left-hand menu. The **Classes** list under Activities is only available to Owners, Assistants, and Main instructors.
+
+This means that guide steps like "Go to Activities → Classes → select sessions → Bulk edit" cannot be performed by a standard instructor. If an instructor needs to change session times, reschedule sessions, or bulk-edit, an admin or main instructor must do it on their behalf.
+
+If the instructor should have access to the Classes list, change their role to **Main instructor** in **Settings → Team**.
+
 ## How do I change instructor permissions?
 
 Go to **Settings → Team**, select the instructor, and adjust their role. If you want all instructors to see each other's classes (e.g., for a small team that covers for each other), set them as lead instructors.

@@ -52,7 +52,7 @@ To hide a single Class (class) within a Programme without archiving the whole Pr
 
 Admins with the **edit_course** permission can permanently delete a Programme directly from Programme Settings. This action cannot be undone — you will lose access to all related Classes, sessions, and bookings.
 
-> **Note:** Deletion is a soft delete. The Programme and its data are no longer accessible in the app, but are not erased from the database. There is no restore option from the UI.
+> **Note:** Deletion is a soft delete. The Programme and its data are no longer accessible in the app but are kept in **Trash** for 30 days. Go to **Settings → Tools → Trash** to restore a deleted Programme within that window. After 30 days the item is permanently removed.
 
 1. Go to **Programmes** and open the Programme you want to delete.
 2. Go to **Programme Settings → Edit**.

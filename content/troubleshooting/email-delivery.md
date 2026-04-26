@@ -41,6 +41,19 @@ If the address is wrong, update it and resend the email.
 
 ## Step 3: Identify the delivery failure
 
+### "Email rejected" indicator on client profile
+
+**Symptom:** A red indicator or the label **"Email rejected"** appears next to the client's email address in their profile, even though the email address appears to be valid.
+
+**Cause:** Zooza uses a third-party email delivery service that automatically marks an address as rejected when a previous delivery attempt fails — for example, because the client's mailbox was full or temporarily unreachable. Once an address is flagged, the service continues to reject delivery attempts even if the issue has been resolved.
+
+**Solution:**
+1. Ask the client to check whether their mailbox is full and free up space if needed.
+2. Once the client confirms their inbox is working, contact Zooza support to clear the rejected status for that email address.
+3. After the flag is cleared, resend any missed emails from the **Communication** tab.
+
+The rejection flag is only visible to admins — clients do not see it in their own profile.
+
 When Zooza sends an email but it does not arrive, the cause is almost always on the recipient's side. These are the most common failures.
 
 ### Recipient mailbox is full
@@ -93,6 +106,18 @@ When a recipient marks an email as spam, the email provider remembers this and m
 | Ask client to whitelist sender | Tell the client to add `@zooza.app` to their contacts or safe senders list. |
 | Ask client to check spam folder | Direct them to look in Spam, Junk, Promotions, or Updates folders. |
 | Change client email address | If the address is invalid or permanently bouncing, update it on the client's profile and resend. |
+
+## Session reminder emails not sent
+
+Session reminder emails (day-before notifications) are processed in batches. On busy days the batch may run later than expected. If reminders appear delayed or missing, check the **Session Notifications report** before escalating:
+
+1. Go to **Reports → Session Notifications** (direct link: `/#reports/event_notifications`).
+2. Find the date of the sessions whose reminders should have gone out.
+3. Check the status:
+   - **Processed** — Zooza sent the reminder. If the client didn't receive it, the issue is on the recipient side (spam, opt-out, wrong email).
+   - **Failed** — Zooza attempted to send but failed. Contact support with the report details.
+
+If a specific client is not receiving reminders even though the report shows Processed, check whether the client opted out of notifications on their booking. Go to the booking detail and look for a notification preference or opt-out flag.
 
 ## What Zooza cannot do
 

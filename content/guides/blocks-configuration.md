@@ -81,6 +81,15 @@ You can offer different products in different blocks:
 3. Enable the product for the booking form.
 4. Select which blocks should offer the product, then click **Save**.
 
+## Settings that do not apply to blocks
+
+Some class-level settings apply to the class as a whole and are **not** automatically applied to individual blocks:
+
+- **Aliquot (pro-rata) pricing** — The aliquot calculation for late joiners is configured on the class, not per block. When a client registers for a block after it has started, the aliquot pricing may not calculate as expected. Configure and verify pricing manually for mid-block joiners.
+- **Late registration settings** — Restrictions or fees configured for late registrations at the class level are not automatically inherited by blocks. Check and configure these settings directly on each block if needed.
+
+If you notice that a late-joining client received an unexpected price when registering for a block, review the aliquot and late registration settings at the class level and test the registration flow.
+
 ## Capacity management with blocks
 
 Block capacity inherits from the class capacity. If a class has capacity 12 and two blocks, each block can hold up to 12 clients.

@@ -112,6 +112,19 @@ Each registration can use a different buyer profile:
 1. Add a second buyer profile to the client's record if it doesn't exist.
 2. For each registration, open the booking → **Payments** → edit the invoice → select the correct buyer from the dropdown.
 
+### A logged-in client could not change the buyer name during registration
+
+When a client is logged in to the booking widget, the buyer name is pre-filled from their account and **cannot be changed during registration**. The system locks it to the account holder's name to protect billing and refund history integrity.
+
+If the client needed the invoice in a different name (e.g., their partner's or spouse's name):
+
+1. Go to **Clients** → open the client's profile → **Invoice Buyer Data** → **Add**.
+2. Enter the alternative name (and optionally the address).
+3. Go to the booking → **Invoices** → edit the invoice → select the new buyer profile from the dropdown.
+4. Regenerate the invoice if needed.
+
+> This keeps the client's account (email, history, credits) intact while letting the invoice show a different name.
+
 ### The invoice was originally in the client's personal name but should be in their company name
 
 The client did not fill in business fields during registration but now needs a business invoice:

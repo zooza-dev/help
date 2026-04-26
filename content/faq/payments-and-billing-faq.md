@@ -395,6 +395,14 @@ If the down payment and the first scheduled instalment fall on the same day, the
 
 Use the `*|DOWNPAYMENT|*` dynamic tag in your booking confirmation template to show the deposit amount. See [Dynamic tags](../guides/dynamic-tags.md).
 
+## Can I delete or edit a row in the payment transaction log?
+
+No. The transaction log on a booking (the list of debt and payment movements) is an append-only record. Individual rows cannot be deleted or edited.
+
+The log is visible only to admins — clients see only the final balance, not individual log entries.
+
+If you added a manual correction by mistake and want to bring the balance back to zero, add a second corrective entry (e.g. a refund of the same amount). This is the only way to reverse a manual correction. The original entry stays in the log as an audit trail.
+
 ## A client has a credit on their booking — what does it mean and what should I do?
 
 A **credit** on a booking means the client has paid more than the total amount owed (overpayment). The excess amount is stored as a credit on that booking.

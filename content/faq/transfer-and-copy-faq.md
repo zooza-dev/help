@@ -127,6 +127,22 @@ Create a dedicated class with no sessions or a minimal schedule to serve as a ho
 
 When the client is ready to rejoin, transfer them out of the holding class into the appropriate active class.
 
+## Where can I find a client's attendance history from before a transfer?
+
+The answer depends on whether this was a **class-to-class transfer** or a **block-to-block move** within the same class.
+
+**Class-to-class transfer:** Attendance records from the old class remain attached to the original sessions in the original class — they are not lost.
+
+To find them:
+1. Go to the **client's profile** and open their session or attendance history — this shows all sessions the client attended across all classes, regardless of transfers.
+2. Alternatively, go to the **original class** (the one they transferred from) and open the sessions from that period — the attendance records are still there.
+
+If you need a combined attendance report covering both periods, export attendance from each class separately and combine them.
+
+**Block-to-block move (changing a client's block within the same class):** This behaves differently. When you move a client from one block to another, the previous attendance records are marked as **Hidden** in the system. The data is not deleted, but it is no longer visible — not in the booking detail, not in the client profile, and not in exports.
+
+> **Recommendation:** Before moving a client to a different block, export their attendance first if you need a record of it.
+
 ## Can external instructors transfer or copy bookings?
 
 No. External instructors have attendance-only access. Only admins, owners, and standard instructors can transfer or copy bookings.

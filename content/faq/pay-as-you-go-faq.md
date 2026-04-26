@@ -94,6 +94,14 @@ Clients see available sessions in two places:
 1. **Profile** — After logging in, they navigate to their programme and click **Book date** to see all upcoming sessions with availability.
 2. **Calendar widget** — If embedded on your website, the calendar shows all available sessions.
 
+## Can a client use one entry pass for two children registered in the same class?
+
+No. An entry pass is linked to a specific registration. If two children are registered separately — even in the same class — each registration requires its own entry pass. The pass purchased during one registration cannot be used to deduct entries from another registration.
+
+**To share a pass across multiple registrations in the same class**, the classes must be linked. Class linking is typically used to share a pass across different classes within a programme, not across separate registrations within one class. For two children in the same group, the standard approach is to purchase a separate entry pass for each registration.
+
+See: [Linked classes](../guides/linked-classes.md).
+
 ## What are linked classes and when do I need them?
 
 Linked classes connect multiple classes within a Pay-as-you-go programme so clients can pick sessions from any of the linked classes. Use them when:

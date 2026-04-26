@@ -711,9 +711,38 @@ terms:
       de: "Eintrittskarte / Guthaben / Pass"
     intent_keywords:
       en: ["entry pass", "pass", "credit", "prepaid", "bundle", "10 sessions", "top up"]
-      sk: ["pass", "kredit", "predplatené hodiny", "vstupová karta", "nabiť kredit"]
+      sk: ["pass", "kredit", "predplatené hodiny", "vstupová karta", "nabiť kredit", "permanentka", "permanentky"]
       de: ["Eintrittskarte", "Guthaben", "Prepaid", "Paket", "aufladen"]
     public: true
+
+  - id: aliquot
+    canonical_en: "Aliquot"
+    category: "payments"
+    definition: >
+      A pro-rata pricing method for clients who join a class or programme after
+      it has started. The first payment is automatically calculated based on the
+      number of remaining sessions (or days) in the billing period rather than
+      the full period price. Configured under Programme → Price and Payment →
+      Advanced settings → Aliquot price calculation.
+    context:
+      admin: "Aliquot"
+      client: "(not shown to clients)"
+    synonyms:
+      - "pro-rata"
+      - "prorated payment"
+      - "aliquot billing"
+    translations:
+      sk: "Alikvóta / alikvótna suma"
+      cs: "Alikvota"
+    intent_keywords:
+      en: ["aliquot", "pro-rata", "prorated", "partial first payment", "join mid-term", "late joiner price", "remaining sessions price"]
+      sk: ["alikvóta", "alikvótna suma", "výpočet alikvóty", "pomerná platba", "neskoré prihlásenie cena", "čiastočná platba"]
+      cs: ["alikvota", "poměrná platba", "přihlášení v průběhu", "krácená platba"]
+    public: true
+    agent_note: >
+      When a customer asks why the first payment is lower or asks about pricing
+      for mid-term joiners, this is the aliquot feature. Covered in
+      content/faq/payments-and-billing-faq.md and content/guides/late-bookings.md.
 
   - id: term-payment
     canonical_en: "Term Payment"

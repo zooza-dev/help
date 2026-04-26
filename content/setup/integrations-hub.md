@@ -36,11 +36,14 @@ Go to **Settings → Integrations** to see all available integrations and their 
 
 | Integration | Description |
 |---|---|
-| **Xero** | Sync invoices to Xero automatically. [Set up Xero →](../../payments/xero-integration) |
-| **Faktury Online** | Connect to Faktury Online for invoice generation. |
-| **Abra Flexi** | Export invoices to Abra Flexi (CZ/SK). [Set up Abra Flexi →](../../payments/abra-flexi-invoices) |
-| **SmartBill** | Invoice export for Romanian market. [Set up SmartBill →](../../payments/smartbill-invoices) |
-| **Szamlazz** | Invoice export for Hungarian market. [Set up Szamlazz →](../../payments/szamlazz-invoices) |
+| **Faktury Online** | Default built-in invoice engine — automatic, no setup required. |
+| **Zooza Invoice** *(beta)* | Zooza's own internal engine with QR payment codes, invoice templates, and payment status tracking. No setup required. |
+| **Fakturoid** | Invoice sync for CZ/SK market (OAuth). [Set up Fakturoid →](./fakturoid-invoices) |
+| **ABRA Flexi** | Export invoices to ABRA Flexi (CZ/SK). [Set up ABRA Flexi →](./abra-flexi-invoices) |
+| **Xero** | Sync invoices to Xero automatically (International). [Set up Xero →](./xero-integration) |
+| **Számlázz.hu** | Invoice export for Hungarian market. [Set up Számlázz.hu →](./szamlazz-invoices) |
+| **SmartBill** | Invoice export for Romanian market. [Set up SmartBill →](./smartbill-invoices) |
+| **Oblio** | Invoice export for Romanian market. [Set up Oblio →](./oblio-invoices) |
 
 ---
 

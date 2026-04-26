@@ -112,6 +112,18 @@ No. Trial bookings can only be created by parents through the online booking for
 
 If a parent can't make their booked trial, you can update their attendance in the system — mark the original session as absent and rebook them into a different session. This is managed through the booking detail.
 
+## How do I close a trial that is not going to convert?
+
+Use **Trial Lost** — do not use the Cancel button. The Cancel action is designed for standard bookings and does not make sense in the trial workflow.
+
+To mark a trial as unsuccessful:
+
+1. Open the trial booking.
+2. Change the status to **Trial Lost** (labelled "Skúšobná hodina neúspešná" in Slovak).
+3. Zooza asks whether to send the client a notification — choose based on your process.
+
+Once set to Trial Lost, the trial is closed. No further automation runs.
+
 ## What happens when a client cancels a trial?
 
 If a client cancels a trial, the system will follow the configured automation. You can manually change the status to **Trial Lost**, but this will not trigger automatic follow-up emails unless you explicitly choose to send one at that moment.

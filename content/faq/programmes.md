@@ -1,6 +1,6 @@
 ---
 title: "FAQ — Programmes"
-description: "No. Programmes cannot be deleted directly in the app."
+description: "Programmes can be deleted from Programme Settings — soft delete with 30-day Trash recovery. Use Archive to hide without removing data."
 slug: "faq-programmes"
 type: "faq"
 product_area: "Programmes"
@@ -16,11 +16,13 @@ last_converted: "2026-03-14"
 
 ## Can I delete a Programme?
 
-No. Programmes cannot be deleted directly in the app.
+Yes. Admins with the **edit_course** permission can delete a programme directly from **Programme Settings → Edit → Delete programme**.
 
-The standard action is to **archive** it — this hides it from your active list while keeping all data, bookings, and history intact. You can restore it at any time.
+Deletion is a **soft delete** — the programme moves to **Settings → Tools → Trash** and can be restored within 30 days. After 30 days it is permanently removed.
 
-Permanent deletion is only possible if the Programme has no bookings and no Classes. In that case, contact support with the Programme ID (visible in the URL, e.g. `#courses/6455`) and request removal.
+If you want to hide the programme without losing any data, use **Archive** instead — it is reversible at any time.
+
+See [Archive or delete a programme](../guides/archive-or-delete-programme.md) for the full walkthrough.
 
 ---
 

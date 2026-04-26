@@ -30,11 +30,13 @@ This is the fastest way to mark attendance for an entire class at once.
 
 ### Via Booking
 
-Go to **Bookings**, open a client's booking, and click the **Attendance** tab. This shows the full session-by-session attendance record for that one booking.
+Go to **Bookings**, open a client's booking. Look for the **Attendance** tab or section within the booking detail. This shows the full session-by-session attendance record for that one booking.
 
 ![Screenshot — admin attendance management](../../assets/images/admin-attendance-management-02.png)
 
 Use this view when you need to manage or review one specific client's attendance history.
+
+> **If you don't see an Attendance tab in the booking detail**, use the Calendar route instead: go to **Calendar**, click the session, switch to **Full view**, and find the client in the list. This view is always available regardless of how the booking detail is laid out.
 
 ## Attendance states
 
