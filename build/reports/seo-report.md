@@ -1,14 +1,14 @@
 # SEO & AI Readiness Report
 
-**Generated:** 2026-04-12
+**Generated:** 2026-04-30
 
 ## Summary
 
-- **Total docs checked:** 214
+- **Total docs checked:** 225
 - **Docs with errors:** 0
-- **Docs with warnings only:** 85
+- **Docs with warnings only:** 90
 - **Total errors:** 0
-- **Total warnings:** 542
+- **Total warnings:** 549
 - **Overall:** PASS
 
 ## Checks performed
@@ -402,6 +402,9 @@
 - WARN: alt text too generic: `Screenshot`
 - WARN: alt text too generic: `Screenshot`
 
+### `content/guides/scheduled-registration-cancellation.md`
+- WARN: description too long (177 chars, max 160)
+
 ### `content/guides/selling-products-during-booking.md`
 - WARN: alt text too generic: `Screenshot`
 - WARN: alt text too generic: `Screenshot`
@@ -427,6 +430,11 @@
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+
+### `content/guides/todos.md`
+- WARN: description too long (168 chars, max 160)
+- WARN: alt text too generic: `Screenshot — todos` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot — todos` (screenshot replacement pending)
 
 ### `content/guides/two-instructors-per-class.md`
 - WARN: description missing from frontmatter (auto-extracted: `Do you have 2 instructors in one class, or a main instructor and his assistant?…`)
@@ -483,6 +491,9 @@
 - WARN: alt text too generic: `Screenshot`
 - WARN: alt text too generic: `Screenshot`
 - WARN: alt text too generic: `Screenshot`
+
+### `content/guides/widget-merge-rooms.md`
+- WARN: description too long (162 chars, max 160)
 
 ### `content/guides/zooza-101-instructors.md`
 - WARN: auto-extracted description too short (33 chars, min 50)
@@ -599,6 +610,9 @@
 - WARN: alt text too generic: `Screenshot`
 - WARN: alt text too generic: `Screenshot`
 
+### `content/setup/downpayment-split-invoicing.md`
+- WARN: description too long (196 chars, max 160)
+
 ### `content/setup/getting-started-with-zooza.md`
 - WARN: description too short (32 chars, min 50)
 - WARN: alt text too generic: `Screenshot`
@@ -640,6 +654,9 @@
 - WARN: alt text too generic: `Screenshot`
 - WARN: alt text too generic: `Screenshot`
 - WARN: alt text too generic: `Screenshot`
+
+### `content/setup/invoicing-overview.md`
+- WARN: description too long (161 chars, max 160)
 
 ### `content/setup/online-registration.md`
 - WARN: alt text too generic: `Screenshot`

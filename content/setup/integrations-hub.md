@@ -58,13 +58,21 @@ Go to **Settings → Integrations** to see all available integrations and their 
 
 ---
 
+## Communication & Team
+
+| Integration | Description |
+|---|---|
+| **Slack** | Deliver todo assignments and system alerts to Slack channels. Team members can also create todos directly from Slack. [Set up Slack →](../../communication/slack-integration) |
+| **WhatsApp** | Send messages to clients via WhatsApp Business. [Set up WhatsApp →](../../communication/whatsapp-integration) |
+
+---
+
 ## Marketing
 
 | Integration | Description |
 |---|---|
 | **Ecomail** | Sync client lists to Ecomail for email campaigns. |
 | **Mailchimp** | Sync client lists to Mailchimp. |
-| **WhatsApp** | Send messages to clients via WhatsApp Business. [Set up WhatsApp →](../../communication/whatsapp-integration) |
 
 ---
 

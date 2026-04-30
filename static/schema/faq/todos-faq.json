@@ -1,0 +1,88 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "To-do List FAQ",
+  "url": "https://help.zooza.online/settings/todos-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I see todos created by other team members?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only if you are directly involved — either as the creator or the assignee. You cannot see todos between colleagues that do not include you. There is no company-wide to-do view, even for Owners."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will my colleague be notified when I assign a todo to them?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. They receive a real-time notification in the Zooza sidebar as soon as you save the todo. If your company has Slack connected and the Todos stream is configured, they also get a Slack message. Notifications are not sent for self-assignments (when you assign the todo to yourself)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when the due date passes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Overdue tasks stay open and move to the top of the list — nothing is closed or cancelled automatically. You need to manually complete or cancel the todo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I link a to-do to a specific booking or registration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. When you click Add to-do while viewing a booking, registration, event, or payment, Zooza automatically links the todo to that record. A context icon appears next to the task in the list — clicking it takes you directly back to that record. If you create a todo from the sidebar without being on a specific record, no link is attached."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I attach files or write longer notes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Todos support one line of text (up to 500 characters). There are no attachments, comments, descriptions, or subtasks. For longer notes, use the Notes field on the booking or registration itself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I create recurring todos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Recurring tasks, reminders, and snooze are not supported. Each todo is a one-off task."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I assign a todo to someone in a different franchise location?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Assignees must be users in the same Zooza company. If you need to hand off a task across locations, use the Communication section or a shared Slack channel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who can delete a to-do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only the person who created the todo can delete it. The assignee can complete, cancel, or reopen it, but cannot delete it from both parties' lists."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I recover a deleted to-do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Immediately after deleting, an Undo option appears — click it to restore the task. After the Undo window closes, recovery is not possible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can't I see my to-do badge updating?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The sidebar badge and list update in real time. If updates are not appearing, try refreshing the page. If the issue persists, check your internet connection — real-time updates require a live connection to Zooza."
+      }
+    }
+  ]
+}

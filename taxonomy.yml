@@ -55,6 +55,8 @@ product_areas:
         label: Email
       - id: whatsapp
         label: WhatsApp
+      - id: slack
+        label: Slack
 
 audiences:
   - id: admin

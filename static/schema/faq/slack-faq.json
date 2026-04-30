@@ -1,0 +1,96 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Slack Integration FAQ",
+  "url": "https://help.zooza.online/communication/slack-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who can connect Slack to Zooza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You need the Owner or Assistant role in Zooza, plus permission to install apps in your Slack workspace (your Slack workspace admin may need to approve new apps first)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do all team members need to do anything in Slack?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No extra setup for most team members. Once an admin connects the workspace, Zooza can deliver notifications to your Slack channels automatically. Team members who want to create todos from Slack using /zooza do need to link their Slack account to Zooza the first time they use the command — this takes about 30 seconds. See Use Zooza from Slack."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Our franchise has one Slack workspace for all locations. Do each location's admins need to connect separately?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. One admin at any location installs the Zooza app into the shared Slack workspace. All other companies in the Zooza network are automatically attached. Each location's admin then only needs to go to Settings → Integrations → Slack to pick which Slack channels receive their notifications — no additional OAuth required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "My Slack email is different from my Zooza email. Can I still use /zooza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The first time you use /zooza, the bot detects the mismatch and asks you to verify your Zooza account with a 6-digit code sent to your Zooza email. Enter the code in Slack and your accounts are linked permanently. See Use Zooza from Slack."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What notifications does Zooza send to Slack?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza sends notifications through two streams, each mapped to a Slack channel of your choice:\n\n- Todos — when a todo is assigned to a colleague (not a self-assignment), the notification appears in the configured channel.\n- System messages — automated alerts such as worker failures, payment errors, or integration issues.\n\nYou choose which channels receive each stream in Settings → Integrations → Slack → Channel mapping. Unmapped streams are not delivered to Slack."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why am I not getting Slack notifications for todos I create myself?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Todos that you assign to yourself do not trigger a Slack notification — just like the in-app notification is also silent for self-assignments. This is by design to avoid noise. Notifications fire when you assign a todo to a colleague, or when a colleague completes a todo you created."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Notifications stopped appearing in our Slack channel. What happened?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most common cause is that the Zooza bot token was revoked. This can happen if:\n- A Slack workspace admin removed the Zooza app from the workspace.\n- Someone from a different Zooza network or company completed a fresh OAuth into the same Slack workspace, rotating the bot token.\n\nGo to Settings → Integrations → Slack. If the status shows Needs re-authorization, click Reconnect and complete the OAuth flow again."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A Slack channel is not showing up in the channel list. How do I fix this?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Zooza bot must be a member of the channel. In Slack:\n1. Open the channel.\n2. Click the channel name at the top.\n3. Go to Integrations → Add apps.\n4. Search for and add Zooza.\n\nThe channel will appear in Zooza's channel list within a few minutes (the list is cached for 5 minutes)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I stop Slack delivery for my company without disconnecting the whole network?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Go to Settings → Integrations → Slack and click Disconnect this company. This removes your channel mappings and stops Slack delivery for your company. The Slack workspace install and other companies in the network are unaffected."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I remove the Zooza Slack app from our workspace entirely?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only the company that originally completed the OAuth can uninstall. Go to Settings → Integrations → Slack and click Uninstall. This revokes the bot from Slack and deactivates the connection for all attached companies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can two Zooza networks share the same Slack workspace?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Each Slack workspace can only be connected to one Zooza network. If a second network attempts to install into the same workspace, the install is rejected. If this is causing an issue, contact support."
+      }
+    }
+  ]
+}
