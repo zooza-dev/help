@@ -1,5 +1,7 @@
 .idea/
 .obsidian/
+.env.staging
+.env.local
 .claude/settings.local.json
 build/exports/web/
 build/exports/docusaurus/
