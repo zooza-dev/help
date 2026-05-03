@@ -12,28 +12,14 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install Python dependencies
-        run: pip install pyyaml
-
       - name: Generate Docusaurus export
-        run: python scripts/export/build_docusaurus.py --clean --staging
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: build/exports/docusaurus/package.json
+        run: python3 scripts/export/build_docusaurus.py --clean --staging
 
       - name: Install Node dependencies
         working-directory: build/exports/docusaurus
@@ -43,11 +29,8 @@ jobs:
         working-directory: build/exports/docusaurus
         run: npm run build
 
-      - name: Install lftp
-        run: sudo apt-get install -y lftp
-
-      - name: Deploy via SFTP
-        timeout-minutes: 30
+      - name: Deploy via FTP
+        timeout-minutes: 15
         working-directory: build/exports/docusaurus
         env:
           SFTP_USER: ${{ secrets.SFTP_USER }}
@@ -55,5 +38,10 @@ jobs:
           SFTP_HOST: ${{ secrets.SFTP_HOST }}
         run: |
           lftp -u "$SFTP_USER,$SFTP_PASSWORD" \
-            -e "set ssl:verify-certificate no; set net:timeout 30; set net:max-retries 2; set mirror:parallel-transfer-count 5; mirror --reverse --delete --verbose ./dist/ /zooza.online/sub/staging-help/; quit" \
-            ftp://$SFTP_HOST || true
+            -e "set ssl:verify-certificate no; \
+                set net:timeout 30; \
+                set net:max-retries 2; \
+                set mirror:parallel-transfer-count 5; \
+                mirror --reverse --delete --verbose ./dist/ /zooza.online/sub/staging-help/; \
+                quit" \
+            ftp://$SFTP_HOST

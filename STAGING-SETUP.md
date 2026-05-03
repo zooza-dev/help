@@ -1,22 +1,31 @@
 # Staging deploy — Mac Mini setup
 
-One-time setup for deploying Help to staging directly from this machine.
-After setup, deploying takes ~2–3 minutes instead of 18 via GitHub Actions.
+Setup GitHub self-hosted runner on the Mac Mini so every push to `test`
+automatically deploys to staging — no GitHub Actions cloud, ~2–3 min per deploy.
 
 ---
 
-## Prerequisites
+## How it works
 
-Install via Homebrew (install Homebrew first if missing):
+When you push to the `test` branch, GitHub notifies the Mac Mini (which is
+permanently connected to GitHub in the background). The Mac Mini runs the
+build and uploads to staging directly. No cloud build servers involved.
+
+---
+
+## Step 1 — Install dependencies (once)
+
+Install Homebrew if missing:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Then:
+Install tools:
 
 ```bash
 brew install python@3.11 node@20 lftp git
+pip3 install pyyaml
 ```
 
 Verify:
@@ -25,61 +34,83 @@ Verify:
 python3 --version   # 3.11+
 node --version      # v20+
 lftp --version
-git --version
 ```
 
 ---
 
-## Clone the repo
+## Step 2 — Register the Mac Mini as a GitHub runner
+
+1. Open the repo on GitHub → **Settings → Actions → Runners → New self-hosted runner**
+2. Select **macOS** and your chip (**ARM64** for M-series, **x64** for Intel)
+3. GitHub shows a set of commands — run them in Terminal, for example:
 
 ```bash
-cd ~
-git clone git@github.com:zooza-dev/help.git
-cd help
-git checkout test
+mkdir ~/actions-runner && cd ~/actions-runner
+curl -o actions-runner-osx-arm64.tar.gz -L https://github.com/actions/runner/releases/download/vX.X.X/actions-runner-osx-arm64-X.X.X.tar.gz
+tar xzf ./actions-runner-osx-arm64.tar.gz
+./config.sh --url https://github.com/zooza-dev/help --token TOKEN_FROM_GITHUB
 ```
 
-If you get a permission error, you need SSH access to the repo — ask Michal to add your SSH key to GitHub.
+> Use the exact commands and token shown by GitHub — the token expires after 1 hour.
+
+When asked for the runner name and labels, press Enter to accept defaults.
 
 ---
 
-## Install Node dependencies (once)
+## Step 3 — Install runner as a background service
+
+So the runner starts automatically on boot and reconnects after restarts:
 
 ```bash
-cd ~/help/build/exports/docusaurus
+cd ~/actions-runner
+./svc.sh install
+./svc.sh start
+```
+
+Verify it is running:
+
+```bash
+./svc.sh status
+```
+
+You should see `active (running)`.
+
+---
+
+## Step 4 — Add FTP credentials to GitHub Secrets
+
+The deploy workflow needs FTP credentials. Check that these three secrets exist
+in the repo (**Settings → Secrets and variables → Actions**):
+
+- `SFTP_USER`
+- `SFTP_PASSWORD`
+- `SFTP_HOST`
+
+If any are missing, ask Michal for the values.
+
+---
+
+## Step 5 — First node_modules install (once)
+
+The runner clones the repo fresh on first use. After the first run, find the
+workspace and pre-install Node dependencies so the first deploy is fast:
+
+```bash
+cd ~/actions-runner/_work/help/help/build/exports/docusaurus
 npm install --legacy-peer-deps
 ```
 
-This takes a few minutes the first time. After that, it is skipped automatically unless `package.json` changes.
+After this, `node_modules` persists between deploys automatically.
 
 ---
 
-## Add FTP credentials
+## Deploying
 
-Create the file `~/help/.env.staging` (ask Michal for the values — they are in GitHub Secrets):
+Just push to `test` as normal — the Mac Mini picks it up and deploys within
+2–3 minutes. No manual steps needed.
 
-```
-SFTP_USER=...
-SFTP_PASSWORD=...
-SFTP_HOST=...
-```
-
-> This file is in `.gitignore` — never commit it.
-
----
-
-## Deploy
-
-```bash
-bash ~/help/scripts/deploy-staging.sh
-```
-
-The script:
-1. Pulls latest from `test` branch
-2. Generates Docusaurus source files
-3. Skips `npm install` if dependencies have not changed
-4. Builds the site
-5. Uploads changed files to staging via FTP
+To trigger a deploy without a code change, go to GitHub →
+**Actions → Deploy Help to Staging → Run workflow**.
 
 Result: **https://staging-help.zooza.online/**
 
@@ -87,10 +118,16 @@ Result: **https://staging-help.zooza.online/**
 
 ## Troubleshooting
 
+**Runner shows offline in GitHub Settings → Actions → Runners**
+Run `cd ~/actions-runner && ./svc.sh status`. If stopped, run `./svc.sh start`.
+
 **`lftp: command not found`** — run `brew install lftp`
 
 **`python3: command not found`** — run `brew install python@3.11`
 
-**FTP upload fails / times out** — check that the Mac Mini has internet access and the credentials in `.env.staging` are correct.
+**`pip3 install pyyaml` needed again after macOS update** — rerun it.
 
-**`npm run build` fails** — run `npm install --legacy-peer-deps` manually in `build/exports/docusaurus/` and try again.
+**FTP upload fails** — verify the three GitHub Secrets are set correctly.
+
+**`npm run build` fails on first run** — run `npm install --legacy-peer-deps`
+manually in the workspace `docusaurus/` folder (see Step 5).
