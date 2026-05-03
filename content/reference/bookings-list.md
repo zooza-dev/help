@@ -79,7 +79,8 @@ Available statuses depend on whether the booking uses a payment plan with a down
 |---|---|
 | No debt | The booking is fully paid — nothing is owed. |
 | Not paid | Nothing has been paid yet (balance is zero). |
-| Awaiting payment | A payment has been requested or is scheduled but not yet received. Distinct from **Not paid** — use this to find bookings with an outstanding payment request. |
+| Awaiting payment | The client has an outstanding balance but is still within the payment due window — the deadline has not passed yet. Once the window expires, the status automatically transitions to **Unpaid**. See [Automatic payment reminders](../guides/automatic-payment-reminders-detailed.md) for how the due window is configured. |
+| Unpaid | The payment window has closed and the balance is overdue. Use this to identify clients who are genuinely past their payment deadline. |
 | Partially paid | Some amount has been paid, but the full balance is not yet settled (e.g. instalment plan in progress). |
 | Paid | The booking is fully paid. |
 | Overpaid | More has been paid than the amount owed — a credit is on the account. |
@@ -91,7 +92,7 @@ Available statuses depend on whether the booking uses a payment plan with a down
 | Final payment paid | The final payment is fully settled. |
 | Final payment overpaid | More than the final payment amount has been paid. |
 
-> **Tip:** To find all bookings with outstanding balances, filter by **Not paid** + **Partially paid** (and **Awaiting payment** if you want to include pending payment requests).
+> **Tip:** To find all bookings with outstanding balances, filter by **Awaiting payment** + **Unpaid** + **Partially paid**. Use **Awaiting payment** alone to see clients who still have time to pay; use **Unpaid** alone to see overdue bookings.
 
 ### Top Actions
 

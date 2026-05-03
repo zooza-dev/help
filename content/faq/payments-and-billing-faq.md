@@ -52,11 +52,40 @@ The balance shows the difference between what the client should pay and what the
 
 A negative balance does not necessarily mean "overpaid" — it means there is an outstanding amount.
 
+## What is the difference between "Awaiting payment" and "Unpaid"?
+
+Both statuses mean the client owes money, but they indicate different urgency:
+
+- **Awaiting payment** — the client has an outstanding balance and is still within the allowed payment window. The deadline has not passed. This is a normal, expected state for a booking that was just created.
+- **Unpaid** — the payment window has closed. The balance is overdue.
+
+The length of the grace window is set in **Settings → Payments** under **Number of days until payment is due** (Slovak: *Počet dní pre vystavenie splátky*). If this is set to 20, every new booking with a balance enters **Awaiting payment** for 20 days from registration, then automatically becomes **Unpaid**.
+
+The default value is **0** — meaning no grace window; bookings go straight to **Unpaid** when created with an outstanding balance.
+
+## Why are my bookings showing "Awaiting payment" when they used to show "Unpaid" immediately?
+
+If you have a non-zero value in **Settings → Payments → Number of days until payment is due**, your bookings will now enter **Awaiting payment** for that number of days before becoming **Unpaid**.
+
+Before May 2026, this setting only affected bookings with a payment schedule (instalments). From May 2026, it applies to **all** bookings with an outstanding balance.
+
+If you want bookings to go straight to **Unpaid** (the original behaviour), set the field to **0**.
+
+## Does "Awaiting payment" status automatically send reminder emails to clients?
+
+No. The **Awaiting payment** status is for your internal tracking only — it does not trigger any emails.
+
+To send email reminders to clients with outstanding balances, you must configure a **Payment Reminder** action on the programme under **Programme → Settings → Price and Payment → Payment Reminder Settings**. Without this action, bookings will silently move from **Awaiting payment** to **Unpaid** when the deadline passes — no notification is sent.
+
+See [Automatic payment reminders](../guides/automatic-payment-reminders-detailed.md) for full setup instructions.
+
 ## What happens when a client registers but does not pay?
 
 The booking is created even if the payment fails or is skipped. This ensures you still capture the lead. The parent can complete the payment later via their Client Profile.
 
-You can configure **payment reminders** per programme to automatically follow up with unpaid clients. After a set number of reminders, the system can auto-remove the booking.
+Depending on your **Number of days until payment is due** setting, the booking will be in **Awaiting payment** (if a grace window is set) or immediately in **Unpaid** (if the setting is 0).
+
+You can configure **payment reminders** per programme to automatically follow up with clients who have not paid. After a set number of reminders, the system can auto-remove the booking.
 
 ## How do payment reminders work?
 
@@ -66,7 +95,7 @@ Payment reminders are configured per programme under the payment settings. You s
 - The interval between reminders.
 - Whether the system should automatically cancel the booking after all reminders expire.
 
-Go to **Programme → Settings → Price** to configure this.
+Go to **Programme → Settings → Price and Payment → Payment Reminder Settings** to configure this. For a full walkthrough, see [Automatic payment reminders](../guides/automatic-payment-reminders-detailed.md).
 
 ## How do I issue a refund?
 
