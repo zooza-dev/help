@@ -1,135 +1,126 @@
 ---
-title: "Daily Business with Trials: Setup, Transfers, and Adjustments"
-description: "Trials are a great way to introduce new clients to your classes — and Zooza gives you full flexibility to manage how they work."
+title: "Manage trial bookings — reschedule, convert, and close"
+description: "Handle trial bookings day-to-day: transfer to another class, reschedule a missed session, convert to full enrolment, or mark a trial as lost."
 slug: trials-daily-business
 type: guides
 product_area: Programmes
 sub_area: ""
 audience:
   - admin
-tags: ["trials", "booking", "transfer", "attendance", "convert-to-trial"]
+tags: ["trials", "booking", "transfer", "attendance", "convert-to-trial", "trial lost"]
 status: published
 source_legacy_path: legacy/0034_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: 2026-03-25
+last_converted: 2026-05-11
 ---
 
-# Daily Business with Trials: Setup, Transfers, and Adjustments
+# Manage trial bookings — reschedule, convert, and close
 
-Trials are a great way to introduce new clients to your classes — and Zooza gives you full flexibility to manage how they work. Below you'll find the most common trial-related actions and how to handle them step by step.
-
-> **Note:** Trial bookings cannot be created manually by admins or instructors. They must be submitted by the client via the website booking form.
-
----
-
-## Controlling which trial dates appear on your website
-
-You can control which trial dates are shown on your booking form directly in the programme settings. Go to **Programme → Settings → Trial → Sessions Shown in Form**.
-
-Options:
-- Show a fixed number of future sessions, or
-- Show sessions within a specific date range (e.g. always the next three weeks).
-
-![Sessions Shown in Form setting in programme trial settings](../../assets/images/trials-daily-business-02.png)
+> **Trials are client-initiated.** Clients book their own trial via the website booking form. You cannot create a trial booking manually on behalf of a client — this is by design. Instead, send the client your booking link and let them choose a date. If you need to adjust, transfer, or reschedule after they've booked, use the steps below.
 
 ---
 
-## How to transfer a trial booking to another class
+## What happens after a client books a trial
 
-**Moving a single session only:** Open the booking → **Attendance** → click **Book a session**, then select the new date and class.
+Once a client submits a trial booking, their status is **Trial started**. From that point, you have full control:
 
-**Moving the entire trial to a different class:**
+| Situation | What to do |
+|-----------|-----------|
+| Trial went ahead — client wants to enrol | [Convert to full booking](#how-to-convert-a-trial-to-a-full-booking) |
+| Trial went ahead — client is not continuing | [Mark as Trial Lost](#how-to-mark-a-trial-as-lost) |
+| Client didn't show up — wants to try again | [Reschedule to a new date](#how-to-reschedule-a-trial-session) |
+| Client wants a different class or time | [Transfer to another class](#how-to-transfer-a-trial-to-another-class) |
+| Trial was booked as a regular registration by mistake | [Convert existing booking to trial](#how-to-convert-an-existing-booking-to-trial-status) |
+
+---
+
+## How to convert a trial to a full booking
+
+When a trial client decides to enrol:
 
 1. Open the booking detail.
-2. Go to the **Class** section and click **Transfer**.
-3. Select the new class (you can filter by programme or location).
-4. Click **Transfer to another class → Continue**.
-5. The booking status remains *Trial started*.
-6. Choose the next session date.
-7. If already paid, tick **Do not change payments** to keep the payment unchanged.
-8. Decide whether to notify the client (checkbox).
-9. Confirm by clicking **Continue**.
-10. Go to **Attendance** to hide old sessions and add new ones as needed.
+2. Click **Change status**.
+3. Select **Enrolled** (or the appropriate active status for your programme).
+4. Confirm.
+
+The booking stays on the same class. All existing attendance records are preserved.
+
+If the programme uses paid trials, any payment already collected counts towards the total — you'll see the balance reflected on the booking.
 
 ---
 
-## How to hide old sessions and add new ones after a transfer
+## How to mark a trial as lost
 
-You can manage attendance flexibly from the **Attendance** section of the booking:
+If a trial client is not continuing — they didn't show up, decided not to enrol, or you've had no response:
 
-- **Hide** — removes a session from reports and the client's view. The client won't receive notifications for it.
-- **Book a session** — adds a new session.
+1. Open the booking detail.
+2. Click **Change status** → **Trial Lost**.
+3. Optionally send an email — the client receives a message with a link to book again if they change their mind.
 
-![Attendance section showing Hide and Book a session options](../../assets/images/trials-daily-business-03.png)
+Marking as Trial Lost:
+- Releases the reserved capacity spot immediately.
+- Stops any automated trial follow-up messages.
+- Does not delete the booking — it stays in the history.
+
+**If the trial was paid:** The payment record remains on the booking. If you need to issue a refund, do that manually via your payment provider (Stripe or GoCardless) after marking as lost.
+
+![Trial Lost status change on booking](../../assets/images/trials-daily-business-11.png)
 
 ---
 
-## How to reschedule a single trial session
+## How to reschedule a trial session
+
+Rescheduling is a two-step action: first hide the original date, then book the new one. These are separate because hiding removes the session from the client's view and from reports — it's not a cancellation of the booking, just a removal of that specific attendance record.
 
 1. Go to the booking → **Attendance**.
-2. Click **Hide** to remove the original date.
-3. Click **Book a session** to add the new date.
+2. Click **Hide** on the original session — this removes it from reports and the client's profile.
+3. Click **Book a session** to add the replacement date.
 
-The client and instructor will both receive a notification and see the updated session in their profile.
+The client receives a notification with the new date. The booking status stays as **Trial started**.
 
 ![Rescheduling a trial session in the Attendance section](../../assets/images/trials-daily-business-04.png)
 
 ---
 
-## How to reserve a seat for a trial participant
+## How to transfer a trial to another class
 
-If you want a trial participant to keep their seat reserved until they either enrol or are marked as lost:
+Use this when a client wants to trial a different class, time slot, or location.
 
-Go to **Programme → Settings → Trial → Reserve seat for trial attendee** and check the box.
+**Move one session only:**
+Open the booking → **Attendance** → **Book a session**, then select the new date and class.
 
-![Reserve seat for trial attendee setting](../../assets/images/trials-daily-business-05.png)
+**Move the entire trial to a different class:**
 
----
-
-## How to set trial duration and type (free vs. paid, multi-session)
-
-To configure a longer or paid trial, go to **Programme → Settings → Trial**.
-
-Under **Trial type**, choose between:
-- Free trial (single or multiple sessions)
-- Paid trial (single or multiple sessions)
-
-You can also set the unit price per session here.
-
-![Trial type setting — free or paid](../../assets/images/trials-daily-business-06.png)
-
-![Trial duration and price settings](../../assets/images/trials-daily-business-07.png)
+1. Open the booking detail.
+2. Go to the **Class** section and click **Transfer**.
+3. Select the new class (filter by programme or location if needed).
+4. Click **Transfer to another class → Continue**.
+5. The booking status stays as **Trial started**.
+6. Choose the next session date.
+7. If the client has already paid, tick **Do not change payments** to leave the payment untouched.
+8. Choose whether to notify the client.
+9. Click **Continue**.
+10. Go to **Attendance** → hide the old sessions and add new ones.
 
 ---
 
-## How to allow only trial bookings in a class
+## How to reschedule a trial that falls on a cancelled session
 
-If you want clients to book only trials (not full enrolments):
+If you cancel a session that had a trial booked on it, the trial booking is not automatically moved. You need to reschedule it manually:
 
-Go to **Programme → Settings → Online Registration (Edit)** → under **Booking Options Shown on Website**, select **Trials only** (or whichever option fits your setup).
+1. Find the affected trial booking (check the cancelled session's booking list before cancelling, or search by client name).
+2. Follow the [reschedule steps above](#how-to-reschedule-a-trial-session).
 
-![Booking options shown on website — Trials only](../../assets/images/trials-daily-business-08.png)
-
-> **Tip:** Most trial settings are controlled at the programme level — so each programme can have its own unique setup, payment type, and visibility rules.
-
----
-
-## Trial sessions and class overcapacity
-
-Class overcapacity can occur when trial sessions are used together with [Blocks](blocks-configuration.md) within the same class.
-
-When trials are configured to reserve capacity for the full class period, this works reliably only in classes **without** Blocks. If a class uses Blocks, the system cannot determine which Block the capacity should be reserved for — trials then reserve capacity only for individual dates, not the full period. This can cause subsequent full-period bookings to exceed total class capacity.
-
-**How to avoid overcapacity:** Configure trial sessions to use **Extra Capacity**. If Extra Capacity is not used, class capacity must be actively monitored and trials managed manually.
+This is intentional — Zooza doesn't auto-move trials because the right replacement date depends on what you offered the client.
 
 ---
 
 ## How to convert an existing booking to trial status
 
-If a booking was created as a regular registration or waitlist entry but should have been a trial, an admin can convert it without starting from scratch.
+If a booking was created as a regular registration but should have been a trial:
 
-**Prerequisite:** The programme must have trials enabled (Trial type must not be set to *None*).
+**Prerequisite:** The programme must have trials enabled — Trial type must not be set to *None*.
 
 1. Open the booking detail.
 2. Click **Change status**.
@@ -139,25 +130,58 @@ If a booking was created as a regular registration or waitlist entry but should 
 3. Select **Convert to trial**.
 4. Choose a trial date.
 
-After converting, the booking enters the standard trial flow — the same automation (follow-ups, auto-lost) applies as for any trial. Manually enrol the client into a specific trial session from the **Attendance** section.
+After converting, the booking enters the standard trial flow — the same automation applies (follow-ups, auto-lost). Enrol the client into a specific trial session from the **Attendance** section.
 
-> **Note:** This is a one-way conversion. A trial booking cannot be converted back to a regular registration.
+> This is a one-way conversion. A trial booking cannot be converted back to a regular registration.
 
 ---
 
-## What if a trial client doesn't show up?
+## Controlling which trial dates appear on your website
 
-If a client booked a trial but didn't attend, the outcome depends on your trial settings:
+Go to **Programme → Settings → Trial → Sessions Shown in Form**.
 
-- If trials are configured to hold a spot, the trial may still be active and count towards capacity until the trial process ends.
-- If you don't plan to continue with that client, mark the booking as **Trial Lost**.
+Options:
+- Show a fixed number of future sessions
+- Show sessions within a specific date range (e.g. always the next three weeks)
 
-### How to mark a trial as Trial Lost
+![Sessions Shown in Form setting in programme trial settings](../../assets/images/trials-daily-business-02.png)
 
-1. Open the booking detail.
-2. Change the status to **Trial Lost**.
-3. Optionally send an email — the client will receive a message with a link to book again (takes them back to the booking form).
+---
 
-This stops the trial flow and releases the spot in the class.
+## Trial duration, paid trials, and multi-session trials
 
-![Trial Lost status change on booking](../../assets/images/trials-daily-business-11.png)
+Go to **Programme → Settings → Trial** to configure:
+- **Trial type:** free or paid, single session or multiple sessions
+- **Unit price per session** (for paid trials)
+- **Reserve seat:** whether a trial booking holds a capacity spot until the trial is resolved
+
+![Trial type setting — free or paid](../../assets/images/trials-daily-business-06.png)
+
+![Trial duration and price settings](../../assets/images/trials-daily-business-07.png)
+
+---
+
+## Restricting a class to trials only
+
+If you want clients to book only trials from the website (not full enrolments):
+
+Go to **Programme → Settings → Online Registration (Edit)** → **Booking Options Shown on Website** → select **Trials only**.
+
+![Booking options shown on website — Trials only](../../assets/images/trials-daily-business-08.png)
+
+---
+
+## Trial capacity and overcapacity with Blocks
+
+If a class uses [Blocks](blocks-configuration.md), trials can cause overcapacity. This happens because the system can't determine which Block to reserve capacity for — trials then hold spots per individual date, not the full period. Subsequent full-period bookings may then exceed total capacity.
+
+**How to avoid this:** Set trials to use **Extra Capacity**. Without Extra Capacity, you'll need to monitor capacity manually when trials are active on a Blocks class.
+
+---
+
+## Related guides
+
+- [Set up trials in a programme](trials-setup.md)
+- [Auto-enrolment responses](auto-enrolment-responses.md)
+- [Transfer and copy bookings](transfer-and-copy-bookings.md)
+- [Programmes, classes, and sessions explained](programme-class-session-definition.md)

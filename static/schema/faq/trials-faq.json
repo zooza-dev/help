@@ -70,6 +70,14 @@
     },
     {
       "@type": "Question",
+      "name": "How do I close a trial that is not going to convert?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use Trial Lost — do not use the Cancel button. The Cancel action is designed for standard bookings and does not make sense in the trial workflow.\n\nTo mark a trial as unsuccessful:\n\n1. Open the trial booking.\n2. Change the status to Trial Lost (labelled \"Skúšobná hodina neúspešná\" in Slovak).\n3. Zooza asks whether to send the client a notification — choose based on your process.\n\nOnce set to Trial Lost, the trial is closed. No further automation runs."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What happens when a client cancels a trial?",
       "acceptedAnswer": {
         "@type": "Answer",

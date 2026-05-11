@@ -89,7 +89,7 @@
       "name": "Can I search for and restore deleted bookings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Deleted bookings are not permanently removed from the system. To find them:\n\n1. Go to Bookings.\n2. Open the advanced search filters.\n3. Change the Status filter to Deleted.\n\nThis displays all previously deleted bookings. You can open any deleted booking to review its details. To restore a deleted booking, open its detail and change the status back to the appropriate active status (e.g., Registered)."
+        "text": "Yes. Deleted bookings are kept in Trash for 30 days and can be restored with a single click.\n\n1. Go to Settings → Tools → Trash.\n2. Filter by Type → Registration to narrow the list.\n3. Find the booking and click Restore.\n\nSee Recover deleted sessions, classes, and registrations for the full process, including bulk restore."
       }
     },
     {

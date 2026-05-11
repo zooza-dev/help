@@ -147,8 +147,36 @@ If you need a combined attendance report covering both periods, export attendanc
 
 No. External instructors have attendance-only access. Only admins, owners, and standard instructors can transfer or copy bookings.
 
+## Does a network transfer move the client's payment history to the new company?
+
+No. Payment transactions and receipts stay with the source company. What the target company receives is a **reconstructed balance**:
+
+- A charge for what the client still owed at the source (their debt)
+- A credit for what the client had already paid at the source
+
+Both entries reference the source company and source registration, so the target company can see where the balance came from. They do not get a transaction-by-transaction history.
+
+## Does a network transfer carry over the client's Direct Debit mandate or Stripe subscription?
+
+No. Payment mandates and subscriptions are agreements between the client and the source company's payment gateway. They cannot be moved to another company's account.
+
+After the transfer, if the target company uses GoCardless or Stripe, the client needs to set up a new mandate or subscription with that branch.
+
+## What other data carries over in a network transfer?
+
+Along with the reconstructed payment balance, the target registration also receives:
+
+- Internal (company) note and public note from the source registration
+- Custom registration fields (extra fields)
+- The source company's internal client ID, if the client does not already have one at the target company
+
+What does **not** carry over: the programme or class (the target company selects this when accepting), payment history, and any payment gateway integrations.
+
+See [Bulk Network Transfer](../guides/bulk-network-transfer.md) for the full data breakdown.
+
 ## Related
 
 - [Transfer and copy bookings — full guide](../guides/transfer-and-copy-bookings.md)
+- [Bulk Network Transfer](../guides/bulk-network-transfer.md)
 - [Bookings List Reference](../reference/bookings-list.md)
 - [New Programme with Existing Clients](../guides/new-programme-existing-clients.md)

@@ -30,6 +30,14 @@
     },
     {
       "@type": "Question",
+      "name": "An instructor says they can't find \"Activities → Classes\" — only \"Calendar\" is visible",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is expected. Instructors with limited roles (Standard instructor, External instructor, Receptionist) only see Activities → Calendar in the left-hand menu. The Classes list under Activities is only available to Owners, Assistants, and Main instructors.\n\nThis means that guide steps like \"Go to Activities → Classes → select sessions → Bulk edit\" cannot be performed by a standard instructor. If an instructor needs to change session times, reschedule sessions, or bulk-edit, an admin or main instructor must do it on their behalf.\n\nIf the instructor should have access to the Classes list, change their role to Main instructor in Settings → Team."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How do I change instructor permissions?",
       "acceptedAnswer": {
         "@type": "Answer",

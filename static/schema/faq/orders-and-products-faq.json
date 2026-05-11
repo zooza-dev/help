@@ -30,6 +30,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can I extend the expiry date on a purchased entry pass or gift voucher?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The expiry date on a purchased entry pass or gift voucher cannot be changed by an admin from the Orders screen. The expiration field is read-only — it displays the date but does not allow editing.\n\nIf a client needs their expiry extended, contact Zooza support with the order number. Support can adjust the expiry date on the backend.\n\nTo avoid this situation in the future, set a longer expiry period on the product configuration before clients purchase it. The expiry period is defined on the product itself (e.g., 12 months from purchase) and applies to all future purchases — it cannot be changed retroactively in bulk."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Why don't dynamic tags work in order confirmation emails?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -41,7 +49,7 @@
       "name": "How do I restore a deleted order?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Deleting an order also releases the product stock/capacity tied to it. If you need to restore a deleted order:\n\n1. Contact Zooza support with the order number.\n2. Support can restore the order and its line items on the backend.\n\nOnce restored, verify that the product quantities and payment status are correct. To avoid accidental deletions, remove individual line items from an order instead of deleting the entire order."
+        "text": "Deleting an order also releases the product stock/capacity tied to it. If you need to restore a deleted order:\n\n1. Contact Zooza support with the order number.\n2. Support can restore the order and its line items on the backend.\n\nOnce restored, verify that the product quantities and payment status are correct. To avoid accidental deletions, remove individual line items from an order instead of deleting the entire order.\n\nNote: The self-service Trash screen (Settings → Tools → Trash) covers registrations, sessions, and classes — but not orders. Deleted orders require support to restore."
       }
     },
     {

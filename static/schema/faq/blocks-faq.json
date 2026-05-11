@@ -49,7 +49,7 @@
       "name": "Can I filter bookings by block?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Filtering bookings by block directly in the booking list is not yet fully supported. Block occupancy statistics are available in the class detail view, where you can see how many clients are enrolled in each block."
+        "text": "Filtering bookings by block directly in the booking list is not yet fully supported, and the booking export does not include a block column.\n\nTo check which block a specific client is enrolled in, open the booking detail and look at the Class tile — it shows the client's current block. This is the most reliable way to verify a single client's block assignment.\n\nFor bulk reporting, block occupancy statistics are available in the class detail view, where you can see how many clients are enrolled in each block."
       }
     },
     {

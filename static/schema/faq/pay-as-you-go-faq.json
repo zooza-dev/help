@@ -110,6 +110,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can a client use one entry pass for two children registered in the same class?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. An entry pass is linked to a specific registration. If two children are registered separately — even in the same class — each registration requires its own entry pass. The pass purchased during one registration cannot be used to deduct entries from another registration.\n\nTo share a pass across multiple registrations in the same class, the classes must be linked. Class linking is typically used to share a pass across different classes within a programme, not across separate registrations within one class. For two children in the same group, the standard approach is to purchase a separate entry pass for each registration.\n\nSee: Linked classes."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What are linked classes and when do I need them?",
       "acceptedAnswer": {
         "@type": "Answer",

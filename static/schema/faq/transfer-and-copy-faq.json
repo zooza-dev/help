@@ -118,10 +118,42 @@
     },
     {
       "@type": "Question",
+      "name": "Where can I find a client's attendance history from before a transfer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The answer depends on whether this was a class-to-class transfer or a block-to-block move within the same class.\n\nClass-to-class transfer: Attendance records from the old class remain attached to the original sessions in the original class — they are not lost.\n\nTo find them:\n1. Go to the client's profile and open their session or attendance history — this shows all sessions the client attended across all classes, regardless of transfers.\n2. Alternatively, go to the original class (the one they transferred from) and open the sessions from that period — the attendance records are still there.\n\nIf you need a combined attendance report covering both periods, export attendance from each class separately and combine them.\n\nBlock-to-block move (changing a client's block within the same class): This behaves differently. When you move a client from one block to another, the previous attendance records are marked as Hidden in the system. The data is not deleted, but it is no longer visible — not in the booking detail, not in the client profile, and not in exports.\n\nRecommendation: Before moving a client to a different block, export their attendance first if you need a record of it."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Can external instructors transfer or copy bookings?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No. External instructors have attendance-only access. Only admins, owners, and standard instructors can transfer or copy bookings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does a network transfer move the client's payment history to the new company?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Payment transactions and receipts stay with the source company. What the target company receives is a reconstructed balance:\n\n- A charge for what the client still owed at the source (their debt)\n- A credit for what the client had already paid at the source\n\nBoth entries reference the source company and source registration, so the target company can see where the balance came from. They do not get a transaction-by-transaction history."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does a network transfer carry over the client's Direct Debit mandate or Stripe subscription?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Payment mandates and subscriptions are agreements between the client and the source company's payment gateway. They cannot be moved to another company's account.\n\nAfter the transfer, if the target company uses GoCardless or Stripe, the client needs to set up a new mandate or subscription with that branch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What other data carries over in a network transfer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Along with the reconstructed payment balance, the target registration also receives:\n\n- Internal (company) note and public note from the source registration\n- Custom registration fields (extra fields)\n- The source company's internal client ID, if the client does not already have one at the target company\n\nWhat does not carry over: the programme or class (the target company selects this when accepting), payment history, and any payment gateway integrations.\n\nSee Bulk Network Transfer for the full data breakdown."
       }
     }
   ]

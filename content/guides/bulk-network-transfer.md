@@ -38,6 +38,32 @@ Before committing, the system shows a **preview** (dry run) of how many registra
 
 ---
 
+## What transfers with the registration
+
+When the target company accepts the transfer, the following data is applied to the new registration:
+
+| What | Detail |
+|---|---|
+| **Debt** | The amount the client still owed at the source company is recorded as a new charge on the target registration. |
+| **Paid** | The amount the client already paid at the source company is recorded as a credit on the target registration. |
+| **Internal note** | The company note from the source registration is copied. |
+| **Public note** | The public note from the source registration is copied. |
+| **Custom fields** | Registration-level extra fields carry over. |
+| **Custom client ID** | The source company's internal client ID is set at the target company, if one does not already exist there. |
+
+**What does not transfer:**
+
+| What | Why |
+|---|---|
+| Payment history and transactions | Individual payment records and logs stay with the source company. |
+| GoCardless mandate | Direct Debit mandates are bank-level agreements tied to the source company's account. The client must set up a new mandate with the target company. |
+| Stripe subscription | Stripe subscriptions belong to the source company's Stripe account and cannot be moved. |
+| Programme or class | The target company selects the class to enrol the client into when accepting the transfer. |
+
+> **How the balance works:** The client's payment balance is reconstructed at the target company — not copied transaction by transaction. If the client paid €120 and still owes €30, the target registration starts with a €30 charge and a €120 credit, both referencing the source company. The target company gets a clean starting point, not a full payment history.
+
+---
+
 ## Step-by-step
 
 ### 1. Open the Bookings list

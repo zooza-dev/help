@@ -187,6 +187,14 @@
         "@type": "Answer",
         "text": "The most common reason is that the child's attendance was set to \"Did not attend\" (no-show) instead of \"Cancelled\". Only the \"Cancelled\" state creates a make-up credit.\n\nOther reasons include:\n\n- Make-up sessions are not enabled on the programme.\n- The credit was generated but already expired based on your expiration settings.\n- The session itself was not properly tracked (e.g. attendance tracking is disabled on the class).\n\nTo fix a missing credit, change the attendance state from \"Did not attend\" to \"Cancelled\" on the affected session. The system should then generate the make-up credit."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "How do group make-up sessions work and why does capacity show as full after cancellations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A group make-up session is a one-off session you create specifically for clients to attend as a make-up. The most common setup is a new session with a fixed capacity that clients self-register into.\n\nWhy the capacity shows as full even after cancellations:\n\nThe capacity displayed in the booking form reflects the number of clients registered for the whole class — not the number of available spots on that individual session. When a client cancels from one session, they are removed from that session but remain registered in the class. The system still counts them as occupying a spot in the class capacity.\n\nThis means that even if several clients cancel from the make-up session, the booking form can still show 10/10 and block new registrations.\n\nWorkaround:\n\nIf spots have freed up but the booking form still shows the session as full, delete the session and recreate it. This resets the displayed capacity to reflect actual availability."
+      }
     }
   ]
 }

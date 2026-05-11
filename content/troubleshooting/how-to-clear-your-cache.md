@@ -1,57 +1,95 @@
 ---
-title: "How to Clear Your Cache"
-description: "Sometimes websites (including Zooza 😉) may load slowly or not show recent updates."
+title: "How to clear your cache"
+description: "If Zooza looks different than expected or shows outdated content, a hard reload fixes it in one step — no settings needed."
 slug: "how-to-clear-your-cache"
 type: "troubleshooting"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: ["settings", "widget"]
+tags: ["settings", "widget", "cache", "browser"]
 status: "published"
 source_legacy_path: "legacy/0013_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-05-01"
 ---
 
-# How to Clear Your Cache
+# How to clear your cache
 
-Sometimes websites (including Zooza 😉) may load slowly or not show recent updates. A quick fix is to clear your browser cache. Here’s how to do it on the most common browsers:
+If Zooza looks outdated, shows the wrong layout, or behaves unexpectedly after an update, your browser is most likely showing a cached (saved) version of the page. Here is how to fix it.
 
-## Desktop
+---
 
-Google Chrome
+## Step 1 — Hard reload (fastest, try this first)
 
-1. Open menu (⋮ top right)
-2. Select More tools → Clear browsing data
-3. Choose Cached images and files
-4. Click Clear dataMicrosoft Edge
+A hard reload forces your browser to re-fetch the page from the server, ignoring the saved cache. You do not need to open any settings.
 
-1. Open menu (⋯ top right)
-2. Go to Settings → Privacy → Clear browsing data
-3. Select Cached images and files
-4. Click Clear nowSafari (Mac)
+Click anywhere on the Zooza page, then press:
 
-1. Go to Safari → Preferences → Advanced
-2. Tick Show Develop menu
-3. Then click Develop → Empty CachesFirefox
+| System | Shortcut |
+|---|---|
+| Windows / Linux | `Ctrl` + `Shift` + `R` |
+| Mac | `Cmd` + `Shift` + `R` |
 
-1. Open menu (☰ top right)
-2. Go to Settings → Privacy & Security
-3. Under Cookies and Site Data, click Clear Data
-4. Select Cached Web Content and click Clear
+This solves the problem in most cases.
 
-## Mobile
+---
 
-Chrome (Android/iOS)
+## Step 2 — Open a private window (if hard reload didn’t help)
 
-1. Open menu (⋮ or ⋯)
-2. Tap History → Clear browsing data
-3. Choose Cached images and files and tap ClearSafari (iPhone)
+A private (incognito) window starts with a completely empty cache and no saved data.
 
-1. Go to Settings → Safari
-2. Scroll down and tap Clear History and Website Data
+| Browser | Open private window |
+|---|---|
+| Chrome / Edge | `Ctrl` + `Shift` + `N` (Windows) · `Cmd` + `Shift` + `N` (Mac) |
+| Firefox | `Ctrl` + `Shift` + `P` (Windows) · `Cmd` + `Shift` + `P` (Mac) |
+| Safari | `Cmd` + `Shift` + `N` (Mac) |
 
-After clearing your cache, reload the page or restart the app.
+Open Zooza in the private window. If it looks correct there, the issue is your browser cache.
 
-If the issue continues, try a hard refresh (Ctrl + R) or clear cookies as well.
+---
+
+## Step 3 — Clear cache in browser settings (full reset)
+
+If neither option above works, clear the browser cache fully.
+
+### Google Chrome
+
+1. Open the menu (⋮ top right) → **More tools → Clear browsing data**.
+2. Set time range to **All time**.
+3. Check **Cached images and files**. Uncheck everything else.
+4. Click **Clear data**.
+
+### Microsoft Edge
+
+1. Open the menu (⋯ top right) → **Settings → Privacy, search, and services**.
+2. Under **Clear browsing data**, click **Choose what to clear**.
+3. Check **Cached images and files** and click **Clear now**.
+
+### Safari (Mac)
+
+1. In the menu bar, go to **Develop → Empty Caches**. *(If you don’t see Develop: Safari → Settings → Advanced → tick "Show features for web developers".)*
+
+### Firefox
+
+1. Open the menu (☰ top right) → **Settings → Privacy & Security**.
+2. Under **Cookies and Site Data**, click **Clear Data**.
+3. Check **Cached Web Content** and click **Clear**.
+
+---
+
+## On mobile
+
+### Chrome (Android or iOS)
+
+1. Tap the menu (⋮ or ⋯) → **History → Clear browsing data**.
+2. Choose **Cached images and files** and tap **Clear data**.
+
+### Safari (iPhone / iPad)
+
+1. Go to **Settings** (phone settings, not Safari) → **Apps → Safari**.
+2. Tap **Clear History and Website Data**.
+
+---
+
+After clearing your cache, reload the Zooza page. If the issue continues, contact support.
