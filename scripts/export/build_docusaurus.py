@@ -238,7 +238,7 @@ def _make_docusaurus_config(staging: bool = False) -> str:
         sitemap: {
           changefreq: 'weekly',
           priority: 0.7,
-          ignorePatterns: ['/tags/**'],
+          ignorePatterns: ['/tags/**', '/404', '/search'],
           filename: 'sitemap.xml',
         },
 """
@@ -261,6 +261,7 @@ const config = {{
   favicon: 'img/favicon-help.svg',
   url: 'https://help.zooza.online',
   baseUrl: '/',
+  trailingSlash: true,
 
   organizationName: 'zooza',
   projectName: 'zooza-help',
