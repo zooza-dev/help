@@ -281,6 +281,30 @@ To verify or change the capacity display:
 
 <!-- REVIEW: The group-vs-session capacity default was changed around Jan 2026. Confirm the exact setting name and location in the Publish > Calendar section. -->
 
+## Registration widget options
+
+These options are available when you configure the booking form widget in **Publish → Customize**.
+
+### Hide dates for classes with Blocks
+
+When a class uses [Blocks](blocks-configuration.md), the registration tile normally shows the parent class date alongside the Block dates. This can confuse clients if the parent date is not meaningful to them.
+
+**Option:** Enable **Hide dates for classes with multiple segments (Blocks)** in the widget settings.
+
+When enabled, the parent class date is not shown on the registration tile for any class that has at least one Block. The Block-level dates remain visible.
+
+| Setting state | What the client sees |
+|---|---|
+| Off (default) | Parent class date shown on the registration tile |
+| On | Parent class date hidden; Block dates visible |
+
+Use this when Blocks have their own dates and showing the parent class date would be confusing or redundant.
+
+<!-- REVIEW: Confirm the exact UI label for this option in the widget settings. -->
+<!-- REVIEW: Confirm that 'segments' in the spec = 'Blocks' in the admin UI. -->
+
+---
+
 ## Custom fonts and CSS styling
 
 Font, colour, and CSS customisation of Zooza widgets (booking form, calendar, client profile) goes beyond the options available in the Zooza admin interface. These are **implementation-level changes** handled by your web developer.

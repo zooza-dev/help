@@ -89,3 +89,33 @@ You can enable a notification that is sent **before** the first instalment is cr
 Enable this in **Programme → Settings → Price and payments → Payment reminder settings**.
 
 <!-- REVIEW: Confirm the exact setting name and location for enabling the zeroth notification. -->
+
+## Turn off scheduled payment notifications
+
+If you want to stop all payment reminder emails for your clients, you can disable them globally.
+
+Go to **Settings → Billing → Payments** and turn off the **Send scheduled payment notifications** toggle.
+
+When this is off:
+- The upcoming payment (pre-notice) email is not sent.
+- The payment created email is not sent.
+- The overdue payment email is not sent.
+
+**What is not affected:** the payment confirmation email (sent when a payment is successfully processed) — that notification is not controlled by this toggle and is always sent.
+
+## Suppress duplicate payment emails (cooldown)
+
+If clients receive multiple payment notifications for recurring charges in quick succession, the cooldown setting can help.
+
+When the master notifications toggle is on, you can set a **cooldown period in months**. If a previous scheduled payment in the same series was processed within that window, the at-creation email for that booking is suppressed.
+
+**Who the cooldown applies to:** Stripe stored card and GoCardless inbound clients only.
+
+**Who always gets the email regardless of cooldown:**
+- Clients paying by bank transfer (manual recording)
+- The first payment in any series
+
+**Default:** notifications on, cooldown = 0 months (no suppression).
+
+<!-- REVIEW: Confirm the exact UI label for the cooldown months field in Settings → Billing → Payments. -->
+<!-- REVIEW: Confirm whether there is an audit log or indicator when a notification is suppressed by cooldown. -->

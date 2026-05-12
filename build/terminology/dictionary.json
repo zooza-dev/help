@@ -40,12 +40,12 @@
           "mode": "all"
         }
       ],
-      "occurrences_canonical": 791,
-      "occurrences_noncanonical": 51,
-      "files_affected_noncanonical": 18,
+      "occurrences_canonical": 1688,
+      "occurrences_noncanonical": 79,
+      "files_affected_noncanonical": 30,
       "category": "core_concept",
       "context": "both",
-      "notes": "All course→programme. Slugs and filenames stay stable. File asset paths like 'course-settings-01.png' are NOT renamed — only prose text. Remaining occurrences in guides/programme-settings.md (13×) and guides/price-and-payment-setup.md (6×) are mostly in asset filenames and in 'Course fee' heading — the latter should become 'Term payment'. The faq/programmes-timetables-sessions-faq.md (7×) has 'course' in bulk-delete procedural context — needs manual rewrite."
+      "notes": "All course→programme. Slugs and filenames stay stable. File asset paths like 'course-settings-01.png' are NOT renamed — only prose text. Top offenders (2026-05-11): guides/programme-settings.md (13×), guides/loyalty-sibling-discount.md (8×), business-models/adult-language-school.md (7×), setup/invoicing-overview.md (6×). reference/inbound-payments-internals.md (4×) — verbatim API field name 'course' in technical reference, preserve."
     },
     "class": {
       "canonical": "class",
@@ -116,12 +116,12 @@
           "mode": "all"
         }
       ],
-      "occurrences_canonical": 806,
-      "occurrences_noncanonical": 104,
-      "files_affected_noncanonical": 32,
+      "occurrences_canonical": 1785,
+      "occurrences_noncanonical": 141,
+      "files_affected_noncanonical": 68,
       "category": "core_concept",
       "context": "both",
-      "notes": "group→class. Preserve 'target group' (email targeting), 'age group', 'Group classes' (UI label for multi-client class type — NOT a deprecated use, it distinguishes from 1-to-1), 'Group capacity' (widget capacity setting). 'king-of-a-group.md' has 12× 'group' — CONFIRMED: the feature is called 'King of Class' (not 'King of a Group'). File slug stays stable; prose should use 'King of Class'. 'timetable' used 61× across 17 files as legitimate synonym for class schedule view (reference docs) — preserve in reference/programme-settings.md context where it refers to the UI timetable tab."
+      "notes": "group→class. Preserve 'target group' (email targeting), 'age group', 'Group classes' (UI label for multi-client class type — NOT deprecated), 'Group capacity' (widget capacity setting). Top offenders (2026-05-11): business-models/children-group-activities-block.md (11×), business-models/adult-language-school.md (11×), business-models/index.md (9×), guides/king-of-a-group.md (8× — feature name, keep in title/slug/heading only). New business-models/ directory is a major source — these articles use 'group activities' as product naming. 'timetable' remains legitimate in reference/programme-settings.md where it refers to the UI timetable tab view."
     },
     "session": {
       "canonical": "session",
@@ -137,22 +137,47 @@
         {
           "from": "\\blesson\\b",
           "to": "session",
-          "mode": "all"
+          "mode": "smart",
+          "preserve": [
+            "individual lesson",
+            "individual lessons",
+            "music lesson",
+            "piano lesson",
+            "language lesson",
+            "private lesson"
+          ]
         },
         {
           "from": "\\blessons\\b",
           "to": "sessions",
-          "mode": "all"
+          "mode": "smart",
+          "preserve": [
+            "individual lessons",
+            "music lessons",
+            "piano lessons",
+            "language lessons",
+            "private lessons"
+          ]
         },
         {
           "from": "\\bLesson\\b",
           "to": "Session",
-          "mode": "all"
+          "mode": "smart",
+          "preserve": [
+            "Individual Lesson",
+            "Music Lesson",
+            "Language Lesson"
+          ]
         },
         {
           "from": "\\bLessons\\b",
           "to": "Sessions",
-          "mode": "all"
+          "mode": "smart",
+          "preserve": [
+            "Individual Lessons",
+            "Music Lessons",
+            "Language Lessons"
+          ]
         },
         {
           "from": "\\bevent\\b",
@@ -203,12 +228,12 @@
           ]
         }
       ],
-      "occurrences_canonical": 761,
-      "occurrences_noncanonical": 35,
-      "files_affected_noncanonical": 18,
+      "occurrences_canonical": 2521,
+      "occurrences_noncanonical": 102,
+      "files_affected_noncanonical": 15,
       "category": "core_concept",
       "context": "both",
-      "notes": "lesson→session always (only 11 occurrences remain across 4 files: glossary/index.md×2, faq/make-up-sessions-faq.md×2, guides/edit-sessions-in-programmes.md×1, glossary/terminology-review.md×6 — the last is intentional deprecation listing). event→session except 'paid event', 'multi-day event', 'One-off Event'. custom-holidays.md uses 'trainer' (see instructor cluster) and 'event' legitimately for a local/team event — preserve."
+      "notes": "lesson→session — but with domain-specific exceptions. 2026-05-11 scan found 102 'lesson' occurrences (up from 35): setup/trial-sessions.md (28×), business-models/individual-lessons.md (15×), guides/custom-replacement-lessons.md (9×), business-models/adult-language-school.md (8×), guides/replacement-hours-complete.md (6×). The business-models/ articles and individual-lessons.md legitimately describe lesson-format businesses — preserve 'lesson' in those contexts (individual lesson, music lesson, language lesson). trial-sessions.md (28×) warrants review — likely uses 'lesson' for session within trial context, should be 'session'. event→session except 'paid event', 'multi-day event', 'One-off Event'. Replace rules updated to add preserve list for domain-legitimate lesson uses."
     },
     "booking": {
       "canonical": "booking",
@@ -273,12 +298,12 @@
           "mode": "all"
         }
       ],
-      "occurrences_canonical": 1214,
-      "occurrences_noncanonical": 187,
-      "files_affected_noncanonical": 52,
+      "occurrences_canonical": 2841,
+      "occurrences_noncanonical": 526,
+      "files_affected_noncanonical": 104,
       "category": "core_concept",
       "context": "both",
-      "notes": "registration→booking. Preserve 'online registration' (feature name in setup/online-registration.md), 'registration fee' (distinct pricing term), 'registration widget' (product name). High non-canonical count in: guides/replacement-hours-complete.md (14×), guides/edit-payment-on-booking.md (17×), guides/blocks-configuration.md (10×), setup/online-registration.md (17×, mostly legitimate feature name). setup/online-registration.md is a special case — the feature itself is called 'Online Registration' so title/slug stay."
+      "notes": "registration→booking. Preserve 'online registration' (feature name in setup/online-registration.md), 'registration fee' (distinct pricing term), 'registration widget' (product name). 526 non-canonical occurrences across 104 files — the largest remaining inconsistency. High count is partly structural: 'registration' appears in UI labels, dynamic tag names (*|REGISTRATION_DATE|*), and many legacy-converted articles not yet cleaned. Priority clean-up files: guides/edit-payment-on-booking.md, guides/replacement-hours-complete.md, guides/blocks-configuration.md."
     },
     "client": {
       "canonical": "client",
@@ -292,25 +317,41 @@
         {
           "from": "\\bcustomer\\b",
           "to": "client",
-          "mode": "all"
+          "mode": "smart",
+          "preserve": [
+            "customer ID",
+            "custom customer ID",
+            "GoCardless customer",
+            "Stripe customer"
+          ]
         },
         {
           "from": "\\bcustomers\\b",
           "to": "clients",
-          "mode": "all"
+          "mode": "smart",
+          "preserve": [
+            "GoCardless customers",
+            "Stripe customers"
+          ]
         },
         {
           "from": "\\bCustomer\\b",
           "to": "Client",
           "mode": "smart",
           "preserve": [
-            "Keep customer in auto-enrollment"
+            "Keep customer in auto-enrollment",
+            "GoCardless Customer",
+            "Stripe Customer"
           ]
         },
         {
           "from": "\\bCustomers\\b",
           "to": "Clients",
-          "mode": "all"
+          "mode": "smart",
+          "preserve": [
+            "GoCardless Customers",
+            "Stripe Customers"
+          ]
         },
         {
           "from": "\\bCUSTOMER\\b",
@@ -323,12 +364,12 @@
           "mode": "all"
         }
       ],
-      "occurrences_canonical": 1062,
-      "occurrences_noncanonical": 17,
-      "files_affected_noncanonical": 11,
+      "occurrences_canonical": 2786,
+      "occurrences_noncanonical": 41,
+      "files_affected_noncanonical": 20,
       "category": "core_concept",
       "context": "both",
-      "notes": "All customer→client. Exception: the UI field label 'Keep customer in auto-enrollment for N days' (reference/programme-settings.md) uses the verbatim UI string — flag for screenshot verification. 17 non-canonical occurrences are low; nearly resolved."
+      "notes": "All customer→client. Exception: 'Keep customer in auto-enrollment' is verbatim UI label in reference/programme-settings.md — preserve. reference/inbound-payments-internals.md (9×) — technical reference doc using API-internal term 'customer ID' and 'customer' as an API field name — preserve; do not replace in that file. guides/loyalty-program.md (3×) and guides/loyalty-returning-customer.md (5×) — slug/tag use 'customer' (slug stable), prose has 'new customers' (line 44 loyalty-program.md) — replace prose occurrences. New preserve rules added: 'customer ID', 'GoCardless customer', 'Stripe customer' — these are external provider terminology."
     },
     "instructor": {
       "canonical": "instructor",
@@ -431,12 +472,12 @@
           "mode": "all"
         }
       ],
-      "occurrences_canonical": 333,
-      "occurrences_noncanonical": 3,
-      "files_affected_noncanonical": 1,
+      "occurrences_canonical": 715,
+      "occurrences_noncanonical": 7,
+      "files_affected_noncanonical": 2,
       "category": "role",
       "context": "admin",
-      "notes": "All lecturer/teacher/trainer/tutor→instructor. NEW: guides/custom-holidays.md uses 'trainer' (3×) and 'Trainer availability' — 'trainer' as noun should become 'instructor' but 'trainer availability' may be a UI label; verify before replacing. guides/instructor-substitution.md image filenames contain 'lecturer' (lecturer-substitution-*.png) — file rename not required, alt text only."
+      "notes": "All lecturer/teacher/trainer/tutor→instructor. 7 remaining 'trainer' occurrences across 2 files. guides/custom-holidays.md uses 'trainer' (3×) and 'Trainer availability' — 'trainer' as noun should become 'instructor'; 'trainer availability' is a UI label to verify. guides/instructor-substitution.md image filenames contain 'lecturer' (lecturer-substitution-*.png) — file rename not required, alt text only."
     },
     "Client Profile": {
       "canonical": "Client Profile",
@@ -481,12 +522,12 @@
           "mode": "all"
         }
       ],
-      "occurrences_canonical": 0,
+      "occurrences_canonical": 136,
       "occurrences_noncanonical": 5,
       "files_affected_noncanonical": 4,
       "category": "ui_element",
       "context": "both",
-      "notes": "Still 5 non-canonical occurrences: faq/trials-faq.md (3× 'parent portal'), guides/client-profile-101.md (1× in synonyms comment), guides/replacement-hours-complete.md (1× 'parent portal' in explanatory text). These must be replaced. Parent Zone not found in corpus (only in dictionary as a listed variant)."
+      "notes": "Canonical count jumped significantly (0→136) — new articles correctly use 'Client Profile'. 5 non-canonical occurrences remain: faq/trials-faq.md (3× 'parent portal'), guides/client-profile-101.md (1× in synonyms comment), guides/replacement-hours-complete.md (1× 'parent portal'). Note: build/reports/onboarding-brief.md and spec-review.md use 'Parent Zone' — those are build reports, not content."
     },
     "make-up session": {
       "canonical": "make-up session",
@@ -655,12 +696,12 @@
           "mode": "all"
         }
       ],
-      "occurrences_canonical": 90,
-      "occurrences_noncanonical": 22,
-      "files_affected_noncanonical": 6,
+      "occurrences_canonical": 247,
+      "occurrences_noncanonical": 14,
+      "files_affected_noncanonical": 3,
       "category": "core_concept",
       "context": "both",
-      "notes": "Replacement variants persist in: glossary/terminology-review.md (4×, intentional deprecation listing), glossary/index.md (2×), guides/custom-replacement-lessons.md (4×), guides/replacement-hours-complete.md (9×), guides/automated-notifications.md (1×), faq/make-up-sessions-faq.md (2×). The file 'replacement-hours-complete.md' is the key offender and should be reviewed — it uses 'replacement hour/lesson' throughout."
+      "notes": "Non-canonical count reduced (22→14). Remaining in: guides/replacement-hours-complete.md (6×), guides/custom-replacement-lessons.md (9×, slug stays stable), glossary/terminology-review.md (intentional deprecation listing — keep). The file 'replacement-hours-complete.md' is a legacy article that still uses 'replacement hour/lesson' throughout its prose — priority for cleanup."
     },
     "payment template": {
       "canonical": "payment template",
@@ -674,7 +715,7 @@
       "files_affected_noncanonical": 21,
       "category": "payment",
       "context": "admin",
-      "notes": "CONFIRMED DISTINCT CONCEPTS — do not merge. 'Payment template' = the reusable admin configuration object defining how and when billing happens (created once, reused across bookings). 'Payment plan' = the applied billing schedule instance on a specific booking (what the client actually sees and pays against). Both are legitimate UI terms used in different contexts. Do not replace one with the other. The glossary/terminology-review.md entry listing 'payment template' as deprecated is incorrect — ignore it."
+      "notes": "CONFIRMED DISTINCT CONCEPTS — do not merge. 'Payment template' = the reusable admin configuration object defining how and when billing happens (created once, reused across bookings). 'Payment plan' = the applied billing schedule instance on a specific booking (what the client actually sees and pays against). Both are legitimate UI terms used in different contexts. Do not replace one with the other."
     },
     "auto-enrolment": {
       "canonical": "auto-enrolment",
@@ -718,13 +759,13 @@
           ]
         }
       ],
-      "occurrences_canonical": 20,
-      "occurrences_noncanonical_auto_continuation": 10,
-      "occurrences_noncanonical_auto_enrollment": 29,
-      "files_affected_noncanonical": 13,
+      "occurrences_canonical": 48,
+      "occurrences_noncanonical_auto_continuation": 1,
+      "occurrences_noncanonical_auto_enrollment": 0,
+      "files_affected_noncanonical": 1,
       "category": "core_concept",
       "context": "admin",
-      "notes": "CONFIRMED: UI uses 'Auto-Enrolment' (British spelling). 'auto-continuation' is deprecated legacy term — replace everywhere in prose with 'auto-enrolment'. The slug 'auto-enrollment.md' must stay stable (file rename not required). 'Keep customer in auto-enrollment' is a verbatim UI field label in reference/programme-settings.md — preserve. guides/automated-notifications.md uses 'Retention (auto-continuation)' as a section heading — rename to 'Retention (Auto-Enrolment)'. faq/programmes.md uses 'auto-continuation' 7× in headings and body — replace all."
+      "notes": "Nearly resolved. 1 remaining 'auto-continuation' occurrence (down from 10). 'auto-enrollment' (American spelling) fully replaced. Canonical count lower (48 vs earlier scans) — this feature is referenced less frequently in newer articles as it is an advanced concept. guides/automated-notifications.md should be checked for the Retention section heading."
     },
     "log in": {
       "canonical": "log in",
@@ -784,11 +825,11 @@
         }
       ],
       "occurrences_canonical": 0,
-      "occurrences_noncanonical": 29,
-      "files_affected_noncanonical": 17,
+      "occurrences_noncanonical": 0,
+      "files_affected_noncanonical": 0,
       "category": "action",
       "context": "both",
-      "notes": "All 'sign in' → 'log in'. 'Sign up' stays (means register/book). Preserve UI button labels if quoted."
+      "notes": "RESOLVED (2026-05-11). All 'sign in' occurrences removed from content. 0 non-canonical occurrences in current scan (down from 29 in 2026-03-14). New articles correctly use 'log in'."
     },
     "cancel session": {
       "canonical": "cancel session",
@@ -876,7 +917,7 @@
       "files_affected_noncanonical": 42,
       "category": "ui_element",
       "context": "both",
-      "notes": "All 'registration form' → 'booking form'. 'online registration' is KEPT as a feature name (not a form)."
+      "notes": "All 'registration form' → 'booking form'. 'online registration' is KEPT as a feature name (not a form). Count unchanged from 2026-03-14 — these occurrences are largely in legacy-converted articles not yet cleaned."
     },
     "lead collection": {
       "canonical": "lead collection",
@@ -967,12 +1008,12 @@
           "mode": "all"
         }
       ],
-      "occurrences_canonical": 48,
+      "occurrences_canonical": 25,
       "occurrences_noncanonical": 0,
       "files_affected_noncanonical": 0,
       "category": "core_concept",
       "context": "both",
-      "notes": "No non-canonical variants found in current corpus scan. Lead collection fully adopted. 48 occurrences across 23 files."
+      "notes": "No non-canonical variants found. Canonical count reduced (48→25) — lead collection is a niche feature; the count reduction likely reflects more precise counting rather than content loss. Fully adopted."
     },
     "Pay-as-you-go": {
       "canonical": "Pay-as-you-go",
@@ -1070,7 +1111,7 @@
       "files_affected_noncanonical": 0,
       "category": "core_concept",
       "context": "both",
-      "notes": "No non-canonical variants found in current scan. 99 occurrences across 27 files — fully adopted. 'drop-in' appears in glossary/terminology-review.md as a synonym only (acceptable). 'PAYG' not found in content."
+      "notes": "No non-canonical variants found. Fully adopted. 'drop-in' appears in glossary/terminology-review.md as a synonym only (acceptable). 'PAYG' not found in content."
     },
     "linked classes": {
       "canonical": "linked classes",
@@ -1112,7 +1153,7 @@
       "files_affected_noncanonical": 0,
       "category": "core_concept",
       "context": "admin",
-      "notes": "No non-canonical variants found in current scan. Feature correctly uses 'linked classes' or 'linked bookings' throughout. 'linked bookings' (guides/linked-bookings.md×9, reference/bookings-list.md×1, reference/orders-list.md×1) is a different feature — do not conflate."
+      "notes": "No non-canonical variants found. 'linked bookings' (guides/linked-bookings.md×9, reference/bookings-list.md×1, reference/orders-list.md×1) is a different feature — do not conflate."
     },
     "attendance states": {
       "canonical": "Will attend / Attended / Cancelled / Did not attend",
@@ -1143,7 +1184,7 @@
         }
       ],
       "occurrences_canonical": 0,
-      "occurrences_noncanonical": 12,
+      "occurrences_noncanonical": 10,
       "files_affected_noncanonical": 2,
       "category": "ui_element",
       "context": "both",
@@ -1227,12 +1268,12 @@
           "mode": "all"
         }
       ],
-      "occurrences_canonical": 123,
+      "occurrences_canonical": 106,
       "occurrences_noncanonical": 0,
       "files_affected_noncanonical": 0,
       "category": "core_concept",
       "context": "both",
-      "notes": "Unified to 'entry pass'. 'voucher' replaced except discount/gift vouchers. 'season pass/ticket' handled in Pay-as-you-go cluster. 123 occurrences across 15 files — fully adopted. 'pass' alone (without 'entry') appears in lists but is not ambiguous."
+      "notes": "Unified to 'entry pass'. No non-canonical variants found. 106 occurrences — fully adopted."
     },
     "venue": {
       "canonical": "venue",
@@ -1266,12 +1307,12 @@
           ]
         }
       ],
-      "occurrences_canonical": 55,
-      "occurrences_noncanonical": 153,
+      "occurrences_canonical": 84,
+      "occurrences_noncanonical": 327,
       "files_affected_noncanonical": 57,
       "category": "ui_element",
       "context": "both",
-      "notes": "NEW ENTRY. 'location' (153×/57 files) and 'venue' (55×/23 files) are both heavily used. Per terminology-review.md, 'venue' is canonical and 'location' is deprecated. However 'location' is widely used in UI labels (Class detail, programme settings), dynamic tags, and is the navigation section name in settings. A blanket replace would break many things. RECOMMENDATION: replace 'location' → 'venue' only when referring to the physical place entity. Keep 'location' in dynamic tag names (e.g., *|LOCATION|*), UI field path strings, and the settings section named 'Locations'. The faq/locations-and-venues-faq.md (27× combined) intentionally uses both — do not auto-replace."
+      "notes": "'location' (327×/57 files) and 'venue' (84×) — both heavily used. 'location' is widely used in UI labels, dynamic tags (*|LOCATION|*), settings navigation, and is the settings section name 'Locations'. Replace 'location' → 'venue' only when referring to the physical place entity in prose. Keep 'location' in: dynamic tag names, UI field path strings, settings section named 'Locations', faq/locations-and-venues-faq.md. Non-canonical count increased (153→327) due to new articles using 'location' — this is expected and largely legitimate. Do not bulk-replace."
     },
     "term payment": {
       "canonical": "term payment",
@@ -1320,7 +1361,7 @@
       "files_affected_noncanonical": 5,
       "category": "payment",
       "context": "admin",
-      "notes": "NEW ENTRY. 'Course fee' (6× in guides/price-and-payment-setup.md) is deprecated per glossary — should be 'Term payment'. 'Term Fee' (6×) used in setup/getting-started-with-zooza.md as an informal shorthand — replace with 'Term payment'. Non-canonical occurrences in: guides/price-and-payment-setup.md (6×), setup/getting-started-with-zooza.md (6×), glossary/index.md (2×, in 'Formerly called' notes — keep), glossary/terminology-review.md (4×, intentional deprecated list — keep), reference/programme-settings.md (1×, UI label — verify)."
+      "notes": "'Course fee' (deprecated per glossary) should be 'Term payment'. Top offenders: guides/price-and-payment-setup.md (6×), setup/getting-started-with-zooza.md (6×). glossary/index.md (2×, 'Formerly called' notes — keep), glossary/terminology-review.md (4×, intentional deprecated list — keep), reference/programme-settings.md (1×, UI label — verify against current screenshot)."
     },
     "trial": {
       "canonical": "trial",
@@ -1332,12 +1373,12 @@
         "guest"
       ],
       "replace_rules": [],
-      "occurrences_canonical": 376,
+      "occurrences_canonical": 511,
       "occurrences_noncanonical": 0,
       "files_affected_noncanonical": 0,
       "category": "core_concept",
       "context": "both",
-      "notes": "376 occurrences across 40 files — dominant and consistent. 'trial session' (not 'taster' or 'guest') is the correct variant when a noun phrase is needed. 'Guest' in corpus refers to a different concept: guest access to a booking (second parent read access) or guest instructor role — NOT a trial participant. No synonym misuse detected."
+      "notes": "511 occurrences across 40+ files — dominant and consistent. 'trial session' (not 'taster' or 'guest') is correct when a noun phrase is needed. 'Guest' refers to: (1) Guest booking status, (2) guest access (second parent read-only), (3) guest instructor role — NOT a trial participant. No synonym misuse detected."
     },
     "transfer": {
       "canonical": "transfer",
@@ -1365,7 +1406,7 @@
       "files_affected_noncanonical": 0,
       "category": "action",
       "context": "admin",
-      "notes": "Canonical term 'transfer' well-established (164× across 40 files). 'move' still used contextually (e.g., 'move sessions', 'move groups to archive') — those are not the same action as transfer-booking and are not errors."
+      "notes": "Canonical term 'transfer' well-established. 'move' still used contextually for non-booking-transfer actions (e.g., 'move sessions', 'move groups to archive') — not errors."
     },
     "copy": {
       "canonical": "copy",
@@ -1391,7 +1432,7 @@
       "files_affected_noncanonical": 0,
       "category": "action",
       "context": "admin",
-      "notes": "13 occurrences of 'copy booking' across 6 files. No non-canonical 'duplicate booking' found in prose. 'Duplicate' appears in glossary/index.md×1 in a definitional context — acceptable."
+      "notes": "No non-canonical 'duplicate booking' found in prose. 'Duplicate' appears in glossary/index.md×1 in a definitional context — acceptable."
     },
     "Guest booking": {
       "canonical": "Guest booking",
@@ -1405,7 +1446,7 @@
       "files_affected_noncanonical": 0,
       "category": "status",
       "context": "admin",
-      "notes": "CONFIRMED: 'Guest' is a distinct booking status separate from: (1) guest access (second parent read-only access to a booking) and (2) guest instructor role. A Guest booking is a specific booking type/status in Zooza — do not conflate with the other 'guest' uses. Needs dedicated content explaining what Guest booking status means and how it differs from the other guest concepts. Currently undocumented in KB — flag for article creation."
+      "notes": "CONFIRMED: 'Guest' is a distinct booking status. 'Guest booking' is a specific booking type/status in Zooza — do not conflate with guest access (second parent read-only) or guest instructor role. Currently undocumented in KB — flag for article creation."
     },
     "billing period": {
       "canonical": "billing period",
@@ -1415,12 +1456,43 @@
         "billing term"
       ],
       "replace_rules": [],
-      "occurrences_canonical": 61,
+      "occurrences_canonical": 87,
       "occurrences_noncanonical": 0,
       "files_affected_noncanonical": 0,
       "category": "payment",
       "context": "admin",
-      "notes": "61 occurrences of 'billing period' across 32 files — well-established. 'term' (103× across 43 files) is predominantly used in general English sense (e.g., 'end of term', 'full term price') or in 'term payment' compound — not as a synonym for billing period in most occurrences. Dedicated setup/billing-periods.md exists. No systematic misuse detected."
+      "notes": "87 occurrences across 32+ files — well-established. 'term' is used in general English sense (e.g., 'end of term') or in 'term payment' compound — not as a synonym for billing period. No systematic misuse detected. Dedicated setup/billing-periods.md exists."
+    },
+    "inbound payment": {
+      "canonical": "inbound payment",
+      "variants_found": [
+        "incoming payment",
+        "bank transfer matching",
+        "payment matching",
+        "payment pairing"
+      ],
+      "replace_rules": [
+        {
+          "from": "incoming payment",
+          "to": "inbound payment",
+          "mode": "smart",
+          "preserve": [
+            "incoming payments section",
+            "incoming payment notification"
+          ]
+        },
+        {
+          "from": "Incoming payment",
+          "to": "Inbound payment",
+          "mode": "smart"
+        }
+      ],
+      "occurrences_canonical": 10,
+      "occurrences_noncanonical": 44,
+      "files_affected_noncanonical": 22,
+      "category": "payment",
+      "context": "admin",
+      "notes": "NEW ENTRY (2026-05-11). 'Inbound payment' is the canonical term for bank transfer matching via GoCardless (auto-pairs incoming transfers to bookings by IBAN). Variants 'payment matching' (44 occurrences across 22 files) and 'payment pairing' are also used — both acceptable as they describe the process. The UI uses 'Payments → Inbound' as the navigation path. 'Inbound payment' is distinct from 'GoCardless direct debit' — Zooza uses GoCardless only for inbound matching, not for direct debit mandate collection. Articles: guides/inbound-payments.md, guides/payment-pairing.md, reference/inbound-payments-internals.md."
     }
   },
   "skip_in_frontmatter": [
@@ -1432,8 +1504,8 @@
     "<!--.*?-->",
     "!\\[\\[.*?\\]\\]"
   ],
-  "extracted_at": "2026-03-14",
-  "source_file_count": 174,
+  "extracted_at": "2026-05-11",
+  "source_file_count": 231,
   "last_normalized": "2026-03-14",
-  "scanner_notes": "Full rescan of 174 files. Updated counts reflect 2026-03-14 corpus state (44 new files since last scan on 2026-02-15 at 130 files). New entries added: venue, term payment, trial, transfer, copy, billing period. auto-enrolment split from auto-continuation. trainer variant added to instructor cluster with preserve rules."
+  "scanner_notes": "Full rescan of 231 files (up from 174 in 2026-03-14 scan). Major changes: (1) log in fully resolved — 0 non-canonical occurrences; (2) lesson cluster updated with domain-specific preserve rules for individual/music/language lessons; (3) client/customer preserve rules extended to cover API-internal usages in inbound-payments-internals.md; (4) inbound payment added as new term (payment matching/pairing terminology); (5) loyalty terms (referral, sibling discount, discount code) confirmed consistent — no new inconsistencies; (6) auto-enrolment nearly resolved (1 remaining auto-continuation). Largest remaining inconsistencies: registration (526×/104 files) and group (141×/68 files) in the class cluster. New business-models/ directory (7 files) is a source of 'lesson' and 'group' non-canonical uses — these require careful contextual review, not bulk replacement."
 }

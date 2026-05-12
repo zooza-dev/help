@@ -1,14 +1,14 @@
 # SEO & AI Readiness Report
 
-**Generated:** 2026-05-11
+**Generated:** 2026-05-12
 
 ## Summary
 
-- **Total docs checked:** 230
+- **Total docs checked:** 231
 - **Docs with errors:** 0
-- **Docs with warnings only:** 91
+- **Docs with warnings only:** 90
 - **Total errors:** 0
-- **Total warnings:** 549
+- **Total warnings:** 548
 - **Overall:** PASS
 
 ## Checks performed
@@ -434,9 +434,6 @@
 - WARN: description too long (168 chars, max 160)
 - WARN: alt text too generic: `Screenshot — todos` (screenshot replacement pending)
 - WARN: alt text too generic: `Screenshot — todos` (screenshot replacement pending)
-
-### `content/guides/trials-daily-business.md`
-- WARN: description too long (161 chars, max 160)
 
 ### `content/guides/two-instructors-per-class.md`
 - WARN: description missing from frontmatter (auto-extracted: `Do you have 2 instructors in one class, or a main instructor and his assistant?…`)
