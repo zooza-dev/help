@@ -25,38 +25,32 @@ Two distinct UX components — do not conflate them:
 - Never show to: instructor role (they have a separate, simpler onboarding)
 
 ### Completion tracking
-- Each item has a **completion trigger** (app event that auto-marks it done)
-- Admin can also manually tick any item
+- **Manual only** — admins tick each item themselves. No automatic detection.
 - Progress shown as `5 / 9 complete` counter
-- Items marked **Required** block the "I'm done" dismiss until complete
+- Items marked **Required** block the "I'm done" dismiss until ticked
 - Items marked **Optional** can be skipped
 
 ### Ordering — dependencies matter
 
 Items must be presented in this order (later items depend on earlier ones):
 
-| # | Item | One-liner in UI | Required? | Completion trigger | Help article |
-|---|------|----------------|-----------|-------------------|--------------|
-| 1 | Add a location | Where your classes take place | Required | Location created | `setup/creating-a-location.md` |
-| 2 | Create your first programme | Set the name, type, and payment method | Required | Programme created | `guides/creating-a-programme.md` |
-| 3 | Add a class to the programme | Day, time, capacity, and instructor | Required | Class created with at least 1 session | `guides/creating-a-class.md` |
-| 4 | Set up how you collect payments | Stripe, bank transfer, or invoicing | Required | Payment method connected OR invoice profile saved | `guides/inbound-payments.md` |
-| 5 | Publish your booking link | Copy and share the link to start getting registrations | Required | Publish section opened | `guides/customizing-widgets.md` |
-| 6 | Do a test booking | Go through the process your clients will experience | Required | ≥1 booking exists | `guides/admin-vs-self-service.md` |
-| 7 | Add an instructor | Give them access to mark attendance | Optional | Instructor added to Team | `guides/managing-instructors.md` |
-| 8 | Enable trials | Let clients book a free or paid try-out before enrolling | Optional | Trial enabled on any programme | `setup/trial-sessions.md` |
-| 9 | Set up booking form fields | Collect extra info from clients at registration (e.g. emergency contact) | Optional | At least 1 additional field added | `guides/additional-fields.md` |
+| # | Item | One-liner in UI | Required? | Help article |
+|---|------|----------------|-----------|--------------|
+| 1 | Add a location | Where your classes take place | Required | `setup/creating-a-location.md` |
+| 2 | Create your first programme | Set the name, type, and payment method | Required | `guides/creating-a-programme.md` |
+| 3 | Add a class to the programme | Day, time, capacity, and instructor | Required | `guides/creating-a-class.md` |
+| 4 | Set up how you collect payments | Stripe, bank transfer, or invoicing | Required | `guides/inbound-payments.md` |
+| 5 | Publish your booking link | Copy and share the link to start getting registrations | Required | `guides/customizing-widgets.md` |
+| 6 | Do a test booking | Go through the process your clients will experience | Required | `guides/admin-vs-self-service.md` |
+| 7 | Add an instructor | Give them access to mark attendance | Optional | `guides/managing-instructors.md` |
+| 8 | Enable trials | Let clients book a free or paid try-out before enrolling | Optional | `setup/trial-sessions.md` |
+| 9 | Set up booking form fields | Collect extra info from clients at registration (e.g. emergency contact) | Optional | `guides/additional-fields.md` |
 
 ### Notes for devs
 
+- All items are **manually ticked** by the admin. No auto-detection.
 - Items 1–3 have a strict dependency chain — consider disabling item 3 until item 2 is done, and item 5 until item 3 is done.
-- Item 4 (payment setup) branches by method:
-  - Stripe → link to Stripe connection
-  - Bank transfer + GoCardless → link to GoCardless inbound setup
-  - Invoicing only → link to invoice profile setup
-  - The checklist does not need to branch; just link to the general `inbound-payments.md` guide which covers all paths.
-- Item 5 (publish) completion trigger could be: admin visits the Publish section OR copies the booking link.
-- Item 6 (test booking) is complete when ≥1 booking exists on any class.
+- Item 4 (payment setup): the checklist does not need to branch by payment method; just link to the general `inbound-payments.md` guide which covers all paths.
 - Items 7–9 are optional — present them with a distinct visual state (e.g., greyed out or a different icon).
 
 ---
@@ -74,32 +68,32 @@ Not a checklist — this is a **persistent quick-access widget**. No completion 
 
 Items ordered by actual support frequency (source: Intercom analysis, Feb–Apr 2026, ~135 real conversations).
 
-| # | Action | One-liner | Where in app | Help article | Intercom freq |
-|---|--------|-----------|--------------|--------------|---------------|
-| 1 | Archive or delete a programme / class | When a programme or class is finished and you want to remove it from the active view | Activities → Programmes → open programme → Archive | `guides/archive-or-delete-programme.md` | ★★★★ |
-| 2 | Find and download invoices | Export invoices for your accountant — individually or in bulk | Sales & Payments → Invoices | `guides/where-to-find.md` → Invoices | ★★★ |
-| 3 | Offer a make-up session | Give a client a replacement for a missed session | Open booking → Attendance → Book session | `guides/custom-replacement-lessons.md` | ★★★ |
-| 4 | Transfer or copy a client to another class | Move a client to a different class or duplicate their booking for a new term | Open booking → Transfer | `guides/transfer-and-copy-bookings.md` | ★★★ |
-| 5 | Renew your GoCardless connection | If you use GoCardless for direct debit or bank transfer matching, the connection expires periodically — renew it here | Sales & Payments → Payments → Inbound | `guides/inbound-payments.md` | ★★★ |
-| 6 | Turn off or adjust payment reminders | Change when clients receive payment notification emails, or turn them off | Settings → Billing → Payments | `guides/automatic-payment-reminders.md` | ★★★ |
-| 7 | Find where your make-up session summary is | See a report of all make-up sessions across your classes | Calendar → Make-up sessions | `guides/where-to-find.md` → Reports | ★★★ |
-| 8 | Share your booking link | Get the link or form to share with clients so they can register online | Publish section | `guides/admin-vs-self-service.md` | ★★ |
-| 9 | Enrol a client manually | Add a client to a class directly from the admin side | Clients → New booking | `guides/creating-a-booking.md` | ★★ |
-| 10 | Mark attendance | Mark who showed up to a session | Sessions → select session → Attendance | `guides/instructor-attendance-management.md` | ★★ |
-| 11 | Send a bulk email to a class | Message all clients in a class at once | Communication → Send message | `guides/sending-email-sms.md` | ★★ |
-| 12 | Cancel a session | Cancel one session and optionally offer a make-up | Calendar → select session → Cancel | `guides/edit-sessions-in-programmes.md` | ★★ |
-| 13 | Record a manual payment | Log a cash or bank transfer payment on a booking | Open booking → Payments → Add payment | `guides/edit-payment-on-booking.md` | ★★ |
-| 14 | Copy a class for a new term | Duplicate a class structure for the next term (term rebooking) | Activities → Classes → Copy | `guides/copy-programme-and-class.md` + `guides/term-rebooking-guide.md` | ★★ |
-| 15 | Set up a sibling discount | Give a discount to clients who have multiple children enrolled | Sales & Payments → Discounts | `guides/loyalty-sibling-discount.md` | ★★ |
-| 16 | Set up an instructor substitute | Assign a different instructor to a session when the regular one is unavailable | Activities → Sessions → Edit | `guides/instructor-substitution.md` | ★★ |
+| #   | Action                                     | One-liner                                                                                                             | Where in app                                       | Help article                                                            | Intercom freq |
+| --- | ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------------------------------- | ------------- |
+| 1   | Archive or delete a programme / class      | **Delete** — it was a mistake or you'll never need it again. **Archive** — no longer on sale, but keep the data. | Activities → Programmes → open programme → Archive / Delete | `guides/archive-or-delete-programme.md`                                 | ★★★★          |
+| 2   | Find and download invoices                 | Export invoices for your accountant — individually or in bulk                                                         | Sales & Payments → Invoices                        | `guides/where-to-find.md` → Invoices                                    | ★★★           |
+| 3   | Make-up sessions                           | Set a make-up rule at programme level, or manage individually in the client's attendance — add a replacement date when they miss a session | Programme → Settings → Make-up OR Open booking → Attendance | `faq/make-up-sessions-faq.md`                                           | ★★★           |
+| 4   | Transfer or copy a client to another class | Move a client to a different class or duplicate their booking for a new term                                          | Open booking → Transfer                            | `guides/transfer-and-copy-bookings.md`                                  | ★★★           |
+| 5   | Set up and track incoming payments         | Decide how you want to collect and track payments — Stripe, bank transfer (manual or auto-matched), or direct debit | Sales & Payments → Payments → Inbound              | `guides/inbound-payments.md`                                            | ★★★           |
+| 6   | Turn off or adjust payment reminders       | Change when clients receive payment notification emails, or turn them off                                             | Settings → Billing → Payments                      | `guides/automatic-payment-reminders.md`                                 | ★★★           |
+| 7   | Find where your make-up session summary is | See a report of all make-up sessions across your classes                                                              | Calendar → Make-up sessions                        | `guides/where-to-find.md` → Reports                                     | ★★★           |
+| 8   | Share your booking link                    | Get the link or form to share with clients so they can register online                                                | Publish section                                    | `guides/admin-vs-self-service.md`                                       | ★★            |
+| 9   | Enrol a client manually                    | Add a client to a class directly from the admin side                                                                  | Clients → New booking                              | `guides/creating-a-booking.md`                                          | ★★            |
+| 10  | Mark attendance                            | Mark who showed up to a session                                                                                       | Sessions → select session → Attendance             | `guides/instructor-attendance-management.md`                            | ★★            |
+| 11  | Send a bulk email to a class               | Message all clients in a class at once                                                                                | Communication → Send message                       | `guides/sending-email-sms.md`                                           | ★★            |
+| 12  | Cancel a session                           | Cancel one session and optionally offer a make-up                                                                     | Calendar → select session → Cancel                 | `guides/edit-sessions-in-programmes.md`                                 | ★★            |
+| 13  | Record a manual payment                    | Log a cash or bank transfer payment on a booking                                                                      | Open booking → Payments → Add payment              | `guides/edit-payment-on-booking.md`                                     | ★★            |
+| 14  | Copy a class for a new term                | Duplicate a class structure for the next term (term rebooking)                                                        | Activities → Classes → Copy                        | `guides/copy-programme-and-class.md` + `guides/term-rebooking-guide.md` | ★★            |
+| 15  | Set up a sibling discount                  | Give a discount to clients who have multiple children enrolled                                                        | Sales & Payments → Discounts                       | `guides/loyalty-sibling-discount.md`                                    | ★★            |
+| 16  | Set up an instructor substitute            | Assign a different instructor to a session when the regular one is unavailable                                        | Activities → Sessions → Edit                       | `guides/instructor-substitution.md`                                     | ★★            |
 
 ### Notes for devs
 
 - This is a static list — no interaction tracking needed.
 - Consider collapsing it by default on mobile and expanding on desktop.
 - Items render as: **title** (bold link) + one-liner text + arrow to help article.
-- Items 1 (archive/delete) and 5 (GoCardless renewal) are the biggest support drivers — prioritise their discoverability.
-- Future iteration: personalise based on payment method (e.g. hide GoCardless renewal for Stripe-only accounts).
+- Item 1 (archive/delete) is the single biggest support driver — prioritise its discoverability and make the delete vs. archive distinction clear in the UI.
+- Future iteration: personalise based on payment method (e.g. hide inbound payments item for Stripe-only accounts).
 - Source data: Intercom support analysis Feb–Apr 2026, `build/reports/intercom-analysis-report.md`.
 
 ---
