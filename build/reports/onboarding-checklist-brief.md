@@ -72,35 +72,54 @@ Not a checklist — this is a **persistent quick-access widget**. No completion 
 
 ### Items
 
-| # | Action | One-liner | Where in app | Help article |
-|---|--------|-----------|--------------|--------------|
-| 1 | Enrol a client | Add a client to a class — manually or send them a link to register themselves | Clients → New booking OR share booking link | `guides/creating-a-booking.md` + `guides/admin-vs-self-service.md` |
-| 2 | Transfer a client | Move a client to a different class or time slot | Open booking → Transfer | `guides/transfer-and-copy-bookings.md` |
-| 3 | Mark attendance | Mark who showed up to a session | Sessions → select session → Attendance | `guides/instructor-attendance-management.md` |
-| 4 | Send an email to a class | Message all clients in a class at once | Communication → Send message | `guides/sending-email-sms.md` |
-| 5 | Cancel a session | Cancel one session and optionally offer a make-up | Calendar → select session → Cancel | `guides/edit-sessions-in-programmes.md` |
-| 6 | Record a payment | Log a cash or bank transfer payment on a booking | Open booking → Payments → Add payment | `guides/edit-payment-on-booking.md` |
-| 7 | Copy a class for a new term | Duplicate a class structure for the next term | Activities → Classes → Copy | `guides/copy-programme-and-class.md` |
-| 8 | Offer a make-up session | Give a client a replacement for a missed session | Open booking → Attendance → Book session | `guides/custom-replacement-lessons.md` |
+Items ordered by actual support frequency (source: Intercom analysis, Feb–Apr 2026, ~135 real conversations).
+
+| # | Action | One-liner | Where in app | Help article | Intercom freq |
+|---|--------|-----------|--------------|--------------|---------------|
+| 1 | Archive or delete a programme / class | When a programme or class is finished and you want to remove it from the active view | Activities → Programmes → open programme → Archive | `guides/archive-or-delete-programme.md` | ★★★★ |
+| 2 | Find and download invoices | Export invoices for your accountant — individually or in bulk | Sales & Payments → Invoices | `guides/where-to-find.md` → Invoices | ★★★ |
+| 3 | Offer a make-up session | Give a client a replacement for a missed session | Open booking → Attendance → Book session | `guides/custom-replacement-lessons.md` | ★★★ |
+| 4 | Transfer or copy a client to another class | Move a client to a different class or duplicate their booking for a new term | Open booking → Transfer | `guides/transfer-and-copy-bookings.md` | ★★★ |
+| 5 | Renew your GoCardless connection | GoCardless connection expires periodically — renew it to keep bank transfer matching working | Sales & Payments → Payments → Inbound | `guides/inbound-payments.md` | ★★★ |
+| 6 | Turn off or adjust payment reminders | Change when clients receive payment notification emails, or turn them off | Settings → Billing → Payments | `guides/automatic-payment-reminders.md` | ★★★ |
+| 7 | Find where your make-up session summary is | See a report of all make-up sessions across your classes | Calendar → Make-up sessions | `guides/where-to-find.md` → Reports | ★★★ |
+| 8 | Share your booking link | Get the link or form to share with clients so they can register online | Publish section | `guides/admin-vs-self-service.md` | ★★ |
+| 9 | Enrol a client manually | Add a client to a class directly from the admin side | Clients → New booking | `guides/creating-a-booking.md` | ★★ |
+| 10 | Mark attendance | Mark who showed up to a session | Sessions → select session → Attendance | `guides/instructor-attendance-management.md` | ★★ |
+| 11 | Send a bulk email to a class | Message all clients in a class at once | Communication → Send message | `guides/sending-email-sms.md` | ★★ |
+| 12 | Cancel a session | Cancel one session and optionally offer a make-up | Calendar → select session → Cancel | `guides/edit-sessions-in-programmes.md` | ★★ |
+| 13 | Record a manual payment | Log a cash or bank transfer payment on a booking | Open booking → Payments → Add payment | `guides/edit-payment-on-booking.md` | ★★ |
+| 14 | Copy a class for a new term | Duplicate a class structure for the next term (term rebooking) | Activities → Classes → Copy | `guides/copy-programme-and-class.md` + `guides/term-rebooking-guide.md` | ★★ |
+| 15 | Set up a sibling discount | Give a discount to clients who have multiple children enrolled | Sales & Payments → Discounts | `guides/loyalty-sibling-discount.md` | ★★ |
+| 16 | Set up an instructor substitute | Assign a different instructor to a session when the regular one is unavailable | Activities → Sessions → Edit | `guides/instructor-substitution.md` | ★★ |
 
 ### Notes for devs
 
 - This is a static list — no interaction tracking needed.
-- Consider collapsing it by default on mobile (small screen) and expanding on desktop.
-- Items can be rendered as: **title** (bold link) + one-liner text + arrow to help article.
-- Future iteration: personalise based on what the admin actually uses (e.g. hide "record payment" for Stripe-only users).
+- Consider collapsing it by default on mobile and expanding on desktop.
+- Items render as: **title** (bold link) + one-liner text + arrow to help article.
+- Items 1 (archive/delete) and 5 (GoCardless renewal) are the biggest support drivers — prioritise their discoverability.
+- Future iteration: personalise based on payment method (e.g. hide GoCardless renewal for Stripe-only accounts).
+- Source data: Intercom support analysis Feb–Apr 2026, `build/reports/intercom-analysis-report.md`.
 
 ---
 
 ## Content gaps — articles that need to be created or improved
 
-| Gap | Impact | Suggested article |
-|-----|--------|------------------|
-| `creating-a-location.md` exists but may lack screenshots for Setup step 1 — verify | Medium | Review `setup/creating-a-location.md` |
-| No dedicated "how to share your booking link" article — currently only in `customizing-widgets.md` | Medium | Could be a short guide or a section in `admin-vs-self-service.md` |
-| `inbound-payments.md` covers GoCardless but does not clearly fork by payment method at the top | High | Add a decision table at the top: "choose your path: Stripe / bank transfer / invoicing" |
-| `additional-fields.md` — confirm it covers the setup flow, not just reference | Low | Review |
-| No article explaining what the client sees after they register (client-side experience, Parent Zone) | High | `guides/parent-zone-guide.md` — flagged in `onboarding-brief.md` as missing |
+Source: Intercom analysis (★ = support frequency) + logical audit.
+
+| Gap | Intercom signal | Impact | Suggested article / action |
+|-----|----------------|--------|---------------------------|
+| No dedicated "archive or delete programme/class" guide — admins search for "delete" but the action is "archive" | ★★★★ | High | `guides/archive-or-delete-programme.md` — explain archive vs delete, when each applies |
+| GoCardless renewal flow not documented as a standalone how-to — buried in `inbound-payments.md` | ★★★ | High | Add a dedicated section "Renewing your GoCardless connection" with step-by-step |
+| Notifications overview missing — admins can't find where payment reminders are controlled | ★★★ | High | `guides/where-to-find.md` already updated with path; consider `guides/notification-settings-overview.md` |
+| Make-up session summary / bulk report — Intercom shows this is a top ★★★ question | ★★★ | High | Document where the make-up sessions report is; flag the known gap (no filter by location — product issue) |
+| No dedicated "how to share your booking link" — currently only in `customizing-widgets.md` | ★★ | Medium | Add dedicated section in `guides/admin-vs-self-service.md` |
+| `inbound-payments.md` does not clearly fork by payment method at the top | ★★★ | High | Add decision table: Stripe / bank transfer / invoicing paths |
+| No article on export — what's in "Clients export" vs "Registrations export" | ★★ | Medium | Add to `guides/where-to-find.md` or create `guides/export-guide.md` |
+| `creating-a-location.md` — verify screenshots present for Setup step 1 | Low | Low | Review |
+| `additional-fields.md` — confirm it covers setup flow, not just reference | Low | Low | Review |
+| No article explaining what the client sees after registering (Client Profile / Parent Zone) | — | High | `guides/parent-zone-guide.md` — flagged in `onboarding-brief.md` as missing |
 
 ---
 
@@ -128,4 +147,4 @@ Reference: `guides/managing-instructors.md`, `guides/zooza-101-instructors.md` (
 ---
 
 *Brief by Michal Dodok / Claude Code, 13 May 2026*
-*Inputs: onboarding-brief.md, core-workflows.md, screenshot of current Zooza dashboard (uk.zooza.app)*
+*Inputs: onboarding-brief.md, core-workflows.md, intercom-analysis-report.md, screenshot of current Zooza dashboard (uk.zooza.app)*
