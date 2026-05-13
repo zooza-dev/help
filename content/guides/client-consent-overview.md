@@ -63,7 +63,12 @@ If a client asks for a copy of their consent history:
 
 1. Ask them to log in to their Client Profile.
 2. Go to the consents section (navigation path to be confirmed — see REVIEW note above).
+
+   ![Client Profile consents section](../../assets/images/client-consent-overview-01.png)
+
 3. Click **Download PDF**.
+
+   ![Download PDF button in the consent overview](../../assets/images/client-consent-overview-02.png)
 
 The PDF is generated immediately and saved to their device.
 
