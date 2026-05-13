@@ -80,7 +80,7 @@ Items ordered by actual support frequency (source: Intercom analysis, Feb–Apr 
 | 2 | Find and download invoices | Export invoices for your accountant — individually or in bulk | Sales & Payments → Invoices | `guides/where-to-find.md` → Invoices | ★★★ |
 | 3 | Offer a make-up session | Give a client a replacement for a missed session | Open booking → Attendance → Book session | `guides/custom-replacement-lessons.md` | ★★★ |
 | 4 | Transfer or copy a client to another class | Move a client to a different class or duplicate their booking for a new term | Open booking → Transfer | `guides/transfer-and-copy-bookings.md` | ★★★ |
-| 5 | Renew your GoCardless connection | GoCardless connection expires periodically — renew it to keep bank transfer matching working | Sales & Payments → Payments → Inbound | `guides/inbound-payments.md` | ★★★ |
+| 5 | Renew your GoCardless connection | If you use GoCardless for direct debit or bank transfer matching, the connection expires periodically — renew it here | Sales & Payments → Payments → Inbound | `guides/inbound-payments.md` | ★★★ |
 | 6 | Turn off or adjust payment reminders | Change when clients receive payment notification emails, or turn them off | Settings → Billing → Payments | `guides/automatic-payment-reminders.md` | ★★★ |
 | 7 | Find where your make-up session summary is | See a report of all make-up sessions across your classes | Calendar → Make-up sessions | `guides/where-to-find.md` → Reports | ★★★ |
 | 8 | Share your booking link | Get the link or form to share with clients so they can register online | Publish section | `guides/admin-vs-self-service.md` | ★★ |

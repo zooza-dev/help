@@ -40,13 +40,13 @@ How will clients pay?
 │     └── Most businesses combine this with bank transfer for clients who prefer it
 ├── Bank transfer → clients send money to your account
 │     ├── Manual: you record each payment yourself on the booking
-│     └── Automatic matching: connect GoCardless inbound payments
-│           Zooza matches incoming transfers to bookings by IBAN — no manual entry
+│     └── Automatic matching: connect GoCardless or set up email notifications
+│           Zooza matches incoming transfers to bookings by variable symbol — no manual entry
 └── No online payment — invoices only
       └── Zooza generates invoices; clients pay by transfer; you record manually
 ```
 
-> **What GoCardless is in Zooza:** GoCardless is used for **inbound payment matching** — it connects your bank account and automatically pairs incoming bank transfers to the right bookings. If you take bank transfers and want to save time on manual recording, GoCardless inbound is the right tool.
+> **GoCardless in Zooza has two roles:** (1) **Direct debit** — Zooza pulls payment directly from a client's bank account via GoCardless mandate. (2) **Inbound payment matching** — Zooza connects to your bank account (via GoCardless Bank Data API or email notifications from your bank) and automatically pairs incoming bank transfers to the right bookings using the variable symbol. If you take bank transfers and want to save time on manual recording, inbound matching is the right tool.
 
 **Variations this creates downstream:**
 - Stripe → refund can be processed via Zooza; card payments are automatic
@@ -294,7 +294,7 @@ For clients migrating from Thinksmart specifically, these are the biggest mental
 |---------------|-----------|-----------------|
 | Admin creates every booking manually | Clients self-register via booking link; admin creates only exceptions | [admin-vs-self-service.md] |
 | Admin creates trial manually | Client books their own trial; admin just monitors | [trials-daily-business.md] |
-| Bank transfer matching done manually in spreadsheet | GoCardless inbound connects your bank and auto-pairs transfers to bookings by IBAN | [payment-pairing.md] |
+| Bank transfer matching done manually in spreadsheet | Zooza connects to your bank (via GoCardless or email notifications) and auto-pairs incoming transfers to bookings by variable symbol | [payment-pairing.md] |
 | Term reset = admin manually moves everyone | Copy bookings in bulk or use auto-enrolment; clients confirm themselves | [term-rebooking-guide.md] |
 | Refund handled in payment provider only | Refund can be processed via Zooza (Stripe) or recorded as admin record (all methods) | [stripe-refund-guide.md] · [recording-an-administrative-refund.md] |
 | Programme = flat structure | Programme → Class → Session hierarchy; each layer has different scope | [programme-class-session-definition.md] |
