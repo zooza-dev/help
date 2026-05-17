@@ -1,24 +1,41 @@
 ---
-title: "Recover deleted sessions, classes, and registrations"
-description: "The Trash screen shows everything deleted in the last 30 days and lets you restore items with a single click before they are permanently removed."
+title: "Recover deleted registrations, classes, and sessions"
+description: "Lost a registration or class? Zooza keeps deleted items in Trash for 30 days. Learn the difference between cancelled, deleted, and permanently removed — and how to restore anything with one click."
 slug: "trash-and-restore"
 type: "guides"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: ["trash", "restore", "deleted", "recovery", "settings"]
+tags: ["trash", "restore", "deleted", "recovery", "settings", "cancelled", "registration"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-04-12"
+last_converted: "2026-05-14"
+related_articles: ["archive-or-delete-programme", "registration-status-overview"]
 ---
 
-# Recover deleted sessions, classes, and registrations
+# Recover deleted registrations, classes, and sessions
 
 Deleted items are not immediately gone. Zooza keeps them in **Trash** for 30 days, after which they are permanently removed and cannot be recovered. During those 30 days you can restore any item with a single click.
 
 > **Access:** Settings → Tools → Trash. Requires `delete_courses` permission (owner role).
+
+---
+
+## Cancelled vs. deleted vs. permanently removed — what is the difference?
+
+This is the most common source of confusion. A registration (or class) can be in one of three states that look similar but behave very differently:
+
+| State | What happened | Where to find it | Can it be undone? |
+|---|---|---|---|
+| **Cancelled** | The registration was cancelled — client is no longer attending, but the record still exists | Registrations list with status filter set to *Cancelled* | Yes — change status back to Active manually |
+| **Deleted (in Trash)** | The registration was moved to Trash | **Settings → Tools → Trash** | Yes — within 30 days |
+| **Permanently removed** | 30 days have passed since deletion, or it was hard-deleted | Nowhere — it is gone | No |
+
+**If you cannot find a registration in the main list**, check two places in this order:
+1. Registrations list → change the status filter to **All** or **Cancelled** — it may still be there as cancelled.
+2. **Settings → Tools → Trash** — it may have been deleted.
 
 ---
 
@@ -31,6 +48,16 @@ Deleted items are not immediately gone. Zooza keeps them in **Trash** for 30 day
 | **Registration** | A client's booking on a class |
 
 Items deleted more than 30 days ago are permanently gone and cannot be recovered from here.
+
+---
+
+## Why is the Restore button greyed out?
+
+The **Restore** button is inactive when one of these conditions is true:
+
+- **The class the registration belonged to no longer exists.** A registration cannot be restored if its parent class has been permanently deleted. Restore the class first, then restore the registration.
+- **The item's 30-day window has expired.** The record is visible temporarily in some views but can no longer be recovered.
+- **You do not have the required permission.** Restore requires the `delete_courses` permission (owner role). Ask your account owner to restore the item for you.
 
 ---
 

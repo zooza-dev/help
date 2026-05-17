@@ -6,12 +6,13 @@ type: "setup"
 product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
-tags: ["invoicing", "szamlazz", "invoice-engine", "hungary", "nav"]
+tags: ["invoicing", "szamlazz", "invoice-engine", "hungary", "nav", "szamlatomb", "prefix"]
 status: "published"
 source_legacy_path: "legacy/0100_Welcome to Zooza.html"
 source_language: "en"
-needs_screenshot_replacement: false
-last_converted: "2026-03-25"
+needs_screenshot_replacement: true
+last_converted: "2026-05-13"
+related_articles: ["billing-and-invoicing", "invoicing-overview"]
 ---
 
 # Számlázz.hu Integration
@@ -58,6 +59,17 @@ Once connected:
 - For business bookings (B2B), invoices are automatically forwarded to Hungary's **NAV** tax system — no manual steps required.
 - If a customer has already paid (pre-paid), the payment is automatically recorded on the invoice in Számlázz.hu — the invoice appears as paid immediately.
 - Invoices cannot be modified after creation.
+
+### Invoice pad (számlatömb)
+
+If you run multiple Számlázz.hu integrations, or want to keep Zooza-generated invoices in a separate invoice pad from invoices created by other tools in the same Számlázz.hu account, set a **Prefix** on each Invoice Profile.
+
+1. Open the Invoice Profile in **Settings → Billing**.
+2. In the **Invoice Engine** section, find the **Invoice number series / prefix** field.
+3. Enter the exact name of the számlatömb (invoice pad) configured in your Számlázz.hu account.
+4. Save.
+
+Zooza will create all invoices for this profile in the specified tömb. Profiles without a prefix use the Számlázz.hu account default.
 
 ### VAT setup
 

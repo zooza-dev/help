@@ -6,12 +6,13 @@ type: "reference"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: ["reference", "ui-reference", "reports", "analytics"]
+tags: ["reference", "ui-reference", "reports", "analytics", "rescheduled", "substituted", "disrupted"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
-needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+needs_screenshot_replacement: true
+last_converted: "2026-05-13"
+related_articles: ["sessions-list", "payments-dashboard"]
 ---
 
 # Reports
@@ -212,7 +213,76 @@ A log of automated session notification emails sent to clients.
 
 The dashboard card shows the latest date with processed and failed counts.
 
+## Disrupted Sessions Report
+
+> **Permission required:** Owner role
+
+> **Navigation:** Go to **Reports & Insights** → **Reports** → **Disrupted Sessions**.
+
+Shows which clients were affected by rescheduled, substituted, or cancelled sessions — one row per (booking × disrupted session). Use it to answer questions like: which clients had the most disruptions this month, did a specific instructor's substitutions repeatedly affect the same clients, or which clients need to be notified about a batch of cancellations.
+
+### Filters
+
+| Filter | Description |
+|---|---|
+| `Date range` | The period to report on. |
+| `Programme` / `Class` | Narrow to a specific programme or class. |
+| `Instructor` | Filter by the instructor originally assigned to the session. |
+| `Location` | Filter by venue. |
+| `Billing period` | Align with a billing period. |
+| `Type` | **Rescheduled**, **Substituted**, or **Cancelled** — or any combination. |
+
+### Report columns
+
+| Column | Description |
+|---|---|
+| `Client` | Client name and booking number. |
+| `Session` | Original session date, time, and class. |
+| `Disruption type` | Rescheduled / Substituted / Cancelled. |
+| `Disruption date` | When the change was made. |
+
+### Export
+
+Click **Export** to download the filtered result as XLSX (owner only, same 5 000-row cap as the Sessions export).
+
+---
+
+## Common tasks
+
+### How to export a list of active clients with contacts
+
+Clients and registrations are two different things in Zooza — this is the most common source of confusion when exporting.
+
+| What you want | Where to export from |
+|---|---|
+| List of **clients** (one row per person) with name, email, phone | **Clients** → **Export** |
+| List of **registrations** (one row per booking, may include one client multiple times) | **Bookings** → **Export** |
+
+To export active clients with contact details:
+
+1. Go to **Clients**.
+2. Use the filters to narrow down if needed (e.g. by programme or status).
+3. Click **Export** — the CSV includes name, email, phone, and other client fields.
+
+> If a client has two children enrolled, you will see them **once** in the Clients export but **twice** in the Bookings export. This explains why the two counts often differ.
+
+### Why do the numbers in reports differ from my manual count?
+
+Reports calculate figures based on **status filters and billing period** — changing either will give a different result. Common reasons for discrepancies:
+
+| Situation | Explanation |
+|---|---|
+| Report shows fewer clients than the Clients list | Report is scoped to one billing period; Clients list shows all time |
+| Bookings count is higher than client count | One client can have multiple bookings (different classes or terms) |
+| Active bookings in report ≠ active bookings in list | Report may exclude waiting-list or trial bookings; check the status filter |
+| Payment totals don't add up | Some payments may be in a different billing period or status (Partially paid, etc.) |
+
+When numbers don't match, the fastest fix is to check which **billing period** and **status filters** are active in each view and align them.
+
+---
+
 ## Related
 
 - [Payments Reference](payments-dashboard.md) — detailed payment reports.
+- [Sessions List](sessions-list.md) — filter and export individual sessions.
 - [Dashboard Reference](dashboard.md) — admin home screen.

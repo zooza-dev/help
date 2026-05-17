@@ -126,6 +126,14 @@
     },
     {
       "@type": "Question",
+      "name": "I sent a bulk email — the job shows \"Pending\" but clients already appear in their communication history. What does \"Pending\" mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "These two views track different things:\n\n- The job status (Communication → your send history) shows where the send is in the processing pipeline — Pending approval, Queued, Sending, Completed. \"Pending approval\" means the batch is waiting for you to click Approve. For sends under 100 recipients, approval happens automatically and the job moves to Sending almost immediately.\n- The individual client's Communication tab records each email as soon as Zooza hands it off to the mail gateway, which can happen before the overall job status updates on screen.\n\nSo seeing \"Sent\" in a client's history while the job still shows \"Pending\" or \"Sending\" is normal — those emails are already on their way.\n\nStatuses at a glance:\n\nFor the full breakdown, see Bulk email send tracking."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Why do dynamic tags show wrong data for make-up or block-based sessions?",
       "acceptedAnswer": {
         "@type": "Answer",

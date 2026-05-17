@@ -12,7 +12,7 @@ status: published
 source_legacy_path: legacy/0034_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: 2026-05-11
+last_converted: 2026-05-13
 ---
 
 # Manage trial bookings — reschedule, convert, and close
@@ -32,6 +32,47 @@ Once a client submits a trial booking, their status is **Trial started**. From t
 | Client didn't show up — wants to try again | [Reschedule to a new date](#how-to-reschedule-a-trial-session) |
 | Client wants a different class or time | [Transfer to another class](#how-to-transfer-a-trial-to-another-class) |
 | Trial was booked as a regular registration by mistake | [Convert existing booking to trial](#how-to-convert-an-existing-booking-to-trial-status) |
+
+---
+
+## Trial statuses — what each one means
+
+| Status | What it means | Set by |
+|---|---|---|
+| **Trial started** | Client booked a trial; session is upcoming or in progress | Client (at booking) |
+| **Trial attended** | You confirmed the client attended the session | Admin (manually via Change status) |
+| **Trial won** | Client enrolled after the trial | Admin (when converting to full booking) |
+| **Trial lost** | Client did not continue — no-show, declined, or no response | Admin manually, or **automatically by the system** |
+| **Trial cancelled** | Trial was cancelled before it took place | Admin |
+
+### When does the system automatically set Trial Lost?
+
+Zooza marks a trial as **Trial Lost automatically** after a configured number of days have passed since the trial session without you taking any action (converting, marking attended, or rescheduling).
+
+The auto-lost timeout is set at the account or programme level. If you see a trial flip to Lost unexpectedly:
+
+1. Go to **Programme → Settings → Trial** and check the **Auto-lost after X days** setting.
+2. Increase the value if you need more time to follow up with clients before the trial is auto-closed.
+
+> A trial marked Lost by the system behaves the same as one you mark manually — it releases the capacity spot and stops follow-up messages.
+
+### How to confirm a trial session was attended
+
+If a client came to the trial but the status is not yet updated:
+
+1. Open the booking detail.
+2. Click **Change status → Trial attended**.
+
+This records attendance without converting to a full booking. Use this when you want to mark the session as completed but have not yet decided whether the client will enrol.
+
+### How to enrol a client after their trial was marked Lost
+
+A Lost status does not prevent you from enrolling the client — it just closes the trial flow. To re-enrol:
+
+1. Open the booking detail (the Lost trial booking).
+2. Click **Change status → Enrolled** (or use **Transfer** to move them to a different class first).
+
+If the booking is already too old or you prefer a clean start, create a new regular booking for the client from scratch.
 
 ---
 
@@ -118,7 +159,7 @@ This is intentional — Zooza doesn't auto-move trials because the right replace
 
 ## How to convert an existing booking to trial status
 
-If a booking was created as a regular registration but should have been a trial:
+If a booking was created as a regular registration or a waitlist booking but should have been a trial:
 
 **Prerequisite:** The programme must have trials enabled — Trial type must not be set to *None*.
 
@@ -132,7 +173,7 @@ If a booking was created as a regular registration but should have been a trial:
 
 After converting, the booking enters the standard trial flow — the same automation applies (follow-ups, auto-lost). Enrol the client into a specific trial session from the **Attendance** section.
 
-> This is a one-way conversion. A trial booking cannot be converted back to a regular registration.
+> This is a one-way conversion. A trial booking cannot be converted back to a regular registration or waitlist.
 
 ---
 

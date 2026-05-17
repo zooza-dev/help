@@ -11,6 +11,7 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-04-10"
+related_articles: ["awaiting-payment-grace-period", "scheduled-payment-notifications", "payment-tile-on-booking"]
 ---
 
 # Add a one-off scheduled payment
@@ -112,8 +113,36 @@ Both the active plan and historical plans have an editable **Admin note** field 
 ![Screenshot — ad hoc scheduled payment](../../assets/images/ad-hoc-scheduled-payment-08.png)
 ---
 
+## Why is the first instalment different from the others?
+
+If the first instalment on a payment plan is a different amount than the rest, it is almost always a **pro-rated (alikvotný) payment**.
+
+When a client registers mid-billing period, Zooza calculates the first payment proportionally — the client pays only for the days remaining in that period, not the full month or term fee.
+
+**Example:** A class costs €60/month. A client registers on the 15th of March. The first instalment is €30 (half of March), and from April onwards the full €60/month applies.
+
+The pro-ration calculation depends on your billing profile settings:
+- The **billing period start date** (e.g., 1st of each month)
+- The **registration date**
+- The **pro-ration method** (calendar days or session-based)
+
+To review or adjust how pro-ration is configured, go to **Settings → Billing profiles** and check the **Pro-rated payment** settings for the relevant billing profile.
+
+> If you do not want pro-ration and prefer all clients to pay the full amount regardless of when they register, disable the pro-rated payment option in the billing profile.
+
+## Can I change the amount on an existing payment plan?
+
+You cannot edit the amounts in an existing active payment plan directly. The options are:
+
+1. **Add an ad-hoc payment** (this guide) — to charge or credit an additional amount without changing the existing scheduled payments.
+2. **Replace the payment plan** — go to the registration's **Payment plan** tab, click **Replace plan**, and select a new template or configure custom amounts. The old plan moves to history.
+3. **Edit individual scheduled payments** — in the scheduled payments table, you can click on a future (unpaid) payment and manually adjust its amount or due date.
+
+---
+
 ## Related
 
 - [Payment tile on booking](payment-tile-on-booking.md) — overview of the payment card on a registration.
 - [Payment options](payment-options.md) — types of payments and how they work.
+- [Billing and invoicing setup](../setup/billing-and-invoicing.md) — billing profiles, pro-ration settings.
 - [Payments and billing FAQ](../faq/payments-and-billing-faq.md) — common questions.

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-05-13"
 ---
 
 # Email and Communication FAQ
@@ -137,6 +137,26 @@ Note: if the client opts out again from the unsubscribe link in a future email, 
 ## Can I get an email notification when a new booking or trial comes in?
 
 Yes. Admin notifications are configured in the system settings. You receive an email whenever a new booking (including trials) is created.
+
+## I sent a bulk email — the job shows "Pending" but clients already appear in their communication history. What does "Pending" mean?
+
+These two views track different things:
+
+- **The job status** (Communication → your send history) shows where the send is in the processing pipeline — `Pending approval`, `Queued`, `Sending`, `Completed`. "Pending approval" means the batch is waiting for you to click **Approve**. For sends under 100 recipients, approval happens automatically and the job moves to `Sending` almost immediately.
+- **The individual client's Communication tab** records each email as soon as Zooza hands it off to the mail gateway, which can happen before the overall job status updates on screen.
+
+So seeing "Sent" in a client's history while the job still shows "Pending" or "Sending" is normal — those emails are already on their way.
+
+**Statuses at a glance:**
+
+| Job status | What it means |
+|---|---|
+| **Pending approval** | Batch created, waiting for your approval. No emails sent yet. |
+| **Queued** | Approved, but another send is active. Will start automatically. |
+| **Sending** | Dispatching in progress. Emails appear in client histories as they are processed. |
+| **Completed** | All recipients processed. Check Sent and Failed counts for the final result. |
+
+For the full breakdown, see [Bulk email send tracking](../guides/bulk-email-send-tracking.md).
 
 ## Why do dynamic tags show wrong data for make-up or block-based sessions?
 

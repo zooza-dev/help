@@ -11,8 +11,9 @@ tags: ["consents", "client profile", "GDPR", "data"]
 status: published
 source_legacy_path: ""
 source_language: en
-needs_screenshot_replacement: false
-last_converted: 2026-05-11
+needs_screenshot_replacement: true
+last_converted: 2026-05-13
+related_articles: ["client-profile-101", "consents-and-agreements-faq", "setting-gtc-gdpr-consents"]
 ---
 
 # How clients view and download their consent history
@@ -25,9 +26,7 @@ Clients can view a full record of every consent they have given to your company 
 
 Clients access their consent history through their **Client Profile** (the client-facing area of Zooza).
 
-> **Note:** The exact navigation path is pending confirmation with the development team. As a guide, direct clients to their profile settings or a dedicated "My data & consents" section.
-
-<!-- REVIEW: Confirm the exact menu path in the Client Profile for viewing consents. -->
+In the Client Profile, navigate to the **My data & consents** section.
 
 ---
 
@@ -62,7 +61,7 @@ There is no action required from you as admin to enable this — it is available
 If a client asks for a copy of their consent history:
 
 1. Ask them to log in to their Client Profile.
-2. Go to the consents section (navigation path to be confirmed — see REVIEW note above).
+2. Go to **My data & consents**.
 
    ![Client Profile consents section](../../assets/images/client-consent-overview-01.png)
 

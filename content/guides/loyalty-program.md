@@ -59,6 +59,7 @@ All loyalty models use the **parent's email address** to identify returning clie
 
 Each loyalty model is configured through **rules**. A rule defines:
 
+- **Name** — a short label to identify the rule in the list (e.g. "Sibling discount — 2nd child", "Referrer reward — summer campaign"). Optional but recommended once you have more than one rule.
 - **Which programmes / classes** the discount applies to
 - **What discount** to give (percentage or fixed amount)
 - Optional: **tiers** based on child number or booking history

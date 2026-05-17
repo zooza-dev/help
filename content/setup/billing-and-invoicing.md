@@ -6,12 +6,13 @@ type: "setup"
 product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
-tags: ["billing", "invoicing", "billing-profile", "IBAN", "invoice-generation", "VAT", "GoCardless", "bank-transfer"]
+tags: ["billing", "invoicing", "billing-profile", "IBAN", "invoice-generation", "VAT", "GoCardless", "bank-transfer", "invoice-templates", "zooza-invoice"]
 status: "published"
 source_legacy_path: "legacy/html/billing-settings.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-02-18"
+last_converted: "2026-05-13"
+related_articles: ["invoicing-overview", "szamlazz-invoices", "fakturoid-invoices", "xero-integration"]
 ---
 
 <!-- Synonyms: billing settings, invoice settings, billing profile, fakturácia, fakturačný profil, nastavenie fakturácie, IBAN, account holder, invoice generation, automatic invoicing -->
@@ -40,12 +41,19 @@ The first section controls whether Zooza generates invoices automatically.
 
 ![Invoice settings — automatic generation toggle](../../assets/images/billing-and-invoicing-02.png)
 
-When **Enable automatic invoice generation** is checked, Zooza generates an invoice every time a payment status changes to "paid" on a booking. This means:
+When **Enable automatic invoice generation** is checked, Zooza generates invoices automatically based on payment events. Two independent triggers are available:
 
-- A single booking can produce multiple invoices (e.g., one per instalment).
-- If a client pays 50 EUR now and 30 EUR later, each payment triggers a separate invoice.
+| Trigger | When it fires | Typical use |
+|---------|--------------|-------------|
+| **Debt cleared** | When a booking reaches `Paid` or `Final payment paid` status | Standard — one invoice per settled payment |
+| **Down payment paid** | When a booking reaches `Down payment paid` status | Useful when you want a separate invoice for the deposit upfront |
 
-When unchecked, no invoices are generated automatically. You can still generate invoices manually per booking (see [Manual invoice generation](#manual-invoice-generation) below).
+Both triggers are on by default when you enable automatic invoicing. You can turn each off independently if your accounting workflow doesn't need that event.
+
+- A single booking can produce multiple invoices (e.g., one per instalment, or deposit + final).
+- If a client pays 50 EUR now and 30 EUR later, each trigger fires separately.
+
+When automatic invoicing is off, no invoices are generated automatically. You can still generate invoices manually per booking (see [Manual invoice generation](#manual-invoice-generation) below).
 
 > **Tip:** If you are just getting started with Zooza, you can leave automatic invoicing off, accept bookings and payments, and enable it later once your accounting settings are ready. You can also generate invoices retrospectively.
 
@@ -170,7 +178,82 @@ After an invoice is generated, you can edit it by clicking the pencil icon next 
 
 Invoice numbers are generated sequentially per billing profile. The format and starting number are configured in the billing profile settings.
 
+### Custom invoice number template
+
+For invoice engines that support Zooza-generated numbers (**Faktury Online**, **Fakturoid**, **Zooza Invoice**, **Xero**), you can define a template that controls the exact format of the invoice number — for example aligning it with the client's variable symbol or making it human-readable.
+
+**Available tags:**
+
+| Tag | Resolves to | Example |
+|-----|------------|---------|
+| `{VS}` | Variable symbol (booking reference number) | `12345` |
+| `{YYYY}` | 4-digit year | `2026` |
+| `{YY}` | 2-digit year | `26` |
+| `{MM}` | 2-digit month, zero-padded | `05` |
+| `{DD}` | 2-digit day, zero-padded | `09` |
+| `{N}` | Sequential invoice number per profile, zero-padded to 4 digits | `0042` |
+
+**Example templates:**
+
+| Template | Result |
+|----------|--------|
+| `{VS}-{DD}-{MM}-{YYYY}` | `12345-09-05-2026` |
+| `ZOOZA-{VS}` | `ZOOZA-12345` |
+| `INV-{YYYY}-{VS}` | `INV-2026-12345` |
+| `{VS}-{N}` | `12345-0042` |
+
+Set the template in the **Invoice profile** settings under the invoice number / series field. If you leave the field empty, Zooza uses sequential numbering.
+
+> **Note:** This template feature applies only to the four engines listed above. For **Számlázz.hu**, **Smart_Bill**, **Oblio**, and **ABRA Flexi**, the field is interpreted as a literal prefix or series identifier, not a template — those engines manage number formatting on their own side.
+
 For the invoice item description, you can use dynamic tags to automatically insert programme-specific information (e.g., programme name, billing period). This is useful when generating invoices across many programmes — each invoice will contain the correct programme details without manual editing.
+
+## Zooza Invoice — templates and branding
+
+> **Applies to:** Invoice Profiles using the **Zooza Invoice** engine only.
+
+When your Invoice Profile uses Zooza Invoice, you can choose a visual template and set brand colours and fonts. The invoice preview shows your actual company logo, name, address, bank details, and QR code alongside mock buyer data — so you see exactly what clients will receive.
+
+### Choosing a template
+
+Three templates are available:
+
+| Template | Description |
+|---|---|
+| **Classic** | Traditional invoice with blue accents and clear structure. |
+| **Minimal** | Clean white design with thin rules and subtle typography. |
+| **Modern** | Bold coloured header, card layout, alternating row colours. |
+
+To select a template:
+
+1. Go to **Settings → Billing** and open the Invoice Profile.
+2. In the **Invoice Engine** section, find **Template**.
+3. Choose a template from the list.
+4. Click **Preview** to see a rendered preview with your company branding.
+5. Click **Save**.
+
+### Setting brand colour and font
+
+Below the template selector:
+
+| Setting | Options |
+|---|---|
+| **Primary colour** | Any hex colour (e.g. `#e63946`). Applied to headers, accents, and highlights. |
+| **Font** | **Default** (Inter / Segoe UI), **Serif** (Georgia / Times), **Mono** (JetBrains Mono / Courier). |
+
+Changes are reflected immediately in the preview.
+
+### Preview
+
+Click **Preview** at any point to generate a full-page preview. The preview uses:
+- Your real company name, address, tax IDs, logo, IBAN, and QR code.
+- Translated mock buyer data and sample line items (no real client data is used).
+
+This means the preview is an accurate representation of what your invoices will look like — including your logo and bank details.
+
+### Per-invoice template override
+
+If you need a specific invoice to use a different template, set `template_id` in the invoice's `engine_data` at generation time. The company default applies to all invoices unless overridden.
 
 ## Multi-line invoices
 
@@ -224,6 +307,36 @@ Unchecked types are merged into the main line (or into the nearest checked paren
 ### Correction types and merging
 
 Each payment type has a corresponding correction type (e.g. `Course Payment Correction`). If a correction type is **not** in your mapping, its amount is automatically merged into the parent line — the result appears as a single net amount. If you add the correction type to the mapping, it appears as its own negative line.
+
+## How clients access their invoices
+
+Clients can find their invoices in two places:
+
+1. **Client Profile → Payments** — invoices generated for their bookings appear here as downloadable PDF links. The client does not need to contact you — they can download invoices themselves at any time.
+2. **Email** — when an invoice is generated (automatically or manually), Zooza sends it to the client's email address. The invoice is attached as a **PDF** to the email.
+
+### Why a client says they cannot see their invoice
+
+| Situation | Cause | Fix |
+|---|---|---|
+| Invoice not in Client Profile | Invoice was not yet generated | Generate it manually from the booking detail or enable automatic generation |
+| Client received email but no attachment | Invoice email may have been the payment notification, not the invoice email | Check whether automatic invoice generation is enabled and which trigger fired |
+| Invoice is in the profile but client cannot find it | Client is looking in the wrong section | Tell them: Client Profile → open the booking → Payments → Invoices |
+| Invoice shows in admin but client cannot see it | Invoice may be assigned to a different email address | Check the email address on the booking vs. the email the client uses to log in |
+
+### Sending an invoice manually to a client
+
+To re-send or send an invoice that was not delivered automatically:
+
+1. Open the booking detail.
+2. In the **Payments** tile, click **Show payments**.
+3. Find the invoice in the **Invoices** section.
+4. Click the **pencil icon** to edit it.
+5. Check **Send invoice to client via email** and save.
+
+The invoice is emailed to the client immediately.
+
+---
 
 ## Related
 

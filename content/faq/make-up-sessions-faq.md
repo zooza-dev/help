@@ -256,10 +256,13 @@ The most common reason is that the child's attendance was set to **"Did not atte
 Other reasons include:
 
 - Make-up sessions are not enabled on the programme.
+- **The client cancelled after the cancellation deadline.** If a cancellation limit is configured (e.g. "must cancel at least 2 hours before the session"), cancelling after that deadline is recorded as "Did not attend" — not as "Cancelled" — and no make-up credit is generated. This is by design.
 - The credit was generated but already expired based on your expiration settings.
 - The session itself was not properly tracked (e.g. attendance tracking is disabled on the class).
 
 To fix a missing credit, change the attendance state from "Did not attend" to "Cancelled" on the affected session. The system should then generate the make-up credit.
+
+> **Note:** If the client cancelled after the deadline intentionally and you still want to grant a credit, change the attendance state manually to "Cancelled" — this overrides the deadline logic.
 
 ## How do group make-up sessions work and why does capacity show as full after cancellations?
 
@@ -274,6 +277,32 @@ This means that even if several clients cancel from the make-up session, the boo
 **Workaround:**
 
 If spots have freed up but the booking form still shows the session as full, delete the session and recreate it. This resets the displayed capacity to reflect actual availability.
+
+## How does an attended make-up session appear in the attendance view?
+
+When a student attends a make-up session in a different class, the attendance is recorded in **that class's session** — not in the student's original class.
+
+What you see where:
+
+| Where you look | What you see |
+|---|---|
+| Original class — session the student missed | Status: **Cancelled** (the absence that triggered the credit) |
+| Make-up class — session the student attended | Student appears in the **attendance list** as a make-up student |
+| Student's registration detail → Credits | The credit shows as **Used** with a link to the make-up session |
+
+If you want to see all make-up sessions across your account, go to **Calendar → Make-up sessions report**.
+
+## Can I restrict make-up sessions to the same programme only?
+
+Yes — but not to the exact same class. Make-up session eligibility is always filtered by **programme**, not by class. This means:
+
+- A student can book a make-up in **any compatible class** within the same programme (matching age group and programme type).
+- There is no built-in setting to restrict make-up bookings to only the student's original class.
+
+If you want to limit which classes appear as make-up options, you can:
+
+- Set **extra capacity to 0** on classes you do not want used for make-up bookings — those classes will not appear in the make-up list.
+- Use the **time restriction** setting (**Settings → Programmes → Time restriction in hours for offering a regular make-up session**) to exclude sessions that start too soon.
 
 ## Related
 

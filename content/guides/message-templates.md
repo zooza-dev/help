@@ -1,17 +1,18 @@
 ---
-title: "Automatic communication to clients / Message templates"
-description: "Zooza does most of the work for you by sending information to the client automatically."
+title: "Message templates — automatic and manual emails"
+description: "Set up automatic emails after registration, configure template variants per programme, and understand the difference between system templates and user templates. Includes roles, permissions, and troubleshooting."
 slug: "message-templates"
 type: "guides"
 product_area: "Communication"
 sub_area: "Email"
 audience: ["admin"]
-tags: ["email"]
+tags: ["email", "template", "communication", "automation", "registration confirmation", "automatic email", "permissions"]
 status: "published"
 source_legacy_path: "legacy/0007_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-05-14"
+related_articles: ["dynamic-tags", "edit-session-notification-template", "sending-email-sms", "email-communication-faq", "automatic-payment-reminders-detailed"]
 ---
 
 # Automatic communication to clients / Message templates
@@ -120,6 +121,35 @@ From this point on, every booking made for that programme will use your custom v
 - If no variant is assigned at programme level, Zooza uses the **default system template** for that template type.
 - You can assign different variants to different programmes — useful if you run camps, regular classes, and one-off events with different confirmation styles.
 - Template variants are shared across your account. Any admin can edit them.
+
+## Who can create and edit templates — roles and permissions
+
+Access to templates depends on the user's role in Zooza:
+
+| Role | Can view templates | Can edit system templates | Can create user templates |
+|---|---|---|---|
+| **Owner** | Yes | Yes | Yes |
+| **Admin** | Yes | Yes | Yes |
+| **Instructor** | No | No | No |
+
+If you cannot see the **Add template** button or the **Communication → Templates** menu:
+
+1. Check your role — go to **Settings → Users** and verify you have Owner or Admin access.
+2. Ask your account owner to grant you the necessary role.
+
+There is no setting to grant template access to instructors without promoting them to Admin.
+
+## Feedback email — when it is sent and how to configure it
+
+Zooza can automatically send a **feedback / evaluation email** to clients after a class ends. This email is sent by the system and **cannot be edited** (unlike standard booking confirmation templates).
+
+**When it is sent:** The feedback email triggers based on the class end date — specifically, after the last session of the class has passed. There is no setting to delay or schedule it to a custom time.
+
+**How to enable it:** Go to **Programmes → [your programme] → Settings → Online registration** and look for the **Feedback email** or **Evaluation** option. Toggle it on.
+
+**Common issues:**
+- *"Feedback email was sent before the course ended"* — this can happen if the class end date in the system is earlier than the actual last session. Check the class end date under the class settings.
+- *"No feedback email arrived"* — verify the feature is enabled on the programme, and that the client's email address is valid and not bouncing.
 
 ## When automatic emails are NOT sent
 

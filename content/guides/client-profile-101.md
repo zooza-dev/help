@@ -6,12 +6,13 @@ type: "guides"
 product_area: "Clients"
 sub_area: ""
 audience: ["admin", "client"]
-tags: ["client-profile", "parent-portal", "login", "payments", "make-up", "benefits", "entry-pass", "credits", "discounts"]
+tags: ["client-profile", "parent-portal", "login", "payments", "make-up", "benefits", "entry-pass", "credits", "discounts", "shared-access", "documents"]
 status: "published"
 source_legacy_path: "legacy/0023_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-18"
+last_converted: "2026-05-13"
+related_articles: ["client-profile-faq", "client-management-faq", "documents"]
 ---
 
 <!-- Synonyms: client profile, parent portal, client portal, customer portal, profil klienta, rodičovský portál, klientský profil -->
@@ -124,12 +125,22 @@ Clients can open an order to see its details, including items purchased, payment
 
 ## Sharing a booking
 
-In the booking details, clients can share access with another person — for example, another parent, a grandparent, or an older child. The shared person receives notifications and updates related to the booking.
+In the booking details, clients can share access with another person — for example, another parent, a grandparent, or an older child. The shared person receives:
 
+- Notifications and updates related to the booking.
+- Full access to all documents attached to the booking — files, videos, and URLs at any level (booking, class, programme, or session). They can view and download everything the original buyer can see.
 
 ![Screenshot — client profile 101](../../assets/images/client-profile-101-08.png)
 
 > **For admins:** You can also set up shared access from the admin side. See [Client Management FAQ](../faq/client-management-faq.md) for details on giving a second parent access.
+
+## My data & consents
+
+Clients can view all consents and agreements they have ever given — including Zooza platform agreements and your company's own terms — in one place. Each entry shows whether they accepted or declined it, the version, and when it was given.
+
+From this section, clients can also **Download PDF** to get a self-contained PDF summary of their full consent history on demand. The PDF includes the full text of each agreement alongside their response.
+
+See [How clients view and download their consent history](client-consent-overview.md) for details.
 
 ## Bottom navigation menu
 

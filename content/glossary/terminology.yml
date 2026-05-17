@@ -1580,6 +1580,55 @@ entity_misattribution:
       This is a configurable-days feature — the default was 30 days, but admins can change it per programme.
     public: false
 
+  - id: block
+    canonical_en: "Block"
+    category: "scheduling"
+    definition: >
+      A separately purchasable segment of sessions within a single Class.
+      A Class is divided into Blocks when not all clients attend all sessions —
+      for example, Mondays-only vs. Tuesdays-only vs. both days combined.
+      Each Block has its own price and clients buy only the Block(s) they need.
+    context:
+      admin: "Block"
+      client: "Block"
+      widget: "Block"
+    deprecated:
+      - "segment"              # internal/API term — do not use in public content
+      - "segmented schedule"   # internal/API term — do not use in public content
+      - "schedule segment"     # internal/API term — do not use in public content
+    synonyms:
+      - "blok"                 # SK/CZ/HU market usage, acceptable
+      - "term"                 # some operators use "term" for time-period blocks
+    translations:
+      sk: "Blok"
+      cz: "Blok"
+      hu: "Blokk"
+      ro: "Bloc"
+    intent_keywords:
+      en: ["block", "blocks", "block booking", "days block", "split sessions", "buy mondays only",
+           "partial attendance", "selective sessions"]
+      sk: ["blok", "bloky", "blokové hodiny", "blokovanie", "čiastočná dochádzka"]
+    do_not_confuse_with:
+      - term: "Session"
+        reason: >
+          A Session is a single occurrence (one meeting). A Block is a group
+          of sessions sold together as one purchasable unit within a Class.
+      - term: "Payment Plan"
+        reason: >
+          A Payment Plan controls how and when the client pays. A Block controls
+          which sessions the client has access to. They are independent.
+      - term: "Make-up session"
+        reason: >
+          Make-up sessions let a client replace a missed session. Blocks define
+          which sessions the client is enrolled in to begin with.
+    ai_notes: >
+      Always use "Block" (not "segment" or "segmented schedule") in any public-facing
+      content, help docs, or client communication. "Segmented schedule" and "segment"
+      are internal API/spec terms only. When a spec references "segmented schedule",
+      translate this to "Block" for help content. A Class with blocks is often
+      described as a "block-based class".
+    public: true
+
   - pattern: "ai_rule"
     actual_entity: "N/A"
     actual_action: "N/A"
@@ -1590,3 +1639,81 @@ entity_misattribution:
       Always confirm the intent before acting: restate the action using correct
       entity terminology (booking/registration, not client/child).
     intent_keywords: []
+
+  - id: registration-status-pending
+    canonical_en: "Pending (registration status)"
+    category: "bookings"
+    definition: >
+      A registration status indicating the booking has been submitted but is not yet
+      confirmed — typically because payment has not been received or admin approval
+      is required. Pending registrations still hold a capacity spot.
+    context:
+      admin: "Pending"
+      client: "Pending"
+    translations:
+      sk: "Čakajúci / Nevybavený"
+      cz: "Čekající / Nevyřízený"
+    intent_keywords:
+      en: ["pending registration", "pending booking", "not confirmed", "awaiting confirmation", "pending status"]
+      sk: ["čakajúci", "čaká na potvrdenie", "nevybavený", "čakajúca registrácia", "nepotvrdená"]
+      cz: ["čekající", "nevyřízená registrace", "čeká na potvrzení"]
+    public: true
+
+  - id: registration-status-awaiting-payment
+    canonical_en: "Awaiting payment (registration status)"
+    category: "bookings"
+    definition: >
+      A registration status indicating the booking is active but one or more scheduled
+      payments are overdue. The client is still enrolled and attending.
+    context:
+      admin: "Awaiting payment"
+      client: "Awaiting payment"
+    translations:
+      sk: "Čaká na platbu"
+      cz: "Čeká na platbu"
+    intent_keywords:
+      en: ["awaiting payment", "payment due", "overdue payment", "unpaid registration", "outstanding payment"]
+      sk: ["čaká na platbu", "nezaplatené", "dlh", "čakajúca platba", "neuhradené"]
+      cz: ["čeká na platbu", "nezaplaceno", "dluh", "čekající platba"]
+    public: true
+
+  - id: cancel-vs-delete
+    canonical_en: "Cancel vs. Archive vs. Delete (Trash)"
+    category: "bookings"
+    definition: >
+      Three distinct actions that customers often confuse by using the word 'vymazať'
+      (SK) or 'smazat' (CZ) for all of them. Cancel = deactivates a registration,
+      record stays visible. Archive = deactivates a programme/class, not deleted.
+      Delete = moves to Trash, recoverable within 30 days. Permanently removed = gone
+      after 30 days or hard-deleted.
+    context:
+      admin: "Cancel / Archive / Delete"
+    translations:
+      sk: "Zrušiť / Archivovať / Vymazať (Koš)"
+      cz: "Zrušit / Archivovat / Smazat (Koš)"
+    intent_keywords:
+      en: ["cancel registration", "delete registration", "archive programme", "trash", "restore", "undo delete"]
+      sk: ["vymazať registráciu", "zmazať registráciu", "zrušiť registráciu", "stornovať", "storno", "vymazať kurz",
+           "vymazať skupinu", "koš", "obnoviť", "vymazané", "kde je vymazaná registrácia"]
+      cz: ["smazat registraci", "zrušit registraci", "stornovat", "storno", "smazat kurz", "koš", "obnovit"]
+    clarification: >
+      When a customer says 'vymazať' (SK) or 'smazat' (CZ), always clarify which action
+      they mean: Cancel (deactivate registration), Archive (deactivate programme/class),
+      or Delete/Trash (move to Trash). These have different consequences and different
+      locations in the UI. See the trash-and-restore guide for the full comparison.
+    public: true
+
+  - id: cancel-registration-storno
+    canonical_en: "Cancel (registration)"
+    category: "bookings"
+    definition: >
+      The action of cancelling a registration — marking it as inactive. The record
+      remains in the system and can be reactivated. Different from deletion (Trash).
+    translations:
+      sk: "Zrušiť registráciu / Storno"
+      cz: "Zrušit registraci / Storno"
+    intent_keywords:
+      en: ["cancel registration", "cancel booking", "unenrol", "remove from class", "cancel enrolment"]
+      sk: ["zrušiť registráciu", "stornovať", "storno", "odhlásenie", "odhlásiť", "vyradiť", "zrušenie"]
+      cz: ["zrušit registraci", "stornovat", "storno", "odhlásení"]
+    public: true

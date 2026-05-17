@@ -10,8 +10,9 @@ tags: ["reference", "ui-reference", "widgets", "publish", "embed"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
-needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+needs_screenshot_replacement: true
+last_converted: "2026-05-13"
+related_articles: ["customizing-widgets", "widget-merge-rooms", "deploying-zooza-on-website"]
 ---
 
 # Publish (Widgets)
@@ -106,12 +107,82 @@ Available widget types:
 
 Each widget type has a **Configure** button to open its settings.
 
+### Registration Form Settings
+
+Settings specific to the **Booking Form** widget type. Open via **Booking form → Configure**.
+
+#### Course list display
+
+Controls how the list of Programmes is presented to the visitor before they choose one.
+
+| Option | Description |
+|---|---|
+| **Dropdown** (default) | Classic `<select>` menu — compact, works everywhere. |
+| **Grid** | Visual card grid with programme names. Better for sites with many programmes or a visual layout. |
+
+When **Grid** is selected, an additional **Columns** setting appears (1–4). Choose how many cards appear per row.
+
+> **Existing widgets** keep the dropdown behaviour until you explicitly change this setting. New widgets default to Grid.
+
+#### Place grouping (Merge rooms)
+
+When enabled, the widget shows one entry per location instead of listing individual rooms within a location. Clients see the place name; the room is determined automatically by the schedule they pick.
+
+| Option | Default |
+|---|---|
+| **Merge rooms** checkbox | On for new widgets; Off for existing widgets (opt in to change) |
+
+> **To reset** a registration widget to its defaults, use the **Reset** button. This will set Merge rooms to On.
+
+#### Hide dates on block-based classes
+
+For classes that use **Blocks** (where sessions are split into separately purchasable blocks), the widget normally shows the parent class start date on the registration tile. This can be confusing when a client is choosing a specific Block — the date shown is for the whole class, not their selected Block.
+
+Enable **Hide dates on block-based classes** to suppress that date from the tile for any class that has Blocks configured.
+
+| Option | Default |
+|---|---|
+| **Hide dates on block-based classes** checkbox | Off |
+
 ### Actions
 
 | Button | Description |
 |---|---|
 | **Delete** | Delete this widget. |
 | **Reset** | Reset widget settings to defaults. |
+
+## Troubleshooting
+
+### Why is a programme not showing in the widget?
+
+Work through this checklist in order:
+
+1. **Online registration is off.** Go to the programme → **Settings → Online registration** and confirm that online registration is enabled. If it is off, the programme will not appear in the booking form widget.
+2. **No active classes.** A programme only appears in the widget if it has at least one class with active, upcoming sessions. If all classes have ended or are inactive, the programme is hidden.
+3. **Programme is not selected in the widget.** Open the widget in **Publish** → widget detail → **Choose programmes**. Confirm the programme is included in the widget's programme list.
+4. **Billing period has ended.** If the billing period for all classes has passed, the programme will not show as bookable.
+5. **Widget is cached.** After making changes, wait a few minutes and do a hard refresh (Ctrl+Shift+R or Cmd+Shift+R) before checking again.
+
+### Why is the Register button inactive or missing?
+
+| Symptom | Likely cause | Fix |
+|---|---|---|
+| Button shows "Register" but is greyed out | Class is at full capacity | Increase class capacity or add a waiting list |
+| Button shows "Express interest" instead of "Register" | Online registration is closed but interest collection is on | Open online registration in programme settings |
+| No button at all | Online registration is off | Enable online registration in programme settings |
+| Button works but shows error | Client is already registered | System prevents duplicate bookings |
+
+### How to change the order of programmes in the widget
+
+The order in which programmes appear in the booking form widget follows the order they are listed in your **Programmes** screen. To change the order:
+
+1. Go to **Programmes**.
+2. Drag and drop programmes into the desired order (if drag-and-drop is available), or rename them so they sort alphabetically in the order you want.
+3. Alternatively, use the **Choose programmes** setting in the widget to select only specific programmes — unselected programmes are hidden regardless of their global order.
+
+> There is no dedicated "widget order" setting separate from the Programmes list order.
+
+---
 
 ## Related
 

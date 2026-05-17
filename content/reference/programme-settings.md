@@ -10,7 +10,7 @@ tags: ["reference", "ui-reference"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
-needs_screenshot_replacement: false
+needs_screenshot_replacement: true
 last_converted: "2026-02-12"
 ---
 
@@ -278,6 +278,25 @@ Controls attendance tracking and session rescheduling.
 | `Automatically approve requests for session rescheduling` | Auto-approves reschedule requests. If disabled, the instructor must approve each request. |
 
 > If both make-up sessions and rescheduling are enabled, a warning appears: clients can both cancel and request a make-up, which may cause confusion.
+
+## Metadata
+
+Attach typed key-value data to a programme — for internal tagging, integrations, or exposing structured data to the booking widget.
+
+The **Metadata** card appears on the programme Settings page. Each row is a key-value pair.
+
+| Control | Description |
+|---|---|
+| **Add metadata** | Opens the key picker. Type to search existing keys or create a new one inline. |
+| Key | Short identifier (e.g. `difficulty`, `min_age`). Scoped to your company. |
+| Value | Typed according to the key's value type: Text, Number, Yes/No, or JSON. |
+| Public | Whether the value is exposed to the registration widget (set at key level, not per-programme). |
+
+**Creating a new key inline:** type a name that doesn't exist → press Enter → fill in value type and public flag → confirm. The key is created and reusable on all programmes.
+
+> **Manage all keys centrally:** Go to **Settings → Courses → Metadata keys** to rename keys, toggle public visibility, or delete a key and all its assigned values.
+
+---
 
 ## Related
 

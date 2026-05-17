@@ -79,6 +79,30 @@ Once confirmed, the original session shows the cancelled status with a link to t
 In the booking's **Attendance** tab, the **Book a session** button at the top lets you add any upcoming session from the class to the client's attendance record. This is used when you want to manually enrol the client into a specific session — for example, a make-up or an extra session — without going through the session picker.
 ![Screenshot — admin attendance management](../../assets/images/admin-attendance-management-05.png)
 ![Screenshot — admin attendance management](../../assets/images/admin-attendance-management-06.png)
+## Attendance after transferring a student to a different class
+
+When you move a student from one class to another (via **Transfer** or **Copy**), their historical attendance does not move with them. Here is what happens:
+
+| What | Where it goes |
+|---|---|
+| Attendance records from the **original class** | Stay on the **original booking** — linked to the original class |
+| Attendance in the **new class** | Starts fresh from the date of transfer — no history |
+| Make-up credits earned in the original class | Remain on the original booking; may or may not be usable in the new class depending on programme settings |
+
+**How to find the original attendance after a transfer:**
+
+1. Go to **Bookings** and search for the client.
+2. Look for the **original (closed or cancelled) booking** — there may be two bookings for the same client: the old one and the new one.
+3. Open the original booking and go to the **Attendance** tab to see the full session history.
+
+> The attendance records are not deleted — they are just on a different booking. If you only look at the new booking, you will see a fresh start.
+
+**Year-end attendance across multiple classes:**
+
+If a student changed classes mid-year, there is no single view that combines their attendance from both classes. You need to check each booking separately and add up the counts manually. This is a current limitation — there is no built-in cross-class attendance report for a single student.
+
+---
+
 ## Related
 
 - [Attendance management for instructors](instructor-attendance-management.md) — instructor-specific dashboard and calendar views.

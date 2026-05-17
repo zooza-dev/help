@@ -1,14 +1,14 @@
 # SEO & AI Readiness Report
 
-**Generated:** 2026-05-12
+**Generated:** 2026-05-17
 
 ## Summary
 
-- **Total docs checked:** 231
+- **Total docs checked:** 236
 - **Docs with errors:** 0
-- **Docs with warnings only:** 90
+- **Docs with warnings only:** 94
 - **Total errors:** 0
-- **Total warnings:** 548
+- **Total warnings:** 552
 - **Overall:** PASS
 
 ## Checks performed
@@ -50,6 +50,9 @@
 ### `content/guides/allowing-multiple-booking.md`
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+
+### `content/guides/auto-cancel-unpaid-registrations.md`
+- WARN: description too long (188 chars, max 160)
 
 ### `content/guides/automatic-payment-reminders-detailed.md`
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
@@ -156,32 +159,32 @@
 
 ### `content/guides/documents.md`
 - WARN: title too short (9 chars, min 10): `Documents`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
-- WARN: alt text too generic: `Screenshot`
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 
 ### `content/guides/edit-payment-on-booking.md`
 - WARN: alt text too generic: `Screenshot`
@@ -275,6 +278,9 @@
 - WARN: alt text too generic: `Screenshot`
 - WARN: alt text too generic: `Screenshot`
 - WARN: alt text too generic: `Screenshot`
+
+### `content/guides/message-templates.md`
+- WARN: description too long (211 chars, max 160)
 
 ### `content/guides/multi-day-event-with-product-offer.md`
 - WARN: alt text too generic: `Screenshot`
@@ -434,6 +440,9 @@
 - WARN: description too long (168 chars, max 160)
 - WARN: alt text too generic: `Screenshot — todos` (screenshot replacement pending)
 - WARN: alt text too generic: `Screenshot — todos` (screenshot replacement pending)
+
+### `content/guides/trash-and-restore.md`
+- WARN: description too long (196 chars, max 160)
 
 ### `content/guides/two-instructors-per-class.md`
 - WARN: description missing from frontmatter (auto-extracted: `Do you have 2 instructors in one class, or a main instructor and his assistant?…`)
@@ -704,7 +713,7 @@
 - WARN: title too short (9 chars, min 10): `Retention`
 
 ### `content/setup/szamlazz-invoices.md`
-- WARN: alt text too generic: `VAT sync`
+- WARN: alt text too generic: `VAT sync` (screenshot replacement pending)
 
 ### `content/setup/trial-sessions.md`
 - WARN: alt text too generic: `Screenshot`
@@ -755,6 +764,9 @@
 
 ### `content/troubleshooting/emails-in-primary-inbox.md`
 - WARN: alt text too generic: `Screenshot`
+
+### `content/troubleshooting/payment-not-received.md`
+- WARN: description too long (166 chars, max 160)
 
 ---
 

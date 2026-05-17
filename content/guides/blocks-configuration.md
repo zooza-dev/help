@@ -19,6 +19,32 @@ last_converted: 2026-02-13
 
 This guide covers the configuration, capacity behavior, and known interactions of blocks in Zooza. For step-by-step instructions on creating blocks and setting up pricing, see the [Blocks creation guide](blocks-creation.md). For quick answers, see the [Blocks FAQ](../faq/blocks-faq.md).
 
+## Blocks hierarchy — programme, class, and block
+
+Understanding where blocks live in the Zooza structure prevents the most common configuration confusion:
+
+```
+Programme (kurz)
+  └── Class (skupina / group)
+        └── Block (blok)
+```
+
+**Key rules:**
+
+- Blocks are configured at the **Class level**, not at the Programme level.
+- **Each class has its own independent set of blocks and pricing.** Changing a block on one class does not affect other classes in the same programme.
+- There is no "programme-wide block" that automatically applies to all classes under it.
+
+**Why prices differ between classes in the same programme:**
+
+If two classes belong to the same programme but show different block prices, it is because each class has its own block pricing configured independently. To make them match, you must update each class separately — there is no bulk "propagate to all classes" action.
+
+**Why a change on one class did not appear on another:**
+
+This is expected behaviour. Blocks do not inherit from a parent programme and do not cascade to sibling classes. If you need the same block structure on multiple classes, set it up on each class individually.
+
+---
+
 ## What are blocks
 
 Blocks let you divide the sessions within a class into smaller logical units. Instead of treating all sessions in a class as a single enrolment period, you split them into named segments that clients can enrol for individually or as a whole.

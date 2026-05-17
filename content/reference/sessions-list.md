@@ -6,12 +6,13 @@ type: "reference"
 product_area: "Classes"
 sub_area: ""
 audience: ["admin", "staff"]
-tags: ["reference", "ui-reference"]
+tags: ["reference", "ui-reference", "sessions", "export", "rescheduled", "substituted"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
-needs_screenshot_replacement: false
-last_converted: "2026-02-12"
+needs_screenshot_replacement: true
+last_converted: "2026-05-13"
+related_articles: ["calendar", "class-detail", "reports-dashboard"]
 ---
 
 # Sessions List
@@ -42,8 +43,21 @@ The Sessions screen shows all individual sessions across all programmes and clas
 | **Session over capacity** | Sessions where the number of enrolled clients exceeds the class capacity. Use this to find and resolve over-capacity situations. |
 | **Session under capacity** | Sessions with available slots — useful for spotting classes with low fill rate. |
 | **Custom make-up session** | Sessions created as a custom make-up (requested by a client, approved by instructor). |
+| **Rescheduled** | Sessions that were moved to a different date or time. |
+| **Substituted** | Sessions where the originally assigned instructor was replaced by a substitute. |
+| **Cancelled** | Sessions that were cancelled. |
 
 > **Tip:** Use **Session over capacity** to quickly identify sessions where attendance exceeds the maximum. This can happen when a client books a make-up slot in a class that is full, and then a regular client subsequently re-registers — the regular client has priority but the make-up booking remains, temporarily creating over-capacity. Review the session detail to decide whether to remove the make-up or increase the class limit.
+
+## Export to Excel
+
+> **Permission required:** Owner role
+
+Download the currently filtered session list as an XLSX spreadsheet. Use this for offline attendance checks, instructor payout calculations, billing reconciliation, or venue usage reporting.
+
+The export mirrors exactly what the filter shows — one row per session, with programme name, class name, date/time, instructor, location, and attendance counts. Apply your filters first, then click **Export**.
+
+> **Note:** The export is capped at 5 000 rows. If your filter returns more, narrow the date range or add other filters before exporting.
 
 Results can be sorted by **Upcoming sessions** (default) or other criteria.
 

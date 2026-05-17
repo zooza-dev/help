@@ -283,9 +283,50 @@ The import detail shows:
 | `Basic fields` | First name, last name, email, telephone number. |
 | `Extra fields` | Date of birth, child's full name, address. |
 
+## How to find a client — search tips
+
+### What the search field searches
+
+The **Client** search field in the filter bar searches by **name only** (first name and/or surname). It does not search by email or phone number directly.
+
+To find a client by email or phone:
+- Type the email address into the **Client** search field — Zooza also matches against the email field in some cases.
+- If search returns nothing, scroll through the list or use the **Programme** filter to narrow down to a smaller group, then scan manually.
+- Alternatively, go to **Bookings** and use the search there — the Bookings search supports email lookup.
+
+### Searching by phone number
+
+The Clients list does not have a dedicated phone search filter. To find a client by phone number:
+
+1. Go to **Bookings**.
+2. Use the search field — Bookings search is broader and may match phone numbers.
+3. Or export the client list (**Export**) and use Excel/Google Sheets to search by phone in the downloaded file.
+
+### Why search returns no results
+
+| Symptom | Likely cause |
+|---|---|
+| Name search returns nothing | Check spelling — search is exact, not fuzzy. Try first name only or surname only. |
+| Client exists but is not visible | They may be **Inactive** — toggle the **Active/Inactive** filter to "All" to include inactive clients. |
+| Child is not found | Children are family members linked to a parent. Search for the parent's name or use the Bookings search with the child's name. |
+| Registration not found in Clients | Registrations live in **Bookings**, not in Clients. Search from **Bookings** instead. |
+
+### Searching for a registration (booking)
+
+Registrations are not in the Clients list — they are in **Bookings**. To find a specific registration:
+
+1. Go to **Bookings**.
+2. Use the search field (supports name and email).
+3. Use filters: **Programme**, **Class**, **Status**, **Billing period**.
+
+If you are looking for a cancelled or deleted registration, see [Recover deleted registrations](trash-and-restore.md).
+
+---
+
 ## Related
 
 - [Active and inactive clients](../guides/active-inactive-clients.md) — what active/inactive status means and how it affects your service package.
 - [Data Correction Guide](../guides/data-correction-change-client.md) — step-by-step guide to correcting client data.
 - [Client Import Guide](../guides/client-import.md) — how to import clients from a CSV file.
+- [Recover deleted registrations](trash-and-restore.md) — restore items from Trash.
 - [Common Booking Scenarios](../faq/common-booking-scenarios.md) — FAQ for booking-related tasks.

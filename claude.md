@@ -24,6 +24,32 @@ When the user asks for **"API spec"**, **"App spec"**, or **"Widget spec"**, loo
 
 Do not search for these paths — they are fixed. Use them directly.
 
+## Before writing any new KB article — mandatory pre-write check
+
+Before creating a new article or adding content, always do this in order:
+
+1. **Search for candidate existing articles:**
+   ```bash
+   grep -rl "<keyword>" content/
+   find content/ -name "*.md" | xargs grep -l "<keyword>"
+   ```
+2. **Read every candidate article fully** — not just the title or first lines. Grep misses context; only reading tells you what is actually covered and what the scope is.
+3. **Decide:** new standalone article, new section in an existing article, or no change needed.
+   - New standalone article: only when the content is genuinely independent and too long to be a section.
+   - New section: default choice when the topic belongs to an existing article's scope.
+   - No change: when the content already exists.
+4. **Never create an article without having read at least the 2–3 most relevant existing articles in full.**
+
+**Why:** multiple instances of creating duplicate content because grep returned no exact match but the topic was already covered with different wording in an existing article.
+
+## Required frontmatter field — related_articles
+
+Every new or updated article must include `related_articles` in frontmatter:
+```yaml
+related_articles: ["slug1", "slug2"]
+```
+List slugs of articles that share the same feature area. When updating an article, read each slug in `related_articles` and check if those articles also need updating. This prevents FAQ/guide drift.
+
 ## Non-negotiables
 1. **Source of truth is `content/`** (English-only).
 2. **Do not edit files under `legacy/`** except generating `manifest.json` and `content-map.yml`.

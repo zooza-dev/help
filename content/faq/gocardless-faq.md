@@ -6,12 +6,13 @@ type: "faq"
 product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
-tags: ["gocardless"]
+tags: ["gocardless", "direct-debit", "mandate", "offline-charge", "payment-matching"]
 status: "published"
+related_articles: ["gocardless-direct-debit-mandates", "offline-charge-manual-push", "email-payment-notifications"]
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-05-13"
 ---
 
 # GoCardless Integration FAQ
@@ -87,13 +88,9 @@ When using email notifications, your bank sends payment emails to the Zooza-gene
 
 ## Which banks have known issues with GoCardless?
 
-<!-- REVIEW: SLSP issue was reported in late 2025; confirm whether it has been fully resolved before removing this note. -->
+No banks have known ongoing issues with GoCardless at this time.
 
-**Slovenska sporitelna (SLSP)** experienced a prolonged outage in late 2025 where the bank stopped sending transaction data to GoCardless entirely. All GoCardless requests to SLSP returned server errors. This was a bank-side issue, not a Zooza configuration problem. The issue was eventually resolved, but SLSP users are recommended to consider switching to email-notification pairing for more reliable operation.
-
-If you use SLSP and experience pairing issues, try the email-notification method as described in the next question.
-
-Other banks generally work well with GoCardless. If you notice payments are not arriving in Zooza, first check your GoCardless connection status in your internet banking before contacting support.
+If you notice payments are not arriving in Zooza, first check your GoCardless connection status in your internet banking before contacting support.
 
 ## How do I set up email-notification payment matching?
 
@@ -137,3 +134,52 @@ If none of the above applies, contact Zooza support with the specific transactio
 GoCardless typically syncs transactions **once per day**. This means there can be a delay of up to 24 hours between when a payment arrives in your bank account and when it appears in Zooza.
 
 If you need faster matching, consider switching to **email-notification pairing**, which processes payments in near real-time as soon as your bank sends the notification email.
+
+## A client has an active mandate but GoCardless has not collected a payment from their account. What should I check?
+
+GoCardless can be used in two distinct ways in Zooza — make sure you are troubleshooting the right one:
+
+- **Bank reading (inbound matching):** GoCardless reads your business bank account and forwards incoming transfers to Zooza. This is for matching bank transfers that clients send manually.
+- **Direct Debit collection:** Zooza sends a collection request to GoCardless, which then pulls the payment directly from the client's bank account. This requires an active mandate on the client's booking AND a payment plan with offline charging enabled.
+
+If the client has an active mandate but no collection has happened, check:
+
+1. **Is offline charging enabled on the payment plan?**
+   Open the booking → **Payments** → **Payment plan**. The plan must have offline charging (GoCardless Direct Debit) selected. If it shows a different payment method or offline charging is off, collections will never trigger automatically.
+
+2. **Is the payment in "Processed" status?**
+   Collections only run on payments that have moved to **Processed** status. If the payment is still **Scheduled**, it has not yet been processed — check whether the scheduled date has passed.
+
+3. **Was the processed payment queued for collection?**
+   A payment can reach "Processed" status without being sent to the GoCardless collection queue (for example, if offline charging was temporarily disabled at the time of processing). Open the payment detail (click **More** next to the payment) and look for a **"Push to offline charge queue"** button. If present, click it to enqueue the collection manually.
+
+4. **Is the mandate still valid?**
+   On the booking's payment tile, check the **SEPA Direct Debit** section. If it shows **Active: No** or the mandate ID is missing, the client's authorization has lapsed or been cancelled. Ask the client to re-authorize via their Client Profile.
+
+For step 3 in detail, see [Manually push a scheduled payment to offline charge](../troubleshooting/offline-charge-manual-push.md).
+
+## Why does payment matching redirect me to a registration instead of an order?
+
+When you click to match a transaction, Zooza resolves the variable symbol and navigates to the matching record. If the variable symbol belongs to an **Order** (product purchase) but the system takes you to a **Registration**, it means the same variable symbol exists on both records — which can happen when an order was created from a registration.
+
+To match a payment to an order specifically:
+
+1. Go to **Orders** (not Bookings) and find the order using the client's name or the variable symbol.
+2. Open the order detail.
+3. In the **Payments** tile, click **Match payment** and select the transaction from the list.
+
+Matching from the Orders section ensures the payment is applied to the order balance, not the registration balance.
+
+> If you match a payment via the registration and the order balance remains unpaid, the client will still receive payment reminders for the order. Always match at the correct record level.
+
+## A transaction does not appear in the matching list. What should I do?
+
+If a bank transaction arrived in your account but is not showing in the Zooza matching list, work through these checks:
+
+1. **GoCardless sync delay.** GoCardless syncs once per day. If the payment arrived recently, wait up to 24 hours and check again.
+2. **Already matched.** The transaction may have been automatically matched to another booking. Search for the variable symbol in **Bookings** to confirm.
+3. **No matching debt.** Zooza only shows transactions that have a corresponding open debt. If the client paid before a scheduled payment was generated, the transaction will stay unmatched until the debt exists.
+4. **Connection expired.** If your GoCardless connection lapsed, transactions from that period may be missing. After renewing the connection, use **CSV import** to back-fill the missing transactions.
+5. **Wrong bank account.** The transaction may have arrived in a different bank account than the one connected to your Zooza billing profile. Check the IBAN in **Settings → Billing profiles**.
+
+If none of the above explains it, contact Zooza support with the transaction date, amount, and variable symbol.

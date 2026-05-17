@@ -4,8 +4,8 @@
 
 ## Summary
 
-- **Total docs checked:** 214
-- **Total issues found:** 58
+- **Total docs checked:** 232
+- **Total issues found:** 60
 - **Overall status:** FAIL
 
 ## 1. Required Frontmatter
@@ -32,7 +32,10 @@ All docs have exactly one H1.
 
 ## 5. Broken Internal Links
 
-No broken internal links found.
+**2 broken internal link(s) found:**
+
+- `content/guides/trials-daily-business.md` — link to `trials-setup.md`
+- `content/troubleshooting/offline-charge-manual-push.md` — link to `../setup/gocardless-direct-debit-mandates.md`
 
 ## 6. Missing Referenced Assets
 

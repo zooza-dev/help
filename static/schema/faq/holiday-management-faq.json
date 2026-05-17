@@ -102,6 +102,14 @@
     },
     {
       "@type": "Question",
+      "name": "A client is going on holiday — how do I manage their enrolment while they are away?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no automatic pause or freeze feature. Depending on what you and the client agreed, you have these options:\n\nOption A: Cancel the specific sessions for that client (make-up credits)\n\n1. Open the client's booking and go to the Attendance tab.\n2. For each session they will miss, set the attendance state to Cancelled (not \"Did not attend\").\n3. If your programme has make-up sessions enabled, each cancelled session generates a make-up credit. The client can use these credits to attend a session in a different week.\n\nThis is the most common approach for programmes that run continuous classes (subscriptions or term bookings). The client keeps their enrolment and billing is unaffected.\n\nOnly the \"Cancelled\" state generates a make-up credit. \"Did not attend\" does not. See Make-up sessions FAQ for details.\n\nOption B: Apply a manual discount or credit to the booking\n\nIf your programme does not use make-ups and the client is paying for weeks they will miss, you can apply a manual credit or payment correction directly on the booking.\n\nFor how to adjust a payment, see Edit payment on booking and Payment correction vs refund.\n\nOption C: Cancel and re-register after the break\n\nFor longer absences, it may be simpler to:\n1. Cancel (not delete) the booking before the break.\n2. Re-register the client after the holiday.\n\nThis fully removes them from the class during the break and releases their capacity spot. Billing stops. Any existing payment plan ends and will need to be recreated on re-registration."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Sessions disappeared from my programme. What happened?",
       "acceptedAnswer": {
         "@type": "Answer",

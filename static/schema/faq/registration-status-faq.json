@@ -1,0 +1,56 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Registration statuses — what each one means",
+  "url": "https://help.zooza.online/bookings/registration-status-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does \"Pending\" mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pending means the registration has been submitted but is waiting for something before it becomes fully active. Common triggers:\n\n- The client started the booking form but has not yet paid the required deposit or first instalment.\n- The programme requires admin approval before confirming the booking.\n- An import created the registration without a completed payment flow.\n\nWhat to do with Pending registrations:\n\n- If the client has paid: check whether the payment was matched to the correct booking. An unmatched payment may leave the registration stuck in Pending.\n- If the client has not paid: the registration will either resolve itself when payment arrives, or it will be automatically deleted after the grace period (if auto-delete is enabled in your programme settings).\n- If you want to confirm it manually: open the booking → Change status → Enrolled.\n\n---"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does \"Awaiting payment\" mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Awaiting payment means the registration is active and the client is attending, but one or more scheduled payments are overdue.\n\nThis status does not automatically cancel the booking. Whether the booking gets cancelled for non-payment depends on your programme's payment reminder and auto-delete settings.\n\nIf the status did not change after the client paid:\n\n1. Check if the payment was matched — go to the booking → Payments and confirm the payment shows as received.\n2. If GoCardless or email-notification matching is used, there may be a sync delay of up to 24 hours.\n3. If the payment is not matched, match it manually from the Payments screen.\n\n---"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is a registration still \"Awaiting payment\" after GoCardless collected it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GoCardless Direct Debit and GoCardless bank reading (inbound matching) are two separate systems:\n\n- Direct Debit: Zooza pulls money from the client's account automatically. This requires an active mandate AND offline charging enabled on the payment plan.\n- Bank reading (inbound): GoCardless reads your business bank account and forwards incoming transfers. This syncs once per day.\n\nIf the payment was collected via Direct Debit but the status has not updated, the collection may still be processing (typically 2–3 business days for SEPA Direct Debit to settle). If it has been longer than 5 days, check the payment in your GoCardless dashboard.\n\n---"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does \"Cancelled\" mean — and is it the same as deleted?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Cancelled and Deleted are different:\n\nA cancelled registration still exists in the system and can be reactivated. A deleted registration is in the Trash and needs to be restored from there.\n\nSee Recover deleted registrations, classes, and sessions for the full restore workflow.\n\n---"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A registration disappeared — where is it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If a registration is no longer visible in the Bookings list, check in this order:\n\n1. Status filter — change the filter to All statuses. It may be there as Cancelled, Pending, or Lost.\n2. Trash — go to Settings → Tools → Trash. It may have been deleted and is recoverable within 30 days.\n3. Different class — the client may have been transferred. Search by client name across all classes.\n4. Auto-deleted — if the programme has auto-delete for non-paying registrations enabled and the grace period passed, the registration may have been automatically removed. Check the Trash first.\n\n---"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I change a registration status manually?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Open the booking detail and click Change status. Available transitions depend on the current status:\n\n- Enrolled → Cancelled\n- Pending → Enrolled (to confirm manually)\n- Trial started → Trial won / Trial lost / Trial attended\n- Cancelled → Enrolled (to reactivate)\n\nNot all status changes are available in all directions. If you cannot find the transition you need, use Transfer (to move to a different class) or contact Zooza support.\n\n---"
+      }
+    }
+  ]
+}

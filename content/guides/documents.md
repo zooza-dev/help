@@ -10,8 +10,9 @@ tags: ["booking", "client", "communication", "import", "location", "payment", "p
 status: "published"
 source_legacy_path: "legacy/0114_Welcome to Zooza.html"
 source_language: "en"
-needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+needs_screenshot_replacement: true
+last_converted: "2026-05-13"
+related_articles: ["class-detail", "client-profile-101"]
 ---
 
 # Documents
@@ -19,11 +20,12 @@ last_converted: "2026-02-11"
 Zooza offers the ability to insert and manage different types of documents. This functionality allows users to upload documents in formats such as PDF and Word, insert URLs for online meetings (e.g. Google meetings) or insert videos. The goal of this feature is to make it easier to organize and share important files and information directly through the app, making communication and collaboration more efficient. All documents shared in this way can be found in the client's profile, where they are always available.
 
 
-Documents are set up on these in the Documents section and can be used at the following levels:
+Documents are set up in the Documents section and can be used at the following levels:
 
-1. Class level
-2. Session level
-3. Booking level
+1. Programme level
+2. Class level
+3. Session level
+4. Booking level
 
 ## 1. Document management
 
@@ -114,7 +116,20 @@ Note: The company logo and name is automatically generated in the header without
 
 ![Screenshot](../../assets/images/documents-16.png)
 
-## 2. Adding documents at class level
+## 2. Adding documents at programme level
+
+You can assign documents at the programme level. Programme-level documents are available across all classes within that programme — useful for content that applies to every class, such as course materials or a general welcome video.
+
+1. Open the programme and go to **Settings**.
+2. Find the **Documents** tile and click **Edit**.
+3. Select what you need to assign — **Documents**, **Videos**, or **URLs**.
+4. For videos, you can upload new content directly here or assign from the library. For documents and URLs, assign from the library only.
+5. For each item, set when it is shown to clients (all enrolled, paid only, etc.).
+6. Click **Save**.
+
+> **Note:** Dynamic documents cannot be assigned at the programme level — only at the booking level.
+
+## 3. Adding documents at class level
 
 You can assign documents that you have already created at the class level. You can do this in the details of the selected class in the *Documents *tile.
 
@@ -130,7 +145,7 @@ Warning! You cannot assign dynamic documents at the class level. This feature is
 2. For selected documents, you can set when they are shown to bookings.
  ![Screenshot](../../assets/images/documents-20.png)
 
-## 3. Adding documents at session level
+## 4. Adding documents at session level
 
 The last option where you can assign digital content is at the session level. This works in the same way as assigning to a class or booking. In the *Documents *tile, add the ones you want to offer to clients directly on the term.
 
@@ -142,7 +157,7 @@ Warning. Clients only see these documents in their profile after the session has
 
 ![Screenshot](../../assets/images/documents-23.png)
 
-## 4. Adding documents at booking level
+## 5. Adding documents at booking level
 
 If you only want to provide digital content to a single booking, you can achieve this in the booking details in the Documents tile. You can also assign dynamic documents at the booking level.
 

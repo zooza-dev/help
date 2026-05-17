@@ -7,7 +7,8 @@ product_area: Payments
 sub_area: ""
 audience:
   - admin
-tags: ["billing", "booking", "cancellation", "client", "communication", "location", "onboarding", "payment", "programme", "session", "awaiting-payment"]
+tags: ["billing", "booking", "cancellation", "client", "communication", "location", "onboarding", "payment", "programme", "session", "awaiting-payment", "grace-period", "manual-override"]
+related_articles: ["automatic-payment-reminders", "ad-hoc-scheduled-payment", "payment-tile-on-booking", "auto-cancel-unpaid-registrations"]
 status: published
 source_legacy_path: legacy/0093_Welcome to Zooza.html
 source_language: en
@@ -143,6 +144,35 @@ This email is a system notification. It uses dynamic tags to pull in the correct
 ![Screenshot](../../assets/images/automatic-payment-reminders-detailed-06.png)
 
 <!-- REVIEW: need to add a section (faq) about the difference between change the status of scenarios and deleting the setting of payment reminders - because of how it looks at the activation date for reminders-->
+
+---
+
+## Manual grace period override per registration
+
+Alongside the company-wide payment due window, admins can set or extend a grace period on a **single registration** — useful when a client has called ahead or has a custom arrangement.
+
+> **Permission required:** `manage_attendance`
+
+The registration's **Payments** tab → **Payments Status** card shows:
+
+- **Deadline** — days remaining + absolute date ("3 days remaining · due 16 May 2026")
+- **Source** — `Default` (company setting), `Scheduled payment` (active payment plan), or `Manual` (admin override)
+- **Note** — free-text note visible only to admins (manual overrides only)
+
+### Set or extend a grace period
+
+1. Go to **Bookings** → open the registration → **Payments** tab.
+2. In the **Payments Status** card, click **Set / extend grace period**.
+3. Pick a future date and optionally add a note (e.g. "Customer called — will pay by Friday").
+4. Click **Save**.
+
+### Clear a manual override
+
+If the manual grace period is no longer needed, click **Clear manual override** in the same card and confirm. The registration reverts to its natural status — typically `Unpaid` if debt remains.
+
+> Clearing only works for **Manual** overrides. Default and scheduled-payment grace periods are managed via company settings or the payment plan.
+
+---
 
 ## Related
 

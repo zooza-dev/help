@@ -6,12 +6,13 @@ type: "guides"
 product_area: "Communication"
 sub_area: "Email"
 audience: ["admin"]
-tags: ["email"]
+tags: ["email", "merge vars", "template", "cancellation", "dynamic tags"]
 status: "published"
 source_legacy_path: "legacy/0005_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-02-13"
+last_converted: "2026-05-13"
+related_articles: ["message-templates", "edit-session-notification-template", "sending-email-sms"]
 ---
 
 # Dynamic tags
@@ -72,6 +73,8 @@ Each email sent for a specific booking allows you to dynamically fill in client 
 | <code>&#42;&#124;HAS_UNPAID_DOWNPAYMENT&#124;&#42;</code>           | Returns `1` if the downpayment has not yet been paid, `0` if it has been paid. Use with `*\|IF:HAS_UNPAID_DOWNPAYMENT\|*`. | 1                                                     |
 | <code>&#42;&#124;CANCELLATION_SCHEDULED&#124;&#42;</code>           | Returns `1` if a future cancellation is scheduled on this booking, `0` if not. Use with `*\|IF:CANCELLATION_SCHEDULED\|*` to show content only when a cancellation is pending. | 1                                                     |
 | <code>&#42;&#124;CANCELLATION_DATE&#124;&#42;</code>                | The date the booking is scheduled to cancel, in `YYYY-MM-DD` format. Empty string if no cancellation is scheduled. Use together with `CANCELLATION_SCHEDULED`. | 2026-06-30                                            |
+
+> **Scheduled cancellation and attendance:** When a future cancellation is set on a booking, Zooza automatically hides the client's attendance for sessions on or after the cancellation date. This keeps the trainer roster and the client's widget clean — only sessions up to the effective end date are shown. If the scheduled cancellation is later revoked, attendance is restored automatically.
 | <code>&#42;&#124;QR_CODE&#124;&#42;</code>                          | QR code for the full payment amount due on the booking. Requires: IBAN and SWIFT on programme/company. | Picture with QR code                                  |
 | <code>&#42;&#124;QR_CODE_DOWNPAYMENT&#124;&#42;</code>              | QR code for the downpayment amount. Same conditions as QR Code, but generates a code for the downpayment sum instead of the full balance. | Picture with QR code                                  |
 | <code>&#42;&#124;IBAN&#124;&#42;</code>                             | Bank account for payment. If specified at the programme level, that value is used.         | GB54BARC20039545449825                                |

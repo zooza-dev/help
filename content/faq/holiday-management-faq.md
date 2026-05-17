@@ -6,12 +6,13 @@ type: "faq"
 product_area: "Programmes"
 sub_area: ""
 audience: ["admin"]
-tags: ["holidays", "terms"]
+tags: ["holidays", "terms", "make-up", "pause", "attendance"]
 status: "published"
+related_articles: ["make-up-sessions-faq", "edit-payment-on-booking", "payment-correction-vs-refund"]
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-15"
+last_converted: "2026-05-13"
 ---
 
 # Holiday and Term Management FAQ
@@ -128,6 +129,34 @@ For incorrect national holiday data, contact Zooza support at [support@zooza.onl
 Clients who are on the waiting list or registered in other sessions of the same class are not notified.
 
 <!-- REVIEW: Confirm the exact UI flow for cancelling a single session and the notification prompt options. The steps above are based on standard session management patterns described in support conversations. -->
+
+## A client is going on holiday — how do I manage their enrolment while they are away?
+
+There is no automatic pause or freeze feature. Depending on what you and the client agreed, you have these options:
+
+**Option A: Cancel the specific sessions for that client (make-up credits)**
+
+1. Open the client's booking and go to the **Attendance** tab.
+2. For each session they will miss, set the attendance state to **Cancelled** (not "Did not attend").
+3. If your programme has make-up sessions enabled, each cancelled session generates a make-up credit. The client can use these credits to attend a session in a different week.
+
+This is the most common approach for programmes that run continuous classes (subscriptions or term bookings). The client keeps their enrolment and billing is unaffected.
+
+> Only the **"Cancelled"** state generates a make-up credit. "Did not attend" does not. See [Make-up sessions FAQ](make-up-sessions-faq.md) for details.
+
+**Option B: Apply a manual discount or credit to the booking**
+
+If your programme does not use make-ups and the client is paying for weeks they will miss, you can apply a manual credit or payment correction directly on the booking.
+
+For how to adjust a payment, see [Edit payment on booking](../guides/edit-payment-on-booking.md) and [Payment correction vs refund](../guides/payment-correction-vs-refund.md).
+
+**Option C: Cancel and re-register after the break**
+
+For longer absences, it may be simpler to:
+1. Cancel (not delete) the booking before the break.
+2. Re-register the client after the holiday.
+
+This fully removes them from the class during the break and releases their capacity spot. Billing stops. Any existing payment plan ends and will need to be recreated on re-registration.
 
 ## Sessions disappeared from my programme. What happened?
 
