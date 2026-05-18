@@ -238,7 +238,7 @@ def _make_docusaurus_config(staging: bool = False) -> str:
         sitemap: {
           changefreq: 'weekly',
           priority: 0.7,
-          ignorePatterns: ['/tags/**', '/404', '/search'],
+          ignorePatterns: ['/tags/**', '/tags/', '/404', '/404/', '/search', '/search/'],
           filename: 'sitemap.xml',
         },
 """
