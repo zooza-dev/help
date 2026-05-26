@@ -2,7 +2,7 @@
 handoff_id: zooza-mcp-to-help-20260526-001
 from: zooza-mcp
 to: help
-status: open
+status: resolved
 created: 2026-05-26
 updated: 2026-05-26
 related_specs: [ZMCP-20260526-008]
@@ -90,14 +90,52 @@ The URL derivation is the tricky part — you know best how the export pipeline 
 
 ## Discussion
 
-<!-- Replies go here -->
+### 2026-05-26 — help
+
+Implemented. Here's what was built and the design decisions:
+
+**Python, not Node.js.** The help build tooling is entirely Python (`build_docusaurus.py`, `build_web.py`, `seo_check.py`, etc). Adding a Node.js script would require a separate runtime in CI for a one-file generation task. I added `_write_llms_full_txt()` directly to `build_docusaurus.py` — same file that generates `llms.txt`. No new dependencies, same data already in memory.
+
+**URL derivation — no sitemap fetch needed.** The export pipeline already derives URLs from `product_area` and `slug` frontmatter fields. `area_slug = product_area.lower().replace(" ", "-")` maps cleanly (e.g. `Programmes` → `programmes`). Final URL: `https://help.zooza.online/{area_slug}/{slug}/` with trailing slash (matching `trailingSlash: true` in Docusaurus config). No sitemap round-trip.
+
+**Status filter — `published` only.** Current build skips `archived` but passes through `draft`. `llms-full.txt` applies a stricter `status == "published"` filter — 233 articles out of 236 total (2 archived, 1 draft excluded).
+
+**Output confirmed.** Sample:
+```
+## Payments
+
+### Add a payment
+Description: ...
+URL: https://help.zooza.online/payments/add-a-payment/
+Tags: payment, booking, invoice, billing
+```
+1196 lines, 11 product areas, 233 articles. Groups are alphabetically sorted; articles within each group alphabetically sorted by title.
+
+**Deploy lifecycle.** `llms-full.txt` is written in the same `_write_static_files` → `_write_llms_full_txt` call chain inside `build_docusaurus.py`. Production deploy runs `python scripts/export/build_docusaurus.py --clean` — `llms-full.txt` regenerates on every deploy, same as `llms.txt`.
 
 ---
 
 ## Decision Summary
-<!-- Filled when status → agreed -->
+
+**What will be built:** `static/llms-full.txt` — generated at deploy time, 233 published articles, grouped by product_area, with title/description/URL/tags per entry.
+
+**What will NOT be built:** Node.js script (not appropriate for this toolchain).
+
+**Constraints agreed:** Published only, no full content, grouped by product_area, regenerated on deploy, publicly accessible.
+
+**Each party's responsibilities:**
+
+| Project    | Responsibility                                          | Target     |
+|------------|---------------------------------------------------------|------------|
+| help       | Generate `llms-full.txt` in Docusaurus build pipeline   | 2026-05-26 |
+| zooza-mcp  | Fetch `https://help.zooza.online/llms-full.txt` in MCP  | After deploy |
 
 ---
 
 ## Resolution
-<!-- Filled when status → resolved -->
+
+**Resolved on:** 2026-05-26
+
+**Outcome:** `_write_llms_full_txt()` added to `scripts/export/build_docusaurus.py`. File will be served at `https://help.zooza.online/llms-full.txt` after next production deploy.
+
+**Related specs/PRs:** ZMCP-20260526-008

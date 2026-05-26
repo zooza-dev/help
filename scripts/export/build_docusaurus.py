@@ -976,6 +976,73 @@ def _write_readme(out: Path) -> None:
     (out / "README.md").write_text(_README, encoding="utf-8")
 
 
+def _write_llms_full_txt(
+    out: Path,
+    docs_by_area: dict[str, dict[str, list]],
+    base_url: str = "https://help.zooza.online",
+) -> int:
+    """Generate llms-full.txt — a structured article index for AI consumers.
+
+    One entry per published article with title, description, URL, and tags,
+    grouped by product_area. Designed for a single-fetch article discovery
+    pattern: fetch llms-full.txt → pick the relevant article URL → fetch it.
+
+    Returns the number of articles written.
+    """
+    static = out / "static"
+    static.mkdir(exist_ok=True)
+
+    lines: list[str] = [
+        "# Zooza Help Centre — Article Index",
+        "",
+        "> Full index of published help articles for Zooza studio management.",
+        "> Fetch an article URL below to read its complete content.",
+        "",
+        "---",
+        "",
+    ]
+
+    count = 0
+    for area in sorted(docs_by_area):
+        lines.append(f"## {area}")
+        lines.append("")
+
+        area_slug = area.lower().replace(" ", "-")
+
+        # Flatten all doc types within the area, sorted by title
+        area_docs: list[tuple] = []
+        for type_docs in docs_by_area[area].values():
+            for fm, _body, _src in type_docs:
+                if fm.get("status") != "published":
+                    continue
+                area_docs.append(fm)
+
+        area_docs.sort(key=lambda f: f.get("title", "").lower())
+
+        for fm in area_docs:
+            slug = fm.get("slug", "")
+            title = fm.get("title", slug)
+            description = fm.get("description", "")
+            tags: list = fm.get("tags") or []
+            url = f"{base_url}/{area_slug}/{slug}/"
+
+            lines.append(f"### {title}")
+            if description:
+                lines.append(f"Description: {description}")
+            lines.append(f"URL: {url}")
+            if tags:
+                lines.append(f"Tags: {', '.join(str(t) for t in tags)}")
+            lines.append("")
+            count += 1
+
+        lines.append("---")
+        lines.append("")
+
+    (static / "llms-full.txt").write_text("\n".join(lines), encoding="utf-8")
+    logger.info("llms-full.txt: %d published articles across %d areas", count, len(docs_by_area))
+    return count
+
+
 # ---------------------------------------------------------------------------
 # Main export
 # ---------------------------------------------------------------------------
@@ -1143,6 +1210,7 @@ def build_docusaurus(dry_run: bool = False, clean: bool = False, staging: bool =
     _write_sidebars(OUTPUT_DIR)
     _write_custom_css(OUTPUT_DIR)
     _write_static_files(OUTPUT_DIR, staging=staging)
+    _write_llms_full_txt(OUTPUT_DIR, docs_by_area)
     _write_gitignore(OUTPUT_DIR)
     _write_readme(OUTPUT_DIR)
 
