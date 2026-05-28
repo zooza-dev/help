@@ -4,8 +4,8 @@
 
 ## Summary
 
-- **Total docs checked:** 232
-- **Total issues found:** 60
+- **Total docs checked:** 236
+- **Total issues found:** 67
 - **Overall status:** FAIL
 
 ## 1. Required Frontmatter
@@ -32,9 +32,16 @@ All docs have exactly one H1.
 
 ## 5. Broken Internal Links
 
-**2 broken internal link(s) found:**
+**9 broken internal link(s) found:**
 
+- `content/faq/registration-status-faq.md` — link to `trash-and-restore.md`
+- `content/faq/registration-status-faq.md` — link to `trash-and-restore.md`
+- `content/faq/registration-status-faq.md` — link to `trials-daily-business.md`
+- `content/faq/registration-status-faq.md` — link to `awaiting-payment-grace-period.md`
+- `content/guides/auto-cancel-unpaid-registrations.md` — link to `registration-status-faq.md`
 - `content/guides/trials-daily-business.md` — link to `trials-setup.md`
+- `content/reference/clients-list.md` — link to `trash-and-restore.md`
+- `content/reference/clients-list.md` — link to `trash-and-restore.md`
 - `content/troubleshooting/offline-charge-manual-push.md` — link to `../setup/gocardless-direct-debit-mandates.md`
 
 ## 6. Missing Referenced Assets

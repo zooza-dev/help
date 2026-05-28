@@ -599,23 +599,23 @@ Organised by the client journey stage where each tool first becomes relevant.
 
 ## 7. The 15 Skills
 
-| # | Skill | Trigger | Tools chained | Time saved |
-|---|-------|---------|--------------|-----------|
-| SK01 | **first_sale_setup** | *"Help me set up my first programme and get it live"* | F01–F09 + T03 + T04 | 1–2 hours |
-| SK02 | **launch_ready** | *"Am I ready to go live? Check everything."* | T01 + T02 + T03 + T15 | 30–45 min |
-| SK03 | **daily_briefing** | *"What do I need to know today?"* | Calendar + T13 + T21 + T15 + T27 | 15 min/day |
-| SK04 | **cancel_day** | *"Cancel all sessions tomorrow, instructor is sick"* | T17 + T21 + COM | 15–30 min |
-| SK05 | **prepare_new_term** | *"Set up Summer 2026 from Winter 2025"* | copy_programme + T24 + bulk_settings | 2–4 hours |
-| SK06 | **run_term_rebooking** | *"Copy confirmed registrations to Summer 2026"* | T24 + T20 + COM | 1–2 hours |
-| SK07 | **end_of_term_cleanup** | *"Wrap up Winter 2025"* | T07 + archive + COM | 45–60 min |
-| SK08 | **chase_unpaid** | *"Send reminders to everyone who hasn't paid"* | REP-01 + T10 | 20–40 min |
-| SK09 | **convert_trial_to_enrolment** | *"Find unregistered trials and send them an offer"* | T06 + T04 + COM | 30 min |
-| SK10 | **run_win_back_campaign** | *"Find everyone from last term who hasn't come back"* | T07 + COM | 30–45 min |
-| SK11 | **run_churn_prevention** | *"Find clients at risk of leaving and reach out"* | T27 + COM | 20–30 min |
-| SK12 | **late_joiner_registration** | *"Register Jana mid-term with pro-rata price"* | T23 + create_booking + T11 + COM | 10–15 min |
-| SK13 | **monthly_financial_close** | *"Generate last month's invoices and reconcile"* | T13 + T16 + REP-11 | 30–45 min |
-| SK14 | **missing_revenue_sweep** | *"Where am I leaving money on the table?"* | T06 + T07 + T08 + T29 + T09 | — strategic |
-| SK15 | **gocardless_health_check** | *"Is my GoCardless working?"* | T15 + T13 + PAY-04 | — preventive |
+| #    | Skill                          | Trigger                                               | Tools chained                        | Time saved   |
+| ---- | ------------------------------ | ----------------------------------------------------- | ------------------------------------ | ------------ |
+| SK01 | **first_sale_setup**           | *"Help me set up my first programme and get it live"* | F01–F09 + T03 + T04                  | 1–2 hours    |
+| SK02 | **launch_ready**               | *"Am I ready to go live? Check everything."*          | T01 + T02 + T03 + T15                | 30–45 min    |
+| SK03 | **daily_briefing**             | *"What do I need to know today?"*                     | Calendar + T13 + T21 + T15 + T27     | 15 min/day   |
+| SK04 | **cancel_day**                 | *"Cancel all sessions tomorrow, instructor is sick"*  | T17 + T21 + COM                      | 15–30 min    |
+| SK05 | **prepare_new_term**           | *"Set up Summer 2026 from Winter 2025"*               | copy_programme + T24 + bulk_settings | 2–4 hours    |
+| SK06 | **run_term_rebooking**         | *"Copy confirmed registrations to Summer 2026"*       | T24 + T20 + COM                      | 1–2 hours    |
+| SK07 | **end_of_term_cleanup**        | *"Wrap up Winter 2025"*                               | T07 + archive + COM                  | 45–60 min    |
+| SK08 | **chase_unpaid**               | *"Send reminders to everyone who hasn't paid"*        | REP-01 + T10                         | 20–40 min    |
+| SK09 | **convert_trial_to_enrolment** | *"Find unregistered trials and send them an offer"*   | T06 + T04 + COM                      | 30 min       |
+| SK10 | **run_win_back_campaign**      | *"Find everyone from last term who hasn't come back"* | T07 + COM                            | 30–45 min    |
+| SK11 | **run_churn_prevention**       | *"Find clients at risk of leaving and reach out"*     | T27 + COM                            | 20–30 min    |
+| SK12 | **late_joiner_registration**   | *"Register Jana mid-term with pro-rata price"*        | T23 + create_booking + T11 + COM     | 10–15 min    |
+| SK13 | **monthly_financial_close**    | *"Generate last month's invoices and reconcile"*      | T13 + T16 + REP-11                   | 30–45 min    |
+| SK14 | **missing_revenue_sweep**      | *"Where am I leaving money on the table?"*            | T06 + T07 + T08 + T29 + T09          | — strategic  |
+| SK15 | **gocardless_health_check**    | *"Is my GoCardless working?"*                         | T15 + T13 + PAY-04                   | — preventive |
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Services"
+title: "Services and service items"
 description: "The Services screen manages service add-ons that can be attached to products or offered during booking."
 slug: "services-list"
 type: "reference"
@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-04-10"
+last_converted: "2026-05-28"
+related_articles: ["event-based-pricing", "selling-products-during-booking", "products-list"]
 ---
 
 # Services
@@ -82,7 +83,7 @@ New items (not yet saved) appear at the end of the list and cannot be reordered 
 | Field | Description |
 |---|---|
 | `Name` | Variant display name (e.g. "Variant A", "Variant B"). Required. |
-| `Unit price` | Pricing unit: **day** (per day), **person** (per person), or **total** (flat fee). |
+| `Unit price` | Pricing unit: **day** (per day), **person** (per person), **total** (flat fee), or **session** (per remaining session — see below). |
 | `Unit price` | Price amount. +/− controls. Required. |
 | `A minimum number of units for sale per single order` | Minimum quantity a client must order. +/− controls. |
 | `A maximum number of units for sale per single order` | Maximum quantity a client can order. +/− controls. |
@@ -108,6 +109,12 @@ Below each variant, stock status is displayed:
 | **Delete** | Remove this item. |
 
 The **Add** button at the bottom creates a new service item variant.
+
+#### Session pricing
+
+When **session** is selected as the pricing unit, the price is calculated as `unit price × number of remaining future sessions` in the class at the time of booking. This means clients who join late in a term automatically pay a proportionally lower amount.
+
+See [Charge per remaining session with per-session pricing](../guides/event-based-pricing.md) for setup instructions and examples.
 
 ## Related
 

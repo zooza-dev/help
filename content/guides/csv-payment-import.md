@@ -56,7 +56,7 @@ Click **Upload** and select your CSV file. Zooza reads the file and displays a l
 
 ## Step 4 — Review matched and unmatched transactions
 
-Zooza automatically matches each transaction to a booking using the **payment reference number** (variable symbol).
+Zooza automatically matches each transaction to a booking using the **payment reference number** (variable symbol). When a matching reference is found and the booking is in a valid status for payment, the transaction is paired automatically — no manual action needed for those rows.
 
 - **Matched** — a booking was found with a matching payment reference. These are ready to import.
 - **Unmatched** — no booking was found. This typically happens when the client sent the wrong or missing reference.
@@ -68,6 +68,8 @@ For unmatched transactions you have two options:
 - **Ignore** — skip the transaction. It will not be imported. You can import it later if needed.
 
 ![Screenshot — csv payment import](../../assets/images/csv-payment-import-04.png)
+
+> **Note:** If you manually assign a transaction to a booking in an unusual status (already fully paid, cancelled, or otherwise ineligible), the system flags it for manual review rather than applying the payment silently.
 
 ## Step 5 — Confirm the import
 

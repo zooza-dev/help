@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: "legacy/html/labels-and-extra-fields.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-24"
+last_converted: "2026-05-28"
+related_articles: ["business-booking", "booking-form-settings", "booking-widget-faq"]
 ---
 
 <!-- Synonyms: extra fields, custom fields, booking form fields, date of birth, age restriction, child's name, address field, business fields, remove field from registration, hide field booking form, edit registration field, what are additional fields, kolonka registrace, upravit kolonku, zrušit pole registrace, skrýt pole, přidat pole registrace, co jsou additional fields, ďalšie polia, extra polia, dátum narodenia, vekové obmedzenie, skryť pole registrácia, upraviť pole, odstrániť pole z registrácie, čo sú additional fields, egyéni mezők, regisztrációs mezők, mező eltávolítása, mező elrejtése regisztrációból -->
@@ -58,6 +59,10 @@ These fields are used for business invoicing. When one or more business fields a
 | **Business ID** | Company registration number. |
 | **Tax ID** | Tax identification number. |
 | **VAT** | VAT identification number. |
+
+![Business fields section in Additional fields settings](../../assets/images/additional-fields-business-settings-01.png)
+
+**Validation for group bookings:** When multiple attendees are registered in one booking, business fields (Business name, Business address, Business ID, Tax ID, VAT) are validated once per booking — not once per person. If the buyer fills in the business fields, the requirement is satisfied for all attendees in the same registration.
 
 ## Custom fields (Additional field 1–15)
 
@@ -148,6 +153,18 @@ Additional field values can be used in email templates via dynamic tags. This le
 | <code>&#42;&#124;EF_EXTRA_FIELD_1&#124;&#42;</code> – <code>&#42;&#124;EF_EXTRA_FIELD_15&#124;&#42;</code> | Custom fields 1–15 |
 
 For the full list of dynamic tags, see [Dynamic tags](dynamic-tags.md).
+
+## Server-side validation of mandatory fields
+
+Mandatory additional fields are enforced on the server when a client submits a booking through the widget. If a required field is missing, the registration is rejected with an error and no booking is created.
+
+![Booking widget form showing mandatory additional fields highlighted in yellow](../../assets/images/additional-fields-mandatory-widget-01.png)
+
+This means that even if a widget integration is outdated or a custom-embedded form does not visually enforce the fields, the server will still reject incomplete submissions. Clients see an error and are prompted to fill in the missing information.
+
+> **This affects operators with custom or embedded booking forms.** If you have built a custom integration using the Zooza booking widget, make sure your form collects all fields that are configured as mandatory in the programme settings. Submissions without those fields will be rejected.
+
+**Admin bookings are exempt.** When an admin creates a registration directly in the Zooza app (not through the widget), mandatory field validation is not enforced — the admin can save a booking even if some additional fields are missing. This allows back-office data entry without friction.
 
 ## What additional fields look like on the form
 

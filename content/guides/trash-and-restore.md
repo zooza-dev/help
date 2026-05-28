@@ -1,21 +1,21 @@
 ---
-title: "Recover deleted registrations, classes, and sessions"
-description: "Lost a registration or class? Zooza keeps deleted items in Trash for 30 days. Learn the difference between cancelled, deleted, and permanently removed — and how to restore anything with one click."
+title: "Recover deleted items: registrations, classes, sessions, and payments"
+description: "Zooza keeps deleted items in Trash for 30 days. Recover registrations, classes, sessions, and cancelled scheduled payments — or bulk-cancel payments safely."
 slug: "trash-and-restore"
 type: "guides"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: ["trash", "restore", "deleted", "recovery", "settings", "cancelled", "registration"]
+tags: ["trash", "restore", "deleted", "recovery", "settings", "cancelled", "registration", "scheduled-payments", "bulk"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-14"
-related_articles: ["archive-or-delete-programme", "registration-status-overview"]
+last_converted: "2026-05-28"
+related_articles: ["archive-or-delete-programme", "registration-status-overview", "ad-hoc-scheduled-payment"]
 ---
 
-# Recover deleted registrations, classes, and sessions
+# Recover deleted items: registrations, classes, sessions, and payments
 
 Deleted items are not immediately gone. Zooza keeps them in **Trash** for 30 days, after which they are permanently removed and cannot be recovered. During those 30 days you can restore any item with a single click.
 
@@ -46,6 +46,7 @@ This is the most common source of confusion. A registration (or class) can be in
 | **Session** (event) | A single session within a class |
 | **Class** (schedule) | An entire class with all its sessions |
 | **Registration** | A client's booking on a class |
+| **Cancelled payment** | A scheduled payment that was cancelled via bulk cancel or the cancel action on a booking |
 
 Items deleted more than 30 days ago are permanently gone and cannot be recovered from here.
 
@@ -93,7 +94,7 @@ The bulk restore is capped at 100 items per action.
 
 | Filter | Options |
 |---|---|
-| **Type** | All, Session, Class, Registration |
+| **Type** | All, Session, Class, Registration, Cancelled payments |
 | **Search** | Free text — searches by title |
 
 Pagination is standard. Changing pages clears any checkboxes you have selected.
@@ -105,6 +106,28 @@ Pagination is standard. Changing pages clears any checkboxes you have selected.
 If the list shows *"No items have been deleted in the last 30 days"*, there is nothing to recover. Items deleted before the 30-day window are gone permanently.
 
 ![Screenshot — trash and restore](../../assets/images/trash-and-restore-02.png)
+
+---
+
+## Bulk-cancelling scheduled payments
+
+You can cancel multiple upcoming scheduled payments at once from the **Scheduled payments overview** screen. Cancelled payments go to Trash — they are not deleted permanently and can be restored within 30 days.
+
+> **Navigation:** Go to **Payments** → **Scheduled payments overview**. Select the payments you want to cancel, then choose **Bulk Edit** → **Cancel payment** → **Continue**.
+
+![Bulk edit panel on Scheduled payments overview showing Cancel payment option](../../assets/images/bulk-cancel-scheduled-payments-01.png)
+
+After confirming, the selected payments disappear from the Scheduled payments overview. They are moved to Trash under the **Cancelled payments** type.
+
+![Trash filtered by Type: Cancelled payments showing restored scheduled payments](../../assets/images/bulk-cancel-scheduled-payments-trash-01.png)
+
+Each row in the Trash list shows:
+- **Title** — client name and class
+- **Status before** — the original status (always *Scheduled*)
+- **Deleted** — date and time of cancellation, and who performed the action
+- **Restore** button — active for 30 days from the cancellation date
+
+> **Restoring a cancelled payment** sets it back to *Scheduled*. The client's outstanding balance is updated immediately. No payment notification is sent on restore.
 
 ---
 
