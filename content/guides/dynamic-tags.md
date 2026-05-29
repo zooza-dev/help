@@ -176,6 +176,8 @@ For programmes using blocks (term segments), `*|COURSE_DATE_DAY|*` and `*|COURSE
 
 **Workaround:** Use `*|ORDER_SUMMARY|*` to display the correct block-specific information. A dedicated block-specific date tag is not yet available.
 
+**Alternative workaround for time slot:** Include the time slot in the block name itself (e.g. "Mondays 17:00" or "January — Mon 17:00"). `*|ORDER_SUMMARY|*` includes the block name, so clients see the time in their confirmation email even without a dedicated tag.
+
 <!-- REVIEW: Monitor for a dedicated block-specific dynamic tag — it has been requested by multiple customers. -->
 
 ### Tags in order confirmation emails
@@ -187,6 +189,26 @@ Only basic client tags (`*|FIRST_NAME|*`, `*|FULL_NAME|*`, etc.) work in order e
 ### Tags in subject lines
 
 Most dynamic tags work in email subject lines, but some may not populate in certain template types. Always test your email before sending to a large class.
+
+### COURSE_PLACE returns blank
+
+`*|COURSE_PLACE|*` requires **both a location and a room** to be set on the class. If the room field is empty, the tag returns blank even when a location is assigned.
+
+**Fix:** Open the class → **Place** tile (or **Settings → Place**) and assign a room. If you don't use named rooms, add a placeholder (e.g. "Main room"). Once a room is set, `*|COURSE_PLACE|*` will render as `Room name, Location name`.
+
+### COURSE_* tags in session reminder templates
+
+`COURSE_*` tags (e.g. `*|COURSE_DATE_DAY|*`, `*|COURSE_TIME|*`, `*|COURSE_PLACE|*`) pull from the **class at the time it was created** — specifically from the first session that existed when the class was set up. If the original schedule was later changed or sessions were deleted and recreated, `COURSE_*` tags may show outdated values.
+
+In **session reminder templates**, always use `EVENT_*` tags instead — they pull from the actual session being reminded about:
+
+| Instead of | Use |
+|---|---|
+| `*\|COURSE_DATE_DAY\|*` | `*\|EVENT_DATE_DAY\|*` |
+| `*\|COURSE_DATE\|*` | `*\|EVENT_DATE\|*` |
+| `*\|COURSE_TIME\|*` | `*\|EVENT_TIME\|*` |
+
+`EVENT_*` tags are only available in session reminder templates.
 
 ### QR_CODE tag returns blank or doesn't appear
 
