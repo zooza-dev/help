@@ -57,6 +57,9 @@ product_areas:
         label: WhatsApp
       - id: slack
         label: Slack
+  - id: mcp
+    label: MCP
+    description: Zooza Claude plugin and AI integrations.
 
 audiences:
   - id: admin

@@ -6,12 +6,13 @@ type: "setup"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: ["integrations", "stripe", "gocardless", "xero", "power-bi", "whatsapp", "invoicing", "accounting"]
+tags: ["integrations", "stripe", "gocardless", "xero", "power-bi", "whatsapp", "invoicing", "accounting", "claude", "mcp", "ai"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-22"
+last_converted: "2026-05-29"
+related_articles: ["claude-plugin", "slack-integration", "whatsapp-integration"]
 ---
 
 # Integrations
@@ -98,6 +99,14 @@ Go to **Settings → Integrations** to see all available integrations and their 
 |---|---|
 | **Zooza Sites** | Embed the Zooza booking widget on your own site. [Learn more →](../../widgets/zooza-sites) |
 | **WordPress** | WordPress plugin for embedding Zooza directly into WordPress sites. |
+
+---
+
+## AI
+
+| Integration | Description |
+|---|---|
+| **Claude** | Manage classes, attendance, and schedules through conversation with Claude AI. [Connect Claude →](../../mcp/claude-plugin) |
 
 ---
 

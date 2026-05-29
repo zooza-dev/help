@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Zooza Claude Plugin FAQ",
+  "url": "https://help.zooza.online/mcp/claude-plugin-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is the plugin free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The plugin is available at no extra cost for all active Zooza customers. You only need a Claude account — claude.ai has a free tier."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it secure? Where does my data go?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The plugin does not store your login credentials. Authentication happens via OAuth — the same system as signing in to zooza.app. Claude only sees data that Zooza provides through the plugin during your conversation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "We have a franchise with multiple locations. Does the plugin support that?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. If your account has access to multiple companies, Claude will list them and ask which one you want to work with. You can switch between companies within the same conversation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "The connection is not working. What should I do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1. Confirm that you have an active Zooza account with Admin access.\n2. Try signing out and back in via OAuth.\n3. If the problem persists, contact support@zooza.online."
+      }
+    }
+  ]
+}
