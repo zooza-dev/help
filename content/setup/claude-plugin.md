@@ -10,7 +10,7 @@ tags: ["claude", "mcp", "ai", "plugin", "integration", "automation"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
-needs_screenshot_replacement: true
+needs_screenshot_replacement: false
 last_converted: "2026-05-29"
 related_articles: ["claude-plugin-faq", "integrations-hub"]
 ---
@@ -50,15 +50,30 @@ The connector is active immediately.
 
 ## What you can do
 
-Ask Claude anything about your Zooza data, or use it to take action. Examples:
+Ask Claude anything about your Zooza data, or use it to take action.
 
 **View programmes and groups**
 > *"Show me all my active programmes and how many groups each has"*
 
-**Create a new class**
-> *"I want to create a new group — Mondays at 9am, yoga, Studio Bratislava"*
+![Claude listing 14 active courses with their class and registration counts](../../assets/images/mcp-programmes-list.jpg)
 
-Claude asks for any missing details (programme, instructor, location, number of sessions), shows a schedule preview, and waits for your confirmation before saving.
+**Check your account and capabilities**
+> *"Who am I in Zooza and what can you help me with?"*
+
+Claude shows your identity, which companies you have access to, and a summary of what it can and cannot do yet.
+
+![Claude showing user identity, connected companies, and a list of available capabilities](../../assets/images/mcp-whoami-capabilities.jpg)
+
+**Create a new class**
+> *"I want to create a new class in programme Little Helpers"*
+
+Claude asks for any missing details one at a time — days, time, number of sessions. Once you answer, it shows a full schedule preview and waits for your confirmation before saving anything.
+
+<video controls width="100%" style={{borderRadius: '8px', marginBottom: '1rem'}}>
+  <source src="/video/mcp-demo-create-class.webm" type="video/webm" />
+</video>
+
+![Claude asking for class schedule details: which days, what time, how many sessions](../../assets/images/mcp-create-class-interview.jpg)
 
 **Mark attendance**
 > *"Mark attendance for today's 10am dance class — Peter and Sofia were absent"*
@@ -67,12 +82,11 @@ Claude asks for any missing details (programme, instructor, location, number of 
 > *"Add a summary to today's session: focused on breathing, 8 students attended"*
 
 **Set your vocabulary**
-> *"Learn my terms — I say 'lessons' not 'sessions' and 'courses' not 'programmes'"*
+> *"Set up my vocabulary, I call 'courses' programmes. Ok?"*
 
-Claude remembers your preferred terms in future conversations.
+Claude confirms it has learned your terms and uses them from that point on.
 
-**Check your account**
-> *"Who am I in Zooza and which company am I working in?"*
+![Claude confirming it will use 'programmes' instead of 'courses' in all future responses](../../assets/images/mcp-vocabulary-setup.jpg)
 
 ---
 
@@ -91,6 +105,8 @@ Skills are structured guides for more complex operations. Claude asks questions 
 ## Preview before saving
 
 When creating a class, Claude always shows a table of planned sessions **before saving anything**. Check dates, times, and instructors — if anything looks wrong, say so and Claude will adjust.
+
+![Schedule preview showing 10 Monday sessions from June to August before the class is saved](../../assets/images/mcp-schedule-preview.jpg)
 
 Saving only happens after your explicit confirmation.
 
