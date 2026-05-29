@@ -64,7 +64,7 @@ The formula is straightforward:
 
 If the programme uses a payment template (e.g., 3 monthly instalments), the 180 EUR is split across the remaining instalments.
 
-> **Cancelled sessions still count.** If a session was cancelled after the class was created, it still counts in the **Total sessions** denominator. The system divides the full price by the original total and multiplies by the number of future (upcoming) sessions. Deleting and recreating a session does not change the total session count used for pro-rata calculation.
+> **One-off payment only — cancelled sessions still count.** For programmes using a one-off (lump-sum) payment, cancelled sessions still count in the **Total sessions** denominator. The system divides the full price by the original total and multiplies by the number of future (upcoming) sessions. This means removing and re-adding a session does not change the unit price used for the pro-rata calculation. This behaviour does not apply to scheduled payment templates.
 
 ### How the day-based calculation works
 
