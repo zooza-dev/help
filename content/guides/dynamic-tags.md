@@ -188,14 +188,6 @@ Only basic client tags (`*|FIRST_NAME|*`, `*|FULL_NAME|*`, etc.) work in order e
 
 Most dynamic tags work in email subject lines, but some may not populate in certain template types. Always test your email before sending to a large class.
 
-### COURSE_PLACE and EVENT_PLACE return blank
-
-`*|COURSE_PLACE|*` and `*|EVENT_PLACE|*` only produce output when a **room** is assigned to the class — not just a location. The tag combines room name, location name, and address into one string. If the class has a location but no room, the tag returns blank.
-
-**Fix:** Open the class settings, scroll to the **Location** tile, and assign a room. If you don't use rooms, create a placeholder room (e.g., `Main Hall`) under **Settings → Locations → Rooms** and assign it.
-
-> **Summer classes note:** Summer and camp programmes often use locations without a room setup. This is the most common reason `*|COURSE_PLACE|*` returns blank in booking confirmation emails for new programmes.
-
 ### QR_CODE tag returns blank or doesn't appear
 
 `*|QR_CODE|*` requires both **IBAN** and **SWIFT/BIC** to be set on the billing profile. Without these, the tag silently returns blank — the QR image is not rendered.
