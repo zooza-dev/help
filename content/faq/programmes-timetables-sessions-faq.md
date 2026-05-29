@@ -146,6 +146,18 @@ The change takes effect immediately. Existing bookings are not affected — bill
 
 Zooza uses browser caching to speed up page loading. When you create or edit something (like a location or class), the change may take a moment to appear. A quick browser refresh (Cmd+R on Mac, Ctrl+R on Windows) usually resolves this.
 
+## How do I archive all classes in a programme at once?
+
+Archiving a programme does **not** automatically archive its classes — the two are independent by design (classes may still be running when the programme is retired).
+
+To bulk-archive all classes in a programme:
+
+1. Go to **Activities → Classes**.
+2. Filter by the programme using the **Programme** filter.
+3. Set **Status** = **Active** to show only the non-archived classes.
+4. Check the header checkbox to select all visible classes.
+5. Use the bulk action **Archive** to archive them all at once.
+
 ## Where can I find an archived class (class)?
 
 Go to **Activities** → **Classes** and set the **Status** filter to **Archived**. This shows all classes that have been archived, across all programmes.
