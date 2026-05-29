@@ -116,12 +116,25 @@ This additional email receives session reminder notifications only. It does not 
 
 Zooza supports this through a combination of guest access and additional notification emails:
 
-1. **Guest access to the booking** -- In the booking detail settings, use **Guest access to the booking** to grant a second parent read access via their email address. This lets them view the booking without needing a separate account.
-2. **Additional email for reminders** -- Add the second parent's email in the **Additional email for reminders before sessions** field so they receive session notifications independently.
+1. **Guest access to the booking** — In the booking detail settings, use **Guest access to the booking** to grant a second parent read access via their email address. This lets them view the booking without needing a separate account.
+2. **Additional email for reminders** — Add the second parent's email in the **Additional email for reminders before sessions** field so they receive session notifications independently.
 
 Both parents do not need separate Zooza accounts. The primary client (the parent who created the booking) retains full control, while the second parent gets visibility through guest access and reminder emails.
 
 <!-- REVIEW: Confirm the exact scope of guest access -- does it include viewing attendance and payment status, or only session schedule? -->
+
+## Does "Guest access to booking" mean the guest receives all booking emails?
+
+No. **Guest access to booking** (shown as *Dodatočný prístup k registrácii* in Slovak) gives the guest **view-only access** to the booking detail — they can see the schedule and booking status, but they do not automatically receive emails.
+
+These are two separate settings with different purposes:
+
+| Setting | What it does |
+|---|---|
+| **Guest access to booking** | Lets a second person view the booking in their Zooza profile. No emails sent. |
+| **Additional email for reminders** | Sends session reminder notifications to a second email address. No profile access. |
+
+To give a second parent both access and notifications, you need to configure **both** settings separately on the booking detail page.
 
 ## Where can I see which fields are visible to instructors on the attendance screen?
 

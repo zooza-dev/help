@@ -189,6 +189,18 @@ To fix this:
 
 For full details on billing profiles, see [Billing and invoicing](../setup/billing-and-invoicing.md).
 
+## Why is there no QR code at all in my payment emails?
+
+If the QR code is completely absent from payment instruction emails (not just broken when scanned), the most likely cause is a missing IBAN or SWIFT/BIC in the billing profile.
+
+Check these in order:
+
+1. **Billing profile has no IBAN** — Go to **Settings → Billing Profiles**, open the active profile, and confirm that **IBAN** and **SWIFT/BIC** are filled in. Both are required for the QR code to generate.
+2. **Programme uses a different billing profile** — If the programme has its own billing profile assigned (in **Programme → Settings → Price and Payment → Invoicing**), check that profile's IBAN and SWIFT/BIC too.
+3. **Template does not include the QR code tag** — Open **Communication → Message Templates** → the relevant payment template. Confirm the template body contains the `*|QR_CODE|*` tag. If it was removed or never added, the QR will not appear.
+
+> QR payment codes are currently available for accounts based in SK, CZ, and other SEPA markets. If your account is in a different region, the `*|QR_CODE|*` tag may not generate an image regardless of the settings.
+
 ## How do I set up billing profiles and invoicing?
 
 Go to **Settings** → **Billing**. There you can enable automatic invoice generation, set up your default billing profile (company name, IBAN, address), and create additional profiles for multi-entity businesses. Each programme can be assigned a specific billing profile. For the full setup guide, see [Billing and invoicing](../setup/billing-and-invoicing.md).

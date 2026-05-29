@@ -114,3 +114,27 @@ Note: If the programme does not have auto-enrolment enabled, the application wil
 After invitations are sent, monitor who accepted, declined, or has not yet responded in the **Auto-enrolment responses** page or via the Bookings list filter.
 
 See: [Monitoring auto-enrolment responses](../guides/auto-enrolment-responses.md)
+
+## Troubleshooting — classes not appearing in the offer
+
+If clients see fewer classes than expected, or a newly created class is missing from the auto-enrolment offer, work through these checks in order:
+
+**1. Class-level checkbox not enabled**
+The most common cause. Each class must be individually opted in.
+Go to the class → **Settings** tile → enable **Include in auto-enrolment**. This must be done for every new class you add after the programme-level setting is saved.
+
+**2. Programme filter is set to "Selected programmes only"**
+If you chose *Selected programmes only* when configuring the offer, new programmes are not included automatically. Return to the programme's **Auto-enrollment** tile, edit the offer, and add the new programme to the selection list.
+
+**3. Age restriction filter is active**
+If you set an age restriction on the offer, only programmes that have an age range defined under **Extra Fields** will appear. Programmes without an age restriction are silently excluded. Either remove the age filter or add the age range to the programme's Extra Fields.
+
+**4. Distance filter is too narrow**
+If you set a distance limit, classes at venues beyond that radius won't appear. Increase the distance or remove the limit.
+
+**5. The offer is for a different billing period**
+If the offer is filtered to a specific billing period, only programmes in that period appear. A newly created programme in a different billing period won't show.
+
+### Offering a different programme at continuation (e.g. BBS → TBS)
+
+Auto-enrolment can offer clients a completely different programme — not just the same one. Use the **Selected programmes only** filter and manually add the target programme (e.g. TBS) to the offer list on the source programme (BBS). Clients enrolled in BBS will see TBS classes in their auto-enrolment invitation.

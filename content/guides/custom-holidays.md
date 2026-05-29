@@ -97,6 +97,19 @@ For region-specific custom holidays, enable **Skip School Breaks** to skip them 
 
 Holiday-skip rules apply only at the time of initial session creation. If you create a custom holiday after sessions have already been generated, those existing sessions are **not** automatically cancelled or removed. Review and remove affected sessions manually.
 
+### Custom holiday set up but new group sessions are not skipping it
+
+The most common cause: the **Skip Holidays** / **Skip School Breaks** checkbox was not checked in the session wizard.
+
+When adding sessions to a new class, the session wizard has checkboxes to control which holidays are respected:
+
+| Custom holiday scope | Checkbox to enable |
+|---|---|
+| Company-wide | **Skip Holidays** |
+| Region-specific | **Skip School Breaks** |
+
+If either checkbox is unchecked, Zooza will schedule sessions on the holiday dates regardless of your custom holiday settings. Go back to the class, delete the affected sessions, and recreate them with the correct checkbox enabled.
+
 ### Trainer availability
 
 Custom holidays automatically appear as conflicts in trainer availability. If an instructor is scheduled for a session that falls within a custom holiday, the system flags it.

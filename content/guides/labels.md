@@ -6,7 +6,7 @@ type: "guides"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: ["labels", "tags", "categories", "filtering", "organization"]
+tags: ["labels", "categories", "filtering", "organization"]
 status: "published"
 source_legacy_path: "legacy/html/labels-and-extra-fields.html"
 source_language: "en"
