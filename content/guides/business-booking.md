@@ -7,11 +7,11 @@ product_area: "Bookings"
 sub_area: ""
 audience: ["admin"]
 tags: ["booking", "client", "invoice", "payment", "programme"]
-status: "published"
+status: "archived"
 source_legacy_path: "legacy/0031_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-06-01"
 ---
 
 # Business booking

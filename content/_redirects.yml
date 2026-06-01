@@ -500,3 +500,39 @@ redirects:
   - from: "/help/programmes/trial-lessons"
     to: "/help/programmes/trial-sessions"
     status: 301
+
+# ── Intra-help 301 redirects ──────────────────────────────────────────────────
+# Generated into .htaccess by build_docusaurus.py → _load_internal_redirects()
+# Add entries here whenever a published article is archived and its content
+# is merged into another article.
+internal_redirects:
+  - from: "settings/emails-in-primary-inbox"
+    to: "communication/email-delivery-troubleshooting"
+  - from: "settings/notifications-center"
+    to: "settings/settings-hub"
+  - from: "communication/company-logo-email"
+    to: "communication/communication-send-email"
+  - from: "communication/whatsapp-troubleshooting"
+    to: "communication/whatsapp-integration"
+  - from: "communication/send-email-after-session"
+    to: "communication/automated-notifications"
+  - from: "settings/change-instructor"
+    to: "classes/class-detail"
+  - from: "bookings/business-booking"
+    to: "bookings/booking-faq"
+  - from: "settings/profile-avatar"
+    to: "settings/managing-instructors"
+  - from: "payments/outstanding-amount"
+    to: "payments/payments-and-billing-faq"
+  - from: "communication/communication-email-integrations"
+    to: "communication/email-delivery-troubleshooting"
+  - from: "payments/zooza-billing-payments"
+    to: "payments/billing-and-invoicing"
+  - from: "payments/invoices-list"
+    to: "payments/billing-and-invoicing"
+  - from: "programmes/two-instructors-per-class"
+    to: "classes/class-detail"
+  - from: "widgets/widget-merge-rooms"
+    to: "widgets/customizing-widgets"
+  - from: "bookings/allowing-multiple-booking"
+    to: "bookings/booking-faq"

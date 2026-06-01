@@ -7,11 +7,11 @@ product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
 tags: ["profile", "avatar", "account", "settings", "team"]
-status: "published"
+status: "archived"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-04-30"
+last_converted: "2026-06-01"
 ---
 
 # Set your profile avatar

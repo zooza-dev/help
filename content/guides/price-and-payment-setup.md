@@ -11,10 +11,9 @@ status: "published"
 source_legacy_path: "legacy/html/setting-the-price-on-a-course.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-17"
+last_converted: "2026-06-01"
 ---
 
-<!-- Synonyms: setting the price, course pricing, programme pricing, nastavenie ceny, cena programu, platobné nastavenia -->
 
 # Price and payment setup
 

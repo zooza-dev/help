@@ -11,9 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-02-18"
+last_converted: "2026-06-01"
 ---
-<!-- Synonyms: active client, inactive client, client status, client capacity, aktívny klient, neaktívny klient, kapacita klientov, servisný balík, počet klientov -->
 
 # Active and inactive clients
 

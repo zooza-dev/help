@@ -903,6 +903,15 @@ def _write_custom_css(out: Path) -> None:
     (out / "src" / "theme" / "NotFound" / "Content" / "index.js").write_text(_404_CONTENT_JS, encoding="utf-8")
 
 
+def _load_internal_redirects() -> list[dict]:
+    """Read internal_redirects from content/_redirects.yml."""
+    redirects_path = CONTENT_DIR / "_redirects.yml"
+    if not redirects_path.exists():
+        return []
+    data = yaml.safe_load(redirects_path.read_text(encoding="utf-8")) or {}
+    return data.get("internal_redirects", [])
+
+
 def _write_static_files(out: Path, staging: bool = False) -> None:
     static = out / "static"
     static.mkdir(exist_ok=True)
@@ -938,10 +947,12 @@ def _write_static_files(out: Path, staging: bool = False) -> None:
         )
     (static / "robots.txt").write_text(robots_content, encoding="utf-8")
 
-    (static / ".htaccess").write_text(
-        "ErrorDocument 404 /404.html\n",
-        encoding="utf-8",
-    )
+    htaccess_lines = ["ErrorDocument 404 /404.html"]
+    for r in _load_internal_redirects():
+        from_path = "/" + r.get("from", "").strip("/") + "/"
+        to_path = "/" + r.get("to", "").strip("/") + "/"
+        htaccess_lines.append(f"Redirect 301 {from_path} {to_path}")
+    (static / ".htaccess").write_text("\n".join(htaccess_lines) + "\n", encoding="utf-8")
 
     (static / "llms.txt").write_text(
         "# Zooza Help\n"

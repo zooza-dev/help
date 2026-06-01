@@ -11,10 +11,9 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-04-12"
+last_converted: "2026-06-01"
 ---
 
-<!-- Synonyms: bank transfer matching, payment pairing, incoming payments, match payment to booking, payment not paired, platba nespárovaná, príchodzí platba, párovanie platieb, bejövő fizetés párosítás, platba nepřiřazena -->
 
 # Inbound payments — setup and pairing
 

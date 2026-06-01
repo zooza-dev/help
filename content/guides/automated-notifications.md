@@ -11,10 +11,9 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-19"
+last_converted: "2026-06-01"
 ---
 
-<!-- Synonyms: automated emails, client notifications, automatic messages, turn off notifications, disable emails, session reminders, payment reminders, booking confirmation, what emails does Zooza send, opt out emails, unsubscribe notifications, aké emaily Zooza posiela, automatické správy, vypnúť notifikácie, automatické emaily klientom, jaké emaily Zooza posílá, automatické zprávy klientům, milyen emaileket küld a Zooza, automatikus értesítők -->
 
 # Automated notifications overview
 
@@ -198,3 +197,15 @@ These are transactional status updates — no opt-out exists.
 | Enable/disable feedback requests | **Programmes → programme → Settings → Feedback** |
 | Toggle session reminders for one specific booking | **Booking/registration detail → Options tab → Reminder** |
 | Stop marketing emails for one client | **Clients → client → Notes and preferences → Send promotional emails** |
+
+## Send a one-off email for a specific session
+
+In addition to automatic notifications, you can send a custom one-off email for a particular session — useful when you need to communicate something specific, such as "bring your workbook to today's class."
+
+1. Go to the **Sessions** tab or the **Classes** tab and find the session date.
+2. Click on the session to open its detail.
+3. Open the **Automation** tile.
+4. Choose **Send email before** or **Send email after** the session.
+5. Set the timing offset (e.g. 1 hour after), write the subject and message, and save.
+
+The email is sent automatically to all enrolled clients based on the timing you set. Each session can have its own individual message independent of the programme-level notification templates.

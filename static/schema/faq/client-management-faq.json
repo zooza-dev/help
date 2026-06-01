@@ -65,7 +65,15 @@
       "name": "How do I give a divorced parent separate access to the same child?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zooza supports this through a combination of guest access and additional notification emails:\n\n1. Guest access to the booking -- In the booking detail settings, use Guest access to the booking to grant a second parent read access via their email address. This lets them view the booking without needing a separate account.\n2. Additional email for reminders -- Add the second parent's email in the Additional email for reminders before sessions field so they receive session notifications independently.\n\nBoth parents do not need separate Zooza accounts. The primary client (the parent who created the booking) retains full control, while the second parent gets visibility through guest access and reminder emails."
+        "text": "Zooza supports this through a combination of guest access and additional notification emails:\n\n1. Guest access to the booking — In the booking detail settings, use Guest access to the booking to grant a second parent read access via their email address. This lets them view the booking without needing a separate account.\n2. Additional email for reminders — Add the second parent's email in the Additional email for reminders before sessions field so they receive session notifications independently.\n\nBoth parents do not need separate Zooza accounts. The primary client (the parent who created the booking) retains full control, while the second parent gets visibility through guest access and reminder emails."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does \"Guest access to booking\" mean the guest receives all booking emails?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Guest access to booking (shown as Dodatočný prístup k registrácii in Slovak) gives the guest view-only access to the booking detail — they can see the schedule and booking status, but they do not automatically receive emails.\n\nThese are two separate settings with different purposes:\n\nTo give a second parent both access and notifications, you need to configure both settings separately on the booking detail page."
       }
     },
     {

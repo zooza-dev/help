@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-06-01"
 ---
 
 # Payments and Billing FAQ
@@ -459,6 +459,14 @@ A **credit** on a booking means the client has paid more than the total amount o
 > **Note:** A booking credit (from overpayment) is different from an **Entry pass credit** (prepaid session bundle). Do not confuse the two — they are managed in different places.
 
 > **SK:** Preplatok na registrácii znamená, že klient zaplatil viac, ako mal. Kredit sa zobrazuje na platobnej dlaždici v registrácii. Ak nemá ďalšie plánované platby, vráťte preplatok ručne (bankový prevod) a zaznamenajte ho ako platbu v Zooza.
+
+## What is the "outstanding amount" on a booking?
+
+When a booking is created, an amount owed (debt) is set at that moment based on the programme price. This amount tracks whether the booking is paid or not.
+
+If the programme is free, the outstanding amount is zero. Importantly, the outstanding amount does **not** change automatically if you later adjust the programme or class price. Changing the price only affects future bookings — existing bookings keep their original outstanding amount. This is intentional: if the amount changed retroactively, historically settled bookings would appear as unpaid even though the client already paid the correct amount at the time.
+
+As a result, the outstanding amount on a booking does not always match the current programme price.
 
 ## Related
 

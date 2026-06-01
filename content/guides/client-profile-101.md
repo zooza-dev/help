@@ -11,11 +11,10 @@ status: "published"
 source_legacy_path: "legacy/0023_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-13"
+last_converted: "2026-06-01"
 related_articles: ["client-profile-faq", "client-management-faq", "documents"]
 ---
 
-<!-- Synonyms: client profile, parent portal, client portal, customer portal, profil klienta, rodičovský portál, klientský profil -->
 
 # Client Profile 101
 

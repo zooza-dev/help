@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-04-10"
+last_converted: "2026-06-01"
 ---
 
 # Send Email
@@ -114,6 +114,19 @@ Once approved (or auto-approved), Zooza processes the send in the background. Th
 You can cancel a send that is in progress. Chunks already sent cannot be recalled, but unsent chunks are stopped.
 
 Click **Cancel** on the progress view to stop the send.
+
+## Company logo in email communication
+
+You can display your company logo in the header of all emails sent to clients.
+
+1. Go to **Settings → General**.
+2. In the **Account Information** section, find the logo field.
+3. Enter the URL where your logo image is hosted.
+4. Scroll to the bottom and click **Save**.
+
+The logo appears in the header of all outgoing client emails. Use a direct image URL (e.g. ending in `.png` or `.jpg`). If you don't have a hosted URL, upload the image to your website or use an image hosting service.
+
+![Account Information — logo URL field](../../assets/images/account-info-logo-url.png)
 
 ## Related
 

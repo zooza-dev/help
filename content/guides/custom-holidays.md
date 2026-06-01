@@ -11,10 +11,9 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-05"
+last_converted: "2026-06-01"
 ---
 
-<!-- Synonyms: custom holiday, company holiday, firemný sviatok, vlastné voľno, company closure, block dates, skip dates, custom closure -->
 
 # Custom holidays
 

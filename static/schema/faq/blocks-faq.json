@@ -59,6 +59,14 @@
         "@type": "Answer",
         "text": "This can happen temporarily after blocks are created or modified, particularly when the application is in the process of updating. The blocks typically reappear after a short time or after a browser refresh. If blocks are still missing after refreshing:\n\n1. Open the class detail and check whether the sessions still have block labels assigned.\n2. If sessions show no block label, use bulk edit on the sessions to reassign them to the correct block.\n\nNote that even when blocks are not visible in the admin view, they may still appear correctly in the public booking form. If the issue persists beyond a few hours, contact support with the class number."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I restrict clients to select only one block (exclusive block selection)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Zooza does not currently support exclusive block selection — there is no setting that prevents a client from enrolling in more than one block within the same class.\n\nIf you need clients to choose exactly one block, the recommended approach is:\n\n1. Create a separate class (or even a separate programme) for each block option.\n2. Clients enrol in one class, which corresponds to one block.\n3. This gives full capacity control and prevents multi-block enrolment by design.\n\nThis is more setup work upfront but avoids the complexity of enforcing a single-block rule in the booking form."
+      }
     }
   ]
 }

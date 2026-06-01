@@ -13,7 +13,6 @@ source_language: en
 needs_screenshot_replacement: true
 last_converted: 2026-02-15
 ---
-<!-- Synonyms: widget fonts, form fonts, change font on booking form, customize form appearance, CSS widget, widget styling, form design, widget colors, font setup, nastaviť písmo formuláru, písmo na formulári, vzhľad formulára, betűtípus beállítása, form betűtípus, hogyan állítsam be a betűtípust -->
 
 # Customizing widgets
 
@@ -306,6 +305,23 @@ Use this when Blocks have their own dates and showing the parent class date woul
 ---
 
 ## Custom fonts and CSS styling
+
+## Group rooms under one place (Merge Rooms)
+
+By default, the booking widget lists each room at a location as a separate option in the place selection step. If your venue has multiple rooms but you do not want clients to choose a specific room — only the location — enable **Merge rooms**.
+
+When enabled, the widget shows one entry per location. The room is still assigned automatically based on the selected class schedule.
+
+**To enable:**
+
+1. Go to **Settings → Widgets**.
+2. Open the booking widget you want to configure.
+3. Find the **Merge rooms** checkbox and enable it.
+4. Click **Save**.
+
+> New widgets have Merge rooms enabled by default. If you created a widget before this option was introduced, you may need to enable it manually.
+
+---
 
 Font, colour, and CSS customisation of Zooza widgets (booking form, calendar, client profile) goes beyond the options available in the Zooza admin interface. These are **implementation-level changes** handled by your web developer.
 

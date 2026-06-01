@@ -7,11 +7,11 @@ product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
 tags: ["communication", "import", "instructor", "location", "session", "settings"]
-status: "published"
+status: "archived"
 source_legacy_path: "legacy/0062_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-06-01"
 ---
 
 # How to change an instructor in a class or session

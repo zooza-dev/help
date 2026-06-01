@@ -11,11 +11,10 @@ status: "published"
 source_legacy_path: "legacy/html/labels-and-extra-fields.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-28"
+last_converted: "2026-06-01"
 related_articles: ["business-booking", "booking-form-settings", "booking-widget-faq"]
 ---
 
-<!-- Synonyms: extra fields, custom fields, booking form fields, date of birth, age restriction, child's name, address field, business fields, remove field from registration, hide field booking form, edit registration field, what are additional fields, kolonka registrace, upravit kolonku, zrušit pole registrace, skrýt pole, přidat pole registrace, co jsou additional fields, ďalšie polia, extra polia, dátum narodenia, vekové obmedzenie, skryť pole registrácia, upraviť pole, odstrániť pole z registrácie, čo sú additional fields, egyéni mezők, regisztrációs mezők, mező eltávolítása, mező elrejtése regisztrációból -->
 
 # Additional fields on the booking form
 

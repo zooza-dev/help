@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-06-01"
 ---
 
 # Settings
@@ -127,6 +127,20 @@ Calendar time slot display options (each can be toggled Yes/No):
 - `Instructor`
 - `Location`
 - `Time and duration`
+
+## Notifications Center
+
+The Notifications Center sends automatic alerts to you or your colleagues when specific events happen in Zooza — for example when a new booking is created, a payment is received, or a client is imported.
+
+**To set up a notification:**
+
+1. Go to **Settings → Notifications**.
+2. Click **Add new notification**.
+3. Select the notification type from the list.
+4. Enter the email address you want the notification sent to.
+5. Click **Create Notification**.
+
+> Each notification entry supports one email address. To send the same notification to multiple addresses, create a separate notification entry for each.
 
 ## Related
 

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-17"
+last_converted: "2026-06-01"
 ---
 
 # Booking FAQ
@@ -121,6 +121,14 @@ To get the exact count you have two options:
 
 1. **Scroll to the bottom of the list** and click **recalculate** next to the page count (e.g. "Total pages: 25+ ( recalculate )"). Zooza will then calculate and display the real number of bookings.
 2. **Go to Reports** (**Reports & Insights** → **Reports**) where precise totals are always available regardless of list size.
+
+## How do I allow clients to book for multiple people at once?
+
+Enable **Multiple booking** at the programme level under **Online Registration**. Once enabled, a button appears in the booking form so the client can add another person without starting a new booking. The price is automatically multiplied for each additional person. This is useful for children's programmes (booking two siblings) or dance programmes (booking yourself and your partner).
+
+## Can businesses book on behalf of a company?
+
+Yes. Enable **Business booking** for the programme in the **Extra Fields** section (**Programme → Extra Fields**). Activate at least one of the following fields: Company name, Company address, Business ID, Tax ID, or VAT number. When any of these fields are active, an "Enrol as company" option appears in the booking form. The client fills in the company details; only Company name and Business ID are required.
 
 ## Related
 

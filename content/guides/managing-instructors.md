@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-11"
+last_converted: "2026-06-01"
 ---
 
 # Add instructors and manage their access
@@ -114,11 +114,30 @@ Don't delete the account. Change their role to **Inactive** in **Settings → Te
 
 ---
 
+## Profile avatar
+
+Each user can set a personal avatar that appears in the team member list and throughout the app.
+
+**Choose a preset avatar:**
+
+1. Go to **Settings → My profile** (or click your name in the top-right corner).
+2. Click your current avatar or **Change avatar**.
+3. Select **Choose from gallery**, browse the preset images, and click one.
+4. Click **Save**.
+
+**Upload your own photo:**
+
+1. Go to **Settings → My profile**.
+2. Click your current avatar or **Change avatar**.
+3. Select **Upload photo**, choose an image from your device, and confirm.
+4. Click **Save**.
+
+The avatar is updated immediately across the app.
+
 ## Related guides
 
 - [Zooza 101 for instructors](zooza-101-instructors.md) — send this to new instructors
 - [Attendance management for instructors](instructor-attendance-management.md) — detailed attendance guide for instructors
 - [Instructor substitution](instructor-substitution.md) — managing cover when an instructor can't teach
-- [Two instructors per class](two-instructors-per-class.md) — assign a main and assistant instructor
 - [Instructor rates and pay](../setup/instructor-rate-reward.md) — set up compensation
 - [User roles](user-roles.md) — full permissions table for all roles

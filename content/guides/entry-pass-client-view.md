@@ -11,10 +11,9 @@ status: "published"
 source_legacy_path: "legacy/html/entry-pass-client-profile.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-02-18"
+last_converted: "2026-06-01"
 ---
 
-<!-- Synonyms: entry pass client profile, pass status, remaining entries, how client uses pass, permanentka klient, stav permanentky, zostávajúce vstupy, kreditná permanentka -->
 
 # Entry pass — client view
 

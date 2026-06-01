@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0001_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-06-01"
 ---
 
 # WhatsApp Integration & Usage (Beta)
@@ -126,4 +126,16 @@ Once your card is added and Meta billing is active, Zooza can automatically send
 
 If you need help at any step, contact us -- our team can check your setup and guide you through Business Verification.
 
-**See also:** [WhatsApp Troubleshooting](../troubleshooting/whatsapp-troubleshooting.md) | [WhatsApp FAQ](../faq/whatsapp-faq.md)
+## Troubleshooting
+
+**"Connect to WhatsApp" button missing** — Your plan may not include WhatsApp, or it is not enabled for your account. Contact Zooza support to enable it.
+
+**"Not an admin" or cannot select Business** — Ask your Facebook organisation owner to grant you **Business Admin** rights for the correct Business Account.
+
+**Number already in use** — Disconnect the number from all other platforms (including the WhatsApp Business mobile app) before connecting it to the API.
+
+**Template approval delays** — Meta review can take time. Keep message copy clear and compliant with Meta's guidelines. You can switch language variants after approval.
+
+**No messages arriving** — Check: (1) connection status in Zooza, (2) business verification status in Meta Business Manager, (3) whether the receiving number is on a WhatsApp-enabled device.
+
+**See also:** [WhatsApp FAQ](../faq/whatsapp-faq.md)

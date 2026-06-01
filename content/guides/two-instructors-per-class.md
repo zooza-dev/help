@@ -7,7 +7,7 @@ sub_area: ""
 audience:
   - admin
 tags: ["class", "client", "instructor", "loyalty", "onboarding", "programme", "role", "session"]
-status: published
+status: archived
 source_legacy_path: legacy/0038_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: false

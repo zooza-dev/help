@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-06-01"
 ---
 
 # Email Delivery Troubleshooting
@@ -73,7 +73,9 @@ When Zooza sends an email but it does not arrive, the cause is almost always on 
 2. If found there, ask the client to mark the email as "Not spam" and move it to their primary inbox.
 3. Ask the client to add the Zooza sending address (`@zooza.app`) to their contacts or whitelist.
 
-For Gmail users specifically, emails from new senders may land in the Promotions or Updates tab. The more the client interacts with Zooza emails (opens, replies, moves to Primary), the more likely future emails will arrive in the Primary inbox.
+For Gmail users specifically, emails from new senders may land in the Promotions or Updates tab. The more the client interacts with Zooza emails (opens, replies, moves to Primary), the more likely future emails will arrive in the Primary inbox. Gmail learns over time — the client can speed this up by opening the email in the Promotions tab and dragging it to the Primary tab, which trains Gmail to deliver future messages there directly.
+
+![How to move a Zooza email to Gmail Primary inbox](../../assets/images/emails-in-primary-inbox-01.gif)
 
 ### Email provider blocking
 
@@ -143,9 +145,18 @@ Contact support if:
 - A client reports a phishing email and you need help verifying its origin.
 - You need a client removed from the email provider's suppression list after they previously marked Zooza emails as spam.
 
+## Email marketing integrations
+
+Zooza can sync client contacts with external email marketing platforms. Go to **Communication → Email Marketing Connections**.
+
+**Mailchimp** — syncs your contacts to a Mailchimp list every two hours. Synchronised data includes email, first name, last name, phone, activity status, and assigned programmes. Click **Activate** to connect your Mailchimp account.
+
+**Ecomail** — syncs email contacts with Ecomail automatically on the same schedule.
+
+Both integrations are PRO features. If you do not see the option, contact Zooza support to check whether your plan includes it.
+
 ## See also
 
 - [Email and Communication FAQ](../faq/email-communication-faq.md)
-- [Receiving Emails from Zooza in Primary Inbox](emails-in-primary-inbox.md)
 - [Sending Emails and SMS to Clients](../guides/sending-email-sms.md)
 - [How to clear your cache](how-to-clear-your-cache.md)

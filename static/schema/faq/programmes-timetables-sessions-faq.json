@@ -126,6 +126,14 @@
     },
     {
       "@type": "Question",
+      "name": "How do I archive all classes in a programme at once?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Archiving a programme does not automatically archive its classes — the two are independent by design (classes may still be running when the programme is retired).\n\nTo bulk-archive all classes in a programme:\n\n1. Go to Activities → Classes.\n2. Filter by the programme using the Programme filter.\n3. Set Status = Active to show only the non-archived classes.\n4. Check the header checkbox to select all visible classes.\n5. Use the bulk action Archive to archive them all at once."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Where can I find an archived class (class)?",
       "acceptedAnswer": {
         "@type": "Answer",

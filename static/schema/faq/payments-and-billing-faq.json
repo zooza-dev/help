@@ -166,6 +166,14 @@
     },
     {
       "@type": "Question",
+      "name": "Why is there no QR code at all in my payment emails?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If the QR code is completely absent from payment instruction emails (not just broken when scanned), the most likely cause is a missing IBAN or SWIFT/BIC in the billing profile.\n\nCheck these in order:\n\n1. Billing profile has no IBAN — Go to Settings → Billing Profiles, open the active profile, and confirm that IBAN and SWIFT/BIC are filled in. Both are required for the QR code to generate.\n2. Programme uses a different billing profile — If the programme has its own billing profile assigned (in Programme → Settings → Price and Payment → Invoicing), check that profile's IBAN and SWIFT/BIC too.\n3. Template does not include the QR code tag — Open Communication → Message Templates → the relevant payment template. Confirm the template body contains the  tag. If it was removed or never added, the QR will not appear.\n\nQR payment codes are currently available for accounts based in SK, CZ, and other SEPA markets. If your account is in a different region, the  tag may not generate an image regardless of the settings."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How do I set up billing profiles and invoicing?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -330,6 +338,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "A credit on a booking means the client has paid more than the total amount owed (overpayment). The excess amount is stored as a credit on that booking.\n\nWhere to see it: Open the booking → Payments → the credit is shown on the payment tile.\n\nWhat you can do:\n\n1. Apply to a future invoice — if the client has upcoming scheduled payments, the credit is automatically offset against them. No action needed.\n2. Refund manually — if there are no future payments, you can refund the excess amount to the client. Go to Bookings → Payments → Refund and enter the credit amount. For bank transfer clients, process the transfer in your bank separately and record it in Zooza.\n3. Keep it on account — if the client will have future bookings, you can leave the credit and apply it to the next registration manually.\n\nNote: A booking credit (from overpayment) is different from an Entry pass credit (prepaid session bundle). Do not confuse the two — they are managed in different places.\n\nSK: Preplatok na registrácii znamená, že klient zaplatil viac, ako mal. Kredit sa zobrazuje na platobnej dlaždici v registrácii. Ak nemá ďalšie plánované platby, vráťte preplatok ručne (bankový prevod) a zaznamenajte ho ako platbu v Zooza."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the \"outstanding amount\" on a booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When a booking is created, an amount owed (debt) is set at that moment based on the programme price. This amount tracks whether the booking is paid or not.\n\nIf the programme is free, the outstanding amount is zero. Importantly, the outstanding amount does not change automatically if you later adjust the programme or class price. Changing the price only affects future bookings — existing bookings keep their original outstanding amount. This is intentional: if the amount changed retroactively, historically settled bookings would appear as unpaid even though the client already paid the correct amount at the time.\n\nAs a result, the outstanding amount on a booking does not always match the current programme price."
       }
     }
   ]

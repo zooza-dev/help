@@ -11,11 +11,10 @@ status: "published"
 source_legacy_path: "legacy/html/billing-settings.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-05-13"
+last_converted: "2026-06-01"
 related_articles: ["invoicing-overview", "szamlazz-invoices", "fakturoid-invoices", "xero-integration"]
 ---
 
-<!-- Synonyms: billing settings, invoice settings, billing profile, fakturácia, fakturačný profil, nastavenie fakturácie, IBAN, account holder, invoice generation, automatic invoicing -->
 
 # Billing and invoicing
 
@@ -341,7 +340,6 @@ The invoice is emailed to the client immediately.
 ## Related
 
 - [Invoicing overview](./invoicing-overview.md) — how invoice engines work, which engine to use.
-- [Invoices](../reference/invoices-list.md) — the invoices list screen reference.
 - [Payments and Billing FAQ](../faq/payments-and-billing-faq.md) — common payment and billing questions.
 - [Edit payment on booking](../guides/edit-payment-on-booking.md) — how to adjust payments on bookings.
 - [Payment options](../guides/payment-options.md) — configuring payment methods and templates.
@@ -349,3 +347,20 @@ The invoice is emailed to the client immediately.
 - [Email-notification payment matching](../setup/email-payment-notifications.md) — faster alternative to GoCardless, no 90-day renewal.
 - [Xero Integration](../setup/xero-integration.md) — connecting Zooza with Xero for invoicing.
 - [VAT management](../guides/vat-management.md) — configuring VAT rates and rules.
+
+## Invoices list
+
+Go to **Sales & Payments → Invoices** to view all generated invoices. Use the filter bar to narrow by date range, billing period, invoice profile, or billing status. From the list you can download individual invoices, download all as a ZIP, or export the full list. Each invoice row shows the invoice number, client, amount, and status.
+
+## Zooza platform subscription billing
+
+As of June 2025, all Zooza subscription billing is handled through the Zooza platform in partnership with [Buyloop](http://buyloop.io/) (a subscription and billing management provider).
+
+**To manage your Zooza subscription:**
+
+1. Log in to your Zooza account.
+2. Go to **Settings → Current Product → Change Subscription → Checkout**.
+3. Choose your subscription type and enter billing and payment information.
+4. To pay online, register a payment card under **Payment Methods**.
+
+Contact Zooza support if you need a copy of a past subscription invoice or have a billing query about your Zooza account.

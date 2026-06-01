@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-12"
+last_converted: "2026-06-01"
 ---
 
 # Class Detail
@@ -193,11 +193,39 @@ Each session row shows:
 
 Sessions can be sorted by date (ascending/descending).
 
+## Changing instructors
+
+### Change the instructor for a class
+
+1. Open the class you want to update.
+2. Find the **Instructor** setting in the class detail.
+3. Select a different instructor from the list.
+4. Choose whether the change applies to **all sessions** or **only upcoming sessions**.
+
+This sets the main responsible instructor for the class. Past sessions are not affected.
+
+### Change the instructor for specific sessions only
+
+1. Go to **Sessions** in the class detail.
+2. Use filters (e.g. by date) to find the sessions you want to change.
+3. Open each session and update the instructor there.
+
+Session-level instructor changes override the class-level setting for those sessions only.
+
+### Two instructors per class
+
+To assign a main instructor and an assistant (or two co-instructors) to the same class:
+
+1. When creating the class, select the **first instructor** in the basic settings.
+2. After the class is created, open it in the **Classes** view.
+3. In the **Instructors** tile, add the **second instructor**.
+
+Both instructors appear on the class and on the sessions generated from it. The first instructor is treated as the primary responsible instructor for reporting and billing purposes.
+
 ## Related
 
 - [Creating a class](../guides/creating-a-class.md) — step-by-step guide to creating a new class.
 - [Classes List](classes-list.md) — the cross-programme classes view.
 - [Sessions List](sessions-list.md) — global sessions view.
-- [Change Instructor Guide](../guides/change-instructor.md) — how to reassign instructors.
 - [Edit Sessions in Programmes Guide](../guides/edit-sessions-in-programmes.md) — modifying sessions.
 - [Attendance and Catch-ups FAQ](../faq/attendance-and-catchups-faq.md) — marking attendance, catch-up flow.

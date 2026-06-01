@@ -7,11 +7,11 @@ product_area: "Communication"
 sub_area: "WhatsApp"
 audience: ["admin"]
 tags: ["whatsapp"]
-status: "published"
+status: "archived"
 source_legacy_path: "legacy/0001_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-06-01"
 ---
 
 # WhatsApp troubleshooting

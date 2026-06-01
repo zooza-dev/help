@@ -11,10 +11,9 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-03"
+last_converted: "2026-06-01"
 ---
 
-<!-- Synonyms: email payment matching, bank email notifications, payment notification email, automatic payment matching, pair bank account, bank pairing, párovanie platieb, párovanie bankového účtu, email notifikácie platieb, automatické párovanie platieb, banková notifikácia, fizetési értesítő email, automatikus fizetés párosítás, banki értesítő email -->
 
 # Email-notification payment matching
 

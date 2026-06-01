@@ -11,10 +11,9 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-03-04"
+last_converted: "2026-06-01"
 ---
 
-<!-- Synonyms: import payments, CSV import, bank statement import, bulk payment import, upload bank transactions, importovať platby, import platieb, bankový výpis import, CSV súbor platby, hromadný import platieb, fizetések importálása, CSV import fizetések, banki tranzakciók importálása -->
 
 # Importing bank payments via CSV
 

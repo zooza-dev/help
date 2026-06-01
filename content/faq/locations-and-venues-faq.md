@@ -11,10 +11,9 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-12"
+last_converted: "2026-06-01"
 ---
 
-<!-- Synonyms: remove location from course, remove location from class, remove location from group, change location on class, unset location, no location, location not set, lokalita kurzu, zmeniť lokalitu, odstrániť lokalitu zo skupiny -->
 
 # Locations and Venues FAQ
 

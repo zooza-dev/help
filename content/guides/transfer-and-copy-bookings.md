@@ -11,12 +11,11 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-17"
+last_converted: "2026-06-01"
 ---
 
 # Transfer and copy bookings
 
-<!-- Synonyms: move booking, move client, relocate booking, duplicate booking, presunúť klienta, kopírovať registráciu, presun registrácie, premiestniť booking, move child, move child to another group, move child to different class, move child to different category, change group, presunúť dieťa, zmeniť skupinu, dieťa do inej skupiny, dieťa do inej kategórie -->
 
 Zooza lets you **transfer** or **copy** a booking from one class to another. Both actions use the same wizard — the only difference is what happens to the original booking.
 

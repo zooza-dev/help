@@ -11,10 +11,9 @@ status: "published"
 source_legacy_path: "legacy/html/labels-and-extra-fields.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-17"
+last_converted: "2026-06-01"
 ---
 
-<!-- Synonyms: tags, categories, tagging, filtering, programme labels, class labels, booking labels, štítky, kategórie -->
 
 # Labels
 

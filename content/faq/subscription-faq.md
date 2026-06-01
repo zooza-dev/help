@@ -11,10 +11,9 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-04"
+last_converted: "2026-06-01"
 ---
 
-<!-- Synonyms: subscription invoice, download invoice zooza, zooza billing, where is my invoice, change plan, cancel subscription, upgrade plan, downgrade plan, manage subscription, odberateľská faktúra, faktúra za Zooza, kde nájdem faktúru, zmeniť licenciu, zrušiť licenciu, predplatiť, predplatné Zooza, licencia Zooza, stiahnuť faktúru, ako zaplatiť za Zooza, kde je faktúra za predplatné, előfizetési számla, számlám letöltése, licenc kezelése, előfizetés lemondása, előfizetés módosítása, Zooza számla, odběratelská faktura, faktura za Zooza, kde najdu fakturu, změnit licenci, zrušit předplatné, stáhnout fakturu -->
 
 # Subscription and Billing FAQ
 

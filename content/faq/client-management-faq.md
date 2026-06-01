@@ -11,10 +11,9 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-02-13"
+last_converted: "2026-06-01"
 ---
 
-<!-- Synonyms: move client, delete client, remove client, cancel client, move child to group, move child to another class, change group, add client, add new client, create client, no add client button, how to add a client, presunúť klienta, zmazať klienta, odstrániť klienta, presunúť dieťa, dieťa do inej skupiny, zmeniť skupinu, zrušiť klienta, klient iná skupina, pridať klienta, vytvoriť klienta, ako pridať klienta, přidat klienta, vytvořit klienta, cum sa adaug un client, adăuga un client, adaug client, client nou, új ügyfél hozzáadása, ügyfél létrehozása, como añadir cliente -->
 
 # Client Management FAQ
 

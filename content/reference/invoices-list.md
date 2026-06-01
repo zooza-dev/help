@@ -7,11 +7,11 @@ product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
 tags: ["reference", "ui-reference", "payments", "invoices"]
-status: "published"
+status: "archived"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-06-01"
 ---
 
 # Invoices

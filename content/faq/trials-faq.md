@@ -11,12 +11,11 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-15"
+last_converted: "2026-06-01"
 ---
 
 # Trial Classes FAQ
 
-<!-- Synonyms: trial automation, check trial status, verify trial automation active, enroll after trial, manual enrollment trial, payment after trial, trial booking detail, trial timeline, trial won trial lost, skúšobná hodina automatizácia, ako skontrolovať stav skúšobnej hodiny, zápis po skúšobnej hodine, platba po skúšobnej hodine, ako zistiť či je aktívna automatizácia skúšobná hodina, trial vyhrany trial prehraný, próbaóra automatizáció, próbaóra státusz ellenőrzés, regisztráció próbaóra után, fizetés próbaóra után, automatizáció aktív-e, zkušební hodina automatizace, stav zkušební hodiny, zápis po zkušební hodině, platba po zkušební hodině -->
 
 ## How do I set up trial classes?
 

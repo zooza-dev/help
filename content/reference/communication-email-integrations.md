@@ -7,11 +7,11 @@ product_area: "Communication"
 sub_area: "Email"
 audience: ["admin"]
 tags: ["reference", "ui-reference", "communication", "integrations", "mailchimp", "ecomail"]
-status: "published"
+status: "archived"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-06-01"
 ---
 
 # Email Integrations

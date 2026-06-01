@@ -7,11 +7,11 @@ product_area: "Widgets"
 sub_area: ""
 audience: ["admin"]
 tags: ["widgets", "places", "rooms", "booking", "registration", "settings"]
-status: "published"
+status: "archived"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-04-30"
+last_converted: "2026-06-01"
 ---
 
 # Group rooms under one place in the booking widget

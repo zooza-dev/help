@@ -7,11 +7,11 @@ product_area: "Bookings"
 sub_area: ""
 audience: ["admin"]
 tags: ["booking", "client", "communication", "payment", "programme", "widget"]
-status: "published"
+status: "archived"
 source_legacy_path: "legacy/0032_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-02-11"
+last_converted: "2026-06-01"
 ---
 # Allowing multiple booking for a programme
 
