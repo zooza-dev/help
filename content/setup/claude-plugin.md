@@ -1,12 +1,12 @@
 ---
-title: "Connect Zooza to Claude"
-description: "Use the Zooza Claude plugin to manage classes, attendance, and schedules through conversation — no tab-switching. Works with Claude.ai and Claude Code."
+title: "Connect Zooza to Claude (Zooza AI)"
+description: "Use Zooza AI to manage classes, attendance, and schedules through conversation — no tab-switching. Connect via Claude.ai in minutes."
 slug: "claude-plugin"
 type: "setup"
 product_area: "MCP"
 sub_area: ""
 audience: ["admin"]
-tags: ["claude", "mcp", "ai", "plugin", "integration", "automation"]
+tags: ["claude", "mcp", "ai", "connector", "integration", "automation"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
@@ -15,11 +15,9 @@ last_converted: "2026-05-29"
 related_articles: ["claude-plugin-faq", "integrations-hub"]
 ---
 
-# Connect Zooza to Claude
+# Connect Zooza to Claude (Zooza AI)
 
-The Zooza Claude plugin connects Claude (Anthropic's AI assistant) to your Zooza account. Instead of switching between tabs, you can manage classes, schedules, attendance, and more through a simple conversation — in any language Claude supports.
-
-The plugin works with **Claude.ai** (web) and **Claude Code** (terminal).
+Zooza AI connects Claude (Anthropic's AI assistant) to your Zooza account via an MCP connector. Instead of switching between tabs, you can manage classes, schedules, attendance, and more through a simple conversation — in any language Claude supports.
 
 **Prerequisite:** An active Zooza account with Admin access.
 
@@ -35,16 +33,6 @@ The plugin works with **Claude.ai** (web) and **Claude Code** (terminal).
 4. Sign in with your Zooza account — OAuth, same login as zooza.app.
 
 The connector is active immediately.
-
----
-
-## Connect via Claude Code
-
-1. Download the plugin from the [zooza-mcp-server releases page](https://github.com/zooza-dev/zooza-mcp-server/releases/latest).
-2. Install: `claude plugin install zooza-plugin-vX.Y.Z.zip`
-   Or upload in Cowork: **Customize → Browse plugins → Upload**.
-3. Activate the plugin in settings.
-4. Sign in with your Zooza account (OAuth — same login as zooza.app).
 
 ---
 
@@ -127,6 +115,14 @@ Claude responds in the language you write in — Slovak, Czech, Hungarian, Roman
 
 ---
 
+## Model performance
+
+Zooza AI supports multiple Claude models. You can compare their accuracy, speed, and cost directly in the app: go to **Settings → Zooza AI → Model performance**.
+
+The comparison is based on real requests and updated periodically — use it to choose the model that best fits your priorities (accuracy vs. speed vs. cost).
+
+---
+
 ## What it can't do yet
 
 Some things still require the Zooza web app directly:
@@ -143,5 +139,5 @@ These are planned for future versions. If something is missing that would help y
 
 ## See also
 
-- [Zooza Claude Plugin FAQ](../faq/claude-plugin-faq) — pricing, security, and troubleshooting
-- [Integrations](./integrations-hub) — overview of all Zooza integrations
+- [Zooza AI FAQ](../faq/claude-plugin-faq.md) — pricing, security, and troubleshooting
+- [Integrations](./integrations-hub.md) — overview of all Zooza integrations

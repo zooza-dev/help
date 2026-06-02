@@ -1,12 +1,12 @@
 ---
-title: "Zooza Claude Plugin FAQ"
-description: "Answers to common questions about the Zooza Claude plugin — pricing, security, multi-company access, and connection troubleshooting."
+title: "Zooza AI FAQ"
+description: "Common questions about Zooza AI — pricing, security, multi-company access, model selection, and connection troubleshooting."
 slug: "claude-plugin-faq"
 type: "faq"
 product_area: "MCP"
 sub_area: ""
 audience: ["admin"]
-tags: ["claude", "mcp", "ai", "plugin", "faq", "security", "troubleshooting"]
+tags: ["claude", "mcp", "ai", "connector", "faq", "security", "troubleshooting"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
@@ -15,19 +15,23 @@ last_converted: "2026-05-29"
 related_articles: ["claude-plugin"]
 ---
 
-# Zooza Claude Plugin FAQ
+# Zooza AI FAQ
 
-## Is the plugin free?
+## Is Zooza AI free?
 
-Yes. The plugin is available at no extra cost for all active Zooza customers. You only need a Claude account — [claude.ai](https://claude.ai) has a free tier.
+Yes. Zooza AI is available at no extra cost for all active Zooza customers. You only need a Claude account — [claude.ai](https://claude.ai) has a free tier.
 
 ## Is it secure? Where does my data go?
 
-The plugin does not store your login credentials. Authentication happens via OAuth — the same system as signing in to zooza.app. Claude only sees data that Zooza provides through the plugin during your conversation.
+Zooza AI does not store your login credentials. Authentication happens via OAuth — the same system as signing in to zooza.app. Claude only sees data that Zooza provides during your conversation.
 
-## We have a franchise with multiple locations. Does the plugin support that?
+## We have a franchise with multiple locations. Does Zooza AI support that?
 
 Yes. If your account has access to multiple companies, Claude will list them and ask which one you want to work with. You can switch between companies within the same conversation.
+
+## Which AI model should I use?
+
+Zooza AI works with multiple Claude models. You can compare their accuracy, speed, and cost in **Settings → Zooza AI → Model performance**. The comparison is updated periodically based on real usage. Use it to choose the model that best fits your priorities.
 
 ## The connection is not working. What should I do?
 

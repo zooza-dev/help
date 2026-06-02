@@ -353,7 +353,7 @@ const config = {{
               {{ label: 'Clients', to: '/category/clients' }},
               {{ label: 'Payments', to: '/category/payments' }},
               {{ label: 'Settings', to: '/category/settings' }},
-              {{ label: 'Claude Plugin', to: '/category/mcp' }},
+              {{ label: 'Zooza AI', to: '/category/mcp' }},
             ],
           }},
           {{
@@ -680,7 +680,7 @@ const CATEGORIES = [
   { label: 'Settings',      to: '/category/settings',     description: 'Configure holidays, billing periods, roles, and integrations.' },
   { label: 'Widgets',       to: '/category/widgets',      description: 'Embed booking forms and calendars on your website.' },
   { label: 'Communication', to: '/category/communication',description: 'Set up email and WhatsApp templates and automated messages.' },
-  { label: 'Claude Plugin',  to: '/category/mcp',          description: 'Manage Zooza through conversation — connect Claude AI to your account.' },
+  { label: 'Zooza AI',       to: '/category/mcp',          description: 'Use AI to manage classes, attendance, and schedules through conversation.' },
 ];
 
 export default function Home() {
