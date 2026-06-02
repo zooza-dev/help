@@ -27,8 +27,8 @@ Go to **Settings → Integrations** to see all available integrations and their 
 
 | Integration | Description |
 |---|---|
-| **Stripe Connect** | Accept online card payments. New connections use a **Standard** account — you manage your Stripe account directly at [dashboard.stripe.com](https://dashboard.stripe.com). If you connected before March 2026, you have an **Express** account; access your dashboard and invoices from within Zooza. [Learn more →](../../payments/zooza-billing-payments) |
-| **GoCardless** | Collect Direct Debit mandates from clients. [Set up GoCardless →](../../payments/gocardless-direct-debit-mandates) |
+| **Stripe Connect** | Accept online card payments. New connections use a **Standard** account — you manage your Stripe account directly at [dashboard.stripe.com](https://dashboard.stripe.com). If you connected before March 2026, you have an **Express** account; access your dashboard and invoices from within Zooza. [Learn more →](../../payments/billing-and-invoicing) |
+| **GoCardless** | Collect Direct Debit mandates from clients. [Set up GoCardless →](../guides/gocardless-direct-debit-mandates.md) |
 | **GoCardless Bank Data** | Automatic bank payment matching via GoCardless open banking. Configured per profile. |
 
 ---
@@ -39,12 +39,12 @@ Go to **Settings → Integrations** to see all available integrations and their 
 |---|---|
 | **Faktury Online** | Default built-in invoice engine — automatic, no setup required. |
 | **Zooza Invoice** *(beta)* | Zooza's own internal engine with QR payment codes, invoice templates, and payment status tracking. No setup required. |
-| **Fakturoid** | Invoice sync for CZ/SK market (OAuth). [Set up Fakturoid →](./fakturoid-invoices) |
-| **ABRA Flexi** | Export invoices to ABRA Flexi (CZ/SK). [Set up ABRA Flexi →](./abra-flexi-invoices) |
-| **Xero** | Sync invoices to Xero automatically (International). [Set up Xero →](./xero-integration) |
-| **Számlázz.hu** | Invoice export for Hungarian market. [Set up Számlázz.hu →](./szamlazz-invoices) |
-| **SmartBill** | Invoice export for Romanian market. [Set up SmartBill →](./smartbill-invoices) |
-| **Oblio** | Invoice export for Romanian market. [Set up Oblio →](./oblio-invoices) |
+| **Fakturoid** | Invoice sync for CZ/SK market (OAuth). [Set up Fakturoid →](./fakturoid-invoices.md) |
+| **ABRA Flexi** | Export invoices to ABRA Flexi (CZ/SK). [Set up ABRA Flexi →](./abra-flexi-invoices.md) |
+| **Xero** | Sync invoices to Xero automatically (International). [Set up Xero →](./xero-integration.md) |
+| **Számlázz.hu** | Invoice export for Hungarian market. [Set up Számlázz.hu →](./szamlazz-invoices.md) |
+| **SmartBill** | Invoice export for Romanian market. [Set up SmartBill →](./smartbill-invoices.md) |
+| **Oblio** | Invoice export for Romanian market. [Set up Oblio →](./oblio-invoices.md) |
 
 ---
 
@@ -63,8 +63,8 @@ Go to **Settings → Integrations** to see all available integrations and their 
 
 | Integration | Description |
 |---|---|
-| **Slack** | Deliver todo assignments and system alerts to Slack channels. Team members can also create todos directly from Slack. [Set up Slack →](../../communication/slack-integration) |
-| **WhatsApp** | Send messages to clients via WhatsApp Business. [Set up WhatsApp →](../../communication/whatsapp-integration) |
+| **Slack** | Deliver todo assignments and system alerts to Slack channels. Team members can also create todos directly from Slack. [Set up Slack →](./slack-integration.md) |
+| **WhatsApp** | Send messages to clients via WhatsApp Business. [Set up WhatsApp →](./whatsapp-integration.md) |
 
 ---
 
@@ -97,7 +97,7 @@ Go to **Settings → Integrations** to see all available integrations and their 
 
 | Integration | Description |
 |---|---|
-| **Zooza Sites** | Embed the Zooza booking widget on your own site. [Learn more →](../../widgets/zooza-sites) |
+| **Zooza Sites** | Embed the Zooza booking widget on your own site. [Learn more →](./zooza-sites.md) |
 | **WordPress** | WordPress plugin for embedding Zooza directly into WordPress sites. |
 
 ---
@@ -106,7 +106,7 @@ Go to **Settings → Integrations** to see all available integrations and their 
 
 | Integration | Description |
 |---|---|
-| **Claude** | Manage classes, attendance, and schedules through conversation with Claude AI. [Connect Claude →](../../mcp/claude-plugin) |
+| **Claude** | Manage classes, attendance, and schedules through conversation with Claude AI. [Connect Claude →](./claude-plugin.md) |
 
 ---
 

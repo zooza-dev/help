@@ -1129,12 +1129,22 @@ def build_docusaurus(dry_run: bool = False, clean: bool = False, staging: bool =
         img_out.mkdir(parents=True)
         logger.warning("No assets/images/ directory found; static/img/ will be empty")
 
-    # --- Copy videos ---
+    # --- Copy videos (skip files >= 25 MiB — Cloudflare Pages hard limit) ---
+    CF_PAGES_MAX_BYTES = 25 * 1024 * 1024
     assets_videos_dir = ROOT_DIR / "assets" / "videos"
     if assets_videos_dir.exists():
         video_out = STATIC_DIR / "video"
-        shutil.copytree(assets_videos_dir, video_out)
-        logger.info("Copied videos → static/video/ (%d files)", len(list(video_out.iterdir())))
+        video_out.mkdir(parents=True, exist_ok=True)
+        copied, skipped = 0, 0
+        for vf in assets_videos_dir.iterdir():
+            if vf.is_file():
+                if vf.stat().st_size >= CF_PAGES_MAX_BYTES:
+                    logger.warning("Skipping %s (%.1f MiB — exceeds 25 MiB CF Pages limit)", vf.name, vf.stat().st_size / 1024 / 1024)
+                    skipped += 1
+                else:
+                    shutil.copy2(vf, video_out / vf.name)
+                    copied += 1
+        logger.info("Copied videos → static/video/ (%d files, %d skipped)", copied, skipped)
 
     # --- Copy brand assets (logo, favicon) ---
     if ASSETS_BRAND_DIR.exists():

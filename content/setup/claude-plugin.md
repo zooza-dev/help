@@ -71,10 +71,6 @@ Claude asks for any missing details one at a time — days, time, number of sess
 
 You can ask Claude while handling the call — no need to navigate to the attendance screen first. Claude confirms the change and shows which session was updated.
 
-<video controls width="100%" style={{borderRadius: '8px', marginBottom: '1rem'}}>
-  <source src="/video/mcp-demo-cancel-session-voice.mp4" type="video/mp4" />
-</video>
-
 **Add a session note**
 > *"Add a summary to today's session: focused on breathing, 8 students attended"*
 

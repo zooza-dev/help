@@ -674,4 +674,4 @@ Make-Up Session
 - [Login and account FAQ](../faq/login-and-account-faq.md) — login, access, and account setup questions
 - [App navigation map](../reference/app-navigation-map.md) — overview of the Zooza interface sections
 - [Getting help and support](../guides/getting-help-and-support.md) — how to reach Zooza support
-- [Business model guides](../business-models/index.md) — find the right setup for your type of business
+- [Business model guides](../business-models/business-models.md) — find the right setup for your type of business
