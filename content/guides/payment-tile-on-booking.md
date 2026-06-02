@@ -25,7 +25,7 @@ Manual payment editing, i.e. you manually enter the amount and the way you were 
 
 1. In the Bookings tab, find the booking on which you want to edit the payment.
 2. In the booking details, click on the Add payment button.
- ![Screenshot](../../assets/images/payment-tile-on-registration-01.png)
+ ![In the booking details, click on the Add payment button](../../assets/images/payment-tile-on-registration-01.png)
 3. Fill in the required fields and click OK
 
 ## Adjustment of payments
@@ -34,20 +34,20 @@ You can make payment adjustments in several ways. Therefore, it is up to you whi
 
 1. In the *Bookings* tab, find the booking on which you want to edit the payment.
 2. Under *Payments*, click *View Payments
- ![Screenshot](../../assets/images/payment-tile-on-registration-02.png)
+ ![Under Payments, click View Payments](../../assets/images/payment-tile-on-registration-02.png)
  
 3. Select the option you want
 4. Amount owed – adjustment of the amount the client has to pay you
 5. Booking fee – adjustment of the booking fee
 6. Discount – adjustment of the amount due by granting a discount
 7. Payment schedule – an arrangement for paying the amount owed by scheduled payments. For more information on how to enter a payment plan in the booking, please click [HERE](payment-options.md).
- ![Screenshot](../../assets/images/payment-tile-on-registration-03.png)
+ ![Payment schedule – an arrangement for paying the amount owed by scheduled payments. For...](../../assets/images/payment-tile-on-registration-03.png)
 
 After each adjustment of the amount due, the balance of payments shall also be recalculated. Thus, it may happen that a booking goes from “paid” to “unpaid” or, conversely, “overpaid”.
 
 For a detailed breakdown of both payments and adjustments, please refer to the *List of payments* tile.
 
-![Screenshot](../../assets/images/payment-tile-on-registration-04.png)
+![For a detailed breakdown of both payments and adjustments, please refer to the List of...](../../assets/images/payment-tile-on-registration-04.png)
 
 ### Refund/correction of payment
 
@@ -62,10 +62,10 @@ Reimbursement may come from several sources:
 
 - In the Bookings tab, locate the booking on which you want to edit the payment.
 - In the *List of payments* section, click on the *More* button next to the payment you want to refund/edit.
- ![Screenshot](../../assets/images/payment-tile-on-registration-05.png)
+ ![In the List of payments section, click on the More button next to the payment you want...](../../assets/images/payment-tile-on-registration-05.png)
 - Click *Refund* Payment
- ![Screenshot](../../assets/images/payment-tile-on-registration-06.png)
+ ![Click Refund Payment](../../assets/images/payment-tile-on-registration-06.png)
 - Enter the amount to be refunded/adjusted and then click OK
- ![Screenshot](../../assets/images/payment-tile-on-registration-07.png)
+ ![Enter the amount to be refunded/adjusted and then click OK](../../assets/images/payment-tile-on-registration-07.png)
 
 >**Note:** In this case of a payment correction, it is not a refund of the payment back to the client’s account. Just a systemic change. You also don’t have to worry about the client seeing these changes in their account. The client only sees the resulting amounts in his/her profile – the amount to be paid, the amount of the registration fee, the amount of the discount and, in the case of a payment plan, a breakdown of future payments.

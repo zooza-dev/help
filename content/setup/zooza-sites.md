@@ -27,7 +27,7 @@ In addition to having all the settings for either the programmes or the site in 
 2. Your own domain – mycompany.com, or on zooza.site domain – mycompany.zooza.site
 3. Several language modifications of the page
 
-![Screenshot](../../assets/images/blocks-creation-07.png)
+![Several language modifications of the page](../../assets/images/blocks-creation-07.png)
 
 
 For more information about Zooza Sites click on this link: [https://www.zooza.online/sites/.](https://www.zooza.online/sites/.)
@@ -44,7 +44,7 @@ For more information about Zooza Sites click on this link: [https://www.zooza.on
 ## Creating Zooza sites
 
 1. Setting up your own page is available in the general settings under* Web page.*
- ![Screenshot](../../assets/images/zooza-sites-02.png)
+ ![Setting up your own page is available in the general settings under Web page](../../assets/images/zooza-sites-02.png)
 2. You will be taken to the overview where you have the option to edit the page settings:
 3. General settings
 4. Domain
@@ -57,7 +57,7 @@ Pages
 Possibility to edit individual subpages in all languages
 
 
-![Screenshot](../../assets/images/zooza-sites-03.png)
+![Possibility to edit individual subpages in all languages](../../assets/images/zooza-sites-03.png)
 
 ## General settings
 
@@ -71,19 +71,19 @@ The page will be generated automatically on our Zooza domain. If you are interes
 
 The template you choose for your page has a predefined Zooza colour palette. However, you can change this palette by changing 3 custom colors. Another change you can make is to change the font according to the available menu.
 
-![Screenshot](../../assets/images/blocks-creation-14.png)
+![The template you choose for your page has a predefined Zooza colour palette. However,...](../../assets/images/blocks-creation-14.png)
 
 
 You can customize templates and color themes in the general settings.
 
-![Screenshot](../../assets/images/zooza-sites-05.png)
+![You can customize templates and color themes in the general settings](../../assets/images/zooza-sites-05.png)
 
 ### Contact
 
 
 Zooza will make it easy for you to know how and where your clients can reach you with a contact form that you don’t need to insert anywhere extra, just fill it in and once saved it will show up on your new page.
 
-![Screenshot](../../assets/images/zooza-sites-06.png)
+![Zooza will make it easy for you to know how and where your clients can reach you with a...](../../assets/images/zooza-sites-06.png)
 
 ## Consents and agreements
 

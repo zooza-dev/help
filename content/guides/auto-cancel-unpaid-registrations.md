@@ -12,7 +12,7 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-05-13"
-related_articles: ["automatic-payment-reminders-detailed", "registration-status-faq", "awaiting-payment-grace-period"]
+related_articles: ["automatic-payment-reminders-detailed", "registration-status-faq"]
 ---
 
 # Automatically cancel unpaid registrations
@@ -76,4 +76,4 @@ Use this report to monitor which clients are approaching the cancellation thresh
 ## Related
 
 - [Automatic payment reminders](automatic-payment-reminders-detailed.md) — email reminders and grace period settings (a separate, complementary feature).
-- [Registration statuses](registration-status-faq.md) — full list of registration statuses including Auto-unenrolled.
+- [Registration statuses](../faq/registration-status-faq.md) — full list of registration statuses including Auto-unenrolled.

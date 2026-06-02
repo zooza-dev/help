@@ -99,7 +99,7 @@ Zooza also gives you access to your personal teaching reports.
 
 This section is typically used for internal reporting and planning.
 
-![Screenshot](../../assets/images/zooza-101-instructors-01.png)
+![This section is typically used for internal reporting and planning](../../assets/images/zooza-101-instructors-01.png)
 
 ## 4. Using Zooza on your mobile phone
 

@@ -48,24 +48,24 @@ Sometimes an administrator may need to manually register a client for a programm
 2. Choose the client type:
 3. Existing client - search for the client in the search box and click on their name
 4. New client - enter their email address and click *Continue *to create a new booking
- ![Screenshot](../../assets/images/personas-02.png)
+ ![New client - enter their email address and click Continue to create a new booking](../../assets/images/personas-02.png)
 
 If registering an existing client:
 
-![Screenshot](../../assets/images/personas-03.png)
+![If registering an existing client](../../assets/images/personas-03.png)
 
 1. Select who will be the attendee — the client themselves or another person linked to their email address.
 2. If the attendee is not yet in Zooza, select *Create New,* fill in the required fields and click *Continue*
- ![Screenshot](../../assets/images/personas-04.png)
+ ![If the attendee is not yet in Zooza, select Create New, fill in the required fields and...](../../assets/images/personas-04.png)
 
 If registering a new client:
 
-![Screenshot](../../assets/images/personas-05.png)
+![If registering a new client](../../assets/images/personas-05.png)
 
 1. Fill in all required fields for the new client
 2. Choose who will be the attendee - the client or another person
 3. If the client is not attendee, uncheck the Client is also an attendee box and enter attendee’s first and last name.
- ![Screenshot](../../assets/images/personas-06.png)
+ ![If the client is not attendee, uncheck the Client is also an attendee box and enter...](../../assets/images/personas-06.png)
 4. Click *Continue*.
 
 ## Change of attendee
@@ -73,11 +73,11 @@ If registering a new client:
 If a booking has the wrong attendee, you can update it in the *Booking Detail* view.
  
 1. In the *Attendee* tile, click *Change* to select a different attendee for the booking.
- ![Screenshot](../../assets/images/personas-07.png)
+ ![In the Attendee tile, click Change to select a different attendee for the booking](../../assets/images/personas-07.png)
 2. If the correct attendee already exists in Zooza, select them from the list.
 3. If the attendee does not yet exist in Zooza under this email, click *Create*, fill in the required fields for the new attendee, and then click *OK*.
- ![Screenshot](../../assets/images/personas-08.png)
- ![Screenshot](../../assets/images/personas-09.png)
+ ![If the attendee does not yet exist in Zooza under this email, click Create, fill in the...](../../assets/images/personas-08.png)
+ ![If the attendee does not yet exist in Zooza under this email, click Create, fill in the...](../../assets/images/personas-09.png)
 
 ## Client Card
 
@@ -87,9 +87,9 @@ To view a client (whether the registrant or attendee) in full detail, Zooza prov
 ## Access a Client Card
 
 1. Go to the *Clients* tab and search for the client by name, email, or other details.
- ![Screenshot](../../assets/images/personas-10.png)
+ ![Go to the Clients tab and search for the client by name, email, or other details](../../assets/images/personas-10.png)
 2. From a booking detail page, click the *Go to Attendee* button.
- ![Screenshot](../../assets/images/personas-11.png)
+ ![From a booking detail page, click the Go to Attendee button](../../assets/images/personas-11.png)
 
 ## Client Card detail
 
@@ -100,11 +100,11 @@ Once in the Client Card, you can:
 
  2. Manage family & connections by creating or editing relationships between clients.
 
-![Screenshot](../../assets/images/personas-13.png)
+![Manage family & connections by creating or editing relationships between clients](../../assets/images/personas-13.png)
 
  3. View History, which includes all internal notes, a list of bookings, orders, and a credit overview.
 
-![Screenshot](../../assets/images/personas-14.png)
+![View History, which includes all internal notes, a list of bookings, orders, and a...](../../assets/images/personas-14.png)
 
 ## Family & Connection
 
@@ -112,17 +112,17 @@ Each client or attendee can be linked to other people in Zooza (e.g., Parent–C
 
 To manage relationships, open the person’s Client Card and click *Manage* in the Family & Connections section.
 
-![Screenshot](../../assets/images/personas-15.png)
+![To manage relationships, open the person’s Client Card and click Manage in the Family &...](../../assets/images/personas-15.png)
 
 ### Merge Profiles
 
 If you find duplicate records for the same person, you can merge them into a single profile.
 
 1. Select all duplicate entries and click *Merge profiles*
- ![Screenshot](../../assets/images/personas-16.png)
+ ![Select all duplicate entries and click Merge profiles](../../assets/images/personas-16.png)
  
 2. Select the main person to keep as primary to merge records together
- ![Screenshot](../../assets/images/personas-17.png)
+ ![Select the main person to keep as primary to merge records together](../../assets/images/personas-17.png)
 3. Click *Save* to complete the merge.
 
 >**Tip:** Before saving, review names, contact details, and other fields so the main profile reflects the correct information.
@@ -132,25 +132,25 @@ If you find duplicate records for the same person, you can merge them into a sin
 If a relationship was created incorrectly, you can update it.
 
 1. In *Family & Connections,* select the member whose relationship you want to change and click *Edit Relationship*.
- ![Screenshot](../../assets/images/personas-19.png)
+ ![In Family & Connections, select the member whose relationship you want to change and...](../../assets/images/personas-19.png)
 2. Choose the correct relationship from the drop down lists (e.g., Parent, Child, Guardian, Spouse).
- ![Screenshot](../../assets/images/personas-20.png)
+ ![Choose the correct relationship from the drop down lists (e.g., Parent, Child,...](../../assets/images/personas-20.png)
 3. Click *Save*, then *OK *to confirm.
 
 ### Client records
 
 *Attendance* page includes a feature button for all attendees where it is possible to write a internal note about that session - e.g. progress on the session, homework, etc. addressing only the one particular attendee.
 
-![Screenshot](../../assets/images/personas-21.png)
+![Attendance page includes a feature button for all attendees where it is possible to...](../../assets/images/personas-21.png)
 
 By clicking on the *Client Card* button you will see the full overview of client records created by instructors for a better understanding.
 
-![Screenshot](../../assets/images/personas-22.png)
+![By clicking on the Client Card button you will see the full overview of client records...](../../assets/images/personas-22.png)
 
 You can search in the notes or create a new one by clicking the *New Message* button. When creating a new message that is important for all instructors and admins, you can pin the message by ticking the checkbox.
 
-![Screenshot](../../assets/images/personas-23.png)
+![You can search in the notes or create a new one by clicking the New Message button....](../../assets/images/personas-23.png)
 
 >**Info:** All messages created during attendance are visible in the client card in client's detail.
 
-![Screenshot](../../assets/images/personas-25.png)
+![Info: All messages created during attendance are visible in the client card in client's...](../../assets/images/personas-25.png)

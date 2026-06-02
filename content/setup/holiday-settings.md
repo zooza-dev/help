@@ -21,14 +21,14 @@ You must have the correct region filled in for each location in order for the ap
 ## General settings
 
 1. You can make the settings in the main *Settings*, under *Places.*
- ![Screenshot](../../assets/images/holiday-settings-01.png)
+ ![You can make the settings in the main Settings, under Places](../../assets/images/holiday-settings-01.png)
 
 1. When adding a new location or editing an existing one, select a
 region from the menu. The offer is updated on the basis of the company
 region you entered in the application when creating an account in the
 application. If you would like to change this region, please feel free
 to contact us via chat on this page or by email at [support@zooza.online](mailto:support@zooza.online).
- ![Screenshot](../../assets/images/holiday-settings-02.png)
+ ![to contact us via chat on this page or by email at...](../../assets/images/holiday-settings-02.png)
 
 1. After selecting the region, click *the Save* button at the bottom of the page.
 
@@ -47,7 +47,7 @@ be reminded that the dates are during the holidays. You can choose to:
 - delete these terms manually by clicking on the *Bin icon*
 - skip these terms automatically by clicking on the *Skip Holidays* and *Skip School breaks* checkboxes
 
-![Screenshot](../../assets/images/holiday-settings-03.png)
+![skip these terms automatically by clicking on the Skip Holidays and Skip School breaks...](../../assets/images/holiday-settings-03.png)
 
 ## Setting different regions for multiple locations
 

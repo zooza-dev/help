@@ -16,11 +16,11 @@ last_converted: "2026-02-11"
 
 # Multi-day event with product offer
 
-![Screenshot](../../assets/images/blocks-creation-07.png)
+![Multi-day event with product offer](../../assets/images/blocks-creation-07.png)
 
 Programme - for a period with two classes, where several people can sign up on one form
 
-![Screenshot](../../assets/images/individual-lessons-climbing-wall-02.png)
+![Programme - for a period with two classes, where several people can sign up on one form](../../assets/images/individual-lessons-climbing-wall-02.png)
 Example: A multi-day event/camp where the whole family can sign up. There are 2 turnuses available. Possibility of booking, transport, meal, accommodation for individual days with specific criteria (e.g.: allergies, one-way transport only, vegetarian diet,...).
 
 Client

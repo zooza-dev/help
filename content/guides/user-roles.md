@@ -16,7 +16,7 @@ last_converted: 2026-04-10
 
 # User roles
 
-![Screenshot](../../assets/images/blocks-creation-14.png)
+![User roles](../../assets/images/blocks-creation-14.png)
 
 For adding additional Zooza users, you have a choice of different roles that are set according to how much data about your clients they can see and edit.
 
@@ -24,11 +24,11 @@ For adding additional Zooza users, you have a choice of different roles that are
 
 The process of adding a instructor is very simple. Under Settings, open the Access icon and click the Add button. Then fill in all the details that are required.
 
-![Screenshot](../../assets/images/user-roles-02.png)
+![The process of adding a instructor is very simple. Under Settings, open the Access icon...](../../assets/images/user-roles-02.png)
 
-![Screenshot](../../assets/images/user-roles-03.png)
+![The process of adding a instructor is very simple. Under Settings, open the Access icon...](../../assets/images/user-roles-03.png)
 
-![Screenshot](../../assets/images/discount-code-07.png)
+![The process of adding a instructor is very simple. Under Settings, open the Access icon...](../../assets/images/discount-code-07.png)
 
 Warning! When filling in the Email field, enter ONLY functional email addresses. If you fill in an address such as [demo@example.com](mailto:demo@example.com), it may happen that such an account is actually active and in use and this user will be able to get into your Zooz account, thus compromising data security. If you want to test a role/feature, we recommend using an email address that you have not yet registered with Zooza to ensure your security.
 
@@ -42,7 +42,7 @@ Warning! When filling in the Email field, enter ONLY functional email addresses.
 
 For all the differences between these roles, please refer to the table below the form in the application or read later in this manual.
 
-![Screenshot](../../assets/images/user-roles-05.png)
+![For all the differences between these roles, please refer to the table below the form...](../../assets/images/user-roles-05.png)
 
 Click the *Add New User* button to save your settings.
 
@@ -50,7 +50,7 @@ Click the *Add New User* button to save your settings.
 
 Setting the basic view for individual team members will make it easier for you to specify some of the features available for instructor roles according to your needs. You decide how a instructor should see the attendance report, how they can manage their own availability, whether instructors can see client details or send messages to clients in term details. Last but not least, you have the option to allow instructors to create substitutions on appointments for easier administration. You can find out all the information on how to set up the substitution and how it works in this [manual.](instructor-substitution.md)
 
-![Screenshot](../../assets/images/user-roles-06.png)
+![Setting the basic view for individual team members will make it easier for you to...](../../assets/images/user-roles-06.png)
 
 ## Owner
 
@@ -63,17 +63,17 @@ The Assistant role is intended for someone who helps you manage programmes and c
 - Sees today’s sessions on the dashboard. Does not see owner-level statistical reports.
 - **Full attendance management** — can mark Arrived, Signed Out, Did Not Arrive, and set an alternate session for the client. This applies regardless of the company-wide trainer attendance setting (which affects Instructors only, not Assistants).
 
-![Screenshot](../../assets/images/user-roles-07.gif)
+![Full attendance management — can mark Arrived, Signed Out, Did Not Arrive, and set an...](../../assets/images/user-roles-07.gif)
 
 - Can create programmes, change their settings, create or copy classes, and add sessions. In classes, can edit settings and modify existing sessions — change the time, change the instructor, or cancel the session and notify clients.
 
-![Screenshot](../../assets/images/user-roles-08.gif)
+![Can create programmes, change their settings, create or copy classes, and add sessions....](../../assets/images/user-roles-08.gif)
 
 - Can communicate with all clients via email and SMS — to a booking, a class, or all clients. Can use existing email templates but cannot create or edit them.
 - Can add a payment on a booking. Cannot grant discounts, change the amount due, or issue refunds.
 - Can do all booking edits — change booking status, copy, move, edit client name and extra fields.
 
-![Screenshot](../../assets/images/user-roles-09.gif)
+![Can do all booking edits — change booking status, copy, move, edit client name and...](../../assets/images/user-roles-09.gif)
 
 - Has access to the **Payments** section — can view payment overview and payment details, and can pair unmatched payments. Cannot do imports, cannot see or issue invoices.
 - Sees the full **Calendar** with all instructors’ classes.
@@ -89,7 +89,7 @@ adjust the dates of all classes. Assign dates to other instructors or make
 other changes to dates. He has the ability to upload documents and
 videos and add them to classes.
 
-![Screenshot](../../assets/images/user-roles-10.png)
+![videos and add them to classes](../../assets/images/user-roles-10.png)
 
 - Cannot see Programmes and Programme Settings, so can’t edit them in any way
 - He sees all the classes of all the instructors, he can make changes in them
@@ -106,7 +106,7 @@ videos and add them to classes.
 
 The main task of the instructor is to fill in the attendance in his classes, in the *Calendar* section. In the *Instructors* section he can enter his working hours and absences as set by you / the owner in the general settings. And they can see the *Clients* and *Bookings* subpages – but only their clients. Also has a *Communication* option for their clients
 
-![Screenshot](../../assets/images/user-roles-11.png)
+![The main task of the instructor is to fill in the attendance in his classes, in the...](../../assets/images/user-roles-11.png)
 
 - Taking attendance – in the *Calendar* section they can see
 all their appointments and the appointments of other instructors, if their
@@ -133,7 +133,7 @@ the amount owed or the registration fee.
 A instructor you trust a little less or don’t want to burden him with
 any additional tasks. His only job is to fill out the attendance.
 
-![Screenshot](../../assets/images/user-roles-12.png)
+![any additional tasks. His only job is to fill out the attendance](../../assets/images/user-roles-12.png)
 
 - On the initial dashboard, they can see today’s dates so they can quickly record attendance.
 - If they need to look at the dates of other days, they can access the *Calendar*.
@@ -147,14 +147,14 @@ contact details, they do not have the right to move or copy the
 booking. They can only edit data from extra fields (Child’s name,
 age, address…)
 
-![Screenshot](../../assets/images/user-roles-13.png)
+![External instructor](../../assets/images/user-roles-13.png)
 
 - They do not have the right to add payment or work with payments in any way.
 - He can write an internal note in the session/session details.
 - If it is set that instructors can send messages, he will be shown the option to send email/SMS in the session/session detail.
 - He can also view personal details if required by clicking on the eye.
 
-![Screenshot](../../assets/images/user-roles-14.png)
+![He can also view personal details if required by clicking on the eye](../../assets/images/user-roles-14.png)
 
 ### Inactive instructor
 
@@ -173,12 +173,12 @@ payment.
  the dashboard/homepage. If they are on a different page, they can go
 back to the home page by clicking on the Zooza logo in the top left
 
-![Screenshot](../../assets/images/user-roles-15.png)
+![back to the home page by clicking on the Zooza logo in the top left](../../assets/images/user-roles-15.png)
 
 - They can open the date of the current day by clicking on *Detail*. They will see the list of those logged in for the day and can record attendance *Arrived / Did not arrive*
 - Cannot see client contact details (email, phone number)
 
-![Screenshot](../../assets/images/user-roles-16.png)
+![Cannot see client contact details (email, phone number)](../../assets/images/user-roles-16.png)
 
 - They can open the client’s booking card by clicking on the orange *Client Name.* They have limited options here:
 - Cannot copy/move booking
@@ -187,23 +187,23 @@ back to the home page by clicking on the Zooza logo in the top left
 - Can see attendance, can mark present/absent, but can’t select an alternate session for the client
 - Can see payments – can add a payment. Cannot change payments, refund, enter discount, etc.
 
-![Screenshot](../../assets/images/user-roles-17.png)
+![Can see payments – can add a payment. Cannot change payments, refund, enter discount, etc](../../assets/images/user-roles-17.png)
 
 - When the user clicks on the bookings tab, he/she will see all the bookings in which he/she can search by using the filter. So add payment to all bookings (even outside of today)
 
-![Screenshot](../../assets/images/user-roles-18.png)
+![When the user clicks on the bookings tab, he/she will see all the bookings in which...](../../assets/images/user-roles-18.png)
 
 - For the programme type – Pay-as-you-go programme, the receptionist can register the client for the date.
 - It does not have access to other parts of the administration. It does not have the right of communication to clients.
 
-![Screenshot](../../assets/images/allowing-multiple-registration-03.png)
+![It does not have access to other parts of the administration. It does not have the...](../../assets/images/allowing-multiple-registration-03.png)
 
 Example: I offer Pilates as a Pay-as-you-go programme –
 clients sign up for individual sessions at their own discretion. If the
 client does not manage to book himself in the profile, he just arrives,
 the receptionist can also add him to the term
 
-![Screenshot](../../assets/images/user-roles-20.png)
+![the receptionist can also add him to the term](../../assets/images/user-roles-20.png)
 
 ## Menu visibility by role
 

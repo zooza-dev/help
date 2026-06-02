@@ -22,7 +22,7 @@ Use this when the client won’t start or it’s a duplicate.
 Steps: Bookings → Detail → Change status to Deleted.
 (You will still have a data in CRM under filstre Deleted bookings)
 
-![Screenshot](../../assets/images/common-booking-scenarios-01.png)
+![You will still have a data in CRM under filstre Deleted bookings)](../../assets/images/common-booking-scenarios-01.png)
 
 ## 2. How do I pause a booking?
 
@@ -70,7 +70,7 @@ Steps: Bookings → Detail → Status = Waitlist.
 Clients attending their first class will have a status Trial.
 Steps: Bookings → Check that status = Trial.
 
-![Screenshot](../../assets/images/common-booking-scenarios-02.png)
+![Steps: Bookings → Check that status = Trial](../../assets/images/common-booking-scenarios-02.png)
 
 ## 6. How do refunds work?
 
@@ -79,7 +79,7 @@ Applies to Stripe, not GoCardless, etc.
 Steps: Booking → Detail → Payments → Select transaction → Process refund.
 (Money is automatically sent to the client. Or note is created and manually process in your payment gateway. )
 
-![Screenshot](../../assets/images/common-booking-scenarios-03.png)
+![Money is automatically sent to the client. Or note is created and manually process in...](../../assets/images/common-booking-scenarios-03.png)
 
 ## 7. How do I handle missed classes?
 

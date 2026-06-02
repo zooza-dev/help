@@ -48,7 +48,7 @@ Important: Automatic pairing depends on how your bank provides transaction data.
  - The booking is in Unpaid status
  - The payment amount matches the expected amount due
 
-![Screenshot](../../assets/images/blocks-creation-07.png)
+![The payment amount matches the expected amount due](../../assets/images/blocks-creation-07.png)
 
 If all conditions are met, the payment is automatically paired with the booking. If not, the payment remains unassigned and can be paired manually in *Payments – Received payments*.
 
@@ -198,7 +198,7 @@ This situation usually occurs when you have enabled the setting *Automatically p
 
 Zooza > Settings > Payments
 
-![Screenshot](../../assets/images/payment-pairing-04.png)
+![Zooza > Settings > Payments](../../assets/images/payment-pairing-04.png)
 
 In this mode, Zooza pairs payments only if a booking already has an outstanding balance at the moment the payment is received.
 

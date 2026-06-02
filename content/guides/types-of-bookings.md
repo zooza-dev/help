@@ -38,7 +38,7 @@ The Trial Session status is visible on the booking only during the period when t
 
 Each booking contains an icon that shows what type it is.
 
-![Screenshot](../../assets/images/discount-code-01.png)
+![Each booking contains an icon that shows what type it is](../../assets/images/discount-code-01.png)
 Attention! The booking creation status is always the last record, previous records/changes are overwritten.
 
 ## Manually
@@ -57,7 +57,7 @@ The application administrator used the copy booking function and thus the client
 
 The application used the move booking function and thus the client's booking was moved to another programme/class.
 
-![Screenshot](../../assets/images/types-of-registrations-02.png)
+![The application used the move booking function and thus the client's booking was moved...](../../assets/images/types-of-registrations-02.png)
 
 ## Payment
 

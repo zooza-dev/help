@@ -28,7 +28,7 @@ Linking mandates is safe — no money will be collected until a payment plan is 
 2. Click Direct Debit (top menu)
 3. Click Migration
 
-![Screenshot](../../assets/images/gocardless-direct-debit-mandates-01.png)
+![Quick step-by-step](../../assets/images/gocardless-direct-debit-mandates-01.png)
 
 You will see this option only if:
 
@@ -38,11 +38,11 @@ You will see this option only if:
 1. A list of all Direct Debit mandates not yet linked in Zooza will be displayed
 2. Click Link next to a mandate
 
-![Screenshot](../../assets/images/gocardless-direct-debit-mandates-02.png)
+![Click Link next to a mandate](../../assets/images/gocardless-direct-debit-mandates-02.png)
 
 3. Choose the correct booking for that mandate
 
-![Screenshot](../../assets/images/gocardless-direct-debit-mandates-03.png)
+![Choose the correct booking for that mandate](../../assets/images/gocardless-direct-debit-mandates-03.png)
 
 4. Confirm OK
 

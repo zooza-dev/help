@@ -59,11 +59,11 @@ I also offer camps for children in the summer and will create a separate billing
 Billing periods are created in Settings and then added to the programme class. To set them up, proceed as follows:
 
 1. Click on the *Settings* tab in the left menu after logging into the app and then click on *Billing periods*
- ![Screenshot](../../assets/images/billing-periods-01.png)
+ ![Click on the Settings tab in the left menu after logging into the app and then click on...](../../assets/images/billing-periods-01.png)
 2. Click the *Create new billing period *button at the top of the screen
- ![Screenshot](../../assets/images/billing-periods-02.png)
+ ![Click the Create new billing period button at the top of the screen](../../assets/images/billing-periods-02.png)
 3. Enter the name of your billing period in the blank field and click *Add and Save*
- ![Screenshot](../../assets/images/billing-periods-03.png)
+ ![Enter the name of your billing period in the blank field and click Add and Save](../../assets/images/billing-periods-03.png)
 
 
 The billing period created in this way will be displayed in the list where you have the option to:
@@ -72,23 +72,23 @@ The billing period created in this way will be displayed in the list where you h
 2. set active period – pen icon
 3. delete – bin icon
 
-![Screenshot](../../assets/images/billing-periods-04.png)
+![Create billing period](../../assets/images/billing-periods-04.png)
 
 Active billing periods will also be displayed in the menu when creating/editing a programme class or transferring bookings. You won’t find inactive periods there. See the documentation for more information on the settings.
 
-![Screenshot](../../assets/images/discount-code-01.png)
+![Active billing periods will also be displayed in the menu when creating/editing a...](../../assets/images/discount-code-01.png)
 
 Note:
  All created billing periods and the classification of bookings
 within them are displayed only to the programme organizer. Clients do not
 see this setting.
 
-![Screenshot](../../assets/images/billing-periods-06.png)
+![Create billing period](../../assets/images/billing-periods-06.png)
 
 If you want to show inactive billing periods in the reports, you need to click *Show Inactive Periods* under *Settings*.
 
-![Screenshot](../../assets/images/billing-periods-07.png)
+![If you want to show inactive billing periods in the reports, you need to click Show...](../../assets/images/billing-periods-07.png)
 
-![Screenshot](../../assets/images/discount-code-01.png)
+![If you want to show inactive billing periods in the reports, you need to click Show...](../../assets/images/discount-code-01.png)
 
 Inactive periods are defined as those in which there has not been a single exercise in the last six months or is only used within the collection bins.

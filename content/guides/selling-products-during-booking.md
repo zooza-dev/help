@@ -24,7 +24,7 @@ In Zooza, selling a physical product during the booking (booking) flow is a two-
 2. Create a Product – class those services into one product called “T-shirt” and decide if it’s optional/mandatory Then you attach the product to a class / timetable, so it appears during booking and/or in the client profile.
 <br>
 
-![Screenshot](../../assets/images/selling-products-during-registration-01.png)
+![Overview](../../assets/images/selling-products-during-registration-01.png)
 
 ## Step 1: Create Services first (variants like sizes)
 
@@ -40,7 +40,7 @@ In Zooza, selling a physical product during the booking (booking) flow is a two-
 
 Why this step exists: Services work as the “items” (variants) inside a product.
 
-![Screenshot](../../assets/images/selling-products-during-registration-02.png)
+![Why this step exists: Services work as the “items” (variants) inside a product](../../assets/images/selling-products-during-registration-02.png)
 
 ## Step 2: Create the Product (the final thing you sell)
 
@@ -52,7 +52,7 @@ Why this step exists: Services work as the “items” (variants) inside a produ
 6. Or digital products (videos, ebooks, bundles) the same way (product + items)
 7. or combination
 
-![Screenshot](../../assets/images/selling-products-during-registration-03.png)
+![Step 2: Create the Product (the final thing you sell)](../../assets/images/selling-products-during-registration-03.png)
 
 ## Step 3: Add items (services) into the product
 
@@ -74,12 +74,12 @@ Save the product.
 
 1. Go to Timetable / Class
 2. Open the class settings and find Product settings
- ![Screenshot](../../assets/images/selling-products-during-registration-04.png)
+ ![Open the class settings and find Product settings](../../assets/images/selling-products-during-registration-04.png)
 
 3. Select which products you want to sell during booking - Choose “T-shirt”
 4. Optional (recommended):Enable Available in client profile
 5. This allows the product to be visible and purchasable from the parent / student profile after booking
- ![Screenshot](../../assets/images/selling-products-during-registration-05.png)
+ ![This allows the product to be visible and purchasable from the parent / student profile...](../../assets/images/selling-products-during-registration-05.png)
 6. Save
 
 ## Step 5: Test the booking flow
@@ -90,7 +90,7 @@ Save the product.
 4. When a size is selected, the total price increases accordinglyExample: Booking = £100
 5. Booking + T-shirt = £100 + T-shirt price
 
-![Screenshot](../../assets/images/selling-products-during-registration-06.png)
+![Booking + T-shirt = £100 + T-shirt price](../../assets/images/selling-products-during-registration-06.png)
 
 ## Notes & tips
 
@@ -100,7 +100,7 @@ Save the product.
 - You can sell videos/ebooks/bundles the same way—create product and attach to booking. (Delivery is handled by your digital delivery process outside this specific setup.)
 
 
-![Screenshot](../../assets/images/client-import-01.png)
+![You can sell videos/ebooks/bundles the same way—create product and attach to booking....](../../assets/images/client-import-01.png)
 
 ## What Zooza does (and what it doesn’t)
 

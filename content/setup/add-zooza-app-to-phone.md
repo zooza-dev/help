@@ -25,11 +25,11 @@ Zooza runs as a web app — there is no separate iOS or Android app to download.
 2. Open the share/options menu:
    - **Android** — tap the 3-dot menu (top right).
    - **iPhone** — tap the square icon with an arrow (bottom centre).
-   ![Screenshot](../../assets/images/add-zooza-app-to-phone-02.png)
+   ![iPhone — tap the square icon with an arrow (bottom centre)](../../assets/images/add-zooza-app-to-phone-02.png)
 3. Select **Add to Home Screen**.
-   ![Screenshot](../../assets/images/add-zooza-app-to-phone-03.png)
+   ![Select Add to Home Screen](../../assets/images/add-zooza-app-to-phone-03.png)
 4. Enter the name for the shortcut and tap **Add**.
-   ![Screenshot](../../assets/images/add-zooza-app-to-phone-04.png)
+   ![Enter the name for the shortcut and tap Add](../../assets/images/add-zooza-app-to-phone-04.png)
 
 > **Tip for instructors:** If you use Zooza mainly for taking attendance, open the **Calendar** section first and then add that page to your home screen. The next time you tap the icon, the calendar opens directly — no extra navigation needed.
 

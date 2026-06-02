@@ -319,7 +319,7 @@ Registrations are not in the Clients list — they are in **Bookings**. To find 
 2. Use the search field (supports name and email).
 3. Use filters: **Programme**, **Class**, **Status**, **Billing period**.
 
-If you are looking for a cancelled or deleted registration, see [Recover deleted registrations](trash-and-restore.md).
+If you are looking for a cancelled or deleted registration, see [Recover deleted registrations](../guides/trash-and-restore.md).
 
 ---
 
@@ -328,5 +328,5 @@ If you are looking for a cancelled or deleted registration, see [Recover deleted
 - [Active and inactive clients](../guides/active-inactive-clients.md) — what active/inactive status means and how it affects your service package.
 - [Data Correction Guide](../guides/data-correction-change-client.md) — step-by-step guide to correcting client data.
 - [Client Import Guide](../guides/client-import.md) — how to import clients from a CSV file.
-- [Recover deleted registrations](trash-and-restore.md) — restore items from Trash.
+- [Recover deleted registrations](../guides/trash-and-restore.md) — restore items from Trash.
 - [Common Booking Scenarios](../faq/common-booking-scenarios.md) — FAQ for booking-related tasks.

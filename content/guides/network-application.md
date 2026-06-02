@@ -20,7 +20,7 @@ The Network Application is a centralized reporting and management platform desig
 
 These metrics can be analyzed across various dimensions—by franchise company, location, product or specific time periods—enabling deep, actionable insights through intuitive drill-down capabilities.
 
-![Screenshot](../../assets/images/customizing-widgets-01.png)
+![These metrics can be analyzed across various dimensions—by franchise company, location,...](../../assets/images/customizing-widgets-01.png)
 
 A key strength of the application is its customizability. The franchisor has full control to:
 
@@ -83,7 +83,7 @@ The number of bookings created within the selected period, aggregated across all
 
  The number of active clients with booking status "Registered" as of the current run date (T-1). For broader date ranges, this is shown as an average across the selected periods.
 
-![Screenshot](../../assets/images/client-import-01.png)
+![The number of active clients with booking status "Registered" as of the current run...](../../assets/images/client-import-01.png)
 
 Note: Early in a new period, you may see only a few New Enrollments, but the total Enrollments remains high due to ongoing bookings from earlier periods.
 
@@ -106,7 +106,7 @@ Number of enrollments that have completed all sessions and ended successfully wi
 
 The total value of credit-based payments received during the selected period. Over larger date ranges (e.g. quarters), the value is cumulative.
 
-![Screenshot](../../assets/images/client-import-01.png)
+![The total value of credit-based payments received during the selected period. Over...](../../assets/images/client-import-01.png)
 
 Note: The value can occasionally be negative if the sum of corrections on a given day exceeds newly received payments.
 
@@ -114,7 +114,7 @@ Note: The value can occasionally be negative if the sum of corrections on a give
 
 Net Revenue represents the actual earned revenue within the selected period. It is calculated by adjusting the total received payments to account for total debt, granted discounts and issued refunds. This metric provides a more accurate reflection of real income by removing expected but unrealized or reduced revenue elements.
 
-![Screenshot](../../assets/images/blocks-creation-07.png)
+![Net Revenue represents the actual earned revenue within the selected period. It is...](../../assets/images/blocks-creation-07.png)
 
 Net Revenue = Received payments - Debt - Discounts - Refunds.
 
@@ -140,5 +140,5 @@ Total sessions that have recorded either attendance or public session note.
 
 The number of unique instructors assigned to sessions within the selected period.
 
-![Screenshot](../../assets/images/client-import-01.png)
+![The number of unique instructors assigned to sessions within the selected period](../../assets/images/client-import-01.png)
 Note: This metric excludes sessions where the instructor is yet to be decided.

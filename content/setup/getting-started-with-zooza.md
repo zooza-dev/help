@@ -16,7 +16,7 @@ last_converted: "2026-02-11"
 
 # Getting Started with Zooza
 
-![Screenshot](../../assets/images/customizing-widgets-01.png)
+![Getting Started with Zooza](../../assets/images/customizing-widgets-01.png)
 
 From First Login to Everyday Use
 
@@ -51,7 +51,7 @@ You don’t need to be “techy”. If you follow this guide, in about 30-60 min
 
 You can imagine it like this:
 
-![Screenshot](../../assets/images/individual-lessons-climbing-wall-02.png)
+![You can imagine it like this](../../assets/images/individual-lessons-climbing-wall-02.png)
 
 Programme → Timetable → Sessionsand on each timetable you have Bookings from Clients (Parents).
 
@@ -76,7 +76,7 @@ If you need more detail, see: Glossary of Key Terms (at the end of this article)
 13. Pay-per-session / drop in?
 14. This will help you pick the right payment template in the next steps.
 
-![Screenshot](../../assets/images/customizing-widgets-01.png)
+![This will help you pick the right payment template in the next steps](../../assets/images/customizing-widgets-01.png)
 
 TipIf you are unsure, start with Term Payment (price per term, split into instalments).You can refine and add more payment models later.
 
@@ -156,7 +156,7 @@ This tells Zooza:
 - for which amounts,
 - how to show them to parents.
 
-![Screenshot](../../assets/images/customizing-widgets-01.png)
+![how to show them to parents](../../assets/images/customizing-widgets-01.png)
 
 Tip – Payment templates
 

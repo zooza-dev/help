@@ -8,7 +8,7 @@ sub_area: ""
 audience: ["admin"]
 tags: ["registration", "booking", "status", "pending", "awaiting-payment", "cancelled", "lost", "active"]
 status: "published"
-related_articles: ["trash-and-restore", "trials-daily-business", "awaiting-payment-grace-period"]
+related_articles: ["trash-and-restore", "trials-daily-business", "auto-cancel-unpaid-registrations"]
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
@@ -85,7 +85,7 @@ No. **Cancelled** and **Deleted** are different:
 
 A cancelled registration still exists in the system and can be reactivated. A deleted registration is in the Trash and needs to be restored from there.
 
-See [Recover deleted registrations, classes, and sessions](trash-and-restore.md) for the full restore workflow.
+See [Recover deleted registrations, classes, and sessions](../guides/trash-and-restore.md) for the full restore workflow.
 
 ---
 
@@ -115,6 +115,6 @@ Not all status changes are available in all directions. If you cannot find the t
 
 ## Related
 
-- [Recover deleted registrations](trash-and-restore.md) — restore from Trash.
-- [Manage trial bookings](trials-daily-business.md) — trial status workflow.
-- [Awaiting payment grace period](awaiting-payment-grace-period.md) — how auto-delete for non-payment works.
+- [Recover deleted registrations](../guides/trash-and-restore.md) — restore from Trash.
+- [Manage trial bookings](../guides/trials-daily-business.md) — trial status workflow.
+- [Automatically cancel unpaid registrations](../guides/auto-cancel-unpaid-registrations.md) — how auto-delete for non-payment works.

@@ -222,7 +222,7 @@ If a class uses [Blocks](blocks-configuration.md), trials can cause overcapacity
 
 ## Related guides
 
-- [Set up trials in a programme](trials-setup.md)
+- [Set up trials in a programme](../setup/trial-sessions.md)
 - [Auto-enrolment responses](auto-enrolment-responses.md)
 - [Transfer and copy bookings](transfer-and-copy-bookings.md)
 - [Programmes, classes, and sessions explained](programme-class-session-definition.md)

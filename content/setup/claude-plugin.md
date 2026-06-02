@@ -78,6 +78,15 @@ Claude asks for any missing details one at a time — days, time, number of sess
 **Mark attendance**
 > *"Mark attendance for today's 10am dance class — Peter and Sofia were absent"*
 
+**When a parent calls to report an absence**
+> *"Remove Sofia from today's 3pm gymnastics session"*
+
+You can ask Claude while handling the call — no need to navigate to the attendance screen first. Claude confirms the change and shows which session was updated.
+
+<video controls width="100%" style={{borderRadius: '8px', marginBottom: '1rem'}}>
+  <source src="/video/mcp-demo-cancel-session-voice.mp4" type="video/mp4" />
+</video>
+
 **Add a session note**
 > *"Add a summary to today's session: focused on breathing, 8 students attended"*
 
@@ -115,6 +124,20 @@ Saving only happens after your explicit confirmation.
 ## Works in multiple languages
 
 Claude responds in the language you write in — Slovak, Czech, Hungarian, Romanian, English, or any other language Claude supports. Data from Zooza is displayed in your account's configured language.
+
+---
+
+## What it can't do yet
+
+Some things still require the Zooza web app directly:
+
+- Creating or editing **programmes** (Claude can read them, not create)
+- **Payment** processing, refunds, or invoicing
+- **Bulk operations** — e.g. cancelling an entire class run or reassigning all clients
+- Sending **email or WhatsApp** messages to clients
+- Managing **staff accounts** or access permissions
+
+These are planned for future versions. If something is missing that would help your workflow, use the feedback skill: *"I want to suggest a feature."*
 
 ---
 

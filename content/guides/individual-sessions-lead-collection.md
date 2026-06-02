@@ -31,10 +31,10 @@ Based on the above, start making an offer as follows:
 1. Create classes as Lead collection in a given programme. Interested parties will gradually enrol in the class and wait for instructions. Don’t forget to edit the email template that will come as a confirmation of inclusion in the class – *Lead collection*.[Instructions](lead-collection.md)
 2. Create an individual class. Then create sessions for individual bookings by creating a class of one capacity. [Instructions](creating-a-class.md)
 3. Move the client from the lead collection class to an individual class. Create session dates and move the given booking to this class from the class – *Lead collection*. In the booking details, click on the *Class* tab and then on the *Move* option where you select where.
- ![Screenshot](../../assets/images/individual-lessons-group-interested-01.png)
- ![Screenshot](../../assets/images/individual-lessons-group-interested-02.png)
+ ![Move the client from the lead collection class to an individual class. Create session...](../../assets/images/individual-lessons-group-interested-01.png)
+ ![Move the client from the lead collection class to an individual class. Create session...](../../assets/images/individual-lessons-group-interested-02.png)
 4. Choose the client’s first session or let him choose it himself. In the client’s attendance section, sign the client in for the session or they can do so in their profile.
- ![Screenshot](../../assets/images/individual-lessons-group-interested-03.png)
+ ![Choose the client’s first session or let him choose it himself. In the client’s...](../../assets/images/individual-lessons-group-interested-03.png)
 
 
 Summary for open sessions:
@@ -44,5 +44,5 @@ Summary for open sessions:
 3. The client signs up for the session in the profile by selecting it or you select the appointment for the client in the booking details. In both cases, the debt for that session is immediately created; if there is a credit, it is deducted from the credit.
 4. If the session is cancelled, the credit will be refunded. If the session is moved in time, the credit remains applied.
 
-![Screenshot](../../assets/images/discount-code-01.png)
+![If the session is cancelled, the credit will be refunded. If the session is moved in...](../../assets/images/discount-code-01.png)
 Note: If you do not want to display the class in the public calendar menu or booking form, just uncheck the class in the programme properties and save the change. You leave the lead collection class up for booking and the other individual classes remain hidden.

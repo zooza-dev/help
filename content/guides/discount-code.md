@@ -20,14 +20,14 @@ A discount code is one of the types of client discounts you will find within the
 
 >**Note:** The discount can only be applied to programmes by entering the code in the booking form. In order for clients to be able to enter the code, you must enable the *Discount* field in the main settings under *Booking Forms – Booking Form*.
 
-![Screenshot](../../assets/images/discount-code-02.png)
+![The discount can only be applied to programmes by entering the code in the booking...](../../assets/images/discount-code-02.png)
 
 ## Creating a discount code
 
 - In the *Payments* category, click on the *Discounts* section
 - In the *Discount Code* section, click on the *Create* button
 
-![Screenshot](../../assets/images/discount-code-03.png)
+![In the Discount Code section, click on the Create button](../../assets/images/discount-code-03.png)
 - Enter:
 	- name under which you will register it in the application
 	- code that you will provide to your clients, which they will enter into the booking form
@@ -37,11 +37,11 @@ A discount code is one of the types of client discounts you will find within the
 		- percentage - in this case you have the option to set a limit, which is applied as the maximum value of the discount granted 
 	- code validity
 
-![Screenshot](../../assets/images/discount-code-04.png)
+![Creating a discount code](../../assets/images/discount-code-04.png)
 
 Set the conditions where the code can be applied by clicking the *Change* button
 
-![Screenshot](../../assets/images/discount-code-05.png)
+![Set the conditions where the code can be applied by clicking the Change button](../../assets/images/discount-code-05.png)
 
 You can apply the code in:
 - Programmes
@@ -49,17 +49,17 @@ You can apply the code in:
 - Locations
 - Products
 
-![Screenshot](../../assets/images/discount-code-06.png)
+![Creating a discount code](../../assets/images/discount-code-06.png)
 
 >**Attention!** Remember to save your choice before proceeding to the next step.
 
  To finish creating the code, press *Start* to confirm your settings.
 
-![Screenshot](../../assets/images/discount-code-08.png)
+![To finish creating the code, press Start to confirm your settings](../../assets/images/discount-code-08.png)
 
 In the next step, Zooza will allow you to look at the created code as a whole, where you will see basic information as well as a graph of usage or number of uses. In this section you have the option to change the code if you decide to use different settings.
 
-![Screenshot](../../assets/images/discount-code-09.png)
+![In the next step, Zooza will allow you to look at the created code as a whole, where...](../../assets/images/discount-code-09.png)
 
 ## Client use of discount code
 
@@ -69,25 +69,25 @@ can immediately check the amount of the discount you have given them.
 
 >**Note:** The discount code cannot be used in the product form, the discount is only valid for programme booking, it does not affect products.
 
-![Screenshot](../../assets/images/discount-code-11.png)
+![The discount code cannot be used in the product form, the discount is only valid for...](../../assets/images/discount-code-11.png)
 
 ## Where can I see the discount code in Zooza?
 
 1. Booking level
 2. In a specific client booking in *Payments* section
- ![Screenshot](../../assets/images/discount-code-12.png)
+ ![In a specific client booking in Payments section](../../assets/images/discount-code-12.png)
 3. In *Credits and make-up sessions* section – when you click on the *More* button, you will see the name of the code applied at booking.
- ![Screenshot](../../assets/images/discount-code-13.png)
+ ![In Credits and make-up sessions section – when you click on the More button, you will...](../../assets/images/discount-code-13.png)
 
 Client level
 
 1. At the bottom of the client overview, you have the option to see all the credits associated with the client. One of the entries is also a discount code that will appear after a client registered for a programme.
- ![Screenshot](../../assets/images/discount-code-14.png)
+ ![At the bottom of the client overview, you have the option to see all the credits...](../../assets/images/discount-code-14.png)
 
 Discount level
 
 1. In the *Payments* category of the *Discounts* section, you have a view of the code redemption in its summary – when and where it was redeemed, how many codes were redeemed, and at what value.
 2. In order to see the discount code overview click on the name of the discount code:
- ![Screenshot](../../assets/images/discount-code-15.png)
+ ![In order to see the discount code overview click on the name of the discount code](../../assets/images/discount-code-15.png)
 3. You will then see a detailed code report – setup detail, insight graph and list where the code was used.
- ![Screenshot](../../assets/images/discount-code-16.png)
+ ![You will then see a detailed code report – setup detail, insight graph and list where...](../../assets/images/discount-code-16.png)

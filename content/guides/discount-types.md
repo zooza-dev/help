@@ -64,12 +64,12 @@ You can set up discounts in two places within the app. However, there is a diffe
 
 At the booking level, you can manage and view client discounts/credits in Credits and make-up sessions. This view is very individual and you can only see specific discount and credits that a given client has used. We recommend working with discounts/credits at this level when you want to address a specific client and their individual needs on a programme.
 
-![Screenshot](../../assets/images/discount-types-07.png)
+![At the booking level, you can manage and view client discounts/credits in Credits and...](../../assets/images/discount-types-07.png)
 
 ## Category Discounts
 
 At the discounts level in the *Payments* section, you have the option to look at discounts as a whole. This means you get an overview of where, how much and at what value discounts have been applied. This can be used as a report of all discounts and is recommended if you want to have an overview of the total use of discounts as such.
 
-![Screenshot](../../assets/images/discount-types-08.png)
+![At the discounts level in the Payments section, you have the option to look at...](../../assets/images/discount-types-08.png)
 
-![Screenshot](../../assets/images/discount-types-09.png)
+![At the discounts level in the Payments section, you have the option to look at...](../../assets/images/discount-types-09.png)

@@ -45,7 +45,7 @@ You have 2 options to choose from:
 
 When choosing Stripe, clients will be able to save their card after payment, making it easier for them to pay in the future. This means that when a client wants to pay for another programme or service/product, the payment gateway will offer them the card that was saved the first time they used it. If the client does not set the card to be saved differently the first time they make a payment, for security reasons, they will also need to authorize the payment using the 3D Secure protocol for subsequent payments.
 
-![Screenshot](../../assets/images/discount-code-01.png)
+![When choosing Stripe, clients will be able to save their card after payment, making it...](../../assets/images/discount-code-01.png)
 
 Note: Information on how and if a payment was made via Stripe is visible on the booking details in the Payments section. If the payment does not go through, the system will try again a total of 3 times – these attempts will show up in the Transaction Statement/Online Payments table on booking.
 

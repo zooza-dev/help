@@ -41,7 +41,7 @@ Both types work the same way in the booking flow. Choose based on whether you wa
 
    ![Items for sale](../../assets/images/entry-pass-items-for-sale.png "Items for sale section")
 
-   ![Add item](../../assets/images/entry-pass-add-item.png "Add new item dialog")
+   ![Go to Items for sale → click Add](../../assets/images/entry-pass-add-item.png "Add new item dialog")
 4. Select **Entry Pass** as the item type.
 5. Set the **value** (number of entries or credit amount), **validity period**, **price**, and whether the item is **mandatory**.
 6. To offer a discount, set the price lower than the value (e.g. 10 entries for 80 EUR instead of 100 EUR).

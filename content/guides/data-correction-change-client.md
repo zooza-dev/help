@@ -37,25 +37,25 @@ We may reject your application for two reasons:
 ## Data correction
 
 1. The client data change request must be completed at the client level by clicking on the *Data correction* button.
- ![Screenshot](../../assets/images/data-correction-change-client-01.png)
+ ![The client data change request must be completed at the client level by clicking on the...](../../assets/images/data-correction-change-client-01.png)
  
 2. You will then be presented with a screen that allows you to enter a new request, as well as an overview of all pending requests.
 3. To create a new request, click on the New Request button and fill in the form.
- ![Screenshot](../../assets/images/data-correction-change-client-02.png)
+ ![To create a new request, click on the New Request button and fill in the form](../../assets/images/data-correction-change-client-02.png)
 
 4. Once you have filled in the required details to make the change, just click the Submit button. You can then find your requests in the application list and just wait for them to be processed. Changes to a client’s details usually occur within 2 days of the request being made.
- ![Screenshot](../../assets/images/data-correction-change-client-03.png)
+ ![Once you have filled in the required details to make the change, just click the Submit...](../../assets/images/data-correction-change-client-03.png)
 
 ## Client change/booking change
 
 Changing a client, or in other words overwriting a booking, may at first glance appear to be the same as changing a client’s details. But it’s the opposite, in the sense that when you change the client, you’re just overwriting the booking under a different client than the one that was originally created. Thus, it is not a change of data on all its bookings, but only an overwriting of one booking.
 
-![Screenshot](../../assets/images/client-import-01.png)
+![Changing a client, or in other words overwriting a booking, may at first glance appear...](../../assets/images/client-import-01.png)
 
 
 The only condition of the override is that the client you wish to overwrite must be enroled as a client and thus have another booking of any/all status.
 
 1. To change the booking to a another client, click the *Change Client* button in the booking details.
- ![Screenshot](../../assets/images/data-correction-change-client-05.png)
+ ![To change the booking to a another client, click the Change Client button in the...](../../assets/images/data-correction-change-client-05.png)
 2. In the Client field, enter the email or name of the client to whom you want to overwrite the booking and click the *Search* button followed by *Select*.
- ![Screenshot](../../assets/images/data-correction-change-client-06.png)
+ ![In the Client field, enter the email or name of the client to whom you want to...](../../assets/images/data-correction-change-client-06.png)

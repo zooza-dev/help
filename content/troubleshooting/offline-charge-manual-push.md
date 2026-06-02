@@ -68,5 +68,5 @@ If neither indicator appears, offline charging may not be enabled on this paymen
 
 ## Related
 
-- [GoCardless Direct Debit](../setup/gocardless-direct-debit-mandates.md)
+- [GoCardless Direct Debit](../guides/gocardless-direct-debit-mandates.md)
 - [Payment schedules](../guides/ad-hoc-scheduled-payment.md)

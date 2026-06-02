@@ -1,11 +1,27 @@
 #!/usr/bin/env bash
-# Deploy Help to staging from local Mac Mini.
+# Deploy Help to STAGING from local Mac Mini.
 # Run: bash scripts/deploy-staging.sh
+#
+# ⚠️  THIS SCRIPT DEPLOYS TO STAGING ONLY — NOT PRODUCTION.
+#    For production use GitHub Actions: deploy-help-production workflow.
 #
 # Reads credentials from .env.staging in repo root (never commit that file).
 # First-time setup: see STAGING-SETUP.md
 
 set -e
+
+# ── Safety guard — prevent accidental production use ──────────────────────────
+if [[ "${FORCE_STAGING:-}" != "yes" ]]; then
+  echo ""
+  echo "⚠️  This script deploys to STAGING (staging-help.zooza.online)."
+  echo "   For production, trigger the GitHub Actions workflow instead."
+  echo ""
+  read -r -p "Continue with STAGING deploy? [y/N] " confirm
+  if [[ "$confirm" != "y" && "$confirm" != "Y" ]]; then
+    echo "Aborted."
+    exit 0
+  fi
+fi
 
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 ENV_FILE="$REPO_ROOT/.env.staging"

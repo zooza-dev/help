@@ -18,7 +18,7 @@ last_converted: "2026-02-11"
 
 When you are a new client, or if you need to move existing clients from one Zooza account to another, the Client Import feature can save you time.
 
-![Screenshot](../../assets/images/client-import-01.png)
+![When you are a new client, or if you need to move existing clients from one Zooza...](../../assets/images/client-import-01.png)
 
 Important: Before starting the import, make sure the required programmes and classes are already created in Zooza. Clients can only be imported into existing classes.
 
@@ -39,9 +39,9 @@ Important: Before starting the import, make sure the required programmes and cla
 
 The table in Excel will look like this:
 
-![Screenshot](../../assets/images/client-import-02.png)
+![The table in Excel will look like this](../../assets/images/client-import-02.png)
 
-![Screenshot](../../assets/images/client-import-03.png)
+![The table in Excel will look like this](../../assets/images/client-import-03.png)
 
 Important! To successfully import your data, save the spreadsheet in .csv format. Other Excel formats will not work.
 
@@ -49,18 +49,18 @@ Important! To successfully import your data, save the spreadsheet in .csv format
 ## Import to Zooza
 
 1. In Zooza, go to the *Clients* tab in the menu and click *Import*.
- ![Screenshot](../../assets/images/client-import-04.png)
+ ![In Zooza, go to the Clients tab in the menu and click Import](../../assets/images/client-import-04.png)
 2. Create a new import by clicking the *Import* button.
- ![Screenshot](../../assets/images/client-import-05.png)
+ ![Create a new import by clicking the Import button](../../assets/images/client-import-05.png)
 3. Upload the .csv file you prepared.
- ![Screenshot](../../assets/images/client-import-06.png)
+ ![Upload the .csv file you prepared](../../assets/images/client-import-06.png)
 4. Map the spreadsheet headers to the corresponding Zooza fields (as shown in the example image) and click *Continue*.
- ![Screenshot](../../assets/images/client-import-07.png)
+ ![Map the spreadsheet headers to the corresponding Zooza fields (as shown in the example...](../../assets/images/client-import-07.png)
 5. If the classes already exist in Zooza, assign clients to the appropriate classes and click *Continue*.
- ![Screenshot](../../assets/images/client-import-08.png)
+ ![If the classes already exist in Zooza, assign clients to the appropriate classes and...](../../assets/images/client-import-08.png)
 6. Zooza will validate each row of your spreadsheet and notify you if any data is incorrectly formatted. You can then adjust your spreadsheet and re-import the file.
 
-![Screenshot](../../assets/images/blocks-creation-14.png)
+![Zooza will validate each row of your spreadsheet and notify you if any data is...](../../assets/images/blocks-creation-14.png)
 
 Notes:
 
@@ -68,7 +68,7 @@ Notes:
 2. You can perform a partial import from your spreadsheet to verify that you are importing the correct clients into the right classes.
 3. Processing starts immediately after upload — there is no waiting period. You can track the real-time progress in the **List of Imports**.
 
-![Screenshot](../../assets/images/client-import-10.png)
+![Processing starts immediately after upload — there is no waiting period. You can track...](../../assets/images/client-import-10.png)
 
 ## Import statuses
 

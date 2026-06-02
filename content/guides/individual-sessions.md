@@ -36,11 +36,11 @@ This guide explains a practical workflow for individual (1:1) sessions in Zooza:
 3. Set the programme type to Ongoing (Booking for the full programme duration)
 4. Save
 
-![Screenshot](../../assets/images/customizing-widgets-01.png)
+![Step 1: Create a programme for “Individual sessions”](../../assets/images/customizing-widgets-01.png)
 
 Tip: Keep the programme simple. The goal is to have a “container” to collect interest and later manage bookings.
 
-![Screenshot](../../assets/images/individual-sessions-02.png)
+![Keep the programme simple. The goal is to have a “container” to collect interest and...](../../assets/images/individual-sessions-02.png)
 
 ## Step 2: Create a class without sessions (for lead collection)
 
@@ -51,7 +51,7 @@ Tip: Keep the programme simple. The goal is to have a “container” to collect
 
 Result: you can collect bookings even though there are no sessions yet. You now have bookings in Zooza, ready to be assigned to an individual plan.
 
-![Screenshot](../../assets/images/individual-sessions-03.png)
+![Result: you can collect bookings even though there are no sessions yet. You now have...](../../assets/images/individual-sessions-03.png)
 
 
 ## Step 3: Collect bookings (interest)
@@ -84,7 +84,7 @@ A) From the Client profile
 - Open Zooza > Clients > Bookings
 - Use an action Create booking
 
-![Screenshot](../../assets/images/individual-sessions-04.png)
+![Use an action Create booking](../../assets/images/individual-sessions-04.png)
 
 B) Copy an existing booking
 
@@ -92,10 +92,10 @@ B) Copy an existing booking
 - Use Copy booking
 - Adjust programme/class/payment plan
 
-![Screenshot](../../assets/images/individual-sessions-05.png)
+![Adjust programme/class/payment plan](../../assets/images/individual-sessions-05.png)
 
 
-![Screenshot](../../assets/images/customizing-widgets-01.png)
+![Adjust programme/class/payment plan](../../assets/images/customizing-widgets-01.png)
 ## Optional: Share a private booking link for a specific individual class
 
 Sometimes you want the class to stay non-public, but still allow the parent to register online (instead of you creating the booking manually).
@@ -112,11 +112,11 @@ You can do this by sharing a private booking link to that specific class/class.
 1. Open the individual class (e.g. “1:1 – John Smith”)
 2. Find the option to copy the booking URL:
    Copy URL
- ![Screenshot](../../assets/images/individual-sessions-07.png)
+ ![Steps](../../assets/images/individual-sessions-07.png)
 
    or Customized link
- ![Screenshot](../../assets/images/individual-sessions-08.png)
- ![Screenshot](../../assets/images/individual-sessions-09.png)
+ ![Steps](../../assets/images/individual-sessions-08.png)
+ ![Steps](../../assets/images/individual-sessions-09.png)
 
 3. Send this link to the parent.
 
@@ -134,9 +134,9 @@ This is the core model: one client = one private plan (one private class, sessio
 3. or “John Smith (Individual Plan)”
 4. Disable online booking (so it’s not publicly bookable) (during the process of class creation, or in the class settings).
 
-![Screenshot](../../assets/images/individual-sessions-10.png)
+![Disable online booking (so it’s not publicly bookable) (during the process of class...](../../assets/images/individual-sessions-10.png)
 
-![Screenshot](../../assets/images/customizing-widgets-01.png)
+![Disable online booking (so it’s not publicly bookable) (during the process of class...](../../assets/images/customizing-widgets-01.png)
 
 Use this setting:
 
@@ -150,11 +150,11 @@ Now add the real schedule for that client.
 
 Example: every Tuesday at 10:00.
 
-[![Screenshot](../../assets/images/customizing-widgets-01.png)
+[![Example: every Tuesday at 10:00](../../assets/images/customizing-widgets-01.png)
 
 Guide: Creating a class](creating-a-class.md)
 
-![Screenshot](../../assets/images/customizing-widgets-01.png)
+![Guide: Creating a class](creating-a-class.md)](../../assets/images/customizing-widgets-01.png)
 
 Tip: You can create sessions as:
 
@@ -165,11 +165,11 @@ Tip: You can create sessions as:
 
 If you want to allow a client to cancel and pick another available time, enable custom make-up sessions.
 
-[![Screenshot](../../assets/images/customizing-widgets-01.png)
+[![If you want to allow a client to cancel and pick another available time, enable custom...](../../assets/images/customizing-widgets-01.png)
 
 Guide: Custom make-up sessions](https://support.zooza.online/portal/en/kb/articles/replacement-sessions)
 
-![Screenshot](../../assets/images/customizing-widgets-01.png)
+![Guide: Custom make-up...](../../assets/images/customizing-widgets-01.png)
 
 Typical use-case:
 
@@ -186,7 +186,7 @@ This is especially useful if:
 - client pays per block (e.g. 10 sessions)
 - you want a tailored schedule (down payment, recurring invoices, etc.)
 
-[![Screenshot](../../assets/images/customizing-widgets-01.png)
+[![you want a tailored schedule (down payment, recurring invoices, etc.)](../../assets/images/customizing-widgets-01.png)
 
 Guide: Payment templates on booking](https://support.zooza.online/portal/en/kb/articles/payment-templates-creation)
 

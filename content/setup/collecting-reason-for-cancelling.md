@@ -38,7 +38,7 @@ There are two places in the app where you can record the reasons for opting out:
 
 You can record the reasons manually. Unless recording the reasons is enabled in the profile, clients will not see the reason logging form.
 
-![Screenshot](../../assets/images/allowing-multiple-registration-03.png)
+![You can record the reasons manually. Unless recording the reasons is enabled in the...](../../assets/images/allowing-multiple-registration-03.png)
 
 
 Note: Clients do not see the actual reason for opting out under any circumstances. Regardless of whether the collection of reasons is activated or not.
@@ -48,11 +48,11 @@ Note: Clients do not see the actual reason for opting out under any circumstance
 
 In the *Settings *tab, click *Booking Forms, *under *Profile*.
 
-![Screenshot](../../assets/images/collecting-reason-for-cancelling-02.png)
+![In the Settings tab, click Booking Forms, under Profile](../../assets/images/collecting-reason-for-cancelling-02.png)
 
 Under *Reason for cancelling*, select one of the three options:
 
-![Screenshot](../../assets/images/collecting-reason-for-cancelling-03.png)
+![Under Reason for cancelling, select one of the three options](../../assets/images/collecting-reason-for-cancelling-03.png)
 
 The biggest difference between the other two options is that in the first case, the reason for opting out is mandatory and the client has to enter it in order to opt out. In the second case, the submission of the reason for opting-out is voluntary.
 
@@ -61,7 +61,7 @@ The biggest difference between the other two options is that in the first case, 
 
 At the time the client chooses to cancel, a form will be displayed prompting the client to enter a reason.
 
-![Screenshot](../../assets/images/collecting-reason-for-cancelling-04.png)
+![At the time the client chooses to cancel, a form will be displayed prompting the client...](../../assets/images/collecting-reason-for-cancelling-04.png)
 
 The client chooses one of the options and clicks the* opt-out* button to opt-out of the session.
 

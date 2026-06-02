@@ -28,7 +28,7 @@ You can set the VAT level in 3 places:
 
 First you need to create a VAT level, which will then appear on invoices for your clients. This setting is visible in the Settings - Invoicing section, where you will find a tile called VAT at the bottom of the screen. Here you can define the amount of tax that will be automatically applied when invoicing.
 
-![Screenshot](../../assets/images/vat-management-01.png)
+![First you need to create a VAT level, which will then appear on invoices for your...](../../assets/images/vat-management-01.png)
 
 When configuring VAT in the application, you have a choice of two ways to apply it:
 
@@ -37,7 +37,7 @@ When configuring VAT in the application, you have a choice of two ways to apply 
 
 Depending on your organisation's requirements and accounting, you can create the level of VAT that will be applied to your invoicing.
 
-![Screenshot](../../assets/images/individual-lessons-climbing-wall-02.png)
+![Depending on your organisation's requirements and accounting, you can create the level...](../../assets/images/individual-lessons-climbing-wall-02.png)
 Exmple: I own a sports club where I offer different types of training. I am a VAT payer and have to quote 23% VAT on invoices for each training session. I will set this rate as the VAT rate with the no VAT on gross method so that the system will correctly calculate the tax on the total programme price entered. I then apply this level of VAT in the invoice profiles.
 
 ## 2. Invoice profile
@@ -49,7 +49,7 @@ If you have enabled automatic invoice generation, it is important to set the VAT
 3. Select the default VAT value.
 4. If you want the VAT value to be displayed on the invoice, tick the Display VAT payment on invoice option.
 
-![Screenshot](../../assets/images/vat-management-03.png)
+![If you want the VAT value to be displayed on the invoice, tick the Display VAT payment...](../../assets/images/vat-management-03.png)
 
 ## 3. Booking level
 
@@ -60,4 +60,4 @@ If you do not have automatic invoice generation enabled, or if you need to issue
 3. Select an invoicing profile (other than the default) and then the VAT level.
 4. Click on Generate Invoice.
 
-![Screenshot](../../assets/images/vat-management-04.png)
+![Click on Generate Invoice](../../assets/images/vat-management-04.png)

@@ -34,7 +34,7 @@ At the moment Zooza provides all kinds of static data about programmes, bookings
 
 The attendance table records a detailed history of each participant’s attendance for a session. Each row represents a single attendance instance linked to a specific booking. Key information captured in this table includes session type (standard, make-up session), attendance status, records whether the upcoming session notification email was sent to this attendance record.
 
-![Screenshot](../../assets/images/customizing-widgets-01.png)
+![The attendance table records a detailed history of each participant’s attendance for a...](../../assets/images/customizing-widgets-01.png)
 
 Tip: To assemble a complete view of each participant’s journey, join Attendance with table Bookings, Schedules, Programmes or Sessions.
 
@@ -67,7 +67,7 @@ The Sessions table stores every session instance - both scheduled and deleted - 
 
 Labels applied to highlight programmes, classes, or bookings appear in this table and it contains all information just like in Zooza’s Labels section.
 
-![Screenshot](../../assets/images/customizing-widgets-01.png)
+![Labels applied to highlight programmes, classes, or bookings appear in this table and...](../../assets/images/customizing-widgets-01.png)
 
 Tip: We recommend joining it with a schedules table with __calc__public__labels.
 
@@ -95,7 +95,7 @@ The Schedules table stores every detail visible in the class detail view, includ
 5. Performance Metrics: average feedback score and session count
 6. Instructor details including rates
 
-![Screenshot](../../assets/images/customizing-widgets-01.png)
+![Instructor details including rates](../../assets/images/customizing-widgets-01.png)
 
 Tip: Because it aggregates both static settings and dynamic metrics, you can join Schedules with any related table—by schedule_id, course_id, instructor_id, or place_id—to build a complete view.
 
@@ -103,7 +103,7 @@ Tip: Because it aggregates both static settings and dynamic metrics, you can joi
 
 This table records instructor rates—including a recalculated unit_amount (per-minute rate for consistency across varying durations)—and is referenced by the Schedules and Sessions tables.
 
-![Screenshot](../../assets/images/customizing-widgets-01.png)
+![This table records instructor rates—including a recalculated unitamount (per-minute...](../../assets/images/customizing-widgets-01.png)
 
 Tip: Join on trainer_rate_type and trainer_id with the Instructor Rates Types and Schedules tables.
 

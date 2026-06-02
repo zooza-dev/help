@@ -28,9 +28,9 @@ This change also works retroactively — if you delete all sessions from a class
 
 You can see whether it is a lead collection class or a class with sessions based on the name of the class.
 
-![Screenshot](../../assets/images/group-interested-02.png)
+![You can see whether it is a lead collection class or a class with sessions based on the...](../../assets/images/group-interested-02.png)
 
-![Screenshot](../../assets/images/group-interested-03.png)
+![You can see whether it is a lead collection class or a class with sessions based on the...](../../assets/images/group-interested-03.png)
 
 ## What the client sees
 
