@@ -83,6 +83,6 @@ From the booking detail you can:
 
 ## Related
 
-- [Allowing multiple bookings per client](allowing-multiple-booking.md)
+- [Allowing multiple bookings per client](booking-faq.md)
 - [Managing client attendance — admin](admin-attendance-management.md)
 - [Make-up session — complete guide](replacement-hours-complete.md)

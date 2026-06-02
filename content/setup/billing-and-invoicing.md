@@ -135,7 +135,7 @@ All generated invoices are listed under **Payments** → **Invoices** in the lef
 
 ![Invoices list with date filter](../../assets/images/billing-and-invoicing-03.png)
 
-You can filter invoices by date range and see the creation date, paid amount, outstanding amount, and a link to download the PDF. For full details on the invoices screen, see [Invoices](../reference/invoices-list.md).
+You can filter invoices by date range and see the creation date, paid amount, outstanding amount, and a link to download the PDF. For full details on the invoices screen, see Invoices.
 
 ## Manual invoice generation
 

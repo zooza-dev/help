@@ -473,6 +473,6 @@ As a result, the outstanding amount on a booking does not always match the curre
 - [Stripe payments FAQ](stripe-payments-faq.md) — card payment setup, disputes, and Stripe-specific questions
 - [GoCardless FAQ](gocardless-faq.md) — direct debit setup and mandate management
 - [Billing periods](../setup/billing-periods.md) — how billing periods work and how to configure them
-- [Payment labels and drawers](../guides/payment-labels-drawers.md) — organise payments with labels
+- Payment labels and drawers — organise payments with labels
 - [Payment tile on booking](../guides/payment-tile-on-booking.md) — reading and managing the payment tile
 - [Billing and invoicing setup](../setup/billing-and-invoicing.md) — billing profiles, VAT, invoice settings

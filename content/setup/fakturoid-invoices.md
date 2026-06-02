@@ -78,4 +78,4 @@ Once connected:
 
 - [Invoicing overview](./invoicing-overview.md) — how invoice engines work
 - [Billing and invoicing](./billing-and-invoicing.md) — Invoice Profiles, auto/manual generation, multi-line
-- [Invoices list](../reference/invoices-list.md) — browsing and downloading invoices
+- [Invoices list](../reference/billing-and-invoicing.md) — browsing and downloading invoices

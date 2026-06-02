@@ -107,7 +107,7 @@ To view calculated compensation, go to **Instructors → [select instructor] →
 
 ## Related
 
-- [Two instructors per class](../guides/two-instructors-per-class.md) — assign a main and assistant instructor to a class
+- [Two instructors per class](../guides/class-detail.md) — assign a main and assistant instructor to a class
 - [User roles](../guides/user-roles.md) — full breakdown of all roles and their permissions
 - [Instructor working hours](../setup/instructors-working-hours.md) — configure availability windows per instructor
 - [Instructor rate and reward](../setup/instructor-rate-reward.md) — set up compensation rates

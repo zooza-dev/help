@@ -75,7 +75,7 @@ The number of active clients determines your Zooza service package tier. The key
 
 > **Important:** Because the system tracks the peak active client count for the month, a temporary spike (e.g., from early registrations before a new term starts) can trigger an upgrade even if the count drops later in the month. Plan your registration timing accordingly.
 
-For details on service packages and pricing, see **Settings** → **Current product** in your Zooza account, or visit [Billing and Payments for Zooza](zooza-billing-payments.md).
+For details on service packages and pricing, see **Settings** → **Current product** in your Zooza account, or visit [Billing and Payments for Zooza](billing-and-invoicing.md).
 
 ## Viewing active and inactive clients
 
@@ -97,5 +97,5 @@ Go to **Clients** and use the **Active/Inactive** filter on the left side of the
 
 - [Clients](../reference/clients-list.md) — the clients list screen reference, including filters and client detail.
 - [Client Management FAQ](../faq/client-management-faq.md) — common client management questions.
-- [Billing and Payments for Zooza](zooza-billing-payments.md) — managing your Zooza subscription and invoices.
+- [Billing and Payments for Zooza](billing-and-invoicing.md) — managing your Zooza subscription and invoices.
 - [Types of bookings](types-of-bookings.md) — booking states and their meaning.

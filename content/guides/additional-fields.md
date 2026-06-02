@@ -49,7 +49,7 @@ These fields are ready to use — you just enable them and optionally set a cust
 
 ### Business fields
 
-These fields are used for business invoicing. When one or more business fields are active, the booking form shows an option to register as a company. See [Business booking](business-booking.md) for the full workflow.
+These fields are used for business invoicing. When one or more business fields are active, the booking form shows an option to register as a company. See [Business booking](booking-faq.md) for the full workflow.
 
 | Field | Description |
 |---|---|
@@ -174,8 +174,8 @@ Custom choice fields appear as dropdown menus. Mandatory fields are marked with 
 ## Related
 
 - [Programme Settings Reference](../reference/programme-settings.md) — full field reference for the Additional Fields tile.
-- [Business booking](business-booking.md) — registering bookings for companies.
+- [Business booking](booking-faq.md) — registering bookings for companies.
 - [Customizing widgets](customizing-widgets.md) — how extra fields appear on the booking widget.
 - [Dynamic tags](dynamic-tags.md) — using field values in email templates.
-- [Allowing multiple booking](allowing-multiple-booking.md) — collecting data from multiple attendees.
+- [Allowing multiple booking](booking-faq.md) — collecting data from multiple attendees.
 - [Personas](personas.md) — how Personas replaces extra fields for attendee tracking.

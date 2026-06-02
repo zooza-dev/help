@@ -87,7 +87,7 @@ For example: if a parent has one child already registered (2nd child was added l
 
 ### For multiple-child bookings
 
-When a programme allows multiple bookings per form submission (see [Allowing multiple booking](./allowing-multiple-booking.md)), logged-in clients can go through the person selection step for each child separately. They can mix existing people with new ones in a single submission.
+When a programme allows multiple bookings per form submission (see [Allowing multiple booking](booking-faq.md)), logged-in clients can go through the person selection step for each child separately. They can mix existing people with new ones in a single submission.
 
 ---
 

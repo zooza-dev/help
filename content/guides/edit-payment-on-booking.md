@@ -16,7 +16,7 @@ last_converted: "2026-02-11"
 
 # Edit payment on booking
 
-You can correct, edit or move each payment. Adjustments can be made individually at the level of bookings, in which case it is a change to the outstanding amount. What constitutes an outstanding amount is explained in detail [HERE](outstanding-amount.md).The amount owed on the booking itself can be modified in the form of discounts, adding a new payment, refunding a payment or entering a payment plan.
+You can correct, edit or move each payment. Adjustments can be made individually at the level of bookings, in which case it is a change to the outstanding amount. What constitutes an outstanding amount is explained in detail [HERE](payments-and-billing-faq.md).The amount owed on the booking itself can be modified in the form of discounts, adding a new payment, refunding a payment or entering a payment plan.
 
 ## Entering a payment
 

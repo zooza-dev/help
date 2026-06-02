@@ -15,7 +15,7 @@ last_converted: "2026-02-11"
 ---
 # Payment tile on booking
 
-You can correct or modify each payment. Modifications can be made to bookings separately. In this case, you are adjusting the amount owed. What is the amount due can be found in more detail [HERE](outstanding-amount.md).
+You can correct or modify each payment. Modifications can be made to bookings separately. In this case, you are adjusting the amount owed. What is the amount due can be found in more detail [HERE](payments-and-billing-faq.md).
 
 The amount owed on the booking itself can be adjusted in the form of discounts (how to enter a discount to a client can be found [HERE](discount-types.md)), by adding a new payment, refunding a payment or entering a payment plan.
 

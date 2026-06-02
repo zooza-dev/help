@@ -237,7 +237,7 @@ When filtering for multiple programmes or locations, the separator character mat
 4. Click **Copy** and paste the generated code onto your page.
 5. Do not manually edit filter parameters in the embed code. Always regenerate the code from the Zooza configurator to avoid syntax errors.
 
-If the widget still displays all programmes after pasting filtered code, see [Widget Embedding Troubleshooting](../troubleshooting/widget-embedding.md) for debugging steps.
+If the widget still displays all programmes after pasting filtered code, see [Widget Embedding Troubleshooting](../troubleshooting/widget-embedding-troubleshooting.md) for debugging steps.
 
 ## Cookie consent and widget loading
 

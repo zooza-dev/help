@@ -126,6 +126,6 @@ Here you set the programme price, booking fee, price type (term / block / unit),
 
 - [Additional fields on the booking form](additional-fields.md) — full guide for data collection fields.
 - [Customizing widgets](customizing-widgets.md) — CSS styling, embed code customization, URL filtering.
-- [Allowing multiple booking](allowing-multiple-booking.md) — collecting data from multiple attendees in one form.
+- [Allowing multiple booking](booking-faq.md) — collecting data from multiple attendees in one form.
 - [Booking Widget FAQ](../faq/booking-widget-faq.md) — common questions about the booking widget.
 - [Publish (Widgets) reference](../reference/publish-widgets.md) — full field reference for the Publish screen.

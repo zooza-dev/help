@@ -201,9 +201,9 @@ Zooza cannot override recipient-side filtering. If the logs confirm the email wa
 
 ## Related
 
-- [Email delivery troubleshooting](../troubleshooting/email-delivery.md) — diagnose bounces, spam filtering, and delivery failures
-- [Send email after a session](../guides/send-email-after-session.md) — follow-up workflow for post-session communication
+- [Email delivery troubleshooting](../troubleshooting/email-delivery-troubleshooting.md) — diagnose bounces, spam filtering, and delivery failures
+- [Send email after a session](../guides/automated-notifications.md) — follow-up workflow for post-session communication
 - [Automated notifications](../guides/automated-notifications.md) — configure session reminders and event-triggered emails
 - [Message templates](../guides/message-templates.md) — create and edit email and SMS templates
 - [WhatsApp FAQ](whatsapp-faq.md) — WhatsApp messaging setup and limits
-- [Notifications center](../guides/notifications-center.md) — view and manage all outgoing notification history
+- [Notifications center](../guides/settings-hub.md) — view and manage all outgoing notification history

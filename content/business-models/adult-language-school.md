@@ -75,7 +75,7 @@ Enable **Business booking** on the Programme:
 
 Any booking with company details filled in is automatically flagged as a **Business Booking** in the system. When you generate an invoice, it uses the company details as the billing address instead of the individual's details.
 
-See [Business booking](../guides/business-booking.md).
+See [Business booking](../guides/booking-faq.md).
 
 ### When the company books and pays directly (not the employee)
 

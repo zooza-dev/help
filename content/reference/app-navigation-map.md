@@ -27,7 +27,7 @@ This page maps every section of the Zooza admin application to its reference doc
 | **Programmes** | [Programmes List](programmes-list.md) | [Programme Settings](../guides/programme-settings.md), [Pay-as-you-go Programme](../guides/pay-as-you-go-programme.md) | Done |
 | Programmes → Settings | [Programme Settings](programme-settings.md) | [Payment Options](../guides/payment-options.md), [Trial Sessions](../setup/trial-sessions.md), [Online Registration](../setup/online-registration.md) | Done |
 | Programmes → Automations | [Programme Automations](programme-automations.md) | [Auto-Enrolment](../setup/auto-enrollment.md), [Payment Reminders](../guides/automatic-payment-reminders.md) | Done |
-| **Classes** | [Classes List](classes-list.md), [Class Detail](class-detail.md) | [Programme Class Session Definition](../guides/programme-class-session-definition.md), [Change Instructor](../guides/change-instructor.md) | Done |
+| **Classes** | [Classes List](classes-list.md), [Class Detail](class-detail.md) | [Programme Class Session Definition](../guides/programme-class-session-definition.md), [Change Instructor](../guides/class-detail.md) | Done |
 | **Sessions** | [Sessions List](sessions-list.md) | [Edit Sessions in Programmes](../guides/edit-sessions-in-programmes.md) | Done |
 | **Calendar** | [Calendar](calendar.md) | [Attendance and Catch-ups FAQ](../faq/attendance-and-catchups-faq.md) | Done |
 | **Feedback** | [Calendar](calendar.md#feedback-questions) | — | Done |
@@ -36,9 +36,9 @@ This page maps every section of the Zooza admin application to its reference doc
 
 | Screen | Reference doc | Status |
 |---|---|---|
-| Welcome (home) | [Dashboard](dashboard.md) | Done |
-| Team Announcements | [Dashboard](dashboard.md#team-announcements) | Done |
-| Messages | [Dashboard](dashboard.md#unread-messages) | Done |
+| Welcome (home) | [Dashboard](dashboard-reference.md) | Done |
+| Team Announcements | [Dashboard](dashboard-reference.md#team-announcements) | Done |
+| Messages | [Dashboard](dashboard-reference.md#unread-messages) | Done |
 
 ## Clients
 
@@ -61,7 +61,7 @@ This page maps every section of the Zooza admin application to its reference doc
 | Payments → Inbound → AI Rules & Filters | — | [Inbound payments — technical reference](../reference/inbound-payments-internals.md) | Done |
 | Payments → Inbound → Setup | — | [Set up how Zooza collects money from clients](../setup/inbound-payments-setup.md) | Done |
 | Discounts | [Discounts](discounts.md) | [Discount Code](../guides/discount-code.md), [Discount Types](../guides/discount-types.md), [Discounts FAQ](../faq/discounts-and-sibling-pricing-faq.md) | Done |
-| Invoices | [Invoices](invoices-list.md) | [Xero Integration](../setup/xero-integration.md), [Xero FAQ](../faq/xero-invoicing-faq.md) | Done |
+| Invoices | [Invoices](billing-and-invoicing.md) | [Xero Integration](../setup/xero-integration.md), [Xero FAQ](../faq/xero-invoicing-faq.md) | Done |
 
 ## Products & Services
 
@@ -79,7 +79,7 @@ This page maps every section of the Zooza admin application to its reference doc
 | Send message | [Send Email/SMS](communication-send-email.md) | [Sending Email/SMS](../guides/sending-email-sms.md), [Dynamic Tags](../guides/dynamic-tags.md) | Done |
 | Sent messages | [Communication](communication-dashboard.md#sent-messages) | — | Done |
 | Templates | [Message Templates](communication-message-templates.md) | [Message Templates](../guides/message-templates.md), [Dynamic Tags](../guides/dynamic-tags.md) | Done |
-| Email Marketing Connections | [Email Integrations](communication-email-integrations.md) | — | Done |
+| Email Marketing Connections | [Email Integrations](email-delivery-troubleshooting.md) | — | Done |
 | WhatsApp | [WhatsApp](communication-whatsapp.md) | [WhatsApp Integration](../setup/whatsapp-integration.md), [WhatsApp FAQ](../faq/whatsapp-faq.md) | Done |
 
 ## Reports & Insights

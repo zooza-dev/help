@@ -148,7 +148,7 @@ On mobile, a quick navigation menu at the bottom lets clients jump directly to a
 ## Related
 
 - [Client Profile FAQ](../faq/client-profile-faq.md) — common questions about the Client Profile.
-- [Client profile dashboard](client-profile-dashboard.md) — overview of the client-facing self-service profile.
+- Client profile dashboard — overview of the client-facing self-service profile.
 - [Client Management FAQ](../faq/client-management-faq.md) — admin-side client management.
 - [Entry pass — client view](entry-pass-client-view.md) — how clients see and use entry passes.
 - [Customizing widgets](customizing-widgets.md) — embedding the Client Profile on your website.

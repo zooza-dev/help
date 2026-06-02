@@ -285,4 +285,4 @@ When numbers don't match, the fastest fix is to check which **billing period** a
 
 - [Payments Reference](payments-dashboard.md) — detailed payment reports.
 - [Sessions List](sessions-list.md) — filter and export individual sessions.
-- [Dashboard Reference](dashboard.md) — admin home screen.
+- [Dashboard Reference](dashboard-reference.md) — admin home screen.

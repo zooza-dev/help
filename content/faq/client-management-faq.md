@@ -223,6 +223,6 @@ Your Zooza service package is based on the **peak number of active clients** wit
 
 - [Remove a client or user](../guides/remove-client-or-user.md) — steps to deactivate or delete a client record
 - [Client profile 101](../guides/client-profile-101.md) — reading and using the client profile
-- [Client profile dashboard](../guides/client-profile-dashboard.md) — overview of the client-facing profile
+- [Client profile dashboard](../guides/client-profile-101.md) — overview of the client-facing profile
 - [Documents](../guides/documents.md) — attach documents to client records
 - [Subscription FAQ](subscription-faq.md) — how active client counts affect your plan
