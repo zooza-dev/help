@@ -306,7 +306,7 @@ If you need to adjust the price for an existing registration, you must edit the 
 - [Creating a programme](../guides/creating-a-programme.md) — set up a new programme step by step
 - [Archive or delete a programme](../guides/archive-or-delete-programme.md) — end or remove programmes
 - [Summer camps creation](../guides/summer-camps-creation.md) — set up seasonal or multi-day camps
-- [Programmes FAQ (quick reference)](programmes.md)
+- [Programmes FAQ (quick reference)](faq-programmes.md)
 - [Individual sessions guide](../guides/individual-sessions.md) — set up 1-to-1 and private session programmes
 - [Business model: Children's group activities — block/term](../business-models/children-group-activities-block.md)
 - [Business model: Children's group activities — subscription](../business-models/children-group-activities-subscription.md)

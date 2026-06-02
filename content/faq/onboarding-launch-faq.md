@@ -121,4 +121,4 @@ For birthday parties or one-off sessions, create a new programme (e.g., "Session
 - [Getting started with Zooza](../setup/getting-started-with-zooza.md) — initial platform setup guide
 - [Subscription FAQ](subscription-faq.md) — plans, billing, and account management
 - [Company logo and email](../setup/communication-send-email.md) — branding setup
-- [Business model guides](../business-models/index.md) — scenario guides by business type (camps, subscriptions, individual lessons, franchise)
+- [Business model guides](../business-models/business-models.md) — scenario guides by business type (camps, subscriptions, individual lessons, franchise)
