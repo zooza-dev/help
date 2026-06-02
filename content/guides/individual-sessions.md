@@ -154,7 +154,7 @@ Example: every Tuesday at 10:00.
 
 Guide: Creating a class](creating-a-class.md)
 
-![Guide: Creating a class](creating-a-class.md)](../../assets/images/customizing-widgets-01.png)
+![Individual session scheduling showing a weekly Tuesday 10:00 class](../../assets/images/customizing-widgets-01.png)
 
 Tip: You can create sessions as:
 

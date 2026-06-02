@@ -73,6 +73,10 @@ def build_alt(ctx: dict, filename_stem: str) -> str:
 
     # Strip markdown bold/italic/code from preceding
     preceding_clean = re.sub(r"[*_`]", "", preceding)
+    # Strip inline markdown links [label](url) → label
+    preceding_clean = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", preceding_clean)
+    # Strip any remaining ](...) fragments (link continuations spanning lines)
+    preceding_clean = re.sub(r"\]\([^)]*\)", "", preceding_clean)
     # Remove list markers: "1.", "-", "*"
     preceding_clean = re.sub(r"^\s*(\d+\.|[-*])\s*", "", preceding_clean).strip()
     # Remove blockquote markers
@@ -80,9 +84,9 @@ def build_alt(ctx: dict, filename_stem: str) -> str:
     # Remove leading Note:, Tip:, etc.
     preceding_clean = re.sub(r"^(Note|Tip|Warning|Important):\s*", "", preceding_clean, flags=re.IGNORECASE).strip()
     # Remove leading parentheses (fragment starts)
-    preceding_clean = preceding_clean.lstrip("(").strip()
-    # Strip trailing punctuation
-    preceding_clean = preceding_clean.rstrip(".,;:(")
+    preceding_clean = preceding_clean.lstrip("([").strip()
+    # Strip trailing punctuation and brackets
+    preceding_clean = preceding_clean.rstrip(".,;:([")
 
     # Use preceding text if it's long enough to be meaningful
     if len(preceding_clean) >= 20:
