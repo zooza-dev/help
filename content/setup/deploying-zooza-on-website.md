@@ -12,6 +12,7 @@ source_legacy_path: "legacy/0080_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-02-11"
+related_articles: ["publish-widgets", "customizing-widgets"]
 ---
 
 # Deploying Zooza app on your website
@@ -19,11 +20,12 @@ last_converted: "2026-02-11"
 Integration into your website is simple. As soon as a new account is created in Zooza, there is nothing to prevent the individual forms from being deployed to your website. What's great about Zooza's forms is that your client will never leave your site. Zooza will become part of yours and will look like it was created for your website.
 
 At the same time, know that you can also edit each form graphically through what are called CSS styles (your programmer will know), so you'll be able to further customize the forms to your graphical liking. To deploy the forms on your site you need to have the Zooza plugin downloaded.
-There are 3 ways to deploy widgets on your page:
+There are 4 ways to deploy widgets on your page:
 
 1. Zooza plugin installation
 2. Deploying widgets via HTML
 3. Integrating widgets on multiple web pages through one Zooza account
+4. Installing the Zooza npm package — for websites built as JavaScript apps (React, Vue, and others)
 
 ## Zooza plugin installation
 
@@ -82,6 +84,44 @@ Once you have Zooza successfully integrated on your site, you can customize the 
 It may happen that you have programmes split across multiple pages, either due to location or programme type,... In this case, Zooza offers you the possibility to have one account for programme administration, but multiple integrations to all websites. Just create a new widget in the Publish section by clicking *Add*.
 
 ![It may happen that you have programmes split across multiple pages, either due to...](../../assets/images/deploying-zooza-on-website-12.png)
+
+## Deploying widgets in a JavaScript app (React, Vue, and others)
+
+If your website is built as a JavaScript application — for example with **React, Next.js, Vue, Nuxt, Svelte**, or **Angular** — your developer does not have to paste the raw embed script. Zooza publishes official npm packages that install each widget as a native component.
+
+This is a developer task. Forward the steps below to whoever builds or maintains your website.
+
+### For your developer
+
+Install the package that matches the site's framework, then render the widget as a component:
+
+```bash
+npm install @zooza/widgets-react
+```
+
+```tsx
+import { initZooza, ZoozaWidget } from '@zooza/widgets-react';
+
+initZooza({ apiKey: 'YOUR_API_KEY' });
+
+export default function Page() {
+  return <ZoozaWidget type="registration" />;
+}
+```
+
+Packages are available for every common framework:
+
+| Framework | Package |
+|---|---|
+| React / Next.js | `@zooza/widgets-react` |
+| Vue / Nuxt | `@zooza/widgets-vue` |
+| Svelte / SvelteKit | `@zooza/widgets-svelte` |
+| Plain HTML, Angular, others (Web Components) | `@zooza/widgets-wc` |
+| Framework-free (vanilla JS) | `@zooza/widgets-core` |
+
+`YOUR_API_KEY` is the widget ID found in **Publish → Widget** — the same key used in the embed code above. The `type` prop selects the widget: `registration`, `calendar`, `profile`, `video`, `checkout`, or `map`.
+
+Full developer guide — regions (Europe / UK / UAE), every widget type, and all configuration options: **[docs.zooza.online/widgets/framework-modules](https://docs.zooza.online/widgets/framework-modules)**.
 
 ---
 

@@ -79,6 +79,8 @@ Tabs for each widget type: **Booking Form**, **Calendar / Schedule**, **Profile*
 
 Each tab displays the embed script code with a **Copy** button.
 
+> **JavaScript apps:** The embed panel also generates **npm install** snippets for React, Vue, Svelte, and Web Components. If your site is built as a JavaScript app, use these instead of the raw script — see [Deploying widgets in a JavaScript app](../setup/deploying-zooza-on-website.md#deploying-widgets-in-a-javascript-app-react-vue-and-others).
+
 | Field | Description |
 |---|---|
 | `Deployment URL of the widget` | The URL where the widget is deployed. |
