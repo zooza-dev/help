@@ -1,0 +1,96 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "FastPay Direct Debit FAQ",
+  "url": "https://help.zooza.online/payments/fastpay-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why don't I see FastPay in my integrations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FastPay collects by UK BACS, so it is only available to UK companies. In other regions it shows as Not available in your region. If you are in the UK and still don't see it, contact support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I set up the mandate, or does the customer do it in their bank?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Neither happens automatically. The customer completes a paper Direct Debit Instruction (DDI) and returns it to you. You then key it into the FastPay portal, which lodges the mandate. Zooza and the FastPay API do not create mandates — Zooza stores the bank details and reference, and submits the collections."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is FastPay different from GoCardless?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GoCardless authorises the mandate online and charges in real time via its API. FastPay is batch-based: mandates are set up on paper, and you push a monthly collection file that FastPay processes over 2–3 working days. Zooza then reconciles the outcomes. See Collect Direct Debit payments with FastPay."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I pushed a collection but the payments still say \"pending\". Is something wrong?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. BACS settles 2–3 working days after submission, so charges stay pending until then. Zooza polls FastPay daily and updates each charge to collected or failed automatically — you don't need to do anything."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when a collection fails or bounces?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza marks that charge as failed and sends you a system message in your admin inbox with the bounce reason. The other charges in the same batch are unaffected. You can also see failed charges under FastPay batches."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I push the same period twice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — and you should never try. FastPay does not detect duplicate files, so re-submitting the same collection would charge every customer again. Zooza blocks a second push for a period that has already been submitted."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does Zooza warn me about my Mandate ID Format?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BACS references must be 18 characters or fewer, uppercase letters and digits, and unique. If your format would generate a reference that breaks these rules, Zooza warns you when you save the course settings, so the problem is caught before any booking is taken. (SEPA allows up to 35 characters, so a format that worked for ERSTE may be too long for BACS.)"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I refund a FastPay payment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FastPay has no refund API. Process the refund manually in the FastPay portal, then correct the payment in Zooza. See Payment correction vs refund."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A customer cancelled their Direct Debit at their bank. Do I need to update Zooza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Zooza detects when a mandate is reported Cancelled or Expired, deactivates it so it's skipped in future collections, and notifies you with a system message."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does FastPay collect automatically every month?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not yet. In this release the monthly collection is a manual push — each period you set the date range, preview the batch, and Submit it. Automatic monthly scheduling is planned for a later release."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do the customer's bank details come from?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "From one of two places: the registration widget (the customer enters their UK bank details at booking — the recommended path), or you entering them on the mandate when a paper form arrives. Both store the sort code, account number, and account-holder name that FastPay needs."
+      }
+    }
+  ]
+}
