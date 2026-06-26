@@ -316,6 +316,7 @@ Every session in a registration has a detailed log of every action — who marke
 This is the most reliable way to resolve disputes. The log shows the full audit trail and cannot be edited.
 
 > **Tip for clients:** Direct clients to their Client Profile → open the registration → Attendance tab — they can see their own attendance and make-up history there.
+> ![Screenshot — make up sessions faq](../../assets/images/make-up-sessions-faq-01.png)
 
 ## Can I restrict make-up sessions to the same programme only?
 

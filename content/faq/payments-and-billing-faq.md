@@ -486,7 +486,7 @@ Payment plan templates (payment schedules with instalments) are created and mana
 
 **At the class level**, you can only enable or disable which of the programme's payment templates are available to clients booking that specific class. You cannot create a new template from within a class.
 
-> **Common bot error:** The Zooza bot sometimes directs users to "open the class → Price & Payments → apply template." This is correct for *selecting* an existing template for a class, but **templates must be created at the programme level first.** If you do not see a payment template option on a class, check that the programme has at least one template configured.
+> **Note:** Selecting a template on a class ("class → Price & Payments → apply template") only works when the programme already has templates configured. If no template appears to select, go to the programme first and create the template there.
 
 ## Can I change or cancel the "Awaiting payment" deadline on a specific booking?
 
@@ -498,6 +498,8 @@ Yes. The "Awaiting payment" period (default: 15 days) can be changed or cancelle
 4. Change the date or remove it entirely.
 
 The global default (15 days) is set in **Settings → Payments**. Changing it per booking only affects that one booking — other bookings are not affected.
+
+![Screenshot — payments and billing faq](../../assets/images/payments-and-billing-faq-02.png)
 
 ## What is the "outstanding amount" on a booking?
 

@@ -198,6 +198,8 @@ In step 2 of the email send flow (the recipient review step), you can expand the
 
 Unchecking a recipient only affects this single send — it does not affect their subscription status or future sends.
 
+![Screenshot — email communication faq](../../assets/images/email-communication-faq-01.png)
+
 ## Why did my client not receive the confirmation email for a manual or copied booking?
 
 Copied and manually created bookings do **not** trigger automatic confirmation emails. This is by design. To send a confirmation, go to the booking's **Communication** tab and send the confirmation email manually.
