@@ -105,6 +105,12 @@ Each rate is created once and then assigned a monetary value per instructor — 
 
 To view calculated compensation, go to **Instructors → [select instructor] → Instructor report** and choose a date range.
 
+## An archived class is still appearing in the instructor's report — why?
+
+This is expected behaviour. Archiving a class preserves its full history — the instructor report still shows sessions from the archived class because those sessions happened and the instructor was paid for them.
+
+If you want the archived class to stop appearing in **future** instructor report periods, delete the remaining future sessions before archiving. Past sessions will continue to appear in historical reports and cannot be removed from the log.
+
 ## Related
 
 - [Two instructors per class](../guides/class-detail.md) — assign a main and assistant instructor to a class

@@ -292,6 +292,31 @@ What you see where:
 
 If you want to see all make-up sessions across your account, go to **Calendar → Make-up sessions report**.
 
+## Can a client on a trial book a make-up session in the same class?
+
+No. A client who has a **trial registration** in a class cannot book a make-up session in that same class. This is intentional — they are already registered in the class (as a trial), so they cannot also book a make-up slot in it.
+
+If the client needs a make-up, they must book it in a **different compatible class** within the same programme.
+
+## Why does the make-up waitlist notification show a different location than the make-up session?
+
+The cancellation notification always shows the location of the client's **original group** (the class they are normally enrolled in), not the location of the make-up session they were waitlisted for. This is expected behaviour — the notification is tied to the booking/registration, which belongs to the original class.
+
+If a client mentions that "the location in the email is wrong", check whether they were waitlisted for a make-up in a different location than their original class. The make-up event itself has the correct location — only the notification shows the original class location.
+
+## A client disputes a make-up session usage — how do I check the history?
+
+Every session in a registration has a detailed log of every action — who marked attendance, when, and what was changed. To access it:
+
+1. Open the registration (booking) detail.
+2. Go to the **Attendance** tab (Dochádza).
+3. Find the session in question.
+4. Each session shows a log of changes — who created the make-up credit, who used it, and when.
+
+This is the most reliable way to resolve disputes. The log shows the full audit trail and cannot be edited.
+
+> **Tip for clients:** Direct clients to their Client Profile → open the registration → Attendance tab — they can see their own attendance and make-up history there.
+
 ## Can I restrict make-up sessions to the same programme only?
 
 Yes — but not to the exact same class. Make-up session eligibility is always filtered by **programme**, not by class. This means:
