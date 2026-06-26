@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0084_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-06-26"
 ---
 
 # Payment Pairing for Bank Transfers & Direct Debit
@@ -113,7 +113,7 @@ All automated payments (bank email, GoCardless, CSV import) pass through an AI e
 | **Processing** | AI is evaluating the payment. | Wait — resolves automatically within seconds. |
 | **New** | AI flagged for manual review, or AI evaluation failed. | Review and action (see below). |
 | **Paired** | Matched to a booking (by AI or manually). | Nothing needed. |
-| **Ignored** | Dismissed as duplicate or manually ignored. | Nothing needed. |
+| **Ignored** | Dismissed as duplicate or manually ignored by AI. | Review periodically — see below. |
 | **Error** | AI service unavailable. | Treat as **New** — pair or ignore manually. |
 
 > **Pending review badge:** The payments toolbar shows a count of **New** + **Error** payments so you can see at a glance if there is work to review.
@@ -236,6 +236,17 @@ Some banks (notably Revolut) place the variable symbol in the "Reference" or "No
 When a client pays in advance (e.g., semi-annual payment before the next instalment is posted), auto-pairing may fail because no matching debt exists at the time the payment is received. Zooza does **not** retry pairing later when the debt is created.
 
 **Solution:** Pair the payment manually from **Payments → Received payments**. Match it using the payment reference / variable symbol.
+
+### A payment is missing — check Ignored payments first
+
+Before contacting your bank or Zooza support, check whether the AI marked the payment as **Ignored**:
+
+1. Go to **Payments → Received payments**.
+2. Filter by status **Ignored**.
+3. Find the payment and open it — the AI reasoning card explains why it was ignored.
+4. If the payment is legitimate, click **Pair** or **Reassign** to link it to the correct booking.
+
+The AI occasionally marks a real payment as a suspected duplicate — especially when a client sends two similar amounts in quick succession. Reviewing Ignored payments periodically prevents these from going unnoticed.
 
 ### Bank notification service outages
 

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-02-13"
+last_converted: "2026-06-26"
 ---
 
 # Make - up sessions — Complete Guide
@@ -59,7 +59,7 @@ Make-up session are configured at the **programme level** and can be fine-tuned 
 You can also access the global replacement settings at:
 `Settings > Replacement hours` (`zooza.app/#settings/replacements`).
 
-<!-- REVIEW: Confirm whether per-programme settings override or inherit from the global replacement settings page. -->
+**Per-programme expiry and global inheritance:** If you set the expiry on a programme to **0 days**, that programme inherits the global expiry setting. Set a non-zero number of days on a programme only when you need a shorter or longer window than the global default for that specific programme.
 
 ---
 
@@ -295,6 +295,10 @@ In the **Calendar** tab, a report shows how many make-up session your clients us
 2. Scroll to the bottom of the page to the **Credits** section.
 3. Click to display all credits associated with that registration.
 4. Each credit shows: the session it was generated from, its status (active, used, expired), and its expiration date.
+
+### What happens when an admin cancels a make-up booking
+
+When an admin cancels a client's make-up booking (e.g., from the session attendance view), the replacement credit is returned to the client's registration — the same as when the client cancels themselves. The client can then use the credit to book another make-up session.
 
 ### Deleting or expiring credits manually
 

@@ -7,11 +7,12 @@ product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
 tags: ["payments"]
+related_articles: ["payment-pairing", "stripe-payments-faq", "gocardless-faq", "payment-tile-on-booking"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-06-26"
 ---
 
 # Payments and Billing FAQ
@@ -459,6 +460,14 @@ A **credit** on a booking means the client has paid more than the total amount o
 > **Note:** A booking credit (from overpayment) is different from an **Entry pass credit** (prepaid session bundle). Do not confuse the two — they are managed in different places.
 
 > **SK:** Preplatok na registrácii znamená, že klient zaplatil viac, ako mal. Kredit sa zobrazuje na platobnej dlaždici v registrácii. Ak nemá ďalšie plánované platby, vráťte preplatok ručne (bankový prevod) a zaznamenajte ho ako platbu v Zooza.
+
+## Why does my payment plan only show 3 upcoming instalments?
+
+This is expected behaviour. When Zooza generates a payment plan, it creates a maximum of **3 months of instalments at a time**. Each night, the system checks existing payment plans and adds the next instalment when the current one is approaching its due date.
+
+**Example:** A 7-instalment plan (e.g. 7 × P500) will initially show only 3 instalments. The next instalment is added automatically overnight, so the plan gradually fills in over time. You do not need to do anything — the remaining instalments will appear as the schedule progresses.
+
+If you need to review the full schedule for a specific booking, open the registration detail and click **Show payments → Payment plan** to see all planned instalments, including those not yet generated.
 
 ## What is the "outstanding amount" on a booking?
 

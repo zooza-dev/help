@@ -7,11 +7,12 @@ product_area: "Clients"
 sub_area: ""
 audience: ["admin"]
 tags: ["clients", "data-correction", "merge", "email"]
+related_articles: ["client-profile-101", "remove-client-or-user", "subscription-faq"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-06-01"
+last_converted: "2026-06-26"
 ---
 
 
@@ -206,6 +207,17 @@ The **Clients** page (and the individual client profile) shows contact and perso
 All enrolment-level actions — transferring to another class, cancelling, deleting, pausing — are performed on the **booking**, not on the client record.
 
 To manage enrolments, go to **Clients → Bookings** (the Bookings list), find the booking, and open it. All available actions appear there.
+
+## How do I give a student or second parent access to a registration?
+
+By default, access to a registration (client profile) is tied to the email address used during registration. To give a different person (e.g., a student logging in themselves, or a second parent) access to the same registration:
+
+1. Open the registration detail.
+2. In the **Registration** section, click **Options**.
+3. Add the email address that should have access.
+4. Save.
+
+The person at that email address can now log in via the passwordless login on your booking site and see the registration, payments, and attendance linked to it.
 
 ## What does "active client" mean in Zooza?
 

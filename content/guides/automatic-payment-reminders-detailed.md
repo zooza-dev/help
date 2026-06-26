@@ -13,7 +13,7 @@ status: published
 source_legacy_path: legacy/0093_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: 2026-05-03
+last_converted: 2026-06-26
 ---
 
 # Automatic payment reminders
@@ -54,6 +54,8 @@ When a client registers and owes money, Zooza immediately checks this setting:
 - **Field is set to N days (e.g. 20)** — the booking enters **Awaiting payment** for 20 days from the registration date. After 20 days, it automatically transitions to **Unpaid** overnight.
 
 The calculation is always based on the registration date, not the programme start date.
+
+> **What the grace period does NOT do:** It does not change the invoice due date, and it does not affect when invoices are generated. The grace period only controls when the booking status transitions from **Awaiting payment** to **Unpaid** in Zooza's internal tracking. The invoice due date shown on the client's invoice is set separately in your billing profile.
 
 ### Setting to 0 — always unpaid immediately
 
