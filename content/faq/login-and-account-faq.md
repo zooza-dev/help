@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-15"
+last_converted: "2026-06-26"
 ---
 
 # Login and Account FAQ
@@ -61,6 +61,16 @@ Zooza uses a **passwordless, token-based login**. Parents do not set or use a pa
 
 If a parent reports not receiving the code, ask them to check their spam folder. Login codes are sent almost instantly under normal conditions. There is no password to reset — every login uses a fresh email code.
 
+## A client requested a login link twice and now the first link doesn't work — why?
+
+Zooza uses single-use login tokens. Each time a client requests a new login link (PIN code), the **previous link is immediately invalidated**. Only the most recent link is valid.
+
+This often happens when a client:
+- Clicks "send login link" twice in quick succession
+- Waits too long and requests a second link while the first is still in their inbox
+
+**Solution:** Ask the client to use only the **most recent email** they received from Zooza and ignore any earlier login emails. If the second link also expired, they simply request a new one — there is no lockout.
+
 ## Can multiple team members share one login?
 
 No. Each team member should have their own account with an individual email address. Shared logins create problems with audit trails, permissions, and notifications. To add team members:
@@ -79,9 +89,20 @@ Available languages: Slovensky, English, Česky, Deutsch, Romanian.
 
 The language change takes effect immediately and applies to the current user's session. Each admin or instructor can set their own preferred language independently.
 
+## How do I switch Zooza to dark mode?
+
+Zooza does not have an independent dark/light mode setting. The app follows your **browser's or operating system's theme preference**. If your browser or OS is set to dark mode, Zooza will appear in dark mode automatically.
+
+To change the theme: update your system display settings (macOS: System Settings → Appearance; Windows: Settings → Personalisation → Colours) or your browser's appearance settings. The change takes effect immediately in Zooza without needing to refresh.
+
 ## Is there a Zooza mobile app to download?
 
-Zooza is a web application — there is no native app to download from the App Store or Google Play. You access it through a browser at **zooza.app**.
+Zooza is a web application — there is no native app to download from the App Store or Google Play. You access it through a browser at **zooza.app**. This is intentional:
+
+- **No installation required** — parents and instructors can open the app immediately on any device or browser without going through an app store.
+- **Always up to date** — web updates deploy instantly. There is no "please update your app" friction.
+- **Works everywhere** — any phone, tablet, or desktop with a modern browser.
+- **Lower barrier for clients** — asking clients to install a native app creates friction. A link they click in an email just works.
 
 You can add it to your phone's home screen so it behaves like an app:
 

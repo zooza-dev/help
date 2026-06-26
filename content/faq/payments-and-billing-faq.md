@@ -38,6 +38,12 @@ When you generate an invoice, it is automatically emailed to the client. If you 
 
 The updated invoice is sent to the client's email address on record.
 
+## How do I export payments or refunds to Excel?
+
+Go to **Sales & Payments → Received Payments → Export**. The export includes received payments.
+
+To export refunds specifically, use the same section and apply the refund filter before exporting. The export reflects whatever is currently visible in the list — so filter first, then export.
+
 ## How do I download all invoices at once?
 
 Go to **Sales & Payments** → **Invoices**. Apply any filters you need (date range, etc.), then click **Download all**. This downloads all filtered invoices as a single ZIP file.
@@ -468,6 +474,30 @@ This is expected behaviour. When Zooza generates a payment plan, it creates a ma
 **Example:** A 7-instalment plan (e.g. 7 × P500) will initially show only 3 instalments. The next instalment is added automatically overnight, so the plan gradually fills in over time. You do not need to do anything — the remaining instalments will appear as the schedule progresses.
 
 If you need to review the full schedule for a specific booking, open the registration detail and click **Show payments → Payment plan** to see all planned instalments, including those not yet generated.
+
+## Where do I create payment plan templates — is it on the programme or on the class?
+
+Payment plan templates (payment schedules with instalments) are created and managed at the **programme level**, not at the class level.
+
+**To create or manage a payment template:**
+1. Open the programme.
+2. Go to **Settings → Price and Payment**.
+3. Under **Payment templates**, create or edit the templates you want to offer.
+
+**At the class level**, you can only enable or disable which of the programme's payment templates are available to clients booking that specific class. You cannot create a new template from within a class.
+
+> **Common bot error:** The Zooza bot sometimes directs users to "open the class → Price & Payments → apply template." This is correct for *selecting* an existing template for a class, but **templates must be created at the programme level first.** If you do not see a payment template option on a class, check that the programme has at least one template configured.
+
+## Can I change or cancel the "Awaiting payment" deadline on a specific booking?
+
+Yes. The "Awaiting payment" period (default: 15 days) can be changed or cancelled per booking:
+
+1. Open the registration (booking) detail.
+2. Go to the **Payments** section.
+3. Click the **Awaiting payment** deadline date.
+4. Change the date or remove it entirely.
+
+The global default (15 days) is set in **Settings → Payments**. Changing it per booking only affects that one booking — other bookings are not affected.
 
 ## What is the "outstanding amount" on a booking?
 

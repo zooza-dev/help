@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0026_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-06-26"
 ---
 
 # Data correction or change client's data
@@ -27,12 +27,30 @@ If you request a data change at the client level, this will also change the data
 
 Changing the client’s details is done via a request that you send to us via the app. You are always informed by notification e-mail about the creation as well as about the approval or rejection of your request.
 
+## What can and cannot be changed via data correction?
+
+**Can be changed:**
+- Name (typo corrections)
+- Email address
+- Phone number
+
+**Cannot be changed:**
+- Assigning the booking to a completely different person — use **Change Client** on the booking instead
+- Bulk changes across many bookings at once
+
+## How long does a data correction request take?
+
+Requests are reviewed by the Zooza team. Most corrections are processed **within 24 hours** during business days. Email changes may take up to 1 business day.
+
+You receive a notification email when the request is approved or rejected.
+
 ## Why was the application rejected?
 
-We may reject your application for two reasons:
+A data correction request is rejected if:
 
-1. the form sent out contains data that is incorrect (with errors)
-2. if it is a bulk overwrite of a client’s booking
+1. **The name in the new email address does not match the client’s name on record.** For example, if the client’s name is "Jana Nováková" but the requested email contains a different name, the request will be declined. This is a security check to ensure the email belongs to the same person.
+2. **The data submitted contains errors** (e.g. incorrectly formatted email address).
+3. **The request is a bulk change** — data correction changes one client at a time.
 
 ## Data correction
 

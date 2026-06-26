@@ -65,6 +65,17 @@ Administrative refunds appear in the same payment reports as gateway refunds —
 
 No. Once recorded, an administrative refund cannot be deleted. If you made an error, contact Zooza support or add a correcting manual payment to offset the negative transaction, and add a note explaining the adjustment.
 
+## A client cancelled their registration — can Zooza automatically keep a percentage as a cancellation fee?
+
+Zooza does not have a built-in cancellation penalty feature. If your policy is to retain a portion of the payment when a client cancels early (for example, keeping 20% and refunding 80%), you need to calculate the retained amount manually and then:
+
+1. Issue a **partial refund** (via Stripe refund or administrative refund) for the amount you are returning to the client.
+2. Adjust the outstanding amount on the booking to reflect the retained amount.
+
+The client sees the refund on their side. The retained portion remains as income in your Zooza records. There is no automated way to set a percentage rule — it must be calculated and applied per booking.
+
+> **Terminology note:** "Storno poplatok" (SK) or "cancellation fee" refers to money you keep from a client who cancels. In Zooza, you handle this through the refund flow — issue a partial refund for what you return, and the rest is implicitly retained.
+
 ## Related
 
 - [Recording an Administrative Refund for an Online Payment](../guides/recording-an-administrative-refund.md) — step-by-step guide.

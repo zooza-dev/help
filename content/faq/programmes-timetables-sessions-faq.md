@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-06-26"
 ---
 
 
@@ -144,6 +144,24 @@ The change takes effect immediately. Existing bookings are not affected — bill
 ## Why do changes I make not appear immediately?
 
 Zooza uses browser caching to speed up page loading. When you create or edit something (like a location or class), the change may take a moment to appear. A quick browser refresh (Cmd+R on Mac, Ctrl+R on Windows) usually resolves this.
+
+## The session count in a class shows more sessions than expected — why?
+
+Cancelled (unplanned) sessions are counted in the total session count even after cancellation. If you cancelled a few sessions during the term, the displayed count includes them.
+
+To remove cancelled sessions from the count, you need to **delete** them (not just cancel). Deleting a session removes it from the count entirely. Cancelling a session marks it as "unplanned" but keeps it in the list.
+
+> **Note:** Cancelling a session keeps the attendance record and any make-up credits generated. Deleting a session removes it from the schedule completely. Use delete only for sessions that were created by mistake or are no longer needed.
+
+## Clients say they cannot see a payment option after registering to a class — why?
+
+The most common cause is that the class is set to **Lead Collection** type instead of **Fixed Period**.
+
+A Lead Collection class has no scheduled sessions — it is used to gather interest before the schedule is finalised. Because there is no billing period or session schedule yet, clients who register to a Lead Collection class do not see a payment option.
+
+**To fix:** Add sessions to the class (which converts it to a Fixed Period class), or go to the class settings and change the class type to **Fixed Period**. Once the class has sessions and a billing period, clients will see the payment options configured on the programme.
+
+See [Lead collection](../guides/lead-collection.md) for when to use Lead Collection intentionally.
 
 ## How do I archive all classes in a programme at once?
 

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-13"
+last_converted: "2026-06-26"
 ---
 
 # Email and Communication FAQ
@@ -176,6 +176,27 @@ Payment-related automated emails — missed payment notifications, upcoming paym
 The overnight timing is not configurable — neither globally nor per programme.
 
 **If clients find late-night emails disruptive**, consider adding a short note to the **Missed payment** or **Upcoming payment** email template — for example: *"This message was generated automatically overnight. If you have questions, contact us during business hours."* See [Message Templates](../reference/communication-message-templates.md) for how to edit templates.
+
+## How do I resend a registration confirmation email to a client?
+
+1. Open the registration (booking) detail.
+2. Go to the **Communication** tab.
+3. Click **Send email**.
+4. In the template selector, choose the **Booking confirmation** template (or any other template you want to send).
+5. Send.
+
+This works for any booking — not just manually created ones. Use it any time a client says they didn't receive their confirmation or need it re-sent.
+
+## How do I remove specific people from the recipient list when sending a bulk email?
+
+In step 2 of the email send flow (the recipient review step), you can expand the recipient list and uncheck individual recipients before sending.
+
+1. Compose your email and proceed to the next step.
+2. Click the recipient count or the **Recipients** section to expand the full list.
+3. Uncheck anyone you do not want to receive this send.
+4. Proceed to send.
+
+Unchecking a recipient only affects this single send — it does not affect their subscription status or future sends.
 
 ## Why did my client not receive the confirmation email for a manual or copied booking?
 
