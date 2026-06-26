@@ -200,6 +200,19 @@ Unchecking a recipient only affects this single send — it does not affect thei
 
 ![Screenshot — email communication faq](../../assets/images/email-communication-faq-01.png)
 
+## Why did a session reminder arrive at a different email address than the client's account email?
+
+Each registration has an optional **additional notification email** field. When this field is set, session reminders and certain automated notifications go to that address — not to (or in addition to) the client's main account email.
+
+This is intentional. It allows a second parent, guardian, or contact person to receive session reminders independently of who owns the account.
+
+To check or change the additional notification email for a registration:
+1. Open the registration (booking) detail.
+2. Go to the **Options** tab.
+3. Look for the **Additional notification email** field.
+
+If a client reports receiving reminders at an unexpected address, check this field first. Clear it to send notifications to the account email only.
+
 ## Why did my client not receive the confirmation email for a manual or copied booking?
 
 Copied and manually created bookings do **not** trigger automatic confirmation emails. This is by design. To send a confirmation, go to the booking's **Communication** tab and send the confirmation email manually.

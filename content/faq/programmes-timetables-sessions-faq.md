@@ -319,6 +319,30 @@ All new registrations (including clients who convert from a trial) will use the 
 
 If you need to adjust the price for an existing registration, you must edit the payment on that registration manually. See [Edit payment on booking](../guides/edit-payment-on-booking.md) for details.
 
+## How do I set up auto-enrollment so existing clients get invited to re-enroll for the next term?
+
+Auto-enrollment (retention) sends existing clients a pre-filled booking invitation before the new term opens to the public. Clients receive a link they can use to complete the enrolment with one click — no need to fill in all their details again.
+
+**Setup steps:**
+
+1. Make sure the next term's programme and classes already exist before activating auto-enrollment.
+2. Open the **current** programme (the one clients are enrolled in now).
+3. Go to **Settings → Auto-enrollment** tile → click **Edit**.
+4. Choose the offer type:
+   - **Suggest classes** — for group classes. Clients are shown a list of available classes for the next term that match their age range and location preferences.
+   - **Duplicate current class** — for individual or 1-to-1 sessions. The system offers to create a copy of the client's current class at a time they choose.
+5. Set how many days before the current term ends clients should receive the invitation.
+6. Define which billing period and programmes to include in the offer (you can offer a different programme than the one they are currently in).
+7. At the **class level**, go to the class → **Settings** tile → enable **Include in auto-enrolment** for each class you want available in the offer. This must be done for each class individually.
+
+**Tracking responses:**
+
+After invitations go out, monitor who accepted, declined, or has not yet responded in the **Auto-enrolment responses** page or by filtering the Bookings list.
+
+> **Note:** If a class you added after enabling auto-enrollment does not appear in the offer, check that its "Include in auto-enrolment" checkbox is enabled — this is the most common reason a class is missing.
+
+See [Auto-enrollment](../setup/auto-enrollment.md) for the full setup guide and [Auto-enrolment responses](../guides/auto-enrolment-responses.md) for tracking and follow-up.
+
 ## Related
 
 - [Creating a programme](../guides/creating-a-programme.md) — set up a new programme step by step

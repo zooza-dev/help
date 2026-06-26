@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-15"
+last_converted: "2026-06-26"
 ---
 
 # Pay-as-you-go FAQ
@@ -101,6 +101,20 @@ No. An entry pass is linked to a specific registration. If two children are regi
 **To share a pass across multiple registrations in the same class**, the classes must be linked. Class linking is typically used to share a pass across different classes within a programme, not across separate registrations within one class. For two children in the same group, the standard approach is to purchase a separate entry pass for each registration.
 
 See: [Linked classes](../guides/linked-classes.md).
+
+## Can I set up a recurring membership that automatically gives clients a new set of credits on a cycle (e.g. 8 visits every 35 days)?
+
+Zooza does not have a native auto-renewing credit subscription on a custom cycle. There is no built-in mechanism to automatically grant a new entry pass every N days tied to a Stripe subscription.
+
+The closest alternative is an **Entry Pass**:
+- You define a pass (e.g. 8 entries).
+- Clients purchase it manually (through their profile or at checkout).
+- Entries are deducted each time they book a session.
+- When the pass runs out, they purchase a new one.
+
+If you want recurring billing for the pass (so clients are charged automatically on a schedule), this requires setting up a **Stripe subscription product** that issues the pass on renewal — which is a custom configuration. Contact Zooza support to discuss whether this is possible for your setup.
+
+See [Creating entry passes](../guides/creating-entry-passes.md) for how to configure entry passes.
 
 ## What are linked classes and when do I need them?
 

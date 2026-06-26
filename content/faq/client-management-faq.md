@@ -231,6 +231,22 @@ Client deactivation runs once a day at **midnight**. If you cancel or delete a b
 
 Your Zooza service package is based on the **peak number of active clients** within the month — not the count at month-end. If you exceed your current package limit at any point during the month, you are automatically upgraded. To downgrade, you must request it in writing by the end of the month. For details, see [Active and inactive clients](../guides/active-inactive-clients.md).
 
+## Can I attach a certificate or document to all registrations in a class at once?
+
+Zooza does not support bulk-attaching a personalised document to individual registrations. However, you can add a **general document** (PDF, certificate, any file format) at the **programme or class level** — this makes it visible to all clients in that programme or class through their Client Profile.
+
+To add a document at the programme or class level:
+1. Go to **Documents** in the left menu.
+2. Click **Add New** and upload the file (PDF, image, etc.).
+3. Assign the document to the programme or class in the document settings.
+4. All clients enrolled in that programme or class will see it in their profile.
+
+For **personalised certificates** that contain client-specific data (name, date, etc.), use **Dynamic Documents** — these are template-based documents that auto-fill client data. Dynamic documents are also assigned at programme or class level, not per individual registration.
+
+> **Note:** Attaching a document directly to a single booking (at the booking level) must be done one at a time. There is no bulk action for booking-level document attachment.
+
+See [Documents](../guides/documents.md) for the full setup guide.
+
 ## Related
 
 - [Remove a client or user](../guides/remove-client-or-user.md) — steps to deactivate or delete a client record

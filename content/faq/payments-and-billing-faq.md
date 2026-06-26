@@ -501,6 +501,28 @@ The global default (15 days) is set in **Settings → Payments**. Changing it pe
 
 ![Screenshot — payments and billing faq](../../assets/images/payments-and-billing-faq-02.png)
 
+## Can different classes within the same programme have different payment plans?
+
+Not independently. Payment plan templates are defined at the **programme level** and shared across all classes in that programme.
+
+**What you can control per class:**
+Enable or disable which of the programme's templates are available for that specific class. For example, Class A can offer "monthly instalment" while Class B offers "full payment" — as long as both templates are already defined at the programme level.
+
+**What you cannot do:**
+Define a completely separate payment schedule, amount, or billing cycle per class within the same programme. The template pool is shared.
+
+If two classes genuinely need different payment structures (different price, different billing frequency, or different instalment logic), they should be placed in **separate programmes**.
+
+> **Note:** Applying a payment template at the class level ("class → Price & Payments → apply template") only selects from existing programme templates. It does not create a new template.
+
+## Can I apply a payment plan template to an open course or one-time event?
+
+No. Payment plan templates with scheduled instalments are designed for **Fixed Period** and **Membership** course types. They cannot be applied to **Open courses** or **one-time events** — these course types expect a single full payment at the time of booking, not an ongoing instalment schedule.
+
+When viewing a payment plan template in **Settings → Payment Settings**, the template detail shows a preview of which course types it is compatible with. If your programme is set to an incompatible type, the template cannot be selected.
+
+**To offer instalment payments:** make sure the programme type is **Fixed Period** or **Membership**, not Open course.
+
 ## What is the "outstanding amount" on a booking?
 
 When a booking is created, an amount owed (debt) is set at that moment based on the programme price. This amount tracks whether the booking is paid or not.
