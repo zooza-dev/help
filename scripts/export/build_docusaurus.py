@@ -31,6 +31,9 @@ ASSETS_BRAND_DIR = ROOT_DIR / "assets" / "brand"
 OUTPUT_DIR = ROOT_DIR / "build" / "exports" / "docusaurus"
 DOCS_DIR = OUTPUT_DIR / "docs"
 STATIC_DIR = OUTPUT_DIR / "static"
+# Hand-authored React pages copied verbatim into the scaffold's src/pages/.
+# Kept as real source files (not inline strings) so they stay lintable/maintainable.
+PAGES_SRC_DIR = Path(__file__).resolve().parent / "pages"
 
 # Product areas in sidebar display order
 PRODUCT_AREA_ORDER = [
@@ -327,6 +330,7 @@ const config = {{
           srcDark: 'img/logo-dark.svg',
         }},
         items: [
+          {{ to: '/onboarding-guide/', label: 'Get started', position: 'left' }},
           {{ to: '/category/programmes', label: 'Programmes', position: 'left' }},
           {{ to: '/category/classes', label: 'Classes', position: 'left' }},
           {{ to: '/category/bookings', label: 'Bookings', position: 'left' }},
@@ -896,6 +900,15 @@ def _write_custom_css(out: Path) -> None:
     (out / "src" / "pages" / "index.js").write_text(_HOMEPAGE_JS, encoding="utf-8")
     (out / "src" / "pages" / "index.module.css").write_text(_HOMEPAGE_CSS, encoding="utf-8")
     (out / "src" / "pages" / "404.js").write_text(_404_PAGE_JS, encoding="utf-8")
+    # Copy hand-authored React pages (e.g. the interactive onboarding guide) verbatim.
+    # Each subfolder of PAGES_SRC_DIR becomes a route under src/pages/.
+    if PAGES_SRC_DIR.is_dir():
+        for page_dir in sorted(PAGES_SRC_DIR.iterdir()):
+            if not page_dir.is_dir() or page_dir.name.startswith((".", "_")):
+                continue
+            dest = out / "src" / "pages" / page_dir.name
+            shutil.copytree(page_dir, dest, dirs_exist_ok=True)
+            logger.info("Copied React page: src/pages/%s", page_dir.name)
     # Swizzle @theme/NotFound/Content (Docusaurus v3 architecture):
     # @theme/NotFound is the wrapper (provides Layout + PageMetadata)
     # @theme/NotFound/Content is the inner content we want to replace

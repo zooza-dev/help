@@ -8,6 +8,7 @@ sub_area: ""
 audience: ["admin"]
 tags: ["attendance", "booking", "cancellation", "class", "client", "communication", "discount", "holiday", "instructor", "invoice", "location", "make-up", "onboarding", "payment", "programme", "retention", "role", "session", "subscription", "transfer", "trial", "waitlist", "widget"]
 status: "published"
+related_articles: ["onboarding-launch-faq", "login-and-account-faq", "app-navigation-map", "business-models", "programme-class-session-definition"]
 source_legacy_path: "legacy/0015_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
@@ -19,6 +20,8 @@ last_converted: "2026-02-11"
 ![Getting Started with Zooza](../../assets/images/customizing-widgets-01.png)
 
 From First Login to Everyday Use
+
+> **New — try the interactive setup guide.** For a faster, click-through version of this walkthrough — region-aware links straight into the app, expandable steps and a tick-off checklist — use the [interactive Setup guide](/onboarding-guide/). This article stays as the detailed written reference.
 
 This guide is for owners and admins of children’s activity businesses (clubs, classes, franchises) who want to:
 
@@ -246,135 +249,6 @@ Common options:
 - JavaScript embed using your website builder.
 
 If you need support, send your web developer our [integration guides](https://docs.zooza.online/quickstart).
-
-8. What Zooza does on autopilot
-
-## Once your setup is in place, Zooza runs a lot of work automatically for you.
-
-### 8.1 Payments & billing automation
-
-Purpose: Collect payments and keep billing up to date without manual chasing.
-
-- After a new booking:Zooza creates Payment Requests based on your payment template.
-- The parent:pays by card / direct debit, or
-- receives instructions for bank transfer (and optional QR code).
-
-You can define:
-
-- when debt appears (e.g. 15 days before due date),
-- when reminders are sent,
-- when to retry charges.
-
-After payment:
-
-- an invoice is generated automatically via:your connected invoicing software (e.g. Xero), or
-- Zooza Invoicer.
-
-All billing sessions sync with reports and client cards.
-
-### 8.2 Booking & communication automation
-
-Purpose: Keep parents informed without manual emails.
-
-For each programme, you can have:
-
-- Booking confirmation email
-- PIN code message (if used)
-- Session reminders (e.g. a day before each class)
-- Unpaid reminders and optional auto-cancellation for unpaid bookings
-
-All templates can be customised per programme.
-
-### 8.3 Late booking & pro-rata management
-
-Purpose: Handle new clients who join mid-term or mid-billing cycle fairly.
-
-You can define:
-
-- how late bookings are approved:auto-approve,
-- hide full classes,
-- manual approval (pending until admin confirms).
-
-how pro-rata is calculated:
-
-- based on remaining sessions,
-- based on remaining days,
-- full term payment,
-- or no charge.
-
-You can also:
-
-- add the next billing cycle to the partial payment (optional),
-- notify admins about each late booking,
-- customise confirmation messages for late sign-ups.
-
-### Learn more
-
-### 8.4 Waitlist automation
-
-Purpose: Keep interested parents in your funnel even when classes are full.
-
-- When capacity is reached, Zooza switches to waitlist mode automatically.
-- Parents can join the waitlist and receive a confirmation message.
-- When a space opens you can send invitations manually
-
-You can enable/disable waitlists per timetable.
-
-### 8.5 Retention & re-enrolment
-
-Purpose: Keep children enrolled from one term to the next with minimal effort.
-
-At a set number of days before the end of a term:
-
-- Zooza sends invite emails with a direct booking link to the next term / timetable.
-- Parents click a pre-filled form, confirm, and continue.
-- You define:which future timetables are offered,
-- the message content,
-- the timing.
-
-You can turn retention automation ON/OFF per programme.
-
-
-[Learn more](auto-enrollment.md)
-
-### 8.6 Trial automation
-
-Purpose: Convert trials into full enrolments without manual follow-up.
-
-Booking the trial
-
-1. Parent visits the booking form and sees available trial timetables.
-2. Parent selects the trial date(s) and submits the booking.
-3. Zooza sends a trial confirmation email with all details.
-
-(You can also manage trials manually if you prefer to assign sessions yourself.)
-
-Attending the trial
-
-- Before the session, a reminder is sent (if enabled).
-- Instructor marks attendance and can:add a short note,
-- choose which timetable the child should continue in (or keep the same).
-
-If no timetable is selected, Zooza uses the one attended during trial.
-
-Programme enrolment
-
-After the last trial session is marked as attended:
-
-- Zooza can send a unique booking link for full enrolment.
-- When the parent completes the form:the trial status becomes “Trial Won”,
-- a new full enrolment is created, linked to the trial.
-
-If there is no reaction:
-
-- You can enable:first follow-up email,
-- second follow-up email,
-- and finally mark the trial as “Trial Lost”.
-
-Each message template and delay can be configured per programme.
-
-
-[Learn more](trial-sessions.md)
 
 7. Everyday life: common booking scenarios
 
@@ -674,4 +548,4 @@ Make-Up Session
 - [Login and account FAQ](../faq/login-and-account-faq.md) — login, access, and account setup questions
 - [App navigation map](../reference/app-navigation-map.md) — overview of the Zooza interface sections
 - [Getting help and support](../guides/getting-help-and-support.md) — how to reach Zooza support
-- [Business model guides](../business-models/business-models.md) — find the right setup for your type of business
+- [Business model guides](/programmes/business-models/) — find the right setup for your type of business
