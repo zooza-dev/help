@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-04-23"
+last_converted: "2026-07-22"
+related_articles: ["invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "billing-and-invoicing", "payments-and-billing-faq"]
 ---
 
 # Invoicing in Zooza — Overview
@@ -43,9 +44,9 @@ There are currently two built-in engines:
 - **Zooza Invoice (beta)** — Zooza's own fully internal engine, being rolled out gradually. Adds QR payment codes, invoice templates, and payment status tracking on top of the standard features.
 
 What you do need to configure for either built-in engine:
-- Your **Invoice Profile** (company name, address, tax IDs, IBAN) — this is the "From" section on every invoice.
+- Your **invoice profile** (company name, address, tax IDs) and its **bank account** (IBAN) — this is the "From" section on every invoice.
 
-See [Billing and invoicing](./billing-and-invoicing.md) for how to set up your Invoice Profile.
+See [Set up invoice profiles and bank accounts](./invoice-profiles-and-bank-accounts.md) for how to set yours up.
 
 ---
 
@@ -109,16 +110,16 @@ See [Integrations](./integrations-hub.md) for the full list.
 
 ---
 
-## Invoice Profiles
+## Invoice profiles and bank accounts
 
-An **Invoice Profile** is the "From" section on the invoice — your company name, address, tax IDs, and IBAN.
+An **invoice profile** is the "From" section on the invoice — a legal entity with its company name, address and tax IDs. A **bank account** is one IBAN belonging to that profile; a profile can hold several accounts, one of them default.
 
-- Every company has a **default profile** used unless you override it.
-- You can create **multiple profiles** (e.g. different billing entities or bank accounts).
-- Profiles can be assigned per **course** — if none is set on the course, the company default is used.
-- For **products**, the company default profile is always used (no per-product assignment).
+- Every company has a **default profile**, used whenever nothing more specific is set.
+- You can create **multiple profiles** — one per legal entity you invoice under.
+- A profile applies down a chain: **Default profile → Programme → Class → Booking**. The lowest level that sets one wins; everything above it is inherited.
+- **Products** carry their own profile, which is used for their invoices as well.
 
-Go to [Billing and invoicing](./billing-and-invoicing.md) to manage profiles.
+Manage them in [Set up invoice profiles and bank accounts](./invoice-profiles-and-bank-accounts.md), and see [Choose which invoice profile applies](../guides/invoice-profile-overrides.md) for inherit and override.
 
 ---
 
@@ -168,7 +169,9 @@ If your system isn't supported yet, contact us — we can discuss adding an inte
 
 ## Related
 
-- [Billing and invoicing](./billing-and-invoicing.md) — Invoice Profiles, IBAN, auto/manual generation
+- [Set up invoice profiles and bank accounts](./invoice-profiles-and-bank-accounts.md) — legal entities, IBANs, default account
+- [Choose which invoice profile applies](../guides/invoice-profile-overrides.md) — inherit and override per programme, class or booking
+- [Billing and invoicing](./billing-and-invoicing.md) — automatic and manual invoice generation, numbering, templates
 - [Invoice buyer data](../guides/invoice-buyer-data.md) — managing orderer details and regenerating invoices
 - [Invoices list](../reference/billing-and-invoicing.md) — browsing and downloading invoices
 - [Multi-line invoices](./billing-and-invoicing.md#multi-line-invoices) — itemised invoice breakdown

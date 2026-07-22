@@ -118,6 +118,14 @@
     },
     {
       "@type": "Question",
+      "name": "How do I give a student or second parent access to a registration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By default, access to a registration (client profile) is tied to the email address used during registration. To give a different person (e.g., a student logging in themselves, or a second parent) access to the same registration:\n\n1. Open the registration detail.\n2. In the Registration section, click Options.\n3. Add the email address that should have access.\n4. Save.\n\nThe person at that email address can now log in via the passwordless login on your booking site and see the registration, payments, and attendance linked to it."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What does \"active client\" mean in Zooza?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -138,6 +146,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Your Zooza service package is based on the peak number of active clients within the month — not the count at month-end. If you exceed your current package limit at any point during the month, you are automatically upgraded. To downgrade, you must request it in writing by the end of the month. For details, see Active and inactive clients."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I attach a certificate or document to all registrations in a class at once?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza does not support bulk-attaching a personalised document to individual registrations. However, you can add a general document (PDF, certificate, any file format) at the programme or class level — this makes it visible to all clients in that programme or class through their Client Profile.\n\nTo add a document at the programme or class level:\n1. Go to Documents in the left menu.\n2. Click Add New and upload the file (PDF, image, etc.).\n3. Assign the document to the programme or class in the document settings.\n4. All clients enrolled in that programme or class will see it in their profile.\n\nFor personalised certificates that contain client-specific data (name, date, etc.), use Dynamic Documents — these are template-based documents that auto-fill client data. Dynamic documents are also assigned at programme or class level, not per individual registration.\n\nNote: Attaching a document directly to a single booking (at the booking level) must be done one at a time. There is no bulk action for booking-level document attachment.\n\nSee Documents for the full setup guide."
       }
     }
   ]

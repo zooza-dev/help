@@ -83,6 +83,14 @@
         "@type": "Answer",
         "text": "Zooza supports flexible rate types for calculating instructor compensation. When creating a rate in Settings → Instructors, you define the rate name and its duration in minutes. The three common configurations are:\n\n- Per-session (one-time) — a flat amount paid for each session the instructor teaches, regardless of duration or number of students.\n- Per-hour — an amount based on the session duration. Set the rate duration to 60 minutes.\n- Per-student — \n\nEach rate is created once and then assigned a monetary value per instructor — so the same rate (e.g., \"Group Session\") can pay different amounts to different instructors. You assign the rate to a class in the class settings, and it automatically applies to all sessions in that class, including for a second instructor if one is assigned.\n\nTo view calculated compensation, go to Instructors → [select instructor] → Instructor report and choose a date range."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "An archived class is still appearing in the instructor's report — why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is expected behaviour. Archiving a class preserves its full history — the instructor report still shows sessions from the archived class because those sessions happened and the instructor was paid for them.\n\nIf you want the archived class to stop appearing in future instructor report periods, delete the remaining future sessions before archiving. Past sessions will continue to appear in historical reports and cannot be removed from the log."
+      }
     }
   ]
 }

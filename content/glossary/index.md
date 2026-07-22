@@ -107,9 +107,12 @@ The external invoicing or accounting service that creates the actual invoice doc
 The entity recorded as the recipient (orderer) on an invoice — their name, address, and company/tax details. The invoice buyer may differ from the client who registered. For example, a parent registers a child but needs the invoice in their company name. Zooza stores invoice buyer profiles per client and reuses them across bookings.
 
 ### Invoice Profile
-The "From" section on an invoice — your company name, address, tax IDs (Business ID, Tax ID, VAT number), and bank account (IBAN). A company can have multiple Invoice Profiles, for example for different billing entities. A profile can be assigned to individual courses; otherwise the company default is used.
+The "From" section on an invoice — a legal entity with your company name, address and tax IDs (Business ID, Tax ID, VAT number), plus its invoice numbering. A company can have multiple Invoice Profiles, one per billing entity, and one of them is the default. The bank account is a separate entity that belongs to the profile — see *Bank account*. A profile is resolved down the chain Default profile → Programme → Class → Booking (and via the product for orders); the lowest level that sets one wins.
 
 > Formerly called: *Billing profile*
+
+### Bank account
+One IBAN belonging to exactly one Invoice Profile, with its SWIFT code and account holder name. A profile can hold several bank accounts and marks one as its default. The account is what payment instructions, QR codes and bank-statement matching use, and each account has its own statement connection (GoCardless or email notifications). The same IBAN cannot be used on two Invoice Profiles in one company.
 
 ### Invoice Line Types (multi-line)
 A configuration within an Invoice Profile that splits invoice amounts into separate lines per transaction type (e.g. Course Payment, Registration Fee, Discount). When at least one line type is enabled, multi-line invoicing is active. When no types are configured, a single-line invoice is generated.

@@ -1,6 +1,6 @@
 ---
 title: "Set up how Zooza collects money from clients"
-description: "The Inbound Payments Setup wizard configures which payment channels are active and connects bank statement reading per billing profile."
+description: "The Inbound Payments Setup wizard configures which payment channels are active and connects bank statement reading for each bank account."
 slug: "inbound-payments-setup"
 type: "setup"
 product_area: "Payments"
@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-04-12"
+last_converted: "2026-07-22"
+related_articles: ["invoice-profiles-and-bank-accounts", "inbound-payments", "payment-pairing", "gocardless-connection-lifecycle", "billing-and-invoicing"]
 ---
 
 # Set up how Zooza collects money from clients
@@ -20,7 +21,7 @@ The **Inbound Payments Setup** wizard configures three things at once:
 
 1. Which payment channels (online card, direct debit, cash / bank transfer) are available and which are enabled by default on new programmes
 2. Which providers are connected for each channel (Stripe, GoCardless, Tatra Banka, etc.)
-3. How Zooza reads your bank statements per billing profile — so incoming bank transfers are automatically matched to bookings
+3. How Zooza reads your bank statements for each bank account — so incoming bank transfers are automatically matched to bookings
 
 > **Navigation:** Payments → Inbound → Setup  
 > **Permission:** Owner role (or assistant with `allow_assistant_to_manage_payments`)
@@ -31,7 +32,7 @@ The **Inbound Payments Setup** wizard configures three things at once:
 
 When you open **Payments → Inbound → Setup**, the first screen shows your current configuration at a glance.
 
-![Inbound Payments Setup — current setup screen with channel tiles and per-profile bank statement status](../../assets/images/inbound-setup-current-setup.png)
+![Inbound Payments Setup — current setup screen with the three channel tiles and bank statement status](../../assets/images/inbound-setup-current-setup.png)
 
 The screen has two sections:
 
@@ -41,17 +42,31 @@ The screen has two sections:
 |---|---|
 | **Online card payment** | Whether card payment is the default for new programmes, and a **Configure** button |
 | **Direct debit** | Whether direct debit is the default for new programmes, and a **Configure** button |
-| **Cash / bank transfer** | Whether cash is the default, plus a summary line like *"Bank statement reading: 1 of 1 profiles connected"* |
+| **Cash / bank transfer** | Whether cash is the default, plus a summary of how many accounts are connected |
 
-**Bottom — bank statement reading per billing profile:**
+**Bottom — bank statement reading, one row per bank account:**
 
-Each billing profile has its own card showing which method is reading its bank statements (GoCardless Bank Data or email parser), the connection status, and the list of connected IBANs.
+> *Each bank account can read incoming payments from its statements. Set up a statement feed per account.*
+
+![Bank statement reading table listing each bank account with its invoice profile, source and status](../../assets/images/inbound-bank-statement-reading-per-account.png)
+
+The table lists every bank account in the company:
+
+| Column | What it shows |
+|---|---|
+| `Account number (IBAN)` | The account the money arrives on |
+| `Account holder name` | The name registered with the bank |
+| `Invoice profile` | The legal entity this account belongs to — click through to the profile |
+| `Source` | Which method reads this account's statements, or *Not collecting bank transfers* |
+| `Status` | The connection state, e.g. **No statement feed** |
+
+**This is per account, not per profile.** An entity with two IBANs has two rows and two independent connections — one can read via GoCardless while the other uses email notifications, or one may not be connected at all.
 
 From here you can:
-- Click **Reconnect (add IBAN)** to add or refresh a GoCardless bank connection
-- Click **Change source** to switch between GoCardless and email parser
-- Click **Edit profile** to go to the billing profile settings
-- Click **Run setup again** to re-run the full wizard tour
+- Set or change the **source** on an account (GoCardless Bank Data or email notifications)
+- Reconnect an expired GoCardless connection
+- Open the account's invoice profile
+- Re-run the full wizard tour
 
 ---
 
@@ -107,25 +122,27 @@ Click **Next** to continue.
 
 ### Step 4 — Cash / bank transfer
 
-![Inbound setup wizard — cash and bank transfer step showing per-profile configuration](../../assets/images/inbound-setup-cash-bank-transfer.png)
+![Inbound setup wizard — cash and bank transfer step with bank statement reading options](../../assets/images/inbound-setup-cash-bank-transfer.png)
 
 This step covers both **cash paid in person** and **client bank transfers** — they share one toggle on each programme because from Zooza's perspective, both result in a payment you confirm manually or auto-reconcile from bank statements.
 
 > **Important:** Cash and bank transfer cannot be turned on independently per programme — they use the same switch. If you enable "cash" on a programme, it covers both methods.
 
-**Bank statement reading per profile:**
+**Bank statement reading per bank account:**
 
-Each billing profile can read its bank statements via one of two methods:
+Each bank account can read its statements via one of two methods:
 
 | Method | Best for |
 |---|---|
 | **GoCardless Bank Data** | Widest coverage — 2,500+ European banks. Requires reconnection every ~90 days (PSD2). |
 | **Email parser** | Faster notifications (per-transaction emails). Requires bank support. Supported banks: Tatra Banka, VÚB, SLSP, UniCredit, Prima Banka, FIO (SK), ČSOB (SK/CZ), Raiffeisenbank CZ, FIO CZ, Komerční banka CZ. |
 
-To configure a profile, click its card. You will be guided to:
+To configure an account, click its row. You will be guided to:
 1. Pick a method (GoCardless or email parser)
 2. Select your bank
-3. Complete the connection (OAuth flow for GoCardless, or copy the generated email address for the email parser)
+3. Complete the connection (OAuth flow for GoCardless, or forward your bank's notification emails to the address Zooza generates)
+
+Each account gets **its own** email address for the parser, so a statement always identifies which IBAN it belongs to.
 
 **Enable by default on new programmes** — turn this on if your clients primarily pay by bank transfer.
 
@@ -153,16 +170,16 @@ Click **Back to Inbound hub** to return to the Inbound section, or **Re-run wiza
 
 GoCardless Bank Data connections expire periodically — typically every 90 days under PSD2 rules. This applies to most European banks. When a connection is about to expire or has expired, **Zooza shows a warning banner on the main dashboard**.
 
-![Dashboard warning banner — "Bank connection needs reconnection" with billing profile name and Reconnect button](../../assets/images/inbound-payments-setup-01.png)
+![Dashboard warning banner — "Bank connection needs reconnection" with the affected account and a Reconnect button](../../assets/images/inbound-payments-setup-01.png)
 
-The banner shows which billing profile needs attention and offers two actions:
+The banner shows which bank connection needs attention and offers two actions:
 
 - **Reconnect** — opens the GoCardless authorisation flow immediately to renew the connection
-- **Open Inbound hub** — navigates to the Inbound setup screen where you can see all profiles and their connection status
+- **Open Inbound hub** — navigates to the Inbound setup screen where you can see every bank account and its connection status
 
 > **Do not ignore this warning.** Once the connection expires, Zooza stops receiving new bank transactions. Payments will still arrive at your bank but will not be automatically matched to bookings until you reconnect.
 
-To reconnect manually at any time (before the warning appears), go to **Payments → Inbound → Setup** and click **Reconnect (add IBAN)** on the relevant billing profile card.
+To reconnect manually at any time (before the warning appears), go to **Payments → Inbound → Setup** and reconnect the affected bank account in the **Bank statement reading** table.
 
 ---
 
@@ -176,9 +193,9 @@ No. The wizard only updates the **defaults for new programmes**. Re-running it d
 
 Yes. All three channels can be active simultaneously. Most companies use a combination — for example, online card and bank transfer enabled by default, with direct debit enabled only on selected subscription programmes.
 
-**What happens if I switch a billing profile from GoCardless to email parser?**
+**What happens if I switch a bank account from GoCardless to email notifications?**
 
-The previous GoCardless connection stays in place but stops being used for that profile. You can switch back at any time. The bank will continue receiving GoCardless data but Zooza will no longer process it for this profile.
+The previous GoCardless connection stays in place but stops being used for that account. You can switch back at any time. Each account has one active source at a time, and switching one account does not affect the others on the same invoice profile.
 
 **My bank is not in the email parser list — what do I do?**
 
@@ -191,4 +208,5 @@ Use GoCardless Bank Data instead (it covers 2,500+ banks). If your bank supports
 - [Inbound payments — setup and pairing](../guides/inbound-payments.md) — how automatic payment matching works day to day
 - [Inbound payments — technical reference](../reference/inbound-payments-internals.md) — algorithm details and AI evaluation
 - [GoCardless direct debit mandates](../guides/gocardless-direct-debit-mandates.md) — collecting direct debits from clients (separate from bank reading)
-- [Billing and invoicing](../setup/billing-and-invoicing.md) — managing billing profiles
+- [Set up invoice profiles and bank accounts](./invoice-profiles-and-bank-accounts.md) — the entities and accounts these connections belong to
+- [Billing and invoicing](./billing-and-invoicing.md) — invoice generation and numbering

@@ -22,6 +22,14 @@
     },
     {
       "@type": "Question",
+      "name": "How do I export payments or refunds to Excel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to Sales & Payments → Received Payments → Export. The export includes received payments.\n\nTo export refunds specifically, use the same section and apply the refund filter before exporting. The export reflects whatever is currently visible in the list — so filter first, then export."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How do I download all invoices at once?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -294,10 +302,10 @@
     },
     {
       "@type": "Question",
-      "name": "Can I use multiple billing profiles for different programmes?",
+      "name": "Can I use multiple invoice profiles for different programmes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Go to Settings → Billing → Other billing profiles and click Add. Each profile has its own company details, IBAN, and invoice numbering. Assign a profile to a programme in Programme → Settings → Price and Payment → Invoicing. If no profile is assigned, the default billing profile is used."
+        "text": "Yes. Go to Settings → Billing → Invoice profiles and click Add. Each profile is a legal entity with its own company details, bank accounts and invoice numbering. Set a profile on a programme, class or booking in its Invoicing card. If nothing is set, the level above applies, and ultimately the default invoice profile."
       }
     },
     {
@@ -342,10 +350,90 @@
     },
     {
       "@type": "Question",
+      "name": "Why does my payment plan only show 3 upcoming instalments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is expected behaviour. When Zooza generates a payment plan, it creates a maximum of 3 months of instalments at a time. Each night, the system checks existing payment plans and adds the next instalment when the current one is approaching its due date.\n\nExample: A 7-instalment plan (e.g. 7 × P500) will initially show only 3 instalments. The next instalment is added automatically overnight, so the plan gradually fills in over time. You do not need to do anything — the remaining instalments will appear as the schedule progresses.\n\nIf you need to review the full schedule for a specific booking, open the registration detail and click Show payments → Payment plan to see all planned instalments, including those not yet generated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do I create payment plan templates — is it on the programme or on the class?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Payment plan templates (payment schedules with instalments) are created and managed at the programme level, not at the class level.\n\nTo create or manage a payment template:\n1. Open the programme.\n2. Go to Settings → Price and Payment.\n3. Under Payment templates, create or edit the templates you want to offer.\n\nAt the class level, you can only enable or disable which of the programme's payment templates are available to clients booking that specific class. You cannot create a new template from within a class.\n\nNote: Selecting a template on a class (\"class → Price & Payments → apply template\") only works when the programme already has templates configured. If no template appears to select, go to the programme first and create the template there."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I change or cancel the \"Awaiting payment\" deadline on a specific booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The \"Awaiting payment\" period (default: 15 days) can be changed or cancelled per booking:\n\n1. Open the registration (booking) detail.\n2. Go to the Payments section.\n3. Click the Awaiting payment deadline date.\n4. Change the date or remove it entirely.\n\nThe global default (15 days) is set in Settings → Payments. Changing it per booking only affects that one booking — other bookings are not affected."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can different classes within the same programme have different payment plans?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not independently. Payment plan templates are defined at the programme level and shared across all classes in that programme.\n\nWhat you can control per class:\nEnable or disable which of the programme's templates are available for that specific class. For example, Class A can offer \"monthly instalment\" while Class B offers \"full payment\" — as long as both templates are already defined at the programme level.\n\nWhat you cannot do:\nDefine a completely separate payment schedule, amount, or billing cycle per class within the same programme. The template pool is shared.\n\nIf two classes genuinely need different payment structures (different price, different billing frequency, or different instalment logic), they should be placed in separate programmes.\n\nNote: Applying a payment template at the class level (\"class → Price & Payments → apply template\") only selects from existing programme templates. It does not create a new template."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I apply a payment plan template to an open course or one-time event?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Payment plan templates with scheduled instalments are designed for Fixed Period and Membership course types. They cannot be applied to Open courses or one-time events — these course types expect a single full payment at the time of booking, not an ongoing instalment schedule.\n\nWhen viewing a payment plan template in Settings → Payment Settings, the template detail shows a preview of which course types it is compatible with. If your programme is set to an incompatible type, the template cannot be selected.\n\nTo offer instalment payments: make sure the programme type is Fixed Period or Membership, not Open course."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What is the \"outstanding amount\" on a booking?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "When a booking is created, an amount owed (debt) is set at that moment based on the programme price. This amount tracks whether the booking is paid or not.\n\nIf the programme is free, the outstanding amount is zero. Importantly, the outstanding amount does not change automatically if you later adjust the programme or class price. Changing the price only affects future bookings — existing bookings keep their original outstanding amount. This is intentional: if the amount changed retroactively, historically settled bookings would appear as unpaid even though the client already paid the correct amount at the time.\n\nAs a result, the outstanding amount on a booking does not always match the current programme price."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my invoice show a different company than before?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Two things changed when your account moved to the new billing model, and both make previously disagreeing screens agree:\n\n- A booking paid by another booking now invoices under the payer's entity. If a booking's payments are managed by a sibling booking, invoicing and payment instructions follow the booking that actually pays.\n- A product's invoice profile is now used for invoicing too. Before, the booking widget honoured the profile set on a product while the invoice quietly used the company default. Now the product's profile wins in both places.\n\nNeither changes anything about payments already received. If the resulting entity is not what you want, set the profile you need on the product, or on the managing booking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why did the IBAN in a payment email change?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The IBAN in payment instructions, on the QR code, on the invoice and in bank matching all come from the same place now — the bank account resolved for that booking. Previously these were worked out separately and could disagree, so one of them was showing an account you did not intend.\n\nCheck which account applies in the Invoicing card on the booking: it names both the invoice profile and the bank account, and which level each came from."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can't I use the same IBAN on two invoice profiles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because incoming money has to be attributable to one legal entity. If two entities shared an IBAN, Zooza could not tell which of them received a transfer.\n\nAdd the account to the profile that really owns it. If both entities genuinely collect to one account, invoice both under the profile that owns it, or open a second account."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A booking has no invoice profile picker — why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That booking's payments are managed by another booking, so it does not choose its own entity — the whole group invoices under the profile of the booking that pays. Open the managing booking to change it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I move a booking to another class without changing its invoice profile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — an explicit invoice profile set on a booking is sticky. Moving the booking to another class or programme does not clear it. If a moved booking invoices under an unexpected entity, check whether it holds its own override in the Invoicing card and reset it to inherit."
       }
     }
   ]

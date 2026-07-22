@@ -7,12 +7,12 @@ product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
 tags: ["payments"]
-related_articles: ["payment-pairing", "stripe-payments-faq", "gocardless-faq", "payment-tile-on-booking"]
+related_articles: ["payment-pairing", "stripe-payments-faq", "gocardless-faq", "payment-tile-on-booking", "invoice-profiles-and-bank-accounts", "invoice-profile-overrides"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-26"
+last_converted: "2026-07-22"
 ---
 
 # Payments and Billing FAQ
@@ -367,9 +367,9 @@ Use the **Payment Insights → Forecast** view, not the Scheduled Payments repor
 
 > **Note:** The forecast is based on active payment plans only. Trial bookings, pay-as-you-go sessions without a payment plan, and any bookings with no payment template assigned are excluded. The forecast also doesn't account for future cancellations or new enrolments.
 
-## Can I use multiple billing profiles for different programmes?
+## Can I use multiple invoice profiles for different programmes?
 
-Yes. Go to **Settings** → **Billing** → **Other billing profiles** and click **Add**. Each profile has its own company details, IBAN, and invoice numbering. Assign a profile to a programme in **Programme** → **Settings** → **Price and Payment** → **Invoicing**. If no profile is assigned, the default billing profile is used.
+Yes. Go to **Settings** → **Billing** → **Invoice profiles** and click **Add**. Each profile is a legal entity with its own company details, bank accounts and invoice numbering. Set a profile on a programme, class or booking in its **Invoicing** card. If nothing is set, the level above applies, and ultimately the default invoice profile.
 
 ## How do I download a large number of invoices (e.g. for Pohoda)?
 
@@ -531,6 +531,35 @@ If the programme is free, the outstanding amount is zero. Importantly, the outst
 
 As a result, the outstanding amount on a booking does not always match the current programme price.
 
+## Why does my invoice show a different company than before?
+
+Two things changed when your account moved to the new billing model, and both make previously disagreeing screens agree:
+
+- **A booking paid by another booking now invoices under the payer's entity.** If a booking's payments are managed by a sibling booking, invoicing and payment instructions follow the booking that actually pays.
+- **A product's invoice profile is now used for invoicing too.** Before, the booking widget honoured the profile set on a product while the invoice quietly used the company default. Now the product's profile wins in both places.
+
+Neither changes anything about payments already received. If the resulting entity is not what you want, set the profile you need on the product, or on the managing booking.
+
+## Why did the IBAN in a payment email change?
+
+The IBAN in payment instructions, on the QR code, on the invoice and in bank matching all come from the same place now — the bank account resolved for that booking. Previously these were worked out separately and could disagree, so one of them was showing an account you did not intend.
+
+Check which account applies in the **Invoicing** card on the booking: it names both the invoice profile and the bank account, and which level each came from.
+
+## Why can't I use the same IBAN on two invoice profiles?
+
+Because incoming money has to be attributable to one legal entity. If two entities shared an IBAN, Zooza could not tell which of them received a transfer.
+
+Add the account to the profile that really owns it. If both entities genuinely collect to one account, invoice both under the profile that owns it, or open a second account.
+
+## A booking has no invoice profile picker — why?
+
+That booking's payments are managed by another booking, so it does not choose its own entity — the whole group invoices under the profile of the booking that pays. Open the managing booking to change it.
+
+## Can I move a booking to another class without changing its invoice profile?
+
+Yes — an explicit invoice profile set on a booking is sticky. Moving the booking to another class or programme does not clear it. If a moved booking invoices under an unexpected entity, check whether it holds its own override in the **Invoicing** card and reset it to inherit.
+
 ## Related
 
 - [Stripe payments FAQ](stripe-payments-faq.md) — card payment setup, disputes, and Stripe-specific questions
@@ -538,4 +567,6 @@ As a result, the outstanding amount on a booking does not always match the curre
 - [Billing periods](../setup/billing-periods.md) — how billing periods work and how to configure them
 - Payment labels and drawers — organise payments with labels
 - [Payment tile on booking](../guides/payment-tile-on-booking.md) — reading and managing the payment tile
-- [Billing and invoicing setup](../setup/billing-and-invoicing.md) — billing profiles, VAT, invoice settings
+- [Billing and invoicing setup](../setup/billing-and-invoicing.md) — invoice generation, numbering, VAT
+- [Set up invoice profiles and bank accounts](../setup/invoice-profiles-and-bank-accounts.md) — legal entities and the accounts that collect payments
+- [Choose which invoice profile applies](../guides/invoice-profile-overrides.md) — inherit and override per programme, class or booking

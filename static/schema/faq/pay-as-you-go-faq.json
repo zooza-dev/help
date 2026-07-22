@@ -118,6 +118,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can I set up a recurring membership that automatically gives clients a new set of credits on a cycle (e.g. 8 visits every 35 days)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza does not have a native auto-renewing credit subscription on a custom cycle. There is no built-in mechanism to automatically grant a new entry pass every N days tied to a Stripe subscription.\n\nThe closest alternative is an Entry Pass:\n- You define a pass (e.g. 8 entries).\n- Clients purchase it manually (through their profile or at checkout).\n- Entries are deducted each time they book a session.\n- When the pass runs out, they purchase a new one.\n\nIf you want recurring billing for the pass (so clients are charged automatically on a schedule), this requires setting up a Stripe subscription product that issues the pass on renewal — which is a custom configuration. Contact Zooza support to discuss whether this is possible for your setup.\n\nSee Creating entry passes for how to configure entry passes."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What are linked classes and when do I need them?",
       "acceptedAnswer": {
         "@type": "Answer",

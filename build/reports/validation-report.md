@@ -4,8 +4,8 @@
 
 ## Summary
 
-- **Total docs checked:** 239
-- **Total issues found:** 67
+- **Total docs checked:** 251
+- **Total issues found:** 92
 - **Overall status:** FAIL
 
 ## 1. Required Frontmatter
@@ -32,17 +32,42 @@ All docs have exactly one H1.
 
 ## 5. Broken Internal Links
 
-**9 broken internal link(s) found:**
+**34 broken internal link(s) found:**
 
-- `content/faq/registration-status-faq.md` — link to `trash-and-restore.md`
-- `content/faq/registration-status-faq.md` — link to `trash-and-restore.md`
-- `content/faq/registration-status-faq.md` — link to `trials-daily-business.md`
-- `content/faq/registration-status-faq.md` — link to `awaiting-payment-grace-period.md`
-- `content/guides/auto-cancel-unpaid-registrations.md` — link to `registration-status-faq.md`
-- `content/guides/trials-daily-business.md` — link to `trials-setup.md`
-- `content/reference/clients-list.md` — link to `trash-and-restore.md`
-- `content/reference/clients-list.md` — link to `trash-and-restore.md`
-- `content/troubleshooting/offline-charge-manual-push.md` — link to `../setup/gocardless-direct-debit-mandates.md`
+- `content/business-models/adult-language-school.md` — link to `../guides/booking-faq.md`
+- `content/faq/email-communication-faq.md` — link to `../troubleshooting/email-delivery-troubleshooting.md`
+- `content/faq/email-communication-faq.md` — link to `../guides/settings-hub.md`
+- `content/faq/instructor-access-faq.md` — link to `../guides/class-detail.md`
+- `content/faq/onboarding-launch-faq.md` — link to `../setup/communication-send-email.md`
+- `content/faq/onboarding-launch-faq.md` — link to `../business-models/business-models.md`
+- `content/faq/programmes-timetables-sessions-faq.md` — link to `faq-programmes.md`
+- `content/guides/active-inactive-clients.md` — link to `billing-and-invoicing.md`
+- `content/guides/active-inactive-clients.md` — link to `billing-and-invoicing.md`
+- `content/guides/additional-fields.md` — link to `booking-faq.md`
+- `content/guides/additional-fields.md` — link to `booking-faq.md`
+- `content/guides/additional-fields.md` — link to `booking-faq.md`
+- `content/guides/billable-sessions.md` — link to `tracking-billable-sessions.md`
+- `content/guides/booking-form-settings.md` — link to `booking-faq.md`
+- `content/guides/creating-a-booking.md` — link to `booking-faq.md`
+- `content/guides/customizing-widgets.md` — link to `../troubleshooting/widget-embedding-troubleshooting.md`
+- `content/guides/edit-payment-on-booking.md` — link to `payments-and-billing-faq.md`
+- `content/guides/invoice-buyer-data.md` — link to `booking-faq.md`
+- `content/guides/linked-bookings.md` — link to `booking-faq.md`
+- `content/guides/multi-day-event-with-product-offer.md` — link to `booking-faq.md`
+- `content/guides/payment-tile-on-booking.md` — link to `payments-and-billing-faq.md`
+- `content/guides/programme-class-session-definition.md` — link to `class-detail.md`
+- `content/guides/returning-client-booking-widget.md` — link to `booking-faq.md`
+- `content/reference/app-navigation-map.md` — link to `../guides/class-detail.md`
+- `content/reference/app-navigation-map.md` — link to `dashboard-reference.md`
+- `content/reference/app-navigation-map.md` — link to `dashboard-reference.md`
+- `content/reference/app-navigation-map.md` — link to `dashboard-reference.md`
+- `content/reference/app-navigation-map.md` — link to `billing-and-invoicing.md`
+- `content/reference/app-navigation-map.md` — link to `email-delivery-troubleshooting.md`
+- `content/reference/communication-dashboard.md` — link to `email-delivery-troubleshooting.md`
+- `content/reference/reports-dashboard.md` — link to `dashboard-reference.md`
+- `content/setup/fakturoid-invoices.md` — link to `../reference/billing-and-invoicing.md`
+- `content/setup/invoicing-overview.md` — link to `../reference/billing-and-invoicing.md`
+- `content/setup/oblio-invoices.md` — link to `../reference/billing-and-invoicing.md`
 
 ## 6. Missing Referenced Assets
 

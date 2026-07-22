@@ -1,14 +1,14 @@
 # SEO & AI Readiness Report
 
-**Generated:** 2026-06-02
+**Generated:** 2026-07-22
 
 ## Summary
 
-- **Total docs checked:** 241
+- **Total docs checked:** 251
 - **Docs with errors:** 0
-- **Docs with warnings only:** 50
+- **Docs with warnings only:** 52
 - **Total errors:** 0
-- **Total warnings:** 163
+- **Total warnings:** 165
 - **Overall:** PASS
 
 ## Checks performed
@@ -93,6 +93,9 @@
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+
+### `content/guides/daily-calendar-swimlanes.md`
+- WARN: description too long (200 chars, max 160)
 
 ### `content/guides/documents.md`
 - WARN: title too short (9 chars, min 10): `Documents`
@@ -194,6 +197,9 @@
 
 ### `content/guides/sending-email-sms.md`
 - WARN: description missing from frontmatter (auto-extracted: `For effective communication with your clients, you can use the messaging capabil…`)
+
+### `content/guides/session-document-attachments.md`
+- WARN: description too long (188 chars, max 160)
 
 ### `content/guides/summer-camps-creation.md`
 - WARN: description missing from frontmatter (auto-extracted: `If you are creating an offer for summer camps for week-long camps, you will crea…`)

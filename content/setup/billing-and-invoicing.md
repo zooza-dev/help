@@ -1,6 +1,6 @@
 ---
 title: "Billing and invoicing"
-description: "This guide explains how to set up billing profiles and invoicing in Zooza. Billing profiles store your company details (name, address, IBAN) that..."
+description: "How Zooza generates, numbers, brands and corrects invoices — automatic and manual generation, templates, multi-line invoices and client access."
 slug: "billing-and-invoicing"
 type: "setup"
 product_area: "Payments"
@@ -11,14 +11,14 @@ status: "published"
 source_legacy_path: "legacy/html/billing-settings.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-06-01"
-related_articles: ["invoicing-overview", "szamlazz-invoices", "fakturoid-invoices", "xero-integration"]
+last_converted: "2026-07-22"
+related_articles: ["invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "invoicing-overview", "szamlazz-invoices", "fakturoid-invoices", "xero-integration"]
 ---
 
 
 # Billing and invoicing
 
-This guide explains how to set up billing profiles and invoicing in Zooza. Billing profiles store your company details (name, address, IBAN) that appear on invoices and in payment instructions sent to clients. Invoices can be generated automatically when a payment is received, or manually per booking.
+This guide explains how invoicing works in Zooza — when invoices are generated, how they are numbered and branded, and how to correct them. Your company details on the invoice come from an **invoice profile**; see [Set up invoice profiles and bank accounts](./invoice-profiles-and-bank-accounts.md).
 
 > **Note:** If you use external invoicing software (Xero, Abra Flexi, Smartbill, Szamlazz), you may not need Zooza's built-in invoicing. See the [Related](#related) section for integration guides.
 
@@ -30,9 +30,9 @@ Go to **Settings** → **Billing**.
 
 The Billing page has three sections:
 
-1. **Invoice settings** — automatic invoice generation toggle.
-2. **Default billing profile** — your primary company and bank details.
-3. **Other billing profiles** — additional profiles for multi-entity businesses.
+1. **Billing periods** — the term blocks you bill against.
+2. **Invoice profiles** — your legal entities and their bank accounts.
+3. **Invoices** and **Payments** — the generated documents and the money received.
 
 ## Automatic invoice generation
 
@@ -56,78 +56,32 @@ When automatic invoicing is off, no invoices are generated automatically. You ca
 
 > **Tip:** If you are just getting started with Zooza, you can leave automatic invoicing off, accept bookings and payments, and enable it later once your accounting settings are ready. You can also generate invoices retrospectively.
 
-## Default billing profile
+## Invoice profiles and bank accounts
 
-The default billing profile is used on all programmes unless you assign a different profile. It contains your company and bank details that appear on invoices and in payment communications.
+An **invoice profile** is a legal entity — company name, address, Business ID, Tax ID, VAT details and invoice numbering. It is the "From" block on every invoice. A **bank account** is one IBAN that belongs to a profile; a profile can hold several accounts and marks one of them as its default.
 
-![Default billing profile overview](../../assets/images/billing-and-invoicing-04.png)
+Go to **Settings → Billing → Invoice profiles** to manage both.
 
-Click the company name (or **Not Set**) to open the profile editor.
+![Invoice profiles list showing two legal entities with the default profile badge](../../assets/images/invoice-profiles-list.png)
 
-### Billing profile fields
+- The **default invoice profile** is used whenever nothing more specific is set. It cannot be deleted.
+- Add another profile when you invoice under a second legal entity.
+- Bank accounts live on the profile, in the **Bank accounts** card — including the `Account holder name`, which must match your bank exactly (banking apps verify it when a client scans a payment QR code).
+- The same IBAN cannot be used on two invoice profiles in the same company.
 
-![Edit billing profile form](../../assets/images/billing-and-invoicing-05.png)
+Full steps: [Set up invoice profiles and bank accounts](./invoice-profiles-and-bank-accounts.md).
 
-| Field | Description |
-|---|---|
-| `Company name` | Your company or trading name. Appears on invoices. **Required.** |
-| `Email address` | Main contact email for your company and clients. |
-| `Phone number` | Contact phone number (appears on invoice if filled). |
-| `Street and house number` | Company address line. |
-| `City` | City. |
-| `Country` | Country. |
-| `ZIP code` | Postal code. |
-| `Business ID` | Company registration number. **Required.** |
-| `Tax ID` | Tax identification number. |
-| `VAT number` | VAT registration number (if applicable). |
-| `VAT payer` | Check if your company is a VAT payer. |
-| `Show VAT payer on invoices` | If checked, invoices display your VAT payer status. |
-| `Account number (IBAN)` | Bank account in IBAN format. Automatically inserted into payment messages sent to clients. |
-| `Account holder name` | The exact name registered with your bank for this IBAN. |
+### Which profile a booking uses
 
-### Account holder name and IBAN
+A booking invoices under the lowest level that sets a profile: **Default profile → Programme → Class → Booking**. The **Invoicing** card on each of those shows the whole chain, which level decided, and lets you override it there.
 
-![IBAN and account holder name fields](../../assets/images/billing-and-invoicing-06.png)
+Products and orders resolve the same way through the product's own profile.
 
-The `Account holder name` must match your bank account exactly. This field is important for two reasons:
+Full steps: [Choose which invoice profile applies](../guides/invoice-profile-overrides.md).
 
-1. **QR code payments** — When clients scan a QR code from a payment email, their banking app verifies the account holder name. A mismatch can cause the payment to fail.
-2. **Instant Payments Regulation** — EU regulations require that the account holder name matches the IBAN. If these do not match, some banks will reject the transfer.
+### Bank statements
 
-> **Tip:** You can include your IBAN in payment emails using the dynamic tag for bank account number. This pulls the value directly from the billing profile assigned to the programme.
-
-### GoCardless bank pairing
-
-If you use GoCardless for direct debit, you can pair your bank account with GoCardless directly from the billing profile. This enables Zooza to automatically match incoming bank transfers to the correct bookings.
-
-If the bank account is not paired, you will see a notice:
-
-> "The bank account on this profile is not paired via GoCardless, which means that unless you use another type of matching, Zooza will not be able to automatically match payments made by your clients' bank transfers."
-
-For GoCardless setup details, see [GoCardless Integration FAQ](../faq/gocardless-faq.md).
-
-## Additional billing profiles
-
-If you operate multiple companies or brands, you can create additional billing profiles. Each profile has its own company details, IBAN, and invoice numbering.
-
-![Other billing profiles section](../../assets/images/billing-and-invoicing-07.png)
-
-Click **Add** to create a new profile. The form is the same as the default profile.
-
-### Assigning a billing profile to a programme
-
-Each programme can use a specific billing profile for invoicing. To assign one:
-
-1. Open the programme and go to **Settings**.
-2. Open the **Price and Payment** tile.
-3. In the **Invoicing** section, select the desired **Invoice profile** from the dropdown.
-4. Click **Save**.
-
-![Price and Payment tile showing billing profile](../../assets/images/billing-and-invoicing-08.png)
-
-![Invoicing section with invoice profile dropdown](../../assets/images/billing-and-invoicing-09.png)
-
-If no profile is selected, the default billing profile is used.
+Each bank account reads its own bank statements, so incoming transfers are matched to bookings. See [Set up how Zooza collects money from clients](./inbound-payments-setup.md).
 
 ## Invoice overview
 
@@ -175,7 +129,7 @@ After an invoice is generated, you can edit it by clicking the pencil icon next 
 
 ## Invoice numbering and item descriptions
 
-Invoice numbers are generated sequentially per billing profile. The format and starting number are configured in the billing profile settings.
+Invoice numbers are generated sequentially per invoice profile. The format and starting number are configured on the invoice profile.
 
 ### Custom invoice number template
 
@@ -339,6 +293,8 @@ The invoice is emailed to the client immediately.
 
 ## Related
 
+- [Set up invoice profiles and bank accounts](./invoice-profiles-and-bank-accounts.md) — legal entities and the accounts that collect payments.
+- [Choose which invoice profile applies](../guides/invoice-profile-overrides.md) — inherit and override per programme, class or booking.
 - [Invoicing overview](./invoicing-overview.md) — how invoice engines work, which engine to use.
 - [Payments and Billing FAQ](../faq/payments-and-billing-faq.md) — common payment and billing questions.
 - [Edit payment on booking](../guides/edit-payment-on-booking.md) — how to adjust payments on bookings.

@@ -150,6 +150,30 @@
     },
     {
       "@type": "Question",
+      "name": "How do I resend a registration confirmation email to a client?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1. Open the registration (booking) detail.\n2. Go to the Communication tab.\n3. Click Send email.\n4. In the template selector, choose the Booking confirmation template (or any other template you want to send).\n5. Send.\n\nThis works for any booking — not just manually created ones. Use it any time a client says they didn't receive their confirmation or need it re-sent."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I remove specific people from the recipient list when sending a bulk email?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In step 2 of the email send flow (the recipient review step), you can expand the recipient list and uncheck individual recipients before sending.\n\n1. Compose your email and proceed to the next step.\n2. Click the recipient count or the Recipients section to expand the full list.\n3. Uncheck anyone you do not want to receive this send.\n4. Proceed to send.\n\nUnchecking a recipient only affects this single send — it does not affect their subscription status or future sends."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why did a session reminder arrive at a different email address than the client's account email?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each registration has an optional additional notification email field. When this field is set, session reminders and certain automated notifications go to that address — not to (or in addition to) the client's main account email.\n\nThis is intentional. It allows a second parent, guardian, or contact person to receive session reminders independently of who owns the account.\n\nTo check or change the additional notification email for a registration:\n1. Open the registration (booking) detail.\n2. Go to the Options tab.\n3. Look for the Additional notification email field.\n\nIf a client reports receiving reminders at an unexpected address, check this field first. Clear it to send notifications to the account email only."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Why did my client not receive the confirmation email for a manual or copied booking?",
       "acceptedAnswer": {
         "@type": "Answer",

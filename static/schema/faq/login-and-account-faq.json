@@ -46,6 +46,14 @@
     },
     {
       "@type": "Question",
+      "name": "A client requested a login link twice and now the first link doesn't work — why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza uses single-use login tokens. Each time a client requests a new login link (PIN code), the previous link is immediately invalidated. Only the most recent link is valid.\n\nThis often happens when a client:\n- Clicks \"send login link\" twice in quick succession\n- Waits too long and requests a second link while the first is still in their inbox\n\nSolution: Ask the client to use only the most recent email they received from Zooza and ignore any earlier login emails. If the second link also expired, they simply request a new one — there is no lockout."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Can multiple team members share one login?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -62,10 +70,18 @@
     },
     {
       "@type": "Question",
+      "name": "How do I switch Zooza to dark mode?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza does not have an independent dark/light mode setting. The app follows your browser's or operating system's theme preference. If your browser or OS is set to dark mode, Zooza will appear in dark mode automatically.\n\nTo change the theme: update your system display settings (macOS: System Settings → Appearance; Windows: Settings → Personalisation → Colours) or your browser's appearance settings. The change takes effect immediately in Zooza without needing to refresh."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Is there a Zooza mobile app to download?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zooza is a web application — there is no native app to download from the App Store or Google Play. You access it through a browser at zooza.app.\n\nYou can add it to your phone's home screen so it behaves like an app:\n\niPhone (Safari):\n1. Open zooza.app in Safari.\n2. Tap the share icon (square with an arrow pointing up).\n3. Tap Add to Home Screen.\n\nAndroid (Chrome):\n1. Open zooza.app in Chrome.\n2. Tap the three-dot menu (top right).\n3. Tap Add to Home screen.\n\nThe icon will appear on your home screen and the app will open in full-screen mode."
+        "text": "Zooza is a web application — there is no native app to download from the App Store or Google Play. You access it through a browser at zooza.app. This is intentional:\n\n- No installation required — parents and instructors can open the app immediately on any device or browser without going through an app store.\n- Always up to date — web updates deploy instantly. There is no \"please update your app\" friction.\n- Works everywhere — any phone, tablet, or desktop with a modern browser.\n- Lower barrier for clients — asking clients to install a native app creates friction. A link they click in an email just works.\n\nYou can add it to your phone's home screen so it behaves like an app:\n\niPhone (Safari):\n1. Open zooza.app in Safari.\n2. Tap the share icon (square with an arrow pointing up).\n3. Tap Add to Home Screen.\n\nAndroid (Chrome):\n1. Open zooza.app in Chrome.\n2. Tap the three-dot menu (top right).\n3. Tap Add to Home screen.\n\nThe icon will appear on your home screen and the app will open in full-screen mode."
       }
     }
   ]
