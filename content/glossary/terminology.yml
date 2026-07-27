@@ -855,6 +855,57 @@ terms:
       Do NOT confuse with Entry pass credit balance (entirely different feature).
     public: true
 
+  - id: e-invoice
+    canonical_en: "E-invoice"
+    category: "payments"
+    definition: >
+      An invoice in a structured, machine-readable format (EN 16931, in practice
+      Peppol BIS 3.0 UBL XML) exchanged over a certified network and reported to
+      the tax authority. Distinct from a PDF invoice sent by email, which is what
+      Zooza generates. Zooza does not produce or transmit structured e-invoices.
+    context:
+      admin: "E-invoice / e-faktúra"
+    synonyms:
+      - "structured e-invoice"
+      - "Peppol invoice"
+    translations:
+      sk: "E-faktúra"
+      cz: "E-faktura"
+      hu: "E-számla"
+      ro: "E-factura"
+    intent_keywords:
+      en: ["e-invoice", "e-invoicing", "electronic invoice", "peppol", "structured invoice",
+           "EN 16931", "UBL", "e-invoicing mandate", "2027 invoicing law", "ViDA"]
+      sk: ["e-faktúra", "efaktúra", "elektronická faktúra", "elektronická fakturácia",
+           "IS EFA", "peppol", "povinná e-faktúra", "e-faktúra 2027", "zákon o e-fakturácii"]
+      cz: ["e-faktura", "elektronická faktura", "ISDOC", "peppol", "elektronická fakturace"]
+      hu: ["e-számla", "elektronikus számla", "RTIR", "NAV online számla"]
+      ro: ["e-factura", "factura electronica", "SPV"]
+    do_not_confuse_with:
+      - term: "PDF invoice sent by email"
+        reason: >
+          Customers call any non-paper invoice "electronic". Under the mandates only a
+          structured XML sent over Peppol counts. Zooza's PDF invoices do not qualify,
+          but for B2C course invoicing no mandate applies.
+      - term: "Invoice engine"
+        reason: >
+          An invoice engine (Fakturoid, ABRA Flexi, Xero, Számlázz.hu, SmartBill, Oblio,
+          Faktury Online, Zooza Invoice) is the system that produces the document.
+          E-invoicing compliance is that system's responsibility, not Zooza's.
+    ai_notes: >
+      As of July 2026: Slovakia mandates structured e-invoicing from 1 Jan 2027 for
+      VAT-registered businesses, B2B and B2G only — B2C is explicitly excluded, so most
+      course invoicing is out of scope. CZ has no domestic mandate before 2035; HU has
+      data reporting (RTIR) but no mandated format; EU ViDA covers cross-border B2B from
+      1 Jul 2030. Zooza has no e-invoicing support and no announced date, and will not
+      become a Peppol provider itself. THE ANSWER TO GIVE: if a customer needs structured
+      e-invoices, they must issue them through an invoicing service that supports
+      e-invoicing, connected to Zooza as an invoice engine — and they should tell us which
+      service, so it can be considered for integration. Point users to
+      help.zooza.online/setup/e-invoicing-mandates/ and always add that this is not tax
+      advice. Verify dates before restating them — legislation shifts.
+    public: false
+
   # ──────────────────────────────────────────────
   # VENUES & LOCATIONS
   # ──────────────────────────────────────────────

@@ -222,6 +222,22 @@
     },
     {
       "@type": "Question",
+      "name": "Does Zooza support e-invoicing (e-faktúra)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not in the legal sense used by the new government mandates. Zooza generates PDF invoices — through a built-in engine or through your connected accounting system. It does not generate structured EN 16931 / Peppol XML invoices, send them over the Peppol network, or report invoice data to a tax authority. A PDF emailed to a client does not satisfy a structured e-invoicing mandate.\n\nIf you do need structured e-invoices, they have to be issued by an invoicing service that supports e-invoicing, connected to Zooza as your invoice engine. Tell us which service you use — if it is not on our list yet, we can look at adding it as an integration.\n\nSee Government e-invoicing mandates and Zooza for who the mandates actually cover."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Slovakia's 2027 e-invoicing mandate — do I need to do anything?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Probably not. From 1 January 2027 the Slovak mandate applies to VAT-registered businesses invoicing other businesses (B2B) or public bodies (B2G). Invoices issued to a parent or participant as a private individual are B2C, which is explicitly excluded. If all your Zooza invoices go to individuals, nothing changes for you.\n\nYou do need to plan if you are VAT-registered in Slovakia and invoice companies — corporate training, an employer paying for a place — or invoice schools and municipalities. Those invoices must be issued through a service that supports e-invoicing (an accredited Peppol provider), not through Zooza's built-in invoicing. Tell us which service that is and we can look at connecting it as an invoice engine. Note that from 2027 every Slovak business, including non-VAT payers, must be able to receive an e-invoice.\n\nFull country-by-country breakdown: Government e-invoicing mandates and Zooza. This is general information, not tax advice — confirm your obligations with your accountant."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What happens to a client's scheduled payment when I cancel a session?",
       "acceptedAnswer": {
         "@type": "Answer",

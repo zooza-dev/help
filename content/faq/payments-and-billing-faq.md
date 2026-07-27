@@ -7,7 +7,7 @@ product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
 tags: ["payments"]
-related_articles: ["payment-pairing", "stripe-payments-faq", "gocardless-faq", "payment-tile-on-booking", "invoice-profiles-and-bank-accounts", "invoice-profile-overrides"]
+related_articles: ["payment-pairing", "stripe-payments-faq", "gocardless-faq", "payment-tile-on-booking", "invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "e-invoicing-mandates"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
@@ -268,6 +268,22 @@ Zooza does not issue debit notes. To charge a client an additional amount:
 1. Open the booking detail.
 2. Adjust the outstanding debt manually — see [Edit payment on booking](../guides/edit-payment-on-booking.md).
 3. If an invoice is required for the additional amount, generate a new invoice for that booking once the additional payment is recorded.
+
+## Does Zooza support e-invoicing (e-faktúra)?
+
+Not in the legal sense used by the new government mandates. Zooza generates **PDF invoices** — through a built-in engine or through your connected accounting system. It does not generate structured `EN 16931` / Peppol XML invoices, send them over the Peppol network, or report invoice data to a tax authority. A PDF emailed to a client does not satisfy a structured e-invoicing mandate.
+
+If you do need structured e-invoices, they have to be issued by an **invoicing service that supports e-invoicing**, connected to Zooza as your invoice engine. Tell us which service you use — if it is not on our list yet, we can look at adding it as an integration.
+
+See [Government e-invoicing mandates and Zooza](../setup/e-invoicing-mandates.md) for who the mandates actually cover.
+
+## Slovakia's 2027 e-invoicing mandate — do I need to do anything?
+
+Probably not. From 1 January 2027 the Slovak mandate applies to **VAT-registered businesses invoicing other businesses (B2B) or public bodies (B2G)**. Invoices issued to a parent or participant as a private individual are B2C, which is **explicitly excluded**. If all your Zooza invoices go to individuals, nothing changes for you.
+
+You do need to plan if you are VAT-registered in Slovakia and invoice companies — corporate training, an employer paying for a place — or invoice schools and municipalities. Those invoices must be issued through a service that supports e-invoicing (an accredited Peppol provider), not through Zooza's built-in invoicing. Tell us which service that is and we can look at connecting it as an invoice engine. Note that from 2027 every Slovak business, including non-VAT payers, must be able to **receive** an e-invoice.
+
+Full country-by-country breakdown: [Government e-invoicing mandates and Zooza](../setup/e-invoicing-mandates.md). This is general information, not tax advice — confirm your obligations with your accountant.
 
 ## What happens to a client's scheduled payment when I cancel a session?
 
@@ -570,3 +586,4 @@ Yes — an explicit invoice profile set on a booking is sticky. Moving the booki
 - [Billing and invoicing setup](../setup/billing-and-invoicing.md) — invoice generation, numbering, VAT
 - [Set up invoice profiles and bank accounts](../setup/invoice-profiles-and-bank-accounts.md) — legal entities and the accounts that collect payments
 - [Choose which invoice profile applies](../guides/invoice-profile-overrides.md) — inherit and override per programme, class or booking
+- [Government e-invoicing mandates and Zooza](../setup/e-invoicing-mandates.md) — the Slovak 2027 rule, B2C exclusion, and what to do if it applies to you

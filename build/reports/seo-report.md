@@ -1,14 +1,14 @@
 # SEO & AI Readiness Report
 
-**Generated:** 2026-07-22
+**Generated:** 2026-07-27
 
 ## Summary
 
-- **Total docs checked:** 251
+- **Total docs checked:** 252
 - **Docs with errors:** 0
-- **Docs with warnings only:** 52
+- **Docs with warnings only:** 51
 - **Total errors:** 0
-- **Total warnings:** 165
+- **Total warnings:** 164
 - **Overall:** PASS
 
 ## Checks performed
@@ -222,9 +222,6 @@
 
 ### `content/guides/user-roles.md`
 - WARN: description missing from frontmatter (auto-extracted: `For adding additional Zooza users, you have a choice of different roles that are…`)
-
-### `content/guides/vat-management.md`
-- WARN: description missing from frontmatter (auto-extracted: `For clients who are VAT payers and need to indicate the amount of tax on invoice…`)
 
 ### `content/guides/viewing-billable-sessions.md`
 - WARN: description missing from frontmatter (auto-extracted: `If you already have set up billable sessions, the application will start calcula…`)

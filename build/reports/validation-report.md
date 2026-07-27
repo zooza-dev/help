@@ -4,7 +4,7 @@
 
 ## Summary
 
-- **Total docs checked:** 251
+- **Total docs checked:** 252
 - **Total issues found:** 92
 - **Overall status:** FAIL
 

@@ -1,5 +1,6 @@
 ---
 title: VAT management
+description: "Set VAT rates in Zooza at three levels — billing settings, invoice profile, and individual booking — so invoices show the correct tax."
 slug: vat-management
 type: guides
 product_area: Payments
@@ -12,6 +13,7 @@ source_legacy_path: legacy/0102_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: false
 last_converted: 2026-02-11
+related_articles: ["invoicing-overview", "invoice-profiles-and-bank-accounts", "e-invoicing-mandates", "payments-and-billing-faq"]
 ---
 
 # VAT management
@@ -61,3 +63,9 @@ If you do not have automatic invoice generation enabled, or if you need to issue
 4. Click on Generate Invoice.
 
 ![Click on Generate Invoice](../../assets/images/vat-management-04.png)
+
+## Related
+
+- [Invoicing in Zooza — Overview](../setup/invoicing-overview.md) — invoice engines and what Zooza generates
+- [Set up invoice profiles and bank accounts](../setup/invoice-profiles-and-bank-accounts.md) — legal entities, tax IDs, IBANs
+- [Government e-invoicing mandates and Zooza](../setup/e-invoicing-mandates.md) — the Slovak 2027 rule and who it applies to

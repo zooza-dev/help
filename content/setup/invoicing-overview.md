@@ -12,7 +12,7 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-07-22"
-related_articles: ["invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "billing-and-invoicing", "payments-and-billing-faq"]
+related_articles: ["invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "billing-and-invoicing", "payments-and-billing-faq", "e-invoicing-mandates"]
 ---
 
 # Invoicing in Zooza — Overview
@@ -158,6 +158,7 @@ See [Multi-line invoices](./billing-and-invoicing.md#multi-line-invoices) for ho
 | **Invoice deletion** | Invoices cannot be deleted in Zooza. Void or cancel them in your accounting system if needed. |
 | **PDF for Xero invoices** | Zooza links to the invoice in Xero but does not store a local PDF copy. |
 | **Payment sync for most engines** | Only Xero (full), Fakturoid (partial), and Számlázz.hu (partial) sync payments back to the external system. Other engines track payments in Zooza only. |
+| **Structured e-invoices (Peppol / e-faktúra)** | Zooza generates PDF invoices, not structured `EN 16931` / Peppol XML, and does not report invoice data to tax authorities. Most course invoicing is B2C and falls outside the current mandates — see [Government e-invoicing mandates and Zooza](./e-invoicing-mandates.md). |
 
 ---
 
@@ -176,4 +177,5 @@ If your system isn't supported yet, contact us — we can discuss adding an inte
 - [Invoices list](../reference/billing-and-invoicing.md) — browsing and downloading invoices
 - [Multi-line invoices](./billing-and-invoicing.md#multi-line-invoices) — itemised invoice breakdown
 - [Integrations](./integrations-hub.md) — accounting export formats (Pohoda, Omega, SAP)
+- [Government e-invoicing mandates and Zooza](./e-invoicing-mandates.md) — Slovak 2027 rule, Peppol, and what it means for course invoices
 - [Payments and Billing FAQ](../faq/payments-and-billing-faq.md) — common questions
