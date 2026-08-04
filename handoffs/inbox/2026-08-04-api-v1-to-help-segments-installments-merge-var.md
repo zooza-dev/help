@@ -28,6 +28,8 @@ There are three situations where the single figure will not match every individu
 - **A shortened final payment**, when the last period is partial.
 - **Payments an admin has edited by hand** afterwards.
 
+**The output is sometimes two-part.** When the first payment differs from the rest — a shortened first period, or a discount that applies only to the first payment — the tag renders `45,00 €, then 97,50 €/month`. An operator who expects a single figure will read the second number as a fault, so this needs a line too.
+
 We also need the tag's behaviour on the two "nothing to show" cases documented, because both are intentional and will otherwise be reported as bugs:
 
 - A customer with **no payment plan** — the tag renders **nothing at all**.
