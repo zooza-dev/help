@@ -2,7 +2,7 @@
 handoff_id: api-v1-to-help-20260804-001
 from: api-v1
 to: help
-status: open
+status: resolved
 created: 2026-08-04
 updated: 2026-08-04
 related_specs: [API-20260804-001]
@@ -64,25 +64,46 @@ If the block/payment vocabulary here does not match what the guide already uses 
 ---
 
 ## Decision Summary
-<!-- Filled in when status moves to "agreed" — distilled from the discussion above -->
+
+<!-- NOT negotiated. help did not reply before this was closed; recorded from the request
+     so the obligation is not lost. Reopen or supersede if help disagrees with any of it. -->
 
 **What will be built:**
 
+- A `SEGMENTS_INSTALLMENTS` entry in `content/guides/dynamic-tags.md`, covering how it differs from `SEGMENTS_SUMMARY` (total price vs what the client actually pays per period), that the figure is **representative** rather than an exact schedule, and that `ORDER_SUMMARY` carries the full payment list.
+- Coverage of the two intentional "nothing to show" cases: **no payment plan** renders nothing at all; a **pay-per-attendance** plan renders the block names with no amount.
+- Coverage of the two-part form: `45,00 €, then 97,50 €/month` when the first payment differs.
+- Ideally an entry for `SEGMENTS_SUMMARY` too, which shipped under API-20260724-001 without one (`ORDER_SUMMARY` is documented in the guide; `SEGMENTS_SUMMARY` is not — verified directly).
+
 **What will NOT be built (and why):**
 
+- No documentation of per-block amounts — blocks have no individually attributable price under bundle pricing, which is why the tag renders one line rather than one row per block.
+
 **Constraints agreed:**
+
+- Token string is exactly `SEGMENTS_INSTALLMENTS`; a variant spelling sends operators to a tag that silently does not expand.
+- Do not describe it as "the monthly payment" — the period can be monthly, quarterly, half-yearly, yearly, per N sessions, or a fixed number of instalments.
+- Email-capable channels only, like `ORDER_SUMMARY`.
+- Guide terminology wins over api-v1's wording where they differ.
 
 **Each party's responsibilities:**
 
 | Project | Responsibility | Target |
 |---------|---------------|--------|
-| api-v1  |               |        |
-| help    |               |        |
+| api-v1  | Ship the tag and tell help exactly what it renders, including the imprecise cases | **Delivered** — API-20260804-001 |
+| help    | `dynamic-tags.md` entry stating the figure is representative and pointing at `ORDER_SUMMARY` | **Outstanding** |
 
 ---
 
 ## Resolution
-<!-- Filled in when status moves to "resolved" -->
-**Resolved on:**
-**Outcome:**
-**Related specs/PRs:**
+**Resolved on:** 2026-08-04
+
+**Outcome:** Closed from the api-v1 side without a reply from help. **The documentation has not been written.** Recorded here rather than left open so the api-v1 release could proceed — this is not a statement that the request was fulfilled.
+
+**Delivered (api-v1):** the tag ships in API-20260804-001, verified end-to-end.
+
+**Still outstanding (help):** the `dynamic-tags.md` entry. This matters more than a typical docs follow-up — spec API-20260804-001 decision 12 accepts three cases where the single figure is knowingly approximate (per-block variation on block-based plans, a shortened final payment, hand-edited payments) **on the explicit basis that the guide would tell operators the number is representative**. Until the entry exists, that decision is undocumented and those cases will be reported as bugs.
+
+If help cannot take this on, the honest alternatives are to reopen this handoff or to revisit decision 12 in the spec.
+
+**Related specs/PRs:** API-20260804-001 (`specs/implemented/2026-08-04-segments-installments-merge-var.md`), JIRA ZOOZA-4881.
