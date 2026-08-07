@@ -40,6 +40,16 @@ Once you add sessions to the class and it becomes a regular class, clients autom
 
 > **Trials:** Trials require sessions to be scheduled. A lead collection class cannot accept trial bookings.
 
+### No price, and no payment
+
+A lead collection class has no sessions and no billing period, so **the programme price is not shown and no payment is requested.** The client sees only the registration form, any registration fee you have configured, and the confirmation that they are on the list.
+
+There is no setting that reveals the programme price at this stage. If you want people to know what it will cost before the schedule is confirmed, write it into the programme description — a note along the lines of "€300 for the term, payable once the venue and start date are confirmed" is what most people do, and it sets expectations without promising a date.
+
+**The client should not see a Pay button.** Payment details are released only after you add the sessions and the class becomes a regular class. If a client reports a Pay button on a lead collection registration, that is a fault worth reporting rather than something to configure around.
+
+The consequence for pre-filling a class: if you add interested parents to a *regular* class to save time, the invoice is generated at that moment and they will be asked to pay. Keep them in lead collection until you are ready to charge.
+
 ## Confirmation email template
 
 The email sent to clients after joining a lead collection class is a separate template from the standard booking confirmation.

@@ -30,6 +30,12 @@ Zooza decides automatically whether to deliver the file immediately or queue it 
 
 The threshold between small and large is checked automatically. You do not need to do anything differently — just click **Export** and wait.
 
+> **Why some exports appear in your browser downloads and others do not.** A small export downloads straight away, the way exports always used to. A large one is prepared in the background and lands in **Settings → Tools → Exports** instead.
+>
+> Nothing has broken if a file does not appear in your downloads folder — it went to the exports list because it was too big to produce on the spot. If you have never opened that list, that is where your missing exports are.
+>
+> If an export of everything fails outright rather than queuing, narrow it with a filter (one billing period, one programme) and export in parts.
+
 ## What to do when an export is queued
 
 1. You will see a **"Preparing…"** notification when a large export is queued.

@@ -37,6 +37,12 @@ The main calendar view shows a daily timeline grouped by location.
 | `Attendance type` | Filter by type of attendance record. |
 | **Legend** | Expandable legend explaining the colour codes and icons. |
 
+> **The Name filter searches clients, not instructors.** This is the most common cause of "the instructor's calendar is empty". Typing an instructor's name there filters for a *parent or child* of that name, finds nobody, and empties the calendar — with no error, because the filter did exactly what it was asked.
+>
+> To see one instructor's schedule, use the **Instructor** filter instead.
+>
+> If a calendar looks empty and the sessions definitely exist, clear every filter first and add them back one at a time. It is faster than checking the sessions.
+
 ### Timeline
 
 The calendar displays a horizontal timeline with hourly columns (07:00, 08:00, ..., 14:00, etc.). Each location row shows sessions as blocks at their scheduled time.
