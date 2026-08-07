@@ -46,10 +46,26 @@
     },
     {
       "@type": "Question",
+      "name": "Zooza AI says it cannot do something I know it can do",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Refresh the connector's tool list. It does not update itself.\n\nWhen Zooza adds a new capability, your connector keeps the list of tools it learned when you connected. Claude and ChatGPT both cache it, and neither refreshes automatically — so the assistant will tell you, confidently, that it has no way to do the thing that shipped last week.\n\nIn Claude: open your connectors list and refresh the available tools (the control is at the top right of that screen).\n\nIn ChatGPT: go to Settings → Apps, open Zooza, and use Refresh. If you only see Disconnect, disconnect and connect again — reconnecting rebuilds the list.\n\nIf it still misbehaves after refreshing, disconnect and reconnect under a slightly different name. That forces a clean setup rather than reusing the cached one.\n\nThis is a limitation of the AI platforms, not of Zooza — neither currently allows a connector to push an updated tool list to clients that have already connected."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I report a problem with Zooza AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Type it into the chat where the problem happened: \"I want to send feedback to Zooza.\"\n\nThere is no button to look for, which is the part people find odd — you are asking the assistant to do something, the same way you ask it anything else. It then sends us a summary of the conversation together with the tool calls it actually made, which is diagnostic information you cannot see and could not report yourself.\n\nDo it in the conversation that went wrong rather than a fresh one, since the context is the useful part.\n\nIf the feedback command itself fails, the connector's tool list is probably stale — refresh it as described above, then try again."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "The connection is not working. What should I do?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "1. Confirm that you have an active Zooza account with Admin access.\n2. Try signing out and back in via OAuth.\n3. If the problem persists, contact support@zooza.online."
+        "text": "1. Confirm that you have an active Zooza account with Admin access.\n2. Try signing out and back in via OAuth.\n3. Refresh the tool list (see above) — a stale list can look like a broken connection.\n4. If the problem persists, contact support@zooza.online."
       }
     }
   ]
