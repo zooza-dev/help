@@ -17,7 +17,15 @@
       "name": "How do I create a demo or test class?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A demo class is useful when you want to test the full booking flow before going live, or show a potential client or team member how Zooza works without affecting real data.\n\n1. Go to Programmes → create a new programme (e.g., name it \"Demo\" or \"Test\").\n2. Add a class with a session or two.\n3. Set the price to 0 or use a test payment method so no real charges occur.\n4. Use the booking link to go through the registration yourself, or add a test booking manually.\n5. When done, delete the test bookings: open each booking → set status to Deleted.\n\nYou can keep the demo programme for internal use or archive it when you no longer need it.\n\nTip: If you only need to test the booking form experience (what the client sees), you can also use the Widget preview without creating an actual booking."
+        "text": "A demo class is useful when you want to test the full booking flow before going live, or show a potential client or team member how Zooza works without affecting real data.\n\n1. Go to Programmes → create a new programme (e.g., name it \"Demo\" or \"Test\").\n2. Add a class with a session or two.\n3. Set the price to 0 or use a test payment method so no real charges occur.\n4. Use the booking link to go through the registration yourself, or add a test booking manually.\n5. When done, delete the test bookings: open each booking → set status to Deleted.\n\nYou can keep the demo programme for internal use or archive it when you no longer need it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I see what clients see, without making anything live?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no preview panel inside the widget settings. The widget configuration screen shows the settings only — configuring a widget never renders a sample of the form next to it. Looking for one is the single most common wasted half-hour in onboarding.\n\nTo actually see the client's view, use one of these three:\n\n1. Copy the class link. Open any class and use Copy. That URL opens the offer exactly as a client sees it — the fastest check by far, and it does not publish anything or create a booking. See Share a course or class registration link.\n\n2. Use your Playground account. If you have one, switch to it by clicking the account name under the logo (on a computer). Your test site is at <your-account>.zooza.online. Everything there is disposable, so you can complete a whole registration and see the confirmation emails without touching live data.\n\n3. Put the widget on a page nobody visits. For checking the embedded form in its real surroundings — your fonts, your CSS, your cookie banner — put it on an unlisted or draft page on your own site and open that. This is the only way to see the widget as it will genuinely behave.\n\nWhich to reach for:\n\nA class that is not open for online booking can still be opened by a private link — use the arrow next to Copy to create one. Useful for showing a colleague a class you have not launched yet."
       }
     },
     {
