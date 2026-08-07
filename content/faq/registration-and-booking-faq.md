@@ -12,6 +12,7 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-08-07"
+related_articles: ["booking-faq", "booking-widget-faq", "payments-and-billing-faq"]
 ---
 
 # Registration and Booking FAQ
@@ -94,6 +95,14 @@ The email is sent immediately to the client's address on the booking. You can us
 ## Can I search for and restore deleted bookings?
 
 Yes. Deleted bookings are kept in **Trash** for 30 days and can be restored with a single click.
+
+## Why does the basket/checkout summary show only the registration fee and not the full course price?
+
+This is intentional. When a client registers (including when registering multiple children in one basket), the checkout summary shows the **registration fee** (booking fee) — the amount due immediately at the point of sign-up. The full course price is not shown in the basket because it is collected later through payment instalments.
+
+The registration fee is a one-time charge set on the programme. The remaining course price is paid according to the payment plan (weekly, monthly, or a lump sum at a later date), depending on how your programme is configured.
+
+If you do not want to charge a registration fee at all, go to **Programmes → programme → Settings → Price and Payment** and set the booking fee to 0. The basket will then show €0 as the immediate payment.
 
 1. Go to **Settings → Tools → Trash**.
 2. Filter by **Type → Registration** to narrow the list.

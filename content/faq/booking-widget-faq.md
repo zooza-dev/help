@@ -187,6 +187,26 @@ A common cause is a **hardcoded `place` or `location` parameter in the embed URL
 
 ---
 
+## The registration form on my website is not loading — clients see text but no form
+
+There are two common causes:
+
+### The class has no sessions scheduled
+
+A booking form will not display the registration widget if the class it belongs to has no sessions in the system. Without sessions, there is nothing to sign up for.
+
+**Fix:** Go to **Programmes → class → Sessions** and check that sessions have been generated. If the class is new or you added it recently without generating a schedule, add sessions manually or via the schedule generator. Once sessions exist, the registration form will load.
+
+### The text on the page is plain text, not the Zooza widget embed code
+
+Sometimes what looks like a registration form on a website is actually a block of text that someone typed or pasted. The Zooza widget only works if the actual embed code (a `<script>` tag or WordPress shortcode) is in the page source.
+
+**Check:**
+1. Right-click the area where the form should appear and select **Inspect** (or **View Page Source**).
+2. Look for a `<script>` tag containing `zooza.online` or a `[zooza ...]` WordPress shortcode. If it is not there, the widget embed code is missing.
+
+**Fix:** Go to **Team & Settings → Publish** in Zooza, copy the correct embed code for your widget type, and paste it into the page editor on your website. Refer to [Widget Embedding Troubleshooting](../troubleshooting/widget-embedding.md) for step-by-step instructions.
+
 ## Can I translate or customise the text labels on the booking widget?
 
 Some fields can be relabelled directly in the programme settings — go to **Programmes → programme → Online Booking → Edit → Customizing Booking Form**.

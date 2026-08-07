@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-26"
+last_converted: "2026-08-07"
 ---
 
 # Login and Account FAQ
@@ -94,6 +94,18 @@ The language change takes effect immediately and applies to the current user's s
 Zooza does not have an independent dark/light mode setting. The app follows your **browser's or operating system's theme preference**. If your browser or OS is set to dark mode, Zooza will appear in dark mode automatically.
 
 To change the theme: update your system display settings (macOS: System Settings → Appearance; Windows: Settings → Personalisation → Colours) or your browser's appearance settings. The change takes effect immediately in Zooza without needing to refresh.
+
+## How do I create a test or sandbox Zooza account?
+
+Zooza does not provide a dedicated sandbox environment, but you can set up a separate test account using the **Try for FREE** flow on the Zooza website.
+
+1. Go to the Zooza sign-up page and register a new free account.
+2. Use a name that makes it clear the account is for testing — for example, "Playground", "Test account", or include your name: "ELA playground".
+3. Use a different email address from your main account (or a sub-address like `yourname+test@domain.com` if your provider supports it).
+
+The free account gives you access to the full Zooza feature set up to the Free plan limit (up to 10 active clients). This is enough to test programme setup, booking forms, payment flows, email templates, and widget embedding without affecting your live account data.
+
+> Keep the test account separate — do not connect it to live payment providers (Stripe, GoCardless) unless you are specifically testing payment integrations. Use the test/sandbox modes of those providers in your playground account.
 
 ## Is there a Zooza mobile app to download?
 
