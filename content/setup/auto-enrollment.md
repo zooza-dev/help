@@ -140,3 +140,15 @@ If the offer is filtered to a specific billing period, only programmes in that p
 ### Offering a different programme at continuation (e.g. BBS → TBS)
 
 Auto-enrolment can offer clients a completely different programme — not just the same one. Use the **Selected programmes only** filter and manually add the target programme (e.g. TBS) to the offer list on the source programme (BBS). Clients enrolled in BBS will see TBS classes in their auto-enrolment invitation.
+
+### Preparing classes for a new year (term copy workflow)
+
+When copying classes at the start of a new school year:
+
+1. Copy the classes from the previous term **without copying registrations** (use the Copy class action and uncheck the registration option).
+2. **Disable online registration** on the new classes immediately after copying — this prevents clients from finding and registering before you are ready.
+3. Finish configuring the new classes (dates, billing period, instructors, pricing).
+4. Enable **Include in auto-enrolment** on each new class (class → Settings tile).
+5. Re-enable online registration when you are ready to open bookings to the public.
+
+This order ensures that auto-enrollment invitations go out to existing clients before the classes open to new registrations.

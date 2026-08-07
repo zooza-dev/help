@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-17"
+last_converted: "2026-08-07"
 ---
 
 # Registration and Booking FAQ
@@ -80,6 +80,16 @@ Zooza distinguishes between the **buyer** (the person who pays, typically the pa
 If you need to change the participant on an existing registration, open the booking detail and update the participant field. The **Bookings** list shows labels for both buyer and participant so you can verify the assignment is correct.
 
 <!-- REVIEW: confirm exact UI field names for buyer/participant selection on manual registration -->
+
+## How do I resend the registration confirmation email to a client?
+
+1. Open the booking detail for the registration.
+2. Click the **Communication** tab or scroll to the communication section.
+3. Click **Send email**.
+4. Select the appropriate email template — usually **Registration confirmation** or a similar template.
+5. Click **Send**.
+
+The email is sent immediately to the client's address on the booking. You can use this to re-send any transactional email tied to a booking, not just the initial confirmation.
 
 ## Can I search for and restore deleted bookings?
 

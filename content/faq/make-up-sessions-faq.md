@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-08-07"
 ---
 
 # Make-up Sessions FAQ
@@ -317,6 +317,14 @@ This is the most reliable way to resolve disputes. The log shows the full audit 
 
 > **Tip for clients:** Direct clients to their Client Profile → open the registration → Attendance tab — they can see their own attendance and make-up history there.
 > ![Screenshot — make up sessions faq](../../assets/images/make-up-sessions-faq-01.png)
+
+## Can a client get in a queue (waitlist) for a specific make-up session?
+
+Yes. When a client selects a preferred session for their make-up and that session is at full extra capacity, Zooza places the client in a **queue** for that session. If a spot opens up (e.g., another make-up booking is cancelled), the client moves up the queue automatically.
+
+Clients who are in the queue for a make-up session see the session listed in their profile with a "waiting" status. They do not need to check back manually — the system notifies them if they are confirmed.
+
+As an admin, you can see the make-up queue in the session detail view under the attendees list.
 
 ## Can I restrict make-up sessions to the same programme only?
 

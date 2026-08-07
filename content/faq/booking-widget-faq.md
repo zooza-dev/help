@@ -177,6 +177,16 @@ There is no single switch that controls this — the reason is always in the cla
 
 ---
 
+## Some programmes are not showing in the booking widget on my website — why?
+
+If the widget shows fewer programmes than expected, check the URL you are using to embed the widget on your website.
+
+A common cause is a **hardcoded `place` or `location` parameter in the embed URL**. If your embed URL contains something like `?place=12` or `&pid=12_0`, the widget will only display programmes at that specific location and hide all others — even if those other programmes exist in Zooza.
+
+**To fix:** Remove the `place`/`pid` parameter from the embed URL so the widget shows programmes from all locations. If you want to keep separate widgets per location, create separate widget embed codes in **Team & Settings → Publish**.
+
+---
+
 ## Can I translate or customise the text labels on the booking widget?
 
 Some fields can be relabelled directly in the programme settings — go to **Programmes → programme → Online Booking → Edit → Customizing Booking Form**.

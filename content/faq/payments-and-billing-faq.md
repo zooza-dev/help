@@ -576,6 +576,12 @@ That booking's payments are managed by another booking, so it does not choose it
 
 Yes — an explicit invoice profile set on a booking is sticky. Moving the booking to another class or programme does not clear it. If a moved booking invoices under an unexpected entity, check whether it holds its own override in the **Invoicing** card and reset it to inherit.
 
+## Why does my client's payment plan start from their original registration date instead of today?
+
+Payment plans in Zooza are tied to the date the client first registered, not the date the plan was manually created or modified. This is intentional: the plan reflects the client's full payment history for the booking.
+
+If the start date is incorrect for your purposes, you can adjust individual payments manually. Go to the booking detail, open the **Payment plan** tab, and edit the due dates on the relevant scheduled payments.
+
 ## Related
 
 - [Stripe payments FAQ](stripe-payments-faq.md) — card payment setup, disputes, and Stripe-specific questions

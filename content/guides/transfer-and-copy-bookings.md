@@ -121,6 +121,7 @@ Once the transfer is complete, Zooza redirects you to the new booking. Verify:
 1. **Attendance** — check that the remaining sessions are correct.
 2. **Payment plan** — verify the debt and instalment schedule.
 3. **Debt amount** — make sure the amount matches what you expect.
+4. **Make-up credits** — make-up credits are **not transferred** to the new booking. If the client had unused make-up credits on the original booking, you will need to add them manually to the new booking after the transfer.
 
 Only then inform the client — either through Zooza (**Communication** tab on the booking) or via your usual channel.
 

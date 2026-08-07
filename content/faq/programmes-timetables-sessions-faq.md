@@ -343,6 +343,38 @@ After invitations go out, monitor who accepted, declined, or has not yet respond
 
 See [Auto-enrollment](../setup/auto-enrollment.md) for the full setup guide and [Auto-enrolment responses](../guides/auto-enrolment-responses.md) for tracking and follow-up.
 
+## How do I add a one-off extra session for a specific client?
+
+If you need to give a single client an extra session that is not part of their regular schedule, there are two approaches depending on your setup:
+
+**Option A — Add a session to an existing class (simplest)**
+If the client already has a booking in the class, you can add a one-off session and mark the client as attending via the session's attendance view. This is the most straightforward option if you do not need separate pricing for this extra session.
+
+1. Go to the class and open the **Sessions** list.
+2. Find or create the session for the extra date (add a one-off session if needed — use the "Add session" option on the class detail).
+3. Open the session's attendance view and mark the client as attending.
+
+**Option B — Create a private hidden class**
+If you need a separate class for billing or tracking purposes:
+
+1. Create a new class in the programme (or in a dedicated "individual sessions" programme).
+2. Disable online registration on the class so it does not appear publicly.
+3. Add the client as a booking manually.
+4. Add the session date.
+
+Option A is the recommended approach for one-off exceptions. Option B is better when you regularly run private sessions with separate pricing per client.
+
+## How do I bulk-mark sessions as paid?
+
+If you have sessions that are set up as paid sessions and need to update their paid status in bulk:
+
+1. Go to **Calendar** or the **Sessions list** for the relevant class.
+2. Select the sessions you want to update (use the checkboxes).
+3. Click the **bulk action** button (the action toolbar at the top of the list).
+4. Choose **Mark as paid** from the available actions.
+
+This is useful when you have configured sessions with a per-session fee and need to confirm payment for a batch at once, rather than opening each session individually.
+
 ## Related
 
 - [Creating a programme](../guides/creating-a-programme.md) — set up a new programme step by step
