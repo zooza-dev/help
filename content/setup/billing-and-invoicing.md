@@ -161,6 +161,25 @@ Set the template in the **Invoice profile** settings under the invoice number / 
 
 For the invoice item description, you can use dynamic tags to automatically insert programme-specific information (e.g., programme name, billing period). This is useful when generating invoices across many programmes — each invoice will contain the correct programme details without manual editing.
 
+### Putting the child's name on the invoice
+
+By default an invoice line shows only the course name, so a parent with two children receives two invoices that look identical apart from the amount. Parents ask for the child's name, the dates, or the class time on the invoice — all of it goes in the **Item description** field.
+
+The field accepts the same dynamic tags as email templates. A common line:
+
+```
+*|COURSE_NAME|* - *|EF_FULL_NAME|*
+```
+
+which renders as `Swimming 4–6 years - Patricie Janečková`.
+
+Two things to get right:
+
+1. **Uncheck "Use default item description"** — the custom text is ignored while it is ticked.
+2. **Regenerate the invoices** afterwards. Existing invoices keep the description they were created with; the change only reaches invoices generated from that point on.
+
+See [Dynamic tags](../guides/dynamic-tags.md) for the full list of available tags.
+
 ## Zooza Invoice — templates and branding
 
 > **Applies to:** Invoice Profiles using the **Zooza Invoice** engine only.

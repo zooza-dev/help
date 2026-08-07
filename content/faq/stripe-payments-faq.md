@@ -16,6 +16,25 @@ last_converted: "2026-02-12"
 
 # Stripe Integration FAQ
 
+## Own Stripe account, or Stripe through Zooza?
+
+There are two commercial arrangements, and they differ in who the client is actually paying — not in how the payment works technically.
+
+| | **Your own Stripe** | **Stripe through Zooza** |
+|---|---|---|
+| Who holds the Stripe account | You | Zooza |
+| Who the client pays | You | Zooza s.r.o. |
+| Who invoices you | Stripe, for its fees | Zooza, together with the system invoice |
+| Zooza's cut | none | 3.5% per transaction |
+| Payouts | Stripe pays you on its own schedule | Zooza pays out 1–2× per month |
+| You manage payouts and reports | Yes, in the Stripe dashboard | No |
+
+**Why businesses choose the second option:** it removes the Stripe Tax Invoice from your books. Receiving invoices directly from Stripe can trigger monthly VAT filing obligations, which is a real administrative cost for a small operation. With Stripe through Zooza you receive one domestic invoice instead.
+
+**What it requires:** Zooza pays out only to a verified **legal entity in the EU** — never to a private account. The entity is verified before the service is switched on, which usually takes a few days once billing details are filled in. At higher volumes the 3.5% is negotiable, and payouts can be agreed more frequently than monthly so your cash flow is not held up.
+
+> **CardPay** is a third option for card payments and carries the same 3.5%, but it handles **one-off payments only** — there is no automatic recurring charging. For recurring card payments use Stripe; for recurring bank collection use GoCardless.
+
 ## What type of Stripe account does Zooza use?
 
 Zooza connects via **Stripe Connect**. All new connections use a **Stripe Standard** account — you get your own full Stripe account and manage it directly at [dashboard.stripe.com](https://dashboard.stripe.com).

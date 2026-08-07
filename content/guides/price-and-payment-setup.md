@@ -151,6 +151,28 @@ You can reorder templates using the arrows. The first active template is the def
 
 Payment templates are created under **Settings** → **Payments**. For details on creating and configuring templates, see [Payment templates creation](payment-templates-creation.md).
 
+### Offering "pay in full" and "pay in instalments" side by side
+
+This is the setup most people want, and the way to get it is counter-intuitive: **set the programme to scheduled payments, not to one-off.**
+
+1. Set **Payment collection** to scheduled payments.
+2. Set the **unit price**.
+3. Activate **both** templates — the one-off template and the instalment template.
+
+Clients then choose between them on the booking form.
+
+If you set the programme to one-off payment instead, the Payment Frequency section disappears entirely and no template can be offered — including the one-off template. A programme set to one-off has exactly one way to pay, by definition.
+
+> **Switching an existing programme from instalments to one-off can leave templates behind.** If prices start displaying incorrectly after such a switch — the class showing one figure and the payment settings another — the old templates are usually still attached to the classes. Contact support rather than trying to unpick it; the mismatch is in the stored records, not in a setting you can see.
+
+### The payment step is blank on the booking form
+
+If clients reach the payment screen and it renders empty, check these three in order:
+
+1. **The template is not visible to clients.** Open the template in **Settings → Payments** and turn on **Visible to clients**. Active is not the same as visible.
+2. **The class is in Lead collection.** A class with no sessions has no billing period, so no payment options exist to show. Switch it to a fixed period and add sessions.
+3. **A cookie banner is blocking the scripts** — see [Widget embedding troubleshooting](../troubleshooting/widget-embedding.md).
+
 > **Note:** If a payment template includes a discount, the discount is distributed evenly across all scheduled payments for Term payment programmes. For Membership programmes, the entire discount is applied to the first scheduled payment.
 
 ## Payment methods
