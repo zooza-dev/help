@@ -205,6 +205,25 @@ In **session reminder templates**, always use `EVENT_*` tags instead — they pu
 
 `EVENT_*` tags are only available in session reminder templates.
 
+### The cancellation confirmation template also needs EVENT_*
+
+The same rule applies to the **cancellation confirmation** template (`#communication/templates?type=cancelation_confirmation`), and this one catches people out because the mistake stays invisible for years.
+
+The template tells a client which session they just cancelled, so every tag in it must describe **the session**, not the class:
+
+| Instead of | Use |
+|---|---|
+| `*\|COURSE_PLACE\|*` | `*\|EVENT_PLACE\|*` |
+| `*\|COURSE_NAME\|*` | `*\|EVENT_NAME\|*` |
+| `*\|COURSE_DATE\|*` | `*\|EVENT_DATE\|*` |
+| `*\|COURSE_TIME\|*` | `*\|EVENT_TIME\|*` |
+
+Why it hides: `COURSE_PLACE` is the venue on the **class**, `EVENT_PLACE` is the venue on the **session**. As long as those two match, the email looks correct. It only breaks once a session runs somewhere else — which is normal for group programmes, where the class venue and the session venue often differ.
+
+`COURSE_NAME` fails the same way on make-up sessions. If a client attends a make-up in a different class and then cancels it, `COURSE_NAME` names the class they are enrolled in, not the one they just cancelled out of. Use `EVENT_NAME`.
+
+> If you have never edited this template, check it anyway. Both cases seen in support were on templates the customer had not touched.
+
 ### Session-context tags in manual sends
 
 Tags that pull session-specific data — `*|COURSE_PLACE|*`, `*|COURSE_TIME|*`, `*|COURSE_DATE_DAY|*`, `*|EVENT_DATE|*`, etc. — require an **automatic send triggered by a session event** (e.g. session reminder, booking confirmation). When you compose and send a message manually from the Communication tab without a session trigger, these tags have **no context** to pull from and will return blank.
