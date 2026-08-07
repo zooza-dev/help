@@ -70,6 +70,14 @@ Yes. The highest applicable rule applies. If you have a 2nd-child rule (10%) and
 **Can I limit the sibling discount to specific programmes?**
 Yes. Set the counting scope to **Per course** and select the programmes you want to include in the course picker.
 
+**How does "Per billing period" scope work when children are in programmes with different billing periods?**
+The "Per billing period" scope counts registrations that share the same billing period *assignment* in Zooza. If two children are registered in different programmes but both programmes use the same billing period (e.g. "September–June 2025/2026"), they count as siblings within that period.
+
+If your programmes do not all use the same billing period, children in different programmes may be evaluated in separate billing periods and therefore not count toward each other's sibling total. In this case, use **Across all classes** scope instead — this counts all active registrations regardless of billing period.
+
+**When does billing period evaluation happen — at the time of booking or at the time of the billing cycle?**
+Eligibility is evaluated once, at the moment of booking. Zooza checks how many qualifying registrations (Registered status) currently exist under the same parent email within the same billing period. This count is fixed at that point — it does not update dynamically if a sibling's registration changes status later.
+
 **What happens when I cancel a booking that was part of a sibling family group?**
 The discount record is retained on the booking after cancellation. No automatic discount adjustment or recalculation is made on related bookings — any manual follow-up is the admin's responsibility.
 
