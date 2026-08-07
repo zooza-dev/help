@@ -130,6 +130,19 @@ With this option, you send reminders for bookings as they occur — after the bo
 
 Set the number of days for the 1st reminder and the 2nd reminder. Reminders are only sent if the client has not paid by that point.
 
+#### Do reminders cover a deposit, or only the full amount?
+
+Both — because **Zooza does not distinguish between them**. The reminder logic asks one question: is this registration paid? A registration with an unpaid deposit is not paid, so it is reminded exactly like one with nothing paid at all. There is no separate deposit reminder to configure and no way to remind about a deposit but not the balance.
+
+A worked example, since this is where camps trip people up. Camp starts 1 July with a 50% deposit due 14 days before:
+
+1. A parent registers on 1 May and is told the deposit is due by 17 June. Until then the registration sits as awaiting payment.
+2. **If you have not configured a reminder, nothing is sent.** The due date on its own does not generate a message — it is information for the client and for the system.
+3. With reminders set to 14 days and 4 days before the start, Zooza checks on 17 June whether the registration is paid. If not, it sends. Four days later it checks and sends again.
+4. If a booking-removal automation is configured, it can then drop the unpaid registration.
+
+The consequence worth planning around: pick the mode to match how people sign up. On a camp where registrations arrive months ahead, **Before the start of the programme** keeps the reminders close to the deadline. On a rolling programme, **After the booking** is the one that keeps working — otherwise someone who registers a week after the first session never gets reminded at all.
+
 ### 4. Automatic deletion of bookings
 
 You can optionally choose to automatically delete outstanding bookings after all reminders have been sent.

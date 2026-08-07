@@ -60,7 +60,27 @@ A demo class is useful when you want to test the full booking flow before going 
 
 You can keep the demo programme for internal use or archive it when you no longer need it.
 
-> **Tip:** If you only need to test the booking form experience (what the client sees), you can also use the [Widget preview](../guides/customizing-widgets.md) without creating an actual booking.
+## How do I see what clients see, without making anything live?
+
+**There is no preview panel inside the widget settings.** The widget configuration screen shows the settings only — configuring a widget never renders a sample of the form next to it. Looking for one is the single most common wasted half-hour in onboarding.
+
+To actually see the client's view, use one of these three:
+
+**1. Copy the class link.** Open any class and use **Copy**. That URL opens the offer exactly as a client sees it — the fastest check by far, and it does not publish anything or create a booking. See [Share a course or class registration link](../guides/share-course-link.md).
+
+**2. Use your Playground account.** If you have one, switch to it by clicking the **account name under the logo** (on a computer). Your test site is at `<your-account>.zooza.online`. Everything there is disposable, so you can complete a whole registration and see the confirmation emails without touching live data.
+
+**3. Put the widget on a page nobody visits.** For checking the embedded form in its real surroundings — your fonts, your CSS, your cookie banner — put it on an unlisted or draft page on your own site and open that. This is the only way to see the widget as it will genuinely behave.
+
+Which to reach for:
+
+| You want to check | Use |
+|---|---|
+| Does this class look right to a parent? | Copy the class link |
+| Does the whole signup and email flow work? | Playground account |
+| Does the embedded widget look right on my site? | Unlisted page on your website |
+
+> A class that is **not** open for online booking can still be opened by a private link — use the arrow next to **Copy** to create one. Useful for showing a colleague a class you have not launched yet.
 
 ## What should I check before sending booking links to clients?
 

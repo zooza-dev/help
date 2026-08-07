@@ -296,6 +296,21 @@ The **Metadata** card appears on the programme Settings page. Each row is a key-
 
 > **Manage all keys centrally:** Go to **Settings → Courses → Metadata keys** to rename keys, toggle public visibility, or delete a key and all its assigned values.
 
+### Metadata exists on programmes only, not on classes
+
+This is the constraint to design around when you want to filter your public offer by something Zooza does not model natively — level (A1–C2), format (in person / online), intensity, focus.
+
+- **Programme level:** metadata. Use it for anything that describes the *offering*.
+- **Class level:** no metadata. Use **tags** on the class instead.
+
+The distinction matters because people usually discover it halfway through building a filter. If "A2 conversational, online" identifies a *programme* in your setup, metadata works. If it identifies one specific *class* within a programme, you need tags.
+
+Public metadata is readable by the registration widget, so it can drive both your own site's filter and how the course tiles render — see the [registration widget metadata reference](https://docs.zooza.online/widgets/registration-widget/#metadata_in).
+
+> **How integrators usually build this.** Rather than querying Zooza on every page load, partners cache the courses and classes once a day and build the filter and listing from that cache. Only the pre-filled registration form then points at live availability. This keeps a large catalogue fast and means a Zooza hiccup does not take your course listing down with it.
+
+Ordering is separate from filtering: the booking form sorts courses alphabetically until you give them a **Priority** (0–1000, higher first). If your filter returns the right courses in an unhelpful order, that is the setting you want, not metadata.
+
 ---
 
 ## Related

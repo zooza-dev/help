@@ -141,6 +141,21 @@ Allows you to display programme and meeting offerings on your site in a clear ca
 
 ## Calendar View
 
+### Two display modes — pick the right one first
+
+Before adjusting anything else, decide which of the two modes the calendar should use. Most "the calendar looks wrong" reports come down to the wrong mode rather than a styling problem.
+
+| Mode | Shows | Use it when |
+|---|---|---|
+| **Weekly calendar** | Only the sessions in the week being viewed, like the calendar in the admin app | Clients are checking what is on this week |
+| **Schedule** | The wider offer, including classes that have **not started yet** but are open for enrolment | Clients are choosing a class for the coming term |
+
+The Schedule mode is the one people usually want and rarely find. If a client complains that your autumn classes are "not on the calendar" in August, the calendar is almost certainly in weekly mode — the classes exist, but they do not start this week.
+
+Both modes are configured per widget at `#widgets/{id}/calendar`.
+
+> **A note on layout.** The widget deliberately does not use a fixed-grid calendar layout with sessions positioned by time. It carries far more text per session than a normal calendar entry — name, instructor, venue, price, availability — and on a phone, which is where most parents open it, a time-grid becomes unusable. If the current view is not working for you, ask support before assuming it cannot be changed; the styling is adjustable even though the layout concept is not.
+
 You can customize the calendar view according to your own preferences and needs. In the settings, you can choose what information to display for each date.
 Calendar display options:
 
