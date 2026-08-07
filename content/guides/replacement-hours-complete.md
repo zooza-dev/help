@@ -56,8 +56,18 @@ Make-up session are configured at the **programme level** and can be fine-tuned 
    - **Replacement waiting list** — enable or disable the waiting-list/queue feature.
    - **Cancellation deadline** — set how far in advance a client must cancel to earn a replacement credit (e.g., 1 hour before the session).
 
-You can also access the global replacement settings at:
-`Settings > Replacement hours` (`zooza.app/#settings/replacements`).
+### Two places, and which one you need
+
+Make-up settings exist at two levels. Knowing which you are looking at saves a lot of circling:
+
+| Level | Where | What it governs |
+|---|---|---|
+| **Global** | `Settings → Make-up sessions` (`zooza.app/#settings/replacements`) | Defaults for every programme — credit expiry, extra places, time restrictions |
+| **Per programme** | Programme → **Settings** → **Make-up sessions** tile → **Edit** | Whether make-ups are on for this programme, and rules that differ from the global default |
+
+**Turning make-ups on or off is per programme.** The global page cannot do it — it only sets defaults for programmes that already have the feature enabled. If make-ups are not being offered at all, the programme tile is where to look, not the global page.
+
+Note that the app may show these labels in your own language — Slovak accounts see **Náhradné hodiny**, **Expirácia kreditov**, **Počet miest navyše pre náhradné hodiny**. The English names in this guide map to those directly.
 
 **Per-programme expiry and global inheritance:** If you set the expiry on a programme to **0 days**, that programme inherits the global expiry setting. Set a non-zero number of days on a programme only when you need a shorter or longer window than the global default for that specific programme.
 

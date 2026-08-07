@@ -49,6 +49,12 @@ Removing a user disables their ability to log into your Zooza account. If the us
 3. Click **Remove from company**.
 4. Confirm the action.
 
+> **Removing an instructor: it is not on the Instructors page.** The Instructors screen manages profiles — it has no Remove from company button, and looking for one there is the most common reason this takes far longer than it should. Go to **Settings → Team** and find the person in the users list.
+>
+> **Consider not removing them.** Setting the role to **Inactive instructor** blocks their login while keeping every link to their past sessions, attendance and payouts. Removal can break those links, and if you need the history back later it may need support. If they might ever return — a maternity cover, a seasonal coach — deactivate rather than remove.
+>
+> Removal is the right call for a genuine mistake, such as someone added as an instructor who never was one.
+
 **What happens:**
 - The user can no longer log in to your Zooza instance.
 - Their associated client profile is removed from your company (if one exists).

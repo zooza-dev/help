@@ -73,6 +73,18 @@ Open the archived programme — it displays an **"This programme is archived"** 
 1. In the *Tag* field, you can optionally enter a category name for the programme. Tags are for your internal use only and help you organise and filter your programmes more easily. To save the tag, click OK next to the field. For more details on using tags, see the [Labels](labels.md) guide.
 2. You can also assign a programme colour (if it wasn’t set during the programme creation wizard) to help clients easily identify your programmes. For example, a programme for 3–4-year-olds could be set to “Zooza Orange,” making it instantly recognisable on the calendar, such as on Tuesdays and Thursdays.
 
+### The colour will not save
+
+Two separate things cause this, and both look like the setting is broken.
+
+**There is no Save button on the settings page.** The programme Settings page is a dashboard of tiles. Nothing there is editable until you click **Edit** on the tile you want — only then does a Save button appear. If you changed the colour and found nowhere to save it, you were not in the editor yet.
+
+**The first colour you pick is ignored.** This is a known bug. Pick any other colour first, then pick the one you actually want, and save — every selection after the first registers correctly.
+
+So the reliable sequence is: **Edit** on the tile → pick a throwaway colour → pick your real colour → **Save**.
+
+A fix is planned, but you do not need to wait for it — the workaround above works today.
+
 ## Gallery
 
 At the bottom of Course settings tile you have a ready-made gallery that will appear in the programme details on your Zooza website. For information on how Zooza Sites work and how to set them up click [here](../setup/zooza-sites.md).
