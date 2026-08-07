@@ -153,6 +153,20 @@ Create a one-time discount code and apply it to the booking. Discount codes work
 
 ---
 
+## Known limitations while the feature is in beta
+
+**A misspelled name can be counted as a second child.** Zooza matches children by their recorded details. If a parent registers the same child twice with the name spelled differently — without diacritics, with a nickname, or with a typo — the system sees two children and grants the sibling discount to a family that has only one. The discount is real money and it is applied automatically at checkout, so you find out afterwards.
+
+This is the main reason to think before switching the discount on mid-season:
+
+- **Put a clause in your terms** allowing you to withdraw a discount that was granted in error. Without it you have no clean way to correct the charge.
+- **Watch the first weeks** after enabling it. Registrations with a single child but a discount applied are the ones to check.
+- **Restricting the discount to logged-in clients** removes the problem, because a logged-in client's children are already known records. The trade-off is real: parents arriving from a direct booking link do not log in first, so you will lose discounts you meant to give.
+
+Automatic de-duplication is being worked on. Even so, no automatic matching will catch every case — a parent who enters a nickname instead of a name is indistinguishable from a second child by any method.
+
+**The discount applies to the second person onward, not the first.** A client enrolling themselves alongside their child is not covered by a sibling rule, because the rule rewards the additional registration rather than the family as a whole.
+
 ## Disable or delete the sibling discount
 
 To **disable** without losing your rules: uncheck **Enabled** and click **Save Settings**. The rules are preserved and you can re-enable later.

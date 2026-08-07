@@ -46,8 +46,33 @@ These are two different AI tools with different capabilities:
 
 **The Intercom chat cannot see your account.** If you ask it "who hasn't paid?" or "what classes does client X have?", it cannot look that up — it only knows what is in the help documentation. For account-specific questions, use Zooza AI (the Claude or ChatGPT connector).
 
+## Zooza AI says it cannot do something I know it can do
+
+Refresh the connector's tool list. **It does not update itself.**
+
+When Zooza adds a new capability, your connector keeps the list of tools it learned when you connected. Claude and ChatGPT both cache it, and neither refreshes automatically — so the assistant will tell you, confidently, that it has no way to do the thing that shipped last week.
+
+**In Claude:** open your connectors list and refresh the available tools (the control is at the top right of that screen).
+
+**In ChatGPT:** go to **Settings → Apps**, open **Zooza**, and use **Refresh**. If you only see **Disconnect**, disconnect and connect again — reconnecting rebuilds the list.
+
+If it still misbehaves after refreshing, disconnect and reconnect under a slightly different name. That forces a clean setup rather than reusing the cached one.
+
+> This is a limitation of the AI platforms, not of Zooza — neither currently allows a connector to push an updated tool list to clients that have already connected.
+
+## How do I report a problem with Zooza AI?
+
+Type it into the chat where the problem happened: **"I want to send feedback to Zooza."**
+
+There is no button to look for, which is the part people find odd — you are asking the assistant to do something, the same way you ask it anything else. It then sends us a summary of the conversation together with the tool calls it actually made, which is diagnostic information you cannot see and could not report yourself.
+
+Do it in the conversation that went wrong rather than a fresh one, since the context is the useful part.
+
+> If the feedback command itself fails, the connector's tool list is probably stale — refresh it as described above, then try again.
+
 ## The connection is not working. What should I do?
 
 1. Confirm that you have an active Zooza account with Admin access.
 2. Try signing out and back in via OAuth.
-3. If the problem persists, contact [support@zooza.online](mailto:support@zooza.online).
+3. Refresh the tool list (see above) — a stale list can look like a broken connection.
+4. If the problem persists, contact [support@zooza.online](mailto:support@zooza.online).

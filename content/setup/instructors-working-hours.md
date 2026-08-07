@@ -52,6 +52,21 @@ From now on, when scheduling terms, the app will inform the admin that Alice is 
 
 ![From now on, when scheduling terms, the app will inform the admin that Alice is...](../../assets/images/lecturers-working-hours-05.png)
 
+## An instructor's holiday is not a company holiday
+
+These are two different settings and choosing the wrong one is a common mistake.
+
+| What you want | Where it goes |
+|---|---|
+| One instructor is away (holiday, illness, a term abroad) | **Instructors → their profile → Working hours →** add an **Absence** for that date range |
+| Your whole business is closed (summer break, public holiday, a company event) | **Team & Settings → General → Custom holidays** |
+
+An **Absence** only removes that person from scheduling. Sessions still exist and other instructors can still be assigned to them.
+
+A **Custom holiday** blocks the dates for everyone, and only affects sessions generated *after* it is created — see [Custom holidays](../guides/custom-holidays.md).
+
+> If an instructor asks how to register their summer holiday, send them to their own **Working hours**, not to Settings. Instructors do not usually have access to the company holiday settings, and even if they do, entering their personal holiday there would close the business for everyone.
+
 ## Mass deleting of availability/absences
 
 Since the availability of instructors can change frequently in the application, you have the option of mass deletion. This allows you to edit faster.
