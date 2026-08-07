@@ -128,6 +128,8 @@ Each email sent for a specific booking allows you to dynamically fill in client 
 | <code>&#42;&#124;DEFAULT_COURSE_PRICE&#124;&#42;</code>             | Programme price if class price is 0; otherwise the class price.                            | 34.43 EUR                                             |
 | <code>&#42;&#124;DEBT&#124;&#42;</code>                             | Debt value on booking. If no debt, displays the same as `DEFAULT_COURSE_PRICE`.            | 100 EUR                                               |
 | <code>&#42;&#124;ORDER_SUMMARY&#124;&#42;</code>                    | Full summary of the booking including programme name, class, date, and price. Recommended for make-up sessions and block-based programmes where individual tags may show incorrect data. | Yoga Beginners -- Mondays at 10:00, 14. 5. 2022, 50 EUR |
+| <code>&#42;&#124;SEGMENTS_SUMMARY&#124;&#42;</code>                 | The blocks the client is enrolled in, each with its **total price**. One line per block. | Math — 195,00 €<br>English — 195,00 €                 |
+| <code>&#42;&#124;SEGMENTS_INSTALLMENTS&#124;&#42;</code>            | The same blocks on **one line**, followed by what the client **actually pays each period**. See the section below — the figure is representative, not a schedule. | Math, English — 97,50 €/month                         |
 | <code>&#42;&#124;BOOKING_URL&#124;&#42;</code>                      | URL to open the registration widget pre-filled for the client's class. Useful in trial follow-up emails to prompt full registration. | https://www.zooza.sk/registracia?schedule=123         |
 | <code>&#42;&#124;WIDGET_REGISTRATION_URL&#124;&#42;</code>          | Base URL of the registration widget. Use to link clients back to the registration page.    | https://www.zooza.sk/registracia                      |
 | <code>&#42;&#124;GOING_CONFIRMATION_URL&#124;&#42;</code>           | URL for the client to confirm their attendance. Use in attendance confirmation templates.  | https://www.zooza.sk/confirm?token=abc                |
@@ -163,6 +165,53 @@ You can use conditional tags in templates. For example, if you accept business o
 | `>=` | Greater than or equal |
 | `<=` | Less than or equal |
 
+## Block summary tags
+
+Two tags summarise the blocks (term segments) a client enrolled in, without printing the rest of the order. Both work in **email only** — they render formatted output, so they are not available for SMS.
+
+| Tag | What it shows |
+|---|---|
+| <code>&#42;&#124;SEGMENTS_SUMMARY&#124;&#42;</code> | Each block on its own line, with the **total price** of that block. |
+| <code>&#42;&#124;SEGMENTS_INSTALLMENTS&#124;&#42;</code> | All blocks on **one line**, followed by what the client **actually pays each period**. |
+
+For a client enrolled in Math and English, each block costing 195,00 € in total and billed monthly:
+
+- `SEGMENTS_SUMMARY` → `Math — 195,00 €` / `English — 195,00 €`
+- `SEGMENTS_INSTALLMENTS` → `Math, English — 97,50 €/month`
+
+Use `SEGMENTS_SUMMARY` when the client needs to see what each block costs. Use `SEGMENTS_INSTALLMENTS` when they need to see what will leave their account.
+
+### The period is not always a month
+
+`SEGMENTS_INSTALLMENTS` prints whatever period the payment plan actually uses — monthly, quarterly, half-yearly, yearly, per a number of sessions, or a fixed number of instalments. Do not write template copy that calls it "your monthly payment"; let the tag say it. Wording such as *"Your payments: `*|SEGMENTS_INSTALLMENTS|*`"* stays correct for every plan.
+
+### When the first payment differs
+
+If the first payment is not the same as the rest, the tag prints both parts:
+
+`45,00 €, then 97,50 €/month`
+
+### The figure is representative, not a schedule
+
+`SEGMENTS_INSTALLMENTS` shows one figure that stands for the plan. It is not a payment schedule, and in three situations it will not match every individual payment:
+
+- **Blocks of different lengths.** Where a block-based plan bills blocks that do not run for the same number of weeks, the payments differ between them.
+- **A shortened final payment.** When the plan does not divide evenly, the last payment is smaller.
+- **Hand-edited payments.** Any payment you edited by hand on the booking is left as you set it.
+
+This is intended — a single representative figure is more use to a client than a wall of dates. When someone needs the exact list, use `*|ORDER_SUMMARY|*`, which carries every payment with its due date.
+
+> Tell clients the number is indicative if your template is the only thing they will see. A parent comparing `97,50 €/month` against a final payment of 62,00 € will otherwise report it as an error.
+
+### When the tags show nothing
+
+Two cases are deliberate, not faults:
+
+- **No payment plan on the booking.** `SEGMENTS_INSTALLMENTS` renders nothing at all. There is no instalment to describe, so it stays silent rather than printing a zero.
+- **Pay-per-attendance.** Block names appear, but with no amount — the price depends on attendance, so it is not known in advance.
+
+If a tag is blank and the booking falls into neither case, check that the client is actually enrolled in a block. A booking with no blocks has nothing for these tags to list.
+
 ## Known limitations and troubleshooting
 
 ### Tags in make-up sessions
@@ -183,7 +232,7 @@ For programmes using blocks (term segments), `*|COURSE_DATE_DAY|*` and `*|COURSE
 
 The same constraint is why blocks cannot be included in the registration export. Blocks can be reported per class, but not across registrations drawn from different courses.
 
-Two improvements are planned instead: showing blocks in the client profile so clients can check what they signed up for, and a summary tag along the lines of `ORDER_SUMMARY` that lists **only** blocks, without the rest of the order.
+A summary tag that lists **only** blocks, without the rest of the order, now exists — two of them, in fact. See [Block summary tags](#block-summary-tags) above. Showing blocks in the client profile is still planned.
 
 ### The confirmation email shows only the day of the week
 

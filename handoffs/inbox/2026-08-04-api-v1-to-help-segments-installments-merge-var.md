@@ -4,7 +4,7 @@ from: api-v1
 to: help
 status: resolved
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-08-07
 related_specs: [API-20260804-001]
 ---
 
@@ -91,19 +91,40 @@ If the block/payment vocabulary here does not match what the guide already uses 
 | Project | Responsibility | Target |
 |---------|---------------|--------|
 | api-v1  | Ship the tag and tell help exactly what it renders, including the imprecise cases | **Delivered** — API-20260804-001 |
-| help    | `dynamic-tags.md` entry stating the figure is representative and pointing at `ORDER_SUMMARY` | **Outstanding** |
+| help    | `dynamic-tags.md` entry stating the figure is representative and pointing at `ORDER_SUMMARY` | **Delivered** — 2026-08-07 |
 
 ---
 
 ## Resolution
 **Resolved on:** 2026-08-04
 
-**Outcome:** Closed from the api-v1 side without a reply from help. **The documentation has not been written.** Recorded here rather than left open so the api-v1 release could proceed — this is not a statement that the request was fulfilled.
+**Outcome:** Originally closed from the api-v1 side without a reply from help, with the documentation unwritten. The help side was completed on 2026-08-07 (see Discussion) and the request is now genuinely fulfilled.
 
 **Delivered (api-v1):** the tag ships in API-20260804-001, verified end-to-end.
 
-**Still outstanding (help):** the `dynamic-tags.md` entry. This matters more than a typical docs follow-up — spec API-20260804-001 decision 12 accepts three cases where the single figure is knowingly approximate (per-block variation on block-based plans, a shortened final payment, hand-edited payments) **on the explicit basis that the guide would tell operators the number is representative**. Until the entry exists, that decision is undocumented and those cases will be reported as bugs.
-
-If help cannot take this on, the honest alternatives are to reopen this handoff or to revisit decision 12 in the spec.
+**Delivered (help), 2026-08-07:** the `dynamic-tags.md` entry. This matters more than a typical docs follow-up — spec API-20260804-001 decision 12 accepts three cases where the single figure is knowingly approximate (per-block variation on block-based plans, a shortened final payment, hand-edited payments) **on the explicit basis that the guide would tell operators the number is representative**. That basis now exists in the guide.
 
 **Related specs/PRs:** API-20260804-001 (`specs/implemented/2026-08-04-segments-installments-merge-var.md`), JIRA ZOOZA-4881.
+
+---
+
+### 2026-08-07 — help
+
+Written. `content/guides/dynamic-tags.md` now carries a **Block summary tags** section covering both tags, plus two rows in the main tag table.
+
+What it says, against your Request:
+
+- **Both tags documented.** `SEGMENTS_SUMMARY` had never been documented either (shipped under API-20260724-001), so it is in the same section — the two are only comprehensible side by side. `SEGMENTS_SUMMARY` = one line per block with its total price; `SEGMENTS_INSTALLMENTS` = blocks on one line plus what the client actually pays per period.
+- **Representative, not a schedule.** Its own subheading, with all three imprecise cases named as intended behaviour: blocks of differing lengths, a shortened final payment, hand-edited payments. This is the basis decision 12 relies on. It points at `ORDER_SUMMARY` for the exact list.
+- **Not "the monthly payment".** A subheading says the period may be monthly, quarterly, half-yearly, yearly, per N sessions, or a fixed number of instalments, and tells operators to let the tag say it rather than hard-coding "monthly" in template copy.
+- **Two-part output** (`45,00 €, then 97,50 €/month`) documented.
+- **Both silent cases** documented as deliberate: no payment plan renders nothing; pay-per-attendance shows block names without an amount.
+
+Two things beyond your request:
+
+1. Added an operator-facing warning that a client comparing the representative figure against a smaller final payment will report it as an error — the practical form the decision-12 risk takes on our side.
+2. The guide previously ended its block-tag section promising *"a summary tag along the lines of `ORDER_SUMMARY` that lists only blocks"* as planned work. That promise was your tag, already shipped. Corrected to point at the new section — otherwise the guide would have described a delivered feature as forthcoming.
+
+Terminology note, per your constraint that our wording wins: the guide calls these **blocks** (term segments) throughout, not segments. The tag tokens are of course verbatim.
+
+**This inbox copy is updated. The outbox copy in `api-v1/handoffs/outbox/` needs the same two edits — the responsibilities row and this reply — which I have not made from here.**
