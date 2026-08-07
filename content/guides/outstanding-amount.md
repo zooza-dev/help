@@ -43,10 +43,19 @@ The most common cause by far. If the class was free — or the price had not bee
 **2. Is the class price actually set, or set to 0?**
 A class price of **0 is treated as "not set"**, and Zooza falls back to the programme price. This means you cannot make one class free inside a paid programme by typing 0 into it. To run a genuinely free class, either set the whole programme to 0, or put that class in its own programme priced at 0.
 
-**3. Are billable sessions configured consistently?**
-If **Billable sessions** is set to a number, that number must match the sessions actually marked billable at session level. Set it to 12 with no sessions marked, and the price has nothing to calculate from.
+**3. Does the class have a paid-sessions counter with no paid sessions behind it?**
+This is the most common cause of a price of exactly 0 on an otherwise correct setup.
 
-If every session is paid, you do not need billable sessions at all — leave the feature alone rather than setting it to the session count. See [Billable sessions](billable-sessions.md).
+If the class says it has, for example, **13 billable sessions**, but not one session is marked as billable, Zooza has nothing to multiply — so the price comes out as 0. The counter and the sessions have to agree.
+
+Two ways out, and you only need one:
+
+- **Mark the sessions as billable** — you can do this now, in bulk, from the sessions list.
+- **Reset the counter on the class** to 0, so the price is calculated from all sessions.
+
+If every session is paid, do not use billable sessions at all. The feature exists to *exclude* sessions from the price; setting it equal to the session count adds a way to get it wrong for no benefit. See [Billable sessions](billable-sessions.md).
+
+> Worth checking if you used the AI assistant to set up classes. It has been known to fill in the paid-sessions counter without being asked, which produces exactly this symptom across a whole term of classes at once.
 
 **4. With per-session pricing, how many sessions were in the future?**
 Per-session pricing multiplies the unit price by the sessions still ahead **at the moment of registration**. If the sessions had not been generated yet, or all sat in the past, the result is 0 — and it stays 0 afterwards, because of the rule at the top of this page.

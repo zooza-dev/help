@@ -56,9 +56,16 @@ This setting controls what language your clients see when they register, receive
 4. Save.
 
 This affects:
-- The booking form widget on your website.
 - Automatic system emails (booking confirmation, payment reminders, etc.).
 - The Client Profile interface.
+
+### The embedded widget is different — it follows your website
+
+**A widget embedded on your own site takes its language from the website it sits in, not from this setting.**
+
+If your booking form or calendar shows English day names when you expected Romanian, Slovak or Hungarian, the fix is on your website, not in Zooza: make sure the page declares the right language. Changing **Application Communication Language** will not correct it, because the widget never reads that setting.
+
+This is worth checking first, because the symptom looks exactly like a Zooza language problem — days of the week in English, texts like "The class will start…" instead of "Grupa va începe…".
 
 > **Custom email templates** override the system language. If you have edited a confirmation email template in Slovak, clients will receive the Slovak version regardless of this setting.
 

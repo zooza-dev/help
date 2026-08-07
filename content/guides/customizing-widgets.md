@@ -141,20 +141,25 @@ Allows you to display programme and meeting offerings on your site in a clear ca
 
 ## Calendar View
 
-### Two display modes — pick the right one first
+### The default is a sales view, not a weekly calendar
 
-Before adjusting anything else, decide which of the two modes the calendar should use. Most "the calendar looks wrong" reports come down to the wrong mode rather than a styling problem.
+By default the calendar **combines classes that are currently running with classes that start soon**, so visitors see everything they could book. That is deliberate — it advertises the full offer rather than only this week.
 
-| Mode | Shows | Use it when |
-|---|---|---|
-| **Weekly calendar** | Only the sessions in the week being viewed, like the calendar in the admin app | Clients are checking what is on this week |
-| **Schedule** | The wider offer, including classes that have **not started yet** but are open for enrolment | Clients are choosing a class for the coming term |
+It also means the default does not behave like a normal calendar app, which surprises people who expected a weekly grid.
 
-The Schedule mode is the one people usually want and rarely find. If a client complains that your autumn classes are "not on the calendar" in August, the calendar is almost certainly in weekly mode — the classes exist, but they do not start this week.
+**To turn it into a simple weekly calendar:**
 
-Both modes are configured per widget at `#widgets/{id}/calendar`.
+1. Go to **Team & Settings → Publish** and open your widget.
+2. Open **Calendar**.
+3. Set **Customize what sessions appear on the calendar** to **Custom selection**.
+4. Untick **Dates for future classes**.
+5. Turn on **Classic calendar view**.
 
-> **A note on layout.** The widget deliberately does not use a fixed-grid calendar layout with sessions positioned by time. It carries far more text per session than a normal calendar entry — name, instructor, venue, price, availability — and on a phone, which is where most parents open it, a time-grid becomes unusable. If the current view is not working for you, ask support before assuming it cannot be changed; the styling is adjustable even though the layout concept is not.
+You now get a week-by-week view showing only what is actually running.
+
+> **A class vanished from the calendar after I added a past session.** This is the same setting seen from the other side. With **Dates for future classes** selected, the calendar shows classes that have *not started yet* — so the moment a class has a session in the past it counts as already running and drops out of that view. Either switch to the default **System** option, or accept that started classes will not appear.
+
+Settings are per widget, at `#widgets/{id}/calendar`.
 
 You can customize the calendar view according to your own preferences and needs. In the settings, you can choose what information to display for each date.
 Calendar display options:

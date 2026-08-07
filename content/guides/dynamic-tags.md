@@ -185,6 +185,14 @@ The same constraint is why blocks cannot be included in the registration export.
 
 Two improvements are planned instead: showing blocks in the client profile so clients can check what they signed up for, and a summary tag along the lines of `ORDER_SUMMARY` that lists **only** blocks, without the rest of the order.
 
+### The confirmation email shows only the day of the week
+
+If your booking confirmation says "Monday" where you expected "Monday 8 September", the template is using <code>&#42;&#124;COURSE_DATE_DAY&#124;&#42;</code>. That tag outputs the weekday and nothing else — by design.
+
+For the actual dates, use <code>&#42;&#124;COURSE_SUMMARY&#124;&#42;</code>, which outputs the start and end date together with the time (`13. 5. — 13. 9. 2023 at 15:00`). It is the right tag for "when does this run", and the one to reach for in a booking confirmation.
+
+Use <code>&#42;&#124;ORDER_SUMMARY&#124;&#42;</code> instead when you want the whole booking — programme, class, dates *and* price — rather than just the schedule.
+
 ### Tags in order confirmation emails
 
 Dynamic tags are **not fully supported** in order (product purchase) confirmation emails. Tags like `*|COURSE_NAME|*`, `*|COURSE_TIME|*`, etc. will not populate because orders are not linked to a specific class or session.

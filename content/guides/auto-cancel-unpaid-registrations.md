@@ -21,6 +21,22 @@ When a registration stays unpaid beyond a configured number of days, Zooza can a
 
 This is different from payment reminder emails, which only notify the client. Auto-cancel actually removes the registration if the client does not pay.
 
+## "How do I make payment mandatory so unpaid bookings are not confirmed?"
+
+You do not. Zooza works the other way round, and this pairing is the answer to that question.
+
+Every booking gets a **grace period** in which the client can pay. Auto-cancel then removes the ones that stay unpaid when it expires. So instead of blocking the booking at the door, you accept it, give the client a defined window, and let the system clear up after.
+
+The reason it works this way is that a blocked booking is a lost lead. A parent who cannot complete a form at 21:00 because their card is upstairs usually does not come back; a parent with an unpaid booking and a reminder in their inbox usually pays.
+
+To set it up:
+
+1. Set the grace period — see [Automatic payment reminders](automatic-payment-reminders-detailed.md).
+2. Configure reminders so the client is actually told during that window.
+3. Enable auto-cancel below, so unpaid bookings do not accumulate.
+
+> Changing payment methods does **not** make payment mandatory. Leaving only online card payment enabled still produces bookings that can complete unpaid — it just removes the other ways to settle up afterwards.
+
 ---
 
 ## How it works

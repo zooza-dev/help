@@ -48,6 +48,17 @@ To hide a single Class (class) within a Programme without archiving the whole Pr
 
 ---
 
+## Last year's classes are still showing on my website
+
+Because **"Ended" does not mean inactive.** A class can sit in the state *Ended (Active)* — it has finished running, but it is still an active record in the system, for example while final payments are settled. In that state it can still be picked up by the booking page and the calendar widget.
+
+Two ways to take it off the site:
+
+- **Archive the class** (above). Keeps every booking and all history, removes it from active lists and from the public offer. This is the right choice at the end of a term.
+- **Turn off online booking** on the class, in its settings. Use this when you want the class to stay in your active lists internally but disappear from the website.
+
+If old classes reappear every season, archiving as part of your term-reset routine is the fix — see [Run a term reset](term-rebooking-guide.md).
+
 ## Delete a Programme
 
 Admins with the **edit_course** permission can permanently delete a Programme directly from Programme Settings. This action cannot be undone — you will lose access to all related Classes, sessions, and bookings.
