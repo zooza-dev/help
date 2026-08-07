@@ -122,6 +122,12 @@ This is the practical answer to most "can I email just X?" questions. Classes ca
 > 1. In the **Clients** section, open the client account and click on **Notes and preferences**.
 > 2. Untick the **Send promotional emails** box.
 
+> **There is a second place, on the booking.** Open the registration → the first section, **Registration** → **Options**, and untick sending promotional messages there.
+>
+> The difference matters when a client has more than one booking. The client-level setting covers the person; the booking-level one covers that booking. If someone says they still receive promotional email after you switched it off, check the other level.
+>
+> Either way, the switch only works if you also tick **Promotional message** when sending. An untagged send goes to everyone regardless of these settings — that is the most common reason an opt-out appears not to work.
+
 ![Notes and preferences - promotional emails](../../assets/images/notes-preferences-promotional.png "Notes and preferences section")
 
 ![Send promotional emails checkbox](../../assets/images/send-promotional-emails-checkbox.png "Send promotional emails checkbox")

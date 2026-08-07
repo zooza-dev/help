@@ -91,6 +91,18 @@ You can review past sends and their results from the Communication section.
 
 Each entry shows the job status, recipient count, sent count, failed count, and the date the send was created.
 
+## Nothing arrived, and the send looked like it worked
+
+Check whether it is still processing before assuming it failed.
+
+1. Open **Send history** (above) and look at the job status. A job sitting at **Pending approval** never started — someone has to click Approve. A job **In progress** is still working through the list; large sends take time.
+2. Go to **Reports & Insights → Session notifications** (`/#reports/event_notifications`) and scroll to the end. This shows what the system has actually processed and is the fastest way to tell "still running" from "finished and delivered nothing".
+3. Only then look at delivery — see [Email delivery troubleshooting](../troubleshooting/email-delivery.md).
+
+> **It is almost never a plan limit.** Your plan does include a monthly email allowance, but hitting it is rare and is not the first thing to suspect when a send appears to do nothing. Queueing, an unapproved job, or a delivery problem account for nearly every case. Check those three before anyone starts talking about upgrading.
+
+If the job completed, the recipient count was right, and the report shows the messages processed, the problem is delivery rather than sending — and that is a different investigation.
+
 ## Related
 
 - [Send Email Reference](../reference/communication-send-email.md) — full UI reference for the send flow.

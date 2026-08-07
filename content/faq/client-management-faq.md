@@ -216,6 +216,14 @@ Zooza reads a booking made inside someone's profile as "this person is booking f
 
 To repair one that already happened: open the client, go to **Family & Connections**, and remove the incorrect relationship. Deleting the booking does **not** remove the relationship — the link survives the booking that created it, which is why this tends to be noticed long after the fact.
 
+## Can I customise which panels appear on the client detail?
+
+No. The client detail screen has a fixed layout — there is no way to hide panels you do not use, reorder them, or choose which fields appear. What you see is what everyone in your account sees.
+
+This is worth knowing because the **Bookings list** *is* customisable, and the two get confused. On the bookings list you can add and remove tiles from the cards. The client detail has no equivalent.
+
+If a specific panel is in your way, tell support which one and why — that is the kind of feedback that shapes the screen, and there is no workaround to offer in the meantime.
+
 ## Why can't I find "move" or "delete" actions on the Clients page?
 
 The **Clients** page (and the individual client profile) shows contact and personal information only. It does not contain actions for moving, cancelling, or deleting enrolments.

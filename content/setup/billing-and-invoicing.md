@@ -180,6 +180,19 @@ Two things to get right:
 
 See [Dynamic tags](../guides/dynamic-tags.md) for the full list of available tags.
 
+### Changing the description on an invoice that already exists
+
+There are two places, depending on whether you are fixing the future or the past:
+
+| What you want | Where |
+|---|---|
+| Change what gets filled in **from now on** | The **invoice profile** — set the default item description there |
+| Change **one invoice that is already issued** | The registration → **Payments** → the **Invoicing** section → edit the invoice |
+
+Whether an issued invoice can be edited at all depends on the invoicing system behind your profile. The built-in engines allow it; some external accounting integrations do not, because the invoice already exists in their system and Zooza cannot reach back into it. If the edit controls are missing, that is why.
+
+For a whole batch of invoices, fix the profile first and then regenerate — editing them one by one only makes sense for a handful.
+
 ## Zooza Invoice — templates and branding
 
 > **Applies to:** Invoice Profiles using the **Zooza Invoice** engine only.

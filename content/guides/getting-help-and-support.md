@@ -50,7 +50,27 @@ Zooza Assistant works with documentation and general knowledge — it does not h
 - follow exact record links or ticket numbers
 - interpret data directly from your app
 
+It also **cannot do anything in your account**. Asking it to "check my settings", "set this up for me" or "pull a report" will only produce general advice, because it has no way to reach your data or change anything.
+
 If your question is about something specific in your account (e.g. a payment that looks wrong), it's best to open a ticket and include a screenshot.
+
+### If you want something looked up or done — use Zooza AI
+
+This is the part worth knowing, because it turns half the questions people bring to this chat into a one-line request.
+
+**Zooza AI** is a separate connector between your Zooza account and an AI tool you already use (Claude, ChatGPT). Unlike the chat here, it *does* reach your data and *can* act on it. It is the right tool for anything of the form "tell me who…", "how many…", "set up…", "send…":
+
+- attendance across all of one client's registrations
+- who has not paid, filtered however you like
+- creating classes and whole schedules
+- marking attendance, adding session summaries
+- pulling clients by an extra field and messaging exactly that group
+
+Set it up at **`zooza.app/#mcp`** — use your regional address if you have one (for example `uk.zooza.app/#mcp`). It is free for active customers.
+
+> **Rule of thumb:** this chat explains *how*. Zooza AI does it, or tells you *what* your data says. If you find yourself describing your account to the chat, you want the connector instead.
+
+See [Connect Zooza to Claude](../setup/claude-plugin.md).
 
 ### Language
 
