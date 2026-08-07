@@ -8,11 +8,11 @@ sub_area: ""
 audience: ["admin"]
 tags: ["holidays", "terms", "make-up", "pause", "attendance"]
 status: "published"
-related_articles: ["make-up-sessions-faq", "edit-payment-on-booking", "payment-correction-vs-refund"]
+related_articles: ["make-up-sessions-faq", "edit-payment-on-booking", "payment-correction-vs-refund", "holiday-settings", "custom-holidays", "managing-sessions-in-a-class"]
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-13"
+last_converted: "2026-08-07"
 ---
 
 # Holiday and Term Management FAQ
@@ -28,6 +28,33 @@ When creating sessions for a class, Zooza shows you which dates fall on holidays
 These checkboxes are available in the session creation screen when you add sessions to a class. For the system to know which dates are holidays, the location must have a region assigned (see next question).
 
 See also: [Holiday settings](../setup/holiday-settings.md)
+
+## I cannot find the Skip Holidays checkbox anywhere
+
+It is in **Advanced** session planning. Basic planning does not offer it.
+
+When you create a class, the **Sessions** heading has two tabs — **Basic** and **Advanced**:
+
+1. Open the class → **Sessions** → **Add sessions**.
+2. Switch to the **Advanced** tab.
+3. Click **Create sessions** and set the sessions to repeat.
+4. The **Skip Holidays** and **Skip School Breaks** checkboxes appear once repetition is defined.
+
+Advanced planning is also where you cover schedules that vary within one class — for example Mondays with one instructor for 45 minutes and Tuesdays with another for 60 minutes.
+
+> Nothing has been removed. The option was never in the class settings screen itself; it belongs to session generation, which is why it appears only at the point where dates are produced.
+
+## Can I apply holiday skipping to sessions I already created?
+
+No. Holiday rules run once, at generation time, and there is no way to re-apply them afterwards. This is deliberate — activities for very young children often run straight through the holidays, so Zooza never removes dates on its own.
+
+To clean up sessions that already landed on holidays:
+
+1. Go to **Activities → Sessions**.
+2. Filter to the dates that fall on the holiday period.
+3. Select them and either **bulk delete** (if they were created by mistake) or **bulk move** them to replacement dates.
+
+Bulk moving is usually the better option for a class that is already sold, because deleting sessions can change what clients owe.
 
 ## How do I set holiday regions per location?
 

@@ -118,6 +118,7 @@ When a client registers multiple attendees for a trial session, the trial-date p
 
 ## Session Capacity
 
+> The number of extra seats is **not** set here. This tile only chooses whether trials may use them. The number itself lives in **Team & Settings → Make-up sessions → Additional slots in classes**, or per class on the make-up sessions tile. See [Capacity vs extra capacity](../guides/capacity-and-extra-capacity.md) for the full model of which seats each part of Zooza can take.
 
 When setting up trial sessions, you can decide how session capacity is handled. Two options are available:
 

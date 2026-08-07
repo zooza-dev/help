@@ -30,6 +30,8 @@ If a make-up credit was not generated after a missed session, check whether the 
 
 ## How does the "extra capacity for make-up sessions" setting work?
 
+> Extra capacity is invisible to the booking form — a client enrolling normally can never take an extra seat. Make-up bookings can. Trials may or may not, depending on the programme's trial setting. See [Capacity vs extra capacity](../guides/capacity-and-extra-capacity.md).
+
 There are two levels for this setting:
 
 1. **Global setting** — Go to **Settings** → **Make-up sessions**. The `Extra capacity for replacement hours` value (e.g. 1) applies to every class across all programmes. This means each class allows that many additional spots beyond its normal capacity for make-up bookings.
