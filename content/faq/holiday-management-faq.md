@@ -103,6 +103,22 @@ This means that if you reschedule sessions and the new dates happen to fall on a
 2. Manually delete or cancel any sessions that now fall on holidays.
 3. If you need to regenerate sessions from scratch (with holiday skipping re-applied), delete the affected sessions and create new ones using the session creation screen with the **Skip Holidays** / **Skip School Breaks** checkboxes enabled.
 
+## We have no holidays for our region, or some are missing
+
+Then enter them yourself as custom holidays. That is what the feature is for.
+
+Public and school holidays come from an external database. It has been reliable, but we increasingly get reports that it does not carry every holiday for every region — which is exactly why entering your own was added.
+
+The order to work through:
+
+1. **Set the region on the location** — Settings → Places → open the place → **Region**. Without it, Zooza does not know which national and regional holidays apply, and none will be offered.
+2. **Generate sessions and look at the highlighted dates.** If your region's holidays appear, you are done.
+3. **If dates are missing or wrong, add them under Team & Settings → General → Custom holidays.** Enter the date ranges you want skipped. They then behave exactly like public holidays when you generate sessions.
+
+Custom holidays belong to your account only and are never shared with other companies, so you can add whatever your business actually observes — a local festival, a venue closure, a week you simply do not run.
+
+> Also tell us at [support@zooza.online](mailto:support@zooza.online) if a national holiday is genuinely missing for your region. Your custom holiday fixes your account today; a report gets it fixed for everyone.
+
 ## What are custom holidays and how are they different from public holidays?
 
 Public and school holidays are synced automatically from national calendars based on your location's region. You cannot edit or delete them.

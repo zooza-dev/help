@@ -62,6 +62,8 @@ The original booking moves to the new class. The client gets the remaining sessi
 
 If you want the same client in a different class at your own centre, use **Transfer**. **Transfer to network** is a different action — it moves the registration to another company in your network, i.e. a different centre. Choosing it when you only wanted a later time slot moves the client out of your account.
 
+> **Transfer may not be the right tool at all.** If the client only wants to move a *later date* — one missed session, a trial they cannot make, a later start — see [A client wants to move to a later date](move-a-booking-to-another-date.md) first. Transferring is right for one of those four situations and wrong for the other three.
+
 ## Why can't I copy this registration into the class I want?
 
 **A registration can only be copied into a class of the same course type as the one it came from.** The copy carries over the payment structure of the original, and that structure has no meaning in a differently typed course, so the target simply does not appear in the picker.

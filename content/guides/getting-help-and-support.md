@@ -54,7 +54,18 @@ If your question is about something specific in your account (e.g. a payment tha
 
 ### Language
 
-Write in any language and Zooza Assistant will respond in kind. Slovak and Czech are both supported — it occasionally confuses them but the quality is generally good.
+Write in any language and Zooza Assistant will respond in kind.
+
+**If it answers in the wrong language — usually Czech when you wrote Slovak — that is a known limitation, and asking it again will not fix it.** The assistant detects the language of your message and picks its reply from that. Slovak and Czech are close enough that the detection sometimes lands on the wrong one, and once it has decided, repeating the request in the same language tends to produce the same result.
+
+There is currently no setting to force a language, and no phrasing that reliably overrides it. What usually works:
+
+- **Ask in English for one message.** The detection is unambiguous, and the answer is easier to act on than a Czech one you have to translate mentally.
+- **Ask for a human.** A person will reply in your language.
+
+We know this is irritating, particularly when you have asked three times. It is a limitation of the language model behind the assistant rather than a setting anyone at Zooza can change, so we would rather tell you plainly than have you keep trying.
+
+The technical content of the answer is not affected by which of the two it picks — it is the same information, in the wrong language.
 
 ### Escalating to a human
 

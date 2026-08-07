@@ -30,6 +30,22 @@ Think of it like a school:
 - The **class** is a specific group running that subject — Monday 9am, Wednesday 4pm. It defines the schedule, location, instructor, and capacity.
 - The **session** is a single lesson — Monday 6 January 9am. It's the individual occurrence where you record attendance and handle cancellations.
 
+## "I don't have Programmes in my menu"
+
+You probably do — under a different name. **"Programme" is the English label only.** In every other language the same thing is called a **course** (Slovak and Czech: *Kurzy*).
+
+| This documentation says | Your app says, in other languages |
+|---|---|
+| Programme | Kurz / Kurzy |
+| Class | Skupina / Skupiny |
+| Session | Termín / Termíny |
+
+So when a guide tells you to go to **Programmes → open the programme → Settings**, and your menu shows **Kurzy**, that is the same place. Nothing is missing and nothing needs enabling.
+
+This trips people up regularly, because the help is written in English while most accounts run in Slovak or Czech. If an instruction points at a menu item you cannot see, check the table above before assuming a permissions problem.
+
+> If the item is genuinely absent rather than renamed, it is usually your role. The **Main instructor** role has no Programmes/Kurzy menu at all — it can work with classes and sessions only. See [Roles and permissions](../faq/roles-and-permissions-faq.md).
+
 ---
 
 ## What each layer controls
