@@ -1,0 +1,56 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "A client wants to move to a later date",
+  "url": "https://help.zooza.online/bookings/move-a-booking-to-another-date",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which situation is it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Do not reach for \"Transfer to network\". That moves the registration to a different company in your network — another centre entirely. It is next to Transfer in the menu and it is not what \"a later time\" means. See Transfer and copy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "They are in a trial",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cancel the trial session and book a new one. For a trial this is always the right first move — do not transfer, and do not treat it as a make-up.\n\n1. Open the trial booking → Attendance.\n2. Hide the original session, so it drops out of reports and the client's view.\n3. Book a session and pick the new date.\n\nThe booking stays as Trial started and the client is notified of the new date. The trial automation still runs from the new session, which is the point: transferring or cancelling instead usually breaks the follow-up sequence that turns a trial into an enrolment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "They are enrolled and will miss one session",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is not a move at all — the enrolment stays where it is.\n\nThe client cancels that one session from their profile. If your programme has make-up sessions enabled, the cancellation generates a credit and they book a replacement themselves, at a time that suits them.\n\nTwo things decide whether that works:\n\n- The absence must be recorded as Cancelled, not Did not attend — only Cancelled creates a credit.\n- A class only becomes available for make-ups 4 days before it starts, so a replacement in a class starting next month will not appear yet.\n\nIf nothing is being offered and you cannot see why, run the MATKO diagnostic rather than guessing — it names the condition that is blocking the session. See Make-up sessions FAQ.\n\nIf you do not use make-ups, this becomes a billing question instead: either let it go, or adjust the payment on the booking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "They want a different day or time from now on",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Now it is a real move. Use Transfer on the booking, and pick the class that runs at the time they want.\n\nOpen the booking → the Class card → Transfer → choose the target class.\n\nCheck two things before you submit:\n\n- Payments. Tick Do not change payments unless you intend to reprice. Leaving it unticked replaces the payment schedule with the target class's settings.\n- The start date of the new schedule, if you do change payments. Set it to the transfer date, not the start of the group — otherwise Zooza back-fills instalments the client has already paid.\n\nSee Transfer and copy bookings for the full walkthrough."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "They want to start later",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If they have not started at all and want the next block or term, transferring to the later class is usually cleanest — the booking, its history and its payments move together.\n\nIf they are staying in the same class but want their enrolment to begin later, change the enrolment start on the booking instead. That shifts which sessions they are counted in without moving them anywhere."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why there is no single \"move to a later date\" button",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because the four situations above need four different things to happen to attendance, credits and money — and only you know which one the client means. A single button would have to guess, and guessing wrong on payments is expensive to unwind.\n\nWhen you are unsure, ask the client one question: are you missing this one session, or do you want a different day from now on? The answer picks the row in the table above."
+      }
+    }
+  ]
+}
