@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-08-07"
 ---
 
 
@@ -156,6 +156,24 @@ The email is the key identifier used for invoicing, loyalty discounts, and booki
 ### Will the loyalty discount change when a logged-in client selects a different child?
 
 Yes. When the client selects a different person from the person selection list, the price is recalculated to reflect the correct loyalty discount tier for that child. For example, selecting a third child (rather than a second) may trigger a higher sibling discount tier automatically.
+
+---
+
+## The widget shows "available" but my class should be full — why?
+
+If the booking widget shows a class as available even though you believe it is fully booked, the reason is always in the class or group settings. Check the following:
+
+1. **Class capacity** — open the class and check the **Capacity** field. If capacity is set higher than the number of current registrations, the class is not technically full even if it looks that way on your side.
+
+2. **Trial registrations count toward capacity** — trial bookings occupy a spot in the class just like regular bookings. If you have several open trials that have not been converted or lost, they are holding capacity.
+
+3. **Trial settings allow registration past capacity** — some configurations allow new trials even when the class is at capacity. Check the class settings to see whether trial registration is allowed beyond the capacity limit.
+
+4. **Group or segment capacity** — if your class uses blocks or groups with separate per-group limits, the overall class may still appear available even if one group is full. Check the individual group/block capacity settings inside the class.
+
+There is no single switch that controls this — the reason is always in the class or group configuration. Open the class and go through the settings above to find which one explains the discrepancy.
+
+> **Note:** The widget availability display (Do not show / Current status / Text information) only controls what clients *see* — it does not affect whether they can actually register. Even if the widget shows "available", registration will fail at the point of submission if the class is genuinely full.
 
 ---
 
