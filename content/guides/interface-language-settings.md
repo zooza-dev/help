@@ -35,6 +35,21 @@ The admin panel language is set per user account — each admin can have a diffe
 3. Find the **Language** field and choose your preferred language.
 4. Save.
 
+<!-- REVIEW: This path needs verifying against the current UI and against non-owner roles.
+     July 2026 support evidence that it does not match what users see:
+     - conv 215474845646196 (2026-06-25): a trainer followed exactly these steps and reported
+       the profile contains only first name, surname, phone and nickname — no Language field
+       and no "Account settings" entry. Escalated to a human, who answered a different
+       question and never corrected the path.
+     - conv 215475247901010 (2026-07-27): asked how to switch the interface to Polish; the
+       assistant produced no steps at all.
+     - conv 215474845646196 also shows the assistant offering a second, contradictory route
+       ("click the Zooza logo, use the language switcher at the bottom of the menu"), which
+       the note below explicitly denies.
+     Confirm whether the Language field is hidden for instructor-type roles, or whether the
+     path has moved. Do not remove the "Common mistake" note until the correct route is known. -->
+
+
 > **Common mistake:** The Zooza logo in the top-left corner does **not** contain a language switcher. The correct path is always the profile icon in the top-right.
 
 The admin panel reloads in the selected language immediately. This does not affect what clients see.

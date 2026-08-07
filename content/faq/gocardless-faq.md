@@ -135,6 +135,30 @@ GoCardless typically syncs transactions **once per day**. This means there can b
 
 If you need faster matching, consider switching to **email-notification pairing**, which processes payments in near real-time as soon as your bank sends the notification email.
 
+## A parent says the money left their account before the date shown in Zooza. Were they charged twice?
+
+Almost certainly not. **GoCardless usually collects several days before the scheduled date.** Direct Debit needs lead time to move through the banking system, so the debit hits the payer's account earlier than the date Zooza displays.
+
+Before treating it as a duplicate, check whether the amount that left matches the next scheduled payment. If it does, it *is* that payment arriving early, and no second collection will follow.
+
+This is the single most common Direct Debit query from parents. It is worth saying in your own terms and conditions that the collection date is approximate and may fall a few days before the stated date.
+
+> While you are in the terms, set a **notice period** for cancellations — a month is the most common. Without one, families can cancel immediately before or after a collection, which is difficult to unwind once the payment is in flight.
+
+## Instalments are marked as manual instead of being collected automatically
+
+If mandates were set up correctly but Zooza flagged the instalments for manual handling, this was a platform issue affecting the **first** payment on a new mandate.
+
+The first mandate GoCardless issues is a one-off, not a recurring one. Zooza read that as "this mandate cannot be charged again" and marked the following instalments manual. GoCardless then replaces it with a permanent recurring mandate, so subsequent payments were flagged correctly — which is why the problem appeared only at the very start of a booking. This has been fixed for new bookings.
+
+To check the current state of any mandate, go to **Sales & Payments → Inbound → Direct Debit → Mandates**. The overview shows, per mandate:
+
+- whether a payment plan is attached
+- when the last payment on that mandate was taken
+- whether there are offline payments available for it
+
+Instalments already marked manual before the fix stay manual — collect them using **Push to offline charge queue** on the payment detail (see the next question).
+
 ## A client has an active mandate but GoCardless has not collected a payment from their account. What should I check?
 
 GoCardless can be used in two distinct ways in Zooza — make sure you are troubleshooting the right one:
