@@ -82,6 +82,14 @@ To use a dynamic tag, follow these steps:
 
 We recommend using this functionality to generate documents such as payment receipts or receipts for the needs of the end client's insurance company or employer. Therefore, dynamic documents can only be generated at the booking level. In this section you only create a template for the document. Its final form is generated only at booking (see Adding a document at booking level).
 
+> **One document = one registration.** A dynamic document is always generated for a single booking, and there is no way to produce one document covering several bookings at once.
+>
+> This matters most for parents with more than one child. Each child is a separate registration, so a parent enrolling two children needs two documents — you cannot issue one confirmation naming both. There is no tag for "the second child" either; tags resolve against the one registration the document belongs to.
+>
+> The nearest thing available is `*|ORDER_SUMMARY|*`, which on a **main (parent) registration** summarises the people from the registrations linked beneath it. That gives you the names in one place, but it is a summary block rather than a document you can lay out.
+>
+> If you regularly issue attendance confirmations to parents with several children, tell support what the document needs to contain — names, dates of birth, enrolment dates — as a summarising tag for exactly this case is being considered.
+
 The function is used to generate PDF documents that can contain:
 
 1. Company logo

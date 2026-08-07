@@ -179,7 +179,11 @@ For programmes using blocks (term segments), `*|COURSE_DATE_DAY|*` and `*|COURSE
 
 **Alternative workaround for time slot:** Include the time slot in the block name itself (e.g. "Mondays 17:00" or "January — Mon 17:00"). `*|ORDER_SUMMARY|*` includes the block name, so clients see the time in their confirmation email even without a dedicated tag.
 
-<!-- REVIEW: Monitor for a dedicated block-specific dynamic tag — it has been requested by multiple customers. -->
+**A per-block tag is not planned, and will not be added.** This is worth understanding rather than waiting for, because the reason is structural: blocks belong to a single class and there is no relationship between the blocks of one class and those of another. A tag such as `BLOCK_1` could not mean anything reliable — you would have no way of knowing whether the class in question has a first block at all, let alone whether it is the one you meant.
+
+The same constraint is why blocks cannot be included in the registration export. Blocks can be reported per class, but not across registrations drawn from different courses.
+
+Two improvements are planned instead: showing blocks in the client profile so clients can check what they signed up for, and a summary tag along the lines of `ORDER_SUMMARY` that lists **only** blocks, without the rest of the order.
 
 ### Tags in order confirmation emails
 
