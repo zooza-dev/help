@@ -12,7 +12,7 @@ related_articles: ["message-templates", "customizing-widgets", "publish-widgets"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-15"
+last_converted: "2026-08-07"
 ---
 
 # Change the language in Zooza
@@ -28,37 +28,25 @@ Zooza has two separate language settings that work independently:
 
 ## Change the admin panel language
 
-The admin panel language is set per user account — each admin can have a different language.
+The language switcher is on the **Dashboard**, at the bottom of the page.
 
-1. Click your **profile icon** or name in the **top-right corner** of the admin panel.
-2. Select **Account settings** (or **Profile**).
-3. Find the **Language** field and choose your preferred language.
-4. Save.
+1. Click the **Zooza logo** in the top-left corner to open the Dashboard (the app home page).
+2. Scroll to the **bottom** of the Dashboard.
+3. Choose your language in the switcher.
 
-<!-- REVIEW: This path needs verifying against the current UI and against non-owner roles.
-     July 2026 support evidence that it does not match what users see:
-     - conv 215474845646196 (2026-06-25): a trainer followed exactly these steps and reported
-       the profile contains only first name, surname, phone and nickname — no Language field
-       and no "Account settings" entry. Escalated to a human, who answered a different
-       question and never corrected the path.
-     - conv 215475247901010 (2026-07-27): asked how to switch the interface to Polish; the
-       assistant produced no steps at all.
-     - conv 215474845646196 also shows the assistant offering a second, contradictory route
-       ("click the Zooza logo, use the language switcher at the bottom of the menu"), which
-       the note below explicitly denies.
-     Confirm whether the Language field is hidden for instructor-type roles, or whether the
-     path has moved. Do not remove the "Common mistake" note until the correct route is known. -->
+The admin panel reloads in the selected language immediately.
 
+> **It is not in your profile.** Opening your profile shows only your first name, surname, phone number and nickname — there is no language field there. If you have been looking in the profile and finding nothing, that is why.
 
-> **Common mistake:** The Zooza logo in the top-left corner does **not** contain a language switcher. The correct path is always the profile icon in the top-right.
-
-The admin panel reloads in the selected language immediately. This does not affect what clients see.
+> **This does not change anything your clients see.** It only affects your own view of the admin panel. The language of emails and the booking widget is a separate setting — see the next section, and read it before changing anything, because the two are easy to confuse.
 
 > **Available admin languages:** Slovak, Czech, English, Hungarian, Romanian, and others depending on your account setup.
 
 ---
 
 ## Change the client-facing language (widgets and emails)
+
+> **Careful — this is the one people change by mistake.** The language setting in **Settings** is not your own interface language. It is the language Zooza uses towards your **clients**: their emails and the booking widget. Changing it because the admin panel is in the wrong language will switch your clients' communication instead, and leave your panel exactly as it was. To change your own view, use the Dashboard switcher described above.
 
 This setting controls what language your clients see when they register, receive confirmation emails, or access their Client Profile.
 
@@ -78,12 +66,11 @@ This affects:
 
 ## The admin panel is in the wrong language after setup
 
-If the interface appeared in an unexpected language when you first logged in:
+If the interface appeared in an unexpected language when you first logged in, click the Zooza logo to open the Dashboard and use the language switcher at the bottom of the page.
 
-1. Follow the steps above to change the admin panel language in your profile settings.
-2. If you cannot find the language option or the interface is unreadable, try navigating directly to the settings page.
+If the interface is unreadable, the logo is the safest thing to click — it always returns you to the Dashboard, and the switcher sits at the bottom of that page regardless of the language it is currently showing.
 
-The language selection is stored in your user profile — it does not reset unless you clear your browser data or log in from a new device for the first time.
+Do **not** go into Settings to fix this. That changes the language your clients receive, not your own.
 
 ---
 
