@@ -60,5 +60,23 @@ If every session is paid, do not use billable sessions at all. The feature exist
 **4. With per-session pricing, how many sessions were in the future?**
 Per-session pricing multiplies the unit price by the sessions still ahead **at the moment of registration**. If the sessions had not been generated yet, or all sat in the past, the result is 0 — and it stays 0 afterwards, because of the rule at the top of this page.
 
-**5. Check `Balance` against `Outstanding`.**
-They mean different things. `Balance: 0` means fully settled. An outstanding amount of 0 with no payment plan means nothing was ever owed. If you see the second on a new booking where every setting looks right, stop and contact support with the class link, the registration link, and the amount you expected — this is the point where it stops being a configuration question.
+**5. Is 0 actually correct?**
+
+Several perfectly normal setups produce an outstanding amount of 0, and this is the step people skip. Before treating it as a fault, check whether there is genuinely anything to pay *yet*:
+
+- **The class is lead collection.** There is no schedule and no billing period, so nothing is owed. This is by design — see [Lead collection](lead-collection.md).
+- **The programme is pay-as-you-go.** Enrolling in the class costs nothing; the client is charged per session as they book. An outstanding amount of 0 on the registration itself is the expected state.
+- **The payment falls due later.** With a template billing on, say, the 1st of the month, a client who registers after that date owes nothing until the next cycle.
+- **The pro-rata window contains no sessions.** If the class starts later and there is no session between today and the first billing date, the aliquot calculation has nothing to charge for — correctly returning 0.
+
+**6. If it is genuinely wrong, it is a configuration question, not a fault.**
+
+An outstanding amount that should not be 0 is almost always traceable to one of three places. Work through them in this order:
+
+| Check | What to look for |
+|---|---|
+| **Programme type** | Does the type charge at enrolment at all? Pay-as-you-go and lead collection do not. |
+| **Payment template** | Is one active, does it match the collection mode, and when does it first bill? |
+| **Class / group settings** | Price set and not 0, and the billable-session counter consistent with the sessions (step 3 above). |
+
+Between those three you will find it. Contact support with the class and registration links only once you have ruled all three out — and say which you checked, because that is what turns it into a five-minute answer rather than a diagnosis from scratch.

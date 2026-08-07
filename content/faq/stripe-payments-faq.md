@@ -18,20 +18,24 @@ last_converted: "2026-02-12"
 
 ## Own Stripe account, or Stripe through Zooza?
 
-There are two commercial arrangements, and they differ in who the client is actually paying — not in how the payment works technically.
+Two commercial arrangements. They differ in who the client is actually paying — not in how the payment works technically.
 
-| | **Your own Stripe** | **Stripe through Zooza** |
+| | **Your own Stripe** ⭐ | **Stripe through Zooza** |
 |---|---|---|
 | Who holds the Stripe account | You | Zooza |
 | Who the client pays | You | Zooza s.r.o. |
 | Who invoices you | Stripe, for its fees | Zooza, together with the system invoice |
-| Zooza's cut | none | 3.5% per transaction |
+| **Zooza's commission** | **none** | **3.5% per transaction** |
 | Payouts | Stripe pays you on its own schedule | Zooza pays out 1–2× per month |
-| You manage payouts and reports | Yes, in the Stripe dashboard | No |
+| Setup needed from you | Create a Stripe account | None |
 
-**Why businesses choose the second option:** it removes the Stripe Tax Invoice from your books. Receiving invoices directly from Stripe can trigger monthly VAT filing obligations, which is a real administrative cost for a small operation. With Stripe through Zooza you receive one domestic invoice instead.
+**Your own Stripe is the option we recommend.** Zooza takes no commission on it at all — you pay Stripe's own rates and nothing more. You also keep direct control of payouts, reporting and refunds, which matters on the day a client wants their money back quickly.
 
-**What it requires:** Zooza pays out only to a verified **legal entity in the EU** — never to a private account. The entity is verified before the service is switched on, which usually takes a few days once billing details are filled in. At higher volumes the 3.5% is negotiable, and payouts can be agreed more frequently than monthly so your cash flow is not held up.
+**Stripe through Zooza exists for businesses that do not want their own Stripe account.** It works immediately with nothing to set up on your side, and it removes the Stripe Tax Invoice from your books — receiving invoices directly from Stripe can trigger monthly VAT filing, which is a real administrative cost for a small operation. You receive one domestic invoice from us instead. The trade-off is the 3.5%.
+
+**What Stripe through Zooza requires:** payouts go only to a verified **legal entity in the EU**, never to a private account. Verification happens once, before the service is switched on. At higher volumes the 3.5% is negotiable, and payouts can be agreed more often than monthly so your cash flow is not held up.
+
+> If you are choosing now and have no strong reason to avoid a Stripe account, open your own. The commission difference compounds with every transaction, and moving later means reconnecting payments mid-season.
 
 > **CardPay** is a third option for card payments and carries the same 3.5%, but it handles **one-off payments only** — there is no automatic recurring charging. For recurring card payments use Stripe; for recurring bank collection use GoCardless.
 

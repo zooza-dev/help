@@ -37,6 +37,16 @@ The main calendar view shows a daily timeline grouped by location.
 | `Attendance type` | Filter by type of attendance record. |
 | **Legend** | Expandable legend explaining the colour codes and icons. |
 
+### Why a session is a particular colour
+
+**The colour of a session comes from its programme.** Each programme can be given a colour in **Programme → Settings → Labels and colours**, and every session of every class in that programme is drawn in it. That is the whole rule for the block colour — it carries no meaning about capacity, payment or attendance.
+
+So "why are the Saturday sessions red?" almost always answers itself: the programme running on Saturdays has red assigned to it. Change the programme's colour and the calendar follows.
+
+Colours are worth assigning deliberately for exactly this reason — one glance at the week tells you which programme is where. See [Programme settings tile](../guides/programme-settings-tile.md).
+
+Icons and any status shading are separate from the programme colour. Use the **Legend** control on the calendar to see what the ones in your account mean; it is expandable and always reflects the current build.
+
 > **The Name filter searches clients, not instructors.** This is the most common cause of "the instructor's calendar is empty". Typing an instructor's name there filters for a *parent or child* of that name, finds nobody, and empties the calendar — with no error, because the filter did exactly what it was asked.
 >
 > To see one instructor's schedule, use the **Instructor** filter instead.
