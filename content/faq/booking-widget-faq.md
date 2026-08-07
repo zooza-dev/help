@@ -218,4 +218,6 @@ For more advanced customisation (translations, styling, CSS, JavaScript options)
 - CSS and styling options for the embedded and WordPress plugin versions
 - Filtering programmes and other embed parameters
 
+The `window.ZOOZA` configuration object supports two properties: `translations` and `print_debug`. It does **not** support a `style` property or any layout/appearance overrides — those are applied using CSS on your website. If you need to change a visual aspect of the widget (e.g. dropdown height, font size, padding), add CSS to your website stylesheet rather than `window.ZOOZA`.
+
 Widget styling is handled on your website side (by your webmaster or developer) — it is not configurable from within the Zooza application itself.

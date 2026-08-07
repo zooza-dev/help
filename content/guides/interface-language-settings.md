@@ -30,10 +30,12 @@ Zooza has two separate language settings that work independently:
 
 The admin panel language is set per user account — each admin can have a different language.
 
-1. Click your **profile icon** or name in the top-right corner of the admin panel.
+1. Click your **profile icon** or name in the **top-right corner** of the admin panel.
 2. Select **Account settings** (or **Profile**).
 3. Find the **Language** field and choose your preferred language.
 4. Save.
+
+> **Common mistake:** The Zooza logo in the top-left corner does **not** contain a language switcher. The correct path is always the profile icon in the top-right.
 
 The admin panel reloads in the selected language immediately. This does not affect what clients see.
 

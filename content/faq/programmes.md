@@ -7,7 +7,9 @@ product_area: "Programmes"
 audience: ["admin"]
 tags: ["programme", "class", "archive", "delete", "venue", "price", "rename", "trial", "auto-continuation"]
 status: "published"
-last_converted: "2026-03-14"
+source_language: "en"
+needs_screenshot_replacement: false
+last_converted: "2026-08-07"
 ---
 
 # FAQ — Programmes
@@ -191,3 +193,13 @@ This depends on your **aliquot setting**:
 - **Aliquot OFF** — the client pays the full monthly amount regardless of when they join.
 
 You can also use the **"Include Initial Full Scheduled Payment"** setting to control whether the client pays the pro-rata amount only, or the pro-rata amount plus one full period upfront.
+
+---
+
+## A client sees "No groups available" on the auto-continuation screen — what does it mean?
+
+This message means the target groups (classes) are **not enabled for auto-enrolment** — it does not mean no groups exist in your account.
+
+**Fix:** Go to each class you want to appear on the continuation screen → **Settings** tile → enable **Include in auto-enrolment**. This must be done for every class you add after the programme-level auto-enrolment was configured.
+
+> **Important:** Do not create a manual booking as a workaround. Creating a new manual booking in this situation will duplicate the client's registration — they will have two active bookings instead of one. The correct fix is always to enable the group in auto-enrolment settings.

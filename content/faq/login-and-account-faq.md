@@ -83,11 +83,18 @@ Each team member then logs in with their own email using the same passwordless l
 
 ## How do I change the app language for admins or instructors?
 
-On the Zooza app dashboard, click the **Zooza logo** (top-left). At the bottom of the menu, a language switcher is displayed. Click the language you want to use.
+1. Click your **profile icon** or name in the **top-right corner** of the Zooza admin panel.
+2. Select **Account settings** (or **Profile**).
+3. Find the **Language** field and choose your preferred language.
+4. Save.
 
-Available languages: Slovensky, English, Česky, Deutsch, Romanian.
+The interface reloads in the selected language immediately. Each admin and instructor can set their own preferred language independently — this does not affect the client-facing widgets or emails.
 
-The language change takes effect immediately and applies to the current user's session. Each admin or instructor can set their own preferred language independently.
+> **Note:** The Zooza logo in the top-left corner does **not** contain a language switcher. The correct path is always via the profile icon in the **top-right**.
+
+Available languages: Slovak, English, Czech, Hungarian, Romanian.
+
+For more detail — including how to change the language of client-facing widgets and emails — see [Change the language in Zooza](../guides/interface-language-settings.md).
 
 ## How do I switch Zooza to dark mode?
 

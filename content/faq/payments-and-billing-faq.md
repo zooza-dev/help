@@ -52,12 +52,13 @@ For bulk XML export or API-based access, use the Zooza API (`GET /v1/customer_in
 
 ## What does a negative balance mean on a booking?
 
-The balance shows the difference between what the client should pay and what they actually paid.
+In Zooza, the balance shows **what the client still owes** (positive) or **what they have overpaid** (negative).
 
-- **0** = fully paid.
-- **Negative amount** = payment was not completed or failed. The client needs to finish payment via their Client Profile.
+- **Positive balance** (e.g. €50) — the client owes money. The outstanding amount has not been paid.
+- **0** — fully paid.
+- **Negative balance** (e.g. −€30) — the client has **credit**. They paid more than they owed, or a refund or manual credit was applied. You may owe them a refund, or the credit can be left on the account to offset future invoices.
 
-A negative balance does not necessarily mean "overpaid" — it means there is an outstanding amount.
+> **Important:** A negative balance means the client has credit, not that they owe money. This is the opposite of what many people intuitively assume. If you see −€30, the client is €30 ahead, not €30 in arrears.
 
 ## What is the difference between "Awaiting payment" and "Unpaid"?
 

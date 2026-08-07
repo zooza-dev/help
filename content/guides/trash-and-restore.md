@@ -33,9 +33,12 @@ This is the most common source of confusion. A registration (or class) can be in
 | **Deleted (in Trash)** | The registration was moved to Trash | **Settings → Tools → Trash** | Yes — within 30 days |
 | **Permanently removed** | 30 days have passed since deletion, or it was hard-deleted | Nowhere — it is gone | No |
 
-**If you cannot find a registration in the main list**, check two places in this order:
+**If you cannot find a registration in the main list**, check in this order:
 1. Registrations list → change the status filter to **All** or **Cancelled** — it may still be there as cancelled.
-2. **Settings → Tools → Trash** — it may have been deleted.
+2. Navigate directly to `#registrations?status=deleted` in your browser URL (add `?status=deleted` to the registrations page URL) — deleted registrations are **viewable indefinitely** via this path, even beyond the 30-day Trash window.
+3. **Settings → Tools → Trash** — to **restore** a deleted registration, it must be within the 30-day window.
+
+> **Note:** The **Deleted** status filter was removed from the Bookings list UI. The only way to view deleted registrations is via the URL path above or via Settings → Tools → Trash. Deleted registrations are not permanently gone after 30 days in terms of visibility — they remain viewable via the URL path. However, they can only be **restored** within 30 days of deletion.
 
 ---
 

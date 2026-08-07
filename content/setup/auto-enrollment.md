@@ -51,7 +51,9 @@ First, you need to set which programmes and classes you want to offer clients fo
 5. *Duplicate current class* - ideal for individual clients.
  ![Duplicate current class - ideal for individual clients](../../assets/images/auto-enrollment-05.png)
 
-Enter how many days before the end of the current term the system should notify clients.
+Enter how many days before the end of the current term the system should notify clients. For example, entering **14** sends the invitation 14 days before the billing period end date.
+
+> **How the trigger works:** The continuation email fires **N days before the billing period end date** — it is based entirely on the class schedule and billing period. Trial session attendance does **not** trigger the continuation email for regular classes. (Trial-to-enrolment conversion is a separate feature triggered by the instructor recording attendance on the trial session.)
 
 
 ![Enter how many days before the end of the current term the system should notify clients](../../assets/images/auto-enrollment-06.png)

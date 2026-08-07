@@ -121,6 +121,13 @@ These payment templates created can then be used and inserted into your new or e
 
 The created payment templates need to be inserted into newly created or already existing programmes. The templates created in this way can be combined in the programmes according to your wishes and needs. This means that you can use multiple payment templates for one programme.
 
+> **Three-step flow — required order:**
+> 1. **Create templates** in **Team & Settings → Payments** (global library).
+> 2. **Activate on the Programme** — go to the programme → **Price and Payment** tile → enable the templates you want to offer. This step is mandatory and cannot be skipped.
+> 3. **Optionally disable at the class level** — individual classes within the programme can disable specific templates if you do not want them offered for that particular class.
+>
+> There is no standalone "Apply payment template" shortcut at the class level that bypasses programme-level activation. If a template is not enabled on the programme, it will not appear as an option on any class within that programme.
+
 ## Insert templates into programmes
 
 To insert templates into programmes, do the following:
