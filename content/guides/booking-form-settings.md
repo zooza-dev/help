@@ -105,6 +105,12 @@ You can rename the standard fields that appear on the form. The fields you can r
 - Phone
 
 Each field has a visibility toggle (eye icon) to show or hide it on the form.
+
+> **The Note field cannot be made mandatory, and never could be.** It exists so a client can tell you something you did not ask about — an open box at the end of the form. Requiring it would defeat that purpose, so there is no mandatory toggle on it.
+>
+> If you need an answer to a specific question — a health condition, a preferred group, how they heard about you — do not rely on the Note field. Create an **additional field** for it and mark that field mandatory. You then get a labelled answer in its own column instead of free text you have to read and interpret.
+>
+> Worth checking if you thought Note used to be required: it is easy to conclude the behaviour changed, when what changed is that the question moved into an additional field on one programme and not on another.
 ![Screenshot — booking form settings](../../assets/images/booking-form-settings-05.png)
 ### Communication
 

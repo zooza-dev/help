@@ -166,6 +166,17 @@ Yes — after copying bookings, open that client's individual booking and edit t
 **My class has multiple groups (e.g. different levels). Do I need to copy each one separately?**
 Yes — copy each class individually. This takes a few minutes but gives you full control over which clients move to which level.
 
+**We are taking a month off. How do I pause without unwinding everyone's payment plan?**
+
+Two steps, and deliberately not a third:
+
+1. **Cancel the scheduled payments falling in that month.** Go to **Payments → Scheduled** and cancel just those. Do not move everyone's payment dates forward — the normal cycle picks up again by itself afterwards.
+2. **Delete that month's sessions** so parents do not receive reminders and attendance notifications for classes that are not running. Do this **without notifying**, then send one message of your own explaining the break. A dozen automated cancellation emails read very differently from one clear note.
+
+The one thing to check individually: if the *following* month's payment has not been generated yet, cancelling the current one can stop the schedule rather than pause it. Where that happens you may need to add the next scheduled payment by hand. With a small roster it is quicker to go through the bookings one by one than to fix it afterwards.
+
+If the aim is to push people towards enrolling for the new season rather than drifting, also consider switching trials off for the period — **Programme Settings → Trials → Trial Type: None**. Parents then see only the option to enrol. Turning them back on later is the same switch.
+
 **I use GoCardless. Will payment mandates carry over?**
 GoCardless mandates are linked to the client, not the booking. When you create a new booking for a client, their existing mandate applies automatically if it's still active. Check that mandates haven't expired (they last 90 days from last use) before the first payment runs. See [GoCardless connection lifecycle](gocardless-connection-lifecycle.md).
 
