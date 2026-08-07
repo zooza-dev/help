@@ -200,6 +200,22 @@ If you need to delete a client record entirely, contact Zooza support.
 
 See [Common booking scenarios](common-booking-scenarios.md) for details on each status.
 
+### The delete failed and I am the account owner
+
+Check whether that email is also an **instructor** on your account. A person who holds both roles cannot be removed from the client list — the account exists for the instructor side, and they show up among clients only because registrations are attached to them.
+
+They are not counted as a client for billing purposes. If the entry is only cluttering your list (for example a test registration you made under your own email while setting the system up), delete the *bookings* instead — the row disappears from the useful views and the instructor account stays intact.
+
+## An admin created a booking and it linked the wrong family together
+
+This happens when a booking is created **from a client profile while logged in as that client**, rather than from the admin app.
+
+Zooza reads a booking made inside someone's profile as "this person is booking for someone connected to them", and creates a family relationship accordingly. That relationship is attached to the *user account*, not to your company — so it follows the person into every other Zooza account they belong to. Colleagues at a different branch will see a child listed under a parent who has nothing to do with them.
+
+**Always create bookings from the admin app** (**Bookings → Create booking**), or make sure you are not logged into a client profile when you do it.
+
+To repair one that already happened: open the client, go to **Family & Connections**, and remove the incorrect relationship. Deleting the booking does **not** remove the relationship — the link survives the booking that created it, which is why this tends to be noticed long after the fact.
+
 ## Why can't I find "move" or "delete" actions on the Clients page?
 
 The **Clients** page (and the individual client profile) shows contact and personal information only. It does not contain actions for moving, cancelling, or deleting enrolments.

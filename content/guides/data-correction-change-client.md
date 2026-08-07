@@ -47,6 +47,21 @@ Zooza now classifies requests automatically by risk level:
 
 When you submit a request, the system tells you immediately whether the change was processed or sent for review.
 
+## Which one do you actually need?
+
+Requests get rejected most often because the wrong mechanism was chosen. Decide before you submit:
+
+| Situation | Use |
+|---|---|
+| The client's own details are wrong (typo in the name, old email that exists nowhere else) | **Data correction** |
+| **The email you want to move the booking to already exists in the database** | **Change client** — not data correction |
+| You want to move one booking to a different person | **Change client** |
+| You want to merge a client's several old emails into one | Neither — see below |
+
+If the target email is already a client record, there is nothing to *correct*: both people exist. Open the booking, go to the **Client** card and choose **Change client**, then search for the existing record. Submitting this as a data correction will be rejected every time, no matter how you word it.
+
+> **Before changing an email, check who loses access.** Changing a client from a work address to a personal one means they can no longer reach Zooza using the work address. If several people share the work address, that may be exactly what you do not want.
+
 ## Why was the application rejected?
 
 A data correction request is rejected if:
