@@ -51,7 +51,7 @@ A custom link also works as a **private link**: it can point to a class that is 
 
 ## Sharing a product
 
-Products have the same pair of buttons, in the same place:
+Products are shared from the product itself, not through the class Share modal:
 
 1. Go to **Products & Services → Products**.
 2. Open the product.
