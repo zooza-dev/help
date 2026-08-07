@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-26"
+last_converted: "2026-08-07"
 ---
 
 # Email and Communication FAQ
@@ -223,6 +223,14 @@ Copied and manually created bookings do **not** trigger automatic confirmation e
 - **User templates** are custom templates you create. They appear under the "User templates" section in the template selector.
 
 These are listed in separate dropdown sections. If you cannot find your custom template, make sure you are looking under **User templates**, not under system or saved communication templates.
+
+## Will the session reminder email be resent if I reschedule a session to a different date?
+
+No. If a session reminder email was already sent for the original date, Zooza will **not** automatically resend it when you move the session to a different date or time.
+
+The reminder system fires once when the scheduled send time arrives. If the session is rescheduled after that point, no new reminder is generated.
+
+**Workaround:** Send a manual notification from the session's **Communication** tab to inform clients of the new date/time. You can also create and send a custom message via **Communication → Send message** targeted at the attendees of that session.
 
 ## How do I troubleshoot emails not arriving for a specific client?
 

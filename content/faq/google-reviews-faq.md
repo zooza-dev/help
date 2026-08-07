@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-29"
+last_converted: "2026-08-07"
 related_articles: ["collecting-google-reviews", "creating-a-location"]
 ---
 
@@ -25,6 +25,19 @@ No. They are two separate, parallel features. **NPS feedback** is *private* — 
 ## Which review platforms does Zooza support?
 
 Google only. Reviews works through your Google Business Profile. Other platforms are not part of this feature.
+
+## When does Zooza send the Google review request email?
+
+The review request is sent automatically after a session is **marked as attended** (the instructor records the client as having attended). For the request to send, all of the following must be true:
+
+1. The **Reviews module** is enabled on your account.
+2. The **place** (location) is linked to a verified Google Business Profile in Zooza.
+3. The client has an **active email address** (not bounced, not unsubscribed from marketing).
+4. The client has **not been asked** for a review in the past 12 months.
+5. The client has **not already left a matched Google review**.
+6. The client has **not given NPS feedback**.
+
+If the email did not arrive after attendance was recorded, run through this checklist. The most common causes are a missing place link or the 12-month rule.
 
 ## Why didn't a client get asked for a review?
 

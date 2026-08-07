@@ -53,6 +53,16 @@ Go to **Bookings** and filter by status **Waitlist**. From there you can:
 
 Yes. When a class reaches full capacity, the waiting list option is automatically available on the booking form. No additional configuration is needed.
 
+### My class still shows 10/10 (full) even though students cancelled — why?
+
+Class capacity counts **active registrations** (bookings), not session attendance. When a client misses a session or cancels a session-level attendance, their booking is still active — they are still enrolled in the class. The capacity counter does not change.
+
+To release a spot so a new client can register, you must do one of:
+- **Cancel or delete the booking** — go to the booking detail and cancel or delete it. This removes the client from the class and frees a capacity slot.
+- **Transfer the client** to a different class using the Transfer booking flow.
+
+Simply marking a client as absent or cancelling a single session does not release capacity.
+
 ---
 
 ## Make-up session waitlist

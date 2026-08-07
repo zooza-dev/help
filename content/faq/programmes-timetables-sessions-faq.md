@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-26"
+last_converted: "2026-08-07"
 ---
 
 
@@ -374,6 +374,30 @@ If you have sessions that are set up as paid sessions and need to update their p
 4. Choose **Mark as paid** from the available actions.
 
 This is useful when you have configured sessions with a per-session fee and need to confirm payment for a batch at once, rather than opening each session individually.
+
+## Why does my class show more sessions than I can see (e.g. 44 sessions but only 40 appear)?
+
+Cancelled and unplanned sessions remain in the total session count even when they are not displayed in the default view. The total counter includes all session records — active and inactive.
+
+To find and clean up the extras:
+1. Go to the class → **Sessions** tab.
+2. Filter by status **Unplanned** (or **Cancelled**) to see only the sessions not being delivered.
+3. Select them and use **Bulk edit → Delete** to remove them permanently if they are not needed.
+
+After deletion, the total count will match the sessions you can see.
+
+## How do I cancel sessions on specific dates (as an instructor or admin)?
+
+To cancel individual sessions or a series of sessions:
+
+1. Go to the class → **Sessions** tab.
+2. Find the session(s) you want to cancel.
+3. For a single session: open the session detail → click **Cancel session**. Select whether to notify clients.
+4. For multiple sessions: use the checkboxes to select them → **Bulk edit** → **Cancel**.
+
+Cancelled sessions are removed from the client-facing calendar and no longer count toward attendance. Clients who were registered receive a notification if you choose to send one.
+
+If you need to block an instructor's availability for a period (e.g. holiday, illness), the most reliable approach is to cancel the affected sessions and optionally assign a substitute instructor for any sessions that should still run.
 
 ## Related
 
