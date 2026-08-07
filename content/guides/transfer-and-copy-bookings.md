@@ -108,6 +108,14 @@ If you do want to change the payment:
 
 You can also set the **Booking fee**, **First scheduled payment date**, and **Payment frequency** (select from available payment templates).
 
+> **Set the first scheduled payment date to the transfer date, not the start of the class.**
+>
+> A transfer carries the client's payment history with it, but the instalment schedule is rebuilt from the date you give it. If you set it back to the beginning of the group, Zooza works out which instalments are "missing" between then and now and creates them — so the client is billed a second time for months they already paid.
+>
+> Example: a client owes for September, October and November, pays 3 × €35, and you transfer them in early December. Start the new schedule in **December**. Their earlier payments are already recorded; nothing before the transfer date should be recreated.
+>
+> This applies to any transfer — between classes in one account, or between accounts in a network.
+
 #### Send notification
 
 - **Send confirmation email** — check this to send the client a confirmation email as if they had enrolled themselves via the website.

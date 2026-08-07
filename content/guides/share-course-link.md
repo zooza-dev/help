@@ -47,6 +47,22 @@ If you only have one widget, this step is skipped automatically.
 
 Generate a personalised registration link (e.g. with a referral parameter or a pre-filled discount code). This works the same as the previous custom-link feature.
 
+A custom link also works as a **private link**: it can point to a class that is **not** open for online booking, and anyone holding the link can still book it. Use this to fill a class quietly, to reopen a closed class for one family, or to invite a specific group before public registration starts.
+
+## Sharing a product
+
+Products have the same pair of buttons, in the same place:
+
+1. Go to **Products & Services → Products**.
+2. Open the product.
+3. Use **Open** or **Copy** at the top of the product detail.
+
+**Copy** gives you the product's own checkout link — send it by email, WhatsApp, or anywhere else. This is how you sell a gift voucher or an entry pass to someone who is not booking a class.
+
+> **There is no dynamic tag for a product link.** Tags such as `*|BOOKING_URL|*` produce a booking link for a class, never a product. Paste the copied product URL into the email body as plain text instead.
+
+When you paste a link into a message template, remember that dynamic tags need the asterisks on both sides — `*|FIRST_NAME|*` renders, `|FIRST_NAME|` does not.
+
 ### 4. Share by email
 
 Send the registration link directly to email addresses without leaving Zooza.

@@ -22,6 +22,10 @@ After you send auto-enrolment invitations, clients respond (or don't) from their
 
 Go to **Programmes → Auto-enrolment responses**, or navigate directly to `/#retention_responses`.
 
+You can also reach it from the dashboard: click the **Zooza logo** to open the Dashboard, find **Registrations**, then **Automatic continuation** on the right, and choose to view all responses.
+
+> **You are not emailed when a client responds.** This is deliberate — during an enrolment window the volume would flood admin inboxes. This page is the only place responses are collected, so check it during the period when invitations are out.
+
 ![Screenshot — auto enrolment responses](../../assets/images/auto-enrolment-responses-01.png)
 
 This page shows every client who received an auto-enrolment invitation, grouped with their response status, any note they left, and whether you have already acted on their response.

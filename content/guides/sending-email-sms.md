@@ -103,6 +103,20 @@ The procedure for sending emails and SMS is the same:
 
 > **Note:** To check each sent email, we recommend that you include your own email address.
 
+## Emailing a group the composer cannot target
+
+The **Target group** list in the composer is deliberately short. If the audience you want is not in it — everyone in lead collection, everyone in Monday classes, everyone on a waiting list — do not try to send to *All clients* and untick people. Send from the **Classes** list instead.
+
+1. Go to **Classes**.
+2. Filter the list down to what you want. The **Status** filter is the one that gets you lead collection; you can also filter by day, location, instructor or programme.
+3. Click **Email** in the action bar at the top of the page.
+
+Everyone in the filtered classes becomes the recipient list.
+
+Sending this way also exposes one filter the normal composer does not have: once you are in a class you can narrow to a subset of its bookings — for example only the people on the **waiting list**, rather than everyone enrolled.
+
+This is the practical answer to most "can I email just X?" questions. Classes can be filtered in ways bookings cannot, so reaching the audience through Classes is usually faster than looking for a matching target group.
+
 > **Attention!** Zooza does not function as a marketing communications system that allows clients to opt out of receiving marketing/promotional messages. It is also not used to obtain information about how many clients opened the promotional email or responded to links. The **Promotional Email / Promotional SMS** function is for client information only. If a client wants to cancel from promotional emails, you can do it based on their request:
 >
 > 1. In the **Clients** section, open the client account and click on **Notes and preferences**.
