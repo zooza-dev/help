@@ -198,6 +198,37 @@ The waiting list is fully automated. You can enable or disable it per programme.
 
 <!-- REVIEW: Confirm the exact setting name and location — referenced as being in programme make-up session settings. -->
 
+## A client has a valid make-up credit but no sessions are showing up as options — why?
+
+The **most common reason** is that the **cancellation sign-up deadline has passed** for every compatible session. Make-up sessions stop appearing as bookable options a set number of hours before the session starts (configured in **Settings → General → Time restriction in hours for offering a regular make-up session**). The credit is still valid — it just has no sessions in range right now.
+
+**What to check:**
+1. Are there sessions available more than [your time restriction] hours away? If not, the client needs to wait for a future session.
+2. Is the credit itself still active and not expired? Check the booking's Credits tab.
+3. Run **MATKO** (Settings → Tools → MATKO) for the exact blocking reason.
+
+**Admin workaround when a deadline-expired credit should still be used:** Manually change the client's attendance state on the missed session to "Did not attend", then change it back to "Cancelled". This regenerates a fresh make-up credit with a new creation date.
+
+## Does the client receive a confirmation email when they sign up for a make-up session?
+
+This depends on your **approval mode**:
+
+- **Manual approval mode** — the client signs up, but no email is sent at submission time. The client receives an email only **after the instructor approves the make-up request**. If the instructor declines, the client also receives an email with the reason.
+
+- **Auto-approval mode** — the client signs up and receives a **confirmation email immediately** on sign-up. No instructor action is required.
+
+To check or change your approval mode, go to **Programmes** → select the programme → **Settings** → **Make-up sessions** → look for the auto-approval setting.
+
+## A client can only see "Did not attend" for their session and not a Cancel option — what does that mean?
+
+The cancel option is only available **before the cancellation deadline**. If the deadline has passed, the client sees "Did not attend" (or a configured instructions text) instead of a Cancel button.
+
+**To diagnose:** Go to **Settings** → **General** → check the **Cancellation limit** setting (or **Settings → Programmes → Set a limit for cancelling a scheduled session**). If this is set to e.g. "24 hours before the session", clients cannot cancel sessions starting within 24 hours.
+
+**Options:**
+- Allow cancellations after the deadline (enable **Allow cancellations after the limit** in Settings → Programmes). Note: late cancellations record as "Did not attend" and do not generate a make-up credit.
+- Manually change the attendance state to "Cancelled" on behalf of the client if you want to grant them a make-up credit despite the late cancellation.
+
 ## How do I set a cancellation deadline for sessions?
 
 Go to **Settings** → **Programmes** and enable **Set a limit for cancelling a scheduled session**. You can choose between two limit types:

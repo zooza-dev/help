@@ -17,6 +17,18 @@ last_converted: "2026-08-07"
 
 # Programmes, Timetables and Sessions FAQ
 
+## I cannot find "Programmes" in my Zooza menu — I only see "Courses". Am I on the right screen?
+
+Yes. In some market versions of Zooza (including the Czech and Romanian market), the UI label **"Courses"** is used instead of **"Programmes"**. They refer to the same feature:
+
+| Help docs term | Zooza CZ/RON UI label |
+|---|---|
+| **Programmes** | Courses |
+| **Classes** (Groups) | Groups |
+| **Sessions** | Lessons |
+
+All instructions that say "go to Programmes" apply equally if your menu says "Courses." The settings, options, and flow are identical — only the label differs.
+
 ## What is the difference between programmes, timetables, and sessions?
 
 - **Programme (Programme)** — the top-level entity (e.g., "Beginners Swimming"). It holds pricing, settings, and automation rules.

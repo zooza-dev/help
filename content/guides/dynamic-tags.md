@@ -204,6 +204,14 @@ In **session reminder templates**, always use `EVENT_*` tags instead — they pu
 
 `EVENT_*` tags are only available in session reminder templates.
 
+### Session-context tags in manual sends
+
+Tags that pull session-specific data — `*|COURSE_PLACE|*`, `*|COURSE_TIME|*`, `*|COURSE_DATE_DAY|*`, `*|EVENT_DATE|*`, etc. — require an **automatic send triggered by a session event** (e.g. session reminder, booking confirmation). When you compose and send a message manually from the Communication tab without a session trigger, these tags have **no context** to pull from and will return blank.
+
+**If session-context tags are not populating in your manual send:**
+- Check whether you need the data in the message body or if you can reference it another way (e.g. include the session date in the subject line manually, or use `*|ORDER_SUMMARY|*` which includes session details).
+- If the email is intended to be automated (sent on a schedule or event), configure it as an automatic template rather than a manual send.
+
 ### QR_CODE tag returns blank or doesn't appear
 
 `*|QR_CODE|*` requires both **IBAN** and **SWIFT/BIC** to be set on the billing profile. Without these, the tag silently returns blank — the QR image is not rendered.
