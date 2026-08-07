@@ -131,40 +131,6 @@ If a client cancels a trial, the system will follow the configured automation. Y
 
 Yes. Tracking attendance is important because it triggers the trial-to-enrolment automation. When a instructor marks a trial attendee as "attended", it triggers the system to send the enrolment offer.
 
-## The trial booking shows only a date. How do I tell which time the client picked?
-
-Open the session in the **Calendar**.
-
-The trial booking records the trial **date**, not the specific session. When a class runs several trial slots on the same day — say 9:15, 10:35 and 11:45 — the booking itself will not tell you which one the client chose.
-
-1. Go to **Activities → Calendar**.
-2. Find that day's sessions for the class.
-3. Click the session tile. The attendance panel lists who is attending that specific session.
-
-A practical workaround while you are checking: add an internal note on the booking (`Trial time: 10:35`) so the next person does not have to open the calendar again.
-
-<!-- REVIEW: Observed and reported by a customer in conv 215475291948047 (2026-07-30) and not
-     contradicted. Confirm with the product team whether the trial booking is expected to store
-     the session reference, and remove this entry if it becomes visible on the booking. -->
-
-## After booking a trial, parents see every session in the programme. Can I hide the rest?
-
-Not currently.
-
-Once a trial is registered, Zooza links it to the whole **programme**, so the client's profile shows the programme's upcoming schedule under Programme Interest — not only the session they booked.
-
-**Sessions shown in form** does not change this. That setting limits what a parent can choose from *while booking*; it has no effect on what appears afterwards. Narrowing it to a two-week window still leaves the full schedule visible in the profile.
-
-What you can do to reduce the confusion:
-
-- Set the trial to a **single-session** type so the booking itself is unambiguous.
-- Keep **Sessions shown in form** short (a few sessions rather than a long date range) so the booking step stays simple.
-- Say in the programme description or the trial confirmation email which session the parent is booked into.
-
-<!-- REVIEW: Reported independently by customers in conv 215475214097506 and 215475291948047
-     (July 2026). Worth raising as a product gap — parents reading the full programme schedule
-     as "their" sessions generated repeated support contacts. -->
-
 ## Trials and blocks cause overbooking — what is happening?
 
 This is a known limitation when a class uses both trial sessions and blocks (sub-periods within a class) at the same time.

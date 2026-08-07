@@ -32,6 +32,20 @@ The notification panel on the right side of the app shows the most recent system
 
 To open the full history, click **Open in full view** at the top of the panel.
 
+### Turning off the notification sound
+
+New events — a new booking, a new payment — play a short sound. If it is going off all day, mute it in your **browser**, not in Zooza. There is no in-app setting for it, because the sound is played by the page like any other web audio.
+
+**Chrome / Edge:** click the icon to the left of the address bar → **Site settings** → find **Sound** → set it to **Block** (or **Mute site** directly from the tab's right-click menu).
+
+**Firefox:** right-click the Zooza tab → **Mute Tab**. For a permanent setting, use the padlock icon → **Connection settings** → autoplay/sound permissions.
+
+**Safari:** **Safari → Settings for This Website** → set **Auto-Play** and audio permissions, or click the speaker icon in the address bar to mute the tab.
+
+The setting is per site, so muting Zooza does not affect anything else you have open. The events themselves keep arriving in the sidebar — you just stop hearing them.
+
+> This is worth knowing before you go looking for a toggle in Zooza. Admins on a busy account often assume the sound is a notification preference; it is not, and there is nothing to switch off on our side.
+
 ---
 
 ## The System messages screen

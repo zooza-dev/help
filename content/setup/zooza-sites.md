@@ -69,24 +69,18 @@ The page will be generated automatically on our Zooza domain. If you are interes
 ### Templates
 
 
-The template you choose for your page has a predefined Zooza colour palette.
+Each template comes with a fixed Zooza colour palette. **You cannot define your own colours** — there is no custom colour picker, and no "custom colours and fonts" mode. Pick the template whose palette sits closest to your brand.
 
-> **Theming is limited.** Templates come with their own palettes and there is currently no reliable way to replace those colours with your own brand colours. If your brand depends on a specific colour, plan around the template palettes rather than expecting to override them — and talk to us before you promise a client an exact match.
->
-> If you need a genuinely branded booking page, ask support. Zooza can host a booking form and client portal styled to your brand on your own subdomain, pointed at our servers via a CNAME record. This is provided free as part of account setup, and it is the route we take when Sites cannot deliver the look a client needs.
+You can change the font from the available menu.
 
-<!-- REVIEW: This section previously stated "you can change this palette by changing 3 custom colors",
-     and that claim caused a support failure in July 2026. In conv 215475109642682 the assistant
-     repeated it four times ("switch to Custom Colors and Fonts"), while the customer worked
-     through Templates and Theme and reported no such option existed anywhere. Martin then
-     confirmed: "the Sites templates are pretty limited to be honest. At the moment they don't
-     support much theming like changing colours etc." — and the case was resolved by building a
-     custom-hosted page instead.
-     Settle this against the current build: either the 3-custom-colour control exists and needs a
-     precise path and screenshot, or it was removed and this section should say so plainly.
-     Until then the claim is softened so it cannot be asserted as fact. -->
+### If none of the palettes work for your brand
 
-You can also change the font from the available menu.
+Two options, both handled by us:
+
+- **Ask for a new palette.** We can add one. Tell support which colours you need and, more usefully, *what for* — a brand that has just launched, a franchise with mandated colours, a season you are building a campaign around. A palette added with a concrete case behind it is one we can reuse for others.
+- **Ask for a custom-hosted page.** If Sites cannot get you close enough, Zooza can host a booking form and client portal styled to your brand on your own subdomain, pointed at our servers with a CNAME record. This is free as part of account setup, and it is what we do when a client's brand cannot bend to a template.
+
+> Do not promise a client an exact colour match on a Sites page before checking the available palettes. The templates are deliberately limited, and this is the most common mismatch between what a Sites page looks like and what someone expected.
 
 ![The template you choose for your page has a predefined Zooza colour palette. However,...](../../assets/images/blocks-creation-14.png)
 
