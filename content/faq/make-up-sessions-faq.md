@@ -94,6 +94,27 @@ Yes. Go to **Settings** → **Make-up sessions** → **General Settings** and ch
 - **Default expiration of credits (in days)** — applies to all make-up credits from the date the credit is created (default: 90 days).
 - **Additional slots in classes** — extra capacity in sessions reserved specifically for make-up bookings (global setting; can be overridden per class).
 
+## How do I limit clients to a set number of make-ups per month?
+
+Use the **flexible replacement limit**, which is expressed as a ratio rather than a fixed monthly count — for example *2 make-up sessions per 10 sessions attended*.
+
+The ratio form is what makes it work across different subscription sizes. A client attending twice a week (roughly 8 sessions a month) and a client attending once a week are covered by the same rule without you configuring each one.
+
+Two things to know before you rely on it:
+
+- **Credits still get created for every eligible cancellation.** The limit governs how many can be used, not how many appear. A parent who missed five sessions may still see five credits in their profile.
+- **Admins can override a client's credit limits.** If you need to grant an extra make-up for a specific family, you can — it does not require changing the rule for everyone.
+
+> **Blocking self-service entirely.** If you want parents to ask you rather than book make-ups themselves, the practical workaround is to restrict make-ups to a billing period that contains no sessions. Parents then find nothing when they look, and you assign replacements manually. It is a workaround, not a designed feature — a dedicated setting for this was in development as of August 2026, so check the changelog before building a process around it.
+
+## Can I reserve a whole session just for make-ups or trials?
+
+No. There is no way to mark a session as available only for replacements or only for trial bookings.
+
+What you can control is capacity: reserve seats using **extra capacity** so make-ups and trials draw on those rather than on the seats you sell. See [Capacity vs extra capacity](../guides/capacity-and-extra-capacity.md).
+
+If you create a one-off class specifically to host make-ups, remember the 4-day rule — set its start date close to the session date or it will not appear as an option.
+
 ## Does "make-up credit validity" mean the client must attend by that date, or just book by that date?
 
 The validity window is the deadline for **booking** the make-up session — not for attending it.

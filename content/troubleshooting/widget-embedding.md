@@ -36,20 +36,6 @@ For initial setup instructions, see [Deploying Zooza on your website](../setup/d
 
 <!-- REVIEW: Exact Zooza script domain(s) to whitelist should be confirmed with the dev team. -->
 
-### Clients cannot log in at all from your website
-
-**Problem:** A client says the login code arrives but does not work, or the login screen does nothing. It is not a delivery problem — the code is fine.
-
-**Cause:** Your cookie banner is running in **opt-out** mode, meaning scripts are blocked until the visitor actively accepts. Zooza cannot function at all in that state, so login fails silently rather than showing an error.
-
-**Solution:**
-
-1. Ask the client to accept cookies on your site.
-2. **Have them refresh the page afterwards.** This step is the one that gets missed — accepting cookies does not retro-apply to a page that has already loaded, so the login still fails until the page is reloaded.
-3. If it keeps happening to different clients, the banner configuration is the problem, not the individual client. Have your web administrator mark the Zooza scripts as necessary/functional so they are not blocked in the first place.
-
-> Before assuming a login problem is email deliverability, check whether the client is trying to log in from your website or from Zooza directly. If it only fails on your site, look at the consent banner first. Zooza support can also confirm from the logs whether a login attempt was ever recorded for that email — if there is no attempt at all, the request never reached Zooza.
-
 ### WordPress plugin duplicate rendering
 
 **Problem:** The booking form, calendar, or another widget appears two or three times on the same page.

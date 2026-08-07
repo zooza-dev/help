@@ -36,6 +36,21 @@ As with the other extra fields, you must enter a custom name.
 
 ![Screenshot](../../assets/images/business-registration-01.png)
 
+### Whether clients see a checkbox depends on you
+
+- **Fields not mandatory** → the form shows a checkbox ("Register as company"). Business fields stay hidden until the client ticks it, so private clients never see them.
+- **Fields mandatory** → there is no checkbox. Every client is asked for company details.
+
+If you want the checkbox behaviour and are not getting it, one of the business fields is still set to mandatory.
+
+### The VAT field disappears on its own
+
+If the invoice profile used by the programme is **not registered for VAT**, Zooza hides the VAT field even when you have enabled it. There is no setting for this and nothing is broken — asking a client for a VAT number you cannot put on an invoice would only produce data you must ignore.
+
+To show the VAT field, the programme must use an invoice profile that is a VAT payer. See [Invoice profiles](../setup/invoice-profiles-and-bank-accounts.md).
+
+> Business fields that are enabled but have **no custom name** entered do not render on the form. If a field is missing and mandatory/VAT is not the reason, check that it has a name.
+
 Any booking that contains at least one of these fields filled in is flagged in the system as "Business Booking".
 
 ![Screenshot](../../assets/images/business-registration-02.png)

@@ -69,7 +69,24 @@ The page will be generated automatically on our Zooza domain. If you are interes
 ### Templates
 
 
-The template you choose for your page has a predefined Zooza colour palette. However, you can change this palette by changing 3 custom colors. Another change you can make is to change the font according to the available menu.
+The template you choose for your page has a predefined Zooza colour palette.
+
+> **Theming is limited.** Templates come with their own palettes and there is currently no reliable way to replace those colours with your own brand colours. If your brand depends on a specific colour, plan around the template palettes rather than expecting to override them — and talk to us before you promise a client an exact match.
+>
+> If you need a genuinely branded booking page, ask support. Zooza can host a booking form and client portal styled to your brand on your own subdomain, pointed at our servers via a CNAME record. This is provided free as part of account setup, and it is the route we take when Sites cannot deliver the look a client needs.
+
+<!-- REVIEW: This section previously stated "you can change this palette by changing 3 custom colors",
+     and that claim caused a support failure in July 2026. In conv 215475109642682 the assistant
+     repeated it four times ("switch to Custom Colors and Fonts"), while the customer worked
+     through Templates and Theme and reported no such option existed anywhere. Martin then
+     confirmed: "the Sites templates are pretty limited to be honest. At the moment they don't
+     support much theming like changing colours etc." — and the case was resolved by building a
+     custom-hosted page instead.
+     Settle this against the current build: either the 3-custom-colour control exists and needs a
+     precise path and screenshot, or it was removed and this section should say so plainly.
+     Until then the claim is softened so it cannot be asserted as fact. -->
+
+You can also change the font from the available menu.
 
 ![The template you choose for your page has a predefined Zooza colour palette. However,...](../../assets/images/blocks-creation-14.png)
 
