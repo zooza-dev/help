@@ -25,13 +25,17 @@ Two commercial arrangements. They differ in who the client is actually paying �
 | Who holds the Stripe account | You | Zooza |
 | Who the client pays | You | Zooza s.r.o. |
 | Who invoices you | Stripe, for its fees | Zooza, together with the system invoice |
-| **Zooza's commission** | **none** | **3.5% per transaction** |
+| **What you pay per transaction** | Stripe's own rates, **no Zooza commission** | **3.5%, all in** |
 | Payouts | Stripe pays you on its own schedule | Zooza pays out 1–2× per month |
 | Setup needed from you | Create a Stripe account | None |
 
 **Your own Stripe is the option we recommend.** Zooza takes no commission on it at all — you pay Stripe's own rates and nothing more. You also keep direct control of payouts, reporting and refunds, which matters on the day a client wants their money back quickly.
 
-**Stripe through Zooza exists for businesses that do not want their own Stripe account.** It works immediately with nothing to set up on your side, and it removes the Stripe Tax Invoice from your books — receiving invoices directly from Stripe can trigger monthly VAT filing, which is a real administrative cost for a small operation. You receive one domestic invoice from us instead. The trade-off is the 3.5%.
+**Stripe through Zooza exists for businesses that do not want their own Stripe account.** It works immediately with nothing to set up on your side, and it removes the Stripe Tax Invoice from your books — receiving invoices directly from Stripe can trigger monthly VAT filing, which is a real administrative cost for a small operation. You receive one domestic invoice from us instead.
+
+> **The 3.5% is everything.** It already covers Stripe's own processing fees — they are not charged on top. A transaction never costs you more than 3.5%, so you can quote that figure into your pricing and be done with it.
+>
+> Compare on total cost, not on the headline: Stripe's own rates are lower than 3.5%, which is why your own account works out cheaper at volume. The flat 3.5% buys you no Stripe account, no Stripe invoices, and one number to reason about.
 
 **What Stripe through Zooza requires:** payouts go only to a verified **legal entity in the EU**, never to a private account. Verification happens once, before the service is switched on. At higher volumes the 3.5% is negotiable, and payouts can be agreed more often than monthly so your cash flow is not held up.
 

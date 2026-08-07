@@ -73,6 +73,12 @@ This is where most per-programme form behaviour is configured.
 | **Display in catalogue** | Whether classes from this programme appear in the menu on your website. |
 | **Booking Options Shown on Website** | Choose what clients can book: Default (client chooses), Full programme only, Trials only, Blocks only, or Trials or blocks. |
 
+> **Priority orders programmes, not the classes inside them.** There is no setting that reorders the class list within a programme on the booking page — you cannot force it into day-of-week order, or put your most popular time first.
+>
+> What you can control is **which** classes appear, in the Class settings below.
+>
+> If the order matters to parents, put it in the names: "Monday 17:00", "Tuesday 18:00". Parents scan for their day rather than reading the list in sequence, so a clear name does more than the order would. It also survives you adding a class later, which a manual order would not.
+
 ### Multiple bookings (for twins / families)
 
 | Setting | Description |
