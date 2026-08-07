@@ -7,11 +7,12 @@ product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
 tags: ["billing", "booking", "client", "communication", "discount", "import", "invoice", "location", "loyalty", "onboarding", "payment", "programme", "role", "session", "transfer"]
+related_articles: ["email-payment-notifications", "csv-payment-import", "gocardless-direct-debit-mandates", "invoice-profiles-and-bank-accounts", "outstanding-amount"]
 status: "published"
 source_legacy_path: "legacy/0084_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-26"
+last_converted: "2026-08-07"
 ---
 
 # Payment Pairing for Bank Transfers & Direct Debit
@@ -174,7 +175,35 @@ Go to **Payments → Payments Received → AI Analytics** to see how the AI is p
 
 Filter by **Last 7 days**, **Last 30 days**, **Last 90 days**, or **All time**.
 
+## Reading the received-payments export
+
+**Sales & Payments → Received payments → Export** exports exactly what the current filter shows. The `Transaction type` column is the one that causes most confusion:
+
+| Value | Meaning |
+|---|---|
+| `Credit` | The payment was recorded **manually** in Zooza. |
+| `Credit via Transfer` | The payment arrived as a **bank transfer** and was paired. |
+| *(blank)* | A bank transaction Zooza **could not pair to any registration**. |
+
+Blank rows are expected. Once your bank account is linked, Zooza stores **every** transaction that reaches the account, including ones that have nothing to do with Zooza. They sit in the database unassigned and mean nothing until you act on them.
+
+To export only the payments that matter:
+
+1. Set the first filter to **From Bank**.
+2. Set **Status** to **Paired**.
+3. Export.
+
+For the unpaired ones, open **Payments → Received payments** filtered to status **New** (`#payments/inbound/list?payment_status=new`). Search for the client by name, pick the registration, and pair the payment — the result is identical to automatic pairing. Transactions unrelated to Zooza can be dismissed with **Ignore**.
+
+> Cash versus non-cash cannot be read from `Transaction type` alone, because the column describes how the record was created rather than how the client paid. Filter by **Payment method** before exporting if that is the split you need.
+
 ## Frequently Asked Questions
+
+### Does Zooza pair incoming bank payments automatically, or do I have to enter them by hand?
+
+Automatically, once the account is connected. There are three ways to get bank transactions into Zooza — [email notifications](../setup/email-payment-notifications.md) from your bank, [GoCardless](gocardless-direct-debit-mandates.md), or [CSV import](csv-payment-import.md) — and all three pair against the payment reference without manual entry. Manual pairing is only the fallback for payments that fail to match.
+
+If pairing worked before and has stopped, start with [Payments stopped pairing, or land in the wrong Zooza account](../setup/email-payment-notifications.md#payments-stopped-pairing-or-land-in-the-wrong-zooza-account).
 
 ### What is a payment reference?
 

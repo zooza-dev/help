@@ -7,11 +7,12 @@ product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
 tags: ["payments", "bank", "payment-matching", "email-notifications", "IBAN", "bank-transfer"]
+related_articles: ["payment-pairing", "invoice-profiles-and-bank-accounts", "gocardless-faq", "billing-and-invoicing"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-08-07"
 ---
 
 
@@ -58,6 +59,29 @@ Set the recipient email address for payment notifications to the Zooza-generated
 From this point, every incoming payment triggers an email to Zooza. Zooza reads the notification and automatically matches the payment to the correct booking using the payment reference.
 
 > **Important:** Your bank will send payment notification emails to the Zooza address instead of your personal inbox. You will no longer receive individual payment notification emails yourself. Other bank emails (statements, login confirmations) are unaffected.
+
+## Troubleshooting
+
+### Payments stopped pairing, or land in the wrong Zooza account
+
+The most common cause is that your bank is still sending notifications to an **old shared address** (for example `platby.vub@zooza.app`) rather than the dedicated address generated for your billing profile in Step 2.
+
+The shared address cannot tell accounts apart. It identifies the target account by IBAN, so if the **same IBAN is registered in more than one Zooza account** — common in networks and franchises, or after a branch migration — Zooza pairs the payment to the first matching IBAN it finds. Payments then appear in the other account instead of yours.
+
+To fix it:
+
+1. Go to **Settings → Billing** (or straight to `#payments/inbound/setup`).
+2. Click your **IBAN**.
+3. Select your bank and click **Set**. Zooza shows the dedicated address for this billing profile.
+4. In internet banking, replace the old shared address with this one.
+
+Payments that arrived before the change stay in the account they were paired to. Open that account's **Payments → Received payments**, export the list, and pair them manually in the correct account.
+
+> The shared-address method is being retired. If you set up email pairing before mid-2026, switch to a dedicated address even if pairing currently works.
+
+### Nothing arrives after changing the address
+
+Check that the address is saved in Zooza, not only in your bank — a bank-side change alone does nothing. If **Settings → Billing** shows no generated address for the profile, the bank was not selected or the IBAN was not saved.
 
 ## My bank is not in the list
 
