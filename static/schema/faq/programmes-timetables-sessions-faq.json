@@ -6,6 +6,14 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "I cannot find \"Programmes\" in my Zooza menu — I only see \"Courses\". Am I on the right screen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In some market versions of Zooza (including the Czech and Romanian market), the UI label \"Courses\" is used instead of \"Programmes\". They refer to the same feature:\n\nAll instructions that say \"go to Programmes\" apply equally if your menu says \"Courses.\" The settings, options, and flow are identical — only the label differs."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What is the difference between programmes, timetables, and sessions?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -274,6 +282,38 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Auto-enrollment (retention) sends existing clients a pre-filled booking invitation before the new term opens to the public. Clients receive a link they can use to complete the enrolment with one click — no need to fill in all their details again.\n\nSetup steps:\n\n1. Make sure the next term's programme and classes already exist before activating auto-enrollment.\n2. Open the current programme (the one clients are enrolled in now).\n3. Go to Settings → Auto-enrollment tile → click Edit.\n4. Choose the offer type:\n   - Suggest classes — for group classes. Clients are shown a list of available classes for the next term that match their age range and location preferences.\n   - Duplicate current class — for individual or 1-to-1 sessions. The system offers to create a copy of the client's current class at a time they choose.\n5. Set how many days before the current term ends clients should receive the invitation.\n6. Define which billing period and programmes to include in the offer (you can offer a different programme than the one they are currently in).\n7. At the class level, go to the class → Settings tile → enable Include in auto-enrolment for each class you want available in the offer. This must be done for each class individually.\n\nTracking responses:\n\nAfter invitations go out, monitor who accepted, declined, or has not yet responded in the Auto-enrolment responses page or by filtering the Bookings list.\n\nNote: If a class you added after enabling auto-enrollment does not appear in the offer, check that its \"Include in auto-enrolment\" checkbox is enabled — this is the most common reason a class is missing.\n\nSee Auto-enrollment for the full setup guide and Auto-enrolment responses for tracking and follow-up."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I add a one-off extra session for a specific client?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you need to give a single client an extra session that is not part of their regular schedule, there are two approaches depending on your setup:\n\nOption A — Add a session to an existing class (simplest)\nIf the client already has a booking in the class, you can add a one-off session and mark the client as attending via the session's attendance view. This is the most straightforward option if you do not need separate pricing for this extra session.\n\n1. Go to the class and open the Sessions list.\n2. Find or create the session for the extra date (add a one-off session if needed — use the \"Add session\" option on the class detail).\n3. Open the session's attendance view and mark the client as attending.\n\nOption B — Create a private hidden class\nIf you need a separate class for billing or tracking purposes:\n\n1. Create a new class in the programme (or in a dedicated \"individual sessions\" programme).\n2. Disable online registration on the class so it does not appear publicly.\n3. Add the client as a booking manually.\n4. Add the session date.\n\nOption A is the recommended approach for one-off exceptions. Option B is better when you regularly run private sessions with separate pricing per client."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I bulk-mark sessions as paid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you have sessions that are set up as paid sessions and need to update their paid status in bulk:\n\n1. Go to Calendar or the Sessions list for the relevant class.\n2. Select the sessions you want to update (use the checkboxes).\n3. Click the bulk action button (the action toolbar at the top of the list).\n4. Choose Mark as paid from the available actions.\n\nThis is useful when you have configured sessions with a per-session fee and need to confirm payment for a batch at once, rather than opening each session individually."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my class show more sessions than I can see (e.g. 44 sessions but only 40 appear)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cancelled and unplanned sessions remain in the total session count even when they are not displayed in the default view. The total counter includes all session records — active and inactive.\n\nTo find and clean up the extras:\n1. Go to the class → Sessions tab.\n2. Filter by status Unplanned (or Cancelled) to see only the sessions not being delivered.\n3. Select them and use Bulk edit → Delete to remove them permanently if they are not needed.\n\nAfter deletion, the total count will match the sessions you can see."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I cancel sessions on specific dates (as an instructor or admin)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To cancel individual sessions or a series of sessions:\n\n1. Go to the class → Sessions tab.\n2. Find the session(s) you want to cancel.\n3. For a single session: open the session detail → click Cancel session. Select whether to notify clients.\n4. For multiple sessions: use the checkboxes to select them → Bulk edit → Cancel.\n\nCancelled sessions are removed from the client-facing calendar and no longer count toward attendance. Clients who were registered receive a notification if you choose to send one.\n\nIf you need to block an instructor's availability for a period (e.g. holiday, illness), the most reliable approach is to cancel the affected sessions and optionally assign a substitute instructor for any sessions that should still run."
       }
     }
   ]

@@ -121,7 +121,15 @@
       "name": "Is the first month's payment reduced if a client joins mid-month?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "This depends on your aliquot setting:\n\n- Aliquot ON — the first payment is automatically reduced based on the number of remaining sessions in the month. The client pays a pro-rata amount.\n- Aliquot OFF — the client pays the full monthly amount regardless of when they join.\n\nYou can also use the \"Include Initial Full Scheduled Payment\" setting to control whether the client pays the pro-rata amount only, or the pro-rata amount plus one full period upfront."
+        "text": "This depends on your aliquot setting:\n\n- Aliquot ON — the first payment is automatically reduced based on the number of remaining sessions in the month. The client pays a pro-rata amount.\n- Aliquot OFF — the client pays the full monthly amount regardless of when they join.\n\nYou can also use the \"Include Initial Full Scheduled Payment\" setting to control whether the client pays the pro-rata amount only, or the pro-rata amount plus one full period upfront.\n\n---"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A client sees \"No groups available\" on the auto-continuation screen — what does it mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This message means the target groups (classes) are not enabled for auto-enrolment — it does not mean no groups exist in your account.\n\nFix: Go to each class you want to appear on the continuation screen → Settings tile → enable Include in auto-enrolment. This must be done for every class you add after the programme-level auto-enrolment was configured.\n\nImportant: Do not create a manual booking as a workaround. Creating a new manual booking in this situation will duplicate the client's registration — they will have two active bookings instead of one. The correct fix is always to enable the group in auto-enrolment settings."
       }
     }
   ]

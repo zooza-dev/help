@@ -89,7 +89,15 @@
       "name": "What happens when I update the consent text?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zooza creates a new consent version. The updated text applies to new bookings from that point on. Clients who accepted the previous version retain their old consent record — they are not automatically prompted to re-accept. If re-acceptance is legally required, you must contact clients separately."
+        "text": "It depends on whether you tick the Require clients to consent again checkbox when saving:\n\n- Checkbox unticked (default): Zooza updates the consent text in place. Existing client consent records are unchanged and clients are not re-prompted. Use this for corrections that do not change the meaning.\n- Checkbox ticked: After a confirmation step, Zooza mints a new consent version. Clients who accepted the previous wording will be prompted to consent again. This action is irreversible — once confirmed, the version counter increments.\n\nNew bookings always see the current consent text regardless of which option you chose."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I require existing clients to re-accept a consent after updating it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When editing the consent in Settings → Consents & Agreements, tick the Require clients to consent again checkbox before saving. Zooza will show a confirmation dialog. On confirm, a new version is minted and clients who accepted the previous wording are queued for re-consent.\n\nImportant: This is irreversible. Use it only for material changes to the consent wording — not for minor corrections like typo fixes or link updates."
       }
     },
     {

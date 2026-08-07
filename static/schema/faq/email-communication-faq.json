@@ -89,7 +89,7 @@
       "name": "Session reminders didn't arrive — how do I check what happened?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Session reminders (day-before notifications) are processed in a queue. If clients report they didn't receive a reminder, check the notification log before assuming a bug:\n\n1. Go to Reports → Session Notifications (or navigate directly to /#reports/event_notifications).\n2. The log shows each notification batch: when it was created, how many were processed, how many failed, and the notification type.\n3. Find the relevant date and check the status.\n\nCommon reasons reminders don't arrive:\n- Client opted out — the client (or admin) turned off session reminders on that booking. Check the booking → Options tab → Reminder toggle.\n- Processing delay — reminders are batched. On busy days processing can take longer than usual. Check the log — if the status is \"Processed\", the email was sent from Zooza's side.\n- Session was already cancelled — cancelled sessions suppress reminders automatically.\n- Client's email filtered it — if the log shows \"Processed\" but the client didn't receive it, check spam/junk. Zooza cannot override recipient-side filtering.\n- No sessions that day — verify the session date is correct and the session is not in Draft or Cancelled status.\n\nSK: Ak notifikácie neodišli, skontrolujte log na stránke Reports → Session Notifications. Ak je stav \"Processed\", email bol odoslaný zo strany Zooza — problém je na strane klienta (spam, vypnuté notifikácie)."
+        "text": "Session reminders (day-before notifications) are processed in a queue. If clients report they didn't receive a reminder, check the notification log before assuming a bug:\n\n1. Go to Reports → Session Notifications (or navigate directly to /#reports/event_notifications).\n2. The log shows each notification batch: when it was created, how many were processed, how many failed, and the notification type.\n3. Find the relevant date and check the status.\n\nCommon reasons reminders don't arrive:\n- Client opted out (booking level) — the client (or admin) turned off session reminders on that booking. Check the booking → Options tab → Reminder toggle.\n- Client opted out (profile level) — each client has notification preferences in their profile that apply across all their bookings. If one specific client isn't receiving reminders while everyone else in the same class is, open the client's profile and check their notification settings. This is separate from the per-booking toggle.\n- Processing delay — reminders are batched. On busy days processing can take longer than usual. Check the log — if the status is \"Processed\", the email was sent from Zooza's side.\n- Session was already cancelled — cancelled sessions suppress reminders automatically.\n- Client's email filtered it — if the log shows \"Processed\" but the client didn't receive it, check spam/junk. Zooza cannot override recipient-side filtering.\n- No sessions that day — verify the session date is correct and the session is not in Draft or Cancelled status.\n\nSK: Ak notifikácie neodišli, skontrolujte log na stránke Reports → Session Notifications. Ak je stav \"Processed\", email bol odoslaný zo strany Zooza — problém je na strane klienta (spam, vypnuté notifikácie)."
       }
     },
     {
@@ -186,6 +186,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "- System templates (e.g., payment confirmation, login code) are built into Zooza and cannot be edited. They appear under the \"System communications\" section in the template selector.\n- User templates are custom templates you create. They appear under the \"User templates\" section in the template selector.\n\nThese are listed in separate dropdown sections. If you cannot find your custom template, make sure you are looking under User templates, not under system or saved communication templates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will the session reminder email be resent if I reschedule a session to a different date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. If a session reminder email was already sent for the original date, Zooza will not automatically resend it when you move the session to a different date or time.\n\nThe reminder system fires once when the scheduled send time arrives. If the session is rescheduled after that point, no new reminder is generated.\n\nWorkaround: Send a manual notification from the session's Communication tab to inform clients of the new date/time. You can also create and send a custom message via Communication → Send message targeted at the attendees of that session."
       }
     },
     {

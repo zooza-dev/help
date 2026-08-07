@@ -126,10 +126,42 @@
     },
     {
       "@type": "Question",
+      "name": "The widget shows \"available\" but my class should be full — why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If the booking widget shows a class as available even though you believe it is fully booked, the reason is always in the class or group settings. Check the following:\n\n1. Class capacity — open the class and check the Capacity field. If capacity is set higher than the number of current registrations, the class is not technically full even if it looks that way on your side.\n\n2. Trial registrations count toward capacity — trial bookings occupy a spot in the class just like regular bookings. If you have several open trials that have not been converted or lost, they are holding capacity.\n\n3. Trial settings allow registration past capacity — some configurations allow new trials even when the class is at capacity. Check the class settings to see whether trial registration is allowed beyond the capacity limit.\n\n4. Group or segment capacity — if your class uses blocks or groups with separate per-group limits, the overall class may still appear available even if one group is full. Check the individual group/block capacity settings inside the class.\n\nThere is no single switch that controls this — the reason is always in the class or group configuration. Open the class and go through the settings above to find which one explains the discrepancy.\n\nNote: The widget availability display (Do not show / Current status / Text information) only controls what clients see — it does not affect whether they can actually register. Even if the widget shows \"available\", registration will fail at the point of submission if the class is genuinely full.\n\n---"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "The widget shows the class as available, but registration fails at the final step — why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The widget and the registration form run separate checks. The widget shows the current availability snapshot; the actual registration runs a fresh validation at the moment of submission. These can differ.\n\nCommon causes:\n\n1. Class became full between loading and submitting — another client completed their registration in the same window. The widget cached the \"available\" state before the last spot was taken. Refresh the page to see the updated availability.\n2. Age or eligibility restriction — the class has a minimum or maximum age restriction set. The widget does not always surface this upfront; it appears as an error on submission when the child's age falls outside the allowed range. Check Class Settings → Restrictions.\n3. Registration deadline passed — some classes have an online registration cut-off (a date after which new registrations are blocked). If the deadline passed between the client viewing the widget and submitting the form, registration fails.\n4. Payment configuration error — if the programme's payment settings are incomplete (e.g. no price set, a required payment method missing), the form may load but fail on the payment step. Open the programme under Programme Settings → Price and Payment and verify the configuration.\n5. Widget embed outdated — if the embed code on your website is old (from a previous version of Zooza's widget), it may load the form but fail to complete the registration. Update the embed code from Team & Settings → Publish and replace it on your website.\n\nIf the error message is visible on screen, note the exact wording — it tells you which check failed. If no message appears and the form just resets, check the browser console for JavaScript errors, which can indicate a conflict with your website's scripts.\n\n---"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Some programmes are not showing in the booking widget on my website — why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If the widget shows fewer programmes than expected, check the URL you are using to embed the widget on your website.\n\nA common cause is a hardcoded place or location parameter in the embed URL. If your embed URL contains something like ?place=12 or &pid=12_0, the widget will only display programmes at that specific location and hide all others — even if those other programmes exist in Zooza.\n\nTo fix: Remove the place/pid parameter from the embed URL so the widget shows programmes from all locations. If you want to keep separate widgets per location, create separate widget embed codes in Team & Settings → Publish.\n\n---"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "The registration form on my website is not loading — clients see text but no form",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There are two common causes:\n\n### The class has no sessions scheduled\n\nA booking form will not display the registration widget if the class it belongs to has no sessions in the system. Without sessions, there is nothing to sign up for.\n\nFix: Go to Programmes → class → Sessions and check that sessions have been generated. If the class is new or you added it recently without generating a schedule, add sessions manually or via the schedule generator. Once sessions exist, the registration form will load.\n\n### The text on the page is plain text, not the Zooza widget embed code\n\nSometimes what looks like a registration form on a website is actually a block of text that someone typed or pasted. The Zooza widget only works if the actual embed code (a <script> tag or WordPress shortcode) is in the page source.\n\nCheck:\n1. Right-click the area where the form should appear and select Inspect (or View Page Source).\n2. Look for a <script> tag containing zooza.online or a [zooza ...] WordPress shortcode. If it is not there, the widget embed code is missing.\n\nFix: Go to Team & Settings → Publish in Zooza, copy the correct embed code for your widget type, and paste it into the page editor on your website. Refer to Widget Embedding Troubleshooting for step-by-step instructions."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Can I translate or customise the text labels on the booking widget?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some fields can be relabelled directly in the programme settings — go to Programmes → programme → Online Booking → Edit → Customizing Booking Form.\n\nFor more advanced customisation (translations, styling, CSS, JavaScript options), refer to the Zooza developer documentation at docs.zooza.online. The docs cover:\n\n- Custom translations via window.ZOOZA = { translations: { 'key': 'value' } }\n- How to find translation keys using print_debug: true mode\n- CSS and styling options for the embedded and WordPress plugin versions\n- Filtering programmes and other embed parameters\n\nWidget styling is handled on your website side (by your webmaster or developer) — it is not configurable from within the Zooza application itself."
+        "text": "Some fields can be relabelled directly in the programme settings — go to Programmes → programme → Online Booking → Edit → Customizing Booking Form.\n\nFor more advanced customisation (translations, styling, CSS, JavaScript options), refer to the Zooza developer documentation at docs.zooza.online. The docs cover:\n\n- Custom translations via window.ZOOZA = { translations: { 'key': 'value' } }\n- How to find translation keys using print_debug: true mode\n- CSS and styling options for the embedded and WordPress plugin versions\n- Filtering programmes and other embed parameters\n\nThe window.ZOOZA configuration object supports two properties: translations and print_debug. It does not support a style property or any layout/appearance overrides — those are applied using CSS on your website. If you need to change a visual aspect of the widget (e.g. dropdown height, font size, padding), add CSS to your website stylesheet rather than window.ZOOZA.\n\nWidget styling is handled on your website side (by your webmaster or developer) — it is not configurable from within the Zooza application itself."
       }
     }
   ]

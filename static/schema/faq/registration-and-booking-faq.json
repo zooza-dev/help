@@ -86,10 +86,26 @@
     },
     {
       "@type": "Question",
+      "name": "How do I resend the registration confirmation email to a client?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1. Open the booking detail for the registration.\n2. Click the Communication tab or scroll to the communication section.\n3. Click Send email.\n4. Select the appropriate email template — usually Registration confirmation or a similar template.\n5. Click Send.\n\nThe email is sent immediately to the client's address on the booking. You can use this to re-send any transactional email tied to a booking, not just the initial confirmation."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Can I search for and restore deleted bookings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Deleted bookings are kept in Trash for 30 days and can be restored with a single click.\n\n1. Go to Settings → Tools → Trash.\n2. Filter by Type → Registration to narrow the list.\n3. Find the booking and click Restore.\n\nSee Recover deleted sessions, classes, and registrations for the full process, including bulk restore."
+        "text": "Yes. Deleted bookings are kept in Trash for 30 days and can be restored with a single click."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does the basket/checkout summary show only the registration fee and not the full course price?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is intentional. When a client registers (including when registering multiple children in one basket), the checkout summary shows the registration fee (booking fee) — the amount due immediately at the point of sign-up. The full course price is not shown in the basket because it is collected later through payment instalments.\n\nThe registration fee is a one-time charge set on the programme. The remaining course price is paid according to the payment plan (weekly, monthly, or a lump sum at a later date), depending on how your programme is configured.\n\nIf you do not want to charge a registration fee at all, go to Programmes → programme → Settings → Price and Payment and set the booking fee to 0. The basket will then show €0 as the immediate payment.\n\n1. Go to Settings → Tools → Trash.\n2. Filter by Type → Registration to narrow the list.\n3. Find the booking and click Restore.\n\nSee Recover deleted sessions, classes, and registrations for the full process, including bulk restore."
       }
     },
     {

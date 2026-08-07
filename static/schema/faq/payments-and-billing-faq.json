@@ -41,7 +41,7 @@
       "name": "What does a negative balance mean on a booking?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The balance shows the difference between what the client should pay and what they actually paid.\n\n- 0 = fully paid.\n- Negative amount = payment was not completed or failed. The client needs to finish payment via their Client Profile.\n\nA negative balance does not necessarily mean \"overpaid\" — it means there is an outstanding amount."
+        "text": "In Zooza, the balance shows what the client still owes (positive) or what they have overpaid (negative).\n\n- Positive balance (e.g. €50) — the client owes money. The outstanding amount has not been paid.\n- 0 — fully paid.\n- Negative balance (e.g. −€30) — the client has credit. They paid more than they owed, or a refund or manual credit was applied. You may owe them a refund, or the credit can be left on the account to offset future invoices.\n\nImportant: A negative balance means the client has credit, not that they owe money. This is the opposite of what many people intuitively assume. If you see −€30, the client is €30 ahead, not €30 in arrears."
       }
     },
     {
@@ -58,6 +58,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "If you have a non-zero value in Settings → Payments → Number of days until payment is due, your bookings will now enter Awaiting payment for that number of days before becoming Unpaid.\n\nBefore May 2026, this setting only affected bookings with a payment schedule (instalments). From May 2026, it applies to all bookings with an outstanding balance.\n\nIf you want bookings to go straight to Unpaid (the original behaviour), set the field to 0."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the \"tolerance period\" (or grace period) for payments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The tolerance period is the same as the \"Awaiting payment\" window described above. The field controlling it is called Number of days until payment is due in Settings → Payments.\n\nTwo important clarifications:\n\n- It is a grace window, not a due-date shift. Setting 14 days means a booking stays in \"Awaiting payment\" for 14 days before Zooza marks it as overdue (\"Unpaid\"). It does not change the scheduled due dates on a payment plan — those are set independently per instalment.\n- It does not postpone instalment collection. If a client has a payment plan with a fixed due date, that due date is unaffected by the tolerance period setting. The tolerance period only controls when the status changes from \"Awaiting payment\" to \"Unpaid\"."
       }
     },
     {
@@ -450,6 +458,22 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes — an explicit invoice profile set on a booking is sticky. Moving the booking to another class or programme does not clear it. If a moved booking invoices under an unexpected entity, check whether it holds its own override in the Invoicing card and reset it to inherit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my client's payment plan start from their original registration date instead of today?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Payment plans in Zooza are tied to the date the client first registered, not the date the plan was manually created or modified. This is intentional: the plan reflects the client's full payment history for the booking.\n\nIf the start date is incorrect for your purposes, you can adjust individual payments manually. Go to the booking detail, open the Payment plan tab, and edit the due dates on the relevant scheduled payments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does \"Ignored\" mean on an inbound payment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An Ignored inbound payment is one that Zooza received from the bank but deliberately did not process. This happens in two situations:\n\n1. Duplicate detection (deduplication) — The payment notification arrived more than once (for example, the bank resent the same notification). Zooza's deduplication agent recognises that it has already processed an identical payment (same amount, same reference, same date) and marks subsequent copies as Ignored to avoid double-matching.\n2. Manual ignore — An admin explicitly marked the payment as Ignored. This is typically done for payments that arrived in error, need to be handled outside Zooza, or belong to a different system.\n\nAn Ignored payment is not lost — it stays in Payments → Received payments with an Ignored status and is visible to admins. If an inbound payment was incorrectly marked as Ignored (for example, by a misconfigured AI rule), you can review and reprocess it.\n\nTo investigate why a payment was ignored: go to Payments → Received payments, find the payment, and check its status details. Also review Payments → Received payments → AI Rules & Filters to confirm no rule is excluding this payment type."
       }
     }
   ]

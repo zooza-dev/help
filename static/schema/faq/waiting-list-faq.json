@@ -6,42 +6,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How does the waiting list work?",
+      "name": "Zooza has two different waiting lists — which one applies?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "When a class is full, parents can still submit a booking. Their booking is placed on a waiting list. You receive a notification, and you can manually approve the booking if a space becomes available. The system does not auto-enrol from the waiting list."
+        "text": "Zooza has two completely separate waiting-list systems. They work differently and are configured separately:\n\n---"
       }
     },
     {
       "@type": "Question",
-      "name": "Will parents see that a class is full before they start registering?",
+      "name": "Class capacity waitlist",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The booking form shows a \"class full\" indicator upfront. However, parents can still proceed with the form and submit a waiting list request at the bottom. Some parents may not scroll down to see this option — if this is an issue, you can share feedback with Zooza about the form design."
+        "text": "### How does the class capacity waitlist work?\n\nWhen a class is full, parents can still submit a booking. Their booking is placed on a waiting list. You receive a notification, and you can manually approve the booking if a space becomes available. The system does not auto-enrol from the waiting list — every approval is manual.\n\n### Will parents see that a class is full before they start registering?\n\nYes. The booking form shows a \"class full\" indicator upfront. However, parents can still proceed with the form and submit a waiting list request at the bottom. Some parents may not scroll down to see this option.\n\n### How do I manage waiting list entries?\n\nGo to Bookings and filter by status Waitlist. From there you can:\n\n- Approve a waiting list entry (if a spot has opened up).\n- Move the person to a different class with availability.\n- Contact the parent to offer alternatives.\n\n### Is the class capacity waitlist enabled by default?\n\nYes. When a class reaches full capacity, the waiting list option is automatically available on the booking form. No additional configuration is needed.\n\n### My class still shows 10/10 (full) even though students cancelled — why?\n\nClass capacity counts active registrations (bookings), not session attendance. When a client misses a session or cancels a session-level attendance, their booking is still active — they are still enrolled in the class. The capacity counter does not change.\n\nTo release a spot so a new client can register, you must do one of:\n- Cancel or delete the booking — go to the booking detail and cancel or delete it. This removes the client from the class and frees a capacity slot.\n- Transfer the client to a different class using the Transfer booking flow.\n\nSimply marking a client as absent or cancelling a single session does not release capacity.\n\n---"
       }
     },
     {
       "@type": "Question",
-      "name": "How do I manage waiting list entries?",
+      "name": "Make-up session waitlist",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Go to Bookings and filter by waiting list status. From there you can:\n\n- Approve a waiting list entry (if a spot has opened up).\n- Move the person to a different class with availability.\n- Contact the parent to offer alternatives."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is the waiting list enabled by default?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. When a class reaches full capacity, the waiting list option is automatically available on the booking form. No additional configuration is needed."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is there a waiting list for replacement (make-up) sessions?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, but it is a separate system from the booking waiting list. Make-up session have their own queue. When all available replacement slots for a session are full, clients can join the queue for one or more sessions. When a spot opens up, the client receives a notification with a confirmation link. Only after the client clicks the link is the replacement booking confirmed.\n\nThis is a fully automated process. To enable or disable the replacement waiting list, go to the programme settings and open the replacement (make-up) session settings. For example: Programmes → select a programme → Settings → Make-up sessions → Make-up sessions waitlist. \n\nWhen the waitlist is disabled, clients only see sessions that currently have a free spot."
+        "text": "### How does the make-up session waitlist work?\n\nThe make-up waitlist is for clients who already hold a make-up credit and want to book a specific session that is currently full. When all extra-capacity slots for that session are taken, clients can join the queue.\n\nWhen a spot opens up:\n- All clients on the waitlist for that session are emailed simultaneously with a confirmation link.\n- The first client to click the link secures the spot.\n- Clients who did not click in time remain on the waitlist and may receive future notifications.\n\nThis process is fully automatic — there is no admin action required.\n\n### How do I enable the make-up session waitlist?\n\nGo to Programmes → select a programme → Settings → Make-up sessions → enable Make-up sessions waitlist.\n\nWhen the waitlist is disabled, clients only see sessions that currently have a free spot and cannot queue for full sessions.\n\n### Where can I see who is on the make-up waitlist?\n\nThe make-up session waitlist for a specific session is visible in the session's attendance detail. When a client joins the queue, they appear in the attendees list with a waitlist status."
       }
     }
   ]

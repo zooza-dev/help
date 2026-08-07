@@ -38,6 +38,14 @@
     },
     {
       "@type": "Question",
+      "name": "What is the difference between Zooza AI and the chat button in the Zooza app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "These are two different AI tools with different capabilities:\n\nThe Intercom chat cannot see your account. If you ask it \"who hasn't paid?\" or \"what classes does client X have?\", it cannot look that up — it only knows what is in the help documentation. For account-specific questions, use Zooza AI (the Claude or ChatGPT connector)."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "The connection is not working. What should I do?",
       "acceptedAnswer": {
         "@type": "Answer",

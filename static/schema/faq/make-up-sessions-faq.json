@@ -118,6 +118,30 @@
     },
     {
       "@type": "Question",
+      "name": "A client has a valid make-up credit but no sessions are showing up as options — why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most common reason is that the cancellation sign-up deadline has passed for every compatible session. Make-up sessions stop appearing as bookable options a set number of hours before the session starts (configured in Settings → General → Time restriction in hours for offering a regular make-up session). The credit is still valid — it just has no sessions in range right now.\n\nWhat to check:\n1. Are there sessions available more than [your time restriction] hours away? If not, the client needs to wait for a future session.\n2. Is the credit itself still active and not expired? Check the booking's Credits tab.\n3. Run MATKO (Settings → Tools → MATKO) for the exact blocking reason.\n\nAdmin workaround when a deadline-expired credit should still be used: Manually change the client's attendance state on the missed session to \"Did not attend\", then change it back to \"Cancelled\". This regenerates a fresh make-up credit with a new creation date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the client receive a confirmation email when they sign up for a make-up session?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This depends on your approval mode:\n\n- Manual approval mode — the client signs up, but no email is sent at submission time. The client receives an email only after the instructor approves the make-up request. If the instructor declines, the client also receives an email with the reason.\n\n- Auto-approval mode — the client signs up and receives a confirmation email immediately on sign-up. No instructor action is required.\n\nTo check or change your approval mode, go to Programmes → select the programme → Settings → Make-up sessions → look for the auto-approval setting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A client can only see \"Did not attend\" for their session and not a Cancel option — what does that mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The cancel option is only available before the cancellation deadline. If the deadline has passed, the client sees \"Did not attend\" (or a configured instructions text) instead of a Cancel button.\n\nTo diagnose: Go to Settings → General → check the Cancellation limit setting (or Settings → Programmes → Set a limit for cancelling a scheduled session). If this is set to e.g. \"24 hours before the session\", clients cannot cancel sessions starting within 24 hours.\n\nOptions:\n- Allow cancellations after the deadline (enable Allow cancellations after the limit in Settings → Programmes). Note: late cancellations record as \"Did not attend\" and do not generate a make-up credit.\n- Manually change the attendance state to \"Cancelled\" on behalf of the client if you want to grant them a make-up credit despite the late cancellation."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How do I set a cancellation deadline for sessions?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -226,6 +250,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Every session in a registration has a detailed log of every action — who marked attendance, when, and what was changed. To access it:\n\n1. Open the registration (booking) detail.\n2. Go to the Attendance tab (Dochádza).\n3. Find the session in question.\n4. Each session shows a log of changes — who created the make-up credit, who used it, and when.\n\nThis is the most reliable way to resolve disputes. The log shows the full audit trail and cannot be edited.\n\nTip for clients: Direct clients to their Client Profile → open the registration → Attendance tab — they can see their own attendance and make-up history there."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a client get in a queue (waitlist) for a specific make-up session?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. When a client selects a preferred session for their make-up and that session is at full extra capacity, Zooza places the client in a queue for that session. If a spot opens up (e.g., another make-up booking is cancelled), the client moves up the queue automatically.\n\nClients who are in the queue for a make-up session see the session listed in their profile with a \"waiting\" status. They do not need to check back manually — the system notifies them if they are confirmed.\n\nAs an admin, you can see the make-up queue in the session detail view under the attendees list."
       }
     },
     {

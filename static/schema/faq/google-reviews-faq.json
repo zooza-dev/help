@@ -22,6 +22,14 @@
     },
     {
       "@type": "Question",
+      "name": "When does Zooza send the Google review request email?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The review request is sent automatically after a session is marked as attended (the instructor records the client as having attended). For the request to send, all of the following must be true:\n\n1. The Reviews module is enabled on your account.\n2. The place (location) is linked to a verified Google Business Profile in Zooza.\n3. The client has an active email address (not bounced, not unsubscribed from marketing).\n4. The client has not been asked for a review in the past 12 months.\n5. The client has not already left a matched Google review.\n6. The client has not given NPS feedback.\n\nIf the email did not arrive after attendance was recorded, run through this checklist. The most common causes are a missing place link or the 12-month rule."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Why didn't a client get asked for a review?",
       "acceptedAnswer": {
         "@type": "Answer",
