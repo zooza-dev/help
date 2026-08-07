@@ -75,6 +75,7 @@ Each rule defines the discount for a specific child threshold. You can add up to
 Click **+ Add Rule**. A rule form opens with the first available child number pre-selected.
 
 For each rule, set:
+- **Name** — an optional label for this rule (e.g. "2nd child discount"). Useful when you have multiple rules and want to identify them at a glance.
 - **From child** — which child number this tier starts at (2nd, 3rd, 4th, or 5th)
 - **Discount type** — percentage or fixed amount
 - **Discount value** — the amount to deduct

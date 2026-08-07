@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-12"
+last_converted: "2026-08-07"
 ---
 
 # Calendar
@@ -106,6 +106,39 @@ The make-up sessions management view shows all pending and completed make-up ses
 ![Make-up Sessions list](../../assets/images/reference/cls-calendar-make-up-sessions.png)
 
 This view provides a centralized list of make-up sessions across all programmes and classes, allowing admins to track, approve, and manage make-up sessions.
+
+> **Note:** Make-up sessions are also accessible under **Reports & Insights → Reports → Sessions → Make-up sessions**.
+
+## Printable Calendar (PDF Export)
+
+> **Permission required:** Owner role
+
+The **Print version** control on the calendar (owner-only) opens a print dialog where you choose layouts and locations before downloading a PDF.
+
+### Layouts
+
+Select one or more layouts. All selected layouts are combined into a single PDF, in the order you pick them.
+
+| Layout | What it shows |
+|---|---|
+| **Week per room** | One section per room, sessions arranged across the week. Ideal for multi-room venues. |
+| **Board** | Board-style weekly overview — all sessions across the week in a compact grid. |
+| **Per day** | One section per day, with all sessions for that day listed under it. |
+| **Compact** | Condensed, text-heavy layout for printing on limited paper or sharing digitally. |
+
+### Location and room scope
+
+After choosing layouts, select which locations and rooms to include. By default, the selection matches the location filter you had active on the calendar. You can widen or narrow it before downloading.
+
+- Tick a **location** to include all its rooms.
+- Tick individual **rooms** to include only those rooms from that location.
+- Roomless locations appear as a single selectable item.
+
+Your layout and scope choice is remembered per user and company, so the dialog reopens with your last selection.
+
+### Generating the PDF
+
+Click **Download** in the dialog. Zooza generates a single PDF containing all selected layouts for the current week. A "Generating PDF…" notice appears while the server renders it.
 
 ## Related
 

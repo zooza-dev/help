@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-04-06"
+last_converted: "2026-08-07"
 ---
 
 # Bookings
@@ -103,6 +103,7 @@ Available statuses depend on whether the booking uses a payment plan with a down
 | **Send SMS** | Send an SMS to filtered/selected clients. |
 | **Export** | Export the bookings list. |
 | **Transfer to network** | Bulk-transfer selected bookings to another company in the network. See [Bulk Network Transfer](../guides/bulk-network-transfer.md). |
+| **Operations** | Bulk-set or bulk-remove the retention flag for all registrations matching the current filters. Includes a dry-run preview before applying. See [Retention](../setup/retention.md#manually-adjusting-retention). |
 | **Customize tile** | Opens the tile editor — choose which fields appear on each booking card. See below. |
 
 ### Customize Tile
@@ -112,6 +113,19 @@ Click **Customize tile** to enter edit mode. A widget bar appears above a live p
 The layout is saved per user — each team member can configure their own view independently.
 
 See [Customizing the booking tile](../guides/booking-tile-customization.md) for the full widget list and tips.
+
+### Editing notes inline
+
+Booking cards with a note widget visible show a pencil icon next to each note field. Click the pencil to open an inline edit modal — no need to open the full booking detail.
+
+| Note field | Who sees it |
+|---|---|
+| **Company note** | Internal admin note, visible to all admins |
+| **Internal note** | Personal note per user, shared across all their registrations |
+| **Customer note** | The note the client submitted during booking (read-only from the client's side) |
+| **Public note** | Visible to the client in their profile |
+
+Note fields only appear on the booking card if they are added via **Customize tile**.
 
 ## Booking Detail
 

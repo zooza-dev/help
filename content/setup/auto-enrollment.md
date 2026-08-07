@@ -76,6 +76,8 @@ If you have class ccourses and would like to offer existing clients the option t
 
 Attention! Only programmes with an age restriction filled in under *Extra Fields* will be included in the offer.
 
+> **Age source:** The age filter can draw the date of birth from the standard **Date of birth** extra field if it is configured on your account. If the date-of-birth extra field is active, Zooza uses it automatically to calculate the child's age — you do not need a separate age field.
+
 1. Distance (set the maximum distance in km from the location where the client is currently enrolled)
  ![Distance (set the maximum distance in km from the location where the client is...](../../assets/images/auto-enrollment-09.png)
 

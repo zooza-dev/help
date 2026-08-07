@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-04-09"
+last_converted: "2026-08-07"
 ---
 
 # Retention
@@ -85,6 +85,25 @@ Yes. Retention triggers on both admin-initiated and client-initiated cancellatio
 ---
 
 > **SK:** Retencia je nastavenie na úrovni kurzu. Keď je trial stratený alebo registrácia zrušená, klient dostane odkaz na opätovné prihlásenie. Konfigurácia: **Kurzy → Nastavenia → Retencia → Upraviť** — zadáte počet dní (predvolene 30) a voliteľnú poznámku. Retencia sa líši od Loyalty programu (ten odmieňa aktívnych klientov) a od trial automatizácie (tá riadi priebeh trialu, nie to, čo príde po jeho strate).
+
+## Manually adjusting retention
+
+The automated retention cron runs based on the programme settings you define. When you need to set or remove the retention flag manually — for example, to correct a cohort the cron missed, or to trigger retention early for a group of clients — use the **Operations** button on the Bookings list.
+
+**How to bulk-adjust retention:**
+
+1. Go to **Clients → Bookings**.
+2. Use the filters to narrow the list to the registrations you want to affect (e.g. by programme, class, status).
+3. Click **Operations**.
+4. Choose **Set in retention** or **Remove from retention**.
+5. A dry-run preview shows how many registrations will be affected. Review the count before confirming.
+6. Choose whether to send the retention notification email:
+   - **Don't notify** — flag only, no email sent.
+   - **Notify those not yet notified** — sends to clients who have not yet received a retention email.
+   - **Notify all** — sends to every registration in the selection regardless of prior notifications.
+7. Confirm to apply.
+
+> **Note:** The Operations button applies to **all registrations matching the current filters**, not just the registrations visible on screen. Check your filters carefully before confirming.
 
 ## Related
 

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0069_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-06-01"
+last_converted: "2026-08-07"
 ---
 
 
@@ -122,9 +122,19 @@ The table shows:
 
 ## Consent versioning
 
-Each time you make a significant change to the consent text, Zooza creates a new version. The version number and effective date are stored with each client's consent record. This provides an audit trail for GDPR compliance.
+Each time you make a significant change to the consent text, Zooza can create a new version. The version number and effective date are stored with each client's consent record. This provides an audit trail for GDPR compliance.
 
-If you update the consent text and need clients to re-accept it, you will need to contact them separately — Zooza does not automatically prompt existing clients to re-consent when a new version is published.
+### Minor correction vs. material change
+
+When you save an edited consent, you choose which type of change this is:
+
+- **Minor correction (default)** — leave the **Require clients to consent again** checkbox unticked. Zooza updates the consent text in place. Existing client consent records are not affected and clients are not re-prompted. Use this for typo fixes, formatting, or link updates that do not change the meaning.
+
+- **Material change** — tick **Require clients to consent again**. Zooza asks for a confirmation before saving. On confirmation, a new consent version is minted and clients who accepted the previous wording will be prompted to consent again.
+
+> **Note:** Minting a new version is irreversible. Once confirmed, the version counter increments and existing acceptance records reference the superseded version.
+
+The "Require clients to consent again" checkbox only appears when editing an existing consent — not when creating a new one.
 
 ## Related
 

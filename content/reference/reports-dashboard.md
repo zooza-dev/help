@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-05-13"
-related_articles: ["sessions-list", "payments-dashboard"]
+last_converted: "2026-08-07"
+related_articles: ["sessions-list", "payments-dashboard", "recording-an-administrative-refund"]
 ---
 
 # Reports
@@ -92,6 +92,7 @@ A donut chart visualizes payment status with the following categories:
 | **Insights and Trends** | Booking and payment trends over time (see [Payments Reference](payments-dashboard.md#insights-and-trends)). |
 | **Payments by programme** | Income breakdown per programme (see [Payments Reference](payments-dashboard.md#payments-by-programme)). |
 | **Direct debit export** | Export direct debit data (see [Payments Reference](payments-dashboard.md#direct-debit-export)). |
+| **Refunds** | Date-filterable list of all refunds, exportable to XLSX. See [Refunds report](#refunds-report) below. |
 
 ## Bookings
 
@@ -213,37 +214,90 @@ A log of automated session notification emails sent to clients.
 
 The dashboard card shows the latest date with processed and failed counts.
 
-## Disrupted Sessions Report
+## Refunds Report
 
 > **Permission required:** Owner role
 
-> **Navigation:** Go to **Reports & Insights** → **Reports** → **Disrupted Sessions**.
+> **Navigation:** Go to **Payments** → **Reports** → **Refunds**.
 
-Shows which clients were affected by rescheduled, substituted, or cancelled sessions — one row per (booking × disrupted session). Use it to answer questions like: which clients had the most disruptions this month, did a specific instructor's substitutions repeatedly affect the same clients, or which clients need to be notified about a batch of cancellations.
+A date-filterable list of all refunds — the outbound mirror of the received-payments list. Use it for monthly reconciliation and accounting: "how much did we refund in June, and to whom?"
 
 ### Filters
 
 | Filter | Description |
 |---|---|
-| `Date range` | The period to report on. |
-| `Programme` / `Class` | Narrow to a specific programme or class. |
+| `From` / `To` | Date range filter on the refund value date. |
+
+### Report columns
+
+Always visible:
+
+| Column | Description |
+|---|---|
+| `Date` | Value date and posting date of the refund. |
+| `Amount` | Refund amount (always shown as a negative value, e.g. −€30). |
+| `Currency` | Payment currency. |
+| `Client` | Client name and email linked to the refund. |
+| `Reference` | Booking or order the refund relates to. |
+| `Note` | Admin note attached to the refund (if any). |
+| `Status` | Processing status (e.g. Pending, Completed). |
+
+Additional columns visible on **Export** only (blank for older or manually-recorded refunds):
+
+| Column | Description |
+|---|---|
+| `Payment method` | Original payment method (card, bank transfer, etc.). |
+| `Refund type` | Full or partial. |
+| `Source` | Gateway-initiated or administrative. |
+| `Provider refund ID` | Reference from the payment gateway (e.g. Stripe). |
+| `Issued by` | Admin who issued the refund. |
+
+### Export
+
+Click **Export** to download the full column set as XLSX. The export follows the same download mechanism as the Inbound payments export.
+
+> **Note:** Older refunds recorded manually (before the refund gateway flow was introduced) appear in the on-screen list but some of the enrichment columns will be blank. This is expected — every refund is included; only the gateway metadata is missing for historical entries.
+
+---
+
+## Disrupted Sessions Report
+
+> **Permission required:** Owner role
+
+> **Navigation:** Go to **Reports & Insights** → **Reports** → **Sessions** → **Rescheduled**, **Substituted**, or **Cancelled**.
+
+Shows which clients were affected by rescheduled, substituted, or cancelled sessions — one row per (booking × disrupted session). Use it to answer questions like "which clients had their May sessions rescheduled?" or to export a contact list after a batch of cancellations.
+
+The three views (Rescheduled, Substituted, Cancelled) share the same layout and filters; each is accessed from the **Sessions** group in the Reports sidebar.
+
+> **Shortcut from Calendar:** The Calendar action toolbar also has direct **Make-up sessions**, **Rescheduled**, and **Substituted** buttons to jump to the corresponding report.
+
+### Filters
+
+| Filter | Description |
+|---|---|
+| `Date range` | The period to report on (applies to the disrupted session date). |
+| `Programme` | Narrow to a specific programme. |
+| `Class` | Narrow to a specific class. |
 | `Instructor` | Filter by the instructor originally assigned to the session. |
 | `Location` | Filter by venue. |
 | `Billing period` | Align with a billing period. |
-| `Type` | **Rescheduled**, **Substituted**, or **Cancelled** — or any combination. |
+| `Client` | Search by client name or email. |
+| `Day` | Filter by day of week. |
 
 ### Report columns
 
 | Column | Description |
 |---|---|
-| `Client` | Client name and booking number. |
-| `Session` | Original session date, time, and class. |
-| `Disruption type` | Rescheduled / Substituted / Cancelled. |
-| `Disruption date` | When the change was made. |
+| `Date` | Session date (rescheduled/cancelled date). For rescheduled sessions, the original date is shown as a subtitle. For substituted sessions, the original and substitute instructor are shown. |
+| `Programme / Class` | Programme name and class name (both clickable links). |
+| `Attendee` | The person who attended (may differ from the account holder if the booking is for a child). |
+| `Client (Buyer)` | The account holder (booking owner), with name and email. |
+| `Attendance` | The recorded attendance state for that session (attended, no-show, cancelled, etc.). |
 
 ### Export
 
-Click **Export** to download the filtered result as XLSX (owner only, same 5 000-row cap as the Sessions export).
+Click **Export** to download the filtered result as XLSX.
 
 ---
 

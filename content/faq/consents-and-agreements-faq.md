@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-08-07"
 ---
 
 
@@ -110,7 +110,18 @@ Consent revocation is not currently done through the booking form. If a client r
 
 ## What happens when I update the consent text?
 
-Zooza creates a new consent version. The updated text applies to new bookings from that point on. Clients who accepted the previous version retain their old consent record — they are not automatically prompted to re-accept. If re-acceptance is legally required, you must contact clients separately.
+It depends on whether you tick the **Require clients to consent again** checkbox when saving:
+
+- **Checkbox unticked (default):** Zooza updates the consent text in place. Existing client consent records are unchanged and clients are not re-prompted. Use this for corrections that do not change the meaning.
+- **Checkbox ticked:** After a confirmation step, Zooza mints a new consent version. Clients who accepted the previous wording will be prompted to consent again. This action is irreversible — once confirmed, the version counter increments.
+
+New bookings always see the current consent text regardless of which option you chose.
+
+## How do I require existing clients to re-accept a consent after updating it?
+
+When editing the consent in **Settings → Consents & Agreements**, tick the **Require clients to consent again** checkbox before saving. Zooza will show a confirmation dialog. On confirm, a new version is minted and clients who accepted the previous wording are queued for re-consent.
+
+> **Important:** This is irreversible. Use it only for material changes to the consent wording — not for minor corrections like typo fixes or link updates.
 
 ## Can I add multiple consents?
 

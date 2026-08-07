@@ -25,7 +25,9 @@ For example, blocks can be used for:
 
 ## Creating blocks
 
-Blocks are created when creating sessions in a class, where you decide whether to create a new block or insert  sessions into an existing block... This flexibility allows you to manage programmes efficiently and at the same time offer your clients better orientation and choice. For detailed instructions on creating sessions, see [Edit sessions in programmes](edit-sessions-in-programmes.md).
+Blocks are created when creating sessions in a class, where you decide whether to create a new block or insert  sessions into an existing block...
+
+> **Billing period date range:** When creating a class and selecting a billing period, you can specify a custom start and end date range instead of using the full billing period. This is useful for classes that start or end mid-term — for example, a class that begins in week 3 of a quarterly billing period. This flexibility allows you to manage programmes efficiently and at the same time offer your clients better orientation and choice. For detailed instructions on creating sessions, see [Edit sessions in programmes](edit-sessions-in-programmes.md).
 
 ![Screenshot](../../assets/images/blocks-creation-01.png)
 
