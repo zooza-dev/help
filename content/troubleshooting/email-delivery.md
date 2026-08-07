@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-08-07"
 ---
 
 # Email Delivery Troubleshooting
@@ -30,6 +30,7 @@ If the email does not appear in the log, the system did not send it. Common reas
 
 - The registration was created manually or copied. Copied and manual registrations do **not** trigger automatic confirmation emails. You must send the email manually from the **Communication** tab.
 - The notification template is not assigned to the programme. Check **Programme Settings** > **Online Registration** > **Notifications**.
+- **Programme type mismatch.** Each automated email template is tied to a specific programme type (e.g. a template for "Regular enrolment" will not fire for a "Trial" booking, and vice versa). If your programme type does not match the template's expected booking type, no email fires. Check the programme type under **Programme Settings** and verify the template is configured for that type.
 
 ## Step 2: Verify the recipient email address
 

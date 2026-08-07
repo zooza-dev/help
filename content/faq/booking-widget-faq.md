@@ -177,6 +177,22 @@ There is no single switch that controls this — the reason is always in the cla
 
 ---
 
+## The widget shows the class as available, but registration fails at the final step — why?
+
+The widget and the registration form run separate checks. The widget shows the *current* availability snapshot; the actual registration runs a fresh validation at the moment of submission. These can differ.
+
+Common causes:
+
+1. **Class became full between loading and submitting** — another client completed their registration in the same window. The widget cached the "available" state before the last spot was taken. Refresh the page to see the updated availability.
+2. **Age or eligibility restriction** — the class has a minimum or maximum age restriction set. The widget does not always surface this upfront; it appears as an error on submission when the child's age falls outside the allowed range. Check **Class Settings → Restrictions**.
+3. **Registration deadline passed** — some classes have an online registration cut-off (a date after which new registrations are blocked). If the deadline passed between the client viewing the widget and submitting the form, registration fails.
+4. **Payment configuration error** — if the programme's payment settings are incomplete (e.g. no price set, a required payment method missing), the form may load but fail on the payment step. Open the programme under **Programme Settings → Price and Payment** and verify the configuration.
+5. **Widget embed outdated** — if the embed code on your website is old (from a previous version of Zooza's widget), it may load the form but fail to complete the registration. Update the embed code from **Team & Settings → Publish** and replace it on your website.
+
+If the error message is visible on screen, note the exact wording — it tells you which check failed. If no message appears and the form just resets, check the browser console for JavaScript errors, which can indicate a conflict with your website's scripts.
+
+---
+
 ## Some programmes are not showing in the booking widget on my website — why?
 
 If the widget shows fewer programmes than expected, check the URL you are using to embed the widget on your website.

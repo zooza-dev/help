@@ -138,6 +138,16 @@ If the payment is not related to Zooza (rent, utilities, salary, etc.):
 
 ---
 
+## Monitoring for payments that need your attention
+
+Payments in **New** status do not send you a notification — you need to check the queue yourself. Zooza does not email or alert you when an unmatched payment arrives.
+
+**Recommended workflow:** Check **Payments → Inbound → List** once per day and filter for status **New**. On a typical day the list should be empty — everything matches automatically. When something appears, it means a payment arrived that Zooza could not pair on its own.
+
+The count badge on the **Inbound** menu item shows the number of outstanding New payments. If you see a number there, there are payments waiting for your action.
+
+> **Tip:** If you regularly see the same payer in manual review (e.g. a corporate account paying by bank transfer without a reference number), write a **Business rule** or **Pairing rule** under **Payments → Inbound → AI Rules & Filters** so Zooza knows how to handle it automatically next time.
+
 ## Ignore filters
 
 Filters let you automatically ignore recurring non-Zooza payments. When a filter matches an incoming payment, it is ignored immediately without any manual action.

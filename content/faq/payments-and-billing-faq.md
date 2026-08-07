@@ -79,6 +79,15 @@ Before May 2026, this setting only affected bookings with a payment schedule (in
 
 If you want bookings to go straight to **Unpaid** (the original behaviour), set the field to **0**.
 
+## What is the "tolerance period" (or grace period) for payments?
+
+The tolerance period is the same as the **"Awaiting payment" window** described above. The field controlling it is called **Number of days until payment is due** in **Settings → Payments**.
+
+Two important clarifications:
+
+- **It is a grace window, not a due-date shift.** Setting 14 days means a booking stays in "Awaiting payment" for 14 days before Zooza marks it as overdue ("Unpaid"). It does **not** change the scheduled due dates on a payment plan — those are set independently per instalment.
+- **It does not postpone instalment collection.** If a client has a payment plan with a fixed due date, that due date is unaffected by the tolerance period setting. The tolerance period only controls when the *status* changes from "Awaiting payment" to "Unpaid".
+
 ## Does "Awaiting payment" status automatically send reminder emails to clients?
 
 No. The **Awaiting payment** status is for your internal tracking only — it does not trigger any emails.
@@ -582,6 +591,17 @@ Yes — an explicit invoice profile set on a booking is sticky. Moving the booki
 Payment plans in Zooza are tied to the date the client first registered, not the date the plan was manually created or modified. This is intentional: the plan reflects the client's full payment history for the booking.
 
 If the start date is incorrect for your purposes, you can adjust individual payments manually. Go to the booking detail, open the **Payment plan** tab, and edit the due dates on the relevant scheduled payments.
+
+## What does "Ignored" mean on an inbound payment?
+
+An **Ignored** inbound payment is one that Zooza received from the bank but deliberately did not process. This happens in two situations:
+
+1. **Duplicate detection (deduplication)** — The payment notification arrived more than once (for example, the bank resent the same notification). Zooza's deduplication agent recognises that it has already processed an identical payment (same amount, same reference, same date) and marks subsequent copies as Ignored to avoid double-matching.
+2. **Manual ignore** — An admin explicitly marked the payment as Ignored. This is typically done for payments that arrived in error, need to be handled outside Zooza, or belong to a different system.
+
+An Ignored payment is not lost — it stays in **Payments → Received payments** with an Ignored status and is visible to admins. If an inbound payment was incorrectly marked as Ignored (for example, by a misconfigured AI rule), you can review and reprocess it.
+
+To investigate why a payment was ignored: go to **Payments → Received payments**, find the payment, and check its status details. Also review **Payments → Received payments → AI Rules & Filters** to confirm no rule is excluding this payment type.
 
 ## Related
 

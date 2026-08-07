@@ -404,6 +404,19 @@ This is a rare issue. If a client reports that they confirmed a replacement but 
 
 ---
 
+## Known limitations
+
+### No filtered report for make-up sessions by location
+
+There is no built-in report that shows all make-up sessions used at a specific location (place/venue). The reports available are:
+
+- The **Calendar → Make-up session** report shows how many replacements your clients used at your own branches versus other (cross-company) branches. It does not break down by individual location.
+- The **Registration detail → Credits** section shows all credits and whether each was used, but shows one registration at a time, not an aggregate by location.
+
+If you need a per-location breakdown of make-up session usage, the closest option is to export the attendance data and filter it manually. Contact Zooza support for guidance on data exports if this is a recurring reporting need.
+
+---
+
 ## Related guides
 
 - [MATKO — Diagnose why a make-up session is not showing](../troubleshooting/matko-replacement-diagnostic.md) — run a precise diagnostic when a specific session is not visible to a client

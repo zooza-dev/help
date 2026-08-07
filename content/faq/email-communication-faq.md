@@ -95,7 +95,8 @@ Session reminders (day-before notifications) are processed in a queue. If client
 3. Find the relevant date and check the status.
 
 **Common reasons reminders don't arrive:**
-- **Client opted out** — the client (or admin) turned off session reminders on that booking. Check the booking → **Options** tab → Reminder toggle.
+- **Client opted out (booking level)** — the client (or admin) turned off session reminders on that booking. Check the booking → **Options** tab → Reminder toggle.
+- **Client opted out (profile level)** — each client has notification preferences in their profile that apply across all their bookings. If one specific client isn't receiving reminders while everyone else in the same class is, open the client's profile and check their notification settings. This is separate from the per-booking toggle.
 - **Processing delay** — reminders are batched. On busy days processing can take longer than usual. Check the log — if the status is "Processed", the email was sent from Zooza's side.
 - **Session was already cancelled** — cancelled sessions suppress reminders automatically.
 - **Client's email filtered it** — if the log shows "Processed" but the client didn't receive it, check spam/junk. Zooza cannot override recipient-side filtering.
