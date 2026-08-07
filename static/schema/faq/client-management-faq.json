@@ -118,6 +118,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can I customise which panels appear on the client detail?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The client detail screen has a fixed layout — there is no way to hide panels you do not use, reorder them, or choose which fields appear. What you see is what everyone in your account sees.\n\nThis is worth knowing because the Bookings list is customisable, and the two get confused. On the bookings list you can add and remove tiles from the cards. The client detail has no equivalent.\n\nIf a specific panel is in your way, tell support which one and why — that is the kind of feedback that shapes the screen, and there is no workaround to offer in the meantime."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Why can't I find \"move\" or \"delete\" actions on the Clients page?",
       "acceptedAnswer": {
         "@type": "Answer",
