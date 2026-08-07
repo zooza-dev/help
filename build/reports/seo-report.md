@@ -1,14 +1,14 @@
 # SEO & AI Readiness Report
 
-**Generated:** 2026-07-27
+**Generated:** 2026-08-07
 
 ## Summary
 
-- **Total docs checked:** 252
+- **Total docs checked:** 257
 - **Docs with errors:** 0
-- **Docs with warnings only:** 51
+- **Docs with warnings only:** 54
 - **Total errors:** 0
-- **Total warnings:** 164
+- **Total warnings:** 167
 - **Overall:** PASS
 
 ## Checks performed
@@ -35,6 +35,9 @@
 
 ### `content/business-models/children-group-activities-subscription.md`
 - WARN: description too short (39 chars, min 50)
+
+### `content/faq/waiting-list-faq.md`
+- WARN: description too long (164 chars, max 160)
 
 ### `content/glossary/index.md`
 - WARN: description missing from frontmatter (auto-extracted: `This glossary explains the terms used across Zooza. Some terms differ depending …`)
@@ -73,6 +76,9 @@
 
 ### `content/guides/bulk-email-send-tracking.md`
 - WARN: description missing from frontmatter (auto-extracted: `When you send an email to a large group of clients, Zooza processes it as a mess…`)
+
+### `content/guides/capacity-and-extra-capacity.md`
+- WARN: description too long (163 chars, max 160)
 
 ### `content/guides/customizing-widgets.md`
 - WARN: description missing from frontmatter (auto-extracted: `Zooza offers an easy way to customize the widgets you have deployed on your webs…`)
@@ -147,6 +153,9 @@
 
 ### `content/guides/message-templates.md`
 - WARN: description too long (211 chars, max 160)
+
+### `content/guides/outstanding-amount.md`
+- WARN: description too long (162 chars, max 160)
 
 ### `content/guides/payment-templates-creation.md`
 - WARN: auto-extracted description too short (28 chars, min 50)

@@ -94,6 +94,22 @@
     },
     {
       "@type": "Question",
+      "name": "The trial booking shows only a date. How do I tell which time the client picked?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open the session in the Calendar.\n\nThe trial booking records the trial date, not the specific session. When a class runs several trial slots on the same day — say 9:15, 10:35 and 11:45 — the booking itself will not tell you which one the client chose.\n\n1. Go to Activities → Calendar.\n2. Find that day's sessions for the class.\n3. Click the session tile. The attendance panel lists who is attending that specific session.\n\nA practical workaround while you are checking: add an internal note on the booking (Trial time: 10:35) so the next person does not have to open the calendar again."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "After booking a trial, parents see every session in the programme. Can I hide the rest?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not currently.\n\nOnce a trial is registered, Zooza links it to the whole programme, so the client's profile shows the programme's upcoming schedule under Programme Interest — not only the session they booked.\n\nSessions shown in form does not change this. That setting limits what a parent can choose from while booking; it has no effect on what appears afterwards. Narrowing it to a two-week window still leaves the full schedule visible in the profile.\n\nWhat you can do to reduce the confusion:\n\n- Set the trial to a single-session type so the booking itself is unambiguous.\n- Keep Sessions shown in form short (a few sessions rather than a long date range) so the booking step stays simple.\n- Say in the programme description or the trial confirmation email which session the parent is booked into."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Trials and blocks cause overbooking — what is happening?",
       "acceptedAnswer": {
         "@type": "Answer",

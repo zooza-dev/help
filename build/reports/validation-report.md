@@ -4,15 +4,14 @@
 
 ## Summary
 
-- **Total docs checked:** 252
-- **Total issues found:** 92
+- **Total docs checked:** 257
+- **Total issues found:** 91
 - **Overall status:** FAIL
 
 ## 1. Required Frontmatter
 
-### Docs with missing frontmatter fields (3)
+### Docs with missing frontmatter fields (2)
 
-- `content/faq/programmes.md` — missing: source_language, needs_screenshot_replacement
 - `content/glossary/index.md` — missing: source_language, needs_screenshot_replacement
 - `content/glossary/terminology-review.md` — missing: source_language, needs_screenshot_replacement
 

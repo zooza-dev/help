@@ -14,6 +14,22 @@
     },
     {
       "@type": "Question",
+      "name": "I cannot find the Skip Holidays checkbox anywhere",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is in Advanced session planning. Basic planning does not offer it.\n\nWhen you create a class, the Sessions heading has two tabs — Basic and Advanced:\n\n1. Open the class → Sessions → Add sessions.\n2. Switch to the Advanced tab.\n3. Click Create sessions and set the sessions to repeat.\n4. The Skip Holidays and Skip School Breaks checkboxes appear once repetition is defined.\n\nAdvanced planning is also where you cover schedules that vary within one class — for example Mondays with one instructor for 45 minutes and Tuesdays with another for 60 minutes.\n\nNothing has been removed. The option was never in the class settings screen itself; it belongs to session generation, which is why it appears only at the point where dates are produced."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I apply holiday skipping to sessions I already created?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Holiday rules run once, at generation time, and there is no way to re-apply them afterwards. This is deliberate — activities for very young children often run straight through the holidays, so Zooza never removes dates on its own.\n\nTo clean up sessions that already landed on holidays:\n\n1. Go to Activities → Sessions.\n2. Filter to the dates that fall on the holiday period.\n3. Select them and either bulk delete (if they were created by mistake) or bulk move them to replacement dates.\n\nBulk moving is usually the better option for a class that is already sold, because deleting sessions can change what clients owe."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How do I set holiday regions per location?",
       "acceptedAnswer": {
         "@type": "Answer",
