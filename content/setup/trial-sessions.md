@@ -112,6 +112,10 @@ Example: A class runs from January 6 to March 30 with sessions every Monday and 
 
 ![Example: A class runs from January 6 to March 30 with sessions every Monday and...](../../assets/images/trial-lessons-10.png)
 
+## Seat availability display for multi-person trial bookings
+
+When a client registers multiple attendees for a trial session, the trial-date picker shows **"N seats available"** on each date tile, drawn from the real-time remaining capacity for that session. The persons form is then automatically capped to the lower of the available seats or the programme's maximum-persons-per-booking limit — the **Add Person** button becomes unavailable once that cap is reached. This prevents over-booking a trial session before the client submits the form.
+
 ## Session Capacity
 
 
@@ -255,3 +259,16 @@ If you and your client have agreed that you will register them, you can easily d
 Warning! After enrolling in the programme, the client will receive a new variable symbol. However, for better clarity, the trial and regular booking remain linked, allowing you to easily check them.
 
 ![Warning! After enrolling in the programme, the client will receive a new variable...](../../assets/images/trial-lessons-34.png)
+
+## Follow-up todo after trial attendance
+
+When the last trial session is marked as **attended** and the trial moves to **Trial ended** status, Zooza automatically creates a **follow-up todo** on the registration. The todo appears in your admin **Todo list** and serves as a persistent reminder to convert the trial or record feedback.
+
+This is particularly useful when:
+
+- The attendance is recorded via the Zooza AI assistant (MCP), which does not open the conversion prompt.
+- The admin closes the conversion prompt without acting on it.
+
+The todo **auto-resolves** when you complete the trial conversion using **Enrol** on the trial booking. You do not need to close it manually.
+
+If you want to dismiss the todo without converting the trial, mark it as done in the **Todo list**.

@@ -47,6 +47,18 @@ You can test the full payment flow by creating a booking yourself as a client. U
 2. Restore any prices you changed during testing.
 3. Verify that all classes have the correct payment methods enabled.
 
+## I get an error when trying to set Stripe Connect as the payment provider on a programme
+
+If you see a "provider not connected" error when selecting **Stripe Connect** as the card payment provider on a programme and saving, it means your Stripe Connect account is not currently active in Zooza.
+
+**What to do:**
+
+1. Go to **Settings → Integrations → Stripe Connect** and check the connection status.
+2. If the connection has expired or was revoked, click **Connect** and complete the Stripe onboarding or reconnection flow.
+3. Once connected, try saving the programme again.
+
+This validation prevents a misconfiguration that would cause payment failures at booking time. Previously, saving would succeed silently but payments would fail when a client tried to pay.
+
 ## Where can I see payment reports for my accountant?
 
 Payment reports are available in Zooza under **Reports**. For accounting purposes, the recommended approach is to use Zooza's reports and invoicing integration (Xero, etc.) rather than relying on Stripe's dashboard directly.

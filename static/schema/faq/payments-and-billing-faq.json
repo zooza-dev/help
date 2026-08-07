@@ -475,6 +475,14 @@
         "@type": "Answer",
         "text": "An Ignored inbound payment is one that Zooza received from the bank but deliberately did not process. This happens in two situations:\n\n1. Duplicate detection (deduplication) — The payment notification arrived more than once (for example, the bank resent the same notification). Zooza's deduplication agent recognises that it has already processed an identical payment (same amount, same reference, same date) and marks subsequent copies as Ignored to avoid double-matching.\n2. Manual ignore — An admin explicitly marked the payment as Ignored. This is typically done for payments that arrived in error, need to be handled outside Zooza, or belong to a different system.\n\nAn Ignored payment is not lost — it stays in Payments → Received payments with an Ignored status and is visible to admins. If an inbound payment was incorrectly marked as Ignored (for example, by a misconfigured AI rule), you can review and reprocess it.\n\nTo investigate why a payment was ignored: go to Payments → Received payments, find the payment, and check its status details. Also review Payments → Received payments → AI Rules & Filters to confirm no rule is excluding this payment type."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the \"X days after registration\" due date setting apply to payment plan instalments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, from July 2026. Previously, the \"due X days after registration\" setting (configured under Programme → Settings → Price and Payment → Payment Reminder Settings, mode: after registration) only applied to single-payment programmes. For instalment plans, the first payment's due date was set to the class start date regardless of this setting.\n\nNow the first instalment's due date is set to registration date + X days, matching how single payments already worked. Subsequent instalments follow the payment plan schedule as normal — their due dates are unaffected.\n\nNote: The first payment debt is still created immediately at booking time. Only the due date displayed on the payment plan and used for overdue calculations is affected."
+      }
     }
   ]
 }

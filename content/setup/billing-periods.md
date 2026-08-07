@@ -92,3 +92,16 @@ If you want to show inactive billing periods in the reports, you need to click *
 ![If you want to show inactive billing periods in the reports, you need to click Show...](../../assets/images/discount-code-01.png)
 
 Inactive periods are defined as those in which there has not been a single exercise in the last six months or is only used within the collection bins.
+
+## Billing period date range
+
+Each billing period can optionally have a **start date** and **end date**. When set, the class-creation wizard uses them to auto-fill the class start and end dates when you select that billing period, and caps session generation to the period's span.
+
+To set a date range:
+
+1. Go to **Settings** → **Billing periods**.
+2. Open the billing period you want to edit (pen icon).
+3. Set the **Period start** and **Period end** dates.
+4. Save.
+
+If no date range is set, class dates are entered manually as before. The date range is optional — you can set just a start, just an end, or neither.

@@ -63,6 +63,13 @@ Claude asks for any missing details one at a time — days, time, number of sess
 
 ![Claude asking for class schedule details: which days, what time, how many sessions](../../assets/images/mcp-create-class-interview.jpg)
 
+**Edit an existing class or session**
+> *"Change the instructor for all upcoming Monday sessions in Little Helpers to Jana"*
+
+> *"Move next Tuesday's 5pm session to 6pm and notify clients"*
+
+Claude previews every change — how many sessions are affected, what will change — and only applies it after your confirmation. You can edit class settings (price, instructor, venue, capacity) or individual sessions (date, time, instructor, venue).
+
 **Mark attendance**
 > *"Mark attendance for today's 10am dance class — Peter and Sofia were absent"*
 
@@ -125,7 +132,7 @@ Some things still require the Zooza web app directly:
 
 - Creating or editing **programmes** (Claude can read them, not create)
 - **Payment** processing, refunds, or invoicing
-- **Bulk operations** — e.g. cancelling an entire class run or reassigning all clients
+- **Cancelling sessions or class runs** — session cancellation is planned; editing and rescheduling are available now
 - Sending **email or WhatsApp** messages to clients
 - Managing **staff accounts** or access permissions
 

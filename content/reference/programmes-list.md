@@ -43,6 +43,8 @@ Use the filter bar at the top to narrow the list:
 - **Programme type** — filter by structure (class, 1-to-1).
 - **Status** — default is "Not Archived". Change to see archived programmes.
 - **Labels** — filter by custom tags.
+- **Money collection** — filter by payment model: One-off payment, Course fee (fixed price), or Membership.
+- **Features** — filter by programme capability: Trial available, Make-up sessions enabled, Auto-enrolment enabled, or Has active/upcoming classes.
 
 Results can be sorted using the **Sort** dropdown (default: "From newest").
 
@@ -90,7 +92,7 @@ Below the overview, a filterable table lists all classes in the programme:
 | `Location` | Venue name and address. |
 | `Paid debt` / `Issued debt` / `Balance` | Financial summary for the class. |
 
-Each class row has **Bookings** and **Add booking** action buttons.
+Each class row has **Bookings** and **Add booking** action buttons. The class name also includes a **split dropdown** (▾) that deep-links directly into any section of the class — Overview, Settings, Price, Online registration, Attendance, or Automations — without navigating through the full class view first.
 
 ### Top Action Bar
 

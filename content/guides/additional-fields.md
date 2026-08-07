@@ -61,7 +61,7 @@ These fields are used for business invoicing. When one or more business fields a
 
 ![Business fields section in Additional fields settings](../../assets/images/additional-fields-business-settings-01.png)
 
-**Validation for group bookings:** When multiple attendees are registered in one booking, business fields (Business name, Business address, Business ID, Tax ID, VAT) are validated once per booking — not once per person. If the buyer fills in the business fields, the requirement is satisfied for all attendees in the same registration.
+**Buyer-only fields in multi-person registrations:** When multiple attendees are registered in one booking, **address fields** (Address, Structured address) and all **business fields** (Business name, Business address, Business ID, Tax ID, VAT) are collected once on the **buyer card** — not once per attendee. The booking widget groups them under the buyer section automatically; you do not need to configure this. Mandatory validation for these fields applies once per booking, not per person.
 
 ## Custom fields (Additional field 1–15)
 

@@ -115,6 +115,14 @@
         "@type": "Answer",
         "text": "If a bank transaction arrived in your account but is not showing in the Zooza matching list, work through these checks:\n\n1. GoCardless sync delay. GoCardless syncs once per day. If the payment arrived recently, wait up to 24 hours and check again.\n2. Already matched. The transaction may have been automatically matched to another booking. Search for the variable symbol in Bookings to confirm.\n3. No matching debt. Zooza only shows transactions that have a corresponding open debt. If the client paid before a scheduled payment was generated, the transaction will stay unmatched until the debt exists.\n4. Connection expired. If your GoCardless connection lapsed, transactions from that period may be missing. After renewing the connection, use CSV import to back-fill the missing transactions.\n5. Wrong bank account. The transaction may have arrived in a different bank account than the one connected to your Zooza billing profile. Check the IBAN in Settings → Billing profiles.\n\nIf none of the above explains it, contact Zooza support with the transaction date, amount, and variable symbol."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "I get an error when trying to set GoCardless as the payment provider on a programme",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you see a \"provider not connected\" error when selecting GoCardless as the direct debit provider on a programme and saving, it means your GoCardless connection is not currently active.\n\nWhat to do:\n\n1. Go to Settings → Integrations → GoCardless and check the connection status.\n2. If the connection has expired or was revoked, follow the reconnection steps.\n3. Once reconnected, try saving the programme again.\n\nThis validation prevents a misconfiguration that would cause payment failures at booking time. Previously, saving would succeed silently but fail when a client tried to pay."
+      }
     }
   ]
 }

@@ -603,6 +603,14 @@ An Ignored payment is not lost — it stays in **Payments → Received payments*
 
 To investigate why a payment was ignored: go to **Payments → Received payments**, find the payment, and check its status details. Also review **Payments → Received payments → AI Rules & Filters** to confirm no rule is excluding this payment type.
 
+## Does the "X days after registration" due date setting apply to payment plan instalments?
+
+Yes, from July 2026. Previously, the **"due X days after registration"** setting (configured under **Programme → Settings → Price and Payment → Payment Reminder Settings**, mode: after registration) only applied to single-payment programmes. For instalment plans, the first payment's due date was set to the class start date regardless of this setting.
+
+Now the first instalment's **due date** is set to `registration date + X days`, matching how single payments already worked. Subsequent instalments follow the payment plan schedule as normal — their due dates are unaffected.
+
+**Note:** The first payment debt is still created immediately at booking time. Only the **due date** displayed on the payment plan and used for overdue calculations is affected.
+
 ## Related
 
 - [Stripe payments FAQ](stripe-payments-faq.md) — card payment setup, disputes, and Stripe-specific questions

@@ -17,7 +17,15 @@
       "name": "What does \"Awaiting payment\" mean?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Awaiting payment means the registration is active and the client is attending, but one or more scheduled payments are overdue.\n\nThis status does not automatically cancel the booking. Whether the booking gets cancelled for non-payment depends on your programme's payment reminder and auto-delete settings.\n\nIf the status did not change after the client paid:\n\n1. Check if the payment was matched — go to the booking → Payments and confirm the payment shows as received.\n2. If GoCardless or email-notification matching is used, there may be a sync delay of up to 24 hours.\n3. If the payment is not matched, match it manually from the Payments screen.\n\n---"
+        "text": "Awaiting payment means the registration is active and a payment is due, but the client is still within the grace period — the payment is not yet overdue. This is an informational state, not a warning: the client is not in arrears yet. In the client-facing profile widget it shows in blue (not orange) to reflect this.\n\nThe status moves to Unpaid (or triggers a payment reminder) when the grace period passes without payment.\n\nThis status does not automatically cancel the booking. Whether the booking gets cancelled for non-payment depends on your programme's payment reminder and auto-delete settings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does \"No debt\" mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No debt means the registration is completely free — no payment has ever been or will ever be owed on it. The Payments tab is hidden in the client profile widget for these registrations because there is nothing to pay or display. If accessed directly, the payments screen shows an informational \"nothing to pay\" state instead of a payment list.\n\nIf the status did not change after the client paid:\n\n1. Check if the payment was matched — go to the booking → Payments and confirm the payment shows as received.\n2. If GoCardless or email-notification matching is used, there may be a sync delay of up to 24 hours.\n3. If the payment is not matched, match it manually from the Payments screen.\n\n---"
       }
     },
     {

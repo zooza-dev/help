@@ -63,11 +63,24 @@ In the next step, Zooza will allow you to look at the created code as a whole, w
 
 ## Client use of discount code
 
-The discount code can only be applied through the booking form located on your website.
- The client simply applies the code at booking by entering it and
-can immediately check the amount of the discount you have given them.
+### At initial booking
 
->**Note:** The discount code cannot be used in the product form, the discount is only valid for programme booking, it does not affect products.
+The client enters the discount code in the booking form on your website before completing the registration. They can immediately see the discounted total before confirming.
+
+> **Note:** The discount code cannot be used in the product form. Codes are valid for programme bookings only.
+
+### On an existing registration (payment screen)
+
+Clients can also apply a discount code when paying an outstanding balance through their **Client Profile**, without needing to re-book.
+
+When a client opens the payment screen for an existing registration:
+
+1. A coupon code field appears on the payment-options screen.
+2. The client enters their code and clicks **Validate** — the updated total is shown.
+3. The client clicks **Apply** to confirm — the amount due updates immediately.
+4. They then proceed to select a payment method.
+
+This is useful for post-registration promotions or when a client forgot to use their code at the time of booking. Applies to course registrations only.
 
 ![The discount code cannot be used in the product form, the discount is only valid for...](../../assets/images/discount-code-11.png)
 

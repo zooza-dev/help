@@ -183,3 +183,15 @@ If a bank transaction arrived in your account but is not showing in the Zooza ma
 5. **Wrong bank account.** The transaction may have arrived in a different bank account than the one connected to your Zooza billing profile. Check the IBAN in **Settings → Billing profiles**.
 
 If none of the above explains it, contact Zooza support with the transaction date, amount, and variable symbol.
+
+## I get an error when trying to set GoCardless as the payment provider on a programme
+
+If you see a "provider not connected" error when selecting **GoCardless** as the direct debit provider on a programme and saving, it means your GoCardless connection is not currently active.
+
+**What to do:**
+
+1. Go to **Settings → Integrations → GoCardless** and check the connection status.
+2. If the connection has expired or was revoked, follow the reconnection steps.
+3. Once reconnected, try saving the programme again.
+
+This validation prevents a misconfiguration that would cause payment failures at booking time. Previously, saving would succeed silently but fail when a client tried to pay.

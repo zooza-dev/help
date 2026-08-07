@@ -411,6 +411,17 @@ Cancelled sessions are removed from the client-facing calendar and no longer cou
 
 If you need to block an instructor's availability for a period (e.g. holiday, illness), the most reliable approach is to cancel the affected sessions and optionally assign a substitute instructor for any sessions that should still run.
 
+## Why can I no longer find a class from an archived programme in the class picker?
+
+Zooza now **excludes classes from archived programmes** from admin list views and pickers by default. This keeps working views clean — archived programmes are not part of your active schedule.
+
+If you cannot find a class and suspect it belongs to an archived programme:
+
+1. Go to **Programmes** and switch the filter to show **Archived** programmes.
+2. Open the archived programme to view its classes directly.
+
+This change only affects admin pickers and list views (e.g. when assigning classes for make-up sessions or scheduling). The widget already excluded archived programme classes and is not affected.
+
 ## Related
 
 - [Creating a programme](../guides/creating-a-programme.md) — set up a new programme step by step

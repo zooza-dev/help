@@ -369,6 +369,18 @@ If you want to limit which classes appear as make-up options, you can:
 - Set **extra capacity to 0** on classes you do not want used for make-up bookings — those classes will not appear in the make-up list.
 - Use the **time restriction** setting (**Settings → Programmes → Time restriction in hours for offering a regular make-up session**) to exclude sessions that start too soon.
 
+## A client tried to book a make-up session and got a "session is full" error — is their credit lost?
+
+No. The credit is never spent when the booking fails. If a client tries to book a make-up session that is already at capacity, Zooza rejects the booking and leaves the credit untouched.
+
+This can happen when two clients try to book the same last spot at the same time — the first request succeeds and the second receives a "session is full" error.
+
+**What to do:**
+
+1. The client should return to their make-up session list and choose a different session.
+2. If the client wants to wait for that specific session to open up, they can join its waitlist. When a spot becomes available, they will receive a notification with a link to claim it.
+3. To confirm the credit is still available, check the booking's **Credits** tab in the admin panel.
+
 ## Related
 
 - [MATKO — Diagnose why a make-up session is not showing](../troubleshooting/matko-replacement-diagnostic.md) — run a precise eligibility diagnostic for a specific credit and session

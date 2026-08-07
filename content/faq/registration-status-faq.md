@@ -23,7 +23,8 @@ last_converted: "2026-05-15"
 |---|---|---|---|
 | **Enrolled** | Active registration — client is attending | Yes | Yes |
 | **Pending** | Registration submitted but not yet confirmed (e.g. waiting for payment or admin approval) | Yes | Limited |
-| **Awaiting payment** | Registration is active but a payment is overdue | Yes | Payment reminders |
+| **Awaiting payment** | Registration is active; a payment is due but within the grace period | Yes | Payment reminders |
+| **No debt** | Registration is free — nothing is owed, ever | Yes | None |
 | **Waiting list** | Class is full; client is queued for a spot | No (or minimal) | Notification when spot opens |
 | **Trial started** | Client booked a trial session | Depends on settings | Trial follow-ups |
 | **Trial lost** | Trial closed without enrolment | No | None |
@@ -50,9 +51,15 @@ last_converted: "2026-05-15"
 
 ## What does "Awaiting payment" mean?
 
-**Awaiting payment** means the registration is active and the client is attending, but one or more scheduled payments are overdue.
+**Awaiting payment** means the registration is active and a payment is due, but the client is still within the grace period — the payment is not yet overdue. This is an informational state, not a warning: the client is not in arrears yet. In the client-facing profile widget it shows in **blue** (not orange) to reflect this.
+
+The status moves to **Unpaid** (or triggers a payment reminder) when the grace period passes without payment.
 
 This status does **not** automatically cancel the booking. Whether the booking gets cancelled for non-payment depends on your programme's **payment reminder and auto-delete settings**.
+
+## What does "No debt" mean?
+
+**No debt** means the registration is completely free — no payment has ever been or will ever be owed on it. The Payments tab is hidden in the client profile widget for these registrations because there is nothing to pay or display. If accessed directly, the payments screen shows an informational "nothing to pay" state instead of a payment list.
 
 **If the status did not change after the client paid:**
 

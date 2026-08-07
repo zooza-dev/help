@@ -40,9 +40,12 @@ Changing the client’s details is done via a request that you send to us via th
 
 ## How long does a data correction request take?
 
-Requests are reviewed by the Zooza team. Most corrections are processed **within 24 hours** during business days. Email changes may take up to 1 business day.
+Zooza now classifies requests automatically by risk level:
 
-You receive a notification email when the request is approved or rejected.
+- **Low-risk requests** (name typo corrections, phone number changes) are **auto-processed immediately**. You receive a confirmation email once the change is applied — no manual review needed.
+- **Higher-risk requests** (email address changes, or cases where the system cannot safely auto-resolve) are still sent to the Zooza back-office team for manual review, typically within 24 hours on business days.
+
+When you submit a request, the system tells you immediately whether the change was processed or sent for review.
 
 ## Why was the application rejected?
 
