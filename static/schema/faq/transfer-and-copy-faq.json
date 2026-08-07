@@ -49,7 +49,15 @@
       "name": "How do I transfer (move) a booking to another class?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Open the booking detail and click Transfer (in the Class card). The wizard lets you select the target class using filters (programme, location, instructor, day). Select Transfer to another class, review payments, and submit.\n\nThe original booking moves to the new class. The client gets the remaining sessions in the target class."
+        "text": "Open the booking detail and click Transfer (in the Class card). The wizard lets you select the target class using filters (programme, location, instructor, day). Select Transfer to another class, review payments, and submit.\n\nThe original booking moves to the new class. The client gets the remaining sessions in the target class.\n\n### Transfer, not \"transfer to network\"\n\nIf you want the same client in a different class at your own centre, use Transfer. Transfer to network is a different action — it moves the registration to another company in your network, i.e. a different centre. Choosing it when you only wanted a later time slot moves the client out of your account."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can't I copy this registration into the class I want?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A registration can only be copied into a class of the same course type as the one it came from. The copy carries over the payment structure of the original, and that structure has no meaning in a differently typed course, so the target simply does not appear in the picker.\n\nThe case people hit most often: a registration from a continuous (term) course cannot be copied into a course set up as Registration for a single date. Those have to be created manually.\n\nIf the class you expect is missing from the copy target list, check the type of its parent course before assuming the class is misconfigured."
       }
     },
     {
