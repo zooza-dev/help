@@ -1,12 +1,26 @@
 #!/usr/bin/env python3
-"""Triage Intercom conversations 2026-06-24 -> 2026-08-06 into human-reply vs bot-only,
-carrying ai_agent signals (resolution_state, content_sources, last_answer_type)."""
-import json, glob, re, html, collections, os, sys
+"""Triage Intercom conversations in a date window into human-reply vs bot-only,
+carrying ai_agent signals (resolution_state, content_sources, last_answer_type).
+
+Defaults reproduce the original July 2026 intake run. The weekly job passes its
+own window via --start/--end.
+"""
+import json, glob, re, html, collections, os, sys, argparse
 from datetime import datetime, timezone
 
-ING = "/Users/michaldodok/help_ingest/intercom"
-OUT = "/private/tmp/claude-501/-Users-michaldodok-help/b787eb73-e2ac-4fc3-8dcc-cf32a857708a/scratchpad"
-START, END = "2026-06-24", "2026-08-06"
+_REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+
+_ap = argparse.ArgumentParser()
+_ap.add_argument("--start", default="2026-06-24", help="first day of window (YYYY-MM-DD, inclusive)")
+_ap.add_argument("--end", default="2026-08-06", help="last day of window (YYYY-MM-DD, inclusive)")
+_ap.add_argument("--ingest", default="/Users/michaldodok/help_ingest/intercom")
+_ap.add_argument("--out", default=os.path.join(_REPO, "build", "intake"))
+_args = _ap.parse_args()
+
+ING = _args.ingest
+OUT = _args.out
+START, END = _args.start, _args.end
+os.makedirs(OUT, exist_ok=True)
 
 HUMAN_NAMES = {"Martin Rapavý", "Tech Support", "Katarína Babiaková"}
 BOT_NAMES = {"Zooza Support", "Zooza Assistant", "Fin", "bot"}

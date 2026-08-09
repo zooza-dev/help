@@ -12,3 +12,7 @@ __pycache__/
 help/
 *.canvas
 *.base
+
+# Weekly intake intermediates (raw customer messages -- regenerated each run).
+# The baseline state file is tracked on purpose: losing it re-reports every spec.
+build/intake/
