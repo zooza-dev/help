@@ -6,6 +6,9 @@ Process a raw customer support message, chat, or ticket and extract:
 2. What terminology they used (including misattributions)
 3. What is missing or outdated in the KB or glossary
 
+For the weekly batch across all of Intercom, client email, and shipped specs,
+use `/kb-weekly` instead. This command handles one pasted communication.
+
 ## When to run
 - After pasting a customer chat, support ticket, or question
 - When you notice terminology in the wild that isn't captured in the glossary
