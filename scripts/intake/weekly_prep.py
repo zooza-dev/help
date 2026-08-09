@@ -53,9 +53,21 @@ def save_state(state):
         json.dump(state, f, indent=1, sort_keys=True)
 
 
-def window_for(run_day):
-    """Seven full days ending the day before run_day."""
+def window_for(run_day, state):
+    """The days not yet covered, ending yesterday.
+
+    Normally that is the seven days Friday..Thursday. But the window continues
+    from where the last run stopped rather than counting back from today, so
+    running a few days late widens the window instead of skipping the gap.
+    Nothing is ever missed and nothing is reviewed twice.
+    """
     end = run_day - timedelta(days=1)
+    last = state.get("last_window")
+    if last:
+        start = date.fromisoformat(last[1]) + timedelta(days=1)
+        if start > end:
+            return None, end  # already covered
+        return start, end
     return end - timedelta(days=6), end
 
 
@@ -143,10 +155,16 @@ def main():
     run_day = (
         datetime.strptime(args.date, "%Y-%m-%d").date() if args.date else date.today()
     )
-    start, end = window_for(run_day)
-    print(f"Window: {start} ({start.strftime('%a')}) -> {end} ({end.strftime('%a')})\n")
-
     state = load_state()
+    start, end = window_for(run_day, state)
+    if start is None:
+        print(f"Nothing to do -- everything up to {end} has already been reviewed.")
+        return
+    span_days = (end - start).days + 1
+    print(f"Window: {start} ({start.strftime('%a')}) -> {end} ({end.strftime('%a')})  [{span_days} days]")
+    if span_days > 7:
+        print(f"  running {span_days - 7} day(s) late -- window widened so nothing is skipped")
+    print()
 
     if not args.no_fetch:
         print("Fetching Intercom...")
