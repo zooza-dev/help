@@ -1,12 +1,12 @@
 ---
 title: "Payment Pairing for Bank Transfers & Direct Debit"
-description: "Every booking in Zooza automatically creates an expected amount to pay based on your programme or class settings."
+description: "How Zooza matches incoming bank transfers and direct debits to bookings, what to do when a payment does not pair, and how to pair one by hand."
 slug: "payment-pairing"
 type: "guides"
 product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
-tags: ["billing", "booking", "client", "communication", "discount", "import", "invoice", "location", "loyalty", "onboarding", "payment", "programme", "role", "session", "transfer"]
+tags: ["payment-matching", "bank-transfer", "pairing", "variable-symbol", "direct-debit", "inbound-payments", "unpaired-payment", "reconciliation"]
 related_articles: ["email-payment-notifications", "csv-payment-import", "gocardless-direct-debit-mandates", "invoice-profiles-and-bank-accounts", "outstanding-amount"]
 status: "published"
 source_legacy_path: "legacy/0084_Welcome to Zooza.html"

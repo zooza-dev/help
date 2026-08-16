@@ -39,6 +39,26 @@ All payment channel setup is done through the **Setup wizard** at **Payments →
 
 Before Zooza can receive bank transfers, you must connect at least one ingestion channel.
 
+### Which method should I use?
+
+The Setup screen offers each bank account two ways to read incoming payments. Pick one per account.
+
+| | Bank email parser | GoCardless bank data |
+|---|---|---|
+| **How it reads** | Your bank emails Zooza on every transaction | Open banking connection to the account |
+| **Speed** | Payments appear in seconds | Refreshes on a schedule |
+| **Coverage** | Only banks Zooza has built a parser for | 2,500+ European banks |
+| **IBANs per profile** | One | Several |
+| **Upkeep** | None once your bank is sending | Consent must be renewed every 90 days |
+
+**Choose the email parser** if Zooza supports your bank. It is faster and nothing expires.
+
+**Choose GoCardless** if your bank has no parser, if its notification emails are unreliable, or if one billing profile needs more than one IBAN.
+
+The account's current state is shown at the top of the screen. **Source** tells you which method is active — `Not collecting bank transfers` means neither is set up — and **Status** shows whether data is arriving (`NO STATEMENT FEED` versus `RECEIVING BY EMAIL`).
+
+> Setting this up is two separate jobs. The bank account itself is configured on the **billing profile**; how it is read is configured here. If payments are not arriving, check that both are done — one without the other does nothing.
+
 ### GoCardless (open banking)
 
 GoCardless here acts as a **bank account reader**, not a payment processor. It monitors your bank account for incoming transactions and reports them to Zooza in real time.

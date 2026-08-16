@@ -1180,7 +1180,9 @@ terms:
            "standing order", "variable symbol", "reference number payment"]
       sk: ["prichádzajúca platba", "prevod", "platba nespárovaná", "spárovanie platby", "platba nebola priradená",
            "párovanie platieb", "variabilný symbol", "VS", "trvaly príkaz", "stály príkaz",
-           "platba sa nespárovala", "platba nenašla registráciu"]
+           "platba sa nespárovala", "platba nenašla registráciu",
+           "sparovanie", "sparovanie platieb", "sparovanie uhrad", "uhrada", "úhrada", "parovanie",
+           "sparovanie platieb s bankou", "prepojenie s bankou", "bankovy vypis"]
       cz: ["příchozí platba", "převod", "nespárovaná platba", "párování platby",
            "variabilní symbol", "trvalý příkaz", "platba se nespárovala"]
     do_not_confuse_with:
@@ -1196,6 +1198,12 @@ terms:
           A scheduled payment is a debt entry created by Zooza's payment schedule.
           An inbound payment is the actual money arriving from the bank. They are
           matched together by the pairing process.
+    bank_names:
+      note: >
+        Clients name their bank instead of the feature. Any of these in a payment
+        question means inbound payment matching, whatever else the sentence says.
+      values: ["csob", "ČSOB", "tatrabanka", "tatra banka", "slsp", "slovenská sporiteľňa",
+               "vub", "VÚB", "unicredit", "fio", "mbank", "raiffeisen", "komercni banka", "kb"]
     ai_notes: >
       When a user says "payment not paired", "payment stuck", or "payment not showing",
       they mean an inbound payment that landed in manual review (status: new).

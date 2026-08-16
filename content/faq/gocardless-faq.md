@@ -1,6 +1,6 @@
 ---
 title: "GoCardless Integration FAQ"
-description: "Open the booking detail and scroll to the Payments tile. Click Show payments to expand it."
+description: "GoCardless in Zooza — direct debit mandates, offline charges, and using it to read your bank account for incoming transfers."
 slug: "gocardless-faq"
 type: "faq"
 product_area: "Payments"
