@@ -25,29 +25,31 @@ Zooza normally treats each class's capacity separately, which is wrong here — 
 
 ## Setting it up
 
-**Go to Settings → Shared sessions** (`/#settings/glue_sets`).
+**Go to Team & Settings → General → Shared sessions.**
+
+> This screen is marked **BETA**. It works, but expect it to keep changing.
 
 You create a **shared-sessions set** — the classes that share a room — and putting a class in the set is how you switch the behaviour on for it. Classes that are not in a set are not affected in any way.
 
-1. Click to create a set and give it a **name**. The name is only used to identify the set in this list; clients never see it.
-2. Under **Classes sharing the room**, add every class that runs in that room at that time.
-3. Leave **Match conditions** alone unless you need them (see below).
-4. Save.
+1. Give the set a **name**. It is only used to identify the set in this list; clients never see it.
+2. Leave **Active** switched on.
+3. Under **Classes sharing the room**, tick every class that runs in that room at that time. The picker is grouped by programme down the left side — choose the programme, then tick its classes, or use **Choose all**. The number of selected classes is shown above the list.
+4. Set **Match conditions** if you need them (see below).
+5. Click **Add**.
+
+![Shared sessions set with its name, class picker grouped by programme, and match conditions](../../assets/images/shared-sessions-01.png)
 
 That is the whole setup. There is no session-by-session builder — you say which classes share a room, and Zooza combines the individual dates itself.
 
 ### Match conditions
 
-Sessions are only ever combined when they run **in the same room at overlapping times**. That is not a setting; it cannot be switched off, and it is why you cannot accidentally combine two classes in different rooms.
+Sessions are only ever combined when they run **in the same room, on the same date, at overlapping times**. That is not a setting — it always applies and cannot be switched off, which is why you cannot accidentally combine two classes in different rooms or on different days.
 
-On top of that there are two optional conditions:
+There is one optional condition on top:
 
-| Condition | What it does |
-|---|---|
-| **Also require the same instructor** | Only combine when it is the same person. Compared against the **originally assigned** instructor, so arranging a substitute does not break the sharing. |
-| **Also require the same date** | Sessions on different dates are never combined, even when they run in the same room at the same time of day. |
+**Also require the same instructor** — only combine when it is the same person. It is compared against the **originally assigned** instructor, so arranging a substitute for one session does not break the sharing.
 
-With neither ticked, the set matches on **room and time only**.
+Leave it off when the point is the room rather than the person, which is the usual case.
 
 ### Switching a set off
 
