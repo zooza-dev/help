@@ -63,6 +63,10 @@ The client does not see any "discount" line — the block-count price is simply 
 
 When proration by sessions is active on the programme, the prorated first-period amount is calculated from the sessions inside the selected blocks only, not from the full schedule. This means a client who selects fewer blocks also gets a lower prorated first payment.
 
+**The block-count price applies to that first partial payment too.** A client who takes three blocks keeps their three-block rate from the very first payment — the multi-block price is not withheld until the first full period. Sessions you marked non-billable are left out of it as well.
+
+> If a partial first month ever looks *more* expensive than a full one, that is not how it should behave. Check the block-count table on the programme and contact support.
+
 Proration by days is not affected by block selection.
 
 ## Notes on per-block individual discounts

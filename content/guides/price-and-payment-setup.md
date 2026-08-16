@@ -76,7 +76,9 @@ If you choose **scheduled payments**, you must also select the **price type**:
 
 - **Term payment** calculates the total from the unit price and session count. The payment template splits this total into scheduled payments.
 - **Membership** charges the unit price directly as the recurring fee. The total depends on how long the client stays enrolled.
-- **Memberships cannot use billable sessions.** If you need to exclude specific sessions from pricing, use Term payment instead.
+- **A session you mark as non-billable is free under both.** An open lesson, a bonus date or a make-up session that you exclude from pricing is left out of the amount the client is charged — on the booking screen, in per-block instalments, and in a membership's prorated first payment alike.
+
+> One thing a non-billable session still does: if it is the **first** session of a block, the instalment for that block is still due on its date. The amount drops, the due date does not move.
 ![Screenshot — price and payment setup](../../assets/images/price-and-payment-setup-04.png)
 
 ### "I want them to pay 35 € a month" — which one is that?
