@@ -71,6 +71,8 @@ Each attached form has two settings.
 
 The send option is not offered on a form attached to a single booking, because by then the booking already exists.
 
+![Form options with the Requirement and Send automatically dropdowns](../../assets/images/google-forms-07.png)
+
 ## What the client sees
 
 The form appears in the client's profile alongside their other files. If it is one of the ones that genuinely needs attention, it is surfaced first rather than buried in a tab, and it shows whether it is still outstanding.
