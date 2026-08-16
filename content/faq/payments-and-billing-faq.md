@@ -139,7 +139,9 @@ Yes. You can disable automatic invoice generation during launch, accept bookings
 
 ## How do I handle a client who forgot to use a discount code?
 
-Instead of refunding, the easiest approach is to reduce the next instalment by the discount amount and send the client a quick note explaining the adjustment. This is simpler than editing past payments.
+**The client can usually apply it themselves.** Send them back to their profile to pay the outstanding balance — the payment screen has a discount code field. See [applying a code after booking](discounts-and-sibling-pricing-faq.md#can-a-client-add-a-discount-code-after-they-have-already-booked) for what they will see and when the field appears.
+
+If that is not possible — the booking is already paid in full, or the code no longer applies — reduce the next instalment by the discount amount and send the client a note explaining the adjustment. That is simpler than editing past payments.
 
 ## How do I mark a booking as paid when payment was received outside the system?
 

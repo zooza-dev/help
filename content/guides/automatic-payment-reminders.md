@@ -99,6 +99,14 @@ When this is off:
 
 **What is not affected:** the payment confirmation email (sent when a payment is successfully processed) — that notification is not controlled by this toggle and is always sent.
 
+## Archiving a class stops its reminders
+
+Archiving a class or a whole programme takes it out of operation, and unpaid bookings inside it stop receiving payment reminders.
+
+This matters if you archive last term's classes to tidy the list. Anyone who never paid stays unpaid — the debt does not disappear — but they stop being chased about a programme that is no longer running.
+
+> If reminders are still going out for something you archived, check that you archived the **class**, not just hid it from the booking form. Hiding a class from the form only affects new registrations.
+
 ## Suppress duplicate payment emails (cooldown)
 
 If clients receive multiple payment notifications for recurring charges in quick succession, the cooldown setting can help.

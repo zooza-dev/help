@@ -121,7 +121,7 @@
       "name": "How do I handle a client who forgot to use a discount code?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Instead of refunding, the easiest approach is to reduce the next instalment by the discount amount and send the client a quick note explaining the adjustment. This is simpler than editing past payments."
+        "text": "The client can usually apply it themselves. Send them back to their profile to pay the outstanding balance — the payment screen has a discount code field. See applying a code after booking for what they will see and when the field appears.\n\nIf that is not possible — the booking is already paid in full, or the code no longer applies — reduce the next instalment by the discount amount and send the client a note explaining the adjustment. That is simpler than editing past payments."
       }
     },
     {

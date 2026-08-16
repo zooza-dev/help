@@ -66,8 +66,14 @@ If you selected **Fixed Period**, you can define sessions immediately:
 
 | Mode | How it works |
 |---|---|
-| **Simple Setup** | Enter a start date, end date, and repetition frequency (e.g., every Monday). Zooza calculates and displays the number of sessions automatically. |
+| **Simple Setup** | Pick the weekdays the class runs on and let Zooza generate the sessions between two dates. Enough for most term classes. |
 | **Advanced Setup** | Opens the full session creation wizard for detailed configuration — specific dates, times, holidays to skip, billable sessions, and blocks. |
+
+**The weekday picker takes more than one day.** Days appear as Mon–Sun circles you toggle on. Selecting Monday and Wednesday generates sessions on both, so a class that meets twice a week is one pass through the wizard rather than two.
+
+**The dates usually come from the billing period.** If the billing period you chose has its own start and end date, Simple Setup shows those as a summary row instead of asking you to type dates. Click the pencil if this class runs shorter than the term. Billing periods without a date range still show plain from/to fields.
+
+Generation stays inside those bounds: the first session is the first selected weekday on or after the start date, and nothing is created after the end date.
 
 ![Session setup options](../../assets/images/creating-a-class-04.png)
 

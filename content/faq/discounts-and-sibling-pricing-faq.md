@@ -47,6 +47,30 @@ There is no built-in automatic sibling detection yet. Currently, sibling discoun
 - **Percentage split:** If the discount should apply to one child out of two registered together, use half the percentage (e.g., 7.5% instead of 15%) since the code applies to the entire order total.
 - **Manual adjustment:** Register both children, then manually adjust the payment amount on one booking.
 
+## Can a client add a discount code after they have already booked?
+
+Yes. A client who forgot the code at checkout does not need you to fix it for them.
+
+When they return to their profile to pay an outstanding balance, the payment screen shows a discount code field. It works in two steps:
+
+1. **Validate** — they enter the code and see what the new total would be. Nothing is committed yet.
+2. **Apply** — the discount is committed, the amount due drops, and the payment request is reissued.
+
+They then pay the reduced amount as normal.
+
+**When the field does not appear:**
+
+- The booking is **paid in full**. The field only shows while there is an outstanding balance.
+- The order is not a **course** registration — product and shop orders are not covered.
+- You have switched discounts off on the widget.
+
+**Two rules worth knowing:**
+
+- **Different codes stack.** A client can apply a second, different code on top of the first.
+- **The same code cannot be applied twice.** A repeat attempt is rejected with a message.
+
+> There is no undo. Once a code is applied to a registration it cannot be removed from the client side, so a mistaken code has to be corrected on the payment itself. See [Edit payment on booking](../guides/edit-payment-on-booking.md).
+
 ## Does a discount code apply per child or per order?
 
 Discount codes apply to the **entire order total**, not per child. If a parent registers two children in one checkout, the discount is calculated on the combined amount. This means it gets split across both children, which can look different depending on how the booking was done.
