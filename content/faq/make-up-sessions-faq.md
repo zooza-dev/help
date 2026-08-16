@@ -44,6 +44,8 @@ If the per-class value is 0 and set to "add to global", the global setting appli
 
 Yes. Go to **Programmes → the programme → Settings → Make-up sessions**, and in **Make-up sessions settings** switch on **Make-up sessions are assigned by an administrator**.
 
+![Make-up sessions settings with the administrator-assigned switch turned on](../../assets/images/make-up-sessions-faq-02.png)
+
 It splits the flow: clients can still cancel a session, but they cannot pick or reschedule their make-up themselves.
 
 Switch it on when capacity, grouping or level means a child cannot simply drop into any session — the usual case for graded or streamed classes, where a parent picking the wrong group creates work rather than saving it.
@@ -56,6 +58,8 @@ Switch it on when capacity, grouping or level means a child cannot simply drop i
 2. They are asked for a **Requested timing** — **As soon as possible**, **No preference**, or **Specific request** with a note. Answering is required, so their intent is not lost.
 3. The self-service picker disappears. They cannot choose or move a replacement date.
 4. You see their requested timing on the cancelled session in the attendance view, next to the cancellation reason, and assign the make-up from there.
+
+> **Do not confuse it with the switch just above it.** *Allow clients to reschedule/change an already selected make-up session* only controls whether a client may **move** a make-up they already have — with it off they still choose the first one. The administrator-assigned switch takes the choosing away entirely.
 
 Cancelling a replacement that has already been assigned is unchanged — that still follows your other make-up settings.
 
