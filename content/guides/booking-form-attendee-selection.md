@@ -81,6 +81,17 @@ This distinction matters for:
 - Age-based eligibility (make-up sessions, capacity rules)
 - Reports (counts are per attendee, not per buyer)
 
+### Fixing a booking that has the wrong attendee
+
+Open the booking, and in the **Attendee** card click **Change**. The modal lists the client's related people — their children — plus two buttons:
+
+- **Create** — add a person who is not on the list yet.
+- **Attendee is the client** — the adult attends in person, so the buyer and the attendee are the same person.
+
+That second button matters more than it looks. Before it existed, a booking where the adult attends themselves had no correct option: you either created a duplicate person with the client's own name, or left the booking pointing at the wrong child. Both make a mess of attendance and reporting later.
+
+It applies in one click — no confirmation step. The button is hidden when it would do nothing, so if you do not see it, the attendee is already the client.
+
 ---
 
 ## Related

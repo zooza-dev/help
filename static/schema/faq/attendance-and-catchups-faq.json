@@ -49,7 +49,7 @@
       "name": "Can an instructor add notes to a session?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. At the bottom of the session detail, in the Notes section, there are two fields:\n\n- Session summary (visible to the client) — shared with parents after the session. Use it for what was covered, homework, or announcements.\n- Session note (Internal) — visible to admins and instructors only.\n\nAvailability may depend on the organisation's settings."
+        "text": "Yes. At the bottom of the session detail, in the Notes section, there are two fields:\n\n- Session summary (visible to the client) — shared with parents after the session. Use it for what was covered, homework, or announcements.\n- Session note (Internal) — visible to admins and instructors only.\n\nBoth show Last edited by with the name and date underneath, so you can see who touched a summary and when. It records the most recent edit, not who first wrote it — useful when an instructor and an admin have both been in the same session.\n\nAvailability may depend on the organisation's settings."
       }
     },
     {

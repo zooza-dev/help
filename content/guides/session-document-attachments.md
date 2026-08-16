@@ -29,6 +29,18 @@ Open any session from the calendar:
 4. Each file uploads individually — progress is shown per file. If one file fails, the rest continue.
 5. Once all uploads complete, the files are attached to the session automatically. No separate naming step is needed — the file's original filename is used.
 
+### Adding a video or a link
+
+The upload box only takes files. For anything else, use **Add from library** in the **Prep material (visible to client)** section and pick what you want to attach:
+
+| | What it is |
+|---|---|
+| **Document** | A file already in your Documents library |
+| **Video** | A video from your video library — these cannot be uploaded through the drop box |
+| **Link** | A URL from your link library |
+
+This is the same content the event edit page can attach; it is now available directly from the calendar, so you do not have to leave the session you are looking at.
+
 ## File availability
 
 For each attached file you can choose when it becomes visible to participants:

@@ -99,6 +99,14 @@ Each billable session then shows a money symbol in the list. Count those symbols
 
 > If you set the count but marked nothing, the booking price comes out as exactly **0**. See [Outstanding amount](outstanding-amount.md) for the other causes of a zero price.
 
+### Changing the number across many classes at once
+
+You do not have to open each class. Go to **Classes**, tick the classes you want, and use **Bulk edit** — **Billable sessions** is one of the fields you can set for the whole selection, alongside instructor, venue, price, registration fee, billing period and extra capacity.
+
+Useful when a term is shortened, or when a programme is sold as a fixed number of paid sessions and that number changes for every class at once.
+
+> Bulk edit sets the **number**. It does not mark which sessions are billable — that is still per class, as above.
+
 ### Adding sessions to a class
 
 When you add sessions to a class that has billable sessions configured, the **Repetition frequency** field automatically pre-fills with the number of missing billable sessions. For example, if the class should have 5 billable sessions but only has 2 marked, the field suggests 3.

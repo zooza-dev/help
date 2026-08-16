@@ -69,6 +69,8 @@ Yes. At the bottom of the session detail, in the **Notes** section, there are tw
 - **Session summary (visible to the client)** — shared with parents after the session. Use it for what was covered, homework, or announcements.
 - **Session note (Internal)** — visible to admins and instructors only.
 
+Both show **Last edited by** with the name and date underneath, so you can see who touched a summary and when. It records the **most recent** edit, not who first wrote it — useful when an instructor and an admin have both been in the same session.
+
 Availability may depend on the organisation's settings.
 
 ## Can instructors see client consents in the session view?
