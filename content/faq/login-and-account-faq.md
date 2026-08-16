@@ -22,6 +22,18 @@ Account deletion must be handled by Zooza support. Contact support@zooza.online 
 
 <!-- REVIEW: Confirm whether self-service account deletion is planned or if support-only is the permanent approach. -->
 
+## How do I change the email I use to log in?
+
+Go to **Settings → Team**, open the profile, replace the email address and save. From then on that person logs in with the new address — they enter it on the login page and request a link or code. There is no password to change.
+
+**You do not have to replace it.** You can add a second access with the other email instead, and keep both working. That is the better option when:
+
+- you want to keep the old address reachable while people get used to the new one,
+- the two addresses are really two people who have been sharing one login,
+- you are moving from a personal address to a business one and do not want to lose access mid-way.
+
+Give each person their own login wherever you can. Permissions and the activity record are tied to the account, so a shared login makes both meaningless — see [Can multiple team members share one login?](#can-multiple-team-members-share-one-login) below.
+
 ## After changing an instructor's email, they cannot log in — what is the process?
 
 When you update an instructor's email address in **Settings → Team**, the instructor must log in again using the new email:

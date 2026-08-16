@@ -57,6 +57,21 @@ The Setup screen offers each bank account two ways to read incoming payments. Pi
 
 The account's current state is shown at the top of the screen. **Source** tells you which method is active — `Not collecting bank transfers` means neither is set up — and **Status** shows whether data is arriving (`NO STATEMENT FEED` versus `RECEIVING BY EMAIL`).
 
+<!-- OBRÁZOK 1 SEM — ulož ako: assets/images/inbound-setup-choose-method.png
+     Screenshot: Payments → Inbound → Setup, obrazovka "Choose how this bank account
+     reads incoming payments" s oboma blokmi (EMAIL PARSER + GOCARDLESS BANK DATA),
+     Source "Not collecting bank transfers", Status "NO STATEMENT FEED".
+     Keď tam bude, tento komentár nahradím riadkom:
+     ![Setup screen offering the email parser and GoCardless as ways to read a bank account](../../assets/images/inbound-setup-choose-method.png) -->
+
+<!-- OBRÁZOK 2 SEM — ulož ako: assets/images/inbound-setup-receiving-by-email.png
+     Screenshot: ten istý Setup po nastavení — Source "Bank email parser",
+     Status "RECEIVING BY EMAIL", parser adresa a tlačidlo "Turn off statement feed".
+     POZOR: v tvojom screenshote je reálna adresa payments.inb.tatrabanka.v4695c81114@zooza.app
+     — pred uložením ju prekry, po publikovaní by bola verejná.
+     Náhrada:
+     ![A bank account set up with the email parser, showing its parser address](../../assets/images/inbound-setup-receiving-by-email.png) -->
+
 > Setting this up is two separate jobs. The bank account itself is configured on the **billing profile**; how it is read is configured here. If payments are not arriving, check that both are done — one without the other does nothing.
 
 ### GoCardless (open banking)

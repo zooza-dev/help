@@ -14,6 +14,14 @@
     },
     {
       "@type": "Question",
+      "name": "How do I change the email I use to log in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to Settings → Team, open the profile, replace the email address and save. From then on that person logs in with the new address — they enter it on the login page and request a link or code. There is no password to change.\n\nYou do not have to replace it. You can add a second access with the other email instead, and keep both working. That is the better option when:\n\n- you want to keep the old address reachable while people get used to the new one,\n- the two addresses are really two people who have been sharing one login,\n- you are moving from a personal address to a business one and do not want to lose access mid-way.\n\nGive each person their own login wherever you can. Permissions and the activity record are tied to the account, so a shared login makes both meaningless — see Can multiple team members share one login? below."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "After changing an instructor's email, they cannot log in — what is the process?",
       "acceptedAnswer": {
         "@type": "Answer",
