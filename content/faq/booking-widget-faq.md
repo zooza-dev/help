@@ -47,6 +47,8 @@ Yes. **Continue as guest** is always there, and logging in is never required to 
 
 The form asks for an email address or phone number before continuing. If it matches someone you already have, Zooza sends a one-time code and signs them in without leaving the page — no redirect, no lost progress. If it matches nobody, or they would rather not, they click **Continue as guest** and carry on exactly as before.
 
+![A live booking form: the Log in prompt, the email or phone step, and Continue as guest below an OR separator](../../assets/images/booking-widget-faq-03.png)
+
 **There is a way out at both steps**, which matters when a parent gets stuck:
 
 - On the email/phone step, **Continue as guest** sits below an **OR** separator as a full-width button — visually the more prominent of the two, so nobody is left hunting for a way past.

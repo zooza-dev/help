@@ -185,6 +185,20 @@ def main():
                 + (f" (+{len(obsidian_matches)-1} more)" if len(obsidian_matches) > 1 else "")
             )
 
+        # 5b. MDX build hazards — raw {identifier} outside code is read by MDX as a
+        # JavaScript expression and fails the Docusaurus build with
+        # "ReferenceError: <name> is not defined". Cost a broken production build
+        # on 2026-08-16; neither seo_check nor validate_kb caught it.
+        stripped = re.sub(r"```.*?```", "", body, flags=re.S)
+        stripped = re.sub(r"`[^`\n]*`", "", stripped)
+        braces = re.findall(r"(?<!\{)\{[A-Za-z_][A-Za-z0-9_]*\}", stripped)
+        if braces:
+            doc_errors.append(
+                f"MDX will read {braces[0]} as a JS variable and the build will fail — "
+                f"rewrite it or wrap it in backticks"
+                + (f" (+{len(braces)-1} more)" if len(braces) > 1 else "")
+            )
+
         # 6. FAQ schema
         if doc_type == "faq" and slug:
             schema_file = SCHEMA_DIR / f"{slug}.json"
