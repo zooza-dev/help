@@ -49,6 +49,17 @@ Go to **Bookings** and filter by status **Waitlist**. From there you can:
 - Move the person to a different class with availability.
 - Contact the parent to offer alternatives.
 
+### How do I move someone from the waiting list to a confirmed booking?
+
+1. Go to **Bookings** and open the booking with the status **In the waiting list**.
+2. Click **Change status**.
+3. Select **Enrolled** — this is the confirmed booking status.
+4. Tick **Send confirmation email** if you want the parent notified.
+
+Nothing moves off the waiting list on its own. Every approval is a decision you make, even when a place has clearly opened up.
+
+> If the booking is unpaid, set the amount owed before you send the confirmation — the email carries the payment status, so sending it first tells the parent they owe nothing.
+
 ### Is the class capacity waitlist enabled by default?
 
 Yes. When a class reaches full capacity, the waiting list option is automatically available on the booking form. No additional configuration is needed.
@@ -64,6 +75,21 @@ To release a spot so a new client can register, you must do one of:
 Simply marking a client as absent or cancelling a single session does not release capacity.
 
 ---
+
+## Why did this registration end up on the waiting list?
+
+There are four reasons, and only the first is the one people expect:
+
+| Reason | How to tell |
+|---|---|
+| **The class is full** | Capacity is reached. The class shows no free places. |
+| **The child is outside the age range** | An age restriction is set on the programme's additional fields, and the date of birth falls outside it. The parent sees an explanation on the form. |
+| **A downpayment was not paid** | The programme asks for a downpayment and it has not arrived. |
+| **An unpaid-booking automation moved it** | The booking stayed unpaid and an automation tied to downpayments fired — even if you do not collect downpayments at all. |
+
+Work down the list in that order. If capacity and age both look fine, it is one of the payment reasons, and the class showing free places is a red herring rather than a fault.
+
+See [Age restriction](../guides/additional-fields.md#age-restriction) for how the age band is configured.
 
 ## A client is on the waiting list but there is space and the age is right
 

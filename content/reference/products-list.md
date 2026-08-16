@@ -16,7 +16,7 @@ last_converted: "2026-02-13"
 
 # Products
 
-The Products screen manages all sellable products offered to clients during booking or separately. Use it to create products, configure pricing, attach digital items, and manage payment options. Requires PRO plan.
+The Products screen manages all sellable products offered to clients during booking or separately. Use it to create products, configure pricing, attach digital items, and manage payment options.
 
 > **Navigation:** Go to **Products & Services** → **Products**.
 

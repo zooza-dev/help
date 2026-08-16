@@ -151,5 +151,5 @@ See the [developer docs concepts page](https://docs.zooza.online/concepts) for f
 - [Create a programme](creating-a-programme.md)
 - [Create a class](creating-a-class.md)
 - [Edit sessions in programmes](edit-sessions-in-programmes.md)
-- [Change instructor](class-detail.md)
+- [Change instructor](../reference/class-detail.md)
 - [Getting started with Zooza](../setup/getting-started-with-zooza.md)

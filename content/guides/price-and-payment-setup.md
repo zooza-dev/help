@@ -79,6 +79,24 @@ If you choose **scheduled payments**, you must also select the **price type**:
 - **Memberships cannot use billable sessions.** If you need to exclude specific sessions from pricing, use Term payment instead.
 ![Screenshot — price and payment setup](../../assets/images/price-and-payment-setup-04.png)
 
+### "I want them to pay 35 € a month" — which one is that?
+
+This is the most common setup question, and the answer depends on what the 35 € means.
+
+**If 35 € is the same every month regardless of how many sessions fall in it** — four sessions in October, five in November, still 35 € — that is **Membership**. Go to **Programmes → programme → Settings → Price and Payment**, choose scheduled payments, set the price type to **Membership**, and attach a monthly payment template. Typical for clubs and ongoing groups with no fixed end.
+
+**If you have a total for the year and want it spread over months** — 350 € for the school year, paid monthly — that is **Programme fee**. Set the price per session, and the payment template splits the calculated total into instalments. Typical for term-based programmes with a start and an end.
+
+Both start from a price per session. The difference is that Membership charges a flat recurring amount, while Programme fee divides a calculated total.
+
+> A monthly template with the due day set to **1** charges on the first of each calendar month. Set it to **0** to charge on the same day of the month the client joined.
+
+### Setting a fixed price for a class
+
+If you simply want one fixed sum with no instalments, choose the **one-off** collection method and enter the price. Nothing else is needed.
+
+If you want a fixed sum but still need pro-rata for people who join late, use scheduled payments with **Programme fee**, set the **price per session**, and attach a **one-off** payment template (payment due before the programme starts). The client still pays in a single payment, but because the price is built from a per-session rate, Zooza can calculate a reduced amount for a late joiner. See [Late bookings (pro-rata management)](late-bookings.md).
+
 ## Unit price
 
 The **unit price** is the price per session. When you enter a unit price, Zooza automatically calculates the total programme price:

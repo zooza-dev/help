@@ -28,7 +28,7 @@ The Communication section in the left menu gives direct access to all messaging 
 | **Sent messages** | View the history of all sent and received messages. See [Sent Messages](#sent-messages) below. |
 | **Templates** | Manage email and SMS templates for automated and manual messages. See [Message Templates](communication-message-templates.md). |
 
-WhatsApp (PRO plan) and Email Marketing Connections are accessible from within the Send message screen or via Settings.
+WhatsApp and Email Marketing Connections are accessible from within the Send message screen or via Settings.
 
 ## Sent Messages
 

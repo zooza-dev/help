@@ -26,7 +26,6 @@ This is purely a billing feature — it has nothing to do with attendance. It co
 
 - **Free bonus session** — You add an extra session to a class as a credit for a previously cancelled session. Without billable sessions, Zooza would divide the total price across all sessions (including the free one), lowering the unit price incorrectly.
 - **Make-up sessions** — A client books a make-up session in a class. This adds a session to the class that should not affect the price calculation for existing bookings.
-- **A free trial as the first session** — The class runs 37 sessions, the first is a free trial and the remaining 36 are paid. Set billable sessions to 36 and leave the first session unmarked.
 
 In both cases, the class ends up with more sessions than originally planned. Billable sessions tell Zooza: "the client pays for X sessions, regardless of how many sessions actually exist in the class."
 
@@ -69,6 +68,20 @@ Each session must also be marked as billable or not billable:
 ## How it works
 
 For the setup to work correctly, all three levels must be aligned. If you set 10 billable sessions on the programme, you need exactly 10 sessions marked as billable at the session level.
+
+### "The first session should be a free trial and the other 36 paid"
+
+Do not try to build this with billable sessions alone. Unmarking the first session does not turn it into a trial — it only removes it from the price calculation, and the client still books the whole class.
+
+A trial is a **separate setting on the programme**, not a property of a session:
+
+1. Set **billable sessions** to the number the client pays for — 36 in a 37-session class.
+2. Go to **Programmes → programme → Settings** and switch the trial on, with a free trial limited to **1** session.
+3. Clients register for the trial first. They pay nothing at that point.
+4. After the trial they receive an invitation to join the full class, and that is where payment starts.
+5. Once you no longer want to take trial bookings, switch the trial off on the programme.
+
+The two settings do different jobs: the trial controls **how a client gets in**, billable sessions control **what they are charged for**. See [Trial sessions](../setup/trial-sessions.md).
 
 ### "I set the number but nothing happened"
 

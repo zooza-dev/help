@@ -154,7 +154,7 @@ Zooza can sync client contacts with external email marketing platforms. Go to **
 
 **Ecomail** — syncs email contacts with Ecomail automatically on the same schedule.
 
-Both integrations are PRO features. If you do not see the option, contact Zooza support to check whether your plan includes it.
+If you do not see the option, contact Zooza support to check whether it is enabled for your account.
 
 ## See also
 

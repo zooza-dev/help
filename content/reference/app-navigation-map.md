@@ -61,7 +61,7 @@ This page maps every section of the Zooza admin application to its reference doc
 | Payments → Inbound → AI Rules & Filters | — | [Inbound payments — technical reference](../reference/inbound-payments-internals.md) | Done |
 | Payments → Inbound → Setup | — | [Set up how Zooza collects money from clients](../setup/inbound-payments-setup.md) | Done |
 | Discounts | [Discounts](discounts.md) | [Discount Code](../guides/discount-code.md), [Discount Types](../guides/discount-types.md), [Discounts FAQ](../faq/discounts-and-sibling-pricing-faq.md) | Done |
-| Invoices | [Invoices](billing-and-invoicing.md) | [Xero Integration](../setup/xero-integration.md), [Xero FAQ](../faq/xero-invoicing-faq.md) | Done |
+| Invoices | [Invoices](../setup/billing-and-invoicing.md) | [Xero Integration](../setup/xero-integration.md), [Xero FAQ](../faq/xero-invoicing-faq.md) | Done |
 
 ## Products & Services
 

@@ -74,7 +74,7 @@ Available categories:
 | Category | Description |
 |---|---|
 | **Document** | Upload a file (PDF, image, etc.). |
-| **Video (PRO)** | Upload or embed a video. Requires PRO plan. |
+| **Video** | Upload or embed a video. |
 | **URL** | Link to an external resource. |
 | **Dynamic document** | A template-based document that auto-fills with client data using merge fields. |
 

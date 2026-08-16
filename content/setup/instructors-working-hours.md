@@ -67,6 +67,19 @@ A **Custom holiday** blocks the dates for everyone, and only affects sessions ge
 
 > If an instructor asks how to register their summer holiday, send them to their own **Working hours**, not to Settings. Instructors do not usually have access to the company holiday settings, and even if they do, entering their personal holiday there would close the business for everyone.
 
+## Marking an instructor unavailable for a whole semester
+
+Recording an absence is only half the job, and this is where people get stuck: **an absence does not move sessions that already exist.** It tells Zooza the instructor is unavailable when you schedule *new* sessions. Anything already in the calendar keeps their name on it.
+
+So it is two steps, in this order:
+
+1. **Record the absence.** Go to **Instructors → their profile → Working hours** and add an absence covering the dates. Future scheduling will now route around them.
+2. **Reassign the sessions that already exist.** Open the sessions list for the affected classes, select the sessions in that date range, and change the instructor in bulk. See [Change an instructor](../guides/change-instructor.md).
+
+If the cover is temporary and you want the instructor to arrange it themselves, use a [substitution request](../guides/instructor-substitution.md) instead of reassigning — the session keeps its original instructor and records who covered it.
+
+> Doing only step 1 is the usual mistake. The absence looks recorded, the calendar still shows the absent instructor on every session, and it appears the setting did nothing.
+
 ## Mass deleting of availability/absences
 
 Since the availability of instructors can change frequently in the application, you have the option of mass deletion. This allows you to edit faster.

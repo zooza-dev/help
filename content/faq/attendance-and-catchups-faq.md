@@ -130,17 +130,19 @@ It appears even when make-up sessions and cancellation limits are switched off. 
 
 Parents who read the button as "cancel my booking" are the usual source of confusion. Renaming it is normally a better fix than removing it — see below.
 
-### Renaming or hiding the option
+### Rename it rather than remove it
 
-To reword it, override the widget translation key `course.set_attendance_cancel` in your `window.ZOOZA` configuration block:
+A parent telling you in advance that they cannot come is useful information, whatever you do with it. The instructor knows the real headcount, and if you ever switch on attendance tracking, make-up sessions or cancellation limits, this is the signal they all depend on. Removing it to avoid confusion costs you that.
+
+The confusion is almost always about the **wording**, not the feature. "Cancel" reads as "cancel my booking" in most languages. Rename it to something that says what it actually does:
 
 ```js
 'course.set_attendance_cancel': "I can't attend this session",
 ```
 
-The line must sit inside the same config block as your other overrides, on every page where the profile or session view loads. If the old text is still showing, it is almost always in a different script block that does not load on that page.
+Put the line in your `window.ZOOZA` configuration block, alongside your other overrides, on every page where the profile or session view loads. If the old text still shows, it is usually sitting in a different script block that does not load on that page.
 
-Hiding the option entirely is possible via CSS and by removing it from the session reminder template, but it is a custom change to standard behaviour. If you later enable attendance tracking, make-up sessions or cancellation limits, you will have removed the thing they depend on.
+See the [widget translations reference](https://docs.zooza.online/widgets/registration-widget/#translations) for the full list of keys you can override.
 
 ## What is the difference between "Did not attend" and "Cancelled" for make-up credits?
 

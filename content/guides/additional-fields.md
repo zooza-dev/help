@@ -20,7 +20,7 @@ related_articles: ["business-booking", "booking-form-settings", "booking-widget-
 
 Additional fields let you collect extra information from clients during booking — such as a child's date of birth, address, allergies, or business invoicing details. You configure them per programme in the **Additional Fields** tile.
 
-> Additional fields are a **standard part of the booking form on every plan**. They are not a Zooza PRO feature. If you cannot find them, check the navigation below rather than your subscription.
+> Additional fields are a **standard part of the booking form, available on every plan**. If you cannot find them, check the navigation below rather than your subscription.
 
 > **Navigation:** Go to **Programmes** → select a programme → **Edit Settings** → **Additional Fields**.
 
@@ -51,7 +51,7 @@ These fields are ready to use — you just enable them and optionally set a cust
 
 ### Business fields
 
-These fields are used for business invoicing. When one or more business fields are active, the booking form shows an option to register as a company. See [Business booking](booking-faq.md) for the full workflow.
+These fields are used for business invoicing. When one or more business fields are active, the booking form shows an option to register as a company. See [Business booking](../faq/booking-faq.md) for the full workflow.
 
 | Field | Description |
 |---|---|
@@ -125,9 +125,14 @@ The date of birth field can be used to restrict bookings by age. When enabled, c
 1. Enable the **Date of birth** field.
 2. Expand the age restriction options.
 3. Choose the restriction method:
-   - **By date of birth** — specify a minimum and/or maximum date of birth.
-   - **By age** — specify a minimum and/or maximum age in years.
-4. Save.
+   - **By age** — set the limit in **months** or **years**. Months are the better choice for baby and toddler programmes, where "2 years" is too coarse a band.
+   - **By date of birth** — set the earliest and/or latest date of birth allowed. Use this for school-year intakes, where the cut-off is a fixed date rather than an age.
+4. Set whether you want a **minimum only**, a **maximum only**, or **both**. A programme with no upper limit only needs a minimum.
+5. Save.
+
+Both methods end up as the same thing internally — an age band in months — so they are interchangeable. Pick whichever matches how you describe the programme to parents.
+
+> The restriction is evaluated against the child's date of birth at the moment of booking. A child who is too young today is refused today, even if they qualify by the time the class starts — which is what the waiting list below is for.
 
 ### Age restriction with waiting list
 
@@ -180,8 +185,8 @@ Custom choice fields appear as dropdown menus. Mandatory fields are marked with 
 ## Related
 
 - [Programme Settings Reference](../reference/programme-settings.md) — full field reference for the Additional Fields tile.
-- [Business booking](booking-faq.md) — registering bookings for companies.
+- [Business booking](../faq/booking-faq.md) — registering bookings for companies.
 - [Customizing widgets](customizing-widgets.md) — how extra fields appear on the booking widget.
 - [Dynamic tags](dynamic-tags.md) — using field values in email templates.
-- [Allowing multiple booking](booking-faq.md) — collecting data from multiple attendees.
+- [Allowing multiple booking](../faq/booking-faq.md) — collecting data from multiple attendees.
 - [Personas](personas.md) — how Personas replaces extra fields for attendee tracking.

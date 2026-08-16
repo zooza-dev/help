@@ -22,6 +22,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can someone else set up Zooza AI for me — an external instructor, for example?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and it is safe to let them.\n\nZooza AI inherits the permissions of the account it connects with. It is not a separate level of access. Whatever that person's role allows them to do in the Zooza app, the assistant can do — and nothing beyond it. An external instructor who cannot see payments in the app cannot see them through the assistant either.\n\nSo the question to ask is not \"should they have the assistant?\" but \"what should their role be?\" Get the role right and the assistant follows automatically. See User roles.\n\nThis also means the assistant is not a way to give someone temporary extra access. If they need to do more, change their role; if they should not have it permanently, do the task yourself."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "We have a franchise with multiple locations. Does Zooza AI support that?",
       "acceptedAnswer": {
         "@type": "Answer",

@@ -52,7 +52,7 @@ Pricing is based on the number of **active clients** on your account. The tiers 
 
 All plans include: client & family profiles, consent management, email automation, instructor management, payments & billing, and reporting. Annual billing is available at a discounted rate.
 
-**Zooza PRO** is an optional add-on (available on all plans) that includes WhatsApp integration, Power BI integration, own payment gateway without extra fees, external marketing integrations, custom products, and advanced logs & reports.
+Optional add-ons are available on top of any plan. Check the **Subscription** page in your account to see which are enabled for you, or ask Zooza support.
 
 > **Note:** Prices are in EUR. Check the **Subscription** page in your account for current pricing in your currency and up-to-date plan features.
 

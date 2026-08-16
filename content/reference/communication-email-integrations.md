@@ -22,7 +22,7 @@ The Email Integrations screen connects Zooza with external email marketing platf
 
 ![Email integrations](../../assets/images/reference/communication-email-integrations.png)
 
-## Email Marketing Connections (PRO)
+## Email Marketing Connections
 
 ### Mailchimp
 
@@ -39,7 +39,7 @@ Syncs your contacts to a selected Mailchimp list every two hours. The synchroniz
 |---|---|
 | **Activate** | Connect Zooza to your Mailchimp account. |
 
-### Ecomail (PRO)
+### Ecomail
 
 Syncs your email contacts with Ecomail automatically every two hours.
 

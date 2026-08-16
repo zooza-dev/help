@@ -4,8 +4,8 @@
 
 ## Summary
 
-- **Total docs checked:** 257
-- **Total issues found:** 91
+- **Total docs checked:** 258
+- **Total issues found:** 77
 - **Overall status:** FAIL
 
 ## 1. Required Frontmatter
@@ -25,13 +25,14 @@ All docs have exactly one H1.
 
 ## 4. No Skipped Heading Levels
 
-**1 doc(s) with heading level skips:**
+**2 doc(s) with heading level skips:**
 
+- `content/guides/business-booking.md` — Jump from H1 to H3
 - `content/reference/sessions-list.md` — Jump from H2 to H4
 
 ## 5. Broken Internal Links
 
-**34 broken internal link(s) found:**
+**19 broken internal link(s) found:**
 
 - `content/business-models/adult-language-school.md` — link to `../guides/booking-faq.md`
 - `content/faq/email-communication-faq.md` — link to `../troubleshooting/email-delivery-troubleshooting.md`
@@ -40,27 +41,12 @@ All docs have exactly one H1.
 - `content/faq/onboarding-launch-faq.md` — link to `../setup/communication-send-email.md`
 - `content/faq/onboarding-launch-faq.md` — link to `../business-models/business-models.md`
 - `content/faq/programmes-timetables-sessions-faq.md` — link to `faq-programmes.md`
-- `content/guides/active-inactive-clients.md` — link to `billing-and-invoicing.md`
-- `content/guides/active-inactive-clients.md` — link to `billing-and-invoicing.md`
-- `content/guides/additional-fields.md` — link to `booking-faq.md`
-- `content/guides/additional-fields.md` — link to `booking-faq.md`
-- `content/guides/additional-fields.md` — link to `booking-faq.md`
 - `content/guides/billable-sessions.md` — link to `tracking-billable-sessions.md`
-- `content/guides/booking-form-settings.md` — link to `booking-faq.md`
-- `content/guides/creating-a-booking.md` — link to `booking-faq.md`
 - `content/guides/customizing-widgets.md` — link to `../troubleshooting/widget-embedding-troubleshooting.md`
-- `content/guides/edit-payment-on-booking.md` — link to `payments-and-billing-faq.md`
-- `content/guides/invoice-buyer-data.md` — link to `booking-faq.md`
-- `content/guides/linked-bookings.md` — link to `booking-faq.md`
-- `content/guides/multi-day-event-with-product-offer.md` — link to `booking-faq.md`
-- `content/guides/payment-tile-on-booking.md` — link to `payments-and-billing-faq.md`
-- `content/guides/programme-class-session-definition.md` — link to `class-detail.md`
-- `content/guides/returning-client-booking-widget.md` — link to `booking-faq.md`
 - `content/reference/app-navigation-map.md` — link to `../guides/class-detail.md`
 - `content/reference/app-navigation-map.md` — link to `dashboard-reference.md`
 - `content/reference/app-navigation-map.md` — link to `dashboard-reference.md`
 - `content/reference/app-navigation-map.md` — link to `dashboard-reference.md`
-- `content/reference/app-navigation-map.md` — link to `billing-and-invoicing.md`
 - `content/reference/app-navigation-map.md` — link to `email-delivery-troubleshooting.md`
 - `content/reference/communication-dashboard.md` — link to `email-delivery-troubleshooting.md`
 - `content/reference/reports-dashboard.md` — link to `dashboard-reference.md`

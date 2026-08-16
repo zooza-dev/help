@@ -51,7 +51,7 @@ Go to **Programmes** → open a programme → **Additional Fields → Edit**.
 
 Here you configure what extra information is collected during registration, on top of the standard name/email/phone fields. You can enable built-in fields (date of birth, address, child's name) or add up to 15 custom fields.
 
-> Additional fields are a **standard part of the booking form** on every plan. They are not a Zooza PRO feature.
+> Additional fields are a **standard part of the booking form**, available on every plan.
 
 See [Additional fields on the booking form](additional-fields.md) for the full reference.
 
@@ -140,6 +140,6 @@ Here you set the programme price, booking fee, price type (term / block / unit),
 
 - [Additional fields on the booking form](additional-fields.md) — full guide for data collection fields.
 - [Customizing widgets](customizing-widgets.md) — CSS styling, embed code customization, URL filtering.
-- [Allowing multiple booking](booking-faq.md) — collecting data from multiple attendees in one form.
+- [Allowing multiple booking](../faq/booking-faq.md) — collecting data from multiple attendees in one form.
 - [Booking Widget FAQ](../faq/booking-widget-faq.md) — common questions about the booking widget.
 - [Publish (Widgets) reference](../reference/publish-widgets.md) — full field reference for the Publish screen.

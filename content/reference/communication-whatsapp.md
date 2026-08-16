@@ -16,9 +16,9 @@ last_converted: "2026-02-13"
 
 # WhatsApp
 
-The WhatsApp screen manages WhatsApp Business messaging within Zooza. Use it to view conversations, reply to clients, and manage WhatsApp message templates. Requires PRO plan.
+The WhatsApp screen manages WhatsApp Business messaging within Zooza. Use it to view conversations, reply to clients, and manage WhatsApp message templates.
 
-> **Navigation:** Go to **Communication** → **WhatsApp (PRO)**.
+> **Navigation:** Go to **Communication** → **WhatsApp**.
 
 ## Tabs
 

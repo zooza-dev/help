@@ -17,13 +17,13 @@ related_articles: ["sessions-list", "payments-dashboard", "recording-an-administ
 
 # Reports
 
-The Reports screen provides an overview of your business metrics, payment status, booking occupancy, client statistics, trial conversion, and session notifications. It includes a personalizable dashboard with goal tracking powered by Nick's Dashboard (PRO).
+The Reports screen provides an overview of your business metrics, payment status, booking occupancy, client statistics, trial conversion, and session notifications. It includes a personalizable dashboard with goal tracking powered by Nick's Dashboard.
 
 > **Navigation:** Go to **Reports & Insights** → **Reports**.
 
 ![Reports dashboard](../../assets/images/reference/reports-dashboard.png)
 
-## Nick's Dashboard (PRO)
+## Nick's Dashboard
 
 A personalizable dashboard with four key business metrics tracked over the past 30 days:
 
@@ -187,7 +187,7 @@ Each trial card shows:
 | `Programme / Class` | Programme name, class name, date, and location. |
 | `Internal note` | Notes added by staff. |
 
-## Power BI Integration (PRO)
+## Power BI Integration
 
 When enabled, Zooza pushes daily data to your own data storage so you can build custom reports on raw data.
 

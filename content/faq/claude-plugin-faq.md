@@ -25,6 +25,16 @@ Yes. Zooza AI is available at no extra cost for all active Zooza customers. You 
 
 Zooza AI does not store your login credentials. Authentication happens via OAuth — the same system as signing in to zooza.app. Claude only sees data that Zooza provides during your conversation.
 
+## Can someone else set up Zooza AI for me — an external instructor, for example?
+
+Yes, and it is safe to let them.
+
+**Zooza AI inherits the permissions of the account it connects with.** It is not a separate level of access. Whatever that person's role allows them to do in the Zooza app, the assistant can do — and nothing beyond it. An external instructor who cannot see payments in the app cannot see them through the assistant either.
+
+So the question to ask is not "should they have the assistant?" but "what should their role be?" Get the role right and the assistant follows automatically. See [User roles](../guides/user-roles.md).
+
+> This also means the assistant is not a way to give someone temporary extra access. If they need to do more, change their role; if they should not have it permanently, do the task yourself.
+
 ## We have a franchise with multiple locations. Does Zooza AI support that?
 
 Yes. If your account has access to multiple companies, Claude will list them and ask which one you want to work with. You can switch between companies within the same conversation.

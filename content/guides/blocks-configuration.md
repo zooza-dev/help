@@ -65,9 +65,22 @@ Typical examples:
 
 A long-running programme (such as a full school year) is split into billing periods -- semesters, quarters, or trimesters. Clients enrol for the entire class period but receive separate payment requests per block. In this scenario, blocks may not be visible to clients during registration; they serve as an internal administrative tool.
 
+### "Train twice a week, or pick just one day"
+
+A class runs Monday and Wednesday for ten months. Some clients want both days, others only one. This is what blocks are for — and it is not something you can build with pricing alone.
+
+1. Create the sessions for the whole run as usual.
+2. Put every **Monday** session in one block and every **Wednesday** session in another. On sessions that already exist, open the session and change its block there.
+3. Enable online registration on **both** blocks, so clients can see and choose them.
+4. Set the price on each block and attach a payment template — monthly, for example.
+
+A client picking one block trains once a week and pays for that block. A client picking both trains twice a week and pays for both. You do not need a second class, and you do not need two prices on one class.
+
+> Blocks are for splitting **one class's offer into parts a client can buy separately**. If everyone attends everything and you only want to split the money over time, you want a payment template, not blocks — see [Price and payment setup](price-and-payment-setup.md).
+
 ## Setting up blocks on a class
 
-Blocks are created when you add sessions to a class. During session creation, you choose whether to assign sessions to a new block or to an existing one. For the full creation procedure, see the [Blocks creation guide](blocks-creation.md).
+Blocks are created when you add sessions to a class. During session creation, you choose whether to assign sessions to a new block or to an existing one. You can also move an existing session into a different block by editing that session. For the full creation procedure, see the [Blocks creation guide](blocks-creation.md).
 
 After creating blocks, configure the following settings.
 
