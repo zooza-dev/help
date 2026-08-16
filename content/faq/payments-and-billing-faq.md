@@ -153,6 +153,20 @@ Using **Refund** incorrectly (e.g., to zero out a manual entry) creates phantom 
 
 <!-- REVIEW: Support tickets confirm "Edit payment" is accessed via the transaction list → More → Edit payment. Verify current UI label matches. -->
 
+## Do I need a separate payment template for every programme?
+
+No. This is the most common source of confusion when setting up payments.
+
+A payment template defines **when and in how many parts** a client pays — monthly, quarterly, annually, after N sessions, or a fixed number of instalments. It does **not** contain the price. The amount comes from each programme's own price setting, and any discount on the template is calculated as a percentage or fixed sum off that price.
+
+So if you run six programmes and want to offer monthly, quarterly and annual payment on each, you create **three templates, not eighteen**. You create them once under **Team & Settings → Billing → Payments**, then switch them on for each programme under **Programmes → programme → Settings → Price and Payment → Payment Frequency**.
+
+Each programme keeps its own price. The same "Monthly" template produces different instalments for a €300 programme and a €450 one.
+
+You only need more templates when the **terms** differ — for example a 5% early-payment discount on one group of programmes and 10% on another, or a sibling discount variant. Different prices alone never require a new template.
+
+See [Payment templates creation](../guides/payment-templates-creation.md) for the full setup.
+
 ## What happens to payment schedules when I copy bookings to a new term?
 
 Payment schedules are **not** automatically carried over when you copy bookings to a new term. Because the client did not go through the booking form and select a payment template, the system does not assign one.

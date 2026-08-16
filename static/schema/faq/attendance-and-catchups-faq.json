@@ -110,6 +110,14 @@
     },
     {
       "@type": "Question",
+      "name": "What does \"Cancel from session\" do — does it cancel the booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. \"Cancel from session\" is an attendance signal, not a cancellation. It records that the child will not be at that one session. The booking stays active and the payment is unaffected.\n\nIt appears even when make-up sessions and cancellation limits are switched off. That is deliberate: the instructor still benefits from knowing in advance how many children to expect, so Zooza collects the information regardless of whether anything else depends on it.\n\nParents who read the button as \"cancel my booking\" are the usual source of confusion. Renaming it is normally a better fix than removing it — see below.\n\n### Renaming or hiding the option\n\nTo reword it, override the widget translation key course.set_attendance_cancel in your window.ZOOZA configuration block:\n\n``js\n'course.set_attendance_cancel': \"I can't attend this session\",\n``\n\nThe line must sit inside the same config block as your other overrides, on every page where the profile or session view loads. If the old text is still showing, it is almost always in a different script block that does not load on that page.\n\nHiding the option entirely is possible via CSS and by removing it from the session reminder template, but it is a custom change to standard behaviour. If you later enable attendance tracking, make-up sessions or cancellation limits, you will have removed the thing they depend on."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What is the difference between \"Did not attend\" and \"Cancelled\" for make-up credits?",
       "acceptedAnswer": {
         "@type": "Answer",

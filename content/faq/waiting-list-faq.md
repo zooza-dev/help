@@ -65,6 +65,22 @@ Simply marking a client as absent or cancelling a single session does not releas
 
 ---
 
+## A client is on the waiting list but there is space and the age is right
+
+Check the payment before you check the capacity. A booking can be placed on the waiting list by an **unpaid-booking automation**, not by the class being full.
+
+The automation is tied to downpayments. If it is switched on but you do not actually collect downpayments, an unpaid booking is moved to the waitlist even though nothing is wrong with the class. Capacity and age restrictions are then a red herring — the class shows free places because there are free places.
+
+To put it right:
+
+1. Open the booking and change the status from **Waitlist** to **Enrolled**.
+2. Go to the booking → **Payments** and add the amount the parent owes, including the registration fee if you charge one.
+3. Go to **Communication → Send Email** and resend the booking confirmation, so the parent can open their profile and pay.
+
+Then review the automation itself, or every unpaid booking will keep landing on the waitlist.
+
+> The confirmation email carries the payment status and a link to the parent's profile. For anything payment-related, sending parents to their profile is usually faster than issuing an invoice.
+
 ## Make-up session waitlist
 
 ### How does the make-up session waitlist work?

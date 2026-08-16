@@ -26,6 +26,7 @@ This is purely a billing feature — it has nothing to do with attendance. It co
 
 - **Free bonus session** — You add an extra session to a class as a credit for a previously cancelled session. Without billable sessions, Zooza would divide the total price across all sessions (including the free one), lowering the unit price incorrectly.
 - **Make-up sessions** — A client books a make-up session in a class. This adds a session to the class that should not affect the price calculation for existing bookings.
+- **A free trial as the first session** — The class runs 37 sessions, the first is a free trial and the remaining 36 are paid. Set billable sessions to 36 and leave the first session unmarked.
 
 In both cases, the class ends up with more sessions than originally planned. Billable sessions tell Zooza: "the client pays for X sessions, regardless of how many sessions actually exist in the class."
 
@@ -68,6 +69,22 @@ Each session must also be marked as billable or not billable:
 ## How it works
 
 For the setup to work correctly, all three levels must be aligned. If you set 10 billable sessions on the programme, you need exactly 10 sessions marked as billable at the session level.
+
+### "I set the number but nothing happened"
+
+This is the most common problem with the feature, and it is not a fault.
+
+Setting the count on the class only declares **how many** sessions are paid. It does not decide **which** ones — you still have to mark them. Until you do, the two halves disagree and Zooza cannot calculate a price.
+
+To fix it on a class where the sessions already exist:
+
+1. Go to the **sessions list** for the class.
+2. Select the sessions that should be paid (use the checkboxes).
+3. Use the **bulk action** toolbar to mark them as billable.
+
+Each billable session then shows a money symbol in the list. Count those symbols — the total must equal the number on the class.
+
+> If you set the count but marked nothing, the booking price comes out as exactly **0**. See [Outstanding amount](outstanding-amount.md) for the other causes of a zero price.
 
 ### Adding sessions to a class
 

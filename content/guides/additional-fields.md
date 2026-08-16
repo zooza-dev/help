@@ -20,6 +20,8 @@ related_articles: ["business-booking", "booking-form-settings", "booking-widget-
 
 Additional fields let you collect extra information from clients during booking — such as a child's date of birth, address, allergies, or business invoicing details. You configure them per programme in the **Additional Fields** tile.
 
+> Additional fields are a **standard part of the booking form on every plan**. They are not a Zooza PRO feature. If you cannot find them, check the navigation below rather than your subscription.
+
 > **Navigation:** Go to **Programmes** → select a programme → **Edit Settings** → **Additional Fields**.
 
 ## Enabling additional fields
@@ -150,6 +152,10 @@ Additional field values can be used in email templates via dynamic tags. This le
 | <code>&#42;&#124;EF_TAX_ID&#124;&#42;</code> | Tax ID |
 | <code>&#42;&#124;EF_VAT&#124;&#42;</code> | VAT ID |
 | <code>&#42;&#124;EF_EXTRA_FIELD_1&#124;&#42;</code> – <code>&#42;&#124;EF_EXTRA_FIELD_15&#124;&#42;</code> | Custom fields 1–15 |
+
+**The number is the slot, not the name.** Custom fields sit in numbered slots — **Additional field 1** through **Additional field 15** — and the tag follows the slot. Naming a field "Allergies" does not give you an `EF_ALLERGIES` tag; if it sits in the second slot, its tag is `*|EF_EXTRA_FIELD_2|*`.
+
+So if a tag comes out empty, check which slot the field actually occupies in **Programmes → programme → Additional Fields**. That is the most common reason a custom-field tag renders nothing.
 
 For the full list of dynamic tags, see [Dynamic tags](dynamic-tags.md).
 

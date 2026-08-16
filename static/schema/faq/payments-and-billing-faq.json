@@ -142,6 +142,14 @@
     },
     {
       "@type": "Question",
+      "name": "Do I need a separate payment template for every programme?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. This is the most common source of confusion when setting up payments.\n\nA payment template defines when and in how many parts a client pays — monthly, quarterly, annually, after N sessions, or a fixed number of instalments. It does not contain the price. The amount comes from each programme's own price setting, and any discount on the template is calculated as a percentage or fixed sum off that price.\n\nSo if you run six programmes and want to offer monthly, quarterly and annual payment on each, you create three templates, not eighteen. You create them once under Team & Settings → Billing → Payments, then switch them on for each programme under Programmes → programme → Settings → Price and Payment → Payment Frequency.\n\nEach programme keeps its own price. The same \"Monthly\" template produces different instalments for a €300 programme and a €450 one.\n\nYou only need more templates when the terms differ — for example a 5% early-payment discount on one group of programmes and 10% on another, or a sibling discount variant. Different prices alone never require a new template.\n\nSee Payment templates creation for the full setup."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What happens to payment schedules when I copy bookings to a new term?",
       "acceptedAnswer": {
         "@type": "Answer",

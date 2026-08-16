@@ -1,12 +1,13 @@
 ---
 title: "Attendance and Catch-up Classes FAQ"
-description: "When you open a session from the Calendar, the attendance panel has two views you can switch between using the toggle in the top right:"
+description: "How attendance works in Zooza — marking it, cancelling a single session without cancelling the booking, make-up credits, and what instructors can do."
 slug: "attendance-and-catchups-faq"
 type: "faq"
 product_area: "Calendar"
 sub_area: ""
 audience: ["admin"]
-tags: ["attendance", "quick-view"]
+tags: ["attendance", "quick-view", "cancellation", "make-up"]
+related_articles: ["make-up-sessions-faq", "cancellation-limit-settings", "instructor-attendance-management", "admin-attendance-management"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
@@ -120,6 +121,26 @@ Hover over the numbers for a detailed breakdown.
 ## Is attendance tracking important for automations?
 
 Yes. Marking attendance triggers automations — especially for trials. When a instructor marks a trial attendee as "attended", the system automatically sends the enrolment offer to the parent.
+
+## What does "Cancel from session" do — does it cancel the booking?
+
+No. **"Cancel from session" is an attendance signal, not a cancellation.** It records that the child will not be at that one session. The booking stays active and the payment is unaffected.
+
+It appears even when make-up sessions and cancellation limits are switched off. That is deliberate: the instructor still benefits from knowing in advance how many children to expect, so Zooza collects the information regardless of whether anything else depends on it.
+
+Parents who read the button as "cancel my booking" are the usual source of confusion. Renaming it is normally a better fix than removing it — see below.
+
+### Renaming or hiding the option
+
+To reword it, override the widget translation key `course.set_attendance_cancel` in your `window.ZOOZA` configuration block:
+
+```js
+'course.set_attendance_cancel': "I can't attend this session",
+```
+
+The line must sit inside the same config block as your other overrides, on every page where the profile or session view loads. If the old text is still showing, it is almost always in a different script block that does not load on that page.
+
+Hiding the option entirely is possible via CSS and by removing it from the session reminder template, but it is a custom change to standard behaviour. If you later enable attendance tracking, make-up sessions or cancellation limits, you will have removed the thing they depend on.
 
 ## What is the difference between "Did not attend" and "Cancelled" for make-up credits?
 

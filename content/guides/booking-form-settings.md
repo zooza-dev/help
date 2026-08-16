@@ -49,7 +49,9 @@ These settings apply to all programmes shown in that widget:
 
 Go to **Programmes** → open a programme → **Additional Fields → Edit**.
 
-Here you configure what extra information is collected during registration, on top of the standard name/email/phone fields. You can enable built-in fields (date of birth, address, child's name) or add up to 5 custom fields.
+Here you configure what extra information is collected during registration, on top of the standard name/email/phone fields. You can enable built-in fields (date of birth, address, child's name) or add up to 15 custom fields.
+
+> Additional fields are a **standard part of the booking form** on every plan. They are not a Zooza PRO feature.
 
 See [Additional fields on the booking form](additional-fields.md) for the full reference.
 

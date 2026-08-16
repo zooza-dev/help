@@ -22,6 +22,14 @@
     },
     {
       "@type": "Question",
+      "name": "A client is on the waiting list but there is space and the age is right",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check the payment before you check the capacity. A booking can be placed on the waiting list by an unpaid-booking automation, not by the class being full.\n\nThe automation is tied to downpayments. If it is switched on but you do not actually collect downpayments, an unpaid booking is moved to the waitlist even though nothing is wrong with the class. Capacity and age restrictions are then a red herring — the class shows free places because there are free places.\n\nTo put it right:\n\n1. Open the booking and change the status from Waitlist to Enrolled.\n2. Go to the booking → Payments and add the amount the parent owes, including the registration fee if you charge one.\n3. Go to Communication → Send Email and resend the booking confirmation, so the parent can open their profile and pay.\n\nThen review the automation itself, or every unpaid booking will keep landing on the waitlist.\n\nThe confirmation email carries the payment status and a link to the parent's profile. For anything payment-related, sending parents to their profile is usually faster than issuing an invoice."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Make-up session waitlist",
       "acceptedAnswer": {
         "@type": "Answer",
