@@ -72,6 +72,11 @@ This setting is set when creating the programme, but you can update the *unit pr
 
 To configure how the programme will appear on your website and how communication with clients will be handled, use the *Online Booking* tile. A detailed explanation of each feature is available in the [Online Booking manual.](../setup/online-registration.md)
 
+Two controls in this tile decide **who may book and when**:
+
+- **Priority registration** — open the term to eligible returning clients before it opens to everyone, or instead of ever opening it. See [Priority registration](priority-registration.md).
+- **Allow register now, start later** — let a client book now and join from a later session, priced pro-rata. See [Delayed start](delayed-start-registration.md).
+
 ->vymen screenshot za asdfasdfasf.png
 
 ![vymen screenshot za asdfasdfasf.png](../../assets/images/course-settings-05.png)

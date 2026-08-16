@@ -71,6 +71,12 @@ def main():
     agent_stats = build_agent_exports()
     print(f"  Agent: canonical={agent_stats['canonical_records']}, faq={agent_stats['faq_records']}")
 
+    # ── Step 5: orphan check ─────────────────────────────────────────────────
+    # A new article nobody links to is invisible except through search. Reported,
+    # not enforced — some pages legitimately stand alone.
+    print("\n── Step 5: orphan check ──")
+    run_script(SCRIPTS_DIR / "check_orphans.py")
+
     print("\n✓ All exports complete.")
 
 

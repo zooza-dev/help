@@ -251,6 +251,7 @@ Click **Change** to open the reminders configuration. For detailed setup instruc
 - [Late bookings (pro-rata management)](late-bookings.md) — late booking modes and aliquot price calculation.
 - [Billable sessions](billable-sessions.md) — marking which sessions are paid.
 - [Payment templates creation](payment-templates-creation.md) — creating and configuring payment schedules.
+- [Membership prices by number of blocks](payg-segment-pricing.md) — charging less per block when a client takes several.
 - [Membership Subscription Setup](membership-subscription-setup.md) — step-by-step Netflix-style membership configuration.
 - [Payment options](payment-options.md) — details on card, transfer, and cash payments.
 - [Automatic payment reminders](automatic-payment-reminders.md) — configuring payment reminder emails.

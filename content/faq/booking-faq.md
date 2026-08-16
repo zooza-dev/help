@@ -40,6 +40,10 @@ The system doesn't block repeat bookings on purpose. Capturing the booking and t
 
 > Before deleting anything, check your unpaid-booking automation. Depending on how it is configured it may already cancel or waitlist the unpaid duplicate for you — see [Waiting list FAQ](waiting-list-faq.md).
 
+## Which note should I write in?
+
+A booking carries four separate note fields and two of them behave in ways people do not expect — one follows the client everywhere, another is read by the parent. See [The four notes on a booking](../guides/booking-notes.md).
+
 ## How do I delete test bookings?
 
 Go to **Bookings**, find the test booking, open its detail, and change the status to **Deleted**. This completely removes the booking. The data is still available under the "Deleted bookings" filter for reference.

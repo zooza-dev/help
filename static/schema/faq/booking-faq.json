@@ -22,6 +22,14 @@
     },
     {
       "@type": "Question",
+      "name": "Which note should I write in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A booking carries four separate note fields and two of them behave in ways people do not expect — one follows the client everywhere, another is read by the parent. See The four notes on a booking."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How do I delete test bookings?",
       "acceptedAnswer": {
         "@type": "Answer",

@@ -69,6 +69,13 @@ Go to **Settings → Integrations** to see all available integrations and their 
 
 ---
 
+## Forms & Reviews
+
+| Integration | What it does |
+|---|---|
+| **Google Forms** | Attach your own Google Form to a programme, class, session or booking. Zooza delivers it and mirrors the answers so staff can read them without a Google login. [Set up Google Forms →](../guides/google-forms.md) |
+| **Google Reviews** | Collect Google reviews from clients after a session and read them back in Zooza. [Set up Google Reviews →](./collecting-google-reviews.md) |
+
 ## Marketing
 
 | Integration | Description |

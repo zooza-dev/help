@@ -190,3 +190,8 @@ GoCardless mandates are linked to the client, not the booking. When you create a
 - [Archive or delete a programme](archive-or-delete-programme.md)
 - [Send email to a class](sending-email-sms.md)
 - [GoCardless connection lifecycle](gocardless-connection-lifecycle.md)
+
+## Related
+
+- [Prepare your programmes for the new school year](prepare-new-school-year.md) — the wider checklist this fits into.
+- [Exporting data and reports](async-exports.md) — pulling the lists you need before a rollover.

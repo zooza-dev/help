@@ -39,6 +39,8 @@ The Settings screen is the central configuration hub for your Zooza account. It 
 | **Labels** | Create and manage labels for organizing programmes, classes, and clients. |
 | **Zooza Sites** | Manage Zooza Sites (micro-sites). |
 | **Custom Holidays** | Create and manage company-specific holiday periods used for session scheduling and cancellation rules. See [Custom holidays](../guides/custom-holidays.md). |
+| **Metadata keys** | Define custom key/value pairs that can be attached to programmes and surfaced to the booking widget. |
+| **Shared sessions** *(beta)* | Combine classes that run in the same room at the same time so the room's real capacity is respected. See [Shared sessions](../guides/shared-sessions.md). |
 
 ## Tools
 
@@ -49,6 +51,8 @@ The Tools section contains diagnostic and recovery utilities for owners and assi
 | Tool | Description |
 |---|---|
 | **MATKO** | Diagnose why a specific session is not visible to a client as a make-up option. Runs 19 eligibility checks and shows exactly which one is failing. See [MATKO — Diagnose why a make-up session is not showing](../troubleshooting/matko-replacement-diagnostic.md). |
+| **Where to find things** | A quick reference for locating any screen in Zooza. See [Where to find things](../guides/where-to-find.md). |
+| **System messages** | Activity Zooza raises for you — see [System messages](../guides/system-messages.md). |
 | **Trash** | Recover sessions, classes, and registrations deleted in the last 30 days. After 30 days, items are permanently removed. See [Recover deleted sessions, classes, and registrations](../guides/trash-and-restore.md). |
 
 ## Billing Periods
