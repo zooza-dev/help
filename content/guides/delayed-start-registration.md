@@ -30,6 +30,8 @@ You could already do this as an admin by setting a start date on a booking. What
 3. Set the **maximum window** — how many days ahead a client may push their start.
 4. Save.
 
+![Screenshot — delayed start registration](../../assets/images/delayed-start-registration-01.png)
+
 The window is the only control you need. You are not managing individual start dates; you are saying how far into the term someone may join and let the booking form work out the rest.
 
 > A window of `0` disables the feature. That is the default, and it is the behaviour every class had before.
@@ -41,6 +43,7 @@ Individual classes can override the programme's setting where one class needs a 
 They do not get a free-form date picker. The booking form offers **two or three real session dates** as options, each showing the price for starting then. The price is calculated by Zooza, not by the form, so what they pick is what they pay.
 
 The options are always actual upcoming sessions of that class, inside the window you set.
+![Screenshot — delayed start registration](../../assets/images/delayed-start-registration-02.png)
 
 ## What happens to the sessions before their start
 

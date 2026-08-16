@@ -61,7 +61,7 @@ No. **Zooza only submits the location; it does not verify it.** Verification is 
 
 ## Why are the opening hours wrong on a place I submitted to Google?
 
-Zooza prefills **Monday–Friday, 09:00–17:00** as a placeholder because it does not track opening hours — your classes are individual scheduled events, not shop opening times. After your location is verified, **update the hours directly in your Google Business Profile** to match your studio's real availability.
+Zooza prefills **Monday–Friday, 09:00–17:00** as a placeholder because it does not track opening hours — your classes are individual scheduled events, not shop opening times. After your location is verified, **update the hours directly in your Google Business Profile** to match when you are actually open.
 
 ## A real review came in but isn't linked to a client — why?
 

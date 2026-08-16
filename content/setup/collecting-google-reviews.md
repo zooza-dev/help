@@ -35,7 +35,7 @@ Zooza has two separate, parallel ways of hearing from clients. They do **not** r
 
 A client who has **already given NPS feedback is not asked for a Google review** — Zooza assumes that was their moment to share an opinion. Your existing NPS questions keep working exactly as before; turning Reviews on changes nothing about NPS.
 
-## Step 1 — Connect your studio to Google
+## Step 1 — Connect your location to Google
 
 Reviews works through your **Google Business Profile**. You connect once, for the whole company.
 
@@ -82,7 +82,7 @@ If a place has no matching Google location in the picker, you can create one fro
 2. Pick a **primary business category** from the autocomplete (Google requires one). Start typing and choose the closest match.
 3. Review the **opening hours**. Zooza prefills **Monday–Friday, 09:00–17:00** as a placeholder.
 
-   > ⚠️ **Zooza does not track opening hours.** Your classes are individual scheduled events, not shop opening times, so these prefilled hours are only a placeholder. **After your location is verified, update the hours in your Google Business Profile** to match your studio's real availability.
+   > ⚠️ **Zooza does not track opening hours.** Your classes are individual scheduled events, not shop opening times, so these prefilled hours are only a placeholder. **After your location is verified, update the hours in your Google Business Profile** to match when you are actually open.
 
 4. Confirm to submit. The place status becomes **Unverified** and the new Google location is created.
 

@@ -30,7 +30,7 @@ Families with multiple children are a high-value segment. When parents weigh the
 
 - **Removes the hesitation** — a visible discount makes the decision easier for parents.
 - **Increases retention across siblings** — once a family commits to multiple bookings, they are less likely to drop out.
-- **Differentiates your school** — not every provider offers automatic family pricing.
+- **Sets you apart** — not every provider offers automatic family pricing.
 
 A typical setup: 10% off for the 2nd child, 15% for the 3rd child, 20% for the 4th child or more. You configure the tiers to match your pricing strategy.
 

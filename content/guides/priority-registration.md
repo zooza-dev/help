@@ -94,4 +94,4 @@ If you set no public date, the class stays restricted to eligible customers for 
 - [Auto-enrolment responses](auto-enrolment-responses.md) — offering places directly instead.
 - [Share a class link](share-course-link.md) — an unlisted link for a hand-picked group.
 - [Delayed start](delayed-start-registration.md) — letting clients join a term late rather than waitlist them.
-- [Shared room capacity](shared-room-gluing.md) — when the returning-student and newcomer classes share a room.
+- [Shared sessions](shared-sessions.md) — when the returning-student and newcomer classes share a room.
