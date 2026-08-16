@@ -114,7 +114,27 @@ print("bot-only ratings:", dict(collections.Counter(r["rating"] for r in bot if 
 print()
 
 
+# Cold outreach that lands in the support inbox. It always looks like
+# B_no_kb_source -- the bot cites nothing because there is nothing to cite --
+# so without this it dominates the highest-risk bucket.
+SPAM = re.compile(
+    r"(upvote\.network|launchbuff|launchstag|krispitech|product hunt|"
+    r"free listing|permanent backlink|packages from \$|\$\d+/upvote|"
+    r"we (?:spotted|came across|found your product)|SEO-indexed)",
+    re.I,
+)
+
+
+def is_spam(r):
+    for role, _, text in r.get("turns", []):
+        if role == "customer" and SPAM.search(text or ""):
+            return True
+    return False
+
+
 def bucket(r):
+    if is_spam(r):
+        return "F_spam"
     if r["resolution_state"] in ("routed_to_team", "abandoned"):
         return "A_hard_signal"
     if r["rating"] is not None and r["rating"] <= 3:

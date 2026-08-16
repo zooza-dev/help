@@ -36,7 +36,9 @@ To handle duplicates:
 2. Delete the unpaid booking (the one without a completed payment).
 3. Always check the child's name and date of birth to confirm it's truly a duplicate.
 
-The system doesn't block repeat bookings because sometimes a parent legitimately needs to register a second child.
+The system doesn't block repeat bookings on purpose. Capturing the booking and the client's data is more useful than refusing it, and there are legitimate reasons for a second registration in the same class. The parent is warned and offered a link to their profile instead, but they can still continue.
+
+> Before deleting anything, check your unpaid-booking automation. Depending on how it is configured it may already cancel or waitlist the unpaid duplicate for you — see [Waiting list FAQ](waiting-list-faq.md).
 
 ## How do I delete test bookings?
 
