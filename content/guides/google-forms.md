@@ -32,13 +32,15 @@ Two things must be true, and Zooza tells you when they are not:
 
 You can attach a form to a **programme**, a **class**, a **session** or a **single booking** — put it where it belongs, and everyone under it gets it.
 
-1. Open the thing you want to attach it to and go to its **Forms** tab.
+1. Open the thing you want to attach it to, find its **Documents** card, and switch to the **FORMS** tab — it sits alongside **DOCUMENTS**, **VIDEOS** and **URLS**, and the count in brackets tells you how many are attached.
 2. Click **Attach a Google Form** and pick it in **Choose a Google Form**.
 3. Read the consent step (below) and choose.
 
-<!-- OBRÁZOK 1 — karta FORMS na programe/skupine/termíne/rezervácii, s pripojeným formulárom a jeho stavom -->
+![The Forms tab inside the Documents card, empty, with the Attach a Google Form button](../../assets/images/google-forms-01.png)
 
 > Sign in to Google with the account your company's forms are connected to. Zooza cannot read a form picked from a different account, and it will tell you which account to switch to.
+
+![Choosing which of your Google Forms to attach](../../assets/images/google-forms-02.png)
 
 ### The question Zooza asks to add
 
@@ -49,8 +51,9 @@ That question is how Zooza ties an answer to the right booking.
 **You can decline.** Choose **Attach without the reference question** and the form still attaches and still collects answers — Zooza then matches them **by email address only**. That works, but it is less reliable: a parent who fills the form in from a different address produces an answer nobody can place.
 
 The form's status tells you which mode it is in: **Collecting answers**, or **Matched by email only**.
+![The Before the form is attached dialog, with Agree and attach or Attach without the reference question](../../assets/images/google-forms-03.png)
 
-<!-- OBRÁZOK 2 — dialóg 'Before the form is attached' s oboma tlačidlami -->
+![The form once attached, showing its status](../../assets/images/google-forms-04.png)
 
 ## Form options
 
@@ -63,8 +66,6 @@ Each attached form has two settings.
 **Send automatically** — **Do not send automatically**, or **Send when a booking is created**. With the second, Zooza emails the form to the client as soon as they book.
 
 The send option is not offered on a form attached to a single booking, because by then the booking already exists.
-
-<!-- OBRÁZOK 3 — Form options: Requirement a Send automatically -->
 
 ## What the client sees
 
@@ -82,8 +83,7 @@ An **unmatched** answer is one Zooza could not tie to a booking, usually because
 
 Open it, click **Match**, find the right booking, and the answers move onto that client's card. The Forms library shows a count of how many are waiting to be matched.
 
-<!-- OBRÁZOK 4 — Answers so stĺpcami Filled in by / Submitted a nejakou nespárovanou odpoveďou -->
-
+![The Answers view for an attached form](../../assets/images/google-forms-05.png)
 ## The form library
 
 **Settings → Integrations → Forms** lists every Google Form attached anywhere in your company, with the number of stored answers for each.
@@ -95,7 +95,7 @@ This is where the difference between two actions matters:
 | **Detach** (on a programme, class, session or booking) | The form stops being attached there. **Answers already submitted are kept**, and the form stays in the library. |
 | **Delete form** (in the library) | The form is detached **everywhere**, and **every answer to it is permanently deleted, across every booking**. |
 
-<!-- OBRÁZOK 5 — Form library v Settings → Integrations → Forms, so Stored answers a 'x to match' -->
+![The Form library under Integrations, listing every attached form and its stored answers](../../assets/images/google-forms-06.png)
 
 Deleting does not touch the form in your Google Drive — that is still yours, with its own responses. It is the copy of the answers inside Zooza that goes, and it cannot be undone.
 
