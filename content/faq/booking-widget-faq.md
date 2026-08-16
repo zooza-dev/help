@@ -49,7 +49,7 @@ The form asks for an email address or phone number before continuing. If it matc
 
 **There is a way out at both steps**, which matters when a parent gets stuck:
 
-- On the email/phone step, **Continue as guest** sits below an **OR** separator as a full button — logging in and carrying on as a guest are equally weighted.
+- On the email/phone step, **Continue as guest** sits below an **OR** separator as a full-width button — visually the more prominent of the two, so nobody is left hunting for a way past.
 - On the code step, after **Verify code**, the actions row offers **Resend code**, **Use a different email or phone**, and continuing as a guest. A parent whose code does not arrive is never trapped.
 
 > If someone tells you they cannot get past the login screen, they are probably looking at an older version of your embedded widget. Refresh the page — the escape hatch is standard.
