@@ -25,9 +25,9 @@ You could already do this as an admin by setting a start date on a booking. What
 
 ## Turning it on
 
-1. Go to **Programmes** → open the programme → **Settings**.
-2. Switch on **register now, start later**.
-3. Set the **maximum window** — how many days ahead a client may push their start.
+1. Go to **Programmes → the programme → Settings → Online booking**.
+2. Switch on **Allow register now, start later**.
+3. Set **Latest start (days ahead)** — the maximum number of days ahead a client may set their start, counted from the earliest available date.
 4. Save.
 
 ![Screenshot — delayed start registration](../../assets/images/delayed-start-registration-01.png)

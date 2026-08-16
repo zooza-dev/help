@@ -34,9 +34,11 @@ A booking carries four separate note fields. They look similar in the interface 
 
 ## Editing them from the bookings list
 
-You do not have to open each booking. On the bookings list, each note appears on the booking's tile with an edit affordance — click it and a small modal opens for that note alone.
+You do not have to open each booking. On the **Bookings** list, the notes appear on each booking's tile with an edit affordance — click it and a small modal opens for that note alone.
 
 That includes the public note, which previously had no place on the list at all.
+
+> **If you cannot see them**, the tile is configurable. Use **Customize tile** on the Bookings list to add the note widgets you want on show.
 
 ## Rich text in the public note
 
