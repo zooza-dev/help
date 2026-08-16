@@ -47,6 +47,13 @@ Yes. **Continue as guest** is always there, and logging in is never required to 
 
 The form asks for an email address or phone number before continuing. If it matches someone you already have, Zooza sends a one-time code and signs them in without leaving the page — no redirect, no lost progress. If it matches nobody, or they would rather not, they click **Continue as guest** and carry on exactly as before.
 
+**There is a way out at both steps**, which matters when a parent gets stuck:
+
+- On the email/phone step, **Continue as guest** sits below an **OR** separator as a full button — logging in and carrying on as a guest are equally weighted.
+- On the code step, after **Verify code**, the actions row offers **Resend code**, **Use a different email or phone**, and continuing as a guest. A parent whose code does not arrive is never trapped.
+
+> If someone tells you they cannot get past the login screen, they are probably looking at an older version of your embedded widget. Refresh the page — the escape hatch is standard.
+
 Where the prompt appears:
 
 - At the top of the booking form, as **Already have an account? Log in**.
@@ -66,6 +73,8 @@ A guest booking still works; it just cannot benefit from any of the above at the
 ### What changes after someone logs in
 
 The step re-renders in place. The class list is fetched again, so a class that was hidden from anonymous visitors appears, and their saved details and children are filled in for them.
+
+**Nothing they already chose is lost.** The class, whether they picked a trial, blocks or the full term, a delayed start date and any products all survive the login — they carry on from where they were rather than starting again.
 
 > **If a parent says the class you sent them is not on the list**, ask whether they are logged in. A class in its priority window is genuinely invisible until Zooza knows they are eligible — the link is not broken.
 
