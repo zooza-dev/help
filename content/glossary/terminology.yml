@@ -1211,6 +1211,38 @@ terms:
       When they say "payment not arriving", check GoCardless consent expiry first.
     public: true
 
+  - id: mobile_access_notifications
+    canonical_en: "Mobile access and notifications"
+    category: "platform"
+    definition: >
+      Zooza is a web app. There is no native mobile app and no push
+      notifications. Any page — the admin app or a parent's profile — can be
+      added to a phone home screen from the browser, which opens it full-screen
+      but sends nothing. Notifications reach people by email, SMS or WhatsApp.
+    context:
+      admin: "Using Zooza on mobile"
+      client: "Profile on my phone"
+    synonyms:
+      - "add to home screen"
+      - "home screen shortcut"
+    intent_keywords:
+      en: ["push notification", "mobile app", "download the app", "add to home screen",
+           "shortcut on phone", "app icon", "notification on phone"]
+      sk: ["push notifikacie", "mobilna aplikacia", "stiahnut aplikaciu", "pridat na plochu",
+           "skratka na ploche", "ikona na telefone", "notifikacia na telefon"]
+      cz: ["push notifikace", "mobilní aplikace", "přidat na plochu", "zkratka na ploše"]
+      ro: ["notificari push", "notificări push", "aplicatie mobila", "aplicație mobilă",
+           "shortcut", "scurtatura", "scurtătură", "ecranul telefonului",
+           "pagina de profilul meu", "profilul meu"]
+      hu: ["push értesítés", "mobilalkalmazás", "hozzáadás a kezdőképernyőhöz"]
+      de: ["Push-Benachrichtigung", "mobile App", "zum Startbildschirm hinzufügen"]
+    ai_notes: >
+      A question about push notifications is answered with what Zooza actually
+      sends — email, SMS, WhatsApp — never with a roadmap answer. A question
+      about a shortcut or an app icon is answered with the home-screen steps,
+      which work for a parent's profile page as well as the admin app.
+    public: true
+
   - id: invoice-buyer
     canonical_en: "Invoice buyer"
     category: "payments"

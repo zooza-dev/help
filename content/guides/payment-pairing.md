@@ -219,7 +219,16 @@ No, but GoCardless provides the most reliable and low-maintenance automation, es
 
 ### Can I use multiple bank accounts?
 
-Yes. This is fully supported when using GoCardless.
+Yes. An invoice profile can hold several bank accounts and marks one as its default — that part does not depend on which method reads your statements.
+
+You can then choose which account a booking collects to, at whatever level makes sense: **Default profile → Programme → Class → Booking**. The lowest level that sets something wins, everything above it is inherited. See [Choose which invoice profile applies](invoice-profile-overrides.md).
+
+Where the method does matter is **reading** those accounts:
+
+- **GoCardless** supports several IBANs on one profile.
+- **The bank email parser** handles one IBAN per profile.
+
+So a profile with three accounts that all need automatic matching wants GoCardless. See [Inbound payments](inbound-payments.md#which-method-should-i-use).
 
 ### Why was a payment not paired even though automatic pairing is enabled?
 
