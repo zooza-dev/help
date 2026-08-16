@@ -107,6 +107,12 @@ Then review the automation itself, or every unpaid booking will keep landing on 
 
 > The confirmation email carries the payment status and a link to the parent's profile. For anything payment-related, sending parents to their profile is usually faster than issuing an invoice.
 
+## Could a later start date avoid the waiting list?
+
+Often, yes. If the class is full now but frees up shortly, [delayed start](../guides/delayed-start-registration.md) offers the client a later joining date instead of the waiting list — they pay from that date and take a seat that was going to sit empty.
+
+It has to be switched on per programme, with a window of how far ahead someone may join.
+
 ## Make-up session waitlist
 
 ### How does the make-up session waitlist work?

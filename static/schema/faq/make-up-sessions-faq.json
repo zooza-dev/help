@@ -30,6 +30,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can I stop parents choosing their own make-up session?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. There is a per-programme setting that splits the flow: parents still cancel themselves, but only you assign the replacement.\n\nSwitch it on when capacity, grouping or level means a child cannot simply drop into any session — the usual case for graded or streamed classes, where a parent picking the wrong group creates work rather than saving it.\n\nWith the setting off (the default, and how make-ups have always worked) a parent cancels and picks their own replacement date.\n\nWith it on:\n\n1. The parent cancels the session as usual.\n2. They are asked when they would like the replacement — as soon as possible, no preference, or a specific request with a note. Answering is required, so their intent is not lost.\n3. The self-service picker disappears. They cannot choose or move a replacement date.\n4. You see their preference on the credit, alongside the cancellation reason, and assign the session.\n\nCancelling a replacement that has already been assigned is unchanged — that still follows your other make-up settings.\n\nEveryone gets a confirmation email when a replacement is assigned, whether you assigned it or the parent picked it themselves. Families are told which session they are in rather than having to check."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What is the 4-day rule for make-up session availability?",
       "acceptedAnswer": {
         "@type": "Answer",

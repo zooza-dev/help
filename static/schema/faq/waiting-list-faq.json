@@ -38,6 +38,14 @@
     },
     {
       "@type": "Question",
+      "name": "Could a later start date avoid the waiting list?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often, yes. If the class is full now but frees up shortly, delayed start offers the client a later joining date instead of the waiting list — they pay from that date and take a seat that was going to sit empty.\n\nIt has to be switched on per programme, with a window of how far ahead someone may join."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Make-up session waitlist",
       "acceptedAnswer": {
         "@type": "Answer",

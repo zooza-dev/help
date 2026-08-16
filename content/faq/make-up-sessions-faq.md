@@ -40,6 +40,25 @@ There are two levels for this setting:
 
 If the per-class value is 0 and set to "add to global", the global setting applies unchanged. To remove extra capacity from a specific class, set the per-class value to 0 and choose "replace global setting".
 
+## Can I stop parents choosing their own make-up session?
+
+Yes. There is a per-programme setting that splits the flow: **parents still cancel themselves, but only you assign the replacement.**
+
+Switch it on when capacity, grouping or level means a child cannot simply drop into any session — the usual case for graded or streamed classes, where a parent picking the wrong group creates work rather than saving it.
+
+**With the setting off** (the default, and how make-ups have always worked) a parent cancels and picks their own replacement date.
+
+**With it on:**
+
+1. The parent cancels the session as usual.
+2. They are asked when they would like the replacement — **as soon as possible**, **no preference**, or **a specific request** with a note. Answering is required, so their intent is not lost.
+3. The self-service picker disappears. They cannot choose or move a replacement date.
+4. You see their preference on the credit, alongside the cancellation reason, and assign the session.
+
+Cancelling a replacement that has already been assigned is unchanged — that still follows your other make-up settings.
+
+> **Everyone gets a confirmation email when a replacement is assigned**, whether you assigned it or the parent picked it themselves. Families are told which session they are in rather than having to check.
+
 ## What is the 4-day rule for make-up session availability?
 
 Classes that have not yet started do not appear as make-up options. The system only makes a class available for make-up bookings **4 days before the class's start date**. This prevents make-up students from occupying capacity that should be reserved for full-paying bookings.
