@@ -30,7 +30,11 @@ Two things must be true, and Zooza tells you when they are not:
 
 ## Attaching a form
 
-You can attach a form to a **programme**, a **class**, a **session** or a **single booking** — put it where it belongs, and everyone under it gets it.
+You can attach a form to a **programme**, a **class**, a **session** or a **single booking** — put it where it belongs, and everyone under it gets it. A form on the programme reaches every class in it; a form on one class reaches only that class.
+
+**Attaching the same form at two levels is safe.** A form on the programme *and* on one of its classes still counts as one form for that client — they are not asked to fill it in twice, and their completion is not counted twice. Where the two attachments disagree on the options, the more specific one wins, so a class can override what the programme set.
+
+One exception worth knowing: if either attachment says to send automatically, it is sent.
 
 1. Open the thing you want to attach it to, find its **Documents** card, and switch to the **FORMS** tab — it sits alongside **DOCUMENTS**, **VIDEOS** and **URLS**, and the count in brackets tells you how many are attached.
 2. Click **Attach a Google Form** and pick it in **Choose a Google Form**.
@@ -53,7 +57,7 @@ That question is how Zooza ties an answer to the right booking.
 The form's status tells you which mode it is in: **Collecting answers**, or **Matched by email only**.
 ![The Before the form is attached dialog, with Agree and attach or Attach without the reference question](../../assets/images/google-forms-03.png)
 
-![The form once attached, showing its status](../../assets/images/google-forms-04.png)
+![An attached form showing its status, requirement, send trigger and the Options and Detach actions](../../assets/images/google-forms-04.png)
 
 ## Form options
 
