@@ -1215,10 +1215,11 @@ terms:
     canonical_en: "Mobile access and notifications"
     category: "platform"
     definition: >
-      Zooza is a web app. There is no native mobile app and no push
-      notifications. Any page — the admin app or a parent's profile — can be
-      added to a phone home screen from the browser, which opens it full-screen
-      but sends nothing. Notifications reach people by email, SMS or WhatsApp.
+      Zooza is a web app. There is no native mobile app, and no push
+      notifications — none exist and none are planned. Any page, the admin app
+      or a parent's profile, can be bookmarked to a phone home screen from the
+      browser; it opens full-screen but installs and sends nothing.
+      Notifications reach people by email, SMS or WhatsApp.
     context:
       admin: "Using Zooza on mobile"
       client: "Profile on my phone"
@@ -1237,8 +1238,9 @@ terms:
       hu: ["push értesítés", "mobilalkalmazás", "hozzáadás a kezdőképernyőhöz"]
       de: ["Push-Benachrichtigung", "mobile App", "zum Startbildschirm hinzufügen"]
     ai_notes: >
-      A question about push notifications is answered with what Zooza actually
-      sends — email, SMS, WhatsApp — never with a roadmap answer. A question
+      A question about push notifications is answered plainly: there are none
+      and none are planned, and what Zooza sends instead is email, SMS or
+      WhatsApp. Do not hedge or promise a future feature. A question
       about a shortcut or an app icon is answered with the home-screen steps,
       which work for a parent's profile page as well as the admin app.
     public: true

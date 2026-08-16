@@ -37,7 +37,7 @@ Zooza runs as a web app — there is no separate iOS or Android app to download.
 
 ## Parents: adding their profile to the home screen
 
-Parents often ask for "an app". There is none, and they do not need one — the same home-screen trick works on their profile page, and afterwards it opens full-screen with your icon, which is close enough to an app for most people.
+Parents often ask for "an app". There is none, and they do not need one. Adding their profile to the home screen is really a **bookmark**, but it opens full-screen with your icon, which is close enough to an app for most people.
 
 Send them their profile address — the page on your website where the profile widget lives — and the three steps above. Once added, the icon sits on their home screen and opens straight into their bookings and payments.
 
@@ -45,7 +45,7 @@ This is the practical answer when someone asks for a shortcut to their profile.
 
 ## Zooza does not send push notifications
 
-There are no phone push notifications, and adding the profile to the home screen does not create any. Nothing pops up on the lock screen.
+There are none, and none are planned. Adding a page to the home screen creates a **bookmark** — a shortcut that opens full-screen with an icon. It does not install anything and it does not send anything. Nothing appears on the lock screen.
 
 What Zooza does send:
 
