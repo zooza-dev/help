@@ -89,17 +89,57 @@ def frontmatter(path):
     return out
 
 
+def frontmatter_text(text):
+    """Same parse, but from a string rather than a path."""
+    out = {}
+    lines = text.splitlines()
+    if not lines or lines[0].strip() != "---":
+        return out
+    for line in lines[1:]:
+        if line.strip() == "---":
+            break
+        m = re.match(r"^([a-z_]+):\s*(.*)$", line)
+        if m:
+            out[m.group(1)] = m.group(2).strip().strip('"').strip("'")
+    return out
+
+
+def git(repo_path, *args):
+    r = subprocess.run(
+        ["git", "-C", repo_path, *args], capture_output=True, text=True
+    )
+    return r.stdout if r.returncode == 0 else None
+
+
 def sweep_specs(state):
-    """Implemented specs with no docs_communicated date, new since the baseline."""
+    """Implemented specs with no docs_communicated date, new since the baseline.
+
+    Reads origin/main rather than the working tree. A sibling repo is often
+    dozens of commits behind, and reading the checkout silently reports zero
+    new specs while implemented ones sit on the remote.
+    """
     current, undocumented = {}, []
     for repo in SPEC_REPOS:
-        d = os.path.join(REPO, "..", repo, "specs", "implemented")
-        if not os.path.isdir(d):
+        path = os.path.join(REPO, "..", repo)
+        if not os.path.isdir(os.path.join(path, ".git")):
             continue
-        for name in sorted(os.listdir(d)):
-            if not name.endswith(".md"):
+
+        git(path, "fetch", "origin", "main", "-q")
+        listing = git(path, "ls-tree", "-r", "--name-only", "origin/main", "specs/implemented/")
+        if listing is None:
+            print(f"  {repo}: cannot read origin/main -- skipped")
+            continue
+
+        behind = (git(path, "rev-list", "--count", "HEAD..origin/main") or "0").strip()
+        if behind.isdigit() and int(behind) > 0:
+            print(f"  {repo}: checkout is {behind} commit(s) behind; read from origin/main")
+
+        for rel in sorted(f for f in listing.splitlines() if f.endswith(".md")):
+            name = os.path.basename(rel)
+            blob = git(path, "show", f"origin/main:{rel}")
+            if blob is None:
                 continue
-            fm = frontmatter(os.path.join(d, name))
+            fm = frontmatter_text(blob)
             key = f"{repo}/{name}"
             current[key] = True
             if not re.match(r"^\d{4}-\d{2}-\d{2}$", fm.get("docs_communicated", "")):

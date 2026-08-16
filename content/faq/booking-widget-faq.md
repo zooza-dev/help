@@ -41,6 +41,34 @@ The booking widget displays class details (name, dates, instructor, price) pulle
 - **To hide a row entirely** — use custom CSS to hide the element. See [Customizing widgets](../guides/customizing-widgets.md).
 - **To change colours, fonts, or layout** — use custom CSS or the widget branding settings.
 
+## The booking form now asks people to log in — can they still book without an account?
+
+Yes. **Continue as guest** is always there, and logging in is never required to book on the public form.
+
+The form asks for an email address or phone number before continuing. If it matches someone you already have, Zooza sends a one-time code and signs them in without leaving the page — no redirect, no lost progress. If it matches nobody, or they would rather not, they click **Continue as guest** and carry on exactly as before.
+
+Where the prompt appears:
+
+- At the top of the booking form, as **Already have an account? Log in**.
+- On the details step, when they enter an email or phone that belongs to an existing customer.
+- On a filtered or direct-link class list, as a hint that logging in may reveal a class they cannot see.
+
+### Why the step exists
+
+It is not there to collect accounts. Several features can only work if Zooza knows who the person is **before** the booking is made:
+
+- **Loyalty and sibling discounts** — the price depends on what else this family has booked.
+- **Priority registration** — a class can be open to returning customers weeks before the public. Anonymous visitors do not see it at all. See [Priority registration](../guides/priority-registration.md).
+- **Auto-enrolment** — re-enrolling into the next term relies on the existing record.
+
+A guest booking still works; it just cannot benefit from any of the above at the moment of booking.
+
+### What changes after someone logs in
+
+The step re-renders in place. The class list is fetched again, so a class that was hidden from anonymous visitors appears, and their saved details and children are filled in for them.
+
+> **If a parent says the class you sent them is not on the list**, ask whether they are logged in. A class in its priority window is genuinely invisible until Zooza knows they are eligible — the link is not broken.
+
 ## Can I embed the booking form directly on my website?
 
 Yes. The booking widget is a JavaScript snippet you embed on any webpage. Go to **Settings → Widgets**, copy the embed code, and paste it into your website's HTML.
