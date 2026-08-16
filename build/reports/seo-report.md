@@ -5,11 +5,11 @@
 ## Summary
 
 - **Total docs checked:** 263
-- **Docs with errors:** 0
+- **Docs with errors:** 1
 - **Docs with warnings only:** 54
-- **Total errors:** 0
+- **Total errors:** 1
 - **Total warnings:** 167
-- **Overall:** PASS
+- **Overall:** FAIL
 
 ## Checks performed
 
@@ -26,6 +26,11 @@
 ## Global issues
 
 - **WARN:** static/sitemap.xml not found (generated at build time — OK)
+
+## Errors (must fix before export)
+
+### `content/faq/booking-widget-faq.md`
+- **ERROR:** Obsidian syntax remaining: '![[Pasted image 20260816214645.png]]'
 
 ## Warnings (recommended fixes)
 
@@ -305,4 +310,4 @@
 
 ---
 
-**Overall: PASS**
+**Overall: FAIL**

@@ -53,7 +53,7 @@ Go to **Programmes → the programme → Settings → Online booking**, and swit
 
 A programme with priority registration on does not force it onto every class. Open the class and untick **Include in the priority window** — it then opens to everyone on the normal schedule, so a class aimed at newcomers can go public while the rest of the term is reserved.
 
-The class also shows which phase it is in: **Priority only — never opens to the public**, **Priority now — opens to the public on {date}**, or **Open to the public**. Check there rather than working it out from the dates.
+The class also shows which phase it is in: **Priority only — never opens to the public**, **Priority now — opens to the public on** the date shown, or **Open to the public**. Check there rather than working it out from the dates.
 
 ## Who qualifies
 
