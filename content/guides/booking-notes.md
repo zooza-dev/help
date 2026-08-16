@@ -23,12 +23,12 @@ A booking carries four separate note fields. They look similar in the interface 
 |---|---|---|
 | **Note** | The client, on the booking form | You. It is what they told you when booking. |
 | **Internal note** | You | You. **It belongs to the client, not the booking.** |
-| **Booking note** | You | You. Tied to this one booking. |
+| **Note about the booking** | You | You. Tied to this one booking. |
 | **Public note** | You | **The client**, in their attendance record on the booking tab. |
 
 ## The two that catch people out
 
-**Internal note follows the client.** Editing it from one booking changes it on every booking that client has, now and in future. That is deliberate — it is the place for "always parks in the wrong bay" or "sibling in the Tuesday group" — but it is the wrong place for anything about one term. Use the **Booking note** for that. The interface warns you when you edit it.
+**Internal note follows the client.** Editing it from one booking changes it on every booking that client has, now and in future. That is deliberate — it is the place for "always parks in the wrong bay" or "sibling in the Tuesday group" — but it is the wrong place for anything about one term. Use **Note about the booking** for that. The interface warns you when you edit it.
 
 **Public note is read by the parent.** It shows up in their attendance record. Anything you would not say to their face does not belong there, and the fact that it looks like the other three note boxes is exactly why this needs saying.
 
@@ -49,6 +49,6 @@ Keep formatting light. A public note is read on a phone, inside an attendance re
 ## Which one should I use?
 
 - Something the parent should know → **Public note**
-- Something true about this term only → **Booking note**
+- Something true about this term only → **Note about the booking**
 - Something true about this family always → **Internal note**
 - Do not write in **Note** — that is the client's own words, and overwriting it loses what they told you
