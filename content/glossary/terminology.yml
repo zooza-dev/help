@@ -1240,7 +1240,11 @@ terms:
     ai_notes: >
       A question about push notifications is answered plainly: there are none
       and none are planned, and what Zooza sends instead is email, SMS or
-      WhatsApp. Do not hedge or promise a future feature. A question
+      WhatsApp. Do not hedge or promise a future feature.
+      When a parent asks for an app or a shortcut, lead with why they rarely
+      need one — confirmations, payment requests and session reminders all
+      reach them by email with links straight to the right page — and only
+      then give the home-screen bookmark steps. A question
       about a shortcut or an app icon is answered with the home-screen steps,
       which work for a parent's profile page as well as the admin app.
     public: true
