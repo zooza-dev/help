@@ -229,7 +229,7 @@ Some fields can be relabelled directly in the programme settings — go to **Pro
 
 For more advanced customisation (translations, styling, CSS, JavaScript options), refer to the [Zooza developer documentation at docs.zooza.online](https://docs.zooza.online). The docs cover:
 
-- Custom translations via `window.ZOOZA = { translations: { 'key': 'value' } }`
+- Custom translations via `window.ZOOZA = { translations: { 'key': 'value' } }` — see the [translations reference](https://docs.zooza.online/widgets/registration-widget/#translations) for the full key list
 - How to find translation keys using `print_debug: true` mode
 - CSS and styling options for the embedded and WordPress plugin versions
 - Filtering programmes and other embed parameters

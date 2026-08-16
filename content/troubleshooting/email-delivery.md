@@ -122,6 +122,28 @@ Session reminder emails (day-before notifications) are processed in batches. On 
 
 If a specific client is not receiving reminders even though the report shows Processed, check whether the client opted out of notifications on their booking. Go to the booking detail and look for a notification preference or opt-out flag.
 
+## The email arrived but looks wrong
+
+Delivery and appearance are different problems. If the message got there but the layout is broken or the logo is huge, nothing is wrong with sending.
+
+**How an email looks is decided by the recipient's email client.** Zooza defines the layout, and in the large majority of clients it renders as intended. Gmail, Outlook and Seznam each apply their own rules on top, and they do not agree with each other.
+
+**Forwarding is the usual culprit.** When someone forwards a Zooza email, their client re-writes the HTML — and it commonly strips the size limits on images. That is why a logo can look correct on arrival and oversized in a forward. It happens outside Zooza and cannot be prevented from our side.
+
+### Check what was actually sent
+
+Before changing anything, look at the message as Zooza sent it:
+
+1. Go to **Communication → Message history** (`/#communication/sent_communication`).
+2. Click the client's email in the list.
+3. You see the message in roughly the format it went out in.
+
+If it looks right there, the difference was introduced after delivery.
+
+### If the logo is too large
+
+You upload the logo at whatever size you have, and Zooza scales it down for email. If forwarded copies still show it oversized, upload a smaller version under **Settings → General** (`/#settings/general`). A smaller original limits how big it can get when a client strips the constraints.
+
 ## What Zooza cannot do
 
 - **Override recipient-side filtering.** If the client's email provider blocks or filters the email, Zooza cannot force delivery.

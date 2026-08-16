@@ -189,6 +189,22 @@ For initial setup instructions, see [Deploying Zooza on your website](../setup/d
 1. Ask the affected client to clear their browser cache and try again.
 2. If the loop persists, contact Zooza support with the affected client's email address. Support can refresh the affected account records on the server side.
 
+### Links in emails land on the homepage instead of the session
+
+**Problem:** Parents click **Cancel from session**, or a session link in a reminder email, and end up on your website's homepage. Nothing is cancelled. Several parents report it at once, usually from the same programme.
+
+**Cause:** The widget page address in your publish settings is wrong or missing. Links in Zooza emails are built from that address, so when it does not point at the page carrying the profile widget, the link falls back to the site root.
+
+**Fix:**
+
+1. Go to **Team & Settings → Publish**.
+2. Open each widget and check the page URL is the actual page on your site where that widget is embedded.
+3. Save, then click a link in a recent email to confirm.
+
+Worth knowing: **the emails themselves are fine.** Nothing needs resending, and the bookings are not damaged — the links start working again as soon as the address is corrected.
+
+> If this appears suddenly with no change on your side, check whether anyone edited the widget settings or moved a page on the website. A renamed page is enough to break every link already sent.
+
 ### Video widget redirecting instead of playing inline
 
 **Problem:** Clicking a video in the profile or on a video page redirects to a blog post or a different page instead of playing the video inline.
