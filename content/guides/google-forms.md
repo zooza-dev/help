@@ -36,6 +36,8 @@ You can attach a form to a **programme**, a **class**, a **session** or a **sing
 2. Click **Attach a Google Form** and pick it in **Choose a Google Form**.
 3. Read the consent step (below) and choose.
 
+<!-- OBRÁZOK 1 — karta FORMS na programe/skupine/termíne/rezervácii, s pripojeným formulárom a jeho stavom -->
+
 > Sign in to Google with the account your company's forms are connected to. Zooza cannot read a form picked from a different account, and it will tell you which account to switch to.
 
 ### The question Zooza asks to add
@@ -48,6 +50,8 @@ That question is how Zooza ties an answer to the right booking.
 
 The form's status tells you which mode it is in: **Collecting answers**, or **Matched by email only**.
 
+<!-- OBRÁZOK 2 — dialóg 'Before the form is attached' s oboma tlačidlami -->
+
 ## Form options
 
 Each attached form has two settings.
@@ -59,6 +63,8 @@ Each attached form has two settings.
 **Send automatically** — **Do not send automatically**, or **Send when a booking is created**. With the second, Zooza emails the form to the client as soon as they book.
 
 The send option is not offered on a form attached to a single booking, because by then the booking already exists.
+
+<!-- OBRÁZOK 3 — Form options: Requirement a Send automatically -->
 
 ## What the client sees
 
@@ -76,6 +82,8 @@ An **unmatched** answer is one Zooza could not tie to a booking, usually because
 
 Open it, click **Match**, find the right booking, and the answers move onto that client's card. The Forms library shows a count of how many are waiting to be matched.
 
+<!-- OBRÁZOK 4 — Answers so stĺpcami Filled in by / Submitted a nejakou nespárovanou odpoveďou -->
+
 ## The form library
 
 **Settings → Integrations → Forms** lists every Google Form attached anywhere in your company, with the number of stored answers for each.
@@ -86,6 +94,8 @@ This is where the difference between two actions matters:
 |---|---|
 | **Detach** (on a programme, class, session or booking) | The form stops being attached there. **Answers already submitted are kept**, and the form stays in the library. |
 | **Delete form** (in the library) | The form is detached **everywhere**, and **every answer to it is permanently deleted, across every booking**. |
+
+<!-- OBRÁZOK 5 — Form library v Settings → Integrations → Forms, so Stored answers a 'x to match' -->
 
 Deleting does not touch the form in your Google Drive — that is still yours, with its own responses. It is the copy of the answers inside Zooza that goes, and it cannot be undone.
 
