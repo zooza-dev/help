@@ -98,6 +98,18 @@ See [Recover deleted registrations, classes, and sessions](../guides/trash-and-r
 
 ## A registration disappeared — where is it?
 
+**It has not been destroyed.** A registration cannot be permanently removed from Zooza — even a deleted one stays visible, so it is always possible to trace what happened to it. Start from that, because it makes the search short.
+
+Almost every report of vanishing registrations turns out to be an automation:
+
+1. Check the **Trash** and the deleted-registrations view — see [Recover deleted registrations](../guides/trash-and-restore.md).
+2. Check your **unpaid-booking automation**. If it cancels or deletes unpaid registrations, one that was paid late, or paid manually after the automation ran, will already have been acted on. See [Auto-cancel unpaid registrations](../guides/auto-cancel-unpaid-registrations.md).
+3. Check whether a **waitlist automation** moved it rather than removed it — see [Waiting list FAQ](waiting-list-faq.md).
+
+If you report this to support, send **one concrete registration** rather than a description. The history on a single booking shows what acted on it and when, and that answers it in one step.
+
+
+
 If a registration is no longer visible in the Bookings list, check in this order:
 
 1. **Status filter** — change the filter to **All statuses**. It may be there as Cancelled, Pending, or Lost.

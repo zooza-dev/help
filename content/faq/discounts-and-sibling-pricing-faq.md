@@ -60,6 +60,7 @@ They then pay the reduced amount as normal.
 
 **When the field does not appear:**
 
+- **Card payment is not enabled on the programme.** This is the condition people miss. The whole flow hangs off the **Pay** button in the client's profile, and that button only exists when the programme accepts card payments. A programme collecting by bank transfer alone gives the client nowhere to enter a code. Extending it to transfers is planned but not there yet.
 - The booking is **paid in full**. The field only shows while there is an outstanding balance.
 - The order is not a **course** registration — product and shop orders are not covered.
 - You have switched discounts off on the widget.

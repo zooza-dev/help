@@ -99,6 +99,10 @@ Check whether it is still processing before assuming it failed.
 2. Go to **Reports & Insights → Session notifications** (`/#reports/event_notifications`) and scroll to the end. This shows what the system has actually processed and is the fastest way to tell "still running" from "finished and delivered nothing".
 3. Only then look at delivery — see [Email delivery troubleshooting](../troubleshooting/email-delivery.md).
 
+> **A job can sit for days without being stuck.** Sends go into a shared queue and leave it when the queue frees up — that is deliberate, and it is part of how deliverability is kept high across every account. If the queue was congested when you sent, a batch can wait considerably longer than you would expect.
+>
+> Cancelling and resending does not help; it puts you back at the end. If a job has waited long enough to worry you, tell support the job number rather than resending — they can see where it is in the queue.
+
 > **It is almost never a plan limit.** Your plan does include a monthly email allowance, but hitting it is rare and is not the first thing to suspect when a send appears to do nothing. Queueing, an unapproved job, or a delivery problem account for nearly every case. Check those three before anyone starts talking about upgrading.
 
 If the job completed, the recipient count was right, and the report shows the messages processed, the problem is delivery rather than sending — and that is a different investigation.

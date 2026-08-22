@@ -93,6 +93,8 @@ Both start from a price per session. The difference is that Membership charges a
 
 > A monthly template with the due day set to **1** charges on the first of each calendar month. Set it to **0** to charge on the same day of the month the client joined.
 
+> **Changing your legal form is not a reason to switch.** Becoming a non-profit or an association does not require Membership — plenty of associations charge a programme fee and always have. Pick the model that matches how you actually bill: a known total you divide, or a flat amount per period. Nothing in Zooza ties either one to a legal structure.
+
 ### Setting a fixed price for a class
 
 If you simply want one fixed sum with no instalments, choose the **one-off** collection method and enter the price. Nothing else is needed.
