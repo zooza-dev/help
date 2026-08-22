@@ -45,10 +45,16 @@ def last_activity(c):
     this week -- that human answer is the thing the intake exists to find.
     Filtering on created_at dropped it, and folder names are created_at, so the
     folder cannot be trusted either.
+
+    Deliberately NOT updated_at: that moves when anyone closes, snoozes or tags
+    a conversation, so a bulk close would drag a month-old thread into this week
+    and bury the real ones. The last actual message is what "last communication"
+    means.
     """
-    stamps = [c.get("updated_at") or 0, c.get("created_at") or 0]
+    stamps = [c.get("created_at") or 0]
     for part in (c.get("conversation_parts") or {}).get("conversation_parts", []):
-        stamps.append(part.get("created_at") or 0)
+        if part.get("body"):                       # a message, not a state change
+            stamps.append(part.get("created_at") or 0)
     return max(stamps)
 
 
