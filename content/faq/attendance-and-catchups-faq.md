@@ -152,6 +152,12 @@ Only the **Cancelled** attendance state generates a make-up credit. The **Did no
 
 If a client contacts you saying they did not receive a make-up credit, check the attendance record for that session. If it shows "Did not attend" instead of "Cancelled", that is why no credit was generated. You can manually change the state to "Cancelled" if the absence was legitimately excused.
 
+## I want to hold places for existing clients rather than juggle capacity
+
+Reducing a class from 7 to 5 and putting 2 into extra capacity is a workaround people reach for, and it does not do what they want — extra capacity is invisible to the booking form, so a new client enrolling normally can never take one of those seats, and neither can the returning family you were holding them for.
+
+What you want is [priority registration](../guides/priority-registration.md): the class opens to eligible returning clients first, and to everyone else later or never. Capacity stays honest at 7, and the seats are held by *who may book*, not by hiding them.
+
 ## What does the "extra capacity for make-up sessions" setting do?
 
 This setting allows more students into a session than the standard class capacity, specifically for make-up bookings. For example, if a class has a capacity of 10 and the extra capacity is set to +1, up to 11 students can attend that session — 10 regular plus 1 make-up.

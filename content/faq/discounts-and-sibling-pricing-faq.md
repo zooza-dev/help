@@ -41,11 +41,31 @@ Enable the discount code field on your booking form so clients can enter it duri
 
 ## How do sibling discounts work?
 
-There is no built-in automatic sibling detection yet. Currently, sibling discounts are handled manually using one of these approaches:
+Use the built-in **Sibling Discount**. Go to **Sales & Payments → Loyalty Programme → Sibling Discount**, add at least one rule, and switch it on — it will not enable without a rule.
 
-- **Discount code approach:** Create a single-use coupon and share it with parents who have multiple children. The parent applies it to the second child's booking.
-- **Percentage split:** If the discount should apply to one child out of two registered together, use half the percentage (e.g., 7.5% instead of 15%) since the code applies to the entire order total.
-- **Manual adjustment:** Register both children, then manually adjust the payment amount on one booking.
+Each rule is a tier:
+
+| Field | What it does |
+|---|---|
+| **From child** | Which child the tier starts at — 2nd, 3rd, 4th or 5th |
+| **Discount type** | **Percentage** or **Fixed amount** |
+| **Discount** | The value. Percentages must be between 1 and 100 |
+
+So "the second child at 50% off" is one rule: *from 2nd child, percentage, 50*. Add another tier if the third child should get more.
+
+### How to count children
+
+This is the setting that decides what "second child" actually means, and it is worth getting right:
+
+- **Per programme** — the count restarts in each programme. Two children in two different programmes are each a first child, and neither gets a discount.
+- **Per billing period** — children are counted together within a term.
+- **Across all programmes** — every child the family has with you counts, wherever they are booked.
+
+You can also limit the discount to **selected programmes** rather than all of them.
+
+> **Only registrations with Registered status count.** Waitlist and trial registrations are not included in the child count, so a family whose second child is still on the waiting list does not get the discount yet.
+
+Each tier must have a unique child number, and deleting the last rule switches the sibling discount off.
 
 ## Can a client add a discount code after they have already booked?
 

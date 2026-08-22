@@ -54,6 +54,14 @@
     },
     {
       "@type": "Question",
+      "name": "\"You do not have sufficient rights\" when exporting clients",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is a role question, not a subscription one. Exporting client data is available on every plan; whether you can do it depends on the role your account holds.\n\nOpen Team & Settings → Access, find your own account, and check its role. If it does not include client export, either have an owner run the export, or have them change your role.\n\nBeing able to export your data is not something a plan takes away — if the button refuses you, look at the role first. An answer that points you at pricing is answering a different question."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How do I change permissions for an existing role?",
       "acceptedAnswer": {
         "@type": "Answer",

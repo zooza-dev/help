@@ -247,6 +247,18 @@ The person at that email address can now log in via the passwordless login on yo
 
 A client is active if they have at least one booking in **Enrolled**, **Trial not started**, **Trial started**, or **Trial finished** status in a class that has not ended yet. A client is also active if they have a scheduled make-up session or unused credit. Active status is determined automatically — you cannot set it manually. For the full technical definition, see [Active and inactive clients](../guides/active-inactive-clients.md).
 
+## How do I turn off an alert showing on a client?
+
+Open the client's detail, go to **Notes and preferences**, and switch the alert off there.
+
+This is also where the promotional-email preference lives, so it is worth knowing as the general place for per-client switches rather than only for this one.
+
+## How do I find how many active clients I have?
+
+Go to **Clients** and use the **Active/Inactive** filter, set to **Active clients**. The count is shown above the list.
+
+That is the number your subscription is measured against, so it is the one to check before a billing question — not a count of registrations, which is a different thing entirely. One client with three bookings is one active client.
+
 ## Why is a client still showing as active after I cancelled their booking?
 
 Client deactivation runs once a day at **midnight**. If you cancel or delete a booking during the day, the client remains active until the next midnight run. Also check that the client does not have other active bookings, unused credits, or scheduled make-up sessions — any of these keeps the client active.

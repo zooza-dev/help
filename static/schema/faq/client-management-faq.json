@@ -150,6 +150,22 @@
     },
     {
       "@type": "Question",
+      "name": "How do I turn off an alert showing on a client?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open the client's detail, go to Notes and preferences, and switch the alert off there.\n\nThis is also where the promotional-email preference lives, so it is worth knowing as the general place for per-client switches rather than only for this one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find how many active clients I have?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to Clients and use the Active/Inactive filter, set to Active clients. The count is shown above the list.\n\nThat is the number your subscription is measured against, so it is the one to check before a billing question — not a count of registrations, which is a different thing entirely. One client with three bookings is one active client."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Why is a client still showing as active after I cancelled their booking?",
       "acceptedAnswer": {
         "@type": "Answer",

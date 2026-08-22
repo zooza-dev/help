@@ -4,11 +4,11 @@
 
 ## Summary
 
-- **Total docs checked:** 264
+- **Total docs checked:** 265
 - **Docs with errors:** 0
-- **Docs with warnings only:** 54
+- **Docs with warnings only:** 55
 - **Total errors:** 0
-- **Total warnings:** 167
+- **Total warnings:** 168
 - **Overall:** PASS
 
 ## Checks performed
@@ -150,6 +150,9 @@
 - WARN: alt text too generic: `Screenshot — labels`
 - WARN: alt text too generic: `Screenshot — labels`
 - WARN: alt text too generic: `Screenshot — labels`
+
+### `content/guides/membership-fee-setup.md`
+- WARN: description too long (162 chars, max 160)
 
 ### `content/guides/message-templates.md`
 - WARN: description too long (211 chars, max 160)

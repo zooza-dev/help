@@ -126,6 +126,14 @@
     },
     {
       "@type": "Question",
+      "name": "I want to hold places for existing clients rather than juggle capacity",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reducing a class from 7 to 5 and putting 2 into extra capacity is a workaround people reach for, and it does not do what they want — extra capacity is invisible to the booking form, so a new client enrolling normally can never take one of those seats, and neither can the returning family you were holding them for.\n\nWhat you want is priority registration: the class opens to eligible returning clients first, and to everyone else later or never. Capacity stays honest at 7, and the seats are held by who may book, not by hiding them."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What does the \"extra capacity for make-up sessions\" setting do?",
       "acceptedAnswer": {
         "@type": "Answer",

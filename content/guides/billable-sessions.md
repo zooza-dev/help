@@ -83,6 +83,10 @@ A trial is a **separate setting on the programme**, not a property of a session:
 
 The two settings do different jobs: the trial controls **how a client gets in**, billable sessions control **what they are charged for**. See [Trial sessions](../setup/trial-sessions.md).
 
+**Why billable sessions alone give you the wrong outcome here.** Set the class to 36 billable and leave the 37th unmarked, and the client books the whole class: they owe for 36 sessions **up front** and have 37 available to attend. Payment is mandatory from the start, so the "free" first session is not free — it is bundled into a bill they have to settle before they have decided whether to continue.
+
+A free trial is the opposite shape. They attend one session, pay nothing, and only then choose. If you do not want to charge for the first session, that is the setting you want.
+
 ### "I set the number but nothing happened"
 
 This is the most common problem with the feature, and it is not a fault.

@@ -21,6 +21,8 @@ Classes divide a programme into time periods — for example, by term, level, or
 
 This guide walks you through creating a class, filling in the required details, and understanding what you see after the class is created.
 
+> **The fastest way to set up several at once is to ask the assistant.** [Zooza AI](../faq/claude-plugin-faq.md) can create programmes and classes for you — describe the term, the days and the venue and it does the wizard work. It uses your own permissions, so it can only do what your role allows. The manual route below is the reference when you want to see every field.
+
 ## How to create a class
 
 You can create a class in two ways:

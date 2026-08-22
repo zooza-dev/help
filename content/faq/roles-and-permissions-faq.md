@@ -59,6 +59,14 @@ Note: even with the Payments section hidden, Main instructors can still see paym
 
 The **Receptionist** role also hides financial data, but it only provides a daily calendar view (not the full weekly/monthly calendar) and has very limited functionality overall. <!-- REVIEW: Confirm whether receptionist daily view has been updated to show class names, as referenced in support conversation about calendar improvements. -->
 
+## "You do not have sufficient rights" when exporting clients
+
+This is a **role** question, not a subscription one. Exporting client data is available on every plan; whether *you* can do it depends on the role your account holds.
+
+Open **Team & Settings → Access**, find your own account, and check its role. If it does not include client export, either have an owner run the export, or have them change your role.
+
+> Being able to export your data is not something a plan takes away — if the button refuses you, look at the role first. An answer that points you at pricing is answering a different question.
+
 ## How do I change permissions for an existing role?
 
 You cannot edit the permissions of a role itself — roles are predefined. However, you can change which role is assigned to a team member:

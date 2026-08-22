@@ -64,6 +64,14 @@ Both work the same way during booking. Choose based on whether you want to sell 
 
 No. Entry passes are optional. Without them, clients simply pay per session at the unit price. Entry passes are useful when you want to offer bulk discounts (e.g. 10 sessions for the price of 8) or when you want clients to prepay.
 
+## Can I give an existing client a permanent discount on passes?
+
+Not automatically. **Discount codes work on course bookings, not on entry passes**, so there is no way to attach a standing discount to a pass for returning clients.
+
+What you can do instead is add the entries by hand: open the client's order and add the entries there. It is a manual step per client, but it puts them in the same position a discount would have.
+
+A proper discount on passes is planned as part of a wider rework of entry passes.
+
 ## What does "Require a valid entry pass" do?
 
 This is an attendance setting on the programme. When enabled, clients must have a valid (non-expired, non-exhausted) entry pass to book a session. Without a valid pass, the system blocks them from registering for sessions.
