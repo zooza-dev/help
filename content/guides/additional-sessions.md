@@ -27,6 +27,10 @@ A child wants to come to an extra class this week — not to make up a missed on
 
 Go to **Programmes → the programme → Settings → Additional sessions** and switch on **Allow additional sessions**. Clients then book them from their **Client Profile**.
 
+![The Additional sessions card in the programme settings](../../assets/images/additional-sessions-01.png)
+
+![Additional session settings — price, limit per booking and payment enforcement](../../assets/images/additional-sessions-02.png)
+
 ### Price
 
 Choose one of three:
@@ -59,6 +63,15 @@ Set the deadline to 5 days and a client cannot book a session starting in 3 days
 
 The **Availability** settings decide which sessions a client may book as an additional session.
 
+![Availability settings deciding which sessions can be booked as an additional session](../../assets/images/additional-sessions-03.png)
+
+![Availability settings, continued](../../assets/images/additional-sessions-04.png)
+
+![An additional session as it appears once booked](../../assets/images/additional-sessions-05.png)
+
+![The additional sessions charge on a booking, tracked separately from its own payments](../../assets/images/additional-sessions-06.png)
+
+![The additional session as a client sees it](../../assets/images/additional-sessions-07.png)
 ## How the money is tracked
 
 **Additional session charges sit apart from the booking's own payments.** They do not change the payment status of the booking — a client who owes for an extra session is not marked unpaid on their registration.
