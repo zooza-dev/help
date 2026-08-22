@@ -60,6 +60,8 @@ In Zooza, the balance shows **what the client still owes** (positive) or **what 
 
 > **Important:** A negative balance means the client has credit, not that they owe money. This is the opposite of what many people intuitively assume. If you see −€30, the client is €30 ahead, not €30 in arrears.
 
+> **The figure is not always shown with a sign.** In some places the amount appears bare, so an overpayment looks identical to a debt. Before chasing a client for a number you do not recognise, open the bookings behind it — an unexplained total is often two bookings that were paid twice over, not money owed.
+
 ## What is the difference between "Awaiting payment" and "Unpaid"?
 
 Both statuses mean the client owes money, but they indicate different urgency:

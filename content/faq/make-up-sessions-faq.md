@@ -22,6 +22,10 @@ When a child misses a session and the absence is properly recorded, the system g
 
 Make-up sessions must be enabled per programme. Go to **Programmes** → select the programme → **Settings** → **Make-up sessions** to configure them.
 
+## A client wants an extra session, not a make-up — what do I use?
+
+Make-up credits replace a session the client already paid for and missed. If they simply want to attend **more** than their booking covers, that is an [additional session](../guides/additional-sessions.md) — which you can charge for, unlike a make-up.
+
 ## What attendance state triggers a make-up credit?
 
 Only the **"Cancelled"** attendance state generates a make-up credit. If a child is marked as **"Did not attend"** (no-show), no make-up credit is created. This is by design — the system distinguishes between a planned absence (cancel in advance) and an unexcused no-show.
@@ -101,6 +105,14 @@ For the full setup walkthrough, admin views, and reporting, see the [Cross-compa
 - If this is a recurring issue (e.g. franchise network with regular cross-company make-ups), contact Zooza support to discuss whether cross-company attendance reporting can be aligned for your network.
 
 > **SK:** Náhradky klientov z inej spoločnosti patria pod účet tej inej spoločnosti. Nemôžeš ich preto v svojej adminstrácii trvalo označiť — dochádzka zostáva pod pôvodnou firmou. Pre vlastné záznamy si príchod poznač manuálne (poznámka na termíne alebo interný komentár).
+
+## My course says 60 days but clients can still use credits from an older term
+
+The **general** make-up settings override what you set on the course. That is the whole answer, and it catches people out because the course setting is the one they were looking at.
+
+If the general settings allow a regular make-up to become a **transferred** make-up once a course ends, then a set number of credits carries into the next billing period — and once carried, they run on **their own number of days**, not the course's. So a course set to 60 days can still be handing out credits from a term two periods back.
+
+Check **Settings → Make-up sessions** first, not the course, whenever the expiry behaviour does not match what you configured.
 
 ## Can make-up credits carry over to the next billing period?
 
