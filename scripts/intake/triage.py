@@ -38,69 +38,85 @@ def strip(h_):
     return html.unescape(t).strip()
 
 
-def dirs():
-    for d in sorted(os.listdir(ING)):
-        if START <= d <= END and os.path.isdir(os.path.join(ING, d)):
-            yield d
+def last_activity(c):
+    """When this conversation was last touched, not when it was opened.
+
+    A conversation opened before the window and answered inside it belongs to
+    this week -- that human answer is the thing the intake exists to find.
+    Filtering on created_at dropped it, and folder names are created_at, so the
+    folder cannot be trusted either.
+    """
+    stamps = [c.get("updated_at") or 0, c.get("created_at") or 0]
+    for part in (c.get("conversation_parts") or {}).get("conversation_parts", []):
+        stamps.append(part.get("created_at") or 0)
+    return max(stamps)
+
+
+def conversation_files():
+    """Every conversation on disk, wherever it was filed."""
+    return sorted(glob.glob(os.path.join(ING, "*", "conversation-*.json")))
 
 
 rows = []
-for d in dirs():
-    for f in sorted(glob.glob(os.path.join(ING, d, "conversation-*.json"))):
-        c = json.load(open(f))
-        cid = c.get("id")
-        ts = datetime.fromtimestamp(c.get("created_at", 0), timezone.utc).strftime("%Y-%m-%d %H:%M")
-        src = c.get("source") or {}
-        sa = src.get("author") or {}
-        turns = []
-        first_q = strip(src.get("body"))
-        if first_q and sa.get("type") in ("user", "lead"):
-            turns.append(("customer", sa.get("name"), first_q))
-        for p in (c.get("conversation_parts") or {}).get("conversation_parts", []):
-            a = p.get("author") or {}
-            body = strip(p.get("body"))
-            if not body:
-                continue
-            at, an = a.get("type"), a.get("name")
-            if at in ("user", "lead"):
-                role = "customer"
-            elif at == "bot" or an in BOT_NAMES:
-                role = "bot"
-            elif at == "admin":
-                role = "noise" if NOISE.search(body) else "human"
-            else:
-                role = "other"
-            turns.append((role, an, body))
+for f in conversation_files():
+    c = json.load(open(f))
+    touched = last_activity(c)
+    day = datetime.fromtimestamp(touched, timezone.utc).strftime("%Y-%m-%d")
+    if not (START <= day <= END):
+        continue
+    cid = c.get("id")
+    ts = datetime.fromtimestamp(touched, timezone.utc).strftime("%Y-%m-%d %H:%M")
+    src = c.get("source") or {}
+    sa = src.get("author") or {}
+    turns = []
+    first_q = strip(src.get("body"))
+    if first_q and sa.get("type") in ("user", "lead"):
+        turns.append(("customer", sa.get("name"), first_q))
+    for p in (c.get("conversation_parts") or {}).get("conversation_parts", []):
+        a = p.get("author") or {}
+        body = strip(p.get("body"))
+        if not body:
+            continue
+        at, an = a.get("type"), a.get("name")
+        if at in ("user", "lead"):
+            role = "customer"
+        elif at == "bot" or an in BOT_NAMES:
+            role = "bot"
+        elif at == "admin":
+            role = "noise" if NOISE.search(body) else "human"
+        else:
+            role = "other"
+        turns.append((role, an, body))
 
-        human_turns = [t for t in turns if t[0] == "human" and len(t[2]) > 30]
-        ai = c.get("ai_agent") or {}
-        cs = (ai.get("content_sources") or {}).get("content_sources", []) or []
-        rating = c.get("conversation_rating") or {}
-        # customer re-ask signal: >=2 customer turns after first bot reply
-        cust_after_bot = 0
-        seen_bot = False
-        for r, _, _ in turns:
-            if r == "bot":
-                seen_bot = True
-            elif r == "customer" and seen_bot:
-                cust_after_bot += 1
+    human_turns = [t for t in turns if t[0] == "human" and len(t[2]) > 30]
+    ai = c.get("ai_agent") or {}
+    cs = (ai.get("content_sources") or {}).get("content_sources", []) or []
+    rating = c.get("conversation_rating") or {}
+    # customer re-ask signal: >=2 customer turns after first bot reply
+    cust_after_bot = 0
+    seen_bot = False
+    for r, _, _ in turns:
+        if r == "bot":
+            seen_bot = True
+        elif r == "customer" and seen_bot:
+            cust_after_bot += 1
 
-        rows.append({
-            "id": cid, "date": ts, "day": d, "file": f,
-            "has_human": bool(human_turns),
-            "n_human": len(human_turns),
-            "resolution_state": ai.get("resolution_state"),
-            "last_answer_type": ai.get("last_answer_type"),
-            "n_sources": len(cs),
-            "sources": [s.get("title") for s in cs],
-            "source_types": sorted({s.get("content_type") for s in cs}),
-            "rating": rating.get("rating"),
-            "rating_remark": rating.get("rating_remark"),
-            "state": c.get("state"),
-            "cust_after_bot": cust_after_bot,
-            "tags": [t.get("name") for t in (c.get("tags") or {}).get("tags", [])],
-            "turns": turns,
-        })
+    rows.append({
+        "id": cid, "date": ts, "day": day, "file": f,
+        "has_human": bool(human_turns),
+        "n_human": len(human_turns),
+        "resolution_state": ai.get("resolution_state"),
+        "last_answer_type": ai.get("last_answer_type"),
+        "n_sources": len(cs),
+        "sources": [s.get("title") for s in cs],
+        "source_types": sorted({s.get("content_type") for s in cs}),
+        "rating": rating.get("rating"),
+        "rating_remark": rating.get("rating_remark"),
+        "state": c.get("state"),
+        "cust_after_bot": cust_after_bot,
+        "tags": [t.get("name") for t in (c.get("tags") or {}).get("tags", [])],
+        "turns": turns,
+    })
 
 json.dump(rows, open(os.path.join(OUT, "triage.json"), "w"), ensure_ascii=False, indent=1)
 

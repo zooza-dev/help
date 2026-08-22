@@ -55,7 +55,7 @@ def fetch_conversations(token: str, created_after: int) -> list[dict]:
     url = f"{API_BASE}/conversations"
     params = {
         "per_page": PAGE_SIZE,
-        "sort_field": "created_at",
+        "sort_field": "updated_at",
         "sort_order": "asc",
     }
 
@@ -66,7 +66,7 @@ def fetch_conversations(token: str, created_after: int) -> list[dict]:
             "operator": "AND",
             "value": [
                 {
-                    "field": "created_at",
+                    "field": "updated_at",
                     "operator": ">",
                     "value": created_after,
                 }
@@ -126,7 +126,7 @@ def fetch_tickets(token: str, created_after: int) -> list[dict]:
             "operator": "AND",
             "value": [
                 {
-                    "field": "created_at",
+                    "field": "updated_at",
                     "operator": ">",
                     "value": created_after,
                 }
@@ -209,6 +209,10 @@ def write_watermark(ts: int):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--all", action="store_true", help="Fetch all (ignore watermark)")
+    # NOTE: query, watermark and "since" are all updated_at. A conversation opened
+    # weeks ago and answered today must come back down, or the human answer never
+    # reaches disk. The output folder stays created_at so each conversation keeps
+    # one file that is overwritten in place.
     parser.add_argument("--days", type=int, help="Fetch last N days")
     args = parser.parse_args()
 
@@ -245,8 +249,9 @@ def main():
         time.sleep(0.3)
 
         save_conversation(conv, date_str)
-        if created > newest_ts:
-            newest_ts = created
+        touched = conv.get("updated_at") or created
+        if touched > newest_ts:
+            newest_ts = touched
 
     # --- Tickets ---
     print("\nFetching tickets...")
@@ -266,8 +271,9 @@ def main():
         time.sleep(0.3)
 
         save_ticket(ticket, date_str)
-        if created > newest_ts:
-            newest_ts = created
+        touched = ticket.get("updated_at") or created
+        if touched > newest_ts:
+            newest_ts = touched
 
     if newest_ts == created_after:
         print("\nNothing new.")
