@@ -103,6 +103,8 @@ The procedure for sending emails and SMS is the same:
 
 > **Note:** To check each sent email, we recommend that you include your own email address.
 
+> If the audience is awkward to express in filters, describe it to [Zooza AI](../faq/claude-plugin-faq.md) instead — "everyone in Monday classes who has not paid" is a sentence it can resolve into a list, and it is usually faster than building the filter by hand.
+
 ## Emailing a group the composer cannot target
 
 The **Target group** list in the composer is deliberately short. If the audience you want is not in it — everyone in lead collection, everyone in Monday classes, everyone on a waiting list — do not try to send to *All clients* and untick people. Send from the **Classes** list instead.

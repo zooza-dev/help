@@ -214,6 +214,8 @@ A log of automated session notification emails sent to clients.
 
 The dashboard card shows the latest date with processed and failed counts.
 
+> **Asking is often quicker than finding the right report.** [Zooza AI](../faq/claude-plugin-faq.md) can answer questions across your data directly — who has not paid in a class, how many trials converted last term, which sessions are under-filled — without you working out which report holds it. It reads with your own permissions, so it can only see what your role can.
+
 ## Refunds Report
 
 > **Permission required:** Owner role
