@@ -27,9 +27,9 @@ A child wants to come to an extra class this week — not to make up a missed on
 
 Go to **Programmes → the programme → Settings → Additional sessions** and switch on **Allow additional sessions**. Clients then book them from their **Client Profile**.
 
-![The Additional sessions card in the programme settings](../../assets/images/additional-sessions-01.png)
+![The Additional sessions card in the programme settings, with price, limit and payment enforcement](../../assets/images/additional-sessions-01.png)
 
-![Additional session settings — price, limit per booking and payment enforcement](../../assets/images/additional-sessions-02.png)
+![General settings for all programmes: a cancellation limit and Allow refund requests](../../assets/images/additional-sessions-02.png)
 
 ### Price
 
@@ -63,15 +63,40 @@ Set the deadline to 5 days and a client cannot book a session starting in 3 days
 
 The **Availability** settings decide which sessions a client may book as an additional session.
 
-![Availability settings deciding which sessions can be booked as an additional session](../../assets/images/additional-sessions-03.png)
+![The Additional sessions card in the parent's profile, showing the price and the payment deadline](../../assets/images/additional-sessions-03.png)
 
-![Availability settings, continued](../../assets/images/additional-sessions-04.png)
+![Choosing which session to attend, by class, location, instructor and time](../../assets/images/additional-sessions-04.png)
 
-![An additional session as it appears once booked](../../assets/images/additional-sessions-05.png)
+![The confirmation: the place is booked and the pay-by date is stated](../../assets/images/additional-sessions-05.png)
 
-![The additional sessions charge on a booking, tracked separately from its own payments](../../assets/images/additional-sessions-06.png)
+![The booked extra session listed on the booking, with a Cancel from session action](../../assets/images/additional-sessions-06.png)
 
-![The additional session as a client sees it](../../assets/images/additional-sessions-07.png)
+![The cancellation choice: go at a different time instead, or cancel from the session](../../assets/images/additional-sessions-07.png)
+## What the client sees
+
+In their profile, an **Additional sessions** card shows the **price per session** and how many they can still book — a number, or **Unlimited**. If payment is enforced, the card states the deadline in plain words: *pay within N days of booking, otherwise your place is cancelled automatically.*
+
+They pick a session from a list showing the class, venue, instructor and time, and confirm.
+
+**The place is confirmed straight away, before payment.** The confirmation says so, and gives a **Pay by** date. That is the point of the deadline setting — the seat is held, but only until that date.
+
+### Cancelling one they already booked
+
+A client can cancel an extra session themselves, up to a cut-off before it starts. They are told it is a session they paid for and offered two things:
+
+- **Go at a different time instead** — move to another session rather than lose it.
+- **Cancel from session** — give it up.
+
+The cut-off comes from **Set a limit for cancelling a scheduled session** in the general settings for all programmes.
+
+## Refunds are a request, not an automatic payout
+
+There is a separate switch in the general settings — **Allow refund requests**. With it on, a client who cancels can ask for their money back and **you approve or deny it**.
+
+Approving **records your decision. It does not move any money.** You still issue the refund through your payment provider yourself.
+
+That is worth telling your team plainly: an approved refund request is a decision on record, not a transaction. Nobody is paid until someone actually refunds them.
+
 ## How the money is tracked
 
 **Additional session charges sit apart from the booking's own payments.** They do not change the payment status of the booking — a client who owes for an extra session is not marked unpaid on their registration.
@@ -81,11 +106,11 @@ You see them as **Additional sessions charge** and **Additional sessions balance
 Two consequences:
 
 - **Cancelling an unpaid additional session** clears the charge automatically and records an **Additional session payment correction** entry.
-- **Refunds for paid additional sessions are manual.** Cancelling one that has already been paid does not return the money — you issue the refund yourself. See [Administrative refund](../faq/administrative-refund-faq.md).
+- **Refunds for paid additional sessions are manual.** Cancelling one that has already been paid does not return the money — see [Refunds are a request](#refunds-are-a-request-not-an-automatic-payout) above, and [Administrative refund](../faq/administrative-refund-faq.md).
 
-## What the client gets
+## The two emails
 
-Two emails, both under **Communication → Message templates**:
+Both live under **Communication → Message templates**:
 
 | Template | When |
 |---|---|
@@ -101,5 +126,7 @@ On the calendar, a session booked this way is labelled **Additional session**.
 **A client cannot book a session that is only a few days away.** That is the payment deadline. They can only book sessions starting at least that many days from now. Shorten the deadline if you want last-minute bookings.
 
 **A client attended but the booking still shows as paid.** Correct — additional session charges are tracked separately and do not affect the registration's payment status. Look at the additional sessions balance.
+
+**A client cancelled and expects their money back.** Cancelling does not refund anything. If refund requests are switched on they can ask, you approve, and that approval is only a record — someone still has to issue the refund through the payment provider.
 
 **A client was removed from a session they booked.** They did not pay inside the deadline and **Payment required** is on. The cancellation email tells them; if you would rather they kept the seat, switch to **Payment not enforced**.
