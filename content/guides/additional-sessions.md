@@ -1,12 +1,12 @@
 ---
 title: "Sell extra sessions on top of a booking"
-description: "Let a client buy an additional session beyond what their booking covers — free or paid, with or without payment enforced before they can attend."
+description: "Sell one or two extra sessions inside a term a client is already in — an upsell that fills seats you already have, without a second enrolment."
 slug: "additional-sessions"
 type: "guides"
 product_area: "Programmes"
 sub_area: ""
 audience: ["admin"]
-tags: ["additional-sessions", "extra-sessions", "capacity", "payments", "make-up", "client-profile"]
+tags: ["additional-sessions", "extra-sessions", "capacity", "payments", "make-up", "client-profile", "upsell", "revenue"]
 related_articles: ["make-up-sessions-faq", "capacity-and-extra-capacity", "price-and-payment-setup", "message-templates"]
 status: "published"
 source_legacy_path: ""
@@ -20,6 +20,23 @@ last_converted: "2026-08-22"
 A child wants to come to an extra class this week — not to make up a missed one, just an additional session. Until now the only way to allow that was a make-up credit, which is a free entitlement and the wrong tool for something you want to charge for.
 
 **Additional sessions** let a client book beyond what their booking covers, and let you charge for it.
+
+## Why you would turn this on
+
+A term has 6 or 12 sessions and a parent is happy with that. Then a week comes along where they would like one more — the child is enjoying it, there is a gap in the week, a friend is going. What they do **not** want is to enrol a second time and commit to another whole term for the same child.
+
+Today those parents have nowhere to go. Enrolling twice is far more than they asked for, and a make-up credit is free, so giving one away costs you the seat and earns nothing.
+
+Additional sessions are the middle step: **one or two extra sessions, paid for, inside the term they are already in.**
+
+The commercial case is that it sells the capacity you already have:
+
+- **The seats exist.** A class of ten running with seven is three empty places every week. An extra session fills one of them at full price without you scheduling anything new.
+- **The parent is already sold.** They know the class, the instructor and the venue. There is nothing to convince them of — the only reason they are not coming more often is that there was no way to.
+- **It is small enough to say yes to.** One session at the usual price is a decision a parent makes on the spot. A second enrolment is a decision they postpone.
+- **It reads as generous, not as a sale.** Mechanically this behaves like a make-up they can request whenever they like. The difference is that it is paid, so it does not eat into your free-credit budget.
+
+Where it earns most is classes that are running under capacity and programmes where attendance is enthusiastic — anything where the answer to "can we come again on Thursday?" is currently no.
 
 > This is not the same as a make-up session. A make-up replaces something the client already paid for and missed. An additional session is extra attendance they are buying. See [Make-up sessions FAQ](../faq/make-up-sessions-faq.md).
 

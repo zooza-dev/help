@@ -26,6 +26,8 @@ Make-up sessions must be enabled per programme. Go to **Programmes** → select 
 
 Make-up credits replace a session the client already paid for and missed. If they simply want to attend **more** than their booking covers, that is an [additional session](../guides/additional-sessions.md) — which you can charge for, unlike a make-up.
 
+Worth switching on if parents ask to come more often: a paid extra session sells a seat you already have, without them committing to a second enrolment for the same child, and without spending a free credit.
+
 ## What attendance state triggers a make-up credit?
 
 Only the **"Cancelled"** attendance state generates a make-up credit. If a child is marked as **"Did not attend"** (no-show), no make-up credit is created. This is by design — the system distinguishes between a planned absence (cancel in advance) and an unexcused no-show.
