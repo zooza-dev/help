@@ -308,9 +308,17 @@ def main():
             w(f"- `{s}`\n")
         w(f"\n```\n{{{' '.join('from:' + s for s in EMAIL_SENDERS)}}} after:{start:%Y/%m/%d} before:{(end + timedelta(days=1)):%Y/%m/%d}\n```\n")
 
-    state["last_run"] = run_day.isoformat()
-    state["last_window"] = [start.isoformat(), end.isoformat()]
-    save_state(state)
+    # Do not close a window we could not actually look at. A run against an empty
+    # ingest -- fetch skipped, failed, or nothing downloaded yet -- would otherwise
+    # mark the week reviewed and the conversations would never be seen. Cost a
+    # near-miss on 2026-08-22.
+    if not human and not bot:
+        print("\nNo conversations in this window. The window stays open —")
+        print("run the fetch and try again rather than losing the week.")
+    else:
+        state["last_run"] = run_day.isoformat()
+        state["last_window"] = [start.isoformat(), end.isoformat()]
+        save_state(state)
 
     print(f"\nQueue written to {os.path.relpath(report, REPO)}")
     print(f"  human {len(human)} | bot-only {len(bot)} | needs a look {len(priority)} | specs {len(fresh_specs)}")
