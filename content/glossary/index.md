@@ -200,6 +200,13 @@ An ongoing programme type with a recurring fixed charge and no fixed end date (m
 
 ---
 
+### Mobile access and notifications
+Zooza is a web app. There is no native mobile app to download and **no push notifications** — none exist and none are planned. What reaches people instead is email, SMS or WhatsApp.
+
+Any page can be bookmarked to a phone's home screen from the browser — the admin app, or a parent's own profile. It then opens full-screen like an app, but it installs nothing and sends nothing.
+
+---
+
 ## N
 
 ### Network transfer

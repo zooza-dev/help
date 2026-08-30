@@ -185,7 +185,16 @@ Edit **only** the master:
 {root}/sdd-workflow/translations/terminology.yml
 ```
 
-`help/content/glossary/terminology.yml` is a derived copy. Never edit it in place.
+`help/content/glossary/terminology.yml` is a derived copy. Never edit it in place —
+push the master across instead:
+
+```bash
+python3 scripts/sync_terminology.py --check   # is the copy behind?
+python3 scripts/sync_terminology.py           # bring it across
+```
+
+`--check` refuses to sync when the copy holds a term the master does not, because
+syncing would drop it. Merge it into the master first.
 
 Then check the reader-facing page, which drifts behind the dictionary:
 
@@ -229,7 +238,7 @@ Complete when:
 - Every `A_hard_signal` and `B_no_kb_source` item has a decision
 - Email threads for the window have been read
 - Every touched article has today's `last_converted` and a `related_articles` list
-- Dictionary additions are proposed, and `check_glossary_sync.py` reports no missing public term
+- Dictionary additions are proposed; `sync_terminology.py --check` and `check_glossary_sync.py` both come back clean
 - `export_all.py` passes with 0 errors
 - Specs now covered are stamped with `docs_communicated`
 - A short summary is printed: counts in, changes made, questions left for the user

@@ -65,7 +65,9 @@ def variants(name):
 
 public = [t for t in master.get("terms", []) if t.get("public")]
 headings = re.findall(r"^### (.+?)\s*$", page, re.M)
-have = {norm(h) for h in headings}
+have = set()
+for h in headings:
+    have |= variants(h)
 
 missing = [t for t in public if not (variants(t["canonical_en"]) & have)]
 
@@ -77,7 +79,7 @@ for t in master.get("terms", []):
     known |= variants(t["canonical_en"])
     for syn in (t.get("synonyms") or []):
         known.add(norm(syn))
-extra = [h for h in headings if norm(h) not in known]
+extra = [h for h in headings if not (variants(h) & known)]
 
 print(f"Master dictionary : {len(master.get('terms', []))} terms, {len(public)} public")
 print(f"Glossary page     : {len(headings)} entries")
