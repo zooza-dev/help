@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-06-26"
+last_converted: "2026-08-30"
+related_articles: ["make-up-sessions-faq","admin-attendance-management","cancellation-log","custom-replacement-lessons"]
 ---
 
 # Make - up sessions — Complete Guide
@@ -70,6 +71,15 @@ Make-up settings exist at two levels. Knowing which you are looking at saves a l
 Note that the app may show these labels in your own language — Slovak accounts see **Náhradné hodiny**, **Expirácia kreditov**, **Počet miest navyše pre náhradné hodiny**. The English names in this guide map to those directly.
 
 **Per-programme expiry and global inheritance:** If you set the expiry on a programme to **0 days**, that programme inherits the global expiry setting. Set a non-zero number of days on a programme only when you need a shorter or longer window than the global default for that specific programme.
+
+> **0 does not mean "never expires".** It is the most common misreading of this
+> field. Zero hands the decision to the global setting — and because the global
+> default is **Expire at end of class**, zero normally means credits last only as
+> long as the class runs, not all year and not indefinitely.
+>
+> If you want make-ups usable for a whole school year, do not leave it at 0. Either
+> set the global policy to **Expire after X days** with a number that covers the
+> year, or set that number on the programme itself.
 
 ---
 

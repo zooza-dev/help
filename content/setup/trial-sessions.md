@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: "legacy/0058_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-08-30"
+related_articles: ["trials-faq","trials-daily-business","individual-sessions","blocks-configuration"]
 ---
 
 # Trial sessions
@@ -23,6 +24,30 @@ Trial sessions are a great way to show what your programmes have to offer. You w
 This approach is ideal not only for attracting new clients, but also for launching new locations or introducing new types of programmes. Trial sessions are the first step to building trust and success.
 
 ![This approach is ideal not only for attracting new clients, but also for launching new...](../../assets/images/trial-lessons-02.png)
+
+## Where trials are configured
+
+**Programme → Settings → Trial tile → Edit.** Everything on this page is set there,
+per programme. It is not under Additional fields, and there is no global trial page.
+
+## "Trial session" means three different things — decide which you want first
+
+This is worth settling before you touch any setting, because people asking "how do I
+set up a trial?" are asking about one of three quite different arrangements:
+
+| What you actually want | How to build it |
+|---|---|
+| **A newcomer sits in on one of your normal classes** | The Trial tile, on the programme that class belongs to. This is what the rest of this article covers, and it is what most people mean. |
+| **A one-off taster date that is not part of a running class** | Build it as a one-off session — see [Individual sessions](../guides/individual-sessions.md). |
+| **A separate taster group with a single date** | Create a class of its own with one session, and offer that. |
+
+They behave differently, so picking the wrong one costs you a rebuild. The Trial tile
+carves trial places out of classes you already run; the other two create something
+new that people book instead of a class.
+
+> **If a colleague or a client asks you to "set up trial sessions", ask which of the
+> three they mean before you start.** The phrase is genuinely ambiguous and the
+> answer is not guessable from the question.
 
 ## Step-by-step trial session settings
 

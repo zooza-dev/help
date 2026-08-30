@@ -10,7 +10,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-13"
+last_converted: "2026-08-30"
+related_articles: ["payment-pairing","inbound-payments","email-payment-notifications","inbound-payments-setup"]
 ---
 
 # Payment not received in Zooza
@@ -65,6 +66,14 @@ Payments typically take **2–5 business days** to reach **Paid out** status. If
 ### 1. Verify the Zooza email address in your bank
 
 Go to **Settings → Billing profiles** and copy the Zooza-generated notification email address for the relevant profile. Then log in to your internet banking and find the payment notification rule. Confirm the destination address **exactly matches** the Zooza address — a single character difference means Zooza never receives the email.
+
+> **Fio bank, if your payments stopped arriving over the summer of 2026.** Fio changed
+> the format of its payment notification emails, which interrupted automatic matching
+> for accounts on both the Slovak and Czech branches. Zooza now reads both the old and
+> the new format, so matching works again with nothing for you to change.
+>
+> Payments that were missed while it was broken do **not** come back on their own —
+> add those manually. Anything from after the fix pairs normally.
 
 ### 2. Check if other transactions are being matched
 

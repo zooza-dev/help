@@ -14,6 +14,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can I stop a booking being made without payment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not by blocking it at the door — Zooza works the other way round, and on purpose.\n\nEvery booking gets a grace period to pay in, reminders go out during it, and\nauto-cancel clears out the ones still unpaid when it expires. You accept the\nbooking, then let the system tidy up.\n\nThe reasoning: a blocked booking is a lost lead. A parent who cannot finish the form\nat 21:00 because their card is upstairs usually does not come back. The same parent\nwith an unpaid booking and a reminder in their inbox usually pays.\n\nRestricting payment methods does not make payment mandatory either — leaving only\ncard payment enabled still produces bookings that complete unpaid.\n\nFull setup: Automatically cancel unpaid registrations."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Why are clients creating duplicate bookings?",
       "acceptedAnswer": {
         "@type": "Answer",

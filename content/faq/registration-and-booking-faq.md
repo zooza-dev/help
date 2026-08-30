@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-08-30"
 related_articles: ["booking-faq", "booking-widget-faq", "payments-and-billing-faq"]
 ---
 
@@ -26,6 +26,23 @@ Every programme in Zooza has a public booking page. Your main booking URL is `yo
 - **Class-specific** — add `?course_id=X&schedule_id=Y&place_id=Z` to pre-fill a specific class.
 
 Share these links via email, WhatsApp, or your website.
+
+## Can I stop a booking being made without payment?
+
+Not by blocking it at the door — Zooza works the other way round, and on purpose.
+
+Every booking gets a **grace period** to pay in, reminders go out during it, and
+**auto-cancel** clears out the ones still unpaid when it expires. You accept the
+booking, then let the system tidy up.
+
+The reasoning: a blocked booking is a lost lead. A parent who cannot finish the form
+at 21:00 because their card is upstairs usually does not come back. The same parent
+with an unpaid booking and a reminder in their inbox usually pays.
+
+Restricting payment methods does **not** make payment mandatory either — leaving only
+card payment enabled still produces bookings that complete unpaid.
+
+Full setup: [Automatically cancel unpaid registrations](../guides/auto-cancel-unpaid-registrations.md).
 
 ## Why are clients creating duplicate bookings?
 

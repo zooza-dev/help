@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-08-22"
+last_converted: "2026-08-30"
 ---
 
 # Charge a monthly membership fee
@@ -46,6 +46,29 @@ Two things that follow from the difference:
 
 - **A membership has no total.** What a client ends up paying depends on how long they stay.
 - **Your legal form is irrelevant.** Becoming an association or a non-profit is not a reason to switch to membership. Plenty of associations charge a programme fee. Pick the model that matches how you bill.
+
+## One programme, one payment type
+
+**You cannot mix membership and programme fee inside a single programme.** The
+payment type is set on the programme and applies to every class in it. There is no
+per-class override, so a programme cannot hold one class charging a monthly
+membership and another charging a course fee.
+
+When you need both, **split them into two programmes** — one for each payment model.
+That is a normal way to run an account, not a workaround. The only thing to watch is
+distribution: two programmes mean two places to share from, so be deliberate about
+which link goes to which parents.
+
+### Before you split, check whether blocks fit better
+
+If parents are really enrolling for the whole year and you just want the money in
+two or three instalments, splitting into separate programmes is the wrong tool.
+Keep one programme, put the sessions into [blocks](blocks-creation.md), and let
+parents sign up once for the year while Zooza collects per block. You get one
+registration and one class list instead of three.
+
+Split into separate programmes when the **payment model** genuinely differs. Use
+blocks when only the **collection schedule** differs.
 
 ## Frequency and discounts
 

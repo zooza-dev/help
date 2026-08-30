@@ -22,10 +22,18 @@
     },
     {
       "@type": "Question",
+      "name": "Which address do we log in at?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The login address follows your account's region, not your business name. There is\nno yourbusiness.zooza.app — that address does not exist and will not load.\n\nEveryone on your account uses the same one — you, your office staff and your\ninstructors alike. If you are not sure which is yours, it is the address you are\nalready using yourself; send that exact one on.\n\nThis is the first thing to check when someone \"never gets the login email\".\nRequesting a link on the wrong regional address does not fail loudly — it simply\nnever arrives, because that region has no account with their email on it. Send\nthem the right address before you start looking at spam folders."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "After changing an instructor's email, they cannot log in — what is the process?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "When you update an instructor's email address in Settings → Team, the instructor must log in again using the new email:\n\n1. Go to your Zooza app URL (e.g., yourbusiness.zooza.app).\n2. Enter the new email address.\n3. Click the login link that arrives by email.\n\nNo separate invitation is needed. The instructor simply requests a new login link with the corrected email. If the link does not arrive, check that the email address is spelled correctly in Settings → Team and ask the instructor to check their spam folder."
+        "text": "When you update an instructor's email address in Settings → Team, the instructor must log in again using the new email:\n\n1. Go to your regional Zooza app URL (see the table above).\n2. Enter the new email address.\n3. Click the login link that arrives by email.\n\nNo separate invitation is needed. The instructor simply requests a new login link with the corrected email. If the link does not arrive, check that the email address is spelled correctly in Settings → Team and ask the instructor to check their spam folder."
       }
     },
     {

@@ -38,10 +38,18 @@
     },
     {
       "@type": "Question",
-      "name": "How do trials interact with blocks?",
+      "name": "Can I offer trials on some blocks but not others?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "When trial sessions and blocks are used on the same class, a capacity conflict can occur. A trial booking reserves a spot in the entire class because the system cannot determine which block the trial client will ultimately join. Meanwhile, paying clients can register for specific blocks. The system prioritises paying bookings over trials, which may result in temporary over-capacity on individual sessions.\n\nTo reduce this issue, configure trial bookings to use extra capacity only (in the programme's trial session settings). This ensures trials do not consume spots reserved for paying clients."
+        "text": "Yes. Open the block and you will find Offer trial lessons for this block directly\nunder Allow online booking. Set it to No and that block's dates stop appearing as\nbookable trial dates.\n\nThe two toggles are independent. A block can be open for normal registration and\nclosed for trials, or the other way round — trials only, registration closed.\nSwitching one does not touch the other. This is what lets you run, say, blocks A and D\nfor registration while offering B and C as trial dates.\n\nThree things worth knowing:\n\n- The class-level trial setting is still the master switch. If the programme does\n  not offer trials at all, no block-level toggle brings them back. The block toggle\n  narrows the offer within a programme that already has trials on.\n- A new block inherits the class's trial setting, so you only touch it when you\n  want that block to differ.\n- Nothing changed for existing blocks. When this shipped, every block already in\n  place took on whatever its class was doing, so no setup silently changed behaviour.\n\n### A date that sits in two blocks\n\nOne session can belong to two blocks at once. If the blocks disagree, the permissive\none wins: the session stays bookable as a trial if any block it belongs to has\ntrials on. It drops out only when it belongs to blocks and none of them allow trials.\n\nA session that belongs to no block at all is unaffected and stays trial-eligible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do trials and blocks share capacity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Separate from who can book: a trial booking reserves a spot in the entire class,\nbecause the system does not know which block the trial client will eventually join.\nPaying clients enrol into specific blocks. Zooza prioritises the paying booking, which\ncan put an individual session temporarily over capacity.\n\nConfigure trials to use extra capacity only, in the programme's trial settings —\nthen trials never consume seats reserved for paying clients."
       }
     },
     {

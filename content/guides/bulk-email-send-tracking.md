@@ -10,12 +10,32 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-04-10"
+last_converted: "2026-08-30"
+related_articles: ["sending-email-sms","message-templates","notifications-center","system-messages"]
 ---
 
 # Bulk email send tracking
 
 When you send an email to a large group of clients, Zooza processes it as a **message job** in the background. You can track progress, see delivery results, and cancel a send that is still in progress.
+
+## SMS works the same way as email
+
+Bulk SMS runs through the same queue and the same progress view as bulk email. There
+is no separate SMS delivery screen any more — send from the composer, and you land on
+the job's progress page exactly as you would for an email.
+
+Two things this fixed, both of which you may have run into:
+
+- **The send that "failed" but went out anyway.** Sending SMS to a large audience used
+  to time out. You saw an error, sent again, and the audience received the message
+  twice — with your SMS credit charged twice. The send is now accepted immediately and
+  delivered in the background, so there is no timeout to fail on.
+- **The double-click double-send.** Creating the same send twice — a double click, a
+  slow request, a browser retry — now returns the send that already exists instead of
+  starting a second one. This applies to email as well, which carried the same risk.
+
+> **If you saw the old error, the messages had almost certainly gone out.** Check the
+> send history before resending anything.
 
 ## How bulk sending works
 

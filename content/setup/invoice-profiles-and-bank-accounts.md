@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-07-22"
+last_converted: "2026-08-30"
 related_articles: ["invoice-profile-overrides", "billing-and-invoicing", "invoicing-overview", "inbound-payments-setup", "payments-and-billing-faq"]
 ---
 
@@ -97,6 +97,31 @@ Expand the account and click **Delete**.
 ### Preview the QR code
 
 Click **QR Code Preview** on an account to see exactly the payment QR your clients get for that account. Each account has its own — this is the fastest way to check that a newly added IBAN produces a scannable code.
+
+### No account number or QR code on the client's payment
+
+**Symptom:** a parent opens a payment in their client profile and there is no bank
+account and no QR code to pay with. Registration otherwise works normally, so it
+usually surfaces as a parent complaint rather than anything you would notice yourself.
+
+**Cause:** the invoice profile that applies to that booking has **no bank account
+filled in**. The most common way this happens is that someone added a new invoice
+profile, and the bank account on the default profile was cleared in the process.
+
+**Fix:**
+
+1. Go to **Settings → Billing → Invoice profiles** and open the profile that applies
+   to the booking. If you are not sure which one that is, see
+   [Choose which invoice profile applies](../guides/invoice-profile-overrides.md).
+2. Fill in the bank account — `Account number (IBAN)` and `Account holder name`.
+3. **Fill in the `SWIFT code` as well.** The account number will show without it, but
+   **the QR code only appears once the SWIFT code is there.** This is the step people
+   miss, and it is why an account can be filled in and still produce no QR.
+4. Repeat for every other profile you actually collect money to.
+5. Reload a payment in the client profile to confirm both the account and the QR are back.
+
+> Check this whenever you add a second invoice profile, and check it the same day —
+> until it is fixed, every client sent to pay by transfer has nothing to pay to.
 
 ---
 

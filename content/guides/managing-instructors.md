@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-08-30"
+related_articles: ["user-roles","instructor-access-faq","role-selection-guide","login-and-account-faq"]
 ---
 
 # Add instructors and manage their access
@@ -93,6 +94,27 @@ These settings apply per-instructor, so you can give more detail to senior instr
 
 ---
 
+## How to remove an instructor
+
+Go to **Settings → General → Access** (the Team screen, `zooza.app/#settings/team`).
+Open the person and pick whichever of these three fits — they are not the same thing,
+and picking the wrong one is how history gets lost:
+
+| What you want | What to do |
+|---|---|
+| **They left, and you want their records kept** | Change their role to **Inactive**. Login is blocked; attendance, session history and instructor reports stay intact. **This is the right answer almost every time.** |
+| **They should not be in your account at all** | **Remove** them from the list. |
+| **You need their access gone right now** | **Change the email address** on the account. Login links go to an address they do not control, so access stops immediately. |
+
+> **Deleting is not "tidying up".** An instructor account carries every attendance
+> record they ever marked and every session they were paid for. Set them to Inactive
+> and the list stays clean without taking that with it — an archived class still shows
+> their sessions in the instructor report, which is what you want when someone
+> queries a past payment.
+
+Role changes take effect immediately — the instructor does not need to log out and
+back in.
+
 ## Common instructor problems and fixes
 
 **"My instructor says they can't find Classes in the menu"**
@@ -110,7 +132,7 @@ Check that the instructor is assigned to that class. Go to the class → **Detai
 - They can also go to the Zooza app URL, enter their email, and request a new login link at any time — no invitation needed
 
 **"I need to remove an instructor without losing their history"**
-Don't delete the account. Change their role to **Inactive** in **Settings → Team**. This blocks login but keeps all attendance records, session history, and reports intact.
+Set them to **Inactive** rather than deleting — see [How to remove an instructor](#how-to-remove-an-instructor) above for all three options and what each one keeps.
 
 ---
 

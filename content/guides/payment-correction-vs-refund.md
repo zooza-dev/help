@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-02-13"
+last_converted: "2026-08-30"
+related_articles: ["edit-payment-on-booking","recording-an-administrative-refund","discount-code","payments-and-billing-faq"]
 ---
 
 # Payment Correction vs Refund Guide
@@ -76,6 +77,36 @@ Common examples:
 If the original payment was made via Stripe, the refund is processed automatically through Stripe. For bank-transfer payments, the refund is recorded in Zooza but you must return the money manually from your bank account.
 
 <!-- REVIEW: Verify whether GoCardless payments can also be auto-refunded through Zooza or require manual bank action. -->
+
+## The client overpaid and is not getting the money back
+
+A common case, and neither Edit payment nor a plain refund covers it on its own: a
+client pays 170 € for a course that costs 80 €, and rather than returning the
+difference you want to keep it for their next course.
+
+Do it in two steps. The refund settles the books; the credit holds the money.
+
+1. **Record a refund on the booking** for the overpaid amount. In the note, write
+   that the money is not actually being returned — you are converting it into a
+   credit. This moves the booking from **Overpaid** to **Paid**.
+2. **Create a discount credit** on the same booking. Open **Credits and make-up
+   sessions**, click **Create credit for booking**, and create it under **Discounts**
+   for the amount the client still has with you. Set the expiry generously — a year is
+   sensible — so they have time to use it.
+
+The client then sees the credit and its discount code in their
+[client profile](../faq/client-profile-faq.md), and it applies at their next booking.
+
+> **Why the refund step is not optional.** Without it the booking stays Overpaid,
+> and an overpaid booking distorts every payment report and every outstanding-amount
+> figure it appears in. The note is what stops the refund line being read later as
+> money that left your bank account.
+
+> **This is not a make-up credit and not an entry pass.** A discount credit reduces
+> what the client owes next time. See
+> [Discount codes](discount-code.md) for how it reaches them.
+
+![Credits and make-up sessions screen on a booking, with the Create credit for booking button and the Discounts section](../../assets/images/payment-correction-vs-refund-01.png)
 
 ## When to use debt correction (moving payments between bookings)
 

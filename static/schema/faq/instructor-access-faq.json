@@ -9,7 +9,7 @@
       "name": "How do instructors log in to Zooza?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Instructors go to your Zooza app URL (e.g., asia.zooza.app), enter their email address, and receive a secure login link by email. There is no password — they click the link to access the system."
+        "text": "Instructors go to your regional Zooza app URL — zooza.app for Europe, uk.zooza.app for the UK, asia.zooza.app for the Middle East and Asia — enter their email address, and receive a secure login link by email. There is no password — they click the link to access the system.\n\nIf an instructor says the email never arrives, check these two things before anything else:\n\n1. They are on the right regional address. Requesting a link on the wrong one never produces an email. See Which address do we log in at?\n2. They are using the exact address listed for them in Settings → General → Access. A link is only ever sent to an address that already has access — a personal address the person prefers, or one with a typo, produces nothing.\n\nIf both are right and it still does not arrive, send Zooza support the instructor's name and the address they are trying, and the login attempt can be traced."
       }
     },
     {

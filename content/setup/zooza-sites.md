@@ -11,12 +11,23 @@ status: "published"
 source_legacy_path: "legacy/0074_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-08-30"
+related_articles: ["share-course-link","deploying-zooza-on-website","publish-widgets","customizing-widgets"]
 ---
 
 # Zooza Sites
 
 If you don’t have your own website and would like to make it as easy as possible to implement your programmes that you manage in Zooza, we offer you Zooza Sites service, i.e. your own website under our roof.
+
+> **You already have a basic public page without this.** Every account gets one
+> generated automatically at `zooza.site/your-account-name/register` and `/calendar`
+> — no setup, no cost. It is meant as a bridge until Zooza is on your own website,
+> not as a permanent home. See
+> [One link with everything you offer](../guides/share-course-link.md#one-link-with-everything-you-offer-while-you-get-set-up).
+>
+> Zooza Sites is what you buy when you are not going to build a site of your own and
+> that plain page is not enough: your own domain, templates and colour schemes, a
+> photo gallery, contact form and editable subpages.
 
 ## What Zooza sites offers
 

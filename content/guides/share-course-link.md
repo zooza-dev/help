@@ -11,13 +11,53 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
-related_articles: ["customizing-widgets", "creating-entry-passes"]
+last_converted: "2026-08-30"
+related_articles: ["customizing-widgets", "creating-entry-passes", "zooza-sites", "publish-widgets", "deploying-zooza-on-website"]
 ---
 
 # Share a course or class registration link
 
 The **Share** button on courses and classes lets you copy, open, or email a registration link directly from the admin panel — without leaving Zooza.
+
+## One link with everything you offer — while you get set up
+
+If what you want is a single link showing **all** your programmes, you already have
+one. Every Zooza account gets a public page generated for it automatically, from the
+day the account is created — nothing to set up, nothing to pay for.
+
+The address is built from your account name:
+
+| Page | Address |
+|---|---|
+| Booking form — everything open for registration | `zooza.site/your-account-name/register` |
+| Calendar — your whole schedule | `zooza.site/your-account-name/calendar` |
+
+**Do not type it out — copy it.** Open the **Classes** list and use **Share** on a
+class card to copy the real link. You get the exact address for your account, with
+nothing to guess and nothing to mistype, and you can paste it straight into a post or
+an email.
+
+**Accounts outside Europe carry their region in the address** — `zooza.site/uk/…` for
+the UK and `zooza.site/asia/…` for the Middle East and Asia. Europe has no prefix at
+all, so it is plain `zooza.site/your-account-name/…`. This mirrors your
+[login address](../faq/login-and-account-faq.md#which-address-do-we-log-in-at), and it
+is another reason to copy the link rather than assemble it by hand.
+
+> **Treat this as temporary.** It is a bridge for the weeks before Zooza is on your
+> own website — good for getting registrations open today, for a Facebook post, or
+> for a QR code on a flyer while the site is still being built. It is not where you
+> want parents landing long-term.
+>
+> **The destination is the widget on your own site.** Parents stay on your domain and
+> inside your brand, the traffic counts as yours, and the pages work for your SEO
+> rather than ours. See [Deploying Zooza on your website](../setup/deploying-zooza-on-website.md).
+>
+> If you genuinely have no website and do not plan to build one,
+> [Zooza Sites](../setup/zooza-sites.md) is the paid product that turns this plain
+> page into a real one — your own domain, templates, photo gallery, subpages.
+
+Use the **Share** button below when you want a link to **one** programme or class
+rather than everything.
 
 ## Where to find the Share button
 

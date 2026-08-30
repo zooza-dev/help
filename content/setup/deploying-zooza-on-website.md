@@ -11,11 +11,28 @@ status: "published"
 source_legacy_path: "legacy/0080_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-08-30"
 related_articles: ["publish-widgets", "customizing-widgets"]
 ---
 
 # Deploying Zooza app on your website
+
+## You do not need a REST API key for this
+
+The most common wrong turn before starting: asking for an API key and client secret
+to "connect Zooza to our website". **You do not need one.** Putting the booking form,
+calendar or client profile on your site takes the embed code or the plugin — nothing
+more.
+
+| What you are doing | What you need |
+|---|---|
+| Putting Zooza widgets on your website | The widget key from **Team & Settings → Publish → Widget**. That is all. |
+| Building your own integration against Zooza data | A REST API key — a different thing, requested separately. See [docs.zooza.online](https://docs.zooza.online/quickstart). |
+
+If a web developer asks you for "the API key", they almost always mean the widget key
+above — send them to **Publish → Widget** and to the embed code on that screen.
+
+---
 
 Integration into your website is simple. As soon as a new account is created in Zooza, there is nothing to prevent the individual forms from being deployed to your website. What's great about Zooza's forms is that your client will never leave your site. Zooza will become part of yours and will look like it was created for your website.
 

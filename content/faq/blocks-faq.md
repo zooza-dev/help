@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-08-30"
+related_articles: ["blocks-configuration","blocks-creation","trial-sessions","price-and-payment-setup"]
 ---
 
 # Blocks (Sessions Segments) FAQ
@@ -49,13 +50,44 @@ Dynamic tags such as `COURSE_DATE_DAY` and `COURSE_TIME` pull their values from 
 
 **Workaround:** Replace `COURSE_DATE_DAY` and `COURSE_TIME` with the `ORDER_SUMMARY` tag in your email templates. `ORDER_SUMMARY` includes the correct block-specific details for each booking. You can edit the booking confirmation template at **Communication -> Templates -> Confirmation of booking**.
 
-## How do trials interact with blocks?
+## Can I offer trials on some blocks but not others?
 
-When trial sessions and blocks are used on the same class, a capacity conflict can occur. A trial booking reserves a spot in the **entire class** because the system cannot determine which block the trial client will ultimately join. Meanwhile, paying clients can register for specific blocks. The system prioritises paying bookings over trials, which may result in temporary over-capacity on individual sessions.
+Yes. Open the block and you will find **Offer trial lessons for this block** directly
+under **Allow online booking**. Set it to No and that block's dates stop appearing as
+bookable trial dates.
 
-To reduce this issue, configure trial bookings to use **extra capacity** only (in the programme's trial session settings). This ensures trials do not consume spots reserved for paying clients.
+**The two toggles are independent.** A block can be open for normal registration and
+closed for trials, or the other way round — trials only, registration closed.
+Switching one does not touch the other. This is what lets you run, say, blocks A and D
+for registration while offering B and C as trial dates.
 
-<!-- REVIEW: There is currently no way to assign a trial to a specific block. Monitor for future feature updates. -->
+Three things worth knowing:
+
+- **The class-level trial setting is still the master switch.** If the programme does
+  not offer trials at all, no block-level toggle brings them back. The block toggle
+  narrows the offer within a programme that already has trials on.
+- **A new block inherits the class's trial setting**, so you only touch it when you
+  want that block to differ.
+- **Nothing changed for existing blocks.** When this shipped, every block already in
+  place took on whatever its class was doing, so no setup silently changed behaviour.
+
+### A date that sits in two blocks
+
+One session can belong to two blocks at once. If the blocks disagree, **the permissive
+one wins**: the session stays bookable as a trial if *any* block it belongs to has
+trials on. It drops out only when it belongs to blocks and *none* of them allow trials.
+
+A session that belongs to no block at all is unaffected and stays trial-eligible.
+
+## How do trials and blocks share capacity?
+
+Separate from who can book: a trial booking reserves a spot in the **entire class**,
+because the system does not know which block the trial client will eventually join.
+Paying clients enrol into specific blocks. Zooza prioritises the paying booking, which
+can put an individual session temporarily over capacity.
+
+Configure trials to use **extra capacity** only, in the programme's trial settings —
+then trials never consume seats reserved for paying clients.
 
 ## Can I filter bookings by block?
 

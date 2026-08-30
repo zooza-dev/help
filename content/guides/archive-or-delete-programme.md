@@ -9,7 +9,8 @@ tags: ["programme", "archive", "delete", "remove", "class", "hide"]
 status: "published"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-04-10"
+last_converted: "2026-08-30"
+related_articles: ["trash-and-restore","term-rebooking-guide","creating-a-class","calendar-bulk-actions"]
 ---
 
 # Archive or delete a Programme
@@ -44,7 +45,55 @@ To hide a single Class (class) within a Programme without archiving the whole Pr
 2. In the Class settings, tick **Archive**. ![Screenshot — archive or delete programme](../../assets/images/archive-or-delete-programme-04.png)
 3. Save.
 
-> **Note:** You cannot delete a Class that has active bookings. Archive it instead, or transfer the bookings to another Class first.
+> **Archive rather than delete when the Class has bookings.** Archiving keeps
+> everything as it is; deleting leaves the bookings without a Class — see
+> [Deleting a Class does not delete its bookings](#deleting-a-class-does-not-delete-its-bookings) below.
+
+### Archiving a Class does not delete its sessions
+
+The sessions stay exactly where they are. Archiving takes the class out of your
+active lists and off your website; it does not touch the calendar entries behind it.
+
+**You do not need to clear them out.** Archived classes do not clutter your working
+views and their sessions do not get in the way of anything — not capacity, not
+reports, not the calendar you work from day to day. If you would rather remove them
+anyway you can, in bulk, from the **Calendar** — but after archiving there is no
+reason to.
+
+---
+
+## Delete a Class
+
+1. Open the Class and go to its **settings**.
+2. Scroll to the **Delete** card at the bottom of the right-hand column. It warns that
+   the class will be removed from the database and will no longer appear in the list or
+   calendar, and offers two buttons: **Delete** and **Archive**.
+3. Click **Delete**.
+
+Deleting is a soft delete, the same as for a Programme: the Class goes to **Trash**
+and can be restored for **30 days**. Go to **Settings → Tools → Trash**. After 30
+days it is gone for good.
+
+> **Deleted a class by mistake?** Go straight to **Settings → Tools → Trash** and
+> restore it — do not start rebuilding it by hand. See
+> [Recover deleted items](trash-and-restore.md) for what can and cannot come back.
+
+### Deleting a Class does not delete its bookings
+
+**The bookings survive.** Deleting a Class does not delete the people enrolled in it
+— it removes the Class they were assigned to. The bookings stay in your account; they
+are simply no longer attached to that Class.
+
+That is better than losing them, but it is not a tidy state: those bookings now have
+no schedule behind them, so the clients have no sessions and nothing to attend. You
+have to put them somewhere — restore the Class from Trash within 30 days, or assign
+the bookings to another Class.
+
+**So archive instead whenever the Class has run.** Archiving keeps every booking
+attached to its Class along with payments and attendance, and is reversible at any
+time — not just within a 30-day window.
+
+![Delete card at the bottom of class settings, offering Delete and Archive side by side](../../assets/images/archive-or-delete-programme-07.png)
 
 ---
 

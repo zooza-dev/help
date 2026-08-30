@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-12"
+last_converted: "2026-08-30"
+related_articles: ["inbound-payments-setup","stripe-refund-guide","payment-options","integrations-hub"]
 ---
 
 # Stripe Integration FAQ
@@ -73,6 +74,21 @@ You can test the full payment flow by creating a booking yourself as a client. U
 1. Delete the test bookings afterwards.
 2. Restore any prices you changed during testing.
 3. Verify that all classes have the correct payment methods enabled.
+
+## Can I onboard Stripe in a different country from my company?
+
+Yes. When you connect Stripe you can pick the country the Stripe account is created
+in, instead of taking your company's own region. Zooza offers the countries Stripe
+itself supports, so a Slovak company can onboard a Czech Stripe account.
+
+**Choose carefully — Stripe fixes the country when the account is created and it
+cannot be changed afterwards.**
+
+If you picked the wrong one, you are not stuck, as long as onboarding never finished:
+**reset** the incomplete connected account and connect again with the right country.
+Reset only works on an account that has not been completed — an active, onboarded
+Stripe account cannot be reset this way, and moving that one is a support
+conversation.
 
 ## I get an error when trying to set Stripe Connect as the payment provider on a programme
 

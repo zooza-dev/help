@@ -1,6 +1,6 @@
 ---
 title: "Instructor Access and Roles FAQ"
-description: "Instructors go to your Zooza app URL (e.g., asia.zooza.app), enter their email address, and receive a secure login link by email."
+description: "Instructors log in at your regional Zooza address, enter their email, and get a secure login link. What to check when the email never arrives."
 slug: "instructor-access-faq"
 type: "faq"
 product_area: "Settings"
@@ -11,14 +11,22 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-15"
+last_converted: "2026-08-30"
+related_articles: ["login-and-account-faq","managing-instructors","user-roles","role-selection-guide"]
 ---
 
 # Instructor Access and Roles FAQ
 
 ## How do instructors log in to Zooza?
 
-Instructors go to your Zooza app URL (e.g., `asia.zooza.app`), enter their email address, and receive a secure login link by email. There is no password — they click the link to access the system.
+Instructors go to your regional Zooza app URL — `zooza.app` for Europe, `uk.zooza.app` for the UK, `asia.zooza.app` for the Middle East and Asia — enter their email address, and receive a secure login link by email. There is no password — they click the link to access the system.
+
+If an instructor says the email never arrives, check these two things before anything else:
+
+1. **They are on the right regional address.** Requesting a link on the wrong one never produces an email. See [Which address do we log in at?](login-and-account-faq.md#which-address-do-we-log-in-at)
+2. **They are using the exact address listed for them** in **Settings → General → Access**. A link is only ever sent to an address that already has access — a personal address the person prefers, or one with a typo, produces nothing.
+
+If both are right and it still does not arrive, send Zooza support the instructor's name and the address they are trying, and the login attempt can be traced.
 
 ## An instructor did not receive the invitation email — what should I do?
 
@@ -113,7 +121,7 @@ If you want the archived class to stop appearing in **future** instructor report
 
 ## Related
 
-- [Two instructors per class](../guides/class-detail.md) — assign a main and assistant instructor to a class
+- [Two instructors per class](../guides/two-instructors-per-class.md) — assign a main and assistant instructor to a class
 - [User roles](../guides/user-roles.md) — full breakdown of all roles and their permissions
 - [Instructor working hours](../setup/instructors-working-hours.md) — configure availability windows per instructor
 - [Instructor rate and reward](../setup/instructor-rate-reward.md) — set up compensation rates

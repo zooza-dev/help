@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-08-30"
 related_articles: ["make-up-sessions-faq", "booking-faq"]
 ---
 
@@ -63,6 +63,32 @@ Nothing moves off the waiting list on its own. Every approval is a decision you 
 ### Is the class capacity waitlist enabled by default?
 
 Yes. When a class reaches full capacity, the waiting list option is automatically available on the booking form. No additional configuration is needed.
+
+### How do I turn the waiting list off?
+
+There is no switch labelled "waiting list". You stop it by **hiding the class from
+the booking form once it fills up**:
+
+1. Go to **Programmes** → open the programme → **Online Booking → Edit**.
+2. Scroll to the **Other** section.
+3. Set **If the class reaches full capacity, do not show it in the booking form** to **Yes**.
+
+A hidden class is not in the picker, so nobody can select it, and nobody can queue
+for it. That is the whole mechanism — people join the waiting list by submitting the
+form for a full class, so removing the class from the form removes the queue.
+
+> **This is per programme, not per class.** Every class in the programme starts
+> hiding itself when full. If you want the queue on some classes and not others,
+> they have to sit in different programmes.
+
+What you lose by hiding: you stop collecting the demand signal. A full class that
+stays visible tells you how many more people wanted in, which is what you would use
+to decide whether to open another class. Consider
+[delayed start](../guides/delayed-start-registration.md) before switching it off —
+it offers a later joining date instead of a queue, and fills seats that would
+otherwise sit empty.
+
+![Online booking settings with the toggle: If the class reaches full capacity, do not show it in the booking form](../../assets/images/waiting-list-faq-01.png)
 
 ### My class still shows 10/10 (full) even though students cancelled — why?
 

@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-08-30"
+related_articles: ["invoice-profiles-and-bank-accounts","creating-entry-passes","selling-products-during-booking","dynamic-tags"]
 ---
 
 # Orders and Products FAQ
@@ -26,16 +27,20 @@ There is no dedicated report for unpaid product orders, but you can filter the o
 
 This gives you a filtered view of all outstanding product orders. Unpaid product orders do not appear in the booking-level debt notifications, so you need to check the orders list separately.
 
-## Can I add a QR payment code to product order emails?
+## Do product order confirmations include a QR payment code?
 
-Yes. QR payment codes are supported in order-related emails. For the QR code to generate correctly:
+Yes. The order confirmation email carries the same pay-by-square QR code that booking
+emails do, so a customer paying by bank transfer scans it instead of typing the IBAN,
+amount and variable symbol by hand. The variable symbol is the order number.
+
+For the code to render:
 
 - The order must have an outstanding balance.
-- Your invoice profile must include a valid IBAN (not a basic bank account number).
+- Your invoice profile must have a valid **IBAN** (not a basic account number) **and a SWIFT code** — the QR does not appear until the SWIFT is filled in. See [Invoice profiles and bank accounts](../setup/invoice-profiles-and-bank-accounts.md).
 
-If the QR code tag appears as plain text in the sent email instead of rendering, open the email template, delete the dynamic tag, and re-type it. Invisible characters or formatting artefacts can prevent the system from recognising the tag.
-
-<!-- REVIEW: QR codes in order emails were initially limited to Slovakia. This was fixed — confirm the fix is still live and applies to all regions. -->
+If the QR tag shows as plain text in the sent email instead of rendering, open the
+template, delete the dynamic tag and re-type it — invisible characters pasted in from
+elsewhere stop the tag being recognised.
 
 ## How do I track whether a purchased entry pass has been used?
 
@@ -57,11 +62,22 @@ If a client needs their expiry extended, contact Zooza support with the order nu
 
 To avoid this situation in the future, set a longer expiry period on the product configuration before clients purchase it. The expiry period is defined on the product itself (e.g., 12 months from purchase) and applies to all future purchases — it cannot be changed retroactively in bulk.
 
-## Why don't dynamic tags work in order confirmation emails?
+## Which dynamic tags work in order confirmation emails?
 
-Dynamic tags (such as `{client_name}` or `{QR_CODE}`) are not fully supported in order-related email templates. This is a known limitation. When the system does not recognise a tag or has no value for it in the order context, the tag either remains as plain text or is silently removed.
+Order emails resolve their own set of tags — fewer than a booking email, but the ones
+that matter for getting paid now work:
 
-If you need to personalise order emails, keep the template text generic and avoid booking-specific tags. Booking-related tags (e.g., class name, session time) do not apply to standalone product orders.
+| Available in order emails | Not available |
+|---|---|
+| `QR_CODE`, `VARIABLE_SYMBOL` | `ORDER_SUMMARY`, `SEGMENTS_SUMMARY` |
+| `PAYMENT_STATUS`, `DEBT`, `PAID`, `CURRENT_BALANCE` | Booking-specific tags — class name, session date and time |
+| `PRODUCT_NAME`, `COMPANY`, `COMPANY_LOGO`, `WIDGET_PROFILE_URL` | Anything tied to a registration rather than an order |
+
+A tag that does not apply to an order is skipped rather than breaking the email — but
+it also produces nothing, so it will simply be missing from what the customer reads.
+
+Booking-related tags do not apply to standalone product orders at all: an order has no
+class and no session, so there is nothing for those tags to resolve against.
 
 ## How do I restore a deleted order?
 

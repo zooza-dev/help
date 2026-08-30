@@ -12,17 +12,21 @@ related_articles: ["message-templates", "customizing-widgets", "publish-widgets"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-08-30"
 ---
 
 # Change the language in Zooza
 
-Zooza has two separate language settings that work independently:
+Language in Zooza is decided in three separate places, and they work independently:
 
-| Setting | What it controls |
+| What | Set where |
 |---|---|
-| **Admin panel language** | The language of the Zooza admin interface (menus, buttons, labels) |
-| **Application Communication Language** | The language of client-facing content — booking widgets, confirmation emails, and client portal |
+| **Admin panel** — menus, buttons, labels you see | The switcher at the bottom of the **Dashboard** |
+| **Emails and message templates** your clients receive | **Settings → General** — Application Communication Language |
+| **Booking form, calendar and parent zone** embedded on your site | **Your own website's** language setting — parents can switch it themselves on the widget's own language switcher |
+
+Mixing up the second and third is the most common language problem, so if you only
+read one thing, read [Which setting controls what](#which-setting-controls-what--the-short-version).
 
 ---
 
@@ -44,28 +48,34 @@ The admin panel reloads in the selected language immediately.
 
 ---
 
-## Change the client-facing language (widgets and emails)
+## Change the language of emails and templates
 
-> **Careful — this is the one people change by mistake.** The language setting in **Settings** is not your own interface language. It is the language Zooza uses towards your **clients**: their emails and the booking widget. Changing it because the admin panel is in the wrong language will switch your clients' communication instead, and leave your panel exactly as it was. To change your own view, use the Dashboard switcher described above.
+> **Careful — this is the one people change by mistake.** The language setting in **Settings** is not your own interface language, and it is not the widget's either. It is the language Zooza writes to your **clients** in. Changing it because the admin panel is in the wrong language will switch your clients' communication instead, and leave your panel exactly as it was. To change your own view, use the Dashboard switcher described above.
 
-This setting controls what language your clients see when they register, receive confirmation emails, or access their Client Profile.
-
-1. Go to **Settings → Company information** (or **General settings**).
+1. Go to **Settings → General** (**Company information**).
 2. Find **Application Communication Language**.
 3. Select the language your clients use.
 4. Save.
 
-This affects:
-- Automatic system emails (booking confirmation, payment reminders, etc.).
-- The Client Profile interface.
+This affects the automatic system emails — booking confirmation, payment reminders,
+session notifications — and the message templates they are built from.
 
-### The embedded widget is different — it follows your website
+### The embedded widget and parent zone take their language from your website
 
-**A widget embedded on your own site takes its language from the website it sits in, not from this setting.**
+**A widget embedded on your own site — the booking form, the calendar, the parent
+zone — takes its language from your website, not from the setting above.** Whatever
+language your site is set to is the language the widget comes up in.
 
-If your booking form or calendar shows English day names when you expected Romanian, Slovak or Hungarian, the fix is on your website, not in Zooza: make sure the page declares the right language. Changing **Application Communication Language** will not correct it, because the widget never reads that setting.
+If the widget shows English day names when you expected Romanian, Slovak or
+Hungarian, look at your website's language setting. This is worth checking before
+anything else, because the symptom looks exactly like a Zooza language problem: days
+of the week in English, texts like "The class will start…" instead of
+"Grupa va începe…".
 
-This is worth checking first, because the symptom looks exactly like a Zooza language problem — days of the week in English, texts like "The class will start…" instead of "Grupa va începe…".
+**For parents who need a different language, the switcher is on the widget itself.**
+The widget can carry its own language switcher, and a parent uses that to change the
+language for themselves. It is not driven by your website's own language switcher —
+those are two unrelated controls, and switching the site does not switch the widget.
 
 > **Custom email templates** override the system language. If you have edited a confirmation email template in Slovak, clients will receive the Slovak version regardless of this setting.
 
@@ -81,13 +91,25 @@ Do **not** go into Settings to fix this. That changes the language your clients 
 
 ---
 
-## The widget is in a different language than expected
+## Which setting controls what — the short version
 
-If the booking form or Client Profile appears in the wrong language for your clients:
+Three separate things, three separate places. Almost every language question is
+someone reaching for the wrong one of the three.
 
-1. Check **Application Communication Language** in **Settings → Company information** (see above).
-2. If you have multiple widgets set up (via **Publish**), each widget uses the account-level language — there is no per-widget language override.
-3. If your clients use multiple languages (e.g. EN and FR), consider whether separate programme variants with language-specific templates would work better.
+| What is in the wrong language | Where to change it |
+|---|---|
+| The admin panel you are looking at | The switcher at the bottom of the **Dashboard** |
+| The booking form, calendar or parent zone on your site | **Your website's language setting**. A parent who needs another language switches it on the widget's own language switcher |
+| Emails and message templates your clients receive | **Settings → General** — Application Communication Language |
+
+> **The widget and the emails are not the same setting.** Changing the
+> communication language because the booking form is in the wrong language leaves
+> the form exactly as it was, and quietly switches the language of every email your
+> clients receive. Fix the widget on your website; fix the emails in Settings.
+
+If your clients genuinely use two languages, the answer is the widget's own language
+switcher, which lets each parent pick for themselves. Pair it with
+language-specific message templates so the emails match what they booked in.
 
 ---
 

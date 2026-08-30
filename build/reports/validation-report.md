@@ -4,8 +4,8 @@
 
 ## Summary
 
-- **Total docs checked:** 258
-- **Total issues found:** 77
+- **Total docs checked:** 265
+- **Total issues found:** 76
 - **Overall status:** FAIL
 
 ## 1. Required Frontmatter
@@ -32,12 +32,11 @@ All docs have exactly one H1.
 
 ## 5. Broken Internal Links
 
-**19 broken internal link(s) found:**
+**18 broken internal link(s) found:**
 
 - `content/business-models/adult-language-school.md` — link to `../guides/booking-faq.md`
 - `content/faq/email-communication-faq.md` — link to `../troubleshooting/email-delivery-troubleshooting.md`
 - `content/faq/email-communication-faq.md` — link to `../guides/settings-hub.md`
-- `content/faq/instructor-access-faq.md` — link to `../guides/class-detail.md`
 - `content/faq/onboarding-launch-faq.md` — link to `../setup/communication-send-email.md`
 - `content/faq/onboarding-launch-faq.md` — link to `../business-models/business-models.md`
 - `content/faq/programmes-timetables-sessions-faq.md` — link to `faq-programmes.md`

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-08-07"
+last_converted: "2026-08-30"
 related_articles: ["sessions-list", "payments-dashboard", "recording-an-administrative-refund"]
 ---
 
@@ -22,6 +22,17 @@ The Reports screen provides an overview of your business metrics, payment status
 > **Navigation:** Go to **Reports & Insights** → **Reports**.
 
 ![Reports dashboard](../../assets/images/reference/reports-dashboard.png)
+
+> **The figure you want is not on any of these screens?** Ask
+> [Zooza AI](../setup/claude-plugin.md) instead — connect Claude or ChatGPT to your
+> account and ask in plain language ("what has each trainer been paid this term",
+> "payments by programme since we opened"). It reads your real data, within your own
+> permissions, and answers questions no fixed report covers.
+>
+> **The chat bubble inside Zooza cannot do this.** That one answers from the help
+> documentation only — it has no access to your account, so it cannot tell you who has
+> not paid or how full Monday is. Two different things with two different jobs: see
+> [what each one can do](../faq/claude-plugin-faq.md).
 
 ## Nick's Dashboard
 

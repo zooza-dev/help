@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: "legacy/html/group-creation.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-08-30"
+related_articles: ["creating-a-programme","programme-class-session-definition","edit-sessions-in-programmes","lead-collection"]
 ---
 
 
@@ -61,6 +62,15 @@ Fill in the following fields:
 ![Class details form](../../assets/images/creating-a-class-03.png)
 
 > **Note:** Fields marked with an orange icon are required.
+
+> **`Duration of sessions` is what parents see on the booking form.** The form shows
+> this one number from the class — it does not read the length of the first session,
+> or of any session. That is deliberate: individual sessions within a class can run
+> to different lengths, so one figure has to stand for the class.
+>
+> If the booking form advertises 60 minutes and your sessions actually run 45, this
+> field is what to correct — **Class → Settings → Class properties** — not the
+> sessions. Changing the sessions will not move the number parents see.
 
 ## Step 3 — Define sessions (Fixed Period only)
 

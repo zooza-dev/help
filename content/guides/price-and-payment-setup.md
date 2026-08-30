@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: "legacy/html/setting-the-price-on-a-course.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-08-30"
+related_articles: ["payment-templates-creation","membership-fee-setup","late-bookings","payment-options"]
 ---
 
 
@@ -188,6 +189,28 @@ Clients then choose between them on the booking form.
 If you set the programme to one-off payment instead, the Payment Frequency section disappears entirely and no template can be offered — including the one-off template. A programme set to one-off has exactly one way to pay, by definition.
 
 > **Switching an existing programme from instalments to one-off can leave templates behind.** If prices start displaying incorrectly after such a switch — the class showing one figure and the payment settings another — the old templates are usually still attached to the classes. Contact support rather than trying to unpick it; the mismatch is in the stored records, not in a setting you can see.
+
+### The registration link shows a price of 0.00
+
+The link works, the class is there, and the price reads `0,00`. Nothing is broken —
+**no price has been set for the thing the client is being offered.**
+
+Check both levels, in this order:
+
+1. **The programme.** Programme → **Settings → Price and Payment**. Is there a price
+   or a unit price at all?
+2. **The class.** Open the class the link points to and check it carries a value.
+   A class can sit at zero while the programme above it has a price, and the client
+   is buying the class.
+
+If you use blocks, trials or products, check the price on the specific offer the
+client is choosing rather than on the programme as a whole — each can be priced in
+its own right, and it is the one being bought that shows up in the link.
+
+> **Zero is a valid price, not an error state.** Zooza will happily take a booking at
+> 0,00 and confirm it, so nothing warns you. Open your own registration link after
+> setting up a class and read the price back — it is the fastest check there is, and
+> it catches this before a parent does.
 
 ### The payment step is blank on the booking form
 

@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-04-30"
+last_converted: "2026-08-30"
+related_articles: ["todos-faq","system-messages","notifications-center","sending-email-sms"]
 ---
 
 # Manage your to-do list
@@ -58,6 +59,20 @@ In the to-do list, a small icon next to the task shows its context type. Clickin
 This context link is stored automatically — you do not need to copy URLs or record numbers.
 
 ---
+
+## To-dos that come from a client reply
+
+When someone flags an incoming client reply as needing action, it now also appears in
+this list as a to-do — assigned to whoever flagged it, carrying the message text, with
+its own icon so you can tell at a glance where it came from. Click it to open the reply
+and answer.
+
+Unflag the reply and the to-do is marked done. You therefore do not have to watch two
+places: the reply inbox and the to-do list stay in step, and the to-do list is the one
+authoritative view.
+
+> This works in one direction only. Completing the to-do here does not unflag the
+> reply — clear it from the reply itself.
 
 ## Assign a to-do to a teammate
 

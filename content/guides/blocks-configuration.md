@@ -12,7 +12,8 @@ status: published
 source_legacy_path: ""
 source_language: en
 needs_screenshot_replacement: false
-last_converted: 2026-02-13
+last_converted: "2026-08-30"
+related_articles: ["blocks-faq","blocks-creation","trial-sessions","capacity-and-extra-capacity"]
 ---
 
 # Blocks Configuration and Management
@@ -159,7 +160,38 @@ The booking form may display capacity based on the class as a whole rather than 
 
 ### Trials
 
-When trial sessions and blocks are used on the same class, a capacity conflict can occur. A trial booking reserves a spot in the **entire class** because the system cannot determine which block the trial client will ultimately join. Meanwhile, paying clients enrol for specific blocks.
+**Each block decides for itself whether it is offered for trials.** Open a block in
+the editor and you will find **Offer trial lessons for this block** directly under
+**Allow online booking**. Set it to No and that block's dates stop being offered as
+trial dates.
+
+![Block editor showing Allow online booking and Offer trial lessons for this block as two separate Yes toggles](../../assets/images/blocks-configuration-01.png)
+
+The two checkboxes are **independent**. Any combination is valid:
+
+| Online registration | Trials | What the block does |
+|---|---|---|
+| On | On | Bookable normally and available as a trial date |
+| On | Off | Bookable normally; never offered to someone booking a trial |
+| Off | On | Not open for registration, but usable as a trial date |
+| Off | Off | Not offered at all |
+
+The **class-level** trial setting at **Programme → Settings → Trial** remains the
+master switch — the per-block toggle only narrows the offer inside a programme that
+already has trials enabled. A newly created block inherits the class's setting, and
+when this shipped every existing block was set to match its class, so no live setup
+changed behaviour on its own.
+
+**A session that belongs to two blocks:** the permissive rule applies — it stays
+trial-eligible if *any* of its blocks has trials on, and drops out only when it
+belongs to blocks and none of them allow it. A session in no block at all is
+unaffected.
+
+#### Capacity is a separate question
+
+Even with the right blocks offered, a trial booking reserves a spot in the **entire
+class**, because the system does not know which block the trial client will ultimately
+join. Paying clients enrol into specific blocks.
 
 In practice this means:
 
@@ -167,11 +199,8 @@ In practice this means:
 2. A paying client can still enrol for the full programme or a specific block.
 3. The system prioritises the paying client, even if this causes temporary over-capacity.
 
-**Workaround:** Configure trial bookings to use **extra capacity** only (in the programme's trial session settings at **Programme -> Settings -> Trial**). This ensures trials do not consume spots reserved for paying clients.
-
-There is currently no way to assign a trial to a specific block. The trial client must decide which block to join only after converting to a full registration.
-
-<!-- REVIEW: There is no way to assign a trial to a specific block. Monitor for future feature updates. -->
+**Fix:** configure trial bookings to use **extra capacity** only (**Programme →
+Settings → Trial**). Trials then never consume spots reserved for paying clients.
 
 ### Dynamic tags
 
@@ -188,7 +217,6 @@ Edit the booking confirmation template at **Communication -> Templates -> Confir
 When you change a student's block assignment on a booking, attendance records for the previous block are marked as **Hidden**. The data is not deleted, but the booking detail displays only the label "Hidden" instead of the original status (e.g. "Attended").
 
 This makes it difficult to verify how many sessions a student attended before the change. If you need to preserve this information, export or note the attendance data before changing the block.
-
 Sessions that belong to blocks the client is not enroled for are also marked as **Hidden** in the attendance tile and are not visible to the client.
 
 <!-- REVIEW: Product team may add a feature to retain visible attendance history across block changes. Check for updates. -->
@@ -214,7 +242,7 @@ The booking form may show overall class capacity (e.g. "8/12") rather than per-b
 | Limitation                                                                                           | Workaround                                                                                                                 |
 | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | No block-specific dynamic tags for date and time                                                     | Use `ORDER_SUMMARY` tag and name blocks descriptively                                                                      |
-| Trials cannot be assigned to a specific block                                                        | Use extra capacity for trials; manage manually if over-capacity occurs                                                     |
+| A trial booking holds capacity in the whole class, not in one block                                  | Use extra capacity for trials, so they never take a paying client's seat                                                   |
 | Attendance history is hidden after block change                                                      | Export attendance data before changing a client's block                                                                    |
 | Full-programme bookings can push individual blocks over capacity                                     | Disable "enrol for entire programme" in online booking settings                                                            |
 | Block-based filtering of bookings is limited                                                         | Check block occupancy in the class detail view                                                                             |
@@ -235,7 +263,7 @@ The booking form may show overall class capacity (e.g. "8/12") rather than per-b
 
 5. **Check block occupancy in the class detail** before and after peak registration periods. Block-level statistics were added in early 2026.
 
-6. **Avoid combining trials with blocks on the same class** unless you configure trials to use extra capacity. The capacity conflict between class-wide trial reservations and per-block limits is the most common source of over-capacity issues.
+6. **Choose deliberately which blocks carry trials, and set trials to use extra capacity.** The per-block trial toggle decides *where* a newcomer may book; extra capacity decides *whether* that booking takes a paying client's seat. You want both — the toggle alone still lets a trial reserve capacity in the class.
 
 7. **Export attendance before changing a client's block** if you need to preserve the attendance history for reporting or verification.
 

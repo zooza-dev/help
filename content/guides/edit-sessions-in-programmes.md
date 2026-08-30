@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: "legacy/0042_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-03"
+last_converted: "2026-08-30"
+related_articles: ["creating-a-class","calendar-bulk-actions","custom-holidays","billable-sessions"]
 ---
 
 # Managing sessions in a class
@@ -33,6 +34,44 @@ If you skipped session creation when setting up the class, or need to add more d
 
 ![Screenshot — edit sessions in programmes](../../assets/images/edit-sessions-in-programmes-01.png)
 
+### Creating a whole year of sessions, one weekday at a time
+
+A class that runs on several days of the week is built up **one weekday per pass**,
+not all at once. You are not looking for a screen that takes "Monday, Tuesday and
+Wednesday" together — there isn't one, and hunting for it is where people get stuck.
+
+For each weekday:
+
+1. Add the **first session** on that day — its date, its time.
+2. Set how far it repeats: either an **end date** or a **number of sessions**. Zooza
+   creates the rest of that weekday's dates on the same settings.
+3. Go back and do the same for the next weekday.
+
+Repeat until every day the class runs has its own run of dates. To fill a school
+year, set the end date to the end of the year on each pass.
+
+**Each weekday can have its own duration.** The Monday run can be 45 minutes and the
+Wednesday run 60 — the length belongs to the sessions you create in that pass, not to
+the class as a whole.
+
+> **Clicking around the calendar does not create sessions.** Sessions are added from
+> **Add sessions** on the class, not by clicking dates in the calendar view. If
+> nothing happens when you click a date, that is why.
+
+### Changing how many sessions a term has
+
+There is no "number of sessions" field to edit. The count is simply how many sessions
+exist, so you change it by **adding** dates or **deleting** them:
+
+- **More sessions** — **Add sessions** on the class, as above.
+- **Fewer sessions** — select the surplus dates in the **Sessions** list and delete
+  them. Delete only dates that should never have existed; if a session was scheduled
+  and then did not happen, [cancel](#cancel) it instead so your records still show it.
+
+**Check the price afterwards.** If the class is priced by [unit price](price-and-payment-setup.md#unit-price)
+— a price per session — the total moves with the session count automatically, and
+clients who have already booked may end up owing a different amount. If you entered a
+total price instead, it does not move, and you have to adjust it yourself.
 
 ## Bulk editing sessions
 

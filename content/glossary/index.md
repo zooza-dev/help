@@ -6,7 +6,7 @@ product_area: "Settings"
 audience: ["admin", "client"]
 tags: ["glossary", "terminology", "definitions"]
 status: "published"
-last_converted: "2026-03-13"
+last_converted: "2026-08-30"
 ---
 
 # Zooza Glossary
@@ -22,6 +22,19 @@ The person who physically attends sessions. May differ from the Client — for e
 
 ---
 
+### Aliquot
+A reduced price for a client who joins after a programme has already started, calculated from the sessions they will actually attend rather than the full run. Requires a price per session, so Zooza has something to count.
+
+### Application Communication Language
+The language Zooza writes to your clients in — automatic emails and the message templates behind them. Set in **Settings → General**.
+
+> **Not the same as your own view.** The admin panel language is switched at the bottom of the Dashboard. And an embedded booking form or calendar takes its language from your website, not from this setting.
+
+### Awaiting payment
+A booking that is confirmed but not yet paid, inside the grace period you allow. It becomes *Unpaid* when that window expires. See [Debt](#debt).
+
+---
+
 ## B
 
 ### Billable session
@@ -32,6 +45,15 @@ A session that counts towards the total used for price calculation in Programme 
 **Client view:** See [Enrolment](#enrolment).
 
 > Formerly called: *Registration*
+
+---
+
+### Block
+A separately purchasable segment of sessions within one Class — Mondays-only, Tuesdays-only, or a January run inside a longer term. Each Block has its own price, and clients buy only the ones they need.
+
+Each Block also decides for itself whether it is offered for online booking and whether it is offered for trials — two independent settings.
+
+> Internally called: *segment*, *schedule segment* — not used in the app or in help content.
 
 ---
 
@@ -56,10 +78,37 @@ Duplicate a booking to a different Class, Class, or Programme. The original book
 
 ---
 
+### Cancel (registration)
+Ending a booking while keeping the record. The client stops attending; the booking stays visible and can be set back to active. Distinct from deleting it.
+
+### Cancel vs. Archive vs. Delete
+Three different things people reach for interchangeably:
+
+- **Cancel** — the client stops attending; the record stays.
+- **Archive** — hide something finished from your active lists, keeping every booking, payment and attendance record. Reversible any time.
+- **Delete** — move it to [Trash](#trash), recoverable for 30 days, permanent after that.
+
+For a class that has run, archive. Deleting a class does not delete its bookings — it leaves them with no class attached.
+
+### Cancellation fee
+An amount retained when a client cancels, rather than refunding in full.
+
+### Credit
+An amount held on a booking for the client to use later. Comes in several kinds — a make-up session credit, a discount credit created from an overpayment, an entry pass, a gift voucher — all listed together on the booking under **Credits and make-up sessions**.
+
+> Do not confuse a booking credit with an [Entry pass](#entry-pass). Both are called "credit" in conversation; they are managed in different places.
+
+---
+
 ## D
 
 ### Debt
 The outstanding amount a client owes for a booking. A negative balance means the client has overpaid (credit). Recalculated automatically.
+
+---
+
+### Down payment
+A deposit taken at booking, with the rest collected later. Set per programme.
 
 ---
 
@@ -116,6 +165,24 @@ One IBAN belonging to exactly one Invoice Profile, with its SWIFT code and accou
 
 ### Invoice Line Types (multi-line)
 A configuration within an Invoice Profile that splits invoice amounts into separate lines per transaction type (e.g. Course Payment, Registration Fee, Discount). When at least one line type is enabled, multi-line invoicing is active. When no types are configured, a single-line invoice is generated.
+
+---
+
+### Instructor
+A person who teaches sessions and holds a login with a role that limits what they see. An instructor is not a Client, even when they also book classes.
+
+---
+
+## L
+
+### Lead Collection
+A class with no sessions, used to gather interest before a schedule exists. No debt is created and no price is shown. Add sessions and it becomes an ordinary class automatically.
+
+### Location
+A place where sessions happen. Holds the address and the region that decides which public holidays and school breaks apply.
+
+### Loyalty Program
+Automatic discounts based on who the client already is — sibling discounts, returning-customer pricing, referrals — applied at booking rather than by handing out codes.
 
 ---
 
@@ -178,12 +245,39 @@ The top-level container for an activity type. Holds pricing, payment settings, b
 
 ---
 
+### Payment template
+A reusable rule for how a price is collected: the frequency, the number of instalments, the due day, any discount. Created once and attached to any number of programmes.
+
+A template's **type** is chosen when you create it and cannot be changed afterwards — a membership fee needs a template made as a membership template.
+
+> Not the same as a [Payment Plan](#payment-plan), which is the actual schedule of amounts and dates on one client's booking.
+
+### Pending
+A booking submitted but not yet confirmed by you.
+
+### Public booking page
+A plain page generated automatically for every account, listing everything open for registration, at `zooza.site/your-account-name/register` — with `/calendar` for the schedule. No setup and no cost.
+
+Copy the exact address from the **Share** button in the Classes list rather than typing it. Accounts outside Europe carry their region: `zooza.site/uk/…`, `zooza.site/asia/…`.
+
+> A bridge until Zooza is embedded on your own website, not a replacement for it. Distinct from **Zooza Sites**, the paid product with its own domain and templates.
+
+---
+
 ## R
 
 ### Reference number
 A unique identifier included with bank transfer payments, used to automatically match incoming payments to the correct client booking.
 
 > Formerly called: *Variable symbol*
+
+---
+
+### Refund
+Money genuinely returned to a client, recorded as its own transaction. Use it only when funds actually leave your account — correcting a wrong record is a different action, and using Refund for it creates a phantom transaction in your reports.
+
+### Revenue
+What you have earned, as distinct from what has been paid. A booking can be revenue before the money arrives.
 
 ---
 
@@ -224,6 +318,11 @@ A Zooza feature that makes specific Classes available for prospective clients to
 
 ---
 
+### Trash
+Where deleted registrations, classes, sessions and cancelled scheduled payments go. Restorable for **30 days** from **Settings → Tools → Trash**; permanently gone after that.
+
+---
+
 ## A (features)
 
 ### Auto-enrolment
@@ -244,6 +343,20 @@ The physical location where sessions take place.
 
 ### Widget
 The embeddable booking interface placed on your website. Widgets use client-facing terminology throughout (for example, "Class" instead of "Programme", "Enrolment" instead of "Booking").
+
+---
+
+### Waiting list
+A queue for something not currently available. Zooza has two, and they are separate features: the **class waiting list** for a full class, approved by you by hand; and the **make-up waiting list** for a full make-up slot, which resolves automatically.
+
+There is no switch called "waiting list". To stop the class queue, set the programme to hide a class once it reaches full capacity.
+
+> Slovak: *poradovník* — used for both, so always establish which one is meant.
+
+### Widget key
+The identifier tying an embedded widget on your website back to your account, found in **Team & Settings → Publish → Widget** and already included in the embed code.
+
+> **Not a REST API key.** Embedding the booking form, calendar or client profile needs no API key at all.
 
 ---
 

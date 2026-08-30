@@ -54,6 +54,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can I onboard Stripe in a different country from my company?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. When you connect Stripe you can pick the country the Stripe account is created\nin, instead of taking your company's own region. Zooza offers the countries Stripe\nitself supports, so a Slovak company can onboard a Czech Stripe account.\n\nChoose carefully — Stripe fixes the country when the account is created and it\ncannot be changed afterwards.\n\nIf you picked the wrong one, you are not stuck, as long as onboarding never finished:\nreset the incomplete connected account and connect again with the right country.\nReset only works on an account that has not been completed — an active, onboarded\nStripe account cannot be reset this way, and moving that one is a support\nconversation."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "I get an error when trying to set Stripe Connect as the payment provider on a programme",
       "acceptedAnswer": {
         "@type": "Answer",

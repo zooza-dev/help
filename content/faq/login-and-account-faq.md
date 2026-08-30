@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-08-30"
+related_articles: ["instructor-access-faq","managing-instructors","user-roles","add-zooza-app-to-phone"]
 ---
 
 # Login and Account FAQ
@@ -34,11 +35,31 @@ Go to **Settings → Team**, open the profile, replace the email address and sav
 
 Give each person their own login wherever you can. Permissions and the activity record are tied to the account, so a shared login makes both meaningless — see [Can multiple team members share one login?](#can-multiple-team-members-share-one-login) below.
 
+## Which address do we log in at?
+
+**The login address follows your account's region, not your business name.** There is
+no `yourbusiness.zooza.app` — that address does not exist and will not load.
+
+| Your region | Log in at |
+|---|---|
+| Europe | `zooza.app` |
+| United Kingdom | `uk.zooza.app` |
+| Middle East and Asia | `asia.zooza.app` |
+
+Everyone on your account uses the same one — you, your office staff and your
+instructors alike. If you are not sure which is yours, it is the address you are
+already using yourself; send that exact one on.
+
+> **This is the first thing to check when someone "never gets the login email".**
+> Requesting a link on the wrong regional address does not fail loudly — it simply
+> never arrives, because that region has no account with their email on it. Send
+> them the right address before you start looking at spam folders.
+
 ## After changing an instructor's email, they cannot log in — what is the process?
 
 When you update an instructor's email address in **Settings → Team**, the instructor must log in again using the new email:
 
-1. Go to your Zooza app URL (e.g., `yourbusiness.zooza.app`).
+1. Go to your regional Zooza app URL (see the table above).
 2. Enter the **new** email address.
 3. Click the login link that arrives by email.
 

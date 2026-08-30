@@ -14,10 +14,10 @@
     },
     {
       "@type": "Question",
-      "name": "Can I add a QR payment code to product order emails?",
+      "name": "Do product order confirmations include a QR payment code?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. QR payment codes are supported in order-related emails. For the QR code to generate correctly:\n\n- The order must have an outstanding balance.\n- Your invoice profile must include a valid IBAN (not a basic bank account number).\n\nIf the QR code tag appears as plain text in the sent email instead of rendering, open the email template, delete the dynamic tag, and re-type it. Invisible characters or formatting artefacts can prevent the system from recognising the tag."
+        "text": "Yes. The order confirmation email carries the same pay-by-square QR code that booking\nemails do, so a customer paying by bank transfer scans it instead of typing the IBAN,\namount and variable symbol by hand. The variable symbol is the order number.\n\nFor the code to render:\n\n- The order must have an outstanding balance.\n- Your invoice profile must have a valid IBAN (not a basic account number) and a SWIFT code — the QR does not appear until the SWIFT is filled in. See Invoice profiles and bank accounts.\n\nIf the QR tag shows as plain text in the sent email instead of rendering, open the\ntemplate, delete the dynamic tag and re-type it — invisible characters pasted in from\nelsewhere stop the tag being recognised."
       }
     },
     {
@@ -38,10 +38,10 @@
     },
     {
       "@type": "Question",
-      "name": "Why don't dynamic tags work in order confirmation emails?",
+      "name": "Which dynamic tags work in order confirmation emails?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dynamic tags (such as {client_name} or {QR_CODE}) are not fully supported in order-related email templates. This is a known limitation. When the system does not recognise a tag or has no value for it in the order context, the tag either remains as plain text or is silently removed.\n\nIf you need to personalise order emails, keep the template text generic and avoid booking-specific tags. Booking-related tags (e.g., class name, session time) do not apply to standalone product orders."
+        "text": "Order emails resolve their own set of tags — fewer than a booking email, but the ones\nthat matter for getting paid now work:\n\nA tag that does not apply to an order is skipped rather than breaking the email — but\nit also produces nothing, so it will simply be missing from what the customer reads.\n\nBooking-related tags do not apply to standalone product orders at all: an order has no\nclass and no session, so there is nothing for those tags to resolve against."
       }
     },
     {
