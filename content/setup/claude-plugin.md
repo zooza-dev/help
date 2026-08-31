@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-29"
+last_converted: "2026-08-31"
 related_articles: ["claude-plugin-faq", "integrations-hub"]
 ---
 
@@ -81,12 +81,60 @@ You can ask Claude while handling the call — no need to navigate to the attend
 **Add a session note**
 > *"Add a summary to today's session: focused on breathing, 8 students attended"*
 
+**Create a programme**
+> *"Create a new programme called Baby Swimming, term payment, trials on"*
+
+A genuinely new offering, not another run of an existing one — for that, add a class to the programme you already have.
+
+**Email your clients**
+> *"Email everyone in Little Helpers that Monday's session is cancelled"*
+
+Claude works out the audience, drafts the message, and shows you both before anything is sent. **Email only** — WhatsApp is not available through the connector yet, however you phrase the request.
+
+**Set up how a programme is paid for**
+> *"Add a monthly payment template and apply it to Sofia's booking"*
+
+Claude can create payment templates and apply a payment plan to a booking. It does not take payments, issue refunds, or produce invoices.
+
 **Set your vocabulary**
 > *"Set up my vocabulary, I call 'courses' programmes. Ok?"*
 
 Claude confirms it has learned your terms and uses them from that point on.
 
 ![Claude confirming it will use 'programmes' instead of 'courses' in all future responses](../../assets/images/mcp-vocabulary-setup.jpg)
+
+---
+
+## Working an enquiry from first contact to booking
+
+Five tools added in late August 2026 chain together, so a parent's enquiry can be
+tracked from the moment it arrives instead of living in your inbox.
+
+> *"A parent emailed asking about Tuesday baby swimming — add her as a lead, tag it
+> enquiry, and send her the class details"*
+
+Then, a few days later:
+
+> *"Any replies from leads this week? Anything still unanswered?"*
+
+What each step does:
+
+| Step | What Claude does |
+|---|---|
+| **Capture the enquiry** | Creates a **lead** from a name and email — a lightweight record you can track. |
+| **Tag it** | Attaches a **label** so you can group enquiries and see where each one stands. |
+| **Email them** | Sends the class details, previewed by you first. |
+| **Read what came back** | Lists replies parents sent to your Zooza emails, and whether each is unread, needs a human, or is handled. |
+| **Leave yourself a to-do** | Creates a to-do linked to the record, which you mark done, cancelled or reopened later. |
+
+Four things worth knowing before you rely on it:
+
+- **A lead is not a booking.** It sits on a lead-collection class, takes no payment, enrols nobody, and **sends the parent nothing** — it is a record for you. Convert it to a real booking when they commit.
+- **Ask once.** Adding the same lead twice creates two records; Claude cannot tell it has already captured that enquiry.
+- **Replies only appear if the original email went out through Zooza** on that registration. A parent replying to a message you sent from your own mailbox is invisible here.
+- **Labels on a class can be seen by parents** on the public booking page. Labels on programmes and on bookings stay internal — so keep pipeline notes like *chasing* off the class itself.
+
+The to-dos are the same ones in the app's to-do list — see [Manage your to-do list](../guides/todos.md).
 
 ---
 
@@ -128,15 +176,30 @@ The comparison is based on real requests and updated periodically — use it to 
 
 ## What it can't do yet
 
-Some things still require the Zooza web app directly:
+Some things still need the Zooza web app. As of **31 August 2026**:
 
-- Creating or editing **programmes** (Claude can read them, not create)
-- **Payment** processing, refunds, or invoicing
-- **Cancelling sessions or class runs** — session cancellation is planned; editing and rescheduling are available now
-- Sending **email or WhatsApp** messages to clients
-- Managing **staff accounts** or access permissions
+| Not available through Claude | Where to do it |
+|---|---|
+| **Cancelling a session**, or ending a class run | Calendar → the session, or archive the class |
+| **Adding sessions to a class that already exists** — Claude builds the schedule when it creates the class, but cannot add dates afterwards | Class → **Add sessions** |
+| **Taking payments, refunds and invoicing** — templates and payment plans yes, money no | Payments |
+| **WhatsApp messages** — email works, WhatsApp does not | Communication |
+| **Staff accounts and permissions** | Settings → General → Access |
 
-These are planned for future versions. If something is missing that would help your workflow, use the feedback skill: *"I want to suggest a feature."*
+If something is missing that would help your work, say so in the conversation:
+*"I want to suggest a feature."* It reaches the team with the context of what you
+were trying to do.
+
+> **Claude says it cannot do something you have read about here?** Refresh the
+> connector's tool list — it does not update itself. Your connector kept the list it
+> learned on the day you connected, so anything that shipped since is invisible to
+> it, and it will tell you so with complete confidence. In Claude, refresh the tools
+> from your connectors screen; in ChatGPT, **Settings → Apps → Zooza → Refresh**.
+> Full steps, including what to do when refreshing is not enough:
+> [Zooza AI says it cannot do something I know it can do](../faq/claude-plugin-faq.md#zooza-ai-says-it-cannot-do-something-i-know-it-can-do).
+>
+> This is worth doing now if you connected before late August 2026 — everything in
+> the enquiry section above shipped after that.
 
 ---
 
