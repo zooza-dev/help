@@ -165,6 +165,23 @@ def sweep_specs(state):
     return fresh, len(current), False
 
 
+# A conversation is unfinished when nobody has answered it -- not merely when it
+# is still flagged open. An open thread a human already answered is housekeeping;
+# an unanswered one is a customer still waiting.
+def unanswered(rec):
+    if rec.get("has_human"):
+        return False
+    if rec.get("state") != "closed":
+        return True
+    return rec.get("resolution_state") in ("routed_to_team", "abandoned")
+
+
+# How long an unanswered conversation keeps coming back before the queue lets it
+# go. Four weeks is long enough that nothing real is dropped, short enough that
+# the section cannot quietly become a graveyard.
+CARRY_WEEKS = 4
+
+
 def question(rec):
     """First thing the client actually asked. Turns are [role, name, text]."""
     for role, _, text in rec.get("turns", []):
@@ -215,6 +232,15 @@ def main():
 
     print("\nTriaging...")
     out_dir = os.path.join(REPO, "build", "intake")
+    os.makedirs(out_dir, exist_ok=True)
+
+    carry = state.get("carry_forward", {}) or {}
+    carry_path = os.path.join(out_dir, "carry.json")
+    with open(carry_path, "w") as f:
+        json.dump(carry, f, indent=1, sort_keys=True)
+    if carry:
+        print(f"  carrying {len(carry)} unanswered conversation(s) from earlier weeks")
+
     triage = run(
         [
             sys.executable,
@@ -222,6 +248,7 @@ def main():
             "--start", start.isoformat(),
             "--end", end.isoformat(),
             "--out", out_dir,
+            "--carry", carry_path,
         ],
         capture_output=True,
         text=True,
@@ -240,6 +267,27 @@ def main():
     if os.path.exists(human_path):
         with open(human_path) as f:
             human = json.load(f)
+
+    # Who is still waiting. Recomputed every run from what triage just read, so a
+    # conversation leaves the list the moment somebody answers it.
+    all_rows = []
+    triage_path = os.path.join(out_dir, "triage.json")
+    if os.path.exists(triage_path):
+        with open(triage_path) as f:
+            all_rows = json.load(f)
+
+    still_waiting, aged_out = {}, []
+    for r in all_rows:
+        if not unanswered(r):
+            continue
+        cid = str(r.get("id"))
+        since = carry.get(cid) or r.get("day") or end.isoformat()
+        weeks = (end - date.fromisoformat(since)).days // 7
+        if weeks >= CARRY_WEEKS:
+            aged_out.append((cid, since, r))
+        else:
+            still_waiting[cid] = since
+    state["carry_forward"] = still_waiting
 
     print("Sweeping specs...")
     fresh_specs, total_specs, first_run = sweep_specs(state)
@@ -260,7 +308,29 @@ def main():
         w(f"- Conversations with a human reply: **{len(human)}**\n")
         w(f"- Bot-only conversations: **{len(bot)}**\n")
         w(f"- Bot-only needing a look: **{len(priority)}**\n")
-        w(f"- Implemented specs not yet communicated: **{len(fresh_specs)}**\n\n")
+        w(f"- Implemented specs not yet communicated: **{len(fresh_specs)}**\n")
+        w(f"- Still waiting for a human answer: **{len(still_waiting)}**\n\n")
+
+        if still_waiting or aged_out:
+            w("## 0. Nobody has answered these yet\n\n")
+            w("Carried until somebody replies. A conversation leaves this list the moment ")
+            w("a human answers it -- being closed is not enough, and neither is the bot ")
+            w("having said something.\n\n")
+            by_id = {str(r.get("id")): r for r in all_rows}
+            for cid, since in sorted(still_waiting.items(), key=lambda kv: kv[1]):
+                r = by_id.get(cid, {})
+                age = (end - date.fromisoformat(since)).days
+                tag = f" -- waiting **{age} day(s)**" if age else ""
+                w(f"- `{cid}` {r.get('date','')}{tag}\n")
+                w(f"  - {question(r)[:200]}\n")
+                w(f"  - state: {r.get('state')} / {r.get('resolution_state') or 'no resolution'}\n")
+            w("\n")
+            if aged_out:
+                w(f"**Aged out after {CARRY_WEEKS} weeks** -- dropped from the carry list, ")
+                w("decide explicitly whether to chase or let go:\n\n")
+                for cid, since, r in aged_out:
+                    w(f"- `{cid}` first seen {since} -- {question(r)[:160]}\n")
+                w("\n")
 
         w("## 1. Human answers -- the gold standard\n\n")
         w("Read these first. A human answer that generalises belongs in the KB.\n\n")

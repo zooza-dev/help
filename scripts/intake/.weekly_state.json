@@ -1,8 +1,14 @@
 {
- "last_run": "2026-08-30",
+ "carry_forward": {
+  "215475728999106": "2026-08-31",
+  "215475774548005": "2026-09-03",
+  "215475779589808": "2026-09-03",
+  "215475782192470": "2026-09-03"
+ },
+ "last_run": "2026-09-04",
  "last_window": [
-  "2026-08-22",
-  "2026-08-29"
+  "2026-08-30",
+  "2026-09-03"
  ],
  "spec_baseline": [
   "api-v1/2026-02-06-buyloop-upgrade-model.md",
@@ -201,6 +207,13 @@
   "api-v1/2026-08-27-async-sms-queue.md",
   "api-v1/2026-08-27-message-jobs-dedupe-idempotency.md",
   "api-v1/2026-08-27-sms-provider-abstraction.md",
+  "api-v1/2026-08-31-payments-module-restructure.md",
+  "api-v1/2026-09-01-cancellation-email-pickup-timing.md",
+  "api-v1/2026-09-01-loyalty-exclude-trial-registrations.md",
+  "api-v1/2026-09-01-widget-hide-total-debt.md",
+  "api-v1/2026-09-02-dashboard-past-programmes-hint.md",
+  "api-v1/2026-09-02-trial-availability-reserve-seat-schedule-capacity.md",
+  "api-v1/2026-09-02-trial-reserve-seat-segment-scope.md",
   "api-v1/API-20260516-001-RESUME.md",
   "api-v1/API-20260516-001-implementation-plan.md",
   "api-v1/API-20260706-001-implementation-plan.md",
@@ -380,6 +393,8 @@
   "app/2026-08-25-todo-inbound-reply-entity-type.md",
   "app/2026-08-25-trial-eligibility-per-block-toggle.md",
   "app/2026-08-28-sms-message-jobs-migration.md",
+  "app/2026-08-29-app-theming-mode-and-tints.md",
+  "app/2026-08-31-payments-module-restructure.md",
   "app/APP-20260315-003-phase-3-handoff.md",
   "app/APP-20260319-001-phase-1-handoff.md",
   "app/APP-20260319-001-phase-2-handoff.md",
@@ -428,6 +443,7 @@
   "widgets-v1/2026-08-17-additional-sessions-purchase-flow.md",
   "widgets-v1/2026-08-19-additional-session-cancellation-refund-modal.md",
   "widgets-v1/2026-08-28-segment-renderer-api-hooks.md",
+  "widgets-v1/2026-09-01-payments-tab-debt-display.md",
   "widgets-v1/W1-20260602-001-implementation-plan.md",
   "widgets-v1/W1-20260610-001-implementation-plan.md",
   "widgets-v1/W1-20260701-003-implementation-plan.md",

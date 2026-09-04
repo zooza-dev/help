@@ -15,9 +15,18 @@ _ap.add_argument("--start", default="2026-06-24", help="first day of window (YYY
 _ap.add_argument("--end", default="2026-08-06", help="last day of window (YYYY-MM-DD, inclusive)")
 _ap.add_argument("--ingest", default="/Users/michaldodok/help_ingest/intercom")
 _ap.add_argument("--out", default=os.path.join(_REPO, "build", "intake"))
+_ap.add_argument("--carry", default=None,
+                 help="JSON {id: first-seen date} of conversations to admit regardless of window")
 _args = _ap.parse_args()
 
 ING = _args.ingest
+# Conversations nobody has answered yet are admitted whatever their last activity
+# says. Left to the window alone they fall out of the queue the moment the week
+# turns, which is the one case where silence is the problem rather than the signal.
+CARRY = {}
+if _args.carry and os.path.exists(_args.carry):
+    with open(_args.carry) as _f:
+        CARRY = json.load(_f)
 OUT = _args.out
 START, END = _args.start, _args.end
 os.makedirs(OUT, exist_ok=True)
@@ -58,6 +67,24 @@ def last_activity(c):
     return max(stamps)
 
 
+def _attr(attrs, key):
+    """Ticket attributes come as {"value": ...} in one place and bare in another."""
+    v = (attrs or {}).get(key)
+    if isinstance(v, dict):
+        v = v.get("value")
+    return (v or "").strip() if isinstance(v, str) else ""
+
+
+def ticket_question(c):
+    """The title and description a customer filled in when raising a ticket."""
+    attrs = ((c.get("ticket") or {}).get("custom_attributes")) or c.get("custom_attributes")
+    title = _attr(attrs, "_default_title_")
+    body = _attr(attrs, "_default_description_")
+    if title and body:
+        return f"{title}\n\n{strip(body)}"
+    return strip(body) or title
+
+
 def conversation_files():
     """Every conversation on disk, wherever it was filed."""
     return sorted(glob.glob(os.path.join(ING, "*", "conversation-*.json")))
@@ -68,9 +95,10 @@ for f in conversation_files():
     c = json.load(open(f))
     touched = last_activity(c)
     day = datetime.fromtimestamp(touched, timezone.utc).strftime("%Y-%m-%d")
-    if not (START <= day <= END):
-        continue
     cid = c.get("id")
+    carried = str(cid) in CARRY
+    if not carried and not (START <= day <= END):
+        continue
     ts = datetime.fromtimestamp(touched, timezone.utc).strftime("%Y-%m-%d %H:%M")
     src = c.get("source") or {}
     sa = src.get("author") or {}
@@ -78,6 +106,16 @@ for f in conversation_files():
     first_q = strip(src.get("body"))
     if first_q and sa.get("type") in ("user", "lead"):
         turns.append(("customer", sa.get("name"), first_q))
+    else:
+        # Tickets carry the customer's words in ticket attributes, not in a
+        # conversation part -- the source is admin_initiated with an empty body.
+        # Without this they read as "(no client message)" and the actual question
+        # is invisible, which is worst exactly where it matters: an unanswered
+        # ticket nobody has replied to yet.
+        tq = ticket_question(c)
+        if tq:
+            who = ((c.get("contacts") or {}).get("contacts") or [{}])[0].get("name")
+            turns.append(("customer", who, tq))
     for p in (c.get("conversation_parts") or {}).get("conversation_parts", []):
         a = p.get("author") or {}
         body = strip(p.get("body"))
@@ -98,6 +136,7 @@ for f in conversation_files():
     ai = c.get("ai_agent") or {}
     cs = (ai.get("content_sources") or {}).get("content_sources", []) or []
     rating = c.get("conversation_rating") or {}
+    carried_since = CARRY.get(str(cid)) if carried else None
     # customer re-ask signal: >=2 customer turns after first bot reply
     cust_after_bot = 0
     seen_bot = False
@@ -119,6 +158,7 @@ for f in conversation_files():
         "rating": rating.get("rating"),
         "rating_remark": rating.get("rating_remark"),
         "state": c.get("state"),
+        "carried_since": carried_since,
         "cust_after_bot": cust_after_bot,
         "tags": [t.get("name") for t in (c.get("tags") or {}).get("tags", [])],
         "turns": turns,
