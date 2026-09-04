@@ -294,7 +294,7 @@ The LLM should catch duplicates automatically. If it didn't (e.g. the payments a
 
 **"Payments from a known non-client keep appearing"**
 
-Create an ignore filter. Either trigger it by ignoring one payment and clicking "Create filter", or create it manually in Settings → Payments → Payment reconciliation → AI rules & filters. Use the exact payer IBAN plus a note pattern if needed.
+Create an ignore filter. Either trigger it by ignoring one payment and clicking "Create filter", or create it manually in **Payments → Payment reconciliation → AI rules & filters**. Use the exact payer IBAN plus a note pattern if needed.
 
 **"A payment was incorrectly ignored by a filter"**
 

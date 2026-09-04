@@ -37,7 +37,7 @@ Can't find something? This page gives the direct path to the most commonly searc
 
 | I want to find… | Where to go |
 |-----------------|-------------|
-| All payments received | **Sales & Payments → Payments** |
+| All payments received | **Payments → Transactions** |
 | A specific client's payments | Client profile → **Payments** tab |
 | Payments for a specific booking | Open the booking → **Payments** section |
 | Unpaid / outstanding clients | **Sales & Payments → Payments** → filter by status: *Outstanding* |

@@ -167,11 +167,13 @@ The AI compares each incoming payment against existing recorded payments, other 
 
 ### AI pairing rules
 
-You can configure company-specific rules that influence AI decisions via **Payments → Payments Received → AI Rules & Filters**. Examples: ignore payments from a specific IBAN, prefer a specific programme when the variable symbol is ambiguous, or require manual review above a certain amount. Company rules override system defaults.
+You can configure company-specific rules that influence AI decisions via **Payments → Payment reconciliation → AI rules & filters**. Examples: ignore payments from a specific IBAN, prefer a specific programme when the variable symbol is ambiguous, or require manual review above a certain amount. Company rules override system defaults.
 
 ### AI Analytics
 
-Go to **Payments → Payments Received → AI Analytics** to see how the AI is performing for your company.
+Go to **Payments → Payment reconciliation → AI Analytics** to see how the AI is performing for your company.
+
+![The AI Analytics tab of Payment reconciliation, showing evaluated totals, auto-pair success, admin overrides and processing time](../../assets/images/payment-reconciliation-ai-analytics.png)
 
 ![Screenshot — payment pairing](../../assets/images/payment-pairing-03.png)
 
