@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0100_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-05-13"
+last_converted: "2026-09-04"
 related_articles: ["billing-and-invoicing", "invoicing-overview"]
 ---
 
@@ -32,7 +32,7 @@ You need an active [Számlázz.hu](https://www.szamlazz.hu/) account. Számlázz
 
 ## Setup
 
-1. Go to **Settings → Billing** and open your Invoice Profile.
+1. Go to **Settings → Billing & Payments** and open your Invoice Profile.
 2. In the **Invoice Engine** section, select **Számlázz.hu**.
 3. Paste your **API token**:
    - Find it in Számlázz.hu on the main page, at the bottom — below the invoice list and the users block.
@@ -64,7 +64,7 @@ Once connected:
 
 If you run multiple Számlázz.hu integrations, or want to keep Zooza-generated invoices in a separate invoice pad from invoices created by other tools in the same Számlázz.hu account, set a **Prefix** on each Invoice Profile.
 
-1. Open the Invoice Profile in **Settings → Billing**.
+1. Open the Invoice Profile in **Settings → Billing & Payments**.
 2. In the **Invoice Engine** section, find the **Invoice number series / prefix** field.
 3. Enter the exact name of the számlatömb (invoice pad) configured in your Számlázz.hu account.
 4. Save.
@@ -75,7 +75,7 @@ Zooza will create all invoices for this profile in the specified tömb. Profiles
 
 After connecting, configure VAT in Zooza:
 
-1. Go to **Settings → Billing** → scroll to **VAT levels**.
+1. Go to **Settings → Billing & Payments** → scroll to **VAT levels**.
 2. Select how VAT should be applied and click **Synchronize**.
 
    ![VAT setup in billing settings](../../assets/images/szamlazz-invoices-05.png)

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-07-22"
+last_converted: "2026-09-04"
 related_articles: ["invoice-profiles-and-bank-accounts", "inbound-payments", "payment-pairing", "gocardless-connection-lifecycle", "billing-and-invoicing"]
 ---
 
@@ -23,14 +23,14 @@ The **Inbound Payments Setup** wizard configures three things at once:
 2. Which providers are connected for each channel (Stripe, GoCardless, Tatra Banka, etc.)
 3. How Zooza reads your bank statements for each bank account — so incoming bank transfers are automatically matched to bookings
 
-> **Navigation:** Payments → Inbound → Setup  
+> **Navigation:** Settings → Billing & Payments → Payment collection setup  
 > **Permission:** Owner role (or assistant with `allow_assistant_to_manage_payments`)
 
 ---
 
 ## Current setup — what you see first
 
-When you open **Payments → Inbound → Setup**, the first screen shows your current configuration at a glance.
+When you open **Settings → Billing & Payments → Payment collection setup**, the first screen shows your current configuration at a glance.
 
 ![Inbound Payments Setup — current setup screen with the three channel tiles and bank statement status](../../assets/images/inbound-setup-current-setup.png)
 
@@ -179,7 +179,7 @@ The banner shows which bank connection needs attention and offers two actions:
 
 > **Do not ignore this warning.** Once the connection expires, Zooza stops receiving new bank transactions. Payments will still arrive at your bank but will not be automatically matched to bookings until you reconnect.
 
-To reconnect manually at any time (before the warning appears), go to **Payments → Inbound → Setup** and reconnect the affected bank account in the **Bank statement reading** table.
+To reconnect manually at any time (before the warning appears), go to **Settings → Billing & Payments → Payment collection setup** and reconnect the affected bank account in the **Bank statement reading** table.
 
 ---
 

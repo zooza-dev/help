@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-04-30"
+last_converted: "2026-09-04"
 ---
 
 # Set up split invoicing for downpayments
@@ -36,7 +36,7 @@ Without split invoicing enabled, Zooza issues a single invoice that shows the fu
 
 ## Enable split invoicing
 
-1. Go to **Settings → Billing** and open your Invoice Profile.
+1. Go to **Settings → Billing & Payments** and open your Invoice Profile.
 2. In the **Automatic invoicing** section, confirm that **Issue invoice on downpayment paid** is enabled.
 3. Enable **Split downpayment invoice**.
 4. Click **Save**.

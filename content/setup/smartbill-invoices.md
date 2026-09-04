@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0101_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-25"
+last_converted: "2026-09-04"
 ---
 
 # SmartBill Integration
@@ -31,7 +31,7 @@ You need an active [SmartBill](https://www.smartbill.ro/) account. The **CIF** (
 
 ## Setup
 
-1. Go to **Settings → Billing** and open your Invoice Profile.
+1. Go to **Settings → Billing & Payments** and open your Invoice Profile.
 2. In the **Invoice Engine** section, select **SmartBill**.
 3. Enter your credentials:
 
@@ -64,7 +64,7 @@ Once connected:
 
 After connecting, sync VAT rates from SmartBill:
 
-1. Go to **Settings → Billing** → scroll to **VAT levels**.
+1. Go to **Settings → Billing & Payments** → scroll to **VAT levels**.
 2. Click **Synchronize** to pull VAT rates from SmartBill.
 
    ![VAT sync in billing settings](../../assets/images/smartbill-invoices-06.png)

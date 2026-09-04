@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-07-22"
+last_converted: "2026-09-04"
 related_articles: ["invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "billing-and-invoicing", "payments-and-billing-faq", "e-invoicing-mandates"]
 ---
 
@@ -52,7 +52,7 @@ See [Set up invoice profiles and bank accounts](./invoice-profiles-and-bank-acco
 
 ## Connecting your own accounting system
 
-If you want invoices to appear directly in your accounting or ERP system, go to **Settings → Billing → Invoice Settings** (or open `/#settings/invoice_profiles`) and select your engine.
+If you want invoices to appear directly in your accounting or ERP system, go to **Settings → Billing & Payments → Invoice Settings** (or open `/#settings/invoice_profiles`) and select your engine.
 
 The engines available to you depend on your country and account configuration.
 
@@ -127,7 +127,7 @@ Manage them in [Set up invoice profiles and bank accounts](./invoice-profiles-an
 
 Invoices can be generated in two ways:
 
-**Automatic** — Zooza generates an invoice every time a payment is recorded. Enable this under **Settings → Billing → Automatic invoice generation**.
+**Automatic** — Zooza generates an invoice every time a payment is recorded. Enable this under **Settings → Billing & Payments → Automatic invoice generation**.
 
 **Manual** — Open any booking, go to the **Payments** tile, and click **Generate invoice**. Works even when automatic generation is off.
 

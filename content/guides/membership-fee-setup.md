@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-08-30"
+last_converted: "2026-09-04"
 ---
 
 # Charge a monthly membership fee
@@ -29,7 +29,7 @@ A payment template is created *as* a membership template — that is a property 
 
 So:
 
-1. **Create the template first.** Go to **Team & Settings → Billing → Payments** and create a payment template as a **membership** template. Choose its frequency — monthly, half-yearly or yearly — and any discount, at the moment you create it.
+1. **Create the template first.** Go to **Settings → Billing & Payments → Payment schedule templates** and create a payment template as a **membership** template. Choose its frequency — monthly, half-yearly or yearly — and any discount, at the moment you create it.
 2. **Then set the programme.** Go to **Programmes → the programme → Settings → Price and Payment**, choose scheduled payments, and set the price type to **Membership**.
 3. **Attach the template** to the programme.
 4. **Check the booking form.** Open it as a client would and confirm the option appears with the right amount.

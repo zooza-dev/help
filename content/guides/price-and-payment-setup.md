@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/setting-the-price-on-a-course.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-30"
+last_converted: "2026-09-04"
 related_articles: ["payment-templates-creation","membership-fee-setup","late-bookings","payment-options"]
 ---
 
@@ -88,7 +88,7 @@ This is the most common setup question, and the answer depends on what the 35 �
 
 **If 35 € is the same every month regardless of how many sessions fall in it** — four sessions in October, five in November, still 35 € — that is **Membership**. Go to **Programmes → programme → Settings → Price and Payment**, choose scheduled payments, set the price type to **Membership**, and attach a monthly payment template. Typical for clubs and ongoing groups with no fixed end.
 
-> **The template has to be a membership template.** Full walkthrough: [Charge a monthly membership fee](membership-fee-setup.md). This is the step people miss, and it is why Membership sometimes refuses to work at all. A payment template is created *as* a membership template — you choose that, along with its frequency (monthly, half-yearly, yearly) and any discount, when you create it in **Team & Settings → Billing → Payments**. An ordinary template will not do, so if the Membership option is not behaving, check what kind of template you attached before you check anything else.
+> **The template has to be a membership template.** Full walkthrough: [Charge a monthly membership fee](membership-fee-setup.md). This is the step people miss, and it is why Membership sometimes refuses to work at all. A payment template is created *as* a membership template — you choose that, along with its frequency (monthly, half-yearly, yearly) and any discount, when you create it in **Settings → Billing & Payments → Payment schedule templates**. An ordinary template will not do, so if the Membership option is not behaving, check what kind of template you attached before you check anything else.
 
 **If you have a total for the year and want it spread over months** — 350 € for the school year, paid monthly — that is **Programme fee**. Set the price per session, and the payment template splits the calculated total into instalments. Typical for term-based programmes with a start and an end.
 

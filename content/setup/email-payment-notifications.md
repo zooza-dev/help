@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-09-04"
 ---
 
 
@@ -35,7 +35,7 @@ Email-notification pairing is a faster, lower-maintenance alternative to GoCardl
 
 ## Step 1 — Set your IBAN and select your bank
 
-1. Go to **Settings → Billing**.
+1. Go to **Settings → Billing & Payments**.
 2. Open the billing profile you want to configure (default or additional).
 3. Click **Edit**.
 4. Fill in your **IBAN** (bank account number in international format).
@@ -70,7 +70,7 @@ The shared address cannot tell accounts apart. It identifies the target account 
 
 To fix it:
 
-1. Go to **Settings → Billing** (or straight to `#payments/inbound/setup`).
+1. Go to **Settings → Billing & Payments** (or straight to `#settings/payment_collection`).
 2. Click your **IBAN**.
 3. Select your bank and click **Set**. Zooza shows the dedicated address for this billing profile.
 4. In internet banking, replace the old shared address with this one.
@@ -81,7 +81,7 @@ Payments that arrived before the change stay in the account they were paired to.
 
 ### Nothing arrives after changing the address
 
-Check that the address is saved in Zooza, not only in your bank — a bank-side change alone does nothing. If **Settings → Billing** shows no generated address for the profile, the bank was not selected or the IBAN was not saved.
+Check that the address is saved in Zooza, not only in your bank — a bank-side change alone does nothing. If **Settings → Billing & Payments** shows no generated address for the profile, the bank was not selected or the IBAN was not saved.
 
 ## My bank is not in the list
 

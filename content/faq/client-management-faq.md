@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-06-26"
+last_converted: "2026-09-04"
 ---
 
 
@@ -75,7 +75,7 @@ The Zooza team reviews and processes the request, usually within 1 business days
 
 If you need to assign a booking to a completely different person (not just fix a typo), use **Change Client** on the booking instead.
 
-> **Invoice name:** If the client's invoicing name also needs to change (e.g. after a surname change), update it separately in **Settings → Billing** — this is a distinct field from the client's login email.
+> **Invoice name:** If the client's invoicing name also needs to change (e.g. after a surname change), update it separately in **Settings → Billing & Payments** — this is a distinct field from the client's login email.
 
 ## How do I add a child or attendee to an existing registration?
 

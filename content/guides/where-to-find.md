@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-11"
+last_converted: "2026-09-04"
 ---
 
 # Where to find things in Zooza — quick reference
@@ -42,8 +42,8 @@ Can't find something? This page gives the direct path to the most commonly searc
 | Payments for a specific booking | Open the booking → **Payments** section |
 | Unpaid / outstanding clients | **Sales & Payments → Payments** → filter by status: *Outstanding* |
 | Payment reminders settings | **Activities → Programmes** → open programme → **Automations → Payment Reminders** |
-| GoCardless inbound payment matching | **Sales & Payments → Payments → Inbound** |
-| Bank transfer import (CSV) | **Sales & Payments → Payments → Inbound → Import** |
+| GoCardless inbound payment matching | **Sales & Payments → Inbound pairing** |
+| Bank transfer import (CSV) | **Sales & Payments → Inbound pairing → Import** |
 | Invoices | **Sales & Payments → Invoices** |
 | Discounts and discount codes | **Sales & Payments → Discounts** |
 
@@ -101,7 +101,7 @@ Can't find something? This page gives the direct path to the most commonly searc
 | Holiday settings | **Settings → Holidays** |
 | Booking widget (embed code for your website) | **Publish** |
 | Your business name, logo, and branding | **Settings → Business profile** |
-| Scheduled payment notification settings (master switch + cooldown) | **Settings → Billing → Payments** |
+| Scheduled payment notification settings (master switch + cooldown) | **Settings → Billing & Payments → Payment settings** |
 
 ---
 

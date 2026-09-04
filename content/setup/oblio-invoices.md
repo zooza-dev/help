@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-25"
+last_converted: "2026-09-04"
 ---
 
 # Oblio Integration
@@ -31,7 +31,7 @@ You need an active [Oblio](https://www.oblio.eu/) account with at least one **do
 
 ## Setup
 
-1. Go to **Settings → Billing** and open your Invoice Profile.
+1. Go to **Settings → Billing & Payments** and open your Invoice Profile.
 2. In the **Invoice Engine** section, select **Oblio**.
 3. Enter your **Oblio email address** and **API token**.
    - Find the API token in your Oblio account under **Account settings → API**.

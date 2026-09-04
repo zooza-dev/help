@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0003_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-08-07"
+last_converted: "2026-09-04"
 ---
 
 # Automatic reminders for payment schedule
@@ -22,7 +22,7 @@ If the client has selected payment with a payment schedule in the booking or you
 
 Informs the client that a scheduled payment will be due on their programme booking in a few days (depending on the setup).
 
-1. The reminder must be enabled in **Settings → Billing → Payments → Scheduled-payment notifications**, where you can specify the number of days before the payment is created when the notification should be sent.
+1. The reminder must be enabled in **Settings → Billing & Payments → Payment settings → Scheduled-payment notifications**, where you can specify the number of days before the payment is created when the notification should be sent.
 
 ![Screenshot — automatic payment reminders](../../assets/images/automatic-payment-reminders-01.png)
 
@@ -37,7 +37,7 @@ Informs the client that a scheduled payment will be due on their programme booki
 
 Informs the client that a new scheduled payment has been created on their booking. The date when the payment is posted and the notification sent follows the formula: **Due Date - Number of days due**.
 
-1. Set the payment due date in **Settings → Billing → Inbound payments setup → Payment acceptance policy**, where you can specify the number of days.
+1. Set the payment due date in **Settings → Billing & Payments → Inbound payments setup → Payment acceptance policy**, where you can specify the number of days.
 ![Screenshot — automatic payment reminders](../../assets/images/automatic-payment-reminders-07.png)
 
 2. Customize the text in **Communication --> Message Templates**, under the template named: **New payment**.
@@ -90,7 +90,7 @@ Enable this in **Programme → Settings → Price and payments → Payment remin
 
 If you want to stop all payment reminder emails for your clients, you can disable them globally.
 
-Go to **Settings → Billing → Payments → Scheduled-payment notifications** and turn off the **Send scheduled payment notifications** toggle.
+Go to **Settings → Billing & Payments → Payment settings → Scheduled-payment notifications** and turn off the **Send scheduled payment notifications** toggle.
 
 When this is off:
 - The upcoming payment (pre-notice) email is not sent.
@@ -111,7 +111,7 @@ This matters if you archive last term's classes to tidy the list. Anyone who nev
 
 If clients receive multiple payment notifications for recurring charges in quick succession, the cooldown setting can help.
 
-When the master notifications toggle is on, you can set a cooldown in the **Scheduled-payment notifications** card in **Settings → Billing → Payments**. The setting reads: *"For customers paying via stored card or direct debit, skip the 'payment created' email if the previous payment in this plan was less than N months ago."*
+When the master notifications toggle is on, you can set a cooldown in the **Scheduled-payment notifications** card in **Settings → Billing & Payments → Payment settings**. The setting reads: *"For customers paying via stored card or direct debit, skip the 'payment created' email if the previous payment in this plan was less than N months ago."*
 
 If a previous scheduled payment in the same series was processed within the configured window, the at-creation email for that booking is suppressed.
 

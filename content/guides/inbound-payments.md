@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-09-04"
 ---
 
 
@@ -35,7 +35,7 @@ Inbound payments is the system that watches your bank account for incoming trans
 
 ## Setting up ingestion
 
-All payment channel setup is done through the **Setup wizard** at **Payments → Inbound → Setup**. The wizard walks you through each channel — online card, direct debit, and cash / bank transfer — and lets you configure bank statement reading per billing profile.
+All payment channel setup is done through the **Setup wizard** at **Settings → Billing & Payments → Payment collection setup**. The wizard walks you through each channel — online card, direct debit, and cash / bank transfer — and lets you configure bank statement reading per billing profile.
 
 Before Zooza can receive bank transfers, you must connect at least one ingestion channel.
 
@@ -71,12 +71,12 @@ GoCardless here acts as a **bank account reader**, not a payment processor. It m
 
 **To connect:**
 
-1. Go to **Payments → Inbound → Setup**.
+1. Go to **Settings → Billing & Payments → Payment collection setup**.
 2. In the **Current setup** screen, find your billing profile and click **Reconnect (add IBAN)** or configure it from the Cash / bank transfer step of the wizard.
 3. Select your bank and authorise GoCardless to read your transaction data (standard open banking consent flow).
 4. Once connected, incoming transactions are detected and processed automatically.
 
-**Important — consent expiry:** Your open banking consent expires periodically (varies by bank, typically 90 days under PSD2). When it expires, transaction notifications stop. Zooza does not send an alert when the consent expires — you will notice the absence of incoming payments in the dashboard. Reconnect promptly via **Payments → Inbound → Setup**.
+**Important — consent expiry:** Your open banking consent expires periodically (varies by bank, typically 90 days under PSD2). When it expires, transaction notifications stop. Zooza does not send an alert when the consent expires — you will notice the absence of incoming payments in the dashboard. Reconnect promptly via **Settings → Billing & Payments → Payment collection setup**.
 
 ### Bank email notifications
 
@@ -84,7 +84,7 @@ Most banks can send you an email when a payment arrives. Zooza generates a uniqu
 
 **To find your inbound email address:**
 
-1. Go to **Payments → Inbound → Setup**.
+1. Go to **Settings → Billing & Payments → Payment collection setup**.
 2. Open the **Cash / bank transfer** step.
 3. Select your billing profile and choose **Email parser**.
 4. Copy the generated email address and configure your bank to forward payment notifications to it.
@@ -102,7 +102,7 @@ Each bank uses a different email format — Zooza has a specific parser for each
 
 For manual or one-off import of bank statement data:
 
-1. Go to **Payments → Inbound → Import**.
+1. Go to **Sales & Payments → Inbound pairing → Import**.
 2. Upload a CSV file with the required columns: `posting_date`, `amount`, `currency` (required), plus optional `payers_iban`, `variable_symbol`, `information_for_beneficiary`.
 3. Each row is processed individually. Duplicates are detected and skipped automatically.
 
@@ -142,7 +142,7 @@ There is no "pending" state visible to admins — a payment is either waiting fo
 
 ## Manual review — what to do
 
-Payments that land in **New** status need your attention. Go to **Payments → Inbound → List** and look for payments with status **New**.
+Payments that land unpaired need your attention. Go to **Sales & Payments → Inbound pairing** and filter the queue to **Unpaired**.
 
 ### Pairing manually
 
@@ -166,11 +166,13 @@ If the payment is not related to Zooza (rent, utilities, salary, etc.):
 
 Payments in **New** status do not send you a notification — you need to check the queue yourself. Zooza does not email or alert you when an unmatched payment arrives.
 
-**Recommended workflow:** Check **Payments → Inbound → List** once per day and filter for status **New**. On a typical day the list should be empty — everything matches automatically. When something appears, it means a payment arrived that Zooza could not pair on its own.
+**Recommended workflow:** Check **Sales & Payments → Inbound pairing** once per day, filtered to **Unpaired**. On a typical day that view should be empty — everything matches automatically. When something appears, it means a payment arrived that Zooza could not pair on its own.
+
+> **Two lists, two jobs.** **Inbound pairing** is the queue of bank rows waiting to be matched — that is where unpaired money sits. **Transactions** is the settled ledger of money already recorded, split into **Cash & Transfer**, **Card** and **Direct Debit** tabs, each with its own export. Money moves from the first to the second once it is paired.
 
 The count badge on the **Inbound** menu item shows the number of outstanding New payments. If you see a number there, there are payments waiting for your action.
 
-> **Tip:** If you regularly see the same payer in manual review (e.g. a corporate account paying by bank transfer without a reference number), write a **Business rule** or **Pairing rule** under **Payments → Inbound → AI Rules & Filters** so Zooza knows how to handle it automatically next time.
+> **Tip:** If you regularly see the same payer in manual review (e.g. a corporate account paying by bank transfer without a reference number), write a **Business rule** or **Pairing rule** under **Sales & Payments → Inbound pairing → AI rules** so Zooza knows how to handle it automatically next time.
 
 ## Ignore filters
 
@@ -182,7 +184,7 @@ A filter matches when:
 
 Filters have built-in safeguards — a filter cannot be so broad that it starts catching real Zooza payments. If you manually override 3 ignored payments from the same filter (by pairing them instead), the filter is automatically deactivated.
 
-You can manage filters in **Payments → Inbound → AI Rules & Filters**.
+You can manage filters in **Sales & Payments → Inbound pairing → AI rules**.
 
 ---
 
@@ -202,7 +204,7 @@ Business rules are natural language instructions you write to guide how payments
 | **Ignore** | When to ignore a payment regardless of match |
 | **Pairing** | Special logic for matching payments to orders |
 
-To add rules: **Payments → Inbound → AI Rules & Filters**. Maximum 10 active rules per account.
+To add rules: **Sales & Payments → Inbound pairing → AI rules**. Maximum 10 active rules per account.
 
 ---
 
@@ -210,7 +212,7 @@ To add rules: **Payments → Inbound → AI Rules & Filters**. Maximum 10 active
 
 **Payment is in manual review (New) — why wasn't it auto-paired?**
 
-To find the exact reason for a specific payment, open the payment in **Payments → Inbound → List** and look for the **Matching Process Summary** section. It shows which step the matching stopped at and why.
+To find the exact reason for a specific payment, open the row from **Sales & Payments → Inbound pairing** and look for the **Matching Process Summary** section. It shows which step the matching stopped at and why.
 
 Common reasons:
 - The client used a different reference number (not the variable symbol from the invoice).
@@ -222,7 +224,7 @@ Common reasons:
 
 **Payments stopped arriving — GoCardless connection issue?**
 
-Go to **Payments → Inbound → Setup** and check the current setup screen. If a billing profile shows a reconnection warning (yellow or red status), click **Reconnect (add IBAN)** and go through the GoCardless authorisation flow again.
+Go to **Settings → Billing & Payments → Payment collection setup** and check the current setup screen. If a billing profile shows a reconnection warning (yellow or red status), click **Reconnect (add IBAN)** and go through the GoCardless authorisation flow again.
 
 **Duplicate payment appeared — how to handle it?**
 

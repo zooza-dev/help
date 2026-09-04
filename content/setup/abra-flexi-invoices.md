@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0099_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-25"
+last_converted: "2026-09-04"
 ---
 
 # ABRA Flexi Integration
@@ -33,7 +33,7 @@ You need an active ABRA Flexi instance with your credentials. The **server URL**
 
 ## Setup
 
-1. Go to **Settings → Billing** and open your Invoice Profile.
+1. Go to **Settings → Billing & Payments** and open your Invoice Profile.
 2. In the **Invoice Engine** section, select **ABRA Flexi**.
 
    ![Select ABRA Flexi as invoice engine](../../assets/images/abra-flexi-invoices-03.png)

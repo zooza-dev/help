@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: "legacy/0084_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-09-04"
 ---
 
 # Payment Pairing for Bank Transfers & Direct Debit
@@ -135,9 +135,19 @@ The reasoning card is visible on all statuses — including already **Paired** a
 
 ### Reviewing a payment manually
 
-When a payment has status **New**:
+The pairing queue groups rows into buckets rather than showing the raw status:
 
-1. Open the payment from **Payments → Received payments**.
+| Bucket in the queue | What it means |
+|---|---|
+| **Unpaired** | Arrived, not matched to anything yet — this is your work list |
+| **Processing** | Being evaluated right now |
+| **Paired** | Matched to a booking or order; the money is on the ledger |
+| **Ignored** | Dismissed as not belonging to Zooza |
+| **Error** | Something went wrong reading or matching the row |
+
+When a payment sits in **Unpaired**:
+
+1. Open the row from **Sales & Payments → Inbound pairing**.
 2. Read the AI reasoning and check the suggested booking.
 3. Choose an action:
 
@@ -193,7 +203,7 @@ To export only the payments that matter:
 2. Set **Status** to **Paired**.
 3. Export.
 
-For the unpaired ones, open **Payments → Received payments** filtered to status **New** (`#payments/inbound/list?payment_status=new`). Search for the client by name, pick the registration, and pair the payment — the result is identical to automatic pairing. Transactions unrelated to Zooza can be dismissed with **Ignore**.
+For the unpaired ones, open **Sales & Payments → Inbound pairing** and filter the queue to **Unpaired**. Search for the client by name, pick the registration, and pair the payment — the result is identical to automatic pairing. Transactions unrelated to Zooza can be dismissed with **Ignore**.
 
 > Cash versus non-cash cannot be read from `Transaction type` alone, because the column describes how the record was created rather than how the client paid. Filter by **Payment method** before exporting if that is the split you need.
 

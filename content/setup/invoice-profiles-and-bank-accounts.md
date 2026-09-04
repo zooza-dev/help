@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-30"
+last_converted: "2026-09-04"
 related_articles: ["invoice-profile-overrides", "billing-and-invoicing", "invoicing-overview", "inbound-payments-setup", "payments-and-billing-faq"]
 ---
 
@@ -21,7 +21,7 @@ An **invoice profile** is a legal entity — the "From" side of an invoice: comp
 
 This split is what lets one Zooza company invoice under more than one legal entity, and lets one entity collect money to more than one account.
 
-> **Navigation:** Settings → Billing → Invoice profiles
+> **Navigation:** Settings → Billing & Payments → Invoice profiles
 > **Permission:** Owner role (or an assistant with company-editing rights)
 
 ---
@@ -41,7 +41,7 @@ Zooza resolves both independently for every booking and order — which profile 
 
 ## Your invoice profiles
 
-Go to **Settings → Billing → Invoice profiles**. The list shows every profile with its Business ID, VAT booking number and Tax ID. The company's own entity carries the **Default invoice profile** badge.
+Go to **Settings → Billing & Payments → Invoice profiles**. The list shows every profile with its Business ID, VAT booking number and Tax ID. The company's own entity carries the **Default invoice profile** badge.
 
 ![Invoice profiles list showing two legal entities with the default profile badge](../../assets/images/invoice-profiles-list.png)
 
@@ -110,7 +110,7 @@ profile, and the bank account on the default profile was cleared in the process.
 
 **Fix:**
 
-1. Go to **Settings → Billing → Invoice profiles** and open the profile that applies
+1. Go to **Settings → Billing & Payments → Invoice profiles** and open the profile that applies
    to the booking. If you are not sure which one that is, see
    [Choose which invoice profile applies](../guides/invoice-profile-overrides.md).
 2. Fill in the bank account — `Account number (IBAN)` and `Account holder name`.
@@ -129,7 +129,7 @@ profile, and the bank account on the default profile was cleared in the process.
 
 Each account can read its own bank statements, so Zooza can match incoming transfers to bookings. The connection lives on the **account**, not on the profile — a profile with two IBANs has two independent connections.
 
-Click **Open in inbound payments hub** on an account, or go to **Payments → Inbound → Setup**. Full steps: [Set up how Zooza collects money from clients](./inbound-payments-setup.md).
+Click **Open in inbound payments hub** on an account, or go to **Settings → Billing & Payments → Payment collection setup**. Full steps: [Set up how Zooza collects money from clients](./inbound-payments-setup.md).
 
 ---
 

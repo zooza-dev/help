@@ -12,7 +12,7 @@ related_articles: ["gocardless-direct-debit-mandates", "offline-charge-manual-pu
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-13"
+last_converted: "2026-09-04"
 ---
 
 # GoCardless Integration FAQ
@@ -98,7 +98,7 @@ For the full step-by-step setup, see [Email-notification payment matching](../se
 
 In summary:
 
-1. Go to **Settings → Billing** → open the billing profile → **Edit**.
+1. Go to **Settings → Billing & Payments** → open the billing profile → **Edit**.
 2. Fill in your **IBAN** and select your bank from the dropdown.
 3. Zooza generates a unique notification email address for your profile.
 4. In your internet banking, set the email for incoming payment notifications to the Zooza-generated address.
@@ -108,7 +108,7 @@ If your bank is not in the dropdown, see [My bank is not in the list](../setup/e
 ## How do I switch from GoCardless to email-notification pairing?
 
 1. **Remove the GoCardless connection** in your internet banking to prevent duplicate transactions once both methods are active.
-2. Go to **Settings → Billing** → open your billing profile → **Edit** → select your bank and save.
+2. Go to **Settings → Billing & Payments** → open your billing profile → **Edit** → select your bank and save.
 3. **Copy the Zooza-generated notification email address** shown in the billing profile settings.
 4. **Set up email notifications** in your internet banking — configure your bank to send incoming payment notifications to the Zooza-generated address.
 5. **Monitor the first payment** to confirm transactions are arriving in Zooza correctly.
@@ -151,7 +151,7 @@ If mandates were set up correctly but Zooza flagged the instalments for manual h
 
 The first mandate GoCardless issues is a one-off, not a recurring one. Zooza read that as "this mandate cannot be charged again" and marked the following instalments manual. GoCardless then replaces it with a permanent recurring mandate, so subsequent payments were flagged correctly — which is why the problem appeared only at the very start of a booking. This has been fixed for new bookings.
 
-To check the current state of any mandate, go to **Sales & Payments → Inbound → Direct Debit → Mandates**. The overview shows, per mandate:
+To check the current state of any mandate, go to **Sales & Payments → Direct Debit mandates**. The overview shows, per mandate:
 
 - whether a payment plan is attached
 - when the last payment on that mandate was taken

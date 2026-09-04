@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/billing-settings.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-07-22"
+last_converted: "2026-09-04"
 related_articles: ["invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "invoicing-overview", "szamlazz-invoices", "fakturoid-invoices", "xero-integration"]
 ---
 
@@ -60,7 +60,7 @@ When automatic invoicing is off, no invoices are generated automatically. You ca
 
 An **invoice profile** is a legal entity — company name, address, Business ID, Tax ID, VAT details and invoice numbering. It is the "From" block on every invoice. A **bank account** is one IBAN that belongs to a profile; a profile can hold several accounts and marks one of them as its default.
 
-Go to **Settings → Billing → Invoice profiles** to manage both.
+Go to **Settings → Billing & Payments → Invoice profiles** to manage both.
 
 ![Invoice profiles list showing two legal entities with the default profile badge](../../assets/images/invoice-profiles-list.png)
 
@@ -211,7 +211,7 @@ Three templates are available:
 
 To select a template:
 
-1. Go to **Settings → Billing** and open the Invoice Profile.
+1. Go to **Settings → Billing & Payments** and open the Invoice Profile.
 2. In the **Invoice Engine** section, find **Template**.
 3. Choose a template from the list.
 4. Click **Preview** to see a rendered preview with your company branding.

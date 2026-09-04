@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0097_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-25"
+last_converted: "2026-09-04"
 ---
 
 # Xero Integration
@@ -37,7 +37,7 @@ You need an active [Xero](https://www.xero.com/) account with:
 
 ### Step 1 — Connect Xero
 
-1. Go to **Settings → Billing** and open your Invoice Profile.
+1. Go to **Settings → Billing & Payments** and open your Invoice Profile.
 2. In the **Invoice Engine** section, select **Xero**.
 3. Click **Connect Xero** — you are redirected to Xero to log in and authorize Zooza.
 
@@ -55,7 +55,7 @@ You need an active [Xero](https://www.xero.com/) account with:
 
 If your company is a VAT payer:
 
-1. Go to **Settings → Billing** → scroll to the bottom.
+1. Go to **Settings → Billing & Payments** → scroll to the bottom.
 2. Click **Sync VAT** — Zooza pulls tax rates from Xero.
 
    ![VAT sync button at the bottom of billing settings](../../assets/images/client-import-01.png)
@@ -139,7 +139,7 @@ You can also generate an invoice when recording a manual payment:
 
 To enable automatic invoicing on every payment:
 
-Go to **Settings → Billing** → enable **Automatic invoice generation upon payment**.
+Go to **Settings → Billing & Payments** → enable **Automatic invoice generation upon payment**.
 
 ![Automatic invoice generation toggle](../../assets/images/xero-integration-18.png)
 

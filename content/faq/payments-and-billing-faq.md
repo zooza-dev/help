@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-07-22"
+last_converted: "2026-09-04"
 ---
 
 # Payments and Billing FAQ
@@ -163,7 +163,7 @@ No. This is the most common source of confusion when setting up payments.
 
 A payment template defines **when and in how many parts** a client pays — monthly, quarterly, annually, after N sessions, or a fixed number of instalments. It does **not** contain the price. The amount comes from each programme's own price setting, and any discount on the template is calculated as a percentage or fixed sum off that price.
 
-So if you run six programmes and want to offer monthly, quarterly and annual payment on each, you create **three templates, not eighteen**. You create them once under **Team & Settings → Billing → Payments**, then switch them on for each programme under **Programmes → programme → Settings → Price and Payment → Payment Frequency**.
+So if you run six programmes and want to offer monthly, quarterly and annual payment on each, you create **three templates, not eighteen**. You create them once under **Settings → Billing & Payments → Payment schedule templates**, then switch them on for each programme under **Programmes → programme → Settings → Price and Payment → Payment Frequency**.
 
 Each programme keeps its own price. The same "Monthly" template produces different instalments for a €300 programme and a €450 one.
 
@@ -284,7 +284,7 @@ Zooza does not have a dedicated **credit note** or **debit note** button. What i
 
 ### To fix a wrong invoice — general process
 
-1. Identify which invoicing system you use (**Settings → Billing → Invoice Settings**).
+1. Identify which invoicing system you use (**Settings → Billing & Payments → Invoice Settings**).
 2. If using **Zooza built-in**: click the pencil icon next to the invoice on the booking detail. You can correct the period, date, payment method, and description. This does not change the payment amount.
 3. If using an **external system**: open the invoice in that system and apply the correction there (edit, void, credit note, or storno — depending on the system). The corrected version will not appear in Zooza.
 4. If the payment amount itself needs to change, adjust the debt on the booking in Zooza separately — see [Edit payment on booking](../guides/edit-payment-on-booking.md).

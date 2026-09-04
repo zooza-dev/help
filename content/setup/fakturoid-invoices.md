@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-25"
+last_converted: "2026-09-04"
 ---
 
 # Fakturoid Integration
@@ -31,7 +31,7 @@ You need an active [Fakturoid](https://www.fakturoid.cz/) account. No API keys t
 
 ## Setup
 
-1. Go to **Settings → Billing** and open your Invoice Profile.
+1. Go to **Settings → Billing & Payments** and open your Invoice Profile.
 2. In the **Invoice Engine** section, select **Fakturoid**.
 3. Click **Connect to Fakturoid** — you will be redirected to Fakturoid to log in and authorize Zooza.
 4. After authorization you are redirected back to Zooza. The connection is active immediately.

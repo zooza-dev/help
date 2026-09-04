@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-04-02"
+last_converted: "2026-09-04"
 ---
 
 # Inbound payments — technical reference
@@ -294,7 +294,7 @@ The LLM should catch duplicates automatically. If it didn't (e.g. the payments a
 
 **"Payments from a known non-client keep appearing"**
 
-Create an ignore filter. Either trigger it by ignoring one payment and clicking "Create filter", or create it manually in Settings → Payments → Inbound Payments → Ignore Filters. Use the exact payer IBAN plus a note pattern if needed.
+Create an ignore filter. Either trigger it by ignoring one payment and clicking "Create filter", or create it manually in Settings → Sales & Payments → Inbound pairing → AI rules. Use the exact payer IBAN plus a note pattern if needed.
 
 **"A payment was incorrectly ignored by a filter"**
 
