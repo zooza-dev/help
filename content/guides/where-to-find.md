@@ -42,8 +42,8 @@ Can't find something? This page gives the direct path to the most commonly searc
 | Payments for a specific booking | Open the booking → **Payments** section |
 | Unpaid / outstanding clients | **Sales & Payments → Payments** → filter by status: *Outstanding* |
 | Payment reminders settings | **Activities → Programmes** → open programme → **Automations → Payment Reminders** |
-| GoCardless inbound payment matching | **Sales & Payments → Inbound pairing** |
-| Bank transfer import (CSV) | **Sales & Payments → Inbound pairing → Import** |
+| GoCardless inbound payment matching | **Payments → Payment reconciliation** |
+| Bank transfer import (CSV) | **Payments → Transactions → Import payments** |
 | Invoices | **Sales & Payments → Invoices** |
 | Discounts and discount codes | **Sales & Payments → Discounts** |
 

@@ -6,7 +6,7 @@ product_area: "Settings"
 audience: ["admin", "client"]
 tags: ["glossary", "terminology", "definitions"]
 status: "published"
-last_converted: "2026-08-30"
+last_converted: "2026-09-04"
 ---
 
 # Zooza Glossary
@@ -32,6 +32,13 @@ The language Zooza writes to your clients in — automatic emails and the messag
 
 ### Awaiting payment
 A booking that is confirmed but not yet paid, inside the grace period you allow. It becomes *Unpaid* when that window expires. See [Debt](#debt).
+
+---
+
+### Appearance
+How the Zooza app looks to you: **Theme** (System, Light or Dark) and an accent **Colour**. Set in **Settings → My profile → Appearance**.
+
+The choice is personal — saved to your account, carried between your devices, and invisible to colleagues and clients. **System** is the default and is what makes Zooza follow your computer's own light/dark setting.
 
 ---
 
@@ -271,6 +278,13 @@ Copy the exact address from the **Share** button in the Classes list rather than
 
 ---
 
+### Payment reconciliation
+The queue of incoming bank payments waiting to be matched to a booking, and the screen where you match them by hand when Zooza could not do it automatically. Rows are grouped as **Unpaired**, **Processing**, **Paired**, **Ignored** and **Error**; its other tabs hold the AI rules that drive automatic matching and the analytics on how they perform.
+
+> Formerly under a menu hub called: *Inbound*
+
+---
+
 ## R
 
 ### Reference number
@@ -306,6 +320,11 @@ The automatic process by which Zooza sends payment records to the connected invo
 
 ---
 
+### Received payments
+See [Transactions](#transactions).
+
+---
+
 ## T
 
 ### Term Payment
@@ -327,6 +346,15 @@ A Zooza feature that makes specific Classes available for prospective clients to
 
 ### Trash
 Where deleted registrations, classes, sessions and cancelled scheduled payments go. Restorable for **30 days** from **Settings → Tools → Trash**; permanently gone after that.
+
+---
+
+### Transactions
+The ledger of money already received and recorded, split into tabs by how it arrived — **Cash & Transfer**, **Card**, **Direct Debit** — each with its own export. A fourth tab imports payments from a file.
+
+**Transactions vs [Payment reconciliation](#payment-reconciliation):** reconciliation holds money still waiting to be matched; Transactions holds money already settled. A payment moves from one to the other once it is paired. So *"where is my payment"* is answered in reconciliation, *"what have we taken"* in Transactions.
+
+> There is no payment-status filter here — unmatched money is not in this list at all.
 
 ---
 

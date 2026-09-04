@@ -151,7 +151,7 @@ If mandates were set up correctly but Zooza flagged the instalments for manual h
 
 The first mandate GoCardless issues is a one-off, not a recurring one. Zooza read that as "this mandate cannot be charged again" and marked the following instalments manual. GoCardless then replaces it with a permanent recurring mandate, so subsequent payments were flagged correctly — which is why the problem appeared only at the very start of a booking. This has been fixed for new bookings.
 
-To check the current state of any mandate, go to **Sales & Payments → Direct Debit mandates**. The overview shows, per mandate:
+To check the current state of any mandate, go to **Payments → Direct Debit mandates**. The overview shows, per mandate:
 
 - whether a payment plan is attached
 - when the last payment on that mandate was taken

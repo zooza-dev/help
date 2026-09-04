@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-30"
+last_converted: "2026-09-04"
 related_articles: ["instructor-access-faq","managing-instructors","user-roles","add-zooza-app-to-phone"]
 ---
 
@@ -129,11 +129,29 @@ Available languages: Slovak, English, Czech, Hungarian, Romanian.
 
 For more detail — including how to change the language of client-facing widgets and emails — see [Change the language in Zooza](../guides/interface-language-settings.md).
 
-## How do I switch Zooza to dark mode?
+## How do I switch Zooza to dark mode — or turn it off?
 
-Zooza does not have an independent dark/light mode setting. The app follows your **browser's or operating system's theme preference**. If your browser or OS is set to dark mode, Zooza will appear in dark mode automatically.
+Go to **Settings → My profile** and find the **Appearance** card.
 
-To change the theme: update your system display settings (macOS: System Settings → Appearance; Windows: Settings → Personalisation → Colours) or your browser's appearance settings. The change takes effect immediately in Zooza without needing to refresh.
+**Theme** offers three choices:
+
+| Choice | What you get |
+|---|---|
+| **System** | Follows your computer's own light/dark setting — the default |
+| **Light** | Always light, whatever your computer is set to |
+| **Dark** | Always dark |
+
+If Zooza went dark on its own and you want it back, that is **System** following your
+computer. Pick **Light** and it stays light regardless.
+
+Under it, **Colour** sets the accent used across the app: Zooza orange (the default),
+Veronese Green, Rosso Corsa, International Klein Blue, Mauve, or Monticello.
+
+![The Appearance card on My profile, with Theme set to System and six colour swatches below](../../assets/images/my-profile-appearance-theme.png)
+
+The choice is **yours alone and follows you between devices** — it is saved to your
+user account, not to the company, so changing it does not affect your colleagues or
+anything your clients see.
 
 ## How do I create a test or sandbox Zooza account?
 

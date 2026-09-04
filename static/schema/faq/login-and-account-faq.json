@@ -86,10 +86,10 @@
     },
     {
       "@type": "Question",
-      "name": "How do I switch Zooza to dark mode?",
+      "name": "How do I switch Zooza to dark mode — or turn it off?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zooza does not have an independent dark/light mode setting. The app follows your browser's or operating system's theme preference. If your browser or OS is set to dark mode, Zooza will appear in dark mode automatically.\n\nTo change the theme: update your system display settings (macOS: System Settings → Appearance; Windows: Settings → Personalisation → Colours) or your browser's appearance settings. The change takes effect immediately in Zooza without needing to refresh."
+        "text": "Go to Settings → My profile and find the Appearance card.\n\nTheme offers three choices:\n\nIf Zooza went dark on its own and you want it back, that is System following your\ncomputer. Pick Light and it stays light regardless.\n\nUnder it, Colour sets the accent used across the app: Zooza orange (the default),\nVeronese Green, Rosso Corsa, International Klein Blue, Mauve, or Monticello.\n\nThe choice is yours alone and follows you between devices — it is saved to your\nuser account, not to the company, so changing it does not affect your colleagues or\nanything your clients see."
       }
     },
     {

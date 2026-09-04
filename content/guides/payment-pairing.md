@@ -147,7 +147,7 @@ The pairing queue groups rows into buckets rather than showing the raw status:
 
 When a payment sits in **Unpaired**:
 
-1. Open the row from **Sales & Payments → Inbound pairing**.
+1. Open the row from **Payments → Payment reconciliation**.
 2. Read the AI reasoning and check the suggested booking.
 3. Choose an action:
 
@@ -203,7 +203,7 @@ To export only the payments that matter:
 2. Set **Status** to **Paired**.
 3. Export.
 
-For the unpaired ones, open **Sales & Payments → Inbound pairing** and filter the queue to **Unpaired**. Search for the client by name, pick the registration, and pair the payment — the result is identical to automatic pairing. Transactions unrelated to Zooza can be dismissed with **Ignore**.
+For the unpaired ones, open **Payments → Payment reconciliation** and filter the queue to **Unpaired**. Search for the client by name, pick the registration, and pair the payment — the result is identical to automatic pairing. Transactions unrelated to Zooza can be dismissed with **Ignore**.
 
 > Cash versus non-cash cannot be read from `Transaction type` alone, because the column describes how the record was created rather than how the client paid. Filter by **Payment method** before exporting if that is the split you need.
 

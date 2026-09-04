@@ -32,6 +32,8 @@ The **Inbound Payments Setup** wizard configures three things at once:
 
 When you open **Settings → Billing & Payments → Payment collection setup**, the first screen shows your current configuration at a glance.
 
+![Payment collection setup: the three payment channels, the reconciliation rule, and the per-account statement feed table](../../assets/images/payment-collection-setup.png)
+
 ![Inbound Payments Setup — current setup screen with the three channel tiles and bank statement status](../../assets/images/inbound-setup-current-setup.png)
 
 The screen has two sections:

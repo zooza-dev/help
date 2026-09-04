@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0082_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-09-04"
 ---
 
 # How to assign Direct Debit mandates to bookings (GoCardless)
@@ -75,6 +75,10 @@ For each class:
 The logic is the same, just done individually.
 
 ## Monitoring and troubleshooting mandates
+
+The mandate list lives at **Payments → Direct Debit mandates**.
+
+![The Direct Debit mandates list under Payments](../../assets/images/payments-direct-debit-mandates.png)
 
 > **Navigation:** Go to **Payments → Direct Debit → Mandates**.
 

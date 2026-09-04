@@ -6,7 +6,7 @@
 # ║  Edit there, then run: python3 scripts/sync_terminology.py      ║
 # ╚══════════════════════════════════════════════════════════════════╝
 #
-# Last synced: 2026-08-30
+# Last synced: 2026-09-04
 # Used by: scripts/normalize_terminology.py → build/terminology/dictionary.json
 #
 # Fields per term:
@@ -265,7 +265,7 @@ terms:
       SETUP ORDER MATTERS: a membership fee needs a payment template created AS a
       membership template — that is a property chosen when the template is made, not
       afterwards. An ordinary template will never drive a membership fee. Create the
-      template first (Team & Settings → Billing → Payments), then set the programme
+      template first (Settings → Billing & Payments → Payment schedule templates), then set the programme
       (Programme → Settings → Price and Payment → Membership) and attach it.
       If Membership "does not work", check what kind of template is attached before
       anything else.
@@ -1249,7 +1249,7 @@ terms:
     ai_notes: >
       When a user says "payment not paired", "payment stuck", or "payment not showing",
       they mean an inbound payment that landed in manual review (status: new).
-      Guide them to Sales & Payments → Inbound Payments and pair manually.
+      Guide them to Payments → Payment reconciliation and pair manually from the Queue.
       When they say "payment not arriving", check GoCardless consent expiry first.
     public: true
 
@@ -2537,6 +2537,123 @@ terms:
       all reach them by email with links straight to the right page — and only then give
       the home-screen bookmark steps. Those steps work for a parent's profile page as
       well as for the admin app.
+    public: true
+
+  # ──────────────────────────────────────────────
+  # PAYMENTS AREA RESTRUCTURE — live 2026-09-04
+  # ──────────────────────────────────────────────
+
+  - id: payment-reconciliation
+    canonical_en: "Payment reconciliation"
+    category: "payments"
+    definition: >
+      The queue of incoming bank rows waiting to be matched to a booking or order, and
+      the screen where you match them by hand when Zooza could not. Rows are grouped as
+      Unpaired, Processing, Paired, Ignored and Error. Its other tabs hold the AI rules
+      that decide automatic matching and the analytics on how well they are doing.
+    context:
+      admin: "Payment reconciliation"
+      client: "—"
+      widget: "—"
+    deprecated:
+      - "Inbound"            # the hub that held these screens before September 2026
+      - "Inbound payments"   # still fine for the concept, not for the menu entry
+      - "Inbound pairing"    # the name used while the change was being built
+    translations:
+      sk: "Párovanie platieb"
+      cz: "Párování plateb"
+      de: "Zahlungsabgleich"
+      hu: "Fizetés-egyeztetés"
+      ro: "Reconcilierea plăților"
+    intent_keywords:
+      en: ["payment reconciliation", "reconcile", "unpaired payment", "pair a payment",
+           "payment not matched", "matching queue", "manual pairing"]
+      sk: ["párovanie platieb", "parovanie", "sparovanie", "sparovanie platieb",
+           "nespárovaná platba", "platba sa nespárovala", "spárovať ručne", "bankovy vypis"]
+      cz: ["párování plateb", "nespárovaná platba", "spárovat ručně"]
+    do_not_confuse_with:
+      - term: "Transactions"
+        reason: >
+          Reconciliation is money still waiting to be matched. Transactions is money
+          already settled and recorded. A payment moves from the first to the second
+          once it is paired — so "where is my payment" is answered in reconciliation,
+          and "what have we taken" in Transactions.
+    ai_notes: >
+      Navigation: Payments → Payment reconciliation, tabs Queue · AI rules & filters ·
+      AI Analytics. Before September 2026 all of this sat under a hub called "Inbound";
+      content written earlier may still say Payments → Inbound → List or → Setup.
+      The status the client sees is a bucket, not the raw enum: Unpaired covers new and
+      staging. Confirmed against production 2026-09-04.
+    public: true
+
+  - id: transactions-ledger
+    canonical_en: "Transactions"
+    category: "payments"
+    definition: >
+      The ledger of money already received and recorded, split into tabs by how it
+      arrived — Cash & Transfer, Card, Direct Debit — each with its own export. A fourth
+      tab imports payments from a file.
+    context:
+      admin: "Transactions"
+      client: "—"
+      widget: "—"
+    deprecated:
+      - "Received payments"
+      - "Inbound list"
+    translations:
+      sk: "Transakcie"
+      cz: "Transakce"
+      de: "Transaktionen"
+      hu: "Tranzakciók"
+      ro: "Tranzacții"
+    intent_keywords:
+      en: ["transactions", "received payments", "payment list", "ledger",
+           "export payments", "payments by card", "cash and transfer"]
+      sk: ["transakcie", "prijaté platby", "zoznam platieb", "export platieb",
+           "platby kartou", "hotovosť a prevod"]
+      cz: ["transakce", "přijaté platby", "seznam plateb", "export plateb"]
+    ai_notes: >
+      Navigation: Payments → Transactions. It has NO payment-status filter — that was
+      removed when the ledger was split from the pairing queue in September 2026. A
+      question about a payment that has not been matched belongs in Payment
+      reconciliation, not here. Each family tab exports separately.
+    public: true
+
+  - id: app-theme
+    canonical_en: "Appearance (theme and colour)"
+    category: "settings"
+    definition: >
+      A personal choice of how the Zooza app looks: theme (System, Light or Dark) and an
+      accent colour. Saved to the user's own account and carried between their devices;
+      it changes nothing for colleagues and nothing a client sees.
+    context:
+      admin: "Appearance"
+      client: "—"
+      widget: "—"
+    synonyms:
+      - "dark mode"
+      - "light mode"
+    translations:
+      sk: "Vzhľad (téma a farba)"
+      cz: "Vzhled (motiv a barva)"
+      de: "Darstellung"
+      hu: "Megjelenés"
+      ro: "Aspect"
+    intent_keywords:
+      en: ["dark mode", "light mode", "turn off dark mode", "theme", "appearance",
+           "change colour", "app is dark"]
+      sk: ["tmavý režim", "tmavy rezim", "ako vypnem dark mode", "vzhľad", "téma",
+           "zmeniť farbu", "aplikácia je tmavá"]
+      cz: ["tmavý režim", "vzhled", "motiv", "změnit barvu"]
+      ro: ["mod întunecat", "aspect", "temă"]
+    ai_notes: >
+      Navigation: Settings → My profile → Appearance. Theme: System · Light · Dark.
+      Colour: Zooza orange, Veronese Green, Rosso Corsa, International Klein Blue,
+      Mauve, Monticello.
+      SUPERSEDES older content saying Zooza has no theme setting and simply follows the
+      operating system — that was true until the picker shipped at the end of August
+      2026. "System" is the default and is what makes the app follow the OS.
+      Confirmed against production 2026-09-04.
     public: true
 
 # ──────────────────────────────────────────────

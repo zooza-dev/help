@@ -53,12 +53,12 @@ This page maps every section of the Zooza admin application to its reference doc
 | Menu item | Reference doc | Related guides | Status |
 |---|---|---|---|
 | Payments | [Payments](payments-dashboard.md) | [Payment Pairing](../guides/payment-pairing.md), [Payments FAQ](../faq/payments-and-billing-faq.md) | Done |
-| Sales & Payments → Inbound pairing | — | [Inbound payments — setup and pairing](../guides/inbound-payments.md) | Done |
-| Sales & Payments → Transactions | — | [Inbound payments — setup and pairing](../guides/inbound-payments.md) | Done |
-| Sales & Payments → Inbound pairing → Import | — | [CSV payment import](../guides/csv-payment-import.md) | Done |
-| Sales & Payments → Direct Debit mandates | — | [GoCardless direct debit mandates](../guides/gocardless-direct-debit-mandates.md) | Done |
-| Sales & Payments → Inbound pairing → AI analytics | — | [Inbound payments — technical reference](../reference/inbound-payments-internals.md) | Done |
-| Sales & Payments → Inbound pairing → AI rules | — | [Inbound payments — technical reference](../reference/inbound-payments-internals.md) | Done |
+| Payments → Payment reconciliation | — | [Inbound payments — setup and pairing](../guides/inbound-payments.md) | Done |
+| Payments → Transactions | — | [Inbound payments — setup and pairing](../guides/inbound-payments.md) | Done |
+| Payments → Transactions → Import payments | — | [CSV payment import](../guides/csv-payment-import.md) | Done |
+| Payments → Direct Debit mandates | — | [GoCardless direct debit mandates](../guides/gocardless-direct-debit-mandates.md) | Done |
+| Payments → Payment reconciliation → AI Analytics | — | [Inbound payments — technical reference](../reference/inbound-payments-internals.md) | Done |
+| Payments → Payment reconciliation → AI rules & filters | — | [Inbound payments — technical reference](../reference/inbound-payments-internals.md) | Done |
 | Settings → Billing & Payments → Payment collection setup | — | [Set up how Zooza collects money from clients](../setup/inbound-payments-setup.md) | Done |
 | Discounts | [Discounts](discounts.md) | [Discount Code](../guides/discount-code.md), [Discount Types](../guides/discount-types.md), [Discounts FAQ](../faq/discounts-and-sibling-pricing-faq.md) | Done |
 | Invoices | [Invoices](../setup/billing-and-invoicing.md) | [Xero Integration](../setup/xero-integration.md), [Xero FAQ](../faq/xero-invoicing-faq.md) | Done |

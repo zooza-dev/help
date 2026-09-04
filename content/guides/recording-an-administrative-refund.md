@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-04-02"
+last_converted: "2026-09-04"
 ---
 
 # Recording an Administrative Refund for an Online Payment
@@ -49,6 +49,14 @@ Recording the refund does **not** automatically change what the client owes. Dec
 | Client overpaid and you returned the excess | No further action needed — the refund record is sufficient. |
 | Client should now owe less (e.g. cancelled part of programme) | Go to **Payments → Edit** and reduce the total charge (debt) accordingly. |
 | You agreed a discount instead of a cash return | Add a discount or manual credit to the booking instead of reducing the debt. |
+
+## Where to see refunds you have issued
+
+Go to **Payments → Refunds** and open the **Issued** tab. Every refund recorded against a booking appears there, with its own export. The **Requests** tab next to it is the inbox for refunds clients have asked for and you have not yet actioned.
+
+![The Issued tab of the Refunds screen under Payments](../../assets/images/payments-refunds-issued.png)
+
+> This report used to sit under Reports. It moved to Payments when the payments area was reorganised, so it now lives beside the requests it settles.
 
 ## How administrative refunds appear in reports
 

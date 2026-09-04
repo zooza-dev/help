@@ -79,6 +79,10 @@ for t in master.get("terms", []):
     known |= variants(t["canonical_en"])
     for syn in (t.get("synonyms") or []):
         known.add(norm(syn))
+    # A see-also entry under an old name is good practice, not drift — the
+    # glossary is where someone looks up the word they still have in their head.
+    for old in (t.get("deprecated") or []):
+        known.add(norm(old))
 extra = [h for h in headings if not (variants(h) & known)]
 
 print(f"Master dictionary : {len(master.get('terms', []))} terms, {len(public)} public")
