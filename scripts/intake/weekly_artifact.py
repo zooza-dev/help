@@ -85,6 +85,8 @@ DECISIONS = [
 VERDICT_TO_DECISION = {
     "gap": "kb", "verify": "dig", "check": "dig",
     "product": "product", "client": "ok", "noise": "ok",
+    # the decision names themselves are natural to write in a note, so accept them
+    "kb": "kb", "dig": "dig", "ok": "ok",
 }
 
 SOURCE_RE = re.compile(r"\n\s*Sources:\s*\n(.*)$", re.S)
@@ -124,6 +126,7 @@ for r in rows:
         "reask": r.get("cust_after_bot", 0),
         "resolution": r.get("resolution_state") or "—",
         "rating": r.get("rating"),
+        "carried": r.get("carried_since"),
         "sources": r.get("sources") or [],
         "q": first_question(r),
         "turns": [dict(zip(("role", "who"), t[:2]), **dict(zip(("text", "cited"), split_sources(t[2]))))
@@ -145,6 +148,7 @@ for e in emails:
         "reask": 0,
         "resolution": "—",
         "rating": None,
+        "carried": None,
         "sources": [],
         "q": e.get("subject", ""),
         "turns": [{"role": t[0], "who": t[1], "text": t[2], "cited": []} for t in e["turns"]],
@@ -456,6 +460,7 @@ const FILTERS = [
   ['ok',      'Fine',        c => S(c).d === 'ok'],
   ['product', 'Product',     c => S(c).d === 'product'],
   ['noted',   'Has my note', c => !!S(c).note],
+  ['waiting', 'Still waiting', c => !!c.carried],
   ['human',   'Human',       c => c.human && c.channel === 'intercom'],
   ['bot',     'AI only',     c => !c.human],
   ['email',   'Email',       c => c.channel === 'email'],
@@ -623,6 +628,7 @@ function renderDetail(){
         '<span>Resolution <b>' + esc(c.resolution) + '</b></span>') +
     (c.reask ? '<span>Client wrote back <b>' + c.reask + '&times;</b> after the AI</span>' : '') +
     (c.rating != null ? '<span>Rated <b>' + c.rating + '</b></span>' : '') +
+    (c.carried ? '<span>Nobody has answered this since <b>' + c.carried + '</b></span>' : '') +
     '</div></div>';
 
   h += '<div class="triage"><div>' +
