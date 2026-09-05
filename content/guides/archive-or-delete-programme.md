@@ -9,7 +9,7 @@ tags: ["programme", "archive", "delete", "remove", "class", "hide"]
 status: "published"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-08-30"
+last_converted: "2026-09-05"
 related_articles: ["trash-and-restore","term-rebooking-guide","creating-a-class","calendar-bulk-actions"]
 ---
 
@@ -77,6 +77,11 @@ days it is gone for good.
 > **Deleted a class by mistake?** Go straight to **Settings → Tools → Trash** and
 > restore it — do not start rebuilding it by hand. See
 > [Recover deleted items](trash-and-restore.md) for what can and cannot come back.
+
+> **Deleted it and it is still in the list?** It almost certainly did delete. Some
+> data is held in your browser and does not clear the moment the record does, so the
+> row can linger for a few minutes. Refresh the page (F5) and it goes. Only if it
+> survives a refresh is something actually wrong.
 
 ### Deleting a Class does not delete its bookings
 

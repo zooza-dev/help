@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-04-02"
+last_converted: "2026-09-05"
 ---
 
 # Bulk Network Transfer
@@ -112,6 +112,25 @@ Click **Transfer** to execute. The system processes each registration individual
 - Transferred registrations appear in the target company's Bookings list.
 - Skipped registrations remain at the source company unchanged.
 - If you used **Cancel on accept**, the source registrations stay active until the target company confirms.
+
+### Where the receiving branch finds children waiting to be accepted
+
+**On the dashboard of the company the child moved to** — the main screen, as soon as
+you log in. There is no separate inbox to hunt for, which is why people miss it.
+
+### Do not delete a transferred registration
+
+A transferred booking is cancelled at the source, not deleted, and that is
+deliberate. **Deleting one that carries payments takes real money out of your
+reporting** — and out of the receiving branch's picture of what the family has
+already paid.
+
+Delete only registrations that should never have existed: duplicates, or a booking
+created by mistake. Those are not the ones you would be transferring anyway.
+
+If the cancelled state at the source is a problem for how you count things, say so
+rather than working around it by deleting — the process was designed jointly with the
+networks using it and can be revisited.
 
 ---
 

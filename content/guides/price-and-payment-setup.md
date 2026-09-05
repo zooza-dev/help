@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/setting-the-price-on-a-course.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-04"
+last_converted: "2026-09-05"
 related_articles: ["payment-templates-creation","membership-fee-setup","late-bookings","payment-options"]
 ---
 
@@ -188,7 +188,23 @@ Clients then choose between them on the booking form.
 
 If you set the programme to one-off payment instead, the Payment Frequency section disappears entirely and no template can be offered — including the one-off template. A programme set to one-off has exactly one way to pay, by definition.
 
-> **Switching an existing programme from instalments to one-off can leave templates behind.** If prices start displaying incorrectly after such a switch — the class showing one figure and the payment settings another — the old templates are usually still attached to the classes. Contact support rather than trying to unpick it; the mismatch is in the stored records, not in a setting you can see.
+> **Switching an existing programme from instalments to one-off leaves the old price behind.** This is the usual cause of a class showing one figure while the payment settings show another — 1008 € on the class against the 990 € you meant.
+>
+> **What is happening:** with scheduled payments you had a **price per session**, and the system keeps calculating from it even after you switch the collection method to one-off. Both numbers are now set, and they disagree.
+>
+> **The fix:** set the **price per session to 0** and leave only the one-off price. The class then shows the figure you intended.
+>
+> If the numbers still do not line up after that, old payment templates may still be attached to the classes — that part is in the stored records rather than in a setting you can see, so contact support.
+
+### The registration form shows no price at all on a new class
+
+Different from 0,00 below. If the class is a **lead collection** class — one with no
+sessions yet — no price is shown and none can be, whatever you set on the class. A
+class with no sessions has no billing period, so there is nothing to price.
+
+Add the sessions and the price appears. If you want people to know the cost before
+the schedule is fixed, put it in the programme description. See
+[Lead collection](lead-collection.md).
 
 ### The registration link shows a price of 0.00
 

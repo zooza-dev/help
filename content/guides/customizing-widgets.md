@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0078_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: 2026-02-15
+last_converted: "2026-09-05"
 ---
 
 # Customizing widgets
@@ -323,6 +323,53 @@ Use this when Blocks have their own dates and showing the parent class date woul
 <!-- REVIEW: Confirm that 'segments' in the spec = 'Blocks' in the admin UI. -->
 
 ---
+
+## Tracking conversions (Meta Pixel, Google Analytics)
+
+The widget fires events you can hook your own tracking onto, so a completed booking
+can be counted as a conversion in Meta or Google.
+
+**The tracking code goes on your own website**, alongside the base pixel you have
+already installed — not inside Zooza. There is no field in the app to paste a pixel
+into, which is what people look for first.
+
+The events and how to subscribe to them are in the developer documentation:
+[docs.zooza.online/widgets/registration-widget/#analytics](https://docs.zooza.online/widgets/registration-widget/#analytics).
+
+Hand that link to whoever maintains your site — it is a job for the same person who
+put the base pixel in.
+
+## Changing the wording in a widget
+
+The texts inside the booking form and the client profile can be overridden from your
+own page — you do not have to accept the default label if it does not suit how you
+talk to parents.
+
+Add a small script **before** the Zooza widget script, listing the keys you want to
+change:
+
+```html
+<script type="text/javascript">
+window.ZOOZA = {
+  print_debug: true,
+  translations: {
+    'registration.capacity_full': '🟠 Full — join the waiting list'
+  }
+}
+</script>
+```
+
+- **Put as many keys under each other as you need** — one script covers the lot.
+- **`print_debug: true`** prints the keys to the browser console, which is how you find the name of the text you want to change.
+- **The change is per page.** It lives in your own site, so a widget embedded on another page keeps the default until you add the script there too.
+- One text, one key: a button label is the same key in every state it appears in.
+
+The full key list is in the developer documentation:
+[docs.zooza.online/widgets/profile-widget/#translations](https://docs.zooza.online/widgets/profile-widget/#translations).
+
+> This is the practical answer to "can we call it something else?" — relabelling
+> *Full* as *Full — join the waiting list*, or renaming a field to match the words
+> your parents already use.
 
 ## Custom fonts and CSS styling
 

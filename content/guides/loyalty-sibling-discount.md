@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-14"
+last_converted: "2026-09-05"
 ---
 
 # Sibling Discount
@@ -47,6 +47,19 @@ When a parent completes a booking, Zooza counts how many qualifying registration
 The system then finds the discount rule with the highest child threshold that is still ≤ N, and applies that discount.
 
 **Example:** Rules set to 2nd child: 10%, 4th child: 20%. Parent registers their 3rd child → the 2nd-child rule applies (10%), because 3rd child is ≥ 2 but < 4.
+
+### The count is taken once, at booking
+
+**Deleting a registration does not recalculate the discount on the others.** Nothing
+re-runs; the discount that was applied stays applied.
+
+This surfaces on parent-and-child programmes, where a family sometimes creates two
+separate bookings — one for the adult, one for the child — and the second is counted
+as a sibling. Delete the surplus booking and the discount on the survivor is still
+there, usually showing as an overpayment.
+
+Put it right on the booking itself: open the instalment and correct the amount. See
+[Session payment adjustments](session-payment-adjustments.md#adjust-a-single-scheduled-payment-manually).
 
 ---
 

@@ -62,6 +62,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can I run make-ups from my own system over the API?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Technically yes — everything Zooza does is available over the API, and the public\ndocumentation only covers the endpoints most people consume. So creating client\naccounts and enrolling them is possible.\n\nBut think about the shape of it before you start. Make-up sessions are tied to\nclasses and sessions by their nature. To offer them from your own system you would\nhave to keep a parallel calendar in both places and hold the two in step — every\nclass, every date, every cancellation.\n\nThat is a much bigger integration than \"create a client\", and at that point building\nmake-ups into your own system is often less work than synchronising ours with it.\nWorth being honest about before the effort goes in."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How do I report a problem with Zooza AI?",
       "acceptedAnswer": {
         "@type": "Answer",

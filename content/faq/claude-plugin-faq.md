@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-09-05"
 related_articles: ["claude-plugin"]
 ---
 
@@ -69,6 +69,21 @@ When Zooza adds a new capability, your connector keeps the list of tools it lear
 If it still misbehaves after refreshing, disconnect and reconnect under a slightly different name. That forces a clean setup rather than reusing the cached one.
 
 > This is a limitation of the AI platforms, not of Zooza — neither currently allows a connector to push an updated tool list to clients that have already connected.
+
+## Can I run make-ups from my own system over the API?
+
+Technically yes — everything Zooza does is available over the API, and the public
+documentation only covers the endpoints most people consume. So creating client
+accounts and enrolling them is possible.
+
+**But think about the shape of it before you start.** Make-up sessions are tied to
+classes and sessions by their nature. To offer them from your own system you would
+have to keep a parallel calendar in both places and hold the two in step — every
+class, every date, every cancellation.
+
+That is a much bigger integration than "create a client", and at that point building
+make-ups into your own system is often less work than synchronising ours with it.
+Worth being honest about before the effort goes in.
 
 ## How do I report a problem with Zooza AI?
 

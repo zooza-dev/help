@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0058_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-30"
+last_converted: "2026-09-05"
 related_articles: ["trials-faq","trials-daily-business","individual-sessions","blocks-configuration"]
 ---
 
@@ -80,6 +80,11 @@ You can set a special unit price specifically for the trial.
 
 1. If you leave the trial price at 0, Zooza will automatically apply the default unit price from the programme or class.
 2. If you enter a value greater than 0, this will be the price clients pay per trial session instead of the regular programme price.
+
+> **0 does not mean free — it means "use the normal price".** This is the one that
+> catches people out: they set a Paid Trial, leave the price at 0 expecting no charge,
+> and the client is billed the full per-session rate. If the trial really is free,
+> choose **Free Trial** instead; if it is paid, type the amount you want.
 
 ![If you enter a value greater than 0, this will be the price clients pay per trial...](../../assets/images/trial-lessons-05.png)
 

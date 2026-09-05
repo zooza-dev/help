@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0086_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: 2026-02-15
+last_converted: "2026-09-05"
 ---
 <!-- REVIEW: add all types of prepaid payment frequencies -->
 # Payment templates creation
@@ -55,7 +55,14 @@ does not want to pay monthly, they choose to pay for the entire programme
 at once. For such a payment you can give a discount either none, in EUR or as a percentage.
 
 ![Screenshot](../../assets/images/payment-templates-creation-04.png)
-- Periodic pre-paid payment – you have the option to set whether the programme can be paid gradually, i.e. in frequency. Here you select from the options – Monthly, Quarterly, Semi-annually, Annually, After N sessions (the number of sessions after which the next scheduled payment for the programme will be issued), Fixed number of scheduled payments (the number of scheduled payment into which the price for the programme will be divided).The programme provider has the option to grant a discount for this type of payment either none, in EUR or as a percentage.
+- Periodic pre-paid payment – you have the option to set whether the programme can be paid gradually, i.e. in frequency. Here you select from the options – Monthly, Quarterly, Semi-annually, Annually, **By block** (a payment is created at the start of each [block](blocks-creation.md) — use this when your blocks *are* the billing periods), After N sessions (the number of sessions after which the next scheduled payment for the programme will be issued), Fixed number of scheduled payments (the number of scheduled payment into which the price for the programme will be divided).
+
+> **When your modules do not line up with calendar months**, these last three are the
+> ones to reach for. A course sold in fixed modules bills cleanly **By block**. A
+> client attending four sessions a month billed **After N sessions** with N=8 gets a
+> payment roughly every two months, without you working out dates. **Fixed number of
+> scheduled payments** divides a known total — but be careful with it once people
+> start joining mid-course, because the count was fixed for a full-length enrolment.The programme provider has the option to grant a discount for this type of payment either none, in EUR or as a percentage.
 ![Screenshot — payment templates creation](../../assets/images/payment-templates-creation-01.png)
 ![Screenshot — payment templates creation](../../assets/images/payment-templates-creation-02.png)
 
@@ -276,6 +283,21 @@ Each payment template has a **Visible to clients** toggle in its settings. This 
 If clients report they cannot see payment options during booking, check that the relevant templates have the **Visible to clients** toggle turned on. Go to **Settings** > **Payments**, click the pen icon next to the template, and verify the visibility setting.
 
 <!-- REVIEW: Confirm whether "Visible to clients" also controls visibility in the Parent Portal payment tab, or only in the registration widget and profile widget. -->
+
+## "Include the whole start date"
+
+A checkbox you meet when applying a payment template, and one nobody can guess from
+its label. It decides whether sessions falling **on** the date you chose are counted
+into the price.
+
+| Setting | What it counts |
+|---|---|
+| **Unticked** | Sessions on that date are **excluded**. Pick this when the client will not attend that day — a session at 17:00 on a date they join in the evening. |
+| **Ticked** | Everything on that date **counts**, whatever time it is. |
+
+So for a client starting on 1 January where a session also falls on 1 January: leave
+it unticked and they are not charged for a session they will not attend; tick it and
+they are.
 
 ## Anniversary date on payment templates
 
