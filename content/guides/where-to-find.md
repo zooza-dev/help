@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-04"
+last_converted: "2026-09-05"
 ---
 
 # Where to find things in Zooza — quick reference
@@ -35,12 +35,30 @@ Can't find something? This page gives the direct path to the most commonly searc
 
 ## Payments
 
+> **The Payments area was reorganised in September 2026.** The **Inbound** hub is
+> gone and its screens are now entries in their own right. If you are looking for
+> something that used to be under Inbound, this is the map:
+>
+> | You used to go to | It is now |
+> |---|---|
+> | Payments → Inbound → List | **Payments → Transactions** — the ledger of money received, in Cash & Transfer / Card / Direct Debit tabs |
+> | The unpaired-payments list | **Payments → Payment reconciliation**, and *Unpaired* is the very first filter |
+> | Payments → Inbound → Import | **Payments → Transactions → Import payments** |
+> | Payments → Inbound → Setup | **Settings → Billing & Payments → Payment collection setup** |
+> | Payments → Inbound → Direct Debit | **Payments → Direct Debit mandates** |
+> | Reports → Refunds report | **Payments → Refunds → Issued** |
+>
+> **Transactions has no status filter any more**, and that is deliberate: money that
+> has not been matched yet is not in that list at all. It is in Payment
+> reconciliation.
+
 | I want to find… | Where to go |
 |-----------------|-------------|
 | All payments received | **Payments → Transactions** |
+| Payments that have not been matched yet | **Payments → Payment reconciliation** → filter *Unpaired* |
 | A specific client's payments | Client profile → **Payments** tab |
 | Payments for a specific booking | Open the booking → **Payments** section |
-| Unpaid / outstanding clients | **Sales & Payments → Payments** → filter by status: *Outstanding* |
+| Unpaid / outstanding clients | **Sales & Payments → Payments** — the summary dashboard |
 | Payment reminders settings | **Activities → Programmes** → open programme → **Automations → Payment Reminders** |
 | GoCardless inbound payment matching | **Payments → Payment reconciliation** |
 | Bank transfer import (CSV) | **Payments → Transactions → Import payments** |

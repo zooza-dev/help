@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/group-creation.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-30"
+last_converted: "2026-09-05"
 related_articles: ["creating-a-programme","programme-class-session-definition","edit-sessions-in-programmes","lead-collection"]
 ---
 
@@ -62,6 +62,15 @@ Fill in the following fields:
 ![Class details form](../../assets/images/creating-a-class-03.png)
 
 > **Note:** Fields marked with an orange icon are required.
+
+> **The instructor parents see is the one set here, on the class.** Changing the
+> instructor on individual sessions does not change the name on the booking form —
+> the form reads the class. If you swapped someone out and the old name is still on
+> your website, this is why.
+>
+> Second thing to check: the instructor's own profile has a **show nickname only**
+> setting. With it on, parents see the nickname rather than the name — so a name you
+> do not recognise may be the right person under a nickname you forgot was set.
 
 > **`Duration of sessions` is what parents see on the booking form.** The form shows
 > this one number from the class — it does not read the length of the first session,

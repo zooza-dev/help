@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-30"
+last_converted: "2026-09-05"
 related_articles: ["customizing-widgets", "creating-entry-passes", "zooza-sites", "publish-widgets", "deploying-zooza-on-website"]
 ---
 
@@ -42,6 +42,22 @@ the UK and `zooza.site/asia/…` for the Middle East and Asia. Europe has no pre
 all, so it is plain `zooza.site/your-account-name/…`. This mirrors your
 [login address](../faq/login-and-account-faq.md#which-address-do-we-log-in-at), and it
 is another reason to copy the link rather than assemble it by hand.
+
+### The name in the address is not editable in the app
+
+The account-name part of the address is generated when your account is created, which
+is why a personal name sometimes ends up in a link you want to send to parents.
+
+**Changing the programme's URL field does not change it** — that field controls
+something else, and people reasonably try it first.
+
+If it matters to you, **ask us and we will change it.** Tell support the address you
+have and the one you want, and we will rewrite it, in whichever region your
+account sits.
+
+Worth weighing first, though: this page is the temporary one. If the reason you want
+a different name is that the link is going in front of customers, embedding the
+booking form on your own site solves the same problem better and permanently.
 
 > **Treat this as temporary.** It is a bridge for the weeks before Zooza is on your
 > own website — good for getting registrations open today, for a Facebook post, or

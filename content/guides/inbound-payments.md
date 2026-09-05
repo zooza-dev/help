@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-04"
+last_converted: "2026-09-05"
 ---
 
 
@@ -209,6 +209,25 @@ Business rules are natural language instructions you write to guide how payments
 To add rules: **Payments → Payment reconciliation → AI rules & filters**. Maximum 10 active rules per account.
 
 ---
+
+## A payment is nowhere in Zooza at all
+
+Before hunting through filters: for a bank payment to appear in Zooza in the first
+place, **three things all have to be true**.
+
+1. **Zooza can tell which account the notification belongs to** — that is what the
+   address you set in your internet banking is for.
+2. **Zooza can read the body of the email.** If the bank changes its template, this is
+   the step that breaks. It is what happened with Fio in August 2026.
+3. **It is not a duplicate.** A payment already recorded is not recorded twice.
+
+Clear all three and the payment shows up — either paired, or waiting in the queue.
+And if you have ignore rules set, an ignored payment is still there: filter the
+reconciliation queue to **Ignored** and you will find it.
+
+**If a payment is genuinely missing, send the bank statement.** With the statement
+line we can trace where it stopped. Every notification email is kept, so even a
+payment that never surfaced can usually be found after the fact.
 
 ## Troubleshooting
 
