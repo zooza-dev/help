@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-28"
+last_converted: "2026-09-05"
 ---
 
 # Getting Help and Support
@@ -62,9 +62,11 @@ This is the part worth knowing, because it turns half the questions people bring
 
 - attendance across all of one client's registrations
 - who has not paid, filtered however you like
-- creating classes and whole schedules
+- creating classes and whole schedules, and adding sessions to a class already running
 - marking attendance, adding session summaries
 - pulling clients by an extra field and messaging exactly that group
+- occupancy, unpaid, attendance, trials, retention and unused make-up credits, written
+  up as a report in the conversation
 
 Set it up at **`zooza.app/#mcp`** — use your regional address if you have one (for example `uk.zooza.app/#mcp`). It is free for active customers.
 

@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-04"
+last_converted: "2026-09-05"
 ---
 
 # Payments and Billing FAQ
@@ -617,9 +617,9 @@ An **Ignored** inbound payment is one that Zooza received from the bank but deli
 1. **Duplicate detection (deduplication)** — The payment notification arrived more than once (for example, the bank resent the same notification). Zooza's deduplication agent recognises that it has already processed an identical payment (same amount, same reference, same date) and marks subsequent copies as Ignored to avoid double-matching.
 2. **Manual ignore** — An admin explicitly marked the payment as Ignored. This is typically done for payments that arrived in error, need to be handled outside Zooza, or belong to a different system.
 
-An Ignored payment is not lost — it stays in **Payments → Received payments** with an Ignored status and is visible to admins. If an inbound payment was incorrectly marked as Ignored (for example, by a misconfigured AI rule), you can review and reprocess it.
+An Ignored payment is not lost — it stays in **Payments → Payment reconciliation** with an Ignored status and is visible to admins. If an inbound payment was incorrectly marked as Ignored (for example, by a misconfigured AI rule), you can review and reprocess it.
 
-To investigate why a payment was ignored: go to **Payments → Received payments**, find the payment, and check its status details. Also review **Payments → Received payments → AI Rules & Filters** to confirm no rule is excluding this payment type.
+To investigate why a payment was ignored: go to **Payments → Payment reconciliation**, find the payment, and check its status details. Also review **Payments → Payment reconciliation → AI rules & filters** to confirm no rule is excluding this payment type.
 
 ## Does the "X days after registration" due date setting apply to payment plan instalments?
 

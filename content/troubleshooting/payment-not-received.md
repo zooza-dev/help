@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-30"
+last_converted: "2026-09-05"
 related_articles: ["payment-pairing","inbound-payments","email-payment-notifications","inbound-payments-setup"]
 ---
 
@@ -77,15 +77,15 @@ Go to **Settings → Billing profiles** and copy the Zooza-generated notificatio
 
 ### 2. Check if other transactions are being matched
 
-Go to **Payments → Received payments** and check whether other recent bank transfers are appearing. If yes, the setup is working and the issue is specific to this one payment. If no recent transfers are visible, the email pipeline is broken entirely — likely an address mismatch or a bank-side issue.
+Go to **Payments → Transactions** and check whether other recent bank transfers are appearing. If yes, the setup is working and the issue is specific to this one payment. If no recent transfers are visible, the email pipeline is broken entirely — likely an address mismatch or a bank-side issue.
 
 ### 3. Check the unmatched payments queue
 
-In **Payments → Received payments**, filter for unmatched or unresolved payments. The payment may have arrived but failed to match because the variable symbol (VS) was missing, incorrectly formatted, or placed differently in the email.
+In **Payments → Payment reconciliation**, filter for *Unpaired*. The payment may have arrived but failed to match because the variable symbol (VS) was missing, incorrectly formatted, or placed differently in the email.
 
 ### 4. Check the ignore list and AI rules
 
-Payments can be moved to an ignored state — either manually or by an AI rule. Check **Payments → Received payments** for the payment and look at its status. Also review **Payments → Received payments → AI Rules & Filters** to confirm no rule is excluding this type of payment.
+Payments can be moved to an ignored state — either manually or by an AI rule. Check **Payments → Payment reconciliation** for the payment and look at its status. Also review **Payments → Payment reconciliation → AI rules & filters** to confirm no rule is excluding this type of payment.
 
 ### 5. Add your own email to the notification rule
 

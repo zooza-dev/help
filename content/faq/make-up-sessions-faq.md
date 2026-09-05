@@ -65,6 +65,13 @@ Switch it on when capacity, grouping or level means a child cannot simply drop i
 3. The self-service picker disappears. They cannot choose or move a replacement date.
 4. You see their requested timing on the cancelled session in the attendance view, next to the cancellation reason, and assign the make-up from there.
 
+> **The requested timing is in the cancellation email too**, since 1 September 2026 — the
+> new-cancellation notification that reaches you and the instructor carries it as its own
+> row, so you can read the parent's intent without opening the app. **As soon as possible**
+> and **No preference** arrive as labels; a **Specific request** arrives as the parent wrote
+> it. Cancellations that carry no preference — a course without the toggle, or a cancellation
+> that earned no credit — show no row at all.
+
 > **Do not confuse it with the switch just above it.** *Allow clients to reschedule/change an already selected make-up session* only controls whether a client may **move** a make-up they already have — with it off they still choose the first one. The administrator-assigned switch takes the choosing away entirely.
 
 Cancelling a replacement that has already been assigned is unchanged — that still follows your other make-up settings.

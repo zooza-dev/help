@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: "legacy/0084_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-04"
+last_converted: "2026-09-05"
 ---
 
 # Payment Pairing for Bank Transfers & Direct Debit
@@ -51,7 +51,7 @@ Important: Automatic pairing depends on how your bank provides transaction data.
 
 ![The payment amount matches the expected amount due](../../assets/images/blocks-creation-07.png)
 
-If all conditions are met, the payment is automatically paired with the booking. If not, the payment remains unassigned and can be paired manually in *Payments – Received payments*.
+If all conditions are met, the payment is automatically paired with the booking. If not, the payment remains unassigned and can be paired manually in **Payments → Payment reconciliation**, where *Unpaired* is the first filter.
 
 > **Multi-level pairing (linked bookings):** When you use [linked bookings](linked-bookings.md) with the **Manage parent/main booking** option, one registration collects payments on behalf of others. Zooza's automatic pairing follows this chain — a payment matched to any booking in the group is correctly attributed to the managing registration, even across multiple levels (e.g., order → registration A → registration B). The full resolution path is visible in the **Pairing process summary** on the payment detail. You do not need to do anything extra; this happens automatically.
 
@@ -189,7 +189,7 @@ Filter by **Last 7 days**, **Last 30 days**, **Last 90 days**, or **All time**.
 
 ## Reading the received-payments export
 
-**Sales & Payments → Received payments → Export** exports exactly what the current filter shows. The `Transaction type` column is the one that causes most confusion:
+**Payments → Transactions → Export** exports exactly what the current filter shows. The `Transaction type` column is the one that causes most confusion:
 
 | Value | Meaning |
 |---|---|
@@ -223,7 +223,7 @@ A payment reference is the text or number sent with a bank transfer to identify 
 
 ### What happens if a client forgets the payment reference?
 
-The payment will not be paired automatically. You can manually assign it from *Payments – Received payments*.
+The payment will not be paired automatically. You can manually assign it from **Payments → Payment reconciliation**.
 
 ### Do I need GoCardless if I already use bank transfers?
 
@@ -279,19 +279,19 @@ Common causes:
 
 Some banks (notably Revolut) place the variable symbol in the "Reference" or "Note" field rather than the standard variable symbol field. Zooza's pairing algorithm checks the note/reference field as a fallback, but matching may fail if the format is unexpected.
 
-**Solution:** If Revolut payments are not auto-matching, check the payment detail in **Payments → Received payments**. Look at the "Pairing process summary" field to see why pairing failed. You can always pair manually using the booking number.
+**Solution:** If Revolut payments are not auto-matching, check the payment detail in **Payments → Payment reconciliation**. Look at the "Pairing process summary" field to see why pairing failed. You can always pair manually using the booking number.
 
 ### Payment arrives before debt is created
 
 When a client pays in advance (e.g., semi-annual payment before the next instalment is posted), auto-pairing may fail because no matching debt exists at the time the payment is received. Zooza does **not** retry pairing later when the debt is created.
 
-**Solution:** Pair the payment manually from **Payments → Received payments**. Match it using the payment reference / variable symbol.
+**Solution:** Pair the payment manually from **Payments → Payment reconciliation**. Match it using the payment reference / variable symbol.
 
 ### A payment is missing — check Ignored payments first
 
 Before contacting your bank or Zooza support, check whether the AI marked the payment as **Ignored**:
 
-1. Go to **Payments → Received payments**.
+1. Go to **Payments → Payment reconciliation**.
 2. Filter by status **Ignored**.
 3. Find the payment and open it — the AI reasoning card explains why it was ignored.
 4. If the payment is legitimate, click **Pair** or **Reassign** to link it to the correct booking.
@@ -302,7 +302,7 @@ The AI occasionally marks a real payment as a suspected duplicate — especially
 
 If your bank's notification service (email or GoCardless) has an outage, payments made during that period will not appear in Zooza until the service resumes. GoCardless syncs once daily, so a brief outage may delay pairing by 24-48 hours.
 
-**Solution:** After the outage resolves, check **Payments → Received payments** for any unmatched transactions. You can also use the CSV bulk upload as a fallback during extended outages.
+**Solution:** After the outage resolves, check **Payments → Payment reconciliation** for any unmatched transactions. You can also use the CSV bulk upload as a fallback during extended outages.
 
 ### Email-notification pairing as an alternative to GoCardless
 

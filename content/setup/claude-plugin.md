@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-31"
+last_converted: "2026-09-05"
 related_articles: ["claude-plugin-faq", "integrations-hub"]
 ---
 
@@ -70,6 +70,25 @@ Claude asks for any missing details one at a time — days, time, number of sess
 
 Claude previews every change — how many sessions are affected, what will change — and only applies it after your confirmation. You can edit class settings (price, instructor, venue, capacity) or individual sessions (date, time, instructor, venue).
 
+**Add more sessions to a class that already exists**
+> *"Add one more session at the end of Little Helpers"*
+
+> *"Add a make-up class on 4 May at 10:00"*
+
+You do not have to rebuild the class to extend it. New sessions take the class's usual
+time, length, instructor and venue unless you say otherwise, and are created **billable**
+— so a priced class keeps charging for them. Claude lists the dates it is about to create
+and waits for your confirmation.
+
+**Change a programme's settings**
+> *"Turn trial sessions on for Baby Swimming"*
+
+> *"Take Little Helpers off online booking"*
+
+Claude works one settings section at a time — basic info, pricing, online booking, trial,
+make-up sessions, auto-enrolment, attendance, feedback, booking-form labels, or archiving
+— and shows you the before → after difference before anything is saved.
+
 **Mark attendance**
 > *"Mark attendance for today's 10am dance class — Peter and Sofia were absent"*
 
@@ -95,6 +114,19 @@ Claude works out the audience, drafts the message, and shows you both before any
 > *"Add a monthly payment template and apply it to Sofia's booking"*
 
 Claude can create payment templates and apply a payment plan to a booking. It does not take payments, issue refunds, or produce invoices.
+
+**Ask for the numbers**
+> *"How full are my classes this term?"*
+
+> *"Who hasn't paid?"*
+
+> *"How many make-up credits are sitting unused?"*
+
+Claude pulls the real, pre-aggregated figures out of your account and builds the report in
+the conversation — occupancy, unpaid, attendance, trials, retention, churn, revenue,
+clients by venue, and unused or expiring make-up credits. Every number comes from your
+data; it does not estimate, and it will say so plainly when a period has nothing in it.
+The default window is the last six months — ask for a different one.
 
 **Set your vocabulary**
 > *"Set up my vocabulary, I call 'courses' programmes. Ok?"*
@@ -176,12 +208,11 @@ The comparison is based on real requests and updated periodically — use it to 
 
 ## What it can't do yet
 
-Some things still need the Zooza web app. As of **31 August 2026**:
+Some things still need the Zooza web app. As of **5 September 2026**:
 
 | Not available through Claude | Where to do it |
 |---|---|
-| **Cancelling a session**, or ending a class run | Calendar → the session, or archive the class |
-| **Adding sessions to a class that already exists** — Claude builds the schedule when it creates the class, but cannot add dates afterwards | Class → **Add sessions** |
+| **Cancelling a session** — Claude can move, edit and add sessions, but not call one off | Calendar → the session |
 | **Taking payments, refunds and invoicing** — templates and payment plans yes, money no | Payments |
 | **WhatsApp messages** — email works, WhatsApp does not | Communication |
 | **Staff accounts and permissions** | Settings → General → Access |
@@ -198,8 +229,9 @@ were trying to do.
 > Full steps, including what to do when refreshing is not enough:
 > [Zooza AI says it cannot do something I know it can do](../faq/claude-plugin-faq.md#zooza-ai-says-it-cannot-do-something-i-know-it-can-do).
 >
-> This is worth doing now if you connected before late August 2026 — everything in
-> the enquiry section above shipped after that.
+> This is worth doing now if you connected before September 2026 — the enquiry tools,
+> adding sessions to an existing class, programme settings and the reports above all
+> shipped after that.
 
 ---
 

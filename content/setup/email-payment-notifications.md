@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-04"
+last_converted: "2026-09-05"
 ---
 
 
@@ -75,7 +75,7 @@ To fix it:
 3. Select your bank and click **Set**. Zooza shows the dedicated address for this billing profile.
 4. In internet banking, replace the old shared address with this one.
 
-Payments that arrived before the change stay in the account they were paired to. Open that account's **Payments → Received payments**, export the list, and pair them manually in the correct account.
+Payments that arrived before the change stay in the account they were paired to. Open that account's **Payments → Transactions**, export the list, and pair them manually in the correct account from **Payments → Payment reconciliation**.
 
 > The shared-address method is being retired. If you set up email pairing before mid-2026, switch to a dedicated address even if pairing currently works.
 

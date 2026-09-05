@@ -179,6 +179,29 @@ Example: Class capacity is 10. To this is added a global extra capacity of 1 and
 
 Tip: The use of additional capacity for trial sessions helps to maintain the capacity reserved for properly enrolled participants. The extra capacity reserved for trial sessions allows for a clear separation of places, making it easier to manage and organise sessions.
 
+### Reserve seat for trial attendee
+
+`Reserve seat for trial attendee` is a separate switch in the same trial settings. With it
+on, the seat a trial attendee took **stays held after the trial ends** — until that client
+enrols, or until you set the booking to **Trial lost**.
+
+Two consequences worth knowing:
+
+- **Held seats count against the class.** Since 2 September 2026, Zooza checks those holds
+  when it decides which trial dates to offer. Once the enrolled clients plus the outstanding
+  trials fill the class, the booking form stops offering trial dates for it. Before that, a
+  full class kept accepting trials that could never convert — the seat they were sold was
+  already gone.
+- **On a class split into blocks the hold applies inside its block**, not across the whole
+  class. A trial held in the Monday block does not block a seat in the Wednesday block.
+
+> **The booking form is offering no trial dates on a class that looks half empty?** Count
+> the outstanding trials. Every one of them is holding a seat until it converts or is marked
+> **Trial lost** — clearing the stale ones releases the seats immediately.
+
+**This switch does nothing when trials are set to Extra capacity.** In that mode trials only
+ever use the extra pool, and the reserve-seat flag is ignored.
+
 ## Classes included in trial
 
 
