@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-15"
+last_converted: "2026-09-05"
 ---
 
 # Client Profile FAQ
@@ -42,6 +42,26 @@ Clients can:
 - Access trial-to-enrolment offers.
 
 If a client has an outstanding balance, the first thing they see is a prompt to complete payment.
+
+## Can a parent cancel their registration themselves?
+
+**No.** A parent cannot end their own booking from the profile — only an admin can.
+
+What a parent *can* cancel from the profile is their attendance on **one session**, which
+is a different thing: it excuses them from that date and, depending on your settings, may
+earn them a make-up credit. It does not end their place in the class.
+
+**To cancel the booking**, open it in **Bookings** and use **Cancel registration** — the
+button is in the first block on the page, the one headed *Registration*.
+
+> **Watch the wording when a parent writes in.** In Slovak and Czech *odhlásiť* is used
+> for both, so "chcem sa odhlásiť" can mean either one date or leaving altogether. A
+> parent saying the child "is stopping" or "does not want to come any more" almost always
+> means the whole booking. Ask before you act — cancelling a session and cancelling a
+> booking are not undone the same way.
+
+Cancelling keeps the record: the booking stays in the system and can be set back to active.
+That is different from deleting it, which sends it to [Trash](../guides/trash-and-restore.md).
 
 ## A client booked a trial but cannot see it in their profile — why?
 

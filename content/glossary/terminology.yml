@@ -6,7 +6,7 @@
 # ║  Edit there, then run: python3 scripts/sync_terminology.py      ║
 # ╚══════════════════════════════════════════════════════════════════╝
 #
-# Last synced: 2026-09-04
+# Last synced: 2026-09-05
 # Used by: scripts/normalize_terminology.py → build/terminology/dictionary.json
 #
 # Fields per term:
@@ -757,9 +757,30 @@ terms:
       sk: "Zrušiť registráciu / Storno"
       cz: "Zrušit registraci / Storno"
     intent_keywords:
-      en: ["cancel registration", "cancel booking", "unenrol", "remove from class", "cancel enrolment"]
-      sk: ["zrušiť registráciu", "stornovať", "storno", "odhlásenie", "odhlásiť", "vyradiť", "zrušenie"]
-      cz: ["zrušit registraci", "stornovat", "storno", "odhlásení"]
+      en: ["cancel registration", "cancel booking", "unenrol", "remove from class",
+           "cancel enrolment", "child is stopping", "no longer attending", "wants to quit",
+           "parent wants to cancel"]
+      sk: ["zrušiť registráciu", "stornovať", "storno", "odhlásenie", "odhlásiť", "vyradiť",
+           "zrušenie", "dieťa už nebude chodiť", "nechce viac chodiť", "rodič chce zrušiť",
+           "ukončiť dochádzku", "vystúpiť z krúžku"]
+      cz: ["zrušit registraci", "stornovat", "storno", "odhlásení", "dítě už nebude chodit",
+           "nechce dál chodit", "ukončit docházku"]
+    do_not_confuse_with:
+      - term: "Cancelling attendance on one session"
+        reason: >
+          "Odhlásiť" is used for both. Cancelling a SESSION excuses the child from one date
+          and may earn a make-up credit; cancelling the REGISTRATION ends their place in the
+          class altogether. Establish which is meant before acting — they are not reversible
+          in the same way.
+    ai_notes: >
+      A PARENT CANNOT CANCEL THEIR OWN REGISTRATION. When someone asks "how does a parent
+      cancel", the answer is that they cannot do it themselves — an admin does it from the
+      registration detail, where the button sits in the first block, the one headed
+      Registration. What the parent CAN do from their profile is cancel their attendance on
+      an individual session.
+      Phrased loosely ("the child is stopping", "they do not want to come any more") the
+      request almost always means cancelling the registration, not a session.
+      Confirmed 2026-09-05.
     public: true
 
   # ──────────────────────────────────────────────

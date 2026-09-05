@@ -30,6 +30,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can a parent cancel their registration themselves?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A parent cannot end their own booking from the profile — only an admin can.\n\nWhat a parent can cancel from the profile is their attendance on one session, which\nis a different thing: it excuses them from that date and, depending on your settings, may\nearn them a make-up credit. It does not end their place in the class.\n\nTo cancel the booking, open it in Bookings and use Cancel registration — the\nbutton is in the first block on the page, the one headed Registration.\n\nWatch the wording when a parent writes in. In Slovak and Czech odhlásiť is used\nfor both, so \"chcem sa odhlásiť\" can mean either one date or leaving altogether. A\nparent saying the child \"is stopping\" or \"does not want to come any more\" almost always\nmeans the whole booking. Ask before you act — cancelling a session and cancelling a\nbooking are not undone the same way.\n\nCancelling keeps the record: the booking stays in the system and can be set back to active.\nThat is different from deleting it, which sends it to Trash."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "A client booked a trial but cannot see it in their profile — why?",
       "acceptedAnswer": {
         "@type": "Answer",

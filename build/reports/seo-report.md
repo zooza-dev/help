@@ -1,6 +1,6 @@
 # SEO & AI Readiness Report
 
-**Generated:** 2026-09-04
+**Generated:** 2026-09-05
 
 ## Summary
 
