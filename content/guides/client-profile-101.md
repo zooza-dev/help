@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0023_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-09-05"
 related_articles: ["client-profile-faq", "client-management-faq", "documents"]
 ---
 
@@ -47,6 +47,21 @@ Once logged in, the client sees their home page with:
 - **Quick actions** — pay, book make-ups, view sessions.
 
 ![Screenshot — client profile 101](../../assets/images/client-profile-101-03.png)
+
+### Between terms, the home page says so
+
+When a client has nothing running — the summer gap, or the weeks between one term
+and the next — the **Current programmes** card does not go blank. It says *"You have
+no programmes running right now."* and offers **View your past programmes**, which
+opens their booking history.
+
+This matters because the previous behaviour read as data loss. A parent with four
+finished bookings opened the app and saw the same generic *no data for this view*
+message as somebody who had never booked anything, while their bookings sat one tap
+away. For a seasonal business that was the normal state for months.
+
+The card only appears for clients who actually have past bookings. A genuinely new
+client, with nothing behind them, sees no card at all. Live since 2 September 2026.
 
 ### Switching between family members
 
