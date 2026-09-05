@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-09-05"
 ---
 
 # Email Delivery Troubleshooting
@@ -100,6 +100,25 @@ When a recipient marks an email as spam, the email provider remembers this and m
 1. Contact the client and ask them to remove the spam flag on Zooza emails.
 2. Ask them to whitelist the Zooza sending address.
 3. Zooza support can remove the client from the provider's suppression list on our side. Contact support if the problem persists after the client has whitelisted the address.
+
+## Is it us, or is it their mailbox?
+
+Two checks, in this order, before you chase anything further:
+
+1. **Read the address back.** Open the booking and check the spelling character by
+   character. A typo is the single most common cause and costs nothing to rule out.
+2. **Ask whether they get *any* Zooza email.** In the booking's communication history
+   you can see what was sent to that address. If Zooza sent it and other messages do
+   arrive, the problem is at their end — a full mailbox, a provider rejecting or
+   silently binning mail, a filter.
+
+If Zooza sent it and nothing at all arrives, that is worth reporting. If Zooza never
+sent it, the cause is a setting rather than delivery — work through the steps above.
+
+> **Some providers are worse than others.** Addresses at `@azet.sk` have been
+> unreliable recently: mail is accepted and never surfaces. When a client is stuck on
+> one of these, the fastest fix is to ask them for a different address rather than to
+> keep resending.
 
 ## Step 4: What you can do as an admin
 

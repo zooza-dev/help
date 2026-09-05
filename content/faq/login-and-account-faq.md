@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-04"
+last_converted: "2026-09-05"
 related_articles: ["instructor-access-faq","managing-instructors","user-roles","add-zooza-app-to-phone"]
 ---
 
@@ -34,6 +34,22 @@ Go to **Settings → Team**, open the profile, replace the email address and sav
 - you are moving from a personal address to a business one and do not want to lose access mid-way.
 
 Give each person their own login wherever you can. Permissions and the activity record are tied to the account, so a shared login makes both meaningless — see [Can multiple team members share one login?](#can-multiple-team-members-share-one-login) below.
+
+## Where do I see my password?
+
+**There isn't one.** Zooza has no passwords at all — not for you, not for your team,
+not for parents. Everyone signs in with a one-time code sent to their email.
+
+To sign in as an owner or an instructor:
+
+1. Go to your regional address — `zooza.app`, `uk.zooza.app` or `asia.zooza.app` (see below).
+2. Enter **the email address you were invited into the account with**. Not a personal
+   address you prefer — the one that appears in **Settings → General → Access**.
+3. Open the code that arrives and you are in.
+
+> **The same email can be both an owner and a parent.** They are separate things: the
+> admin app at your regional address, and the client profile on your own website.
+> Signing into one does not sign you into the other, and neither has a password.
 
 ## Which address do we log in at?
 

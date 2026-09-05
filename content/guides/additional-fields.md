@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/labels-and-extra-fields.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-09-05"
 related_articles: ["business-booking", "booking-form-settings", "booking-widget-faq"]
 ---
 
@@ -122,24 +122,40 @@ The date of birth field can be used to restrict bookings by age. When enabled, c
 
 ### Setting up age restriction
 
-1. Enable the **Date of birth** field.
-2. Expand the age restriction options.
-3. Choose the restriction method:
-   - **By age** — set the limit in **months** or **years**. Months are the better choice for baby and toddler programmes, where "2 years" is too coarse a band.
-   - **By date of birth** — set the earliest and/or latest date of birth allowed. Use this for school-year intakes, where the cut-off is a fixed date rather than an age.
-4. Set whether you want a **minimum only**, a **maximum only**, or **both**. A programme with no upper limit only needs a minimum.
-5. Save.
+Turn on the **Date of birth** field first — the restriction hangs off it. You can
+give the field your own **Custom name** ("Child's date of birth") and make it
+**Mandatory**, which you want if you are going to restrict on it.
+
+Then, under **Restrict programme booking based on age**:
+
+1. **Type of restriction** — *No restriction*, *By date of birth*, or *By age*.
+   - **By age** — the limit in **months** or **years**. Months are the better choice for baby and toddler programmes, where "2 years" is too coarse a band.
+   - **By date of birth** — the earliest and latest date of birth allowed. Use this for school-year intakes, where the cut-off is a fixed date rather than an age. The helper text under each field spells out which way it cuts: *persons born before* the minimum, or *born after* the maximum, cannot enrol.
+2. **Method of using restrictions** — *Both*, *Minimum value only*, or *Maximum value only*. A programme with no upper limit only needs a minimum, and you must pick here even if you filled in both dates.
+3. **Exceeding the age limit** — the important one, see below.
+4. Save.
 
 Both methods end up as the same thing internally — an age band in months — so they are interchangeable. Pick whichever matches how you describe the programme to parents.
 
-> The restriction is evaluated against the child's date of birth at the moment of booking. A child who is too young today is refused today, even if they qualify by the time the class starts — which is what the waiting list below is for.
+> The restriction is evaluated against the child's date of birth at the moment of booking. A child who is too young today is refused today, even if they qualify by the time the class starts — which is what **Allow** below is for.
 
-### Age restriction with waiting list
+### Refused outright, or sent to you for approval?
 
-When a client's child does not meet the age criteria:
+That is decided by one setting: **Exceeding the age limit**.
 
-- The booking form shows a message explaining the restriction.
-- If a **waiting list** is enabled for the programme, the client can join the waiting list instead of being rejected outright. This is useful for children who will reach the required age soon — they are added to the waiting list and can be enrolled when they qualify.
+| Setting | What happens to a child outside the age band |
+|---|---|
+| **Not allowed** | The form refuses the booking. The parent sees a message explaining the restriction and cannot continue. |
+| **Allow** | The booking goes through, and you decide afterwards. |
+
+Choosing **Allow** opens two more controls, and they are what make it workable:
+
+- **Set status In waiting list for these bookings?** — put every out-of-range booking straight onto the waiting list, so it lands in your queue instead of enrolling silently. You then approve or decline it by hand.
+- **Set a label for these bookings?** — tag them, so you can find them later without remembering which is which.
+
+This is the setup for "we do take children slightly outside the band, but we want to look first". A child who turns four next month is the usual case: they book, they wait, you enrol them when they qualify.
+
+> **The general class waiting list is a different thing.** That one queues people when a class is *full*. This one queues them when they are *the wrong age*, and it only exists if you set **Allow**. Both can be on at once.
 
 ## Dynamic tags for additional fields
 

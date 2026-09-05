@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-09-05"
 ---
 
 # Bookings
@@ -158,6 +158,7 @@ Expandable section with additional settings:
 - **Extra make-up sessions** — add extra make-up session slots beyond the programme default.
 - **Extra limit for make-up sessions** — adjust the limit.
 - **Guest access to the booking** — grant access via email address.
+- **Additional email for reminders before sessions** — one or more addresses, separated by commas, that also receive session reminders. Typically the second parent, an older child, or a grandparent.
 - **Additional email for reminders before sessions** — add extra email addresses for session reminders.
 
 #### Additional Fields

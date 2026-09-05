@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-09-05"
 ---
 
 # Make-up Sessions FAQ
@@ -135,7 +135,19 @@ Yes. Go to **Settings** → **Make-up sessions** → **General Settings** and ch
 
 ## How do I limit clients to a set number of make-ups per month?
 
-Use the **flexible replacement limit**, which is expressed as a ratio rather than a fixed monthly count — for example *2 make-up sessions per 10 sessions attended*.
+**You cannot set it per month** — there is no "once a month" option, and this is the
+answer people are usually looking for when they ask.
+
+What you can set is a **ratio**: so many make-ups per so many sessions. Go to
+**Programme → Settings → Make-up sessions** and set the two fields together:
+
+| Field | Example |
+|---|---|
+| **Allowed make-up sessions** | `1` |
+| **Flexible session limit** | `4` |
+
+That reads as *one make-up per four sessions*. For someone attending weekly it works
+out at roughly one a month, which is usually what was wanted.
 
 The ratio form is what makes it work across different subscription sizes. A client attending twice a week (roughly 8 sessions a month) and a client attending once a week are covered by the same rule without you configuring each one.
 
@@ -251,6 +263,21 @@ The button only works if there is still available capacity on the original sessi
 ## Can a student re-enroll on the same session they cancelled from?
 
 Yes. The parent can use the **"Sign back up for this session"** button in their profile. If a make-up session was already booked, it is automatically cancelled when the parent re-enrolls on the original session.
+
+## A client cancelled their make-up — why did no credit come back?
+
+**A make-up cannot itself earn a make-up.** Cancelling out of a replacement session
+does not produce a fresh credit; there is nothing to replace a replacement with.
+
+What the parent can do is **go back to the session they originally missed**, using
+**Sign back up for this session**. That is the only route back.
+
+So a cancelled make-up is spent. If the family genuinely needs another one, grant it
+by hand — an admin can add a credit on the booking.
+
+> Check the cancellation log before assuming something is broken. Every cancellation
+> records why a credit was or was not granted, and `is_replacement` as the reason
+> means exactly this. See [Understanding the cancellation log](../troubleshooting/cancellation-log.md).
 
 ## Where is the make-up session waiting list?
 

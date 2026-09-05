@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-04"
+last_converted: "2026-09-05"
 ---
 
 
@@ -100,15 +100,19 @@ When a child transfers between franchise accounts (separate Zooza companies), th
 
 <!-- REVIEW: Confirm whether cross-franchise child transfers create a linked record or a fully independent duplicate. -->
 
-## Can I add a second email address for notifications on a booking?
+## How do I add another email address to a client?
 
-Yes. You can add an additional email address that receives session reminders for a specific booking. This is useful when separated parents both need to receive notifications about their child's sessions.
+On the booking, not on the client. Open the booking and look at the **first block,
+headed Registration** — inside it is an expandable **Options** section, and the extra
+address goes there.
 
-1. Open the booking detail.
-2. In the booking settings, find **Additional email for reminders before sessions**.
-3. Enter the second email address.
+**You can add more than one, separated by commas.** In practice these are the second
+parent, the child themselves once they are old enough to want their own reminders,
+and sometimes grandparents doing the school run.
 
-This additional email receives session reminder notifications only. It does not receive payment reminders or other booking-level communications. The second email can also be added by the client themselves through their Client Profile.
+Those addresses receive **session reminders**. They do not receive payment reminders
+or the rest of the booking-level communication, and the client can add them
+themselves from their own profile.
 
 > **Warning:** If you collect a secondary email address via an **extra field** on the booking form (e.g., Additional field 1), that value is **not** automatically transferred to the system's secondary email field. Extra fields are text-only data collection and are not linked to system notification fields. You must manually copy the email from the extra field into the booking's **Additional settings** → secondary email field for the second parent to actually receive notifications.
 

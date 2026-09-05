@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-08-30"
+last_converted: "2026-09-05"
 related_articles: ["edit-payment-on-booking","recording-an-administrative-refund","discount-code","payments-and-billing-faq"]
 ---
 
@@ -107,6 +107,30 @@ The client then sees the credit and its discount code in their
 > [Discount codes](discount-code.md) for how it reaches them.
 
 ![Credits and make-up sessions screen on a booking, with the Create credit for booking button and the Discounts section](../../assets/images/payment-correction-vs-refund-01.png)
+
+## A duplicate booking was deleted and the debt did not change
+
+A parent books the same child twice, you delete one of the bookings, and the amount
+owed is still doubled.
+
+**Deleting a booking does not recalculate what is owed on the other one.** The two
+bookings each carried their own debt; removing one removes its own, and leaves the
+survivor exactly as it was. If the doubled figure is on a single booking, deleting
+anything will not touch it at all.
+
+Correct the amount instead:
+
+1. Open the booking that is still active.
+2. In the **Payment plan**, open the instalment carrying the wrong amount.
+3. Adjust it down to what the client actually owes — see
+   [Session payment adjustments](session-payment-adjustments.md#adjust-a-single-scheduled-payment-manually).
+
+If money has already been received against the duplicate, do not delete that booking
+at all until the payment is moved — see debt correction below.
+
+> **Delete only bookings that should never have existed.** A duplicate created by a
+> parent in one sitting qualifies. A booking with payments on it does not: deleting
+> it takes real money out of your reporting.
 
 ## When to use debt correction (moving payments between bookings)
 

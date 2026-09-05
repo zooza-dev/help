@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-30"
+last_converted: "2026-09-05"
 related_articles: ["user-roles","instructor-access-faq","role-selection-guide","login-and-account-faq"]
 ---
 
@@ -97,13 +97,13 @@ These settings apply per-instructor, so you can give more detail to senior instr
 ## How to remove an instructor
 
 Go to **Settings → General → Access** (the Team screen, `zooza.app/#settings/team`).
-Open the person and pick whichever of these three fits — they are not the same thing,
-and picking the wrong one is how history gets lost:
+Open the person and pick one of three. They are not the same thing, and which you
+want turns on one question: **do you need to keep what they did?**
 
 | What you want | What to do |
 |---|---|
 | **They left, and you want their records kept** | Change their role to **Inactive**. Login is blocked; attendance, session history and instructor reports stay intact. **This is the right answer almost every time.** |
-| **They should not be in your account at all** | **Remove** them from the list. |
+| **They should not be in the account at all** | **Delete** them from **Team & settings → Access**. |
 | **You need their access gone right now** | **Change the email address** on the account. Login links go to an address they do not control, so access stops immediately. |
 
 > **Deleting is not "tidying up".** An instructor account carries every attendance

@@ -54,10 +54,10 @@
     },
     {
       "@type": "Question",
-      "name": "Can I add a second email address for notifications on a booking?",
+      "name": "How do I add another email address to a client?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. You can add an additional email address that receives session reminders for a specific booking. This is useful when separated parents both need to receive notifications about their child's sessions.\n\n1. Open the booking detail.\n2. In the booking settings, find Additional email for reminders before sessions.\n3. Enter the second email address.\n\nThis additional email receives session reminder notifications only. It does not receive payment reminders or other booking-level communications. The second email can also be added by the client themselves through their Client Profile.\n\nWarning: If you collect a secondary email address via an extra field on the booking form (e.g., Additional field 1), that value is not automatically transferred to the system's secondary email field. Extra fields are text-only data collection and are not linked to system notification fields. You must manually copy the email from the extra field into the booking's Additional settings → secondary email field for the second parent to actually receive notifications."
+        "text": "On the booking, not on the client. Open the booking and look at the first block,\nheaded Registration — inside it is an expandable Options section, and the extra\naddress goes there.\n\nYou can add more than one, separated by commas. In practice these are the second\nparent, the child themselves once they are old enough to want their own reminders,\nand sometimes grandparents doing the school run.\n\nThose addresses receive session reminders. They do not receive payment reminders\nor the rest of the booking-level communication, and the client can add them\nthemselves from their own profile.\n\nWarning: If you collect a secondary email address via an extra field on the booking form (e.g., Additional field 1), that value is not automatically transferred to the system's secondary email field. Extra fields are text-only data collection and are not linked to system notification fields. You must manually copy the email from the extra field into the booking's Additional settings → secondary email field for the second parent to actually receive notifications."
       }
     },
     {

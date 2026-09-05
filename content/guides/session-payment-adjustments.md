@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-13"
+last_converted: "2026-09-05"
 ---
 
 # Session payment adjustments
@@ -103,6 +103,52 @@ If you entered an adjustment by mistake, you can reverse it:
 A new adjustment with the opposite sign is created. The original adjustment remains in the list for the audit trail.
 
 > You can only reverse manual adjustments. Automatic adjustments (from session bookings/cancellations) are managed by the system and cannot be reversed manually.
+
+---
+
+## Applying a discount to a plan that is already running
+
+Someone qualifies for a discount after their plan was set up — a sibling rate that
+started late, a loyalty rule switched on part-way through the year. The instinct is
+to build them a new payment plan. **Don't.** Edit the instalments in the plan they
+already have.
+
+**Why a new plan is the wrong tool:** a booking records income and expenses like a
+bank account. Money already received is never removed, so a second plan on top does
+not replace the first — it leaves you with an overpayment or an underpayment for
+that period and a history nobody can read later.
+
+### The rule that decides which instalment to edit
+
+For **membership** plans, Zooza does not create every instalment up front. It adds
+the next one as the period comes round, for as long as the booking is active and the
+class is still running — and **each new instalment is copied from the last one that
+exists, discount included.**
+
+That single fact gives you both cases:
+
+| What you want | What to edit |
+|---|---|
+| **A permanent discount** | The **last** scheduled instalment. The new amount carries forward into every instalment created after it, automatically. You do not need a new template or a new plan. |
+| **A one-off or temporary discount** | Only the **earlier** instalments. Leave the last one at full price — otherwise your "one-off" copies forward and quietly becomes permanent. |
+
+If the instalment you need does not exist yet, either wait for it to be generated or
+add it with **Add scheduled payment**.
+
+### If the instalment has already been paid
+
+Edit it exactly the same way. The difference stays with the client as **credit on
+their account** and comes off their next instalment on its own.
+
+> **Do not double the discount on the following instalment to compensate.** People do
+> this to "catch up" the amount, and it backfires: that inflated figure is then the
+> last instalment, so it is the one that gets copied forward.
+
+### Check whether the discount is per month or per instalment
+
+A discount of 4 € **a month** is 12 € on a quarterly instalment, not 4 €. Work out
+which the number is before you type it — this is the most common way these
+corrections come out wrong.
 
 ---
 
