@@ -93,7 +93,39 @@ a row per shot: `ok`, `BAD ROUTE`, `NOT FOUND`, `PII LEFT` or `ERROR`.
 article claims. An automated run will happily produce a perfect photograph of an
 empty list, a filtered view, or a company you did not mean.
 
-## Step 4 — Apply, then finish the articles
+## Step 4 — Read the article against the picture
+
+**This is the step that pays for the whole exercise.** You now have a photograph of
+what the screen really does, next to prose written months ago. Read one against the
+other before touching anything else.
+
+On 13 September a screenshot of the notification centre showed that the article's
+table of notification types was wrong in **eleven rows out of fourteen** — *New
+booking* had been documented as *New registration*, *Payment confirmation* as
+*Online payment*, and *Class full notification*, the one people swear does not
+exist, was sitting at the bottom of the list under a name nobody had written down.
+The same batch moved a settings path from *Settings → General* to *Settings →
+General → Access*, and replaced a checkbox that does not exist with the two toggles
+that do.
+
+None of that came from a spec, a ticket or a customer. It came from looking.
+
+So for each recaptured screen:
+
+- **Do the labels in the prose still match the labels on screen?** Button names,
+  field names, menu paths, the names of options in a dropdown.
+- **Is the navigation still right?** Menu groups get renamed and screens move.
+- **Does the screen do something the article never mentions?** A new control, a
+  new column, a banner. If it is worth a customer knowing, write it in — you are
+  already here, and this is cheaper than finding out from a support ticket.
+- **Does the article describe something that is gone?** Then the instructions are
+  actively wrong, which is worse than out of date.
+
+Fix the text in the same pass. An article whose prose contradicts its own fresh
+screenshot is worse than one with an old picture, because now the reader can see
+the contradiction.
+
+## Step 5 — Apply, then finish the articles
 
 ```bash
 python3 scripts/screenshots/capture.py --apply
@@ -105,7 +137,7 @@ For every article whose image changed:
 |---|---|
 | alt text | Rewrite it to describe what is now on screen. The old alt text described the old picture. |
 | `last_converted` | Today. The article did change — the picture is part of it. |
-| body | If the screen has been renamed or restructured, the prose around the image is stale too. Fix it, or the article now contradicts its own screenshot. |
+| body | Already handled in step 4 — but check it once more against the final image. |
 
 Then `python3 scripts/seo_check.py` — it fails on generic alt text.
 
@@ -130,6 +162,8 @@ an existing file. Prefer recapturing.
 ## Done definition
 - Every shot in the batch is `ok`, or its manifest entry says why it is not
 - Somebody has looked at each image and confirmed it shows the right screen
+- Each article has been read against its new screenshot, and the labels, paths and
+  options in the prose match what the picture shows
 - Alt text and `last_converted` updated on every article touched
 - `seo_check.py` passes
 - The session file and the mask file are still outside version control
@@ -141,5 +175,6 @@ an existing file. Prefer recapturing.
 - Captured: 2 of 3 (reference/cls-classes, reference/cls-sessions)
 - Failed: reference/invoices-list — #invoices renders the app's 404, route unknown
 - Articles updated: classes-list.md, sessions-list.md
+- Corrections found by reading the prose against the picture: 0
 - Still stale: 804
 ```

@@ -48,3 +48,38 @@ shots:
     note: >
       The invoices list. `#invoices` returned the app's 404 on 13 September —
       the real route still needs finding. Used by reference/invoices-list.md.
+
+  # --- Bookings (reference/bookings-list.md) — the most-served article in the KB
+  #     and 16 of its 17 images date from February.
+  - image: reference/bookings-list.png
+    route: registrations
+    assert: "Create booking"
+    status: unverified
+    note: The bookings list with its filter row and result tiles.
+
+  - image: reference/bookings-detail-overview.png
+    route: registrations/1394
+    assert: "NOTE ABOUT THE BOOKING"
+    status: unverified
+    note: >
+      A booking's detail page. 1394 is a paid booking on Bounce & Balance; swap the
+      id if it stops being representative.
+
+  - image: reference/bookings-payments-tab.png
+    route: registrations/1394/payments
+    assert: "Quick links: Invoices"
+    status: unverified
+    note: The payments section of a booking — status, total charge, balance.
+
+  - image: reference/bookings-attendance-expanded.png
+    route: registrations/1394/attendance
+    assert: "Attendance"
+    status: unverified
+    note: The attendance section of a booking.
+
+  - image: reference/bookings-credits-tab.png
+    route: registrations/1394/credits
+    assert: "Credits and make-up sessions"
+    status: unverified
+    note: Credits and make-up sessions on a booking.
+

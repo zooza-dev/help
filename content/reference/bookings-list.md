@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-09-13"
 ---
 
 # Bookings
@@ -20,27 +20,28 @@ The Bookings screen lists all bookings across your programmes. Use it to search,
 
 > **Navigation:** Go to **Clients** → **Bookings**.
 
-![Bookings list](../../assets/images/reference/bookings-list.png)
+![The Bookings list: action buttons, the filter row, and booking tiles showing client, attendee, internal note, programme and class, current payment plan and a payment summary](../../assets/images/reference/bookings-list.png)
 
 ## List View
 
-Each booking card shows:
+Above the list sit the actions that work on bookings in bulk: **Create booking**,
+**Send email**, **Send SMS**, **Export**, **Transfer to network** and **Operations**.
 
-| Field | Description |
+Each booking is a tile in three bands:
+
+| Block | What it holds |
 |---|---|
-| `Type` | Booking number and status badges (e.g. "Enrolled", "Imported", "Trial started"). |
-| `Client` | Client name, email, and phone with verification ticks. |
-| `Attendee` | The person attending — may differ from the client (e.g. a child). Shows name, date of birth, and age. |
-| `Programme / Class` | Programme name, class name with date range, day/time, and venue with instructor. |
-| `Internal note` | Optional internal note. |
-| `Payment` | Payment status icon (green = paid, red = overdue). |
-| `Paid` | Total amount paid. |
-| `Amount to pay` | Outstanding amount (negative = owed). |
-| `Current account balance` | Running balance — red if negative. |
+| **Client** | Status badges — `Enrolled`, `Copied`, the booking number, how many bookings that client holds, and an `Awaiting payment – until <date>` badge when one is running. Under them the client's name, email and phone, each with a verification tick. |
+| **Attendee** | The person attending, which is usually not the client: name, date of birth and age in months. |
+| **Internal note** | Your own note, or a dash. The pencil edits it in place. |
+| **Programme / Class** | Programme, class with its date range, the day and time, then venue and instructor. |
+| **Current payment plan** | **View**, a link to the payments overview, a progress bar and the next payment date. |
+| **Payment summary** | **Payments received**, **Total charge** and **Booking balance** — the balance in red and labelled *Outstanding* when money is owed. |
+| **Quick links** | **Add payment** and **Show payments**. |
 
-Each booking has **Add payment** and **Show payments** action buttons.
-
-The header shows total count, e.g. "23 bookings found".
+The header shows the total, e.g. "287 bookings found", with **Sort** and
+**Customize tile** beside it — the second one changes which of these blocks the
+tile displays, so your list may not look exactly like the picture.
 
 ### Filters
 
@@ -131,7 +132,7 @@ Note fields only appear on the booking card if they are added via **Customize ti
 
 Click a booking card to open the detail page.
 
-![Booking detail — overview](../../assets/images/reference/bookings-detail-overview.png)
+![A booking detail page: quick links along the top, then the Booking, Attendee, Client and Class cards](../../assets/images/reference/bookings-detail-overview.png)
 
 The booking detail is a dense page with multiple sections. Quick links at the top provide navigation: **Basic information**, **Payments**, **Attendance**, **Communication**, **Credits and make-up sessions**.
 

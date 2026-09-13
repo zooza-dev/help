@@ -170,8 +170,20 @@ def capture(manifest_path, only, apply_it):
                     results.append((name, "PII LEFT", ", ".join(leaked)))
                     continue
 
+                # The mask only knows what it was told. Anything else that looks like a
+                # real address is worth a human glance before this picture goes public —
+                # a personal gmail sat on a booking detail on the first run, and the
+                # check above was perfectly happy because nobody had named that domain.
+                allowed = tuple(mask.get("allowed_email_domains", []))
+                suspect = sorted({e for e in re.findall(
+                    r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", after)
+                    if not e.lower().endswith(allowed)})
+
                 pg.screenshot(path=out)
-                results.append((name, "ok", f"masked {masked}"))
+                detail = f"masked {masked}"
+                if suspect:
+                    detail += f" — CHECK: {', '.join(suspect[:3])}"
+                results.append((name, "ok", detail))
             except Exception as exc:                      # noqa: BLE001
                 results.append((name, "ERROR", f"{type(exc).__name__}: {exc}"[:90]))
         b.close()
