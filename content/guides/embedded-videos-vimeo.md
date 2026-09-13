@@ -54,6 +54,9 @@ you — see below.
 
 ### Which websites are allowed to play your videos
 
+<!-- SCREENSHOT NEEDED: Settings → Integrations → Vimeo — the Allowed domains list with two or three domains on it, and the Suggested domains block underneath. This whole article has no images at all, so this is the priority one. -->
+
+
 Vimeo plays an embedded video only on the domains on that video's list, and getting that
 list right is where almost every "the video will not play" report comes from. Since
 **7 September 2026** the list is managed once, for the whole company, from

@@ -111,6 +111,9 @@ Clients can also book sessions through the calendar widget on your website.
 
 ### Choose which of those two routes parents get
 
+<!-- SCREENSHOT NEEDED: the profile widget setting "How pay-as-you-go programmes offer session booking", with the three options (Session list / Calendar / Both) visible. -->
+
+
 Until September 2026 every client saw both buttons — **Book session**, which opens the
 widget's own session list, and **Go to calendar**, which sends them to your calendar
 widget. That is wrong in both directions: a company that never published a calendar was

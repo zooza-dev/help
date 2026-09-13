@@ -51,6 +51,9 @@ These fields are ready to use — you just enable them and optionally set a cust
 
 ### Business fields
 
+<!-- SCREENSHOT NEEDED: course → Settings → Extra fields → Business data, with the checkbox that makes the business fields optional. -->
+
+
 These fields are used for business invoicing. When one or more business fields are active, the booking form shows an option to register as a company. See [Business booking](../faq/booking-faq.md) for the full workflow.
 
 | Field | Description |

@@ -264,6 +264,9 @@ If you need someone who can both manage sessions across instructors and see pay 
 
 ## Keeping client money off instructors' screens
 
+<!-- SCREENSHOT NEEDED: Settings → General, showing "Allow instructors to see financial information". If it fits in one shot, include the older "Allow main instructors to access payments" beside it — the article explains the difference between the two. -->
+
+
 **Settings → General → Allow instructors to see financial information.** On by default.
 Turn it off and all three instructor roles — main, regular and external — stop seeing
 client money anywhere:

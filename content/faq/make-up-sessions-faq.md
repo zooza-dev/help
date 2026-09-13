@@ -195,6 +195,9 @@ In almost every case this is a settings issue, not a bug. The fastest way to dia
 
 ### Use MATKO for a precise diagnosis
 
+<!-- SCREENSHOT NEEDED: a registration → Credits tab with the "Diagnose eligibility" button visible on a credit row. That shortcut is new to the article. -->
+
+
 **Settings → Tools → MATKO** runs all 19 eligibility checks at once and tells you exactly which condition is failing — attendance state, capacity, timing, programme scope, or display limit. It is the most reliable first step when a specific session is not visible.
 
 **Start from the credit, not from Settings.** Open the client's registration, go to the

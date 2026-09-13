@@ -94,6 +94,9 @@ From the order detail, the admin can also manually adjust entries if needed (e.g
 
 ## Adding passes to a booking yourself
 
+<!-- SCREENSHOT NEEDED (two): 1) the Buy dialog on a booking with the payment method ticked; 2) an order that shows the "Add item to order" button. The existing image below covers neither. -->
+
+
 Passes reach a booking one of two ways: **the parent buys them** from their profile, or
 **you add them** from the admin side. Use the second when somebody paid you in person,
 paid before the programme was finished, or when you are giving passes away.

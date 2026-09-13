@@ -21,6 +21,9 @@ The Notification Center is used to notify you as an administrator or your collea
 
 ## What you can be notified about
 
+<!-- SCREENSHOT NEEDED: the notification type dropdown open, with "New email reply from client" visible in the list. The existing screenshots predate the current screen. -->
+
+
 | Notification | Sent when |
 |---|---|
 | **New registration** | Someone books |
