@@ -8,11 +8,11 @@ sub_area: ""
 audience: ["admin"]
 tags: ["video", "vimeo", "embed", "client-profile", "documents", "privacy"]
 status: "published"
-related_articles: ["documents", "client-profile-101", "publish-widgets"]
+related_articles: ["documents", "client-profile-101", "publish-widgets", "integrations-hub"]
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-15"
+last_converted: "2026-09-13"
 ---
 
 # Embed videos — Vimeo setup for client access
@@ -44,10 +44,50 @@ Set the video privacy to **"Hide from Vimeo / Unlisted"** with domain-level acce
 1. Log in to [vimeo.com](https://vimeo.com) and open the video.
 2. Go to **Settings → Privacy**.
 3. Under **Who can watch this video**, select **Only people with the private link** (sometimes labelled "Unlisted" or "Hide from Vimeo").
-4. Under **Where can this be embedded**, select **Specific domains** and add your website domain (e.g. `yourbusiness.com`). Also add `zooza.app` if clients will watch via the Zooza app directly.
+4. Under **Where can this be embedded**, select **Specific domains**.
 5. Save the settings.
 
+**You do not have to fill the domain list in by hand, video by video.** Zooza keeps it for
+you — see below.
+
 > **Do not** set the video to **Private** — private videos require the viewer to be logged in to Vimeo with an account that has explicit access. Your clients almost certainly do not have Vimeo accounts.
+
+### Which websites are allowed to play your videos
+
+Vimeo plays an embedded video only on the domains on that video's list, and getting that
+list right is where almost every "the video will not play" report comes from. Since
+**7 September 2026** the list is managed once, for the whole company, from
+**Settings → Integrations → Vimeo**.
+
+The screen shows **Allowed domains** — every website your videos are allowed to play on —
+plus **Suggested domains**, which are the sites Zooza already knows about from your
+widgets. Add one with **Add domain** (`example.com`, no `https://`), or take one from the
+suggestions. Zooza then applies the change across your whole Vimeo library in the
+background, and the screen reports progress.
+
+**Add every host your videos actually appear on**, not just the main one:
+
+- your website, and any second site you still run
+- a separate members area on its own domain
+- each domain, if your widgets are spread across several
+
+Zooza's own addresses are handled for you and shown as read-only, so videos always play
+inside Zooza itself.
+
+> **Videos playing on one of your sites and not another is this, every time.** A business
+> that launched a new site but kept the old one, or runs a shop and a members area on
+> different domains, has videos that work in one place and refuse in the other — with no
+> useful error, because Vimeo simply declines to start. Add the second domain and it
+> resolves.
+
+> **Two warnings before you use the buttons.** Removing a domain, and **Apply to all
+> videos**, both rewrite every video in your Vimeo account — including domains you added
+> in Vimeo yourself, outside Zooza. Anything not on this list is removed. If you have been
+> managing domains by hand in Vimeo, put them on the list here first.
+
+> **Older accounts:** this screen used to be a single URL field, and saving it overwrote
+> your company website address. If your company URL looks wrong and you once used this
+> screen, that is why — correct it in **Settings → General → Account information**.
 
 ### Vimeo plan requirements
 
@@ -108,7 +148,9 @@ Clients log in to their profile and see all videos attached to their programmes 
 | Problem | Likely cause | Fix |
 |---|---|---|
 | "This video is private" | Vimeo video is set to Private | Change to Unlisted + add your domain to allowed embeds |
-| Video plays for admin but not clients | Vimeo allows embedding on `zooza.app` but not your client's domain | Add the client-facing domain to Vimeo allowed domains |
+| Video plays for admin but not clients | The client-facing domain is not on the allowed list | **Settings → Integrations → Vimeo** → add that domain |
+| Plays on the new website, not the old one (or the other way round) | Only one of the two domains is on the list | Add both — a business running two sites needs both |
+| Plays on your own site, not on the Zooza booking page | Older accounts never had `zooza.site` whitelisted | Open **Settings → Integrations → Vimeo** once; Zooza's own domains are now managed for you |
 | Video does not appear in Client Profile | Video not attached in Zooza, or visibility set to Admin only | Check Documents section on the programme/class/session |
 | Video plays but without audio | Vimeo issue — check the original upload | Re-upload the video to Vimeo |
 
