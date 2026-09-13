@@ -11,7 +11,8 @@ status: published
 source_legacy_path: legacy/0067_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: false
-last_converted: 2026-04-10
+last_converted: "2026-09-13"
+related_articles: ["managing-instructors","role-selection-guide","roles-and-permissions-faq","instructor-rate-reward"]
 ---
 
 # User roles
@@ -260,6 +261,33 @@ The **Main instructor** role has broader access than the regular **Instructor** 
 <!-- REVIEW: Support conversations mention that some admins expected Main instructor to have more payment visibility. Confirm that Main instructor truly cannot see pay rate amounts in any view (e.g., session detail, instructor profile). -->
 
 If you need someone who can both manage sessions across instructors and see pay rates, the only option is the **Assistant** role. There is no way to grant pay rate visibility to instructor-level roles.
+
+## Keeping client money off instructors' screens
+
+**Settings → General → Allow instructors to see financial information.** On by default.
+Turn it off and all three instructor roles — main, regular and external — stop seeing
+client money anywhere:
+
+- the **Payments** section leaves their menu
+- the **Payments** card, the payment-plan summary and the refund history come off the
+  booking detail
+- the payment screens on a booking return a "not allowed" page rather than the figures
+- amounts stop being rendered in the bookings list and on the booking itself
+
+Owners, assistants and receptionists keep everything.
+
+> **It is withheld, not hidden.** The figures are kept out of the data the app receives,
+> so there is no view, export or pasted link that gets to them.
+
+> **It is not the setting next to it.** *Allow main instructors to access payments*
+> governs exactly one thing — whether the top-level **Payments** menu opens for main
+> instructors. It never covered the amounts shown on a booking, which is why money stayed
+> readable for someone who had that switched off. This new toggle is the one that covers
+> everything.
+
+Available since **8 September 2026**. This is a company-wide setting: it applies to every
+instructor at once, unlike the per-person options in
+[Add instructors and manage their access](managing-instructors.md).
 
 ## Quick-reference: role capabilities comparison
 

@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: "legacy/0051_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-15"
+last_converted: "2026-09-13"
+related_articles: ["entry-pass-client-view","creating-entry-passes","pay-as-you-go-faq","customizing-widgets"]
 ---
 
 # Pay-as-you-go programme
@@ -107,6 +108,29 @@ Once a client enrols for a Pay-as-you-go programme, they manage their attendance
 Clients can also book sessions through the calendar widget on your website.
 
 ![Calendar widget — booking sessions](../../assets/images/pay-as-you-go-calendar-widget.png "Calendar widget on website showing available sessions")
+
+### Choose which of those two routes parents get
+
+Until September 2026 every client saw both buttons — **Book session**, which opens the
+widget's own session list, and **Go to calendar**, which sends them to your calendar
+widget. That is wrong in both directions: a company that never published a calendar was
+offering a button leading nowhere, and a company that runs all its booking through the
+calendar was offering a second, competing route.
+
+You now choose. In the **profile widget settings**, the option is **How pay-as-you-go
+programmes offer session booking**:
+
+| Setting | What the parent gets |
+|---|---|
+| **Session list** | Only **Book session** — the widget's own picker |
+| **Calendar** | Only **Go to calendar** — your calendar widget |
+| **Both** | Both buttons, which is the default and how it behaved before |
+
+**If parents find the booking journey confusing, start here.** Two buttons that lead to
+two different screens is the most common reason a pay-as-you-go journey feels harder than
+it is. Pick the one route you actually support and take the other away.
+
+The setting only affects pay-as-you-go programmes. Fixed-term programmes are untouched.
 
 ### Cancelling a session
 

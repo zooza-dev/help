@@ -153,6 +153,19 @@ Calendar.
 
 ![Send promotional emails checkbox](../../assets/images/send-promotional-emails-checkbox.png "Send promotional emails checkbox")
 
+### Taking someone out of the recipient list
+
+The preview list before you send is editable — **Remove** next to a recipient drops them
+from this send without touching your filter.
+
+**In Clients mode, removing someone now removes the person.** When you send to **Clients**
+— one message per person rather than one per booking — a single **Remove** takes out every
+booking that person holds. Until 10 September 2026 it removed one booking at a time, so a
+parent with three children came back twice more and you clicked *Remove* three times.
+
+That is the mode to use when you are sweeping a location or a term and want to spare a
+couple of families: filter wide, then take out the handful by name.
+
 ## How to send email/SMS to one client
 
 You can also use the procedure above, but it assumes you know the recipient email. When communicating with a specific client:
