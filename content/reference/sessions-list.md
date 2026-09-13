@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-05-13"
+last_converted: "2026-09-13"
 related_articles: ["calendar", "class-detail", "reports-dashboard"]
 ---
 
@@ -21,7 +21,7 @@ The Sessions screen shows all individual sessions across all programmes and clas
 
 > **Navigation:** Go to **Activities** → **Sessions**.
 
-![Sessions list](../../assets/images/reference/cls-sessions.png)
+![The Sessions list: filters across the top and session rows showing date, time, duration, status, attendance counts, instructor and venue](../../assets/images/reference/cls-sessions.png)
 
 ## Filters
 

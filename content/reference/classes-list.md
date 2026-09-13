@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-12"
+last_converted: "2026-09-13"
+related_articles: ["creating-a-class","class-detail","sessions-list","calendar-bulk-actions"]
 ---
 
 # Classes List
@@ -20,7 +21,7 @@ The Classes screen shows all timetables (classes) across all programmes in a sin
 
 > **Navigation:** Go to **Activities** → **Classes**.
 
-![Classes list](../../assets/images/reference/cls-classes.png)
+![The Classes list: action buttons across the top, the filter row, and class tiles showing statistics, instructor, venue, paid and issued debt](../../assets/images/reference/cls-classes.png)
 
 ## List View
 
