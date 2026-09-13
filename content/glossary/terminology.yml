@@ -6,7 +6,7 @@
 # ║  Edit there, then run: python3 scripts/sync_terminology.py      ║
 # ╚══════════════════════════════════════════════════════════════════╝
 #
-# Last synced: 2026-09-05
+# Last synced: 2026-09-13
 # Used by: scripts/normalize_terminology.py → build/terminology/dictionary.json
 #
 # Fields per term:
@@ -1106,6 +1106,13 @@ terms:
       Only discuss billable sessions when a customer explicitly asks about the billable session
       feature or pricing calculation. Never mention billable sessions in response to attendance,
       cancellation, or make-up questions.
+      EXCEPTION — the zero-price symptom. A booking form showing 0 for a class that has a
+      price IS a billable-session question, even when the customer never uses the words.
+      Setup is two steps and stopping after the first produces exactly this: by default
+      EVERY session is billable and the price is all sessions × unit price, but the moment
+      a class is told "10 billable sessions" that default flips and ONLY sessions
+      explicitly marked billable count. Mark none and the class calculates to zero.
+      Confirmed against a live account 2026-09-13.
     public: true
 
   # ──────────────────────────────────────────────
@@ -1312,6 +1319,15 @@ terms:
           Credit (overpayment) = arises automatically when a client pays more than owed.
           Entry pass credit = a prepaid bundle the client purchases intentionally.
           Both show as 'credit' in different contexts — clarify which type before advising.
+    ai_notes: >
+      ADMIN SIDE: passes live on an ORDER attached to the booking, and the entries do not
+      exist until that order is marked paid. So adding passes RAISES the booking's
+      outstanding balance until Add payment is recorded — which reads as "adding passes
+      made it worse" and is the most reported entry-pass problem. Sequence: open the
+      booking → Buy → tick the payment method → if the product lets the parent choose an
+      option, open the order and use Add item to order → back on the booking, Add payment.
+      Only at that last step are the entries generated and released to the parent.
+      Confirmed 2026-09-13.
     public: true
 
   - id: credit-balance
@@ -2564,6 +2580,44 @@ terms:
   # PAYMENTS AREA RESTRUCTURE — live 2026-09-04
   # ──────────────────────────────────────────────
 
+  - id: notification-centre
+    canonical_en: "Notification centre"
+    category: "communication"
+    definition: >
+      The place where an admin subscribes an email address to events in the account — a
+      new booking, an online payment, a class filling up, a client replying. Each
+      notification is one type sent to one address; several addresses means several
+      notifications.
+    context:
+      admin: "Notifications"
+      client: "—"
+      widget: "—"
+    synonyms:
+      - "notification center"
+      - "admin alerts"
+    translations:
+      sk: "Notifikačné centrum"
+      cz: "Notifikační centrum"
+      de: "Benachrichtigungszentrum"
+      hu: "Értesítési központ"
+      ro: "Centrul de notificări"
+    intent_keywords:
+      en: ["notification centre", "notify me when", "alert when someone books",
+           "new email reply from client", "get notified of replies", "class is full alert"]
+      sk: ["notifikačné centrum", "upozornenie na odpoveď", "chcem byť upozornený",
+           "notifikácia keď sa niekto prihlási", "upozornenie keď je skupina plná"]
+      cz: ["notifikační centrum", "upozornění na odpověď"]
+    ai_notes: >
+      "Can I be told when a client replies?" — YES. The type is "New email reply from
+      client". This was answered wrongly to a customer in September 2026 because the help
+      article carrying the list was marked archived and could not be retrieved. Replies to
+      Zooza email land in the app rather than the operator's mailbox, so without this
+      notification nothing announces them — which is why people conclude the alert does
+      not exist. Also present and easily missed in a long dropdown: "class is filling up /
+      full". Navigation: Settings → Notifications → Add new notification; one email
+      address per notification. Confirmed 2026-09-13.
+    public: true
+
   - id: payment-reconciliation
     canonical_en: "Payment reconciliation"
     category: "payments"
@@ -2592,6 +2646,10 @@ terms:
       sk: ["párovanie platieb", "parovanie", "sparovanie", "sparovanie platieb",
            "nespárovaná platba", "platba sa nespárovala", "spárovať ručne", "bankovy vypis"]
       cz: ["párování plateb", "nespárovaná platba", "spárovat ručně"]
+      en_setup: ["set up pairing", "payment collection setup", "money collection",
+                 "connect my bank", "how do I set up pairing"]
+      sk_setup: ["ako nastaviť párovanie", "nastavenie párovania", "money collection",
+                 "zber peňazí", "prepojiť banku"]
     do_not_confuse_with:
       - term: "Transactions"
         reason: >
@@ -2605,6 +2663,60 @@ terms:
       content written earlier may still say Payments → Inbound → List or → Setup.
       The status the client sees is a bucket, not the raw enum: Unpaired covers new and
       staging. Confirmed against production 2026-09-04.
+      WHERE IT IS SET UP — asked more often than how the queue works, and answered wrongly
+      once in September 2026. Pairing is configured ONCE ON THE COMPANY, in two places:
+      the IBAN goes on a bank account inside the billing profile (Settings → Billing &
+      Payments → Invoice profiles), and how Zooza reads that account is chosen in Payment
+      collection setup — a GoCardless bank connection, or bank email notifications. The
+      IBAN field ON A PROGRAMME is NOT this. It exists for the narrow case of one or two
+      programmes being paid into a different account, and filling it in does not start
+      pairing. Confirmed 2026-09-13.
+    public: true
+
+  - id: payment-collection-setup
+    canonical_en: "Payment collection setup"
+    category: "payments"
+    definition: >
+      The screen where a company says how Zooza should read money arriving in its bank
+      account — a GoCardless bank connection, or bank email notifications — and which
+      accounts it applies to. This is where automatic pairing is switched on; the
+      reconciliation queue is where the result is worked.
+    context:
+      admin: "Payment collection setup"
+      client: "—"
+      widget: "—"
+    deprecated:
+      - "Payments → Inbound → Setup"   # the path before September 2026
+    synonyms:
+      - "money collection"
+      - "inbound payments hub"
+    translations:
+      sk: "Nastavenie zberu platieb"
+      cz: "Nastavení sběru plateb"
+      de: "Zahlungseinzug-Einrichtung"
+    intent_keywords:
+      en: ["payment collection setup", "money collection", "set up pairing",
+           "connect my bank", "bank email notifications", "gocardless connection"]
+      sk: ["nastavenie zberu platieb", "money collection", "ako nastaviť párovanie",
+           "prepojiť banku", "emailové notifikácie z banky"]
+      cz: ["nastavení plateb", "propojit banku"]
+    do_not_confuse_with:
+      - term: "Payment reconciliation"
+        reason: >
+          Setup is done once and then left alone; reconciliation is the daily queue.
+          "How do I set up pairing" belongs here, "why did this payment not pair"
+          belongs in reconciliation.
+      - term: "IBAN on a programme"
+        reason: >
+          A programme can carry its own bank account, for the narrow case of one or two
+          programmes being paid into a different account. It is not how pairing is
+          switched on, and filling it in hoping pairing will start is the wrong lever.
+          Answered wrongly to a customer in September 2026.
+    ai_notes: >
+      Navigation: Settings → Billing & Payments → Payment collection setup. Two things
+      have to be right and they live apart: the IBAN sits on a bank account inside the
+      billing profile (Settings → Billing & Payments → Invoice profiles), and this screen
+      chooses how that account is read. Confirmed 2026-09-13.
     public: true
 
   - id: transactions-ledger

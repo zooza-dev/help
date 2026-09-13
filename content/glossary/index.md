@@ -221,6 +221,11 @@ Moving one or more client bookings from one company to another company within th
 
 > Not to be confused with: [Transfer (booking)](#transfer) — which moves a booking within the same company.
 
+### Notification centre
+Where you subscribe an email address to things that happen in your account — a new booking, an online payment, a class filling up, a client replying to one of your messages. Each notification is one event type sent to one address, so a second recipient means a second notification. Set up in **Settings → Notifications**.
+
+> Yes, there is one for client replies: **New email reply from client**. Replies land in the app rather than your mailbox, so without it nothing announces them.
+
 ---
 
 ## O
@@ -277,6 +282,11 @@ Copy the exact address from the **Share** button in the Classes list rather than
 > A bridge until Zooza is embedded on your own website, not a replacement for it. Distinct from **Zooza Sites**, the paid product with its own domain and templates.
 
 ---
+
+### Payment collection setup
+Where you tell Zooza how to read money arriving in your bank account — a GoCardless bank connection, or bank email notifications — and which accounts that applies to. This is where automatic pairing is switched on. Found at **Settings → Billing & Payments → Payment collection setup**.
+
+> Not to be confused with: the IBAN field on a programme, which exists for the narrow case of one programme being paid into a different account and does not switch pairing on.
 
 ### Payment reconciliation
 The queue of incoming bank payments waiting to be matched to a booking, and the screen where you match them by hand when Zooza could not do it automatically. Rows are grouped as **Unpaired**, **Processing**, **Paired**, **Ignored** and **Error**; its other tabs hold the AI rules that drive automatic matching and the analytics on how they perform.
