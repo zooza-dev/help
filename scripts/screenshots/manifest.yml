@@ -1,0 +1,50 @@
+# Shot list for scripts/screenshots/capture.py
+#
+# One entry per image in assets/images/. The capture tool drives a browser to
+# `route`, waits, checks `assert`, masks the literals in
+# build/intake/screenshot-mask.json, and stages the result.
+#
+#   image   path under assets/images/ — keep the existing filename and no article
+#           has to change, only its alt text and last_converted
+#   route   the hash route, without the leading #
+#   assert  a string that appears ONLY on this screen. Not the page name: the
+#           navigation carries every page name, including on the 404, so a name
+#           alone will happily "pass" on a broken route.
+#   wait    ms to settle before the check (default 8000). Raise it for screens
+#           that fetch a lot.
+#   status  verified  — captured and reviewed at least once
+#           unverified — route is a guess, the tool will tell us
+#   note    what the picture is for, so whoever reads this knows what it should show
+#
+# Account: Playfulmotion on the UK region. Keep to one account and one region,
+# or the help ends up looking like five different products.
+
+base: "https://uk.zooza.app/"
+
+shots:
+  - image: reference/cls-classes.png
+    route: courses/schedules
+    assert: "classes found"
+    status: verified
+    note: >
+      The Classes list — action buttons, the filter row, and class tiles with
+      statistics, instructor, venue and debt. Used by reference/classes-list.md.
+
+  - image: reference/cls-sessions.png
+    route: courses/events
+    assert: "Found"
+    status: verified
+    note: >
+      The Sessions list — filters, then session rows with date, time, duration,
+      status, attendance counts, instructor and venue. Used by
+      reference/sessions-list.md.
+
+  # --- candidates: routes not yet confirmed. Run the tool and it will say which
+  # --- are wrong; fix the route here rather than in a shell command somewhere.
+  - image: reference/invoices-list.png
+    route: invoices
+    assert: "TBC"
+    status: unverified
+    note: >
+      The invoices list. `#invoices` returned the app's 404 on 13 September —
+      the real route still needs finding. Used by reference/invoices-list.md.
