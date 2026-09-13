@@ -21,29 +21,28 @@ The Notification Center is used to notify you as an administrator or your collea
 
 ## What you can be notified about
 
-<!-- SCREENSHOT NEEDED: the notification type dropdown open, with "New email reply from client" visible in the list. The existing screenshots predate the current screen. -->
-
+![The notification type dropdown open on the Notifications center screen, listing every event from New booking down to Class full notification, including New email reply from client](../../assets/images/notifications-center-04.png)
 
 | Notification | Sent when |
 |---|---|
-| **New registration** | Someone books |
-| **New registration with a note** | Someone books and leaves a note — useful if you act on notes |
-| **Late registration** | Someone books after the class has started |
-| **Waiting list registration** | Someone joins a waiting list |
-| **Online payment** | A card or gateway payment arrives |
-| **New invoice** | An invoice is generated |
-| **New cancellation** | A booking is cancelled |
-| **New custom replacement** | A client requests a tailored make-up session |
-| **Duplicate registration** | The system spots what looks like a duplicate |
-| **Class is filling up / full** | A class reaches its capacity |
-| **Class ends soon** | A class is approaching its end date — your cue to open the next term |
+| **New booking** | Someone books |
+| **Booking with a note** | Someone books and leaves a note — useful if you act on notes |
+| **Late booking** | Someone books after the class has started |
+| **New booking in waiting list** | Someone joins a waiting list |
+| **Payment confirmation** | A payment arrives |
+| **Automatic sending of invoices to client by email** | An invoice goes out to the client |
+| **Send email about changes and news in Zooza** | Zooza ships an update |
+| **New cancellation (all programmes)** | A booking is cancelled |
+| **New tailored make-up session** | A client requests a tailored make-up session |
+| **Daily report** | A once-a-day summary of your account |
 | **New email reply from client** | A client replies to one of your Zooza emails |
-| **New release** | Zooza ships an update |
-| **Daily dashboard** | A once-a-day summary of your account |
+| **New duplicate booking** | The system spots what looks like a duplicate |
+| **Class ends soon notification** | A class is approaching its end date — your cue to open the next term |
+| **Class full notification** | A class reaches its capacity |
 
-The exact wording depends on your interface language, but every type above exists in the list.
+That is the whole list, in the order the dropdown shows it. The wording follows your interface language.
 
-> **Yes, there is a "class is full" notification.** It is easy to miss in a long dropdown, so if you have been told otherwise, scroll the list — it is there.
+> **Yes, there is a "class is full" notification.** It is called **Class full notification** and sits at the very bottom of the dropdown, which is why people miss it and conclude it does not exist.
 
 > **And yes, you can be told when a client writes back.** The type is **New email
 > reply from client**. Replies to your Zooza emails land in the app rather than in
@@ -51,15 +50,13 @@ The exact wording depends on your interface language, but every type above exist
 > people conclude the alert does not exist. It does; it is one row in the same list.
 > Where the replies themselves live: [Where do replies to Zooza emails go?](../faq/email-communication-faq.md#where-do-replies-to-zooza-emails-go).
 
-![The notification type list in settings, showing every event you can be alerted about](../../assets/images/notifications-center-01.png)
-
 ## Set up notifications
 
-1. In the *Settings* category, click *Notifications* and click on *Add new notification
+1. Go to **Settings → Notification center** and open **Add new notification**
  ![Settings with Notifications selected and the Add new notification button](../../assets/images/notifications-center-02.png)
  
-2. Select the type of notification from the list and type the email you want it to be sent to
-3. Confirm your choice by clicking the  *Create Notification* button
+2. Pick the type in **Notification**, and put the address in **Send to**
+3. Click **Create notification**
  ![The new-notification form: notification type and the email address to send it to](../../assets/images/notifications-center-03.png)
 
 

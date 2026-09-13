@@ -51,7 +51,7 @@ These fields are ready to use — you just enable them and optionally set a cust
 
 ### Business fields
 
-<!-- SCREENSHOT NEEDED: course → Settings → Extra fields → Business data, with the checkbox that makes the business fields optional. -->
+![The Business fields card with Show business fields in the booking form and Make business fields mandatory, both set to Yes, above the list of individual business fields](../../assets/images/additional-fields-02.png)
 
 
 These fields are used for business invoicing. When one or more business fields are active, the booking form shows an option to register as a company. See [Business booking](../faq/booking-faq.md) for the full workflow.
@@ -66,11 +66,14 @@ These fields are used for business invoicing. When one or more business fields a
 
 ![Business fields section in Additional fields settings](../../assets/images/additional-fields-business-settings-01.png)
 
-> **They do not have to be mandatory.** On the course itself — **Settings → Extra fields
-> → Business data** — a checkbox makes the business fields optional. Use it when some of
-> the people booking are companies and some are not: a school head booking in her own name
-> can then get through the form without a Business ID, while the companies that need an
-> invoice still fill theirs in.
+> **They do not have to be mandatory.** The **Business fields** card carries two toggles:
+> *Show business fields in the booking form*, and under it **Make business fields
+> mandatory**. Turn the second one off and the fields stay on the form but nobody is
+> forced to fill them.
+>
+> Use that when some of the people booking are companies and some are not — a head teacher
+> booking in her own name gets through without a Business ID, while the companies that
+> need an invoice still fill theirs in.
 
 **Buyer-only fields in multi-person registrations:** When multiple attendees are registered in one booking, **address fields** (Address, Structured address) and all **business fields** (Business name, Business address, Business ID, Tax ID, VAT) are collected once on the **buyer card** — not once per attendee. The booking widget groups them under the buyer section automatically; you do not need to configure this. Mandatory validation for these fields applies once per booking, not per person.
 

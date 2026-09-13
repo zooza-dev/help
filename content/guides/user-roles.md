@@ -258,16 +258,11 @@ If you need a team member who teaches classes but must not see pay rates, use th
 
 The **Main instructor** role has broader access than the regular **Instructor** role (editing all sessions, uploading documents, viewing all classes). However, neither the Main instructor nor the regular Instructor can see pay rates.
 
-<!-- REVIEW: Support conversations mention that some admins expected Main instructor to have more payment visibility. Confirm that Main instructor truly cannot see pay rate amounts in any view (e.g., session detail, instructor profile). -->
-
 If you need someone who can both manage sessions across instructors and see pay rates, the only option is the **Assistant** role. There is no way to grant pay rate visibility to instructor-level roles.
 
 ## Keeping client money off instructors' screens
 
-<!-- SCREENSHOT NEEDED: Settings → General, showing "Allow instructors to see financial information". If it fits in one shot, include the older "Allow main instructors to access payments" beside it — the article explains the difference between the two. -->
-
-
-**Settings → General → Allow instructors to see financial information.** On by default.
+**Settings → General → Access → Allow instructors to see financial information.** On by default.
 Turn it off and all three instructor roles — main, regular and external — stop seeing
 client money anywhere:
 
@@ -279,11 +274,13 @@ client money anywhere:
 
 Owners, assistants and receptionists keep everything.
 
+![Team and Settings, General, Access — the toggle Allow instructors to see financial information set to Yes, with Allow main instructors to access the Payments section below it](../../assets/images/user-roles-21.png)
+
 > **It is withheld, not hidden.** The figures are kept out of the data the app receives,
 > so there is no view, export or pasted link that gets to them.
 
-> **It is not the setting next to it.** *Allow main instructors to access payments*
-> governs exactly one thing — whether the top-level **Payments** menu opens for main
+> **It is not the setting under it.** *Allow main instructors to access the Payments
+> section* governs exactly one thing — whether the top-level **Payments** menu opens for main
 > instructors. It never covered the amounts shown on a booking, which is why money stayed
 > readable for someone who had that switched off. This new toggle is the one that covers
 > everything.
