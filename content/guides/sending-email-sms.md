@@ -12,7 +12,8 @@ status: published
 source_legacy_path: legacy/0012_Welcome to Zooza.html
 source_language: mixed
 needs_screenshot_replacement: false
-last_converted: 2026-02-11
+last_converted: "2026-09-13"
+related_articles: ["message-templates","dynamic-tags","bulk-email-send-tracking","email-delivery"]
 ---
 
 # Sending email/SMS to clients
@@ -118,6 +119,24 @@ Everyone in the filtered classes becomes the recipient list.
 Sending this way also exposes one filter the normal composer does not have: once you are in a class you can narrow to a subset of its bookings — for example only the people on the **waiting list**, rather than everyone enrolled.
 
 This is the practical answer to most "can I email just X?" questions. Classes can be filtered in ways bookings cannot, so reaching the audience through Classes is usually faster than looking for a matching target group.
+
+### Everyone at one venue
+
+A common one, and there are three routes depending on what you mean by "everyone there".
+
+| What you want | Where to do it |
+|---|---|
+| Everyone with a booking at that venue | **Bookings** — filter by location, then send a bulk message |
+| Everyone in the classes held there | **Classes** — filter by location, then **Send email** |
+| Everyone due at that venue on one specific day | **Calendar** — **Bulk edit**, tick the sessions, and send from there |
+
+The third is the one for "the pool is closed on Thursday": the message goes to everyone
+on the sessions you ticked, so you are not telling families about a closure on a day they
+were not coming anyway.
+
+**The sessions list is not one of the routes.** People try it because it looks like the
+place where venues and dates live, but the send actions are on Bookings, Classes and the
+Calendar.
 
 > **Attention!** Zooza does not function as a marketing communications system that allows clients to opt out of receiving marketing/promotional messages. It is also not used to obtain information about how many clients opened the promotional email or responded to links. The **Promotional Email / Promotional SMS** function is for client information only. If a client wants to cancel from promotional emails, you can do it based on their request:
 >

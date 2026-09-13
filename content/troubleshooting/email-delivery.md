@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-09-13"
+related_articles: ["sending-email-sms","notifications-center","login-and-account-faq","emails-in-primary-inbox"]
 ---
 
 # Email Delivery Troubleshooting
@@ -39,6 +40,20 @@ If the email does not appear in the log, the system did not send it. Common reas
 3. If there is a warning icon or error indicator next to the email address, the system has previously failed to deliver to that address.
 
 If the address is wrong, update it and resend the email.
+
+### Zooza flags an address it could not deliver to
+
+A booking whose address has failed shows a small **X** next to it. That marker is reliable
+— treat the address as dead rather than retrying.
+
+**What it does not give you is a list.** There is no view of every booking carrying an X,
+so you find them one at a time, usually by accident, while the seat stays occupied by
+somebody you cannot reach. Until that exists, the practical routine is:
+
+- **A phone number on the booking?** Call, get the right address, correct it on the
+  booking. The client keeps their place and their history.
+- **No other way to reach them?** Delete the booking and free the seat. Somebody who
+  mistyped their address and never heard from you will usually book again.
 
 ## Step 3: Identify the delivery failure
 
@@ -115,10 +130,16 @@ Two checks, in this order, before you chase anything further:
 If Zooza sent it and nothing at all arrives, that is worth reporting. If Zooza never
 sent it, the cause is a setting rather than delivery — work through the steps above.
 
-> **Some providers are worse than others.** Addresses at `@azet.sk` have been
-> unreliable recently: mail is accepted and never surfaces. When a client is stuck on
-> one of these, the fastest fix is to ask them for a different address rather than to
-> keep resending.
+> **Some providers are worse than others.** Addresses at `@azet.sk` are the current
+> problem: as of September 2026 mail to them is accepted and never arrives — not in spam,
+> not late. It is happening at Azet's end, it affects every kind of message we send, and
+> we have not been able to get a response from them about it. Reported by several
+> companies in the same week, so if you see it you are not alone and it is not your setup.
+>
+> **Login codes are the casualty people notice first.** A parent enters their address,
+> waits for the code and nothing comes, so it looks like the login is broken rather than
+> the mailbox. When a client on one of these providers cannot get in, changing their
+> address to a different provider is the fix — resending will not help.
 
 ## Step 4: What you can do as an admin
 

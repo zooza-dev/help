@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/labels-and-extra-fields.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-09-13"
 related_articles: ["business-booking", "booking-form-settings", "booking-widget-faq"]
 ---
 
@@ -62,6 +62,12 @@ These fields are used for business invoicing. When one or more business fields a
 | **VAT** | VAT identification number. |
 
 ![Business fields section in Additional fields settings](../../assets/images/additional-fields-business-settings-01.png)
+
+> **They do not have to be mandatory.** On the course itself — **Settings → Extra fields
+> → Business data** — a checkbox makes the business fields optional. Use it when some of
+> the people booking are companies and some are not: a school head booking in her own name
+> can then get through the form without a Business ID, while the companies that need an
+> invoice still fill theirs in.
 
 **Buyer-only fields in multi-person registrations:** When multiple attendees are registered in one booking, **address fields** (Address, Structured address) and all **business fields** (Business name, Business address, Business ID, Tax ID, VAT) are collected once on the **buyer card** — not once per attendee. The booking widget groups them under the buyer section automatically; you do not need to configure this. Mandatory validation for these fields applies once per booking, not per person.
 

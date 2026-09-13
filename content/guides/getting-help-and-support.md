@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-09-13"
+related_articles: ["claude-plugin","claude-plugin-faq","notifications-center"]
 ---
 
 # Getting Help and Support
@@ -77,6 +78,14 @@ See [Connect Zooza to Claude](../setup/claude-plugin.md).
 ### Language
 
 Write in any language and Zooza Assistant will respond in kind.
+
+**The written help is English only, and there is no Slovak, Czech, Hungarian or Romanian
+edition of it.** That is deliberate rather than an oversight: one set of articles, kept
+current, beats five sets where four drift out of date. The assistant is how you read it in
+your own language — it answers from these same articles, in whatever language you write in.
+
+So "is there a manual in my language?" has an honest answer: not as a document, yes as a
+conversation. Ask the assistant your actual question rather than looking for a PDF.
 
 **If it answers in the wrong language — usually Czech when you wrote Slovak — that is a known limitation, and asking it again will not fix it.** The assistant detects the language of your message and picks its reply from that. Slovak and Czech are close enough that the detection sometimes lands on the wrong one, and once it has decided, repeating the request in the same language tends to produce the same result.
 

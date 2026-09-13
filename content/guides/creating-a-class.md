@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/group-creation.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-09-13"
 related_articles: ["creating-a-programme","programme-class-session-definition","edit-sessions-in-programmes","lead-collection"]
 ---
 
@@ -71,6 +71,20 @@ Fill in the following fields:
 > Second thing to check: the instructor's own profile has a **show nickname only**
 > setting. With it on, parents see the nickname rather than the name — so a name you
 > do not recognise may be the right person under a nickname you forgot was set.
+
+> **The same is true of the venue, and it catches more people.** Sessions within one
+> class are allowed to differ — Monday at one hall with Ferko, Tuesday at another with
+> Miško, one of them 90 minutes instead of 60. So a class carries a venue and each session
+> carries its own, and they are permitted to disagree.
+>
+> **The booking form and the class description advertise the class's venue.** The calendar
+> and the attendance sheet show each session's. If a class says Nová tržnica while the
+> sessions say somewhere else, neither is broken — you are looking at two fields.
+>
+> Changing the venue on the class asks you what to do about the sessions: **this class
+> only**, **all sessions**, or **upcoming sessions**. Picking *class only* re-advertises
+> the class and leaves every existing session where it was, which is the usual reason a
+> change "did not take".
 
 > **`Duration of sessions` is what parents see on the booking form.** The form shows
 > this one number from the class — it does not read the length of the first session,

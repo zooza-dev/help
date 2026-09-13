@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-30"
+last_converted: "2026-09-13"
 related_articles: ["blocks-configuration","blocks-creation","trial-sessions","price-and-payment-setup"]
 ---
 
@@ -91,11 +91,25 @@ then trials never consume seats reserved for paying clients.
 
 ## Can I filter bookings by block?
 
-Filtering bookings by block directly in the booking list is not yet fully supported, and the booking export does not include a block column.
+Yes, on the bookings list — but read the result carefully, because **it shows only the
+people who chose that block**.
 
-To check which block a specific client is enrolled in, open the booking detail and look at the **Class** tile — it shows the client's current block. This is the most reliable way to verify a single client's block assignment.
+Whole-course bookings are not in it. Someone registered for the entire class is enrolled
+in every session rather than in any one block, so a block filter has nothing to match them
+on. Filter a class by its Tuesday block and eleven block bookings appear while the
+full-year children do not — and that is the filter working, not failing.
 
-For bulk reporting, block occupancy statistics are available in the class detail view, where you can see how many clients are enrolled in each block.
+The two are genuinely different modes of registration, priced by different rules: blocks
+carry their own price and discounts, a whole-course booking is calculated as one. No
+single filter spans both.
+
+**If you need one list of everyone attending on a given day**, work from the session or
+the class rather than the block — the attendance for a session includes both kinds of
+booking, because both kinds of client are in the room.
+
+The booking export still does not include a block column. To check one client, open the
+booking and look at the **Class** tile, which shows their current block; for numbers per
+block, the class detail view has block occupancy.
 
 ## Why did previously created blocks disappear from the admin view after editing?
 
