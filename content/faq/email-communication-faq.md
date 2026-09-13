@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-09-13"
+related_articles: ["notifications-center", "sending-email-sms", "message-templates", "email-delivery"]
 ---
 
 # Email and Communication FAQ
@@ -53,6 +54,14 @@ When composing emails in Zooza, the editor preserves formatting (paragraphs, bol
 ## Where do replies to Zooza emails go?
 
 Replies go directly into the Zooza application. The reply-to address is system-managed and routes to your Zooza inbox.
+
+**Nothing tells you they arrived unless you ask it to.** Because the reply lands in the
+app and not in your mailbox, it can sit there unread for days. Turn on the **New email
+reply from client** notification and it emails you each time one comes in — see
+[Notifications Center](../guides/notifications-center.md).
+
+Only a few templates go out from `no-reply@zooza.app`; the rest are sent from your own
+address, which is why replies come back to us and are collected in the app.
 
 ## Can I block replies to Zooza emails or set up an autoresponder?
 

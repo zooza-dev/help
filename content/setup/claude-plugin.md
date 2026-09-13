@@ -1,6 +1,6 @@
 ---
-title: "Connect Zooza to Claude (Zooza AI)"
-description: "Use Zooza AI to manage classes, attendance, and schedules through conversation — no tab-switching. Connect via Claude.ai in minutes."
+title: "Connect Zooza to Claude or ChatGPT (Zooza AI)"
+description: "Use Zooza AI to manage classes, attendance, and schedules through conversation — no tab-switching. Connect it to Claude or to ChatGPT."
 slug: "claude-plugin"
 type: "setup"
 product_area: "MCP"
@@ -11,13 +11,13 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-09-13"
 related_articles: ["claude-plugin-faq", "integrations-hub"]
 ---
 
-# Connect Zooza to Claude (Zooza AI)
+# Connect Zooza to Claude or ChatGPT (Zooza AI)
 
-Zooza AI connects Claude (Anthropic's AI assistant) to your Zooza account via an MCP connector. Instead of switching between tabs, you can manage classes, schedules, attendance, and more through a simple conversation — in any language Claude supports.
+Zooza AI connects an AI assistant — Claude or ChatGPT — to your Zooza account via an MCP connector. Instead of switching between tabs, you can manage classes, schedules, attendance, and more through a simple conversation — in any language Claude supports.
 
 **Prerequisite:** An active Zooza account with Admin access.
 
@@ -33,6 +33,33 @@ Zooza AI connects Claude (Anthropic's AI assistant) to your Zooza account via an
 4. Sign in with your Zooza account — OAuth, same login as zooza.app.
 
 The connector is active immediately.
+
+---
+
+## Connect via ChatGPT
+
+Same connector, same address — but OpenAI has moved this setting several times, most
+recently in July 2026, so a click path written down today may not survive the year.
+
+**Check the in-app guide first.** Open **`zooza.app/#mcp`** in Zooza. It is the page we
+keep current, and it is the one to trust if it disagrees with the steps below.
+
+As things stand you need two things:
+
+1. In ChatGPT's **settings**, switch on **developer mode**.
+2. Under **plugins** (connectors), add a **custom connector** pointing at
+   `https://mcp.zooza.app/mcp`, then sign in with your Zooza account.
+
+> **If the menus do not look like that, ask ChatGPT itself.** Tell it you want to add a
+> custom MCP connector at `https://mcp.zooza.app/mcp` and to walk you through where that
+> setting lives in your version. It knows its own interface better than any screenshot we
+> could publish, and it handles this well. This is genuinely the fastest route when the
+> steps above do not match what you see.
+
+Once connected, everything below works the same as it does in Claude.
+
+> **Then refresh the tool list.** Connectors cache the tools they learned on the day you
+> connected — see [Zooza AI says it cannot do something I know it can do](../faq/claude-plugin-faq.md#zooza-ai-says-it-cannot-do-something-i-know-it-can-do).
 
 ---
 
@@ -212,10 +239,16 @@ Some things still need the Zooza web app. As of **5 September 2026**:
 
 | Not available through Claude | Where to do it |
 |---|---|
-| **Cancelling a session** — Claude can move, edit and add sessions, but not call one off | Calendar → the session |
+| **Cancelling or deleting a session** — Claude moves, edits and adds sessions, but does not call one off or remove one | Calendar → the session. To clear a whole time slot, open **Sessions**, filter to that slot, and delete in bulk |
 | **Taking payments, refunds and invoicing** — templates and payment plans yes, money no | Payments |
 | **WhatsApp messages** — email works, WhatsApp does not | Communication |
 | **Staff accounts and permissions** | Settings → General → Access |
+
+> **Deleting is withheld on purpose.** Bulk delete is powerful enough that nobody
+> should be able to trigger it by accident in a conversation, so it is not one of the
+> assistant's actions. Doing it yourself takes under a minute: **Sessions**, filter to
+> the time slot you want gone, select, delete. This is the usual answer when a venue
+> drops a day from the timetable.
 
 If something is missing that would help your work, say so in the conversation:
 *"I want to suggest a feature."* It reaches the team with the context of what you

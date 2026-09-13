@@ -1,6 +1,6 @@
 ---
 title: "Entry pass — client view"
-description: "This guide explains how clients see and use entry passes in their profile. It is intended for admins who want to understand the client experience,..."
+description: "How clients see and use entry passes in their profile, and how to add passes to a booking yourself — including why the balance goes up until you mark the order paid."
 slug: "entry-pass-client-view"
 type: "guides"
 product_area: "Orders"
@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: "legacy/html/entry-pass-client-profile.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-06-01"
+last_converted: "2026-09-13"
+related_articles: ["creating-entry-passes", "pay-as-you-go-programme", "client-profile-101", "orders-and-products-faq"]
 ---
 
 
@@ -91,17 +92,37 @@ From the order detail, the admin can also manually adjust entries if needed (e.g
 
 ![Order detail with entry pass entries](../../assets/images/entry-pass-client-view-07.png)
 
-## Manual assignment by admin
+## Adding passes to a booking yourself
 
-Admins can manually assign an entry pass to a specific booking from the admin interface. This is useful when a client pays in person or when you want to grant a complimentary pass.
+Passes reach a booking one of two ways: **the parent buys them** from their profile, or
+**you add them** from the admin side. Use the second when somebody paid you in person,
+paid before the programme was finished, or when you are giving passes away.
 
-1. Open the booking detail.
-2. Click **Buy** next to the entry pass product.
-3. Select the payment method.
-4. Optionally check **Paid** if the client has already paid.
-5. Confirm.
+1. Open the booking and click **Buy** — the products card sits on the right-hand side of
+   the booking detail.
+2. Tick the payment method and confirm. This creates an **order** attached to the booking.
+3. What happens next depends on the product:
+   - **Passes are mandatory on it** — Zooza has already put them on the order.
+   - **The parent normally picks an option at booking** — then nothing was picked for
+     them. Open the order, click **Add item to order**, and work through the wizard.
+4. Go back to the booking and click **Add payment** to record that the client has paid.
 
 ![Manual entry pass assignment on booking](../../assets/images/entry-pass-client-view-08.png)
+
+> **Step 4 is not bookkeeping — it is what releases the passes.** The entries are created
+> at the moment the order is marked paid. Until then the parent has nothing to book with.
+
+### "Adding passes only made the balance worse"
+
+That is the usual way this goes wrong, and it is a half-finished procedure rather than a
+fault. Adding passes creates an order; an unpaid order raises the amount outstanding on
+the booking. If the client has already paid you, the balance stays up until you record it
+with **Add payment** — then it drops back to zero and the passes appear in the parent's
+profile.
+
+So a parent who paid before the programme was properly set up does not need a refund and
+a fresh booking. Create the order, add the item if the product expects a choice, mark it
+paid, and the booking settles at zero with the passes live.
 
 > **Tip:** If you do not see the desired payment method, return to the product settings and activate it there.
 

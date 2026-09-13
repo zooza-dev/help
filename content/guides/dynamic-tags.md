@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0005_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-05-13"
+last_converted: "2026-09-13"
 related_articles: ["message-templates", "edit-session-notification-template", "sending-email-sms"]
 ---
 
@@ -44,6 +44,8 @@ Each email sent for a specific booking allows you to dynamically fill in client 
 | <code>&#42;&#124;REGISTRATION_FEE&#124;&#42;</code>                 | Booking fee. If not listed on the booking, it is taken from the programme.                 | 30 EUR                                                |
 | <code>&#42;&#124;VARIABLE_SYMBOL&#124;&#42;</code>                  | Variable symbol used for payment. Typically the booking number.                            | 12345                                                 |
 | <code>&#42;&#124;COMPANY&#124;&#42;</code>                          | Your company name                                                                          | My company Ltd.                                       |
+| <code>&#42;&#124;COMPANY_EMAIL&#124;&#42;</code>                    | Your company's contact address, taken from **Settings → General → Account information**. Several automatic payment emails end with it. | info@mycompany.com |
+| <code>&#42;&#124;COMPANY_URL&#124;&#42;</code>                      | Your company's website address, from the same place                                        | https://mycompany.com |
 | <code>&#42;&#124;COURSE_PLACE&#124;&#42;</code>                     | Programme location. Composed of room and location data. Works without a room assigned — if no room is set, it shows the location name only. If the tag returns blank, the cause is a data sync issue, not a missing room.                                    | Big hall, Free time center, 323 Green Lane, Edinburgh |
 | <code>&#42;&#124;ONLINE_MEETING_LINK&#124;&#42;</code>              | Clickable link to the online meeting room (e.g. Zoom, Teams) configured on the class. Renders as an `<a>` tag. | Join Zoom meeting                                     |
 | <code>&#42;&#124;ONLINE_MEETING_URL&#124;&#42;</code>               | Raw URL of the online meeting room configured on the class. Use when you want to embed the link yourself. | https://zoom.us/j/12345                               |
@@ -289,6 +291,22 @@ Tags that pull session-specific data — `*|COURSE_PLACE|*`, `*|COURSE_TIME|*`, 
 **If session-context tags are not populating in your manual send:**
 - Check whether you need the data in the message body or if you can reference it another way (e.g. include the session date in the subject line manually, or use `*|ORDER_SUMMARY|*` which includes session details).
 - If the email is intended to be automated (sent on a schedule or event), configure it as an automatic template rather than a manual send.
+
+### The wrong email address appears in an automatic payment email
+
+The overdue-payment email ends with a line asking the client to send payment details to
+an address — and for some accounts that address is wrong, often someone's private one
+left over from setup.
+
+**Editing the template will not fix it.** The address is not typed into the text; the
+template renders <code>&#42;&#124;COMPANY_EMAIL&#124;&#42;</code>, which prints whatever
+your company email is set to. Change that, and every email carrying the tag corrects
+itself.
+
+**Fix:** **Settings → General → Account information** → the **Email address** field.
+It is described there as the main contact address for you and your clients, which is
+exactly what it is: it goes out on payment emails, so it should be an address somebody
+actually reads.
 
 ### QR_CODE tag returns blank or doesn't appear
 

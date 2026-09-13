@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: "legacy/0084_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-09-13"
 ---
 
 # Payment Pairing for Bank Transfers & Direct Debit
@@ -24,6 +24,29 @@ Every booking in Zooza automatically creates an expected amount to pay based on 
 - Automatically via bank integrations
 - Bulk import via CSV file
 - Automatically via GoCardless (recommended)
+
+## Where pairing is set up
+
+Automatic pairing is not configured on a programme. It is configured once, on your
+company, and it takes two things:
+
+1. **The IBAN goes on your billing profile.** **Settings → Billing & Payments →
+   Invoice profiles**, on the bank account inside the profile that will receive the
+   money. See [Invoice profiles and bank accounts](../setup/invoice-profiles-and-bank-accounts.md).
+2. **How Zooza reads that account is chosen in Payment collection setup.**
+   **Settings → Billing & Payments → Payment collection setup** — either a
+   **GoCardless bank connection**, or **bank email notifications** if your bank can
+   send them. Full steps: [Set up how Zooza collects money from clients](../setup/inbound-payments-setup.md).
+
+Get those two right and incoming transfers pair themselves. Nothing else needs
+switching on.
+
+> **The IBAN field on a programme is not this.** A programme can carry its own bank
+> account, and it is a genuinely narrow feature — for when one or two programmes must
+> be paid into a different account from everything else. It is not where you set up
+> pairing, and filling it in hoping that pairing will start is the wrong lever. Set the
+> company up first; reach for the programme field only when you actually need a
+> different account for that one programme.
 
 ## Manual payment pairing
 
