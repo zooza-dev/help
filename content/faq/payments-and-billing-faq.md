@@ -90,6 +90,18 @@ Two important clarifications:
 - **It is a grace window, not a due-date shift.** Setting 14 days means a booking stays in "Awaiting payment" for 14 days before Zooza marks it as overdue ("Unpaid"). It does **not** change the scheduled due dates on a payment plan — those are set independently per instalment.
 - **It does not postpone instalment collection.** If a client has a payment plan with a fixed due date, that due date is unaffected by the tolerance period setting. The tolerance period only controls when the *status* changes from "Awaiting payment" to "Unpaid".
 
+**Since 7 September 2026 it also sets the due date on your invoices.** That is new: the
+setting used to govern booking status and nothing else, while each invoicing engine
+invented its own due date — Faktury Online applied its own 14 days, Fakturoid, Xero, ABRA
+Flexi and Oblio used 30, SuperFaktura and SmartBill used the issue date, and Zooza's own
+invoices had none at all. Nine engines, five different answers, none of them the number
+you had typed into the setting.
+
+They all read it now. If your invoices have been going out with a due date you did not
+choose, this is where it came from, and this is where you change it.
+
+Instalment due dates on a payment plan are still set per instalment and are not affected.
+
 ## Does "Awaiting payment" status automatically send reminder emails to clients?
 
 No. The **Awaiting payment** status is for your internal tracking only — it does not trigger any emails.

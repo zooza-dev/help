@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-09-13"
+related_articles: ["payment-templates-creation","price-and-payment-setup","loyalty-sibling-discount","outstanding-amount"]
 ---
 
 # Session payment adjustments
@@ -117,6 +118,22 @@ already have.
 bank account. Money already received is never removed, so a second plan on top does
 not replace the first — it leaves you with an overpayment or an underpayment for
 that period and a history nobody can read later.
+
+### What "amount to pay" shows
+
+Every field labelled **amount to pay** on a payment plan shows the **net** figure — the
+instalment after every discount has come off. That covers the per-payment columns in the
+payments overview and in the payment detail, and the **total amount to pay** on the plan
+summary, which is the sum of those nets.
+
+Corrected on **8 September 2026**. Before that these fields echoed the gross instalment,
+so a plan with a discount displayed a higher figure than the client actually owed — while
+the scheduled debt on the Payments card, which was right all along, showed something
+different. If you have a screenshot from before that date where the two disagree, that is
+the explanation; the money was never wrong, only one of the two figures.
+
+All three kinds of discount are taken into account: the one built into the payment
+template, a coupon or credit on the booking, and loyalty.
 
 ### The rule that decides which instalment to edit
 
