@@ -246,6 +246,23 @@ Yes. Open the booking detail, click **Show payments**, and in the **Invoices** s
 
 > **Warning:** Clicking **Generate invoice** always creates a new invoice. If you need to change the price, discount, or other booking details, use **Edit** on the booking — do not click Generate invoice again. Clicking it a second time creates a duplicate (including a €0 invoice if the booking has no outstanding balance at that moment).
 
+## The booking shows a payment but the invoice leaves it out
+
+Nearly always the invoice's **date range**, not a missing payment.
+
+An invoice collects the payments that fall inside a period, and when you open it for
+editing there are **two date pickers** that set that period. A payment that arrived before
+the start, or that was moved onto this booking from another one and kept its original
+date, sits outside the window and is not counted — so the invoice shows a balance still
+owing while the booking's payment list plainly shows the money.
+
+**What to do:** open the invoice, widen the two dates until they cover the payment, and
+save. If every payment is visible on the booking and the invoice still misses one after
+that, send support the booking — at that point it is worth a look.
+
+This comes up most after moving a client between classes, because the payment travels to
+the new booking while keeping the date it was originally made.
+
 ## I accidentally generated a duplicate or €0 invoice — what do I do?
 
 This typically happens when **Generate invoice** is clicked after a price or discount was already adjusted, or clicked more than once.

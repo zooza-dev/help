@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-04"
+last_converted: "2026-09-13"
 related_articles: ["calendar-bulk-actions", "edit-sessions-in-programmes"]
 ---
 
@@ -34,6 +34,20 @@ The time axis reads like a ruler:
 - **Thick vertical lines** mark each full hour.
 - **Light dotted lines** mark 15-minute intervals.
 - Each session tile is positioned and sized to match its exact start time and duration.
+
+### A session you know exists is not on the view
+
+The daily overview is built from **who is enrolled**, not from what has been scheduled. A
+session with a room and an instructor assigned but nobody booked into it has nothing to
+draw, so it does not appear.
+
+That matters if you were hoping to use the view to see a room blocked out — reserved for
+a rehearsal, held for an assessment, kept free while a group is elsewhere. It will not show
+there, because as far as the overview is concerned nobody is in it.
+
+**The workaround, while it is like this:** keep one test booking in the account and copy it
+into the sessions you want held. One enrolled attendee is enough to make the session appear
+in its room's lane.
 
 ### Overlapping sessions
 
