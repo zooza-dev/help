@@ -42,12 +42,19 @@ shots:
   # --- candidates: routes not yet confirmed. Run the tool and it will say which
   # --- are wrong; fix the route here rather than in a shell command somewhere.
   - image: reference/invoices-list.png
-    route: invoices
-    assert: "TBC"
-    status: unverified
+    route: payments/invoices
+    assert: "INVOICE NUMBER"
+    status: blocked
     note: >
-      The invoices list. `#invoices` returned the app's 404 on 13 September —
-      the real route still needs finding. Used by reference/invoices-list.md.
+      The invoices list. It is under Payments, not at the top level — `#invoices`
+      returns the app's 404.
+
+      BLOCKED, not broken: the route and the capture both work, but the demo
+      account's Xero connection has expired, so half the rows show red ERROR
+      lines ("Xero: Token refresh failed", "Xero: Invoice creation failed",
+      "Xero: Forbidden"). Publishing that would teach readers that invoicing is
+      broken. Either reconnect Xero in the demo account, or filter the list to
+      issued invoices before capturing. Used by reference/invoices-list.md.
 
   # --- Bookings (reference/bookings-list.md) — the most-served article in the KB
   #     and 16 of its 17 images date from February.
@@ -67,7 +74,7 @@ shots:
 
   - image: reference/bookings-payments-tab.png
     route: registrations/1394/payments
-    assert: "Quick links: Invoices"
+    assert: "Booking amount due"
     status: unverified
     note: The payments section of a booking — status, total charge, balance.
 

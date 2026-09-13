@@ -170,14 +170,16 @@ def capture(manifest_path, only, apply_it):
                     results.append((name, "PII LEFT", ", ".join(leaked)))
                     continue
 
-                # The mask only knows what it was told. Anything else that looks like a
-                # real address is worth a human glance before this picture goes public —
-                # a personal gmail sat on a booking detail on the first run, and the
-                # check above was perfectly happy because nobody had named that domain.
-                allowed = tuple(mask.get("allowed_email_domains", []))
+                # The mask only knows what it was told. A personal gmail sat on a booking
+                # detail on the first run and the check above was perfectly happy, because
+                # nobody had named that domain. So also flag anything at a real-world mail
+                # provider — the demo account's own invented addresses are not worth
+                # shouting about, and a warning that fires forty times is a warning nobody
+                # reads.
+                flag = tuple(mask.get("flag_domains", []))
                 suspect = sorted({e for e in re.findall(
                     r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", after)
-                    if not e.lower().endswith(allowed)})
+                    if flag and any(f in e.lower() for f in flag)})
 
                 pg.screenshot(path=out)
                 detail = f"masked {masked}"
