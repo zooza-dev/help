@@ -12,7 +12,7 @@ related_articles: ["trash-and-restore", "trials-daily-business", "auto-cancel-un
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-15"
+last_converted: "2026-09-13"
 ---
 
 # Registration statuses — what each one means
@@ -56,6 +56,27 @@ last_converted: "2026-05-15"
 The status moves to **Unpaid** (or triggers a payment reminder) when the grace period passes without payment.
 
 This status does **not** automatically cancel the booking. Whether the booking gets cancelled for non-payment depends on your programme's **payment reminder and auto-delete settings**.
+
+## A booking exists but nothing was paid — did something go wrong?
+
+Almost certainly not. **The payment follows the booking, because the booking has to exist
+before there is anything to pay for.** The parent fills in the form, the booking is
+created, and only then are they sent to the payment step. If their card fails, or they
+get distracted and close the tab, the booking is still there — which is what you want,
+because they can come back and pay without filling the form in again.
+
+So an unpaid booking on your list is not evidence of a broken checkout. It is a parent
+who has not finished yet.
+
+**There is no setting that refuses to create the booking until payment succeeds.** What
+you control is what happens next: payment reminders, and whether unpaid bookings are
+deleted automatically after a while. Both are set per programme — see
+[Automatic payment reminders](../guides/automatic-payment-reminders.md).
+
+**When it is worth a closer look:** many parents in a row stopping at the same point.
+That is usually the payment page rather than the booking — a card gateway not finishing,
+or a site served over `http://`, which Stripe refuses. See
+[Stripe payments FAQ](stripe-payments-faq.md).
 
 ## What does "No debt" mean?
 

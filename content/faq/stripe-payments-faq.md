@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-30"
+last_converted: "2026-09-13"
 related_articles: ["inbound-payments-setup","stripe-refund-guide","payment-options","integrations-hub"]
 ---
 
@@ -101,6 +101,33 @@ If you see a "provider not connected" error when selecting **Stripe Connect** as
 3. Once connected, try saving the programme again.
 
 This validation prevents a misconfiguration that would cause payment failures at booking time. Previously, saving would succeed silently but payments would fail when a client tried to pay.
+
+## Parents cannot pay and the page says "Not secure"
+
+Stripe will not take a live payment on an insecure connection. If the booking page is
+being served over `http://` rather than `https://`, the card form fails — on every
+device, which is what makes it look like a Zooza fault rather than a website one.
+
+**Check the address bar first.** If the browser says *Not secure*, that is the whole
+diagnosis. The Zooza widgets themselves are served securely; what matters is the page
+you embedded them into.
+
+**The fix belongs with whoever runs your website:** an automatic redirect from HTTP to
+HTTPS across the whole site, set at hosting or domain level. WordPress plugins can do it
+too, but the hosting-level redirect is the one that stays fixed.
+
+## A payment shows as expired, or outstanding in Zooza but paid in Stripe
+
+**Expired means the parent started and never finished.** Opening the payment page creates
+an intent to pay; walking away from it, or closing the tab, leaves that intent to lapse.
+It is not a failure and nothing is charged.
+
+People often try two or three times before one goes through, so a single booking can leave
+a trail of expired attempts and one real payment. Look for the successful one before
+chasing anybody.
+
+**A parent holding a confirmation email has usually paid** — on a later attempt than the
+one you are looking at. Check the booking's payment list rather than the first Stripe row.
 
 ## Where can I see payment reports for my accountant?
 

@@ -11,7 +11,8 @@ status: published
 source_legacy_path: legacy/0086_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: "2026-09-05"
+last_converted: "2026-09-13"
+related_articles: ["price-and-payment-setup","membership-fee-setup","automatic-payment-reminders","session-payment-adjustments"]
 ---
 <!-- REVIEW: add all types of prepaid payment frequencies -->
 # Payment templates creation
@@ -123,6 +124,26 @@ Note: If you have changed template settings, these will not automatically be tra
 - Then *Save* the changes. Alternatively, you also have the option of using the *Delete* template
 
 These payment templates created can then be used and inserted into your new or existing programmes/classes.
+
+## Parents are not offered the payment option you set up
+
+Two things decide whether a template appears on the booking form, and it is almost always
+one of them. Check in this order before looking any further:
+
+1. **Is the template activated for this programme — and does the class have it?**
+   Activating a template lists it against the programmes it applies to, and a class
+   created before that has to pick it up. If the class was set up first, activate the
+   template and then **Sync settings** so existing programmes and classes take the change.
+2. **Is it the right kind of template for how the programme collects money?** A programme
+   charging a **course fee** needs a prepaid-style template; one running on **membership**
+   needs a membership template. The two are not interchangeable, and a template of the
+   wrong kind simply never appears — nothing warns you.
+
+Only then check that the template's visibility includes **Clients** — a template visible
+to instructors alone will not show on the booking form either.
+
+If all three are right and it is still missing, send support the class and the template
+you expect to see, rather than the booking form; those two are what we look at.
 
 ## Insert payment templates into a programme/class
 

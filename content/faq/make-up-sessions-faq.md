@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-09-13"
+related_articles: ["matko-replacement-diagnostic","cancellation-log","replacement-hours-complete","capacity-and-extra-capacity"]
 ---
 
 # Make-up Sessions FAQ
@@ -196,9 +197,20 @@ In almost every case this is a settings issue, not a bug. The fastest way to dia
 
 **Settings → Tools → MATKO** runs all 19 eligibility checks at once and tells you exactly which condition is failing — attendance state, capacity, timing, programme scope, or display limit. It is the most reliable first step when a specific session is not visible.
 
-You need:
+**Start from the credit, not from Settings.** Open the client's registration, go to the
+**Credits** tab, find the credit in question and click **Diagnose eligibility**. That opens
+MATKO with the credit already filled in, so the only thing left to choose is the session
+you want to test — no IDs to copy.
+
+The long way round, if you prefer it or you are starting from a session:
+
 - The **Credit ID** — found in the client's registration → Credits tab
 - The **Session ID** — found using the session picker on the MATKO page, or in the session URL
+
+Then pick the date the parent is trying to book and MATKO says which of the 19 checks
+fails. **Run it before assuming a bug.** It is nearly always a make-up setting, and the
+diagnostic names which one — that is faster than any checklist, and it is what support
+will ask you to do anyway.
 
 See [MATKO — Diagnose why a make-up session is not showing](../troubleshooting/matko-replacement-diagnostic.md) for the full guide.
 
@@ -285,6 +297,16 @@ by hand — an admin can add a credit on the booking.
 > Check the cancellation log before assuming something is broken. Every cancellation
 > records why a credit was or was not granted, and `is_replacement` as the reason
 > means exactly this. See [Understanding the cancellation log](../troubleshooting/cancellation-log.md).
+
+> **From your side it can look as though the make-up never existed.** The parent
+> cancelled, took a make-up, then clicked **Sign back up for this session** — and that
+> last click quietly cancelled the make-up. What you are left looking at is a client with
+> no credit, no replacement booking and a confirmation email in their inbox for a session
+> they are not on.
+>
+> Nothing has gone wrong. Check the original session's attendance to see whether they
+> actually turned up to it, and the cancellation log for the sequence. See
+> [Understanding the cancellation log](../troubleshooting/cancellation-log.md).
 
 ## Where is the make-up session waiting list?
 

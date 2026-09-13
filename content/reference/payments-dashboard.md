@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-09-13"
+related_articles: ["payment-pairing","inbound-payments","outstanding-amount","reports-dashboard"]
 ---
 
 # Payments
@@ -50,6 +51,18 @@ A donut chart shows the split between received payments (green) and remaining am
 | `Remains to be paid` | Difference between total revenue and received payments. |
 | `Estimated income at 100% occupancy` | Capacity of all active classes in the billing period. |
 | `Current occupancy` | Percentage of bookings in "Enrolled" status vs. total capacity. |
+
+> **Why the figures do not match a hand count.** Two rules decide what the chart sees, and
+> both of them exclude things you can see elsewhere in the app:
+>
+> - Only bookings in **Enrolled** or **Guest** status are counted at all. Cancelled
+>   bookings never appear.
+> - Bookings in **Awaiting payment** are left out of the unpaid figures — the money is due
+>   but not yet overdue, so it is not counted as owed.
+>
+> That is why clicking the red segment can show a total that does not line up with the
+> number of unpaid bookings listed beside it. To see the ones the chart is leaving out,
+> filter the bookings list by **Awaiting payment**.
 
 ### Reports
 

@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-09-13"
 ---
 
 # Payments and Billing FAQ
@@ -279,6 +279,24 @@ Zooza does not have a dedicated **credit note** or **debit note** button. What i
 | **Abra Flexi** | Edit or delete in Abra Flexi | Supported in Abra Flexi | Supported in Abra Flexi |
 | **Smartbill** | Edit or delete in Smartbill | Supported in Smartbill | Supported in Smartbill |
 | **Számlázz** | Cannot modify — issue a cancellation (storno) invoice and reissue a new one | Storno invoice in Számlázz | Not applicable — issue a new invoice |
+
+### The client cancelled and wants their money back — in what order?
+
+A refund usually needs three separate things doing, and only one of them happens in Zooza.
+
+1. **The credit note is raised outside Zooza** and sent to the client, per the table above.
+2. **Record the refund on the booking in Zooza.** For anything not taken through a payment
+   gateway this is an administrative entry only — **no money moves**. Put a note on it
+   saying you sent the money back by hand, so the next person reading the booking knows
+   the transfer already happened.
+3. **Then cancel the booking.** That frees the seat and stops the automatic emails — the
+   reminders and notifications that would otherwise keep arriving for a client who has
+   left. A cancelled booking still exists and can be reactivated.
+
+> **Cancel rather than delete.** Deleting takes the payment history with it out of your
+> reports, and that history is the record of a refund you have just issued. Deleting is
+> for bookings created in error or duplicated — never for one that carried money. See
+> [What does "Cancelled" mean — and is it the same as deleted?](registration-status-faq.md#what-does-cancelled-mean--and-is-it-the-same-as-deleted).
 
 > **Important:** Changes made to invoices in external systems (Xero, Abra Flexi, Smartbill, Fakturoid, Oblio) do **not sync back to Zooza automatically**. Use the manual refresh button on the invoice in Zooza to pull the latest state. Zooza always keeps the original invoice reference it generated.
 
