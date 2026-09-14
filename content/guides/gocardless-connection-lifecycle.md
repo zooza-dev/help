@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-02-13"
+last_converted: "2026-09-14"
 ---
 
 # GoCardless Connection Lifecycle
@@ -71,7 +71,7 @@ Zooza does not display the exact expiry date of your GoCardless connection. To c
 
 ### Option A: Renew from Zooza
 
-1. Go to **Settings -> Billing profiles**.
+1. Go to **Settings → Billing & Payments → Invoice profiles**.
 2. Open your default billing profile.
 3. Click the logo of your bank to start the GoCardless authorization flow.
 4. You will be redirected to your internet banking.
@@ -130,7 +130,7 @@ If you want to avoid the 90-day renewal cycle, you can switch from GoCardless to
 ### How to switch
 
 1. **Remove the GoCardless connection** in your internet banking. This prevents duplicate transactions once both methods are active.
-2. Go to **Settings -> Billing profiles** in Zooza. Find the notification email address associated with your IBAN. The address is constructed from your IBAN (for example, if your IBAN is `SK1234567890123456`, the format is shown in your billing profile settings).
+2. Go to **Settings → Billing & Payments → Invoice profiles** in Zooza. Find the notification email address associated with your IBAN. The address is constructed from your IBAN (for example, if your IBAN is `SK1234567890123456`, the format is shown in your billing profile settings).
 3. **Set up email notifications** in your internet banking. Configure your bank to send incoming payment notifications to the Zooza-generated email address.
 4. **Monitor the first payment** to confirm transactions arrive in Zooza correctly.
 

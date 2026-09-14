@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-09-14"
 related_articles: ["payment-pairing","inbound-payments","email-payment-notifications","inbound-payments-setup"]
 ---
 
@@ -20,7 +20,7 @@ A client has paid but the payment hasn't appeared in Zooza. Before contacting su
 
 ## Step 1: Identify your matching method
 
-Go to **Settings → Billing profiles** and check which method is active for the relevant billing profile:
+Go to **Settings → Billing & Payments → Invoice profiles** and check which method is active for the relevant billing profile:
 
 - **GoCardless** — Zooza collects payments via direct debit; GoCardless notifies Zooza automatically.
 - **Email notification matching** — your bank emails a transaction notification to a unique Zooza address; Zooza parses it and matches the payment.
@@ -37,7 +37,7 @@ Log in to your internet banking and go to **Third-party apps**, **Connected serv
 
 ### 2. Check the GoCardless connection in Zooza
 
-Go to **Settings → Billing profiles** and check the GoCardless status for the relevant profile. If it shows an error or disconnected state, reconnect the integration.
+Go to **Settings → Billing & Payments → Invoice profiles** and check the GoCardless status for the relevant profile. If it shows an error or disconnected state, reconnect the integration.
 
 ### 3. Check the client's mandate status
 
@@ -65,7 +65,7 @@ Payments typically take **2–5 business days** to reach **Paid out** status. If
 
 ### 1. Verify the Zooza email address in your bank
 
-Go to **Settings → Billing profiles** and copy the Zooza-generated notification email address for the relevant profile. Then log in to your internet banking and find the payment notification rule. Confirm the destination address **exactly matches** the Zooza address — a single character difference means Zooza never receives the email.
+Go to **Settings → Billing & Payments → Invoice profiles** and copy the Zooza-generated notification email address for the relevant profile. Then log in to your internet banking and find the payment notification rule. Confirm the destination address **exactly matches** the Zooza address — a single character difference means Zooza never receives the email.
 
 > **Fio bank, if your payments stopped arriving over the summer of 2026.** Fio changed
 > the format of its payment notification emails, which interrupted automatic matching
@@ -99,7 +99,7 @@ If your copy of the notification doesn't arrive either, the bank is not sending 
 
 These apply regardless of which matching method you use:
 
-- **Bank account** — confirm in **Settings → Billing profiles** that the IBAN shown matches the account the client paid into. If the client paid into a different account, Zooza won't see the payment.
+- **Bank account** — confirm in **Settings → Billing & Payments → Invoice profiles** that the IBAN shown matches the account the client paid into. If the client paid into a different account, Zooza won't see the payment.
 - **Client profile** — check the client doesn't have a duplicate profile. The payment may have matched to a different profile.
 - **View filters** — check whether a date range or programme filter in the Payments view is hiding the payment from your current view.
 

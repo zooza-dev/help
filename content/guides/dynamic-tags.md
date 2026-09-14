@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0005_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-13"
+last_converted: "2026-09-14"
 related_articles: ["message-templates", "edit-session-notification-template", "sending-email-sms"]
 ---
 
@@ -312,7 +312,7 @@ actually reads.
 
 `*|QR_CODE|*` requires both **IBAN** and **SWIFT/BIC** to be set on the billing profile. Without these, the tag silently returns blank — the QR image is not rendered.
 
-**Fix:** Go to **Settings → Billing profiles**, open your active profile, and confirm that IBAN and SWIFT/BIC are filled in. If you use per-programme billing settings, check the programme's **Payment** tile as well.
+**Fix:** Go to **Settings → Billing & Payments → Invoice profiles**, open your active profile, and confirm that IBAN and SWIFT/BIC are filled in. If you use per-programme billing settings, check the programme's **Payment** tile as well.
 
 > QR codes are currently available for SK, CZ, and other SEPA markets. If your account is based outside these markets, the `*|QR_CODE|*` tag may not generate a QR image regardless of the settings.
 

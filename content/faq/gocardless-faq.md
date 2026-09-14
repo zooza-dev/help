@@ -12,7 +12,7 @@ related_articles: ["gocardless-direct-debit-mandates", "offline-charge-manual-pu
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-04"
+last_converted: "2026-09-14"
 ---
 
 # GoCardless Integration FAQ
@@ -35,7 +35,7 @@ GoCardless is a third-party service that connects your bank account to Zooza. On
 
 To set it up:
 
-1. Go to **Settings → Billing profiles**.
+1. Go to **Settings → Billing & Payments → Invoice profiles**.
 2. Open your default billing profile.
 3. Click the logo of your bank to initiate the GoCardless connection.
 4. You will be redirected to your internet banking, where you authorize GoCardless to access your account.
@@ -56,7 +56,7 @@ You will receive an email notification from Zooza before your connection expires
 
 Alternatively, you can initiate the reconnection from Zooza:
 
-1. Go to **Settings → Billing profiles**.
+1. Go to **Settings → Billing & Payments → Invoice profiles**.
 2. Open your default billing profile.
 3. Click your bank logo to start the authorization flow again.
 
@@ -204,7 +204,7 @@ If a bank transaction arrived in your account but is not showing in the Zooza ma
 2. **Already matched.** The transaction may have been automatically matched to another booking. Search for the variable symbol in **Bookings** to confirm.
 3. **No matching debt.** Zooza only shows transactions that have a corresponding open debt. If the client paid before a scheduled payment was generated, the transaction will stay unmatched until the debt exists.
 4. **Connection expired.** If your GoCardless connection lapsed, transactions from that period may be missing. After renewing the connection, use **CSV import** to back-fill the missing transactions.
-5. **Wrong bank account.** The transaction may have arrived in a different bank account than the one connected to your Zooza billing profile. Check the IBAN in **Settings → Billing profiles**.
+5. **Wrong bank account.** The transaction may have arrived in a different bank account than the one connected to your Zooza billing profile. Check the IBAN in **Settings → Billing & Payments → Invoice profiles**.
 
 If none of the above explains it, contact Zooza support with the transaction date, amount, and variable symbol.
 

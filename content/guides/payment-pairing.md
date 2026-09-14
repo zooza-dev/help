@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: "legacy/0084_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-13"
+last_converted: "2026-09-14"
 ---
 
 # Payment Pairing for Bank Transfers & Direct Debit
@@ -336,6 +336,6 @@ If GoCardless connections are unreliable for your bank, consider switching to em
 - No 90-day connection renewal required
 - Works with any bank that supports email transaction alerts
 
-**Setup:** Go to **Settings → Payments → Billing profiles** and configure the notification email address. See the [GoCardless lifecycle guide](gocardless-connection-lifecycle.md) for details on switching.
+**Setup:** Go to **Settings → Billing & Payments → Invoice profiles** and configure the notification email address. See the [GoCardless lifecycle guide](gocardless-connection-lifecycle.md) for details on switching.
 
 <!-- REVIEW: Confirm the exact setup steps for email-notification pairing — the legacy documentation link points to a Slovak-only page. -->

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-13"
+last_converted: "2026-09-14"
 related_articles: ["payment-pairing","inbound-payments","outstanding-amount","reports-dashboard"]
 ---
 
@@ -115,9 +115,17 @@ If the "last inbound" counter grows unusually large, check whether your bank's e
 
 ![Screenshot — payments dashboard](../../assets/images/payments-dashboard-01.png)
 
-## Payments Received
+## Transactions (formerly Payments Received)
 
-> **Navigation:** **Sales & Payments** → **Payments received**.
+> **Navigation:** **Sales & Payments → Transactions** — the ledger of money
+> already received, split into **Cash & Transfer**, **Card** and **Direct Debit**
+> tabs, each with its own export. Money still waiting to be matched to a booking
+> is not here; it is in **Payment reconciliation**.
+
+> **This screen was renamed and reorganised in the September 2026 payments
+> restructure.** The description below still reflects the single combined list it
+> used to be, and the screenshot predates the change — both are on the list to be
+> redone. What is under each tab is accurate; where it sits is not.
 
 ![Payments received](../../assets/images/reference/payments-received.png)
 

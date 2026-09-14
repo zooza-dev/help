@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-04-10"
+last_converted: "2026-09-14"
 related_articles: ["awaiting-payment-grace-period", "scheduled-payment-notifications", "payment-tile-on-booking"]
 ---
 
@@ -126,7 +126,7 @@ The pro-ration calculation depends on your billing profile settings:
 - The **registration date**
 - The **pro-ration method** (calendar days or session-based)
 
-To review or adjust how pro-ration is configured, go to **Settings → Billing profiles** and check the **Pro-rated payment** settings for the relevant billing profile.
+To review or adjust how pro-ration is configured, go to **Settings → Billing & Payments → Invoice profiles** and check the **Pro-rated payment** settings for the relevant billing profile.
 
 > If you do not want pro-ration and prefer all clients to pay the full amount regardless of when they register, disable the pro-rated payment option in the billing profile.
 
