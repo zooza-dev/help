@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-13"
+last_converted: "2026-09-15"
 ---
 
 # Payments and Billing FAQ
@@ -26,6 +26,40 @@ Go to **Sales & Payments** → **Invoices**. You can filter by date, search by c
 
 **Zooza subscription invoices** — invoices for your own Zooza subscription (what you pay Zooza):
 Go to **Settings** → **Subscription** → **Manage subscription** → **Details** → **Invoices**. This opens the billing portal where past invoices can be downloaded.
+
+## A client asks for a payment link — what do I send?
+
+**For a booking, the payment link is the link to the client's profile.** There is no
+separate one-off payment URL per instalment. The client opens their profile, sees what is
+outstanding and pays there — and the same link keeps working for the next instalment, so
+you are not issuing a new one every month.
+
+The dynamic tag is <code>&#42;&#124;WIDGET_PROFILE_URL&#124;&#42;</code>. Drop it into any
+email or message template and each recipient gets their own.
+
+> **It signs the holder in.** The link carries a token, so anyone who opens it is inside
+> that client's profile. Send it to the client, not into a group chat, and do not paste
+> one client's link into a template as fixed text — use the tag, which fills in the right
+> link per recipient.
+
+**Products are the exception.** A gift voucher or entry pass sold on its own has its own
+checkout link, copied from the product itself — see
+[Share a course or class registration link](../guides/share-course-link.md#sharing-a-product).
+
+## "Send them an invoice" — do you mean the document, or the money?
+
+Worth separating, because the same sentence covers two different jobs and only one of them
+involves an invoice.
+
+| What you actually want | What to do |
+|---|---|
+| The client should pay what they owe | Send a message with the profile link — see above. Or let the automatic payment reminders do it: [Automatic payment reminders](../guides/automatic-payment-reminders.md). |
+| The client needs the document, for their records or their employer | Generate or resend the invoice — below. |
+
+On an outstanding booking it is nearly always the first. People say "send them an invoice"
+meaning "tell them they owe us and make it easy to pay", and an invoice PDF on its own does
+neither particularly well: it is a record of a charge, not a prompt, and it carries no link
+to pay.
 
 ## How do I resend an invoice to a client?
 

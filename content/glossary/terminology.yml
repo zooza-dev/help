@@ -6,7 +6,7 @@
 # ║  Edit there, then run: python3 scripts/sync_terminology.py      ║
 # ╚══════════════════════════════════════════════════════════════════╝
 #
-# Last synced: 2026-09-13
+# Last synced: 2026-09-15
 # Used by: scripts/normalize_terminology.py → build/terminology/dictionary.json
 #
 # Fields per term:
@@ -2364,6 +2364,13 @@ terms:
       There is no process for deleting an invoice and none is needed. When someone wants
       to "delete invoices to fix the numbering", the answer is to set the next number or
       number series on the invoice profile instead. Confirmed 2026-08-30.
+      "SEND THEM AN INVOICE" IS OFTEN NOT ABOUT AN INVOICE. On an outstanding booking it is
+      usually a synonym for "tell the client they owe us and let them pay" — what the
+      operator wants is a payment reminder carrying the profile link, not a PDF. An invoice
+      records a charge; it neither prompts nor collects. Establish which is meant before
+      walking anybody through invoice generation: the document is the answer when the
+      client needs it for their own records or their employer. See payment-link.
+      Confirmed with the founder 2026-09-15.
     public: true
 
   - id: invoice-engine
@@ -2616,6 +2623,47 @@ terms:
       not exist. Also present and easily missed in a long dropdown: "class is filling up /
       full". Navigation: Settings → Notifications → Add new notification; one email
       address per notification. Confirmed 2026-09-13.
+    public: true
+
+  - id: payment-link
+    canonical_en: "Payment link"
+    category: "payments"
+    definition: >
+      What operators call the thing they send a client so the client can pay. In Zooza,
+      for a booking, that is the client's own profile link — there is no separate
+      per-instalment payment URL. The client opens their profile, sees what is
+      outstanding and pays there, and the same link still works for the next instalment.
+    context:
+      admin: "—"
+      client: "—"
+      widget: "—"
+    synonyms:
+      - "pay link"
+      - "link to pay"
+      - "profile link"
+    translations:
+      sk: "Platobný odkaz / odkaz na úhradu"
+      cz: "Platební odkaz"
+      de: "Zahlungslink"
+      hu: "Fizetési link"
+      ro: "Link de plată"
+    intent_keywords:
+      en: ["payment link", "send a payment link", "link to pay", "where do they pay",
+           "how does the client pay", "send them a link"]
+      sk: ["platobný link", "platobny link", "odkaz na platbu", "poslať link na úhradu",
+           "kde má zaplatiť", "ako mi zaplatí"]
+      cz: ["platební odkaz", "odkaz na platbu", "poslat link na úhradu"]
+    do_not_confuse_with:
+      - term: "Product checkout link"
+        reason: >
+          A product sold on its own — a gift voucher, an entry pass — DOES have its own
+          checkout link, copied from the product itself. The profile-link answer is for
+          money owed on a BOOKING. Establish which one is meant before answering.
+    ai_notes: >
+      The tag is *|WIDGET_PROFILE_URL|* and it belongs in the message template rather than
+      pasted in as fixed text, because it resolves per recipient. It carries a login token,
+      so whoever opens it is inside that client's profile — not a link to share publicly or
+      reuse for a second client. Confirmed with the founder 2026-09-15.
     public: true
 
   - id: payment-reconciliation

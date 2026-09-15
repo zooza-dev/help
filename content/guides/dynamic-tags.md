@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0005_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-14"
+last_converted: "2026-09-15"
 related_articles: ["message-templates", "edit-session-notification-template", "sending-email-sms"]
 ---
 
@@ -85,7 +85,7 @@ Each email sent for a specific booking allows you to dynamically fill in client 
 | <code>&#42;&#124;COURSE_TRAINER&#124;&#42;</code>                   | Instructor's name                                                                          | John Winslow                                          |
 | <code>&#42;&#124;USER_ID&#124;&#42;</code>                          | Client user ID                                                                             | 12345                                                 |
 | <code>&#42;&#124;WIDGET_VIDEO_URL&#124;&#42;</code>                 | URL to view the video                                                                      | `https://www.zooza.sk/video?token=12345`              |
-| <code>&#42;&#124;WIDGET_PROFILE_URL&#124;&#42;</code>               | URL to view profile                                                                        | `https://www.zooza.sk/profil?token=12345`             |
+| <code>&#42;&#124;WIDGET_PROFILE_URL&#124;&#42;</code>               | Direct login link to the client's own profile — **this is the "payment link"** for a booking: the client lands on their profile and pays what is outstanding there. Carries a token, so it signs the holder in. | `https://www.zooza.sk/profil?token=12345` |
 | <code>&#42;&#124;EF_DOB&#124;&#42;</code>                           | Extra field -- date of birth                                                               | 13. 4. 2000                                           |
 | <code>&#42;&#124;EF_IDENTIFICATION_NUMBER&#124;&#42;</code>         | Extra field -- identification number (birth number, national ID, etc.)                     | 900101/1234                                           |
 | <code>&#42;&#124;EF_FULL_NAME&#124;&#42;</code>                     | Extra field -- full name                                                                   | John Winslow                                          |

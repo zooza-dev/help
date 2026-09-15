@@ -283,6 +283,13 @@ Copy the exact address from the **Share** button in the Classes list rather than
 
 ---
 
+### Payment link
+What you send a client so they can pay. For money owed on a booking it is the link to the client's own **profile** — there is no separate payment URL per instalment, and the same link keeps working for the next one. The dynamic tag is `*|WIDGET_PROFILE_URL|*`.
+
+> It signs the holder in, so send it to the client rather than into a group chat — and put the tag in your template rather than pasting one client's link as fixed text.
+
+> Not to be confused with: a **product** sold on its own — a gift voucher or entry pass — which has its own checkout link, copied from the product.
+
 ### Payment collection setup
 Where you tell Zooza how to read money arriving in your bank account — a GoCardless bank connection, or bank email notifications — and which accounts that applies to. This is where automatic pairing is switched on. Found at **Settings → Billing & Payments → Payment collection setup**.
 
