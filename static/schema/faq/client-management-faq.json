@@ -187,6 +187,14 @@
         "@type": "Answer",
         "text": "Zooza does not support bulk-attaching a personalised document to individual registrations. However, you can add a general document (PDF, certificate, any file format) at the programme or class level — this makes it visible to all clients in that programme or class through their Client Profile.\n\nTo add a document at the programme or class level:\n1. Go to Documents in the left menu.\n2. Click Add New and upload the file (PDF, image, etc.).\n3. Assign the document to the programme or class in the document settings.\n4. All clients enrolled in that programme or class will see it in their profile.\n\nFor personalised certificates that contain client-specific data (name, date, etc.), use Dynamic Documents — these are template-based documents that auto-fill client data. Dynamic documents are also assigned at programme or class level, not per individual registration.\n\nNote: Attaching a document directly to a single booking (at the booking level) must be done one at a time. There is no bulk action for booking-level document attachment.\n\nSee Documents for the full setup guide."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Someone enquired through my website -- where is it, and how do I make them a client?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enquiries from the Zooza contact form are not clients. They are contacts, under Clients → Contacts, with the page and campaign they came from, an owner, a status and a timeline. When the person is ready to join, open the contact and click Convert to client. Zooza creates the client from the contact's details and you book them as usual. If the enquiry came from someone who is already your client, the contact is linked to them automatically. See Work with contacts and enquiries."
+      }
     }
   ]
 }

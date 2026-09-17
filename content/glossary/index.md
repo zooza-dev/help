@@ -6,7 +6,7 @@ product_area: "Settings"
 audience: ["admin", "client"]
 tags: ["glossary", "terminology", "definitions"]
 status: "published"
-last_converted: "2026-09-04"
+last_converted: "2026-09-17"
 ---
 
 # Zooza Glossary
@@ -78,6 +78,19 @@ The person who holds the account, pays, and manages bookings. Identified by emai
 ### Client Profile
 The self-service dashboard where clients manage their bookings, payments, and family members. Accessed via email link — no password required.
 
+### Contact
+A person who enquired through the contact form on your website, or was added by hand under **Clients → Contacts**. A contact is not a client: it has no login and no booking and never appears in the Clients list. One contact holds one or more [enquiries](#enquiry), a status (New, In progress, Lost, Converted), an owner, labels, notes and to-dos. Convert a contact to create the client. See [Work with contacts and enquiries](../guides/working-with-contacts.md).
+
+> Also called: *lead*. Not the same as a [Lead Collection](#lead-collection) class.
+
+### Contact form
+The Zooza widget that replaces the contact form on your website. Its **configuration** in **Team & Settings → General → Contact forms** decides the fields, consents, success message and handling of each enquiry. Every company has a default configuration. See [Contact form (lead capture)](../guides/contact-form-lead-capture.md).
+
+> Also called: *lead capture*, *lead form*.
+
+### Custom contact field
+Your own question on the contact form, defined once in **Team & Settings → General → Custom contact fields** and reused on any form. Seven types, from short text to multiple choice. Answers are filterable in the Contacts list. Not the same as the additional fields on the booking form.
+
 ### Copy
 Duplicate a booking to a different Class, Class, or Programme. The original booking remains unchanged. A new booking is created in the target Class.
 
@@ -124,6 +137,9 @@ A deposit taken at booking, with the rest collected later. Set per programme.
 ### Enrolment
 **Client view:** A client's registration for a Class. The same record as a [Booking](#booking) — "Enrolment" is the term used in the client portal and booking widget.
 **Admin view:** See [Booking](#booking).
+
+### Enquiry
+One sending of the contact form, or one manual entry. An enquiry records the answers, the page and campaign it came from and the consents given, and never changes afterwards. A [contact](#contact) can have several enquiries; a repeat enquiry from the same email address is added to the existing contact.
 
 ### Entry pass
 A prepaid bundle granting access to a set number of sessions (visits-based) or a credit amount (money-based). Used with Pay-as-you-go programmes.

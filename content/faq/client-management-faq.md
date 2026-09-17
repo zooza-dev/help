@@ -7,12 +7,12 @@ product_area: "Clients"
 sub_area: ""
 audience: ["admin"]
 tags: ["clients", "data-correction", "merge", "email"]
-related_articles: ["client-profile-101", "remove-client-or-user", "subscription-faq"]
+related_articles: ["client-profile-101", "remove-client-or-user", "subscription-faq", "working-with-contacts"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-05"
+last_converted: "2026-09-17"
 ---
 
 
@@ -287,8 +287,13 @@ For **personalised certificates** that contain client-specific data (name, date,
 
 See [Documents](../guides/documents.md) for the full setup guide.
 
+## Someone enquired through my website -- where is it, and how do I make them a client?
+
+Enquiries from the Zooza contact form are not clients. They are **contacts**, under **Clients → Contacts**, with the page and campaign they came from, an owner, a status and a timeline. When the person is ready to join, open the contact and click **Convert to client**. Zooza creates the client from the contact's details and you book them as usual. If the enquiry came from someone who is already your client, the contact is linked to them automatically. See [Work with contacts and enquiries](../guides/working-with-contacts.md).
+
 ## Related
 
+- [Work with contacts and enquiries](../guides/working-with-contacts.md) — enquiries from the contact form, and converting them into clients
 - [Remove a client or user](../guides/remove-client-or-user.md) — steps to deactivate or delete a client record
 - [Client profile 101](../guides/client-profile-101.md) — reading and using the client profile
 - [Client profile dashboard](../guides/client-profile-101.md) — overview of the client-facing profile

@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: "legacy/html/labels-and-extra-fields.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-09-17"
+related_articles: ["working-with-contacts", "contact-form-setup", "settings-hub"]
 ---
 
 
@@ -72,6 +73,13 @@ Programme labels appear in the **Programmes** list and can be used as a filter t
 
 Booking labels are visible in the **Bookings** list and can be used to filter bookings.
 ![Screenshot — labels](../../assets/images/labels-03.png)
+
+### Contact labels
+
+1. Open a contact under **Clients → Contacts**.
+2. In the **Label** card, create or choose a tag.
+
+A contact form configuration can also add labels to every new contact it receives. Contact labels are a filter in the **Contacts** list. See [Work with contacts and enquiries](working-with-contacts.md).
 
 ## Public labels (widget filtering)
 

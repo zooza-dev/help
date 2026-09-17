@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-09-17"
+related_articles: ["custom-holidays", "shared-sessions", "contact-form-setup", "custom-contact-fields", "setting-gtc-gdpr-consents", "labels", "notifications-center"]
 ---
 
 # Settings
@@ -40,6 +41,8 @@ The Settings screen is the central configuration hub for your Zooza account. It 
 | **Zooza Sites** | Manage Zooza Sites (micro-sites). |
 | **Custom Holidays** | Create and manage company-specific holiday periods used for session scheduling and cancellation rules. See [Custom holidays](../guides/custom-holidays.md). |
 | **Metadata keys** | Define custom key/value pairs that can be attached to programmes and surfaced to the booking widget. |
+| **Custom contact fields** | Your own questions for people who enquire through the contact form on your website, reusable on any contact form. See [Custom contact fields](../setup/custom-contact-fields.md). |
+| **Contact forms** | What the contact form on your website asks, which consents it shows, and what happens with each enquiry. Every company has a default configuration. See [Set up a contact form](../setup/contact-form-setup.md). |
 | **Shared sessions** *(beta)* | Combine classes that run in the same room at the same time so the room's real capacity is respected. See [Shared sessions](../guides/shared-sessions.md). |
 
 ## Tools

@@ -11,7 +11,8 @@ status: published
 source_legacy_path: legacy/0078_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: "2026-09-05"
+last_converted: "2026-09-17"
+related_articles: ["publish-widgets", "deploying-zooza-on-website", "booking-form-settings", "contact-form-on-your-website", "contact-form-campaign-tracking"]
 ---
 
 # Customizing widgets
@@ -339,6 +340,10 @@ The events and how to subscribe to them are in the developer documentation:
 Hand that link to whoever maintains your site — it is a job for the same person who
 put the base pixel in.
 
+The contact form widget does the same for enquiries: `zooza_event_contact_form_submitted`
+is the event to count as a lead conversion. See [Track campaigns and conversions from the
+contact form](contact-form-campaign-tracking.md).
+
 ## Changing the wording in a widget
 
 The texts inside the booking form and the client profile can be overridden from your
@@ -366,6 +371,8 @@ window.ZOOZA = {
 
 The full key list is in the developer documentation:
 [docs.zooza.online/widgets/profile-widget/#translations](https://docs.zooza.online/widgets/profile-widget/#translations).
+The contact form has its own keys, such as `contact.submit` for the Send button; they are listed at
+[docs.zooza.online/widgets/contact-widget/#translations](https://docs.zooza.online/widgets/contact-widget/#translations).
 
 > This is the practical answer to "can we call it something else?" — relabelling
 > *Full* as *Full — join the waiting list*, or renaming a field to match the words

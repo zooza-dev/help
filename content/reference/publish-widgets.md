@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-08-30"
-related_articles: ["customizing-widgets", "widget-merge-rooms", "deploying-zooza-on-website"]
+last_converted: "2026-09-17"
+related_articles: ["customizing-widgets", "widget-merge-rooms", "deploying-zooza-on-website", "contact-form-on-your-website"]
 ---
 
 # Publish (Widgets)
@@ -75,7 +75,7 @@ For the Embed option, the detail shows:
 
 #### Embed Code
 
-Tabs for each widget type: **Booking Form**, **Calendar / Schedule**, **Profile**, **View Videos**, **Sales Form**, **Map**.
+Tabs for each widget type: **Booking Form**, **Calendar / Schedule**, **Profile**, **View Videos**, **Sales Form**, **Map**, **Contact form**.
 
 Each tab displays the embed script code with a **Copy** button.
 
@@ -106,8 +106,22 @@ Available widget types:
 | **View videos** | Displays videos attached in programmes for enrolled clients. |
 | **Sales form** | Used to sell products and services (t-shirts, videos, e-books, accommodation, insurance) to clients. Can be linked to the booking form and client profile. |
 | **Map** | Displays all locations on a map and offers available timetables for online booking. |
+| **Contact form** | A contact form for your website. Every enquiry becomes a contact under **Clients → Contacts**. See [Put the contact form on your website](../setup/contact-form-on-your-website.md). |
 
 Each widget type has a **Configure** button to open its settings.
+
+### Contact form settings
+
+Open via **Contact form → Configure**.
+
+| Field | Description |
+|---|---|
+| `URL` | The page where the contact form is placed. Its domain is allowed automatically. |
+| `Contact form configuration` | Which configuration from **Settings → Contact forms** this widget shows. **Company default** shows your default configuration. A configuration named in the embed code takes precedence. |
+| `Additional domains` | Other websites where the form may load, entered as bare domains such as `example.com`. Subdomains are covered automatically. |
+| `Use CSS` | Loads Zooza's minimal default styling, which your website's CSS overrides. |
+
+The **Contact form** embed tab offers **Body only** and **Head + body** placements. There is no legacy script snippet and no WordPress shortcode for this widget; on WordPress, paste the code into a Custom HTML block. One contact form per page.
 
 ### Registration Form Settings
 

@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: "legacy/0007_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-14"
-related_articles: ["dynamic-tags", "edit-session-notification-template", "sending-email-sms", "email-communication-faq", "automatic-payment-reminders-detailed"]
+last_converted: "2026-09-17"
+related_articles: ["dynamic-tags", "edit-session-notification-template", "sending-email-sms", "email-communication-faq", "automatic-payment-reminders-detailed", "contact-form-setup"]
 ---
 
 # Automatic communication to clients / Message templates
@@ -121,6 +121,16 @@ From this point on, every booking made for that programme will use your custom v
 - If no variant is assigned at programme level, Zooza uses the **default system template** for that template type.
 - You can assign different variants to different programmes — useful if you run camps, regular classes, and one-off events with different confirmation styles.
 - Template variants are shared across your account. Any admin can edit them.
+
+## Contact form automatic reply
+
+The template **Contact form - automatic reply** is sent to a person who sends the [contact form](contact-form-lead-capture.md) on your website, when the form configuration has **Send an automatic reply** switched on. It is sent in the language the form was shown in, and at most once per 24 hours to the same contact.
+
+It works like the other templates: edit the standard one, or click **Make a copy** to create a variant and select it in the form configuration under **Automatic reply template**. Two dynamic tags are specific to it: `*|CONTACT_FIRST_NAME|*` and `*|FORM_NAME|*`. The visitor's message and other answers are deliberately not available as tags, so the reply cannot be used to bounce spam to other people.
+
+The default text reads: *Hello [first name], thank you for getting in touch. We have received your message and will get back to you as soon as possible.*
+
+See [Set up a contact form](../setup/contact-form-setup.md#handling-owner-labels-notifications-to-do-and-automatic-reply).
 
 ## Who can create and edit templates — roles and permissions
 

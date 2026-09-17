@@ -8,16 +8,18 @@ sub_area: ""
 audience: ["admin"]
 tags: ["lead collection", "interested", "seasonal", "venue", "email template"]
 status: "published"
-related_articles: ["locations-and-venues-faq", "individual-sessions-lead-collection"]
+related_articles: ["locations-and-venues-faq", "individual-sessions-lead-collection", "contact-form-lead-capture"]
 source_legacy_path: "legacy/0036_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-15"
+last_converted: "2026-09-17"
 ---
 
 # Lead collection
 
 A lead collection class is a class without sessions. Use it to collect interest from clients before you have a schedule ready. For example, you want to launch a new programme but only if enough people are interested.
+
+> **Not the same as the contact form.** A lead collection class creates a **booking** inside an existing programme. If you want to collect interest before any programme or class exists, or from a paid campaign, use the [contact form (lead capture)](contact-form-lead-capture.md) instead: it creates a **contact**, which you convert into a client when they are ready.
 
 You set up lead collection at the class level by selecting the **Lead collection** option.
 ![Screenshot — lead collection](../../assets/images/lead-collection-01.png)

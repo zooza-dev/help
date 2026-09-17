@@ -6,7 +6,7 @@
 # ║  Edit there, then run: python3 scripts/sync_terminology.py      ║
 # ╚══════════════════════════════════════════════════════════════════╝
 #
-# Last synced: 2026-09-15
+# Last synced: 2026-09-17
 # Used by: scripts/normalize_terminology.py → build/terminology/dictionary.json
 #
 # Fields per term:
@@ -2029,6 +2029,11 @@ terms:
           A waiting list means a class exists and is at full capacity — clients wait for
           a spot to open. A Lead Collection class has no sessions yet — clients register
           interest before any schedule exists.
+      - term: "Contact form"
+        reason: >
+          The contact form (lead capture) is a website widget that creates a contact,
+          not a booking, and needs no programme or class. Lead Collection is a class
+          without sessions inside an existing programme; registering creates a booking.
       - term: "Pay-as-you-go"
         reason: >
           Pay-as-you-go is a pricing model (clients pay per session). Lead Collection
@@ -2835,6 +2840,209 @@ terms:
       operating system — that was true until the picker shipped at the end of August
       2026. "System" is the default and is what makes the app follow the OS.
       Confirmed against production 2026-09-04.
+    public: true
+
+  # ──────────────────────────────────────────────
+  # LEAD CAPTURE — CONTACT FORM AND CONTACTS (shipped 2026-09-17)
+  # ──────────────────────────────────────────────
+
+  - id: contact
+    canonical_en: "Contact"
+    category: "clients"
+    definition: >
+      A person who enquired through the contact form on the company's website, or was
+      added by hand under Clients → Contacts. A contact is not a client: it has no login,
+      no booking and never appears in the Clients list. It holds one or more enquiries,
+      a status (New, In progress, Lost, Converted), an owner, labels, notes and to-dos.
+      Converting a contact creates the client.
+    context:
+      admin: "Contact"
+      client: "—"
+      widget: "—"
+    synonyms:
+      - "lead"
+      - "prospect"
+    translations:
+      sk: "Kontakt"
+      cz: "Kontakt"
+      de: "Kontakt"
+      hu: "Kapcsolat"
+      ro: "Contact"
+      pl: "Kontakt"
+    intent_keywords:
+      en: ["contact", "contacts", "lead", "leads", "enquiry", "enquiries", "inquiry",
+           "website enquiry", "someone enquired", "convert to client", "contacts list",
+           "lead capture", "crm"]
+      sk: ["kontakt", "kontakty", "lead", "leady", "dopyt", "dopyty", "záujemca",
+           "záujemcovia", "niekto napísal cez web", "previesť na klienta", "zber leadov"]
+      cz: ["kontakt", "kontakty", "lead", "leady", "poptávka", "poptávky", "zájemce",
+           "převést na klienta", "sběr leadů"]
+      hu: ["kapcsolat", "érdeklődő", "érdeklődés", "lead", "ügyféllé alakítás"]
+      ro: ["contact", "contacte", "lead", "solicitare", "cerere", "convertire în client"]
+    do_not_confuse_with:
+      - term: "Client"
+        reason: >
+          A client has a booking or a client account and appears in the Clients list.
+          A contact only enquired. Convert to client creates the client from the contact.
+      - term: "Lead Collection"
+        reason: >
+          Lead Collection is a class without sessions; registering for it creates a
+          booking inside an existing programme. A contact comes from the contact form
+          and needs no programme or class at all.
+    ai_notes: >
+      Navigation: Clients → Contacts (list, filters, Spam review, Add contact);
+      Clients → Contacts → contact (detail, status/owner, labels, to-dos, timeline,
+      Link to client, Convert to client, Erase contact). Contacts are matched by email
+      (case-insensitive); a repeat enquiry is added to the same contact and never
+      overwrites existing details. A contact whose email belongs to an existing client
+      of the company is linked automatically ("Existing client"). Converting sends no
+      email. Erase is a permanent GDPR deletion. No CSV export and no bulk actions yet.
+      See: content/guides/working-with-contacts.md
+    public: true
+
+  - id: contact-form
+    canonical_en: "Contact form"
+    category: "widgets"
+    definition: >
+      The Zooza widget that replaces the contact form on a company's website. Every
+      enquiry sent through it becomes a contact, with the page, referrer and campaign
+      parameters it came from, custom field answers and the consents given. What the
+      form asks is set in a contact form configuration (Settings → Contact forms);
+      where it appears is set on the widget (Publish → Widget → Contact form).
+      Every company has one default configuration that cannot be archived.
+    context:
+      admin: "Contact form"
+      client: "Contact form"
+      widget: "Contact form"
+    synonyms:
+      - "lead capture"
+      - "lead form"
+      - "lead capture form"
+      - "contact widget"
+      - "enquiry form"
+    translations:
+      sk: "Kontaktný formulár"
+      cz: "Kontaktní formulář"
+      de: "Kontaktformular"
+      hu: "Kapcsolatfelvételi űrlap"
+      ro: "Formular de contact"
+      pl: "Formularz kontaktowy"
+    intent_keywords:
+      en: ["contact form", "lead capture", "lead form", "lead widget", "enquiry form",
+           "contact us form", "contact widget", "form on my website", "embed contact form",
+           "collect leads", "capture leads", "meta campaign leads", "landing page form"]
+      sk: ["kontaktný formulár", "kontaktny formular", "lead formulár", "lead capture",
+           "zber leadov", "zber kontaktov", "formulár na web", "formulár záujem",
+           "dopytový formulár", "kampaň leady", "meta kampaň formulár"]
+      cz: ["kontaktní formulář", "lead formulář", "sběr leadů", "sběr kontaktů",
+           "poptávkový formulář", "formulář na web"]
+      hu: ["kapcsolatfelvételi űrlap", "érdeklődő űrlap", "lead űrlap", "lead gyűjtés"]
+      ro: ["formular de contact", "formular lead", "colectare lead-uri", "formular pe site"]
+    do_not_confuse_with:
+      - term: "Booking form"
+        reason: >
+          The booking form creates a booking in a programme and asks for everything a
+          booking needs. The contact form creates a contact and can ask for as little as
+          a name and an email or phone.
+      - term: "Lead Collection"
+        reason: >
+          Lead Collection is a programme/class state (a class without sessions). The
+          contact form is a widget that needs no programme.
+      - term: "Additional fields"
+        reason: >
+          Additional fields are extra questions on the booking form, per programme.
+          The contact form uses custom contact fields, a company-wide registry.
+    ai_notes: >
+      Setup: Settings → General → Contact forms (configuration: standard fields with
+      enabled/required, custom and hidden fields, consents per configuration, visitor
+      tracking / first touch, after submit message or redirect, handling: owner, labels,
+      also-notify emails, to-do, automatic reply; "Form on your website" liveness).
+      Embed: Publish → widget → Contact form → Configure (URL, configuration, additional
+      domains, Use CSS); embed code body-only or head+body; one contact form per page;
+      no WordPress shortcode (Custom HTML block); loads only on allowed domains.
+      Email or phone must be enabled and required. Spam protection is invisible
+      (no CAPTCHA); spam goes to Clients → Contacts → Spam for 30 days. Analytics events:
+      zooza_event_contact_form_view / _submit_start / _submitted (the lead conversion).
+      Meta Lead Ads sync is NOT part of this (as of 2026-09-17).
+      See: content/guides/contact-form-lead-capture.md, content/setup/contact-form-setup.md,
+      content/setup/contact-form-on-your-website.md, content/guides/contact-form-campaign-tracking.md
+    public: true
+
+  - id: enquiry
+    canonical_en: "Enquiry"
+    category: "clients"
+    definition: >
+      One sending of the contact form, or one manual entry, on a contact. An enquiry
+      records the answers, the page and campaign it came from and the consents given,
+      and never changes afterwards. A contact can have several enquiries.
+    context:
+      admin: "Enquiry"
+      client: "Message"
+      widget: "—"
+    synonyms:
+      - "submission"
+      - "inquiry"
+    translations:
+      sk: "Dopyt"
+      cz: "Poptávka"
+      de: "Anfrage"
+      hu: "Érdeklődés"
+      ro: "Solicitare"
+      pl: "Zapytanie"
+    intent_keywords:
+      en: ["enquiry", "inquiry", "submission", "new enquiry", "form submission",
+           "someone sent the form", "enquiry received"]
+      sk: ["dopyt", "nový dopyt", "odoslanie formulára", "niekto poslal formulár", "správa z webu"]
+      cz: ["poptávka", "nová poptávka", "odeslání formuláře", "zpráva z webu"]
+      hu: ["érdeklődés", "új érdeklődés", "űrlap beküldés"]
+      ro: ["solicitare", "solicitare nouă", "trimitere formular"]
+    ai_notes: >
+      Shown on the contact's timeline as "Enquiry received". Staff get the
+      "New contact enquiry" notification (Notification center) plus the form's
+      Also notify addresses; Reply-To is the enquirer. A spam-flagged enquiry never
+      becomes a contact and sends nothing.
+    public: true
+
+  - id: custom-contact-field
+    canonical_en: "Custom contact field"
+    category: "settings"
+    definition: >
+      A company-defined question for people who enquire through the contact form,
+      created once in Settings → General → Custom contact fields and reusable on any
+      contact form. Seven types: short text, long text, number, date, yes/no, single
+      choice, multiple choice. Key and type are fixed after creation; fields are
+      archived, never deleted, so earlier answers keep their meaning. Answers are
+      filterable in the Contacts list.
+    context:
+      admin: "Custom contact field"
+      client: "—"
+      widget: "—"
+    synonyms:
+      - "contact field"
+      - "custom field (contacts)"
+    translations:
+      sk: "Vlastné pole kontaktu"
+      cz: "Vlastní pole kontaktu"
+      de: "Benutzerdefiniertes Kontaktfeld"
+      hu: "Egyéni kapcsolati mező"
+      ro: "Câmp de contact personalizat"
+    intent_keywords:
+      en: ["custom contact field", "contact field", "own question on contact form",
+           "add question to contact form", "hidden field", "filter contacts by answer"]
+      sk: ["vlastné pole kontaktu", "vlastná otázka vo formulári", "pridať otázku do kontaktného formulára",
+           "skryté pole", "filtrovať kontakty podľa odpovede"]
+      cz: ["vlastní pole kontaktu", "vlastní otázka ve formuláři", "skryté pole"]
+      hu: ["egyéni kérdés az űrlapon", "egyéni mező", "rejtett mező"]
+    do_not_confuse_with:
+      - term: "Additional fields"
+        reason: >
+          Additional fields belong to the booking form and are set per programme
+          (up to 5). Custom contact fields belong to contacts and are company-wide.
+    ai_notes: >
+      A custom field can be Hidden on a form and filled automatically from a URL
+      parameter, a cookie, an embed code attribute (data-zooza-field-<name>) or a
+      fixed value. Hidden fields are never required.
+      See: content/setup/custom-contact-fields.md
     public: true
 
 # ──────────────────────────────────────────────

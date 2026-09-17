@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: "legacy/0080_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-30"
-related_articles: ["publish-widgets", "customizing-widgets"]
+last_converted: "2026-09-17"
+related_articles: ["publish-widgets", "customizing-widgets", "contact-form-on-your-website"]
 ---
 
 # Deploying Zooza app on your website
@@ -94,6 +94,8 @@ If you collect a lot of additional data in the booking form or use products, you
 
 
 Once you have Zooza successfully integrated on your site, you can customize the individual widgets to suit your needs. Find out what customization options are available and how to set them up in this [guide.](../guides/customizing-widgets.md)
+
+> **The contact form is embedded the same way**, from the **Contact form** tab of the embed code, but it has no WordPress shortcode: on WordPress, paste its code into a Custom HTML block. It also loads only on the domains allowed on the widget. See [Put the contact form on your website](contact-form-on-your-website.md).
 
 ## Integrating widgets on multiple websites through one Zooza account
 

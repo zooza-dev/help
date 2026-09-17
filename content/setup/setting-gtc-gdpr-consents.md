@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: "legacy/0069_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-08-07"
+last_converted: "2026-09-17"
+related_articles: ["consents-and-agreements-faq", "client-consent-overview", "contact-form-setup", "contact-form-campaign-tracking"]
 ---
 
 
@@ -30,7 +31,7 @@ Go to **Settings → Consents & Agreements**.
 The list shows all configured consents. Each card displays:
 
 - The consent name
-- Where it appears (**Booking form** or **Order form**)
+- Where it appears (**Booking form**, **Order form** or **Contact forms**)
 - The consent type (Check box, Yes or No, or automatic)
 - Filter buttons to browse bookings by consent status
 
@@ -89,6 +90,26 @@ Controls which bookings the consent applies to:
 ![Screenshot — programme selector](../../assets/images/setting-gtc-gdpr-consents-04.png)
 
 This is useful when some consents are only relevant for specific programmes — for example, a photo consent for in-person classes but not for webinars, or special T&C for summer camps.
+
+### Consent is intended for
+
+Where the consent is shown: the **Booking form**, the **Order form**, or **Contact forms**. A consent intended for contact forms is offered on the [contact form](../guides/contact-form-lead-capture.md) on your website. It is then switched on per contact form configuration in **Settings → Contact forms**, in the **Consents** card. The visitor's answer is stored on the enquiry and shown on the contact's timeline, not on a booking, so such consents have no **Filter bookings** buttons.
+
+### Category
+
+Each consent carries a category that says what it is about:
+
+| Category | Use it for |
+|---|---|
+| **General** | Anything not covered below. The default for existing consents. |
+| **Terms** | Terms and conditions, house rules, participation conditions, declarations and waivers. |
+| **Privacy** | Personal data processing and GDPR notices. |
+| **Marketing** | Newsletters and other marketing use of the person's contact details. |
+| **Photos & videos** | Photo and video capture and publication. |
+
+Zooza's own consents show the category **System** and cannot be edited. Changing only the category does not create a new consent version.
+
+The category matters most for contact forms: a contact who accepts a consent in the **Marketing** category shows **Marketing consent: Yes** under **Clients → Contacts**, which is how you know who may receive newsletters.
 
 ## Filtering bookings by consent status
 

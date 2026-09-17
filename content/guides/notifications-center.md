@@ -7,12 +7,12 @@ product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
 tags: ["notifications", "communication", "settings", "inbound-reply", "alerts"]
-related_articles: ["email-communication-faq", "sending-email-sms", "settings-hub", "late-bookings"]
+related_articles: ["email-communication-faq", "sending-email-sms", "settings-hub", "late-bookings", "contact-form-setup"]
 status: "published"
 source_legacy_path: "legacy/0073_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-13"
+last_converted: "2026-09-17"
 ---
 
 # Notifications Center
@@ -39,6 +39,7 @@ The Notification Center is used to notify you as an administrator or your collea
 | **New duplicate booking** | The system spots what looks like a duplicate |
 | **Class ends soon notification** | A class is approaching its end date — your cue to open the next term |
 | **Class full notification** | A class reaches its capacity |
+| **New contact enquiry** | Someone sends the contact form on your website. The email carries the enquiry and a link to the contact, and replying to it answers the enquirer directly. See [Set up a contact form](../setup/contact-form-setup.md). |
 
 That is the whole list, in the order the dropdown shows it. The wording follows your interface language.
 

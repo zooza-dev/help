@@ -1,0 +1,168 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Contact form and contacts FAQ",
+  "url": "https://help.zooza.online/clients/contact-form-and-contacts-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between a contact, a client and a lead collection class?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A contact is a person who enquired, through the contact form on your website or added by hand. They have no login and no booking, and they do not appear in the Clients list. A client is someone with a booking or a client account. A lead collection class is a class without sessions inside an existing programme; registering for it creates a booking, not a contact. Use the contact form to collect interest before anything exists, and lead collection when the programme exists and you only lack the timetable. See Contact form (lead capture) and Lead collection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do I find the contact form and the contacts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "- The enquiries: Clients → Contacts.\n- What the form asks: Team & Settings → General → Contact forms.\n- Your own questions: Team & Settings → General → Custom contact fields.\n- The embed code and allowed domains: Team & Settings → Publish, your widget, the Contact form row."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I sent a test enquiry and it is not in Contacts",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check these in order:\n\n1. Clients → Contacts → Spam. Test enquiries sent within three seconds of the page loading, containing several links, or with the same text in every field are treated as spam. Click Not spam to rescue it, and send the next test the way a real person would.\n2. More than five enquiries in an hour from the same email address are dropped without a trace. Wait, or use another address.\n3. Team & Settings → General → Contact forms, the Form on your website card. If it says Blocked domain, the page is not on an allowed website. Click Allow.\n\nThe thank-you message appears in all of these cases, so the form looking fine is not proof the enquiry arrived."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "The form does not load on my website",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The website must be on the widget's domain, on the domain of the widget's contact form URL, or in its Additional domains. Subdomains are covered automatically, other domains are not. Open Team & Settings → General → Contact forms and look at the Form on your website card: it names the blocked domain and offers Allow. A staging site on another domain and a local copy of the site each need their own entry. See Put the contact form on your website."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I put two contact forms on one page?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. One contact form per page. The second placeholder shows a notice instead of a form. Use one form per page, and as many pages as you like."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the WordPress plugin shortcode work for the contact form?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Paste the embed code into a Custom HTML block on the page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is emailed when an enquiry arrives?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Everyone listed under New contact enquiry in Notification center, plus the addresses in the form's Also notify list. The email contains the name, contact details, message, custom field answers and campaign, with a link to the contact. Replying to the email answers the enquirer directly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "The visitor did not receive the automatic reply",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check that Send an automatic reply is on in the form configuration, and that the enquiry had an email address. A contact receives at most one automatic reply per 24 hours, so a second test from the same address gets none. Enquiries rescued from Spam more than an hour after they were sent get none either."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I change the text of the automatic reply?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Edit Contact form - automatic reply in Communication → Templates. It can use the visitor's first name and the form name. To send different text from one form, make a copy of the template as a variant and select it in that form's Automatic reply template. See Message templates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I add a contact to a class directly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not from the contact. Click Convert to client first, then create their booking as usual. Zooza creates the client from the contact's name, email and phone, without sending them anything."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "The contact is already my client",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza matched the enquiry's email address to one of your clients and linked them. The contact shows Existing client and a link to open the client. If the person used a different email address, use Link to client and pick them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when the same person sends the form again?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The enquiry is added to the same contact as a second timeline entry, matched by email address. Details that were empty are filled in from the new enquiry. Nothing is overwritten. The contact's status does not change. If the form asks for phone only, matching uses the phone number."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I see which campaign a contact came from?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Each enquiry records the page, the referrer, the UTM parameters and the Meta and Google click ids. Filter Contacts by UTM source, UTM medium or UTM campaign. See Track campaigns and conversions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I count enquiries as conversions in Meta Pixel or Google Analytics?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The widget fires zooza_event_contact_form_submitted to Google Tag Manager, GA4 and Meta Pixel when an enquiry is accepted. Use it as your lead conversion. Nothing needs to be pasted into Zooza. See Track campaigns and conversions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can instructors see contacts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Anyone who can view clients can view contacts. Editing contacts, notes, to-dos, spam rescue and conversion need the permission to edit clients. Setting up forms, fields and the widget needs the permission to edit company settings. See Roles and permissions FAQ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I export contacts to CSV?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not yet. Contacts also have no bulk actions yet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I change a custom field's type or key?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The key and type are fixed once the field is created, so that earlier answers keep their meaning. Create a new field instead and archive the old one. Labels and option labels can be changed at any time. See Custom contact fields."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I delete a contact for a GDPR request?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open the contact and click Erase contact. This permanently deletes the contact with its enquiries, notes and labels. If the contact was converted, the client is not deleted; handle the client separately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is there a \"Marketing consent\" on the contact?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It shows Yes when the person accepted a consent in the Marketing category on the form. Categories are set per consent in Consents & Agreements. Use it to decide who may receive newsletters."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I change the wording of the form, such as the Send button?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The button, the standard field labels and the validation messages are changed per page with a small script before the widget, the same way as for the booking form. Custom field labels, consent texts and the success message are edited in the form configuration. See Put the contact form on your website."
+      }
+    }
+  ]
+}

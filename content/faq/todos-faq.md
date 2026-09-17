@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-04-30"
+last_converted: "2026-09-17"
+related_articles: ["working-with-contacts", "slack-faq", "notifications-center"]
 ---
 
 # To-do List FAQ
@@ -19,6 +20,8 @@ last_converted: "2026-04-30"
 ## Can I see todos created by other team members?
 
 Only if you are directly involved — either as the **creator** or the **assignee**. You cannot see todos between colleagues that do not include you. There is no company-wide to-do view, even for Owners.
+
+**The exception is to-dos on a contact.** Enquiries from the contact form are team work, so the **To-dos** card on a contact under **Clients → Contacts** lists every to-do on that contact, whoever it is assigned to. Anyone who can edit contacts can complete, reopen or reassign them, and the contact's timeline records who did it. See [Work with contacts and enquiries](../guides/working-with-contacts.md#to-dos-on-a-contact).
 
 ## Will my colleague be notified when I assign a todo to them?
 
@@ -31,6 +34,8 @@ Overdue tasks stay open and move to the top of the list — nothing is closed or
 ## Can I link a to-do to a specific booking or registration?
 
 Yes. When you click **Add to-do** while viewing a booking, registration, event, or payment, Zooza automatically links the todo to that record. A context icon appears next to the task in the list — clicking it takes you directly back to that record. If you create a todo from the sidebar without being on a specific record, no link is attached.
+
+The same works for a contact: click **Create todo** on the contact's page, or let the contact form create one for every enquiry with **Create a to-do for each enquiry** in the form configuration.
 
 ## Can I attach files or write longer notes?
 
