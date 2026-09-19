@@ -30,6 +30,14 @@
     },
     {
       "@type": "Question",
+      "name": "We run several locations — do we pay once, or per location?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The subscription is per company (account), priced by that account's active clients. How many companies you need is a question about legal entities, not locations:\n\n- One legal entity, several venues or towns — one company with several locations. That is the normal shape, and one subscription covers all of them; venues are a built-in part of the app.\n- Several legal entities (each invoicing under its own name) — one company each, each with its own subscription. Bookings and clients can move between them as a network.\n\nIf you set up separate companies for what is really one business, they cannot be merged by a button. Consolidation is manual work — transferring registrations into the account you keep — so decide the structure before clients start registering, and ask support if you already have more accounts than you need."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How do I cancel my Zooza subscription?",
       "acceptedAnswer": {
         "@type": "Answer",

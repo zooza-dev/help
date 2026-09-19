@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-06-01"
+last_converted: "2026-09-19"
+related_articles: ["inbound-payments-setup", "payment-pairing", "inbound-payments-internals", "payments-and-billing-faq"]
 ---
 
 
@@ -31,7 +32,7 @@ Export the transaction list from your bank as a **CSV file**. Zooza cannot proce
 
 Most internet banking systems have an "Export transactions" or "Download statement" option. Look for the CSV or text format.
 
-> **Tip:** Export a complete, non-overlapping period — for example, from the 1st to yesterday. Avoid exporting "up to today" if you plan to run another import later, as the same transactions may appear in the next export and be imported twice.
+> **Tip:** Export a complete, non-overlapping period — for example, from the day after your last import to yesterday. Avoid exporting "up to today" if you plan to run another import later; overlapping rows are caught as duplicates, but every one of them lands in your unpaired list for you to clear.
 
 ## Step 1 — Go to the import screen
 
@@ -82,17 +83,20 @@ After confirming, each matched payment is applied to the corresponding booking. 
 
 ![Screenshot — csv payment import](../../assets/images/csv-payment-import-05.png)
 
-## Important: do not import the same file twice
+## What happens if you import the same payment twice
 
-If you upload and confirm the same CSV file a second time, every payment in the file will be recorded again. The booking balances will be doubled, and **this cannot be automatically reversed**.
+Imported rows go through the same pairing and duplicate checks as payments read from your bank. A row that matches a payment Zooza already knows — same variable symbol, same date, same amount — is **not paired again**. It ends up in the unpaired (new) or ignored list instead, so a booking is not credited twice.
 
-If this happens, contact Zooza support immediately — the duplicate payments must be removed manually.
+That protection is also why re-importing overlapping statements makes a mess of a different kind: every overlapping row lands in **Payments → Payment pairing** as unpaired, and you are left with hundreds of rows to sort through. A company importing whole-month statements every two days ended up with over 400 "unpaired" payments this way — none of them real.
 
-**To avoid this:**
+**To keep imports clean:**
 
-- Keep a record of which date ranges you have already imported.
-- Always export complete, non-overlapping periods (e.g., 1–28 February, then 1–31 March — never overlapping).
+- Import **often** — every couple of days is fine — but export from the bank **only the days since your last import**, never the whole month again.
+- Keep a record of which date ranges you have already imported, and never overlap them.
 - When in doubt, export up to yesterday, not up to today.
+- **Do not combine** CSV import with automatic bank reading (email notifications, GoCardless bank feed) for the same account. If the account is read automatically, the import only produces duplicates for you to clear.
+
+If a booking balance does look doubled, contact Zooza support rather than deleting payments yourself.
 
 ## Related
 

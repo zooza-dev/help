@@ -12,7 +12,7 @@ related_articles: ["gocardless-direct-debit-mandates", "offline-charge-manual-pu
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-14"
+last_converted: "2026-09-19"
 ---
 
 # GoCardless Integration FAQ
@@ -156,6 +156,17 @@ To check the current state of any mandate, go to **Payments → Direct Debit man
 - whether a payment plan is attached
 - when the last payment on that mandate was taken
 - whether there are offline payments available for it
+- whether the booking allows offline money collection — GoCardless can only take a payment when it does
+
+## Where do I see what GoCardless will collect over the rest of the month?
+
+Not in GoCardless. Its dashboard shows payments that have been submitted, not the instalments Zooza has scheduled for the future. To see what is coming:
+
+- **Payments → Direct Debit mandates** — how many mandates are active and when the next payment on each is due.
+- **Payments → Scheduled payments** — set **Status** to *Scheduled* and the date range to the period you care about (say, October). This is the list of instalments that will be pushed to GoCardless.
+- **Payments → Insights** — a global monthly summary.
+
+If a payout looks small, check the mandates overview first: a booking with no valid payment plan, or without offline collection allowed, produces no charge however many sign-ups you had.
 
 Instalments already marked manual before the fix stay manual — collect them using **Push to offline charge queue** on the payment detail (see the next question).
 

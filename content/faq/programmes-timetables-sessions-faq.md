@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-09-19"
+related_articles: ["classes-list", "payments-and-billing-faq", "creating-a-class", "programme-settings"]
 ---
 
 
@@ -125,7 +126,9 @@ Each class tile shows three financial figures (recalculated every 30 minutes):
 
 - **Paid debt** — total amount already paid across all bookings.
 - **Issued debt** — total debt created from all booking types (including late bookings and waiting list).
-- **Balance** — current account status (difference between issued and paid).
+- **Balance** — the net position: paid minus issued. A **positive** balance means the bookings in this class have paid **more** than was issued — an overpayment, typically two bookings settled twice — not money still to collect. Negative means outstanding. The figure is being relabelled with a state word (**Overpaid** / **Outstanding** / **No debt**); where you see the word, go by it rather than by the sign.
+
+The three figures are recalculated in the background, so they can lag the booking detail by up to half an hour. If a tile shows a balance you cannot explain, filter the class's bookings by payment status — the booking detail is the authority, the tile is a summary.
 
 ## How do I hide a class from online registration?
 

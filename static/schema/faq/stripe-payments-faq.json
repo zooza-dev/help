@@ -70,6 +70,30 @@
     },
     {
       "@type": "Question",
+      "name": "Parents see \"This account cannot currently make live charges\" — what happened?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The message comes from Stripe and means the connected account is not able to charge — usually because it is a new, never-completed Stripe account, not the one you actually use.\n\nThis is how it happens. During Stripe onboarding, Stripe asks whether to sign in to an existing account or create a new one. Choosing create — or just clicking through — makes a fresh account with nothing filled in (no support phone, no terms of service, no verification), and Zooza dutifully connects to that one. Repeat the onboarding a few times and you have several half-made accounts and one real one, with the wrong one live.\n\nWhen onboarding asks, sign in to your existing Stripe account. Do not create a new one. Your working account is the one that has already taken payments.\n\nIf you are already in this state:\n\n1. Go to Team & Settings → Integrations → Stripe and note the status and the connected account.\n2. In your Stripe dashboard, check which account is fully enabled (verification complete, payouts enabled). The account id (acct_…) tells them apart.\n3. Ask Zooza support to point the connection at the enabled account. Since 18 September 2026 Zooza can reconnect a previously connected, charge-capable account rather than only creating new ones, and the checkout shows a plain \"payments are not available\" message in Zooza instead of Stripe's raw error while the account cannot charge.\n4. Leave the deletion of the abandoned accounts to Stripe support; it does not affect the working connection.\n\nCurrency: the region you pick at onboarding decides the currency Stripe offers. A UK-region onboarding will not offer EUR even if your bank account is in EUR — if that is wrong, say so before completing onboarding rather than after."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Parents cannot pay and the page says \"Not secure\"",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stripe will not take a live payment on an insecure connection. If the booking page is\nbeing served over http:// rather than https://, the card form fails — on every\ndevice, which is what makes it look like a Zooza fault rather than a website one.\n\nCheck the address bar first. If the browser says Not secure, that is the whole\ndiagnosis. The Zooza widgets themselves are served securely; what matters is the page\nyou embedded them into.\n\nThe fix belongs with whoever runs your website: an automatic redirect from HTTP to\nHTTPS across the whole site, set at hosting or domain level. WordPress plugins can do it\ntoo, but the hosting-level redirect is the one that stays fixed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A payment shows as expired, or outstanding in Zooza but paid in Stripe",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Expired means the parent started and never finished. Opening the payment page creates\nan intent to pay; walking away from it, or closing the tab, leaves that intent to lapse.\nIt is not a failure and nothing is charged.\n\nPeople often try two or three times before one goes through, so a single booking can leave\na trail of expired attempts and one real payment. Look for the successful one before\nchasing anybody.\n\nA parent holding a confirmation email has usually paid — on a later attempt than the\none you are looking at. Check the booking's payment list rather than the first Stripe row."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Where can I see payment reports for my accountant?",
       "acceptedAnswer": {
         "@type": "Answer",

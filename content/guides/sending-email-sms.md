@@ -12,8 +12,8 @@ status: published
 source_legacy_path: legacy/0012_Welcome to Zooza.html
 source_language: mixed
 needs_screenshot_replacement: false
-last_converted: "2026-09-13"
-related_articles: ["message-templates","dynamic-tags","bulk-email-send-tracking","email-delivery"]
+last_converted: "2026-09-19"
+related_articles: ["message-templates","dynamic-tags","bulk-email-send-tracking","email-delivery-troubleshooting"]
 ---
 
 # Sending email/SMS to clients
@@ -186,3 +186,12 @@ For SMS, you can set the name under which the message appears on the client's ph
 To set the name, go to **Settings --> General settings**.
 
 ![SMS sender name setting](../../assets/images/sms-sender-name-setting.png "SMS sender name setting in general settings")
+
+### What parents see, and whether they can reply
+
+SMS messages do not go out from a physical phone number. They are sent from a **virtual number**, and the parent's phone shows the **sender name** set above (your account name unless you changed it) rather than a number. That has two consequences:
+
+- **They cannot reply.** SMS from Zooza is one-way. A parent who wants to answer has to use your published contact details — put them in the message if you expect a response.
+- **Keep it for operational news.** A change of time or venue, a cancelled session, a reminder. Some companies use SMS for promotion; we advise against it — the per-message cost and the one-way nature make it a poor channel for anything that invites a conversation. If you want two-way messaging on the phone, [WhatsApp](../setup/whatsapp-integration.md) is the channel for it.
+
+Each SMS is billed per message; the current price is on the [pricing page](https://www.zooza.online/pricing/).

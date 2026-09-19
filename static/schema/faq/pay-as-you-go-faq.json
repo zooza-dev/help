@@ -134,6 +134,46 @@
     },
     {
       "@type": "Question",
+      "name": "Where do I see how many entries a client has left, and when they used one?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On the booking detail, in the Credits card: each entry pass is listed with entries used and remaining, and each redemption shows the session it was spent on. The parent sees the same thing in their profile (Entry pass — client view). There is no separate credits report under Discounts; the booking is the place to look. The expiry date of a purchased pass is not editable in the admin — ask support with the order number if a pass needs extending."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does the class say 9 enrolled but nobody is booked for tomorrow's session?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because those are two different things in a Pay-as-you-go programme:\n\n- Enrolled — the client has a booking in the class. That booking is their key to the client portal; it does not put them in any session.\n- Booked on a session — the client has picked that date from their portal (or the calendar). Only these people appear on the session's register.\n\nSo a class can show more enrolments than its capacity — capacity is checked per session, not per class — and a session can have zero attendees while the class is \"full\" of enrolments. When you look at the register for a session, you are looking at session bookings only."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I remind enrolled clients to book this week's session?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Do not send them the class booking link. In a Pay-as-you-go programme they are already enrolled; opening that link would create a second booking in the same class. They need to book a session, and they do that from their client portal.\n\n1. Go to Classes and filter by Programme (tick the programme).\n2. Click Send email at the top of the list.\n3. In the body, add a link to the portal using the dynamic tag <code>&#42;&#124;WIDGET_PROFILE_URL&#124;&#42;</code> — select your link text, click the link icon and paste the tag as the address. Each recipient gets their own link that signs them in without a login code and lands on their dashboard, where the Book session button is.\n4. Save the email as a user template so next week it is one click.\n\nThe email goes to everyone with an active booking in those classes, including people who have already booked the session. There is no filter for \"enrolled but not booked on a given session\" and no report that shows who was invited to which session."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I set a booking cut-off for sessions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The Hide from booking form N hours before the programme begins setting exists only for Booking for the full programme duration and One-off event programmes. Pay-as-you-go session bookings have no lead-time cut-off — a client can book a session up to its start. If you need to stop bookings for a particular session, cancel the session or reduce its capacity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A client paid before I finished setting up — how do I add entry passes to an existing booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Two ways:\n\n- The parent buys them from the client portal — this is the normal route when you collect card payments, because the parent has to pay online anyway.\n- You create the order from the booking: on the booking detail, find the products card and create an order for the pass product. If the pass is an optional item in the product, open the order and Add item for the pass. When the money has already been received outside the portal, record it with Add payment on the booking — the passes are released the moment the order is paid.\n\nIf you are adding the booking itself by hand (Add booking on the class), untick Client is also an attendee when the parent is booking for a child, and expect the manual booking to carry the class price — reset it in Payments if the pass product is what the client actually pays for."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What are linked classes and when do I need them?",
       "acceptedAnswer": {
         "@type": "Answer",

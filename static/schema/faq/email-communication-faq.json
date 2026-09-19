@@ -49,7 +49,7 @@
       "name": "Where do replies to Zooza emails go?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Replies go directly into the Zooza application. The reply-to address is system-managed and routes to your Zooza inbox."
+        "text": "Replies go directly into the Zooza application. The reply-to address is system-managed and routes to your Zooza inbox.\n\nNothing tells you they arrived unless you ask it to. Because the reply lands in the\napp and not in your mailbox, it can sit there unread for days. Turn on the New email\nreply from client notification and it emails you each time one comes in — see\nNotifications Center.\n\nOnly a few templates go out from no-reply@zooza.app; the rest are sent from your own\naddress, which is why replies come back to us and are collected in the app."
       }
     },
     {

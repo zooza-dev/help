@@ -17,7 +17,7 @@
       "name": "How does GoCardless bank connection work with Zooza?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "GoCardless is a third-party service that connects your bank account to Zooza. Once connected, GoCardless automatically reads incoming transactions from your bank and sends them to Zooza for payment matching.\n\nTo set it up:\n\n1. Go to Settings → Billing profiles.\n2. Open your default billing profile.\n3. Click the logo of your bank to initiate the GoCardless connection.\n4. You will be redirected to your internet banking, where you authorize GoCardless to access your account.\n\nAfter authorization, incoming payments are automatically forwarded to Zooza and matched against bookings using the variable symbol."
+        "text": "GoCardless is a third-party service that connects your bank account to Zooza. Once connected, GoCardless automatically reads incoming transactions from your bank and sends them to Zooza for payment matching.\n\nTo set it up:\n\n1. Go to Settings → Billing & Payments → Invoice profiles.\n2. Open your default billing profile.\n3. Click the logo of your bank to initiate the GoCardless connection.\n4. You will be redirected to your internet banking, where you authorize GoCardless to access your account.\n\nAfter authorization, incoming payments are automatically forwarded to Zooza and matched against bookings using the variable symbol."
       }
     },
     {
@@ -33,7 +33,7 @@
       "name": "How do I renew an expired GoCardless connection?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "1. Log in to your internet banking.\n2. Find the GoCardless connection in your account settings (the exact location depends on your bank).\n3. Re-authorize the connection.\n\nAlternatively, you can initiate the reconnection from Zooza:\n\n1. Go to Settings → Billing profiles.\n2. Open your default billing profile.\n3. Click your bank logo to start the authorization flow again.\n\nAfter renewal, the 90-day countdown restarts."
+        "text": "1. Log in to your internet banking.\n2. Find the GoCardless connection in your account settings (the exact location depends on your bank).\n3. Re-authorize the connection.\n\nAlternatively, you can initiate the reconnection from Zooza:\n\n1. Go to Settings → Billing & Payments → Invoice profiles.\n2. Open your default billing profile.\n3. Click your bank logo to start the authorization flow again.\n\nAfter renewal, the 90-day countdown restarts."
       }
     },
     {
@@ -105,7 +105,15 @@
       "name": "Instalments are marked as manual instead of being collected automatically",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "If mandates were set up correctly but Zooza flagged the instalments for manual handling, this was a platform issue affecting the first payment on a new mandate.\n\nThe first mandate GoCardless issues is a one-off, not a recurring one. Zooza read that as \"this mandate cannot be charged again\" and marked the following instalments manual. GoCardless then replaces it with a permanent recurring mandate, so subsequent payments were flagged correctly — which is why the problem appeared only at the very start of a booking. This has been fixed for new bookings.\n\nTo check the current state of any mandate, go to Payments → Direct Debit mandates. The overview shows, per mandate:\n\n- whether a payment plan is attached\n- when the last payment on that mandate was taken\n- whether there are offline payments available for it\n\nInstalments already marked manual before the fix stay manual — collect them using Push to offline charge queue on the payment detail (see the next question)."
+        "text": "If mandates were set up correctly but Zooza flagged the instalments for manual handling, this was a platform issue affecting the first payment on a new mandate.\n\nThe first mandate GoCardless issues is a one-off, not a recurring one. Zooza read that as \"this mandate cannot be charged again\" and marked the following instalments manual. GoCardless then replaces it with a permanent recurring mandate, so subsequent payments were flagged correctly — which is why the problem appeared only at the very start of a booking. This has been fixed for new bookings.\n\nTo check the current state of any mandate, go to Payments → Direct Debit mandates. The overview shows, per mandate:\n\n- whether a payment plan is attached\n- when the last payment on that mandate was taken\n- whether there are offline payments available for it\n- whether the booking allows offline money collection — GoCardless can only take a payment when it does"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do I see what GoCardless will collect over the rest of the month?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not in GoCardless. Its dashboard shows payments that have been submitted, not the instalments Zooza has scheduled for the future. To see what is coming:\n\n- Payments → Direct Debit mandates — how many mandates are active and when the next payment on each is due.\n- Payments → Scheduled payments — set Status to Scheduled and the date range to the period you care about (say, October). This is the list of instalments that will be pushed to GoCardless.\n- Payments → Insights — a global monthly summary.\n\nIf a payout looks small, check the mandates overview first: a booking with no valid payment plan, or without offline collection allowed, produces no charge however many sign-ups you had.\n\nInstalments already marked manual before the fix stay manual — collect them using Push to offline charge queue on the payment detail (see the next question)."
       }
     },
     {
@@ -129,7 +137,7 @@
       "name": "A transaction does not appear in the matching list. What should I do?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "If a bank transaction arrived in your account but is not showing in the Zooza matching list, work through these checks:\n\n1. GoCardless sync delay. GoCardless syncs once per day. If the payment arrived recently, wait up to 24 hours and check again.\n2. Already matched. The transaction may have been automatically matched to another booking. Search for the variable symbol in Bookings to confirm.\n3. No matching debt. Zooza only shows transactions that have a corresponding open debt. If the client paid before a scheduled payment was generated, the transaction will stay unmatched until the debt exists.\n4. Connection expired. If your GoCardless connection lapsed, transactions from that period may be missing. After renewing the connection, use CSV import to back-fill the missing transactions.\n5. Wrong bank account. The transaction may have arrived in a different bank account than the one connected to your Zooza billing profile. Check the IBAN in Settings → Billing profiles.\n\nIf none of the above explains it, contact Zooza support with the transaction date, amount, and variable symbol."
+        "text": "If a bank transaction arrived in your account but is not showing in the Zooza matching list, work through these checks:\n\n1. GoCardless sync delay. GoCardless syncs once per day. If the payment arrived recently, wait up to 24 hours and check again.\n2. Already matched. The transaction may have been automatically matched to another booking. Search for the variable symbol in Bookings to confirm.\n3. No matching debt. Zooza only shows transactions that have a corresponding open debt. If the client paid before a scheduled payment was generated, the transaction will stay unmatched until the debt exists.\n4. Connection expired. If your GoCardless connection lapsed, transactions from that period may be missing. After renewing the connection, use CSV import to back-fill the missing transactions.\n5. Wrong bank account. The transaction may have arrived in a different bank account than the one connected to your Zooza billing profile. Check the IBAN in Settings → Billing & Payments → Invoice profiles.\n\nIf none of the above explains it, contact Zooza support with the transaction date, amount, and variable symbol."
       }
     },
     {

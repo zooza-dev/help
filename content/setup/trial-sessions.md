@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0058_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-09-19"
 related_articles: ["trials-faq","trials-daily-business","individual-sessions","blocks-configuration"]
 ---
 
@@ -141,6 +141,10 @@ You can limit the sessions in three ways:
 Example: A class runs from January 6 to March 30 with sessions every Monday and Wednesday. If the limit is set to 10 days and a client registers on January 12, the booking form will display trial sessions between January 13 and January 22 (inclusive).
 
 ![Example: A class runs from January 6 to March 30 with sessions every Monday and...](../../assets/images/trial-lessons-10.png)
+
+> **A paid trial and "show only the nearest session" are two separate settings.** Choosing a paid single-session trial does not limit the list to one date; that is done here, with a limit of 1 session. Most companies offer three to five dates, so a parent who cannot make today's 15:00 session does not have to wait until it has passed before the form offers the next one.
+
+> **The booking cut-off applies to trials too.** Since September 2026, the programme's **Hide from booking form N hours before the programme begins** setting (Online booking) also filters this list on the booking form — a 48-hour cut-off means a session this afternoon is not offered as a trial. Before that change trials could be booked up to an hour before the session regardless of the cut-off. When you place a trial yourself from the booking detail, the cut-off does not apply. See [Booking form settings](../guides/booking-form-settings.md) for how the field behaves, including why it is locked while Late bookings are enabled.
 
 ## Seat availability display for multi-person trial bookings
 

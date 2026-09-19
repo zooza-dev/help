@@ -105,7 +105,7 @@
       "name": "What do the financial numbers on the class tile mean?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Each class tile shows three financial figures (recalculated every 30 minutes):\n\n- Paid debt — total amount already paid across all bookings.\n- Issued debt — total debt created from all booking types (including late bookings and waiting list).\n- Balance — current account status (difference between issued and paid)."
+        "text": "Each class tile shows three financial figures (recalculated every 30 minutes):\n\n- Paid debt — total amount already paid across all bookings.\n- Issued debt — total debt created from all booking types (including late bookings and waiting list).\n- Balance — the net position: paid minus issued. A positive balance means the bookings in this class have paid more than was issued — an overpayment, typically two bookings settled twice — not money still to collect. Negative means outstanding. The figure is being relabelled with a state word (Overpaid / Outstanding / No debt); where you see the word, go by it rather than by the sign.\n\nThe three figures are recalculated in the background, so they can lag the booking detail by up to half an hour. If a tile shows a balance you cannot explain, filter the class's bookings by payment status — the booking detail is the authority, the tile is a summary."
       }
     },
     {

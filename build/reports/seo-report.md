@@ -1,14 +1,14 @@
 # SEO & AI Readiness Report
 
-**Generated:** 2026-09-05
+**Generated:** 2026-09-19
 
 ## Summary
 
-- **Total docs checked:** 265
+- **Total docs checked:** 272
 - **Docs with errors:** 0
-- **Docs with warnings only:** 55
+- **Docs with warnings only:** 56
 - **Total errors:** 0
-- **Total warnings:** 168
+- **Total warnings:** 169
 - **Overall:** PASS
 
 ## Checks performed
@@ -131,6 +131,9 @@
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
+
+### `content/guides/entry-pass-client-view.md`
+- WARN: description too long (165 chars, max 160)
 
 ### `content/guides/individual-sessions-climbing-wall.md`
 - WARN: title too long (78 chars, max 70): `Individual sessions for clients on the climbing wa…`

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-13"
+last_converted: "2026-09-19"
 related_articles: ["matko-replacement-diagnostic","cancellation-log","replacement-hours-complete","capacity-and-extra-capacity"]
 ---
 
@@ -34,6 +34,15 @@ Worth switching on if parents ask to come more often: a paid extra session sells
 Only the **"Cancelled"** attendance state generates a make-up credit. If a child is marked as **"Did not attend"** (no-show), no make-up credit is created. This is by design — the system distinguishes between a planned absence (cancel in advance) and an unexcused no-show.
 
 If a make-up credit was not generated after a missed session, check whether the attendance state is "Did not attend" instead of "Cancelled". An admin can correct the state in the session's attendance view.
+
+**The reverse also happens, and it is the more common surprise.** A parent cancels in time, the credit is created, the parent gets the confirmation email — and then the instructor, filling in the register, switches that record from *Cancelled* to *Did not attend* because the child was not there. That change **deletes the credit**. The parent later clicks "choose a session" in their email and sees nothing to book. The registration's activity log shows the change and who made it.
+
+Two ways to stop it:
+
+- Tell instructors: a session already marked *Cancelled* is a planned absence, not a no-show — leave it.
+- Or take the choice away from them. **Settings → General → Attendance management settings for instructors** has a *Limited* mode in which instructors only get *attended* / *did not attend* on the register — a client's own, in-time cancellation is not theirs to overwrite. *Full* mode lets them set any state, including *Cancelled*, and choose make-up sessions for clients.
+
+If the credit is already gone, set the record back to *Cancelled*; a fresh credit is created (see the "deadline-expired credit" workaround further down for the same trick used deliberately).
 
 ## How does the "extra capacity for make-up sessions" setting work?
 
@@ -130,7 +139,7 @@ Yes. Go to **Settings** → **Make-up sessions** → **General Settings** and ch
 
 | Mode | Behavior |
 |---|---|
-| **Set transferred make-up sessions** | When the class ends, unused credits up to your set limit are carried over to the next period with a new expiration date. Credits beyond the limit are voided. |
+| **Set transferred make-up sessions** | When the class ends, unused credits up to your set limit are carried over to the next period with a new expiration date. Credits beyond the limit are voided. The transferred credits are **created on the day the class ends** — while the class is still running, parents do not see them in their profile, even if you have told them the credits will carry over. |
 | **All make-up sessions expire at the end of the class** | All unused credits are voided when the class ends. |
 | **All make-up sessions expire after the preset number of days** | The class end date has no effect — credits expire based only on the number of days set. |
 

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-09-19"
 related_articles: ["instructor-access-faq","managing-instructors","user-roles","add-zooza-app-to-phone"]
 ---
 
@@ -119,6 +119,8 @@ This often happens when a client:
 - Waits too long and requests a second link while the first is still in their inbox
 
 **Solution:** Ask the client to use only the **most recent email** they received from Zooza and ignore any earlier login emails. If the second link also expired, they simply request a new one — there is no lockout.
+
+**Tell them to click the link, not type the code.** Each login email carries both a PIN code and a login link. The code is what gets invalidated by the next request; the link stays valid considerably longer. A client who keeps requesting new codes and typing the old one in a loop is unstuck the moment they click the link in whichever email they have open.
 
 ## Can multiple team members share one login?
 

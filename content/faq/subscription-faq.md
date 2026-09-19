@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-09-19"
+related_articles: ["active-inactive-clients", "franchise-network", "bulk-network-transfer", "client-management-faq"]
 ---
 
 
@@ -55,6 +56,15 @@ All plans include: client & family profiles, consent management, email automatio
 Optional add-ons are available on top of any plan. Check the **Subscription** page in your account to see which are enabled for you, or ask Zooza support.
 
 > **Note:** Prices are in EUR. Check the **Subscription** page in your account for current pricing in your currency and up-to-date plan features.
+
+## We run several locations — do we pay once, or per location?
+
+The subscription is **per company (account)**, priced by that account's active clients. How many companies you need is a question about legal entities, not locations:
+
+- **One legal entity, several venues or towns** — one company with several locations. That is the normal shape, and one subscription covers all of them; venues are a built-in part of the app.
+- **Several legal entities** (each invoicing under its own name) — one company each, each with its own subscription. Bookings and clients can move between them as a network.
+
+If you set up separate companies for what is really one business, they cannot be merged by a button. Consolidation is manual work — transferring registrations into the account you keep — so decide the structure before clients start registering, and ask support if you already have more accounts than you need.
 
 ## How do I cancel my Zooza subscription?
 

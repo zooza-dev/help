@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-17"
+last_converted: "2026-09-19"
 ---
 
 
@@ -72,6 +72,14 @@ You cannot edit a client's email address directly. Email changes go through a fo
 The Zooza team reviews and processes the request, usually within 1 business days. You receive a notification email when the request is approved or rejected.
 
 **Common rejection reason:** The name embedded in the new email address does not match the parent's name on record. For example, if the client's name is "Jana Nováková" but the requested email contains a different name, the request will be declined. Double-check that the new email belongs to the same person before submitting.
+
+**Second rejection reason — the address is somebody's login.** A client's email is their Zooza account, and the same account can hold bookings at several companies. If the "new" email belongs to a different person — a gift booking where the buyer registered under their own address and now wants it under the recipient's, say — changing the email would hand the recipient every booking and personal record the original person has, at your company and elsewhere. That request is declined for the original person's protection, not yours.
+
+The right move is to change **who the booking belongs to**, not what the client's email is:
+
+1. If the other person is not yet a client of yours, create them — the quickest way is to add any registration for them by hand and delete it again; the client record stays.
+2. Open the original booking and use **Change Client** to move it to them.
+3. Move any payment across with it (see [Edit payment on a booking](../guides/edit-payment-on-booking.md)).
 
 If you need to assign a booking to a completely different person (not just fix a typo), use **Change Client** on the booking instead.
 

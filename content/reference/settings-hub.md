@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-17"
+last_converted: "2026-09-19"
 related_articles: ["custom-holidays", "shared-sessions", "contact-form-setup", "custom-contact-fields", "setting-gtc-gdpr-consents", "labels", "notifications-center"]
 ---
 
@@ -117,6 +117,13 @@ General settings for all programmes:
 | `Custom Customer ID` | Format template for client IDs. Allowed values: Unique ID (U), sequence number (1–10 minimum length). Each symbol needs curly braces. |
 | `Regenerate all customer IDs` | Regenerate all IDs based on the current format. |
 | `Online meeting instructions` | Rich text editor for instructions shown in clients' profiles for online sessions. |
+
+### Instructor permissions
+
+| Field | Description |
+|---|---|
+| `Attendance management settings for instructors` | **Full report** — instructors can set any attendance state (attended, did not attend, cancelled) and choose a make-up session for a client. **Limited** — instructors only get *attended* / *did not attend*; a client's own in-time cancellation (and the make-up credit it created) is not theirs to overwrite. Use Limited if instructors keep turning cancellations into no-shows — see [Make-up Sessions FAQ](../faq/make-up-sessions-faq.md#what-attendance-state-triggers-a-make-up-credit). |
+| `Availability management settings for instructors` | **Full** — instructors manage their own working hours and absences. **Restricted administration** — instructors can create availability and absences but any change, including deleting a wrongly entered absence, must be approved by the owner. **Absences only** — instructors can only request absences. If an instructor reports that the delete button on an absence is missing, this setting is why. See [Instructor working hours](../setup/instructors-working-hours.md). |
 
 ### Calendar
 

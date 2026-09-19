@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-15"
+last_converted: "2026-09-19"
 ---
 
 # Payments and Billing FAQ
@@ -94,7 +94,26 @@ In Zooza, the balance shows **what the client still owes** (positive) or **what 
 
 > **Important:** A negative balance means the client has credit, not that they owe money. This is the opposite of what many people intuitively assume. If you see −€30, the client is €30 ahead, not €30 in arrears.
 
-> **The figure is not always shown with a sign.** In some places the amount appears bare, so an overpayment looks identical to a debt. Before chasing a client for a number you do not recognise, open the bookings behind it — an unexplained total is often two bookings that were paid twice over, not money owed.
+> **The figure is not always shown with a sign.** In some places the amount appears bare, so an overpayment looks identical to a debt. Before chasing a client for a number you do not recognise, open the bookings behind it — an unexplained total is often two bookings that were paid twice over, not money owed. A dance school saw "1,300 Kč" on a class overview, searched for unpaid bookings and found one for 325 Kč; the 1,300 was two bookings that had **overpaid**.
+>
+> Balance figures are being relabelled with a state word — **Overpaid**, **Outstanding** or **No debt** — precisely so that the direction no longer depends on reading a sign. Where you see the word, trust it over the sign. The booking detail is always the authority; list and tile figures are recalculated in the background and can lag it by minutes to half an hour.
+
+## The booking shows more debt than this month's fee — why?
+
+Because the next instalment already exists. A scheduled payment is **created a set number of days before its due date** — by default 15 — and is added to the booking's balance the moment it is created, not on the due day.
+
+Example: a membership of €71 a month with a €25 registration fee in the first month. On 16 September the booking shows €167 outstanding: September's €96 (still unpaid) plus October's €71, which is due on 1 October and was therefore created on 16 September.
+
+The number of days is the "days due" value in **Settings → Billing & Payments → Payment settings**; leaving it at 0 keeps the 15-day default. Shorten it if you would rather parents not see next month's instalment so early — bearing in mind that the "upcoming payment" and "payment created" notifications count from the same creation date (see [Automatic payment reminders](../guides/automatic-payment-reminders.md)).
+
+## Can I split one payment between two bookings?
+
+Not in halves. A received payment can be **moved** to another booking, but only as a whole. When a parent pays for two children with one transfer against one child's variable symbol:
+
+1. Open the booking that received the payment, find the transaction in the payments list and choose **Edit payment** (correction). Set the correction to the amount that belongs to the other child — half, if they split it evenly. The first booking now shows only its own share.
+2. Open the second child's booking and **Add payment** for the other half, with a note saying where the money actually arrived.
+
+Do not use **Refund** for this — nothing is being returned. See [Payment correction vs refund](../guides/payment-correction-vs-refund.md).
 
 ## What is the difference between "Awaiting payment" and "Unpaid"?
 

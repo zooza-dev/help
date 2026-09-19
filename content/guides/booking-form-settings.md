@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-09-19"
+related_articles: ["trial-sessions", "trials-faq", "late-bookings", "pay-as-you-go-faq", "programme-settings"]
 ---
 
 
@@ -96,7 +97,15 @@ This is where most per-programme form behaviour is configured.
 | Setting | Description |
 |---|---|
 | **If the class reaches full capacity, do not show it in the booking form** | Hides the class once it is full. |
-| **Hide from booking form N hours before the programme begins** | Stops showing the class on the form a set number of hours before it starts. |
+| **Hide from booking form N hours before the programme begins** | Stops showing the class on the form a set number of hours before it starts. This is the booking cut-off (lead time) — see below. |
+
+#### The booking cut-off ("hide before")
+
+**Hide from booking form N hours before the programme begins** is the only lead-time setting on the booking form. Three things about it catch people out:
+
+- **It exists only for two programme types** — *Booking for the full programme duration* and *One-off event*. A Pay-as-you-go programme has no cut-off for individual session bookings: clients can book a session right up to its start.
+- **It is locked while Late bookings are enabled.** The field is greyed out when **Price and Payment → Advanced settings → Late bookings** is set to anything other than *Disabled*, because both features decide what happens to bookings after the programme has started. To change the hours: set Late bookings to *Disabled*, save, change the hours in **Online booking**, then switch Late bookings back on. The team has this flagged as a usability fix.
+- **Since September 2026 it also applies to trial sessions.** The booking form no longer offers a trial session that starts inside the cut-off window (a 48-hour cut-off means no trial today for a session this afternoon). Before that, trials ignored the setting and could be booked until an hour before the session. Admins placing a trial from the booking detail are not limited by it — the cut-off is a booking-form rule. See [Trial sessions](../setup/trial-sessions.md).
 
 ### Class settings
 

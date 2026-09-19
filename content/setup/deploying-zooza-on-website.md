@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0080_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-17"
+last_converted: "2026-09-19"
 related_articles: ["publish-widgets", "customizing-widgets", "contact-form-on-your-website"]
 ---
 
@@ -28,6 +28,8 @@ more.
 |---|---|
 | Putting Zooza widgets on your website | The widget key from **Team & Settings → Publish → Widget**. That is all. |
 | Building your own integration against Zooza data | A REST API key — a different thing, requested separately. See [docs.zooza.online](https://docs.zooza.online/quickstart). |
+
+**About the REST API:** it is available on every plan, but it is **not switched on by default** — ask support and they will enable it and issue the key and client secret. The API acts on behalf of a user account, and every write (an attendance record, say) is logged under that account's email. Create a dedicated "technical" owner such as `api@yourdomain` and use it for API calls, so that later you can tell what your integration did from what your team did. The documented endpoints are the commonly used ones; there are more, so ask if the business case you are solving is not covered.
 
 If a web developer asks you for "the API key", they almost always mean the widget key
 above — send them to **Publish → Widget** and to the embed code on that screen.

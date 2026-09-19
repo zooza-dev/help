@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-13"
+last_converted: "2026-09-19"
 related_articles: ["inbound-payments-setup","stripe-refund-guide","payment-options","integrations-hub"]
 ---
 
@@ -101,6 +101,23 @@ If you see a "provider not connected" error when selecting **Stripe Connect** as
 3. Once connected, try saving the programme again.
 
 This validation prevents a misconfiguration that would cause payment failures at booking time. Previously, saving would succeed silently but payments would fail when a client tried to pay.
+
+## Parents see "This account cannot currently make live charges" — what happened?
+
+The message comes from Stripe and means the connected account is not able to charge — usually because it is a **new, never-completed Stripe account**, not the one you actually use.
+
+This is how it happens. During Stripe onboarding, Stripe asks whether to sign in to an existing account or create a new one. Choosing *create* — or just clicking through — makes a fresh account with nothing filled in (no support phone, no terms of service, no verification), and Zooza dutifully connects to that one. Repeat the onboarding a few times and you have several half-made accounts and one real one, with the wrong one live.
+
+**When onboarding asks, sign in to your existing Stripe account.** Do not create a new one. Your working account is the one that has already taken payments.
+
+**If you are already in this state:**
+
+1. Go to **Team & Settings → Integrations → Stripe** and note the status and the connected account.
+2. In your Stripe dashboard, check which account is fully enabled (verification complete, payouts enabled). The account id (`acct_…`) tells them apart.
+3. Ask Zooza support to point the connection at the enabled account. Since 18 September 2026 Zooza can reconnect a previously connected, charge-capable account rather than only creating new ones, and the checkout shows a plain "payments are not available" message in Zooza instead of Stripe's raw error while the account cannot charge.
+4. Leave the deletion of the abandoned accounts to Stripe support; it does not affect the working connection.
+
+**Currency:** the region you pick at onboarding decides the currency Stripe offers. A UK-region onboarding will not offer EUR even if your bank account is in EUR — if that is wrong, say so before completing onboarding rather than after.
 
 ## Parents cannot pay and the page says "Not secure"
 

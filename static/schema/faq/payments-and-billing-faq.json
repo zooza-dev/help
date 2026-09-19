@@ -14,6 +14,22 @@
     },
     {
       "@type": "Question",
+      "name": "A client asks for a payment link — what do I send?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a booking, the payment link is the link to the client's profile. There is no\nseparate one-off payment URL per instalment. The client opens their profile, sees what is\noutstanding and pays there — and the same link keeps working for the next instalment, so\nyou are not issuing a new one every month.\n\nThe dynamic tag is <code>&#42;&#124;WIDGET_PROFILE_URL&#124;&#42;</code>. Drop it into any\nemail or message template and each recipient gets their own.\n\nIt signs the holder in. The link carries a token, so anyone who opens it is inside\nthat client's profile. Send it to the client, not into a group chat, and do not paste\none client's link into a template as fixed text — use the tag, which fills in the right\nlink per recipient.\n\nProducts are the exception. A gift voucher or entry pass sold on its own has its own\ncheckout link, copied from the product itself — see\nShare a course or class registration link."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "\"Send them an invoice\" — do you mean the document, or the money?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Worth separating, because the same sentence covers two different jobs and only one of them\ninvolves an invoice.\n\nOn an outstanding booking it is nearly always the first. People say \"send them an invoice\"\nmeaning \"tell them they owe us and make it easy to pay\", and an invoice PDF on its own does\nneither particularly well: it is a record of a charge, not a prompt, and it carries no link\nto pay."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How do I resend an invoice to a client?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -41,7 +57,23 @@
       "name": "What does a negative balance mean on a booking?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "In Zooza, the balance shows what the client still owes (positive) or what they have overpaid (negative).\n\n- Positive balance (e.g. €50) — the client owes money. The outstanding amount has not been paid.\n- 0 — fully paid.\n- Negative balance (e.g. −€30) — the client has credit. They paid more than they owed, or a refund or manual credit was applied. You may owe them a refund, or the credit can be left on the account to offset future invoices.\n\nImportant: A negative balance means the client has credit, not that they owe money. This is the opposite of what many people intuitively assume. If you see −€30, the client is €30 ahead, not €30 in arrears.\n\nThe figure is not always shown with a sign. In some places the amount appears bare, so an overpayment looks identical to a debt. Before chasing a client for a number you do not recognise, open the bookings behind it — an unexplained total is often two bookings that were paid twice over, not money owed."
+        "text": "In Zooza, the balance shows what the client still owes (positive) or what they have overpaid (negative).\n\n- Positive balance (e.g. €50) — the client owes money. The outstanding amount has not been paid.\n- 0 — fully paid.\n- Negative balance (e.g. −€30) — the client has credit. They paid more than they owed, or a refund or manual credit was applied. You may owe them a refund, or the credit can be left on the account to offset future invoices.\n\nImportant: A negative balance means the client has credit, not that they owe money. This is the opposite of what many people intuitively assume. If you see −€30, the client is €30 ahead, not €30 in arrears.\n\nThe figure is not always shown with a sign. In some places the amount appears bare, so an overpayment looks identical to a debt. Before chasing a client for a number you do not recognise, open the bookings behind it — an unexplained total is often two bookings that were paid twice over, not money owed. A dance school saw \"1,300 Kč\" on a class overview, searched for unpaid bookings and found one for 325 Kč; the 1,300 was two bookings that had overpaid.\nBalance figures are being relabelled with a state word — Overpaid, Outstanding or No debt — precisely so that the direction no longer depends on reading a sign. Where you see the word, trust it over the sign. The booking detail is always the authority; list and tile figures are recalculated in the background and can lag it by minutes to half an hour."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "The booking shows more debt than this month's fee — why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because the next instalment already exists. A scheduled payment is created a set number of days before its due date — by default 15 — and is added to the booking's balance the moment it is created, not on the due day.\n\nExample: a membership of €71 a month with a €25 registration fee in the first month. On 16 September the booking shows €167 outstanding: September's €96 (still unpaid) plus October's €71, which is due on 1 October and was therefore created on 16 September.\n\nThe number of days is the \"days due\" value in Settings → Billing & Payments → Payment settings; leaving it at 0 keeps the 15-day default. Shorten it if you would rather parents not see next month's instalment so early — bearing in mind that the \"upcoming payment\" and \"payment created\" notifications count from the same creation date (see Automatic payment reminders)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I split one payment between two bookings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not in halves. A received payment can be moved to another booking, but only as a whole. When a parent pays for two children with one transfer against one child's variable symbol:\n\n1. Open the booking that received the payment, find the transaction in the payments list and choose Edit payment (correction). Set the correction to the amount that belongs to the other child — half, if they split it evenly. The first booking now shows only its own share.\n2. Open the second child's booking and Add payment for the other half, with a note saying where the money actually arrived.\n\nDo not use Refund for this — nothing is being returned. See Payment correction vs refund."
       }
     },
     {
@@ -65,7 +97,7 @@
       "name": "What is the \"tolerance period\" (or grace period) for payments?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The tolerance period is the same as the \"Awaiting payment\" window described above. The field controlling it is called Number of days until payment is due in Settings → Payments.\n\nTwo important clarifications:\n\n- It is a grace window, not a due-date shift. Setting 14 days means a booking stays in \"Awaiting payment\" for 14 days before Zooza marks it as overdue (\"Unpaid\"). It does not change the scheduled due dates on a payment plan — those are set independently per instalment.\n- It does not postpone instalment collection. If a client has a payment plan with a fixed due date, that due date is unaffected by the tolerance period setting. The tolerance period only controls when the status changes from \"Awaiting payment\" to \"Unpaid\"."
+        "text": "The tolerance period is the same as the \"Awaiting payment\" window described above. The field controlling it is called Number of days until payment is due in Settings → Payments.\n\nTwo important clarifications:\n\n- It is a grace window, not a due-date shift. Setting 14 days means a booking stays in \"Awaiting payment\" for 14 days before Zooza marks it as overdue (\"Unpaid\"). It does not change the scheduled due dates on a payment plan — those are set independently per instalment.\n- It does not postpone instalment collection. If a client has a payment plan with a fixed due date, that due date is unaffected by the tolerance period setting. The tolerance period only controls when the status changes from \"Awaiting payment\" to \"Unpaid\".\n\nSince 7 September 2026 it also sets the due date on your invoices. That is new: the\nsetting used to govern booking status and nothing else, while each invoicing engine\ninvented its own due date — Faktury Online applied its own 14 days, Fakturoid, Xero, ABRA\nFlexi and Oblio used 30, SuperFaktura and SmartBill used the issue date, and Zooza's own\ninvoices had none at all. Nine engines, five different answers, none of them the number\nyou had typed into the setting.\n\nThey all read it now. If your invoices have been going out with a due date you did not\nchoose, this is where it came from, and this is where you change it.\n\nInstalment due dates on a payment plan are still set per instalment and are not affected."
       }
     },
     {
@@ -214,6 +246,14 @@
     },
     {
       "@type": "Question",
+      "name": "The booking shows a payment but the invoice leaves it out",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nearly always the invoice's date range, not a missing payment.\n\nAn invoice collects the payments that fall inside a period, and when you open it for\nediting there are two date pickers that set that period. A payment that arrived before\nthe start, or that was moved onto this booking from another one and kept its original\ndate, sits outside the window and is not counted — so the invoice shows a balance still\nowing while the booking's payment list plainly shows the money.\n\nWhat to do: open the invoice, widen the two dates until they cover the payment, and\nsave. If every payment is visible on the booking and the invoice still misses one after\nthat, send support the booking — at that point it is worth a look.\n\nThis comes up most after moving a client between classes, because the payment travels to\nthe new booking while keeping the date it was originally made."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "I accidentally generated a duplicate or €0 invoice — what do I do?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -233,7 +273,7 @@
       "name": "Does Zooza support credit notes or debit notes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "- Credit note (reduces the original invoice — e.g. correcting an overcharge, issuing a partial refund on an invoice)\n- Debit note (increases the original invoice — e.g. charging an additional amount not included originally)\n\nZooza does not have a dedicated credit note or debit note button. What is available depends entirely on which invoicing system you use:\n\nImportant: Changes made to invoices in external systems (Xero, Abra Flexi, Smartbill, Fakturoid, Oblio) do not sync back to Zooza automatically. Use the manual refresh button on the invoice in Zooza to pull the latest state. Zooza always keeps the original invoice reference it generated.\n\n### To fix a wrong invoice — general process\n\n1. Identify which invoicing system you use (Settings → Billing & Payments → Invoice Settings).\n2. If using Zooza built-in: click the pencil icon next to the invoice on the booking detail. You can correct the period, date, payment method, and description. This does not change the payment amount.\n3. If using an external system: open the invoice in that system and apply the correction there (edit, void, credit note, or storno — depending on the system). The corrected version will not appear in Zooza.\n4. If the payment amount itself needs to change, adjust the debt on the booking in Zooza separately — see Edit payment on booking.\n\n### To increase the amount owed (debit note equivalent)\n\nZooza does not issue debit notes. To charge a client an additional amount:\n\n1. Open the booking detail.\n2. Adjust the outstanding debt manually — see Edit payment on booking.\n3. If an invoice is required for the additional amount, generate a new invoice for that booking once the additional payment is recorded."
+        "text": "- Credit note (reduces the original invoice — e.g. correcting an overcharge, issuing a partial refund on an invoice)\n- Debit note (increases the original invoice — e.g. charging an additional amount not included originally)\n\nZooza does not have a dedicated credit note or debit note button. What is available depends entirely on which invoicing system you use:\n\n### The client cancelled and wants their money back — in what order?\n\nA refund usually needs three separate things doing, and only one of them happens in Zooza.\n\n1. The credit note is raised outside Zooza and sent to the client, per the table above.\n2. Record the refund on the booking in Zooza. For anything not taken through a payment\n   gateway this is an administrative entry only — no money moves. Put a note on it\n   saying you sent the money back by hand, so the next person reading the booking knows\n   the transfer already happened.\n3. Then cancel the booking. That frees the seat and stops the automatic emails — the\n   reminders and notifications that would otherwise keep arriving for a client who has\n   left. A cancelled booking still exists and can be reactivated.\n\nCancel rather than delete. Deleting takes the payment history with it out of your\nreports, and that history is the record of a refund you have just issued. Deleting is\nfor bookings created in error or duplicated — never for one that carried money. See\nWhat does \"Cancelled\" mean — and is it the same as deleted?.\n\nImportant: Changes made to invoices in external systems (Xero, Abra Flexi, Smartbill, Fakturoid, Oblio) do not sync back to Zooza automatically. Use the manual refresh button on the invoice in Zooza to pull the latest state. Zooza always keeps the original invoice reference it generated.\n\n### To fix a wrong invoice — general process\n\n1. Identify which invoicing system you use (Settings → Billing & Payments → Invoice Settings).\n2. If using Zooza built-in: click the pencil icon next to the invoice on the booking detail. You can correct the period, date, payment method, and description. This does not change the payment amount.\n3. If using an external system: open the invoice in that system and apply the correction there (edit, void, credit note, or storno — depending on the system). The corrected version will not appear in Zooza.\n4. If the payment amount itself needs to change, adjust the debt on the booking in Zooza separately — see Edit payment on booking.\n\n### To increase the amount owed (debit note equivalent)\n\nZooza does not issue debit notes. To charge a client an additional amount:\n\n1. Open the booking detail.\n2. Adjust the outstanding debt manually — see Edit payment on booking.\n3. If an invoice is required for the additional amount, generate a new invoice for that booking once the additional payment is recorded."
       }
     },
     {
@@ -481,7 +521,7 @@
       "name": "What does \"Ignored\" mean on an inbound payment?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "An Ignored inbound payment is one that Zooza received from the bank but deliberately did not process. This happens in two situations:\n\n1. Duplicate detection (deduplication) — The payment notification arrived more than once (for example, the bank resent the same notification). Zooza's deduplication agent recognises that it has already processed an identical payment (same amount, same reference, same date) and marks subsequent copies as Ignored to avoid double-matching.\n2. Manual ignore — An admin explicitly marked the payment as Ignored. This is typically done for payments that arrived in error, need to be handled outside Zooza, or belong to a different system.\n\nAn Ignored payment is not lost — it stays in Payments → Received payments with an Ignored status and is visible to admins. If an inbound payment was incorrectly marked as Ignored (for example, by a misconfigured AI rule), you can review and reprocess it.\n\nTo investigate why a payment was ignored: go to Payments → Received payments, find the payment, and check its status details. Also review Payments → Received payments → AI Rules & Filters to confirm no rule is excluding this payment type."
+        "text": "An Ignored inbound payment is one that Zooza received from the bank but deliberately did not process. This happens in two situations:\n\n1. Duplicate detection (deduplication) — The payment notification arrived more than once (for example, the bank resent the same notification). Zooza's deduplication agent recognises that it has already processed an identical payment (same amount, same reference, same date) and marks subsequent copies as Ignored to avoid double-matching.\n2. Manual ignore — An admin explicitly marked the payment as Ignored. This is typically done for payments that arrived in error, need to be handled outside Zooza, or belong to a different system.\n\nAn Ignored payment is not lost — it stays in Payments → Payment reconciliation with an Ignored status and is visible to admins. If an inbound payment was incorrectly marked as Ignored (for example, by a misconfigured AI rule), you can review and reprocess it.\n\nTo investigate why a payment was ignored: go to Payments → Payment reconciliation, find the payment, and check its status details. Also review Payments → Payment reconciliation → AI rules & filters to confirm no rule is excluding this payment type."
       }
     },
     {

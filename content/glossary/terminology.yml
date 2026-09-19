@@ -6,7 +6,7 @@
 # ║  Edit there, then run: python3 scripts/sync_terminology.py      ║
 # ╚══════════════════════════════════════════════════════════════════╝
 #
-# Last synced: 2026-09-17
+# Last synced: 2026-09-19
 # Used by: scripts/normalize_terminology.py → build/terminology/dictionary.json
 #
 # Fields per term:
@@ -635,6 +635,25 @@ terms:
       if ANY of its blocks allows trials. The Programme-level setting remains the master
       switch. Content written before Sept 2026 saying "trials cannot be assigned to a
       specific block" is out of date.
+      ADMIN CAN CREATE TRIALS (confirmed by Michal 2026-09-19): create the booking, open it,
+      "Change status" → "Convert to trial" card (shown when the class supports trials) → pick
+      sessions. The same picker appears on copy/move with status "Trial started". Any text
+      saying "admins cannot create trial bookings, only the booking form can" is WRONG.
+      PRICING IS PER COMPANY (account); one legal entity with several venues = one company
+      with several locations, one subscription. Companies cannot be merged by the system,
+      only manually via transfers.
+      ENTRY-PASS BALANCE/USAGE for an admin: booking detail → Credits card. There is no
+      "Discounts → Credits" screen.
+      DELETING A REGISTRATION (verified in api-v1 2026-09-19): a manual status change emails
+      the client only when "Send confirmation email" is ticked. An unrequested "you were
+      cancelled" email comes from the unpaid-registration auto-deletion (Payment Reminders →
+      Delete unpaid registrations, template "Automatic deletion").
+      BOOKING CUT-OFF (shipped 2026-09-17): the programme's "Hide from booking form N hours
+      before the programme begins" now also filters trial sessions on the booking form. The
+      field is locked while Late bookings != Disabled; workaround: disable, edit, re-enable.
+      It exists only for full-programme and one-off programme types, not pay-as-you-go.
+      "Paid trial" and "sessions shown in form = 1" are two separate settings; the second
+      is what limits the form to the nearest date.
     public: true
 
   - id: auto-continuation
@@ -955,6 +974,14 @@ terms:
       If customer asks about: missed sessions, cancellations, replacement lessons, making up
       a class, attending instead on another day → treat as make-up session / attendance topic.
       Only discuss Billable sessions if customer explicitly asks about pricing calculation settings.
+      CREDIT DELETION (confirmed 2026-09-16, registration 527759): if an instructor changes an
+      attendance record from "Cancelled" to "Did not attend", the make-up credit created by the
+      cancellation is DELETED. "Parent cancelled in time, got the email, but sees no dates to
+      book" — check the attendance record and the activity log first. Fix: set it back to
+      Cancelled. Prevention: Settings → General → "Attendance management settings for
+      instructors" = Limited (instructors only get attended / did not attend).
+      ADMIN CANCELS A SUBSTITUTION on the session detail (where attendance is managed);
+      SK "zastupovanie" = instructor substitution, NOT a booking.
     public: true
 
   - id: transferred-make-up-session
@@ -1001,6 +1028,9 @@ terms:
       custom replacement lesson proposal. Check Settings → Make-up sessions → General Settings.
       Key settings: 'Maximum number of transferred make-up sessions between billing periods'
       (0 = disabled), 'Number of days to use transferred make-up sessions'.
+      TIMING (confirmed 2026-09-14): transferred credits are generated on the day the class
+      ends. While the class is still running, clients do NOT see them in their profile — "when
+      will parents see the carried-over credits?" = on the class end date, not immediately.
     public: false
 
   - id: custom-replacement-lesson
@@ -1279,6 +1309,15 @@ terms:
       they mean an inbound payment that landed in manual review (status: new).
       Guide them to Payments → Payment reconciliation and pair manually from the Queue.
       When they say "payment not arriving", check GoCardless consent expiry first.
+      CSV IMPORT DUPLICATES (confirmed 2026-09-14): imported rows go through the same dedup
+      as bank-read payments. A row identical to a known payment (same VS, date, amount) is NOT
+      paired again — it lands as unpaired/ignored. "400 unpaired payments after import" = the
+      company re-imported overlapping statements. Advice: import often, export only the days
+      since the last import, never combine CSV import with automatic bank reading on the same
+      account. KB text saying a re-import doubles balances is out of date.
+      IGNORED = never imported into the system; a payment in "ignored records" cannot be
+      paired to a booking until it is imported. Pairing only targets ACTIVE registrations —
+      a cancelled registration will not be paired automatically; add the payment manually.
     public: true
 
   - id: entry-pass

@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: "legacy/0016_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-17"
+last_converted: "2026-09-19"
+related_articles: ["price-and-payment-setup", "payment-templates-creation", "booking-form-settings", "payments-and-billing-faq"]
 ---
 
 # Late bookings (pro-rata management)
@@ -38,6 +39,8 @@ The **Late bookings** setting controls whether clients can register after the cl
 **Disabled** is useful when you do not want latecomers at all — for example, progressive programmes where missing the first sessions makes the rest difficult to follow.
 
 **Manual confirmation required** gives you full control. You see every late booking before it is confirmed, and you can adjust the price, change the class, or decline the booking. This is the most common choice for programmes with instalment-based pricing.
+
+It is also the answer to "I don't want the booking form to show a recalculated amount to people joining late": with manual confirmation the client is **not shown an amount to pay** on the form — they choose their payment frequency, and you set the sum when you confirm.
 
 **Automatically confirmed** is ideal for memberships, drop-in classes, or any programme where joining late is normal and the price calculation is straightforward.
 

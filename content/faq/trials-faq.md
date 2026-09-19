@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-09-19"
+related_articles: ["trial-sessions", "trials-daily-business", "booking-form-settings", "sending-email-sms", "booking-faq"]
 ---
 
 # Trial Classes FAQ
@@ -105,7 +106,32 @@ Trial bookings count towards class capacity. When the client finishes their tria
 
 ## Can an admin manually create a trial booking?
 
-No. Trial bookings can only be created by parents through the online booking form. As an admin, you can only create standard enrolments. If needed, you can go through the booking form on behalf of a parent as a workaround.
+Yes. The booking form is the usual route, but any booking can be turned into a trial from the admin:
+
+1. Create the booking as usual if it does not exist yet (**Add booking** on the class, or the booking form on the parent's behalf).
+2. Open the booking and click **Change status**.
+3. Below the status options there is a **Convert to trial** card — it appears when the class supports trials ("This class supports trials. You can convert this booking to a trial registration."). Click **Convert to trial**.
+4. Pick the session(s) the client will attend as a trial and confirm.
+
+The session list you see as an admin is every upcoming session of that class with a free seat (up to 20). The customer-facing trial rules — "Sessions shown in form", the booking cut-off, extra-capacity-only seating — do not apply to you, because you are making a deliberate decision. Trials placed this way follow the trial automation (follow-up emails, Trial Lost) once attendance is recorded, exactly like trials booked online.
+
+The same session picker appears when you copy or move a booking and set its status to **Trial started**.
+
+> Until September 2026 the session picker sometimes did not appear (a fault, since fixed). Older help text saying "admins cannot create trials" was wrong.
+
+## How do I contact the parents who attended a trial but did not enrol?
+
+Every stage of a trial is a booking status, so use the **Bookings** list rather than the message composer:
+
+1. Go to **Bookings** and filter **Status** to **Trial ended** (attended, not yet converted) and/or **Trial lost** (the automation gave up on them).
+2. Optionally narrow by programme or class.
+3. Use **Send email** (or SMS) at the top of the list.
+
+**Trial ended** means the client attended and has not converted yet — these are the people worth a personal nudge. **Trial lost** is where the automation moves a booking after its reminders went unanswered. The message composer's audience options ("all clients with an active booking") do not include trial statuses, so filtering the bookings list is the way to reach exactly this group.
+
+## Why could a parent book a trial for a session starting in a few hours?
+
+Until September 2026 the programme's booking cut-off (**Online booking → Hide from booking form N hours before the programme begins**) applied to full enrolments only; trial sessions could be booked until an hour before they started. That is fixed — the booking form now applies the same cut-off to trial sessions. If it still seems not to, check the value of that field on the programme; it is locked while Late bookings are enabled, see [Booking form settings](../guides/booking-form-settings.md).
 
 ## How do I handle a client who wants to change their trial date?
 

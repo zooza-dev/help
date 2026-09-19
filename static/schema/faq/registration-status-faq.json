@@ -22,6 +22,14 @@
     },
     {
       "@type": "Question",
+      "name": "A booking exists but nothing was paid — did something go wrong?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Almost certainly not. The payment follows the booking, because the booking has to exist\nbefore there is anything to pay for. The parent fills in the form, the booking is\ncreated, and only then are they sent to the payment step. If their card fails, or they\nget distracted and close the tab, the booking is still there — which is what you want,\nbecause they can come back and pay without filling the form in again.\n\nSo an unpaid booking on your list is not evidence of a broken checkout. It is a parent\nwho has not finished yet.\n\nThere is no setting that refuses to create the booking until payment succeeds. What\nyou control is what happens next: payment reminders, and whether unpaid bookings are\ndeleted automatically after a while. Both are set per programme — see\nAutomatic payment reminders.\n\nWhen it is worth a closer look: many parents in a row stopping at the same point.\nThat is usually the payment page rather than the booking — a card gateway not finishing,\nor a site served over http://, which Stripe refuses. See\nStripe payments FAQ."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What does \"No debt\" mean?",
       "acceptedAnswer": {
         "@type": "Answer",

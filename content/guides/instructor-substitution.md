@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: "legacy/0065_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-09-19"
+related_articles: ["instructors-working-hours", "user-roles", "instructor-access-faq", "managing-instructors"]
 ---
 
 # Instructor substitution
@@ -33,6 +34,8 @@ Once activated, instructors have the flexibility to set up a substitute on a sel
 
 ![After selecting a instructor, a window will open with the availability of the...](../../assets/images/blocks-creation-07.png)
 Note: If a substitute is set up by an administrator, the request will automatically be approved. The substituting instructor can still change it by creating a new request or cancel it.
+
+To cancel a substitution as an administrator, open the **session detail** — the same screen where attendance is managed — and remove the substitution there. There is no separate substitutions list to go through.
 
 
  5. Click *Create* to send the request to the instructor's email.

@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: "https://support.zooza.online/portal/en/kb/articles/copy-courses-groups"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-03"
+last_converted: "2026-09-19"
+related_articles: ["creating-a-class", "custom-holidays", "transfer-and-copy-bookings", "programmes-timetables-sessions-faq"]
 ---
 
 # Copy a programme or class
@@ -67,6 +68,8 @@ You can choose whether to copy the session schedule:
 - **Keep the same times** — sessions are created with the same dates as the original.
 
 After setting the dates, you can **preview the new sessions** before confirming.
+
+> **Holiday skipping is not copied.** "Skip holidays / school breaks" is an option you tick while *generating* sessions; it is not stored on the class or on the sessions, so the copy cannot know which dates the original skipped. Copied sessions land on the new dates whether or not they fall on a holiday. Use the preview to delete the ones that do, or copy the class without sessions and generate them afresh with the skip option ticked.
 ![Screenshot — copy programme and class](../../assets/images/copy-programme-and-class-06.png)
 ### Copy bookings
 
