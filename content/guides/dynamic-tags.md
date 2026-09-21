@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0005_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-15"
+last_converted: "2026-09-21"
 related_articles: ["message-templates", "edit-session-notification-template", "sending-email-sms"]
 ---
 
@@ -320,6 +320,6 @@ actually reads.
 
 In rare cases, the dynamic tag rendering service may experience temporary outages, causing tags to appear as blank in sent emails. If you notice blank tags in recently sent emails:
 
-1. Check **Communication → Sent emails** to verify which emails were affected.
+1. Check **Communication → History** to verify which emails were affected.
 2. Contact support to confirm whether a service issue occurred.
 3. Resend affected emails after the issue is resolved.

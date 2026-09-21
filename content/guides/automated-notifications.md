@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-20"
+last_converted: "2026-09-21"
 ---
 
 
@@ -23,7 +23,7 @@ Zooza sends automated emails to clients based on events — booking created, ses
 
 **Templates vs. automation steps**
 
-Every automated notification uses an email template. Templates are editable in **Communication → Message Templates** (owner access required). Some system-level notifications (login link, unknown user) use fixed system templates that cannot be edited.
+Every automated notification uses an email template. Templates are editable in **Communication → Templates** (owner access required). Some system-level notifications (login link, unknown user) use fixed system templates that cannot be edited.
 
 Automation steps (for bookings, trials, waitlist) can be toggled on or off individually per programme in **Programmes → programme → Automations**.
 
@@ -189,7 +189,7 @@ These are transactional status updates — no opt-out exists.
 
 | What you want to do | Where to go |
 |---|---|
-| Edit any notification template | **Communication → Message Templates** |
+| Edit any notification template | **Communication → Templates** |
 | Disable booking/trial/waitlist automation step | **Programmes → programme → Automations** |
 | Enable/disable session reminders | **Programmes → programme → Online Booking → Edit → Send event notifications** |
 | Configure global payment notification toggles (before payment creation, after manual entry, after import) | **Settings → Billing & Payments → Payment settings** |

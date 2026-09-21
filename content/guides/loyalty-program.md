@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-14"
+last_converted: "2026-09-21"
 ---
 
 # Loyalty Program
@@ -43,7 +43,7 @@ Zooza offers three types of automatic loyalty discounts. Each model is configure
 | **Returning Client Discount** | Rewards clients who have registered before. Discount tiers can increase with the number of previous bookings. |
 | **Referral Program** | Rewards clients who refer new customers. The referred new client and/or the referrer can both receive a discount. |
 
-Go to **Sales & Payments → Loyalty Program** to see the status of all three models and navigate to each one's setup page.
+Go to **Sales & Payments → Loyalty Programme** to see the status of all three models and navigate to each one's setup page.
 
 ![Screenshot — loyalty program](../../assets/images/loyalty-program-01.png)
 
@@ -122,7 +122,7 @@ This means a client on a monthly membership with a sibling discount always pays 
 
 ## Quick start
 
-1. Go to **Sales & Payments → Loyalty Program**.
+1. Go to **Sales & Payments → Loyalty Programme**.
 2. Click **Set Up** on the model you want to configure first.
 3. Add at least one rule (choose programmes and set the discount).
 4. Save the rule, then enable the model.

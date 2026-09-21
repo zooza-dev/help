@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-09-21"
 ---
 
 # Retention
@@ -58,7 +58,7 @@ If you added a custom note in the Retention settings, it appears with the link i
 Zooza does not have a dedicated Retention report. To track whether a client returned through the retention link:
 
 - Check the client's booking history — if they re-enrolled after a cancellation or Trial Lost event, a new booking will appear.
-- In **Reports → Trials**, you can see which trials resulted in Trial Lost, giving you a starting point to check follow-up enrolments manually.
+- In **Reports & Insights → Reports → Trial Sessions Report**, you can see which trials resulted in Trial Lost, giving you a starting point to check follow-up enrolments manually.
 
 ## Common questions
 
@@ -76,7 +76,7 @@ The booking is created normally. The retention link is consumed — the client c
 
 ### Can I resend the retention link manually?
 
-Not directly. The link is sent automatically at the moment of Trial Lost or cancellation. If a client missed it or the link expired, you can re-send a manual re-engagement message via **Communication → Compose** with a link to your booking page or client profile.
+Not directly. The link is sent automatically at the moment of Trial Lost or cancellation. If a client missed it or the link expired, you can re-send a manual re-engagement message via **Communication → Send message** with a link to your booking page or client profile.
 
 ### Does Retention apply to clients who cancelled themselves (not the admin)?
 

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-20"
+last_converted: "2026-09-21"
 ---
 
 # Run a term reset — move all clients to a new term
@@ -170,7 +170,7 @@ Yes — copy each class individually. This takes a few minutes but gives you ful
 
 Two steps, and deliberately not a third:
 
-1. **Cancel the scheduled payments falling in that month.** Go to **Payments → Scheduled** and cancel just those. Do not move everyone's payment dates forward — the normal cycle picks up again by itself afterwards.
+1. **Cancel the scheduled payments falling in that month.** Go to **Sales & Payments → Scheduled payments overview** and cancel just those. Do not move everyone's payment dates forward — the normal cycle picks up again by itself afterwards.
 2. **Delete that month's sessions** so parents do not receive reminders and attendance notifications for classes that are not running. Do this **without notifying**, then send one message of your own explaining the break. A dozen automated cancellation emails read very differently from one clear note.
 
 The one thing to check individually: if the *following* month's payment has not been generated yet, cancelling the current one can stop the schedule rather than pause it. Where that happens you may need to add the next scheduled payment by hand. With a small roster it is quicker to go through the bookings one by one than to fix it afterwards.

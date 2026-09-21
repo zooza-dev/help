@@ -193,6 +193,62 @@ def programme_screens(strings):
     ]
     for o in more:
         o["area"] = "bookings" if o["id"].startswith("bookings.") else "clients"
+
+    # The rest of the admin sidebar, read off the live menu on 2026-09-21. (area, id, menu, route, title, prefixes)
+    rest = [
+        ("payments", "payments.overview", "Sales & Payments → Payments", "payments", "Payments", ("payments__",)),
+        ("payments", "payments.import", "Sales & Payments → Payments → Import", "payments/import", "Import payments", ("payments__import__", "import_payments__")),
+        ("payments", "payments.refunds.requests", "Sales & Payments → Refunds → Requests", "payments/refunds/requests", "Refund requests", ("refunds__", "refund_requests__")),
+        ("payments", "payments.refunds.issued", "Sales & Payments → Refunds → Issued", "payments/refunds/issued", "Issued refunds", ("refunds__",)),
+        ("payments", "payments.mandates", "Sales & Payments → Direct Debit mandates", "payments/mandates", "Direct Debit mandates", ("mandates__",)),
+        ("payments", "payments.transactions.cash_transfer", "Sales & Payments → Transactions → Cash & transfer", "payments/transactions/cash_transfer", "Cash & transfer", ("transactions__",)),
+        ("payments", "payments.transactions.card", "Sales & Payments → Transactions → Card", "payments/transactions/card", "Card", ("transactions__",)),
+        ("payments", "payments.transactions.direct_debit", "Sales & Payments → Transactions → Direct debit", "payments/transactions/direct_debit", "Direct debit", ("transactions__",)),
+        ("payments", "payments.transactions.import", "Sales & Payments → Transactions → Import payments", "payments/transactions/import", "Import payments", ("transactions__",)),
+        ("payments", "payments.inbound.queue", "Sales & Payments → Payment reconciliation → Queue", "payments/inbound/queue", "Queue", ("inbound__",)),
+        ("payments", "payments.inbound.rules", "Sales & Payments → Payment reconciliation → AI rules & filters", "payments/inbound/rules", "AI rules & filters", ("inbound__",)),
+        ("payments", "payments.inbound.analytics", "Sales & Payments → Payment reconciliation → AI analytics", "payments/inbound/analytics", "AI analytics", ("inbound__",)),
+        ("payments", "payments.scheduled", "Sales & Payments → Scheduled payments overview", "payments/scheduled", "Scheduled payments overview", ("scheduled_payments__",)),
+        ("payments", "payments.discounts", "Sales & Payments → Discounts", "payments/discounts", "Discounts", ("coupons__", "discounts__")),
+        ("payments", "payments.loyalty", "Sales & Payments → Loyalty Programme", "payments/loyalty", "Loyalty Programme", ("loyalty__",)),
+        ("payments", "payments.invoices", "Sales & Payments → Invoices", "payments/invoices", "Invoices", ("invoices__",)),
+        ("payments", "payments.invoices.detail", "Sales & Payments → Invoices → invoice", "payments/invoices/26", "Invoice detail", ("invoice_detail__",)),
+        ("products", "products.list", "Products & Services → ProductsPRO", "products", "Products", ("products__",)),
+        ("products", "services.list", "Products & Services → Services", "services", "Services", ("services__",)),
+        ("communication", "communication.compose", "Communication → Send message", "communication/compose", "Send message", ("communication__compose__", "communication__")),
+        ("communication", "communication.history", "Communication → History", "communication/sent_communication", "History", ("communication__history__",)),
+        ("communication", "communication.message_jobs", "Communication → Message Jobs", "communication/message_jobs", "Message Jobs", ("message_jobs__",)),
+        ("communication", "communication.templates", "Communication → Templates", "communication/templates", "Templates", ("communication__templates__", "templates__")),
+        ("communication", "communication.whatsapp", "Communication → WhatsApp", "communication/whatsapp", "WhatsApp", ("whatsapp__",)),
+        ("calendar", "calendar.week", "Activities → Calendar", "calendar", "Calendar", ("calendar__",)),
+        ("calendar", "calendar.daily", "Activities → Calendar → Daily overview", "calendar/daily", "Daily overview", ("calendar__daily__",)),
+        ("calendar", "calendar.planner", "Activities → Calendar → Planning calendar", "calendar/planner", "Planning calendar", ("calendar__planner__", "planner__")),
+        ("calendar", "feedback.nps", "Feedback → NPS", "feedback/nps", "NPS", ("nps__", "feedback__")),
+        ("calendar", "feedback.reviews", "Feedback → Reviews", "feedback/reviews", "Reviews", ("reviews__",)),
+        ("calendar", "feedback.submissions", "Feedback → Submissions", "feedback/submissions", "Submissions", ("feedback__submissions__",)),
+        ("reports", "reports.dashboard", "Reports & Insights → Dashboard", "reports", "Dashboard", ("dashboard__",)),
+        ("reports", "reports.registrations", "Reports & Insights → Reports → Bookings", "reports/registrations", "Bookings report", ("reports__",)),
+        ("reports", "reports.trials", "Reports & Insights → Reports → Trial Sessions Report", "reports/trials", "Trial Sessions Report", ("reports__",)),
+        ("reports", "reports.outstanding_payments", "Reports & Insights → Reports → Outstanding Payments", "reports/outstanding_payments", "Outstanding Payments", ("reports__",)),
+        ("reports", "reports.replacements", "Reports & Insights → Reports → Make-up sessions", "reports/replacements", "Make-up sessions report", ("reports__",)),
+        ("reports", "reports.additional_sessions", "Reports & Insights → Reports → Additional sessions", "reports/additional_sessions", "Additional sessions report", ("reports__",)),
+        ("reports", "reports.rescheduled", "Reports & Insights → Reports → Rescheduled", "reports/rescheduled", "Rescheduled", ("reports__",)),
+        ("reports", "reports.substituted", "Reports & Insights → Reports → Substituted", "reports/substituted", "Substituted", ("reports__",)),
+        ("reports", "reports.cancelled", "Reports & Insights → Reports → Cancelled", "reports/cancelled", "Cancelled", ("reports__",)),
+        ("reports", "reports.event_notifications", "Reports & Insights → Reports → Session notifications (not in the menu)", "reports/event_notifications", "Session notifications", ("event_notifications__",)),
+        ("reports", "reports.system_messages", "Reports & Insights → System messages", "reports/system_messages", "System messages", ("system_messages__",)),
+        ("team", "team.trainers", "Team & Settings → Instructors", "trainers", "Instructors", ("trainers__",)),
+        ("team", "team.trainer.detail", "Team & Settings → Instructors → instructor", "trainers/60", "Instructor detail", ("trainer_detail__",)),
+        ("team", "team.trainer.settings", "Team & Settings → Instructors → instructor → Settings", "trainers/60/trainer_settings", "Instructor settings", ("trainer_settings__",)),
+        ("team", "team.trainer.availability", "Team & Settings → Instructors → instructor → Availability", "trainers/60/availability", "Availability", ("trainer_availability__",)),
+        ("team", "team.publish", "Team & Settings → Publish", "widgets", "Publish", ("widgets__", "settings__widgets__")),
+        ("team", "team.integrations", "Team & Settings → Integrations", "integrations", "Integrations", ("settings__integrations__", "integrations__")),
+        ("team", "team.mcp", "Zooza AI Assistant", "mcp", "Zooza AI Assistant", ("mcp__",)),
+    ]
+    for area, sid, menu, route, title, prefixes in rest:
+        o = screen(sid, menu, route, title, prefixes)
+        o["area"] = area
+        more.append(o)
     return out + more
 
 
@@ -362,7 +418,9 @@ FIELDS_JS = r"""
 
 
 AREA_PRODUCT = {"settings": "Settings", "programmes": "Programmes", "classes": "Classes", "sessions": "Classes",
-                "files": "Communication", "bookings": "Bookings", "clients": "Clients", "orders": "Orders", "contacts": "Clients"}
+                "files": "Communication", "bookings": "Bookings", "clients": "Clients", "orders": "Orders", "contacts": "Clients",
+                "payments": "Payments", "products": "Orders", "communication": "Communication", "calendar": "Calendar",
+                "reports": "Settings", "team": "Settings"}
 
 
 def area_of(screen):

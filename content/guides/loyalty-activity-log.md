@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-14"
+last_converted: "2026-09-21"
 ---
 
 # Loyalty Activity Log
@@ -24,7 +24,7 @@ The activity log is a full history of every loyalty discount applied to a bookin
 
 ## Opening the activity log
 
-Go to **Sales & Payments → Loyalty Program**, then click the **Activity** button in the toolbar.
+Go to **Sales & Payments → Loyalty Programme**, then click the **Activity** button in the toolbar.
 
 ![Screenshot — loyalty activity log](../../assets/images/loyalty-activity-log-01.png)
 

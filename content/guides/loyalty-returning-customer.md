@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-14"
+last_converted: "2026-09-21"
 ---
 
 # Returning Client Discount
@@ -49,7 +49,7 @@ Zooza finds the matching rule for the programme being booked, then applies the h
 
 ## Set up the returning client discount
 
-Go to **Sales & Payments → Loyalty Program → Returning Client Discount**.
+Go to **Sales & Payments → Loyalty Programme → Returning Client Discount**.
 
 ### Step 1: Configure shared settings
 

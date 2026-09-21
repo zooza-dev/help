@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-13"
+last_converted: "2026-09-21"
 related_articles: ["sending-email-sms","notifications-center","login-and-account-faq","emails-in-primary-inbox"]
 ---
 
@@ -154,7 +154,7 @@ sent it, the cause is a setting rather than delivery — work through the steps 
 
 Session reminder emails (day-before notifications) are processed in batches. On busy days the batch may run later than expected. If reminders appear delayed or missing, check the **Session Notifications report** before escalating:
 
-1. Go to **Reports → Session Notifications** (direct link: `/#reports/event_notifications`).
+1. Go to **Reports → Session notifications** (direct link: `/#reports/event_notifications`).
 2. Find the date of the sessions whose reminders should have gone out.
 3. Check the status:
    - **Processed** — Zooza sent the reminder. If the client didn't receive it, the issue is on the recipient side (spam, opt-out, wrong email).
@@ -174,7 +174,7 @@ Delivery and appearance are different problems. If the message got there but the
 
 Before changing anything, look at the message as Zooza sent it:
 
-1. Go to **Communication → Message history** (`/#communication/sent_communication`).
+1. Go to **Communication → History** (`/#communication/sent_communication`).
 2. Click the client's email in the list.
 3. You see the message in roughly the format it went out in.
 
@@ -210,7 +210,7 @@ Contact support if:
 
 ## Email marketing integrations
 
-Zooza can sync client contacts with external email marketing platforms. Go to **Communication → Email Marketing Connections**.
+Zooza can sync client contacts with external email marketing platforms. Go to **Team & Settings → Integrations** and find the platform under **Communication**.
 
 **Mailchimp** — syncs your contacts to a Mailchimp list every two hours. Synchronised data includes email, first name, last name, phone, activity status, and assigned programmes. Click **Activate** to connect your Mailchimp account.
 

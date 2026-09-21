@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-19"
+last_converted: "2026-09-21"
 related_articles: ["inbound-payments-setup", "payment-pairing", "inbound-payments-internals", "payments-and-billing-faq"]
 ---
 
@@ -36,7 +36,7 @@ Most internet banking systems have an "Export transactions" or "Download stateme
 
 ## Step 1 — Go to the import screen
 
-Go to **Payments → Import**.
+Go to **Sales & Payments → Payments → Import**.
 
 ![Screenshot — csv payment import](../../assets/images/csv-payment-import-01.png)
 
@@ -87,7 +87,7 @@ After confirming, each matched payment is applied to the corresponding booking. 
 
 Imported rows go through the same pairing and duplicate checks as payments read from your bank. A row that matches a payment Zooza already knows — same variable symbol, same date, same amount — is **not paired again**. It ends up in the unpaired (new) or ignored list instead, so a booking is not credited twice.
 
-That protection is also why re-importing overlapping statements makes a mess of a different kind: every overlapping row lands in **Payments → Payment pairing** as unpaired, and you are left with hundreds of rows to sort through. A company importing whole-month statements every two days ended up with over 400 "unpaired" payments this way — none of them real.
+That protection is also why re-importing overlapping statements makes a mess of a different kind: every overlapping row lands in **Sales & Payments → Payment reconciliation** as unpaired, and you are left with hundreds of rows to sort through. A company importing whole-month statements every two days ended up with over 400 "unpaired" payments this way — none of them real.
 
 **To keep imports clean:**
 

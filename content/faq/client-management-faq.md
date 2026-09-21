@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-19"
+last_converted: "2026-09-21"
 ---
 
 
@@ -32,7 +32,7 @@ Go to **Bookings → Create booking**. At the "Choose the client" step, select *
 
 **Option 3 — Client import**
 
-Use **Clients → Import** to bulk-import client records from a CSV file. This creates client profiles (and optionally bookings) without going through the booking form one by one.
+Use **Clients → Clients → Import** to bulk-import client records from a CSV file. This creates client profiles (and optionally bookings) without going through the booking form one by one.
 
 ## How do I change the client (parent) on an existing booking?
 

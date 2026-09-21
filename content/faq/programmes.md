@@ -9,7 +9,7 @@ tags: ["programme", "class", "archive", "delete", "venue", "price", "rename", "t
 status: "published"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-20"
+last_converted: "2026-09-21"
 ---
 
 # FAQ — Programmes
@@ -122,7 +122,7 @@ No. Auto-enrolment invitations are not re-sent automatically when you later upda
 **What you can do:**
 
 1. Add the future classes to the auto-enrolment settings (Programme → Automations → Auto-enrolment → Edit → select the classes to offer).
-2. Manually contact the clients who expressed interest via **Communication → Send Email** — select the relevant class or bookings as the target, and include a direct link to the new class.
+2. Manually contact the clients who expressed interest via **Communication → Send message** — select the relevant class or bookings as the target, and include a direct link to the new class.
 
 Clients who have already received the invitation and visited their Client Profile will see the updated class list the next time they open the link, as long as the invitation link is still valid.
 

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0082_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-04"
+last_converted: "2026-09-21"
 ---
 
 # How to assign Direct Debit mandates to bookings (GoCardless)
@@ -76,11 +76,11 @@ The logic is the same, just done individually.
 
 ## Monitoring and troubleshooting mandates
 
-The mandate list lives at **Payments → Direct Debit mandates**.
+The mandate list lives at **Sales & Payments → Direct Debit mandates**.
 
 ![The Direct Debit mandates list under Payments](../../assets/images/payments-direct-debit-mandates.png)
 
-> **Navigation:** Go to **Payments → Direct Debit → Mandates**.
+> **Navigation:** Go to **Sales & Payments → Direct Debit mandates**.
 
 The Mandates tab is a filterable list of all your GoCardless mandates. Each row shows the payer, their linked order, the payment progress (paid vs. outstanding), whether the mandate is currently collecting offline payments, and the last payment date versus when the covered schedule ends.
 

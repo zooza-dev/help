@@ -12,7 +12,7 @@ related_articles: ["locations-and-venues-faq", "individual-sessions-lead-collect
 source_legacy_path: "legacy/0036_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-17"
+last_converted: "2026-09-21"
 ---
 
 # Lead collection
@@ -56,7 +56,7 @@ The consequence for pre-filling a class: if you add interested parents to a *reg
 
 The email sent to clients after joining a lead collection class is a separate template from the standard booking confirmation.
 
-Go to **Communication → Message Templates** and look for the **Lead collection** or **Interested** template. Customise the subject and body there — for example, to set expectations about when the schedule will be announced.
+Go to **Communication → Templates** and look for the **Lead collection** or **Interested** template. Customise the subject and body there — for example, to set expectations about when the schedule will be announced.
 
 ## Using lead collection for seasonal closures
 

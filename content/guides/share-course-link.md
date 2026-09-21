@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-09-21"
 related_articles: ["customizing-widgets", "creating-entry-passes", "zooza-sites", "publish-widgets", "deploying-zooza-on-website"]
 ---
 
@@ -109,7 +109,7 @@ A custom link also works as a **private link**: it can point to a class that is 
 
 Products are shared from the product itself, not through the class Share modal:
 
-1. Go to **Products & Services → Products**.
+1. Go to **Products & Services → ProductsPRO**.
 2. Open the product.
 3. Use **Open** or **Copy** at the top of the product detail.
 

@@ -942,3 +942,492 @@ screens:
   - contacts__
   strings: 126
   area: clients
+- id: payments.overview
+  menu: Sales & Payments → Payments
+  title: Payments
+  route: payments
+  url_template: https://{region}.zooza.app/#payments
+  roles: *id001
+  string_prefixes:
+  - payments__
+  strings: 179
+  area: payments
+- id: payments.import
+  menu: Sales & Payments → Payments → Import
+  title: Import payments
+  route: payments/import
+  url_template: https://{region}.zooza.app/#payments/import
+  roles: *id001
+  string_prefixes:
+  - payments__import__
+  - import_payments__
+  strings: 20
+  area: payments
+- id: payments.refunds.requests
+  menu: Sales & Payments → Refunds → Requests
+  title: Refund requests
+  route: payments/refunds/requests
+  url_template: https://{region}.zooza.app/#payments/refunds/requests
+  roles: *id001
+  string_prefixes:
+  - refunds__
+  - refund_requests__
+  strings: 36
+  area: payments
+- id: payments.refunds.issued
+  menu: Sales & Payments → Refunds → Issued
+  title: Issued refunds
+  route: payments/refunds/issued
+  url_template: https://{region}.zooza.app/#payments/refunds/issued
+  roles: *id001
+  string_prefixes:
+  - refunds__
+  strings: 12
+  area: payments
+- id: payments.mandates
+  menu: Sales & Payments → Direct Debit mandates
+  title: Direct Debit mandates
+  route: payments/mandates
+  url_template: https://{region}.zooza.app/#payments/mandates
+  roles: *id001
+  string_prefixes:
+  - mandates__
+  strings: 0
+  area: payments
+- id: payments.transactions.cash_transfer
+  menu: Sales & Payments → Transactions → Cash & transfer
+  title: Cash & transfer
+  route: payments/transactions/cash_transfer
+  url_template: https://{region}.zooza.app/#payments/transactions/cash_transfer
+  roles: *id001
+  string_prefixes:
+  - transactions__
+  strings: 0
+  area: payments
+- id: payments.transactions.card
+  menu: Sales & Payments → Transactions → Card
+  title: Card
+  route: payments/transactions/card
+  url_template: https://{region}.zooza.app/#payments/transactions/card
+  roles: *id001
+  string_prefixes:
+  - transactions__
+  strings: 0
+  area: payments
+- id: payments.transactions.direct_debit
+  menu: Sales & Payments → Transactions → Direct debit
+  title: Direct debit
+  route: payments/transactions/direct_debit
+  url_template: https://{region}.zooza.app/#payments/transactions/direct_debit
+  roles: *id001
+  string_prefixes:
+  - transactions__
+  strings: 0
+  area: payments
+- id: payments.transactions.import
+  menu: Sales & Payments → Transactions → Import payments
+  title: Import payments
+  route: payments/transactions/import
+  url_template: https://{region}.zooza.app/#payments/transactions/import
+  roles: *id001
+  string_prefixes:
+  - transactions__
+  strings: 0
+  area: payments
+- id: payments.inbound.queue
+  menu: Sales & Payments → Payment reconciliation → Queue
+  title: Queue
+  route: payments/inbound/queue
+  url_template: https://{region}.zooza.app/#payments/inbound/queue
+  roles: *id001
+  string_prefixes:
+  - inbound__
+  strings: 0
+  area: payments
+- id: payments.inbound.rules
+  menu: Sales & Payments → Payment reconciliation → AI rules & filters
+  title: AI rules & filters
+  route: payments/inbound/rules
+  url_template: https://{region}.zooza.app/#payments/inbound/rules
+  roles: *id001
+  string_prefixes:
+  - inbound__
+  strings: 0
+  area: payments
+- id: payments.inbound.analytics
+  menu: Sales & Payments → Payment reconciliation → AI analytics
+  title: AI analytics
+  route: payments/inbound/analytics
+  url_template: https://{region}.zooza.app/#payments/inbound/analytics
+  roles: *id001
+  string_prefixes:
+  - inbound__
+  strings: 0
+  area: payments
+- id: payments.scheduled
+  menu: Sales & Payments → Scheduled payments overview
+  title: Scheduled payments overview
+  route: payments/scheduled
+  url_template: https://{region}.zooza.app/#payments/scheduled
+  roles: *id001
+  string_prefixes:
+  - scheduled_payments__
+  strings: 3
+  area: payments
+- id: payments.discounts
+  menu: Sales & Payments → Discounts
+  title: Discounts
+  route: payments/discounts
+  url_template: https://{region}.zooza.app/#payments/discounts
+  roles: *id001
+  string_prefixes:
+  - coupons__
+  - discounts__
+  strings: 86
+  area: payments
+- id: payments.loyalty
+  menu: Sales & Payments → Loyalty Programme
+  title: Loyalty Programme
+  route: payments/loyalty
+  url_template: https://{region}.zooza.app/#payments/loyalty
+  roles: *id001
+  string_prefixes:
+  - loyalty__
+  strings: 127
+  area: payments
+- id: payments.invoices
+  menu: Sales & Payments → Invoices
+  title: Invoices
+  route: payments/invoices
+  url_template: https://{region}.zooza.app/#payments/invoices
+  roles: *id001
+  string_prefixes:
+  - invoices__
+  strings: 17
+  area: payments
+- id: payments.invoices.detail
+  menu: Sales & Payments → Invoices → invoice
+  title: Invoice detail
+  route: payments/invoices/26
+  url_template: https://{region}.zooza.app/#payments/invoices/26
+  roles: *id001
+  string_prefixes:
+  - invoice_detail__
+  strings: 0
+  area: payments
+- id: products.list
+  menu: Products & Services → ProductsPRO
+  title: Products
+  route: products
+  url_template: https://{region}.zooza.app/#products
+  roles: *id001
+  string_prefixes:
+  - products__
+  strings: 66
+  area: products
+- id: services.list
+  menu: Products & Services → Services
+  title: Services
+  route: services
+  url_template: https://{region}.zooza.app/#services
+  roles: *id001
+  string_prefixes:
+  - services__
+  strings: 19
+  area: products
+- id: communication.compose
+  menu: Communication → Send message
+  title: Send message
+  route: communication/compose
+  url_template: https://{region}.zooza.app/#communication/compose
+  roles: *id001
+  string_prefixes:
+  - communication__compose__
+  - communication__
+  strings: 466
+  area: communication
+- id: communication.history
+  menu: Communication → History
+  title: History
+  route: communication/sent_communication
+  url_template: https://{region}.zooza.app/#communication/sent_communication
+  roles: *id001
+  string_prefixes:
+  - communication__history__
+  strings: 1
+  area: communication
+- id: communication.message_jobs
+  menu: Communication → Message Jobs
+  title: Message Jobs
+  route: communication/message_jobs
+  url_template: https://{region}.zooza.app/#communication/message_jobs
+  roles: *id001
+  string_prefixes:
+  - message_jobs__
+  strings: 0
+  area: communication
+- id: communication.templates
+  menu: Communication → Templates
+  title: Templates
+  route: communication/templates
+  url_template: https://{region}.zooza.app/#communication/templates
+  roles: *id001
+  string_prefixes:
+  - communication__templates__
+  - templates__
+  strings: 127
+  area: communication
+- id: communication.whatsapp
+  menu: Communication → WhatsApp
+  title: WhatsApp
+  route: communication/whatsapp
+  url_template: https://{region}.zooza.app/#communication/whatsapp
+  roles: *id001
+  string_prefixes:
+  - whatsapp__
+  strings: 30
+  area: communication
+- id: calendar.week
+  menu: Activities → Calendar
+  title: Calendar
+  route: calendar
+  url_template: https://{region}.zooza.app/#calendar
+  roles: *id001
+  string_prefixes:
+  - calendar__
+  strings: 220
+  area: calendar
+- id: calendar.daily
+  menu: Activities → Calendar → Daily overview
+  title: Daily overview
+  route: calendar/daily
+  url_template: https://{region}.zooza.app/#calendar/daily
+  roles: *id001
+  string_prefixes:
+  - calendar__daily__
+  strings: 0
+  area: calendar
+- id: calendar.planner
+  menu: Activities → Calendar → Planning calendar
+  title: Planning calendar
+  route: calendar/planner
+  url_template: https://{region}.zooza.app/#calendar/planner
+  roles: *id001
+  string_prefixes:
+  - calendar__planner__
+  - planner__
+  strings: 5
+  area: calendar
+- id: feedback.nps
+  menu: Feedback → NPS
+  title: NPS
+  route: feedback/nps
+  url_template: https://{region}.zooza.app/#feedback/nps
+  roles: *id001
+  string_prefixes:
+  - nps__
+  - feedback__
+  strings: 22
+  area: calendar
+- id: feedback.reviews
+  menu: Feedback → Reviews
+  title: Reviews
+  route: feedback/reviews
+  url_template: https://{region}.zooza.app/#feedback/reviews
+  roles: *id001
+  string_prefixes:
+  - reviews__
+  strings: 29
+  area: calendar
+- id: feedback.submissions
+  menu: Feedback → Submissions
+  title: Submissions
+  route: feedback/submissions
+  url_template: https://{region}.zooza.app/#feedback/submissions
+  roles: *id001
+  string_prefixes:
+  - feedback__submissions__
+  strings: 0
+  area: calendar
+- id: reports.dashboard
+  menu: Reports & Insights → Dashboard
+  title: Dashboard
+  route: reports
+  url_template: https://{region}.zooza.app/#reports
+  roles: *id001
+  string_prefixes:
+  - dashboard__
+  strings: 87
+  area: reports
+- id: reports.registrations
+  menu: Reports & Insights → Reports → Bookings
+  title: Bookings report
+  route: reports/registrations
+  url_template: https://{region}.zooza.app/#reports/registrations
+  roles: *id001
+  string_prefixes:
+  - reports__
+  strings: 89
+  area: reports
+- id: reports.trials
+  menu: Reports & Insights → Reports → Trial Sessions Report
+  title: Trial Sessions Report
+  route: reports/trials
+  url_template: https://{region}.zooza.app/#reports/trials
+  roles: *id001
+  string_prefixes:
+  - reports__
+  strings: 89
+  area: reports
+- id: reports.outstanding_payments
+  menu: Reports & Insights → Reports → Outstanding Payments
+  title: Outstanding Payments
+  route: reports/outstanding_payments
+  url_template: https://{region}.zooza.app/#reports/outstanding_payments
+  roles: *id001
+  string_prefixes:
+  - reports__
+  strings: 89
+  area: reports
+- id: reports.replacements
+  menu: Reports & Insights → Reports → Make-up sessions
+  title: Make-up sessions report
+  route: reports/replacements
+  url_template: https://{region}.zooza.app/#reports/replacements
+  roles: *id001
+  string_prefixes:
+  - reports__
+  strings: 89
+  area: reports
+- id: reports.additional_sessions
+  menu: Reports & Insights → Reports → Additional sessions
+  title: Additional sessions report
+  route: reports/additional_sessions
+  url_template: https://{region}.zooza.app/#reports/additional_sessions
+  roles: *id001
+  string_prefixes:
+  - reports__
+  strings: 89
+  area: reports
+- id: reports.rescheduled
+  menu: Reports & Insights → Reports → Rescheduled
+  title: Rescheduled
+  route: reports/rescheduled
+  url_template: https://{region}.zooza.app/#reports/rescheduled
+  roles: *id001
+  string_prefixes:
+  - reports__
+  strings: 89
+  area: reports
+- id: reports.substituted
+  menu: Reports & Insights → Reports → Substituted
+  title: Substituted
+  route: reports/substituted
+  url_template: https://{region}.zooza.app/#reports/substituted
+  roles: *id001
+  string_prefixes:
+  - reports__
+  strings: 89
+  area: reports
+- id: reports.cancelled
+  menu: Reports & Insights → Reports → Cancelled
+  title: Cancelled
+  route: reports/cancelled
+  url_template: https://{region}.zooza.app/#reports/cancelled
+  roles: *id001
+  string_prefixes:
+  - reports__
+  strings: 89
+  area: reports
+- id: reports.event_notifications
+  menu: Reports & Insights → Reports → Session notifications (not in the menu)
+  title: Session notifications
+  route: reports/event_notifications
+  url_template: https://{region}.zooza.app/#reports/event_notifications
+  roles: *id001
+  string_prefixes:
+  - event_notifications__
+  strings: 0
+  area: reports
+- id: reports.system_messages
+  menu: Reports & Insights → System messages
+  title: System messages
+  route: reports/system_messages
+  url_template: https://{region}.zooza.app/#reports/system_messages
+  roles: *id001
+  string_prefixes:
+  - system_messages__
+  strings: 163
+  area: reports
+- id: team.trainers
+  menu: Team & Settings → Instructors
+  title: Instructors
+  route: trainers
+  url_template: https://{region}.zooza.app/#trainers
+  roles: *id001
+  string_prefixes:
+  - trainers__
+  strings: 16
+  area: team
+- id: team.trainer.detail
+  menu: Team & Settings → Instructors → instructor
+  title: Instructor detail
+  route: trainers/60
+  url_template: https://{region}.zooza.app/#trainers/60
+  roles: *id001
+  string_prefixes:
+  - trainer_detail__
+  strings: 0
+  area: team
+- id: team.trainer.settings
+  menu: Team & Settings → Instructors → instructor → Settings
+  title: Instructor settings
+  route: trainers/60/trainer_settings
+  url_template: https://{region}.zooza.app/#trainers/60/trainer_settings
+  roles: *id001
+  string_prefixes:
+  - trainer_settings__
+  strings: 10
+  area: team
+- id: team.trainer.availability
+  menu: Team & Settings → Instructors → instructor → Availability
+  title: Availability
+  route: trainers/60/availability
+  url_template: https://{region}.zooza.app/#trainers/60/availability
+  roles: *id001
+  string_prefixes:
+  - trainer_availability__
+  strings: 26
+  area: team
+- id: team.publish
+  menu: Team & Settings → Publish
+  title: Publish
+  route: widgets
+  url_template: https://{region}.zooza.app/#widgets
+  roles: *id001
+  string_prefixes:
+  - widgets__
+  - settings__widgets__
+  strings: 234
+  area: team
+- id: team.integrations
+  menu: Team & Settings → Integrations
+  title: Integrations
+  route: integrations
+  url_template: https://{region}.zooza.app/#integrations
+  roles: *id001
+  string_prefixes:
+  - settings__integrations__
+  - integrations__
+  strings: 174
+  area: team
+- id: team.mcp
+  menu: Zooza AI Assistant
+  title: Zooza AI Assistant
+  route: mcp
+  url_template: https://{region}.zooza.app/#mcp
+  roles: *id001
+  string_prefixes:
+  - mcp__
+  strings: 1
+  area: team

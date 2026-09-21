@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0001_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-09-21"
 ---
 
 # WhatsApp FAQ
@@ -51,7 +51,7 @@ Keep messages short and plain-text-friendly. If your message is long, consider s
 
 ## I sent a WhatsApp message but trial clients did not receive it — why?
 
-When composing a WhatsApp message via **Communication → Compose**, the default audience includes clients with an **active enrolment**. Clients with a **Trial** booking status are in a separate group and must be messaged separately.
+When composing a WhatsApp message via **Communication → Send message**, the default audience includes clients with an **active enrolment**. Clients with a **Trial** booking status are in a separate group and must be messaged separately.
 
 See [the email FAQ for the full workaround](email-communication-faq.md#i-sent-an-email-to-all-active-clients--did-it-reach-clients-on-trial) — the same limitation applies to WhatsApp sends.
 

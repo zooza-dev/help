@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-30"
+last_converted: "2026-09-21"
 related_articles: ["make-up-sessions-faq", "booking-faq"]
 ---
 
@@ -127,7 +127,7 @@ To put it right:
 
 1. Open the booking and change the status from **Waitlist** to **Enrolled**.
 2. Go to the booking → **Payments** and add the amount the parent owes, including the registration fee if you charge one.
-3. Go to **Communication → Send Email** and resend the booking confirmation, so the parent can open their profile and pay.
+3. Go to **Communication → Send message** and resend the booking confirmation, so the parent can open their profile and pay.
 
 Then review the automation itself, or every unpaid booking will keep landing on the waitlist.
 

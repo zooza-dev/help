@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-04-02"
+last_converted: "2026-09-21"
 ---
 
 # Monitoring auto-enrolment responses
@@ -93,12 +93,12 @@ Accepting an auto-enrolment invitation does **not** automatically create a new b
 
 1. Go to `/#retention_responses` and filter by **Auto-enrolment Declined**.
 2. Check the **Note** column for their reason.
-3. Use **Communication → Send Email** to reach out if needed.
+3. Use **Communication → Send message** to reach out if needed.
 4. Click **Mark as reviewed** once you have acted on the response.
 
 ### Client has not responded
 
 1. Filter by **Not decided yet** in either the responses page or the Bookings list.
-2. Send a reminder via **Communication → Send Email** — select the relevant class as the target and include the programme link.
+2. Send a reminder via **Communication → Send message** — select the relevant class as the target and include the programme link.
 3. Note: auto-enrolment invitations are not re-sent automatically. You must send the reminder manually.
 

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-20"
+last_converted: "2026-09-21"
 related_articles: ["copy-programme-and-class", "new-programme-existing-clients", "auto-enrollment", "billing-periods", "archive-or-delete-programme"]
 ---
 
@@ -101,7 +101,7 @@ See [Payment templates](../guides/payment-templates-creation.md) for the three-s
 
 Once your new classes are ready, let your clients know:
 
-- Send a **bulk email** from **Communication → Compose** to active clients announcing new enrolments.
+- Send a **bulk email** from **Communication → Send message** to active clients announcing new enrolments.
 - If you copied bookings, no extra communication is strictly needed — clients will receive their usual automated confirmation. But a personal note about the new year goes a long way.
 - If you're running auto-enrolment, the system emails clients automatically — make sure the template text is up to date.
 

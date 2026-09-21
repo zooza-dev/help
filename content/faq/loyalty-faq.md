@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-14"
+last_converted: "2026-09-21"
 ---
 
 # Loyalty Program FAQ
@@ -33,7 +33,7 @@ Yes. Loyalty discounts and manual discount codes are separate systems and can bo
 Loyalty discounts are applied first (before any discount codes or schedule discounts). The final price for the client reflects all applicable reductions.
 
 **Can I see all applied loyalty discounts in one place?**
-Yes. Go to **Sales & Payments → Loyalty Program → Activity**. See [Loyalty Activity Log](../guides/loyalty-activity-log.md).
+Yes. Go to **Sales & Payments → Loyalty Programme → Activity**. See [Loyalty Activity Log](../guides/loyalty-activity-log.md).
 
 ---
 

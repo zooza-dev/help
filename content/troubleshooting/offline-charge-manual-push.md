@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-04-30"
+last_converted: "2026-09-21"
 ---
 
 # Manually push a scheduled payment to offline charge
@@ -33,7 +33,7 @@ This page explains how to detect this situation and push the payment manually.
 ## Check the payment detail
 
 1. Open the client's booking.
-2. Go to **Payments → Payment plan**.
+2. Go to the booking's **Payment plan** tab.
 3. Find the payment with **Processed** status and click **More** to open the detail page.
 4. In the **Payment Info** card, look for one of two indicators:
    - **"Push to offline charge queue"** button — the payment was never queued; you can push it now.

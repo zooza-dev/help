@@ -12,7 +12,7 @@ related_articles: ["gocardless-direct-debit-mandates", "offline-charge-manual-pu
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-21"
 ---
 
 # GoCardless Integration FAQ
@@ -151,7 +151,7 @@ If mandates were set up correctly but Zooza flagged the instalments for manual h
 
 The first mandate GoCardless issues is a one-off, not a recurring one. Zooza read that as "this mandate cannot be charged again" and marked the following instalments manual. GoCardless then replaces it with a permanent recurring mandate, so subsequent payments were flagged correctly — which is why the problem appeared only at the very start of a booking. This has been fixed for new bookings.
 
-To check the current state of any mandate, go to **Payments → Direct Debit mandates**. The overview shows, per mandate:
+To check the current state of any mandate, go to **Sales & Payments → Direct Debit mandates**. The overview shows, per mandate:
 
 - whether a payment plan is attached
 - when the last payment on that mandate was taken
@@ -162,9 +162,9 @@ To check the current state of any mandate, go to **Payments → Direct Debit man
 
 Not in GoCardless. Its dashboard shows payments that have been submitted, not the instalments Zooza has scheduled for the future. To see what is coming:
 
-- **Payments → Direct Debit mandates** — how many mandates are active and when the next payment on each is due.
-- **Payments → Scheduled payments** — set **Status** to *Scheduled* and the date range to the period you care about (say, October). This is the list of instalments that will be pushed to GoCardless.
-- **Payments → Insights** — a global monthly summary.
+- **Sales & Payments → Direct Debit mandates** — how many mandates are active and when the next payment on each is due.
+- **Sales & Payments → Scheduled payments overview** — set **Status** to *Scheduled* and the date range to the period you care about (say, October). This is the list of instalments that will be pushed to GoCardless.
+- **Sales & Payments → Payments → Insights and Trends** — a global monthly summary.
 
 If a payout looks small, check the mandates overview first: a booking with no valid payment plan, or without offline collection allowed, produces no charge however many sign-ups you had.
 

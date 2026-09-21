@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-21"
 ---
 
 # Where to find things in Zooza — quick reference
@@ -41,12 +41,12 @@ Can't find something? This page gives the direct path to the most commonly searc
 >
 > | You used to go to | It is now |
 > |---|---|
-> | Payments → Inbound → List | **Payments → Transactions** — the ledger of money received, in Cash & Transfer / Card / Direct Debit tabs |
-> | The unpaired-payments list | **Payments → Payment reconciliation**, and *Unpaired* is the very first filter |
-> | Payments → Inbound → Import | **Payments → Transactions → Import payments** |
+> | Payments → Inbound → List | **Sales & Payments → Transactions** — the ledger of money received, in Cash & Transfer / Card / Direct Debit tabs |
+> | The unpaired-payments list | **Sales & Payments → Payment reconciliation**, and *Unpaired* is the very first filter |
+> | Payments → Inbound → Import | **Sales & Payments → Transactions → Import payments** |
 > | Payments → Inbound → Setup | **Settings → Billing & Payments → Payment collection setup** |
-> | Payments → Inbound → Direct Debit | **Payments → Direct Debit mandates** |
-> | Reports → Refunds report | **Payments → Refunds → Issued** |
+> | Payments → Inbound → Direct Debit | **Sales & Payments → Direct Debit mandates** |
+> | Reports → Refunds report | **Sales & Payments → Refunds → Issued** |
 >
 > **Transactions has no status filter any more**, and that is deliberate: money that
 > has not been matched yet is not in that list at all. It is in Payment
@@ -54,14 +54,14 @@ Can't find something? This page gives the direct path to the most commonly searc
 
 | I want to find… | Where to go |
 |-----------------|-------------|
-| All payments received | **Payments → Transactions** |
-| Payments that have not been matched yet | **Payments → Payment reconciliation** → filter *Unpaired* |
+| All payments received | **Sales & Payments → Transactions** |
+| Payments that have not been matched yet | **Sales & Payments → Payment reconciliation** → filter *Unpaired* |
 | A specific client's payments | Client profile → **Payments** tab |
 | Payments for a specific booking | Open the booking → **Payments** section |
 | Unpaid / outstanding clients | **Sales & Payments → Payments** — the summary dashboard |
 | Payment reminders settings | **Activities → Programmes** → open programme → **Automations → Payment Reminders** |
-| GoCardless inbound payment matching | **Payments → Payment reconciliation** |
-| Bank transfer import (CSV) | **Payments → Transactions → Import payments** |
+| GoCardless inbound payment matching | **Sales & Payments → Payment reconciliation** |
+| Bank transfer import (CSV) | **Sales & Payments → Transactions → Import payments** |
 | Invoices | **Sales & Payments → Invoices** |
 | Discounts and discount codes | **Sales & Payments → Discounts** |
 
@@ -87,7 +87,7 @@ Can't find something? This page gives the direct path to the most commonly searc
 |-----------------|-------------|
 | Client list | **Clients** |
 | Inactive clients | **Clients** → filter by status: *Inactive* |
-| Import clients from a spreadsheet | **Clients → Import** |
+| Import clients from a spreadsheet | **Clients → Clients → Import** |
 | Client's attendance history | Client profile → **Attendance** tab |
 | Client's documents / consents | Client profile → **Documents** tab |
 
@@ -99,7 +99,7 @@ Can't find something? This page gives the direct path to the most commonly searc
 |-----------------|-------------|
 | Send an email to a class | **Activities → Classes** → open class → **Bookings** → **Send email** |
 | Send an email to one client | Client profile → **Send message** |
-| View sent emails | **Communication → Sent messages** |
+| View sent emails | **Communication → History** |
 | Email templates | **Communication → Templates** |
 | Automated notifications settings | **Activities → Programmes** → open programme → **Automations** |
 | WhatsApp messages | **Communication → WhatsApp** |
@@ -128,9 +128,9 @@ Can't find something? This page gives the direct path to the most commonly searc
 | I want to find… | Where to go |
 |-----------------|-------------|
 | Revenue and payment reports | **Reports** |
-| Attendance reports | **Reports → Attendance** |
-| Client reports | **Reports → Clients** |
-| Export to Power BI | **Reports → Power BI** |
+| Attendance reports | **Activities → Sessions** (attendance counts per session) and **Reports & Insights → Reports → Cancelled / Rescheduled / Substituted** |
+| Client reports | **Reports & Insights → Reports → Bookings** |
+| Export to Power BI | **Team & Settings → Integrations → Power BI** |
 
 ---
 

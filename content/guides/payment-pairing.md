@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: "legacy/0084_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-21"
 ---
 
 # Payment Pairing for Bank Transfers & Direct Debit
@@ -74,7 +74,7 @@ Important: Automatic pairing depends on how your bank provides transaction data.
 
 ![The payment amount matches the expected amount due](../../assets/images/blocks-creation-07.png)
 
-If all conditions are met, the payment is automatically paired with the booking. If not, the payment remains unassigned and can be paired manually in **Payments → Payment reconciliation**, where *Unpaired* is the first filter.
+If all conditions are met, the payment is automatically paired with the booking. If not, the payment remains unassigned and can be paired manually in **Sales & Payments → Payment reconciliation**, where *Unpaired* is the first filter.
 
 > **Multi-level pairing (linked bookings):** When you use [linked bookings](linked-bookings.md) with the **Manage parent/main booking** option, one registration collects payments on behalf of others. Zooza's automatic pairing follows this chain — a payment matched to any booking in the group is correctly attributed to the managing registration, even across multiple levels (e.g., order → registration A → registration B). The full resolution path is visible in the **Pairing process summary** on the payment detail. You do not need to do anything extra; this happens automatically.
 
@@ -83,7 +83,7 @@ If all conditions are met, the payment is automatically paired with the booking.
 If your bank does not support live integrations, or you need to catch up after an outage, you can import payments in bulk from a bank statement export.
 
 - Export a transaction list from your online banking as a **CSV file** (not PDF, not Excel).
-- Go to **Payments → Import**, select your bank, and upload the file.
+- Go to **Sales & Payments → Payments → Import**, select your bank, and upload the file.
 - Zooza matches transactions to bookings using the payment reference number.
 - Unmatched transactions can be paired manually or ignored.
 - After review, confirm the import — you can generate invoices for all payments in the same step.
@@ -170,7 +170,7 @@ The pairing queue groups rows into buckets rather than showing the raw status:
 
 When a payment sits in **Unpaired**:
 
-1. Open the row from **Payments → Payment reconciliation**.
+1. Open the row from **Sales & Payments → Payment reconciliation**.
 2. Read the AI reasoning and check the suggested booking.
 3. Choose an action:
 
@@ -190,11 +190,11 @@ The AI compares each incoming payment against existing recorded payments, other 
 
 ### AI pairing rules
 
-You can configure company-specific rules that influence AI decisions via **Payments → Payment reconciliation → AI rules & filters**. Examples: ignore payments from a specific IBAN, prefer a specific programme when the variable symbol is ambiguous, or require manual review above a certain amount. Company rules override system defaults.
+You can configure company-specific rules that influence AI decisions via **Sales & Payments → Payment reconciliation → AI rules & filters**. Examples: ignore payments from a specific IBAN, prefer a specific programme when the variable symbol is ambiguous, or require manual review above a certain amount. Company rules override system defaults.
 
 ### AI Analytics
 
-Go to **Payments → Payment reconciliation → AI Analytics** to see how the AI is performing for your company.
+Go to **Sales & Payments → Payment reconciliation → AI analytics** to see how the AI is performing for your company.
 
 ![The AI Analytics tab of Payment reconciliation, showing evaluated totals, auto-pair success, admin overrides and processing time](../../assets/images/payment-reconciliation-ai-analytics.png)
 
@@ -212,7 +212,7 @@ Filter by **Last 7 days**, **Last 30 days**, **Last 90 days**, or **All time**.
 
 ## Reading the received-payments export
 
-**Payments → Transactions → Export** exports exactly what the current filter shows. The `Transaction type` column is the one that causes most confusion:
+**Sales & Payments → Transactions → Export** exports exactly what the current filter shows. The `Transaction type` column is the one that causes most confusion:
 
 | Value | Meaning |
 |---|---|
@@ -228,7 +228,7 @@ To export only the payments that matter:
 2. Set **Status** to **Paired**.
 3. Export.
 
-For the unpaired ones, open **Payments → Payment reconciliation** and filter the queue to **Unpaired**. Search for the client by name, pick the registration, and pair the payment — the result is identical to automatic pairing. Transactions unrelated to Zooza can be dismissed with **Ignore**.
+For the unpaired ones, open **Sales & Payments → Payment reconciliation** and filter the queue to **Unpaired**. Search for the client by name, pick the registration, and pair the payment — the result is identical to automatic pairing. Transactions unrelated to Zooza can be dismissed with **Ignore**.
 
 > Cash versus non-cash cannot be read from `Transaction type` alone, because the column describes how the record was created rather than how the client paid. Filter by **Payment method** before exporting if that is the split you need.
 
@@ -246,7 +246,7 @@ A payment reference is the text or number sent with a bank transfer to identify 
 
 ### What happens if a client forgets the payment reference?
 
-The payment will not be paired automatically. You can manually assign it from **Payments → Payment reconciliation**.
+The payment will not be paired automatically. You can manually assign it from **Sales & Payments → Payment reconciliation**.
 
 ### Do I need GoCardless if I already use bank transfers?
 
@@ -300,19 +300,19 @@ Common causes:
 
 Some banks (notably Revolut) place the variable symbol in the "Reference" or "Note" field rather than the standard variable symbol field. Zooza's pairing algorithm checks the note/reference field as a fallback, but matching may fail if the format is unexpected.
 
-**Solution:** If Revolut payments are not auto-matching, check the payment detail in **Payments → Payment reconciliation**. Look at the "Pairing process summary" field to see why pairing failed. You can always pair manually using the booking number.
+**Solution:** If Revolut payments are not auto-matching, check the payment detail in **Sales & Payments → Payment reconciliation**. Look at the "Pairing process summary" field to see why pairing failed. You can always pair manually using the booking number.
 
 ### Payment arrives before debt is created
 
 When a client pays in advance (e.g., semi-annual payment before the next instalment is posted), auto-pairing may fail because no matching debt exists at the time the payment is received. Zooza does **not** retry pairing later when the debt is created.
 
-**Solution:** Pair the payment manually from **Payments → Payment reconciliation**. Match it using the payment reference / variable symbol.
+**Solution:** Pair the payment manually from **Sales & Payments → Payment reconciliation**. Match it using the payment reference / variable symbol.
 
 ### A payment is missing — check Ignored payments first
 
 Before contacting your bank or Zooza support, check whether the AI marked the payment as **Ignored**:
 
-1. Go to **Payments → Payment reconciliation**.
+1. Go to **Sales & Payments → Payment reconciliation**.
 2. Filter by status **Ignored**.
 3. Find the payment and open it — the AI reasoning card explains why it was ignored.
 4. If the payment is legitimate, click **Pair** or **Reassign** to link it to the correct booking.
@@ -323,7 +323,7 @@ The AI occasionally marks a real payment as a suspected duplicate — especially
 
 If your bank's notification service (email or GoCardless) has an outage, payments made during that period will not appear in Zooza until the service resumes. GoCardless syncs once daily, so a brief outage may delay pairing by 24-48 hours.
 
-**Solution:** After the outage resolves, check **Payments → Payment reconciliation** for any unmatched transactions. You can also use the CSV bulk upload as a fallback during extended outages.
+**Solution:** After the outage resolves, check **Sales & Payments → Payment reconciliation** for any unmatched transactions. You can also use the CSV bulk upload as a fallback during extended outages.
 
 ### Email-notification pairing as an alternative to GoCardless
 

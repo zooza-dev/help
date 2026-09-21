@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-13"
+last_converted: "2026-09-21"
 related_articles: ["notifications-center", "sending-email-sms", "message-templates", "email-delivery"]
 ---
 
@@ -99,7 +99,7 @@ Go to **Bookings**, filter by the relevant class or location, and use the bulk c
 
 Session reminders (day-before notifications) are processed in a queue. If clients report they didn't receive a reminder, check the notification log before assuming a bug:
 
-1. Go to **Reports → Session Notifications** (or navigate directly to `/#reports/event_notifications`).
+1. Go to **Reports → Session notifications** (or navigate directly to `/#reports/event_notifications`).
 2. The log shows each notification batch: when it was created, how many were processed, how many failed, and the notification type.
 3. Find the relevant date and check the status.
 
@@ -111,15 +111,15 @@ Session reminders (day-before notifications) are processed in a queue. If client
 - **Client's email filtered it** — if the log shows "Processed" but the client didn't receive it, check spam/junk. Zooza cannot override recipient-side filtering.
 - **No sessions that day** — verify the session date is correct and the session is not in Draft or Cancelled status.
 
-> **SK:** Ak notifikácie neodišli, skontrolujte log na stránke **Reports → Session Notifications**. Ak je stav "Processed", email bol odoslaný zo strany Zooza — problém je na strane klienta (spam, vypnuté notifikácie).
+> **SK:** Ak notifikácie neodišli, skontrolujte log na stránke **Reports → Session notifications**. Ak je stav "Processed", email bol odoslaný zo strany Zooza — problém je na strane klienta (spam, vypnuté notifikácie).
 
 ## I sent an email to "all active clients" — did it reach clients on trial?
 
-No. When you send via **Communication → Compose** and select all active clients (or all clients in a class), the audience includes only clients with an **active enrolment booking**. Clients with a **Trial** booking status are not included in that group.
+No. When you send via **Communication → Send message** and select all active clients (or all clients in a class), the audience includes only clients with an **active enrolment booking**. Clients with a **Trial** booking status are not included in that group.
 
 To reach trial clients, you need to send a separate message:
 
-1. Go to **Communication → Compose**.
+1. Go to **Communication → Send message**.
 2. Choose the same message type (email or WhatsApp).
 3. In the audience selector, filter by **Trial** status (or select the specific class and filter to trial bookings).
 4. Send the message to that group separately.

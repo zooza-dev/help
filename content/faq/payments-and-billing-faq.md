@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-20"
+last_converted: "2026-09-21"
 ---
 
 # Payments and Billing FAQ
@@ -74,7 +74,7 @@ The updated invoice is sent to the client's email address on record.
 
 ## How do I export payments or refunds to Excel?
 
-Go to **Sales & Payments → Received Payments → Export**. The export includes received payments.
+Go to **Sales & Payments → Transactions → Export**. The export includes received payments.
 
 To export refunds specifically, use the same section and apply the refund filter before exporting. The export reflects whatever is currently visible in the list — so filter first, then export.
 
@@ -297,7 +297,7 @@ Check these in order:
 
 1. **Billing profile has no IBAN** — Go to **Settings → Billing & Payments → Invoice profiles**, open the active profile, and confirm that **IBAN** and **SWIFT/BIC** are filled in. Both are required for the QR code to generate.
 2. **Programme uses a different billing profile** — If the programme has its own billing profile assigned (in **Programme → Settings → Price and payment → Invoicing**), check that profile's IBAN and SWIFT/BIC too.
-3. **Template does not include the QR code tag** — Open **Communication → Message Templates** → the relevant payment template. Confirm the template body contains the `*|QR_CODE|*` tag. If it was removed or never added, the QR will not appear.
+3. **Template does not include the QR code tag** — Open **Communication → Templates** → the relevant payment template. Confirm the template body contains the `*|QR_CODE|*` tag. If it was removed or never added, the QR will not appear.
 
 > QR payment codes are currently available for accounts based in SK, CZ, and other SEPA markets. If your account is in a different region, the `*|QR_CODE|*` tag may not generate an image regardless of the settings.
 
@@ -717,9 +717,9 @@ An **Ignored** inbound payment is one that Zooza received from the bank but deli
 1. **Duplicate detection (deduplication)** — The payment notification arrived more than once (for example, the bank resent the same notification). Zooza's deduplication agent recognises that it has already processed an identical payment (same amount, same reference, same date) and marks subsequent copies as Ignored to avoid double-matching.
 2. **Manual ignore** — An admin explicitly marked the payment as Ignored. This is typically done for payments that arrived in error, need to be handled outside Zooza, or belong to a different system.
 
-An Ignored payment is not lost — it stays in **Payments → Payment reconciliation** with an Ignored status and is visible to admins. If an inbound payment was incorrectly marked as Ignored (for example, by a misconfigured AI rule), you can review and reprocess it.
+An Ignored payment is not lost — it stays in **Sales & Payments → Payment reconciliation** with an Ignored status and is visible to admins. If an inbound payment was incorrectly marked as Ignored (for example, by a misconfigured AI rule), you can review and reprocess it.
 
-To investigate why a payment was ignored: go to **Payments → Payment reconciliation**, find the payment, and check its status details. Also review **Payments → Payment reconciliation → AI rules & filters** to confirm no rule is excluding this payment type.
+To investigate why a payment was ignored: go to **Sales & Payments → Payment reconciliation**, find the payment, and check its status details. Also review **Sales & Payments → Payment reconciliation → AI rules & filters** to confirm no rule is excluding this payment type.
 
 ## Does the "X days after registration" due date setting apply to payment plan instalments?
 

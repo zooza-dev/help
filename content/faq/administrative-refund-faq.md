@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-04-02"
+last_converted: "2026-09-21"
 ---
 
 # Administrative Refund FAQ
@@ -42,7 +42,7 @@ No automatic notification is sent for an administrative refund. If you want the 
 
 No. The refund reduces recorded income on the booking (it appears as a negative transaction), but it does not automatically change the total charge or outstanding balance. After recording the refund, review the booking and adjust the debt manually if needed:
 
-- If the client now owes less, edit the total charge in **Payments → Edit**.
+- If the client now owes less, edit the total charge on the booking's **Payments** tab.
 - If no further balance adjustment is needed (e.g. the client simply overpaid), no action is required.
 
 ## What happens if Stripe is disconnected?

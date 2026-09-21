@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-20"
+last_converted: "2026-09-21"
 related_articles: ["trial-sessions", "trials-daily-business", "booking-form-settings", "sending-email-sms", "booking-faq"]
 ---
 
@@ -96,7 +96,7 @@ If **The setting will only be valid for new bookings** is checked in the automat
 
 When you manually change a trial status (e.g. from **Trial ended** to **Trial won** or **Trial lost**), Zooza shows a **"Send confirmation email"** checkbox. You can choose whether to send a one-off email for that status change.
 
-**Important:** Manually changing the status does **not** trigger the automated follow-up sequence. The automation (enrolment link + reminder emails) is only triggered when the instructor records attendance on the trial session. If attendance was not recorded and you changed the status manually, you need to send the enrolment link to the client manually via **Communication → Send Email**.
+**Important:** Manually changing the status does **not** trigger the automated follow-up sequence. The automation (enrolment link + reminder emails) is only triggered when the instructor records attendance on the trial session. If attendance was not recorded and you changed the status manually, you need to send the enrolment link to the client manually via **Communication → Send message**.
 
 ---
 

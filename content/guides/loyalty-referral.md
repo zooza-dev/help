@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-14"
+last_converted: "2026-09-21"
 ---
 
 # Referral Program
@@ -48,7 +48,7 @@ You control who gets rewarded (one or both parties) and how much through rules t
 
 ## Set up the referral program
 
-Go to **Sales & Payments → Loyalty Program → Referral Program**.
+Go to **Sales & Payments → Loyalty Programme → Referral Program**.
 
 ### Step 1: Configure shared settings
 

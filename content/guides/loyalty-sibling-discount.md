@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-20"
+last_converted: "2026-09-21"
 ---
 
 # Sibling Discount
@@ -65,7 +65,7 @@ Put it right on the booking itself: open the instalment and correct the amount. 
 
 ## Set up the sibling discount
 
-Go to **Sales & Payments → Loyalty Program → Sibling Discount**.
+Go to **Sales & Payments → Loyalty Programme → Sibling Discount**.
 
 ### Step 1: Choose how children are counted
 

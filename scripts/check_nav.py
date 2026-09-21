@@ -26,6 +26,9 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 APP_MAP = os.path.join(ROOT, "build", "app-map", "app-map.yml")
 
 CUE = re.compile(r"Settings → ([A-Za-z&' -]+?)(?: → ([A-Za-z&' -]+?))?(?=\*\*|[.,;:)|`\]\n]| →|$)")
+# Sidebar paths: "Sales & Payments → Transactions → Card". Only bold cues are checked here — plain prose says
+# "Payments → Transactions" loosely and the sidebar group label is often left out on purpose.
+SIDEBAR_CUE = re.compile(r"\*\*((?:Activities|Clients|Sales & Payments|Products & Services|Communication|Reports & Insights|Team & Settings|Feedback|Payments|Reports) → [A-Za-z&' -]+?(?: → [A-Za-z&' -]+?)?)\*\*")
 PROGRAMME_CONTEXT = re.compile(r"(programme|program|class|course|the item|widget)[\s\S]{0,60}$", re.I)
 # "Programme → Settings → X" / "Programme Settings → X": X must be a tile. Only this tight form is checked;
 # the loose context above merely stops a programme-level cue being judged against the company menu.
@@ -44,14 +47,22 @@ ALLOWED_LEAVES = {"General", "Billing & Payments", "Other", "Tools", "Integratio
 def load_menu():
     import yaml
     doc = yaml.safe_load(open(APP_MAP, encoding="utf-8"))
-    menu, tiles = {}, {}
+    menu, tiles, sidebar = {}, {}, set()
+    for s in doc["screens"]:
+        m = s["menu"].split(" (")[0]
+        sidebar.add(m)
+        parts = m.split(" → ")
+        for i in range(2, len(parts) + 1):        # every prefix is a valid path too
+            sidebar.add(" → ".join(parts[:i]))
+        if len(parts) >= 3 and parts[0] in ("Sales & Payments", "Reports & Insights"):   # "Payments → X" shorthand is common
+            sidebar.add(" → ".join(parts[1:]))
     for s in doc["screens"]:
         if s.get("area", "settings") == "settings":
             _, group, leaf = s["menu"].split(" → ")
             menu[leaf.lower()] = (group, leaf)
         elif s["id"].startswith("programmes.settings."):
             tiles[s["title"].lower()] = s["title"]
-    return menu, tiles
+    return menu, tiles, sidebar
 
 
 def main():
@@ -60,13 +71,28 @@ def main():
     args = ap.parse_args()
     if not os.path.exists(APP_MAP):
         sys.exit("no app map — run scripts/screenshots/app_map.py build first")
-    menu, tiles = load_menu()
+    menu, tiles, sidebar = load_menu()
+    sidebar_l = {x.lower(): x for x in sidebar}
     problems = []
     for f in sorted(glob.glob(os.path.join(ROOT, "content", "**", "*.md"), recursive=True)):
         if "/glossary/" in f:
             continue
         lines = open(f, encoding="utf-8").read().split("\n")
         for ln, line in enumerate(lines, 1):
+            rel = os.path.relpath(f, ROOT)
+            for m in SIDEBAR_CUE.finditer(line):
+                path = m.group(1).strip()
+                if path.startswith(("Team & Settings → Settings", "Team & Settings → General", "Team & Settings → Billing", "Team & Settings → Other", "Team & Settings → Tools")):
+                    continue   # Settings subtree is checked by CUE above
+                if path in sidebar:
+                    continue
+                if path.lower() in sidebar_l:
+                    problems.append((rel, ln, path, f"spelled {sidebar_l[path.lower()]!r} in the app")); continue
+                # accept a known path followed by one more level (a button or card on that screen)
+                head = " → ".join(path.split(" → ")[:-1])
+                if head in sidebar or head.lower() in sidebar_l:
+                    continue
+                problems.append((rel, ln, path, "not in the sidebar"))
             for m in CUE.finditer(line):
                 # a numbered step often says "Open the programme" on the line before
                 before = "\n".join(lines[max(0, ln - 3): ln - 1]) + "\n" + line[: m.start()]
