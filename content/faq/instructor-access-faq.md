@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-30"
+last_converted: "2026-09-19"
 related_articles: ["login-and-account-faq","managing-instructors","user-roles","role-selection-guide"]
 ---
 
@@ -30,7 +30,7 @@ If both are right and it still does not arrive, send Zooza support the instructo
 
 ## An instructor did not receive the invitation email — what should I do?
 
-1. Check that the email address is correct in **Settings → Team**.
+1. Check that the email address is correct in **Settings → General → Access**.
 2. Try sending a new invitation.
 3. Ask the instructor to check their spam/junk folder.
 4. If using a corporate email, there may be delivery delays.
@@ -52,11 +52,11 @@ This is expected. Instructors with limited roles (Standard instructor, External 
 
 This means that guide steps like "Go to Activities → Classes → select sessions → Bulk edit" cannot be performed by a standard instructor. If an instructor needs to change session times, reschedule sessions, or bulk-edit, an admin or main instructor must do it on their behalf.
 
-If the instructor should have access to the Classes list, change their role to **Main instructor** in **Settings → Team**.
+If the instructor should have access to the Classes list, change their role to **Main instructor** in **Settings → General → Access**.
 
 ## How do I change instructor permissions?
 
-Go to **Settings → Team**, select the instructor, and adjust their role. If you want all instructors to see each other's classes (e.g., for a small team that covers for each other), set them as lead instructors.
+Go to **Settings → General → Access**, select the instructor, and adjust their role. If you want all instructors to see each other's classes (e.g., for a small team that covers for each other), set them as lead instructors.
 
 ## How do I add Zooza to a phone as an app?
 
@@ -70,9 +70,9 @@ This creates an app icon that opens Zooza directly without the browser navigatio
 
 ## How do I deactivate an instructor's account without losing data?
 
-Do not delete the instructor account. Instead, change their role to **Inactive instructor** in **Settings → Team**. This prevents the instructor from logging in but preserves all historical data — their attendance records, session assignments, and instructor reports remain intact.
+Do not delete the instructor account. Instead, change their role to **Inactive instructor** in **Settings → General → Access**. This prevents the instructor from logging in but preserves all historical data — their attendance records, session assignments, and instructor reports remain intact.
 
-If you delete the account, all data linked to that instructor is permanently lost and cannot be recovered. Always switch to the Inactive role first. You can find the role selector on the instructor's profile in **Settings → Team**.
+If you delete the account, all data linked to that instructor is permanently lost and cannot be recovered. Always switch to the Inactive role first. You can find the role selector on the instructor's profile in **Settings → General → Access**.
 
 ## A substitute instructor cannot send emails to students on the session they cover — is this by design?
 
@@ -80,7 +80,7 @@ Email and communication access depends on the instructor's role. By default, **e
 
 If you need a substitute instructor to communicate with students, they must hold at least the **Instructor** role, which grants the right to send emails and SMS to their own clients. Alternatively, the **Main instructor** role provides broader communication access across all clients.
 
-You can adjust roles at any time in **Settings → Team**.
+You can adjust roles at any time in **Settings → General → Access**.
 
 ## Why can't an instructor send an email from the session or group view?
 
@@ -95,7 +95,7 @@ When an instructor opens a session detail and tries to send a message to attende
 | **Lead instructor** | Yes — to clients enrolled in classes they can see |
 | **Manager / Owner** | Yes — unrestricted |
 
-If a lektor (instructor) reports they cannot find the email option on a session or group, check their role in **Settings → Team**. The most common fix is upgrading them from **External instructor** to **Instructor**.
+If a lektor (instructor) reports they cannot find the email option on a session or group, check their role in **Settings → General → Access**. The most common fix is upgrading them from **External instructor** to **Instructor**.
 
 **Important:** Role changes apply immediately — the instructor does not need to log out and back in.
 

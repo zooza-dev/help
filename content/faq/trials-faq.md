@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-20"
 related_articles: ["trial-sessions", "trials-daily-business", "booking-form-settings", "sending-email-sms", "booking-faq"]
 ---
 
@@ -49,7 +49,7 @@ Trial uses the same booking widget as regular enrolment. If the trial option is 
 Go to **Programme → Settings → Trial → Edit** and make sure trial is turned on and fully configured — type (free/paid), length, session capacity, and which classes are included. If trial is not set up here, it will not appear anywhere regardless of other settings.
 
 **2. Allow online booking is off**
-Go to **Programme → Settings → Online Booking** and make sure **Allow online booking** is set to Yes. If this is off, the programme is hidden entirely.
+Go to **Programme → Settings → Online booking** and make sure **Allow online booking** is set to Yes. If this is off, the programme is hidden entirely.
 
 **3. Booking Options Shown on Website excludes trials**
 On the same screen, find **Booking Options Shown on Website**. If it is set to **Offer full programme booking only**, trials will not appear. Change it to one of:

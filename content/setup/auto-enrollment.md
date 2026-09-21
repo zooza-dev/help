@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0057_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-09-20"
 ---
 
 # Auto-enrollment
@@ -58,7 +58,6 @@ Enter how many days before the end of the current term the system should notify 
 
 ![Enter how many days before the end of the current term the system should notify clients](../../assets/images/auto-enrollment-06.png)
 
-![Enter how many days before the end of the current term the system should notify clients](../../assets/images/client-import-01.png)
 
 Note: If you have manually set the class end date to a different day, the system will use this manual date instead of the last scheduled date.
 
@@ -74,7 +73,6 @@ If you have class ccourses and would like to offer existing clients the option t
 3. Filter specific programmes (All programmes, Only the billing period the client enrolled for, Selected programmes only)
 4. Age restriction - e.g. offer only for children within a selected age range at the time of booking – enter months or years
 
-![Age restriction - e.g. offer only for children within a selected age range at the time...](../../assets/images/client-import-03.png)
 
 Attention! Only programmes with an age restriction filled in under *Extra Fields* will be included in the offer.
 
@@ -109,7 +107,6 @@ If the auto-enrolment functionality is active and you need to add another class 
 
 ![If the auto-enrolment functionality is active and you need to add another class to the...](../../assets/images/auto-enrollment-12.png)
 
-![If the auto-enrolment functionality is active and you need to add another class to the...](../../assets/images/client-import-01.png)
 
 Note: If the programme does not have auto-enrolment enabled, the application will notify you and even if the checkbox is selected, this setting will be ignored.
 

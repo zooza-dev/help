@@ -17,7 +17,7 @@
       "name": "How do I change the email I use to log in?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Go to Settings → Team, open the profile, replace the email address and save. From then on that person logs in with the new address — they enter it on the login page and request a link or code. There is no password to change.\n\nYou do not have to replace it. You can add a second access with the other email instead, and keep both working. That is the better option when:\n\n- you want to keep the old address reachable while people get used to the new one,\n- the two addresses are really two people who have been sharing one login,\n- you are moving from a personal address to a business one and do not want to lose access mid-way.\n\nGive each person their own login wherever you can. Permissions and the activity record are tied to the account, so a shared login makes both meaningless — see Can multiple team members share one login? below."
+        "text": "Go to Settings → General → Access, open the profile, replace the email address and save. From then on that person logs in with the new address — they enter it on the login page and request a link or code. There is no password to change.\n\nYou do not have to replace it. You can add a second access with the other email instead, and keep both working. That is the better option when:\n\n- you want to keep the old address reachable while people get used to the new one,\n- the two addresses are really two people who have been sharing one login,\n- you are moving from a personal address to a business one and do not want to lose access mid-way.\n\nGive each person their own login wherever you can. Permissions and the activity record are tied to the account, so a shared login makes both meaningless — see Can multiple team members share one login? below."
       }
     },
     {
@@ -41,7 +41,7 @@
       "name": "After changing an instructor's email, they cannot log in — what is the process?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "When you update an instructor's email address in Settings → Team, the instructor must log in again using the new email:\n\n1. Go to your regional Zooza app URL (see the table above).\n2. Enter the new email address.\n3. Click the login link that arrives by email.\n\nNo separate invitation is needed. The instructor simply requests a new login link with the corrected email. If the link does not arrive, check that the email address is spelled correctly in Settings → Team and ask the instructor to check their spam folder."
+        "text": "When you update an instructor's email address in Settings → General → Access, the instructor must log in again using the new email:\n\n1. Go to your regional Zooza app URL (see the table above).\n2. Enter the new email address.\n3. Click the login link that arrives by email.\n\nNo separate invitation is needed. The instructor simply requests a new login link with the corrected email. If the link does not arrive, check that the email address is spelled correctly in Settings → General → Access and ask the instructor to check their spam folder."
       }
     },
     {
@@ -81,7 +81,7 @@
       "name": "Can multiple team members share one login?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Each team member should have their own account with an individual email address. Shared logins create problems with audit trails, permissions, and notifications. To add team members:\n\n1. Go to Settings → Team.\n2. Add each person with their own email address.\n3. Assign the appropriate role (owner, admin, instructor, etc.).\n\nEach team member then logs in with their own email using the same passwordless login link process."
+        "text": "No. Each team member should have their own account with an individual email address. Shared logins create problems with audit trails, permissions, and notifications. To add team members:\n\n1. Go to Settings → General → Access.\n2. Add each person with their own email address.\n3. Assign the appropriate role (owner, admin, instructor, etc.).\n\nEach team member then logs in with their own email using the same passwordless login link process."
       }
     },
     {
@@ -89,7 +89,7 @@
       "name": "How do I change the app language for admins or instructors?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Two routes, same setting — take whichever you reach first:\n\n- Settings → My profile, in the Application Communication Language card.\n- The Dashboard, at the very bottom of the page.\n\nThe interface reloads immediately. Each admin and instructor sets their own language independently; it does not affect colleagues, and it does not affect the client-facing widgets or emails.\n\nDo not use Settings → General for this. The setting there has the same name but a different job — it is the language Zooza writes to parents in, across notifications, emails and WhatsApp. See Change the language in Zooza.\n\nAvailable languages: Slovak, English, Czech, Hungarian, Romanian, and others depending on your account.\n\nFor more detail — including how to change the language of client-facing widgets and emails — see Change the language in Zooza."
+        "text": "Two routes, same setting — take whichever you reach first:\n\n- your name (top right) → My profile, in the Application Communication Language card.\n- The Dashboard, at the very bottom of the page.\n\nThe interface reloads immediately. Each admin and instructor sets their own language independently; it does not affect colleagues, and it does not affect the client-facing widgets or emails.\n\nDo not use Settings → General for this. The setting there has the same name but a different job — it is the language Zooza writes to parents in, across notifications, emails and WhatsApp. See Change the language in Zooza.\n\nAvailable languages: Slovak, English, Czech, Hungarian, Romanian, and others depending on your account.\n\nFor more detail — including how to change the language of client-facing widgets and emails — see Change the language in Zooza."
       }
     },
     {
@@ -97,7 +97,7 @@
       "name": "How do I switch Zooza to dark mode — or turn it off?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Go to Settings → My profile and find the Appearance card.\n\nTheme offers three choices:\n\nIf Zooza went dark on its own and you want it back, that is System following your\ncomputer. Pick Light and it stays light regardless.\n\nUnder it, Colour sets the accent used across the app: Zooza orange (the default),\nVeronese Green, Rosso Corsa, International Klein Blue, Mauve, or Monticello.\n\nThe choice is yours alone and follows you between devices — it is saved to your\nuser account, not to the company, so changing it does not affect your colleagues or\nanything your clients see."
+        "text": "Go to your name (top right) → My profile and find the Appearance card.\n\nTheme offers three choices:\n\nIf Zooza went dark on its own and you want it back, that is System following your\ncomputer. Pick Light and it stays light regardless.\n\nUnder it, Colour sets the accent used across the app: Zooza orange (the default),\nVeronese Green, Rosso Corsa, International Klein Blue, Mauve, or Monticello.\n\nThe choice is yours alone and follows you between devices — it is saved to your\nuser account, not to the company, so changing it does not affect your colleagues or\nanything your clients see."
       }
     },
     {

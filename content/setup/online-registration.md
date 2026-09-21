@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0056_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-09-20"
 ---
 
 # Online registration
@@ -55,7 +55,6 @@ These settings let you control how long classes remain visible in your booking f
 1. When a class reaches capacity – choose whether it should still appear or be hidden.
 2. Before the programme starts – set the number of hours in advance when the programme should be hidden from your website’s programme catalogue.
 
-![Before the programme starts – set the number of hours in advance when the programme...](../../assets/images/client-import-03.png)
 
 Alert: Hiding the programme before it starts will disable the option to allow late booking in the Price and Payment tile.
 

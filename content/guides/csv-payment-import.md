@@ -79,7 +79,7 @@ At this step you can also choose to **generate invoices** for all imported payme
 
 After confirming, each matched payment is applied to the corresponding booking. The client receives a payment confirmation notification.
 
-> **Note:** You can disable the payment confirmation notification in **Settings → Payments** if you do not want clients to be notified after a CSV import.
+> **Note:** You can disable the payment confirmation notification in **Settings → Billing & Payments → Payment settings** if you do not want clients to be notified after a CSV import.
 
 ![Screenshot — csv payment import](../../assets/images/csv-payment-import-05.png)
 

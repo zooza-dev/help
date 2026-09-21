@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-09-20"
 related_articles: ["user-roles","instructor-access-faq","role-selection-guide","login-and-account-faq"]
 ---
 
@@ -19,7 +19,7 @@ related_articles: ["user-roles","instructor-access-faq","role-selection-guide","
 
 ## How to add an instructor
 
-1. Go to **Settings → Team**.
+1. Go to **Settings → General → Access**.
 2. Click **Add**.
 3. Enter the instructor's name and email address.
 4. Select a role (see [role guide below](#which-role-to-choose)).
@@ -81,7 +81,7 @@ The most critical step is marking attendance. Make sure they know:
 
 ## Instructor attendance settings
 
-You control how much detail instructors see when marking attendance. Go to **Settings → Team → [instructor name]** to configure:
+You control how much detail instructors see when marking attendance. Go to **Settings → General → Access → [instructor name]** to configure:
 
 | Setting | What it controls |
 |---------|-----------------|
@@ -118,7 +118,7 @@ back in.
 ## Common instructor problems and fixes
 
 **"My instructor says they can't find Classes in the menu"**
-Expected. Standard instructors and External instructors don't see the Classes list. If they need it, change their role to **Main instructor** in **Settings → Team**.
+Expected. Standard instructors and External instructors don't see the Classes list. If they need it, change their role to **Main instructor** in **Settings → General → Access**.
 
 **"My instructor can't send emails to clients"**
 Email access requires at least the **Instructor** role. External instructors cannot send messages. Change their role, or have an admin send the email on their behalf.
@@ -127,7 +127,7 @@ Email access requires at least the **Instructor** role. External instructors can
 Check that the instructor is assigned to that class. Go to the class → **Details** → **Instructor** and confirm the assignment. An instructor only sees classes where they are listed as main or substitute instructor.
 
 **"My instructor didn't receive the login email"**
-- Confirm the email address is correct in **Settings → Team**
+- Confirm the email address is correct in **Settings → General → Access**
 - Ask them to check spam
 - They can also go to the Zooza app URL, enter their email, and request a new login link at any time — no invitation needed
 
@@ -142,14 +142,14 @@ Each user can set a personal avatar that appears in the team member list and thr
 
 **Choose a preset avatar:**
 
-1. Go to **Settings → My profile** (or click your name in the top-right corner).
+1. Go to **your name (top right) → My profile** (or click your name in the top-right corner).
 2. Click your current avatar or **Change avatar**.
 3. Select **Choose from gallery**, browse the preset images, and click one.
 4. Click **Save**.
 
 **Upload your own photo:**
 
-1. Go to **Settings → My profile**.
+1. Go to **your name (top right) → My profile**.
 2. Click your current avatar or **Change avatar**.
 3. Select **Upload photo**, choose an image from your device, and confirm.
 4. Click **Save**.

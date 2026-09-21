@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-20"
 related_articles: ["trial-sessions", "trials-faq", "late-bookings", "pay-as-you-go-faq", "programme-settings"]
 ---
 
@@ -25,7 +25,7 @@ Booking form behaviour is configured at **three separate levels** in Zooza. When
 | How the form looks and behaves globally (button text, availability display, CSS) | **Team & Settings → Publish → widget → Configure** (Booking form) |
 | What data the form collects (extra fields, date of birth, address) | **Programmes → programme → Additional Fields** |
 | Which classes appear, field labels, multiple children, communication | **Programmes → programme → Online Booking → Edit** |
-| Price, payment method, booking fee | **Programmes → programme → Settings → Price and Payment** |
+| Price, payment method, booking fee | **Programmes → programme → Settings → Price and payment** |
 
 ## Level 1 — Widget settings (global appearance and behaviour)
 
@@ -141,7 +141,7 @@ Each field has a visibility toggle (eye icon) to show or hide it on the form.
 
 ## Price and Payment
 
-Go to **Programmes** → open a programme → **Settings → Price and Payment → Edit**.
+Go to **Programmes** → open a programme → **Settings → Price and payment → Edit**.
 
 Here you set the programme price, booking fee, price type (term / block / unit), payment method, and whether late bookings are automatically approved. See [Programme Settings Reference](../reference/programme-settings.md) for the full field list.
 

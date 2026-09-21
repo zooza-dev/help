@@ -11,7 +11,7 @@ status: "archived"
 source_legacy_path: "legacy/0011_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-09-19"
 ---
 
 # Company logo in email communication
@@ -20,11 +20,11 @@ You can insert your company logo within the application. Once set, it will appea
 
 1. Go to **Settings --> General**.
 
-![Settings - General menu](../../assets/images/settings-general-menu.png "Settings - General menu")
+![Settings - General menu](../../assets/images/settings-general-menu.png)
 
 2. In the first section, **Account Information**, there is an option to insert a logo. Enter the URL where the logo is stored.
 
-![Account Information - logo URL field](../../assets/images/account-info-logo-url.png "Account Information - logo URL field")
+![Account Information - logo URL field](../../assets/images/account-info-logo-url.png)
 
 3. After inserting the link with the logo, scroll to the bottom of the page and click **Save**.
 

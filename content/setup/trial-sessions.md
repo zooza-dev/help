@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0058_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-20"
 related_articles: ["trials-faq","trials-daily-business","individual-sessions","blocks-configuration"]
 ---
 
@@ -213,7 +213,6 @@ If you want newly created classes to be automatically included in your trial, se
 
 ![If you want newly created classes to be automatically included in your trial, select...](../../assets/images/trial-lessons-15.png)
 
-![If you want newly created classes to be automatically included in your trial, select...](../../assets/images/client-import-01.png)
 
 Note:
  If you selected Interest classes in the previous step when selecting the Trial Type, you need to have previously created classes of the Interest type for which you want to activate the Trial Session feature.
@@ -235,11 +234,9 @@ The moment a client signs up for a trial session via the booking form, the booki
 
 ![Dates related to sending notifications to register for the programme](../../assets/images/trial-lessons-18.png)
 
-![Dates related to sending notifications to register for the programme](../../assets/images/client-import-01.png)
 
 Alert! If you do not have notification automation enabled, information about when notifications are sent will not be displayed. You will only see the actions resulting from the current trial sessions settings on the programme.
 
-![Alert! If you do not have notification automation enabled, information about when...](../../assets/images/client-import-03.png)
 
 Warning! Trial sessions have different statuses than standard programme bookings:
 
@@ -314,7 +311,6 @@ If you and your client have agreed that you will register them, you can easily d
 5. Once you have successfully registered for the programme, the status of the trial will change to Trial won.
  ![Once you have successfully registered for the programme, the status of the trial will...](../../assets/images/trial-lessons-32.png)
 
-![Once you have successfully registered for the programme, the status of the trial will...](../../assets/images/client-import-03.png)
 
 Warning! After enrolling in the programme, the client will receive a new variable symbol. However, for better clarity, the trial and regular booking remain linked, allowing you to easily check them.
 

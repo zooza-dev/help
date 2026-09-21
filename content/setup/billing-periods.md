@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0076_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-09-20"
 ---
 
 # Setting up billing periods
@@ -76,7 +76,6 @@ The billing period created in this way will be displayed in the list where you h
 
 Active billing periods will also be displayed in the menu when creating/editing a programme class or transferring bookings. You won’t find inactive periods there. See the documentation for more information on the settings.
 
-![Active billing periods will also be displayed in the menu when creating/editing a...](../../assets/images/discount-code-01.png)
 
 Note:
  All created billing periods and the classification of bookings
@@ -89,7 +88,6 @@ If you want to show inactive billing periods in the reports, you need to click *
 
 ![If you want to show inactive billing periods in the reports, you need to click Show...](../../assets/images/billing-periods-07.png)
 
-![If you want to show inactive billing periods in the reports, you need to click Show...](../../assets/images/discount-code-01.png)
 
 Inactive periods are defined as those in which there has not been a single exercise in the last six months or is only used within the collection bins.
 

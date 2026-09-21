@@ -11,8 +11,8 @@ related_articles: ["capacity-and-extra-capacity", "priority-registration", "dela
 status: "published"
 source_legacy_path: ""
 source_language: "en"
-needs_screenshot_replacement: true
-last_converted: "2026-08-16"
+needs_screenshot_replacement: false
+last_converted: "2026-09-19"
 ---
 
 # Shared sessions — two classes in one room

@@ -9,7 +9,7 @@ tags: ["programme", "class", "archive", "delete", "venue", "price", "rename", "t
 status: "published"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-09-20"
 ---
 
 # FAQ — Programmes
@@ -18,7 +18,7 @@ last_converted: "2026-08-07"
 
 ## Can I delete a Programme?
 
-Yes. Admins with the **edit_course** permission can delete a programme directly from **Programme Settings → Edit → Delete programme**.
+Yes. Admins with the **edit_course** permission can delete a programme directly from **Programme → Settings → Programme settings → Edit → Delete programme**.
 
 Deletion is a **soft delete** — the programme moves to **Settings → Tools → Trash** and can be restored within 30 days. After 30 days it is permanently removed.
 
@@ -31,12 +31,12 @@ See [Archive or delete a programme](../guides/archive-or-delete-programme.md) fo
 ## How do I archive a Programme?
 
 1. Go to **Programmes** and click the Programme name.
-2. Go to **Programme Settings → Edit**.
+2. Go to **Programme → Settings → Programme settings → Edit**.
 3. Tick **Archive** and click **Save**.
 
 The Programme disappears from your active list. To find it later, use the **Archived** filter in the Programmes list.
 
-To restore: open the archived Programme, go to Programme Settings → Edit, uncheck **Archive**, and save.
+To restore: open the archived Programme, go to Programme → Settings → Programme settings → Edit, uncheck **Archive**, and save.
 
 ---
 
@@ -53,7 +53,7 @@ A Class with active bookings cannot be deleted. You can:
 
 No. A Class always requires a Venue — it cannot be left blank.
 
-The solution is to create a **placeholder Venue** in **Settings → Locations** (e.g. name it "Online", "TBD", or anything neutral). Assign this placeholder to the Class. Whatever name you give it is what clients will see.
+The solution is to create a **placeholder Venue** in **Settings → General → Venues** (e.g. name it "Online", "TBD", or anything neutral). Assign this placeholder to the Class. Whatever name you give it is what clients will see.
 
 Do not delete the original Venue from Settings if it is used by other Classes.
 
@@ -61,7 +61,7 @@ Do not delete the original Venue from Settings if it is used by other Classes.
 
 ## Can I rename a Programme?
 
-Yes. Go to the Programme, open **Programme Settings → Edit**, change the name, and save. All settings and bookings remain unchanged.
+Yes. Go to the Programme, open **Programme → Settings → Programme settings → Edit**, change the name, and save. All settings and bookings remain unchanged.
 
 ---
 

@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-20"
 ---
 
 # Payments and Billing FAQ
@@ -122,13 +122,13 @@ Both statuses mean the client owes money, but they indicate different urgency:
 - **Awaiting payment** — the client has an outstanding balance and is still within the allowed payment window. The deadline has not passed. This is a normal, expected state for a booking that was just created.
 - **Unpaid** — the payment window has closed. The balance is overdue.
 
-The length of the grace window is set in **Settings → Payments** under **Number of days until payment is due** (Slovak: *Počet dní pre vystavenie splátky*). If this is set to 20, every new booking with a balance enters **Awaiting payment** for 20 days from registration, then automatically becomes **Unpaid**.
+The length of the grace window is set in **Settings → Billing & Payments → Payment settings** under **Days before booking is marked unpaid** (Slovak: *Počet dní pre vystavenie splátky*). If this is set to 20, every new booking with a balance enters **Awaiting payment** for 20 days from registration, then automatically becomes **Unpaid**.
 
 The default value is **0** — meaning no grace window; bookings go straight to **Unpaid** when created with an outstanding balance.
 
 ## Why are my bookings showing "Awaiting payment" when they used to show "Unpaid" immediately?
 
-If you have a non-zero value in **Settings → Payments → Number of days until payment is due**, your bookings will now enter **Awaiting payment** for that number of days before becoming **Unpaid**.
+If you have a non-zero value in **Settings → Billing & Payments → Payment settings → Days before booking is marked unpaid**, your bookings will now enter **Awaiting payment** for that number of days before becoming **Unpaid**.
 
 Before May 2026, this setting only affected bookings with a payment schedule (instalments). From May 2026, it applies to **all** bookings with an outstanding balance.
 
@@ -136,7 +136,7 @@ If you want bookings to go straight to **Unpaid** (the original behaviour), set 
 
 ## What is the "tolerance period" (or grace period) for payments?
 
-The tolerance period is the same as the **"Awaiting payment" window** described above. The field controlling it is called **Number of days until payment is due** in **Settings → Payments**.
+The tolerance period is the same as the **"Awaiting payment" window** described above. The field controlling it is called **Days before booking is marked unpaid** in **Settings → Billing & Payments → Payment settings**.
 
 Two important clarifications:
 
@@ -159,7 +159,7 @@ Instalment due dates on a payment plan are still set per instalment and are not 
 
 No. The **Awaiting payment** status is for your internal tracking only — it does not trigger any emails.
 
-To send email reminders to clients with outstanding balances, you must configure a **Payment Reminder** action on the programme under **Programme → Settings → Price and Payment → Payment Reminder Settings**. Without this action, bookings will silently move from **Awaiting payment** to **Unpaid** when the deadline passes — no notification is sent.
+To send email reminders to clients with outstanding balances, you must configure a **Payment Reminder** action on the programme under **Programme → Settings → Price and payment → Payment Reminder Settings**. Without this action, bookings will silently move from **Awaiting payment** to **Unpaid** when the deadline passes — no notification is sent.
 
 See [Automatic payment reminders](../guides/automatic-payment-reminders-detailed.md) for full setup instructions.
 
@@ -167,7 +167,7 @@ See [Automatic payment reminders](../guides/automatic-payment-reminders-detailed
 
 The booking is created even if the payment fails or is skipped. This ensures you still capture the lead. The parent can complete the payment later via their Client Profile.
 
-Depending on your **Number of days until payment is due** setting, the booking will be in **Awaiting payment** (if a grace window is set) or immediately in **Unpaid** (if the setting is 0).
+Depending on your **Days before booking is marked unpaid** setting, the booking will be in **Awaiting payment** (if a grace window is set) or immediately in **Unpaid** (if the setting is 0).
 
 You can configure **payment reminders** per programme to automatically follow up with clients who have not paid. After a set number of reminders, the system can auto-remove the booking.
 
@@ -179,7 +179,7 @@ Payment reminders are configured per programme under the payment settings. You s
 - The interval between reminders.
 - Whether the system should automatically cancel the booking after all reminders expire.
 
-Go to **Programme → Settings → Price and Payment → Payment Reminder Settings** to configure this. For a full walkthrough, see [Automatic payment reminders](../guides/automatic-payment-reminders-detailed.md).
+Go to **Programme → Settings → Price and payment → Payment Reminder Settings** to configure this. For a full walkthrough, see [Automatic payment reminders](../guides/automatic-payment-reminders-detailed.md).
 
 ## How do I issue a refund?
 
@@ -228,7 +228,7 @@ No. This is the most common source of confusion when setting up payments.
 
 A payment template defines **when and in how many parts** a client pays — monthly, quarterly, annually, after N sessions, or a fixed number of instalments. It does **not** contain the price. The amount comes from each programme's own price setting, and any discount on the template is calculated as a percentage or fixed sum off that price.
 
-So if you run six programmes and want to offer monthly, quarterly and annual payment on each, you create **three templates, not eighteen**. You create them once under **Settings → Billing & Payments → Payment schedule templates**, then switch them on for each programme under **Programmes → programme → Settings → Price and Payment → Payment Frequency**.
+So if you run six programmes and want to offer monthly, quarterly and annual payment on each, you create **three templates, not eighteen**. You create them once under **Settings → Billing & Payments → Payment schedule templates**, then switch them on for each programme under **Programmes → programme → Settings → Price and payment → Payment Frequency**.
 
 Each programme keeps its own price. The same "Monthly" template produces different instalments for a €300 programme and a €450 one.
 
@@ -282,7 +282,7 @@ The QR code in payment emails pulls recipient details from your **billing profil
 
 To fix this:
 
-1. Go to **Settings → Billing Profiles**.
+1. Go to **Settings → Billing & Payments → Invoice profiles**.
 2. Open the relevant billing profile.
 3. Verify that the **account holder name** and **IBAN** match your actual bank account details exactly.
 4. Save and resend the payment notification to the client.
@@ -295,8 +295,8 @@ If the QR code is completely absent from payment instruction emails (not just br
 
 Check these in order:
 
-1. **Billing profile has no IBAN** — Go to **Settings → Billing Profiles**, open the active profile, and confirm that **IBAN** and **SWIFT/BIC** are filled in. Both are required for the QR code to generate.
-2. **Programme uses a different billing profile** — If the programme has its own billing profile assigned (in **Programme → Settings → Price and Payment → Invoicing**), check that profile's IBAN and SWIFT/BIC too.
+1. **Billing profile has no IBAN** — Go to **Settings → Billing & Payments → Invoice profiles**, open the active profile, and confirm that **IBAN** and **SWIFT/BIC** are filled in. Both are required for the QR code to generate.
+2. **Programme uses a different billing profile** — If the programme has its own billing profile assigned (in **Programme → Settings → Price and payment → Invoicing**), check that profile's IBAN and SWIFT/BIC too.
 3. **Template does not include the QR code tag** — Open **Communication → Message Templates** → the relevant payment template. Confirm the template body contains the `*|QR_CODE|*` tag. If it was removed or never added, the QR will not appear.
 
 > QR payment codes are currently available for accounts based in SK, CZ, and other SEPA markets. If your account is in a different region, the `*|QR_CODE|*` tag may not generate an image regardless of the settings.
@@ -384,7 +384,7 @@ A refund usually needs three separate things doing, and only one of them happens
 
 ### To fix a wrong invoice — general process
 
-1. Identify which invoicing system you use (**Settings → Billing & Payments → Invoice Settings**).
+1. Identify which invoicing system you use (**Settings → Billing & Payments → Invoices**).
 2. If using **Zooza built-in**: click the pencil icon next to the invoice on the booking detail. You can correct the period, date, payment method, and description. This does not change the payment amount.
 3. If using an **external system**: open the invoice in that system and apply the correction there (edit, void, credit note, or storno — depending on the system). The corrected version will not appear in Zooza.
 4. If the payment amount itself needs to change, adjust the debt on the booking in Zooza separately — see [Edit payment on booking](../guides/edit-payment-on-booking.md).
@@ -467,8 +467,8 @@ If clients are receiving reminders 1–3 weeks before they need to pay, this is 
 
 **To turn it off or adjust it:**
 
-- **Globally:** Go to **Settings → Payment Settings** and disable or adjust **Notify before a scheduled payment is issued**. Set the number of days to a smaller value, or turn it off entirely.
-- **Per programme:** Go to **Programme → Settings → Price and Payment → Payment Reminders** and adjust the reminder schedule for that programme.
+- **Globally:** Go to **Settings → Billing & Payments → Payment settings** and disable or adjust **Notify before a scheduled payment is issued**. Set the number of days to a smaller value, or turn it off entirely.
+- **Per programme:** Go to **Programme → Settings → Price and payment → Payment Reminders** and adjust the reminder schedule for that programme.
 
 > **Note:** This setting controls notification at the programme level. You cannot turn off reminders for a single client — only globally or per programme.
 
@@ -495,7 +495,7 @@ The most common cause is a misconfigured **sessions per month** setting in the p
 
 **To fix it:**
 
-1. Go to **Settings → Payment Settings** and open the relevant payment plan.
+1. Go to **Settings → Billing & Payments → Payment schedule templates** and open the relevant payment plan.
 2. Check the **Sessions per month** (or billing sessions) field.
 3. Correct it to the actual number of sessions per billing period (e.g. 4 for a weekly class).
 4. Save and verify the price on the booking page.
@@ -566,7 +566,7 @@ A down payment (deposit) and a payment plan can be used together. The down payme
 
 **Setup:**
 
-1. Go to **Programme → Settings → Price and Payment**.
+1. Go to **Programme → Settings → Price and payment**.
 2. Under **Price**, set your total price and select a payment plan (e.g. monthly instalments).
 3. Under **Down payment**, choose **Fixed amount** or **Percentage** and enter the value.
 4. Save.
@@ -625,7 +625,7 @@ Payment plan templates (payment schedules with instalments) are created and mana
 
 **To create or manage a payment template:**
 1. Open the programme.
-2. Go to **Settings → Price and Payment**.
+2. Go to **Settings → Price and payment**.
 3. Under **Payment templates**, create or edit the templates you want to offer.
 
 **At the class level**, you can only enable or disable which of the programme's payment templates are available to clients booking that specific class. You cannot create a new template from within a class.
@@ -641,7 +641,7 @@ Yes. The "Awaiting payment" period (default: 15 days) can be changed or cancelle
 3. Click the **Awaiting payment** deadline date.
 4. Change the date or remove it entirely.
 
-The global default (15 days) is set in **Settings → Payments**. Changing it per booking only affects that one booking — other bookings are not affected.
+The global default (15 days) is set in **Settings → Billing & Payments → Payment settings**. Changing it per booking only affects that one booking — other bookings are not affected.
 
 ![Screenshot — payments and billing faq](../../assets/images/payments-and-billing-faq-02.png)
 
@@ -663,7 +663,7 @@ If two classes genuinely need different payment structures (different price, dif
 
 No. Payment plan templates with scheduled instalments are designed for **Fixed Period** and **Membership** course types. They cannot be applied to **Open courses** or **one-time events** — these course types expect a single full payment at the time of booking, not an ongoing instalment schedule.
 
-When viewing a payment plan template in **Settings → Payment Settings**, the template detail shows a preview of which course types it is compatible with. If your programme is set to an incompatible type, the template cannot be selected.
+When viewing a payment plan template in **Settings → Billing & Payments → Payment schedule templates**, the template detail shows a preview of which course types it is compatible with. If your programme is set to an incompatible type, the template cannot be selected.
 
 **To offer instalment payments:** make sure the programme type is **Fixed Period** or **Membership**, not Open course.
 
@@ -723,7 +723,7 @@ To investigate why a payment was ignored: go to **Payments → Payment reconcili
 
 ## Does the "X days after registration" due date setting apply to payment plan instalments?
 
-Yes, from July 2026. Previously, the **"due X days after registration"** setting (configured under **Programme → Settings → Price and Payment → Payment Reminder Settings**, mode: after registration) only applied to single-payment programmes. For instalment plans, the first payment's due date was set to the class start date regardless of this setting.
+Yes, from July 2026. Previously, the **"due X days after registration"** setting (configured under **Programme → Settings → Price and payment → Payment Reminder Settings**, mode: after registration) only applied to single-payment programmes. For instalment plans, the first payment's due date was set to the class start date regardless of this setting.
 
 Now the first instalment's **due date** is set to `registration date + X days`, matching how single payments already worked. Subsequent instalments follow the payment plan schedule as normal — their due dates are unaffected.
 

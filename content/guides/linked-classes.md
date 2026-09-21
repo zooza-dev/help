@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0037_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-02-15"
+last_converted: "2026-09-20"
 ---
 
 # Linked classes
@@ -48,9 +48,9 @@ You offer the same yoga class at two locations or with different instructors. Ea
 6. Click **Choose**.
 7. Click **Save**.
 
-![Screenshot placeholder — class linking setup](../../assets/images/group-connection-04.png)
+![The Class linking tile on the programme Settings tab with the Add button](../../assets/images/group-connection-04.png)
 
-![Screenshot placeholder — selecting classes](../../assets/images/group-connection-06.png)
+![Class linking tile with the Connecting classes card and Add button](../../assets/images/group-connection-06.png)
 
 After saving, you can **Add** another link, **Edit**, or **Delete** existing links from the list.
 

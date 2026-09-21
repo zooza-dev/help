@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-09-19"
 ---
 
 
@@ -23,7 +23,7 @@ Location is a required field on a class — you cannot leave it blank. You can o
 
 If you want to remove or unset the location (e.g. the venue is not confirmed yet, or classes moved online), create a placeholder location and assign it:
 
-1. Go to **Settings → Locations** and create a new location with a placeholder name, for example:
+1. Go to **Settings → General → Venues** and create a new location with a placeholder name, for example:
    - `TBD` / `To be announced`
    - `Online`
    - `Various venues`
@@ -33,7 +33,7 @@ If you want to remove or unset the location (e.g. the venue is not confirmed yet
 
 ## How do I add a new location?
 
-Go to **Settings → Locations** and create a new entry. Provide the location name, address, and optionally a map pin. The location will become available when creating or editing classes.
+Go to **Settings → General → Venues** and create a new entry. Provide the location name, address, and optionally a map pin. The location will become available when creating or editing classes.
 
 ## I edited a location name but it still shows the old name on the booking form — why?
 

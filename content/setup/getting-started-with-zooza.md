@@ -12,7 +12,7 @@ related_articles: ["onboarding-launch-faq", "login-and-account-faq", "app-naviga
 source_legacy_path: "legacy/0015_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-09-19"
 ---
 
 # Getting Started with Zooza
@@ -163,7 +163,7 @@ This tells Zooza:
 
 Tip – Payment templates
 
-Zooza comes with default payment templates (monthly, per term, per session), so you can start using them straight away. If you later want to change how often parents are charged or how many instalments you use, go to Zooza → Settings → Payments → Payment templates and edit or create your own template there.
+Zooza comes with default payment templates (monthly, per term, per session), so you can start using them straight away. If you later want to change how often parents are charged or how many instalments you use, go to Zooza → Settings → Billing & Payments → Payment schedule templates → Payment templates and edit or create your own template there.
 
 5. Test the journey as a parent
 

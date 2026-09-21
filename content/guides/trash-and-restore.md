@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-28"
+last_converted: "2026-09-19"
 related_articles: ["archive-or-delete-programme", "registration-status-overview", "ad-hoc-scheduled-payment"]
 ---
 
@@ -74,7 +74,7 @@ The **Restore** button is inactive when one of these conditions is true:
 
 The item is removed from the Trash list and restored to its original location in the app.
 
-![Screenshot — trash and restore](../../assets/images/trash-and-restore-01.png)
+![Settings → Tools → Trash: deleted sessions with Restore buttons](../../assets/images/trash-and-restore-01.png)
 
 > **Note:** Restore is a database-level operation. It does not re-send notifications, re-trigger integrations, or cascade to dependent records. For example, restoring a class does not automatically restore registrations that were on it — restore each type separately if needed.
 

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-09-19"
 ---
 
 
@@ -23,7 +23,7 @@ There are three places where you can verify consent status:
 
 **1. Filter the bookings list by consent (best for checking all at once)**
 
-Go to **Settings → Consents & Agreements**, find your photo/video consent, and click the **Has consent** or **No consent** filter button. This opens the bookings list filtered to show only clients who have (or have not) given that consent — with their name, consent type, date given, and revoke date.
+Go to **Settings → General → Consents & Agreements**, find your photo/video consent, and click the **Has consent** or **No consent** filter button. This opens the bookings list filtered to show only clients who have (or have not) given that consent — with their name, consent type, date given, and revoke date.
 
 This is the fastest way to get a full list of who has and has not accepted.
 
@@ -39,7 +39,7 @@ Open the client's detail page (not the booking — the client profile itself) an
 
 ## How do I make clients accept terms and conditions during registration?
 
-Go to **Settings → Consents & Agreements** and click **Add**. Fill in the consent name and text, set **Consent type** to **Check box** (so clients must tick it) or **No separate confirmation needed** (so agreeing is implicit in clicking the Register button). Set **Require from** to **All bookings** or limit it to specific programmes.
+Go to **Settings → General → Consents & Agreements** and click **Add**. Fill in the consent name and text, set **Consent type** to **Check box** (so clients must tick it) or **No separate confirmation needed** (so agreeing is implicit in clicking the Register button). Set **Require from** to **All bookings** or limit it to specific programmes.
 
 For the full setup, see [Consents and agreements](../setup/setting-gtc-gdpr-consents.md).
 
@@ -59,7 +59,7 @@ Use **Consents & Agreements** — not Additional fields. Additional fields only 
 
 Steps:
 
-1. Go to **Settings → Consents & Agreements → Add**.
+1. Go to **Settings → General → Consents & Agreements → Add**.
 2. Enter the declaration text in the **Consent text** field (e.g. *"I confirm that my child shows no signs of illness and does not have any infectious disease at the time of enrolment."*).
 3. Set **Consent type** to **Check box** — the client must tick this to proceed.
 4. Set **Require from** to **All bookings** or limit it to the specific programme (e.g. a summer camp).
@@ -94,7 +94,7 @@ Open the client detail and scroll to the **Consents given by client** section. T
 
 ## Can I filter bookings by consent status?
 
-Yes. In **Settings → Consents & Agreements**, each consent card has **Filter bookings** buttons. Click **Has consent** or **No consent** (for checkbox types) or **Accepted / Declined / No consent** (for Yes/No types) to jump directly to a filtered booking list.
+Yes. In **Settings → General → Consents & Agreements**, each consent card has **Filter bookings** buttons. Click **Has consent** or **No consent** (for checkbox types) or **Accepted / Declined / No consent** (for Yes/No types) to jump directly to a filtered booking list.
 
 ## A client says they were not asked to accept the consent — why?
 
@@ -119,13 +119,13 @@ New bookings always see the current consent text regardless of which option you 
 
 ## How do I require existing clients to re-accept a consent after updating it?
 
-When editing the consent in **Settings → Consents & Agreements**, tick the **Require clients to consent again** checkbox before saving. Zooza will show a confirmation dialog. On confirm, a new version is minted and clients who accepted the previous wording are queued for re-consent.
+When editing the consent in **Settings → General → Consents & Agreements**, tick the **Require clients to consent again** checkbox before saving. Zooza will show a confirmation dialog. On confirm, a new version is minted and clients who accepted the previous wording are queued for re-consent.
 
 > **Important:** This is irreversible. Use it only for material changes to the consent wording — not for minor corrections like typo fixes or link updates.
 
 ## Can I add multiple consents?
 
-Yes. Click **Add** in **Settings → Consents & Agreements** to add as many consents as needed. Each one is configured and displayed independently. If you need the same consent to appear on both the booking form and the order form, create two separate entries — one for each form type.
+Yes. Click **Add** in **Settings → General → Consents & Agreements** to add as many consents as needed. Each one is configured and displayed independently. If you need the same consent to appear on both the booking form and the order form, create two separate entries — one for each form type.
 
 ## Can I change the "I agree / I don't agree" label text on consent choices?
 

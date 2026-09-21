@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0007_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-17"
+last_converted: "2026-09-20"
 related_articles: ["dynamic-tags", "edit-session-notification-template", "sending-email-sms", "email-communication-faq", "automatic-payment-reminders-detailed", "contact-form-setup"]
 ---
 
@@ -109,7 +109,7 @@ Zooza lets you create multiple variants of the same template type — for exampl
 ### Step 2 — Assign the variant to a programme
 
 1. Go to the **Programme** you want to use this template for.
-2. Open **Settings → Online registration**.
+2. Open **Settings → Online booking**.
 3. Find the **Confirmation email** (or equivalent) field.
 4. Select your new variant from the dropdown.
 5. Save the programme settings.
@@ -144,7 +144,7 @@ Access to templates depends on the user's role in Zooza:
 
 If you cannot see the **Add template** button or the **Communication → Templates** menu:
 
-1. Check your role — go to **Settings → Users** and verify you have Owner or Admin access.
+1. Check your role — go to **Settings → General → Access** and verify you have Owner or Admin access.
 2. Ask your account owner to grant you the necessary role.
 
 There is no setting to grant template access to instructors without promoting them to Admin.
@@ -155,7 +155,7 @@ Zooza can automatically send a **feedback / evaluation email** to clients after 
 
 **When it is sent:** The feedback email triggers based on the class end date — specifically, after the last session of the class has passed. There is no setting to delay or schedule it to a custom time.
 
-**How to enable it:** Go to **Programmes → [your programme] → Settings → Online registration** and look for the **Feedback email** or **Evaluation** option. Toggle it on.
+**How to enable it:** Go to **Programmes → [your programme] → Settings → Online booking** and look for the **Feedback email** or **Evaluation** option. Toggle it on.
 
 **Common issues:**
 - *"Feedback email was sent before the course ended"* — this can happen if the class end date in the system is earlier than the actual last session. Check the class end date under the class settings.

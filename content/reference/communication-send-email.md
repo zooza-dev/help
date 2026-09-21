@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-09-19"
 ---
 
 # Send Email
@@ -119,14 +119,13 @@ Click **Cancel** on the progress view to stop the send.
 
 You can display your company logo in the header of all emails sent to clients.
 
-1. Go to **Settings → General**.
-2. In the **Account Information** section, find the logo field.
-3. Enter the URL where your logo image is hosted.
-4. Scroll to the bottom and click **Save**.
+1. Go to **Settings → General → General**.
+2. In the **Company logo** section, drag and drop your logo or click **browse to choose a file** (GIF, JPG or PNG).
+3. Click **Upload**.
 
-The logo appears in the header of all outgoing client emails. Use a direct image URL (e.g. ending in `.png` or `.jpg`). If you don't have a hosted URL, upload the image to your website or use an image hosting service.
+The logo appears in the header of all outgoing client emails.
 
-![Account Information — logo URL field](../../assets/images/account-info-logo-url.png)
+![Company logo section on Settings → General with the drag-and-drop upload area](../../assets/images/account-info-logo-url.png)
 
 ## Related
 

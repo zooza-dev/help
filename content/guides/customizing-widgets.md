@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0078_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: "2026-09-17"
+last_converted: "2026-09-20"
 related_articles: ["publish-widgets", "deploying-zooza-on-website", "booking-form-settings", "contact-form-on-your-website", "contact-form-campaign-tracking"]
 ---
 
@@ -62,10 +62,10 @@ In the form you will see the basic fields that your client must fill in when boo
 ## Booking form settings for the children’s programme
 
 1. At the programme level, in the *Programme Settings* section, if you click the *Edit* button.
- ![Screenshot](../../assets/images/customizing-widgets-06.png)
+ ![Programme Settings tab with the Price and payment, Online booking, Make-up sessions, Programme settings and Additional sessions tiles](../../assets/images/customizing-widgets-06.png)
 
 2. Under *Additional settings*, tick the For children checkbox and Save the setting
- ![Screenshot](../../assets/images/customizing-widgets-07.png)
+ ![Programme settings tile: Basic information and Additional settings with programme type, target audience, For children and Archive](../../assets/images/customizing-widgets-07.png)
 3. The booking form fields on your web page will automatically change from Name to Parent’s Name after this setting
  ![Screenshot](../../assets/images/customizing-widgets-08.png)
 

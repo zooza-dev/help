@@ -11,7 +11,7 @@ status: "archived"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-06-01"
+last_converted: "2026-09-20"
 ---
 
 # Set your profile avatar
@@ -22,7 +22,7 @@ Your avatar appears in the Zooza team member list and in other places across the
 
 ## Choose a preset avatar
 
-1. Go to **Settings → My profile** (or click your name in the top right corner).
+1. Go to **your name (top right) → My profile** (or click your name in the top right corner).
 2. Click your current avatar or the **Change avatar** button.
 3. Select **Choose from gallery**.
 4. Browse the preset images and click the one you want.
@@ -36,7 +36,7 @@ Your avatar is updated immediately.
 
 ## Upload your own photo
 
-1. Go to **Settings → My profile**.
+1. Go to **your name (top right) → My profile**.
 2. Click your current avatar or the **Change avatar** button.
 3. Select **Upload photo**.
 4. Choose an image file from your device.

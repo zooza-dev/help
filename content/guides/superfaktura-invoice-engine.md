@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-04"
+last_converted: "2026-09-19"
 related_articles: ["invoice-buyer-data", "vat-management", "price-and-payment-setup"]
 ---
 
@@ -28,7 +28,7 @@ Zooza can generate invoices and push them directly into **SuperFaktura** (availa
 
 ## Setting up the connection
 
-1. In Zooza, go to **Settings → Invoice Settings**.
+1. In Zooza, go to **Settings → Billing & Payments → Invoices**.
 2. In the **Invoice Engine** section, select **SuperFaktura** from the dropdown.
 3. Fill in the credential fields:
 
@@ -46,7 +46,7 @@ Zooza will now send invoices to SuperFaktura whenever an invoice is generated fo
 ## How invoices are created in SuperFaktura
 
 - **Invoice data** — Zooza fills in the buyer details, line items (course/service), VAT rate per line, currency, payment method, and due date.
-- **Invoice number** — controlled by the **Invoice Number Template** you configure in Zooza (Settings → Invoice Settings → Number format). The number is passed verbatim to SuperFaktura.
+- **Invoice number** — controlled by the **Invoice Number Template** you configure in Zooza (Settings → Billing & Payments → Invoices → Number format). The number is passed verbatim to SuperFaktura.
 - **Paid status** — if the payment is fully paid at invoice-generation time, SuperFaktura marks the invoice as paid inline. No separate payment-sync step.
 - **Multi-line invoices** — if your account uses multi-line invoicing (e.g., one line per course component), each line is sent as a separate `InvoiceItem` in SuperFaktura.
 
@@ -76,7 +76,7 @@ The number is sent to SuperFaktura exactly as rendered — SuperFaktura will use
 - If you manage multiple companies in SuperFaktura, add the correct Company ID.
 
 **Wrong invoice number format:**
-- The number template in Zooza controls the format. Adjust it under Settings → Invoice Settings → Number format.
+- The number template in Zooza controls the format. Adjust it under Settings → Billing & Payments → Invoices → Number format.
 
 **Currency mismatch:**
 - Zooza sends the currency from the payment. Ensure your SuperFaktura account supports that currency.

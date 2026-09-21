@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0046_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-09-19"
 ---
 
 # Programme settings
@@ -87,7 +87,6 @@ If attendance recording is enabled, you can also set up make-up sessions for mis
 
 ![If attendance recording is enabled, you can also set up make-up sessions for missed...](../../assets/images/course-settings-06.png)
 
-![If attendance recording is enabled, you can also set up make-up sessions for missed...](../../assets/images/client-import-01.png)
 
 Note: This function is available for* full duration programmes* only.
 
@@ -116,7 +115,6 @@ In the *Trial* tile, you can set up a menu of trial sessions that clients withou
 
 ![Auto-enrolment is a pro feature designed to make re-enrolment easier and more efficient...](../../assets/images/course-settings-11.png)
 
-![Auto-enrolment is a pro feature designed to make re-enrolment easier and more efficient...](../../assets/images/client-import-01.png)
 
 Note: This function is available for* full duration programmes* only.
 
@@ -132,7 +130,6 @@ In some programmes — including single-session programmes such as camps or tour
 
 ![In some programmes — including single-session programmes such as camps or tours — it...](../../assets/images/course-settings-14.png)
 
-![In some programmes — including single-session programmes such as camps or tours — it...](../../assets/images/client-import-01.png)
 
 Note that when attendance tracking is turned off, make-up sessions cannot be offered. For a full explanation of how this feature works in all scenarios, see the [Attendance manual](https://support.zooza.online/portal/en/kb/articles/attendance-setup).
 
@@ -142,6 +139,5 @@ Zooza offers a possibility to link multiple classes together which will enable c
 
 ![Zooza offers a possibility to link multiple classes together which will enable clients...](../../assets/images/course-settings-16.png)
 
-![Zooza offers a possibility to link multiple classes together which will enable clients...](../../assets/images/client-import-01.png)
 
 Note: This function is available for *Pay-as-you-go programmes* only.

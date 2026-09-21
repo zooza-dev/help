@@ -11,18 +11,18 @@ status: "published"
 source_legacy_path: "legacy/html/druhe-nastavenie-vytvorenie-miesta.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-04-02"
+last_converted: "2026-09-19"
 ---
 
 # Creating and managing locations
 
 Locations are the physical venues where your classes take place. Every class requires a location, and the location name appears on your booking forms so clients know where to go. You can also add rooms within a location to track capacity per space.
 
-Go to **Settings → Locations** to manage all your locations.
+Go to **Settings → General → Venues** to manage all your locations.
 
 ## Adding a location
 
-1. Go to **Settings → Locations**.
+1. Go to **Settings → General → Venues**.
 2. Click **Add**.
 3. Fill in the fields:
 
@@ -37,7 +37,7 @@ Go to **Settings → Locations** to manage all your locations.
 
 4. Click **Add** to save.
 
-![Screenshot — creating a location](../../assets/images/creating-a-location-01.png)
+![The Add venue form: Region, Venue name, address fields and map pin](../../assets/images/creating-a-location-01.png)
 
 After saving, the location is available when creating or editing classes.
 

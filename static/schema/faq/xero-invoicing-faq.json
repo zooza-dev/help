@@ -25,7 +25,7 @@
       "name": "My invoices show \"tax exempt\" — how do I fix VAT settings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "VAT rates are managed in your Xero account. Make sure the correct tax rate is set up in Xero, then re-sync the connection in Zooza under Settings → Invoice Profiles. After syncing, invoices will reflect the correct VAT rate."
+        "text": "VAT rates are managed in your Xero account. Make sure the correct tax rate is set up in Xero, then re-sync the connection in Zooza under Settings → Billing & Payments → Invoice profiles. After syncing, invoices will reflect the correct VAT rate."
       }
     },
     {
@@ -33,7 +33,7 @@
       "name": "Where do I manage Xero connection settings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Go to Settings → Invoice Profiles in Zooza. From there you can sync or re-sync your Xero connection and configure invoice settings."
+        "text": "Go to Settings → Billing & Payments → Invoice profiles in Zooza. From there you can sync or re-sync your Xero connection and configure invoice settings."
       }
     },
     {

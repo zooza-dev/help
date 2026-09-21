@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-09-20"
 ---
 
 # Calendar
@@ -39,7 +39,7 @@ The main calendar view shows a daily timeline grouped by location.
 
 ### Why a session is a particular colour
 
-**The colour of a session comes from its programme.** Each programme can be given a colour in **Programme → Settings → Labels and colours**, and every session of every class in that programme is drawn in it. That is the whole rule for the block colour — it carries no meaning about capacity, payment or attendance.
+**The colour of a session comes from its programme.** Each programme can be given a colour in **Programme → Settings → Programme settings** (the **Labels** field), and every session of every class in that programme is drawn in it. That is the whole rule for the block colour — it carries no meaning about capacity, payment or attendance.
 
 So "why are the Saturday sessions red?" almost always answers itself: the programme running on Saturdays has red assigned to it. Change the programme's colour and the calendar follows.
 

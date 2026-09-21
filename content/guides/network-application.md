@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0107_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-09-19"
 ---
 
 # Network Application
@@ -83,7 +83,6 @@ The number of bookings created within the selected period, aggregated across all
 
  The number of active clients with booking status "Registered" as of the current run date (T-1). For broader date ranges, this is shown as an average across the selected periods.
 
-![The number of active clients with booking status "Registered" as of the current run...](../../assets/images/client-import-01.png)
 
 Note: Early in a new period, you may see only a few New Enrollments, but the total Enrollments remains high due to ongoing bookings from earlier periods.
 
@@ -106,7 +105,6 @@ Number of enrollments that have completed all sessions and ended successfully wi
 
 The total value of credit-based payments received during the selected period. Over larger date ranges (e.g. quarters), the value is cumulative.
 
-![The total value of credit-based payments received during the selected period. Over...](../../assets/images/client-import-01.png)
 
 Note: The value can occasionally be negative if the sum of corrections on a given day exceeds newly received payments.
 
@@ -140,5 +138,4 @@ Total sessions that have recorded either attendance or public session note.
 
 The number of unique instructors assigned to sessions within the selected period.
 
-![The number of unique instructors assigned to sessions within the selected period](../../assets/images/client-import-01.png)
 Note: This metric excludes sessions where the instructor is yet to be decided.

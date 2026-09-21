@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: "legacy/0084_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-14"
+last_converted: "2026-09-19"
 ---
 
 # Payment Pairing for Bank Transfers & Direct Debit
@@ -267,11 +267,9 @@ So a profile with three accounts that all need automatic matching wants GoCardle
 
 ### Why was a payment not paired even though automatic pairing is enabled?
 
-This situation usually occurs when you have enabled the setting *Automatically pair payments only for unpaid bookings*.
+This situation usually occurs when you have enabled the setting **Only reconcile payments to outstanding bookings** (in **Settings → Billing & Payments → Payment collection setup → Payment reconciliation rules**).
 
-Zooza > Settings > Payments
-
-![Zooza > Settings > Payments](../../assets/images/payment-pairing-04.png)
+![Payment reconciliation rules card with the Only reconcile payments to outstanding bookings switch](../../assets/images/payment-pairing-04.png)
 
 In this mode, Zooza pairs payments only if a booking already has an outstanding balance at the moment the payment is received.
 

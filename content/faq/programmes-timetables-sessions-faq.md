@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-20"
 related_articles: ["classes-list", "payments-and-billing-faq", "creating-a-class", "programme-settings"]
 ---
 
@@ -143,7 +143,7 @@ In the class settings, you can toggle visibility for the online booking form. Th
 
 **To disable online booking for all classes in a programme at once:**
 
-Go to **Programme → Settings → Online Booking → Edit** and set **Allow online booking** to **No**. This hides the entire programme from the booking widget. Individual classes do not need to be updated separately — the programme-level setting overrides them.
+Go to **Programme → Settings → Online booking → Edit** and set **Allow online booking** to **No**. This hides the entire programme from the booking widget. Individual classes do not need to be updated separately — the programme-level setting overrides them.
 
 ## How do I change the billing period on an existing class?
 
@@ -154,7 +154,7 @@ Billing period is a class-level setting — you can update it at any time:
 3. Change the **Billing period** field to the correct period.
 4. Save.
 
-The change takes effect immediately. Existing bookings are not affected — billing period is a reporting and organisational label, not a financial setting. It groups the class in filters, exports, and the make-up session rules. If the billing period you need does not appear in the list, create it first under **Settings → Billing periods**.
+The change takes effect immediately. Existing bookings are not affected — billing period is a reporting and organisational label, not a financial setting. It groups the class in filters, exports, and the make-up session rules. If the billing period you need does not appear in the list, create it first under **Settings → Billing & Payments → Billing periods**.
 
 ## Why do changes I make not appear immediately?
 
@@ -207,7 +207,7 @@ To avoid accidental loss, prefer **archiving** over deleting when you want to ke
 
 ## Can I delete a programme?
 
-Yes. Admins with the **edit_course** permission can delete a programme directly from **Programme Settings → Edit → Delete programme** (next to the Save button).
+Yes. Admins with the **edit_course** permission can delete a programme directly from **Programme → Settings → Programme settings → Edit → Delete programme** (next to the Save button).
 
 Deletion is a **soft delete** — the programme and its data move to **Settings → Tools → Trash** and can be restored within 30 days. After 30 days the data is permanently removed.
 
@@ -342,7 +342,7 @@ Auto-enrollment (retention) sends existing clients a pre-filled booking invitati
 
 1. Make sure the next term's programme and classes already exist before activating auto-enrollment.
 2. Open the **current** programme (the one clients are enrolled in now).
-3. Go to **Settings → Auto-enrollment** tile → click **Edit**.
+3. Go to **Settings → Auto-enrolment** tile → click **Edit**.
 4. Choose the offer type:
    - **Suggest classes** — for group classes. Clients are shown a list of available classes for the next term that match their age range and location preferences.
    - **Duplicate current class** — for individual or 1-to-1 sessions. The system offers to create a copy of the client's current class at a time they choose.

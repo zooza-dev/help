@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0066_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-20"
 related_articles: ["settings-hub", "user-roles", "instructor-access-faq", "instructor-substitution"]
 ---
 
@@ -60,7 +60,7 @@ These are two different settings and choosing the wrong one is a common mistake.
 | What you want | Where it goes |
 |---|---|
 | One instructor is away (holiday, illness, a term abroad) | **Instructors → their profile → Working hours →** add an **Absence** for that date range |
-| Your whole business is closed (summer break, public holiday, a company event) | **Team & Settings → General → Custom holidays** |
+| Your whole business is closed (summer break, public holiday, a company event) | **Team & Settings → General → Custom Holidays** |
 
 An **Absence** only removes that person from scheduling. Sessions still exist and other instructors can still be assigned to them.
 
@@ -91,13 +91,12 @@ Since the availability of instructors can change frequently in the application, 
 
 ![Select the availability/absences you want to delete by clicking on them and click on...](../../assets/images/lecturers-working-hours-07.png)
 
-![Select the availability/absences you want to delete by clicking on them and click on...](../../assets/images/discount-code-01.png)
 
 Note: You can only do a mass deletion within one month. If you move to the next month, your previous withdrawal will be cancelled
 
 ## Who may change availability at all
 
-Whether an instructor can edit or delete their own availability and absences is decided by **Settings → General → Availability management settings for instructors**:
+Whether an instructor can edit or delete their own availability and absences is decided by **Settings → General → Access → Availability management settings for instructors**:
 
 - **Full** — instructors manage their own working hours and absences, including deleting a wrongly entered one.
 - **Restricted administration** — instructors can create availability and absences, but every change must be approved by the owner — they cannot edit or delete what they have entered themselves.

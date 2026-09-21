@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-09-19"
 ---
 
 
@@ -126,4 +126,4 @@ If you enter a **custom fixed amount** directly on a booking's payment schedule,
 - **Option A:** Create a separate payment template with rounding set to **none** and use it whenever you need to assign a custom exact amount.
 - **Option B:** Adjust the rounding setting on your existing template to a precision that suits your needs (e.g., round to two decimal places instead of whole numbers). <!-- REVIEW — confirm available rounding precision options in current UI -->
 
-Go to **Settings → Payment settings** and open the relevant payment template to review or change its rounding configuration.
+Go to **Settings → Billing & Payments → Payment settings** and open the relevant payment template to review or change its rounding configuration.

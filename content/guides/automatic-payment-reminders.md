@@ -10,8 +10,8 @@ tags: ["payments", "email"]
 status: "published"
 source_legacy_path: "legacy/0003_Welcome to Zooza.html"
 source_language: "en"
-needs_screenshot_replacement: true
-last_converted: "2026-09-04"
+needs_screenshot_replacement: false
+last_converted: "2026-09-20"
 ---
 
 # Automatic reminders for payment schedule
@@ -24,7 +24,7 @@ Informs the client that a scheduled payment will be due on their programme booki
 
 1. The reminder must be enabled in **Settings → Billing & Payments → Payment settings → Scheduled-payment notifications**, where you can specify the number of days before the payment is created when the notification should be sent.
 
-![Screenshot — automatic payment reminders](../../assets/images/automatic-payment-reminders-01.png)
+![Settings → Billing & Payments → Payment settings: payment acceptance policy and scheduled-payment notifications](../../assets/images/automatic-payment-reminders-01.png)
 
 2. The notification before the payment is created is sent according to the formula:
    **Due date - Number of days due - Number of days before payment creation**
@@ -37,8 +37,8 @@ Informs the client that a scheduled payment will be due on their programme booki
 
 Informs the client that a new scheduled payment has been created on their booking. The date when the payment is posted and the notification sent follows the formula: **Due Date - Number of days due**.
 
-1. Set the payment due date in **Settings → Billing & Payments → Inbound payments setup → Payment acceptance policy**, where you can specify the number of days.
-![Screenshot — automatic payment reminders](../../assets/images/automatic-payment-reminders-07.png)
+1. Set the payment due date in **Settings → Billing & Payments → Payment settings → Payment acceptance policy**, where you can specify the number of days.
+![Payment settings page: acceptance policy, scheduled-payment notifications and payment confirmations](../../assets/images/automatic-payment-reminders-07.png)
 
 2. Customize the text in **Communication --> Message Templates**, under the template named: **New payment**.
 
@@ -84,7 +84,7 @@ All payment notifications are processed in a **nightly batch**. This means:
 
 You can enable a notification that is sent **before** the first instalment is created. This gives the client advance notice that they will receive a payment request soon. It acts as a fourth touchpoint in addition to the three reminders above.
 
-Enable this in **Programme → Settings → Price and payments → Payment reminder settings**.
+Enable this in **Programme → Settings → Price and payment → Payment reminder settings**.
 
 ## Turn off scheduled payment notifications
 

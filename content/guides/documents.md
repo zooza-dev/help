@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0114_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-05-13"
+last_converted: "2026-09-20"
 related_articles: ["class-detail", "client-profile-101"]
 ---
 
@@ -32,13 +32,13 @@ Documents are set up in the Documents section and can be used at the following l
 To add new documents, you need to enter the *Documents* section in the left menu of the application, where you will get an overview of all the documents you have uploaded so far.
 
 1. To add a new one, just click on *Add New.*
- ![Screenshot](../../assets/images/documents-01.png)
+ ![Products & Services → Documents: the document library list with name, type, status and created date](../../assets/images/documents-01.png)
 2. You have the option to add:
 	1. Document
 	2. Video
 	3. URL
 	4. Dynamic document
- ![Screenshot](../../assets/images/documents-02.png)
+ ![New document, step 1: choose the category (Document, Video, URL, Dynamic document) and enter the file name](../../assets/images/documents-02.png)
 
 ## Document
 
@@ -57,7 +57,7 @@ The app allows you to embed videos in all available formats, which you can use t
 2. A confirmation message lets you know if you've successfully uploaded the video to the app, and you can click *Next *to see the detail and current status of the video.
  ![Screenshot](../../assets/images/documents-05.png)
 3. In the last section, check the settings of the video and its preview image. The preview image of the video is then displayed in the client's profile. Clicking on it will start the video.
- ![Screenshot](../../assets/images/documents-06.png)
+ ![Video detail with the video file name and preview image](../../assets/images/documents-06.png)
 
 ## URL
 
@@ -101,17 +101,16 @@ The function is used to generate PDF documents that can contain:
 
  1. In the *Documents* section, click *Add New* and select *Dynamic Document.*
 
-![Screenshot](../../assets/images/documents-11.png)
+![New dynamic document form with the Header, Title and Text editors](../../assets/images/documents-11.png)
 
  2. Create a name and press *Next* to access the details of the document.
 
-![Screenshot](../../assets/images/documents-12.png)
+![Dynamic document editor: document name, Header, Title and Text fields](../../assets/images/documents-12.png)
 
  a. In the *Header* section, you need to list the company's details.
 
 ![Screenshot](../../assets/images/documents-13.png)
 
-![Screenshot](../../assets/images/client-import-01.png)
 
 Note: The company logo and name is automatically generated in the header without manually adding it to the template. It needs to be inserted in the *General Settings* of the application to be filled in the document.
 
@@ -143,13 +142,12 @@ You can assign documents that you have already created at the class level. You c
 
 ![Screenshot](../../assets/images/documents-17.png)
 
-![Screenshot](../../assets/images/client-import-03.png)
 
 Warning! You cannot assign dynamic documents at the class level. This feature is only available at the booking level.
 
 
 1. In the tile, select what exactly you need to select - Documents, Videos, URLs. In case of documents and URLs you can only assign digital content from the library, in case of videos you can also upload new content directly at this level.
- ![Screenshot](../../assets/images/documents-19.png)
+ ![The Documents panel of a class with the Choose a file from library button](../../assets/images/documents-19.png)
 2. For selected documents, you can set when they are shown to bookings.
  ![Screenshot](../../assets/images/documents-20.png)
 
@@ -159,7 +157,6 @@ The last option where you can assign digital content is at the session level. Th
 
 ![Screenshot](../../assets/images/documents-21.png)
 
-![Screenshot](../../assets/images/client-import-03.png)
 
 Warning. Clients only see these documents in their profile after the session has taken place.
 

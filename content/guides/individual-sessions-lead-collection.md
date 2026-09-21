@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0035_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-09-20"
 ---
 
 # Individual sessions via lead collection class
@@ -44,5 +44,4 @@ Summary for open sessions:
 3. The client signs up for the session in the profile by selecting it or you select the appointment for the client in the booking details. In both cases, the debt for that session is immediately created; if there is a credit, it is deducted from the credit.
 4. If the session is cancelled, the credit will be refunded. If the session is moved in time, the credit remains applied.
 
-![If the session is cancelled, the credit will be refunded. If the session is moved in...](../../assets/images/discount-code-01.png)
 Note: If you do not want to display the class in the public calendar menu or booking form, just uncheck the class in the programme properties and save the change. You leave the lead collection class up for booking and the other individual classes remain hidden.

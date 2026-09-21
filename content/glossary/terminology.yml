@@ -6,7 +6,7 @@
 # ║  Edit there, then run: python3 scripts/sync_terminology.py      ║
 # ╚══════════════════════════════════════════════════════════════════╝
 #
-# Last synced: 2026-09-19
+# Last synced: 2026-09-20
 # Used by: scripts/normalize_terminology.py → build/terminology/dictionary.json
 #
 # Fields per term:
@@ -266,7 +266,7 @@ terms:
       membership template — that is a property chosen when the template is made, not
       afterwards. An ordinary template will never drive a membership fee. Create the
       template first (Settings → Billing & Payments → Payment schedule templates), then set the programme
-      (Programme → Settings → Price and Payment → Membership) and attach it.
+      (Programme → Settings → Price and payment → Membership) and attach it.
       If Membership "does not work", check what kind of template is attached before
       anything else.
       ONE PROGRAMME, ONE PAYMENT TYPE (confirmed 2026-08-30): membership and course fee
@@ -954,7 +954,7 @@ terms:
         reason: >
           Standard make-up session = client picks from available slots within the current class period.
           Transferred make-up session = unused make-up credits carried over to the next class/period
-          when the current class ends. Configured in Settings → Make-up sessions.
+          when the current class ends. Configured in Settings → Other → Make-up sessions.
           In SK/CZ: 'náhrada' = standard make-up; 'prenos náhrady' = transferred make-up (inter-period).
       - term: "Custom replacement lesson"
         reason: >
@@ -978,7 +978,7 @@ terms:
       attendance record from "Cancelled" to "Did not attend", the make-up credit created by the
       cancellation is DELETED. "Parent cancelled in time, got the email, but sees no dates to
       book" — check the attendance record and the activity log first. Fix: set it back to
-      Cancelled. Prevention: Settings → General → "Attendance management settings for
+      Cancelled. Prevention: Settings → General → Access → "Attendance management settings for
       instructors" = Limited (instructors only get attended / did not attend).
       ADMIN CANCELS A SUBSTITUTION on the session detail (where attendance is managed);
       SK "zastupovanie" = instructor substitution, NOT a booking.
@@ -989,7 +989,7 @@ terms:
     category: "attendance"
     definition: >
       Unused make-up credits that are carried over to the next class or billing period
-      when the current class ends. Configured in Settings → Make-up sessions (General
+      when the current class ends. Configured in Settings → Other → Make-up sessions (General
       Settings). Three modes: transfer up to a set number, expire all at class end, or
       expire after a fixed number of days. The transferred credits get a new expiration
       date and can be used in the next period/programme.
@@ -1017,7 +1017,7 @@ terms:
         reason: >
           Standard make-up session = client picks a slot within the current class period.
           Transferred make-up session = unused credits carried into the NEXT period/class after the current class ends.
-          Both are configured in Settings → Make-up sessions.
+          Both are configured in Settings → Other → Make-up sessions.
       - term: "Custom replacement lesson"
         reason: >
           Custom replacement = client proposes a specific date/time, instructor approves.
@@ -1025,7 +1025,7 @@ terms:
     ai_notes: >
       When a SK/CZ customer says 'prenos náhrady', they almost certainly mean the
       inter-period credit carry-over feature (transferred make-up sessions), NOT a
-      custom replacement lesson proposal. Check Settings → Make-up sessions → General Settings.
+      custom replacement lesson proposal. Check Settings → Other → Make-up sessions → General settings.
       Key settings: 'Maximum number of transferred make-up sessions between billing periods'
       (0 = disabled), 'Number of days to use transferred make-up sessions'.
       TIMING (confirmed 2026-09-14): transferred credits are generated on the day the class
@@ -1616,7 +1616,7 @@ terms:
       A Zooza feature that sends a re-engagement link to clients whose trial was lost
       or whose booking was cancelled, giving them a time-limited opportunity to return.
       The admin configures how many days the re-engagement link remains active and can
-      add a personalised note. Configurable per programme under Programme → Settings → Retention.
+      add a personalised note. Configurable per programme under Programme → Settings → Auto-enrolment (the tile was formerly called Retention).
     context:
       admin: "Retention"
       client: null
@@ -1646,7 +1646,7 @@ terms:
           Retention targets clients who already left (Trial Lost / Cancelled).
           Loyalty Program rewards clients who are still active.
     ai_notes: >
-      Retention is accessed via Programme → Settings → Retention (not via the Loyalty program).
+      Auto-enrolment is accessed via Programme → Settings → Auto-enrolment (not via the Loyalty program).
       It is distinct from the Loyalty Program (which rewards active clients).
       Retention targets clients who already left or never converted (Trial Lost / Cancelled).
       The admin sets the number of days the retention link is accessible and an optional note.
@@ -2665,7 +2665,7 @@ terms:
       Zooza email land in the app rather than the operator's mailbox, so without this
       notification nothing announces them — which is why people conclude the alert does
       not exist. Also present and easily missed in a long dropdown: "class is filling up /
-      full". Navigation: Settings → Notifications → Add new notification; one email
+      full". Navigation: Settings → Other → Notification center → Add new notification; one email
       address per notification. Confirmed 2026-09-13.
     public: true
 
@@ -2872,7 +2872,7 @@ terms:
       cz: ["tmavý režim", "vzhled", "motiv", "změnit barvu"]
       ro: ["mod întunecat", "aspect", "temă"]
     ai_notes: >
-      Navigation: Settings → My profile → Appearance. Theme: System · Light · Dark.
+      Navigation: your name (top right) → My profile → Appearance. Theme: System · Light · Dark.
       Colour: Zooza orange, Veronese Green, Rosso Corsa, International Klein Blue,
       Mauve, Monticello.
       SUPERSEDES older content saying Zooza has no theme setting and simply follows the
@@ -2946,7 +2946,7 @@ terms:
       The Zooza widget that replaces the contact form on a company's website. Every
       enquiry sent through it becomes a contact, with the page, referrer and campaign
       parameters it came from, custom field answers and the consents given. What the
-      form asks is set in a contact form configuration (Settings → Contact forms);
+      form asks is set in a contact form configuration (Settings → General → Contact forms);
       where it appears is set on the widget (Publish → Widget → Contact form).
       Every company has one default configuration that cannot be archived.
     context:
@@ -3224,7 +3224,7 @@ entity_misattribution:
     clarification: >
       A Class always requires a Venue — it cannot be left empty.
       The correct solution is to create a placeholder/phantom Venue in
-      Settings → Locations (e.g. 'Online', 'TBD', or leave the name neutral)
+      Settings → General → Venues (e.g. 'Online', 'TBD', or leave the name neutral)
       and assign it to the Class. Whatever name is set there will be displayed.
       You cannot 'remove' a venue; you replace it with a neutral placeholder.
       Never suggest deleting the Venue from Settings if it is used elsewhere.
@@ -3276,7 +3276,7 @@ entity_misattribution:
       within the current class period from classes that have spare capacity.
       'Prenos náhrady' (SK/CZ) = transferred make-up session: unused make-up credits
       are carried over to the NEXT class or billing period when the current class ends.
-      This is configured in Settings → Make-up sessions → General Settings:
+      This is configured in Settings → Other → Make-up sessions → General settings:
       - 'Maximum number of transferred make-up sessions between billing periods' (0 = disabled)
       - 'Number of days to use transferred make-up sessions'
       If the customer asks about 'prenos náhrady', they are almost certainly asking about
@@ -3326,7 +3326,7 @@ entity_misattribution:
       EXCEPTION: only if customer uses specific phrases like 'odberateľská faktúra' (SK),
       'odběratelská faktura' (CZ), 'platba za Zoozu', 'faktúra od Zoozy', or asks about
       their own Zooza subscription cost → these mean Zooza's own billing.
-      → Go to: Settings → Subscription → Manage subscription → Details → Invoices.
+      → Go to: your name (top right) → Subscription (Subscription & Billing) → Manage subscription → Details → Invoices.
       Do NOT ask for clarification on generic 'faktúra' queries — default to client invoices.
     intent_keywords:
       en: ["where are invoices", "find invoices", "my invoices", "download invoice",
@@ -3350,7 +3350,7 @@ entity_misattribution:
         multiple children per form, confirmation email:
         Programmes → programme → Online Booking → Edit → Customize Booking Form.
       - Price, booking fee, payment method:
-        Programmes → programme → Settings → Price and Payment.
+        Programmes → programme → Settings → Price and payment.
       Ask: 'What specifically do you want to change on the form?' then route accordingly.
       See also: booking-form-settings guide at /help/widgets/booking-form-settings.
     intent_keywords:

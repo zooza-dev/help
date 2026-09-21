@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-29"
+last_converted: "2026-09-19"
 related_articles: ["google-reviews-faq", "creating-a-location", "online-registration", "whatsapp-integration"]
 ---
 
@@ -58,7 +58,7 @@ Connecting the account is not enough on its own — Zooza needs to know **which 
 
 ![Locations list with the Google link status column per place](../../assets/images/collecting-google-reviews-05.png)
 
-1. Go to **Settings → Locations**. Each place now has a **Google** column showing its link status.
+1. Go to **Settings → General → Venues**. Each place now has a **Google** column showing its link status.
 2. Open a place. Zooza suggests the most likely matching Google location (matched by name and city).
 3. Choose one of:
    - **Confirm the suggested match** — one click links the place to that Google location.

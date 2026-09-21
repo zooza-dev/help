@@ -12,7 +12,7 @@ related_articles: ["message-templates", "customizing-widgets", "publish-widgets"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-04"
+last_converted: "2026-09-20"
 ---
 
 # Change the language in Zooza
@@ -21,7 +21,7 @@ Language in Zooza is decided in three separate places, and they work independent
 
 | What | Set where |
 |---|---|
-| **Admin panel** — menus, buttons, labels you see | **Settings → My profile**, or the bottom of the **Dashboard**. Personal to you |
+| **Admin panel** — menus, buttons, labels you see | **your name (top right) → My profile**, or the bottom of the **Dashboard**. Personal to you |
 | **Notifications, emails and WhatsApp** your clients receive | **Settings → General** — Application Communication Language. Company-wide |
 | **Booking form, calendar and parent zone** embedded on your site | **Your own website's** language setting — parents can switch it themselves on the widget's own language switcher |
 
@@ -34,7 +34,7 @@ read one thing, read [Which setting controls what](#which-setting-controls-what-
 
 Two routes to the same setting — use whichever you reach first:
 
-- **Settings → My profile**, in the **Application Communication Language** card.
+- **your name (top right) → My profile**, in the **Application Communication Language** card.
 - **The Dashboard**, at the very bottom of the page. Click the **Zooza logo** top-left to get there, then scroll down.
 
 The admin panel reloads in the selected language immediately, and the choice is **yours alone** — every person on the account picks their own.
@@ -96,7 +96,7 @@ someone reaching for the wrong one of the three.
 
 | What is in the wrong language | Where to change it |
 |---|---|
-| The admin panel you are looking at | **Settings → My profile**, or the bottom of the **Dashboard** |
+| The admin panel you are looking at | **your name (top right) → My profile**, or the bottom of the **Dashboard** |
 | The booking form, calendar or parent zone on your site | **Your website's language setting**. A parent who needs another language switches it on the widget's own language switcher |
 | Notifications, emails and WhatsApp your clients receive | **Settings → General** — Application Communication Language |
 

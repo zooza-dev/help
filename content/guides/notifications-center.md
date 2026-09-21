@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: "legacy/0073_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-17"
+last_converted: "2026-09-19"
 ---
 
 # Notifications Center
@@ -53,7 +53,7 @@ That is the whole list, in the order the dropdown shows it. The wording follows 
 
 ## Set up notifications
 
-1. Go to **Settings → Notification center** and open **Add new notification**
+1. Go to **Settings → Other → Notification center** and open **Add new notification**
  ![Settings with Notifications selected and the Add new notification button](../../assets/images/notifications-center-02.png)
  
 2. Pick the type in **Notification**, and put the address in **Send to**

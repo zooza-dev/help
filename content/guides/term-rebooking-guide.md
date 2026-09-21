@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-11"
+last_converted: "2026-09-20"
 ---
 
 # Run a term reset — move all clients to a new term
@@ -175,7 +175,7 @@ Two steps, and deliberately not a third:
 
 The one thing to check individually: if the *following* month's payment has not been generated yet, cancelling the current one can stop the schedule rather than pause it. Where that happens you may need to add the next scheduled payment by hand. With a small roster it is quicker to go through the bookings one by one than to fix it afterwards.
 
-If the aim is to push people towards enrolling for the new season rather than drifting, also consider switching trials off for the period — **Programme Settings → Trials → Trial Type: None**. Parents then see only the option to enrol. Turning them back on later is the same switch.
+If the aim is to push people towards enrolling for the new season rather than drifting, also consider switching trials off for the period — **Programme → Settings → Trial → Trial type: None**. Parents then see only the option to enrol. Turning them back on later is the same switch.
 
 **I use GoCardless. Will payment mandates carry over?**
 GoCardless mandates are linked to the client, not the booking. When you create a new booking for a client, their existing mandate applies automatically if it's still active. Check that mandates haven't expired (they last 90 days from last use) before the first payment runs. See [GoCardless connection lifecycle](gocardless-connection-lifecycle.md).

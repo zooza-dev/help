@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-09-19"
 ---
 
 # Roles and Permissions FAQ
@@ -63,7 +63,7 @@ The **Receptionist** role also hides financial data, but it only provides a dail
 
 This is a **role** question, not a subscription one. Exporting client data is available on every plan; whether *you* can do it depends on the role your account holds.
 
-Open **Team & Settings → Access**, find your own account, and check its role. If it does not include client export, either have an owner run the export, or have them change your role.
+Open **Settings → General → Access**, find your own account, and check its role. If it does not include client export, either have an owner run the export, or have them change your role.
 
 > Being able to export your data is not something a plan takes away — if the button refuses you, look at the role first. An answer that points you at pricing is answering a different question.
 

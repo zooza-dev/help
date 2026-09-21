@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-20"
 related_articles: ["instructor-access-faq","managing-instructors","user-roles","add-zooza-app-to-phone"]
 ---
 
@@ -25,7 +25,7 @@ Account deletion must be handled by Zooza support. Contact support@zooza.online 
 
 ## How do I change the email I use to log in?
 
-Go to **Settings → Team**, open the profile, replace the email address and save. From then on that person logs in with the new address — they enter it on the login page and request a link or code. There is no password to change.
+Go to **Settings → General → Access**, open the profile, replace the email address and save. From then on that person logs in with the new address — they enter it on the login page and request a link or code. There is no password to change.
 
 **You do not have to replace it.** You can add a second access with the other email instead, and keep both working. That is the better option when:
 
@@ -73,13 +73,13 @@ already using yourself; send that exact one on.
 
 ## After changing an instructor's email, they cannot log in — what is the process?
 
-When you update an instructor's email address in **Settings → Team**, the instructor must log in again using the new email:
+When you update an instructor's email address in **Settings → General → Access**, the instructor must log in again using the new email:
 
 1. Go to your regional Zooza app URL (see the table above).
 2. Enter the **new** email address.
 3. Click the login link that arrives by email.
 
-No separate invitation is needed. The instructor simply requests a new login link with the corrected email. If the link does not arrive, check that the email address is spelled correctly in **Settings → Team** and ask the instructor to check their spam folder.
+No separate invitation is needed. The instructor simply requests a new login link with the corrected email. If the link does not arrive, check that the email address is spelled correctly in **Settings → General → Access** and ask the instructor to check their spam folder.
 
 ## A new account was created but not verified — how does verification work?
 
@@ -126,7 +126,7 @@ This often happens when a client:
 
 No. Each team member should have their own account with an individual email address. Shared logins create problems with audit trails, permissions, and notifications. To add team members:
 
-1. Go to **Settings → Team**.
+1. Go to **Settings → General → Access**.
 2. Add each person with their own email address.
 3. Assign the appropriate role (owner, admin, instructor, etc.).
 
@@ -136,7 +136,7 @@ Each team member then logs in with their own email using the same passwordless l
 
 Two routes, same setting — take whichever you reach first:
 
-- **Settings → My profile**, in the **Application Communication Language** card.
+- **your name (top right) → My profile**, in the **Application Communication Language** card.
 - **The Dashboard**, at the very bottom of the page.
 
 The interface reloads immediately. Each admin and instructor sets their own language independently; it does not affect colleagues, and it does not affect the client-facing widgets or emails.
@@ -149,7 +149,7 @@ For more detail — including how to change the language of client-facing widget
 
 ## How do I switch Zooza to dark mode — or turn it off?
 
-Go to **Settings → My profile** and find the **Appearance** card.
+Go to **your name (top right) → My profile** and find the **Appearance** card.
 
 **Theme** offers three choices:
 

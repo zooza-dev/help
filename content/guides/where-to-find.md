@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-09-19"
 ---
 
 # Where to find things in Zooza — quick reference
@@ -113,12 +113,12 @@ Can't find something? This page gives the direct path to the most commonly searc
 | Stripe connection | **Settings → Integrations → Stripe** |
 | GoCardless connection | **Settings → Integrations → GoCardless** |
 | Xero / accounting integration | **Settings → Integrations → Xero** |
-| Locations and venues | **Settings → Locations** |
+| Locations and venues | **Settings → General → Venues** |
 | Instructors | **Team → Instructors** |
-| User accounts and access roles | **Settings → Users** |
-| Holiday settings | **Settings → Holidays** |
+| User accounts and access roles | **Settings → General → Access** |
+| Holiday settings | **Settings → General → Custom Holidays** |
 | Booking widget (embed code for your website) | **Publish** |
-| Your business name, logo, and branding | **Settings → Business profile** |
+| Your business name, logo, and branding | **Settings → General → General** |
 | Scheduled payment notification settings (master switch + cooldown) | **Settings → Billing & Payments → Payment settings** |
 
 ---

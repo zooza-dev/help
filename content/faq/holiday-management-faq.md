@@ -12,7 +12,7 @@ related_articles: ["make-up-sessions-faq", "edit-payment-on-booking", "payment-c
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-09-19"
 ---
 
 # Holiday and Term Management FAQ
@@ -111,9 +111,9 @@ Public and school holidays come from an external database. It has been reliable,
 
 The order to work through:
 
-1. **Set the region on the location** — Settings → Places → open the place → **Region**. Without it, Zooza does not know which national and regional holidays apply, and none will be offered.
+1. **Set the region on the location** — Settings → General → Venues → open the place → **Region**. Without it, Zooza does not know which national and regional holidays apply, and none will be offered.
 2. **Generate sessions and look at the highlighted dates.** If your region's holidays appear, you are done.
-3. **If dates are missing or wrong, add them under Team & Settings → General → Custom holidays.** Enter the date ranges you want skipped. They then behave exactly like public holidays when you generate sessions.
+3. **If dates are missing or wrong, add them under Team & Settings → General → Custom Holidays.** Enter the date ranges you want skipped. They then behave exactly like public holidays when you generate sessions.
 
 Custom holidays belong to your account only and are never shared with other companies, so you can add whatever your business actually observes — a local festival, a venue closure, a week you simply do not run.
 

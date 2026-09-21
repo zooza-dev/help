@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0026_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-26"
+last_converted: "2026-09-19"
 ---
 
 # Data correction or change client's data
@@ -86,7 +86,6 @@ A data correction request is rejected if:
 
 Changing a client, or in other words overwriting a booking, may at first glance appear to be the same as changing a client’s details. But it’s the opposite, in the sense that when you change the client, you’re just overwriting the booking under a different client than the one that was originally created. Thus, it is not a change of data on all its bookings, but only an overwriting of one booking.
 
-![Changing a client, or in other words overwriting a booking, may at first glance appear...](../../assets/images/client-import-01.png)
 
 
 The only condition of the override is that the client you wish to overwrite must be enroled as a client and thus have another booking of any/all status.

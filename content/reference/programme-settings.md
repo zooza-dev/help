@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-02-12"
+last_converted: "2026-09-20"
 ---
 
 # Programme Settings
@@ -191,7 +191,7 @@ Configures extra data fields on the booking form. For a step-by-step guide, see 
 
 Configures trial session behaviour for the programme.
 
-![Trial settings](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-trial.png)
+![Trial tile with the trial type options](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-trial.png)
 
 ### Trial Settings
 
@@ -294,7 +294,7 @@ The **Metadata** card appears on the programme Settings page. Each row is a key-
 
 **Creating a new key inline:** type a name that doesn't exist → press Enter → fill in value type and public flag → confirm. The key is created and reusable on all programmes.
 
-> **Manage all keys centrally:** Go to **Settings → Courses → Metadata keys** to rename keys, toggle public visibility, or delete a key and all its assigned values.
+> **Manage all keys centrally:** Go to **Settings → General → Metadata keys** to rename keys, toggle public visibility, or delete a key and all its assigned values.
 
 ### Metadata exists on programmes only, not on classes
 

@@ -40,7 +40,7 @@ If a make-up credit was not generated after a missed session, check whether the 
 Two ways to stop it:
 
 - Tell instructors: a session already marked *Cancelled* is a planned absence, not a no-show — leave it.
-- Or take the choice away from them. **Settings → General → Attendance management settings for instructors** has a *Limited* mode in which instructors only get *attended* / *did not attend* on the register — a client's own, in-time cancellation is not theirs to overwrite. *Full* mode lets them set any state, including *Cancelled*, and choose make-up sessions for clients.
+- Or take the choice away from them. **Settings → General → Access → Attendance management settings for instructors** has a *Limited* mode in which instructors only get *attended* / *did not attend* on the register — a client's own, in-time cancellation is not theirs to overwrite. *Full* mode lets them set any state, including *Cancelled*, and choose make-up sessions for clients.
 
 If the credit is already gone, set the record back to *Cancelled*; a fresh credit is created (see the "deadline-expired credit" workaround further down for the same trick used deliberately).
 
@@ -131,7 +131,7 @@ The **general** make-up settings override what you set on the course. That is th
 
 If the general settings allow a regular make-up to become a **transferred** make-up once a course ends, then a set number of credits carries into the next billing period — and once carried, they run on **their own number of days**, not the course's. So a course set to 60 days can still be handing out credits from a term two periods back.
 
-Check **Settings → Make-up sessions** first, not the course, whenever the expiry behaviour does not match what you configured.
+Check **Settings → Other → Make-up sessions** first, not the course, whenever the expiry behaviour does not match what you configured.
 
 ## Can make-up credits carry over to the next billing period?
 
@@ -353,10 +353,10 @@ To check or change your approval mode, go to **Programmes** → select the progr
 
 The cancel option is only available **before the cancellation deadline**. If the deadline has passed, the client sees "Did not attend" (or a configured instructions text) instead of a Cancel button.
 
-**To diagnose:** Go to **Settings** → **General** → check the **Cancellation limit** setting (or **Settings → Programmes → Set a limit for cancelling a scheduled session**). If this is set to e.g. "24 hours before the session", clients cannot cancel sessions starting within 24 hours.
+**To diagnose:** Go to **Settings → General → General → Settings for programmes** and check **Set a limit for cancelling a scheduled session**. If this is set to e.g. "24 hours before the session", clients cannot cancel sessions starting within 24 hours.
 
 **Options:**
-- Allow cancellations after the deadline (enable **Allow cancellations after the limit** in Settings → Programmes). Note: late cancellations record as "Did not attend" and do not generate a make-up credit.
+- Allow cancellations after the deadline (enable **Allow cancellations after the limit** in **Settings → General → General → Settings for programmes**). Note: late cancellations record as "Did not attend" and do not generate a make-up credit.
 - Manually change the attendance state to "Cancelled" on behalf of the client if you want to grant them a make-up credit despite the late cancellation.
 
 ## How do I set a cancellation deadline for sessions?
@@ -497,7 +497,7 @@ Yes — but not to the exact same class. Make-up session eligibility is always f
 If you want to limit which classes appear as make-up options, you can:
 
 - Set **extra capacity to 0** on classes you do not want used for make-up bookings — those classes will not appear in the make-up list.
-- Use the **time restriction** setting (**Settings → Programmes → Time restriction in hours for offering a regular make-up session**) to exclude sessions that start too soon.
+- Use the **time restriction** setting (**Settings → General → General → Settings for programmes → Time restriction in hours for offering a regular make-up session**) to exclude sessions that start too soon.
 
 ## A client tried to book a make-up session and got a "session is full" error — is their credit lost?
 

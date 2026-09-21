@@ -9,7 +9,7 @@
       "name": "How do I check whether all parents have given photo or video consent?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "There are three places where you can verify consent status:\n\n1. Filter the bookings list by consent (best for checking all at once)\n\nGo to Settings → Consents & Agreements, find your photo/video consent, and click the Has consent or No consent filter button. This opens the bookings list filtered to show only clients who have (or have not) given that consent — with their name, consent type, date given, and revoke date.\n\nThis is the fastest way to get a full list of who has and has not accepted.\n\n2. Session detail (useful during a class)\n\nOpen a session detail. At the bottom of the page, you can see the consent status for each participant attending that session.\n\n3. Individual client detail\n\nOpen the client's detail page (not the booking — the client profile itself) and scroll to the Consents given by client section. This shows the full consent history for that client: which consents they gave, when, and whether any were revoked."
+        "text": "There are three places where you can verify consent status:\n\n1. Filter the bookings list by consent (best for checking all at once)\n\nGo to Settings → General → Consents & Agreements, find your photo/video consent, and click the Has consent or No consent filter button. This opens the bookings list filtered to show only clients who have (or have not) given that consent — with their name, consent type, date given, and revoke date.\n\nThis is the fastest way to get a full list of who has and has not accepted.\n\n2. Session detail (useful during a class)\n\nOpen a session detail. At the bottom of the page, you can see the consent status for each participant attending that session.\n\n3. Individual client detail\n\nOpen the client's detail page (not the booking — the client profile itself) and scroll to the Consents given by client section. This shows the full consent history for that client: which consents they gave, when, and whether any were revoked."
       }
     },
     {
@@ -17,7 +17,7 @@
       "name": "How do I make clients accept terms and conditions during registration?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Go to Settings → Consents & Agreements and click Add. Fill in the consent name and text, set Consent type to Check box (so clients must tick it) or No separate confirmation needed (so agreeing is implicit in clicking the Register button). Set Require from to All bookings or limit it to specific programmes.\n\nFor the full setup, see Consents and agreements."
+        "text": "Go to Settings → General → Consents & Agreements and click Add. Fill in the consent name and text, set Consent type to Check box (so clients must tick it) or No separate confirmation needed (so agreeing is implicit in clicking the Register button). Set Require from to All bookings or limit it to specific programmes.\n\nFor the full setup, see Consents and agreements."
       }
     },
     {
@@ -33,7 +33,7 @@
       "name": "How do I add a health declaration or \"I confirm my child is healthy\" checkbox to the registration form?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Use Consents & Agreements — not Additional fields. Additional fields only support text input or dropdown selection. A mandatory checkbox that requires no text response must be set up as a consent.\n\nSteps:\n\n1. Go to Settings → Consents & Agreements → Add.\n2. Enter the declaration text in the Consent text field (e.g. \"I confirm that my child shows no signs of illness and does not have any infectious disease at the time of enrolment.\").\n3. Set Consent type to Check box — the client must tick this to proceed.\n4. Set Require from to All bookings or limit it to the specific programme (e.g. a summer camp).\n5. Save.\n\nThe checkbox appears on the registration form above the Register button. Clients cannot complete registration without ticking it.\n\nTip: You can customise the link label shown to clients. In the Name of the consent in the booking form field, you can replace the default \"More\" link with your own text — for example: <a href=\"\">Health declaration</a>. This text appears as the clickable link that opens the full consent text."
+        "text": "Use Consents & Agreements — not Additional fields. Additional fields only support text input or dropdown selection. A mandatory checkbox that requires no text response must be set up as a consent.\n\nSteps:\n\n1. Go to Settings → General → Consents & Agreements → Add.\n2. Enter the declaration text in the Consent text field (e.g. \"I confirm that my child shows no signs of illness and does not have any infectious disease at the time of enrolment.\").\n3. Set Consent type to Check box — the client must tick this to proceed.\n4. Set Require from to All bookings or limit it to the specific programme (e.g. a summer camp).\n5. Save.\n\nThe checkbox appears on the registration form above the Register button. Clients cannot complete registration without ticking it.\n\nTip: You can customise the link label shown to clients. In the Name of the consent in the booking form field, you can replace the default \"More\" link with your own text — for example: <a href=\"\">Health declaration</a>. This text appears as the clickable link that opens the full consent text."
       }
     },
     {
@@ -65,7 +65,7 @@
       "name": "Can I filter bookings by consent status?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. In Settings → Consents & Agreements, each consent card has Filter bookings buttons. Click Has consent or No consent (for checkbox types) or Accepted / Declined / No consent (for Yes/No types) to jump directly to a filtered booking list."
+        "text": "Yes. In Settings → General → Consents & Agreements, each consent card has Filter bookings buttons. Click Has consent or No consent (for checkbox types) or Accepted / Declined / No consent (for Yes/No types) to jump directly to a filtered booking list."
       }
     },
     {
@@ -97,7 +97,7 @@
       "name": "How do I require existing clients to re-accept a consent after updating it?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "When editing the consent in Settings → Consents & Agreements, tick the Require clients to consent again checkbox before saving. Zooza will show a confirmation dialog. On confirm, a new version is minted and clients who accepted the previous wording are queued for re-consent.\n\nImportant: This is irreversible. Use it only for material changes to the consent wording — not for minor corrections like typo fixes or link updates."
+        "text": "When editing the consent in Settings → General → Consents & Agreements, tick the Require clients to consent again checkbox before saving. Zooza will show a confirmation dialog. On confirm, a new version is minted and clients who accepted the previous wording are queued for re-consent.\n\nImportant: This is irreversible. Use it only for material changes to the consent wording — not for minor corrections like typo fixes or link updates."
       }
     },
     {
@@ -105,7 +105,7 @@
       "name": "Can I add multiple consents?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Click Add in Settings → Consents & Agreements to add as many consents as needed. Each one is configured and displayed independently. If you need the same consent to appear on both the booking form and the order form, create two separate entries — one for each form type."
+        "text": "Yes. Click Add in Settings → General → Consents & Agreements to add as many consents as needed. Each one is configured and displayed independently. If you need the same consent to appear on both the booking form and the order form, create two separate entries — one for each form type."
       }
     },
     {

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-09-20"
 ---
 
 
@@ -105,7 +105,7 @@ Booking form configuration is split across several places depending on what you 
 - **Global appearance** (button text, availability display, CSS, discount code field) — **Team & Settings → Publish** → click your widget → **Configure** next to Booking form.
 - **What data is collected** (extra fields like date of birth, address, custom questions) — **Programmes** → open the programme → **Additional Fields**.
 - **Which classes appear, field labels, multiple children per form, confirmation email** — **Programmes** → open the programme → **Online Booking → Edit**.
-- **Price and payment method** — **Programmes** → open the programme → **Settings → Price and Payment**.
+- **Price and payment method** — **Programmes** → open the programme → **Settings → Price and payment**.
 
 For a full overview of each level, see [Booking form settings overview](../guides/booking-form-settings.md).
 
@@ -125,7 +125,7 @@ If this is important for your setup, submit a feature request to the Zooza team.
 
 The booking fee row only appears if a booking fee is set on the programme. If you do not want it to appear:
 
-- Go to **Programmes** → open the programme → **Settings → Price and Payment** and clear the booking fee or set it to 0. The row will no longer appear on the form.
+- Go to **Programmes** → open the programme → **Settings → Price and payment** and clear the booking fee or set it to 0. The row will no longer appear on the form.
 
 If you need to keep the booking fee active but still hide the row from the visible form, this is not configurable in the app. It can be hidden via custom CSS or a script on your website — see [Customizing widgets](../guides/customizing-widgets.md).
 
@@ -170,7 +170,7 @@ There are two separate currency concepts in Zooza:
 
 **Account currency** — set at the account level based on your country. If your currency is not available (e.g. ZAR — South African Rand), contact the Zooza team at support@zooza.online and request it be added. Zooza supports any country and currency, but not all may be pre-configured.
 
-**Multi-currency display** — a separate per-programme feature that lets the booking form display prices in multiple currencies simultaneously (e.g. EUR, GBP, USD). Clients see all configured currencies and can choose their preferred one. This is configured in **Programmes → programme → Settings → Price and Payment → Additional currencies**.
+**Multi-currency display** — a separate per-programme feature that lets the booking form display prices in multiple currencies simultaneously (e.g. EUR, GBP, USD). Clients see all configured currencies and can choose their preferred one. This is configured in **Programmes → programme → Settings → Price and payment → Additional currencies**.
 
 If you are asking about changing your primary account currency, that requires a support request. If you want to offer multiple currencies on the form alongside your primary one, use the Additional currencies setting.
 
@@ -225,7 +225,7 @@ Common causes:
 1. **Class became full between loading and submitting** — another client completed their registration in the same window. The widget cached the "available" state before the last spot was taken. Refresh the page to see the updated availability.
 2. **Age or eligibility restriction** — the class has a minimum or maximum age restriction set. The widget does not always surface this upfront; it appears as an error on submission when the child's age falls outside the allowed range. Check **Class Settings → Restrictions**.
 3. **Registration deadline passed** — some classes have an online registration cut-off (a date after which new registrations are blocked). If the deadline passed between the client viewing the widget and submitting the form, registration fails.
-4. **Payment configuration error** — if the programme's payment settings are incomplete (e.g. no price set, a required payment method missing), the form may load but fail on the payment step. Open the programme under **Programme Settings → Price and Payment** and verify the configuration.
+4. **Payment configuration error** — if the programme's payment settings are incomplete (e.g. no price set, a required payment method missing), the form may load but fail on the payment step. Open the programme under **Programme Settings → Price and payment** and verify the configuration.
 5. **Widget embed outdated** — if the embed code on your website is old (from a previous version of Zooza's widget), it may load the form but fail to complete the registration. Update the embed code from **Team & Settings → Publish** and replace it on your website.
 
 If the error message is visible on screen, note the exact wording — it tells you which check failed. If no message appears and the form just resets, check the browser console for JavaScript errors, which can indicate a conflict with your website's scripts.

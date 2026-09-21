@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-30"
+last_converted: "2026-09-20"
 related_articles: ["booking-faq", "booking-widget-faq", "payments-and-billing-faq"]
 ---
 
@@ -119,7 +119,7 @@ This is intentional. When a client registers (including when registering multipl
 
 The registration fee is a one-time charge set on the programme. The remaining course price is paid according to the payment plan (weekly, monthly, or a lump sum at a later date), depending on how your programme is configured.
 
-If you do not want to charge a registration fee at all, go to **Programmes → programme → Settings → Price and Payment** and set the booking fee to 0. The basket will then show €0 as the immediate payment.
+If you do not want to charge a registration fee at all, go to **Programmes → programme → Settings → Price and payment** and set the booking fee to 0. The basket will then show €0 as the immediate payment.
 
 1. Go to **Settings → Tools → Trash**.
 2. Filter by **Type → Registration** to narrow the list.
@@ -168,7 +168,7 @@ Use this when you have classes that should not be publicly listed — for exampl
 **Step 1 — Disable public visibility for the class:**
 
 1. Go to **Programmes** → open the programme → select the **Class**.
-2. Open **Settings → Online Registration**.
+2. Open **Settings → Online booking**.
 3. Uncheck `Display in catalogue` (or disable `Allow online booking` to also block booking from direct links).
 4. Save.
 

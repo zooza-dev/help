@@ -12,7 +12,7 @@ status: published
 source_legacy_path: legacy/0034_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: 2026-05-13
+last_converted: "2026-09-20"
 ---
 
 # Manage trial bookings — reschedule, convert, and close
@@ -206,7 +206,7 @@ Go to **Programme → Settings → Trial** to configure:
 
 If you want clients to book only trials from the website (not full enrolments):
 
-Go to **Programme → Settings → Online Registration (Edit)** → **Booking Options Shown on Website** → select **Trials only**.
+Go to **Programme → Settings → Online booking (Edit)** → **Booking Options Shown on Website** → select **Trials only**.
 
 ![Booking options shown on website — Trials only](../../assets/images/trials-daily-business-08.png)
 

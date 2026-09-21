@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-30"
+last_converted: "2026-09-20"
 related_articles: ["invoice-profiles-and-bank-accounts","creating-entry-passes","selling-products-during-booking","dynamic-tags"]
 ---
 
@@ -103,7 +103,7 @@ Use this when you want to offer the same service (e.g., a seasonal pass or a con
 
 When a client purchases a product during the booking flow, the product payment should automatically be linked to the booking. If the product payment appears on the order but not on the booking, the cause is usually a missing setting.
 
-1. Go to **Programme → Settings → Price & Payments → Advanced settings**.
+1. Go to **Programme → Settings → Price and payment → Advanced settings**.
 2. Enable the option to link product payments to the booking.
 3. Save.
 

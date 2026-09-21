@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-20"
 related_articles: ["trials-faq", "creating-a-booking", "transfer-and-copy-bookings", "registration-status-faq", "late-bookings"]
 ---
 
@@ -80,7 +80,7 @@ Trial bookings can be created by an admin too: create the booking, open it, clic
 
 ## I deleted a registration without ticking "notify the client" — why did the client still get an email?
 
-A manual status change (delete or cancel) emails the client **only** if you tick **Send confirmation email** on the Change status screen. If a parent received a "your booking was cancelled" message you did not send, look at the automation instead: **Programme → Settings → Price and Payment → Payment Reminders → Delete unpaid registrations** removes unpaid bookings after the reminder deadline and always sends the **Automatic deletion** notification. Bookings that were never paid — the ones you tend to clean up after a course — are exactly the ones it targets, and it may have run before you got to them. Its text lives in **Communication → Templates**; see [Automatic payment reminders](../guides/automatic-payment-reminders-detailed.md).
+A manual status change (delete or cancel) emails the client **only** if you tick **Send confirmation email** on the Change status screen. If a parent received a "your booking was cancelled" message you did not send, look at the automation instead: **Programme → Settings → Price and payment → Payment Reminders → Delete unpaid registrations** removes unpaid bookings after the reminder deadline and always sends the **Automatic deletion** notification. Bookings that were never paid — the ones you tend to clean up after a course — are exactly the ones it targets, and it may have run before you got to them. Its text lives in **Communication → Templates**; see [Automatic payment reminders](../guides/automatic-payment-reminders-detailed.md).
 
 ## What does the client list show — why are there more entries than expected?
 

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-22"
+last_converted: "2026-09-19"
 ---
 
 # Remove a Client or User from Your Account
@@ -44,12 +44,12 @@ Removing a person cleans up all their data within your company: their profile, c
 
 Removing a user disables their ability to log into your Zooza account. If the user has an associated client profile (person), that person is also disassociated from your company.
 
-1. Go to **Settings → Team** (or the Users section).
+1. Go to **Settings → General → Access** (or the Users section).
 2. Find the user and open their record.
 3. Click **Remove from company**.
 4. Confirm the action.
 
-> **Removing an instructor: it is not on the Instructors page.** The Instructors screen manages profiles — it has no Remove from company button, and looking for one there is the most common reason this takes far longer than it should. Go to **Settings → Team** and find the person in the users list.
+> **Removing an instructor: it is not on the Instructors page.** The Instructors screen manages profiles — it has no Remove from company button, and looking for one there is the most common reason this takes far longer than it should. Go to **Settings → General → Access** and find the person in the users list.
 >
 > **Consider not removing them.** Setting the role to **Inactive instructor** blocks their login while keeping every link to their past sessions, attendance and payouts. Removal can break those links, and if you need the history back later it may need support. If they might ever return — a maternity cover, a seasonal coach — deactivate rather than remove.
 >
@@ -74,7 +74,7 @@ Payments linked to bookings within your company are part of the booking record, 
 
 ### Can I remove an admin or instructor?
 
-Yes. Use **Settings → Team** to remove staff users. Removing a team member revokes their access immediately.
+Yes. Use **Settings → General → Access** to remove staff users. Removing a team member revokes their access immediately.
 
 ### Can a removed client re-register?
 

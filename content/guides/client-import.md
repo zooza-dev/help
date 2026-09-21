@@ -11,14 +11,13 @@ status: "published"
 source_legacy_path: "legacy/0025_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-09-20"
 ---
 
 # Client import
 
 When you are a new client, or if you need to move existing clients from one Zooza account to another, the Client Import feature can save you time.
 
-![When you are a new client, or if you need to move existing clients from one Zooza...](../../assets/images/client-import-01.png)
 
 Important: Before starting the import, make sure the required programmes and classes are already created in Zooza. Clients can only be imported into existing classes.
 
@@ -41,7 +40,6 @@ The table in Excel will look like this:
 
 ![The table in Excel will look like this](../../assets/images/client-import-02.png)
 
-![The table in Excel will look like this](../../assets/images/client-import-03.png)
 
 Important! To successfully import your data, save the spreadsheet in .csv format. Other Excel formats will not work.
 

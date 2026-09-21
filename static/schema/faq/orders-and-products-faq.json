@@ -65,7 +65,7 @@
       "name": "How do I link a product payment to a booking?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "When a client purchases a product during the booking flow, the product payment should automatically be linked to the booking. If the product payment appears on the order but not on the booking, the cause is usually a missing setting.\n\n1. Go to Programme → Settings → Price & Payments → Advanced settings.\n2. Enable the option to link product payments to the booking.\n3. Save.\n\nIf a payment is already mislinked, you can fix it manually:\n\n1. Open the order and unlink it from the booking.\n2. Re-link the order to the same booking.\n3. When prompted, choose to have the payment managed by the booking.\n4. Save. The payment should now appear on the booking record."
+        "text": "When a client purchases a product during the booking flow, the product payment should automatically be linked to the booking. If the product payment appears on the order but not on the booking, the cause is usually a missing setting.\n\n1. Go to Programme → Settings → Price and payment → Advanced settings.\n2. Enable the option to link product payments to the booking.\n3. Save.\n\nIf a payment is already mislinked, you can fix it manually:\n\n1. Open the order and unlink it from the booking.\n2. Re-link the order to the same booking.\n3. When prompted, choose to have the payment managed by the booking.\n4. Save. The payment should now appear on the booking record."
       }
     }
   ]

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-12"
+last_converted: "2026-09-19"
 ---
 
 # Xero Integration FAQ
@@ -26,11 +26,11 @@ Yes. After you have finalized your Xero settings, you can go through existing bo
 
 ## My invoices show "tax exempt" — how do I fix VAT settings?
 
-VAT rates are managed in your Xero account. Make sure the correct tax rate is set up in Xero, then re-sync the connection in Zooza under **Settings → Invoice Profiles**. After syncing, invoices will reflect the correct VAT rate.
+VAT rates are managed in your Xero account. Make sure the correct tax rate is set up in Xero, then re-sync the connection in Zooza under **Settings → Billing & Payments → Invoice profiles**. After syncing, invoices will reflect the correct VAT rate.
 
 ## Where do I manage Xero connection settings?
 
-Go to **Settings → Invoice Profiles** in Zooza. From there you can sync or re-sync your Xero connection and configure invoice settings.
+Go to **Settings → Billing & Payments → Invoice profiles** in Zooza. From there you can sync or re-sync your Xero connection and configure invoice settings.
 
 ## Do invoices get marked as paid automatically?
 

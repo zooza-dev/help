@@ -9,7 +9,7 @@ tags: ["programme", "archive", "delete", "remove", "class", "hide"]
 status: "published"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-05"
+last_converted: "2026-09-20"
 related_articles: ["trash-and-restore","term-rebooking-guide","creating-a-class","calendar-bulk-actions"]
 ---
 
@@ -33,7 +33,7 @@ Archiving is the standard way to remove a Programme from your active list. Use t
 
 The Programme disappears from your active list. It remains accessible via the **Archived** filter in the Programmes list.
 
-> **To restore:** Open the archived Programme, go to Programme Settings → Edit, uncheck **Archive**, and save.
+> **To restore:** Open the archived Programme, go to Programme → Settings → Programme settings → Edit, uncheck **Archive**, and save.
 
 ---
 
@@ -120,7 +120,7 @@ Admins with the **edit_course** permission can permanently delete a Programme di
 > **Note:** Deletion is a soft delete. The Programme and its data are no longer accessible in the app but are kept in **Trash** for 30 days. Go to **Settings → Tools → Trash** to restore a deleted Programme within that window. After 30 days the item is permanently removed.
 
 1. Go to **Programmes** and open the Programme you want to delete.
-2. Go to **Programme Settings → Edit**.
+2. Go to **Programme → Settings → Programme settings → Edit**.
 3. Click **Delete programme** (next to the Save button).
 
    ![Screenshot — archive or delete programme](../../assets/images/archive-or-delete-programme-05.png)

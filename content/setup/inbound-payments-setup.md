@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-04"
+last_converted: "2026-09-19"
 related_articles: ["invoice-profiles-and-bank-accounts", "inbound-payments", "payment-pairing", "gocardless-connection-lifecycle", "billing-and-invoicing"]
 ---
 

@@ -9,7 +9,7 @@
       "name": "Can I delete a Programme?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Admins with the edit_course permission can delete a programme directly from Programme Settings → Edit → Delete programme.\n\nDeletion is a soft delete — the programme moves to Settings → Tools → Trash and can be restored within 30 days. After 30 days it is permanently removed.\n\nIf you want to hide the programme without losing any data, use Archive instead — it is reversible at any time.\n\nSee Archive or delete a programme for the full walkthrough.\n\n---"
+        "text": "Yes. Admins with the edit_course permission can delete a programme directly from Programme → Settings → Programme settings → Edit → Delete programme.\n\nDeletion is a soft delete — the programme moves to Settings → Tools → Trash and can be restored within 30 days. After 30 days it is permanently removed.\n\nIf you want to hide the programme without losing any data, use Archive instead — it is reversible at any time.\n\nSee Archive or delete a programme for the full walkthrough.\n\n---"
       }
     },
     {
@@ -17,7 +17,7 @@
       "name": "How do I archive a Programme?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "1. Go to Programmes and click the Programme name.\n2. Go to Programme Settings → Edit.\n3. Tick Archive and click Save.\n\nThe Programme disappears from your active list. To find it later, use the Archived filter in the Programmes list.\n\nTo restore: open the archived Programme, go to Programme Settings → Edit, uncheck Archive, and save.\n\n---"
+        "text": "1. Go to Programmes and click the Programme name.\n2. Go to Programme → Settings → Programme settings → Edit.\n3. Tick Archive and click Save.\n\nThe Programme disappears from your active list. To find it later, use the Archived filter in the Programmes list.\n\nTo restore: open the archived Programme, go to Programme → Settings → Programme settings → Edit, uncheck Archive, and save.\n\n---"
       }
     },
     {
@@ -33,7 +33,7 @@
       "name": "Can I remove a location (venue) from a Class?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. A Class always requires a Venue — it cannot be left blank.\n\nThe solution is to create a placeholder Venue in Settings → Locations (e.g. name it \"Online\", \"TBD\", or anything neutral). Assign this placeholder to the Class. Whatever name you give it is what clients will see.\n\nDo not delete the original Venue from Settings if it is used by other Classes.\n\n---"
+        "text": "No. A Class always requires a Venue — it cannot be left blank.\n\nThe solution is to create a placeholder Venue in Settings → General → Venues (e.g. name it \"Online\", \"TBD\", or anything neutral). Assign this placeholder to the Class. Whatever name you give it is what clients will see.\n\nDo not delete the original Venue from Settings if it is used by other Classes.\n\n---"
       }
     },
     {
@@ -41,7 +41,7 @@
       "name": "Can I rename a Programme?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Go to the Programme, open Programme Settings → Edit, change the name, and save. All settings and bookings remain unchanged.\n\n---"
+        "text": "Yes. Go to the Programme, open Programme → Settings → Programme settings → Edit, change the name, and save. All settings and bookings remain unchanged.\n\n---"
       }
     },
     {

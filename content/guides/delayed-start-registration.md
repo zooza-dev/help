@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-08-16"
+last_converted: "2026-09-20"
 ---
 
 # Let clients register now and start later
@@ -30,7 +30,7 @@ You could already do this as an admin by setting a start date on a booking. What
 3. Set **Latest start (days ahead)** — the maximum number of days ahead a client may set their start, counted from the earliest available date.
 4. Save.
 
-![Screenshot — delayed start registration](../../assets/images/delayed-start-registration-01.png)
+![Online booking settings with Allow register now, start later and Priority registration switches](../../assets/images/delayed-start-registration-01.png)
 
 The window is the only control you need. You are not managing individual start dates; you are saying how far into the term someone may join and let the booking form work out the rest.
 

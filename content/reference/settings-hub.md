@@ -148,7 +148,7 @@ The Notifications Center sends automatic alerts to you or your colleagues when s
 
 **To set up a notification:**
 
-1. Go to **Settings → Notifications**.
+1. Go to **Settings → Other → Notification center**.
 2. Click **Add new notification**.
 3. Select the notification type from the list.
 4. Enter the email address you want the notification sent to.

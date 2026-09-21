@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0065_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-20"
 related_articles: ["instructors-working-hours", "user-roles", "instructor-access-faq", "managing-instructors"]
 ---
 
@@ -48,9 +48,7 @@ To cancel a substitution as an administrator, open the **session detail** — th
 
 ![The substituting instructor is required to click on View to approve or cancel the...](../../assets/images/lecturer-substitution-08.png)
 
-![The substituting instructor is required to click on View to approve or cancel the...](../../assets/images/client-import-03.png)
 Warning! In case the substituting instructor agrees to the given session, this change will not be sent to the clients by email notification, it will only be visible in the profile next to the session. In the application, the change is also visible in the session details.
 
-![Warning! In case the substituting instructor agrees to the given session, this change...](../../assets/images/client-import-01.png)
 
 Note: If a instructor rate is used, it will automatically be calculated on the substitute instructor as well. A instructor who is unable to attend a given session and requests a substitute will not have that session reported in the instructor report.

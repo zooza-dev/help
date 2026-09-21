@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0043_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: false
-last_converted: 2026-02-11
+last_converted: "2026-09-20"
 cssclasses:
 ---
 
@@ -33,7 +33,6 @@ If the class already has billable sessions set, the view shows the total number 
 
 ![If the class already has billable sessions set, the view shows the total number of...](../../assets/images/viewing-billable-events-03.png)
 
-![If the class already has billable sessions set, the view shows the total number of...](../../assets/images/discount-code-01.png)
 
 Attention! The setting on the class/programme specifies how many billable sessions the class SHOULD HAVE. When viewing with billable sessions, we are looking at ACTUAL STATUS of sessions that are marked as paid. The number in parentheses serves as confirmation that the class does not actually contain MORE or LESS billable sessions than it should.
 

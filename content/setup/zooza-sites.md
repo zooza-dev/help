@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0074_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-30"
+last_converted: "2026-09-19"
 related_articles: ["share-course-link","deploying-zooza-on-website","publish-widgets","customizing-widgets"]
 ---
 

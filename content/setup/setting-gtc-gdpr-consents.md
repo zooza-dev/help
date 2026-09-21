@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0069_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-17"
+last_converted: "2026-09-19"
 related_articles: ["consents-and-agreements-faq", "client-consent-overview", "contact-form-setup", "contact-form-campaign-tracking"]
 ---
 
@@ -24,9 +24,9 @@ Consents given by clients are stored on their profile with a timestamp and versi
 
 ## Where to find consent settings
 
-Go to **Settings → Consents & Agreements**.
+Go to **Settings → General → Consents & Agreements**.
 
-![Screenshot — Consents & Agreements list](../../assets/images/setting-gtc-gdpr-consents-01.png)
+![Consents & Agreements list with one card per consent and its filter buttons](../../assets/images/setting-gtc-gdpr-consents-01.png)
 
 The list shows all configured consents. Each card displays:
 
@@ -39,7 +39,7 @@ Click **Add** to create a new consent, or **Edit** on an existing card to modify
 
 ## Creating or editing a consent
 
-![Screenshot — consent edit form](../../assets/images/setting-gtc-gdpr-consents-02.png)
+![The Add consent form: name, text, intended for, consent type, category](../../assets/images/setting-gtc-gdpr-consents-02.png)
 
 ### Consent name in detail
 
@@ -93,7 +93,7 @@ This is useful when some consents are only relevant for specific programmes — 
 
 ### Consent is intended for
 
-Where the consent is shown: the **Booking form**, the **Order form**, or **Contact forms**. A consent intended for contact forms is offered on the [contact form](../guides/contact-form-lead-capture.md) on your website. It is then switched on per contact form configuration in **Settings → Contact forms**, in the **Consents** card. The visitor's answer is stored on the enquiry and shown on the contact's timeline, not on a booking, so such consents have no **Filter bookings** buttons.
+Where the consent is shown: the **Booking form**, the **Order form**, or **Contact forms**. A consent intended for contact forms is offered on the [contact form](../guides/contact-form-lead-capture.md) on your website. It is then switched on per contact form configuration in **Settings → General → Contact forms**, in the **Consents** card. The visitor's answer is stored on the enquiry and shown on the contact's timeline, not on a booking, so such consents have no **Filter bookings** buttons.
 
 ### Category
 

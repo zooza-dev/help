@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0033_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: false
-last_converted: 2026-02-11
+last_converted: "2026-09-20"
 ---
 
 # Types of bookings
@@ -38,7 +38,6 @@ The Trial Session status is visible on the booking only during the period when t
 
 Each booking contains an icon that shows what type it is.
 
-![Each booking contains an icon that shows what type it is](../../assets/images/discount-code-01.png)
 Attention! The booking creation status is always the last record, previous records/changes are overwritten.
 
 ## Manually

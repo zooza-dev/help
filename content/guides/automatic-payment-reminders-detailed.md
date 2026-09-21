@@ -13,7 +13,7 @@ status: published
 source_legacy_path: legacy/0093_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: 2026-06-26
+last_converted: "2026-09-19"
 ---
 
 # Automatic payment reminders
@@ -42,7 +42,7 @@ Zooza distinguishes these statuses so you can tell at a glance which clients owe
 
 ## Company-wide payment due window
 
-The **Number of days until payment is due** field (go to **Settings → Payments**) sets a company-wide grace window for every new booking with an outstanding balance.
+The **Days before booking is marked unpaid** field (go to **Settings → Billing & Payments → Payment settings**) sets a company-wide grace window for every new booking with an outstanding balance.
 
 > **SK:** Pole sa nazýva *Počet dní pre vystavenie splátky* v **Nastavenia → Platby**.
 
@@ -69,7 +69,7 @@ If a programme has a **Payment Reminder** action configured (see below), the due
 
 ## Important: breaking change for existing setups
 
-> **If your account already had a non-zero value in the Number of days until payment is due field before May 2026**, the behaviour of this field has changed.
+> **If your account already had a non-zero value in the Days before booking is marked unpaid field before May 2026**, the behaviour of this field has changed.
 
 **Before:** The field only affected bookings that had a payment schedule (scheduled instalments). All other bookings were unaffected and went directly to **Unpaid**.
 
@@ -77,7 +77,7 @@ If a programme has a **Payment Reminder** action configured (see below), the due
 
 This means bookings that previously went straight to **Unpaid** will now enter **Awaiting payment** for the configured number of days before becoming **Unpaid**.
 
-**What to do:** Review the current value of this field in **Settings → Payments**. If you want the original behaviour (all bookings go straight to **Unpaid**), set the field to **0**.
+**What to do:** Review the current value of this field in **Settings → Billing & Payments → Payment settings**. If you want the original behaviour (all bookings go straight to **Unpaid**), set the field to **0**.
 
 ---
 

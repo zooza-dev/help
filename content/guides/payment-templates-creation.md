@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0086_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: "2026-09-13"
+last_converted: "2026-09-20"
 related_articles: ["price-and-payment-setup","membership-fee-setup","automatic-payment-reminders","session-payment-adjustments"]
 ---
 <!-- REVIEW: add all types of prepaid payment frequencies -->
@@ -103,7 +103,7 @@ In the payment settings, you can edit individual templates, set their visibility
 
 - In the list of payment templates, click the pen icon next to the template you want to edit.
 
-![Screenshot](../../assets/images/payment-templates-creation-09.png)
+![Payment schedule templates list with an Edit button per template](../../assets/images/payment-templates-creation-09.png)
 
 - In template editing you have the option to set the visibility of the template, i.e. what class of people will be able to use this template – Clients, Instructors or both.1. Clients – you choose the option to have the template visible to clients directly when they register on your site. 2. Instructors – visibility for instructors means that the instructor will also be able to assign bookings to a given template
 
@@ -111,15 +111,14 @@ In the payment settings, you can edit individual templates, set their visibility
 
 - Below in the programmes section you have a list of your programmes and for each of them you can activate or deactivate the template
 
-![Screenshot](../../assets/images/payment-templates-creation-11.png)
+![Programmes card on a payment template: which programmes have the template active](../../assets/images/payment-templates-creation-11.png)
 
 - When you make changes to the template, we recommend that you *Sync Settings.* This will ensure that any changes made to the template will also be reflected in programmes and classes where it has already been activated.
 
-![Screenshot](../../assets/images/discount-code-01.png)
 
 Note: If you have changed template settings, these will not automatically be transferred to the programmes where the template is applied. If you want all programmes to have their scheduled payment calendars set according to this version of the template, synchronize their settings. The system also keeps alerting you.
 
-![Screenshot](../../assets/images/payment-templates-creation-13.png)
+![Programmes card on a payment template with Activate and Change price type actions](../../assets/images/payment-templates-creation-13.png)
 
 - Then *Save* the changes. Alternatively, you also have the option of using the *Delete* template
 
@@ -150,7 +149,7 @@ you expect to see, rather than the booking form; those two are what we look at.
 The created payment templates need to be inserted into newly created or already existing programmes. The templates created in this way can be combined in the programmes according to your wishes and needs. This means that you can use multiple payment templates for one programme.
 
 > **Three-step flow — required order:**
-> 1. **Create templates** in **Team & Settings → Payments** (global library).
+> 1. **Create templates** in **Settings → Billing & Payments → Payment schedule templates** (global library).
 > 2. **Activate on the Programme** — go to the programme → **Price and Payment** tile → enable the templates you want to offer. This step is mandatory and cannot be skipped.
 > 3. **Optionally disable at the class level** — individual classes within the programme can disable specific templates if you do not want them offered for that particular class.
 >
@@ -196,7 +195,6 @@ Then save your selection by clicking *Create*.
 
 The client has to choose one of the offered options and the final price for the programme is recalculated according to the client’s choice, if it is affected by this choice (if a discount has been set in the template).
 
-![Screenshot](../../assets/images/discount-code-01.png)
 
 Note: If a client registers for a programme that has already started and you have set up manual approval for late bookings in the programme settings, the payment type will not appear on their
 booking. Such bookings are marked as late by the application and require manual editing.

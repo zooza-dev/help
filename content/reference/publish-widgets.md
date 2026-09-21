@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-17"
+last_converted: "2026-09-20"
 related_articles: ["customizing-widgets", "widget-merge-rooms", "deploying-zooza-on-website", "contact-form-on-your-website"]
 ---
 
@@ -117,7 +117,7 @@ Open via **Contact form → Configure**.
 | Field | Description |
 |---|---|
 | `URL` | The page where the contact form is placed. Its domain is allowed automatically. |
-| `Contact form configuration` | Which configuration from **Settings → Contact forms** this widget shows. **Company default** shows your default configuration. A configuration named in the embed code takes precedence. |
+| `Contact form configuration` | Which configuration from **Settings → General → Contact forms** this widget shows. **Company default** shows your default configuration. A configuration named in the embed code takes precedence. |
 | `Additional domains` | Other websites where the form may load, entered as bare domains such as `example.com`. Subdomains are covered automatically. |
 | `Use CSS` | Loads Zooza's minimal default styling, which your website's CSS overrides. |
 
@@ -173,7 +173,7 @@ Enable **Hide dates on block-based classes** to suppress that date from the tile
 
 Work through this checklist in order:
 
-1. **Online registration is off.** Go to the programme → **Settings → Online registration** and confirm that online registration is enabled. If it is off, the programme will not appear in the booking form widget.
+1. **Online registration is off.** Go to the programme → **Settings → Online booking** and confirm that online registration is enabled. If it is off, the programme will not appear in the booking form widget.
 2. **No active classes.** A programme only appears in the widget if it has at least one class with active, upcoming sessions. If all classes have ended or are inactive, the programme is hidden.
 3. **Programme is not selected in the widget.** Open the widget in **Publish** → widget detail → **Choose programmes**. Confirm the programme is included in the widget's programme list.
 4. **Billing period has ended.** If the billing period for all classes has passed, the programme will not show as bookable.

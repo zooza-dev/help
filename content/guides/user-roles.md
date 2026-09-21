@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0067_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: false
-last_converted: "2026-09-13"
+last_converted: "2026-09-19"
 related_articles: ["managing-instructors","role-selection-guide","roles-and-permissions-faq","instructor-rate-reward"]
 ---
 

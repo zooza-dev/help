@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-04-09"
+last_converted: "2026-09-19"
 ---
 
 # Online and Hybrid Classes
@@ -38,7 +38,7 @@ This means all the payment models, trial flows, and booking setups from the othe
 
 ### 1. Create a virtual location
 
-Go to **Settings → Locations** and create a location called "Online" (or "Zoom", "Virtual classroom", whatever suits your brand). You do not need a physical address.
+Go to **Settings → General → Venues** and create a location called "Online" (or "Zoom", "Virtual classroom", whatever suits your brand). You do not need a physical address.
 
 Assign this location to the Class. This is what clients see when they look up where the class takes place.
 

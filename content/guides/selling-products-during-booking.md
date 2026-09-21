@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0104_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-09-19"
 ---
 
 # How to sell products during booking / booking (T-shirt example)
@@ -100,7 +100,6 @@ Save the product.
 - You can sell videos/ebooks/bundles the same way—create product and attach to booking. (Delivery is handled by your digital delivery process outside this specific setup.)
 
 
-![You can sell videos/ebooks/bundles the same way—create product and attach to booking....](../../assets/images/client-import-01.png)
 
 ## What Zooza does (and what it doesn’t)
 

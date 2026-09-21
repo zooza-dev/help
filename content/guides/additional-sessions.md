@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-08-22"
+last_converted: "2026-09-19"
 ---
 
 # Sell extra sessions on top of a booking

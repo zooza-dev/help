@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/setting-the-price-on-a-course.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-09-20"
 related_articles: ["payment-templates-creation","membership-fee-setup","late-bookings","payment-options"]
 ---
 
@@ -86,7 +86,7 @@ If you choose **scheduled payments**, you must also select the **price type**:
 
 This is the most common setup question, and the answer depends on what the 35 € means.
 
-**If 35 € is the same every month regardless of how many sessions fall in it** — four sessions in October, five in November, still 35 € — that is **Membership**. Go to **Programmes → programme → Settings → Price and Payment**, choose scheduled payments, set the price type to **Membership**, and attach a monthly payment template. Typical for clubs and ongoing groups with no fixed end.
+**If 35 € is the same every month regardless of how many sessions fall in it** — four sessions in October, five in November, still 35 € — that is **Membership**. Go to **Programmes → programme → Settings → Price and payment**, choose scheduled payments, set the price type to **Membership**, and attach a monthly payment template. Typical for clubs and ongoing groups with no fixed end.
 
 > **The template has to be a membership template.** Full walkthrough: [Charge a monthly membership fee](membership-fee-setup.md). This is the step people miss, and it is why Membership sometimes refuses to work at all. A payment template is created *as* a membership template — you choose that, along with its frequency (monthly, half-yearly, yearly) and any discount, when you create it in **Settings → Billing & Payments → Payment schedule templates**. An ordinary template will not do, so if the Membership option is not behaving, check what kind of template you attached before you check anything else.
 
@@ -213,7 +213,7 @@ The link works, the class is there, and the price reads `0,00`. Nothing is broke
 
 Check both levels, in this order:
 
-1. **The programme.** Programme → **Settings → Price and Payment**. Is there a price
+1. **The programme.** Programme → **Settings → Price and payment**. Is there a price
    or a unit price at all?
 2. **The class.** Open the class the link points to and check it carries a value.
    A class can sit at zero while the programme above it has a price, and the client
@@ -232,7 +232,7 @@ its own right, and it is the one being bought that shows up in the link.
 
 If clients reach the payment screen and it renders empty, check these three in order:
 
-1. **The template is not visible to clients.** Open the template in **Settings → Payments** and turn on **Visible to clients**. Active is not the same as visible.
+1. **The template is not visible to clients.** Open the template in **Settings → Billing & Payments → Payment schedule templates** and turn on **Visible to clients**. Active is not the same as visible.
 2. **The class is in Lead collection.** A class with no sessions has no billing period, so no payment options exist to show. Switch it to a fixed period and add sessions.
 3. **A cookie banner is blocking the scripts** — see [Widget embedding troubleshooting](../troubleshooting/widget-embedding.md).
 

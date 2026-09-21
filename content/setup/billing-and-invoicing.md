@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/billing-settings.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-04"
+last_converted: "2026-09-20"
 related_articles: ["invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "invoicing-overview", "szamlazz-invoices", "fakturoid-invoices", "xero-integration"]
 ---
 
@@ -347,7 +347,7 @@ As of June 2025, all Zooza subscription billing is handled through the Zooza pla
 **To manage your Zooza subscription:**
 
 1. Log in to your Zooza account.
-2. Go to **Settings → Current Product → Change Subscription → Checkout**.
+2. Go to **your name (top right) → Subscription → Choose**.
 3. Choose your subscription type and enter billing and payment information.
 4. To pay online, register a payment card under **Payment Methods**.
 

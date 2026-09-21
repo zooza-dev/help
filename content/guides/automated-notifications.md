@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-09-20"
 ---
 
 
@@ -109,13 +109,13 @@ All trial emails are configured at **Programmes → programme → Automations �
 | **Cancellation confirmation** | Client cancelled from a session | No |
 | **Scheduled cancellation** | Cancellation scheduled in advance | No |
 | **Scheduled cancellation confirmed** | Scheduled cancellation processed | No |
-| **Automatic deletion** | Unpaid booking auto-deleted after payment reminder deadline | No (configured via Programmes → Settings → Price and Payment → Payment Reminders → Delete unpaid registrations) |
+| **Automatic deletion** | Unpaid booking auto-deleted after payment reminder deadline | No (configured via Programmes → Settings → Price and payment → Payment Reminders → Delete unpaid registrations) |
 
 ---
 
 ### Payment notifications
 
-**Global payment notification settings** — configured at **Settings → Payment Settings** (account level, applies to all programmes):
+**Global payment notification settings** — configured at **Settings → Billing & Payments → Payment settings** (account level, applies to all programmes):
 
 | Setting | What it controls |
 |---|---|
@@ -124,7 +124,7 @@ All trial emails are configured at **Programmes → programme → Automations �
 | **Send notification after file import** | Whether a payment confirmation is sent after a CSV payment import |
 | **Text of the payment confirmation** | Custom text appended to every payment confirmation email |
 
-**Per-programme payment reminders** (overdue/missed payments) — configured at **Programmes → programme → Settings → Price and Payment → Payment Reminders**:
+**Per-programme payment reminders** (overdue/missed payments) — configured at **Programmes → programme → Settings → Price and payment → Payment Reminders**:
 
 | Notification | Trigger | Client opt-out? |
 |---|---|---|
@@ -192,8 +192,8 @@ These are transactional status updates — no opt-out exists.
 | Edit any notification template | **Communication → Message Templates** |
 | Disable booking/trial/waitlist automation step | **Programmes → programme → Automations** |
 | Enable/disable session reminders | **Programmes → programme → Online Booking → Edit → Send event notifications** |
-| Configure global payment notification toggles (before payment creation, after manual entry, after import) | **Settings → Payment Settings** |
-| Configure payment reminders and auto-deletion for overdue payments | **Programmes → programme → Settings → Price and Payment → Payment Reminders** |
+| Configure global payment notification toggles (before payment creation, after manual entry, after import) | **Settings → Billing & Payments → Payment settings** |
+| Configure payment reminders and auto-deletion for overdue payments | **Programmes → programme → Settings → Price and payment → Payment Reminders** |
 | Enable/disable feedback requests | **Programmes → programme → Settings → Feedback** |
 | Toggle session reminders for one specific booking | **Booking/registration detail → Options tab → Reminder** |
 | Stop marketing emails for one client | **Clients → client → Notes and preferences → Send promotional emails** |

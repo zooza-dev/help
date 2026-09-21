@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-09-20"
 ---
 
 # Sibling Discount
@@ -156,7 +156,7 @@ If you want to apply a family discount to a manually created registration, you h
 
 **Option 1 — Payment plan with a built-in discount**
 
-Assign a payment plan that includes a percentage discount (configured in **Programmes → Settings → Price and Payment → Payment plans**). This is the cleanest way to apply a consistent discount to a specific registration.
+Assign a payment plan that includes a percentage discount (configured in **Programmes → Settings → Price and payment → Payment plans**). This is the cleanest way to apply a consistent discount to a specific registration.
 
 **Option 2 — Discount code**
 

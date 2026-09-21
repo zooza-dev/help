@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-09-20"
 related_articles: ["copy-programme-and-class", "new-programme-existing-clients", "auto-enrollment", "billing-periods", "archive-or-delete-programme"]
 ---
 
@@ -33,7 +33,7 @@ It helps to do this in a spreadsheet or notes before touching anything in Zooza.
 
 If your classes are organised by term blocks (billing periods), set up the new year's periods before you create any new classes.
 
-1. Go to **Settings → Billing Periods**.
+1. Go to **Settings → Billing & Payments → Billing periods**.
 2. Add a billing period for each term block in the new year (e.g. September–December, January–April, May–June).
 3. Save each period.
 
@@ -85,15 +85,15 @@ If you use the booking widget on your website:
 1. Check that new classes have **Online Registration** enabled (so they appear in the widget).
 2. Check that finished or full classes have **Online Registration** disabled (so they no longer appear).
 
-This is controlled per class under **Class Settings → Online Registration → Show in online registration**.
+This is controlled per class under **Class Settings → Online booking → Show in online registration**.
 
 ## Step 7 — Set up or update payment templates
 
 If prices change for the new year, update or create new payment templates:
 
-1. Go to **Settings → Payment Templates**.
+1. Go to **Settings → Billing & Payments → Payment schedule templates**.
 2. Create new templates for the new year's pricing if needed.
-3. Activate the correct template on each programme under **Programme Settings → Payment**.
+3. Activate the correct template on each programme under **Programme → Settings → Price and payment**.
 
 See [Payment templates](../guides/payment-templates-creation.md) for the three-step activation flow.
 
@@ -109,12 +109,12 @@ Once your new classes are ready, let your clients know:
 
 | Task | Where in Zooza |
 |------|----------------|
-| Add billing periods | Settings → Billing Periods |
+| Add billing periods | Settings → Billing & Payments → Billing periods |
 | Copy a class | Programmes → open class → Copy |
 | Enable auto-enrolment | Class Settings → Auto-enrolment |
 | Archive a class | Class settings → Archive |
-| Update widget visibility | Class Settings → Online Registration |
-| Create payment templates | Settings → Payment Templates |
+| Update widget visibility | Class Settings → Online booking |
+| Create payment templates | Settings → Billing & Payments → Payment schedule templates |
 | Send client announcement | Communication → Compose |
 
 ## Related
