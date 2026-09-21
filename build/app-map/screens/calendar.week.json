@@ -1,0 +1,172 @@
+{
+  "id": "calendar.week",
+  "menu": "Activities → Calendar",
+  "route": "calendar",
+  "url_template": "https://{region}.zooza.app/#calendar",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "calendar",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Planning calendar › Calendar planner",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Instructor",
+          "type": "combobox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Add a time slot"
+      ],
+      "route": "calendar/planner"
+    },
+    {
+      "title": "Print version › Layouts",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Week · per room",
+          "type": "checkbox",
+          "help": "Detailed view, one page per room"
+        },
+        {
+          "label": "All venues · board",
+          "type": "checkbox",
+          "help": "One wall-chart, rooms × day/hour grid"
+        },
+        {
+          "label": "All venues · per-day",
+          "type": "checkbox",
+          "help": "One panel per day, rooms × time"
+        },
+        {
+          "label": "All venues · compact",
+          "type": "checkbox",
+          "help": "Rooms × 7 days of time-ordered chips"
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Print version › Locations",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "My, London",
+          "type": "checkbox",
+          "help": "(whole location)"
+        },
+        {
+          "label": "Online",
+          "type": "checkbox",
+          "help": "(whole location)"
+        },
+        {
+          "label": "(whole location)",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "B",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Chorlton Hall, Manchester",
+          "type": "checkbox",
+          "help": "(whole location)"
+        },
+        {
+          "label": "Dulwich Village Hall",
+          "type": "checkbox",
+          "help": "(whole location)"
+        },
+        {
+          "label": "Hove Family Centre, Brighton",
+          "type": "checkbox",
+          "help": "(whole location)"
+        },
+        {
+          "label": "Redland Rooms, Bristol",
+          "type": "checkbox",
+          "help": "(whole location)"
+        },
+        {
+          "label": "Headingley Activity Hub, Leeds",
+          "type": "checkbox",
+          "help": "(whole location)"
+        },
+        {
+          "label": "Moseley Movement Studio, Birmingham",
+          "type": "checkbox",
+          "help": "(whole location)"
+        },
+        {
+          "label": "Summertown Scout Hall, Oxford",
+          "type": "checkbox",
+          "help": "(whole location)"
+        },
+        {
+          "label": "West Bridgford Centre, Nottingham",
+          "type": "checkbox",
+          "help": "(whole location)"
+        },
+        {
+          "label": "Morningside Playhouse, Edinburgh",
+          "type": "checkbox",
+          "help": "(whole location)"
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Daily Overview",
+      "route": "calendar/daily?date=2026-09-21&daily=true"
+    },
+    {
+      "via": "Planning calendar",
+      "route": "calendar/planner"
+    },
+    {
+      "via": "Make-up sessions",
+      "route": "reports/replacements"
+    },
+    {
+      "via": "Rescheduled",
+      "route": "reports/rescheduled?page=0&page_size=50&mode=rescheduled"
+    },
+    {
+      "via": "Substituted",
+      "route": "reports/substituted?page=0&page_size=50&mode=substituted"
+    },
+    {
+      "via": "Venue",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Instructor",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Programme",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Bulk edit",
+      "error": "TimeoutError"
+    }
+  ]
+}

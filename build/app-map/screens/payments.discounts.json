@@ -1,0 +1,174 @@
+{
+  "id": "payments.discounts",
+  "menu": "Sales & Payments → Discounts",
+  "route": "payments/discounts",
+  "url_template": "https://{region}.zooza.app/#payments/discounts",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "payments",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Discount codes",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Free Sessions",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Discounts",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Payment templates with discount",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Create › New discount code",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "Enter your internal name for the discount (not visible by clients)"
+        },
+        {
+          "label": "Code",
+          "type": "text",
+          "help": "The code that clients enter in the field Discount when creating a booking in the booking form"
+        },
+        {
+          "label": "Amount of use",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Absolute discount",
+          "type": "number",
+          "help": "The amount which will be deducted from the total price."
+        },
+        {
+          "label": "Relative discount in percentage",
+          "type": "number",
+          "help": "The exact amount will be calculated by total price of the programme. The code only applies to base price of the programme (including Registration fee) It does not apply to products."
+        },
+        {
+          "label": "Relative discount limit",
+          "type": "number",
+          "help": "You can cap the relative discount to a maximum value. If calculated discount will be higher than this value, it will be capped."
+        },
+        {
+          "label": "Enter the code expiration date and time. After this date, the code is automatically deactivated.",
+          "type": "date_time",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Continue",
+        "Back"
+      ],
+      "route": "payments/discounts/create_coupon"
+    },
+    {
+      "title": "Create #4 › Create a template",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Template name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Method of payment:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "One-off payment (Discount or Combination) — One-off payment without period for the whole programme/class.",
+            "Prepaid Periodic Payment — Fixed payment amount paid upfront for each period, due in advance.",
+            "Membership Payment — The payment plan works only with the programme price type - Membership.",
+            "Post-attendance Periodic Payment — Payment is calculated based on the client’s attendance for the specified period in the past."
+          ]
+        },
+        {
+          "label": "Rounding method",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None — 45.76 -> 45.76",
+            "Up — 45.76 -> 46.00",
+            "Down — 45.76 -> 45.00",
+            "Half up — 45.76 -> 46.00",
+            "Half down — 45.76 -> 45.50",
+            "Baťa’s price (More) — 45.76 -> 45.99"
+          ]
+        },
+        {
+          "label": "Discount:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None",
+            "Absolute",
+            "In percentage"
+          ]
+        }
+      ],
+      "buttons": [],
+      "route": "settings/payment_schedule_templates/add"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Create",
+      "route": "payments/discounts/create_coupon"
+    },
+    {
+      "via": "View",
+      "route": "payments/discounts/coupons"
+    },
+    {
+      "via": "Create",
+      "route": "payments/discounts/create?type=free_event"
+    },
+    {
+      "via": "View",
+      "route": "payments/discounts/credits?types=free_event"
+    },
+    {
+      "via": "Create",
+      "route": "payments/discounts/create?type=discount"
+    },
+    {
+      "via": "View",
+      "route": "payments/discounts/credits?types=discount"
+    },
+    {
+      "via": "Create",
+      "route": "settings/payment_schedule_templates/add"
+    },
+    {
+      "via": "View",
+      "route": "settings/payment_schedule_templates"
+    }
+  ]
+}

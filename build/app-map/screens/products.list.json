@@ -1,0 +1,296 @@
+{
+  "id": "products.list",
+  "menu": "Products & Services → ProductsPRO",
+  "route": "products",
+  "url_template": "https://{region}.zooza.app/#products",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "products",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Add new product › Create new product",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Product name",
+          "type": "text",
+          "help": "The name will also be displayed on the page."
+        }
+      ],
+      "buttons": [
+        "Create"
+      ],
+      "route": "products/add_new_product"
+    },
+    {
+      "title": "Gift Card › Product settings",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Product name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Item is available in the online checkout form",
+          "type": "checkbox",
+          "help": "If checked, your clients will be able to purchase this product via the online checkout form on your website. If checked, your clients will be able to purchase this product via the online checkout form on your website. However, the product will still be available for purchase from the client profile if it’s attached to a class."
+        },
+        {
+          "label": "Priority",
+          "type": "text",
+          "help": "Defines the product’s display order for clients. By default, products are sorted alphabetically, but a higher priority (0–1000) moves the product higher in the list. The default priority is 0."
+        }
+      ],
+      "buttons": [
+        "Save"
+      ],
+      "route": "products/13"
+    },
+    {
+      "title": "Gift Card › Price and payment",
+      "intro": [
+        "Stripe (via Zooza) will collect money on your behalf. Payouts are made twice a month or monthly, depending on the volume of transactions. There is no setup required. A standard transaction fee of 3.5% is deducted from every transaction. Please note, this payment method does not support refunds."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Choose whether you want to exchange your product for an email address or a reward.",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Payment required",
+            "For an email address"
+          ]
+        },
+        {
+          "label": "Product price:",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Invoice profile",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Default profile",
+            "New Invoice Profile ()"
+          ]
+        },
+        {
+          "label": "Online card payment",
+          "type": "toggle",
+          "help": "The client will be able to pay for the product using a credit card."
+        },
+        {
+          "label": "Online payment provider",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Stripe (via Zooza)",
+            "Stripe Connect"
+          ]
+        },
+        {
+          "label": "Cash",
+          "type": "toggle",
+          "help": "It will be possible to order the product but pay for it in cash later."
+        },
+        {
+          "label": "SEPA Direct debit",
+          "type": "toggle",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save"
+      ],
+      "route": "products/13"
+    },
+    {
+      "title": "Gift Card › Additional product settings",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Enter the text you want to display right next to the product offer.",
+          "type": "wysiwyg",
+          "help": "This is a simple teaser for the client in which you can describe the product."
+        },
+        {
+          "label": "Select a confirmation email to be sent to the client immediately after purchase:",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Standard template for order confirmation",
+            "Your Gift Voucher is ready!"
+          ]
+        }
+      ],
+      "buttons": [
+        "Save"
+      ],
+      "route": "products/13"
+    },
+    {
+      "title": "Gift Card › Choose the type of product item",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Add product item type",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Video — Any video from the document's library. The video will be available after the order has been completed",
+            "Document — Any document from the document's library",
+            "Prepaid Credit — When used, the credit will be recorded as a payment for programme. The booking's debt will remain the same. This is recommended for entry passes or prepaid credit.",
+            "Entry pass — Instead of prepaid amount, your clients will be able to purchase a certain number of entries to your sessions",
+            "Discount — Credit will be recorded as a discount when applied to a booking. The booking's debt will be reduced by the credit amount.",
+            "Service — Any service provided outside the application. Useful for camps when additional services such as insurance, parking, extras, etc. are needed."
+          ]
+        }
+      ],
+      "buttons": [
+        "Continue",
+        "Back"
+      ],
+      "route": "products/13"
+    },
+    {
+      "title": "Starter Pack › Price and payment",
+      "intro": [
+        "Stripe (via Zooza) will collect money on your behalf. Payouts are made twice a month or monthly, depending on the volume of transactions. There is no setup required. A standard transaction fee of 3.5% is deducted from every transaction. Please note, this payment method does not support refunds.",
+        "Booking will be able to be completed and paid in cash at a later date.",
+        "Click a symbol to insert it into the format.",
+        "Direct debits will be collected via FastPay (BACS). You will need to connect your FastPay account in the settings."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Choose whether you want to exchange your product for an email address or a reward.",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Payment required",
+            "For an email address"
+          ]
+        },
+        {
+          "label": "Product price:",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Invoice profile",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Default profile",
+            "New Invoice Profile ()"
+          ]
+        },
+        {
+          "label": "Online card payment",
+          "type": "toggle",
+          "help": "The client will be able to pay for the product using a credit card."
+        },
+        {
+          "label": "Online payment provider",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Stripe (via Zooza)",
+            "Stripe Connect"
+          ]
+        },
+        {
+          "label": "Cash",
+          "type": "toggle",
+          "help": "It will be possible to order the product but pay for it in cash later."
+        },
+        {
+          "label": "SEPA Direct debit",
+          "type": "toggle",
+          "help": ""
+        },
+        {
+          "label": "Provider",
+          "type": "select",
+          "help": "",
+          "options": [
+            "FastPay",
+            "GoCardless"
+          ]
+        },
+        {
+          "label": "Mandate ID Format",
+          "type": "text",
+          "help": "Allowed characters: uppercase letters A-Z, digits 0-9, spaces and the symbols & / . and -. No leading space, and the reference cannot be all identical characters."
+        }
+      ],
+      "buttons": [
+        "Save"
+      ],
+      "route": "products/1"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Add new product",
+      "route": "products/add_new_product"
+    },
+    {
+      "via": "Gift Card",
+      "route": "products/13"
+    },
+    {
+      "via": "Credit Pass Options",
+      "route": "products/12"
+    },
+    {
+      "via": "Credit Pass 5",
+      "route": "products/11"
+    },
+    {
+      "via": "Credit Pass 10",
+      "route": "products/10"
+    },
+    {
+      "via": "New Product",
+      "route": "products/9"
+    },
+    {
+      "via": "New Product",
+      "route": "products/8"
+    },
+    {
+      "via": "Product",
+      "route": "products/5"
+    },
+    {
+      "via": "Hope Tutu",
+      "route": "products/4"
+    },
+    {
+      "via": "Tee-shirt as a Gift with love",
+      "route": "products/3"
+    },
+    {
+      "via": "Wiggle at Home: Sensory Sound Pack",
+      "route": "products/2"
+    },
+    {
+      "via": "Starter Pack",
+      "route": "products/1"
+    }
+  ]
+}

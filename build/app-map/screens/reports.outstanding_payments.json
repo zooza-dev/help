@@ -1,0 +1,132 @@
+{
+  "id": "reports.outstanding_payments",
+  "menu": "Reports & Insights → Reports → Outstanding Payments",
+  "route": "reports/outstanding_payments",
+  "url_template": "https://{region}.zooza.app/#reports/outstanding_payments",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "reports",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Outstanding Payments",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "By venue",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "By programme",
+      "intro": [
+        "💃 Wiggle Wonders (0–12 months)",
+        "🤹‍♂️ Bounce & Balance (1–3 years)",
+        "👣 Mighty Movers (3–5 years)",
+        "Trailblazer Tumblers (6–8 Years)"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "By instructor",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "£20,522.47",
+      "route": "registrations?status=registered|guest|waitlist|late|trial_not_started|trial_started|trial_ended|trial_won|trial_lost&billing_status=unpaid|partially_paid|downpayment_unpaid|downpayment_partially_paid|final_payment_unpaid|final_payment_partially_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "£2,880.00",
+      "route": "registrations?status=canceled&billing_status=unpaid|partially_paid|downpayment_unpaid|downpayment_partially_paid|final_payment_unpaid|final_payment_partially_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "£16,790.00",
+      "route": "registrations?status=registered|guest|waitlist|late|trial_not_started|trial_started|trial_ended|trial_won|trial_lost&billing_status=unpaid|partially_paid|downpayment_unpaid|downpayment_partially_paid|final_payment_unpaid|final_payment_partially_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "£15,641.31",
+      "route": "registrations?status=registered|guest|waitlist|late|trial_not_started|trial_started|trial_ended|trial_won|trial_lost&billing_status=unpaid|partially_paid|downpayment_unpaid|downpayment_partially_paid|final_payment_unpaid|final_payment_partially_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "£14,927.00",
+      "route": "registrations?status=registered|guest|waitlist|late|trial_not_started|trial_started|trial_ended|trial_won|trial_lost&billing_status=unpaid|partially_paid|downpayment_unpaid|downpayment_partially_paid|final_payment_unpaid|final_payment_partially_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "£11,760.00",
+      "route": "registrations?status=registered|guest|waitlist|late|trial_not_started|trial_started|trial_ended|trial_won|trial_lost&billing_status=unpaid|partially_paid|downpayment_unpaid|downpayment_partially_paid|final_payment_unpaid|final_payment_partially_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "£11,575.24",
+      "route": "registrations?status=registered|guest|waitlist|late|trial_not_started|trial_started|trial_ended|trial_won|trial_lost&billing_status=unpaid|partially_paid|downpayment_unpaid|downpayment_partially_paid|final_payment_unpaid|final_payment_partially_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "£7,853.10",
+      "route": "registrations?status=registered|guest|waitlist|late|trial_not_started|trial_started|trial_ended|trial_won|trial_lost&billing_status=unpaid|partially_paid|downpayment_unpaid|downpayment_partially_paid|final_payment_unpaid|final_payment_partially_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "£5,785.00",
+      "route": "registrations?status=registered|guest|waitlist|late|trial_not_started|trial_started|trial_ended|trial_won|trial_lost&billing_status=unpaid|partially_paid|downpayment_unpaid|downpayment_partially_paid|final_payment_unpaid|final_payment_partially_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "£310.00",
+      "route": "registrations?status=registered|guest|waitlist|late|trial_not_started|trial_started|trial_ended|trial_won|trial_lost&billing_status=awaiting_payment&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "£4,528.50",
+      "route": "registrations?status=registered|guest|waitlist|late|trial_not_started|trial_started|trial_ended|trial_won|trial_lost&billing_status=unpaid|partially_paid|downpayment_unpaid|downpayment_partially_paid|final_payment_unpaid|final_payment_partially_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "£3,721.98",
+      "route": "registrations?status=registered|guest|waitlist|late|trial_not_started|trial_started|trial_ended|trial_won|trial_lost&billing_status=unpaid|partially_paid|downpayment_unpaid|downpayment_partially_paid|final_payment_unpaid|final_payment_partially_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "£3,130.00",
+      "route": "registrations?status=registered|guest|waitlist|late|trial_not_started|trial_started|trial_ended|trial_won|trial_lost&billing_status=unpaid|partially_paid|downpayment_unpaid|downpayment_partially_paid|final_payment_unpaid|final_payment_partially_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "£990.90",
+      "route": "registrations?status=registered|guest|waitlist|late|trial_not_started|trial_started|trial_ended|trial_won|trial_lost&billing_status=unpaid|partially_paid|downpayment_unpaid|downpayment_partially_paid|final_payment_unpaid|final_payment_partially_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "£45,652.00",
+      "route": "registrations?status=registered|guest|waitlist|late|trial_not_started|trial_started|trial_ended|trial_won|trial_lost&course_id=27&billing_status=unpaid|partially_paid|downpayment_unpaid|downpayment_partially_paid|final_payment_unpaid|final_payment_partially_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "£31,997.60",
+      "route": "registrations?status=registered|guest|waitlist|late|trial_not_started|trial_started|trial_ended|trial_won|trial_lost&course_id=26&billing_status=unpaid|partially_paid|downpayment_unpaid|downpayment_partially_paid|final_payment_unpaid|final_payment_partially_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "£15,782.80",
+      "route": "registrations?status=registered|guest|waitlist|late|trial_not_started|trial_started|trial_ended|trial_won|trial_lost&course_id=63&billing_status=unpaid|partially_paid|downpayment_unpaid|downpayment_partially_paid|final_payment_unpaid|final_payment_partially_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "£1,880.00",
+      "route": "registrations?status=canceled&course_id=63&billing_status=unpaid|partially_paid|downpayment_unpaid|downpayment_partially_paid|final_payment_unpaid|final_payment_partially_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "£7,309.99",
+      "route": "registrations?status=registered|guest|waitlist|late|trial_not_started|trial_started|trial_ended|trial_won|trial_lost&course_id=161&billing_status=unpaid|partially_paid|downpayment_unpaid|downpayment_partially_paid|final_payment_unpaid|final_payment_partially_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "£1,000.00",
+      "route": "registrations?status=canceled&course_id=161&billing_status=unpaid|partially_paid|downpayment_unpaid|downpayment_partially_paid|final_payment_unpaid|final_payment_partially_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    }
+  ]
+}

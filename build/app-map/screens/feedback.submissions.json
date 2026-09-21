@@ -1,0 +1,41 @@
+{
+  "id": "feedback.submissions",
+  "menu": "Feedback → Submissions",
+  "route": "feedback/submissions",
+  "url_template": "https://{region}.zooza.app/#feedback/submissions",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "calendar",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Manage forms › Answer retention",
+      "intro": [
+        "Submitted answers are stored in Zooza and deleted automatically once they reach the age you set here. A deleted answer still shows who filled the form in and when."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Keep submitted answers for (days)",
+          "type": "number",
+          "help": "Default 90 days, maximum 730 days."
+        }
+      ],
+      "buttons": [
+        "Save"
+      ],
+      "route": "integrations/forms"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Manage forms",
+      "route": "integrations/forms"
+    }
+  ]
+}

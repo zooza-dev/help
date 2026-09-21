@@ -1,0 +1,114 @@
+{
+  "id": "team.trainer.detail",
+  "menu": "Team & Settings → Instructors → instructor",
+  "route": "trainers/60",
+  "url_template": "https://{region}.zooza.app/#trainers/60",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "team",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Working hours",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Add availability",
+        "Activate",
+        "Delete selected availability",
+        "August 2026",
+        "October 2026"
+      ]
+    },
+    {
+      "title": "Add availability › Working hours",
+      "intro": [],
+      "sections": [
+        "Summary"
+      ],
+      "fields": [
+        {
+          "label": "Type",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Working hours",
+            "Absence"
+          ]
+        },
+        {
+          "label": "Name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Approved by",
+          "type": "combobox",
+          "help": ""
+        },
+        {
+          "label": "Date",
+          "type": "date_time",
+          "help": ""
+        },
+        {
+          "label": "Date to",
+          "type": "date_time",
+          "help": ""
+        },
+        {
+          "label": "Repeat",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Frequency of repetitions",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Every week",
+            "Every month"
+          ]
+        },
+        {
+          "label": "Repeat until",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Until (date)",
+            "Number of repetitions"
+          ]
+        },
+        {
+          "label": "Repeat until",
+          "type": "date",
+          "help": ""
+        },
+        {
+          "label": "Number of repetitions",
+          "type": "number",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Add availability",
+        "Activate",
+        "Delete selected availability",
+        "Save availability",
+        "Close",
+        "Delete availability",
+        "Approve",
+        "Reject",
+        "August 2026",
+        "October 2026"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

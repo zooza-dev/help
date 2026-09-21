@@ -1,0 +1,85 @@
+{
+  "id": "team.integrations",
+  "menu": "Team & Settings → Integrations",
+  "route": "integrations",
+  "url_template": "https://{region}.zooza.app/#integrations",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "team",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Payments",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Invoicing",
+      "intro": [
+        "Not available in your region"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Accounting Exports",
+      "intro": [
+        "Not available in your region"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Messages",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Reviews",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Marketing",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Analytics",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Video",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Website",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

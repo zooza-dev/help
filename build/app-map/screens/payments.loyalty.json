@@ -1,0 +1,279 @@
+{
+  "id": "payments.loyalty",
+  "menu": "Sales & Payments → Loyalty Programme",
+  "route": "payments/loyalty",
+  "url_template": "https://{region}.zooza.app/#payments/loyalty",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "payments",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Settings",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "When multiple discounts apply",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Apply only the highest-value discount — When a client qualifies for multiple loyalty discounts, only the one with the highest value is applied.",
+            "Allow discounts to stack — When a client qualifies for multiple loyalty discounts, all of them are applied. Each discount is calculated from the original price."
+          ]
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Sibling Discount",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Returning Client Discount",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Referral Programme",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Edit › Sibling Discount Settings",
+      "intro": [
+        "Only registrations with Registered status count toward the child count. Waitlist and trial registrations are not included."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Enabled",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "How to count children",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Per billing period",
+            "Per programme",
+            "Across all programmes"
+          ]
+        }
+      ],
+      "buttons": [
+        "Save"
+      ],
+      "route": "payments/loyalty/sibling"
+    },
+    {
+      "title": "Edit › Rules",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "From child",
+          "type": "select",
+          "help": "",
+          "options": [
+            "2nd child",
+            "4th child",
+            "5th child"
+          ]
+        },
+        {
+          "label": "Discount type",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Percentage",
+            "Fixed amount"
+          ]
+        },
+        {
+          "label": "Discount",
+          "type": "number",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save",
+        "Delete",
+        "+ Add Rule"
+      ],
+      "route": "payments/loyalty/sibling"
+    },
+    {
+      "title": "Edit #2 › Returning Client Settings",
+      "intro": [
+        "Only registrations with Registered status count as previous registrations. Waitlist and trial registrations are not included."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Enabled",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Require time gap since last registration",
+          "type": "checkbox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save"
+      ],
+      "route": "payments/loyalty/returning"
+    },
+    {
+      "title": "Edit #2 › Rules",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Programmes",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Discount type",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Percentage",
+            "Fixed amount"
+          ]
+        },
+        {
+          "label": "Minimum previous registrations",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Discount",
+          "type": "number",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Remove tier",
+        "Save",
+        "Delete",
+        "+ Add Rule"
+      ],
+      "route": "payments/loyalty/returning"
+    },
+    {
+      "title": "Edit #3 › Referral Programme Settings",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Enabled",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Who receives the discount?",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "New client only",
+            "Referring client only",
+            "Both clients"
+          ]
+        },
+        {
+          "label": "Maximum referral rewards per client",
+          "type": "number",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save"
+      ],
+      "route": "payments/loyalty/referral"
+    },
+    {
+      "title": "Edit #3 › Rules",
+      "intro": [],
+      "sections": [
+        "New Client Discount"
+      ],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Programmes",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Discount type",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Percentage",
+            "Fixed amount"
+          ]
+        },
+        {
+          "label": "Discount value",
+          "type": "number",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save",
+        "Delete",
+        "+ Add Rule"
+      ],
+      "route": "payments/loyalty/referral"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Activity",
+      "route": "payments/loyalty/usage?page=0&page_size=50"
+    },
+    {
+      "via": "Edit",
+      "route": "payments/loyalty/sibling"
+    },
+    {
+      "via": "Edit",
+      "route": "payments/loyalty/returning"
+    },
+    {
+      "via": "Edit",
+      "route": "payments/loyalty/referral"
+    }
+  ]
+}

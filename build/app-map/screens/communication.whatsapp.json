@@ -1,0 +1,32 @@
+{
+  "id": "communication.whatsapp",
+  "menu": "Communication → WhatsApp",
+  "route": "communication/whatsapp",
+  "url_template": "https://{region}.zooza.app/#communication/whatsapp",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "communication",
+  "captured": "2026-09-21",
+  "cards": [],
+  "notes": [
+    "Clients can reply Replies aren't one-way. Clients can answer with text, voice messages and images, and you handle every conversation right inside Zooza. Every message is sent from your own verified WhatsApp Business account — your brand and name — never from Zooza."
+  ],
+  "discovered": [
+    {
+      "via": "Turn on WhatsApp",
+      "route": "communication/whatsapp/setup"
+    },
+    {
+      "via": "See the full setup guide",
+      "route": "communication/whatsapp/setup"
+    },
+    {
+      "via": "Turn on WhatsApp",
+      "route": "communication/whatsapp/setup"
+    }
+  ]
+}

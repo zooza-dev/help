@@ -1,0 +1,169 @@
+{
+  "id": "communication.history",
+  "menu": "Communication → History",
+  "route": "communication/sent_communication",
+  "url_template": "https://{region}.zooza.app/#communication/sent_communication",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "communication",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "michaldodok@gmail.com › Quick reply",
+      "intro": [
+        "Your message could not be sent",
+        "Total number of recipients",
+        "Just a small warning: message will be sent to a larger number of recipients. To make sure that this is what you intended, please write total number of recipients in the input."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Type",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Email",
+            "SMS"
+          ]
+        },
+        {
+          "label": "Message body",
+          "type": "text",
+          "help": "One SMS can contain a maximum of 459 characters in total. If the text is shorter than 160 characters, it will be sent as one SMS. If the text is longer than 160 characters, then one SMS will have 153 characters (the recipient will see the SMS messages as one long combined SMS message)."
+        },
+        {
+          "label": "Email subject",
+          "type": "text",
+          "help": "Will appear as the subject of the email"
+        },
+        {
+          "label": "Email body",
+          "type": "wysiwyg",
+          "help": "Enter the body of the message"
+        },
+        {
+          "label": "Write the number above for the number of recipients:",
+          "type": "number",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Change e-mail template",
+        "Send",
+        "Send another"
+      ],
+      "route": "registrations/1394/registrations_communication"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "michaldodok@gmail.com",
+      "route": "registrations/1394/registrations_communication"
+    },
+    {
+      "via": "michaldodok@gmail.com",
+      "route": "registrations/1259/registrations_communication"
+    },
+    {
+      "via": "michal@zooza.online",
+      "route": "registrations/1258/registrations_communication"
+    },
+    {
+      "via": "mark@lambrach.co.co.uk",
+      "route": "registrations/1474/registrations_communication"
+    },
+    {
+      "via": "amelia.wright@example.com",
+      "route": "registrations/311/registrations_communication"
+    },
+    {
+      "via": "charlotte.price@example.com",
+      "route": "registrations/310/registrations_communication"
+    },
+    {
+      "via": "olivia.hughes@example.com",
+      "route": "registrations/309/registrations_communication"
+    },
+    {
+      "via": "emma.jackson@example.com",
+      "route": "registrations/308/registrations_communication"
+    },
+    {
+      "via": "amelia.wright@example.com",
+      "route": "registrations/302/registrations_communication"
+    },
+    {
+      "via": "charlotte.price@example.com",
+      "route": "registrations/301/registrations_communication"
+    },
+    {
+      "via": "olivia.hughes@example.com",
+      "route": "registrations/300/registrations_communication"
+    },
+    {
+      "via": "emma.jackson@example.com",
+      "route": "registrations/299/registrations_communication"
+    },
+    {
+      "via": "michal+test@zooza.online",
+      "route": "registrations/1589/registrations_communication"
+    },
+    {
+      "via": "path@nololo.co.uk",
+      "route": "registrations/50/registrations_communication"
+    },
+    {
+      "via": "tanase.chloe@playfulmotion.co.uk",
+      "route": "registrations/535/registrations_communication"
+    },
+    {
+      "via": "daniel.carter@example.com",
+      "route": "registrations/329/registrations_communication"
+    },
+    {
+      "via": "michal@zooza.online",
+      "route": "registrations/1096/registrations_communication"
+    },
+    {
+      "via": "michaldodok@gmail.com",
+      "route": "registrations/1393/registrations_communication"
+    },
+    {
+      "via": "david.collins@example.com",
+      "route": "registrations/335/registrations_communication"
+    },
+    {
+      "via": "thomas.walker@example.com",
+      "route": "registrations/334/registrations_communication"
+    },
+    {
+      "via": "michael.owen@example.com",
+      "route": "registrations/333/registrations_communication"
+    },
+    {
+      "via": "james.wilson@example.com",
+      "route": "registrations/328/registrations_communication"
+    },
+    {
+      "via": "sarah.thompson@example.com",
+      "route": "registrations/327/registrations_communication"
+    },
+    {
+      "via": "michal@zooza.online",
+      "route": "registrations/56/registrations_communication"
+    },
+    {
+      "via": "john.smith@email.com",
+      "route": "registrations/296/registrations_communication"
+    },
+    {
+      "via": "daniel.carter@example.com",
+      "route": "registrations/295/registrations_communication"
+    }
+  ]
+}

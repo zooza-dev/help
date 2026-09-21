@@ -1,0 +1,78 @@
+{
+  "id": "services.list",
+  "menu": "Products & Services → Services",
+  "route": "services",
+  "url_template": "https://{region}.zooza.app/#services",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "products",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Add new › Add service",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name of service",
+          "type": "text",
+          "help": "Type the name of the service"
+        }
+      ],
+      "buttons": [
+        "Create"
+      ]
+    },
+    {
+      "title": "Gift Card › General settings",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Services",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Selection",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Single choice",
+            "Multiple choice"
+          ]
+        },
+        {
+          "label": "Status",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Active",
+            "Draft"
+          ]
+        }
+      ],
+      "buttons": [],
+      "route": "services/9"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Gift Card",
+      "route": "services/9"
+    },
+    {
+      "via": "Credit Pass",
+      "route": "services/8"
+    },
+    {
+      "via": "New Service",
+      "route": "services/7"
+    }
+  ]
+}

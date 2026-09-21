@@ -73,7 +73,7 @@
       "name": "I sent auto-enrolment invitations before adding future classes — can I resend them?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Auto-enrolment invitations are not re-sent automatically when you later update the available classes. The system sends the invitation once, at the configured number of days before the class ends.\n\nWhat you can do:\n\n1. Add the future classes to the auto-enrolment settings (Programme → Automations → Auto-enrolment → Edit → select the classes to offer).\n2. Manually contact the clients who expressed interest via Communication → Send Email — select the relevant class or bookings as the target, and include a direct link to the new class.\n\nClients who have already received the invitation and visited their Client Profile will see the updated class list the next time they open the link, as long as the invitation link is still valid.\n\n---"
+        "text": "No. Auto-enrolment invitations are not re-sent automatically when you later update the available classes. The system sends the invitation once, at the configured number of days before the class ends.\n\nWhat you can do:\n\n1. Add the future classes to the auto-enrolment settings (Programme → Automations → Auto-enrolment → Edit → select the classes to offer).\n2. Manually contact the clients who expressed interest via Communication → Send message — select the relevant class or bookings as the target, and include a direct link to the new class.\n\nClients who have already received the invitation and visited their Client Profile will see the updated class list the next time they open the link, as long as the invitation link is still valid.\n\n---"
       }
     },
     {

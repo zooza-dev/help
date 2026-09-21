@@ -1,0 +1,74 @@
+{
+  "id": "payments.invoices",
+  "menu": "Sales & Payments → Invoices",
+  "route": "payments/invoices",
+  "url_template": "https://{region}.zooza.app/#payments/invoices",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "payments",
+  "captured": "2026-09-21",
+  "cards": [],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "#26",
+      "route": "payments/invoices/26"
+    },
+    {
+      "via": "INV-0005",
+      "route": "payments/invoices/22"
+    },
+    {
+      "via": "INV-0004",
+      "route": "payments/invoices/17"
+    },
+    {
+      "via": "INV-0003",
+      "route": "payments/invoices/16"
+    },
+    {
+      "via": "INV-0002",
+      "route": "payments/invoices/15"
+    },
+    {
+      "via": "INV-0001",
+      "route": "payments/invoices/14"
+    },
+    {
+      "via": "#13",
+      "route": "payments/invoices/13"
+    },
+    {
+      "via": "#12",
+      "route": "payments/invoices/12"
+    },
+    {
+      "via": "#11",
+      "route": "payments/invoices/11"
+    },
+    {
+      "via": "#10",
+      "route": "payments/invoices/10"
+    },
+    {
+      "via": "INV-0002",
+      "route": "payments/invoices/9"
+    },
+    {
+      "via": "INV-0001",
+      "route": "payments/invoices/8"
+    },
+    {
+      "via": "INV-0037",
+      "route": "payments/invoices/7"
+    },
+    {
+      "via": "INV-0036",
+      "route": "payments/invoices/6"
+    }
+  ]
+}

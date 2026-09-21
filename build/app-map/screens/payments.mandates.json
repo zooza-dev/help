@@ -1,0 +1,22 @@
+{
+  "id": "payments.mandates",
+  "menu": "Sales & Payments → Direct Debit mandates",
+  "route": "payments/mandates",
+  "url_template": "https://{region}.zooza.app/#payments/mandates",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "payments",
+  "captured": "2026-09-21",
+  "cards": [],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "View payment plan",
+      "route": "registrations/1474/payment_plan"
+    }
+  ]
+}

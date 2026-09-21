@@ -57,7 +57,7 @@
       "name": "I sent a WhatsApp message but trial clients did not receive it — why?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "When composing a WhatsApp message via Communication → Compose, the default audience includes clients with an active enrolment. Clients with a Trial booking status are in a separate group and must be messaged separately.\n\nSee the email FAQ for the full workaround — the same limitation applies to WhatsApp sends."
+        "text": "When composing a WhatsApp message via Communication → Send message, the default audience includes clients with an active enrolment. Clients with a Trial booking status are in a separate group and must be messaged separately.\n\nSee the email FAQ for the full workaround — the same limitation applies to WhatsApp sends."
       }
     },
     {

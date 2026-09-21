@@ -1,0 +1,17 @@
+{
+  "id": "payments.scheduled",
+  "menu": "Sales & Payments → Scheduled payments overview",
+  "route": "payments/scheduled",
+  "url_template": "https://{region}.zooza.app/#payments/scheduled",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "payments",
+  "captured": "2026-09-21",
+  "cards": [],
+  "notes": [],
+  "discovered": []
+}

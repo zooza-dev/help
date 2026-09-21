@@ -12,7 +12,7 @@ related_articles: ["gocardless-direct-debit-mandates", "integrations-hub", "pric
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-06-19"
+last_converted: "2026-09-21"
 ---
 
 # Collect Direct Debit payments with FastPay (UK BACS)

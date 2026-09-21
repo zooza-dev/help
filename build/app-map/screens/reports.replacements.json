@@ -1,0 +1,395 @@
+{
+  "id": "reports.replacements",
+  "menu": "Reports & Insights → Reports → Make-up sessions",
+  "route": "reports/replacements",
+  "url_template": "https://{region}.zooza.app/#reports/replacements",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "reports",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Make-up sessions",
+      "intro": [
+        "Thursday, 17. December 2026, 15:16:35",
+        "Friday, 18. September 2026, 15:16:35",
+        "Thursday, 17. December 2026, 15:12:48",
+        "Friday, 18. September 2026, 15:12:48",
+        "Friday, 18. September 2026, 15:12:53",
+        "Monday, 16. November 2026, 08:21:16"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Brian James › Information",
+      "intro": [
+        "Thursday, 17. December 2026, 15:16:35"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Change expiration date",
+          "type": "date_time",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Change",
+        "Save",
+        "Cancel"
+      ],
+      "route": "registrations/789/credits?credit_id=176"
+    },
+    {
+      "title": "Brian James › The make-up session can be used according to the following parameters:",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Availability settings",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "In this programme only, but in all classes",
+            "Per your choice",
+            "Only the class the client is enrolled in"
+          ]
+        }
+      ],
+      "buttons": [
+        "Save"
+      ],
+      "route": "registrations/789/credits?credit_id=176"
+    },
+    {
+      "title": "Brian James › Discount voucher",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Value:",
+          "type": "number",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Change",
+        "Save",
+        "Cancel"
+      ],
+      "route": "registrations/789/credits?credit_id=176"
+    },
+    {
+      "title": "Tuesday, 15. September 2026, 09:00:00 › Notes",
+      "intro": [
+        "Session summary (visible to the client)",
+        "Prep material (visible to client)"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Session summary",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Note about the session",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "OK",
+        "Cancel",
+        "Add from library"
+      ],
+      "route": "calendar/1995"
+    },
+    {
+      "title": "Tuesday, 15. September 2026, 09:00:00",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Reason for cancelling",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Not specified",
+            "Sickness",
+            "Travel",
+            "No reason provided"
+          ]
+        },
+        {
+          "label": "Personal feedback (visible to parent)",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Internal note",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [],
+      "route": "calendar/1995"
+    },
+    {
+      "title": "Michal Dodok › The make-up session can be used according to the following parameters:",
+      "intro": [
+        "The client will be able to choose a session from the following periods (billing periods).",
+        "The client will be able to choose a session from the following programmes.",
+        "The client will be able to choose a session at the following venues."
+      ],
+      "sections": [
+        "by periods (billing periods)",
+        "by programmes",
+        "by venues"
+      ],
+      "fields": [
+        {
+          "label": "Availability settings",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "In this programme only, but in all classes",
+            "Per your choice",
+            "Only the class the client is enrolled in"
+          ]
+        },
+        {
+          "label": "Choose billing periods:",
+          "type": "radio_group",
+          "help": "The client will be able to choose a session from the following billing periods he/she attended.",
+          "options": [
+            "All billing periods",
+            "Only the billing period the client enrolled for",
+            "The selected billing periods only"
+          ]
+        },
+        {
+          "label": "Choose programmes:",
+          "type": "radio_group",
+          "help": "The client will be able to choose a session from the following programmes.",
+          "options": [
+            "All programmes",
+            "Only the programme the client enrolled for",
+            "Selected programmes only"
+          ]
+        },
+        {
+          "label": "Choose a location:",
+          "type": "radio_group",
+          "help": "The client will be able to choose a session at the following venues.",
+          "options": [
+            "All venues",
+            "Only the location the client enrolled for",
+            "Selected venues only"
+          ]
+        }
+      ],
+      "buttons": [
+        "Save"
+      ],
+      "route": "registrations/1537/credits?credit_id=175"
+    },
+    {
+      "title": "Wednesday, 23. September 2026, 13:00:00",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Reason for cancelling",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Not specified",
+            "Sickness",
+            "Travel",
+            "No reason provided"
+          ]
+        },
+        {
+          "label": "Personal feedback (visible to parent)",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Internal note",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [],
+      "route": "calendar/27689"
+    },
+    {
+      "title": "Saturday, 19. September 2026, 09:30:00",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Reason for cancelling",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Not specified",
+            "Sickness",
+            "Travel",
+            "No reason provided"
+          ]
+        },
+        {
+          "label": "Personal feedback (visible to parent)",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Internal note",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [],
+      "route": "calendar/16742"
+    },
+    {
+      "title": "Tuesday, 18. August 2026, 10:00:00",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Reason for cancelling",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Not specified",
+            "Sickness",
+            "Travel",
+            "No reason provided"
+          ]
+        },
+        {
+          "label": "Personal feedback (visible to parent)",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Internal note",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [],
+      "route": "calendar/10105"
+    },
+    {
+      "title": "Tuesday, 18. August 2026, 13:30:00",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Reason for cancelling",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Not specified",
+            "Sickness",
+            "Travel",
+            "No reason provided"
+          ]
+        },
+        {
+          "label": "Personal feedback (visible to parent)",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Internal note",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [],
+      "route": "calendar/2991"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brian James",
+      "route": "registrations/789/credits?credit_id=176"
+    },
+    {
+      "via": "Tuesday, 15. September 2026, 09:00:00",
+      "route": "calendar/1995"
+    },
+    {
+      "via": "Michal Dodok",
+      "route": "registrations/1537/credits?credit_id=175"
+    },
+    {
+      "via": "Michal Dodok",
+      "route": "registrations/1537/credits?credit_id=175"
+    },
+    {
+      "via": "Wednesday, 23. September 2026, 13:00:00",
+      "route": "calendar/27689"
+    },
+    {
+      "via": "Saturday, 19. September 2026, 09:30:00",
+      "route": "calendar/16742"
+    },
+    {
+      "via": "Brian James",
+      "route": "registrations/327/credits?credit_id=169"
+    },
+    {
+      "via": "Tuesday, 18. August 2026, 10:00:00",
+      "route": "calendar/10105"
+    },
+    {
+      "via": "Brian James",
+      "route": "registrations/37/credits?credit_id=168"
+    },
+    {
+      "via": "Brian James",
+      "route": "registrations/37/credits?credit_id=168"
+    },
+    {
+      "via": "Friday, 21. August 2026, 09:00:00",
+      "route": "calendar/2591"
+    },
+    {
+      "via": "Tuesday, 18. August 2026, 13:30:00",
+      "route": "calendar/2991"
+    },
+    {
+      "via": "Tuesday, 28. July 2026, 09:00:00",
+      "route": "calendar/1988"
+    },
+    {
+      "via": "Tuesday, 28. July 2026, 10:00:00",
+      "route": "calendar/10102"
+    },
+    {
+      "via": "Friday, 31. July 2026, 09:00:00",
+      "route": "calendar/2588"
+    },
+    {
+      "via": "Thursday, 30. July 2026, 10:30:00",
+      "route": "calendar/1388"
+    },
+    {
+      "via": "Tuesday, 14. July 2026, 09:00:00",
+      "route": "calendar/1986"
+    }
+  ]
+}

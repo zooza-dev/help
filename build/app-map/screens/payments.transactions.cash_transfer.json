@@ -1,0 +1,82 @@
+{
+  "id": "payments.transactions.cash_transfer",
+  "menu": "Sales & Payments → Transactions → Cash & transfer",
+  "route": "payments/transactions/cash_transfer",
+  "url_template": "https://{region}.zooza.app/#payments/transactions/cash_transfer",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "payments",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Insight",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Show in booking details › Refund",
+      "intro": [],
+      "sections": [
+        "Refunds"
+      ],
+      "fields": [],
+      "buttons": [
+        "Refund payment"
+      ],
+      "route": "registrations/1394/payments?cash_payment=4278"
+    },
+    {
+      "title": "Show in booking details › Correct payment",
+      "intro": [],
+      "sections": [
+        "Corrections"
+      ],
+      "fields": [],
+      "buttons": [
+        "Correct payment"
+      ],
+      "route": "registrations/1394/payments?cash_payment=4278"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Show in booking details",
+      "route": "registrations/1394/payments?cash_payment=4278"
+    },
+    {
+      "via": "Show in booking details",
+      "route": "registrations/1096/payments?cash_payment=3746"
+    },
+    {
+      "via": "Show in booking details",
+      "route": "registrations/1095/payments?cash_payment=3485"
+    },
+    {
+      "via": "Show in booking details",
+      "route": "registrations/1091/payments?cash_payment=3288"
+    },
+    {
+      "via": "View order detail",
+      "route": "orders/18/payments?cash_payment=2911"
+    },
+    {
+      "via": "View order detail",
+      "route": "orders/16/payments?cash_payment=2905"
+    },
+    {
+      "via": "View order detail",
+      "route": "orders/12/payments?cash_payment=1083"
+    },
+    {
+      "via": "View order detail",
+      "route": "orders/13/payments?cash_payment=1082"
+    }
+  ]
+}

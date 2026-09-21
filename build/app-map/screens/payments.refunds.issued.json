@@ -1,0 +1,50 @@
+{
+  "id": "payments.refunds.issued",
+  "menu": "Sales & Payments → Refunds → Issued",
+  "route": "payments/refunds/issued",
+  "url_template": "https://{region}.zooza.app/#payments/refunds/issued",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "payments",
+  "captured": "2026-09-21",
+  "cards": [],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "? Wiggle Wonders (0–12 months)",
+      "route": "courses/27"
+    },
+    {
+      "via": "Friday",
+      "route": "courses/schedules/40"
+    },
+    {
+      "via": "Summer Swimming",
+      "route": "courses/161"
+    },
+    {
+      "via": "Summer Swimming",
+      "route": "courses/161"
+    },
+    {
+      "via": "?‍♂️ Bounce & Balance (1–3 years)",
+      "route": "courses/26"
+    },
+    {
+      "via": "Friday",
+      "route": "courses/schedules/45"
+    },
+    {
+      "via": "?‍♂️ Bounce & Balance (1–3 years)",
+      "route": "courses/26"
+    },
+    {
+      "via": "Trial for Kate",
+      "route": "courses/schedules/55"
+    }
+  ]
+}

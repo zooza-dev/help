@@ -1,0 +1,480 @@
+base: https://uk.zooza.app/
+shots:
+- image: calendar-bulk-actions-01.png
+  route: calendar
+  assert: Calendar
+  status: keep-old
+  note: content/guides/calendar-bulk-actions.md:38 — Screenshot — calendar bulk actions
+- image: calendar-bulk-actions-02.png
+  route: calendar
+  assert: Calendar
+  status: keep-old
+  note: content/guides/calendar-bulk-actions.md:39 — Screenshot — calendar bulk actions
+- image: customizing-widgets-20.png
+  route: calendar
+  assert: Calendar
+  status: keep-old
+  note: content/guides/customizing-widgets.md:175 — Screenshot
+- image: customizing-widgets-21.png
+  route: calendar
+  assert: Calendar
+  status: keep-old
+  note: content/guides/customizing-widgets.md:185 — Screenshot
+- image: customizing-widgets-22.png
+  route: calendar
+  assert: Calendar
+  status: keep-old
+  note: content/guides/customizing-widgets.md:187 — Screenshot
+- image: customizing-widgets-23.png
+  route: calendar
+  assert: Calendar
+  status: keep-old
+  note: content/guides/customizing-widgets.md:189 — Screenshot
+- image: instructor-attendance-management-02.png
+  route: calendar
+  assert: Calendar
+  status: approved
+  note: content/guides/instructor-attendance-management.md:35 — Screenshot — instructor attendance management
+- image: instructor-attendance-management-07.png
+  route: calendar
+  assert: Calendar
+  status: approved
+  note: content/guides/instructor-attendance-management.md:39 — Screenshot — instructor attendance management
+- image: replacement-hours-cross-13.png
+  route: calendar
+  assert: Calendar
+  status: keep-old
+  note: content/guides/replacement-hours-complete.md:298 — Replacement lessons report in Calendar
+- image: bulk-email-send-history.png
+  route: communication/sent_communication
+  assert: History
+  status: approved
+  note: content/guides/bulk-email-send-tracking.md:110 — Screenshot — send history list
+- image: payment-templates-creation-09.png
+  route: communication/templates
+  assert: Templates
+  status: keep-old
+  note: content/guides/payment-templates-creation.md:106 — Payment schedule templates list with an Edit button per template
+- image: billing-and-invoicing-03.png
+  route: payments/invoices
+  assert: Invoices
+  status: blocked
+  note: content/setup/billing-and-invoicing.md:90 — Invoices list with date filter
+  blocked: Xero ERROR rows on the invoices list
+- image: billing-and-invoicing-12.png
+  route: payments/invoices/26
+  assert: Invoice detail
+  status: keep-old
+  note: content/setup/billing-and-invoicing.md:119 — Edit invoice dialog
+- image: billing-and-invoicing-14.png
+  route: payments/invoices/26
+  assert: Invoice detail
+  status: keep-old
+  note: content/setup/billing-and-invoicing.md:255 — Invoice Line Types section in an Invoice Profile
+- image: replacement-hours-cross-03.png
+  route: payments/refunds/requests
+  assert: Refund requests
+  status: keep-old
+  note: content/guides/replacement-hours-complete.md:233 — Overview of sent cooperation requests and their status
+- image: csv-payment-import-01.png
+  route: payments
+  assert: Payments
+  status: keep-old
+  note: content/guides/csv-payment-import.md:41 — Screenshot — csv payment import
+- image: csv-payment-import-02.png
+  route: payments/transactions/import
+  assert: Import file
+  status: keep-old
+  note: content/guides/csv-payment-import.md:47 — Screenshot — csv payment import
+- image: csv-payment-import-03.png
+  route: payments/transactions/import
+  assert: Import file
+  status: keep-old
+  note: content/guides/csv-payment-import.md:63 — Screenshot — csv payment import
+- image: csv-payment-import-04.png
+  route: payments/transactions/import
+  assert: Import file
+  status: keep-old
+  note: content/guides/csv-payment-import.md:70 — Screenshot — csv payment import
+- image: blocks-creation-08.png
+  route: products
+  assert: Products
+  status: approved
+  note: content/guides/blocks-creation.md:84 — Screenshot
+- image: blocks-creation-09.png
+  route: products
+  assert: Products
+  status: keep-old
+  note: content/guides/blocks-creation.md:88 — Screenshot
+- image: blocks-creation-10.png
+  route: products
+  assert: Products
+  status: keep-old
+  note: content/guides/blocks-creation.md:90 — Screenshot
+- image: documents-01.png
+  route: products/13
+  assert: Choose the type of product item
+  status: keep-old
+  note: 'content/guides/documents.md:35 — Products & Services → Documents: the document library list with name, type, status
+    and created date'
+- image: entry-pass-client-view-01.png
+  route: products
+  assert: Products
+  status: keep-old
+  note: content/guides/entry-pass-client-view.md:34 — Screenshot — entry pass client view
+- image: entry-pass-client-view-02.png
+  route: products
+  assert: Products
+  status: keep-old
+  note: content/guides/entry-pass-client-view.md:37 — Screenshot — entry pass client view
+- image: entry-pass-client-view-04.png
+  route: products
+  assert: Products
+  status: keep-old
+  note: content/guides/entry-pass-client-view.md:52 — Screenshot — entry pass client view
+- image: entry-pass-client-view-05.png
+  route: products
+  assert: Products
+  status: keep-old
+  note: content/guides/entry-pass-client-view.md:76 — Entry pass shown on booking detail
+- image: entry-pass-client-view-06.png
+  route: products
+  assert: Products
+  status: keep-old
+  note: content/guides/entry-pass-client-view.md:78 — Order linked to the booking
+- image: entry-pass-client-view-07.png
+  route: products
+  assert: Products
+  status: keep-old
+  note: content/guides/entry-pass-client-view.md:93 — Order detail with entry pass entries
+- image: entry-pass-client-view-08.png
+  route: products
+  assert: Products
+  status: keep-old
+  note: content/guides/entry-pass-client-view.md:113 — Manual entry pass assignment on booking
+- image: additional-sessions-01.png
+  route: reports/additional_sessions
+  assert: Additional sessions report
+  status: keep-old
+  note: content/guides/additional-sessions.md:47 — The Additional sessions card in the programme settings, with price, limit
+    and payment enforcement
+- image: additional-sessions-02.png
+  route: reports/additional_sessions
+  assert: Additional sessions report
+  status: keep-old
+  note: 'content/guides/additional-sessions.md:49 — General settings for all programmes: a cancellation limit and Allow refund
+    requests'
+- image: additional-sessions-03.png
+  route: reports/additional_sessions
+  assert: Additional sessions report
+  status: keep-old
+  note: content/guides/additional-sessions.md:83 — The Additional sessions card in the parent's profile, showing the price
+    and the payment deadline
+- image: additional-sessions-04.png
+  route: reports/additional_sessions
+  assert: Additional sessions report
+  status: keep-old
+  note: content/guides/additional-sessions.md:85 — Choosing which session to attend, by class, location, instructor and time
+- image: additional-sessions-05.png
+  route: reports/additional_sessions
+  assert: Additional sessions report
+  status: keep-old
+  note: 'content/guides/additional-sessions.md:87 — The confirmation: the place is booked and the pay-by date is stated'
+- image: additional-sessions-06.png
+  route: reports/additional_sessions
+  assert: Additional sessions report
+  status: keep-old
+  note: content/guides/additional-sessions.md:89 — The booked extra session listed on the booking, with a Cancel from session
+    action
+- image: additional-sessions-07.png
+  route: reports/additional_sessions
+  assert: Additional sessions report
+  status: keep-old
+  note: 'content/guides/additional-sessions.md:91 — The cancellation choice: go at a different time instead, or cancel from
+    the session'
+- image: replacement-hours-cross-08.png
+  route: reports/cancelled
+  assert: Cancelled
+  status: keep-old
+  note: content/guides/replacement-hours-complete.md:265 — Choose Replacement Lesson button on cancelled session
+- image: active-inactive-clients-03.png
+  route: reports
+  assert: Dashboard
+  status: keep-old
+  note: content/guides/active-inactive-clients.md:86 — Dashboard statistics — active and inactive clients
+- image: instructor-attendance-management-01.png
+  route: reports
+  assert: Dashboard
+  status: keep-old
+  note: content/guides/instructor-attendance-management.md:25 — Screenshot — instructor attendance management
+- image: reference/reports-dashboard.png
+  route: reports
+  assert: Dashboard
+  status: approved
+  note: content/reference/reports-dashboard.md:24 — Reports dashboard
+- image: reference/reports-new-enrolments-detail.png
+  route: reports
+  assert: Dashboard
+  status: keep-old
+  note: content/reference/reports-dashboard.md:60 — New enrolments detail
+- image: reference/reports-session-notifications.png
+  route: reports/event_notifications
+  assert: Session notifications
+  status: approved
+  note: content/reference/reports-dashboard.md:211 — Session notifications
+- image: auto-cancel-unpaid-registrations-02.png
+  route: reports/outstanding_payments
+  assert: Outstanding Payments
+  status: approved
+  note: content/guides/auto-cancel-unpaid-registrations.md:88 — Outstanding payments report showing Awaiting payment, Active
+    debt, and Written off cohorts
+- image: active-inactive-clients-02.png
+  route: reports/registrations
+  assert: Bookings report
+  status: keep-old
+  note: content/guides/active-inactive-clients.md:29 — Client with multiple bookings
+- image: booking-tile-customization-01.png
+  route: reports/registrations
+  assert: Bookings report
+  status: keep-old
+  note: 'content/guides/booking-tile-customization.md:28 — A booking tile on the Bookings list: client, attendee, programme/class,
+    payment summary and quick li'
+- image: bulk-network-transfer-01.png
+  route: reports/registrations
+  assert: Bookings report
+  status: keep-old
+  note: content/guides/bulk-network-transfer.md:73 — Screenshot — bulk network transfer
+- image: reference/reports-quick-setup.png
+  route: reports/registrations
+  assert: Bookings report
+  status: keep-old
+  note: content/reference/reports-dashboard.md:77 — Quick setup
+- image: reference/reports-trial-sessions.png
+  route: reports/trials
+  assert: Trial Sessions Report
+  status: keep-old
+  note: content/reference/reports-dashboard.md:172 — Trial sessions report
+- image: fastpay-direct-debit-01.png
+  route: integrations
+  assert: Integrations
+  status: approved
+  note: content/guides/fastpay-direct-debit.md:48 — Integrations page Payments section listing FastPay alongside Stripe Connect
+    and GoCardless
+- image: fastpay-direct-debit-02.png
+  route: integrations
+  assert: Integrations
+  status: keep-old
+  note: content/guides/fastpay-direct-debit.md:54 — FastPay connection form with fields for the bureau token and an optional
+    Service User Number and a C
+- image: fastpay-direct-debit-03.png
+  route: integrations
+  assert: Integrations
+  status: keep-old
+  note: content/guides/fastpay-direct-debit.md:70 — Course Payment Methods settings with SEPA Direct debit enabled, Provider
+    set to FastPay, and the Man
+- image: fastpay-direct-debit-04.png
+  route: integrations
+  assert: Integrations
+  status: keep-old
+  note: content/guides/fastpay-direct-debit.md:114 — FastPay batch preview showing the selected period, charge date and debt-inclusion
+    options before sub
+- image: fastpay-direct-debit-05.png
+  route: integrations
+  assert: Integrations
+  status: keep-old
+  note: content/guides/fastpay-direct-debit.md:110 — Direct Debit Export screen with the FastPay tab and the collection-period
+    and debt options
+- image: google-forms-06.png
+  route: integrations
+  assert: Integrations
+  status: keep-old
+  note: content/guides/google-forms.md:104 — The Form library under Integrations, listing every attached form and its stored
+    answers
+- image: slack-integration-01.png
+  route: integrations
+  assert: Integrations
+  status: keep-old
+  note: content/setup/slack-integration.md:44 — Screenshot — slack integration
+- image: slack-integration-02.png
+  route: integrations
+  assert: Integrations
+  status: keep-old
+  note: content/setup/slack-integration.md:45 — Screenshot — slack integration
+- image: slack-integration-03.png
+  route: integrations
+  assert: Integrations
+  status: keep-old
+  note: content/setup/slack-integration.md:59 — Screenshot — slack integration
+- image: slack-integration-04.png
+  route: integrations
+  assert: Integrations
+  status: keep-old
+  note: content/setup/slack-integration.md:91 — Screenshot — slack integration
+- image: slack-integration-05.png
+  route: integrations
+  assert: Integrations
+  status: keep-old
+  note: content/setup/slack-integration.md:115 — Screenshot — slack integration
+- image: zooza-in-slack-01.png
+  route: integrations
+  assert: Integrations
+  status: keep-old
+  note: content/guides/zooza-in-slack.md:73 — Screenshot — zooza in slack
+- image: blocks-creation-12.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/guides/blocks-creation.md:108 — Screenshot
+- image: booking-form-attendee-selection-01.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/guides/booking-form-attendee-selection.md:32 — Screenshot — booking form attendee selection
+- image: booking-form-attendee-selection-02.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/guides/booking-form-attendee-selection.md:53 — Screenshot — booking form attendee selection
+- image: customizing-widgets-01.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/guides/customizing-widgets.md:103 — Screenshot — customizing widgets
+- image: customizing-widgets-02.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/guides/customizing-widgets.md:38 — Screenshot
+- image: customizing-widgets-04.png
+  route: courses/150/settings
+  assert: Price and payment
+  status: approved
+  note: content/guides/customizing-widgets.md:57 — Screenshot
+- image: customizing-widgets-05.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/guides/customizing-widgets.md:60 — Screenshot
+- image: customizing-widgets-06.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/guides/customizing-widgets.md:65 — Programme Settings tab with the Price and payment, Online booking, Make-up
+    sessions, Programme setti
+- image: customizing-widgets-07.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: 'content/guides/customizing-widgets.md:68 — Programme settings tile: Basic information and Additional settings with
+    programme type, target audie'
+- image: customizing-widgets-08.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/guides/customizing-widgets.md:70 — Screenshot
+- image: customizing-widgets-09.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/guides/customizing-widgets.md:80 — Screenshot
+- image: customizing-widgets-10.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/guides/customizing-widgets.md:85 — Screenshot
+- image: customizing-widgets-11.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/guides/customizing-widgets.md:87 — Screenshot
+- image: customizing-widgets-13.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/guides/customizing-widgets.md:101 — Screenshot
+- image: customizing-widgets-15.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/guides/customizing-widgets.md:113 — Screenshot
+- image: customizing-widgets-16.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/guides/customizing-widgets.md:115 — Screenshot
+- image: customizing-widgets-19.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/guides/customizing-widgets.md:135 — Screenshot
+- image: entry-pass-client-view-03.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/guides/entry-pass-client-view.md:46 — Screenshot — entry pass client view
+- image: publish-widgets-01.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/reference/publish-widgets.md:211 — The Priority stepper in Online booking settings, set to 0, with the hint
+    that a higher priority move
+- image: reference/publish-widgets.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/reference/publish-widgets.md:24 — Publish widgets
+- image: reference/widgets-detail-wix.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/reference/publish-widgets.md:61 — Widget detail — Wix
+- image: widget-merge-rooms-01.png
+  route: widgets
+  assert: Publish
+  status: keep-old
+  note: content/guides/widget-merge-rooms.md:34 — Screenshot — widget merge rooms
+- image: instructor-attendance-management-03.png
+  route: trainers/60
+  assert: Instructor detail
+  status: keep-old
+  note: content/guides/instructor-attendance-management.md:51 — Screenshot — instructor attendance management
+- image: instructor-attendance-management-04.png
+  route: trainers/60
+  assert: Instructor detail
+  status: keep-old
+  note: content/guides/instructor-attendance-management.md:63 — Screenshot — instructor attendance management
+- image: instructor-attendance-management-05.png
+  route: trainers/60
+  assert: Instructor detail
+  status: keep-old
+  note: content/guides/instructor-attendance-management.md:88 — Screenshot — instructor attendance management
+- image: instructor-attendance-management-06.png
+  route: trainers/60
+  assert: Instructor detail
+  status: keep-old
+  note: content/guides/instructor-attendance-management.md:98 — Screenshot — instructor attendance management
+- image: allowing-multiple-registration-04.png
+  route: trainers/60/trainer_settings
+  assert: Instructor settings
+  status: keep-old
+  note: content/guides/summer-camps-creation.md:74 — Screenshot
+- image: auto-cancel-unpaid-registrations-01.png
+  route: trainers/60/trainer_settings
+  assert: Instructor settings
+  status: keep-old
+  note: content/guides/auto-cancel-unpaid-registrations.md:65 — Payment Reminder Settings with auto-cancel fields highlighted
+- image: billing-and-invoicing-01.png
+  route: trainers/60/trainer_settings
+  assert: Instructor settings
+  status: keep-old
+  note: content/setup/billing-and-invoicing.md:29 — Settings page with Billing tile highlighted
+- image: replacement-hours-cross-01.png
+  route: trainers/60/trainer_settings
+  assert: Instructor settings
+  status: keep-old
+  note: content/guides/replacement-hours-complete.md:221 — Settings — Replacement lessons tile
+- image: replacement-hours-cross-06.png
+  route: trainers/60/trainer_settings
+  assert: Instructor settings
+  status: keep-old
+  note: content/guides/replacement-hours-complete.md:255 — Replacement lessons restriction settings

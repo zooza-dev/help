@@ -1,0 +1,30 @@
+{
+  "id": "payments.inbound.analytics",
+  "menu": "Sales & Payments → Payment reconciliation → AI analytics",
+  "route": "payments/inbound/analytics",
+  "url_template": "https://{region}.zooza.app/#payments/inbound/analytics",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "payments",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "AI Analytics",
+      "intro": [],
+      "sections": [
+        "Decision distribution",
+        "Auto-pair success",
+        "Admin overrides",
+        "Processing time"
+      ],
+      "fields": [],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-03-03"
+last_converted: "2026-09-21"
 ---
 
 # Attendance management for instructors
@@ -32,11 +32,11 @@ At the bottom of the section, the **Dates with incomplete attendance record** bu
 
 Go to **Calendar** in the left menu to see your sessions in a weekly grid.
 
-![Screenshot — instructor attendance management](../../assets/images/instructor-attendance-management-02.png)
+![The Calendar week view with sessions coloured by programme](../../assets/images/instructor-attendance-management-02.png)
 
 Each session tile shows the class name, instructor, location, and a count of enrolled and attending clients.
 
-![Screenshot — instructor attendance management](../../assets/images/instructor-attendance-management-07.png) Use the **Previous week** and **Next week** buttons to navigate, or switch to **Daily Overview** for a single-day layout.
+![Calendar week view filtered by programme, with the Bulk edit button](../../assets/images/instructor-attendance-management-07.png) Use the **Previous week** and **Next week** buttons to navigate, or switch to **Daily Overview** for a single-day layout.
 
 You can filter sessions by **Name**, **Location**, or **Programme** using the filter bar at the top.
 

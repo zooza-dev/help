@@ -1,0 +1,131 @@
+{
+  "id": "reports.dashboard",
+  "menu": "Reports & Insights → Dashboard",
+  "route": "reports",
+  "url_template": "https://{region}.zooza.app/#reports",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "reports",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Welcome to Nick's Dashboard PRO",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Payments",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing period",
+          "type": "combobox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "×"
+      ]
+    },
+    {
+      "title": "Statistics",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Bookings",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing period",
+          "type": "combobox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "×"
+      ]
+    },
+    {
+      "title": "Trial Sessions Report",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing period",
+          "type": "combobox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "×"
+      ]
+    },
+    {
+      "title": "Session notifications",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "View #2 › Bookings",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Programme",
+          "type": "select",
+          "help": "",
+          "options": [
+            "🤹‍♂️ Bounce & Balance (1–3 years)",
+            "💃 Wiggle Wonders (0–12 months)",
+            "👣 Mighty Movers (3–5 years)",
+            "Movers",
+            "Trial Interest",
+            "Birthday Party",
+            "Baby Class",
+            "Kids Club",
+            "Individual Lessons",
+            "Dance like a Pro",
+            "Dancing on the Water",
+            "Pop-Up Motion Adventures",
+            "Summer Swimming",
+            "English & Math"
+          ]
+        }
+      ],
+      "buttons": [],
+      "route": "reports/registrations"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "View",
+      "route": "reports/nicks_dashboard"
+    },
+    {
+      "via": "View",
+      "route": "reports/registrations"
+    },
+    {
+      "via": "View",
+      "route": "reports/trials"
+    },
+    {
+      "via": "View",
+      "route": "reports/event_notifications"
+    }
+  ]
+}

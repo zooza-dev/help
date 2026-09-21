@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0078_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: "2026-09-20"
+last_converted: "2026-09-21"
 related_articles: ["publish-widgets", "deploying-zooza-on-website", "booking-form-settings", "contact-form-on-your-website", "contact-form-campaign-tracking"]
 ---
 
@@ -54,7 +54,7 @@ In the form you will see the basic fields that your client must fill in when boo
 5. Note
 
 6. You can modify their display in the booking form by overwriting the text. At the programme level, click *Online Booking – Edit*.
- ![Screenshot](../../assets/images/customizing-widgets-04.png)
+ ![Programme Settings tab with the Price and payment and Online booking tiles](../../assets/images/customizing-widgets-04.png)
  
 7. Scroll down to the *Customize Booking Form* section and enter new text in the field to change its display in the booking form. *Save *the change.
  ![Screenshot](../../assets/images/customizing-widgets-05.png)

@@ -1,0 +1,49 @@
+{
+  "id": "payments.invoices.detail",
+  "menu": "Sales & Payments → Invoices → invoice",
+  "route": "payments/invoices/26",
+  "url_template": "https://{region}.zooza.app/#payments/invoices/26",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "payments",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Not issued",
+      "intro": [
+        "4. September 2026 – 6. September 2026"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Preview",
+      "intro": [
+        "This invoice has no stored PDF yet."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Redownload PDF"
+      ]
+    }
+  ],
+  "notes": [
+    "This invoice has no stored PDF yet."
+  ],
+  "discovered": [
+    {
+      "via": "Open booking",
+      "route": "registrations/1394/payments"
+    },
+    {
+      "via": "Redownload PDF",
+      "error": "TimeoutError"
+    }
+  ]
+}

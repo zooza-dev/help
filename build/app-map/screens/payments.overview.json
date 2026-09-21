@@ -1,0 +1,77 @@
+{
+  "id": "payments.overview",
+  "menu": "Sales & Payments → Payments",
+  "route": "payments",
+  "url_template": "https://{region}.zooza.app/#payments",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "payments",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Latest payment periods",
+      "intro": [
+        "Choose a period to check transactions."
+      ],
+      "sections": [
+        "Overview of payments:"
+      ],
+      "fields": [
+        {
+          "label": "Billing period",
+          "type": "combobox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "×"
+      ]
+    },
+    {
+      "title": "Reports",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Unpaid bookings: 174",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Unpaired payments: 0",
+      "intro": [
+        "Payment reconciliation is not configured. Incoming payments are not being automatically matched.",
+        "All your payments are paired"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    }
+  ],
+  "notes": [
+    "You don’t have automatic payment matching set up, or no payment has been matched yet. Read the guide to see how to set it up. More",
+    "Payment reconciliation is not configured. Incoming payments are not being automatically matched."
+  ],
+  "discovered": [
+    {
+      "via": "Direct Debit",
+      "route": "payments/inbound/direct_debit?page=0&page_size=50"
+    },
+    {
+      "via": "Unpaid",
+      "route": "registrations?status=registered&billing_status=not_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "Partially paid",
+      "route": "registrations?status=registered&billing_status=partialy_paid&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    }
+  ]
+}

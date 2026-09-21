@@ -1,0 +1,25 @@
+{
+  "id": "payments.transactions.direct_debit",
+  "menu": "Sales & Payments → Transactions → Direct debit",
+  "route": "payments/transactions/direct_debit",
+  "url_template": "https://{region}.zooza.app/#payments/transactions/direct_debit",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "payments",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Insight",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

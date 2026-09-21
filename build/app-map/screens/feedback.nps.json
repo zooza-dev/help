@@ -1,0 +1,22 @@
+{
+  "id": "feedback.nps",
+  "menu": "Feedback → NPS",
+  "route": "feedback/nps",
+  "url_template": "https://{region}.zooza.app/#feedback/nps",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "calendar",
+  "captured": "2026-09-21",
+  "cards": [],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Programmes",
+      "route": "courses"
+    }
+  ]
+}

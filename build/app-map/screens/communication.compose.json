@@ -1,0 +1,112 @@
+{
+  "id": "communication.compose",
+  "menu": "Communication → Send message",
+  "route": "communication/compose",
+  "url_template": "https://{region}.zooza.app/#communication/compose",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "communication",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Channel",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Target class",
+      "intro": [
+        "14 Return excluded recipients"
+      ],
+      "sections": [
+        "Settings"
+      ],
+      "fields": [
+        {
+          "label": "Send message",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "To all clients with an active booking — Sends a message to all clients in the selected billing class with the status Enrolled",
+            "To all clients — Sends a message to all clients regardless of bookings or billing periods",
+            "To a specific class — Sends a message to all clients in the selected class with the status Enrolled",
+            "To a single recipient — Sends email only to the selected email address",
+            "To selected bookings — Sends a message to selected bookings."
+          ]
+        },
+        {
+          "label": "Choose who you want to send the message to:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Clients — Message will be sent to each client just once. That means that if the client does have multiple bookings you won't be able to use merge fields specific for booking (such as COURSE_PRICE, or VARIABLE_SYMBOL). Best to use this for general announcements.",
+            "Individual bookings — Message will be sent to each booking that meets the criteria. This means that if a client has multiple bookings she will get an email per each booking. Best to use for messages regarding specific bookings."
+          ]
+        },
+        {
+          "label": "Promotional message",
+          "type": "checkbox",
+          "help": "Check if you do not want to send this message to those who are unsubscribed from promotional messages."
+        },
+        {
+          "label": "Send email also to users with additional access to booking",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Billing period",
+          "type": "combobox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Show recipients",
+        "Continue",
+        "Back"
+      ]
+    },
+    {
+      "title": "Message",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Continue",
+        "Back"
+      ]
+    },
+    {
+      "title": "Summary",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Continue",
+        "Back"
+      ]
+    },
+    {
+      "title": "Finish",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Continue",
+        "Back"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Not connected to Zooza AI yet? Connect →",
+      "route": "mcp"
+    }
+  ]
+}

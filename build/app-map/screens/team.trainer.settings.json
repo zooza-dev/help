@@ -1,0 +1,96 @@
+{
+  "id": "team.trainer.settings",
+  "menu": "Team & Settings → Instructors → instructor → Settings",
+  "route": "trainers/60/trainer_settings",
+  "url_template": "https://{region}.zooza.app/#trainers/60/trainer_settings",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "team",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Profile",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Email address",
+          "type": "text",
+          "help": "Required field"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        },
+        {
+          "label": "Role",
+          "type": "select",
+          "help": "The account owner can delete and create new categories. The instructor can manage attendance records and individual bookings.",
+          "options": [
+            "Owner",
+            "Main instructor",
+            "Instructor",
+            "External instructor",
+            "Receptionist",
+            "Assistant",
+            "Inactive"
+          ]
+        },
+        {
+          "label": "Internal note",
+          "type": "text",
+          "help": "Visible only to owners"
+        }
+      ],
+      "buttons": [
+        "Save"
+      ]
+    },
+    {
+      "title": "Rates",
+      "intro": [
+        "60 ( for 60 minutes) Not specified",
+        "60 ( for 60 minutes) Rate per 60 minutes .__zooza_integer_input:disabled { background-color: #eee; } + - Save Cancel"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Rate per 60 minutes",
+          "type": "number",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save",
+        "Cancel"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

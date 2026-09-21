@@ -1,0 +1,25 @@
+{
+  "id": "reports.event_notifications",
+  "menu": "Reports & Insights → Reports → Session notifications (not in the menu)",
+  "route": "reports/event_notifications",
+  "url_template": "https://{region}.zooza.app/#reports/event_notifications",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "reports",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Session notifications",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

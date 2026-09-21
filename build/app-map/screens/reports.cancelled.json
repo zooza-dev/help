@@ -1,0 +1,193 @@
+{
+  "id": "reports.cancelled",
+  "menu": "Reports & Insights → Reports → Cancelled",
+  "route": "reports/cancelled",
+  "url_template": "https://{region}.zooza.app/#reports/cancelled",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "reports",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Monday, 8. December 2025, 18:00 › Notes",
+      "intro": [
+        "Session summary (visible to the client)",
+        "Prep material (visible to client)"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Session summary",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Note about the session",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "OK",
+        "Cancel",
+        "Add from library"
+      ],
+      "route": "calendar/5002"
+    },
+    {
+      "title": "Monday, 8. December 2025, 18:00",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Reason for cancelling",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Not specified",
+            "Sickness",
+            "Travel",
+            "No reason provided"
+          ]
+        },
+        {
+          "label": "Personal feedback (visible to parent)",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Internal note",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [],
+      "route": "calendar/5002"
+    },
+    {
+      "title": "Monday, 19. January 2026, 15:30",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Reason for cancelling",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Not specified",
+            "Sickness",
+            "Travel",
+            "No reason provided"
+          ]
+        },
+        {
+          "label": "Personal feedback (visible to parent)",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Internal note",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [],
+      "route": "calendar/4246"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Monday, 8. December 2025, 18:00",
+      "route": "calendar/5002"
+    },
+    {
+      "via": "👣 Mighty Movers (3–5 years)",
+      "route": "courses/63"
+    },
+    {
+      "via": "Monday 18:00",
+      "route": "courses/schedules/94"
+    },
+    {
+      "via": "Monday, 8. December 2025, 18:00",
+      "route": "calendar/5002"
+    },
+    {
+      "via": "👣 Mighty Movers (3–5 years)",
+      "route": "courses/63"
+    },
+    {
+      "via": "Monday 18:00",
+      "route": "courses/schedules/94"
+    },
+    {
+      "via": "Monday, 8. December 2025, 18:00",
+      "route": "calendar/5002"
+    },
+    {
+      "via": "👣 Mighty Movers (3–5 years)",
+      "route": "courses/63"
+    },
+    {
+      "via": "Monday 18:00",
+      "route": "courses/schedules/94"
+    },
+    {
+      "via": "Monday, 8. December 2025, 18:00",
+      "route": "calendar/5002"
+    },
+    {
+      "via": "👣 Mighty Movers (3–5 years)",
+      "route": "courses/63"
+    },
+    {
+      "via": "Monday 18:00",
+      "route": "courses/schedules/94"
+    },
+    {
+      "via": "Monday, 19. January 2026, 15:30",
+      "route": "calendar/4246"
+    },
+    {
+      "via": "Movers",
+      "route": "courses/69"
+    },
+    {
+      "via": "Trial Capacity 2",
+      "route": "courses/schedules/79"
+    },
+    {
+      "via": "Monday, 19. January 2026, 15:30",
+      "route": "calendar/4246"
+    },
+    {
+      "via": "Movers",
+      "route": "courses/69"
+    },
+    {
+      "via": "Trial Capacity 2",
+      "route": "courses/schedules/79"
+    },
+    {
+      "via": "Monday, 26. January 2026, 10:30",
+      "route": "calendar/4047"
+    },
+    {
+      "via": "Movers",
+      "route": "courses/69"
+    },
+    {
+      "via": "Monday, 26. January 2026, 10:30",
+      "route": "calendar/4047"
+    },
+    {
+      "via": "Movers",
+      "route": "courses/69"
+    }
+  ]
+}

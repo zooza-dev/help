@@ -1,0 +1,36 @@
+{
+  "id": "payments.inbound.rules",
+  "menu": "Sales & Payments → Payment reconciliation → AI rules & filters",
+  "route": "payments/inbound/rules",
+  "url_template": "https://{region}.zooza.app/#payments/inbound/rules",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "payments",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "AI Rules",
+      "intro": [
+        "No rules defined. Add a rule to guide AI payment evaluation."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Auto-ignore Filters",
+      "intro": [
+        "No auto-ignore filters. Use \"Ignore future payments like this\" on a payment to create one."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

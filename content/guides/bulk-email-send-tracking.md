@@ -107,7 +107,7 @@ Emails already dispatched before you cancelled were delivered and cannot be reca
 
 You can review past sends and their results from the Communication section.
 
-![Screenshot — send history list](../../assets/images/bulk-email-send-history.png)
+![Communication → History: sent messages with type, sent date, status, client and template](../../assets/images/bulk-email-send-history.png)
 
 Each entry shows the job status, recipient count, sent count, failed count, and the date the send was created.
 

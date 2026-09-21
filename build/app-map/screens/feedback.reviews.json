@@ -1,0 +1,41 @@
+{
+  "id": "feedback.reviews",
+  "menu": "Feedback → Reviews",
+  "route": "feedback/reviews",
+  "url_template": "https://{region}.zooza.app/#feedback/reviews",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "calendar",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Reviews",
+      "intro": [
+        "Monday, 4. March 2024, 16:39:37",
+        "Thursday, 29. February 2024, 16:40:48",
+        "ďakujem veľmi pekne za zaškolenie od Janky, bola proste úžasná, vždy ochotná pomôcť vysvetliť, ukázať. Bez nej by som bola stratená. Ešte raz veľké ďakujem. Lucia (Translated by Google) thank you very much for the training from Janka, she was simply amazing, always willing to help explain, show. I would be lost without her. Thank you very much again. Lucia",
+        "Wednesday, 28. February 2024, 20:57:24"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Link customer"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Link customer",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Link customer",
+      "error": "TimeoutError"
+    }
+  ]
+}

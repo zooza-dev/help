@@ -417,6 +417,20 @@ FIELDS_JS = r"""
 """
 
 
+EMAIL_RX = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
+PHONE_RX = re.compile(r"(?<![\d/])\+?\d[\d ]{8,}\d(?![\d/])")
+IBAN_RX = re.compile(r"\b[A-Z]{2}\d{2}[A-Z0-9 ]{10,30}\b")
+
+
+def scrub(text):
+    """The reference is about fields, not people. Whatever the demo account put in a field stays out."""
+    text = EMAIL_RX.sub("client@example.com", text)
+    text = re.sub(r"\b[A-Za-z0-9._%+-]*@[A-Za-z0-9.-]+", "client@example.com", text)   # anything the strict form missed
+    text = IBAN_RX.sub("GB00 BANK 0000 0000 0000 00", text)
+    return PHONE_RX.sub("+44 7700 900000", text)
+
+
+
 AREA_PRODUCT = {"settings": "Settings", "programmes": "Programmes", "classes": "Classes", "sessions": "Classes",
                 "files": "Communication", "bookings": "Bookings", "clients": "Clients", "orders": "Orders", "contacts": "Clients",
                 "payments": "Payments", "products": "Orders", "communication": "Communication", "calendar": "Calendar",
@@ -430,7 +444,8 @@ EMAIL_IN_PARENS = re.compile(r"\s*\([^()]*@[^()]*\)")
 
 def sanitise_title(title):
     """Row labels carry the row's identity — 'Amelia Hughes (amelia@…)'. Keep the role of the click, drop the person."""
-    return EMAIL_IN_PARENS.sub("", title).strip()
+    title = EMAIL_IN_PARENS.sub("", title).strip()
+    return EMAIL_RX.sub("a client", title)
 
 
 def record_for(screen, card, i):
@@ -481,18 +496,6 @@ def write_jsonl():
                 n += 1
     print(f"{n} card records -> {path}")
     return 0
-
-
-EMAIL_RX = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
-PHONE_RX = re.compile(r"(?<![\d/])\+?\d[\d ]{8,}\d(?![\d/])")
-IBAN_RX = re.compile(r"\b[A-Z]{2}\d{2}[A-Z0-9 ]{10,30}\b")
-
-
-def scrub(text):
-    """The reference is about fields, not people. Whatever the demo account put in a field stays out."""
-    text = EMAIL_RX.sub("client@example.com", text)
-    text = IBAN_RX.sub("GB00 BANK 0000 0000 0000 00", text)
-    return PHONE_RX.sub("+44 7700 900000", text)
 
 
 def card_text(screen, card):

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-08-30"
+last_converted: "2026-09-21"
 related_articles: ["sessions-list", "payments-dashboard", "recording-an-administrative-refund"]
 ---
 

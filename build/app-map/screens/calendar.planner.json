@@ -1,0 +1,85 @@
+{
+  "id": "calendar.planner",
+  "menu": "Activities → Calendar → Planning calendar",
+  "route": "calendar/planner",
+  "url_template": "https://{region}.zooza.app/#calendar/planner",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "calendar",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Calendar planner",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Instructor",
+          "type": "combobox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Add a time slot"
+      ]
+    },
+    {
+      "title": "Add a time slot › Calendar planner",
+      "intro": [
+        "01. 09. 2026 - 30. 09. 2026 from 17:29 to 18:29"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Instructor",
+          "type": "combobox",
+          "help": ""
+        },
+        {
+          "label": "Day",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Mondays",
+            "Tuesdays",
+            "Wednesdays",
+            "Thursdays",
+            "Fridays",
+            "Saturdays",
+            "Sundays"
+          ]
+        },
+        {
+          "label": "First session",
+          "type": "date",
+          "help": ""
+        },
+        {
+          "label": "Last session",
+          "type": "date",
+          "help": ""
+        },
+        {
+          "label": "from",
+          "type": "time",
+          "help": ""
+        },
+        {
+          "label": "to",
+          "type": "time",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Edit",
+        "Add a time slot"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "payments.transactions.import",
+  "menu": "Sales & Payments → Transactions → Import payments",
+  "route": "payments/transactions/import",
+  "url_template": "https://{region}.zooza.app/#payments/transactions/import",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "payments",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Import file",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Bank",
+          "type": "radio_group",
+          "help": "",
+          "options": []
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

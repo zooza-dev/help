@@ -41,7 +41,7 @@
       "name": "Does the refund reduce the client's outstanding debt automatically?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. The refund reduces recorded income on the booking (it appears as a negative transaction), but it does not automatically change the total charge or outstanding balance. After recording the refund, review the booking and adjust the debt manually if needed:\n\n- If the client now owes less, edit the total charge in Payments → Edit.\n- If no further balance adjustment is needed (e.g. the client simply overpaid), no action is required."
+        "text": "No. The refund reduces recorded income on the booking (it appears as a negative transaction), but it does not automatically change the total charge or outstanding balance. After recording the refund, review the booking and adjust the debt manually if needed:\n\n- If the client now owes less, edit the total charge on the booking's Payments tab.\n- If no further balance adjustment is needed (e.g. the client simply overpaid), no action is required."
       }
     },
     {

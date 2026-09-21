@@ -1,0 +1,826 @@
+{
+  "id": "communication.templates",
+  "menu": "Communication → Templates",
+  "route": "communication/templates",
+  "url_template": "https://{region}.zooza.app/#communication/templates",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "communication",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Email signatures",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Preset signature",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Choose",
+            "Fun and Run",
+            "Playfultime Signature"
+          ]
+        }
+      ],
+      "buttons": [
+        "Save"
+      ]
+    },
+    {
+      "title": "Additional session - payment › Additional session - payment Sent to the client after they book an additional session. Carries the payment instructions, or a confirmation when the session is free.",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Send this template"
+      ]
+    },
+    {
+      "title": "Additional session - payment › Dynamic tags",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Only tags valid here",
+          "type": "toggle",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "All",
+        "Recipient",
+        "Attendee & extra fields",
+        "Programme & class",
+        "Session",
+        "Booking",
+        "Financial",
+        "Company",
+        "Web / self-service",
+        "Dates & system"
+      ]
+    },
+    {
+      "title": "Booking Confirmation › Booking Confirmation Sent when booking is confirmed",
+      "intro": [
+        "1 tag won't resolve in a Booking Confirmation — there's no data for them at send time, so they'll appear blank: *|EVENT_TIME|* *|EVENT_TIME|* won't be blank here — it falls back to the class time, which may be a different session."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template — Customised",
+            "New Confirmation Template"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Make a copy",
+        "Send this template",
+        "Reset to default"
+      ]
+    },
+    {
+      "title": "Booking Confirmation #2 › Booking Confirmation Sent when booking is confirmed",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Your Birthday Party is booked – please confirm & pay"
+          ]
+        },
+        {
+          "label": "Template name",
+          "type": "text",
+          "help": "Choose a unique template name. It will be used to select the template on other screens."
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Make a copy",
+        "Send this template",
+        "Delete"
+      ]
+    },
+    {
+      "title": "Booking Confirmation #3 › Booking Confirmation Sent when enrolling to a session",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Make a copy",
+        "Send this template"
+      ]
+    },
+    {
+      "title": "Contact form - automatic reply › Contact form - automatic reply Sent automatically to the person who submits your contact form, confirming you received their enquiry. Can use their first name and the form name.",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Make a copy",
+        "Send this template"
+      ]
+    },
+    {
+      "title": "Discount Code › Discount Code Sent with discount code after purchase",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template — Customised"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Send this template",
+        "Reset to default"
+      ]
+    },
+    {
+      "title": "Google Forms request › Google Forms request Sent to the client when a form attached to the programme, class or session is set to send automatically after a booking is created. Includes a link to each form.",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Send this template"
+      ]
+    },
+    {
+      "title": "Guest Booking › Guest Booking Sent after enrolling as guest",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Send this template"
+      ]
+    },
+    {
+      "title": "Late Booking › Late Booking Sent when enrolling in an already-started class",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Send this template"
+      ]
+    },
+    {
+      "title": "Lead Collection › Lead Collection Sent after clicking confirm link for lead",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Make a copy",
+        "Send this template"
+      ]
+    },
+    {
+      "title": "Make-up session confirmed › Make-up session confirmed Confirms to the client that they are booked into a make-up session — sent whenever a make-up session is assigned, by the client or an administrator.",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Send this template"
+      ]
+    },
+    {
+      "title": "Missed Payment › Missed Payment Sent after unpaid scheduled payment",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Send this template"
+      ]
+    },
+    {
+      "title": "Missed Payment (Offline) › Missed Payment (Offline) Unpaid scheduled payment (offline)",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": []
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "New Payment › New Payment Sent when a new instalment is issued",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Send this template"
+      ]
+    },
+    {
+      "title": "New Payment (Offline) › New Payment (Offline) New instalment issued (offline payment)",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": []
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Order Confirmation › Order Confirmation Sent after order is placed",
+      "intro": [
+        "1 tag won't resolve in a Order Confirmation — there's no data for them at send time, so they'll appear blank: *|FIRST_NAME|*"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Your Gift Voucher is ready!"
+          ]
+        },
+        {
+          "label": "Template name",
+          "type": "text",
+          "help": "Choose a unique template name. It will be used to select the template on other screens."
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Make a copy",
+        "Send this template",
+        "Delete"
+      ]
+    },
+    {
+      "title": "Referral Reward › Referral Reward Sent when referral earns a reward",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Send this template"
+      ]
+    },
+    {
+      "title": "Request to Confirm › Request to Confirm Asks client to confirm email access after booking",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Send this template"
+      ]
+    },
+    {
+      "title": "Scheduled Cancellation › Scheduled Cancellation Notification about upcoming scheduled cancellation",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Send this template"
+      ]
+    },
+    {
+      "title": "Session Booking › Session Booking Sent when signing up for a specific session",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Send this template"
+      ]
+    },
+    {
+      "title": "Session Changed › Session Changed Lists all changes for a session",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Send this template"
+      ]
+    },
+    {
+      "title": "Session Notification › Session Notification Sent before session to enrolled clients",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template — Customised"
+          ]
+        },
+        {
+          "label": "Time to send a reminder:",
+          "type": "number",
+          "help": "Enter the hour (0-24) when you want to send an automatic notification about an upcoming session."
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Make a copy",
+        "Send this template",
+        "Reset to default"
+      ]
+    },
+    {
+      "title": "Session Reminder › Session Reminder Daily list of next day's sessions",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Send this template"
+      ]
+    },
+    {
+      "title": "Trial Booking › Trial Booking Sent when client enrols for trial class",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template — Customised"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Send this template",
+        "Reset to default"
+      ]
+    },
+    {
+      "title": "Trial Ended › Trial Ended Sent when trial automation is active",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template — Customised"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Send this template",
+        "Reset to default"
+      ]
+    },
+    {
+      "title": "Trial Follow-up › Trial Follow-up Reminder to enrol after trial, sent up to 2x",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Version",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Template — Customised"
+          ]
+        },
+        {
+          "label": "Add email subject",
+          "type": "text",
+          "help": "You can also use dynamic tags within the text."
+        },
+        {
+          "label": "Prepare email text",
+          "type": "wysiwyg",
+          "help": "You can also use dynamic tags within the text."
+        }
+      ],
+      "buttons": [
+        "Save template",
+        "Send this template",
+        "Reset to default"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Additional session - cancellation",
+      "error": "TimeoutError"
+    }
+  ]
+}

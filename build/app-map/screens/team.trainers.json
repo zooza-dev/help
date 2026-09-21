@@ -1,0 +1,145 @@
+{
+  "id": "team.trainers",
+  "menu": "Team & Settings → Instructors",
+  "route": "trainers",
+  "url_template": "https://{region}.zooza.app/#trainers",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "team",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Add Instructor › Add new user",
+      "intro": [
+        "An invitation email will be sent to this address."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Email address",
+          "type": "text",
+          "help": "Required field"
+        },
+        {
+          "label": "Role",
+          "type": "select",
+          "help": "The account owner can delete and create new categories. The instructor can manage attendance records and individual bookings.",
+          "options": [
+            "Owner",
+            "Main Instructor",
+            "Instructor",
+            "External instructor",
+            "Receptionist",
+            "Assistant",
+            "Inactive instructor"
+          ]
+        }
+      ],
+      "buttons": [
+        "Add new user"
+      ],
+      "route": "settings/team/add"
+    },
+    {
+      "title": "Report › Instructors' report for download",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Period",
+          "type": "date_range",
+          "help": ""
+        },
+        {
+          "label": "Show also cancelled sessions",
+          "type": "checkbox",
+          "help": "Cancelled sessions will also be included in instructors' fees."
+        },
+        {
+          "label": "Select instructors",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "All instructors",
+            "Selected instructors (as currently filtered)"
+          ]
+        },
+        {
+          "label": "Campbell Noah",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Evans Chloe",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Hughes Amelia",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "James Brain",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "James Brian",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Morgan Lucy",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Reed Jasmine",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Sharma Priya",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Taylor Ben",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Wright Daniel",
+          "type": "checkbox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Today",
+        "Back"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Add Instructor",
+      "route": "settings/team/add"
+    }
+  ]
+}

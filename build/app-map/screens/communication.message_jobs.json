@@ -1,0 +1,34 @@
+{
+  "id": "communication.message_jobs",
+  "menu": "Communication → Message Jobs",
+  "route": "communication/message_jobs",
+  "url_template": "https://{region}.zooza.app/#communication/message_jobs",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "communication",
+  "captured": "2026-09-21",
+  "cards": [],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Detail",
+      "route": "communication/message_jobs/38"
+    },
+    {
+      "via": "Detail",
+      "route": "communication/message_jobs/37"
+    },
+    {
+      "via": "Detail",
+      "route": "communication/message_jobs/34"
+    },
+    {
+      "via": "Detail",
+      "route": "communication/message_jobs/26"
+    }
+  ]
+}

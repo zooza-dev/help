@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0039_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: 2026-02-11
+last_converted: "2026-09-21"
 ---
 
 # Blocks creation
@@ -81,7 +81,7 @@ Occasionally, there will be a situation where you need to divide the products in
 
 1. At the class level, click *Change* in the *Products* tile to add the desired products to the class.
 2. Once you have added the products, you will be presented with the option to edit them - click on *Setup*.
- ![Screenshot](../../assets/images/blocks-creation-08.png)
+ ![Products & Services → ProductsPRO: the products list with price, status and online booking columns](../../assets/images/blocks-creation-08.png)
  
 3. Make the product available for purchase in the booking form
    <!-- screenshot outdated -->

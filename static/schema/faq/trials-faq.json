@@ -41,7 +41,7 @@
       "name": "If I manually change a trial status, does the client receive an email?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "When you manually change a trial status (e.g. from Trial ended to Trial won or Trial lost), Zooza shows a \"Send confirmation email\" checkbox. You can choose whether to send a one-off email for that status change.\n\nImportant: Manually changing the status does not trigger the automated follow-up sequence. The automation (enrolment link + reminder emails) is only triggered when the instructor records attendance on the trial session. If attendance was not recorded and you changed the status manually, you need to send the enrolment link to the client manually via Communication → Send Email.\n\n---"
+        "text": "When you manually change a trial status (e.g. from Trial ended to Trial won or Trial lost), Zooza shows a \"Send confirmation email\" checkbox. You can choose whether to send a one-off email for that status change.\n\nImportant: Manually changing the status does not trigger the automated follow-up sequence. The automation (enrolment link + reminder emails) is only triggered when the instructor records attendance on the trial session. If attendance was not recorded and you changed the status manually, you need to send the enrolment link to the client manually via Communication → Send message.\n\n---"
       }
     },
     {

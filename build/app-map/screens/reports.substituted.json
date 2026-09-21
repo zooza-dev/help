@@ -1,0 +1,141 @@
+{
+  "id": "reports.substituted",
+  "menu": "Reports & Insights → Reports → Substituted",
+  "route": "reports/substituted",
+  "url_template": "https://{region}.zooza.app/#reports/substituted",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "reports",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Friday, 29. August 2025, 16:00 › Notes",
+      "intro": [
+        "Session summary (visible to the client)",
+        "Prep material (visible to client)"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Session summary",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Note about the session",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "OK",
+        "Cancel",
+        "Add from library"
+      ],
+      "route": "calendar/3980"
+    },
+    {
+      "title": "Friday, 29. August 2025, 16:00",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Reason for cancelling",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Not specified",
+            "Sickness",
+            "Travel",
+            "No reason provided"
+          ]
+        },
+        {
+          "label": "Personal feedback (visible to parent)",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Internal note",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [],
+      "route": "calendar/3980"
+    },
+    {
+      "title": "Monday, 19. January 2026, 09:00",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Reason for cancelling",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Not specified",
+            "Sickness",
+            "Travel",
+            "No reason provided"
+          ]
+        },
+        {
+          "label": "Personal feedback (visible to parent)",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Internal note",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [],
+      "route": "calendar/1761"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Friday, 29. August 2025, 16:00",
+      "route": "calendar/3980"
+    },
+    {
+      "via": "👣 Mighty Movers (3–5 years)",
+      "route": "courses/63"
+    },
+    {
+      "via": "Miro",
+      "route": "courses/schedules/59"
+    },
+    {
+      "via": "Monday, 19. January 2026, 09:00",
+      "route": "calendar/1761"
+    },
+    {
+      "via": "🤹‍♂️ Bounce & Balance (1–3 years)",
+      "route": "courses/26"
+    },
+    {
+      "via": "Monday",
+      "route": "courses/schedules/41"
+    },
+    {
+      "via": "Monday, 19. January 2026, 09:00",
+      "route": "calendar/1761"
+    },
+    {
+      "via": "🤹‍♂️ Bounce & Balance (1–3 years)",
+      "route": "courses/26"
+    },
+    {
+      "via": "Monday",
+      "route": "courses/schedules/41"
+    }
+  ]
+}

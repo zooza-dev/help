@@ -1,0 +1,25 @@
+{
+  "id": "reports.additional_sessions",
+  "menu": "Reports & Insights → Reports → Additional sessions",
+  "route": "reports/additional_sessions",
+  "url_template": "https://{region}.zooza.app/#reports/additional_sessions",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "reports",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Additional sessions",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

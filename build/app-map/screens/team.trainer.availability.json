@@ -1,0 +1,187 @@
+{
+  "id": "team.trainer.availability",
+  "menu": "Team & Settings → Instructors → instructor → Availability",
+  "route": "trainers/60/availability",
+  "url_template": "https://{region}.zooza.app/#trainers/60/availability",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "team",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Working hours",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Add availability",
+        "Activate",
+        "Delete selected availability",
+        "August 2026",
+        "October 2026"
+      ]
+    },
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    },
+    {
+      "title": "Add availability › Working hours",
+      "intro": [],
+      "sections": [
+        "Summary"
+      ],
+      "fields": [
+        {
+          "label": "Type",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Working hours",
+            "Absence"
+          ]
+        },
+        {
+          "label": "Name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Approved by",
+          "type": "combobox",
+          "help": ""
+        },
+        {
+          "label": "Date",
+          "type": "date_time",
+          "help": ""
+        },
+        {
+          "label": "Date to",
+          "type": "date_time",
+          "help": ""
+        },
+        {
+          "label": "Repeat",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Frequency of repetitions",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Every week",
+            "Every month"
+          ]
+        },
+        {
+          "label": "Repeat until",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Until (date)",
+            "Number of repetitions"
+          ]
+        },
+        {
+          "label": "Repeat until",
+          "type": "date",
+          "help": ""
+        },
+        {
+          "label": "Number of repetitions",
+          "type": "number",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Add availability",
+        "Activate",
+        "Delete selected availability",
+        "Save availability",
+        "Close",
+        "Delete availability",
+        "Approve",
+        "Reject",
+        "August 2026",
+        "October 2026"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    },
+    {
+      "via": "August 2026",
+      "route": "trainers/60?year=2026&month=08"
+    },
+    {
+      "via": "October 2026",
+      "route": "trainers/60?year=2026&month=10"
+    }
+  ]
+}
