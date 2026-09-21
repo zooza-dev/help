@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0043_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: false
-last_converted: "2026-09-20"
+last_converted: "2026-09-21"
 cssclasses:
 ---
 
@@ -48,7 +48,6 @@ As mentioned earlier, the number of sessions actually paid may differ from the s
 
 ![In session detail under billable sessions setting, a warning will appear to remind you...](../../assets/images/viewing-billable-events-05.png)
 
-![In session detail under billable sessions setting, a warning will appear to remind you...](../../assets/images/allowing-multiple-registration-03.png)
 You can view the overdrawn/under drawn billable sessions using the filter at the class level.
 
 ![You can view the overdrawn/under drawn billable sessions using the filter at the class...](../../assets/images/viewing-billable-events-07.png)

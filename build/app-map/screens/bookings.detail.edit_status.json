@@ -1,0 +1,200 @@
+{
+  "id": "bookings.detail.edit_status",
+  "menu": "Clients → Bookings → booking → Change status",
+  "route": "registrations/1394?edit=status",
+  "url_template": "https://{region}.zooza.app/#registrations/1394?edit=status",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "bookings",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Change booking status",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Choose new booking status",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Enrolled - Valid programme booking",
+            "In the waiting list - Waiting for a slot to become available",
+            "Late booking - Enrolled after the programme starts",
+            "Cancelled booking (during the programme)"
+          ]
+        },
+        {
+          "label": "Send confirmation email",
+          "type": "checkbox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Change status"
+      ]
+    },
+    {
+      "title": "Convert to trial",
+      "intro": [
+        "This class supports trials. You can convert this booking to a trial registration."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Convert to trial"
+      ]
+    },
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    },
+    {
+      "title": "Change status › Booking",
+      "intro": [
+        "Friday, 4. September 2026, 13:01:19 2 weeks ago",
+        "Extra make-up sessions (in addition to the limit for make-up sessions for the programme)",
+        "Guest access to the booking",
+        "Additional email for reminders before sessions"
+      ],
+      "sections": [
+        "Options"
+      ],
+      "fields": [
+        {
+          "label": "Business booking",
+          "type": "toggle",
+          "help": ""
+        },
+        {
+          "label": "Send reminders of the upcoming sessions",
+          "type": "checkbox",
+          "help": "By checking the box, the client will automatically receive reminders about the upcoming sessions."
+        },
+        {
+          "label": "Send notifications about upcoming sessions",
+          "type": "checkbox",
+          "help": "By checking the box, the client will automatically receive notification emails regarding upcoming sessions."
+        },
+        {
+          "label": "Occupied slots",
+          "type": "number",
+          "help": "Set the number of spaces reserved by the client in a session"
+        },
+        {
+          "label": "Extra limit for make-up sessions",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Email address",
+          "type": "text",
+          "help": "If you want to give access to the booking (in the clients profile) to a person other than the client, enter the person's email address. This person will have the same access as the client."
+        },
+        {
+          "label": "Send reminders of the upcoming sessions.",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Email address",
+          "type": "text",
+          "help": "If you want someone else to receive notifications about upcoming sessions, enter their email address. This person will not have access to the enrolment."
+        },
+        {
+          "label": "Send notifications to the additional email address only",
+          "type": "checkbox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Delete booking",
+        "Close",
+        "Change widget",
+        "Save"
+      ],
+      "route": "registrations/1394"
+    }
+  ],
+  "notes": [
+    "This class supports trials. You can convert this booking to a trial registration."
+  ],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "registrations/1394?edit=status"
+    },
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    },
+    {
+      "via": "Change status",
+      "route": "registrations/1394"
+    },
+    {
+      "via": "Convert to trial",
+      "route": "registrations/1394?edit=status"
+    }
+  ]
+}

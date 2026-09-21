@@ -1,0 +1,661 @@
+{
+  "id": "bookings.detail",
+  "menu": "Clients → Bookings → booking",
+  "route": "registrations/1394",
+  "url_template": "https://{region}.zooza.app/#registrations/1394",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "bookings",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Booking",
+      "intro": [
+        "Friday, 4. September 2026, 13:01:19 2 weeks ago",
+        "Extra make-up sessions (in addition to the limit for make-up sessions for the programme)",
+        "Guest access to the booking",
+        "Additional email for reminders before sessions"
+      ],
+      "sections": [
+        "Options"
+      ],
+      "fields": [
+        {
+          "label": "Business booking",
+          "type": "toggle",
+          "help": ""
+        },
+        {
+          "label": "Send reminders of the upcoming sessions",
+          "type": "checkbox",
+          "help": "By checking the box, the client will automatically receive reminders about the upcoming sessions."
+        },
+        {
+          "label": "Send notifications about upcoming sessions",
+          "type": "checkbox",
+          "help": "By checking the box, the client will automatically receive notification emails regarding upcoming sessions."
+        },
+        {
+          "label": "Occupied slots",
+          "type": "number",
+          "help": "Set the number of spaces reserved by the client in a session"
+        },
+        {
+          "label": "Extra limit for make-up sessions",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Email address",
+          "type": "text",
+          "help": "If you want to give access to the booking (in the clients profile) to a person other than the client, enter the person's email address. This person will have the same access as the client."
+        },
+        {
+          "label": "Send reminders of the upcoming sessions.",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Email address",
+          "type": "text",
+          "help": "If you want someone else to receive notifications about upcoming sessions, enter their email address. This person will not have access to the enrolment."
+        },
+        {
+          "label": "Send notifications to the additional email address only",
+          "type": "checkbox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Delete booking",
+        "Close",
+        "Change widget",
+        "Save"
+      ]
+    },
+    {
+      "title": "Additional fields:",
+      "intro": [
+        "Date of birth and child's name have been moved to the Attendee card. To create a new attendee, click on change."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Attendance",
+      "intro": [
+        "Monday, 21. September 2026, 09:00:00, Will attend"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Credits",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "LJ Attendee",
+      "intro": [
+        "4. February 2025 (19 months)"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "BJ Client",
+      "intro": [
+        "Wednesday, 11. March 2026, 10:24:01"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Class",
+      "intro": [
+        "Morningside Playhouse, Edinburgh"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "🤹‍♂️ Bounce & Balance (1–3 years)",
+        "▾"
+      ]
+    },
+    {
+      "title": "Payments",
+      "intro": [
+        "Payments for this booking are managed elsewhere. If you want to add debt or receive money, you need to add it to the parent/main booking.",
+        "06. 09. 2026: £40.00 (Credit )"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Payment plan",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Linked bookings",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Communication",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Documents",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Invoices › Invoice profile",
+      "intro": [],
+      "sections": [
+        "Invoices use Name — set at Default profile"
+      ],
+      "fields": [
+        {
+          "label": "Invoice profile",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Inherit (Name)",
+            "Name",
+            "Playfulmotion Swim Ltd",
+            "New Invoice Profile"
+          ]
+        },
+        {
+          "label": "Bank account",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Default (SK2011000000001234567890)",
+            "SK2011000000001234567890"
+          ]
+        }
+      ],
+      "buttons": [
+        "Save"
+      ],
+      "route": "registrations/1394/invoices"
+    },
+    {
+      "title": "Attendance",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Reason for cancelling",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Not specified",
+            "Sickness",
+            "Travel",
+            "No reason provided"
+          ]
+        },
+        {
+          "label": "Personal feedback (visible to parent)",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [],
+      "route": "registrations/1394/attendance"
+    },
+    {
+      "title": "Communication › Quick reply",
+      "intro": [
+        "Your message could not be sent",
+        "Total number of recipients",
+        "Just a small warning: message will be sent to a larger number of recipients. To make sure that this is what you intended, please write total number of recipients in the input."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Type",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Email",
+            "SMS"
+          ]
+        },
+        {
+          "label": "Message body",
+          "type": "text",
+          "help": "One SMS can contain a maximum of 459 characters in total. If the text is shorter than 160 characters, it will be sent as one SMS. If the text is longer than 160 characters, then one SMS will have 153 characters (the recipient will see the SMS messages as one long combined SMS message)."
+        },
+        {
+          "label": "Email subject",
+          "type": "text",
+          "help": "Will appear as the subject of the email"
+        },
+        {
+          "label": "Email body",
+          "type": "wysiwyg",
+          "help": "Enter the body of the message"
+        },
+        {
+          "label": "Write the number above for the number of recipients:",
+          "type": "number",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Change e-mail template",
+        "Send",
+        "Send another"
+      ],
+      "route": "registrations/1394/registrations_communication"
+    },
+    {
+      "title": "Change status › Change booking status",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Choose new booking status",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Enrolled - Valid programme booking",
+            "In the waiting list - Waiting for a slot to become available",
+            "Late booking - Enrolled after the programme starts",
+            "Cancelled booking (during the programme)"
+          ]
+        },
+        {
+          "label": "Send confirmation email",
+          "type": "checkbox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Change status"
+      ]
+    },
+    {
+      "title": "Copy booking › Select class",
+      "intro": [],
+      "sections": [
+        "No programme or class chosen"
+      ],
+      "fields": [
+        {
+          "label": "Apply",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Copy — Create a new booking in the selected class",
+            "Transfer to another class — Move the booking to the selected class"
+          ]
+        }
+      ],
+      "buttons": [
+        "Continue",
+        "Back"
+      ],
+      "route": "registrations/1394/change?action=copy"
+    },
+    {
+      "title": "Set up › Additional fields",
+      "intro": [
+        "Restrict programme booking based on age"
+      ],
+      "sections": [
+        "Date of birth",
+        "Child's full name",
+        "Address",
+        "Number of occupied slots",
+        "Identification (birth) number",
+        "Citizenship"
+      ],
+      "fields": [
+        {
+          "label": "Extend booking form with additional fields",
+          "type": "toggle",
+          "help": ""
+        },
+        {
+          "label": "Show the field in the booking form",
+          "type": "toggle",
+          "help": ""
+        },
+        {
+          "label": "Custom name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Mandatory",
+          "type": "toggle",
+          "help": ""
+        },
+        {
+          "label": "Type of restriction",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "No restriction",
+            "By date of birth",
+            "By age"
+          ]
+        },
+        {
+          "label": "Minimum date of birth (inclusive)",
+          "type": "date",
+          "help": "Persons born before this date will not be able to enrol for the programme"
+        },
+        {
+          "label": "Maximum date of birth (inclusive)",
+          "type": "date",
+          "help": "Persons born after this date will not be able to enrol for the programme"
+        },
+        {
+          "label": "Which units do you wish to use for the age?",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Years",
+            "Months"
+          ]
+        },
+        {
+          "label": "Minimum age",
+          "type": "number",
+          "help": "This is the age at the time of booking"
+        },
+        {
+          "label": "Maximum age",
+          "type": "number",
+          "help": "This is the age at the time of booking"
+        },
+        {
+          "label": "Method of using restrictions",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Both (both minimum and maximum value)",
+            "Minimum value only",
+            "Maximum value only"
+          ]
+        },
+        {
+          "label": "Exceeding the age limit",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Not allowed",
+            "Allow"
+          ]
+        }
+      ],
+      "buttons": [
+        "Save"
+      ],
+      "route": "courses/26/settings?edit=extra_fields"
+    },
+    {
+      "title": "Set up › Business fields",
+      "intro": [],
+      "sections": [
+        "Advanced"
+      ],
+      "fields": [
+        {
+          "label": "Show business fields in the booking form",
+          "type": "toggle",
+          "help": ""
+        },
+        {
+          "label": "Make business fields mandatory",
+          "type": "toggle",
+          "help": ""
+        },
+        {
+          "label": "Business name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Business address",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Business ID",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Tax ID",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "VAT",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [],
+      "route": "courses/26/settings?edit=extra_fields"
+    },
+    {
+      "title": "Set up › Additional Fields",
+      "intro": [
+        "A key is an abbreviation for a value that only appears in the bookings export. The value is the displayed text that is visible to the client in the booking form and your administration. A good example could be proficiency tracking where you want to actually store different values than you want to display: Key would be 1 and Value would be 'Professional'."
+      ],
+      "sections": [
+        "Additional field 1",
+        "Additional field 2",
+        "Additional field 3",
+        "Additional field 4",
+        "Additional field 5"
+      ],
+      "fields": [
+        {
+          "label": "Show the field in the booking form",
+          "type": "toggle",
+          "help": ""
+        },
+        {
+          "label": "Custom name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Mandatory",
+          "type": "toggle",
+          "help": ""
+        },
+        {
+          "label": "Field type",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Text",
+            "Choice"
+          ]
+        },
+        {
+          "label": "Key",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Value",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Add",
+        "Save"
+      ],
+      "route": "courses/26/settings?edit=extra_fields"
+    },
+    {
+      "title": "Create credit › Choose what type of credit you would like to create for the booking:",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Credit type",
+          "type": "radio_group",
+          "help": "",
+          "options": []
+        }
+      ],
+      "buttons": [
+        "Create"
+      ],
+      "route": "registrations/1394/credits?action=create_credit"
+    },
+    {
+      "title": "Lone James › History",
+      "intro": [],
+      "sections": [
+        "Client Records"
+      ],
+      "fields": [],
+      "buttons": [
+        "New message"
+      ],
+      "route": "clients/1676"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Basic information",
+      "route": "registrations/1394/"
+    },
+    {
+      "via": "Invoices",
+      "route": "registrations/1394/invoices"
+    },
+    {
+      "via": "Attendance",
+      "route": "registrations/1394/attendance"
+    },
+    {
+      "via": "Communication",
+      "route": "registrations/1394/registrations_communication"
+    },
+    {
+      "via": "Credits and make-up sessions",
+      "route": "registrations/1394/credits"
+    },
+    {
+      "via": "Not connected to Zooza AI yet? Connect →",
+      "route": "mcp"
+    },
+    {
+      "via": "Copy booking",
+      "route": "registrations/1394/change?action=copy"
+    },
+    {
+      "via": "Set up",
+      "route": "courses/26/settings?edit=extra_fields"
+    },
+    {
+      "via": "Attendance",
+      "route": "registrations/1394/attendance"
+    },
+    {
+      "via": "Create credit",
+      "route": "registrations/1394/credits?action=create_credit"
+    },
+    {
+      "via": "All credits",
+      "route": "registrations/1394/credits"
+    },
+    {
+      "via": "Lone James",
+      "route": "clients/1676"
+    },
+    {
+      "via": "Go to attendee",
+      "route": "clients/1676"
+    },
+    {
+      "via": "Brian James",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "michaldodok@gmail.com",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Go to the client",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Change client",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "🤹‍♂️ Bounce & Balance (1–3 years)",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "▾",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Add payment",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Show payments",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Change",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Link booking",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Email",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "SMS",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Communication",
+      "error": "TimeoutError"
+    }
+  ]
+}

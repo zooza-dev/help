@@ -1,0 +1,95 @@
+{
+  "id": "bookings.detail.change_action_copy",
+  "menu": "Clients → Bookings → booking → Copy booking",
+  "route": "registrations/1394/change?action=copy",
+  "url_template": "https://{region}.zooza.app/#registrations/1394/change?action=copy",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "bookings",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Select class",
+      "intro": [],
+      "sections": [
+        "No programme or class chosen"
+      ],
+      "fields": [
+        {
+          "label": "Apply",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Copy — Create a new booking in the selected class",
+            "Transfer to another class — Move the booking to the selected class"
+          ]
+        }
+      ],
+      "buttons": [
+        "Continue",
+        "Back"
+      ]
+    },
+    {
+      "title": "Settings",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Continue",
+        "Back"
+      ]
+    },
+    {
+      "title": "Submit",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Continue",
+        "Back"
+      ]
+    },
+    {
+      "title": "Done",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Continue",
+        "Back"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "registrations/1394/change?action=copy"
+    },
+    {
+      "via": "Billing period",
+      "route": "registrations/1394/change?action=copy"
+    },
+    {
+      "via": "Programme",
+      "route": "registrations/1394/change?action=copy"
+    },
+    {
+      "via": "Venue",
+      "route": "registrations/1394/change?action=copy"
+    },
+    {
+      "via": "Instructor",
+      "route": "registrations/1394/change?action=copy"
+    },
+    {
+      "via": "Day",
+      "route": "registrations/1394/change?action=copy"
+    }
+  ]
+}

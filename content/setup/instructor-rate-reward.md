@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0060_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-09-21"
 ---
 
 # Setting the rate/reward for instuctors
@@ -84,7 +84,6 @@ You also have the option of setting the rate at the term level. You use this opt
 
 By default, this compensation is equal to 100%, i.e. the instructor receives 100% of the remuneration for the taught term. But when changing from a scheduled to a cancelled date, this value is automatically reset (the reverse automatic value change does not work, i.e. when changing from a cancelled to a scheduled date, the value does not return to 100%).
 
-![By default, this compensation is equal to 100%, i.e. the instructor receives 100% of...](../../assets/images/allowing-multiple-registration-03.png)
 
 Note: If you use this functionality and you want to see the summary for cancelled sessions in the instructor’s report, you need to enable it within the instructor’s report. Because the reward report for cancelled appointments is not shown in the basic view.
 
@@ -103,7 +102,6 @@ Define the time period, check the option to show cancelled appointments if neces
 
 On this page you can see the total number of dates and amount to be invoiced. Also the list of all dates, with information about the programme, class, instructor´s rate, duration…
 
-![On this page you can see the total number of dates and amount to be invoiced. Also the...](../../assets/images/allowing-multiple-registration-03.png)
 
 Don´t forget that everything orange in Zooza is clickable and can redirect you to the necessary page faster.
 

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0041_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-09-21"
 ---
 
 # Collecting the reason for cancelling the session
@@ -38,7 +38,6 @@ There are two places in the app where you can record the reasons for opting out:
 
 You can record the reasons manually. Unless recording the reasons is enabled in the profile, clients will not see the reason logging form.
 
-![You can record the reasons manually. Unless recording the reasons is enabled in the...](../../assets/images/allowing-multiple-registration-03.png)
 
 
 Note: Clients do not see the actual reason for opting out under any circumstances. Regardless of whether the collection of reasons is activated or not.

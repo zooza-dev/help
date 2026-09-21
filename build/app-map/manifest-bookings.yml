@@ -1,0 +1,456 @@
+base: https://uk.zooza.app/
+shots:
+- image: reference/bookings-create-new.png
+  route: registrations/create
+  assert: Create a booking
+  status: keep-old
+  note: content/reference/bookings-list.md:278 — Create new booking
+  tall: true
+- image: allowing-multiple-booking-01.png
+  route: registrations/1486
+  assert: Booking
+  status: keep-old
+  card: Booking
+  note: content/guides/allowing-multiple-booking.md:42 — Screenshot — allowing multiple booking
+- image: allowing-multiple-registration-01.png
+  route: registrations/1486
+  assert: Booking
+  status: keep-old
+  card: Booking
+  card_only: true
+  note: content/guides/allowing-multiple-booking.md:22 — Screenshot
+- image: billing-and-invoicing-11.png
+  route: registrations/1486
+  assert: Booking
+  status: keep-old
+  card: Booking
+  note: content/setup/billing-and-invoicing.md:107 — Generate invoice button on booking detail
+- image: billing-and-invoicing-13.png
+  route: registrations/1486
+  assert: Booking
+  status: keep-old
+  card: Booking
+  note: content/setup/billing-and-invoicing.md:113 — Generated invoice shown on booking detail
+- image: blocks-creation-12.png
+  route: registrations/1486
+  assert: Booking
+  status: keep-old
+  card: Booking
+  note: content/guides/blocks-creation.md:108 — Screenshot
+- image: blocks-creation-13.png
+  route: registrations/1486
+  assert: Booking
+  status: keep-old
+  card: Booking
+  note: content/guides/blocks-creation.md:114 — Screenshot
+- image: blocks-creation-15.png
+  route: registrations/1486
+  assert: Booking
+  status: keep-old
+  card: Booking
+  card_only: true
+  note: content/guides/blocks-creation.md:119 — Screenshot
+- image: booking-tile-customization-01.png
+  route: registrations?course_id=150
+  assert: bookings found
+  status: approved
+  note: content/guides/booking-tile-customization.md:28 — Screenshot — booking tile customization
+- image: booking-tile-customization-02.png
+  route: registrations/1486
+  assert: Booking
+  status: keep-old
+  card: Booking
+  note: content/guides/booking-tile-customization.md:30 — Screenshot — booking tile customization
+- image: client-management-faq-02.png
+  route: registrations/1486
+  assert: Change booking status
+  status: keep-old
+  click: Change status
+  card: Change booking status
+  note: content/faq/client-management-faq.md:173 — Screenshot — client management faq
+- image: customizing-widgets-15.png
+  route: registrations/1486
+  assert: Booking
+  status: keep-old
+  card: Booking
+  note: content/guides/customizing-widgets.md:113 — Screenshot
+- image: customizing-widgets-16.png
+  route: registrations/1486
+  assert: Booking
+  status: keep-old
+  card: Booking
+  card_only: true
+  note: content/guides/customizing-widgets.md:115 — Screenshot
+- image: entry-pass-client-view-03.png
+  route: registrations/1486
+  assert: Booking
+  status: keep-old
+  card: Booking
+  card_only: true
+  note: content/guides/entry-pass-client-view.md:46 — Screenshot — entry pass client view
+- image: entry-pass-client-view-05.png
+  route: registrations/1486
+  assert: Booking
+  status: keep-old
+  card: Booking
+  card_only: true
+  note: content/guides/entry-pass-client-view.md:76 — Entry pass shown on booking detail
+- image: entry-pass-client-view-06.png
+  route: registrations/1486
+  assert: Booking
+  status: keep-old
+  card: Booking
+  note: content/guides/entry-pass-client-view.md:78 — Order linked to the booking
+- image: entry-pass-client-view-08.png
+  route: registrations/1486
+  assert: Booking
+  status: keep-old
+  card: Booking
+  note: content/guides/entry-pass-client-view.md:113 — Manual entry pass assignment on booking
+- image: reference/bookings-detail-overview.png
+  route: registrations/1486/change?action=copy
+  assert: Select class
+  status: keep-old
+  card: Select class
+  note: 'content/reference/bookings-list.md:135 — A booking detail page: quick links along the top, then the Booking, Attendee,
+    Client and Class cards'
+- image: reference/bookings-trial-detail.png
+  route: registrations/1486
+  assert: Booking
+  status: keep-old
+  card: Booking
+  card_only: true
+  note: content/reference/bookings-list.md:254 — Trial booking detail
+- image: trials-daily-business-01.png
+  route: registrations/1486
+  assert: Change booking status
+  status: keep-old
+  click: Change status
+  card: Change booking status
+  note: content/guides/trials-daily-business.md:169 — Change status button on booking detail
+- image: trials-daily-business-11.png
+  route: registrations/1486
+  assert: Change booking status
+  status: keep-old
+  click: Change status
+  card: Change booking status
+  note: content/guides/trials-daily-business.md:109 — Trial Lost status change on booking
+- image: instructor-attendance-management-01.png
+  route: registrations/1486/attendance
+  assert: Attendance
+  status: keep-old
+  card: Attendance
+  note: content/guides/instructor-attendance-management.md:25 — Screenshot — instructor attendance management
+- image: instructor-attendance-management-02.png
+  route: registrations/1486/attendance
+  assert: Attendance
+  status: keep-old
+  card: Attendance
+  note: content/guides/instructor-attendance-management.md:35 — Screenshot — instructor attendance management
+- image: instructor-attendance-management-03.png
+  route: registrations/1486/attendance
+  assert: Attendance
+  status: keep-old
+  card: Attendance
+  note: content/guides/instructor-attendance-management.md:51 — Screenshot — instructor attendance management
+- image: instructor-attendance-management-04.png
+  route: registrations/1486/attendance
+  assert: Attendance
+  status: keep-old
+  card: Attendance
+  note: content/guides/instructor-attendance-management.md:63 — Screenshot — instructor attendance management
+- image: instructor-attendance-management-05.png
+  route: registrations/1486/attendance
+  assert: Attendance
+  status: keep-old
+  card: Attendance
+  note: content/guides/instructor-attendance-management.md:88 — Screenshot — instructor attendance management
+- image: instructor-attendance-management-06.png
+  route: registrations/1486/attendance
+  assert: Attendance
+  status: keep-old
+  card: Attendance
+  note: content/guides/instructor-attendance-management.md:98 — Screenshot — instructor attendance management
+- image: instructor-attendance-management-07.png
+  route: registrations/1486/attendance
+  assert: Attendance
+  status: keep-old
+  card: Attendance
+  note: content/guides/instructor-attendance-management.md:39 — Screenshot — instructor attendance management
+- image: reference/bookings-attendance-expanded.png
+  route: registrations/1486/attendance
+  assert: Attendance
+  status: keep-old
+  card: Attendance
+  card_only: true
+  note: content/reference/bookings-list.md:552 — Attendance tab
+- image: reference/bookings-attendance-tab.png
+  route: registrations/1486/attendance
+  assert: Attendance
+  status: keep-old
+  note: content/reference/bookings-list.md:588 — Choose make-up session
+- image: replacement-hours-cross-12.png
+  route: registrations/1486/attendance
+  assert: Attendance
+  status: keep-old
+  card: Attendance
+  note: content/guides/replacement-hours-complete.md:292 — Host branch admin view — replacement client in attendance
+- image: trials-daily-business-04.png
+  route: registrations/1486/attendance
+  assert: Attendance
+  status: keep-old
+  card: Attendance
+  note: content/guides/trials-daily-business.md:123 — Rescheduling a trial session in the Attendance section
+- image: reference/bookings-credits-tab.png
+  route: registrations/1486/credits
+  assert: Make-up sessions
+  status: approved
+  card: Make-up sessions
+  note: content/reference/bookings-list.md:619 — Credits and make-up sessions
+- image: reference/bookings-cancel.png
+  route: registrations/1486?edit=cancel_registration
+  assert: Cancel booking
+  status: approved
+  card: Cancel booking
+  note: content/reference/bookings-list.md:335 — Cancel booking
+- image: reference/bookings-change-status.png
+  route: registrations/1486?edit=status
+  assert: Change booking status
+  status: approved
+  card: Change booking status
+  note: content/reference/bookings-list.md:316 — Change booking status
+- image: ad-hoc-scheduled-payment-06.png
+  route: registrations/1486/payment_plan
+  assert: Payment plan
+  status: keep-old
+  card: Payment plan
+  note: content/guides/ad-hoc-scheduled-payment.md:92 — Screenshot — ad hoc scheduled payment
+- image: allowing-multiple-registration-03.png
+  route: registrations/1486/payment_plan
+  assert: Payment plan
+  status: delete
+  card: Payment plan
+  card_only: true
+  note: content/guides/payment-templates-creation.md:252 — Screenshot
+  reason: 32×32 black square
+- image: payment-templates-creation-32.png
+  route: registrations/1486/payment_plan
+  assert: Payment plan
+  status: keep-old
+  card: Payment plan
+  note: content/guides/payment-templates-creation.md:266 — Screenshot
+- image: reference/bookings-list.png
+  route: registrations?course_id=150
+  assert: bookings found
+  status: approved
+  note: 'content/reference/bookings-list.md:23 — The Bookings list: action buttons, the filter row, and booking tiles showing
+    client, attendee, inter'
+  tall: true
+- image: reference/bookings-payment-plan.png
+  route: registrations/1486/payment_plan
+  assert: Payment plan
+  status: keep-old
+  card: Payment plan
+  card_only: true
+  note: content/reference/bookings-list.md:476 — Current active payment plan
+- image: active-inactive-clients-02.png
+  route: registrations
+  assert: bookings found
+  status: keep-old
+  note: content/guides/active-inactive-clients.md:29 — Client with multiple bookings
+  click: Reset
+- image: bookings-list-01.png
+  route: registrations?course_id=150
+  assert: bookings found
+  status: approved
+  note: content/reference/bookings-list.md:546 — Screenshot — bookings list
+- image: bulk-network-transfer-01.png
+  route: registrations
+  assert: bookings found
+  status: keep-old
+  note: content/guides/bulk-network-transfer.md:73 — Screenshot — bulk network transfer
+  click: Reset
+- image: reference/bookings-change-class.png
+  route: registrations/create
+  assert: Choose class
+  status: keep-old
+  card: Choose class
+  card_only: true
+  note: content/reference/bookings-list.md:351 — Change class
+- image: reference/bookings-communication-tab.png
+  route: registrations
+  assert: bookings found
+  status: keep-old
+  note: content/reference/bookings-list.md:695 — Communication tab
+  click: Reset
+- image: reference/bookings-credit-detail.png
+  route: registrations
+  assert: bookings found
+  status: keep-old
+  note: content/reference/bookings-list.md:660 — Credit detail
+  click: Reset
+- image: reference/bookings-new-credit.png
+  route: registrations
+  assert: bookings found
+  status: keep-old
+  note: content/reference/bookings-list.md:648 — New credit
+  click: Reset
+- image: reference/bookings-offline-payment.png
+  route: registrations
+  assert: bookings found
+  status: keep-old
+  note: content/reference/bookings-list.md:511 — Offline payment detail
+  click: Reset
+- image: active-inactive-clients-01.png
+  route: clients/1951
+  assert: Family & Connections
+  status: keep-old
+  note: content/guides/active-inactive-clients.md:25 — Client record overview
+- image: client-consent-overview-01.png
+  route: clients/1951
+  assert: Family & Connections
+  status: keep-old
+  note: content/guides/client-consent-overview.md:66 — Client Profile consents section
+- image: client-management-faq-03.png
+  route: clients/1951
+  assert: Family & Connections
+  status: keep-old
+  note: content/faq/client-management-faq.md:101 — Add child to existing registration
+- image: customizing-widgets-19.png
+  route: clients/1951
+  assert: Family & Connections
+  status: keep-old
+  note: content/guides/customizing-widgets.md:135 — Screenshot
+- image: entry-pass-client-view-01.png
+  route: clients/1951
+  assert: Family & Connections
+  status: keep-old
+  note: content/guides/entry-pass-client-view.md:34 — Screenshot — entry pass client view
+- image: entry-pass-client-view-02.png
+  route: clients/1951
+  assert: Family & Connections
+  status: keep-old
+  note: content/guides/entry-pass-client-view.md:37 — Screenshot — entry pass client view
+- image: entry-pass-client-view-04.png
+  route: clients/1951
+  assert: Family & Connections
+  status: keep-old
+  note: content/guides/entry-pass-client-view.md:52 — Screenshot — entry pass client view
+- image: reference/clients-detail-child.png
+  route: clients/1951
+  assert: Family & Connections
+  status: keep-old
+  card: Family & Connections
+  note: content/reference/clients-list.md:127 — Client detail — child record
+- image: reference/clients-detail-chloe-tanase.png
+  route: clients/1951
+  assert: Family & Connections
+  status: keep-old
+  note: content/reference/clients-list.md:105 — Client detail with bookings — Chloe Tanase
+- image: reference/clients-detail-william-scott.png
+  route: clients/1951
+  assert: Family & Connections
+  status: keep-old
+  note: content/reference/clients-list.md:62 — Client detail — William Scott
+- image: replacement-hours-cross-07.png
+  route: clients/1951
+  assert: Family & Connections
+  status: keep-old
+  note: content/guides/replacement-hours-complete.md:261 — Client profile — unexpired replacement lessons
+- image: replacement-hours-cross-10.png
+  route: clients/1951
+  assert: Family & Connections
+  status: keep-old
+  note: content/guides/replacement-hours-complete.md:273 — Replacement session from another branch shown in client profile
+- image: setting-gtc-gdpr-consents-05.png
+  route: clients/1951
+  assert: Family & Connections
+  status: keep-old
+  note: content/setup/setting-gtc-gdpr-consents.md:127 — Screenshot — client consents detail
+- image: csv-payment-import-01.png
+  route: clients/import
+  assert: Import
+  status: keep-old
+  note: content/guides/csv-payment-import.md:41 — Screenshot — csv payment import
+- image: csv-payment-import-02.png
+  route: clients/import
+  assert: Import
+  status: keep-old
+  note: content/guides/csv-payment-import.md:47 — Screenshot — csv payment import
+- image: csv-payment-import-03.png
+  route: clients/import
+  assert: Import
+  status: keep-old
+  note: content/guides/csv-payment-import.md:63 — Screenshot — csv payment import
+- image: csv-payment-import-04.png
+  route: clients/import
+  assert: Import
+  status: keep-old
+  note: content/guides/csv-payment-import.md:70 — Screenshot — csv payment import
+- image: active-inactive-clients-03.png
+  route: clients
+  assert: Client
+  status: keep-old
+  note: content/guides/active-inactive-clients.md:86 — Dashboard statistics — active and inactive clients
+- image: active-inactive-clients-04.png
+  route: clients
+  assert: Client
+  status: keep-old
+  note: content/guides/active-inactive-clients.md:94 — Clients list filtered by active/inactive status
+- image: booking-form-attendee-selection-02.png
+  route: clients
+  assert: Client
+  status: keep-old
+  note: content/guides/booking-form-attendee-selection.md:53 — Screenshot — booking form attendee selection
+- image: reference/clients-consents.png
+  route: clients
+  assert: Client
+  status: keep-old
+  note: content/reference/clients-list.md:211 — Client consents
+- image: reference/clients-data-correction.png
+  route: clients
+  assert: Client
+  status: keep-old
+  note: content/reference/clients-list.md:159 — Data correction form
+- image: reference/clients-data-import-detail.png
+  route: clients
+  assert: Client
+  status: keep-old
+  note: content/reference/clients-list.md:270 — Import detail
+- image: reference/clients-data-import-list.png
+  route: clients
+  assert: Client
+  status: keep-old
+  note: content/reference/clients-list.md:232 — Data import list
+- image: reference/clients-data-import-mapping.png
+  route: clients
+  assert: Client
+  status: keep-old
+  note: content/reference/clients-list.md:247 — New import — field mapping
+- image: reference/clients-data-import-timetables.png
+  route: clients
+  assert: Client
+  status: keep-old
+  note: content/reference/clients-list.md:257 — New import — timetable assignment
+- image: reference/clients-edit-family-members.png
+  route: clients
+  assert: Client
+  status: keep-old
+  note: content/reference/clients-list.md:186 — Edit family members
+- image: reference/clients-edit-notes-preferences.png
+  route: clients
+  assert: Client
+  status: keep-old
+  note: content/reference/clients-list.md:145 — Edit notes and preferences
+- image: reference/clients-list.png
+  route: clients
+  assert: Client
+  status: keep-old
+  note: content/reference/clients-list.md:23 — Clients list
+- image: entry-pass-client-view-07.png
+  route: orders/26
+  assert: Order
+  status: keep-old
+  card: Order
+  card_only: true
+  note: content/guides/entry-pass-client-view.md:93 — Order detail with entry pass entries

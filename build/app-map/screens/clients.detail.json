@@ -1,0 +1,181 @@
+{
+  "id": "clients.detail",
+  "menu": "Clients → Clients → client",
+  "route": "clients/1676",
+  "url_template": "https://{region}.zooza.app/#clients/1676",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "clients",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Lone James",
+      "intro": [
+        "4. February 2025 (19 months)"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Family & Connections",
+      "intro": [
+        "5. May 2023 (3 years, 4 months)"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "History",
+      "intro": [],
+      "sections": [
+        "Client Records"
+      ],
+      "fields": [],
+      "buttons": [
+        "New message"
+      ]
+    },
+    {
+      "title": "Edit › Lone James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "First name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Date of birth",
+          "type": "text",
+          "help": "Year, Month, Day (YYYY-MM-DD)"
+        },
+        {
+          "label": "Citizenship",
+          "type": "select",
+          "help": "",
+          "options": [
+            "United Kingdom",
+            "Ireland",
+            "France",
+            "Netherlands",
+            "Belgium",
+            "Afghanistan",
+            "Åland Islands",
+            "Albania",
+            "Algeria",
+            "American Samoa",
+            "Andorra",
+            "Angola",
+            "Anguilla",
+            "Antarctica",
+            "Antigua & Barbuda",
+            "Argentina",
+            "Armenia",
+            "Aruba",
+            "Australia",
+            "Austria",
+            "Azerbaijan",
+            "Bahamas",
+            "Bahrain",
+            "Bangladesh",
+            "Barbados",
+            "Belarus",
+            "Belize",
+            "Benin",
+            "Bermuda",
+            "Bhutan",
+            "Bolivia",
+            "Bosnia & Herzegovina",
+            "Botswana",
+            "Bouvet Island",
+            "Brazil",
+            "British Indian Ocean Territory",
+            "British Virgin Islands",
+            "Brunei",
+            "Bulgaria",
+            "Burkina Faso"
+          ]
+        },
+        {
+          "label": "Email",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Phone",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Profile picture",
+          "type": "avatar",
+          "help": ""
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "New message › History",
+      "intro": [],
+      "sections": [
+        "Client Records"
+      ],
+      "fields": [
+        {
+          "label": "General note",
+          "type": "wysiwyg",
+          "help": ""
+        },
+        {
+          "label": "Pin message",
+          "type": "checkbox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save",
+        "Cancel"
+      ]
+    },
+    {
+      "title": "New message › New message",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "General note",
+          "type": "wysiwyg",
+          "help": ""
+        },
+        {
+          "label": "Pin message",
+          "type": "checkbox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save",
+        "Cancel"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brian James",
+      "route": "clients/63"
+    }
+  ]
+}

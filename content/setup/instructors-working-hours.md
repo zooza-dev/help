@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0066_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-20"
+last_converted: "2026-09-21"
 related_articles: ["settings-hub", "user-roles", "instructor-access-faq", "instructor-substitution"]
 ---
 
@@ -19,7 +19,6 @@ related_articles: ["settings-hub", "user-roles", "instructor-access-faq", "instr
 
 In the *Instructors *section, instructors can manage their working time. If they define their working hours and possible absences, this data will then be taken into account by the system when scheduling terms.
 
-![In the Instructors section, instructors can manage their working time. If they define...](../../assets/images/allowing-multiple-registration-03.png)
 
 Example: Alice works Tuesdays to Fridays from 9:00 to 16:00 with an hour lunch break.
 

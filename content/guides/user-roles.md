@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0067_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-21"
 related_articles: ["managing-instructors","role-selection-guide","roles-and-permissions-faq","instructor-rate-reward"]
 ---
 
@@ -197,7 +197,6 @@ back to the home page by clicking on the Zooza logo in the top left
 - For the programme type – Pay-as-you-go programme, the receptionist can register the client for the date.
 - It does not have access to other parts of the administration. It does not have the right of communication to clients.
 
-![It does not have access to other parts of the administration. It does not have the...](../../assets/images/allowing-multiple-registration-03.png)
 
 Example: I offer Pilates as a Pay-as-you-go programme –
 clients sign up for individual sessions at their own discretion. If the

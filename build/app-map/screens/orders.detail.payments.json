@@ -1,0 +1,43 @@
+{
+  "id": "orders.detail.payments",
+  "menu": "Clients → Orders → order → Payments",
+  "route": "orders/26/payments",
+  "url_template": "https://{region}.zooza.app/#orders/26/payments",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "clients",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "List of transactions",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Online payments",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    }
+  ],
+  "notes": [
+    "Payments are managed by booking #1589"
+  ],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "orders/26/payments_readonly"
+    },
+    {
+      "via": "#1589",
+      "route": "registrations/1589/payments"
+    }
+  ]
+}

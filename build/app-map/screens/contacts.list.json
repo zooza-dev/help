@@ -1,0 +1,95 @@
+{
+  "id": "contacts.list",
+  "menu": "Clients → Contacts",
+  "route": "contacts",
+  "url_template": "https://{region}.zooza.app/#contacts",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "clients",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Add contact",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "First name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Email",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Phone",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Status",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Owner",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Form",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Source",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Label",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Existing client",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Converted",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Created from",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Created to",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Last enquiry from",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Last enquiry to",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Lou Falle",
+      "error": "TimeoutError"
+    }
+  ]
+}

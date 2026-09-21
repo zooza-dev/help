@@ -1,0 +1,93 @@
+{
+  "id": "bookings.list",
+  "menu": "Clients → Bookings",
+  "route": "registrations",
+  "url_template": "https://{region}.zooza.app/#registrations",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "bookings",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Create booking › Choose class",
+      "intro": [],
+      "sections": [
+        "No programme or class chosen"
+      ],
+      "fields": [],
+      "buttons": [
+        "Continue",
+        "Back"
+      ],
+      "route": "registrations/create"
+    },
+    {
+      "title": "Operations",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Operation",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Set in retention",
+            "Set out of retention"
+          ]
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Create booking",
+      "route": "registrations/create"
+    },
+    {
+      "via": "Billing period",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Programme",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Venues",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Instructor",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Auto-enrolment",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Labels",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Created from",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Created to",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Not connected to Zooza AI yet? Connect →",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Customize tile",
+      "error": "TimeoutError"
+    }
+  ]
+}

@@ -87,7 +87,8 @@ def settings_menu(src):
 # Representative records in the Playfulmotion demo account. Programme and class
 # detail screens need a real id; these were picked on 2026-09-20 because the
 # programme has several classes with bookings. Swap them if they stop being typical.
-REPRESENTATIVE = {"course": 150, "schedule": 230, "event": 22131}
+REPRESENTATIVE = {"course": 150, "schedule": 230, "event": 22131,
+                  "registration": 1486, "client": 1951, "order": 26, "contact": 1}
 
 # Programme settings tiles (courses/:id/settings?edit=X) and class detail panels
 # (courses/schedules/:id?edit=X). The tile list is what the app renders on the
@@ -163,7 +164,36 @@ def programme_screens(strings):
     ]
     for o in out[-5:]:
         o["area"] = "files"
-    return out
+
+    r, cl, od, ct = (REPRESENTATIVE[k] for k in ("registration", "client", "order", "contact"))
+    B, C = "Clients → Bookings", "Clients → Clients"
+    booking_tabs = [("payments", "Payments"), ("invoices", "Invoices"), ("payment_plan", "Payment plan"),
+                    ("attendance", "Attendance"), ("credits", "Credits and make-up sessions")]
+    booking_dialogs = [("?edit=status", "Change status"), ("?edit=cancel_registration", "Cancel booking"),
+                       ("/change?action=move", "Move booking"), ("/change?action=copy", "Copy booking"),
+                       ("/network_transfer", "Transfer to network"), ("/credits?action=create_credit", "Add credit")]
+    more = [
+        screen("bookings.list", B, "registrations", "Bookings", ("registrations__",)),
+        screen("bookings.create", f"{B} → Create booking", "registrations/create", "Create booking", ("create_registration__",)),
+        screen("bookings.detail", f"{B} → booking", f"registrations/{r}", "Booking detail", ("registration_detail__",)),
+    ]
+    more += [screen(f"bookings.detail.{tab}", f"{B} → booking → {title}", f"registrations/{r}/{tab}", title, (f"registration_{tab}__",))
+             for tab, title in booking_tabs]
+    more += [screen(f"bookings.detail.{re.sub(r'[^a-z]+', '_', path.strip('/?').lower()).strip('_')}", f"{B} → booking → {title}",
+                    f"registrations/{r}{path}", title, ()) for path, title in booking_dialogs]
+    more += [
+        screen("clients.list", C, "clients", "Clients", ("clients__",)),
+        screen("clients.import", f"{C} → Import", "clients/import", "Import clients", ("import__",)),
+        screen("clients.detail", f"{C} → client", f"clients/{cl}", "Client detail", ("client_detail__", "clients__")),
+        screen("orders.list", "Clients → Orders", "orders", "Orders", ("orders__",)),
+        screen("orders.detail", "Clients → Orders → order", f"orders/{od}", "Order detail", ("order_detail__",)),
+        screen("orders.detail.payments", "Clients → Orders → order → Payments", f"orders/{od}/payments", "Order payments", ()),
+        screen("contacts.list", "Clients → Contacts", "contacts", "Contacts", ("contacts__",)),
+        screen("contacts.detail", "Clients → Contacts → contact", f"contacts/{ct}", "Contact detail", ("contacts__",)),
+    ]
+    for o in more:
+        o["area"] = "bookings" if o["id"].startswith("bookings.") else "clients"
+    return out + more
 
 
 def build():
@@ -331,7 +361,8 @@ FIELDS_JS = r"""
 """
 
 
-AREA_PRODUCT = {"settings": "Settings", "programmes": "Programmes", "classes": "Classes", "sessions": "Classes", "files": "Communication"}
+AREA_PRODUCT = {"settings": "Settings", "programmes": "Programmes", "classes": "Classes", "sessions": "Classes",
+                "files": "Communication", "bookings": "Bookings", "clients": "Clients", "orders": "Orders", "contacts": "Clients"}
 
 
 def area_of(screen):
@@ -394,6 +425,18 @@ def write_jsonl():
     return 0
 
 
+EMAIL_RX = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
+PHONE_RX = re.compile(r"(?<![\d/])\+?\d[\d ]{8,}\d(?![\d/])")
+IBAN_RX = re.compile(r"\b[A-Z]{2}\d{2}[A-Z0-9 ]{10,30}\b")
+
+
+def scrub(text):
+    """The reference is about fields, not people. Whatever the demo account put in a field stays out."""
+    text = EMAIL_RX.sub("client@example.com", text)
+    text = IBAN_RX.sub("GB00 BANK 0000 0000 0000 00", text)
+    return PHONE_RX.sub("+44 7700 900000", text)
+
+
 def card_text(screen, card):
     """One card as the assistant will read it."""
     url = screen["url_template"]
@@ -413,7 +456,7 @@ def card_text(screen, card):
             lines.append(f"    · {o}")
     if card.get("buttons"):
         lines.append("Buttons: " + ", ".join(card["buttons"]))
-    return "\n".join(lines)
+    return scrub("\n".join(lines))
 
 
 # Buttons that open the create form on a list screen, in the order to try them.
@@ -423,7 +466,8 @@ ADD_BUTTONS = ["Add", "Add field", "New form", "Add rate", "Add new notification
 # safe; submitting, deleting or disconnecting is not — the demo account has a live Xero
 # link and a real Stripe connection, and "Run setup again" is a wizard that writes.
 DENY = re.compile(r"^(save|delete|remove|disconnect|sync now|resync|restore|download|regenerate|run setup|get authori|send|log ?out|upload|reset|clear|import|export|pay|checkout|cancel|close|back|submit|confirm|apply|duplicate|archive|activate|deactivate|discard|next|finish|continue|"
-                  r"help & support|more|less|\+|-|\d+)", re.I)
+                  r"help & support|more|less|\+|-|\d+|transfer|refund|approve|reject|charge|mark |unsubscribe|resend|generate|issue|void|"
+                  r"spam|merge|unlink|detach|revoke|block)", re.I)
 CANDIDATES_JS = r"""
 () => {
   const clean = (t) => (t || '').replace(/\s+/g, ' ').trim();

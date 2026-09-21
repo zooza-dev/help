@@ -1,0 +1,138 @@
+{
+  "id": "bookings.detail.invoices",
+  "menu": "Clients → Bookings → booking → Invoices",
+  "route": "registrations/1394/invoices",
+  "url_template": "https://{region}.zooza.app/#registrations/1394/invoices",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "bookings",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Invoice profile",
+      "intro": [],
+      "sections": [
+        "Invoices use Name — set at Default profile"
+      ],
+      "fields": [
+        {
+          "label": "Invoice profile",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Inherit (Name)",
+            "Name",
+            "Playfulmotion Swim Ltd",
+            "New Invoice Profile"
+          ]
+        },
+        {
+          "label": "Bank account",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Default (SK2011000000001234567890)",
+            "SK2011000000001234567890"
+          ]
+        }
+      ],
+      "buttons": [
+        "Save"
+      ]
+    },
+    {
+      "title": "Buyer information",
+      "intro": [
+        "michaldodok@gmail.com · +421902103927"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Add buyer information",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Street",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "City",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "ZIP",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "State / Country",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Business ID",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Tax ID",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "VAT ID",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Email",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Phone",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Invoices use Name — set at Default profile",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Edit",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Edit",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Edit",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "#26",
+      "error": "TimeoutError"
+    }
+  ]
+}

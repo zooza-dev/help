@@ -1,0 +1,86 @@
+{
+  "id": "orders.list",
+  "menu": "Clients → Orders",
+  "route": "orders",
+  "url_template": "https://{region}.zooza.app/#orders",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "clients",
+  "captured": "2026-09-21",
+  "cards": [],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Michal Dodok",
+      "route": "orders/26"
+    },
+    {
+      "via": "Show payments",
+      "route": "orders/26/payments_readonly"
+    },
+    {
+      "via": "Zum Pa",
+      "route": "orders/25"
+    },
+    {
+      "via": "Show payments",
+      "route": "orders/25/payments_readonly"
+    },
+    {
+      "via": "Bombo Faro",
+      "route": "orders/24"
+    },
+    {
+      "via": "Show payments",
+      "route": "orders/24/payments_readonly"
+    },
+    {
+      "via": "Lolek Markovic",
+      "route": "orders/23"
+    },
+    {
+      "via": "Show payments",
+      "route": "orders/23/payments_readonly"
+    },
+    {
+      "via": "Brian James",
+      "route": "orders/22"
+    },
+    {
+      "via": "Chloe Tanase",
+      "route": "orders/21"
+    },
+    {
+      "via": "Brian James",
+      "route": "orders/20"
+    },
+    {
+      "via": "Brian James",
+      "route": "orders/19"
+    },
+    {
+      "via": "Brian James",
+      "route": "orders/18"
+    },
+    {
+      "via": "Chloe Tanase",
+      "route": "orders/14"
+    },
+    {
+      "via": "Chloe Tanase",
+      "route": "orders/13"
+    },
+    {
+      "via": "Chloe Tanase",
+      "route": "orders/12"
+    },
+    {
+      "via": "Test Testovic",
+      "route": "orders/5"
+    }
+  ]
+}

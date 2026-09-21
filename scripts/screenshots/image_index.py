@@ -100,6 +100,19 @@ def by_leaf_title(by_leaf, screen_id):
 
 PROGRAMME_WORDS = re.compile(r"\b(programme|program|course)\b", re.I)
 AREA_HINTS = [   # (regex on heading+alt+filename+article, screen id) — coarse placement when no cue matches
+    (re.compile(r"\bcreate booking\b|\bnew booking\b|\bcreate-booking\b", re.I), "bookings.create"),
+    (re.compile(r"\bbooking(s)?[- ]detail\b|\bopen the booking\b|\bbookings-detail\b", re.I), "bookings.detail"),
+    (re.compile(r"\bpayments? tab\b|\bbookings-payments\b|\bbooking.{0,20}payments\b", re.I), "bookings.detail.payments"),
+    (re.compile(r"\bpayment plan\b", re.I), "bookings.detail.payment_plan"),
+    (re.compile(r"\bcredits? tab\b|\bbooking.{0,20}credits\b|\bmake-up credit", re.I), "bookings.detail.credits"),
+    (re.compile(r"\bchange status\b|\bbooking status\b", re.I), "bookings.detail.edit_status"),
+    (re.compile(r"\bbookings? list\b|\bbookings-list\b|\blist of bookings\b", re.I), "bookings.list"),
+    (re.compile(r"\bclient(s)?[- ](detail|card|record|profile)\b|\bopen the client\b", re.I), "clients.detail"),
+    (re.compile(r"\bclient import\b|\bimport clients\b|\bclient-import\b", re.I), "clients.import"),
+    (re.compile(r"\bclients? list\b|\bclients-list\b", re.I), "clients.list"),
+    (re.compile(r"\border detail\b|\bopen the order\b", re.I), "orders.detail"),
+    (re.compile(r"\borders? list\b|\borders-list\b", re.I), "orders.list"),
+    (re.compile(r"\bcontacts? list\b|\bcontacts-list\b|\bcontact detail\b", re.I), "contacts.list"),
     (re.compile(r"\bnew document\b|\bdocument settings\b|\bupload(ing)? (a )?(document|file)\b", re.I), "files.add_new"),
     (re.compile(r"\bdynamic document\b", re.I), "files.dynamic_document"),
     (re.compile(r"\bdocuments?\b.*\b(library|list|documents\.md)\b|\bdocuments-\d", re.I), "files.list"),
@@ -150,6 +163,7 @@ def main():
     ap.add_argument("--manifest", action="store_true", help="also write a capture.py manifest for the placed images")
     ap.add_argument("--flagged-only", action="store_true", help="manifest: only images in articles flagged needs_screenshot_replacement")
     ap.add_argument("--screens", help="manifest: only screens whose id starts with one of these comma-separated prefixes")
+    ap.add_argument("--articles", help="manifest: also every placed image in articles whose path contains one of these comma-separated strings")
     args = ap.parse_args()
     by_leaf = load_screens()
     cards = load_cards()
@@ -177,7 +191,7 @@ def main():
                 alt, rel, name = m.group(1), m.group(2), m.group(3)
                 cue = last_cue if last_cue and i - cue_line <= 25 else None
                 ctx = f"{heading} {alt} {name} {os.path.basename(f)}".lower()
-                area_words = {"settings": ["settings"], "programmes": []}.get(args.area, [args.area])
+                area_words = {"settings": ["settings"], "programmes": [], "all": []}.get(args.area, [args.area])
                 if area_words and not any(w in ctx for w in area_words) and not cue:
                     continue
                 screen, how = guess_screen(by_leaf, cue, heading, alt, name, cue is not None and cue_programme)
@@ -213,7 +227,8 @@ def main():
         for r in sorted(placed, key=lambda r: (r["screen"], r["image"])):
             if r["image"] in seen:
                 continue
-            if args.flagged_only and not r["flagged"]:
+            wanted_article = args.articles and any(a in r["article"] for a in args.articles.split(","))
+            if args.flagged_only and not r["flagged"] and not wanted_article:
                 continue
             if prefixes and not r["screen"].startswith(prefixes):
                 continue

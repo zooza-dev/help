@@ -1,0 +1,183 @@
+{
+  "id": "bookings.detail.payments",
+  "menu": "Clients → Bookings → booking → Payments",
+  "route": "registrations/1394/payments",
+  "url_template": "https://{region}.zooza.app/#registrations/1394/payments",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "bookings",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Payments status",
+      "intro": [
+        "4. October 2026 — 13 days remaining",
+        "Total charge + Registration fee - Payments received - Discounts.",
+        "Net position for this booking. Zero means settled.",
+        "The original price for the class excluding fees, discounts, etc. at the time of booking."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Add payment",
+        "Extend grace period",
+        "Edit"
+      ]
+    },
+    {
+      "title": "Invoices",
+      "intro": [
+        "Invoice profile, VAT, buyer details and invoice creation now have their own page."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Payment plan",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Automatic payments",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Direct Debit",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Create"
+      ]
+    },
+    {
+      "title": "List of payments",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Online payments",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Invoices › Invoice profile",
+      "intro": [],
+      "sections": [
+        "Invoices use Name — set at Default profile"
+      ],
+      "fields": [
+        {
+          "label": "Invoice profile",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Inherit (Name)",
+            "Name",
+            "Playfulmotion Swim Ltd",
+            "New Invoice Profile"
+          ]
+        },
+        {
+          "label": "Bank account",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Default (SK2011000000001234567890)",
+            "SK2011000000001234567890"
+          ]
+        }
+      ],
+      "buttons": [
+        "Save"
+      ],
+      "route": "registrations/1394/invoices"
+    },
+    {
+      "title": "Add payment",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Payment method",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Cash",
+            "By bank transfer"
+          ]
+        },
+        {
+          "label": "Paid",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Date payment received",
+          "type": "date",
+          "help": ""
+        },
+        {
+          "label": "Note",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Issue an invoice",
+          "type": "checkbox",
+          "help": ""
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Invoices",
+      "route": "registrations/1394/invoices"
+    },
+    {
+      "via": "Extend grace period",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Edit",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Edit",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Edit",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Edit",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Open invoices",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Change",
+      "error": "TimeoutError"
+    }
+  ]
+}

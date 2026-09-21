@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-13"
+last_converted: "2026-09-21"
 ---
 
 # Bookings
@@ -332,7 +332,7 @@ Click **Change status** to apply.
 
 > **Navigation:** Booking detail → **Cancel booking**.
 
-![Cancel booking](../../assets/images/reference/bookings-cancel.png)
+![Cancel booking form: cancel immediately or schedule cancellation for a later date, with a confirmation email option](../../assets/images/reference/bookings-cancel.png)
 
 Cancellation notice: "By cancelling the booking, the client will stop receiving notifications and all future payments will be cancelled. The booking data will still appear in reports, such as the instructor's report."
 
@@ -543,7 +543,7 @@ Transfer a payment to another booking — for example if a payment was recorded 
 
 Button: **Move payment**. Select the target booking by booking number or client name, then confirm.
 
-![Screenshot — bookings list](../../assets/images/bookings-list-01.png)
+![Bookings list with the filter row and booking tiles](../../assets/images/bookings-list-01.png)
 
 ## Attendance Tab
 

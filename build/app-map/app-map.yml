@@ -728,3 +728,217 @@ screens:
   - video_detail__
   strings: 0
   area: files
+- id: bookings.list
+  menu: Clients → Bookings
+  title: Bookings
+  route: registrations
+  url_template: https://{region}.zooza.app/#registrations
+  roles: *id001
+  string_prefixes:
+  - registrations__
+  strings: 138
+  area: bookings
+- id: bookings.create
+  menu: Clients → Bookings → Create booking
+  title: Create booking
+  route: registrations/create
+  url_template: https://{region}.zooza.app/#registrations/create
+  roles: *id001
+  string_prefixes:
+  - create_registration__
+  strings: 24
+  area: bookings
+- id: bookings.detail
+  menu: Clients → Bookings → booking
+  title: Booking detail
+  route: registrations/1486
+  url_template: https://{region}.zooza.app/#registrations/1486
+  roles: *id001
+  string_prefixes:
+  - registration_detail__
+  strings: 205
+  area: bookings
+- id: bookings.detail.payments
+  menu: Clients → Bookings → booking → Payments
+  title: Payments
+  route: registrations/1486/payments
+  url_template: https://{region}.zooza.app/#registrations/1486/payments
+  roles: *id001
+  string_prefixes:
+  - registration_payments__
+  strings: 195
+  area: bookings
+- id: bookings.detail.invoices
+  menu: Clients → Bookings → booking → Invoices
+  title: Invoices
+  route: registrations/1486/invoices
+  url_template: https://{region}.zooza.app/#registrations/1486/invoices
+  roles: *id001
+  string_prefixes:
+  - registration_invoices__
+  strings: 1
+  area: bookings
+- id: bookings.detail.payment_plan
+  menu: Clients → Bookings → booking → Payment plan
+  title: Payment plan
+  route: registrations/1486/payment_plan
+  url_template: https://{region}.zooza.app/#registrations/1486/payment_plan
+  roles: *id001
+  string_prefixes:
+  - registration_payment_plan__
+  strings: 6
+  area: bookings
+- id: bookings.detail.attendance
+  menu: Clients → Bookings → booking → Attendance
+  title: Attendance
+  route: registrations/1486/attendance
+  url_template: https://{region}.zooza.app/#registrations/1486/attendance
+  roles: *id001
+  string_prefixes:
+  - registration_attendance__
+  strings: 0
+  area: bookings
+- id: bookings.detail.credits
+  menu: Clients → Bookings → booking → Credits and make-up sessions
+  title: Credits and make-up sessions
+  route: registrations/1486/credits
+  url_template: https://{region}.zooza.app/#registrations/1486/credits
+  roles: *id001
+  string_prefixes:
+  - registration_credits__
+  strings: 0
+  area: bookings
+- id: bookings.detail.edit_status
+  menu: Clients → Bookings → booking → Change status
+  title: Change status
+  route: registrations/1486?edit=status
+  url_template: https://{region}.zooza.app/#registrations/1486?edit=status
+  roles: *id001
+  string_prefixes: []
+  strings: 0
+  area: bookings
+- id: bookings.detail.edit_cancel_registration
+  menu: Clients → Bookings → booking → Cancel booking
+  title: Cancel booking
+  route: registrations/1486?edit=cancel_registration
+  url_template: https://{region}.zooza.app/#registrations/1486?edit=cancel_registration
+  roles: *id001
+  string_prefixes: []
+  strings: 0
+  area: bookings
+- id: bookings.detail.change_action_move
+  menu: Clients → Bookings → booking → Move booking
+  title: Move booking
+  route: registrations/1486/change?action=move
+  url_template: https://{region}.zooza.app/#registrations/1486/change?action=move
+  roles: *id001
+  string_prefixes: []
+  strings: 0
+  area: bookings
+- id: bookings.detail.change_action_copy
+  menu: Clients → Bookings → booking → Copy booking
+  title: Copy booking
+  route: registrations/1486/change?action=copy
+  url_template: https://{region}.zooza.app/#registrations/1486/change?action=copy
+  roles: *id001
+  string_prefixes: []
+  strings: 0
+  area: bookings
+- id: bookings.detail.network_transfer
+  menu: Clients → Bookings → booking → Transfer to network
+  title: Transfer to network
+  route: registrations/1486/network_transfer
+  url_template: https://{region}.zooza.app/#registrations/1486/network_transfer
+  roles: *id001
+  string_prefixes: []
+  strings: 0
+  area: bookings
+- id: bookings.detail.credits_action_create_credit
+  menu: Clients → Bookings → booking → Add credit
+  title: Add credit
+  route: registrations/1486/credits?action=create_credit
+  url_template: https://{region}.zooza.app/#registrations/1486/credits?action=create_credit
+  roles: *id001
+  string_prefixes: []
+  strings: 0
+  area: bookings
+- id: clients.list
+  menu: Clients → Clients
+  title: Clients
+  route: clients
+  url_template: https://{region}.zooza.app/#clients
+  roles: *id001
+  string_prefixes:
+  - clients__
+  strings: 32
+  area: clients
+- id: clients.import
+  menu: Clients → Clients → Import
+  title: Import clients
+  route: clients/import
+  url_template: https://{region}.zooza.app/#clients/import
+  roles: *id001
+  string_prefixes:
+  - import__
+  strings: 68
+  area: clients
+- id: clients.detail
+  menu: Clients → Clients → client
+  title: Client detail
+  route: clients/1951
+  url_template: https://{region}.zooza.app/#clients/1951
+  roles: *id001
+  string_prefixes:
+  - client_detail__
+  - clients__
+  strings: 170
+  area: clients
+- id: orders.list
+  menu: Clients → Orders
+  title: Orders
+  route: orders
+  url_template: https://{region}.zooza.app/#orders
+  roles: *id001
+  string_prefixes:
+  - orders__
+  strings: 15
+  area: clients
+- id: orders.detail
+  menu: Clients → Orders → order
+  title: Order detail
+  route: orders/26
+  url_template: https://{region}.zooza.app/#orders/26
+  roles: *id001
+  string_prefixes:
+  - order_detail__
+  strings: 60
+  area: clients
+- id: orders.detail.payments
+  menu: Clients → Orders → order → Payments
+  title: Order payments
+  route: orders/26/payments
+  url_template: https://{region}.zooza.app/#orders/26/payments
+  roles: *id001
+  string_prefixes: []
+  strings: 0
+  area: clients
+- id: contacts.list
+  menu: Clients → Contacts
+  title: Contacts
+  route: contacts
+  url_template: https://{region}.zooza.app/#contacts
+  roles: *id001
+  string_prefixes:
+  - contacts__
+  strings: 126
+  area: clients
+- id: contacts.detail
+  menu: Clients → Contacts → contact
+  title: Contact detail
+  route: contacts/1
+  url_template: https://{region}.zooza.app/#contacts/1
+  roles: *id001
+  string_prefixes:
+  - contacts__
+  strings: 126
+  area: clients

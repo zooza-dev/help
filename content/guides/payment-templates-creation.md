@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0086_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: "2026-09-20"
+last_converted: "2026-09-21"
 related_articles: ["price-and-payment-setup","membership-fee-setup","automatic-payment-reminders","session-payment-adjustments"]
 ---
 <!-- REVIEW: add all types of prepaid payment frequencies -->
@@ -231,7 +231,6 @@ booking. Such bookings are marked as late by the application and require manual 
 
 ![Screenshot](../../assets/images/payment-templates-creation-27.png)
 
-![Screenshot](../../assets/images/allowing-multiple-registration-03.png)
 
 The payment schedule entered in this way will be automatically reflected in the client's profile and invoices for payments will be issued and notifications for payments will also be sent to the client based on this schedule.
 
@@ -249,7 +248,6 @@ The payment schedule entered in this way will be automatically reflected in the 
 
 If you have multiple bookings with active payment templates, use the *Payments - Scheduled payments Overview* section for a better overview of the next scheduled payments issued.
 
-![Screenshot](../../assets/images/allowing-multiple-registration-03.png)
 
 This way you can quickly and easily track all active payments from the date you have selected.
 

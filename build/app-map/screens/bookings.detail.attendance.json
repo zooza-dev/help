@@ -1,0 +1,56 @@
+{
+  "id": "bookings.detail.attendance",
+  "menu": "Clients → Bookings → booking → Attendance",
+  "route": "registrations/1394/attendance",
+  "url_template": "https://{region}.zooza.app/#registrations/1394/attendance",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "bookings",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Attendance",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Book a session"
+      ]
+    },
+    {
+      "title": "(page)",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Reason for cancelling",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Not specified",
+            "Sickness",
+            "Travel",
+            "No reason provided"
+          ]
+        },
+        {
+          "label": "Personal feedback (visible to parent)",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Not connected to Zooza AI yet? Connect →",
+      "route": "mcp"
+    }
+  ]
+}

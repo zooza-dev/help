@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-04-06"
+last_converted: "2026-09-21"
 ---
 
 # Customizing the booking tile
@@ -25,7 +25,7 @@ Each row in the Bookings list is a **booking tile** — a compact card showing t
 <video src="../../assets/videos/booking-tile-customize.webm" controls style={{maxWidth: '100%', borderRadius: '6px'}}></video>
 
 1. Go to **Clients** → **Bookings**.
-   ![Screenshot — booking tile customization](../../assets/images/booking-tile-customization-01.png)
+   ![A booking tile on the Bookings list: client, attendee, programme/class, payment summary and quick links](../../assets/images/booking-tile-customization-01.png)
 2. Click **Customize tile** in the top-right corner of the list.
    ![Screenshot — booking tile customization](../../assets/images/booking-tile-customization-02.png)
 

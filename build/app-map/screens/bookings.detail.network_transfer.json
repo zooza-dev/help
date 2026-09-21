@@ -1,0 +1,50 @@
+{
+  "id": "bookings.detail.network_transfer",
+  "menu": "Clients → Bookings → booking → Transfer to network",
+  "route": "registrations/1394/network_transfer",
+  "url_template": "https://{region}.zooza.app/#registrations/1394/network_transfer",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "bookings",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Select Company",
+      "intro": [
+        "Select the target company for this registration transfer."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Continue"
+      ]
+    },
+    {
+      "title": "Options",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Preview & Confirm",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Done",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

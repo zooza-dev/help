@@ -1,0 +1,60 @@
+{
+  "id": "bookings.create",
+  "menu": "Clients → Bookings → Create booking",
+  "route": "registrations/create",
+  "url_template": "https://{region}.zooza.app/#registrations/create",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "bookings",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Choose class",
+      "intro": [],
+      "sections": [
+        "No programme or class chosen"
+      ],
+      "fields": [],
+      "buttons": [
+        "Continue",
+        "Back"
+      ]
+    },
+    {
+      "title": "Create a booking",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Continue",
+        "Back"
+      ]
+    },
+    {
+      "title": "Create booking",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Continue",
+        "Back"
+      ]
+    },
+    {
+      "title": "Booking created",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Continue",
+        "Back"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

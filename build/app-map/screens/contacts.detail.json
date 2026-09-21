@@ -1,0 +1,173 @@
+{
+  "id": "contacts.detail",
+  "menu": "Clients → Contacts → contact",
+  "route": "contacts/1",
+  "url_template": "https://{region}.zooza.app/#contacts/1",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "clients",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Lou Falle",
+      "intro": [
+        "Thursday, 17. September 2026, 06:52:43"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "First name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Email",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Phone",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save"
+      ]
+    },
+    {
+      "title": "Status and owner",
+      "intro": [
+        "A converted contact keeps this status while it is linked to its client. Unlink the client to change it."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Owner",
+          "type": "combobox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save"
+      ]
+    },
+    {
+      "title": "Client relationship",
+      "intro": [
+        "Thursday, 17. September 2026, 06:53:20"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Unlink"
+      ]
+    },
+    {
+      "title": "Label",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "To-dos",
+      "intro": [
+        "No to-dos for this contact yet."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Erase contact",
+      "intro": [
+        "This permanently deletes the contact together with its submissions and notes. It cannot be undone."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Erase contact"
+      ]
+    },
+    {
+      "title": "Timeline",
+      "intro": [
+        "Thursday, 17. September 2026, 06:52:43",
+        "https://www.playfulmotion.co.uk/contact-us/",
+        "GENERAL TERMS AND CONDITIONS FOR USERS",
+        "Conditions for processing personal data"
+      ],
+      "sections": [
+        "Enquiry received · Thursday, 17. September 2026, 06:52:43"
+      ],
+      "fields": [
+        {
+          "label": "New note",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Add note",
+        "Mark as spam"
+      ]
+    },
+    {
+      "title": "Create todo › Create todo",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Todo",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save todo",
+        "Cancel"
+      ]
+    },
+    {
+      "title": "Open client › History",
+      "intro": [],
+      "sections": [
+        "Client Records"
+      ],
+      "fields": [],
+      "buttons": [
+        "New message"
+      ],
+      "route": "clients/1034"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Open client",
+      "route": "clients/1034"
+    },
+    {
+      "via": "Add note",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Open client",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "https://www.playfulmotion.co.uk/contact-us/",
+      "error": "TimeoutError"
+    }
+  ]
+}

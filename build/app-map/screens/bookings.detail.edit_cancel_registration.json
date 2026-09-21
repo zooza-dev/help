@@ -1,0 +1,119 @@
+{
+  "id": "bookings.detail.edit_cancel_registration",
+  "menu": "Clients → Bookings → booking → Cancel booking",
+  "route": "registrations/1394?edit=cancel_registration",
+  "url_template": "https://{region}.zooza.app/#registrations/1394?edit=cancel_registration",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "bookings",
+  "captured": "2026-09-21",
+  "cards": [
+    {
+      "title": "Cancel booking",
+      "intro": [
+        "By cancelling the booking, the client will stop receiving notifications and all future payments will be cancelled. The booking data will still appear in reports, such as the lecturer's report."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Cancellation type",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Cancel immediately",
+            "Schedule cancellation for a later date"
+          ]
+        },
+        {
+          "label": "Send confirmation email",
+          "type": "checkbox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Proceed"
+      ]
+    },
+    {
+      "title": "Proceed › Booking",
+      "intro": [
+        "Friday, 4. September 2026, 13:01:19 2 weeks ago",
+        "Extra make-up sessions (in addition to the limit for make-up sessions for the programme)",
+        "Guest access to the booking",
+        "Additional email for reminders before sessions"
+      ],
+      "sections": [
+        "Options"
+      ],
+      "fields": [
+        {
+          "label": "Business booking",
+          "type": "toggle",
+          "help": ""
+        },
+        {
+          "label": "Send reminders of the upcoming sessions",
+          "type": "checkbox",
+          "help": "By checking the box, the client will automatically receive reminders about the upcoming sessions."
+        },
+        {
+          "label": "Send notifications about upcoming sessions",
+          "type": "checkbox",
+          "help": "By checking the box, the client will automatically receive notification emails regarding upcoming sessions."
+        },
+        {
+          "label": "Occupied slots",
+          "type": "number",
+          "help": "Set the number of spaces reserved by the client in a session"
+        },
+        {
+          "label": "Extra limit for make-up sessions",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Email address",
+          "type": "text",
+          "help": "If you want to give access to the booking (in the clients profile) to a person other than the client, enter the person's email address. This person will have the same access as the client."
+        },
+        {
+          "label": "Send reminders of the upcoming sessions.",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Email address",
+          "type": "text",
+          "help": "If you want someone else to receive notifications about upcoming sessions, enter their email address. This person will not have access to the enrolment."
+        },
+        {
+          "label": "Send notifications to the additional email address only",
+          "type": "checkbox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Delete booking",
+        "Close",
+        "Change widget",
+        "Save"
+      ],
+      "route": "registrations/1394"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "registrations/1394?edit=cancel_registration"
+    },
+    {
+      "via": "Proceed",
+      "route": "registrations/1394"
+    }
+  ]
+}
