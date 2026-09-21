@@ -1,0 +1,127 @@
+{
+  "id": "classes.copy",
+  "menu": "Activities → Classes → class → Copy class",
+  "route": "courses/schedules/245/copy",
+  "url_template": "https://{region}.zooza.app/#courses/schedules/245/copy",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "1. Basic data",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Class name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Billing period",
+          "type": "combobox",
+          "help": ""
+        },
+        {
+          "label": "Venues",
+          "type": "combobox",
+          "help": ""
+        },
+        {
+          "label": "Programme",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Baby Class",
+            "Baby Class",
+            "Baby Classes",
+            "Birthday Party",
+            "Dance like a Pro",
+            "Dancing on the Water",
+            "English & Math",
+            "Individual Lessons",
+            "Kids Club",
+            "Loud Event",
+            "Movers",
+            "Pop-Up Motion Adventures",
+            "Summer Swimming",
+            "Trailblazer Tumblers (6–8 Years)",
+            "Trial Interest",
+            "👣 Mighty Movers (3–5 years)",
+            "💃 Wiggle Wonders (0–12 months)",
+            "💃 Wiggle Wonders (0–12 months) (Copy)",
+            "🤹‍♂️ Bounce & Balance (1–3 years)"
+          ]
+        },
+        {
+          "label": "Instructor",
+          "type": "combobox",
+          "help": ""
+        },
+        {
+          "label": "Class capacity",
+          "type": "number",
+          "help": "Maximum number of available slots"
+        },
+        {
+          "label": "Programme price (optional)",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Registration fee (optional)",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Online booking",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Copy payment plan settings",
+          "type": "checkbox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "×",
+        "Continue"
+      ]
+    },
+    {
+      "title": "2. session dates",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Continue"
+      ]
+    },
+    {
+      "title": "3. Bookings",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Continue"
+      ]
+    },
+    {
+      "title": "4. Done",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    }
+  ],
+  "notes": [
+    "Current price on programme is £10.00",
+    "Registration fee on programme is £0.00"
+  ],
+  "discovered": []
+}

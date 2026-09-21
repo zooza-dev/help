@@ -1,6 +1,6 @@
 """Build Gemini embeddings from knowledge base JSONL files and upload to GCS.
 
-Reads canonical.jsonl + faq.jsonl from build/exports/agent/,
+Reads canonical.jsonl + faq.jsonl + screens.jsonl from build/exports/agent/,
 generates embeddings using Gemini embedding API, and uploads
 embeddings.npy + records.json to a GCS bucket.
 
@@ -31,9 +31,13 @@ EMBEDDING_MODEL = "gemini-embedding-001"
 
 
 def load_records(exports_dir: Path) -> list[dict]:
-    """Load all records from canonical.jsonl and faq.jsonl."""
+    """Load all records from canonical.jsonl, faq.jsonl and screens.jsonl.
+
+    screens.jsonl is the per-screen field reference read out of the live app by
+    scripts/screenshots/app_map.py fields — it needs a browser session, so it is
+    committed rather than rebuilt here, and skipped when absent."""
     records = []
-    for name in ("canonical.jsonl", "faq.jsonl"):
+    for name in ("canonical.jsonl", "faq.jsonl", "screens.jsonl"):
         path = exports_dir / name
         if not path.exists():
             logger.warning("File not found, skipping: %s", path)

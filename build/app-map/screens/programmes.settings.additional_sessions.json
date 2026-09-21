@@ -1,0 +1,37 @@
+{
+  "id": "programmes.settings.additional_sessions",
+  "menu": "Activities → Programmes → programme → Settings → Additional sessions",
+  "route": "courses/150/settings?edit=additional_sessions",
+  "url_template": "https://{region}.zooza.app/#courses/150/settings?edit=additional_sessions",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Additional sessions",
+      "intro": [
+        "Let clients buy extra sessions on top of the ones their booking already covers."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Allow additional sessions",
+          "type": "toggle",
+          "help": "When switched on, clients can book additional sessions from the Client Profile."
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/150/settings?edit=additional_sessions"
+    }
+  ]
+}

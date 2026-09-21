@@ -1,0 +1,168 @@
+{
+  "id": "classes.detail.price",
+  "menu": "Activities → Classes → class → Pricing",
+  "route": "courses/schedules/245?edit=price",
+  "url_template": "https://{region}.zooza.app/#courses/schedules/245?edit=price",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Price and payment",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Programme price (optional)",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Registration fee (optional)",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Billable sessions",
+          "type": "number",
+          "help": "Mark the number of sessions you’ll invoice. This helps Zooza understand how many billable sessions your class should have. If you use a total price per class, Zooza will use this to calculate the unit price per session."
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Invoicing",
+      "intro": [],
+      "sections": [
+        "Invoices use Name — set at Default profile"
+      ],
+      "fields": [
+        {
+          "label": "Invoice profile",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Inherit (Name)",
+            "Name",
+            "Playfulmotion Swim Ltd",
+            "New Invoice Profile"
+          ]
+        },
+        {
+          "label": "Bank account",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Default (SK2011000000001234567890)",
+            "SK2011000000001234567890"
+          ]
+        }
+      ],
+      "buttons": [
+        "Save"
+      ]
+    },
+    {
+      "title": "Payment frequency",
+      "intro": [
+        "No payment plans are assigned to the class"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Manage",
+        "▾"
+      ]
+    },
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    }
+  ],
+  "notes": [
+    "Current price on programme is £10.00",
+    "Registration fee on programme is £0.00"
+  ],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/schedules/245?edit=price"
+    },
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    },
+    {
+      "via": "Invoices use Name — set at Default profile",
+      "route": "courses/schedules/245?edit=price"
+    },
+    {
+      "via": "Manage",
+      "route": "courses/schedules/245?edit=price"
+    },
+    {
+      "via": "▾",
+      "route": "courses/schedules/245?edit=price"
+    }
+  ]
+}

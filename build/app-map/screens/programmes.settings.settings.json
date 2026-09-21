@@ -1,0 +1,126 @@
+{
+  "id": "programmes.settings.settings",
+  "menu": "Activities → Programmes → programme → Settings → Programme settings",
+  "route": "courses/150/settings?edit=settings",
+  "url_template": "https://{region}.zooza.app/#courses/150/settings?edit=settings",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Basic informations",
+      "intro": [
+        "Booking for the full programme duration"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Programme name",
+          "type": "text",
+          "help": "This is the official name of the programme that clients will see when they select it in the booking form on your website."
+        },
+        {
+          "label": "URL address",
+          "type": "text",
+          "help": "Enter the URL address where your clients can find out more about the programme"
+        },
+        {
+          "label": "Programme description",
+          "type": "text",
+          "help": "Describe your programme, its specifics- it can help registrants to choose the best one for them. The description will also be displayed during online booking."
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Additional settings",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Programme type",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Programme (instructors, sessions)",
+            "Session (speakers, lectures)",
+            "Online session (speakers, lectures)",
+            "Photography"
+          ]
+        },
+        {
+          "label": "Target audience / Class type",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Group Classes",
+            "1-To-1 classes"
+          ]
+        },
+        {
+          "label": "For children",
+          "type": "toggle",
+          "help": "The programme for children will use a different wording for some texts. For example, in the booking form, instead of \\'Name\\', \\'Parent's name\\'"
+        },
+        {
+          "label": "Archive",
+          "type": "toggle",
+          "help": "The archived programme will only be displayed in the archived programme list in the app. You can hide older programmes that are no longer in the menu so that they do not interfere with your daily work"
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Labels and colour",
+      "intro": [
+        "Enter a tag name to quickly find the programme in the programme list. Enter a new name to create the tag or select it from the list of tags already created.",
+        "Click on the colour to select the colour suitable for your programme. This colour is for quick visual orientation of your programme offer and for your enjoyment. The programme color scheme is displayed in the calendar on your website as well as in the calendar directly in the app.",
+        "In the 1970s, a wave of drug epidemics swept through America, bringing with it increased levels of aggression and violence. Two officers at the Seattle Correctional Facility - Gene Baker and Ron Miller - dealt with this problem on a daily basis. In desperation, they decided on March 1, 1979, based on Professor Schaus' research up to that time, to try painting the holding cells pink. The result was 156 days without incident. Yes, pink reduces aggression, and that includes men.",
+        "Nothing. Emptiness. Absence of colour, space, thought. Purity. Endless possibilities. There are few colours that evoke such different emotions. Artists have long been fascinated by emptiness, and almost everyone has gone through a period of trying to understand it. In our case, nothing, just means that your programme will be devoid of colour. Well truthfully. Without colour, the world is kind of black.",
+        "Tiziano Vecelli was a Renaissance painter who loved the colour red. He was able to apply it everywhere, but he liked it best on his hair. That's why you can find hair dyes with this name in the shops today.",
+        "In September 1907, a sun burnt man was sitting behind his desk on Italian island Isola del Garda. A month has passed since his return and he still felt the ache and pain from the journey. Parisian newspaper le Matin printed a challenge in january of that year: Will anyone agree to go, this summer, from Peking to Paris by motorcar? That man - Prince Borghese took the challenge and went on an 12.000 miles long adventure on his 40-HP Italia model from Turin. In honour of his victory, the original hue of his car, became Italy's national racing colour later to be adopted by Enzo Ferrari."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Metadata",
+      "intro": [
+        "No metadata yet. Add a key-value pair below to label or describe this programme."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Add metadata › Metadata",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Key",
+          "type": "combobox",
+          "help": ""
+        }
+      ],
+      "buttons": [],
+      "route": "courses/150/settings?edit=settings"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/150/settings?edit=settings"
+    },
+    {
+      "via": "Add metadata",
+      "route": "courses/150/settings?edit=settings"
+    }
+  ]
+}

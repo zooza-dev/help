@@ -1,0 +1,144 @@
+{
+  "id": "settings.invoice_settings",
+  "menu": "Settings → Billing & Payments → Invoices",
+  "route": "settings/invoice_settings",
+  "url_template": "https://{region}.zooza.app/#settings/invoice_settings",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "Invoice settings",
+      "intro": [
+        "Connect Zooza with your Xero account to automatically create and sync invoices.Xero will generate invoices based on your Zooza data, and invoice details will be synced back to Zooza.",
+        "In this section you can set up automatic invoice generation. Invoices will be generated automatically whenever the payment status changes to \"paid\" on the booking. This means that multiple invoices can be generated for one booking. For example, if a client pays an outstanding amount of â‚¬50 and thus settles his debt, an invoice will be generated. If, during the programme, a situation arises where a client moves to a class worth â‚¬70 and subsequently pays the remaining â‚¬20, another invoice will be generated."
+      ],
+      "sections": [
+        "Invoicing system",
+        "Automatic invoice generation upon payment"
+      ],
+      "fields": [
+        {
+          "label": "Choose invoicing system",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Default",
+            "Xero",
+            "Zooza Invoice - beta"
+          ]
+        },
+        {
+          "label": "Enable automatic invoice generation",
+          "type": "toggle",
+          "help": "If checked, the application will generate invoices to clients."
+        },
+        {
+          "label": "Debt is fully paid",
+          "type": "toggle",
+          "help": "An invoice will be generated when the order reaches fully paid status."
+        },
+        {
+          "label": "Down payment is paid",
+          "type": "toggle",
+          "help": "An invoice will be generated when the down payment for an order is paid."
+        },
+        {
+          "label": "Split down payment invoice",
+          "type": "toggle",
+          "help": "Required in some jurisdictions (e.g. HU, RO) where tax law mandates a separate invoice for each received payment. When enabled, paying the down payment issues an invoice for only the down payment amount; the remaining balance is deferred and invoiced when subsequently paid."
+        }
+      ],
+      "buttons": [
+        "Save"
+      ]
+    },
+    {
+      "title": "VAT",
+      "intro": [],
+      "sections": [
+        "VAT Levels",
+        "Add new"
+      ],
+      "fields": [
+        {
+          "label": "Application of VAT",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Excluding VAT from gross amount (assuming that prices are including vat)",
+            "Adding VAT to net amount (assuming that prices are without vat)"
+          ]
+        },
+        {
+          "label": "Name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "VAT",
+          "type": "number",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save",
+        "Sync"
+      ]
+    },
+    {
+      "title": "Invoice Line Types",
+      "intro": [
+        "Multi-line invoicing is active. Each enabled type will appear as a separate line on the invoice.",
+        "Programme Payment Custom label Revenue Account Code 270 — Interest Income 260 — Other Revenue 200 — Sales",
+        "Registration Fee Custom label Revenue Account Code 270 — Interest Income 260 — Other Revenue 200 — Sales",
+        "Discount Custom label Revenue Account Code 270 — Interest Income 260 — Other Revenue 200 — Sales"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Custom label",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "settings__engine_accounts__resync",
+        "settings__engine_accounts__clear",
+        "Programmes",
+        "Products",
+        "Save"
+      ]
+    },
+    {
+      "title": "Products › Invoice Line Types",
+      "intro": [
+        "Multi-line invoicing is active. Each enabled type will appear as a separate line on the invoice.",
+        "Product Payment Custom label Revenue Account Code 270 — Interest Income 260 — Other Revenue 200 — Sales",
+        "Discount Custom label Revenue Account Code 270 — Interest Income 260 — Other Revenue 200 — Sales"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Custom label",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "settings__engine_accounts__resync",
+        "settings__engine_accounts__clear",
+        "Programmes",
+        "Products",
+        "Save"
+      ]
+    }
+  ],
+  "notes": [
+    "Connected to Xero Expires on: 18. November 2026 Sync now Disconnect",
+    "Multi-line invoicing is active. Each enabled type will appear as a separate line on the invoice."
+  ],
+  "discovered": []
+}

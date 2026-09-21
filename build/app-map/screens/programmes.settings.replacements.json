@@ -1,0 +1,210 @@
+{
+  "id": "programmes.settings.replacements",
+  "menu": "Activities → Programmes → programme → Settings → Make-up sessions",
+  "route": "courses/150/settings?edit=replacements",
+  "url_template": "https://{region}.zooza.app/#courses/150/settings?edit=replacements",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Make-up sessions options",
+      "intro": [],
+      "sections": [
+        "Custom make-up sessions",
+        "Make-up sessions from other companies"
+      ],
+      "fields": [
+        {
+          "label": "Allow make-up sessions",
+          "type": "toggle",
+          "help": "Check to enable the use of make-up sessions for this programme based on your settings."
+        },
+        {
+          "label": "Make-up sessions waitlist",
+          "type": "toggle",
+          "help": "Clients will be able to enrol on a waitlist for an make-up session"
+        },
+        {
+          "label": "Allow the use of credit for a make-up session as a discount when purchasing a programme",
+          "type": "toggle",
+          "help": "Credits allocated to clients have a unit value calculated from the class price. If this option is enabled, the client will be offered the opportunity to use such credits as a discount on the purchase when enrolling or the next programme. The credits will be automatically used and the client will lose the entitlement for these make-up sessions."
+        },
+        {
+          "label": "Allow tailored make-up sessions",
+          "type": "toggle",
+          "help": "Clients will be able to propose a tailored make-up session date according to their preferences. Each request for a tailored make-up session will be approved by their instructor."
+        },
+        {
+          "label": "Automatic approval of tailored make-up sessions",
+          "type": "toggle",
+          "help": "If this instructor is available on this date, the make-up session will be automatically approved."
+        },
+        {
+          "label": "Allow make-up sessions at other companies",
+          "type": "toggle",
+          "help": "It will allow clients from other companies to replace sessions in this programme. You manage the companies whose clients can use the make-up sessions in the settings."
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Make-up sessions settings",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Limit for make-up sessions",
+          "type": "number",
+          "help": "The number is set for each booking and within a set period. If the value is set to 0, the number of make-up sessions = the number of sessions in the class."
+        },
+        {
+          "label": "Number of days to use make-up sessions",
+          "type": "number",
+          "help": "The specified number of days will start counting down according to the settings below - before or after the class ends. So for example if you set the limit to 10 days, then the last day when clients can use their make-up sessions would be the last class date plus 10 days. This setting will limit the length of validity for make-up sessions that is specified in the general settings. If the value is set to 0, the expiration of make-up sessions applies from the general settings."
+        },
+        {
+          "label": "Apply days",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Before end of class",
+            "After end of class"
+          ]
+        },
+        {
+          "label": "Allow clients to reschedule/change an already selected make-up session",
+          "type": "toggle",
+          "help": "If this setting is turned off, clients will not be able to change an already scheduled make-up session. However, they will still be able to cancel."
+        },
+        {
+          "label": "Make-up sessions are assigned by an administrator",
+          "type": "toggle",
+          "help": "When enabled, clients can still cancel a session, but they cannot pick or reschedule their make-up session themselves. An administrator assigns it for them."
+        },
+        {
+          "label": "Flexible limit of make-up sessions",
+          "type": "toggle",
+          "help": "The limit of make-up sessions will be applied to the package of sessions. For example, for every 5 sessions, the client will be entitled to 3 make-up sessions. Suitable to be used in cases where the class may be extended with additional sessions during the programme of the class."
+        },
+        {
+          "label": "Number of sessions for which the limit is valid",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "When cancelling of the make-up session, return the credit to the client",
+          "type": "toggle",
+          "help": "As a standard, the client loses his/her entitlement to the make-up session after cancelling of it. If this feature is enabled, the client will regain the entitlement to the make-up session after cancelling of the make-up session."
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Restrictions on the use of make-up sessions",
+      "intro": [
+        "Attention! You have changed the settings for make-up sessions. These settings will be used for new make-up sessions only. If you want to use the new settings for the already created make-up sessions as well, please synchronize them.",
+        "Current number of unused make-up sessions: 0",
+        "Click on the button to apply the settings for using make-up sessions to all unused make-up sessions (not just new ones)."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Availability settings",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "In this programme only, but in all classes",
+            "Per your choice",
+            "Only the class the client is enrolled in"
+          ]
+        }
+      ],
+      "buttons": [
+        "Save",
+        "Synchronize"
+      ]
+    },
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    }
+  ],
+  "notes": [
+    "Attention. This setting may not apply if you have the make-up session expiration mode set to end of class in the general settings. Please check in the main make-up session settings that you have the make-up session mode set to Expires after a preset number of days to prevent make-up session credits from expiring at the end of a class."
+  ],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/150/settings?edit=replacements"
+    },
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    },
+    {
+      "via": "Synchronize",
+      "route": "courses/150/settings?edit=replacements"
+    }
+  ]
+}

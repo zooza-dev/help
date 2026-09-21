@@ -1,0 +1,483 @@
+{
+  "id": "settings.invoice_profiles",
+  "menu": "Settings → Billing & Payments → Invoice profiles",
+  "route": "settings/invoice_profiles",
+  "url_template": "https://{region}.zooza.app/#settings/invoice_profiles",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "Invoice profiles",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    },
+    {
+      "title": "Name › Edit invoice profile",
+      "intro": [
+        "If you set this, the engine will use this exact number. Make sure each invoice produces a unique value (typically include {VS} or a date). The {N} tag reads the next number from your Fakturoid/Xero account."
+      ],
+      "sections": [
+        "Advanced invoice settings"
+      ],
+      "fields": [
+        {
+          "label": "Company name",
+          "type": "text",
+          "help": "Name"
+        },
+        {
+          "label": "Email address",
+          "type": "text",
+          "help": "The entered email address serves as the main contact address for us and the clients"
+        },
+        {
+          "label": "Send a copy of the invoice to email",
+          "type": "text",
+          "help": "Every time an invoice is generated, a copy of that invoice will be sent to this email address."
+        },
+        {
+          "label": "URL on the invoice",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "If completed, it will be part of the invoice."
+        },
+        {
+          "label": "Street and house number",
+          "type": "text",
+          "help": "If completed, it will be part of the invoice."
+        },
+        {
+          "label": "City",
+          "type": "text",
+          "help": "The city where the company is based. It will be stated on the invoice."
+        },
+        {
+          "label": "Country",
+          "type": "text",
+          "help": "If completed, it will be part of the invoice."
+        },
+        {
+          "label": "ZIP code",
+          "type": "text",
+          "help": "If completed, it will be part of the invoice."
+        },
+        {
+          "label": "Business ID",
+          "type": "text",
+          "help": "If completed, it will be part of the invoice."
+        },
+        {
+          "label": "Tax ID",
+          "type": "text",
+          "help": "If completed, it will be part of the invoice."
+        },
+        {
+          "label": "VAT number",
+          "type": "text",
+          "help": "If completed, it will be part of the invoice."
+        },
+        {
+          "label": "VAT payer",
+          "type": "checkbox",
+          "help": "Check if you are a VAT payer."
+        },
+        {
+          "label": "Default VAT",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Choose",
+            "Sales Tax on Imports (0,00 %)",
+            "Tax Exempt (0,00 %)",
+            "Tax on Purchases (0,00 %)",
+            "Tax on Sales (0,00 %)"
+          ]
+        },
+        {
+          "label": "Show VAT payer on invoices",
+          "type": "checkbox",
+          "help": "If checked, invoices will contain information that you are a VAT payer."
+        },
+        {
+          "label": "Item description",
+          "type": "text",
+          "help": "You can use all the dynamic tags that you normally use when sending emails. The default value is the programme name."
+        },
+        {
+          "label": "Invoice number",
+          "type": "number",
+          "help": "Invoice sequence number (not payment reference)"
+        },
+        {
+          "label": "Bank Account",
+          "type": "select",
+          "help": "Xero bank account for payments (optional override)",
+          "options": [
+            "Choose",
+            "My Bank"
+          ]
+        },
+        {
+          "label": "Revenue Account",
+          "type": "select",
+          "help": "Xero revenue account for sales (optional override)",
+          "options": [
+            "Choose",
+            "Sales",
+            "Other Revenue",
+            "Interest Income"
+          ]
+        },
+        {
+          "label": "Invoice number template",
+          "type": "text",
+          "help": "Optional. Leave empty to let the engine auto-number. Use tags below to insert variable symbol, dates, or a counter."
+        }
+      ],
+      "buttons": [
+        "{VS}",
+        "{YYYY}",
+        "{YY}",
+        "{MM}",
+        "{DD}",
+        "{N}"
+      ],
+      "route": "settings/invoice_profiles/19"
+    },
+    {
+      "title": "Name › Bank accounts",
+      "intro": [
+        "Payments for this invoice profile are collected to these bank accounts."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Account number (IBAN)",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "SWITF code",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Account holder name",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Add bank account",
+        "Cancel",
+        "QR Code Preview",
+        "Save",
+        "Set as default",
+        "Delete"
+      ],
+      "route": "settings/invoice_profiles/19"
+    },
+    {
+      "title": "Name › Invoice Line Types",
+      "intro": [
+        "Multi-line invoicing is active. Each enabled type will appear as a separate line on the invoice.",
+        "Programme Payment Custom label Revenue Account Code 270 — Interest Income 260 — Other Revenue 200 — Sales",
+        "Registration Fee Custom label Revenue Account Code 270 — Interest Income 260 — Other Revenue 200 — Sales",
+        "Discount Custom label Revenue Account Code 270 — Interest Income 260 — Other Revenue 200 — Sales"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Custom label",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "settings__engine_accounts__resync",
+        "settings__engine_accounts__clear",
+        "Programmes",
+        "Products",
+        "Save"
+      ],
+      "route": "settings/invoice_profiles/19"
+    },
+    {
+      "title": "Playfulmotion Swim Ltd › Edit invoice profile",
+      "intro": [
+        "No bank account selected — invoices will be created in Xero without payments.",
+        "If you set this, the engine will use this exact number. Make sure each invoice produces a unique value (typically include {VS} or a date). The {N} tag reads the next number from your Fakturoid/Xero account."
+      ],
+      "sections": [
+        "Advanced invoice settings"
+      ],
+      "fields": [
+        {
+          "label": "Company name",
+          "type": "text",
+          "help": "Name"
+        },
+        {
+          "label": "Email address",
+          "type": "text",
+          "help": "The entered email address serves as the main contact address for us and the clients"
+        },
+        {
+          "label": "Send a copy of the invoice to email",
+          "type": "text",
+          "help": "Every time an invoice is generated, a copy of that invoice will be sent to this email address."
+        },
+        {
+          "label": "URL on the invoice",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "If completed, it will be part of the invoice."
+        },
+        {
+          "label": "Street and house number",
+          "type": "text",
+          "help": "If completed, it will be part of the invoice."
+        },
+        {
+          "label": "City",
+          "type": "text",
+          "help": "The city where the company is based. It will be stated on the invoice."
+        },
+        {
+          "label": "Country",
+          "type": "text",
+          "help": "If completed, it will be part of the invoice."
+        },
+        {
+          "label": "ZIP code",
+          "type": "text",
+          "help": "If completed, it will be part of the invoice."
+        },
+        {
+          "label": "Business ID",
+          "type": "text",
+          "help": "If completed, it will be part of the invoice."
+        },
+        {
+          "label": "Tax ID",
+          "type": "text",
+          "help": "If completed, it will be part of the invoice."
+        },
+        {
+          "label": "VAT number",
+          "type": "text",
+          "help": "If completed, it will be part of the invoice."
+        },
+        {
+          "label": "VAT payer",
+          "type": "checkbox",
+          "help": "Check if you are a VAT payer."
+        },
+        {
+          "label": "Show VAT payer on invoices",
+          "type": "checkbox",
+          "help": "If checked, invoices will contain information that you are a VAT payer."
+        },
+        {
+          "label": "Item description",
+          "type": "text",
+          "help": "You can use all the dynamic tags that you normally use when sending emails. The default value is the programme name."
+        },
+        {
+          "label": "Invoice number",
+          "type": "number",
+          "help": "Invoice sequence number (not payment reference)"
+        },
+        {
+          "label": "Bank Account",
+          "type": "select",
+          "help": "Xero bank account for payments (optional override)",
+          "options": [
+            "Choose",
+            "My Bank"
+          ]
+        },
+        {
+          "label": "Revenue Account",
+          "type": "select",
+          "help": "Xero revenue account for sales (optional override)",
+          "options": [
+            "Choose",
+            "Sales",
+            "Other Revenue",
+            "Interest Income"
+          ]
+        },
+        {
+          "label": "Invoice number template",
+          "type": "text",
+          "help": "Optional. Leave empty to let the engine auto-number. Use tags below to insert variable symbol, dates, or a counter."
+        }
+      ],
+      "buttons": [
+        "{VS}",
+        "{YYYY}",
+        "{YY}",
+        "{MM}",
+        "{DD}",
+        "{N}"
+      ],
+      "route": "settings/invoice_profiles/73"
+    },
+    {
+      "title": "Playfulmotion Swim Ltd › Bank accounts",
+      "intro": [
+        "Payments for this invoice profile are collected to these bank accounts."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Account number (IBAN)",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "SWITF code",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Account holder name",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Add bank account",
+        "Cancel",
+        "QR Code Preview",
+        "Save",
+        "Delete",
+        "Set as default"
+      ],
+      "route": "settings/invoice_profiles/73"
+    },
+    {
+      "title": "Playfulmotion Swim Ltd › Invoice Line Types Profile-level override (overrides company-wide settings)",
+      "intro": [
+        "Profile-level override (overrides company-wide settings)",
+        "Multi-line invoicing is active. Each enabled type will appear as a separate line on the invoice.",
+        "Programme Payment Custom label Revenue Account Code 270 — Interest Income 260 — Other Revenue 200 — Sales",
+        "Registration Fee Custom label Revenue Account Code 270 — Interest Income 260 — Other Revenue 200 — Sales",
+        "Discount Custom label Revenue Account Code 270 — Interest Income 260 — Other Revenue 200 — Sales"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Custom label",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "settings__engine_accounts__resync",
+        "settings__engine_accounts__clear",
+        "Programmes",
+        "Products",
+        "Save"
+      ],
+      "route": "settings/invoice_profiles/73"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    },
+    {
+      "via": "Add",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Name",
+      "route": "settings/invoice_profiles/19"
+    },
+    {
+      "via": "Playfulmotion Swim Ltd",
+      "route": "settings/invoice_profiles/73"
+    },
+    {
+      "via": "New Invoice Profile",
+      "route": "settings/invoice_profiles/10001"
+    }
+  ]
+}

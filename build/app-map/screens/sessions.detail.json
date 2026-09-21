@@ -1,0 +1,339 @@
+{
+  "id": "sessions.detail",
+  "menu": "Activities → Sessions → session",
+  "route": "courses/events/22131",
+  "url_template": "https://{region}.zooza.app/#courses/events/22131",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Session",
+      "intro": [
+        "Monday, 21. September 2026, 07:00:00",
+        "Dulwich Village Hall , SE21 7BT"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Instructors",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Class",
+      "intro": [
+        "Dulwich Village Hall , SE21 7BT"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Attendance",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Documents",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Automations",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Live-Stream PRO",
+      "intro": [
+        "To learn more about live streams, contact our support."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Adjustments",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Activity log PRO",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Edit › Session Settings",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name of class (optional)",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Change the date and the time",
+          "type": "date_time",
+          "help": "By changing the date or time, you reschedule the session."
+        },
+        {
+          "label": "Status",
+          "type": "select",
+          "help": "In the case of holidays or school holidays, you can mark a cancellation. This information will be displayed to your clients in their profiles.",
+          "options": [
+            "Scheduled",
+            "Cancelled"
+          ]
+        },
+        {
+          "label": "Session duration",
+          "type": "number",
+          "help": "The change will also affect existing sessions."
+        },
+        {
+          "label": "Venues",
+          "type": "combobox",
+          "help": ""
+        },
+        {
+          "label": "Billable sessions (leave empty if all are billable)",
+          "type": "checkbox",
+          "help": "By marking this session as billable, you’ll help Zooza calculate how many billable sessions your class actually has."
+        }
+      ],
+      "buttons": [
+        "×",
+        "Save"
+      ]
+    },
+    {
+      "title": "Edit #2 › Instructors",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Instructor",
+          "type": "combobox",
+          "help": ""
+        },
+        {
+          "label": "Rate",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Choose",
+            "60 (60 minutes)"
+          ]
+        },
+        {
+          "label": "Amount of payout for the instructor in percentage",
+          "type": "number",
+          "help": "In cases of cancelled sessions, you can, for example, compensate the instructor fully or partially for the session."
+        }
+      ],
+      "buttons": [
+        "×"
+      ]
+    },
+    {
+      "title": "Manage attendance › Notes",
+      "intro": [
+        "Session summary (visible to the client)",
+        "Prep material (visible to client)"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Session summary",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Note about the session",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "OK",
+        "Cancel",
+        "Add from library"
+      ],
+      "route": "calendar/22131"
+    },
+    {
+      "title": "Manage attendance",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Reason for cancelling",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Not specified",
+            "Sickness",
+            "Travel",
+            "No reason provided"
+          ]
+        },
+        {
+          "label": "Personal feedback (visible to parent)",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Internal note",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [],
+      "route": "calendar/22131"
+    },
+    {
+      "title": "Edit #3 › E-mail after the session",
+      "intro": [],
+      "sections": [
+        "Send email after the session"
+      ],
+      "fields": [
+        {
+          "label": "Active",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Active",
+            "Inactive"
+          ]
+        },
+        {
+          "label": "Send",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Only clients enrolled directly in the class (all except make-up sessions, regardless of attendance record)",
+            "All clients with attendance record (including make-up sessions, regardless of whether they came or not)",
+            "All clients who came (including make-up sessions)"
+          ]
+        },
+        {
+          "label": "Wait",
+          "type": "number",
+          "help": "In hours. How long should Zooza wait before sending the email?"
+        },
+        {
+          "label": "Email subject",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Email body",
+          "type": "wysiwyg",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save"
+      ]
+    },
+    {
+      "title": "Edit #3 › E-mail after the video has been watched",
+      "intro": [],
+      "sections": [
+        "Send email after video has been watched"
+      ],
+      "fields": [
+        {
+          "label": "Active",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Active",
+            "Inactive"
+          ]
+        },
+        {
+          "label": "After watching a certain part of the video (in percentage)",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Wait",
+          "type": "number",
+          "help": "In hours. How long should Zooza wait before sending the email?"
+        },
+        {
+          "label": "Email subject",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Email body",
+          "type": "wysiwyg",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save"
+      ]
+    },
+    {
+      "title": "Credit",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Amount",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Reason (optional)",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Previous session (14. 09. 2026)",
+      "route": "courses/events/22130"
+    },
+    {
+      "via": "All sessions",
+      "route": "courses/events?filter=filter&page=0&page_size=50&schedule_id=378&sort_by=upcoming_asc"
+    },
+    {
+      "via": "Manage attendance",
+      "route": "calendar/22131"
+    },
+    {
+      "via": "Debit",
+      "error": "TimeoutError"
+    }
+  ]
+}

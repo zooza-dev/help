@@ -1,0 +1,53 @@
+{
+  "id": "settings.labels_settings",
+  "menu": "Settings → General → Labels",
+  "route": "settings/labels_settings",
+  "url_template": "https://{region}.zooza.app/#settings/labels_settings",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "Labels",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Edit",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Label",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Public",
+          "type": "checkbox",
+          "help": ""
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Edit",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Edit",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Edit",
+      "error": "TimeoutError"
+    }
+  ]
+}

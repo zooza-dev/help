@@ -1,0 +1,82 @@
+{
+  "id": "settings.trash",
+  "menu": "Settings → Tools → Trash",
+  "route": "settings/trash",
+  "url_template": "https://{region}.zooza.app/#settings/trash",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    }
+  ],
+  "notes": [
+    "Recover sessions, classes, and bookings deleted in the last 30 days. After 30 days, deleted items are removed permanently and cannot be restored from here."
+  ],
+  "discovered": [
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    }
+  ]
+}

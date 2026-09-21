@@ -1,0 +1,21 @@
+{
+  "id": "programmes.create",
+  "menu": "Activities → Programmes → New programme",
+  "route": "courses/create?product_type=course",
+  "url_template": "https://{region}.zooza.app/#courses/create?product_type=course",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/create?product_type=course"
+    }
+  ]
+}

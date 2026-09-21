@@ -1,0 +1,290 @@
+{
+  "id": "programmes.settings",
+  "menu": "Activities → Programmes → programme → Settings",
+  "route": "courses/150/settings",
+  "url_template": "https://{region}.zooza.app/#courses/150/settings",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Price and payment",
+      "intro": [
+        "Payment by instructions (cash, bank transfer – wire transfer)"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Online booking",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Share"
+      ]
+    },
+    {
+      "title": "Make-up sessions",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Additional sessions",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Additional fields",
+      "intro": [
+        "Child's date of birth, Child's full name"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Programme settings",
+      "intro": [
+        "Booking for the full programme duration",
+        "Programme (instructors, sessions)"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Trial",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Auto-enrolment PRO",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Feedback",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Attendance",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Class linking",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Documents",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Edit › Price and payment",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "How do you want to collect payments?",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "One off payment — Sell your programme by single payment",
+            "In scheduled payments — Create subscriptions or sell classes with scheduled payments."
+          ]
+        },
+        {
+          "label": "Total price",
+          "type": "number",
+          "help": "This is a total price that you want to get from enrolled clients. If you have payment plans set on the programme, it is used for reference only."
+        },
+        {
+          "label": "Registration fee",
+          "type": "number",
+          "help": "The Registration fee will be charged when the booking is created and will be added to the price of the programme or the first scheduled payment."
+        },
+        {
+          "label": "Down payment",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None",
+            "Fixed amount",
+            "Percentage"
+          ]
+        },
+        {
+          "label": "Late bookings:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Disabled — Don’t allow bookings to be created after the class has started.",
+            "Manual confirmation required — All bookings that are created after the class has started will need to be approved manually.",
+            "Automatically confirmed — When enabled, any booking made after the class has started will be automatically approved, with the price calculated according to the aliquot settings."
+          ]
+        },
+        {
+          "label": "Aliquot price calculation settings",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Automatically calculated — Aliquot price will be calculated from the number of remaining sessions in the class.",
+            "Calculated automatically by the number of days — Aliquot price is based on the number of remaining days in the current period and one full upcoming period.",
+            "No value — Bookings that will be paid in full will have zero debt/price calculated on them. Bookings that will be paid using scheduled payments won't have any debt calculated until the start of the next period. For example if period start on 10th in month and client registers on 11th, they won't get any price calculated until 10th of next month.",
+            "Full programme price — The price for the bookings will be always set at the full price, regardless of the date of the booking. Soeven if a client registers on the last day of the class the calculated price will be full programme price/scheduled payment."
+          ]
+        },
+        {
+          "label": "Billable sessions (leave empty if all are billable)",
+          "type": "number",
+          "help": "Enter the number of sessions that will be paid. You can thus have any number of sessions in the class, but only the number entered by you will be paid. If you enter a value \"\"0\"\", the application will count all sessions in the class, regardless of their status (except deleted). In order for the setting to work correctly, indicate in the class which sessions are paid. The functionality is suitable for programmes in which a fixed number of sessions are sold and at the same time it is important that the client uses up the given sessions (e.g. individual language programmes)."
+        },
+        {
+          "label": "Payments are managed by registrant",
+          "type": "toggle",
+          "help": "If selected and multiple bookings are submitted at once. Subsequent bookings debt will be transfered to first booking. If payment plan is created it is also created on the first booking only (with cumulative debt for all bookings). The registrant will receive one payment reference and one confirmation email."
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Edit › Payment Methods",
+      "intro": [
+        "Select payment options your clients will be able to use to complete their booking.",
+        "Booking will be able to be completed and paid in cash at a later date."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Payment by card",
+          "type": "toggle",
+          "help": "Booking will be completed via payment by card."
+        },
+        {
+          "label": "Enable payment in cash and by bank transfer",
+          "type": "toggle",
+          "help": "Booking will be able to be completed and paid in cash at a later date."
+        },
+        {
+          "label": "SEPA Direct debit",
+          "type": "toggle",
+          "help": ""
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Edit › Payment instructions",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Constant symbol",
+          "type": "number",
+          "help": "The constant symbol is only used when paying via QR code"
+        },
+        {
+          "label": "Specific symbol",
+          "type": "number",
+          "help": "The specific symbol is only used when paying via QR code"
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Edit › Invoicing",
+      "intro": [
+        "Select the invoice profile to which clients will be invoiced."
+      ],
+      "sections": [
+        "Invoices use Name — set at Default profile"
+      ],
+      "fields": [
+        {
+          "label": "Invoice profile",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Inherit (Name)",
+            "Name",
+            "Playfulmotion Swim Ltd",
+            "New Invoice Profile"
+          ]
+        },
+        {
+          "label": "Bank account",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Default (SK2011000000001234567890)",
+            "SK2011000000001234567890"
+          ]
+        }
+      ],
+      "buttons": [
+        "Save",
+        "Reset to inherit"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "New class",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Copy programme",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Edit",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Edit",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Edit",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Copy",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "FORMS (0)",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Add document",
+      "error": "TimeoutError"
+    }
+  ]
+}

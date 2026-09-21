@@ -1,0 +1,45 @@
+{
+  "id": "programmes.settings.videos",
+  "menu": "Activities → Programmes → programme → Settings → Videos",
+  "route": "courses/150/settings?edit=videos",
+  "url_template": "https://{region}.zooza.app/#courses/150/settings?edit=videos",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Videos",
+      "intro": [],
+      "sections": [
+        "Videos"
+      ],
+      "fields": [
+        {
+          "label": "Search",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Select a video from the library",
+        "Save (0 videos)",
+        "Cancel"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/150/settings?edit=videos"
+    },
+    {
+      "via": "Select a video from the library",
+      "route": "courses/150/settings?edit=videos"
+    }
+  ]
+}

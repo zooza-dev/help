@@ -1,0 +1,33 @@
+{
+  "id": "classes.detail.report",
+  "menu": "Activities → Classes → class → Report",
+  "route": "courses/schedules/245?edit=report",
+  "url_template": "https://{region}.zooza.app/#courses/schedules/245?edit=report",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Report",
+      "intro": [
+        "Trailblazer Tumblers (6–8 Years)",
+        "Moseley Movement Studio, Birmingham, B13 8JP",
+        "Monday, 18. May 2026, 17:00:00 - Saturday, 23. May 2026, 17:00:00"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/schedules/245?edit=report"
+    }
+  ]
+}

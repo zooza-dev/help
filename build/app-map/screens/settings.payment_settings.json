@@ -1,0 +1,141 @@
+{
+  "id": "settings.payment_settings",
+  "menu": "Settings → Billing & Payments → Payment settings",
+  "route": "settings/payment_settings",
+  "url_template": "https://{region}.zooza.app/#settings/payment_settings",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "Set up how money comes into Zooza",
+      "intro": [
+        "Walk through every channel (online card, direct debit, cash / bank transfer) in one guided flow. Captures your defaults for new programmes too."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Payment acceptance policy",
+      "intro": [
+        "How long clients have to pay before a booking is marked unpaid."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Days before booking is marked unpaid",
+          "type": "number",
+          "help": "After this many days from booking, the booking status changes from 'Awaiting payment' to 'Unpaid'. Set to 0 to mark unpaid immediately with no grace period."
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Scheduled-payment notifications",
+      "intro": [
+        "Control which automated emails customers receive about scheduled payments.",
+        "If you want to send reminders for one-off payments (not part of a payment plan), set them up per programme in the programme's Automation section.",
+        "Bank-transfer customers always receive the at-creation email regardless of cooldown — they need to know a payment is due so they can pay manually.",
+        "The post-charge confirmation email (sent after the customer's card is charged or a manual payment is recorded) is a separate flow — see Payment confirmations.",
+        "Sent automatically when a scheduled payment is past its due date. Cannot be disabled separately while the master switch is on."
+      ],
+      "sections": [
+        "Advance notice",
+        "Payment created",
+        "Overdue warning"
+      ],
+      "fields": [
+        {
+          "label": "Send scheduled-payment notifications",
+          "type": "toggle",
+          "help": "Master switch. When off, no scheduled-payment emails are sent at all — neither the advance notice, nor the 'payment created' email, nor the overdue warning. The post-charge confirmation (sent after the customer is actually charged) is unaffected."
+        },
+        {
+          "label": "Notify before a scheduled payment is issued",
+          "type": "toggle",
+          "help": "System will notify users before a scheduled payment is issued"
+        },
+        {
+          "label": "Number of days before payment is created",
+          "type": "number",
+          "help": "Enter the number of days prior to creating the payment when the user will be notified by Zooza"
+        },
+        {
+          "label": "Cooldown for stored card / direct debit",
+          "type": "number",
+          "help": "For customers paying via stored card or direct debit, skip the 'payment created' email if the previous payment in this plan was less than N months ago. Set to 0 to always send. Customers paying by bank transfer always receive the notification, regardless of this setting — they need to know a payment is due."
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Payment confirmations",
+      "intro": [
+        "Emails sent after a payment has actually been received."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Send a notification of received payment to the client after a manual entry",
+          "type": "toggle",
+          "help": "After you manually record a payment received from a client, a confirmation of the payment will be sent to his/her email address."
+        },
+        {
+          "label": "Send a notification of the received payment to the client after the file has been imported",
+          "type": "toggle",
+          "help": "The client is sent a confirmation of payment after the file has been imported."
+        },
+        {
+          "label": "Text of the payment confirmation",
+          "type": "text",
+          "help": "This text will appear in every payment confirmation sent to the client"
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Payment terms shown to clients",
+      "intro": [
+        "This text appears in the client's profile under the Payments tab."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Payment terms",
+          "type": "text",
+          "help": "This text will be displayed in the client's profile in the payments tab."
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Open inbound payment setup › Payment reconciliation rules",
+      "intro": [
+        "Control how strictly Zooza reconciles incoming payments to bookings."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Only reconcile payments to outstanding bookings",
+          "type": "checkbox",
+          "help": "When on, an incoming payment is reconciled to a booking only if the booking is outstanding (awaiting payment or unpaid) AND the payment amount does not exceed what's owed. Anything else is left for manual review. When off, Zooza reconciles more aggressively — overpayments switch the booking to 'Overpaid' automatically."
+        }
+      ],
+      "buttons": [],
+      "route": "settings/payment_collection"
+    }
+  ],
+  "notes": [
+    "Set up how money comes into Zooza Walk through every channel (online card, direct debit, cash / bank transfer) in one guided flow. Captures your defaults for new programmes too. Open inbound payment setup",
+    "If you want to send reminders for one-off payments (not part of a payment plan), set them up per programme in the programme's Automation section."
+  ],
+  "discovered": [
+    {
+      "via": "Open inbound payment setup",
+      "route": "settings/payment_collection"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "id": "settings.places",
+  "menu": "Settings → General → Venues",
+  "route": "settings/places",
+  "url_template": "https://{region}.zooza.app/#settings/places",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "Venues",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "My › Edit venue",
+      "intro": [
+        "←Move left→Move right↑Move up↓Move down+Zoom in-Zoom outHomeJump left by 75%EndJump right by 75%Page UpJump up by 75%Page DownJump down by 75%MapTerrainSatelliteLabelsKeyboard shortcutsMap DataMap data ©2026 GoogleMap data ©2026 Google500 m Click to toggle between metric and imperial unitsTermsReport a map error",
+        "Choose the matching Google location, or submit this location to Google as a new place.",
+        "Zooza Tomášikova 12735/64, 831 04, Bratislava-Nové Mesto, SK",
+        "Submit this location to Google Business Profile as a new place.",
+        "Monday to Friday: 09:00 - 17:00",
+        "Zooza does not track opening hours. These hours are a placeholder - after Google verifies the location, set the real opening hours in Google Business Profile."
+      ],
+      "sections": [
+        "Google review link",
+        "Submit this location to Google",
+        "Regular opening hours",
+        "Rooms"
+      ],
+      "fields": [
+        {
+          "label": "Region",
+          "type": "select",
+          "help": "Enter the region",
+          "options": [
+            "All",
+            "England",
+            "Wales",
+            "Scotland",
+            "Northern Ireland"
+          ]
+        },
+        {
+          "label": "Venue name",
+          "type": "text",
+          "help": "For example, the name of a centre or building. The name will also appear in booking forms"
+        },
+        {
+          "label": "Active",
+          "type": "checkbox",
+          "help": "Inactive"
+        },
+        {
+          "label": "Region",
+          "type": "text",
+          "help": "City area"
+        },
+        {
+          "label": "Street",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "City",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "ZIP / Postal Code",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Venue details",
+          "type": "wysiwyg",
+          "help": ""
+        },
+        {
+          "label": "Enter directions or venue details to help clients find you",
+          "type": "wysiwyg",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Update venue",
+        "Map",
+        "Satellite",
+        "Keyboard shortcuts",
+        "Map Data"
+      ]
+    },
+    {
+      "title": "Chesterton Sports Hall › Edit venue",
+      "intro": [
+        "←Move left→Move right↑Move up↓Move down+Zoom in-Zoom outHomeJump left by 75%EndJump right by 75%Page UpJump up by 75%Page DownJump down by 75%MapTerrainSatelliteLabelsKeyboard shortcutsMap DataMap data ©2026 GoogleMap data ©2026 Google500 m Click to toggle between metric and imperial unitsTermsReport a map error",
+        "Choose the matching Google location, or submit this location to Google as a new place.",
+        "Zooza Tomášikova 12735/64, 831 04, Bratislava-Nové Mesto, SK",
+        "Submit this location to Google Business Profile as a new place.",
+        "Monday to Friday: 09:00 - 17:00",
+        "Zooza does not track opening hours. These hours are a placeholder - after Google verifies the location, set the real opening hours in Google Business Profile."
+      ],
+      "sections": [
+        "Google review link",
+        "Submit this location to Google",
+        "Regular opening hours",
+        "Rooms"
+      ],
+      "fields": [
+        {
+          "label": "Region",
+          "type": "select",
+          "help": "Enter the region",
+          "options": [
+            "All",
+            "England",
+            "Wales",
+            "Scotland",
+            "Northern Ireland"
+          ]
+        },
+        {
+          "label": "Venue name",
+          "type": "text",
+          "help": "For example, the name of a centre or building. The name will also appear in booking forms"
+        },
+        {
+          "label": "Active",
+          "type": "checkbox",
+          "help": "Inactive"
+        },
+        {
+          "label": "Region",
+          "type": "text",
+          "help": "City area"
+        },
+        {
+          "label": "Street",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "City",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "ZIP / Postal Code",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Venue details",
+          "type": "wysiwyg",
+          "help": ""
+        },
+        {
+          "label": "Enter directions or venue details to help clients find you",
+          "type": "wysiwyg",
+          "help": ""
+        },
+        {
+          "label": "Name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Maximum capacity",
+          "type": "number",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Update venue",
+        "Map",
+        "Satellite",
+        "Keyboard shortcuts",
+        "Map Data"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Add",
+      "error": "TimeoutError"
+    }
+  ]
+}

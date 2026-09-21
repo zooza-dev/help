@@ -1,0 +1,172 @@
+{
+  "id": "programmes.settings.extra_fields",
+  "menu": "Activities → Programmes → programme → Settings → Additional fields",
+  "route": "courses/150/settings?edit=extra_fields",
+  "url_template": "https://{region}.zooza.app/#courses/150/settings?edit=extra_fields",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Additional fields",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Extend booking form with additional fields",
+          "type": "toggle",
+          "help": ""
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    },
+    {
+      "title": "Clone to",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Baby Class",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Dance like a Pro",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Dancing on the Water",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "English & Math",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Individual Lessons",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Kids Club",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Movers",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Summer Swimming",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Trial Interest",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "👣 Mighty Movers (3–5 years)",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "💃 Wiggle Wonders (0–12 months)",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "🤹‍♂️ Bounce & Balance (1–3 years)",
+          "type": "checkbox",
+          "help": ""
+        }
+      ],
+      "buttons": [],
+      "route": "courses/150/settings?edit=extra_fields"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/150/settings?edit=extra_fields"
+    },
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    },
+    {
+      "via": "Clone to",
+      "route": "courses/150/settings?edit=extra_fields"
+    }
+  ]
+}

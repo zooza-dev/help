@@ -1,0 +1,156 @@
+{
+  "id": "settings.replacements",
+  "menu": "Settings → Other → Make-up sessions",
+  "route": "settings/replacements",
+  "url_template": "https://{region}.zooza.app/#settings/replacements",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "General settings",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Make-up sessions behavior",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Set transfered make-up sessions — At the end of the class, make-up sessions up to your setting will be transferred and new expiration date will be set for them. This way your clients will still be able to use their make-up sessions in the next period/programme but only up to the limit you choose.",
+            "All make-up sessions expire at the end of the class. — The day the class ends, all valid make-up sessions will expire and be voided.",
+            "All make-up sessions expire after the preset number of days — The end of the class won’t affect make-up sessions at all. They will naturally expire when their date comes."
+          ]
+        },
+        {
+          "label": "Maximum number of transferred make-up session between billing periods.",
+          "type": "number",
+          "help": "Enter the number of make-up sessions that the client can use in the next billing period. This number will only start to be deducted after the class has finished. If you leave a value of 0, it will mean that the function is disabled."
+        },
+        {
+          "label": "Number of days to use transferred make-up sessions",
+          "type": "number",
+          "help": "The number of days after the end of the class until which it is possible to use transferred make-up sessions — sessions not used in the previous billing period."
+        },
+        {
+          "label": "Default expiration of credits (in days)",
+          "type": "number",
+          "help": "The specified number of days applies to all types of credits (especially make-up session). The value will start to be deducted from the date the entitlement is created."
+        },
+        {
+          "label": "Additional slots in classes",
+          "type": "number",
+          "help": "Additional slots in classes intended only for make-up sessions."
+        }
+      ],
+      "buttons": [
+        "Save"
+      ]
+    },
+    {
+      "title": "Make-up sessions from partner companies",
+      "intro": [
+        "Allow or request to share make-up sessions with partner company in Zooza."
+      ],
+      "sections": [
+        "My requests",
+        "Requests received"
+      ],
+      "fields": [],
+      "buttons": [
+        "Cooperate with a company"
+      ]
+    },
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    },
+    {
+      "title": "Cooperate with a company › Make-up sessions from partner companies",
+      "intro": [
+        "Allow or request to share make-up sessions with partner company in Zooza.",
+        "You will need the main email of the company you want to cooperate with. You can find it under Settings - General - Account Information. An invitation to cooperate will be sent to this email."
+      ],
+      "sections": [
+        "Cooperation with companies",
+        "My requests",
+        "Requests received"
+      ],
+      "fields": [
+        {
+          "label": "Email",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Send an invitation"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    }
+  ]
+}

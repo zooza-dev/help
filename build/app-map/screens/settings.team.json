@@ -1,0 +1,332 @@
+{
+  "id": "settings.team",
+  "menu": "Settings → General → Access",
+  "route": "settings/team",
+  "url_template": "https://{region}.zooza.app/#settings/team",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "Team members",
+      "intro": [
+        "You can change the list of people with access to your account at any time."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Attendance management settings for instructors:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Full report (attended, did not attend, cancelled, choose a make-up session)",
+            "Limited message (attended, did not attend)"
+          ]
+        },
+        {
+          "label": "Availability management settings for instructors:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Full report (Users manage their own availability and absences)",
+            "Restricted administration (Any change to availability and absences must be approved by the owner)",
+            "Absences only (Instructor can only request absences)"
+          ]
+        },
+        {
+          "label": "Session cancellation policy",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None",
+            "Make-up session required - instructor cannot cancel a session without setting a make-up session",
+            "Full - instructor can freely cancel any session he's entitled to"
+          ]
+        },
+        {
+          "label": "Allow instructors to create session substitutions",
+          "type": "toggle",
+          "help": "This setting will allow instructors to manage substitutions by themselves. Each substitution needs to be confirmed by the substituting instructor and upon each new substitution request, instructor will need to select an administator which will get e-mail notification about this change."
+        },
+        {
+          "label": "Allow all instructor roles to send email or SMS messages to clients from the session detail.",
+          "type": "toggle",
+          "help": "This will enable instructors to send quick messages directly from the session detail. The message will be sent to all of session's participants."
+        },
+        {
+          "label": "Allow external instructors to see client's personal data in session detail",
+          "type": "toggle",
+          "help": "By default all personal data about clients are hidden for external instructors. If enabled, external instructors will be able to see personal data for example in case of emergency when they need to reach parents quickly. Each display of these data is logged in the system."
+        },
+        {
+          "label": "Allow instructors to see financial information",
+          "type": "toggle",
+          "help": "When turned off, all instructor roles (main, regular and external instructors) lose access to client financial information: the Payments section, payment amounts on bookings, invoices, credits and financial reports. Owners, assistants and receptionists are unaffected."
+        },
+        {
+          "label": "Allow main instructors to access the Payments section",
+          "type": "toggle",
+          "help": "Grant or deny access to the Payments section of the application. This includes: Payments overview, Received payments, Scheduled payments and Invoices"
+        }
+      ],
+      "buttons": [
+        "Save"
+      ]
+    },
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    },
+    {
+      "title": "Add › Add new user",
+      "intro": [
+        "An invitation email will be sent to this address."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Email address",
+          "type": "text",
+          "help": "Required field"
+        },
+        {
+          "label": "Role",
+          "type": "select",
+          "help": "The account owner can delete and create new categories. The instructor can manage attendance records and individual bookings.",
+          "options": [
+            "Owner",
+            "Main Instructor",
+            "Instructor",
+            "External instructor",
+            "Receptionist",
+            "Assistant",
+            "Inactive instructor"
+          ]
+        }
+      ],
+      "buttons": [
+        "Add new user"
+      ],
+      "route": "settings/team/add"
+    },
+    {
+      "title": "Amelia Hughes (amelia@playfulmotion.co.uk) › Profile",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Email address",
+          "type": "text",
+          "help": "Required field"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        },
+        {
+          "label": "Role",
+          "type": "select",
+          "help": "The account owner can delete and create new categories. The instructor can manage attendance records and individual bookings.",
+          "options": [
+            "Owner",
+            "Main instructor",
+            "Instructor",
+            "External instructor",
+            "Receptionist",
+            "Assistant",
+            "Inactive"
+          ]
+        },
+        {
+          "label": "Internal note",
+          "type": "text",
+          "help": "Visible only to owners"
+        }
+      ],
+      "buttons": [
+        "Save"
+      ],
+      "route": "trainers/60/trainer_settings"
+    },
+    {
+      "title": "Amelia Hughes (amelia@playfulmotion.co.uk) › Rates",
+      "intro": [
+        "60 ( for 60 minutes) Not specified",
+        "60 ( for 60 minutes) Rate per 60 minutes .__zooza_integer_input:disabled { background-color: #eee; } + - Save Cancel"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Rate per 60 minutes",
+          "type": "number",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save",
+        "Cancel"
+      ],
+      "route": "trainers/60/trainer_settings"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    },
+    {
+      "via": "Add",
+      "route": "settings/team/add"
+    },
+    {
+      "via": "(Dan@playfulmotion.co.uk)",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "View",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Noah Campbell (noah@playfulmotion.co.uk)",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "View",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Chloe Evans (chloe@playfulmotion.co.uk)",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "View",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Amelia Hughes (amelia@playfulmotion.co.uk)",
+      "route": "trainers/60/trainer_settings"
+    },
+    {
+      "via": "View",
+      "route": "trainers/60/trainer_settings"
+    },
+    {
+      "via": "Brain James (demo@zooza.online)",
+      "route": "trainers/73/trainer_settings"
+    },
+    {
+      "via": "Brian James (michal@zooza.online)",
+      "route": "trainers/2/trainer_settings"
+    },
+    {
+      "via": "Lucy Morgan (lucy@playfulmotion.co.uk)",
+      "route": "trainers/63/trainer_settings"
+    },
+    {
+      "via": "Jasmine Reed (jasmine@playfulmotion.co.uk)",
+      "route": "trainers/61/trainer_settings"
+    },
+    {
+      "via": "Priya Sharma (priya@playfulmotion.co.uk)",
+      "route": "trainers/59/trainer_settings"
+    },
+    {
+      "via": "Ben Taylor (ben@playfulmotion.co.uk)",
+      "route": "trainers/58/trainer_settings"
+    },
+    {
+      "via": "Daniel Wright (daniel@playfulmotion.co.uk)",
+      "route": "trainers/62/trainer_settings"
+    }
+  ]
+}

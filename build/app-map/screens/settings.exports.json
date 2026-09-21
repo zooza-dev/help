@@ -1,0 +1,16 @@
+{
+  "id": "settings.exports",
+  "menu": "Settings → Tools → Exports",
+  "route": "settings/exports",
+  "url_template": "https://{region}.zooza.app/#settings/exports",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [],
+  "notes": [
+    "A history of the exports generated for your company. Ready files can be downloaded here for 7 days; after that they expire and need to be re-exported."
+  ],
+  "discovered": []
+}

@@ -1,0 +1,47 @@
+{
+  "id": "classes.detail.products",
+  "menu": "Activities → Classes → class → Products",
+  "route": "courses/schedules/245?edit=products",
+  "url_template": "https://{region}.zooza.app/#courses/schedules/245?edit=products",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Products",
+      "intro": [
+        "Products available for purchase in the client's attendance area."
+      ],
+      "sections": [
+        "Products"
+      ],
+      "fields": [
+        {
+          "label": "Search",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Choose product",
+        "Save (0 products)",
+        "Cancel"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/schedules/245?edit=products"
+    },
+    {
+      "via": "Choose product",
+      "route": "courses/schedules/245?edit=products"
+    }
+  ]
+}

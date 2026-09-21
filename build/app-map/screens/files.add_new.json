@@ -1,0 +1,55 @@
+{
+  "id": "files.add_new",
+  "menu": "Products & Services → Documents → Add new",
+  "route": "files/add_new",
+  "url_template": "https://{region}.zooza.app/#files/add_new",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "files",
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "New document",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Category",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Document",
+            "Video (PRO)",
+            "URL",
+            "Dynamic document"
+          ]
+        },
+        {
+          "label": "File name",
+          "type": "text",
+          "help": "The name will also be shown on the page."
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Upload",
+      "intro": [
+        "Drag & drop your file here or browse to choose a file Upload"
+      ],
+      "sections": [
+        "Upload error"
+      ],
+      "fields": [],
+      "buttons": [
+        "Upload"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

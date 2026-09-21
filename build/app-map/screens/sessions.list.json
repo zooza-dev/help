@@ -1,0 +1,154 @@
+{
+  "id": "sessions.list",
+  "menu": "Activities → Sessions",
+  "route": "courses/events",
+  "url_template": "https://{region}.zooza.app/#courses/events",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    },
+    {
+      "via": "Not connected to Zooza AI yet? Connect →",
+      "route": "mcp"
+    },
+    {
+      "via": "English & Math",
+      "route": "courses/193"
+    },
+    {
+      "via": "(7. September 2026 - 21. June 2027)",
+      "route": "courses/schedules/378"
+    },
+    {
+      "via": "🤹‍♂️ Bounce & Balance (1–3 years)",
+      "route": "courses/26"
+    },
+    {
+      "via": "Monday (7. July 2025 - 30. April 2029)",
+      "route": "courses/schedules/41"
+    },
+    {
+      "via": "💃 Wiggle Wonders (0–12 months)",
+      "route": "courses/27"
+    },
+    {
+      "via": "(7. September 2026 - 23. November 2026)",
+      "route": "courses/schedules/301"
+    },
+    {
+      "via": "💃 Wiggle Wonders (0–12 months)",
+      "route": "courses/27"
+    },
+    {
+      "via": "(7. July 2025 - 30. April 2029)",
+      "route": "courses/schedules/36"
+    },
+    {
+      "via": "👣 Mighty Movers (3–5 years)",
+      "route": "courses/63"
+    },
+    {
+      "via": "(7. September 2026 - 23. November 2026)",
+      "route": "courses/schedules/302"
+    },
+    {
+      "via": "👣 Mighty Movers (3–5 years)",
+      "route": "courses/63"
+    },
+    {
+      "via": "Monday (7. July 2025 - 30. April 2029)",
+      "route": "courses/schedules/46"
+    },
+    {
+      "via": "English & Math",
+      "route": "courses/193"
+    },
+    {
+      "via": "(6. July 2026 - 29. April 2030)",
+      "route": "courses/schedules/292"
+    },
+    {
+      "via": "English & Math",
+      "route": "courses/193"
+    },
+    {
+      "via": "(6. July 2026 - 29. April 2030)",
+      "route": "courses/schedules/292"
+    },
+    {
+      "via": "💃 Wiggle Wonders (0–12 months)",
+      "route": "courses/27"
+    }
+  ]
+}

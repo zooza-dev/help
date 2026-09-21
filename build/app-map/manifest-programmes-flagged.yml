@@ -1,0 +1,556 @@
+base: https://uk.zooza.app/
+shots:
+- image: allowing-multiple-registration-04.png
+  route: courses/schedules/230
+  assert: Class detail
+  status: keep-old
+  note: content/guides/summer-camps-creation.md:121 — Screenshot
+- image: archive-or-delete-programme-03.png
+  route: courses/schedules/230
+  assert: Class detail
+  status: keep-old
+  note: content/guides/archive-or-delete-programme.md:44 — Screenshot — archive or delete programme
+- image: archive-or-delete-programme-04.png
+  route: courses/schedules/230
+  assert: Class detail
+  status: keep-old
+  note: content/guides/archive-or-delete-programme.md:45 — Screenshot — archive or delete programme
+- image: blocks-creation-08.png
+  route: courses/schedules/230?edit=products
+  assert: Products
+  status: keep-old
+  card: Products
+  note: content/guides/blocks-creation.md:84 — Screenshot
+- image: blocks-creation-09.png
+  route: courses/schedules/230?edit=products
+  assert: Products
+  status: keep-old
+  card: Products
+  note: content/guides/blocks-creation.md:88 — Screenshot
+- image: blocks-creation-10.png
+  route: courses/schedules/230?edit=products
+  assert: Products
+  status: keep-old
+  card: Products
+  note: content/guides/blocks-creation.md:90 — Screenshot
+- image: reference/reports-dashboard.png
+  route: courses/schedules/230?edit=report
+  assert: Report
+  status: keep-old
+  note: content/reference/reports-dashboard.md:24 — Reports dashboard
+- image: reference/reports-new-enrolments-detail.png
+  route: courses/schedules/230?edit=report
+  assert: Report
+  status: keep-old
+  note: content/reference/reports-dashboard.md:60 — New enrolments detail
+- image: reference/reports-quick-setup.png
+  route: courses/schedules/230?edit=report
+  assert: Report
+  status: keep-old
+  note: content/reference/reports-dashboard.md:77 — Quick setup
+- image: replacement-hours-cross-13.png
+  route: courses/schedules/230?edit=report
+  assert: Report
+  status: keep-old
+  card: Report
+  note: content/guides/replacement-hours-complete.md:298 — Replacement lessons report in Calendar
+- image: auto-cancel-unpaid-registrations-01.png
+  route: courses/schedules/230?edit=settings
+  assert: Settings
+  status: keep-old
+  note: content/guides/auto-cancel-unpaid-registrations.md:65 — Payment Reminder Settings with auto-cancel fields highlighted
+- image: billing-and-invoicing-01.png
+  route: courses/schedules/230?edit=settings
+  assert: Settings
+  status: keep-old
+  note: content/setup/billing-and-invoicing.md:29 — Settings page with Billing tile highlighted
+- image: customizing-widgets-06.png
+  route: courses/150/settings
+  assert: Price and payment
+  status: approved
+  note: content/guides/customizing-widgets.md:65 — Screenshot
+- image: customizing-widgets-07.png
+  route: courses/150/settings?edit=settings
+  assert: Programme name
+  status: approved
+  note: content/guides/customizing-widgets.md:68 — Screenshot
+- image: customizing-widgets-08.png
+  route: courses/150/settings?edit=trial
+  assert: Trial settings
+  status: keep-old
+  card: Trial settings
+  card_only: true
+  note: content/guides/customizing-widgets.md:70 — Screenshot
+- image: fastpay-direct-debit-03.png
+  route: courses/schedules/230?edit=settings
+  assert: Settings
+  status: keep-old
+  note: content/guides/fastpay-direct-debit.md:70 — Course Payment Methods settings with SEPA Direct debit enabled, Provider
+    set to FastPay, and the Man
+- image: replacement-hours-cross-01.png
+  route: settings/replacements
+  assert: Make-up sessions behavior
+  status: approved
+  note: content/guides/replacement-hours-complete.md:221 — Settings — Replacement lessons tile
+- image: replacement-hours-cross-06.png
+  route: courses/schedules/230?edit=replacements
+  assert: Make-up
+  status: keep-old
+  note: content/guides/replacement-hours-complete.md:255 — Replacement lessons restriction settings
+- image: group-connection-06.png
+  route: courses/150/settings?edit=schedule_groups
+  assert: Connecting classes
+  status: approved
+  note: content/guides/linked-classes.md:53 — Screenshot placeholder — selecting classes
+- image: group-connection-09.png
+  route: courses/150/settings?edit=schedule_groups
+  assert: Connecting classes
+  status: keep-old
+  note: content/guides/linked-classes.md:57 — Screenshot placeholder — link list
+- image: documents-11.png
+  route: files/dynamic_document/1
+  assert: New Dynamic Document
+  status: approved
+  card: New Dynamic Document
+  note: content/guides/documents.md:104 — Screenshot
+- image: documents-12.png
+  route: files/dynamic_document/1
+  assert: New Dynamic Document
+  status: approved
+  card: New Dynamic Document
+  card_only: true
+  note: content/guides/documents.md:108 — Screenshot
+- image: documents-13.png
+  route: files/dynamic_document/1
+  assert: New Dynamic Document
+  status: keep-old
+  card: New Dynamic Document
+  note: content/guides/documents.md:112 — Screenshot
+- image: documents-15.png
+  route: files/dynamic_document/1
+  assert: New Dynamic Document
+  status: keep-old
+  card: New Dynamic Document
+  note: content/guides/documents.md:119 — Screenshot
+- image: documents-16.png
+  route: files/dynamic_document/1
+  assert: New Dynamic Document
+  status: keep-old
+  card: New Dynamic Document
+  note: content/guides/documents.md:124 — Screenshot
+- image: client-import-03.png
+  route: files
+  assert: Documents
+  status: delete
+  note: content/guides/documents.md:145 — Screenshot
+  reason: 32×32 black square referenced from 6 places
+- image: documents-01.png
+  route: files
+  assert: Total number of records
+  status: approved
+  note: content/guides/documents.md:35 — Screenshot
+- image: documents-02.png
+  route: files/add_new
+  assert: New document
+  status: approved
+  card: New document
+  note: content/guides/documents.md:41 — Screenshot
+- image: documents-03.png
+  route: files/add_new
+  assert: New document
+  status: keep-old
+  card: New document
+  note: content/guides/documents.md:49 — Screenshot
+- image: documents-04.png
+  route: files/video/1103388481
+  assert: Sample Video
+  status: keep-old
+  card: Sample Video
+  note: content/guides/documents.md:56 — Screenshot
+- image: documents-05.png
+  route: files/video/1103388481
+  assert: Sample Video
+  status: keep-old
+  card: Sample Video
+  note: content/guides/documents.md:58 — Screenshot
+- image: documents-06.png
+  route: files/video/1103388481
+  assert: Sample Video
+  status: approved
+  card: Sample Video
+  card_only: true
+  note: content/guides/documents.md:60 — Screenshot
+- image: documents-07.png
+  route: files
+  assert: Documents
+  status: keep-old
+  note: content/guides/documents.md:66 — Screenshot
+- image: documents-08.png
+  route: files/dynamic_document/1
+  assert: New Dynamic Document
+  status: keep-old
+  card: New Dynamic Document
+  note: content/guides/documents.md:75 — Screenshot
+- image: documents-09.png
+  route: files/dynamic_document/1
+  assert: New Dynamic Document
+  status: keep-old
+  card: New Dynamic Document
+  note: content/guides/documents.md:77 — Screenshot
+- image: documents-10.png
+  route: files/dynamic_document/1
+  assert: New Dynamic Document
+  status: keep-old
+  card: New Dynamic Document
+  note: content/guides/documents.md:79 — Screenshot
+- image: documents-17.png
+  route: courses/schedules/230?edit=documents
+  assert: Documents
+  status: keep-old
+  note: content/guides/documents.md:143 — Screenshot
+  card: Documents
+  card_only: true
+- image: documents-19.png
+  route: courses/schedules/230?edit=documents
+  assert: Documents
+  status: approved
+  note: content/guides/documents.md:151 — Screenshot
+  card: Documents
+  card_only: true
+- image: documents-20.png
+  route: files
+  assert: Documents
+  status: keep-old
+  note: content/guides/documents.md:153 — Screenshot
+- image: documents-21.png
+  route: files
+  assert: Documents
+  status: keep-old
+  note: content/guides/documents.md:159 — Screenshot
+- image: documents-23.png
+  route: files
+  assert: Documents
+  status: keep-old
+  note: content/guides/documents.md:165 — Screenshot
+- image: documents-24.png
+  route: files
+  assert: Documents
+  status: keep-old
+  note: content/guides/documents.md:171 — Screenshot
+- image: documents-25.png
+  route: files
+  assert: Documents
+  status: keep-old
+  note: content/guides/documents.md:175 — Screenshot
+- image: documents-26.png
+  route: files
+  assert: Documents
+  status: keep-old
+  note: content/guides/documents.md:179 — Screenshot
+- image: google-forms-01.png
+  route: files
+  assert: Documents
+  status: keep-old
+  note: content/guides/google-forms.md:43 — The Forms tab inside the Documents card, empty, with the Attach a Google Form
+    button
+- image: booking-form-attendee-selection-01.png
+  route: courses
+  assert: Programmes
+  status: keep-old
+  note: content/guides/booking-form-attendee-selection.md:32 — Screenshot — booking form attendee selection
+- image: discount-code-01.png
+  route: courses
+  assert: Programmes
+  status: delete
+  note: content/guides/payment-templates-creation.md:118 — Screenshot
+  reason: 32×32 black square
+- image: reference/prog-programmes-wiggle-wonders-0-12-months-settings-attendance.png
+  route: courses/150/settings?edit=attendance
+  assert: Track attendance
+  status: approved
+  note: content/reference/programme-settings.md:267 — Attendance settings
+- image: reference/prog-programmes-wiggle-wonders-0-12-months-settings-feedback.png
+  route: courses/150/settings?edit=feedback
+  assert: feedback
+  status: approved
+  note: content/reference/programme-settings.md:255 — Feedback settings
+- image: reference/prog-programmes-wiggle-wonders-0-12-months-settings-trial.png
+  route: courses/150/settings?edit=trial
+  assert: Trial type
+  status: approved
+  note: content/reference/programme-settings.md:194 — Trial settings
+  tall: true
+- image: active-inactive-clients-01.png
+  route: courses/150
+  assert: Performance Overview
+  status: keep-old
+  card: Performance Overview
+  note: content/guides/active-inactive-clients.md:25 — Client record overview
+- image: client-consent-overview-01.png
+  route: me
+  assert: Brain James
+  status: keep-old
+  card: Brain James
+  note: content/guides/client-consent-overview.md:66 — Client Profile consents section
+- image: client-consent-overview-02.png
+  route: courses/150
+  assert: Performance Overview
+  status: keep-old
+  card: Performance Overview
+  note: content/guides/client-consent-overview.md:70 — Download PDF button in the consent overview
+- image: replacement-hours-cross-03.png
+  route: courses/150
+  assert: Performance Overview
+  status: keep-old
+  card: Performance Overview
+  note: content/guides/replacement-hours-complete.md:233 — Overview of sent cooperation requests and their status
+- image: additional-sessions-01.png
+  route: courses/150/settings?edit=additional_sessions
+  assert: Additional sessions
+  status: keep-old
+  card: Additional sessions
+  note: content/guides/additional-sessions.md:47 — The Additional sessions card in the programme settings, with price, limit
+    and payment enforcement
+- image: additional-sessions-02.png
+  route: courses/150/settings?edit=additional_sessions
+  assert: Additional sessions
+  status: keep-old
+  note: 'content/guides/additional-sessions.md:49 — General settings for all programmes: a cancellation limit and Allow refund
+    requests'
+- image: additional-sessions-03.png
+  route: courses/150/settings?edit=additional_sessions
+  assert: Additional sessions
+  status: keep-old
+  card: Additional sessions
+  note: content/guides/additional-sessions.md:83 — The Additional sessions card in the parent's profile, showing the price
+    and the payment deadline
+- image: additional-sessions-04.png
+  route: courses/150/settings?edit=additional_sessions
+  assert: Additional sessions
+  status: keep-old
+  note: content/guides/additional-sessions.md:85 — Choosing which session to attend, by class, location, instructor and time
+- image: additional-sessions-05.png
+  route: courses/150/settings?edit=additional_sessions
+  assert: Additional sessions
+  status: keep-old
+  note: 'content/guides/additional-sessions.md:87 — The confirmation: the place is booked and the pay-by date is stated'
+- image: additional-sessions-06.png
+  route: courses/150/settings?edit=additional_sessions
+  assert: Additional sessions
+  status: keep-old
+  note: content/guides/additional-sessions.md:89 — The booked extra session listed on the booking, with a Cancel from session
+    action
+- image: additional-sessions-07.png
+  route: courses/150/settings?edit=additional_sessions
+  assert: Additional sessions
+  status: keep-old
+  note: 'content/guides/additional-sessions.md:91 — The cancellation choice: go at a different time instead, or cancel from
+    the session'
+- image: instructor-attendance-management-01.png
+  route: courses/150/settings?edit=attendance
+  assert: Attendance
+  status: keep-old
+  card: Attendance
+  note: content/guides/instructor-attendance-management.md:25 — Screenshot — instructor attendance management
+- image: instructor-attendance-management-02.png
+  route: courses/150/settings?edit=attendance
+  assert: Attendance
+  status: keep-old
+  card: Attendance
+  note: content/guides/instructor-attendance-management.md:35 — Screenshot — instructor attendance management
+- image: instructor-attendance-management-03.png
+  route: courses/150/settings?edit=attendance
+  assert: Attendance
+  status: keep-old
+  card: Attendance
+  note: content/guides/instructor-attendance-management.md:51 — Screenshot — instructor attendance management
+- image: instructor-attendance-management-04.png
+  route: courses/150/settings?edit=attendance
+  assert: Attendance
+  status: keep-old
+  card: Attendance
+  note: content/guides/instructor-attendance-management.md:63 — Screenshot — instructor attendance management
+- image: instructor-attendance-management-05.png
+  route: courses/150/settings?edit=attendance
+  assert: Attendance
+  status: keep-old
+  card: Attendance
+  note: content/guides/instructor-attendance-management.md:88 — Screenshot — instructor attendance management
+- image: instructor-attendance-management-06.png
+  route: courses/150/settings?edit=attendance
+  assert: Attendance
+  status: keep-old
+  card: Attendance
+  note: content/guides/instructor-attendance-management.md:98 — Screenshot — instructor attendance management
+- image: instructor-attendance-management-07.png
+  route: courses/150/settings?edit=attendance
+  assert: Attendance
+  status: keep-old
+  card: Attendance
+  note: content/guides/instructor-attendance-management.md:39 — Screenshot — instructor attendance management
+- image: replacement-hours-cross-12.png
+  route: courses/150/settings?edit=attendance
+  assert: Attendance
+  status: keep-old
+  card: Attendance
+  note: content/guides/replacement-hours-complete.md:292 — Host branch admin view — replacement client in attendance
+- image: trials-daily-business-04.png
+  route: courses/150/settings?edit=attendance
+  assert: Attendance
+  status: keep-old
+  card: Attendance
+  note: content/guides/trials-daily-business.md:123 — Rescheduling a trial session in the Attendance section
+- image: reference/prog-programmes-wiggle-wonders-0-12-months-settings-additional-fields.png
+  route: courses/150/settings?edit=extra_fields
+  assert: Additional fields
+  status: keep-old
+  card: Additional fields
+  card_only: true
+  note: content/reference/programme-settings.md:177 — Additional Fields settings
+- image: blocks-creation-05.png
+  route: courses/150/settings?edit=online_registration
+  assert: Online booking
+  status: keep-old
+  card: Online booking
+  note: content/guides/blocks-creation.md:63 — Screenshot
+- image: delayed-start-registration-01.png
+  route: courses/150/settings?edit=online_registration
+  assert: Online booking
+  status: approved
+  note: content/guides/delayed-start-registration.md:33 — Screenshot — delayed start registration
+- image: delayed-start-registration-02.png
+  route: courses/150/settings?edit=online_registration
+  assert: Online booking
+  status: keep-old
+  note: content/guides/delayed-start-registration.md:46 — Screenshot — delayed start registration
+- image: priority-registration-01.png
+  route: courses/150/settings?edit=online_registration
+  assert: Online booking
+  status: keep-old
+  card: Online booking
+  note: content/guides/priority-registration.md:50 — Priority registration on the Online booking settings, with its dates
+    and eligibility criteria
+- image: publish-widgets-01.png
+  route: courses/150/settings?edit=online_registration
+  assert: Online booking
+  status: approved
+  card: Online booking
+  note: content/reference/publish-widgets.md:211 — The Priority stepper in Online booking settings, set to 0, with the hint
+    that a higher priority move
+- image: reference/prog-programmes-wiggle-wonders-0-12-months-settings-online-booking.png
+  route: courses/150/settings?edit=online_registration
+  assert: Online booking
+  status: approved
+  card: Online booking
+  card_only: true
+  note: content/reference/programme-settings.md:63 — Online Booking settings
+- image: blocks-creation-03.png
+  route: courses/150/settings?edit=price
+  assert: Price and payment
+  status: keep-old
+  card: Price and payment
+  note: content/guides/blocks-creation.md:52 — Screenshot
+- image: blocks-creation-04.png
+  route: courses/150/settings?edit=price
+  assert: Price and payment
+  status: keep-old
+  card: Price and payment
+  note: content/guides/blocks-creation.md:56 — Screenshot
+- image: reference/prog-programmes-wiggle-wonders-0-12-months-settings-auto-enrolment.png
+  route: courses/150/settings?edit=retention
+  assert: What your auto-enrolment clients are shown
+  status: approved
+  card: What your auto-enrolment clients are shown
+  card_only: true
+  note: content/reference/programme-settings.md:229 — Auto-Enrolment settings
+- image: group-connection-04.png
+  route: courses/150/settings?edit=schedule_groups
+  assert: Connecting classes
+  status: approved
+  card: Connecting classes
+  note: content/guides/linked-classes.md:51 — Screenshot placeholder — class linking setup
+- image: reference/prog-programmes-wiggle-wonders-0-12-months-settings-settings.png
+  route: courses/150/settings?edit=settings
+  assert: Basic informations
+  status: approved
+  card: Basic informations
+  card_only: true
+  note: content/reference/programme-settings.md:149 — Programme Settings — basic info
+- image: reference/prog-programmes-wiggle-wonders-0-12-months-settings.png
+  route: courses/150/settings?edit=settings
+  assert: Programme settings
+  status: keep-old
+  note: content/reference/programme-settings.md:23 — Programme Settings overview
+- image: trials-daily-business-01.png
+  route: courses/150/settings?edit=trial
+  assert: Trial settings
+  status: keep-old
+  card: Trial settings
+  note: content/guides/trials-daily-business.md:169 — Change status button on booking detail
+- image: trials-daily-business-02.png
+  route: courses/150/settings?edit=trial
+  assert: Trial settings
+  status: keep-old
+  card: Trial settings
+  card_only: true
+  note: content/guides/trials-daily-business.md:188 — Sessions Shown in Form setting in programme trial settings
+- image: trials-daily-business-06.png
+  route: courses/150/settings?edit=trial
+  assert: Trial settings
+  status: approved
+  card: Trial settings
+  note: content/guides/trials-daily-business.md:199 — Trial type setting — free or paid
+- image: trials-daily-business-07.png
+  route: courses/150/settings?edit=trial
+  assert: Trial settings
+  status: keep-old
+  card: Trial settings
+  note: content/guides/trials-daily-business.md:201 — Trial duration and price settings
+- image: trials-daily-business-08.png
+  route: courses/150/settings?edit=online_registration
+  assert: Booking Options Shown on Website
+  status: approved
+  note: content/guides/trials-daily-business.md:211 — Booking options shown on website — Trials only
+  card: Online booking
+  card_only: true
+- image: trials-daily-business-11.png
+  route: courses/150/settings?edit=trial
+  assert: Trial settings
+  status: keep-old
+  card: Trial settings
+  note: content/guides/trials-daily-business.md:109 — Trial Lost status change on booking
+- image: replacement-hours-cross-08.png
+  route: courses/events/22131
+  assert: Session
+  status: keep-old
+  card: Session
+  card_only: true
+  note: content/guides/replacement-hours-complete.md:265 — Choose Replacement Lesson button on cancelled session
+- image: replacement-hours-cross-10.png
+  route: courses/events/22131
+  assert: Session
+  status: keep-old
+  card: Session
+  card_only: true
+  note: content/guides/replacement-hours-complete.md:273 — Replacement session from another branch shown in client profile
+- image: blocks-creation-11.png
+  route: courses/events
+  assert: Sessions
+  status: keep-old
+  note: content/guides/blocks-creation.md:102 — Screenshot
+- image: reference/cls-sessions.png
+  route: courses/events
+  assert: Sessions
+  status: approved
+  note: 'content/reference/sessions-list.md:24 — The Sessions list: filters across the top and session rows showing date,
+    time, duration, status, att'
+- image: reference/reports-trial-sessions.png
+  route: courses/events
+  assert: Sessions
+  status: keep-old
+  note: content/reference/reports-dashboard.md:172 — Trial sessions report
+- image: replacement-hours-cross-09.png
+  route: courses/events
+  assert: Sessions
+  status: keep-old
+  note: content/guides/replacement-hours-complete.md:269 — Available replacement sessions from multiple branches

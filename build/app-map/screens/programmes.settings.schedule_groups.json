@@ -1,0 +1,70 @@
+{
+  "id": "programmes.settings.schedule_groups",
+  "menu": "Activities → Programmes → programme → Settings → Class linking",
+  "route": "courses/150/settings?edit=schedule_groups",
+  "url_template": "https://{region}.zooza.app/#courses/150/settings?edit=schedule_groups",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Connecting classes",
+      "intro": [
+        "By linking classes, you allow clients to use products and credits in multiple classes of this programme. In linked classes, the client can see the full offer and sessions across linked 1-to-1 classes. This will, for example, allow the client to use one season ticket in several classes within the programme."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Add dialog › Connecting classes",
+      "intro": [
+        "By linking classes, you allow clients to use products and credits in multiple classes of this programme. In linked classes, the client can see the full offer and sessions across linked 1-to-1 classes. This will, for example, allow the client to use one season ticket in several classes within the programme.",
+        "Select the classes you want to link:"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "The name of the connection",
+          "type": "text",
+          "help": "Enter a class link name."
+        }
+      ],
+      "buttons": [
+        "Save",
+        "Cancel"
+      ]
+    },
+    {
+      "title": "Brain James › Connecting classes",
+      "intro": [
+        "By linking classes, you allow clients to use products and credits in multiple classes of this programme. In linked classes, the client can see the full offer and sessions across linked 1-to-1 classes. This will, for example, allow the client to use one season ticket in several classes within the programme.",
+        "Select the classes you want to link:"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "The name of the connection",
+          "type": "text",
+          "help": "Enter a class link name."
+        }
+      ],
+      "buttons": [
+        "Save",
+        "Cancel"
+      ],
+      "route": "courses/150/settings?edit=schedule_groups"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/150/settings?edit=schedule_groups"
+    }
+  ]
+}

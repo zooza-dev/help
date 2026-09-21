@@ -1,0 +1,45 @@
+{
+  "id": "classes.detail.urls",
+  "menu": "Activities → Classes → class → URLs",
+  "route": "courses/schedules/245?edit=urls",
+  "url_template": "https://{region}.zooza.app/#courses/schedules/245?edit=urls",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "URLs",
+      "intro": [],
+      "sections": [
+        "Links"
+      ],
+      "fields": [
+        {
+          "label": "Search",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Select a link from the library",
+        "Save (0 links)",
+        "Cancel"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/schedules/245?edit=urls"
+    },
+    {
+      "via": "Select a link from the library",
+      "route": "courses/schedules/245?edit=urls"
+    }
+  ]
+}

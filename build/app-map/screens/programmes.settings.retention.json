@@ -1,0 +1,193 @@
+{
+  "id": "programmes.settings.retention",
+  "menu": "Activities → Programmes → programme → Settings → Auto-enrolment",
+  "route": "courses/150/settings?edit=retention",
+  "url_template": "https://{region}.zooza.app/#courses/150/settings?edit=retention",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Continuation for this programme's clients",
+      "intro": [
+        "What happens to this programme's clients when their class ends?",
+        "Decide what should happen after a class ends. For group classes, you can suggest which classes students should continue in. For individual sessions, they can simply sign up again."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Auto-enrolment type",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None",
+            "Suggest classes — We’ll show clients a set of suitable classes based on your criteria. If they choose to continue, they can enrol in one with a single click—no need to fill in their details again.",
+            "Duplicate current class — For 1-to-1 classes only: When a client agrees to continue, Zooza will prepare an identical version of the current class for the future. You just review and approve."
+          ]
+        },
+        {
+          "label": "Notify the client N days before the class ends",
+          "type": "number",
+          "help": "The client will get an email letting them know the class is ending. They can then choose their next class directly from their profile."
+        },
+        {
+          "label": "Keep client in auto-enrolment for N days",
+          "type": "number",
+          "help": "The client will see the auto-enrolment offer in their profile for the specified number of days. Set this to 0 to use the default value (30 days)."
+        },
+        {
+          "label": "Auto-enrollment message",
+          "type": "wysiwyg",
+          "help": "This message will be sent to the client as a notification that their group is ending and auto-enrolment is available."
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "What your auto-enrolment clients are shown",
+      "intro": [
+        "When this programme's clients are in auto-enrolment, which classes are they shown?",
+        "These settings apply to this programme's own clients once their class ends and they enter auto-enrolment. They filter which classes (offered by any programme) those clients are shown. They have no effect on clients coming from other programmes.",
+        "Programme, billing period, distance and age",
+        "A client of this programme finishes their class and enters auto-enrolment. The settings here filter what they are shown: if a class requires age 5 and the child is 4, that class is hidden, so the client only sees classes they are eligible for.",
+        "Narrows which classes this programme's clients are shown once they are in auto-enrolment.",
+        "These settings define which classes this programme's clients are shown once they enter auto-enrolment. Use them to narrow the options by programme, billing period, age, or distance."
+      ],
+      "sections": [
+        "A class ends",
+        "The client gets a notification",
+        "The client is in auto-enrolment",
+        "The client browses offered classes",
+        "Eligibility filters are applied",
+        "Only eligible classes are offered"
+      ],
+      "fields": [
+        {
+          "label": "Show only classes in these billing periods",
+          "type": "radio_group",
+          "help": "Your auto-enrolment clients are only shown classes that belong to one of these billing periods.",
+          "options": [
+            "All billing periods",
+            "Selected billing periods only"
+          ]
+        },
+        {
+          "label": "Show only classes from these programmes",
+          "type": "radio_group",
+          "help": "Your auto-enrolment clients are only shown classes from one of these programmes.",
+          "options": [
+            "All programmes",
+            "Selected programmes only"
+          ]
+        },
+        {
+          "label": "Age limit",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "No age limit",
+            "Set a manual age range",
+            "From this programme's additional fields"
+          ]
+        },
+        {
+          "label": "Distance",
+          "type": "number",
+          "help": "This will limit offered classes based on distance to the venue the client is currently enrolled in. Distance is in kilometers."
+        }
+      ],
+      "buttons": [
+        "Save"
+      ]
+    },
+    {
+      "title": "Classes you offer into auto-enrolment",
+      "intro": [
+        "Which of this programme's classes are offered to clients in auto-enrolment?",
+        "Select which of this programme's classes are offered to clients in auto-enrolment, including clients coming from other programmes. Each programme enables its own classes here, and this works whether or not this programme runs its own auto-enrolment. To let clients only pre-order a class, disable its online booking."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Save"
+      ]
+    },
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    }
+  ],
+  "notes": [
+    "Example A client of this programme finishes their class and enters auto-enrolment. The settings here filter what they are shown: if a class requires age 5 and the child is 4, that class is hidden, so the client only sees classes they are eligible for."
+  ],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/150/settings?edit=retention"
+    },
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    }
+  ]
+}

@@ -1,0 +1,599 @@
+{
+  "id": "settings.payment_schedule_templates",
+  "menu": "Settings → Billing & Payments → Payment schedule templates",
+  "route": "settings/payment_schedule_templates",
+  "url_template": "https://{region}.zooza.app/#settings/payment_schedule_templates",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "Payment plans",
+      "intro": [
+        "Manage payment settings. The most common payment method is one-off payment. However, you can also use scheduled payments. At the programme level, you then choose from a menu of payment options that will be available for classes."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Prepaid Periodic Payment, Monthly › Payment plans",
+      "intro": [
+        "Example dates for a payment scheduled on day 1 of the month, based on your current payment settings. Change notification & due-date settings",
+        "Indicate who will be able to use this template"
+      ],
+      "sections": [
+        "Visibility"
+      ],
+      "fields": [
+        {
+          "label": "Template name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Frequency of payment:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Quarterly",
+            "Half-yearly",
+            "Yearly",
+            "After N sessions",
+            "By block",
+            "Fixed number of scheduled payments"
+          ]
+        },
+        {
+          "label": "Day of the month when the payment is due",
+          "type": "number",
+          "help": "If you enter zero, this setting will not be used and the payments will be distributed evenly over time. If you enter a day, payments will be due on the next anniversary date."
+        },
+        {
+          "label": "Rounding method",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None — 45.76 -> 45.76",
+            "Up — 45.76 -> 46.00",
+            "Down — 45.76 -> 45.00",
+            "Half up — 45.76 -> 46.00",
+            "Half down — 45.76 -> 45.50",
+            "Baťa’s price (More) — 45.76 -> 45.99"
+          ]
+        },
+        {
+          "label": "Do not create scheduled payments if there are no sessions in the selected period",
+          "type": "toggle",
+          "help": "Scheduled payments will not be created for periods in which there are no sessions. For example, if you have an annual programme with a break in the summer months and the selected period is a month, no scheduled payment will be created for the summer-break months."
+        },
+        {
+          "label": "Discount:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None",
+            "Absolute",
+            "In percentage"
+          ]
+        },
+        {
+          "label": "Clients",
+          "type": "checkbox",
+          "help": "Clients will be able to select this template when enroling"
+        },
+        {
+          "label": "Instructors",
+          "type": "checkbox",
+          "help": "Instructors will be able to apply this template in the booking details"
+        }
+      ],
+      "buttons": [],
+      "route": "settings/payment_schedule_templates/112"
+    },
+    {
+      "title": "Prepaid Periodic Payment, Monthly › Programmes",
+      "intro": [],
+      "sections": [
+        "Ready to activate (7)",
+        "Requires price-type change (7)",
+        "Show 3 unavailable programmes"
+      ],
+      "fields": [],
+      "buttons": [],
+      "route": "settings/payment_schedule_templates/112"
+    },
+    {
+      "title": "Membership Payment, Monthly › Payment plans",
+      "intro": [
+        "This value can be additionally adjusted when applying the template to the class.",
+        "Example dates for a payment scheduled on day 1 of the month, based on your current payment settings. Change notification & due-date settings",
+        "Indicate who will be able to use this template"
+      ],
+      "sections": [
+        "Visibility"
+      ],
+      "fields": [
+        {
+          "label": "Template name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Frequency of payment:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Quarterly",
+            "Half-yearly",
+            "Yearly"
+          ]
+        },
+        {
+          "label": "Units in period",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Day of the month when the payment is due",
+          "type": "number",
+          "help": "If you enter zero, this setting will not be used and the payments will be distributed evenly over time. If you enter a day, payments will be due on the next anniversary date."
+        },
+        {
+          "label": "Rounding method",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None — 45.76 -> 45.76",
+            "Up — 45.76 -> 46.00",
+            "Down — 45.76 -> 45.00",
+            "Half up — 45.76 -> 46.00",
+            "Half down — 45.76 -> 45.50",
+            "Baťa’s price (More) — 45.76 -> 45.99"
+          ]
+        },
+        {
+          "label": "Discount:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None",
+            "Absolute",
+            "In percentage"
+          ]
+        },
+        {
+          "label": "Clients",
+          "type": "checkbox",
+          "help": "Clients will be able to select this template when enroling"
+        },
+        {
+          "label": "Instructors",
+          "type": "checkbox",
+          "help": "Instructors will be able to apply this template in the booking details"
+        }
+      ],
+      "buttons": [
+        "Calculate"
+      ],
+      "route": "settings/payment_schedule_templates/113"
+    },
+    {
+      "title": "One-off payment (Discount or Combination) › Payment plans",
+      "intro": [
+        "Indicate who will be able to use this template"
+      ],
+      "sections": [
+        "Visibility"
+      ],
+      "fields": [
+        {
+          "label": "Template name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Rounding method",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None — 45.76 -> 45.76",
+            "Up — 45.76 -> 46.00",
+            "Down — 45.76 -> 45.00",
+            "Half up — 45.76 -> 46.00",
+            "Half down — 45.76 -> 45.50",
+            "Baťa’s price (More) — 45.76 -> 45.99"
+          ]
+        },
+        {
+          "label": "Discount:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None",
+            "Absolute",
+            "In percentage"
+          ]
+        },
+        {
+          "label": "Clients",
+          "type": "checkbox",
+          "help": "Clients will be able to select this template when enroling"
+        },
+        {
+          "label": "Instructors",
+          "type": "checkbox",
+          "help": "Instructors will be able to apply this template in the booking details"
+        }
+      ],
+      "buttons": [],
+      "route": "settings/payment_schedule_templates/138"
+    },
+    {
+      "title": "One-off payment (Discount or Combination) #2 › Payment plans",
+      "intro": [
+        "Indicate who will be able to use this template"
+      ],
+      "sections": [
+        "Visibility"
+      ],
+      "fields": [
+        {
+          "label": "Template name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Rounding method",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None — 45.76 -> 45.76",
+            "Up — 45.76 -> 46.00",
+            "Down — 45.76 -> 45.00",
+            "Half up — 45.76 -> 46.00",
+            "Half down — 45.76 -> 45.50",
+            "Baťa’s price (More) — 45.76 -> 45.99"
+          ]
+        },
+        {
+          "label": "Discount:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None",
+            "Absolute",
+            "In percentage"
+          ]
+        },
+        {
+          "label": "Discount amount in percentage",
+          "type": "number",
+          "help": "The amount will be converted into Euros at the time of booking and will be deducted in one lump sum from the total value."
+        },
+        {
+          "label": "Clients",
+          "type": "checkbox",
+          "help": "Clients will be able to select this template when enroling"
+        },
+        {
+          "label": "Instructors",
+          "type": "checkbox",
+          "help": "Instructors will be able to apply this template in the booking details"
+        }
+      ],
+      "buttons": [],
+      "route": "settings/payment_schedule_templates/174"
+    },
+    {
+      "title": "Prepaid Periodic Payment, Half-yearly › Payment plans",
+      "intro": [
+        "Indicate who will be able to use this template"
+      ],
+      "sections": [
+        "Visibility"
+      ],
+      "fields": [
+        {
+          "label": "Template name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Frequency of payment:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Quarterly",
+            "Half-yearly",
+            "Yearly",
+            "After N sessions",
+            "By block",
+            "Fixed number of scheduled payments"
+          ]
+        },
+        {
+          "label": "Day of the month when the payment is due",
+          "type": "number",
+          "help": "If you enter zero, this setting will not be used and the payments will be distributed evenly over time. If you enter a day, payments will be due on the next anniversary date."
+        },
+        {
+          "label": "Rounding method",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None — 45.76 -> 45.76",
+            "Up — 45.76 -> 46.00",
+            "Down — 45.76 -> 45.00",
+            "Half up — 45.76 -> 46.00",
+            "Half down — 45.76 -> 45.50",
+            "Baťa’s price (More) — 45.76 -> 45.99"
+          ]
+        },
+        {
+          "label": "Discount:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None",
+            "Absolute",
+            "In percentage"
+          ]
+        },
+        {
+          "label": "Clients",
+          "type": "checkbox",
+          "help": "Clients will be able to select this template when enroling"
+        },
+        {
+          "label": "Instructors",
+          "type": "checkbox",
+          "help": "Instructors will be able to apply this template in the booking details"
+        }
+      ],
+      "buttons": [],
+      "route": "settings/payment_schedule_templates/219"
+    },
+    {
+      "title": "Membership Payment, Yearly › Payment plans",
+      "intro": [
+        "This value can be additionally adjusted when applying the template to the class.",
+        "Indicate who will be able to use this template"
+      ],
+      "sections": [
+        "Visibility"
+      ],
+      "fields": [
+        {
+          "label": "Template name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Frequency of payment:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Quarterly",
+            "Half-yearly",
+            "Yearly"
+          ]
+        },
+        {
+          "label": "Units in period",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Day of the month when the payment is due",
+          "type": "number",
+          "help": "If you enter zero, this setting will not be used and the payments will be distributed evenly over time. If you enter a day, payments will be due on the next anniversary date."
+        },
+        {
+          "label": "Rounding method",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None — 45.76 -> 45.76",
+            "Up — 45.76 -> 46.00",
+            "Down — 45.76 -> 45.00",
+            "Half up — 45.76 -> 46.00",
+            "Half down — 45.76 -> 45.50",
+            "Baťa’s price (More) — 45.76 -> 45.99"
+          ]
+        },
+        {
+          "label": "Discount:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None",
+            "Absolute",
+            "In percentage"
+          ]
+        },
+        {
+          "label": "Discount amount in percentage",
+          "type": "number",
+          "help": "The amount will be converted into Euros at the time of booking and will be deducted in one lump sum from the total value."
+        },
+        {
+          "label": "Clients",
+          "type": "checkbox",
+          "help": "Clients will be able to select this template when enroling"
+        },
+        {
+          "label": "Instructors",
+          "type": "checkbox",
+          "help": "Instructors will be able to apply this template in the booking details"
+        }
+      ],
+      "buttons": [
+        "Calculate"
+      ],
+      "route": "settings/payment_schedule_templates/238"
+    },
+    {
+      "title": "Prepaid Periodic Payment, By block › Payment plans",
+      "intro": [
+        "Indicate who will be able to use this template"
+      ],
+      "sections": [
+        "Visibility"
+      ],
+      "fields": [
+        {
+          "label": "Template name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Frequency of payment:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Quarterly",
+            "Half-yearly",
+            "Yearly",
+            "After N sessions",
+            "By block",
+            "Fixed number of scheduled payments"
+          ]
+        },
+        {
+          "label": "Rounding method",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None — 45.76 -> 45.76",
+            "Up — 45.76 -> 46.00",
+            "Down — 45.76 -> 45.00",
+            "Half up — 45.76 -> 46.00",
+            "Half down — 45.76 -> 45.50",
+            "Baťa’s price (More) — 45.76 -> 45.99"
+          ]
+        },
+        {
+          "label": "Discount:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None",
+            "Absolute",
+            "In percentage"
+          ]
+        },
+        {
+          "label": "Clients",
+          "type": "checkbox",
+          "help": "Clients will be able to select this template when enroling"
+        },
+        {
+          "label": "Instructors",
+          "type": "checkbox",
+          "help": "Instructors will be able to apply this template in the booking details"
+        }
+      ],
+      "buttons": [],
+      "route": "settings/payment_schedule_templates/239"
+    },
+    {
+      "title": "Add › Create a template",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Template name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Method of payment:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "One-off payment (Discount or Combination) — One-off payment without period for the whole programme/class.",
+            "Prepaid Periodic Payment — Fixed payment amount paid upfront for each period, due in advance.",
+            "Membership Payment — The payment plan works only with the programme price type - Membership.",
+            "Post-attendance Periodic Payment — Payment is calculated based on the client’s attendance for the specified period in the past."
+          ]
+        },
+        {
+          "label": "Rounding method",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None — 45.76 -> 45.76",
+            "Up — 45.76 -> 46.00",
+            "Down — 45.76 -> 45.00",
+            "Half up — 45.76 -> 46.00",
+            "Half down — 45.76 -> 45.50",
+            "Baťa’s price (More) — 45.76 -> 45.99"
+          ]
+        },
+        {
+          "label": "Discount:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None",
+            "Absolute",
+            "In percentage"
+          ]
+        }
+      ],
+      "buttons": [],
+      "route": "settings/payment_schedule_templates/add"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Prepaid Periodic Payment, Monthly",
+      "route": "settings/payment_schedule_templates/112"
+    },
+    {
+      "via": "Membership Payment, Monthly",
+      "route": "settings/payment_schedule_templates/113"
+    },
+    {
+      "via": "One-off payment (Discount or Combination)",
+      "route": "settings/payment_schedule_templates/138"
+    },
+    {
+      "via": "One-off payment (Discount or Combination)",
+      "route": "settings/payment_schedule_templates/174"
+    },
+    {
+      "via": "Membership Payment, Monthly",
+      "route": "settings/payment_schedule_templates/205"
+    },
+    {
+      "via": "Prepaid Periodic Payment, Half-yearly",
+      "route": "settings/payment_schedule_templates/219"
+    },
+    {
+      "via": "Membership Payment, Yearly",
+      "route": "settings/payment_schedule_templates/238"
+    },
+    {
+      "via": "Prepaid Periodic Payment, By block",
+      "route": "settings/payment_schedule_templates/239"
+    },
+    {
+      "via": "Membership Payment, Quarterly",
+      "route": "settings/payment_schedule_templates/269"
+    },
+    {
+      "via": "Add",
+      "route": "settings/payment_schedule_templates/add"
+    }
+  ]
+}

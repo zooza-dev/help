@@ -1,0 +1,77 @@
+{
+  "id": "programmes.settings.feedback",
+  "menu": "Activities → Programmes → programme → Settings → Feedback",
+  "route": "courses/150/settings?edit=feedback",
+  "url_template": "https://{region}.zooza.app/#courses/150/settings?edit=feedback",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Feedback",
+      "intro": [
+        "Choose setting to automatically send feedback invites. The invite will be sent to all valid bookings."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Request feedback from bookings that were created after this date:",
+          "type": "date",
+          "help": "Bookings created before this date will not be sent a feedback request."
+        },
+        {
+          "label": "Request a provisional feedback (after the 4th session)",
+          "type": "toggle",
+          "help": "The request for feedback will be sent after the fourth session."
+        },
+        {
+          "label": "Request feedback after programme has finished",
+          "type": "toggle",
+          "help": "The request for feedback will be sent after the last programme session."
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Google reviews",
+      "intro": [
+        "Choose when Zooza asks customers on this programme to leave a Google review."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Don't ask anyone registered before",
+          "type": "date",
+          "help": "Customers who registered before this date will not be asked for a review."
+        },
+        {
+          "label": "Ask after registration",
+          "type": "checkbox",
+          "help": "Request a review shortly after a customer registers."
+        },
+        {
+          "label": "Ask after the first attended session",
+          "type": "checkbox",
+          "help": "Request a review once the customer has attended their first session."
+        },
+        {
+          "label": "Ask after the class has ended",
+          "type": "checkbox",
+          "help": "Request a review after the programme has finished."
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/150/settings?edit=feedback"
+    }
+  ]
+}

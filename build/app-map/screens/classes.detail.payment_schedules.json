@@ -1,0 +1,62 @@
+{
+  "id": "classes.detail.payment_schedules",
+  "menu": "Activities → Classes → class → Payment plans",
+  "route": "courses/schedules/245?edit=payment_schedules",
+  "url_template": "https://{region}.zooza.app/#courses/schedules/245?edit=payment_schedules",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Apply payment plans",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Choose",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Total amount: Current class price",
+            "Total amount: Custom amount",
+            "Scheduled payment amount: Custom amount — Enter the amount of the scheduled payment you want the client to pay. Template discounts will not be applied."
+          ]
+        },
+        {
+          "label": "Amount",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Registration fee",
+          "type": "number",
+          "help": "The Registration fee will be charged when the booking is created and will be added to the price of the programme or the first scheduled payment."
+        },
+        {
+          "label": "First scheduled payment date",
+          "type": "date",
+          "help": ""
+        },
+        {
+          "label": "Include full start date",
+          "type": "toggle",
+          "help": "Includes all sessions that occurred on the selected start date. If disabled, only sessions after that date are included."
+        }
+      ],
+      "buttons": [
+        "Continue"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/schedules/245?edit=payment_schedules"
+    }
+  ]
+}

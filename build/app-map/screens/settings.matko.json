@@ -1,0 +1,106 @@
+{
+  "id": "settings.matko",
+  "menu": "Settings → Tools → MATKO",
+  "route": "settings/matko",
+  "url_template": "https://{region}.zooza.app/#settings/matko",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "MATKO – Make-up session eligibility diagnostic",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Credit ID",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Session ID",
+          "type": "number",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Run diagnostic"
+      ]
+    },
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    }
+  ],
+  "notes": [
+    "Use this tool to diagnose why a client cannot see a specific session as a make-up option. Enter the credit ID (visible on the registration's credits tab) and a session ID, or pick a session from the list below. The diagnostic runs 19 checks across credit state, programme settings, timing, capacity, and result-list visibility, and shows which ones fail."
+  ],
+  "discovered": [
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    },
+    {
+      "via": "Run diagnostic",
+      "error": "TimeoutError"
+    }
+  ]
+}

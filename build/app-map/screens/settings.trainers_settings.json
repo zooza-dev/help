@@ -1,0 +1,42 @@
+{
+  "id": "settings.trainers_settings",
+  "menu": "Settings → Other → Instructors rates",
+  "route": "settings/trainers_settings",
+  "url_template": "https://{region}.zooza.app/#settings/trainers_settings",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "Instructors rates",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Rate is fixed",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Duration in minutes",
+          "type": "number",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Add",
+        "Cancel",
+        "Save"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

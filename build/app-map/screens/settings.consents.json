@@ -1,0 +1,191 @@
+{
+  "id": "settings.consents",
+  "menu": "Settings → General → Consents & Agreements",
+  "route": "settings/consents",
+  "url_template": "https://{region}.zooza.app/#settings/consents",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "Marketing consent",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Edit"
+      ]
+    },
+    {
+      "title": "Yes or no",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Edit"
+      ]
+    },
+    {
+      "title": "Pho",
+      "intro": [
+        "No separate confirmation needed"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Edit"
+      ]
+    },
+    {
+      "title": "Order",
+      "intro": [
+        "No separate confirmation needed"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Edit"
+      ]
+    },
+    {
+      "title": "Add dialog › ",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Consent name in detail",
+          "type": "text",
+          "help": "It will only appear in the consent detail after clicking the link"
+        },
+        {
+          "label": "Name of the consent in the booking form",
+          "type": "text",
+          "help": "The name is displayed directly in the booking form. If it contains the tag *|AGREEMENT_URL|*, the client will be able to click through to the consent detail"
+        },
+        {
+          "label": "Consent text",
+          "type": "wysiwyg",
+          "help": "Appears on a separate page after clicking a link in the booking form"
+        },
+        {
+          "label": "Consent is intended for",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Booking form",
+            "The order form",
+            "Contact forms",
+            "Inactive"
+          ]
+        },
+        {
+          "label": "Consent type",
+          "type": "select",
+          "help": "",
+          "options": [
+            "No separate confirmation needed",
+            "Check box",
+            "Choose Yes or No"
+          ]
+        },
+        {
+          "label": "Category",
+          "type": "select",
+          "help": "Terms: terms and conditions, house rules, declarations and waivers. Privacy: personal data processing (GDPR). Marketing: newsletters and advertising use of contact details. Only consents in the Marketing category count as marketing consent. Photos & videos: taking and publishing photos or videos. General: anything else.",
+          "options": [
+            "General",
+            "Terms",
+            "Privacy",
+            "Marketing",
+            "Photos & videos"
+          ]
+        },
+        {
+          "label": "Require from",
+          "type": "select",
+          "help": "",
+          "options": [
+            "All bookings",
+            "For select programmes only"
+          ]
+        }
+      ],
+      "buttons": [
+        "Save",
+        "Cancel"
+      ]
+    },
+    {
+      "title": "Brain James › ",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Consent name in detail",
+          "type": "text",
+          "help": "It will only appear in the consent detail after clicking the link"
+        },
+        {
+          "label": "Name of the consent in the booking form",
+          "type": "text",
+          "help": "The name is displayed directly in the booking form. If it contains the tag *|AGREEMENT_URL|*, the client will be able to click through to the consent detail"
+        },
+        {
+          "label": "Consent text",
+          "type": "wysiwyg",
+          "help": "Appears on a separate page after clicking a link in the booking form"
+        },
+        {
+          "label": "Consent is intended for",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Booking form",
+            "The order form",
+            "Contact forms",
+            "Inactive"
+          ]
+        },
+        {
+          "label": "Consent type",
+          "type": "select",
+          "help": "",
+          "options": [
+            "No separate confirmation needed",
+            "Check box",
+            "Choose Yes or No"
+          ]
+        },
+        {
+          "label": "Category",
+          "type": "select",
+          "help": "Terms: terms and conditions, house rules, declarations and waivers. Privacy: personal data processing (GDPR). Marketing: newsletters and advertising use of contact details. Only consents in the Marketing category count as marketing consent. Photos & videos: taking and publishing photos or videos. General: anything else.",
+          "options": [
+            "General",
+            "Terms",
+            "Privacy",
+            "Marketing",
+            "Photos & videos"
+          ]
+        },
+        {
+          "label": "Require from",
+          "type": "select",
+          "help": "",
+          "options": [
+            "All bookings",
+            "For select programmes only"
+          ]
+        }
+      ],
+      "buttons": [
+        "Save",
+        "Cancel"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

@@ -1,0 +1,150 @@
+{
+  "id": "programmes.list",
+  "menu": "Activities → Programmes",
+  "route": "courses",
+  "url_template": "https://{region}.zooza.app/#courses",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Copy › 1. Basic data",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Programme name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Programme type",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            " — A lecture, workshop, or other meeting with one occurrence.",
+            " — Clients are automatically signed up for every session throughout the programme. Make-up sessions are available.",
+            " — Clients enrol for the programme, but sign up for each session individually in their attendance records."
+          ]
+        },
+        {
+          "label": "Online booking",
+          "type": "checkbox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Continue"
+      ],
+      "route": "courses/193/copy"
+    },
+    {
+      "title": "💃 Wiggle Wonders (0–12 months) (Copy) › Let’s Set Up Your Programme",
+      "intro": [
+        "Time to bring your programmes to life – we’ll help you build your classes and start collecting bookings in just a few clicks.",
+        "You’re all set to start adding classes. Before you do, you may want to review your programme settings. We’ve pre-configured them with the most common options, but you can adjust them to suit your needs. All settings can be updated at any time.",
+        "Set or review price settings such as money collection, payment methods, or automations.",
+        "If you offer trial sessions in your programme, you can set them up here.",
+        "Review how this programme appears on the booking form on your website.",
+        "If you want to offer make-up sessions, you can set it up here."
+      ],
+      "sections": [
+        "Price settings",
+        "Trials",
+        "Booking Form",
+        "Make-up Sessions",
+        "Custom fields",
+        "Attendance settings",
+        "Create classes",
+        "Publish",
+        "Get Bookings"
+      ],
+      "fields": [],
+      "buttons": [],
+      "route": "courses/152"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "New programme",
+      "route": "courses/create?product_type=course"
+    },
+    {
+      "via": "English & Math",
+      "route": "courses/193"
+    },
+    {
+      "via": "Classes",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "New class",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Bookings",
+      "route": "registrations?course_id=193&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "Copy",
+      "route": "courses/193/copy"
+    },
+    {
+      "via": "Summer Swimming",
+      "route": "courses/161"
+    },
+    {
+      "via": "Classes",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "New class",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Bookings",
+      "route": "registrations?course_id=161&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "Copy",
+      "route": "courses/161/copy"
+    },
+    {
+      "via": "Loud Event",
+      "route": "courses/157"
+    },
+    {
+      "via": "Classes",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "New class",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Bookings",
+      "route": "registrations?course_id=157&order_by=created_desc&page=0&page_size=20&person_id=0&payment_id=0&segment_id=0&schedule_id=0"
+    },
+    {
+      "via": "Copy",
+      "route": "courses/157/copy"
+    },
+    {
+      "via": "💃 Wiggle Wonders (0–12 months) (Copy)",
+      "route": "courses/152"
+    },
+    {
+      "via": "Classes",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "New class",
+      "error": "TimeoutError"
+    }
+  ]
+}

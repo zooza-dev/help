@@ -1,0 +1,111 @@
+{
+  "id": "files.document",
+  "menu": "Products & Services → Documents → document",
+  "route": "files/document/3",
+  "url_template": "https://{region}.zooza.app/#files/document/3",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "files",
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Wiggle at Home: Sensory Sound Pack",
+      "intro": [
+        "Document's name ChatGPT Image 24. 7. 2025, 12_12_00.png"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "File name",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Upload",
+      "intro": [
+        "Upload error Uploading status"
+      ],
+      "sections": [
+        "Upload error"
+      ],
+      "fields": [],
+      "buttons": [
+        "Upload"
+      ]
+    },
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    }
+  ]
+}

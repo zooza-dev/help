@@ -1,0 +1,109 @@
+{
+  "id": "programmes.settings.trial",
+  "menu": "Activities → Programmes → programme → Settings → Trial",
+  "route": "courses/150/settings?edit=trial",
+  "url_template": "https://{region}.zooza.app/#courses/150/settings?edit=trial",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Trial settings",
+      "intro": [
+        "If you offer trial sessions for this programme, you can set them up here."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Trial type",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "None",
+            "Free Trial (Single Session) — Clients enrol for one free trial session. No payment is required, and Zooza will not generate any debt for this booking.",
+            "Free Trial (Multiple Sessions) — Clients enrol once and gain free access to all upcoming sessions within the trial period. Zooza will not generate any debt.Use the “Trial Length” setting to define how many days the trial lasts after the first session is selected.",
+            "Paid Trial (Single Session) — Clients enrol for one paid trial session. Zooza will generate debt equal to the price of a single session.",
+            "Paid Trial (Multiple Sessions) — Clients enrol once and pay for multiple upcoming sessions within the trial period. Zooza will generate debt for each session based on the price settings. Use the “Trial Length” setting to control how long the client remains enrolled.",
+            "Lead collection — Use this if you don't want to allow clients to enrol in class sessions directly instead enrol in an empty class, and you’ll enrol them into classes manually."
+          ]
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/150/settings?edit=trial"
+    },
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    }
+  ]
+}

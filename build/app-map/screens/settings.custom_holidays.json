@@ -1,0 +1,96 @@
+{
+  "id": "settings.custom_holidays",
+  "menu": "Settings → General → Custom Holidays",
+  "route": "settings/custom_holidays",
+  "url_template": "https://{region}.zooza.app/#settings/custom_holidays",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "Custom Holidays",
+      "intro": [
+        "Manage custom holiday periods for your company. These will block scheduling alongside state and school holidays."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Add › Add",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Holiday name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Start date",
+          "type": "date",
+          "help": ""
+        },
+        {
+          "label": "End date",
+          "type": "date",
+          "help": ""
+        },
+        {
+          "label": "Scope",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Whole company",
+            "Specific regions"
+          ]
+        }
+      ],
+      "buttons": [
+        "Add"
+      ],
+      "route": "settings/custom_holidays/add_new"
+    },
+    {
+      "title": "Term School Break › Custom Holidays",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Holiday name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Start date",
+          "type": "date",
+          "help": ""
+        },
+        {
+          "label": "End date",
+          "type": "date",
+          "help": ""
+        },
+        {
+          "label": "Scope",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Whole company",
+            "Specific regions"
+          ]
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Add",
+      "route": "settings/custom_holidays/add_new"
+    }
+  ]
+}

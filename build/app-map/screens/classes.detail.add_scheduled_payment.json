@@ -1,0 +1,136 @@
+{
+  "id": "classes.detail.add_scheduled_payment",
+  "menu": "Activities → Classes → class → Add scheduled payment",
+  "route": "courses/schedules/245?edit=add_scheduled_payment",
+  "url_template": "https://{region}.zooza.app/#courses/schedules/245?edit=add_scheduled_payment",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Add scheduled payment",
+      "intro": [
+        "Fields left empty will use each booking's own contract defaults. Contracts may differ between bookings."
+      ],
+      "sections": [
+        "Show advanced options"
+      ],
+      "fields": [
+        {
+          "label": "Amount",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Scheduled for",
+          "type": "date",
+          "help": ""
+        },
+        {
+          "label": "Note",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Discount",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Schedule discount",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Loyalty discount",
+          "type": "number",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Continue"
+      ]
+    },
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    }
+  ],
+  "notes": [
+    "Fields left empty will use each booking's own contract defaults. Contracts may differ between bookings."
+  ],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/schedules/245?edit=add_scheduled_payment"
+    },
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    },
+    {
+      "via": "Show advanced options",
+      "route": "courses/schedules/245?edit=add_scheduled_payment"
+    }
+  ]
+}

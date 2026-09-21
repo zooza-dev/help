@@ -1,0 +1,52 @@
+{
+  "id": "settings.billing_periods",
+  "menu": "Settings → Billing & Payments → Billing periods",
+  "route": "settings/billing_periods",
+  "url_template": "https://{region}.zooza.app/#settings/billing_periods",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "Billing periods",
+      "intro": [
+        "They divide the category of programmes into coherent periods, for example, semesters. This will allow you to efficiently work with classes and bookings within a given period - Spring 2023 or Autumn 2023.",
+        "These dates are optional. They're only used to pre-fill the date range when you create a class for this period with simple scheduling — leave them empty if you don't use it."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Create new billing period",
+          "type": "text",
+          "help": "Choose a simple type description"
+        },
+        {
+          "label": "Period",
+          "type": "date_range",
+          "help": ""
+        },
+        {
+          "label": "Billing period name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Active billing period",
+          "type": "checkbox",
+          "help": "Mark the option to set the billing period as active. The period marked in this way will be displayed within the application."
+        }
+      ],
+      "buttons": [
+        "Today",
+        "Add and save",
+        "Cancel",
+        "Save",
+        "Delete"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

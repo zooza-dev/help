@@ -1,0 +1,72 @@
+{
+  "id": "programmes.copy",
+  "menu": "Activities → Programmes → programme → Copy",
+  "route": "courses/150/copy",
+  "url_template": "https://{region}.zooza.app/#courses/150/copy",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "1. Basic data",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Programme name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Programme type",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            " — A lecture, workshop, or other meeting with one occurrence.",
+            " — Clients are automatically signed up for every session throughout the programme. Make-up sessions are available.",
+            " — Clients enrol for the programme, but sign up for each session individually in their attendance records."
+          ]
+        },
+        {
+          "label": "Online booking",
+          "type": "checkbox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Continue"
+      ]
+    },
+    {
+      "title": "2. Additional settings",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Continue"
+      ]
+    },
+    {
+      "title": "3. Done",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "error": "TimeoutError"
+    }
+  ]
+}

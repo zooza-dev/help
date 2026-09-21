@@ -1,0 +1,224 @@
+{
+  "id": "settings.general",
+  "menu": "Settings → General → General",
+  "route": "settings/general",
+  "url_template": "https://{region}.zooza.app/#settings/general",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "The account details",
+      "intro": [
+        "You can edit your account name and email",
+        "Upload your logo (GIF, JPG or PNG)."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Company name",
+          "type": "text",
+          "help": "Name"
+        },
+        {
+          "label": "Sender's name in the SMS message",
+          "type": "text",
+          "help": "Used when sending SMS messages. Restriction: 10 characters only."
+        },
+        {
+          "label": "Email address",
+          "type": "text",
+          "help": "The entered email address serves as the main contact address for us and the clients"
+        },
+        {
+          "label": "URL on the invoice",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Application Communication Language",
+          "type": "select",
+          "help": "This language setting will be used for widgets and email communication towards your clients. If you've customized any email default templates and they don't match the language chosen here, your clients will still receive the customized versions of those emails.",
+          "options": [
+            "Čeština",
+            "English",
+            "Deutsch",
+            "Français",
+            "Magyar",
+            "Română",
+            "Polski",
+            "Slovenčina",
+            "Italiano"
+          ]
+        }
+      ],
+      "buttons": [
+        "Upload",
+        "Save"
+      ]
+    },
+    {
+      "title": "Settings for programmes",
+      "intro": [
+        "General settings for all programmes in your account."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Set a limit for cancelling a scheduled session",
+          "type": "toggle",
+          "help": "With this setting, you determine when clients can cancel the scheduled sessions."
+        },
+        {
+          "label": "Allow cancellations after the limit",
+          "type": "toggle",
+          "help": "If the option of make-up sessions is enabled for a particular programme and the client cancels after the set limit, the make-up session will not be granted to this client but it will at least free up a slot for others to use their make-up sessions. The attendance record for the client will show \"Did not attend\"."
+        },
+        {
+          "label": "Instructions for the client:",
+          "type": "text",
+          "help": "Instructions for the client will be shown when cancellation limit is reached. If no text is written, default text is shown."
+        },
+        {
+          "label": "Limit type",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Fixed time (the day before the session at a specified hour)",
+            "Relative time (number of hours before the start of the session)"
+          ]
+        },
+        {
+          "label": "Number of days:",
+          "type": "number",
+          "help": "The number of days before client may cancel the session. The value 0 means on the day of the session."
+        },
+        {
+          "label": "The time prior to which you allow clients to cancel a scheduled session. Specify the exact time the day before the scheduled session. After this time, the user will be informed that he/she has missed the limit for cancellations.",
+          "type": "time",
+          "help": "Fill in the exact time in the format e.g. 22:00 and save the changes."
+        },
+        {
+          "label": "Block cancellations on weekends and holidays",
+          "type": "toggle",
+          "help": "If this setting is enabled, the cancellation limit for Monday sessions will be Friday at midnight."
+        },
+        {
+          "label": "Time limit in hours for creating a tailored make-up session:",
+          "type": "number",
+          "help": "The earliest time (the number of hours before the regular session) when the client can create a make-up sessions. If the blocking of cancelations on weekends is enabled, the creation of tailored make-up sessions on weekends will also be blocked. If zero is entered, the default value of 24 hours will be used."
+        },
+        {
+          "label": "Time restriction in hours for offering a regular make-up session",
+          "type": "number",
+          "help": "Set the time limit in hours before a session starts, after which it won’t be offered as a make-up option. For example, a session starting at 3:00 PM with a 1-hour limit won’t be available after 2:00 PM."
+        },
+        {
+          "label": "Allow refund requests",
+          "type": "toggle",
+          "help": "Clients can request a refund when they cancel an eligible session. Requests appear on the booking detail, where you approve or deny them. Approving records your decision. You still issue the refund itself through your payment provider."
+        }
+      ],
+      "buttons": [
+        "Save"
+      ]
+    },
+    {
+      "title": "Sessions",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Require instructors to complete summaries of sessions for their clients",
+          "type": "toggle",
+          "help": "If this option is enabled and the instructor does not complete the summary after a session, a reminder will be sent to the instructor the next day. If he/she does not complete the summary even then, this option will be locked the following day."
+        },
+        {
+          "label": "Automatically cancel a session if it is empty",
+          "type": "toggle",
+          "help": "If the last client cancels, the session is automatically changed to the Cancelled status"
+        },
+        {
+          "label": "Automatically close attendance",
+          "type": "number",
+          "help": "The number indicates the number of days after which attendance will be automatically closed for all participants who will have it in the Will be present status at the given time. The setting is disabled if its value is equal to zero. Automatic attendance closure is a one-off event, attendance will be automatically closed only for participants who will be logged in to the session at the closing time."
+        },
+        {
+          "label": "Custom Customer ID",
+          "type": "text",
+          "help": "Format customer ID based on your settings. Allowed values are: Unique ID - U (U1-U10). Number from 1-10 denotes minimum length of number. E.g. given that unique id number is 123, command: U6 will produce: 000123. Company (C - company Id as is, c - company id as 6 digit number). Each symbol needs to be enclosed within curly brackets. Valid examples: {C}{U6} = 123000123, 43-{U6} = 43-000123. Resulting id can contain also string literals along with special characters."
+        },
+        {
+          "label": "Online meeting instructions",
+          "type": "wysiwyg",
+          "help": "These instructions will show up next to every online session in your clients’ profiles"
+        }
+      ],
+      "buttons": [
+        "Regenerate all customer IDs",
+        "Save"
+      ]
+    },
+    {
+      "title": "Calendar",
+      "intro": [
+        "Select what information shall be displayed in a calendar time slot"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Show unscheduled/cancelled sessions",
+          "type": "toggle",
+          "help": ""
+        },
+        {
+          "label": "For instructors: Show only those sessions for which they are listed as instructors",
+          "type": "checkbox",
+          "help": "If checked, instructors will see only those sessions for which they're listed as instructors. If unchecked, they will also see sessions for classes for which they are listed as instructors but do not participate in (for example in sessions where they are temporarily replaced by other instructors)"
+        },
+        {
+          "label": "Programme name",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Class name",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Session name",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Attendance",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Instructor",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Venue",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Time and duration",
+          "type": "checkbox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

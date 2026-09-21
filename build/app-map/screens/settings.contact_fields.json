@@ -1,0 +1,121 @@
+{
+  "id": "settings.contact_fields",
+  "menu": "Settings → General → Custom contact fields",
+  "route": "settings/contact_fields",
+  "url_template": "https://{region}.zooza.app/#settings/contact_fields",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "Custom contact fields",
+      "intro": [
+        "No custom contact fields yet. Custom contact fields are your own questions for people who enquire, such as what they are interested in or a child's age. Define a field once, reuse it in any of your forms, and later filter contacts by the answers."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    },
+    {
+      "title": "Add field",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Label",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Key",
+          "type": "text",
+          "help": "Use lowercase letters, numbers and underscores, starting with a letter (up to 64 characters). The key and type can't be changed after the field is created."
+        },
+        {
+          "label": "Type",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Short text",
+            "Long text",
+            "Number",
+            "Date",
+            "Yes / No",
+            "Single choice",
+            "Multiple choice"
+          ]
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "id": "programmes.add_class",
+  "menu": "Activities → Programmes → programme → New class",
+  "route": "courses/150/add_schedule",
+  "url_template": "https://{region}.zooza.app/#courses/150/add_schedule",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Automations",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Brain James › Add a new class",
+      "intro": [
+        "Dates: 20. September 2026 – 18. October 2026"
+      ],
+      "sections": [
+        "Settings",
+        "Price",
+        "Sessions"
+      ],
+      "fields": [
+        {
+          "label": "Class type",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Fixed period class — A class you're committed to running, with set start and end dates — even if a few details like the trainer aren't final yet.",
+            "Lead collection — Collect sign-ups before anything is scheduled. Use it to test demand before committing to dates and a venue, or as a general pool you later split into separate classes."
+          ]
+        },
+        {
+          "label": "All day",
+          "type": "toggle",
+          "help": ""
+        },
+        {
+          "label": "Enable for online booking",
+          "type": "toggle",
+          "help": ""
+        },
+        {
+          "label": "Class name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Billing period",
+          "type": "combobox",
+          "help": ""
+        },
+        {
+          "label": "Venues",
+          "type": "combobox",
+          "help": ""
+        },
+        {
+          "label": "Instructor",
+          "type": "combobox",
+          "help": ""
+        },
+        {
+          "label": "Capacity",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Duration",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Rate",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Choose",
+            "60 (60 minutes)"
+          ]
+        },
+        {
+          "label": "Total price",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Registration fee (optional)",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Billable sessions (leave empty if all are billable)",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "from",
+          "type": "date_time",
+          "help": ""
+        },
+        {
+          "label": "to",
+          "type": "date",
+          "help": ""
+        },
+        {
+          "label": "Days of the week",
+          "type": "weekday_picker",
+          "help": ""
+        },
+        {
+          "label": "Repetition frequency",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Weekly",
+            "Every other week",
+            "Monthly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Add a room",
+        "M",
+        "T",
+        "W",
+        "F",
+        "S",
+        "All",
+        "Create",
+        "Cancel"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

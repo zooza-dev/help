@@ -1,0 +1,566 @@
+base: https://uk.zooza.app/
+shots:
+- image: billing-periods-01.png
+  route: settings/billing_periods
+  assert: Billing periods
+  status: approved
+  card: Billing periods
+  note: content/setup/billing-periods.md:62 — Click on the Settings tab in the left menu after logging into the app and then
+    click on...
+- image: reference/settings-billing-periods.png
+  route: settings/billing_periods
+  assert: Billing periods
+  status: approved
+  note: content/reference/settings-hub.md:65 — Billing periods
+  click: Create new billing period
+- image: consents-and-agreements-faq-01.png
+  route: registrations?with_consent=5
+  assert: Marketing consent
+  status: keep-old
+  note: content/faq/consents-and-agreements-faq.md:34 — Screenshot — consents and agreements faq
+- image: contact-form-editor-after-submit-01.png
+  route: settings/contact_forms/1
+  assert: After submit
+  status: approved
+  note: content/setup/contact-form-setup.md:92 — The After submit card with Go to a web page selected and a thank-you page
+    address entered
+  card: After submit
+- image: contact-form-editor-consents-tracking-01.png
+  route: settings/contact_forms/1
+  assert: Visitor tracking
+  status: approved
+  note: content/setup/contact-form-setup.md:83 — The Consents card with Manage consents, the Visitor tracking card with Remember
+    where the visitor fi
+  card: Visitor tracking
+- image: contact-form-editor-handling-labels-01.png
+  route: settings/contact_forms/1
+  assert: Handling
+  status: approved
+  note: content/setup/contact-form-setup.md:98 — The Handling card with a contact owner selected, a label being chosen from
+    the dropdown, and the Als
+  card: Handling
+- image: setting-gtc-gdpr-consents-01.png
+  route: settings/consents
+  assert: Consents & Agreements
+  status: approved
+  note: content/setup/setting-gtc-gdpr-consents.md:29 — Screenshot — Consents & Agreements list
+- image: setting-gtc-gdpr-consents-02.png
+  route: settings/consents
+  assert: Consents & Agreements
+  status: approved
+  note: content/setup/setting-gtc-gdpr-consents.md:42 — Screenshot — consent edit form
+  click: Add
+- image: custom-contact-fields-empty-01.png
+  route: settings/contact_fields
+  assert: Custom contact fields
+  status: approved
+  card: Custom contact fields
+  note: content/setup/custom-contact-fields.md:26 — The Custom contact fields screen with no fields yet, explaining that custom
+    fields are your own ques
+- image: custom-contact-fields-new-01.png
+  route: settings/contact_fields
+  assert: Custom contact fields
+  status: approved
+  note: content/setup/custom-contact-fields.md:37 — The New custom contact field dialog with Label, Key and Type fields, and
+    the hint that the key and t
+  click: Add field
+- image: custom-contact-fields-options-01.png
+  route: settings/contact_fields
+  assert: Custom contact fields
+  status: keep-old
+  card: Custom contact fields
+  note: content/setup/custom-contact-fields.md:49 — The New custom contact field dialog with the type Multiple choice and
+    two options, each with a Value
+- image: contact-form-editor-full-01.png
+  route: settings/contact_forms/1
+  assert: Standard fields
+  status: approved
+  note: 'content/setup/contact-form-setup.md:38 — The full contact form editor: General, Standard fields, Custom fields, Consents,
+    Visitor tracking, A'
+  tall: true
+- image: contact-forms-list-01.png
+  route: settings/contact_forms/1
+  assert: General Default
+  status: keep-old
+  card: General Default
+  note: 'content/setup/contact-form-setup.md:28 — The Contact forms list with one row, Contact form marked DEFAULT, status
+    Loading, no enquiries yet, '
+- image: holiday-settings-03.png
+  route: settings/custom_holidays
+  assert: Custom Holidays
+  status: keep-old
+  click: Term School Break
+  card: Custom Holidays
+  card_only: true
+  note: content/setup/holiday-settings.md:50 — skip these terms automatically by clicking on the Skip Holidays and Skip School
+    breaks...
+- image: holiday-settings-custom-01.png
+  route: settings/custom_holidays
+  assert: Custom Holidays
+  status: approved
+  note: content/setup/holiday-settings.md:97 — Custom Holidays settings screen
+- image: account-info-logo-url.png
+  route: settings/general
+  assert: The account details
+  status: approved
+  card: The account details
+  note: content/reference/communication-send-email.md:129 — Account Information — logo URL field
+- image: additional-sessions-02.png
+  route: settings/general
+  assert: Settings for programmes
+  status: approved
+  card: Settings for programmes
+  note: 'content/guides/additional-sessions.md:49 — General settings for all programmes: a cancellation limit and Allow refund
+    requests'
+- image: general-settings-signout-rules.png
+  route: settings/general
+  assert: General
+  status: keep-old
+  note: content/guides/edit-session-notification-template.md:37 — General settings - sign-out rules
+- image: holiday-settings-01.png
+  route: settings/places
+  assert: Venues
+  status: approved
+  note: content/setup/holiday-settings.md:24 — You can make the settings in the main Settings, under Places
+  wait: 10000
+- image: holiday-settings-02.png
+  route: settings/places/add_new
+  assert: Venue name
+  status: approved
+  note: content/setup/holiday-settings.md:31 — to contact us via chat on this page or by email at...
+- image: reference/settings-general.png
+  route: settings/general
+  assert: General
+  status: approved
+  note: content/reference/settings-hub.md:82 — General settings
+  tall: true
+- image: settings-general-menu.png
+  route: settings/general
+  assert: General
+  status: approved
+  note: content/setup/company-logo-email.md:23 — Settings - General menu
+- image: zooza-sites-02.png
+  route: settings/sites
+  assert: Zooza Sites
+  status: blocked
+  note: content/setup/zooza-sites.md:58 — Setting up your own page is available in the general settings under Web page
+  blocked: page title reads "Zooza Sitesx" (str_en3.js:4192)
+- image: zooza-sites-05.png
+  route: settings/sites
+  assert: Zooza Sites
+  status: approved
+  note: content/setup/zooza-sites.md:101 — You can customize templates and color themes in the general settings
+  click: Edit
+- image: shared-sessions-01.png
+  route: settings/glue_sets
+  assert: Shared sessions
+  status: approved
+  note: content/guides/shared-sessions.md:40 — Shared sessions set with its name, class picker grouped by programme, and match
+    conditions
+  click: Add
+- image: invoice-profile-bank-accounts-card.png
+  route: settings/invoice_profiles/73
+  assert: Bank accounts
+  status: blocked
+  card: Bank accounts
+  note: content/setup/invoice-profiles-and-bank-accounts.md:62 — Bank accounts card on an invoice profile with the account
+    fields and QR code preview open
+  blocked: raw settings__engine_accounts__* keys visible under the card
+- image: invoice-profiles-list.png
+  route: settings/invoice_profiles
+  assert: Invoice profiles
+  status: approved
+  card: Invoice profiles
+  note: content/setup/billing-and-invoicing.md:65 — Invoice profiles list showing two legal entities with the default profile
+    badge
+- image: abra-flexi-invoices-03.png
+  route: settings/invoice_settings
+  assert: Invoice settings
+  status: keep-old
+  card: Invoice settings
+  note: content/setup/abra-flexi-invoices.md:39 — Select ABRA Flexi as invoice engine
+- image: abra-flexi-invoices-05.png
+  route: settings/invoice_settings
+  assert: Invoices
+  status: keep-old
+  note: content/setup/abra-flexi-invoices.md:43 — ABRA Flexi credentials form
+- image: abra-flexi-invoices-08.png
+  route: settings/invoice_settings
+  assert: Invoices
+  status: keep-old
+  note: content/setup/abra-flexi-invoices.md:52 — Finding username and password in ABRA Flexi
+- image: billing-and-invoicing-02.png
+  route: settings/invoice_settings
+  assert: Invoice settings
+  status: blocked
+  card: Invoice settings
+  note: content/setup/billing-and-invoicing.md:41 — Invoice settings — automatic generation toggle
+  blocked: mojibake â‚¬ in auto-invoicing intro (str_en3.js:2449)
+- image: fakturoid-invoices-01.png
+  route: settings/invoice_settings
+  assert: Invoices
+  status: keep-old
+  note: content/setup/fakturoid-invoices.md:40 — Screenshot — fakturoid invoices
+- image: oblio-invoices-01.png
+  route: settings/invoice_settings
+  assert: Invoices
+  status: keep-old
+  note: content/setup/oblio-invoices.md:41 — Screenshot — oblio invoices
+- image: smartbill-invoices-02.png
+  route: settings/invoice_settings
+  assert: Invoices
+  status: keep-old
+  note: content/setup/smartbill-invoices.md:45 — SmartBill API token location in SmartBill
+- image: smartbill-invoices-03.png
+  route: settings/invoice_settings
+  assert: Invoices
+  status: keep-old
+  note: content/setup/smartbill-invoices.md:49 — SmartBill credentials in Zooza settings
+- image: smartbill-invoices-04.png
+  route: settings/invoice_settings
+  assert: Invoice settings
+  status: keep-old
+  card: Invoice settings
+  note: content/setup/smartbill-invoices.md:76 — Invoice series selection in billing profile
+- image: smartbill-invoices-05.png
+  route: settings/invoice_settings
+  assert: Invoice settings
+  status: keep-old
+  card: Invoice settings
+  note: content/setup/smartbill-invoices.md:78 — Invoice series detail
+- image: smartbill-invoices-06.png
+  route: settings/invoice_settings
+  assert: VAT
+  status: keep-old
+  card: VAT
+  note: content/setup/smartbill-invoices.md:70 — VAT sync in billing settings
+- image: szamlazz-invoices-03.png
+  route: settings/invoice_settings
+  assert: Invoices
+  status: keep-old
+  note: content/setup/szamlazz-invoices.md:41 — API token field in Zooza
+- image: szamlazz-invoices-04.png
+  route: settings/invoice_settings
+  assert: Invoices
+  status: keep-old
+  note: content/setup/szamlazz-invoices.md:43 — API token location in Számlázz.hu
+- image: szamlazz-invoices-05.png
+  route: settings/invoice_settings
+  assert: VAT
+  status: keep-old
+  card: VAT
+  note: content/setup/szamlazz-invoices.md:81 — VAT setup in billing settings
+- image: szamlazz-invoices-06.png
+  route: settings/invoice_settings
+  assert: VAT
+  status: keep-old
+  card: VAT
+  card_only: true
+  note: content/setup/szamlazz-invoices.md:83 — VAT sync
+- image: szamlazz-invoices-09.png
+  route: settings/invoice_settings
+  assert: Invoices
+  status: keep-old
+  note: content/setup/szamlazz-invoices.md:49 — Multiple Számlázz accounts via multiple profiles
+- image: booking-form-settings-05.png
+  route: settings/labels_settings
+  assert: Labels
+  status: keep-old
+  card: Labels
+  card_only: true
+  note: content/guides/booking-form-settings.md:131 — Screenshot — booking form settings
+- image: course-settings-tile-04.png
+  route: settings/labels_settings
+  assert: Labels
+  status: keep-old
+  card: Labels
+  note: content/guides/programme-settings-tile.md:71 — Labels and colours
+- image: matko-full-result-example.png
+  route: settings/matko
+  assert: MATKO – Make-up session eligibility diagnostic
+  status: keep-old
+  card: MATKO – Make-up session eligibility diagnostic
+  card_only: true
+  note: content/troubleshooting/matko-replacement-diagnostic.md:119 — MATKO settings context panel showing programme configuration
+    values used in the diagnostic
+- image: matko-replacement-diagnostic-01.png
+  route: settings/matko
+  assert: MATKO – Make-up session eligibility diagnostic
+  status: approved
+  card: MATKO – Make-up session eligibility diagnostic
+  note: content/troubleshooting/matko-replacement-diagnostic.md:35 — MATKO empty form — Credit ID and Session ID inputs with
+    Run diagnostic button
+- image: matko-replacement-diagnostic-02.png
+  route: settings/matko
+  assert: MATKO
+  status: keep-old
+  note: content/troubleshooting/matko-replacement-diagnostic.md:41 — Registration credits tab showing Diagnose replacements
+    link in a replacement credit row
+- image: matko-replacement-diagnostic-03.png
+  route: settings/matko
+  assert: MATKO
+  status: keep-old
+  note: content/troubleshooting/matko-replacement-diagnostic.md:42 — Credit detail page with Diagnose replacements button
+- image: matko-replacement-diagnostic-04.png
+  route: settings/matko
+  assert: MATKO – Make-up session eligibility diagnostic
+  status: keep-old
+  card: MATKO – Make-up session eligibility diagnostic
+  note: content/troubleshooting/matko-replacement-diagnostic.md:48 — Replacement finder empty state with info notice and link
+    to MATKO diagnostic
+- image: matko-replacement-diagnostic-05.png
+  route: settings/matko
+  assert: MATKO – Make-up session eligibility diagnostic
+  status: keep-old
+  card: MATKO – Make-up session eligibility diagnostic
+  note: content/troubleshooting/matko-replacement-diagnostic.md:58 — MATKO session picker — filter by date and programme,
+    click a row to pre-fill Session ID
+- image: notifications-center-02.png
+  route: settings/notifications
+  assert: Settings for notifications
+  status: approved
+  card: Settings for notifications
+  note: content/guides/notifications-center.md:57 — Settings with Notifications selected and the Add new notification button
+- image: notifications-center-03.png
+  route: settings/notifications
+  assert: Settings for notifications
+  status: approved
+  note: 'content/guides/notifications-center.md:61 — The new-notification form: notification type and the email address to
+    send it to'
+  click: Add new notification
+- image: trial-lessons-24.png
+  route: settings/notifications
+  assert: Settings for notifications
+  status: keep-old
+  card: Settings for notifications
+  card_only: true
+  note: content/setup/trial-sessions.md:280 — You can review and edit all notifications in the Communication section under
+    Message...
+- image: inbound-bank-statement-reading-per-account.png
+  route: settings/payment_collection
+  assert: Current setup
+  status: keep-old
+  card: Current setup
+  note: content/setup/inbound-payments-setup.md:53 — Bank statement reading table listing each bank account with its invoice
+    profile, source and status
+- image: inbound-payments-02.png
+  route: settings/payment_collection
+  assert: Current setup
+  status: keep-old
+  card: Current setup
+  note: content/guides/inbound-payments.md:59 — Setup screen for a bank account with no feed yet, offering the email parser
+    or GoCardless
+- image: inbound-payments-03.png
+  route: settings/payment_collection
+  assert: Payment collection setup
+  status: keep-old
+  note: content/guides/inbound-payments.md:61 — The same account once configured, receiving by email and showing its parser
+    address
+- image: inbound-setup-current-setup.png
+  route: settings/payment_collection
+  assert: Current setup
+  status: approved
+  card: Current setup
+  note: content/setup/inbound-payments-setup.md:37 — Inbound Payments Setup — current setup screen with the three channel
+    tiles and bank statement status
+- image: payment-collection-setup.png
+  route: settings/payment_collection
+  assert: Current setup
+  status: approved
+  note: 'content/setup/inbound-payments-setup.md:35 — Payment collection setup: the three payment channels, the reconciliation
+    rule, and the per-account s'
+  tall: true
+- image: payment-templates-creation-09.png
+  route: settings/payment_schedule_templates
+  assert: Payment plans
+  status: approved
+  note: content/guides/payment-templates-creation.md:106 — Screenshot
+- image: payment-templates-creation-10.png
+  route: settings/payment_schedule_templates/112
+  assert: Template name
+  status: keep-old
+  card: Payment plans
+  note: content/guides/payment-templates-creation.md:110 — Screenshot
+  card_only: true
+- image: payment-templates-creation-11.png
+  route: settings/payment_schedule_templates/112
+  assert: Programmes
+  status: approved
+  card: Programmes
+  note: content/guides/payment-templates-creation.md:114 — Screenshot
+- image: payment-templates-creation-13.png
+  route: settings/payment_schedule_templates/112
+  assert: Programmes
+  status: approved
+  card: Programmes
+  note: content/guides/payment-templates-creation.md:122 — Screenshot
+- image: payment-templates-creation-14.png
+  route: settings/payment_schedule_templates/112
+  assert: Programmes
+  status: keep-old
+  card: Programmes
+  note: content/guides/payment-templates-creation.md:165 — Screenshot
+- image: payment-templates-creation-15.png
+  route: settings/payment_schedule_templates/112
+  assert: Programmes
+  status: keep-old
+  card: Programmes
+  note: content/guides/payment-templates-creation.md:168 — Screenshot
+- image: payment-templates-creation-16.png
+  route: settings/payment_schedule_templates
+  assert: Payment schedule templates
+  status: keep-old
+  note: content/guides/payment-templates-creation.md:177 — Screenshot
+- image: automatic-payment-reminders-01.png
+  route: settings/payment_settings
+  assert: Payment acceptance policy
+  status: approved
+  note: content/guides/automatic-payment-reminders.md:27 — Screenshot — automatic payment reminders
+  tall: true
+- image: automatic-payment-reminders-07.png
+  route: settings/payment_settings
+  assert: Payment acceptance policy
+  status: approved
+  note: content/guides/automatic-payment-reminders.md:41 — Screenshot — automatic payment reminders
+  tall: true
+- image: automatic-payment-reminders-detailed-02.png
+  route: settings/payment_settings
+  assert: Payment settings
+  status: keep-old
+  note: content/guides/automatic-payment-reminders-detailed.md:99 — Screenshot
+- image: automatic-payment-reminders-detailed-03.png
+  route: settings/payment_settings
+  assert: Payment settings
+  status: keep-old
+  note: content/guides/automatic-payment-reminders-detailed.md:101 — Screenshot
+- image: csv-payment-import-05.png
+  route: settings/payment_settings
+  assert: Payment acceptance policy
+  status: keep-old
+  card: Payment acceptance policy
+  note: content/guides/csv-payment-import.md:84 — Screenshot — csv payment import
+- image: fastpay-direct-debit-01.png
+  route: settings/payment_settings
+  assert: Payment settings
+  status: keep-old
+  note: content/guides/fastpay-direct-debit.md:48 — Integrations page Payments section listing FastPay alongside Stripe Connect
+    and GoCardless
+- image: payment-pairing-04.png
+  route: settings/payment_collection
+  assert: Only reconcile
+  status: approved
+  card: Payment reconciliation rules
+  note: content/guides/payment-pairing.md:274 — Zooza > Settings > Payments
+  card_only: true
+- image: payments-and-billing-faq-02.png
+  route: settings/payment_settings
+  assert: Payment acceptance policy
+  status: keep-old
+  card: Payment acceptance policy
+  note: content/faq/payments-and-billing-faq.md:646 — Screenshot — payments and billing faq
+- image: reference/prog-programmes-wiggle-wonders-0-12-months-settings-price.png
+  route: settings/payment_settings
+  assert: Payment acceptance policy
+  status: keep-old
+  card: Payment acceptance policy
+  note: content/reference/programme-settings.md:47 — Price and Payment settings
+- image: stripe-payments-faq-01.png
+  route: settings/payment_settings
+  assert: Set up how money comes into Zooza
+  status: keep-old
+  card: Set up how money comes into Zooza
+  card_only: true
+  note: content/faq/stripe-payments-faq.md:58 — Screenshot — stripe payments faq
+- image: collecting-google-reviews-06.png
+  route: settings/places
+  assert: Edit venue
+  status: keep-old
+  click: My
+  card: Edit venue
+  note: content/setup/collecting-google-reviews.md:67 — Place edit screen with the suggested Google location match and link
+    options
+- image: creating-a-location-01.png
+  route: settings/places/add_new
+  assert: Venue name
+  status: approved
+  note: content/setup/creating-a-location.md:40 — Screenshot — creating a location
+- image: client-import-01.png
+  route: settings/replacements
+  assert: Make-up sessions from partner companies
+  status: delete
+  card: Make-up sessions from partner companies
+  card_only: true
+  note: content/guides/programme-settings.md:90 — If attendance recording is enabled, you can also set up make-up sessions
+    for missed...
+  reason: black/broken image in programme-settings.md:90 (programme-level, out of Settings scope)
+- image: course-settings-06.png
+  route: settings/replacements
+  assert: Make-up sessions from partner companies
+  status: keep-old
+  card: Make-up sessions from partner companies
+  note: content/guides/programme-settings.md:88 — If attendance recording is enabled, you can also set up make-up sessions
+    for missed...
+- image: make-up-sessions-faq-02.png
+  route: settings/replacements
+  assert: Make-up sessions from partner companies
+  status: keep-old
+  card: Make-up sessions from partner companies
+  note: content/faq/make-up-sessions-faq.md:63 — Make-up sessions settings with the administrator-assigned switch turned on
+- image: reference/prog-programmes-wiggle-wonders-0-12-months-settings-make-up-sessions.png
+  route: settings/replacements
+  assert: Make-up sessions from partner companies
+  status: keep-old
+  card: Make-up sessions from partner companies
+  card_only: true
+  note: content/reference/programme-settings.md:113 — Make-up Sessions settings
+- image: discount-code-07.png
+  route: settings/team/add
+  assert: Add new user
+  status: approved
+  card: Add new user
+  card_only: true
+  note: content/guides/user-roles.md:32 — The process of adding a instructor is very simple. Under Settings, open the Access
+    icon...
+- image: lecturer-substitution-01.png
+  route: settings/team
+  assert: Access
+  status: approved
+  note: content/guides/instructor-substitution.md:27 — This feature is set in the Settings category under Access section,
+    where you just need...
+- image: user-roles-02.png
+  route: settings/team
+  assert: Team members
+  status: approved
+  note: content/guides/user-roles.md:28 — The process of adding a instructor is very simple. Under Settings, open the Access
+    icon...
+- image: user-roles-03.png
+  route: settings/team/add
+  assert: Add new user
+  status: approved
+  card: Add new user
+  note: content/guides/user-roles.md:30 — The process of adding a instructor is very simple. Under Settings, open the Access
+    icon...
+- image: user-roles-21.png
+  route: settings/team
+  assert: Team members
+  status: approved
+  card: Team members
+  note: content/guides/user-roles.md:277 — Team and Settings, General, Access — the toggle Allow instructors to see financial
+    information set t
+- image: xero-integration-04.png
+  route: settings/team
+  assert: Access
+  status: blocked
+  note: content/setup/xero-integration.md:50 — Xero allow access confirmation
+  blocked: same mojibake visible on Invoices page
+- image: archive-or-delete-programme-07.png
+  route: settings/trash
+  assert: Trash
+  status: keep-old
+  note: content/guides/archive-or-delete-programme.md:101 — Delete card at the bottom of class settings, offering Delete and
+    Archive side by side
+- image: trash-and-restore-01.png
+  route: settings/trash
+  assert: Trash
+  status: approved
+  note: content/guides/trash-and-restore.md:77 — Screenshot — trash and restore

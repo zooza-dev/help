@@ -1,0 +1,57 @@
+{
+  "id": "settings.notifications",
+  "menu": "Settings → Other → Notification center",
+  "route": "settings/notifications",
+  "url_template": "https://{region}.zooza.app/#settings/notifications",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "Settings for notifications",
+      "intro": [
+        "Set up notifications that will be sent to the selected email address."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Notification:",
+          "type": "select",
+          "help": "",
+          "options": [
+            "New booking",
+            "Booking with a note",
+            "Late booking",
+            "New booking in waiting list",
+            "Payment confirmation",
+            "Automatic sending of invoices to client by email",
+            "Send email about changes and news in Zooza",
+            "New cancellation (all programmes)",
+            "New tailored make-up session",
+            "Daily report",
+            "New email reply from client",
+            "New contact enquiry",
+            "New duplicate booking",
+            "Class ends soon notification",
+            "Class full notification"
+          ]
+        },
+        {
+          "label": "Send to:",
+          "type": "text",
+          "help": "The above email address will be notified of the session."
+        }
+      ],
+      "buttons": [
+        "Create notification",
+        "Cancel",
+        "Save",
+        "Delete"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

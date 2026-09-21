@@ -1,0 +1,67 @@
+{
+  "id": "settings.glue_sets",
+  "menu": "Settings → General → Shared sessions",
+  "route": "settings/glue_sets",
+  "url_template": "https://{region}.zooza.app/#settings/glue_sets",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "Shared sessions",
+      "intro": [
+        "When two classes run in the same room at the same time, Zooza treats their sessions as one shared session so the room is never double-booked. Add the classes that share a room to a shared-sessions set.",
+        "No shared-sessions sets have been created yet."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Add › Shared sessions",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "A name for this set, used only to identify it in this list."
+        },
+        {
+          "label": "Active",
+          "type": "toggle",
+          "help": "When switched off, the classes in this set no longer share a room and their sessions are no longer combined."
+        }
+      ],
+      "buttons": [],
+      "route": "settings/glue_sets/add_new"
+    },
+    {
+      "title": "Add › Match conditions",
+      "intro": [
+        "Sessions are only combined when they run in the same room, on the same date, at overlapping times. This always applies and cannot be switched off."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Also require the same instructor",
+          "type": "toggle",
+          "help": "Compared against the originally assigned instructor, so arranging a substitute does not break the sharing."
+        }
+      ],
+      "buttons": [
+        "Add"
+      ],
+      "route": "settings/glue_sets/add_new"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Add",
+      "route": "settings/glue_sets/add_new"
+    }
+  ]
+}

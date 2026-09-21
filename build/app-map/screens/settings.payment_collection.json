@@ -1,0 +1,103 @@
+{
+  "id": "settings.payment_collection",
+  "menu": "Settings → Billing & Payments → Payment collection setup",
+  "route": "settings/payment_collection",
+  "url_template": "https://{region}.zooza.app/#settings/payment_collection",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "Current setup",
+      "intro": [
+        "Review and manage how Zooza collects money from clients."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Online card payment",
+      "intro": [
+        "Default on new programmes: ON"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Direct debit",
+      "intro": [
+        "Default on new programmes: OFF"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Cash / bank transfer",
+      "intro": [
+        "Default on new programmes: ON",
+        "0 of 4 bank accounts have a statement feed"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Payment reconciliation rules",
+      "intro": [
+        "Control how strictly Zooza reconciles incoming payments to bookings."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Only reconcile payments to outstanding bookings",
+          "type": "checkbox",
+          "help": "When on, an incoming payment is reconciled to a booking only if the booking is outstanding (awaiting payment or unpaid) AND the payment amount does not exceed what's owed. Anything else is left for manual review. When off, Zooza reconciles more aggressively — overpayments switch the booking to 'Overpaid' automatically."
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Payment reconciliation",
+      "intro": [
+        "Each bank account can read incoming payments from its statements. Set up a statement feed per account."
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Configure › Online card payment",
+      "intro": [
+        "The client pays with their card on the checkout page. Funds move directly from the card to your merchant account; Zooza keeps the record. Refunds and additional charges on the same card can be triggered from Zooza.",
+        "Managed by Zooza — no setup required"
+      ],
+      "sections": [
+        "Providers available in your region"
+      ],
+      "fields": [
+        {
+          "label": "Enable by default on new programmes",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Default provider for new programmes",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Stripe (via Zooza)",
+            "Stripe Connect"
+          ]
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

@@ -1,0 +1,100 @@
+{
+  "id": "classes.detail.trainers",
+  "menu": "Activities → Classes → class → Instructors",
+  "route": "courses/schedules/245?edit=trainers",
+  "url_template": "https://{region}.zooza.app/#courses/schedules/245?edit=trainers",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Instructors",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Instructor",
+          "type": "combobox",
+          "help": ""
+        },
+        {
+          "label": "Rate",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Choose",
+            "60 (60 minutes)"
+          ]
+        }
+      ],
+      "buttons": [
+        "×"
+      ]
+    },
+    {
+      "title": "Additional instructors",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Add additional instructor"
+      ]
+    },
+    {
+      "title": "Add additional instructor › Additional instructors",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Instructor",
+          "type": "combobox",
+          "help": ""
+        },
+        {
+          "label": "Role",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Secondary instructor",
+            "Assistant",
+            "Assistant instructor",
+            "Instructor"
+          ]
+        },
+        {
+          "label": "How to set sessions",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Change for a class only (sessions will not change)",
+            "Change for all sessions",
+            "Change only for upcoming sessions"
+          ]
+        }
+      ],
+      "buttons": [
+        "×",
+        "Save",
+        "Cancel",
+        "Delete",
+        "Add additional instructor"
+      ],
+      "route": "courses/schedules/245?edit=trainers"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/schedules/245?edit=trainers"
+    },
+    {
+      "via": "Add additional instructor",
+      "route": "courses/schedules/245?edit=trainers"
+    }
+  ]
+}

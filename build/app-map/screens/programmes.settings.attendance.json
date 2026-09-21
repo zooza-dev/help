@@ -1,0 +1,118 @@
+{
+  "id": "programmes.settings.attendance",
+  "menu": "Activities → Programmes → programme → Settings → Attendance",
+  "route": "courses/150/settings?edit=attendance",
+  "url_template": "https://{region}.zooza.app/#courses/150/settings?edit=attendance",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Attendance",
+      "intro": [
+        "If you don't require or don't want to track attendance for this programme, you can turn it off here."
+      ],
+      "sections": [
+        "Allow Session Reschedule"
+      ],
+      "fields": [
+        {
+          "label": "Track attendance",
+          "type": "toggle",
+          "help": "By turning off the attendance tracking you will disable the possibility for your clients to use make-up sessions and indicate whether they'll attend the session or not. This will also cancel sending notifications about the upcoming session. This setting is useful for summer camps or other intensive daily programmes where the attendance is pretty much guaranteed."
+        },
+        {
+          "label": "Allow rescheduling of sessions",
+          "type": "toggle",
+          "help": "If you enable this, your clients can reschedule sessions themselves. The setting respects lecturers’ working hours — clients won’t be able to choose times when the lecturer is unavailable."
+        },
+        {
+          "label": "Automatically approve requests for session rescheduling",
+          "type": "toggle",
+          "help": "If enabled, your clients’ requests to reschedule sessions will be automatically approved. If disabled, the lecturer will get a notification and will need to approve or reject each request."
+        },
+        {
+          "label": "Limit rescheduling to once per session",
+          "type": "toggle",
+          "help": "If enabled, clients can reschedule each session only once. Rescheduling by instructors or admins does not count toward this limit."
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/150/settings?edit=attendance"
+    },
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    }
+  ]
+}

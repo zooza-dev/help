@@ -85,6 +85,28 @@ MASK_JS = r"""
 """
 
 
+def shoot(pg, out, target=None):
+    """Screenshot with a CDP fallback: Playwright waits for web fonts and hangs on pages whose
+    editor never finishes loading them (TinyMCE on dynamic documents). CDP does not wait."""
+    import base64
+    try:
+        if target is not None:
+            target.screenshot(path=out, timeout=15000)
+        else:
+            pg.screenshot(path=out, timeout=15000)
+        return ""
+    except Exception:  # noqa: BLE001
+        cdp = pg.context.new_cdp_session(pg)
+        clip = None
+        if target is not None:
+            bb = target.bounding_box()
+            if bb:
+                clip = {"x": bb["x"], "y": bb["y"], "width": bb["width"], "height": bb["height"], "scale": 2}
+        data = cdp.send("Page.captureScreenshot", {"format": "png", **({"clip": clip} if clip else {})})["data"]
+        open(out, "wb").write(base64.b64decode(data))
+        return " (cdp fallback)"
+
+
 def load_manifest(path):
     import yaml
     with open(path, encoding="utf-8") as fh:
@@ -119,7 +141,7 @@ def do_login(link):
     print("check that company is the one you meant before capturing anything.")
 
 
-def capture(manifest_path, only, apply_it):
+def capture(manifest_path, only, apply_it, status=None):
     from playwright.sync_api import sync_playwright
     base, shots = load_manifest(manifest_path)
     mask = load_mask()
@@ -127,6 +149,8 @@ def capture(manifest_path, only, apply_it):
         shots = [s for s in shots if s["image"] == only]
         if not shots:
             sys.exit(f"no shot named {only} in the manifest")
+    if status:
+        shots = [s for s in shots if s.get("status") in status]
     if not os.path.exists(SESSION):
         sys.exit(f"no session at {SESSION} — run with --login <magic-link> first")
     os.makedirs(STAGE, exist_ok=True)
@@ -143,8 +167,21 @@ def capture(manifest_path, only, apply_it):
             name, route = shot["image"], shot["route"]
             out = os.path.join(STAGE, name.replace("/", "__"))
             try:
+                if shot.get("tall") != getattr(pg, "_tall", False):
+                    pg.set_viewport_size({"width": 1600, "height": 2600 if shot.get("tall") else 1000})
+                    pg._tall = bool(shot.get("tall"))
                 pg.goto(f"{base}#{route.lstrip('#')}", timeout=60000)
                 pg.wait_for_timeout(shot.get("wait", 8000))
+                if shot.get("click"):
+                    btn = pg.locator(".app_page_layout a:visible, .app_page_layout button:visible, .app_page_layout summary:visible") \
+                            .filter(has_text=re.compile(rf"^\s*{re.escape(shot['click'])}\s*$")).first
+                    if btn.count() == 0:   # accordions and tiles are plain elements with a click binding
+                        btn = pg.locator(".app_page_layout").get_by_text(shot["click"], exact=True).first
+                    if btn.count() == 0:
+                        results.append((name, "NO BUTTON", f"nothing to click named {shot['click']!r}"))
+                        continue
+                    btn.click(timeout=8000)
+                    pg.wait_for_timeout(3000)
                 text = pg.inner_text("body")
 
                 if "Page not found" in text:
@@ -181,8 +218,22 @@ def capture(manifest_path, only, apply_it):
                     r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", after)
                     if flag and any(f in e.lower() for f in flag)})
 
-                pg.screenshot(path=out)
                 detail = f"masked {masked}"
+                target = None
+                if shot.get("card"):
+                    target = pg.locator(".card").filter(has=pg.locator(".card_header", has_text=shot["card"])).first
+                    if target.count() == 0:
+                        target = None
+                        detail += f" — CARD NOT FOUND {shot['card']!r}, shot the viewport"
+                if target is not None:
+                    target.scroll_into_view_if_needed()
+                    pg.wait_for_timeout(300)
+                    # most KB pictures are the page with the menu, scrolled so the card is in
+                    # view — the reader needs to see where they are. card_only is for the few
+                    # that are a close-up.
+                    detail += shoot(pg, out, target if shot.get("card_only") else None)
+                else:
+                    detail += shoot(pg, out)
                 if suspect:
                     detail += f" — CHECK: {', '.join(suspect[:3])}"
                 results.append((name, "ok", detail))
@@ -220,13 +271,14 @@ def main():
     ap.add_argument("--manifest", default=os.path.join(HERE, "manifest.yml"))
     ap.add_argument("--only", help="capture a single image from the manifest")
     ap.add_argument("--apply", action="store_true", help="copy staged shots over assets/images")
+    ap.add_argument("--status", nargs="+", help="only shots whose manifest status is one of these (e.g. approved fixed)")
     ap.add_argument("--login", metavar="LINK", help="sign in with a magic link and save the session")
     args = ap.parse_args()
 
     if args.login:
         do_login(args.login)
         return 0
-    return capture(args.manifest, args.only, args.apply)
+    return capture(args.manifest, args.only, args.apply, args.status)
 
 
 if __name__ == "__main__":

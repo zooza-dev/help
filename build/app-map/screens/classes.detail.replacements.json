@@ -1,0 +1,46 @@
+{
+  "id": "classes.detail.replacements",
+  "menu": "Activities → Classes → class → Make-up sessions",
+  "route": "courses/schedules/245?edit=replacements",
+  "url_template": "https://{region}.zooza.app/#courses/schedules/245?edit=replacements",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Extra capacity settings",
+      "intro": [
+        "Current number of extra places available for this class: 1"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Extra capacity",
+          "type": "number",
+          "help": "If the number of registrants reaches the maximum capacity for the class, it is possible to increase this capacity. These extra places are shared: they are used for make-up sessions, and for trials when the programme places trial attendees in extra capacity."
+        },
+        {
+          "label": "How this number is applied",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Add it to the number from general settings (currently: 1)",
+            "Use it instead of the number from general settings"
+          ]
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/schedules/245?edit=replacements"
+    }
+  ]
+}

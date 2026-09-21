@@ -1,0 +1,203 @@
+{
+  "id": "programmes.settings.online_registration",
+  "menu": "Activities → Programmes → programme → Settings → Online booking",
+  "route": "courses/150/settings?edit=online_registration",
+  "url_template": "https://{region}.zooza.app/#courses/150/settings?edit=online_registration",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Online booking",
+      "intro": [
+        "By marking, select from the list of classes you want to show in the menu on your website as available for online booking."
+      ],
+      "sections": [
+        "Booking options",
+        "Other",
+        "Class settings"
+      ],
+      "fields": [
+        {
+          "label": "Allow online booking",
+          "type": "toggle",
+          "help": "Displays/hides the programme from the booking form. Thus, whether the programme will be (dis)enabled on your website for online booking."
+        },
+        {
+          "label": "Priority",
+          "type": "number",
+          "help": "Defines the programme’s display order for clients. By default, programmes are sorted alphabetically, but a higher priority (0–1000) moves the programme higher in the list. The default priority is 0."
+        },
+        {
+          "label": "Display in catalogue",
+          "type": "toggle",
+          "help": "By marking, classes will be displayed in the menu on your website"
+        },
+        {
+          "label": "Booking Options Shown on Website",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Default - let client choose",
+            "Offer full programme booking only",
+            "Trials only (if available)",
+            "Blocks only (if available)",
+            "Trials or blocks (if available)"
+          ]
+        },
+        {
+          "label": "Allow multiple bookings for the programme",
+          "type": "toggle",
+          "help": "Suitable for parents with twins. Normally, booking for twins needs to be done one by one. With this setup, a parent can enrol their children at the same time."
+        },
+        {
+          "label": "Minimum number of bookings",
+          "type": "number",
+          "help": "What is the minimum number of people that can enrol per form?"
+        },
+        {
+          "label": "Maximum number of bookings",
+          "type": "number",
+          "help": "What is the maximum number of people that can enrol per form?"
+        },
+        {
+          "label": "Collect basic data from:",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "All bookings — Each booking provides its own name, email, and phone independently.",
+            "Only the first booking — Only the first booking (the person submitting the form) provides name, email, and phone. The remaining bookings inherit these basic details."
+          ]
+        },
+        {
+          "label": "Collect additional data (additional fields) from:",
+          "type": "radio_group",
+          "help": "This setting controls which bookings must submit the mandatory additional fields. It does not control whether the buyer or the attendee fills the field — the booking form handles that automatically.",
+          "options": [
+            "All bookings — Every booking must fill in the mandatory additional fields. Use this when each booking represents a distinct attendee whose details you need.",
+            "All bookings except the first — The first booking is exempt from the additional fields. Use this when the form submitter is also an attendee but the additional fields describe a different person — typically a parent who books for both themselves and their child, where the child's details (date of birth, school, etc.) are collected on the second booking but the parent's are not."
+          ]
+        },
+        {
+          "label": "If the class reaches full capacity, do not show it in the booking form",
+          "type": "toggle",
+          "help": ""
+        },
+        {
+          "label": "Hide from booking form (number of hours) before the programme begins:",
+          "type": "number",
+          "help": "The programme will not be available for booking the indicated number of hours before the programme begins. The programme will not appear on the booking form."
+        },
+        {
+          "label": "Allow register now, start later",
+          "type": "toggle",
+          "help": "A customer can register now but begin on a later date. You set only how far ahead they may start; individual start dates are not managed here."
+        },
+        {
+          "label": "Priority registration",
+          "type": "toggle",
+          "help": "Let eligible returning customers register before the class opens to everyone. You set the priority-open moment and, optionally, when it opens to the public. Who is eligible is handled automatically."
+        }
+      ],
+      "buttons": [
+        "Save"
+      ]
+    },
+    {
+      "title": "Customizing booking form",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Custom field name: Note",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Custom field name: Name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Custom field name: Surname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Custom field name: Email address",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Custom field name: Phone",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Communication",
+      "intro": [
+        "The Customize email button opens the template editor. After creating or editing a template there, select it here and save — otherwise this programme keeps sending the current one."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Send automatic email reminders the day before the session",
+          "type": "toggle",
+          "help": "If checked, session reminders will be sent to the booking at 09.00 the day before."
+        },
+        {
+          "label": "Confirmation email",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Standard email",
+            "Custom template: New Confirmation Template"
+          ]
+        },
+        {
+          "label": "Confirmation email for lead collection",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Standard email"
+          ]
+        },
+        {
+          "label": "Session reminders",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Standard email"
+          ]
+        },
+        {
+          "label": "Preset signature",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Choose",
+            "Fun and Run",
+            "Playfultime Signature"
+          ]
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "notes": [
+    "You’ve disabled late bookings. Therefore clients can enrol to single session only before a class starts"
+  ],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/150/settings?edit=online_registration"
+    }
+  ]
+}

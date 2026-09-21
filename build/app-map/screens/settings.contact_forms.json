@@ -1,0 +1,207 @@
+{
+  "id": "settings.contact_forms",
+  "menu": "Settings → General → Contact forms",
+  "route": "settings/contact_forms",
+  "url_template": "https://{region}.zooza.app/#settings/contact_forms",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "Contact forms",
+      "intro": [
+        "Thursday, 17. September 2026, 06:52:43"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "New form › General",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Internal note",
+          "type": "text",
+          "help": "Only visible to your team, for example which page this form is for."
+        }
+      ],
+      "buttons": [
+        "Save"
+      ],
+      "route": "settings/contact_forms/new"
+    },
+    {
+      "title": "New form › Standard fields",
+      "intro": [
+        "Email or phone must stay on and required, so you can reach everyone who sends an enquiry. To change this, turn on and require the other one first."
+      ],
+      "sections": [
+        "First name",
+        "Surname",
+        "Email",
+        "Phone",
+        "Message"
+      ],
+      "fields": [
+        {
+          "label": "Enabled",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Required",
+          "type": "checkbox",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save"
+      ],
+      "route": "settings/contact_forms/new"
+    },
+    {
+      "title": "New form › Visitor tracking",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Remember where the visitor first came from",
+          "type": "toggle",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save"
+      ],
+      "route": "settings/contact_forms/new"
+    },
+    {
+      "title": "New form › After submit",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "After the form is sent",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Show a message",
+            "Go to a web page"
+          ]
+        },
+        {
+          "label": "Message",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save"
+      ],
+      "route": "settings/contact_forms/new"
+    },
+    {
+      "title": "New form › Handling",
+      "intro": [
+        "Extra email addresses that receive a notification about each enquiry from this form."
+      ],
+      "sections": [
+        "Also notify"
+      ],
+      "fields": [
+        {
+          "label": "Contact owner",
+          "type": "combobox",
+          "help": "The team member every new contact from this form is assigned to."
+        },
+        {
+          "label": "Labels",
+          "type": "combobox",
+          "help": "Labels added to every new contact from this form."
+        },
+        {
+          "label": "Create a to-do for each enquiry",
+          "type": "toggle",
+          "help": ""
+        },
+        {
+          "label": "Send an automatic reply",
+          "type": "toggle",
+          "help": "The visitor receives an email confirming their enquiry."
+        }
+      ],
+      "buttons": [
+        "Choose all",
+        "Reset",
+        "Save"
+      ],
+      "route": "settings/contact_forms/new"
+    },
+    {
+      "title": "Contact form › General Default",
+      "intro": [
+        "Default configuration. It is used when a widget or embed code does not name a configuration."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Internal note",
+          "type": "text",
+          "help": "Only visible to your team, for example which page this form is for."
+        }
+      ],
+      "buttons": [
+        "Save"
+      ],
+      "route": "settings/contact_forms/1"
+    },
+    {
+      "title": "Contact form › Embed code for this form",
+      "intro": [
+        "This code always shows this configuration. The Contact form embed code in your widget has no configuration ID, so it shows the configuration chosen in the widget, or the default one. Go to Widgets",
+        "Only one contact form can be placed per page. The website must be on the widget's domain or one of its contact form's additional domains, otherwise the form will not load."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Embed method",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Body only",
+            "Head + body (loads faster)"
+          ]
+        }
+      ],
+      "buttons": [
+        "Copy"
+      ],
+      "route": "settings/contact_forms/1"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "New form",
+      "route": "settings/contact_forms/new"
+    },
+    {
+      "via": "Contact form",
+      "route": "settings/contact_forms/1"
+    }
+  ]
+}

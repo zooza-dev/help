@@ -1,0 +1,136 @@
+{
+  "id": "classes.detail",
+  "menu": "Activities → Classes → class",
+  "route": "courses/schedules/245",
+  "url_template": "https://{region}.zooza.app/#courses/schedules/245",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Settings",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Share"
+      ]
+    },
+    {
+      "title": "Instructors",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Products",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Report",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Price and payment",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Documents",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    },
+    {
+      "via": "Copy",
+      "route": "courses/schedules/245/copy"
+    },
+    {
+      "via": "Edit",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Edit",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Edit",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Report",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Report",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Show bookings",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Create booking",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Edit",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "FORMS (0)",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Add document",
+      "error": "TimeoutError"
+    }
+  ]
+}

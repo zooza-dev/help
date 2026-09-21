@@ -1,0 +1,159 @@
+{
+  "id": "classes.detail.add_events",
+  "menu": "Activities → Classes → class → Add sessions",
+  "route": "courses/schedules/245?edit=add_events",
+  "url_template": "https://{region}.zooza.app/#courses/schedules/245?edit=add_events",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Add sessions",
+      "intro": [
+        "Create sessions by clicking on the Add session dates button, or from a saved template"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    },
+    {
+      "title": "Create sessions › Add sessions",
+      "intro": [
+        "Create sessions by clicking on the Add session dates button, or from a saved template"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Enter session date and time",
+          "type": "date_time",
+          "help": ""
+        },
+        {
+          "label": "Length of sessions in minutes",
+          "type": "number",
+          "help": ""
+        },
+        {
+          "label": "Instructor",
+          "type": "select",
+          "help": "",
+          "options": [
+            "To be decided",
+            "Instructor unassigned",
+            "Guest Instructor",
+            "Noah Campbell",
+            "Chloe Evans",
+            "Amelia Hughes",
+            "Brain James",
+            "Brian James",
+            "Lucy Morgan",
+            "Jasmine Reed",
+            "Priya Sharma",
+            "Ben Taylor",
+            "Daniel Wright"
+          ]
+        },
+        {
+          "label": "Repeat",
+          "type": "toggle",
+          "help": ""
+        },
+        {
+          "label": "Billable sessions (don’t check if all are billable)",
+          "type": "toggle",
+          "help": ""
+        },
+        {
+          "label": "Block",
+          "type": "select",
+          "help": "",
+          "options": [
+            "None",
+            "New"
+          ]
+        }
+      ],
+      "buttons": [],
+      "route": "courses/schedules/245?edit=add_events"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/schedules/245?edit=add_events"
+    },
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    },
+    {
+      "via": "Create sessions",
+      "route": "courses/schedules/245?edit=add_events"
+    }
+  ]
+}

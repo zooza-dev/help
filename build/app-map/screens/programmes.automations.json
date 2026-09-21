@@ -1,0 +1,28 @@
+{
+  "id": "programmes.automations",
+  "menu": "Activities → Programmes → programme → Automations",
+  "route": "courses/150/automations",
+  "url_template": "https://{region}.zooza.app/#courses/150/automations",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Automations",
+      "intro": [
+        "One-off Payment Automations",
+        "Trial automation with manual session assignment",
+        "Auto-Enrolment Automations"
+      ],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

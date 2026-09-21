@@ -1,0 +1,169 @@
+{
+  "id": "programmes.overview",
+  "menu": "Activities → Programmes → programme → Overview",
+  "route": "courses/150",
+  "url_template": "https://{region}.zooza.app/#courses/150",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Performance Overview",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    },
+    {
+      "via": "New class",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Copy programme",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "(Copy)",
+      "route": "courses/schedules/245"
+    },
+    {
+      "via": "Bookings",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Add booking",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Class 230",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Share",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Bookings",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Add booking",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Class 222",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Share",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Bookings",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Add booking",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Class 194",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Share",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Bookings",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Add booking",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "Class 193",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "All classes (6)",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "New class",
+      "error": "TimeoutError"
+    }
+  ]
+}

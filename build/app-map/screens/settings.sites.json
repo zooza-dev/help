@@ -1,0 +1,137 @@
+{
+  "id": "settings.sites",
+  "menu": "Settings → Other → Zooza Sitesx",
+  "route": "settings/sites",
+  "url_template": "https://{region}.zooza.app/#settings/sites",
+  "roles": [
+    "owner",
+    "assistant"
+  ],
+  "captured": "2026-09-19",
+  "cards": [
+    {
+      "title": "General settings",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Consents & Agreements",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Pages",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "title": "Edit › Contact settings",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Address",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Telephone number",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "E-mail",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Instagram",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Facebook",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Linkedin",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Tiktok",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "X",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Edit › Language mutations",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Choose in which languages ​​the website will be available",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Slovak",
+            "Czech",
+            "English",
+            "Romanian",
+            "Polish",
+            "Deutsch"
+          ]
+        }
+      ],
+      "buttons": [
+        "Create"
+      ]
+    },
+    {
+      "title": "Edit #2 › Consents & Agreements",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Marketing consent",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Yes or no",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Pho",
+          "type": "checkbox",
+          "help": ""
+        },
+        {
+          "label": "Order",
+          "type": "checkbox",
+          "help": ""
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "notes": [
+    "Your website won’t update automatically when you create a new programme or product, or change text. It will always show real-time data about your classes and calendar, but other information must be refreshed manually. Don’t forget to hit the Regenerate button."
+  ],
+  "discovered": []
+}

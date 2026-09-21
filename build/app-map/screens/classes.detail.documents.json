@@ -1,0 +1,47 @@
+{
+  "id": "classes.detail.documents",
+  "menu": "Activities → Classes → class → Documents",
+  "route": "courses/schedules/245?edit=documents",
+  "url_template": "https://{region}.zooza.app/#courses/schedules/245?edit=documents",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Documents",
+      "intro": [
+        "Attach documents to the session which the clients can download in their profiles"
+      ],
+      "sections": [
+        "Documents"
+      ],
+      "fields": [
+        {
+          "label": "Search",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Choose a file from library",
+        "Save (0 documents)",
+        "Cancel"
+      ]
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Brain James",
+      "route": "courses/schedules/245?edit=documents"
+    },
+    {
+      "via": "Choose a file from library",
+      "route": "courses/schedules/245?edit=documents"
+    }
+  ]
+}

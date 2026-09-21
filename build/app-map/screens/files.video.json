@@ -1,0 +1,112 @@
+{
+  "id": "files.video",
+  "menu": "Products & Services → Documents → video",
+  "route": "files/video/1103388481",
+  "url_template": "https://{region}.zooza.app/#files/video/1103388481",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "files",
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Sample Video",
+      "intro": [
+        "Sometimes, the preview image is not generated correctly and you will only see is as coloured stripes. In this case, try updating the preview image manually."
+      ],
+      "sections": [
+        "Current status"
+      ],
+      "fields": [
+        {
+          "label": "Video file name",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Update preview image",
+        "Verify status"
+      ]
+    },
+    {
+      "title": "Diagnostics:",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Update domain settings"
+      ]
+    },
+    {
+      "title": "My profile › Brain James",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "help": "User name"
+        },
+        {
+          "label": "Surname",
+          "type": "text",
+          "help": "User surname"
+        },
+        {
+          "label": "Phone number",
+          "type": "text",
+          "help": "User's phone number"
+        },
+        {
+          "label": "Nickname",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Show nicknames only",
+          "type": "checkbox",
+          "help": "When active, clients can only see the nickname."
+        }
+      ],
+      "buttons": [],
+      "route": "me"
+    },
+    {
+      "title": "Subscription › Subscription & Billing",
+      "intro": [
+        "Manage your Zooza subscription in one place. Here you can review your current plan, change your subscription, and download invoices. All subscription management is handled securely in our billing application."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Billing cycle",
+          "type": "select",
+          "help": "",
+          "options": [
+            "Monthly",
+            "Yearly"
+          ]
+        }
+      ],
+      "buttons": [
+        "Choose"
+      ],
+      "route": "subscription"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "My profile",
+      "route": "me"
+    },
+    {
+      "via": "Subscription",
+      "route": "subscription"
+    }
+  ]
+}

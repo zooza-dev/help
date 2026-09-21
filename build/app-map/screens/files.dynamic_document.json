@@ -1,0 +1,46 @@
+{
+  "id": "files.dynamic_document",
+  "menu": "Products & Services → Documents → dynamic document",
+  "route": "files/dynamic_document/1",
+  "url_template": "https://{region}.zooza.app/#files/dynamic_document/1",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "files",
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "New Dynamic Document",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Dynamic document",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Header",
+          "type": "wysiwyg",
+          "help": "This will appear in the header section of the generated document along with company logo and name. You can use it for adding address or contact details."
+        },
+        {
+          "label": "Title",
+          "type": "text",
+          "help": "This is the main title for the document"
+        },
+        {
+          "label": "Text",
+          "type": "wysiwyg",
+          "help": "This is the body of the generated document"
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "notes": [],
+  "discovered": []
+}

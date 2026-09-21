@@ -1,0 +1,245 @@
+{
+  "id": "files.list",
+  "menu": "Products & Services → Documents",
+  "route": "files",
+  "url_template": "https://{region}.zooza.app/#files",
+  "roles": [
+    "owner",
+    "assistant",
+    "receptionist",
+    "main_trainer"
+  ],
+  "area": "files",
+  "captured": "2026-09-20",
+  "cards": [
+    {
+      "title": "Add new › New document",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Category",
+          "type": "radio_group",
+          "help": "",
+          "options": [
+            "Document",
+            "Video (PRO)",
+            "URL",
+            "Dynamic document"
+          ]
+        },
+        {
+          "label": "File name",
+          "type": "text",
+          "help": "The name will also be shown on the page."
+        }
+      ],
+      "buttons": [],
+      "route": "files/add_new"
+    },
+    {
+      "title": "Add new › Upload",
+      "intro": [
+        "Drag & drop your file here or browse to choose a file Upload"
+      ],
+      "sections": [
+        "Upload error"
+      ],
+      "fields": [],
+      "buttons": [
+        "Upload"
+      ],
+      "route": "files/add_new"
+    },
+    {
+      "title": "ChatGPT Image 31. 5. 2026, 13_40_55.png › ChatGPT Image 31. 5. 2026, 13_40_55.png",
+      "intro": [
+        "Document's name ChatGPT Image 31. 5. 2026, 13_40_55.png"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "File name",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [],
+      "route": "files/document/4"
+    },
+    {
+      "title": "ChatGPT Image 31. 5. 2026, 13_41_19.png › ChatGPT Image 31. 5. 2026, 13_41_19.png",
+      "intro": [
+        "Document's name ChatGPT Image 31. 5. 2026, 13_41_19.png"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "File name",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [],
+      "route": "files/document/5"
+    },
+    {
+      "title": "ChatGPT Image 31. 5. 2026, 13_47_50.png › ChatGPT Image 31. 5. 2026, 13_47_50.png",
+      "intro": [
+        "Document's name ChatGPT Image 31. 5. 2026, 13_47_50.png"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "File name",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [],
+      "route": "files/document/6"
+    },
+    {
+      "title": "ChatGPT Image 31. 5. 2026, 13_38_47.png › ChatGPT Image 31. 5. 2026, 13_38_47.png",
+      "intro": [
+        "Document's name ChatGPT Image 31. 5. 2026, 13_38_47.png"
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "File name",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [],
+      "route": "files/document/7"
+    },
+    {
+      "title": "New Dynamic Document › New Dynamic Document",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Dynamic document",
+          "type": "text",
+          "help": ""
+        },
+        {
+          "label": "Header",
+          "type": "wysiwyg",
+          "help": "This will appear in the header section of the generated document along with company logo and name. You can use it for adding address or contact details."
+        },
+        {
+          "label": "Title",
+          "type": "text",
+          "help": "This is the main title for the document"
+        },
+        {
+          "label": "Text",
+          "type": "wysiwyg",
+          "help": "This is the body of the generated document"
+        }
+      ],
+      "buttons": [],
+      "route": "files/dynamic_document/1"
+    },
+    {
+      "title": "Sample Video › Sample Video",
+      "intro": [
+        "Sometimes, the preview image is not generated correctly and you will only see is as coloured stripes. In this case, try updating the preview image manually."
+      ],
+      "sections": [
+        "Current status"
+      ],
+      "fields": [
+        {
+          "label": "Video file name",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Update preview image",
+        "Verify status"
+      ],
+      "route": "files/video/1103388481"
+    },
+    {
+      "title": "Onboarding video › Onboarding video",
+      "intro": [
+        "Sometimes, the preview image is not generated correctly and you will only see is as coloured stripes. In this case, try updating the preview image manually."
+      ],
+      "sections": [
+        "Current status"
+      ],
+      "fields": [
+        {
+          "label": "Video file name",
+          "type": "text",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Update preview image",
+        "Verify status"
+      ],
+      "route": "files/video/1117358597"
+    }
+  ],
+  "notes": [],
+  "discovered": [
+    {
+      "via": "Add new",
+      "route": "files/add_new"
+    },
+    {
+      "via": "Wiggle at Home: Sensory Sound Pack",
+      "error": "TimeoutError"
+    },
+    {
+      "via": "ChatGPT Image 31. 5. 2026, 13_40_55.png",
+      "route": "files/document/4"
+    },
+    {
+      "via": "ChatGPT Image 31. 5. 2026, 13_41_19.png",
+      "route": "files/document/5"
+    },
+    {
+      "via": "ChatGPT Image 31. 5. 2026, 13_47_50.png",
+      "route": "files/document/6"
+    },
+    {
+      "via": "ChatGPT Image 31. 5. 2026, 13_38_47.png",
+      "route": "files/document/7"
+    },
+    {
+      "via": "ChatGPT Image 31. 5. 2026, 13_40_55.png",
+      "route": "files/document/8"
+    },
+    {
+      "via": "ChatGPT Image 31. 5. 2026, 13_41_19.png",
+      "route": "files/document/9"
+    },
+    {
+      "via": "ChatGPT Image 31. 5. 2026, 13_47_50.png",
+      "route": "files/document/10"
+    },
+    {
+      "via": "ChatGPT Image 31. 5. 2026, 13_38_47.png",
+      "route": "files/document/11"
+    },
+    {
+      "via": "New Dynamic Document",
+      "route": "files/dynamic_document/1"
+    },
+    {
+      "via": "Sample Video",
+      "route": "files/video/1103388481"
+    },
+    {
+      "via": "Onboarding video",
+      "route": "files/video/1117358597"
+    }
+  ]
+}
