@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0097_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-04"
+last_converted: "2026-09-22"
 ---
 
 # Xero Integration
@@ -58,7 +58,6 @@ If your company is a VAT payer:
 1. Go to **Settings → Billing & Payments** → scroll to the bottom.
 2. Click **Sync VAT** — Zooza pulls tax rates from Xero.
 
-   ![VAT sync button at the bottom of billing settings](../../assets/images/client-import-01.png)
 
 If you are not a VAT payer, skip this step.
 

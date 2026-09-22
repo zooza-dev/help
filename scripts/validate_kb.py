@@ -91,8 +91,8 @@ def main():
                 results["broken_links"].append((rel, link_target))
 
         # 7. Asset references
-        for m4 in re.finditer(r'!\[([^\]]*)\]\(([^)]+)\)', text):
-            asset_path = m4.group(2)
+        for m4 in re.finditer(r'!\[([^\]]*)\]\(([^)\s]+)(?:\s+"[^"]*")?\)', text):
+            asset_path = m4.group(2)   # a trailing "title" is not part of the path — a missing image once shipped past this check
             if asset_path.startswith("http"):
                 continue
             resolved = (fpath.parent / asset_path).resolve()
