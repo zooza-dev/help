@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0051_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-13"
+last_converted: "2026-09-22"
 related_articles: ["entry-pass-client-view","creating-entry-passes","pay-as-you-go-faq","customizing-widgets"]
 ---
 
@@ -97,7 +97,7 @@ Once a client enrols for a Pay-as-you-go programme, they manage their attendance
 4. They select the sessions they want to attend.
 5. A payment obligation is created automatically for each booked session.
 
-![Client view — Book session button](../../assets/images/pay-as-you-go-client-book-session.png "Client profile showing Book Session and Go To Calendar buttons")
+![Client view — Book session button](../../assets/images/pay-as-you-go-client-book-session.png)
 
 
 ![Client view — selecting available sessions](../../assets/images/pay-as-you-go-client-select-session.png "Session selection in client profile")

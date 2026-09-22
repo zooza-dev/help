@@ -1,0 +1,41 @@
+{
+  "id": "client.referrals",
+  "menu": "Client zone → Referrals",
+  "route": "referrals",
+  "url_template": "https://www.playfulmotion.co.uk/parent-zone#referrals",
+  "roles": [
+    "client"
+  ],
+  "area": "client",
+  "captured": "2026-09-22",
+  "cards": [
+    {
+      "title": "(page)",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Back"
+      ]
+    },
+    {
+      "title": "Your referral link",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Copy link"
+      ]
+    },
+    {
+      "title": "Referrals",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "⋯ More"
+      ]
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,525 @@
+base: https://uk.zooza.app/
+shots:
+- image: admin-attendance-management-02.png
+  route: course_detail/517/events
+  assert: Past sessions
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/admin-attendance-management.md:35 — Screenshot — admin attendance management
+- image: admin-attendance-management-03.png
+  route: course_detail/517/events
+  assert: Past sessions
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/admin-attendance-management.md:63 — Screenshot — admin attendance management
+- image: admin-attendance-management-04.png
+  route: course_detail/517/events
+  assert: Past sessions
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/admin-attendance-management.md:71 — Screenshot — admin attendance management
+- image: admin-attendance-management-07.png
+  route: course_detail/517/events
+  assert: Past sessions
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/admin-attendance-management.md:65 — Screenshot — admin attendance management
+- image: attendance-and-catchups-faq-01.png
+  route: course_detail/517/events
+  assert: Past sessions
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/faq/attendance-and-catchups-faq.md:26 — Screenshot — attendance and catchups faq
+- image: personas-21.png
+  route: course_detail/517/events
+  assert: Past sessions
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/personas.md:144 — Attendance page includes a feature button for all attendees where it is possible
+    to...
+- image: reference/bookings-attendance-expanded.png
+  route: course_detail/517/events
+  assert: Past sessions
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/reference/bookings-list.md:552 — Attendance tab
+- image: reference/bookings-attendance-tab.png
+  route: course_detail/517/events
+  assert: Past sessions
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/reference/bookings-list.md:588 — Choose make-up session
+- image: replacement-hours-cross-12.png
+  route: course_detail/517/events
+  assert: Past sessions
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/replacement-hours-complete.md:292 — Host branch admin view — replacement client in attendance
+- image: trial-lessons-25.png
+  route: course_detail/517/events
+  assert: Past sessions
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/setup/trial-sessions.md:292 — Immediately after completing the session (if attendance is recorded), the client
+    will...
+- image: trials-daily-business-04.png
+  route: course_detail/517/events
+  assert: Past sessions
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/trials-daily-business.md:123 — Rescheduling a trial session in the Attendance section
+- image: user-roles-07.gif
+  route: course_detail/517/events
+  assert: Past sessions
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/user-roles.md:67 — Full attendance management — can mark Arrived, Signed Out, Did Not Arrive, and set
+    an...
+- image: automatic-payment-reminders-detailed-01.png
+  route: course_detail/517/detail
+  assert: Date of enrolment
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/automatic-payment-reminders-detailed.md:109 — Screenshot — automatic payment reminders detailed
+- image: automatic-payment-reminders-detailed-06.png
+  route: course_detail/517/detail
+  assert: Date of enrolment
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/automatic-payment-reminders-detailed.md:159 — Screenshot
+- image: creating-a-class-03.png
+  route: course_detail/517/detail
+  assert: Date of enrolment
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/creating-a-class.md:62 — Class details form
+- image: data-correction-change-client-03.png
+  route: course_detail/517/detail
+  assert: Date of enrolment
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/data-correction-change-client.md:83 — Once you have filled in the required details to make the change,
+    just click the Submit...
+- image: admin-attendance-management-05.png
+  route: course_detail/517/find_event
+  assert: Instructor
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/admin-attendance-management.md:80 — Screenshot — admin attendance management
+- image: admin-attendance-management-06.png
+  route: course_detail/517/find_event
+  assert: Instructor
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/admin-attendance-management.md:81 — Screenshot — admin attendance management
+- image: pay-as-you-go-client-book-session.png
+  route: course_detail/517
+  assert: Go back
+  status: approved
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/pay-as-you-go-programme.md:100 — Client view — Book session button
+  wait: 12000
+- image: reference/payments-by-programme.png
+  route: course_detail/517/payments
+  assert: Current amount to be paid
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/reference/payments-dashboard.md:252 — Payments by programme
+- image: client-consent-overview-01.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/client-consent-overview.md:66 — Client Profile consents section
+- image: client-profile-101-01.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/client-profile-101.md:34 — Screenshot — client profile 101
+- image: client-profile-101-02.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/client-profile-101.md:37 — Screenshot — client profile 101
+- image: client-profile-101-03.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: approved
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/client-profile-101.md:49 — Screenshot — client profile 101
+- image: client-profile-101-04.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/client-profile-101.md:78 — Screenshot — client profile 101
+- image: client-profile-101-05.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/client-profile-101.md:90 — Screenshot — client profile 101
+- image: client-profile-101-06.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/client-profile-101.md:103 — Screenshot — client profile 101
+- image: client-profile-101-07.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/client-profile-101.md:115 — Screenshot — client profile 101
+- image: client-profile-101-08.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/client-profile-101.md:147 — Screenshot — client profile 101
+- image: custom-replacement-lessons-04.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/custom-replacement-lessons.md:49 — Screenshot — custom replacement lessons
+- image: customizing-widgets-19.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/customizing-widgets.md:135 — Screenshot
+- image: entry-pass-client-view-05.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/entry-pass-client-view.md:76 — Entry pass shown on booking detail
+- image: entry-pass-client-view-06.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/entry-pass-client-view.md:78 — Order linked to the booking
+- image: entry-pass-client-view-07.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/entry-pass-client-view.md:93 — Order detail with entry pass entries
+- image: entry-pass-client-view-08.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/entry-pass-client-view.md:113 — Manual entry pass assignment on booking
+- image: loyalty-client-view-01.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/loyalty-client-view.md:35 — Screenshot — loyalty client view
+- image: loyalty-client-view-02.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/loyalty-client-view.md:36 — Screenshot — loyalty client view
+- image: loyalty-client-view-03.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/loyalty-client-view.md:51 — Screenshot — loyalty client view
+- image: loyalty-client-view-04.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/loyalty-client-view.md:58 — Screenshot — loyalty client view
+- image: loyalty-client-view-05.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/loyalty-client-view.md:83 — Screenshot — loyalty client view
+- image: pay-as-you-go-client-select-session.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/pay-as-you-go-programme.md:103 — Client view — selecting available sessions
+- image: pay-as-you-go-client-session-booked.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/pay-as-you-go-programme.md:106 — Client view — session booked confirmation
+- image: replacement-hours-cross-07.png
+  route: course_detail/666
+  assert: Make-up sessions
+  status: approved
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/replacement-hours-complete.md:261 — Client profile — unexpired replacement lessons
+  card: Make-up sessions
+- image: replacement-hours-cross-10.png
+  route: course_detail/517/find_event
+  assert: Go back
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/replacement-hours-complete.md:273 — Replacement session from another branch shown in client profile
+  wait: 12000
+- image: setting-gtc-gdpr-consents-05.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/setup/setting-gtc-gdpr-consents.md:127 — Screenshot — client consents detail
+- image: viewing-billable-events-11.png
+  route: course_detail/517
+  assert: Total sessions
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: 'content/guides/viewing-billable-sessions.md:75 — In the client profile on the programme report, the field: Total
+    Sessions is displayed,...'
+  card: About the class
+- image: entry-pass-client-view-01.png
+  route: orders
+  assert: Orders
+  status: approved
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/entry-pass-client-view.md:34 — Screenshot — entry pass client view
+- image: entry-pass-client-view-02.png
+  route: orders
+  assert: Orders
+  status: approved
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/entry-pass-client-view.md:37 — Screenshot — entry pass client view
+- image: entry-pass-client-view-03.png
+  route: orders
+  assert: Orders
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/entry-pass-client-view.md:46 — Screenshot — entry pass client view
+- image: entry-pass-client-view-04.png
+  route: orders
+  assert: Orders
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/entry-pass-client-view.md:52 — Screenshot — entry pass client view
+- image: reference/orders-add-item.png
+  route: orders
+  assert: Orders
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/reference/orders-list.md:115 — Add item to order
+- image: reference/orders-detail.png
+  route: orders
+  assert: Orders
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/reference/orders-list.md:58 — Order detail
+- image: reference/orders-list.png
+  route: orders
+  assert: Orders
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/reference/orders-list.md:23 — Orders list
+- image: loyalty-referral-03.png
+  route: referrals
+  assert: Your referral link
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/loyalty-client-view.md:74 — Screenshot — referral link in client profile
+- image: loyalty-referral-04.png
+  route: referrals
+  assert: Your referral link
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/loyalty-client-view.md:78 — Screenshot — referral program client profile detail
+- image: ad-hoc-scheduled-payment-02.png
+  route: registrations
+  assert: Bookings
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/ad-hoc-scheduled-payment.md:64 — Screenshot — ad hoc scheduled payment
+- image: ad-hoc-scheduled-payment-03.png
+  route: registrations
+  assert: Bookings
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/ad-hoc-scheduled-payment.md:68 — Screenshot — ad hoc scheduled payment
+- image: ad-hoc-scheduled-payment-04.png
+  route: registrations
+  assert: Bookings
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/ad-hoc-scheduled-payment.md:76 — Screenshot — ad hoc scheduled payment
+- image: ad-hoc-scheduled-payment-05.png
+  route: registrations
+  assert: Bookings
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/ad-hoc-scheduled-payment.md:84 — Screenshot — ad hoc scheduled payment
+- image: auto-cancel-unpaid-registrations-01.png
+  route: registrations
+  assert: Bookings
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/auto-cancel-unpaid-registrations.md:65 — Payment Reminder Settings with auto-cancel fields highlighted
+- image: clients-registrations-selection.png
+  route: registrations
+  assert: Bookings
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/sending-email-sms.md:74 — Clients vs registrations selection
+- image: linked-registrations-02.png
+  route: registrations
+  assert: Bookings
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/linked-bookings.md:40 — Choose one of the bookings that you want to have as the main one (e.g. parent
+    or older...
+- image: linked-registrations-03.png
+  route: registrations
+  assert: Bookings
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/linked-bookings.md:43 — Click on Link booking
+- image: linked-registrations-04.png
+  route: registrations
+  assert: Bookings
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/linked-bookings.md:47 — Link related bookings
+- image: linked-registrations-06.png
+  route: registrations
+  assert: Bookings
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/linked-bookings.md:56 — Once successfully linked, each booking clearly indicates which is the main
+    and which is...
+- image: linked-registrations-07.png
+  route: registrations
+  assert: Bookings
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/linked-bookings.md:61 — The parent/client pays for both/multiple programmes only once using one variable...
+- image: linked-registrations-08.png
+  route: registrations
+  assert: Bookings
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/linked-bookings.md:63 — The parent/client pays for both/multiple programmes only once using one variable...
+- image: types-of-registrations-02.png
+  route: registrations
+  assert: Bookings
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/types-of-bookings.md:59 — The application used the move booking function and thus the client's booking
+    was moved...
+- image: client-consent-overview-02.png
+  route: course_detail/666
+  assert: Full name
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/client-consent-overview.md:70 — Download PDF button in the consent overview
+- image: creating-a-class-08.png
+  route: course_detail/666
+  assert: Full name
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/creating-a-class.md:143 — Classes overview with filters
+- image: messages-overview-filters.png
+  route: course_detail/666
+  assert: Full name
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/sending-email-sms.md:40 — Messages overview
+- image: sending-email-sms-01.png
+  route: course_detail/666
+  assert: Full name
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/sending-email-sms.md:53 — Screenshot — sending email sms
+- image: sending-email-sms-02.png
+  route: course_detail/666
+  assert: Full name
+  status: keep-old
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/sending-email-sms.md:55 — Screenshot — sending email sms

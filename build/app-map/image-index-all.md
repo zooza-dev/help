@@ -1,6 +1,6 @@
 # Image → screen index (all)
 
-1060 images in scope, 934 placed on a mapped screen, 251 of those look like dialogs, 260 sit in articles flagged for Slovak screenshots, 1 missing on disk.
+1059 images in scope, 939 placed on a mapped screen, 310 of those look like dialogs, 260 sit in articles flagged for Slovak screenshots, 0 missing on disk.
 
 | image | article | screen | card (via) | kind | placed by | alt |
 |---|---|---|---|---|---|---|
@@ -52,25 +52,10 @@
 | `trial-lessons-29.png` | content/setup/trial-sessions.md:306 | bookings.detail | Select class (via Copy booking) | dialog | text: 'programme:booking' | After selecting the class, set the amount you expect to pay  |
 | `trial-lessons-30.png` | content/setup/trial-sessions.md:308 | bookings.detail | Booking | screen | text: 'programme:booking' | Check the details you have entered and confirm your booking  |
 | `trial-lessons-31.png` | content/setup/trial-sessions.md:309 | bookings.detail | Booking | screen | text: 'programme:booking' | Check the details you have entered and confirm your booking  |
-| `attendance-and-catchups-faq-01.png` | content/faq/attendance-and-catchups-faq.md:26 | bookings.detail.attendance | Attendance | screen | text: 'programme:attendance' | Screenshot — attendance and catchups faq |
-| `admin-attendance-management-02.png` | content/guides/admin-attendance-management.md:35 | bookings.detail.attendance | Attendance | screen | text: 'programme:attendance' | Screenshot — admin attendance management |
-| `admin-attendance-management-03.png` | content/guides/admin-attendance-management.md:63 | bookings.detail.attendance | Attendance | screen | text: 'programme:attendance' | Screenshot — admin attendance management |
-| `admin-attendance-management-07.png` | content/guides/admin-attendance-management.md:65 | bookings.detail.attendance | Attendance | screen | text: 'programme:attendance' | Screenshot — admin attendance management |
-| `admin-attendance-management-04.png` | content/guides/admin-attendance-management.md:71 | bookings.detail.attendance | Attendance | screen | text: 'programme:attendance' | Screenshot — admin attendance management |
-| `admin-attendance-management-05.png` | content/guides/admin-attendance-management.md:80 | bookings.detail.attendance | Attendance | screen | text: 'programme:attendance' | Screenshot — admin attendance management |
-| `admin-attendance-management-06.png` | content/guides/admin-attendance-management.md:81 | bookings.detail.attendance | Attendance | screen | text: 'programme:attendance' | Screenshot — admin attendance management |
-| `personas-21.png` | content/guides/personas.md:144 | bookings.detail.attendance | Attendance | screen | text: 'programme:attendance' | Attendance page includes a feature button for all attendees  |
-| `replacement-hours-cross-12.png` | content/guides/replacement-hours-complete.md:292 | bookings.detail.attendance | Attendance | screen | text: 'programme:attendance' | Host branch admin view — replacement client in attendance |
-| `trials-daily-business-04.png` | content/guides/trials-daily-business.md:123 | bookings.detail.attendance | Attendance | screen | text: 'programme:attendance' | Rescheduling a trial session in the Attendance section |
-| `user-roles-07.gif` | content/guides/user-roles.md:67 | bookings.detail.attendance | Attendance | screen | text: 'programme:attendance' | Full attendance management — can mark Arrived, Signed Out, D |
-| `reference/bookings-attendance-expanded.png` | content/reference/bookings-list.md:552 | bookings.detail.attendance | Attendance | screen | text: 'programme:attendance' | Attendance tab |
-| `reference/bookings-attendance-tab.png` | content/reference/bookings-list.md:588 | bookings.detail.attendance | — | screen | text: 'programme:attendance' | Choose make-up session |
-| `trial-lessons-25.png` | content/setup/trial-sessions.md:292 | bookings.detail.attendance | Attendance | screen | text: 'programme:attendance' | Immediately after completing the session (if attendance is r |
 | `copy-programme-and-class-07.png` | content/guides/copy-programme-and-class.md:85 | bookings.detail.change_action_copy | Select class | screen | text: 'programme:copy booking' | Screenshot — copy programme and class |
 | `transfer-and-copy-bookings-01.png` | content/guides/transfer-and-copy-bookings.md:44 | bookings.detail.change_action_copy | — | screen | text: 'programme:copy booking' | Screenshot — transfer and copy bookings |
 | `transfer-and-copy-bookings-02.png` | content/guides/transfer-and-copy-bookings.md:51 | bookings.detail.change_action_copy | Select class | screen | text: 'programme:copy booking' | Screenshot — transfer and copy bookings |
 | `transfer-and-copy-bookings-03.png` | content/guides/transfer-and-copy-bookings.md:69 | bookings.detail.change_action_copy | — | screen | text: 'programme:copy booking' | Screenshot — transfer and copy bookings |
-| `types-of-registrations-02.png` | content/guides/types-of-bookings.md:59 | bookings.detail.change_action_move | — | screen | text: 'programme:move booking' | The application used the move booking function and thus the  |
 | `reference/bookings-credits-tab.png` | content/reference/bookings-list.md:619 | bookings.detail.credits | Make-up sessions | screen | hint: bookings.detail.credits | Credits and make-up sessions |
 | `user-roles-09.gif` | content/guides/user-roles.md:77 | bookings.detail.edit_status | Change booking status | dialog | hint: bookings.detail.edit_status | Can do all booking edits — change booking status, copy, move |
 | `reference/bookings-change-status.png` | content/reference/bookings-list.md:316 | bookings.detail.edit_status | Change booking status | screen | hint: bookings.detail.edit_status | Change booking status |
@@ -81,35 +66,34 @@
 | `reference/bookings-payment-plan.png` | content/reference/bookings-list.md:476 | bookings.detail.payment_plan | Payment plan | screen | hint: bookings.detail.payment_plan | Current active payment plan |
 | `reference/prog-programmes-wiggle-wonders-0-12-months-automations-payment-plan-automations.png` | content/reference/programme-automations.md:67 | bookings.detail.payment_plan | Payment plan | screen | hint: bookings.detail.payment_plan | Payment Plan Automations |
 | `reference/cls-calendar-daily-overview.png` | content/reference/calendar.md:28 | calendar.daily | — | screen | hint: calendar.daily | Calendar — daily overview |
-| `admin-attendance-management-01.png` | content/guides/admin-attendance-management.md:27 | calendar.week | — | screen | hint: calendar.week | Screenshot — admin attendance management |
-| `calendar-bulk-actions-01.png` | content/guides/calendar-bulk-actions.md:38 | calendar.week | — | screen | hint: calendar.week | Screenshot — calendar bulk actions |
-| `calendar-bulk-actions-02.png` | content/guides/calendar-bulk-actions.md:39 | calendar.week | — | screen | hint: calendar.week | Screenshot — calendar bulk actions |
-| `customizing-widgets-20.png` | content/guides/customizing-widgets.md:175 | calendar.week | — | screen | hint: calendar.week | Screenshot |
-| `customizing-widgets-21.png` | content/guides/customizing-widgets.md:185 | calendar.week | — | screen | hint: calendar.week | Screenshot |
-| `customizing-widgets-22.png` | content/guides/customizing-widgets.md:187 | calendar.week | — | screen | hint: calendar.week | Screenshot |
-| `customizing-widgets-23.png` | content/guides/customizing-widgets.md:189 | calendar.week | — | screen | hint: calendar.week | Screenshot |
-| `instructor-attendance-management-02.png` | content/guides/instructor-attendance-management.md:35 | calendar.week | — | screen | hint: calendar.week | Screenshot — instructor attendance management |
-| `instructor-attendance-management-07.png` | content/guides/instructor-attendance-management.md:39 | calendar.week | — | screen | hint: calendar.week | Screenshot — instructor attendance management |
-| `pay-as-you-go-calendar-widget.png` | content/guides/pay-as-you-go-programme.md:110 | calendar.week | — | screen | hint: calendar.week | Calendar widget — booking sessions |
-| `pay-as-you-go-programme-01.png` | content/guides/pay-as-you-go-programme.md:114 | calendar.week | — | screen | hint: calendar.week | The profile widget settings with How pay-as-you-go programme |
-| `replacement-hours-cross-13.png` | content/guides/replacement-hours-complete.md:298 | calendar.week | — | screen | hint: calendar.week | Replacement lessons report in Calendar |
-| `session-payment-adjustments-01.png` | content/guides/session-payment-adjustments.md:49 | calendar.week | — | screen | hint: calendar.week | Screenshot — session payment adjustments |
-| `session-payment-adjustments-02.png` | content/guides/session-payment-adjustments.md:57 | calendar.week | — | screen | hint: calendar.week | Screenshot — session payment adjustments |
-| `viewing-billable-events-08.png` | content/guides/viewing-billable-sessions.md:59 | calendar.week | — | screen | hint: calendar.week | On the calendar tile there is a “EURO coins” icon, which ind |
-| `viewing-billable-events-09.png` | content/guides/viewing-billable-sessions.md:63 | calendar.week | — | screen | hint: calendar.week | On the date detail of the calendar, a coin pile icon is also |
-| `mobile-calendar.png` | content/guides/zooza-101-instructors.md:138 | calendar.week | — | screen | hint: calendar.week | Instructor mobile calendar |
-| `calendar-01.png` | content/reference/calendar.md:23 | calendar.week | — | screen | hint: calendar.week | Screenshot — calendar |
-| `calendar-02.png` | content/reference/calendar.md:79 | calendar.week | — | screen | hint: calendar.week | Screenshot — calendar |
+| `admin-attendance-management-01.png` | content/guides/admin-attendance-management.md:27 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | Screenshot — admin attendance management |
+| `calendar-bulk-actions-01.png` | content/guides/calendar-bulk-actions.md:38 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | Screenshot — calendar bulk actions |
+| `calendar-bulk-actions-02.png` | content/guides/calendar-bulk-actions.md:39 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | Screenshot — calendar bulk actions |
+| `customizing-widgets-20.png` | content/guides/customizing-widgets.md:175 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | Screenshot |
+| `customizing-widgets-21.png` | content/guides/customizing-widgets.md:185 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | Screenshot |
+| `customizing-widgets-22.png` | content/guides/customizing-widgets.md:187 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | Screenshot |
+| `customizing-widgets-23.png` | content/guides/customizing-widgets.md:189 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | Screenshot |
+| `instructor-attendance-management-02.png` | content/guides/instructor-attendance-management.md:35 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | The Calendar week view with sessions coloured by programme |
+| `instructor-attendance-management-07.png` | content/guides/instructor-attendance-management.md:39 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | Calendar week view filtered by programme, with the Bulk edit |
+| `pay-as-you-go-calendar-widget.png` | content/guides/pay-as-you-go-programme.md:110 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | Calendar widget — booking sessions |
+| `pay-as-you-go-programme-01.png` | content/guides/pay-as-you-go-programme.md:114 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | The profile widget settings with How pay-as-you-go programme |
+| `replacement-hours-cross-13.png` | content/guides/replacement-hours-complete.md:298 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | Replacement lessons report in Calendar |
+| `session-payment-adjustments-01.png` | content/guides/session-payment-adjustments.md:49 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | Screenshot — session payment adjustments |
+| `session-payment-adjustments-02.png` | content/guides/session-payment-adjustments.md:57 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | Screenshot — session payment adjustments |
+| `viewing-billable-events-08.png` | content/guides/viewing-billable-sessions.md:59 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | On the calendar tile there is a “EURO coins” icon, which ind |
+| `viewing-billable-events-09.png` | content/guides/viewing-billable-sessions.md:63 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | On the date detail of the calendar, a coin pile icon is also |
+| `mobile-calendar.png` | content/guides/zooza-101-instructors.md:138 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | Instructor mobile calendar |
+| `calendar-01.png` | content/reference/calendar.md:23 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | Screenshot — calendar |
+| `calendar-02.png` | content/reference/calendar.md:79 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | Screenshot — calendar |
 | `reference/cls-calendar.png` | content/reference/calendar.md:87 | calendar.week | — | screen | hint: calendar.week | Feedback Questions |
 | `reference/cls-calendar-make-up-sessions.png` | content/reference/calendar.md:122 | calendar.week | — | screen | hint: calendar.week | Make-up Sessions list |
-| `lecturers-working-hours-03.png` | content/setup/instructors-working-hours.md:37 | calendar.week | — | screen | hint: calendar.week | On the calendar in the app, availability will be displayed a |
-| `lecturers-working-hours-04.png` | content/setup/instructors-working-hours.md:47 | calendar.week | — | screen | hint: calendar.week | The resulting calendar will look like this |
+| `lecturers-working-hours-03.png` | content/setup/instructors-working-hours.md:37 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | On the calendar in the app, availability will be displayed a |
+| `lecturers-working-hours-04.png` | content/setup/instructors-working-hours.md:47 | calendar.week | Calendar planner (via Planning calendar) | dialog | hint: calendar.week | The resulting calendar will look like this |
 | `copy-programme-and-class-01.png` | content/guides/copy-programme-and-class.md:33 | classes.detail | — | screen | text: 'programme:class' | Screenshot — copy programme and class |
 | `copy-programme-and-class-02.png` | content/guides/copy-programme-and-class.md:34 | classes.detail | — | screen | text: 'programme:class' | Screenshot — copy programme and class |
 | `copy-programme-and-class-03.png` | content/guides/copy-programme-and-class.md:40 | classes.detail | — | screen | text: 'programme:class' | Screenshot — copy programme and class |
 | `copy-programme-and-class-04.png` | content/guides/copy-programme-and-class.md:49 | classes.detail | — | screen | text: 'programme:class' | Screenshot — copy programme and class |
 | `copy-programme-and-class-05.png` | content/guides/copy-programme-and-class.md:50 | classes.detail | — | screen | text: 'programme:class' | Screenshot — copy programme and class |
-| `creating-a-class-03.png` | content/guides/creating-a-class.md:62 | classes.detail | — | dialog | text: 'programme:class' | Class details form |
 | `creating-a-class-05.png` | content/guides/creating-a-class.md:123 | classes.detail | Price and payment | screen | text: 'programme:class' | Class price override |
 | `creating-a-class-09.png` | content/guides/creating-a-class.md:173 | classes.detail | — | screen | text: 'programme:class' | Sort options |
 | `creating-a-class-11.png` | content/guides/creating-a-class.md:204 | classes.detail | — | screen | text: 'programme:class' | Class tile example |
@@ -128,21 +112,86 @@
 | `reference/cls-classes.png` | content/reference/classes-list.md:24 | classes.list | — | screen | hint: classes.list | The Classes list: action buttons across the top, the filter  |
 | `auto-enrollment-09.png` | content/setup/auto-enrollment.md:82 | classes.list | — | screen | text: 'programme:classes' | Distance (set the maximum distance in km from the location w |
 | `trial-lessons-15.png` | content/setup/trial-sessions.md:214 | classes.list | — | screen | text: 'programme:classes' | If you want newly created classes to be automatically includ |
+| `attendance-and-catchups-faq-01.png` | content/faq/attendance-and-catchups-faq.md:26 | client.booking.attendance | — | screen | text: 'programme:attendance' | Screenshot — attendance and catchups faq |
+| `admin-attendance-management-02.png` | content/guides/admin-attendance-management.md:35 | client.booking.attendance | — | screen | text: 'programme:attendance' | Screenshot — admin attendance management |
+| `admin-attendance-management-03.png` | content/guides/admin-attendance-management.md:63 | client.booking.attendance | — | screen | text: 'programme:attendance' | Screenshot — admin attendance management |
+| `admin-attendance-management-07.png` | content/guides/admin-attendance-management.md:65 | client.booking.attendance | — | screen | text: 'programme:attendance' | Screenshot — admin attendance management |
+| `admin-attendance-management-04.png` | content/guides/admin-attendance-management.md:71 | client.booking.attendance | — | screen | text: 'programme:attendance' | Screenshot — admin attendance management |
+| `personas-21.png` | content/guides/personas.md:144 | client.booking.attendance | — | screen | text: 'programme:attendance' | Attendance page includes a feature button for all attendees  |
+| `replacement-hours-cross-12.png` | content/guides/replacement-hours-complete.md:292 | client.booking.attendance | — | screen | text: 'programme:attendance' | Host branch admin view — replacement client in attendance |
+| `trials-daily-business-04.png` | content/guides/trials-daily-business.md:123 | client.booking.attendance | — | screen | text: 'programme:attendance' | Rescheduling a trial session in the Attendance section |
+| `user-roles-07.gif` | content/guides/user-roles.md:67 | client.booking.attendance | — | screen | text: 'programme:attendance' | Full attendance management — can mark Arrived, Signed Out, D |
+| `reference/bookings-attendance-expanded.png` | content/reference/bookings-list.md:552 | client.booking.attendance | — | screen | text: 'programme:attendance' | Attendance tab |
+| `reference/bookings-attendance-tab.png` | content/reference/bookings-list.md:588 | client.booking.attendance | — | screen | text: 'programme:attendance' | Choose make-up session |
+| `trial-lessons-25.png` | content/setup/trial-sessions.md:292 | client.booking.attendance | — | screen | text: 'programme:attendance' | Immediately after completing the session (if attendance is r |
+| `automatic-payment-reminders-detailed-01.png` | content/guides/automatic-payment-reminders-detailed.md:109 | client.booking.detail | — | screen | text: 'programme:detail' | Screenshot — automatic payment reminders detailed |
+| `automatic-payment-reminders-detailed-06.png` | content/guides/automatic-payment-reminders-detailed.md:159 | client.booking.detail | — | screen | text: 'programme:detail' | Screenshot |
+| `creating-a-class-03.png` | content/guides/creating-a-class.md:62 | client.booking.detail | — | dialog | text: 'programme:detail' | Class details form |
+| `data-correction-change-client-03.png` | content/guides/data-correction-change-client.md:83 | client.booking.detail | — | screen | text: 'programme:detail' | Once you have filled in the required details to make the cha |
+| `admin-attendance-management-05.png` | content/guides/admin-attendance-management.md:80 | client.booking.find_event | — | screen | hint: client.booking.find_event | Screenshot — admin attendance management |
+| `admin-attendance-management-06.png` | content/guides/admin-attendance-management.md:81 | client.booking.find_event | — | screen | hint: client.booking.find_event | Screenshot — admin attendance management |
+| `pay-as-you-go-client-book-session.png` | content/guides/pay-as-you-go-programme.md:100 | client.booking.find_event | — | screen | hint: client.booking.find_event | Client view — Book session button |
+| `reference/payments-by-programme.png` | content/reference/payments-dashboard.md:252 | client.booking.payments | Payments | screen | text: 'programme:payments' | Payments by programme |
+| `client-consent-overview-01.png` | content/guides/client-consent-overview.md:66 | client.dashboard | — | screen | hint: client.dashboard | Client Profile consents section |
+| `client-profile-101-01.png` | content/guides/client-profile-101.md:34 | client.dashboard | — | screen | hint: client.dashboard | Screenshot — client profile 101 |
+| `client-profile-101-02.png` | content/guides/client-profile-101.md:37 | client.dashboard | — | screen | hint: client.dashboard | Screenshot — client profile 101 |
+| `client-profile-101-03.png` | content/guides/client-profile-101.md:49 | client.dashboard | — | screen | hint: client.dashboard | Screenshot — client profile 101 |
+| `client-profile-101-04.png` | content/guides/client-profile-101.md:78 | client.dashboard | — | screen | hint: client.dashboard | Screenshot — client profile 101 |
+| `client-profile-101-05.png` | content/guides/client-profile-101.md:90 | client.dashboard | Make-up sessions (via Open) | dialog | hint: client.dashboard | Screenshot — client profile 101 |
+| `client-profile-101-06.png` | content/guides/client-profile-101.md:103 | client.dashboard | Payments (via Open) | dialog | hint: client.dashboard | Screenshot — client profile 101 |
+| `client-profile-101-07.png` | content/guides/client-profile-101.md:115 | client.dashboard | Make-up sessions (via Open) | dialog | hint: client.dashboard | Screenshot — client profile 101 |
+| `client-profile-101-08.png` | content/guides/client-profile-101.md:147 | client.dashboard | — | screen | hint: client.dashboard | Screenshot — client profile 101 |
+| `custom-replacement-lessons-04.png` | content/guides/custom-replacement-lessons.md:49 | client.dashboard | — | screen | hint: client.dashboard | Screenshot — custom replacement lessons |
+| `customizing-widgets-19.png` | content/guides/customizing-widgets.md:135 | client.dashboard | — | screen | hint: client.dashboard | Screenshot |
+| `entry-pass-client-view-05.png` | content/guides/entry-pass-client-view.md:76 | client.dashboard | — | screen | hint: client.dashboard | Entry pass shown on booking detail |
+| `entry-pass-client-view-06.png` | content/guides/entry-pass-client-view.md:78 | client.dashboard | — | screen | hint: client.dashboard | Order linked to the booking |
+| `entry-pass-client-view-07.png` | content/guides/entry-pass-client-view.md:93 | client.dashboard | — | screen | hint: client.dashboard | Order detail with entry pass entries |
+| `entry-pass-client-view-08.png` | content/guides/entry-pass-client-view.md:113 | client.dashboard | — | screen | hint: client.dashboard | Manual entry pass assignment on booking |
+| `loyalty-client-view-01.png` | content/guides/loyalty-client-view.md:35 | client.dashboard | — | screen | hint: client.dashboard | Screenshot — loyalty client view |
+| `loyalty-client-view-02.png` | content/guides/loyalty-client-view.md:36 | client.dashboard | — | screen | hint: client.dashboard | Screenshot — loyalty client view |
+| `loyalty-client-view-03.png` | content/guides/loyalty-client-view.md:51 | client.dashboard | — | screen | hint: client.dashboard | Screenshot — loyalty client view |
+| `loyalty-client-view-04.png` | content/guides/loyalty-client-view.md:58 | client.dashboard | — | screen | hint: client.dashboard | Screenshot — loyalty client view |
+| `loyalty-client-view-05.png` | content/guides/loyalty-client-view.md:83 | client.dashboard | — | dialog | hint: client.dashboard | Screenshot — loyalty client view |
+| `pay-as-you-go-client-select-session.png` | content/guides/pay-as-you-go-programme.md:103 | client.dashboard | Make-up sessions (via Open) | dialog | hint: client.dashboard | Client view — selecting available sessions |
+| `pay-as-you-go-client-session-booked.png` | content/guides/pay-as-you-go-programme.md:106 | client.dashboard | Make-up sessions (via Open) | dialog | hint: client.dashboard | Client view — session booked confirmation |
+| `replacement-hours-cross-07.png` | content/guides/replacement-hours-complete.md:261 | client.dashboard | — | screen | hint: client.dashboard | Client profile — unexpired replacement lessons |
+| `replacement-hours-cross-10.png` | content/guides/replacement-hours-complete.md:273 | client.dashboard | (page) (via Book session) | dialog | hint: client.dashboard | Replacement session from another branch shown in client prof |
+| `viewing-billable-events-11.png` | content/guides/viewing-billable-sessions.md:75 | client.dashboard | Make-up sessions (via Open) | dialog | hint: client.dashboard | In the client profile on the programme report, the field: To |
+| `setting-gtc-gdpr-consents-05.png` | content/setup/setting-gtc-gdpr-consents.md:127 | client.dashboard | — | screen | hint: client.dashboard | Screenshot — client consents detail |
+| `entry-pass-client-view-01.png` | content/guides/entry-pass-client-view.md:34 | client.orders | — | screen | hint: client.orders | Screenshot — entry pass client view |
+| `entry-pass-client-view-02.png` | content/guides/entry-pass-client-view.md:37 | client.orders | — | screen | hint: client.orders | Screenshot — entry pass client view |
+| `entry-pass-client-view-03.png` | content/guides/entry-pass-client-view.md:46 | client.orders | — | dialog | hint: client.orders | Screenshot — entry pass client view |
+| `entry-pass-client-view-04.png` | content/guides/entry-pass-client-view.md:52 | client.orders | — | screen | hint: client.orders | Screenshot — entry pass client view |
+| `entry-pass-client-view-05.png` | content/guides/entry-pass-client-view.md:58 | client.orders | — | dialog | hint: client.orders | Screenshot — entry pass client view |
+| `reference/orders-list.png` | content/reference/orders-list.md:23 | client.orders | — | screen | text: 'programme:orders' | Orders list |
+| `reference/orders-detail.png` | content/reference/orders-list.md:58 | client.orders | — | screen | text: 'programme:orders' | Order detail |
+| `reference/orders-add-item.png` | content/reference/orders-list.md:115 | client.orders | — | dialog | text: 'programme:orders' | Add item to order |
+| `loyalty-referral-03.png` | content/guides/loyalty-client-view.md:74 | client.referrals | Your referral link | screen | hint: client.referrals | Screenshot — referral link in client profile |
+| `loyalty-referral-04.png` | content/guides/loyalty-client-view.md:78 | client.referrals | Your referral link | screen | hint: client.referrals | Screenshot — referral program client profile detail |
+| `loyalty-referral-03.png` | content/guides/loyalty-referral.md:105 | client.referrals | Your referral link | screen | hint: client.referrals | Screenshot — loyalty referral |
+| `loyalty-referral-04.png` | content/guides/loyalty-referral.md:106 | client.referrals | Your referral link | screen | hint: client.referrals | Screenshot — loyalty referral |
+| `ad-hoc-scheduled-payment-02.png` | content/guides/ad-hoc-scheduled-payment.md:64 | client.registrations | — | dialog | text: 'programme:registrations' | Screenshot — ad hoc scheduled payment |
+| `ad-hoc-scheduled-payment-03.png` | content/guides/ad-hoc-scheduled-payment.md:68 | client.registrations | — | dialog | text: 'programme:registrations' | Screenshot — ad hoc scheduled payment |
+| `ad-hoc-scheduled-payment-04.png` | content/guides/ad-hoc-scheduled-payment.md:76 | client.registrations | — | dialog | text: 'programme:registrations' | Screenshot — ad hoc scheduled payment |
+| `ad-hoc-scheduled-payment-05.png` | content/guides/ad-hoc-scheduled-payment.md:84 | client.registrations | — | dialog | text: 'programme:registrations' | Screenshot — ad hoc scheduled payment |
+| `auto-cancel-unpaid-registrations-01.png` | content/guides/auto-cancel-unpaid-registrations.md:65 | client.registrations | — | screen | text: 'programme:registrations' | Payment Reminder Settings with auto-cancel fields highlighte |
+| `linked-registrations-02.png` | content/guides/linked-bookings.md:40 | client.registrations | — | screen | text: 'programme:registrations' | Choose one of the bookings that you want to have as the main |
+| `linked-registrations-03.png` | content/guides/linked-bookings.md:43 | client.registrations | — | screen | text: 'programme:registrations' | Click on Link booking |
+| `linked-registrations-04.png` | content/guides/linked-bookings.md:47 | client.registrations | — | screen | text: 'programme:registrations' | Link related bookings |
+| `linked-registrations-06.png` | content/guides/linked-bookings.md:56 | client.registrations | — | screen | text: 'programme:registrations' | Once successfully linked, each booking clearly indicates whi |
+| `linked-registrations-07.png` | content/guides/linked-bookings.md:61 | client.registrations | — | screen | text: 'programme:registrations' | The parent/client pays for both/multiple programmes only onc |
+| `linked-registrations-08.png` | content/guides/linked-bookings.md:63 | client.registrations | — | screen | text: 'programme:registrations' | The parent/client pays for both/multiple programmes only onc |
+| `clients-registrations-selection.png` | content/guides/sending-email-sms.md:74 | client.registrations | — | screen | text: 'programme:registrations' | Clients vs registrations selection |
+| `types-of-registrations-02.png` | content/guides/types-of-bookings.md:59 | client.registrations | — | screen | text: 'programme:registrations' | The application used the move booking function and thus the  |
+| `client-consent-overview-02.png` | content/guides/client-consent-overview.md:70 | client.trial.overview | — | screen | text: 'programme:overview' | Download PDF button in the consent overview |
+| `creating-a-class-08.png` | content/guides/creating-a-class.md:143 | client.trial.overview | — | screen | text: 'programme:overview' | Classes overview with filters |
+| `messages-overview-filters.png` | content/guides/sending-email-sms.md:40 | client.trial.overview | — | screen | text: 'programme:overview' | Messages overview |
+| `sending-email-sms-01.png` | content/guides/sending-email-sms.md:53 | client.trial.overview | — | screen | text: 'programme:overview' | Screenshot — sending email sms |
+| `sending-email-sms-02.png` | content/guides/sending-email-sms.md:55 | client.trial.overview | — | screen | text: 'programme:overview' | Screenshot — sending email sms |
 | `client-management-faq-03.png` | content/faq/client-management-faq.md:101 | clients.detail | — | dialog | text: 'programme:client' | Add child to existing registration |
 | `active-inactive-clients-01.png` | content/guides/active-inactive-clients.md:25 | clients.detail | — | screen | hint: clients.detail | Client record overview |
-| `client-consent-overview-01.png` | content/guides/client-consent-overview.md:66 | clients.detail | — | screen | hint: clients.detail | Client Profile consents section |
-| `client-profile-101-01.png` | content/guides/client-profile-101.md:34 | clients.detail | — | screen | hint: clients.detail | Screenshot — client profile 101 |
-| `client-profile-101-02.png` | content/guides/client-profile-101.md:37 | clients.detail | — | screen | hint: clients.detail | Screenshot — client profile 101 |
-| `client-profile-101-03.png` | content/guides/client-profile-101.md:49 | clients.detail | — | screen | hint: clients.detail | Screenshot — client profile 101 |
-| `client-profile-101-04.png` | content/guides/client-profile-101.md:78 | clients.detail | — | screen | hint: clients.detail | Screenshot — client profile 101 |
-| `client-profile-101-05.png` | content/guides/client-profile-101.md:90 | clients.detail | — | screen | hint: clients.detail | Screenshot — client profile 101 |
-| `client-profile-101-06.png` | content/guides/client-profile-101.md:103 | clients.detail | — | screen | hint: clients.detail | Screenshot — client profile 101 |
-| `client-profile-101-07.png` | content/guides/client-profile-101.md:115 | clients.detail | — | screen | hint: clients.detail | Screenshot — client profile 101 |
-| `client-profile-101-08.png` | content/guides/client-profile-101.md:147 | clients.detail | — | screen | hint: clients.detail | Screenshot — client profile 101 |
-| `custom-replacement-lessons-04.png` | content/guides/custom-replacement-lessons.md:49 | clients.detail | — | screen | text: 'programme:client' | Screenshot — custom replacement lessons |
 | `data-correction-change-client-01.png` | content/guides/data-correction-change-client.md:76 | clients.detail | — | screen | text: 'programme:client' | The client data change request must be completed at the clie |
 | `data-correction-change-client-02.png` | content/guides/data-correction-change-client.md:80 | clients.detail | History (via New message) | dialog | text: 'programme:client' | To create a new request, click on the New Request button and |
-| `data-correction-change-client-03.png` | content/guides/data-correction-change-client.md:83 | clients.detail | — | screen | text: 'programme:client' | Once you have filled in the required details to make the cha |
 | `personas-10.png` | content/guides/personas.md:90 | clients.detail | — | screen | hint: clients.detail | Go to the Clients tab and search for the client by name, ema |
 | `personas-13.png` | content/guides/personas.md:103 | clients.detail | Family & Connections | screen | hint: clients.detail | Manage family & connections by creating or editing relations |
 | `personas-14.png` | content/guides/personas.md:107 | clients.detail | History | screen | hint: clients.detail | View History, which includes all internal notes, a list of b |
@@ -152,19 +201,15 @@
 | `personas-25.png` | content/guides/personas.md:156 | clients.detail | — | screen | hint: clients.detail | Info: All messages created during attendance are visible in  |
 | `remove-client-or-user-01.png` | content/guides/remove-client-or-user.md:28 | clients.detail | — | screen | hint: clients.detail | Screenshot — remove client or user |
 | `remove-client-or-user-02.png` | content/guides/remove-client-or-user.md:32 | clients.detail | — | screen | hint: clients.detail | Screenshot — remove client or user |
-| `replacement-hours-cross-07.png` | content/guides/replacement-hours-complete.md:261 | clients.detail | — | screen | hint: clients.detail | Client profile — unexpired replacement lessons |
-| `replacement-hours-cross-10.png` | content/guides/replacement-hours-complete.md:273 | clients.detail | — | screen | hint: clients.detail | Replacement session from another branch shown in client prof |
 | `no-communication-warning.png` | content/guides/sending-email-sms.md:180 | clients.detail | — | screen | text: 'programme:client' | No communication warning |
 | `reference/clients-detail-william-scott.png` | content/reference/clients-list.md:62 | clients.detail | — | screen | hint: clients.detail | Client detail — William Scott |
 | `reference/clients-detail-chloe-tanase.png` | content/reference/clients-list.md:105 | clients.detail | — | screen | hint: clients.detail | Client detail with bookings — Chloe Tanase |
 | `reference/clients-detail-child.png` | content/reference/clients-list.md:127 | clients.detail | Family & Connections | screen | hint: clients.detail | Client detail — child record |
-| `setting-gtc-gdpr-consents-05.png` | content/setup/setting-gtc-gdpr-consents.md:127 | clients.detail | — | screen | hint: clients.detail | Screenshot — client consents detail |
 | `trial-lessons-27.png` | content/setup/trial-sessions.md:303 | clients.detail | — | screen | text: 'programme:client' | A window will appear with information about the class you ca |
 | `trial-lessons-34.png` | content/setup/trial-sessions.md:317 | clients.detail | History (via New message) | dialog | text: 'programme:client' | Warning! After enrolling in the programme, the client will r |
 | `active-inactive-clients-04.png` | content/guides/active-inactive-clients.md:94 | clients.list | — | screen | hint: clients.list | Clients list filtered by active/inactive status |
 | `client-import-04.png` | content/guides/client-import.md:50 | clients.list | — | screen | text: 'programme:clients' | In Zooza, go to the Clients tab in the menu and click Import |
 | `client-import-08.png` | content/guides/client-import.md:58 | clients.list | — | screen | text: 'programme:clients' | If the classes already exist in Zooza, assign clients to the |
-| `clients-registrations-selection.png` | content/guides/sending-email-sms.md:74 | clients.list | — | screen | text: 'programme:clients' | Clients vs registrations selection |
 | `reference/clients-list.png` | content/reference/clients-list.md:23 | clients.list | — | screen | hint: clients.list | Clients list |
 | `reference/clients-edit-notes-preferences.png` | content/reference/clients-list.md:145 | clients.list | — | dialog | text: 'programme:clients' | Edit notes and preferences |
 | `reference/clients-data-correction.png` | content/reference/clients-list.md:159 | clients.list | — | dialog | text: 'programme:clients' | Data correction form |
@@ -178,19 +223,19 @@
 | `auto-enrollment-06.png` | content/setup/auto-enrollment.md:59 | clients.list | — | screen | text: 'programme:clients' | Enter how many days before the end of the current term the s |
 | `trial-lessons-04.png` | content/setup/trial-sessions.md:77 | clients.list | — | screen | text: 'programme:clients' | A Paid Trial allows you to charge clients a smaller, introdu |
 | `trial-lessons-05.png` | content/setup/trial-sessions.md:89 | clients.list | — | screen | text: 'programme:clients' | If you enter a value greater than 0, this will be the price  |
-| `reference/communication-send-email.png` | content/reference/communication-dashboard.md:21 | communication.compose | — | screen | hint: communication.compose | Communication — Send message |
-| `bulk-email-send-history.png` | content/guides/bulk-email-send-tracking.md:110 | communication.history | — | screen | text: 'programme:history' | Screenshot — send history list |
+| `reference/communication-send-email.png` | content/reference/communication-dashboard.md:21 | communication.compose | Message | screen | hint: communication.compose | Communication — Send message |
+| `bulk-email-send-history.png` | content/guides/bulk-email-send-tracking.md:110 | communication.history | — | screen | hint: communication.history | Communication → History: sent messages with type, sent date, |
 | `communication-menu-message-templates.png` | content/guides/edit-session-notification-template.md:29 | communication.templates | — | screen | hint: communication.templates | Communication menu - message templates |
-| `message-template-editor.png` | content/guides/message-templates.md:32 | communication.templates | — | screen | hint: communication.templates | Message template editor |
+| `message-template-editor.png` | content/guides/message-templates.md:32 | communication.templates | Contact form - automatic reply Sent automatically to the person who submits your contact form, confirming you received their enquiry. Can use their first name and the form name. (via Contact form - automatic reply) | dialog | hint: communication.templates | Message template editor |
 | `communication-menu-templates.png` | content/guides/message-templates.md:40 | communication.templates | — | screen | hint: communication.templates | Communication menu - message templates |
 | `template-list-orange-labels.png` | content/guides/message-templates.md:44 | communication.templates | — | screen | hint: communication.templates | Template list |
-| `payment-templates-creation-09.png` | content/guides/payment-templates-creation.md:106 | communication.templates | — | dialog | hint: communication.templates | Payment schedule templates list with an Edit button per temp |
+| `payment-templates-creation-09.png` | content/guides/payment-templates-creation.md:106 | communication.templates | Additional session - payment Sent to the client after they book an additional session. Carries the payment instructions, or a confirmation when the session is free. (via Additional session - payment) | dialog | hint: communication.templates | Payment schedule templates list with an Edit button per temp |
 | `reference/communication-message-templates.png` | content/reference/communication-message-templates.md:23 | communication.templates | — | screen | hint: communication.templates | Message templates |
 | `communication-message-templates-01.png` | content/reference/communication-message-templates.md:140 | communication.templates | — | screen | hint: communication.templates | Screenshot — communication message templates |
 | `reference/communication-whatsapp-template-editor.png` | content/reference/communication-whatsapp.md:70 | communication.templates | — | dialog | hint: communication.templates | WhatsApp template editor |
-| `online-registration-13.png` | content/setup/online-registration.md:108 | communication.templates | — | screen | hint: communication.templates | The exact time the reminder email is sent can be configured  |
-| `online-registration-16.png` | content/setup/online-registration.md:120 | communication.templates | — | screen | hint: communication.templates | This template is to be found in Message templates as Upcomin |
-| `online-registration-19.png` | content/setup/online-registration.md:134 | communication.templates | — | screen | hint: communication.templates | This template is available in message templates as Automatic |
+| `online-registration-13.png` | content/setup/online-registration.md:108 | communication.templates | Contact form - automatic reply Sent automatically to the person who submits your contact form, confirming you received their enquiry. Can use their first name and the form name. (via Contact form - automatic reply) | dialog | hint: communication.templates | The exact time the reminder email is sent can be configured  |
+| `online-registration-16.png` | content/setup/online-registration.md:120 | communication.templates | Scheduled Cancellation Notification about upcoming scheduled cancellation (via Scheduled Cancellation) | dialog | hint: communication.templates | This template is to be found in Message templates as Upcomin |
+| `online-registration-19.png` | content/setup/online-registration.md:134 | communication.templates | Scheduled Cancellation Notification about upcoming scheduled cancellation (via Scheduled Cancellation) | dialog | hint: communication.templates | This template is available in message templates as Automatic |
 | `reference/communication-whatsapp-conversations.png` | content/reference/communication-whatsapp.md:35 | communication.whatsapp | — | screen | hint: communication.whatsapp | WhatsApp conversations |
 | `reference/communication-whatsapp-templates.png` | content/reference/communication-whatsapp.md:55 | communication.whatsapp | — | screen | hint: communication.whatsapp | WhatsApp templates |
 | `whatsapp-connect-button.png` | content/setup/whatsapp-integration.md:40 | communication.whatsapp | — | screen | hint: communication.whatsapp | Zooza WhatsApp connect button |
@@ -207,11 +252,11 @@
 | `contact-detail-convert-01.png` | content/guides/working-with-contacts.md:97 | contacts.list | Add contact | screen | hint: contacts.list | The Convert to client confirmation: a client is created from |
 | `contact-detail-converted-01.png` | content/guides/working-with-contacts.md:103 | contacts.list | Add contact | screen | hint: contacts.list | A converted contact's Client relationship card showing Conve |
 | `collecting-google-reviews-01.png` | content/setup/collecting-google-reviews.md:21 | feedback.nps | — | screen | hint: feedback.nps | Feedback menu showing the NPS and Reviews sections |
-| `collecting-google-reviews-02.png` | content/setup/collecting-google-reviews.md:42 | feedback.reviews | — | screen | hint: feedback.reviews | Google connection settings panel under Feedback Reviews |
-| `collecting-google-reviews-03.png` | content/setup/collecting-google-reviews.md:44 | feedback.reviews | — | screen | hint: feedback.reviews | Reviews connection showing the connected Google account |
+| `collecting-google-reviews-02.png` | content/setup/collecting-google-reviews.md:42 | feedback.reviews | Reviews | screen | hint: feedback.reviews | Google connection settings panel under Feedback Reviews |
+| `collecting-google-reviews-03.png` | content/setup/collecting-google-reviews.md:44 | feedback.reviews | Reviews | screen | hint: feedback.reviews | Reviews connection showing the connected Google account |
 | `collecting-google-reviews-04.png` | content/setup/collecting-google-reviews.md:53 | feedback.reviews | — | screen | hint: feedback.reviews | Google connection status options connected, needs reconnect, |
 | `collecting-google-reviews-05.png` | content/setup/collecting-google-reviews.md:59 | feedback.reviews | — | screen | hint: feedback.reviews | Locations list with the Google link status column per place |
-| `collecting-google-reviews-07.png` | content/setup/collecting-google-reviews.md:104 | feedback.reviews | — | screen | hint: feedback.reviews | Programme feedback settings with the Reviews trigger section |
+| `collecting-google-reviews-07.png` | content/setup/collecting-google-reviews.md:104 | feedback.reviews | Reviews | screen | hint: feedback.reviews | Programme feedback settings with the Reviews trigger section |
 | `documents-02.png` | content/guides/documents.md:41 | files.add_new | New document | dialog | hint: files.add_new | New document, step 1: choose the category (Document, Video,  |
 | `family-relationships-step2-01.png` | content/guides/manage-family-relationships.md:45 | files.add_new | New document | dialog | text: 'programme:add new' | Step 2 of Add new relationship wizard — showing relationship |
 | `reference/documents-new.png` | content/reference/documents-list.md:64 | files.add_new | New document | dialog | hint: files.add_new | New document |
@@ -239,9 +284,6 @@
 | `documents-26.png` | content/guides/documents.md:177 | files.list | — | screen | text: 'programme:documents' | Screenshot |
 | `google-forms-01.png` | content/guides/google-forms.md:43 | files.list | — | dialog | text: 'programme:documents' | The Forms tab inside the Documents card, empty, with the Att |
 | `reference/documents-list.png` | content/reference/documents-list.md:23 | files.list | — | screen | hint: files.list | Documents list |
-| `reference/orders-detail.png` | content/reference/orders-list.md:58 | orders.detail | Order | screen | hint: orders.detail | Order detail |
-| `reference/orders-list.png` | content/reference/orders-list.md:23 | orders.list | — | screen | hint: orders.list | Orders list |
-| `reference/orders-add-item.png` | content/reference/orders-list.md:115 | orders.list | — | dialog | text: 'programme:orders' | Add item to order |
 | `booking-widget-faq-01.png` | content/faq/booking-widget-faq.md:136 | payments.discounts | New discount code (via Create) | dialog | hint: payments.discounts | Screenshot — booking widget faq |
 | `discount-code-02.png` | content/guides/discount-code.md:23 | payments.discounts | New discount code (via Create) | dialog | hint: payments.discounts | The discount can only be applied to programmes by entering t |
 | `discount-code-03.png` | content/guides/discount-code.md:30 | payments.discounts | New discount code (via Create) | dialog | hint: payments.discounts | In the Discount Code section, click on the Create button |
@@ -289,19 +331,10 @@
 | `loyalty-activity-log-02.png` | content/guides/loyalty-activity-log.md:37 | payments.loyalty | — | screen | hint: payments.loyalty | Screenshot — loyalty activity log |
 | `loyalty-activity-log-03.png` | content/guides/loyalty-activity-log.md:68 | payments.loyalty | Sibling Discount | screen | hint: payments.loyalty | Screenshot — loyalty activity log |
 | `loyalty-activity-log-04.png` | content/guides/loyalty-activity-log.md:92 | payments.loyalty | — | screen | hint: payments.loyalty | Screenshot — loyalty activity log |
-| `loyalty-client-view-01.png` | content/guides/loyalty-client-view.md:35 | payments.loyalty | Returning Client Discount | screen | hint: payments.loyalty | Screenshot — loyalty client view |
-| `loyalty-client-view-02.png` | content/guides/loyalty-client-view.md:36 | payments.loyalty | Returning Client Discount | screen | hint: payments.loyalty | Screenshot — loyalty client view |
-| `loyalty-client-view-03.png` | content/guides/loyalty-client-view.md:51 | payments.loyalty | Returning Client Discount | screen | hint: payments.loyalty | Screenshot — loyalty client view |
-| `loyalty-client-view-04.png` | content/guides/loyalty-client-view.md:58 | payments.loyalty | Returning Client Discount | screen | hint: payments.loyalty | Screenshot — loyalty client view |
-| `loyalty-referral-03.png` | content/guides/loyalty-client-view.md:74 | payments.loyalty | Returning Client Discount | screen | hint: payments.loyalty | Screenshot — referral link in client profile |
-| `loyalty-referral-04.png` | content/guides/loyalty-client-view.md:78 | payments.loyalty | Returning Client Discount | screen | hint: payments.loyalty | Screenshot — referral program client profile detail |
-| `loyalty-client-view-05.png` | content/guides/loyalty-client-view.md:83 | payments.loyalty | Returning Client Discount | dialog | hint: payments.loyalty | Screenshot — loyalty client view |
 | `loyalty-program-01.png` | content/guides/loyalty-program.md:48 | payments.loyalty | — | screen | hint: payments.loyalty | Screenshot — loyalty program |
 | `loyalty-program-02.png` | content/guides/loyalty-program.md:87 | payments.loyalty | — | screen | hint: payments.loyalty | Screenshot — loyalty program |
 | `loyalty-referral-01.png` | content/guides/loyalty-referral.md:55 | payments.loyalty | Referral Programme | screen | hint: payments.loyalty | Screenshot — loyalty referral |
 | `loyalty-referral-02.png` | content/guides/loyalty-referral.md:91 | payments.loyalty | Referral Programme | dialog | hint: payments.loyalty | Screenshot — loyalty referral |
-| `loyalty-referral-03.png` | content/guides/loyalty-referral.md:105 | payments.loyalty | Referral Programme | screen | hint: payments.loyalty | Screenshot — loyalty referral |
-| `loyalty-referral-04.png` | content/guides/loyalty-referral.md:106 | payments.loyalty | Referral Programme | screen | hint: payments.loyalty | Screenshot — loyalty referral |
 | `loyalty-returning-customer-01.png` | content/guides/loyalty-returning-customer.md:66 | payments.loyalty | Returning Client Discount | screen | hint: payments.loyalty | Screenshot — loyalty returning customer |
 | `loyalty-returning-customer-02.png` | content/guides/loyalty-returning-customer.md:85 | payments.loyalty | Returning Client Discount | dialog | hint: payments.loyalty | Screenshot — loyalty returning customer |
 | `loyalty-sibling-discount-01.png` | content/guides/loyalty-sibling-discount.md:37 | payments.loyalty | Sibling Discount | screen | hint: payments.loyalty | Screenshot — loyalty sibling discount |
@@ -311,9 +344,6 @@
 | `gocardless-direct-debit-mandates-02.png` | content/guides/gocardless-direct-debit-mandates.md:41 | payments.mandates | — | screen | hint: payments.mandates | Click Link next to a mandate |
 | `gocardless-direct-debit-mandates-03.png` | content/guides/gocardless-direct-debit-mandates.md:45 | payments.mandates | — | screen | hint: payments.mandates | Choose the correct booking for that mandate |
 | `payments-direct-debit-mandates.png` | content/guides/gocardless-direct-debit-mandates.md:81 | payments.mandates | — | screen | hint: payments.mandates | The Direct Debit mandates list under Payments |
-| `reference/payments-dashboard.png` | content/reference/payments-dashboard.md:24 | payments.overview | Unpaired payments: 0 | screen | hint: payments.overview | Payments dashboard |
-| `payments-dashboard-01.png` | content/reference/payments-dashboard.md:116 | payments.overview | Latest payment periods | screen | hint: payments.overview | Screenshot — payments dashboard |
-| `reference/payments-by-programme.png` | content/reference/payments-dashboard.md:252 | payments.overview | Unpaired payments: 0 | screen | text: 'programme:payments' | Payments by programme |
 | `payments-refunds-issued.png` | content/guides/recording-an-administrative-refund.md:57 | payments.refunds.issued | — | screen | hint: payments.refunds.issued | The Issued tab of the Refunds screen under Payments |
 | `replacement-hours-cross-03.png` | content/guides/replacement-hours-complete.md:233 | payments.refunds.requests | — | screen | text: 'programme:requests' | Overview of sent cooperation requests and their status |
 | `bulk-cancel-scheduled-payments-01.png` | content/guides/trash-and-restore.md:121 | payments.scheduled | — | dialog | hint: payments.scheduled | Bulk edit panel on Scheduled payments overview showing Cance |
@@ -324,7 +354,7 @@
 | `csv-payment-import-03.png` | content/guides/csv-payment-import.md:63 | payments.transactions.import | Import file | screen | hint: payments.transactions.import | Screenshot — csv payment import |
 | `csv-payment-import-04.png` | content/guides/csv-payment-import.md:70 | payments.transactions.import | Import file | screen | hint: payments.transactions.import | Screenshot — csv payment import |
 | `payments-transactions-cash-transfer.png` | content/guides/inbound-payments.md:171 | payments.transactions.import | Import file | screen | hint: payments.transactions.import | The Transactions ledger on its Cash & Transfer tab, with Car |
-| `blocks-creation-08.png` | content/guides/blocks-creation.md:84 | products.list | — | screen | hint: products.list | Screenshot |
+| `blocks-creation-08.png` | content/guides/blocks-creation.md:84 | products.list | Price and payment (via Gift Card) | dialog | hint: products.list | Products & Services → ProductsPRO: the products list with pr |
 | `blocks-creation-09.png` | content/guides/blocks-creation.md:88 | products.list | — | screen | hint: products.list | Screenshot |
 | `blocks-creation-10.png` | content/guides/blocks-creation.md:90 | products.list | — | screen | hint: products.list | Screenshot |
 | `entry-pass-create-product.png` | content/guides/creating-entry-passes.md:34 | products.list | Create new product (via Add new product) | dialog | hint: products.list | Create new product |
@@ -338,13 +368,6 @@
 | `entry-pass-profile-availability.png` | content/guides/creating-entry-passes.md:76 | products.list | Create new product (via Add new product) | dialog | hint: products.list | Profile availability setting |
 | `entry-pass-dual-product-setup.png` | content/guides/creating-entry-passes.md:92 | products.list | Create new product (via Add new product) | dialog | hint: products.list | Dual product setup example |
 | `documents-01.png` | content/guides/documents.md:35 | products.list | Choose the type of product item (via Gift Card) | dialog | hint: products.list | Products & Services → Documents: the document library list w |
-| `entry-pass-client-view-01.png` | content/guides/entry-pass-client-view.md:34 | products.list | — | screen | hint: products.list | Screenshot — entry pass client view |
-| `entry-pass-client-view-02.png` | content/guides/entry-pass-client-view.md:37 | products.list | — | screen | hint: products.list | Screenshot — entry pass client view |
-| `entry-pass-client-view-04.png` | content/guides/entry-pass-client-view.md:52 | products.list | — | screen | hint: products.list | Screenshot — entry pass client view |
-| `entry-pass-client-view-05.png` | content/guides/entry-pass-client-view.md:76 | products.list | — | screen | hint: products.list | Entry pass shown on booking detail |
-| `entry-pass-client-view-06.png` | content/guides/entry-pass-client-view.md:78 | products.list | — | screen | hint: products.list | Order linked to the booking |
-| `entry-pass-client-view-07.png` | content/guides/entry-pass-client-view.md:93 | products.list | — | screen | hint: products.list | Order detail with entry pass entries |
-| `entry-pass-client-view-08.png` | content/guides/entry-pass-client-view.md:113 | products.list | — | screen | hint: products.list | Manual entry pass assignment on booking |
 | `blocks-creation-07.png` | content/guides/multi-day-event-with-product-offer.md:19 | products.list | Create new product (via Add new product) | dialog | hint: products.list | Multi-day event with product offer |
 | `individual-lessons-climbing-wall-02.png` | content/guides/multi-day-event-with-product-offer.md:23 | products.list | Create new product (via Add new product) | dialog | hint: products.list | Programme - for a period with two classes, where several peo |
 | `selling-products-during-registration-01.png` | content/guides/selling-products-during-booking.md:27 | products.list | — | screen | hint: products.list | Overview |
@@ -389,8 +412,6 @@
 | `edit-sessions-in-programmes-04.png` | content/guides/edit-sessions-in-programmes.md:113 | programmes.list | — | dialog | text: 'programme:programmes' | Screenshot — edit sessions in programmes |
 | `edit-sessions-in-programmes-05.png` | content/guides/edit-sessions-in-programmes.md:121 | programmes.list | — | dialog | text: 'programme:programmes' | Screenshot — edit sessions in programmes |
 | `individual-lessons-climbing-wall-02.png` | content/guides/individual-sessions-with-free-session.md:23 | programmes.list | — | screen | text: 'programme:programmes' | Programmes - individual sessions for one client, in which it |
-| `linked-registrations-07.png` | content/guides/linked-bookings.md:61 | programmes.list | — | screen | text: 'programme:programmes' | The parent/client pays for both/multiple programmes only onc |
-| `linked-registrations-08.png` | content/guides/linked-bookings.md:63 | programmes.list | — | screen | text: 'programme:programmes' | The parent/client pays for both/multiple programmes only onc |
 | `course-settings-14.png` | content/guides/programme-settings.md:131 | programmes.list | — | screen | text: 'programme:programmes' | In some programmes — including single-session programmes suc |
 | `reference/prog-programmes-wiggle-wonders-0-12-months-settings-trial.png` | content/reference/programme-settings.md:194 | programmes.list | — | screen | text: 'programme:programmes' | Trial tile with the trial type options |
 | `reference/prog-programmes-wiggle-wonders-0-12-months-settings-feedback.png` | content/reference/programme-settings.md:255 | programmes.list | — | screen | text: 'programme:programmes' | Feedback settings |
@@ -399,11 +420,6 @@
 | `reference/prog-programmes-wiggle-wonders-0-12-months.png` | content/reference/programmes-list.md:64 | programmes.list | Let’s Set Up Your Programme (via 💃 Wiggle Wonders (0–12 months) (Copy)) | dialog | text: 'programme:programmes' | Programme detail — Wiggle Wonders |
 | `reference/prog-programmes-wiggle-wonders-0-12-months-create-a-timetable.png` | content/reference/programmes-list.md:128 | programmes.list | — | dialog | text: 'programme:programmes' | Create a timetable form |
 | `blocks-creation-07.png` | content/setup/online-registration.md:116 | programmes.list | — | screen | text: 'programme:programmes' | For Pay-as-you-go programmes only, Zooza provides an additio |
-| `client-consent-overview-02.png` | content/guides/client-consent-overview.md:70 | programmes.overview | Performance Overview | screen | text: 'programme:overview' | Download PDF button in the consent overview |
-| `creating-a-class-08.png` | content/guides/creating-a-class.md:143 | programmes.overview | Performance Overview | screen | text: 'programme:overview' | Classes overview with filters |
-| `messages-overview-filters.png` | content/guides/sending-email-sms.md:40 | programmes.overview | Performance Overview | screen | text: 'programme:overview' | Messages overview |
-| `sending-email-sms-01.png` | content/guides/sending-email-sms.md:53 | programmes.overview | Performance Overview | screen | text: 'programme:overview' | Screenshot — sending email sms |
-| `sending-email-sms-02.png` | content/guides/sending-email-sms.md:55 | programmes.overview | Performance Overview | screen | text: 'programme:overview' | Screenshot — sending email sms |
 | `additional-fields-business-settings-01.png` | content/guides/additional-fields.md:67 | programmes.settings.extra_fields | Additional fields | screen | text: 'programme:additional fields' | Business fields section in Additional fields settings |
 | `additional-fields-01.png` | content/guides/additional-fields.md:130 | programmes.settings.extra_fields | Additional fields | screen | text: 'programme:additional fields' | Screenshot — additional fields |
 | `reference/prog-programmes-wiggle-wonders-0-12-months-settings-additional-fields.png` | content/reference/programme-settings.md:177 | programmes.settings.extra_fields | Additional fields | screen | text: 'programme:additional fields' | Additional Fields settings |
@@ -467,57 +483,54 @@
 | `trials-daily-business-08.png` | content/guides/trials-daily-business.md:211 | programmes.settings.trial | — | screen | cue: Programme → Settings → Trial | Booking options shown on website — Trials only |
 | `individual-lessons-climbing-wall-02.png` | content/setup/trial-sessions.md:178 | programmes.settings.trial | Trial settings | screen | text: 'programme:trial' | If you select Extra Capacity, trial participants can only be |
 | `trial-lessons-32.png` | content/setup/trial-sessions.md:312 | programmes.settings.trial | Trial settings | screen | text: 'programme:trial' | Once you have successfully registered for the programme, the |
-| `additional-sessions-01.png` | content/guides/additional-sessions.md:47 | reports.additional_sessions | — | screen | cue: Programme → Settings → Additional sessions | The Additional sessions card in the programme settings, with |
+| `additional-sessions-01.png` | content/guides/additional-sessions.md:47 | reports.additional_sessions | Additional sessions | screen | cue: Programme → Settings → Additional sessions | The Additional sessions card in the programme settings, with |
 | `additional-sessions-02.png` | content/guides/additional-sessions.md:49 | reports.additional_sessions | — | screen | cue: Programme → Settings → Additional sessions | General settings for all programmes: a cancellation limit an |
-| `additional-sessions-03.png` | content/guides/additional-sessions.md:83 | reports.additional_sessions | — | screen | text: 'programme:additional sessions' | The Additional sessions card in the parent's profile, showin |
+| `additional-sessions-03.png` | content/guides/additional-sessions.md:83 | reports.additional_sessions | Additional sessions | screen | text: 'programme:additional sessions' | The Additional sessions card in the parent's profile, showin |
 | `additional-sessions-04.png` | content/guides/additional-sessions.md:85 | reports.additional_sessions | — | screen | text: 'programme:additional sessions' | Choosing which session to attend, by class, location, instru |
 | `additional-sessions-05.png` | content/guides/additional-sessions.md:87 | reports.additional_sessions | — | screen | text: 'programme:additional sessions' | The confirmation: the place is booked and the pay-by date is |
 | `additional-sessions-06.png` | content/guides/additional-sessions.md:89 | reports.additional_sessions | — | screen | text: 'programme:additional sessions' | The booked extra session listed on the booking, with a Cance |
 | `additional-sessions-07.png` | content/guides/additional-sessions.md:91 | reports.additional_sessions | — | screen | text: 'programme:additional sessions' | The cancellation choice: go at a different time instead, or  |
 | `replacement-hours-cross-08.png` | content/guides/replacement-hours-complete.md:265 | reports.cancelled | — | screen | text: 'programme:cancelled' | Choose Replacement Lesson button on cancelled session |
-| `stripe-payments-faq-01.png` | content/faq/stripe-payments-faq.md:58 | reports.dashboard | — | screen | hint: reports.dashboard | Screenshot — stripe payments faq |
-| `active-inactive-clients-03.png` | content/guides/active-inactive-clients.md:86 | reports.dashboard | — | screen | hint: reports.dashboard | Dashboard statistics — active and inactive clients |
-| `instructor-attendance-management-01.png` | content/guides/instructor-attendance-management.md:25 | reports.dashboard | — | screen | hint: reports.dashboard | Screenshot — instructor attendance management |
-| `reference/dashboard-welcome.png` | content/reference/dashboard.md:23 | reports.dashboard | — | screen | hint: reports.dashboard | Dashboard welcome screen |
+| `stripe-payments-faq-01.png` | content/faq/stripe-payments-faq.md:58 | reports.dashboard | Welcome to Nick's Dashboard PRO | screen | hint: reports.dashboard | Screenshot — stripe payments faq |
+| `active-inactive-clients-03.png` | content/guides/active-inactive-clients.md:86 | reports.dashboard | Welcome to Nick's Dashboard PRO | screen | hint: reports.dashboard | Dashboard statistics — active and inactive clients |
+| `instructor-attendance-management-01.png` | content/guides/instructor-attendance-management.md:25 | reports.dashboard | Welcome to Nick's Dashboard PRO | screen | hint: reports.dashboard | Screenshot — instructor attendance management |
+| `reference/dashboard-welcome.png` | content/reference/dashboard.md:23 | reports.dashboard | Welcome to Nick's Dashboard PRO | screen | hint: reports.dashboard | Dashboard welcome screen |
 | `reference/dashboard-team-announcements-create.png` | content/reference/dashboard.md:36 | reports.dashboard | — | dialog | hint: reports.dashboard | Team Announcements — create form |
 | `reference/dashboard-all-notes-list.png` | content/reference/dashboard.md:50 | reports.dashboard | — | screen | hint: reports.dashboard | Team Announcements — list view |
-| `reference/discounts-dashboard.png` | content/reference/discounts.md:23 | reports.dashboard | — | screen | hint: reports.dashboard | Discounts dashboard |
-| `reference/reports-dashboard.png` | content/reference/reports-dashboard.md:24 | reports.dashboard | — | screen | hint: reports.dashboard | Reports dashboard |
-| `reference/reports-new-enrolments-detail.png` | content/reference/reports-dashboard.md:60 | reports.dashboard | — | dialog | hint: reports.dashboard | New enrolments detail |
-| `inbound-payments-setup-01.png` | content/setup/inbound-payments-setup.md:175 | reports.dashboard | — | screen | hint: reports.dashboard | Dashboard warning banner — "Bank connection needs reconnecti |
-| `automatic-session-notification-01.png` | content/guides/automatic-session-notification.md:30 | reports.event_notifications | — | screen | hint: reports.event_notifications | Screenshot — automatic session notification |
-| `automatic-session-notification-02.png` | content/guides/automatic-session-notification.md:42 | reports.event_notifications | — | screen | hint: reports.event_notifications | Screenshot — automatic session notification |
-| `automatic-session-notification-03.png` | content/guides/automatic-session-notification.md:70 | reports.event_notifications | — | dialog | hint: reports.event_notifications | Screenshot — automatic session notification |
-| `reference/reports-session-notifications.png` | content/reference/reports-dashboard.md:211 | reports.event_notifications | — | screen | hint: reports.event_notifications | Session notifications |
-| `auto-cancel-unpaid-registrations-02.png` | content/guides/auto-cancel-unpaid-registrations.md:88 | reports.outstanding_payments | — | screen | hint: reports.outstanding_payments | Outstanding payments report showing Awaiting payment, Active |
-| `payment-reminder-example.png` | content/guides/message-templates.md:64 | reports.outstanding_payments | — | screen | hint: reports.outstanding_payments | Payment reminder example |
-| `common-booking-scenarios-01.png` | content/faq/common-booking-scenarios.md:25 | reports.registrations | — | screen | text: 'programme:bookings' | You will still have a data in CRM under filstre Deleted book |
-| `common-booking-scenarios-02.png` | content/faq/common-booking-scenarios.md:73 | reports.registrations | — | screen | text: 'programme:bookings' | Steps: Bookings → Check that status = Trial |
-| `active-inactive-clients-02.png` | content/guides/active-inactive-clients.md:29 | reports.registrations | — | screen | text: 'programme:bookings' | Client with multiple bookings |
-| `auto-enrolment-responses-02.png` | content/guides/auto-enrolment-responses.md:81 | reports.registrations | — | screen | text: 'programme:bookings' | Screenshot — auto enrolment responses |
-| `booking-tile-customization-01.png` | content/guides/booking-tile-customization.md:28 | reports.registrations | — | screen | text: 'programme:bookings' | A booking tile on the Bookings list: client, attendee, progr |
-| `bulk-network-transfer-01.png` | content/guides/bulk-network-transfer.md:73 | reports.registrations | — | screen | text: 'programme:bookings' | Screenshot — bulk network transfer |
+| `reference/discounts-dashboard.png` | content/reference/discounts.md:23 | reports.dashboard | Welcome to Nick's Dashboard PRO | screen | hint: reports.dashboard | Discounts dashboard |
+| `reference/payments-dashboard.png` | content/reference/payments-dashboard.md:24 | reports.dashboard | Welcome to Nick's Dashboard PRO | screen | hint: reports.dashboard | Payments dashboard |
+| `payments-dashboard-01.png` | content/reference/payments-dashboard.md:116 | reports.dashboard | Welcome to Nick's Dashboard PRO | screen | hint: reports.dashboard | Screenshot — payments dashboard |
+| `reference/reports-dashboard.png` | content/reference/reports-dashboard.md:24 | reports.dashboard | Welcome to Nick's Dashboard PRO | screen | hint: reports.dashboard | Reports dashboard |
+| `reference/reports-new-enrolments-detail.png` | content/reference/reports-dashboard.md:60 | reports.dashboard | Welcome to Nick's Dashboard PRO | dialog | hint: reports.dashboard | New enrolments detail |
+| `inbound-payments-setup-01.png` | content/setup/inbound-payments-setup.md:175 | reports.dashboard | Welcome to Nick's Dashboard PRO | screen | hint: reports.dashboard | Dashboard warning banner — "Bank connection needs reconnecti |
+| `automatic-session-notification-01.png` | content/guides/automatic-session-notification.md:30 | reports.event_notifications | Session notifications | screen | hint: reports.event_notifications | Screenshot — automatic session notification |
+| `automatic-session-notification-02.png` | content/guides/automatic-session-notification.md:42 | reports.event_notifications | Session notifications | screen | hint: reports.event_notifications | Screenshot — automatic session notification |
+| `automatic-session-notification-03.png` | content/guides/automatic-session-notification.md:70 | reports.event_notifications | Session notifications | dialog | hint: reports.event_notifications | Screenshot — automatic session notification |
+| `reference/reports-session-notifications.png` | content/reference/reports-dashboard.md:211 | reports.event_notifications | Session notifications | screen | hint: reports.event_notifications | Session notifications |
+| `auto-cancel-unpaid-registrations-02.png` | content/guides/auto-cancel-unpaid-registrations.md:88 | reports.outstanding_payments | Outstanding Payments | screen | hint: reports.outstanding_payments | Outstanding payments report showing Awaiting payment, Active |
+| `payment-reminder-example.png` | content/guides/message-templates.md:64 | reports.outstanding_payments | Outstanding Payments | screen | hint: reports.outstanding_payments | Payment reminder example |
+| `common-booking-scenarios-01.png` | content/faq/common-booking-scenarios.md:25 | reports.registrations | Bookings | screen | text: 'programme:bookings' | You will still have a data in CRM under filstre Deleted book |
+| `common-booking-scenarios-02.png` | content/faq/common-booking-scenarios.md:73 | reports.registrations | Bookings | screen | text: 'programme:bookings' | Steps: Bookings → Check that status = Trial |
+| `active-inactive-clients-02.png` | content/guides/active-inactive-clients.md:29 | reports.registrations | Bookings | screen | text: 'programme:bookings' | Client with multiple bookings |
+| `auto-enrolment-responses-02.png` | content/guides/auto-enrolment-responses.md:81 | reports.registrations | Bookings | screen | text: 'programme:bookings' | Screenshot — auto enrolment responses |
+| `booking-tile-customization-01.png` | content/guides/booking-tile-customization.md:28 | reports.registrations | Bookings | screen | text: 'programme:bookings' | A booking tile on the Bookings list: client, attendee, progr |
+| `bulk-network-transfer-01.png` | content/guides/bulk-network-transfer.md:73 | reports.registrations | Bookings | screen | text: 'programme:bookings' | Screenshot — bulk network transfer |
 | `creating-a-class-14.png` | content/guides/creating-a-class.md:240 | reports.registrations | — | screen | hint: reports.registrations | Class report section |
-| `edit-payment-on-registration-12.png` | content/guides/edit-payment-on-booking.md:77 | reports.registrations | — | dialog | text: 'programme:bookings' | In the Bookings tab, locate the booking on which you want to |
-| `edit-payment-on-registration-17.png` | content/guides/edit-payment-on-booking.md:96 | reports.registrations | — | dialog | text: 'programme:bookings' | In the Bookings tab, locate the booking on which you want to |
+| `edit-payment-on-registration-12.png` | content/guides/edit-payment-on-booking.md:77 | reports.registrations | Bookings | dialog | text: 'programme:bookings' | In the Bookings tab, locate the booking on which you want to |
+| `edit-payment-on-registration-17.png` | content/guides/edit-payment-on-booking.md:96 | reports.registrations | Bookings | dialog | text: 'programme:bookings' | In the Bookings tab, locate the booking on which you want to |
 | `labels-06.png` | content/guides/labels.md:114 | reports.registrations | — | screen | hint: reports.registrations | Screenshot — labels |
 | `labels-07.png` | content/guides/labels.md:115 | reports.registrations | — | screen | hint: reports.registrations | Screenshot — labels |
-| `late-bookings-01.png` | content/guides/late-bookings.md:30 | reports.registrations | — | screen | text: 'programme:bookings' | Screenshot — late bookings |
-| `late-bookings-02.png` | content/guides/late-bookings.md:57 | reports.registrations | — | screen | text: 'programme:bookings' | Screenshot — late bookings |
-| `late-bookings-03.png` | content/guides/late-bookings.md:94 | reports.registrations | — | screen | text: 'programme:bookings' | Screenshot — late bookings |
-| `late-bookings-04.png` | content/guides/late-bookings.md:118 | reports.registrations | — | screen | text: 'programme:bookings' | Screenshot — late bookings |
-| `late-bookings-05.png` | content/guides/late-bookings.md:138 | reports.registrations | — | screen | text: 'programme:bookings' | Screenshot — late bookings |
-| `linked-registrations-02.png` | content/guides/linked-bookings.md:40 | reports.registrations | — | screen | text: 'programme:bookings' | Choose one of the bookings that you want to have as the main |
-| `linked-registrations-03.png` | content/guides/linked-bookings.md:43 | reports.registrations | — | screen | text: 'programme:bookings' | Click on Link booking |
-| `linked-registrations-04.png` | content/guides/linked-bookings.md:47 | reports.registrations | — | screen | text: 'programme:bookings' | Link related bookings |
-| `linked-registrations-06.png` | content/guides/linked-bookings.md:56 | reports.registrations | — | screen | text: 'programme:bookings' | Once successfully linked, each booking clearly indicates whi |
-| `family-relationships-step3-01.png` | content/guides/manage-family-relationships.md:83 | reports.registrations | — | dialog | text: 'programme:bookings' | Step 3 of Add new relationship wizard — preview of bookings  |
-| `user-roles-18.png` | content/guides/user-roles.md:195 | reports.registrations | — | screen | text: 'programme:bookings' | When the user clicks on the bookings tab, he/she will see al |
+| `late-bookings-01.png` | content/guides/late-bookings.md:30 | reports.registrations | Bookings | screen | text: 'programme:bookings' | Screenshot — late bookings |
+| `late-bookings-02.png` | content/guides/late-bookings.md:57 | reports.registrations | Bookings | screen | text: 'programme:bookings' | Screenshot — late bookings |
+| `late-bookings-03.png` | content/guides/late-bookings.md:94 | reports.registrations | Bookings | screen | text: 'programme:bookings' | Screenshot — late bookings |
+| `late-bookings-04.png` | content/guides/late-bookings.md:118 | reports.registrations | Bookings | screen | text: 'programme:bookings' | Screenshot — late bookings |
+| `late-bookings-05.png` | content/guides/late-bookings.md:138 | reports.registrations | Bookings | screen | text: 'programme:bookings' | Screenshot — late bookings |
+| `family-relationships-step3-01.png` | content/guides/manage-family-relationships.md:83 | reports.registrations | Bookings | dialog | text: 'programme:bookings' | Step 3 of Add new relationship wizard — preview of bookings  |
+| `user-roles-18.png` | content/guides/user-roles.md:195 | reports.registrations | Bookings | screen | text: 'programme:bookings' | When the user clicks on the bookings tab, he/she will see al |
 | `viewing-billable-events-10.png` | content/guides/viewing-billable-sessions.md:69 | reports.registrations | — | screen | hint: reports.registrations | In order to view a billable session in the instructor report |
-| `viewing-billable-events-11.png` | content/guides/viewing-billable-sessions.md:75 | reports.registrations | — | screen | hint: reports.registrations | In the client profile on the programme report, the field: To |
 | `reference/bookings-change-class.png` | content/reference/bookings-list.md:351 | reports.registrations | — | screen | text: 'programme:bookings' | Change class |
 | `reference/bookings-offline-payment.png` | content/reference/bookings-list.md:511 | reports.registrations | — | screen | text: 'programme:bookings' | Offline payment detail |
-| `bookings-list-01.png` | content/reference/bookings-list.md:546 | reports.registrations | — | screen | text: 'programme:bookings' | Bookings list with the filter row and booking tiles |
+| `bookings-list-01.png` | content/reference/bookings-list.md:546 | reports.registrations | Bookings | screen | text: 'programme:bookings' | Bookings list with the filter row and booking tiles |
 | `reference/bookings-new-credit.png` | content/reference/bookings-list.md:648 | reports.registrations | — | dialog | text: 'programme:bookings' | New credit |
 | `reference/bookings-credit-detail.png` | content/reference/bookings-list.md:660 | reports.registrations | — | screen | text: 'programme:bookings' | Credit detail |
 | `reference/bookings-communication-tab.png` | content/reference/bookings-list.md:695 | reports.registrations | — | screen | text: 'programme:bookings' | Communication tab |
@@ -526,23 +539,23 @@
 | `reference/instructors-report-detail.png` | content/reference/instructors-list.md:117 | reports.registrations | — | screen | hint: reports.registrations | Report detail |
 | `reference/reports-quick-setup.png` | content/reference/reports-dashboard.md:77 | reports.registrations | — | screen | hint: reports.registrations | Quick setup |
 | `billing-periods-07.png` | content/setup/billing-periods.md:89 | reports.registrations | — | dialog | hint: reports.registrations | If you want to show inactive billing periods in the reports, |
-| `individual-lessons-climbing-wall-02.png` | content/setup/getting-started-with-zooza.md:57 | reports.registrations | — | screen | text: 'programme:bookings' | You can imagine it like this |
+| `individual-lessons-climbing-wall-02.png` | content/setup/getting-started-with-zooza.md:57 | reports.registrations | Bookings | screen | text: 'programme:bookings' | You can imagine it like this |
 | `instructor-rate-reward-15.png` | content/setup/instructor-rate-reward.md:97 | reports.registrations | — | dialog | hint: reports.registrations | To view the report, click Instructors, select the instructor |
 | `instructor-rate-reward-16.png` | content/setup/instructor-rate-reward.md:101 | reports.registrations | — | dialog | hint: reports.registrations | Define the time period, check the option to show cancelled a |
 | `instructor-rate-reward-18.png` | content/setup/instructor-rate-reward.md:111 | reports.registrations | — | dialog | hint: reports.registrations | Here you can jump to the programme, class or to the required |
 | `power-bi-integration-01.png` | content/setup/power-bi-integration.md:33 | reports.registrations | — | screen | hint: reports.registrations | To begin using and transforming raw data from Zooza into Pow |
 | `power-bi-integration-09.png` | content/setup/power-bi-integration.md:88 | reports.registrations | — | dialog | hint: reports.registrations | First, create a workspace to easily share your reports with  |
 | `power-bi-integration-20.png` | content/setup/power-bi-integration.md:130 | reports.registrations | — | dialog | hint: reports.registrations | If no further changes are needed, go to the Reporting tab an |
-| `make-up-sessions-faq-02.png` | content/faq/make-up-sessions-faq.md:63 | reports.replacements | — | screen | cue: Programme → Settings → Make-up sessions | Make-up sessions settings with the administrator-assigned sw |
-| `course-settings-06.png` | content/guides/programme-settings.md:88 | reports.replacements | — | screen | text: 'programme:make-up sessions' | If attendance recording is enabled, you can also set up make |
+| `make-up-sessions-faq-02.png` | content/faq/make-up-sessions-faq.md:63 | reports.replacements | The make-up session can be used according to the following parameters: (via Brian James) | dialog | cue: Programme → Settings → Make-up sessions | Make-up sessions settings with the administrator-assigned sw |
+| `course-settings-06.png` | content/guides/programme-settings.md:88 | reports.replacements | Make-up sessions | screen | text: 'programme:make-up sessions' | If attendance recording is enabled, you can also set up make |
 | `instructor-rate-reward-11.png` | content/setup/instructor-rate-reward.md:79 | reports.substituted | — | screen | text: 'programme:substituted' | If a term is led (substituted) by a different instructor tha |
 | `instructor-rate-reward-12.png` | content/setup/instructor-rate-reward.md:80 | reports.substituted | — | screen | text: 'programme:substituted' | If a term is led (substituted) by a different instructor tha |
 | `system-messages-01.png` | content/guides/system-messages.md:55 | reports.system_messages | — | screen | hint: reports.system_messages | System messages screen showing activity feed on the left and |
-| `reference/reports-trial-sessions.png` | content/reference/reports-dashboard.md:172 | reports.trials | — | screen | hint: reports.trials | Trial sessions report |
-| `event-based-pricing-service-item-01.png` | content/guides/event-based-pricing.md:40 | services.list | — | screen | hint: services.list | Service item with per-session pricing selected — unit price  |
+| `reference/reports-trial-sessions.png` | content/reference/reports-dashboard.md:172 | reports.trials | Trial Sessions Report | screen | hint: reports.trials | Trial sessions report |
+| `event-based-pricing-service-item-01.png` | content/guides/event-based-pricing.md:40 | services.list | Add service (via Add new) | dialog | hint: services.list | Service item with per-session pricing selected — unit price  |
 | `reference/services-list.png` | content/reference/services-list.md:24 | services.list | — | screen | hint: services.list | Services list |
-| `reference/services-new-service.png` | content/reference/services-list.md:48 | services.list | — | dialog | hint: services.list | New service |
-| `services-list-01.png` | content/reference/services-list.md:66 | services.list | — | screen | hint: services.list | Screenshot — services list |
+| `reference/services-new-service.png` | content/reference/services-list.md:48 | services.list | Add service (via Add new) | dialog | hint: services.list | New service |
+| `services-list-01.png` | content/reference/services-list.md:66 | services.list | Add service (via Add new) | dialog | hint: services.list | Screenshot — services list |
 | `how-to-create-paid-events-06.png` | content/guides/billable-sessions.md:66 | sessions.detail | Session | screen | hint: sessions.detail | Billable session detail |
 | `creating-a-class-06.png` | content/guides/creating-a-class.md:133 | sessions.detail | E-mail after the session (via Edit #3) | dialog | text: 'programme:session' | Classes created during session |
 | `selecting-event-date.png` | content/guides/send-email-after-session.md:26 | sessions.detail | E-mail after the session (via Edit #3) | dialog | text: 'programme:session' | Selecting an event date |
@@ -578,9 +591,6 @@
 | `individual-sessions-09.png` | content/guides/individual-sessions.md:119 | sessions.list | — | screen | text: 'programme:sessions' | Steps |
 | `group-interested-02.png` | content/guides/lead-collection.md:33 | sessions.list | — | screen | text: 'programme:sessions' | You can see whether it is a lead collection class or a class |
 | `group-interested-03.png` | content/guides/lead-collection.md:35 | sessions.list | — | screen | text: 'programme:sessions' | You can see whether it is a lead collection class or a class |
-| `pay-as-you-go-client-book-session.png` | content/guides/pay-as-you-go-programme.md:100 | sessions.list | — | screen | text: 'programme:sessions' | Client view — Book session button |
-| `pay-as-you-go-client-select-session.png` | content/guides/pay-as-you-go-programme.md:103 | sessions.list | — | screen | text: 'programme:sessions' | Client view — selecting available sessions |
-| `pay-as-you-go-client-session-booked.png` | content/guides/pay-as-you-go-programme.md:106 | sessions.list | — | screen | text: 'programme:sessions' | Client view — session booked confirmation |
 | `replacement-hours-cross-09.png` | content/guides/replacement-hours-complete.md:269 | sessions.list | — | screen | text: 'programme:sessions' | Available replacement sessions from multiple branches |
 | `viewing-billable-events-01.png` | content/guides/viewing-billable-sessions.md:22 | sessions.list | — | screen | text: 'programme:sessions' | If you already have set up billable sessions, the applicatio |
 | `viewing-billable-events-02.png` | content/guides/viewing-billable-sessions.md:30 | sessions.list | — | screen | text: 'programme:sessions' | If the class does not have set billable sessions, then the v |
@@ -748,7 +758,7 @@
 | `trash-and-restore-01.png` | content/guides/trash-and-restore.md:77 | settings.trash | — | screen | cue: Settings → Tools → Trash | Settings → Tools → Trash: deleted sessions with Restore butt |
 | `trash-and-restore-02.png` | content/guides/trash-and-restore.md:111 | settings.trash | — | screen | text: 'trash' | Screenshot — trash and restore |
 | `embedded-videos-vimeo-01.png` | content/guides/embedded-videos-vimeo.md:57 | team.integrations | — | dialog | hint: team.integrations | Settings, Integrations, Vimeo: the Allowed domains list with |
-| `fastpay-direct-debit-01.png` | content/guides/fastpay-direct-debit.md:48 | team.integrations | — | screen | hint: team.integrations | Integrations page Payments section listing FastPay alongside |
+| `fastpay-direct-debit-01.png` | content/guides/fastpay-direct-debit.md:48 | team.integrations | Payments | screen | hint: team.integrations | Integrations page Payments section listing FastPay alongside |
 | `fastpay-direct-debit-02.png` | content/guides/fastpay-direct-debit.md:54 | team.integrations | — | dialog | hint: team.integrations | FastPay connection form with fields for the bureau token and |
 | `fastpay-direct-debit-03.png` | content/guides/fastpay-direct-debit.md:70 | team.integrations | — | screen | hint: team.integrations | Course Payment Methods settings with SEPA Direct debit enabl |
 | `fastpay-direct-debit-05.png` | content/guides/fastpay-direct-debit.md:110 | team.integrations | — | screen | hint: team.integrations | Direct Debit Export screen with the FastPay tab and the coll |
@@ -781,14 +791,14 @@
 | `xero-integration-02.png` | content/setup/xero-integration.md:44 | team.integrations | — | screen | hint: team.integrations | Select Xero and click Connect |
 | `xero-integration-03.png` | content/setup/xero-integration.md:48 | team.integrations | — | screen | hint: team.integrations | Xero authorization screen |
 | `xero-integration-04.png` | content/setup/xero-integration.md:50 | team.integrations | — | screen | hint: team.integrations | Xero allow access confirmation |
-| `xero-integration-08.png` | content/setup/xero-integration.md:71 | team.integrations | — | screen | hint: team.integrations | Invoice Profile — VAT payer settings |
-| `xero-integration-09.png` | content/setup/xero-integration.md:76 | team.integrations | — | screen | hint: team.integrations | VAT rate selection |
-| `xero-integration-10.png` | content/setup/xero-integration.md:82 | team.integrations | — | screen | hint: team.integrations | Bank account selection |
-| `xero-integration-14.png` | content/setup/xero-integration.md:98 | team.integrations | — | screen | hint: team.integrations | Revenue account selection |
-| `xero-integration-15.png` | content/setup/xero-integration.md:128 | team.integrations | — | screen | hint: team.integrations | Manual invoice generation from booking |
-| `xero-integration-16.png` | content/setup/xero-integration.md:130 | team.integrations | — | dialog | hint: team.integrations | Invoice generation dialog |
-| `xero-integration-17.png` | content/setup/xero-integration.md:134 | team.integrations | — | dialog | hint: team.integrations | Generate invoice from manual payment dialog |
-| `xero-integration-18.png` | content/setup/xero-integration.md:144 | team.integrations | — | screen | hint: team.integrations | Automatic invoice generation toggle |
+| `xero-integration-08.png` | content/setup/xero-integration.md:70 | team.integrations | — | screen | hint: team.integrations | Invoice Profile — VAT payer settings |
+| `xero-integration-09.png` | content/setup/xero-integration.md:75 | team.integrations | — | screen | hint: team.integrations | VAT rate selection |
+| `xero-integration-10.png` | content/setup/xero-integration.md:81 | team.integrations | — | screen | hint: team.integrations | Bank account selection |
+| `xero-integration-14.png` | content/setup/xero-integration.md:97 | team.integrations | — | screen | hint: team.integrations | Revenue account selection |
+| `xero-integration-15.png` | content/setup/xero-integration.md:127 | team.integrations | — | screen | hint: team.integrations | Manual invoice generation from booking |
+| `xero-integration-16.png` | content/setup/xero-integration.md:129 | team.integrations | — | dialog | hint: team.integrations | Invoice generation dialog |
+| `xero-integration-17.png` | content/setup/xero-integration.md:133 | team.integrations | — | dialog | hint: team.integrations | Generate invoice from manual payment dialog |
+| `xero-integration-18.png` | content/setup/xero-integration.md:143 | team.integrations | — | screen | hint: team.integrations | Automatic invoice generation toggle |
 | `mcp-programmes-list.jpg` | content/setup/claude-plugin.md:73 | team.mcp | — | screen | hint: team.mcp | Claude listing 14 active courses with their class and regist |
 | `mcp-whoami-capabilities.jpg` | content/setup/claude-plugin.md:80 | team.mcp | — | screen | hint: team.mcp | Claude showing user identity, connected companies, and a lis |
 | `mcp-create-class-interview.jpg` | content/setup/claude-plugin.md:91 | team.mcp | — | screen | hint: team.mcp | Claude asking for class schedule details: which days, what t |
@@ -808,8 +818,8 @@
 | `booking-form-settings-04.png` | content/guides/booking-form-settings.md:94 | team.publish | — | dialog | hint: team.publish | Screenshot — booking form settings |
 | `booking-form-settings-05.png` | content/guides/booking-form-settings.md:131 | team.publish | — | dialog | hint: team.publish | Screenshot — booking form settings |
 | `entry-pass-booking-form-availability.png` | content/guides/creating-entry-passes.md:80 | team.publish | — | dialog | hint: team.publish | Booking form availability setting |
-| `customizing-widgets-02.png` | content/guides/customizing-widgets.md:38 | team.publish | — | screen | hint: team.publish | Screenshot |
-| `customizing-widgets-04.png` | content/guides/customizing-widgets.md:57 | team.publish | — | dialog | hint: team.publish | Screenshot |
+| `customizing-widgets-02.png` | content/guides/customizing-widgets.md:38 | team.publish | Widgets | screen | hint: team.publish | Screenshot |
+| `customizing-widgets-04.png` | content/guides/customizing-widgets.md:57 | team.publish | — | dialog | hint: team.publish | Programme Settings tab with the Price and payment and Online |
 | `customizing-widgets-05.png` | content/guides/customizing-widgets.md:60 | team.publish | — | dialog | hint: team.publish | Screenshot |
 | `customizing-widgets-06.png` | content/guides/customizing-widgets.md:65 | team.publish | — | dialog | hint: team.publish | Programme Settings tab with the Price and payment, Online bo |
 | `customizing-widgets-07.png` | content/guides/customizing-widgets.md:68 | team.publish | — | dialog | hint: team.publish | Programme settings tile: Basic information and Additional se |
@@ -818,13 +828,10 @@
 | `customizing-widgets-10.png` | content/guides/customizing-widgets.md:85 | team.publish | — | dialog | hint: team.publish | Screenshot |
 | `customizing-widgets-11.png` | content/guides/customizing-widgets.md:87 | team.publish | — | dialog | hint: team.publish | Screenshot |
 | `customizing-widgets-13.png` | content/guides/customizing-widgets.md:101 | team.publish | — | screen | hint: team.publish | Screenshot |
-| `customizing-widgets-01.png` | content/guides/customizing-widgets.md:103 | team.publish | — | screen | hint: team.publish | Screenshot — customizing widgets |
+| `customizing-widgets-01.png` | content/guides/customizing-widgets.md:103 | team.publish | Widgets | screen | hint: team.publish | Screenshot — customizing widgets |
 | `customizing-widgets-15.png` | content/guides/customizing-widgets.md:113 | team.publish | — | dialog | hint: team.publish | Screenshot |
 | `customizing-widgets-16.png` | content/guides/customizing-widgets.md:115 | team.publish | — | dialog | hint: team.publish | Screenshot |
-| `customizing-widgets-19.png` | content/guides/customizing-widgets.md:135 | team.publish | — | screen | hint: team.publish | Screenshot |
-| `customizing-widgets-02.png` | content/guides/customizing-widgets.md:224 | team.publish | — | screen | hint: team.publish | Screenshot — customizing widgets |
-| `entry-pass-client-view-03.png` | content/guides/entry-pass-client-view.md:46 | team.publish | — | dialog | hint: team.publish | Screenshot — entry pass client view |
-| `entry-pass-client-view-05.png` | content/guides/entry-pass-client-view.md:58 | team.publish | — | dialog | hint: team.publish | Screenshot — entry pass client view |
+| `customizing-widgets-02.png` | content/guides/customizing-widgets.md:224 | team.publish | Widgets | screen | hint: team.publish | Screenshot — customizing widgets |
 | `customizing-widgets-01.png` | content/guides/individual-sessions.md:39 | team.publish | — | dialog | hint: team.publish | Step 1: Create a programme for “Individual sessions” |
 | `customizing-widgets-01.png` | content/guides/individual-sessions.md:98 | team.publish | — | screen | hint: team.publish | Adjust programme/class/payment plan |
 | `customizing-widgets-01.png` | content/guides/individual-sessions.md:139 | team.publish | — | dialog | hint: team.publish | Disable online booking (so it’s not publicly bookable) (duri |
@@ -844,32 +851,32 @@
 | `returning-client-booking-widget-02.png` | content/guides/returning-client-booking-widget.md:104 | team.publish | — | screen | hint: team.publish | Screenshot — returning client booking widget |
 | `widget-merge-rooms-01.png` | content/guides/widget-merge-rooms.md:34 | team.publish | — | screen | hint: team.publish | Screenshot — widget merge rooms |
 | `reference/bookings-cancel.png` | content/reference/bookings-list.md:335 | team.publish | — | dialog | hint: team.publish | Cancel booking form: cancel immediately or schedule cancella |
-| `reference/publish-widgets.png` | content/reference/publish-widgets.md:24 | team.publish | — | screen | hint: team.publish | Publish widgets |
+| `reference/publish-widgets.png` | content/reference/publish-widgets.md:24 | team.publish | Publish Zooza to your website | screen | hint: team.publish | Publish widgets |
 | `reference/widgets-detail-wix.png` | content/reference/publish-widgets.md:61 | team.publish | — | screen | hint: team.publish | Widget detail — Wix |
 | `publish-widgets-01.png` | content/reference/publish-widgets.md:211 | team.publish | — | screen | hint: team.publish | The Priority stepper in Online booking settings, set to 0, w |
 | `widget-contact-form-settings-01.png` | content/setup/contact-form-on-your-website.md:28 | team.publish | — | dialog | hint: team.publish | The Contact form settings of a widget: URL, Contact form con |
-| `deploying-zooza-on-website-03.png` | content/setup/deploying-zooza-on-website.md:63 | team.publish | — | screen | hint: team.publish | API and Secret Key can be found in the Publish section |
-| `deploying-zooza-on-website-06.png` | content/setup/deploying-zooza-on-website.md:78 | team.publish | — | screen | hint: team.publish | In the Publish section, select the Embed integration type |
-| `deploying-zooza-on-website-07.png` | content/setup/deploying-zooza-on-website.md:81 | team.publish | — | screen | hint: team.publish | This will open a menu of widgets that you can integrate. Cli |
-| `customizing-widgets-01.png` | content/setup/deploying-zooza-on-website.md:83 | team.publish | — | screen | hint: team.publish | This will open a menu of widgets that you can integrate. Cli |
-| `blocks-creation-07.png` | content/setup/deploying-zooza-on-website.md:87 | team.publish | — | screen | hint: team.publish | If you have a page built around a specific programme offerin |
-| `deploying-zooza-on-website-10.png` | content/setup/deploying-zooza-on-website.md:93 | team.publish | — | dialog | hint: team.publish | If you collect a lot of additional data in the booking form  |
-| `blocks-creation-14.png` | content/setup/deploying-zooza-on-website.md:95 | team.publish | — | dialog | hint: team.publish | If you collect a lot of additional data in the booking form  |
-| `deploying-zooza-on-website-12.png` | content/setup/deploying-zooza-on-website.md:107 | team.publish | — | screen | hint: team.publish | It may happen that you have programmes split across multiple |
+| `deploying-zooza-on-website-03.png` | content/setup/deploying-zooza-on-website.md:63 | team.publish | Publish Zooza to your website | screen | hint: team.publish | API and Secret Key can be found in the Publish section |
+| `deploying-zooza-on-website-06.png` | content/setup/deploying-zooza-on-website.md:78 | team.publish | Publish Zooza to your website | screen | hint: team.publish | In the Publish section, select the Embed integration type |
+| `deploying-zooza-on-website-07.png` | content/setup/deploying-zooza-on-website.md:81 | team.publish | Widgets | screen | hint: team.publish | This will open a menu of widgets that you can integrate. Cli |
+| `customizing-widgets-01.png` | content/setup/deploying-zooza-on-website.md:83 | team.publish | Widgets | screen | hint: team.publish | This will open a menu of widgets that you can integrate. Cli |
+| `blocks-creation-07.png` | content/setup/deploying-zooza-on-website.md:87 | team.publish | Widgets | screen | hint: team.publish | If you have a page built around a specific programme offerin |
+| `deploying-zooza-on-website-10.png` | content/setup/deploying-zooza-on-website.md:93 | team.publish | Widgets | dialog | hint: team.publish | If you collect a lot of additional data in the booking form  |
+| `blocks-creation-14.png` | content/setup/deploying-zooza-on-website.md:95 | team.publish | Widgets | dialog | hint: team.publish | If you collect a lot of additional data in the booking form  |
+| `deploying-zooza-on-website-12.png` | content/setup/deploying-zooza-on-website.md:107 | team.publish | Widgets | screen | hint: team.publish | It may happen that you have programmes split across multiple |
 | `customizing-widgets-01.png` | content/setup/getting-started-with-zooza.md:20 | team.publish | — | screen | hint: team.publish | Getting Started with Zooza |
 | `customizing-widgets-01.png` | content/setup/getting-started-with-zooza.md:82 | team.publish | — | screen | hint: team.publish | This will help you pick the right payment template in the ne |
 | `customizing-widgets-01.png` | content/setup/getting-started-with-zooza.md:162 | team.publish | — | screen | hint: team.publish | how to show them to parents |
 | `customizing-widgets-01.png` | content/setup/online-registration.md:43 | team.publish | — | screen | hint: team.publish | When you enable multiple bookings for a programme, you can c |
 | `online-registration-08.png` | content/setup/online-registration.md:74 | team.publish | — | dialog | hint: team.publish | If you need different field names for this programme’s booki |
 | `customizing-widgets-01.png` | content/setup/online-registration.md:93 | team.publish | — | screen | hint: team.publish | Email templates and signature |
-| `power-bi-integration-19.png` | content/setup/power-bi-integration.md:125 | team.publish | — | screen | hint: team.publish | Click Publish to save your data model into a SQL Semantic Mo |
+| `power-bi-integration-19.png` | content/setup/power-bi-integration.md:125 | team.publish | Publish Zooza to your website | screen | hint: team.publish | Click Publish to save your data model into a SQL Semantic Mo |
 | `customizing-widgets-01.png` | content/setup/trial-sessions.md:22 | team.publish | — | screen | hint: team.publish | Trial sessions are a great way to show what your programmes  |
 | `customizing-widgets-01.png` | content/setup/trial-sessions.md:182 | team.publish | — | screen | hint: team.publish | Example: Class capacity is 10. To this is added a global ext |
-| `lecturer-substitution-04.png` | content/guides/instructor-substitution.md:33 | team.trainer.availability | — | screen | text: 'programme:availability' | After selecting a instructor, a window will open with the av |
-| `blocks-creation-07.png` | content/guides/instructor-substitution.md:35 | team.trainer.availability | — | screen | text: 'programme:availability' | After selecting a instructor, a window will open with the av |
-| `lecturers-working-hours-05.png` | content/setup/instructors-working-hours.md:53 | team.trainer.availability | — | screen | text: 'programme:availability' | From now on, when scheduling terms, the app will inform the  |
-| `lecturers-working-hours-06.png` | content/setup/instructors-working-hours.md:88 | team.trainer.availability | — | screen | text: 'programme:availability' | In the instructor's details under Working hours, click Activ |
-| `lecturers-working-hours-07.png` | content/setup/instructors-working-hours.md:91 | team.trainer.availability | — | screen | text: 'programme:availability' | Select the availability/absences you want to delete by click |
+| `lecturer-substitution-04.png` | content/guides/instructor-substitution.md:33 | team.trainer.availability | Working hours (via Add availability) | dialog | text: 'programme:availability' | After selecting a instructor, a window will open with the av |
+| `blocks-creation-07.png` | content/guides/instructor-substitution.md:35 | team.trainer.availability | Working hours (via Add availability) | dialog | text: 'programme:availability' | After selecting a instructor, a window will open with the av |
+| `lecturers-working-hours-05.png` | content/setup/instructors-working-hours.md:53 | team.trainer.availability | Working hours (via Add availability) | dialog | text: 'programme:availability' | From now on, when scheduling terms, the app will inform the  |
+| `lecturers-working-hours-06.png` | content/setup/instructors-working-hours.md:88 | team.trainer.availability | Working hours (via Add availability) | dialog | text: 'programme:availability' | In the instructor's details under Working hours, click Activ |
+| `lecturers-working-hours-07.png` | content/setup/instructors-working-hours.md:91 | team.trainer.availability | Working hours (via Add availability) | dialog | text: 'programme:availability' | Select the availability/absences you want to delete by click |
 | `change-instructor-01.png` | content/guides/change-instructor.md:26 | team.trainer.detail | — | screen | text: 'programme:instructor' | Screenshot |
 | `change-instructor-02.png` | content/guides/change-instructor.md:34 | team.trainer.detail | — | screen | text: 'programme:instructor' | Screenshot |
 | `change-instructor-03.png` | content/guides/change-instructor.md:42 | team.trainer.detail | — | screen | text: 'programme:instructor' | Screenshot |
@@ -881,23 +888,22 @@
 | `instructor-attendance-management-04.png` | content/guides/instructor-attendance-management.md:63 | team.trainer.detail | — | screen | text: 'programme:instructor' | Screenshot — instructor attendance management |
 | `instructor-attendance-management-05.png` | content/guides/instructor-attendance-management.md:88 | team.trainer.detail | — | screen | text: 'programme:instructor' | Screenshot — instructor attendance management |
 | `instructor-attendance-management-06.png` | content/guides/instructor-attendance-management.md:98 | team.trainer.detail | — | screen | text: 'programme:instructor' | Screenshot — instructor attendance management |
-| `user-roles-05.png` | content/guides/user-roles.md:46 | team.trainer.detail | — | dialog | text: 'programme:instructor' | For all the differences between these roles, please refer to |
-| `user-roles-10.png` | content/guides/user-roles.md:93 | team.trainer.detail | — | dialog | text: 'programme:instructor' | videos and add them to classes |
+| `user-roles-05.png` | content/guides/user-roles.md:46 | team.trainer.detail | Working hours (via Add availability) | dialog | text: 'programme:instructor' | For all the differences between these roles, please refer to |
+| `user-roles-10.png` | content/guides/user-roles.md:93 | team.trainer.detail | Working hours (via Add availability) | dialog | text: 'programme:instructor' | videos and add them to classes |
 | `user-roles-11.png` | content/guides/user-roles.md:110 | team.trainer.detail | — | screen | text: 'programme:instructor' | The main task of the instructor is to fill in the attendance |
 | `user-roles-12.png` | content/guides/user-roles.md:137 | team.trainer.detail | — | screen | text: 'programme:instructor' | any additional tasks. His only job is to fill out the attend |
 | `user-roles-13.png` | content/guides/user-roles.md:151 | team.trainer.detail | — | screen | text: 'programme:instructor' | External instructor |
 | `user-roles-14.png` | content/guides/user-roles.md:158 | team.trainer.detail | — | screen | text: 'programme:instructor' | He can also view personal details if required by clicking on |
 | `mobile-instructor-home.png` | content/guides/zooza-101-instructors.md:119 | team.trainer.detail | — | screen | text: 'programme:instructor' | Instructor mobile home |
 | `reference/instructors-profile.png` | content/reference/instructors-list.md:59 | team.trainer.detail | — | screen | hint: team.trainer.detail | Instructor profile |
-| `instructor-rate-reward-03.png` | content/setup/instructor-rate-reward.md:32 | team.trainer.detail | — | dialog | text: 'programme:instructor' | Then click the Add Rate button at the top of the screen |
-| `instructor-rate-reward-04.png` | content/setup/instructor-rate-reward.md:34 | team.trainer.detail | — | dialog | text: 'programme:instructor' | Enter a title, the duration in minutes, and then click Add |
+| `instructor-rate-reward-03.png` | content/setup/instructor-rate-reward.md:32 | team.trainer.detail | Working hours (via Add availability) | dialog | text: 'programme:instructor' | Then click the Add Rate button at the top of the screen |
+| `instructor-rate-reward-04.png` | content/setup/instructor-rate-reward.md:34 | team.trainer.detail | Working hours (via Add availability) | dialog | text: 'programme:instructor' | Enter a title, the duration in minutes, and then click Add |
 | `instructor-rate-reward-06.png` | content/setup/instructor-rate-reward.md:44 | team.trainer.detail | — | screen | text: 'programme:instructor' | then click on the Profile tab |
 | `instructor-rate-reward-07.png` | content/setup/instructor-rate-reward.md:46 | team.trainer.detail | — | screen | text: 'programme:instructor' | At the bottom of the profile, click on the Pen icon next to  |
 | `instructor-rate-reward-08.png` | content/setup/instructor-rate-reward.md:56 | team.trainer.detail | — | screen | text: 'programme:instructor' | You enter the rate on the class as well as all other paramet |
-| `instructor-rate-reward-09.png` | content/setup/instructor-rate-reward.md:67 | team.trainer.detail | — | dialog | text: 'programme:instructor' | It you already have your class created, you still have the o |
+| `instructor-rate-reward-09.png` | content/setup/instructor-rate-reward.md:67 | team.trainer.detail | Working hours (via Add availability) | dialog | text: 'programme:instructor' | It you already have your class created, you still have the o |
 | `instructor-rate-reward-10.png` | content/setup/instructor-rate-reward.md:71 | team.trainer.detail | — | screen | text: 'programme:instructor' | You can decide if you want to apply the changes to all terms |
 | `instructor-rate-reward-13.png` | content/setup/instructor-rate-reward.md:82 | team.trainer.detail | — | screen | text: 'programme:instructor' | If a term has been cancelled and you still want to pay the i |
-| `auto-cancel-unpaid-registrations-01.png` | content/guides/auto-cancel-unpaid-registrations.md:65 | team.trainer.settings | — | screen | text: 'programme:settings' | Payment Reminder Settings with auto-cancel fields highlighte |
 | `cancellation-limit-settings-01.png` | content/guides/cancellation-limit-settings.md:23 | team.trainer.settings | — | screen | text: 'programme:settings' | Screenshot — cancellation limit settings |
 | `creating-a-class-10.png` | content/guides/creating-a-class.md:206 | team.trainer.settings | — | screen | text: 'programme:settings' | View settings toggle |
 | `course-settings-tile-01.png` | content/guides/programme-settings-tile.md:34 | team.trainer.settings | — | screen | text: 'programme:settings' | Programme description |
@@ -915,43 +921,36 @@
 | `reference/settings-hub.png` | content/reference/settings-hub.md:24 | team.trainer.settings | — | screen | text: 'programme:settings' | Settings hub |
 | `auto-enrollment-03.png` | content/setup/auto-enrollment.md:46 | team.trainer.settings | — | screen | text: 'programme:settings' | Open the settings of the selected programme |
 | `billing-and-invoicing-01.png` | content/setup/billing-and-invoicing.md:29 | team.trainer.settings | — | screen | text: 'programme:settings' | Settings page with Billing tile highlighted |
-| `collecting-reason-for-cancelling-02.png` | content/setup/collecting-reason-for-cancelling.md:50 | team.trainer.settings | — | screen | text: 'programme:settings' | In the Settings tab, click Booking Forms, under Profile |
+| `collecting-reason-for-cancelling-02.png` | content/setup/collecting-reason-for-cancelling.md:50 | team.trainer.settings | Profile | screen | text: 'programme:settings' | In the Settings tab, click Booking Forms, under Profile |
 | `trial-lessons-17.png` | content/setup/trial-sessions.md:222 | team.trainer.settings | — | screen | text: 'programme:settings' | Tip! You can enable trial sessions at the class level in the |
-| `client-import-01.png` | content/setup/xero-integration.md:61 | team.trainer.settings | — | screen | text: 'programme:settings' | VAT sync button at the bottom of billing settings |
 | `matko-full-result-example.png` | content/troubleshooting/matko-replacement-diagnostic.md:119 | team.trainer.settings | — | screen | text: 'programme:settings' | MATKO settings context panel showing programme configuration |
-| `lecturer-substitution-03.png` | content/guides/instructor-substitution.md:31 | team.trainers | — | screen | text: 'programme:instructors' | Select a instructor from the list to cover the session. If t |
-| `lecturer-substitution-06.png` | content/guides/instructor-substitution.md:43 | team.trainers | — | dialog | text: 'programme:instructors' | Click Create to send the request to the instructor's email |
-| `lecturer-substitution-07.png` | content/guides/instructor-substitution.md:45 | team.trainers | — | dialog | text: 'programme:instructors' | Click Create to send the request to the instructor's email |
-| `lecturer-substitution-08.png` | content/guides/instructor-substitution.md:49 | team.trainers | — | screen | text: 'programme:instructors' | The substituting instructor is required to click on View to  |
-| `two-lecturers-per-group-01.png` | content/guides/two-instructors-per-class.md:23 | team.trainers | — | screen | text: 'programme:instructors' | Screenshot |
-| `two-lecturers-per-group-02.png` | content/guides/two-instructors-per-class.md:27 | team.trainers | — | screen | text: 'programme:instructors' | Screenshot |
-| `two-lecturers-per-group-03.png` | content/guides/two-instructors-per-class.md:31 | team.trainers | — | screen | text: 'programme:instructors' | Screenshot |
-| `two-lecturers-per-group-04.png` | content/guides/two-instructors-per-class.md:41 | team.trainers | — | screen | text: 'programme:instructors' | Screenshot |
-| `zooza-101-instructors-01.png` | content/guides/zooza-101-instructors.md:58 | team.trainers | — | screen | text: 'programme:instructors' | Screenshot — zooza 101 instructors |
-| `zooza-101-instructors-02.png` | content/guides/zooza-101-instructors.md:62 | team.trainers | — | screen | text: 'programme:instructors' | Screenshot — zooza 101 instructors |
-| `zooza-101-instructors-03.png` | content/guides/zooza-101-instructors.md:74 | team.trainers | — | screen | text: 'programme:instructors' | Screenshot — zooza 101 instructors |
-| `zooza-101-instructors-04.png` | content/guides/zooza-101-instructors.md:75 | team.trainers | — | screen | text: 'programme:instructors' | Screenshot — zooza 101 instructors |
-| `zooza-101-instructors-05.png` | content/guides/zooza-101-instructors.md:80 | team.trainers | — | screen | text: 'programme:instructors' | Screenshot — zooza 101 instructors |
+| `lecturer-substitution-03.png` | content/guides/instructor-substitution.md:31 | team.trainers | Add new user (via Add Instructor) | dialog | text: 'programme:instructors' | Select a instructor from the list to cover the session. If t |
+| `lecturer-substitution-06.png` | content/guides/instructor-substitution.md:43 | team.trainers | Add new user (via Add Instructor) | dialog | text: 'programme:instructors' | Click Create to send the request to the instructor's email |
+| `lecturer-substitution-07.png` | content/guides/instructor-substitution.md:45 | team.trainers | Add new user (via Add Instructor) | dialog | text: 'programme:instructors' | Click Create to send the request to the instructor's email |
+| `lecturer-substitution-08.png` | content/guides/instructor-substitution.md:49 | team.trainers | Add new user (via Add Instructor) | dialog | text: 'programme:instructors' | The substituting instructor is required to click on View to  |
+| `two-lecturers-per-group-01.png` | content/guides/two-instructors-per-class.md:23 | team.trainers | Instructors' report for download (via Report) | dialog | text: 'programme:instructors' | Screenshot |
+| `two-lecturers-per-group-02.png` | content/guides/two-instructors-per-class.md:27 | team.trainers | Instructors' report for download (via Report) | dialog | text: 'programme:instructors' | Screenshot |
+| `two-lecturers-per-group-03.png` | content/guides/two-instructors-per-class.md:31 | team.trainers | Instructors' report for download (via Report) | dialog | text: 'programme:instructors' | Screenshot |
+| `two-lecturers-per-group-04.png` | content/guides/two-instructors-per-class.md:41 | team.trainers | Instructors' report for download (via Report) | dialog | text: 'programme:instructors' | Screenshot |
+| `zooza-101-instructors-01.png` | content/guides/zooza-101-instructors.md:58 | team.trainers | Instructors' report for download (via Report) | dialog | text: 'programme:instructors' | Screenshot — zooza 101 instructors |
+| `zooza-101-instructors-02.png` | content/guides/zooza-101-instructors.md:62 | team.trainers | Instructors' report for download (via Report) | dialog | text: 'programme:instructors' | Screenshot — zooza 101 instructors |
+| `zooza-101-instructors-03.png` | content/guides/zooza-101-instructors.md:74 | team.trainers | Instructors' report for download (via Report) | dialog | text: 'programme:instructors' | Screenshot — zooza 101 instructors |
+| `zooza-101-instructors-04.png` | content/guides/zooza-101-instructors.md:75 | team.trainers | Instructors' report for download (via Report) | dialog | text: 'programme:instructors' | Screenshot — zooza 101 instructors |
+| `zooza-101-instructors-05.png` | content/guides/zooza-101-instructors.md:80 | team.trainers | Instructors' report for download (via Report) | dialog | text: 'programme:instructors' | Screenshot — zooza 101 instructors |
 | `zooza-101-instructors-01.png` | content/guides/zooza-101-instructors.md:102 | team.trainers | — | screen | text: 'programme:instructors' | This section is typically used for internal reporting and pl |
-| `reference/cls-classes-friday-instructors.png` | content/reference/class-detail.md:103 | team.trainers | — | screen | text: 'programme:instructors' | Class Instructors |
-| `reference/instructors-list.png` | content/reference/instructors-list.md:23 | team.trainers | — | screen | hint: team.trainers | Instructors list |
+| `reference/cls-classes-friday-instructors.png` | content/reference/class-detail.md:103 | team.trainers | Instructors' report for download (via Report) | dialog | text: 'programme:instructors' | Class Instructors |
+| `reference/instructors-list.png` | content/reference/instructors-list.md:23 | team.trainers | Instructors' report for download (via Report) | dialog | hint: team.trainers | Instructors list |
 | `reference/instructors-working-hours.png` | content/reference/instructors-list.md:86 | team.trainers | — | screen | text: 'programme:instructors' | Working hours |
-| `instructor-rate-reward-02.png` | content/setup/instructor-rate-reward.md:30 | team.trainers | — | dialog | text: 'programme:instructors' | click on the Settings tab and select Instructors |
-| `instructor-rate-reward-05.png` | content/setup/instructor-rate-reward.md:42 | team.trainers | — | screen | text: 'programme:instructors' | click on the Instructors tab and select a instructor |
+| `instructor-rate-reward-02.png` | content/setup/instructor-rate-reward.md:30 | team.trainers | Instructors' report for download (via Report) | dialog | text: 'programme:instructors' | click on the Settings tab and select Instructors |
+| `instructor-rate-reward-05.png` | content/setup/instructor-rate-reward.md:42 | team.trainers | Add new user (via Add Instructor) | dialog | text: 'programme:instructors' | click on the Instructors tab and select a instructor |
 | `email-communication-faq-01.png` | content/faq/email-communication-faq.md:211 | — | — | unplaced |  | Screenshot — email communication faq |
 | `my-profile-appearance-theme.png` | content/faq/login-and-account-faq.md:168 | — | — | unplaced |  | The Appearance card on My profile, with Theme set to System  |
 | `ad-hoc-scheduled-payment-01.png` | content/guides/ad-hoc-scheduled-payment.md:31 | — | — | unplaced |  | Screenshot — ad hoc scheduled payment |
-| `ad-hoc-scheduled-payment-02.png` | content/guides/ad-hoc-scheduled-payment.md:64 | — | — | unplaced |  | Screenshot — ad hoc scheduled payment |
-| `ad-hoc-scheduled-payment-03.png` | content/guides/ad-hoc-scheduled-payment.md:68 | — | — | unplaced |  | Screenshot — ad hoc scheduled payment |
-| `ad-hoc-scheduled-payment-04.png` | content/guides/ad-hoc-scheduled-payment.md:76 | — | — | unplaced |  | Screenshot — ad hoc scheduled payment |
-| `ad-hoc-scheduled-payment-05.png` | content/guides/ad-hoc-scheduled-payment.md:84 | — | — | unplaced |  | Screenshot — ad hoc scheduled payment |
 | `ad-hoc-scheduled-payment-07.png` | content/guides/ad-hoc-scheduled-payment.md:112 | — | — | unplaced |  | Screenshot — ad hoc scheduled payment |
 | `ad-hoc-scheduled-payment-08.png` | content/guides/ad-hoc-scheduled-payment.md:113 | — | — | unplaced |  | Screenshot — ad hoc scheduled payment |
 | `allowing-multiple-registration-02.jpg` | content/guides/allowing-multiple-booking.md:30 | — | — | unplaced |  | Screenshot |
 | `archive-or-delete-programme-01.png` | content/guides/archive-or-delete-programme.md:30 | — | — | unplaced |  | Screenshot — archive or delete programme |
 | `archive-or-delete-programme-02.png` | content/guides/archive-or-delete-programme.md:31 | — | — | unplaced |  | Screenshot — archive or delete programme |
-| `automatic-payment-reminders-detailed-01.png` | content/guides/automatic-payment-reminders-detailed.md:109 | — | — | unplaced |  | Screenshot — automatic payment reminders detailed |
-| `automatic-payment-reminders-detailed-06.png` | content/guides/automatic-payment-reminders-detailed.md:159 | — | — | unplaced |  | Screenshot |
 | `blocks-creation-01.png` | content/guides/blocks-creation.md:32 | — | — | unplaced |  | Screenshot |
 | `blocks-creation-01.png` | content/guides/blocks-creation.md:44 | — | — | unplaced |  | Screenshot — blocks creation |
 | `blocks-creation-06.png` | content/guides/blocks-creation.md:72 | — | — | unplaced |  | Screenshot |

@@ -100,6 +100,16 @@ def by_leaf_title(by_leaf, screen_id):
 
 PROGRAMME_WORDS = re.compile(r"\b(programme|program|course)\b", re.I)
 AREA_HINTS = [   # (regex on heading+alt+filename+article, screen id) — coarse placement when no cue matches
+    # client zone first: "parent", "client profile", "Parent Zone", widget screenshots
+    (re.compile(r"\b(parent|client)[- ]?zone\b.*\b(payments?|pay now)\b|\bclient (profile|zone).{0,40}payments?\b|\bparent.{0,30}pay\b", re.I), "client.booking.payments"),
+    (re.compile(r"\b(parent|client)[- ]?(zone|profile|view).{0,60}\b(book|find|choose).{0,20}session\b|\bbook (an extra|a make-up|a) session\b|\bfind[_ ]event\b", re.I), "client.booking.find_event"),
+    (re.compile(r"\b(parent|client)[- ]?(zone|profile|view).{0,60}\battendance\b|\bpast sessions\b", re.I), "client.booking.attendance"),
+    (re.compile(r"\b(parent|client)[- ]?(zone|profile|view).{0,60}\b(notifications?|additional access|detail tab)\b", re.I), "client.booking.detail"),
+    (re.compile(r"\b(parent|client)[- ]?(zone|profile|view).{0,60}\b(orders?|entry pass|voucher|credit pass)\b|\bentry-pass-client-view\b", re.I), "client.orders"),
+    (re.compile(r"\breferral link\b|\brefer(ral)?s? (page|tab)\b", re.I), "client.referrals"),
+    (re.compile(r"\b(parent|client)[- ]?(zone|profile|view).{0,60}\btrial\b", re.I), "client.trial.overview"),
+    (re.compile(r"\b(parent|client)[- ]?(zone|profile|view).{0,60}\b(booking|enrolment|registration)\b", re.I), "client.booking.overview"),
+    (re.compile(r"\b(parent|client)[- ]?(zone|profile|view|dashboard)\b|\bmy profile\b.*\bparent\b|\bprofil\b", re.I), "client.dashboard"),
     (re.compile(r"\bpayment reconciliation\b|\bpayment[- ]pairing\b|\binbound queue\b", re.I), "payments.inbound.queue"),
     (re.compile(r"\bAI rules\b", re.I), "payments.inbound.rules"),
     (re.compile(r"\brefund requests?\b", re.I), "payments.refunds.requests"),
@@ -271,6 +281,8 @@ def main():
             seen.add(r["image"])
             shot = {"image": r["image"], "route": r["sub_route"] or r["route"],
                     "assert": r["card"] or by_leaf_title(by_leaf, r["screen"]), "status": "proposed"}
+            if r["screen"].startswith("client."):
+                shot["session"] = "client"; shot["base"] = "https://www.playfulmotion.co.uk/parent-zone"
             if r["via"] and not r["sub_route"]:
                 shot["click"] = r["via"]
             if r["card"]:

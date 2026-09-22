@@ -1,0 +1,30 @@
+{
+  "id": "client.payments",
+  "menu": "Client zone → Payments",
+  "route": "payments",
+  "url_template": "https://www.playfulmotion.co.uk/parent-zone#payments",
+  "roles": [
+    "client"
+  ],
+  "area": "client",
+  "captured": "2026-09-22",
+  "cards": [
+    {
+      "title": "(page)",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Back",
+        "Mighty Movers (3–5 years)",
+        "Pay Now",
+        "Baby Class",
+        "Dance like a Pro",
+        "Summer Swimming",
+        "Wiggle Wonders (0–12 months)",
+        "⋯ More"
+      ]
+    }
+  ],
+  "notes": []
+}

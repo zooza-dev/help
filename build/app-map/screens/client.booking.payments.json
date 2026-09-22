@@ -1,0 +1,85 @@
+{
+  "id": "client.booking.payments",
+  "menu": "Client zone → booking → Payments",
+  "route": "course_detail/517/payments",
+  "url_template": "https://www.playfulmotion.co.uk/parent-zone#course_detail/517/payments",
+  "roles": [
+    "client"
+  ],
+  "area": "client",
+  "captured": "2026-09-22",
+  "cards": [
+    {
+      "title": "(page)",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Go back"
+      ]
+    },
+    {
+      "title": "Pop-Up Motion Adventures",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Date of birth",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "Full name",
+          "type": "value",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Edit",
+        "Overview",
+        "Attendance",
+        "Detail",
+        "Payments"
+      ]
+    },
+    {
+      "title": "Payments",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Current amount to be paid",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "Status",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "Bank transfer",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "Payment reference",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "Total order value:",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "Paid so far",
+          "type": "value",
+          "help": ""
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "notes": []
+}

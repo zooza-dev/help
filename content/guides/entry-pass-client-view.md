@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/entry-pass-client-profile.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-13"
+last_converted: "2026-09-22"
 related_articles: ["creating-entry-passes", "pay-as-you-go-programme", "client-profile-101", "orders-and-products-faq"]
 ---
 
@@ -31,10 +31,10 @@ After purchasing an entry pass, the client sees its status directly on the home 
 - **Expiration date** — when the pass expires.
 - **Status** — active, expired, or fully used.
 
-![Screenshot — entry pass client view](../../assets/images/entry-pass-client-view-01.png)
+![Client zone dashboard with family members and payments requiring attention](../../assets/images/entry-pass-client-view-01.png)
 
 This gives clients a quick overview without having to navigate deeper into their profile.
-![Screenshot — entry pass client view](../../assets/images/entry-pass-client-view-02.png)
+![Client zone Orders list with gift card, sensory pack and credit pass orders](../../assets/images/entry-pass-client-view-02.png)
 ## How clients purchase an entry pass
 
 Clients can purchase entry passes in three ways, depending on how you configured the product availability.

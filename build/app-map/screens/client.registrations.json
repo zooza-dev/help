@@ -1,0 +1,160 @@
+{
+  "id": "client.registrations",
+  "menu": "Client zone → Registrations",
+  "route": "registrations",
+  "url_template": "https://www.playfulmotion.co.uk/parent-zone#registrations",
+  "roles": [
+    "client"
+  ],
+  "area": "client",
+  "captured": "2026-09-22",
+  "cards": [
+    {
+      "title": "(page)",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Back",
+        "Bounce & Balance (1–3 years)",
+        "Open",
+        "Dance like a Pro",
+        "Mighty Movers (3–5 years)",
+        "Wiggle Wonders (0–12 months)",
+        "Baby Class",
+        "Pop-Up Motion Adventures",
+        "Book session",
+        "Go to calendar",
+        "Summer Swimming",
+        "⋯ More"
+      ]
+    },
+    {
+      "title": "Open › Bounce & Balance (1–3 years): Thu 10am",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Date of birth",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "Full name",
+          "type": "value",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Edit",
+        "Overview",
+        "Attendance",
+        "Detail"
+      ]
+    },
+    {
+      "title": "Open › Make-up sessions",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "STATUS",
+          "type": "value",
+          "help": ""
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Open › Payments",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "STATUS",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "PAID SO FAR",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "CURRENT AMOUNT TO BE PAID",
+          "type": "value",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "More"
+      ]
+    },
+    {
+      "title": "Open › About the class",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "LOCATION",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "DATE/TIME",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "INSTRUCTOR",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "SCHEDULED SESSIONS",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "TOTAL SESSIONS",
+          "type": "value",
+          "help": ""
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Book session › (page)",
+      "intro": [],
+      "sections": [
+        "Class",
+        "Location / Instructor",
+        "Date and time",
+        "Availability",
+        "Action"
+      ],
+      "fields": [
+        {
+          "label": "Location",
+          "type": "input",
+          "help": ""
+        },
+        {
+          "label": "Class",
+          "type": "input",
+          "help": ""
+        },
+        {
+          "label": "Instructor",
+          "type": "input",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Go back",
+        "Book without a pass"
+      ]
+    }
+  ],
+  "notes": []
+}

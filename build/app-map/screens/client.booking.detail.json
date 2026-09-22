@@ -1,0 +1,120 @@
+{
+  "id": "client.booking.detail",
+  "menu": "Client zone → booking → Detail",
+  "route": "course_detail/517/detail",
+  "url_template": "https://www.playfulmotion.co.uk/parent-zone#course_detail/517/detail",
+  "roles": [
+    "client"
+  ],
+  "area": "client",
+  "captured": "2026-09-22",
+  "cards": [
+    {
+      "title": "(page)",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Go back"
+      ]
+    },
+    {
+      "title": "Pop-Up Motion Adventures",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Date of birth",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "Full name",
+          "type": "value",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Edit",
+        "Overview",
+        "Attendance",
+        "Detail",
+        "Payments"
+      ]
+    },
+    {
+      "title": "Detail",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Status",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "Date of enrolment",
+          "type": "value",
+          "help": ""
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Notifications",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Send reminders before sessions",
+          "type": "input",
+          "help": ""
+        },
+        {
+          "label": "Send a copy of the notification to this email as well:",
+          "type": "input",
+          "help": ""
+        },
+        {
+          "label": "Send notifications to email only",
+          "type": "input",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save"
+      ]
+    },
+    {
+      "title": "Send notifications about upcoming sessions",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Send notifications about upcoming sessions",
+          "type": "input",
+          "help": ""
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Additional access to enrolment",
+      "intro": [
+        "The user will be able to access the enrolment and see all the information you can see but will be unable to cancel your ownership of the enrolment. All communication regarding the enrolment will continue to be directed to you. The selected user can choose to receive or not to receive reminders of upcoming sessions."
+      ],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Enter your email",
+          "type": "input",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Save"
+      ]
+    }
+  ],
+  "notes": []
+}

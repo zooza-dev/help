@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-19"
+last_converted: "2026-09-22"
 related_articles: ["make-up-sessions-faq","admin-attendance-management","cancellation-log","custom-replacement-lessons"]
 ---
 

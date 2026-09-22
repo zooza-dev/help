@@ -144,6 +144,9 @@ def do_login(link):
 def capture(manifest_path, only, apply_it, status=None):
     from playwright.sync_api import sync_playwright
     base, shots = load_manifest(manifest_path)
+    global SESSION
+    if any(s.get("session") == "client" for s in shots):   # the parent zone has its own login and its own site
+        SESSION = os.path.join(ROOT, "build", "intake", "zooza-client-session.json")
     mask = load_mask()
     if only:
         shots = [s for s in shots if s["image"] == only]
@@ -170,13 +173,14 @@ def capture(manifest_path, only, apply_it, status=None):
                 if shot.get("tall") != getattr(pg, "_tall", False):
                     pg.set_viewport_size({"width": 1600, "height": 2600 if shot.get("tall") else 1000})
                     pg._tall = bool(shot.get("tall"))
-                pg.goto(f"{base}#{route.lstrip('#')}", timeout=60000)
+                pg.goto(f"{shot.get('base', base)}#{route.lstrip('#')}", timeout=60000)
                 pg.wait_for_timeout(shot.get("wait", 8000))
                 if shot.get("click"):
-                    btn = pg.locator(".app_page_layout a:visible, .app_page_layout button:visible, .app_page_layout summary:visible") \
+                    scope = ".zooza-host" if shot.get("session") == "client" else ".app_page_layout"
+                    btn = pg.locator(f"{scope} a:visible, {scope} button:visible, {scope} summary:visible") \
                             .filter(has_text=re.compile(rf"^\s*{re.escape(shot['click'])}\s*$")).first
                     if btn.count() == 0:   # accordions and tiles are plain elements with a click binding
-                        btn = pg.locator(".app_page_layout").get_by_text(shot["click"], exact=True).first
+                        btn = pg.locator(scope).get_by_text(shot["click"], exact=True).first
                     if btn.count() == 0:
                         results.append((name, "NO BUTTON", f"nothing to click named {shot['click']!r}"))
                         continue
@@ -192,7 +196,7 @@ def capture(manifest_path, only, apply_it, status=None):
                 # navigation is on every page, 404s included, so a page name alone
                 # proves nothing.
                 need = shot["assert"]
-                if need not in text:
+                if need.lower() not in text.lower():   # CSS text-transform uppercases labels in the client widget
                     results.append((name, "NOT FOUND", f"expected {need!r} on the page"))
                     continue
 
@@ -220,8 +224,16 @@ def capture(manifest_path, only, apply_it, status=None):
 
                 detail = f"masked {masked}"
                 target = None
+                if shot.get("session") == "client":   # the widget sits below the site's hero — scroll to it
+                    target = pg.locator(".zooza-host").first
+                    # short widgets (a booking tab) are shot whole; long ones (dashboard) as the viewport at the widget
+                    bb = target.bounding_box()
+                    shot.setdefault("card_only", bool(bb and bb["height"] < 1400))
                 if shot.get("card"):
-                    target = pg.locator(".card").filter(has=pg.locator(".card_header", has_text=shot["card"])).first
+                    if shot.get("session") == "client":
+                        target = pg.locator(".zooza-host h3, .zooza-host h2").filter(has_text=re.compile(re.escape(shot["card"]), re.I)).first.locator("xpath=..")
+                    else:
+                        target = pg.locator(".card").filter(has=pg.locator(".card_header", has_text=shot["card"])).first
                     if target.count() == 0:
                         target = None
                         detail += f" — CARD NOT FOUND {shot['card']!r}, shot the viewport"

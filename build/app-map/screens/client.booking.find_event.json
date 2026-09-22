@@ -1,0 +1,46 @@
+{
+  "id": "client.booking.find_event",
+  "menu": "Client zone → booking → Book session",
+  "route": "course_detail/517/find_event",
+  "url_template": "https://www.playfulmotion.co.uk/parent-zone#course_detail/517/find_event",
+  "roles": [
+    "client"
+  ],
+  "area": "client",
+  "captured": "2026-09-22",
+  "cards": [
+    {
+      "title": "(page)",
+      "intro": [],
+      "sections": [
+        "Class",
+        "Location / Instructor",
+        "Date and time",
+        "Availability",
+        "Action"
+      ],
+      "fields": [
+        {
+          "label": "Location",
+          "type": "input",
+          "help": ""
+        },
+        {
+          "label": "Class",
+          "type": "input",
+          "help": ""
+        },
+        {
+          "label": "Instructor",
+          "type": "input",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Go back",
+        "Book without a pass"
+      ]
+    }
+  ],
+  "notes": []
+}

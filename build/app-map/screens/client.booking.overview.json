@@ -1,0 +1,183 @@
+{
+  "id": "client.booking.overview",
+  "menu": "Client zone → booking → Overview",
+  "route": "course_detail/517",
+  "url_template": "https://www.playfulmotion.co.uk/parent-zone#course_detail/517",
+  "roles": [
+    "client"
+  ],
+  "area": "client",
+  "captured": "2026-09-22",
+  "cards": [
+    {
+      "title": "(page)",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Go back"
+      ]
+    },
+    {
+      "title": "Pop-Up Motion Adventures",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Date of birth",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "Full name",
+          "type": "value",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Edit",
+        "Overview",
+        "Attendance",
+        "Detail",
+        "Payments"
+      ]
+    },
+    {
+      "title": "More session dates",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "DATE/TIME",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "LOCATION",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "INSTRUCTOR",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "AVAILABILITY",
+          "type": "value",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Book without a pass",
+        "More"
+      ]
+    },
+    {
+      "title": "Products",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "CREDIT PASS 10 (£190.00)",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "CREDIT PASS 5 (£95.00)",
+          "type": "value",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Purchase"
+      ]
+    },
+    {
+      "title": "Payments",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "STATUS",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "PAID SO FAR",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "CURRENT AMOUNT TO BE PAID",
+          "type": "value",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "More"
+      ]
+    },
+    {
+      "title": "About the class",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "LOCATION",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "INSTRUCTOR",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "SCHEDULED SESSIONS",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "TOTAL SESSIONS",
+          "type": "value",
+          "help": ""
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "title": "More › (page)",
+      "intro": [],
+      "sections": [
+        "Class",
+        "Location / Instructor",
+        "Date and time",
+        "Availability",
+        "Action"
+      ],
+      "fields": [
+        {
+          "label": "Location",
+          "type": "input",
+          "help": ""
+        },
+        {
+          "label": "Class",
+          "type": "input",
+          "help": ""
+        },
+        {
+          "label": "Instructor",
+          "type": "input",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "Go back",
+        "Book without a pass"
+      ]
+    }
+  ],
+  "notes": []
+}

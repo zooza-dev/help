@@ -1,0 +1,68 @@
+{
+  "id": "client.orders",
+  "menu": "Client zone → Orders",
+  "route": "orders",
+  "url_template": "https://www.playfulmotion.co.uk/parent-zone#orders",
+  "roles": [
+    "client"
+  ],
+  "area": "client",
+  "captured": "2026-09-22",
+  "cards": [
+    {
+      "title": "(page)",
+      "intro": [],
+      "sections": [],
+      "fields": [],
+      "buttons": [
+        "Back",
+        "Gift Card",
+        "Open",
+        "Wiggle at Home: Sensory Sound Pack",
+        "Credit Pass 10",
+        "⋯ More"
+      ]
+    },
+    {
+      "title": "Open › Summary",
+      "intro": [],
+      "sections": [],
+      "fields": [
+        {
+          "label": "Product",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "Order number",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "Date of purchase",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "Amount",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "Payment status",
+          "type": "value",
+          "help": ""
+        },
+        {
+          "label": "Linked enrolment",
+          "type": "value",
+          "help": ""
+        }
+      ],
+      "buttons": [
+        "887"
+      ]
+    }
+  ],
+  "notes": []
+}

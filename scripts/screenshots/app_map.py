@@ -45,6 +45,8 @@ MODULECONFIG = os.path.join(APP, "lib", "moduleconfig", "moduleconfig.js")
 STRINGS = os.path.join(APP, "lib", "str_en3.js")
 
 BASE = "https://uk.zooza.app/"
+CLIENT_BASE = "https://www.playfulmotion.co.uk/parent-zone"
+CLIENT_SESSION = os.path.join(ROOT, "build", "intake", "zooza-client-session.json")
 BLOCK = re.compile(r"(intercom|hotjar|googletagmanager|google-analytics|facebook\.net)")
 
 # Things that mean the screen is not fit to publish. Each is (label, regex).
@@ -249,6 +251,28 @@ def programme_screens(strings):
         o = screen(sid, menu, route, title, prefixes)
         o["area"] = area
         more.append(o)
+
+    # The client zone (parent-facing widget) lives on the customer's own site, not on zooza.app.
+    # Demo: Playfulmotion's parent zone, family Tanase; booking 666 is a trial, 517 a paid enrolment.
+    CZ, base = "Client zone", CLIENT_BASE
+    client = [
+        ("client.dashboard", CZ, "dashboard", "Dashboard"),
+        ("client.registrations", f"{CZ} → Registrations", "registrations", "Registrations"),
+        ("client.payments", f"{CZ} → Payments", "payments", "Payments"),
+        ("client.orders", f"{CZ} → Orders", "orders", "Orders"),
+        ("client.referrals", f"{CZ} → Referrals", "referrals", "Referrals"),
+        ("client.booking.overview", f"{CZ} → booking → Overview", "course_detail/517", "Booking overview"),
+        ("client.booking.attendance", f"{CZ} → booking → Attendance", "course_detail/517/events", "Attendance"),
+        ("client.booking.detail", f"{CZ} → booking → Detail", "course_detail/517/detail", "Detail"),
+        ("client.booking.payments", f"{CZ} → booking → Payments", "course_detail/517/payments", "Payments"),
+        ("client.booking.find_event", f"{CZ} → booking → Book session", "course_detail/517/find_event", "Book a session"),
+        ("client.trial.overview", f"{CZ} → trial booking → Overview", "course_detail/666", "Trial booking overview"),
+        ("client.order", f"{CZ} → Orders → order", "order/21", "Order"),
+    ]
+    for sid, menu, route, title in client:
+        more.append({"id": sid, "menu": menu, "title": title, "route": route,
+                     "url_template": base + "#" + route, "roles": ["client"],
+                     "string_prefixes": [], "strings": 0, "area": "client", "base": base, "root": ".zooza-host"})
     return out + more
 
 
@@ -292,17 +316,35 @@ def build():
     return 0
 
 
+def goto(pg, doc, s):
+    """Open a screen: admin screens hang off doc['base'] + '#route', client-zone screens carry their own base."""
+    base = s.get("base") or doc["base"]
+    url = f"{base}#{s['route']}" if s.get("base") else f"{base}#{s['route']}"
+    pg.goto(url, timeout=60000)
+    pg.wait_for_timeout(s.get("wait", 8000))
+
+
+def session_for(screens):
+    """One browser context per session file; client-zone screens use the parent session."""
+    if all(s.get("area") == "client" for s in screens):
+        return CLIENT_SESSION
+    if any(s.get("area") == "client" for s in screens):
+        sys.exit("mix of admin and client screens — run --area client separately")
+    return SESSION
+
+
 def explore(only, area=None):
     import yaml
     from playwright.sync_api import sync_playwright
-    if not os.path.exists(SESSION):
-        sys.exit(f"no session at {SESSION} — run capture.py --login <magic-link> first")
     doc = yaml.safe_load(open(os.path.join(OUT, "app-map.yml"), encoding="utf-8"))
     screens = doc["screens"]
     if only:
         screens = [s for s in screens if s["id"] == only or s["route"] == only]
     if area:
         screens = [s for s in screens if s.get("area") == area]
+    sess = session_for(screens)
+    if not os.path.exists(sess):
+        sys.exit(f"no session at {sess} — run capture.py --login <magic-link> first")
     shots, texts = os.path.join(OUT, "shots"), os.path.join(OUT, "text")
     os.makedirs(shots, exist_ok=True)
     os.makedirs(texts, exist_ok=True)
@@ -311,16 +353,15 @@ def explore(only, area=None):
     with sync_playwright() as p:
         b = p.chromium.launch()
         ctx = b.new_context(viewport={"width": 1600, "height": 1000}, device_scale_factor=2,
-                            color_scheme="light", storage_state=SESSION)
+                            color_scheme="light", storage_state=sess)
         ctx.route(BLOCK, lambda r: r.abort())
         pg = ctx.new_page()
         for s in screens:
             name = s["id"]
             row = {"id": name, "route": s["route"], "status": "ok", "findings": []}
             try:
-                pg.goto(f"{doc['base']}#{s['route']}", timeout=60000)
-                pg.wait_for_timeout(s.get("wait", 8000))
-                text = pg.inner_text("body")
+                goto(pg, doc, s)
+                text = pg.inner_text(s.get("root", "body"))
                 with open(os.path.join(texts, name + ".txt"), "w", encoding="utf-8") as fh:
                     fh.write(text)
                 if "Page not found" in text:
@@ -431,7 +472,7 @@ def scrub(text):
 
 
 
-AREA_PRODUCT = {"settings": "Settings", "programmes": "Programmes", "classes": "Classes", "sessions": "Classes",
+AREA_PRODUCT = {"client": "Clients", "settings": "Settings", "programmes": "Programmes", "classes": "Classes", "sessions": "Classes",
                 "files": "Communication", "bookings": "Bookings", "clients": "Clients", "orders": "Orders", "contacts": "Clients",
                 "payments": "Payments", "products": "Orders", "communication": "Communication", "calendar": "Calendar",
                 "reports": "Settings", "team": "Settings"}
@@ -498,10 +539,66 @@ def write_jsonl():
     return 0
 
 
+# The parent-zone widget has no form components: sections are <h3>, fields are "<strong>Label:</strong> value",
+# actions are buttons/links. Read it as (section → labels, help paragraphs, buttons).
+CLIENT_FIELDS_JS = r"""
+() => {
+  const clean = (t) => (t || '').replace(/\s+/g, ' ').trim();
+  const root = document.querySelector('.zooza-host') || document.body;
+  const cards = [];
+  let cur = { title: '(page)', intro: [], sections: [], fields: [], buttons: [] };
+  const push = () => { if (cur.fields.length || cur.intro.length || cur.buttons.length) cards.push(cur); };
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_ELEMENT);
+  let e;
+  while ((e = walker.nextNode())) {
+    if (e.offsetParent === null && e.tagName !== 'OPTION') continue;
+    const tag = e.tagName;
+    if (tag === 'H2' || tag === 'H3') { push(); cur = { title: clean(e.innerText), intro: [], sections: [], fields: [], buttons: [] }; continue; }
+    if (tag === 'STRONG' && /:\s*$/.test(clean(e.innerText)) && !e.closest('button,a')) {
+      const label = clean(e.innerText).replace(/:$/, '');
+      if (label && !cur.fields.some(f => f.label === label)) cur.fields.push({ label, type: 'value', help: '' });
+      continue;
+    }
+    if (tag === 'LABEL') { const l = clean(e.innerText); if (l && !cur.fields.some(f => f.label === l)) cur.fields.push({ label: l, type: e.querySelector('select') ? 'select' : 'input', help: '' }); continue; }
+    if (tag === 'TH') { const l = clean(e.innerText); if (l && !cur.sections.includes(l)) cur.sections.push(l); continue; }
+    if ((tag === 'BUTTON' || (tag === 'A' && e.getAttribute('href'))) && clean(e.innerText).length < 40) {
+      const l = clean(e.innerText); if (l && !cur.buttons.includes(l)) cur.buttons.push(l); continue;
+    }
+    if (tag === 'P' && e.children.length < 2) { const t = clean(e.innerText); if (t.length > 25 && t.length < 500 && !cur.intro.includes(t)) cur.intro.push(t); }
+  }
+  push();
+  return { cards, notes: [] };
+}
+"""
+CLIENT_SAFE = re.compile(r"^(edit|details|open|more session dates|book session|change|choose|select|view all|filter|copy link|\u22ef more|more)$", re.I)
+
+
+def client_clicks(pg, doc, s, before):
+    """Click the widget's own safe actions (Edit, Change, Book session…) and read what opens. Never Pay / Enrol / Cancel."""
+    known = {(c["title"], tuple(f["label"] for f in c["fields"])) for c in before}
+    labels = [l for c in before for l in c["buttons"] if CLIENT_SAFE.match(l)]
+    out = []
+    for label in dict.fromkeys(labels):
+        try:
+            goto(pg, doc, s)
+            el = pg.locator(".zooza-host button:visible, .zooza-host a:visible").filter(has_text=re.compile(rf"^\s*{re.escape(label)}\s*$")).first
+            if el.count() == 0:
+                continue
+            el.click(timeout=5000); pg.wait_for_timeout(2500)
+            for c in pg.evaluate(CLIENT_FIELDS_JS)["cards"]:
+                key = (c["title"], tuple(f["label"] for f in c["fields"]))
+                if key in known or not c["fields"]:
+                    continue
+                known.add(key); c["title"] = f"{label} › {c['title']}"; out.append(c)
+        except Exception:  # noqa: BLE001
+            continue
+    return out
+
+
 def card_text(screen, card):
     """One card as the assistant will read it."""
     url = screen["url_template"]
-    if card.get("route"):   # a sub-screen reached by clicking — link straight to it
+    if card.get("route") and screen.get("area") != "client":   # a sub-screen reached by clicking — link straight to it
         url = "https://{region}.zooza.app/#" + card["route"]
     lines = [f"{screen['menu']} › {sanitise_title(card['title'])}", f"URL: {url}"]
     for t in card.get("intro", []):
@@ -610,14 +707,15 @@ def open_dialog(pg, before):
 def fields(only, deep=False, area=None):
     import yaml
     from playwright.sync_api import sync_playwright
-    if not os.path.exists(SESSION):
-        sys.exit(f"no session at {SESSION} — run capture.py --login <magic-link> first")
     doc = yaml.safe_load(open(os.path.join(OUT, "app-map.yml"), encoding="utf-8"))
     screens = doc["screens"]
     if only:
         screens = [s for s in screens if s["id"] == only or s["route"] == only]
     if area:
         screens = [s for s in screens if s.get("area") == area]
+    sess = session_for(screens)
+    if not os.path.exists(sess):
+        sys.exit(f"no session at {sess} — run capture.py --login <magic-link> first")
     outdir = os.path.join(OUT, "screens")
     os.makedirs(outdir, exist_ok=True)
     export_dir = os.path.join(ROOT, "build", "exports", "agent")
@@ -626,15 +724,25 @@ def fields(only, deep=False, area=None):
     records, summary = [], []
     with sync_playwright() as p:
         b = p.chromium.launch()
-        ctx = b.new_context(viewport={"width": 1600, "height": 1000}, storage_state=SESSION)
+        ctx = b.new_context(viewport={"width": 1600, "height": 1000}, storage_state=sess)
         ctx.route(BLOCK, lambda r: r.abort())
         pg = ctx.new_page()
         for s in screens:
             try:
-                pg.goto(f"{doc['base']}#{s['route']}", timeout=60000)
-                pg.wait_for_timeout(s.get("wait", 8000))
+                goto(pg, doc, s)
                 if "Page not found" in pg.inner_text("body"):
                     summary.append((s["id"], "BAD ROUTE", 0, 0)); continue
+                if s.get("area") == "client":
+                    data = pg.evaluate(CLIENT_FIELDS_JS)
+                    data["cards"] += client_clicks(pg, doc, s, data["cards"]) if deep else []
+                    data = {"id": s["id"], "menu": s["menu"], "route": s["route"], "url_template": s["url_template"],
+                            "roles": s["roles"], "area": "client", "captured": __import__("datetime").date.today().isoformat(), **data}
+                    with open(os.path.join(outdir, s["id"] + ".json"), "w", encoding="utf-8") as fh:
+                        json.dump(data, fh, indent=2, ensure_ascii=False)
+                    summary.append((s["id"], "ok", len(data["cards"]), sum(len(c["fields"]) for c in data["cards"])))
+                    for i, card in enumerate(data["cards"]):
+                        records.append(record_for(s, card, i))
+                    continue
                 data = pg.evaluate(FIELDS_JS)
                 # List screens keep their form in an Add dialog. Open it, read again, keep what is new.
                 data["cards"] += open_dialog(pg, data["cards"])

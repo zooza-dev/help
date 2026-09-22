@@ -1431,3 +1431,147 @@ screens:
   - mcp__
   strings: 1
   area: team
+- id: client.dashboard
+  menu: Client zone
+  title: Dashboard
+  route: dashboard
+  url_template: https://www.playfulmotion.co.uk/parent-zone#dashboard
+  roles:
+  - client
+  string_prefixes: []
+  strings: 0
+  area: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  root: .zooza-host
+- id: client.registrations
+  menu: Client zone → Registrations
+  title: Registrations
+  route: registrations
+  url_template: https://www.playfulmotion.co.uk/parent-zone#registrations
+  roles:
+  - client
+  string_prefixes: []
+  strings: 0
+  area: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  root: .zooza-host
+- id: client.payments
+  menu: Client zone → Payments
+  title: Payments
+  route: payments
+  url_template: https://www.playfulmotion.co.uk/parent-zone#payments
+  roles:
+  - client
+  string_prefixes: []
+  strings: 0
+  area: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  root: .zooza-host
+- id: client.orders
+  menu: Client zone → Orders
+  title: Orders
+  route: orders
+  url_template: https://www.playfulmotion.co.uk/parent-zone#orders
+  roles:
+  - client
+  string_prefixes: []
+  strings: 0
+  area: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  root: .zooza-host
+- id: client.referrals
+  menu: Client zone → Referrals
+  title: Referrals
+  route: referrals
+  url_template: https://www.playfulmotion.co.uk/parent-zone#referrals
+  roles:
+  - client
+  string_prefixes: []
+  strings: 0
+  area: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  root: .zooza-host
+- id: client.booking.overview
+  menu: Client zone → booking → Overview
+  title: Booking overview
+  route: course_detail/517
+  url_template: https://www.playfulmotion.co.uk/parent-zone#course_detail/517
+  roles:
+  - client
+  string_prefixes: []
+  strings: 0
+  area: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  root: .zooza-host
+- id: client.booking.attendance
+  menu: Client zone → booking → Attendance
+  title: Attendance
+  route: course_detail/517/events
+  url_template: https://www.playfulmotion.co.uk/parent-zone#course_detail/517/events
+  roles:
+  - client
+  string_prefixes: []
+  strings: 0
+  area: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  root: .zooza-host
+- id: client.booking.detail
+  menu: Client zone → booking → Detail
+  title: Detail
+  route: course_detail/517/detail
+  url_template: https://www.playfulmotion.co.uk/parent-zone#course_detail/517/detail
+  roles:
+  - client
+  string_prefixes: []
+  strings: 0
+  area: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  root: .zooza-host
+- id: client.booking.payments
+  menu: Client zone → booking → Payments
+  title: Payments
+  route: course_detail/517/payments
+  url_template: https://www.playfulmotion.co.uk/parent-zone#course_detail/517/payments
+  roles:
+  - client
+  string_prefixes: []
+  strings: 0
+  area: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  root: .zooza-host
+- id: client.booking.find_event
+  menu: Client zone → booking → Book session
+  title: Book a session
+  route: course_detail/517/find_event
+  url_template: https://www.playfulmotion.co.uk/parent-zone#course_detail/517/find_event
+  roles:
+  - client
+  string_prefixes: []
+  strings: 0
+  area: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  root: .zooza-host
+- id: client.trial.overview
+  menu: Client zone → trial booking → Overview
+  title: Trial booking overview
+  route: course_detail/666
+  url_template: https://www.playfulmotion.co.uk/parent-zone#course_detail/666
+  roles:
+  - client
+  string_prefixes: []
+  strings: 0
+  area: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  root: .zooza-host
+- id: client.order
+  menu: Client zone → Orders → order
+  title: Order
+  route: order/21
+  url_template: https://www.playfulmotion.co.uk/parent-zone#order/21
+  roles:
+  - client
+  string_prefixes: []
+  strings: 0
+  area: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  root: .zooza-host

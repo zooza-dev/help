@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0023_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-09-22"
 related_articles: ["client-profile-faq", "client-management-faq", "documents"]
 ---
 
@@ -46,7 +46,7 @@ Once logged in, the client sees their home page with:
 - **Active and past bookings** — all bookings in one place.
 - **Quick actions** — pay, book make-ups, view sessions.
 
-![Screenshot — client profile 101](../../assets/images/client-profile-101-03.png)
+![Client zone dashboard: family members, payments requiring attention, actions and benefits](../../assets/images/client-profile-101-03.png)
 
 ### Between terms, the home page says so
 
