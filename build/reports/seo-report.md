@@ -1,14 +1,14 @@
 # SEO & AI Readiness Report
 
-**Generated:** 2026-09-19
+**Generated:** 2026-09-25
 
 ## Summary
 
-- **Total docs checked:** 272
+- **Total docs checked:** 273
 - **Docs with errors:** 0
 - **Docs with warnings only:** 56
 - **Total errors:** 0
-- **Total warnings:** 169
+- **Total warnings:** 149
 - **Overall:** PASS
 
 ## Checks performed
@@ -72,7 +72,6 @@
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 
 ### `content/guides/bulk-email-send-tracking.md`
 - WARN: description missing from frontmatter (auto-extracted: `When you send an email to a large group of clients, Zooza processes it as a mess…`)
@@ -96,24 +95,12 @@
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 
 ### `content/guides/daily-calendar-swimlanes.md`
 - WARN: description too long (200 chars, max 160)
 
 ### `content/guides/documents.md`
 - WARN: title too short (9 chars, min 10): `Documents`
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
@@ -165,13 +152,6 @@
 
 ### `content/guides/payment-templates-creation.md`
 - WARN: auto-extracted description too short (28 chars, min 50)
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
-- WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)
 - WARN: alt text too generic: `Screenshot` (screenshot replacement pending)

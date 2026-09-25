@@ -7,7 +7,7 @@ product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
 tags: ["payments"]
-related_articles: ["payment-pairing", "stripe-payments-faq", "gocardless-faq", "payment-tile-on-booking", "invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "e-invoicing-mandates"]
+related_articles: ["payment-pairing", "stripe-payments-faq", "gocardless-faq", "payment-tile-on-booking", "invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "e-invoicing-mandates", "e-invoicing-faq"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
@@ -403,7 +403,7 @@ Not in the legal sense used by the new government mandates. Zooza generates **PD
 
 If you do need structured e-invoices, they have to be issued by an **invoicing service that supports e-invoicing**, connected to Zooza as your invoice engine. Tell us which service you use — if it is not on our list yet, we can look at adding it as an integration.
 
-See [Government e-invoicing mandates and Zooza](../setup/e-invoicing-mandates.md) for who the mandates actually cover.
+See [Government e-invoicing mandates and Zooza](../setup/e-invoicing-mandates.md) for who the mandates actually cover. Short answers: [E-invoicing FAQ](e-invoicing-faq.md).
 
 ## Slovakia's 2027 e-invoicing mandate — do I need to do anything?
 

@@ -1,0 +1,104 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "E-invoicing FAQ",
+  "url": "https://help.zooza.online/payments/e-invoicing-faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does e-invoicing affect me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only if you are a VAT payer and you invoice another Slovak company, school, kindergarten, municipality or organisation. Invoices to parents and individuals do not change. Customers abroad are affected only from 1 July 2030."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I am not a VAT payer. What do I have to do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You do not have to issue e-invoices; your PDF invoices remain valid tax documents. You must, however, be able to receive e-invoices from 1 January 2027, which means registering with a digital postman. Low-cost web apps exist where you just download incoming invoices."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I only invoice parents. Do I need to change anything?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Invoices to consumers are outside the law, whether you pay VAT or not. As a business you still need to be able to receive e-invoices from your own suppliers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Zooza issue e-invoices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Zooza generates PDF invoices, through its built-in engine or through the accounting system you have connected. If the mandate applies to you, those invoices have to be issued by an invoicing service with a digital postman, connected to Zooza as your invoice engine. Tell us which service you use so we can look at connecting it. See Government e-invoicing mandates and Zooza."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a digital postman and how do I choose one?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A certified provider that delivers e-invoices over the Peppol network and reports invoice data to the Financial Administration. The official list is at vpds.financnasprava.sk. Many invoicing systems already include one; check with yours. Look for an ISO 27001 certificate (mandatory from 1 July 2027) and prefer the provider your invoicing system already uses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is ISO 27001 and why does it matter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An international standard for information security management. A certificate means an independent auditor has verified the provider's data-protection processes and re-checks them every year. From 1 July 2027 every digital postman must hold it; one without it may lose the right to operate, and you would have to change provider."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my customer need a DIČ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "E-invoices are delivered to an address built from the recipient's DIČ (tax ID). Without it the invoice cannot be delivered. If you invoice businesses, record their DIČ in their billing details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my customer has no digital postman?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The invoice is not delivered, but your obligation is met: you handed it to your provider and the data reached the Financial Administration. Ask the customer to register with a digital postman. With their agreement you may send them the same invoice by e-mail. Do not resend it through the provider."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do I see whether an invoice was delivered?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In the invoicing service or digital postman that sent it. Zooza does not track e-invoice delivery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do corrections and credit notes work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In your invoicing system, as today. The Financial Administration recommends a credit note plus a new invoice rather than editing the original. Credit notes follow the same e-invoicing rules and the same 15-day deadline."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I have to keep a PDF of an e-invoice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For e-invoices the structured XML file is the invoice and must be archived for 10 years; a PDF is only a visual copy. Your invoicing system or digital postman archives it. For invoices outside the mandate (consumers, non-VAT payers, exempt supplies) the PDF remains the document."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a grace period in 2027?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A draft amendment from May 2026 proposes no penalties from 1 January to 31 March 2027. It had not been adopted as of September 2026, and the obligations would apply regardless. Check the Financial Administration's e-faktúra page for the current state."
+      }
+    }
+  ]
+}

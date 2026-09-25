@@ -6,13 +6,13 @@ type: "setup"
 product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
-tags: ["invoicing", "invoices", "billing", "vat", "compliance", "e-invoicing", "peppol", "slovakia", "czech-republic", "hungary"]
+tags: ["invoicing", "invoices", "billing", "vat", "compliance", "e-invoicing", "peppol", "digital-postman", "iso-27001", "slovakia", "czech-republic", "hungary"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-07-27"
-related_articles: ["invoicing-overview", "billing-and-invoicing", "vat-management", "payments-and-billing-faq"]
+last_converted: "2026-09-25"
+related_articles: ["invoicing-overview", "billing-and-invoicing", "vat-management", "payments-and-billing-faq", "e-invoicing-faq"]
 ---
 
 # Government e-invoicing mandates and Zooza
@@ -23,7 +23,7 @@ Several countries are introducing mandatory **structured e-invoicing** — most 
 
 > **This is general information, not tax or legal advice.** Rules and dates change. Confirm your own obligations with your accountant or tax advisor.
 >
-> Last reviewed: July 2026.
+> Last reviewed: September 2026, against the Slovak Financial Administration's guidance of 11 September 2026.
 
 ---
 
@@ -64,12 +64,63 @@ We are following the legislation in the countries we operate in. If this changes
 
 | Country | Who must issue structured e-invoices | For which transactions | From when |
 |---|---|---|---|
-| **Slovakia** | VAT-registered businesses (sole traders and companies alike) | **B2B and B2G only — B2C is excluded** | 1 Jan 2027 (cross-border 1 Jul 2030) |
+| **Slovakia** | VAT-registered businesses (sole traders and companies alike) | **B2B and B2G only — B2C is excluded.** Also excluded: simplified invoices up to EUR 100, cash-register (eKasa) receipts up to EUR 400, and VAT-exempt supplies | 1 Jan 2027 (cross-border 1 Jul 2030) |
 | **Czech Republic** | No domestic obligation yet; B2G runs through the NEN platform | B2B and B2C remain voluntary | Domestic B2B 1 Jan 2035, cross-border 1 Jul 2030 |
 | **Hungary** | VAT-registered businesses — **data reporting only** (RTIR), no mandatory invoice format | B2B, B2C, intra-EU, export | Reporting in force since 2018/2021 |
 | **EU (ViDA)** | All businesses issuing cross-border intra-EU B2B invoices | Cross-border intra-EU B2B | 1 Jul 2030 |
 
-One extra Slovak rule worth knowing: from 2027 every business — including those not registered for VAT — must be able to **receive** an e-invoice, even if it never has to issue one.
+One extra Slovak rule worth knowing: from 2027 every business — including those not registered for VAT — must be able to **receive** an e-invoice, even if it never has to issue one. See [Every Slovak business must be able to receive e-invoices](#every-slovak-business-must-be-able-to-receive-e-invoices) below.
+
+---
+
+## How Slovak e-invoicing works in practice
+
+The rules below come from the Slovak Financial Administration's guidance. They matter if the mandate applies to you, and the first one applies to every Slovak business.
+
+### Every Slovak business must be able to receive e-invoices
+
+From 1 January 2027, every legal entity and every self-employed person in Slovakia — **whether or not they are registered for VAT** — must be able to receive e-invoices. Consumers are not affected. In practice this means registering with a certified delivery provider, known as a **digital postman** (*digitálny poštár*). The official list is published by the Financial Administration at [vpds.financnasprava.sk](https://vpds.financnasprava.sk/). Many invoicing systems already include a digital postman; check with yours. Low-cost web apps exist where you simply download incoming invoices.
+
+### What a digital postman does
+
+A digital postman is a provider accredited by the Financial Administration that delivers e-invoices over the Peppol network and reports the invoice data to the tax authority on the sender's and the recipient's behalf. Your invoicing system hands the invoice to your postman; the postman delivers it and reports it. You do not report anything yourself.
+
+### Choosing a provider: ISO/IEC 27001 from 1 July 2027
+
+From **1 July 2027**, every digital postman must hold an **ISO/IEC 27001** certificate. This is an international standard for information security management: an independent auditor verifies, and re-verifies every year, that the provider has proper processes for access control, incident handling, backups and business continuity. It is the only independent evidence that your invoice data is safe with them. When choosing a provider:
+
+- Prefer one that already holds ISO/IEC 27001 or has published a certification plan.
+- Check that the certificate belongs to the same company you sign the contract with.
+- Prefer the provider your invoicing system already works with.
+
+A provider without the certificate may lose the right to operate after 1 July 2027, and you would have to migrate.
+
+### The recipient's tax ID (DIČ) is the delivery address
+
+E-invoices are delivered to an address built from the recipient's **DIČ** (tax identification number), not their IČO or VAT number. Without a DIČ an e-invoice cannot be delivered. If you invoice businesses, make sure their DIČ is recorded in their billing details.
+
+### If the recipient cannot receive
+
+If the recipient has no digital postman, the invoice is not delivered and your provider reports an error. Your legal obligation is still met, because you handed the invoice to your provider and the data reached the Financial Administration. Do not resend the invoice through the provider. Ask the recipient to register with a digital postman, and with their agreement you may send them the same invoice by e-mail.
+
+### What counts as the invoice
+
+For transactions under the mandate, the structured XML file is the invoice and must be archived for 10 years. A PDF is only a visual copy; it may be attached, but it is not the tax document. For everything outside the mandate — consumers, non-VAT payers, exempt supplies — a PDF remains a valid invoice.
+
+### Corrections and credit notes
+
+Credit notes and corrective invoices follow the same rules and the same 15-day deadline. The Financial Administration recommends issuing a credit note and a new invoice rather than editing the original. There is no "reject" message in the network; disputes are settled between the parties with a credit note.
+
+### Timeline
+
+| Date | What happens |
+|---|---|
+| 2026 | Voluntary period. E-invoices can be sent when both parties have a digital postman. |
+| 1 January 2027 | Mandatory e-invoicing for Slovak VAT payers invoicing Slovak businesses and public bodies. Every Slovak business must be able to receive. |
+| 1 July 2027 | Every digital postman must hold ISO/IEC 27001. |
+| 1 July 2030 | Cross-border invoices join the regime (EU ViDA). |
+
+A draft amendment from May 2026 proposes a penalty-free period from 1 January to 31 March 2027. It had not been adopted as of September 2026, and the obligations would apply regardless.
 
 ---
 
@@ -116,4 +167,5 @@ Reach us through the in-app chat or your account manager. Requests like these ar
 - [Invoicing in Zooza — Overview](./invoicing-overview.md) — invoice engines, what Zooza generates, what it does not
 - [Billing and invoicing](./billing-and-invoicing.md) — automatic and manual invoice generation, numbering
 - [VAT management](../guides/vat-management.md) — VAT rates, invoice profiles, booking-level VAT
+- [E-invoicing FAQ](../faq/e-invoicing-faq.md) — short answers about the Slovak 2027 rules
 - [Payments and Billing FAQ](../faq/payments-and-billing-faq.md) — common invoicing questions

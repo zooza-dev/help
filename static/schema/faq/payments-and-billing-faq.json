@@ -281,7 +281,7 @@
       "name": "Does Zooza support e-invoicing (e-faktúra)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not in the legal sense used by the new government mandates. Zooza generates PDF invoices — through a built-in engine or through your connected accounting system. It does not generate structured EN 16931 / Peppol XML invoices, send them over the Peppol network, or report invoice data to a tax authority. A PDF emailed to a client does not satisfy a structured e-invoicing mandate.\n\nIf you do need structured e-invoices, they have to be issued by an invoicing service that supports e-invoicing, connected to Zooza as your invoice engine. Tell us which service you use — if it is not on our list yet, we can look at adding it as an integration.\n\nSee Government e-invoicing mandates and Zooza for who the mandates actually cover."
+        "text": "Not in the legal sense used by the new government mandates. Zooza generates PDF invoices — through a built-in engine or through your connected accounting system. It does not generate structured EN 16931 / Peppol XML invoices, send them over the Peppol network, or report invoice data to a tax authority. A PDF emailed to a client does not satisfy a structured e-invoicing mandate.\n\nIf you do need structured e-invoices, they have to be issued by an invoicing service that supports e-invoicing, connected to Zooza as your invoice engine. Tell us which service you use — if it is not on our list yet, we can look at adding it as an integration.\n\nSee Government e-invoicing mandates and Zooza for who the mandates actually cover. Short answers: E-invoicing FAQ."
       }
     },
     {
