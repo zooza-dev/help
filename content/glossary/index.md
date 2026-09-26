@@ -6,7 +6,7 @@ product_area: "Settings"
 audience: ["admin", "client"]
 tags: ["glossary", "terminology", "definitions"]
 status: "published"
-last_converted: "2026-09-17"
+last_converted: "2026-09-26"
 ---
 
 # Zooza Glossary
@@ -315,6 +315,20 @@ Where you tell Zooza how to read money arriving in your bank account — a GoCar
 The queue of incoming bank payments waiting to be matched to a booking, and the screen where you match them by hand when Zooza could not do it automatically. Rows are grouped as **Unpaired**, **Processing**, **Paired**, **Ignored** and **Error**; its other tabs hold the AI rules that drive automatic matching and the analytics on how they perform.
 
 > Formerly under a menu hub called: *Inbound*
+
+### Payment adjustment
+Money off — or onto — **one upcoming scheduled payment**. This is what **Credit attendees** creates when you cancel a session: everyone who was due to attend has their next instalment reduced. No money moves, the result never goes below zero, and a client with no upcoming instalment gets nothing.
+
+> Also referred to as: *adjustment*, *event credit*
+
+> Not to be confused with: a **credit**, which is an entitlement to attend a session (a make-up, a prepaid credit, a voucher) — cancelling a session creates adjustments, never make-ups. Nor with a **refund**, which returns money already paid; a client who has paid in full gains nothing from an adjustment.
+
+### Price per session
+The price of **one** session, set on the programme and overridable on the class. It is not what the client owes: that is price per session × billable sessions, reduced pro rata if they joined after the start and aliquot calculation is on. The two numbers differ by the session count, so they are usually ten to twenty times apart.
+
+> Also referred to as: *unit price*
+
+> Not to be confused with: the **registration fee**, which is a separate one-off charge on top of the booking price, not part of it.
 
 ---
 

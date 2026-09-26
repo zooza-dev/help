@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-21"
+last_converted: "2026-09-26"
 related_articles: ["trial-sessions", "trials-daily-business", "booking-form-settings", "sending-email-sms", "booking-faq"]
 ---
 
@@ -118,6 +118,39 @@ The session list you see as an admin is every upcoming session of that class wit
 The same session picker appears when you copy or move a booking and set its status to **Trial started**.
 
 > Until September 2026 the session picker sometimes did not appear (a fault, since fixed). Older help text saying "admins cannot create trials" was wrong.
+
+## Can a parent cancel a trial booking, and is there a deadline?
+
+Yes to both. A trial follows the same cancellation limit as any other session — the global one in **Settings → Programmes → Set a limit for cancelling a scheduled session** (see [Cancellation limit settings](../guides/cancellation-limit-settings.md)). There is no separate deadline for trials.
+
+**Before the deadline** the parent sees a **Cancel** button in their profile and cancels normally.
+
+**After it** the Cancel button is gone. In its place they get **Will not attend**, with the message: *"You can no longer cancel, but you can still make room for others if you let us know that you are not coming."* Using it tells you and frees the seat, but the parent gives up what a proper cancellation would have earned them: a paid trial is not refunded, and no make-up credit is created.
+
+That is the trade deliberately: better to know in advance than to leave an instructor waiting for a no-show, but late is still late.
+
+> **The client's profile shows only the trial session they booked**, not every upcoming session of the class. If you see the whole schedule there, you are looking at a display fault that was fixed on 25 September 2026 — reload and check again.
+
+## A trial client who enrols ends up as a second customer record — why?
+
+Because they were sent the **general sign-up link**. That link is a fresh sign-up: Zooza cannot tell the person is continuing from a trial, so it creates a new client, asks every question again (including "how did you hear about us"), and your trial conversion is not counted.
+
+After a trial, the parent should use **their own enrolment link**, which they get in one of two ways:
+
+- automatically by email, when the trial automation is switched on for that programme, or
+- from their client profile — while the trial is active, the profile shows an option to enrol with a button straight to the form. (For a paid trial, this appears once the trial is paid.)
+
+Going that way, the enrolment form opens pre-filled with the answers they gave at the trial, the new booking is linked to the trial under the same client, and the trial is marked **Trial won**.
+
+You will still see two bookings — the trial and the enrolment — but they belong to one client, so the journey reads: original source → trial booked → trial attended → enrolled.
+
+What to set up:
+
+1. Switch trial automation on for every programme you offer trials in, so the link goes out without you.
+2. Stop sending the general sign-up link to trial clients — it is for new people only.
+3. Keep the "How did you hear about us" field in the same position on the trial programme and the programme they enrol into, so the original answer carries over.
+
+> If the child should continue in a different class from the one they trialled in, choose that class when you resolve the trial (the summary window after you mark the last trial attendance). Their enrolment link then points at it; left empty, it points at the class where the trial took place.
 
 ## How do I contact the parents who attended a trial but did not enrol?
 

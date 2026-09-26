@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-21"
+last_converted: "2026-09-26"
 ---
 
 
@@ -179,6 +179,17 @@ The attendee's date of birth can be edited directly:
 If the buyer filled in their own date of birth at booking, that value cannot be edited in the admin app. The client can update it themselves the next time they register, or by contacting Zooza support.
 
 Changes to the buyer's core data (email, name) go through the formal **Data correction** request flow — see [Data correction or change client data](../guides/data-correction-change-client.md).
+
+## Participant or client — what is the difference, and can I turn one into the other?
+
+Zooza holds one object, a **person**. A person who has an identity — an email they can log in with — is a **client**. A person without one is a **participant** (attendee): the child in the class, or an adult somebody else registered.
+
+The practical consequences:
+
+- **A client's email is unique**, enforced at database level, so the same address cannot belong to two clients. That is why duplicate *clients* are rare.
+- **Participants have no such rule** — two participants may carry the same email, or none, which is how the same child ends up in the system twice.
+- **You cannot convert a participant into a client.** There is no button for it. If a participant now needs their own login — a teenager turning 18 and taking over their own booking, for instance — create a booking by hand using their email address, which creates the client. Then move the existing booking to them with **Change client** and delete the helper booking if you no longer need it.
+- **Two participants that are the same child** can be merged by you, from their relationships on the client record. If that does not work, ask support — but doing it in the app is better, because the change then propagates everywhere.
 
 ## How do I move a child (or client) to a different class or class?
 

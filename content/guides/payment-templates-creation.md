@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0086_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: "2026-09-21"
+last_converted: "2026-09-26"
 related_articles: ["price-and-payment-setup","membership-fee-setup","automatic-payment-reminders","session-payment-adjustments"]
 ---
 <!-- REVIEW: add all types of prepaid payment frequencies -->
@@ -315,6 +315,19 @@ into the price.
 So for a client starting on 1 January where a session also falls on 1 January: leave
 it unticked and they are not charged for a session they will not attend; tick it and
 they are.
+
+## A membership does not stop on its own
+
+A membership template bills for as long as the booking is active. It has no end date and does not know when the class finishes: a client who joins a course running October to June keeps being billed in July unless somebody stops it.
+
+Two ways to end it:
+
+- **Cancel the booking** on the last day — future scheduled payments are removed; payments already received stay.
+- **Edit the last instalment** in the booking's payment plan if the final month should be a part month. There is no automatic half-month at the end.
+
+If the course has a clear start and end and you know the total, a **programme fee** template fits better: the total is divided into instalments and stops by itself.
+
+> Related: with the anniversary date set to **0**, each client is billed on the day of the month they registered, so the payments are spread across the month. A fixed day (say the 1st) puts everyone on the same date, which is easier to reconcile and easier to explain. Neither has any bearing on tax or invoicing — it is an operational choice.
 
 ## Anniversary date on payment templates
 

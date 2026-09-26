@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-21"
+last_converted: "2026-09-26"
 ---
 
 # Payments and Billing FAQ
@@ -105,6 +105,16 @@ Because the next instalment already exists. A scheduled payment is **created a s
 Example: a membership of €71 a month with a €25 registration fee in the first month. On 16 September the booking shows €167 outstanding: September's €96 (still unpaid) plus October's €71, which is due on 1 October and was therefore created on 16 September.
 
 The number of days is the "days due" value in **Settings → Billing & Payments → Payment settings**; leaving it at 0 keeps the 15-day default. Shorten it if you would rather parents not see next month's instalment so early — bearing in mind that the "upcoming payment" and "payment created" notifications count from the same creation date (see [Automatic payment reminders](../guides/automatic-payment-reminders.md)).
+
+## Can I make payment compulsory at booking — set the grace period to 0?
+
+You can set the grace period to 0 (**Settings → Billing & Payments → Payment settings**, the first field; also per programme under Price and Payment), and you probably should if you do not want an "Awaiting payment" window. But be clear about what it does and does not do.
+
+**What it does:** a booking with an outstanding balance is marked **Unpaid** straight away instead of sitting in Awaiting payment.
+
+**What it does not do:** it does not force anyone to pay. The booking is still created. Card payment happens after the booking exists — that is the order of events everywhere online — so a parent who closes the tab, has no card to hand, or whose card is declined still leaves you a booking with nothing paid. Nothing cancels it automatically unless you switch on auto-cancel of unpaid bookings, and most providers would rather talk to the parent first.
+
+**For a subscription this matters more than it looks.** The card is only stored once the client has made the first payment themselves, so until they do, there is nothing to charge and no future instalment can be collected. In Stripe those bookings show as *incomplete*. The fix is to get that first payment made: send them to their client profile (the `WIDGET_PROFILE_URL` tag makes a personal link), and make paying as easy as possible — having Apple Pay and Google Pay switched on in **Integrations → Stripe** measurably helps.
 
 ## Can I split one payment between two bookings?
 

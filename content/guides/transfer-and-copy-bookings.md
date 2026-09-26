@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-09-26"
+related_articles: ["transfer-and-copy-faq", "booking-faq", "edit-payment-on-booking", "admin-attendance-management"]
 ---
 
 # Transfer and copy bookings
@@ -132,6 +133,12 @@ Once the transfer is complete, Zooza redirects you to the new booking. Verify:
 4. **Make-up credits** — make-up credits are **not transferred** to the new booking. If the client had unused make-up credits on the original booking, you will need to add them manually to the new booking after the transfer.
 
 Only then inform the client — either through Zooza (**Communication** tab on the booking) or via your usual channel.
+
+### The client still shows in the old class, marked "Transferred"
+
+This is cosmetic, and it is meant to be there: the label records that this person was not in the group from the start. In the old class the client remains only on sessions where they have an attendance record — sessions without one are hidden automatically.
+
+If they should not appear on a particular session at all, hide their attendance record on it.
 
 ## How to copy a booking
 

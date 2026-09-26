@@ -6,7 +6,7 @@
 # ║  Edit there, then run: python3 scripts/sync_terminology.py      ║
 # ╚══════════════════════════════════════════════════════════════════╝
 #
-# Last synced: 2026-09-20
+# Last synced: 2026-09-26
 # Used by: scripts/normalize_terminology.py → build/terminology/dictionary.json
 #
 # Fields per term:
@@ -654,6 +654,15 @@ terms:
       It exists only for full-programme and one-off programme types, not pay-as-you-go.
       "Paid trial" and "sessions shown in form = 1" are two separate settings; the second
       is what limits the form to the nearest date.
+      CANCELLING A TRIAL (confirmed 2026-09-24): trials follow the SAME global cancellation
+      limit as any session — there is no separate trial deadline. After the limit the parent
+      sees "Will not attend" instead of Cancel; a paid trial is not refunded and no make-up
+      credit is created.
+      TRIAL -> ENROLMENT DUPLICATES (confirmed 2026-09-23): sending a trial client the GENERAL
+      sign-up link creates a SECOND client record and loses the original marketing source. They
+      must use their own enrolment link — from the trial automation email, or from their client
+      profile while the trial is active (paid trials: once paid). That link pre-fills their trial
+      answers, links the bookings under one client and marks the trial Won.
     public: true
 
   - id: auto-continuation
@@ -871,9 +880,27 @@ terms:
       it: "Partecipante"
       fr: "Participant"
     intent_keywords:
-      en: ["attendee", "participant", "child", "my child", "student", "pupil"]
-      sk: ["účastník", "dieťa", "žiak", "študent"]
+      en: ["attendee", "participant", "child", "my child", "student", "pupil",
+           "convert participant to client", "merge participants", "duplicate child"]
+      sk: ["účastník", "dieťa", "žiak", "študent", "spojiť účastníkov", "duplicitný účastník",
+           "ako z účastníka spravím klienta"]
+      cz: ["účastník", "dítě", "sloučit klienty", "stejný klient dvakrát"]
       de: ["Teilnehmer", "Kind", "Schüler"]
+    do_not_confuse_with:
+      - term: "Client"
+        reason: >
+          One underlying object: a Person. A Person WITH an identity (an email they can log in
+          with) is a Client; without one it is an Attendee. A Client's email is unique at
+          database level, so duplicate clients are rare; Attendees have no such rule, which is
+          why the same child can exist twice.
+    ai_notes: >
+      YOU CANNOT CONVERT AN ATTENDEE INTO A CLIENT (confirmed 2026-09-25) — there is no button.
+      When an attendee needs their own login (a teenager taking over their own booking), create
+      a booking manually with their email, which creates the Client, then move the existing
+      booking with "Change client". Martin flagged 2026-09-25 that a proper conversion may be
+      built — check the changelog before repeating "not possible".
+      Two attendees that are the same child can be merged by the operator from the client's
+      relationships. Merging CLIENTS is Clients -> Family & Connections -> Manage -> Merge.
     public: true
 
   - id: instructor
@@ -982,6 +1009,14 @@ terms:
       instructors" = Limited (instructors only get attended / did not attend).
       ADMIN CANCELS A SUBSTITUTION on the session detail (where attendance is managed);
       SK "zastupovanie" = instructor substitution, NOT a booking.
+      CANCEL MAKE-UP vs UNENROL (confirmed 2026-09-23, asked 4x over a month by the same
+      operator): unenrolling a client from a make-up session the ordinary way does NOT return
+      the credit — the system never makes a make-up out of a make-up, so the client simply
+      ends up one short. The "Cancel make-up session" button (session detail, make-up list)
+      voids the make-up and writes a fresh credit back on the ORIGINAL missed session. The
+      client cancelling in time from their own profile has the same effect. The registration's
+      cancellation log prints the reason; "Vytvorit kredit: Nie / Dovod: is_replacement" means
+      exactly this case.
     public: true
 
   - id: transferred-make-up-session
@@ -1216,6 +1251,113 @@ terms:
       When a customer asks why the first payment is lower or asks about pricing
       for mid-term joiners, this is the aliquot feature. Covered in
       content/faq/payments-and-billing-faq.md and content/guides/late-bookings.md.
+    public: true
+
+  - id: unit-price
+    canonical_en: "Price per session"
+    category: "payments"
+    definition: >
+      The price of ONE session. Set on the Programme and overridable on the Class;
+      stored as `unit_price`. What a client owes for a booking is a different number:
+      price per session × billable sessions, pro-rated from their enrolment start if
+      aliquot calculation is on. The two differ by the session count — usually 10-20x.
+    context:
+      admin: "Price per session"
+      client: "(clients see the booking total, not this)"
+      widget: "(not shown)"
+    synonyms:
+      - "unit price"
+      - "session price"
+      - "per-lesson price"
+    translations:
+      sk: "Cena za lekciu"
+      cz: "Cena za lekci"
+      de: "Preis pro Einheit"
+      pl: "Cena za zajęcia"
+      ro: "Preț pe ședință"
+      hu: "Alkalmi ár"
+    intent_keywords:
+      en: ["unit price", "price per session", "price per lesson", "how much per class",
+           "session price", "total price", "what will they owe", "booking price"]
+      sk: ["cena za lekciu", "jednotková cena", "cena za hodinu", "koľko stojí jedna lekcia",
+           "celková cena", "koľko bude platiť"]
+      cz: ["cena za lekci", "jednotková cena", "celková cena"]
+    do_not_confuse_with:
+      - term: "Booking price (total)"
+        reason: >
+          Price per session is for one session; the booking price is the whole enrolment
+          (per-session price × billable sessions, aliquot-adjusted). Quoting the per-session
+          figure as the amount owed understates it by the session count. In api-v1 a field
+          called `price` is a booking total — only `unit_price` is per session.
+      - term: "Registration fee"
+        reason: >
+          The registration fee is a separate one-off charge added ON TOP of the booking price,
+          not part of it. Several api-v1 price readers deliberately exclude it, so a total that
+          omits the fee is short by that amount.
+      - term: "Billable session"
+        reason: >
+          Billable sessions are the COUNT the per-session price is multiplied by. Marking a
+          session non-billable lowers the booking total without changing the per-session price.
+    ai_notes: >
+      Always state which of the two numbers you are quoting, and never present a per-session
+      price as what the client owes. When previewing money — a transfer, a copy, a payment plan,
+      an invoice — show the booking total and the per-session price as separate, labelled
+      figures, and include the registration fee in any "will owe" total. Where a contract accepts
+      an amount that could be either, it carries an explicit discriminator (payment plans use
+      `debt_is_unit_price`) — read it rather than guessing from the field name.
+    public: true
+
+  - id: payment-adjustment
+    canonical_en: "Payment adjustment"
+    category: "payments"
+    definition: >
+      A signed line item attached to ONE upcoming scheduled payment, reducing (credit) or
+      increasing (debit) what the client will be charged next. This is what the "Credit
+      attendees" option on a cancelled session creates. It is NOT a Zooza credit and NOT a
+      refund — no money moves, and the result is floored at zero, so the company can never
+      end up owing the client. A client with no upcoming scheduled payment receives nothing.
+    context:
+      admin: "Credit attendees / Credit / Debit"
+      client: "(seen only as a smaller amount on the next payment)"
+      widget: "(not shown)"
+    synonyms:
+      - "adjustment"
+      - "event credit"
+      - "credit attendees"
+      - "scheduled payment adjustment"
+    translations:
+      sk: "Úprava platby"
+      cz: "Úprava platby"
+      de: "Zahlungsanpassung"
+      pl: "Korekta płatności"
+      ro: "Ajustare de plată"
+      hu: "Fizetési korrekció"
+    intent_keywords:
+      en: ["credit the attendees", "compensate clients", "refund for a cancelled session",
+           "give them money back", "reduce their next payment", "credit or debit"]
+      sk: ["kreditovať klientov", "vrátiť peniaze za zrušenú hodinu", "odpočítať z ďalšej platby",
+           "kompenzovať klientov", "dobropis"]
+      cz: ["vrátit peníze za zrušenou lekci", "odečíst z další platby", "kompenzovat klienty"]
+    do_not_confuse_with:
+      - term: "Credit (make-up session)"
+        reason: >
+          A Zooza credit is a row in `credits` — a make-up session, prepaid credit, voucher or
+          free event — an entitlement to attend. A payment adjustment is money off an invoice.
+          Cancelling a session creates adjustments, never make-up credits; make-up credits come
+          from the attendance path when a client cancels their own booking.
+      - term: "Refund"
+        reason: >
+          A refund returns money already paid. An adjustment only lowers a future scheduled
+          payment, so a client who already paid in full gets nothing from it.
+    ai_notes: >
+      Never describe an adjustment as a refund or as a make-up session. Before promising
+      compensation, check that the clients actually have an upcoming scheduled payment —
+      those who do not are skipped silently and the affected count is the only evidence.
+      Say how many clients will be affected and the total amount, remember the surplus above
+      an instalment is discarded, and note that the batch covers every active registration on
+      the class rather than only those booked on the cancelled session. Only one credit and one
+      debit can exist per session; correcting a mistake means reversing the adjustment per
+      payment, not sending another one.
     public: true
 
   - id: reference-number
@@ -3083,6 +3225,137 @@ terms:
       fixed value. Hidden fields are never required.
       See: content/setup/custom-contact-fields.md
     public: true
+
+  # ──────────────────────────────────────────────
+  # MARKETING VOCABULARY — HOW WE TALK ABOUT LEADS (added 2026-09-21)
+  # ──────────────────────────────────────────────
+  # Temperature words (cold / warm) describe a CONTACT or a LEAD — never a person.
+  # "Warm parent", "teplý rodič", "warme Eltern" are wrong in every language; say
+  # "a parent who already knows us". Use each market's established sales term, never a
+  # literal translation ("chladný záujem" was rejected by the owner, 2026-09-21).
+
+  - id: cold-contact
+    canonical_en: "Cold contact"
+    category: "marketing"
+    definition: >
+      A person who has shown interest — tapped an ad, left a name and an email or
+      phone through a contact form or a Meta lead ad — but does not yet know the
+      company and has not committed to anything: no booking, no payment. It is a
+      conversation the company is allowed to start, not a customer it has won.
+      In the app a cold contact is simply a Contact with status New. The point of
+      the follow-up process (owner, first human reply within the hour, status
+      New → In progress → Converted) is to turn a cold contact into a client.
+    context:
+      admin: "Contact (status New)"
+      client: "—"
+      widget: "—"
+    deprecated:
+      - "cold interest"       # EN — the thing collected is a contact, not an abstract interest
+      - "chladný záujem"      # SK — literal translation, unknown term (owner rejected 2026-09-21)
+      - "chladný lead"        # SK
+      - "chladný zájem"       # CZ
+      - "kaltes Interesse"    # DE
+      - "zimne zainteresowanie"  # PL
+      - "interes rece"        # RO
+    synonyms:
+      - "cold lead"           # the marketing term; name it once when defining, then say "cold contact"
+      - "studený lead"        # SK / CZ, acceptable
+    translations:
+      sk: "Studený kontakt"
+      cz: "Studený kontakt"
+      de: "Kaltkontakt"
+      hu: "Hideg kontakt"
+      ro: "Contact rece"
+      pl: "Zimny kontakt"
+    intent_keywords:
+      en: ["cold lead", "cold contact", "cold traffic", "not ready to book", "just enquired",
+           "left their details", "lead from ads", "meta lead", "follow up a lead"]
+      sk: ["studený kontakt", "studený lead", "studené leady", "studené volanie", "len sa opýtal",
+           "nechal kontakt", "lead z reklamy", "ešte nie je pripravený", "follow-up leadu"]
+      cz: ["studený kontakt", "studený lead", "studené leady", "jen se zeptal", "nechal kontakt",
+           "lead z reklamy", "ještě není připravený"]
+      hu: ["hideg kontakt", "hideg lead", "hideg megkeresés", "csak érdeklődött"]
+      ro: ["contact rece", "lead rece", "lead din reclamă", "doar a întrebat", "nu e încă pregătit"]
+    do_not_confuse_with:
+      - term: "Contact"
+        reason: >
+          Contact is the product entity (Clients → Contacts). Cold contact is a
+          marketing description of how far that person is from booking — a cold
+          contact IS a Contact, usually with status New. Do not invent a separate
+          "cold" status or flag in the app.
+      - term: "Client"
+        reason: >
+          A client has a booking or a client account. A cold contact has neither.
+          Convert to client is the moment a contact stops being a lead.
+    ai_notes: >
+      Speed decides: HBR (Oldroyd, McElheran, Elkington 2011; 2,241 firms) — contacting
+      a lead within an hour made qualifying it ~7× more likely than waiting one more
+      hour, >60× more likely than waiting a day. Most people an ad reaches are not
+      in-market (95:5 rule, Dawes / Ehrenberg-Bass) — a cold contact is the normal
+      case, not a failed campaign. Blog: /lead-generation-childrens-activity-businesses/
+      (localized: sk /sk/generovanie-leadov-pre-detske-aktivity-sk/ etc.).
+      Feature page: /features/lead-capture/.
+    public: false
+
+  - id: warm-contact
+    canonical_en: "Warm contact"
+    category: "marketing"
+    definition: >
+      A person who already knows the company — an existing client's family, a parent
+      sent by a friend, someone who has been to a trial or has been in conversation
+      with the team — and can decide in one sitting. In plain copy, prefer saying
+      what it means ("a parent who already knows you") over the jargon. Warm contacts
+      go straight to a booking form (trial or class); cold contacts go to a contact
+      form first. Rule of thumb: if the team would normally talk to the person
+      before enrolling them, they are a cold contact.
+    context:
+      admin: "Contact (status In progress) or existing client"
+      client: "—"
+      widget: "—"
+    deprecated:
+      - "warm parent"         # EN — temperature words describe leads, not people
+      - "teplý rodič"         # SK / CZ (owner rejected 2026-09-21)
+      - "teplý kontakt"       # SK — the SK term is "zohriaty", not "teplý"
+      - "warme Eltern"        # DE
+      - "ciepły rodzic"       # PL
+      - "părinte cald"        # RO
+    synonyms:
+      - "warm lead"
+      - "a parent who already knows us"   # preferred plain-language form in copy
+      - "zohriaty lead"       # SK
+    translations:
+      sk: "Zohriaty kontakt"
+      cz: "Zahřátý kontakt"
+      de: "Warmer Kontakt"
+      hu: "Meleg kontakt"
+      ro: "Contact cald"
+      pl: "Ciepły kontakt"
+    intent_keywords:
+      en: ["warm lead", "warm contact", "already knows us", "referred by a friend",
+           "came for a trial", "ready to book"]
+      sk: ["zohriaty kontakt", "zohriaty lead", "rodič, ktorý nás už pozná", "odporučila kamarátka",
+           "bol na skúšobnej hodine", "pripravený rezervovať"]
+      cz: ["zahřátý kontakt", "zahřátý lead", "rodič, který nás už zná", "doporučila kamarádka",
+           "byl na zkušební lekci"]
+      hu: ["meleg kontakt", "meleg lead", "már ismer minket", "ajánlás alapján jött"]
+      ro: ["contact cald", "lead cald", "ne cunoaște deja", "recomandat de o prietenă"]
+    do_not_confuse_with:
+      - term: "Cold contact"
+        reason: >
+          A cold contact does not know the company yet and needs a conversation before
+          a booking; a warm contact can book directly. The distinction decides which
+          form a campaign sends people to (contact form vs booking form).
+      - term: "Client"
+        reason: >
+          Warm does not mean converted. A warm contact may still have no booking; a
+          client always has one (or a client account).
+    ai_notes: >
+      In customer-facing copy in any language, say the plain thing — "a parent who
+      already knows you / rodič, ktorý vás už pozná / Eltern, die Sie schon kennen /
+      rodzic, który już cię zna / un părinte care te cunoaște deja" — and keep the
+      temperature word for internal or marketing-audience text. Never attach
+      cold / warm to "parent", "child" or "family".
+    public: false
 
 # ──────────────────────────────────────────────
 # ENTITY MISATTRIBUTION PATTERNS (AI use only)

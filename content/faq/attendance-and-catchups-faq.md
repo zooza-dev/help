@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-16"
+last_converted: "2026-09-26"
 ---
 
 # Attendance and Catch-up Classes FAQ
@@ -61,6 +61,10 @@ Yes, in **Full view**. make-up session clients appear in a separate **make-up se
 - Click **Change make-up session** to move them to a different session.
 - Click **Cancel make-up session** to remove the make-up booking.
 - Navigate to the original session they missed via **Go to Make-up Session Original Session**.
+
+> **Use Cancel make-up session — not the ordinary unenrol.** They are not the same thing. Unenrolling a client from a make-up session the way you would from a normal session does **not** give the credit back: the system never creates a make-up out of a make-up, so the client simply loses the slot and ends up one make-up short. **Cancel make-up session** voids the make-up booking and puts a fresh credit back on the original missed session, which is what you want when a parent asks you to take them off a replacement they had already chosen.
+>
+> The client doing it themselves from their profile, in time, has the same effect as Cancel make-up session.
 
 ## Can an instructor add notes to a session?
 

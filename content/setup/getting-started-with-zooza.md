@@ -12,7 +12,7 @@ related_articles: ["onboarding-launch-faq", "login-and-account-faq", "app-naviga
 source_legacy_path: "legacy/0015_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-26"
 ---
 
 # Getting Started with Zooza
@@ -269,7 +269,9 @@ Steps:
 What happens:
 
 - The spot is freed.
-- You still keep the data in CRM (you can filter by “Deleted bookings”).
+- The booking goes to the Trash (**Settings → Tools → Trash**), where it can be restored for 30 days. There is no longer a "Deleted" filter in the Bookings list — see [Recover deleted items](../guides/trash-and-restore.md).
+
+> **You usually do not need to delete bookings at all.** A client counts as active only while they have a booking in a class that has not ended, or unused make-up credits — so last term's bookings stop counting on their own. Deleting is for mistakes and duplicates, not for tidying up after a course.
 
 ### 7.2 How do I pause a booking?
 

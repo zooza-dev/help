@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-26"
+related_articles: ["loyalty-faq", "discount-types", "membership-fee-setup", "payments-and-billing-faq"]
 ---
 
 
@@ -98,6 +99,17 @@ Discount codes apply to the **entire order total**, not per child. If a parent r
 ## Can I use percentage discounts with monthly memberships?
 
 For monthly memberships (recurring payments), percentage discounts do not work because there is no fixed total order value. Use **absolute discounts** instead (e.g., 50 AED off instead of 10%).
+
+## On a membership, why was the discount taken off only the first payment?
+
+That is by design, and it is the difference between an ordinary discount and a loyalty discount.
+
+- **Ordinary discounts** (a discount code, a sibling discount, a discount set on the booking) are applied **in full to the first instalment** of a membership and not to the ones after it. A membership has no fixed total — you do not know whether the client stays a month or a school year — so the whole discount is given at once rather than spread over an unknown number of payments.
+- **Loyalty programme discounts** are the exception: they are stored on the subscription and applied to **every** instalment for as long as the membership runs. See [Loyalty FAQ](loyalty-faq.md).
+
+So a quarterly membership of 192 € with 6 € off per child and 4 € for the second registration shows the full reduction on the first payment, and 192 € on the next one. If you want a reduction that repeats every period, use the loyalty programme, or set a lower price on the class instead of a discount.
+
+On a **programme fee** (a fixed total split into instalments) this does not apply — there the total is known, so a discount reduces the total and every instalment with it.
 
 ## How can I waive a registration fee for existing members?
 

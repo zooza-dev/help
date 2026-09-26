@@ -70,6 +70,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can I make payment compulsory at booking — set the grace period to 0?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can set the grace period to 0 (Settings → Billing & Payments → Payment settings, the first field; also per programme under Price and Payment), and you probably should if you do not want an \"Awaiting payment\" window. But be clear about what it does and does not do.\n\nWhat it does: a booking with an outstanding balance is marked Unpaid straight away instead of sitting in Awaiting payment.\n\nWhat it does not do: it does not force anyone to pay. The booking is still created. Card payment happens after the booking exists — that is the order of events everywhere online — so a parent who closes the tab, has no card to hand, or whose card is declined still leaves you a booking with nothing paid. Nothing cancels it automatically unless you switch on auto-cancel of unpaid bookings, and most providers would rather talk to the parent first.\n\nFor a subscription this matters more than it looks. The card is only stored once the client has made the first payment themselves, so until they do, there is nothing to charge and no future instalment can be collected. In Stripe those bookings show as incomplete. The fix is to get that first payment made: send them to their client profile (the WIDGET_PROFILE_URL tag makes a personal link), and make paying as easy as possible — having Apple Pay and Google Pay switched on in Integrations → Stripe measurably helps."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Can I split one payment between two bookings?",
       "acceptedAnswer": {
         "@type": "Answer",

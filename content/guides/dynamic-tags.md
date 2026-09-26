@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0005_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-21"
+last_converted: "2026-09-26"
 related_articles: ["message-templates", "edit-session-notification-template", "sending-email-sms"]
 ---
 
@@ -82,6 +82,9 @@ Each email sent for a specific booking allows you to dynamically fill in client 
 | <code>&#42;&#124;IBAN&#124;&#42;</code>                             | Bank account for payment. If specified at the programme level, that value is used.         | GB54BARC20039545449825                                |
 | <code>&#42;&#124;DD_SETUP_INSTRUCTIONS&#124;&#42;</code>            | HTML table of direct debit setup instructions, rendered for the active scheme. **SEPA (ERSTE):** creditor name, Creditor Identifier, mandate reference, and IBAN/BIC to authorise. **BACS/FastPay (UK):** confirmation that bank details are already captured and the mandate will be set up on the client's behalf, plus the mandate reference and Direct Debit Guarantee. Only available for direct debit programmes. | HTML table |
 | <code>&#42;&#124;COURSE_DATE_START_END&#124;&#42;</code>            | Start and end date of the programme                                                        | 14. 5. 2022 -- 14. 8. 2022                            |
+
+> **There is no tag for the end time of a session.** <code>&#42;&#124;COURSE_TIME&#124;&#42;</code> gives the start time only, and <code>&#42;&#124;COURSE_DATE_START_END&#124;&#42;</code> gives the programme's first and last date without times. If clients need to know when a session finishes, write the duration into the template text.
+
 | <code>&#42;&#124;COURSE_TRAINER&#124;&#42;</code>                   | Instructor's name                                                                          | John Winslow                                          |
 | <code>&#42;&#124;USER_ID&#124;&#42;</code>                          | Client user ID                                                                             | 12345                                                 |
 | <code>&#42;&#124;WIDGET_VIDEO_URL&#124;&#42;</code>                 | URL to view the video                                                                      | `https://www.zooza.sk/video?token=12345`              |

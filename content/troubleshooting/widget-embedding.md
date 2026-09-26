@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-02-13"
+last_converted: "2026-09-26"
+related_articles: ["publish-widgets", "customizing-widgets", "client-profile-101", "deploying-zooza-on-website"]
 ---
 
 # Widget Embedding Troubleshooting
@@ -141,6 +142,16 @@ For initial setup instructions, see [Deploying Zooza on your website](../setup/d
 **Problem:** Links in emails or within widgets (e.g. "View profile", "Register here") lead to the wrong page or a 404 error.
 
 **Cause:** The base URL configured in **Publish** > widget settings does not match the actual URL where the widget is deployed on your website. Zooza uses these URLs to generate all outbound links in emails and notifications.
+
+**How clients report it.** They rarely say "the URL is wrong". What you hear is:
+
+- *"I click Pay in my profile and get a 'this is embarrassing' page"*
+- *"the Pay button is not there at all"*
+- the browser console shows `Cannot read properties of undefined (reading 'total_debt')` on the payments tab
+
+All three are the same fault: the profile widget's configured address points at a page that does not exist (for example `/profile` when the widget actually lives at `/moj-profil`), so the client lands nowhere.
+
+**Check every widget set, not just one.** An account can hold several sets of widget keys, and the links are configured per set. If only one set has the right addresses, clients sent from the other sets break while everything looks fine when you test yourself. Several sets make sense only when you run several websites — one account, one website means one set is enough; the extra ones do no harm but every one of them needs correct links.
 
 **Solution:**
 
