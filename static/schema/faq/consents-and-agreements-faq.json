@@ -30,6 +30,22 @@
     },
     {
       "@type": "Question",
+      "name": "Can a consent be optional, so the client can decline it and still complete the booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — but through the Choose Yes or No type, not through a checkbox.\n\nEvery consent you create in Consents & Agreements is mandatory. There is no\n\"optional\" switch on the consent itself, and a Check box consent blocks the\nbooking until it is ticked: the client sees the required-field marker and cannot\nsubmit.\n\nChoose Yes or No is how a client declines and still registers. The two\noptions are I agree and I don't agree, neither is pre-selected, the\nclient has to pick one, and I don't agree is a valid answer — the booking\ngoes through and the refusal is recorded against their profile as\nAgreed: No. You can then find those clients with the Declined filter\nbutton on the consent card.\n\nSo the choice is:\n\nWhat you cannot currently build is a single checkbox that starts unticked, may\nbe left unticked, and still lets the booking through. If a lawyer or a\nregulator asks you for exactly that — a common request around the 14-day\nwithdrawal notice, where the client must be able to complete the purchase\nwithout waiving the cooling-off period — set that consent to Choose Yes or No\nand leave the text unchanged. The client's decision is then explicit, dated and\nversioned, which is what the record has to show.\n\nNothing is ever pre-ticked. A checkbox consent and both Yes/No options render\nempty on a freshly opened form, so a client can never accept something by\naccident."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a \"Select all\" checkbox above the consents?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Each consent is its own control and the client ticks or answers them one at\na time. There is no master checkbox that accepts the whole block at once."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How do I add a health declaration or \"I confirm my child is healthy\" checkbox to the registration form?",
       "acceptedAnswer": {
         "@type": "Answer",

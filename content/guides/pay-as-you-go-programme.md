@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0051_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-22"
+last_converted: "2026-09-26"
 related_articles: ["entry-pass-client-view","creating-entry-passes","pay-as-you-go-faq","customizing-widgets"]
 ---
 
@@ -149,10 +149,26 @@ If you cancel a session as an admin from the Calendar, all clients who were mark
 
 Pay-as-you-go programmes have two additional attendance settings:
 
-- **Require a valid entry pass** — When enabled, clients must have a valid [entry pass](creating-entry-passes.md) to book a session. Without a valid pass, they cannot enrol for sessions.
-- **Redeem if unpaid** — When enabled, entry passes can be used even if the pass order has not been paid yet.
+- **How clients pay for sessions** — the pass policy for this programme. Four choices, described below.
+- **Redeem if unpaid** — When enabled, entry passes can be used even if the pass order has not been paid yet. Useful when clients pay by bank transfer and confirmation takes days.
 
-These settings are optional. Without entry passes, clients simply pay per session at the unit price.
+### How clients pay for sessions
+
+Since 25 September 2026 the old **Require a valid entry pass** switch is gone. It could only say "passes required" or "passes not required"; what providers actually needed was to say *never use a pass* or *let the client decide*. It is replaced by a four-way choice on the **Attendance** settings card:
+
+| Choice | What a client gets when they book |
+|---|---|
+| **Use entry pass first, then payment** | Passes are spent while they last; once they run out, each session is paid. |
+| **Entry pass only** | A session can be booked only with a valid pass. Without one, booking is refused. |
+| **Payment only** | Every session is paid. Passes are never used, even if the client holds some. |
+| **Client chooses each time** | The client decides per session whether to spend a pass or pay. |
+
+Two things to know:
+
+- **It governs clients booking themselves online.** When you add somebody from the attendance screen, Zooza still asks whether to use their pass — that choice stays with you, deliberately.
+- **Existing programmes were converted automatically**, so your previous "required / not required" setting carries over. Open the card and check it reads what you intend, because two of the four options did not exist before.
+
+Without entry passes at all, clients simply pay per session at the unit price.
 
 ## Related guides
 

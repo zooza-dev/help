@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-21"
+last_converted: "2026-09-26"
 related_articles: ["notifications-center", "sending-email-sms", "message-templates", "email-delivery"]
 ---
 
@@ -62,6 +62,10 @@ reply from client** notification and it emails you each time one comes in — se
 
 Only a few templates go out from `no-reply@zooza.app`; the rest are sent from your own
 address, which is why replies come back to us and are collected in the app.
+
+**If you would rather the reply reached your mailbox**, that is what the **New email reply from client** notification above is for — it emails you the moment one arrives, and you read and answer it in Zooza.
+
+**If you want mail to go out from your own address technically as well** — your domain in the envelope, replies landing straight in your own inbox, the whole thread in your mail client — that is possible, but it is a paid add-on that has to be set up for your domain. It is what most franchise networks use. Ask support for what is involved and what it costs; it is not part of the standard plan.
 
 ## Can I block replies to Zooza emails or set up an autoresponder?
 
@@ -252,6 +256,14 @@ The reminder system fires once when the scheduled send time arrives. If the sess
 3. Ask the client to whitelist your sending address and check their spam/junk folder.
 
 Zooza cannot override recipient-side filtering. If the logs confirm the email was sent, the issue is on the recipient's side.
+
+## A client's address is marked invalid (a cross on the client, but fine in the bookings list) — how do I clear it?
+
+You do not have to. The flag is set when delivery to that address fails, and it clears itself the next time a message is delivered there successfully.
+
+While it is set, the address is left out of recipient lists — which is why a bulk email to a class can quietly skip somebody. If you know the address is good (the client confirmed it, or their provider had an outage), send them a single message from the booking's **Communication** tab: once it lands, the flag goes and they are back in the lists.
+
+Do not swap the client to a different address just to get around it. That changes who the booking belongs to — see [Client management FAQ](client-management-faq.md).
 
 ## Related
 

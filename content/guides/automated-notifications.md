@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-21"
+last_converted: "2026-09-26"
+related_articles: ["message-templates", "dynamic-tags", "pay-as-you-go-programme", "pay-as-you-go-faq", "entry-pass-client-view"]
 ---
 
 
@@ -64,8 +65,18 @@ There are three ways a client can opt out of specific notification types. All ot
 | **Imported booking confirmation** | Client is imported (bulk import) | Automatic on import | Yes |
 | **Import invitation** | Client is imported into Zooza for the first time; admin is prompted during import whether to send | Manual trigger during import | Yes |
 | **Lead collection confirmation** | Client books via a lead-collection widget | Automatic | Yes |
+| **Sessions booked** | Client books several sessions at once on an open programme — one email listing them all instead of one per session | Automatic | Yes — **Sessions booked** in Communication → Templates |
 
 No client opt-out exists for any booking confirmation. Admins can disable the automation step per programme.
+
+> **Sessions booked** only appears in the Templates list for providers who run
+> open (pay-as-you-go) programmes — nothing on a full-duration or one-off
+> programme sends it. It is a transactional confirmation: it is sent by the
+> system, cannot be composed by hand, and carries no unsubscribe link. Its only
+> content tag is <code>&#42;&#124;BOOKED_SESSIONS&#124;&#42;</code>, which
+> renders the whole list of sessions the client just booked — the course, date,
+> time, venue and instructor are inside that block and are not available as
+> separate tags on this template.
 
 ---
 
@@ -96,9 +107,59 @@ All trial emails are configured at **Programmes → programme → Automations �
 | Notification | Trigger | Config location | Client opt-out? |
 |---|---|---|---|
 | **Session reminder** | Before an upcoming session (timing configurable) | Programmes → Online Booking → Edit → Send event notifications toggle; template selectable | **Yes** — unsubscribe link in email, or admin toggles per booking (Options tab → Reminder) |
-| **Upcoming sessions digest** | Daily digest of upcoming sessions (open programmes) | Programmes → Online Booking → Edit → Upcoming events notifications toggle | **Yes** — unsubscribe link in email |
+| **Session booking reminder** | A client on an open programme has not booked any upcoming session (weekly) | Programmes → Online Booking → Edit → Upcoming events notifications toggle | **Yes** — unsubscribe link in email, or admin toggles per booking (Options tab → Reminder) |
 | **Session changed** | Session details modified by admin (time, venue, instructor, status) | Automatic when session is edited | **Yes** — same as session reminder opt-out |
 | **Signed up for open session** | Client enrols in a specific pay-as-you-go session | Automatic | No |
+
+#### The session booking reminder on open programmes
+
+On an open (pay-as-you-go) programme, signing up is not the same as having a
+seat: the client still has to go into their profile and book individual
+sessions. Many never take that second step — they register, sometimes buy a
+pack of entry passes, and then nothing happens.
+
+The reminder that used to be a plain daily list of tomorrow's sessions is now
+aimed at exactly those clients. Once a week, a client who has **no upcoming
+booked session** gets one email built from their own situation, with a
+**Book** button for each suggested session:
+
+| The client's situation | What the email leads with |
+|---|---|
+| Has entry passes, plenty left | Their balance and validity, plus sessions to book |
+| Has passes expiring within 14 days | Use them before they expire |
+| Has 2 or fewer passes left | Sessions to book, plus a gentle top-up link |
+| Has an unpaid entry-pass order | Pay the order first — with the order number and amount |
+| Passes expired unused in the last 30 days | Welcome back, plus a top-up |
+| Has no passes at all | Book or buy passes (on a passes-only programme, buy first) |
+
+Sessions are suggested from the client's usual slot where the class has one —
+their regular Monday, or both days on a twice-weekly class — otherwise the
+soonest session with a free place.
+
+Two things worth knowing:
+
+- **Clicking Book never books anything.** The link logs the client in and opens
+  their session picker with that session pre-selected; they still confirm it
+  themselves. So a mail client that pre-loads links cannot hold a place or spend
+  a pass.
+- **Clients who already booked are never nudged.** The check runs again at send
+  time, so a client who booked an hour earlier drops out.
+
+**It stops on its own.** Three weekly reminders with no response, then a
+30-day pause, then one last reminder — about four emails over two months. After
+that Zooza stops nudging that registration. Booking a session starts it again
+automatically.
+
+#### Restarting reminders that stopped themselves
+
+Open the booking and look at the **Communication** card. If Zooza gave up on
+this registration it says so, and offers **Start reminders again**.
+
+If the client has turned reminders off themselves, the card says that instead
+and shows **no button** — restarting would send nothing, because a reminder
+needs both the client's consent and an active reminder state. Change
+**Reminder** on the **Options** tab first if that is what you intend; be aware
+you are overriding the client's own choice.
 
 ---
 

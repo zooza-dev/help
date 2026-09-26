@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-15"
+last_converted: "2026-09-26"
+related_articles: ["pay-as-you-go-programme", "pay-as-you-go-faq", "entry-pass-client-view", "linked-classes", "orders-and-products-faq"]
 ---
 
 # Creating entry passes
@@ -71,35 +72,33 @@ You can assign multiple pass types to the same class. For example, you might off
 
 For each assigned product, you can configure where it appears:
 
-- **Profile availability** — The pass is available for purchase in the client's profile after booking.
+- **Available in the client's profile** — clients can buy the pass from their
+  profile after they have a booking. Ticked by default.
 
-  ![Profile availability setting](../../assets/images/entry-pass-profile-availability.png "Entry pass available in client profile")
+  ![The Available in the client's profile checkbox on a product assigned to a class](../../assets/images/entry-pass-profile-availability.png "Entry pass available in client profile")
 
-- **Booking form availability** — The pass is available during the booking/booking process.
+- **Make available in the booking form** — the pass is offered while the client
+  is registering. Not ticked by default.
 
-  ![Booking form availability setting](../../assets/images/entry-pass-booking-form-availability.png "Entry pass available in booking form")
+  ![The Make available in the booking form checkbox on a product assigned to a class](../../assets/images/entry-pass-booking-form-availability.png "Entry pass available in booking form")
 
 ## Two-product setup for dual availability
 
-There is an important limitation: a single product cannot be both mandatory (shown in the client profile) and optional (shown in the booking form) at the same time.
+**You usually do not need one.** The two checkboxes above are independent — tick
+both on the same product and it is offered in the booking form and in the client
+profile. One product, one price, one place to edit it.
 
-To offer the same entry pass in both locations, create two separate products:
+Create a second product only when you want the two places to differ: a different
+price in the booking form than in the profile, a bundle offered only during
+registration, or a pass you sell at the desk but do not advertise to clients.
 
-1. **Mandatory product** — Set as mandatory. This makes it available in the client's profile (under Benefits).
-2. **Optional product** — Set as optional. This makes it available in the booking form during booking.
-
-Both products should have the same value and price. The only difference is the mandatory/optional setting.
-![Dual product setup example](../../assets/images/entry-pass-dual-product-setup.png "Two products — mandatory for profile and optional for booking form")
+![A product assigned to a class with both availability checkboxes ticked](../../assets/images/entry-pass-dual-product-setup.png "One product offered in both the profile and the booking form")
 
 ### Example: 5 EUR and 10 EUR passes
 
-To offer two pass values (5 EUR and 10 EUR) in both the profile and the booking form:
-
-1. Create a **5 EUR mandatory product** (available in profile).
-2. Create a **10 EUR mandatory product** (available in profile).
-3. Create a Credit Pass Entry Options (**5 EUR optional product** and **10 EUR optional product**) (available in booking form).
-
-You can also create a third product as a booking form bundle** that combines multiple pass options into one offering during the booking flow.
+To offer two pass values in both places, create **two** products — a 5 EUR pass
+and a 10 EUR pass — and tick both availability checkboxes on each. You do not
+need four.
 
 ## Client perspective
 

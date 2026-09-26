@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-26"
 related_articles: ["pay-as-you-go-programme", "creating-entry-passes", "entry-pass-client-view", "sending-email-sms", "booking-form-settings"]
 ---
 
@@ -73,7 +73,13 @@ What you can do instead is add the entries by hand: open the client's order and 
 
 A proper discount on passes is planned as part of a wider rework of entry passes.
 
-## What does "Require a valid entry pass" do?
+## What replaced "Require a valid entry pass"?
+
+A four-way setting called **How clients pay for sessions**, on the programme's Attendance settings card (25 September 2026): *use entry pass first then payment*, *entry pass only*, *payment only*, or *client chooses each time*. Your old setting was converted automatically. See [Pay-as-you-go programme](../guides/pay-as-you-go-programme.md#how-clients-pay-for-sessions).
+
+It applies to clients booking online. Booking somebody in yourself from the attendance screen still asks whether to use their pass.
+
+## What did the old "Require a valid entry pass" do?
 
 This is an attendance setting on the programme. When enabled, clients must have a valid (non-expired, non-exhausted) entry pass to book a session. Without a valid pass, the system blocks them from registering for sessions.
 
@@ -83,12 +89,21 @@ Yes, if you enable the **Redeem if unpaid** setting on the programme. This allow
 
 ## How do I offer entry passes in both the client profile and the booking form?
 
-A single product cannot appear in both locations due to the mandatory/optional setting. To work around this:
+Tick both boxes on the same product. When you assign a pass to a class you get
+**Available in the client's profile** (ticked by default) and **Make available in
+the booking form** (not ticked). They are independent — one product can be sold
+in both places.
 
-1. Create a **mandatory** product (appears in client profile).
-2. Create a separate **optional** product with the same value and price (appears in booking form).
+You only need a second product when the two places should differ: a different
+price, a registration-only bundle, or a pass you do not want clients to see at
+all. See [Creating entry passes](../guides/creating-entry-passes.md#two-product-setup-for-dual-availability).
 
-See [Creating entry passes — Two-product setup](../guides/creating-entry-passes.md#two-product-setup-for-dual-availability) for details.
+## A client on an open programme has nothing to buy in their profile — why?
+
+The pass product has to be attached to the **class**, not just created. Open the
+class, add the product under the products card, and make sure **Available in the
+client's profile** is ticked. Until then the client's profile has nothing to
+offer them, however many pass products exist in your product list.
 
 ## Can I use one entry pass across multiple classes?
 
@@ -105,11 +120,24 @@ Clients see available sessions in two places:
 
 ## Can a client use one entry pass for two children registered in the same class?
 
-No. An entry pass is linked to a specific registration. If two children are registered separately — even in the same class — each registration requires its own entry pass. The pass purchased during one registration cannot be used to deduct entries from another registration.
+Yes — entry passes belong to the **client**, not to one registration.
 
-**To share a pass across multiple registrations in the same class**, the classes must be linked. Class linking is typically used to share a pass across different classes within a programme, not across separate registrations within one class. For two children in the same group, the standard approach is to purchase a separate entry pass for each registration.
+Passes are held per client per company. When a session is booked, Zooza takes
+the client's next unused entry — the one expiring soonest — whichever
+registration the session belongs to. So a parent who buys a 10-entry pass and
+has two children registered separately draws both children's sessions from that
+same pool of 10.
 
-See: [Linked classes](../guides/linked-classes.md).
+That is worth saying out loud to parents, because it cuts both ways: ten entries
+shared between two children is five sessions each, not ten. If you want each
+child to have their own allowance, sell each of them their own pass — and
+remember that Zooza will still spend whichever entry expires first, so it cannot
+keep the two allowances apart for you.
+
+What a pass does **not** do is decide which sessions a client may book. That is
+what [linked classes](../guides/linked-classes.md) are for: linking classes lets
+one registration book sessions across the whole pool of linked classes. The pass
+was never limited to a class in the first place.
 
 ## Can I set up a recurring membership that automatically gives clients a new set of credits on a cycle (e.g. 8 visits every 35 days)?
 
@@ -138,7 +166,51 @@ Because those are two different things in a Pay-as-you-go programme:
 
 So a class can show more enrolments than its capacity — capacity is checked per session, not per class — and a session can have zero attendees while the class is "full" of enrolments. When you look at the register for a session, you are looking at session bookings only.
 
+Since 21 September 2026 the class surfaces say this themselves rather than
+leaving you to work it out. On an open programme:
+
+- The **class tile** shows how many people are booked on the **next session**
+  against that session's places, plus the number of sign-ups as a plain count.
+  The old "enrolled / capacity" bar is gone — on an open class it divided
+  sign-ups by a per-session seat limit, which meant nothing.
+- **Class capacity** in the class settings is labelled as what it is: the number
+  of places in **one session**, not a ceiling on sign-ups.
+- The **Report card** on the class shows the sign-up count and, below it, how
+  many sign-ups have booked no upcoming session.
+- A **booking's detail** says whether that person has any upcoming session
+  booked, and how many.
+
+## Which of my sign-ups have not booked anything?
+
+Open the class and look at the **Report card**: it says how many sign-ups have
+booked no upcoming session. Click that number — it opens the bookings list
+filtered to exactly those people, where you can select them and send them a
+message.
+
+Two things to keep in mind when you read the figure:
+
+- It means **has not booked in the near term**, not "never booked". Somebody who
+  attended for months and has simply not booked their next session is counted.
+- **Do not subtract it from the sign-up count.** The two figures count slightly
+  different populations — guests appear in the not-booked figure but not in the
+  sign-up count — so "12 sign-ups, 5 not booked" does not mean 7 people are
+  booked.
+
+There is no filter control for this on the bookings list itself; the class is
+the only way in, which keeps the figure tied to the class it was counted for.
+
 ## How do I remind enrolled clients to book this week's session?
+
+**Zooza already does this by itself.** Once a week, every client on this
+programme with no upcoming booked session gets a reminder built around their own
+entry-pass balance, suggesting sessions from their usual slot with a **Book**
+button for each. It switches off on its own after about four unanswered emails,
+and starts again as soon as the client books. It is the **Upcoming events
+notifications** toggle on the class (**Programmes → Online Booking → Edit**);
+see [the session booking reminder](../guides/automated-notifications.md#the-session-booking-reminder-on-open-programmes).
+
+Send your own email when you want to say something the automatic reminder does
+not, or when you want to reach clients who have already booked as well.
 
 Do **not** send them the class booking link. In a Pay-as-you-go programme they are already enrolled; opening that link would create a second booking in the same class. They need to book a *session*, and they do that from their client portal.
 

@@ -49,7 +49,7 @@
       "name": "Where do replies to Zooza emails go?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Replies go directly into the Zooza application. The reply-to address is system-managed and routes to your Zooza inbox.\n\nNothing tells you they arrived unless you ask it to. Because the reply lands in the\napp and not in your mailbox, it can sit there unread for days. Turn on the New email\nreply from client notification and it emails you each time one comes in — see\nNotifications Center.\n\nOnly a few templates go out from no-reply@zooza.app; the rest are sent from your own\naddress, which is why replies come back to us and are collected in the app."
+        "text": "Replies go directly into the Zooza application. The reply-to address is system-managed and routes to your Zooza inbox.\n\nNothing tells you they arrived unless you ask it to. Because the reply lands in the\napp and not in your mailbox, it can sit there unread for days. Turn on the New email\nreply from client notification and it emails you each time one comes in — see\nNotifications Center.\n\nOnly a few templates go out from no-reply@zooza.app; the rest are sent from your own\naddress, which is why replies come back to us and are collected in the app.\n\nIf you would rather the reply reached your mailbox, that is what the New email reply from client notification above is for — it emails you the moment one arrives, and you read and answer it in Zooza.\n\nIf you want mail to go out from your own address technically as well — your domain in the envelope, replies landing straight in your own inbox, the whole thread in your mail client — that is possible, but it is a paid add-on that has to be set up for your domain. It is what most franchise networks use. Ask support for what is involved and what it costs; it is not part of the standard plan."
       }
     },
     {
@@ -202,6 +202,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "1. Go to the booking's Communication tab and check the sent email logs to confirm whether the email was sent by Zooza.\n2. Common causes for non-delivery:\n   - The client's mailbox is full (e.g., \"inbox out of storage space\" bounce).\n   - The client's email provider is filtering Zooza emails as spam.\n   - The client previously marked a Zooza email as unwanted.\n3. Ask the client to whitelist your sending address and check their spam/junk folder.\n\nZooza cannot override recipient-side filtering. If the logs confirm the email was sent, the issue is on the recipient's side."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A client's address is marked invalid (a cross on the client, but fine in the bookings list) — how do I clear it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You do not have to. The flag is set when delivery to that address fails, and it clears itself the next time a message is delivered there successfully.\n\nWhile it is set, the address is left out of recipient lists — which is why a bulk email to a class can quietly skip somebody. If you know the address is good (the client confirmed it, or their provider had an outage), send them a single message from the booking's Communication tab: once it lands, the flag goes and they are back in the lists.\n\nDo not swap the client to a different address just to get around it. That changes who the booking belongs to — see Client management FAQ."
       }
     }
   ]

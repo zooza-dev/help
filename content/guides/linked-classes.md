@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: "legacy/0037_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-20"
+last_converted: "2026-09-26"
+related_articles: ["pay-as-you-go-programme", "creating-entry-passes", "pay-as-you-go-faq", "programme-settings"]
 ---
 
 # Linked classes
@@ -67,7 +68,10 @@ This gives you flexibility in structuring your offering and applying different e
 
 ## Entry passes with linked classes
 
-When classes are linked, a single entry pass covers all linked classes. The client can use their pass to book sessions from any class in the pool.
+Once classes are linked, a client's entry pass pays for sessions anywhere in the
+pool. Strictly speaking the pass was never tied to a class — entries belong to
+the client at your company, and Zooza spends the one expiring soonest. Linking is
+what decides which **sessions** the client is offered; the pass simply follows.
 
 For details on creating entry passes, see [Creating entry passes](creating-entry-passes.md).
 

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-26"
 related_articles: ["invoice-profile-overrides", "billing-and-invoicing", "invoicing-overview", "inbound-payments-setup", "payments-and-billing-faq"]
 ---
 
@@ -72,6 +72,18 @@ Each row is one account, labelled with its IBAN and account holder. Expand a row
 The first account you add to a profile automatically becomes its default.
 
 **The account holder name must match your bank exactly.** Banking apps verify it when a client scans a payment QR code, and EU instant-payment rules require the name and IBAN to match — a mismatch can make the transfer fail.
+
+### Type the IBAN without spaces
+
+Zooza stores an IBAN in machine format — letters and digits, nothing else — because that is the form the QR code, the payment instructions and bank-statement matching all use.
+
+Since 22 September 2026 the bank-accounts card does that conversion for you: paste `SK12 3456 7890…` and it is saved as `SK1234567890…`. Before that date a spaced IBAN was stored exactly as typed, and three things then broke quietly:
+
+- the payment **QR code** would not scan, or scanned to nothing usable,
+- incoming payments to that account **stopped matching** bookings,
+- the one-IBAN-one-profile check did not recognise it as the same account.
+
+**Existing rows were not converted.** If an account was saved with spaces before that date it still holds them, so if QR codes stopped working or payments arrived without pairing, open the bank account, re-save the IBAN, and send one payment email again to check the code.
 
 ### One IBAN, one profile
 

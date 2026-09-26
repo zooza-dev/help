@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-14"
+last_converted: "2026-09-26"
 related_articles: ["awaiting-payment-grace-period", "scheduled-payment-notifications", "payment-tile-on-booking"]
 ---
 
@@ -129,6 +129,18 @@ The pro-ration calculation depends on your billing profile settings:
 To review or adjust how pro-ration is configured, go to **Settings → Billing & Payments → Invoice profiles** and check the **Pro-rated payment** settings for the relevant billing profile.
 
 > If you do not want pro-ration and prefer all clients to pay the full amount regardless of when they register, disable the pro-rated payment option in the billing profile.
+
+## How do I give one client a different payment plan from the rest of the class?
+
+You can, and you do it on the registration itself — not by making a new template. Open the registration → **Payment plan**, then:
+
+- **Replace plan** — pick a different template, or configure custom amounts and a first due date. The old plan moves to history and the new one applies to this client only.
+- **Add a payment** to the plan by hand, when the client needs one instalment the others do not have (an extra month, a one-off fee). See [Add a payment to a single registration](#add-a-payment-to-a-single-registration) above.
+- **Edit a future instalment** directly in the scheduled payments table — its amount or its due date.
+
+Templates decide what the *class* offers; the registration is where one client differs from it.
+
+> **If the parent cannot see a payment option at all**, the problem is a level up, not on the registration: the template has to be **active on the programme** (Programme → Price and Payment → Payment frequency) and, if clients are meant to choose it themselves, marked **visible to clients** on the template. A class with no sessions has no billing period either, so nothing can be offered.
 
 ## Can I change the amount on an existing payment plan?
 

@@ -78,7 +78,15 @@
     },
     {
       "@type": "Question",
-      "name": "What does \"Require a valid entry pass\" do?",
+      "name": "What replaced \"Require a valid entry pass\"?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A four-way setting called How clients pay for sessions, on the programme's Attendance settings card (25 September 2026): use entry pass first then payment, entry pass only, payment only, or client chooses each time. Your old setting was converted automatically. See Pay-as-you-go programme.\n\nIt applies to clients booking online. Booking somebody in yourself from the attendance screen still asks whether to use their pass."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What did the old \"Require a valid entry pass\" do?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "This is an attendance setting on the programme. When enabled, clients must have a valid (non-expired, non-exhausted) entry pass to book a session. Without a valid pass, the system blocks them from registering for sessions."
@@ -97,7 +105,15 @@
       "name": "How do I offer entry passes in both the client profile and the booking form?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A single product cannot appear in both locations due to the mandatory/optional setting. To work around this:\n\n1. Create a mandatory product (appears in client profile).\n2. Create a separate optional product with the same value and price (appears in booking form).\n\nSee Creating entry passes — Two-product setup for details."
+        "text": "Tick both boxes on the same product. When you assign a pass to a class you get\nAvailable in the client's profile (ticked by default) and Make available in\nthe booking form (not ticked). They are independent — one product can be sold\nin both places.\n\nYou only need a second product when the two places should differ: a different\nprice, a registration-only bundle, or a pass you do not want clients to see at\nall. See Creating entry passes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A client on an open programme has nothing to buy in their profile — why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The pass product has to be attached to the class, not just created. Open the\nclass, add the product under the products card, and make sure Available in the\nclient's profile is ticked. Until then the client's profile has nothing to\noffer them, however many pass products exist in your product list."
       }
     },
     {
@@ -121,7 +137,7 @@
       "name": "Can a client use one entry pass for two children registered in the same class?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. An entry pass is linked to a specific registration. If two children are registered separately — even in the same class — each registration requires its own entry pass. The pass purchased during one registration cannot be used to deduct entries from another registration.\n\nTo share a pass across multiple registrations in the same class, the classes must be linked. Class linking is typically used to share a pass across different classes within a programme, not across separate registrations within one class. For two children in the same group, the standard approach is to purchase a separate entry pass for each registration.\n\nSee: Linked classes."
+        "text": "Yes — entry passes belong to the client, not to one registration.\n\nPasses are held per client per company. When a session is booked, Zooza takes\nthe client's next unused entry — the one expiring soonest — whichever\nregistration the session belongs to. So a parent who buys a 10-entry pass and\nhas two children registered separately draws both children's sessions from that\nsame pool of 10.\n\nThat is worth saying out loud to parents, because it cuts both ways: ten entries\nshared between two children is five sessions each, not ten. If you want each\nchild to have their own allowance, sell each of them their own pass — and\nremember that Zooza will still spend whichever entry expires first, so it cannot\nkeep the two allowances apart for you.\n\nWhat a pass does not do is decide which sessions a client may book. That is\nwhat linked classes are for: linking classes lets\none registration book sessions across the whole pool of linked classes. The pass\nwas never limited to a class in the first place."
       }
     },
     {
@@ -145,7 +161,15 @@
       "name": "Why does the class say 9 enrolled but nobody is booked for tomorrow's session?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because those are two different things in a Pay-as-you-go programme:\n\n- Enrolled — the client has a booking in the class. That booking is their key to the client portal; it does not put them in any session.\n- Booked on a session — the client has picked that date from their portal (or the calendar). Only these people appear on the session's register.\n\nSo a class can show more enrolments than its capacity — capacity is checked per session, not per class — and a session can have zero attendees while the class is \"full\" of enrolments. When you look at the register for a session, you are looking at session bookings only."
+        "text": "Because those are two different things in a Pay-as-you-go programme:\n\n- Enrolled — the client has a booking in the class. That booking is their key to the client portal; it does not put them in any session.\n- Booked on a session — the client has picked that date from their portal (or the calendar). Only these people appear on the session's register.\n\nSo a class can show more enrolments than its capacity — capacity is checked per session, not per class — and a session can have zero attendees while the class is \"full\" of enrolments. When you look at the register for a session, you are looking at session bookings only.\n\nSince 21 September 2026 the class surfaces say this themselves rather than\nleaving you to work it out. On an open programme:\n\n- The class tile shows how many people are booked on the next session\n  against that session's places, plus the number of sign-ups as a plain count.\n  The old \"enrolled / capacity\" bar is gone — on an open class it divided\n  sign-ups by a per-session seat limit, which meant nothing.\n- Class capacity in the class settings is labelled as what it is: the number\n  of places in one session, not a ceiling on sign-ups.\n- The Report card on the class shows the sign-up count and, below it, how\n  many sign-ups have booked no upcoming session.\n- A booking's detail says whether that person has any upcoming session\n  booked, and how many."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which of my sign-ups have not booked anything?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open the class and look at the Report card: it says how many sign-ups have\nbooked no upcoming session. Click that number — it opens the bookings list\nfiltered to exactly those people, where you can select them and send them a\nmessage.\n\nTwo things to keep in mind when you read the figure:\n\n- It means has not booked in the near term, not \"never booked\". Somebody who\n  attended for months and has simply not booked their next session is counted.\n- Do not subtract it from the sign-up count. The two figures count slightly\n  different populations — guests appear in the not-booked figure but not in the\n  sign-up count — so \"12 sign-ups, 5 not booked\" does not mean 7 people are\n  booked.\n\nThere is no filter control for this on the bookings list itself; the class is\nthe only way in, which keeps the figure tied to the class it was counted for."
       }
     },
     {
@@ -153,7 +177,7 @@
       "name": "How do I remind enrolled clients to book this week's session?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Do not send them the class booking link. In a Pay-as-you-go programme they are already enrolled; opening that link would create a second booking in the same class. They need to book a session, and they do that from their client portal.\n\n1. Go to Classes and filter by Programme (tick the programme).\n2. Click Send email at the top of the list.\n3. In the body, add a link to the portal using the dynamic tag <code>&#42;&#124;WIDGET_PROFILE_URL&#124;&#42;</code> — select your link text, click the link icon and paste the tag as the address. Each recipient gets their own link that signs them in without a login code and lands on their dashboard, where the Book session button is.\n4. Save the email as a user template so next week it is one click.\n\nThe email goes to everyone with an active booking in those classes, including people who have already booked the session. There is no filter for \"enrolled but not booked on a given session\" and no report that shows who was invited to which session."
+        "text": "Zooza already does this by itself. Once a week, every client on this\nprogramme with no upcoming booked session gets a reminder built around their own\nentry-pass balance, suggesting sessions from their usual slot with a Book\nbutton for each. It switches off on its own after about four unanswered emails,\nand starts again as soon as the client books. It is the Upcoming events\nnotifications toggle on the class (Programmes → Online Booking → Edit);\nsee the session booking reminder.\n\nSend your own email when you want to say something the automatic reminder does\nnot, or when you want to reach clients who have already booked as well.\n\nDo not send them the class booking link. In a Pay-as-you-go programme they are already enrolled; opening that link would create a second booking in the same class. They need to book a session, and they do that from their client portal.\n\n1. Go to Classes and filter by Programme (tick the programme).\n2. Click Send email at the top of the list.\n3. In the body, add a link to the portal using the dynamic tag <code>&#42;&#124;WIDGET_PROFILE_URL&#124;&#42;</code> — select your link text, click the link icon and paste the tag as the address. Each recipient gets their own link that signs them in without a login code and lands on their dashboard, where the Book session button is.\n4. Save the email as a user template so next week it is one click.\n\nThe email goes to everyone with an active booking in those classes, including people who have already booked the session. There is no filter for \"enrolled but not booked on a given session\" and no report that shows who was invited to which session."
       }
     },
     {

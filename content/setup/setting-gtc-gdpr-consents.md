@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0069_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-19"
+last_converted: "2026-09-26"
 related_articles: ["consents-and-agreements-faq", "client-consent-overview", "contact-form-setup", "contact-form-campaign-tracking"]
 ---
 
@@ -79,6 +79,15 @@ The full text of the consent, shown on a separate page when the client clicks th
 | **No separate confirmation needed** | Consent is implicit — by clicking the registration or order button, the client automatically agrees. No checkbox is shown. |
 | **Check box** | A checkbox appears in the form. The client must tick it to proceed. |
 | **Choose Yes or No** | The client explicitly selects Yes or No. You can filter bookings by which answer they chose. |
+
+Nothing is pre-selected. A checkbox renders unticked and neither Yes/No option
+is pre-chosen, so a client cannot accept a consent without acting.
+
+All three types are mandatory — there is no switch that makes a consent optional.
+**Check box** blocks the booking until it is ticked; **Choose Yes or No** requires
+an answer but accepts **I don't agree** and lets the booking through. That is the
+type to use when the client must be able to decline and still register — see
+[Can a consent be optional?](../faq/consents-and-agreements-faq.md#can-a-consent-be-optional-so-the-client-can-decline-it-and-still-complete-the-booking).
 
 ### Require from
 

@@ -7,6 +7,7 @@ audience: ["admin", "client"]
 tags: ["glossary", "terminology", "definitions"]
 status: "published"
 last_converted: "2026-09-26"
+related_articles: ["getting-started-with-zooza", "settings-hub", "programme-settings"]
 ---
 
 # Zooza Glossary
@@ -112,6 +113,11 @@ For a class that has run, archive. Deleting a class does not delete its bookings
 
 ### Cancellation fee
 An amount retained when a client cancels, rather than refunding in full.
+
+### Consent
+A statement the client accepts while booking — terms and conditions, a GDPR notice, a marketing opt-in, a photo permission, a health declaration. Set up in **Settings → General → Consents & Agreements**, and recorded on the client's profile with a version number and a timestamp, so you can show later exactly what they agreed to and when.
+
+> Every consent is mandatory. A **Check box** consent has to be ticked before the booking can be submitted; **Choose Yes or No** is the type to use when a client must be able to decline and register anyway. See [Consents and agreements](../setup/setting-gtc-gdpr-consents.md).
 
 ### Credit
 An amount held on a booking for the client to use later. Comes in several kinds — a make-up session credit, a discount credit created from an overpayment, an entry pass, a gift voucher — all listed together on the booking under **Credits and make-up sessions**.

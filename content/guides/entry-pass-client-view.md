@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/entry-pass-client-profile.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-22"
+last_converted: "2026-09-26"
 related_articles: ["creating-entry-passes", "pay-as-you-go-programme", "client-profile-101", "orders-and-products-faq"]
 ---
 
@@ -57,17 +57,49 @@ If you have the order form widget deployed on your website, clients can purchase
 
 ![Screenshot — entry pass client view](../../assets/images/entry-pass-client-view-05.png)
 
+## How the client books sessions
+
+From 25 September 2026 the client picks **several sessions at once**.
+
+1. They open the session picker — from their dashboard, from the programme, or
+   straight from a link in a reminder email.
+2. They tick every session they want. Nothing is booked yet.
+3. A bar along the bottom keeps count as they tick: how many entry passes the
+   selection will use and how much, if anything, is left to pay.
+4. They confirm once. All the sessions are booked in one step.
+5. If anything is owed, they are taken to payment — card there and then, or the
+   payments tab of their profile for a transfer.
+
+They get **one confirmation email listing every session they booked**, not one
+per session.
+
+A client registering for the programme for the first time is carried into the
+picker automatically: the confirmation screen counts down five seconds and then
+continues, and clicking anywhere stops it if they want to read the screen first.
+They are signed in on the way, so there is no login code to type and no
+dashboard to hunt through.
+
+A client who holds valid passes but has booked nothing sees a prompt on their
+dashboard rather than having to find the booking button inside a programme row.
+
+And if a client picks a session in your calendar widget before they have
+registered, that session is remembered through registration and is waiting
+pre-selected in the picker afterwards. It is not held for them — somebody else
+can still take the last place while they are registering.
+
 ## How entries are deducted
 
 Each time a client books a session in a Pay-as-you-go programme, one entry is deducted from their pass. The process is automatic:
 
-1. The client opens their profile and navigates to the programme.
-2. They select an available session and click to book it.
-3. The system checks if the client has a valid entry pass (non-expired, with remaining entries).
-4. If valid, one entry is deducted and the session is booked.
-5. If the client cancels the session, the entry is returned to their pass.
+1. The client selects the sessions they want in the picker.
+2. The system checks the client's passes (non-expired, with remaining entries).
+3. One entry is deducted per session booked.
+4. If the client cancels the session, the entry is returned.
 
-> **Note:** If **Require a valid entry pass** is enabled on the programme, clients without a valid pass cannot book sessions at all. If disabled, clients can book and pay per session normally.
+Entries come from the client's own pool of passes at your company — not from a
+particular booking — and Zooza always spends the entry that expires soonest.
+
+> **Note:** What happens when a client has no pass depends on the programme's **How clients pay for sessions** setting — passes only (booking refused), payment only, pass first then payment, or client chooses each time. See [Pay-as-you-go programme](pay-as-you-go-programme.md#how-clients-pay-for-sessions). This replaced the old "Require a valid entry pass" switch on 25 September 2026.
 
 ## Viewing the pass on a booking
 

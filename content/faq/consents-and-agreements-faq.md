@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-26"
+related_articles: ["setting-gtc-gdpr-consents", "client-consent-overview", "online-registration", "contact-form-setup"]
 ---
 
 
@@ -52,6 +53,47 @@ For the full setup, see [Consents and agreements](../setup/setting-gtc-gdpr-cons
 | **Choose Yes or No** | An explicit Yes/No choice — clients can decline, and you can filter by their answer |
 
 Use **Check box** or **No separate confirmation needed** for mandatory consents like T&C or GDPR. Use **Yes or No** for optional consents like marketing opt-in where you need to track both acceptance and refusal.
+
+## Can a consent be optional, so the client can decline it and still complete the booking?
+
+Yes — but through the **Choose Yes or No** type, not through a checkbox.
+
+Every consent you create in **Consents & Agreements** is mandatory. There is no
+"optional" switch on the consent itself, and a **Check box** consent blocks the
+booking until it is ticked: the client sees the required-field marker and cannot
+submit.
+
+**Choose Yes or No** is how a client declines and still registers. The two
+options are **I agree** and **I don't agree**, neither is pre-selected, the
+client has to pick one, and **I don't agree** is a valid answer — the booking
+goes through and the refusal is recorded against their profile as
+**Agreed: No**. You can then find those clients with the **Declined** filter
+button on the consent card.
+
+So the choice is:
+
+| You want | Use |
+|---|---|
+| The client cannot book without agreeing | **Check box** |
+| The client must answer, but may say no and still book | **Choose Yes or No** |
+| Agreeing is implied by clicking Register | **No separate confirmation needed** |
+
+What you cannot currently build is a single checkbox that starts unticked, may
+be left unticked, and still lets the booking through. If a lawyer or a
+regulator asks you for exactly that — a common request around the 14-day
+withdrawal notice, where the client must be able to complete the purchase
+without waiving the cooling-off period — set that consent to **Choose Yes or No**
+and leave the text unchanged. The client's decision is then explicit, dated and
+versioned, which is what the record has to show.
+
+Nothing is ever pre-ticked. A checkbox consent and both Yes/No options render
+empty on a freshly opened form, so a client can never accept something by
+accident.
+
+## Is there a "Select all" checkbox above the consents?
+
+No. Each consent is its own control and the client ticks or answers them one at
+a time. There is no master checkbox that accepts the whole block at once.
 
 ## How do I add a health declaration or "I confirm my child is healthy" checkbox to the registration form?
 

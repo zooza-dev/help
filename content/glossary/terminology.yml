@@ -184,9 +184,42 @@ terms:
       it: "Pagamento a sessione"
       fr: "Paiement à la séance"
     intent_keywords:
-      en: ["pay as you go", "drop in", "single session", "flexible", "per session", "no commitment"]
-      sk: ["platba za termín", "jednotlivé termíny", "bez záväzkov", "drop-in"]
-      de: ["einzeln", "flexibel", "ohne Bindung", "einzelne Stunde"]
+      en: ["pay as you go", "drop in", "single session", "flexible", "per session", "no commitment",
+           "signed up but not booked", "nobody booked", "who has not booked"]
+      sk: ["platba za termín", "jednotlivé termíny", "bez záväzkov", "drop-in",
+           "prihlásený ale neprihlásený na termín", "nikto nie je prihlásený", "kto si nerezervoval"]
+      de: ["einzeln", "flexibel", "ohne Bindung", "einzelne Stunde", "angemeldet aber nicht gebucht"]
+    do_not_confuse_with:
+      - term: "Sign-up vs session booking"
+        reason: >
+          On a Pay-as-you-go (open) programme a registration is only a SIGN-UP — it puts nobody
+          in any session. The client must then book individual sessions from their profile.
+          "Enrolled: 9" and "nobody is coming tomorrow" are both true at once, and class
+          capacity is a PER-SESSION seat limit, never a cap on sign-ups.
+    ai_notes: >
+      SIGN-UPS ARE NOT ATTENDANCE (shipped 2026-09-21, app spec APP-20260920-001/-002 +
+      API-20260921-001): open classes no longer show an enrolled/capacity bar. The class tile
+      shows bookings on the NEXT session against that session's places plus a plain sign-up
+      count; the class Report card shows how many sign-ups have booked no upcoming session and
+      links to that filtered booking list (the only way in — there is no filter control on the
+      list itself); a booking's detail says whether that person has anything booked. Two traps:
+      "not booked" means not booked IN THE NEAR TERM, not "never booked", and the not-booked
+      figure is NOT subtractable from the sign-up count (guests count in one, not the other).
+
+      WEEKLY BOOKING NUDGE (shipped 2026-09-25, API-20260924-004 + APP-20260925-003): the old
+      daily "upcoming sessions" digest is gone. Open-programme clients with no upcoming booked
+      session now get ONE personalised email a week with Book buttons, chosen from their own
+      state: passes expiring within 14 days > 2 or fewer passes left > healthy balance; and for
+      non-holders, unpaid pass order > passes lapsed unused within 30 days > no passes. Clicking
+      Book never books — it opens their picker with the session preselected. It stops itself
+      after ~4 unanswered sends over two months; booking restarts it automatically, and an admin
+      can restart it on the booking's Communication card — but NOT when the client has turned
+      reminders off, where the card deliberately shows no button.
+
+      BATCH BOOKING (shipped 2026-09-25, W1-20260924-001): clients pick several sessions at once
+      in one picker with a running passes-used / left-to-pay bar, commit once, then pay once.
+      They get ONE confirmation listing every session (template type sessions_booked, merge var
+      BOOKED_SESSIONS) instead of one email per session.
     public: true
 
   - id: one-off-event
@@ -1509,6 +1542,22 @@ terms:
       option, open the order and use Add item to order → back on the booking, Add payment.
       Only at that last step are the entries generated and released to the parent.
       Confirmed 2026-09-13.
+
+      OWNERSHIP (confirmed 2026-09-26, api-v1 Attendance::get_unused_entrance_voucher +
+      user.php::widget__get_entrance_vouchers): entries belong to the CLIENT at that
+      company (origin_user_id + origin_company_id) — NOT to a registration, a class or a
+      child. Redemption picks the client's next unused entry ordered by soonest expiry,
+      whatever registration the session belongs to. So two children of the same parent,
+      registered separately, draw from ONE shared pool: ten entries is five sessions each,
+      not ten. The KB claimed the opposite until 2026-09-26 (pay-as-you-go-faq). Linked
+      classes decide which SESSIONS a registration may book — never which passes apply.
+
+      AVAILABILITY (confirmed 2026-09-26): on a product assigned to a class, "Available in
+      the client's profile" (show_in_profile, default on) and "Make available in the booking
+      form" (show_in_registration, default off) are INDEPENDENT checkboxes — one product can
+      be sold in both places. The old advice to create a duplicate mandatory/optional pair
+      was wrong and is corrected in creating-entry-passes. A client with nothing to buy in
+      their profile usually has no product ATTACHED TO THE CLASS, not a missing product.
     public: true
 
   - id: credit-balance
@@ -3356,6 +3405,74 @@ terms:
       temperature word for internal or marketing-audience text. Never attach
       cold / warm to "parent", "child" or "family".
     public: false
+
+  - id: consent
+    canonical_en: "Consent"
+    category: "settings"
+    definition: >
+      A statement a client accepts on the booking form, the order form or a contact
+      form — terms and conditions, GDPR notice, marketing opt-in, photo permission,
+      health declaration. Configured in Settings → General → Consents & Agreements
+      and stored on the client's profile with a version number and a timestamp.
+    context:
+      admin: "Consents & Agreements"
+      client: "Consent"
+      widget: "Consent"
+    deprecated:
+      - "agreement checkbox"
+      - "GTC setting"
+    synonyms:
+      - "agreement"
+      - "terms and conditions"
+      - "GTC"
+      - "GDPR consent"
+    translations:
+      sk: "Súhlas / Obchodné podmienky"
+      cz: "Souhlas / Obchodní podmínky"
+      de: "Zustimmung / AGB"
+      pl: "Zgoda / Regulamin"
+      ro: "Consimțământ / Termeni și condiții"
+      hu: "Hozzájárulás / ÁSZF"
+      it: "Consenso / Termini e condizioni"
+      fr: "Consentement / CGV"
+    intent_keywords:
+      en: ["terms and conditions", "T&C", "GTC", "GDPR", "consent", "health declaration",
+           "waiver", "photo consent", "optional consent", "select all", "14-day withdrawal"]
+      sk: ["obchodné podmienky", "VOP", "GDPR", "súhlas", "čestné prehlásenie",
+           "súhlas s fotením", "nepovinný súhlas", "označiť všetky", "odstúpenie od zmluvy"]
+      cz: ["obchodní podmínky", "VOP", "souhlas", "GDPR", "odstoupení od smlouvy"]
+      de: ["AGB", "Einwilligung", "DSGVO", "Widerrufsrecht"]
+      ro: ["termeni și condiții", "consimțământ", "GDPR"]
+    do_not_confuse_with:
+      - term: "Extra field / Additional field"
+        reason: >
+          A consent is a tick or a Yes/No answer that is versioned and auditable.
+          An extra field collects text or a dropdown choice and is not. A health
+          declaration or a waiver is a CONSENT, never an extra field.
+    ai_notes: >
+      WHERE: Settings → General → Consents & Agreements. This is also the answer to
+      "where do I update our terms and conditions" — they are not in Programmes.
+
+      MANDATORY BY DESIGN (confirmed 2026-09-26 in app pages/settings/consents.js and
+      widgets_src/shared/agreements/collect.js): every consent created through the admin
+      UI is mandatory. There is NO optional switch — the save payload never sends the
+      mandatory flag. A Check box consent blocks the booking until it is ticked. The way
+      to let a client DECLINE and still register is the "Choose Yes or No" type: the
+      client must answer, "I don't agree" is accepted, the booking completes and the
+      refusal is recorded as Agreed: No, filterable under Declined. Nothing is ever
+      pre-ticked — a checkbox and both Yes/No options render empty.
+
+      THE 14-DAY WITHDRAWAL QUESTION (Slovak/Czech lawyers ask for this repeatedly, e.g.
+      Legalion 2026-09-23): "make the consent optional, unticked by default, and let the
+      registration complete without it" → Choose Yes or No is the answer. A single
+      checkbox that may be left unticked and still submit does not exist.
+
+      "SELECT ALL" above the consent block does not exist, in any form. That is a
+      development request, not a configuration question.
+
+      VERSIONING: an ordinary save edits the text in place and re-prompts nobody. Ticking
+      "Require clients to consent again" mints a new version and is irreversible.
+    public: true
 
 # ──────────────────────────────────────────────
 # ENTITY MISATTRIBUTION PATTERNS (AI use only)
