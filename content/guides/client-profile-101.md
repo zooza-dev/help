@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0023_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-22"
+last_converted: "2026-09-26"
 related_articles: ["client-profile-faq", "client-management-faq", "documents"]
 ---
 
@@ -37,6 +37,24 @@ There is no password to create or remember. Each login sends a fresh email.
 ![Screenshot — client profile 101](../../assets/images/client-profile-101-02.png)
 
 > **Tip for admins:** Use the `WIDGET_PROFILE_URL` dynamic tag in your email templates to automatically insert the correct Client Profile URL for each client.
+
+### Testing the profile without seeing your own data
+
+The Client Profile URL is the same address for everybody — what a person sees
+depends on who is logged in **in that browser**. So if you open a link you sent
+to a client while your own client account is still logged in on that computer,
+you see your own profile, not theirs. Two consequences worth knowing:
+
+- **Test in a private window**, or log out first. Otherwise you are looking at
+  your own bookings and payments and concluding that every client sees them.
+- An unpaid order of yours — a leftover test purchase, a gift voucher you never
+  paid for — then shows up as an outstanding payment, and it is easy to believe
+  the whole customer base is seeing it. They are not: an outstanding item appears
+  only in the profile of the client whose order it is. Delete obsolete test
+  orders under **Orders** so they stop appearing in yours.
+
+If you need to be certain what one client sees, ask support to check that
+client's profile view rather than clicking the link yourself.
 
 ## Home page overview
 

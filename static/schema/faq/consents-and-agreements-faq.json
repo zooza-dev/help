@@ -126,6 +126,22 @@
     },
     {
       "@type": "Question",
+      "name": "Can I change the order the consents appear in on the form?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not from Settings. Consents carry an order, but there is no control for it in\nConsents & Agreements — if you need a particular consent to come first, ask\nsupport to change its priority."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I edit the legal sentence above the Register button?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. That line is Zooza's own text, not one of your consents, so it does not\nappear in Consents & Agreements and you cannot edit or remove it. If the\nwording reads badly in your language — or names a button whose label differs on\nyour form — send support the wording you want and they can change the\ntranslation."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Can I change the \"I agree / I don't agree\" label text on consent choices?",
       "acceptedAnswer": {
         "@type": "Answer",

@@ -169,6 +169,20 @@ When editing the consent in **Settings → General → Consents & Agreements**, 
 
 Yes. Click **Add** in **Settings → General → Consents & Agreements** to add as many consents as needed. Each one is configured and displayed independently. If you need the same consent to appear on both the booking form and the order form, create two separate entries — one for each form type.
 
+## Can I change the order the consents appear in on the form?
+
+Not from Settings. Consents carry an order, but there is no control for it in
+**Consents & Agreements** — if you need a particular consent to come first, ask
+support to change its priority.
+
+## Can I edit the legal sentence above the Register button?
+
+No. That line is Zooza's own text, not one of your consents, so it does not
+appear in **Consents & Agreements** and you cannot edit or remove it. If the
+wording reads badly in your language — or names a button whose label differs on
+your form — send support the wording you want and they can change the
+translation.
+
 ## Can I change the "I agree / I don't agree" label text on consent choices?
 
 Not through the Zooza admin app. The button/radio label text is rendered by the booking widget and is not configurable via the Settings UI.

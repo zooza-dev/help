@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-26"
+related_articles: ["xero-integration", "stripe-payments-faq", "invoicing-overview", "invoice-profiles-and-bank-accounts", "payments-and-billing-faq"]
 ---
 
 # Xero Integration FAQ
@@ -22,7 +23,17 @@ Yes. You can switch off automatic invoice generation so invoices are not sent to
 
 ## Can I generate invoices retroactively?
 
-Yes. After you have finalized your Xero settings, you can go through existing bookings and generate invoices for all past payments. This allows you to launch bookings first and sort out invoicing later.
+Within the current financial year, yes. After you have finalized your Xero
+settings, you can go through existing bookings and generate invoices for past
+payments — so you can launch bookings first and sort out invoicing later.
+
+**Not into a previous year.** Xero refuses invoices dated in a closed period, so
+Zooza cannot create last year's missing invoices for you now. If a period was
+never invoiced and the year has since closed, those invoices have to be entered
+in Xero by hand. Worth knowing before you postpone invoicing across a year end,
+and worth checking the connection has not expired — an expired Xero connection
+silently stops the sync until you re-synchronise it in **Settings → Billing &
+Payments → Invoice profiles**.
 
 ## My invoices show "tax exempt" — how do I fix VAT settings?
 
@@ -35,6 +46,52 @@ Go to **Settings → Billing & Payments → Invoice profiles** in Zooza. From th
 ## Do invoices get marked as paid automatically?
 
 Zooza can automatically mark invoices as paid in Xero when the corresponding payment is received through Stripe. This feature needs to be enabled — contact support if it is not working on your account.
+
+## A payment arrived in Stripe but there is no invoice in Xero — why?
+
+Almost always because the payment never reached Zooza.
+
+**Zooza asks Xero for an invoice only once the payment is recorded in Zooza**, and
+only once the debt for that period is settled. A payment taken outside Zooza — a
+Stripe payment link you sent by hand, a card machine, a transfer straight into
+your bank — is invisible to Zooza, so no invoice is ever triggered. Record it
+against the registration (**Add payment** on the booking) and the invoice
+follows.
+
+This is also why chasing a mismatch by comparing your Stripe transaction list
+with your Xero invoice list rarely works. Two things break that comparison:
+
+- **Zooza combines several payments on one registration into a single invoice.**
+  Three instalments paid by card can be one invoice for the full amount. Counting
+  transactions against invoices will always look wrong; compare **total received
+  against total invoiced on the registration** instead.
+- **Reference numbers in a Stripe export are the client's reference, not a Zooza
+  booking number.** Matching them as booking numbers sends you to the wrong
+  bookings.
+
+## A payment is missing from my Zooza payments export
+
+Check which export you used. The **Card transactions** report contains only card
+payments taken through Zooza. Payments somebody recorded by hand — including
+"paid by Stripe link", cash, and bank transfers — sit under **Payments →
+Transactions → Cash & transfer**. A reconciliation that only looks at card
+transactions will be short by exactly those amounts, and this is the single most
+common reason a provider's Stripe total does not match their Zooza total.
+
+If a payment appears in neither list, it was taken outside Zooza. Open it in
+Stripe to get the customer's name and email, then decide whether it belongs to a
+booking and should be recorded against it.
+
+## Does Zooza create credit notes in Xero when I refund someone?
+
+No, and that is deliberate — credit note and refund treatment differs too much
+between countries and accounting setups for Zooza to guess. Credit notes are
+raised in Xero by hand.
+
+What Zooza gives you is the refund record to raise them from: **Payments →
+Refunds → Issued**, filtered by date range and exportable. If your tax authority
+requires a separate credit note per refund rather than one monthly total, that
+export is the list to work from.
 
 ---
 

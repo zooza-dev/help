@@ -17,7 +17,7 @@
       "name": "Can I generate invoices retroactively?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. After you have finalized your Xero settings, you can go through existing bookings and generate invoices for all past payments. This allows you to launch bookings first and sort out invoicing later."
+        "text": "Within the current financial year, yes. After you have finalized your Xero\nsettings, you can go through existing bookings and generate invoices for past\npayments — so you can launch bookings first and sort out invoicing later.\n\nNot into a previous year. Xero refuses invoices dated in a closed period, so\nZooza cannot create last year's missing invoices for you now. If a period was\nnever invoiced and the year has since closed, those invoices have to be entered\nin Xero by hand. Worth knowing before you postpone invoicing across a year end,\nand worth checking the connection has not expired — an expired Xero connection\nsilently stops the sync until you re-synchronise it in Settings → Billing &\nPayments → Invoice profiles."
       }
     },
     {
@@ -41,7 +41,31 @@
       "name": "Do invoices get marked as paid automatically?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zooza can automatically mark invoices as paid in Xero when the corresponding payment is received through Stripe. This feature needs to be enabled — contact support if it is not working on your account.\n\n---"
+        "text": "Zooza can automatically mark invoices as paid in Xero when the corresponding payment is received through Stripe. This feature needs to be enabled — contact support if it is not working on your account."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A payment arrived in Stripe but there is no invoice in Xero — why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Almost always because the payment never reached Zooza.\n\nZooza asks Xero for an invoice only once the payment is recorded in Zooza, and\nonly once the debt for that period is settled. A payment taken outside Zooza — a\nStripe payment link you sent by hand, a card machine, a transfer straight into\nyour bank — is invisible to Zooza, so no invoice is ever triggered. Record it\nagainst the registration (Add payment on the booking) and the invoice\nfollows.\n\nThis is also why chasing a mismatch by comparing your Stripe transaction list\nwith your Xero invoice list rarely works. Two things break that comparison:\n\n- Zooza combines several payments on one registration into a single invoice.\n  Three instalments paid by card can be one invoice for the full amount. Counting\n  transactions against invoices will always look wrong; compare total received\n  against total invoiced on the registration instead.\n- Reference numbers in a Stripe export are the client's reference, not a Zooza\n  booking number. Matching them as booking numbers sends you to the wrong\n  bookings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A payment is missing from my Zooza payments export",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check which export you used. The Card transactions report contains only card\npayments taken through Zooza. Payments somebody recorded by hand — including\n\"paid by Stripe link\", cash, and bank transfers — sit under Payments →\nTransactions → Cash & transfer. A reconciliation that only looks at card\ntransactions will be short by exactly those amounts, and this is the single most\ncommon reason a provider's Stripe total does not match their Zooza total.\n\nIf a payment appears in neither list, it was taken outside Zooza. Open it in\nStripe to get the customer's name and email, then decide whether it belongs to a\nbooking and should be recorded against it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Zooza create credit notes in Xero when I refund someone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, and that is deliberate — credit note and refund treatment differs too much\nbetween countries and accounting setups for Zooza to guess. Credit notes are\nraised in Xero by hand.\n\nWhat Zooza gives you is the refund record to raise them from: Payments →\nRefunds → Issued, filtered by date range and exportable. If your tax authority\nrequires a separate credit note per refund rather than one monthly total, that\nexport is the list to work from.\n\n---"
       }
     },
     {
