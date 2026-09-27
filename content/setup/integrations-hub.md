@@ -6,12 +6,12 @@ type: "setup"
 product_area: "Settings"
 sub_area: ""
 audience: ["admin"]
-tags: ["integrations", "stripe", "gocardless", "fastpay", "direct-debit", "xero", "power-bi", "whatsapp", "invoicing", "accounting", "claude", "mcp", "ai"]
+tags: ["integrations", "stripe", "gocardless", "global-payments", "fastpay", "direct-debit", "xero", "power-bi", "whatsapp", "invoicing", "accounting", "claude", "mcp", "ai"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-29"
+last_converted: "2026-09-27"
 related_articles: ["claude-plugin", "slack-integration", "whatsapp-integration"]
 ---
 
@@ -30,6 +30,7 @@ Go to **Settings → Integrations** to see all available integrations and their 
 | **Stripe Connect** | Accept online card payments. New connections use a **Standard** account — you manage your Stripe account directly at [dashboard.stripe.com](https://dashboard.stripe.com). If you connected before March 2026, you have an **Express** account; access your dashboard and invoices from within Zooza. [Learn more →](../../payments/billing-and-invoicing) |
 | **GoCardless** | Collect Direct Debit mandates from clients. [Set up GoCardless →](../guides/gocardless-direct-debit-mandates.md) |
 | **GoCardless Bank Data** | Automatic bank payment matching via GoCardless open banking. Configured per profile. |
+| **Global Payments** *(EU/EEA)* | Accept online card payments, with one or more merchant accounts routed per billing profile — so each legal entity settles into its own account. [Set up Global Payments →](../guides/global-payments.md) |
 | **FastPay** *(UK)* | Collect UK BACS Direct Debit payments — push monthly collections and reconcile outcomes automatically. Region-restricted to the UK. [Set up FastPay →](../guides/fastpay-direct-debit.md) |
 
 ---

@@ -6,7 +6,7 @@
 # ║  Edit there, then run: python3 scripts/sync_terminology.py      ║
 # ╚══════════════════════════════════════════════════════════════════╝
 #
-# Last synced: 2026-09-26
+# Last synced: 2026-09-27
 # Used by: scripts/normalize_terminology.py → build/terminology/dictionary.json
 #
 # Fields per term:
@@ -1493,6 +1493,22 @@ terms:
       IGNORED = never imported into the system; a payment in "ignored records" cannot be
       paired to a booking until it is imported. Pairing only targets ACTIVE registrations —
       a cancelled registration will not be paired automatically; add the payment manually.
+
+      GOCARDLESS FEED EXPIRY (shipped 2026-09-20, API-20260920-001): the bank authorisation
+      lapses at the EARLIER of the period the bank granted and 90 days — 90 is the ceiling,
+      not the rule, and feeds have lapsed at 84 days. Company owners now get a warning
+      14 DAYS BEFORE and a second message when it has lapsed, both as email and as an
+      in-app notification; the invoice profile and each bank account show "Reconnect needed"
+      or "Reconnect needed in N days". Before this the feed just went quiet — one company
+      sat dark for 29 days. The old indicator assumed 180 days from connection and was
+      therefore silent on feeds that had already stopped.
+
+      RECONNECTING REPEATEDLY IS NO LONGER HARMFUL (same spec): every reconnect used to mint
+      a new requisition while the old ones stayed LINKED for up to 180 days, all competing
+      for the same ~4 calls/day quota — one company held 17 at once, which is itself what
+      broke feeds. Activating a new agreement now supersedes the older ones for the same
+      company + institution. Zooza deliberately does NOT revoke the old one at GoCardless
+      (irreversible, no sandbox); it simply stops polling it.
     public: true
 
   - id: entry-pass
@@ -2356,6 +2372,15 @@ terms:
           The profile is WHO invoices and to which account. The invoice engine is WHICH
           system produces the document (Zooza's own, SuperFaktura, Fakturoid, Számlázz,
           Oblio, SmartBill). One profile selects one engine.
+      - term: "Global Payments connection"
+        reason: >
+          Shipped 2026-09-22. The invoice profile decides WHO ISSUES the invoice; the
+          Global Payments connection decides WHICH MERCHANT ACCOUNT RECEIVES the money.
+          They are mapped to each other but nothing enforces agreement — an unmapped
+          profile falls through to the fallback connection, so a multi-entity company can
+          invoice from entity X and settle into entity Y. Zooza shows the routing rather
+          than blocking it. If someone asks "which account does this money go to", the
+          answer is the Global Payments binding, not the invoice profile.
     ai_notes: >
       MOST COMMON FAULT (confirmed 2026-08-30): a client reports "no account number and
       no QR code on the payment in my profile". Cause is an invoice profile with no bank
@@ -3405,6 +3430,55 @@ terms:
       temperature word for internal or marketing-audience text. Never attach
       cold / warm to "parent", "child" or "family".
     public: false
+
+  - id: global-payments
+    canonical_en: "Global Payments"
+    category: "payments"
+    definition: >
+      A card payment gateway, available to companies in the EU and EEA. Unlike the other
+      gateways, a company can connect several merchant accounts and route each billing
+      profile to one of them, so each legal entity settles into its own account.
+    context:
+      admin: "Global Payments"
+      client: "—"
+      widget: "—"
+    synonyms:
+      - "GP"
+    translations:
+      sk: "Global Payments"
+      cz: "Global Payments"
+      de: "Global Payments"
+      ro: "Global Payments"
+      hu: "Global Payments"
+    intent_keywords:
+      en: ["global payments", "GP", "merchant account", "app id", "app key",
+           "card gateway", "which account does the money go to", "fallback connection"]
+      sk: ["global payments", "obchodnícky účet", "platobná brána", "kam chodia peniaze"]
+      ro: ["global payments", "cont de comerciant", "procesator de carduri"]
+    do_not_confuse_with:
+      - term: "Invoice profile"
+        reason: >
+          The invoice profile issues the invoice; the Global Payments connection receives
+          the money. See the invoice-profile entry.
+    ai_notes: >
+      WHERE (shipped 2026-09-22): Settings -> Integrations -> Global Payments. Two cards —
+      Connections (label + App ID + App Key, validated server-side on save) and Billing
+      profile routing (one row per profile, unset = fallback). EU/EEA only; the option is
+      region-gated, NOT gated on having a connection, so a company can see it before
+      connecting anything.
+
+      CREDENTIALS: the App ID is masked after saving and the App Key is never returned.
+      Rotating the key replaces it without disturbing bindings. The FIRST connection added
+      becomes the fallback automatically. A connection cannot be deleted while it is the
+      fallback or has profiles bound to it.
+
+      TOKENS DO NOT MIGRATE: a stored card and an already-armed scheduled instalment stay
+      with the merchant account that captured them. Rebinding a billing profile changes
+      only NEW payments. The app warns when the source connection is still in use.
+
+      Refunds are supported (2026-09-23). The Integrations hub shows a connection COUNT,
+      not a connected/not-connected badge.
+    public: true
 
   - id: consent
     canonical_en: "Consent"

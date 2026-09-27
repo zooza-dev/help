@@ -6,7 +6,7 @@ product_area: "Settings"
 audience: ["admin", "client"]
 tags: ["glossary", "terminology", "definitions"]
 status: "published"
-last_converted: "2026-09-26"
+last_converted: "2026-09-27"
 related_articles: ["getting-started-with-zooza", "settings-hub", "programme-settings"]
 ---
 
@@ -165,6 +165,11 @@ Structured feedback collected from clients after sessions or at the end of a pro
 An allowance granted to a specific booking that lets the client attend extra sessions without paying.
 
 **Free credits vs Make-up sessions:** Free credits are granted by an admin as an allowance. [Make-up sessions](#make-up-session) are earned automatically when a client cancels a session before the deadline.
+
+### Global Payments
+A card payment gateway, available to companies in the EU and EEA. Unlike the other gateways, you can connect **several merchant accounts** and route each billing profile to one of them, so each legal entity settles into its own account. Set up under **Settings → Integrations → Global Payments**.
+
+> Do not confuse it with an [Invoice Profile](#invoice-profile). The invoice profile decides who *issues* the invoice; the Global Payments connection decides which merchant account *receives* the money. See [Accept card payments with Global Payments](../guides/global-payments.md).
 
 ---
 

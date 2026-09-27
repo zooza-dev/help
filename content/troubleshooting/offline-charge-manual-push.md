@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-21"
+last_converted: "2026-09-27"
+related_articles: ["global-payments", "fastpay-direct-debit", "gocardless-faq", "payment-templates-creation", "payments-and-billing-faq"]
 ---
 
 # Manually push a scheduled payment to offline charge
@@ -51,6 +52,35 @@ If neither indicator appears, offline charging may not be enabled on this paymen
 4. The existing offline charging process picks up the payment and attempts the charge. You can monitor the result in the charge log.
 
 ![Screenshot — offline charge manual push](../../assets/images/offline-charge-manual-push-01.png)
+
+---
+
+## The charge log — what actually happened
+
+The scheduled payment's detail carries a **charge log** listing every attempt
+Zooza made, what each one came back with, and whether another retry is planned.
+Use it before pushing anything: a payment that has already failed three times
+for "card declined" will fail a fourth time, and the log names the reason.
+
+It appears on a payment that is in the offline queue. It covers both charging
+engines, so a Global Payments charge and a legacy one are described in the same
+words.
+
+> The log was unreachable between March and 23 September 2026 — the component
+> was still there, nothing linked to it. If you looked for it during that time
+> and concluded your payments were not being retried, the retries were happening;
+> only the record of them was missing.
+
+**Read the queue state as a job, not as money.** A payment can report that its
+charge job is `processing` or even `succeeded` while the question "has this been
+paid" is answered somewhere else entirely — on the instalment and the order. The
+legacy charging process never wrote a completion row at all, so a settled
+instalment showing `processing` is normal and not a fault. Always take paid or
+unpaid from the payment itself.
+
+The **push** button follows what the server says is possible rather than what the
+screen can guess, so it no longer offers a push on a payment that has already
+been charged.
 
 ---
 

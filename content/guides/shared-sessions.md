@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-09-27"
 ---
 
 # Shared sessions — two classes in one room
@@ -75,6 +75,28 @@ The two kinds of booking hold places differently:
 So a room with ten places and six enrolled students has four places on every date, and those four are all a drop-in can take. The class still says capacity ten; the shared session says four.
 
 The **Free places by date** view shows the shared room capacity, the places held on every date, the places booked for that specific date, and what is left. **Read that number, not the class capacity**, when you are deciding whether someone fits.
+
+### The class's own capacity setting stops applying
+
+Since 25 September 2026 the class detail says so itself rather than leaving you
+to work it out. On a class in a shared-sessions set, the Settings card no longer
+prints the class capacity as if it governed anything. It shows the capacity the
+room resolves to and states where it comes from:
+
+> Set by the shared room. The class setting (10) does not apply to sessions
+> shared with other classes, and individual sessions may differ.
+
+Open the capacity field to edit it and you get the same warning — *"This class
+shares its room with other classes. The room caps sessions at 12, whatever is
+set here."* The value is still editable, because a class can leave the set
+later, but while it is in one the number is inert.
+
+The old **"Class capacity exceeds room capacity"** warning no longer fires on a
+shared class either. It was comparing two numbers that were never both in play.
+
+Before this, the card printed the class's own figure verbatim — a class showing
+**Class capacity: 1** with two clients enrolled in a room seating three, which
+is what prompted the change.
 
 ## The attendance register
 

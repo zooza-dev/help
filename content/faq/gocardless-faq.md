@@ -12,7 +12,7 @@ related_articles: ["gocardless-direct-debit-mandates", "offline-charge-manual-pu
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-21"
+last_converted: "2026-09-27"
 ---
 
 # GoCardless Integration FAQ
@@ -44,9 +44,32 @@ After authorization, incoming payments are automatically forwarded to Zooza and 
 
 ## Why did my GoCardless connection expire?
 
-For security reasons, banks limit GoCardless connections to approximately **90 days**. After this period, your bank stops sending transaction data to GoCardless, and Zooza can no longer automatically match payments.
+For security reasons a bank authorisation is not permanent. **90 days is the
+ceiling, not the rule** — the connection lapses at whichever comes first, the
+period your own bank granted or 90 days from the day you authorised it. Feeds
+have lapsed at 84 days. After that the bank stops sending transaction data to
+GoCardless, and Zooza can no longer match payments automatically.
 
-You will receive an email notification from Zooza before your connection expires. If you miss the renewal window, payments will stop appearing in Zooza until you reconnect.
+## Will Zooza tell me before the connection lapses?
+
+Yes, since 20 September 2026. Everyone with company-edit rights gets:
+
+- a warning **14 days before** the authorisation lapses, and
+- a second message when it has lapsed.
+
+Both arrive as an email and as a notification inside Zooza. Before this, a feed
+that lapsed simply went quiet — one company went 29 days without payments
+appearing before anyone noticed. If that has happened to you, the silence was
+the symptom.
+
+You can also see the state without waiting for a message. In **Settings →
+Billing & Payments → Invoice profiles**, the profile and each bank account show
+**Reconnect needed** once it has lapsed, or **Reconnect needed in N days** while
+the warning window is running. A healthy connection shows nothing.
+
+> Until September 2026 that indicator assumed every connection lasted 180 days,
+> so it could stay silent on a feed that had already stopped. It now reads the
+> real expiry date the bank gave.
 
 ## How do I renew an expired GoCardless connection?
 
@@ -60,7 +83,21 @@ Alternatively, you can initiate the reconnection from Zooza:
 2. Open your default billing profile.
 3. Click your bank logo to start the authorization flow again.
 
-After renewal, the 90-day countdown restarts.
+After renewal, the countdown restarts from the new authorisation.
+
+**Reconnecting more than once is no longer harmful.** Every reconnect used to
+create a new authorisation while the old ones stayed live at your bank for up to
+180 days, and they all competed for the same handful of daily calls the bank
+allows — which is what broke feeds in the first place. One company ended up with
+17 live authorisations at once. Since 20 September 2026 activating a new
+authorisation retires the older ones for the same bank automatically, so a
+customer who clicks **Connect** three times because nothing confirmed it worked
+no longer starves their own feed.
+
+Zooza stops using the old authorisation but deliberately does **not** revoke it
+at GoCardless — revoking cannot be undone, and a wrong revocation would mean
+re-authorising with the bank from scratch. If you want the old authorisation
+removed at the bank's end, do it in your internet banking.
 
 ## What are the options for automatic payment matching?
 

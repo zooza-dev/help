@@ -4,11 +4,11 @@
 
 ## Summary
 
-- **Total docs checked:** 274
+- **Total docs checked:** 275
 - **Docs with errors:** 0
-- **Docs with warnings only:** 56
+- **Docs with warnings only:** 57
 - **Total errors:** 0
-- **Total warnings:** 149
+- **Total warnings:** 150
 - **Overall:** PASS
 
 ## Checks performed
@@ -121,6 +121,9 @@
 
 ### `content/guides/entry-pass-client-view.md`
 - WARN: description too long (165 chars, max 160)
+
+### `content/guides/global-payments.md`
+- WARN: description too long (173 chars, max 160)
 
 ### `content/guides/individual-sessions-climbing-wall.md`
 - WARN: title too long (78 chars, max 70): `Individual sessions for clients on the climbing wa…`
