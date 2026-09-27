@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-26"
+last_converted: "2026-09-27"
 related_articles: ["pay-as-you-go-programme", "pay-as-you-go-faq", "entry-pass-client-view", "linked-classes", "orders-and-products-faq"]
 ---
 
@@ -70,17 +70,19 @@ You can assign multiple pass types to the same class. For example, you might off
 
 ### Product settings per class
 
-For each assigned product, you can configure where it appears:
+Click **Set up** on the product row to open its settings for this class:
 
+![The Set up panel on a product assigned to a class, showing Maximum number of purchases per booking and the two independent availability checkboxes — Available in the client's profile, unticked, and Make available in the booking form, ticked](../../assets/images/entry-pass-profile-availability.png "Product settings on a class — purchase limit and the two availability checkboxes")
+
+- **Maximum number of purchases per booking** — how many times one client may buy
+  this pass. **0 means unlimited**, which is what an empty field amounts to.
 - **Available in the client's profile** — clients can buy the pass from their
-  profile after they have a booking. Ticked by default.
-
-  ![The Available in the client's profile checkbox on a product assigned to a class](../../assets/images/entry-pass-profile-availability.png "Entry pass available in client profile")
-
+  profile once they have a booking.
 - **Make available in the booking form** — the pass is offered while the client
-  is registering. Not ticked by default.
+  is registering.
 
-  ![The Make available in the booking form checkbox on a product assigned to a class](../../assets/images/entry-pass-booking-form-availability.png "Entry pass available in booking form")
+The two availability checkboxes are **independent**. Tick one, the other, or
+both — as the picture above shows, this product is sold in the booking form only.
 
 ## Two-product setup for dual availability
 
@@ -91,8 +93,6 @@ profile. One product, one price, one place to edit it.
 Create a second product only when you want the two places to differ: a different
 price in the booking form than in the profile, a bundle offered only during
 registration, or a pass you sell at the desk but do not advertise to clients.
-
-![A product assigned to a class with both availability checkboxes ticked](../../assets/images/entry-pass-dual-product-setup.png "One product offered in both the profile and the booking form")
 
 ### Example: 5 EUR and 10 EUR passes
 

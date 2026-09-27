@@ -90,3 +90,74 @@ shots:
     status: unverified
     note: Credits and make-up sessions on a booking.
 
+
+  # --- 2026-09-27 intake: pictures for what the 19-25 Sep week wrote.
+  #     Playfulmotion's one open programme is Pop-Up Motion Adventures (course 146);
+  #     class 182 is the only one of its three with a booking on it.
+  # consent form: NOT NEEDED. assets/images/setting-gtc-gdpr-consents-02.png is
+  # already this exact screen, captured in September — verified by shooting it and
+  # comparing. A native <select> cannot be screenshotted open, so there is no
+  # picture of the options list to be had; the stale -03.png claiming to be one has
+  # been dropped from the article instead.
+
+  - image: entry-pass-profile-availability.png
+    route: courses/schedules/182?edit=products
+    click: Set up
+    assert: "Available in the client"
+    status: unverified
+    note: >
+      A product assigned to a class, showing the two INDEPENDENT availability
+      checkboxes — "Available in the client's profile" and "Make available in the
+      booking form". Replaces a February picture whose caption invented the names
+      "Profile availability" / "Booking form availability", which is where the bot
+      got them. Used by guides/creating-entry-passes.md.
+
+  - image: open-class-signups-tile.png
+    route: courses/146
+    tall: true
+    assert: "Sign-ups"
+    status: unverified
+    note: >
+      The Classes card on an OPEN programme — bookings on the NEXT session against
+      that session's places, the sign-up count beside it, and Not booked. The old
+      enrolled/capacity bar is gone. Shipped 21 Sep 2026; the strings are
+      schedules__signups / schedules__unengaged / schedules__next_session, which is
+      why this is the tile and not the Report card. Used by faq/pay-as-you-go-faq.md.
+
+  - image: open-course-payment-mode.png
+    route: courses/146/settings?edit=attendance
+    card: Attendance
+    assert: "How clients pay for sessions"
+    status: unverified
+    note: >
+      The four-value "How clients pay for sessions" select that replaced the
+      retired "Require a valid entry pass" toggle on 25 Sep 2026. Used by
+      guides/pay-as-you-go-programme.md and faq/pay-as-you-go-faq.md.
+
+  - image: sessions-booked-template.png
+    route: communication/templates
+    assert: "Sessions booked"
+    status: blocked
+    note: >
+      The Sessions booked row in the Templates list — the one confirmation that
+      lists every session a client booked at once. Only appears for providers who
+      run open programmes.
+
+      BLOCKED: the route and the assert both pass — the row exists — but it is one
+      of 48 alphabetically sorted rows, so it sits far below the fold and the
+      capture returns the top of the list instead. The rows are not `.card` +
+      `.card_header`, so `card:` cannot scroll to it, and the list is narrowed with
+      the "All programme types" filter, which needs two clicks and the tool takes
+      one. Either add a two-step click, or accept that this row has no picture.
+
+  - image: cancellation-limit-settings-01.png
+    route: settings/general
+    card: Settings for programmes
+    assert: "Set a limit for cancelling a scheduled session"
+    status: unverified
+    note: >
+      Where the global cancellation limit actually lives. Both
+      guides/cancellation-limit-settings.md and faq/trials-faq.md said
+      "Settings → Programmes", which check_nav flags as a menu that does not
+      exist. It is the "Settings for programmes" CARD on Settings → General →
+      General — somebody had read the card title as a menu path.

@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-26"
-related_articles: ["pay-as-you-go-programme", "creating-entry-passes", "entry-pass-client-view", "sending-email-sms", "booking-form-settings"]
+last_converted: "2026-09-27"
+related_articles: ["pay-as-you-go-programme", "creating-entry-passes", "entry-pass-client-view", "session-booking-reminder", "booking-form-settings"]
 ---
 
 # Pay-as-you-go FAQ
@@ -180,6 +180,8 @@ leaving you to work it out. On an open programme:
 - A **booking's detail** says whether that person has any upcoming session
   booked, and how many.
 
+![The Classes card on an open programme: each class shows its next session, seats on that session, and a Sign-ups count; the class with a booking also shows Not booked: 1](../../assets/images/open-class-signups-tile.png "Classes on an open programme — next session, seats, Sign-ups and Not booked")
+
 ## Which of my sign-ups have not booked anything?
 
 Open the class and look at the **Report card**: it says how many sign-ups have
@@ -207,7 +209,7 @@ entry-pass balance, suggesting sessions from their usual slot with a **Book**
 button for each. It switches off on its own after about four unanswered emails,
 and starts again as soon as the client books. It is the **Upcoming events
 notifications** toggle on the class (**Programmes → Online Booking → Edit**);
-see [the session booking reminder](../guides/automated-notifications.md#the-session-booking-reminder-on-open-programmes).
+see [The session booking reminder](../guides/session-booking-reminder.md).
 
 Send your own email when you want to say something the automatic reminder does
 not, or when you want to reach clients who have already booked as well.

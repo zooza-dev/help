@@ -11,16 +11,17 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-03-03"
+last_converted: "2026-09-27"
+related_articles: ["make-up-sessions-faq", "trials-faq", "attendance-and-catchups-faq", "settings-hub"]
 ---
 
 # Cancellation limit settings
 
 Zooza lets you define how late a client can cancel a scheduled session. This is a **global setting** — it applies to all programmes in your account. You can use it to protect your schedule, set fair make-up session rules, and control what clients see when they try to cancel too late.
 
-Go to **Settings** → **Programmes** to configure these options.
+Go to **Settings → General → General** and scroll to the **Settings for programmes** card. Everything on this page applies to every programme in the account.
 
-![Screenshot — cancellation limit settings](../../assets/images/cancellation-limit-settings-01.png)
+![The Settings for programmes card showing Set a limit for cancelling a scheduled session set to Yes, the limit type, the number of days, and the make-up session time limits](../../assets/images/cancellation-limit-settings-01.png "Cancellation limit on Settings → General → General")
 
 ## Enable the cancellation limit
 

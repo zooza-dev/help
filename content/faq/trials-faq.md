@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-26"
+last_converted: "2026-09-27"
 related_articles: ["trial-sessions", "trials-daily-business", "booking-form-settings", "sending-email-sms", "booking-faq"]
 ---
 
@@ -121,7 +121,7 @@ The same session picker appears when you copy or move a booking and set its stat
 
 ## Can a parent cancel a trial booking, and is there a deadline?
 
-Yes to both. A trial follows the same cancellation limit as any other session — the global one in **Settings → Programmes → Set a limit for cancelling a scheduled session** (see [Cancellation limit settings](../guides/cancellation-limit-settings.md)). There is no separate deadline for trials.
+Yes to both. A trial follows the same cancellation limit as any other session — the global one in **Settings → General → General**, on the **Settings for programmes** card — **Set a limit for cancelling a scheduled session** (see [Cancellation limit settings](../guides/cancellation-limit-settings.md)). There is no separate deadline for trials.
 
 **Before the deadline** the parent sees a **Cancel** button in their profile and cancels normally.
 

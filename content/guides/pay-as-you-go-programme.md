@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0051_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-26"
+last_converted: "2026-09-27"
 related_articles: ["entry-pass-client-view","creating-entry-passes","pay-as-you-go-faq","customizing-widgets"]
 ---
 
@@ -154,7 +154,10 @@ Pay-as-you-go programmes have two additional attendance settings:
 
 ### How clients pay for sessions
 
-Since 25 September 2026 the old **Require a valid entry pass** switch is gone. It could only say "passes required" or "passes not required"; what providers actually needed was to say *never use a pass* or *let the client decide*. It is replaced by a four-way choice on the **Attendance** settings card:
+Since 25 September 2026 the old **Require a valid entry pass** switch is gone. It could only say "passes required" or "passes not required"; what providers actually needed was to say *never use a pass* or *let the client decide*. It is replaced by a four-way choice on the **Attendance** settings card
+(**Programmes → your programme → Settings → Attendance**):
+
+![The Attendance settings card with How clients pay for sessions set to Use entry pass first, then payment](../../assets/images/open-course-payment-mode.png "How clients pay for sessions on the programme's Attendance card")
 
 | Choice | What a client gets when they book |
 |---|---|

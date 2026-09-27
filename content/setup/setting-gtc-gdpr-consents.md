@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0069_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-26"
+last_converted: "2026-09-27"
 related_articles: ["consents-and-agreements-faq", "client-consent-overview", "contact-form-setup", "contact-form-campaign-tracking"]
 ---
 
@@ -71,8 +71,6 @@ In this case, the **Consent text** field below is not used.
 The full text of the consent, shown on a separate page when the client clicks the link. Supports rich text (bold, lists, links). Leave this empty if you link to an external page instead.
 
 ### Consent type
-
-![Screenshot — consent type dropdown](../../assets/images/setting-gtc-gdpr-consents-03.png)
 
 | Type | How it works |
 |---|---|

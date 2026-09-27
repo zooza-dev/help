@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-26"
-related_articles: ["message-templates", "dynamic-tags", "pay-as-you-go-programme", "pay-as-you-go-faq", "entry-pass-client-view"]
+last_converted: "2026-09-27"
+related_articles: ["session-booking-reminder", "message-templates", "dynamic-tags", "pay-as-you-go-programme", "pay-as-you-go-faq", "entry-pass-client-view"]
 ---
 
 
@@ -113,53 +113,14 @@ All trial emails are configured at **Programmes → programme → Automations �
 
 #### The session booking reminder on open programmes
 
-On an open (pay-as-you-go) programme, signing up is not the same as having a
-seat: the client still has to go into their profile and book individual
-sessions. Many never take that second step — they register, sometimes buy a
-pack of entry passes, and then nothing happens.
+On an open (pay-as-you-go) programme a sign-up is not a seat: the client still
+has to book individual sessions. Once a week, anybody with nothing booked gets
+one email built from their own entry-pass situation, with a **Book** button per
+suggested session. It stops itself after about four unanswered sends and can be
+restarted from the booking.
 
-The reminder that used to be a plain daily list of tomorrow's sessions is now
-aimed at exactly those clients. Once a week, a client who has **no upcoming
-booked session** gets one email built from their own situation, with a
-**Book** button for each suggested session:
-
-| The client's situation | What the email leads with |
-|---|---|
-| Has entry passes, plenty left | Their balance and validity, plus sessions to book |
-| Has passes expiring within 14 days | Use them before they expire |
-| Has 2 or fewer passes left | Sessions to book, plus a gentle top-up link |
-| Has an unpaid entry-pass order | Pay the order first — with the order number and amount |
-| Passes expired unused in the last 30 days | Welcome back, plus a top-up |
-| Has no passes at all | Book or buy passes (on a passes-only programme, buy first) |
-
-Sessions are suggested from the client's usual slot where the class has one —
-their regular Monday, or both days on a twice-weekly class — otherwise the
-soonest session with a free place.
-
-Two things worth knowing:
-
-- **Clicking Book never books anything.** The link logs the client in and opens
-  their session picker with that session pre-selected; they still confirm it
-  themselves. So a mail client that pre-loads links cannot hold a place or spend
-  a pass.
-- **Clients who already booked are never nudged.** The check runs again at send
-  time, so a client who booked an hour earlier drops out.
-
-**It stops on its own.** Three weekly reminders with no response, then a
-30-day pause, then one last reminder — about four emails over two months. After
-that Zooza stops nudging that registration. Booking a session starts it again
-automatically.
-
-#### Restarting reminders that stopped themselves
-
-Open the booking and look at the **Communication** card. If Zooza gave up on
-this registration it says so, and offers **Start reminders again**.
-
-If the client has turned reminders off themselves, the card says that instead
-and shows **no button** — restarting would send nothing, because a reminder
-needs both the client's consent and an active reminder state. Change
-**Reminder** on the **Options** tab first if that is what you intend; be aware
-you are overriding the client's own choice.
+It has enough moving parts to deserve its own page — see
+[The session booking reminder](session-booking-reminder.md).
 
 ---
 
