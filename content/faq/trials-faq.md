@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-27"
+last_converted: "2026-10-03"
 related_articles: ["trial-sessions", "trials-daily-business", "booking-form-settings", "sending-email-sms", "booking-faq"]
 ---
 
@@ -203,6 +203,19 @@ When a client books a trial, the system can reserve a spot in the **class-wide**
 **Workaround:** Go to **Programme → Settings → Trial** and configure trial bookings to use **extra capacity** only. This ensures that trial reservations never consume spots intended for paying clients. The trial client is added on top of the normal capacity limit instead of inside it.
 
 If you prefer to keep the current setting, you will need to manage overbooking manually — for example, by contacting the trial client and moving them to a different session that still has available spots. <!-- REVIEW: confirm "extra capacity" setting label matches current UI -->
+
+## Can I stop someone who already had a trial from booking another one?
+
+**No. There is no setting for it**, and it is one of the most asked questions we get from providers starting a new term.
+
+The one restriction that does exist is narrower than people hope: **while a trial is still in progress**, the same email cannot book again into the same class. That is a safeguard against double-booking, not a limit on repeat trials — as soon as the trial reaches **Trial Won** or **Trial Lost**, nothing prevents a fresh trial booking, including in the same class next term.
+
+What providers do instead:
+
+- **Charge for the trial.** A paid trial is the only thing that reliably stops trial-hopping, and it costs you nothing in conversion if the amount is small and goes towards the enrolment.
+- **Watch for repeats in the bookings list.** Trial stages are booking statuses, so filter **Bookings** by **Trial ended** and **Trial lost** to see who has already been through one. A name appearing twice is easy to spot there and easy to deal with by hand.
+
+> Blocking repeat trials is on the table as a feature. If it matters to how you sell, say so — demand from providers is what decides what gets built.
 
 ## Can a client who finished a trial register again for a full programme in the same class?
 

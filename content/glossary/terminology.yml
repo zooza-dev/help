@@ -630,7 +630,9 @@ terms:
       it: "Lezione di prova"
       fr: "Séance d'essai"
     intent_keywords:
-      en: ["trial", "trial session", "free session", "taster", "try out", "introductory"]
+      en: ["trial", "trial session", "free session", "taster", "try out", "introductory",
+           "only one trial", "stop repeat trials", "already had a trial",
+           "book a trial again", "limit trials per client"]
       sk: ["skúšobná hodina", "skusobna hodina", "ukážková hodina", "ukazkova hodina",
            "trial", "prvá hodina zadarmo", "vyskúšať", "kde nastavím skúšobné hodiny",
            "ako sa vytvára ukážková hodina"]
@@ -662,6 +664,14 @@ terms:
       Ask which before advising — it is not guessable from the question.
       WHERE IT IS SET: Programme -> Settings -> Trial tile -> Edit. It is NOT under
       Additional fields, and there is no global trial page.
+      REPEAT TRIALS CANNOT BE BLOCKED (confirmed 2026-10-03). There is no setting that
+      stops someone who already had a trial from booking another, in the same class or
+      any other. The only restriction is incidental: while a trial is still in progress
+      the same email cannot book again into the same class, which is a double-booking
+      guard, not a limit — once the trial reaches Trial Won or Trial Lost, a fresh trial
+      is possible. Do not invent a setting for this. What providers actually do is charge
+      for the trial, and spot repeats by filtering Bookings on the Trial ended / Trial
+      lost statuses. Asked seven times in one week with no answer, so answer it directly.
       PER-BLOCK CONTROL (shipped 2026-08-25): each Block carries its own trial toggle,
       independent of its online-registration toggle, so a class can offer some blocks
       for registration and others for trials. A session in two blocks stays trial-eligible
