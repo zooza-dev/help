@@ -78,6 +78,14 @@
     },
     {
       "@type": "Question",
+      "name": "Why a payment is scheduled weeks before it is due",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A payment plan shows two dates per instalment and they are not the same thing:\n\n- the scheduled date — when Zooza raises the payment and, on direct debit, hands it to the provider\n- the due date — when you expect the money to be on your account\n\nZooza raises each instalment a number of days before its due date, taken from Days before booking is marked unpaid in Settings → Billing & Payments → Payment settings. With the field left at 0 that number is 15, which is why a payment due on 6 October appears as scheduled on 21 September.\n\nThe gap exists for direct debit. On the scheduled date the collection begins, and GoCardless needs several working days to take the money and confirm it has cleared. The gap is the buffer that lets that finish before the due date. Shorten it too far and payments still work, but more of them confirm after the due date and show as overdue in the meantime; somewhere between 5 and 10 days is comfortable.\n\nTo stop a payment, the scheduled date is the one that matters, not the due date. Once the scheduled date passes and the payment has gone to the provider, it is on its way. A client who cancels a week before the scheduled date can be stopped cleanly.\n\nChanging the number affects new instalments only. Payments already sitting in an existing plan keep the dates they were given. And remember the same field also governs the Awaiting payment grace window, so shortening it tightens both."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Can I split one payment between two bookings?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -86,10 +94,18 @@
     },
     {
       "@type": "Question",
+      "name": "A client clicks \"pay\" and is asked to book all over again",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The parent has an unpaid balance, goes to settle it, and lands on a booking form instead of a payment. Two different things cause this and they need different fixes.\n\nYou sent them the booking link. A booking page is for new registrations. An existing parent opening it does not get their outstanding balance — they get a fresh booking, and now you have two. Always send a parent with something to pay to their client portal, not to a class booking page. The portal recognises them, lists the bookings they already have and takes them to what is owed. The WIDGET_PROFILE_URL tag puts a personal link to it straight into an email.\n\nOr the portal address configured for your widget is wrong. If the parent reached the portal by themselves and the pay button there still throws them into a booking form, the profile URL stored in your widget settings is pointing at the wrong page. It is set under Team & Settings → Publish on the widget. If you cannot see what is wrong with it, send support the registration where it happened — this is a configuration fault, not something the parent is doing.\n\nDedicated booking pages for individual programmes keep working alongside the portal; they are for marketing and for new customers, and nothing needs changing about them."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What is the difference between \"Awaiting payment\" and \"Unpaid\"?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Both statuses mean the client owes money, but they indicate different urgency:\n\n- Awaiting payment — the client has an outstanding balance and is still within the allowed payment window. The deadline has not passed. This is a normal, expected state for a booking that was just created.\n- Unpaid — the payment window has closed. The balance is overdue.\n\nThe length of the grace window is set in Settings → Billing & Payments → Payment settings under Days before booking is marked unpaid (Slovak: Počet dní pre vystavenie splátky). If this is set to 20, every new booking with a balance enters Awaiting payment for 20 days from registration, then automatically becomes Unpaid.\n\nThe default value is 0 — meaning no grace window; bookings go straight to Unpaid when created with an outstanding balance."
+        "text": "Both statuses mean the client owes money, but they indicate different urgency:\n\n- Awaiting payment — the client has an outstanding balance and is still within the allowed payment window. The deadline has not passed. This is a normal, expected state for a booking that was just created.\n- Unpaid — the payment window has closed. The balance is overdue.\n\nThe length of the grace window is set in Settings → Billing & Payments → Payment settings under Days before booking is marked unpaid (Slovak: Počet dní pre vystavenie splátky). If this is set to 20, every new booking with a balance enters Awaiting payment for 20 days from registration, then automatically becomes Unpaid.\n\nThe default value is 0, and 0 does not mean the same thing everywhere — this is the single most common source of confusion about this field:\n\nSo a provider who sets the field to 0 expecting instalments to be raised on the day they fall due still sees them appear a fortnight early. Put an actual number in to change that."
       }
     },
     {
@@ -409,7 +425,15 @@
       "name": "How do I set up a down payment (deposit) together with a payment plan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A down payment (deposit) and a payment plan can be used together. The down payment is collected immediately at booking; the remaining balance is then split according to the payment plan you configure.\n\nSetup:\n\n1. Go to Programme → Settings → Price and payment.\n2. Under Price, set your total price and select a payment plan (e.g. monthly instalments).\n3. Under Down payment, choose Fixed amount or Percentage and enter the value.\n4. Save.\n\nHow it works:\n- When the client books, the down payment is charged immediately (or shown as the first debt).\n- The remaining balance is split into instalments according to the payment plan schedule.\n- The total charged = down payment + all instalments. Make sure these add up to the full price.\n\nCommon problem — double charge on the first instalment:\n\nIf the down payment and the first scheduled instalment fall on the same day, the client may appear to owe both at once. To avoid this:\n\n- Set the first instalment start date to a date after the down payment is due.\n- Or use a Fixed amount down payment equal to the first instalment, and start the payment plan from the second month.\n\nCommon problem — down payment not appearing in email templates:\n\nUse the  dynamic tag in your booking confirmation template to show the deposit amount. See Dynamic tags."
+        "text": "A down payment (deposit) and a payment plan can be used together. The down payment is collected immediately at booking; the remaining balance is then split according to the payment plan you configure.\n\nSetup:\n\n1. Go to Programme → Settings → Price and payment.\n2. Under Price, set your total price and select a payment plan (e.g. monthly instalments).\n3. Under Down payment, choose Fixed amount or Percentage and enter the value.\n4. Save.\n\nHow it works:\n- The down payment becomes due on its own date — see When the deposit has to be paid below. It is not always \"immediately\".\n- The remaining balance is split into instalments according to the payment plan schedule.\n- The total charged = down payment + all instalments. Make sure these add up to the full price."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does the deposit have to be paid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You choose. The deadline is not fixed to the moment of booking, which is the assumption behind most \"why is the deposit already overdue\" questions.\n\nIn Programme → Settings → Price and payment, under the down payment fields:\n\nSo After booking was created + 5 means the deposit is due five days after the parent books. Before the programme starts + 14 means it is due a fortnight before the first session, no matter when they booked — which is usually what you want for a camp or a course people book months ahead.\n\nWhat the deadline actually controls: until it passes, a booking whose deposit is paid shows Down payment paid. Once it passes with the deposit unpaid, the booking switches to Unpaid.\n\nIf you set the deposit as a percentage, the Cap down payment at field puts a ceiling on it in absolute terms. Leave it at 0 for no limit — otherwise an expensive programme can produce a deposit larger than you intended.\n\nUnpaid deposits are not cleared up by themselves. If you want bookings that never pay to disappear, that is a separate setting — see Automatically cancel unpaid registrations.\n\nCommon problem — double charge on the first instalment:\n\nIf the down payment and the first scheduled instalment fall on the same day, the client may appear to owe both at once. To avoid this:\n\n- Set the first instalment start date to a date after the down payment is due.\n- Or use a Fixed amount down payment equal to the first instalment, and start the payment plan from the second month.\n\nCommon problem — down payment not appearing in email templates:\n\nUse the  dynamic tag in your booking confirmation template to show the deposit amount. See Dynamic tags."
       }
     },
     {

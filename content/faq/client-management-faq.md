@@ -7,12 +7,12 @@ product_area: "Clients"
 sub_area: ""
 audience: ["admin"]
 tags: ["clients", "data-correction", "merge", "email"]
-related_articles: ["client-profile-101", "remove-client-or-user", "subscription-faq", "working-with-contacts"]
+related_articles: ["client-profile-101", "remove-client-or-user", "subscription-faq", "working-with-contacts", "personas"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-26"
+last_converted: "2026-10-03"
 ---
 
 
@@ -188,7 +188,7 @@ The practical consequences:
 
 - **A client's email is unique**, enforced at database level, so the same address cannot belong to two clients. That is why duplicate *clients* are rare.
 - **Participants have no such rule** — two participants may carry the same email, or none, which is how the same child ends up in the system twice.
-- **You cannot convert a participant into a client.** There is no button for it. If a participant now needs their own login — a teenager turning 18 and taking over their own booking, for instance — create a booking by hand using their email address, which creates the client. Then move the existing booking to them with **Change client** and delete the helper booking if you no longer need it.
+- **You can turn a participant into a client.** Since 27 September 2026 there is a dedicated action for it — the teenager turning 18 and taking over their own booking is exactly the case it was built for. It gives them their own login and moves the client role across the bookings you pick. Only the account owner can do it. See [Make an attendee a client](../guides/personas.md#make-an-attendee-a-client). *(Before that date the only route was to create a booking by hand with their email and move the existing booking over with **Change client**. You no longer need that workaround.)*
 - **Two participants that are the same child** can be merged by you, from their relationships on the client record. If that does not work, ask support — but doing it in the app is better, because the change then propagates everywhere.
 
 ## How do I move a child (or client) to a different class or class?

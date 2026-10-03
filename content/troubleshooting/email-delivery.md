@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-21"
-related_articles: ["sending-email-sms","notifications-center","login-and-account-faq","emails-in-primary-inbox"]
+last_converted: "2026-10-03"
+related_articles: ["sending-email-sms","notifications-center","login-and-account-faq","emails-in-primary-inbox","email-communication-faq","bulk-email-send-tracking"]
 ---
 
 # Email Delivery Troubleshooting
@@ -29,9 +29,35 @@ If the email appears in the log, it was sent from Zooza successfully. The proble
 
 If the email does not appear in the log, the system did not send it. Common reasons:
 
-- The registration was created manually or copied. Copied and manual registrations do **not** trigger automatic confirmation emails. You must send the email manually from the **Communication** tab.
+- **The booking was created manually or by copying another one.** Neither goes through the standard booking flow, so neither sends the confirmation by itself. When you copy a booking there is an option to send it — it is easy to click past, and a confirmation that was never ticked looks exactly like one that failed. Send it afterwards from the **Communication** tab.
 - The notification template is not assigned to the programme. Check **Programme Settings** > **Online Registration** > **Notifications**.
 - **Programme type mismatch.** Each automated email template is tied to a specific programme type (e.g. a template for "Regular enrolment" will not fire for a "Trial" booking, and vice versa). If your programme type does not match the template's expected booking type, no email fires. Check the programme type under **Programme Settings** and verify the template is configured for that type.
+
+## What the ticks and the cross next to an email mean
+
+Zooza marks every message it sends with how far it got. Read the marker before you start looking for a fault:
+
+| Marker | Meaning |
+|---|---|
+| **One tick** | Zooza sent the message. |
+| **Two ticks** | The receiving mail server confirmed it as well. This is as much proof of delivery as any sender can have. |
+| **A cross** | The receiving server refused it. It never reached the person, and resending the same address will not change that. |
+
+Sending goes through Mandrill, a large standard email infrastructure — but a company can still refuse it under its own rules, which is what a cross against a corporate address usually means. For those, the options are a different address, or the client's IT administrator allowing `zooza.app`.
+
+### Why the client card and the booking disagree
+
+The same address can show one marker on the client and another on the booking. That is not a fault, they record different things:
+
+- the **client** stores whether the address itself has been verified
+- the **booking** stores whether a given message was sent
+
+On top of that, the bookings list is recalculated in the background rather than on every load, so it can be a little behind what you see on the booking itself. When the two disagree, **the booking detail is the one to trust.**
+
+### Whether someone marked you as spam cannot be found out
+
+No email service reports that back to the sender, so nobody — Zooza included — can tell you a recipient hit the spam button. What you *can* see is what was delivered and what was opened, and that usually settles the argument. A parent insisting they received nothing, against a login-code email the log shows opened twice, is a conversation about their inbox rather than about Zooza.
+
 
 ## Step 2: Verify the recipient email address
 

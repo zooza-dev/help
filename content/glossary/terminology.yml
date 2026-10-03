@@ -6,7 +6,7 @@
 # ║  Edit there, then run: python3 scripts/sync_terminology.py      ║
 # ╚══════════════════════════════════════════════════════════════════╝
 #
-# Last synced: 2026-09-27
+# Last synced: 2026-10-03
 # Used by: scripts/normalize_terminology.py → build/terminology/dictionary.json
 #
 # Fields per term:
@@ -914,9 +914,12 @@ terms:
       fr: "Participant"
     intent_keywords:
       en: ["attendee", "participant", "child", "my child", "student", "pupil",
-           "convert participant to client", "merge participants", "duplicate child"]
+           "convert participant to client", "merge participants", "duplicate child",
+           "make this attendee a client", "give attendee a login", "attendee needs own account",
+           "teenager taking over booking", "move client role"]
       sk: ["účastník", "dieťa", "žiak", "študent", "spojiť účastníkov", "duplicitný účastník",
-           "ako z účastníka spravím klienta"]
+           "ako z účastníka spravím klienta", "spraviť z účastníka klienta",
+           "účastník potrebuje vlastné prihlásenie", "presunúť rolu klienta"]
       cz: ["účastník", "dítě", "sloučit klienty", "stejný klient dvakrát"]
       de: ["Teilnehmer", "Kind", "Schüler"]
     do_not_confuse_with:
@@ -927,11 +930,19 @@ terms:
           database level, so duplicate clients are rare; Attendees have no such rule, which is
           why the same child can exist twice.
     ai_notes: >
-      YOU CANNOT CONVERT AN ATTENDEE INTO A CLIENT (confirmed 2026-09-25) — there is no button.
-      When an attendee needs their own login (a teenager taking over their own booking), create
-      a booking manually with their email, which creates the Client, then move the existing
-      booking with "Change client". Martin flagged 2026-09-25 that a proper conversion may be
-      built — check the changelog before repeating "not possible".
+      AN ATTENDEE CAN NOW BE TURNED INTO A CLIENT (shipped 2026-09-27, API-20260927-001 +
+      APP-20260927-001 + W1-20260927-001). This SUPERSEDES the earlier note, correct until
+      2026-09-26, that said it was impossible — do not repeat "there is no button", and treat
+      any article still saying so as out of date.
+      The action is "Make this attendee a client", ACCOUNT OWNER ONLY, reached from the
+      attendee card on a booking or the person card on client detail. It gives the attendee
+      their own login (an email) and moves the client role to them on the bookings selected.
+      Preview changes first, then Confirm. Four outcomes by email: unused -> account created at
+      once and NO email is sent to the attendee; already an account in this company, or an
+      account outside it -> nothing changes until that person confirms by email (state "Waiting
+      for email confirmation", cancellable); already their own login -> only the client role
+      moves. Debt is NOT re-attributed: it stays with the booking and past invoices are not
+      rewritten. The email of someone who already has a login cannot be changed here.
       Two attendees that are the same child can be merged by the operator from the client's
       relationships. Merging CLIENTS is Clients -> Family & Connections -> Manage -> Merge.
     public: true

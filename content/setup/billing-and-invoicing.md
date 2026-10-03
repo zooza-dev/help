@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/billing-settings.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-20"
+last_converted: "2026-10-03"
 related_articles: ["invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "invoicing-overview", "szamlazz-invoices", "fakturoid-invoices", "xero-integration"]
 ---
 
@@ -156,6 +156,16 @@ For invoice engines that support Zooza-generated numbers (**Faktury Online**, **
 | `{VS}-{N}` | `12345-0042` |
 
 Set the template in the **Invoice profile** settings under the invoice number / series field. If you leave the field empty, Zooza uses sequential numbering.
+
+### Going back to plain numbering, and duplicate numbers
+
+Three things about the series field are worth knowing, because together they used to produce duplicate invoice numbers — a real problem when SK, CZ and HU law requires issued numbers to be unique.
+
+- **Emptying the field sticks.** Clear it and save, and you are back to plain sequential numbering. If you cleared it before 28 September 2026 and `{N}` reappeared after saving, that was a bug, not a default — clear it again and it will hold.
+- **Regenerating an issued invoice keeps its number.** Editing a description and regenerating does not re-draw the number from the counter. This applies where Zooza owns the counter — Faktury Online, SuperFaktura and Zooza Invoice. Fakturoid and Xero take their number from the accounting system itself, so it is that system's rule which applies.
+- **Saving the profile settings does not rewind the counter.** You can open and save the form without disturbing numbers issued in the meantime.
+
+> **If you already have two invoices sharing a number**, the fixes above stop it happening again but do not repair what is already issued. Contact support with the invoice profile and the numbers concerned.
 
 > **Note:** This template feature applies only to the four engines listed above. For **Számlázz.hu**, **Smart_Bill**, **Oblio**, and **ABRA Flexi**, the field is interpreted as a literal prefix or series identifier, not a template — those engines manage number formatting on their own side.
 

@@ -11,8 +11,8 @@ status: published
 source_legacy_path: legacy/0086_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: "2026-09-26"
-related_articles: ["price-and-payment-setup","membership-fee-setup","automatic-payment-reminders","session-payment-adjustments"]
+last_converted: "2026-10-03"
+related_articles: ["price-and-payment-setup","membership-fee-setup","automatic-payment-reminders","session-payment-adjustments","billable-sessions","payments-and-billing-faq"]
 ---
 <!-- REVIEW: add all types of prepaid payment frequencies -->
 # Payment templates creation
@@ -96,6 +96,20 @@ Save the template by clicking the *Save button.*
 Note: If you use discounted payment templates, you can find a clear list of them in the Payments - Discounts section.
 
 ![Screenshot](../../assets/images/payment-templates-creation-08.png)
+
+## Monthly gave me nine instalments with odd amounts, not eight round ones
+
+This catches people out every autumn, and it is not a fault.
+
+**Monthly divides the course fee by the number of months in which the class has sessions** — not by the number of months you think of the course as running. A school-year course that finishes in the first week of June touches nine months, October to June, so a fee of €344 comes out as nine payments of €38.22 instead of the eight round amounts you had in mind.
+
+Two ways to get the instalments you wanted:
+
+1. **Use a fixed number of scheduled payments instead.** Set the count to 8 and the fee is split evenly into eight, whatever the calendar does. This is the simpler fix and it is what most providers want when they say "monthly" — they mean "eight payments", not "one per month that contains a lesson".
+2. **Keep Monthly, and stop June counting.** Mark the June sessions as not billable. They stay in the timetable and attendance and reminders work for them as normal — they simply do not count towards the payment schedule, so the fee spreads across October to May. See [Billable sessions](billable-sessions.md).
+
+> Pick the second one only if the June sessions genuinely are not being paid for. If they are part of what the parent is buying, the first option is the honest one — the money is the same either way, but the booking then says so.
+
 
 ## Other template settings, template activation in programmes
 

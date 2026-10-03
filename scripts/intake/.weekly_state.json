@@ -1,8 +1,5 @@
 {
  "carry_forward": {
-  "215475728999106": "2026-08-31",
-  "215475838977996": "2026-09-08",
-  "215475839703443": "2026-09-14",
   "215475877092690": "2026-09-10",
   "215475900316327": "2026-09-11",
   "215475978505919": "2026-09-17",
@@ -10,12 +7,15 @@
   "215475993271114": "2026-09-18",
   "215476024882778": "2026-09-21",
   "215476062944131": "2026-09-23",
-  "215476109457055": "2026-09-25"
+  "215476151268675": "2026-09-29",
+  "215476151875038": "2026-09-29",
+  "215476166880039": "2026-09-30",
+  "215476172289777": "2026-09-30"
  },
- "last_run": "2026-09-26",
+ "last_run": "2026-10-03",
  "last_window": [
-  "2026-09-19",
-  "2026-09-25"
+  "2026-09-26",
+  "2026-10-02"
  ],
  "spec_baseline": [
   "api-v1/2026-02-06-buyloop-upgrade-model.md",
@@ -261,6 +261,9 @@
   "api-v1/2026-09-23-payments-ledger-payment-request-link.md",
   "api-v1/2026-09-24-open-course-booking-api-support.md",
   "api-v1/2026-09-24-session-booking-reengagement-nudge.md",
+  "api-v1/2026-09-27-attendee-to-buyer-identity.md",
+  "api-v1/2026-09-28-invoice-no-template-regenerate-and-clear-fixes.md",
+  "api-v1/2026-09-29-loyalty-discount-application-mode.md",
   "api-v1/API-20260516-001-RESUME.md",
   "api-v1/API-20260516-001-implementation-plan.md",
   "api-v1/API-20260706-001-implementation-plan.md",
@@ -472,6 +475,8 @@
   "app/2026-09-25-open-course-payment-mode.md",
   "app/2026-09-25-sessions-booked-template-type.md",
   "app/2026-09-25-shared-room-capacity-disclosure.md",
+  "app/2026-09-27-attendee-to-buyer-conversion.md",
+  "app/2026-09-29-loyalty-discount-application-mode.md",
   "app/APP-20260315-003-phase-3-handoff.md",
   "app/APP-20260319-001-phase-1-handoff.md",
   "app/APP-20260319-001-phase-2-handoff.md",
@@ -537,6 +542,7 @@
   "widgets-v1/2026-09-18-extract-product-form-component.md",
   "widgets-v1/2026-09-22-global-payments-inline-card-capture.md",
   "widgets-v1/2026-09-24-open-class-onboarding-and-multi-session-booking.md",
+  "widgets-v1/2026-09-27-identity-verification-confirm-screen.md",
   "widgets-v1/W1-20260602-001-implementation-plan.md",
   "widgets-v1/W1-20260610-001-implementation-plan.md",
   "widgets-v1/W1-20260701-003-implementation-plan.md",

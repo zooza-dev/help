@@ -1,17 +1,18 @@
 ---
 title: "Personas"
-description: "Personas is a feature that distinguishes between attendees and clients, giving each their own dedicated profile."
+description: "How Zooza tells clients apart from attendees, how each gets their own profile, and how to give an attendee their own login when they outgrow being somebody else's booking."
 slug: "personas"
 type: "guides"
 product_area: "Clients"
 sub_area: ""
 audience: ["admin"]
-tags: ["attendance", "booking", "client", "communication", "import", "instructor", "programme", "role", "session"]
+tags: ["attendance", "booking", "client", "communication", "import", "instructor", "programme", "role", "session", "identity"]
 status: "published"
 source_legacy_path: "legacy/0024_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-10-03"
+related_articles: ["client-management-faq","manage-family-relationships","client-profile-faq","creating-a-booking"]
 ---
 
 # Personas
@@ -78,6 +79,51 @@ If a booking has the wrong attendee, you can update it in the *Booking Detail* v
 3. If the attendee does not yet exist in Zooza under this email, click *Create*, fill in the required fields for the new attendee, and then click *OK*.
  ![If the attendee does not yet exist in Zooza under this email, click Create, fill in the...](../../assets/images/personas-08.png)
  ![If the attendee does not yet exist in Zooza under this email, click Create, fill in the...](../../assets/images/personas-09.png)
+
+## Make an attendee a client
+
+A child registered by a parent has no login of their own. When they outgrow that — the classic case is a teenager turning 18 who wants to manage and pay for their own bookings — you can give them their own login and move the client role onto them.
+
+> **Account owner only.** Other roles do not see the action, and cannot reach it by URL either.
+
+You can start it from either end:
+
+- the attendee tile on a **booking**, or
+- the person card on a **client detail** page.
+
+Both open the same screen, **Make this attendee a client**.
+
+### Doing it
+
+1. Enter the **Email** this person will log in with. **Phone** is optional.
+2. Tick the **Bookings** that should move to them. Every booking where they are currently the attendee starts ticked — including ones in other classes, because the change belongs to the person, not to a single booking. At least one must stay ticked.
+3. Click **Preview changes**. Nothing has happened yet: you get a row per booking showing **Current client** and **New client**, so you can see exactly who is losing the role and who is gaining it.
+4. Click **Confirm**.
+
+### What happens depends on the email
+
+This is the part worth reading before you type an address, because Zooza treats the four cases quite differently:
+
+| The email you entered | What happens on Confirm |
+|---|---|
+| **Is not in use anywhere** | The account is created straight away and the bookings move. **No email is sent to the attendee** — nothing lands in their inbox until they ask for a login themselves. |
+| **Already belongs to an account in your company** | Nothing changes yet. The owner of that address is emailed and has to confirm. |
+| **Belongs to an account outside your company** | Same — nothing changes until they confirm. Check the address carefully first; Zooza will not tell you whose account it is. |
+| **Is already this person's own login** | Only the client role moves. No confirmation needed. |
+
+Because a mistyped address in the first case creates a working account at the wrong address, read the email back before confirming.
+
+### While a confirmation is outstanding
+
+A booking waiting on confirmation shows **Waiting for email confirmation**, with the expiry date and how many bookings are queued to move. **Nothing has changed yet** — the current client keeps the role until the person clicks the link in their email.
+
+If you got the address wrong, or the person never confirms, use **Cancel request** and start again.
+
+### What does not move
+
+- **Debt stays with the booking.** The client role moves forward from here; outstanding balances and invoices already issued are not re-attributed to the new client. Zooza does not rewrite billing history.
+- **You cannot change the email of someone who already has a login** from this screen. It is for giving an identity to someone who has none.
+
 
 ## Client Card
 

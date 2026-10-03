@@ -190,12 +190,56 @@ def question(rec):
     return "(no client message)"
 
 
-def human_answer(rec):
-    """First human reply -- the gold standard the KB should absorb."""
-    for role, _, text in rec.get("turns", []):
-        if role == "human" and text.strip():
-            return " ".join(text.split())
-    return ""
+def human_answers(rec):
+    """Every human reply, in order.
+
+    This used to return only the first one, which quietly threw the answer away:
+    an opening reply in a support thread is almost always "we will look into it"
+    or "send me the registration number", and the explanation that belongs in the
+    KB lands two or three replies later. Measured on the 26 Sep - 2 Oct window,
+    83% of conversations carried more than one human reply and 80,027 characters
+    of human text never reached the queue -- including the answer to the one
+    conversation that week that explained why a copied booking sends no
+    confirmation email.
+    """
+    return [" ".join(text.split())
+            for role, _, text in rec.get("turns", [])
+            if role == "human" and text.strip()]
+
+
+# Per-reply and per-conversation limits, so one 99-reply thread cannot drown the
+# queue. Whatever is dropped is announced rather than silently cut -- a queue that
+# hides the back half of a conversation is worse than one that admits it.
+REPLY_CHARS = 1500
+HEAD_REPLIES = 2
+TAIL_REPLIES = 4
+
+
+def _clip(text):
+    if len(text) <= REPLY_CHARS:
+        return text
+    return f"{text[:REPLY_CHARS]} ... [{len(text) - REPLY_CHARS:,} more characters]"
+
+
+def answered_block(ans):
+    """Render every human reply, newest last -- the resolution is usually there."""
+    if len(ans) == 1:
+        return f"**Human answered:** {_clip(ans[0])}\n\n"
+
+    out = [f"**Human answered** -- {len(ans)} replies, the last one usually settles it:\n\n"]
+    if len(ans) <= HEAD_REPLIES + TAIL_REPLIES:
+        shown = list(enumerate(ans, 1))
+        skipped = 0
+    else:
+        shown = list(enumerate(ans[:HEAD_REPLIES], 1))
+        skipped = len(ans) - HEAD_REPLIES - TAIL_REPLIES
+        shown += list(enumerate(ans[-TAIL_REPLIES:], len(ans) - TAIL_REPLIES + 1))
+
+    for i, (n, a) in enumerate(shown):
+        if skipped and i == HEAD_REPLIES:
+            out.append(f"   *... {skipped} replies in the middle not shown ...*\n\n")
+        out.append(f"{n}. {_clip(a)}\n\n")
+    return "".join(out)
 
 
 def run(cmd, **kw):
@@ -338,9 +382,9 @@ def main():
             for r in human:
                 w(f"### `{r.get('id')}` -- {r.get('date','')}\n\n")
                 w(f"**Asked:** {question(r)[:400]}\n\n")
-                ans = human_answer(r)
+                ans = human_answers(r)
                 if ans:
-                    w(f"**Human answered:** {ans[:700]}\n\n")
+                    w(answered_block(ans))
         else:
             w("_None this week._\n")
 

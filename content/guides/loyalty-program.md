@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-21"
+last_converted: "2026-10-03"
+related_articles: ["loyalty-faq","loyalty-returning-customer","loyalty-sibling-discount","loyalty-referral","discounts-and-sibling-pricing-faq"]
 ---
 
 # Loyalty Program
@@ -113,10 +114,28 @@ The discount behaviour depends on the payment plan type used at booking:
 |---|---|
 | **One-off (single payment)** | Discount deducted from the total in one go. |
 | **Instalments** | Discount distributed proportionally across all scheduled payments. |
-| **Membership (monthly / quarterly / annual)** | Discount applied on every billing cycle renewal, not just the first. |
+| **Membership (monthly / quarterly / annual)** | Your choice, per rule — every billing cycle, or only the first. See [One-off reward or standing perk](#one-off-reward-or-standing-perk) below. Rules made before 29 September 2026 apply it to every cycle. |
 | **Pay per session (by attendance)** | Discount applied to each session individually. |
 
-This means a client on a monthly membership with a sibling discount always pays the reduced rate — month after month, for as long as the membership is active and the loyalty model is enabled.
+### One-off reward or standing perk
+
+On a membership, "10% off" is ambiguous in a way that costs real money, and the answer depends on what the rule is *for*:
+
+- *"5% off for as long as you are a member"* is a **standing perk**. It should come off every payment.
+- *"€10 off for coming back to us"* is a **one-off reward**. Taking €10 off every month turns a €10 thank-you into €120 a year — which has happened, and support had to unpick it by hand.
+
+Since 29 September 2026 you say which one you mean, on each rule:
+
+| **Discount on membership payments** | What it does |
+|---|---|
+| **All scheduled payments** | The discount comes off every payment. A percentage takes that share each time; a fixed amount is deducted each time. |
+| **First scheduled payment only** | The discount is used up once. A percentage is taken from the first full payment; a fixed amount comes off the leading payment, and carries into the next one if it is bigger than the first. |
+
+**All scheduled payments is the default**, and every rule created before that date keeps it — nothing changed by itself. Switch a rule to *First scheduled payment only* when it rewards an action rather than ongoing membership: coming back, being referred, signing up in a campaign.
+
+> **Only memberships are affected.** A programme sold for a total price behaves the same as before, even when that total is split into instalments: the discount comes off the total and the instalments are recalculated from it. There is nothing to decide there, which is why the setting mentions membership by name.
+
+**Discount codes are always one-off.** A percentage code on a membership used to be worked out from the whole term and taken off the first payment with no ceiling, which could make the first month free. Since the same date it is calculated on the first payment, capped at it, and anything left over carries forward.
 
 ---
 
