@@ -12,7 +12,7 @@ status: published
 source_legacy_path: legacy/0012_Welcome to Zooza.html
 source_language: mixed
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-10-10"
 related_articles: ["message-templates","dynamic-tags","bulk-email-send-tracking","email-delivery-troubleshooting"]
 ---
 
@@ -165,6 +165,19 @@ parent with three children came back twice more and you clicked *Remove* three t
 
 That is the mode to use when you are sweeping a location or a term and want to spare a
 couple of families: filter wide, then take out the handful by name.
+
+## Can I attach a file to an email from Zooza?
+
+**No.** The message composer does not take attachments. What you can do instead, in rough order of how well it works:
+
+| Instead of attaching | Do this |
+|---|---|
+| A file the whole class needs | Add it to the **programme** or the **class** under Documents. Everyone enrolled sees it in their profile. |
+| A file for one family | Add it to their **booking** under Documents. |
+| Material for one session | Attach it to the session — see [Attach documents to sessions](session-document-attachments.md). |
+| A file hosted elsewhere | Put a link in the message. |
+
+**Documents added this way do not announce themselves.** The client sees them in their profile, but nothing tells them to look. If the timing matters, add the file and then send the message with the link or a line saying it is there.
 
 ## How to send email/SMS to one client
 

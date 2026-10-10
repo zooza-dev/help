@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-04"
-related_articles: ["documents", "edit-sessions-in-programmes", "calendar-bulk-actions"]
+last_converted: "2026-10-10"
+related_articles: ["documents", "edit-sessions-in-programmes", "calendar-bulk-actions", "sending-email-sms"]
 ---
 
 # Attach Documents to Sessions
@@ -82,6 +82,14 @@ A file that is not yet available shows an **"Available from [date]"** notice ins
 ## Bulk download
 
 Participants can click **Download all** on a session to receive a single zip archive of all the files they are entitled to view for that session.
+
+## Nobody is told the file is there
+
+**Uploading a document to a session sends no notification.** Participants will find it in their profile the next time they look, and that is the only way they will find it.
+
+So if the file matters before the session — prep material, something to print, a form to bring — upload it and then tell people yourself, with a message to everyone in that session. See [Sending emails and SMS](sending-email-sms.md).
+
+> Worth knowing before you build a routine around it: an instructor who uploads homework after every session and assumes parents are being told will find that most of them never looked.
 
 ## Notes
 
