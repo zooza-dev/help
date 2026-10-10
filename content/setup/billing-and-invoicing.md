@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/billing-settings.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-10-03"
+last_converted: "2026-10-10"
 related_articles: ["invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "invoicing-overview", "szamlazz-invoices", "fakturoid-invoices", "xero-integration"]
 ---
 
@@ -126,6 +126,29 @@ After an invoice is generated, you can edit it by clicking the pencil icon next 
 - **Item description** — custom text for the invoice line item (e.g., the programme name or a custom note).
 
 > **Note:** Editing an invoice does not change the underlying payment. It only changes what appears on the invoice document.
+
+## Getting every invoice out for your accountant
+
+Downloading invoices one at a time is the slow way, and it is what most people find first. There is a bulk route.
+
+Go to **Payments → Invoices**, filter down to the period you need — created-date range, billing period, invoice profile — and then use the actions at the top of the list:
+
+| You want | Use |
+|---|---|
+| The PDFs themselves | **Download all** — the filtered set arrives as one ZIP |
+| A file your accounting software can import | **Export**, then pick the format |
+
+Export formats available today:
+
+- **Pohoda** — Pohoda XML
+- **Omega** — Omega XML, with its own options for tally code, sequence code, and whether to include partners and accounting documents
+- **MRP**
+- **Spreadsheet (Excel)** — when your accountant just wants the list
+
+None of them need setting up. They appear under **Settings → Integrations**, but there is nothing to configure — you export straight from the Payments section.
+
+> **Filter first.** The export follows whatever the list is currently showing, so set the date range before you export rather than afterwards. An accountant asking for January to September wants exactly that, not the whole year trimmed by hand.
+
 
 ## Invoice numbering and item descriptions
 

@@ -6,13 +6,13 @@ type: "faq"
 product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
-tags: ["payments"]
+tags: ["payments", "stripe", "recurring", "troubleshooting"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
-related_articles: ["inbound-payments-setup","stripe-refund-guide","payment-options","integrations-hub"]
+last_converted: "2026-10-10"
+related_articles: ["inbound-payments-setup","stripe-refund-guide","payment-options","integrations-hub","payments-and-billing-faq","payment-not-received"]
 ---
 
 # Stripe Integration FAQ
@@ -145,6 +145,27 @@ chasing anybody.
 
 **A parent holding a confirmation email has usually paid** — on a later attempt than the
 one you are looking at. Check the booking's payment list rather than the first Stripe row.
+
+## A monthly instalment was never charged, and there is no failed payment to show for it
+
+The booking still says unpaid, the client swears their card is fine, and the payments list shows nothing at all — not even an attempt. That combination has one usual cause: **the saved card no longer exists in Stripe.**
+
+Zooza charges a stored payment method. If that method has been detached or the customer record was deleted on the Stripe side, the charge is refused before any money is touched. Stripe answers with something like `No such PaymentMethod: 'pm_…'`. Because nothing was ever attempted against a card, **no failed payment is recorded** — which is exactly why the screen looks empty rather than red.
+
+**It will keep happening.** Every future instalment on that booking fails the same way until the client pays once more and a new card is stored.
+
+### What to check in Stripe
+
+1. **Customers** → search for the client's email. Under **Payment methods**, see whether a card is still saved.
+2. On the same page, open **Events** and look for *payment method was detached* or *customer was deleted* around the date the instalment was due. That tells you when and from where the card went.
+3. For the exact request, **Developers → Workbench → Logs**.
+
+### How to get the client paying again
+
+Send them to their client portal to make the payment themselves. Paying there stores a fresh card and the schedule resumes on its own. Do not send them a booking link — that starts a new booking instead of settling the one they have.
+
+> **When the card gets stored in the first place.** Zooza does not keep a card from a trial booking; there is no expectation of recurring payment at that point. The card is stored the first time someone with a payment plan on their booking actually pays. So a client who enrolled but has never completed a payment has nothing on file, and nothing can be collected automatically until they do.
+
 
 ## Where can I see payment reports for my accountant?
 

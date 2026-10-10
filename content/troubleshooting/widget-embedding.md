@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-26"
+last_converted: "2026-10-10"
 related_articles: ["publish-widgets", "customizing-widgets", "client-profile-101", "deploying-zooza-on-website"]
 ---
 
@@ -147,9 +147,10 @@ For initial setup instructions, see [Deploying Zooza on your website](../setup/d
 
 - *"I click Pay in my profile and get a 'this is embarrassing' page"*
 - *"the Pay button is not there at all"*
+- *"the profile link took me to your English blog"* — or any other page that happens to exist at the address configured
 - the browser console shows `Cannot read properties of undefined (reading 'total_debt')` on the payments tab
 
-All three are the same fault: the profile widget's configured address points at a page that does not exist (for example `/profile` when the widget actually lives at `/moj-profil`), so the client lands nowhere.
+All of them are the same fault: the profile widget's configured address points at a page that does not exist (for example `/profile` when the widget actually lives at `/moj-profil`), so the client lands nowhere.
 
 **Check every widget set, not just one.** An account can hold several sets of widget keys, and the links are configured per set. If only one set has the right addresses, clients sent from the other sets break while everything looks fine when you test yourself. Several sets make sense only when you run several websites — one account, one website means one set is enough; the extra ones do no harm but every one of them needs correct links.
 
@@ -161,6 +162,18 @@ All three are the same fault: the profile widget's configured address points at 
 4. If your domain recently changed, update all widget URLs immediately. Until updated, all email links to clients will point to the old domain.
 
 > **Important:** If you do not enter the correct URL for each widget, links in client emails (registration confirmations, session reminders, payment notifications) will not work.
+
+### "Your connection is not private" when a client clicks a link
+
+**Problem:** A client clicks a link in a Zooza email — most often the unsubscribe or cancel-session link — and the browser warns them the connection is not private before anything loads.
+
+**Cause:** They are being sent over plain HTTP rather than HTTPS. Two possibilities, in this order:
+
+1. **The address in your widget settings starts with `http://`.** Check **Team & Settings → Publish → your widget**. Every address there should begin with `https://`.
+2. **The certificate on your own website has a problem** — expired, or not covering the subdomain in the link.
+
+Neither is something Zooza can fix for you, which is why it is worth checking the first one before contacting anybody: it takes a minute and it is the more common of the two.
+
 
 ### 404 on product purchase links
 

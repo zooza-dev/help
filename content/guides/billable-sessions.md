@@ -9,11 +9,14 @@ audience:
 tags:
   - billing
   - payments
+  - sessions
+  - pricing
 status: published
 source_legacy_path: legacy/0044_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: false
-last_converted: 2026-02-16
+last_converted: "2026-10-10"
+related_articles: ["payment-templates-creation","outstanding-amount","price-and-payment-setup","programmes-timetables-sessions-faq"]
 ---
 
 # Billable sessions
@@ -92,6 +95,8 @@ A free trial is the opposite shape. They attend one session, pay nothing, and on
 This is the most common problem with the feature, and it is not a fault.
 
 Setting the count on the class only declares **how many** sessions are paid. It does not decide **which** ones — you still have to mark them. Until you do, the two halves disagree and Zooza cannot calculate a price.
+
+The reason it behaves this way is worth holding on to, because it explains the whole feature: **by default Zooza treats every session as paid.** The moment you tell a class it has a set number of paid sessions, you switch it out of that default and into a mode where a session counts only if it carries the flag. So the setting does not add a rule on top of the old behaviour — it replaces it. A class with "10 paid sessions" and nothing flagged has, as far as pricing is concerned, no paid sessions at all.
 
 To fix it on a class where the sessions already exist:
 
