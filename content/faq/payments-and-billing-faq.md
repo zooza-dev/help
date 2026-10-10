@@ -25,7 +25,9 @@ There are two different types of invoices in the Zooza context:
 Go to **Sales & Payments** → **Invoices**. You can filter by date, search by client, and download individual invoices or the full batch as a ZIP.
 
 **Zooza subscription invoices** — invoices for your own Zooza subscription (what you pay Zooza):
-Go to **Settings** → **Subscription** → **Manage subscription** → **Details** → **Invoices**. This opens the billing portal where past invoices can be downloaded.
+Click your **name** (bottom left on desktop, top right on mobile) → **Subscription**, then scroll past the list of plans to **Manage subscription** at the bottom. That button opens the external billing portal, which is where the invoices are.
+
+> **The page itself shows only plans, so people conclude the invoices are not there.** They are — but behind the button underneath the plan tiles, not on the page. See [Where do I find my Zooza subscription invoice?](subscription-faq.md#where-do-i-find-my-zooza-subscription-invoice)
 
 ## A client asks for a payment link — what do I send?
 

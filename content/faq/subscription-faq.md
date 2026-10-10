@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
-related_articles: ["active-inactive-clients", "franchise-network", "bulk-network-transfer", "client-management-faq"]
+last_converted: "2026-10-10"
+related_articles: ["active-inactive-clients", "franchise-network", "bulk-network-transfer", "client-management-faq", "payments-and-billing-faq"]
 ---
 
 
@@ -22,7 +22,9 @@ related_articles: ["active-inactive-clients", "franchise-network", "bulk-network
 
 1. Click your **name/profile** in the Zooza app — top right on mobile, bottom left on desktop.
 2. Go to **Subscription**.
-3. Scroll to the bottom and click **Manage subscription**.
+3. Scroll past the plan tiles to the bottom of the page and click **Manage subscription**.
+
+> **This is the step people miss.** The Subscription page shows your plans and nothing else, so it looks as though invoices are not held in Zooza at all. The button sits underneath the plans — keep scrolling.
 ![Screenshot — subscription faq](../../assets/images/subscription-faq-01.png)
 
 This opens the external billing portal where you can:
