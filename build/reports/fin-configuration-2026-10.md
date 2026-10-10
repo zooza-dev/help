@@ -153,20 +153,32 @@ Load the canonical term plus its translations for each term marked `public: true
 the 80). The highest-value ones, because they are where customers and we have historically
 used different words:
 
-| English | SK | Note |
-|---|---|---|
-| Programme | Kurz | not "program" |
-| Class | Skupina | not "trieda" |
-| Session | Termín | not "lekcia" or "hodina" |
-| Booking | Registrácia | |
-| Instructor | Lektor | never "tréner", "učiteľ" or "inštruktor" |
-| Make-up session | Náhradná hodina | |
-| Trial | Skúšobná hodina | |
-| Client | Klient | has a login |
-| Attendee | Účastník | has no login |
+| English | SK (canonical) | Also accepted | Do not use |
+|---|---|---|---|
+| Programme | Program | — | Course, Open course |
+| Class | Skupina | Lekcia | Group, Timetable |
+| Session | Termín | Hodina, Lekcia | slot, appointment, date |
+| Booking | Prihlásenie / Zápis | — | see note below |
+| Trial | Skúšobná hodina | — | ukážková hodina, taster |
+| Make-up session | Náhradná hodina | Náhrada | replacement lesson, catch-up |
+| Client | Klient | Zákazník | rodič, parent |
+| Instructor | Lektor | — | tréner, učiteľ, inštruktor |
+| Payment plan | Platobný plán | — | splátkový kalendár, payment template |
 
-Getting "session" wrong is the expensive one: if Fin translates it as "hodina", every
-answer about termíny reads as if it is about something else.
+**Correction, 2026-10-10:** an earlier version of this table said Programme was
+*Kurz* and that *hodina* and *lekcia* were wrong for Session. Both were my error —
+I wrote them from memory instead of reading `terminology.yml`. The dictionary says
+Programme is **Program**, and Session accepts **Termín / Hodina / Lekcia**. The
+"Reply in Slovak only" rule already in Fin has this right.
+
+**One genuine mismatch to settle.** That Fin rule tells Fin to use *registrácia*.
+The dictionary's canonical term for Booking is **Prihlásenie / Zápis**, and it lists
+*Registration* among the deprecated forms. In practice everyone — the app included —
+says *registrácia*. Either the dictionary is behind reality or the rule is, and they
+should not disagree. Worth one decision.
+
+Instructor is the one worth policing hardest — *tréner* and *učiteľ* are what customers
+say, and both are wrong in our product.
 
 ---
 
