@@ -60,8 +60,15 @@ app and not in your mailbox, it can sit there unread for days. Turn on the **New
 reply from client** notification and it emails you each time one comes in — see
 [Notifications Center](../guides/notifications-center.md).
 
-Only a few templates go out from `no-reply@zooza.app`; the rest are sent from your own
-address, which is why replies come back to us and are collected in the app.
+**Every message leaves from a Zooza address** — `reply@zooza.app` for most templates, and
+`no-reply@zooza.app` for a few. What the parent sees as the sender is your name, so it
+looks like it came from you, but the address underneath is ours. That is why a reply comes
+back to Zooza and is collected in the app rather than landing in your own mailbox.
+
+Zooza cannot send as your own address without SPF, DKIM and DMARC records authorising it
+on your domain. Sending volume from a domain that has not been warmed up would mostly end
+in spam folders, and keeping our sending addresses off blocklists is part of what the
+subscription pays for.
 
 **If you would rather the reply reached your mailbox**, that is what the **New email reply from client** notification above is for — it emails you the moment one arrives, and you read and answer it in Zooza.
 

@@ -147,6 +147,14 @@
         "@type": "Answer",
         "text": "Both Allow online booking and Display in catalogue must be enabled for a programme to appear on your public booking page.\n\n1. Go to Programmes → select the programme → Edit Settings.\n2. Open the Online Booking tile.\n3. Verify that Allow online booking is toggled on.\n4. Verify that Display in catalogue is checked.\n5. Save the settings.\n\nIf only one of these is enabled, the programme will not be visible to clients. Allow online booking controls whether the programme accepts registrations, while Display in catalogue controls whether it appears in the website menu and booking form list."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Emails stopped going to one client — how do I turn them back on?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sending can be switched off for a single booking, and once it is, that client quietly stops receiving everything tied to it — reminders, payment notices, confirmations. Nothing on the booking shouts about it, which is why it usually surfaces as \"this one parent never gets anything\".\n\nOpen the booking. In the left card, right at the bottom, there is Options. Open it and you can switch sending back on for that booking.\n\nThis is per booking, not per person. A client with two children in two classes can have one booking silenced and the other not."
+      }
     }
   ]
 }

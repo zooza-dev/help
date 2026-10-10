@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-20"
+last_converted: "2026-10-10"
 related_articles: ["booking-faq", "booking-widget-faq", "payments-and-billing-faq"]
 ---
 
@@ -195,3 +195,12 @@ Both `Allow online booking` and `Display in catalogue` must be enabled for a pro
 5. Save the settings.
 
 If only one of these is enabled, the programme will not be visible to clients. `Allow online booking` controls whether the programme accepts registrations, while `Display in catalogue` controls whether it appears in the website menu and booking form list.
+
+## Emails stopped going to one client — how do I turn them back on?
+
+Sending can be switched off for a single booking, and once it is, that client quietly stops receiving everything tied to it — reminders, payment notices, confirmations. Nothing on the booking shouts about it, which is why it usually surfaces as "this one parent never gets anything".
+
+Open the booking. In the **left card, right at the bottom**, there is **Options**. Open it and you can switch sending back on for that booking.
+
+> This is per booking, not per person. A client with two children in two classes can have one booking silenced and the other not.
+
