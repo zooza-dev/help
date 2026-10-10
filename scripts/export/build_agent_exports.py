@@ -120,8 +120,69 @@ def chunk_text(text: str, max_chars: int = MAX_CHARS, overlap: int = OVERLAP_CHA
     return chunks
 
 
+# Intent phrases live in the shared dictionary repo, never in public content —
+# per-language keyword variants are routing data, not prose a reader should see.
+# They have to reach the index as TEXT, though: build_embeddings.py embeds
+# r["text"] and nothing else, so a phrase stored only as metadata is invisible.
+# Each article with intents therefore gets one extra record carrying them.
+INTENTS_PATH = ROOT_DIR.parent / "sdd-workflow" / "translations" / "article-intents.yml"
+
+
+def load_intents() -> dict:
+    """slug -> list of phrases people actually type. Missing file is not fatal."""
+    try:
+        import yaml
+    except ImportError:
+        logger.warning("pyyaml not available — intent phrases skipped")
+        return {}
+    if not INTENTS_PATH.exists():
+        logger.warning("No article-intents.yml at %s — intent phrases skipped", INTENTS_PATH)
+        return {}
+    data = yaml.safe_load(INTENTS_PATH.read_text(encoding="utf-8")) or {}
+    out = {}
+    for entry in data.get("article_intents", []) or []:
+        slug = entry.get("slug")
+        phrases = [p for p in (entry.get("phrases") or []) if p]
+        if slug and phrases:
+            out[slug] = phrases
+    return out
+
+
+def intent_record(fm: dict, slug: str, url: str, rel_path: str, phrases: list) -> dict:
+    """One chunk whose text is the ways people ask for this article.
+
+    Worded as a sentence rather than a bare keyword dump, so that if retrieval
+    surfaces it to a reader it still says something true and useful.
+    """
+    joined = "; ".join(phrases)
+    text = (
+        f"{fm.get('title', slug)} is the article that answers these questions, "
+        f"however they are worded and in whichever language they are asked: {joined}."
+    )
+    return {
+        "doc_id": slug,
+        "title": fm.get("title", ""),
+        "url": url,
+        "type": fm.get("type", ""),
+        "product_area": fm.get("product_area", ""),
+        "sub_area": fm.get("sub_area", ""),
+        "tags": fm.get("tags", []),
+        "audience": fm.get("audience", []),
+        "status": fm.get("status", "published"),
+        "heading_path": "How people ask for this",
+        "source_path": rel_path,
+        "text": text,
+    }
+
+
+_INTENTS = None
+
+
 def process_file(filepath: Path) -> list[dict]:
     """Process a single Markdown file into JSONL records."""
+    global _INTENTS
+    if _INTENTS is None:
+        _INTENTS = load_intents()
     text = filepath.read_text(encoding="utf-8")
     fm, body = parse_frontmatter(text)
 
@@ -131,7 +192,10 @@ def process_file(filepath: Path) -> list[dict]:
         return []
 
     product_area = fm.get("product_area", "")
-    url = f"/help/{slugify_area(product_area)}/{slug}"
+    # No /help/ prefix: the live site serves /{area}/{slug}/ and /help/... is a
+    # hard 404. Every url in this file is handed to the assistant as the link it
+    # cites, so the prefix meant every citation pointed at a dead page.
+    url = f"/{slugify_area(product_area)}/{slug}/"
     rel_path = str(filepath.relative_to(ROOT_DIR))
 
     # Strip the H1
@@ -162,6 +226,10 @@ def process_file(filepath: Path) -> list[dict]:
             if len(chunks) > 1:
                 record["chunk_index"] = i
             records.append(record)
+
+    phrases = _INTENTS.get(slug)
+    if phrases and records:
+        records.append(intent_record(fm, slug, url, rel_path, phrases))
 
     return records
 
