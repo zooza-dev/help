@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: "legacy/html/labels-and-extra-fields.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-13"
-related_articles: ["business-booking", "booking-form-settings", "booking-widget-faq"]
+last_converted: "2026-10-10"
+related_articles: ["booking-form-settings", "booking-widget-faq"]
 ---
 
 

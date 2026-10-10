@@ -8,11 +8,11 @@ sub_area: ""
 audience: ["admin"]
 tags: ["holidays", "terms", "make-up", "pause", "attendance"]
 status: "published"
-related_articles: ["make-up-sessions-faq", "edit-payment-on-booking", "payment-correction-vs-refund", "holiday-settings", "custom-holidays", "managing-sessions-in-a-class"]
+related_articles: ["make-up-sessions-faq", "edit-payment-on-booking", "payment-correction-vs-refund", "holiday-settings", "custom-holidays", "edit-sessions-in-programmes"]
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-10-10"
 ---
 
 # Holiday and Term Management FAQ

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-04-06"
+last_converted: "2026-10-10"
 ---
 
 # Communication
@@ -62,7 +62,7 @@ Each message shows:
 
 - [Send Message Reference](communication-send-email.md) — compose and send emails or SMS.
 - [Message Templates Reference](communication-message-templates.md) — manage templates.
-- [Email Integrations Reference](email-delivery-troubleshooting.md) — Mailchimp and Ecomail setup.
+- [Email Integrations Reference](../troubleshooting/email-delivery.md) — Mailchimp and Ecomail setup.
 - [WhatsApp Reference](communication-whatsapp.md) — WhatsApp conversations and templates.
 - [Message Templates Guide](../guides/message-templates.md) — how to create and use templates.
 - [Sending Email/SMS Guide](../guides/sending-email-sms.md) — step-by-step sending instructions.

@@ -25,7 +25,7 @@
       "name": "How do I assign an instructor to sessions?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Assigning an instructor at the timetable level applies to future sessions. For existing sessions, use the bulk edit feature:\n\n1. Go to the class detail.\n2. Select the sessions you want to change.\n3. Use bulk edit to assign the instructor."
+        "text": "Assigning an instructor at the timetable level applies to future sessions. For existing sessions, use the bulk edit feature:\n\n1. Go to the class detail.\n2. Select the sessions you want to change.\n3. Use bulk edit to assign the instructor.\n\nYou can do the same from the Sessions screen or the calendar, which is the easier route for a one-day substitution: filter by date, tick the sessions, and change the instructor on the selection.\n\nNothing else needs doing afterwards. The new instructor appears in their own calendar, in reports, and on session reminders and notifications automatically."
       }
     },
     {

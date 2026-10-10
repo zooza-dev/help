@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-28"
-related_articles: ["client-profile-101", "client-profile-dashboard", "client-management-faq"]
+last_converted: "2026-10-10"
+related_articles: ["client-profile-101", "client-management-faq"]
 ---
 
 # Add and fix family relationships on a client profile

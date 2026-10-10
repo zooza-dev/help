@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-10-10"
 related_articles: ["invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "billing-and-invoicing", "payments-and-billing-faq", "e-invoicing-mandates"]
 ---
 
@@ -174,7 +174,7 @@ If your system isn't supported yet, contact us — we can discuss adding an inte
 - [Choose which invoice profile applies](../guides/invoice-profile-overrides.md) — inherit and override per programme, class or booking
 - [Billing and invoicing](./billing-and-invoicing.md) — automatic and manual invoice generation, numbering, templates
 - [Invoice buyer data](../guides/invoice-buyer-data.md) — managing orderer details and regenerating invoices
-- [Invoices list](../reference/billing-and-invoicing.md) — browsing and downloading invoices
+- [Invoices list](billing-and-invoicing.md) — browsing and downloading invoices
 - [Multi-line invoices](./billing-and-invoicing.md#multi-line-invoices) — itemised invoice breakdown
 - [Integrations](./integrations-hub.md) — accounting export formats (Pohoda, Omega, SAP)
 - [Government e-invoicing mandates and Zooza](./e-invoicing-mandates.md) — Slovak 2027 rule, Peppol, and what it means for course invoices

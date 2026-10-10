@@ -960,12 +960,24 @@ def _write_static_files(out: Path, staging: bool = False) -> None:
         )
     (static / "robots.txt").write_text(robots_content, encoding="utf-8")
 
+    # The site is served by Cloudflare, which ignores .htaccess entirely — it
+    # reads a plain `_redirects` file from the build output root instead. The
+    # .htaccess was written for fifteen redirects and none of them ever fired;
+    # every archived article's old URL returned a 404 rather than moving the
+    # reader on. Both files are written now: Cloudflare uses _redirects, and
+    # .htaccess stays harmless in case the site is ever served by Apache again.
     htaccess_lines = ["ErrorDocument 404 /404.html"]
+    cf_lines = []
     for r in _load_internal_redirects():
         from_path = "/" + r.get("from", "").strip("/") + "/"
         to_path = "/" + r.get("to", "").strip("/") + "/"
         htaccess_lines.append(f"Redirect 301 {from_path} {to_path}")
+        # Cloudflare matches the path as given, so register it with and without
+        # the trailing slash rather than relying on its normalisation.
+        cf_lines.append(f"{from_path.rstrip('/')} {to_path} 301")
+        cf_lines.append(f"{from_path} {to_path} 301")
     (static / ".htaccess").write_text("\n".join(htaccess_lines) + "\n", encoding="utf-8")
+    (static / "_redirects").write_text("\n".join(cf_lines) + "\n", encoding="utf-8")
 
     (static / "llms.txt").write_text(
         "# Zooza Help\n"

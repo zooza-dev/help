@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-20"
+last_converted: "2026-10-10"
 related_articles: ["classes-list", "payments-and-billing-faq", "creating-a-class", "programme-settings"]
 ---
 
@@ -45,6 +45,10 @@ Assigning an instructor at the timetable level applies to future sessions. For e
 1. Go to the class detail.
 2. Select the sessions you want to change.
 3. Use bulk edit to assign the instructor.
+
+You can do the same from the **Sessions** screen or the calendar, which is the easier route for a one-day substitution: filter by date, tick the sessions, and change the instructor on the selection.
+
+**Nothing else needs doing afterwards.** The new instructor appears in their own calendar, in reports, and on session reminders and notifications automatically.
 
 ## I changed the venue (or instructor) on a class but it still shows the old value on sessions — why?
 
@@ -430,7 +434,7 @@ This change only affects admin pickers and list views (e.g. when assigning class
 - [Creating a programme](../guides/creating-a-programme.md) — set up a new programme step by step
 - [Archive or delete a programme](../guides/archive-or-delete-programme.md) — end or remove programmes
 - [Summer camps creation](../guides/summer-camps-creation.md) — set up seasonal or multi-day camps
-- [Programmes FAQ (quick reference)](faq-programmes.md)
+- [Programmes FAQ (quick reference)](programmes.md)
 - [Individual sessions guide](../guides/individual-sessions.md) — set up 1-to-1 and private session programmes
 - [Business model: Children's group activities — block/term](../business-models/children-group-activities-block.md)
 - [Business model: Children's group activities — subscription](../business-models/children-group-activities-subscription.md)

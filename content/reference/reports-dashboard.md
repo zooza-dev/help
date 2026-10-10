@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-21"
+last_converted: "2026-10-10"
 related_articles: ["sessions-list", "payments-dashboard", "recording-an-administrative-refund"]
 ---
 
@@ -352,4 +352,4 @@ When numbers don't match, the fastest fix is to check which **billing period** a
 
 - [Payments Reference](payments-dashboard.md) — detailed payment reports.
 - [Sessions List](sessions-list.md) — filter and export individual sessions.
-- [Dashboard Reference](dashboard-reference.md) — admin home screen.
+- [Dashboard Reference](dashboard.md) — admin home screen.

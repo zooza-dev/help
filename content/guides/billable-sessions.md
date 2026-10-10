@@ -142,4 +142,4 @@ If you change the number of billable sessions during a running programme, you mu
 
 ## Related
 
-- [Tracking billable sessions](tracking-billable-sessions.md) — how to view and monitor billable session status across classes.
+- [Tracking billable sessions](viewing-billable-sessions.md) — how to view and monitor billable session status across classes.

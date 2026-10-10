@@ -36,7 +36,7 @@ As with the other extra fields, you must enter a custom name.
 
 ![Screenshot](../../assets/images/business-registration-01.png)
 
-### Whether clients see a checkbox depends on you
+## Whether clients see a checkbox depends on you
 
 - **Fields not mandatory** → the form shows a checkbox ("Register as company"). Business fields stay hidden until the client ticks it, so private clients never see them.
 - **Fields mandatory** → there is no checkbox. Every client is asked for company details.

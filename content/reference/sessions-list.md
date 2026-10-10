@@ -35,7 +35,7 @@ The Sessions screen shows all individual sessions across all programmes and clas
 | `Status` | Filter by session status. |
 | `Type` | Filter by session type — see values below. |
 
-#### Type filter values
+### Type filter values
 
 | Value | Description |
 |---|---|

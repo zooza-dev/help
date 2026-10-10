@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-04-09"
+last_converted: "2026-10-10"
 ---
 
 # Adult Language School — Groups, Individual Lessons, and Corporate Clients
@@ -75,7 +75,7 @@ Enable **Business booking** on the Programme:
 
 Any booking with company details filled in is automatically flagged as a **Business Booking** in the system. When you generate an invoice, it uses the company details as the billing address instead of the individual's details.
 
-See [Business booking](../guides/booking-faq.md).
+See [Business booking](../faq/booking-faq.md).
 
 ### When the company books and pays directly (not the employee)
 

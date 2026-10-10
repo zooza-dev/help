@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-12"
+last_converted: "2026-10-10"
 ---
 
 # Onboarding and Launch FAQ
@@ -138,5 +138,5 @@ For birthday parties or one-off sessions, create a new programme (e.g., "Session
 
 - [Getting started with Zooza](../setup/getting-started-with-zooza.md) — initial platform setup guide
 - [Subscription FAQ](subscription-faq.md) — plans, billing, and account management
-- [Company logo and email](../setup/communication-send-email.md) — branding setup
-- [Business model guides](../business-models/business-models.md) — scenario guides by business type (camps, subscriptions, individual lessons, franchise)
+- [Company logo and email](../reference/communication-send-email.md) — branding setup
+- Business model guides — scenario guides by business type (camps, subscriptions, individual lessons, franchise)

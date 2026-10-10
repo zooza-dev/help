@@ -10,8 +10,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-26"
-related_articles: ["awaiting-payment-grace-period", "scheduled-payment-notifications", "payment-tile-on-booking"]
+last_converted: "2026-10-10"
+related_articles: ["payments-and-billing-faq", "email-payment-notifications", "payment-tile-on-booking"]
 ---
 
 # Add a one-off scheduled payment

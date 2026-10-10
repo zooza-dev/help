@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-20"
-related_articles: ["customizing-widgets", "widget-merge-rooms", "deploying-zooza-on-website", "contact-form-on-your-website"]
+last_converted: "2026-10-10"
+related_articles: ["customizing-widgets", "deploying-zooza-on-website", "contact-form-on-your-website"]
 ---
 
 # Publish (Widgets)

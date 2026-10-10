@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-26"
-related_articles: ["notifications-center", "sending-email-sms", "message-templates", "email-delivery"]
+last_converted: "2026-10-10"
+related_articles: ["notifications-center", "sending-email-sms", "message-templates", "email-delivery-troubleshooting"]
 ---
 
 # Email and Communication FAQ
@@ -267,9 +267,9 @@ Do not swap the client to a different address just to get around it. That change
 
 ## Related
 
-- [Email delivery troubleshooting](../troubleshooting/email-delivery-troubleshooting.md) — diagnose bounces, spam filtering, and delivery failures
+- [Email delivery troubleshooting](../troubleshooting/email-delivery.md) — diagnose bounces, spam filtering, and delivery failures
 - [Send email after a session](../guides/automated-notifications.md) — follow-up workflow for post-session communication
 - [Automated notifications](../guides/automated-notifications.md) — configure session reminders and event-triggered emails
 - [Message templates](../guides/message-templates.md) — create and edit email and SMS templates
 - [WhatsApp FAQ](whatsapp-faq.md) — WhatsApp messaging setup and limits
-- [Notifications center](../guides/settings-hub.md) — view and manage all outgoing notification history
+- [Notifications center](../reference/settings-hub.md) — view and manage all outgoing notification history

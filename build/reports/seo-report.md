@@ -1,14 +1,14 @@
 # SEO & AI Readiness Report
 
-**Generated:** 2026-09-27
+**Generated:** 2026-10-10
 
 ## Summary
 
 - **Total docs checked:** 275
 - **Docs with errors:** 0
-- **Docs with warnings only:** 57
+- **Docs with warnings only:** 58
 - **Total errors:** 0
-- **Total warnings:** 150
+- **Total warnings:** 152
 - **Overall:** PASS
 
 ## Checks performed
@@ -44,6 +44,9 @@
 
 ### `content/guides/ad-hoc-scheduled-payment.md`
 - WARN: description missing from frontmatter (auto-extracted: `You can add a one-off (ad hoc) scheduled payment to an existing payment plan — f…`)
+
+### `content/guides/admin-attendance-management.md`
+- WARN: description too long (163 chars, max 160)
 
 ### `content/guides/auto-cancel-unpaid-registrations.md`
 - WARN: description too long (188 chars, max 160)
@@ -183,6 +186,7 @@
 
 ### `content/guides/personas.md`
 - WARN: title too short (8 chars, min 10): `Personas`
+- WARN: description too long (171 chars, max 160)
 
 ### `content/guides/power-bi-data-description.md`
 - WARN: description missing from frontmatter (auto-extracted: `At the moment Zooza provides all kinds of static data about programmes, bookings…`)

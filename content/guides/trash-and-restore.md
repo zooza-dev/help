@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
-related_articles: ["archive-or-delete-programme", "registration-status-overview", "ad-hoc-scheduled-payment"]
+last_converted: "2026-10-10"
+related_articles: ["archive-or-delete-programme", "registration-status-faq", "ad-hoc-scheduled-payment"]
 ---
 
 # Recover deleted items: registrations, classes, sessions, and payments

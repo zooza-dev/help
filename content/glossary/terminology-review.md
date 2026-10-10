@@ -2,6 +2,8 @@
 title: "Zooza Terminology — Internal Review"
 slug: "terminology-review"
 status: "draft"
+source_language: "en"
+needs_screenshot_replacement: false
 type: "reference"
 product_area: "Settings"
 audience: ["admin"]

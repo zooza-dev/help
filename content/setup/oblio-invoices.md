@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-04"
+last_converted: "2026-10-10"
 ---
 
 # Oblio Integration
@@ -78,4 +78,4 @@ Once connected:
 
 - [Invoicing overview](./invoicing-overview.md) — how invoice engines work
 - [Billing and invoicing](./billing-and-invoicing.md) — Invoice Profiles, auto/manual generation, multi-line
-- [Invoices list](../reference/billing-and-invoicing.md) — browsing and downloading invoices
+- [Invoices list](billing-and-invoicing.md) — browsing and downloading invoices

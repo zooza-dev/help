@@ -6,6 +6,8 @@ product_area: "Settings"
 audience: ["admin", "client"]
 tags: ["glossary", "terminology", "definitions"]
 status: "published"
+source_language: "en"
+needs_screenshot_replacement: false
 last_converted: "2026-09-27"
 related_articles: ["getting-started-with-zooza", "settings-hub", "programme-settings"]
 ---
