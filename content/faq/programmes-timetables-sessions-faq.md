@@ -50,6 +50,12 @@ You can do the same from the **Sessions** screen or the calendar, which is the e
 
 **Nothing else needs doing afterwards.** The new instructor appears in their own calendar, in reports, and on session reminders and notifications automatically.
 
+## I changed the class time but the class still shows the old one
+
+A class does not store a time of its own — **it takes its time from its first session.** If the class still reads 12:15 after you moved everything to 11:00, the first session in it is still at 12:15.
+
+Change that session, or move it out of the class, and the heading follows. It is not a caching problem and clearing your browser cache will not help, which is the usual next thing people try.
+
 ## I changed the venue (or instructor) on a class but it still shows the old value on sessions — why?
 
 When you save a change to a class setting (venue, instructor, etc.), Zooza asks how to apply the change:

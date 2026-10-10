@@ -6,12 +6,13 @@ type: "reference"
 product_area: "Bookings"
 sub_area: ""
 audience: ["admin"]
-tags: ["reference", "ui-reference"]
+tags: ["reference", "ui-reference", "bookings", "filters"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-21"
+last_converted: "2026-10-10"
+related_articles: ["registration-and-booking-faq","transfer-and-copy-bookings","sending-email-sms","email-delivery-troubleshooting","async-exports"]
 ---
 
 # Bookings
@@ -59,9 +60,42 @@ Filters appear as buttons directly above the bookings list. Click any button to 
 | **Payment status** | Filter by payment status — see table below. |
 | **Payment plan** | Filter by payment frequency type. |
 | **Labels** | Filter by label. Select one or more labels from the list. |
+| **Booking origin** | Filter by how the booking came about — see below. |
 | **Created from / Created to** | Filter by booking creation date range. |
 
 Click **Reset** to clear all active filters.
+
+#### Booking origin values
+
+New in October 2026. Every booking records how it was created, and this filter lets you list bookings by that. Pick more than one value to combine them.
+
+| Group | Value | Means |
+|---|---|---|
+| Customer bookings | **By client** | Booked through the booking form on your website |
+| | **Priority registration** | An existing customer booked during the priority window |
+| | **Private Access Link** | Booked through a private link you shared |
+| | **Referral** | Booked through a referral link |
+| From a trial or re-enrolment | **From trial** | Enrolled from a trial that converted |
+| | **Auto-enrolment** | Carried into a follow-up class by auto-enrolment |
+| Added by staff | **Manually** | You created it in the admin |
+| | **Imported** | Came in through a bulk import |
+| Moved or transferred | **Copied** | Copied from another booking or class |
+| | **Moved** | Moved to another class |
+| | **Network transfer** | Transferred in from another company in your network |
+
+**What it is actually for.** Most filters answer "who", this one answers "how did this get here", which turns out to be the question behind a lot of clean-up work:
+
+- **Who never got a booking confirmation.** Bookings created manually or by copying do not send the confirmation unless you tick the option at the time — so filtering to **Manually** and **Copied** gives you exactly the list of people who may have heard nothing. See [Email delivery](../troubleshooting/email-delivery.md).
+- **How much of your enrolment is self-service.** **By client** against **Manually** tells you how much of a term you typed in yourself.
+- **Who came in from a trial, a referral or a priority window** — the three origins worth measuring if you spend anything on acquisition.
+- **Who you moved into this class**, for a "here is what changes for you" message.
+
+**The filter carries into bulk actions.** Email all, SMS all, export and network transfer all run on whatever the list is currently showing, so filtering by origin first is how you message precisely that group.
+
+> **A moved booking reports Moved, not where it originally came from.** Moving a booking overwrites its origin, so a widget booking you later moved shows as **Moved**. There is no record of what it was before.
+
+> **Older bookings show as By client.** Bookings made before the origin was recorded have nothing stored, and the filter counts them as **By client**. On the booking itself the origin stays blank rather than claiming something untrue.
+
 
 #### Auto-enrolment values
 

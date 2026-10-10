@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-20"
+last_converted: "2026-10-10"
+related_articles: []
 ---
 
 
@@ -145,6 +146,12 @@ Yes, per programme. Go to **Programmes** → open the programme → **Online Boo
 - **Blocks only** — shows only blocks.
 - **Trials or blocks** — shows trials and blocks but not full programme booking.
 
+## The blocks are in the wrong order on the booking form
+
+On the class screen blocks are listed alphabetically by name, which is not the order customers see. The order on the booking form is set separately: click **Change** on the blocks card, and reorder them there.
+
+Renaming a block to force the order — "1 Monday", "2 Wednesday" — is not necessary and leaves the numbers visible to customers.
+
 ## How do I set the display order of programmes on the booking form?
 
 Go to **Programmes** → open the programme → **Online Booking → Edit** → set the **Priority** value (0–1000). Higher numbers appear first. By default all programmes have priority 0 and are sorted alphabetically.
@@ -231,6 +238,19 @@ Common causes:
 If the error message is visible on screen, note the exact wording — it tells you which check failed. If no message appears and the form just resets, check the browser console for JavaScript errors, which can indicate a conflict with your website's scripts.
 
 ---
+
+## A class is set to available but the booking form says it is unavailable
+
+This is the single most re-asked question we get and it has more than one cause, so work down the list rather than guessing.
+
+1. **The class itself is switched off for online booking.** On the classes list such a class is badged **Not available for online booking**. The switch is on the class, separate from whether the class is public or has places free.
+2. **The class offers blocks, and the blocks are switched off.** Blocks carry their own online-booking switch, independent of the class. A class that is available while none of its blocks are means the form has nothing it is allowed to offer, so it reports the class as unavailable. Check each block, not just the class.
+3. **The booking form is set to offer blocks only.** Then anything that is not a block — a plain enrolment, a trial — is hidden even though it is enabled.
+4. **No sessions, or every session is in the past.** A class with nothing left to attend cannot be booked.
+5. **The booking cut-off has passed.** If the programme hides classes a set number of hours before they begin, a class starting shortly is correctly hidden.
+6. **It is in a priority-booking window.** The class is deliberately invisible to anyone not eligible, and visible again once the window ends. A customer who is eligible sees it only once logged in.
+
+> **Check it as a customer, not as an admin.** Open your own booking form in a private window. What you see in the admin is not filtered by any of the rules above, which is why a class can look perfectly fine from the inside.
 
 ## Some programmes are not showing in the booking widget on my website — why?
 

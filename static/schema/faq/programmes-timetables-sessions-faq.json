@@ -30,6 +30,14 @@
     },
     {
       "@type": "Question",
+      "name": "I changed the class time but the class still shows the old one",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A class does not store a time of its own — it takes its time from its first session. If the class still reads 12:15 after you moved everything to 11:00, the first session in it is still at 12:15.\n\nChange that session, or move it out of the class, and the heading follows. It is not a caching problem and clearing your browser cache will not help, which is the usual next thing people try."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "I changed the venue (or instructor) on a class but it still shows the old value on sessions — why?",
       "acceptedAnswer": {
         "@type": "Answer",

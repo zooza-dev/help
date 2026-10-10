@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-10-10"
 related_articles: ["reports-dashboard"]
 ---
 
@@ -58,6 +58,17 @@ The listing shows:
 | **Download** | For ready exports: a download link |
 
 Exports with a **Ready** status can be re-downloaded from this screen. Exports expire after a period and the download link becomes unavailable — re-export from the source list if you need it again.
+
+## "First class session" in the bookings export
+
+A column in the bookings export that reads as though it should be the start date of the class. It is not.
+
+**It is the first session on that booking.** For somebody who enrolled at the start of the term those are the same date, which is why the difference goes unnoticed until it matters. For a late joiner, or somebody moved in from another class, it is *their* first session — later than the class start, and that is the point of the column.
+
+Where a booking carries no session of its own, the column falls back to the class start date.
+
+The same value is behind the `COURSE_DATE` tag in email templates, so a "your first session is on…" email says the right thing to a late joiner without any extra work.
+
 
 ## Which exports are covered
 
