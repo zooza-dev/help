@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0024_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-03"
+last_converted: "2026-10-10"
 related_articles: ["client-management-faq","manage-family-relationships","client-profile-faq","creating-a-booking"]
 ---
 
@@ -93,12 +93,16 @@ You can start it from either end:
 
 Both open the same screen, **Make this attendee a client**.
 
+![The Attendee card on a booking, with the Make this attendee a client button beside Go to attendee and Change](../../assets/images/booking-attendee-card-make-client.png)
+
 ### Doing it
 
 1. Enter the **Email** this person will log in with. **Phone** is optional.
 2. Tick the **Bookings** that should move to them. Every booking where they are currently the attendee starts ticked — including ones in other classes, because the change belongs to the person, not to a single booking. At least one must stay ticked.
 3. Click **Preview changes**. Nothing has happened yet: you get a row per booking showing **Current client** and **New client**, so you can see exactly who is losing the role and who is gaining it.
 4. Click **Confirm**.
+
+![The Make this attendee a client screen: Email and Phone fields above a bookings table listing programme, class, current client and new client, with Preview changes and Confirm below](../../assets/images/make-this-attendee-a-client-form.png)
 
 ### What happens depends on the email
 

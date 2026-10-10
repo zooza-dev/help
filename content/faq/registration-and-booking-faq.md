@@ -196,11 +196,19 @@ Both `Allow online booking` and `Display in catalogue` must be enabled for a pro
 
 If only one of these is enabled, the programme will not be visible to clients. `Allow online booking` controls whether the programme accepts registrations, while `Display in catalogue` controls whether it appears in the website menu and booking form list.
 
-## Emails stopped going to one client — how do I turn them back on?
+## A client stopped getting session reminders — how do I turn them back on?
 
-Sending can be switched off for a single booking, and once it is, that client quietly stops receiving everything tied to it — reminders, payment notices, confirmations. Nothing on the booking shouts about it, which is why it usually surfaces as "this one parent never gets anything".
+Reminders about upcoming sessions can be switched off for a single booking, and once they are, that client quietly stops being reminded. Nothing on the booking advertises it, which is why it usually surfaces as "this one parent never hears from us".
 
-Open the booking. In the **left card, right at the bottom**, there is **Options**. Open it and you can switch sending back on for that booking.
+1. Open the booking.
+2. In the **left card, scroll to the bottom** and open **Options**.
+3. Tick **Send reminders of the upcoming sessions**.
 
-> This is per booking, not per person. A client with two children in two classes can have one booking silenced and the other not.
+![The Options section at the bottom of a booking, with the Send reminders of the upcoming sessions checkbox](../../assets/images/booking-options-session-reminders.png)
+
+> **This controls session reminders, not every email.** Booking confirmations, payment notices and messages you send by hand are not governed by this box. If a client is getting nothing at all, the cause is more likely delivery — see [Email delivery](../troubleshooting/email-delivery.md).
+
+It is set per booking, not per person: a client with two children in two classes can have one booking reminding them and the other not.
+
+**Other things that live under Options** on the same panel: how many places the booking occupies, an extra make-up allowance on top of the programme limit, guest access to the booking, and which widget the booking belongs to.
 

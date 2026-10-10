@@ -67,6 +67,8 @@ Click **Reset** to clear all active filters.
 
 #### Booking origin values
 
+![The Booking origin filter open on the bookings list, showing By client, Priority registration, Private Access Link, Referral, From trial, Auto-enrolment, Manually, Imported and Copied](../../assets/images/bookings-filter-booking-origin.png)
+
 New in October 2026. Every booking records how it was created, and this filter lets you list bookings by that. Pick more than one value to combine them.
 
 | Group | Value | Means |

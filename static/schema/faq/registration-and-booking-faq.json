@@ -150,10 +150,10 @@
     },
     {
       "@type": "Question",
-      "name": "Emails stopped going to one client — how do I turn them back on?",
+      "name": "A client stopped getting session reminders — how do I turn them back on?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sending can be switched off for a single booking, and once it is, that client quietly stops receiving everything tied to it — reminders, payment notices, confirmations. Nothing on the booking shouts about it, which is why it usually surfaces as \"this one parent never gets anything\".\n\nOpen the booking. In the left card, right at the bottom, there is Options. Open it and you can switch sending back on for that booking.\n\nThis is per booking, not per person. A client with two children in two classes can have one booking silenced and the other not."
+        "text": "Reminders about upcoming sessions can be switched off for a single booking, and once they are, that client quietly stops being reminded. Nothing on the booking advertises it, which is why it usually surfaces as \"this one parent never hears from us\".\n\n1. Open the booking.\n2. In the left card, scroll to the bottom and open Options.\n3. Tick Send reminders of the upcoming sessions.\n\nThis controls session reminders, not every email. Booking confirmations, payment notices and messages you send by hand are not governed by this box. If a client is getting nothing at all, the cause is more likely delivery — see Email delivery.\n\nIt is set per booking, not per person: a client with two children in two classes can have one booking reminding them and the other not.\n\nOther things that live under Options on the same panel: how many places the booking occupies, an extra make-up allowance on top of the programme limit, guest access to the booking, and which widget the booking belongs to."
       }
     }
   ]
