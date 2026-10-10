@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-03"
+last_converted: "2026-10-10"
 ---
 
 # Payments and Billing FAQ
@@ -296,6 +296,10 @@ When a client registers after the term has started and aliquot pricing is enable
 **remaining sessions ÷ total sessions × full price**
 
 This adjusted price is then split according to the active payment template (e.g., monthly instalments). Zooza supports four calculation methods — session-based, day-based, no value, and full price — each suited to different business models.
+
+**"Total sessions" means the sessions in the billing period, not in your course.** This is where the number usually stops making sense. A four-week course priced at €52 sitting inside a September–October billing period is measured against every session in that period — nine of them, not four — so a parent joining for the last four sees €52 ÷ 9 × 4 = €23.11 and you see a price you never set.
+
+If the figure on the booking form is lower than your price and you cannot see why, check the billing period on the class before anything else. Either shorten it to match the course, or switch aliquot off so everyone pays the full amount whenever they join.
 
 For full configuration details and common scenarios, see [Late bookings (pro-rata management)](../guides/late-bookings.md).
 

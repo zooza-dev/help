@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: "legacy/html/setting-the-price-on-a-course.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-20"
-related_articles: ["payment-templates-creation","membership-fee-setup","late-bookings","payment-options"]
+last_converted: "2026-10-10"
+related_articles: ["payment-templates-creation","membership-fee-setup","late-bookings","payment-options","stripe-payments-faq","integrations-hub"]
 ---
 
 
@@ -249,6 +249,13 @@ The **Payment Methods** section defines how clients can pay. You can enable mult
 | **Cash / bank transfer** | Client completes the booking without paying online. Payment instructions are sent via email. You process the payment manually (cash, bank transfer, or SEPA direct debit). |
 
 For details on how each method works, see [Payment options](payment-options.md).
+
+> **Connecting Stripe or GoCardless is not the same as switching it on.** The
+> integration is connected once for the whole account, under **Team & Settings →
+> Integrations**. After that you still have to enable the payment method **on each
+> programme**, here. A new centre or a new programme will not take card payments just
+> because the account is connected — this is the step most often missed when setting
+> up a new location.
 
 ## Payment instructions and invoicing
 
