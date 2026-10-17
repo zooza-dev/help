@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-20"
+last_converted: "2026-10-17"
 related_articles: ["instructor-access-faq","managing-instructors","user-roles","add-zooza-app-to-phone"]
 ---
 
@@ -205,6 +205,17 @@ You can add it to your phone's home screen so it behaves like an app:
 3. Tap **Add to Home screen**.
 
 The icon will appear on your home screen and the app will open in full-screen mode.
+
+## I cannot log in, and no code arrives
+
+Almost always this is two different accounts, not a fault.
+
+**The address you use as a client is not automatically an admin address.** A parent profile on your website and the Zooza admin app are separate logins. If your staff address is `you@yourschool.sk` but you are typing the address you once booked with as a parent, Zooza will not send you an admin code — that address simply is not an access account.
+
+Check **Team & Settings → Team** for which address is registered as your access, and use that one.
+
+> **Zooza never says whether an address exists.** Type any address and the screen says a code has been sent, whether or not the account is real. That is deliberate — telling an attacker which addresses are registered is a gift — but it does mean "it says it sent a code and nothing came" is also what you see when the address was simply never an account here.
+
 
 ## Related
 

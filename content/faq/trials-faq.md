@@ -364,6 +364,18 @@ When retention is active for a programme, clients whose trial was lost or bookin
 
 > **SK:** Retencia je nastavenie kurzu, ktoré umožňuje oslovovanie klientov, ktorí predtým odišli (Trial Lost alebo zrušená registrácia). Nastaví sa v Programme → Nastavenia → Retencia — zadáte počet dní (predvolene 30) a voliteľnú poznámku. Klient dostane odkaz na opätovné prihlásenie.
 
+## A client cancelled a trial and now has both a session and an unused credit
+
+This comes from fixing it by hand. The client cancels in time, Zooza creates a make-up credit for them automatically, and then an admin also books them onto another session from the attendance screen. One cancellation, two places — a booked session *and* a credit nobody spent.
+
+Pick one route and stay on it:
+
+- **The client moves themselves.** Leave it alone. They cancel in their profile and choose a replacement from the credit. The credit is consumed and the two are linked.
+- **You move them.** Then do not cancel the session at all. Use **Book a session** on their attendance to put them on the new date, and set the original to **Hidden**. No credit is created, so nothing is left over.
+
+Mixing the two is what produces the duplicate. If it has already happened, either delete the unused credit, or cancel the session you added and let them use the credit.
+
+
 ## Related
 
 - [Retention](../setup/retention.md) — re-engage clients after Trial Lost or cancellation

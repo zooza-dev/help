@@ -115,6 +115,14 @@
         "@type": "Answer",
         "text": "Zooza is a web application — there is no native app to download from the App Store or Google Play. You access it through a browser at zooza.app. This is intentional:\n\n- No installation required — parents and instructors can open the app immediately on any device or browser without going through an app store.\n- Always up to date — web updates deploy instantly. There is no \"please update your app\" friction.\n- Works everywhere — any phone, tablet, or desktop with a modern browser.\n- Lower barrier for clients — asking clients to install a native app creates friction. A link they click in an email just works.\n\nYou can add it to your phone's home screen so it behaves like an app:\n\niPhone (Safari):\n1. Open zooza.app in Safari.\n2. Tap the share icon (square with an arrow pointing up).\n3. Tap Add to Home Screen.\n\nAndroid (Chrome):\n1. Open zooza.app in Chrome.\n2. Tap the three-dot menu (top right).\n3. Tap Add to Home screen.\n\nThe icon will appear on your home screen and the app will open in full-screen mode."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "I cannot log in, and no code arrives",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Almost always this is two different accounts, not a fault.\n\nThe address you use as a client is not automatically an admin address. A parent profile on your website and the Zooza admin app are separate logins. If your staff address is you@yourschool.sk but you are typing the address you once booked with as a parent, Zooza will not send you an admin code — that address simply is not an access account.\n\nCheck Team & Settings → Team for which address is registered as your access, and use that one.\n\nZooza never says whether an address exists. Type any address and the screen says a code has been sent, whether or not the account is real. That is deliberate — telling an attacker which addresses are registered is a gift — but it does mean \"it says it sent a code and nothing came\" is also what you see when the address was simply never an account here."
+      }
     }
   ]
 }

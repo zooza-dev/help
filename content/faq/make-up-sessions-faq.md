@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-10-17"
 related_articles: ["matko-replacement-diagnostic","cancellation-log","replacement-hours-complete","capacity-and-extra-capacity"]
 ---
 
@@ -132,6 +132,15 @@ The **general** make-up settings override what you set on the course. That is th
 If the general settings allow a regular make-up to become a **transferred** make-up once a course ends, then a set number of credits carries into the next billing period — and once carried, they run on **their own number of days**, not the course's. So a course set to 60 days can still be handing out credits from a term two periods back.
 
 Check **Settings → Other → Make-up sessions** first, not the course, whenever the expiry behaviour does not match what you configured.
+
+**There are exactly two places, and they do different jobs:**
+
+| Where | What it sets |
+|---|---|
+| **Settings → Make-up sessions** | The standard validity in days, for the whole account |
+| **Programme → Make-up sessions** | Whether credits can still be used *after the class ends*, and for how many days |
+
+**Changing either one only affects credits created from that moment on.** Credits a client already holds keep the validity they were given. So tightening the rule today does nothing about the credits that are bothering you — those run to their original date, and if you want them gone you have to expire or delete them on the booking. See *How do I delete or expire a make-up credit?* below.
 
 ## Can make-up credits carry over to the next billing period?
 

@@ -219,6 +219,14 @@
         "@type": "Answer",
         "text": "Retention is a Zooza feature that gives clients who left (Trial Lost or cancelled booking) a time-limited opportunity to return — without the admin having to follow up manually.\n\nWhen retention is active for a programme, clients whose trial was lost or booking was cancelled receive a re-engagement link. They can use this link to rejoin within the configured window. The admin can also add a personalised note that appears with the link.\n\nHow to configure:\n\n1. Go to Programmes → open the programme.\n2. Click Settings → scroll to the Retention section.\n3. Set the number of days the re-engagement link remains active (default: 30 days).\n4. Optionally add a custom note to include with the retention communication.\n5. Save.\n\nWhat the client receives: A re-engagement link that lets them return to the booking flow or enrol directly, depending on your programme setup.\n\nRetention vs. trial automation: Trial automation handles the period during and immediately after the trial (enrolment link, follow-up, Trial Lost). Retention handles the period after Trial Lost or a cancelled booking — it's the last-chance re-engagement step.\n\nSK: Retencia je nastavenie kurzu, ktoré umožňuje oslovovanie klientov, ktorí predtým odišli (Trial Lost alebo zrušená registrácia). Nastaví sa v Programme → Nastavenia → Retencia — zadáte počet dní (predvolene 30) a voliteľnú poznámku. Klient dostane odkaz na opätovné prihlásenie."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "A client cancelled a trial and now has both a session and an unused credit",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This comes from fixing it by hand. The client cancels in time, Zooza creates a make-up credit for them automatically, and then an admin also books them onto another session from the attendance screen. One cancellation, two places — a booked session and a credit nobody spent.\n\nPick one route and stay on it:\n\n- The client moves themselves. Leave it alone. They cancel in their profile and choose a replacement from the credit. The credit is consumed and the two are linked.\n- You move them. Then do not cancel the session at all. Use Book a session on their attendance to put them on the new date, and set the original to Hidden. No credit is created, so nothing is left over.\n\nMixing the two is what produces the duplicate. If it has already happened, either delete the unused credit, or cancel the session you added and let them use the credit."
+      }
     }
   ]
 }

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/billing-settings.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-10-10"
+last_converted: "2026-10-17"
 related_articles: ["invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "invoicing-overview", "szamlazz-invoices", "fakturoid-invoices", "xero-integration"]
 ---
 
@@ -385,3 +385,11 @@ As of June 2025, all Zooza subscription billing is handled through the Zooza pla
 4. To pay online, register a payment card under **Payment Methods**.
 
 Contact Zooza support if you need a copy of a past subscription invoice or have a billing query about your Zooza account.
+
+## Should I invoice before the payment?
+
+Zooza can issue an invoice before a payment, but not automatically, and it will not then issue a final tax invoice once the money arrives. **Send payment instructions first and invoice after the payment.** That is the order the whole system assumes.
+
+The reason is not bookkeeping preference. Money that reaches you outside Zooza triggers nothing: no payment record, no release of what the parent paid for — an entry pass, a place in a class — and no automation further down the line. A proforma invoice is the right tool when there is nothing to integrate with, which is exactly the situation a booking system removes.
+
+If you are moving away from a proforma habit, the equivalent here is the payment instructions Zooza already sends, with the invoice following the payment by itself.

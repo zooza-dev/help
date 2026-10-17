@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: "legacy/0003_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-20"
+last_converted: "2026-10-17"
+related_articles: ["automatic-payment-reminders-detailed","payments-and-billing-faq","price-and-payment-setup","auto-cancel-unpaid-registrations"]
 ---
 
 # Automatic reminders for payment schedule
@@ -85,6 +86,12 @@ All payment notifications are processed in a **nightly batch**. This means:
 You can enable a notification that is sent **before** the first instalment is created. This gives the client advance notice that they will receive a payment request soon. It acts as a fourth touchpoint in addition to the three reminders above.
 
 Enable this in **Programme → Settings → Price and payment → Payment reminder settings**.
+
+## These are on by default
+
+Payment reminders do not have to be switched on. **A new programme already has them**, which is why a provider who configured nothing can still find clients receiving "your payment is still outstanding" messages — including for a class that has not started yet.
+
+They are set per programme: open the programme, go to **Price and payment**, and scroll to the bottom of the page. The automation cards are there, and that is where you turn them off.
 
 ## Turn off scheduled payment notifications
 

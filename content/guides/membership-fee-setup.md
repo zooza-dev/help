@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-20"
+last_converted: "2026-10-17"
 ---
 
 # Charge a monthly membership fee
@@ -89,3 +89,20 @@ Work down this list:
 4. **Does the class have sessions?** A class with none has no billing period, so there are no payment options to show.
 
 See [Price and payment setup](price-and-payment-setup.md#the-payment-step-is-blank-on-the-booking-form) for the full version of that check.
+
+## Selling a subscription that is not attached to a course
+
+Zooza has no standalone subscription product — a membership always hangs off a programme and a class. It is on the roadmap, not in the product today.
+
+You can still sell one, by building a programme whose sessions exist only to drive the billing:
+
+1. Create an ordinary continuous programme.
+2. Turn **attendance tracking off**, so subscribers never see sessions in their profile.
+3. Turn off **notifications about upcoming sessions** in the programme's online booking settings.
+4. Create a **membership** payment template with the anniversary date set to `0`, so each subscriber is billed on the day they joined.
+5. On the programme, set collection to **membership** and attach that template with your monthly amount.
+6. Create a class with **one session a month** for as far ahead as you need — two or three years is fine. Nobody sees them; they exist so the schedule has something to bill against.
+
+Subscribers register through the normal form, get a payment request each period, and are never bothered about attendance.
+
+> **If you sell several lengths** — a trial month, three months, a year — make one class per length rather than one programme per length. The programme carries the booking form and the questions you ask; the classes carry the billing.
