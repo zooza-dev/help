@@ -6,12 +6,12 @@ type: "guides"
 product_area: "Orders"
 sub_area: ""
 audience: ["admin"]
-tags: ["entry pass", "credit pass", "prepaid credit", "pay-as-you-go"]
+tags: ["entry pass", "credit pass", "prepaid credit", "pay-as-you-go", "renewal", "packs"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-27"
+last_converted: "2026-10-17"
 related_articles: ["pay-as-you-go-programme", "pay-as-you-go-faq", "entry-pass-client-view", "linked-classes", "orders-and-products-faq"]
 ---
 
@@ -28,30 +28,62 @@ Zooza supports two types of prepaid products:
 
 Both types work the same way in the booking flow. Choose based on whether you want to sell by number of visits or by monetary value.
 
-## Step-by-step: Create an entry pass product
+## Three words that get mixed up
 
-1. Go to **Products** → **Create New Product** → Create.
+Rebuilt in October 2026. Before anything else, these are three different things:
 
-   ![Create new product](../../assets/images/entry-pass-create-product.png "Products — Create new product form")
+| Word | What it is |
+|---|---|
+| **Entry pass** | The sellable thing you configure once — "Studio pass" |
+| **Pack size** | One size of it: 3, 5 or 10 entries, each with its own price and expiry |
+| **Pass** | A single admission. One entry, held by one client. |
 
-2. Enter the **credit value**, configure **payment methods** (online payment, bank transfer, cash, etc.) and save.
+**A pack is not a container.** Buying a 10-pack creates ten independent passes. Each carries its own share of the price and its own expiry date, and after the purchase nothing links them except the order they came from.
 
-   ![Credit value and payment config](../../assets/images/entry-pass-credit-value-config.png "Product credit value and payment method settings")
+That is why a client's balance is simply a count of the passes they still hold: unused, unexpired, and not cancelled. A screen showing "10 entries" is naming the pack they bought, not what is left.
 
-3. Go to **Items for sale** → click **Add**.
+## Creating an entry pass
 
-   ![Items for sale](../../assets/images/entry-pass-items-for-sale.png "Items for sale section")
+Go to **Entry passes** and click **New entry pass**. Give it a name — that is all the first screen asks for. Pack sizes, where it sells and whether it renews are set on the screen that follows.
 
-   ![Go to Items for sale → click Add](../../assets/images/entry-pass-add-item.png "Add new item dialog")
-4. Select **Entry Pass** as the item type.
-5. Set the **value** (number of entries or credit amount), **validity period**, **price**, and whether the item is **mandatory**.
-6. To offer a discount, set the price lower than the value (e.g. 10 entries for 80 EUR instead of 100 EUR).
+> **The old route is closed.** Entry passes used to be built as an item inside a product, under **Items for sale**. New ones cannot be created that way any more. Passes you already sell through the old route keep working and stay editable — nothing you have built needs redoing.
 
-   ![Discount pricing](../../assets/images/entry-pass-discount-pricing.png "Entry pass with discounted price")
-7. Click **Continue** → **Start and Continue**.
-8. Add a **description** and **notification template** if needed.
+The pass owns a product behind the scenes. You will see that product in the products list, marked as managed by the entry pass: *"Sold here because the entry pass says so. Change it on the pass."* Price and pack sizes are edited on the pass; how clients may pay is still set on the product.
 
-   ![Description and template](../../assets/images/entry-pass-description-template.png "Product description and notification template settings")
+### Pack sizes
+
+*One entry pass, sold in several pack sizes.* Add one per size you want to sell, each with its own **Entries**, price and expiry. A pass with no pack sizes cannot be bought, and archiving every size takes it off sale without deleting anything.
+
+### Sold on
+
+A pass attached to a programme is offered on **every class of that programme, including classes added later**, so you do not have to revisit it each term. You can also cap **Maximum purchases per client**.
+
+Two rules worth knowing:
+
+- **Only open programmes can sell an entry pass.** A pass is spent per session, so a programme booked for its full duration has nothing to spend it on. If you attach one anyway, Zooza tells you to remove it or change how the programme is booked.
+- **A pass is spent on any programme, not only the ones it is sold on.** Where you sell it controls where it can be *bought*, not where it works.
+
+> This is the only place the attachment is set. The programme's own Products tab shows the pass but will not edit it, so the two can never drift apart.
+
+### Renewal
+
+A renewing pass **re-buys itself on a schedule**: each cycle issues a fresh pack and bills for it like any other purchase. The cadence comes from a payment plan, and one plan can serve several passes — a pass carries one renewal plan at a time.
+
+Billing is either on a **fixed day of the month** or on the **anniversary of the purchase**.
+
+- **No renewal plan** — the pass is bought once and runs until its passes are used or expire.
+- **Switched off** — sold as a one-off until you switch it back on.
+- **Removed** — passes already issued are unaffected; no further cycles are billed.
+
+> **It pauses itself.** A client who falls behind on payment stops receiving new packs, rather than quietly accumulating passes they have not paid for.
+
+> **It is a payment plan, not a subscription.** Zooza uses "subscription" for something else, and calling this one will send you to the wrong screen.
+
+## Who actually holds the pass
+
+**The buyer holds the passes — not the child.** A pass is attached to the person with the login, which for a children's programme is the parent. The child attending is an attendee and never holds one.
+
+In practice the parent spends their own passes against whichever attendance they choose, including each of their children's. One parent, one pool of passes, however many children.
 
 ## Assign pass to a class
 

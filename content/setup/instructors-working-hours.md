@@ -120,7 +120,21 @@ A month with nothing in it yet shows as **Not planned**.
 
 ### What you do
 
-Open the month from the team screen. The summary tells you how many **changes to approve**, broken down into added, changed and removed, and **Show only changed days** hides everything untouched.
+**Instructors → Team availability** is the board. Pick the month, and every instructor is one row: their status, a **month at a glance** strip, their total hours and days, and **Open**.
+
+![The Team availability board for October, with the colour legend and one row per instructor showing status, month at a glance, hours and an Open button](../../assets/images/team-availability-month-board.png)
+
+The strip is colour-coded, and the last colour is the one to look for:
+
+| Colour | Meaning |
+|---|---|
+| Green | Working |
+| Yellow | Partly absent |
+| Red | Absent all day |
+| Grey | Not working |
+| Teal | **Changed, not yet approved** |
+
+Anything teal is waiting on you. Open that instructor's month. The summary tells you how many **changes to approve**, broken down into added, changed and removed, and **Show only changed days** hides everything untouched.
 
 Then one of two things:
 

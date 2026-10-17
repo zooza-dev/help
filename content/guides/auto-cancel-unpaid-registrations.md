@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-21"
+last_converted: "2026-10-17"
 related_articles: ["automatic-payment-reminders-detailed", "registration-status-faq"]
 ---
 
@@ -53,16 +53,31 @@ The auto-cancel flow has two stages:
 
 ## Where to configure
 
-Auto-cancel is configured per programme, in the **Payment Reminder Settings** section of the programme's **Price and Payment** tile.
+**Programme → Settings → Price and payment**, at the bottom of the page, the **Auto-cancel unpaid bookings** card. It is its own card, directly below Payment reminders settings.
 
-1. Open the programme and go to **Settings**.
-2. Click **Edit** on the **Price and Payment** tile.
-3. Scroll to **Payment Reminder Settings** and click **Change**.
-4. Set the following fields:
-   - **Cancel after N days unpaid** — how many days a registration may remain unpaid before the cancellation process starts.
-   - **Cancellation lead time (days)** — how many days in advance the client is notified before the cancellation actually takes effect.
-5. Save.
-![Payment Reminder Settings with auto-cancel fields highlighted](../../assets/images/auto-cancel-unpaid-registrations-01.png)
+![Auto-cancel unpaid bookings: Active or Inactive, days unpaid before scheduling cancellation, grace period, the calculated total, and apply to new bookings only](../../assets/images/auto-cancel-unpaid-settings.png)
+
+| Field | What it does |
+|---|---|
+| **Auto-cancel unpaid bookings** | Active or Inactive |
+| **Days unpaid before scheduling cancellation** | How long a booking may stay unpaid before it is scheduled |
+| **Grace period before actually cancelling (days)** | The wait between scheduling and cancelling. The client can still pay during it and keep their place. |
+| **Apply to new bookings only** | Only bookings created after you activated it are processed |
+
+The card adds the two numbers for you — **Total time from going unpaid to cancellation** — so you can see the real figure rather than working it out. Seven days plus a two-day grace period is nine days from the moment a booking goes unpaid.
+
+### Cancelling is not the same as deleting
+
+There are two mechanisms here and they are easy to confuse, because they live one above the other on the same page:
+
+| | Auto-cancel unpaid bookings | Delete an unpaid booking |
+|---|---|---|
+| Where | Its own card | Inside **Payment reminders settings** |
+| What happens | The booking is **cancelled** — scheduled first, then cancelled after the grace period | The booking is **deleted** |
+| Warning first | Yes, the client is emailed during the grace window and can still pay | No |
+| Reversible by the client | Yes, by paying | No |
+
+**Cancel is the one to reach for.** It warns, it waits, and paying undoes it. Deletion is immediate and final, and it catches anyone whose payment has arrived but has not been matched to their booking yet. See [Automatic payment reminders](automatic-payment-reminders.md#deleting-unpaid-bookings-from-the-same-screen).
 
 ---
 

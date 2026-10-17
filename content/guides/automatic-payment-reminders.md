@@ -87,17 +87,48 @@ You can enable a notification that is sent **before** the first instalment is cr
 
 Enable this in **Programme → Settings → Price and payment → Payment reminder settings**.
 
-## These are on by default
+## These are on by default, and there are two ways to time them
 
-Payment reminders do not have to be switched on. **A new programme already has them**, which is why a provider who configured nothing can still find clients receiving "your payment is still outstanding" messages — including for a class that has not started yet.
+Payment reminders do not have to be switched on. **A new programme already has them**, which is why a provider who configured nothing can still find clients being chased — including for a class that has not started.
 
-They are set per programme: open the programme, go to **Price and payment**, and scroll to the bottom. The **Payment reminders settings** card is there, showing a status — a programme that has never been touched reads **Set and activated**.
+Open the programme, go to **Price and payment**, scroll to the bottom, and use **Change** on the **Payment reminders settings** card.
 
-To stop them, use **Delete** on that card. There is no on/off switch; deleting the settings is how the automation is removed. **Change** edits the timings instead.
+![Payment reminders settings: the activation date, Set and activated versus Not activated, and the choice between sending before the programme starts or after the booking](../../assets/images/payment-reminders-modes-and-status.png)
 
-![The bottom of a programme's Price and payment page: Payment reminders settings showing "Set and activated" with Change and Delete, above Auto-cancel unpaid bookings and Additional currencies](../../assets/images/programme-payment-reminders-card.png)
+### Switching them off
 
-> **Auto-cancel unpaid bookings sits directly below it** and is a separate thing — reminders chase the money, auto-cancel gives up on it. See [Automatically cancel unpaid registrations](auto-cancel-unpaid-registrations.md).
+**Change the status of scenarios** → **Not activated**. That is the off switch. (**Delete** on the card removes the whole configuration rather than pausing it.)
+
+### The two timings
+
+This is the setting people most often have wrong, because the two behave completely differently:
+
+| Mode | When reminders go out | What counts as the due date |
+|---|---|---|
+| **Sending a reminder before the start of the programme** | Counting back from the first session | The class start date |
+| **Sending a reminder after the booking** | Counting forward from when each person booked | Set separately, see below |
+
+**First reminder** and **Second reminder** are both a number of days. In the "after the booking" mode they count from the booking, so two people who book a month apart are chased a month apart.
+
+**Days from date of enroling when payment is due** is a third, independent number. It does not follow the first or second reminder and can be set higher or lower than either.
+
+> **Reminders only reach bookings created after you activated the setting.** The card shows the activation date. Switch it on today and the people already owing you money are not chased — only those who book from now on.
+
+### Deleting unpaid bookings from the same screen
+
+Further down the same panel is a separate decision: whether an unpaid booking should be removed altogether.
+
+![The lower half: delete an unpaid booking with three options, move bookings without a down payment to the waitlist, and the warning about assigned payments](../../assets/images/payment-reminders-delete-unpaid.png)
+
+| Option | What it removes |
+|---|---|
+| **Do not delete unpaid bookings** | Nothing. The default, and the safe choice. |
+| **Delete all unpaid bookings** | Enrolled bookings with status Unpaid, Down payment unpaid or Final payment unpaid. **Partially paid bookings are never deleted.** |
+| **Without down payment** | Only bookings whose down payment is unpaid. |
+
+**Move bookings without a down payment to the waitlist** is the gentler alternative — the place is freed but the person keeps their position rather than disappearing.
+
+> **Read this before switching deletion on.** Only a booking with a *payment assigned to it* counts as paid. If you reconcile bank transfers by hand, or import statements with any delay, a parent who has genuinely paid can still be deleted because the money has not been matched to their booking yet. In that situation leave it on **Do not delete unpaid bookings**.
 
 ## Turn off scheduled payment notifications
 
