@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0066_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-21"
+last_converted: "2026-10-17"
 related_articles: ["settings-hub", "user-roles", "instructor-access-faq", "instructor-substitution"]
 ---
 
@@ -102,3 +102,34 @@ Whether an instructor can edit or delete their own availability and absences is 
 - **Absences only** — instructors can only request absences.
 
 So "I clicked the absence and there is no delete button" is usually this setting, not a fault. Check it before reporting a problem.
+
+
+## Approving a month of working hours
+
+Rebuilt in October 2026. Where approval is required, an instructor's hours are now submitted and approved **a whole month at a time**, not change by change.
+
+### What the instructor does
+
+They fill in the month — **Copy previous month** or **Apply pattern** are the quick starts — adjust the days that differ, then **Submit for approval**. The button counts what is going: *Submit for approval (6 changes)*.
+
+Once submitted, the month locks. **Their previously approved hours stay in force the whole time**, so nothing is left uncovered while you get to it. To change something they must **Withdraw to edit** first, which turns the month back into a draft.
+
+A month with nothing in it yet shows as **Not planned**.
+
+> **Emptying a month does not mean "unavailable".** If an instructor removes every working range from a month, every day in it counts as available again once approved. The system warns them. To be away, they add absences instead.
+
+### What you do
+
+Open the month from the team screen. The summary tells you how many **changes to approve**, broken down into added, changed and removed, and **Show only changed days** hides everything untouched.
+
+Then one of two things:
+
+- **Approve all changes** — accepted as a single batch. There is no approving half a month.
+- **Return with comment** — the whole month goes back to the instructor and you have to say what should change. Their approved hours stay in force until they resubmit.
+
+### Editing as an administrator
+
+Your own edits **apply immediately, without approval**. If the instructor has a submission pending, you are warned which days it covers, and your edit replaces theirs on the days you touch.
+
+> **Instructors set to absences only** cannot do any of this — they see a note saying working hours are set by an administrator, and can record absences alone.
+

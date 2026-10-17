@@ -140,6 +140,8 @@ Check **Settings → Other → Make-up sessions** first, not the course, wheneve
 | **Settings → Make-up sessions** | The standard validity in days, for the whole account |
 | **Programme → Make-up sessions** | Whether credits can still be used *after the class ends*, and for how many days |
 
+![The Make-up sessions card in a programme's settings, showing status, make-up sessions at partner companies, tailored make-up sessions and the limit for make-up sessions](../../assets/images/programme-make-up-sessions-card.png)
+
 **Changing either one only affects credits created from that moment on.** Credits a client already holds keep the validity they were given. So tightening the rule today does nothing about the credits that are bothering you — those run to their original date, and if you want them gone you have to expire or delete them on the booking. See *How do I delete or expire a make-up credit?* below.
 
 ## Can make-up credits carry over to the next billing period?
@@ -519,6 +521,21 @@ This can happen when two clients try to book the same last spot at the same time
 1. The client should return to their make-up session list and choose a different session.
 2. If the client wants to wait for that specific session to open up, they can join its waitlist. When a spot becomes available, they will receive a notification with a link to claim it.
 3. To confirm the credit is still available, check the booking's **Credits** tab in the admin panel.
+## Booking a make-up the rules would not allow
+
+New in October 2026, for the cases where the rules are right in general and wrong for this one family.
+
+When you pick a make-up session as an admin, the finder has two modes:
+
+| Mode | What it searches |
+|---|---|
+| **Allowed by make-up rules** | The sessions the client would be offered themselves. The default. |
+| **Any session** | Every session in your company, including past ones and full ones. Make-up rules are not checked at all. |
+
+**Any session** is the deliberate override. Use it to record a make-up the client was never going to be offered — most often one that has **already happened**, which the normal list can never show. If the session is full, Zooza asks you to confirm before taking it over capacity.
+
+> The eligible list stops at the first 100 matching sessions. If what you want is further out, switch to **Any session** rather than scrolling.
+
 
 ## Related
 

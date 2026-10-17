@@ -91,7 +91,13 @@ Enable this in **Programme → Settings → Price and payment → Payment remind
 
 Payment reminders do not have to be switched on. **A new programme already has them**, which is why a provider who configured nothing can still find clients receiving "your payment is still outstanding" messages — including for a class that has not started yet.
 
-They are set per programme: open the programme, go to **Price and payment**, and scroll to the bottom of the page. The automation cards are there, and that is where you turn them off.
+They are set per programme: open the programme, go to **Price and payment**, and scroll to the bottom. The **Payment reminders settings** card is there, showing a status — a programme that has never been touched reads **Set and activated**.
+
+To stop them, use **Delete** on that card. There is no on/off switch; deleting the settings is how the automation is removed. **Change** edits the timings instead.
+
+![The bottom of a programme's Price and payment page: Payment reminders settings showing "Set and activated" with Change and Delete, above Auto-cancel unpaid bookings and Additional currencies](../../assets/images/programme-payment-reminders-card.png)
+
+> **Auto-cancel unpaid bookings sits directly below it** and is a separate thing — reminders chase the money, auto-cancel gives up on it. See [Automatically cancel unpaid registrations](auto-cancel-unpaid-registrations.md).
 
 ## Turn off scheduled payment notifications
 

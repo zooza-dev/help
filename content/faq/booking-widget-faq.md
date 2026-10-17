@@ -245,11 +245,21 @@ If the error message is visible on screen, note the exact wording — it tells y
 
 Open the class and look at the **Settings overview** card. Each of the three switches — **Online booking**, **Trial sessions** and **In auto-enrolment** — now shows two things: what you set, and whether it is actually in effect for the public right now.
 
+Each one carries a coloured dot:
+
 - **green** — on, and working
 - **red** — you switched it off
-- **amber, "not effective"** — you switched it on, but something is overriding it
+- **amber** — you switched it on, but something is overriding it
 
-On an amber one, click **show why it is not in effect**. You get every reason that applies, each linked to the place it can be fixed. The same line appears under the three switches in the class edit form.
+An amber value is underlined. Click it and a **Not in effect:** panel lists every reason that applies. The same explanation appears under the three switches in the class edit form.
+
+![A class whose Online booking is turned off: the value is red, and Trial sessions is amber with a Not in effect panel reading "Online booking is turned off for this class"](../../assets/images/class-not-in-effect-online-booking-off.png)
+
+**The reasons cascade.** Trials and auto-enrolment both depend on online booking, so when that is not in effect they are not either — and they say so rather than leaving you to work it out:
+
+![A class with Online booking shown as Turned on but amber, and Trial sessions amber with a Not in effect panel reading "The class can't be booked online (see Online booking)"](../../assets/images/class-not-in-effect-trial-cascade.png)
+
+> **Read the colour before the word.** In the second picture Online booking says **Turned on** — that is what the admin chose. The amber dot is the part that matters: it is on, and it still is not working.
 
 ### The reasons, and what to do about each
 

@@ -323,6 +323,14 @@
         "@type": "Answer",
         "text": "No. The credit is never spent when the booking fails. If a client tries to book a make-up session that is already at capacity, Zooza rejects the booking and leaves the credit untouched.\n\nThis can happen when two clients try to book the same last spot at the same time — the first request succeeds and the second receives a \"session is full\" error.\n\nWhat to do:\n\n1. The client should return to their make-up session list and choose a different session.\n2. If the client wants to wait for that specific session to open up, they can join its waitlist. When a spot becomes available, they will receive a notification with a link to claim it.\n3. To confirm the credit is still available, check the booking's Credits tab in the admin panel."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Booking a make-up the rules would not allow",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "New in October 2026, for the cases where the rules are right in general and wrong for this one family.\n\nWhen you pick a make-up session as an admin, the finder has two modes:\n\nAny session is the deliberate override. Use it to record a make-up the client was never going to be offered — most often one that has already happened, which the normal list can never show. If the session is full, Zooza asks you to confirm before taking it over capacity.\n\nThe eligible list stops at the first 100 matching sessions. If what you want is further out, switch to Any session rather than scrolling."
+      }
     }
   ]
 }
