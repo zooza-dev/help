@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-03"
+last_converted: "2026-10-17"
 related_articles: ["trial-sessions", "trials-daily-business", "booking-form-settings", "sending-email-sms", "booking-faq"]
 ---
 
@@ -215,7 +215,20 @@ What providers do instead:
 - **Charge for the trial.** A paid trial is the only thing that reliably stops trial-hopping, and it costs you nothing in conversion if the amount is small and goes towards the enrolment.
 - **Watch for repeats in the bookings list.** Trial stages are booking statuses, so filter **Bookings** by **Trial ended** and **Trial lost** to see who has already been through one. A name appearing twice is easy to spot there and easy to deal with by hand.
 
-> Blocking repeat trials is on the table as a feature. If it matters to how you sell, say so — demand from providers is what decides what gets built.
+### What did change: the second trial is no longer discounted
+
+Since **9 October 2026**, a buyer who already has a booking in the same programme and the same billing period does **not** get the trial price again. They are charged the full per-session price instead, and the payment carries a note saying which earlier booking caused it, so you can see why the amount differs.
+
+A few details worth knowing:
+
+- It matches on the **buyer's email**, so a second child under the same parent counts as the same buyer. A family that trialled with one child pays full price to trial with another in that programme and period.
+- **Any earlier booking counts** — enrolled, cancelled, waiting list, a previous trial. Only a deleted one does not.
+- It applies to **paid trials** only. A free trial is unaffected.
+- **There is no setting.** It cannot be switched off.
+
+So the gap between "can they book another trial" and "do they get it cheap again" has closed from the pricing side, even though the booking itself is still allowed.
+
+> Blocking the repeat booking outright is still on the table. If it matters to how you sell, say so — demand from providers is what decides what gets built.
 
 ## Can a client who finished a trial register again for a full programme in the same class?
 

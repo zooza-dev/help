@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-10"
+last_converted: "2026-10-17"
 related_articles: []
 ---
 
@@ -241,16 +241,59 @@ If the error message is visible on screen, note the exact wording — it tells y
 
 ## A class is set to available but the booking form says it is unavailable
 
-This is the single most re-asked question we get and it has more than one cause, so work down the list rather than guessing.
+**Since 13 October 2026 the class tells you why.** You no longer have to guess.
 
-1. **The class itself is switched off for online booking.** On the classes list such a class is badged **Not available for online booking**. The switch is on the class, separate from whether the class is public or has places free.
-2. **The class offers blocks, and the blocks are switched off.** Blocks carry their own online-booking switch, independent of the class. A class that is available while none of its blocks are means the form has nothing it is allowed to offer, so it reports the class as unavailable. Check each block, not just the class.
-3. **The booking form is set to offer blocks only.** Then anything that is not a block — a plain enrolment, a trial — is hidden even though it is enabled.
-4. **No sessions, or every session is in the past.** A class with nothing left to attend cannot be booked.
-5. **The booking cut-off has passed.** If the programme hides classes a set number of hours before they begin, a class starting shortly is correctly hidden.
-6. **It is in a priority-booking window.** The class is deliberately invisible to anyone not eligible, and visible again once the window ends. A customer who is eligible sees it only once logged in.
+Open the class and look at the **Settings overview** card. Each of the three switches — **Online booking**, **Trial sessions** and **In auto-enrolment** — now shows two things: what you set, and whether it is actually in effect for the public right now.
 
-> **Check it as a customer, not as an admin.** Open your own booking form in a private window. What you see in the admin is not filtered by any of the rules above, which is why a class can look perfectly fine from the inside.
+- **green** — on, and working
+- **red** — you switched it off
+- **amber, "not effective"** — you switched it on, but something is overriding it
+
+On an amber one, click **show why it is not in effect**. You get every reason that applies, each linked to the place it can be fixed. The same line appears under the three switches in the class edit form.
+
+### The reasons, and what to do about each
+
+They come in two kinds. **Configuration** is something somebody chose, and you can change it. **Situational** is a fact about the class right now, and it may be correct.
+
+**Configuration — the programme is overriding the class**
+
+| Reason | Where to fix it |
+|---|---|
+| Online booking is turned off for the programme | Programme settings |
+| The programme is not published for online booking | Programme settings |
+| The programme is inactive / archived / deleted | Programme settings |
+| The programme doesn't offer trials | Programme → Trial |
+| The programme's trial is set to lead collection, which doesn't book sessions | Programme → Trial |
+| The programme's booking options on the website don't include trials | Programme → Online booking |
+| Auto-enrolment is turned off for the programme | Programme → Auto-enrolment |
+
+**Configuration — the class itself**
+
+| Reason | Where to fix it |
+|---|---|
+| Online booking is turned off for this class | Class settings |
+| This class is not published for online booking | Class settings |
+| This class is archived / has been deleted | Class settings |
+| The class has no venue the booking form can show | Class settings → Venue |
+| Late bookings are not allowed, so online booking closed on *(date)* | Programme → Late bookings |
+| The class has been hidden from the booking form since *(date)* | Programme → Online booking → hide before the programme begins |
+
+**Situational — facts about the class today**
+
+| Reason | What it means |
+|---|---|
+| The class ended on *(date)* | Nothing left to book |
+| There are no upcoming sessions available for a trial | Trials have nothing to offer |
+| The class is full *(x of y)* and full classes are hidden from the booking form | Working as configured |
+| The class is full *(x of y)*. New bookings go to the waiting list | Bookable, but as a waiting-list place |
+| The booking limit has been reached *(x of y bookings)* | A cap separate from capacity |
+| Priority booking is running. The class opens to the public on *(date)* | Deliberately invisible until then |
+| Priority booking is running. The class never opens to the public | Priority audience only, permanently |
+| Your account has reached its limit of online bookings for new accounts | Account-level, contact support |
+
+> **Two of these are invisible anywhere else**, which is why this card exists: a booking limit of 1 on a class with nine free seats, and the hide-before-start setting colliding with the start date. Both make a class look perfectly available while nobody can book it.
+
+> **Private links are not covered.** "Not effective" means *not publicly bookable through the booking form*. A share link, an enrolment link or a re-enrolment link follows different rules and can still work — since October 2026 a private access link gets a client into a class even when the programme has online booking switched off.
 
 ## Some programmes are not showing in the booking widget on my website — why?
 

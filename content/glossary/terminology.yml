@@ -6,7 +6,7 @@
 # ║  Edit there, then run: python3 scripts/sync_terminology.py      ║
 # ╚══════════════════════════════════════════════════════════════════╝
 #
-# Last synced: 2026-10-10
+# Last synced: 2026-10-17
 # Used by: scripts/normalize_terminology.py → build/terminology/dictionary.json
 #
 # Fields per term:
@@ -672,11 +672,16 @@ terms:
       is possible. Do not invent a setting for this. What providers actually do is charge
       for the trial, and spot repeats by filtering Bookings on the Trial ended / Trial
       lost statuses. Asked seven times in one week with no answer, so answer it directly.
-      PLANNED, NOT BUILT (noted 2026-10-10): on 2026-10-08 Martin agreed a shape with a
-      customer — one trial per unique email per programme per billing period, covering won
-      and lost alike. It is something we want to develop, not something that exists. Keep
-      answering "no" until it ships, then update this note AND trials-faq.md in the same
-      pass. Flagged here because the attendee-to-client note went stale exactly this way.
+      PARTLY SHIPPED 2026-10-09 (API-20261009-001), and narrower than the 2026-10-08
+      discussion suggested. What shipped is PRICING, not blocking: a buyer who already has
+      a booking in the same programme and billing period no longer gets the discounted
+      trial price on a further PAID trial — they pay the full per-session price and the
+      payment carries a note naming the earlier booking. Matching is on the buyer's email,
+      so a sibling counts; any earlier booking except a deleted one counts; free trials are
+      unaffected; there is no setting and it cannot be switched off.
+      The booking itself is still NOT blocked. Both halves of the answer matter: "you
+      cannot stop them booking another trial, but since 9 October they will not get the
+      trial price for it".
       PER-BLOCK CONTROL (shipped 2026-08-25): each Block carries its own trial toggle,
       independent of its online-registration toggle, so a class can offer some blocks
       for registration and others for trials. A session in two blocks stays trial-eligible
