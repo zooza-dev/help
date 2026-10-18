@@ -1,6 +1,14 @@
 # Fin configuration — guidance, glossary and snippets
 
-Written 2026-10-10 from the 26 Sep – 9 Oct intake. Everything below is grounded in a
+Written 2026-10-10 from the 26 Sep – 9 Oct intake.
+
+> **Applied by Michal on 2026-10-18.** His setup turned out to be far more
+> complete than this document assumed — most of the rules proposed here already
+> existed and were performing well, the best of them being "Never invent
+> navigation paths" (93% resolved) and "Source priority: Knowledge base → Blog →
+> Public" (91%). What this document contributed in the end was one missing rule
+> and a corrected Slovak glossary table. Treat it as a record of that round, not
+> as an outstanding to-do. Everything below is grounded in a
 conversation where Fin actually failed; nothing is speculative best practice.
 
 ---
