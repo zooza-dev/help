@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/entry-pass-client-profile.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-26"
+last_converted: "2026-10-18"
 related_articles: ["creating-entry-passes", "pay-as-you-go-programme", "client-profile-101", "orders-and-products-faq"]
 ---
 
@@ -37,25 +37,33 @@ This gives clients a quick overview without having to navigate deeper into their
 ![Client zone Orders list with gift card, sensory pack and credit pass orders](../../assets/images/entry-pass-client-view-02.png)
 ## How clients purchase an entry pass
 
-Clients can purchase entry passes in three ways, depending on how you configured the product availability.
+Where a pass is offered is set by you, on the pass itself — **Sold through**, per programme. See [Creating entry passes](creating-entry-passes.md#sold-on).
+
+### From the Parent Zone
+
+The quickest route, and the one most parents use. On the Parent Zone dashboard the **Benefits** card carries **Buy entry passes**, next to their payments and upcoming sessions. They do not need an existing booking in a particular programme to get there.
+
+![The Parent Zone dashboard with a Benefits card offering Buy entry passes](../../assets/images/parent-zone-buy-entry-passes.png)
+
+The three routes below depend on how you configured availability.
 
 ### From the booking form
 
 When the client registers for a Pay-as-you-go programme, the entry pass is offered directly in the booking form. The client selects the pass they want and pays during registration.
 
-![Screenshot — entry pass client view](../../assets/images/entry-pass-client-view-03.png)
+![An entry pass offered inside the booking form while the client registers for a pay-as-you-go programme](../../assets/images/entry-pass-client-view-03.png)
 
 ### From the client profile
 
 After the client has an active booking in a programme, the available entry passes appear in their profile under the booking detail. The client can browse the pass options and choose the one that suits them.
 
-![Screenshot — entry pass client view](../../assets/images/entry-pass-client-view-04.png)
+![Available entry passes listed in the client profile under a booking, with the pack options to choose from](../../assets/images/entry-pass-client-view-04.png)
 
 ### From the order form (widget)
 
 If you have the order form widget deployed on your website, clients can purchase entry passes directly from there without needing an existing booking first.
 
-![Screenshot — entry pass client view](../../assets/images/entry-pass-client-view-05.png)
+![The order form widget on a provider's own website, selling entry passes without an existing booking](../../assets/images/entry-pass-client-view-05.png)
 
 ## How the client books sessions
 

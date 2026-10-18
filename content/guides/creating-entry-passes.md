@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-17"
+last_converted: "2026-10-18"
 related_articles: ["pay-as-you-go-programme", "pay-as-you-go-faq", "entry-pass-client-view", "linked-classes", "orders-and-products-faq"]
 ---
 
@@ -44,19 +44,40 @@ That is why a client's balance is simply a count of the passes they still hold: 
 
 ## Creating an entry pass
 
-Go to **Entry passes** and click **New entry pass**. Give it a name — that is all the first screen asks for. Pack sizes, where it sells and whether it renews are set on the screen that follows.
+Go to **Products & Services → Entry passes** and click **New entry pass**. Give it a name — that is all the first screen asks for. Pack sizes, where it sells and whether it renews are set on the screen that follows.
 
 > **The old route is closed.** Entry passes used to be built as an item inside a product, under **Items for sale**. New ones cannot be created that way any more. Passes you already sell through the old route keep working and stay editable — nothing you have built needs redoing.
+
+![The entry pass editor: the Entry pass card with name, status and renewal summary, Pack sizes listing 1, 5 and 10 entries, the Renewal card with its plan, and Sold on](../../assets/images/entry-pass-detail-four-cards.png)
+
+The editor is four cards: the pass itself, **Pack sizes**, **Renewal** and **Sold on**.
 
 The pass owns a product behind the scenes. You will see that product in the products list, marked as managed by the entry pass: *"Sold here because the entry pass says so. Change it on the pass."* Price and pack sizes are edited on the pass; how clients may pay is still set on the product.
 
 ### Pack sizes
 
-*One entry pass, sold in several pack sizes.* Add one per size you want to sell, each with its own **Entries**, price and expiry. A pass with no pack sizes cannot be bought, and archiving every size takes it off sale without deleting anything.
+*One entry pass, sold in several pack sizes.* Add one per size you want to sell. A pass with no pack sizes cannot be bought, and archiving every size takes it off sale without deleting anything.
+
+![The New pack size form: number of entries, price, expires after in months, display order, and release the passes before the order is paid](../../assets/images/entry-pass-new-pack-size.png)
+
+| Field | What it does |
+|---|---|
+| **Number of entries** | How many sessions this pack pays for |
+| **Price** | What the pack costs. Price it per pack, so a 10-pack can be cheaper per session than a single. |
+| **Expires after (months)** | **Counted from the moment the client buys**, not from a term or a class |
+| **Display order** | Lower numbers appear first to the client |
+| **Release the passes before the order is paid** | Hands the passes over immediately, before the money arrives |
+
+> **Editing a pack size never touches passes already sold.** They keep the price and expiry they were bought with. Change a price today and only purchases from today carry it.
 
 ### Sold on
 
-A pass attached to a programme is offered on **every class of that programme, including classes added later**, so you do not have to revisit it each term. You can also cap **Maximum purchases per client**.
+A pass attached to a programme is offered on **every class of that programme, including classes added later**, so you do not have to revisit it each term.
+
+Per programme you also set:
+
+- **Max per client** — a cap on how many of this pass one client may buy, or Unlimited
+- **Sold through** — where it can be bought: the **booking form**, the **client's profile**, or both
 
 Two rules worth knowing:
 
@@ -69,7 +90,7 @@ Two rules worth knowing:
 
 A renewing pass **re-buys itself on a schedule**: each cycle issues a fresh pack and bills for it like any other purchase. The cadence comes from a payment plan, and one plan can serve several passes — a pass carries one renewal plan at a time.
 
-Billing is either on a **fixed day of the month** or on the **anniversary of the purchase**.
+Billing is either on a **fixed day of the month** or on the **anniversary of the purchase** — the row tells you which, for example *"Bills from the purchase date, a whole pack each cycle"*.
 
 - **No renewal plan** — the pass is bought once and runs until its passes are used or expire.
 - **Switched off** — sold as a one-off until you switch it back on.
@@ -78,6 +99,14 @@ Billing is either on a **fixed day of the month** or on the **anniversary of the
 > **It pauses itself.** A client who falls behind on payment stops receiving new packs, rather than quietly accumulating passes they have not paid for.
 
 > **It is a payment plan, not a subscription.** Zooza uses "subscription" for something else, and calling this one will send you to the wrong screen.
+
+## Where the client buys it
+
+In the **Parent Zone**, the **Benefits** card carries **Buy entry passes**. It sits alongside their upcoming sessions, payments and bookings, so a parent who is already in there to pay an invoice can buy a pack without going anywhere else.
+
+![The Parent Zone dashboard with a Benefits card offering Buy entry passes alongside payments, actions and upcoming sessions](../../assets/images/parent-zone-buy-entry-passes.png)
+
+If you set **Sold through** to the booking form as well, it is offered during booking too.
 
 ## Who actually holds the pass
 
