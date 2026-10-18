@@ -78,6 +78,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can I ask for a full name instead of first and last name?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, since October 2026. A contact form can collect a single full name field rather than separate first and last name boxes — the shape most people expect from an enquiry form, and the one Facebook lead forms use.\n\nTwo more things became configurable at the same time:\n\n- The submit button text, per form. If you run several forms — a general enquiry, a trial request, a callback — each can have its own wording rather than all sharing one label.\n- The order of consents. Your own agreements now come first and Zooza's platform consents last, which is the order a visitor expects to read them in.\n\nAfter these changes, do a hard reload of the admin — Ctrl+R or Ctrl+F5 — or you may still see the old form builder."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Can I add a contact to a class directly?",
       "acceptedAnswer": {
         "@type": "Answer",

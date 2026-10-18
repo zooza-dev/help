@@ -46,6 +46,14 @@
     },
     {
       "@type": "Question",
+      "name": "I cancelled a session by mistake — can I get it back?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A cancelled session is not deleted; its status has changed, and you can change it back.\n\n1. Open the calendar or the sessions list.\n2. Tick the session, or several of them.\n3. Use Bulk edit and set the status back to active.\n\nThat works for one session or a whole week in the same step.\n\nIf you were told this cannot be undone, that was wrong. Recreating the session from scratch is not the fix and loses whatever was already attached to it. Change the status instead.\n\nA session you deleted rather than cancelled is a different matter — look in Settings → Tools → Trash, where deleted items can be restored. See Trash and restore."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How do I change the time of a class?",
       "acceptedAnswer": {
         "@type": "Answer",

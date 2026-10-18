@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-17"
+last_converted: "2026-10-18"
 ---
 
 # Contact form and contacts FAQ
@@ -61,6 +61,17 @@ Check that **Send an automatic reply** is on in the form configuration, and that
 ## Can I change the text of the automatic reply?
 
 Yes. Edit **Contact form - automatic reply** in **Communication → Templates**. It can use the visitor's first name and the form name. To send different text from one form, make a copy of the template as a variant and select it in that form's **Automatic reply template**. See [Message templates](../guides/message-templates.md).
+
+## Can I ask for a full name instead of first and last name?
+
+**Yes, since October 2026.** A contact form can collect a single **full name** field rather than separate first and last name boxes — the shape most people expect from an enquiry form, and the one Facebook lead forms use.
+
+Two more things became configurable at the same time:
+
+- **The submit button text, per form.** If you run several forms — a general enquiry, a trial request, a callback — each can have its own wording rather than all sharing one label.
+- **The order of consents.** Your own agreements now come first and Zooza's platform consents last, which is the order a visitor expects to read them in.
+
+> After these changes, do a hard reload of the admin — **Ctrl+R** or **Ctrl+F5** — or you may still see the old form builder.
 
 ## Can I add a contact to a class directly?
 

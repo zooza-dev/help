@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-10"
+last_converted: "2026-10-18"
 related_articles: ["classes-list", "payments-and-billing-faq", "creating-a-class", "programme-settings"]
 ---
 
@@ -67,6 +67,20 @@ When you save a change to a class setting (venue, instructor, etc.), Zooza asks 
 If you chose **Change for a class only**, your sessions keep the old value. This is the most common reason a setting appears unchanged on individual sessions.
 
 **To fix it:** Go back to the class settings, make the change again, and this time select **Change for all sessions** or **Change only for upcoming sessions**.
+
+## I cancelled a session by mistake — can I get it back?
+
+**Yes.** A cancelled session is not deleted; its status has changed, and you can change it back.
+
+1. Open the **calendar** or the **sessions list**.
+2. Tick the session, or several of them.
+3. Use **Bulk edit** and set the status back to active.
+
+That works for one session or a whole week in the same step.
+
+> **If you were told this cannot be undone, that was wrong.** Recreating the session from scratch is not the fix and loses whatever was already attached to it. Change the status instead.
+
+A session you *deleted* rather than cancelled is a different matter — look in **Settings → Tools → Trash**, where deleted items can be restored. See [Trash and restore](../guides/trash-and-restore.md).
 
 ## How do I change the time of a class?
 
