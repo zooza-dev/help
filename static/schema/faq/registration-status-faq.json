@@ -67,6 +67,14 @@
         "@type": "Answer",
         "text": "Yes. Open the booking detail and click Change status. Available transitions depend on the current status:\n\n- Enrolled → Cancelled\n- Pending → Enrolled (to confirm manually)\n- Trial started → Trial won / Trial lost / Trial attended\n- Cancelled → Enrolled (to reactivate)\n\nNot all status changes are available in all directions. If you cannot find the transition you need, use Transfer (to move to a different class) or contact Zooza support.\n\n---"
       }
+    },
+    {
+      "@type": "Question",
+      "name": "What a waiting-list or late booking looks like to the parent",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Changed on 19 October 2026, and worth knowing because the old behaviour generated support tickets.\n\nA booking that is waitlisted, or a late booking still waiting for you to confirm it, is not an enrolment yet. Until that date it looked exactly like one in the parent's profile — it sat among their current classes with nothing but a payment badge, and the class page then half-worked: no sessions listed on a class that had forty, and a make-up tile reading \"undefined\".\n\nNow:\n\n- On their dashboard, the booking carries a status badge next to the payment badge, so the parent can see their place is not confirmed.\n- On the class page, a notice at the top says in plain words what state the booking is in and what happens next.\n- Only the tabs that have data are shown — Overview and Detail. Attendance and Payments are not offered, because there is nothing in them yet.\n\nNothing changes on your side: confirm the late booking, or move them off the waiting list, and the parent gets the full view."
+      }
     }
   ]
 }

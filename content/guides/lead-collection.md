@@ -12,7 +12,7 @@ related_articles: ["locations-and-venues-faq", "individual-sessions-lead-collect
 source_legacy_path: "legacy/0036_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-21"
+last_converted: "2026-10-24"
 ---
 
 # Lead collection
@@ -70,6 +70,16 @@ Lead collection is useful when you want to accept interest before your schedule 
 4. Clients who registered their interest can be moved to the regular class (or offered a booking via auto-enrolment).
 
 > **Does switching to lead collection prevent bookings?** No. Clients can still enrol and will appear in your bookings list. Only trial bookings are blocked (because trials require sessions).
+## Can I offer trials on a lead collection class?
+
+No, and it would not mean anything if you could.
+
+A lead collection class exists to find out whether enough people want a slot before you commit to running it. Nobody is charged, no dates are promised, and the people who sign up do not see class details in their profile — they get an email saying the dates will be confirmed later. There is nothing yet to try.
+
+The sequence is: collect interest → enough people sign up → convert the class to a fixed period, add sessions, and set up payment for those who booked. Trials belong after that point, on the real class, not before it.
+
+If not enough people sign up, you message them with an alternative instead.
+
 
 ## Related
 

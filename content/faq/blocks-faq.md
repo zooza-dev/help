@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-13"
+last_converted: "2026-10-24"
 related_articles: ["blocks-configuration","blocks-creation","trial-sessions","price-and-payment-setup"]
 ---
 
@@ -78,6 +78,17 @@ one wins**: the session stays bookable as a trial if *any* block it belongs to h
 trials on. It drops out only when it belongs to blocks and *none* of them allow trials.
 
 A session that belongs to no block at all is unaffected and stays trial-eligible.
+## Why the class looked overbooked, and what changed in October 2026
+
+A class with blocks has never had one meaningful capacity figure. A class set to 10 with two blocks can legitimately hold twenty bookings — ten in each — so a class-level number of 10 beside 18 bookings looks like an error and is not one.
+
+Two changes on 20 October make this readable:
+
+- **The classes list now shows capacity per block** rather than one class-level figure that was never representative.
+- **The bookings tile lists the blocks a client is enrolled in**, instead of the class start and end dates. For anyone selling by block that is the useful fact — which days this family actually comes.
+
+If you have been mentally dividing the class number by the number of blocks, you can stop.
+
 
 ## How do trials and blocks share capacity?
 

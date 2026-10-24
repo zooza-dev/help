@@ -46,6 +46,14 @@
     },
     {
       "@type": "Question",
+      "name": "Why the class looked overbooked, and what changed in October 2026",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A class with blocks has never had one meaningful capacity figure. A class set to 10 with two blocks can legitimately hold twenty bookings — ten in each — so a class-level number of 10 beside 18 bookings looks like an error and is not one.\n\nTwo changes on 20 October make this readable:\n\n- The classes list now shows capacity per block rather than one class-level figure that was never representative.\n- The bookings tile lists the blocks a client is enrolled in, instead of the class start and end dates. For anyone selling by block that is the useful fact — which days this family actually comes.\n\nIf you have been mentally dividing the class number by the number of blocks, you can stop."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How do trials and blocks share capacity?",
       "acceptedAnswer": {
         "@type": "Answer",

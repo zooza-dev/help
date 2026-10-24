@@ -12,7 +12,7 @@ related_articles: ["trash-and-restore", "trials-daily-business", "auto-cancel-un
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-13"
+last_converted: "2026-10-24"
 ---
 
 # Registration statuses — what each one means
@@ -158,3 +158,17 @@ Not all status changes are available in all directions. If you cannot find the t
 - [Recover deleted registrations](../guides/trash-and-restore.md) — restore from Trash.
 - [Manage trial bookings](../guides/trials-daily-business.md) — trial status workflow.
 - [Automatically cancel unpaid registrations](../guides/auto-cancel-unpaid-registrations.md) — how auto-delete for non-payment works.
+
+## What a waiting-list or late booking looks like to the parent
+
+Changed on 19 October 2026, and worth knowing because the old behaviour generated support tickets.
+
+A booking that is **waitlisted**, or a **late booking** still waiting for you to confirm it, is not an enrolment yet. Until that date it looked exactly like one in the parent's profile — it sat among their current classes with nothing but a payment badge, and the class page then half-worked: no sessions listed on a class that had forty, and a make-up tile reading "undefined".
+
+Now:
+
+- **On their dashboard**, the booking carries a status badge next to the payment badge, so the parent can see their place is not confirmed.
+- **On the class page**, a notice at the top says in plain words what state the booking is in and what happens next.
+- **Only the tabs that have data are shown** — Overview and Detail. Attendance and Payments are not offered, because there is nothing in them yet.
+
+Nothing changes on your side: confirm the late booking, or move them off the waiting list, and the parent gets the full view.

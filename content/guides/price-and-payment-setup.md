@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/setting-the-price-on-a-course.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-10"
+last_converted: "2026-10-24"
 related_articles: ["payment-templates-creation","membership-fee-setup","late-bookings","payment-options","stripe-payments-faq","integrations-hub"]
 ---
 
@@ -237,6 +237,19 @@ If clients reach the payment screen and it renders empty, check these three in o
 3. **A cookie banner is blocking the scripts** — see [Widget embedding troubleshooting](../troubleshooting/widget-embedding.md).
 
 > **Note:** If a payment template includes a discount, the discount is distributed evenly across all scheduled payments for Term payment programmes. For Membership programmes, the entire discount is applied to the first scheduled payment.
+
+## Changing a programme to a one-off payment
+
+Switching a programme from course fee or membership to a **one-off payment** has an order to it, and getting it wrong leaves the old amount showing on your booking form:
+
+1. **First set the price per session to 0.**
+2. **Then** switch the collection type to one-off.
+3. Set the one-off amount.
+
+Do it the other way round and the per-session figure stays behind in the background, so the booking form keeps quoting the old sum however many times you re-save the new one. If a class is already showing a price you no longer charge, this is almost always why — and the fix is to go back, zero the per-session price, and switch again.
+
+> The booking form on your website updates by itself. You do not need to re-embed anything or clear a cache to see the corrected price.
+
 
 ## Payment methods
 

@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: "legacy/0025_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-20"
+last_converted: "2026-10-24"
+related_articles: ["blocks-configuration","blocks-faq","payment-templates-creation","personas"]
 ---
 
 # Client import
@@ -78,3 +79,19 @@ Notes:
 | **Failed** | The import worker encountered an error. Click **Retry** to re-dispatch the import. |
 
 > If an import is stuck in **Processing** for more than a few minutes, use **Retry** to restart it.
+
+## Assigning imported clients to blocks
+
+**Blocks are assigned after the import, by hand.** This is deliberate rather than a gap: imported clients usually arrive in a mix of payment states — some paid in full, some mid-plan, some owing — and putting them all into a block automatically would attach the wrong money to most of them.
+
+For each imported registration:
+
+1. Open it and assign the block on the **Attendance** tab.
+2. Apply the payment plan that matches where that client actually is.
+
+Two things make it faster:
+
+- **If most of a class shares the same terms**, apply a payment plan in bulk from the class detail and then fix only the exceptions.
+- **Check attendance tracking is switched on** for the class first. If it is off, there is no attendance tab to assign the block on.
+
+A few dozen clients is an afternoon. If you are importing hundreds across many classes — a franchise coming on board, say — tell us the shape of it before you start; there may be a better route than doing it one at a time.

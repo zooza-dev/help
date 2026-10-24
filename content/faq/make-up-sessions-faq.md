@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-17"
+last_converted: "2026-10-24"
 related_articles: ["matko-replacement-diagnostic","cancellation-log","replacement-hours-complete","capacity-and-extra-capacity"]
 ---
 
@@ -535,6 +535,16 @@ When you pick a make-up session as an admin, the finder has two modes:
 **Any session** is the deliberate override. Use it to record a make-up the client was never going to be offered — most often one that has **already happened**, which the normal list can never show. If the session is full, Zooza asks you to confirm before taking it over capacity.
 
 > The eligible list stops at the first 100 matching sessions. If what you want is further out, switch to **Any session** rather than scrolling.
+
+## A make-up disappeared from the register
+
+The parent booked a make-up, you saw it on the session, and now it is gone. That is deliberate.
+
+If a parent cancels a make-up they had chosen, the attendance row for it is removed and the credit goes back to them, free to be spent on another session. From your side there is nothing left to show: the request was withdrawn before it happened, so leaving it on the register would only have you chasing somebody who is not coming.
+
+**It depends on your settings.** Parents can only do this where your programme allows a make-up to be cancelled. If you would rather they could not, that is the *Allow clients to reschedule or change an already selected make-up session* setting.
+
+To confirm what happened in a particular case, the booking's attendance history records the cancellation underneath the session.
 
 
 ## Related
