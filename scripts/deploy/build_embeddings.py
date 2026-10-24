@@ -11,6 +11,21 @@ Env vars:
     GEMINI_API_KEY          - Gemini API key
     KB_GCS_BUCKET           - GCS bucket name (default: zooza-kb-embeddings)
     KB_EXPORTS_DIR          - Path to agent exports (default: build/exports/agent)
+
+NOT WIRED UP. The GitHub Action that ran this on every push to content/
+(.github/workflows/kb_embeddings.yml) was deleted on 2026-10-24. It had failed
+on every run since 2026-09-27 at the Google Cloud auth step, because
+GCP_WORKLOAD_IDENTITY_PROVIDER, GCP_SERVICE_ACCOUNT and GEMINI_API_KEY were
+never added as repository secrets.
+
+It was removed rather than fixed because nothing was found that reads the
+bucket: Intercom Fin runs its own retrieval over help.zooza.online, and the MCP
+connector does not touch it. Adding the secrets would have produced an index
+with no reader.
+
+This script is kept deliberately. If something ever does need to read the
+bucket, add the three secrets and restore the workflow from git history
+(git log -- .github/workflows/kb_embeddings.yml).
 """
 
 import json
