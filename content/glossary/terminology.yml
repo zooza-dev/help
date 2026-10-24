@@ -6,7 +6,7 @@
 # ║  Edit there, then run: python3 scripts/sync_terminology.py      ║
 # ╚══════════════════════════════════════════════════════════════════╝
 #
-# Last synced: 2026-10-17
+# Last synced: 2026-10-24
 # Used by: scripts/normalize_terminology.py → build/terminology/dictionary.json
 #
 # Fields per term:
@@ -1280,8 +1280,17 @@ terms:
       en: ["payment plan", "payment schedule", "how to pay", "billing", "instalments", "when billed",
            "recurring payments", "pause payments", "unschedule payments", "cancel recurring", "stop payments",
            "defer payment", "postpone payment"]
-      sk: ["platobný plán", "spôsob platby", "platba", "fakturácia", "splátky"]
+      sk: ["platobný plán", "spôsob platby", "platba", "fakturácia", "splátky",
+           "individuálna suma", "vlastný platobný plán", "iná suma pre jedno dieťa"]
       de: ["Zahlungsplan", "Zahlungsrhythmus", "Ratenzahlung", "wann zahlen"]
+    ai_notes: >
+      2026-10-24: a client who needs a different amount from everybody else gets their own
+      plan on their booking, set up once — it then generates its own instalments and needs
+      no monthly intervention. Never tell a customer this is recurring manual work. The
+      amount can be stated either as a total to divide or directly as the per-instalment
+      figure; stating the instalment figure means template discounts are not applied on
+      top, because that figure is taken as final. Once a plan is active, adjusting the
+      debt changes only the current instalment, not the whole plan.
     public: true
 
   - id: aliquot
@@ -2623,6 +2632,19 @@ terms:
           A negative balance is an overpayment held for the client, not money owed to
           you. The figure is sometimes shown without a sign, so an overpayment can look
           identical to a debt — open the bookings behind it before chasing anyone.
+      - term: "Remains to be paid (vs Overdue)"
+        reason: >
+          "Remains to be paid" (SK "Ostáva uhradiť") is every issued and unpaid payment,
+          including ones not yet due and ones still inside the Awaiting payment grace
+          period. "Overdue" is only the subset past its due date. The first is always the
+          larger number and the gap between them is future income, not arrears — so a
+          customer reporting "the total is far higher than what is overdue" is describing
+          correct behaviour, not a fault.
+    ai_notes: >
+      2026-10-24: "Remains to be paid" is recalculated on every page load, never cached,
+      so it always reflects the bookings as they stand. Payments on cancelled or deleted
+      bookings drop out of it — a total that fell without a payment arriving usually means
+      a cancellation, not a bug.
     public: true
 
   - id: invoice

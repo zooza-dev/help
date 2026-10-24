@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-17"
+last_converted: "2026-10-24"
 related_articles: ["trial-sessions", "trials-daily-business", "booking-form-settings", "sending-email-sms", "booking-faq"]
 ---
 
@@ -89,6 +89,19 @@ If **The setting will only be valid for new bookings** is checked in the automat
 | Trial Lost | Sends a notification to the client (if Send notification after trial lost is on) |
 
 ![Screenshot — trials faq](../../assets/images/trials-faq-02.png)
+
+**The wording of these emails is set once for the whole account, not per programme.**
+**Trial Ended**, **Trial Follow-up** and **Trial Lost** are single templates in
+**Communication → Templates**, where they are grouped by programme type — Full
+programme, One-off event, Pay-as-you-go — rather than by individual programme. So editing
+the Trial Ended text changes it for every programme of that type.
+
+What *is* per programme is the timing and whether the automation runs at all: the
+**Automation Settings** inside each programme's trial settings. Two programmes can send on
+different schedules, or one can send nothing, while both use the same wording.
+
+> If you need genuinely different text for one programme, that is worth asking us about
+> before you plan around it — write to support rather than assuming either way.
 
 ---
 
