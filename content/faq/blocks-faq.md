@@ -91,21 +91,35 @@ If you have been mentally dividing the class number by the number of blocks, you
 
 ## My days do not have the same number of sessions — Tuesdays 35, Saturdays 34
 
-Price the blocks separately. This is the thing blocks are for, and it is the answer whenever one day of the week has a session more or fewer than another.
+Price the blocks separately. A class running three days a week does not have one session count, so a single class-level price charges the Saturday people for a session that does not exist.
 
-A class running Tuesdays, Wednesdays and Saturdays from November to June does not have one session count — it has three. If you price at class level, Zooza divides by one number and the Saturday people are charged for a session that does not exist.
+Make each day its own block. On the block, under **Price and payment**:
 
-Make each day its own block, then on each block set the **Price type**:
-
-| Price type | What it does |
+| Field | What it does |
 |---|---|
-| **Unit price** | Overrides the class's unit price. The total is that price × the number of sessions **in that block**, so a 34-session Saturday bills 34. |
-| **Fixed price** | One total for the block whatever its session count. If the block has already started, the total is spread over the sessions that remain. |
+| **Price per session (optional)** | Overrides the programme's unit price for this block only. Leave it at 0 to use the programme's. |
+| **Registration fee (optional)** | Same idea for the joining fee. |
 
-Either works. **Unit price** is the one to pick when all your days cost the same per session and only the counts differ, because you set one figure and each block multiplies by its own number. **Fixed price** is for when a day is deliberately priced differently — a Saturday intensive at a premium, say.
+Both fields show you what the programme currently charges underneath — *"Unit price on the programme is: £10.00"* — so you can see what you are overriding before you type.
+
+The same card carries **Allow online booking** and **Offer trial lessons for this block**, which are per block rather than per class. A block you are not selling yet can be switched off without touching the others.
 
 > **Do not try to fix this with the class price and a discount.** The class figure cannot be right for three different session counts at once, and anything you subtract on top has to be recalculated every time a date moves.
 
+## Charging less when somebody books more than one block
+
+Separate from the per-block price, and the thing to reach for when a family takes two days a week rather than one.
+
+On a **membership** payment template, the **Block pricing** button opens *Price per number of blocks*. You set the membership price for **each number of blocks a customer selects**:
+
+- **1 block** — one price
+- **2 blocks** — another price, usually less than double
+
+**Leave a row at 0 and that count is charged the full price.** The template tells you how many you have configured — *"0 of 2 set"* — so you can see at a glance whether anything is actually overridden.
+
+This is how you give a multi-day discount without creating a second programme or a discount code. A parent picking Tuesday alone pays the single-block price; the same parent adding Saturday pays whatever you set for two, automatically.
+
+> It sits on the payment template, not on the class, so one template can carry the pricing for every class that uses it.
 
 ## How do trials and blocks share capacity?
 

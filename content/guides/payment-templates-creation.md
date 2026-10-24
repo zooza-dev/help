@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0086_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: "2026-10-03"
+last_converted: "2026-10-24"
 related_articles: ["price-and-payment-setup","membership-fee-setup","automatic-payment-reminders","session-payment-adjustments","billable-sessions","payments-and-billing-faq"]
 ---
 <!-- REVIEW: add all types of prepaid payment frequencies -->
@@ -109,6 +109,17 @@ Two ways to get the instalments you wanted:
 2. **Keep Monthly, and stop June counting.** Mark the June sessions as not billable. They stay in the timetable and attendance and reminders work for them as normal — they simply do not count towards the payment schedule, so the fee spreads across October to May. See [Billable sessions](billable-sessions.md).
 
 > Pick the second one only if the June sessions genuinely are not being paid for. If they are part of what the parent is buying, the first option is the honest one — the money is the same either way, but the booking then says so.
+
+
+## Block pricing — a different price per number of blocks
+
+On a **membership** template, each payment frequency carries a **Block pricing** button. It answers one question: what should somebody pay when they take more than one block?
+
+Open it and you get a row per block count — *1 Block/s*, *2 Block/s* — and you set the membership price for each. A row left at **0** charges the full price for that count, and the template shows how many you have actually set, for example *"0 of 2 set"*.
+
+Use it for a multi-day discount: Tuesday alone at one price, Tuesday plus Saturday at less than double. The customer picks their days on the booking form and the right figure applies by itself — no second programme, no discount code.
+
+> **It lives on the template, not the class.** One template can carry this pricing for every class that uses it, which is the point — you set it once for a term rather than per group.
 
 
 ## Other template settings, template activation in programmes
