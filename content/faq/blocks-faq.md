@@ -89,6 +89,23 @@ Two changes on 20 October make this readable:
 
 If you have been mentally dividing the class number by the number of blocks, you can stop.
 
+## My days do not have the same number of sessions — Tuesdays 35, Saturdays 34
+
+Price the blocks separately. This is the thing blocks are for, and it is the answer whenever one day of the week has a session more or fewer than another.
+
+A class running Tuesdays, Wednesdays and Saturdays from November to June does not have one session count — it has three. If you price at class level, Zooza divides by one number and the Saturday people are charged for a session that does not exist.
+
+Make each day its own block, then on each block set the **Price type**:
+
+| Price type | What it does |
+|---|---|
+| **Unit price** | Overrides the class's unit price. The total is that price × the number of sessions **in that block**, so a 34-session Saturday bills 34. |
+| **Fixed price** | One total for the block whatever its session count. If the block has already started, the total is spread over the sessions that remain. |
+
+Either works. **Unit price** is the one to pick when all your days cost the same per session and only the counts differ, because you set one figure and each block multiplies by its own number. **Fixed price** is for when a day is deliberately priced differently — a Saturday intensive at a premium, say.
+
+> **Do not try to fix this with the class price and a discount.** The class figure cannot be right for three different session counts at once, and anything you subtract on top has to be recalculated every time a date moves.
+
 
 ## How do trials and blocks share capacity?
 

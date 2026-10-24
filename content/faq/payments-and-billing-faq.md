@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-10"
+last_converted: "2026-10-24"
 ---
 
 # Payments and Billing FAQ
@@ -132,6 +132,20 @@ The gap exists for direct debit. On the scheduled date the collection begins, an
 **To stop a payment, the scheduled date is the one that matters**, not the due date. Once the scheduled date passes and the payment has gone to the provider, it is on its way. A client who cancels a week before the scheduled date can be stopped cleanly.
 
 > **Changing the number affects new instalments only.** Payments already sitting in an existing plan keep the dates they were given. And remember the same field also governs the Awaiting payment grace window, so shortening it tightens both.
+
+## Can I put a credit on a client's account for them to use later?
+
+**There is no account balance to top up.** A client does not hold money with you in Zooza; money is always attached to a booking. So there is nothing to credit in the general sense, and the ad-hoc scheduled payment will not do it — that field takes a negative amount only, which is a charge.
+
+What people mean when they ask usually falls into one of three things, and each has its own route:
+
+| You want to | Do this |
+|---|---|
+| Take something off what they owe **now** | Correct the payment on the booking, or reduce the scheduled payment. See [Payment correction vs refund](../guides/payment-correction-vs-refund.md). |
+| Give them something to spend on **future sessions** | Sell or grant a **prepaid credit** — a money-based pass they draw down per session. See [Creating entry passes](../guides/creating-entry-passes.md). |
+| Knock an amount off their **next booking** | A discount code, or a loyalty rule if it should apply by itself. See [Discount codes](../guides/discount-code.md). |
+
+The middle one is the closest thing to "credit on the account", and it is the right answer when a family has overpaid or you owe them sessions rather than money.
 
 
 ## Can I split one payment between two bookings?

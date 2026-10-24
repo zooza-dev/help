@@ -86,6 +86,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can I put a credit on a client's account for them to use later?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no account balance to top up. A client does not hold money with you in Zooza; money is always attached to a booking. So there is nothing to credit in the general sense, and the ad-hoc scheduled payment will not do it — that field takes a negative amount only, which is a charge.\n\nWhat people mean when they ask usually falls into one of three things, and each has its own route:\n\nThe middle one is the closest thing to \"credit on the account\", and it is the right answer when a family has overpaid or you owe them sessions rather than money."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Can I split one payment between two bookings?",
       "acceptedAnswer": {
         "@type": "Answer",
