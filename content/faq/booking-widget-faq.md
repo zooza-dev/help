@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-17"
+last_converted: "2026-10-24"
 related_articles: []
 ---
 
@@ -302,6 +302,8 @@ They come in two kinds. **Configuration** is something somebody chose, and you c
 | Your account has reached its limit of online bookings for new accounts | Account-level, contact support |
 
 > **Two of these are invisible anywhere else**, which is why this card exists: a booking limit of 1 on a class with nine free seats, and the hide-before-start setting colliding with the start date. Both make a class look perfectly available while nobody can book it.
+
+> **An open programme shows only Online booking.** Since 22 October the *Trial sessions* and *In auto-enrolment* cells are hidden on classes in an open programme, because neither applies there. If you remember seeing them with a "not in effect" note and a Change link that led nowhere useful, that is what was removed — nothing about your class has changed.
 
 > **Private links are not covered.** "Not effective" means *not publicly bookable through the booking form*. A share link, an enrolment link or a re-enrolment link follows different rules and can still work — since October 2026 a private access link gets a client into a class even when the programme has online booking switched off.
 

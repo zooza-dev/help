@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0067_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: false
-last_converted: "2026-09-21"
+last_converted: "2026-10-24"
 related_articles: ["managing-instructors","role-selection-guide","roles-and-permissions-faq","instructor-rate-reward"]
 ---
 
@@ -272,6 +272,8 @@ client money anywhere:
 - amounts stop being rendered in the bookings list and on the booking itself
 
 Owners, assistants and receptionists keep everything.
+
+**Since 22 October 2026 the session screen honours it too.** Payment information on a session follows the same switch, so an instructor opening a class register no longer sees money there either. That was the last screen where it leaked.
 
 ![Team and Settings, General, Access — the toggle Allow instructors to see financial information set to Yes, with Allow main instructors to access the Payments section below it](../../assets/images/user-roles-21.png)
 
