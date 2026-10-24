@@ -1,6 +1,6 @@
 ---
 title: "Login and Account FAQ"
-description: "Account deletion must be handled by Zooza support. Contact support@zooza.online and request account deletion."
+description: "Passwordless logins, changing the email you sign in with, team profiles and roles, and what to check when no login code arrives."
 slug: "login-and-account-faq"
 type: "faq"
 product_area: "Settings"
@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-17"
+last_converted: "2026-10-24"
 related_articles: ["instructor-access-faq","managing-instructors","user-roles","add-zooza-app-to-phone"]
 ---
 
@@ -132,6 +132,47 @@ No. Each team member should have their own account with an individual email addr
 
 Each team member then logs in with their own email using the same passwordless login link process.
 
+## A colleague's name changed on their own profile — who did that?
+
+Another admin, almost certainly. **Anyone with admin access to the team can edit the
+profile details of everyone else on it**, name included, from **Settings → General →
+Access**. No warning is shown, and nothing tells the person their name was changed.
+
+The usual cause is innocent and worth recognising: somebody meaning to bring a new
+colleague in **edited an existing profile instead of adding a new one**. The new person
+then gets the old person's account — same login, same permissions — and the original
+member finds themselves renamed. If a name suddenly looks wrong, check whether a new
+starter joined around the same date.
+
+**To fix it:** set the name back in **Settings → General → Access**, then add the new
+person properly with their own email address. One person, one account — see above.
+
+**To change your own name**, open your profile at the top right rather than the team
+screen.
+
+> **Automatic emails will use whatever the profile says.** Until the name is corrected,
+> anything Zooza sends addresses the person by the wrong name. That is the signal most
+> people notice first.
+
+## Can I log in as one of my team members to see what they see?
+
+Not directly — there is no "view as this user" switch, by design.
+
+The only way to be in Zooza as somebody else is to use **their** login link: they forward
+you the email or message containing it, and you open it before it expires. That is a
+deliberate act by the account holder, which is the point.
+
+What you can do without their login:
+
+- **Check what their role can reach** — the menus and permissions for each role are listed
+  in [User roles](../guides/user-roles.md#menu-visibility-by-role).
+- **Edit their profile details** from **Settings → General → Access**, as above.
+- **Create a test account** with the role you want to inspect, and look around in that.
+  See [How do I create a test or sandbox Zooza account?](#how-do-i-create-a-test-or-sandbox-zooza-account) below.
+
+Note that a login link is single-use: if they request a new one, the one they sent you
+stops working.
+
 ## How do I change the app language for admins or instructors?
 
 Two routes, same setting — take whichever you reach first:
@@ -212,7 +253,7 @@ Almost always this is two different accounts, not a fault.
 
 **The address you use as a client is not automatically an admin address.** A parent profile on your website and the Zooza admin app are separate logins. If your staff address is `you@yourschool.sk` but you are typing the address you once booked with as a parent, Zooza will not send you an admin code — that address simply is not an access account.
 
-Check **Team & Settings → Team** for which address is registered as your access, and use that one.
+Check **Settings → General → Access** for which address is registered as your access, and use that one.
 
 > **Zooza never says whether an address exists.** Type any address and the screen says a code has been sent, whether or not the account is real. That is deliberate — telling an attacker which addresses are registered is a gift — but it does mean "it says it sent a code and nothing came" is also what you see when the address was simply never an account here.
 

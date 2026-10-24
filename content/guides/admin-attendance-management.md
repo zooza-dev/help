@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-03"
+last_converted: "2026-10-24"
 related_articles: ["instructor-attendance-management","make-up-sessions-faq","transfer-and-copy-bookings","cancellation-log","matko-replacement-diagnostic"]
 ---
 
@@ -23,11 +23,43 @@ Admins and instructors (with full report permission) can set or change attendanc
 
 ### Via Calendar
 
-Go to **Calendar** and click on a session tile. Switch to **Full view** (top right) to see all enrolled clients with their attendance controls on one screen.
+Go to **Calendar** and click a session. This is the fastest way to mark a whole class at once, and the screen was rebuilt in October 2026.
 
-![Screenshot — admin attendance management](../../assets/images/admin-attendance-management-01.png)
+![The session screen: status, date, actions, and the tile row showing will attend, will not attend, trial bookings, make-up sessions and available slots](../../assets/images/session-screen-overview.png)
 
-This is the fastest way to mark attendance for an entire class at once.
+The top of the screen tells you where you are before you touch anything:
+
+- **The counts** — will attend, will not attend, trial bookings, make-up sessions and available slots, with **Details** to expand them.
+- **Where this session sits** — *65. session of 198*, with arrows to the session either side. You can work through a term without going back to the calendar.
+- **A holiday badge** when the date falls in a school break you have configured.
+- **Actions** — Add/Edit substitution, Cancel/Reschedule session, Message the class, and Edit.
+
+### Quick view and Full view
+
+The **Attendance** card has two modes, switched top right.
+
+- **Quick view** — names and the four attendance buttons, nothing else. What you want with a room in front of you.
+- **Full view** — adds a column per piece of information: the attendee with their date of birth and age, what they owe with **Add payment**, their attendance, and space for personal feedback.
+
+**Mark all as attended** is at the top of both, and the running count — *Attended 1/9* — sits under it.
+
+> **The payment column follows the instructor financial-visibility setting.** Where instructors are not allowed to see client money, it is not on their register either. See [User roles](user-roles.md#keeping-client-money-off-instructors-screens).
+
+### Putting the register in the order you want
+
+By default the list is in booking order, newest first — which is the one order
+nobody calls a name out in. **Sort** at the top of the Attendance card changes it:
+
+| Sort by | Use it for |
+|---|---|
+| **Newest first** (default), **Oldest first** | Who joined when — useful on a class that is still filling up. |
+| **Attendee A→Z**, **Attendee Z→A** | Calling the register. This is the alphabetical order by the child's name. |
+| **Client A→Z**, **Client Z→A** | Alphabetical by the parent instead — the right one when you are chasing paperwork rather than marking a room. |
+| **Balance: lowest first**, **Balance: highest first** | Who owes the most. Pair it with Full view so the amount is on screen beside the name. |
+
+The order is yours, not the class's: it is how you see the list, and it changes
+nothing for anyone else.
+
 
 ### Via Booking
 
@@ -51,6 +83,20 @@ Each session row shows four state buttons:
 | **Did not attend** | The client did not show up and did not cancel. No make-up credit is generated. |
 
 Click any button to set or change the state. The change takes effect immediately. You can change it again at any time, including for past sessions.
+
+![A session register with four attendance buttons per person: will attend, attended, cancelled, did not attend, each highlighting in its own colour](../../assets/images/session-attendance-four-states.png)
+
+> **Watch the middle two.** The order on screen is *Will attend · Attended · Cancelled · Did not attend*, so **Cancelled sits between the green tick and the red cross** and is easy to hit by mistake. It is not a neutral button: it records a planned absence, which on a programme with make-ups issues the client a credit and takes them off this session. If somebody vanished from your register after a stray click, that is almost always what happened — set them back to Attended and delete the credit it created.
+
+### Choosing what Full view shows
+
+The icon beside the Quick view / Full view toggle opens the layout editor.
+
+![The attendance card in layout mode: tiles for attendee, payment, attendance, address, slots, internal note and labels, with a column selector and a drop area](../../assets/images/session-attendance-customise-tiles.png)
+
+Each piece of information is a tile you can move, resize with the column selector, or remove with the bin. Anything you take out goes back to the **Drop widgets here** strip at the bottom and can be dragged in again. Beyond the obvious ones there are **Address**, **Slots**, **Internal note** and **Labels**, and a **Buyer** toggle for showing the paying parent rather than the attending child.
+
+**Save** keeps your layout, **Reset to default** puts it back. It is worth a minute: a swimming school wants the address off and the internal note up, a music school wants the opposite.
 
 ## How a client gets onto a session in the first place
 

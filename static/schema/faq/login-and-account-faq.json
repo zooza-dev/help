@@ -86,6 +86,22 @@
     },
     {
       "@type": "Question",
+      "name": "A colleague's name changed on their own profile — who did that?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Another admin, almost certainly. Anyone with admin access to the team can edit the\nprofile details of everyone else on it, name included, from Settings → General →\nAccess. No warning is shown, and nothing tells the person their name was changed.\n\nThe usual cause is innocent and worth recognising: somebody meaning to bring a new\ncolleague in edited an existing profile instead of adding a new one. The new person\nthen gets the old person's account — same login, same permissions — and the original\nmember finds themselves renamed. If a name suddenly looks wrong, check whether a new\nstarter joined around the same date.\n\nTo fix it: set the name back in Settings → General → Access, then add the new\nperson properly with their own email address. One person, one account — see above.\n\nTo change your own name, open your profile at the top right rather than the team\nscreen.\n\nAutomatic emails will use whatever the profile says. Until the name is corrected,\nanything Zooza sends addresses the person by the wrong name. That is the signal most\npeople notice first."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I log in as one of my team members to see what they see?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not directly — there is no \"view as this user\" switch, by design.\n\nThe only way to be in Zooza as somebody else is to use their login link: they forward\nyou the email or message containing it, and you open it before it expires. That is a\ndeliberate act by the account holder, which is the point.\n\nWhat you can do without their login:\n\n- Check what their role can reach — the menus and permissions for each role are listed\n  in User roles.\n- Edit their profile details from Settings → General → Access, as above.\n- Create a test account with the role you want to inspect, and look around in that.\n  See How do I create a test or sandbox Zooza account? below.\n\nNote that a login link is single-use: if they request a new one, the one they sent you\nstops working."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How do I change the app language for admins or instructors?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -121,7 +137,7 @@
       "name": "I cannot log in, and no code arrives",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Almost always this is two different accounts, not a fault.\n\nThe address you use as a client is not automatically an admin address. A parent profile on your website and the Zooza admin app are separate logins. If your staff address is you@yourschool.sk but you are typing the address you once booked with as a parent, Zooza will not send you an admin code — that address simply is not an access account.\n\nCheck Team & Settings → Team for which address is registered as your access, and use that one.\n\nZooza never says whether an address exists. Type any address and the screen says a code has been sent, whether or not the account is real. That is deliberate — telling an attacker which addresses are registered is a gift — but it does mean \"it says it sent a code and nothing came\" is also what you see when the address was simply never an account here."
+        "text": "Almost always this is two different accounts, not a fault.\n\nThe address you use as a client is not automatically an admin address. A parent profile on your website and the Zooza admin app are separate logins. If your staff address is you@yourschool.sk but you are typing the address you once booked with as a parent, Zooza will not send you an admin code — that address simply is not an access account.\n\nCheck Settings → General → Access for which address is registered as your access, and use that one.\n\nZooza never says whether an address exists. Type any address and the screen says a code has been sent, whether or not the account is real. That is deliberate — telling an attacker which addresses are registered is a gift — but it does mean \"it says it sent a code and nothing came\" is also what you see when the address was simply never an account here."
       }
     }
   ]

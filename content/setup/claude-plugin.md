@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-13"
+last_converted: "2026-10-24"
 related_articles: ["claude-plugin-faq", "integrations-hub"]
 ---
 
@@ -38,23 +38,38 @@ The connector is active immediately.
 
 ## Connect via ChatGPT
 
-Same connector, same address — but OpenAI has moved this setting several times, most
-recently in July 2026, so a click path written down today may not survive the year.
+**You need a paid ChatGPT plan.** Custom connectors are not available on the free tier.
 
-**Check the in-app guide first.** Open **`zooza.app/#mcp`** in Zooza. It is the page we
-keep current, and it is the one to trust if it disagrees with the steps below.
+These steps worked on 23 October 2026, in the **browser** at chatgpt.com. The desktop
+app did not show the setting at all, so if you cannot find it there, open ChatGPT in a
+browser instead.
 
-As things stand you need two things:
+1. Go to **[chatgpt.com/plugins](https://chatgpt.com/plugins)**.
+2. If a Zooza entry is already there from an earlier attempt, **delete it first.** A
+   half-finished connector will not repair itself, and it is the most common reason the
+   steps below appear to do nothing.
+3. Add a **custom MCP server** with the address `https://mcp.zooza.app/mcp`.
+4. Click **Connect** and sign in. Two things to get right:
+   - choose **Europe** as the region;
+   - use **the same email address you log in to Zooza with**. A different address
+     authenticates fine and then finds no account.
+5. Check it worked: ask ChatGPT **`whoami`**. It should come back with your name and
+   company. If it does not, the connector is listed but not actually authenticated —
+   remove it and repeat from step 2.
 
-1. In ChatGPT's **settings**, switch on **developer mode**.
-2. Under **plugins** (connectors), add a **custom connector** pointing at
-   `https://mcp.zooza.app/mcp`, then sign in with your Zooza account.
+> **Do not bother with developer mode.** ChatGPT itself, and other AI assistants, will
+> often tell you to switch on developer mode and add the server there. We have watched
+> that route fail. The plugins screen above is the one that works.
 
-> **If the menus do not look like that, ask ChatGPT itself.** Tell it you want to add a
-> custom MCP connector at `https://mcp.zooza.app/mcp` and to walk you through where that
-> setting lives in your version. It knows its own interface better than any screenshot we
-> could publish, and it handles this well. This is genuinely the fastest route when the
-> steps above do not match what you see.
+**If the menus do not match.** OpenAI has moved this setting repeatedly — roughly
+monthly — so by the time you read this the wording may have changed again. Two things
+that stay current when this page does not:
+
+- **`zooza.app/#mcp`** in your Zooza account is the in-app guide we keep updated. Trust
+  it over this page if they disagree.
+- Ask ChatGPT to walk you through adding a custom MCP connector at
+  `https://mcp.zooza.app/mcp` in *your* version of its interface. It knows its own menus.
+  Just ignore it if it steers you to developer mode.
 
 Once connected, everything below works the same as it does in Claude.
 

@@ -329,6 +329,32 @@ To see the full list of unpaid bookings:
 2. Use the status or payment filter to show only unpaid or partially paid bookings.
 3. The filtered list shows all matching bookings with full pagination.
 
+## "Remains to be paid" is far higher than what is actually overdue — is it wrong?
+
+Almost certainly not. The two numbers count different things, and the big one counts more.
+
+**Remains to be paid** is every payment you have issued and not yet received. It makes no
+distinction about dates: a payment due next March and a payment that was due in August
+both sit in it, as does anything still in **Awaiting payment**, where the client is
+inside their grace period and has done nothing wrong. It is what the term owes you.
+
+**Overdue** is only the subset whose due date has passed.
+
+So a figure like "3 overdue totalling P600, but P1,250 remains to be paid" is the normal
+shape of a healthy term, not a sign of a problem. The gap between them is future income.
+
+Two more things worth knowing:
+
+- **It is worked out fresh every time the page loads.** Nothing is cached, so it always
+  reflects the bookings as they are now. Change a payment and reload — the total moves.
+- **Cancelled and deleted bookings do not count towards it.** Once a booking is cancelled,
+  its unpaid scheduled payments stop being money owed and drop out of the total. If the
+  figure fell and you did not take a payment, look for a cancellation.
+
+To see what makes up the number, go to **Bookings** and filter by payment status, or open
+a booking's **Payments** section where each scheduled payment is listed with its own
+status and date.
+
 ## How do I set up a Netflix-style recurring membership?
 
 For ongoing memberships where clients pay monthly and stay enrolled indefinitely (e.g., football club, dance studio, gym), use the **Membership** price type with automatic late booking approval.
@@ -703,6 +729,38 @@ This is expected behaviour. When Zooza generates a payment plan, it creates a ma
 **Example:** A 7-instalment plan (e.g. 7 × P500) will initially show only 3 instalments. The next instalment is added automatically overnight, so the plan gradually fills in over time. You do not need to do anything — the remaining instalments will appear as the schedule progresses.
 
 If you need to review the full schedule for a specific booking, open the registration detail and click **Show payments → Payment plan** to see all planned instalments, including those not yet generated.
+
+## One client pays a different monthly amount — do I have to set it every month?
+
+No. You set it once on that booking and it then runs on its own, exactly like everybody
+else's plan. There is no monthly admin.
+
+1. Open the booking and go to its **Payments** section.
+2. Choose **New payment plan**.
+3. Decide what the amount is built from:
+   - **Total amount** — from the current class price, the booking's current debt, the
+     booking value, or a **Custom amount** you type. Zooza then divides it across the
+     instalments.
+   - **Scheduled payment amount: Custom amount** — you name what the client pays each
+     time and Zooza works the rest out from that. This is the one to use when the family
+     agreed a monthly figure rather than a total.
+4. Set the **First scheduled payment date** — **Now**, **From the beginning of the class**,
+   or a **Custom date**. It has to fall before the class ends.
+
+From there the plan generates its own instalments on schedule.
+
+> **A custom instalment amount ignores template discounts.** When you set the scheduled
+> payment amount yourself, you are stating the final figure — no discount from the
+> template is applied on top. If the discount is the point, put it in the template or in
+> the [loyalty programme](../guides/loyalty-program.md) and leave the amount alone.
+
+**Changing one instalment later** is a separate thing: use **Modify scheduled payment** on
+the instalment itself. And note that once a plan is active, **Modify debt** only adjusts
+the *current* scheduled payment — it does not re-spread the change across the whole plan.
+
+**If you cannot create a plan at all** and the booking says no templates are assigned to
+the class, that is the cause: a booking can only use a payment plan when its class has at
+least one payment template on it. See [Payment templates](../guides/payment-templates-creation.md).
 
 ## Where do I create payment plan templates — is it on the programme or on the class?
 
