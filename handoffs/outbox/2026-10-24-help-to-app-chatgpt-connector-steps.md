@@ -30,7 +30,7 @@ his way to thank us for the handover to a human, which is a polite way of saying
 written instructions failed him.
 
 The help centre article is already corrected and live:
-`https://help.zooza.online/settings/claude-plugin/`. The in-app page is the one we tell
+`https://help.zooza.online/mcp/claude-plugin/`. The in-app page is the one we tell
 people to trust over the help centre, so right now the page with the most authority is
 the one with the wrong steps.
 

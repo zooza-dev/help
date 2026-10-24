@@ -29,7 +29,7 @@ agent took over with a different path. The public page is where people land befo
 have an account, so it is the version that sets the first impression of the connector.
 
 The help centre article is corrected and live:
-`https://help.zooza.online/settings/claude-plugin/`.
+`https://help.zooza.online/mcp/claude-plugin/`.
 
 ### What actually happened (verified 2026-10-23, one customer, browser)
 
