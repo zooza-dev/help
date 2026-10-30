@@ -61,6 +61,20 @@ session** action where that applies.
 > nothing is happening" questions are answered by it in one line, usually *Not active* on
 > a class somebody archived.
 
+### Every action moved into the header
+
+The same rebuild took the actions off the Registration card and put them in the header,
+where the most useful one for the current state is the main button. On a booking waiting
+for a trial date that is **Choose trial date**; on most others it is **Enrol**.
+
+The rest — **Copy**, **Transfer to another class**, **Network transfer**, **Cancel**,
+**Delete** — are beside it or under **More**. **Change status is always under More**,
+never a main button, which is the single most common "the button has disappeared"
+report since the change. The booking's sections became tabs at the same time.
+
+> If a colleague describes a button that is no longer where they remember it, this is
+> almost certainly why. Nothing was removed.
+
 ## What does "Pending" mean?
 
 **Pending** means the registration has been submitted but is waiting for something before it becomes fully active. Common triggers:

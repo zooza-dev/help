@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-24"
+last_converted: "2026-10-30"
 related_articles: ["trial-sessions", "trials-daily-business", "booking-form-settings", "sending-email-sms", "booking-faq"]
 ---
 
@@ -100,8 +100,20 @@ What *is* per programme is the timing and whether the automation runs at all: th
 **Automation Settings** inside each programme's trial settings. Two programmes can send on
 different schedules, or one can send nothing, while both use the same wording.
 
-> If you need genuinely different text for one programme, that is worth asking us about
-> before you plan around it — write to support rather than assuming either way.
+> **The moment you customise one of these templates, it stops translating.** Zooza's own
+> default is served in the recipient's language; your edited version is one body, sent to
+> everybody. If you have clients in more than one language, either leave the template
+> alone or write it in a way that works for all of them.
+
+**To make one email read differently per programme, use merge tags rather than
+variants.** The trial emails carry the full set, including the programme and class name
+and the session details, so a single template can name the right course for each
+recipient. See [Dynamic tags](../guides/dynamic-tags.md).
+
+> **Trial templates cannot be copied per programme, and that is deliberate.** Some
+> template types — the booking confirmation, the lead email, the session notification —
+> can have a variant pinned to one programme. The trial ones cannot: there is no **Make a
+> copy** on them. Merge tags are the supported answer.
 
 ---
 
@@ -121,14 +133,31 @@ Trial bookings count towards class capacity. When the client finishes their tria
 
 Yes. The booking form is the usual route, but any booking can be turned into a trial from the admin:
 
-1. Create the booking as usual if it does not exist yet (**Add booking** on the class, or the booking form on the parent's behalf).
-2. Open the booking and click **Change status**.
-3. Below the status options there is a **Convert to trial** card — it appears when the class supports trials ("This class supports trials. You can convert this booking to a trial registration."). Click **Convert to trial**.
+**There is no screen that creates a trial from nothing.** A trial is always made out of a
+booking that already exists, which is the thing most people are looking for and not
+finding.
+
+1. Get a booking first if there is not one — **Add booking** on the class, the booking
+   form on the parent's behalf, or a lead who came in through a Lead collection class.
+2. Open the booking. **If its status is already *Trial not started***, the main button on
+   the header is **Choose trial date** — that is the whole job. It moves the booking into
+   the class holding the trial and lets you pick the date in one go.
+3. **Otherwise open More → Change status.** Below the status options there is a **Convert
+   to trial** card, shown when the class supports trials. It warns that the action cannot
+   be undone, and confirms with **Yes, convert to trial**.
 4. Pick the session(s) the client will attend as a trial and confirm.
+
+> **"Change status" moved on 27 October 2026.** It used to sit on the Registration card
+> on the booking. The booking screen was rebuilt and every action — Enrol, Choose trial
+> date, Copy, Transfer, Cancel, Delete, Change status — now lives in the header, with
+> **Change status** always under **More**. If a colleague says the button has
+> disappeared, that is where it went.
 
 The session list you see as an admin is every upcoming session of that class with a free seat (up to 20). The customer-facing trial rules — "Sessions shown in form", the booking cut-off, extra-capacity-only seating — do not apply to you, because you are making a deliberate decision. Trials placed this way follow the trial automation (follow-up emails, Trial Lost) once attendance is recorded, exactly like trials booked online.
 
-The same session picker appears when you copy or move a booking and set its status to **Trial started**.
+The same session picker appears when you **copy** or **transfer** a booking and set its
+status to **Trial started** on the settings step — the route to use for a lead or an
+already-enrolled booking.
 
 > Until September 2026 the session picker sometimes did not appear (a fault, since fixed). Older help text saying "admins cannot create trials" was wrong.
 
