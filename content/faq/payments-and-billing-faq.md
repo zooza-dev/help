@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-24"
+last_converted: "2026-10-30"
 ---
 
 # Payments and Billing FAQ
@@ -120,18 +120,47 @@ You can set the grace period to 0 (**Settings → Billing & Payments → Payment
 
 ## Why a payment is scheduled weeks before it is due
 
-A payment plan shows two dates per instalment and they are not the same thing:
+Each instalment has **three** dates, not one, and the plan preview now shows all three:
 
-- the **scheduled date** — when Zooza raises the payment and, on direct debit, hands it to the provider
-- the **due date** — when you expect the money to be on your account
+| Date | What it is | Where it comes from |
+|---|---|---|
+| **Advance notice** | The "upcoming payment" email, before anything is billed | The due date, minus the days-to-pay, minus your advance-notice days. Can be switched off. |
+| **Payment created** | The debt appears on the booking and the client is asked to pay. On direct debit the collection starts here. | The due date **minus** `Days before booking is marked unpaid` |
+| **Due date** | When you expect the money on your account | The template's `Day of the month when the payment is due` |
 
-Zooza raises each instalment a number of days before its due date, taken from **Days before booking is marked unpaid** in **Settings → Billing & Payments → Payment settings**. With the field left at `0` that number is **15**, which is why a payment due on 6 October appears as scheduled on 21 September.
+The due date is the one you choose. **The creation date is worked out backwards from it**, which is why a payment due on 6 October appears as created on 21 September: the days-to-pay field was 15. That field is in **Settings → Billing & Payments → Payment settings** (the guided inbound-payment setup writes the same field), and left at `0` it behaves as 15.
 
-The gap exists for direct debit. On the scheduled date the collection begins, and GoCardless needs several working days to take the money and confirm it has cleared. The gap is the buffer that lets that finish before the due date. Shorten it too far and payments still work, but more of them confirm after the due date and show as overdue in the meantime; somewhere between 5 and 10 days is comfortable.
+### To get a specific pair of dates
 
-**To stop a payment, the scheduled date is the one that matters**, not the due date. Once the scheduled date passes and the payment has gone to the provider, it is on its way. A client who cancels a week before the scheduled date can be stopped cleanly.
+This is the question we get most often, usually phrased as "I want the request to go out at the start of the month and the money in by the 15th". Two fields, and they work together:
 
-> **Changing the number affects new instalments only.** Payments already sitting in an existing plan keep the dates they were given. And remember the same field also governs the Awaiting payment grace window, so shortening it tightens both.
+1. On the payment template, set `Day of the month when the payment is due` to **15**.
+2. In **Settings → Billing & Payments → Payment settings**, set `Days before booking is marked unpaid` to **15**.
+
+The payment is then created on the 31st or 1st and is due on the 15th. Want the request on the 1st and payment by the 10th? Due day 10, days-to-pay 10. The gap between the two dates *is* the days-to-pay number — there is no separate field for it.
+
+> **One caveat before you shorten it.** The same number governs the Awaiting payment grace window, so a short gap means bookings flip to Unpaid sooner. And on direct debit the gap is the buffer GoCardless needs to collect and confirm before the due date — somewhere between 5 and 10 days is comfortable. Payments still work below that; more of them just confirm after the due date and look overdue in the meantime.
+
+**To stop a payment, the creation date is the one that matters**, not the due date. Once it has passed and the payment has gone to the provider, it is on its way. A client who cancels a week before it can be stopped cleanly.
+
+> **Changing the number affects new instalments only.** Instalments already sitting in a plan keep the dates they were given. To move those, see the next question.
+
+## An existing client's plan shows different dates from the template preview
+
+This is normal and it is not a fault in either one. The preview shows what the template would do **today**; a plan that is already running kept the dates it was given when it was created.
+
+The usual case: the first row of an old plan was raised the moment the client registered, with a due date 15 days later — so it reads something like *created 27 October, due 11 November, Processed* while your template now says 1st and 15th. Registrations made before you settled the template keep that original schedule.
+
+**To put a whole class onto the current template:**
+
+1. Open the **class detail** → **Apply payment templates**.
+2. Set the **date of the first instalment**. For `Total amount` choose **Current class price**, and set the **registration fee to 0**.
+3. Click **Continue**, choose the template, and **check the preview** — confirm the number of instalments and the first and last dates are what you expect.
+4. Tick the clients who should get this template and click **Run**.
+
+The original debt, including that first stray row, is cancelled and replaced by the new instalments. Do it **before** the next billing date, or you will have raised the old plan's payment first.
+
+> **Clients on a different template — a sibling discount, say — have to be run separately**, with their own template. Select them in their own pass rather than mixing them into the same run.
 
 ## Can I put a credit on a client's account for them to use later?
 
@@ -722,6 +751,38 @@ A **credit** on a booking means the client has paid more than the total amount o
 
 > **SK:** Preplatok na registrácii znamená, že klient zaplatil viac, ako mal. Kredit sa zobrazuje na platobnej dlaždici v registrácii. Ak nemá ďalšie plánované platby, vráťte preplatok ručne (bankový prevod) a zaznamenajte ho ako platbu v Zooza.
 
+## Can I cancel a payment plan outright?
+
+Yes, since the end of October 2026. Before that the only ways out were deleting instalments one at a time or applying a different plan on top, and entry-pass renewals could not be stopped at all.
+
+On the booking's payment plan screen, use **Cancel payment plan**. The confirmation spells out what happens, and it is worth reading rather than clicking past:
+
+- **All future instalments are cancelled** and nothing more is billed under this plan.
+- **The amount not yet billed is not charged** and does not become debt.
+- **Debt already billed and still unpaid stays owed.** Cancelling the plan is not a write-off.
+- **Payments received, card charges already in progress, and entry passes already issued are not affected.**
+
+It cannot be undone — to start again you apply a plan, you do not resume the cancelled one. The cancelled plan stays visible in the plan history.
+
+**On a booking there is also an optional "Also reset the charged amount".** That sets what this booking has been charged to zero so you can enter the correct debt by hand in **Payments** afterwards. Payments already received stay where they are and show as credit until you add the new debt. The registration fee and any discounts are *not* reset.
+
+Use the reset when the plan was applied by mistake and the figure it produced is wrong. Leave it off when the plan was right and the client is simply leaving — then the billed debt should stand.
+
+> **This is not the same as pausing.** A paused plan collects nothing but is still there and resumes; a cancelled one is finished.
+
+## Does editing a payment template change plans that are already running?
+
+**No — not since late October 2026.** When a plan is applied to a booking it takes a copy of the terms it was created with: the schedule type, the frequency, the due day, the amount, and whether it was priced by block. Editing the template afterwards changes what *new* bookings get, and leaves running plans alone.
+
+This matters in two places where it used to bite:
+
+- A running membership's future billing periods no longer change under the customer when somebody tidies up a template.
+- A booking's order summary keeps saying what the client actually agreed to, even after an admin edits the class's period amount or number of units.
+
+Plans created before this change read their terms live, as they always did. If you need an older plan on the current terms, apply the template again — see [An existing client's plan shows different dates from the template preview](#an-existing-clients-plan-shows-different-dates-from-the-template-preview).
+
+> **The other side of the same change:** because a plan now carries its own terms, an admin can apply a template the class does not offer. You are no longer limited to the templates on that class's price screen, and applying one this way does not add it to the class or put it on the parent booking form. The booking form is still held to the templates you have deliberately offered to clients.
+
 ## Why does my payment plan only show 3 upcoming instalments?
 
 This is expected behaviour. When Zooza generates a payment plan, it creates a maximum of **3 months of instalments at a time**. Each night, the system checks existing payment plans and adds the next instalment when the current one is approaching its due date.
@@ -787,6 +848,22 @@ Yes. The "Awaiting payment" period (default: 15 days) can be changed or cancelle
 The global default (15 days) is set in **Settings → Billing & Payments → Payment settings**. Changing it per booking only affects that one booking — other bookings are not affected.
 
 ![Screenshot — payments and billing faq](../../assets/images/payments-and-billing-faq-02.png)
+
+## Some of my courses run 5 months and others 8 — how do I set that up?
+
+Make the length part of the **programme**, not of the template, and the problem goes away.
+
+Payment templates live on the programme and are shared by every class in it. So two courses with genuinely different commitments belong in **two programmes**:
+
+1. Create a programme for the 5-month courses and one for the 8-month courses.
+2. On each, build the template it needs — a periodic plan with a fixed number of instalments is usually the honest shape here: **5 instalments** on one, **8** on the other.
+3. Put the classes under whichever programme matches their commitment.
+
+The template then divides the course price into that many instalments and stops by itself at the end. You can still offer more than one option inside a programme — pay in full with a discount, pay monthly — because that is a choice about *how* to pay the same total, not a different commitment.
+
+**What does not work** is one programme with both lengths and a template per class. A class can only switch on or off the templates its programme already defines; it cannot define its own. See the next question.
+
+> **Check what the client is actually agreeing to.** Where the commitment is a contract term rather than just a payment rhythm, keep them in separate programmes even if the price per session is identical — the number of instalments is what the parent sees and remembers.
 
 ## Can different classes within the same programme have different payment plans?
 

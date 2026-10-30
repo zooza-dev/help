@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-21"
+last_converted: "2026-10-30"
+related_articles: ["loyalty-program", "loyalty-returning-customer", "discounts-and-sibling-pricing-faq", "discount-code", "linked-bookings"]
 ---
 
 # Sibling Discount
@@ -166,19 +167,80 @@ Create a one-time discount code and apply it to the booking. Discount codes work
 
 ---
 
-## Known limitations while the feature is in beta
+## Zooza recognises the same child under a different spelling
 
-**A misspelled name can be counted as a second child.** Zooza matches children by their recorded details. If a parent registers the same child twice with the name spelled differently — without diacritics, with a nickname, or with a typo — the system sees two children and grants the sibling discount to a family that has only one. The discount is real money and it is applied automatically at checkout, so you find out afterwards.
+Until late October 2026 the discount was matched on an exact name, and two ways of
+cheating it — or of tripping over it by accident — were common:
 
-This is the main reason to think before switching the discount on mid-season:
+- A parent books a child, does not pay, and instead of paying from their profile goes
+  through the booking form again. The second booking got a sibling discount, because
+  Zooza thought a second child was being booked.
+- A parent books the same child into a second class and gets a sibling discount for them.
 
-- **Put a clause in your terms** allowing you to withdraw a discount that was granted in error. Without it you have no clean way to correct the charge.
-- **Watch the first weeks** after enabling it. Registrations with a single child but a discount applied are the ones to check.
-- **Restricting the discount to logged-in clients** removes the problem, because a logged-in client's children are already known records. The trade-off is real: parents arriving from a direct booking link do not log in first, so you will lose discounts you meant to give.
+Both are now caught. Zooza compares the incoming child against the children it already
+has for that parent, tolerantly:
 
-Automatic de-duplication is being worked on. Even so, no automatic matching will catch every case — a parent who enters a nickname instead of a name is indistinguishable from a second child by any method.
+- **Spelling, spacing, capitals and diacritics are ignored.** *Maťko* and *matko* are one
+  child; so are *Kovács* and *Kovacs*.
+- **First and last name swapped** counts as the same child — *Maria Popescu* and
+  *Popescu Maria*.
+- **Nicknames and diminutives** are understood, when the date of birth agrees: *Hana /
+  Hanka*, *Michal / Miško*, *Samuel / Samko*, *Stela / Stelka*, *Adam / Adamko*.
+- **Typos** are forgiven within a couple of letters, when both names are reasonably long,
+  start with the same two letters, and the date of birth agrees — *Krisina / Kristina*.
+- **Compound first names** match their parts: *Patrick* and *Patrick-Andrei*.
 
-**The discount applies to the second person onward, not the first.** A client enrolling themselves alongside their child is not covered by a sibling rule, because the rule rewards the additional registration rather than the family as a whole.
+**And two siblings are never mistaken for one child.** A male/female pair that differs
+only by the ending — *Martin / Martina*, *Michal / Michaela*, *Šimon / Šimona*, *Dominik
+/ Dominika* — is always treated as two children. These are real siblings and they keep
+their discount.
+
+> **Why the date of birth only ever confirms a match and never decides one.** Checked
+> against live data: thousands of pairs with *identical* names carry *different* dates of
+> birth (mistyped years, day and month swapped), and thousands more share a date of birth
+> with completely unrelated names — far more than twins explain. So a matching birthday
+> supports a loose name match, and a mismatched one is not treated as proof of a second
+> child.
+
+**Unpaid earlier bookings no longer count** toward the child number, for the sibling
+discount and for the returning-customer discount. That is what closes the re-booking
+route specifically.
+
+### What is still not caught
+
+**The same child typed twice in one submission.** If a parent fills the form with two
+people who are really the same child and submits once, the discount still applies. The
+matching compares the incoming child against *earlier* bookings, not against the other
+rows of the same form.
+
+**Discounts already granted are not corrected.** Nothing is recalculated retroactively,
+so anything given away before this shipped stays given away.
+
+So the advice from before still holds, in a smaller way: keep a clause in your terms
+allowing you to withdraw a discount granted in error, and glance at single-child
+bookings carrying a sibling discount in the first weeks after you switch it on.
+
+> **Ask us when a discount surprises you.** Every matching decision is now recorded —
+> which signal matched and why — so support can tell you exactly why a particular family
+> did or did not get the discount, rather than guessing.
+
+## Restrict the discount to logged-in clients
+
+There is now a **Only for logged-in clients** switch on the sibling discount and on the
+returning-customer discount.
+
+With it on, a client who is not logged in books at full price and is asked to log in; the
+booking page tells them there is a discount waiting if they do. A logged-in client's
+children are records Zooza already has, so the matching above has the best possible
+information to work with.
+
+**The trade-off is real.** Parents arriving from a direct booking link do not log in
+first, so you will lose discounts you meant to give, and some will simply pay more
+without noticing why. Worth it where the discount is large; usually not worth it where it
+is a token.
+
+> **Not available on the referral discount.** Referral exists to bring in people who do
+> not have an account yet, so requiring a login would defeat it.
 
 ## Disable or delete the sibling discount
 

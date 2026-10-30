@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0003_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-17"
+last_converted: "2026-10-30"
 related_articles: ["automatic-payment-reminders-detailed","payments-and-billing-faq","price-and-payment-setup","auto-cancel-unpaid-registrations"]
 ---
 
@@ -113,6 +113,31 @@ This is the setting people most often have wrong, because the two behave complet
 **Days from date of enroling when payment is due** is a third, independent number. It does not follow the first or second reminder and can be set higher or lower than either.
 
 > **Reminders only reach bookings created after you activated the setting.** The card shows the activation date. Switch it on today and the people already owing you money are not chased — only those who book from now on.
+
+### Reminders do not stop when the class starts
+
+The most common misreading of the table above. **"Before the start of the programme" is
+where the countdown starts from — it is not a deadline after which reminders stop.**
+
+Since mid-2026 these notifications are triggered by the **booking's status**, not by the
+calendar. While a booking sits in **Awaiting payment** and the notification is switched
+on, it keeps being sent — including after the first session has been taught. Before that
+change they were tied to the class start date, which is where the belief comes from.
+
+So "can I send a reminder 7 days *after* the course starts?" is really two questions:
+
+- *Will somebody who still has not paid be chased once we have started?* Yes, already.
+- *Can I set a reminder to go out on day 7 after the start?* Not as a date. Use **Sending
+  a reminder after the booking** and count from the booking instead, which is usually
+  what you actually want — it chases each person on their own clock rather than
+  everybody at once.
+
+> **There are two reminders, not three.** A third reminder does not exist. It has been
+> asked for and is on the roadmap, with a caveat worth taking seriously: a client who has
+> ignored two emails rarely reads the third, and open rates fall with each one. What
+> tends to work better is stopping the service — if an instructor can see an unpaid
+> booking, the session arguably should not be taught — or reaching people on
+> [WhatsApp](../setup/whatsapp-integration.md), where an unpaid-booking nudge is actually read.
 
 ### Deleting unpaid bookings from the same screen
 

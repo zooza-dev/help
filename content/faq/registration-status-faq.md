@@ -12,7 +12,7 @@ related_articles: ["trash-and-restore", "trials-daily-business", "auto-cancel-un
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-24"
+last_converted: "2026-10-30"
 ---
 
 # Registration statuses — what each one means
@@ -32,6 +32,34 @@ last_converted: "2026-10-24"
 | **Deleted (Trash)** | Moved to Trash; recoverable within 30 days | No | None |
 
 ---
+
+## The booking header tells you whether it is actually running
+
+Since the end of October 2026 the top of a booking carries a plain-language state, which
+is a different question from its payment status. A booking can be fully paid and still
+not be running.
+
+| Header says | What it means | What to do |
+|---|---|---|
+| **Active** | The booking is running now | Nothing |
+| **Not started yet** | The class has not begun | Nothing — this is normal before term |
+| **Finished** | The class is over | Nothing |
+| **Not active** | *"The class or programme is archived, so this booking no longer runs."* | If that is wrong, unarchive the class |
+| **Lead collection, class not started yet** | *"This class collects leads and is not running yet."* | Enrol them into a running class, or activate this one |
+
+Where something can be done about it, the header offers it. A booking sitting on a class
+with room shows *"A slot is free in this class. Enroll to confirm the booking, or move it
+to another class."* One with no room shows *"No free slot in this class right now."* And a
+finished trial shows *"Enroll to continue"* with the warning that **changing the status
+does not enrol anybody** — the thing admins most often get wrong here.
+
+The header also shows **Paid via booking** when another booking in a
+[linked group](../guides/linked-bookings.md) is paying for this one, and a **Book a
+session** action where that applies.
+
+> **Read the header before the status.** Most "the client says they are enrolled but
+> nothing is happening" questions are answered by it in one line, usually *Not active* on
+> a class somebody archived.
 
 ## What does "Pending" mean?
 

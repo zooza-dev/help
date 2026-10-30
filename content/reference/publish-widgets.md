@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-10-10"
+last_converted: "2026-10-30"
 related_articles: ["customizing-widgets", "deploying-zooza-on-website", "contact-form-on-your-website"]
 ---
 
@@ -109,6 +109,30 @@ Available widget types:
 | **Contact form** | A contact form for your website. Every enquiry becomes a contact under **Clients → Contacts**. See [Put the contact form on your website](../setup/contact-form-on-your-website.md). |
 
 Each widget type has a **Configure** button to open its settings.
+
+### How free places are shown to clients
+
+Each widget decides for itself whether a remaining place is described in words ("a few
+places left") or as a number. **If you have not chosen either, Zooza falls back to a
+rule** that changes with how full the class is:
+
+| Places left | What the client sees |
+|---|---|
+| 1 | *last place* |
+| 2 – 4 | a description in words |
+| 5 or more | the number |
+
+That fallback is why the same class can read "3 free places" in one widget and "5/11" in
+another — nothing is broken, the widgets simply have no instruction and each is reporting
+the current state in the form the rule picked.
+
+**To make it consistent, choose words or numbers explicitly in every widget**, including
+the Profile widget under **Team & Settings → Publish**. Providers usually have more
+widgets than they remember: one per location or landing page, each with its own settings.
+
+> **In a network, do it across the whole network.** Otherwise clients comparing two
+> branches are shown the same availability in two different styles, which reads as one
+> branch being fuller than the other.
 
 ### Contact form settings
 

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-10-30"
 related_articles: ["login-and-account-faq","managing-instructors","user-roles","role-selection-guide"]
 ---
 
@@ -101,17 +101,60 @@ If a lektor (instructor) reports they cannot find the email option on a session 
 
 > **SK:** Ak lektor hlási, že nemôže odoslať email z termínu alebo skupiny, skontrolujte jeho rolu v **Nastavenia → Tím**. Externý lektor nemá právo posielať správy klientom. Zmeňte rolu na **Lektor** a prístup sa sprístupní okamžite.
 
-## How do instructor rate types work (per-session, per-student, per-hour)?
+## How do instructor rates work, and why do the totals have odd decimals?
 
-Zooza supports flexible rate types for calculating instructor compensation. When creating a rate in **Settings → Instructors**, you define the rate name and its duration in minutes. The three common configurations are:
+A rate is three things, set in **Settings → Other → Instructors rates**: a **Name**, a **Duration
+in minutes**, and whether **Rate is fixed**. That last switch is the one that decides
+everything about how pay is calculated, and it is the answer to the decimals question.
 
-- **Per-session (one-time)** — a flat amount paid for each session the instructor teaches, regardless of duration or number of students.
-- **Per-hour** — an amount based on the session duration. Set the rate duration to 60 minutes.
-- **Per-student** — <!-- REVIEW: Confirm whether per-student rates are natively supported or require manual calculation via the instructor report. -->
+**Rate is fixed — off (the default).** The amount is a rate *for that duration*, so Zooza
+converts it to a per-minute figure and pays the time actually taught. It is exact to the
+minute, which is also why it produces decimals: a €20 rate across four sessions can total
+**€79.99** rather than €80. Nothing is wrong — it is the rounding of a per-minute rate,
+and it will match the real taught time to the cent.
 
-Each rate is created once and then assigned a monetary value per instructor — so the same rate (e.g., "Group Session") can pay different amounts to different instructors. You assign the rate to a class in the class settings, and it automatically applies to all sessions in that class, including for a second instructor if one is assigned.
+**Rate is fixed — on.** The amount is paid per session, whatever its length. An hour and
+two hours both pay the same. Totals stay round.
 
-To view calculated compensation, go to **Instructors → [select instructor] → Instructor report** and choose a date range.
+Which you want is a business decision, not a technical one. Providers who pay by the hour
+want it off and should accept the decimals. Providers who pay per lesson — and who do not
+top up when a lesson overruns — want it on.
+
+> **Still seeing odd totals after 30 October 2026?** The calculation was rebuilt at the
+> end of October to fix exactly this. To pick it up on an existing rate you have to
+> re-save it: open the instructor's profile, expand the rate card, click **Save**, then
+> recalculate the report. It has to be done once per instructor.
+
+**The amount does not vary with the number of students.** A rate is an amount, a duration
+and the fixed flag — there is no per-head multiplier. If you pay per student, work it out
+from the instructor report rather than expecting Zooza to calculate it.
+
+Each rate is created once and then given a monetary value per instructor, so the same rate
+(say "Group Session") can pay different amounts to different people. You assign it to a
+class in the class settings and it applies to every session in that class, including for a
+second instructor.
+
+To see what has been earned, go to **Instructors → [instructor] → Instructor report** and
+choose a date range.
+
+## Can one instructor take payments while another cannot?
+
+No. **Allow instructors to see financial information** in **Settings → General → Access**
+is company-wide: switch it on and every instructor can see client money and add payments;
+switch it off and none of them can. There is no per-person and no per-class version of it.
+
+Nor does promoting somebody help. The **main instructor** role does not come with payment
+visibility — several providers have tried that route expecting it to, and it does not work
+that way.
+
+So the choice is the blunt one: either all your instructors handle money or none do. If
+you need one person taking cash at the door, the usual answer is to give that person an
+**assistant** or **receptionist** role rather than an instructor one, and accept that they
+then see more than just their own class.
+
+> **Tell us if this is wrong for you.** The setting is company-wide because every provider
+> we have seen so far does it all-or-nothing. A real case for per-instructor or per-class
+> payment access is worth sending to support — that is how the setting would get split.
 
 ## An archived class is still appearing in the instructor's report — why?
 

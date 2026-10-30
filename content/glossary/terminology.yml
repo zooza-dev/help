@@ -6,7 +6,7 @@
 # ║  Edit there, then run: python3 scripts/sync_terminology.py      ║
 # ╚══════════════════════════════════════════════════════════════════╝
 #
-# Last synced: 2026-10-24
+# Last synced: 2026-10-30
 # Used by: scripts/normalize_terminology.py → build/terminology/dictionary.json
 #
 # Fields per term:
@@ -862,6 +862,15 @@ terms:
       Phrased loosely ("the child is stopping", "they do not want to come any more") the
       request almost always means cancelling the registration, not a session.
       Confirmed 2026-09-05.
+
+      2026-10-30: cancelling now REQUIRES a cancellation reason, chosen from the company's
+      list (Settings - General - Cancellation reasons). Each reason sits in a fixed Zooza
+      category, which the Cancellations report groups by; "Booking created by mistake" and
+      "Network transfer" are deliberately not counted as cancellations. If every reason has
+      been hidden, the booking cannot be cancelled at all until one is unhidden. Cancelling
+      a booking that is the ROOT of a linked group now asks what should happen to the
+      group - disband it (each pays for itself), hand the root to another booking, or remove
+      the whole group - and where the remaining balance should go.
     public: true
 
   # ──────────────────────────────────────────────
@@ -1283,7 +1292,28 @@ terms:
       sk: ["platobný plán", "spôsob platby", "platba", "fakturácia", "splátky",
            "individuálna suma", "vlastný platobný plán", "iná suma pre jedno dieťa"]
       de: ["Zahlungsplan", "Zahlungsrhythmus", "Ratenzahlung", "wann zahlen"]
+    do_not_confuse_with:
+      - term: "Scheduled date vs Due date on an instalment"
+        reason: >
+          Every instalment has three dates and customers conflate the first two. The DUE
+          date is the one the admin chooses (the template's day of the month). The payment
+          is CREATED earlier - due date minus the account's days-to-pay - and that is when
+          the debt appears, the client is asked to pay and direct debit starts collecting.
+          An advance-notice email can go out earlier still. So "I set the 15th but it is
+          charging on the 1st" is correct behaviour, and the way to get a specific pair of
+          dates is to set the due day AND the days-to-pay to the same gap. The gap between
+          them IS the days-to-pay number; there is no separate field for it.
     ai_notes: >
+      2026-10-30: a running plan keeps the terms it was created with - schedule type,
+      frequency, due day, amount, block pricing are frozen on it - so editing a template no
+      longer changes plans already applied. Older plans (pre-freeze) still read live. An
+      admin can now apply a template the class does not offer, without adding it to the
+      class or the booking form. A plan can now be cancelled outright ("Cancel payment
+      plan"): future instalments go, the unbilled remainder is never charged, but debt
+      already billed STAYS OWED - cancelling is not a write-off. It cannot be resumed; an
+      optional "reset the charged amount" zeroes what the booking was charged so the admin
+      can enter the right debt by hand. Pausing is a different thing and does resume.
+
       2026-10-24: a client who needs a different amount from everybody else gets their own
       plan on their booking, set up once — it then generates its own instalments and needs
       no monthly intervention. Never tell a customer this is recurring manual work. The

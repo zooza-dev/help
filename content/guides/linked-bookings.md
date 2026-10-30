@@ -1,6 +1,6 @@
 ---
-title: "Linked bookings"
-description: "If you are an organisation that offers a wider range of programmes for children and are used to having siblings enrolled, or your clients are..."
+title: "Link bookings so one payment covers them all"
+description: "Bundle siblings or two programmes onto one payment and one variable symbol — and choose what happens to the group when the main booking is cancelled."
 slug: "linked-bookings"
 type: "guides"
 product_area: "Bookings"
@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: "legacy/0030_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-11"
+last_converted: "2026-10-30"
+related_articles: ["loyalty-sibling-discount", "linked-classes", "booking-faq", "payments-and-billing-faq", "scheduled-registration-cancellation"]
 ---
 
 # Linked bookings
@@ -61,3 +62,46 @@ The parent/client pays for both/multiple programmes only once using one variable
 ![The parent/client pays for both/multiple programmes only once using one variable...](../../assets/images/linked-registrations-07.png)
 
 ![The parent/client pays for both/multiple programmes only once using one variable...](../../assets/images/linked-registrations-08.png)
+
+---
+
+## Cancelling or deleting the main booking
+
+A main booking cannot simply be removed — the others would be left pointing at nothing.
+Until late October 2026 Zooza just refused, which meant an admin who wanted to cancel one
+place was told "no" with no way forward on the screen they were on. Now it asks.
+
+Cancel or delete the main booking and you get **Cancel a root booking** (or **Delete a
+root booking**) with one question: **What should happen to the linked bookings?**
+
+| Choice | What happens | When you want it |
+|---|---|---|
+| **Disband the link** | The other bookings stay and **each pays for itself** | The ordinary case. A parent cancels their own place, the children carry on |
+| ***X* becomes the root booking** | Another booking in the group takes over as the main one | The family keeps paying together, just through someone else |
+| **Remove the whole group** | Everything in the group goes | You are closing out the whole family |
+
+Then it asks about the money: **Remaining balance of this booking** — **Leave it on this
+booking**, or **Move the remaining balance to** one of the others. Where it cannot be
+moved anywhere, it says so plainly and leaves it where it is.
+
+You are shown all of this *before* anything is written, so you can see who else is
+affected and what money moves rather than finding out afterwards.
+
+> **Scheduling the cancellation for a future date does not delay this part.** The links
+> and the money change **the moment you schedule it** — only the status waits for the
+> date. And **revoking the cancellation later does not restore the links.** If you are
+> unsure whether the family is really leaving, do not schedule it yet.
+
+Two messages you may hit:
+
+- **"The linked bookings changed since the check. Choose again."** Somebody altered the
+  group while you were deciding. Harmless — make the choice again against the current
+  group.
+- **"This booking has a scheduled status change, so its links can't change until it runs
+  or is revoked."** Revoke the scheduled change first, or wait for it.
+
+> **If you remember this being far more work, that is why it changed.** For a while the
+> only route was unlinking every booking and its products one at a time before you could
+> touch the main one. The stricter rules behind that were deliberate — admins were
+> deleting bookings that managed other bookings' money and leaving payments unpairable —
+> but the way out of them was missing. This is it.

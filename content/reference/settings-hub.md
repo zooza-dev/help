@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-10-30"
 related_articles: ["custom-holidays", "shared-sessions", "contact-form-setup", "custom-contact-fields", "setting-gtc-gdpr-consents", "labels", "notifications-center"]
 ---
 
@@ -117,6 +117,20 @@ General settings for all programmes:
 | `Custom Customer ID` | Format template for client IDs. Allowed values: Unique ID (U), sequence number (1–10 minimum length). Each symbol needs curly braces. |
 | `Regenerate all customer IDs` | Regenerate all IDs based on the current format. |
 | `Online meeting instructions` | Rich text editor for instructions shown in clients' profiles for online sessions. |
+
+### Cancellation reasons
+
+Whenever a booking is cancelled, one of these reasons must be chosen. Each belongs to one
+of Zooza's fixed categories, which the Cancellations report groups by. Hidden reasons are
+no longer offered but past cancellations keep them. See
+[Record why bookings get cancelled](../guides/cancellation-reasons.md).
+
+### Programme info tab
+
+What enrolled clients read on the programme screen in their Client Profile — what to
+bring, where to go, who to contact. One default for every programme, with exceptions per
+programme, and network-managed for franchises. See
+[Tell enrolled clients the rules of your course](../guides/programme-info-tab.md).
 
 ### Instructor permissions
 

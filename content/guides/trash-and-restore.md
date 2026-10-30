@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-10"
+last_converted: "2026-10-30"
 related_articles: ["archive-or-delete-programme", "registration-status-faq", "ad-hoc-scheduled-payment"]
 ---
 
@@ -49,9 +49,33 @@ This is the most common source of confusion. A registration (or class) can be in
 | **Session** (event) | A single session within a class |
 | **Class** (schedule) | An entire class with all its sessions |
 | **Registration** | A client's booking on a class |
+| **Programme** (course) | A whole programme, with everything under it. Added October 2026 |
 | **Cancelled payment** | A scheduled payment that was cancelled via bulk cancel or the cancel action on a booking |
 
 Items deleted more than 30 days ago are permanently gone and cannot be recovered from here.
+
+> **A programme is the exception to "permanently gone".** Nothing actually hard-deletes a
+> programme — after 30 days it simply stops appearing in Trash and can no longer be
+> restored from there. Its row, and the bookings under it, are still in the database. If
+> you genuinely need an old programme back after the window, ask support before assuming
+> it is lost.
+
+### A deleted programme while it sits in Trash
+
+As of late October 2026 a deleted programme is properly closed rather than just hidden:
+
+- **It cannot be edited.** Edits are refused rather than silently accepted. This was a
+  real problem: on one account 21 changes were saved to a programme that had already been
+  deleted, and nobody was told.
+- **It takes no new bookings** — not from the admin app, not from the booking widget.
+- **Opening it in the app shows "page not found"**, which is how you find out a colleague
+  deleted it.
+- **Bookings already under it keep working.** Nothing is cancelled by deleting the
+  programme.
+
+Two gaps worth knowing about, because Trash shows them as blank: a programme's Trash row
+carries **no "deleted by" and no previous status**. Zooza never recorded either for
+programmes, so there is nothing to show and nothing to restore it to beyond "active".
 
 ---
 
@@ -131,6 +155,38 @@ Each row in the Trash list shows:
 - **Restore** button — active for 30 days from the cancellation date
 
 > **Restoring a cancelled payment** sets it back to *Scheduled*. The client's outstanding balance is updated immediately. No payment notification is sent on restore.
+
+---
+
+## Bookings left behind by a deleted programme
+
+A recurring puzzle, usually reported as *"I have bookings called **undefined** that I
+cannot open, with money outstanding, and they keep appearing in my unpaid list."*
+
+That is what a booking looks like when **its programme was deleted and its class
+archived**, often months earlier. The bookings are not broken and they are not a
+leftover bug — Zooza keeps them deliberately, so that anything needing to be reversed
+still can be.
+
+What is true of them:
+
+- **They are not active.** No notifications are sent to those clients, and they are
+  excluded from every report in the app, because the programme they belong to is gone.
+- **You cannot open the booking or zero its balance.** Setting the debt to 0 does not
+  save; it reverts to the original fee.
+- **They may still surface in searches and in Zooza AI**, which is how most people
+  discover them.
+
+**Decide which of the two it is:**
+
+- **The money still matters** — somebody genuinely owes it, or it needs refunding.
+  Restore the programme from Trash and unarchive the class, and the bookings become
+  workable again.
+- **It is history** — the term is long over and the balance is noise. Leave them. They
+  affect no report and nobody is being chased for them.
+
+> **If they are cluttering up Zooza AI's answers**, say so to support. These bookings can
+> be put out of the assistant's reach so it stops offering them as live work.
 
 ---
 

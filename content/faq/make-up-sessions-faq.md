@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-24"
+last_converted: "2026-10-30"
 related_articles: ["matko-replacement-diagnostic","cancellation-log","replacement-hours-complete","capacity-and-extra-capacity"]
 ---
 
@@ -137,7 +137,7 @@ Check **Settings → Other → Make-up sessions** first, not the course, wheneve
 
 | Where | What it sets |
 |---|---|
-| **Settings → Make-up sessions** | The standard validity in days, for the whole account |
+| **Settings → Other → Make-up sessions** | The standard validity in days, for the whole account |
 | **Programme → Make-up sessions** | Whether credits can still be used *after the class ends*, and for how many days |
 
 ![The Make-up sessions card in a programme's settings, showing status, make-up sessions at partner companies, tailored make-up sessions and the limit for make-up sessions](../../assets/images/programme-make-up-sessions-card.png)
