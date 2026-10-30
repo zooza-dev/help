@@ -1,6 +1,6 @@
 ---
-title: "Administrative Refund FAQ"
-description: "An administrative refund is a record in Zooza that a payment has been returned to a client, without triggering a real refund through Stripe or any..."
+title: "Refunds: recording one, and requests from clients"
+description: "How an administrative refund differs from a real Stripe refund, when to use each, and how to handle refund requests clients raise when they cancel."
 slug: "administrative-refund-faq"
 type: "faq"
 product_area: "Payments"
@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-21"
+last_converted: "2026-10-30"
+related_articles: ["stripe-payments-faq", "payments-and-billing-faq", "cancellation-reasons", "edit-payment-on-booking", "scheduled-registration-cancellation"]
 ---
 
 # Administrative Refund FAQ
@@ -64,6 +65,42 @@ Administrative refunds appear in the same payment reports as gateway refunds —
 ## Can I undo an administrative refund?
 
 No. Once recorded, an administrative refund cannot be deleted. If you made an error, contact Zooza support or add a correcting manual payment to offset the negative transaction, and add a note explaining the adjustment.
+
+## Can clients ask for a refund themselves?
+
+Yes, if you let them. **Settings → General → Allow refund requests** lets a client
+request a refund when they cancel an eligible session. It is off unless you turn it on.
+
+**A request does not move any money.** It is a conversation with a record, not an
+automatic payout — read that twice before switching it on, because the wording matters
+to clients.
+
+**What happens:**
+
+1. The client cancels an eligible session and asks for a refund, giving a **reason** and
+   a **requested amount**.
+2. A **Refund request** banner appears on the booking detail, with **Approve** and
+   **Deny**.
+3. On **Approve** you confirm the **Amount to refund** — prefilled from your refund
+   policy, and capped: you cannot approve more than the maximum Zooza shows. You can add
+   a **note for the client**, which goes into the email.
+4. **You still issue the refund yourself** through your payment provider. Approving
+   records your decision and emails the client; it does not touch Stripe or GoCardless.
+5. On **Deny**, the client is emailed and **the request cannot be reopened** — denying is
+   final.
+
+Requests are **Pending**, **Approved** or **Denied**, and resolved ones stay on the
+booking under **Resolved refund requests**, so there is a record of who asked for what
+and what you decided.
+
+> **Two emails you can rewrite.** *Refund request – approved* and *Refund request –
+> denied* are templates under **Communication → Templates**, carrying the approved
+> amount and your note. The note tag is wrapped in a conditional, so a decision you made
+> without a note does not send an empty paragraph.
+
+**The gap to close before you switch it on:** approving creates an expectation and does
+not create a payment. If nobody on your team then issues the refund in Stripe, the client
+has an email saying yes and no money. Decide who owns that step first.
 
 ## A client cancelled their registration — can Zooza automatically keep a percentage as a cancellation fee?
 

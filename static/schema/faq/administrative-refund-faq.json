@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "name": "Administrative Refund FAQ",
+  "name": "Refunds: recording one, and requests from clients",
   "url": "https://help.zooza.online/payments/administrative-refund-faq",
   "mainEntity": [
     {
@@ -82,6 +82,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No. Once recorded, an administrative refund cannot be deleted. If you made an error, contact Zooza support or add a correcting manual payment to offset the negative transaction, and add a note explaining the adjustment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can clients ask for a refund themselves?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, if you let them. Settings → General → Allow refund requests lets a client\nrequest a refund when they cancel an eligible session. It is off unless you turn it on.\n\nA request does not move any money. It is a conversation with a record, not an\nautomatic payout — read that twice before switching it on, because the wording matters\nto clients.\n\nWhat happens:\n\n1. The client cancels an eligible session and asks for a refund, giving a reason and\n   a requested amount.\n2. A Refund request banner appears on the booking detail, with Approve and\n   Deny.\n3. On Approve you confirm the Amount to refund — prefilled from your refund\n   policy, and capped: you cannot approve more than the maximum Zooza shows. You can add\n   a note for the client, which goes into the email.\n4. You still issue the refund yourself through your payment provider. Approving\n   records your decision and emails the client; it does not touch Stripe or GoCardless.\n5. On Deny, the client is emailed and the request cannot be reopened — denying is\n   final.\n\nRequests are Pending, Approved or Denied, and resolved ones stay on the\nbooking under Resolved refund requests, so there is a record of who asked for what\nand what you decided.\n\nTwo emails you can rewrite. Refund request – approved and Refund request –\ndenied are templates under Communication → Templates, carrying the approved\namount and your note. The note tag is wrapped in a conditional, so a decision you made\nwithout a note does not send an empty paragraph.\n\nThe gap to close before you switch it on: approving creates an expectation and does\nnot create a payment. If nobody on your team then issues the refund in Stripe, the client\nhas an email saying yes and no money. Decide who owns that step first."
       }
     },
     {
