@@ -78,6 +78,20 @@ The automation triggers only when the trial booking reaches the status **Trial E
 **3. Automation was set up after the booking was created**
 If **The setting will only be valid for new bookings** is checked in the automation settings, bookings that were created before the automation was configured will not be affected. You need to contact those clients manually.
 
+> **"Send booking link" is mislabelled — do not use it to stop the Trial Ended email.**
+> Unticking it does **not** stop that email; it still goes out. What it actually does is
+> switch off your two **follow-ups**, and because the auto-lost timer counts from the last
+> notification sent, trials are then marked **Trial Lost sooner** than you intended. The
+> booking's own timeline makes it worse by reporting that the booking link will not be
+> sent, which is not what happens.
+>
+> **Until this is corrected, leave Send booking link ticked** and use **Send follow-up**
+> on its own to control the follow-ups. To stop the whole chain for a programme, set
+> **Automation status** to inactive — that is the switch that genuinely stops everything.
+>
+> *Verified in the source on 30 October 2026 and raised with the developers. We will
+> rewrite this once the control is fixed.*
+
 **What the automation sends (when active):**
 
 | Step | What happens |

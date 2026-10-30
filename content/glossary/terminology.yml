@@ -695,6 +695,15 @@ terms:
         status header and "Change status" is ALWAYS under More, never a main button. Help
         text and answers that say "open the booking and click Change status" send people
         to a button that is no longer there.
+
+      - KNOWN FAULT, verified in source 2026-10-30 and raised with the developers: the
+        trial automation's "Send booking link" toggle does NOT gate the Trial Ended email
+        - that email fires unconditionally. Unticking it silently turns off the two
+        FOLLOW-UPS instead, and because the auto-lost timer counts from the last
+        notification sent, trials are then marked Lost sooner. The booking timeline also
+        wrongly reports the booking link as suppressed. Never tell a customer to untick
+        it to stop the Trial Ended email. The switch that genuinely stops the whole chain
+        for a programme is Automation status - inactive.
       WHERE IT IS SET: Programme -> Settings -> Trial tile -> Edit. It is NOT under
       Additional fields, and there is no global trial page.
       REPEAT TRIALS CANNOT BE BLOCKED (confirmed 2026-10-03). There is no setting that
