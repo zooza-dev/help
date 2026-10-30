@@ -638,10 +638,20 @@ terms:
            "ako sa vytvára ukážková hodina"]
       cz: ["ukázková hodina", "ukazkova hodina", "zkušební hodina", "zkušební lekce",
            "trial", "zdarma hodina", "potřebuju zadat ukázkovou hodinu"]
-      ro: ["lecție de probă", "lectie de proba", "probă"]
+      ro: ["lecție de probă", "lectie de proba", "probă", "sesiune demonstrativă",
+           "sesiune demonstrativa", "demo", "cum planific un demo"]
       hu: ["próbaóra", "ingyenes óra", "próba"]
       de: ["Probestunde", "Schnupperstunde", "kostenlose Stunde", "ausprobieren"]
     do_not_confuse_with:
+      - term: "Guest booking (Allow bookings for one session)"
+        reason: >
+          A FOURTH shape people mean by "trial", and a translation trap. The Romanian
+          help text for the guest setting calls it a "sesiune demonstrativă", so a
+          Romanian customer asking about a "demo" may mean guest booking, not Trial.
+          They are different features: guest booking sells one session out of a
+          programme at price / number of sessions and produces the status Guest; Trial
+          has its own funnel, statuses and automated follow-up. Ask which before
+          advising. There is no "demo" concept in Zooza at all.
       - term: "Manually created trial session"
         reason: >
           Some admins create a regular Session and name it 'skúšobná hodina' /
@@ -661,7 +671,30 @@ terms:
       THREE SHAPES people mean by "trial" (confirmed 2026-08-30): (a) the Trial tile on
       a Programme, carving trial places out of classes already running — the usual one;
       (b) a one-off session sold as a taster; (c) a separate class holding a single date.
-      Ask which before advising — it is not guessable from the question.
+      Ask which before advising — it is not guessable from the question. A fourth, in
+      Romanian only, is guest booking — see do_not_confuse_with.
+
+      2026-10-30, verified in api-v1 and app source:
+      - The trial EMAILS (Trial Ended, Trial Follow-up, Trial Lost) are ONE template per
+        account each. They cannot be varied per programme: those types carry
+        supports_variants = false and are absent from the API list of types assignable to
+        a course, so there is no "Make a copy" on them. Only the booking confirmation,
+        lead email, session notification and order confirmation can be pinned to a
+        programme. Use merge tags for per-programme wording.
+      - Customising a trial template STOPS IT TRANSLATING. The language override applies
+        only to Zooza's default; an edited body is one body sent to every recipient in
+        every language.
+      - The per-programme part is the AUTOMATION (timing, and whether it runs at all),
+        set in the programme's Trial settings. Genuinely a separate system from the
+        wording — never conflate them when answering.
+      - NO SCREEN CREATES A TRIAL FROM NOTHING. A trial is always made from a booking
+        that already exists. If the booking is "Trial not started" the main header button
+        is "Choose trial date"; otherwise it is More - Change status - Convert to trial,
+        which is irreversible.
+      - Since 2026-10-27 the booking screen was rebuilt: all actions moved into the
+        status header and "Change status" is ALWAYS under More, never a main button. Help
+        text and answers that say "open the booking and click Change status" send people
+        to a button that is no longer there.
       WHERE IT IS SET: Programme -> Settings -> Trial tile -> Edit. It is NOT under
       Additional fields, and there is no global trial page.
       REPEAT TRIALS CANNOT BE BLOCKED (confirmed 2026-10-03). There is no setting that
@@ -716,6 +749,56 @@ terms:
       must use their own enrolment link — from the trial automation email, or from their client
       profile while the trial is active (paid trials: once paid). That link pre-fills their trial
       answers, links the bookings under one client and marks the trial Won.
+    public: true
+
+  - id: guest-booking
+    canonical_en: "Guest booking"
+    category: "bookings"
+    definition: >
+      A booking for ONE session of a programme rather than the whole thing, enabled per
+      programme with "Allow bookings for one session". The price is the programme price
+      divided by the number of sessions, and the booking carries the status Guest. It is
+      a way of selling a single visit — not the Trial feature, and with none of Trial's
+      funnel, statuses or automated follow-up.
+    context:
+      admin: "Guest / Allow bookings for one session"
+      client: "Guest"
+      widget: "Guest"
+    synonyms:
+      - "one-session booking"
+      - "single session booking"
+      - "drop-in"
+    translations:
+      sk: "Registrácia na jednu hodinu"
+      cz: "Registrace na jednu hodinu"
+      ro: "Înscriere pentru o singură sesiune"
+    intent_keywords:
+      en: ["guest booking", "book one session", "single session", "drop in",
+           "allow bookings for one session", "one-off session in a course",
+           "pay for one lesson only"]
+      sk: ["registrácia na jednu hodinu", "prihlásiť sa len na jednu hodinu",
+           "jednorazová hodina", "hosť"]
+      cz: ["registrace na jednu hodinu", "jen jedna hodina", "jednorázová hodina"]
+      ro: ["sesiune demonstrativă", "o singură sesiune", "demo"]
+    do_not_confuse_with:
+      - term: "Trial"
+        reason: >
+          Different features that the Romanian translation runs together: the help text
+          for the guest setting calls it a "sesiune demonstrativă", so a Romanian
+          customer asking about a "demo" may mean either. Guest booking sells one session
+          and produces the status Guest; Trial is a funnel with its own price, form,
+          statuses and follow-up automation. Ask which one before advising.
+      - term: "Additional session"
+        reason: >
+          A guest buys one session of a programme they are not enrolled in. An additional
+          session is an extra one bought by somebody who IS enrolled.
+    ai_notes: >
+      2026-10-30: the Romanian LABEL for this setting is still untranslated in the app
+      (it reads "Allow one term registrations" in a Romanian interface) while its help
+      text below it is translated and says "sesiune demonstrativă". A Romanian admin can
+      therefore be looking at an English label for a feature they know by a word that
+      sounds like Trial. There is no "demo" concept anywhere in Zooza.
+      The status is shown in the app as "Guest - one-off event in a session programme".
     public: true
 
   - id: auto-continuation
@@ -2162,6 +2245,22 @@ terms:
       cz: ["storno platby", "vrácení peněz", "vrácení poplatku", "vrátit peníze",
            "stornování platby", "refund", "vrácení"]
       de: ["Rückerstattung", "Geld zurück", "Rückzahlung", "erstatten"]
+    do_not_confuse_with:
+      - term: "Refund request (raised by the client)"
+        reason: >
+          Approving a refund request MOVES NO MONEY. It records the decision and emails
+          the client; the admin still issues the refund in the payment provider. Never
+          tell a customer that approving refunds anybody — the gap between the email and
+          the money is where the complaint comes from. Denying is final and cannot be
+          reopened.
+    ai_notes: >
+      2026-10-30: clients can raise refund requests themselves when they cancel an
+      eligible session, if the company switches on Settings - General - Allow refund
+      requests (off by default). The request lands on the booking detail with Approve and
+      Deny; the approved amount is prefilled from the refund policy and capped. Statuses
+      are Pending, Approved, Denied; resolved ones stay under "Resolved refund requests".
+      Two email templates carry the decision: "Refund request - approved" and
+      "Refund request - denied", both with an optional admin note.
     do_not_confuse_with:
       - term: "Cancellation fee"
         reason: >

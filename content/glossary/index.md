@@ -8,7 +8,7 @@ tags: ["glossary", "terminology", "definitions"]
 status: "published"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-27"
+last_converted: "2026-10-30"
 related_articles: ["getting-started-with-zooza", "settings-hub", "programme-settings"]
 ---
 
@@ -172,6 +172,11 @@ An allowance granted to a specific booking that lets the client attend extra ses
 A card payment gateway, available to companies in the EU and EEA. Unlike the other gateways, you can connect **several merchant accounts** and route each billing profile to one of them, so each legal entity settles into its own account. Set up under **Settings → Integrations → Global Payments**.
 
 > Do not confuse it with an [Invoice Profile](#invoice-profile). The invoice profile decides who *issues* the invoice; the Global Payments connection decides which merchant account *receives* the money. See [Accept card payments with Global Payments](../guides/global-payments.md).
+
+### Guest booking
+A booking for **one session** of a programme rather than the whole thing. Switch on `Allow bookings for one session` on the programme and clients can buy a single visit; the price is the programme price divided by the number of sessions, and the booking gets the status **Guest**.
+
+> Do not confuse it with a [Trial](#trial). A guest is buying one session; a trial is a prospective client being taken through a funnel with its own price, statuses and follow-up emails. The two are easy to mix up in Romanian, where the help text for the guest setting calls it a *sesiune demonstrativă* — if somebody asks about a "demo", ask which of the two they mean. There is no separate "demo" feature in Zooza.
 
 ---
 
