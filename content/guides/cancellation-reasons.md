@@ -38,6 +38,11 @@ or whether an admin had simply created the booking twice by mistake.
 Go to **Settings → General** and find the **Cancellation reasons** card. You need
 owner-level access to change it.
 
+![The Cancellation reasons card grouped by category — Not paid, Dissatisfied, Schedule or logistics — each reason showing its type and whether it is offered](../../assets/images/cancellation-reasons-settings.png)
+
+The reasons are grouped under their category, and each row shows its **type**
+(**Built-in** or your own) and its **status** (**Offered**, or hidden).
+
 Zooza ships a list to start from:
 
 | Reason | Use it for |
@@ -62,6 +67,12 @@ yours — these are just a sensible start.
 When you add or edit a reason you pick its **Category**. The report groups by category,
 not by your wording, which is what lets you rename *"Too expensive"* to *"Price"* without
 breaking last year's numbers.
+
+The categories are fixed by Zooza: **Not paid**, **Dissatisfied**, **Schedule or
+logistics**, **Personal**, **Price**, **Other**, **Administrative correction**,
+**Transfer** and **Unknown**. The last two are Zooza's own — **Transfer** is set when a
+client moves to another unit of your network, and **Unknown** holds cancellations
+recorded before reasons existed. Neither can be picked by hand.
 
 Three rules that follow from reasons being saved on real bookings:
 
@@ -142,9 +153,21 @@ every double-entry an admin ever tidied up.
 
 ## If you run a network
 
-A network HQ can manage one list for every unit. On a unit it then reads **"Your network
-manages this list, so it cannot be changed here"**, and the reasons shown are the ones
-offered when cancelling.
+A network HQ can manage one list for every unit, from **Cancellation reasons** in the
+network app.
+
+![The network cancellation reasons screen: reasons grouped by category with built-in and automation types, a Lock the list card showing Customisable mode, and a per-company exceptions table](../../assets/images/cancellation-reasons-network.png)
+
+There the HQ adds its own reasons to Zooza's categories and hides the built-in ones it
+does not use. Two controls decide how much freedom the units get:
+
+- **Lock the list.** **Customisable** means *"companies start from the network's list and
+  may add or hide reasons of their own"*; **Enforce the list** takes that away.
+- **Exceptions per company** overrides the mode for one direct company — handy when the
+  list should be open in general but fixed for one branch.
+
+On a unit under an enforced list it reads **"Your network manages this list, so it cannot
+be changed here"**, and the reasons shown are the ones offered when cancelling.
 
 - **Reset to network list** undoes your changes to the reasons that came from the
   network — renaming, moving, hiding, deleting. Your own reasons are untouched.

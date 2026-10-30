@@ -33,15 +33,25 @@ your own FAQ.
 
 ## Set it up
 
-Go to **Settings → General** and find the **Programme info tab** card.
+Go to **Settings → General → Programme info tab**.
 
-1. **Tab name.** Pick one of the ready-made names — **Contacts**, **Information**,
-   **Instructions** — or type your own. This is the word the client clicks.
-2. **Content.** The body of the tab. Formatted text, so headings and lists are fine.
-3. Save.
+![The Programme info tab settings page: a Default for all programmes card and a Product code card, each with Edit, Reset to network version and Delete, beside a panel listing programmes with their own tab](../../assets/images/programme-info-tab-settings.png)
 
-What you set here is the **Default for all programmes**. Set nothing and clients see no
-tab at all, unless an individual programme has its own.
+The page is a set of cards, one per piece of content you have:
+
+1. **Default for all programmes** — the one every programme uses unless told otherwise.
+2. **A card per product code**, where you use product codes. *Product code Lala*,
+   *Instructions*, "For camps" — so all your camps share wording that your weekly classes
+   do not.
+3. **Programmes with their own tab** — the exceptions, listed so you can see at a glance
+   which programmes have drifted from the default. It says *"No programme has its own
+   tab"* when there are none.
+
+Each card holds a **Tab name** — the word the client clicks, with **Contacts**,
+**Information** and **Instructions** ready to pick, or type your own — and the
+**Content**, written in a normal editor with headings, bold, lists, links and images.
+
+**Edit** opens it, **Delete** removes it. Set nothing at all and clients see no tab.
 
 ### Different wording for one programme
 
@@ -102,7 +112,8 @@ reason the feature exists in this shape.
   your programmes. You can view it here but not change it."*
 - A customisable one can be edited locally, and then shows as **From your network,
   customised**.
-- **Reset to network version** replaces your wording with the network's latest.
+- **Reset to network version** replaces your wording with the network's latest. It sits
+  on the card itself, next to Edit.
 - **Restore previous** brings back what you had before the network replaced it. Content a
   unit wrote is kept, not destroyed — which is the point of having both buttons.
 
@@ -110,6 +121,26 @@ reason the feature exists in this shape.
 shown: *"Your network's info tab is enforced for all programmes. These programme tabs are
 kept but are not shown to clients while it is enforced."* Nothing is lost; turn the
 enforcement off and they come back.
+
+### What the HQ sees
+
+![The network Course info tabs editor: Label, a Customisable or Enforced mode choice, a rich-text Content editor, and Save, Cancel, Push to all companies and Delete buttons, above a per-company exceptions table](../../assets/images/programme-info-tab-network.png)
+
+In the network app it is **Course info tabs**, with one entry for the whole network and
+one per product code. Each has a **Label**, a **Mode** — **Customisable** (*"Companies
+may adapt it and can always reset to the network's latest version"*) or **Enforced**
+(*"Every company shows the network's version and cannot change it"*) — and the
+**Content**.
+
+**Push to all companies** is the deliberate override: it replaces what every company
+currently has, including their own edits, with this version. **Save** on its own leaves
+existing copies alone. The difference matters — one is publishing a new version for
+anybody who has not customised it, the other is overwriting everybody.
+
+Underneath, **Exceptions per company** lets you override the mode for a single direct
+company: the table lists each one with what applies to it and an **Enforce for this
+company** action. So a network can stay customisable in general and pin one branch that
+keeps going off-message.
 
 > **One language per network.** There are no language variants, so a network spanning
 > markets needs to decide which language this content is in — or leave it customisable

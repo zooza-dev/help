@@ -227,7 +227,9 @@ bookings carrying a sibling discount in the first weeks after you switch it on.
 ## Restrict the discount to logged-in clients
 
 There is now a **Only for logged-in clients** switch on the sibling discount and on the
-returning-customer discount.
+returning-customer discount, in **Loyalty Programme → Sibling Discount**.
+
+![Sibling Discount settings: Enabled, Only for logged-in clients, How to count children, and the rules for 2nd and 3rd child](../../assets/images/sibling-discount-settings.png)
 
 With it on, a client who is not logged in books at full price and is asked to log in; the
 booking page tells them there is a discount waiting if they do. A logged-in client's

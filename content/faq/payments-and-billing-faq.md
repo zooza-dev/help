@@ -781,7 +781,7 @@ This matters in two places where it used to bite:
 
 Plans created before this change read their terms live, as they always did. If you need an older plan on the current terms, apply the template again — see [An existing client's plan shows different dates from the template preview](#an-existing-clients-plan-shows-different-dates-from-the-template-preview).
 
-> **The other side of the same change:** because a plan now carries its own terms, an admin can apply a template the class does not offer. You are no longer limited to the templates on that class's price screen, and applying one this way does not add it to the class or put it on the parent booking form. The booking form is still held to the templates you have deliberately offered to clients.
+> **The other side of the same change:** because a plan now carries its own terms, an admin can apply a template the class does not offer — the **Show all plans** switch on the New payment plan screen. Applying one that way does not add it to the class or put it on the parent booking form; the booking form is still held to the templates you have deliberately offered to clients.
 
 ## Why does my payment plan only show 3 upcoming instalments?
 
@@ -796,28 +796,43 @@ If you need to review the full schedule for a specific booking, open the registr
 No. You set it once on that booking and it then runs on its own, exactly like everybody
 else's plan. There is no monthly admin.
 
-1. Open the booking and go to its **Payments** section.
-2. Choose **New payment plan**.
-3. Decide what the amount is built from:
-   - **Total amount** — from the current class price, the booking's current debt, the
-     booking value, or a **Custom amount** you type. Zooza then divides it across the
-     instalments.
-   - **Scheduled payment amount: Custom amount** — you name what the client pays each
-     time and Zooza works the rest out from that. This is the one to use when the family
-     agreed a monthly figure rather than a total.
-4. Set the **First scheduled payment date** — **Now**, **From the beginning of the class**,
-   or a **Custom date**. It has to fall before the class ends.
+Open the booking → **Payment plan** → **New payment plan**.
 
-From there the plan generates its own instalments on schedule.
+![The New payment plan screen: a payment set-up strip, the first-payment date choice, the list of plans, the amount choice, and a live preview with the dated instalments](../../assets/images/new-payment-plan-screen.png)
 
-> **A custom instalment amount ignores template discounts.** When you set the scheduled
-> payment amount yourself, you are stating the final figure — no discount from the
-> template is applied on top. If the discount is the point, put it in the template or in
-> the [loyalty programme](../guides/loyalty-program.md) and leave the amount alone.
+The strip across the top tells you what you are working with — the class, the **unit
+price**, the **sessions total** and the **booking balance** — and the **Preview** panel
+on the right recalculates as you change anything, showing the **first payment**, how many
+**sessions** it covers, the **recurring** amount, and then every instalment with its date.
+Read the preview before you commit; it is the whole point of the screen.
+
+**First scheduled payment date** — three buttons: **Today**, **Next session** (it names
+the date), or a **Custom date**. **Include full start date** decides whether the first
+period is charged whole or pro-rated.
+
+**Payment plan** — the plans this class offers, one marked **★ Preferred**, each showing
+its terms underneath (*on day 1*, *at next anniversary · 10% discount*) and its family.
+**Show all plans** is the switch that matters here: turn it on and you can apply a
+template the class does not offer. Doing that does not add it to the class and does not
+put it on the parent booking form.
+
+**Amount** — **As per plan** takes the figure from the template; **Installment amount**
+lets you type what this family actually pays each time. Use the second when the agreement
+was a monthly figure rather than a total. There is a **Registration fee** field beside it.
+
+Then **Create payment plan**, and it generates its own instalments from there on.
+
+> **A typed instalment amount ignores template discounts.** You are stating the final
+> figure, so no discount is applied on top. If the discount is the point, put it in the
+> template or in the [loyalty programme](../guides/loyalty-program.md).
+
+> **Expect a rounding notice.** Where the split does not divide cleanly, Zooza warns that
+> instalments were rounded to two decimal places and tells you the resulting total — so
+> you can check it is the number you meant before creating the plan.
 
 **Changing one instalment later** is a separate thing: use **Modify scheduled payment** on
-the instalment itself. And note that once a plan is active, **Modify debt** only adjusts
-the *current* scheduled payment — it does not re-spread the change across the whole plan.
+the instalment itself. Once a plan is active, **Modify debt** only adjusts the *current*
+scheduled payment — it does not re-spread the change across the whole plan.
 
 **If you cannot create a plan at all** and the booking says no templates are assigned to
 the class, that is the cause: a booking can only use a payment plan when its class has at

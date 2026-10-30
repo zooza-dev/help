@@ -31,9 +31,11 @@ Only Settings is mapped for now. Add a section to SCOPE to grow it.
 """
 
 import argparse
+import io
 import json
 import os
 import re
+import subprocess
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -43,6 +45,26 @@ OUT = os.path.join(ROOT, "build", "app-map")
 SESSION = os.path.join(ROOT, "build", "intake", "zooza-session.json")
 MODULECONFIG = os.path.join(APP, "lib", "moduleconfig", "moduleconfig.js")
 STRINGS = os.path.join(APP, "lib", "str_en3.js")
+
+
+def app_source(path):
+    """Read a file from ../app at origin/main, falling back to the working tree.
+
+    The local checkout runs tens of commits behind (92 on 2026-10-30), so building
+    the map from it silently omits screens that already exist in the product. On
+    2026-10-30 that cost us: check_nav called a correct "Settings - General -
+    Programme info tab" cue a false positive, and the cue was "fixed" into a wrong
+    one. Read what is deployed, not what happens to be checked out.
+    """
+    rel = os.path.relpath(path, APP)
+    try:
+        out = subprocess.run(["git", "-C", APP, "show", f"origin/main:{rel}"],
+                             capture_output=True, check=True)
+        return out.stdout.decode("utf-8", "replace")
+    except (subprocess.CalledProcessError, FileNotFoundError, OSError) as exc:
+        print(f"  ! origin/main unreadable for {rel} ({exc}); using the working tree")
+        with open(path, encoding="utf-8") as fh:
+            return fh.read()
 
 BASE = "https://uk.zooza.app/"
 CLIENT_BASE = "https://www.playfulmotion.co.uk/parent-zone"
@@ -65,7 +87,7 @@ STALE = [
 def load_strings():
     """key -> English text, from the define() blob in str_en3.js."""
     out = {}
-    with open(STRINGS, encoding="utf-8") as fh:
+    with io.StringIO(app_source(STRINGS)) as fh:
         for line in fh:
             m = re.match(r"^([a-z0-9_]+)\s*:\s*'((?:[^'\\]|\\.)*)'", line)
             if m:
@@ -279,7 +301,7 @@ def programme_screens(strings):
 def build():
     import yaml
     strings = load_strings()
-    with open(MODULECONFIG, encoding="utf-8") as fh:
+    with io.StringIO(app_source(MODULECONFIG)) as fh:
         src = fh.read()
 
     screens = []
