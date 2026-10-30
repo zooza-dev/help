@@ -954,6 +954,13 @@ terms:
       a booking that is the ROOT of a linked group now asks what should happen to the
       group - disband it (each pays for itself), hand the root to another booking, or remove
       the whole group - and where the remaining balance should go.
+
+      The Cancellations report (Reports & Insights - Reports - Cancellations, BETA) is the
+      other half. Its "Where to look" card deliberately stays silent below 15 bookings,
+      3 cancellations and a 2x difference, so "the report shows nothing" on a small
+      account is correct behaviour, not a fault. Admin corrections and network transfers
+      are counted and displayed but kept out of the rates. Do not confuse this report with
+      the "Cancelled" report under Sessions, which is about cancelled SESSIONS.
     public: true
 
   # ──────────────────────────────────────────────

@@ -109,47 +109,74 @@ Afterwards the booking shows **Cancellation reason**, and **Cancelled by** *name
 ## The Cancellations report
 
 **Reports & Insights → Reports → Cancellations.** It answers two questions: why people
-leave, and where they leave more than they should.
+leave, and where they leave more than they should. It is marked **Beta** — the shape may
+still change.
+
+> **Not the same as the "Cancelled" report.** Further down the same menu, under
+> **Sessions**, there is a **Cancelled** report — that one is about cancelled *sessions*.
+> This one is about clients leaving.
+
+![The Cancellations report: filters, the rate against the previous period, a Where to look card, categories and reasons, a breakdown by programme and a chart of sessions attended before cancelling](../../assets/images/cancellations-report.png)
+
+**Filter first.** Across the top: **Period** and **Billing period** (both removable), plus
+**Programme**, **Instructor** and **Venue**, and **Reset** to clear them. Everything
+below reacts to these.
 
 **The rate, with something to compare it to.** Your cancellation rate for the period,
-against the previous period. Also split by who did it: **cancelled by staff**, **by the
-class instructor**, or **automatically**.
+shown as a percentage *and* as the fraction behind it (`0 / 2`), against the **previous
+period**. Beside it, who did it: **cancelled by staff**, **by the class instructor**, or
+**automatically**.
 
-**"Where to look".** The report looks for a category that is clearly higher in one place
+> Read the fraction, not only the percentage. Two bookings and one leaver is 50% and
+> means nothing.
+
+### Where to look
+
+The card that earns the report. Zooza looks for a category clearly higher in one place
 than in comparable classes or than last period, and names what it found in plain words —
 *Instructor: clients leave dissatisfied*, *Venue: hard to get to*, *Day and time don't
 suit*, *Price: more cancellations than last period*, *Payment method: bookings go
-unpaid*, *Programme: people leave in the first sessions*. Each one opens to the bookings
+unpaid*, *Programme: people leave in the first sessions*. Each opens to the bookings
 behind it.
 
-This is the part to read first. The overall rate tells you how you are doing; the
-hotspots tell you what to change.
+The thresholds are printed on the card so you know what it is holding itself to:
+**minimum 15 bookings, minimum 3 cancellations, and at least 2× higher**. Below any of
+those it stays quiet rather than crying wolf — which is why a small account can
+legitimately see *"Nothing stands out in this period."*
 
-**Break it down** by programme, class, instructor, venue, room, day and time, payment
-method, billing period, month, or reason — whichever cut you are arguing about.
+Read this card before the numbers. The rate tells you how you are doing; this tells you
+what to change.
 
-**Sessions attended before cancelling.** A small chart of how far people got. A pile of
-cancellations at **0–2 sessions** almost always means the class was not what those
-parents expected — a trial, booking-page or expectation problem, not a teaching one. A
-spread across the term is ordinary churn.
+### Categories and reasons
 
-### What is deliberately not counted
+One row per category — **Not paid**, **Dissatisfied**, **Schedule or logistics**,
+**Personal reasons**, **Price**, **Other** — with how many cancelled, the rate, the
+previous period, and **Show** to expand the individual reasons underneath.
 
-Listed separately and kept out of the rates:
+Beneath them, kept deliberately apart under **Not counted as cancellations**: **Admin
+correction** and **Transfer**, plus anything recorded before reasons existed. They are
+counted and shown, just not in the rates — *"admin corrections, transfers to another
+network unit and cancellations recorded before reasons existed are listed separately and
+are not part of the rates."*
 
-- **Booking created by mistake** and other admin corrections
-- **Network transfers** to another unit of your network
-- **Cancellations recorded before reasons existed** — nothing is backfilled, so your
-  history stays honest about not knowing
+This is the whole point of the categories. Without them your churn figure quietly
+includes every double entry an admin ever tidied up.
 
-This is the point of the categories. Without them your churn number quietly includes
-every double-entry an admin ever tidied up.
+### Breakdown
 
-> **Rows with very few bookings are shown but never flagged.** A class with three
-> bookings and one leaver is a 33% rate and means nothing. There is a **Minimum
-> bookings** threshold for exactly this.
+**Break down by** programme, class, instructor, venue, room, day and time, payment
+method, billing period, month or reason — whichever cut you are arguing about. The table
+gives each row its cancelled count and rate, then a column per category, so you can see
+*what kind* of leaving happens where.
 
----
+> **Rows with too few bookings are shown but never flagged**, and say *"Too few bookings
+> to compare"*. Same 15-booking floor as the hotspots.
+
+### Sessions attended before cancelling
+
+How far people got before they left. A pile at **0–2 sessions** almost always means the
+class was not what those parents expected — a trial, booking-page or expectation problem,
+not a teaching one. A spread across the term is ordinary churn.
 
 ## If you run a network
 
