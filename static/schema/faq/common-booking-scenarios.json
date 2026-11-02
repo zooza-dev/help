@@ -9,7 +9,7 @@
       "name": "1. How do I delete a booking?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Use this when the client won’t start or it’s a duplicate.\nSteps: Bookings → Detail → Change status to Deleted.\n(You will still have a data in CRM under filstre Deleted bookings)"
+        "text": "Use this when the client never started, or the booking is a duplicate or a test.\n\nOpen the booking and use More → Delete booking. The More menu sits at the top\nright of the booking, beside Add payment and Payment plan, and holds Copy\nbooking, Cancel booking, Delete booking, Transfer to network and Change\nstatus.\n\nIt moved on 27 October 2026. The booking screen was rebuilt and every action now\nlives in that header. Older instructions — including ours until recently — said\n\"Change status to Deleted\", which went through the status screen. That still works,\nbut Delete booking is the direct route and the one to teach people.\n\nDeleting is not erasing. The booking goes to the Trash and the client record stays\nexactly as it was. You can still find it by filtering the bookings list for deleted\nbookings, and you can restore it within 30 days — see\nTrash and restore.\n\nDeleting and cancelling are different. Delete is for a booking that should never\nhave existed; Cancel is for a real client who is leaving, keeps the record in your\nreports, and since late October asks you for a cancellation\nreason. Do not delete a leaver to tidy the list —\nit takes them out of your churn figures. See Cancelled vs deleted."
       }
     },
     {
