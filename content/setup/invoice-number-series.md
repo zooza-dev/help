@@ -112,7 +112,7 @@ Every series counts on its own: invoices in the *Summer camps* series never use 
 
 - **Codes must differ, and no code may be the beginning of another.** `21` and `2120` cannot sit on the same profile, because an invoice number starting `2120…` could belong to either.
 - **A deleted series keeps its code reserved.** Its invoices still carry numbers built from that code, so a new series cannot reuse it — that would issue the same invoice number twice. Pick a new code instead. Zooza asks you to confirm and reminds you of this when you delete a series.
-- If a code is rejected, the message appears **at the bottom of the form** — scroll down to read it.
+- If a code is rejected, the form scrolls to the message. When the code is not used by any series in the list, it belongs to a deleted series — choose another one.
 
 ---
 
@@ -141,7 +141,7 @@ Warnings never block invoicing. They tell you where the series will not apply as
 
 ![Invoicing card in programme settings showing Invoice number series: Language courses and a Manage series link](../../assets/images/invoice-number-series-07.png)
 
-**Copying a programme.** A copy keeps the original's series assignments, so the new programme is numbered the same way straight away.
+**Copying a programme.** A copy keeps the original's invoice profile, bank account and series assignments, so the new programme is numbered the same way straight away.
 
 ---
 
