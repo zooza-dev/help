@@ -12,7 +12,7 @@ source_legacy_path: "legacy/html/billing-settings.html"
 source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-10-17"
-related_articles: ["invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "invoicing-overview", "szamlazz-invoices", "fakturoid-invoices", "xero-integration"]
+related_articles: ["invoice-profiles-and-bank-accounts", "invoice-number-series", "invoice-profile-overrides", "invoicing-overview", "szamlazz-invoices", "fakturoid-invoices", "xero-integration"]
 ---
 
 
@@ -192,6 +192,10 @@ Three things about the series field are worth knowing, because together they use
 
 > **Note:** This template feature applies only to the four engines listed above. For **Számlázz.hu**, **Smart_Bill**, **Oblio**, and **ABRA Flexi**, the field is interpreted as a literal prefix or series identifier, not a template — those engines manage number formatting on their own side.
 
+### Separate numbering for selected programmes
+
+One profile can carry several number series — for example summer camps numbered `21201, 21202…` with the label "Summer camp", while everything else keeps the format above, which becomes the **default series**. Assign programmes, billing periods or products to each extra series. See [Use several invoice number series on one invoice profile](./invoice-number-series.md).
+
 For the invoice item description, you can use dynamic tags to automatically insert programme-specific information (e.g., programme name, billing period). This is useful when generating invoices across many programmes — each invoice will contain the correct programme details without manual editing.
 
 ### Putting the child's name on the invoice
@@ -360,6 +364,7 @@ The invoice is emailed to the client immediately.
 
 - [Set up invoice profiles and bank accounts](./invoice-profiles-and-bank-accounts.md) — legal entities and the accounts that collect payments.
 - [Choose which invoice profile applies](../guides/invoice-profile-overrides.md) — inherit and override per programme, class or booking.
+- [Use several invoice number series on one invoice profile](./invoice-number-series.md) — separate numbering and invoice labels for selected programmes, billing periods or products.
 - [Invoicing overview](./invoicing-overview.md) — how invoice engines work, which engine to use.
 - [Payments and Billing FAQ](../faq/payments-and-billing-faq.md) — common payment and billing questions.
 - [Edit payment on booking](../guides/edit-payment-on-booking.md) — how to adjust payments on bookings.

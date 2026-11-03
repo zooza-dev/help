@@ -12,7 +12,7 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-09-26"
-related_articles: ["invoice-profile-overrides", "billing-and-invoicing", "invoicing-overview", "inbound-payments-setup", "payments-and-billing-faq"]
+related_articles: ["invoice-profile-overrides", "billing-and-invoicing", "invoice-number-series", "invoicing-overview", "inbound-payments-setup", "payments-and-billing-faq"]
 ---
 
 # Set up invoice profiles and bank accounts
@@ -165,6 +165,7 @@ Previously these could disagree — a client could see one IBAN on the emailed Q
 
 - [Choose which invoice profile applies](../guides/invoice-profile-overrides.md) — inherit, override, and where each level is set
 - [Billing and invoicing](./billing-and-invoicing.md) — invoice generation, numbering and templates
+- [Use several invoice number series on one invoice profile](./invoice-number-series.md) — separate numbering for selected programmes, billing periods or products
 - [Invoicing in Zooza — overview](./invoicing-overview.md) — invoice engines and what Zooza does for you
 - [Set up how Zooza collects money from clients](./inbound-payments-setup.md) — payment channels and bank statement reading
 - [Payments and Billing FAQ](../faq/payments-and-billing-faq.md)

@@ -38,6 +38,8 @@ You need an active [Oblio](https://www.oblio.eu/) account with at least one **do
 4. Enter the **Document Series** — this controls invoice numbering. It must already exist in your Oblio account.
 5. Click **Save**.
 
+To number some invoices in a different Oblio document series — for example summer camps — add an extra **invoice number series** on the profile, pick the Oblio series and assign the programmes to it. See [Use several invoice number series on one invoice profile](./invoice-number-series.md).
+
 ![Screenshot — oblio invoices](../../assets/images/oblio-invoices-01.png)
 
 ---

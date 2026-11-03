@@ -12,7 +12,7 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-10-10"
-related_articles: ["invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "billing-and-invoicing", "payments-and-billing-faq", "e-invoicing-mandates"]
+related_articles: ["invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "billing-and-invoicing", "invoice-number-series", "payments-and-billing-faq", "e-invoicing-mandates"]
 ---
 
 # Invoicing in Zooza — Overview
@@ -173,6 +173,7 @@ If your system isn't supported yet, contact us — we can discuss adding an inte
 - [Set up invoice profiles and bank accounts](./invoice-profiles-and-bank-accounts.md) — legal entities, IBANs, default account
 - [Choose which invoice profile applies](../guides/invoice-profile-overrides.md) — inherit and override per programme, class or booking
 - [Billing and invoicing](./billing-and-invoicing.md) — automatic and manual invoice generation, numbering, templates
+- [Invoice number series](./invoice-number-series.md) — several numberings on one invoice profile
 - [Invoice buyer data](../guides/invoice-buyer-data.md) — managing orderer details and regenerating invoices
 - [Invoices list](billing-and-invoicing.md) — browsing and downloading invoices
 - [Multi-line invoices](./billing-and-invoicing.md#multi-line-invoices) — itemised invoice breakdown

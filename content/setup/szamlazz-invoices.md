@@ -12,7 +12,7 @@ source_legacy_path: "legacy/0100_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-09-04"
-related_articles: ["billing-and-invoicing", "invoicing-overview"]
+related_articles: ["billing-and-invoicing", "invoicing-overview", "invoice-number-series"]
 ---
 
 # Számlázz.hu Integration
@@ -70,6 +70,8 @@ If you run multiple Számlázz.hu integrations, or want to keep Zooza-generated 
 4. Save.
 
 Zooza will create all invoices for this profile in the specified tömb. Profiles without a prefix use the Számlázz.hu account default.
+
+To send only some invoices to a different tömb — for example summer camps — add an extra **invoice number series** on the profile, enter that tömb's name as its prefix and assign the programmes to it. See [Use several invoice number series on one invoice profile](./invoice-number-series.md).
 
 ### VAT setup
 

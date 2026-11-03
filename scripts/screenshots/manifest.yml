@@ -161,3 +161,61 @@ shots:
       "Settings → Programmes", which check_nav flags as a menu that does not
       exist. It is the "Settings for programmes" CARD on Settings → General →
       General — somebody had read the card title as a menu path.
+
+  # --- 2026-11-03: invoice number series (content/setup/invoice-number-series.md,
+  #     API-20261103-001 / APP-20261103-001, ZOOZA-4932). The first set was shot on the
+  #     local stack against the test DB (company 1, profile 10050) with names masked,
+  #     because the feature is not on production yet. BLOCKED until it ships: then set up
+  #     two or three series on a Playfulmotion invoice profile (e.g. Summer camps,
+  #     Passes), put the profile id in the routes below, and recapture.
+  - image: invoice-number-series-01.png
+    route: settings/invoice_profiles/PROFILE_ID
+    card: Invoice number series
+    assert: "All other invoices"
+    status: blocked
+    note: The series card — default series plus extra series with format, assignments, labels.
+
+  - image: invoice-number-series-02.png
+    route: settings/invoice_profiles/PROFILE_ID
+    click: Add series
+    assert: "Will produce"
+    status: blocked
+    note: >
+      Top of the Add series form filled in — name, code 2120, {SER}{N}, counter width 0.
+      The tool cannot type into the form yet; shoot by hand or extend capture.py.
+
+  - image: invoice-number-series-03.png
+    route: settings/invoice_profiles/PROFILE_ID
+    click: Add series
+    assert: "Will produce"
+    status: blocked
+    note: Bottom of the form — "Will produce" preview, invoice label, programmes assigned.
+
+  - image: invoice-number-series-04.png
+    route: settings/invoice_profiles/PROFILE_ID
+    assert: "Assignments to check"
+    status: blocked
+    note: >
+      Edit series on a series with a warning ("Some classes are invoiced through the
+      billing profile …"). Needs a programme whose class uses another invoice profile.
+
+  - image: invoice-number-series-05.png
+    route: payments/invoices
+    assert: "INVOICE NUMBER"
+    status: blocked
+    note: >
+      Invoice list with the series name under the invoice number. Same Xero-error caveat
+      as reference/invoices-list.png — only issued invoices in the frame.
+
+  - image: invoice-number-series-06.png
+    route: payments/invoices/INVOICE_ID
+    assert: "Invoice number series"
+    status: blocked
+    note: Invoice detail with the Invoice number series field.
+
+  - image: invoice-number-series-07.png
+    route: courses/COURSE_ID/settings?edit=price
+    card: Invoicing
+    assert: "Manage series"
+    status: blocked
+    note: The Invoicing card in programme price settings — "Invoice number series: …" + Manage series.

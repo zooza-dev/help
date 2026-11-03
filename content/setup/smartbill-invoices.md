@@ -77,6 +77,8 @@ Set the invoice number series in SmartBill, then select it in the Invoice Profil
 
 ![Invoice series detail](../../assets/images/smartbill-invoices-05.png)
 
+To number some invoices in a different SmartBill series — for example summer camps — add an extra **invoice number series** on the profile, pick the SmartBill series and assign the programmes to it. See [Use several invoice number series on one invoice profile](./invoice-number-series.md).
+
 ---
 
 ## What works and what doesn't
