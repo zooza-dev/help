@@ -12,7 +12,7 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-11-03"
-related_articles: ["billing-and-invoicing", "invoice-profiles-and-bank-accounts", "invoicing-overview", "smartbill-invoices", "oblio-invoices", "szamlazz-invoices", "abra-flexi-invoices"]
+related_articles: ["billing-and-invoicing", "invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "invoicing-overview", "smartbill-invoices", "oblio-invoices", "szamlazz-invoices", "abra-flexi-invoices"]
 ---
 
 # Use several invoice number series on one invoice profile
@@ -31,11 +31,31 @@ An **invoice number series** does exactly that. You add extra series to an invoi
 - **The default series is what you already have.** The profile's existing number format and item description stay exactly as they are and apply to every invoice that no extra series claims. Adding a series changes nothing for the rest.
 - **An extra series has its own code, number format, counter and invoice label.** For example code `2120` with the format `{SER}{N}` numbers invoices `21201`, `21202`, `21203`…
 - **You decide which invoices use it** by assigning programmes, billing periods or products.
-- **When several series match one invoice, the first one in the list wins.** Use the up and down arrows to change the order.
+- **When several series match one invoice, the first one in the list wins.** Use the up and down arrows to change the order. The full rule is in [How Zooza picks the series for an invoice](#how-zooza-picks-the-series-for-an-invoice).
 
 ![Invoice number series card on an invoice profile, showing the default series and four extra series with their number formats, assignments and invoice labels](../../assets/images/invoice-number-series-01.png)
 
 The **Assigned to** column shows what each series covers, for example *Programmes: 4* or *Billing periods: 1*. **Assignments to check** means some of those assignments need a look — see [Warnings on a series](#warnings-on-a-series).
+
+---
+
+## How Zooza picks the series for an invoice
+
+Every time an invoice is created, Zooza decides in this order:
+
+1. **Which invoice profile issues the invoice.** This is the usual chain — Default profile → Programme → Class → Booking, the lowest level that has a profile set wins (see [Choose which invoice profile applies](../guides/invoice-profile-overrides.md)). For a product order it is the product's invoice profile. **Only the series of that profile are considered.** A series on another profile never applies, even if the programme is assigned to it.
+2. **Which of that profile's series matches.** Zooza goes down the list of extra series from the top and takes the **first** one that contains:
+   - for a booking: the booking's **programme**, or the booking's **billing period**,
+   - for a product order: the **product**.
+
+   Within one series the programme is checked before the billing period, but the order of the list always decides first: if *Summer camps* (billing period) sits above *Language courses* (programme) and a booking matches both, it gets *Summer camps*.
+3. **Nothing matches → the default series.** The invoice gets the profile's own number format and description, as it would without any extra series.
+
+A few consequences worth knowing:
+
+- **Classes are not assigned on their own.** A class follows its programme. But if a class is invoiced through a **different invoice profile** than its programme, step 1 picks that other profile and its series — that is what the warning *Some classes are invoiced through …* tells you.
+- **Deleted series are skipped**, and so are series that do not fit the profile's current invoice engine (for example SmartBill series after the profile was switched to another engine).
+- **The choice is made once, when the invoice is created.** Regenerating or retrying an invoice keeps its series and its number, even if you change the assignments or the order of the list later. Only new invoices follow the new setup.
 
 ---
 
@@ -157,4 +177,5 @@ No. A series belongs to one invoice profile, because each profile is its own leg
 
 - [Billing and invoicing](./billing-and-invoicing.md) — invoice generation, the default number format and templates
 - [Set up invoice profiles and bank accounts](./invoice-profiles-and-bank-accounts.md) — the profile a series belongs to
+- [Choose which invoice profile applies](../guides/invoice-profile-overrides.md) — which profile issues a booking's invoice, and therefore which series can apply
 - [Invoicing in Zooza — overview](./invoicing-overview.md) — which invoice engines Zooza supports
