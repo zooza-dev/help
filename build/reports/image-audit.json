@@ -7,7 +7,9 @@
   "Classes": 86,
   "Bookings": 78
  },
- "unused": [],
+ "unused": [
+  "billing-and-invoicing-01.png"
+ ],
  "articles": [
   {
    "file": "payment-templates-creation.md",
@@ -16,9 +18,9 @@
    "url": "https://help.zooza.online/payments/payment-templates-creation/",
    "cue": "Settings → Billing & Payments → Payment schedule templates",
    "app_url": "https://uk.zooza.app/#settings/payment_schedule_templates",
-   "score": 46,
+   "score": 47,
    "oldest_days": 268,
-   "drift_days": 255,
+   "drift_days": 268,
    "flagged": true,
    "images": [
     {
@@ -136,26 +138,8 @@
      "added": "2026-02-11"
     },
     {
-     "file": "payment-templates-creation-13.png",
-     "alt": "Programmes card on a payment template with Activate and Change price type actions",
-     "age_days": 268,
-     "added": "2026-02-11"
-    },
-    {
-     "file": "payment-templates-creation-11.png",
-     "alt": "Programmes card on a payment template: which programmes have the template active",
-     "age_days": 268,
-     "added": "2026-02-11"
-    },
-    {
      "file": "payment-templates-creation-10.png",
      "alt": "Screenshot",
-     "age_days": 268,
-     "added": "2026-02-11"
-    },
-    {
-     "file": "payment-templates-creation-09.png",
-     "alt": "Payment schedule templates list with an Edit button per template",
      "age_days": 268,
      "added": "2026-02-11"
     },
@@ -200,6 +184,24 @@
      "alt": "Screenshot — payment templates creation",
      "age_days": 248,
      "added": "2026-03-03"
+    },
+    {
+     "file": "payment-templates-creation-13.png",
+     "alt": "Programmes card on a payment template with Activate and Change price type actions",
+     "age_days": 268,
+     "added": "2026-02-11"
+    },
+    {
+     "file": "payment-templates-creation-11.png",
+     "alt": "Programmes card on a payment template: which programmes have the template active",
+     "age_days": 268,
+     "added": "2026-02-11"
+    },
+    {
+     "file": "payment-templates-creation-09.png",
+     "alt": "The Payment schedule templates list: each template with its billing day and who it is visible to, and an Edit button",
+     "age_days": 268,
+     "added": "2026-02-11"
     }
    ]
   },
@@ -210,9 +212,9 @@
    "url": "https://help.zooza.online/payments/billing-and-invoicing/",
    "cue": "Settings → Billing & Payments → Invoice profiles",
    "app_url": "https://uk.zooza.app/#settings/invoice_profiles",
-   "score": 45,
+   "score": 46,
    "oldest_days": 261,
-   "drift_days": 241,
+   "drift_days": 261,
    "flagged": true,
    "images": [
     {
@@ -252,12 +254,6 @@
      "added": "2026-02-18"
     },
     {
-     "file": "billing-and-invoicing-01.png",
-     "alt": "Settings page with Billing tile highlighted",
-     "age_days": 261,
-     "added": "2026-02-18"
-    },
-    {
      "file": "billing-and-invoicing-14.png",
      "alt": "Invoice Line Types section in an Invoice Profile",
      "age_days": 226,
@@ -265,7 +261,7 @@
     },
     {
      "file": "invoice-profiles-list.png",
-     "alt": "Invoice profiles list showing two legal entities with the default profile badge",
+     "alt": "The Invoice profiles list: each profile with its business ID, VAT booking number and tax ID, one marked as the default",
      "age_days": 107,
      "added": "2026-07-22"
     }
@@ -1428,12 +1424,6 @@
      "added": "2026-02-11"
     },
     {
-     "file": "payment-pairing-04.png",
-     "alt": "Payment reconciliation rules card with the Only reconcile payments to outstanding bookings switch",
-     "age_days": 227,
-     "added": "2026-03-24"
-    },
-    {
      "file": "payment-pairing-03.png",
      "alt": "Screenshot — payment pairing",
      "age_days": 227,
@@ -1450,6 +1440,12 @@
      "alt": "The AI Analytics tab of Payment reconciliation, showing evaluated totals, auto-pair success, admin overrides and processing time",
      "age_days": 63,
      "added": "2026-09-04"
+    },
+    {
+     "file": "payment-pairing-04.png",
+     "alt": "Payment reconciliation rules card with the Only reconcile payments to outstanding bookings switch",
+     "age_days": 227,
+     "added": "2026-03-24"
     }
    ]
   },
@@ -2730,6 +2726,44 @@
    ]
   },
   {
+   "file": "payments-and-billing-faq.md",
+   "path": "content/faq/payments-and-billing-faq.md",
+   "area": "Payments",
+   "url": "https://help.zooza.online/payments/payments-and-billing-faq/",
+   "cue": "Settings → Billing & Payments → Payment settings",
+   "app_url": "https://uk.zooza.app/#settings/payment_settings",
+   "score": 34,
+   "oldest_days": 218,
+   "drift_days": 218,
+   "flagged": false,
+   "images": [
+    {
+     "file": "payments-and-billing-faq-01.png",
+     "alt": "Screenshot — payments and billing faq",
+     "age_days": 218,
+     "added": "2026-04-02"
+    },
+    {
+     "file": "payments-and-billing-faq-02.png",
+     "alt": "Screenshot — payments and billing faq",
+     "age_days": 133,
+     "added": "2026-06-26"
+    },
+    {
+     "file": "new-payment-plan-screen.png",
+     "alt": "The New payment plan screen: a payment set-up strip, the first-payment date choice, the list of plans, the amount choice, and a live preview with the dated instalments",
+     "age_days": 7,
+     "added": "2026-10-30"
+    },
+    {
+     "file": "payment-plan-cancel-and-dates.png",
+     "alt": "A booking's payment plan: the template used and total, Change, Pause plan and Cancel payment plan, and the instalment table with separate Scheduled for and Due date columns",
+     "age_days": 0,
+     "added": "2026-11-06"
+    }
+   ]
+  },
+  {
    "file": "copy-programme-and-class.md",
    "path": "content/guides/copy-programme-and-class.md",
    "area": "Programmes",
@@ -2782,38 +2816,6 @@
      "alt": "Screenshot — copy programme and class",
      "age_days": 248,
      "added": "2026-03-03"
-    }
-   ]
-  },
-  {
-   "file": "payments-and-billing-faq.md",
-   "path": "content/faq/payments-and-billing-faq.md",
-   "area": "Payments",
-   "url": "https://help.zooza.online/payments/payments-and-billing-faq/",
-   "cue": "Settings → Billing & Payments → Payment settings",
-   "app_url": "https://uk.zooza.app/#settings/payment_settings",
-   "score": 33,
-   "oldest_days": 218,
-   "drift_days": 211,
-   "flagged": false,
-   "images": [
-    {
-     "file": "payments-and-billing-faq-01.png",
-     "alt": "Screenshot — payments and billing faq",
-     "age_days": 218,
-     "added": "2026-04-02"
-    },
-    {
-     "file": "payments-and-billing-faq-02.png",
-     "alt": "Screenshot — payments and billing faq",
-     "age_days": 133,
-     "added": "2026-06-26"
-    },
-    {
-     "file": "new-payment-plan-screen.png",
-     "alt": "The New payment plan screen: a payment set-up strip, the first-payment date choice, the list of plans, the amount choice, and a live preview with the dated instalments",
-     "age_days": 7,
-     "added": "2026-10-30"
     }
    ]
   },
@@ -3146,6 +3148,74 @@
      "alt": "Screenshot — fakturoid invoices",
      "age_days": 226,
      "added": "2026-03-25"
+    }
+   ]
+  },
+  {
+   "file": "inbound-payments-setup.md",
+   "path": "content/setup/inbound-payments-setup.md",
+   "area": "Payments",
+   "url": "https://help.zooza.online/payments/inbound-payments-setup/",
+   "cue": "Settings → Billing & Payments → Payment collection setup",
+   "app_url": "https://uk.zooza.app/#settings/payment_collection",
+   "score": 33,
+   "oldest_days": 208,
+   "drift_days": 208,
+   "flagged": false,
+   "images": [
+    {
+     "file": "inbound-setup-online-card.png",
+     "alt": "Inbound setup wizard — online card payment step showing providers and default toggle",
+     "age_days": 208,
+     "added": "2026-04-12"
+    },
+    {
+     "file": "inbound-setup-intro.png",
+     "alt": "Inbound setup wizard intro screen — \"You can use every channel at once\"",
+     "age_days": 208,
+     "added": "2026-04-12"
+    },
+    {
+     "file": "inbound-setup-done.png",
+     "alt": "Inbound setup wizard — completion screen showing channel defaults summary",
+     "age_days": 208,
+     "added": "2026-04-12"
+    },
+    {
+     "file": "inbound-setup-direct-debit.png",
+     "alt": "Inbound setup wizard — direct debit step showing GoCardless provider and default toggle",
+     "age_days": 208,
+     "added": "2026-04-12"
+    },
+    {
+     "file": "inbound-setup-cash-bank-transfer.png",
+     "alt": "Inbound setup wizard — cash and bank transfer step with bank statement reading options",
+     "age_days": 208,
+     "added": "2026-04-12"
+    },
+    {
+     "file": "inbound-payments-setup-01.png",
+     "alt": "Dashboard warning banner — \"Bank connection needs reconnection\" with the affected account and a Reconnect button",
+     "age_days": 208,
+     "added": "2026-04-12"
+    },
+    {
+     "file": "inbound-bank-statement-reading-per-account.png",
+     "alt": "Bank statement reading table listing each bank account with its invoice profile, source and status",
+     "age_days": 107,
+     "added": "2026-07-22"
+    },
+    {
+     "file": "inbound-setup-current-setup.png",
+     "alt": "Inbound Payments Setup — current setup screen with the three channel tiles and bank statement status",
+     "age_days": 208,
+     "added": "2026-04-12"
+    },
+    {
+     "file": "payment-collection-setup.png",
+     "alt": "Payment collection setup: the three payment channels, the reconciliation rule, and the per-account statement feed table",
+     "age_days": 63,
+     "added": "2026-09-04"
     }
    ]
   },
@@ -3880,74 +3950,6 @@
    ]
   },
   {
-   "file": "inbound-payments-setup.md",
-   "path": "content/setup/inbound-payments-setup.md",
-   "area": "Payments",
-   "url": "https://help.zooza.online/payments/inbound-payments-setup/",
-   "cue": "Settings → Billing & Payments → Payment collection setup",
-   "app_url": "https://uk.zooza.app/#settings/payment_collection",
-   "score": 30,
-   "oldest_days": 208,
-   "drift_days": 160,
-   "flagged": false,
-   "images": [
-    {
-     "file": "inbound-setup-online-card.png",
-     "alt": "Inbound setup wizard — online card payment step showing providers and default toggle",
-     "age_days": 208,
-     "added": "2026-04-12"
-    },
-    {
-     "file": "inbound-setup-intro.png",
-     "alt": "Inbound setup wizard intro screen — \"You can use every channel at once\"",
-     "age_days": 208,
-     "added": "2026-04-12"
-    },
-    {
-     "file": "inbound-setup-done.png",
-     "alt": "Inbound setup wizard — completion screen showing channel defaults summary",
-     "age_days": 208,
-     "added": "2026-04-12"
-    },
-    {
-     "file": "inbound-setup-direct-debit.png",
-     "alt": "Inbound setup wizard — direct debit step showing GoCardless provider and default toggle",
-     "age_days": 208,
-     "added": "2026-04-12"
-    },
-    {
-     "file": "inbound-setup-current-setup.png",
-     "alt": "Inbound Payments Setup — current setup screen with the three channel tiles and bank statement status",
-     "age_days": 208,
-     "added": "2026-04-12"
-    },
-    {
-     "file": "inbound-setup-cash-bank-transfer.png",
-     "alt": "Inbound setup wizard — cash and bank transfer step with bank statement reading options",
-     "age_days": 208,
-     "added": "2026-04-12"
-    },
-    {
-     "file": "inbound-payments-setup-01.png",
-     "alt": "Dashboard warning banner — \"Bank connection needs reconnection\" with the affected account and a Reconnect button",
-     "age_days": 208,
-     "added": "2026-04-12"
-    },
-    {
-     "file": "inbound-bank-statement-reading-per-account.png",
-     "alt": "Bank statement reading table listing each bank account with its invoice profile, source and status",
-     "age_days": 107,
-     "added": "2026-07-22"
-    },
-    {
-     "file": "payment-collection-setup.png",
-     "alt": "Payment collection setup: the three payment channels, the reconciliation rule, and the per-account statement feed table",
-     "age_days": 63,
-     "added": "2026-09-04"
-    }
-   ]
-  },
-  {
    "file": "summer-camps-creation.md",
    "path": "content/guides/summer-camps-creation.md",
    "area": "Programmes",
@@ -4272,6 +4274,12 @@
      "added": "2026-02-11"
     },
     {
+     "file": "blocks-creation-14.png",
+     "alt": "User roles",
+     "age_days": 268,
+     "added": "2026-02-11"
+    },
+    {
      "file": "user-roles-03.png",
      "alt": "The process of adding a instructor is very simple. Under Settings, open the Access icon...",
      "age_days": 268,
@@ -4286,12 +4294,6 @@
     {
      "file": "discount-code-07.png",
      "alt": "The process of adding a instructor is very simple. Under Settings, open the Access icon...",
-     "age_days": 268,
-     "added": "2026-02-11"
-    },
-    {
-     "file": "blocks-creation-14.png",
-     "alt": "User roles",
      "age_days": 268,
      "added": "2026-02-11"
     },
@@ -4874,54 +4876,16 @@
      "added": "2026-08-22"
     },
     {
-     "file": "additional-sessions-02.png",
-     "alt": "General settings for all programmes: a cancellation limit and Allow refund requests",
-     "age_days": 76,
-     "added": "2026-08-22"
-    },
-    {
      "file": "additional-sessions-01.png",
      "alt": "The Additional sessions card in the programme settings, with price, limit and payment enforcement",
      "age_days": 76,
      "added": "2026-08-22"
-    }
-   ]
-  },
-  {
-   "file": "automatic-payment-reminders.md",
-   "path": "content/guides/automatic-payment-reminders.md",
-   "area": "Communication",
-   "url": "https://help.zooza.online/communication/automatic-payment-reminders/",
-   "cue": "Settings → Billing & Payments → Payment settings",
-   "app_url": "https://uk.zooza.app/#settings/payment_settings",
-   "score": 24,
-   "oldest_days": 248,
-   "drift_days": 241,
-   "flagged": false,
-   "images": [
-    {
-     "file": "automatic-payment-reminders-01.png",
-     "alt": "Settings → Billing & Payments → Payment settings: payment acceptance policy and scheduled-payment notifications",
-     "age_days": 248,
-     "added": "2026-03-03"
     },
     {
-     "file": "automatic-payment-reminders-07.png",
-     "alt": "Payment settings page: acceptance policy, scheduled-payment notifications and payment confirmations",
-     "age_days": 179,
-     "added": "2026-05-11"
-    },
-    {
-     "file": "payment-reminders-modes-and-status.png",
-     "alt": "Payment reminders settings: the activation date, Set and activated versus Not activated, and the choice between sending before the programme starts or after the booking",
-     "age_days": 20,
-     "added": "2026-10-17"
-    },
-    {
-     "file": "payment-reminders-delete-unpaid.png",
-     "alt": "The lower half: delete an unpaid booking with three options, move bookings without a down payment to the waitlist, and the warning about assigned payments",
-     "age_days": 20,
-     "added": "2026-10-17"
+     "file": "additional-sessions-02.png",
+     "alt": "General settings for all programmes: a cancellation limit and Allow refund requests",
+     "age_days": 76,
+     "added": "2026-08-22"
     }
    ]
   },
@@ -5196,14 +5160,14 @@
      "added": "2026-02-11"
     },
     {
-     "file": "lecturer-substitution-01.png",
-     "alt": "This feature is set in the Settings category under Access section, where you just need...",
+     "file": "blocks-creation-07.png",
+     "alt": "After selecting a instructor, a window will open with the availability of the...",
      "age_days": 268,
      "added": "2026-02-11"
     },
     {
-     "file": "blocks-creation-07.png",
-     "alt": "After selecting a instructor, a window will open with the availability of the...",
+     "file": "lecturer-substitution-01.png",
+     "alt": "This feature is set in the Settings category under Access section, where you just need...",
      "age_days": 268,
      "added": "2026-02-11"
     }
@@ -5266,12 +5230,6 @@
      "added": "2026-02-11"
     },
     {
-     "file": "zooza-sites-05.png",
-     "alt": "You can customize templates and color themes in the general settings",
-     "age_days": 268,
-     "added": "2026-02-11"
-    },
-    {
      "file": "zooza-sites-03.png",
      "alt": "Possibility to edit individual subpages in all languages",
      "age_days": 268,
@@ -5294,6 +5252,12 @@
      "alt": "Several language modifications of the page",
      "age_days": 268,
      "added": "2026-02-11"
+    },
+    {
+     "file": "zooza-sites-05.png",
+     "alt": "You can customize templates and color themes in the general settings",
+     "age_days": 268,
+     "added": "2026-02-11"
     }
    ]
   },
@@ -5309,12 +5273,6 @@
    "drift_days": 220,
    "flagged": false,
    "images": [
-    {
-     "file": "discount-code-07.png",
-     "alt": "In the booking forms, select the subpages you have created for this purpose. You will...",
-     "age_days": 268,
-     "added": "2026-02-11"
-    },
     {
      "file": "deploying-zooza-on-website-12.png",
      "alt": "It may happen that you have programmes split across multiple pages, either due to...",
@@ -5380,38 +5338,12 @@
      "alt": "If you have a page built around a specific programme offering, Zooza allows you to...",
      "age_days": 268,
      "added": "2026-02-11"
-    }
-   ]
-  },
-  {
-   "file": "notifications-center.md",
-   "path": "content/guides/notifications-center.md",
-   "area": "Settings",
-   "url": "https://help.zooza.online/settings/notifications-center/",
-   "cue": "Settings → Other → Notification center",
-   "app_url": "https://uk.zooza.app/#settings/notifications",
-   "score": 24,
-   "oldest_days": 268,
-   "drift_days": 220,
-   "flagged": false,
-   "images": [
-    {
-     "file": "notifications-center-03.png",
-     "alt": "The new-notification form: notification type and the email address to send it to",
-     "age_days": 268,
-     "added": "2026-02-11"
     },
     {
-     "file": "notifications-center-02.png",
-     "alt": "Settings with Notifications selected and the Add new notification button",
+     "file": "discount-code-07.png",
+     "alt": "In the booking forms, select the subpages you have created for this purpose. You will...",
      "age_days": 268,
      "added": "2026-02-11"
-    },
-    {
-     "file": "notifications-center-04.png",
-     "alt": "The notification type dropdown open on the Notifications center screen, listing every event from New booking down to Class full notification, including New email reply from client",
-     "age_days": 54,
-     "added": "2026-09-13"
     }
    ]
   },
@@ -5488,50 +5420,6 @@
      "alt": "Overview",
      "age_days": 268,
      "added": "2026-02-11"
-    }
-   ]
-  },
-  {
-   "file": "communication-send-email.md",
-   "path": "content/reference/communication-send-email.md",
-   "area": "Communication",
-   "url": "https://help.zooza.online/communication/communication-send-email/",
-   "cue": "Settings → General → General",
-   "app_url": "https://uk.zooza.app/#settings/general",
-   "score": 24,
-   "oldest_days": 268,
-   "drift_days": 220,
-   "flagged": false,
-   "images": [
-    {
-     "file": "account-info-logo-url.png",
-     "alt": "Company logo section on Settings → General with the drag-and-drop upload area",
-     "age_days": 268,
-     "added": "2026-02-11"
-    },
-    {
-     "file": "communication-send-email.png",
-     "alt": "Send email",
-     "age_days": 266,
-     "added": "2026-02-13"
-    },
-    {
-     "file": "communication-send-email-03.png",
-     "alt": "Screenshot — communication send email",
-     "age_days": 210,
-     "added": "2026-04-10"
-    },
-    {
-     "file": "communication-send-email-02.png",
-     "alt": "Screenshot — communication send email",
-     "age_days": 210,
-     "added": "2026-04-10"
-    },
-    {
-     "file": "communication-send-email-01.png",
-     "alt": "Screenshot — communication send email",
-     "age_days": 210,
-     "added": "2026-04-10"
     }
    ]
   },
@@ -5716,6 +5604,50 @@
      "alt": "Screenshot — calendar",
      "age_days": 263,
      "added": "2026-02-16"
+    }
+   ]
+  },
+  {
+   "file": "communication-send-email.md",
+   "path": "content/reference/communication-send-email.md",
+   "area": "Communication",
+   "url": "https://help.zooza.online/communication/communication-send-email/",
+   "cue": "Settings → General → General",
+   "app_url": "https://uk.zooza.app/#settings/general",
+   "score": 23,
+   "oldest_days": 268,
+   "drift_days": 220,
+   "flagged": false,
+   "images": [
+    {
+     "file": "communication-send-email.png",
+     "alt": "Send email",
+     "age_days": 266,
+     "added": "2026-02-13"
+    },
+    {
+     "file": "communication-send-email-03.png",
+     "alt": "Screenshot — communication send email",
+     "age_days": 210,
+     "added": "2026-04-10"
+    },
+    {
+     "file": "communication-send-email-02.png",
+     "alt": "Screenshot — communication send email",
+     "age_days": 210,
+     "added": "2026-04-10"
+    },
+    {
+     "file": "communication-send-email-01.png",
+     "alt": "Screenshot — communication send email",
+     "age_days": 210,
+     "added": "2026-04-10"
+    },
+    {
+     "file": "account-info-logo-url.png",
+     "alt": "Company logo section on Settings → General with the drag-and-drop upload area",
+     "age_days": 268,
+     "added": "2026-02-11"
     }
    ]
   },
@@ -6728,20 +6660,14 @@
    "url": "https://help.zooza.online/settings/trash-and-restore/",
    "cue": "Settings → Tools → Trash",
    "app_url": "https://uk.zooza.app/#settings/trash",
-   "score": 20,
+   "score": 21,
    "oldest_days": 208,
-   "drift_days": 201,
+   "drift_days": 208,
    "flagged": false,
    "images": [
     {
      "file": "trash-and-restore-02.png",
      "alt": "Screenshot — trash and restore",
-     "age_days": 208,
-     "added": "2026-04-12"
-    },
-    {
-     "file": "trash-and-restore-01.png",
-     "alt": "Settings → Tools → Trash: deleted sessions with Restore buttons",
      "age_days": 208,
      "added": "2026-04-12"
     },
@@ -6756,6 +6682,12 @@
      "alt": "Bulk edit panel on Scheduled payments overview showing Cancel payment option",
      "age_days": 162,
      "added": "2026-05-28"
+    },
+    {
+     "file": "trash-and-restore-01.png",
+     "alt": "Settings → Tools → Trash: deleted sessions with Restore buttons",
+     "age_days": 208,
+     "added": "2026-04-12"
     }
    ]
   },
@@ -6912,6 +6844,62 @@
    ]
   },
   {
+   "file": "invoice-number-series.md",
+   "path": "content/setup/invoice-number-series.md",
+   "area": "Payments",
+   "url": "https://help.zooza.online/payments/invoice-number-series/",
+   "cue": "",
+   "app_url": "",
+   "score": 20,
+   "oldest_days": 3,
+   "drift_days": 0,
+   "flagged": true,
+   "images": [
+    {
+     "file": "invoice-number-series-07.png",
+     "alt": "Invoicing card in programme settings showing Invoice number series: Language courses and a Manage series link",
+     "age_days": 3,
+     "added": "2026-11-03"
+    },
+    {
+     "file": "invoice-number-series-06.png",
+     "alt": "Invoice detail showing the Invoice number series field set to Summer camps",
+     "age_days": 3,
+     "added": "2026-11-03"
+    },
+    {
+     "file": "invoice-number-series-05.png",
+     "alt": "Invoice list where invoices T2026-001 to T2026-004 show the series Summer camps and 1231 shows Adult classes",
+     "age_days": 3,
+     "added": "2026-11-03"
+    },
+    {
+     "file": "invoice-number-series-04.png",
+     "alt": "Edit series form with a warning that some classes of an assigned programme are invoiced through another invoice profile",
+     "age_days": 3,
+     "added": "2026-11-03"
+    },
+    {
+     "file": "invoice-number-series-03.png",
+     "alt": "Bottom of the series form: preview 21201, invoice label with a course-name tag, and two programmes assigned",
+     "age_days": 3,
+     "added": "2026-11-03"
+    },
+    {
+     "file": "invoice-number-series-02.png",
+     "alt": "Add series form with name Holiday club, series code 2120, the series-and-number template, and counter width 0",
+     "age_days": 3,
+     "added": "2026-11-03"
+    },
+    {
+     "file": "invoice-number-series-01.png",
+     "alt": "Invoice number series card on an invoice profile, showing the default series and four extra series with their number formats, assignments and invoice labels",
+     "age_days": 3,
+     "added": "2026-11-03"
+    }
+   ]
+  },
+  {
    "file": "invoice-profiles-and-bank-accounts.md",
    "path": "content/setup/invoice-profiles-and-bank-accounts.md",
    "area": "Payments",
@@ -6924,12 +6912,6 @@
    "flagged": false,
    "images": [
     {
-     "file": "invoice-profiles-list.png",
-     "alt": "Invoice profiles list showing two legal entities with the default profile badge",
-     "age_days": 107,
-     "added": "2026-07-22"
-    },
-    {
      "file": "invoice-profile-bank-accounts-default.png",
      "alt": "Bank accounts card showing two accounts with the default badge on one of them",
      "age_days": 107,
@@ -6938,6 +6920,12 @@
     {
      "file": "invoice-profile-bank-accounts-card.png",
      "alt": "Bank accounts card on an invoice profile with the account fields and QR code preview open",
+     "age_days": 107,
+     "added": "2026-07-22"
+    },
+    {
+     "file": "invoice-profiles-list.png",
+     "alt": "Invoice profiles list showing two legal entities with the default profile badge",
      "age_days": 107,
      "added": "2026-07-22"
     }
@@ -7180,12 +7168,6 @@
      "added": "2026-04-12"
     },
     {
-     "file": "matko-replacement-diagnostic-01.png",
-     "alt": "MATKO empty form — Credit ID and Session ID inputs with Run diagnostic button",
-     "age_days": 208,
-     "added": "2026-04-12"
-    },
-    {
      "file": "matko-full-result-example.png",
      "alt": "MATKO settings context panel showing programme configuration values used in the diagnostic",
      "age_days": 208,
@@ -7196,26 +7178,12 @@
      "alt": "MATKO full diagnostic result — 7 tiers with individual pass/fail checks and a failing capacity check highlighted in red",
      "age_days": 208,
      "added": "2026-04-12"
-    }
-   ]
-  },
-  {
-   "file": "shared-sessions.md",
-   "path": "content/guides/shared-sessions.md",
-   "area": "Classes",
-   "url": "https://help.zooza.online/classes/shared-sessions/",
-   "cue": "",
-   "app_url": "",
-   "score": 18,
-   "oldest_days": 82,
-   "drift_days": 42,
-   "flagged": false,
-   "images": [
+    },
     {
-     "file": "shared-sessions-01.png",
-     "alt": "Shared sessions set with its name, class picker grouped by programme, and match conditions",
-     "age_days": 82,
-     "added": "2026-08-16"
+     "file": "matko-replacement-diagnostic-01.png",
+     "alt": "MATKO empty form — Credit ID and Session ID inputs with Run diagnostic button",
+     "age_days": 208,
+     "added": "2026-04-12"
     }
    ]
   },
@@ -8682,47 +8650,15 @@
    ]
   },
   {
-   "file": "custom-contact-fields.md",
-   "path": "content/setup/custom-contact-fields.md",
-   "area": "Settings",
-   "url": "https://help.zooza.online/settings/custom-contact-fields/",
-   "cue": "",
-   "app_url": "",
-   "score": 2,
-   "oldest_days": 50,
-   "drift_days": 2,
-   "flagged": false,
-   "images": [
-    {
-     "file": "custom-contact-fields-options-01.png",
-     "alt": "The New custom contact field dialog with the type Multiple choice and two options, each with a Value and a Label and a Delete button",
-     "age_days": 50,
-     "added": "2026-09-17"
-    },
-    {
-     "file": "custom-contact-fields-new-01.png",
-     "alt": "The New custom contact field dialog with Label, Key and Type fields, and the hint that the key and type cannot be changed later",
-     "age_days": 50,
-     "added": "2026-09-17"
-    },
-    {
-     "file": "custom-contact-fields-empty-01.png",
-     "alt": "The Custom contact fields screen with no fields yet, explaining that custom fields are your own questions for people who enquire",
-     "age_days": 50,
-     "added": "2026-09-17"
-    }
-   ]
-  },
-  {
    "file": "contact-form-setup.md",
    "path": "content/setup/contact-form-setup.md",
    "area": "Settings",
    "url": "https://help.zooza.online/settings/contact-form-setup/",
    "cue": "Communication → Templates",
    "app_url": "https://uk.zooza.app/#communication/templates",
-   "score": 2,
+   "score": 5,
    "oldest_days": 50,
-   "drift_days": 2,
+   "drift_days": 50,
    "flagged": false,
    "images": [
     {
@@ -8758,6 +8694,70 @@
     {
      "file": "contact-form-editor-after-submit-01.png",
      "alt": "The After submit card with Go to a web page selected and a thank-you page address entered",
+     "age_days": 50,
+     "added": "2026-09-17"
+    }
+   ]
+  },
+  {
+   "file": "notifications-center.md",
+   "path": "content/guides/notifications-center.md",
+   "area": "Settings",
+   "url": "https://help.zooza.online/settings/notifications-center/",
+   "cue": "Settings → Other → Notification center",
+   "app_url": "https://uk.zooza.app/#settings/notifications",
+   "score": 2,
+   "oldest_days": 268,
+   "drift_days": 220,
+   "flagged": false,
+   "images": [
+    {
+     "file": "notifications-center-04.png",
+     "alt": "The notification type dropdown open on the Notifications center screen, listing every event from New booking down to Class full notification, including New email reply from client",
+     "age_days": 54,
+     "added": "2026-09-13"
+    },
+    {
+     "file": "notifications-center-03.png",
+     "alt": "The new-notification form: notification type and the email address to send it to",
+     "age_days": 268,
+     "added": "2026-02-11"
+    },
+    {
+     "file": "notifications-center-02.png",
+     "alt": "Settings with Notifications selected and the Add new notification button",
+     "age_days": 268,
+     "added": "2026-02-11"
+    }
+   ]
+  },
+  {
+   "file": "custom-contact-fields.md",
+   "path": "content/setup/custom-contact-fields.md",
+   "area": "Settings",
+   "url": "https://help.zooza.online/settings/custom-contact-fields/",
+   "cue": "",
+   "app_url": "",
+   "score": 2,
+   "oldest_days": 50,
+   "drift_days": 2,
+   "flagged": false,
+   "images": [
+    {
+     "file": "custom-contact-fields-options-01.png",
+     "alt": "The New custom contact field dialog with the type Multiple choice and two options, each with a Value and a Label and a Delete button",
+     "age_days": 50,
+     "added": "2026-09-17"
+    },
+    {
+     "file": "custom-contact-fields-new-01.png",
+     "alt": "The New custom contact field dialog with Label, Key and Type fields, and the hint that the key and type cannot be changed later",
+     "age_days": 50,
+     "added": "2026-09-17"
+    },
+    {
+     "file": "custom-contact-fields-empty-01.png",
+     "alt": "The Custom contact fields screen with no fields yet, explaining that custom fields are your own questions for people who enquire",
      "age_days": 50,
      "added": "2026-09-17"
     }
@@ -8856,6 +8856,64 @@
      "alt": "The contact form on a website: Name, Last name, Email, Phone and Note fields, the consent texts and a Send button",
      "age_days": 50,
      "added": "2026-09-17"
+    }
+   ]
+  },
+  {
+   "file": "automatic-payment-reminders.md",
+   "path": "content/guides/automatic-payment-reminders.md",
+   "area": "Communication",
+   "url": "https://help.zooza.online/communication/automatic-payment-reminders/",
+   "cue": "Settings → Billing & Payments → Payment settings",
+   "app_url": "https://uk.zooza.app/#settings/payment_settings",
+   "score": 2,
+   "oldest_days": 248,
+   "drift_days": 241,
+   "flagged": false,
+   "images": [
+    {
+     "file": "payment-reminders-modes-and-status.png",
+     "alt": "Payment reminders settings: the activation date, Set and activated versus Not activated, and the choice between sending before the programme starts or after the booking",
+     "age_days": 20,
+     "added": "2026-10-17"
+    },
+    {
+     "file": "payment-reminders-delete-unpaid.png",
+     "alt": "The lower half: delete an unpaid booking with three options, move bookings without a down payment to the waitlist, and the warning about assigned payments",
+     "age_days": 20,
+     "added": "2026-10-17"
+    },
+    {
+     "file": "automatic-payment-reminders-01.png",
+     "alt": "Settings → Billing & Payments → Payment settings: payment acceptance policy and scheduled-payment notifications",
+     "age_days": 248,
+     "added": "2026-03-03"
+    },
+    {
+     "file": "automatic-payment-reminders-07.png",
+     "alt": "Payment settings page: acceptance policy, scheduled-payment notifications and payment confirmations",
+     "age_days": 179,
+     "added": "2026-05-11"
+    }
+   ]
+  },
+  {
+   "file": "shared-sessions.md",
+   "path": "content/guides/shared-sessions.md",
+   "area": "Classes",
+   "url": "https://help.zooza.online/classes/shared-sessions/",
+   "cue": "",
+   "app_url": "",
+   "score": 0,
+   "oldest_days": 82,
+   "drift_days": 42,
+   "flagged": false,
+   "images": [
+    {
+     "file": "shared-sessions-01.png",
+     "alt": "Shared sessions set with its name, class picker grouped by programme, and match conditions",
+     "age_days": 82,
+     "added": "2026-08-16"
     }
    ]
   }

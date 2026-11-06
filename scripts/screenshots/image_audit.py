@@ -36,6 +36,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 CONTENT = os.path.join(ROOT, "content")
 OUT = os.path.join(ROOT, "build", "reports", "image-audit.md")
 JSON_OUT = os.path.join(ROOT, "build", "reports", "image-audit.json")
+LEDGER = os.path.join(ROOT, "build", "reports", "image-verified.json")
 SIBLINGS = [("api-v1", os.path.join(ROOT, "..", "api-v1")),
             ("app", os.path.join(ROOT, "..", "app")),
             ("widgets-v1", os.path.join(ROOT, "..", "widgets-v1"))]
@@ -176,6 +177,23 @@ def best_screen(text, screens, region="uk"):
     return best["menu"], best.get("url_template", "").replace("{region}", region)
 
 
+def verified():
+    """image -> when it was last checked against the live app, and what happened.
+
+    Age is a guess that a picture has drifted. Once somebody has actually
+    recaptured it and compared, that guess is settled and should stop driving
+    the ranking: on 2026-11-06, 30 of 38 Settings images came back byte-near
+    identical, and without this they would top the list again next week.
+    """
+    if not os.path.exists(LEDGER):
+        return {}
+    try:
+        with open(LEDGER, encoding="utf-8") as fh:
+            return json.load(fh)
+    except (ValueError, OSError):
+        return {}
+
+
 def articles():
     """Every published article -> (path, product_area, last_converted, [images])."""
     out = []
@@ -214,6 +232,7 @@ def main():
     args = ap.parse_args()
 
     first = image_first_seen()
+    checked = verified()
     hot = churning_areas(recent_spec_words(args.churn_days))
     today = dt.date.today()
 
@@ -252,6 +271,13 @@ def main():
             # Score: age matters, an article rewritten past its picture matters more,
             # a churning area matters most because we KNOW the screen moved.
             score = age / 30.0 + max(drift, 0) / 15.0 + (12 if area in hot else 0)
+            seen = checked.get(img)
+            if seen:
+                # Measured, not guessed. An image confirmed unchanged drops to the
+                # floor; one we deliberately kept drops too, with its reason on
+                # record so nobody re-opens the decision by accident.
+                since = (today - dt.date.fromisoformat(seen["date"])).days
+                score = min(score, since / 30.0)
             if needs == "true":
                 score += 8
                 flagged += 1

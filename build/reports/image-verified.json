@@ -1,0 +1,192 @@
+{
+ "account-info-logo-url.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "additional-sessions-02.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "automatic-payment-reminders-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "automatic-payment-reminders-07.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "billing-periods-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "contact-form-editor-after-submit-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "contact-form-editor-consents-tracking-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "contact-form-editor-full-01.png": {
+  "date": "2026-11-06",
+  "result": "replaced",
+  "why": "recaptured from the live account"
+ },
+ "contact-form-editor-handling-labels-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "creating-a-location-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "custom-contact-fields-empty-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "custom-contact-fields-new-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "discount-code-07.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "holiday-settings-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "holiday-settings-02.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "holiday-settings-custom-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "inbound-setup-current-setup.png": {
+  "date": "2026-11-06",
+  "result": "replaced",
+  "why": "recaptured from the live account"
+ },
+ "invoice-profiles-list.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "lecturer-substitution-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "matko-replacement-diagnostic-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "notifications-center-02.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "notifications-center-03.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "payment-collection-setup.png": {
+  "date": "2026-11-06",
+  "result": "replaced",
+  "why": "recaptured from the live account"
+ },
+ "payment-pairing-04.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "payment-templates-creation-09.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "payment-templates-creation-11.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "payment-templates-creation-13.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "setting-gtc-gdpr-consents-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "setting-gtc-gdpr-consents-02.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "settings-billing-periods.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "settings-general-menu.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "settings-general.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "shared-sessions-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "trash-and-restore-01.png": {
+  "date": "2026-11-06",
+  "result": "kept",
+  "why": "new capture shows an empty Trash; the old one teaches the feature"
+ },
+ "user-roles-02.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "user-roles-03.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "user-roles-21.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ },
+ "zooza-sites-05.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "recaptured and compared; content area identical"
+ }
+}

@@ -1,6 +1,6 @@
 # Screenshot audit — 2026-11-06
 
-1041 images on 186 published articles, ranked by how likely
+1048 images on 187 published articles, ranked by how likely
 they are to be out of date. A high score is where to look first, not proof.
 
 **The three signals.** How old the picture is; how long the article went on being
@@ -11,7 +11,7 @@ Busiest areas in the last 120 days of shipped specs: **Payments** (119), **Progr
 The number is how often that area's vocabulary appears in spec filenames — a
 rough proxy for 'this screen moved recently', not a count of changes.
 
-260 image(s) are on articles already marked `needs_screenshot_replacement: true`, and are pushed up.
+266 image(s) are on articles already marked `needs_screenshot_replacement: true`, and are pushed up.
 
 ## Shoot list, by article
 
@@ -20,8 +20,8 @@ open the screen beside it, and replace what no longer matches.
 
 | # | Help page | Screen to open | Images | Oldest | Score |
 |---:|---|---|---:|---:|---:|
-| 1 | [payment-templates-creation](https://help.zooza.online/payments/payment-templates-creation/) | [Settings → Billing & Payments → Payment schedule templates](https://uk.zooza.app/#settings/payment_schedule_templates) | 30 | 8 mo | 46 |
-| 2 | [billing-and-invoicing](https://help.zooza.online/payments/billing-and-invoicing/) | [Settings → Billing & Payments → Invoice profiles](https://uk.zooza.app/#settings/invoice_profiles) | 9 | 8 mo | 45 |
+| 1 | [payment-templates-creation](https://help.zooza.online/payments/payment-templates-creation/) | [Settings → Billing & Payments → Payment schedule templates](https://uk.zooza.app/#settings/payment_schedule_templates) | 30 | 8 mo | 47 |
+| 2 | [billing-and-invoicing](https://help.zooza.online/payments/billing-and-invoicing/) | [Settings → Billing & Payments → Invoice profiles](https://uk.zooza.app/#settings/invoice_profiles) | 8 | 8 mo | 46 |
 | 3 | [linked-classes](https://help.zooza.online/programmes/linked-classes/) | _not mapped_ | 3 | 8 mo | 44 |
 | 4 | [blocks-creation](https://help.zooza.online/classes/blocks-creation/) | _not mapped_ | 13 | 8 mo | 44 |
 | 5 | [trials-daily-business](https://help.zooza.online/programmes/trials-daily-business/) | [Activities → Programmes → programme → Settings → Trial](https://uk.zooza.app/#courses/150/settings?edit=trial) | 7 | 8 mo | 44 |
@@ -69,8 +69,8 @@ open the screen beside it, and replace what no longer matches.
 | 47 | [creating-a-class](https://help.zooza.online/classes/creating-a-class/) | _not mapped_ | 14 | 8 mo | 34 |
 | 48 | [publish-widgets](https://help.zooza.online/widgets/publish-widgets/) | [Settings → General → Contact forms](https://uk.zooza.app/#settings/contact_forms) | 3 | 8 mo | 34 |
 | 49 | [cancellation-limit-settings](https://help.zooza.online/programmes/cancellation-limit-settings/) | [Settings → General → General](https://uk.zooza.app/#settings/general) | 1 | 8 mo | 34 |
-| 50 | [copy-programme-and-class](https://help.zooza.online/programmes/copy-programme-and-class/) | _not mapped_ | 7 | 8 mo | 34 |
-| 51 | [payments-and-billing-faq](https://help.zooza.online/payments/payments-and-billing-faq/) | [Settings → Billing & Payments → Payment settings](https://uk.zooza.app/#settings/payment_settings) | 3 | 7 mo | 33 |
+| 50 | [payments-and-billing-faq](https://help.zooza.online/payments/payments-and-billing-faq/) | [Settings → Billing & Payments → Payment settings](https://uk.zooza.app/#settings/payment_settings) | 4 | 7 mo | 34 |
+| 51 | [copy-programme-and-class](https://help.zooza.online/programmes/copy-programme-and-class/) | _not mapped_ | 7 | 8 mo | 34 |
 | 52 | [stripe-payments-faq](https://help.zooza.online/payments/stripe-payments-faq/) | _not mapped_ | 1 | 7 mo | 33 |
 | 53 | [customizing-widgets](https://help.zooza.online/widgets/customizing-widgets/) | [Team & Settings → Publish](https://uk.zooza.app/#widgets) | 19 | 8 mo | 33 |
 | 54 | [entry-pass-client-view](https://help.zooza.online/orders/entry-pass-client-view/) | _not mapped_ | 10 | 8 mo | 33 |
@@ -78,53 +78,49 @@ open the screen beside it, and replace what no longer matches.
 | 56 | [reports-dashboard](https://help.zooza.online/settings/reports-dashboard/) | _not mapped_ | 5 | 8 mo | 33 |
 | 57 | [oblio-invoices](https://help.zooza.online/payments/oblio-invoices/) | [Settings → Billing & Payments → Billing periods](https://uk.zooza.app/#settings/billing_periods) | 1 | 7 mo | 33 |
 | 58 | [fakturoid-invoices](https://help.zooza.online/payments/fakturoid-invoices/) | [Settings → Billing & Payments → Billing periods](https://uk.zooza.app/#settings/billing_periods) | 1 | 7 mo | 33 |
-| 59 | [edit-sessions-in-programmes](https://help.zooza.online/classes/edit-sessions-in-programmes/) | _not mapped_ | 6 | 8 mo | 32 |
-| 60 | [session-payment-adjustments](https://help.zooza.online/payments/session-payment-adjustments/) | _not mapped_ | 6 | 7 mo | 32 |
+| 59 | [inbound-payments-setup](https://help.zooza.online/payments/inbound-payments-setup/) | [Settings → Billing & Payments → Payment collection setup](https://uk.zooza.app/#settings/payment_collection) | 9 | 6 mo | 33 |
+| 60 | [edit-sessions-in-programmes](https://help.zooza.online/classes/edit-sessions-in-programmes/) | _not mapped_ | 6 | 8 mo | 32 |
 
 <details><summary>Every image, worst first</summary>
 
 | Score | Age | Area | Article | Image |
 |---:|---:|---|---|---|
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-35.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-34.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-33.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-32.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-30.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-29.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-27.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-26.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-25.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-24.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-23.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-22.jpg` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-20.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-19.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-18.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-17.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-16.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-15.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-14.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-13.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-11.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-10.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-09.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-08.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-06.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-04.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-03.png` |
-| 46 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-02.jpg` |
-| 45 | 8 mo | Payments | `billing-and-invoicing.md` | `billing-and-invoicing-13.png` |
-| 45 | 8 mo | Payments | `billing-and-invoicing.md` | `billing-and-invoicing-12.png` |
-| 45 | 8 mo | Payments | `billing-and-invoicing.md` | `billing-and-invoicing-11.png` |
-| 45 | 8 mo | Payments | `billing-and-invoicing.md` | `billing-and-invoicing-10.png` |
-| 45 | 8 mo | Payments | `billing-and-invoicing.md` | `billing-and-invoicing-03.png` |
-| 45 | 8 mo | Payments | `billing-and-invoicing.md` | `billing-and-invoicing-02.png` |
-| 45 | 8 mo | Payments | `billing-and-invoicing.md` | `billing-and-invoicing-01.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-35.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-34.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-33.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-32.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-30.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-29.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-27.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-26.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-25.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-24.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-23.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-22.jpg` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-20.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-19.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-18.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-17.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-16.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-15.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-14.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-10.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-08.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-06.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-04.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-03.png` |
+| 47 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-02.jpg` |
+| 46 | 8 mo | Payments | `billing-and-invoicing.md` | `billing-and-invoicing-13.png` |
+| 46 | 8 mo | Payments | `billing-and-invoicing.md` | `billing-and-invoicing-12.png` |
+| 46 | 8 mo | Payments | `billing-and-invoicing.md` | `billing-and-invoicing-11.png` |
+| 46 | 8 mo | Payments | `billing-and-invoicing.md` | `billing-and-invoicing-10.png` |
+| 46 | 8 mo | Payments | `billing-and-invoicing.md` | `billing-and-invoicing-03.png` |
+| 46 | 8 mo | Payments | `billing-and-invoicing.md` | `billing-and-invoicing-02.png` |
+| 45 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-02.png` |
+| 45 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-01.png` |
 | 44 | 8 mo | Programmes | `linked-classes.md` | `group-connection-09.png` |
 | 44 | 8 mo | Programmes | `linked-classes.md` | `group-connection-06.png` |
 | 44 | 8 mo | Programmes | `linked-classes.md` | `group-connection-04.png` |
-| 44 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-02.png` |
-| 44 | 8 mo | Payments | `payment-templates-creation.md` | `payment-templates-creation-01.png` |
 | 44 | 8 mo | Classes | `blocks-creation.md` | `blocks-creation-15.png` |
 | 44 | 8 mo | Classes | `blocks-creation.md` | `blocks-creation-13.png` |
 | 44 | 8 mo | Classes | `blocks-creation.md` | `blocks-creation-12.png` |
@@ -163,13 +159,13 @@ open the screen beside it, and replace what no longer matches.
 | 43 | 8 mo | Payments | `szamlazz-invoices.md` | `szamlazz-invoices-05.png` |
 | 43 | 8 mo | Payments | `szamlazz-invoices.md` | `szamlazz-invoices-04.png` |
 | 43 | 8 mo | Payments | `szamlazz-invoices.md` | `szamlazz-invoices-03.png` |
+| 43 | 7 mo | Payments | `billing-and-invoicing.md` | `billing-and-invoicing-14.png` |
 | 42 | 8 mo | Payments | `csv-payment-import.md` | `csv-payment-import-05.png` |
 | 42 | 8 mo | Payments | `csv-payment-import.md` | `csv-payment-import-04.png` |
 | 42 | 8 mo | Payments | `csv-payment-import.md` | `csv-payment-import-03.png` |
 | 42 | 8 mo | Payments | `csv-payment-import.md` | `csv-payment-import-02.png` |
 | 42 | 8 mo | Payments | `csv-payment-import.md` | `csv-payment-import-01.png` |
 | 42 | 8 mo | Payments | `automatic-payment-reminders-detailed.md` | `automatic-payment-reminders-detailed-01.png` |
-| 41 | 7 mo | Payments | `billing-and-invoicing.md` | `billing-and-invoicing-14.png` |
 | 40 | 7 mo | Programmes | `archive-or-delete-programme.md` | `archive-or-delete-programme-04.png` |
 | 40 | 7 mo | Programmes | `archive-or-delete-programme.md` | `archive-or-delete-programme-03.png` |
 | 40 | 7 mo | Programmes | `archive-or-delete-programme.md` | `archive-or-delete-programme-02.png` |
@@ -340,7 +336,6 @@ open the screen beside it, and replace what no longer matches.
 | 36 | 8 mo | Payments | `billing-periods.md` | `billing-periods-04.png` |
 | 36 | 8 mo | Payments | `billing-periods.md` | `billing-periods-03.png` |
 | 36 | 8 mo | Payments | `billing-periods.md` | `billing-periods-02.png` |
-| 36 | 8 mo | Payments | `billing-periods.md` | `billing-periods-01.png` |
 | 36 | 8 mo | Bookings | `types-of-bookings.md` | `types-of-registrations-02.png` |
 | 36 | 8 mo | Programmes | `programme-settings.md` | `course-settings-16.png` |
 | 36 | 8 mo | Programmes | `programme-settings.md` | `course-settings-14.png` |
@@ -385,5 +380,16 @@ open the screen beside it, and replace what no longer matches.
 | 35 | 8 mo | Payments | `smartbill-invoices.md` | `smartbill-invoices-04.png` |
 | 35 | 8 mo | Payments | `smartbill-invoices.md` | `smartbill-invoices-03.png` |
 | 35 | 8 mo | Payments | `smartbill-invoices.md` | `smartbill-invoices-02.png` |
+| 35 | 8 mo | Payments | `abra-flexi-invoices.md` | `abra-flexi-invoices-08.png` |
+| 35 | 8 mo | Payments | `abra-flexi-invoices.md` | `abra-flexi-invoices-05.png` |
+| 35 | 8 mo | Payments | `abra-flexi-invoices.md` | `abra-flexi-invoices-03.png` |
+| 34 | 8 mo | Classes | `creating-a-class.md` | `creating-a-class-14.png` |
+| 34 | 8 mo | Classes | `creating-a-class.md` | `creating-a-class-13.png` |
 
 </details>
+
+## Images nothing links to
+
+1 file(s) in `assets/images/` are referenced by no article at all — published, draft or archived. Usually the previous version of a picture that was replaced.
+
+- `billing-and-invoicing-01.png`
