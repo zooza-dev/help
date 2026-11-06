@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0086_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: "2026-10-24"
+last_converted: "2026-11-06"
 related_articles: ["price-and-payment-setup","membership-fee-setup","automatic-payment-reminders","session-payment-adjustments","billable-sessions","payments-and-billing-faq"]
 ---
 <!-- REVIEW: add all types of prepaid payment frequencies -->
@@ -126,9 +126,11 @@ Use it for a multi-day discount: Tuesday alone at one price, Tuesday plus Saturd
 
 In the payment settings, you can edit individual templates, set their visibility to clients/instructors or delete a template. You can also quickly and easily activate the template on the programmes of your choice. To change and modify the template or activate it on the programme, please follow these steps:
 
-- In the list of payment templates, click the pen icon next to the template you want to edit.
+- Go to **Settings → Billing & Payments → Payment schedule templates** and click **Edit** on the template you want to change.
 
-![Payment schedule templates list with an Edit button per template](../../assets/images/payment-templates-creation-09.png)
+![The Payment schedule templates list: each template with its billing day and who it is visible to, and an Edit button](../../assets/images/payment-templates-creation-09.png)
+
+Each row shows the template's name and type, when it bills — *Payment on the 1. of the month*, or *Scheduled payment at the time of the next anniversary* — and **Visible to**, with anyone it is hidden from struck through.
 
 - In template editing you have the option to set the visibility of the template, i.e. what class of people will be able to use this template – Clients, Instructors or both.1. Clients – you choose the option to have the template visible to clients directly when they register on your site. 2. Instructors – visibility for instructors means that the instructor will also be able to assign bookings to a given template
 

@@ -74,7 +74,7 @@ A few consequences worth knowing:
    | `Next number` | The `{N}` value the next invoice in this series gets. Set it when you continue a series started elsewhere. |
    | `Invoice label` | Replaces the item description on invoices in this series. Leave it empty to keep the profile's default description. |
 
-   ![Add series form with name Holiday club, series code 2120, template {SER}{N} and counter width 0](../../assets/images/invoice-number-series-02.png)
+   ![Add series form with name Holiday club, series code 2120, the series-and-number template, and counter width 0](../../assets/images/invoice-number-series-02.png)
 
 4. Check **Will produce** — it shows the exact number the next invoice will get.
 5. Choose the **Programmes**, **Billing periods** and **Products** this series applies to. You can pick several of each.
