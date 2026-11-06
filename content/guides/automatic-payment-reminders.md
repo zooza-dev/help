@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0003_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-30"
+last_converted: "2026-11-06"
 related_articles: ["automatic-payment-reminders-detailed","payments-and-billing-faq","price-and-payment-setup","auto-cancel-unpaid-registrations"]
 ---
 
@@ -132,12 +132,45 @@ So "can I send a reminder 7 days *after* the course starts?" is really two quest
   what you actually want — it chases each person on their own clock rather than
   everybody at once.
 
-> **There are two reminders, not three.** A third reminder does not exist. It has been
-> asked for and is on the roadmap, with a caveat worth taking seriously: a client who has
-> ignored two emails rarely reads the third, and open rates fall with each one. What
-> tends to work better is stopping the service — if an instructor can see an unpaid
-> booking, the session arguably should not be taught — or reaching people on
-> [WhatsApp](../setup/whatsapp-integration.md), where an unpaid-booking nudge is actually read.
+### There is now a third reminder
+
+Added in November 2026. **Third reminder** sits under the first and second in the same
+**Payment reminders settings** card, in both timing modes. Leave it at **0** or empty and
+it is off, which is how every existing programme starts.
+
+The three have to stay in order, and Zooza enforces it as you type:
+
+| Mode | Order required |
+|---|---|
+| **Before the start of the programme** | The numbers count **down**: the first reminder is the largest, the third the smallest. They are days *before* the start |
+| **After the booking** | The numbers count **up**: the first reminder is the smallest, the third the largest. They are days *after* booking |
+
+The third reminder has its own system email template, **Third reminder**, listed beside
+the first and second under **Communication → Templates**. Like the other two it is
+read-only.
+
+> **Worth thinking about before you switch it on.** A client who has ignored two emails
+> rarely reads the third, and open rates fall with each one. What often works better is
+> stopping the service — if an instructor can see an unpaid booking, the session arguably
+> should not be taught — or reaching people on
+> [WhatsApp](../setup/whatsapp-integration.md), where an unpaid-booking nudge is actually
+> read.
+
+### There is no longer a ceiling on how early a reminder can go out
+
+If you set a long lead time — 40 days before the start, or 360 — and nothing was ever
+sent, that was a real limit, not your setup. Reminders stopped working somewhere above
+**35 days** and nothing said so, in the settings or here.
+
+That ceiling was removed in the November 2026 rebuild. Long lead times now fire as
+configured, which matters for trips and camps sold months ahead.
+
+Two other things that rebuild settled, and which explain timing questions:
+
+- **Reminders go out at 09:00** on the reminder's day — not at the session's time, and not
+  overnight.
+- **A reminder missed because of an outage is sent at most one day late.** After that it is
+  skipped rather than arriving as a surprise days later.
 
 ### Deleting unpaid bookings from the same screen
 
@@ -152,6 +185,19 @@ Further down the same panel is a separate decision: whether an unpaid booking sh
 | **Without down payment** | Only bookings whose down payment is unpaid. |
 
 **Move bookings without a down payment to the waitlist** is the gentler alternative — the place is freed but the person keeps their position rather than disappearing.
+
+Once you pick anything other than **Do not delete unpaid bookings**, a second choice
+appears: whether the rule should **delete** the booking or **cancel** it.
+
+| Outcome | What you are left with |
+|---|---|
+| **Delete** | The booking is gone, and so is its history. |
+| **Cancel** | The booking stays, cancelled, carrying an automatic reason of *unpaid*. |
+
+**Cancel is the one to pick if you ever need to explain what happened.** A cancelled
+booking still shows in the client's record and in the cancellation reporting; a deleted
+one leaves nothing to point at. It was added in November 2026, so a rule you configured
+before then is still set to delete.
 
 > **Read this before switching deletion on.** Only a booking with a *payment assigned to it* counts as paid. If you reconcile bank transfers by hand, or import statements with any delay, a parent who has genuinely paid can still be deleted because the money has not been matched to their booking yet. In that situation leave it on **Do not delete unpaid bookings**.
 

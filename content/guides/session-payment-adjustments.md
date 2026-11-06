@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-13"
+last_converted: "2026-11-06"
 related_articles: ["payment-templates-creation","price-and-payment-setup","loyalty-sibling-discount","outstanding-amount"]
 ---
 
@@ -151,6 +151,21 @@ That single fact gives you both cases:
 
 If the instalment you need does not exist yet, either wait for it to be generated or
 add it with **Add scheduled payment**.
+
+### Moving the payment date works the same way
+
+The last instalment is not only how you change an amount going forward — it is also how
+you change **when** the money is taken.
+
+A client paying on the 1st who wants to pay on the 15th does not need a new plan. Change
+the due date on the **last** scheduled instalment to the 15th, and every instalment
+created after it falls on the 15th too.
+
+> **Do not re-apply the payment plan to achieve this.** Re-applying replaces everything
+> currently charged on the booking — the registration fee included — and schedules the new
+> plan in its place. That is where the surprise **Correction payment** and **Registration
+> fee correction** lines come from. Editing the last instalment changes the future and
+> leaves the past alone.
 
 ### If the instalment has already been paid
 

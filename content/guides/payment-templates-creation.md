@@ -110,6 +110,51 @@ Two ways to get the instalments you wanted:
 
 > Pick the second one only if the June sessions genuinely are not being paid for. If they are part of what the parent is buying, the first option is the honest one — the money is the same either way, but the booking then says so.
 
+### The other cause: the first session falls before the first billing period
+
+Same symptom, different mechanism, and this one has nothing to do with how many months
+contain sessions.
+
+A prepaid template billing on the **15th** divides the course into periods running from
+one 15th to the next. Each instalment pays for the lessons in its own period, in advance.
+So a course whose first lesson is on **7 November** has a paid session sitting *before*
+the first period even starts. Zooza will not leave a paid session uncovered, so it
+creates **one extra payment** for it — and eight instalments become nine.
+
+**To stop it happening on new bookings**, set the template so that:
+
+- the payment is created on the **1st** of the month,
+- it covers the **whole calendar month**,
+- it is **due in 15 days**.
+
+Every calendar month is then paid in advance on its own, from its first day. The lesson on
+7 November falls inside the November payment, no extra payment appears, and nothing needs
+touching by hand.
+
+**Bookings you have already corrected by hand are fine as they are.** If you set a custom
+date and a total that covers the whole course, leave them alone — with one warning below.
+
+#### "29 of 30 sessions covered" is not money going missing
+
+On a hand-adjusted plan you may see fewer covered sessions than the class has. It means
+only that the first lesson falls before the first instalment. Attendance still holds every
+session, and the total you set still pays for all of them.
+
+> **Do not click "Restore to …" on a plan you have adjusted by hand.** It recalculates the
+> amount down to the sessions the instalments cover — so a plan deliberately set to cover
+> 30 sessions gets rewritten to the 29 it technically spans, and the client is short a
+> lesson's worth of fee.
+
+### Changing a plan without deleting the booking
+
+A payment plan can be edited at any point while the booking is active, so a client who
+changes their mind about a 5-month or 8-month commitment does **not** need their booking
+deleted and re-made.
+
+Open the plan on the booking and turn on the **Show all plans** toggle. The dialog opens
+showing only some of the options; the toggle reveals the rest of the plans available for
+that programme. Pick one, enter the amount and the date from which it should recalculate,
+and Zooza works out the schedule from there.
 
 ## Block pricing — a different price per number of blocks
 

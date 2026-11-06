@@ -65,7 +65,7 @@
       "name": "How do I move a class to a different programme?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Open the class detail, go to Settings / Edit → Other settings, and change the programme from the dropdown. Save and refresh."
+        "text": "Open the class detail, go to Settings / Edit → Other settings, and change the programme from the dropdown — it is the last field on that card. Save and refresh.\n\nNothing is lost, and you do not need to touch the bookings. The existing bookings keep\ntheir sessions and their payment templates; only where the class sits in your programme\nlist changes. So a class that ended up under the wrong programme — the wrong commitment\nlength, say — is a two-minute fix, not a reason to delete bookings and ask parents to\nre-register."
       }
     },
     {

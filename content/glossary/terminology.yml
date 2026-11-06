@@ -6,7 +6,7 @@
 # ║  Edit there, then run: python3 scripts/sync_terminology.py      ║
 # ╚══════════════════════════════════════════════════════════════════╝
 #
-# Last synced: 2026-10-30
+# Last synced: 2026-11-06
 # Used by: scripts/normalize_terminology.py → build/terminology/dictionary.json
 #
 # Fields per term:
@@ -149,6 +149,16 @@ terms:
       Customers across all markets use 'hodina' (SK/CZ), 'lekcia' (SK), 'lekce' (CZ),
       'óra' (HU), 'lesson' (EN) to mean a single scheduled occurrence = Session in Zooza.
       Always translate these terms to 'Session' when answering or searching KB.
+      2026-11-06 (confirmed with the founder): "BLOCK CANCELLATIONS ON WEEKENDS AND
+      HOLIDAYS" (Settings - General - General, Settings for programmes) ALSO MOVES THE
+      SESSION NOTIFICATION, not only the cancellation deadline. With it on, the
+      notification for a Monday session goes out on the last working day before it —
+      Friday — and the same applies to any session following a holiday. This is the answer
+      to "we need the reminder for Monday sessions to arrive on Friday"; there is NO
+      per-day or per-programme notification setting to look for. The setting's name says
+      nothing about notifications, so neither the help nor the app reveals this. It is a
+      general setting: switching it on changes the cancellation deadline for everything
+      too, so both consequences have to be wanted.
     public: true
 
   # ──────────────────────────────────────────────
@@ -2181,6 +2191,27 @@ terms:
          links from the admin panel.
       IMPORTANT: Referral links are NOT set up manually per client — they exist automatically
       for every client once the Referral Program is activated.
+      2026-10-27 (shipped, default behaviour change for every company): THE SIBLING AND
+      RETURNING-CLIENT DISCOUNTS NOW COUNT ONLY EARLIER BOOKINGS THAT HAVE SOME PAYMENT ON
+      THEM. An unpaid first booking no longer makes the next child a second child — this
+      closed a loophole where a parent booked, did not pay, re-booked through the form, and
+      collected a sibling discount for the same child. Expect some bookings that previously
+      got a discount not to get one; that is the intent.
+      2026-10-27: SAME-CHILD DETECTION. Identity is now decided by a family-scoped matcher
+      (person id, then date of birth, then a diacritic- and diminutive-tolerant name match),
+      not by person id alone. "Martin", "Martinko" and "Maťko" are one child. Previously each
+      spelling created a new person row and earned a sibling discount. It is a match, not a
+      certainty — say so rather than promising it is exact.
+      2026-10-27: REQUIRES-LOGIN SWITCH, per programme. A company can grant the sibling and
+      returning-customer discounts only to customers who were logged in when booking. The
+      referral programme is deliberately excluded — it exists for acquisition, where the
+      person has no account yet.
+      The count is of DISTINCT CHILDREN, not of bookings: one child in an autumn class and a
+      winter class is one child and gets nothing. Children booked together in one booking are
+      numbered in the order they appear, so the second twin takes the 2nd-child rule. A free
+      newborn is NOT a sibling-discount case — the rule would charge the sibling percentage
+      instead of nothing; either do not register the baby or add them by hand at price 0.
+      Confirmed with the founder 2026-11-02.
       Loyalty discounts from copying registrations (new season) may not apply automatically
       if the booking history is not inherited by the copy.
     public: true
@@ -2269,15 +2300,6 @@ terms:
           tell a customer that approving refunds anybody — the gap between the email and
           the money is where the complaint comes from. Denying is final and cannot be
           reopened.
-    ai_notes: >
-      2026-10-30: clients can raise refund requests themselves when they cancel an
-      eligible session, if the company switches on Settings - General - Allow refund
-      requests (off by default). The request lands on the booking detail with Approve and
-      Deny; the approved amount is prefilled from the refund policy and capped. Statuses
-      are Pending, Approved, Denied; resolved ones stay under "Resolved refund requests".
-      Two email templates carry the decision: "Refund request - approved" and
-      "Refund request - denied", both with an optional admin note.
-    do_not_confuse_with:
       - term: "Cancellation fee"
         reason: >
           A refund returns money to the client. A cancellation fee is the amount
@@ -2301,6 +2323,107 @@ terms:
       manual payment to zero out the balance.
       After any refund, also reduce the outstanding debt on the booking if needed —
       the refund alone does not update the debt.
+      2026-10-30: clients can raise refund requests themselves when they cancel an
+      eligible session, if the company switches on Settings - General - Allow refund
+      requests (off by default). The request lands on the booking detail with Approve and
+      Deny; the approved amount is prefilled from the refund policy and capped. Statuses
+      are Pending, Approved, Denied; resolved ones stay under "Resolved refund requests".
+      Two email templates carry the decision: "Refund request - approved" and
+      "Refund request - denied", both with an optional admin note.
+      2026-11-06 (confirmed with the founder): A REFUND ISSUED IN THE STRIPE DASHBOARD IS
+      NEVER PASSED BACK TO ZOOZA. Zooza only knows about refunds made inside Zooza, so the
+      booking keeps showing the money as received and "Refunds issued 0.00". Never conclude
+      from that display that the refund failed. To record it: open the booking, Payments
+      tab, Online payments box, click the card payment itself (NOT the line in the Payments
+      list — that is where people look and give up), then Refund box - Refund payment;
+      Zooza reports the gateway refund as unavailable and offers an administrative refund
+      prefilled with the amount. Doing the refund inside Zooza in the first place makes the
+      gateway refund and the record one action.
+    public: true
+
+  - id: payment-reminder
+    canonical_en: "Payment reminder"
+    category: "payments"
+    definition: >
+      An automatic email chasing an unpaid scheduled payment. Zooza has two separate
+      mechanisms and conflating them is the usual source of wrong answers:
+      (1) SCHEDULED-PAYMENT NOTIFICATIONS, set once for the whole account under Settings -
+      Billing & Payments - Payment settings. Three of them: Upcoming payment (before the
+      debt is created), Payment created (when it is posted), Overdue payment (on or after
+      the due date). They have a global on/off toggle and a cooldown.
+      (2) PAYMENT REMINDER SCENARIOS, set per programme in Price and payment - Payment
+      reminders settings. First, second and (since November 2026) third reminder, each a
+      number of days, in one of two modes: counting back from the programme start, or
+      counting forward from each person's booking. The same card also decides what happens
+      to a booking that stays unpaid.
+    context:
+      admin: "Payment reminder"
+      client: "Payment request"
+    synonyms:
+      - "payment notification"
+      - "dunning email"
+      - "overdue notice"
+    translations:
+      sk: "Pripomienka k platbe / Upomienka"
+      cz: "Připomínka k platbě / Upomínka"
+      de: "Zahlungserinnerung"
+      hu: "Fizetési emlékeztető"
+      ro: "Memento de plată"
+    intent_keywords:
+      en: ["payment reminder", "third reminder", "chase unpaid", "overdue email",
+           "dunning", "remind client to pay", "send a reminder manually",
+           "reminder not sent", "reminder before course starts"]
+      sk: ["pripomienka k platbe", "upomienka", "upomínka", "výzva na úhradu",
+           "výzva na platbu", "tretia pripomienka", "neposlala sa pripomienka",
+           "pripomienka po začiatku kurzu", "ručne poslať pripomienku"]
+      cz: ["připomínka k platbě", "upomínka", "výzva k úhradě", "výzva k platbě",
+           "třetí připomínka", "neodeslala se připomínka"]
+      de: ["Zahlungserinnerung", "Mahnung", "dritte Erinnerung"]
+      ro: ["memento de plată", "notificare de plată", "al treilea memento"]
+    do_not_confuse_with:
+      - term: "Scheduled-payment notifications (account level)"
+        reason: >
+          Set once under Settings - Billing & Payments for the whole account, and switched
+          off there for everyone. The per-programme reminder scenarios are a different card
+          with different fields. An operator asking "where do I turn reminders off" has to
+          be pointed at the right one of the two, or they will turn off the wrong thing.
+      - term: "Invoice"
+        reason: >
+          A reminder prompts payment; an invoice records the charge. "Send them an invoice"
+          on an outstanding booking usually means "ask them to pay", which is a reminder
+          carrying the profile link, not a PDF. See invoice.
+    ai_notes: >
+      2026-11-04 (shipped, confirmed with the founder): A THIRD REMINDER NOW EXISTS. It is
+      in the same per-programme Payment reminders settings card, in both modes; 0 or empty
+      means off, which is how every existing programme starts. The three stay ordered and
+      the app enforces it as you type — counting DOWN in before-the-start mode, UP in
+      after-the-booking mode. It has its own read-only system email template, "Third
+      reminder", beside the first and second under Communication - Templates. Before this
+      date the correct answer was that only two existed; do not repeat that.
+      2026-11-04: THE UNDOCUMENTED ~35-DAY CEILING IS GONE. Reminders set further out than
+      about 35 days silently never fired (an 838-hour TIMEDIFF cap in the query; a 40-day
+      reminder was the reported case), and nothing said so in the settings or the help.
+      Long lead times now work — 40 days, 360 days — which matters for trips and camps sold
+      months ahead. If a company reports "we set 40 days and nothing was sent", this was
+      why; it was never their setup.
+      2026-11-04: reminders go out at 09:00 on the reminder's day, not at the session's
+      clock time and not overnight. A reminder missed through an outage is sent at most one
+      day late, then skipped.
+      SINCE MID-2026 THE REMINDERS FOLLOW THE BOOKING'S STATUS, NOT THE CALENDAR. While a
+      booking sits in Awaiting payment and the notification is on, it keeps being sent —
+      INCLUDING AFTER THE FIRST SESSION HAS BEEN TAUGHT. "Before the start of the
+      programme" names where the countdown starts, not a deadline after which reminders
+      stop. This is asked constantly as "can I send a reminder N days AFTER the course
+      starts"; the answer is that unpaid people are already chased, and for a per-person
+      clock the mode to use is "after the booking". Confirmed with the founder 2026-11-04.
+      2026-11-04: the unpaid-booking rule on the same card can now CANCEL the booking
+      instead of DELETING it. Cancel keeps the booking and stamps an automatic reason of
+      unpaid, so it still shows in the client's record and in cancellation reporting;
+      delete leaves nothing to point at. A rule configured before this date is still set to
+      delete. Only a booking with a payment ASSIGNED to it counts as paid, so a company
+      reconciling bank transfers by hand can delete a parent who genuinely paid.
+      Reminders only reach bookings created after the setting was activated; the card shows
+      the activation date, and existing debtors are not chased retroactively.
     public: true
 
   - id: cancellation-fee

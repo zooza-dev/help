@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: "legacy/0056_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-20"
+last_converted: "2026-11-06"
+related_articles: ["customizing-widgets", "booking-form-settings", "price-and-payment-setup", "booking-faq", "widget-embedding"]
 ---
 
 # Online registration
@@ -59,6 +60,44 @@ These settings let you control how long classes remain visible in your booking f
 Alert: Hiding the programme before it starts will disable the option to allow late booking in the Price and Payment tile.
 
 ![Alert: Hiding the programme before it starts will disable the option to allow late...](../../assets/images/online-registration-06.png)
+
+## How the class start and end dates are written
+
+Added in November 2026. In the same **Online booking** card you get **Start date format**
+and **End date format** — two independent controls over how the class's start and end read
+on your website.
+
+Each one offers:
+
+| Mode | What you get |
+|---|---|
+| **Default** | However Zooza writes it today. Clearing a control puts it back here |
+| **Style** | A ready-made style, from short to full |
+| **Custom** | You pick the parts: weekday, day, month, year, hour, minute |
+
+A 12-hour or 24-hour clock can be chosen in either mode, and each control shows a **live
+preview** as you set it. The preview is in your own admin language — your customers see
+the date in the language of the widget they are using.
+
+The format applies to the registration form, the client profile and the map.
+
+> **You cannot set the connecting words or separators.** Zooza uses the right ones for each
+> customer's language by itself, which is the point — a date you hand-punctuated in Slovak
+> would read wrongly in English.
+
+### Why the end time looked wrong on a camp
+
+A common report: the booking form shows the start time of the first session but the **end
+time of that first session** next to the last session's date, which reads as nonsense on a
+multi-day camp.
+
+That is because **the start and end come from the class definition, not from the sessions**
+— deliberately, since sessions get moved around and most of those moves should not change
+what the booking form advertises. On a camp where each day is a different length, no single
+end time can be right.
+
+The fix is to stop showing it. Set **End date format** to show the date only, or leave the
+time out altogether, and the form stops claiming an end time it cannot know.
 
 ## Class settings
 

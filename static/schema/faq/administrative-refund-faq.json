@@ -54,6 +54,14 @@
     },
     {
       "@type": "Question",
+      "name": "I refunded the payment in the Stripe dashboard — why does Zooza still show the money as received?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because Zooza never hears about it. Zooza only knows about refunds made inside Zooza.\nA refund you issue from the Stripe dashboard moves the money, but nothing is passed back,\nso the booking keeps showing the full amount received and Refunds issued: 0.00.\n\nRecord it in Zooza as well, and the booking will agree with your bank:\n\n1. Open the booking and go to the Payments tab.\n2. Scroll to the Online payments box and click the card payment itself.\n3. On the right you will see a Refund box. Click Refund payment.\n4. Zooza will tell you the gateway refund is not available — the money has already gone\n   back — and offer an administrative refund, pre-filled with the amount. Confirm it.\n\nIt is not on the payment line in the Payments list. The refund action lives on the\ncard payment in the Online payments box, which is why people look for it and conclude it\nis missing.\n\nDoing it the other way round is simpler: issue the refund from inside Zooza in the first\nplace, and the gateway refund and the record are the same action."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Can I issue a partial administrative refund?",
       "acceptedAnswer": {
         "@type": "Answer",

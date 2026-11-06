@@ -8,7 +8,7 @@ tags: ["glossary", "terminology", "definitions"]
 status: "published"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-30"
+last_converted: "2026-11-06"
 related_articles: ["getting-started-with-zooza", "settings-hub", "programme-settings"]
 ---
 
@@ -340,6 +340,15 @@ Money off — or onto — **one upcoming scheduled payment**. This is what **Cre
 > Also referred to as: *adjustment*, *event credit*
 
 > Not to be confused with: a **credit**, which is an entitlement to attend a session (a make-up, a prepaid credit, a voucher) — cancelling a session creates adjustments, never make-ups. Nor with a **refund**, which returns money already paid; a client who has paid in full gains nothing from an adjustment.
+
+### Payment reminder
+An automatic email chasing an unpaid scheduled payment. Zooza has **two separate mechanisms**, and knowing which one you are in saves a lot of confusion. The **scheduled-payment notifications** — *Upcoming payment*, *Payment created* and *Overdue payment* — are set once for the whole account under **Settings → Billing & Payments → Payment settings**. The **payment reminder scenarios** are set per programme in **Price and payment → Payment reminders settings**: a first, second and third reminder, each a number of days, counting either back from the programme start or forward from each person's own booking.
+
+> Also referred to as: *upomienka*, *payment request*, *overdue notice*
+
+> Not to be confused with: an **invoice**, which records a charge rather than asking for payment. "Send them an invoice" on an unpaid booking usually means "ask them to pay" — that is a reminder, not a PDF.
+
+> A reminder does not stop when the class starts. The reminders follow the booking's **status**, so somebody left in *Awaiting payment* keeps being chased after the first session has been taught. "Before the start of the programme" describes where the countdown begins, not a deadline.
 
 ### Price per session
 The price of **one** session, set on the programme and overridable on the class. It is not what the client owes: that is price per session × billable sessions, reduced pro rata if they joined after the start and aliquot calculation is on. The two numbers differ by the session count, so they are usually ten to twenty times apart.

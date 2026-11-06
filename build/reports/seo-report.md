@@ -1,14 +1,14 @@
 # SEO & AI Readiness Report
 
-**Generated:** 2026-10-24
+**Generated:** 2026-11-06
 
 ## Summary
 
-- **Total docs checked:** 275
+- **Total docs checked:** 278
 - **Docs with errors:** 0
-- **Docs with warnings only:** 58
+- **Docs with warnings only:** 61
 - **Total errors:** 0
-- **Total warnings:** 152
+- **Total warnings:** 155
 - **Overall:** PASS
 
 ## Checks performed
@@ -78,6 +78,9 @@
 
 ### `content/guides/bulk-email-send-tracking.md`
 - WARN: description missing from frontmatter (auto-extracted: `When you send an email to a large group of clients, Zooza processes it as a mess…`)
+
+### `content/guides/cancellation-reasons.md`
+- WARN: description too long (164 chars, max 160)
 
 ### `content/guides/capacity-and-extra-capacity.md`
 - WARN: description too long (163 chars, max 160)
@@ -191,6 +194,9 @@
 ### `content/guides/power-bi-data-description.md`
 - WARN: description missing from frontmatter (auto-extracted: `At the moment Zooza provides all kinds of static data about programmes, bookings…`)
 
+### `content/guides/programme-info-tab.md`
+- WARN: description too long (172 chars, max 160)
+
 ### `content/guides/scheduled-registration-cancellation.md`
 - WARN: description too long (177 chars, max 160)
 
@@ -280,6 +286,9 @@
 
 ### `content/setup/getting-started-with-zooza.md`
 - WARN: description too short (32 chars, min 50)
+
+### `content/setup/invoice-number-series.md`
+- WARN: description too long (199 chars, max 160)
 
 ### `content/setup/invoicing-overview.md`
 - WARN: description too long (161 chars, max 160)

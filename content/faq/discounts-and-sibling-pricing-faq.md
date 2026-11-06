@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-26"
-related_articles: ["loyalty-faq", "discount-types", "membership-fee-setup", "payments-and-billing-faq"]
+last_converted: "2026-11-06"
+related_articles: ["loyalty-faq", "loyalty-sibling-discount", "discount-types", "membership-fee-setup", "payments-and-billing-faq"]
 ---
 
 
@@ -65,8 +65,33 @@ This is the setting that decides what "second child" actually means, and it is w
 You can also limit the discount to **selected programmes** rather than all of them.
 
 > **Only registrations with Registered status count.** Waitlist and trial registrations are not included in the child count, so a family whose second child is still on the waiting list does not get the discount yet.
+>
+> **And since late October 2026, an earlier booking only counts once some money has arrived on it.** An unpaid first booking no longer makes the next child a second child. This closed a loophole where a parent who booked, did not pay, and then booked again through the form collected a sibling discount for the same child.
 
 Each tier must have a unique child number, and deleting the last rule switches the sibling discount off.
+
+> **The count is of distinct children, not of bookings.** One child enrolled in an autumn class and a winter class is still one child and gets nothing. Zooza now also recognises the same child under a different spelling — *Martin*, *Martinko* and *Maťko* are one child, not three. How that matching works, and the cases it still cannot catch, are in [Sibling discount](../guides/loyalty-sibling-discount.md).
+
+## A baby comes along free — can the sibling discount do that?
+
+No, and reaching for it will cost you money. A newborn added to a toddler class as a
+sibling gets the sibling *percentage*, not a free place, so a 50% rule charges you half
+the fee for a child who is meant to pay nothing.
+
+Two ways to handle it:
+
+- **Do not register the baby at all** — the simplest option if they do not need a place,
+  attendance or communications of their own.
+- **Add them by hand at a price of 0** if you do want them on the register.
+
+## Twins in one booking — which one gets the discount?
+
+Children booked together in a single booking are numbered in the order they appear, so the
+first twin pays full price and the second is the *2nd child* for the purposes of your
+rules.
+
+With **All scheduled payments** selected on the loyalty rule, that reduction then applies
+to every membership instalment, not only the first one.
 
 ## Can a client add a discount code after they have already booked?
 

@@ -11,10 +11,20 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-11-06"
+related_articles: ["role-selection-guide", "instructor-access-and-roles-faq", "add-instructors", "settings-hub", "king-of-a-group"]
 ---
 
 # Roles and Permissions FAQ
+
+## Where is the role map?
+
+In the app itself, and it is easy to walk past. Go to **Settings → General → Access** and
+start adding a team member — at the **bottom** of that screen is a collapsible **role map**
+you can open out. It lists the roles against what each one can reach.
+
+Use it when you are deciding between two roles for a real person. This page explains the
+roles; the map in the app is the one that matches the build you are actually running.
 
 ## What roles are available in Zooza and what can each do?
 

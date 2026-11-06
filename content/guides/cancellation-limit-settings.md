@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-27"
+last_converted: "2026-11-06"
 related_articles: ["make-up-sessions-faq", "trials-faq", "attendance-and-catchups-faq", "settings-hub"]
 ---
 
@@ -58,6 +58,20 @@ Use this to explain your cancellation policy or provide contact details for manu
 Enable **Block cancellations on weekends and holidays** to prevent clients from cancelling on weekends and public holidays. When enabled, the cancellation deadline for Monday sessions moves to **Friday at midnight** — giving clients a full working week to cancel without a weekend loophole.
 
 This applies to all holiday types: public holidays, school holidays, and [custom holidays](custom-holidays.md) your company has created. If a cancellation deadline falls on any of these, it moves to the preceding business day.
+
+### It also moves the notification
+
+The setting does more than its name says, and this is the part worth knowing: **the session
+notification moves with the deadline.** With it on, the notification for a Monday session
+goes out on the **last working day before it** — Friday — rather than over the weekend.
+
+That is the answer to "we need the reminder for Monday sessions to arrive on Friday". There
+is no per-day notification setting to find; this one setting does it, for Mondays and for
+any session following a holiday.
+
+> **It is a general setting, not a per-programme one.** Switching it on changes both the
+> cancellation deadline and the notification timing for everything, so decide on the
+> cancellation side of it too — the two come together.
 
 ## Make-up session time restrictions
 

@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-26"
+last_converted: "2026-11-06"
 ---
 
 # Attendance and Catch-up Classes FAQ
@@ -112,8 +112,23 @@ Check these common causes:
 1. The absence was not properly recorded — the child's attendance needs to be set to "Cancelled" for that session.
 2. There are no sessions with available capacity in a compatible class.
 3. The catch-up window may have expired based on your automation settings.
+4. **The booking itself is cancelled.** A cancelled booking is never offered make-ups, by design — somebody who has cancelled is not coming back. See below if you want to let them finish anyway.
+5. **They already have their own class on that session.** A make-up cannot be taken on a session the client is already enrolled in, which is why a slot you can see standing empty is not offered to them.
 
 As an admin, you can verify and trigger the catch-up option by toggling the attendance status (e.g., "Will attend" → "Cancelled" again).
+
+> **Do not move the booking out of Cancelled to work around this.** Cancelling is the
+> correct record of what happened, and reversing it to free up a make-up leaves you with a
+> booking that says the client is still attending.
+
+### Letting a cancelled client use up a session or two anyway
+
+A common and reasonable exception: somebody cancels mid-term and you agreed they could
+still come to the last couple of sessions they had paid for.
+
+Give them a **free session** rather than reinstating the booking. On their booking, open
+**Credits** and create a free session. They draw it down exactly as they would a make-up,
+and it works while the booking stays cancelled.
 
 ## What do the attendance numbers mean on the calendar?
 

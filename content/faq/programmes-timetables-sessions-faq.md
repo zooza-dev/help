@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-18"
+last_converted: "2026-11-06"
 related_articles: ["classes-list", "payments-and-billing-faq", "creating-a-class", "programme-settings"]
 ---
 
@@ -94,7 +94,13 @@ You can choose whether to send a notification to parents about the change.
 
 ## How do I move a class to a different programme?
 
-Open the class detail, go to **Settings / Edit → Other settings**, and change the programme from the dropdown. Save and refresh.
+Open the class detail, go to **Settings / Edit → Other settings**, and change the programme from the dropdown — it is the last field on that card. Save and refresh.
+
+**Nothing is lost, and you do not need to touch the bookings.** The existing bookings keep
+their sessions and their payment templates; only where the class sits in your programme
+list changes. So a class that ended up under the wrong programme — the wrong commitment
+length, say — is a two-minute fix, not a reason to delete bookings and ask parents to
+re-register.
 
 ## How do I copy a class?
 

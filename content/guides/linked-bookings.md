@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0030_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-30"
+last_converted: "2026-11-06"
 related_articles: ["loyalty-sibling-discount", "linked-classes", "booking-faq", "payments-and-billing-faq", "scheduled-registration-cancellation"]
 ---
 
@@ -65,6 +65,18 @@ The parent/client pays for both/multiple programmes only once using one variable
 
 ---
 
+## Can I merge two bookings into one?
+
+No — and you almost certainly want linking instead.
+
+A parent who books the same child into a Tuesday class and a Saturday class ends up with
+**two bookings**, because a booking is one child in one class. There is no way to fold
+them into a single booking, and trying to force it by deleting one loses that class.
+
+Link them instead. The two bookings stay as they are, with their own classes, sessions and
+attendance, but one of them carries the money: one payment, one variable symbol, one
+reminder. For the parent that is the thing they were asking for.
+
 ## Cancelling or deleting the main booking
 
 A main booking cannot simply be removed — the others would be left pointing at nothing.
@@ -86,6 +98,35 @@ moved anywhere, it says so plainly and leaves it where it is.
 
 You are shown all of this *before* anything is written, so you can see who else is
 affected and what money moves rather than finding out afterwards.
+
+> **Read the preview as charges and payments, not as one number.** Until early November
+> 2026 it showed only the *net* difference, which is how an admin cancelling one sibling
+> saw "−39 €" and did not realise that 153 € of charges and a real payment of 114 € were
+> about to move onto the other child. The preview now reports the charges and the payments
+> it moves as well as the net. If you have a screenshot from before that showing a small
+> number where a lot of money moved, that is the explanation.
+
+### Putting it back if the money moved and you did not mean it
+
+Choosing ***X* becomes the root booking** moves the cancelled booking's whole ledger onto
+X — the payments *and* the fees. That is the design: X now pays for what the cancelled
+booking owed. But it is easy to pick while thinking only about who holds the group
+together.
+
+To reverse it:
+
+1. Open the booking whose money moved away.
+2. In its linked-bookings section, use **Who pays** → **Let it pay for itself**.
+3. Then **Return transferred money**. You get a preview before confirming.
+
+If the actions are not offered, put the booking's status back to **Registered** first — a
+cancelled booking cannot take its money back while it is cancelled.
+
+**To avoid needing this at all:** when you cancel a main booking and the group should
+carry on under somebody else, choose to **leave the balance on this booking** rather than
+moving it. The group gets a new main booking and the money stays where it was. Before
+November 2026 the only way to keep the money in place was **Disband the link**, which is
+fine for two bookings and destructive for a group of three or more.
 
 > **Scheduling the cancellation for a future date does not delay this part.** The links
 > and the money change **the moment you schedule it** — only the status waits for the

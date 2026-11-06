@@ -6,6 +6,14 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "Where is the role map?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In the app itself, and it is easy to walk past. Go to Settings → General → Access and\nstart adding a team member — at the bottom of that screen is a collapsible role map\nyou can open out. It lists the roles against what each one can reach.\n\nUse it when you are deciding between two roles for a real person. This page explains the\nroles; the map in the app is the one that matches the build you are actually running."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What roles are available in Zooza and what can each do?",
       "acceptedAnswer": {
         "@type": "Answer",

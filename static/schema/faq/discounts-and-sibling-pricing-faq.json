@@ -25,7 +25,23 @@
       "name": "How do sibling discounts work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Use the built-in Sibling Discount. Go to Sales & Payments → Loyalty Programme → Sibling Discount, add at least one rule, and switch it on — it will not enable without a rule.\n\nEach rule is a tier:\n\nSo \"the second child at 50% off\" is one rule: from 2nd child, percentage, 50. Add another tier if the third child should get more.\n\n### How to count children\n\nThis is the setting that decides what \"second child\" actually means, and it is worth getting right:\n\n- Per programme — the count restarts in each programme. Two children in two different programmes are each a first child, and neither gets a discount.\n- Per billing period — children are counted together within a term.\n- Across all programmes — every child the family has with you counts, wherever they are booked.\n\nYou can also limit the discount to selected programmes rather than all of them.\n\nOnly registrations with Registered status count. Waitlist and trial registrations are not included in the child count, so a family whose second child is still on the waiting list does not get the discount yet.\n\nEach tier must have a unique child number, and deleting the last rule switches the sibling discount off."
+        "text": "Use the built-in Sibling Discount. Go to Sales & Payments → Loyalty Programme → Sibling Discount, add at least one rule, and switch it on — it will not enable without a rule.\n\nEach rule is a tier:\n\nSo \"the second child at 50% off\" is one rule: from 2nd child, percentage, 50. Add another tier if the third child should get more.\n\n### How to count children\n\nThis is the setting that decides what \"second child\" actually means, and it is worth getting right:\n\n- Per programme — the count restarts in each programme. Two children in two different programmes are each a first child, and neither gets a discount.\n- Per billing period — children are counted together within a term.\n- Across all programmes — every child the family has with you counts, wherever they are booked.\n\nYou can also limit the discount to selected programmes rather than all of them.\n\nOnly registrations with Registered status count. Waitlist and trial registrations are not included in the child count, so a family whose second child is still on the waiting list does not get the discount yet.\nAnd since late October 2026, an earlier booking only counts once some money has arrived on it. An unpaid first booking no longer makes the next child a second child. This closed a loophole where a parent who booked, did not pay, and then booked again through the form collected a sibling discount for the same child.\n\nEach tier must have a unique child number, and deleting the last rule switches the sibling discount off.\n\nThe count is of distinct children, not of bookings. One child enrolled in an autumn class and a winter class is still one child and gets nothing. Zooza now also recognises the same child under a different spelling — Martin, Martinko and Maťko are one child, not three. How that matching works, and the cases it still cannot catch, are in Sibling discount."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A baby comes along free — can the sibling discount do that?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, and reaching for it will cost you money. A newborn added to a toddler class as a\nsibling gets the sibling percentage, not a free place, so a 50% rule charges you half\nthe fee for a child who is meant to pay nothing.\n\nTwo ways to handle it:\n\n- Do not register the baby at all — the simplest option if they do not need a place,\n  attendance or communications of their own.\n- Add them by hand at a price of 0 if you do want them on the register."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Twins in one booking — which one gets the discount?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Children booked together in a single booking are numbered in the order they appear, so the\nfirst twin pays full price and the second is the 2nd child for the purposes of your\nrules.\n\nWith All scheduled payments selected on the loyalty rule, that reduction then applies\nto every membership instalment, not only the first one."
       }
     },
     {

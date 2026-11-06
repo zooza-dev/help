@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0078_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: "2026-10-10"
+last_converted: "2026-11-06"
 related_articles: ["publish-widgets", "deploying-zooza-on-website", "booking-form-settings", "contact-form-on-your-website", "contact-form-campaign-tracking"]
 ---
 
@@ -134,6 +134,26 @@ This form also offers various settings that you can customize to suit your needs
 
 ![Screenshot](../../assets/images/customizing-widgets-19.png)
 
+### Hide the payment QR code from the client profile
+
+Added in November 2026. Go to **Team & Settings → Publish → Widgets → Profile** and untick
+**Show QR code in payments tab**.
+
+It is set **per account**, so a network can switch it off only in the centres that need it.
+
+**Who wants this:** providers whose parents pay by standing order. For them the QR code is
+a backup that nobody uses, and it invites a question every term.
+
+> **Before you switch it off, check what the complaint actually was.** A payment QR code
+> has to be scanned **inside a banking app**. Scanned with the phone's camera it does
+> nothing useful, and that is the usual reason somebody reports the QR code as "broken"
+> rather than it being wrong.
+
+**And if you are trying to remove the QR code from an email** — that is a different place.
+Only two system templates carry the QR code tag by default, **order confirmation** and
+**additional session payment**. A template you have already customised does not have it
+unless you put it there. See [Dynamic tags](dynamic-tags.md).
+
 ## Calendar/Schedule
 
 > **Developer docs:** [Calendar widget reference](https://docs.zooza.online/widgets/calendar-widget)
@@ -222,6 +242,36 @@ Clicking on a specific location takes the user directly to the booking form of t
 ### Viewing the map widget
 
 ![Screenshot — customizing widgets](../../assets/images/customizing-widgets-02.png)
+
+### Only some of my locations appear on the map
+
+Two things have to be true for a location to show, and it is nearly always the second one:
+
+1. **Sessions are scheduled there.** A location with nothing in the timetable has nothing
+   to offer, so the map leaves it out.
+2. **Its map position has been set by hand.** Typing an address does not place the pin.
+
+The second one catches everybody, because an unset location does not look unset — every
+new location starts on a **default position**, so the map field appears filled in. Open
+each location and update the position after you enter the address.
+
+### The map was rebuilt in November 2026 — re-insert it
+
+The map widget was rebuilt and the way it is embedded changed with it. **An existing map
+keeps showing the old version until you replace the embed code on your page.** Take the
+current code from your embed page and swap it in.
+
+Two things you get once you have:
+
+- **Point the map where you want it, at the zoom you want.** Previously you took whatever
+  the default framing gave you, which is awkward for a provider covering one city.
+- **Hide the class list under the map** if you only want the pins.
+
+Both are set in the embed code rather than in Zooza's settings — your web developer sets
+them once. The per-widget settings now have their own namespace, which also stops two
+widgets on the same page from overwriting each other's configuration. See the
+[Map widget reference](https://docs.zooza.online/widgets/map-widget) for the settings
+themselves.
 
 ## Filtering widgets with URL parameters
 

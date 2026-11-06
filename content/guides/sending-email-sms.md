@@ -12,7 +12,7 @@ status: published
 source_legacy_path: legacy/0012_Welcome to Zooza.html
 source_language: mixed
 needs_screenshot_replacement: false
-last_converted: "2026-10-10"
+last_converted: "2026-11-06"
 related_articles: ["message-templates","dynamic-tags","bulk-email-send-tracking","email-delivery-troubleshooting"]
 ---
 
@@ -165,6 +165,24 @@ parent with three children came back twice more and you clicked *Remove* three t
 
 That is the mode to use when you are sweeping a location or a term and want to spare a
 couple of families: filter wide, then take out the handful by name.
+
+## The extra recipients it suggests are the browser's, not Zooza's
+
+When you type an extra address into the recipients field, the list that drops down is your
+**browser's own form autocomplete**. Zooza puts nothing into it and cannot read it.
+
+That explains the two complaints people bring:
+
+- **It stopped suggesting the combinations I use.** A browser update, a cleared history or
+  a different profile, not a change in Zooza.
+- **It offers instructors who left.** The browser is remembering what you once typed. Clear
+  the saved form entries in your browser to get rid of them.
+
+There is no setting in Zooza for any of this, and nothing we can do from our side — the
+field has no interface a website is allowed to drive.
+
+> If you are adding the same addresses every time, that is worth telling us about rather
+> than fighting the browser. It is a common enough pattern that it belongs in the product.
 
 ## Can I attach a file to an email from Zooza?
 
