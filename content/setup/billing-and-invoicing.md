@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/billing-settings.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-10-17"
+last_converted: "2026-11-06"
 related_articles: ["invoice-profiles-and-bank-accounts", "invoice-number-series", "invoice-profile-overrides", "invoicing-overview", "szamlazz-invoices", "fakturoid-invoices", "xero-integration"]
 ---
 
@@ -24,15 +24,14 @@ This guide explains how invoicing works in Zooza — when invoices are generated
 
 ## Where to find billing settings
 
-Go to **Settings** → **Billing**.
-
-![Settings page with Billing tile highlighted](../../assets/images/billing-and-invoicing-01.png)
-
-The Billing page has three sections:
+Go to **Settings → Billing & Payments**. It holds, in menu order:
 
 1. **Billing periods** — the term blocks you bill against.
 2. **Invoice profiles** — your legal entities and their bank accounts.
-3. **Invoices** and **Payments** — the generated documents and the money received.
+3. **Invoices** — the generated documents.
+4. **Payment settings** — how long clients have to pay before a booking is marked unpaid.
+5. **Payment schedule templates** — the instalment plans you offer.
+6. **Payment collection setup** — the guided flow for card, direct debit and bank transfer.
 
 ## Automatic invoice generation
 
@@ -62,7 +61,7 @@ An **invoice profile** is a legal entity — company name, address, Business ID,
 
 Go to **Settings → Billing & Payments → Invoice profiles** to manage both.
 
-![Invoice profiles list showing two legal entities with the default profile badge](../../assets/images/invoice-profiles-list.png)
+![The Invoice profiles list: each profile with its business ID, VAT booking number and tax ID, one marked as the default](../../assets/images/invoice-profiles-list.png)
 
 - The **default invoice profile** is used whenever nothing more specific is set. It cannot be deleted.
 - Add another profile when you invoice under a second legal entity.
@@ -131,7 +130,7 @@ After an invoice is generated, you can edit it by clicking the pencil icon next 
 
 Downloading invoices one at a time is the slow way, and it is what most people find first. There is a bulk route.
 
-Go to **Payments → Invoices**, filter down to the period you need — created-date range, billing period, invoice profile — and then use the actions at the top of the list:
+Go to **Settings → Billing & Payments → Invoices**, filter down to the period you need — created-date range, billing period, invoice profile — and then use the actions at the top of the list:
 
 | You want | Use |
 |---|---|

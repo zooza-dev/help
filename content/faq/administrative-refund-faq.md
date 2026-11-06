@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-30"
+last_converted: "2026-11-06"
 related_articles: ["stripe-payments-faq", "payments-and-billing-faq", "cancellation-reasons", "edit-payment-on-booking", "scheduled-registration-cancellation"]
 ---
 
@@ -68,8 +68,8 @@ No. Once recorded, an administrative refund cannot be deleted. If you made an er
 
 ## Can clients ask for a refund themselves?
 
-Yes, if you let them. **Settings → General → Allow refund requests** lets a client
-request a refund when they cancel an eligible session. It is off unless you turn it on.
+Yes, if you let them. **Allow refund requests**, on **Settings → General**, lets a client request a
+refund when they cancel an eligible session. It is off unless you turn it on.
 
 **A request does not move any money.** It is a conversation with a record, not an
 automatic payout — read that twice before switching it on, because the wording matters
