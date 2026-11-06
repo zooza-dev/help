@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: "legacy/0084_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-21"
+last_converted: "2026-11-06"
 ---
 
 # Payment Pairing for Bank Transfers & Direct Debit
@@ -243,6 +243,43 @@ If pairing worked before and has stopped, start with [Payments stopped pairing, 
 ### What is a payment reference?
 
 A payment reference is the text or number sent with a bank transfer to identify what the payment is for. In some countries this is called a variable symbol.
+
+### How is the variable symbol generated?
+
+It is not generated, and there is nothing to configure. **The variable symbol of a booking
+is the booking's own number**, and the variable symbol of a product order is the order
+number. That is the whole rule.
+
+So when a parent asks what to put on the transfer, the answer is the number on their
+booking — which is what their profile, their payment request email and their payment QR
+code already carry.
+
+Two consequences worth knowing:
+
+- **Bookings and product orders are numbered from separate series**, and Zooza checks
+  bookings first and then orders. The same number can therefore exist as both, which is why
+  clicking a matched payment occasionally takes you to a booking when you expected an
+  order.
+- **Enrolling after a trial produces a new number.** The enrolment is a new booking, so it
+  has a new variable symbol. The trial and the enrolment stay linked so you can still see
+  both. See [Trial sessions](../setup/trial-sessions.md).
+
+### Can a client pay with their own customer number instead?
+
+Yes. If the reference does not match any booking or order, Zooza tries it as the client's
+**Custom customer ID** — the identifier you can set on a client profile — and then looks
+through that client's active bookings for one the payment fits.
+
+This is useful for a parent who pays the same reference every month rather than tracking a
+number per child. Two limits:
+
+- The customer ID must be **at least three characters**.
+- Matching this way is **less certain**, so Zooza is stricter about which bookings it will
+  accept the money against. A payment that matches a customer ID but no plausible booking
+  stays unpaired for you to place by hand.
+
+The format of these IDs is set in **Settings**, and they can be regenerated in bulk if you
+change the format. See [Client management](../faq/client-management-faq.md).
 
 ### What happens if a client forgets the payment reference?
 

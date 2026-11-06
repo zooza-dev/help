@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-11-06"
+related_articles: ["dynamic-tags", "creating-a-class", "transfer-and-copy-bookings", "locations-and-venues-faq", "message-templates"]
 ---
 
 # Online and Hybrid Classes
@@ -106,6 +107,29 @@ If your meeting link changes every session — common when generating Zoom links
 Use `*|EVENT_ONLINE_MEETING_LINK|*` in the reminder template to pull the session-specific link. If both a class-level and session-level link exist, the session-level link takes priority.
 
 ---
+
+## Moving clients from in-person to online
+
+There is no "switch this booking to online" button, because online is not a property of a
+booking. Which of the two things you want decides what to do:
+
+**The whole class moves online** — the venue is closed, the week is remote, you are moving
+a group permanently. Change the **Class**, not the bookings: add the online meeting URL to
+it (or to the individual sessions, if the link changes each week) and point its location at
+your "Online" venue. Nobody's booking changes, and the next session reminder carries the
+link. For one week only, put the link on those sessions rather than on the class, so it
+does not keep appearing afterwards.
+
+**Some children move and others stay** — then in-person and online are **two Classes**, as
+in the capacity note above, and moving a child means **transferring their booking** from
+one to the other. Open the booking, choose **Transfer**, pick the online class, and tick
+**Do not change payments** if the price is the same. See
+[Transfer and copy bookings](../guides/transfer-and-copy-bookings.md).
+
+> **If there is no online class to transfer into, that is the thing to fix first.** The
+> transfer screen can only offer classes that exist, which is where "I cannot move them to
+> online" usually comes from — there is nowhere to move them *to* yet. Create the online
+> class under the same programme, then transfer.
 
 ## What Zooza does not support (for this model)
 

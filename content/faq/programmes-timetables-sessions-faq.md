@@ -388,6 +388,27 @@ After invitations go out, monitor who accepted, declined, or has not yet respond
 
 See [Auto-enrollment](../setup/auto-enrollment.md) for the full setup guide and [Auto-enrolment responses](../guides/auto-enrolment-responses.md) for tracking and follow-up.
 
+## I need an extra lesson for the whole class — not a make-up
+
+Three different things get called "an extra session", and they live in different places.
+This one — the class has fallen behind and everybody needs one more lesson — is the
+simplest of the three:
+
+Open the class, go to the **Sessions** tab and click **Add sessions**. Everyone with a
+booking in the class gets the new date; attendance, reminders and the register treat it
+like any other session. See [Edit sessions in programmes](../guides/edit-sessions-in-programmes.md).
+
+| What you mean | Where to do it |
+|---|---|
+| **One more lesson for the whole class** — you are behind, a week was lost | **Add sessions** on the class, as above |
+| **A make-up for one client who missed a session** | The client's own make-up flow — see [Make-up sessions FAQ](make-up-sessions-faq.md). Do not add a session to the class for this |
+| **An extra session for one client, outside their schedule** | The next question below |
+
+> **Add sessions is not a make-up, and a make-up is not Add sessions.** Adding a session
+> to the class gives the lesson to everyone and changes nothing about anybody's credits.
+> A make-up moves one client into an existing session and draws down a credit. Reaching
+> for the wrong one is the usual reason this takes several attempts.
+
 ## How do I add a one-off extra session for a specific client?
 
 If you need to give a single client an extra session that is not part of their regular schedule, there are two approaches depending on your setup:

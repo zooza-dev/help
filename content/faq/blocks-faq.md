@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-24"
+last_converted: "2026-11-06"
 related_articles: ["blocks-configuration","blocks-creation","trial-sessions","price-and-payment-setup"]
 ---
 
@@ -173,3 +173,9 @@ If you need clients to choose exactly one block, the recommended approach is:
 3. This gives full capacity control and prevents multi-block enrolment by design.
 
 This is more setup work upfront but avoids the complexity of enforcing a single-block rule in the booking form.
+
+> **If what you meant was "offer blocks and not the whole programme", that is a different
+> setting and it does exist.** In the programme's **Online booking → Booking options**,
+> choose **Blocks only** and the booking form stops offering the full-programme option
+> alongside the blocks. Clients can still pick more than one block — it controls what is
+> offered, not how many they may take. See [Online booking](../setup/online-registration.md).

@@ -302,6 +302,14 @@
     },
     {
       "@type": "Question",
+      "name": "I need an extra lesson for the whole class — not a make-up",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three different things get called \"an extra session\", and they live in different places.\nThis one — the class has fallen behind and everybody needs one more lesson — is the\nsimplest of the three:\n\nOpen the class, go to the Sessions tab and click Add sessions. Everyone with a\nbooking in the class gets the new date; attendance, reminders and the register treat it\nlike any other session. See Edit sessions in programmes.\n\nAdd sessions is not a make-up, and a make-up is not Add sessions. Adding a session\nto the class gives the lesson to everyone and changes nothing about anybody's credits.\nA make-up moves one client into an existing session and draws down a credit. Reaching\nfor the wrong one is the usual reason this takes several attempts."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How do I add a one-off extra session for a specific client?",
       "acceptedAnswer": {
         "@type": "Answer",
