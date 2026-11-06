@@ -241,10 +241,20 @@ def build_agent_exports() -> dict:
     canonical_records: list[dict] = []
     faq_records: list[dict] = []
 
+    skipped = []
     for md_path in sorted(CONTENT_DIR.rglob("*.md")):
         if "/_shared/" in str(md_path):
             continue
         if md_path.name.startswith("_"):
+            continue
+
+        # Published only, like the web export. A draft or archived article is
+        # not on help.zooza.online, so every url we would hand the assistant for
+        # one is a 404 — and an archived article describes behaviour we have
+        # deliberately superseded. Found 2026-11-06: 44 draft and 46 archived
+        # chunks were in the index, citable and dead.
+        if frontmatter_status(md_path) != "published":
+            skipped.append(str(rel_name(md_path)))
             continue
 
         rel = md_path.relative_to(CONTENT_DIR)
@@ -274,6 +284,10 @@ def build_agent_exports() -> dict:
         "over_limit": sum(1 for r in all_records if len(r["text"]) > MAX_CHARS),
     }
 
+    if skipped:
+        logger.info("Agent export: %d unpublished article(s) left out: %s",
+                    len(skipped), ", ".join(sorted(skipped)[:6])
+                    + ("…" if len(skipped) > 6 else ""))
     logger.info(
         "Agent export: canonical=%d, faq=%d, max=%d, avg=%d, over=%d",
         stats["canonical_records"],
@@ -283,6 +297,21 @@ def build_agent_exports() -> dict:
         stats["over_limit"],
     )
     return stats
+
+
+def rel_name(md_path):
+    return md_path.relative_to(CONTENT_DIR)
+
+
+def frontmatter_status(md_path) -> str:
+    """The article's status, defaulting to published when it has no frontmatter."""
+    try:
+        with open(md_path, encoding="utf-8") as fh:
+            head = fh.read(2048)
+    except OSError:
+        return "published"
+    m = re.search(r"^status:\s*\"?([a-z]+)\"?", head, re.M)
+    return m.group(1) if m else "published"
 
 
 def main():
