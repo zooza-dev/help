@@ -1,13 +1,13 @@
-# Screenshot audit — 2026-11-02
+# Screenshot audit — 2026-11-06
 
-1040 images on 186 published articles, ranked by how likely
+1041 images on 186 published articles, ranked by how likely
 they are to be out of date. A high score is where to look first, not proof.
 
 **The three signals.** How old the picture is; how long the article went on being
 rewritten *after* the picture was taken (somebody checked the words and not the
 screen); and whether the developers have been changing that part of the product.
 
-Busiest areas in the last 120 days of shipped specs: **Payments** (113), **Programmes** (81), **Bookings** (79), **Classes** (77).
+Busiest areas in the last 120 days of shipped specs: **Payments** (119), **Programmes** (86), **Classes** (86), **Bookings** (78).
 The number is how often that area's vocabulary appears in spec filenames — a
 rough proxy for 'this screen moved recently', not a count of changes.
 
@@ -15,70 +15,71 @@ rough proxy for 'this screen moved recently', not a count of changes.
 
 ## Shoot list, by article
 
-Work down it. Each row is one screen-shooting session.
+Work down it. Each row is one screen-shooting session: open the help page,
+open the screen beside it, and replace what no longer matches.
 
-| # | Article | Area | Images | Oldest | Rewritten after | Score |
-|---:|---|---|---:|---:|---:|---:|
-| 1 | `payment-templates-creation.md` | Payments | 30 | 8 mo | 8 mo | 46 |
-| 2 | `billing-and-invoicing.md` | Payments | 9 | 8 mo | 8 mo | 45 |
-| 3 | `linked-classes.md` | Programmes | 3 | 8 mo | 7 mo | 44 |
-| 4 | `blocks-creation.md` | Classes | 13 | 8 mo | 7 mo | 44 |
-| 5 | `trials-daily-business.md` | Programmes | 7 | 8 mo | 7 mo | 44 |
-| 6 | `automatic-payment-reminders-detailed.md` | Payments | 4 | 8 mo | 7 mo | 43 |
-| 7 | `programme-settings.md` | Programmes | 10 | 8 mo | 7 mo | 43 |
-| 8 | `sessions-list.md` | Classes | 1 | 8 mo | 7 mo | 43 |
-| 9 | `szamlazz-invoices.md` | Payments | 5 | 8 mo | 6 mo | 42 |
-| 10 | `csv-payment-import.md` | Payments | 5 | 8 mo | 6 mo | 42 |
-| 11 | `archive-or-delete-programme.md` | Programmes | 7 | 7 mo | 6 mo | 40 |
-| 12 | `ad-hoc-scheduled-payment.md` | Payments | 8 | 6 mo | 6 mo | 39 |
-| 13 | `common-booking-scenarios.md` | Bookings | 2 | 8 mo | 8 mo | 38 |
-| 14 | `linked-bookings.md` | Bookings | 8 | 8 mo | 8 mo | 38 |
-| 15 | `booking-tile-customization.md` | Bookings | 2 | 7 mo | 5 mo | 38 |
-| 16 | `lead-collection.md` | Programmes | 3 | 8 mo | 8 mo | 38 |
-| 17 | `bulk-network-transfer.md` | Bookings | 2 | 7 mo | 5 mo | 38 |
-| 18 | `price-and-payment-setup.md` | Payments | 6 | 8 mo | 8 mo | 37 |
-| 19 | `billable-sessions.md` | Classes | 7 | 8 mo | 8 mo | 37 |
-| 20 | `bookings-list.md` | Bookings | 18 | 8 mo | 7 mo | 37 |
-| 21 | `offline-charge-manual-push.md` | Payments | 1 | 6 mo | 5 mo | 36 |
-| 22 | `getting-started-with-zooza.md` | Programmes | 4 | 8 mo | 7 mo | 36 |
-| 23 | `trials-faq.md` | Bookings | 5 | 8 mo | 7 mo | 36 |
-| 24 | `auto-cancel-unpaid-registrations.md` | Payments | 2 | 5 mo | 5 mo | 36 |
-| 25 | `xero-integration.md` | Payments | 11 | 8 mo | 7 mo | 36 |
-| 26 | `payment-pairing.md` | Payments | 6 | 8 mo | 7 mo | 36 |
-| 27 | `gocardless-direct-debit-mandates.md` | Payments | 4 | 8 mo | 7 mo | 36 |
-| 28 | `collecting-reason-for-cancelling.md` | Classes | 3 | 8 mo | 7 mo | 36 |
-| 29 | `viewing-billable-sessions.md` | Classes | 9 | 8 mo | 7 mo | 36 |
-| 30 | `pay-as-you-go-programme.md` | Programmes | 9 | 8 mo | 7 mo | 36 |
-| 31 | `trial-sessions.md` | Programmes | 30 | 8 mo | 7 mo | 36 |
-| 32 | `online-registration.md` | Programmes | 18 | 8 mo | 7 mo | 36 |
-| 33 | `auto-enrollment.md` | Programmes | 10 | 8 mo | 7 mo | 36 |
-| 34 | `individual-sessions-lead-collection.md` | Programmes | 3 | 8 mo | 7 mo | 36 |
-| 35 | `billing-periods.md` | Payments | 6 | 8 mo | 7 mo | 36 |
-| 36 | `types-of-bookings.md` | Bookings | 1 | 8 mo | 7 mo | 36 |
-| 37 | `programme-settings.md` | Programmes | 13 | 8 mo | 7 mo | 35 |
-| 38 | `transfer-and-copy-bookings.md` | Bookings | 5 | 8 mo | 7 mo | 35 |
-| 39 | `payments-dashboard.md` | Payments | 7 | 8 mo | 7 mo | 35 |
-| 40 | `classes-list.md` | Classes | 1 | 8 mo | 7 mo | 35 |
-| 41 | `late-bookings.md` | Bookings | 5 | 8 mo | 7 mo | 35 |
-| 42 | `additional-fields.md` | Programmes | 4 | 8 mo | 7 mo | 35 |
-| 43 | `downpayment-split-invoicing.md` | Payments | 1 | 6 mo | 4 mo | 35 |
-| 44 | `loyalty-sibling-discount.md` | Payments | 4 | 7 mo | 7 mo | 34 |
-| 45 | `smartbill-invoices.md` | Payments | 5 | 8 mo | 6 mo | 34 |
-| 46 | `abra-flexi-invoices.md` | Payments | 3 | 8 mo | 6 mo | 34 |
-| 47 | `creating-a-class.md` | Classes | 14 | 8 mo | 6 mo | 34 |
-| 48 | `publish-widgets.md` | Widgets | 3 | 8 mo | 8 mo | 34 |
-| 49 | `cancellation-limit-settings.md` | Programmes | 1 | 8 mo | 6 mo | 34 |
-| 50 | `copy-programme-and-class.md` | Programmes | 7 | 8 mo | 6 mo | 33 |
-| 51 | `payments-and-billing-faq.md` | Payments | 3 | 7 mo | 7 mo | 33 |
-| 52 | `stripe-payments-faq.md` | Payments | 1 | 7 mo | 6 mo | 33 |
-| 53 | `customizing-widgets.md` | Widgets | 19 | 8 mo | 8 mo | 33 |
-| 54 | `entry-pass-client-view.md` | Orders | 10 | 8 mo | 8 mo | 33 |
-| 55 | `loyalty-program.md` | Payments | 2 | 7 mo | 6 mo | 33 |
-| 56 | `oblio-invoices.md` | Payments | 1 | 7 mo | 6 mo | 33 |
-| 57 | `fakturoid-invoices.md` | Payments | 1 | 7 mo | 6 mo | 33 |
-| 58 | `reports-dashboard.md` | Settings | 5 | 8 mo | 7 mo | 33 |
-| 59 | `edit-sessions-in-programmes.md` | Classes | 6 | 8 mo | 6 mo | 32 |
-| 60 | `session-payment-adjustments.md` | Payments | 6 | 7 mo | 6 mo | 32 |
+| # | Help page | Screen to open | Images | Oldest | Score |
+|---:|---|---|---:|---:|---:|
+| 1 | [payment-templates-creation](https://help.zooza.online/payments/payment-templates-creation/) | [Settings → Billing & Payments → Payment schedule templates](https://uk.zooza.app/#settings/payment_schedule_templates) | 30 | 8 mo | 46 |
+| 2 | [billing-and-invoicing](https://help.zooza.online/payments/billing-and-invoicing/) | [Settings → Billing & Payments → Invoice profiles](https://uk.zooza.app/#settings/invoice_profiles) | 9 | 8 mo | 45 |
+| 3 | [linked-classes](https://help.zooza.online/programmes/linked-classes/) | _not mapped_ | 3 | 8 mo | 44 |
+| 4 | [blocks-creation](https://help.zooza.online/classes/blocks-creation/) | _not mapped_ | 13 | 8 mo | 44 |
+| 5 | [trials-daily-business](https://help.zooza.online/programmes/trials-daily-business/) | [Activities → Programmes → programme → Settings → Trial](https://uk.zooza.app/#courses/150/settings?edit=trial) | 7 | 8 mo | 44 |
+| 6 | [automatic-payment-reminders-detailed](https://help.zooza.online/payments/automatic-payment-reminders-detailed/) | [Settings → Billing & Payments → Payment settings](https://uk.zooza.app/#settings/payment_settings) | 4 | 8 mo | 44 |
+| 7 | [programme-settings](https://help.zooza.online/programmes/programme-settings-reference/) | [Settings → General → Metadata keys](https://uk.zooza.app/#settings/metadata_keys) | 10 | 8 mo | 43 |
+| 8 | [sessions-list](https://help.zooza.online/classes/sessions-list/) | _not mapped_ | 1 | 8 mo | 43 |
+| 9 | [szamlazz-invoices](https://help.zooza.online/payments/szamlazz-invoices/) | [Settings → Billing & Payments → Billing periods](https://uk.zooza.app/#settings/billing_periods) | 5 | 8 mo | 43 |
+| 10 | [csv-payment-import](https://help.zooza.online/payments/csv-payment-import/) | [Sales & Payments → Payments → Import](https://uk.zooza.app/#payments/import) | 5 | 8 mo | 42 |
+| 11 | [archive-or-delete-programme](https://help.zooza.online/programmes/archive-or-delete-programme/) | [Settings → Tools → Trash](https://uk.zooza.app/#settings/trash) | 7 | 7 mo | 40 |
+| 12 | [ad-hoc-scheduled-payment](https://help.zooza.online/payments/ad-hoc-scheduled-payment/) | [Settings → Billing & Payments → Invoice profiles](https://uk.zooza.app/#settings/invoice_profiles) | 8 | 7 mo | 39 |
+| 13 | [common-booking-scenarios](https://help.zooza.online/bookings/common-booking-scenarios/) | _not mapped_ | 3 | 8 mo | 39 |
+| 14 | [linked-bookings](https://help.zooza.online/bookings/linked-bookings/) | _not mapped_ | 8 | 8 mo | 38 |
+| 15 | [booking-tile-customization](https://help.zooza.online/bookings/booking-tile-customization/) | _not mapped_ | 2 | 7 mo | 38 |
+| 16 | [lead-collection](https://help.zooza.online/programmes/lead-collection/) | [Communication → Templates](https://uk.zooza.app/#communication/templates) | 3 | 8 mo | 38 |
+| 17 | [bulk-network-transfer](https://help.zooza.online/bookings/bulk-network-transfer/) | _not mapped_ | 2 | 7 mo | 38 |
+| 18 | [price-and-payment-setup](https://help.zooza.online/payments/price-and-payment-setup/) | [Activities → Programmes → programme → Settings → Price and payment](https://uk.zooza.app/#courses/150/settings?edit=price) | 6 | 8 mo | 37 |
+| 19 | [billable-sessions](https://help.zooza.online/classes/billable-sessions/) | [Activities → Programmes → programme → Settings](https://uk.zooza.app/#courses/150/settings) | 7 | 8 mo | 37 |
+| 20 | [bookings-list](https://help.zooza.online/bookings/bookings-list/) | _not mapped_ | 18 | 8 mo | 37 |
+| 21 | [offline-charge-manual-push](https://help.zooza.online/payments/offline-charge-manual-push/) | _not mapped_ | 1 | 6 mo | 36 |
+| 22 | [getting-started-with-zooza](https://help.zooza.online/programmes/getting-started-with-zooza/) | [Settings → Tools → Trash](https://uk.zooza.app/#settings/trash) | 4 | 8 mo | 36 |
+| 23 | [trials-faq](https://help.zooza.online/bookings/trials-faq/) | [Activities → Programmes → programme → Settings → Trial](https://uk.zooza.app/#courses/150/settings?edit=trial) | 5 | 8 mo | 36 |
+| 24 | [auto-cancel-unpaid-registrations](https://help.zooza.online/payments/auto-cancel-unpaid-registrations/) | [Activities → Programmes → programme → Settings → Price and payment](https://uk.zooza.app/#courses/150/settings?edit=price) | 2 | 5 mo | 36 |
+| 25 | [xero-integration](https://help.zooza.online/payments/xero-integration/) | [Settings → Billing & Payments → Billing periods](https://uk.zooza.app/#settings/billing_periods) | 11 | 8 mo | 36 |
+| 26 | [payment-pairing](https://help.zooza.online/payments/payment-pairing/) | [Settings → Billing & Payments → Invoice profiles](https://uk.zooza.app/#settings/invoice_profiles) | 6 | 8 mo | 36 |
+| 27 | [gocardless-direct-debit-mandates](https://help.zooza.online/payments/gocardless-direct-debit-mandates/) | [Sales & Payments → Direct Debit mandates](https://uk.zooza.app/#payments/mandates) | 4 | 8 mo | 36 |
+| 28 | [collecting-reason-for-cancelling](https://help.zooza.online/classes/collecting-reason-for-cancelling/) | _not mapped_ | 3 | 8 mo | 36 |
+| 29 | [viewing-billable-sessions](https://help.zooza.online/classes/tracking-billable-sessions/) | _not mapped_ | 9 | 8 mo | 36 |
+| 30 | [pay-as-you-go-programme](https://help.zooza.online/programmes/pay-as-you-go-programme/) | _not mapped_ | 9 | 8 mo | 36 |
+| 31 | [trial-sessions](https://help.zooza.online/programmes/trial-sessions/) | _not mapped_ | 30 | 8 mo | 36 |
+| 32 | [online-registration](https://help.zooza.online/programmes/online-registration/) | _not mapped_ | 18 | 8 mo | 36 |
+| 33 | [auto-enrollment](https://help.zooza.online/programmes/auto-enrollment/) | _not mapped_ | 10 | 8 mo | 36 |
+| 34 | [individual-sessions-lead-collection](https://help.zooza.online/programmes/individual-sessions-lead-collection/) | _not mapped_ | 3 | 8 mo | 36 |
+| 35 | [billing-periods](https://help.zooza.online/payments/billing-periods/) | _not mapped_ | 6 | 8 mo | 36 |
+| 36 | [types-of-bookings](https://help.zooza.online/bookings/types-of-bookings/) | _not mapped_ | 1 | 8 mo | 36 |
+| 37 | [programme-settings](https://help.zooza.online/programmes/programme-settings/) | _not mapped_ | 13 | 8 mo | 36 |
+| 38 | [transfer-and-copy-bookings](https://help.zooza.online/bookings/transfer-and-copy-bookings/) | _not mapped_ | 5 | 8 mo | 35 |
+| 39 | [payments-dashboard](https://help.zooza.online/payments/payments-dashboard/) | [Sales & Payments → Transactions → Cash & transfer](https://uk.zooza.app/#payments/transactions/cash_transfer) | 7 | 8 mo | 35 |
+| 40 | [classes-list](https://help.zooza.online/classes/classes-list/) | _not mapped_ | 1 | 8 mo | 35 |
+| 41 | [late-bookings](https://help.zooza.online/bookings/late-bookings/) | _not mapped_ | 5 | 8 mo | 35 |
+| 42 | [additional-fields](https://help.zooza.online/programmes/additional-fields/) | _not mapped_ | 4 | 8 mo | 35 |
+| 43 | [downpayment-split-invoicing](https://help.zooza.online/payments/downpayment-split-invoicing/) | [Settings → Billing & Payments → Billing periods](https://uk.zooza.app/#settings/billing_periods) | 1 | 6 mo | 35 |
+| 44 | [loyalty-sibling-discount](https://help.zooza.online/payments/loyalty-sibling-discount/) | _not mapped_ | 4 | 7 mo | 35 |
+| 45 | [smartbill-invoices](https://help.zooza.online/payments/smartbill-invoices/) | [Settings → Billing & Payments → Billing periods](https://uk.zooza.app/#settings/billing_periods) | 5 | 8 mo | 35 |
+| 46 | [abra-flexi-invoices](https://help.zooza.online/payments/abra-flexi-invoices/) | [Settings → Billing & Payments → Billing periods](https://uk.zooza.app/#settings/billing_periods) | 3 | 8 mo | 35 |
+| 47 | [creating-a-class](https://help.zooza.online/classes/creating-a-class/) | _not mapped_ | 14 | 8 mo | 34 |
+| 48 | [publish-widgets](https://help.zooza.online/widgets/publish-widgets/) | [Settings → General → Contact forms](https://uk.zooza.app/#settings/contact_forms) | 3 | 8 mo | 34 |
+| 49 | [cancellation-limit-settings](https://help.zooza.online/programmes/cancellation-limit-settings/) | [Settings → General → General](https://uk.zooza.app/#settings/general) | 1 | 8 mo | 34 |
+| 50 | [copy-programme-and-class](https://help.zooza.online/programmes/copy-programme-and-class/) | _not mapped_ | 7 | 8 mo | 34 |
+| 51 | [payments-and-billing-faq](https://help.zooza.online/payments/payments-and-billing-faq/) | [Settings → Billing & Payments → Payment settings](https://uk.zooza.app/#settings/payment_settings) | 3 | 7 mo | 33 |
+| 52 | [stripe-payments-faq](https://help.zooza.online/payments/stripe-payments-faq/) | _not mapped_ | 1 | 7 mo | 33 |
+| 53 | [customizing-widgets](https://help.zooza.online/widgets/customizing-widgets/) | [Team & Settings → Publish](https://uk.zooza.app/#widgets) | 19 | 8 mo | 33 |
+| 54 | [entry-pass-client-view](https://help.zooza.online/orders/entry-pass-client-view/) | _not mapped_ | 10 | 8 mo | 33 |
+| 55 | [loyalty-program](https://help.zooza.online/payments/loyalty-program/) | [Sales & Payments → Loyalty Programme](https://uk.zooza.app/#payments/loyalty) | 2 | 7 mo | 33 |
+| 56 | [reports-dashboard](https://help.zooza.online/settings/reports-dashboard/) | _not mapped_ | 5 | 8 mo | 33 |
+| 57 | [oblio-invoices](https://help.zooza.online/payments/oblio-invoices/) | [Settings → Billing & Payments → Billing periods](https://uk.zooza.app/#settings/billing_periods) | 1 | 7 mo | 33 |
+| 58 | [fakturoid-invoices](https://help.zooza.online/payments/fakturoid-invoices/) | [Settings → Billing & Payments → Billing periods](https://uk.zooza.app/#settings/billing_periods) | 1 | 7 mo | 33 |
+| 59 | [edit-sessions-in-programmes](https://help.zooza.online/classes/edit-sessions-in-programmes/) | _not mapped_ | 6 | 8 mo | 32 |
+| 60 | [session-payment-adjustments](https://help.zooza.online/payments/session-payment-adjustments/) | _not mapped_ | 6 | 7 mo | 32 |
 
 <details><summary>Every image, worst first</summary>
 
@@ -143,9 +144,9 @@ Work down it. Each row is one screen-shooting session.
 | 44 | 8 mo | Programmes | `trials-daily-business.md` | `trials-daily-business-06.png` |
 | 44 | 8 mo | Programmes | `trials-daily-business.md` | `trials-daily-business-04.png` |
 | 44 | 8 mo | Programmes | `trials-daily-business.md` | `trials-daily-business-02.png` |
-| 43 | 8 mo | Payments | `automatic-payment-reminders-detailed.md` | `automatic-payment-reminders-detailed-06.png` |
-| 43 | 8 mo | Payments | `automatic-payment-reminders-detailed.md` | `automatic-payment-reminders-detailed-03.png` |
-| 43 | 8 mo | Payments | `automatic-payment-reminders-detailed.md` | `automatic-payment-reminders-detailed-02.png` |
+| 44 | 8 mo | Payments | `automatic-payment-reminders-detailed.md` | `automatic-payment-reminders-detailed-06.png` |
+| 44 | 8 mo | Payments | `automatic-payment-reminders-detailed.md` | `automatic-payment-reminders-detailed-03.png` |
+| 44 | 8 mo | Payments | `automatic-payment-reminders-detailed.md` | `automatic-payment-reminders-detailed-02.png` |
 | 43 | 8 mo | Programmes | `programme-settings.md` | `prog-programmes-wiggle-wonders-0-12-months-settings.png` |
 | 43 | 8 mo | Programmes | `programme-settings.md` | `prog-programmes-wiggle-wonders-0-12-months-settings-trial.png` |
 | 43 | 8 mo | Programmes | `programme-settings.md` | `prog-programmes-wiggle-wonders-0-12-months-settings-settings.png` |
@@ -157,33 +158,33 @@ Work down it. Each row is one screen-shooting session.
 | 43 | 8 mo | Programmes | `programme-settings.md` | `prog-programmes-wiggle-wonders-0-12-months-settings-attendance.png` |
 | 43 | 8 mo | Programmes | `programme-settings.md` | `prog-programmes-wiggle-wonders-0-12-months-settings-additional-fields.png` |
 | 43 | 8 mo | Classes | `sessions-list.md` | `cls-sessions.png` |
-| 42 | 8 mo | Payments | `szamlazz-invoices.md` | `szamlazz-invoices-09.png` |
-| 42 | 8 mo | Payments | `szamlazz-invoices.md` | `szamlazz-invoices-06.png` |
-| 42 | 8 mo | Payments | `szamlazz-invoices.md` | `szamlazz-invoices-05.png` |
-| 42 | 8 mo | Payments | `szamlazz-invoices.md` | `szamlazz-invoices-04.png` |
-| 42 | 8 mo | Payments | `szamlazz-invoices.md` | `szamlazz-invoices-03.png` |
+| 43 | 8 mo | Payments | `szamlazz-invoices.md` | `szamlazz-invoices-09.png` |
+| 43 | 8 mo | Payments | `szamlazz-invoices.md` | `szamlazz-invoices-06.png` |
+| 43 | 8 mo | Payments | `szamlazz-invoices.md` | `szamlazz-invoices-05.png` |
+| 43 | 8 mo | Payments | `szamlazz-invoices.md` | `szamlazz-invoices-04.png` |
+| 43 | 8 mo | Payments | `szamlazz-invoices.md` | `szamlazz-invoices-03.png` |
 | 42 | 8 mo | Payments | `csv-payment-import.md` | `csv-payment-import-05.png` |
 | 42 | 8 mo | Payments | `csv-payment-import.md` | `csv-payment-import-04.png` |
 | 42 | 8 mo | Payments | `csv-payment-import.md` | `csv-payment-import-03.png` |
 | 42 | 8 mo | Payments | `csv-payment-import.md` | `csv-payment-import-02.png` |
 | 42 | 8 mo | Payments | `csv-payment-import.md` | `csv-payment-import-01.png` |
-| 41 | 8 mo | Payments | `automatic-payment-reminders-detailed.md` | `automatic-payment-reminders-detailed-01.png` |
+| 42 | 8 mo | Payments | `automatic-payment-reminders-detailed.md` | `automatic-payment-reminders-detailed-01.png` |
 | 41 | 7 mo | Payments | `billing-and-invoicing.md` | `billing-and-invoicing-14.png` |
 | 40 | 7 mo | Programmes | `archive-or-delete-programme.md` | `archive-or-delete-programme-04.png` |
 | 40 | 7 mo | Programmes | `archive-or-delete-programme.md` | `archive-or-delete-programme-03.png` |
 | 40 | 7 mo | Programmes | `archive-or-delete-programme.md` | `archive-or-delete-programme-02.png` |
 | 40 | 7 mo | Programmes | `archive-or-delete-programme.md` | `archive-or-delete-programme-01.png` |
 | 40 | 7 mo | Programmes | `trials-daily-business.md` | `trials-daily-business-01.png` |
-| 39 | 6 mo | Payments | `ad-hoc-scheduled-payment.md` | `ad-hoc-scheduled-payment-08.png` |
-| 39 | 6 mo | Payments | `ad-hoc-scheduled-payment.md` | `ad-hoc-scheduled-payment-07.png` |
-| 39 | 6 mo | Payments | `ad-hoc-scheduled-payment.md` | `ad-hoc-scheduled-payment-06.png` |
-| 39 | 6 mo | Payments | `ad-hoc-scheduled-payment.md` | `ad-hoc-scheduled-payment-05.png` |
-| 39 | 6 mo | Payments | `ad-hoc-scheduled-payment.md` | `ad-hoc-scheduled-payment-04.png` |
-| 39 | 6 mo | Payments | `ad-hoc-scheduled-payment.md` | `ad-hoc-scheduled-payment-03.png` |
-| 39 | 6 mo | Payments | `ad-hoc-scheduled-payment.md` | `ad-hoc-scheduled-payment-02.png` |
-| 39 | 6 mo | Payments | `ad-hoc-scheduled-payment.md` | `ad-hoc-scheduled-payment-01.png` |
-| 38 | 8 mo | Bookings | `common-booking-scenarios.md` | `common-booking-scenarios-03.png` |
-| 38 | 8 mo | Bookings | `common-booking-scenarios.md` | `common-booking-scenarios-02.png` |
+| 39 | 7 mo | Payments | `ad-hoc-scheduled-payment.md` | `ad-hoc-scheduled-payment-08.png` |
+| 39 | 7 mo | Payments | `ad-hoc-scheduled-payment.md` | `ad-hoc-scheduled-payment-07.png` |
+| 39 | 7 mo | Payments | `ad-hoc-scheduled-payment.md` | `ad-hoc-scheduled-payment-06.png` |
+| 39 | 7 mo | Payments | `ad-hoc-scheduled-payment.md` | `ad-hoc-scheduled-payment-05.png` |
+| 39 | 7 mo | Payments | `ad-hoc-scheduled-payment.md` | `ad-hoc-scheduled-payment-04.png` |
+| 39 | 7 mo | Payments | `ad-hoc-scheduled-payment.md` | `ad-hoc-scheduled-payment-03.png` |
+| 39 | 7 mo | Payments | `ad-hoc-scheduled-payment.md` | `ad-hoc-scheduled-payment-02.png` |
+| 39 | 7 mo | Payments | `ad-hoc-scheduled-payment.md` | `ad-hoc-scheduled-payment-01.png` |
+| 39 | 8 mo | Bookings | `common-booking-scenarios.md` | `common-booking-scenarios-03.png` |
+| 39 | 8 mo | Bookings | `common-booking-scenarios.md` | `common-booking-scenarios-02.png` |
 | 38 | 8 mo | Bookings | `linked-bookings.md` | `linked-registrations-08.png` |
 | 38 | 8 mo | Bookings | `linked-bookings.md` | `linked-registrations-07.png` |
 | 38 | 8 mo | Bookings | `linked-bookings.md` | `linked-registrations-06.png` |
@@ -196,8 +197,8 @@ Work down it. Each row is one screen-shooting session.
 | 38 | 7 mo | Bookings | `booking-tile-customization.md` | `booking-tile-customization-01.png` |
 | 38 | 8 mo | Programmes | `lead-collection.md` | `group-interested-03.png` |
 | 38 | 8 mo | Programmes | `lead-collection.md` | `group-interested-02.png` |
-| 38 | 6 mo | Programmes | `archive-or-delete-programme.md` | `archive-or-delete-programme-06.png` |
-| 38 | 6 mo | Programmes | `archive-or-delete-programme.md` | `archive-or-delete-programme-05.png` |
+| 38 | 7 mo | Programmes | `archive-or-delete-programme.md` | `archive-or-delete-programme-06.png` |
+| 38 | 7 mo | Programmes | `archive-or-delete-programme.md` | `archive-or-delete-programme-05.png` |
 | 38 | 7 mo | Bookings | `bulk-network-transfer.md` | `bulk-network-transfer-02.png` |
 | 38 | 7 mo | Bookings | `bulk-network-transfer.md` | `bulk-network-transfer-01.png` |
 | 37 | 8 mo | Payments | `price-and-payment-setup.md` | `price-and-payment-setup-06.png` |
@@ -341,19 +342,19 @@ Work down it. Each row is one screen-shooting session.
 | 36 | 8 mo | Payments | `billing-periods.md` | `billing-periods-02.png` |
 | 36 | 8 mo | Payments | `billing-periods.md` | `billing-periods-01.png` |
 | 36 | 8 mo | Bookings | `types-of-bookings.md` | `types-of-registrations-02.png` |
-| 35 | 8 mo | Programmes | `programme-settings.md` | `course-settings-16.png` |
-| 35 | 8 mo | Programmes | `programme-settings.md` | `course-settings-14.png` |
-| 35 | 8 mo | Programmes | `programme-settings.md` | `course-settings-13.png` |
-| 35 | 8 mo | Programmes | `programme-settings.md` | `course-settings-11.png` |
-| 35 | 8 mo | Programmes | `programme-settings.md` | `course-settings-10.png` |
-| 35 | 8 mo | Programmes | `programme-settings.md` | `course-settings-09.png` |
-| 35 | 8 mo | Programmes | `programme-settings.md` | `course-settings-08.png` |
-| 35 | 8 mo | Programmes | `programme-settings.md` | `course-settings-06.png` |
-| 35 | 8 mo | Programmes | `programme-settings.md` | `course-settings-05.png` |
-| 35 | 8 mo | Programmes | `programme-settings.md` | `course-settings-04.png` |
-| 35 | 8 mo | Programmes | `programme-settings.md` | `course-settings-03.png` |
-| 35 | 8 mo | Programmes | `programme-settings.md` | `course-settings-02.png` |
-| 35 | 8 mo | Programmes | `programme-settings.md` | `course-settings-01.png` |
+| 36 | 8 mo | Programmes | `programme-settings.md` | `course-settings-16.png` |
+| 36 | 8 mo | Programmes | `programme-settings.md` | `course-settings-14.png` |
+| 36 | 8 mo | Programmes | `programme-settings.md` | `course-settings-13.png` |
+| 36 | 8 mo | Programmes | `programme-settings.md` | `course-settings-11.png` |
+| 36 | 8 mo | Programmes | `programme-settings.md` | `course-settings-10.png` |
+| 36 | 8 mo | Programmes | `programme-settings.md` | `course-settings-09.png` |
+| 36 | 8 mo | Programmes | `programme-settings.md` | `course-settings-08.png` |
+| 36 | 8 mo | Programmes | `programme-settings.md` | `course-settings-06.png` |
+| 36 | 8 mo | Programmes | `programme-settings.md` | `course-settings-05.png` |
+| 36 | 8 mo | Programmes | `programme-settings.md` | `course-settings-04.png` |
+| 36 | 8 mo | Programmes | `programme-settings.md` | `course-settings-03.png` |
+| 36 | 8 mo | Programmes | `programme-settings.md` | `course-settings-02.png` |
+| 36 | 8 mo | Programmes | `programme-settings.md` | `course-settings-01.png` |
 | 35 | 8 mo | Bookings | `transfer-and-copy-bookings.md` | `transfer-and-copy-bookings-05.png` |
 | 35 | 8 mo | Bookings | `transfer-and-copy-bookings.md` | `transfer-and-copy-bookings-04.png` |
 | 35 | 8 mo | Bookings | `transfer-and-copy-bookings.md` | `transfer-and-copy-bookings-03.png` |
@@ -376,122 +377,13 @@ Work down it. Each row is one screen-shooting session.
 | 35 | 8 mo | Classes | `billable-sessions.md` | `billable-sessions-01.png` |
 | 35 | 8 mo | Programmes | `additional-fields.md` | `additional-fields-01.png` |
 | 35 | 6 mo | Payments | `downpayment-split-invoicing.md` | `downpayment-split-invoicing-01.png` |
-| 34 | 7 mo | Payments | `loyalty-sibling-discount.md` | `loyalty-sibling-discount-03.png` |
-| 34 | 7 mo | Payments | `loyalty-sibling-discount.md` | `loyalty-sibling-discount-02.png` |
-| 34 | 7 mo | Payments | `loyalty-sibling-discount.md` | `loyalty-sibling-discount-01.png` |
-| 34 | 8 mo | Payments | `smartbill-invoices.md` | `smartbill-invoices-06.png` |
-| 34 | 8 mo | Payments | `smartbill-invoices.md` | `smartbill-invoices-05.png` |
-| 34 | 8 mo | Payments | `smartbill-invoices.md` | `smartbill-invoices-04.png` |
-| 34 | 8 mo | Payments | `smartbill-invoices.md` | `smartbill-invoices-03.png` |
-| 34 | 8 mo | Payments | `smartbill-invoices.md` | `smartbill-invoices-02.png` |
+| 35 | 7 mo | Payments | `loyalty-sibling-discount.md` | `loyalty-sibling-discount-03.png` |
+| 35 | 7 mo | Payments | `loyalty-sibling-discount.md` | `loyalty-sibling-discount-02.png` |
+| 35 | 7 mo | Payments | `loyalty-sibling-discount.md` | `loyalty-sibling-discount-01.png` |
+| 35 | 8 mo | Payments | `smartbill-invoices.md` | `smartbill-invoices-06.png` |
+| 35 | 8 mo | Payments | `smartbill-invoices.md` | `smartbill-invoices-05.png` |
+| 35 | 8 mo | Payments | `smartbill-invoices.md` | `smartbill-invoices-04.png` |
+| 35 | 8 mo | Payments | `smartbill-invoices.md` | `smartbill-invoices-03.png` |
+| 35 | 8 mo | Payments | `smartbill-invoices.md` | `smartbill-invoices-02.png` |
 
 </details>
-
-> 1 image reference(s) have no git history — added in the working tree and not committed, or a broken path. `validate_kb.py` catches the genuinely missing ones.
-
-## Images nothing links to
-
-102 file(s) in `assets/images/` are referenced by no article at all — published, draft or archived. Usually the previous version of a picture that was replaced.
-
-- `abra-flexi-invoices-02.png`
-- `abra-flexi-invoices-04.png`
-- `abra-flexi-invoices-06.png`
-- `abra-flexi-invoices-07.png`
-- `admin-attendance-management-01.png`
-- `allowing-multiple-registration-05.png`
-- `assigning-custom-template-course.png`
-- `auto-cancel-unpaid-registrations-01.png`
-- `automatic-payment-reminders-02.png`
-- `automatic-payment-reminders-detailed-04.png`
-- `automatic-session-notification-04.png`
-- `billing-and-invoicing-04.png`
-- `billing-and-invoicing-05.png`
-- `billing-and-invoicing-06.png`
-- `billing-and-invoicing-07.png`
-- `billing-and-invoicing-08.png`
-- `billing-and-invoicing-09.png`
-- `blocks-creation-02.png`
-- `calendar-programme-filter-01.png`
-- `calendar-session-detail-01.png`
-- `common-booking-scenarios-01.png`
-- `customizing-widgets-14.png`
-- `customizing-widgets-25.png`
-- `dashboard-bank-reconnect-warning.png`
-- `dynamic-tags-panel.png`
-- `edit-events-in-courses-01.png`
-- `edit-events-in-courses-02.png`
-- `edit-events-in-courses-03.png`
-- `edit-events-in-courses-04.png`
-- `edit-events-in-courses-05.png`
-- `edit-events-in-courses-08.png`
-- `edit-events-in-courses-09.png`
-- `edit-events-in-courses-10.png`
-- `edit-events-in-courses-12.png`
-- `edit-payment-on-booking-02.png`
-- `edit-payment-on-registration-06.png`
-- `engine-logo-abra-flexi.svg`
-- `engine-logo-fakturoid.svg`
-- `engine-logo-oblio.png`
-- `engine-logo-smartbill.svg`
-- `engine-logo-szamlazz.png`
-- `engine-logo-xero.svg`
-- `entry-pass-add-item.png`
-- `entry-pass-booking-form-availability.png`
-- `entry-pass-create-product.png`
-- `entry-pass-credit-value-config.png`
-- `entry-pass-description-template.png`
-- `entry-pass-discount-pricing.png`
-- `entry-pass-dual-product-setup.png`
-- `entry-pass-items-for-sale.png`
-- `group-connection-05.png`
-- `group-connection-07.png`
-- `group-connection-08.png`
-- `group-interested-01.png`
-- `how-to-create-paid-events-01.png`
-- `how-to-create-paid-events-03.png`
-- `how-to-create-paid-events-05.png`
-- `mobile-bookings.png`
-- `new-message-indicator.png`
-- `notifications-center-01.png`
-- `online-registration-login-01.png`
-- `open-course-creation-03.png`
-- `open-course-creation-04.png`
-- `open-course-creation-05.png`
-- `open-course-creation-06.png`
-- `open-course-creation-09.png`
-- `open-course-creation-11.png`
-- `open-course-creation-12.png`
-- `open-course-creation-13.png`
-- `open-course-creation-14.png`
-- `pasted-160122.png`
-- `pasted-170630.png`
-- `pasted-171348.png`
-- `pasted-171410.png`
-- `payment-due-date-settings.png`
-- `payment-labels-edit-01.png`
-- `payment-reminder-settings.png`
-- `payment-templates-creation-05.png`
-- `payment-tile-on-booking-01.png`
-- `payment-tile-on-booking-02.png`
-- `payment-tile-on-booking-03.png`
-- `payment-tile-on-booking-04.png`
-- `price-payment-setup-aliquot-01.png`
-- `price-payment-setup-aliquot-02.png`
-- `programme-payment-reminders-card.png`
-- `programmes-01.png`
-- `programmes-02.png`
-- `programmes-timetables-sessions-faq-01.png`
-- `sample-event-reminder-email.png`
-- `sending-requests-01.png`
-- `sending-requests-02.png`
-- `sending-requests-03.png`
-- `sending-requests-04.png`
-- `sending-requests-05.png`
-- `sending-requests-06.png`
-- `setting-gtc-gdpr-consents-03.png`
-- `setting-gtc-gdpr-consents-07.png`
-- `trials-daily-business-03.png`
-- `trials-daily-business-05.png`
-- `turning-off-event-notifications.png`
-- `unread-messages-list.png`
-- `xero-integration-07.png`

@@ -26,6 +26,7 @@ Nothing here opens a browser. The output is a shoot list for a human.
 import argparse
 import collections
 import datetime as dt
+import json
 import os
 import re
 import subprocess
@@ -34,6 +35,7 @@ import sys
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 CONTENT = os.path.join(ROOT, "content")
 OUT = os.path.join(ROOT, "build", "reports", "image-audit.md")
+JSON_OUT = os.path.join(ROOT, "build", "reports", "image-audit.json")
 SIBLINGS = [("api-v1", os.path.join(ROOT, "..", "api-v1")),
             ("app", os.path.join(ROOT, "..", "app")),
             ("widgets-v1", os.path.join(ROOT, "..", "widgets-v1"))]
@@ -114,6 +116,66 @@ def churning_areas(words, keep=4):
     return {area: score for score, area in scored[:keep]}
 
 
+def live_url(area, slug):
+    """The page as the reader sees it. No /help/ prefix — that path is a hard 404."""
+    return f"https://help.zooza.online/{area.lower().replace(' ', '-')}/{slug}/"
+
+
+def app_screens():
+    """Screens from the app map, for turning a navigation cue into a link to open."""
+    path = os.path.join(ROOT, "build", "app-map", "app-map.yml")
+    if not os.path.exists(path):
+        return []
+    try:
+        import yaml
+    except ImportError:
+        return []
+    with open(path, encoding="utf-8") as fh:
+        loaded = yaml.safe_load(fh) or []
+    if isinstance(loaded, dict):          # the file grew a header at some point
+        loaded = loaded.get("screens", [])
+    return [s for s in loaded if isinstance(s, dict) and s.get("menu") and s.get("route")]
+
+
+NAV_CUE = re.compile(r"\*\*([A-Z][^*]{2,60}?→[^*]{2,60}?)\*\*")
+
+
+def best_screen(text, screens, region="uk"):
+    """Resolve the article's own navigation cue to a screen you can open.
+
+    Matched against the explicit "**Settings → Billing & Payments → Payment
+    settings**" cues the article actually prints, NOT against loose word
+    presence anywhere in the body. The loose version looked clever and was
+    wrong: every payments article contains the words client, booking and
+    payment somewhere, so a four-part generic path won every time and the
+    blocks guide was sent to the client import screen. An honest blank beats
+    a confident wrong link — the whole point of this list is to stop trusting
+    pictures nobody checked.
+    """
+    cues = [c.strip() for c in NAV_CUE.findall(text)]
+    if not cues:
+        return None, None
+    by_menu = {}
+    for sc in screens:
+        parts = tuple(p.strip().lower() for p in sc["menu"].split("→") if p.strip())
+        by_menu[parts] = sc
+    best, best_len = None, 0
+    for cue in cues:
+        want = tuple(p.strip().lower().rstrip(":.,") for p in cue.split("→") if p.strip())
+        for parts, sc in by_menu.items():
+            # the cue must be a leading or trailing run of the real menu path,
+            # so "Settings → General" matches "Settings → General → General"
+            # but a scatter of the same words elsewhere does not
+            if len(want) > len(parts):
+                continue
+            if parts[:len(want)] == want or parts[-len(want):] == want:
+                if len(want) > best_len:
+                    best, best_len = sc, len(want)
+    if not best:
+        return None, None
+    return best["menu"], best.get("url_template", "").replace("{region}", region)
+
+
 def articles():
     """Every published article -> (path, product_area, last_converted, [images])."""
     out = []
@@ -135,9 +197,11 @@ def articles():
 
             imgs = [(alt, os.path.basename(src)) for alt, src in IMG.findall(text)]
             if imgs:
-                out.append((os.path.relpath(p, ROOT), field("product_area"),
-                            field("last_converted"), field("needs_screenshot_replacement"),
-                            field("status"), imgs))
+                out.append({"path": os.path.relpath(p, ROOT), "area": field("product_area"),
+                            "slug": field("slug"), "converted": field("last_converted"),
+                            "needs": field("needs_screenshot_replacement"),
+                            "status": field("status"), "imgs": imgs,
+                            "body": text[m.end():]})
     return out
 
 
@@ -154,21 +218,26 @@ def main():
     today = dt.date.today()
 
     all_articles = articles()
+    screens = app_screens()
 
     # "Unused" has to mean unused by ANY article, not just the published ones.
     # Draft and archived articles are still in the repo and still want their
     # pictures; on the first run 33 of 132 "unused" files were referenced by
     # unpublished articles, and deleting them would have been a quiet loss.
-    referenced = {img for _, _, _, _, _, imgs in all_articles for _, img in imgs}
+    referenced = {img for a in all_articles for _, img in a["imgs"]}
     unused_candidates = set(first) - referenced
 
-    rows, flagged, undated = [], 0, 0
-    for path, area, converted, needs, status, imgs in all_articles:
-        if status != "published":
+    rows, flagged, undated, meta = [], 0, 0, {}
+    for a in all_articles:
+        path, area, converted, needs = a["path"], a["area"], a["converted"], a["needs"]
+        if a["status"] != "published":
             continue
         if args.area and area != args.area:
             continue
-        for alt, img in imgs:
+        cue, app_url = best_screen(a["body"], screens)
+        meta[path] = {"url": live_url(area, a["slug"]) if a["slug"] else "",
+                      "cue": cue or "", "app_url": app_url or ""}
+        for alt, img in a["imgs"]:
             added = first.get(img)
             if not added:
                 undated += 1
@@ -186,7 +255,8 @@ def main():
             if needs == "true":
                 score += 8
                 flagged += 1
-            rows.append((score, age, drift, added, converted, area, path, img, alt))
+            rows.append((score, age, drift, added, converted, area, path, img, alt,
+                         needs == "true"))
 
     rows.sort(reverse=True)
     unused = sorted(i for i in unused_candidates
@@ -216,20 +286,23 @@ def main():
                   "`needs_screenshot_replacement: true`, and are pushed up.", ""]
 
     lines += ["## Shoot list, by article", "",
-              "Work down it. Each row is one screen-shooting session.", "",
-              "| # | Article | Area | Images | Oldest | Rewritten after | Score |",
-              "|---:|---|---|---:|---:|---:|---:|"]
+              "Work down it. Each row is one screen-shooting session: open the help page,",
+              "open the screen beside it, and replace what no longer matches.", "",
+              "| # | Help page | Screen to open | Images | Oldest | Score |",
+              "|---:|---|---|---:|---:|---:|"]
     for i, (path, rs) in enumerate(ranked[:60], 1):
         worst = max(r[0] for r in rs)
         oldest = max(r[1] for r in rs)
-        drift = max(r[2] for r in rs)
-        lines.append(f"| {i} | `{os.path.basename(path)}` | {rs[0][5]} | {len(rs)} | "
-                     f"{oldest // 30} mo | {(str(drift // 30) + ' mo') if drift > 45 else '—'} | "
-                     f"{worst:.0f} |")
+        info = meta.get(path, {})
+        page = (f"[{os.path.basename(path)[:-3]}]({info['url']})" if info.get("url")
+                else f"`{os.path.basename(path)}`")
+        screen = (f"[{info['cue']}]({info['app_url']})" if info.get("app_url")
+                  else "_not mapped_")
+        lines.append(f"| {i} | {page} | {screen} | {len(rs)} | {oldest // 30} mo | {worst:.0f} |")
 
     lines += ["", "<details><summary>Every image, worst first</summary>", "",
               "| Score | Age | Area | Article | Image |", "|---:|---:|---|---|---|"]
-    for score, age, drift, added, conv, area, path, img, _ in rows[:300]:
+    for score, age, drift, added, conv, area, path, img, _, _f in rows[:300]:
         lines.append(f"| {score:.0f} | {age // 30} mo | {area} | "
                      f"`{os.path.basename(path)}` | `{img}` |")
     lines += ["", "</details>"]
@@ -252,11 +325,29 @@ def main():
     with open(OUT, "w", encoding="utf-8") as fh:
         fh.write("\n".join(lines) + "\n")
 
+    # Machine-readable twin, so a review board can be built from the same run
+    # rather than from a human re-typing the table.
+    payload = {"generated": today.isoformat(), "churn_days": args.churn_days,
+               "busiest_areas": hot, "unused": unused, "articles": []}
+    for path, rs in ranked:
+        info = meta.get(path, {})
+        payload["articles"].append({
+            "file": os.path.basename(path), "path": path, "area": rs[0][5],
+            "url": info.get("url", ""), "cue": info.get("cue", ""),
+            "app_url": info.get("app_url", ""),
+            "score": round(max(r[0] for r in rs)), "oldest_days": max(r[1] for r in rs),
+            "drift_days": max(r[2] for r in rs), "flagged": any(r[9] for r in rs),
+            "images": [{"file": r[7], "alt": r[8], "age_days": r[1], "added": r[3]} for r in rs],
+        })
+    with open(JSON_OUT, "w", encoding="utf-8") as fh:
+        json.dump(payload, fh, indent=1, ensure_ascii=False)
+
     print(f"{len(rows)} images across {len(per_article)} articles")
     print(f"  busiest areas: {', '.join(hot) or 'none detected'}")
     print(f"  marked needs_screenshot_replacement: {flagged}")
     print(f"  referenced by nothing: {len(unused)}")
     print(f"  report: {os.path.relpath(OUT, ROOT)}")
+    print(f"  data:   {os.path.relpath(JSON_OUT, ROOT)}")
     if args.top:
         print()
         for i, (path, rs) in enumerate(ranked[:args.top], 1):
