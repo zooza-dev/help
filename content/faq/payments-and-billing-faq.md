@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-30"
+last_converted: "2026-11-06"
 ---
 
 # Payments and Billing FAQ
@@ -128,7 +128,7 @@ Each instalment has **three** dates, not one, and the plan preview now shows all
 | **Payment created** | The debt appears on the booking and the client is asked to pay. On direct debit the collection starts here. | The due date **minus** `Days before booking is marked unpaid` |
 | **Due date** | When you expect the money on your account | The template's `Day of the month when the payment is due` |
 
-The due date is the one you choose. **The creation date is worked out backwards from it**, which is why a payment due on 6 October appears as created on 21 September: the days-to-pay field was 15. That field is in **Settings → Billing & Payments → Payment settings** (the guided inbound-payment setup writes the same field), and left at `0` it behaves as 15.
+The due date is the one you choose. **The creation date is worked out backwards from it**, which is why a payment due on 6 October appears as created on 21 September: the days-to-pay field was 15. On a booking's payment plan the two sit in their own columns, **Scheduled for** and **Due date**, so you can read the gap directly. That field is in **Settings → Billing & Payments → Payment settings** (the guided inbound-payment setup writes the same field), and left at `0` it behaves as 15.
 
 ### To get a specific pair of dates
 
@@ -756,6 +756,8 @@ A **credit** on a booking means the client has paid more than the total amount o
 Yes, since the end of October 2026. Before that the only ways out were deleting instalments one at a time or applying a different plan on top, and entry-pass renewals could not be stopped at all.
 
 On the booking's payment plan screen, use **Cancel payment plan**. The confirmation spells out what happens, and it is worth reading rather than clicking past:
+
+![A booking's payment plan: the template used and total, Change, Pause plan and Cancel payment plan, and the instalment table with separate Scheduled for and Due date columns](../../assets/images/payment-plan-cancel-and-dates.png)
 
 - **All future instalments are cancelled** and nothing more is billed under this plan.
 - **The amount not yet billed is not charged** and does not become debt.
