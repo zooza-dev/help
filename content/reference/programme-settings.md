@@ -73,7 +73,7 @@ Controls how the programme appears on your public booking forms.
 | `Allow multiple bookings for the programme` | Enables parents to enrol multiple children at once (e.g., twins). |
 | `Minimum / Maximum number of bookings` | Min and max children per form submission. |
 | `Collect basic data from` | **All** enrolled or **Only the registrant**. |
-| `Collect additional data from` | **All** enrolled or **All except the registrant**. |
+| `Collect additional data (additional fields) from:` | **All** enrolled or **All except the registrant**. |
 
 ### Other
 
@@ -120,7 +120,7 @@ Controls whether clients can book make-up sessions for missed classes.
 | `Make-up sessions method` | How clients access make-ups (notified, self-service, etc.). |
 | `Allow the use of credits for a make-up session` | Enables credit-based make-up redemption. |
 | `Allow tailored make-up sessions` | Lets clients request a tailored (custom) make-up session. |
-| `Automatic approval of tailored make-ups` | Auto-approves or requires admin review. |
+| `Automatic approval of tailored make-up sessions` | Auto-approves or requires admin review. |
 | `Allow make-up sessions at other companies` | Partner company make-ups (cross-company). |
 
 ### Make-up Sessions Settings
@@ -220,7 +220,7 @@ Select which timetables are available for trial bookings. Toggle **Automatically
 | `Send second follow-up` | Second reminder after additional N days. |
 | `Automatically transition trial to lost` | Auto-marks abandoned trials as "Trial Lost". |
 | `Change the status to "Trial Lost" after N days` | Timeout in days. |
-| `Send notification to client after trial lost` | Notifies the client when their trial expires. |
+| `Send notification to client after trial has been lost.` | Notifies the client when their trial expires. |
 | `Automatically mark abandoned trials` | Marks unattended trial bookings. |
 
 ## Auto-Enrolment
