@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-10-17"
+last_converted: "2026-11-06"
 related_articles: ["automatic-payment-reminders-detailed", "registration-status-faq"]
 ---
 

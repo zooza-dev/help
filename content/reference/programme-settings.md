@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-20"
+last_converted: "2026-11-06"
 ---
 
 # Programme Settings
@@ -153,6 +153,7 @@ Core programme identity and type.
 | Field | Description |
 |---|---|
 | `Programme name` | Public name shown on booking forms and your website. |
+| `Product Code (SKU)` | Networks only. Picked from the codes the HQ maintains, so the same kind of programme reports together across every unit. The field's own note says it: *"used by Master Franchisor to properly report performance of your programme"*. A standalone company can leave it alone. |
 | `URL address` | Custom URL slug for the programme page. |
 | `Programme description` | Rich text description shown during online booking. |
 | `Archive` | Archive the programme (hides it from active lists). |

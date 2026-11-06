@@ -12,7 +12,7 @@ status: published
 source_legacy_path: legacy/0034_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: "2026-09-20"
+last_converted: "2026-11-06"
 ---
 
 # Manage trial bookings — reschedule, convert, and close
@@ -196,7 +196,23 @@ Go to **Programme → Settings → Trial** to configure:
 - **Unit price per session** (for paid trials)
 - **Reserve seat:** whether a trial booking holds a capacity spot until the trial is resolved
 
-![Trial type setting — free or paid](../../assets/images/trials-daily-business-06.png)
+![Trial settings: the trial type options, and the Classes included in trial section with the automatic-add switch](../../assets/images/trials-daily-business-06.png)
+
+### Which classes the trial covers
+
+Underneath the trial type is **Classes included in trial**, and it decides where a
+prospective client can actually be placed.
+
+- **Automatically add newly created classes to trial** — on, every class you create in
+  this programme is open to trials from the moment it exists. The setting's own note adds
+  the important half: *"you can change individual settings per class at any time"*, so
+  this is a default, not a lock.
+- **Selected classes** lists the ones currently included, and says **"No classes are
+  currently selected"** when there are none.
+
+> **If trials are switched on but nobody can book one, look here first.** A programme can
+> have a perfectly good trial type set and still offer nothing, because no class is
+> included. That reads to the admin as a broken trial and to the parent as a full class.
 
 ![Trial duration and price settings](../../assets/images/trials-daily-business-07.png)
 

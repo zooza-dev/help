@@ -9,6 +9,11 @@
   "result": "unchanged",
   "why": "recaptured and compared; content area identical"
  },
+ "auto-cancel-unpaid-registrations-02.png": {
+  "date": "2026-11-06",
+  "result": "replaced",
+  "why": "round 1: recaptured and compared"
+ },
  "automatic-payment-reminders-01.png": {
   "date": "2026-11-06",
   "result": "unchanged",
@@ -23,6 +28,56 @@
   "date": "2026-11-06",
   "result": "unchanged",
   "why": "recaptured and compared; content area identical"
+ },
+ "blocks-creation-08.png": {
+  "date": "2026-11-06",
+  "result": "replaced",
+  "why": "round 1: recaptured and compared"
+ },
+ "booking-tile-customization-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "bookings-cancel.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "bookings-change-status.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "bookings-credits-tab.png": {
+  "date": "2026-11-06",
+  "result": "replaced",
+  "why": "round 1: recaptured and compared"
+ },
+ "bookings-list-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "bookings-list.png": {
+  "date": "2026-11-06",
+  "result": "replaced",
+  "why": "round 1: recaptured and compared"
+ },
+ "bulk-email-send-history.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "client-profile-101-03.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: client zone, assertion still matched"
+ },
+ "cls-sessions.png": {
+  "date": "2026-11-06",
+  "result": "replaced",
+  "why": "round 1: recaptured and compared"
  },
  "contact-form-editor-after-submit-01.png": {
   "date": "2026-11-06",
@@ -59,10 +114,85 @@
   "result": "unchanged",
   "why": "recaptured and compared; content area identical"
  },
+ "customizing-widgets-04.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "customizing-widgets-06.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "customizing-widgets-07.png": {
+  "date": "2026-11-06",
+  "result": "replaced",
+  "why": "round 1: recaptured and compared"
+ },
+ "delayed-start-registration-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
  "discount-code-07.png": {
   "date": "2026-11-06",
   "result": "unchanged",
   "why": "recaptured and compared; content area identical"
+ },
+ "documents-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "documents-02.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "documents-06.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "documents-11.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "documents-12.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "documents-19.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "entry-pass-client-view-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: client zone, assertion still matched"
+ },
+ "entry-pass-client-view-02.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: client zone, assertion still matched"
+ },
+ "fastpay-direct-debit-01.png": {
+  "date": "2026-11-06",
+  "result": "replaced",
+  "why": "round 1: recaptured and compared"
+ },
+ "group-connection-04.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "group-connection-06.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
  },
  "holiday-settings-01.png": {
   "date": "2026-11-06",
@@ -83,6 +213,16 @@
   "date": "2026-11-06",
   "result": "replaced",
   "why": "recaptured from the live account"
+ },
+ "instructor-attendance-management-02.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: client zone, assertion still matched"
+ },
+ "instructor-attendance-management-07.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: client zone, assertion still matched"
  },
  "invoice-profiles-list.png": {
   "date": "2026-11-06",
@@ -109,6 +249,11 @@
   "result": "unchanged",
   "why": "recaptured and compared; content area identical"
  },
+ "pay-as-you-go-client-book-session.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: client zone, assertion still matched"
+ },
  "payment-collection-setup.png": {
   "date": "2026-11-06",
   "result": "replaced",
@@ -133,6 +278,61 @@
   "date": "2026-11-06",
   "result": "unchanged",
   "why": "recaptured and compared; content area identical"
+ },
+ "prog-programmes-wiggle-wonders-0-12-months-settings-attendance.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "prog-programmes-wiggle-wonders-0-12-months-settings-auto-enrolment.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "prog-programmes-wiggle-wonders-0-12-months-settings-feedback.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "prog-programmes-wiggle-wonders-0-12-months-settings-online-booking.png": {
+  "date": "2026-11-06",
+  "result": "replaced",
+  "why": "round 1: recaptured and compared"
+ },
+ "prog-programmes-wiggle-wonders-0-12-months-settings-settings.png": {
+  "date": "2026-11-06",
+  "result": "replaced",
+  "why": "round 1: recaptured and compared"
+ },
+ "prog-programmes-wiggle-wonders-0-12-months-settings-trial.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "publish-widgets-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "replacement-hours-cross-01.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "replacement-hours-cross-07.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: client zone, assertion still matched"
+ },
+ "reports-dashboard.png": {
+  "date": "2026-11-06",
+  "result": "unchanged",
+  "why": "round 1: recaptured and compared; content area identical"
+ },
+ "reports-session-notifications.png": {
+  "date": "2026-11-06",
+  "result": "replaced",
+  "why": "round 1: recaptured and compared"
  },
  "setting-gtc-gdpr-consents-01.png": {
   "date": "2026-11-06",
@@ -168,6 +368,16 @@
   "date": "2026-11-06",
   "result": "kept",
   "why": "new capture shows an empty Trash; the old one teaches the feature"
+ },
+ "trials-daily-business-06.png": {
+  "date": "2026-11-06",
+  "result": "replaced",
+  "why": "round 1: recaptured and compared"
+ },
+ "trials-daily-business-08.png": {
+  "date": "2026-11-06",
+  "result": "replaced",
+  "why": "round 1: recaptured and compared"
  },
  "user-roles-02.png": {
   "date": "2026-11-06",
