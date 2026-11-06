@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-30"
+last_converted: "2026-11-06"
 related_articles: ["archive-or-delete-programme", "registration-status-faq", "ad-hoc-scheduled-payment"]
 ---
 
@@ -51,8 +51,9 @@ This is the most common source of confusion. A registration (or class) can be in
 | **Registration** | A client's booking on a class |
 | **Programme** (course) | A whole programme, with everything under it. Added October 2026 |
 | **Cancelled payment** | A scheduled payment that was cancelled via bulk cancel or the cancel action on a booking |
+| **Contact** | An enquiry from your website's contact form |
 
-Items deleted more than 30 days ago are permanently gone and cannot be recovered from here.
+Items deleted more than 30 days ago are permanently gone and cannot be recovered from here. The banner on the screen lists the current set, so trust it over any list written down — it has grown twice in 2026.
 
 > **A programme is the exception to "permanently gone".** Nothing actually hard-deletes a
 > programme — after 30 days it simply stops appearing in Trash and can no longer be
