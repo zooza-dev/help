@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-11-06"
+last_converted: "2026-11-07"
 ---
 
 # Programme Settings
@@ -132,7 +132,7 @@ Controls whether clients can book make-up sessions for missed classes.
 | `Apply filter` | "Before end of timetable" or "After end of timetable". |
 | `Allow customers to purchase/exchange an already used make-up session` | Allows rebooking used make-ups. |
 | `Flexible limit of make-up sessions` | Makes the limit soft — e.g., if limit is 3, client gets entitled to 3 make-ups every N sessions. |
-| `When cancelling of the make-up by the client` | Controls what happens when a client cancels their make-up. |
+| `When cancelling of the make-up session, return the credit to the client` | Controls what happens when a client cancels their make-up. |
 
 ### Restrictions on the Use of Make-up Sessions
 
@@ -232,9 +232,9 @@ Controls what happens when a client's current class/timetable is ending.
 | Field | Description |
 |---|---|
 | `Auto-enrolment type` | **None**, **Suggest timetables** (client picks from filtered options), **Duplicate current timetable** (1-to-1 classes only). |
-| `Notify the customer N days before the timetable ends` | Days before expiry to send the notification. |
-| `Keep customer in auto-enrollment for N days` | How long the offer stays visible in the client's profile (0 = default 30 days). |
-| `Auto-enrolment message` | Rich-text message sent to the client. |
+| `Notify the client N days before the class ends` | Days before expiry to send the notification. |
+| `Keep client in auto-enrolment for N days` | How long the offer stays visible in the client's profile (0 = default 30 days). |
+| `Auto-enrollment message` | Rich-text message sent to the client. |
 
 ### Filtering Options
 

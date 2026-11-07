@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-06"
+last_converted: "2026-11-07"
 related_articles: ["registration-and-booking-faq","transfer-and-copy-bookings","sending-email-sms","email-delivery-troubleshooting","async-exports"]
 ---
 
@@ -210,7 +210,7 @@ Shows next session date/time with attendance status, and a programme overview co
 
 Quick overview showing:
 
-- `Available session dates` / `Make-up sessions` / `Make-up sessions carried over` / `Discounts` / `Prepaid credit`
+- `Available session dates` / `Make-up sessions` / `Make-up session carried over` / `Discounts` / `Prepaid credit`
 
 Buttons: **Create credit** and **All credits**.
 
@@ -470,7 +470,7 @@ Button: **Add payment**.
 | `Delivery date` | Delivery/service date. |
 | `Payment method` | Dropdown (e.g. "Transfer payment"). |
 | `Use default item description` | Checkbox. |
-| `Send invoice to customer via email` | Checkbox. |
+| `Send invoice to client via email` | Checkbox. |
 | `Item description` | Editable description text. |
 
 ### Current Payment Plan

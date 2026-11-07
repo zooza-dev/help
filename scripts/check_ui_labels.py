@@ -21,6 +21,7 @@ example data, a third-party screen, or a string assembled at runtime.
 
 import argparse
 import collections
+import difflib
 import os
 import re
 import subprocess
@@ -54,6 +55,23 @@ NOT_A_LABEL = [
 # Articles about somebody else's product: their field names are theirs.
 THIRD_PARTY = re.compile(r"(abra-flexi|superfaktura|szamlazz|stripe|gocardless|pohoda|xero|"
                          r"quickbooks|ecomail|mailchimp|wix|wordpress)", re.I)
+
+
+VALUE = re.compile(r"^\s*[a-zA-Z_0-9]+\s*:\s*'((?:[^'\\\\]|\\\\.)*)'", re.M)
+
+
+def app_labels(blob: str) -> list:
+    """Every individual UI string, so we can suggest what a missing one is now called.
+
+    Searching the whole file as one blob answers "does this exist"; it cannot
+    answer "then what is it called today", which is the question that actually
+    gets an article fixed.
+    """
+    seen = {}
+    for raw in VALUE.findall(blob):
+        if 2 < len(raw) < 90 and not raw.startswith("<"):
+            seen.setdefault(norm(raw), raw.replace("\\'", "'").replace('\\"', '"'))
+    return seen
 
 
 def app_strings() -> str:
@@ -101,7 +119,10 @@ def main():
     ap.add_argument("--quiet", action="store_true", help="report only, no per-label output")
     args = ap.parse_args()
 
-    strings = norm(app_strings())
+    blob = app_strings()
+    strings = norm(blob)
+    labels = app_labels(blob)
+    keys = list(labels)
     if len(strings) < 10000:
         print("could not read the app's English strings — is ../app checked out?",
               file=sys.stderr)
@@ -150,7 +171,22 @@ def main():
         lines.append(f"### `{rel}` — {len(by_article[rel])}")
         lines.append("")
         for n, label in sorted(by_article[rel], reverse=True):
-            lines.append(f"- `{label}`" + (f"  ×{n}" if n > 1 else ""))
+            row = f"- `{label}`" + (f"  ×{n}" if n > 1 else "")
+            # Only suggest when the match is strong. A loose cutoff produced
+            # "Booking fee → Booking #" and "Amount owed → Amount of use", which
+            # is worse than silence: a plausible wrong answer gets pasted in.
+            near = difflib.get_close_matches(norm(label), keys, n=1, cutoff=0.86)
+            if near and "%" in labels[near[0]]:
+                # The app string has a placeholder and the article filled it in -
+                # "Length of session - %1 minutes:" written up as "90 minutes".
+                # Correct on both sides; not a rename, and saying so stops four
+                # confident wrong suggestions.
+                row += f"\n  - fine: our example of `{labels[near[0]]}`"
+            elif near:
+                row += f"\n  - looks renamed → `{labels[near[0]]}`"
+            else:
+                row += "\n  - no close match; check the screen by hand"
+            lines.append(row)
         lines.append("")
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
