@@ -59,7 +59,7 @@ See [Copy a programme or class](copy-programme-and-class.md) for the full copy w
 
 ## Step 4 — Set up auto-enrolment (optional)
 
-If you want clients to be offered auto-continuation at the end of the current billing period:
+If you want clients to be offered auto-enrolment at the end of the current billing period:
 
 1. Open the class.
 2. Go to **Class Settings → Auto-enrolment**.

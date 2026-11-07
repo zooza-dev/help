@@ -240,7 +240,7 @@ If clients reach the payment screen and it renders empty, check these three in o
 
 ## Changing a programme to a one-off payment
 
-Switching a programme from course fee or membership to a **one-off payment** has an order to it, and getting it wrong leaves the old amount showing on your booking form:
+Switching a programme from term payment or membership to a **one-off payment** has an order to it, and getting it wrong leaves the old amount showing on your booking form:
 
 1. **First set the price per session to 0.**
 2. **Then** switch the collection type to one-off.

@@ -126,7 +126,7 @@ A draft amendment from May 2026 proposes a penalty-free period from 1 January to
 
 ## Most course providers are not affected
 
-The mandates cover business-to-business and business-to-government invoicing. An invoice for a course fee, issued to a parent or participant as a private individual, is a **consumer (B2C) invoice** — and B2C is explicitly excluded from the Slovak mandate.
+The mandates cover business-to-business and business-to-government invoicing. An invoice for a term payment, issued to a parent or participant as a private individual, is a **consumer (B2C) invoice** — and B2C is explicitly excluded from the Slovak mandate.
 
 If every invoice you issue from Zooza goes to an individual, there is nothing you need to do.
 

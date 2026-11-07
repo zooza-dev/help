@@ -6,7 +6,7 @@
 # ║  Edit there, then run: python3 scripts/sync_terminology.py      ║
 # ╚══════════════════════════════════════════════════════════════════╝
 #
-# Last synced: 2026-11-06
+# Last synced: 2026-11-07
 # Used by: scripts/normalize_terminology.py → build/terminology/dictionary.json
 #
 # Fields per term:
@@ -298,7 +298,7 @@ terms:
       cz: ["členství", "členské", "předplatné", "měsíční poplatek"]
       de: ["Mitgliedschaft", "Abo", "monatlich", "Dauerauftrag"]
     do_not_confuse_with:
-      - term: "Course fee (SK: kurzovné, CZ: kurzovné)"
+      - term: "Term payment (SK: kurzovné, CZ: platba za semestr)"
         reason: >
           The two SK/CZ words sound alike to a newcomer and are the single most common
           pricing mix-up. "Členské" = Membership: a flat amount per period, no total,
@@ -312,7 +312,7 @@ terms:
       (Programme → Settings → Price and payment → Membership) and attach it.
       If Membership "does not work", check what kind of template is attached before
       anything else.
-      ONE PROGRAMME, ONE PAYMENT TYPE (confirmed 2026-08-30): membership and course fee
+      ONE PROGRAMME, ONE PAYMENT TYPE (confirmed 2026-08-30): membership and term payment
       cannot be mixed across classes inside one programme — the type is set on the
       programme. Split into two programmes when the payment MODEL differs; use Blocks
       when only the collection SCHEDULE differs.
@@ -821,7 +821,7 @@ terms:
     public: true
 
   - id: auto-continuation
-    canonical_en: "Auto-continuation"
+    canonical_en: "Auto-enrolment"
     category: "bookings"
     definition: >
       A Zooza feature that automatically contacts clients before their current
@@ -832,11 +832,13 @@ terms:
       confirm and choose their next Class — no automatic booking is created without
       client action.
     context:
-      admin: "Auto-continuation"
+      admin: "Auto-enrolment"
       client: "Continue / Re-enrol"
       widget: null
+    deprecated:
+      - "Auto-continuation"       # was canonical until 2026-11-07; the app always said auto-enrolment
+      - "Retention"               # the code name (`retention` tile, component, API fields); never in UI or help text
     synonyms:
-      - "auto-enrolment"          # legacy EN term still used in some contexts
       - "automatic re-enrolment"
       - "automatic continuation"
     translations:
@@ -855,7 +857,9 @@ terms:
       hu: ["automatikus folytatás", "megújítás", "következő időszak"]
       de: ["automatische Verlängerung", "Verlängerung", "nächste Saison", "Fortsetzung"]
     ai_notes: >
-      Auto-continuation is triggered before the Class ends (number of days is
+      Decided 2026-11-07: the user-facing term is Auto-enrolment (EN) / Automatické
+      pokračovanie (SK). The code calls it `retention`; never show that word to users.
+      Auto-enrolment is triggered before the Class ends (number of days is
       configurable). The client receives a personalised link to their Client Profile.
       From there they choose which Class to continue into.
       Important: the client MUST actively select a Class — no booking is created
@@ -1862,9 +1866,14 @@ terms:
       - "Course fee"    # old term; replaced by Term Payment
       - "Programme fee"
     translations:
-      sk: "Platba za semester / Termínová platba"
+      sk: "Kurzovné"              # decided 2026-11-07: SK keeps the established term
       cz: "Platba za semestr"
-      de: "Kursbeitrag / Semesterbeitrag"
+      de: "Semesterbeitrag"
+      pl: "Opłata semestralna"
+      ro: "Taxă pe semestru"
+      hu: "Féléves díj"
+      it: "Quota semestrale"
+      fr: "Frais semestriels"
     public: true
 
   - id: invoice-buyer
@@ -1997,6 +2006,7 @@ terms:
 
   - id: retention
     canonical_en: "Retention"
+    status: "technical-only"      # 2026-11-07: not a UI term. The UI says Auto-enrolment (see auto-continuation).
     category: "client-management"
     definition: >
       A Zooza feature that sends a re-engagement link to clients whose trial was lost
@@ -2497,8 +2507,8 @@ terms:
       - "waitlist"
       - "queue"
     translations:
-      sk: "Čakacia listina / Poradovník"
-      cz: "Čekací listina / Pořadník"
+      sk: "Poradovník"            # 2026-11-07: UI term; "čakacia listina" is a search synonym only
+      cz: "Pořadník"              # 2026-11-07: native Czech spelling, not "poradovník"
       de: "Warteliste"
       hu: "Várólistán"
     intent_keywords:
@@ -2564,9 +2574,14 @@ terms:
       - "lead gen class"
       - "interest registration"
     translations:
-      sk: "Zbierny kôš / Zber záujmu"
-      cz: "Sběrný koš / Sběr zájmu"
-      de: "Lead-Sammlung / Interessensbekundung"
+      sk: "Zber záujmu"           # 2026-11-07: never "zber kontaktov" — Contacts is a different module
+      cz: "Sběr zájmu"            # not "sběr kontaktů"
+      de: "Interessentensammlung"
+      pl: "Zbieranie zainteresowanych"
+      ro: "Colectare de interes"
+      hu: "Érdeklődők gyűjtése"
+      it: "Raccolta di interesse"
+      fr: "Recueil d'intérêt"
     intent_keywords:
       en: ["lead collection", "collect interest", "waiting for timetable", "register interest",
            "no sessions available", "interest only registration", "gather demand", "lead class"]
@@ -2593,6 +2608,15 @@ terms:
           Pay-as-you-go is a pricing model (clients pay per session). Lead Collection
           is a collection state — the class has no sessions and is waiting for demand
           before becoming any type of class.
+    meanings:                     # decided 2026-11-07: one name, two features; always say which
+      class: >
+        Lead collection CLASS (group_interested): a class without sessions. Clients register
+        interest; the admin moves them to a real class later. content/guides/lead-collection.md
+        means this.
+      trial_type: >
+        Lead collection TRIAL TYPE (trial_type = lead_collection): the trial booking is created
+        without a trial session and stays in "trial not started"; the admin enrols the client
+        into a trial session by hand. The trial-type picker and Setup's trial question mean this.
     ai_notes: >
       When an admin asks "why does the class show no payment option" or "QR code is
       not showing on this class", first check if the class type is Lead Collection.

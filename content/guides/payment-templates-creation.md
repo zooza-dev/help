@@ -101,7 +101,7 @@ Note: If you use discounted payment templates, you can find a clear list of them
 
 This catches people out every autumn, and it is not a fault.
 
-**Monthly divides the course fee by the number of months in which the class has sessions** — not by the number of months you think of the course as running. A school-year course that finishes in the first week of June touches nine months, October to June, so a fee of €344 comes out as nine payments of €38.22 instead of the eight round amounts you had in mind.
+**Monthly divides the term payment by the number of months in which the class has sessions** — not by the number of months you think of the course as running. A school-year course that finishes in the first week of June touches nine months, October to June, so a fee of €344 comes out as nine payments of €38.22 instead of the eight round amounts you had in mind.
 
 Two ways to get the instalments you wanted:
 
@@ -206,7 +206,7 @@ one of them. Check in this order before looking any further:
    created before that has to pick it up. If the class was set up first, activate the
    template and then **Sync settings** so existing programmes and classes take the change.
 2. **Is it the right kind of template for how the programme collects money?** A programme
-   charging a **course fee** needs a prepaid-style template; one running on **membership**
+   charging a **term payment** needs a prepaid-style template; one running on **membership**
    needs a membership template. The two are not interchangeable, and a template of the
    wrong kind simply never appears — nothing warns you.
 

@@ -5,7 +5,7 @@ slug: "faq-programmes"
 type: "faq"
 product_area: "Programmes"
 audience: ["admin"]
-tags: ["programme", "class", "archive", "delete", "venue", "price", "rename", "trial", "auto-continuation"]
+tags: ["programme", "class", "archive", "delete", "venue", "price", "rename", "trial", "auto-enrolment"]
 status: "published"
 source_language: "en"
 needs_screenshot_replacement: false
@@ -196,7 +196,7 @@ You can also use the **"Include Initial Full Scheduled Payment"** setting to con
 
 ---
 
-## A client sees "No groups available" on the auto-continuation screen — what does it mean?
+## A client sees "No groups available" on the auto-enrolment screen — what does it mean?
 
 This message means the target groups (classes) are **not enabled for auto-enrolment** — it does not mean no groups exist in your account.
 

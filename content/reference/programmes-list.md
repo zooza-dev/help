@@ -43,7 +43,7 @@ Use the filter bar at the top to narrow the list:
 - **Programme type** — filter by structure (class, 1-to-1).
 - **Status** — default is "Not Archived". Change to see archived programmes.
 - **Labels** — filter by custom tags.
-- **Money collection** — filter by payment model: One-off payment, Course fee (fixed price), or Membership.
+- **Money collection** — filter by payment model: One-off payment, Term payment (fixed price), or Membership.
 - **Features** — filter by programme capability: Trial available, Make-up sessions enabled, Auto-enrolment enabled, or Has active/upcoming classes.
 
 Results can be sorted using the **Sort** dropdown (default: "From newest").

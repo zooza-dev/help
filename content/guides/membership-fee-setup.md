@@ -52,7 +52,7 @@ Two things that follow from the difference:
 **You cannot mix membership and programme fee inside a single programme.** The
 payment type is set on the programme and applies to every class in it. There is no
 per-class override, so a programme cannot hold one class charging a monthly
-membership and another charging a course fee.
+membership and another charging a term payment.
 
 When you need both, **split them into two programmes** — one for each payment model.
 That is a normal way to run an account, not a workaround. The only thing to watch is
