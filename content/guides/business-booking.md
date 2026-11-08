@@ -11,7 +11,7 @@ status: "archived"
 source_legacy_path: "legacy/0031_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-11-08"
 ---
 
 # Business booking
@@ -58,3 +58,9 @@ Any booking that contains at least one of these fields filled in is flagged in t
 ![Screenshot](../../assets/images/business-registration-03.png)
 
 If you have invoice generation enabled, the resulting invoice will have the company details as the billing details and not the client details.
+
+## Where this setting lives now
+
+![Booking form → Business fields drawer in programme settings](../../assets/images/business-fields-drawer.png)
+
+Programme → the **Settings** tab → the **Booking form** tile → **Business fields**. Typing the name into the search at the top of that tab is quicker than hunting for the tile. The drawer saves as you go — there is no Save button to press.

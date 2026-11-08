@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/labels-and-extra-fields.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-10"
+last_converted: "2026-11-08"
 related_articles: ["booking-form-settings", "booking-widget-faq"]
 ---
 
@@ -209,6 +209,13 @@ This means that even if a widget integration is outdated or a custom-embedded fo
 When additional fields are enabled, they appear below the standard booking form fields (name, email, phone). Business fields appear in a separate section that is shown when the client selects the "Register as company" option.
 
 Custom choice fields appear as dropdown menus. Mandatory fields are marked with an asterisk (*).
+
+
+## Where this setting lives now
+
+![Booking form → Custom fields drawer in programme settings](../../assets/images/custom-fields-drawer.png)
+
+Programme → the **Settings** tab → the **Booking form** tile → **Custom fields**. Typing the name into the search at the top of that tab is quicker than hunting for the tile. The drawer saves as you go — there is no Save button to press.
 
 ## Related
 

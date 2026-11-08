@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-08-16"
+last_converted: "2026-11-08"
 ---
 
 # Collect information with a Google Form
@@ -114,3 +114,9 @@ Deleting does not touch the form in your Google Drive — that is still yours, w
 **A parent says they filled it in but you cannot see it.** Look in the unmatched answers. They almost certainly used a different email address.
 
 **The picker will not open.** Your company's Google connection is missing something Zooza needs. Reconnect Google from the integrations page, and contact support if it keeps happening.
+
+## Where this setting lives now
+
+![What clients see → Google Forms drawer in programme settings](../../assets/images/google-forms-drawer.png)
+
+Programme → the **Settings** tab → the **What clients see** tile → **Google Forms**. Typing the name into the search at the top of that tab is quicker than hunting for the tile. The drawer saves as you go — there is no Save button to press.

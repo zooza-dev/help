@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-11-08"
 related_articles: ["collecting-google-reviews", "creating-a-location"]
 ---
 
@@ -78,6 +78,13 @@ This is normal. Zooza pulls reviews from Google **once a day**, so a brand-new r
 ## What does "needs reconnect" mean on the Google connection?
 
 Google has expired or revoked Zooza's permission, so review requests and read-back pause. Open the **Google connection** panel under **Feedback → Reviews** and click **Reconnect** to authorise again. Once reconnected, everything resumes — your place links are preserved.
+
+
+## Where this setting lives now
+
+![Feedback and reviews → Google reviews drawer in programme settings](../../assets/images/google-reviews-drawer.png)
+
+Programme → the **Settings** tab → the **Feedback and reviews** tile → **Google reviews**. Typing the name into the search at the top of that tab is quicker than hunting for the tile. The drawer saves as you go — there is no Save button to press.
 
 ## Related
 

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-07-22"
+last_converted: "2026-11-08"
 related_articles: ["invoice-profiles-and-bank-accounts", "billing-and-invoicing", "price-and-payment-setup", "payments-and-billing-faq"]
 ---
 
@@ -98,6 +98,13 @@ For programmes and classes mid-term, the safest moment to switch entities is a p
 ## Products and orders
 
 Products carry their own invoice profile too, and after your account moves to the new billing model that profile is used **for invoicing as well** — not only in the booking widget. If a product was set to an entity other than your company default, its invoices now come from that entity.
+
+
+## Where this setting lives now
+
+![Payment collection → Invoicing drawer in programme settings](../../assets/images/invoicing-drawer.png)
+
+Programme → the **Settings** tab → the **Payment collection** tile → **Invoicing**. Typing the name into the search at the top of that tab is quicker than hunting for the tile. The drawer saves as you go — there is no Save button to press.
 
 ---
 

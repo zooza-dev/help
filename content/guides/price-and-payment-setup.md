@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/setting-the-price-on-a-course.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-24"
+last_converted: "2026-11-08"
 related_articles: ["payment-templates-creation","membership-fee-setup","late-bookings","payment-options","stripe-payments-faq","integrations-hub"]
 ---
 
@@ -307,6 +307,13 @@ Click **Change** to open the reminders configuration. For detailed setup instruc
 | Billable sessions | — | — | — | Programme fee only |
 | Late bookings | — | — | Yes | Yes |
 | Payments managed by registrant | — | Yes | Yes | Yes |
+
+
+## Where this setting lives now
+
+![Price → Price and payment drawer in programme settings](../../assets/images/price-and-payment-drawer.png)
+
+Programme → the **Settings** tab → the **Price** tile → **Price and payment**. Typing the name into the search at the top of that tab is quicker than hunting for the tile. The drawer saves as you go — there is no Save button to press.
 
 ## Related
 

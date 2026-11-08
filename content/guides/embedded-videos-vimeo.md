@@ -12,7 +12,7 @@ related_articles: ["documents", "client-profile-101", "publish-widgets", "integr
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-13"
+last_converted: "2026-11-08"
 ---
 
 # Embed videos — Vimeo setup for client access
@@ -157,6 +157,13 @@ Clients log in to their profile and see all videos attached to their programmes 
 | Plays on your own site, not on the Zooza booking page | Older accounts never had `zooza.site` whitelisted | Open **Settings → Integrations → Vimeo** once; Zooza's own domains are now managed for you |
 | Video does not appear in Client Profile | Video not attached in Zooza, or visibility set to Admin only | Check Documents section on the programme/class/session |
 | Video plays but without audio | Vimeo issue — check the original upload | Re-upload the video to Vimeo |
+
+
+## Where this setting lives now
+
+![What clients see → Videos drawer in programme settings](../../assets/images/videos-drawer.png)
+
+Programme → the **Settings** tab → the **What clients see** tile → **Videos**. Typing the name into the search at the top of that tab is quicker than hunting for the tile. The drawer saves as you go — there is no Save button to press.
 
 ---
 

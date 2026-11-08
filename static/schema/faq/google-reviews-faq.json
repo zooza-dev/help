@@ -91,6 +91,14 @@
         "@type": "Answer",
         "text": "Google has expired or revoked Zooza's permission, so review requests and read-back pause. Open the Google connection panel under Feedback → Reviews and click Reconnect to authorise again. Once reconnected, everything resumes — your place links are preserved."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Where this setting lives now",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Programme → the Settings tab → the Feedback and reviews tile → Google reviews. Typing the name into the search at the top of that tab is quicker than hunting for the tile. The drawer saves as you go — there is no Save button to press."
+      }
     }
   ]
 }

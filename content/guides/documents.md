@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0114_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-20"
+last_converted: "2026-11-08"
 related_articles: ["class-detail", "client-profile-101"]
 ---
 
@@ -175,3 +175,9 @@ Select which document you want to send to the client from the drop down list and
 For example, the document with the dynamic tags used might look like this:
 
 ![Screenshot](../../assets/images/documents-26.png)
+
+## Where this setting lives now
+
+![What clients see → Documents drawer in programme settings](../../assets/images/documents-drawer.png)
+
+Programme → the **Settings** tab → the **What clients see** tile → **Documents**. Typing the name into the search at the top of that tab is quicker than hunting for the tile. The drawer saves as you go — there is no Save button to press.

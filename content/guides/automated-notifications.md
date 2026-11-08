@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-27"
+last_converted: "2026-11-08"
 related_articles: ["session-booking-reminder", "message-templates", "dynamic-tags", "pay-as-you-go-programme", "pay-as-you-go-faq", "entry-pass-client-view"]
 ---
 
@@ -231,3 +231,9 @@ In addition to automatic notifications, you can send a custom one-off email for 
 5. Set the timing offset (e.g. 1 hour after), write the subject and message, and save.
 
 The email is sent automatically to all enrolled clients based on the timing you set. Each session can have its own individual message independent of the programme-level notification templates.
+
+## Where this setting lives now
+
+![Messages to clients → Communication drawer in programme settings](../../assets/images/messages-communication-drawer.png)
+
+Programme → the **Settings** tab → the **Messages to clients** tile → **Communication**. Typing the name into the search at the top of that tab is quicker than hunting for the tile. The drawer saves as you go — there is no Save button to press.

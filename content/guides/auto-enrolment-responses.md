@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-21"
+last_converted: "2026-11-08"
 ---
 
 # Monitoring auto-enrolment responses
@@ -102,3 +102,8 @@ Accepting an auto-enrolment invitation does **not** automatically create a new b
 2. Send a reminder via **Communication → Send message** — select the relevant class as the target and include the programme link.
 3. Note: auto-enrolment invitations are not re-sent automatically. You must send the reminder manually.
 
+## Where this setting lives now
+
+![When a class ends → Classes you offer into auto-enrolment drawer in programme settings](../../assets/images/auto-enrolment-classes-drawer.png)
+
+Programme → the **Settings** tab → the **When a class ends** tile → **Classes you offer into auto-enrolment**. Typing the name into the search at the top of that tab is quicker than hunting for the tile. The drawer saves as you go — there is no Save button to press.

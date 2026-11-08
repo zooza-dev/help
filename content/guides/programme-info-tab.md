@@ -150,6 +150,13 @@ keeps going off-message.
 > markets needs to decide which language this content is in — or leave it customisable
 > and let each unit write its own.
 
+
+## Where this setting lives now
+
+![What clients see → Info tab visibility drawer in programme settings](../../assets/images/info-tab-visibility-drawer.png)
+
+Programme → the **Settings** tab → the **What clients see** tile → **Info tab visibility**. Typing the name into the search at the top of that tab is quicker than hunting for the tile. The drawer saves as you go — there is no Save button to press.
+
 ---
 
 ## Related

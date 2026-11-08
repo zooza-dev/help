@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0104_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-11-08"
 ---
 
 # How to sell products during booking / booking (T-shirt example)
@@ -123,3 +123,9 @@ That part (fulfillment and shipping) must be handled by the business owner using
 ### Practical takeaway
 
 Zooza is not a 100% e-commerce platform, but for smaller volumes and simple add-on sales (T-shirts, materials, simple digital add-ons), it is usually more than enough.
+
+## Where this setting lives now
+
+![What clients see → Products sold on this programme drawer in programme settings](../../assets/images/products-on-programme-drawer.png)
+
+Programme → the **Settings** tab → the **What clients see** tile → **Products sold on this programme**. Typing the name into the search at the top of that tab is quicker than hunting for the tile. The drawer saves as you go — there is no Save button to press.

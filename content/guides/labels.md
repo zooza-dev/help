@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/labels-and-extra-fields.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-17"
+last_converted: "2026-11-08"
 related_articles: ["working-with-contacts", "contact-form-setup", "settings-hub"]
 ---
 
@@ -113,6 +113,13 @@ This is especially useful when managing a large number of programmes or classes 
 Labels are included in data exports and Power BI reports. The Labels table in Power BI contains all labels with their associations. For details, see [Power BI Data description](power-bi-data-description.md).
 ![Screenshot — labels](../../assets/images/labels-06.png)
 ![Screenshot — labels](../../assets/images/labels-07.png)
+
+
+## Where this setting lives now
+
+![Programme details → Labels and colour drawer in programme settings](../../assets/images/labels-and-colour-drawer.png)
+
+Programme → the **Settings** tab → the **Programme details** tile → **Labels and colour**. Typing the name into the search at the top of that tab is quicker than hunting for the tile. The drawer saves as you go — there is no Save button to press.
 
 ## Related
 

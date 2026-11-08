@@ -19,6 +19,16 @@
   "result": "replaced",
   "why": "programme settings redesign: new drawer, from the 8 Nov set"
  },
+ "auto-enrolment-classes-drawer.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: When a class ends - Classes you offer into auto-enrolment drawer"
+ },
+ "auto-enrolment-shown-drawer.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: When a class ends - What your auto-enrolment clients are shown drawer"
+ },
  "automatic-payment-reminders-01.png": {
   "date": "2026-11-06",
   "result": "unchanged",
@@ -74,6 +84,11 @@
   "result": "unchanged",
   "why": "round 1: recaptured and compared; content area identical"
  },
+ "business-fields-drawer.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: Booking form - Business fields drawer"
+ },
  "client-profile-101-03.png": {
   "date": "2026-11-06",
   "result": "unchanged",
@@ -118,6 +133,11 @@
   "date": "2026-11-06",
   "result": "unchanged",
   "why": "recaptured and compared; content area identical"
+ },
+ "custom-fields-drawer.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: Booking form - Custom fields drawer"
  },
  "customizing-widgets-04.png": {
   "date": "2026-11-06",
@@ -174,6 +194,16 @@
   "result": "unchanged",
   "why": "round 1: recaptured and compared; content area identical"
  },
+ "documents-drawer.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: What clients see - Documents drawer"
+ },
+ "down-payment-drawer.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: Price - Down payment drawer"
+ },
  "entry-pass-client-view-01.png": {
   "date": "2026-11-06",
   "result": "unchanged",
@@ -188,6 +218,16 @@
   "date": "2026-11-06",
   "result": "replaced",
   "why": "round 1: recaptured and compared"
+ },
+ "google-forms-drawer.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: What clients see - Google Forms drawer"
+ },
+ "google-reviews-drawer.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: Feedback and reviews - Google reviews drawer"
  },
  "group-connection-04.png": {
   "date": "2026-11-06",
@@ -219,6 +259,11 @@
   "result": "replaced",
   "why": "recaptured from the live account"
  },
+ "info-tab-visibility-drawer.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: What clients see - Info tab visibility drawer"
+ },
  "instructor-attendance-management-02.png": {
   "date": "2026-11-06",
   "result": "unchanged",
@@ -234,6 +279,16 @@
   "result": "unchanged",
   "why": "recaptured and compared; content area identical"
  },
+ "invoicing-drawer.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: Payment collection - Invoicing drawer"
+ },
+ "labels-and-colour-drawer.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: Programme details - Labels and colour drawer"
+ },
  "lecturer-substitution-01.png": {
   "date": "2026-11-06",
   "result": "unchanged",
@@ -243,6 +298,16 @@
   "date": "2026-11-06",
   "result": "unchanged",
   "why": "recaptured and compared; content area identical"
+ },
+ "messages-communication-drawer.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: Messages to clients - Communication drawer"
+ },
+ "metadata-drawer.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: Programme details - Metadata drawer"
  },
  "notifications-center-02.png": {
   "date": "2026-11-06",
@@ -264,6 +329,11 @@
   "result": "replaced",
   "why": "recaptured from the live account"
  },
+ "payment-methods-drawer.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: Payment collection - Payment Methods drawer"
+ },
  "payment-pairing-04.png": {
   "date": "2026-11-06",
   "result": "unchanged",
@@ -283,6 +353,16 @@
   "date": "2026-11-06",
   "result": "unchanged",
   "why": "recaptured and compared; content area identical"
+ },
+ "price-and-payment-drawer.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: Price - Price and payment drawer"
+ },
+ "products-on-programme-drawer.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: What clients see - Products sold on this programme drawer"
  },
  "prog-programmes-wiggle-wonders-0-12-months-settings-additional-fields.png": {
   "date": "2026-11-08",
@@ -419,6 +499,11 @@
   "result": "replaced",
   "why": "round 1: recaptured and compared"
  },
+ "urls-drawer.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: What clients see - URLs drawer"
+ },
  "user-roles-02.png": {
   "date": "2026-11-06",
   "result": "unchanged",
@@ -433,6 +518,11 @@
   "date": "2026-11-06",
   "result": "unchanged",
   "why": "recaptured and compared; content area identical"
+ },
+ "videos-drawer.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: What clients see - Videos drawer"
  },
  "zooza-sites-05.png": {
   "date": "2026-11-06",
