@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0023_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-26"
+last_converted: "2026-11-08"
 related_articles: ["client-profile-faq", "client-management-faq", "documents"]
 ---
 
@@ -131,6 +131,25 @@ If a client cancels a session or misses it, and the provider allows make-ups, th
 Make-up availability depends on real capacity — if no suitable session with space is available, the option does not appear. Clients receive email or WhatsApp reminders about available make-ups.
 
 ![Screenshot — client profile 101](../../assets/images/client-profile-101-07.png)
+
+### What the parent sees on the Attendance tab
+
+![Wireframe of the parent's Attendance tab: a make-up offer with its deadline, the Upcoming, Past and Whole schedule filters, the next session expanded with venue, instructor and an I can't come button, and the rest of the schedule with its attendance states](../../assets/images/client-zone-attendance-wireframe.png)
+
+The offer sits at the top, with **how long it stays valid** — a make-up credit expires, and a
+parent who leaves it does lose it. Underneath, the sessions, filtered to **Upcoming**,
+**Past** or the **Whole schedule**.
+
+The next session opens with its venue and instructor, and the **I can't come** button beside
+your own cancellation rule in plain words: by when, and whether the session is still charged.
+That sentence is yours — it comes from the cancellation limit on the programme, so if it
+reads wrongly to a parent, that is where to change it. See
+[Cancellation limit settings](cancellation-limit-settings.md).
+
+> **This one is drawn, not photographed.** It is a wireframe, so it shows the shape of the
+> screen rather than one account's version of it — no names, no dates of birth, and nothing
+> that goes stale when a colour changes. Your own profile will differ in styling, and in
+> which tabs you have switched on.
 
 
 ## Benefits
