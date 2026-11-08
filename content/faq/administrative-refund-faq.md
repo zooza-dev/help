@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-06"
+last_converted: "2026-11-08"
 related_articles: ["stripe-payments-faq", "payments-and-billing-faq", "cancellation-reasons", "edit-payment-on-booking", "scheduled-registration-cancellation"]
 ---
 
@@ -122,6 +122,20 @@ and what you decided.
 **The gap to close before you switch it on:** approving creates an expectation and does
 not create a payment. If nobody on your team then issues the refund in Stripe, the client
 has an email saying yes and no money. Decide who owns that step first.
+
+## Can I offer a discount code instead of giving money back?
+
+Yes. **Settings → General → Offer a discount code instead of a refund.** When a client
+cancels, they are offered a discount code towards a future booking as an alternative to a
+refund.
+
+It is an offer, not a substitution — the client chooses. Somewhere this is a fair trade
+(the family is coming back next term anyway and would rather have more than their money
+back) and somewhere it reads as refusing a refund, so it depends on your terms and the
+reason they are leaving.
+
+> **Check your own cancellation terms first.** Where a refund is a legal obligation,
+> offering a code instead of paying it is not a choice you have.
 
 ## A client cancelled their registration — can Zooza automatically keep a percentage as a cancellation fee?
 

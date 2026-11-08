@@ -1,14 +1,14 @@
 # SEO & AI Readiness Report
 
-**Generated:** 2026-11-06
+**Generated:** 2026-11-08
 
 ## Summary
 
-- **Total docs checked:** 279
+- **Total docs checked:** 280
 - **Docs with errors:** 0
-- **Docs with warnings only:** 61
+- **Docs with warnings only:** 62
 - **Total errors:** 0
-- **Total warnings:** 155
+- **Total warnings:** 156
 - **Overall:** PASS
 
 ## Checks performed
@@ -35,6 +35,9 @@
 
 ### `content/business-models/children-group-activities-subscription.md`
 - WARN: description too short (39 chars, min 50)
+
+### `content/faq/trials-faq.md`
+- WARN: description too long (182 chars, max 160)
 
 ### `content/faq/waiting-list-faq.md`
 - WARN: description too long (164 chars, max 160)

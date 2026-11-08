@@ -176,6 +176,16 @@ For example, the document with the dynamic tags used might look like this:
 
 ![Screenshot](../../assets/images/documents-26.png)
 
+## Attaching one to a programme
+
+**Select a link from the library** is the first of the two buttons in the drawer. It attaches something that is
+already in your library, so the same link can sit on several programmes without being
+uploaded twice.
+
+> **The library is the account's, the attachment is the programme's.** Removing a link
+> from one programme leaves it in the library and on every other programme using it.
+> Deleting it from the library takes it off all of them.
+
 ## Where this setting lives now
 
 ![What clients see → Documents drawer in programme settings](../../assets/images/documents-drawer.png)

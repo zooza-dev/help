@@ -147,3 +147,14 @@ On the calendar, a session booked this way is labelled **Additional session**.
 **A client cancelled and expects their money back.** Cancelling does not refund anything. If refund requests are switched on they can ask, you approve, and that approval is only a record — someone still has to issue the refund through the payment provider.
 
 **A client was removed from a session they booked.** They did not pay inside the deadline and **Payment required** is on. The cancellation email tells them; if you would rather they kept the seat, switch to **Payment not enforced**.
+
+## Availability settings
+
+Each of these drawers has an **Availability settings** section: the rules for *where* a
+extra session may be taken, as opposed to how many or for how long.
+
+That is where the scope lives — this programme only, selected programmes, selected billing
+periods, selected venues, and on make-ups also other companies in your network. If a client
+is being refused something you believe they are entitled to, the limit is usually here
+rather than in the numbers.
+

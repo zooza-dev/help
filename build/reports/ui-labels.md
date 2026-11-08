@@ -1,6 +1,6 @@
 # Field names the app no longer has
 
-32 label(s) in `content/` are written in backticks — our convention for a
+35 label(s) in `content/` are written in backticks — our convention for a
 field name — and do not appear in the app's or the widgets' current English strings.
 
 A miss is a question, not a verdict. The usual innocent explanations are example
@@ -8,20 +8,7 @@ data, a label built at runtime from parts, and a screen belonging to somebody el
 product. What it catches when it is right is the expensive case: a control we tell
 people to look for under a name it no longer has.
 
-141 backticked string(s) were skipped as not being Zooza field names.
-
-### `content/reference/programme-settings.md` — 5
-
-- `Booking fee`  ×4
-  - no close match; check the screen by hand
-- `Make-up sessions method`
-  - no close match; check the screen by hand
-- `Apply filter`
-  - no close match; check the screen by hand
-- `Allow the use of credits for a make-up session`
-  - no close match; check the screen by hand
-- `Additional field 1–5`
-  - looks renamed → `Additional field 15`
+142 backticked string(s) were skipped as not being Zooza field names.
 
 ### `content/setup/billing-and-invoicing.md` — 4
 
@@ -34,17 +21,6 @@ people to look for under a name it no longer has.
 - `Course Payment Correction`
   - no close match; check the screen by hand
 
-### `content/reference/bookings-list.md` — 4
-
-- `Current account balance`  ×6
-  - no close match; check the screen by hand
-- `Booking fee`  ×4
-  - no close match; check the screen by hand
-- `Payment balance`
-  - no close match; check the screen by hand
-- `Amount owed`
-  - no close match; check the screen by hand
-
 ### `content/reference/class-detail.md` — 4
 
 - `Booking fee (optional)`  ×2
@@ -54,6 +30,35 @@ people to look for under a name it no longer has.
 - `Payment plan name`
   - no close match; check the screen by hand
 - `Absence count`
+  - no close match; check the screen by hand
+
+### `content/reference/programme-settings.md` — 4
+
+- `Make-up sessions method`
+  - no close match; check the screen by hand
+- `Auto-enrollment message`
+  - looks renamed → `Auto-enrolment message`
+- `Allow the use of credits for a make-up session`
+  - no close match; check the screen by hand
+- `Additional field 1–5`
+  - looks renamed → `Additional field 15`
+
+### `content/reference/clients-list.md` — 3
+
+- `Current account balance`  ×6
+  - no close match; check the screen by hand
+- `Custom customer ID`  ×2
+  - no close match; check the screen by hand
+- `Timetable`
+  - no close match; check the screen by hand
+
+### `content/reference/bookings-list.md` — 3
+
+- `Current account balance`  ×6
+  - no close match; check the screen by hand
+- `Payment balance`
+  - no close match; check the screen by hand
+- `Amount owed`
   - no close match; check the screen by hand
 
 ### `content/faq/locations-and-venues-faq.md` — 2
@@ -77,20 +82,6 @@ people to look for under a name it no longer has.
 - `Bearer-Token`
   - no close match; check the screen by hand
 
-### `content/reference/clients-list.md` — 2
-
-- `Current account balance`  ×6
-  - no close match; check the screen by hand
-- `Timetable`
-  - no close match; check the screen by hand
-
-### `content/reference/programmes-list.md` — 2
-
-- `Booking fee`  ×4
-  - no close match; check the screen by hand
-- `Booking fee (optional)`  ×2
-  - no close match; check the screen by hand
-
 ### `content/reference/instructors-list.md` — 2
 
 - `Length of session – 90 minutes`
@@ -105,9 +96,21 @@ people to look for under a name it no longer has.
 - `Client (Buyer)`
   - no close match; check the screen by hand
 
+### `content/reference/settings-hub.md` — 2
+
+- `Regenerate all customer IDs`
+  - no close match; check the screen by hand
+- `Custom Customer ID`
+  - no close match; check the screen by hand
+
 ### `content/faq/booking-widget-faq.md` — 1
 
 - `To be announced`  ×2
+  - no close match; check the screen by hand
+
+### `content/faq/client-management-faq.md` — 1
+
+- `Custom customer ID`  ×2
   - no close match; check the screen by hand
 
 ### `content/faq/make-up-sessions-faq.md` — 1
@@ -133,6 +136,16 @@ people to look for under a name it no longer has.
 ### `content/guides/transfer-and-copy-bookings.md` — 1
 
 - `Current account balance`  ×6
+  - no close match; check the screen by hand
+
+### `content/reference/programmes-list.md` — 1
+
+- `Booking fee (optional)`  ×2
+  - no close match; check the screen by hand
+
+### `content/reference/communication-dashboard.md` — 1
+
+- `The customer`
   - no close match; check the screen by hand
 
 ### `content/reference/payments-dashboard.md` — 1

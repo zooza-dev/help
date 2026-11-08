@@ -4,7 +4,7 @@
 
 ## Summary
 
-- **Total docs checked:** 279
+- **Total docs checked:** 280
 - **Total issues found:** 0
 - **Overall status:** PASS
 

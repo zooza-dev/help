@@ -347,6 +347,22 @@
         "@type": "Answer",
         "text": "Yes, if you let them. In the programme's Make-ups tile, Make-up sessions options\ncarries \"Allow the use of credit for a make-up session as a discount when purchasing a\nprogramme\".\n\nEvery credit has a value — the class price divided across its sessions — so the system\nknows what one is worth. With this on, a client enrolling into a programme is offered the\nchance to spend the credits they are holding as a discount on that purchase.\n\nIt is a trade, and it is final. The credits are used up and the client loses the\nright to those make-up sessions. Somebody who is sitting on three credits and intends\nto use them should not take the discount.\n\nWorth switching on where credits routinely expire unused — a parent gets something for\nthem instead of nothing, and you convert a liability into an enrolment. Worth leaving off\nwhere your classes have the capacity to honour make-ups properly, because an attended\nmake-up is worth more to you than a discounted sale."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "What the make-up limit is counted against",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Limit for make-up sessions is a number of make-ups. Number of sessions for which the\nlimit is valid is the window it is counted over.\n\nThree make-ups per ten sessions is a different promise from three make-ups per term, and\nthe second field is what tells them apart. Leave it empty and the limit applies across the\nwhole class; set it to ten and the allowance refreshes every ten sessions.\n\nThis is the pair behind \"my client says they have run out and I think they have not.\"\nCheck both numbers before the credits — the allowance may simply be counted over a\nshorter stretch than either of you assumed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Availability settings",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each of these drawers has an Availability settings section: the rules for where a\nmake-up may be taken, as opposed to how many or for how long.\n\nThat is where the scope lives — this programme only, selected programmes, selected billing\nperiods, selected venues, and on make-ups also other companies in your network. If a client\nis being refused something you believe they are entitled to, the limit is usually here\nrather than in the numbers."
+      }
     }
   ]
 }

@@ -102,6 +102,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can I offer a discount code instead of giving money back?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Settings → General → Offer a discount code instead of a refund. When a client\ncancels, they are offered a discount code towards a future booking as an alternative to a\nrefund.\n\nIt is an offer, not a substitution — the client chooses. Somewhere this is a fair trade\n(the family is coming back next term anyway and would rather have more than their money\nback) and somewhere it reads as refusing a refund, so it depends on your terms and the\nreason they are leaving.\n\nCheck your own cancellation terms first. Where a refund is a legal obligation,\noffering a code instead of paying it is not a choice you have."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "A client cancelled their registration — can Zooza automatically keep a percentage as a cancellation fee?",
       "acceptedAnswer": {
         "@type": "Answer",

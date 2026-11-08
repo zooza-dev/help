@@ -97,8 +97,8 @@ If **The setting will only be valid for new bookings** is checked in the automat
 | Step | What happens |
 |---|---|
 | Trial Ended | Sends a booking link email so the client can enrol in the full programme |
-| +N days (first follow-up) | Sends a reminder if the client has not enrolled yet |
-| +N days (second follow-up) | Sends a second reminder |
+| **Send first follow-up after N days** | Sends a reminder if the client has not enrolled yet |
+| **Send second follow-up N days after the first follow-up** | Sends a second reminder. Note it counts from the first follow-up, not from the trial |
 | +N days after last notification | Changes status to **Trial Lost** (if Automatically transition trial to lost is on) |
 | Trial Lost | Sends a notification to the client (if Send notification after trial lost is on) |
 

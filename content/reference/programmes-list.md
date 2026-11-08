@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-12"
+last_converted: "2026-11-08"
 ---
 
 # Programmes List
@@ -114,7 +114,7 @@ Click **New programme** on the Programmes list to create a programme from scratc
 |---|---|
 | `Programme name` | The public name clients see on the booking form. |
 | `Programme type` | **One-off session** — single occurrence. **Booking for the full programme duration** — clients are enrolled for all sessions. **Pay-as-you-go** — clients enrol but sign up for individual sessions. |
-| `Target audience / Timetable type` | **Class Timetables** or **1-To-1 classes**. |
+| `Target audience / Class type` | **Group Classes** or **1-To-1 classes**. |
 | `For children` | Check **Yes** to use child-oriented wording on forms (e.g., "Parent's name" instead of "Name"). |
 | `How do you want to collect payments?` | **One off payment** — single charge. **In scheduled payments** — recurring billing (subscriptions, term payments). |
 | `Booking fee` | One-time fee charged at booking time (added to the first payment). |

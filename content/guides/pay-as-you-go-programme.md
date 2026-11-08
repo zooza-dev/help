@@ -173,6 +173,19 @@ Two things to know:
 
 Without entry passes at all, clients simply pay per session at the unit price.
 
+## Reminding clients about upcoming sessions
+
+**Notifications about upcoming sessions to email address** is in the **Messages to
+clients** tile, under **Communication**.
+
+**It exists only on pay-as-you-go programmes**, which is why you will not find it on a
+full-term one. It is a daily note to clients about the dates coming up — the thing that
+makes an open programme work, because nobody has committed to a schedule and without a
+nudge they simply forget to book.
+
+> **Clients can switch it off themselves** from the link in the email, so a client who
+> says they stopped getting them may have unsubscribed rather than hit a fault.
+
 ## Related guides
 
 - [Creating entry passes](creating-entry-passes.md) — Set up prepaid visit passes or credit for sessions.

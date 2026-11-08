@@ -566,6 +566,29 @@ them instead of nothing, and you convert a liability into an enrolment. Worth le
 where your classes have the capacity to honour make-ups properly, because an attended
 make-up is worth more to you than a discounted sale.
 
+## What the make-up limit is counted against
+
+**Limit for make-up sessions** is a number of make-ups. **Number of sessions for which the
+limit is valid** is the window it is counted over.
+
+Three make-ups per ten sessions is a different promise from three make-ups per term, and
+the second field is what tells them apart. Leave it empty and the limit applies across the
+whole class; set it to ten and the allowance refreshes every ten sessions.
+
+> **This is the pair behind "my client says they have run out and I think they have not."**
+> Check both numbers before the credits — the allowance may simply be counted over a
+> shorter stretch than either of you assumed.
+
+## Availability settings
+
+Each of these drawers has an **Availability settings** section: the rules for *where* a
+make-up may be taken, as opposed to how many or for how long.
+
+That is where the scope lives — this programme only, selected programmes, selected billing
+periods, selected venues, and on make-ups also other companies in your network. If a client
+is being refused something you believe they are entitled to, the limit is usually here
+rather than in the numbers.
+
 ## Related
 
 - [MATKO — Diagnose why a make-up session is not showing](../troubleshooting/matko-replacement-diagnostic.md) — run a precise eligibility diagnostic for a specific credit and session

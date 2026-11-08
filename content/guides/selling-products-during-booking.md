@@ -124,6 +124,18 @@ That part (fulfillment and shipping) must be handled by the business owner using
 
 Zooza is not a 100% e-commerce platform, but for smaller volumes and simple add-on sales (T-shirts, materials, simple digital add-ons), it is usually more than enough.
 
+## Limiting how many a client can buy
+
+**Maximum purchases per client** caps how many times one client may buy this product
+through the programme.
+
+**Zero means unlimited**, which is the trap: it looks like "none allowed" and is the
+opposite. If you want to allow exactly one, type `1`.
+
+Worth setting on anything where one per family is the obvious intent — a welcome pack, a
+uniform, a deposit-style item. Leave it at zero for consumables somebody may reasonably buy
+again.
+
 ## Where this setting lives now
 
 ![What clients see → Products sold on this programme drawer in programme settings](../../assets/images/products-on-programme-drawer.png)

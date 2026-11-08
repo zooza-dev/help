@@ -207,7 +207,7 @@ Core programme identity and type.
 | Field | Description |
 |---|---|
 | `Programme type` | Programme (instructors, sessions) or other types. |
-| `Target audience` | **Class Timetables** or **1-To-1 classes**. |
+| `Target audience / Class type` | **Group Classes** or **1-To-1 classes**. |
 | `For children` | Uses child-oriented wording on booking forms. |
 
 ### Labels and Colour
@@ -367,6 +367,23 @@ Public metadata is readable by the registration widget, so it can drive both you
 Ordering is separate from filtering: the booking form sorts courses alphabetically until you give them a **Priority** (0–1000, higher first). If your filter returns the right courses in an unhelpful order, that is the setting you want, not metadata.
 
 ---
+
+## Metadata
+
+A programme can carry your own key/value pairs — a code for an accounting system, a
+category your website filters on, anything Zooza has no field for.
+
+| Field | What it is |
+|---|---|
+| `Key name` | The name you refer to it by. Used as-is, so keep it short and stable |
+| `Value type` | What kind of value it holds |
+| `Public` | Whether the booking widget may read it |
+
+> **Rename a key and anything reading it stops finding it.** A website filtering on a
+> metadata key is matching the name you typed. Decide the name once.
+
+Keys are defined for the account under **Settings → General → Metadata keys**; the values
+are set per programme here.
 
 ## Related
 

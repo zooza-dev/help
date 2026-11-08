@@ -159,6 +159,16 @@ Clients log in to their profile and see all videos attached to their programmes 
 | Video plays but without audio | Vimeo issue — check the original upload | Re-upload the video to Vimeo |
 
 
+## Attaching one to a programme
+
+**Select a video from the library** is the first of the two buttons in the drawer. It attaches something that is
+already in your library, so the same video can sit on several programmes without being
+uploaded twice. The other button, **Upload new video**, adds a new one to the library at the same time.
+
+> **The library is the account's, the attachment is the programme's.** Removing a video
+> from one programme leaves it in the library and on every other programme using it.
+> Deleting it from the library takes it off all of them.
+
 ## Where this setting lives now
 
 ![What clients see → Videos drawer in programme settings](../../assets/images/videos-drawer.png)

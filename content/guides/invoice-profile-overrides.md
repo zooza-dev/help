@@ -108,6 +108,40 @@ Programme → the **Settings** tab → the **Payment collection** tile → **Inv
 
 ---
 
+## Clearing overrides below a level
+
+Alongside the override buttons sits **Reset all to inherit**. It removes the overrides set
+*beneath* the level you are on — the classes under a programme, or the bookings under a
+class — so everything below goes back to inheriting from above.
+
+It is the opposite of **Apply to bookings** below: that one forces a profile downward,
+this one removes what was forced and lets inheritance take over again.
+
+> **Reach for this when you cannot work out why one class invoices differently.** Rather
+> than hunting for which level holds a stray override, clear the lot below and let it
+> inherit, then set the one override you actually want.
+
+## Applying a profile to bookings that already exist
+
+Changing the invoice profile on a programme decides what **new** invoices use. Bookings
+already made keep whatever profile they were created with, which is usually right and
+occasionally not — after a merger, a renamed entity, or a profile set wrongly for a whole
+term.
+
+**Apply to bookings** is the override. Its own warning is the thing to read twice:
+
+> *This will reset the invoice profile on all bookings. All new invoices will be generated
+> using this profile.*
+
+**All bookings**, not the ones you were thinking of. There is no selection step.
+
+> **It does not rewrite invoices already issued.** Those keep the entity that issued them,
+> which is correct — an issued invoice is a document, not a setting. What changes is every
+> invoice generated from now on.
+
+Use it when the profile was genuinely wrong. Do not use it to tidy up a handful of
+bookings; move those individually from the booking's own **Invoicing** card.
+
 ## Related
 
 - [Set up invoice profiles and bank accounts](../setup/invoice-profiles-and-bank-accounts.md) — creating entities and their accounts

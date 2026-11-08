@@ -101,11 +101,12 @@ Open the programme, go to **Price and payment**, scroll to the bottom, and use *
 
 ### The two timings
 
-This is the setting people most often have wrong, because the two behave completely differently:
+The group is called **Settings for sending payment reminders**, and the choice inside it is
+the setting people most often have wrong, because the two behave completely differently:
 
 | Mode | When reminders go out | What counts as the due date |
 |---|---|---|
-| **Sending a reminder before the start of the programme** | Counting back from the first session | The class start date |
+| **Sending a reminder before the start of the programme** | Counting back from the first session | The class start date — its own note says the due date *equals the start date of the class*, meaning the first session |
 | **Sending a reminder after the booking** | Counting forward from when each person booked | Set separately, see below |
 
 **First reminder** and **Second reminder** are both a number of days. In the "after the booking" mode they count from the booking, so two people who book a month apart are chased a month apart.
