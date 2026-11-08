@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-21"
+last_converted: "2026-11-08"
 ---
 
 # Sell extra sessions on top of a booking
@@ -46,7 +46,7 @@ Go to **Programmes → the programme → Settings → Additional sessions** and 
 
 ![The Additional sessions card in the programme settings, with price, limit and payment enforcement](../../assets/images/additional-sessions-01.png)
 
-![General settings for all programmes: a cancellation limit and Allow refund requests](../../assets/images/additional-sessions-02.png)
+![Extra sessions → Additional sessions drawer, with Allow additional sessions switched on](../../assets/images/additional-sessions-02.png)
 
 ### Price
 

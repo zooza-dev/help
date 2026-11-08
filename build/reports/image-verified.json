@@ -5,14 +5,19 @@
   "why": "recaptured and compared; content area identical"
  },
  "additional-sessions-02.png": {
-  "date": "2026-11-06",
-  "result": "unchanged",
-  "why": "recaptured and compared; content area identical"
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: new drawer, from the 8 Nov set"
  },
  "auto-cancel-unpaid-registrations-02.png": {
   "date": "2026-11-06",
   "result": "replaced",
   "why": "round 1: recaptured and compared"
+ },
+ "auto-cancel-unpaid-settings.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: new drawer, from the 8 Nov set"
  },
  "automatic-payment-reminders-01.png": {
   "date": "2026-11-06",
@@ -279,35 +284,65 @@
   "result": "unchanged",
   "why": "recaptured and compared; content area identical"
  },
+ "prog-programmes-wiggle-wonders-0-12-months-settings-additional-fields.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: new drawer, from the 8 Nov set"
+ },
  "prog-programmes-wiggle-wonders-0-12-months-settings-attendance.png": {
-  "date": "2026-11-06",
-  "result": "unchanged",
-  "why": "round 1: recaptured and compared; content area identical"
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: new drawer, from the 8 Nov set"
  },
  "prog-programmes-wiggle-wonders-0-12-months-settings-auto-enrolment.png": {
-  "date": "2026-11-06",
-  "result": "unchanged",
-  "why": "round 1: recaptured and compared; content area identical"
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: new drawer, from the 8 Nov set"
  },
  "prog-programmes-wiggle-wonders-0-12-months-settings-feedback.png": {
-  "date": "2026-11-06",
-  "result": "unchanged",
-  "why": "round 1: recaptured and compared; content area identical"
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: new drawer, from the 8 Nov set"
+ },
+ "prog-programmes-wiggle-wonders-0-12-months-settings-make-up-sessions.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: new drawer, from the 8 Nov set"
  },
  "prog-programmes-wiggle-wonders-0-12-months-settings-online-booking.png": {
-  "date": "2026-11-06",
+  "date": "2026-11-08",
   "result": "replaced",
-  "why": "round 1: recaptured and compared"
+  "why": "programme settings redesign: new drawer, from the 8 Nov set"
+ },
+ "prog-programmes-wiggle-wonders-0-12-months-settings-price.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: new drawer, from the 8 Nov set"
  },
  "prog-programmes-wiggle-wonders-0-12-months-settings-settings.png": {
-  "date": "2026-11-06",
+  "date": "2026-11-08",
   "result": "replaced",
-  "why": "round 1: recaptured and compared"
+  "why": "programme settings redesign: new drawer, from the 8 Nov set"
  },
  "prog-programmes-wiggle-wonders-0-12-months-settings-trial.png": {
-  "date": "2026-11-06",
-  "result": "unchanged",
-  "why": "round 1: recaptured and compared; content area identical"
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: new drawer, from the 8 Nov set"
+ },
+ "programme-info-tab-programme.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: new drawer, from the 8 Nov set"
+ },
+ "programme-settings-drawer.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: new drawer, from the 8 Nov set"
+ },
+ "programme-settings-hub.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: new drawer, from the 8 Nov set"
  },
  "publish-widgets-01.png": {
   "date": "2026-11-06",
@@ -370,9 +405,14 @@
   "why": "new capture shows an empty Trash; the old one teaches the feature"
  },
  "trials-daily-business-06.png": {
-  "date": "2026-11-06",
+  "date": "2026-11-08",
   "result": "replaced",
-  "why": "round 1: recaptured and compared"
+  "why": "programme settings redesign: new drawer, from the 8 Nov set"
+ },
+ "trials-daily-business-07.png": {
+  "date": "2026-11-08",
+  "result": "replaced",
+  "why": "programme settings redesign: new drawer, from the 8 Nov set"
  },
  "trials-daily-business-08.png": {
   "date": "2026-11-06",

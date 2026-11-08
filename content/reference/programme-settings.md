@@ -80,7 +80,9 @@ tile, the stage is named beside it.
 
 Controls how much clients pay and how payments are collected. For a full explanation of each pricing model, see [Price and payment setup](../guides/price-and-payment-setup.md).
 
-![Price and Payment settings](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-price.png)
+![Price → Price and payment drawer: how you want to collect payment, shown as scheduled payments with term payment](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-price.png)
+
+*Tile: **Price**.*
 
 | Field | Description |
 |---|---|
@@ -96,7 +98,9 @@ When changing the price type, a confirmation dialog warns that incompatible paym
 
 Controls how the programme appears on your public booking forms.
 
-![Online Booking settings](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-online-booking.png)
+![Booking → Online booking drawer: the booking options for this programme](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-online-booking.png)
+
+*Tile: **Booking**.*
 
 ### Booking Options
 
@@ -146,7 +150,9 @@ Select which classes (timetables) are available for online booking. Toggle indiv
 
 Controls whether clients can book make-up sessions for missed classes.
 
-![Make-up Sessions settings](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-make-up-sessions.png)
+![Make-ups → Make-up sessions options drawer, with Allow make-up sessions switched on](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-make-up-sessions.png)
+
+*Tile: **Make-ups**.*
 
 ### Make-up Sessions Options
 
@@ -182,7 +188,9 @@ Customize restrictions by:
 
 Core programme identity and type.
 
-![Programme Settings — basic info](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-settings.png)
+![Programme details → Basic informations drawer: programme type, name, URL address and description, with the help pane beside it](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-settings.png)
+
+*Tile: **Programme details**.*
 
 ### Basic Information
 
@@ -211,7 +219,9 @@ Core programme identity and type.
 
 Configures extra data fields on the booking form. For a step-by-step guide, see [Additional fields on the booking form](../guides/additional-fields.md).
 
-![Additional Fields settings](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-additional-fields.png)
+![Booking form → Standard fields drawer, with the Clone to action for copying the setup to other programmes](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-additional-fields.png)
+
+*Tile: **Booking form**.*
 
 | Field | Description |
 |---|---|
@@ -228,7 +238,9 @@ Configures extra data fields on the booking form. For a step-by-step guide, see 
 
 Configures trial session behaviour for the programme.
 
-![Trial tile with the trial type options](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-trial.png)
+![Trial → Trial settings drawer: the trial type options and the classes included in the trial](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-trial.png)
+
+*Tile: **Trial**.*
 
 ### Trial Settings
 
@@ -263,7 +275,9 @@ Select which timetables are available for trial bookings. Toggle **Automatically
 
 Controls what happens when a client's current class/timetable is ending.
 
-![Auto-Enrolment settings](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-auto-enrolment.png)
+![When a class ends → Continuation for this programme's clients drawer](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-auto-enrolment.png)
+
+*Tile: **When a class ends**.*
 
 | Field | Description |
 |---|---|
@@ -289,7 +303,9 @@ Select which timetables to offer to returning clients. Must be explicitly enable
 
 Controls automatic feedback collection.
 
-![Feedback settings](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-feedback.png)
+![Feedback and reviews → Feedback drawer: which bookings are asked, from a chosen date onwards](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-feedback.png)
+
+*Tile: **Feedback and reviews**.*
 
 | Field | Description |
 |---|---|
@@ -301,7 +317,9 @@ Controls automatic feedback collection.
 
 Controls attendance tracking and session rescheduling.
 
-![Attendance settings](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-attendance.png)
+![Attendance drawer with Track attendance switched on](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings-attendance.png)
+
+*Tile: **Attendance**.*
 
 | Field | Description |
 |---|---|

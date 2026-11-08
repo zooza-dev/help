@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-11-06"
+last_converted: "2026-11-08"
 related_articles: ["automatic-payment-reminders-detailed", "registration-status-faq"]
 ---
 
@@ -55,7 +55,7 @@ The auto-cancel flow has two stages:
 
 **Programme → Settings → Price and payment**, at the bottom of the page, the **Auto-cancel unpaid bookings** card. It is its own card, directly below Payment reminders settings.
 
-![Auto-cancel unpaid bookings: Active or Inactive, days unpaid before scheduling cancellation, grace period, the calculated total, and apply to new bookings only](../../assets/images/auto-cancel-unpaid-settings.png)
+![Payment automations → Auto-cancel unpaid bookings drawer, with the automation set to Active](../../assets/images/auto-cancel-unpaid-settings.png)
 
 | Field | What it does |
 |---|---|

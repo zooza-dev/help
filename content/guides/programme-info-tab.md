@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-10-30"
+last_converted: "2026-11-08"
 related_articles: ["client-profile-101", "programme-settings", "settings-hub", "sending-email-sms", "getting-started-with-zooza"]
 ---
 
@@ -36,6 +36,10 @@ your own FAQ.
 Go to **Settings → General → Programme info tab**.
 
 ![The Programme info tab settings page: a Default for all programmes card and a Product code card, each with Edit, Reset to network version and Delete, beside a panel listing programmes with their own tab](../../assets/images/programme-info-tab-settings.png)
+
+On a single programme it is a drawer instead, under the **What clients see** tile:
+
+![What clients see → Programme info tab drawer, with the tab name and its content](../../assets/images/programme-info-tab-programme.png)
 
 The page is a set of cards, one per piece of content you have:
 
