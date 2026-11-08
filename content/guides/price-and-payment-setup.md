@@ -261,6 +261,16 @@ The **Payment Methods** section defines how clients can pay. You can enable mult
 | **Online payment by transfer** | Client approves a pre-filled payment order in their internet banking. The booking is marked as paid automatically. |
 | **Cash / bank transfer** | Client completes the booking without paying online. Payment instructions are sent via email. You process the payment manually (cash, bank transfer, or SEPA direct debit). |
 
+The labels on screen are a little different from the names above, so you know you are in
+the right place:
+
+- **"Enable payment in cash and by bank transfer"** is the third row. Its own note says it
+  plainly — *the booking can be completed and paid in cash at a later date*. This is the
+  one that lets somebody book without paying anything now.
+- **"Online bank transfer"** is the second, and switching it on reveals **"Online transfer
+  provider"**, where you pick who processes it. The provider list depends on your region,
+  so a method you have read about may simply not be offered here.
+
 For details on how each method works, see [Payment options](payment-options.md).
 
 > **Connecting Stripe or GoCardless is not the same as switching it on.** The

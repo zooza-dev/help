@@ -203,3 +203,28 @@ This message means the target groups (classes) are **not enabled for auto-enrolm
 **Fix:** Go to each class you want to appear on the continuation screen → **Settings** tile → enable **Include in auto-enrolment**. This must be done for every class you add after the programme-level auto-enrolment was configured.
 
 > **Important:** Do not create a manual booking as a workaround. Creating a new manual booking in this situation will duplicate the client's registration — they will have two active bookings instead of one. The correct fix is always to enable the group in auto-enrolment settings.
+
+## Keeping clients when a class ends
+
+Three settings in the **When a class ends** tile decide what happens to this programme's
+clients at the end of a term, and they are easy to confuse because they sound alike.
+
+| Setting | What it decides |
+|---|---|
+| **Continuation for this programme's clients** | Whether anything is offered at all, and of what kind |
+| **Classes you offer into auto-enrolment** | Which of *this* programme's classes are on the list clients are shown |
+| **What your auto-enrolment clients are shown** | Which classes a client in auto-enrolment sees as their options |
+| **Automatically offer newly created classes into auto-enrolment** | Whether a class you create later joins that list by itself |
+
+That last one is the quiet one. Its own note says *"every class you create in this
+programme will be offered to clients in auto-enrolment — you can change this for each
+class at any time"*, so it is a default for future classes, not a lock.
+
+> **Switch it on if you build next term's classes in a batch.** Leave it off if you add
+> classes experimentally, or a half-finished class appears on a parent's list of options
+> before you meant it to.
+
+There is also an **Auto-enrolment message**, the text those clients see with the offer.
+Worth writing: it is the one place you can say *why* they are being offered this
+particular class.
+

@@ -28,7 +28,24 @@ Google only. Reviews works through your Google Business Profile. Other platforms
 
 ## When does Zooza send the Google review request email?
 
-The review request is sent automatically after a session is **marked as attended** (the instructor records the client as having attended). For the request to send, all of the following must be true:
+**You choose when, per programme.** In the programme's **Feedback and reviews** tile,
+under **Google reviews**, there are three moments and you can use more than one:
+
+| Setting | When the request goes out |
+|---|---|
+| `Ask after registration` | Shortly after the client books — before they have been to anything |
+| `Ask after the first attended session` | Once the instructor marks them present for the first time |
+| `Ask after the class has ended` | After the programme finishes |
+
+Most providers want the middle one: the client has experienced the thing, and the whole
+term has not yet gone by. *Ask after registration* measures how the booking felt, not the
+classes, which is sometimes exactly what you want and usually not.
+
+There is also **"Don't ask anyone registered before"** — a date. Clients who registered
+before it are never asked. Set it when you switch reviews on, so a backlog of long-standing
+clients does not all get an email on the same morning.
+
+Whichever moment you pick, all of the following must also be true for the request to send:
 
 1. The **Reviews module** is enabled on your account.
 2. The **place** (location) is linked to a verified Google Business Profile in Zooza.

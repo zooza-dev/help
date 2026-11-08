@@ -48,7 +48,12 @@ def norm(s):
     for a, b in [("’", "'"), ("‘", "'"), ("“", '"'), ("”", '"'),
                  ("–", "-"), ("—", "-"), ("\xa0", " ")]:
         s = s.replace(a, b)
-    return re.sub(r"\s+", " ", s).strip().lower()
+    s = re.sub(r"\s+", " ", s).strip().lower()
+    # App labels often end in a colon that no sentence in the help repeats, and
+    # "(leave empty if all are billable)" is an instruction, not part of the name.
+    # Without this the checker reported settings written up the same afternoon.
+    s = re.sub(r"\s*\([^)]*\)\s*$", "", s)
+    return s.rstrip(":：.").strip()
 
 
 def main():
