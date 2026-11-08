@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-30"
+last_converted: "2026-11-08"
 related_articles: ["matko-replacement-diagnostic","cancellation-log","replacement-hours-complete","capacity-and-extra-capacity"]
 ---
 
@@ -546,6 +546,25 @@ If a parent cancels a make-up they had chosen, the attendance row for it is remo
 
 To confirm what happened in a particular case, the booking's attendance history records the cancellation underneath the session.
 
+
+## Can a client spend an unused make-up credit against their next programme?
+
+Yes, if you let them. In the programme's **Make-ups** tile, **Make-up sessions options**
+carries **"Allow the use of credit for a make-up session as a discount when purchasing a
+programme"**.
+
+Every credit has a value — the class price divided across its sessions — so the system
+knows what one is worth. With this on, a client enrolling into a programme is offered the
+chance to spend the credits they are holding as a discount on that purchase.
+
+> **It is a trade, and it is final.** The credits are used up and **the client loses the
+> right to those make-up sessions**. Somebody who is sitting on three credits and intends
+> to use them should not take the discount.
+
+Worth switching on where credits routinely expire unused — a parent gets something for
+them instead of nothing, and you convert a liability into an enrolment. Worth leaving off
+where your classes have the capacity to honour make-ups properly, because an attended
+make-up is worth more to you than a discounted sale.
 
 ## Related
 

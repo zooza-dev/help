@@ -181,3 +181,23 @@ For example, the document with the dynamic tags used might look like this:
 ![What clients see → Documents drawer in programme settings](../../assets/images/documents-drawer.png)
 
 Programme → the **Settings** tab → the **What clients see** tile → **Documents**. Typing the name into the search at the top of that tab is quicker than hunting for the tile. The drawer saves as you go — there is no Save button to press.
+
+## Who can see an attachment
+
+Every document, video and link carries its own **visibility**, set where you attach it:
+
+| Setting | Choice | Who sees it |
+|---|---|---|
+| `Document visibility` | **Visible to all immediately after booking** | Anyone with a booking, paid or not |
+| | **Only fully paid bookings** | Nobody until the booking is settled in full |
+| `Video visibility` | the same two | |
+| `Link visibility` | the same two | |
+
+**"Only fully paid bookings" means fully.** A booking that is part-paid, or inside its
+grace period, sees nothing — which is the right behaviour for material you are selling and
+a surprise for material you are not. If parents report that a worksheet never appeared,
+check this before anything else.
+
+The setting lives with the attachment, so the same file can be open on one programme and
+restricted on another.
+

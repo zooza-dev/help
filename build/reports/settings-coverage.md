@@ -1,6 +1,6 @@
 # Programme settings the help never mentions
 
-Registry read from `origin/feature-programme-settings-redesign`. **138 of 182 settings** appear somewhere in `content/`.
+Registry read from `origin/feature-programme-settings-redesign`. **145 of 182 settings** appear somewhere in `content/`.
 
 An exact-string miss is weak evidence on its own. Checked properly on
 2026-11-08, 43 of 45 misses turned out to be settings the help already covers
@@ -18,17 +18,16 @@ for a control under a name it no longer has.
 | `price` | 9 |
 | `feedback` | 6 |
 | `online_registration` | 4 |
-| `replacements` | 4 |
-| `trial` | 4 |
+| `replacements` | 3 |
 | `retention` | 3 |
 | `settings` | 2 |
-| `videos` | 2 |
-| `urls` | 2 |
-| `extra_fields` | 2 |
 | `additional_sessions` | 2 |
 | `attendance` | 2 |
+| `trial` | 2 |
 | `products` | 1 |
-| `documents` | 1 |
+| `videos` | 1 |
+| `urls` | 1 |
+| `extra_fields` | 1 |
 
 ## The settings
 
@@ -38,8 +37,6 @@ for a control under a name it no longer has.
 | `additional_sessions.settings.allow_cancellation_discount` | Offer a discount code instead of a refund |
 | `attendance.settings.auto_waitlist_notification` | Automatically send an email to clients who are interested in attending on this date when a slot becomes available |
 | `attendance.settings.limit_reschedule_to_once` | Limit rescheduling to once per session |
-| `documents.files.visibility` | Document visibility |
-| `extra_fields.clone_settings.target_programmes` | Clone to |
 | `extra_fields.semantic_fields.address_format_type` | Address format |
 | `feedback.feedback.collect_feedback_start` | Request feedback from bookings that were created after this date: |
 | `feedback.feedback.questions` | Question list |
@@ -61,7 +58,6 @@ for a control under a name it no longer has.
 | `price.payment_reminder.mode` | Settings for sending payment reminders |
 | `price.price.billable_events` | Billable sessions (leave empty if all are billable) |
 | `products.course_products.purchase_limit` | Maximum purchases per client |
-| `replacements.options.allow_using_replacement_credits_as_discount` | Allow the use of credit for a make-up session as a discount when purchasing a programme |
 | `replacements.scope.replacements_settings` | Availability settings |
 | `replacements.settings.replacement_time_limit` | Number of days to use make-up sessions |
 | `replacements.settings.replacements_limit_per_events` | Number of sessions for which the limit is valid |
@@ -70,11 +66,7 @@ for a control under a name it no longer has.
 | `retention.shown.retention_settings` | Which classes your auto-enrolment clients are shown |
 | `settings.additional.target_audience` | Target audience / Class type |
 | `settings.metadata.new_key_name` | Key name |
-| `trial.automation.auto_mark_abandoned_trials_as_lost` | Automatically mark abandoned trials as lost |
-| `trial.automation.auto_mark_abandoned_trials_as_lost_days` | Cleanup delay after trial end (days) |
 | `trial.automation.first_followup` | Send first follow-up after N days |
 | `trial.automation.second_followup` | Send second follow-up N days after the first follow-up |
 | `urls.course_urls.attached` | Select a link from the library |
-| `urls.course_urls.visibility` | Link visibility |
 | `videos.course_videos.attached` | Select a video from the library |
-| `videos.course_videos.visibility` | Video visibility |

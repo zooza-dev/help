@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-30"
+last_converted: "2026-11-08"
 related_articles: ["trial-sessions", "trials-daily-business", "booking-form-settings", "sending-email-sms", "booking-faq"]
 ---
 
@@ -101,6 +101,19 @@ If **The setting will only be valid for new bookings** is checked in the automat
 | +N days (second follow-up) | Sends a second reminder |
 | +N days after last notification | Changes status to **Trial Lost** (if Automatically transition trial to lost is on) |
 | Trial Lost | Sends a notification to the client (if Send notification after trial lost is on) |
+
+**A trial that was never resolved is tidied up separately.** The automation above follows
+a trial that *ended* — attendance was recorded. A trial still sitting in **Trial started**
+after the date it should have happened is a different case: nobody came, nobody marked
+anything, and no follow-up will ever fire because the chain never started.
+
+**Automatically mark abandoned trials as lost** closes those, with **Cleanup delay after
+trial end (days)** deciding how long to wait first. Both are in the programme's **Trial**
+tile, under **Automation settings**.
+
+> **Set the delay generously.** An instructor who marks the register a few days late is
+> normal, and a trial swept to Lost before they get to it takes a real prospect out of
+> your follow-up with them none the wiser. The delay exists to cover exactly that gap.
 
 ![Screenshot — trials faq](../../assets/images/trials-faq-02.png)
 
