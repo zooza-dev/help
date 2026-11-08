@@ -10,8 +10,8 @@ tags: ["reference", "changelog", "onboarding"]
 status: "draft"
 source_legacy_path: ""
 source_language: "en"
-needs_screenshot_replacement: true
-last_converted: "2026-11-06"
+needs_screenshot_replacement: false
+last_converted: "2026-11-08"
 related_articles: ["reports-dashboard", "getting-started-with-zooza"]
 ---
 
@@ -31,9 +31,9 @@ were made — which changed more than the screens did.
 Two sources, and they cover different periods, so the page is honest about
 which is which.
 
-- **2016 – 2020: pictures only.** The app repository begins on **21 November
-  2020**; nothing before that is in version control. For those years the
-  screenshots *are* the record, which is the whole reason for collecting them.
+- **2016 – 2020: pictures only.** The app repository begins on **21 November 2020**;
+  nothing before that is in version control. For those years the screenshots *are* the
+  record — which is why the archive behind this page matters more than it looks.
 - **2020 – today: the repository.** Release names, dates and the shape of the
   work are read out of git, not remembered.
 
@@ -41,15 +41,46 @@ which is which.
 
 ## The eras
 
-### 2016 – 2020 · before the record
+### July 2016 · before it was even called Zooza
 
-*Waiting on screenshots. See [what to send](#what-this-page-still-needs).*
+![The course form in July 2016, branded z kurzy, annotated in fourteen numbered notes explaining what each field is for](../../assets/images/history/2016-07-course-form-annotated.png)
 
-What we want from this period is less the features than the look: the density,
-the colours, the vocabulary on the buttons. This is the stretch nobody can
-reconstruct later.
+The product was **z kurzy**, in pink. One long form held everything a course needed:
+basic properties, schedules, online registration, cancellations, waiting list and
+make-ups.
 
-### Late 2020 – 2022 · named releases, a few a year
+What makes this particular picture worth keeping is that it is **annotated**. Somebody
+opened it in Edge's Web Note and wrote fourteen numbered notes explaining what each field
+was for — why the price field means one thing for a whole-course booking and another when
+each session is sold separately, what the cancellation deadline is really protecting, what
+"offer make-ups" should and should not reach. It is the only surviving record of the
+reasoning, not just the result.
+
+And the reasoning holds up. Note 14 asks whether a make-up may be taken in any course or
+only this one. That is, word for word, a setting in the product today.
+
+### October 2017 · the name and the Z arrive
+
+![The courses list in October 2017: the orange Z, green course tiles with photographs, and a billing period named in the header](../../assets/images/history/2017-10-courses.png)
+
+Fifteen months later the pink is gone and the orange **Z** is in the corner, where it
+still is. Courses are tiles with photographs. The header already names a **billing
+period** — *Jeseň 2017* — a concept that has never left.
+
+### 2019 · the look we still have
+
+![The 2019 dashboard: sage-green sidebar, orange Zooza wordmark, and donut charts for registrations and payments](../../assets/images/history/2019-07-dashboard.png)
+
+The sage-green sidebar and the orange wordmark arrive, and the app stops changing its
+appearance every year. The menu is four items — Kurzy, Registrácie, Kalendár,
+Komunikácia — against today's dozen, which is a fair measure of how much the product has
+since taken on.
+
+The dashboard counts capacity, registrations and occupancy, and splits payments by how
+they arrived. Those are the questions the Reports section answers now, with more
+arithmetic behind them.
+
+### 2020 – 2022 · named releases, a few a year
 
 Versions were planned in Jira and shipped as events, each with a name that said
 what it was for. The commit messages still carry the release report links.
@@ -109,23 +140,16 @@ release — the **Changelog** page in the app is the customer-facing end of that
 
 ---
 
-## What this page still needs
+## What the archive holds
 
-**Screenshots, roughly dated.** One or two per year is plenty — the home
-screen or the booking list is enough to show the era. Put them in
-`help_ingest/screenshots/history/` and name them so the year is in the
-filename: `2016-dashboard.png`, `2018-bookings.png`. Approximate is fine; say
-so and the caption will say so too.
+The pictures above come from a set Michal kept over nine years, by date:
 
-Worth having if they exist:
+`2016-07` · `2016-09` · `2017-02` · `2017-10` · `2019-09` · `2020-01` · `2022-06` ·
+`2022-09` · `2023-03` · `2023-12` · `2024-12` · `2025-08`
 
-- **The first version anyone used in anger**, 2016 or 2017.
-- **The oldest booking form**, which is what customers' customers saw.
-- **Anything from a rebrand** — the point where the colours or the logo changed.
-- **A screen that no longer exists at all.** Those are the most interesting and
-  the first to be lost.
+Seventy-six files, including two presentations and a document of change notes. Only a few
+are used here; the rest are the raw material for the eras this page still treats briefly.
 
-**And the part only you know:** why each change happened. The repository says
-*when* invoicing shipped; it does not say which customer asked for it, or what
-broke before it existed. A sentence per era turns a list of versions into
-something worth reading.
+**What is still missing is not pictures.** It is a sentence per era on *why*. The
+repository can say when invoicing shipped. It cannot say who asked for it, or what people
+were doing before it existed — and that is the half that makes a timeline worth reading.
