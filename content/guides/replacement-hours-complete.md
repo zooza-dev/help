@@ -64,7 +64,7 @@ Make-up settings exist at two levels. Knowing which you are looking at saves a l
 | Level | Where | What it governs |
 |---|---|---|
 | **Global** | `Settings → Other → Make-up sessions` (`zooza.app/#settings/replacements`) | Defaults for every programme — credit expiry, extra places, time restrictions |
-| **Per programme** | Programme → **Settings** → **Make-up sessions** tile → **Edit** | Whether make-ups are on for this programme, and rules that differ from the global default |
+| **Per programme** | Programme → **Settings** → the **Make-ups** tile → **Make-up sessions options** | Whether make-ups are on for this programme, and rules that differ from the global default |
 
 **Turning make-ups on or off is per programme.** The global page cannot do it — it only sets defaults for programmes that already have the feature enabled. If make-ups are not being offered at all, the programme tile is where to look, not the global page.
 

@@ -1,6 +1,6 @@
 ---
 title: "Trial Classes FAQ"
-description: "Trials are configured per programme. Go to Programme → Settings → Trial to enable them, and Programme → Automations → Trials to configure the rules."
+description: "Trials are configured per programme. Go to Programme → Settings → the **Trial** tile → **Trial settings** to enable them, and Programme → Automations → Trials to configure the rules."
 slug: "trials-faq"
 type: "faq"
 product_area: "Bookings"
@@ -20,7 +20,7 @@ related_articles: ["trial-sessions", "trials-daily-business", "booking-form-sett
 
 ## How do I set up trial classes?
 
-Trials are configured per programme. Go to **Programme → Settings → Trial** to enable them, and **Programme → Automations → Trials** to configure the rules.
+Trials are configured per programme. Go to **Programme → Settings** → the **Trial** tile → **Trial settings** to enable them, and **Programme → Automations → Trials** to configure the rules.
 
 You can set:
 
@@ -46,10 +46,10 @@ The full automated flow is:
 Trial uses the same booking widget as regular enrolment. If the trial option is not visible to clients, check these four things in order:
 
 **1. Trial is not enabled in programme settings**
-Go to **Programme → Settings → Trial → Edit** and make sure trial is turned on and fully configured — type (free/paid), length, session capacity, and which classes are included. If trial is not set up here, it will not appear anywhere regardless of other settings.
+Go to **Programme → Settings** → the **Trial** tile → **Trial settings** and make sure trial is turned on and fully configured — type (free/paid), length, session capacity, and which classes are included. If trial is not set up here, it will not appear anywhere regardless of other settings.
 
 **2. Allow online booking is off**
-Go to **Programme → Settings → Online booking** and make sure **Allow online booking** is set to Yes. If this is off, the programme is hidden entirely.
+Go to **Programme → Settings** → the **Booking** tile → **Online booking** and make sure **Allow online booking** is set to Yes. If this is off, the programme is hidden entirely.
 
 **3. Booking Options Shown on Website excludes trials**
 On the same screen, find **Booking Options Shown on Website**. If it is set to **Offer full programme booking only**, trials will not appear. Change it to one of:
@@ -59,7 +59,7 @@ On the same screen, find **Booking Options Shown on Website**. If it is set to *
 ![Screenshot — trials faq](../../assets/images/trials-faq-01.png)
 
 **4. No available trial dates**
-If all classes are full (no free capacity for trials), there are no dates to display. Check the capacity settings in **Programme → Settings → Trial → Session Capacity** and make sure there is either available class capacity or extra capacity reserved for trials.
+If all classes are full (no free capacity for trials), there are no dates to display. Check the capacity settings in **Programme → Settings → the **Trial** tile → **Trial settings** → Session Capacity** and make sure there is either available class capacity or extra capacity reserved for trials.
 
 ---
 
@@ -68,7 +68,7 @@ If all classes are full (no free capacity for trials), there are no dates to dis
 The trial follow-up emails (booking link, reminders, Trial Lost notification) are sent by the **Automation Settings** configured inside the trial settings. If nothing is being sent, work through this checklist:
 
 **1. Automation is not set up or not activated**
-Go to **Programme → Settings → Trial → Automation Settings**. Check the **Automation status** — it must be **Set and activated**. If it shows **Not activated**, click **Edit** and switch it on.
+Go to **Programme → Settings → the **Trial** tile → **Trial settings** → Automation Settings**. Check the **Automation status** — it must be **Set and activated**. If it shows **Not activated**, click **Edit** and switch it on.
 
 ![Screenshot — trials faq](../../assets/images/trials-faq-01.png)
 
@@ -269,7 +269,7 @@ When a client books a trial, the system can reserve a spot in the **class-wide**
 2. A paying client then registers for a specific block in the same class.
 3. The system prioritises the paying client (confirmed revenue) over the trial (non-binding), which can push the session over its per-block capacity.
 
-**Workaround:** Go to **Programme → Settings → Trial** and configure trial bookings to use **extra capacity** only. This ensures that trial reservations never consume spots intended for paying clients. The trial client is added on top of the normal capacity limit instead of inside it.
+**Workaround:** Go to **Programme → Settings** → the **Trial** tile → **Trial settings** and configure trial bookings to use **extra capacity** only. This ensures that trial reservations never consume spots intended for paying clients. The trial client is added on top of the normal capacity limit instead of inside it.
 
 If you prefer to keep the current setting, you will need to manage overbooking manually — for example, by contacting the trial client and moving them to a different session that still has available spots. <!-- REVIEW: confirm "extra capacity" setting label matches current UI -->
 
@@ -326,7 +326,7 @@ The current step is highlighted so you can see exactly where in the process the 
 ## How do I check whether trial automation is active for a programme?
 
 1. Go to **Programmes** and open the programme.
-2. Click the **Settings** tile → **Edit** → scroll to the **Trial** section. This shows whether trials are enabled and the trial type.
+2. Click the **Settings** tile → scroll to the **Trial** section. This shows whether trials are enabled and the trial type.
 3. To see the automation rules, go to the programme's **Automations** tile → **Trials**. Here you can see and configure:
    - Whether an enrolment link is sent automatically after the trial session
    - The number of days before the first and second follow-up

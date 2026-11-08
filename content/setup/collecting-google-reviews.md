@@ -10,7 +10,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-11-08"
 related_articles: ["google-reviews-faq", "creating-a-location", "online-registration", "whatsapp-integration"]
 ---
 
@@ -102,7 +102,7 @@ If it's still unverified, Zooza shows the reason Google gave (for example, "veri
 
 Review requests are turned on **per programme**, and you choose **when** they go out. Nothing is sent until you switch it on.
 ![Programme feedback settings with the Reviews trigger section](../../assets/images/collecting-google-reviews-07.png)
-1. Go to **Programmes**, open the programme you want, then **Settings → Feedback**.
+1. Go to **Programmes**, open the programme you want, then **Settings** → the **Feedback and reviews** tile → **Feedback**.
 2. In the **Reviews** section, enable any of the three moments:
 
    - **After registration** — shown on the registration widget's thank-you screen, right after someone signs up. ![Registration widget thank-you screen showing the Google review prompt](../../assets/images/collecting-google-reviews-08.png)

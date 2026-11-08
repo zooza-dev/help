@@ -53,7 +53,7 @@ The auto-cancel flow has two stages:
 
 ## Where to configure
 
-**Programme → Settings → Price and payment**, at the bottom of the page, the **Auto-cancel unpaid bookings** card. It is its own card, directly below Payment reminders settings.
+**Programme → Settings** → the **Price** tile → **Price and payment**, at the bottom of the page, the **Auto-cancel unpaid bookings** card. It is its own card, directly below Payment reminders settings.
 
 ![Payment automations → Auto-cancel unpaid bookings drawer, with the automation set to Active](../../assets/images/auto-cancel-unpaid-settings.png)
 

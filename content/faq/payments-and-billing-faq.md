@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-06"
+last_converted: "2026-11-08"
 ---
 
 # Payments and Billing FAQ
@@ -249,7 +249,7 @@ Instalment due dates on a payment plan are still set per instalment and are not 
 
 No. The **Awaiting payment** status is for your internal tracking only — it does not trigger any emails.
 
-To send email reminders to clients with outstanding balances, you must configure a **Payment Reminder** action on the programme under **Programme → Settings → Price and payment → Payment Reminder Settings**. Without this action, bookings will silently move from **Awaiting payment** to **Unpaid** when the deadline passes — no notification is sent.
+To send email reminders to clients with outstanding balances, you must configure a **Payment Reminder** action on the programme under **Programme → Settings → the **Price** tile → **Price and payment** → Payment Reminder Settings**. Without this action, bookings will silently move from **Awaiting payment** to **Unpaid** when the deadline passes — no notification is sent.
 
 See [Automatic payment reminders](../guides/automatic-payment-reminders-detailed.md) for full setup instructions.
 
@@ -269,7 +269,7 @@ Payment reminders are configured per programme under the payment settings. You s
 - The interval between reminders.
 - Whether the system should automatically cancel the booking after all reminders expire.
 
-Go to **Programme → Settings → Price and payment → Payment Reminder Settings** to configure this. For a full walkthrough, see [Automatic payment reminders](../guides/automatic-payment-reminders-detailed.md).
+Go to **Programme → Settings → the **Price** tile → **Price and payment** → Payment Reminder Settings** to configure this. For a full walkthrough, see [Automatic payment reminders](../guides/automatic-payment-reminders-detailed.md).
 
 ## How do I issue a refund?
 
@@ -318,7 +318,7 @@ No. This is the most common source of confusion when setting up payments.
 
 A payment template defines **when and in how many parts** a client pays — monthly, quarterly, annually, after N sessions, or a fixed number of instalments. It does **not** contain the price. The amount comes from each programme's own price setting, and any discount on the template is calculated as a percentage or fixed sum off that price.
 
-So if you run six programmes and want to offer monthly, quarterly and annual payment on each, you create **three templates, not eighteen**. You create them once under **Settings → Billing & Payments → Payment schedule templates**, then switch them on for each programme under **Programmes → programme → Settings → Price and payment → Payment Frequency**.
+So if you run six programmes and want to offer monthly, quarterly and annual payment on each, you create **three templates, not eighteen**. You create them once under **Settings → Billing & Payments → Payment schedule templates**, then switch them on for each programme under **Programmes → programme → Settings** → the **Price** tile → **Price and payment** → Payment Frequency.
 
 Each programme keeps its own price. The same "Monthly" template produces different instalments for a €300 programme and a €450 one.
 
@@ -416,7 +416,7 @@ If the QR code is completely absent from payment instruction emails (not just br
 Check these in order:
 
 1. **Billing profile has no IBAN** — Go to **Settings → Billing & Payments → Invoice profiles**, open the active profile, and confirm that **IBAN** and **SWIFT/BIC** are filled in. Both are required for the QR code to generate.
-2. **Programme uses a different billing profile** — If the programme has its own billing profile assigned (in **Programme → Settings → Price and payment → Invoicing**), check that profile's IBAN and SWIFT/BIC too.
+2. **Programme uses a different billing profile** — If the programme has its own billing profile assigned (in **Programme → Settings → the **Price** tile → **Price and payment** → Invoicing**), check that profile's IBAN and SWIFT/BIC too.
 3. **Template does not include the QR code tag** — Open **Communication → Templates** → the relevant payment template. Confirm the template body contains the `*|QR_CODE|*` tag. If it was removed or never added, the QR will not appear.
 
 > QR payment codes are currently available for accounts based in SK, CZ, and other SEPA markets. If your account is in a different region, the `*|QR_CODE|*` tag may not generate an image regardless of the settings.
@@ -588,7 +588,7 @@ If clients are receiving reminders 1–3 weeks before they need to pay, this is 
 **To turn it off or adjust it:**
 
 - **Globally:** Go to **Settings → Billing & Payments → Payment settings** and disable or adjust **Notify before a scheduled payment is issued**. Set the number of days to a smaller value, or turn it off entirely.
-- **Per programme:** Go to **Programme → Settings → Price and payment → Payment Reminders** and adjust the reminder schedule for that programme.
+- **Per programme:** Go to **Programme → Settings → the **Price** tile → **Price and payment** → Payment Reminders** and adjust the reminder schedule for that programme.
 
 > **Note:** This setting controls notification at the programme level. You cannot turn off reminders for a single client — only globally or per programme.
 
@@ -686,7 +686,7 @@ A down payment (deposit) and a payment plan can be used together. The down payme
 
 **Setup:**
 
-1. Go to **Programme → Settings → Price and payment**.
+1. Go to **Programme → Settings** → the **Price** tile → **Price and payment**.
 2. Under **Price**, set your total price and select a payment plan (e.g. monthly instalments).
 3. Under **Down payment**, choose **Fixed amount** or **Percentage** and enter the value.
 4. Save.
@@ -700,7 +700,7 @@ A down payment (deposit) and a payment plan can be used together. The down payme
 
 You choose. The deadline is not fixed to the moment of booking, which is the assumption behind most "why is the deposit already overdue" questions.
 
-In **Programme → Settings → Price and payment**, under the down payment fields:
+In **Programme → Settings** → the **Price** tile → **Price and payment**, under the down payment fields:
 
 | Field | What it does |
 |---|---|
@@ -846,7 +846,7 @@ Payment plan templates (payment schedules with instalments) are created and mana
 
 **To create or manage a payment template:**
 1. Open the programme.
-2. Go to **Settings → Price and payment**.
+2. Go to **Settings** → the **Price** tile → **Price and payment**.
 3. Under **Payment templates**, create or edit the templates you want to offer.
 
 **At the class level**, you can only enable or disable which of the programme's payment templates are available to clients booking that specific class. You cannot create a new template from within a class.
@@ -960,7 +960,7 @@ To investigate why a payment was ignored: go to **Sales & Payments → Payment r
 
 ## Does the "X days after registration" due date setting apply to payment plan instalments?
 
-Yes, from July 2026. Previously, the **"due X days after registration"** setting (configured under **Programme → Settings → Price and payment → Payment Reminder Settings**, mode: after registration) only applied to single-payment programmes. For instalment plans, the first payment's due date was set to the class start date regardless of this setting.
+Yes, from July 2026. Previously, the **"due X days after registration"** setting (configured under **Programme → Settings → the **Price** tile → **Price and payment** → Payment Reminder Settings**, mode: after registration) only applied to single-payment programmes. For instalment plans, the first payment's due date was set to the class start date regardless of this setting.
 
 Now the first instalment's **due date** is set to `registration date + X days`, matching how single payments already worked. Subsequent instalments follow the payment plan schedule as normal — their due dates are unaffected.
 

@@ -12,7 +12,7 @@ status: published
 source_legacy_path: ""
 source_language: en
 needs_screenshot_replacement: false
-last_converted: "2026-08-30"
+last_converted: "2026-11-08"
 related_articles: ["blocks-faq","blocks-creation","trial-sessions","capacity-and-extra-capacity"]
 ---
 
@@ -176,7 +176,7 @@ The two checkboxes are **independent**. Any combination is valid:
 | Off | On | Not open for registration, but usable as a trial date |
 | Off | Off | Not offered at all |
 
-The **class-level** trial setting at **Programme → Settings → Trial** remains the
+The **class-level** trial setting at **Programme → Settings** → the **Trial** tile → **Trial settings** remains the
 master switch — the per-block toggle only narrows the offer inside a programme that
 already has trials enabled. A newly created block inherits the class's setting, and
 when this shipped every existing block was set to match its class, so no live setup
@@ -200,7 +200,7 @@ In practice this means:
 3. The system prioritises the paying client, even if this causes temporary over-capacity.
 
 **Fix:** configure trial bookings to use **extra capacity** only (**Programme →
-Settings → Trial**). Trials then never consume spots reserved for paying clients.
+Settings → the **Trial** tile → **Trial settings****). Trials then never consume spots reserved for paying clients.
 
 ### Dynamic tags
 

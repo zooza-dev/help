@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0058_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-20"
+last_converted: "2026-11-08"
 related_articles: ["trials-faq","trials-daily-business","individual-sessions","blocks-configuration"]
 ---
 
@@ -27,7 +27,7 @@ This approach is ideal not only for attracting new clients, but also for launchi
 
 ## Where trials are configured
 
-**Programme → Settings → Trial tile → Edit.** Everything on this page is set there,
+**Programme → Settings** → the **Trial** tile → **Trial settings**. Everything on this page is set there,
 per programme. It is not under Additional fields, and there is no global trial page.
 
 ## "Trial session" means three different things — decide which you want first

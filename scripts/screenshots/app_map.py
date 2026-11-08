@@ -119,22 +119,22 @@ REPRESENTATIVE = {"course": 150, "schedule": 230, "event": 22131,
 # Settings tab; it is not declared in moduleconfig, so it is kept here with the
 # English title key where one exists and a literal where the app uses the tile's
 # own card heading.
-PROGRAMME_TILES = [
-    ("settings", "course_settings__card_course__title", "Programme settings"),
-    ("price", "course_settings__card_price__title", "Price and Payment"),
-    ("online_registration", "course_settings__card_registration__title", "Online booking"),
-    ("replacements", "course_settings__card_replacements__title", "Make-up sessions"),
-    ("additional_sessions", "course_settings__card_additional_sessions__title", "Additional sessions"),
-    ("trial", "course_settings__card_trial__title", "Trial"),
-    ("retention", "course_settings__card_retention__title", "Auto-enrolment"),
-    ("attendance", None, "Attendance"),
-    ("extra_fields", "course_settings__card_extra_fields__title", "Additional fields"),
-    ("feedback", "course_settings__card_feedback__title", "Feedback"),
-    ("schedule_groups", "course_settings__card_schedule_groups__title", "Class linking"),
-    ("documents", None, "Documents"),
-    ("videos", None, "Videos"),
-    ("urls", None, "URLs"),
-]
+def programme_tiles(strings):
+    """The tiles on a programme's Settings tab, read from the app's own strings.
+
+    This was a hand-kept list, and the November 2026 redesign replaced every
+    entry in it: cards named after Zooza's features became tiles named after
+    the stage a family is at. A hand-kept list goes stale silently and takes
+    check_nav's tile validation down with it, so it now reads
+    `programme_settings_hub__tile__*` and keeps itself honest.
+    """
+    tiles = []
+    for key, label in sorted(strings.items()):
+        m = re.match(r"programme_settings_hub__tile__([a-z_]+)$", key)
+        if m and label.strip():
+            tiles.append((m.group(1), key, label.strip()))
+    return tiles
+
 CLASS_PANELS = [
     ("settings", "Settings"), ("trainers", "Instructors"), ("products", "Products"), ("report", "Report"),
     ("price", "Pricing"), ("payment_schedules", "Payment plans"), ("add_scheduled_payment", "Add scheduled payment"),
@@ -159,7 +159,7 @@ def programme_screens(strings):
         screen("programmes.overview", f"{P} → programme → Overview", f"courses/{c}", "Overview", ("course_detail__",)),
         screen("programmes.settings", f"{P} → programme → Settings", f"courses/{c}/settings", "Settings", ("course_settings__",)),
     ]
-    for tile, key, fallback in PROGRAMME_TILES:
+    for tile, key, fallback in programme_tiles(strings):
         title = strings.get(key, fallback) if key else fallback
         out.append(screen(f"programmes.settings.{tile}", f"{P} → programme → Settings → {title}",
                           f"courses/{c}/settings?edit={tile}", title, (f"course_settings__{tile}__", f"course_settings__card_{tile}__")))

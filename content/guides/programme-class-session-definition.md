@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0048_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-20"
+last_converted: "2026-11-08"
 ---
 
 # Programmes, classes, and sessions explained
@@ -102,8 +102,8 @@ If you don't see this prompt, check that you're editing at the right layer (see 
 | Move a single session to a different time | **Session** → Edit → This session only |
 | Cancel one lesson | **Session** → Cancel session |
 | Cancel the whole class | **Class** → Archive or end date |
-| Enable or disable trials | **Programme** → Settings → Trial |
-| Enable or disable make-up sessions | **Programme** → Settings → Make-up sessions |
+| Enable or disable trials | **Programme** → Settings → the **Trial** tile → **Trial settings** |
+| Enable or disable make-up sessions | **Programme** → Settings → the **Make-ups** tile → **Make-up sessions options** |
 | Change who can see this programme online | **Programme** → Online booking on/off |
 
 ---

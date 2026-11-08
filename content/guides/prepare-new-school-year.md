@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-21"
+last_converted: "2026-11-08"
 related_articles: ["copy-programme-and-class", "new-programme-existing-clients", "auto-enrollment", "billing-periods", "archive-or-delete-programme"]
 ---
 
@@ -62,7 +62,7 @@ See [Copy a programme or class](copy-programme-and-class.md) for the full copy w
 If you want clients to be offered auto-enrolment at the end of the current billing period:
 
 1. Open the class.
-2. Go to **Class Settings → Auto-enrolment**.
+2. Go to **Class Settings** → the **When a class ends** tile.
 3. Enable **Auto-enrolment** and set how many days before the period end date the continuation email fires.
 4. Choose whether continuation is automatic (opt-out) or requires client confirmation (opt-in).
 
@@ -85,7 +85,7 @@ If you use the booking widget on your website:
 1. Check that new classes have **Online Registration** enabled (so they appear in the widget).
 2. Check that finished or full classes have **Online Registration** disabled (so they no longer appear).
 
-This is controlled per class under **Class Settings → Online booking → Show in online registration**.
+This is controlled per class under **Class Settings → the **Booking** tile → **Online booking** → Show in online registration**.
 
 ## Step 7 — Set up or update payment templates
 
@@ -93,7 +93,7 @@ If prices change for the new year, update or create new payment templates:
 
 1. Go to **Settings → Billing & Payments → Payment schedule templates**.
 2. Create new templates for the new year's pricing if needed.
-3. Activate the correct template on each programme under **Programme → Settings → Price and payment**.
+3. Activate the correct template on each programme under **Programme → Settings** → the **Price** tile → **Price and payment**.
 
 See [Payment templates](../guides/payment-templates-creation.md) for the three-step activation flow.
 
@@ -111,9 +111,9 @@ Once your new classes are ready, let your clients know:
 |------|----------------|
 | Add billing periods | Settings → Billing & Payments → Billing periods |
 | Copy a class | Programmes → open class → Copy |
-| Enable auto-enrolment | Class Settings → Auto-enrolment |
+| Enable auto-enrolment | Class Settings → the **When a class ends** tile |
 | Archive a class | Class settings → Archive |
-| Update widget visibility | Class Settings → Online booking |
+| Update widget visibility | Class Settings → the **Booking** tile → **Online booking** |
 | Create payment templates | Settings → Billing & Payments → Payment schedule templates |
 | Send client announcement | Communication → Compose |
 

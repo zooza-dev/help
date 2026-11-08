@@ -160,7 +160,7 @@ This process is fully automatic — there is no admin action required.
 
 ### How do I enable the make-up session waitlist?
 
-Go to **Programmes** → select a programme → **Settings** → **Make-up sessions** → enable **Make-up sessions waitlist**.
+Go to **Programmes** → select a programme → **Settings** → the **Make-ups** tile → **Make-up sessions options** → enable **Make-up sessions waitlist**.
 
 When the waitlist is disabled, clients only see sessions that currently have a free spot and cannot queue for full sessions.
 

@@ -21,7 +21,7 @@ related_articles: ["matko-replacement-diagnostic","cancellation-log","replacemen
 
 When a child misses a session and the absence is properly recorded, the system generates a make-up credit on the booking. The parent can then use this credit to book a make-up session in another compatible class (same programme, matching age range) through their Client Profile.
 
-Make-up sessions must be enabled per programme. Go to **Programmes** → select the programme → **Settings** → **Make-up sessions** to configure them.
+Make-up sessions must be enabled per programme. Go to **Programmes** → select the programme → **Settings** → the **Make-ups** tile → **Make-up sessions options** to configure them.
 
 ## A client wants an extra session, not a make-up — what do I use?
 
@@ -50,7 +50,7 @@ If the credit is already gone, set the record back to *Cancelled*; a fresh credi
 
 There are two levels for this setting:
 
-1. **Global setting** — Go to **Settings** → **Make-up sessions**. The `Extra capacity for replacement hours` value (e.g. 1) applies to every class across all programmes. This means each class allows that many additional spots beyond its normal capacity for make-up bookings.
+1. **Global setting** — Go to **Settings** → the **Make-ups** tile → **Make-up sessions options**. The `Extra capacity for replacement hours` value (e.g. 1) applies to every class across all programmes. This means each class allows that many additional spots beyond its normal capacity for make-up bookings.
 
 2. **Per-class setting** — On the class detail page, the make-up sessions tile shows a per-class extra capacity value. You can choose whether this value **replaces** the global setting or **adds to** it.
 
@@ -58,7 +58,7 @@ If the per-class value is 0 and set to "add to global", the global setting appli
 
 ## Can I stop parents choosing their own make-up session?
 
-Yes. Go to **Programmes → the programme → Settings → Make-up sessions**, and in **Make-up sessions settings** switch on **Make-up sessions are assigned by an administrator**.
+Yes. Go to **Programmes → the programme → Settings** → the **Make-ups** tile → **Make-up sessions options**, and in **Make-up sessions settings** switch on **Make-up sessions are assigned by an administrator**.
 
 ![Make-up sessions settings with the administrator-assigned switch turned on](../../assets/images/make-up-sessions-faq-02.png)
 
@@ -146,7 +146,7 @@ Check **Settings → Other → Make-up sessions** first, not the course, wheneve
 
 ## Can make-up credits carry over to the next billing period?
 
-Yes. Go to **Settings** → **Make-up sessions** → **General Settings** and choose one of three expiration modes under **Make-up sessions behavior**:
+Yes. Go to **Settings** → the **Make-ups** tile → **Make-up sessions options** → **General Settings** and choose one of three expiration modes under **Make-up sessions behavior**:
 
 | Mode | Behavior |
 |---|---|
@@ -167,7 +167,7 @@ Yes. Go to **Settings** → **Make-up sessions** → **General Settings** and ch
 answer people are usually looking for when they ask.
 
 What you can set is a **ratio**: so many make-ups per so many sessions. Go to
-**Programme → Settings → Make-up sessions** and set the two fields together:
+**Programme → Settings** → the **Make-ups** tile → **Make-up sessions options** and set the two fields together:
 
 | Field | Example |
 |---|---|
@@ -249,7 +249,7 @@ The absence must be recorded as **"Cancelled"**, not **"Did not attend"**. Only 
 
 #### 2. Check that make-up sessions are enabled on the programme
 
-Go to **Programmes** → select the programme → **Settings** → **Make-up sessions**. If this is off, no options appear for any client in that programme.
+Go to **Programmes** → select the programme → **Settings** → the **Make-ups** tile → **Make-up sessions options**. If this is off, no options appear for any client in that programme.
 
 #### 3. Understand the display limit
 
@@ -290,7 +290,7 @@ Common causes without running MATKO:
 1. **Attendance state** — The absence must be recorded as "Cancelled", not "Did not attend".
 2. **Display limit** — The system shows only the first 100 compatible sessions. If there are many options available, some specific sessions may not appear. Narrow the scope in programme settings or reduce extra capacity on irrelevant classes.
 3. **No available capacity** — All compatible sessions may be full (including the extra capacity allowance).
-4. **Make-up sessions disabled** — Verify that make-up sessions are enabled on the programme. Go to **Programmes** → select the programme → **Settings** → **Make-up sessions**.
+4. **Make-up sessions disabled** — Verify that make-up sessions are enabled on the programme. Go to **Programmes** → select the programme → **Settings** → the **Make-ups** tile → **Make-up sessions options**.
 5. **Class has not started** — Make-up options only appear for classes that start within 4 days or have already begun.
 6. **Cancellation window** — If the parent is looking at a session that starts within the configured cut-off time (e.g. less than 1 hour before the session), the option will no longer be available.
 
@@ -335,7 +335,7 @@ by hand — an admin can add a credit on the booking.
 
 When all sessions with available capacity are taken, parents can join a **waiting list** (queue) for specific sessions. When a spot opens up, the system sends a notification to the parent with a link. The parent must click the link to confirm their spot — it is not automatically assigned.
 
-The waiting list is fully automated. You can enable or disable it per programme. Go to **Programmes** → select the programme → **Settings** → **Make-up sessions** and look for the `Make-up sessions waitlist` option.
+The waiting list is fully automated. You can enable or disable it per programme. Go to **Programmes** → select the programme → **Settings** → the **Make-ups** tile → **Make-up sessions options** and look for the `Make-up sessions waitlist` option.
 
 <!-- REVIEW: Confirm the exact setting name and location — referenced as being in programme make-up session settings. -->
 
@@ -358,7 +358,7 @@ This depends on your **approval mode**:
 
 - **Auto-approval mode** — the client signs up and receives a **confirmation email immediately** on sign-up. No instructor action is required.
 
-To check or change your approval mode, go to **Programmes** → select the programme → **Settings** → **Make-up sessions** → look for the auto-approval setting.
+To check or change your approval mode, go to **Programmes** → select the programme → **Settings** → the **Make-ups** tile → **Make-up sessions options** → look for the auto-approval setting.
 
 ## A client can only see "Did not attend" for their session and not a Cancel option — what does that mean?
 

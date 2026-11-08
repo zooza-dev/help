@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-08-07"
+last_converted: "2026-11-08"
 ---
 
 # Capacity vs extra capacity — who can take which seat
@@ -78,7 +78,7 @@ Extra capacity can also be set across many classes at once with a bulk edit — 
 
 ## Choosing how trials use capacity
 
-In **Programme → Settings → Trial → Session capacity**:
+In **Programme → Settings → the **Trial** tile → **Trial settings** → Session capacity**:
 
 - **Current available capacity** — trials draw on capacity *and* extra capacity together. If an enrolled client cancels, that freed main seat becomes available to a trial.
 - **Extra capacity** — trials are confined to the extra seats. Main capacity stays reserved for paying enrolments even when it is not full.

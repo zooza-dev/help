@@ -42,7 +42,7 @@ Where it earns most is classes that are running under capacity and programmes wh
 
 ## Turning it on
 
-Go to **Programmes → the programme → Settings → Additional sessions** and switch on **Allow additional sessions**. Clients then book them from their **Client Profile**.
+Go to **Programmes → the programme → Settings** → the **Extra sessions** tile → **Additional sessions** and switch on **Allow additional sessions**. Clients then book them from their **Client Profile**.
 
 ![The Additional sessions card in the programme settings, with price, limit and payment enforcement](../../assets/images/additional-sessions-01.png)
 

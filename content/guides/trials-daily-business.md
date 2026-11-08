@@ -51,7 +51,7 @@ Zooza marks a trial as **Trial Lost automatically** after a configured number of
 
 The auto-lost timeout is set at the account or programme level. If you see a trial flip to Lost unexpectedly:
 
-1. Go to **Programme → Settings → Trial** and check the **Auto-lost after X days** setting.
+1. Go to **Programme → Settings** → the **Trial** tile → **Trial settings** and check the **Auto-lost after X days** setting.
 2. Increase the value if you need more time to follow up with clients before the trial is auto-closed.
 
 > A trial marked Lost by the system behaves the same as one you mark manually — it releases the capacity spot and stops follow-up messages.
@@ -179,7 +179,7 @@ After converting, the booking enters the standard trial flow — the same automa
 
 ## Controlling which trial dates appear on your website
 
-Go to **Programme → Settings → Trial → Sessions Shown in Form**.
+Go to **Programme → Settings → the **Trial** tile → **Trial settings** → Sessions Shown in Form**.
 
 Options:
 - Show a fixed number of future sessions
@@ -222,7 +222,7 @@ prospective client can actually be placed.
 
 If you want clients to book only trials from the website (not full enrolments):
 
-Go to **Programme → Settings → Online booking (Edit)** → **Booking Options Shown on Website** → select **Trials only**.
+Go to **Programme → Settings → the **Booking** tile → **Online booking** (Edit)** → **Booking Options Shown on Website** → select **Trials only**.
 
 ![Booking options shown on website — Trials only](../../assets/images/trials-daily-business-08.png)
 

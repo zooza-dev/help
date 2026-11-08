@@ -131,7 +131,7 @@ It has enough moving parts to deserve its own page — see
 | **Cancellation confirmation** | Client cancelled from a session | No |
 | **Scheduled cancellation** | Cancellation scheduled in advance | No |
 | **Scheduled cancellation confirmed** | Scheduled cancellation processed | No |
-| **Automatic deletion** | Unpaid booking auto-deleted after payment reminder deadline | No (configured via Programmes → Settings → Price and payment → Payment Reminders → Delete unpaid registrations) |
+| **Automatic deletion** | Unpaid booking auto-deleted after payment reminder deadline | No (configured via Programmes → Settings → the **Price** tile → **Price and payment** → Payment Reminders → Delete unpaid registrations) |
 
 ---
 
@@ -146,7 +146,7 @@ It has enough moving parts to deserve its own page — see
 | **Send notification after file import** | Whether a payment confirmation is sent after a CSV payment import |
 | **Text of the payment confirmation** | Custom text appended to every payment confirmation email |
 
-**Per-programme payment reminders** (overdue/missed payments) — configured at **Programmes → programme → Settings → Price and payment → Payment Reminders**:
+**Per-programme payment reminders** (overdue/missed payments) — configured at **Programmes → programme → Settings** → the **Price** tile → **Price and payment** → Payment Reminders:
 
 | Notification | Trigger | Client opt-out? |
 |---|---|---|
@@ -175,8 +175,8 @@ It has enough moving parts to deserve its own page — see
 
 | Notification | Trigger | Config location | Client opt-out? |
 |---|---|---|---|
-| **Feedback — during programme** | After the 4th session of an ongoing programme | Programmes → Settings → Feedback → "During programme" toggle | Yes — unsubscribe link in email |
-| **Feedback — after programme** | After programme ends | Programmes → Settings → Feedback → "After programme" toggle | Yes — unsubscribe link in email |
+| **Feedback — during programme** | After the 4th session of an ongoing programme | Programmes → Settings → the **Feedback and reviews** tile → **Feedback** → "During programme" toggle | Yes — unsubscribe link in email |
+| **Feedback — after programme** | After programme ends | Programmes → Settings → the **Feedback and reviews** tile → **Feedback** → "After programme" toggle | Yes — unsubscribe link in email |
 
 ---
 
@@ -215,8 +215,8 @@ These are transactional status updates — no opt-out exists.
 | Disable booking/trial/waitlist automation step | **Programmes → programme → Automations** |
 | Enable/disable session reminders | **Programmes → programme → Online Booking → Edit → Send event notifications** |
 | Configure global payment notification toggles (before payment creation, after manual entry, after import) | **Settings → Billing & Payments → Payment settings** |
-| Configure payment reminders and auto-deletion for overdue payments | **Programmes → programme → Settings → Price and payment → Payment Reminders** |
-| Enable/disable feedback requests | **Programmes → programme → Settings → Feedback** |
+| Configure payment reminders and auto-deletion for overdue payments | **Programmes → programme → Settings** → the **Price** tile → **Price and payment** → Payment Reminders |
+| Enable/disable feedback requests | **Programmes → programme → Settings** → the **Feedback and reviews** tile → **Feedback** |
 | Toggle session reminders for one specific booking | **Booking/registration detail → Options tab → Reminder** |
 | Stop marketing emails for one client | **Clients → client → Notes and preferences → Send promotional emails** |
 

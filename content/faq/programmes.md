@@ -18,7 +18,7 @@ last_converted: "2026-11-08"
 
 ## Can I delete a Programme?
 
-Yes. Admins with the **edit_course** permission can delete a programme directly from **Programme → Settings → Programme settings → Edit → Delete programme**.
+Yes. Admins with the **edit_course** permission can delete a programme directly from **Programme → Settings → the **Programme details** tile → **Basic informations** → Delete programme**.
 
 Deletion is a **soft delete** — the programme moves to **Settings → Tools → Trash** and can be restored within 30 days. After 30 days it is permanently removed.
 
@@ -36,7 +36,7 @@ See [Archive or delete a programme](../guides/archive-or-delete-programme.md) fo
 
 The Programme disappears from your active list. To find it later, use the **Archived** filter in the Programmes list.
 
-To restore: open the archived Programme, go to Programme → Settings → Programme settings → Edit, uncheck **Archive**, and save.
+To restore: open the archived Programme, go to Programme → Settings → the **Programme details** tile → **Basic informations**, uncheck **Archive**, and save.
 
 ---
 
@@ -61,7 +61,7 @@ Do not delete the original Venue from Settings if it is used by other Classes.
 
 ## Can I rename a Programme?
 
-Yes. Go to the Programme, open **Programme → Settings → Programme settings → Edit**, change the name, and save. All settings and bookings remain unchanged.
+Yes. Go to the Programme, open **Programme → Settings** → the **Programme details** tile → **Basic informations**, change the name, and save. All settings and bookings remain unchanged.
 
 ---
 

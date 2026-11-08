@@ -97,6 +97,19 @@ def main():
                 # a numbered step often says "Open the programme" on the line before
                 before = "\n".join(lines[max(0, ln - 3): ln - 1]) + "\n" + line[: m.start()]
                 first, second = m.group(1).strip(), (m.group(2) or "").strip()
+                # "Settings → the Price tile → Price and payment" is the natural way to
+                # write it since the redesign. Strip the article and the noun so the
+                # tile name itself is still checked, rather than reporting "the".
+                first = re.sub(r"^the\b\s*", "", first, flags=re.I)
+                first = re.sub(r"\s+tile$", "", first, flags=re.I).strip()
+                if not first:
+                    # The cue regex stops at the first "**", so "Settings → the
+                    # **Price** tile" leaves nothing behind. Read the tile name out
+                    # of the line instead, which is where it actually is.
+                    t = re.search(r"Settings\*{0,2} → (?:the )?\*\*([^*]+)\*\*\s*tile", line)
+                    if not t:
+                        continue
+                    first, second = t.group(1).strip(), ""
                 rel = os.path.relpath(f, ROOT)
                 if THIRD_PARTY.search(before + line):
                     continue

@@ -85,7 +85,7 @@ All payment notifications are processed in a **nightly batch**. This means:
 
 You can enable a notification that is sent **before** the first instalment is created. This gives the client advance notice that they will receive a payment request soon. It acts as a fourth touchpoint in addition to the three reminders above.
 
-Enable this in **Programme → Settings → Price and payment → Payment reminder settings**.
+Enable this in **Programme → Settings → the **Price** tile → **Price and payment** → Payment reminder settings**.
 
 ## These are on by default, and there are two ways to time them
 

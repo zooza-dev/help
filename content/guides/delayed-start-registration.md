@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-20"
+last_converted: "2026-11-08"
 ---
 
 # Let clients register now and start later
@@ -25,7 +25,7 @@ You could already do this as an admin by setting a start date on a booking. What
 
 ## Turning it on
 
-1. Go to **Programmes → the programme → Settings → Online booking**.
+1. Go to **Programmes → the programme → Settings** → the **Booking** tile → **Online booking**.
 2. Switch on **Allow register now, start later**.
 3. Set **Latest start (days ahead)** — the maximum number of days ahead a client may set their start, counted from the earliest available date.
 4. Save.
