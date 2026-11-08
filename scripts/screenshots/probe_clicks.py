@@ -24,8 +24,11 @@ BLOCK = "**/*{intercom,hotjar,googletagmanager,google-analytics,facebook.net}*"
 
 # The page chrome is on every screen; listing it as a candidate on all 150 of
 # them buries the two or three controls that are actually particular to one.
+# "More" is deliberately NOT in here. It looks like chrome and is not: on the
+# booking screen it is the gateway to Change status, Copy, Cancel and Delete,
+# so hiding it hid half the actions and made them look unreachable.
 CHROME = {"help & support", "back", "save", "cancel", "menu", "home", "log out",
-          "more", "reset", "close", "english", "slovenský", "česky", "deutsch",
+          "reset", "close", "english", "slovenský", "česky", "deutsch",
           "magyar", "italiano", "polski", "română"}
 
 

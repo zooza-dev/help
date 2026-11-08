@@ -175,17 +175,31 @@ def capture(manifest_path, only, apply_it, status=None):
                     pg._tall = bool(shot.get("tall"))
                 pg.goto(f"{shot.get('base', base)}#{route.lstrip('#')}", timeout=60000)
                 pg.wait_for_timeout(shot.get("wait", 8000))
-                if shot.get("click"):
+                # `click` takes one label or a list of them. A list is a path:
+                # since the October rebuild half the booking actions live behind
+                # the More dropdown, so Change status is two clicks, not one, and
+                # a single-click tool reports them all as unreachable.
+                clicks = shot.get("click")
+                clicks = [clicks] if isinstance(clicks, str) else (clicks or [])
+                failed = None
+                for label in clicks:
                     scope = ".zooza-host" if shot.get("session") == "client" else ".app_page_layout"
                     btn = pg.locator(f"{scope} a:visible, {scope} button:visible, {scope} summary:visible") \
-                            .filter(has_text=re.compile(rf"^\s*{re.escape(shot['click'])}\s*$")).first
+                            .filter(has_text=re.compile(rf"^\s*{re.escape(label)}\s*$")).first
                     if btn.count() == 0:   # accordions and tiles are plain elements with a click binding
-                        btn = pg.locator(scope).get_by_text(shot["click"], exact=True).first
+                        btn = pg.locator(scope).get_by_text(label, exact=True).first
                     if btn.count() == 0:
-                        results.append((name, "NO BUTTON", f"nothing to click named {shot['click']!r}"))
-                        continue
-                    btn.click(timeout=8000)
-                    pg.wait_for_timeout(3000)
+                        failed = f"nothing to click named {label!r}"
+                        break
+                    try:
+                        btn.click(timeout=8000)
+                    except Exception:
+                        failed = f"found {label!r} but could not click it"
+                        break
+                    pg.wait_for_timeout(2500)
+                if failed:
+                    results.append((name, "NO BUTTON", failed))
+                    continue
                 text = pg.inner_text("body")
 
                 if "Page not found" in text:
