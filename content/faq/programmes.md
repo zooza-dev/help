@@ -213,7 +213,7 @@ clients at the end of a term, and they are easy to confuse because they sound al
 |---|---|
 | **Continuation for this programme's clients** | Whether anything is offered at all, and of what kind |
 | **Classes you offer into auto-enrolment** | Which of *this* programme's classes are on the list clients are shown |
-| **What your auto-enrolment clients are shown** | Which classes a client in auto-enrolment sees as their options |
+| **What your auto-enrolment clients are shown** | Which classes a client in auto-enrolment sees as their options. The setting inside it is **Which classes your auto-enrolment clients are shown** |
 | **Automatically offer newly created classes into auto-enrolment** | Whether a class you create later joins that list by itself |
 
 That last one is the quiet one. Its own note says *"every class you create in this

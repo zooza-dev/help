@@ -18,6 +18,11 @@ related_articles: ["collecting-google-reviews", "creating-a-location"]
 
 Short answers about the Reviews module. For the full setup walkthrough, see [Collect Google reviews from your clients](../setup/collecting-google-reviews.md).
 
+> **Three different things, and they are easy to mix up.** This page is about **Google
+> reviews** — public, on your Business Profile. **Programme feedback** is private, stays in
+> Zooza, and is set per programme: see [Ask your clients what they
+> thought](../guides/programme-feedback.md). **NPS** is the third.
+
 ## Is Reviews the same as NPS feedback?
 
 No. They are two separate, parallel features. **NPS feedback** is *private* — it stays inside Zooza and helps you improve. **Reviews** is *public* — it asks clients to post a Google review on your business listing. Turning Reviews on does not change your NPS feedback in any way. A client who already gave NPS feedback is not also asked for a Google review.

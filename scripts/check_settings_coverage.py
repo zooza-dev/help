@@ -85,7 +85,12 @@ def main():
             if n.endswith(".md"):
                 p = os.path.join(dp, n)
                 with open(p, encoding="utf-8") as fh:
-                    docs[os.path.relpath(p, CONTENT)] = norm(fh.read())
+                    text = fh.read()
+                # A long label wrapped inside a blockquote carries "> " into the
+                # middle of itself once newlines collapse, and then matches
+                # nothing. Strip the markers before normalising.
+                text = re.sub(r"^\s*>\s?", "", text, flags=re.M)
+                docs[os.path.relpath(p, CONTENT)] = norm(text)
 
     covered, missing, skipped = {}, [], 0
     for sid, label in settings:

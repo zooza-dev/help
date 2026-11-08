@@ -102,6 +102,18 @@ To configure a choice field:
 4. Repeat for all options.
 5. Save.
 
+## Asking for an address
+
+An address field has an **Address format** of its own:
+
+| Format | What the parent fills in |
+|---|---|
+| **Simple (single field)** | One box, free text |
+| **Structured (separated fields — street, city, zip code)** | Three boxes |
+
+Pick **Structured** if you will ever sort, filter or post by town — a single free-text box
+cannot be taken apart afterwards. Pick **Simple** if you only need something to read.
+
 ## Hiding or disabling a field
 
 To remove a field from the booking form without deleting it permanently:

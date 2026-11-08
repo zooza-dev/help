@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-24"
+last_converted: "2026-11-08"
 related_articles: ["instructor-attendance-management","make-up-sessions-faq","transfer-and-copy-bookings","cancellation-log","matko-replacement-diagnostic"]
 ---
 
@@ -189,6 +189,18 @@ The filter only appears when the booking has records in more than one state, so 
 If a student changed classes mid-year, there is no single view that combines their attendance from both classes. You need to check each booking separately and add up the counts manually. This is a current limitation — there is no built-in cross-class attendance report for a single student.
 
 ---
+
+## Stopping a client rescheduling the same session repeatedly
+
+**Limit rescheduling to once per session** sits in the programme's **Attendance** tile. On,
+a client may move each session once and no more.
+
+> **It only counts the client's own moves.** Rescheduling done by an instructor or an admin
+> does not use up the allowance — so you can still fix a genuine clash for somebody who has
+> already used their one move.
+
+Worth it where a few families move the same session repeatedly and the register never
+settles. Leave it off where your classes have room and the moving costs you nothing.
 
 ## Related
 

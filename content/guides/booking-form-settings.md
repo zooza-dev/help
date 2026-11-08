@@ -145,6 +145,21 @@ Go to **Programmes** → open a programme → **Settings** → the **Price** til
 
 Here you set the programme price, booking fee, price type (term / block / unit), payment method, and whether late bookings are automatically approved. See [Programme Settings Reference](../reference/programme-settings.md) for the full field list.
 
+## Closing bookings shortly before a programme starts
+
+**Hide from booking form (number of hours) before the programme begins** does what it says:
+that many hours ahead of the start, the programme stops being bookable **and disappears from
+the form altogether**.
+
+It is in the programme's **Booking** tile, under **Online booking**.
+
+> **Hidden, not just closed.** A parent looking for it will not find a greyed-out entry
+> explaining why — the programme is simply not there. If somebody reports that a class
+> "vanished from the website" on the morning it starts, this is the setting.
+
+The class list in the app says so plainly when it happens: *the class has been hidden from
+the booking form since …, setting: hide before the programme begins*.
+
 ## Related
 
 - [Additional fields on the booking form](additional-fields.md) — full guide for data collection fields.
