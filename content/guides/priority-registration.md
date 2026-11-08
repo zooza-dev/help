@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-08-16"
+last_converted: "2026-11-08"
 ---
 
 # Priority registration for returning customers
@@ -35,12 +35,15 @@ The practical difference is the last column. With a share link you decide who ge
 
 ## Setting it up
 
-Go to **Programmes → the programme → Settings → Online booking**, and switch on **Priority registration**.
+Go to **Programmes → the programme → Settings**, find **Who can book early** under the
+**Joining** stage — or just search for *priority* — and switch on **Priority registration**.
 
 1. Under **Priority open**, either enter **Days before billing period starts** and let Zooza fill in the date, or set **Priority opens on** directly. The offset resolves against the billing period's start — or the class's own start date if the period has no dates.
 2. Decide whether it ever opens to everyone. **Opens to the public later** off means the term stays restricted to eligible returning clients for its whole length. On, you set **Days before billing period starts** or **Public opens on** the same way.
 3. Optionally narrow who qualifies under **Who is eligible** (see below).
-4. Click **Save**.
+
+There is nothing to save. The drawer keeps your changes as you make them and says so at
+the bottom; close it when you are done.
 
 > There is a related switch just below: **Allow the same account to register more than once**. It keeps the class on a returning client's dashboard after they have booked, so a parent can come back and enrol another child. Without it, the class disappears from their dashboard once they have registered once.
 

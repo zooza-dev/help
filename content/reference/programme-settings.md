@@ -1,6 +1,6 @@
 ---
 title: "Programme Settings"
-description: "The Programme Settings page is a dashboard of configuration tiles. Each tile controls a different aspect of the programme."
+description: "Programme settings are organised by the stage a family is at. Find any setting with the search, open it in its own drawer, and it saves as you go."
 slug: "programme-settings-reference"
 type: "reference"
 product_area: "Programmes"
@@ -16,29 +16,65 @@ last_converted: "2026-11-08"
 
 # Programme Settings
 
-The Programme Settings page is a dashboard of configuration tiles. Each tile controls a different aspect of the programme. Open it by clicking **Edit Settings** on a programme detail page.
+Programme settings were rebuilt in November 2026. The screen is no longer a set of cards
+organised by Zooza's features — it is organised by **the stage a family is at**, and every
+setting opens in a drawer of its own.
 
-> **Navigation:** Go to **Programmes** → select a programme → **Edit Settings**.
+> **Navigation:** **Programmes** → open a programme → the **Settings** tab.
 
-![Programme Settings overview](../../assets/images/reference/prog-programmes-wiggle-wonders-0-12-months-settings.png)
+![The Settings tab: the Setup card with its answers, the search field reporting matching settings, and the Joining stage with the Trial tile](../../assets/images/reference/programme-settings-hub.png)
 
-## Settings Overview
+## How the screen is laid out
 
-The dashboard shows 10 tiles at a glance. Each tile displays a summary of current values and an **Edit** button to open the full editor.
+**Setup, at the top.** The handful of decisions that shape a programme, shown as answers
+rather than fields: programme type, for children, payment, online booking, booking form,
+attendance, trial, next term, feedback, extra sessions. **Review setup** reopens the flow
+on the Overview tab to change them.
 
-| Tile | Summary shown |
+**Search, under it.** The fastest way in, and the one to teach people. It reports how many
+settings match as you type and highlights them inside the tiles. It searches field names,
+their aliases, the help text **and the options inside lists** — so searching for an extra
+field by its own name finds the tile holding it.
+
+**Stages, then tiles, then rows.** Each row is a group of settings with its current value
+beside it. Clicking one opens its drawer.
+
+| Stage | Tiles |
 |---|---|
-| **Price and Payment** | Unit price, booking fee, price type, payment method, invoice profile, late bookings policy. |
-| **Online Booking** | Status (on/off), booking form link, number of classes with booking allowed. |
-| **Make-up Sessions** | Status, partner companies, tailored make-ups, session limit. |
-| **Programme Settings** | Programme type, timetable type, for children flag, labels. |
-| **Additional Fields** | Status, list of active fields (e.g., "Child's date of birth, Children's Name"). |
-| **Trial** | Trial type (none, free, paid, etc.). |
-| **Auto-Enrolment** | Auto-enrolment type (none, suggest timetables, duplicate). |
-| **Feedback** | During programme (yes/no), after programme ends (yes/no). |
-| **Attendance** | Track attendance (yes/no). |
+| **Joining** | Booking · Booking form · Trial |
+| **Paying** | Price · Payment collection |
+| **Attending** | Make-ups · Extra sessions |
+| **Keeping in touch** | When a class ends · Messages to clients · Feedback and reviews |
+| **About the programme** | Programme details · What clients see |
+| **Switched off** | Anything turned off, kept together at the bottom so the rest stays short |
 
-Top-right buttons: **New class**, **Copy programme**.
+## Inside a drawer
+
+![A settings drawer: the fields on the left, and a help pane on the right with the group's explanation and links to related settings](../../assets/images/reference/programme-settings-drawer.png)
+
+Three things are worth knowing before you change anything.
+
+**There is no Save button.** The drawer says **"Changes save automatically."** Close it
+when you are done. If you are used to clicking Save and then checking it took, you can
+stop.
+
+**The help pane on the right explains the group**, and switches to a field's own help when
+you hover or click it. At the bottom it lists **Related settings** — the other drawers
+affecting the same outcome, which is usually where the second half of an answer lives.
+
+**Every drawer has its own address**, so a link to one is a link to that exact group.
+Older links of the form `?edit=price` still work: they are mapped to the drawer the setting
+now lives in, so bookmarks and older articles still land in the right place.
+
+> **Looking for a setting and not finding it?** Use the search before hunting through
+> tiles. A setting that depends on another one — a price field that exists only once you
+> have chosen a price type — is hidden until the thing it depends on is set, and the search
+> finds it anyway.
+
+## The settings themselves
+
+The groups below are the same settings, listed by what they do. Where a group has moved
+tile, the stage is named beside it.
 
 ## Price and Payment
 

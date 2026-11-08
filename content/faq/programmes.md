@@ -9,7 +9,7 @@ tags: ["programme", "class", "archive", "delete", "venue", "price", "rename", "t
 status: "published"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-21"
+last_converted: "2026-11-08"
 ---
 
 # FAQ — Programmes
@@ -31,8 +31,8 @@ See [Archive or delete a programme](../guides/archive-or-delete-programme.md) fo
 ## How do I archive a Programme?
 
 1. Go to **Programmes** and click the Programme name.
-2. Go to **Programme → Settings → Programme settings → Edit**.
-3. Tick **Archive** and click **Save**.
+2. Go to the **Settings** tab and open **Programme details** under **About the programme**.
+3. Tick **Archive**. It saves on the spot — the drawer has no Save button.
 
 The Programme disappears from your active list. To find it later, use the **Archived** filter in the Programmes list.
 

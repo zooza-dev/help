@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-22"
+last_converted: "2026-11-08"
 related_articles: ["make-up-sessions-faq","admin-attendance-management","cancellation-log","custom-replacement-lessons"]
 ---
 
@@ -242,7 +242,8 @@ Once the branches are linked, you can allow cross-company replacements at the pr
 ![Programme replacement lessons section with Edit button](../../assets/images/replacement-hours-cross-04.png)
 
 3. Under **Make-up session**, check **Allow make-up session from other companies**.
-4. Click **Save**.
+
+The drawer saves as you go — there is no Save button to press.
 
 ![Allow replacement lessons from other companies checkbox](../../assets/images/replacement-hours-cross-05.png)
 
