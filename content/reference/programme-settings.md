@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-11-07"
+last_converted: "2026-11-08"
 ---
 
 # Programme Settings
@@ -129,7 +129,7 @@ Controls whether clients can book make-up sessions for missed classes.
 |---|---|
 | `Limit for make-up sessions` | Maximum number of make-ups per client per period (e.g., 4). |
 | `Number of days to use make-up` | Deadline for using a make-up after the missed session. |
-| `Apply filter` | "Before end of timetable" or "After end of timetable". |
+| `Apply filter` | Which end of the class the deadline counts from: **Before end of class** or **After end of class**. *(The two options are verified; the field's own label could not be confirmed in the app — check it on screen.)* |
 | `Allow customers to purchase/exchange an already used make-up session` | Allows rebooking used make-ups. |
 | `Flexible limit of make-up sessions` | Makes the limit soft — e.g., if limit is 3, client gets entitled to 3 make-ups every N sessions. |
 | `When cancelling of the make-up session, return the credit to the client` | Controls what happens when a client cancels their make-up. |
