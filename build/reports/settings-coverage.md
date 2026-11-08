@@ -1,12 +1,13 @@
 # Programme settings the help never mentions
 
-Registry read from `origin/feature-programme-settings-redesign`. **137 of 182 settings** appear somewhere in `content/`.
+Registry read from `origin/feature-programme-settings-redesign`. **138 of 182 settings** appear somewhere in `content/`.
 
-A setting on this list is one of two things, and telling them apart needs a
-person: a **gap**, where we have never written about it, or a **rename**, where
-we have, under the name it used to have. The second kind is the more urgent -
-the article reads fine and sends the reader looking for a control that is not
-there any more.
+An exact-string miss is weak evidence on its own. Checked properly on
+2026-11-08, 43 of 45 misses turned out to be settings the help already covers
+under different wording, and only one was a real gap. Treat this list as
+candidates to research, not as a count of things unwritten - the valuable finds
+in it are **renames**, where an article reads fine and sends the reader looking
+for a control under a name it no longer has.
 
 2 label(s) too short to match on were left out; 5 registry entries have no label key at all.
 
@@ -14,7 +15,7 @@ there any more.
 
 | Group | Not mentioned |
 |---|---:|
-| `price` | 10 |
+| `price` | 9 |
 | `feedback` | 6 |
 | `online_registration` | 4 |
 | `replacements` | 4 |
@@ -58,7 +59,6 @@ there any more.
 | `price.payment_reminder.active` | Change the status of scenarios: |
 | `price.payment_reminder.delete_unpaid_registration` | Handle unpaid bookings automatically 1 hour before the programme begins: |
 | `price.payment_reminder.mode` | Settings for sending payment reminders |
-| `price.payment_reminder.unpaid_registration_outcome` | What happens to these bookings |
 | `price.price.billable_events` | Billable sessions (leave empty if all are billable) |
 | `products.course_products.purchase_limit` | Maximum purchases per client |
 | `replacements.options.allow_using_replacement_credits_as_discount` | Allow the use of credit for a make-up session as a discount when purchasing a programme |

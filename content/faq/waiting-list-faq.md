@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-21"
+last_converted: "2026-11-08"
 related_articles: ["make-up-sessions-faq", "booking-faq"]
 ---
 
@@ -57,6 +57,12 @@ Go to **Bookings** and filter by status **Waitlist**. From there you can:
 4. Tick **Send confirmation email** if you want the parent notified.
 
 Nothing moves off the waiting list on its own. Every approval is a decision you make, even when a place has clearly opened up.
+
+> **The automatic one has a switch, and it can be off.** The make-up waitlist emails
+> everyone the moment a slot frees up — unless **"Automatically send an email to clients
+> who are interested in attending on this date when a slot becomes available"** is turned
+> off on the programme. Find it by searching for *waiting* in the programme's **Settings**
+> tab. If places are opening and nobody is being told, check there before anything else.
 
 > If the booking is unpaid, set the amount owed before you send the confirmation — the email carries the payment status, so sending it first tells the parent they owe nothing.
 

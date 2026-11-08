@@ -98,11 +98,12 @@ def main():
     lines = ["# Programme settings the help never mentions", "",
              f"Registry read from `{args.branch}`. **{len(covered)} of "
              f"{len(covered) + len(missing)} settings** appear somewhere in `content/`.", "",
-             "A setting on this list is one of two things, and telling them apart needs a",
-             "person: a **gap**, where we have never written about it, or a **rename**, where",
-             "we have, under the name it used to have. The second kind is the more urgent -",
-             "the article reads fine and sends the reader looking for a control that is not",
-             "there any more.", ""]
+             "An exact-string miss is weak evidence on its own. Checked properly on",
+             "2026-11-08, 43 of 45 misses turned out to be settings the help already covers",
+             "under different wording, and only one was a real gap. Treat this list as",
+             "candidates to research, not as a count of things unwritten - the valuable finds",
+             "in it are **renames**, where an article reads fine and sends the reader looking",
+             "for a control under a name it no longer has.", ""]
     if skipped:
         lines += [f"{skipped} label(s) too short to match on were left out; "
                   f"{unlabelled} registry entries have no label key at all.", ""]

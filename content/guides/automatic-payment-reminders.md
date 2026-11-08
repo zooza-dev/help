@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0003_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-06"
+last_converted: "2026-11-08"
 related_articles: ["automatic-payment-reminders-detailed","payments-and-billing-faq","price-and-payment-setup","auto-cancel-unpaid-registrations"]
 ---
 
@@ -172,9 +172,16 @@ Two other things that rebuild settled, and which explain timing questions:
 - **A reminder missed because of an outage is sent at most one day late.** After that it is
   skipped rather than arriving as a surprise days later.
 
-### Deleting unpaid bookings from the same screen
+### Handling unpaid bookings automatically
 
-Further down the same panel is a separate decision: whether an unpaid booking should be removed altogether.
+Further down the same panel is a separate decision: what should happen to a booking that
+is still unpaid when the programme starts.
+
+**The control is named after the timing you chose above.** With reminders counted from the
+programme start it reads **"Handle unpaid bookings automatically 1 hour before the
+programme begins"**; with reminders counted from the booking it reads **"…automatically
+after the period you set following the booking"**. Same setting, wording that follows your
+own choice — so do not go looking for the first version if you picked the second mode.
 
 ![The lower half: delete an unpaid booking with three options, move bookings without a down payment to the waitlist, and the warning about assigned payments](../../assets/images/payment-reminders-delete-unpaid.png)
 
@@ -183,6 +190,9 @@ Further down the same panel is a separate decision: whether an unpaid booking sh
 | **Do not delete unpaid bookings** | Nothing. The default, and the safe choice. |
 | **Delete all unpaid bookings** | Enrolled bookings with status Unpaid, Down payment unpaid or Final payment unpaid. **Partially paid bookings are never deleted.** |
 | **Without down payment** | Only bookings whose down payment is unpaid. |
+
+**What happens to these bookings** is its own choice beside it — removing the booking is
+not the only outcome available, so read that before assuming "handle" means "delete".
 
 **Move bookings without a down payment to the waitlist** is the gentler alternative — the place is freed but the person keeps their position rather than disappearing.
 
