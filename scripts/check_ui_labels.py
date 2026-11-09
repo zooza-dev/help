@@ -32,6 +32,7 @@ import unicodedata
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 CONTENT = os.path.join(ROOT, "content")
 OUT = os.path.join(ROOT, "build", "reports", "ui-labels.md")
+ALLOW = os.path.join(os.path.dirname(__file__), "ui-labels-allow.yml")
 
 # Where the product's English strings actually live. The widget entries used to
 # point at widgets-v1/lang/en.js and src/lang/en.js. Neither path has ever
@@ -111,6 +112,32 @@ def norm(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip().lower()
 
 
+
+def allowed():
+    """Labels a person has already judged to be fine, and why.
+
+    Without this the same ten known-good misses head the report every run.
+    Parsed by hand: the file is a flat list of label/why pairs and pulling in
+    a YAML dependency for that would be the larger cost.
+    """
+    out = {}
+    if not os.path.exists(ALLOW):
+        return out
+    label = None
+    with open(ALLOW, encoding="utf-8") as fh:
+        for line in fh:
+            m = re.match(r'\s*-\s*label:\s*"(.*)"\s*$', line)
+            if m:
+                label = m.group(1)
+                out[norm(label)] = ""
+                continue
+            m = re.match(r'\s*why:\s*"(.*)"\s*$', line)
+            if m and label is not None:
+                out[norm(label)] = m.group(1)
+                label = None
+    return out
+
+
 def skip_reason(label: str):
     for pat, why in NOT_A_LABEL:
         if pat.search(label):
@@ -125,6 +152,7 @@ def main():
     args = ap.parse_args()
 
     blob = app_strings()
+    allow = allowed()
     strings = norm(blob)
     labels = app_labels(blob)
     keys = list(labels)
@@ -154,6 +182,9 @@ def main():
             if third_party and norm(label) not in strings:
                 skipped += 1          # their screen, their words
                 continue
+            if norm(label) in allow:
+                skipped += 1          # already judged; see scripts/ui-labels-allow.yml
+                continue
             if norm(label) not in strings:
                 found[label] += 1
                 where[label].add(rel)
@@ -170,7 +201,9 @@ def main():
              "data, a label built at runtime from parts, and a screen belonging to somebody else's",
              "product. What it catches when it is right is the expensive case: a control we tell",
              "people to look for under a name it no longer has.", "",
-             f"{skipped} backticked string(s) were skipped as not being Zooza field names.", ""]
+             f"{skipped} backticked string(s) were skipped as not being Zooza field names,",
+             f"{len(allow)} of them because somebody has already judged them fine - the reasons",
+             "are in `scripts/ui-labels-allow.yml`, and deleting an entry re-opens the question.", ""]
 
     for rel in sorted(by_article, key=lambda r: -len(by_article[r])):
         lines.append(f"### `{rel}` — {len(by_article[rel])}")

@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0078_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: "2026-11-06"
+last_converted: "2026-11-09"
 related_articles: ["publish-widgets", "deploying-zooza-on-website", "booking-form-settings", "contact-form-on-your-website", "contact-form-campaign-tracking"]
 ---
 
@@ -282,7 +282,7 @@ You can filter which programmes, classes, or locations appear in a widget by add
 | Parameter | Purpose | Example |
 |---|---|---|
 | `course_id` | Show only a specific programme | `?course_id=4941` |
-| `schedule_id` | Show only a specific class (class) | `?schedule_id=72709` |
+| `schedule_id` | Show only a specific class | `?schedule_id=72709` |
 | `place_id` | Show only a specific location | `?place_id=369_0` |
 
 You can combine parameters using `&`:

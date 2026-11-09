@@ -86,7 +86,7 @@ Fill in the following fields:
 > the class and leaves every existing session where it was, which is the usual reason a
 > change "did not take".
 
-> **`Duration of sessions` is what parents see on the booking form.** The form shows
+> **`Length of sessions in minutes` is what parents see on the booking form.** The form shows
 > this one number from the class — it does not read the length of the first session,
 > or of any session. That is deliberate: individual sessions within a class can run
 > to different lengths, so one figure has to stand for the class.

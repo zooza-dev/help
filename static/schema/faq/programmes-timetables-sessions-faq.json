@@ -174,7 +174,7 @@
     },
     {
       "@type": "Question",
-      "name": "Where can I find an archived class (class)?",
+      "name": "Where can I find an archived class?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Go to Activities → Classes and set the Status filter to Archived. This shows all classes that have been archived, across all programmes.\n\nArchived classes are hidden from the active list but not deleted — all their sessions, bookings, and payment history remain intact."

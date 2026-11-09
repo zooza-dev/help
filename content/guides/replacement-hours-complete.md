@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-11-08"
+last_converted: "2026-11-09"
 related_articles: ["make-up-sessions-faq","admin-attendance-management","cancellation-log","custom-replacement-lessons"]
 ---
 
@@ -52,7 +52,7 @@ Make-up session are configured at the **programme level** and can be fine-tuned 
 4. Configure the replacement settings:
    - **Credit expiration policy** — choose one of three options:
      - Credits carry over to the next billing period (trimester/semester).
-     - Credits expire at the end of the current class (class).
+     - Credits expire at the end of the current class.
      - Credits expire after a set number of days.
    - **Replacement waiting list** — enable or disable the waiting-list/queue feature.
    - **Cancellation deadline** — set how far in advance a client must cancel to earn a replacement credit (e.g., 1 hour before the session).
@@ -335,7 +335,7 @@ If a replacement credit was created by mistake, or you need to remove it for any
 
 ### Credit carry-over between billing periods
 
-By default, replacement credits may expire at the end of the current class (class). You can change this behavior in the global replacement settings:
+By default, replacement credits may expire at the end of the current class. You can change this behavior in the global replacement settings:
 
 1. Go to **Settings > Make-up session** (`zooza.app/#settings/replacements`).
 2. Choose one of three expiration policies:

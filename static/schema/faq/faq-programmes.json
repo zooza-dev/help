@@ -22,7 +22,7 @@
     },
     {
       "@type": "Question",
-      "name": "Can I delete a Class (class)?",
+      "name": "Can I delete a class?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "A Class with active bookings cannot be deleted. You can:\n\n- Archive it — hides it from the active list, bookings remain intact.\n- Transfer bookings to another Class first, then delete the empty Class.\n\n---"

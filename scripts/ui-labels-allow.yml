@@ -1,0 +1,39 @@
+# Backticked strings that are not Zooza field names, and why.
+#
+# check_ui_labels.py reports every backticked name it cannot find in the
+# product's English strings. Some of those misses are correct and will never
+# stop being misses: somebody else's field name, a venue we invented for an
+# example, a placeholder the reader types in themselves. Left unrecorded they
+# come back every run, and a report that is mostly known-fine is a report
+# nobody reads to the end.
+#
+# One entry per label. `why` is the decision, not a category - a future reader
+# has to be able to tell whether it still holds. Delete an entry and the label
+# comes back, which is the intended way to re-open a question.
+
+# Field names belonging to products that are not ours.
+- label: "Středisko"
+  why: "ABRA Flexi's cost-centre field. Their screen, their word, and Czech."
+- label: "Revenue Account Code"
+  why: "Xero's own naming for the account a line posts to."
+- label: "DDReference"
+  why: "FastPay's API field for the mandate reference Zooza generates."
+- label: "Bearer-Token"
+  why: "An HTTP header, not a field on any screen."
+
+# Placeholders the reader creates. The article suggests these names; Zooza has
+# no setting called any of them, and should not.
+- label: "TBD"
+  why: "Suggested name for a placeholder venue the reader creates themselves."
+- label: "To be announced"
+  why: "Suggested name for a placeholder venue the reader creates themselves."
+- label: "Various venues"
+  why: "Suggested name for a placeholder venue the reader creates themselves."
+
+# Example data. Invented so a screenshot and its explanation agree.
+- label: "North Cambridge"
+  why: "Invented venue in the location example."
+- label: "Chesterton Sports Hall"
+  why: "Invented venue in the location example."
+- label: "Swimming 4–6 years - Patricie Janečková"
+  why: "Shown as what a naming pattern renders to, not as a field."

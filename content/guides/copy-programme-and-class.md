@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "https://support.zooza.online/portal/en/kb/articles/copy-courses-groups"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-11-09"
 related_articles: ["creating-a-class", "custom-holidays", "transfer-and-copy-bookings", "programmes-timetables-sessions-faq"]
 ---
 
@@ -41,7 +41,7 @@ You can choose to copy:
 
 ## Copy a class
 
-Use this when you want to create a new class (class) within a programme — for example, a continuation class for the next billing period.
+Use this when you want to create a new class within a programme — for example, a continuation class for the next billing period.
 
 1. Open the programme and go to the class you want to copy.
 2. Click **Copy** on the class.

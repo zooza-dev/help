@@ -22,7 +22,7 @@ last_converted: "2026-11-09"
 
 Zooza does not have a standalone "Add client" button. A client record is created when a booking is made. You have three options:
 
-**Option 1 — From within a class (class)**
+**Option 1 — From within the class**
 
 Open the class, go to the bookings/registrations tab, and use the manual booking option there. This creates both the client record and the booking in one step.
 
@@ -191,7 +191,7 @@ The practical consequences:
 - **You can turn a participant into a client.** Since 27 September 2026 there is a dedicated action for it — the teenager turning 18 and taking over their own booking is exactly the case it was built for. It gives them their own login and moves the client role across the bookings you pick. Only the account owner can do it. See [Make an attendee a client](../guides/personas.md#make-an-attendee-a-client). *(Before that date the only route was to create a booking by hand with their email and move the existing booking over with **Change client**. You no longer need that workaround.)*
 - **Two participants that are the same child** can be merged by you, from their relationships on the client record. If that does not work, ask support — but doing it in the app is better, because the change then propagates everywhere.
 
-## How do I move a child (or client) to a different class or class?
+## How do I move a child (or client) to a different class?
 
 In Zooza, clients and their children are linked to **bookings**, not to classes directly. To move a child to a different class, you transfer the booking — not the client record.
 

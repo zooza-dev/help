@@ -11,13 +11,13 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-11-09"
 ---
 
 
 # Locations and Venues FAQ
 
-## Can I remove a location from a class (programme/class)?
+## Can I remove a location from a class?
 
 Location is a required field on a class — you cannot leave it blank. You can only **replace** it with a different location.
 
@@ -29,7 +29,7 @@ If you want to remove or unset the location (e.g. the venue is not confirmed yet
    - `Various venues`
 2. Go to the class, open its settings, and change the location to the placeholder.
 
-> **Note:** When someone asks how to "remove a location from a programme", they typically mean a class or class (not a programme). Location is set on the **class**, not on the programme. Go to the class settings to change it.
+> **Note:** When someone asks how to "remove a location from a programme", they typically mean a class, not a programme. Location is set on the **class**, not on the programme. Go to the class settings to change it.
 
 ## How do I add a new location?
 

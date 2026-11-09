@@ -9,7 +9,7 @@ tags: ["programme", "class", "archive", "delete", "venue", "price", "rename", "t
 status: "published"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-08"
+last_converted: "2026-11-09"
 ---
 
 # FAQ — Programmes
@@ -40,7 +40,7 @@ To restore: open the archived Programme, go to Programme → Settings → the **
 
 ---
 
-## Can I delete a Class (class)?
+## Can I delete a class?
 
 A Class with active bookings cannot be deleted. You can:
 

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-08"
+last_converted: "2026-11-09"
 related_articles: ["classes-list", "payments-and-billing-faq", "creating-a-class", "programme-settings"]
 ---
 
@@ -220,7 +220,7 @@ To bulk-archive all classes in a programme:
 4. Check the header checkbox to select all visible classes.
 5. Use the bulk action **Archive** to archive them all at once.
 
-## Where can I find an archived class (class)?
+## Where can I find an archived class?
 
 Go to **Activities** → **Classes** and set the **Status** filter to **Archived**. This shows all classes that have been archived, across all programmes.
 

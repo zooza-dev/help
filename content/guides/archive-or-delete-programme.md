@@ -9,7 +9,7 @@ tags: ["programme", "archive", "delete", "remove", "class", "hide"]
 status: "published"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-11-08"
+last_converted: "2026-11-09"
 related_articles: ["trash-and-restore","term-rebooking-guide","creating-a-class","calendar-bulk-actions"]
 ---
 
@@ -39,7 +39,7 @@ The Programme disappears from your active list. It remains accessible via the **
 
 ## Archive a Class
 
-To hide a single Class (class) within a Programme without archiving the whole Programme:
+To hide a single class within a programme without archiving the whole Programme:
 
 1. Go to the Programme and open the Class you want to remove.![Screenshot — archive or delete programme](../../assets/images/archive-or-delete-programme-03.png)
 2. In the Class settings, tick **Archive**. ![Screenshot — archive or delete programme](../../assets/images/archive-or-delete-programme-04.png)
