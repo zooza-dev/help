@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-11-09"
 ---
 
 # Orders
@@ -36,7 +36,7 @@ Each order card shows:
 | `Payment` | Payment status icon (green = paid, red = overdue). |
 | `Paid` | Amount paid. |
 | `Amount to pay` | Outstanding amount (negative = owed). |
-| `Current account balance` | Client's running balance — red if negative. |
+| `Booking balance` | Client's running balance — red if negative. |
 
 Each order has a **Show payments** action button.
 

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-26"
+last_converted: "2026-11-09"
 related_articles: ["transfer-and-copy-faq", "booking-faq", "edit-payment-on-booking", "admin-attendance-management"]
 ---
 
@@ -90,7 +90,7 @@ The wizard shows:
 |---|---|
 | `Paid` | Amount already paid on the original booking. |
 | `Amount to pay` | Remaining amount due. |
-| `Current account balance` | Client's current balance (negative = credit). |
+| `Booking balance` | Client's current balance (negative = credit). |
 | `Do not change payments` | Check this to keep the original payment schedule exactly as it is. **This is the safest option.** |
 | `Payment plans are available in this class` | Yes/No — whether to apply a payment plan from the target class. |
 

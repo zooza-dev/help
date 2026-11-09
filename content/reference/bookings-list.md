@@ -258,7 +258,7 @@ Shows the order details including child's date of birth, children's name, addres
 | `Payments status` | Status icon with label (e.g. "Paid"). |
 | `Amount to pay` | Outstanding amount. |
 | `Paid` | Total amount paid. |
-| `Current account balance` | Running balance. |
+| `Booking balance` | Running balance. |
 | `Latest payment received` | Date and amount of last payment. |
 | **Add payment** | Record a new payment. |
 | **Show payments** | Open the full payments tab. |
@@ -412,7 +412,7 @@ Shows a warning if the new class price differs from the current class price.
 |---|---|
 | `Paid` | Amount already paid. |
 | `Amount to pay` | Remaining amount. |
-| `Current account balance` | Current balance. |
+| `Booking balance` | Current balance. |
 | `Do not change payments` | Checkbox — leave payments unchanged. |
 | `Payment plans available` | Yes/No toggle for payment plan usage. |
 | `Amount` | Payment plan amount. |
@@ -439,14 +439,14 @@ Click **Continue** to proceed, or **Back** to return.
 | Field | Description |
 |---|---|
 | `Status` | Payment status with icon (e.g. "Overpaid", "Paid", "Unpaid"). |
-| `Payment balance` | Formula: Amount owed + Booking fee − Paid − Discounts. |
-| `Current account balance` | Client's overall account balance. |
-| `Amount owed` | Current active payment plan amount. **Edit** / **Reset** buttons. |
-| `Booking fee` | One-time fee. **Edit** / **Reset** buttons. |
+| `Booking amount due` | What is still owed on this booking. Formula: `Total charge` + `Registration fee` − payments received − `Discounts`. |
+| `Booking balance` | Client's overall account balance. |
+| `Total charge` | The amount being charged for this booking, from the active payment plan. **Edit** / **Reset** buttons. |
+| `Registration fee` | One-off fee charged on top of the programme price. **Edit** / **Reset** buttons. |
 | `Down payment` | Initial payment amount. **Edit** button. |
 | `Paid` | Total paid. **Edit** button. |
-| `Discount` | Applied discount amount. **Edit** button. |
-| `Refunded` | Total refunded amount. |
+| `Discounts` | Applied discount amount. **Edit** button. |
+| `Refunds issued` | Total refunded amount. |
 | `Booking value` | Original class price excluding fees and discounts at time of booking. |
 
 Button: **Add payment**.

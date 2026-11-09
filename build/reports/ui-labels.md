@@ -1,6 +1,6 @@
 # Field names the app no longer has
 
-14 label(s) in `content/` are written in backticks — our convention for a
+12 label(s) in `content/` are written in backticks — our convention for a
 field name — and do not appear in the app's or the widgets' current English strings.
 
 A miss is a question, not a verdict. The usual innocent explanations are example
@@ -23,15 +23,6 @@ are in `scripts/ui-labels-allow.yml`, and deleting an entry re-opens the questio
 - `Absence count`
   - no close match; check the screen by hand
 
-### `content/reference/bookings-list.md` — 3
-
-- `Current account balance`  ×6
-  - no close match; check the screen by hand
-- `Payment balance`
-  - no close match; check the screen by hand
-- `Amount owed`
-  - no close match; check the screen by hand
-
 ### `content/reference/instructors-list.md` — 2
 
 - `Length of session – 90 minutes`
@@ -51,24 +42,14 @@ are in `scripts/ui-labels-allow.yml`, and deleting an entry re-opens the questio
 - `Credit via Transfer`
   - no close match; check the screen by hand
 
-### `content/reference/orders-list.md` — 1
+### `content/reference/programmes-list.md` — 1
 
-- `Current account balance`  ×6
-  - no close match; check the screen by hand
-
-### `content/guides/transfer-and-copy-bookings.md` — 1
-
-- `Current account balance`  ×6
+- `Booking fee (optional)`  ×2
   - no close match; check the screen by hand
 
 ### `content/reference/clients-list.md` — 1
 
-- `Current account balance`  ×6
-  - no close match; check the screen by hand
-
-### `content/reference/programmes-list.md` — 1
-
-- `Booking fee (optional)`  ×2
+- `Current account balance`
   - no close match; check the screen by hand
 
 ### `content/reference/communication-dashboard.md` — 1
