@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-30"
+last_converted: "2026-11-09"
 related_articles: ["custom-holidays", "shared-sessions", "contact-form-setup", "custom-contact-fields", "setting-gtc-gdpr-consents", "labels", "notifications-center"]
 ---
 
@@ -114,8 +114,8 @@ General settings for all programmes:
 | `Require instructors to complete summaries of sessions for their clients` | When enabled, if the instructor does not complete the summary, a reminder is sent the next day. |
 | `Automatically cancel a session if it is empty` | When the last client cancels, the session is automatically changed to "Cancelled" status. |
 | `Automatically close attendance` | Number of days after which attendance is automatically closed for all participants in "Will be present" status. Set to 0 to disable. For one-off sessions, attendance is closed only for logged-in participants at closing time. |
-| `Custom Customer ID` | Format template for client IDs. Allowed values: Unique ID (U), sequence number (1–10 minimum length). Each symbol needs curly braces. |
-| `Regenerate all customer IDs` | Regenerate all IDs based on the current format. |
+| `Custom client ID` | Format template for client IDs. Allowed values: Unique ID (U), sequence number (1–10 minimum length). Each symbol needs curly braces. |
+| `Regenerate all client IDs` | Regenerate all IDs based on the current format. |
 | `Online meeting instructions` | Rich text editor for instructions shown in clients' profiles for online sessions. |
 
 ### Cancellation reasons

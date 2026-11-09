@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/group-creation.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-13"
+last_converted: "2026-11-09"
 related_articles: ["creating-a-programme","programme-class-session-definition","edit-sessions-in-programmes","lead-collection"]
 ---
 
@@ -56,7 +56,7 @@ Fill in the following fields:
 | **Instructor** | The assigned instructor. Options: a specific instructor, *To be decided*, *Instructor unassigned*, or *Guest instructor*. | Yes |
 | **Rate** | Instructor pay rate for this class. Only shown if rates are configured. | No |
 | **Capacity** | Maximum number of attendees per session. | Yes |
-| **Duration of sessions** | Length of each session in minutes. | Yes |
+| **Length of sessions in minutes** | How long each session runs. | Yes |
 | **Online Registration** | Leave checked if you want the class to appear on the booking form immediately. Uncheck to set it up first and publish later. | — |
 
 ![Class details form](../../assets/images/creating-a-class-03.png)

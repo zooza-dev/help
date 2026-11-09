@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-08"
+last_converted: "2026-11-09"
 related_articles: ["matko-replacement-diagnostic","cancellation-log","replacement-hours-complete","capacity-and-extra-capacity"]
 ---
 
@@ -50,7 +50,7 @@ If the credit is already gone, set the record back to *Cancelled*; a fresh credi
 
 There are two levels for this setting:
 
-1. **Global setting** — Go to **Settings** → the **Make-ups** tile → **Make-up sessions options**. The `Extra capacity for replacement hours` value (e.g. 1) applies to every class across all programmes. This means each class allows that many additional spots beyond its normal capacity for make-up bookings.
+1. **Global setting** — Go to **Settings** → the **Make-ups** tile → **Make-up sessions options**. The `Additional slots in classes` value (e.g. 1) applies to every class across all programmes. This means each class allows that many additional spots beyond its normal capacity for make-up bookings.
 
 2. **Per-class setting** — On the class detail page, the make-up sessions tile shows a per-class extra capacity value. You can choose whether this value **replaces** the global setting or **adds to** it.
 

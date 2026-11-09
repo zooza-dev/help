@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-11-08"
+last_converted: "2026-11-09"
 ---
 
 # Programme Settings
@@ -159,8 +159,8 @@ Controls whether clients can book make-up sessions for missed classes.
 | Field | Description |
 |---|---|
 | `Allow make-up sessions` | Master toggle. |
-| `Make-up sessions method` | How clients access make-ups (notified, self-service, etc.). |
-| `Allow the use of credits for a make-up session` | Enables credit-based make-up redemption. |
+| `Make-up sessions are assigned by an administrator` | Turn this on and clients cannot pick a make-up themselves — someone on your team books it for them. |
+| `Allow the use of credit for a make-up session as a discount when purchasing a programme` | Lets an unused make-up be spent as money off the next purchase instead of as a session. Using it marks the affected make-up sessions as used. |
 | `Allow tailored make-up sessions` | Lets clients request a tailored (custom) make-up session. |
 | `Automatic approval of tailored make-up sessions` | Auto-approves or requires admin review. |
 | `Allow make-up sessions at other companies` | Partner company make-ups (cross-company). |
@@ -232,7 +232,7 @@ Configures extra data fields on the booking form. For a step-by-step guide, see 
 | `Number of occupied slots` | Relevant for sessions (e.g., birthday parties). |
 | `Business name` / `Business address` / `Business ID` / `Tax ID` / `VAT` | Business/invoice fields. |
 | `Identification (birth) number` | National ID field. |
-| `Additional field 1–5` | Custom fields with Text or Choice type. Choice fields use key/value pairs for export. |
+| `Additional field 1` … `Additional field 5` | Always shown. Each can be Text or Choice; a Choice field is built from key/value pairs. Press **Add field** to reveal the next one — there are fifteen in total, and the ones above five appear only once added or in use. |
 
 ## Trial
 
@@ -281,10 +281,10 @@ Controls what happens when a client's current class/timetable is ending.
 
 | Field | Description |
 |---|---|
-| `Auto-enrolment type` | **None**, **Suggest timetables** (client picks from filtered options), **Duplicate current timetable** (1-to-1 classes only). |
+| `Auto-enrolment type` | **None**, **Suggest classes** (Zooza offers suitable classes and the client enrols in one with a single click), **Duplicate current class** (1-to-1 classes only — Zooza prepares an identical future class for you to approve). |
 | `Notify the client N days before the class ends` | Days before expiry to send the notification. |
 | `Keep client in auto-enrolment for N days` | How long the offer stays visible in the client's profile (0 = default 30 days). |
-| `Auto-enrollment message` | Rich-text message sent to the client. |
+| `Auto-enrolment message` | Rich-text message sent to the client when their class is ending and auto-enrolment is open to them. |
 
 ### Filtering Options
 

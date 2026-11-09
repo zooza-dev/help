@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/billing-settings.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-11-06"
+last_converted: "2026-11-09"
 related_articles: ["invoice-profiles-and-bank-accounts", "invoice-number-series", "invoice-profile-overrides", "invoicing-overview", "szamlazz-invoices", "fakturoid-invoices", "xero-integration"]
 ---
 
@@ -327,7 +327,7 @@ Unchecked types are merged into the main line (or into the nearest checked paren
 
 ### Correction types and merging
 
-Each payment type has a corresponding correction type (e.g. `Course Payment Correction`). If a correction type is **not** in your mapping, its amount is automatically merged into the parent line — the result appears as a single net amount. If you add the correction type to the mapping, it appears as its own negative line.
+Each payment type has a corresponding correction type (e.g. `Correction payment` for a programme payment). If a correction type is **not** in your mapping, its amount is automatically merged into the parent line — the result appears as a single net amount. If you add the correction type to the mapping, it appears as its own negative line.
 
 ## How clients access their invoices
 

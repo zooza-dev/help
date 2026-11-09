@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-14"
+last_converted: "2026-11-09"
 related_articles: ["payment-pairing","inbound-payments","outstanding-amount","reports-dashboard"]
 ---
 
@@ -274,10 +274,10 @@ Export direct debit data for your payment provider.
 | Field | Description |
 |---|---|
 | `Include clients without debt` | Checkbox — include bookings with no outstanding debt. |
-| `Timetable by client` | Checkbox — timetable all payments for the user. |
+| `Class by client` | Checkbox — groups every payment for one client into a single collection. The label reads oddly on screen; what it does is group by client. |
 | `Current debt` | Checkbox — include currently issued debt. |
 | `Scheduled debt` | Checkbox — include debt scheduled within the selected date range. |
-| `Mark as paid` | Checkbox — upon export, Zooza adds outstanding debt to the booking and marks it as paid. **Warning:** when using "Timetable by client", payment is added to the first booking regardless of multiple bookings. |
+| `Mark as paid` | Checkbox — upon export, Zooza adds outstanding debt to the booking and marks it as paid. **Warning:** when using `Class by client`, payment is added to the first booking regardless of how many bookings the client has. |
 | `from` | Start date for the export period. |
 | `to` | End date for the export period. |
 | `Date of charge` | The charge date set for debit mandates without a custom date. |

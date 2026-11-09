@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-10-03"
+last_converted: "2026-11-09"
 ---
 
 
@@ -102,7 +102,7 @@ The new child record is linked to the same parent account. The parent can then u
 
 ## How does Client ID work across franchise accounts?
 
-Each client profile can have a `Custom customer ID` field, which you set manually in the client detail. This is a free-text identifier you define for your own tracking purposes (e.g. an internal reference number).
+Each client profile can have a `Custom client ID` field, which you set manually in the client detail. This is a free-text identifier you define for your own tracking purposes (e.g. an internal reference number).
 
 When a child transfers between franchise accounts (separate Zooza companies), the child may exist as a different client record in each account. The Client ID does not sync automatically across franchise accounts. Each franchise manages its own client database independently.
 

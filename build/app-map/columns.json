@@ -1,0 +1,49 @@
+{
+ "clients": {
+  "header": [],
+  "chooser": null
+ },
+ "bookings": {
+  "error": "404"
+ },
+ "orders": {
+  "header": [],
+  "chooser": null
+ },
+ "payments": {
+  "header": [
+   "NAME",
+   "ACTION",
+   "AMOUNT",
+   "BOOKING"
+  ],
+  "chooser": null
+ },
+ "contacts": {
+  "header": [],
+  "chooser": null
+ },
+ "courses": {
+  "header": [],
+  "chooser": null
+ },
+ "schedules": {
+  "error": "404"
+ },
+ "events": {
+  "error": "404"
+ },
+ "documents": {
+  "error": "404"
+ },
+ "instructors": {
+  "error": "404"
+ },
+ "reports": {
+  "header": [
+   "NAME",
+   "ACTION"
+  ],
+  "chooser": null
+ }
+}

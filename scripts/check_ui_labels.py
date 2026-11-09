@@ -13,7 +13,8 @@ and writes to support.
 Convention, from CLAUDE.md: field names go in `backticks`, buttons in **bold**.
 This reads the backticked ones and looks each up in the app's and the widgets'
 current English strings, read from `origin/main` — the local checkouts run
-behind, and on 2026-11-06 the app's was 92 commits back.
+behind, and on 2026-11-06 the app's was 92 commits back. The widget half comes
+from api-v1, which serves the strings the widgets render.
 
 Reports, never blocks. A miss is a question, not a verdict: the label may be
 example data, a third-party screen, or a string assembled at runtime.
@@ -32,9 +33,13 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 CONTENT = os.path.join(ROOT, "content")
 OUT = os.path.join(ROOT, "build", "reports", "ui-labels.md")
 
+# Where the product's English strings actually live. The widget entries used to
+# point at widgets-v1/lang/en.js and src/lang/en.js. Neither path has ever
+# existed, so for every run until 2026-11-09 this checked the admin app only and
+# silently reported widget labels as missing. The widgets hold no string table:
+# they read document.ZOOZA.locale, which api-v1 serves from js/locale/en-EN.js.
 SOURCES = [("app", "lib/str_en3.js"),
-           ("widgets-v1", "lang/en.js"),
-           ("widgets-v1", "src/lang/en.js")]
+           ("api-v1", "js/locale/en-EN.js")]
 
 LABEL = re.compile(r"`([A-Z][^`\n]{2,52})`")
 

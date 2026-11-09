@@ -49,7 +49,7 @@
       "name": "How does Client ID work across franchise accounts?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Each client profile can have a Custom customer ID field, which you set manually in the client detail. This is a free-text identifier you define for your own tracking purposes (e.g. an internal reference number).\n\nWhen a child transfers between franchise accounts (separate Zooza companies), the child may exist as a different client record in each account. The Client ID does not sync automatically across franchise accounts. Each franchise manages its own client database independently."
+        "text": "Each client profile can have a Custom client ID field, which you set manually in the client detail. This is a free-text identifier you define for your own tracking purposes (e.g. an internal reference number).\n\nWhen a child transfers between franchise accounts (separate Zooza companies), the child may exist as a different client record in each account. The Client ID does not sync automatically across franchise accounts. Each franchise manages its own client database independently."
       }
     },
     {

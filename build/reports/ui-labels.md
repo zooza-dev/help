@@ -1,6 +1,6 @@
 # Field names the app no longer has
 
-35 label(s) in `content/` are written in backticks — our convention for a
+24 label(s) in `content/` are written in backticks — our convention for a
 field name — and do not appear in the app's or the widgets' current English strings.
 
 A miss is a question, not a verdict. The usual innocent explanations are example
@@ -9,17 +9,6 @@ product. What it catches when it is right is the expensive case: a control we te
 people to look for under a name it no longer has.
 
 142 backticked string(s) were skipped as not being Zooza field names.
-
-### `content/setup/billing-and-invoicing.md` — 4
-
-- `Swimming 4–6 years - Patricie Janečková`
-  - no close match; check the screen by hand
-- `Středisko`
-  - no close match; check the screen by hand
-- `Revenue Account Code`
-  - no close match; check the screen by hand
-- `Course Payment Correction`
-  - no close match; check the screen by hand
 
 ### `content/reference/class-detail.md` — 4
 
@@ -32,24 +21,13 @@ people to look for under a name it no longer has.
 - `Absence count`
   - no close match; check the screen by hand
 
-### `content/reference/programme-settings.md` — 4
+### `content/setup/billing-and-invoicing.md` — 3
 
-- `Make-up sessions method`
+- `Swimming 4–6 years - Patricie Janečková`
   - no close match; check the screen by hand
-- `Auto-enrollment message`
-  - looks renamed → `Auto-enrolment message`
-- `Allow the use of credits for a make-up session`
+- `Středisko`
   - no close match; check the screen by hand
-- `Additional field 1–5`
-  - looks renamed → `Additional field 15`
-
-### `content/reference/clients-list.md` — 3
-
-- `Current account balance`  ×6
-  - no close match; check the screen by hand
-- `Custom customer ID`  ×2
-  - no close match; check the screen by hand
-- `Timetable`
+- `Revenue Account Code`
   - no close match; check the screen by hand
 
 ### `content/reference/bookings-list.md` — 3
@@ -96,26 +74,9 @@ people to look for under a name it no longer has.
 - `Client (Buyer)`
   - no close match; check the screen by hand
 
-### `content/reference/settings-hub.md` — 2
-
-- `Regenerate all customer IDs`
-  - no close match; check the screen by hand
-- `Custom Customer ID`
-  - no close match; check the screen by hand
-
 ### `content/faq/booking-widget-faq.md` — 1
 
 - `To be announced`  ×2
-  - no close match; check the screen by hand
-
-### `content/faq/client-management-faq.md` — 1
-
-- `Custom customer ID`  ×2
-  - no close match; check the screen by hand
-
-### `content/faq/make-up-sessions-faq.md` — 1
-
-- `Extra capacity for replacement hours`
   - no close match; check the screen by hand
 
 ### `content/guides/creating-a-class.md` — 1
@@ -128,12 +89,17 @@ people to look for under a name it no longer has.
 - `Credit via Transfer`
   - no close match; check the screen by hand
 
-### `content/reference/orders-list.md` — 1
+### `content/guides/transfer-and-copy-bookings.md` — 1
 
 - `Current account balance`  ×6
   - no close match; check the screen by hand
 
-### `content/guides/transfer-and-copy-bookings.md` — 1
+### `content/reference/clients-list.md` — 1
+
+- `Current account balance`  ×6
+  - no close match; check the screen by hand
+
+### `content/reference/orders-list.md` — 1
 
 - `Current account balance`  ×6
   - no close match; check the screen by hand
@@ -146,11 +112,6 @@ people to look for under a name it no longer has.
 ### `content/reference/communication-dashboard.md` — 1
 
 - `The customer`
-  - no close match; check the screen by hand
-
-### `content/reference/payments-dashboard.md` — 1
-
-- `Timetable by client`
   - no close match; check the screen by hand
 
 ### `content/reference/publish-widgets.md` — 1

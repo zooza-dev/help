@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-13"
+last_converted: "2026-11-09"
 ---
 
 # Clients
@@ -67,7 +67,7 @@ The top-left card shows the client's key information:
 
 | Field | Description |
 |---|---|
-| `Custom customer ID` | Optional custom identifier. Click **Add** to set one. |
+| `Custom client ID` | Optional custom identifier. Click **Add** to set one. |
 | `Email` | Email address with a verification tick. |
 | `Phone` | Phone number with a verification tick. |
 | `Booking alert` | Whether you receive alerts when this client books. Shows "Yes" or "No". |
@@ -252,7 +252,7 @@ Click **Import** to start a new import, or click a row to view details.
    - `First name`, `Surname`, `Child's full name`, `Phone`, `Email`, `Address`, `Date of birth`, `Class`, and more.
 4. Click **Continue** to proceed.
 
-### New Import — Step 2: Assign Timetables
+### New Import — Step 2: Assign Classes
 
 ![New import — timetable assignment](../../assets/images/reference/clients-data-import-timetables.png)
 
@@ -279,7 +279,7 @@ The import detail shows:
 | `Status` | "Processed", "Error", etc. |
 | `Valid` | "Yes" or "No". |
 | `Result` | Result code (e.g. 100 = success). |
-| `Timetable` | Assigned timetable ID. |
+| `Class` | The class the imported client was assigned to. |
 | `Basic fields` | First name, last name, email, telephone number. |
 | `Extra fields` | Date of birth, child's full name, address. |
 

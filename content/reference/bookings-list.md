@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-07"
+last_converted: "2026-11-09"
 related_articles: ["registration-and-booking-faq","transfer-and-copy-bookings","sending-email-sms","email-delivery-troubleshooting","async-exports"]
 ---
 
@@ -315,7 +315,7 @@ Additional action buttons for trials:
 
 The booking creation wizard has multiple steps:
 
-### Step 1: Choose Timetable
+### Step 1: Choose the Programme / Class
 
 Shows the selected programme/class details:
 
