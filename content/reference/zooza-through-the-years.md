@@ -11,7 +11,7 @@ status: "draft"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-08"
+last_converted: "2026-11-09"
 related_articles: ["reports-dashboard", "getting-started-with-zooza"]
 ---
 
@@ -36,6 +36,30 @@ which is which.
   record — which is why the archive behind this page matters more than it looks.
 - **2020 – today: the repository.** Release names, dates and the shape of the
   work are read out of git, not remembered.
+
+---
+
+## Why it changed
+
+There is no grand plan behind the shape of this timeline, and it would be dishonest
+to write one in afterwards.
+
+**Zooza grew as its clients' demands grew.** A school asked for something, it got
+built, and the next school asked for the thing after that. The invoicing system in
+2022 and the WhatsApp work in 2025 are both in the list for the same reason: somebody
+running classes needed them and said so.
+
+**The design changed to keep up with the devices it was used on.** The screens below
+are not a sequence of redesigns for their own sake. Each one is the product fitting
+itself to how people actually opened it — and from about 2019 that increasingly meant
+a phone in one hand, in a hall, between sessions.
+
+**And new possibilities opened new work.** Online payments, direct debit, the shop,
+and most recently running the business by talking to it. None of those were on anybody's
+roadmap in 2016 because none of them were things you could reasonably do.
+
+So read the eras below as a record of what was being asked for at the time, not as a
+plan being executed.
 
 ---
 
@@ -150,6 +174,12 @@ The pictures above come from a set Michal kept over nine years, by date:
 Seventy-six files, including two presentations and a document of change notes. Only a few
 are used here; the rest are the raw material for the eras this page still treats briefly.
 
-**What is still missing is not pictures.** It is a sentence per era on *why*. The
-repository can say when invoicing shipped. It cannot say who asked for it, or what people
-were doing before it existed — and that is the half that makes a timeline worth reading.
+**What the repository cannot tell you is who asked.** It records that invoicing
+shipped in January 2022; it has nothing to say about the school that could not issue
+a document their accountant would accept. That half of the story lives with the people
+who were there, which is why *Why it changed* above is written as one honest paragraph
+rather than a reason invented for each era.
+
+If a particular year is worth drawing out properly, the pictures for it are already
+in the archive and the dates are already in git. What it needs is the one thing neither
+holds: the name of the problem somebody had that month.
