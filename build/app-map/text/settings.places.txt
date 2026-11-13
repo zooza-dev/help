@@ -1,0 +1,356 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Other
+Tools
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Settings
+Venues
+Help & Support
+Brain James
+Back
+Add
+Venues
+
+Venues
+
+NAME	ADDRESS	ROOMS	GOOGLE
+
+
+My
+
+	
+
+London, Castle, London
+
+	
+
+0
+
+	
+
+Not linked
+
+
+
+
+Another
+
+	
+
+Street, City
+
+	
+
+0
+
+	
+
+Not linked
+
+
+
+
+Online
+
+	
+
+	
+
+0
+
+	
+
+Not linked
+
+
+
+
+Chesterton Sports Hall
+
+	
+
+Cambridge
+
+	
+
+2
+
+	
+
+Not linked
+
+
+
+
+Chorlton Hall
+
+	
+
+Manchester, M21 9XX
+
+	
+
+0
+
+	
+
+Not linked
+
+
+
+
+Dulwich Village Hall
+
+	
+
+London, SE21 7BT
+
+	
+
+0
+
+	
+
+Not linked
+
+
+
+
+Hove Family Centre
+
+	
+
+Brighton, BN3 2FL
+
+	
+
+0
+
+	
+
+Not linked
+
+
+
+
+Redland Rooms
+
+	
+
+Bristol, BS6 6XH
+
+	
+
+0
+
+	
+
+Not linked
+
+
+
+
+Headingley Activity Hub
+
+	
+
+Leeds, LS6 3JJ
+
+	
+
+0
+
+	
+
+Not linked
+
+
+
+
+Moseley Movement Studio
+
+	
+
+Birmingham, B13 8JP
+
+	
+
+0
+
+	
+
+Not linked
+
+
+
+
+Summertown Scout Hall
+
+	
+
+Oxford, OX2 7DP
+
+	
+
+0
+
+	
+
+Not linked
+
+
+
+
+West Bridgford Centre
+
+	
+
+Nottingham, NG2 7QP
+
+	
+
+0
+
+	
+
+Not linked
+
+
+
+
+Morningside Playhouse
+
+	
+
+Edinburgh, EH10 4QX
+
+	
+
+0
+
+	
+
+Linked

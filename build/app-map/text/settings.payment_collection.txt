@@ -1,0 +1,228 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Tools
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Settings
+Payment collection setup
+Help & Support
+Brain James
+Current setup
+
+Review and manage how Zooza collects money from clients.
+
+Run setup again
+Online card payment
+
+Default on new programmes: ON
+
+Configure
+Direct debit
+
+Default on new programmes: OFF
+
+Configure
+Cash / bank transfer
+
+Default on new programmes: ON
+
+0 of 4 bank accounts have a statement feed
+
+Payment reconciliation rules
+
+Control how strictly Zooza reconciles incoming payments to bookings.
+
+Only reconcile payments to outstanding bookings
+Yes
+When on, an incoming payment is reconciled to a booking only if the booking is outstanding (awaiting payment or unpaid) AND the payment amount does not exceed what's owed. Anything else is left for manual review. When off, Zooza reconciles more aggressively — overpayments switch the booking to 'Overpaid' automatically.
+More
+Payment reconciliation
+
+Each bank account can read incoming payments from its statements. Set up a statement feed per account.
+
+ACCOUNT NUMBER (IBAN)	ACCOUNT HOLDER NAME	INVOICE PROFILE	SOURCE	STATUS
+SK2011000000001234567890	
+
+My Company s.r.o.
+
+	
+
+Name
+
+	
+
+Not collecting bank transfers
+
+	
+
+NO STATEMENT FEED
+
+
+Playfulmotion Swim Ltd	
+
+GB52 HBUK 4005 1512 3456 78
+
+	
+
+Playfulmotion Swim Ltd
+
+	
+
+Not collecting bank transfers
+
+	
+
+NO STATEMENT FEED
+
+
+Playfulmotion Swim Ltd	
+
+GB06 LOYD 3096 3400 1917 90
+
+	
+
+Playfulmotion Swim Ltd
+
+	
+
+Not collecting bank transfers
+
+	
+
+NO STATEMENT FEED
+
+
+SK2011000000001234567890	
+
+—
+
+	
+
+New Invoice Profile
+
+	
+
+Not collecting bank transfers
+
+	
+
+NO STATEMENT FEED

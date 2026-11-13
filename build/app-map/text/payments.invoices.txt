@@ -1,0 +1,366 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Invoices
+Help & Support
+Brain James
+Created as of date
+Created by date
+Billing period
+Invoice profile
+Payment status
+16
+Download all
+ 
+Export
+INVOICE NUMBER
+STATUS
+PERIOD
+PAID
+TO BE PAID
+ACTIONS
+
+#26
+
+ERROR
+
+Xero: Token refresh failed: Refresh token not found. Please re-authenticate with Xero.
+
+Not available
+
+Not available
+
+Not available
+
+INV-0005
+
+Derek Phillips
+
+ISSUED
+
+27. March 2026 – 8. April 2026
+
+£1,258.00
+
+-£209.67
+
+787.pdf 
+ 
+
+INV-0004
+
+Chloe Tanase
+
+ISSUED
+
+1. April 2026 – 9. April 2026
+
+£866.67
+
+-£144.45
+
+824.pdf 
+ 
+
+INV-0003
+
+Mako Lako
+
+ISSUED
+
+8. April 2026 – 8. April 2026
+
+£300.00
+
+£533.33
+
+841.pdf 
+ 
+
+INV-0002
+
+Beth Parker
+
+ISSUED
+
+27. March 2026 – 1. April 2026
+
+£200.00
+
+£0.00
+
+795.pdf 
+ 
+
+INV-0001
+
+Emma Bell
+
+ISSUED
+
+27. March 2026 – 2. April 2026
+
+£240.00
+
+-£40.00
+
+798.pdf 
+ 
+
+#13
+
+ERROR
+
+Xero: Invoice creation failed
+
+Not available
+
+Not available
+
+Not available
+
+#12
+
+ERROR
+
+Xero: Invoice creation failed
+
+Not available
+
+Not available
+
+Not available
+
+#11
+
+ERROR
+
+Xero: Forbidden
+
+Not available
+
+Not available
+
+Not available
+
+#10
+
+ERROR
+
+Xero: Forbidden
+
+Not available
+
+Not available
+
+Not available
+
+INV-0002
+
+Michal Dodok
+
+ISSUED
+
+30. January 2026 – 12. February 2026
+
+£172.00
+
+£0.00
+
+427.pdf 
+ 
+
+INV-0001
+
+Michal Dodok
+
+ISSUED
+
+30. January 2026 – 12. February 2026
+
+£30.00
+
+£187.50
+
+426.pdf 
+ 
+
+INV-0037
+
+David Collins
+
+ISSUED
+
+28. January 2026 – 28. January 2026
+
+£0.00
+
+£981.00
+
+422.pdf 
+ 
+
+INV-0036
+
+David Collins
+
+ISSUED
+
+24. January 2026 – 28. January 2026
+
+£0.00
+
+£1,155.00
+
+335.pdf 
+ 
+
+INV-0033
+
+Chloe Tanase
+
+ISSUED
+
+20. January 2026 – 21. January 2026
+
+£24.00
+
+£0.00
+
+286.pdf 
+ 
+
+INV-0018
+
+Chloe Tanase
+
+ISSUED
+
+9. January 2026 – 9. January 2026
+
+£40.00
+
+£100.00
+
+260.pdf 
+ 
+
+1
+Total pages: 1, Results: 16

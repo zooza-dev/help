@@ -1,0 +1,89 @@
+base: https://uk.zooza.app/
+shots:
+- image: allowing-multiple-registration-04.png
+  route: courses/schedules/230
+  assert: Class detail
+  status: proposed
+  note: content/guides/summer-camps-creation.md:121 — Screenshot
+- image: archive-or-delete-programme-03.png
+  route: courses/schedules/230
+  assert: Class detail
+  status: proposed
+  note: content/guides/archive-or-delete-programme.md:44 — Screenshot — archive or
+    delete programme
+- image: archive-or-delete-programme-04.png
+  route: courses/schedules/230
+  assert: Class detail
+  status: proposed
+  note: content/guides/archive-or-delete-programme.md:45 — Screenshot — archive or
+    delete programme
+- image: blocks-creation-08.png
+  route: courses/schedules/230?edit=products
+  assert: Products
+  status: proposed
+  card: Products
+  note: content/guides/blocks-creation.md:84 — Screenshot
+- image: blocks-creation-09.png
+  route: courses/schedules/230?edit=products
+  assert: Products
+  status: proposed
+  card: Products
+  note: content/guides/blocks-creation.md:88 — Screenshot
+- image: blocks-creation-10.png
+  route: courses/schedules/230?edit=products
+  assert: Products
+  status: proposed
+  card: Products
+  note: content/guides/blocks-creation.md:90 — Screenshot
+- image: reference/reports-dashboard.png
+  route: courses/schedules/230?edit=report
+  assert: Report
+  status: proposed
+  note: content/reference/reports-dashboard.md:24 — Reports dashboard
+- image: reference/reports-new-enrolments-detail.png
+  route: courses/schedules/230?edit=report
+  assert: Report
+  status: proposed
+  note: content/reference/reports-dashboard.md:60 — New enrolments detail
+- image: reference/reports-quick-setup.png
+  route: courses/schedules/230?edit=report
+  assert: Report
+  status: proposed
+  note: content/reference/reports-dashboard.md:77 — Quick setup
+- image: replacement-hours-cross-13.png
+  route: courses/schedules/230?edit=report
+  assert: Report
+  status: proposed
+  card: Report
+  note: content/guides/replacement-hours-complete.md:298 — Replacement lessons report
+    in Calendar
+- image: auto-cancel-unpaid-registrations-01.png
+  route: courses/schedules/230?edit=settings
+  assert: Settings
+  status: proposed
+  note: content/guides/auto-cancel-unpaid-registrations.md:65 — Payment Reminder Settings
+    with auto-cancel fields highlighted
+- image: billing-and-invoicing-01.png
+  route: courses/schedules/230?edit=settings
+  assert: Settings
+  status: proposed
+  note: content/setup/billing-and-invoicing.md:29 — Settings page with Billing tile
+    highlighted
+- image: fastpay-direct-debit-03.png
+  route: courses/schedules/230?edit=settings
+  assert: Settings
+  status: proposed
+  note: content/guides/fastpay-direct-debit.md:70 — Course Payment Methods settings
+    with SEPA Direct debit enabled, Provider set to FastPay, and the Man
+- image: replacement-hours-cross-01.png
+  route: courses/schedules/230?edit=settings
+  assert: Settings
+  status: proposed
+  note: content/guides/replacement-hours-complete.md:221 — Settings — Replacement
+    lessons tile
+- image: replacement-hours-cross-06.png
+  route: courses/schedules/230?edit=settings
+  assert: Settings
+  status: proposed
+  note: content/guides/replacement-hours-complete.md:255 — Replacement lessons restriction
+    settings

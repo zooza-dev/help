@@ -1,0 +1,205 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Tools
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Settings
+Payments
+Help & Support
+Brain James
+Back
+Set up how money comes into Zooza
+
+Walk through every channel (online card, direct debit, cash / bank transfer) in one guided flow. Captures your defaults for new programmes too.
+
+Open inbound payment setup
+Payment acceptance policy
+
+How long clients have to pay before a booking is marked unpaid.
+
+Days before booking is marked unpaid
++
+-
+After this many days from booking, the booking status changes from 'Awaiting payment' to 'Unpaid'. Set to 0 to mark unpaid immediately with no grace period.
+Save
+Scheduled-payment notifications
+
+Control which automated emails customers receive about scheduled payments.
+
+If you want to send reminders for one-off payments (not part of a payment plan), set them up per programme in the programme's Automation section.
+
+Send scheduled-payment notifications
+Yes
+Master switch. When off, no scheduled-payment emails are sent at all — neither the advance notice, nor the 'payment created' email, nor the overdue warning. The post-charge confirmation (sent after the customer is actually charged) is unaffected.
+More
+Advance notice
+Will not be sent — advance notice disabled
+→
+3 days
+Payment created
+→
+0 days
+Overdue warning
+
+Bank-transfer customers always receive the at-creation email regardless of cooldown — they need to know a payment is due so they can pay manually.
+
+The post-charge confirmation email (sent after the customer's card is charged or a manual payment is recorded) is a separate flow — see Payment confirmations.
+
+ADVANCE NOTICE
+Notify before a scheduled payment is issued
+No
+System will notify users before a scheduled payment is issued
+Edit email template
+PAYMENT CREATED
+Cooldown for stored card / direct debit
++
+-
+For customers paying via stored card or direct debit, skip the 'payment created' email if the previous payment in this plan was less than N months ago. Set to 0 to always send. Customers paying by bank transfer always receive the notification, regardless of this setting — they need to know a payment is due.
+More
+Edit email template
+OVERDUE WARNING
+
+Sent automatically when a scheduled payment is past its due date. Cannot be disabled separately while the master switch is on.
+
+Edit email template
+Save
+Payment confirmations
+
+Emails sent after a payment has actually been received.
+
+Send a notification of received payment to the client after a manual entry
+Yes
+After you manually record a payment received from a client, a confirmation of the payment will be sent to his/her email address.
+Send a notification of the received payment to the client after the file has been imported
+Yes
+The client is sent a confirmation of payment after the file has been imported.
+Text of the payment confirmation
+This text will appear in every payment confirmation sent to the client
+Edit email template
+Save
+Payment terms shown to clients
+
+This text appears in the client's profile under the Payments tab.
+
+Payment terms
+This text will be displayed in the client's profile in the payments tab.
+Save

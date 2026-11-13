@@ -1,0 +1,224 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Tools
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Settings
+Payment schedule templates
+Help & Support
+Brain James
+Back
+Payment plans
+
+Manage payment settings. The most common payment method is one-off payment. However, you can also use scheduled payments. At the programme level, you then choose from a menu of payment options that will be available for classes.
+
+Type
+Prepaid Periodic Payment, Monthly
+
+
+Payment on the 1. of the month,
+Visible to: Clients, Instructors, Owners
+Edit
+Membership Payment, Monthly
+
+
+Payment on the 1. of the month,
+Visible to: Clients, Instructors, Owners
+Edit
+One-off payment (Discount or Combination)
+
+
+Visible to: Clients, Instructors, Owners
+Edit
+Payment per Semester
+Prepaid Periodic Payment, By block
+
+
+Scheduled payment at the time of the next anniversary,
+Visible to: Clients, Instructors, Owners
+Edit
+Monthly
+Prepaid Periodic Payment, Monthly
+
+
+Scheduled payment at the time of the next anniversary,
+Visible to: Clients, Instructors, Owners
+Edit
+One-off payment (Discount or Combination)
+
+
+Discount 15,00 %,
+Visible to: Clients, Instructors, Owners
+Edit
+Annually
+Membership Payment, Yearly
+
+
+Scheduled payment at the time of the next anniversary,
+Visible to: Clients, Instructors, Owners
+Edit
+Siblings
+Membership Payment, Monthly
+
+
+Discount 10,00 %, Scheduled payment at the time of the next anniversary,
+Visible to: Clients, Instructors, Owners
+Edit
+Membership Payment, Monthly
+
+
+Payment on the 9. of the month,
+Visible to: Clients, Instructors, Owners
+Edit
+New Monthly
+Membership Payment, Monthly
+
+
+Scheduled payment at the time of the next anniversary,
+Visible to: Clients, Instructors, Owners
+Edit
+Prepaid Periodic Payment, Half-yearly
+
+
+Scheduled payment at the time of the next anniversary,
+Visible to: Clients, Instructors, Owners
+Edit
+Membership Payment, Yearly
+
+
+Discount 10,00 %, Scheduled payment at the time of the next anniversary,
+Visible to: Clients, Instructors, Owners
+Edit
+Prepaid Periodic Payment, By block
+
+
+Scheduled payment at the time of the next anniversary,
+Visible to: Clients, Instructors, Owners
+Edit
+Membership Payment, Quarterly
+
+
+Discount 5,00 %, Payment on the 1. of the month,
+Visible to: Clients, Instructors, Owners
+Edit
+
+Add

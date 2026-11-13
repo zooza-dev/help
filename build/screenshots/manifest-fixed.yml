@@ -1,0 +1,61 @@
+base: https://uk.zooza.app/
+shots:
+- image: pay-as-you-go-client-book-session.png
+  route: course_detail/517
+  assert: Go back
+  status: fixed
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/pay-as-you-go-programme.md:100 — Client view — Book session
+    button
+  wait: 12000
+- image: client-profile-101-03.png
+  route: dashboard
+  assert: Payments requiring attention
+  status: approved
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/client-profile-101.md:49 — Screenshot — client profile 101
+- image: replacement-hours-cross-07.png
+  route: course_detail/666
+  assert: Make-up sessions
+  status: fixed
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/replacement-hours-complete.md:261 — Client profile — unexpired
+    replacement lessons
+  card: Make-up sessions
+- image: replacement-hours-cross-10.png
+  route: course_detail/517/find_event
+  assert: Go back
+  status: fixed
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/replacement-hours-complete.md:273 — Replacement session from
+    another branch shown in client profile
+  wait: 12000
+- image: viewing-billable-events-11.png
+  route: course_detail/517
+  assert: Total sessions
+  status: fixed
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: 'content/guides/viewing-billable-sessions.md:75 — In the client profile on
+    the programme report, the field: Total Sessions is displayed,...'
+  card: About the class
+- image: entry-pass-client-view-01.png
+  route: orders
+  assert: Orders
+  status: approved
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/entry-pass-client-view.md:34 — Screenshot — entry pass client
+    view
+- image: entry-pass-client-view-02.png
+  route: orders
+  assert: Orders
+  status: approved
+  session: client
+  base: https://www.playfulmotion.co.uk/parent-zone
+  note: content/guides/entry-pass-client-view.md:37 — Screenshot — entry pass client
+    view

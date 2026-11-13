@@ -1,0 +1,170 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Programmes
+New package
+Help & Support
+Brain James
+Back
+PROGRAME = product blueprint
+
+Programmes are the blueprint for what you sell (e.g. a Dance programme, a STEM club, or a Music class).
+
+Set the “global rules” here: pricing, payment setup, trial availability, and other overall settings.
+
+Create a programme when:
+👍 You are launching a new product/service with different rules.
+
+Don’t create a programme when:
+👎 You are only starting a new class, term/date range for an existing product.
+
+CLASSES = class setup
+
+Classes are the settings for a class within a programme.
+
+Here you define the main class setup: capacity, instructor and venue.
+
+Create a class when:
+👍 You are creating a new class/group (new time, venue, instructor, or capacity).
+
+Don’t create a class when:
+👎 You are creating a completely new product — create a Programme instead.
+
+SESSIONS = one real date
+
+Sessions are the individual class dates created under a class.
+
+Use sessions for real-life changes: add an extra date, change one date, cancel one date, or handle a substitute instructor.
+
+Create/edit sessions when:
+👍 You need to add, change, or adjust specific class dates.
+
+Don’t create/edit sessions when:
+👎 You only need to change pricing, payments, or other global rules — update the Programme.
+
+BILLING PERIODS / TERMS = optional grouping for reporting
+
+Billing periods / terms let you group classes into meaningful blocks (e.g. Autumn Term, Spring Term, Summer Camps).
+
+This helps with clearer reporting on payments, revenue, and class occupancy per term/season.
+
+Add a billing period / term when:
+👍 You operate in terms/semesters or want cleaner reporting across groups of classes.
+
+Don’t add a billing period / term when:
+👎 You don’t need this level of grouping — it’s optional.
+
+Next

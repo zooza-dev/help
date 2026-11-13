@@ -1,0 +1,251 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Sessions
+22131
+Help & Support
+Brain James
+Back
+Previous session (14. 09. 2026)
+All sessions
+Next session (28. 09. 2026)
+Session
+SESSION NUMBER
+
+3
+
+DATE
+
+Monday, 21. September 2026, 07:00:00
+
+SESSION NAME
+
+Not Set
+
+INSTRUCTOR
+
+Reed Jasmine
+
+VENUE
+
+Dulwich Village Hall , SE21 7BT
+
+STATUS
+
+ Scheduled
+
+BLOCK
+
+BLOCK A
+
+Edit
+Cancel session
+Instructors
+MAIN
+
+Reed Jasmine
+
+INSTRUCTOR'S RATE
+
+Not Set
+
+INSTRUCTOR'S PAYOUT
+
+100,00 %
+
+ADDITIONAL INSTRUCTORS
+Edit
+Class
+PROGRAMME
+English & Math
+CLASS
+Monday, 07:00:00 (7. September 2026 - 21. June 2027)
+BILLING PERIOD
+
+Ongoing Classes
+
+VENUE
+
+Dulwich Village Hall , SE21 7BT
+
+INSTRUCTOR
+
+Reed Jasmine
+
+ENROLLED
+
+1/10
+
+Attendance
+WILL ATTEND
+
+1
+
+WILL NOT ATTEND:
+
+0
+
+NO SHOW
+
+0
+
+MAKE-UP SESSION WAITING LIST:
+
+0
+
+LATE CANCELLED
+
+0
+
+Manage attendance
+Documents
+DOCUMENTS (0)
+VIDEOS (0)
+URLS (0)
+FORMS (0)
+
+No records
+
+Add document
+Automations
+E-MAIL AFTER THE SESSION
+
+ No
+
+E-MAIL AFTER THE VIDEO HAS BEEN WATCHED
+
+ No
+
+Edit
+Live-Stream
+PRO
+STATUS
+
+Not Set
+
+LIVE-STREAMS
+
+To learn more about live streams, contact our support.
+
+Activate
+Adjustments
+Credit
+Debit
+
+No records
+
+Activity log
+PRO

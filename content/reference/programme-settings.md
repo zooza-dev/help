@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-11-09"
+last_converted: "2026-11-13"
 ---
 
 # Programme Settings
@@ -121,6 +121,19 @@ Controls how the programme appears on your public booking forms.
 |---|---|
 | `If the class reaches full capacity, do not show it in the booking form` | Hides full classes entirely (instead of showing "class full"). |
 | `Hide from booking form N hours before the programme begins` | Auto-hides the programme before it starts. |
+
+### Date display in widgets
+
+Added November 2026. Chooses how the start and end of a class are written in the booking,
+profile and map widgets — a **Preset style**, or **Custom** if you need an exact pattern.
+
+| Field | Description |
+|---|---|
+| `Start date format` | How the class's start date is written. |
+| `End date format` | How the class's end date is written. |
+
+Each client still sees the date in their own widget's language; this picks the *shape*, not
+the language.
 
 ### Class Settings
 

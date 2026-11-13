@@ -1,0 +1,184 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Programmes
+Trailblazer Tumblers (6–8 Years)
+Settings
+Make-up sessions
+Help & Support
+Brain James
+Back
+OVERVIEW
+SETTINGS
+AUTOMATIONS
+Make-up sessions options
+Allow make-up sessions
+Yes
+Check to enable the use of make-up sessions for this programme based on your settings.
+Make-up sessions waitlist
+Yes
+Clients will be able to enrol on a waitlist for an make-up session
+Allow the use of credit for a make-up session as a discount when purchasing a programme
+No
+Credits allocated to clients have a unit value calculated from the class price. If this option is enabled, the client will be offered the opportunity to use such credits as a discount on the purchase when enrolling or the next programme. The credits will be automatically used and the client will lose the entitlement for these make-up sessions.
+More
+CUSTOM MAKE-UP SESSIONS
+Allow tailored make-up sessions
+No
+Clients will be able to propose a tailored make-up session date according to their preferences. Each request for a tailored make-up session will be approved by their instructor.
+MAKE-UP SESSIONS FROM OTHER COMPANIES
+Allow make-up sessions at other companies
+No
+It will allow clients from other companies to replace sessions in this programme. You manage the companies whose clients can use the make-up sessions in the settings.
+Save
+Make-up sessions settings
+Limit for make-up sessions
++
+-
+The number is set for each booking and within a set period. If the value is set to 0, the number of make-up sessions = the number of sessions in the class.
+Number of days to use make-up sessions
++
+-
+The specified number of days will start counting down according to the settings below - before or after the class ends. So for example if you set the limit to 10 days, then the last day when clients can use their make-up sessions would be the last class date plus 10 days. This setting will limit the length of validity for make-up sessions that is specified in the general settings. If the value is set to 0, the expiration of make-up sessions applies from the general settings.
+More
+Apply days
+Before end of class
+After end of class
+Allow clients to reschedule/change an already selected make-up session
+Yes
+If this setting is turned off, clients will not be able to change an already scheduled make-up session. However, they will still be able to cancel.
+Make-up sessions are assigned by an administrator
+No
+When enabled, clients can still cancel a session, but they cannot pick or reschedule their make-up session themselves. An administrator assigns it for them.
+Flexible limit of make-up sessions
+No
+The limit of make-up sessions will be applied to the package of sessions. For example, for every 5 sessions, the client will be entitled to 3 make-up sessions. Suitable to be used in cases where the class may be extended with additional sessions during the programme of the class.
+More
+When cancelling of the make-up session, return the credit to the client
+Yes
+As a standard, the client loses his/her entitlement to the make-up session after cancelling of it. If this feature is enabled, the client will regain the entitlement to the make-up session after cancelling of the make-up session.
+Save
+Restrictions on the use of make-up sessions
+The session can be used according to the following parameters:
+Programme: All
+Billing period: All
+Venues: All
+
+Current number of unused make-up sessions: 0
+
+Synchronize
+
+Click on the button to apply the settings for using make-up sessions to all unused make-up sessions (not just new ones).

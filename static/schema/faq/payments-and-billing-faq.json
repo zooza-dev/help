@@ -486,6 +486,14 @@
     },
     {
       "@type": "Question",
+      "name": "Every instalment after the first says Cancelled and nobody cancelled them",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zooza stopped the plan, and since November 2026 it tells you why rather than leaving you\nwith a row of cancelled instalments and no explanation.\n\nA payment plan only runs while the booking and the class can carry one. If that stops being\ntrue, the overnight job cancels the instalments that have not been billed yet. The plan now\ncarries a status, shown on the plan:\n\nWhen Zooza stopped it, the reason is written out beside the status:\n\n- Stopped because the booking is no longer enrolled\n- Stopped because the class is no longer active\n- Stopped because the class has ended\n\nThe usual cause is applying the plan at the wrong moment. A plan put on a booking that\nis not yet properly enrolled is cancelled by the overnight job hours later — and moving the\nbooking to Enrolled afterwards does not bring the instalments back. Zooza now refuses to\ncreate a plan in that situation instead of accepting one it is about to kill: a booking\nthat is not enrolled, a class that is archived, inactive or already over, a lead-collection\nclass, or an archived programme.\n\nA stopped plan's instalments can no longer be edited, and Zooza says so on the payment\nitself rather than letting you change something that will not take.\n\nTo start again, apply a plan. A stopped plan is not resumed — same as a cancelled one."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Does editing a payment template change plans that are already running?",
       "acceptedAnswer": {
         "@type": "Answer",

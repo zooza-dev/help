@@ -1,0 +1,295 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Payments
+Help & Support
+Brain James
+Import payments
+Direct Debit
+
+You don’t have automatic payment matching set up, or no payment has been matched yet. Read the guide to see how to set it up.
+
+More
+
+Latest payment periods
+
+Choose a period to check transactions.
+
+Billing period
+Block Terms
+×
+OVERVIEW OF PAYMENTS:
+	
+Received payments
+Sum of all payments received in the billing period	£0.00
+Total revenue
+Summary of all issued debts for bookings in the "Enrolled" and "Guest" status	£0.00
+Remains to be paid
+The difference between total payments received and recorded payments	£0.00
+Estimated income at 100% occupancy
+Capacity of all active classes in the billing period	£6,000.00
+Current occupancy
+Bookings in the "Enrolled" status	0,00 %
+Reports
+NAME	ACTION
+
+
+Insights and Trends
+
+	
+
+Open
+
+
+
+
+Payments by programme
+
+	
+
+Open
+
+
+
+
+Outstanding Payments
+
+	
+
+Open
+
+
+
+
+Refunds
+
+	
+
+Open
+
+
+
+
+Direct debit export
+
+	
+
+Open
+
+Unpaid bookings: 174
+AMOUNT	BOOKING
+
+
+-£99.00
+
+	
+
+Michal Dodok
+
+
+
+
+-£52.62
+
+	
+
+Michal Dodok
+
+
+
+
+-£60.00
+
+	
+
+Brian James
+
+
+
+
+-£200.00
+
+	
+
+Michal Dodok
+
+
+
+
+-£70.00
+
+	
+
+Michal Dodok
+
+
+
+
+-£428.80
+
+	
+
+Michal Dodok
+
+
+
+
+-£10.00
+
+	
+
+Mark Lambracht
+
+
+
+
+-£102.00
+
+	
+
+Brian James
+
+
+
+
+-£80.00
+
+	
+
+Brian James
+
+
+
+
+-£60.00
+
+	
+
+Brian James
+
+Unpaid
+Partially paid
+Unpaired payments: 0
+
+Payment reconciliation is not configured. Incoming payments are not being automatically matched.
+
+All your payments are paired
+
+Payment overview

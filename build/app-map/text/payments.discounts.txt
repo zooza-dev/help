@@ -1,0 +1,342 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Discounts
+Help & Support
+Brain James
+Discount codes
+NAME	USAGE	VALID UNTIL
+
+
+40off (40off)
+
+	
+
+1/100
+Last used: Thursday, 10. September 2026, 05:23:27
+
+	
+
+Thursday, 31. December 2026, 00:00:00
+
+
+
+
+100Trial (100Trial100Trial)
+
+	
+
+0/100
+Never used
+
+	
+
+Thursday, 22. October 2026, 20:50:56
+
+
+
+
+NewCoupon ( NewCoupon)
+
+	
+
+0/100
+Never used
+
+	
+
+Tuesday, 6. October 2026, 17:44:16
+
+
+
+
+BacktoSchool (BacktoSchool)
+
+	
+
+2/100
+Last used: Saturday, 4. July 2026, 20:40:58
+
+	
+
+Saturday, 26. September 2026, 19:00:52
+
+
+
+
+SiblingsNewTerm (SibSiblingsNewTermlingsNewTerm)
+
+	
+
+1/100
+Last used: Friday, 26. June 2026, 18:00:28
+
+	
+
+Saturday, 26. September 2026, 18:54:26
+
+Create
+View
+Free Sessions
+TOTAL USED FREE SESSIONS
+
+2
+
+TOTAL VALUE OF USED FREE SESSIONS
+
+£17.00
+
+CLIENT	VALUE	USED
+
+
+Derek Phillips
+
+	
+
+£9.00
+
+	
+
+Yes
+
+
+
+
+Brian James
+
+	
+
+£8.00
+
+	
+
+Yes
+
+Create
+View
+Discounts
+TOTAL USED DISCOUNTS
+
+26
+
+TOTAL VALUE OF USED DISCOUNTS
+
+£2,710.00
+
+CLIENT	VALUE	USED
+
+
+Mark Lambracht
+
+	
+
+£40.00
+
+	
+
+Yes
+
+
+
+
+Brian James
+
+	
+
+£10.00
+
+	
+
+Yes
+
+
+
+
+Brian James
+
+	
+
+£10.00
+
+	
+
+Yes
+
+
+
+
+Brian James
+
+	
+
+£10.00
+
+	
+
+Yes
+
+
+
+
+Brian James
+
+	
+
+£50.00
+
+	
+
+Yes
+
+Create
+View
+Payment templates with discount
+NAME	VALUE
+
+
+	
+
+15,00 %
+
+
+
+
+Siblings
+
+	
+
+10,00 %
+
+
+
+
+	
+
+10,00 %
+
+
+
+
+	
+
+6,00 %
+
+Create
+View

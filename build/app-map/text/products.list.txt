@@ -1,0 +1,298 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Products
+Help & Support
+Brain James
+Add new product
+Type
+Total number of records: 11
+NAME
+
+Gift Card
+
+PRICE
+
+–
+
+STATUS
+
+AVAILABLE
+
+ONLINE BOOKING
+
+ Yes
+
+NAME
+
+Credit Pass Options
+
+PRICE
+
+–
+
+STATUS
+
+AVAILABLE
+
+ONLINE BOOKING
+
+ Yes
+
+NAME
+
+Credit Pass 5
+
+PRICE
+
+£50.00
+
+STATUS
+
+AVAILABLE
+
+ONLINE BOOKING
+
+ Yes
+
+NAME
+
+Credit Pass 10
+
+PRICE
+
+£100.00
+
+STATUS
+
+AVAILABLE
+
+ONLINE BOOKING
+
+ Yes
+
+NAME
+
+New Product
+
+PRICE
+
+–
+
+STATUS
+
+AVAILABLE
+
+ONLINE BOOKING
+
+ Yes
+
+NAME
+
+New Product
+
+PRICE
+
+–
+
+STATUS
+
+AVAILABLE
+
+ONLINE BOOKING
+
+ Yes
+
+NAME
+
+Product
+
+PRICE
+
+–
+
+STATUS
+
+AVAILABLE
+
+ONLINE BOOKING
+
+ Yes
+
+NAME
+
+Hope Tutu
+
+PRICE
+
+–
+
+STATUS
+
+AVAILABLE
+
+ONLINE BOOKING
+
+ Yes
+
+NAME
+
+Tee-shirt as a Gift with love
+
+PRICE
+
+–
+
+STATUS
+
+AVAILABLE
+
+ONLINE BOOKING
+
+ Yes
+
+NAME
+
+Wiggle at Home: Sensory Sound Pack
+
+PRICE
+
+£4.90
+
+STATUS
+
+AVAILABLE
+
+ONLINE BOOKING
+
+ Yes
+
+NAME
+
+Starter Pack
+
+PRICE
+
+£30.00
+
+STATUS
+
+AVAILABLE
+
+ONLINE BOOKING
+
+ Yes
+
+1
+Total pages: 1, Results: 11

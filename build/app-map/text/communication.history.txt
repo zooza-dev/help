@@ -1,0 +1,1159 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Products & Services
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Communication
+History
+Help & Support
+Brain James
+Back
+Type
+Template
+Status
+Newest first
+Oldest first
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 08:22:58
+
+STATUS
+
+Received
+
+THE CLIENT
+
+michaldodok@gmail.com
+
+TITLE/MESSAGE
+
+Your enrolment for *|COURSE_NAME|* has been cancelled
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:09
+
+STATUS
+
+Received
+
+THE CLIENT
+
+michaldodok@gmail.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:09
+
+STATUS
+
+Received
+
+THE CLIENT
+
+michal@zooza.online
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:09
+
+STATUS
+
+hard-bounce
+
+THE CLIENT
+
+mark@lambrach.co.co.uk
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:08
+
+STATUS
+
+global-block
+
+THE CLIENT
+
+amelia.wright@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:08
+
+STATUS
+
+global-block
+
+THE CLIENT
+
+charlotte.price@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:08
+
+STATUS
+
+global-block
+
+THE CLIENT
+
+olivia.hughes@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:08
+
+STATUS
+
+global-block
+
+THE CLIENT
+
+emma.jackson@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:07
+
+STATUS
+
+global-block
+
+THE CLIENT
+
+amelia.wright@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:07
+
+STATUS
+
+global-block
+
+THE CLIENT
+
+charlotte.price@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:07
+
+STATUS
+
+global-block
+
+THE CLIENT
+
+olivia.hughes@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:07
+
+STATUS
+
+global-block
+
+THE CLIENT
+
+emma.jackson@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:06
+
+STATUS
+
+Received
+
+THE CLIENT
+
+michal+test@zooza.online
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:06
+
+STATUS
+
+hard-bounce
+
+THE CLIENT
+
+path@nololo.co.uk
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:06
+
+STATUS
+
+hard-bounce
+
+THE CLIENT
+
+tanase.chloe@playfulmotion.co.uk
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:05
+
+STATUS
+
+global-block
+
+THE CLIENT
+
+daniel.carter@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:05
+
+STATUS
+
+Received
+
+THE CLIENT
+
+michal@zooza.online
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:04
+
+STATUS
+
+Received
+
+THE CLIENT
+
+michaldodok@gmail.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:04
+
+STATUS
+
+THE CLIENT
+
+david.collins@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:04
+
+STATUS
+
+THE CLIENT
+
+thomas.walker@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:04
+
+STATUS
+
+THE CLIENT
+
+michael.owen@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:04
+
+STATUS
+
+THE CLIENT
+
+james.wilson@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:04
+
+STATUS
+
+THE CLIENT
+
+sarah.thompson@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:04
+
+STATUS
+
+Received
+
+THE CLIENT
+
+michal@zooza.online
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:04
+
+STATUS
+
+THE CLIENT
+
+john.smith@email.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:04
+
+STATUS
+
+THE CLIENT
+
+daniel.carter@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:04
+
+STATUS
+
+Received
+
+THE CLIENT
+
+emma.bell@fakemail.test
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:04
+
+STATUS
+
+Received
+
+THE CLIENT
+
+david.hayes@fakemail.test
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:04
+
+STATUS
+
+Received
+
+THE CLIENT
+
+carol.reed@fakemail.test
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:04
+
+STATUS
+
+Received
+
+THE CLIENT
+
+beth.parker@fakemail.test
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:04
+
+STATUS
+
+Received
+
+THE CLIENT
+
+andrew.foster@fakemail.test
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:02
+
+STATUS
+
+Received
+
+THE CLIENT
+
+michal@zooza.online
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:01
+
+STATUS
+
+hard-bounce
+
+THE CLIENT
+
+tanase.chloe@playfulmotion.co.uk
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Monday, 21. September 2026, 06:01:01
+
+STATUS
+
+Received
+
+THE CLIENT
+
+michal@zooza.online
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Sunday, 20. September 2026, 09:30:04
+
+STATUS
+
+Received
+
+THE CLIENT
+
+michal@zooza.online
+
+TITLE/MESSAGE
+
+Notification of overdue payment
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Sunday, 20. September 2026, 09:30:02
+
+STATUS
+
+Received
+
+THE CLIENT
+
+michal@zooza.online
+
+TITLE/MESSAGE
+
+*|COMPANY|* – New payment: *|COURSE_NAME|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Sunday, 20. September 2026, 09:30:02
+
+STATUS
+
+Received
+
+THE CLIENT
+
+michal@zooza.online
+
+TITLE/MESSAGE
+
+*|COMPANY|* – New payment: *|COURSE_NAME|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Sunday, 20. September 2026, 06:01:06
+
+STATUS
+
+global-block
+
+THE CLIENT
+
+james.wilson@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Sunday, 20. September 2026, 06:01:06
+
+STATUS
+
+global-block
+
+THE CLIENT
+
+sarah.thompson@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Sunday, 20. September 2026, 06:01:06
+
+STATUS
+
+Received
+
+THE CLIENT
+
+michaldodok@gmail.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Sunday, 20. September 2026, 06:01:06
+
+STATUS
+
+hard-bounce
+
+THE CLIENT
+
+tanase.chloe@playfulmotion.co.uk
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Sunday, 20. September 2026, 06:01:05
+
+STATUS
+
+global-block
+
+THE CLIENT
+
+emma.jackson@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Sunday, 20. September 2026, 06:01:05
+
+STATUS
+
+global-block
+
+THE CLIENT
+
+charlotte.price@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Sunday, 20. September 2026, 06:01:05
+
+STATUS
+
+global-block
+
+THE CLIENT
+
+amelia.wright@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Sunday, 20. September 2026, 06:01:04
+
+STATUS
+
+global-block
+
+THE CLIENT
+
+daniel.carter@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Sunday, 20. September 2026, 06:01:04
+
+STATUS
+
+global-block
+
+THE CLIENT
+
+rebecca.miller@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Sunday, 20. September 2026, 06:01:04
+
+STATUS
+
+hard-bounce
+
+THE CLIENT
+
+john.smith@email.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Sunday, 20. September 2026, 06:01:04
+
+STATUS
+
+Received
+
+THE CLIENT
+
+michal@zooza.online
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Sunday, 20. September 2026, 06:01:04
+
+STATUS
+
+global-block
+
+THE CLIENT
+
+emma.jackson@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Sent message
+
+SENT/RECEIVED
+
+Sunday, 20. September 2026, 06:01:04
+
+STATUS
+
+global-block
+
+THE CLIENT
+
+olivia.hughes@example.com
+
+TITLE/MESSAGE
+
+Session - *|EVENT_COURSE|*
+
+TYPE
+
+ Received message
+
+SENT/RECEIVED
+
+Thursday, 29. January 2026, 12:27:22
+
+STATUS
+
+Prijaté
+
+THE CLIENT
+
+michal@zooza.online
+
+TITLE/MESSAGE
+
+Re: Playfulmotion – New payment: ? Wiggle Wonders (0–12 months) - Thursday
+
+TYPE
+
+ SMS
+
+SENT/RECEIVED
+
+Tuesday, 19. August 2025, 09:41:47
+
+STATUS
+
+- Unknown
+
+THE CLIENT
+
++421902103927
+
+TITLE/MESSAGE
+
+test
+
+1
+2
+3
+4
+...
+101
+Total pages: 101, Results: 5015

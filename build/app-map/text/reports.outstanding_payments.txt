@@ -1,0 +1,862 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Stream
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Reports
+Outstanding Payments
+Help & Support
+Brain James
+Period
+Programme
+Venue
+Instructor
+Reset
+Outstanding Payments
+Awaiting payment
+£310.00
+Booking
+1
+Bookings
+Active debt
+£117,235.50
+Bookings
+214
+Bookings
+Written off
+£2,880.00
+Bookings
+2
+Bookings
+By venue
+BY VENUE
+
+Dulwich Village Hall
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£20,532.47
+
+50
+WRITTEN OFF
+
+£2,880.00
+
+2
+BY VENUE
+
+Chesterton Sports Hall
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£16,790.00
+
+38
+WRITTEN OFF
+
+—
+
+BY VENUE
+
+Moseley Movement Studio
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£15,641.31
+
+32
+WRITTEN OFF
+
+—
+
+BY VENUE
+
+Summertown Scout Hall
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£14,927.00
+
+12
+WRITTEN OFF
+
+—
+
+BY VENUE
+
+West Bridgford Centre
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£11,760.00
+
+9
+WRITTEN OFF
+
+—
+
+BY VENUE
+
+Hove Family Centre
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£11,575.24
+
+17
+WRITTEN OFF
+
+—
+
+BY VENUE
+
+Headingley Activity Hub
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£7,853.10
+
+9
+WRITTEN OFF
+
+—
+
+BY VENUE
+
+Redland Rooms
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£5,785.00
+
+11
+WRITTEN OFF
+
+—
+
+BY VENUE
+
+Morningside Playhouse
+
+AWAITING PAYMENT
+
+£310.00
+
+1
+ACTIVE DEBT
+
+£4,528.50
+
+10
+WRITTEN OFF
+
+—
+
+BY VENUE
+
+My
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£3,721.98
+
+15
+WRITTEN OFF
+
+—
+
+BY VENUE
+
+Online
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£3,130.00
+
+5
+WRITTEN OFF
+
+—
+
+BY VENUE
+
+Chorlton Hall
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£990.90
+
+6
+WRITTEN OFF
+
+—
+
+By programme
+BY PROGRAMME
+
+💃 Wiggle Wonders (0–12 months)
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£45,652.00
+
+68
+WRITTEN OFF
+
+—
+
+BY PROGRAMME
+
+🤹‍♂️ Bounce & Balance (1–3 years)
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£31,997.60
+
+33
+WRITTEN OFF
+
+—
+
+BY PROGRAMME
+
+👣 Mighty Movers (3–5 years)
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£15,792.80
+
+28
+WRITTEN OFF
+
+£1,880.00
+
+1
+BY PROGRAMME
+
+Summer Swimming
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£7,309.99
+
+6
+WRITTEN OFF
+
+£1,000.00
+
+1
+BY PROGRAMME
+
+Movers
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£4,196.18
+
+27
+WRITTEN OFF
+
+—
+
+BY PROGRAMME
+
+Individual Lessons
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£3,000.00
+
+1
+WRITTEN OFF
+
+—
+
+BY PROGRAMME
+
+Kids Club
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£2,598.75
+
+2
+WRITTEN OFF
+
+—
+
+BY PROGRAMME
+
+Dancing on the Water
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£2,375.00
+
+6
+WRITTEN OFF
+
+—
+
+BY PROGRAMME
+
+Loud Event
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£1,200.00
+
+5
+WRITTEN OFF
+
+—
+
+BY PROGRAMME
+
+Birthday Party
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£900.00
+
+4
+WRITTEN OFF
+
+—
+
+BY PROGRAMME
+
+English & Math
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£774.00
+
+8
+WRITTEN OFF
+
+—
+
+BY PROGRAMME
+
+Baby Class
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£653.00
+
+4
+WRITTEN OFF
+
+—
+
+BY PROGRAMME
+
+Dance like a Pro
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£527.00
+
+3
+WRITTEN OFF
+
+—
+
+BY PROGRAMME
+
+Baby Class
+
+AWAITING PAYMENT
+
+£310.00
+
+1
+ACTIVE DEBT
+
+£30.00
+
+1
+WRITTEN OFF
+
+—
+
+BY PROGRAMME
+
+Baby Classes
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£88.00
+
+1
+WRITTEN OFF
+
+—
+
+BY PROGRAMME
+
+Trailblazer Tumblers (6–8 Years)
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£80.18
+
+10
+WRITTEN OFF
+
+—
+
+BY PROGRAMME
+
+Trial Interest
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£61.00
+
+7
+WRITTEN OFF
+
+—
+
+By instructor
+BY INSTRUCTOR
+
+Noah Campbell
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£19,064.24
+
+38
+WRITTEN OFF
+
+—
+
+BY INSTRUCTOR
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£17,474.22
+
+52
+WRITTEN OFF
+
+—
+
+BY INSTRUCTOR
+
+Amelia Hughes
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£16,256.10
+
+17
+WRITTEN OFF
+
+—
+
+BY INSTRUCTOR
+
+Lucy Morgan
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£15,844.00
+
+39
+WRITTEN OFF
+
+—
+
+BY INSTRUCTOR
+
+Priya Sharma
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£14,867.00
+
+10
+WRITTEN OFF
+
+—
+
+BY INSTRUCTOR
+
+Jasmine Reed
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£12,582.00
+
+16
+WRITTEN OFF
+
+—
+
+BY INSTRUCTOR
+
+Chloe Evans
+
+AWAITING PAYMENT
+
+£310.00
+
+1
+ACTIVE DEBT
+
+£10,306.13
+
+15
+WRITTEN OFF
+
+—
+
+BY INSTRUCTOR
+
+Sophie Allen
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£4,973.00
+
+8
+WRITTEN OFF
+
+—
+
+BY INSTRUCTOR
+
+Ben Taylor
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£2,299.06
+
+8
+WRITTEN OFF
+
+£1,880.00
+
+1
+BY INSTRUCTOR
+
+Daniel Wright
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£1,780.00
+
+3
+WRITTEN OFF
+
+—
+
+BY INSTRUCTOR
+
+Sam Laing
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£1,229.75
+
+3
+WRITTEN OFF
+
+—
+
+BY INSTRUCTOR
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+—
+
+WRITTEN OFF
+
+£1,000.00
+
+1
+BY INSTRUCTOR
+
+Brian James
+
+AWAITING PAYMENT
+
+—
+
+ACTIVE DEBT
+
+£560.00
+
+5
+WRITTEN OFF
+
+—

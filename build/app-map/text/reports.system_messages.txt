@@ -1,0 +1,982 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Dashboard
+Reports
+Sessions
+Stream
+System messages
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Reports & Insights
+System messages
+Help & Support
+Brain James
+Operation
+Entity type
+Severity
+Reset
+315 events found
+TIME
+
+8 h
+
+WHAT HAPPENED
+
+ Booking cancelled
+
+ENTITY
+
+Booking 1394
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Sun 09:30
+
+WHAT HAPPENED
+
+Payment reminder sent
+
+ENTITY
+
+Booking 42
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Sun 09:30
+
+WHAT HAPPENED
+
+ Payment scheduled: -20
+
+ENTITY
+
+Booking 1231
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Sun 09:30
+
+WHAT HAPPENED
+
+ Payment scheduled: -32
+
+ENTITY
+
+Booking 46
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Sat 09:30
+
+WHAT HAPPENED
+
+Payment reminder sent
+
+ENTITY
+
+Booking 1068
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Sat 09:30
+
+WHAT HAPPENED
+
+Payment reminder sent
+
+ENTITY
+
+Booking 427
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Sat 09:30
+
+WHAT HAPPENED
+
+Payment reminder sent
+
+ENTITY
+
+Booking 25
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Sat 09:30
+
+WHAT HAPPENED
+
+ Payment scheduled: -36
+
+ENTITY
+
+Booking 37
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Sat 09:30
+
+WHAT HAPPENED
+
+ Payment scheduled: -40
+
+ENTITY
+
+Booking 1394
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Sat 07:56
+
+WHAT HAPPENED
+
+ New booking
+
+ENTITY
+
+Booking 1595
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Fri 15:12
+
+WHAT HAPPENED
+
+Make-up session set
+
+ENTITY
+
+Attendance 28382
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Fri 15:12
+
+WHAT HAPPENED
+
+ Session cancelled
+
+ENTITY
+
+Attendance 28381
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Fri 15:10
+
+WHAT HAPPENED
+
+ New booking
+
+ENTITY
+
+Booking 1589
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Fri 09:30
+
+WHAT HAPPENED
+
+ Payment scheduled: -36
+
+ENTITY
+
+Booking 56
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Thu 09:30
+
+WHAT HAPPENED
+
+Payment reminder sent
+
+ENTITY
+
+Booking 524
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Thu 09:30
+
+WHAT HAPPENED
+
+ Payment scheduled: -32
+
+ENTITY
+
+Booking 1095
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Thu 09:30
+
+WHAT HAPPENED
+
+ Payment scheduled: -36
+
+ENTITY
+
+Booking 1096
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Thu 06:52
+
+WHAT HAPPENED
+
+ New enquiry
+
+ENTITY
+
+system_messages__entity_type__contact 1
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Wed 09:30
+
+WHAT HAPPENED
+
+Payment reminder sent
+
+ENTITY
+
+Booking 1537
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Wed 09:30
+
+WHAT HAPPENED
+
+ Payment scheduled: -500
+
+ENTITY
+
+Booking 36
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Wed 09:30
+
+WHAT HAPPENED
+
+ Payment scheduled: -214.4
+
+ENTITY
+
+Booking 1537
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Wed 09:30
+
+WHAT HAPPENED
+
+ Payment scheduled: -40
+
+ENTITY
+
+Booking 1543
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Wed 09:30
+
+WHAT HAPPENED
+
+ Payment scheduled: -100
+
+ENTITY
+
+Booking 1542
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Wed 09:30
+
+WHAT HAPPENED
+
+ Payment scheduled: -40
+
+ENTITY
+
+Booking 1539
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Tue 09:30
+
+WHAT HAPPENED
+
+Payment reminder sent
+
+ENTITY
+
+Booking 888
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Tue 09:30
+
+WHAT HAPPENED
+
+ Payment scheduled: -39
+
+ENTITY
+
+Booking 1091
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Tue 08:28
+
+WHAT HAPPENED
+
+ New booking
+
+ENTITY
+
+Booking 1543
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Tue 08:26
+
+WHAT HAPPENED
+
+ New booking
+
+ENTITY
+
+Booking 1542
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+Mon 16:59
+
+WHAT HAPPENED
+
+ New booking
+
+ENTITY
+
+Booking 1539
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+14. 9. 2026
+
+WHAT HAPPENED
+
+ New booking
+
+ENTITY
+
+Booking 1537
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+13. 9. 2026
+
+WHAT HAPPENED
+
+Payment reminder sent
+
+ENTITY
+
+Booking 162
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+13. 9. 2026
+
+WHAT HAPPENED
+
+Payment reminder sent
+
+ENTITY
+
+Booking 159
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+13. 9. 2026
+
+WHAT HAPPENED
+
+Payment reminder sent
+
+ENTITY
+
+Booking 163
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+12. 9. 2026
+
+WHAT HAPPENED
+
+Payment reminder sent
+
+ENTITY
+
+Booking 670
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+12. 9. 2026
+
+WHAT HAPPENED
+
+Payment reminder sent
+
+ENTITY
+
+Booking 674
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+12. 9. 2026
+
+WHAT HAPPENED
+
+Payment reminder sent
+
+ENTITY
+
+Booking 673
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+12. 9. 2026
+
+WHAT HAPPENED
+
+ Payment scheduled: -40
+
+ENTITY
+
+Booking 334
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+11. 9. 2026
+
+WHAT HAPPENED
+
+ New booking
+
+ENTITY
+
+Booking 1488
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+11. 9. 2026
+
+WHAT HAPPENED
+
+ New booking
+
+ENTITY
+
+Booking 1486
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+10. 9. 2026
+
+WHAT HAPPENED
+
+Payment reminder sent
+
+ENTITY
+
+Booking 567
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+10. 9. 2026
+
+WHAT HAPPENED
+
+ Payment scheduled: -50
+
+ENTITY
+
+Booking 328
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+10. 9. 2026
+
+WHAT HAPPENED
+
+ Payment scheduled: -50
+
+ENTITY
+
+Booking 327
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+10. 9. 2026
+
+WHAT HAPPENED
+
+ Payment scheduled: -50
+
+ENTITY
+
+Booking 295
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+10. 9. 2026
+
+WHAT HAPPENED
+
+ Payment scheduled: -50
+
+ENTITY
+
+Booking 333
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+10. 9. 2026
+
+WHAT HAPPENED
+
+ Payment scheduled: -50
+
+ENTITY
+
+Booking 329
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+10. 9. 2026
+
+WHAT HAPPENED
+
+ New booking
+
+ENTITY
+
+Booking 1474
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+8. 9. 2026
+
+WHAT HAPPENED
+
+ Payment scheduled: -32
+
+ENTITY
+
+Booking 164
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+8. 9. 2026
+
+WHAT HAPPENED
+
+ Session cancelled
+
+ENTITY
+
+Attendance 27056
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+7. 9. 2026
+
+WHAT HAPPENED
+
+Payment reminder sent
+
+ENTITY
+
+Booking 1259
+
+SEVERITY
+
+INFO
+
+Create todo
+TIME
+
+7. 9. 2026
+
+WHAT HAPPENED
+
+Payment reminder sent
+
+ENTITY
+
+Booking 1258
+
+SEVERITY
+
+INFO
+
+Create todo
+1
+2
+3
+4
+...
+7
+Total pages: 7, Results: 315

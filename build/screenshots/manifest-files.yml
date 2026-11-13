@@ -1,0 +1,144 @@
+base: https://uk.zooza.app/
+shots:
+- image: documents-11.png
+  route: files/dynamic_document/1
+  assert: New Dynamic Document
+  status: proposed
+  card: New Dynamic Document
+  note: content/guides/documents.md:104 — Screenshot
+- image: documents-12.png
+  route: files/dynamic_document/1
+  assert: New Dynamic Document
+  status: proposed
+  card: New Dynamic Document
+  card_only: true
+  note: content/guides/documents.md:108 — Screenshot
+- image: documents-13.png
+  route: files/dynamic_document/1
+  assert: New Dynamic Document
+  status: proposed
+  card: New Dynamic Document
+  note: content/guides/documents.md:112 — Screenshot
+- image: documents-15.png
+  route: files/dynamic_document/1
+  assert: New Dynamic Document
+  status: proposed
+  card: New Dynamic Document
+  note: content/guides/documents.md:119 — Screenshot
+- image: documents-16.png
+  route: files/dynamic_document/1
+  assert: New Dynamic Document
+  status: proposed
+  card: New Dynamic Document
+  note: content/guides/documents.md:124 — Screenshot
+- image: client-import-03.png
+  route: files
+  assert: Documents
+  status: proposed
+  note: content/guides/documents.md:145 — Screenshot
+- image: documents-01.png
+  route: files/add_new
+  assert: New document
+  status: proposed
+  card: New document
+  note: content/guides/documents.md:35 — Screenshot
+- image: documents-02.png
+  route: files/add_new
+  assert: New document
+  status: proposed
+  card: New document
+  note: content/guides/documents.md:41 — Screenshot
+- image: documents-03.png
+  route: files/add_new
+  assert: New document
+  status: proposed
+  card: New document
+  note: content/guides/documents.md:49 — Screenshot
+- image: documents-04.png
+  route: files/video/1103388481
+  assert: Sample Video
+  status: proposed
+  card: Sample Video
+  note: content/guides/documents.md:56 — Screenshot
+- image: documents-05.png
+  route: files/video/1103388481
+  assert: Sample Video
+  status: proposed
+  card: Sample Video
+  note: content/guides/documents.md:58 — Screenshot
+- image: documents-06.png
+  route: files/video/1103388481
+  assert: Sample Video
+  status: proposed
+  card: Sample Video
+  card_only: true
+  note: content/guides/documents.md:60 — Screenshot
+- image: documents-07.png
+  route: files
+  assert: Documents
+  status: proposed
+  note: content/guides/documents.md:66 — Screenshot
+- image: documents-08.png
+  route: files/dynamic_document/1
+  assert: New Dynamic Document
+  status: proposed
+  card: New Dynamic Document
+  note: content/guides/documents.md:75 — Screenshot
+- image: documents-09.png
+  route: files/dynamic_document/1
+  assert: New Dynamic Document
+  status: proposed
+  card: New Dynamic Document
+  note: content/guides/documents.md:77 — Screenshot
+- image: documents-10.png
+  route: files/dynamic_document/1
+  assert: New Dynamic Document
+  status: proposed
+  card: New Dynamic Document
+  note: content/guides/documents.md:79 — Screenshot
+- image: documents-17.png
+  route: files
+  assert: Documents
+  status: proposed
+  note: content/guides/documents.md:143 — Screenshot
+- image: documents-19.png
+  route: files
+  assert: Documents
+  status: proposed
+  note: content/guides/documents.md:151 — Screenshot
+- image: documents-20.png
+  route: files
+  assert: Documents
+  status: proposed
+  note: content/guides/documents.md:153 — Screenshot
+- image: documents-21.png
+  route: files
+  assert: Documents
+  status: proposed
+  note: content/guides/documents.md:159 — Screenshot
+- image: documents-23.png
+  route: files
+  assert: Documents
+  status: proposed
+  note: content/guides/documents.md:165 — Screenshot
+- image: documents-24.png
+  route: files
+  assert: Documents
+  status: proposed
+  note: content/guides/documents.md:171 — Screenshot
+- image: documents-25.png
+  route: files
+  assert: Documents
+  status: proposed
+  note: content/guides/documents.md:175 — Screenshot
+- image: documents-26.png
+  route: files
+  assert: Documents
+  status: proposed
+  note: content/guides/documents.md:179 — Screenshot
+- image: google-forms-01.png
+  route: files
+  assert: Documents
+  status: proposed
+  note: content/guides/google-forms.md:43 — The Forms tab inside the Documents card,
+    empty, with the Attach a Google Form button

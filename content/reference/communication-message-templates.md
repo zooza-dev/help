@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-04-06"
+last_converted: "2026-11-13"
 ---
 
 # Message Templates
@@ -169,6 +169,7 @@ Common tags:
 | <code>&#42;&#124;VARIABLE_SYMBOL&#124;&#42;</code> | Payment reference / variable symbol. |
 | <code>&#42;&#124;CONFIRMATION_URL&#124;&#42;</code> | Link for the client to confirm enrolment. |
 | <code>&#42;&#124;PIN&#124;&#42;</code> | One-time login code. |
+| <code>&#42;&#124;REMAINING_EVENTS&#124;&#42;</code> | How many sessions this participant still has ahead of them in their own enrolment. Make-ups, free and extra sessions are **not** counted, and it is 0 for a cancelled, waitlisted or late booking. Added November 2026 — useful in a renewal nudge or a payment reminder. |
 | <code>&#42;&#124;IF:PIN&#124;&#42;</code> … <code>&#42;&#124;END:IF&#124;&#42;</code> | Conditional block — only shown if a PIN exists. |
 
 For the full list, see [Dynamic Tags Guide](../guides/dynamic-tags.md).

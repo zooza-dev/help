@@ -1,0 +1,215 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Tools
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Settings
+Invoices
+Help & Support
+Brain James
+Back
+Invoice settings
+INVOICING SYSTEM
+Choose invoicing system
+Default
+Xero
+Zooza Invoice - beta
+
+Connect Zooza with your Xero account to automatically create and sync invoices.Xero will generate invoices based on your Zooza data, and invoice details will be synced back to Zooza.
+
+Get authorization link
+
+Connected to Xero
+Expires on: 18. November 2026
+
+Sync now Disconnect
+AUTOMATIC INVOICE GENERATION UPON PAYMENT
+
+In this section you can set up automatic invoice generation. Invoices will be generated automatically whenever the payment status changes to "paid" on the booking. This means that multiple invoices can be generated for one booking. For example, if a client pays an outstanding amount of â‚¬50 and thus settles his debt, an invoice will be generated. If, during the programme, a situation arises where a client moves to a class worth â‚¬70 and subsequently pays the remaining â‚¬20, another invoice will be generated.
+
+Enable automatic invoice generation
+Yes
+If checked, the application will generate invoices to clients.
+Debt is fully paid
+Yes
+An invoice will be generated when the order reaches fully paid status.
+Down payment is paid
+Yes
+An invoice will be generated when the down payment for an order is paid.
+Split down payment invoice
+No
+Required in some jurisdictions (e.g. HU, RO) where tax law mandates a separate invoice for each received payment. When enabled, paying the down payment issues an invoice for only the down payment amount; the remaining balance is deferred and invoiced when subsequently paid.
+More
+Save
+VAT
+Application of VAT
+Excluding VAT from gross amount (assuming that prices are including vat)
+Adding VAT to net amount (assuming that prices are without vat)
+Save
+VAT LEVELS
+
+Sales Tax on Imports
+0
+
+Tax Exempt
+0
+
+Tax on Purchases
+0
+
+Tax on Sales
+0
+
+ADD NEW
+Name
+VAT
++
+-
+Sync
+Invoice Line Types
+
+Multi-line invoicing is active. Each enabled type will appear as a separate line on the invoice.
+
+settings__engine_accounts__resync
+settings__engine_accounts__clear
+settings__engine_accounts__last_synced
+Programmes
+Products
+Programme Payment
+Custom label
+Revenue Account Code
+270 — Interest Income
+260 — Other Revenue
+200 — Sales
+Registration Fee
+Custom label
+Revenue Account Code
+270 — Interest Income
+260 — Other Revenue
+200 — Sales
+Discount
+Custom label
+Revenue Account Code
+270 — Interest Income
+260 — Other Revenue
+200 — Sales
+Save

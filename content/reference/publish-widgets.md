@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-11-08"
+last_converted: "2026-11-13"
 related_articles: ["customizing-widgets", "deploying-zooza-on-website", "contact-form-on-your-website"]
 ---
 
@@ -109,6 +109,22 @@ Available widget types:
 | **Contact form** | A contact form for your website. Every enquiry becomes a contact under **Clients → Contacts**. See [Put the contact form on your website](../setup/contact-form-on-your-website.md). |
 
 Each widget type has a **Configure** button to open its settings.
+
+### Two switches worth knowing about
+
+Both are per widget, behind that **Configure** button, and both were added in November 2026.
+
+**Profile widget — `Show QR code in payments tab`.** A payment QR code appears beside each
+unpaid payment in the client's profile. Turn it off if you do not collect by bank transfer;
+for a company on card or direct debit it is a code nobody can use, which prompts the
+question rather than the payment.
+
+**Map widget — `Show class list`.** The map lists the classes underneath it. Turn it off to
+use the map purely as a "where to find us" locator.
+
+> **If you hide the list, the age filter goes with it in practice.** The filter narrows the
+> class list and nothing else, so with the list hidden it has nothing left to do. Zooza says
+> so on the screen rather than letting you configure something that cannot take effect.
 
 ### How free places are shown to clients
 

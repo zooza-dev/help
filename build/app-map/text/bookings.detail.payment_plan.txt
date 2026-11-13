@@ -1,0 +1,234 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Bookings
+1394 - Brian James (Lone James)
+Payment plan
+Help & Support
+Brain James
+Payment plan
+Created
+
+4. September 2026
+
+Created by
+
+Brian James
+
+Template used
+
+Membership Payment, Monthly
+
+Template discount applied
+
+£0.00
+
+Discount applied from the discount credit
+
+£0.00
+
+Total amount to pay
+
+£120.00
+
+Able to charge offline
+
+No
+
+Payments overview
+Change
+Payment overview
+SCHEDULED FOR	DUE DATE	STATUS	SCHEDULED PAYMENT	TO BE PAID		
+
+
+20. August 2026
+
+	
+
+4. September 2026
+
+	
+
+Processed
+
+	
+
+-£40.00
+
+	
+
+-£40.00
+
+	
+
+	
+
+More
+
+
+
+
+19. September 2026
+
+	
+
+4. October 2026
+
+	
+
+Processed
+
+	
+
+-£40.00
+
+	
+
+-£40.00
+
+	
+
+	
+
+More
+
+
+
+
+20. October 2026
+
+	
+
+4. November 2026
+
+	
+
+Scheduled
+
+	
+
+-£40.00
+
+	
+
+-£40.00
+
+	Edit	
+
+More
+
+For Membership Payment plans, payments are only generated for the next period (month, quarter, or year). New payments will be created as long as the booking is active and the class has not ended.
+
+Add scheduled payment

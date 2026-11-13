@@ -1,0 +1,472 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+Billing & Payments
+Other
+Tools
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Zooza AI Assistant
+Help & Support
+Brain James
+BETA 
+Run your business by
+talking to it.
+
+Zooza AI connects your activity brand to Claude, ChatGPT and other AI assistants — so you can handle classes, registers and clients in plain language, in your own words.
+
+It looks things up, walks you through multi-step jobs, and makes changes safely — always showing you a preview and waiting for your "yes" before anything is written.
+
+Connect Zooza AI
+See what it can do
+CHANGELOG · BETA
+What's new
+
+We ship often. Here's what's landed recently — and there's plenty more on the way.
+
+Coming soon
+PLANNED
+Cancel sessions & days
+Next up: cancelling a single session — or a whole day or range of days — in one move. Rescheduling and editing are already here (see below); cancelling is the piece still to come.
+v0.8
+Aug 2026
+LIVE NOW
+Create programmes, payment plans & business reports
+A big step up. Spin up a whole new programme, put a booking on an instalment plan and manage its payment templates, and pull real business reports — all by chatting. Plus new tools to run day to day: capture website enquiries as leads, label your records, triage client replies and keep a to-do list. Every change still previews before it writes.
+v0.7
+Jul 2026
+Edit classes & reschedule sessions
+Change what you've already set up by chatting — reassign an instructor, bump a price, move or shift sessions, change a venue — one class or several at once. Every edit previews first and shows how many sessions are affected before it applies.
+v0.6
+Jun 2026
+Message your clients
+Look up your templates and merge variables, prepare a message, and send it to the right recipients — always preview-then-confirm — by email (SMS and WhatsApp where enabled).
+v0.5
+Jun 2026
+Clients, bookings & client reports
+Find who's enrolled and who hasn't paid, look up any client, and pull real attendance and registration numbers so reports for parents are built from actual data.
+v0.4
+May 2026
+Public beta opens
+Zooza AI is open to all activity brands — connect through Claude or ChatGPT and start in plain language.
+v0.3
+May 2026
+Attendance & recaps
+Open registers, mark each attendee, and write a public recap for parents or an internal note for staff.
+v0.2
+Apr 2026
+Guided class creation
+Preview-then-confirm scheduling with recurrence, one-off dates and automatic holiday skipping.
+v0.1
+Apr 2026
+Find anything
+Natural-language lookup for sessions, classes, courses, venues, trainers and billing periods.
+TRY THESE FIRST
+Conversation starters
+
+Copy any prompt and paste it into your assistant to get going.
+
+QUICK START
+Copy
+
+Show my programmes
+
+QUICK START
+Copy
+
+Who am I, and what can you do?
+
+CREATE A CLASS
+Copy
+
+Set up a Tuesday ballet class for ages 5–8 with Jane, starting next month for the autumn term.
+
+EDIT & MANAGE
+Copy
+
+Reassign Monday ballet to Bob for all upcoming sessions.
+
+ATTENDANCE
+Copy
+
+Open the register for tomorrow's 10:00 toddler swim class.
+
+CLIENTS & BOOKINGS
+Copy
+
+Who hasn't paid for the autumn swim course yet?
+
+MESSAGING
+Copy
+
+Email this week's unpaid families a friendly reminder.
+
+CREATE A PROGRAMME
+Copy
+
+Create a new 'Autumn Swim School' programme.
+
+PAYMENT PLANS
+Copy
+
+Put the Nováks on a 3-instalment plan for the autumn term.
+
+WHAT IT CAN DO
+Thirty-four tools, one conversation
+
+Grouped by what you actually want to get done — with the words you'd really use.
+
+FLAGSHIP · GUIDED, END-TO-END
+Create programmes, classes & schedules
+
+The headline workflow. Start a brand-new programme from scratch, or add classes and schedules to one you already run. Claude interviews you, builds a full preview, and only writes once you confirm. It resolves the course, venue and room, trainer, capacity, prices, billing period and payment templates — then expands recurrence and one-off dates into exact sessions, automatically skipping holidays.
+
+“Create an 'Autumn Swim School' programme, then set up a Tuesday class for ages 5–8 with Jane.”
+classes_add_course
+classes_preview_schedule
+classes_preview_events
+classes_commit_class
+classes_list_schedule_patterns
+EDIT & MANAGE
+Manage what you've already set up
+
+Change what you've already created — just say what needs to change. For a class: its instructor, venue or room, session length, price, registration fee, name, capacity or billing period; turn online registration on or off; or set it active, inactive or archived. When you move an instructor, venue or length, you choose how it flows to sessions that already exist — the class from now on, all upcoming sessions, or every one. For specific sessions: reschedule one, shift a whole run forward a week, or line a set up to the same time; change their instructor, room, block or length; and optionally email the enrolled clients. It looks up a trainer's named pay rate for you, works on one class or several at once, and guards big moves like shifting a class to another programme. You can also change a programme's own settings — its pricing, trial and make-up rules, and what its booking form asks. Every edit shows a preview first — exactly what changes and how many sessions are affected — and applies only when you confirm.
+
+“Reassign Monday ballet to Bob for all upcoming sessions.”
+classes_update
+classes_update_course_settings
+sessions_update
+classes_find_resource
+REGISTERS & RECAPS
+Take attendance & write recaps
+
+Open the register for any session and mark each attendee — attended, no-show, cancelled, going or ignore — in one go. It understands children's classes, showing both the child and the parent who pays, and respects who is allowed to set which status. Finish with a public recap for parents or an internal note for staff.
+
+“Open the register for tomorrow's 9:42 class.”
+sessions_get_attendance
+sessions_mark_attendance
+sessions_add_summary
+NATURAL-LANGUAGE LOOKUP
+Find anything in your business
+
+Turn "my next class", "Sarah's sessions this week" or "the swim course" into the right record. Search sessions and events by day, class, trainer or week; find a class or group by name; look up courses by name, type or audience; find venues with rooms and capacities; and pull eligible trainers and billing periods.
+
+“Find Sarah's sessions this week.”
+sessions_find_events
+classes_find_classes
+classes_find_courses
+classes_find_resource
+CLIENTS & BOOKINGS
+See who's enrolled & who hasn't paid
+
+Look up who's booked into a class or course, find a specific client by name or email, and pull the unpaid roster in seconds — collapsed to one row per client. It's read-only lookup: a fast way to see your registrations without changing any enrolment.
+
+“Who hasn't paid for the autumn swim course yet?”
+bookings_find
+MESSAGING
+Message your clients
+
+Browse your email, SMS and WhatsApp templates and every valid merge variable — like {first_name} or {class_name} — then prepare a personalised message and send it to the right recipients. Sending is always shown as a preview first and goes out only after you confirm.
+
+“Email this week's unpaid families a friendly reminder.”
+comms_list_templates
+comms_list_merge_vars
+comms_send_message
+BUSINESS REPORTS
+Reports built from real data
+
+Pull real business figures — attendance, registrations and the numbers behind your programmes — for a class, course or period, so the assistant composes a report from actual data, never invented numbers. The figures come straight from Zooza, so what you share with parents, or check for yourself, is always accurate.
+
+“Summarise attendance for the Tuesday ballet group this term.”
+reports_get_data
+PAYMENTS SETUP
+Set up payment plans & instalments
+
+Spread a booking's fee over time — put a client on an instalment plan, and create or reconcile the instalment templates a programme offers, all from chat. It sets up how and when payments are scheduled; it never takes, charges or moves money itself — that stays in the app.
+
+“Put the Nováks on a 3-instalment plan for the autumn term.”
+payments_add_plan
+setup_add_payment_template
+setup_update_course_templates
+LEADS
+Capture website enquiries as leads
+
+Turn a prospective client's enquiry into a trackable lead so nobody slips through the cracks — captured and ready to follow up. It records interest; it doesn't create a booking or enrol anyone.
+
+“Add a lead: Jana asked about toddler swim through our website.”
+bookings_add_lead
+ORGANISE
+Tag & label your records
+
+Add your own labels to programmes, classes and registrations, so you can group, sort and find them the way you think about your business — all by asking.
+
+“Tag every autumn swim class as 'priority'.”
+labels_mark
+INBOX
+Read & triage client replies
+
+Catch up on what clients write back — read their inbound email replies and flag the ones that need action, so nothing important gets buried. A newer capability, still settling in.
+
+“Any client replies I need to act on this week?”
+comms_find_replies
+TO-DOS
+Keep a running to-do list
+
+Jot down operational tasks as you work and tick them off — add a to-do, mark it done — so follow-ups stay on your radar instead of in your head. A newer capability, still settling in.
+
+“Add a to-do: call the venue about Saturday's room.”
+todos_add
+todos_mark
+YOUR VOCABULARY
+Speaks your language
+
+Teach it your words once — what you call programmes, classes, sessions and trainers — and it uses them in every future conversation. A built-in glossary and data-model explainer mean it never confuses a class with a programme, or a session with a booking. Works in Slovak, Czech, German, Hungarian, Romanian and English.
+
+“From now on, call our groups "kurzy" and sessions "lekcie".”
+negotiate_terminology
+get_terminology
+explain_data_model
+MULTI-LOCATION
+Built for more than one location
+
+If you run several companies or locations, it knows which ones you can access and works in the one you name — so the right roster, calendar and clients are always in view.
+
+“Show this week's classes in the Bratislava location.”
+whoami
+FEEDBACK
+Tell us what's broken or missing
+
+Hit a snag? Describe it in plain language and Claude drafts an anonymised report, shows it to you, and sends it to the Zooza engineering team only after you confirm.
+
+“Report a bug: the roster didn't load this morning.”
+submit_feedback
+NO ACCOUNT NEEDED
+"Is Zooza right for me?"
+
+A guided interview that maps how you run your business to Zooza's features — useful for anyone exploring before they sign up. Works without logging in.
+
+“I run a small swim school. Would Zooza fit how we work?”
+business-model-validator
+GET CONNECTED
+Set it up in a few minutes
+
+Manual setup for now — pick your assistant and follow the steps.
+
+Claude
+ChatGPT
+Microsoft Copilot
+1
+Open Claude
+On desktop or web, go to Settings → Connectors.
+2
+Add a remote connector
+Choose "Add connector", then "Remote".
+3
+Name it and paste the address
+Use lowercase letters, digits and hyphens for the name, and paste the connector URL below.
+4
+Sign in to Zooza
+When prompted, log in with your usual Zooza account to authorise access.
+5
+Decide what it may do
+Every tool starts at "Ask each time". Leave it there, or promote individual tools to "Always allow".
+6
+Say hello
+Start a chat and try "Who am I, and what can you do?"
+CONNECTOR URL
+https://mcp.zooza.app/mcp
+Copy
+
+Confirm the latest address inside your Zooza account. You'll sign in with your usual Zooza login — your role and permissions carry over.
+
+OR HAVE YOUR ASSISTANT WALK YOU THROUGH IT
+Show prompt
+Copy
+
+Paste this into your assistant before you start. It guides you step by step — but it cannot add the connector for you: that is a setting inside the assistant's own app, which no tool can reach.
+
+Using a company or team Claude account? On Team and Enterprise plans the organisation has to allow custom connectors. When they are switched off the "Remote" option is greyed out and shows an administrator note — ask your Claude administrator to enable custom connectors rather than looking for another route.
+
+BUILT TO BE SAFE
+Changes are previewed,
+never a surprise
+
+You stay in control. Nothing is written — including sending a message — without your explicit confirmation.
+
+Preview before write
+
+Creating a class, editing one, or sending a message always shows a full preview — including how many sessions a change affects. Nothing happens until you say yes.
+
+Permission-aware
+
+It only offers the attendance statuses and actions your role is actually allowed to take.
+
+Holiday & trial-safe
+
+Scheduling skips holidays automatically and flags trial sessions and cross-company cases.
+
+Your words, your language
+
+It adapts to how you already talk about your business — in your own language.
+
+HONEST ABOUT THE EDGES
+What it can't do yet
+
+These aren't oversights — they're on the roadmap, on purpose. We'd rather ship a smaller thing that's safe.
+
+No taking or moving money — payments, invoicing and refunds stay in the app (setting up payment plans and instalment templates is fine).
+No enrolment changes — you can capture leads and look up bookings, but not enrol, remove or transfer clients.
+No cancelling sessions or days yet — you can reschedule and edit them, just not cancel.
+Richer per-user sign-in is on the roadmap.
+QUESTIONS, ANSWERED
+New to this? Start here
+
+If you've never connected an AI assistant to a tool before, these cover the essentials.
+
+What exactly am I connecting? (What's an MCP server?)
+Zooza AI connects through an open standard called MCP (Model Context Protocol) — a safe way for an AI assistant to talk to an outside tool, here your Zooza account. Once connected, the assistant can look things up and make changes in Zooza on your behalf, in plain language. There's nothing to install on your computer; you connect it once inside your assistant.
+Can it do everything the Zooza app can?
+No — and it's not meant to. Zooza AI isn't a copy of the Zooza app; it's a natural-language fast lane for the things you'd say out loud — looking things up, taking attendance, creating and editing classes, messaging clients. The web app stays the full home for everything else: payments, detailed setup, reporting and bulk work. Cramming every Zooza feature into the connector wouldn't help — an assistant works best with a focused, well-defined set of tools, and many jobs are simply faster, clearer and safer in a purpose-built screen. Think of it as talking to Zooza for the common stuff, not a second version of the app.
+Which AI model should I choose — and does it matter?
+Yes, it makes a real difference. Multi-step jobs like creating a class or reading a register work best on a capable, recent model (for example Claude's Sonnet-class or GPT-4-class models). Smaller or older models are faster and cheaper, but can miss steps, misread your custom terminology, or stop before finishing a guided flow. If something behaves oddly, switching to a stronger model is the first thing to try.
+Do I need to be technical to use it?
+No. After a one-time setup — a few clicks in your assistant's settings — you simply chat. If a step feels unclear, the conversation starters above walk you through everything.
+Is my data safe?
+You sign in with your usual Zooza account, so the assistant only ever sees what your role already allows. Nothing is written — including sending a message — without a preview and your explicit confirmation. It still can't take payments or change enrolments.
+What does "public beta" mean? Is it free?
+It means the connector is live and usable, but still growing — some features aren't built yet (see "What it can't do yet"). It's free to use during the beta, and your feedback directly shapes what we build next.
+Which languages does it understand?
+Slovak, Czech, German, Hungarian, Romanian and English. You can also teach it your own words for programmes, classes and sessions, and it'll use them in every future conversation.
+Can it accidentally break or delete something?
+Changes are previewed before they happen, and it only offers actions your role permits. Bulk deletions and risky one-shot operations aren't available. When in doubt, ask it to show you a preview first.
+YOU'RE AN EARLY USER
+Help us shape it
+
+This is a public beta, and your everyday experience is the best map we have. If something breaks, feels clumsy, or is missing — tell your assistant. No forms, no portal.
+
+1
+Just type what happened — start with "Report a bug:" or "I'd love it if…"
+2
+Your assistant drafts a short, anonymised report and shows it to you.
+3
+It's sent to the Zooza team only after you confirm.
+Report a bug: the roster didn't load for tomorrow's 9:42 class this morning.
+Here's the report I'll send:
+Issue: Roster failed to load
+When: Today, 9:42 session
+Account: anonymised
+Send this to the Zooza team?
+Yes, send
+Edit first

@@ -1,0 +1,194 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Programmes
+Trailblazer Tumblers (6–8 Years)
+Settings
+Online booking
+Help & Support
+Brain James
+Back
+OVERVIEW
+SETTINGS
+AUTOMATIONS
+Online booking
+BOOKING OPTIONS
+Allow online booking
+Yes
+Displays/hides the programme from the booking form. Thus, whether the programme will be (dis)enabled on your website for online booking.
+Priority
++
+-
+Defines the programme’s display order for clients. By default, programmes are sorted alphabetically, but a higher priority (0–1000) moves the programme higher in the list. The default priority is 0.
+Display in catalogue
+Yes
+By marking, classes will be displayed in the menu on your website
+Booking Options Shown on Website
+Default - let client choose
+Offer full programme booking only
+Trials only (if available)
+Blocks only (if available)
+Trials or blocks (if available)
+Allow multiple bookings for the programme
+No
+Suitable for parents with twins. Normally, booking for twins needs to be done one by one. With this setup, a parent can enrol their children at the same time.
+OTHER
+If the class reaches full capacity, do not show it in the booking form
+No
+Hide from booking form (number of hours) before the programme begins:
+The programme will not be available for booking the indicated number of hours before the programme begins. The programme will not appear on the booking form.
+Allow register now, start later
+No
+A customer can register now but begin on a later date. You set only how far ahead they may start; individual start dates are not managed here.
+Priority registration
+No
+Let eligible returning customers register before the class opens to everyone. You set the priority-open moment and, optionally, when it opens to the public. Who is eligible is handled automatically.
+CLASS SETTINGS
+
+By marking, select from the list of classes you want to show in the menu on your website as available for online booking.
+
+Selected classes
+6
+Save
+Customizing booking form
+Custom field name: Note
+Custom field name: Name
+Custom field name: Surname
+Custom field name: Email address
+Custom field name: Phone
+Save
+Communication
+Send automatic email reminders the day before the session
+Yes
+If checked, session reminders will be sent to the booking at 09.00 the day before.
+
+The Customize email button opens the template editor. After creating or editing a template there, select it here and save — otherwise this programme keeps sending the current one.
+
+Confirmation email
+Standard email
+Custom template: New Confirmation Template
+Customize email
+Confirmation email for lead collection
+Standard email
+Customize email
+Session reminders
+Standard email
+Customize email
+Preset signature
+Choose
+Fun and Run
+Playfultime Signature
+Save

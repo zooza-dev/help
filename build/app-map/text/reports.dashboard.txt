@@ -1,0 +1,250 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Dashboard
+Reports
+Sessions
+Stream
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Reports
+Help & Support
+Brain James
+Welcome to Nick's Dashboard
+PRO
+New enrolments
+12
+past 30 days
+100
+Goal
+12,00 %
+Progress
+Churn
+1,59 %
+past 30 days
+4,50 %
+Goal
+Break even
+8/33
+past 30 days
+75,00 %
+Goal
+24,24 %
+Progress
+Received payments
+£40.00
+past 30 days
+£1,000.00
+Goal
+4,00 %
+Progress
+View
+Payments
+Billing period
+All
+×
+NAME	ACTION
+
+
+Insights and Trends
+
+	
+
+Open
+
+
+
+
+Payments by programme
+
+	
+
+Open
+
+
+
+
+Outstanding Payments
+
+	
+
+Open
+
+
+
+
+Refunds
+
+	
+
+Open
+
+
+
+
+Direct debit export
+
+	
+
+Open
+
+Statistics
+CLIENTS
+EMAILS
+SMS
+TOTAL:
+
+107
+
+TOTAL ACTIVE CLIENTS:
+
+61
+
+TOTAL INACTIVE CLIENTS:
+
+46
+
+This month:
+Last year's total:
+Bookings
+Billing period
+All
+×
+TOTAL CAPACITY:
+
+1868
+
+BOOKINGS:
+
+199
+
+CAPACITY UTILISATION:
+
+10,65 %
+
+View
+Trial Sessions Report
+Billing period
+All
+×
+View
+Session notifications
+DATE
+
+21. September 2026
+
+PROCESSED
+
+66
+
+FAILED
+
+0
+
+View

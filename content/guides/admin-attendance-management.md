@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-08"
+last_converted: "2026-11-13"
 related_articles: ["instructor-attendance-management","make-up-sessions-faq","transfer-and-copy-bookings","cancellation-log","matko-replacement-diagnostic"]
 ---
 
@@ -160,6 +160,20 @@ In the class they left, the client stays only on the sessions where they have an
 That is why a client can look as though they vanished from a class mid-term: they did not, the sessions without a record are simply not shown.
 
 **To take a client off a session they should not be on**, hide their attendance record for it. The session then drops out of their record the same way.
+
+### Putting them all back at once
+
+Since November 2026 there is an **Unhide all (N)** button, where N is how many hidden
+sessions the booking has. It asks you to confirm, then **sets every one of them to Will
+attend**.
+
+That last part is the catch. Unhide-all does not restore whatever each record said before
+it was hidden — it puts them all in the same state. Use it when a booking should simply be
+on the whole class from here on. When only one or two sessions are wrong, find them
+individually instead, as below.
+
+Zooza reports what it managed: *"Sessions unhidden: 7"*, or with a second number when some
+could not be unhidden.
 
 ### Finding a session that is hidden, and putting it back
 

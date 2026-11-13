@@ -1,0 +1,1036 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Orders
+Help & Support
+Brain James
+Status
+Payment status:
+Reset
+Total number of records: 24
+ID
+
+26
+
+CLIENT
+
+Michal Dodok
+michal+test@zooza.online, 0902103927
+
+STATUS
+
+New
+
+PRODUCT
+
+Wiggle at Home: Sensory Sound Pack
+
+DATE OF PURCHASE
+
+Friday, 18. September 2026, 15:10:50
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£0.00
+
+TOTAL CHARGE
+
+£0.00
+
+BOOKING BALANCE
+
+£0.00
+No debt
+
+Show payments
+
+ID
+
+25
+
+CLIENT
+
+Zum Pa
+zum@pa.co.co.co, +4929291919
+
+STATUS
+
+New
+
+PRODUCT
+
+Gift Card
+
+DATE OF PURCHASE
+
+Saturday, 25. July 2026, 05:58:10
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£0.00
+
+TOTAL CHARGE
+
+£0.00
+
+BOOKING BALANCE
+
+£0.00
+No debt
+
+Show payments
+
+ID
+
+24
+
+CLIENT
+
+Bombo Faro
+bombo@faro.coo.coo, +49292929191
+
+STATUS
+
+New
+
+PRODUCT
+
+Gift Card
+
+DATE OF PURCHASE
+
+Saturday, 25. July 2026, 05:49:48
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£0.00
+
+TOTAL CHARGE
+
+£0.00
+
+BOOKING BALANCE
+
+£0.00
+No debt
+
+Show payments
+
+ID
+
+23
+
+CLIENT
+
+Lolek Markovic
+lolek@markovic.co.co.uk, +402092910101
+
+STATUS
+
+New
+
+PRODUCT
+
+Gift Card
+
+DATE OF PURCHASE
+
+Saturday, 25. July 2026, 05:47:20
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£0.00
+
+TOTAL CHARGE
+
+£0.00
+
+BOOKING BALANCE
+
+£0.00
+No debt
+
+Show payments
+
+ID
+
+22
+
+CLIENT
+
+Brian James
+michal@zooza.online, +421902103927
+
+STATUS
+
+New
+
+PRODUCT
+
+Gift Card
+
+DATE OF PURCHASE
+
+Saturday, 25. July 2026, 05:45:05
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£0.00
+
+TOTAL CHARGE
+
+£0.00
+
+BOOKING BALANCE
+
+£0.00
+No debt
+
+Show payments
+
+ID
+
+21
+
+CLIENT
+
+Chloe Tanase
+tanase.chloe@playfulmotion.co.uk, F+447551055555
+
+STATUS
+
+New
+
+PRODUCT
+
+Gift Card
+
+DATE OF PURCHASE
+
+Tuesday, 30. June 2026, 16:57:36
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£0.00
+
+TOTAL CHARGE
+
+£0.00
+
+BOOKING BALANCE
+
+£0.00
+No debt
+
+Show payments
+
+ID
+
+20
+
+CLIENT
+
+Brian James
+michal@zooza.online, +421902103927
+
+STATUS
+
+Pending
+
+PRODUCT
+
+Wiggle at Home: Sensory Sound Pack
+
+DATE OF PURCHASE
+
+Tuesday, 30. June 2026, 13:48:24
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£0.00
+
+TOTAL CHARGE
+
+-£14.70
+
+BOOKING BALANCE
+
+-£14.70
+Outstanding
+
+Show payments
+
+ID
+
+19
+
+CLIENT
+
+Brian James
+michal@zooza.online, +421902103927
+
+STATUS
+
+New
+
+PRODUCT
+
+Gift Card
+
+DATE OF PURCHASE
+
+Monday, 29. June 2026, 13:26:40
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£0.00
+
+TOTAL CHARGE
+
+£0.00
+
+BOOKING BALANCE
+
+£0.00
+No debt
+
+Show payments
+
+ID
+
+18
+
+CLIENT
+
+Brian James
+michal@zooza.online, +421902103927
+
+STATUS
+
+Processed
+
+PRODUCT
+
+Gift Card
+
+DATE OF PURCHASE
+
+Wednesday, 3. June 2026, 11:04:57
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£100.00
+
+TOTAL CHARGE
+
+-£100.00
+
+BOOKING BALANCE
+
+£0.00
+No debt
+
+Show payments
+
+ID
+
+17
+
+CLIENT
+
+Brian James
+michal@zooza.online, +421902103927
+
+STATUS
+
+Pending
+
+PRODUCT
+
+Gift Card
+
+DATE OF PURCHASE
+
+Wednesday, 3. June 2026, 11:02:11
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£0.00
+
+TOTAL CHARGE
+
+-£100.00
+
+BOOKING BALANCE
+
+-£100.00
+Outstanding
+
+Show payments
+
+ID
+
+16
+
+CLIENT
+
+Brian James
+michal@zooza.online, +421902103927
+
+STATUS
+
+Processed
+
+PRODUCT
+
+Gift Card
+
+DATE OF PURCHASE
+
+Wednesday, 3. June 2026, 07:54:33
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£100.00
+
+TOTAL CHARGE
+
+-£100.00
+
+BOOKING BALANCE
+
+£0.00
+No debt
+
+Show payments
+
+ID
+
+15
+
+CLIENT
+
+Brian James
+michaldodok@gmail.com, +421902103927
+
+STATUS
+
+New
+
+PRODUCT
+
+Starter Pack
+
+DATE OF PURCHASE
+
+Tuesday, 19. May 2026, 05:32:30
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£0.00
+
+TOTAL CHARGE
+
+£0.00
+
+BOOKING BALANCE
+
+£0.00
+No debt
+
+Show payments
+
+ID
+
+14
+
+CLIENT
+
+Chloe Tanase
+tanase.chloe@playfulmotion.co.uk, F+447551055555
+
+STATUS
+
+New
+
+PRODUCT
+
+Wiggle at Home: Sensory Sound Pack
+
+DATE OF PURCHASE
+
+Tuesday, 24. February 2026, 10:08:12
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£0.00
+
+TOTAL CHARGE
+
+£0.00
+
+BOOKING BALANCE
+
+£0.00
+No debt
+
+Show payments
+
+ID
+
+13
+
+CLIENT
+
+Chloe Tanase
+tanase.chloe@playfulmotion.co.uk, F+447551055555
+
+STATUS
+
+Processed
+
+PRODUCT
+
+Credit Pass 10
+
+DATE OF PURCHASE
+
+Wednesday, 18. February 2026, 07:21:02
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£190.00
+
+TOTAL CHARGE
+
+-£190.00
+
+BOOKING BALANCE
+
+£0.00
+No debt
+
+Show payments
+
+ID
+
+12
+
+CLIENT
+
+Chloe Tanase
+tanase.chloe@playfulmotion.co.uk, F+447551055555
+
+STATUS
+
+Processed
+
+PRODUCT
+
+Credit Pass 10
+
+DATE OF PURCHASE
+
+Wednesday, 18. February 2026, 07:20:46
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£190.00
+
+TOTAL CHARGE
+
+-£190.00
+
+BOOKING BALANCE
+
+£0.00
+No debt
+
+Show payments
+
+ID
+
+11
+
+CLIENT
+
+Brian James
+michal@zooza.online, +421902103927
+
+STATUS
+
+New
+
+PRODUCT
+
+Hope Tutu
+
+DATE OF PURCHASE
+
+Friday, 30. January 2026, 14:51:52
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£0.00
+
+TOTAL CHARGE
+
+£0.00
+
+BOOKING BALANCE
+
+£0.00
+No debt
+
+Show payments
+
+ID
+
+10
+
+CLIENT
+
+Brian James
+michal@zooza.online, +421902103927
+
+STATUS
+
+New
+
+PRODUCT
+
+Starter Pack
+
+DATE OF PURCHASE
+
+Friday, 30. January 2026, 14:48:07
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£0.00
+
+TOTAL CHARGE
+
+£0.00
+
+BOOKING BALANCE
+
+£0.00
+No debt
+
+Show payments
+
+ID
+
+7
+
+CLIENT
+
+Chloe Tanase
+tanase.chloe@playfulmotion.co.uk, F+447551055555
+
+STATUS
+
+Processed
+
+PRODUCT
+
+Wiggle at Home: Sensory Sound Pack
+
+DATE OF PURCHASE
+
+Wednesday, 21. January 2026, 05:47:32
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£9.80
+
+TOTAL CHARGE
+
+-£9.80
+
+BOOKING BALANCE
+
+£0.00
+No debt
+
+Show payments
+
+ID
+
+6
+
+CLIENT
+
+Brian James
+michal@zooza.online, +421902103927
+
+STATUS
+
+Pending
+
+PRODUCT
+
+Hope Tutu
+
+DATE OF PURCHASE
+
+Monday, 8. September 2025, 13:22:53
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£0.00
+
+TOTAL CHARGE
+
+-£120.00
+
+BOOKING BALANCE
+
+-£120.00
+Outstanding
+
+Show payments
+
+ID
+
+5
+
+CLIENT
+
+Test Testovic
+test@playfulmotion.co.uk, 0950354032
+
+STATUS
+
+Pending
+
+PRODUCT
+
+Hope Tutu
+
+DATE OF PURCHASE
+
+Monday, 8. September 2025, 13:03:31
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£0.00
+
+TOTAL CHARGE
+
+-£40.00
+
+BOOKING BALANCE
+
+-£40.00
+Outstanding
+
+Show payments
+
+ID
+
+4
+
+CLIENT
+
+Brian James
+michal@zooza.online, +421902103927
+
+STATUS
+
+New
+
+PRODUCT
+
+Tee-shirt as a Gift with love
+
+DATE OF PURCHASE
+
+Tuesday, 5. August 2025, 17:09:27
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£0.00
+
+TOTAL CHARGE
+
+£0.00
+
+BOOKING BALANCE
+
+£0.00
+No debt
+
+Show payments
+
+ID
+
+3
+
+CLIENT
+
+Brian James
+michal@zooza.online, +421902103927
+
+STATUS
+
+New
+
+PRODUCT
+
+Tee-shirt as a Gift with love
+
+DATE OF PURCHASE
+
+Monday, 4. August 2025, 18:09:15
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£0.00
+
+TOTAL CHARGE
+
+£0.00
+
+BOOKING BALANCE
+
+£0.00
+No debt
+
+Show payments
+
+ID
+
+2
+
+CLIENT
+
+Brian James
+michal@zooza.online, +421902103927
+
+STATUS
+
+Pending
+
+PRODUCT
+
+Starter Pack
+
+DATE OF PURCHASE
+
+Tuesday, 22. July 2025, 09:37:40
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£0.00
+
+TOTAL CHARGE
+
+-£45.00
+
+BOOKING BALANCE
+
+-£45.00
+Outstanding
+
+Show payments
+
+ID
+
+1
+
+CLIENT
+
+Brian James
+michal@zooza.online, +421902103927
+
+STATUS
+
+Pending
+
+PRODUCT
+
+Starter Pack
+
+DATE OF PURCHASE
+
+Tuesday, 22. July 2025, 09:32:03
+
+PAYMENT
+
+PAYMENTS RECEIVED
+
+£0.00
+
+TOTAL CHARGE
+
+-£90.00
+
+BOOKING BALANCE
+
+-£90.00
+Outstanding
+
+Show payments
+
+1
+Total pages: 1, Results: 24

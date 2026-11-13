@@ -1,0 +1,370 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Programmes
+Trailblazer Tumblers (6–8 Years)
+Help & Support
+Brain James
+Back
+New class
+Copy programme
+OVERVIEW
+SETTINGS
+AUTOMATIONS
+Performance Overview
+New enrolments
+0
+Last 7 days
+0
+7 days before
+Enrolments
+0
+Total
+New Waitlists
+0
+Last 7 days
+0
+7 days before
+Waitlists
+0
+7 days before
+New Cancellations
+0
+Last 7 days
+7 days before
+Cancelled bookings
+0
+7 days before
+Received payments
+£0.00
+Last 7 days
+0
+7 days before
+£0.00
+7 days before
+Occupancy
+0
+Last 7 days
+7 days before
+0
+Capacity
+Classes
+Instructor
+Venue
+Billing period
+Total number of records: 6
+NAME
+
+(Copy) 
+Share
+From:
+18. 05. 2026 - 17:00 (Monday, 1 Hour)
+To:
+23. 05. 2026
+
+STATUS
+
+Fixed period (Ended)
+
+STATISTICS
+0 / 10
+INSTRUCTOR
+
+To be decided
+
+VENUE
+
+Moseley Movement Studio, Birmingham
+
+ACTIONS
+
+Bookings Add booking
+
+PAID DEBT
+
+£0.00
+
+ISSUED DEBT
+
+£0.00
+
+BALANCE
+
+£0.00
+No debt
+
+NAME
+
+Class 230 
+Share
+From:
+30. 03. 2026 - 10:00 (Monday, 1 Hour)
+To:
+15. 06. 2026
+
+STATUS
+
+Fixed period (Ended)
+
+STATISTICS
+6 / 10
+LATE BOOKING: 2
+INSTRUCTOR
+
+To be decided
+
+VENUE
+
+Moseley Movement Studio, Birmingham
+
+ACTIONS
+
+Bookings Add booking
+
+PAID DEBT
+
+£0.00
+
+ISSUED DEBT
+
+£60.00
+
+BALANCE
+
+-£60.00
+Outstanding
+
+NAME
+
+Class 222 
+Share
+From:
+1. 01. 2026 - 16:55 (Thursday, 1 Hour)
+To:
+26. 03. 2026
+
+STATUS
+
+Fixed period (Ended)
+
+STATISTICS
+1 / 10
+INSTRUCTOR
+
+To be decided
+
+VENUE
+
+Dulwich Village Hall
+
+ACTIONS
+
+Bookings Add booking
+
+PAID DEBT
+
+£0.00
+
+ISSUED DEBT
+
+£1.54
+
+BALANCE
+
+-£1.54
+Outstanding
+
+NAME
+
+Class 194 
+Share
+From:
+3. 03. 2026 - 13:30 (Tuesday, 45 Minutes)
+To:
+19. 05. 2026
+
+STATUS
+
+Fixed period (Ended)
+
+STATISTICS
+0 / 6
+INSTRUCTOR
+
+Hughes Amelia
+
+VENUE
+
+Hove Family Centre, Brighton
+
+ACTIONS
+
+Bookings Add booking
+
+PAID DEBT
+
+£0.00
+
+ISSUED DEBT
+
+£0.00
+
+BALANCE
+
+£0.00
+No debt
+
+NAME
+
+Class 193 
+Share
+From:
+6. 03. 2026 - 12:00 (Friday, 30 Minutes)
+To:
+22. 05. 2026
+
+STATUS
+
+Fixed period (Ended)
+
+STATISTICS
+2 / 1
+INSTRUCTOR
+
+Evans Chloe
+
+VENUE
+
+Dulwich Village Hall
+
+ACTIONS
+
+Bookings Add booking
+
+PAID DEBT
+
+£0.00
+
+ISSUED DEBT
+
+£8.33
+
+BALANCE
+
+-£8.33
+Outstanding
+
+All classes (6) New class

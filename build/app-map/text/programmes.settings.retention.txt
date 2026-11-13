@@ -1,0 +1,186 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Programmes
+Trailblazer Tumblers (6–8 Years)
+Settings
+Auto-enrolment
+Help & Support
+Brain James
+Back
+OVERVIEW
+SETTINGS
+AUTOMATIONS
+Continuation for this programme's clients
+
+What happens to this programme's clients when their class ends?
+
+Decide what should happen after a class ends. For group classes, you can suggest which classes students should continue in. For individual sessions, they can simply sign up again.
+
+Auto-enrolment type
+None
+Suggest classes
+We’ll show clients a set of suitable classes based on your criteria. If they choose to continue, they can enrol in one with a single click—no need to fill in their details again.
+Duplicate current class
+For 1-to-1 classes only: When a client agrees to continue, Zooza will prepare an identical version of the current class for the future. You just review and approve.
+Notify the client N days before the class ends
++
+-
+The client will get an email letting them know the class is ending. They can then choose their next class directly from their profile.
+Keep client in auto-enrolment for N days
++
+-
+The client will see the auto-enrolment offer in their profile for the specified number of days. Set this to 0 to use the default value (30 days).
+Auto-enrollment message
+This message will be sent to the client as a notification that their group is ending and auto-enrolment is available.
+Save
+What your auto-enrolment clients are shown
+
+When this programme's clients are in auto-enrolment, which classes are they shown?
+
+These settings apply to this programme's own clients once their class ends and they enter auto-enrolment. They filter which classes (offered by any programme) those clients are shown. They have no effect on clients coming from other programmes.
+
+The client's journey
+A class ends
+The client gets a notification
+The client is in auto-enrolment
+The client browses offered classes
+Eligibility filters are applied
+
+Programme, billing period, distance and age
+
+Only eligible classes are offered
+
+Example
+
+A client of this programme finishes their class and enters auto-enrolment. The settings here filter what they are shown: if a class requires age 5 and the child is 4, that class is hidden, so the client only sees classes they are eligible for.
+
+Which classes your auto-enrolment clients are shown
+
+Narrows which classes this programme's clients are shown once they are in auto-enrolment.
+
+Programme: All
+Billing period: All
+Distance: Unlimited distance
+Age: Don't limit age
+Classes you offer into auto-enrolment
+
+Which of this programme's classes are offered to clients in auto-enrolment?
+
+Select which of this programme's classes are offered to clients in auto-enrolment, including clients coming from other programmes. Each programme enables its own classes here, and this works whether or not this programme runs its own auto-enrolment. To let clients only pre-order a class, disable its online booking.
+
+Selected classes
+3

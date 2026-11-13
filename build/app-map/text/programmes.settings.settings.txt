@@ -1,0 +1,173 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Programmes
+Trailblazer Tumblers (6–8 Years)
+Settings
+Settings
+Help & Support
+Brain James
+Back
+OVERVIEW
+SETTINGS
+AUTOMATIONS
+Basic informations
+PROGRAMME TYPE
+
+Booking for the full programme duration
+
+Programme name
+This is the official name of the programme that clients will see when they select it in the booking form on your website.
+URL address
+Enter the URL address where your clients can find out more about the programme
+Programme description
+Describe your programme, its specifics- it can help registrants to choose the best one for them. The description will also be displayed during online booking.
+Save
+Delete programme
+Additional settings
+Programme type
+Programme (instructors, sessions)
+Session (speakers, lectures)
+Online session (speakers, lectures)
+Photography
+Target audience / Class type
+Group Classes
+1-To-1 classes
+For children
+No
+The programme for children will use a different wording for some texts. For example, in the booking form, instead of \'Name\', \'Parent's name\'
+Archive
+No
+The archived programme will only be displayed in the archived programme list in the app. You can hide older programmes that are no longer in the menu so that they do not interfere with your daily work
+More
+Save
+Labels and colour
+
+Enter a tag name to quickly find the programme in the programme list. Enter a new name to create the tag or select it from the list of tags already created.
+
+Tag
+
+Click on the colour to select the colour suitable for your programme. This colour is for quick visual orientation of your programme offer and for your enjoyment. The programme color scheme is displayed in the calendar on your website as well as in the calendar directly in the app.
+
+Baker-Miller Pink
+
+In the 1970s, a wave of drug epidemics swept through America, bringing with it increased levels of aggression and violence. Two officers at the Seattle Correctional Facility - Gene Baker and Ron Miller - dealt with this problem on a daily basis. In desperation, they decided on March 1, 1979, based on Professor Schaus' research up to that time, to try painting the holding cells pink. The result was 156 days without incident. Yes, pink reduces aggression, and that includes men.
+
+Metadata
+
+No metadata yet. Add a key-value pair below to label or describe this programme.
+
+Add metadata

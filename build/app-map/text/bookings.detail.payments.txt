@@ -1,0 +1,362 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Bookings
+1394 - Brian James (Lone James)
+Payments
+Help & Support
+Brain James
+Back
+
+Quick links:
+
+Invoices
+Payments status
+ Awaiting payment
+Add payment
+
+Grace period until
+
+4. October 2026 — 13 days remaining
+
+SCHEDULED PAYMENT DUE
+
+Extend grace period
+
+Booking amount due
+
+-£40.00
+
+Total charge + Registration fee - Payments received - Discounts.
+
+Booking balance
+
+-£40.00
+Outstanding
+
+Net position for this booking. Zero means settled.
+
+Total charge
+
+-£80.00
+
+Payment plan
+
+Edit Reset
+
+Registration fee
+
+£0.00
+
+Edit Reset
+
+Down payment
+
+£0.00
+
+Edit
+
+Payments received
+
+£40.00
+
+Discounts
+
+£0.00
+
+Edit
+
+Refunds issued
+
+£0.00
+
+Original booking total
+
+£1,242.00
+
+The original price for the class excluding fees, discounts, etc. at the time of booking.
+
+Invoices
+
+Invoice profile, VAT, buyer details and invoice creation now have their own page.
+
+Open invoices
+Payment plan
+Template used
+
+Not available
+
+Next payment
+
+20. October 2026
+
+Scheduled debt
+
+-£40.00
+
+Payments overview
+Payment plan detail
+Change
+Automatic payments
+AUTOMATIC PAYMENTS ARE POSSIBLE
+
+No
+
+OFFLINE CHARGE AVAILABLE
+
+No
+
+Direct Debit
+ACTIVE
+
+ No
+
+List of payments
+AMOUNT	PAYMENT RECEIVING DATE	TRANSACTION TYPE	SOURCE	CREATED BY	NOTE	
+
+
+-£40.00
+
+	
+
+19. September 2026
+
+	
+
+Programme payments
+
+	
+
+Zooza
+
+	
+
+michal@zooza.online
+
+	
+
+ZOOZA: Scheduled payment from payment plan 2 of 2
+
+	
+
+
+
+
+£40.00
+
+	
+
+6. September 2026
+
+	
+
+Credit
+
+	
+
+Manual input
+
+	
+
+michal@zooza.online
+
+	
+
+	
+
+More
+
+
+
+
+-£40.00
+
+	
+
+4. September 2026
+
+	
+
+Programme payments
+
+	
+
+Zooza
+
+	
+
+michal@zooza.online
+
+	
+
+ZOOZA: Scheduled payment from payment plan 1 of 2
+
+	
+
+
+
+
+£1,242.00
+
+	
+
+4. September 2026
+
+	
+
+Correction payment
+
+	
+
+Zooza
+
+	
+
+michal@zooza.online
+
+	
+
+ZOOZA: The remaining booking debt of -£1,242.00 has been settled by a repayment plan totalling -£80.00
+
+	
+
+
+
+
+-£1,242.00
+
+	
+
+4. September 2026
+
+	
+
+Programme payments
+
+	
+
+Zooza
+
+	
+
+michal@zooza.online
+
+	
+
+	
+
+Online payments
+
+No online payments

@@ -115,6 +115,41 @@ the setting people most often have wrong, because the two behave completely diff
 
 > **Reminders only reach bookings created after you activated the setting.** The card shows the activation date. Switch it on today and the people already owing you money are not chased — only those who book from now on.
 
+### Changing that number does not move the instalments you already have
+
+This is the single most reported confusion about payment timing, and the fix shipped in
+November 2026.
+
+**`Days from date of enroling when payment is due` only ever applied to instalments created
+after you changed it.** Everything already planned kept the dates worked out under the old
+number — so one company ended up with two sets of rules running side by side, and a payment
+plan that did not match the setting on the screen.
+
+There is now a **Check planned installments** action beside the setting. It shows you the
+impact first and changes nothing until you confirm:
+
+| The preview tells you | Why it matters |
+|---|---|
+| How many instalments would have their dates changed | The size of what you are about to do |
+| How many would be created at the next automatic run | Their new creation date is today or earlier, so the payment is raised and the client notified straight away — **with no advance notice** |
+| How many advance notices would go out at the next run | Same reason, one step earlier in the sequence |
+| How many already had their advance notice | It is not sent twice |
+| How many are skipped because their plan has stopped | A stopped plan is left alone |
+
+Then **Update installments**, or **Leave as is** — which keeps the planned dates and lets
+only new instalments follow the current setting.
+
+> **Due dates do not move. Ever.** The action shifts *when the payment is created* and
+> *when the advance notice goes out*. What the client owes, and by when, is untouched. If
+> what you actually want to change is the due date, this is not the tool.
+
+> **Save first.** The check runs against the saved settings, not the ones still on screen.
+> Zooza will tell you so rather than quietly checking the old values.
+
+**If a payment says it was created on a date you did not expect — 31 October when you set
+the due day to the 15th — that is the creation date, not the due date.** They are two
+different numbers, and this action is what brings the first into line.
+
 ### Reminders do not stop when the class starts
 
 The most common misreading of the table above. **"Before the start of the programme" is

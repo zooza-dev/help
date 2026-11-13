@@ -1,0 +1,235 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+Billing & Payments
+Other
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Settings
+Trash
+Help & Support
+Brain James
+
+Recover sessions, classes, and bookings deleted in the last 30 days. After 30 days, deleted items are removed permanently and cannot be restored from here.
+
+Type
+Reset
+Total number of records: 4
+SELECT
+
+ 
+
+ 
+
+SELECT
+
+TYPE
+
+SESSION
+
+TITLE
+
+
+Wednesday, 2. September 2026, 14:00:00
+
+STATUS BEFORE DELETION
+
+Scheduled
+
+DELETED
+
+Monday, 14. September 2026, 16:57:12
+James Brian
+
+ACTION
+
+Restore
+
+SELECT
+
+TYPE
+
+SESSION
+
+TITLE
+
+
+Wednesday, 9. September 2026, 14:00:00
+
+STATUS BEFORE DELETION
+
+Scheduled
+
+DELETED
+
+Monday, 14. September 2026, 16:57:12
+James Brian
+
+ACTION
+
+Restore
+
+SELECT
+
+TYPE
+
+SESSION
+
+TITLE
+
+
+Wednesday, 23. September 2026, 14:00:00
+
+STATUS BEFORE DELETION
+
+Scheduled
+
+DELETED
+
+Monday, 14. September 2026, 16:50:48
+James Brian
+
+ACTION
+
+Restore
+
+SELECT
+
+TYPE
+
+SESSION
+
+TITLE
+
+
+Wednesday, 30. September 2026, 14:00:00
+
+STATUS BEFORE DELETION
+
+Scheduled
+
+DELETED
+
+Monday, 14. September 2026, 16:46:25
+James Brian
+
+ACTION
+
+Restore
+
+1
+Total pages: 1, Results: 4

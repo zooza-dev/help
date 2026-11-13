@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-17"
+last_converted: "2026-11-13"
 ---
 
 # Work with contacts and enquiries
@@ -47,6 +47,21 @@ When the list is empty, the page says why: the widget is not set up, the form is
 **Add a contact by hand.** Click **Add contact**, enter the name and an email or a phone number, and click **Create**. Use this for enquiries that came by phone or in person, so they are followed up like the rest. Such contacts have the source *Added manually*.
 
 ![The Add contact dialog with First name, Surname, Email and Phone, and the hint that an email or a phone number is needed](../../assets/images/contacts-add-contact-01.png)
+
+## Taking contacts out to Excel
+
+Added November 2026. The Contacts screen exports a spreadsheet, in two flavours:
+
+| Export | What you get |
+|---|---|
+| **Contacts** | One row per person — the calling list. |
+| **Enquiries** | One row per enquiry, so somebody who wrote in three times appears three times. |
+
+Pick **Contacts** to hand a list to whoever is doing the ringing round, and **Enquiries**
+when you want to see what was actually asked, or how often.
+
+The export follows what is on screen, so filter the list first rather than exporting
+everything and cutting it down in a spreadsheet.
 
 ## Statuses and owners
 

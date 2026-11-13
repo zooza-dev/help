@@ -115,7 +115,7 @@ General settings for all programmes:
 | `Require instructors to complete summaries of sessions for their clients` | When enabled, if the instructor does not complete the summary, a reminder is sent the next day. |
 | `Automatically cancel a session if it is empty` | When the last client cancels, the session is automatically changed to "Cancelled" status. |
 | `Automatically close attendance` | Number of days after which attendance is automatically closed for all participants in "Will be present" status. Set to 0 to disable. For one-off sessions, attendance is closed only for logged-in participants at closing time. |
-| `Custom client ID` | Format template for client IDs. Allowed values: Unique ID (U), sequence number (1–10 minimum length). Each symbol needs curly braces. |
+| `Custom client ID` | Format template for client IDs. Since November 2026 it is built the same way as the invoice number: click a tag to insert it, and any other text you type stays as typed. Tags include **Company ID** and the unique number.|
 | `Regenerate all client IDs` | Regenerate all IDs based on the current format. |
 | `Online meeting instructions` | Rich text editor for instructions shown in clients' profiles for online sessions. |
 

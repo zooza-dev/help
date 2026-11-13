@@ -1,0 +1,182 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Bookings
+1394 - Brian James (Lone James)
+Invoices
+Help & Support
+Brain James
+Back
+Generate invoice
+Add buyer information
+Regenerate invoices
+Invoice profile
+Invoices use Name — set at Default profile
+Invoice profile
+Inherit (Name)
+Name
+Playfulmotion Swim Ltd
+New Invoice Profile
+Bank account
+Default (SK2011000000001234567890)
+SK2011000000001234567890
+Save
+Buyer information
+NAME
+
+Brain James DEFAULT
+
+michaldodok@gmail.com · +421902103927
+
+Edit
+
+NAME
+
+Brain James DEFAULT
+
+Lol
+
+michaldodok@gmail.com · +421902103927
+
+Edit
+
+NAME
+
+Brian James DEFAULT
+
+michaldodok@gmail.com · +421902103927
+
+Edit
+
+Total number of records: 1
+Payment status AWAITING PAYMENT
+INVOICE NUMBER
+STATUS
+PERIOD
+PAID
+TO BE PAID
+ACTIONS
+
+#26
+
+ERROR
+
+Xero: Token refresh failed: Refresh token not found. Please re-authenticate with Xero.
+
+Not available
+
+Not available
+
+Not available

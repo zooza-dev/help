@@ -1,0 +1,296 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Classes
+(Copy)
+Help & Support
+Brain James
+Back
+Copy
+Settings
+CLASS NAME
+
+(Copy)
+
+BILLING PERIOD
+
+Nurseries
+
+ONLINE BOOKING
+
+ Turned on
+
+CLASS TYPE
+
+Fixed period class
+
+TRIAL SESSIONS
+
+ Turned off
+
+IN AUTO-ENROLMENT
+
+ Turned off
+
+BOOKING FORM:
+Share
+CLASS CAPACITY
+
+10
+
+DURATION
+
+60
+
+PROGRAMME
+Trailblazer Tumblers (6–8 Years)
+▾
+VENUE
+
+Moseley Movement Studio, Birmingham
+
+NOTE
+
+CLASS DESCRIPTION
+
+LABELS
+Tag
+Edit
+Instructors
+MAIN
+
+To be decided
+
+INSTRUCTOR'S RATE
+
+Not Set
+
+ADDITIONAL INSTRUCTORS
+
+Not Set
+
+Edit
+Products
+
+No records
+
+Edit
+Report
+Report
+ENROLLED
+0
+WAITING LIST
+0
+LATE ENROLLMENT
+0
+FEEDBACK
+No data
+PAYMENT PROGRESS
+£0.00 / £0.00
+POSSIBLE INCOME
+
+£100.00
+
+BOOKED INCOME
+
+£0.00
+
+BALANCE
+
+£0.00
+No debt
+
+LAST UPDATED
+
+Sunday, 20. September 2026, 10:00:08
+
+CLASS PROGRESS
+5/5
+Report
+Show bookings
+Create booking
+Price and payment
+PRICE AND PAYMENT
+
+£10.00
+
+REGISTRATION FEE
+
+£0.00
+
+PRICE TYPE FOR PROGRAMME
+
+Term payment
+
+PAYMENT METHOD
+
+Payment by instructions (cash, bank transfer – wire transfer)
+
+PAYMENT PLANS
+
+No payment plans defined
+
+Edit
+Documents
+DOCUMENTS (0)
+VIDEOS (0)
+URLS (0)
+FORMS (0)
+
+No records
+
+Add document
+Make-up sessions and extra capacity
+MAKE-UP SESSIONS
+
+ Yes
+
+CREDIT EXPIRATION
+
+90 days, All credits for make-up sessions will be automatically cancelled on the last day of the class. Those that fall under the transferred make-up sessions settings will be converted to transferred make-up sessions.
+
+TRANSFERRED MAKE-UP SESSION
+
+Yes, Zooza will transfer up to 0 make-up sessions which will expire in 0 days
+
+EXTRA CAPACITY
+
+0
+
+EXTRA CAPACITY MODE
+
+Added to general settings
+
+Edit
+Sessions
+Add sessions
+Overview
+from:
+2026-09-20
+to
+Found 0 sessions
+Sort:
+By latest (created)
+By oldest (created)
+Upcoming sessions
+By date Ascending
+By date Descending
+By session number Ascending
+By session number Descending
+
+No sessions match search criteria
+
+Add sessions

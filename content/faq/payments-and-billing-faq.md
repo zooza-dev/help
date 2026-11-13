@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-08"
+last_converted: "2026-11-13"
 ---
 
 # Payments and Billing FAQ
@@ -771,6 +771,41 @@ It cannot be undone — to start again you apply a plan, you do not resume the c
 Use the reset when the plan was applied by mistake and the figure it produced is wrong. Leave it off when the plan was right and the client is simply leaving — then the billed debt should stand.
 
 > **This is not the same as pausing.** A paused plan collects nothing but is still there and resumes; a cancelled one is finished.
+
+## Every instalment after the first says Cancelled and nobody cancelled them
+
+Zooza stopped the plan, and since November 2026 it tells you why rather than leaving you
+with a row of cancelled instalments and no explanation.
+
+A payment plan only runs while the booking and the class can carry one. If that stops being
+true, the overnight job cancels the instalments that have not been billed yet. The plan now
+carries a status, shown on the plan:
+
+| Status | What it means |
+|---|---|
+| **Active** | Running normally. |
+| **Paused** | Collecting nothing, still there, will resume. |
+| **Finished** | Every instalment was billed. The plan ran its course. |
+| **Replaced** | A different plan was applied over it. |
+| **Cancelled** | Stopped before the end — either by somebody, or by the rule below. |
+
+When Zooza stopped it, the reason is written out beside the status:
+
+- **Stopped because the booking is no longer enrolled**
+- **Stopped because the class is no longer active**
+- **Stopped because the class has ended**
+
+> **The usual cause is applying the plan at the wrong moment.** A plan put on a booking that
+> is not yet properly enrolled is cancelled by the overnight job hours later — and moving the
+> booking to Enrolled afterwards does not bring the instalments back. Zooza now refuses to
+> create a plan in that situation instead of accepting one it is about to kill: a booking
+> that is not enrolled, a class that is archived, inactive or already over, a lead-collection
+> class, or an archived programme.
+
+A stopped plan's instalments can no longer be edited, and Zooza says so on the payment
+itself rather than letting you change something that will not take.
+
+**To start again, apply a plan.** A stopped plan is not resumed — same as a cancelled one.
 
 ## Does editing a payment template change plans that are already running?
 

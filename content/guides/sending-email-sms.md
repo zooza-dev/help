@@ -12,7 +12,7 @@ status: published
 source_legacy_path: legacy/0012_Welcome to Zooza.html
 source_language: mixed
 needs_screenshot_replacement: false
-last_converted: "2026-11-06"
+last_converted: "2026-11-13"
 related_articles: ["message-templates","dynamic-tags","bulk-email-send-tracking","email-delivery-troubleshooting"]
 ---
 
@@ -105,6 +105,25 @@ The procedure for sending emails and SMS is the same:
 > **Note:** To check each sent email, we recommend that you include your own email address.
 
 > If the audience is awkward to express in filters, describe it to [Zooza AI](../faq/claude-plugin-faq.md) instead — "everyone in Monday classes who has not paid" is a sentence it can resolve into a list, and it is usually faster than building the filter by hand.
+
+## Sending yourself or the instructor a copy
+
+Two checkboxes in the composer, added in November 2026:
+
+| Checkbox | Who gets the copy |
+|---|---|
+| **Send me a copy** | You, the sender. |
+| **Send a copy to the instructor** | The instructor of the class each message is about — so each instructor sees what went out to their own group, and nothing else. |
+
+They replace reaching for the template's **Copy to** field, which could only take fixed
+addresses and had no way to mean "whoever teaches this group".
+
+> **The instructor copy is only offered when you are sending per booking**, not when the
+> message goes out once per client. A message sent once per client is not about any one
+> class, so there is no instructor to send it to — Zooza greys the box out and says so.
+
+Personal details that get filled in per recipient are left out of the copies, so forwarding
+a copy on does not forward somebody's data with it.
 
 ## Emailing a group the composer cannot target
 

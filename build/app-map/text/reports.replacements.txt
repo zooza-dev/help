@@ -1,0 +1,873 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Dashboard
+Reports
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Reports
+Make-up sessions
+Help & Support
+Brain James
+Make-up sessions
+BASIC
+MAKE-UP SESSIONS FROM PARTNER COMPANIES
+Origin venue
+Used on venue
+Credit types
+Credit usage
+Used on session: From
+Used on session: To
+Created as of date
+Created by date
+Expiry from
+Expiry to
+(38)
+Export
+TYPE
+
+Make-up session
+176
+
+CREATED BY
+Brian James
+michal@zooza.online, +421902103927
+USED BY
+Not used
+EXPIRATION
+
+Thursday, 17. December 2026, 15:16:35
+
+ORIGINAL SESSION
+
+Tuesday, 15. September 2026, 09:00:00
+1995
+
+USED ON SESSION
+
+Not used
+
+VALUE
+
+£9.00
+
+DATE CREATED
+
+Friday, 18. September 2026, 15:16:35
+
+USED
+
+-
+
+TYPE
+
+Make-up session
+175
+
+CREATED BY
+Michal Dodok
+michal+test@zooza.online, 0902103927
+USED BY
+Michal Dodok
+michal+test@zooza.online, 0902103927
+EXPIRATION
+
+Thursday, 17. December 2026, 15:12:48
+
+ORIGINAL SESSION
+
+Wednesday, 23. September 2026, 13:00:00
+27689
+
+USED ON SESSION
+
+Saturday, 19. September 2026, 09:30:00
+16742
+
+VALUE
+
+£12.50
+
+DATE CREATED
+
+Friday, 18. September 2026, 15:12:48
+
+USED
+
+Friday, 18. September 2026, 15:12:53
+
+TYPE
+
+Make-up session
+169
+
+CREATED BY
+Brian James
+michal@zooza.online, +421902103927
+USED BY
+Not used
+EXPIRATION
+
+Monday, 16. November 2026, 08:21:16
+
+ORIGINAL SESSION
+
+Tuesday, 18. August 2026, 10:00:00
+10105
+
+USED ON SESSION
+
+Not used
+
+VALUE
+
+£9.00
+
+DATE CREATED
+
+Tuesday, 18. August 2026, 08:21:16
+
+USED
+
+-
+
+TYPE
+
+Make-up session
+168
+
+CREATED BY
+Brian James
+michal@zooza.online, +421902103927
+USED BY
+Brian James
+michal@zooza.online, +421902103927
+EXPIRATION
+
+Monday, 16. November 2026, 08:17:28
+
+ORIGINAL SESSION
+
+Friday, 21. August 2026, 09:00:00
+2591
+
+USED ON SESSION
+
+Tuesday, 18. August 2026, 13:30:00
+2991
+
+VALUE
+
+£9.00
+
+DATE CREATED
+
+Tuesday, 18. August 2026, 08:17:28
+
+USED
+
+Tuesday, 18. August 2026, 08:17:32
+
+TYPE
+
+Make-up session
+166
+
+CREATED BY
+Brian James
+michal@zooza.online, +421902103927
+USED BY
+Not used
+EXPIRATION
+
+Thursday, 29. October 2026, 15:34:14
+
+ORIGINAL SESSION
+
+Tuesday, 28. July 2026, 09:00:00
+1988
+
+USED ON SESSION
+
+Not used
+
+VALUE
+
+£9.00
+
+DATE CREATED
+
+Friday, 31. July 2026, 15:34:14
+
+USED
+
+-
+
+TYPE
+
+Make-up session
+165
+
+CREATED BY
+Brian James
+michal@zooza.online, +421902103927
+USED BY
+Not used
+EXPIRATION
+
+Wednesday, 28. October 2026, 08:14:23
+
+ORIGINAL SESSION
+
+Tuesday, 28. July 2026, 10:00:00
+10102
+
+USED ON SESSION
+
+Not used
+
+VALUE
+
+£9.00
+
+DATE CREATED
+
+Thursday, 30. July 2026, 08:14:23
+
+USED
+
+-
+
+TYPE
+
+Make-up session
+164
+
+CREATED BY
+Brian James
+michal@zooza.online, +421902103927
+USED BY
+Brian James
+michal@zooza.online, +421902103927
+EXPIRATION
+
+Wednesday, 28. October 2026, 08:08:59
+
+ORIGINAL SESSION
+
+Friday, 31. July 2026, 09:00:00
+2588
+
+USED ON SESSION
+
+Thursday, 30. July 2026, 10:30:00
+1388
+
+VALUE
+
+£9.00
+
+DATE CREATED
+
+Thursday, 30. July 2026, 08:08:59
+
+USED
+
+Thursday, 30. July 2026, 08:09:04
+
+TYPE
+
+Make-up session
+159
+
+CREATED BY
+Brian James
+michal@zooza.online, +421902103927
+USED BY
+Not used
+EXPIRATION
+
+Monday, 12. October 2026, 12:02:53
+
+ORIGINAL SESSION
+
+Tuesday, 14. July 2026, 09:00:00
+1986
+
+USED ON SESSION
+
+Not used
+
+VALUE
+
+£9.00
+
+DATE CREATED
+
+Tuesday, 14. July 2026, 12:02:53
+
+USED
+
+-
+
+TYPE
+
+Make-up session
+158
+
+CREATED BY
+Brian James
+michal@zooza.online, +421902103927
+USED BY
+Brian James
+michal@zooza.online, +421902103927
+EXPIRATION
+
+Monday, 12. October 2026, 11:29:51
+
+ORIGINAL SESSION
+
+Wednesday, 22. July 2026, 10:30:00
+1187
+
+USED ON SESSION
+
+Wednesday, 15. July 2026, 09:00:00
+2186
+
+VALUE
+
+£8.00
+
+DATE CREATED
+
+Tuesday, 14. July 2026, 11:29:51
+
+USED
+
+Tuesday, 14. July 2026, 11:30:14
+
+TYPE
+
+Make-up session
+142
+
+CREATED BY
+Brian James
+michal@zooza.online, +421902103927
+USED BY
+Brian James
+michal@zooza.online, +421902103927
+EXPIRATION
+
+Thursday, 24. September 2026, 09:56:47
+
+ORIGINAL SESSION
+
+Friday, 22. May 2026, 12:30:00
+3578
+
+USED ON SESSION
+
+Monday, 29. June 2026, 10:10:00
+11613
+
+VALUE
+
+£10.00
+
+DATE CREATED
+
+Friday, 26. June 2026, 09:56:47
+
+USED
+
+Friday, 26. June 2026, 09:56:50
+
+TYPE
+
+Make-up session
+141
+
+CREATED BY
+Brian James
+michal@zooza.online, +421902103927
+USED BY
+Brian James
+michal@zooza.online, +421902103927
+EXPIRATION
+
+Wednesday, 9. September 2026, 09:51:42
+
+ORIGINAL SESSION
+
+Friday, 26. June 2026, 12:30:00
+3583
+
+USED ON SESSION
+
+Monday, 15. June 2026, 09:00:00
+1782
+
+VALUE
+
+£10.00
+
+DATE CREATED
+
+Thursday, 11. June 2026, 09:51:42
+
+USED
+
+Thursday, 11. June 2026, 09:51:52
+
+TYPE
+
+Make-up session
+125
+
+CREATED BY
+Brian James
+michal@zooza.online, +421902103927
+USED BY
+Brian James
+michal@zooza.online, +421902103927
+EXPIRATION
+
+Tuesday, 4. August 2026, 09:17:31
+
+ORIGINAL SESSION
+
+Friday, 8. May 2026, 13:30:00
+3576
+
+USED ON SESSION
+
+Friday, 12. June 2026, 10:30:00
+10972
+
+VALUE
+
+£10.00
+
+DATE CREATED
+
+Wednesday, 6. May 2026, 09:17:31
+
+USED
+
+Thursday, 11. June 2026, 09:31:25
+
+TYPE
+
+Make-up session
+122
+
+CREATED BY
+Brian James
+michal@zooza.online, +421902103927
+USED BY
+Brian James
+michal@zooza.online, +421902103927
+EXPIRATION
+
+Monday, 20. July 2026, 13:00:23
+
+ORIGINAL SESSION
+
+Monday, 30. March 2026, 10:00:00
+11587
+
+USED ON SESSION
+
+Wednesday, 22. April 2026, 10:30:00
+1174
+
+VALUE
+
+£0.77
+
+DATE CREATED
+
+Tuesday, 21. April 2026, 13:00:23
+
+USED
+
+Tuesday, 21. April 2026, 13:00:27
+
+TYPE
+
+Make-up session
+111
+
+CREATED BY
+Olivia Hughes
+olivia.hughes@example.com, 447700900707
+USED BY
+Olivia Hughes
+olivia.hughes@example.com, 447700900707
+EXPIRATION
+
+Sunday, 14. June 2026, 17:12:34
+
+ORIGINAL SESSION
+
+Tuesday, 17. March 2026, 10:30:00
+969
+
+USED ON SESSION
+
+Tuesday, 17. March 2026, 10:00:00
+4212
+
+VALUE
+
+£8.00
+
+DATE CREATED
+
+Monday, 16. March 2026, 17:12:34
+
+USED
+
+Monday, 16. March 2026, 17:12:43
+
+TYPE
+
+Make-up session
+110
+
+CREATED BY
+Charlotte Price
+charlotte.price@example.com, 447700900909
+USED BY
+Chloe Evans
+charlotte.price@example.com, 447700900909
+EXPIRATION
+
+Sunday, 14. June 2026, 13:07:48
+
+ORIGINAL SESSION
+
+Tuesday, 17. March 2026, 13:30:00
+10912
+
+USED ON SESSION
+
+Friday, 20. March 2026, 12:00:00
+10900
+
+VALUE
+
+£0.83
+
+DATE CREATED
+
+Monday, 16. March 2026, 13:07:48
+
+USED
+
+Monday, 16. March 2026, 13:14:49
+
+TYPE
+
+Make-up session
+109
+
+CREATED BY
+Brian James
+michal@zooza.online, +421902103927
+USED BY
+Brian James
+michal@zooza.online, +421902103927
+EXPIRATION
+
+Thursday, 4. June 2026, 05:24:54
+
+ORIGINAL SESSION
+
+Monday, 23. February 2026, 10:00:00
+5255
+
+USED ON SESSION
+
+Friday, 6. March 2026, 09:00:00
+2567
+
+VALUE
+
+£12.00
+
+DATE CREATED
+
+Friday, 6. March 2026, 05:24:54
+
+USED
+
+Friday, 6. March 2026, 05:25:17
+
+TYPE
+
+Make-up session
+107
+
+CREATED BY
+Brian James
+michal@zooza.online, +421902103927
+USED BY
+Brian James
+michal@zooza.online, +421902103927
+EXPIRATION
+
+Monday, 1. June 2026, 13:41:58
+
+ORIGINAL SESSION
+
+Tuesday, 10. March 2026, 10:30:00
+10450
+
+USED ON SESSION
+
+Friday, 13. March 2026, 13:00:00
+11136
+
+VALUE
+
+£0.00
+
+DATE CREATED
+
+Tuesday, 3. March 2026, 13:41:58
+
+USED
+
+Tuesday, 3. March 2026, 13:46:58
+
+TYPE
+
+Make-up session
+103
+
+CREATED BY
+Brian James
+michal@zooza.online, +421902103927
+USED BY
+Brian James
+michal@zooza.online, +421902103927
+EXPIRATION
+
+Tuesday, 26. May 2026, 20:00:50
+
+ORIGINAL SESSION
+
+Friday, 27. February 2026, 10:30:00
+1566
+
+USED ON SESSION
+
+Tuesday, 10. March 2026, 10:30:00
+968
+
+VALUE
+
+£8.00
+
+DATE CREATED
+
+Wednesday, 25. February 2026, 20:00:50
+
+USED
+
+Wednesday, 25. February 2026, 20:01:09
+
+TYPE
+
+Make-up session
+102
+
+CREATED BY
+Brian James
+michal@zooza.online, +421902103927
+USED BY
+Brian James
+michal@zooza.online, +421902103927
+EXPIRATION
+
+Tuesday, 26. May 2026, 19:25:28
+
+ORIGINAL SESSION
+
+Friday, 27. February 2026, 09:00:00
+2566
+
+USED ON SESSION
+
+Monday, 2. March 2026, 09:00:00
+1767
+
+VALUE
+
+£9.00
+
+DATE CREATED
+
+Wednesday, 25. February 2026, 19:25:28
+
+USED
+
+Wednesday, 25. February 2026, 19:25:42
+
+TYPE
+
+Make-up session
+99
+
+CREATED BY
+Brian James
+michal@zooza.online, +421902103927
+USED BY
+Brian James
+michal@zooza.online, +421902103927
+EXPIRATION
+
+Tuesday, 26. May 2026, 11:48:37
+
+ORIGINAL SESSION
+
+Monday, 23. February 2026, 10:30:00
+766
+
+USED ON SESSION
+
+Tuesday, 3. March 2026, 10:30:00
+967
+
+VALUE
+
+£8.00
+
+DATE CREATED
+
+Wednesday, 25. February 2026, 11:48:37
+
+USED
+
+Wednesday, 25. February 2026, 19:59:05
+
+1
+2
+Total pages: 2, Results: 38

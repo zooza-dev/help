@@ -1,0 +1,239 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Contacts
+Lou Falle
+Help & Support
+Brain James
+Back
+Create todo
+Lou Falle
+First name
+Surname
+Email
+Phone
+Marketing consent
+
+No
+
+Created
+
+Thursday, 17. September 2026, 06:52:43
+
+Last enquiry
+
+Thursday, 17. September 2026, 06:52:43
+
+Save
+Status and owner
+Status
+
+Converted
+
+A converted contact keeps this status while it is linked to its client. Unlink the client to change it.
+
+Owner
+Select
+Save
+Client relationship
+
+CONVERTED
+
+Converted
+
+Manually
+
+Converted on
+
+Thursday, 17. September 2026, 06:53:20
+
+Open client
+Unlink
+Label
+Tag
+To-dos
+
+No to-dos for this contact yet.
+
+Erase contact
+
+This permanently deletes the contact together with its submissions and notes. It cannot be undone.
+
+Erase contact
+Timeline
+New note
+Add note
+CONVERTED TO A CLIENT (MANUALLY) BY BRIAN JAMES · THURSDAY, 17. SEPTEMBER 2026, 06:53:20
+
+Open client
+
+ENQUIRY RECEIVED · THURSDAY, 17. SEPTEMBER 2026, 06:52:43
+Source
+
+Website form
+
+Form
+
+Contact form
+
+Received
+
+Thursday, 17. September 2026, 06:52:43
+
+First name
+
+Lou
+
+Surname
+
+Falle
+
+Email
+
+lou@falle.co.co.co.uk
+
+Phone
+
++44 7551055555
+
+Page
+
+https://www.playfulmotion.co.uk/contact-us/
+
+Consent
+
+GENERAL TERMS AND CONDITIONS FOR USERS
+
+Category
+
+System
+
+Accepted
+
+Yes
+
+Consent
+
+Conditions for processing personal data
+
+Category
+
+System
+
+Accepted
+
+Yes
+
+Mark as spam

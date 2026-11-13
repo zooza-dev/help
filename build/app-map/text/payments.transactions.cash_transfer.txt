@@ -1,0 +1,2042 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Payments
+Transactions
+Cash & Transfer
+Help & Support
+Brain James
+CASH & TRANSFER
+CARD
+DIRECT DEBIT
+IMPORT PAYMENTS
+Export
+Source of payment:
+Payment category:
+Received from
+Received before
+Reset
+43 of payments found.
+Sort:
+Value date (newest first)
+Value date (oldest first)
+AMOUNT
+
+£40.00
+
+PAYMENT REFERENCE
+
+1 394
+
+DATE OF RECEIPT
+
+6. September 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michaldodok@gmail.com 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+?‍♂️ Bounce & Balance (1–3 years)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£22.00
+
+PAYMENT REFERENCE
+
+1 096
+
+DATE OF RECEIPT
+
+29. July 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+?‍♂️ Bounce & Balance (1–3 years)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£132.00
+
+PAYMENT REFERENCE
+
+1 095
+
+DATE OF RECEIPT
+
+14. July 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+? Wiggle Wonders (0–12 months)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£39.00
+
+PAYMENT REFERENCE
+
+1 091
+
+DATE OF RECEIPT
+
+30. June 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+Dance like a Pro
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£50.00
+
+PAYMENT REFERENCE
+
+1 068
+
+DATE OF RECEIPT
+
+29. June 2026
+
+SOURCE
+
+Zooza
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+English & Math
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+ZOOZA: Prepaid credit
+
+AMOUNT
+
+£100.00
+
+PAYMENT REFERENCE
+
+1 068
+
+DATE OF RECEIPT
+
+29. June 2026
+
+SOURCE
+
+Zooza
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+English & Math
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+ZOOZA: Prepaid credit
+
+AMOUNT
+
+£443.00
+
+PAYMENT REFERENCE
+
+957
+
+DATE OF RECEIPT
+
+4. June 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+? Mighty Movers (3–5 years)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£1,986.00
+
+PAYMENT REFERENCE
+
+29
+
+DATE OF RECEIPT
+
+3. June 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+? Mighty Movers (3–5 years)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£100.00
+
+PAYMENT REFERENCE
+
+18
+
+DATE OF RECEIPT
+
+3. June 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+View order detail
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+Gift Card
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Products
+
+NOTE
+
+AMOUNT
+
+£185.00
+
+PAYMENT REFERENCE
+
+998
+
+DATE OF RECEIPT
+
+3. June 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michaldodok@gmail.com 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+? Mighty Movers (3–5 years)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£100.00
+
+PAYMENT REFERENCE
+
+16
+
+DATE OF RECEIPT
+
+3. June 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+View order detail
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+Gift Card
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Products
+
+NOTE
+
+AMOUNT
+
+£50.00
+
+PAYMENT REFERENCE
+
+966
+
+DATE OF RECEIPT
+
+8. May 2026
+
+SOURCE
+
+Zooza
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michaldodok@gmail.com 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+?‍♂️ Bounce & Balance (1–3 years)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+Credit transferred from network company
+
+AMOUNT
+
+£866.67
+
+PAYMENT REFERENCE
+
+824
+
+DATE OF RECEIPT
+
+9. April 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+CT
+Chloe Tanase
+tanase.chloe@playfulmotion.co.uk 
+F+447551055555 
+
+PROGRAMME/PRODUCT
+
+?‍♂️ Bounce & Balance (1–3 years)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£1,458.00
+
+PAYMENT REFERENCE
+
+787
+
+DATE OF RECEIPT
+
+8. April 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+DP
+Derek Phillips
+derek.phillips@fakemail.test 
+447911300004 
+
+PROGRAMME/PRODUCT
+
+?‍♂️ Bounce & Balance (1–3 years)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£300.00
+
+PAYMENT REFERENCE
+
+841
+
+DATE OF RECEIPT
+
+8. April 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+ML
+Mako Lako
+mako@lako.sako 
++4902092929 
+
+PROGRAMME/PRODUCT
+
+Summer Swimming
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£40.00
+
+PAYMENT REFERENCE
+
+795
+
+DATE OF RECEIPT
+
+2. April 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BP
+Beth Parker
+beth.parker@fakemail.test 
+447911500002 
+
+PROGRAMME/PRODUCT
+
+?‍♂️ Bounce & Balance (1–3 years)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£240.00
+
+PAYMENT REFERENCE
+
+795
+
+DATE OF RECEIPT
+
+1. April 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BP
+Beth Parker
+beth.parker@fakemail.test 
+447911500002 
+
+PROGRAMME/PRODUCT
+
+?‍♂️ Bounce & Balance (1–3 years)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£240.00
+
+PAYMENT REFERENCE
+
+798
+
+DATE OF RECEIPT
+
+29. March 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+EB
+Emma Bell
+emma.bell@fakemail.test 
+447911500005 
+
+PROGRAMME/PRODUCT
+
+? Mighty Movers (3–5 years)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£101.00
+
+PAYMENT REFERENCE
+
+664
+
+DATE OF RECEIPT
+
+4. March 2026
+
+SOURCE
+
+Zooza
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+Loud Event
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+Payment has been moved from booking 566
+
+AMOUNT
+
+£101.00
+
+PAYMENT REFERENCE
+
+566
+
+DATE OF RECEIPT
+
+4. March 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+OH
+Olivia Hughes
+olivia.hughes@example.com 
+447700900707 
+
+PROGRAMME/PRODUCT
+
+? Wiggle Wonders (0–12 months)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+Payment has been moved to booking 664
+
+AMOUNT
+
+£3,000.00
+
+PAYMENT REFERENCE
+
+195
+
+DATE OF RECEIPT
+
+3. March 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+Individual Lessons
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£10.00
+
+PAYMENT REFERENCE
+
+517
+
+DATE OF RECEIPT
+
+18. February 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+CT
+Chloe Tanase
+tanase.chloe@playfulmotion.co.uk 
+F+447551055555 
+
+PROGRAMME/PRODUCT
+
+Pop-Up Motion Adventures
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£190.00
+
+PAYMENT REFERENCE
+
+12
+
+DATE OF RECEIPT
+
+18. February 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+View order detail
+
+CLIENT
+
+CT
+Chloe Tanase
+tanase.chloe@playfulmotion.co.uk 
+F+447551055555 
+
+PROGRAMME/PRODUCT
+
+Credit Pass 10
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Products
+
+NOTE
+
+AMOUNT
+
+£190.00
+
+PAYMENT REFERENCE
+
+13
+
+DATE OF RECEIPT
+
+18. February 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Payment by bank transfer
+
+View order detail
+
+CLIENT
+
+CT
+Chloe Tanase
+tanase.chloe@playfulmotion.co.uk 
+F+447551055555 
+
+PROGRAMME/PRODUCT
+
+Credit Pass 10
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Products
+
+NOTE
+
+AMOUNT
+
+£172.00
+
+PAYMENT REFERENCE
+
+427
+
+DATE OF RECEIPT
+
+12. February 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Payment by bank transfer
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+? Wiggle Wonders (0–12 months)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£30.00
+
+PAYMENT REFERENCE
+
+426
+
+DATE OF RECEIPT
+
+12. February 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+? Mighty Movers (3–5 years)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£13.00
+
+PAYMENT REFERENCE
+
+424
+
+DATE OF RECEIPT
+
+4. February 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+CT
+Chloe Tanase
+tanase.chloe@playfulmotion.co.uk 
+F+447551055555 
+
+PROGRAMME/PRODUCT
+
+Baby Class
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£981.00
+
+PAYMENT REFERENCE
+
+422
+
+DATE OF RECEIPT
+
+26. January 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Payment by bank transfer
+
+Show in booking details
+
+CLIENT
+
+DC
+David Collins
+david.collins@example.com 
+447700901111 
+
+PROGRAMME/PRODUCT
+
+? Mighty Movers (3–5 years)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+paid in one payment 2 bookings (Collins)
+
+AMOUNT
+
+£1,155.00
+
+PAYMENT REFERENCE
+
+335
+
+DATE OF RECEIPT
+
+23. January 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Payment by bank transfer
+
+Show in booking details
+
+CLIENT
+
+DC
+David Collins
+david.collins@example.com 
+447700901111 
+
+PROGRAMME/PRODUCT
+
+?‍♂️ Bounce & Balance (1–3 years)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+comment
+
+AMOUNT
+
+£9.80
+
+PAYMENT REFERENCE
+
+7
+
+DATE OF RECEIPT
+
+21. January 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Payment by bank transfer
+
+View order detail
+
+CLIENT
+
+CT
+Chloe Tanase
+tanase.chloe@playfulmotion.co.uk 
+F+447551055555 
+
+PROGRAMME/PRODUCT
+
+Wiggle at Home: Sensory Sound Pack
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Products
+
+NOTE
+
+AMOUNT
+
+£24.00
+
+PAYMENT REFERENCE
+
+286
+
+DATE OF RECEIPT
+
+21. January 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Payment by bank transfer
+
+Show in booking details
+
+CLIENT
+
+CT
+Chloe Tanase
+tanase.chloe@playfulmotion.co.uk 
+F+447551055555 
+
+PROGRAMME/PRODUCT
+
+? Mighty Movers (3–5 years)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£24.00
+
+PAYMENT REFERENCE
+
+287
+
+DATE OF RECEIPT
+
+20. January 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+CT
+Chloe Tanase
+tanase.chloe@playfulmotion.co.uk 
+F+447551055555 
+
+PROGRAMME/PRODUCT
+
+? Wiggle Wonders (0–12 months)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£40.00
+
+PAYMENT REFERENCE
+
+260
+
+DATE OF RECEIPT
+
+9. January 2026
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+CT
+Chloe Tanase
+tanase.chloe@playfulmotion.co.uk 
+F+447551055555 
+
+PROGRAMME/PRODUCT
+
+? Mighty Movers (3–5 years)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£24.00
+
+PAYMENT REFERENCE
+
+34
+
+DATE OF RECEIPT
+
+19. November 2025
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+ES
+emma scott
+emma.scott@demo.co.uk 
++447123456789 
+
+PROGRAMME/PRODUCT
+
+? Mighty Movers (3–5 years)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£24.00
+
+PAYMENT REFERENCE
+
+83
+
+DATE OF RECEIPT
+
+11. November 2025
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+? Wiggle Wonders (0–12 months)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£7.06
+
+PAYMENT REFERENCE
+
+88
+
+DATE OF RECEIPT
+
+29. October 2025
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+? Mighty Movers (3–5 years)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£24.00
+
+PAYMENT REFERENCE
+
+45
+
+DATE OF RECEIPT
+
+13. October 2025
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+? Wiggle Wonders (0–12 months)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£172.00
+
+PAYMENT REFERENCE
+
+42
+
+DATE OF RECEIPT
+
+25. September 2025
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+? Wiggle Wonders (0–12 months)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£200.00
+
+PAYMENT REFERENCE
+
+132
+
+DATE OF RECEIPT
+
+25. September 2025
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+Movers
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£40.00
+
+PAYMENT REFERENCE
+
+133
+
+DATE OF RECEIPT
+
+18. September 2025
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+Movers
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+first month
+
+AMOUNT
+
+£400.00
+
+PAYMENT REFERENCE
+
+36
+
+DATE OF RECEIPT
+
+13. September 2025
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+DS
+Damon Scott
+majkles@gmail.com 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+? Wiggle Wonders (0–12 months)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£12.00
+
+PAYMENT REFERENCE
+
+25
+
+DATE OF RECEIPT
+
+10. July 2025
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+? Wiggle Wonders (0–12 months)
+
+CREATED BY
+
+michal@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+AMOUNT
+
+£10.00
+
+PAYMENT REFERENCE
+
+26
+
+DATE OF RECEIPT
+
+9. July 2025
+
+SOURCE
+
+Manual input
+
+TRANSACTION TYPE
+
+Credit
+
+Show in booking details
+
+CLIENT
+
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+
+PROGRAMME/PRODUCT
+
+?‍♂️ Bounce & Balance (1–3 years)
+
+CREATED BY
+
+kate@zooza.online
+
+PAYMENT CATEGORY
+
+Programmes
+
+NOTE
+
+1
+Total pages: 1, Results: 43
+Insight
+PAIRED
+
+£0.00
+
+UNPAIRED
+
+£0.00
+
+TOTAL AMOUNT
+
+£13,345.00
+
+CASH
+
+£10,813.00
+
+BANK TRANSFER
+
+£2,531.00
+
+ONLINE PAYMENT BY CARD
+
+£0.00
+
+ONLINE TRANSFER
+
+£0.00
+
+PROGRAMMES
+
+£12,755.00
+
+PRODUCTS
+
+£589.00

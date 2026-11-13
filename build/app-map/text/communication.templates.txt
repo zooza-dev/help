@@ -1,0 +1,934 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Products & Services
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Communication
+Templates
+Help & Support
+Brain James
+Back
+All categories
+All programme types
+Reset
+47 templates
+TEMPLATES
+
+Additional session - cancellation
+Sent automatically when an unpaid additional session is cancelled and the client is unenrolled from it.
+
+CATEGORY
+
+Notifications
+
+PROGRAMME TYPE
+
+Full programme
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Additional session - payment
+Sent to the client after they book an additional session. Carries the payment instructions, or a confirmation when the session is free.
+
+CATEGORY
+
+Payments
+
+PROGRAMME TYPE
+
+Full programme
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Booking Confirmation
+Sent when booking is confirmed
+
+CATEGORY
+
+Booking
+
+PROGRAMME TYPE
+
+Full programme
+
+STATUS
+
+CUSTOMISED, 1 VARIANTS
+
+TEMPLATES
+
+Booking Confirmation
+Sent when booking is confirmed
+
+CATEGORY
+
+Booking
+
+PROGRAMME TYPE
+
+One-off event
+
+STATUS
+
+1 VARIANTS
+
+TEMPLATES
+
+Booking Confirmation
+Sent when enrolling to a session
+
+CATEGORY
+
+Booking
+
+PROGRAMME TYPE
+
+Pay-as-you-go
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Cancellation
+Sent after cancellation by client or instructor
+
+CATEGORY
+
+Notifications
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Cancellation Confirmed
+Confirmation that cancellation has been processed
+
+CATEGORY
+
+Booking
+
+PROGRAMME TYPE
+
+—
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Contact form - automatic reply
+Sent automatically to the person who submits your contact form, confirming you received their enquiry. Can use their first name and the form name.
+
+CATEGORY
+
+Notifications
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Discount Code
+Sent with discount code after purchase
+
+CATEGORY
+
+Payments
+
+PROGRAMME TYPE
+
+—
+
+STATUS
+
+CUSTOMISED
+
+TEMPLATES
+
+Google Forms request
+Sent to the client when a form attached to the programme, class or session is set to send automatically after a booking is created. Includes a link to each form.
+
+CATEGORY
+
+Notifications
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Guest Booking
+Sent after enrolling as guest
+
+CATEGORY
+
+Booking
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Late Booking
+Sent when enrolling in an already-started class
+
+CATEGORY
+
+Booking
+
+PROGRAMME TYPE
+
+Full programme
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Lead Collection
+Sent after clicking confirm link for lead
+
+CATEGORY
+
+Booking
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Make-up session confirmed
+Confirms to the client that they are booked into a make-up session — sent whenever a make-up session is assigned, by the client or an administrator.
+
+CATEGORY
+
+Notifications
+
+PROGRAMME TYPE
+
+—
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Missed Payment
+Sent after unpaid scheduled payment
+
+CATEGORY
+
+Payments
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Missed Payment (Offline)
+Unpaid scheduled payment (offline)
+
+CATEGORY
+
+Payments
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+New Payment
+Sent when a new instalment is issued
+
+CATEGORY
+
+Payments
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+New Payment (Offline)
+New instalment issued (offline payment)
+
+CATEGORY
+
+Payments
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Next Programme Offer
+Sent when included in next programme invitation
+
+CATEGORY
+
+Notifications
+
+PROGRAMME TYPE
+
+Full programme
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Order Confirmation
+Sent after order is placed
+
+CATEGORY
+
+Order
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+1 VARIANTS
+
+TEMPLATES
+
+Payment Received
+Sent when payment is processed
+
+CATEGORY
+
+Payments
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+CUSTOMISED
+
+TEMPLATES
+
+Referral Reward
+Sent when referral earns a reward
+
+CATEGORY
+
+Other
+
+PROGRAMME TYPE
+
+—
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Refund request - approved
+Sent automatically to the client when you approve their refund request. Carries the approved amount and your optional note.
+
+CATEGORY
+
+Payments
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Refund request - denied
+Sent automatically to the client when you deny their refund request. Carries your optional note explaining the decision.
+
+CATEGORY
+
+Payments
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Request to Confirm
+Asks client to confirm email access after booking
+
+CATEGORY
+
+Booking
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Scheduled Cancellation
+Notification about upcoming scheduled cancellation
+
+CATEGORY
+
+Booking
+
+PROGRAMME TYPE
+
+—
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Session Booking
+Sent when signing up for a specific session
+
+CATEGORY
+
+Booking
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Session Changed
+Lists all changes for a session
+
+CATEGORY
+
+Notifications
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Session Notification
+Sent before session to enrolled clients
+
+CATEGORY
+
+Notifications
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+CUSTOMISED
+
+TEMPLATES
+
+Session Reminder
+Daily list of next day's sessions
+
+CATEGORY
+
+Notifications
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Trial Booking
+Sent when client enrols for trial class
+
+CATEGORY
+
+Booking
+
+PROGRAMME TYPE
+
+Full programme
+
+STATUS
+
+CUSTOMISED
+
+TEMPLATES
+
+Trial Ended
+Sent when trial automation is active
+
+CATEGORY
+
+Booking
+
+PROGRAMME TYPE
+
+Full programme
+
+STATUS
+
+CUSTOMISED
+
+TEMPLATES
+
+Trial Follow-up
+Reminder to enrol after trial, sent up to 2x
+
+CATEGORY
+
+Booking
+
+PROGRAMME TYPE
+
+Full programme
+
+STATUS
+
+CUSTOMISED
+
+TEMPLATES
+
+Trial Lost
+Informs client we stopped contacting about trial
+
+CATEGORY
+
+Booking
+
+PROGRAMME TYPE
+
+Full programme
+
+STATUS
+
+CUSTOMISED
+
+TEMPLATES
+
+Upcoming Payment
+Reminder before scheduled instalment
+
+CATEGORY
+
+Payments
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Upcoming Payment (Offline)
+Reminder before scheduled instalment (offline)
+
+CATEGORY
+
+Payments
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+User Template
+Custom template for manual email sending
+
+CATEGORY
+
+User Templates
+
+PROGRAMME TYPE
+
+—
+
+STATUS
+
+1 VARIANTS
+
+TEMPLATES
+
+Waiting List
+Sent when enrolling in a full class
+
+CATEGORY
+
+Booking
+
+PROGRAMME TYPE
+
+Full programme
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Waiting List
+Sent when joining a full one-off class
+
+CATEGORY
+
+Booking
+
+PROGRAMME TYPE
+
+One-off event
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Waitlist Notification
+Sent when a spot opens up in a full class
+
+CATEGORY
+
+Notifications
+
+PROGRAMME TYPE
+
+Full programme
+
+STATUS
+
+DEFAULT
+
+TEMPLATES
+
+Automatic Deletion
+Registration deleted due to non-payment
+
+CATEGORY
+
+Payments
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+SYSTEM
+
+TEMPLATES
+
+Client Invoice
+Invoice sent to client
+
+CATEGORY
+
+Payments
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+SYSTEM
+
+TEMPLATES
+
+Feedback (After Programme)
+Rating request sent after programme ends
+
+CATEGORY
+
+Notifications
+
+PROGRAMME TYPE
+
+Full programme, One-off event
+
+STATUS
+
+SYSTEM
+
+TEMPLATES
+
+Feedback (During Programme)
+Rating request sent during the programme
+
+CATEGORY
+
+Notifications
+
+PROGRAMME TYPE
+
+Full programme
+
+STATUS
+
+SYSTEM
+
+TEMPLATES
+
+First Payment Reminder
+First reminder about unpaid registration
+
+CATEGORY
+
+Payments
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+SYSTEM
+
+TEMPLATES
+
+Login
+Login link sent to client
+
+CATEGORY
+
+Other
+
+PROGRAMME TYPE
+
+—
+
+STATUS
+
+SYSTEM
+
+TEMPLATES
+
+Second Payment Reminder
+Second reminder about unpaid registration
+
+CATEGORY
+
+Payments
+
+PROGRAMME TYPE
+
+All programme types
+
+STATUS
+
+SYSTEM
+
+ 
+Email signatures
+Fun and Run
+Playfultime Signature
+Preset signature
+Choose
+Fun and Run
+Playfultime Signature
+Save
+Create

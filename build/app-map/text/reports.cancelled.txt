@@ -1,0 +1,730 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Dashboard
+Reports
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Reports
+Session attendees
+Cancelled
+Help & Support
+Brain James
+Export
+Programme
+Instructor
+Venue
+Billing period
+from
+to
+Day
+Reset
+Found 27 attendees
+DATE
+
+Monday, 8. December 2025, 18:00
+Cancelled 2025-11-21 by Brian James
+
+PROGRAMME
+
+👣 Mighty Movers (3–5 years)
+Monday 18:00
+
+ATTENDEE
+FT
+Fred Tanase
+CLIENT
+CT
+Chloe Tanase
+tanase.chloe@playfulmotion.co.uk 
+F+447551055555 
+ATTENDANCE
+
+—
+
+DATE
+
+Monday, 8. December 2025, 18:00
+Cancelled 2025-11-21 by Brian James
+
+PROGRAMME
+
+👣 Mighty Movers (3–5 years)
+Monday 18:00
+
+ATTENDEE
+LF
+Liam Foster
+CLIENT
+AF
+Andrew Foster
+andrew.foster@fakemail.test 
+447911500001 
+ATTENDANCE
+
+—
+
+DATE
+
+Monday, 8. December 2025, 18:00
+Cancelled 2025-11-21 by Brian James
+
+PROGRAMME
+
+👣 Mighty Movers (3–5 years)
+Monday 18:00
+
+ATTENDEE
+IP
+Isla Parker
+CLIENT
+BP
+Beth Parker
+beth.parker@fakemail.test 
+447911500002 
+ATTENDANCE
+
+Attended
+
+DATE
+
+Monday, 8. December 2025, 18:00
+Cancelled 2025-11-21 by Brian James
+
+PROGRAMME
+
+👣 Mighty Movers (3–5 years)
+Monday 18:00
+
+ATTENDEE
+NR
+Noah Reed
+CLIENT
+CR
+Carol Reed
+carol.reed@fakemail.test 
+447911500003 
+ATTENDANCE
+
+—
+
+DATE
+
+Monday, 8. December 2025, 18:00
+Cancelled 2025-11-21 by Brian James
+
+PROGRAMME
+
+👣 Mighty Movers (3–5 years)
+Monday 18:00
+
+ATTENDEE
+RH
+Ruby Hayes
+CLIENT
+DH
+David Hayes
+david.hayes@fakemail.test 
+447911500004 
+ATTENDANCE
+
+—
+
+DATE
+
+Monday, 8. December 2025, 18:00
+Cancelled 2025-11-21 by Brian James
+
+PROGRAMME
+
+👣 Mighty Movers (3–5 years)
+Monday 18:00
+
+ATTENDEE
+OB
+Oscar Bell
+CLIENT
+EB
+Emma Bell
+emma.bell@fakemail.test 
+447911500005 
+ATTENDANCE
+
+—
+
+DATE
+
+Monday, 19. January 2026, 15:30
+Cancelled 2026-01-19 by Brian James
+
+PROGRAMME
+
+Movers
+Trial Capacity 2
+
+ATTENDEE
+JM
+Jeminky Malinky
+CLIENT
+BJ
+Brian James
+michaldodok@gmail.com 
++421902103927 
+ATTENDANCE
+
+Will attend
+
+DATE
+
+Monday, 19. January 2026, 15:30
+Cancelled 2026-01-19 by Brian James
+
+PROGRAMME
+
+Movers
+Trial Capacity 2
+
+ATTENDEE
+S1
+Sibling 1
+CLIENT
+DS
+Damon Scott
+majkles@gmail.com 
++421902103927 
+ATTENDANCE
+
+Attended
+
+DATE
+
+Monday, 26. January 2026, 10:30
+Cancelled 2026-01-19 by Brian James
+
+PROGRAMME
+
+Movers
+
+ATTENDEE
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+CLIENT
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+ATTENDANCE
+
+Cancelled
+
+DATE
+
+Monday, 26. January 2026, 10:30
+Cancelled 2026-01-19 by Brian James
+
+PROGRAMME
+
+Movers
+
+ATTENDEE
+T2
+Test 2
+CLIENT
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+ATTENDANCE
+
+Will attend
+
+DATE
+
+Tuesday, 10. March 2026, 13:00
+Cancelled 2026-03-08 by Brian James
+
+PROGRAMME
+
+Dance like a Pro
+
+ATTENDEE
+L
+Ludovic
+CLIENT
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+ATTENDANCE
+
+—
+
+DATE
+
+Tuesday, 10. March 2026, 13:00
+Cancelled 2026-03-08 by Brian James
+
+PROGRAMME
+
+Dance like a Pro
+
+ATTENDEE
+FT
+Fred Tanase
+CLIENT
+CT
+Chloe Tanase
+tanase.chloe@playfulmotion.co.uk 
+F+447551055555 
+ATTENDANCE
+
+—
+
+DATE
+
+Tuesday, 10. March 2026, 13:00
+Cancelled 2026-03-08 by Brian James
+
+PROGRAMME
+
+Dance like a Pro
+
+ATTENDEE
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+CLIENT
+BJ
+Brian James
+michal@zooza.online 
++421902103927 
+ATTENDANCE
+
+—
+
+DATE
+
+Monday, 23. March 2026, 15:30
+Cancelled 2026-03-21 by Brian James
+
+PROGRAMME
+
+Movers
+Trial Capacity 2
+
+ATTENDEE
+JM
+Jeminky Malinky
+CLIENT
+BJ
+Brian James
+michaldodok@gmail.com 
++421902103927 
+ATTENDANCE
+
+—
+
+DATE
+
+Monday, 23. March 2026, 15:30
+Cancelled 2026-03-21 by Brian James
+
+PROGRAMME
+
+Movers
+Trial Capacity 2
+
+ATTENDEE
+S1
+Sibling 1
+CLIENT
+DS
+Damon Scott
+majkles@gmail.com 
++421902103927 
+ATTENDANCE
+
+—
+
+DATE
+
+Monday, 30. March 2026, 10:10
+Cancelled 2026-03-25 by Brian James
+
+PROGRAMME
+
+Kids Club
+
+ATTENDEE
+DB
+Don Ben
+CLIENT
+PB
+Path Ben
+path@nololo.co.uk 
++449123123123 
+ATTENDANCE
+
+—
+
+DATE
+
+Monday, 6. April 2026, 18:00
+Cancelled 2026-03-31 by Brian James — cancelled
+
+PROGRAMME
+
+👣 Mighty Movers (3–5 years)
+Monday 18:00
+
+ATTENDEE
+FT
+Fred Tanase
+CLIENT
+CT
+Chloe Tanase
+tanase.chloe@playfulmotion.co.uk 
+F+447551055555 
+ATTENDANCE
+
+—
+
+DATE
+
+Monday, 6. April 2026, 18:00
+Cancelled 2026-03-31 by Brian James — cancelled
+
+PROGRAMME
+
+👣 Mighty Movers (3–5 years)
+Monday 18:00
+
+ATTENDEE
+LF
+Liam Foster
+CLIENT
+AF
+Andrew Foster
+andrew.foster@fakemail.test 
+447911500001 
+ATTENDANCE
+
+—
+
+DATE
+
+Monday, 6. April 2026, 18:00
+Cancelled 2026-03-31 by Brian James — cancelled
+
+PROGRAMME
+
+👣 Mighty Movers (3–5 years)
+Monday 18:00
+
+ATTENDEE
+IP
+Isla Parker
+CLIENT
+BP
+Beth Parker
+beth.parker@fakemail.test 
+447911500002 
+ATTENDANCE
+
+Cancelled
+
+DATE
+
+Monday, 6. April 2026, 18:00
+Cancelled 2026-03-31 by Brian James — cancelled
+
+PROGRAMME
+
+👣 Mighty Movers (3–5 years)
+Monday 18:00
+
+ATTENDEE
+NR
+Noah Reed
+CLIENT
+CR
+Carol Reed
+carol.reed@fakemail.test 
+447911500003 
+ATTENDANCE
+
+—
+
+DATE
+
+Monday, 6. April 2026, 18:00
+Cancelled 2026-03-31 by Brian James — cancelled
+
+PROGRAMME
+
+👣 Mighty Movers (3–5 years)
+Monday 18:00
+
+ATTENDEE
+RH
+Ruby Hayes
+CLIENT
+DH
+David Hayes
+david.hayes@fakemail.test 
+447911500004 
+ATTENDANCE
+
+—
+
+DATE
+
+Monday, 6. April 2026, 18:00
+Cancelled 2026-03-31 by Brian James — cancelled
+
+PROGRAMME
+
+👣 Mighty Movers (3–5 years)
+Monday 18:00
+
+ATTENDEE
+OB
+Oscar Bell
+CLIENT
+EB
+Emma Bell
+emma.bell@fakemail.test 
+447911500005 
+ATTENDANCE
+
+—
+
+DATE
+
+Monday, 13. April 2026, 18:00
+Cancelled 2026-03-31 by Brian James — bad reasons
+
+PROGRAMME
+
+👣 Mighty Movers (3–5 years)
+Monday 18:00
+
+ATTENDEE
+FT
+Fred Tanase
+CLIENT
+CT
+Chloe Tanase
+tanase.chloe@playfulmotion.co.uk 
+F+447551055555 
+ATTENDANCE
+
+—
+
+DATE
+
+Monday, 13. April 2026, 18:00
+Cancelled 2026-03-31 by Brian James — bad reasons
+
+PROGRAMME
+
+👣 Mighty Movers (3–5 years)
+Monday 18:00
+
+ATTENDEE
+LF
+Liam Foster
+CLIENT
+AF
+Andrew Foster
+andrew.foster@fakemail.test 
+447911500001 
+ATTENDANCE
+
+—
+
+DATE
+
+Monday, 13. April 2026, 18:00
+Cancelled 2026-03-31 by Brian James — bad reasons
+
+PROGRAMME
+
+👣 Mighty Movers (3–5 years)
+Monday 18:00
+
+ATTENDEE
+NR
+Noah Reed
+CLIENT
+CR
+Carol Reed
+carol.reed@fakemail.test 
+447911500003 
+ATTENDANCE
+
+—
+
+DATE
+
+Monday, 13. April 2026, 18:00
+Cancelled 2026-03-31 by Brian James — bad reasons
+
+PROGRAMME
+
+👣 Mighty Movers (3–5 years)
+Monday 18:00
+
+ATTENDEE
+RH
+Ruby Hayes
+CLIENT
+DH
+David Hayes
+david.hayes@fakemail.test 
+447911500004 
+ATTENDANCE
+
+—
+
+DATE
+
+Monday, 13. April 2026, 18:00
+Cancelled 2026-03-31 by Brian James — bad reasons
+
+PROGRAMME
+
+👣 Mighty Movers (3–5 years)
+Monday 18:00
+
+ATTENDEE
+OB
+Oscar Bell
+CLIENT
+EB
+Emma Bell
+emma.bell@fakemail.test 
+447911500005 
+ATTENDANCE
+
+—
+
+1
+Total pages: 1, Results: 27

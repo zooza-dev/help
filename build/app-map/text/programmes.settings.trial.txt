@@ -1,0 +1,145 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Programmes
+Trailblazer Tumblers (6–8 Years)
+Settings
+Trial
+Help & Support
+Brain James
+Back
+OVERVIEW
+SETTINGS
+AUTOMATIONS
+Trial settings
+
+If you offer trial sessions for this programme, you can set them up here.
+
+Trial type
+None
+Free Trial (Single Session)
+Clients enrol for one free trial session. No payment is required, and Zooza will not generate any debt for this booking.
+Free Trial (Multiple Sessions)
+Clients enrol once and gain free access to all upcoming sessions within the trial period. Zooza will not generate any debt.Use the “Trial Length” setting to define how many days the trial lasts after the first session is selected.
+More
+Paid Trial (Single Session)
+Clients enrol for one paid trial session. Zooza will generate debt equal to the price of a single session.
+Paid Trial (Multiple Sessions)
+Clients enrol once and pay for multiple upcoming sessions within the trial period. Zooza will generate debt for each session based on the price settings. Use the “Trial Length” setting to control how long the client remains enrolled.
+More
+Lead collection
+Use this if you don't want to allow clients to enrol in class sessions directly instead enrol in an empty class, and you’ll enrol them into classes manually.
+Save

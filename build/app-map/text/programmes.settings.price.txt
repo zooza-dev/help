@@ -1,0 +1,192 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Programmes
+Trailblazer Tumblers (6–8 Years)
+Settings
+Price
+Help & Support
+Brain James
+Back
+OVERVIEW
+SETTINGS
+AUTOMATIONS
+Price and payment
+How do you want to collect payments?
+One off payment
+Total price
++
+-
+This is a total price that you want to get from enrolled clients. If you have payment plans set on the programme, it is used for reference only.
+Registration fee
++
+-
+The Registration fee will be charged when the booking is created and will be added to the price of the programme or the first scheduled payment.
+Advanced settings
+Down payment (None)
+Late bookings: (Manual confirmation required)
+Aliquot price calculation settings (Automatically calculated)
+Billable sessions (leave empty if all are billable) (0)
+Payments are managed by registrant (Yes)
+Save
+Payment Methods
+
+Select payment options your clients will be able to use to complete their booking.
+
+How do you want to collect payments?
+Payment by instructions (cash, bank transfer – wire transfer)
+Save
+Payment instructions
+Constant symbol
++
+-
+The constant symbol is only used when paying via QR code
+Specific symbol
++
+-
+The specific symbol is only used when paying via QR code
+Save
+Invoicing
+
+Select the invoice profile to which clients will be invoiced.
+
+Invoices use Name — set at Default profile
+Invoice profile
+Inherit (Name)
+Name
+Playfulmotion Swim Ltd
+New Invoice Profile
+Bank account
+Default (SK2011000000001234567890)
+SK2011000000001234567890
+Save
+Reset to inherit
+Payment reminders settings
+STATUS
+
+Set and activated
+
+Change
+Delete
+Auto-cancel unpaid bookings
+STATUS
+
+Not configured
+
+Settings
+View auto-unenrolled bookings
+Additional currencies
+Add

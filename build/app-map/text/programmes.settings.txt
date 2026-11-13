@@ -1,0 +1,264 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Programmes
+Trailblazer Tumblers (6–8 Years)
+Settings
+Help & Support
+Brain James
+Back
+New class
+Copy programme
+OVERVIEW
+SETTINGS
+AUTOMATIONS
+Price and payment
+PRICE AND PAYMENT
+
+£10.00
+
+REGISTRATION FEE
+
+£0.00
+
+PRICE TYPE FOR PROGRAMME
+
+One off payment
+
+PAYMENT METHOD
+
+Payment by instructions (cash, bank transfer – wire transfer)
+
+INVOICE PROFILE
+
+Default profile
+
+LATE BOOKINGS
+
+Manually
+
+Edit
+Online booking
+STATUS
+
+Turned on
+
+BOOKING FORM
+
+Share
+
+CLASSES WITH BOOKING ALLOWED
+
+6
+
+Edit
+Make-up sessions
+STATUS
+
+Yes
+
+MAKE-UP SESSIONS AT PARTNER COMPANIES
+
+No
+
+TAILORED MAKE-UP SESSIONS
+
+No
+
+LIMIT FOR MAKE-UP SESSIONS
+
+0
+
+Edit
+Additional sessions
+STATUS
+
+No
+
+PRICING
+
+Regular session price
+
+LIMIT PER BOOKING
+
+Unlimited
+
+Edit
+Additional fields
+STATUS
+
+No
+
+ACTIVE FIELDS
+
+Child's date of birth, Child's full name
+
+Edit
+Programme settings
+PROGRAMME TYPE
+
+Booking for the full programme duration
+
+PROGRAMME TYPE
+
+Programme (instructors, sessions)
+
+FOR CHILDREN
+
+No
+
+LABELS
+Tag
+Edit
+Copy
+Trial
+TRIAL TYPE
+
+None
+
+Edit
+Auto-enrolment
+PRO
+AUTO-ENROLMENT TYPE
+
+Suggest classes
+
+Edit
+Feedback
+DURING THE PROGRAMME
+
+No
+
+AFTER THE PROGRAMME ENDS
+
+No
+
+Edit
+Attendance
+TRACK ATTENDANCE
+
+Yes
+
+Edit
+Documents
+DOCUMENTS (0)
+VIDEOS (0)
+URLS (0)
+FORMS (0)
+
+No records
+
+Add document

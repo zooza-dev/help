@@ -1,0 +1,277 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Products & Services
+Communication
+Reports & Insights
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Other
+Tools
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Settings
+Access
+Help & Support
+Brain James
+Add
+Team members
+
+You can change the list of people with access to your account at any time.
+
+Attendance management settings for instructors:
+Full report (attended, did not attend, cancelled, choose a make-up session)
+Limited message (attended, did not attend)
+Availability management settings for instructors:
+Full report (Users manage their own availability and absences)
+Restricted administration (Any change to availability and absences must be approved by the owner)
+Absences only (Instructor can only request absences)
+Session cancellation policy
+None
+Make-up session required - instructor cannot cancel a session without setting a make-up session
+Full - instructor can freely cancel any session he's entitled to
+Allow instructors to create session substitutions
+No
+This setting will allow instructors to manage substitutions by themselves. Each substitution needs to be confirmed by the substituting instructor and upon each new substitution request, instructor will need to select an administator which will get e-mail notification about this change.
+More
+Allow all instructor roles to send email or SMS messages to clients from the session detail.
+Yes
+This will enable instructors to send quick messages directly from the session detail. The message will be sent to all of session's participants.
+Allow external instructors to see client's personal data in session detail
+No
+By default all personal data about clients are hidden for external instructors. If enabled, external instructors will be able to see personal data for example in case of emergency when they need to reach parents quickly. Each display of these data is logged in the system.
+More
+Allow instructors to see financial information
+Yes
+When turned off, all instructor roles (main, regular and external instructors) lose access to client financial information: the Payments section, payment amounts on bookings, invoices, credits and financial reports. Owners, assistants and receptionists are unaffected.
+More
+Allow main instructors to access the Payments section
+Yes
+Grant or deny access to the Payments section of the application. This includes: Payments overview, Received payments, Scheduled payments and Invoices
+Save
+Role
+NAME
+
+(Dan@playfulmotion.co.uk)
+
+View Delete
+
+ROLE
+
+Instructor
+
+NAME
+
+Noah Campbell (noah@playfulmotion.co.uk)
+
+View Delete
+
+ROLE
+
+Instructor
+
+NAME
+
+Chloe Evans (chloe@playfulmotion.co.uk)
+
+View Delete
+
+ROLE
+
+Instructor
+
+NAME
+
+Amelia Hughes (amelia@playfulmotion.co.uk)
+
+View Delete
+
+ROLE
+
+Instructor
+
+NAME
+
+Brain James (demo@zooza.online)
+
+View Delete
+
+ROLE
+
+Owner
+
+NAME
+
+Brian James (michal@zooza.online)
+
+View Delete
+
+ROLE
+
+Owner
+
+NAME
+
+Lucy Morgan (lucy@playfulmotion.co.uk)
+
+View Delete
+
+ROLE
+
+Instructor
+
+NAME
+
+Jasmine Reed (jasmine@playfulmotion.co.uk)
+
+View Delete
+
+ROLE
+
+Instructor
+
+NAME
+
+Priya Sharma (priya@playfulmotion.co.uk)
+
+View Delete
+
+ROLE
+
+Instructor
+
+NAME
+
+Ben Taylor (ben@playfulmotion.co.uk)
+
+View Delete
+
+ROLE
+
+Instructor
+
+NAME
+
+Daniel Wright (daniel@playfulmotion.co.uk)
+
+View Delete
+
+ROLE
+
+Instructor

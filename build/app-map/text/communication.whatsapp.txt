@@ -1,0 +1,289 @@
+Playfulmotion
+Activities
+Programmes
+Classes
+Sessions
+Calendar
+Feedback
+NPS
+Reviews
+Submissions
+Clients
+Clients
+Bookings
+Orders
+Contacts
+Sales & Payments
+Payments
+Refunds
+Direct Debit mandates
+Transactions
+Payment reconciliation
+Scheduled payments overview
+Discounts
+Loyalty Programme
+Invoices
+Products & Services
+ProductsPRO
+Services
+Documents
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Dashboard
+Reports
+Bookings
+Trial Sessions Report
+Outstanding Payments
+Sessions
+Make-up sessions
+Additional sessions
+Additional sessions revenue
+Rescheduled
+Substituted
+Cancelled
+Stream
+System messages
+Team & Settings
+Instructors
+Publish
+Integrations
+General
+General
+Access
+Consents & Agreements
+Labels
+Metadata keys
+Custom contact fields
+Contact forms
+Venues
+Shared sessions
+Custom Holidays
+Billing & Payments
+Billing periods
+Invoice profiles
+Invoices
+Payment settings
+Payment schedule templates
+Payment collection setup
+Other
+Notification center
+Make-up sessions
+Instructors rates
+Zooza Sitesx
+Tools
+MATKO
+Trash
+Exports
+Zooza AI Assistant
+Zooza AI Assistant
+Model performance
+Menu
+×
+Activities
+Clients
+Sales & Payments
+Products & Services
+Communication
+Send message
+History
+Message Jobs
+Templates
+WhatsApp
+Reports & Insights
+Team & Settings
+Zooza AI Assistant
+Help & Support
+Todos
+Announcements
+Brain James
+Playfulmotion
+Account
+×
+My profile
+Subscription
+SWITCH COMPANY
+Playfulmotion
+Filters
+×
+Cancel
+Apply
+Bulk edit
+×
+Communication
+WhatsApp
+Help & Support
+Brain James
+NOW PUBLIC
+WHATSAPP CHANNEL
+Reach your clients
+where they already are
+
+Zooza can send your reminders, booking confirmations, payment notices and one-time codes over WhatsApp — the channel your clients already check every day.
+
+The same automated messages you rely on, delivered with rich buttons and read in minutes — sent from your own verified WhatsApp Business account.
+
+Turn on WhatsApp
+See a real message
+
+Sent from your own verified business account — your brand, your name. Not from Zooza.
+
+WHAT YOUR CLIENTS RECEIVE
+This is what lands in their WhatsApp
+
+Real examples, sent from a business account — polished, on-brand, and on the channel clients actually read. The sender shown is your own brand; these demos use Zooza's test account.
+
+REMINDERS
+"Your session is tomorrow at 3:40"
+
+Session reminders with the date, time and room — plus Reschedule and Go-to-profile buttons built right in. Fewer no-shows, fewer empty rooms.
+
+LIFECYCLE & MARKETING
+"Thanks for joining a trial"
+
+A trial follow-up that turns a first visit into an enrolment, with one clear tap.
+
+SECURE CODES
+"Your verification code is 5292"
+
+One-time codes for sign-in and confirmations, with a Copy button ready to go.
+
+WHAT YOU CAN SEND
+Every touchpoint that moves your business
+
+The messages you already send by email can go over WhatsApp too — across the whole client journey, not just reminders.
+
+BOOKINGS
+Bookings & trials
+
+Confirm a booking the moment it happens, welcome a programme enrolment, thank a trial visitor and follow up after a trial ends.
+
+Booking confirmation
+Programme booking done
+Trial booking done
+Trial completed
+REMINDERS
+Session reminders
+
+Timely reminders before each session — with the date, time, room and quick actions — so clients show up and seats don't go to waste.
+
+Session reminder
+SECURITY
+One-time codes
+
+Secure verification codes for sign-in and confirmations, delivered to the number you already have on file.
+
+OTP verification
+PAYMENTS
+Payments, end to end
+
+Upcoming, new, received, reminded and missed — including automatic-payment variants — so money matters never get lost in an inbox.
+
+Payment reminder
+Payment received
+Upcoming payment
+New payment
+Missed payment
+Automatic-payment variants
+CUSTOM
+Your own templates
+
+Up to four custom templates for the messages only you send — venue changes, cancellations, announcements. Each is approved by Meta before it goes out.
+
+4 custom template slots
+HOW WHATSAPP WORKS
+Two ways to message — know the difference
+
+WhatsApp isn't open SMS. You can't message just anyone, any time. There are two modes — and whether a message costs money depends on the type and timing.
+
+TEMPLATES
+Template messages
+
+Pre-approved by Meta, these can be sent to any client at any time. Marketing and authentication templates cost money per delivered message. Utility templates (reminders, payment notices) sent within an open customer service window are free.
+
+FREE
+Conversations
+
+When a client messages you first, you can reply freely for 24 hours — no template needed and no charge. The 24-hour window resets every time they message again; once it closes, you can only send templates.
+
+Clients can reply Replies aren't one-way. Clients can answer with text, voice messages and images, and you handle every conversation right inside Zooza.
+
+Every message is sent from your own verified WhatsApp Business account — your brand and name — never from Zooza.
+
+WHAT IT COSTS
+You pay Meta directly — not Zooza
+
+WhatsApp messaging is billed by Meta, separately from your Zooza subscription.
+
+To send messages, you add a payment card in Meta / WhatsApp Business Manager.
+All messaging charges go directly to Meta. They are not taken from your Zooza subscription.
+Marketing and authentication templates cost money per delivered message (per-message pricing, as of July 2025). Utility templates sent within an open customer service window are free.
+You're always in control — switch WhatsApp off at any time.
+WHY WHATSAPP
+Email gets ignored. WhatsApp gets read.
+
+Meet clients on the one app they keep open — without changing how you work.
+
+The app they actually open
+
+WhatsApp messages land like a message from family or friends — and get read in minutes, not days like email.
+
+A verified business presence
+
+Messages come from your own verified WhatsApp Business account, so clients know at a glance it's genuinely you.
+
+Your automations, a new channel
+
+The reminders, follow-ups and codes Zooza already sends can now go over WhatsApp too — nothing new to set up or learn.
+
+GETTING STARTED
+A few things to have ready
+
+Setup connects your own number through Meta's guided sign-up. It takes a little preparation — we'll walk you through every step.
+
+Admin access to your Meta (Facebook) Business account.
+A dedicated phone number that isn't used in any other WhatsApp or WhatsApp Business app.
+A plan that includes the WhatsApp integration.
+A payment card added in Meta / WhatsApp Business Manager.
+See the full setup guide
+QUESTIONS, ANSWERED
+Good to know
+
+The things activity brands ask before switching on a new channel.
+
+Who sends these messages?
+You do — from your own verified WhatsApp Business account, under your own brand and name. Zooza is not the sender. (Our demo screenshots show "Zooza" only because they come from Zooza's own test account.)
+Do my clients need to install anything?
+No. They already have WhatsApp. They simply receive your messages and tap the links or buttons — nothing to install or sign up for.
+What does it cost, and who do I pay?
+You pay Meta directly. Add a payment card in Meta / WhatsApp Business Manager; all messaging charges go to Meta and are not part of your Zooza subscription. As of July 2025, Meta charges per delivered message (not per conversation). Marketing and authentication templates cost money; utility templates (reminders, payment notices) sent within an open customer service window are free; replies within a client-started conversation are always free.
+Can I message anyone, any time?
+Not freely. To reach a client outside an open conversation you send a pre-approved template message (which costs money). Otherwise you can only reply within the 24-hour window after a client messages you.
+Can clients reply to me?
+Yes. Clients can reply with text, voice messages and images, and you handle every conversation inside Zooza.
+What is the 24-hour window?
+When a client messages you, a 24-hour window opens in which you can reply freely, with no template and no charge. Each new message from the client resets it. Once it closes, you can only send template messages until they write again.
+Do I need a separate phone number?
+Yes — a dedicated number that isn't currently used in the standard WhatsApp or WhatsApp Business mobile app. Many activity brands keep one number for automation and another for manual chats.
+Can I keep using the WhatsApp mobile app on that number?
+No. Once a number is connected via the API it can no longer be used in the WhatsApp or WhatsApp Business mobile app. That's why a dedicated number is required.
+Can I create my own templates?
+Yes — there are custom template slots for your own scenarios like venue changes or cancellations. Each custom template is reviewed by Meta (typically 1–2 business days). Bold, italics and line breaks are supported; HTML and rich layouts are not.
+How do I raise my message limits?
+Complete Business Verification in Meta Business Manager to unlock higher messaging tiers and more templates.
+Is my clients' data safe?
+Messages are sent through Meta's official WhatsApp Business platform from your own verified account. You only message the clients already in your Zooza account, and you can switch the channel off at any time.
+WHATSAPP CHANNEL
+Turn on WhatsApp for your business
+
+Switch it on once and your next reminder, follow-up and code reach all clients where they actually read — with no extra work.
+
+Turn on WhatsApp
+Read the FAQ
+Uses the messages you already send
+Your own verified business account
+Switch it off anytime
