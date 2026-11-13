@@ -258,3 +258,17 @@ shots:
       Unused make-up sessions section, because no booking in the demo account
       has unused make-ups and the section only renders when there are some.
       That one still needs an account with real credits.
+
+  - image: payment-reminders-delete-unpaid.png
+    route: courses/150/settings?edit=payment_automations
+    click: Payment reminders settings
+    assert: "Leave unpaid bookings as they are"
+    status: verified
+    note: >
+      The payment reminder form, reshot 2026-11-13. It replaces a picture from
+      17 October whose three options were renamed in the November rebuild - the
+      article beside it already described the new ones, so the old picture
+      contradicted its own text. Shows the third reminder and the renamed
+      unpaid-booking rule. The Delete-or-Cancel choice only appears once the
+      rule is set to something other than "Leave unpaid bookings as they are",
+      so it is not in this shot.

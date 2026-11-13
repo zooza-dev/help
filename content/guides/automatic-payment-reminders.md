@@ -219,7 +219,7 @@ programme begins"**; with reminders counted from the booking it reads **"…auto
 after the period you set following the booking"**. Same setting, wording that follows your
 own choice — so do not go looking for the first version if you picked the second mode.
 
-![The lower half: delete an unpaid booking with three options, move bookings without a down payment to the waitlist, and the warning about assigned payments](../../assets/images/payment-reminders-delete-unpaid.png)
+![Payment reminders settings: activation date, the two timing modes, first, second and third reminder, days until payment is due, and the unpaid-booking rule set to Leave unpaid bookings as they are](../../assets/images/payment-reminders-delete-unpaid.png)
 
 | Option | Which bookings it acts on |
 |---|---|
