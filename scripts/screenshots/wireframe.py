@@ -16,6 +16,13 @@ account's rendering of it.
 
 Use it only where a real capture is impossible or unwise. A photograph of the
 working product is better evidence when we can get one.
+
+The client-attendance drawing has been retired: on 2026-11-13 Michal sent real
+parent-zone screenshots, in English and properly styled, and they are simply
+better — they carry details a drawing had to guess at, such as a booked make-up
+appearing on both its old and its new date. The function is kept because the
+reasoning above still holds for the next screen we cannot photograph, and
+because it documents how one is made.
 """
 
 import argparse

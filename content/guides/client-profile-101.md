@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0023_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-08"
+last_converted: "2026-11-13"
 related_articles: ["client-profile-faq", "client-management-faq", "documents"]
 ---
 
@@ -134,22 +134,42 @@ Make-up availability depends on real capacity — if no suitable session with sp
 
 ### What the parent sees on the Attendance tab
 
-![Wireframe of the parent's Attendance tab: a make-up offer with its deadline, the Upcoming, Past and Whole schedule filters, the next session expanded with venue, instructor and an I can't come button, and the rest of the schedule with its attendance states](../../assets/images/client-zone-attendance-wireframe.png)
+![The parent's Attendance tab: Upcoming, Past and Full schedule with counts, the next session shown as a make-up with its venue, class and instructor, and the schedule below showing a substitute instructor, a different venue and the cancelled original](../../assets/images/client-zone-attendance.png)
 
-The offer sits at the top, with **how long it stays valid** — a make-up credit expires, and a
-parent who leaves it does lose it. Underneath, the sessions, filtered to **Upcoming**,
-**Past** or the **Whole schedule**.
+**Upcoming**, **Past** and **Full schedule** each carry a count, so a parent can see at a
+glance how much of the term is left. **Earliest first** flips the order.
 
-The next session opens with its venue and instructor, and the **I can't come** button beside
-your own cancellation rule in plain words: by when, and whether the session is still charged.
-That sentence is yours — it comes from the cancellation limit on the programme, so if it
-reads wrongly to a parent, that is where to change it. See
+The next session opens in full, with its venue, class and instructor. Underneath it, the
+cancellation rule in plain words — and once the deadline has gone it stays on screen in
+the past tense, *"It was possible to cancel before 13/11/2026, 00:00"*, rather than
+disappearing and leaving a parent wondering whether there was one. That sentence is yours:
+it comes from the cancellation limit on the programme. See
 [Cancellation limit settings](cancellation-limit-settings.md).
 
-> **This one is drawn, not photographed.** It is a wireframe, so it shows the shape of the
-> screen rather than one account's version of it — no names, no dates of birth, and nothing
-> that goes stale when a colour changes. Your own profile will differ in styling, and in
-> which tabs you have switched on.
+**A booked make-up appears twice, and both ends say so.** It sits on its new date labelled
+*Make-up session for Mon 16/11*, and the session it replaces stays in the list reading
+*Cancelled, make-up session chosen* with the new date beside it. Neither disappears, so a
+parent who forgets which one they moved can see it from either direction.
+
+**A substitute instructor or a changed venue is called out in bold on the row** — *Substitute:
+Jasmine Reed*, *Different venue: Headingley Activity Hub*. A parent scanning the list sees
+what is different about that one session without opening it.
+
+### The make-ups a parent has, and what became of them
+
+![The parent's Make-ups list: two available credits with their validity dates, and a used one showing the session it was spent on with date, venue and instructor](../../assets/images/client-zone-make-ups.png)
+
+Each credit is **Available** or **Used**, and an available one shows **Valid until** with the
+date and time it runs out — a make-up credit expires, and a parent who leaves it does lose
+it.
+
+A used credit shows what it was spent on: the class, the date and time, the venue and the
+instructor. That is the line to point at when somebody says a make-up went missing.
+
+> **The credit is named after the class it came from, not the one it was used on.** In the
+> picture, a Mighty Movers credit was spent on a Wiggle Wonders session — which is normal
+> wherever you let make-ups cross between programmes, and reads as an error if you are not
+> expecting it. See [Can I restrict make-up sessions to the same programme only?](../faq/make-up-sessions-faq.md)
 
 
 ## Benefits
