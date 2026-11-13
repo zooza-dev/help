@@ -57,6 +57,8 @@ Added November 2026. The Contacts screen exports a spreadsheet, in two flavours:
 | **Contacts** | One row per person — the calling list. |
 | **Enquiries** | One row per enquiry, so somebody who wrote in three times appears three times. |
 
+![The Contacts list with the Export control beside Add contact and Spam, and the filter row above the results](../../assets/images/contacts-export.png)
+
 Pick **Contacts** to hand a list to whoever is doing the ringing round, and **Enquiries**
 when you want to see what was actually asked, or how often.
 

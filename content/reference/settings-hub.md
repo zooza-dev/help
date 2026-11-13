@@ -106,7 +106,22 @@ General settings for all programmes:
 | `Block cancellations on weekends and holidays` | If enabled, the cancellation limit for Monday sessions will be Friday at midnight. |
 | `Time limit in hours for creating a tailored make-up session` | Earliest time (hours before the regular session) when clients can create make-up sessions. If zero, default of 24 hours is used. |
 | `Time restriction in hours for offering a regular make-up session` | Time limit in hours before a session starts, after which it won't be offered as a make-up option. |
-| `Make-ups only for fully paid bookings` | Clients who still owe money on a booking cannot book a make-up, move one, or request a custom one from their profile — they are told to pay first rather than shown an empty list. Credits are still granted and can be spent once the booking is paid. A booking inside its payment grace period counts as paid, and admins can always book a make-up in the app. |
+
+### Make-up sessions
+
+> **Navigation:** Settings → Other → **Make-up sessions** → **General settings**.
+
+Company-wide make-up rules, separate from the per-programme **Make-ups** tile.
+
+| Field | Description |
+|---|---|
+| `Number of days to use transferred make-up sessions` | How long a make-up carried into the next class stays usable. |
+| `Default expiration of credits (in days)` | The fallback validity for a make-up credit. |
+| `Additional slots in classes` | Extra places in every class, reserved for make-up bookings. Can be overridden per class. |
+| `Make-ups only for fully paid bookings` | Clients who still owe money on a booking cannot book a make-up, move one, or request a custom one from their profile — they are told to pay first rather than shown an empty list. Credits are still granted and can be spent once the booking is paid. A booking inside its payment grace period counts as paid, and admins can always book a make-up in the app. Added November 2026. |
+
+**Make-up sessions from partner companies** is on the same page, with its own
+*My requests* and *Requests received* lists.
 
 ### Sessions
 

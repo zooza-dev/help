@@ -218,4 +218,43 @@ shots:
     card: Invoicing
     assert: "Manage series"
     status: blocked
-    note: The Invoicing card in programme price settings — "Invoice number series: …" + Manage series.
+    note: >
+      The Invoicing card in programme price settings — the "Invoice number
+      series" line plus Manage series.
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # Added 2026-11-13 after the weekly intake. Four behaviours shipped in the
+  # fortnight to 12 November and the pictures beside them showed the screens
+  # as they were before.
+  # ──────────────────────────────────────────────────────────────────────────
+
+  - image: settings-make-up-sessions.png
+    route: settings/replacements
+    assert: "Make-ups only for fully paid bookings"
+    status: unverified
+    note: >
+      Settings → Other → Make-up sessions → General settings. Carries the
+      transferred-credit days, the default expiry, Additional slots in classes
+      and the new paid-only switch. Used by reference/settings-hub.md and
+      faq/make-up-sessions-faq.md — both of which sent the reader to Settings →
+      General until today, where none of this is.
+
+  - image: contacts-export.png
+    route: contacts
+    assert: "Export"
+    status: unverified
+    note: >
+      The Contacts list with its Export control, which offers Contacts (one row
+      per person) or Enquiries (one row per enquiry). Used by
+      guides/working-with-contacts.md.
+
+  - image: reference/bookings-cancel.png
+    route: registrations/1486?edit=cancel_registration
+    assert: "Cancel booking"
+    status: verified
+    note: >
+      The Cancel booking form, reshot 2026-11-13 — the picture it replaces
+      predates the required Cancellation reason field. It does NOT show the
+      Unused make-up sessions section, because no booking in the demo account
+      has unused make-ups and the section only renders when there are some.
+      That one still needs an account with real credits.

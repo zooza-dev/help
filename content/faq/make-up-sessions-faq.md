@@ -50,7 +50,7 @@ If the credit is already gone, set the record back to *Cancelled*; a fresh credi
 
 There are two levels for this setting:
 
-1. **Global setting** — Go to **Settings** → the **Make-ups** tile → **Make-up sessions options**. The `Additional slots in classes` value (e.g. 1) applies to every class across all programmes. This means each class allows that many additional spots beyond its normal capacity for make-up bookings.
+1. **Global setting** — Go to **Settings → Other → Make-up sessions → General settings**. The `Additional slots in classes` value (e.g. 1) applies to every class across all programmes. This means each class allows that many additional spots beyond its normal capacity for make-up bookings.
 
 2. **Per-class setting** — On the class detail page, the make-up sessions tile shows a per-class extra capacity value. You can choose whether this value **replaces** the global setting or **adds to** it.
 
@@ -90,8 +90,10 @@ Cancelling a replacement that has already been assigned is unchanged — that st
 
 ## Can I stop clients who still owe money from taking make-ups?
 
-Yes, with one switch for the whole company: **Settings → General**, `Make-ups only for
-fully paid bookings`.
+Yes, with one switch for the whole company: **Settings → Other → Make-up sessions →
+General settings**, `Make-ups only for fully paid bookings`.
+
+![Make-up sessions general settings: make-up behaviour, transferred make-ups, default credit expiry, additional slots in classes, and the paid-only switch](../../assets/images/settings-make-up-sessions.png)
 
 With it on, a client who still owes money on their booking cannot book a make-up, move one
 they already have, or send a custom make-up request **from their profile**. Instead of an
@@ -168,7 +170,7 @@ Check **Settings → Other → Make-up sessions** first, not the course, wheneve
 
 ## Can make-up credits carry over to the next billing period?
 
-Yes. Go to **Settings** → the **Make-ups** tile → **Make-up sessions options** → **General Settings** and choose one of three expiration modes under **Make-up sessions behavior**:
+Yes. Go to **Settings → Other → Make-up sessions → General settings** and choose one of three expiration modes under **Make-up sessions behavior**:
 
 | Mode | Behavior |
 |---|---|

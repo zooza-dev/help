@@ -368,7 +368,7 @@ Click **Change status** to apply.
 
 > **Navigation:** Booking detail → **Cancel booking**.
 
-![Cancel booking form: cancel immediately or schedule cancellation for a later date, with a confirmation email option](../../assets/images/reference/bookings-cancel.png)
+![Cancel booking form: cancellation type, send confirmation email, and the required Cancellation reason picker](../../assets/images/reference/bookings-cancel.png)
 
 Cancellation notice: "By cancelling the booking, the client will stop receiving notifications and all future payments will be cancelled. The booking data will still appear in reports, such as the instructor's report."
 
@@ -377,6 +377,7 @@ Cancellation notice: "By cancelling the booking, the client will stop receiving 
 | `Cancellation type` | **Cancel immediately** or **Schedule cancellation for a later date**. |
 | `Cancellation date` | Date picker (shown when scheduling). The booking will be cancelled on this date; until then, the client stays enrolled. |
 | `Send confirmation email` | Checkbox — notify the client. |
+| `Cancellation reason` | **Required.** Pick from your own list. The reason is stored on the booking and is what the cancellation reporting counts, so a tidy list here is what makes that report worth reading. See [Cancellation reasons](../guides/cancellation-reasons.md). |
 | `Make-up sessions to convert to free sessions` | Shown only when the client has unused make-ups, under **Unused make-up sessions**. How many to keep as free sessions the client can still book. Everything you do not convert is cancelled with the booking. On a scheduled cancellation this happens immediately, not on the cancellation date. |
 
 Click **Proceed** to confirm. Zooza reports the outcome as "Make-up sessions: N converted
