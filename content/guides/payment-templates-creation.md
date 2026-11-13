@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0086_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: "2026-11-06"
+last_converted: "2026-11-13"
 related_articles: ["price-and-payment-setup","membership-fee-setup","automatic-payment-reminders","session-payment-adjustments","billable-sessions","payments-and-billing-faq"]
 ---
 <!-- REVIEW: add all types of prepaid payment frequencies -->
@@ -96,6 +96,58 @@ Save the template by clicking the *Save button.*
 Note: If you use discounted payment templates, you can find a clear list of them in the Payments - Discounts section.
 
 ![Screenshot](../../assets/images/payment-templates-creation-08.png)
+
+## Split payment before the class start — selling months ahead
+
+A fourth template type, added in November 2026, for businesses that open bookings long
+before the class runs. Instead of tying payment to attendance, it spreads the fee over the
+months **leading up to** the class, so a family booking a September course in January pays
+monthly and is fully paid by the time it starts.
+
+Until now the only up-front option was the whole amount in one payment, which puts people
+off booking early.
+
+**Select `Split payment before the class start`** as the template type. It has two settings
+of its own, on top of the payment day of the month:
+
+| Field | What it does |
+|---|---|
+| `Deadline for the last installment (days)` | How many days **before** or **after** the class start the final installment may fall due. Pick **Before the class start** or **After the class start** beside it. The same deadline applies to every class using this template. |
+| `Minimum number of installments` | How many monthly installments must still fit before the deadline for the plan to be offered at all. |
+
+### How the instalments come out
+
+The first is due at booking. The rest land on your chosen day of each following month, up
+to the deadline. **The later somebody books, the fewer instalments they get** — and the
+larger each one is, because the total does not change. The amounts are equal, always
+monthly, and the total is the price of the sessions that client is booked into, priced
+exactly as a normal course fee.
+
+### What your clients see, and when
+
+While enough instalments still fit before the deadline, this plan **replaces** the class's
+other instalment plans for clients — they see the split payment rather than the monthly or
+quarterly options. Once too few fit, the ordinary plans come back.
+
+**A one-off payment plan is always shown**, alongside it, at every point. Somebody who just
+wants to pay the lot can always do so.
+
+> **You can always apply any plan yourself.** The swap above governs what clients are
+> offered in the booking form. As an admin you can put a booking on any of the class's
+> plans at any time, deadline or no deadline.
+
+### Three limits worth knowing before you build it
+
+- **One per company.** There can be only one split payment template in the whole account,
+  which means at most one per class.
+- **Course-fee programmes only.** It does not apply to pay-as-you-go or membership
+  programmes — "pay it all up front" has no meaning when the total is not known yet.
+- **The per-class override resets on save.** You can change `Minimum number of installments`
+  for an individual class on its Price tab, but saving the template pushes the template's
+  value back into every class. Set the template first, adjust classes afterwards.
+
+Nothing here changes what happens if somebody cancels partway through. Refunding prepaid
+instalments is the same decision, with the same tools, as it has always been.
 
 ## Monthly gave me nine instalments with odd amounts, not eight round ones
 

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-09"
+last_converted: "2026-11-13"
 related_articles: ["registration-and-booking-faq","transfer-and-copy-bookings","sending-email-sms","email-delivery-troubleshooting","async-exports"]
 ---
 
@@ -377,8 +377,12 @@ Cancellation notice: "By cancelling the booking, the client will stop receiving 
 | `Cancellation type` | **Cancel immediately** or **Schedule cancellation for a later date**. |
 | `Cancellation date` | Date picker (shown when scheduling). The booking will be cancelled on this date; until then, the client stays enrolled. |
 | `Send confirmation email` | Checkbox — notify the client. |
+| `Make-up sessions to convert to free sessions` | Shown only when the client has unused make-ups, under **Unused make-up sessions**. How many to keep as free sessions the client can still book. Everything you do not convert is cancelled with the booking. On a scheduled cancellation this happens immediately, not on the cancellation date. |
 
-Click **Proceed** to confirm.
+Click **Proceed** to confirm. Zooza reports the outcome as "Make-up sessions: N converted
+to free sessions, M cancelled."
+
+See [Make-up sessions FAQ](../faq/make-up-sessions-faq.md) for when to convert and when not to.
 
 ## Change Class (Transfer)
 

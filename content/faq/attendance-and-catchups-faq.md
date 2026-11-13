@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-06"
+last_converted: "2026-11-13"
 ---
 
 # Attendance and Catch-up Classes FAQ
@@ -126,9 +126,53 @@ As an admin, you can verify and trigger the catch-up option by toggling the atte
 A common and reasonable exception: somebody cancels mid-term and you agreed they could
 still come to the last couple of sessions they had paid for.
 
-Give them a **free session** rather than reinstating the booking. On their booking, open
-**Credits** and create a free session. They draw it down exactly as they would a make-up,
-and it works while the booking stays cancelled.
+**Zooza now asks you about this while you cancel.** If the client has unused make-up
+sessions, the cancellation form shows an **Unused make-up sessions** section: *"This
+client has N make-up sessions available. How many would you like to convert to free
+sessions?"* Enter a number in `Make-up sessions to convert to free sessions` and those
+become free sessions the client can still book. **Anything you do not convert is
+cancelled along with the booking.**
+
+Enter 0, or leave it, and every unused make-up is cancelled — which is the right answer
+when somebody has genuinely left.
+
+> **On a scheduled cancellation, the make-ups are dealt with immediately.** Not on the
+> cancellation date. If you schedule a cancellation for the end of the month, the
+> conversion and the cancelling of the rest happen the moment you confirm the form, while
+> the client stays enrolled until the date you chose.
+
+You can also convert a single make-up at any time afterwards: open **Credits** on the
+booking, open the credit, and convert it to a free session there. Creating a free session
+by hand still works and is what you want when there was no make-up to convert in the first
+place.
+
+## A cancelled booking still shows in attendance — is that right?
+
+Yes, where the client actually attended. A cancelled booking is a real booking that
+ended, so the attendance you recorded while it ran stays on those sessions, in the
+register, in the counts and in the export. Removing it would quietly rewrite what
+happened in a room on a day.
+
+What a cancelled booking does **not** do is sit on sessions it never attended:
+
+| Attendance on the session | After the booking is cancelled |
+|---|---|
+| `Attended`, `Did not attend`, `Cancelled` | Stays — in the register, the counts and the export |
+| `Will attend` | Hidden, and not counted |
+| No attendance recorded at all | The client is not on that session |
+
+`Will attend` is an intention, not a record. Once a booking has ended there is no longer
+anything to intend, so those rows drop out — which is why a cancelled client stops
+appearing on every future session of their class.
+
+> **If you saw a cancelled booking filling out a whole term of future dates, that is the
+> thing that changed.** Until November 2026 a cancelled booking was dropped from session
+> registers entirely, so a client vanished from sessions they *had* attended, while the
+> full-programme rule still listed them on dates they had not. Both halves are now the
+> right way round.
+
+A free session is the exception to all of this: it holds its place whatever the booking's
+status, because somebody was given it deliberately.
 
 ## What do the attendance numbers mean on the calendar?
 

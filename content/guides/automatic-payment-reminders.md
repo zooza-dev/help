@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0003_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-08"
+last_converted: "2026-11-13"
 related_articles: ["automatic-payment-reminders-detailed","payments-and-billing-faq","price-and-payment-setup","auto-cancel-unpaid-registrations"]
 ---
 
@@ -186,31 +186,39 @@ own choice — so do not go looking for the first version if you picked the seco
 
 ![The lower half: delete an unpaid booking with three options, move bookings without a down payment to the waitlist, and the warning about assigned payments](../../assets/images/payment-reminders-delete-unpaid.png)
 
-| Option | What it removes |
+| Option | Which bookings it acts on |
 |---|---|
-| **Do not delete unpaid bookings** | Nothing. The default, and the safe choice. |
-| **Delete all unpaid bookings** | Enrolled bookings with status Unpaid, Down payment unpaid or Final payment unpaid. **Partially paid bookings are never deleted.** |
-| **Without down payment** | Only bookings whose down payment is unpaid. |
+| **Leave unpaid bookings as they are** | None. The default, and the safe choice. |
+| **All unpaid bookings** | Enrolled bookings with status Unpaid, Down payment unpaid or Final payment unpaid. **Partially paid bookings are never affected.** |
+| **Without down payment** | Only enrolled bookings with status Down payment unpaid. |
+| **Unpaid bookings that have received at least one reminder** | The same bookings as **All unpaid bookings**, narrowed to those a reminder has actually reached. |
 
-**What happens to these bookings** is its own choice beside it — removing the booking is
-not the only outcome available, so read that before assuming "handle" means "delete".
+> **The last option exists only in the programme-start mode.** Switch the timing to count
+> from the booking and it disappears from the list — but if it was already selected it
+> stays selected, unlisted. So a rule can be running on "has received a reminder" while the
+> list in front of you does not offer it. Re-pick deliberately after changing the mode.
 
 **Move bookings without a down payment to the waitlist** is the gentler alternative — the place is freed but the person keeps their position rather than disappearing.
 
-Once you pick anything other than **Do not delete unpaid bookings**, a second choice
-appears: whether the rule should **delete** the booking or **cancel** it.
+Once you pick anything other than **Leave unpaid bookings as they are**, a second choice
+appears — **What happens to these bookings**:
 
 | Outcome | What you are left with |
 |---|---|
-| **Delete** | The booking is gone, and so is its history. |
-| **Cancel** | The booking stays, cancelled, carrying an automatic reason of *unpaid*. |
+| **Delete** | The booking is removed together with its history. The client gets the automatic deletion email. |
+| **Cancel** | The booking stays, cancelled, with the reason *Cancelled automatically for non-payment*. The client gets the standard cancellation email. |
 
 **Cancel is the one to pick if you ever need to explain what happened.** A cancelled
 booking still shows in the client's record and in the cancellation reporting; a deleted
 one leaves nothing to point at. It was added in November 2026, so a rule you configured
 before then is still set to delete.
 
-> **Read this before switching deletion on.** Only a booking with a *payment assigned to it* counts as paid. If you reconcile bank transfers by hand, or import statements with any delay, a parent who has genuinely paid can still be deleted because the money has not been matched to their booking yet. In that situation leave it on **Do not delete unpaid bookings**.
+> **If the programme also has the auto-cancel-unpaid automation switched on, both run.**
+> Zooza says so on the screen: the two act under different conditions and whichever fires
+> first wins. Having both is not an error, but it does mean the outcome you configured here
+> is not necessarily the one that happens.
+
+> **Read this before switching deletion on.** Only a booking with a *payment assigned to it* counts as paid. If you reconcile bank transfers by hand, or import statements with any delay, a parent who has genuinely paid can still be deleted because the money has not been matched to their booking yet. In that situation leave it on **Leave unpaid bookings as they are**.
 
 ## Turn off scheduled payment notifications
 

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-09"
+last_converted: "2026-11-13"
 related_articles: ["matko-replacement-diagnostic","cancellation-log","replacement-hours-complete","capacity-and-extra-capacity"]
 ---
 
@@ -87,6 +87,28 @@ Switch it on when capacity, grouping or level means a child cannot simply drop i
 Cancelling a replacement that has already been assigned is unchanged — that still follows your other make-up settings.
 
 > **Everyone gets a confirmation email when a replacement is assigned**, whether you assigned it or the parent picked it themselves. Families are told which session they are in rather than having to check.
+
+## Can I stop clients who still owe money from taking make-ups?
+
+Yes, with one switch for the whole company: **Settings → General**, `Make-ups only for
+fully paid bookings`.
+
+With it on, a client who still owes money on their booking cannot book a make-up, move one
+they already have, or send a custom make-up request **from their profile**. Instead of an
+empty list that reads like "nothing available", they are told they need to pay for their
+booking first.
+
+Three things it deliberately does not do:
+
+- **Credits are still granted**, exactly as before. Nothing is lost — the client simply
+  cannot spend one until the booking is paid.
+- **A booking still inside its payment grace period counts as paid.** Somebody who booked
+  on Monday with fifteen days to pay is not blocked on Tuesday.
+- **You can always book a make-up for them in the app.** The switch governs what the client
+  can do themselves; it never stands between you and a decision you want to make.
+
+Switch it on when unpaid bookings are quietly consuming capacity that paying families
+wanted. Leave it off if you would rather chase the money separately from the teaching.
 
 ## What is the 4-day rule for make-up session availability?
 
@@ -208,6 +230,30 @@ Go to the booking detail page. Scroll to the **Credits** section at the bottom. 
 
 - Change the expiration date to a past date (to let it expire), or
 - Click the **Delete** button to remove it entirely.
+
+## What happens to unused make-ups when I cancel a booking?
+
+You decide, during the cancellation.
+
+If the client has unused make-ups, the cancellation form shows an **Unused make-up
+sessions** section asking how many to turn into free sessions. Whatever you convert, the
+client can still book. **Whatever you do not convert is cancelled with the booking.**
+
+That is the whole of the old "give them a free session instead" workaround, now built into
+the step where the decision actually arises.
+
+| You want | Enter |
+|---|---|
+| They have genuinely left | 0 — every make-up is cancelled |
+| You agreed they can finish two sessions | 2 — the rest are cancelled |
+| Keep everything they were owed | The number shown in the message |
+
+> **Scheduling the cancellation for a later date does not delay this.** The make-ups are
+> converted and cancelled when you confirm the form, not on the cancellation date. The
+> booking itself still ends on the date you chose.
+
+Afterwards you can still convert a single make-up by hand: **Credits** on the booking,
+open the credit, convert it to a free session.
 
 ## A client says make-up sessions are not showing up. Where do I start?
 

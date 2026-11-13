@@ -46,6 +46,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can I stop clients who still owe money from taking make-ups?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, with one switch for the whole company: Settings → General, Make-ups only for\nfully paid bookings.\n\nWith it on, a client who still owes money on their booking cannot book a make-up, move one\nthey already have, or send a custom make-up request from their profile. Instead of an\nempty list that reads like \"nothing available\", they are told they need to pay for their\nbooking first.\n\nThree things it deliberately does not do:\n\n- Credits are still granted, exactly as before. Nothing is lost — the client simply\n  cannot spend one until the booking is paid.\n- A booking still inside its payment grace period counts as paid. Somebody who booked\n  on Monday with fifteen days to pay is not blocked on Tuesday.\n- You can always book a make-up for them in the app. The switch governs what the client\n  can do themselves; it never stands between you and a decision you want to make.\n\nSwitch it on when unpaid bookings are quietly consuming capacity that paying families\nwanted. Leave it off if you would rather chase the money separately from the teaching."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What is the 4-day rule for make-up session availability?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -114,6 +122,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Go to the booking detail page. Scroll to the Credits section at the bottom. Click Show all credits to see every credit on that booking. Find the make-up credit you want to remove, click the More button next to it, and either:\n\n- Change the expiration date to a past date (to let it expire), or\n- Click the Delete button to remove it entirely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to unused make-ups when I cancel a booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You decide, during the cancellation.\n\nIf the client has unused make-ups, the cancellation form shows an Unused make-up\nsessions section asking how many to turn into free sessions. Whatever you convert, the\nclient can still book. Whatever you do not convert is cancelled with the booking.\n\nThat is the whole of the old \"give them a free session instead\" workaround, now built into\nthe step where the decision actually arises.\n\nScheduling the cancellation for a later date does not delay this. The make-ups are\nconverted and cancelled when you confirm the form, not on the cancellation date. The\nbooking itself still ends on the date you chose.\n\nAfterwards you can still convert a single make-up by hand: Credits on the booking,\nopen the credit, convert it to a free session."
       }
     },
     {

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-09"
+last_converted: "2026-11-13"
 related_articles: ["custom-holidays", "shared-sessions", "contact-form-setup", "custom-contact-fields", "setting-gtc-gdpr-consents", "labels", "notifications-center"]
 ---
 
@@ -106,6 +106,7 @@ General settings for all programmes:
 | `Block cancellations on weekends and holidays` | If enabled, the cancellation limit for Monday sessions will be Friday at midnight. |
 | `Time limit in hours for creating a tailored make-up session` | Earliest time (hours before the regular session) when clients can create make-up sessions. If zero, default of 24 hours is used. |
 | `Time restriction in hours for offering a regular make-up session` | Time limit in hours before a session starts, after which it won't be offered as a make-up option. |
+| `Make-ups only for fully paid bookings` | Clients who still owe money on a booking cannot book a make-up, move one, or request a custom one from their profile — they are told to pay first rather than shown an empty list. Credits are still granted and can be spent once the booking is paid. A booking inside its payment grace period counts as paid, and admins can always book a make-up in the app. |
 
 ### Sessions
 
