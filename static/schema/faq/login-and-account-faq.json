@@ -25,7 +25,7 @@
       "name": "Where do I see my password?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "There isn't one. Zooza has no passwords at all — not for you, not for your team,\nnot for parents. Everyone signs in with a one-time code sent to their email.\n\nTo sign in as an owner or an instructor:\n\n1. Go to your regional address — zooza.app, uk.zooza.app or asia.zooza.app (see below).\n2. Enter the email address you were invited into the account with. Not a personal\n   address you prefer — the one that appears in Settings → General → Access.\n3. Open the code that arrives and you are in.\n\nThe same email can be both an owner and a parent. They are separate things: the\nadmin app at your regional address, and the client profile on your own website.\nSigning into one does not sign you into the other, and neither has a password."
+        "text": "There isn't one. Zooza has no passwords at all — not for you, not for your team,\nnot for parents. Everyone signs in with a one-time code sent to their email, or with a\npasskey — your fingerprint, face or device screen lock. A passkey is not a password\neither: nothing is typed and nothing leaves your device. See\nLog in with a passkey instead of a code.\n\nTo sign in as an owner or an instructor:\n\n1. Go to your regional address — zooza.app, uk.zooza.app or asia.zooza.app (see below).\n2. Enter the email address you were invited into the account with. Not a personal\n   address you prefer — the one that appears in Settings → General → Access.\n3. Open the code that arrives and you are in.\n\nTo skip the waiting, set up a passkey once and press Log in with passkey after\nthat. Codes keep working either way.\n\nThe same email can be both an owner and a parent. They are separate things: the\nadmin app at your regional address, and the client profile on your own website.\nSigning into one does not sign you into the other, and neither has a password."
       }
     },
     {
@@ -65,7 +65,7 @@
       "name": "How do parents log in to their profile?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zooza uses a passwordless, token-based login. Parents do not set or use a password. The process is:\n\n1. The parent opens the profile widget on your website (or goes to your Zooza app URL).\n2. They enter their email address.\n3. Zooza sends a one-time login code to that email.\n4. The parent enters the code to access their profile.\n\nIf a parent reports not receiving the code, ask them to check their spam folder. Login codes are sent almost instantly under normal conditions. There is no password to reset — every login uses a fresh email code."
+        "text": "Zooza uses a passwordless, token-based login. Parents do not set or use a password. The process is:\n\n1. The parent opens the profile widget on your website (or goes to your Zooza app URL).\n2. They enter their email address.\n3. Zooza sends a one-time login code to that email.\n4. The parent enters the code to access their profile.\n\nIf a parent reports not receiving the code, ask them to check their spam folder. Login codes are sent almost instantly under normal conditions. There is no password to reset — every login uses a fresh email code.\n\nAfter their first code login, Zooza offers them a passkey — fingerprint, face or\nscreen lock, no code at all next time. It is optional, and codes carry on working for\nanyone who skips it. See Log in with a passkey instead of a code."
       }
     },
     {

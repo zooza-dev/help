@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-08"
-related_articles: []
+last_converted: "2026-11-15"
+related_articles: ["client-profile-faq", "passkey-login", "widget-embedding"]
 ---
 
 
@@ -47,6 +47,12 @@ The booking widget displays class details (name, dates, instructor, price) pulle
 Yes. **Continue as guest** is always there, and logging in is never required to book on the public form.
 
 The form asks for an email address or phone number before continuing. If it matches someone you already have, Zooza sends a one-time code and signs them in without leaving the page — no redirect, no lost progress. If it matches nobody, or they would rather not, they click **Continue as guest** and carry on exactly as before.
+
+**A client who has a passkey skips the code entirely.** As they click into the email or
+phone field, the browser offers their saved passkey, and there is a **Log in with a
+passkey** link next to the guest option. They confirm with a fingerprint or face and the
+form carries straight on, keeping everything they had already chosen. See
+[Log in with a passkey instead of a code](../guides/passkey-login.md).
 
 ![A live booking form: the Log in prompt, the email or phone step, and Continue as guest below an OR separator](../../assets/images/booking-widget-faq-03.png)
 

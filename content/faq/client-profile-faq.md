@@ -1,6 +1,6 @@
 ---
 title: "Client Profile FAQ"
-description: "Clients go to your profile URL (e.g., yourbrand.zooza.online/customer-portal/), enter their email address, and receive a secure login link (token) by..."
+description: "How clients log in to the Client Profile with a code or a passkey, what they can see and do there, and what they cannot cancel themselves."
 slug: "client-profile-faq"
 type: "faq"
 product_area: "Widgets"
@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-05"
+last_converted: "2026-11-15"
+related_articles: ["client-profile-101","login-and-account-faq","passkey-login","booking-widget-faq"]
 ---
 
 # Client Profile FAQ
@@ -19,6 +20,11 @@ last_converted: "2026-09-05"
 ## How do clients log into the Client Profile?
 
 Clients go to your profile URL (e.g., `yourbrand.zooza.online/customer-portal/`), enter their email address, and receive a secure login link (token) by email. There is no password — each login sends a fresh email link.
+
+**After their first code login they are offered a passkey**, so the next time they get
+in with a fingerprint, face or screen lock and no email at all. It is optional, and the
+email link keeps working for everyone. See
+[Log in with a passkey instead of a code](../guides/passkey-login.md).
 
 ## A client says they are not receiving the login email — what should I do?
 

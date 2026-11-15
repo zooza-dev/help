@@ -272,3 +272,15 @@ shots:
       unpaid-booking rule. The Delete-or-Cancel choice only appears once the
       rule is set to something other than "Leave unpaid bookings as they are",
       so it is not in this shot.
+
+  - image: reference/cls-classes-friday-settings.png
+    route: courses/schedules/40
+    assert: "Meeting platform"
+    wait: 10000
+    status: unverified
+    note: >
+      Class detail - Settings. The two columns: general settings on the left,
+      timetable properties on the right, then Customize date and Other settings.
+      Used by reference/class-detail.md. Reshot 2026-11-15 because the app's
+      wording around fixed-period / lead-collection changed and the picture in
+      the article could no longer be trusted.

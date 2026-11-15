@@ -6,7 +6,7 @@
 # ║  Edit there, then run: python3 scripts/sync_terminology.py      ║
 # ╚══════════════════════════════════════════════════════════════════╝
 #
-# Last synced: 2026-11-13
+# Last synced: 2026-11-15
 # Used by: scripts/normalize_terminology.py → build/terminology/dictionary.json
 #
 # Fields per term:
@@ -3927,6 +3927,86 @@ terms:
 # ──────────────────────────────────────────────
 # People often name the wrong entity. These patterns map natural language
 # to the correct technical entity and action.
+
+  # ──────────────────────────────────────────────
+  # PASSKEY LOGIN (shipped 2026-11-14, admins and widget customers)
+  # ──────────────────────────────────────────────
+
+  - id: passkey
+    canonical_en: "Passkey"
+    category: "platform"
+    definition: >
+      A key stored on a person's device and unlocked with their fingerprint, face
+      or screen lock, used instead of a one-time login code. It works only on the
+      web address it was created on. Available to admins in the app and to clients
+      in the booking form and client profile. One-time codes remain the fallback
+      everywhere and are never removed.
+    context:
+      admin: "Passkey"
+      client: "Passkey"
+      widget: "Passkey"
+    deprecated:
+      - "Password"         # Zooza has never had passwords; a passkey is not one
+      - "PIN"              # the PIN is the one-time login code, a different thing
+    synonyms:
+      - "WebAuthn"         # the underlying standard; never use in customer-facing text
+      - "FIDO2"
+    translations:
+      sk: "Prístupový kľúč"
+      cz: "Přístupový klíč"
+      ro: "Cheie de acces"
+      hu: "Azonosítókulcs"
+      de: "Passkey"
+      pl: "Klucz dostępu"
+      it: "Passkey"
+      fr: "Clé d'accès"
+    intent_keywords:
+      en: ["passkey", "fingerprint login", "face id login", "touch id", "log in without a code",
+           "log in with my face", "no code login", "biometric login", "screen lock login",
+           "skip the login code", "faster login"]
+      sk: ["prístupový kľúč", "prihlásenie odtlačkom", "prihlásenie tvárou", "bez kódu",
+           "prihlásiť sa bez kódu", "face id prihlásenie", "odtlačok prsta", "rýchlejšie prihlásenie"]
+      cz: ["přístupový klíč", "přihlášení otiskem", "přihlášení obličejem", "bez kódu",
+           "přihlásit se bez kódu", "otisk prstu"]
+      hu: ["azonosítókulcs", "ujjlenyomatos belépés", "arcfelismerés belépés", "kód nélkül"]
+      de: ["passkey", "fingerabdruck anmelden", "gesicht anmelden", "ohne code anmelden"]
+      pl: ["klucz dostępu", "logowanie odciskiem", "logowanie twarzą", "bez kodu"]
+      ro: ["cheie de acces", "autentificare cu amprenta", "fara cod"]
+    do_not_confuse_with:
+      - term: "One-time login code"
+        reason: >
+          The code (also called a PIN) is emailed or sent by WhatsApp and typed in.
+          A passkey is held on the device and never typed. Both log the same person
+          into the same account; the code is always available as the fallback, so a
+          passkey problem is never a lockout.
+      - term: "Password"
+        reason: >
+          Zooza has no passwords, before or after passkeys. If a customer asks to
+          "reset their password" they mean either a login code or a passkey. Ask which.
+      - term: "Magic link"
+        reason: >
+          The magic link is the clickable link in the login email and is unaffected
+          by passkeys. It stays valid longer than the code.
+    ai_notes: >
+      Shipped 2026-11-14 for admins (app) and 2026-11-15 for widget customers.
+      A passkey is bound to one web address: admins get a separate one per region
+      (zooza.app, uk.zooza.app, asia.zooza.app) and clients get one per the website
+      address saved with the company's widget. Changing that widget address stops the
+      existing client passkeys being offered — they are not deleted, and reverting the
+      address restores them. Network companies sharing one widget address share the
+      passkey across siblings.
+      Watch the dismissal asymmetry: in the ADMIN app "Not now" means ask again next
+      code login and "Keep using codes" stops the offer; in the CLIENT profile "Not
+      now" stops the offer outright. A client who says the offer disappeared has
+      probably pressed it; they add one from More → Passkeys.
+      Cross-device sync is the person's password manager (iCloud Keychain, Google
+      Password Manager, 1Password), never Zooza — mixed ecosystems may need a second
+      passkey. Passkeys do not appear at all on http pages, in unsupported browsers,
+      inside an iframe-wrapped widget, or while an admin is viewing Zooza as someone
+      else. Every registration sends a security email: from Zooza for admins, from the
+      company for clients.
+    public: true
+
 
 entity_misattribution:
 

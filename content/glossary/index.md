@@ -273,6 +273,11 @@ A single session on a specific date with no repeating schedule. Used for worksho
 
 ## P
 
+### Passkey
+A key kept on your phone or computer and unlocked with your fingerprint, face or screen lock. It replaces the one-time login code — for you and your team in the Zooza app, and for your clients in the booking form and their profile. A passkey only works on the exact web address it was created on, so it cannot be used on a fake login page. One-time codes always keep working, so a passkey can never lock anybody out. See [Log in with a passkey instead of a code](../guides/passkey-login.md).
+
+> Not a password — Zooza has none. Not the same as the login *PIN*, which is the one-time code.
+
 ### Pay-as-you-go
 A flexible programme type where clients book and pay for individual sessions rather than committing to a full term.
 

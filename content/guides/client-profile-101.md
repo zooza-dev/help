@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: "legacy/0023_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-13"
-related_articles: ["client-profile-faq", "client-management-faq", "documents"]
+last_converted: "2026-11-15"
+related_articles: ["client-profile-faq", "client-management-faq", "documents", "passkey-login"]
 ---
 
 
@@ -30,6 +30,16 @@ The Client Profile is a self-service dashboard where clients manage their bookin
 4. Clicking the link or entering the code logs them in automatically.
 
 There is no password to create or remember. Each login sends a fresh email.
+
+**After that first login, Zooza offers them a passkey.** Taking it means every later
+login is a fingerprint, a face or the phone's screen lock, with no email to wait for.
+It is optional — codes and links work exactly as before for anyone who skips it.
+
+![The client profile card reading Log in faster next time, with Create a passkey and Not now](../../assets/images/client-zone-passkey-offer.png)
+
+> **Not now means "stop asking" here.** A client who dismisses the card and changes
+> their mind adds one from **More → Passkeys** in their profile. The card does not come
+> back on its own. See [Log in with a passkey instead of a code](passkey-login.md).
 
 ![Screenshot — client profile 101](../../assets/images/client-profile-101-01.png)
 

@@ -1,6 +1,6 @@
 ---
 title: "Login and Account FAQ"
-description: "Passwordless logins, changing the email you sign in with, team profiles and roles, and what to check when no login code arrives."
+description: "Passwordless logins with codes or passkeys, changing the email you sign in with, team profiles and roles, and what to check when no code arrives."
 slug: "login-and-account-faq"
 type: "faq"
 product_area: "Settings"
@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-24"
-related_articles: ["instructor-access-faq","managing-instructors","user-roles","add-zooza-app-to-phone"]
+last_converted: "2026-11-15"
+related_articles: ["instructor-access-faq","managing-instructors","user-roles","add-zooza-app-to-phone","passkey-login"]
 ---
 
 # Login and Account FAQ
@@ -38,7 +38,10 @@ Give each person their own login wherever you can. Permissions and the activity 
 ## Where do I see my password?
 
 **There isn't one.** Zooza has no passwords at all — not for you, not for your team,
-not for parents. Everyone signs in with a one-time code sent to their email.
+not for parents. Everyone signs in with a one-time code sent to their email, or with a
+passkey — your fingerprint, face or device screen lock. A passkey is not a password
+either: nothing is typed and nothing leaves your device. See
+[Log in with a passkey instead of a code](../guides/passkey-login.md).
 
 To sign in as an owner or an instructor:
 
@@ -46,6 +49,9 @@ To sign in as an owner or an instructor:
 2. Enter **the email address you were invited into the account with**. Not a personal
    address you prefer — the one that appears in **Settings → General → Access**.
 3. Open the code that arrives and you are in.
+
+**To skip the waiting**, set up a passkey once and press **Log in with passkey** after
+that. Codes keep working either way.
 
 > **The same email can be both an owner and a parent.** They are separate things: the
 > admin app at your regional address, and the client profile on your own website.
@@ -109,6 +115,10 @@ Zooza uses a **passwordless, token-based login**. Parents do not set or use a pa
 4. The parent enters the code to access their profile.
 
 If a parent reports not receiving the code, ask them to check their spam folder. Login codes are sent almost instantly under normal conditions. There is no password to reset — every login uses a fresh email code.
+
+**After their first code login, Zooza offers them a passkey** — fingerprint, face or
+screen lock, no code at all next time. It is optional, and codes carry on working for
+anyone who skips it. See [Log in with a passkey instead of a code](../guides/passkey-login.md).
 
 ## A client requested a login link twice and now the first link doesn't work — why?
 
@@ -260,6 +270,7 @@ Check **Settings → General → Access** for which address is registered as you
 
 ## Related
 
+- [Log in with a passkey instead of a code](../guides/passkey-login.md) — fingerprint, face or screen lock, for you and your clients
 - [Getting started with Zooza](../setup/getting-started-with-zooza.md) — initial setup and orientation
 - [How to clear your cache](../troubleshooting/how-to-clear-your-cache.md) — fix display issues by clearing browser cache
 - [App navigation map](../reference/app-navigation-map.md) — overview of the Zooza interface
