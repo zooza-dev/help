@@ -1,14 +1,14 @@
 # SEO & AI Readiness Report
 
-**Generated:** 2026-11-13
+**Generated:** 2026-11-15
 
 ## Summary
 
-- **Total docs checked:** 280
+- **Total docs checked:** 281
 - **Docs with errors:** 0
-- **Docs with warnings only:** 62
+- **Docs with warnings only:** 63
 - **Total errors:** 0
-- **Total warnings:** 156
+- **Total warnings:** 157
 - **Overall:** PASS
 
 ## Checks performed
@@ -283,6 +283,9 @@
 
 ### `content/reference/settings-hub.md`
 - WARN: title too short (8 chars, min 10): `Settings`
+
+### `content/reference/zooza-through-the-years.md`
+- WARN: description too long (164 chars, max 160)
 
 ### `content/setup/downpayment-split-invoicing.md`
 - WARN: description too long (196 chars, max 160)
