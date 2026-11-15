@@ -12,7 +12,7 @@ related_articles: ["onboarding-launch-faq", "login-and-account-faq", "app-naviga
 source_legacy_path: "legacy/0015_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-26"
+last_converted: "2026-11-15"
 ---
 
 # Getting Started with Zooza
@@ -550,4 +550,5 @@ Make-Up Session
 - [Login and account FAQ](../faq/login-and-account-faq.md) — login, access, and account setup questions
 - [App navigation map](../reference/app-navigation-map.md) — overview of the Zooza interface sections
 - [Getting help and support](../guides/getting-help-and-support.md) — how to reach Zooza support
+- [Zooza through the years](../reference/zooza-through-the-years.md) — why the app is shaped the way it is, if you like context before instructions
 - [Business model guides](/programmes/business-models/) — find the right setup for your type of business

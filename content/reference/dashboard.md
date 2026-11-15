@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-02-12"
+last_converted: "2026-11-15"
 ---
 
 # Dashboard
@@ -108,8 +108,13 @@ Links at the bottom of the Dashboard:
 | **Change log** | What's new — recent updates and fixes to the app. |
 | **Roadmap** | Upcoming features and planned improvements. |
 
+Those two cover what is coming and what just landed. For the long view — what the
+app looked like in 2016, and why it changed shape along the way — see
+[Zooza through the years](zooza-through-the-years.md).
+
 ## Related
 
+- [Zooza through the years](zooza-through-the-years.md) — nine years of screens, and how releases were made.
 - [Common Booking Scenarios](../faq/common-booking-scenarios.md) — how to handle waitlist, duplicates, refunds.
 - [Attendance and Catch-up Classes FAQ](../faq/attendance-and-catchups-faq.md) — marking attendance, catch-up flow.
 - [Email and Communication FAQ](../faq/email-communication-faq.md) — understanding messages and notifications.
