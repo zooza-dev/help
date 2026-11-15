@@ -91,8 +91,18 @@ in their profile. It never blocks a booking.
 In both places the browser offers the saved passkey as they click into the field, and
 there is a **Log in with a passkey** link as well.
 
-**Where they manage them.** In their client profile, under **More → Passkeys**. They can
-add, rename and delete, exactly as you can.
+**Where they manage them.** In their client profile, press **More** and pick **Passkeys**.
+
+![The client profile Passkeys page listing two passkeys with Rename and Delete, and an Add a passkey button](../../assets/images/client-zone-passkeys-page.png)
+
+They can **Add a passkey**, **Rename** or **Delete**, exactly as you can. Two details
+are worth knowing before a client asks:
+
+- **Passkeys name themselves after the day they were made** — *Passkey 14/11/2026*.
+  That is a placeholder, not a device name, so a client with two is looking at two
+  dates and nothing else. Tell them to **Rename** them to *Phone* and *Laptop*.
+- **A fresh one reads *Last used: Not used yet***. That is correct and not a fault —
+  it changes the first time they actually log in with it.
 
 **Nothing changes for guests.** **Continue as guest** works as before, and so does every
 code and magic link.
