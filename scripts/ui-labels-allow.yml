@@ -37,3 +37,14 @@
   why: "Invented venue in the location example."
 - label: "Swimming 4–6 years - Patricie Janečková"
   why: "Shown as what a naming pattern renders to, not as a field."
+
+# Rendered values, not field names. The field exists under another name and is
+# documented next to these; what is quoted here is what the screen shows in it.
+- label: "Length of session – 90 minutes"
+  why: "What `Length of session - %1 minutes:` renders to, shown as an example."
+- label: "Length of session – 60 minutes"
+  why: "What `Length of session - %1 minutes:` renders to, shown as an example."
+- label: "Selected programmes: 0"
+  why: "The counter beside the Choose button on the embed screen; zero means all."
+- label: "Selected venues: 0"
+  why: "The counter beside the Choose button on the embed screen; zero means all."

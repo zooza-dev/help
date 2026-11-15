@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-06-01"
+last_converted: "2026-11-15"
+related_articles: ["classes-list","sessions-list","programmes-list","programme-settings"]
 ---
 
 # Class Detail
@@ -56,14 +57,14 @@ The settings section has two columns: general settings on the left and timetable
 | `Label` | Custom label badge. |
 | `Tag` | Categorization tag. |
 
-### Timetable Properties
+### Class properties
 
 | Field | Description |
 |---|---|
-| `Timetable type` | **Fixed period timetable** — defined start/end. **Lead collection** — interest gathering. |
-| `Allow online booking` | Shows/hides this class on the booking form. |
-| `Trial sessions` | Whether this timetable is available for trial sessions. |
-| `Auto-enrolment Active` | Whether this timetable is offered via auto-enrolment. |
+| `Class type` | **Fixed period class** — a class you are committed to running, with set start and end dates, even if details like the instructor are not final. **Lead collection** — collect sign-ups before anything is scheduled, to test demand or as a pool you later split into real classes. |
+| `Allow online booking` | Shows/hides this class on the booking form. A warning appears here when the class is already full. |
+| `Trial sessions` | Whether this class is available for trial sessions. |
+| `Auto-enrolment Active` | Whether this class is offered to clients as a follow-up when their current programme ends. |
 
 ### Customize Date
 
@@ -130,7 +131,7 @@ Override programme-level pricing at the class level.
 | Field | Description |
 |---|---|
 | `Price per session (optional)` | Override the programme unit price for this class. |
-| `Booking fee (optional)` | Override the programme booking fee for this class. |
+| `Registration fee (optional)` | Override the programme registration fee for this class. |
 
 Info banners show the current programme-level prices for reference.
 
@@ -140,7 +141,7 @@ Shows the active payment plan for the class:
 
 | Field | Description |
 |---|---|
-| `Payment plan name` | E.g., "Membership Payment, Monthly". |
+| `Template name` | Your own label for the plan, e.g. *Siblings*. Optional — leave it empty and the plan is listed by the type and frequency Zooza generates, such as *Membership Payment, Monthly*. |
 | `Period amount` | Amount per payment period. |
 | `Number of units` | Number of periods in the plan. |
 | `First scheduled payment` / `Discount` / `Next scheduled payment` | Financial details. |
@@ -161,14 +162,21 @@ The report shows:
 | `Sequence number` | Session number (1, 2, 3, ...). |
 | `Date` | Session date. |
 | `Time` | Session start time. |
-| `Name` | Instructor name. |
-| `Instructor` | Instructor name (confirmed). |
-| `Summary` | Attendance summary count. |
-| `Attended` | Number who attended. |
-| `Cancelled by client` | Client cancellations. |
-| `Absence count` | Unexcused absences. |
+| `Name` | The session's own name, where it has one. |
+| `Instructor` | Who taught it. |
+| `Summary` | Three count columns covering that session: `Attended`, `Cancelled by client` and `Did not cancel` — the last being people who were expected and never said otherwise. |
 
-The report header shows the class name, programme, day, location, date range, and total hours.
+After the summary, **one column per booked client**, holding that client's letter for each session:
+
+| Letter | Meaning |
+|---|---|
+| `A` | Attended |
+| `EA` | Excused absence |
+| `ER` | Excused absence, and a make-up session was taken |
+| `UA` | Unexcused absence |
+| `-` | Nothing recorded |
+
+The same legend is printed above the table. The report header shows the class name, programme, day, venue, date range, number of sessions, number of bookings and total hours.
 
 ## Sessions
 

@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-10"
+last_converted: "2026-11-15"
+related_articles: ["communication-send-email","communication-message-templates","email-communication-faq"]
 ---
 
 # Communication
@@ -52,11 +53,11 @@ Each message shows:
 
 | Field | Description |
 |---|---|
-| `Type` | Message type with icon (e.g. "Sent message"). |
+| `Title/Message` | Subject line or message preview. Unresolved tags such as <code>&#42;&#124;EVENT_COURSE&#124;&#42;</code> appear here literally when the list shows the template rather than one sent copy. |
+| `Type` | **Sent message**, **Received message** or **SMS**. |
 | `Sent/Received` | Timestamp. |
-| `Status` | Delivery status — "Received", "Sent", "Failed", etc. |
-| `The customer` | Recipient email address (clickable). |
-| `Title/Message` | Subject line or message preview. |
+| `Status` | Delivery status — *Received*, *Sent*, *Failed*, and similar. |
+| `The client` | Who it went to or came from — an **email address for messages, a phone number for SMS**. |
 
 ## Related
 

@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-08"
+last_converted: "2026-11-15"
+related_articles: ["programme-settings","class-detail","programmes-timetables-sessions-faq"]
 ---
 
 # Programmes List
@@ -167,8 +168,8 @@ The right panel shows a **visual timeline** with all generated session dates. Se
 
 | Field | Description |
 |---|---|
-| `Unit price` | Price per session/unit for this class (can override the programme default). |
-| `Booking fee (optional)` | One-time booking fee for this class. |
+| `Price per session (optional)` | Price per session for this class. Leave it at zero to use the programme's own price — the figure in use is shown beneath the field. |
+| `Registration fee (optional)` | One-time registration fee for this class. Leave it at zero to use the programme's own fee — the figure in use is shown beneath the field. |
 
 Click **Create** to generate the class with all sessions, or **Cancel** to discard.
 

@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-11-13"
+last_converted: "2026-11-15"
 related_articles: ["customizing-widgets", "deploying-zooza-on-website", "contact-form-on-your-website"]
 ---
 
@@ -75,20 +75,23 @@ For the Embed option, the detail shows:
 
 #### Embed Code
 
-Tabs for each widget type: **Booking Form**, **Calendar / Schedule**, **Profile**, **View Videos**, **Sales Form**, **Map**, **Contact form**.
+First pick how you are putting the widget on your site, under `Choose your integration`: **Wix**, **Wordpress**, **NPM package (React, Vue, Svelte, Web Component)** or **Embed**.
 
-Each tab displays the embed script code with a **Copy** button.
-
-> **JavaScript apps:** The embed panel also generates **npm install** snippets for React, Vue, Svelte, and Web Components. If your site is built as a JavaScript app, use these instead of the raw script — see [Deploying widgets in a JavaScript app](../setup/deploying-zooza-on-website.md#deploying-widgets-in-a-javascript-app-react-vue-and-others).
+**Embed** then offers tabs for each widget type: **Booking form**, **Calendar / Class**, **Profile**, **View videos**, **Sales form**, **Map**, **Contact form**, each with its own code and a **Copy** button.
 
 | Field | Description |
 |---|---|
-| `Deployment URL of the widget` | The URL where the widget is deployed. |
+| `Embed method` | **Body only** — one snippet, paste it where the widget should appear. **Head + body (loads faster)** — a second snippet goes in the page `<head>` so the widget starts loading sooner. |
+| `Deployment URL of the widget` | The page the widget is deployed on. You can embed as many copies as you like, as long as at least one lives on this URL. To change it, use the widget's own settings. |
 | `Installation instructions` | How to place the embed code on your website. |
-| **Customize embed code** | Open advanced embed customization. |
-| `Choose programmes` | Select which programmes to include. Shows count of selected programmes. |
-| `Show filter by programme` | Check **Yes** to let visitors filter by programme name. |
-| `View filtering by location` | Check **Yes** to let visitors filter by location. |
+| **Customize embed code** | Opens the three fields below. |
+| `Choose programmes` | **Choose** picks which programmes appear in this copy of the form. `Selected programmes: 0` means all of them. |
+| `Select venues` | Same for venues. `Selected venues: 0` means all of them. |
+| `Multi step booking` | Check **Yes** to split the booking form into separate steps — programme selection, personal details and so on — instead of one long page. |
+
+> **Filters for visitors are a Calendar widget setting, not an embed one.** `Show programme filtering`, `Show filter by programme`, `Show filter by programme type`, `View filtering by venue` and `View filtering by instructor` all live in the Calendar widget's own configuration, and only affect the calendar.
+
+> **JavaScript apps:** picking **NPM package** generates `npm install` snippets for React, Vue, Svelte and Web Components. If your site is built as a JavaScript app, use these instead of the raw script — see [Deploying widgets in a JavaScript app](../setup/deploying-zooza-on-website.md#deploying-widgets-in-a-javascript-app-react-vue-and-others).
 
 ### Customize Section
 

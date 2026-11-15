@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-09"
+last_converted: "2026-11-15"
+related_articles: ["client-profile-faq","bookings-list","client-management-faq"]
 ---
 
 # Clients
@@ -118,7 +119,7 @@ Each booking card in the client detail shows:
 | `Payment` | Payment status icon (green = paid, red = overdue). |
 | `Paid` | Total amount paid. |
 | `Amount to pay` | Outstanding amount (negative = amount owed). |
-| `Current account balance` | Running balance for this client. |
+| `Booking balance` | Net position **for that one booking**, not a running total for the client. Zero means settled. |
 
 Each booking has **Add payment** and **Show payments** action buttons.
 

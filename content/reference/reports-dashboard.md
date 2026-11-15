@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-11-06"
+last_converted: "2026-11-15"
 related_articles: ["sessions-list", "payments-dashboard", "recording-an-administrative-refund"]
 ---
 
@@ -231,53 +231,55 @@ The dashboard card shows the latest date with processed and failed counts.
 
 > **Permission required:** Owner role
 
-> **Navigation:** Go to **Payments** → **Reports** → **Refunds**.
+> **Navigation:** Go to **Sales & Payments** → **Payments** → **Refunds**, then the **Issued** tab.
 
 A date-filterable list of all refunds — the outbound mirror of the received-payments list. Use it for monthly reconciliation and accounting: "how much did we refund in June, and to whom?"
+
+**Requests** is the other tab: refunds a client has asked for and nobody has actioned yet. **Issued** is money that has already gone back.
 
 ### Filters
 
 | Filter | Description |
 |---|---|
-| `From` / `To` | Date range filter on the refund value date. |
+| `Date from` / `Date to` | Date range on the refund date. **Reset** clears both. |
 
 ### Report columns
 
-Always visible:
+Every refund takes two rows on screen. The first row identifies it:
 
 | Column | Description |
 |---|---|
-| `Date` | Value date and posting date of the refund. |
-| `Amount` | Refund amount (always shown as a negative value, e.g. −€30). |
-| `Currency` | Payment currency. |
-| `Client` | Client name and email linked to the refund. |
-| `Reference` | Booking or order the refund relates to. |
-| `Note` | Admin note attached to the refund (if any). |
-| `Status` | Processing status (e.g. Pending, Completed). |
+| `Amount` | Refund amount, always negative (e.g. −£30.00). |
+| `Refund date` | The date the refund was issued. |
+| `Client` | Name, email and phone of the client the money went back to. |
+| `Programme/Product` | What the refund relates to, with the class and session date underneath. |
+| `Booking / Order` | The booking or order number. |
 
-Additional columns visible on **Export** only (blank for older or manually-recorded refunds):
+The second row is how it was done. All five are blank (`—`) on refunds that were recorded by hand before the gateway flow existed, which is expected:
 
 | Column | Description |
 |---|---|
-| `Payment method` | Original payment method (card, bank transfer, etc.). |
-| `Refund type` | Full or partial. |
-| `Source` | Gateway-initiated or administrative. |
-| `Provider refund ID` | Reference from the payment gateway (e.g. Stripe). |
-| `Issued by` | Admin who issued the refund. |
+| `Status` | Where the refund has got to. |
+| `Original payment method` | How the client had paid in the first place. |
+| `Refund type` | **Full** or **Partial**. |
+| `Source` | **Gateway** — sent back through the payment provider. **Administrative** — recorded in Zooza because the money was returned some other way. |
+| `Issued by` | The admin who issued it. |
+
+Under both rows, `Note` holds whatever the admin typed when issuing the refund.
 
 ### Export
 
-Click **Export** to download the full column set as XLSX. The export follows the same download mechanism as the Inbound payments export.
+Click **Export** to download the list. The export follows the same download mechanism as the Inbound payments export.
 
-> **Note:** Older refunds recorded manually (before the refund gateway flow was introduced) appear in the on-screen list but some of the enrichment columns will be blank. This is expected — every refund is included; only the gateway metadata is missing for historical entries.
+> **There is no payment-gateway reference on this screen.** If your accountant needs to tie a refund back to a Stripe or GoCardless record, match it on the amount and date, or find the original payment on the booking.
 
 ---
 
-## Disrupted Sessions Report
+## Session attendees — Rescheduled, Substituted, Cancelled
 
 > **Permission required:** Owner role
 
-> **Navigation:** Go to **Reports & Insights** → **Reports** → **Sessions** → **Rescheduled**, **Substituted**, or **Cancelled**.
+> **Navigation:** Go to **Reports & Insights** → **Reports** → **Sessions** → **Rescheduled**, **Substituted**, or **Cancelled**. The page header reads **Session attendees**, with the view you picked underneath.
 
 Shows which clients were affected by rescheduled, substituted, or cancelled sessions — one row per (booking × disrupted session). Use it to answer questions like "which clients had their May sessions rescheduled?" or to export a contact list after a batch of cancellations.
 
@@ -289,24 +291,32 @@ The three views (Rescheduled, Substituted, Cancelled) share the same layout and 
 
 | Filter | Description |
 |---|---|
-| `Date range` | The period to report on (applies to the disrupted session date). |
-| `Programme` | Narrow to a specific programme. |
-| `Class` | Narrow to a specific class. |
-| `Instructor` | Filter by the instructor originally assigned to the session. |
-| `Location` | Filter by venue. |
-| `Billing period` | Align with a billing period. |
 | `Client` | Search by client name or email. |
+| `Programme` | Narrow to a specific programme. |
+| `Instructor` | Filter by the instructor originally assigned to the session. |
+| `Venue` | Filter by venue. |
+| `Billing period` | Align with a billing period. |
+| `from` / `to` | The period to report on, applied to the session date. |
 | `Day` | Filter by day of week. |
+
+**Reset** clears all of them at once.
 
 ### Report columns
 
+Each entry takes two rows. The first row is the session:
+
 | Column | Description |
 |---|---|
-| `Date` | Session date (rescheduled/cancelled date). For rescheduled sessions, the original date is shown as a subtitle. For substituted sessions, the original and substitute instructor are shown. |
-| `Programme / Class` | Programme name and class name (both clickable links). |
-| `Attendee` | The person who attended (may differ from the account holder if the booking is for a child). |
-| `Client (Buyer)` | The account holder (booking owner), with name and email. |
-| `Attendance` | The recorded attendance state for that session (attended, no-show, cancelled, etc.). |
+| `Date` | The session date, with **who did it and when** underneath — e.g. *Cancelled 2025-11-21 by Brian James*. For rescheduled sessions the original date is shown there instead; for substituted ones, the original and the stand-in instructor. |
+| `Programme` | The programme, with the class and its regular day and time underneath. Both are links. |
+
+The second row is the person:
+
+| Column | Description |
+|---|---|
+| `Attendee` | The child or person booked in. |
+| `Client` | The account holder who made and pays for the booking — often the parent, so frequently a different name from `Attendee`. Shows their email and phone. |
+| `Attendance` | What was recorded for that session. A dash means nothing was recorded, which is the usual state on a session the business itself cancelled. |
 
 ### Export
 

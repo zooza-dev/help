@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: "legacy/0084_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-06"
+last_converted: "2026-11-15"
 ---
 
 # Payment Pairing for Bank Transfers & Direct Debit
@@ -212,25 +212,31 @@ Filter by **Last 7 days**, **Last 30 days**, **Last 90 days**, or **All time**.
 
 ## Reading the received-payments export
 
-**Sales & Payments → Transactions → Export** exports exactly what the current filter shows. The `Transaction type` column is the one that causes most confusion:
+**Sales & Payments → Transactions → Export** exports exactly what the current filter shows.
+
+The screen is split into tabs — **Cash & Transfer**, **Card**, **Direct Debit** and **Import payments** — so pick the tab before you filter. Each entry spans three rows: amount, `Payment reference`, `Date of receipt` and `Source` on top; then `Transaction type`, `Client` and `Programme/Product`; then `Created by`, `Payment category` and `Note`.
+
+Two columns cause most of the confusion, and they answer different questions.
+
+**`Source` — where the record came from:**
 
 | Value | Meaning |
 |---|---|
-| `Credit` | The payment was recorded **manually** in Zooza. |
-| `Credit via Transfer` | The payment arrived as a **bank transfer** and was paired. |
-| *(blank)* | A bank transaction Zooza **could not pair to any registration**. |
+| `Manual input` | Somebody typed it into Zooza |
+| `Bank import` | It came off a bank statement |
+| `Automatic pairing` | Zooza matched it to a booking by itself |
+| `Zooza` | Zooza created it |
+| `ZOOZA (attendance)` | Created by marking attendance on a pay-as-you-go session |
 
-Blank rows are expected. Once your bank account is linked, Zooza stores **every** transaction that reaches the account, including ones that have nothing to do with Zooza. They sit in the database unassigned and mean nothing until you act on them.
+**`Transaction type` — what kind of money movement it is.** The two you will see most are `Credit` and `Payment by bank transfer`. Others name the gateway or the kind of charge: `Payment by card`, `Direct Debit`, `Stripe Connect`, `Registration fee`, `Discount`, `Refund`, `Correction payment`.
 
-To export only the payments that matter:
+> **Internal codes are not column values.** You may see `CREDIT_VIA_TRANSFER` in an export or an API response. On screen that is `Payment by bank transfer` — the same thing under its real name.
 
-1. Set the first filter to **From Bank**.
-2. Set **Status** to **Paired**.
-3. Export.
+Once your bank account is linked, Zooza stores **every** transaction that reaches the account, including ones with nothing to do with Zooza. They mean nothing until you act on them.
 
-For the unpaired ones, open **Sales & Payments → Payment reconciliation** and filter the queue to **Unpaired**. Search for the client by name, pick the registration, and pair the payment — the result is identical to automatic pairing. Transactions unrelated to Zooza can be dismissed with **Ignore**.
+For those, open **Sales & Payments → Payment reconciliation** and filter the queue to **Unpaired**. Search for the client by name, pick the booking, and pair the payment — the result is identical to automatic pairing. Transactions unrelated to Zooza are dismissed with **Ignore**, after which they show as `Ignored`.
 
-> Cash versus non-cash cannot be read from `Transaction type` alone, because the column describes how the record was created rather than how the client paid. Filter by **Payment method** before exporting if that is the split you need.
+> Cash versus non-cash cannot be read from `Transaction type` alone, because the column describes the kind of movement rather than how the client handed the money over. Use the **Cash & Transfer** and **Card** tabs for that split.
 
 ## Frequently Asked Questions
 
