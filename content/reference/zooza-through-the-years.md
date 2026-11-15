@@ -7,11 +7,11 @@ product_area: "Dashboard"
 sub_area: ""
 audience: ["admin"]
 tags: ["reference", "changelog", "onboarding"]
-status: "draft"
+status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-09"
+last_converted: "2026-11-15"
 related_articles: ["reports-dashboard", "getting-started-with-zooza"]
 ---
 
@@ -20,9 +20,10 @@ related_articles: ["reports-dashboard", "getting-started-with-zooza"]
 A cross-section of what the app looked like at each stage, and of how releases
 were made — which changed more than the screens did.
 
-> **Draft, not published.** This page is in the repository but not on the help
-> centre. It stays that way until the picture set is complete and we have
-> decided who it is for.
+> **Who this is for.** Anyone who wants to know why Zooza is shaped the way it is —
+> a new colleague, a franchise partner, or a client who has been with us long enough
+> to remember an older screen. It is a record, not a guide: nothing here tells you
+> how to do anything.
 
 ---
 
