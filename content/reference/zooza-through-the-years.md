@@ -1,6 +1,6 @@
 ---
 title: "Zooza through the years"
-description: "Ten years of Zooza in pictures: what the app looked like at each stage, what it could do, when each capability arrived, and why the product is shaped the way it is."
+description: "Ten years of Zooza in pictures: what the app looked like at each stage, what it could do, and when each capability arrived."
 slug: "zooza-through-the-years"
 type: "reference"
 product_area: "Dashboard"
@@ -11,14 +11,13 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-15"
+last_converted: "2026-11-16"
 related_articles: ["dashboard", "getting-started-with-zooza", "reports-dashboard"]
 ---
 
 # Zooza through the years
 
-Ten years of screens, side by side, with what each one could do at the time — and
-why the product ended up shaped the way it is.
+Ten years of screens, side by side, with what each one could do at the time.
 
 > **Who this is for.** Anyone who wants to know why Zooza works the way it does —
 > a new colleague, a franchise partner, or a client who has been with us long enough
@@ -28,6 +27,26 @@ why the product ended up shaped the way it is.
 > Some screenshots are of the Slovak app, because for the first seven years that was
 > the only app there was. Names and figures belonging to real companies have been
 > blurred out.
+
+---
+
+## At a glance
+
+| Year | What arrived |
+|---|---|
+| 2016 | Courses, schedules, and people signing up online |
+| 2017 | More than one company in one account · named terms · a public catalogue · extra questions on the sign-up form |
+| 2019 | A page of the client's own |
+| 2020 | Your schedule embedded on your own website · email and SMS from inside Zooza |
+| 2021 | **Online payments** · the shop · refunds · automatic payments · moving a booking to another class |
+| 2022 | **Invoicing** · instructors, with their working hours · a layout that works on a phone |
+| 2023 | Matching bank transfers to bookings · course ratings · **the app in English** |
+| 2024 | Guided set-up · instructor payroll · discounts |
+| 2025 | **WhatsApp** · AI payment matching · referrals, sibling and returning-client discounts · a view across a whole franchise network |
+| 2026 | **Ask Zooza a question and it answers** · passkey login · lead capture · settings you can search |
+
+In 2026 alone, more than **750 separate pieces of work** reached customers — roughly
+three every working day. Most of them are small; that is rather the point.
 
 ---
 
@@ -57,9 +76,8 @@ plan being executed.
 
 ## What things got called
 
-The vocabulary moved as much as the screens did, and it is the quickest way to date a
-screenshot. Everything in this table is read off the left-hand menu of a picture
-further down this page.
+The vocabulary moved as much as the screens did, and it is the quickest way to date an
+old screenshot — or to work out what a long-standing client means.
 
 | Screen dated | The thing you sell | The group that meets | One meeting of it | Who teaches it |
 |---|---|---|---|---|
@@ -90,11 +108,10 @@ schedules, online registration, cancellations, waiting list and make-ups. No tab
 no sections, no search — you scrolled.
 
 What makes this particular picture worth keeping is that it is **annotated**. Somebody
-opened it in Edge's Web Note and wrote fourteen numbered notes explaining what each field
-was for — why the price field means one thing for a whole-course booking and another when
-each session is sold separately, what the cancellation deadline is really protecting, what
-"offer make-ups" should and should not reach. It is the only surviving record of the
-reasoning, not just the result.
+opened it and wrote fourteen numbered notes explaining what each field was for — why the
+price field means one thing for a whole-course booking and another when each session is
+sold separately, what the cancellation deadline is really protecting, what "offer
+make-ups" should and should not reach.
 
 And the reasoning holds up. Note 14 asks whether a make-up may be taken in any course or
 only this one. That is, word for word, a setting in the product today. Note 3 already
@@ -117,10 +134,10 @@ triangle.
 
 ![The Zooza course list in February 2017: plain white tiles, a top menu of four items, and a company switcher listing three companies](../../assets/images/history/2017-02-v2-courses.png)
 
-Version two. The menu is across the top — *Kurzy, Kalendár, Zákazníci, Emaily* — and
-in the corner there is a **company switcher** with three companies in it. Multi-company
-was in Zooza from its second year; the franchise dashboard of 2025 is the same idea,
-eight years older.
+The menu moves across the top — *Kurzy, Kalendár, Zákazníci, Emaily* — and in the corner
+there is a **company switcher** with three companies in it. Running more than one company
+from one login was in Zooza in its second year; the franchise dashboard of 2025 is the
+same idea, eight years older.
 
 ![The February 2017 course form, with tabs for the course and its groups, and three choices for online registration](../../assets/images/history/2017-02-course-form.png)
 
@@ -149,7 +166,7 @@ still in the product:
 
 - **registration type** — one hour, or the whole course;
 - **a make-up limit**, with the note *zero means no limit*;
-- **show in the catalogue**, which published the course on zooza.sk;
+- **show in the catalogue**, which published the course publicly;
 - **extra registration-form fields** — billing address, date of birth, full name — each
   switched on one at a time.
 
@@ -198,34 +215,21 @@ clients actually see. Every design decision since has had to work twice.
 ![The Communication hub in January 2020: five tiles for sending email, sending SMS, sent messages, templates and SMS credit](../../assets/images/history/2020-01-communication.png)
 
 Inside the app, *Komunikácia* is five tiles: send an email, send an SMS, sent messages,
-message templates, SMS credit. The menu is up to five items. Everything in the
-Communication section today — campaigns, WhatsApp, automatic notifications, delivery
-history — grew out of those five tiles, and the oldest one is **SMS**.
+message templates, SMS credit. Everything in the Communication section today — campaigns,
+WhatsApp, automatic notifications, delivery history — grew out of those five tiles, and
+the oldest one is **SMS**.
 
-### 2020 – 2022 · one release a quarter, each with a name
+### 2021 · the money
 
-The repository begins on **21 November 2020**. From here the record stops being
-photographs and starts being commits.
+No screenshots survive from this year, but it is the most consequential one in the list.
+In twelve months Zooza learned to **take online payments**, to **sell things that are not
+courses**, to **give money back**, to **charge a card automatically**, and to **move a
+booking from one class to another**.
 
-Versions were planned in Jira and shipped as events. Each carried a name that said
-what it was for, and the commit messages still link to the release report.
-
-| Shipped | Version | Named (Slovak) | What it was for |
-|---|---|---|---|
-| Dec 2020 | 2.5.3 | *Servisný release Leto 2020* | Summer 2020 service release |
-| Jan 2021 | 2.5.4 | *Online platby* | **Online payments** |
-| Apr 2021 | 2.5.5 | *Eshop — nehmotné veci* | **The shop**, for intangible goods |
-| Jul 2021 | 2.5.6 | *Fixy, BabyBalance web a Book 1* | Fixes, the BabyBalance site, Book 1 |
-| Aug 2021 | 2.5.7 | *Fixy a drobné veci* | Fixes and small things |
-| Sep 2021 | 2.5.8 | *Refundácie a automatické platby* | **Refunds and automatic payments** |
-| Oct 2021 | 2.5.9 | *Presúvanie registrácií* | **Moving bookings** between classes |
-| Nov 2021 | 2.5.10 | *Drobné fixy* | Small fixes |
-| Jan 2022 | 2.5.11 | *Fakturačný systém* | **The invoicing system** |
-
-Read down the names and the product's priorities are obvious: **take money, then sell
-other things, then give money back, then move people around, then invoice for all of
-it.** Each one is a quarter of work landing at once, and the order is the order in
-which schools hit the problem.
+Read in that order it is almost a sentence: take the money, sell them something else,
+refund it when you have to, collect it again next month, and move the child to Tuesday
+when Monday stops working. That is the order in which schools hit the problem, and so it
+is the order in which it got built.
 
 ### June 2022 · the people who teach
 
@@ -236,8 +240,8 @@ system knows about**, not just a name typed onto a class. The profile has workin
 and a month grid for entering availability, with public holidays already marked in red.
 
 The menu has reached nine items. *Objednávky*, *Dokumenty* and *Produkty* have appeared,
-which is the shop of 2021 growing into the rest of the app. There is a help bubble in
-the bottom corner.
+which is the shop of 2021 growing into the rest of the app. And at the start of the year,
+**invoicing** — the thing an accountant will accept — went in.
 
 ### September 2022 · it fits in a hand
 
@@ -260,15 +264,12 @@ programme that shipped properly in 2025 was already running three years earlier.
 
 ### March 2023 · the dashboard answers back
 
-![The Zooza dashboard in March 2023, with donut charts for registrations and payments, a customers-per-month bar chart, and the application version printed at the foot of the menu](../../assets/images/history/2023-03-dashboard.png)
+![The Zooza dashboard in March 2023, with donut charts for registrations and payments and a customers-per-month bar chart](../../assets/images/history/2023-03-dashboard.png)
 
 Occupancy on one side, payment status on the other, and a bar chart of new clients by
 month. Payments are split five ways — paid, unpaid, part-paid, overpaid, free — which is
 a more honest set of states than any accounting tool offers, and it exists because
 schools genuinely have all five.
-
-At the foot of the menu: **application version 2.6.5**, with a link to the change log.
-The version number was something the customer could see.
 
 ![The Payments screen in March 2023, showing total income, outstanding balance, expected income at full occupancy, and a prompt to set up automatic payment matching](../../assets/images/history/2023-03-payments.png)
 
@@ -276,7 +277,7 @@ The payments screen is already asking the question it asks today — *how much i
 and who has not paid* — and already offering to do the matching itself. The yellow bar
 reads **"you have not set up automatic payment matching"** and links to the instructions.
 
-Rule-based matching in 2023; **AI Payment Pairing** in 2025. The job did not change, only
+Matching by rules in 2023; **AI payment matching** in 2025. The job did not change, only
 how well it could be done.
 
 ### December 2023 · the app speaks English
@@ -292,22 +293,6 @@ calendar are **Daily Overview**, **Planning calendar** and **Replacement lessons
 This is the single largest change in the product's history and it is invisible in a
 feature list. Everything after this point had to be written twice, and every term had to
 be one a stranger could understand.
-
-### 2023 – 2024 · release branches instead of Jira versions
-
-Jira version names stop. Work moves onto `release-*` branches merged into main, and the
-names go with them.
-
-| Shipped | Version |
-|---|---|
-| Mar – Jun 2023 | 2.6.6, **2.6.7**, **2.6.71** *(translations)* |
-| Apr 2024 | **2.8** |
-| May 2024 | **2.9** |
-| Aug 2024 | **3.0** |
-| Oct 2024 | **3.1** |
-
-Four releases in 2024 against one a quarter before it. The cadence is tightening but
-the shape is the same: a branch collects work for weeks, then lands in one go.
 
 ### December 2024 · the dashboard becomes a to-do list
 
@@ -330,23 +315,14 @@ sessions** and **what is owed for sessions actually taught**. Whether a cancelle
 is paid is a question every school answers differently, so the report answers it both
 ways.
 
-### 2025 · four releases, each with a theme
+### 2025 · reaching parents where they already are
 
-| Shipped | Version | What went in |
-|---|---|---|
-| 28 Jan 2025 | **3.4** | |
-| 28 Mar 2025 | **3.5** | |
-| 9 Jun 2025 | **3.6** | |
-| 16 Aug 2025 | **3.7** | WhatsApp, the course wizard, Ecomail |
+The year's theme names itself: **WhatsApp** instead of email, bulk sending through
+Ecomail, and a wizard so setting a course up stopped being the long form of 2016.
 
-The feature branches merged into 3.7 name themselves, and they say what 2025 was
-about: **reaching parents where they already are.** WhatsApp instead of email,
-Ecomail for bulk sending, and a wizard so setting a course up stopped being the
-long form of 2016.
-
-**3.7.5** is the first release with a full customer-facing changelog — twenty-five
-entries, written for the people using it rather than for the team. A sample of what
-landed in one release:
+It is also the year the change log started being written for the people using Zooza
+rather than for the team. One release in August carried twenty-five entries, and the
+spread is a fair sample of what a year looks like now:
 
 - **AI Payment Pairing** — matching bank transfers to bookings without a human
 - **Fast Attendance**, **Cancellation Log**, **Payment Adjustments**
@@ -356,12 +332,12 @@ landed in one release:
 
 ### August 2025 · one company becomes a network
 
-![A network dashboard in August 2025: total revenue, total enrolments, new enrolments and 162 network companies, with revenue, royalties and a monthly trend charted below](../../assets/images/history/2025-08-network-dashboard.png)
+![A network dashboard in August 2025: total revenue, total enrolments, new enrolments and the number of network companies, with revenue, royalties and a monthly trend charted below](../../assets/images/history/2025-08-network-dashboard.png)
 
-A view above the app itself: **162 companies in one network**, eleven thousand
-enrolments, revenue and **royalties** charted side by side, and a ranked list of the
-best-performing franchises for the month. Further down the same report, companies are
-scored against each other and sixteen are flagged as needing attention.
+A view above the app itself: **a hundred and sixty-two companies in one network**,
+eleven thousand enrolments, revenue and **royalties** charted side by side, and a ranked
+list of the best-performing franchises for the month. Further down the same report,
+companies are scored against each other and the ones needing attention are flagged.
 
 The language switcher at the foot carries six languages — English, Slovak, German,
 Czech, Polish, Romanian.
@@ -376,48 +352,20 @@ calendar, client profile, videos, sales form, map** — installable on Wix, on W
 or by hand. This is also the screenshot where the menu first says **Classes**,
 **Sessions** and **Instructors**.
 
-### 2026 · written down before it is built, and shipped when it is done
-
-The year opens on the old pattern and abandons it mid-way.
-
-| Shipped | Version | Entries |
-|---|---|---|
-| early 2026 | **3.8** | 12 |
-| | **3.8.1** | 3 |
-| 30 Apr 2026 | **3.8.2** | 11 |
-| 17 May 2026 | **3.8.3** | 10 |
-| 28 May 2026 | **3.8.4** | 13 |
-
-**And then the version numbers stop.** After 3.8.4 the changelog is stamped with the
-month instead: `2026.06`, `2026.07`, `2026.08`, `2026.09`, `2026.10`, `2026.11`. There
-is no 3.9. Work is written as a specification first, built, and shipped when it is
-done — the month is just when it reached people.
-
-**The specification system started in February 2026**, and by November it had produced
-**787 implemented specs** across the three repositories:
-
-| Month (2026) | Specs implemented |
-|---|---|
-| February | 14 |
-| March | 69 |
-| April | 82 |
-| May | 80 |
-| June | 64 |
-| July | 52 |
-| August | 49 |
-| September | 111 |
-| October | 81 |
-| November | 61 *(to the 15th)* |
-
-That is the real change in 2026. Not that more ships — that **nothing ships without
-being written down first**, including the reasons, the things deliberately left out,
-and what would have to be true for it to be correct.
+### 2026 · you can just ask it
 
 ![The Zooza dashboard in November 2026: a greeting, a prompt box for Zooza AI, next sessions, and a dozen menu groups down the left](../../assets/images/history/2026-11-dashboard.png)
 
 Set this against the 2019 dashboard above. The sidebar is the same colour and the
 wordmark is the same orange — but the four menu items are now a dozen groups, and the
-first thing on the page is **a box you type a question into**.
+first thing on the page is **a box you type a question into**. Ask how many places are
+left on Tuesday, or who has not paid, and you get the answer rather than the screen that
+holds it.
+
+Around it, a year of smaller things that each remove a step: **passkey login**, so
+nobody waits for a code; **lead capture**, so an enquiry that is not yet a booking is
+still somebody you can follow up; and a **search box in settings**, because there are
+now more settings than anybody can scan.
 
 ---
 
@@ -443,33 +391,14 @@ expecting you to hold the whole thing in your head at once.
 
 ---
 
-## How releases were made
-
-The shipping method changed more than the product did, and in a direction worth naming.
-
-| Era | Unit of work | How often | Decided |
-|---|---|---|---|
-| 2020 – 2022 | A named Jira version | Roughly quarterly | In Jira, before the quarter |
-| 2023 – 2024 | A `release-*` branch | Three or four a year | In the branch, as it filled |
-| 2025 | A themed release | Four a year | By theme, up front |
-| 2026 | One written specification | Continuously | In the spec, before any code |
-
-Each step moves the decision earlier and the batch smaller. The 2020 release shipped a
-quarter of work and found out afterwards whether it was right. A 2026 spec states what
-is in scope, what is explicitly out, and how you would know it worked — before the first
-line is written.
-
----
-
 ## Where the pictures come from
 
-The screenshots are from a set kept since the first month, filed by the date they were
-taken: `2016-07` · `2016-09` · `2017-02` · `2017-10` · `2019-09` · `2020-01` ·
-`2022-06` · `2022-09` · `2023-03` · `2023-12` · `2024-12` · `2025-08`. Seventy-six
-files in all, including two presentations and a document of change notes. The 2026
-screens were taken for this page.
+They are from a set kept since the first month, filed by the date they were taken:
+`2016-07` · `2016-09` · `2017-02` · `2017-10` · `2019-09` · `2020-01` · `2022-06` ·
+`2022-09` · `2023-03` · `2023-12` · `2024-12` · `2025-08`. The 2026 screens were taken
+for this page.
 
-**What the archive cannot tell you is who asked.** It records that invoicing shipped in
+**What they cannot tell you is who asked.** The record shows that invoicing arrived in
 January 2022; it has nothing to say about the school that could not issue a document
 their accountant would accept. That half of the story lives with the people who were
 there, which is why *Why it changed* above is written as one honest set of reasons
