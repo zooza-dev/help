@@ -294,9 +294,9 @@ When a replacement client from another branch books a session at your branch, th
 
 ### Replacement report
 
-In the **Calendar** tab, a report shows how many make-up session your clients used at your own branch versus other branches. The report includes the price for each replacement, which serves as a basis for financial arrangements between branches. Click the **Make-up session** button to view this report.
+In the **Calendar** tab, a report shows how many make-up sessions your clients used at your own branch versus other branches. The report includes the price for each replacement, which serves as a basis for financial arrangements between branches. To view this report, open the **Daily Overview** menu and choose **Make-up sessions**.
 
-![Replacement lessons report in Calendar](../../assets/images/replacement-hours-cross-13.png)
+![Make-up sessions report in the Calendar's Daily Overview menu](../../assets/images/replacement-hours-cross-13.png)
 
 > **Note:** Financial settlements between branches happen outside Zooza, based on your mutual agreement. Zooza provides the data but does not process inter-branch payments.
 
