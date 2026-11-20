@@ -86,6 +86,14 @@
     },
     {
       "@type": "Question",
+      "name": "One email address, one account — even across roles",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An email address identifies one account in Zooza, and that account carries one role: the\nhighest one it has been given. The same address cannot be an instructor here and a parent\nthere.\n\nThis is what people run into:\n\n- \"It says the email is already known.\" It is — usually because the person is already\n  in the system as a parent, or as an instructor somebody created during set-up. You\n  cannot add them a second time.\n- \"I have two instructors with the same address.\" You cannot. Zooza has one account\n  behind that address; whatever you were looking at was the same account twice.\n- An instructor who is also a parent signs in once and sees both: their classes, and\n  their own child's bookings.\n\nTo find out what actually exists, open Settings → General → Access. Every account\nwith access to your company is listed there with its email. If a name is wrong — a\nleft-over \"Žabulienka\" from set-up, say — change the name on that account rather than\ntrying to add another.\n\nIf someone genuinely needs to be two separate people in Zooza (a tester account, a shared\nreception address), give the second one its own email address."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "A colleague's name changed on their own profile — who did that?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -138,6 +146,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Almost always this is two different accounts, not a fault.\n\nThe address you use as a client is not automatically an admin address. A parent profile on your website and the Zooza admin app are separate logins. If your staff address is you@yourschool.sk but you are typing the address you once booked with as a parent, Zooza will not send you an admin code — that address simply is not an access account.\n\nCheck Settings → General → Access for which address is registered as your access, and use that one.\n\nZooza never says whether an address exists. Type any address and the screen says a code has been sent, whether or not the account is real. That is deliberate — telling an attacker which addresses are registered is a gift — but it does mean \"it says it sent a code and nothing came\" is also what you see when the address was simply never an account here."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A client signs in, and is immediately told they are not signed in",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The code arrives, the code is accepted, and then the profile says \"User is not logged\nin.\" Meanwhile the unsubscribe from this session link in their reminder email works\nperfectly.\n\nThat combination points at the phone's browser, not at the account. Staying signed in\nneeds the browser to keep one small piece of data after the login; the link in the\nreminder email carries its own token, so it does not need anything kept. When a browser\nthrows that data away immediately, you get exactly this pair of symptoms.\n\nWhat to ask the client to try, in order:\n\n1. Open your website address directly in the browser — type it in rather than\n   following a link from the email — and go to the profile from there.\n2. In Settings → Safari, turn off Block All Cookies if it is on.\n3. Stop using a Private tab.\n4. Try a different browser, Chrome for instance.\n\nIf none of that helps, send us the phone model and the iOS version and we will dig\nfurther. Before you do, it is worth checking that your other clients can sign in — if they\ncan, the problem is on that one device, which is where the fix will have to be too."
       }
     }
   ]

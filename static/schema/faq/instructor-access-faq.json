@@ -38,6 +38,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can instructors export the client list?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, and it is not a permission that can be switched on. Exports are kept to owners,\nassistants and receptionists on purpose: a client database that can be exported is a client\ndatabase that can walk out of the door with somebody who leaves.\n\nWhen instructors ask for an export, what they usually want is a way to keep track of\nsomething per client — who is thinking of leaving, who still owes a form, who asked about\nthe next term. That does not need an export:\n\n- Labels can be put on a booking by anyone who can open it.\n  You can report on labels, filter the Bookings list by them, and they come out in the\n  export you run.\n- The note on a booking holds the detail — for instance why somebody is not continuing.\n\nEverything then sits on the booking itself instead of in a spreadsheet each instructor\nkeeps their own copy of, and you can still pull the whole picture when you need it."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How do I change instructor permissions?",
       "acceptedAnswer": {
         "@type": "Answer",

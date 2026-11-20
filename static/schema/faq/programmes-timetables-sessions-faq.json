@@ -318,6 +318,14 @@
     },
     {
       "@type": "Question",
+      "name": "What does the € symbol next to a session in the calendar mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That session is marked billable. Only one class in your calendar showing it usually\nmeans the Billable sessions checkbox was ticked while those sessions were being\ncreated — it is in the session creator, and it is easy to tick by accident.\n\nIt matters because of what the flag does: as soon as a class has billable sessions set,\nZooza prices the class from the flagged sessions only, instead of from all of them. See\nBillable sessions.\n\nIf you do not work with billable sessions deliberately, take the flag off. Go to\nActivities → Sessions, filter down to the class, select the sessions and use the bulk\naction toolbar to clear it. The € symbols disappear and the class prices normally again."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How do I bulk-mark sessions as paid?",
       "acceptedAnswer": {
         "@type": "Answer",
