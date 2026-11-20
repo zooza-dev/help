@@ -1690,9 +1690,22 @@ terms:
       it: "Numero di riferimento"
       fr: "Numéro de référence"
     intent_keywords:
-      en: ["reference number", "payment reference", "bank transfer reference"]
-      sk: ["variabilný symbol", "referenčné číslo", "VS", "prevod"]
+      en: ["reference number", "payment reference", "bank transfer reference",
+           "how is the reference number generated", "what reference should the parent use"]
+      sk: ["variabilný symbol", "referenčné číslo", "VS", "prevod",
+           "ako sa generuje variabilný symbol", "aký variabilný symbol má zadať klient"]
+      cz: ["variabilní symbol", "referenční číslo", "VS", "převod",
+           "variabilní symbol se generuje jak", "jak se generuje variabilní symbol"]
       de: ["Verwendungszweck", "Referenznummer", "Überweisung"]
+    ai_notes: >
+      2026-11-20: IT IS NOT GENERATED AND THERE IS NOTHING TO CONFIGURE. The reference /
+      variable symbol of a booking IS the booking number, and of a product order the order
+      number. That is the whole rule, and it is the answer to "how is the variable symbol
+      generated", which customers ask in Czech and Slovak and which went unanswered six
+      times in one thread. The answer lives in content/guides/payment-pairing.md under
+      "How is the variable symbol generated?", together with the two consequences: bookings
+      and orders are numbered in separate series, and enrolling after a trial creates a new
+      booking and therefore a new number.
     public: true
 
   - id: inbound-payment
