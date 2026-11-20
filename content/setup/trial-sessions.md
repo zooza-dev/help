@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/0058_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-08"
+last_converted: "2026-11-20"
 related_articles: ["trials-faq","trials-daily-business","individual-sessions","blocks-configuration"]
 ---
 
@@ -29,6 +29,26 @@ This approach is ideal not only for attracting new clients, but also for launchi
 
 **Programme → Settings** → the **Trial** tile → **Trial settings**. Everything on this page is set there,
 per programme. It is not under Additional fields, and there is no global trial page.
+
+## Running a free trial for a limited stretch of time
+
+A common plan: *free trials from now until the end of December, paid again from January.*
+
+**There is no date range on the trial settings.** The trial type is simply on or off for
+the programme, so running it for a period means switching it on now and switching it back
+off yourself when the period ends.
+
+Two ways to do that:
+
+1. **By hand.** Programme → Settings → the **Trial** tile → set it to a free trial, choose
+   how many sessions it covers and which classes it applies to. In January, open the same
+   tile and set it back.
+2. **Ask [Zooza AI](../faq/claude-plugin-faq.md).** It can make the change for you on the
+   day — "turn the free trial off on these programmes" — which saves you going through
+   each programme by hand if there are several.
+
+> **Put a reminder in your own calendar for the day it should end.** Zooza will not do it
+> for you, and a free trial left running into the new term is a term of free places.
 
 ## "Trial session" means three different things — decide which you want first
 

@@ -727,6 +727,11 @@ terms:
       (b) a one-off session sold as a taster; (c) a separate class holding a single date.
       Ask which before advising — it is not guessable from the question. A fourth, in
       Romanian only, is guest booking — see do_not_confuse_with.
+      2026-11-20 (owner): THERE IS NO DATE RANGE ON THE TRIAL. "Free trials until the end
+      of December, paid again in January" is switching the trial type on in the programme's
+      Trial tile now and switching it back off yourself then — by hand, or by asking Zooza
+      AI to do it across several programmes. Never imply a scheduled end exists; the
+      correct advice includes telling the operator to put the end date in their own diary.
 
       2026-10-30, verified in api-v1 and app source:
       - The trial EMAILS (Trial Ended, Trial Follow-up, Trial Lost) are ONE template per
@@ -1488,6 +1493,15 @@ terms:
           date is the one the admin chooses (the template's day of the month). The payment
           is CREATED earlier - due date minus the account's days-to-pay - and that is when
           the debt appears, the client is asked to pay and direct debit starts collecting.
+          THE DEFAULT GAP IS 15 DAYS. The setting is "Days before booking is marked unpaid"
+          (Settings - Billing & Payments - Payment settings - Payment acceptance policy),
+          and in code 0 or below - the column default, so most companies - means 15 for
+          instalments, not 0 (confirmed in Payment_Schedule_Order::calculate_scheduled_at,
+          owner 2026-11-20). So "I set the 15th and it created the payment on the 31st" is
+          exactly right, and a company asking for "the request at the start of the month,
+          due by the 15th" usually already has it. Changing the setting does not move
+          instalments that exist; "Update planned instalments" syncs upcoming ones and
+          leaves due dates alone.
           An advance-notice email can go out earlier still. So "I set the 15th but it is
           charging on the 1st" is correct behaviour, and the way to get a specific pair of
           dates is to set the due day AND the days-to-pay to the same gap. The gap between

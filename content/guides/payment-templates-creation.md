@@ -97,6 +97,52 @@ Note: If you use discounted payment templates, you can find a clear list of them
 
 ![Screenshot](../../assets/images/payment-templates-creation-08.png)
 
+## The day it is due and the day it is created are not the same day
+
+This is the single most asked question about payment templates, and the behaviour is
+correct — it just is not obvious.
+
+**You set the due day.** *Day of the month when the payment is due* on the template. Say
+you set the 15th.
+
+**Zooza creates the instalment earlier than that.** The template shows you both dates:
+
+> **Payment created** → *N days* → **Due date**
+
+`N` comes from **Settings → Billing & Payments → Payment settings → Payment acceptance
+policy → `Days before booking is marked unpaid`**. The template links straight to it with
+**Change notification & due-date settings**.
+
+**Left at 0 — which is how most accounts are set up — instalments are created 15 days
+before they are due.** So a payment due on 15 November is created on 31 October. That is
+what you are seeing, and it is not a mistake in your template.
+
+What happens on each of the two dates:
+
+| Date | What happens |
+|---|---|
+| **Payment created** | The debt appears on the booking. The client is asked to pay — the payment request email goes out, their profile shows the amount, the QR code works. A stored card or direct debit starts collecting from here. |
+| **Due date** | The last day for the money to arrive. After it the booking moves from *Awaiting payment* to *Unpaid* and the overdue warning goes out. |
+
+So the gap between the two is **how long the parent has to pay**. There is no separate
+"how many days to pay" field — that number is the gap.
+
+### "I want the request at the start of the month, due by the 15th"
+
+That is the default, and you very likely already have it:
+
+- *Day of the month when the payment is due* = **15**
+- days before the booking is marked unpaid = **15** (or 0, which means 15)
+
+The request then goes out on the 31st or the 1st and the money is due on the 15th. If you
+want a different pair — say asked on the 20th, due on the 1st — set the due day to 1 and
+the days to 11.
+
+> **Changing the number afterwards does not touch instalments that already exist.** The
+> Payment settings screen has an **Update planned instalments** action that brings upcoming
+> ones in line with the current setting. It is safe: due dates do not change — only the
+> date the payment is created and the date of the advance notice move.
+
 ## Split payment before the class start — selling months ahead
 
 A fourth template type, added in November 2026, for businesses that open bookings long
