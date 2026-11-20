@@ -6,7 +6,7 @@
 # ║  Edit there, then run: python3 scripts/sync_terminology.py      ║
 # ╚══════════════════════════════════════════════════════════════════╝
 #
-# Last synced: 2026-11-15
+# Last synced: 2026-11-20
 # Used by: scripts/normalize_terminology.py → build/terminology/dictionary.json
 #
 # Fields per term:
@@ -108,6 +108,50 @@ terms:
       'Class' is used at two levels: (1) the subdivision within a Programme (admin view),
       and (2) the top-level name for a Programme in the client/widget view.
       Context resolves the ambiguity. In admin, the hierarchy is Programme → Class → Session.
+    public: true
+
+  - id: class-defaults
+    canonical_en: "Class defaults"
+    category: "product-hierarchy"
+    definition: >
+      Values stored on a Programme that pre-fill every new Class created in it: all-day,
+      online booking, billing period, venue and room, instructor, pay rate, capacity,
+      session length and price overrides. Shipped November 2026.
+    context:
+      admin: "Class defaults"
+      client: null
+      widget: null
+    translations:
+      sk: "Predvolené hodnoty skupiny"
+      cz: "Výchozí hodnoty skupiny"
+    intent_keywords:
+      en: ["class defaults", "default capacity", "capacity is always 10",
+           "pre-fill a new class", "same venue every time", "default instructor"]
+      sk: ["predvolená kapacita", "stále mi dáva kapacitu 10", "predvyplniť skupinu",
+           "nastaviť kapacitu natrvalo"]
+      cz: ["výchozí kapacita", "lze nastavit výchozí kapacitu kurzu na jiné číslo než 10",
+           "předvyplnit skupinu"]
+    do_not_confuse_with:
+      - term: "Programme settings"
+        reason: >
+          Programme settings govern how the programme behaves for clients. Class defaults
+          only pre-fill the add-class form; changing them never alters a class that exists.
+    ai_notes: >
+      2026-11-20 (shipped, verified on a live screen): the first time a class is added to a
+      programme, pressing Create opens "Save class defaults for this programme?" BEFORE the
+      class is saved, listing every filled-in value with a tick box. Buttons: "Save defaults
+      and create class", "Not now, create class" (asks again next time) and "Back to form"
+      (saves nothing, creates nothing). Afterwards the add-class form carries a notice
+      "This form was pre-filled from this programme's class defaults" with "Clear defaults",
+      plus "Update defaults" once a value on the form differs from the stored one. A default
+      that can no longer be applied (instructor gone, venue deleted) is listed in the notice
+      with the reason, never dropped silently. The session pattern - weekdays, time, dates -
+      and the class name are never stored, because they change every term. Defaults belong
+      to the programme and apply to everyone in the company.
+      THIS IS THE ANSWER TO "CAN THE DEFAULT CAPACITY BE SOMETHING OTHER THAN 10". The
+      second half of that answer is that capacity, session length and pay rate live behind
+      the collapsed "More fields" summary on the add-class form, which is why people cannot
+      find them at all.
     public: true
 
   - id: session
@@ -1369,6 +1413,11 @@ terms:
       sk: "Spoplatnený termín"
       cz: "Zpoplatněný termín"
       de: "Abrechenbare Stunde"
+    intent_keywords:
+      en: ["billable session", "paid session", "euro sign on a session", "money symbol on a session"]
+      sk: ["platený termín", "spoplatnený termín", "eurko pri termíne", "znak € v kalendári",
+           "čo znamená € pri termíne"]
+      cz: ["placený termín", "zpoplatněný termín", "co znamená € u termínu"]
     do_not_confuse_with:
       - term: "Make-up session"
         reason: "Billable sessions affect pricing only. Make-up sessions are attendance management."
@@ -1385,6 +1434,12 @@ terms:
       a class is told "10 billable sessions" that default flips and ONLY sessions
       explicitly marked billable count. Mark none and the class calculates to zero.
       Confirmed against a live account 2026-09-13.
+      2026-11-20: THE € SYMBOL IN THE CALENDAR IS THIS FLAG. "Why does this one class show
+      a € next to its sessions" is a billable-session question even when the words never
+      appear: the Billable sessions checkbox in the session creator was ticked while those
+      sessions were made. For a company that does not use the feature deliberately, the
+      answer is to select those sessions in Activities - Sessions and clear the flag in
+      bulk, not to explain pricing.
     public: true
 
   # ──────────────────────────────────────────────
@@ -1455,6 +1510,17 @@ terms:
       figure; stating the instalment figure means template discounts are not applied on
       top, because that figure is taken as final. Once a plan is active, adjusting the
       debt changes only the current instalment, not the whole plan.
+
+      2026-11-20: APPLYING A PLAN REPLACES EVERYTHING CURRENTLY CHARGED on the booking,
+      the registration fee included. That is where the "Correction payment" and
+      "Registration fee correction" entries nobody created come from — they take the old
+      charges off so the new instalments can stand alone. Nothing is double-charged and
+      processed payments are untouched, but the booking's history gets long, so re-apply a
+      plan deliberately rather than to nudge one instalment.
+      2026-11-20: A PLAN STARTS ON THE DAY THE BOOKING WAS MADE, not when the class starts.
+      Someone booking three weeks early is three weeks into their plan on day one, so the
+      first instalment is taken at booking and the second can follow before the first
+      lesson. Correct behaviour, and a recurring "you charged November twice" report.
     public: true
 
   - id: aliquot
@@ -2016,9 +2082,22 @@ terms:
       it: "Luogo"
       fr: "Lieu"
     intent_keywords:
-      en: ["venue", "location", "place", "address", "where", "room", "hall"]
-      sk: ["miesto", "adresa", "kde", "sála", "miestnosť"]
-      de: ["Standort", "Ort", "Adresse", "Halle", "wo"]
+      en: ["venue", "location", "place", "address", "where", "room", "hall",
+           "regional holidays", "region on a venue", "school breaks not skipped"]
+      sk: ["miesto", "adresa", "kde", "sála", "miestnosť", "región", "regionálne sviatky",
+           "prázdniny sa nepreskočili", "ako sú nastavené prázdniny"]
+      cz: ["místo", "region", "jak jsou nastaveny obecné prázdniny", "která data jsou prázdniny"]
+      de: ["Standort", "Ort", "Adresse", "Halle", "wo", "Region", "Ferien"]
+    ai_notes: >
+      2026-11-20: HOLIDAYS ARE DECIDED PER VENUE, AND A VENUE CAN NOW CARRY SEVERAL REGIONS.
+      Settings - Venues - open the venue - the "Regional holidays" card: one Region row per
+      region plus an empty row to add another, each with Delete, and the card has its own
+      Save. A date is skipped when it is a holiday in ANY listed region, plus national
+      holidays. A venue with no region gets national holidays only, which is the usual
+      cause of "the sessions landed in half term" and is most often an online venue.
+      BEWARE THE SECOND FIELD CALLED REGION: the one in the venue's address card is part of
+      the address (help text "City area") and does nothing for holidays. The list of regions
+      offered comes from the company's country, which only support can change.
     public: true
 
   # ──────────────────────────────────────────────
@@ -2455,6 +2534,17 @@ terms:
       reconciling bank transfers by hand can delete a parent who genuinely paid.
       Reminders only reach bookings created after the setting was activated; the card shows
       the activation date, and existing debtors are not chased retroactively.
+      2026-11-20: THE AMOUNT IN THE EMAIL COMES FROM A TAG, AND THE WRONG TAG IS A COMMON
+      EDIT. *|PAYMENT_AMOUNT|* is the amount this particular email is about and is what the
+      QR code in the same email is built from, so the two can never disagree. It is what the
+      default payment templates ship with. *|COURSE_PAYMENT|* is a programme-level figure
+      for the booking and is larger than the outstanding amount as soon as part has been
+      paid. A reported case: the text said 50 EUR next to a QR code for the correct 25 EUR,
+      because the company had edited the Missed Payment template to use COURSE_PAYMENT in
+      both the sentence and the Amount row. When someone reports "the reminder shows the
+      wrong amount" or "the QR code and the text disagree", check the template's tags before
+      looking at the booking's figures. These payment templates are the ones companies
+      customise most, because they add their own payment terms to them.
     public: true
 
   - id: cancellation-fee
@@ -2989,8 +3079,9 @@ terms:
     intent_keywords:
       en: ["invoice", "invoice number", "invoice numbering", "number series", "send invoice",
            "delete invoice", "invoice pdf"]
-      sk: ["faktúra", "faktúry", "číslo faktúry", "číselný rad", "poradové číslo faktúry",
-           "zmazať faktúru", "preposielanie faktúr"]
+      sk: ["faktúra", "faktúry", "FA", "fa", "číslo faktúry", "číselný rad",
+           "poradové číslo faktúry", "zmazať faktúru", "preposielanie faktúr",
+           "faktúra na 0 eur", "nulová faktúra", "zmizli faktúry", "nevystavila sa faktúra"]
       cz: ["faktura", "číslo faktury", "číselná řada", "smazat fakturu"]
       hu: ["számla", "számlaszám"]
       ro: ["factură", "număr de factură", "serie facturi"]
@@ -3005,6 +3096,21 @@ terms:
       walking anybody through invoice generation: the document is the answer when the
       client needs it for their own records or their employer. See payment-link.
       Confirmed with the founder 2026-09-15.
+      2026-11-20: THREE CAUSES BEHIND "THE INVOICE IS WRONG OR MISSING", all confirmed on
+      real accounts. Start from the fact that Zooza has no mechanism for deleting an
+      invoice and the year's number series is unbroken — so nothing vanished.
+      (1) ZERO AMOUNT: the invoice carries what the booking owed or had paid ON ITS ISSUE
+      DATE. Either the real invoice already exists (automatic generation issued it when the
+      payment matched, and somebody then generated a second one by hand — with automatic
+      invoicing on, never generate by hand), or the invoice's period does not include the
+      date of the payment (edit the period).
+      (2) NEVER ISSUED: a missing buyer name fails the invoice with "No customer name
+      entered" and it is not retried. An overpayment raises no invoice automatically either.
+      (3) ON THE PARENT'S OTHER BOOKING: the invoice stays with the booking it was issued
+      for even when the payment is later moved. Typical when a parent creates two bookings
+      minutes apart.
+      A wrong invoice cannot be deleted — a credit note belongs in the accounting system.
+      Note "FA" is how Slovak operators abbreviate faktúra and it almost always means this.
     public: true
 
   - id: invoice-engine

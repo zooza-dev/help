@@ -9,8 +9,8 @@ tags: ["programme", "archive", "delete", "remove", "class", "hide"]
 status: "published"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-11-09"
-related_articles: ["trash-and-restore","term-rebooking-guide","creating-a-class","calendar-bulk-actions"]
+last_converted: "2026-11-20"
+related_articles: ["trash-and-restore","term-rebooking-guide","creating-a-class","calendar-bulk-actions","outstanding-amount","client-profile-101"]
 ---
 
 # Archive or delete a Programme
@@ -134,6 +134,30 @@ Zooza redirects you to the Programmes list after deletion.
 > **When to use this:** Programmes you no longer need and want fully removed from your active view. If the Programme has historical bookings you may want to reference later, consider archiving instead.
 
 ---
+
+## Archiving does not settle anything
+
+Archiving is a tidying tool for your own screens. It says nothing about money.
+
+A booking in an archived programme is still a valid booking: if the client owes 40 EUR,
+they still owe 40 EUR, and if they overpaid, you still owe them. So an archived programme's
+bookings keep appearing in the client's own profile with their payment status, and parents
+sometimes pay an old outstanding amount they find there years later.
+
+The fix is not to hide it — it is to square the bookings off, because everything else reads
+the same figures:
+
+- payment matching will keep trying to match money against them
+- the outstanding-payments report counts them
+- automatic reminders are driven by them
+
+So if the numbers on old bookings are not true, the reporting built on them is not true
+either. Settle them (a correction, a refund, or marking them paid), and the client's
+profile goes quiet by itself.
+
+> Clients see their own bookings in their profile whether or not you have archived the
+> programme behind them. There is no setting that hides a booking from the person who made
+> it.
 
 ## Summary
 

@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: "legacy/0005_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-09-26"
-related_articles: ["message-templates", "edit-session-notification-template", "sending-email-sms"]
+last_converted: "2026-11-20"
+related_articles: ["message-templates", "edit-session-notification-template", "sending-email-sms", "automatic-payment-reminders"]
 ---
 
 # Dynamic tags
@@ -61,6 +61,7 @@ Each email sent for a specific booking allows you to dynamically fill in client 
 | <code>&#42;&#124;COURSE_SUMMARY&#124;&#42;</code>                   | Start time of the programme together with the date                                         | 13. 5. -- 13.9.2023 at 15:00                          |
 | <code>&#42;&#124;COURSE_TIME&#124;&#42;</code>                      | Programme start time                                                                       | 14:00                                                 |
 | <code>&#42;&#124;COURSE_PAYMENT&#124;&#42;</code>                   | Programme price derived from booking. If none on booking, the programme price is used.     | 135 EUR                                               |
+| <code>&#42;&#124;PAYMENT_AMOUNT&#124;&#42;</code>                   | The amount this particular email is about — the instalment being requested, collected or chased. Always matches the QR code in the same email. Only resolves in the payment emails. | 25 EUR |
 | <code>&#42;&#124;CURRENT_BALANCE&#124;&#42;</code>                  | Current balance on the client's booking. Can be positive or negative.                      | -30 EUR                                               |
 | <code>&#42;&#124;CURRENT_BALANCE_ABS&#124;&#42;</code>              | Absolute value of the current balance — shown without a minus sign. Useful in sentences like "You owe X EUR". | 30 EUR                                                |
 | <code>&#42;&#124;PAID&#124;&#42;</code>                             | Total amount paid on the booking so far.                                                   | 100 EUR                                               |
@@ -311,6 +312,31 @@ itself.
 It is described there as the main contact address for you and your clients, which is
 exactly what it is: it goes out on payment emails, so it should be an address somebody
 actually reads.
+
+### The payment email says one amount and its QR code says another
+
+A parent who owed 25 EUR received an overdue-payment email saying 50 EUR — while the QR
+code in the same email correctly asked for 25 EUR.
+
+The sentence and the QR code are filled from different tags:
+
+| Tag | What it carries |
+|---|---|
+| <code>&#42;&#124;PAYMENT_AMOUNT&#124;&#42;</code> | The amount this email is asking for. The QR code is built from the same figure, so the two can never disagree. |
+| <code>&#42;&#124;COURSE_PAYMENT&#124;&#42;</code> | A programme-level figure for the booking. As soon as a parent has paid part of what is charged, it is larger than what they still owe. |
+
+So an email that says 50 EUR next to a QR code for 25 EUR is not a bug in the QR code. It
+is a template where the amount was written with the wrong tag.
+
+**Fix:** go to **Communication → Templates**, open the payment template — **Missed
+Payment**, **Upcoming payment**, **New payment**, or their automatic-collection
+counterparts — and replace every <code>&#42;&#124;COURSE_PAYMENT&#124;&#42;</code> with
+<code>&#42;&#124;PAYMENT_AMOUNT&#124;&#42;</code>. Check both places: the sentence in the
+body and the **Amount** row of the summary table underneath it.
+
+> <code>&#42;&#124;PAYMENT_AMOUNT&#124;&#42;</code> is what the default payment templates
+> ship with. If yours does not have it, the template was edited at some point — these are
+> the templates companies customise most, because they add their own payment terms to them.
 
 ### QR_CODE tag returns blank or doesn't appear
 

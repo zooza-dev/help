@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-11"
+last_converted: "2026-11-20"
+related_articles: ["recording-an-administrative-refund", "payment-correction-vs-refund", "stripe-payments-faq", "administrative-refund-faq"]
 ---
 
 # Refund a Stripe payment — step by step
@@ -64,13 +65,17 @@ Stripe processes the refund and the money returns to the client's card within 5�
 
 ### Step B — Record the refund in Zooza
 
-Stripe refunds issued outside Zooza are **not automatically reflected in Zooza**. You must record them manually, or your booking records will show income that has already been returned.
+Stripe refunds issued outside Zooza are **never passed back to Zooza**. Zooza only knows
+about refunds made from inside Zooza, so until you record it the booking still shows the
+money as received and *Refunds issued: 0.00*. Record it, or your figures count income you
+have already given back.
 
-1. Go to the client's booking in Zooza.
-2. Open the Stripe payment transaction.
-3. Click **Refund payment**.
+1. Open the booking and go to its **Payments** tab.
+2. Scroll down to the **Online payments** box and click the card payment you refunded.
+   It is not on the row in the Payments list — you have to open the payment itself.
+3. On the right, in the **Refund** box, click **Refund payment**.
 4. Enter the same amount you refunded in Stripe.
-5. Tick **Administrative refund only** — this records the refund in Zooza without sending a second instruction to Stripe.
+5. Tick **Administrative refund only** — this records the refund in Zooza without sending a second instruction to Stripe. If Stripe has already returned the money, Zooza tells you the gateway refund is not available and offers the administrative refund with the amount filled in.
 6. Click **OK**.
 
 This creates a negative transaction in Zooza that matches what you did in Stripe. Both systems now show the same state.

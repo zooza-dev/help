@@ -11,7 +11,7 @@ status: "published"
 source_legacy_path: "legacy/html/group-creation.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-09"
+last_converted: "2026-11-20"
 related_articles: ["creating-a-programme","programme-class-session-definition","edit-sessions-in-programmes","lead-collection"]
 ---
 
@@ -62,6 +62,12 @@ Fill in the following fields:
 ![Class details form](../../assets/images/creating-a-class-03.png)
 
 > **Note:** Fields marked with an orange icon are required.
+
+> **Capacity, session length and pay rate are behind More fields.** The form opens with a
+> one-line summary — *Capacity: 10, Duration: 60, Rate: Not Set* — and you click it to
+> open them. The price sits behind **Price** in the same way. Nothing is missing; it is
+> folded away. Capacity starting at 10 every time is the default you can change for good
+> with [class defaults](#class-defaults--fill-these-in-once-not-once-per-class).
 
 > **The instructor parents see is the one set here, on the class.** Changing the
 > instructor on individual sessions does not change the name on the booking form —
@@ -121,6 +127,50 @@ If this class should have a different price than the programme default, enter it
 This is useful when different class levels or locations have different pricing.
 
 ![Class price override](../../assets/images/creating-a-class-05.png)
+
+## Class defaults — fill these in once, not once per class
+
+Most classes in a programme are set up the same way: same venue, same instructor, same
+capacity, same length. Zooza can remember those values on the programme and pre-fill them
+into every new class.
+
+The first time you add a class to a programme, pressing **Create** opens this before the
+class is saved:
+
+![The Save class defaults dialog listing All day, Enable for online booking, Billing period, Venue, Instructor, Rate, Capacity and Duration, each with a tick box, above the Save defaults and create class button](../../assets/images/class-defaults-modal.png)
+
+Every value you filled in is listed with a tick box. Untick anything that genuinely changes
+from class to class, then choose:
+
+| Button | What happens |
+|---|---|
+| **Save defaults and create class** | The ticked values become the programme's defaults, and the class is created. |
+| **Not now, create class** | The class is created and nothing is remembered. Zooza asks again the next time you add a class here. |
+| **Back to form** | Nothing is saved and nothing is created — use this when you spot a value you want to correct first. |
+
+### What happens next time
+
+Every new class in that programme opens pre-filled, for everyone in your company, with a
+line at the top of the form saying so:
+
+![The notice at the top of the class form reading "This form was pre-filled from this programme's class defaults", with a Clear defaults button](../../assets/images/class-defaults-notice.png)
+
+- **Update defaults** appears on that line as soon as a value on the form differs from what
+  is stored. It overwrites the stored values with the ones on the form.
+- **Clear defaults** removes them. The form keeps what is in it, and Zooza asks you again
+  the next time a class is added.
+- If a stored default can no longer be used — the instructor left, the venue was deleted,
+  the billing period is gone — the notice says which one and why. It is never dropped
+  silently.
+- A value you passed in the link you opened the form with wins over the stored default.
+
+### What is never remembered
+
+The session pattern: weekdays, start time, date range. Those change every term, which is
+the whole reason you are adding a new class. The class name and the class type are not
+remembered either.
+
+Saving defaults never touches classes that already exist.
 
 ## After creating the class
 

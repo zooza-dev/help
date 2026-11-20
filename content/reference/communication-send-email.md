@@ -11,7 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-11-20"
+related_articles: ["sending-email-sms", "communication-message-templates", "dynamic-tags", "bulk-email-send-tracking"]
 ---
 
 # Send Email
@@ -35,6 +36,12 @@ Choose who receives the email:
 | **To a specific class** | Sends to all clients in the selected class with status "Enrolled". |
 | **To a single recipient** | Sends to a single email address only. |
 | **To selected bookings** | Sends to a manually selected set of bookings. |
+
+> **The target decides the recipients, not the filters you applied in the list.** *To all
+> clients with an active booking* means everyone active in the selected billing period,
+> even when you arrived here from a filtered list with rows ticked. To write to exactly
+> the rows you ticked, choose **To selected bookings** — and check the recipient count
+> before sending. See [Sending email/SMS to clients](../guides/sending-email-sms.md#send-to-exactly-the-bookings-you-filtered).
 
 ### Choose Who You Want to Send the Message To
 

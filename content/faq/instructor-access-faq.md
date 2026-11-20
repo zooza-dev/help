@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-10-30"
-related_articles: ["login-and-account-faq","managing-instructors","user-roles","role-selection-guide"]
+last_converted: "2026-11-20"
+related_articles: ["login-and-account-faq","managing-instructors","user-roles","role-selection-guide","labels","async-exports"]
 ---
 
 # Instructor Access and Roles FAQ
@@ -53,6 +53,24 @@ This is expected. Instructors with limited roles (Standard instructor, External 
 This means that guide steps like "Go to Activities → Classes → select sessions → Bulk edit" cannot be performed by a standard instructor. If an instructor needs to change session times, reschedule sessions, or bulk-edit, an admin or main instructor must do it on their behalf.
 
 If the instructor should have access to the Classes list, change their role to **Main instructor** in **Settings → General → Access**.
+
+## Can instructors export the client list?
+
+No, and it is not a permission that can be switched on. Exports are kept to owners,
+assistants and receptionists on purpose: a client database that can be exported is a client
+database that can walk out of the door with somebody who leaves.
+
+When instructors ask for an export, what they usually want is a way to keep track of
+something per client — who is thinking of leaving, who still owes a form, who asked about
+the next term. That does not need an export:
+
+- **[Labels](../guides/labels.md)** can be put on a booking by anyone who can open it.
+  You can report on labels, filter the Bookings list by them, and they come out in the
+  export you run.
+- **The note on a booking** holds the detail — for instance why somebody is not continuing.
+
+Everything then sits on the booking itself instead of in a spreadsheet each instructor
+keeps their own copy of, and you can still pull the whole picture when you need it.
 
 ## How do I change instructor permissions?
 

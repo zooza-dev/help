@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: "legacy/html/billing-settings.html"
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-11-09"
-related_articles: ["invoice-profiles-and-bank-accounts", "invoice-number-series", "invoice-profile-overrides", "invoicing-overview", "szamlazz-invoices", "fakturoid-invoices", "xero-integration"]
+last_converted: "2026-11-20"
+related_articles: ["invoice-profiles-and-bank-accounts", "invoice-number-series", "invoice-profile-overrides", "invoicing-overview", "szamlazz-invoices", "fakturoid-invoices", "xero-integration", "async-exports"]
 ---
 
 
@@ -125,6 +125,67 @@ After an invoice is generated, you can edit it by clicking the pencil icon next 
 - **Item description** — custom text for the invoice line item (e.g., the programme name or a custom note).
 
 > **Note:** Editing an invoice does not change the underlying payment. It only changes what appears on the invoice document.
+
+## When an invoice is missing, zero, or on the wrong booking
+
+Start from one fact: **Zooza cannot delete an invoice.** There is no mechanism for it, and
+the number series for the year is unbroken — you can check that yourself in the Invoices
+list. So an invoice that is "gone" is somewhere else, or was never issued. These are the
+causes, in the order they turn up.
+
+### The invoice came out at 0
+
+The amount on an invoice is what the booking owed, or had paid, **on the date the invoice
+was issued**. Two situations produce a zero:
+
+- **The real invoice already exists.** Automatic generation issued it when the payment was
+  matched. Generating another one by hand afterwards finds nothing left to bill, so it
+  comes out at 0. **With automatic invoicing on, do not generate by hand** — look for the
+  invoice that is already on the booking.
+- **The period does not cover the payment.** An invoice issued for 3–3 August cannot see a
+  payment made on 2 August. Edit the invoice (the pencil next to the PDF) and set a period
+  that includes the payment date.
+
+A 0 EUR invoice cannot be deleted either. If your accountant needs it reversed, issue a
+credit note in your accounting system — Zooza is not an accounting system and does not
+produce one.
+
+### No invoice was issued at all
+
+**The most common cause is a missing customer name.** When the buyer details on the booking
+have no name, the invoice fails with *"No customer name entered"* and is not retried. Fill
+in the name and generate it.
+
+It is worth running an eye over old bookings when you find one: where this happened once it
+usually happened a handful of times, months apart.
+
+**An overpayment does not raise an invoice.** When money matches a booking as more than was
+owed, nothing is generated automatically — issue that one by hand.
+
+### The invoice is on the parent's other booking
+
+An invoice stays on the booking it was issued for, even when the payment later moves
+somewhere else.
+
+The usual story: a parent creates two bookings within a minute or two of each other, the
+payment matches the first one, an invoice is issued there — and then somebody moves the
+payment to the second booking. The invoice does not follow it. Look at the parent's other
+bookings before concluding anything is lost. (This often leaves an overpayment on the
+second booking too, which is the case above.)
+
+### The export to your accounting software comes out empty
+
+An export runs as one batch: **one record the other system rejects can take the whole file
+down with it**, and you are left with a file that opens with no invoices in it. An emoji
+in an invoice description has done exactly this to a Pohoda XML export.
+
+If a batch comes back empty, send us the generated file and tell us which accounting
+system it is for. These are individual characters we add to the export's exception list as
+they turn up; we cannot find them all in advance.
+
+> Large exports are not always downloaded straight away — they are saved under **Settings →
+> Tools → Exports** and can be fetched later, which also means a dropped connection does not
+> lose one. See [Exporting data and reports](../guides/async-exports.md).
 
 ## Getting every invoice out for your accountant
 

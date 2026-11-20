@@ -11,7 +11,7 @@ status: published
 source_legacy_path: legacy/0086_Welcome to Zooza.html
 source_language: en
 needs_screenshot_replacement: true
-last_converted: "2026-11-13"
+last_converted: "2026-11-20"
 related_articles: ["price-and-payment-setup","membership-fee-setup","automatic-payment-reminders","session-payment-adjustments","billable-sessions","payments-and-billing-faq"]
 ---
 <!-- REVIEW: add all types of prepaid payment frequencies -->
@@ -207,6 +207,38 @@ Open the plan on the booking and turn on the **Show all plans** toggle. The dial
 showing only some of the options; the toggle reveals the rest of the plans available for
 that programme. Pick one, enter the amount and the date from which it should recalculate,
 and Zooza works out the schedule from there.
+
+### Re-applying a plan clears what was already charged
+
+Applying a payment plan to a booking does not add to what is there. It **replaces
+everything currently charged on that booking** with the new plan — including the
+registration fee.
+
+That is why a booking you re-planned suddenly grows entries nobody created by hand:
+
+| Entry you see | Where it came from |
+|---|---|
+| **Correction payment** for the amount already charged | Zooza taking the old charges off |
+| **Registration fee correction** | the same, for the fee |
+| Two or three fresh instalments | the new plan |
+
+The money is not lost and nothing was double-charged — the corrections cancel the old
+charges, the new instalments take their place. But the booking's history is longer and
+harder to read afterwards, so re-apply a plan when you mean to, not to nudge one
+instalment.
+
+Payments that have already been processed are not affected. Changing a plan only moves
+what is still upcoming.
+
+### A plan starts on the day the booking was made
+
+Not on the day the class starts. A parent who books three weeks before the first session
+is three weeks into their plan on day one, so the first instalment is taken straight away
+and the second can follow before the child has been to a single lesson.
+
+Nothing is wrong when that happens — but if you would rather the instalments followed the
+lessons, re-apply the plan from the date you want, and read the section above first so the
+correction entries do not surprise you.
 
 ## Block pricing — a different price per number of blocks
 

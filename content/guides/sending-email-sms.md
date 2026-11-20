@@ -12,7 +12,7 @@ status: published
 source_legacy_path: legacy/0012_Welcome to Zooza.html
 source_language: mixed
 needs_screenshot_replacement: false
-last_converted: "2026-11-13"
+last_converted: "2026-11-20"
 related_articles: ["message-templates","dynamic-tags","bulk-email-send-tracking","email-delivery-troubleshooting"]
 ---
 
@@ -106,6 +106,37 @@ The procedure for sending emails and SMS is the same:
 
 > If the audience is awkward to express in filters, describe it to [Zooza AI](../faq/claude-plugin-faq.md) instead — "everyone in Monday classes who has not paid" is a sentence it can resolve into a list, and it is usually faster than building the filter by hand.
 
+## Send to exactly the bookings you filtered
+
+Filtering the **Bookings** list down to the people you mean, ticking them, and then
+sending — this is the normal way to write to one term, one venue or a handful of classes.
+It has one trap in it, and it is an expensive one.
+
+**The target you pick in the composer decides the recipients. Your filters do not.**
+
+| Target | Who it reaches |
+|---|---|
+| **To all clients with an active booking** | Everybody with a running booking in the chosen **billing period**. Your filters and your ticks are ignored. |
+| **To selected bookings** | Only the bookings you ticked in the list. |
+
+One company filtered down to 132 bookings, left the target on *all clients with an active
+booking*, and the recipient count came back 3,886.
+
+The route that does what you expect:
+
+1. In **Bookings**, filter by billing period, programme, venue and class — several classes
+   at once is fine.
+2. Add the **Status** filter and set it to **Enrolled**. That leaves out cancelled bookings
+   and the waiting list. (If you do want to write to them, add those statuses here.)
+3. Tick the bookings and click **Send email**.
+4. Under **Message to**, choose **Selected bookings**.
+5. Tick *Send email also to users with additional access to booking* if parents have added
+   a second address.
+6. **Check the recipient count at the bottom before you send.** It should match the number
+   of rows you filtered. If it is much larger, the target is still set to *all clients*.
+
+> The same applies to **To all clients**, which ignores the billing period as well.
+
 ## Sending yourself or the instructor a copy
 
 Two checkboxes in the composer, added in November 2026:
@@ -124,6 +155,15 @@ addresses and had no way to mean "whoever teaches this group".
 
 Personal details that get filled in per recipient are left out of the copies, so forwarding
 a copy on does not forward somebody's data with it.
+
+**Zooza remembers your own choice.** If you send with *Send me a copy* ticked, it is
+already ticked the next time you open the composer, and if you send with it unticked it
+stays unticked. It is per person, so it does not change anything for your colleagues, and
+it only updates when a message actually goes out — ticking the box and then abandoning the
+compose changes nothing.
+
+*Send a copy to the instructor* is deliberately left out of this: it starts unticked every
+time, because who should get an instructor copy is a decision per message, not a habit.
 
 ## Emailing a group the composer cannot target
 

@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-09"
-related_articles: ["classes-list", "payments-and-billing-faq", "creating-a-class", "programme-settings"]
+last_converted: "2026-11-20"
+related_articles: ["classes-list", "payments-and-billing-faq", "creating-a-class", "programme-settings", "billable-sessions"]
 ---
 
 
@@ -429,6 +429,20 @@ If you need a separate class for billing or tracking purposes:
 4. Add the session date.
 
 Option A is the recommended approach for one-off exceptions. Option B is better when you regularly run private sessions with separate pricing per client.
+
+## What does the € symbol next to a session in the calendar mean?
+
+That session is marked **billable**. Only one class in your calendar showing it usually
+means the **Billable sessions** checkbox was ticked while those sessions were being
+created — it is in the session creator, and it is easy to tick by accident.
+
+It matters because of what the flag does: as soon as a class has billable sessions set,
+Zooza prices the class from the flagged sessions only, instead of from all of them. See
+[Billable sessions](../guides/billable-sessions.md).
+
+**If you do not work with billable sessions deliberately, take the flag off.** Go to
+**Activities → Sessions**, filter down to the class, select the sessions and use the bulk
+action toolbar to clear it. The € symbols disappear and the class prices normally again.
 
 ## How do I bulk-mark sessions as paid?
 

@@ -1,6 +1,6 @@
 ---
 title: "Holiday settings"
-description: "You must have the correct region filled in for each location in order for the app to automatically pull in vacations correctly."
+description: "Give every venue its regions and Zooza skips the right public holidays and school breaks when it generates a class's sessions."
 slug: "holiday-settings"
 type: "setup"
 product_area: "Calendar"
@@ -11,58 +11,61 @@ status: "published"
 source_legacy_path: "legacy/0020_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-09-19"
+last_converted: "2026-11-20"
+related_articles: ["creating-a-location", "custom-holidays", "creating-a-class", "locations-and-venues-faq"]
 ---
 
 # Holiday settings
 
-You must have the correct region filled in for each location in order for the app to automatically pull in vacations correctly.
-
-## General settings
-
-1. You can make the settings in the main *Settings*, under *Places.*
- ![You can make the settings in the main Settings, under Places](../../assets/images/holiday-settings-01.png)
-
-1. When adding a new location or editing an existing one, select a
-region from the menu. The offer is updated on the basis of the company
-region you entered in the application when creating an account in the
-application. If you would like to change this region, please feel free
-to contact us via chat on this page or by email at [support@zooza.online](mailto:support@zooza.online).
- ![to contact us via chat on this page or by email at...](../../assets/images/holiday-settings-02.png)
-
-1. After selecting the region, click *the Save* button at the bottom of the page.
+Public holidays and school breaks differ from one region to the next. Zooza pulls them in
+for you, but only once each venue says which regions it follows.
 
 ## Regional holidays
 
-Holidays are different for each state, city and region. That’s why we
- went to a detailed solution where you can set a region for each
-location you run your programmes in.
+Each venue carries its own list of regions. Zooza loads that region's public holidays and
+school breaks, and when you create the sessions for a class it tells you which dates fall
+on one. You can then:
 
-Based on this setting, the holidays of the specific region will be
-automatically added to your app. You will see the specific dates of the
-holidays at the level of inserting sessions into the class, where you will
-be reminded that the dates are during the holidays. You can choose to:
-
-- keep these terms, if you are running your programmes also during the holidays
-- delete these terms manually by clicking on the *Bin icon*
-- skip these terms automatically by clicking on the *Skip Holidays* and *Skip School breaks* checkboxes
+- keep them, if you run your programmes during the holidays anyway
+- delete them one by one with the **Bin** icon
+- skip them automatically with the **Skip Holidays** and **Skip School breaks** checkboxes
 
 ![skip these terms automatically by clicking on the Skip Holidays and Skip School breaks...](../../assets/images/holiday-settings-03.png)
 
-## Setting different regions for multiple locations
+## Which regions a venue follows
 
-If your business operates across multiple districts or regions (for example, a franchise with locations in different cities), each location can have its own region assigned independently. This is important because school holidays and public holidays often differ by region.
+Each venue decides for itself which regional holidays apply to it. A franchise with
+venues in different parts of the country gets the right school breaks at each one,
+without anyone maintaining a list by hand.
 
-1. Go to **Settings** > **Places**.
-2. Click on each location to open its detail.
-3. In the `Region` field, select the correct district or region for that specific location.
-4. Click **Save**.
+1. Go to **Settings** → **Venues** and open the venue.
+2. Scroll to the **Regional holidays** card.
+3. Pick a region in the empty **Region** row. A new empty row appears underneath, so you
+   can add another.
+4. Click **Save** on that card.
 
-Repeat for every location. Sessions generated for classes at each location will respect only the holidays of that location's assigned region.
+The regions you are offered come from your company's country, which was set when the
+account was created. If the wrong country is set, write to
+[support@zooza.online](mailto:support@zooza.online) — it is not something you can change
+yourself.
 
-> **Important:** If a location has no region set, the system cannot determine which holidays apply. This commonly happens with online programmes or newly added locations. Always verify that every location -- including online or virtual ones -- has a region assigned.
+![The Regional holidays card on a venue: England chosen with a Delete button, an empty Region row underneath, and the Save button](../../assets/images/venue-regional-holidays.png)
 
-<!-- REVIEW: Confirm whether online/virtual locations inherit the company-level region or default to no region when left blank. Support case suggests they default to no region. -->
+A venue can follow **more than one region**. When sessions are generated for a class at
+that venue, a date is skipped if it is a holiday in *any* of the regions listed, plus the
+national holidays. Remove a region with the **Delete** button on its row.
+
+> **Two fields are called Region, and they are not the same.** The **Region** field in the
+> venue's address card is part of the address (its help text reads *City area*) and has no
+> effect on holidays. Only the **Regional holidays** card decides which holidays are
+> skipped.
+
+> **A venue with no region gets national holidays only.** This catches online venues and
+> newly added ones most often. If a class keeps landing on a school break, this is the first
+> thing to check.
+
+Custom holidays are separate and already support several regions of their own — see
+[Custom holidays](#custom-holidays) below.
 
 ## Rescheduling sessions and holiday rules
 

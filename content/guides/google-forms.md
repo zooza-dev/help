@@ -12,7 +12,7 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
-last_converted: "2026-11-08"
+last_converted: "2026-11-20"
 ---
 
 # Collect information with a Google Form
@@ -85,9 +85,33 @@ In the **Answers** view you can see who filled it in and when, and filter by nam
 
 ### Unmatched answers
 
-An **unmatched** answer is one Zooza could not tie to a booking, usually because it was filled in from a different email address than the one on the booking.
+An **unmatched** answer is one Zooza could not tie to a booking. Open it, click **Match**,
+find the right booking, and the answers move onto that client's card. The Forms library
+shows a count of how many are waiting to be matched.
 
-Open it, click **Match**, find the right booking, and the answers move onto that client's card. The Forms library shows a count of how many are waiting to be matched.
+It is worth knowing why they land there, because "they used a different email" is only one
+of the reasons.
+
+Zooza matches on the reference question first. If that is gone, it falls back to the email
+address — and the email has to point at **exactly one** booking the form reaches:
+
+| What happened | Result |
+|---|---|
+| The reference question came back filled in | Matched straight away |
+| A different email address from the one on the booking | Unmatched |
+| The same child has several bookings in that programme | Unmatched — Zooza will not pick one for you |
+| The email belongs to a parent with **two children** in it | Unmatched, deliberately. Guessing here would put one child's answers on the other's card |
+
+**The reference question is an ordinary question in Google Forms** — Google has no way to
+lock or hide it, so a parent can delete it, and a form opened from your own website never
+had it filled in to start with. Both end up on the email fallback. If most of your answers
+arrive unmatched, check how parents are reaching the form: sending it through Zooza fills
+the reference in for them.
+
+> **A match you make by hand sticks.** The next poll will not overwrite it, even if the
+> email would have matched something else. You can also re-match an answer that went to the
+> wrong booking — pick the right one and it moves, along with the form badge on both
+> bookings.
 
 ![The Answers view for an attached form](../../assets/images/google-forms-05.png)
 ## The form library
@@ -111,7 +135,7 @@ Deleting does not touch the form in your Google Drive — that is still yours, w
 
 **It attached, but says "Matched by email only".** Either you declined the reference question, or Zooza could not add it. Answers still arrive; they are just matched by email address, so expect some to land as unmatched.
 
-**A parent says they filled it in but you cannot see it.** Look in the unmatched answers. They almost certainly used a different email address.
+**A parent says they filled it in but you cannot see it.** Look in the unmatched answers — either they used a different email address, or the answer could not be placed on one booking with certainty. Either way it is there and you can match it by hand.
 
 **The picker will not open.** Your company's Google connection is missing something Zooza needs. Reconnect Google from the integrations page, and contact support if it keeps happening.
 

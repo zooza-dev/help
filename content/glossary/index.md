@@ -8,7 +8,7 @@ tags: ["glossary", "terminology", "definitions"]
 status: "published"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-06"
+last_converted: "2026-11-20"
 related_articles: ["getting-started-with-zooza", "settings-hub", "programme-settings"]
 ---
 
@@ -74,6 +74,9 @@ A scheduled class within a Programme, typically differentiated by day/time, leve
 
 > Also referred to as: *Group*, *Groups* (in localised app versions, e.g. Romanian: *Grupă*)
 > Formerly called: *Class*, *Timetable*
+
+### Class defaults
+Values kept on a Programme that pre-fill every new Class you add to it — venue, instructor, billing period, capacity, session length, pay rate and price. Zooza offers to save them the first time you add a class, and you can update or clear them from the form afterwards. The session pattern is never stored, because it changes every term.
 
 ### Client
 The person who holds the account, pays, and manages bookings. Identified by email address. A Client may book on behalf of family members (Attendees).

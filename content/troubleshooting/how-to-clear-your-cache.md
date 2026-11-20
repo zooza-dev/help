@@ -11,12 +11,24 @@ status: "published"
 source_legacy_path: "legacy/0013_Welcome to Zooza.html"
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-05-01"
+last_converted: "2026-11-20"
+related_articles: ["login-and-account-faq", "widget-embedding", "getting-help-and-support"]
 ---
 
 # How to clear your cache
 
 If Zooza looks outdated, shows the wrong layout, or behaves unexpectedly after an update, your browser is most likely showing a cached (saved) version of the page. Here is how to fix it.
+
+---
+
+## Zooza now tells you when your tab is out of date
+
+Since November 2026, a tab left open across an update notices by itself. A message appears
+with a **Reload page** button, and clicking it is enough — **an ordinary reload, not a hard
+reload**. That covers the common case: a tab open since yesterday showing raw text like
+`global__save` where a button label should be, or a screen that will not open.
+
+The rest of this page is for when a plain reload does not settle it.
 
 ---
 
