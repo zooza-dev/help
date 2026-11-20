@@ -93,7 +93,7 @@ After connecting, configure VAT in Zooza:
 | Invoice creation | ✓ Automatic |
 | NAV submission (B2B) | ✓ Automatic for business bookings |
 | Pre-paid invoice marking | ✓ Automatic — payment recorded immediately |
-| Multiple Számlázz accounts | ✓ Via separate Invoice Profiles |
+| Multiple Számlázz accounts | ✓ Via separate Invoice profiles |
 | Payment sync | ✓ Partial — pre-paid invoices only |
 | Credit notes | ✗ Not supported — issue in Számlázz.hu directly |
 | Editing invoices after creation | ✗ Not possible once created |
@@ -111,5 +111,5 @@ After connecting, configure VAT in Zooza:
 ## Related
 
 - [Invoicing overview](./invoicing-overview.md) — how invoice engines work
-- [Billing and invoicing](./billing-and-invoicing.md) — Invoice Profiles, auto/manual generation, multi-line
+- [Billing and invoicing](./billing-and-invoicing.md) — Invoice profiles, auto/manual generation, multi-line
 - [VAT management](../guides/vat-management.md) — configuring VAT rates

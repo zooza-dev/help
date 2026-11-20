@@ -205,7 +205,7 @@ Export formats available today:
 - **MRP**
 - **Spreadsheet (Excel)** — when your accountant just wants the list
 
-None of them need setting up. They appear under **Settings → Integrations**, but there is nothing to configure — you export straight from the Payments section.
+None of them need setting up. They appear under **Team & Settings → Integrations**, but there is nothing to configure — you export straight from the Payments section.
 
 > **Filter first.** The export follows whatever the list is currently showing, so set the date range before you export rather than afterwards. An accountant asking for January to September wants exactly that, not the whole year trimmed by hand.
 
@@ -292,7 +292,7 @@ For a whole batch of invoices, fix the profile first and then regenerate — edi
 
 ## Zooza Invoice — templates and branding
 
-> **Applies to:** Invoice Profiles using the **Zooza Invoice** engine only.
+> **Applies to:** Invoice profiles using the **Zooza Invoice** engine only.
 
 When your Invoice Profile uses Zooza Invoice, you can choose a visual template and set brand colours and fonts. The invoice preview shows your actual company logo, name, address, bank details, and QR code alongside mock buyer data — so you see exactly what clients will receive.
 

@@ -235,7 +235,7 @@ redirects:
     status: 301
 
   - from: "/portal/en/kb/articles/payment-tile-on-booking"
-    to: "/help/payments/payment-tile-on-booking"
+    to: "/help/payments/edit-payment-on-booking"
     status: 301
 
   - from: "/portal/en/kb/articles/personas"
@@ -470,7 +470,7 @@ redirects:
     status: 301
 
   - from: "/help/payments/payment-tile-on-registration"
-    to: "/help/payments/payment-tile-on-booking"
+    to: "/help/payments/edit-payment-on-booking"
     status: 301
 
   - from: "/help/orders/selling-products-during-registration"
@@ -536,3 +536,5 @@ internal_redirects:
     to: "widgets/customizing-widgets"
   - from: "bookings/allowing-multiple-booking"
     to: "bookings/booking-faq"
+  - from: "payments/payment-tile-on-booking"
+    to: "payments/edit-payment-on-booking"

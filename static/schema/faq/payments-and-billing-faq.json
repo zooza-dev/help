@@ -73,7 +73,7 @@
       "name": "Can I make payment compulsory at booking — set the grace period to 0?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You can set the grace period to 0 (Settings → Billing & Payments → Payment settings, the first field; also per programme under Price and Payment), and you probably should if you do not want an \"Awaiting payment\" window. But be clear about what it does and does not do.\n\nWhat it does: a booking with an outstanding balance is marked Unpaid straight away instead of sitting in Awaiting payment.\n\nWhat it does not do: it does not force anyone to pay. The booking is still created. Card payment happens after the booking exists — that is the order of events everywhere online — so a parent who closes the tab, has no card to hand, or whose card is declined still leaves you a booking with nothing paid. Nothing cancels it automatically unless you switch on auto-cancel of unpaid bookings, and most providers would rather talk to the parent first.\n\nFor a subscription this matters more than it looks. The card is only stored once the client has made the first payment themselves, so until they do, there is nothing to charge and no future instalment can be collected. In Stripe those bookings show as incomplete. The fix is to get that first payment made: send them to their client profile (the WIDGET_PROFILE_URL tag makes a personal link), and make paying as easy as possible — having Apple Pay and Google Pay switched on in Integrations → Stripe measurably helps."
+        "text": "You can set the grace period to 0 (Settings → Billing & Payments → Payment settings, the first field; also per programme under Price and payment), and you probably should if you do not want an \"Awaiting payment\" window. But be clear about what it does and does not do.\n\nWhat it does: a booking with an outstanding balance is marked Unpaid straight away instead of sitting in Awaiting payment.\n\nWhat it does not do: it does not force anyone to pay. The booking is still created. Card payment happens after the booking exists — that is the order of events everywhere online — so a parent who closes the tab, has no card to hand, or whose card is declined still leaves you a booking with nothing paid. Nothing cancels it automatically unless you switch on auto-cancel of unpaid bookings, and most providers would rather talk to the parent first.\n\nFor a subscription this matters more than it looks. The card is only stored once the client has made the first payment themselves, so until they do, there is nothing to charge and no future instalment can be collected. In Stripe those bookings show as incomplete. The fix is to get that first payment made: send them to their client profile (the WIDGET_PROFILE_URL tag makes a personal link), and make paying as easy as possible — having Apple Pay and Google Pay switched on in Integrations → Stripe measurably helps."
       }
     },
     {
@@ -145,7 +145,7 @@
       "name": "Does \"Awaiting payment\" status automatically send reminder emails to clients?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. The Awaiting payment status is for your internal tracking only — it does not trigger any emails.\n\nTo send email reminders to clients with outstanding balances, you must configure a Payment Reminder action on the programme under Programme → Settings → the Price tile → Price and payment → Payment Reminder Settings. Without this action, bookings will silently move from Awaiting payment to Unpaid when the deadline passes — no notification is sent.\n\nSee Automatic payment reminders for full setup instructions."
+        "text": "No. The Awaiting payment status is for your internal tracking only — it does not trigger any emails.\n\nTo send email reminders to clients with outstanding balances, you must configure a Payment Reminder action on the programme under Programme → Settings → the Price tile → Price and payment → Payment reminder settings. Without this action, bookings will silently move from Awaiting payment to Unpaid when the deadline passes — no notification is sent.\n\nSee Automatic payment reminders for full setup instructions."
       }
     },
     {
@@ -161,7 +161,7 @@
       "name": "How do payment reminders work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Payment reminders are configured per programme under the payment settings. You set:\n\n- How many reminders to send.\n- The interval between reminders.\n- Whether the system should automatically cancel the booking after all reminders expire.\n\nGo to Programme → Settings → the Price tile → Price and payment → Payment Reminder Settings to configure this. For a full walkthrough, see Automatic payment reminders."
+        "text": "Payment reminders are configured per programme under the payment settings. You set:\n\n- How many reminders to send.\n- The interval between reminders.\n- Whether the system should automatically cancel the booking after all reminders expire.\n\nGo to Programme → Settings → the Price tile → Price and payment → Payment reminder settings to configure this. For a full walkthrough, see Automatic payment reminders."
       }
     },
     {
@@ -625,7 +625,7 @@
       "name": "Does the \"X days after registration\" due date setting apply to payment plan instalments?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, from July 2026. Previously, the \"due X days after registration\" setting (configured under Programme → Settings → the Price tile → Price and payment → Payment Reminder Settings, mode: after registration) only applied to single-payment programmes. For instalment plans, the first payment's due date was set to the class start date regardless of this setting.\n\nNow the first instalment's due date is set to registration date + X days, matching how single payments already worked. Subsequent instalments follow the payment plan schedule as normal — their due dates are unaffected.\n\nNote: The first payment debt is still created immediately at booking time. Only the due date displayed on the payment plan and used for overdue calculations is affected."
+        "text": "Yes, from July 2026. Previously, the \"due X days after registration\" setting (configured under Programme → Settings → the Price tile → Price and payment → Payment reminder settings, mode: after registration) only applied to single-payment programmes. For instalment plans, the first payment's due date was set to the class start date regardless of this setting.\n\nNow the first instalment's due date is set to registration date + X days, matching how single payments already worked. Subsequent instalments follow the payment plan schedule as normal — their due dates are unaffected.\n\nNote: The first payment debt is still created immediately at booking time. Only the due date displayed on the payment plan and used for overdue calculations is affected."
       }
     }
   ]

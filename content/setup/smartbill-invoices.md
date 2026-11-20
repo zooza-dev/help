@@ -106,5 +106,5 @@ To number some invoices in a different SmartBill series — for example summer c
 ## Related
 
 - [Invoicing overview](./invoicing-overview.md) — how invoice engines work
-- [Billing and invoicing](./billing-and-invoicing.md) — Invoice Profiles, auto/manual generation, multi-line
+- [Billing and invoicing](./billing-and-invoicing.md) — Invoice profiles, auto/manual generation, multi-line
 - [VAT management](../guides/vat-management.md) — configuring VAT rates

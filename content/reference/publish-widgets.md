@@ -234,7 +234,7 @@ Work through this checklist in order:
 ### How to change the order of programmes in the widget
 
 Each programme has a **Priority** field that controls where it sits on the booking
-form. Go to **Programmes** → open the programme → **Online Booking → Edit** and set
+form. Go to **Programmes** → open the programme → **Online booking → Edit** and set
 it. The range is 0–1000, and the default is 0, which sorts alphabetically.
 
 **A higher number is shown first.** This is the part that catches people out: 1 does

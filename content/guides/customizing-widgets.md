@@ -53,7 +53,7 @@ In the form you will see the basic fields that your client must fill in when boo
 4. Phone
 5. Note
 
-6. You can modify their display in the booking form by overwriting the text. At the programme level, click *Online Booking – Edit*.
+6. You can modify their display in the booking form by overwriting the text. At the programme level, click *Online booking – Edit*.
  ![Programme Settings tab with the Price and payment and Online booking tiles](../../assets/images/customizing-widgets-04.png)
  
 7. Scroll down to the *Customize Booking Form* section and enter new text in the field to change its display in the booking form. *Save *the change.
@@ -75,7 +75,7 @@ You can enrich the form with so-called Extra fields. The setting is done at
  the programme level. If you want detailed information about the use and
 purpose of extra fields, see the [Additional fields on the booking form](additional-fields.md) guide.
 
-After selecting a specific programme, click the *Edit* button in the *Additional Fields* tile.
+After selecting a specific programme, click the *Edit* button in the *Additional fields* tile.
  
 ![Screenshot](../../assets/images/customizing-widgets-09.png)
 

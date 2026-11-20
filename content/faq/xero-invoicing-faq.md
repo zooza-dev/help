@@ -33,7 +33,7 @@ never invoiced and the year has since closed, those invoices have to be entered
 in Xero by hand. Worth knowing before you postpone invoicing across a year end,
 and worth checking the connection has not expired — an expired Xero connection
 silently stops the sync until you re-synchronise it in **Settings → Billing &
-Payments → Invoice profiles**.
+Settings → Billing & Payments → Invoice profiles**.
 
 ## My invoices show "tax exempt" — how do I fix VAT settings?
 
@@ -126,7 +126,7 @@ Zooza supports both Stripe Express and Stripe Standard connections. The differen
 | VAT invoices for Stripe fees | Limited (platform-dependent) | Available under Settings → Compliance and Documents |
 | Recommended for | Simple setups | Companies needing full reporting and VAT invoices for fees |
 
-If your accountant needs VAT invoices for Stripe processing fees, use **Stripe Standard**. To switch, disconnect the current Stripe connection in Zooza (**Settings → Integrations → Stripe**) and reconnect with your Standard account.
+If your accountant needs VAT invoices for Stripe processing fees, use **Stripe Standard**. To switch, disconnect the current Stripe connection in Zooza (**Team & Settings → Integrations → Stripe**) and reconnect with your Standard account.
 
 ### The invoice date in Xero doesn't match the booking date — is that correct?
 

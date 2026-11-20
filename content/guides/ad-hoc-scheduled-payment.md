@@ -11,7 +11,7 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-10-10"
-related_articles: ["payments-and-billing-faq", "email-payment-notifications", "payment-tile-on-booking"]
+related_articles: ["payments-and-billing-faq", "email-payment-notifications", "edit-payment-on-booking"]
 ---
 
 # Add a one-off scheduled payment
@@ -59,7 +59,7 @@ The new payment appears in the scheduled payments table at its chronological pos
 Use this when you need to add the same extra charge to several clients in a class at once — for example a late registration fee.
 
 1. Go to the **Class detail** page.
-2. In the **Price and Payment** card, click **Add payment**.
+2. In the **Price and payment** card, click **Add payment**.
 
    ![Screenshot — ad hoc scheduled payment](../../assets/images/ad-hoc-scheduled-payment-02.png)
 
@@ -140,7 +140,7 @@ You can, and you do it on the registration itself — not by making a new templa
 
 Templates decide what the *class* offers; the registration is where one client differs from it.
 
-> **If the parent cannot see a payment option at all**, the problem is a level up, not on the registration: the template has to be **active on the programme** (Programme → Price and Payment → Payment frequency) and, if clients are meant to choose it themselves, marked **visible to clients** on the template. A class with no sessions has no billing period either, so nothing can be offered.
+> **If the parent cannot see a payment option at all**, the problem is a level up, not on the registration: the template has to be **active on the programme** (Programme → Price and payment → Payment frequency) and, if clients are meant to choose it themselves, marked **visible to clients** on the template. A class with no sessions has no billing period either, so nothing can be offered.
 
 ## Can I change the amount on an existing payment plan?
 
@@ -154,7 +154,7 @@ You cannot edit the amounts in an existing active payment plan directly. The opt
 
 ## Related
 
-- [Payment tile on booking](payment-tile-on-booking.md) — overview of the payment card on a registration.
+- [Edit payment on booking](edit-payment-on-booking.md) — overview of the payment card on a registration.
 - [Payment options](payment-options.md) — types of payments and how they work.
 - [Billing and invoicing setup](../setup/billing-and-invoicing.md) — billing profiles, pro-ration settings.
 - [Payments and billing FAQ](../faq/payments-and-billing-faq.md) — common questions.

@@ -138,7 +138,7 @@ The client did not fill in business fields during registration but now needs a b
 
 ## Related
 
-- [Billing and invoicing](../setup/billing-and-invoicing.md) — Invoice Profiles, billing settings
+- [Billing and invoicing](../setup/billing-and-invoicing.md) — Invoice profiles, billing settings
 - [Business booking](../faq/booking-faq.md) — registering as a company on the booking form
 - [Payments and Billing FAQ](../faq/payments-and-billing-faq.md) — common questions about invoices
 - [Additional fields on the booking form](./additional-fields.md) — business fields (company name, VAT, etc.)

@@ -54,14 +54,14 @@ If you connected Stripe before March 2026, you may have a **Stripe Express** acc
 
 **Standard account:** Go to [dashboard.stripe.com](https://dashboard.stripe.com) and log in with your Stripe credentials. You have full access to all Stripe features.
 
-**Express account:** Go to **Settings → Integrations → Stripe Connect** and click **Go to Stripe Dashboard**. This generates a secure one-time login link that opens your Express dashboard directly — no need to log in separately.
+**Express account:** Go to **Team & Settings → Integrations → Stripe Connect** and click **Go to Stripe Dashboard**. This generates a secure one-time login link that opens your Express dashboard directly — no need to log in separately.
 ![Screenshot — stripe payments faq](../../assets/images/stripe-payments-faq-01.png)
 
 ## Where can I see my Stripe invoices and payout reports?
 
 **Standard account:** Log into [dashboard.stripe.com](https://dashboard.stripe.com) and navigate to your documents section.
 
-**Express account:** Go to **Settings → Integrations → Stripe Connect**. Your Stripe invoices (VAT invoices) and payout reconciliation reports are available directly inside Zooza — no need to open the Stripe dashboard separately.
+**Express account:** Go to **Team & Settings → Integrations → Stripe Connect**. Your Stripe invoices (VAT invoices) and payout reconciliation reports are available directly inside Zooza — no need to open the Stripe dashboard separately.
 
 ## Is Apple Pay / Google Pay supported?
 
@@ -96,7 +96,7 @@ If you see a "provider not connected" error when selecting **Stripe Connect** as
 
 **What to do:**
 
-1. Go to **Settings → Integrations → Stripe Connect** and check the connection status.
+1. Go to **Team & Settings → Integrations → Stripe Connect** and check the connection status.
 2. If the connection has expired or was revoked, click **Connect** and complete the Stripe onboarding or reconnection flow.
 3. Once connected, try saving the programme again.
 

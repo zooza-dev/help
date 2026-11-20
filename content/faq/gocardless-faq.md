@@ -63,7 +63,7 @@ appearing before anyone noticed. If that has happened to you, the silence was
 the symptom.
 
 You can also see the state without waiting for a message. In **Settings →
-Billing & Payments → Invoice profiles**, the profile and each bank account show
+Settings → Billing & Payments → Invoice profiles**, the profile and each bank account show
 **Reconnect needed** once it has lapsed, or **Reconnect needed in N days** while
 the warning window is running. A healthy connection shows nothing.
 
@@ -262,7 +262,7 @@ If you see a "provider not connected" error when selecting **GoCardless** as the
 
 **What to do:**
 
-1. Go to **Settings → Integrations → GoCardless** and check the connection status.
+1. Go to **Team & Settings → Integrations → GoCardless** and check the connection status.
 2. If the connection has expired or was revoked, follow the reconnection steps.
 3. Once reconnected, try saving the programme again.
 

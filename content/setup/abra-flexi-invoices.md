@@ -100,5 +100,5 @@ Configure transaction type mappings in the **Invoice Line Types** section of the
 ## Related
 
 - [Invoicing overview](./invoicing-overview.md) — how invoice engines work
-- [Billing and invoicing](./billing-and-invoicing.md) — Invoice Profiles, auto/manual generation, multi-line
+- [Billing and invoicing](./billing-and-invoicing.md) — Invoice profiles, auto/manual generation, multi-line
 - [VAT management](../guides/vat-management.md) — configuring VAT rates

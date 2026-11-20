@@ -18,7 +18,7 @@ last_converted: "2026-04-30"
 
 Once your workspace is connected to Zooza, team members can create todos without leaving Slack — using the `/zooza` slash command or the **Create Zooza todo** message shortcut.
 
-> **Prerequisite:** Your Zooza company must be connected to Slack. Ask your Owner or Assistant to complete the setup in **Settings → Integrations → Slack**. See [Connect Slack to Zooza](../setup/slack-integration.md).
+> **Prerequisite:** Your Zooza company must be connected to Slack. Ask your Owner or Assistant to complete the setup in **Team & Settings → Integrations → Slack**. See [Connect Slack to Zooza](../setup/slack-integration.md).
 
 
 

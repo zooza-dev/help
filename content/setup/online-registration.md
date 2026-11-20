@@ -43,7 +43,7 @@ When you enable multiple bookings for a programme, you can choose whose informat
 
 ![When you enable multiple bookings for a programme, you can choose whose information you...](../../assets/images/customizing-widgets-01.png)
 
-We also recommend selecting the *Payments are managed by registrant *option in the *Price and Payment *tile. This ensures that all payments for the bookings are grouped under the main booking, using a single variable symbol, and allows clients to pay everything in one transaction.
+We also recommend selecting the *Payments are managed by registrant *option in the *Price and payment *tile. This ensures that all payments for the bookings are grouped under the main booking, using a single variable symbol, and allows clients to pay everything in one transaction.
 
 ![We also recommend selecting the Payments are managed by registrant option in the Price...](../../assets/images/online-registration-04.png)
 
@@ -57,7 +57,7 @@ These settings let you control how long classes remain visible in your booking f
 2. Before the programme starts – set the number of hours in advance when the programme should be hidden from your website’s programme catalogue.
 
 
-Alert: Hiding the programme before it starts will disable the option to allow late booking in the Price and Payment tile.
+Alert: Hiding the programme before it starts will disable the option to allow late booking in the Price and payment tile.
 
 ![Alert: Hiding the programme before it starts will disable the option to allow late...](../../assets/images/online-registration-06.png)
 

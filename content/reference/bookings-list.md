@@ -198,7 +198,7 @@ Expandable section with additional settings:
 - **Additional email for reminders before sessions** — one or more addresses, separated by commas, that also receive session reminders. Typically the second parent, an older child, or a grandparent.
 - **Additional email for reminders before sessions** — add extra email addresses for session reminders.
 
-#### Additional Fields
+#### Additional fields
 
 Shows address and other custom fields. Click **Set up** to configure.
 

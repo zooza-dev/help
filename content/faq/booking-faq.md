@@ -1,6 +1,6 @@
 ---
 title: "Booking FAQ"
-description: "Every programme in Zooza has a public booking page. Your main booking URL is yourbrand.zooza.online. You can also share direct links to specific classes:"
+description: "Booking links, duplicates, deleting versus cancelling, moving a client to another class, pro-rata joiners and manual bookings."
 slug: "booking-faq"
 type: "faq"
 product_area: "Bookings"
@@ -11,8 +11,8 @@ status: "published"
 source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
-last_converted: "2026-11-08"
-related_articles: ["trials-faq", "creating-a-booking", "transfer-and-copy-bookings", "registration-status-faq", "late-bookings"]
+last_converted: "2026-11-20"
+related_articles: ["registration-and-booking-faq", "trials-faq", "creating-a-booking", "transfer-and-copy-bookings", "registration-status-faq", "late-bookings"]
 ---
 
 # Booking FAQ
@@ -68,7 +68,7 @@ For a full step-by-step walkthrough, see [Transfer and copy bookings](../guides/
 
 ## How do I handle pro-rata bookings for partial terms?
 
-Zooza calculates pro-rata prices automatically when a client joins a class that has already started. Go to **Programmes** → **Settings** → **Price and Payment** → **Advanced settings** and configure the **Late bookings** mode and **Aliquot price calculation** method. The system can calculate the reduced price based on remaining sessions or remaining days in the billing period.
+Zooza calculates pro-rata prices automatically when a client joins a class that has already started. Go to **Programmes** → **Settings** → **Price and payment** → **Advanced settings** and configure the **Late bookings** mode and **Aliquot price calculation** method. The system can calculate the reduced price based on remaining sessions or remaining days in the billing period.
 
 For a full walkthrough of all options, see [Late bookings (pro-rata management)](../guides/late-bookings.md).
 

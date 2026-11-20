@@ -47,7 +47,7 @@ This way, you can easily reallocate or modify blocks without having to modify ea
 
 ## Price and payment
 
-Each block you create can have its own price that you expect from clients. You can choose to have the price calculated from the unit price based on the number of dates in the block, or you can enter a fixed amount for the entire block. You also have the option to set a discount - either as a fixed amount (absolute) or as a percentage of the price (relative). The discount is set at the level of the specific block in the class - so it applies only to the block on which you set it. It does not apply to the class as a whole. You adjust all these settings within the class, in the *Price and Payment* tile.
+Each block you create can have its own price that you expect from clients. You can choose to have the price calculated from the unit price based on the number of dates in the block, or you can enter a fixed amount for the entire block. You also have the option to set a discount - either as a fixed amount (absolute) or as a percentage of the price (relative). The discount is set at the level of the specific block in the class - so it applies only to the block on which you set it. It does not apply to the class as a whole. You adjust all these settings within the class, in the *Price and payment* tile.
 
 ![Screenshot](../../assets/images/blocks-creation-03.png)
 
@@ -58,7 +58,7 @@ Then it is important to set when the discount on the blocks should be active. Yo
 ## Online booking
 
 The blocks you create are not automatically activated for online booking. This is because the blocks may also be for your internal use only - for example, if you have sessions scheduled for the whole school year but want to split them into sessions, expecting clients to enrol for the whole class period at once. In this case, the blocks are only used to administratively break down the terms for you, without affecting how clients enrol.
-If you want to give the client the option to enrol only for a specific block and thus make the block publicly visible in the booking form, enable it in the* Price and Payment *tile - after opening the selected block, check the *Enable online booking* option.
+If you want to give the client the option to enrol only for a specific block and thus make the block publicly visible in the booking form, enable it in the* Price and payment *tile - after opening the selected block, check the *Enable online booking* option.
 
 ![Screenshot](../../assets/images/blocks-creation-05.png)
 

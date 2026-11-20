@@ -39,7 +39,7 @@ Billable sessions are configured at three levels: programme, class, and session.
 ### 1. Programme level (default for all classes)
 
 1. Go to **Programmes** → select the programme → **Edit Settings**.
-2. Open the **Price and Payment** tile.
+2. Open the **Price and payment** tile.
 3. Set the **Billable sessions** field to the number of sessions that should be paid for.
 
 This value becomes the default for all classes within the programme.
@@ -47,7 +47,7 @@ This value becomes the default for all classes within the programme.
 
 ### 2. Class level (override per class)
 
-1. Go to **Classes** → select the class → **Price and Payment**.
+1. Go to **Classes** → select the class → **Price and payment**.
 2. Set the **Billable sessions** field.
 
 If a class has its own value, it overrides the programme-level setting. This allows individual classes to have a different number of billable sessions.

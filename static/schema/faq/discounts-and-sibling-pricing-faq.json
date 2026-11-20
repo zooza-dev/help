@@ -89,7 +89,7 @@
       "name": "How do I set a fixed price that ignores pro-rata for late joiners?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Go to Programmes → select the programme → Settings → Price and Payment → Advanced settings. Set the Aliquot price calculation to Full programme price. With this setting, every late booking is charged the full price regardless of when the client joins.\n\nYou can also adjust the calculated amount manually on each booking before confirming it, if you need a case-by-case override instead of a blanket rule.\n\nThe system does not support date-based automatic switching (e.g., full price for the first two weeks, then pro-rata after that). If you need that behaviour, manually toggle the setting at the appropriate time.\n\nFor a full walkthrough of all pro-rata options, see Late bookings (pro-rata management)."
+        "text": "Go to Programmes → select the programme → Settings → Price and payment → Advanced settings. Set the Aliquot price calculation to Full programme price. With this setting, every late booking is charged the full price regardless of when the client joins.\n\nYou can also adjust the calculated amount manually on each booking before confirming it, if you need a case-by-case override instead of a blanket rule.\n\nThe system does not support date-based automatic switching (e.g., full price for the first two weeks, then pro-rata after that). If you need that behaviour, manually toggle the setting at the appropriate time.\n\nFor a full walkthrough of all pro-rata options, see Late bookings (pro-rata management)."
       }
     },
     {

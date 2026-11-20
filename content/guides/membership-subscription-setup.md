@@ -27,7 +27,7 @@ This guide explains how to set up an ongoing, never-ending membership programme 
 ## Step 1: Set the price type to Membership
 
 1. Go to **Programmes** → select the programme → **Edit Settings**.
-2. Open the **Price and Payment** tile.
+2. Open the **Price and payment** tile.
 3. Set `Price type for programme` to **Membership**.
 4. Enter the monthly membership price in the `Unit price` field.
 5. Save.
@@ -38,7 +38,7 @@ Membership pricing charges a fixed amount at a recurring interval, rather than d
 
 Since this is an ongoing programme with no fixed start date, every new booking is technically a "late booking." You want these to be approved instantly without admin intervention.
 
-1. In the same **Price and Payment** tile, expand **Advanced settings**.
+1. In the same **Price and payment** tile, expand **Advanced settings**.
 2. In the `Late bookings` section, select **Automatically confirmed**.
 3. Save.
 

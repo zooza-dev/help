@@ -90,7 +90,7 @@ After creating blocks, configure the following settings.
 Blocks are not automatically visible in the booking form. To allow clients to enrol for a specific block:
 
 1. Go to the class detail.
-2. Open the **Price and Payment** tile.
+2. Open the **Price and payment** tile.
 3. Click on the block you want to make public.
 4. Check **Enable online registration**.
 5. Click **Save**.
@@ -99,7 +99,7 @@ Repeat for each block you want clients to see. Leave blocks unchecked if they ar
 
 ### Set pricing per block
 
-Each block can have its own price. In the **Price and Payment** tile:
+Each block can have its own price. In the **Price and payment** tile:
 
 1. Open the block.
 2. Choose whether the price is calculated from the unit price (based on number of sessions) or is a fixed amount for the entire block.

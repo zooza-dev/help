@@ -75,7 +75,7 @@ Yes. When a class reaches full capacity, the waiting list option is automaticall
 There is no switch labelled "waiting list". You stop it by **hiding the class from
 the booking form once it fills up**:
 
-1. Go to **Programmes** → open the programme → **Online Booking → Edit**.
+1. Go to **Programmes** → open the programme → **Online booking → Edit**.
 2. Scroll to the **Other** section.
 3. Set **If the class reaches full capacity, do not show it in the booking form** to **Yes**.
 

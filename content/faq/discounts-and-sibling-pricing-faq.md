@@ -142,7 +142,7 @@ Create a one-time discount code equal to the registration fee amount (e.g., code
 
 ## How do I set a fixed price that ignores pro-rata for late joiners?
 
-Go to **Programmes** → select the programme → **Settings** → **Price and Payment** → **Advanced settings**. Set the **Aliquot price calculation** to **Full programme price**. With this setting, every late booking is charged the full price regardless of when the client joins.
+Go to **Programmes** → select the programme → **Settings** → **Price and payment** → **Advanced settings**. Set the **Aliquot price calculation** to **Full programme price**. With this setting, every late booking is charged the full price regardless of when the client joins.
 
 You can also adjust the calculated amount manually on each booking before confirming it, if you need a case-by-case override instead of a blanket rule.
 

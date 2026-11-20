@@ -65,7 +65,7 @@
       "name": "How do I handle pro-rata bookings for partial terms?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zooza calculates pro-rata prices automatically when a client joins a class that has already started. Go to Programmes → Settings → Price and Payment → Advanced settings and configure the Late bookings mode and Aliquot price calculation method. The system can calculate the reduced price based on remaining sessions or remaining days in the billing period.\n\nFor a full walkthrough of all options, see Late bookings (pro-rata management)."
+        "text": "Zooza calculates pro-rata prices automatically when a client joins a class that has already started. Go to Programmes → Settings → Price and payment → Advanced settings and configure the Late bookings mode and Aliquot price calculation method. The system can calculate the reduced price based on remaining sessions or remaining days in the billing period.\n\nFor a full walkthrough of all options, see Late bookings (pro-rata management)."
       }
     },
     {

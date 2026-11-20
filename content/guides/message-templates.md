@@ -57,7 +57,7 @@ If you want clients to receive an automatic message about an upcoming session, y
 
 ### Reminders for outstanding payments
 
-These reminders may or may not be sent to clients automatically. You can set them up at the programme level in **Price and Payment --> Payment Reminder Settings**. See the [automatic payment reminders manual](automatic-payment-reminders.md).
+These reminders may or may not be sent to clients automatically. You can set them up at the programme level in **Price and payment --> Payment reminder settings**. See the [automatic payment reminders manual](automatic-payment-reminders.md).
 
 You can set whether and when to send them, as well as whether to automatically delete outstanding bookings.
 

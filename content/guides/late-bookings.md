@@ -21,7 +21,7 @@ A **late booking** occurs when a client enrols for a class that has already star
 
 Zooza gives you full control over what happens when someone joins late: whether the booking is accepted automatically or requires your approval, and how the price is calculated — from a fully automatic pro-rata reduction to a fixed full price.
 
-> **Navigation:** Go to **Programmes** → select the programme → **Settings** → **Price and Payment** → **Advanced settings**.
+> **Navigation:** Go to **Programmes** → select the programme → **Settings** → **Price and payment** → **Advanced settings**.
 
 ## Late booking modes
 
@@ -107,7 +107,7 @@ This setting is especially useful for programmes with longer billing periods (te
 
 1. Go to **Programmes** and select the programme.
 2. Click **Settings**.
-3. Open the **Price and Payment** tile.
+3. Open the **Price and payment** tile.
 4. Expand **Advanced settings**.
 5. Set the **Late bookings** mode (Disabled / Manual confirmation required / Automatically confirmed).
 6. Set the **Aliquot price calculation** method.
@@ -203,7 +203,7 @@ The client is enrolled with zero debt for the current period. Billing starts on 
 
 ## Related
 
-- [Programme Settings Reference](../reference/programme-settings.md) — Price and Payment tile, Advanced settings.
+- [Programme Settings Reference](../reference/programme-settings.md) — Price and payment tile, Advanced settings.
 - [Programme Automations](../reference/programme-automations.md) — Late Booking Automations flow.
 - [Payment Templates](payment-templates-creation.md) — configuring payment methods and templates.
 - [Membership Subscription Setup](membership-subscription-setup.md) — Netflix-style recurring billing configuration.

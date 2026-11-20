@@ -4,7 +4,7 @@
 
 ## Summary
 
-- **Total docs checked:** 281
+- **Total docs checked:** 280
 - **Docs with errors:** 0
 - **Docs with warnings only:** 62
 - **Total errors:** 0

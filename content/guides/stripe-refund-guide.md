@@ -109,7 +109,7 @@ If you need to refund in multiple instalments (e.g. returning money over two mon
 - **The payment has not reached your Stripe account yet.** This is the most common cause on a recent payment, and it can take up to 24 hours. Zooza cannot refund money that Stripe has not yet transferred.
 - The payment may have been made too long ago — Stripe only allows refunds within a certain period (typically up to 90 days, though this varies).
 - The payment may already have been fully refunded.
-- Your Stripe account may need to be reconnected — go to **Settings → Integrations → Stripe** to check.
+- Your Stripe account may need to be reconnected — go to **Team & Settings → Integrations → Stripe** to check.
 
 > **If the client is angry and you cannot wait 24 hours**, issue the refund from your **Stripe dashboard** directly — it is often possible there before Zooza offers the button. Then record it in Zooza using [Step B above](#step-b--record-the-refund-in-zooza) so your reports stay correct.
 

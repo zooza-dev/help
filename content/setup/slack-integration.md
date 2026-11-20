@@ -12,6 +12,7 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: true
 last_converted: "2026-04-30"
+related_articles: ["slack-faq", "todos", "notifications-center"]
 ---
 
 # Connect Slack to Zooza
@@ -32,7 +33,7 @@ Zooza can deliver notifications to Slack — todo assignments, system alerts, an
 
 ## Connect your Slack workspace
 
-1. Go to **Settings → Integrations → Slack**.
+1. Go to **Team & Settings → Integrations → Slack**.
 2. Click **Connect to Slack**.
 3. You are redirected to Slack. Review the requested permissions and click **Allow**.
 4. You are redirected back to Zooza. The connection is active immediately.
@@ -56,7 +57,7 @@ After connecting, you decide which Slack channel receives each type of notificat
 
 To configure:
 
-1. Go to **Settings → Integrations → Slack**.![Screenshot — slack integration](../../assets/images/slack-integration-03.png)
+1. Go to **Team & Settings → Integrations → Slack**.![Screenshot — slack integration](../../assets/images/slack-integration-03.png)
 2. Under **Channel mapping**, select a Slack channel for each stream you want to activate.
 3. Leave a stream unmapped to disable Slack delivery for it.
 4. Click **Save**.
@@ -70,11 +71,11 @@ To configure:
 
 When a network company installs Slack, the Zooza bot joins the shared workspace once. Each franchise unit then picks its own channels:
 
-1. Franchise admin goes to **Settings → Integrations → Slack**.
+1. Franchise admin goes to **Team & Settings → Integrations → Slack**.
 2. The connection is already active (inherited from the network install).
 3. Configure channel mappings for this location's streams.
 
-No re-authorization is needed. If a new company joins the network after the initial install, they will see a prompt in **Settings → Integrations → Slack** to opt in.
+No re-authorization is needed. If a new company joins the network after the initial install, they will see a prompt in **Team & Settings → Integrations → Slack** to opt in.
 
 ---
 
@@ -84,7 +85,7 @@ No re-authorization is needed. If a new company joins the network after the init
 
 To stop Slack delivery for your company without affecting others in the network:
 
-1. Go to **Settings → Integrations → Slack**.
+1. Go to **Team & Settings → Integrations → Slack**.
 2. Click **Disconnect this company**.
 
 Your channel mappings are removed. The Slack workspace install and other network companies are unaffected.
@@ -94,7 +95,7 @@ Your channel mappings are removed. The Slack workspace install and other network
 
 Only the company that originally completed the OAuth can fully uninstall:
 
-1. Go to **Settings → Integrations → Slack**.
+1. Go to **Team & Settings → Integrations → Slack**.
 2. Click **Uninstall**.
 
 This revokes the Zooza bot from Slack and deactivates the connection for all attached network companies.
@@ -119,7 +120,7 @@ Each Slack message includes:
 ## Troubleshooting
 
 **Messages stopped appearing in Slack**
-The Slack bot token may have been revoked (e.g., a workspace admin removed the Zooza app, or another OAuth was completed for the same workspace from a different Zooza network). Go to **Settings → Integrations → Slack** — if the status shows **Needs re-authorization**, click **Reconnect** and complete the OAuth flow again.
+The Slack bot token may have been revoked (e.g., a workspace admin removed the Zooza app, or another OAuth was completed for the same workspace from a different Zooza network). Go to **Team & Settings → Integrations → Slack** — if the status shows **Needs re-authorization**, click **Reconnect** and complete the OAuth flow again.
 
 **Channel not listed**
 The Zooza bot must be a member of the channel. In Slack, open the channel, click the channel name at the top, go to **Integrations → Add apps**, and add Zooza.

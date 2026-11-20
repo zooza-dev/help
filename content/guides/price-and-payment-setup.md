@@ -1,6 +1,6 @@
 ---
 title: "Price and payment setup"
-description: "The Price and Payment tile on a programme controls how much clients pay and how payments are collected."
+description: "The Price and payment tile on a programme controls how much clients pay and how payments are collected."
 slug: "price-and-payment-setup"
 type: "guides"
 product_area: "Payments"
@@ -18,11 +18,11 @@ related_articles: ["payment-templates-creation","membership-fee-setup","late-boo
 
 # Price and payment setup
 
-The **Price and Payment** tile on a programme controls how much clients pay and how payments are collected. You set it when creating a programme, but you can update it any time in the programme settings.
+The **Price and payment** tile on a programme controls how much clients pay and how payments are collected. You set it when creating a programme, but you can update it any time in the programme settings.
 
-> **Navigation:** Go to **Programmes** → select the programme → **Edit Settings** → **Price and Payment**.
+> **Navigation:** Go to **Programmes** → select the programme → **Edit Settings** → **Price and payment**.
 
-This guide explains every section of the Price and Payment tile: pricing models, unit price, downpayments, payment frequency, payment methods, and invoicing.
+This guide explains every section of the Price and payment tile: pricing models, unit price, downpayments, payment frequency, payment methods, and invoicing.
 
 ## Programme types and their pricing
 
@@ -294,7 +294,7 @@ Additional fields:
 
 ### Invoicing
 
-Select the **invoice profile** that will appear on invoices for this programme. Invoice profiles are managed in **Settings** → **Billing** → **Invoice Profiles**.
+Select the **invoice profile** that will appear on invoices for this programme. Invoice profiles are managed in **Settings** → **Billing** → **Invoice profiles**.
 
 ## Payment reminders settings
 
@@ -327,7 +327,7 @@ Programme → the **Settings** tab → the **Price** tile → **Price and paymen
 
 ## Related
 
-- [Programme Settings Reference](../reference/programme-settings.md) — full field reference for the Price and Payment tile.
+- [Programme Settings Reference](../reference/programme-settings.md) — full field reference for the Price and payment tile.
 - [Late bookings (pro-rata management)](late-bookings.md) — late booking modes and aliquot price calculation.
 - [Billable sessions](billable-sessions.md) — marking which sessions are paid.
 - [Payment templates creation](payment-templates-creation.md) — creating and configuring payment schedules.

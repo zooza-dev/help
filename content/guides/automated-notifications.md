@@ -98,7 +98,7 @@ All trial emails are configured at **Programmes → programme → Automations �
 | Notification | Trigger | Config location | Client opt-out? |
 |---|---|---|---|
 | **Waitlist confirmation** | Client placed on waitlist | Programmes → Automations → Waitlist | No |
-| **Waitlist — space opened** | A spot opens and client is next | Programmes → Online Booking → Edit → Auto waitlist notification toggle | No |
+| **Waitlist — space opened** | A spot opens and client is next | Programmes → Online booking → Edit → Auto waitlist notification toggle | No |
 
 ---
 
@@ -106,8 +106,8 @@ All trial emails are configured at **Programmes → programme → Automations �
 
 | Notification | Trigger | Config location | Client opt-out? |
 |---|---|---|---|
-| **Session reminder** | Before an upcoming session (timing configurable) | Programmes → Online Booking → Edit → Send event notifications toggle; template selectable | **Yes** — unsubscribe link in email, or admin toggles per booking (Options tab → Reminder) |
-| **Session booking reminder** | A client on an open programme has not booked any upcoming session (weekly) | Programmes → Online Booking → Edit → Upcoming events notifications toggle | **Yes** — unsubscribe link in email, or admin toggles per booking (Options tab → Reminder) |
+| **Session reminder** | Before an upcoming session (timing configurable) | Programmes → Online booking → Edit → Send event notifications toggle; template selectable | **Yes** — unsubscribe link in email, or admin toggles per booking (Options tab → Reminder) |
+| **Session booking reminder** | A client on an open programme has not booked any upcoming session (weekly) | Programmes → Online booking → Edit → Upcoming events notifications toggle | **Yes** — unsubscribe link in email, or admin toggles per booking (Options tab → Reminder) |
 | **Session changed** | Session details modified by admin (time, venue, instructor, status) | Automatic when session is edited | **Yes** — same as session reminder opt-out |
 | **Signed up for open session** | Client enrols in a specific pay-as-you-go session | Automatic | No |
 
@@ -213,7 +213,7 @@ These are transactional status updates — no opt-out exists.
 |---|---|
 | Edit any notification template | **Communication → Templates** |
 | Disable booking/trial/waitlist automation step | **Programmes → programme → Automations** |
-| Enable/disable session reminders | **Programmes → programme → Online Booking → Edit → Send event notifications** |
+| Enable/disable session reminders | **Programmes → programme → Online booking → Edit → Send event notifications** |
 | Configure global payment notification toggles (before payment creation, after manual entry, after import) | **Settings → Billing & Payments → Payment settings** |
 | Configure payment reminders and auto-deletion for overdue payments | **Programmes → programme → Settings** → the **Price** tile → **Price and payment** → Payment Reminders |
 | Enable/disable feedback requests | **Programmes → programme → Settings** → the **Feedback and reviews** tile → **Feedback** |

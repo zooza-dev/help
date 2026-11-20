@@ -27,7 +27,7 @@ entity's card payments into that entity's own merchant account.
 
 ## Connect an account
 
-Go to **Settings → Integrations → Global Payments**. The page has two cards:
+Go to **Team & Settings → Integrations → Global Payments**. The page has two cards:
 **Connections** and **Billing profile routing**.
 
 In **Connections**, add a connection with three things:

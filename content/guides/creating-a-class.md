@@ -262,7 +262,7 @@ Clicking on a class opens the **Class Detail** page, where all settings and data
 - **Settings** — class name, capacity, venue, billing period, online registration toggle, labels.
 - **Instructors** — primary and additional instructors.
 - **Products** — products linked to this class.
-- **Price and Payment** — class-level price override and payment frequency.
+- **Price and payment** — class-level price override and payment frequency.
 - **Documents** — attached documents.
 - **Make-up Sessions** — make-up rules for this class.
 - **Report** — session-by-session attendance report.

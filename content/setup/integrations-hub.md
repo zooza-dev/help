@@ -19,7 +19,7 @@ related_articles: ["claude-plugin", "slack-integration", "whatsapp-integration"]
 
 The **Integrations** page is a central hub where you can connect Zooza to external services — payment gateways, invoicing systems, accounting exports, marketing tools, and more.
 
-Go to **Settings → Integrations** to see all available integrations and their current status.
+Go to **Team & Settings → Integrations** to see all available integrations and their current status.
 
 ---
 

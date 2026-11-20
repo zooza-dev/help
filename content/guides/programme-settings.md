@@ -43,11 +43,11 @@ Selecting *Edit Settings* the programme detail page will open, where multiple se
 
 Each booking type has a different bundle of settings divided into tiles that can be modified.
 
-1. Price and Payment
-2. Online Booking
+1. Price and payment
+2. Online booking
 3. Make-up Sessions *(full duration programmes* only)
 4. Programme Settings
-5. Additional Fields
+5. Additional fields
 6. Trial (*full duration programmes* only)
 7. Auto-Enrolment (*full duration programmes* only)
 8. Feedback
@@ -70,7 +70,7 @@ This setting is set when creating the programme, but you can update the *unit pr
 
 ## Online registration
 
-To configure how the programme will appear on your website and how communication with clients will be handled, use the *Online Booking* tile. A detailed explanation of each feature is available in the [Online Booking manual.](../setup/online-registration.md)
+To configure how the programme will appear on your website and how communication with clients will be handled, use the *Online booking* tile. A detailed explanation of each feature is available in the [Online booking manual.](../setup/online-registration.md)
 
 Two controls in this tile decide **who may book and when**:
 
@@ -98,9 +98,9 @@ This setting is set when creating the programme, but you can change it anytime a
 
 ## Additional fields
 
-At the programme level, you can add *Additional Fields* to the booking form to collect additional information from participants, such as age, allergies, or skill level. For detailed instructions on creating and managing extra fields, see the [Additional fields on the booking form](additional-fields.md) guide.
+At the programme level, you can add *Additional fields* to the booking form to collect additional information from participants, such as age, allergies, or skill level. For detailed instructions on creating and managing extra fields, see the [Additional fields on the booking form](additional-fields.md) guide.
 
-![At the programme level, you can add Additional Fields to the booking form to collect...](../../assets/images/course-settings-09.png)
+![At the programme level, you can add Additional fields to the booking form to collect...](../../assets/images/course-settings-09.png)
 
 ## Trial
 

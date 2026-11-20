@@ -45,7 +45,7 @@ Can't find something? This page gives the direct path to the most commonly searc
 > | The unpaired-payments list | **Sales & Payments → Payment reconciliation**, and *Unpaired* is the very first filter |
 > | Payments → Inbound → Import | **Sales & Payments → Transactions → Import payments** |
 > | Payments → Inbound → Setup | **Settings → Billing & Payments → Payment collection setup** |
-> | Payments → Inbound → Direct Debit | **Sales & Payments → Direct Debit mandates** |
+> | Sales & Payments → Transactions → Direct debit | **Sales & Payments → Direct Debit mandates** |
 > | Reports → Refunds report | **Sales & Payments → Refunds → Issued** |
 >
 > **Transactions has no status filter any more**, and that is deliberate: money that
@@ -110,9 +110,9 @@ Can't find something? This page gives the direct path to the most commonly searc
 
 | I want to find… | Where to go |
 |-----------------|-------------|
-| Stripe connection | **Settings → Integrations → Stripe** |
-| GoCardless connection | **Settings → Integrations → GoCardless** |
-| Xero / accounting integration | **Settings → Integrations → Xero** |
+| Stripe connection | **Team & Settings → Integrations → Stripe** |
+| GoCardless connection | **Team & Settings → Integrations → GoCardless** |
+| Xero / accounting integration | **Team & Settings → Integrations → Xero** |
 | Locations and venues | **Settings → General → Venues** |
 | Instructors | **Team → Instructors** |
 | User accounts and access roles | **Settings → General → Access** |

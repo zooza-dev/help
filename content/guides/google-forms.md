@@ -116,7 +116,7 @@ the reference in for them.
 ![The Answers view for an attached form](../../assets/images/google-forms-05.png)
 ## The form library
 
-**Settings → Integrations → Forms** lists every Google Form attached anywhere in your company, with the number of stored answers for each.
+**Team & Settings → Integrations → Forms** lists every Google Form attached anywhere in your company, with the number of stored answers for each.
 
 This is where the difference between two actions matters:
 

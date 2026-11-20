@@ -88,7 +88,7 @@ For initial setup instructions, see [Deploying Zooza on your website](../setup/d
 **Solution:**
 
 1. Go to **Programmes** → select the programme → **Edit Settings**.
-2. Open the **Online Booking** tile.
+2. Open the **Online booking** tile.
 3. Verify that `Allow online booking` is toggled **on**.
 4. Verify that `Display in catalogue` is checked.
 5. Save and refresh your website.

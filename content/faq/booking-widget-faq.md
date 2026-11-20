@@ -110,15 +110,15 @@ If the data is incorrect in Zooza itself, update it in the class or programme se
 Booking form configuration is split across several places depending on what you want to change:
 
 - **Global appearance** (button text, availability display, CSS, discount code field) — **Team & Settings → Publish** → click your widget → **Configure** next to Booking form.
-- **What data is collected** (extra fields like date of birth, address, custom questions) — **Programmes** → open the programme → **Additional Fields**.
-- **Which classes appear, field labels, multiple children per form, confirmation email** — **Programmes** → open the programme → **Online Booking → Edit**.
+- **What data is collected** (extra fields like date of birth, address, custom questions) — **Programmes** → open the programme → **Additional fields**.
+- **Which classes appear, field labels, multiple children per form, confirmation email** — **Programmes** → open the programme → **Online booking → Edit**.
 - **Price and payment method** — **Programmes** → open the programme → **Settings** → the **Price** tile → **Price and payment**.
 
 For a full overview of each level, see [Booking form settings overview](../guides/booking-form-settings.md).
 
 ## Can I rename the fields on the booking form (Name, Email, Phone)?
 
-Yes, at the programme level. Go to **Programmes** → open the programme → **Online Booking → Edit** → scroll to **Customizing Booking Form**. You can enter a custom label for each standard field (Note, Name, Surname, Email address, Phone). You can also show or hide individual fields using the eye icon next to each one.
+Yes, at the programme level. Go to **Programmes** → open the programme → **Online booking → Edit** → scroll to **Customizing Booking Form**. You can enter a custom label for each standard field (Note, Name, Surname, Email address, Phone). You can also show or hide individual fields using the eye icon next to each one.
 
 ## Can I hide the instructor/provider row on the booking form?
 
@@ -144,7 +144,7 @@ Yes. Go to **Team & Settings → Publish** → click your widget → **Configure
 
 ## Can I show only trial sessions (or only blocks) on the booking form?
 
-Yes, per programme. Go to **Programmes** → open the programme → **Online Booking → Edit** → find **Booking Options Shown on Website** and choose one of:
+Yes, per programme. Go to **Programmes** → open the programme → **Online booking → Edit** → find **Booking Options Shown on Website** and choose one of:
 
 - **Default** — client can choose between full programme, trial, or block (depending on what is available).
 - **Offer full programme booking only** — hides trial and block options.
@@ -160,7 +160,7 @@ Renaming a block to force the order — "1 Monday", "2 Wednesday" — is not nec
 
 ## How do I set the display order of programmes on the booking form?
 
-Go to **Programmes** → open the programme → **Online Booking → Edit** → set the **Priority** value (0–1000). Higher numbers appear first. By default all programmes have priority 0 and are sorted alphabetically.
+Go to **Programmes** → open the programme → **Online booking → Edit** → set the **Priority** value (0–1000). Higher numbers appear first. By default all programmes have priority 0 and are sorted alphabetically.
 
 ## How do I hide the number of registered clients from the booking form?
 
@@ -345,7 +345,7 @@ Sometimes what looks like a registration form on a website is actually a block o
 
 ## Can I translate or customise the text labels on the booking widget?
 
-Some fields can be relabelled directly in the programme settings — go to **Programmes → programme → Online Booking → Edit → Customizing Booking Form**.
+Some fields can be relabelled directly in the programme settings — go to **Programmes → programme → Online booking → Edit → Customizing Booking Form**.
 
 For more advanced customisation (translations, styling, CSS, JavaScript options), refer to the [Zooza developer documentation at docs.zooza.online](https://docs.zooza.online). The docs cover:
 

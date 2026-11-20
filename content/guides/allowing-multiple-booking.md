@@ -41,4 +41,4 @@ In the *Online Registration *section, click *Edit.*
  4. Don’t forget to *Save* settings
 ![Screenshot — allowing multiple booking](../../assets/images/allowing-multiple-booking-01.png)
 
-**NOTE:** If you want related bookings to combine payments for one booking and allow the main booking to pay for both (all) related bookings at the same time and with one variable symbol – go to *Price and Payments* tile and enable the checkbox *Payments are managed by registrant*
+**NOTE:** If you want related bookings to combine payments for one booking and allow the main booking to pay for both (all) related bookings at the same time and with one variable symbol – go to *Price and payments* tile and enable the checkbox *Payments are managed by registrant*

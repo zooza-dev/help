@@ -32,7 +32,7 @@ The class detail page is organized into sections accessible from the top of the 
 | **Settings** | Class name, timetable type, venue, capacity, dates, billing period, and advanced settings. |
 | **Instructors** | Primary and additional instructors with roles and rate. |
 | **Products** | Products linked to this class (e.g., merchandise, kits). |
-| **Price and Payment** | Per-session price, booking fee, and payment frequency/plans. |
+| **Price and payment** | Per-session price, booking fee, and payment frequency/plans. |
 | **Documents** | Documents attached to the class. |
 | **Make-up Sessions** | Make-up session configuration and rules for this class. |
 | **Videos** | Video content linked to the class. |
@@ -120,13 +120,13 @@ Manage the primary instructor and any additional instructors for the class.
 
 Click **Add additional instructor** to assign more instructors.
 
-## Price and Payment
+## Price and payment
 
 Override programme-level pricing at the class level.
 
 ![Class Price](../../assets/images/reference/cls-classes-friday-price.png)
 
-### Price and Payment
+### Price and payment
 
 | Field | Description |
 |---|---|

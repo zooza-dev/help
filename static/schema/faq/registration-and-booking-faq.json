@@ -6,10 +6,10 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How do I generate a booking link to send to my clients?",
+      "name": "Questions answered in the Booking FAQ",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Every programme in Zooza has a public booking page. Your main booking URL is yourbrand.zooza.online. You can also share direct links to specific classes:\n\n- Full list — yourbrand.zooza.online/booking/ lets clients choose from all available classes.\n- Programme-specific — add ?course_id=X to guide clients to a specific programme.\n- Class-specific — add ?course_id=X&schedule_id=Y&place_id=Z to pre-fill a specific class.\n\nShare these links via email, WhatsApp, or your website."
+        "text": "These live in Booking FAQ so there is one answer to find, not two:\nbooking links, duplicate bookings, deleting test bookings, deleting versus cancelling,\nregistering several children at once, moving a client to another class, pro-rata for\npartial terms, creating a booking on a client's behalf, and why the Clients list is\nlonger than the booking count."
       }
     },
     {
@@ -18,70 +18,6 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Not by blocking it at the door — Zooza works the other way round, and on purpose.\n\nEvery booking gets a grace period to pay in, reminders go out during it, and\nauto-cancel clears out the ones still unpaid when it expires. You accept the\nbooking, then let the system tidy up.\n\nThe reasoning: a blocked booking is a lost lead. A parent who cannot finish the form\nat 21:00 because their card is upstairs usually does not come back. The same parent\nwith an unpaid booking and a reminder in their inbox usually pays.\n\nRestricting payment methods does not make payment mandatory either — leaving only\ncard payment enabled still produces bookings that complete unpaid.\n\nFull setup: Automatically cancel unpaid registrations."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why are clients creating duplicate bookings?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "This usually happens when a parent starts the booking, doesn't complete payment, and then tries again. Zooza warns them that a booking already exists, but some parents confirm and create a second one.\n\nTo handle duplicates:\n\n1. Go to Bookings and identify the unpaid duplicate.\n2. Delete the unpaid booking (the one without a completed payment).\n3. Always check the child's name and date of birth to confirm it's truly a duplicate.\n\nThe system doesn't block repeat bookings because sometimes a parent legitimately needs to register a second child."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I delete test bookings?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Go to Bookings, find the test booking, open its detail, and change the status to Deleted. This completely removes the booking. The data is still available under the \"Deleted bookings\" filter for reference."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between deleting and cancelling a booking?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "- Cancellation — used when a booking was active (the child was attending), but the family decides to stop. It ends the booking, frees the spot, but keeps the full history.\n- Deletion — used when you want to completely remove the booking (e.g., test entries, accidental duplicates)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can clients register multiple children at once?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. During booking, there is an Add another child button. When a parent adds a second child, the price doubles accordingly. If clients report seeing unexpected higher prices, they may have accidentally clicked this button — refreshing the page resets it."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I move a client from one class to another?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Open the booking detail, and in the settings you can change the assigned class. It's a few clicks — select the new class from the dropdown and save."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I handle pro-rata bookings for partial terms?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Zooza calculates pro-rata prices automatically when a client joins a class that has already started. Go to Programmes → Settings → Price and Payment → Advanced settings and configure the Late bookings mode and Aliquot price calculation method. The system can calculate the reduced price based on remaining sessions or remaining days in the billing period.\n\nFor a full walkthrough of all options, see Late bookings (pro-rata management)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I manually create a booking on behalf of a client?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. You can go through the booking form on behalf of a parent. This is a workaround — the recommended flow is for parents to book online themselves. Note that trial bookings cannot be created manually by an admin; only standard enrolments."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What does the client list show — why are there more entries than expected?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Clients list shows all entities: both parents and children. So if you have 90 bookings, the client count may appear higher because each parent and each child is listed separately. Use the Bookings or Reports section for accurate booking counts."
       }
     },
     {
@@ -145,7 +81,7 @@
       "name": "Why is my programme not showing on the booking page?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Both Allow online booking and Display in catalogue must be enabled for a programme to appear on your public booking page.\n\n1. Go to Programmes → select the programme → Edit Settings.\n2. Open the Online Booking tile.\n3. Verify that Allow online booking is toggled on.\n4. Verify that Display in catalogue is checked.\n5. Save the settings.\n\nIf only one of these is enabled, the programme will not be visible to clients. Allow online booking controls whether the programme accepts registrations, while Display in catalogue controls whether it appears in the website menu and booking form list."
+        "text": "Both Allow online booking and Display in catalogue must be enabled for a programme to appear on your public booking page.\n\n1. Go to Programmes → select the programme → Edit Settings.\n2. Open the Online booking tile.\n3. Verify that Allow online booking is toggled on.\n4. Verify that Display in catalogue is checked.\n5. Save the settings.\n\nIf only one of these is enabled, the programme will not be visible to clients. Allow online booking controls whether the programme accepts registrations, while Display in catalogue controls whether it appears in the website menu and booking form list."
       }
     },
     {

@@ -57,4 +57,4 @@ See [the email FAQ for the full workaround](email-communication-faq.md#i-sent-an
 
 ## Where do I find my WhatsApp templates?
 
-Go to **Communication → WhatsApp → Templates**. Both the default Zooza templates and any custom templates approved for your account are listed there.
+Go to **Communication → Templates**. Both the default Zooza templates and any custom templates approved for your account are listed there.

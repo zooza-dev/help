@@ -94,8 +94,8 @@ Use **Linked bookings** to bundle multiple employee registrations under one paym
 Language schools almost always need to issue invoices — especially for corporate clients. Make sure your invoicing is configured before you go live.
 
 Key steps:
-1. Fill in your **billing profile** in Settings → Invoice profiles — your company name, address, and Tax/VAT ID
-2. Connect **Xero** if you use it for accounting (Settings → Integrations) — invoices sync automatically
+1. Fill in your **billing profile** in Settings → Billing & Payments → Invoice profiles — your company name, address, and Tax/VAT ID
+2. Connect **Xero** if you use it for accounting (Team & Settings → Integrations) — invoices sync automatically
 3. For corporate bookings, the invoice pulls the company details the client entered at booking
 
 If a corporate client needs the invoice in a specific format (e.g. with a purchase order number), use the **extra fields** to collect that at booking and include it in the invoice template.

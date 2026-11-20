@@ -80,7 +80,7 @@ and be aware you are overriding the client's own choice.
 ## Turning it off for a whole class
 
 The reminder is the **Upcoming events notifications** toggle on the class:
-**Programmes → your programme → Online Booking → Edit**. Switching it off stops
+**Programmes → your programme → Online booking → Edit**. Switching it off stops
 the reminder for everybody in that class.
 
 ## Editing the wording

@@ -33,7 +33,7 @@
       "name": "Will Zooza tell me before the connection lapses?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, since 20 September 2026. Everyone with company-edit rights gets:\n\n- a warning 14 days before the authorisation lapses, and\n- a second message when it has lapsed.\n\nBoth arrive as an email and as a notification inside Zooza. Before this, a feed\nthat lapsed simply went quiet — one company went 29 days without payments\nappearing before anyone noticed. If that has happened to you, the silence was\nthe symptom.\n\nYou can also see the state without waiting for a message. In Settings →\nBilling & Payments → Invoice profiles, the profile and each bank account show\nReconnect needed once it has lapsed, or Reconnect needed in N days while\nthe warning window is running. A healthy connection shows nothing.\n\nUntil September 2026 that indicator assumed every connection lasted 180 days,\nso it could stay silent on a feed that had already stopped. It now reads the\nreal expiry date the bank gave."
+        "text": "Yes, since 20 September 2026. Everyone with company-edit rights gets:\n\n- a warning 14 days before the authorisation lapses, and\n- a second message when it has lapsed.\n\nBoth arrive as an email and as a notification inside Zooza. Before this, a feed\nthat lapsed simply went quiet — one company went 29 days without payments\nappearing before anyone noticed. If that has happened to you, the silence was\nthe symptom.\n\nYou can also see the state without waiting for a message. In Settings →\nSettings → Billing & Payments → Invoice profiles, the profile and each bank account show\nReconnect needed once it has lapsed, or Reconnect needed in N days while\nthe warning window is running. A healthy connection shows nothing.\n\nUntil September 2026 that indicator assumed every connection lasted 180 days,\nso it could stay silent on a feed that had already stopped. It now reads the\nreal expiry date the bank gave."
       }
     },
     {
@@ -153,7 +153,7 @@
       "name": "I get an error when trying to set GoCardless as the payment provider on a programme",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "If you see a \"provider not connected\" error when selecting GoCardless as the direct debit provider on a programme and saving, it means your GoCardless connection is not currently active.\n\nWhat to do:\n\n1. Go to Settings → Integrations → GoCardless and check the connection status.\n2. If the connection has expired or was revoked, follow the reconnection steps.\n3. Once reconnected, try saving the programme again.\n\nThis validation prevents a misconfiguration that would cause payment failures at booking time. Previously, saving would succeed silently but fail when a client tried to pay."
+        "text": "If you see a \"provider not connected\" error when selecting GoCardless as the direct debit provider on a programme and saving, it means your GoCardless connection is not currently active.\n\nWhat to do:\n\n1. Go to Team & Settings → Integrations → GoCardless and check the connection status.\n2. If the connection has expired or was revoked, follow the reconnection steps.\n3. Once reconnected, try saving the programme again.\n\nThis validation prevents a misconfiguration that would cause payment failures at booking time. Previously, saving would succeed silently but fail when a client tried to pay."
       }
     }
   ]

@@ -25,7 +25,7 @@
       "name": "Our franchise has one Slack workspace for all locations. Do each location's admins need to connect separately?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. One admin at any location installs the Zooza app into the shared Slack workspace. All other companies in the Zooza network are automatically attached. Each location's admin then only needs to go to Settings → Integrations → Slack to pick which Slack channels receive their notifications — no additional OAuth required."
+        "text": "No. One admin at any location installs the Zooza app into the shared Slack workspace. All other companies in the Zooza network are automatically attached. Each location's admin then only needs to go to Team & Settings → Integrations → Slack to pick which Slack channels receive their notifications — no additional OAuth required."
       }
     },
     {
@@ -41,7 +41,7 @@
       "name": "What notifications does Zooza send to Slack?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zooza sends notifications through two streams, each mapped to a Slack channel of your choice:\n\n- Todos — when a todo is assigned to a colleague (not a self-assignment), the notification appears in the configured channel.\n- System messages — automated alerts such as worker failures, payment errors, or integration issues.\n\nYou choose which channels receive each stream in Settings → Integrations → Slack → Channel mapping. Unmapped streams are not delivered to Slack."
+        "text": "Zooza sends notifications through two streams, each mapped to a Slack channel of your choice:\n\n- Todos — when a todo is assigned to a colleague (not a self-assignment), the notification appears in the configured channel.\n- System messages — automated alerts such as worker failures, payment errors, or integration issues.\n\nYou choose which channels receive each stream in Team & Settings → Integrations → Slack → Channel mapping. Unmapped streams are not delivered to Slack."
       }
     },
     {
@@ -57,7 +57,7 @@
       "name": "Notifications stopped appearing in our Slack channel. What happened?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The most common cause is that the Zooza bot token was revoked. This can happen if:\n- A Slack workspace admin removed the Zooza app from the workspace.\n- Someone from a different Zooza network or company completed a fresh OAuth into the same Slack workspace, rotating the bot token.\n\nGo to Settings → Integrations → Slack. If the status shows Needs re-authorization, click Reconnect and complete the OAuth flow again."
+        "text": "The most common cause is that the Zooza bot token was revoked. This can happen if:\n- A Slack workspace admin removed the Zooza app from the workspace.\n- Someone from a different Zooza network or company completed a fresh OAuth into the same Slack workspace, rotating the bot token.\n\nGo to Team & Settings → Integrations → Slack. If the status shows Needs re-authorization, click Reconnect and complete the OAuth flow again."
       }
     },
     {
@@ -73,7 +73,7 @@
       "name": "Can I stop Slack delivery for my company without disconnecting the whole network?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Go to Settings → Integrations → Slack and click Disconnect this company. This removes your channel mappings and stops Slack delivery for your company. The Slack workspace install and other companies in the network are unaffected."
+        "text": "Yes. Go to Team & Settings → Integrations → Slack and click Disconnect this company. This removes your channel mappings and stops Slack delivery for your company. The Slack workspace install and other companies in the network are unaffected."
       }
     },
     {
@@ -81,7 +81,7 @@
       "name": "How do I remove the Zooza Slack app from our workspace entirely?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Only the company that originally completed the OAuth can uninstall. Go to Settings → Integrations → Slack and click Uninstall. This revokes the bot from Slack and deactivates the connection for all attached companies."
+        "text": "Only the company that originally completed the OAuth can uninstall. Go to Team & Settings → Integrations → Slack and click Uninstall. This revokes the bot from Slack and deactivates the connection for all attached companies."
       }
     },
     {

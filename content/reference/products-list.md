@@ -71,7 +71,7 @@ Pagination shows total pages and results count.
 
 Buttons: **Save** and **Delete product**.
 
-### Price and Payment
+### Price and payment
 
 | Field | Description |
 |---|---|

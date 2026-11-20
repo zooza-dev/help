@@ -84,7 +84,7 @@ You can have as many templates as you need, and the same one can serve several p
 Work down this list:
 
 1. **Is the template a membership template?** The first thing to check, always.
-2. **Is it active on the programme?** Under **Price and Payment → Payment Frequency**, a template can be active or inactive.
+2. **Is it active on the programme?** Under **Price and payment → Payment Frequency**, a template can be active or inactive.
 3. **Is it visible to clients?** Active is not the same as visible — that is a separate switch on the template itself.
 4. **Does the class have sessions?** A class with none has no billing period, so there are no payment options to show.
 

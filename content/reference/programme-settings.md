@@ -76,7 +76,7 @@ now lives in, so bookmarks and older articles still land in the right place.
 The groups below are the same settings, listed by what they do. Where a group has moved
 tile, the stage is named beside it.
 
-## Price and Payment
+## Price and payment
 
 Controls how much clients pay and how payments are collected. For a full explanation of each pricing model, see [Price and payment setup](../guides/price-and-payment-setup.md).
 
@@ -94,7 +94,7 @@ Controls how much clients pay and how payments are collected. For a full explana
 
 When changing the price type, a confirmation dialog warns that incompatible payment plans will be deleted from the programme and all timetables.
 
-## Online Booking
+## Online booking
 
 Controls how the programme appears on your public booking forms.
 
@@ -228,7 +228,7 @@ Core programme identity and type.
 - **Labels** — add tags to categorize the programme.
 - **Colour** — select a colour for calendar display and visual identification. Choose from preset colours (each with a creative description) or use custom colours.
 
-## Additional Fields
+## Additional fields
 
 Configures extra data fields on the booking form. For a step-by-step guide, see [Additional fields on the booking form](../guides/additional-fields.md).
 

@@ -12,6 +12,7 @@ source_legacy_path: ""
 source_language: "en"
 needs_screenshot_replacement: false
 last_converted: "2026-04-30"
+related_articles: ["slack-integration", "todos", "notifications-center"]
 ---
 
 # Slack Integration FAQ
@@ -26,7 +27,7 @@ No extra setup for most team members. Once an admin connects the workspace, Zooz
 
 ## Our franchise has one Slack workspace for all locations. Do each location's admins need to connect separately?
 
-No. One admin at any location installs the Zooza app into the shared Slack workspace. All other companies in the Zooza network are automatically attached. Each location's admin then only needs to go to **Settings → Integrations → Slack** to pick which Slack channels receive their notifications — no additional OAuth required.
+No. One admin at any location installs the Zooza app into the shared Slack workspace. All other companies in the Zooza network are automatically attached. Each location's admin then only needs to go to **Team & Settings → Integrations → Slack** to pick which Slack channels receive their notifications — no additional OAuth required.
 
 ## My Slack email is different from my Zooza email. Can I still use /zooza?
 
@@ -39,7 +40,7 @@ Zooza sends notifications through two streams, each mapped to a Slack channel of
 - **Todos** — when a todo is assigned to a colleague (not a self-assignment), the notification appears in the configured channel.
 - **System messages** — automated alerts such as worker failures, payment errors, or integration issues.
 
-You choose which channels receive each stream in **Settings → Integrations → Slack → Channel mapping**. Unmapped streams are not delivered to Slack.
+You choose which channels receive each stream in **Team & Settings → Integrations → Slack → Channel mapping**. Unmapped streams are not delivered to Slack.
 
 ## Why am I not getting Slack notifications for todos I create myself?
 
@@ -51,7 +52,7 @@ The most common cause is that the Zooza bot token was revoked. This can happen i
 - A Slack workspace admin removed the Zooza app from the workspace.
 - Someone from a different Zooza network or company completed a fresh OAuth into the same Slack workspace, rotating the bot token.
 
-Go to **Settings → Integrations → Slack**. If the status shows **Needs re-authorization**, click **Reconnect** and complete the OAuth flow again.
+Go to **Team & Settings → Integrations → Slack**. If the status shows **Needs re-authorization**, click **Reconnect** and complete the OAuth flow again.
 
 ## A Slack channel is not showing up in the channel list. How do I fix this?
 
@@ -65,11 +66,11 @@ The channel will appear in Zooza's channel list within a few minutes (the list i
 
 ## Can I stop Slack delivery for my company without disconnecting the whole network?
 
-Yes. Go to **Settings → Integrations → Slack** and click **Disconnect this company**. This removes your channel mappings and stops Slack delivery for your company. The Slack workspace install and other companies in the network are unaffected.
+Yes. Go to **Team & Settings → Integrations → Slack** and click **Disconnect this company**. This removes your channel mappings and stops Slack delivery for your company. The Slack workspace install and other companies in the network are unaffected.
 
 ## How do I remove the Zooza Slack app from our workspace entirely?
 
-Only the company that originally completed the OAuth can uninstall. Go to **Settings → Integrations → Slack** and click **Uninstall**. This revokes the bot from Slack and deactivates the connection for all attached companies.
+Only the company that originally completed the OAuth can uninstall. Go to **Team & Settings → Integrations → Slack** and click **Uninstall**. This revokes the bot from Slack and deactivates the connection for all attached companies.
 
 ## Can two Zooza networks share the same Slack workspace?
 

@@ -18,16 +18,16 @@ related_articles: ["booking-form-settings", "booking-widget-faq"]
 
 # Additional fields on the booking form
 
-Additional fields let you collect extra information from clients during booking — such as a child's date of birth, address, allergies, or business invoicing details. You configure them per programme in the **Additional Fields** tile.
+Additional fields let you collect extra information from clients during booking — such as a child's date of birth, address, allergies, or business invoicing details. You configure them per programme in the **Additional fields** tile.
 
 > Additional fields are a **standard part of the booking form, available on every plan**. If you cannot find them, check the navigation below rather than your subscription.
 
-> **Navigation:** Go to **Programmes** → select a programme → **Edit Settings** → **Additional Fields**.
+> **Navigation:** Go to **Programmes** → select a programme → **Edit Settings** → **Additional fields**.
 
 ## Enabling additional fields
 
 1. Open the programme's settings.
-2. Click **Edit** on the **Additional Fields** tile.
+2. Click **Edit** on the **Additional fields** tile.
 3. Check **Extend booking form with additional fields**.
 4. Configure the fields you need (see below).
 5. Save.
@@ -118,7 +118,7 @@ cannot be taken apart afterwards. Pick **Simple** if you only need something to 
 
 To remove a field from the booking form without deleting it permanently:
 
-1. Go to **Programmes** → select the programme → **Edit Settings** → **Additional Fields**.
+1. Go to **Programmes** → select the programme → **Edit Settings** → **Additional fields**.
 2. Uncheck the field you no longer want to display.
 3. Save.
 
@@ -133,7 +133,7 @@ To hide a **custom field** (Additional field 1–15), simply clear the field's *
 After a client registers, you (as admin) can edit the values they entered in the additional fields:
 
 1. Open the booking detail.
-2. Find the **Additional Fields** section.
+2. Find the **Additional fields** section.
 3. Click the edit icon next to the field you want to change.
 4. Update the value and save.
 
@@ -200,7 +200,7 @@ Additional field values can be used in email templates via dynamic tags. This le
 
 **The number is the slot, not the name.** Custom fields sit in numbered slots — **Additional field 1** through **Additional field 15** — and the tag follows the slot. Naming a field "Allergies" does not give you an `EF_ALLERGIES` tag; if it sits in the second slot, its tag is `*|EF_EXTRA_FIELD_2|*`.
 
-So if a tag comes out empty, check which slot the field actually occupies in **Programmes → programme → Additional Fields**. That is the most common reason a custom-field tag renders nothing.
+So if a tag comes out empty, check which slot the field actually occupies in **Programmes → programme → Additional fields**. That is the most common reason a custom-field tag renders nothing.
 
 For the full list of dynamic tags, see [Dynamic tags](dynamic-tags.md).
 
@@ -231,7 +231,7 @@ Programme → the **Settings** tab → the **Booking form** tile → **Custom fi
 
 ## Related
 
-- [Programme Settings Reference](../reference/programme-settings.md) — full field reference for the Additional Fields tile.
+- [Programme Settings Reference](../reference/programme-settings.md) — full field reference for the Additional fields tile.
 - [Business booking](../faq/booking-faq.md) — registering bookings for companies.
 - [Customizing widgets](customizing-widgets.md) — how extra fields appear on the booking widget.
 - [Dynamic tags](dynamic-tags.md) — using field values in email templates.

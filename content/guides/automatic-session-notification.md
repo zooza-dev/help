@@ -36,7 +36,7 @@ You can easily edit the text in the administration. [How to do it](edit-session-
 If you wish to disable sending these notifications for some programmes, this can be done at the programme level:
 
 1. Find the programme for which you want to turn off notifications and open it.
-2. In the **Online Booking** section, click **Change**.
+2. In the **Online booking** section, click **Change**.
 3. Scroll down and click on the blue toggle at the bottom right of the **Communication** section so that it disappears. Each programme is pre-configured so that automatic notifications are sent.
 4. Confirm the settings by clicking **Save**.
 ![Screenshot — automatic session notification](../../assets/images/automatic-session-notification-02.png)

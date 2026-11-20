@@ -104,7 +104,7 @@ In addition to the standard invoice features available on other engines, Zooza I
 
 If you use accounting software that does not have a live connection but can import data (e.g. Pohoda, Omega, SAP, MRP), you can export invoice data as a file and import it manually.
 
-Go to **Settings → Integrations** to see which accounting export formats are available for your region.
+Go to **Team & Settings → Integrations** to see which accounting export formats are available for your region.
 
 See [Integrations](./integrations-hub.md) for the full list.
 

@@ -77,5 +77,5 @@ Once connected:
 ## Related
 
 - [Invoicing overview](./invoicing-overview.md) — how invoice engines work
-- [Billing and invoicing](./billing-and-invoicing.md) — Invoice Profiles, auto/manual generation, multi-line
+- [Billing and invoicing](./billing-and-invoicing.md) — Invoice profiles, auto/manual generation, multi-line
 - [Invoices list](billing-and-invoicing.md) — browsing and downloading invoices

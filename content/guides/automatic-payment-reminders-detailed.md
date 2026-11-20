@@ -8,7 +8,7 @@ sub_area: ""
 audience:
   - admin
 tags: ["billing", "booking", "cancellation", "client", "communication", "location", "onboarding", "payment", "programme", "session", "awaiting-payment", "grace-period", "manual-override"]
-related_articles: ["automatic-payment-reminders", "ad-hoc-scheduled-payment", "payment-tile-on-booking", "auto-cancel-unpaid-registrations"]
+related_articles: ["automatic-payment-reminders", "ad-hoc-scheduled-payment", "edit-payment-on-booking", "auto-cancel-unpaid-registrations"]
 status: published
 source_legacy_path: legacy/0093_Welcome to Zooza.html
 source_language: en
@@ -95,9 +95,9 @@ To send email reminders to clients with outstanding balances, you must configure
 
 Automatic email reminders are configured at the programme level. You can set different rules for each programme.
 
-1. At the level of the selected programme, click *Edit* in the *Price and Payment* tile.
+1. At the level of the selected programme, click *Edit* in the *Price and payment* tile.
  ![Screenshot](../../assets/images/automatic-payment-reminders-detailed-02.png)
-2. Scroll down the screen to *Payment Reminder Settings* and click *Change.*
+2. Scroll down the screen to *Payment reminder settings* and click *Change.*
  ![Screenshot](../../assets/images/automatic-payment-reminders-detailed-03.png)
 3. This will open a number of settings from which you can choose according to your requirements. The setup is done in several steps:
 	1. Start sending reminders

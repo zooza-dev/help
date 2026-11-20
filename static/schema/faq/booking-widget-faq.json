@@ -57,7 +57,7 @@
       "name": "Where do I find the booking form settings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Booking form configuration is split across several places depending on what you want to change:\n\n- Global appearance (button text, availability display, CSS, discount code field) — Team & Settings → Publish → click your widget → Configure next to Booking form.\n- What data is collected (extra fields like date of birth, address, custom questions) — Programmes → open the programme → Additional Fields.\n- Which classes appear, field labels, multiple children per form, confirmation email — Programmes → open the programme → Online Booking → Edit.\n- Price and payment method — Programmes → open the programme → Settings → the Price tile → Price and payment.\n\nFor a full overview of each level, see Booking form settings overview."
+        "text": "Booking form configuration is split across several places depending on what you want to change:\n\n- Global appearance (button text, availability display, CSS, discount code field) — Team & Settings → Publish → click your widget → Configure next to Booking form.\n- What data is collected (extra fields like date of birth, address, custom questions) — Programmes → open the programme → Additional fields.\n- Which classes appear, field labels, multiple children per form, confirmation email — Programmes → open the programme → Online booking → Edit.\n- Price and payment method — Programmes → open the programme → Settings → the Price tile → Price and payment.\n\nFor a full overview of each level, see Booking form settings overview."
       }
     },
     {
@@ -65,7 +65,7 @@
       "name": "Can I rename the fields on the booking form (Name, Email, Phone)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, at the programme level. Go to Programmes → open the programme → Online Booking → Edit → scroll to Customizing Booking Form. You can enter a custom label for each standard field (Note, Name, Surname, Email address, Phone). You can also show or hide individual fields using the eye icon next to each one."
+        "text": "Yes, at the programme level. Go to Programmes → open the programme → Online booking → Edit → scroll to Customizing Booking Form. You can enter a custom label for each standard field (Note, Name, Surname, Email address, Phone). You can also show or hide individual fields using the eye icon next to each one."
       }
     },
     {
@@ -97,7 +97,7 @@
       "name": "Can I show only trial sessions (or only blocks) on the booking form?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, per programme. Go to Programmes → open the programme → Online Booking → Edit → find Booking Options Shown on Website and choose one of:\n\n- Default — client can choose between full programme, trial, or block (depending on what is available).\n- Offer full programme booking only — hides trial and block options.\n- Trials only — shows only trial sessions.\n- Blocks only — shows only blocks.\n- Trials or blocks — shows trials and blocks but not full programme booking."
+        "text": "Yes, per programme. Go to Programmes → open the programme → Online booking → Edit → find Booking Options Shown on Website and choose one of:\n\n- Default — client can choose between full programme, trial, or block (depending on what is available).\n- Offer full programme booking only — hides trial and block options.\n- Trials only — shows only trial sessions.\n- Blocks only — shows only blocks.\n- Trials or blocks — shows trials and blocks but not full programme booking."
       }
     },
     {
@@ -113,7 +113,7 @@
       "name": "How do I set the display order of programmes on the booking form?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Go to Programmes → open the programme → Online Booking → Edit → set the Priority value (0–1000). Higher numbers appear first. By default all programmes have priority 0 and are sorted alphabetically."
+        "text": "Go to Programmes → open the programme → Online booking → Edit → set the Priority value (0–1000). Higher numbers appear first. By default all programmes have priority 0 and are sorted alphabetically."
       }
     },
     {
@@ -185,7 +185,7 @@
       "name": "Can I translate or customise the text labels on the booking widget?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some fields can be relabelled directly in the programme settings — go to Programmes → programme → Online Booking → Edit → Customizing Booking Form.\n\nFor more advanced customisation (translations, styling, CSS, JavaScript options), refer to the Zooza developer documentation at docs.zooza.online. The docs cover:\n\n- Custom translations via window.ZOOZA = { translations: { 'key': 'value' } } — see the translations reference for the full key list\n- How to find translation keys using print_debug: true mode\n- CSS and styling options for the embedded and WordPress plugin versions\n- Filtering programmes and other embed parameters\n\nThe window.ZOOZA configuration object supports two properties: translations and print_debug. It does not support a style property or any layout/appearance overrides — those are applied using CSS on your website. If you need to change a visual aspect of the widget (e.g. dropdown height, font size, padding), add CSS to your website stylesheet rather than window.ZOOZA.\n\nWidget styling is handled on your website side (by your webmaster or developer) — it is not configurable from within the Zooza application itself."
+        "text": "Some fields can be relabelled directly in the programme settings — go to Programmes → programme → Online booking → Edit → Customizing Booking Form.\n\nFor more advanced customisation (translations, styling, CSS, JavaScript options), refer to the Zooza developer documentation at docs.zooza.online. The docs cover:\n\n- Custom translations via window.ZOOZA = { translations: { 'key': 'value' } } — see the translations reference for the full key list\n- How to find translation keys using print_debug: true mode\n- CSS and styling options for the embedded and WordPress plugin versions\n- Filtering programmes and other embed parameters\n\nThe window.ZOOZA configuration object supports two properties: translations and print_debug. It does not support a style property or any layout/appearance overrides — those are applied using CSS on your website. If you need to change a visual aspect of the widget (e.g. dropdown height, font size, padding), add CSS to your website stylesheet rather than window.ZOOZA.\n\nWidget styling is handled on your website side (by your webmaster or developer) — it is not configurable from within the Zooza application itself."
       }
     }
   ]

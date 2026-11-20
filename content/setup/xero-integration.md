@@ -182,6 +182,6 @@ See [Billing and invoicing — Multi-line invoices](./billing-and-invoicing.md#m
 ## Related
 
 - [Invoicing overview](./invoicing-overview.md) — how invoice engines work
-- [Billing and invoicing](./billing-and-invoicing.md) — Invoice Profiles, auto/manual generation, multi-line
+- [Billing and invoicing](./billing-and-invoicing.md) — Invoice profiles, auto/manual generation, multi-line
 - [Xero invoicing FAQ](../faq/xero-invoicing-faq.md) — common Xero questions
 - [VAT management](../guides/vat-management.md) — configuring VAT rates

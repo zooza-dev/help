@@ -60,7 +60,7 @@ you — see below.
 Vimeo plays an embedded video only on the domains on that video's list, and getting that
 list right is where almost every "the video will not play" report comes from. Since
 **7 September 2026** the list is managed once, for the whole company, from
-**Settings → Integrations → Vimeo**.
+**Team & Settings → Integrations → Vimeo**.
 
 The banner at the top reports the state of the last sync — *All 2 videos are up to date*.
 Below it the screen shows **Allowed domains** — every website your videos are allowed to play on —
@@ -152,9 +152,9 @@ Clients log in to their profile and see all videos attached to their programmes 
 | Problem | Likely cause | Fix |
 |---|---|---|
 | "This video is private" | Vimeo video is set to Private | Change to Unlisted + add your domain to allowed embeds |
-| Video plays for admin but not clients | The client-facing domain is not on the allowed list | **Settings → Integrations → Vimeo** → add that domain |
+| Video plays for admin but not clients | The client-facing domain is not on the allowed list | **Team & Settings → Integrations → Vimeo** → add that domain |
 | Plays on the new website, not the old one (or the other way round) | Only one of the two domains is on the list | Add both — a business running two sites needs both |
-| Plays on your own site, not on the Zooza booking page | Older accounts never had `zooza.site` whitelisted | Open **Settings → Integrations → Vimeo** once; Zooza's own domains are now managed for you |
+| Plays on your own site, not on the Zooza booking page | Older accounts never had `zooza.site` whitelisted | Open **Team & Settings → Integrations → Vimeo** once; Zooza's own domains are now managed for you |
 | Video does not appear in Client Profile | Video not attached in Zooza, or visibility set to Admin only | Check Documents section on the programme/class/session |
 | Video plays but without audio | Vimeo issue — check the original upload | Re-upload the video to Vimeo |
 

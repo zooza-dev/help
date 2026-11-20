@@ -102,7 +102,7 @@ To reassure the customer, you can include the **`DD_SETUP_INSTRUCTIONS`** merge 
 
 ## Step 5 — Push a monthly collection
 
-When it's time to collect, you push a batch to FastPay from **Sales & Payments → Payments → Direct Debit**, on the **FastPay** tab.
+When it's time to collect, you push a batch to FastPay from **Sales & Payments → Transactions → Direct debit**, on the **FastPay** tab.
 
 1. Set the collection period — **from**, **to**, and the **charge date**.
 2. Choose what to include: **Current debt** (debt already issued), **Scheduled debt** (debt due within the range), and **Class by client** (group all of a client's payments together).

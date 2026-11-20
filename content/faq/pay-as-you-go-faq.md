@@ -208,7 +208,7 @@ programme with no upcoming booked session gets a reminder built around their own
 entry-pass balance, suggesting sessions from their usual slot with a **Book**
 button for each. It switches off on its own after about four unanswered emails,
 and starts again as soon as the client books. It is the **Upcoming events
-notifications** toggle on the class (**Programmes → Online Booking → Edit**);
+notifications** toggle on the class (**Programmes → Online booking → Edit**);
 see [The session booking reminder](../guides/session-booking-reminder.md).
 
 Send your own email when you want to say something the automatic reminder does

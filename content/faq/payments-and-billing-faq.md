@@ -7,7 +7,7 @@ product_area: "Payments"
 sub_area: ""
 audience: ["admin"]
 tags: ["payments", "down-payment", "invoicing"]
-related_articles: ["payment-pairing", "stripe-payments-faq", "gocardless-faq", "payment-tile-on-booking", "invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "e-invoicing-mandates", "e-invoicing-faq", "auto-cancel-unpaid-registrations", "price-and-payment-setup"]
+related_articles: ["payment-pairing", "stripe-payments-faq", "gocardless-faq", "edit-payment-on-booking", "invoice-profiles-and-bank-accounts", "invoice-profile-overrides", "e-invoicing-mandates", "e-invoicing-faq", "auto-cancel-unpaid-registrations", "price-and-payment-setup"]
 status: "published"
 source_legacy_path: ""
 source_language: "en"
@@ -110,7 +110,7 @@ The number of days is the "days due" value in **Settings → Billing & Payments 
 
 ## Can I make payment compulsory at booking — set the grace period to 0?
 
-You can set the grace period to 0 (**Settings → Billing & Payments → Payment settings**, the first field; also per programme under Price and Payment), and you probably should if you do not want an "Awaiting payment" window. But be clear about what it does and does not do.
+You can set the grace period to 0 (**Settings → Billing & Payments → Payment settings**, the first field; also per programme under Price and payment), and you probably should if you do not want an "Awaiting payment" window. But be clear about what it does and does not do.
 
 **What it does:** a booking with an outstanding balance is marked **Unpaid** straight away instead of sitting in Awaiting payment.
 
@@ -249,7 +249,7 @@ Instalment due dates on a payment plan are still set per instalment and are not 
 
 No. The **Awaiting payment** status is for your internal tracking only — it does not trigger any emails.
 
-To send email reminders to clients with outstanding balances, you must configure a **Payment Reminder** action on the programme under **Programme → Settings → the **Price** tile → **Price and payment** → Payment Reminder Settings**. Without this action, bookings will silently move from **Awaiting payment** to **Unpaid** when the deadline passes — no notification is sent.
+To send email reminders to clients with outstanding balances, you must configure a **Payment Reminder** action on the programme under **Programme → Settings → the **Price** tile → **Price and payment** → Payment reminder settings**. Without this action, bookings will silently move from **Awaiting payment** to **Unpaid** when the deadline passes — no notification is sent.
 
 See [Automatic payment reminders](../guides/automatic-payment-reminders-detailed.md) for full setup instructions.
 
@@ -269,7 +269,7 @@ Payment reminders are configured per programme under the payment settings. You s
 - The interval between reminders.
 - Whether the system should automatically cancel the booking after all reminders expire.
 
-Go to **Programme → Settings → the **Price** tile → **Price and payment** → Payment Reminder Settings** to configure this. For a full walkthrough, see [Automatic payment reminders](../guides/automatic-payment-reminders-detailed.md).
+Go to **Programme → Settings → the **Price** tile → **Price and payment** → Payment reminder settings** to configure this. For a full walkthrough, see [Automatic payment reminders](../guides/automatic-payment-reminders-detailed.md).
 
 ## How do I issue a refund?
 
@@ -995,7 +995,7 @@ To investigate why a payment was ignored: go to **Sales & Payments → Payment r
 
 ## Does the "X days after registration" due date setting apply to payment plan instalments?
 
-Yes, from July 2026. Previously, the **"due X days after registration"** setting (configured under **Programme → Settings → the **Price** tile → **Price and payment** → Payment Reminder Settings**, mode: after registration) only applied to single-payment programmes. For instalment plans, the first payment's due date was set to the class start date regardless of this setting.
+Yes, from July 2026. Previously, the **"due X days after registration"** setting (configured under **Programme → Settings → the **Price** tile → **Price and payment** → Payment reminder settings**, mode: after registration) only applied to single-payment programmes. For instalment plans, the first payment's due date was set to the class start date regardless of this setting.
 
 Now the first instalment's **due date** is set to `registration date + X days`, matching how single payments already worked. Subsequent instalments follow the payment plan schedule as normal — their due dates are unaffected.
 
@@ -1007,7 +1007,7 @@ Now the first instalment's **due date** is set to `registration date + X days`, 
 - [GoCardless FAQ](gocardless-faq.md) — direct debit setup and mandate management
 - [Billing periods](../setup/billing-periods.md) — how billing periods work and how to configure them
 - Payment labels and drawers — organise payments with labels
-- [Payment tile on booking](../guides/payment-tile-on-booking.md) — reading and managing the payment tile
+- [Edit payment on booking](../guides/edit-payment-on-booking.md) — reading and managing the payment card
 - [Billing and invoicing setup](../setup/billing-and-invoicing.md) — invoice generation, numbering, VAT
 - [Set up invoice profiles and bank accounts](../setup/invoice-profiles-and-bank-accounts.md) — legal entities and the accounts that collect payments
 - [Choose which invoice profile applies](../guides/invoice-profile-overrides.md) — inherit and override per programme, class or booking

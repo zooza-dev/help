@@ -52,7 +52,7 @@ Admin
 
 | Before booking |
 |---|
-| Creates a Pay-as-you-go programme - [MANUAL](pay-as-you-go-programme.md)Creates a class with sessions, where an session is one lessonSets up a instructor for a class or individual lessonsSets the capacity of the class - this will then be equal to the capacity of the session (i.e. the booking form will allow unlimited bookings for the class, with the possibility that when registering for a specific session, it will guard this and not allow more than the specified number)In the Price and Payment section admin sets the price per session and the payment option CashCreates a template for the confirmation email - Booking Confirmation - [MANUAL](message-templates.md)Adds a communication template at the programme level |
+| Creates a Pay-as-you-go programme - [MANUAL](pay-as-you-go-programme.md)Creates a class with sessions, where an session is one lessonSets up a instructor for a class or individual lessonsSets the capacity of the class - this will then be equal to the capacity of the session (i.e. the booking form will allow unlimited bookings for the class, with the possibility that when registering for a specific session, it will guard this and not allow more than the specified number)In the Price and payment section admin sets the price per session and the payment option CashCreates a template for the confirmation email - Booking Confirmation - [MANUAL](message-templates.md)Adds a communication template at the programme level |
 | During booking |
 | |
 | After booking creation |

@@ -23,8 +23,8 @@ Booking form behaviour is configured at **three separate levels** in Zooza. When
 | What you want to change | Where to go |
 |---|---|
 | How the form looks and behaves globally (button text, availability display, CSS) | **Team & Settings → Publish → widget → Configure** (Booking form) |
-| What data the form collects (extra fields, date of birth, address) | **Programmes → programme → Additional Fields** |
-| Which classes appear, field labels, multiple children, communication | **Programmes → programme → Online Booking → Edit** |
+| What data the form collects (extra fields, date of birth, address) | **Programmes → programme → Additional fields** |
+| Which classes appear, field labels, multiple children, communication | **Programmes → programme → Online booking → Edit** |
 | Price, payment method, booking fee | **Programmes → programme → Settings** → the **Price** tile → **Price and payment** |
 
 ## Level 1 — Widget settings (global appearance and behaviour)
@@ -48,7 +48,7 @@ These settings apply to all programmes shown in that widget:
 
 ## Level 2 — Additional fields (what data to collect)
 
-Go to **Programmes** → open a programme → **Additional Fields → Edit**.
+Go to **Programmes** → open a programme → **Additional fields → Edit**.
 
 Here you configure what extra information is collected during registration, on top of the standard name/email/phone fields. You can enable built-in fields (date of birth, address, child's name) or add up to 15 custom fields.
 
@@ -60,9 +60,9 @@ See [Additional fields on the booking form](additional-fields.md) for the full r
 
 ![Screenshot — booking form settings](../../assets/images/booking-form-settings-02.png)
 
-## Level 3 — Online Booking settings (per-programme)
+## Level 3 — Online booking settings (per-programme)
 
-Go to **Programmes** → open a programme → **Online Booking → Edit**.
+Go to **Programmes** → open a programme → **Online booking → Edit**.
 
 This is where most per-programme form behaviour is configured.
 ![Screenshot — booking form settings](../../assets/images/booking-form-settings-03.png)
@@ -104,7 +104,7 @@ This is where most per-programme form behaviour is configured.
 **Hide from booking form N hours before the programme begins** is the only lead-time setting on the booking form. Three things about it catch people out:
 
 - **It exists only for two programme types** — *Booking for the full programme duration* and *One-off event*. A Pay-as-you-go programme has no cut-off for individual session bookings: clients can book a session right up to its start.
-- **It is locked while Late bookings are enabled.** The field is greyed out when **Price and Payment → Advanced settings → Late bookings** is set to anything other than *Disabled*, because both features decide what happens to bookings after the programme has started. To change the hours: set Late bookings to *Disabled*, save, change the hours in **Online booking**, then switch Late bookings back on. The team has this flagged as a usability fix.
+- **It is locked while Late bookings are enabled.** The field is greyed out when **Price and payment → Advanced settings → Late bookings** is set to anything other than *Disabled*, because both features decide what happens to bookings after the programme has started. To change the hours: set Late bookings to *Disabled*, save, change the hours in **Online booking**, then switch Late bookings back on. The team has this flagged as a usability fix.
 - **Since September 2026 it also applies to trial sessions.** The booking form no longer offers a trial session that starts inside the cut-off window (a 48-hour cut-off means no trial today for a session this afternoon). Before that, trials ignored the setting and could be booked until an hour before the session. Admins placing a trial from the booking detail are not limited by it — the cut-off is a booking-form rule. See [Trial sessions](../setup/trial-sessions.md).
 
 ### Class settings
@@ -139,7 +139,7 @@ Each field has a visibility toggle (eye icon) to show or hide it on the form.
 | **Session reminders** | Template used for session reminder emails. |
 | **Preset signature** | Email signature used in outgoing messages for this programme. |
 
-## Price and Payment
+## Price and payment
 
 Go to **Programmes** → open a programme → **Settings** → the **Price** tile → **Price and payment**.
 
