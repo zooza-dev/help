@@ -117,6 +117,15 @@ policy → `Days before booking is marked unpaid`**. The template links straight
 before they are due.** So a payment due on 15 November is created on 31 October. That is
 what you are seeing, and it is not a mistake in your template.
 
+![Payment created and Due date shown side by side on a payment template, with the gap between them in days](../../assets/images/payment-created-due-date-strip.png)
+
+> **The two dates in that picture are the same, and that is the confusing part.** The strip
+> repeats the number in your settings exactly as it stands, so an account left at 0 is drawn
+> as *Payment created → 0 days → Due date*. The instalment is still created 15 days earlier
+> than the due date — the picture is the one place that does not say so. If you want the
+> strip to match what actually happens, type **15** into the field instead of leaving it at
+> 0; nothing about the dates changes, only the drawing.
+
 What happens on each of the two dates:
 
 | Date | What happens |

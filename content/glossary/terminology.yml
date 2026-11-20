@@ -1506,6 +1506,11 @@ terms:
           charging on the 1st" is correct behaviour, and the way to get a specific pair of
           dates is to set the due day AND the days-to-pay to the same gap. The gap between
           them IS the days-to-pay number; there is no separate field for it.
+          CAVEAT ON THE PREVIEW: the "Payment created -> N days -> Due date" strip drawn on
+          the template reads the setting literally, so an account left at 0 is drawn with
+          both dates on the SAME day while the instalment is really created 15 days earlier
+          (payment_schedule_dates_visualisation.js vs the API). Typing 15 into the field
+          makes the picture match; it changes no dates.
     ai_notes: >
       2026-10-30: a running plan keeps the terms it was created with - schedule type,
       frequency, due day, amount, block pricing are frozen on it - so editing a template no
